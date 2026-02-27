@@ -21,11 +21,11 @@ Entomology · Active Inference · Synergetics · Cognitive Security
 
 I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design.
 
-- 🐜 **Entomologist** — PhD (Stanford) on the behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants, with publications in *Nature Communications Biology*, *Cell*, *Science Reports*, *Annual Reviews of Neuroscience*, and *Frontiers in Behavioral Neuroscience*
-- 🧠 **Active Inference** — Co-author with Karl Friston, Maxwell Ramstead, and others on federated inference, variational evolutionary dynamics, and multi-agent generative models; builder of computational frameworks (**CEREBRUM**, **GNN**, **InferAnts**)
-- 🛡️ **Cognitive Security** — Author of books and papers on narrative information ecosystems, digital rhetorical analysis, and formal multiagent security frameworks at **COGSEC.org** and the **Active Inference Institute**
-- 🎨 **Artist** — Ink, metal, and collaborative art; explorations of William Blake, Buckminster Fuller, and synergetics
-- 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal channel streams, Udemy courses, and open-source curricula
+- 🐜 **Entomologist** — PhD (Stanford University, 2014-2019 with Prof. Deborah Gordon) on the behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants
+- 🧠 **Active Inference** — Researcher, educator, and organizer at the **Active Inference Institute** working on topics such as federated inference, variational evolutionary dynamics, and multi-agent generative models; builder of computational frameworks (**CEREBRUM**, **GNN**, **InferAnts**)
+- 🛡️ **Cognitive Security** — Author of books and papers on narrative information ecosystems, digital rhetorical analysis, and formal multiagent security frameworks at **COGSEC.org**
+- 🎨 **Artist** — Ink, metal, and collaborative art; explorations of William Blake, Buckminster Fuller, and Synergetics
+- 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal channel streams, as well as other courses, appearances, and open-source curricula
 
 ---
 
@@ -42,26 +42,26 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
+| 2025 | The Ant Stack | *Zenodo* | [10.5281/zenodo.16782756](https://doi.org/10.5281/zenodo.16782756) |
+| 2025 | Computational Complexity and Energetics of the Ant Stack | *Zenodo* | [10.5281/zenodo.17238736](https://doi.org/10.5281/zenodo.17238736) |
+| 2025 | Towards a Science of Consciousness and Social Complexity... For Ants | *Book Chapter* | [978-65-5272-128-0](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes) |
 | 2024 | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea | *Ecology & Evolution* | [10.1002/ece3.70063](https://doi.org/10.1002/ece3.70063) |
 | 2023 | A single-pheromone model accounts for empirical patterns of ant colony foraging | *Cognitive Systems Research* | [10.1016/j.cogsys.2023.02.005](https://doi.org/10.1016/j.cogsys.2023.02.005) |
-| 2023 | Experimental Entomology in the Age of Video | *JoVE* | [e65002](https://doi.org/e65002) |
+| 2023 | Experimental Entomology in the Age of Video | *JoVE* | [10.3791/65002](https://doi.org/10.3791/65002) |
 | 2023 | A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees | *Zenodo* | [10.5281/zenodo.10400744](https://doi.org/10.5281/zenodo.10400744) |
 | 2021 | Active Inferants: An Active Inference Framework for Ant Colony Behavior | *Frontiers in Behavioral Neuroscience* | [10.3389/fnbeh.2021.647732](https://doi.org/10.3389/fnbeh.2021.647732) |
 | 2020 | Distributed physiology and the molecular basis of social life in eusocial insects | *Hormones & Behavior* | [10.1016/j.yhbeh.2020.104757](https://doi.org/10.1016/j.yhbeh.2020.104757) |
-| 2020 | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | *Nature Communications Biology* | [10.1038/s42003-020-0813-8](https://doi.org/10.1038/s42003-020-0813-8) |
+| 2020 | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | *Communications Biology* | [10.1038/s42003-020-0813-8](https://doi.org/10.1038/s42003-020-0813-8) |
 | 2020 | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | *Analytical & Bioanalytical Chemistry* | [10.1007/s00216-019-02355-3](https://doi.org/10.1007/s00216-019-02355-3) |
 | 2019 | The ant colony as a test for scientific theories of consciousness | *Synthese* | [10.1007/s11229-019-02130-y](https://doi.org/10.1007/s11229-019-02130-y) |
-| 2019 | The physiology of forager hydration and variation among harvester ant colonies | *Science Reports* | [10.1038/s41598-019-41586-3](https://doi.org/10.1038/s41598-019-41586-3) |
+| 2019 | The physiology of forager hydration and variation among harvester ant colonies | *Scientific Reports* | [10.1038/s41598-019-41586-3](https://doi.org/10.1038/s41598-019-41586-3) |
 | 2019 | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus* | *Stanford University* | [purl.stanford.edu](http://purl.stanford.edu/pb813wm1484) |
 | 2018 | The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants | *iScience* | [10.1016/j.isci.2018.09.001](https://doi.org/10.1016/j.isci.2018.09.001) |
 | 2018 | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | *PLoS One* | [10.1371/journal.pone.0202117](https://doi.org/10.1371/journal.pone.0202117) |
 | 2017 | The MutAnts are here | *Cell* | [10.1016/j.cell.2017.07.046](https://doi.org/10.1016/j.cell.2017.07.046) |
 | 2017 | Two lineages that need each other | *Molecular Ecology* | [10.1111/mec.13964](https://doi.org/10.1111/mec.13964) |
 | 2016 | Context-dependent expression of the foraging gene in field colonies of ants | *Proceedings of the Royal Society B* | [10.1098/rspb.2016.0841](https://doi.org/10.1098/rspb.2016.0841) |
-| 2016 | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | *Annual Reviews of Neuroscience* | [10.1146/annurev-neuro-070815-013927](https://doi.org/10.1146/annurev-neuro-070815-013927) |
-| 2025 | The Ant Stack | *Zenodo* | [10.5281/zenodo.16782756](https://doi.org/10.5281/zenodo.16782756) |
-| 2025 | Computational Complexity and Energetics of the Ant Stack | *Zenodo* | [10.5281/zenodo.17238736](https://doi.org/10.5281/zenodo.17238736) |
-| 2025 | Towards a Science of Consciousness and Social Complexity... For Ants | *Book Chapter* | [978-65-5272-128-0](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes) |
+| 2016 | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | *Annual Review of Neuroscience* | [10.1146/annurev-neuro-070815-013927](https://doi.org/10.1146/annurev-neuro-070815-013927) |
 
 </details>
 
@@ -143,7 +143,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
-| 2026 | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | *Zenodo* | [Link](https://zenodo.org/records/18600041) |
+| 2026 | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | *Zenodo* | [10.5281/zenodo.18600041](https://doi.org/10.5281/zenodo.18600041) |
 | 2025 | On Cognitive Art & Science: Toward Wholeness From Both Sides | *Zenodo* | [10.5281/zenodo.16740439](https://doi.org/10.5281/zenodo.16740439) |
 | 2025 | Synthesis of Agent and Niche | *Zenodo* | [10.5281/zenodo.17235137](https://doi.org/10.5281/zenodo.17235137) |
 | 2025 | On Time | *Zenodo* | [10.5281/zenodo.15168381](https://doi.org/10.5281/zenodo.15168381) |
@@ -275,12 +275,6 @@ Active Inference ──── Entomology ──── Cognitive Security
    Synergetics ────── Ecology ─────── Decentralized
    (Fuller, Blake)    (Consciousness)    Science (DeSci)
 ```
-
----
-
-## 🔑 Key Collaborators
-
-[Karl Friston](https://scholar.google.co.uk/citations?user=q_4u0aoAAAAJ) · [Maxwell Ramstead](https://scholar.google.ca/citations?user=UBeUz3EAAAAJ) · [Deborah Gordon](https://scholar.google.com/citations?user=3_WGpCkAAAAJ) · [Chris Fields](https://scholar.google.com/citations?user=Y8Z1NYEAAAAJ) · [RJ Cordes](https://scholar.google.com/citations?user=Yl1oCAkAAAAJ) · [Axel Constant](https://scholar.google.com/citations?user=nI6GliwAAAAJ) · [Tim Linksvayer](https://scholar.google.com/citations?user=uBsAp98AAAAJ) · [Michael Levin](https://scholar.google.com/citations?user=GKgZxkIAAAAJ) · [Scott David](https://www.linkedin.com/in/scottjdavid/)
 
 ---
 
