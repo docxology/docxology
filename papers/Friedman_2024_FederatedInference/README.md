@@ -1,0 +1,48 @@
+# 🧠 Federated inference and belief sharing
+
+**Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith** (2024) · *Neuroscience & Biobehavioral Reviews*
+
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.neubiorev.2023.105500-blue)](https://doi.org/10.1016/j.neubiorev.2023.105500)
+
+---
+
+## Abstract
+
+> This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while enabling collective cognition. This speaks to multi-scale inference architectures and distributed decision-making in both biological and artificial systems.
+
+## Keywords
+
+`federated inference` · `belief sharing` · `Active Inference` · `distributed intelligence` · `multi-agent systems` · `message passing` · `collective cognition` · `privacy-preserving inference`
+
+## Key Contributions
+
+- Formalizes federated inference extending Active Inference to distributed settings
+- Develops principled belief sharing through message passing between agents
+- Shows how collective cognition emerges without sharing raw observations
+- Provides framework for privacy-preserving distributed intelligence
+
+## Methods
+
+- Federated Active Inference formalization
+- Belief sharing via message passing
+- Multi-agent generative modeling
+- Distributed inference architecture design
+
+## Citation
+
+```bibtex
+@article{Friedman_2024_FederatedInference,
+  author = {Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith},
+  title = {{Federated inference and belief sharing}},
+  journal = {Neuroscience & Biobehavioral Reviews},
+  year = {2024},
+  doi = {10.1016/j.neubiorev.2023.105500},
+}
+```
+
+## File Inventory
+
+- `AGENTS.md` (1,816 bytes)
+- `Friedman_2024_FederatedInference.pdf` (4,200,620 bytes)
+- `README.md` (1,546 bytes)
+- `SKILL.md` (1,756 bytes)

@@ -1,0 +1,45 @@
+# 📄 Dennett Explained (interview with Daniel Dennett)
+
+**Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · *ALIUS Bulletin*
+
+[![DOI](https://img.shields.io/badge/DOI-10.34700%2F7gkw-zh08-blue)](https://doi.org/10.34700/7gkw-zh08)
+
+---
+
+## Abstract
+
+> In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philosophers have the ability to criticize and contribute to the science of the mind, and speaks to the virtues of cross-disciplinary glances and hybrid vigor. He discusses potential scientific and therapeutic value of psychoactive substances within proper settings.
+
+## Keywords
+
+`consciousness` · `philosophy of mind` · `Daniel Dennett` · `cognitive science` · `psychedelics` · `predictive processing` · `altered states`
+
+## Key Contributions
+
+- Provides Dennett's views on consciousness and predictive processing
+- Discusses the role of philosophy in cognitive science
+- Explores connections between psychedelics and consciousness research
+
+## Methods
+
+- Scholarly interview methodology
+- Philosophical discussion and analysis
+
+## Citation
+
+```bibtex
+@article{Friedman_2019_DennettExplained,
+  author = {Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman},
+  title = {{Dennett Explained (interview with Daniel Dennett)}},
+  journal = {ALIUS Bulletin},
+  year = {2019},
+  doi = {10.34700/7gkw-zh08},
+}
+```
+
+## File Inventory
+
+- `AGENTS.md` (1,845 bytes)
+- `Friedman_2019_DennettExplained.pdf` (167,225 bytes)
+- `README.md` (1,651 bytes)
+- `SKILL.md` (1,760 bytes)

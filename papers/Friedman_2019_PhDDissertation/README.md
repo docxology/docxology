@@ -1,0 +1,47 @@
+# 🐜 PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus*
+
+**Daniel Ari Friedman** (2019) · *Stanford University*
+
+---
+
+## Abstract
+
+> This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neurochemistry, gene expression analysis, and theoretical frameworks to understand how colony-level collective behavior emerges from individual-level variation. The work examines the foraging gene, dopaminergic signaling, desiccation physiology, and RNA-Seq transcriptomics across multiple ant colonies in natural populations.
+
+## Keywords
+
+`PhD dissertation` · `Pogonomyrmex barbatus` · `collective behavior` · `transcriptomics` · `behavioral ecology` · `foraging gene` · `dopamine` · `colony variation` · `Stanford University`
+
+## Key Contributions
+
+- Comprehensive dissertation integrating genes, neurochemistry, behavior, and ecology
+- Demonstrates colony-level variation in foraging behavior, physiology, and gene expression
+- Bridges individual-level molecular mechanisms with colony-level behavioral ecology
+
+## Methods
+
+- RNA-Seq transcriptomics
+- qRT-PCR
+- HPLC neurotransmitter analysis
+- Field behavioral experiments
+- Desiccation physiology assays
+- Statistical genomics
+- Multilevel modeling
+
+## Citation
+
+```bibtex
+@article{Friedman_2019_PhDDissertation,
+  author = {Daniel Ari Friedman},
+  title = {{PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus*}},
+  journal = {Stanford University},
+  year = {2019},
+}
+```
+
+## File Inventory
+
+- `AGENTS.md` (2,125 bytes)
+- `Friedman_2019_PhDDissertation.pdf` (316,589 bytes)
+- `README.md` (1,824 bytes)
+- `SKILL.md` (1,951 bytes)

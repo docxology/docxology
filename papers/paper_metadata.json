@@ -1,0 +1,1729 @@
+{
+  "Friedman_2015_CryptoJews": {
+    "year": "2015",
+    "topic": "CryptoJews",
+    "name": "CryptoJews",
+    "description": "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities",
+    "tags": [
+      "population-genetics",
+      "uniparental-markers",
+      "crypto-jews",
+      "haplotype-polyphyly",
+      "admixture-modeling",
+      "iberian-history"
+    ],
+    "authors": "Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman",
+    "abstract": "This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese \"crypto-Jews.\" The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as \"reliable Jewish ancestry predictors\" due to haplotype polyphyly and molecular clock ambiguity \u2014 many ostensibly \"Jewish\" haplotypes are",
+    "keywords": [
+      "Jewish genetics",
+      "haplotypes",
+      "crypto-Jews",
+      "Iberian Peninsula",
+      "admixture",
+      "demographic history",
+      "Y-chromosome",
+      "mtDNA",
+      "population genetics"
+    ]
+  },
+  "Friedman_2015_EhrlichialInfection": {
+    "year": "2015",
+    "topic": "EhrlichialInfection",
+    "name": "EhrlichialInfection",
+    "description": "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment",
+    "tags": [
+      "ehrlichia",
+      "anaplasma",
+      "leukemia",
+      "intracellular-parasites",
+      "apoptosis-suppression",
+      "rifampin",
+      "hematological-malignancy"
+    ],
+    "authors": "Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo",
+    "abstract": "We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA s",
+    "keywords": [
+      "Ehrlichia",
+      "Anaplasma",
+      "leukemia",
+      "myelodysplastic syndromes",
+      "intracellular parasites",
+      "Rifampin",
+      "immune system dysfunction",
+      "bone marrow",
+      "autoimmune disorders"
+    ]
+  },
+  "Friedman_2015_HoneyBeeEvolution": {
+    "year": "2015",
+    "topic": "HoneyBeeEvolution",
+    "name": "HoneyBeeEvolution",
+    "description": "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...",
+    "authors": "Daniel A. Friedman, Brian R. Johnson",
+    "abstract": "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs), genes without homologs in related lineages. We find that honey-bee-specific novel tissues show sign",
+    "keywords": [
+      "honey bees",
+      "Apis mellifera",
+      "RNA-Seq",
+      "taxonomically restricted genes",
+      "novel traits",
+      "gene expression",
+      "evolutionary biology",
+      "royal jelly",
+      "beeswax",
+      "venom"
+    ]
+  },
+  "Friedman_2016_AntGenetics": {
+    "year": "2016",
+    "topic": "AntGenetics",
+    "name": "AntGenetics",
+    "description": "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning...",
+    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "abstract": "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning to reveal the molecular mechanisms underlying colony-level phenomena such as division of labor, collective decision-making, and social immunity. Here we review ant genomics and genetics through the lens of colony-level behavioral ecology, covering topics including caste determination, worker behavi",
+    "keywords": [
+      "ants",
+      "behavioral genetics",
+      "genomics",
+      "colony organization",
+      "caste determination",
+      "division of labor",
+      "foraging gene",
+      "social insects",
+      "pheromone communication"
+    ]
+  },
+  "Friedman_2016_ForagingGene": {
+    "year": "2016",
+    "topic": "ForagingGene",
+    "name": "ForagingGene",
+    "description": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...",
+    "authors": "Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon",
+    "abstract": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from o",
+    "keywords": [
+      "foraging gene",
+      "Pogonomyrmex barbatus",
+      "harvester ants",
+      "gene expression",
+      "circadian rhythms",
+      "task allocation",
+      "division of labor",
+      "field study",
+      "behavioral ecology"
+    ]
+  },
+  "Friedman_2016_NuclearStructure": {
+    "year": "2016",
+    "topic": "NuclearStructure",
+    "name": "NuclearStructure",
+    "description": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec...",
+    "authors": "Daniel A. Friedman, Daniel F. Pilch",
+    "abstract": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromoso",
+    "keywords": [
+      "Hi-C",
+      "chromosome conformation",
+      "radiation biology",
+      "chromatin architecture",
+      "DNA damage",
+      "topologically associating domains",
+      "nuclear organization",
+      "3C technologies"
+    ]
+  },
+  "Friedman_2017_MutAnts": {
+    "year": "2017",
+    "topic": "MutAnts",
+    "name": "MutAnts",
+    "description": "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of...",
+    "authors": "Daniel A. Friedman, Deborah M. Gordon, Liqun Luo",
+    "abstract": "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of Cell, Trible et al. (2017) and Yan et al. (2017) advance the field of ant genetics by performing CRISPR/Cas9-mediated knockout of the Orco olfactory co-receptor gene in two ant species separated by 100+ million years of evolution: the clonal raider ant (Ooceraea biroi) and Jerdon's jumping ant (Har",
+    "keywords": [
+      "CRISPR/Cas9",
+      "Orco gene",
+      "olfactory receptor",
+      "ant genetics",
+      "Ooceraea biroi",
+      "Harpegnathos saltator",
+      "social behavior",
+      "pheromone",
+      "gene knockout"
+    ]
+  },
+  "Friedman_2017_TwoLineages": {
+    "year": "2017",
+    "topic": "TwoLineages",
+    "name": "TwoLineages",
+    "description": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males...",
+    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "abstract": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males from a different genetic lineage to produce workers, while same-lineage matings produce new queens. This unusual mating system creates colonies with complex genetic architectures that provide a natural experiment for studying the relationship between genotype and division of labor. We discuss how d",
+    "keywords": [
+      "dependent-lineage",
+      "mating systems",
+      "Pogonomyrmex",
+      "harvester ants",
+      "genetic caste determination",
+      "intragenomic conflict",
+      "colony organization",
+      "social evolution"
+    ]
+  },
+  "Friedman_2018_ArgentineAnt": {
+    "year": "2018",
+    "topic": "ArgentineAnt",
+    "name": "ArgentineAnt",
+    "description": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the...",
+    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "abstract": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggression, allowing colony fusion and supercolony formation. We review the sensory ecology of nestmate ",
+    "keywords": [
+      "Argentine ant",
+      "Linepithema humile",
+      "invasive species",
+      "supercolony",
+      "nestmate recognition",
+      "collective behavior",
+      "chemical ecology",
+      "cuticular hydrocarbons"
+    ]
+  },
+  "Friedman_2018_DopamineForaging": {
+    "year": "2018",
+    "topic": "DopamineForaging",
+    "name": "DopamineForaging",
+    "description": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate...",
+    "authors": "Daniel A. Friedman, Annette Pilko, Deborah M. Gordon",
+    "abstract": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that experimental manipulation of dopamine signaling alters the propensity of workers to leave the nest and forag",
+    "keywords": [
+      "dopamine",
+      "foraging behavior",
+      "Pogonomyrmex barbatus",
+      "neuromodulation",
+      "task allocation",
+      "behavioral pharmacology",
+      "biogenic amines",
+      "harvester ants"
+    ]
+  },
+  "Friedman_2018_MVEE": {
+    "year": "2018",
+    "topic": "MVEE",
+    "name": "MVEE",
+    "description": "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVE...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and evolutionary time, and the diversity and open-endedness of evolving systems. MVEE provides a theoretical sc",
+    "keywords": [
+      "MVEE",
+      "evolutionary theory",
+      "multilevel evolution",
+      "phenotypic plasticity",
+      "eco-evo-devo",
+      "variational methods",
+      "multilevel selection",
+      "open-ended evolution"
+    ]
+  },
+  "Friedman_2018_PPPiP": {
+    "year": "2018",
+    "topic": "PPPiP",
+    "name": "PPPiP",
+    "description": "Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on...",
+    "authors": "Alexandra Mikhailova, Daniel A. Friedman",
+    "abstract": "Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship development. PPPiP combines the advantages of individuated artistic practice with the established framew",
+    "keywords": [
+      "PPPiP",
+      "art therapy",
+      "improvisation",
+      "intimate relationships",
+      "affective neuroscience",
+      "creativity",
+      "dyadic interaction",
+      "sexology",
+      "controlled novelty"
+    ]
+  },
+  "Friedman_2018_WoodliceAndMen": {
+    "year": "2018",
+    "topic": "WoodliceAndMen",
+    "name": "WoodliceAndMen",
+    "description": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit...",
+    "authors": "Karl Friston, Martin Fortier, Daniel A. Friedman",
+    "abstract": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by simple thermodynamic principles. The conversation covers the FEP's relationship to Bayesian inference, predictive process",
+    "keywords": [
+      "Free Energy Principle",
+      "Karl Friston",
+      "Bayesian brain",
+      "predictive processing",
+      "Markov blanket",
+      "consciousness",
+      "self-organization",
+      "variational inference",
+      "philosophy of mind"
+    ]
+  },
+  "Friedman_2019_AntConsciousness": {
+    "year": "2019",
+    "topic": "AntConsciousness",
+    "name": "AntConsciousness",
+    "description": "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...",
+    "authors": "Daniel A. Friedman, Eirik S\u00f8vik",
+    "abstract": "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general.",
+    "keywords": [
+      "consciousness",
+      "ant colony",
+      "Ant Colony Test",
+      "philosophy of science",
+      "social insects",
+      "collective cognition",
+      "scientific theories of consciousness"
+    ]
+  },
+  "Friedman_2019_DennettExplained": {
+    "year": "2019",
+    "topic": "DennettExplained",
+    "name": "DennettExplained",
+    "description": "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philos...",
+    "authors": "Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman",
+    "abstract": "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philosophers have the ability to criticize and contribute to the science of the mind, and speaks to the virtues of cross-disciplinary glances and hybrid vigor. He discusses potential scientific and therapeutic value of psychoactive substances within proper settings.",
+    "keywords": [
+      "consciousness",
+      "philosophy of mind",
+      "Daniel Dennett",
+      "cognitive science",
+      "psychedelics",
+      "predictive processing",
+      "altered states"
+    ]
+  },
+  "Friedman_2019_ForagerHydration": {
+    "year": "2019",
+    "topic": "ForagerHydration",
+    "name": "ForagerHydration",
+    "description": "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing t...",
+    "authors": "Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon",
+    "abstract": "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more sensitive to water loss. Surprisingly, foragers more sensitive to water loss are from colonies more likel",
+    "keywords": [
+      "Pogonomyrmex barbatus",
+      "desiccation physiology",
+      "foraging behavior",
+      "water balance",
+      "colony variation",
+      "collective behavior",
+      "behavioral ecology",
+      "reproductive fitness"
+    ]
+  },
+  "Friedman_2019_PhDDissertation": {
+    "year": "2019",
+    "topic": "PhDDissertation",
+    "name": "PhDDissertation",
+    "description": "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neuroche...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neurochemistry, gene expression analysis, and theoretical frameworks to understand how colony-level collective behavior emerges from individual-level variation. The work examines the foraging gene, dopaminergic signaling, desiccation physiology, and RNA-Seq transcriptomics across multiple ant colonies in na",
+    "keywords": [
+      "PhD dissertation",
+      "Pogonomyrmex barbatus",
+      "collective behavior",
+      "transcriptomics",
+      "behavioral ecology",
+      "foraging gene",
+      "dopamine",
+      "colony variation",
+      "Stanford University"
+    ]
+  },
+  "Friedman_2020_BehaviorEngineering": {
+    "year": "2020",
+    "topic": "BehaviorEngineering",
+    "name": "BehaviorEngineering",
+    "description": "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for conn...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to organizational design, team formation, and complex adaptive systems management.",
+    "keywords": [
+      "behavior engineering",
+      "systems engineering",
+      "organizational behavior",
+      "complex adaptive systems",
+      "team formation",
+      "behavioral design"
+    ]
+  },
+  "Friedman_2020_DistributedPhysiology": {
+    "year": "2020",
+    "topic": "DistributedPhysiology",
+    "name": "DistributedPhysiology",
+    "description": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this...",
+    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "abstract": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation\u2014metabolism, water balance, immunity\u2014is accomplished collectively through decentralized interaction networks rather than centr",
+    "keywords": [
+      "distributed physiology",
+      "superorganism",
+      "collective behavior",
+      "ant colonies",
+      "decentralized control",
+      "interaction networks",
+      "colony metabolism",
+      "social immunity"
+    ]
+  },
+  "Friedman_2020_EmergentTeams": {
+    "year": "2020",
+    "topic": "EmergentTeams",
+    "name": "EmergentTeams",
+    "description": "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation...",
+    "authors": "Daniel A. Friedman, R.J. Cordes, Scott David",
+    "abstract": "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique challenges of rapidly assembled collaborative teams.",
+    "keywords": [
+      "emergent teams",
+      "operations orders",
+      "team formation",
+      "innovation",
+      "facilitation",
+      "collective intelligence",
+      "hackathons",
+      "research accelerators"
+    ]
+  },
+  "Friedman_2020_GeneExpressionForagers": {
+    "year": "2020",
+    "topic": "GeneExpressionForagers",
+    "name": "GeneExpressionForagers",
+    "description": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar...",
+    "authors": "Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer",
+    "abstract": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify pathways related to sensory processing, metabolism, and neurochemical signaling that distinguish forag",
+    "keywords": [
+      "gene expression",
+      "foragers",
+      "RNA-Seq",
+      "division of labor",
+      "transcriptomics",
+      "harvester ants",
+      "behavioral castes",
+      "Pogonomyrmex barbatus"
+    ]
+  },
+  "Friedman_2020_GreatPreset": {
+    "year": "2020",
+    "topic": "GreatPreset",
+    "name": "GreatPreset",
+    "description": "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inferen...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inference, narrative ecosystems, and information theory, the paper explores how large-scale narrative shifts can either empower or disempower individuals and communities in their sensemaking processes.",
+    "keywords": [
+      "cognitive security",
+      "narrative ecosystems",
+      "Great Reset",
+      "sensemaking",
+      "Active Inference",
+      "information theory",
+      "socioeconomic narratives"
+    ]
+  },
+  "Friedman_2020_InnovatorsCatechism": {
+    "year": "2020",
+    "topic": "InnovatorsCatechism",
+    "name": "InnovatorsCatechism",
+    "description": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to...",
+    "authors": "Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight",
+    "abstract": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism\u2014a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.",
+    "keywords": [
+      "operations orders",
+      "innovation teams",
+      "Innovator's Catechism",
+      "team alignment",
+      "military transfer",
+      "organizational design",
+      "hackathons"
+    ]
+  },
+  "Friedman_2020_NeuroscienceDecision": {
+    "year": "2020",
+    "topic": "NeuroscienceDecision",
+    "name": "NeuroscienceDecision",
+    "description": "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have hel...",
+    "authors": "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman",
+    "abstract": "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an integrative approach drawing on multiple types of experiments and model systems.",
+    "keywords": [
+      "decision making",
+      "computational neuroscience",
+      "Bayesian brain",
+      "free will",
+      "mental health",
+      "attention",
+      "neural circuits"
+    ]
+  },
+  "Friedman_2020_NeurotransmitterVariation": {
+    "year": "2020",
+    "topic": "NeurotransmitterVariation",
+    "name": "NeurotransmitterVariation",
+    "description": "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...",
+    "authors": "Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton",
+    "abstract": "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and detect the amines. Overall, dopamine content was highest, followed by octopamine, serotonin, and tyra",
+    "keywords": [
+      "neurotransmitters",
+      "dopamine",
+      "serotonin",
+      "octopamine",
+      "tyramine",
+      "Pogonomyrmex barbatus",
+      "CE-FSCV",
+      "biogenic amines",
+      "colony variation"
+    ]
+  },
+  "Friedman_2021_ActiveInferants": {
+    "year": "2021",
+    "topic": "ActiveInferants",
+    "name": "ActiveInferants",
+    "description": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi...",
+    "authors": "Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant",
+    "abstract": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze paradigm, illustrating the model's ability to recover basic colony phenomena such as trail formation aft",
+    "keywords": [
+      "active inference",
+      "ant foraging",
+      "Markov decision process",
+      "stigmergy",
+      "T-maze",
+      "collective behavior",
+      "behavioral modeling",
+      "eco-evo-devo"
+    ]
+  },
+  "Friedman_2021_DigitalRhetorical": {
+    "year": "2021",
+    "topic": "DigitalRhetorical",
+    "name": "DigitalRhetorical",
+    "description": "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model...",
+    "authors": "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman",
+    "abstract": "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational analysis of digital discourse.",
+    "keywords": [
+      "digital rhetoric",
+      "image memes",
+      "DRE3 model",
+      "narrative ecosystems",
+      "rhetorical ecology",
+      "sensemaking",
+      "computational discourse analysis"
+    ]
+  },
+  "Friedman_2021_ModelingConflict": {
+    "year": "2021",
+    "topic": "ModelingConflict",
+    "name": "ModelingConflict",
+    "description": "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management...",
+    "authors": "Scott David, R.J. Cordes, Daniel A. Friedman",
+    "abstract": "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model captures and extends OODA loops, the generations of warfare model, and the Rumsfeld Matrix. It aids analysis of modern conflict including cyber, psychological, biological, informational, financial, and ideological dimensions using BOLTS (business, oper",
+    "keywords": [
+      "Active Inference",
+      "conflict modeling",
+      "AIC model",
+      "OODA loops",
+      "cognitive security",
+      "information warfare",
+      "BOLTS framework",
+      "trust management"
+    ]
+  },
+  "Friedman_2021_NarrativeEcosystems": {
+    "year": "2021",
+    "topic": "NarrativeEcosystems",
+    "name": "NarrativeEcosystems",
+    "description": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-...",
+    "authors": "Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight",
+    "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.",
+    "keywords": [
+      "narrative ecosystems",
+      "Active Inference",
+      "Remote Teams",
+      "ONFT framework",
+      "epistemic foraging",
+      "niche construction",
+      "collective intelligence",
+      "systems engineering"
+    ]
+  },
+  "Friedman_2021_NarrativeInformationMgmt": {
+    "year": "2021",
+    "topic": "NarrativeInformationMgmt",
+    "name": "NarrativeInformationMgmt",
+    "description": "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management...",
+    "authors": "Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova",
+    "abstract": "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management, and library science by identifying common features of impactful information systems. We explore insights from personal finance, ancestry research, hybrid cloud security, translational neuroscience, and genomics to extract generalizable principles for information management.",
+    "keywords": [
+      "Narrative Information Management",
+      "NIM",
+      "collective sensemaking",
+      "knowledge management",
+      "information systems",
+      "cognitive load",
+      "interdisciplinary synthesis"
+    ]
+  },
+  "Friedman_2022_ActiveDiffusion": {
+    "year": "2022",
+    "topic": "ActiveDiffusion",
+    "name": "ActiveDiffusion",
+    "description": "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, f...",
+    "authors": "Jakub Sm\u00e9kal, Daniel Friedman",
+    "abstract": "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, facilitated through the Active Inference Institute, investigates how diffusion processes can be understood and enhanced through the lens of free energy minimization, with applications to generative AI and probabilistic modeling.",
+    "keywords": [
+      "Active Diffusion",
+      "diffusion models",
+      "Active Inference",
+      "generative AI",
+      "probabilistic modeling",
+      "free energy minimization"
+    ]
+  },
+  "Friedman_2022_ActiveInferenceOntology": {
+    "year": "2022",
+    "topic": "ActiveInferenceOntology",
+    "name": "ActiveInferenceOntology",
+    "description": "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provide...",
+    "authors": "Daniel A. Friedman, Virginia Bleu Knight",
+    "abstract": "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference Institute.",
+    "keywords": [
+      "Active Inference Ontology",
+      "knowledge graph",
+      "Free Energy Principle",
+      "ontology development",
+      "SUMO",
+      "knowledge representation",
+      "open science"
+    ]
+  },
+  "Friedman_2022_FreeWillSapolsky": {
+    "year": "2022",
+    "topic": "FreeWillSapolsky",
+    "name": "FreeWillSapolsky",
+    "description": "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental...",
+    "authors": "Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman",
+    "abstract": "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental influences on behavior, the illusion of free will, behavioral determinism, justice, and the implications of a deterministic worldview for society and morality.",
+    "keywords": [
+      "free will",
+      "determinism",
+      "Robert Sapolsky",
+      "neuroscience",
+      "behavioral genetics",
+      "philosophy",
+      "consciousness",
+      "moral philosophy"
+    ]
+  },
+  "Friedman_2022_HypercertEcosystems": {
+    "year": "2022",
+    "topic": "HypercertEcosystems",
+    "name": "HypercertEcosystems",
+    "description": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...",
+    "authors": "Active Inference Institute",
+    "abstract": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts\u2014a primitive for public goods funding\u2014can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.",
+    "keywords": [
+      "Hypercerts",
+      "DeSci",
+      "decentralized science",
+      "Active Blockference",
+      "AEOS",
+      "cognitive audits",
+      "public goods funding",
+      "systems modeling"
+    ]
+  },
+  "Friedman_2022_InformationCommons": {
+    "year": "2022",
+    "topic": "InformationCommons",
+    "name": "InformationCommons",
+    "description": "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency...",
+    "authors": "Scott David, R.J. Cordes, Daniel A. Friedman (editors)",
+    "abstract": "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency, and collective sensemaking through open standards, decentralized governance, and cognitive security principles.",
+    "keywords": [
+      "information commons",
+      "cognitive security",
+      "open standards",
+      "trust",
+      "governance",
+      "decentralized systems",
+      "information integrity",
+      "collective sensemaking"
+    ]
+  },
+  "Friedman_2022_MirrorTest": {
+    "year": "2022",
+    "topic": "MirrorTest",
+    "name": "MirrorTest",
+    "description": "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-r...",
+    "authors": "Sean O'Connor, Daniel Ari Friedman",
+    "abstract": "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-recognition, self-directed behavior, and how humans locate themselves relative to mirrors. Atypical reflection predictions may explain instances where self-recognition traits are atypical in certain individuals.",
+    "keywords": [
+      "mirror test",
+      "predictive processing",
+      "self-recognition",
+      "reflection prediction",
+      "Active Inference",
+      "self-awareness",
+      "prediction error"
+    ]
+  },
+  "Friedman_2022_StigmergicAnnotation": {
+    "year": "2022",
+    "topic": "StigmergicAnnotation",
+    "name": "StigmergicAnnotation",
+    "description": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention\u2014a socio-technical framework for freeing human attention from platform control thr...",
+    "authors": "Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf",
+    "abstract": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention\u2014a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can restore epistemic health to online environments.",
+    "keywords": [
+      "stigmergic annotation",
+      "open source attention",
+      "collective sensemaking",
+      "epistemic pollution",
+      "decentralized platforms",
+      "social annotation",
+      "digital attention"
+    ]
+  },
+  "Friedman_2022_SystematicLiteratureAnalysis": {
+    "year": "2022",
+    "topic": "SystematicLiteratureAnalysis",
+    "name": "SystematicLiteratureAnalysis",
+    "description": "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and div...",
+    "authors": "Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman",
+    "abstract": "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and diversification of the FEP/Active Inference literature, mapping its expansion across disciplines and identifying key themes, methods, and trends in the field.",
+    "keywords": [
+      "systematic literature analysis",
+      "Free Energy Principle",
+      "Active Inference",
+      "Karl Friston",
+      "history of science",
+      "bibliometrics",
+      "ontology"
+    ]
+  },
+  "Friedman_2022_TrustFinder": {
+    "year": "2022",
+    "topic": "TrustFinder",
+    "name": "TrustFinder",
+    "description": "TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University...",
+    "authors": "R.J. Cordes, Scott David, Daniel A. Friedman",
+    "abstract": "TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.",
+    "keywords": [
+      "TrustFinder",
+      "trust systems",
+      "information evaluation",
+      "cognitive security",
+      "verified information",
+      "collaborative assessment",
+      "sociotechnical systems"
+    ]
+  },
+  "Friedman_2023_AIAccountability": {
+    "year": "2023",
+    "topic": "AIAccountability",
+    "name": "AIAccountability",
+    "description": "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int...",
+    "authors": "Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC)",
+    "abstract": "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC). The submission addresses AI accountability through cognitive security, information risk management, and the P3IF framework, recommending policy app",
+    "keywords": [
+      "AI accountability",
+      "NTIA",
+      "policy comment",
+      "cognitive security",
+      "P3IF",
+      "information risk",
+      "AI governance",
+      "synthetic intelligence"
+    ]
+  },
+  "Friedman_2023_AII_v1": {
+    "year": "2023",
+    "topic": "AII_v1",
+    "name": "AII_v1",
+    "description": "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education...",
+    "authors": "Active Inference Institute",
+    "abstract": "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains.",
+    "keywords": [
+      "Active Inference Institute",
+      "open science",
+      "research organization",
+      "Free Energy Principle",
+      "community building"
+    ]
+  },
+  "Friedman_2023_ATLAS": {
+    "year": "2023",
+    "topic": "ATLAS",
+    "name": "ATLAS",
+    "description": "The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities...",
+    "authors": "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias",
+    "abstract": "The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern information environments. Evolving since the late 1990s, ATLAS provides structured methods for organizing knowledge through patterns of questions that guide analysis and decision-making across diverse domains.",
+    "keywords": [
+      "ATLAS",
+      "pattern languages",
+      "knowledge management",
+      "question-oriented approach",
+      "information architecture",
+      "decision support",
+      "cognitive tools"
+    ]
+  },
+  "Friedman_2023_AccountActiveInference": {
+    "year": "2023",
+    "topic": "AccountActiveInference",
+    "name": "AccountActiveInference",
+    "description": "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself\u2014the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (stopping-time rules, validated spreadsheet programs, trust in calculations) map onto the practice of g",
+    "keywords": [
+      "Active Inference",
+      "generative modeling",
+      "accounting metaphor",
+      "Active AccountAnts",
+      "cognitive modeling",
+      "epistemic agency",
+      "model development"
+    ]
+  },
+  "Friedman_2023_AntsAging": {
+    "year": "2023",
+    "topic": "AntsAging",
+    "name": "AntsAging",
+    "description": "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in shaping longevity.",
+    "keywords": [
+      "ants",
+      "aging",
+      "senescence",
+      "lifespan",
+      "caste",
+      "queen longevity",
+      "social insects",
+      "evolutionary biology"
+    ]
+  },
+  "Friedman_2023_BlakeFuller": {
+    "year": "2023",
+    "topic": "BlakeFuller",
+    "name": "BlakeFuller",
+    "description": "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, identifying convergences in their approaches to creativity, systems thinking, and human potential. Both figures challenged conventional boundaries between disciplines and proposed integrative frameworks for understanding reality.",
+    "keywords": [
+      "William Blake",
+      "Buckminster Fuller",
+      "comprehensivity",
+      "design science",
+      "prophetic vision",
+      "art-science synthesis",
+      "52 Living Ideas",
+      "juxtaposition"
+    ]
+  },
+  "Friedman_2023_CognitiveSovereignty": {
+    "year": "2023",
+    "topic": "CognitiveSovereignty",
+    "name": "CognitiveSovereignty",
+    "description": "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epist...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments periodically enter crises, exited by cognitive and material restructuring. Several concordances are drawn ",
+    "keywords": [
+      "cognitive sovereignty",
+      "Agamben",
+      "Homo Sacer",
+      "Active Inference",
+      "state of exception",
+      "Thomas Kuhn",
+      "paradigm shifts",
+      "epistemic agency",
+      "biopolitics",
+      "bare life"
+    ]
+  },
+  "Friedman_2023_DistributedScience": {
+    "year": "2023",
+    "topic": "DistributedScience",
+    "name": "DistributedScience",
+    "description": "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual rese...",
+    "authors": "Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant",
+    "abstract": "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual researchers, laboratories, institutions, and the global scientific community each minimize free energy at their respective scales. This framework accounts for hypothesis generation, experimental design, peer review, and knowledge accumulation as nested inference processes. We discuss how this multi-scal",
+    "keywords": [
+      "distributed science",
+      "multi-scale Active Inference",
+      "scientific process",
+      "Free Energy Principle",
+      "meta-science",
+      "collective intelligence",
+      "cultural evolution",
+      "distributed cognition"
+    ]
+  },
+  "Friedman_2023_GNN": {
+    "year": "2023",
+    "topic": "GNN",
+    "name": "GNN",
+    "description": "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic system, enabling formal comparison and interoperability across mathematical, scientific, and computational notations. The framework supports automated notation analysis and cross-system translation.",
+    "keywords": [
+      "GNN",
+      "Generalized Notation Notation",
+      "meta-notation",
+      "symbolic systems",
+      "notation translation",
+      "formal representation",
+      "interoperability"
+    ]
+  },
+  "Friedman_2023_GenerativeResearchTeams": {
+    "year": "2023",
+    "topic": "GenerativeResearchTeams",
+    "name": "GenerativeResearchTeams",
+    "description": "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top...",
+    "authors": "Daniel Friedman, Jakub Sm\u00e9kal",
+    "abstract": "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like Active Blockference, cadCAD, and cognitive security concepts including Narrative Information Management",
+    "keywords": [
+      "Generative Research Team",
+      "Active Inference",
+      "generative model",
+      "cognitive modeling",
+      "LLMs",
+      "autonomous agents",
+      "open science",
+      "decentralized science",
+      "Active Blockference",
+      "meta-prompting"
+    ]
+  },
+  "Friedman_2023_GuidedTourMinds": {
+    "year": "2023",
+    "topic": "GuidedTourMinds",
+    "name": "GuidedTourMinds",
+    "description": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue...",
+    "authors": "Ali Rahmjoo, Daniel Ari Friedman",
+    "abstract": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology\u2014based on particle dynamics and generative model structure\u2014provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides firs",
+    "keywords": [
+      "path integrals",
+      "particular kinds",
+      "mindspace",
+      "Active Inference",
+      "Free Energy Principle",
+      "consciousness",
+      "Sloman",
+      "non-anthropocentric",
+      "sentience taxonomy"
+    ]
+  },
+  "Friedman_2023_HoneyBeeGeneExpression": {
+    "year": "2023",
+    "topic": "HoneyBeeGeneExpression",
+    "name": "HoneyBeeGeneExpression",
+    "description": "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel...",
+    "authors": "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson",
+    "abstract": "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis that novel traits recruit novel genetic elements with accelerated sequence evolution.",
+    "keywords": [
+      "honey bees",
+      "Apis mellifera",
+      "gene expression",
+      "RNA-Seq",
+      "novel traits",
+      "taxonomically restricted genes",
+      "coding sequence evolution"
+    ]
+  },
+  "Friedman_2023_NSFReporting": {
+    "year": "2023",
+    "topic": "NSFReporting",
+    "name": "NSFReporting",
+    "description": "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profi...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profiles, intelligent processing prompts, and automated reporting tools to enhance the quality and accessibility of postdoctoral research outputs.",
+    "keywords": [
+      "NSF reporting",
+      "postdoctoral research",
+      "synthetic intelligence",
+      "automated reporting",
+      "research dissemination",
+      "prompt engineering"
+    ]
+  },
+  "Friedman_2023_OpenScienceSensemaking": {
+    "year": "2023",
+    "topic": "OpenScienceSensemaking",
+    "name": "OpenScienceSensemaking",
+    "description": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem...",
+    "authors": "Ronen Tamari, Daniel A. Friedman",
+    "abstract": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)\u2014an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, ratings, and behavioral traces.",
+    "keywords": [
+      "OSSm",
+      "Open Science Sensemaking",
+      "scientific sensemaking",
+      "annotation networks",
+      "open access",
+      "decentralized",
+      "information overload"
+    ]
+  },
+  "Friedman_2023_P3IF": {
+    "year": "2023",
+    "topic": "P3IF",
+    "name": "P3IF",
+    "description": "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structu...",
+    "authors": "Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman",
+    "abstract": "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structured methods for integrating diverse analytical perspectives across security, policy, and organizational domains, with applications to health security and information risk management.",
+    "keywords": [
+      "P3IF",
+      "information risk",
+      "cognitive security",
+      "interdisciplinary frameworks",
+      "requirements management",
+      "DHS",
+      "health security"
+    ]
+  },
+  "Friedman_2023_PostdocReview": {
+    "year": "2023",
+    "topic": "PostdocReview",
+    "name": "PostdocReview",
+    "description": "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation covers research contributions, collaborations, publications, and future directions across these domains, demonstrating the interdisciplinary breadth of the postdoctoral research program.",
+    "keywords": [
+      "postdoctoral review",
+      "research portfolio",
+      "Active Inference",
+      "entomology",
+      "cognitive security",
+      "meta-science",
+      "philosophy",
+      "biology",
+      "interdisciplinary research"
+    ]
+  },
+  "Friedman_2023_SinglePheromone": {
+    "year": "2023",
+    "topic": "SinglePheromone",
+    "name": "SinglePheromone",
+    "description": "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamic...",
+    "authors": "Eric Saund, Daniel Ari Friedman",
+    "abstract": "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamics of pheromone deposition, evaporation, and ant behavioral responses to concentration gradients can produce the full range of observed foraging patterns with a simpler single-pheromone mechanism.",
+    "keywords": [
+      "pheromone",
+      "ant foraging",
+      "computational model",
+      "collective behavior",
+      "stigmergy",
+      "trail formation",
+      "parsimony"
+    ]
+  },
+  "Friedman_2023_ToComment": {
+    "year": "2023",
+    "topic": "ToComment",
+    "name": "ToComment",
+    "description": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze h...",
+    "authors": "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman",
+    "abstract": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.",
+    "keywords": [
+      "rhetorical analysis",
+      "image memes",
+      "digital discourse",
+      "narrative ecosystems",
+      "DRE3 model",
+      "public sphere"
+    ]
+  },
+  "Friedman_2023_VariationalSynthesis": {
+    "year": "2023",
+    "topic": "VariationalSynthesis",
+    "name": "VariationalSynthesis",
+    "description": "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc...",
+    "authors": "Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell",
+    "abstract": "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle.",
+    "keywords": [
+      "variational synthesis",
+      "natural selection",
+      "Free Energy Principle",
+      "Bayesian mechanics",
+      "path integral",
+      "evo-devo",
+      "adaptive fitness",
+      "particular partition"
+    ]
+  },
+  "Friedman_2023_VideoEntomology": {
+    "year": "2023",
+    "topic": "VideoEntomology",
+    "name": "VideoEntomology",
+    "description": "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...",
+    "authors": "Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado",
+    "abstract": "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies, and novel experimental paradigms for studying insect behavior. We review current video methods, discuss their applications in entomological research, and identify future directions for video-enhanced insect science.",
+    "keywords": [
+      "video entomology",
+      "behavioral tracking",
+      "automated phenotyping",
+      "insect behavior",
+      "experimental methods",
+      "high-throughput analysis"
+    ]
+  },
+  "Friedman_2024_AII_v2": {
+    "year": "2024",
+    "topic": "AII_v2",
+    "name": "AII_v2",
+    "description": "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap...",
+    "authors": "Active Inference Institute",
+    "abstract": "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and application.",
+    "keywords": [
+      "Active Inference Institute",
+      "organizational update",
+      "open science",
+      "community"
+    ]
+  },
+  "Friedman_2024_BioFirm": {
+    "year": "2024",
+    "topic": "BioFirm",
+    "name": "BioFirm",
+    "description": "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active i...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts.",
+    "keywords": [
+      "BioFirm",
+      "bioregional stewardship",
+      "Active Inference",
+      "organizational modeling",
+      "sustainability",
+      "adaptive management"
+    ]
+  },
+  "Friedman_2024_BlattodeaDiversity": {
+    "year": "2024",
+    "topic": "BlattodeaDiversity",
+    "name": "BlattodeaDiversity",
+    "description": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W...",
+    "authors": "Daniel A. Friedman, et al.",
+    "abstract": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. We review current understanding of blattodean taxonomy, behavior, ecology, and the evolutionary transition from solitary cockroaches to eusocial termites.",
+    "keywords": [
+      "Blattodea",
+      "cockroach diversity",
+      "termites",
+      "insect ecology",
+      "eusociality",
+      "taxonomy",
+      "evolutionary biology"
+    ]
+  },
+  "Friedman_2024_CurioCards": {
+    "year": "2024",
+    "topic": "CurioCards",
+    "name": "CurioCards",
+    "description": "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.",
+    "keywords": [
+      "Curio Cards",
+      "research ideation",
+      "creativity tools",
+      "interdisciplinary thinking",
+      "prompt-based exploration"
+    ]
+  },
+  "Friedman_2024_DigitalTwins": {
+    "year": "2024",
+    "topic": "DigitalTwins",
+    "name": "DigitalTwins",
+    "description": "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively minimize free energy. The work connects digital twin technology to predictive processing and organizational modeling.",
+    "keywords": [
+      "digital twins",
+      "Active Inference",
+      "generative models",
+      "predictive processing",
+      "cyber-physical systems",
+      "simulation"
+    ]
+  },
+  "Friedman_2024_FarmWorks": {
+    "year": "2024",
+    "topic": "FarmWorks",
+    "name": "FarmWorks",
+    "description": "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems...",
+    "authors": "Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin",
+    "abstract": "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key components include: (1) customizable on-site sensor networks for real-time environmental data gatheri",
+    "keywords": [
+      "FarmWorks",
+      "decentralized AI",
+      "precision agriculture",
+      "Active Inference",
+      "sensor networks",
+      "edge computing",
+      "farmer autonomy",
+      "sustainable agriculture",
+      "IoT",
+      "community-driven innovation"
+    ]
+  },
+  "Friedman_2024_FederatedInference": {
+    "year": "2024",
+    "topic": "FederatedInference",
+    "name": "FederatedInference",
+    "description": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generati...",
+    "authors": "Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith",
+    "abstract": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while enabling collective cognition. This speaks to multi-scale inference architectures and distributed deci",
+    "keywords": [
+      "federated inference",
+      "belief sharing",
+      "Active Inference",
+      "distributed intelligence",
+      "multi-agent systems",
+      "message passing",
+      "collective cognition",
+      "privacy-preserving inference"
+    ]
+  },
+  "Friedman_2024_ImageMemeResearch": {
+    "year": "2024",
+    "topic": "ImageMemeResearch",
+    "name": "ImageMemeResearch",
+    "description": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov...",
+    "authors": "Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas",
+    "abstract": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We provide frameworks for classifying meme content, tracking diffusion patterns, and assessing sensemaking impacts.",
+    "keywords": [
+      "image memes",
+      "meme research",
+      "digital communication",
+      "narrative analysis",
+      "rhetorical analysis",
+      "sensemaking"
+    ]
+  },
+  "Friedman_2024_InfiniteImaginarium": {
+    "year": "2024",
+    "topic": "InfiniteImaginarium",
+    "name": "InfiniteImaginarium",
+    "description": "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing\u2014from rapid intuitive insight to slow deliberate analysis\u2014within creative production contexts.",
+    "keywords": [
+      "epistemic tempos",
+      "knowledge production",
+      "creative exploration",
+      "way finding",
+      "imagination",
+      "operational frameworks"
+    ]
+  },
+  "Friedman_2024_MathArtBlake": {
+    "year": "2024",
+    "topic": "MathArtBlake",
+    "name": "MathArtBlake",
+    "description": "This work explores the intersection of mathematics, art, and William Blake's prophetic vision. Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "This work explores the intersection of mathematics, art, and William Blake's prophetic vision. Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patterns that resonate with modern frameworks in geometry, topology, and Active Inference.",
+    "keywords": [
+      "William Blake",
+      "mathematics",
+      "art",
+      "prophetic vision",
+      "geometric structures",
+      "Active Inference"
+    ]
+  },
+  "Friedman_2024_OntologySUMO": {
+    "year": "2024",
+    "topic": "OntologySUMO",
+    "name": "OntologySUMO",
+    "description": "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to cont...",
+    "authors": "David S. Douglass, Adam Pease, Daniel Friedman, et al.",
+    "abstract": "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and subsets, and display relationships among identified SUMO topics. This scaffolding facilitates rigorous mapping of Active Inference to SUMO.",
+    "keywords": [
+      "ontology alignment",
+      "SUMO",
+      "Active Inference Ontology",
+      "knowledge representation",
+      "formal ontology",
+      "semantic mapping"
+    ]
+  },
+  "Friedman_2024_PaleolithicRockstars": {
+    "year": "2024",
+    "topic": "PaleolithicRockstars",
+    "name": "PaleolithicRockstars",
+    "description": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitive capabilities and their connection to modern theories of consciousness and aesthetic experience.",
+    "keywords": [
+      "Paleolithic art",
+      "cave paintings",
+      "cognitive evolution",
+      "consciousness",
+      "aesthetic experience",
+      "rock art"
+    ]
+  },
+  "Friedman_2024_PopulationSearch": {
+    "year": "2024",
+    "topic": "PopulationSearch",
+    "name": "PopulationSearch",
+    "description": "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on th...",
+    "authors": "Nassim Dehouche, Daniel Friedman",
+    "abstract": "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on the Travelling Salesman Problem (TSP), experimental results indicate Active Inference yields improved solutions with marginal increase in computational cost, with performance patterns relating to graph topology.",
+    "keywords": [
+      "population search",
+      "Active Inference",
+      "Ant Colony Optimization",
+      "TSP",
+      "metaheuristics",
+      "anticipatory adaptation",
+      "computational optimization"
+    ]
+  },
+  "Friedman_2024_QuantumDreams": {
+    "year": "2024",
+    "topic": "QuantumDreams",
+    "name": "QuantumDreams",
+    "description": "Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse...",
+    "authors": "Daniel Ari Friedman, Dean Tickles",
+    "abstract": "Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse code encoding and multi-layered symbolism to map between quantum physical concepts and experiential-artistic domains.",
+    "keywords": [
+      "quantum mechanics",
+      "art",
+      "phenomenology",
+      "Active Inference",
+      "visual analysis",
+      "symbolism",
+      "Morse code"
+    ]
+  },
+  "Friedman_2024_SensemakingFederation": {
+    "year": "2024",
+    "topic": "SensemakingFederation",
+    "name": "SensemakingFederation",
+    "description": "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl...",
+    "authors": "Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman",
+    "abstract": "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowledge federation, and the future of collaborative digital innovation.",
+    "keywords": [
+      "sensemaking federation",
+      "digital innovation",
+      "knowledge federation",
+      "collaborative sensemaking",
+      "decentralized infrastructure"
+    ]
+  },
+  "Friedman_2024_SharedProtentions": {
+    "year": "2024",
+    "topic": "SharedProtentions",
+    "name": "SharedProtentions",
+    "description": "We develop the concept of shared protentions\u2014shared anticipatory states\u2014in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz...",
+    "authors": "Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead",
+    "abstract": "We develop the concept of shared protentions\u2014shared anticipatory states\u2014in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.",
+    "keywords": [
+      "shared protentions",
+      "multi-agent",
+      "Active Inference",
+      "anticipation",
+      "coupled generative models",
+      "coordination",
+      "predictive processing"
+    ]
+  },
+  "Friedman_2025_5thSymposium": {
+    "year": "2025",
+    "topic": "5thSymposium",
+    "name": "5thSymposium",
+    "description": "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc...",
+    "authors": "Active Inference Institute",
+    "abstract": "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.",
+    "keywords": [
+      "Active Inference symposium",
+      "conference proceedings",
+      "international symposium",
+      "research presentations"
+    ]
+  },
+  "Friedman_2025_AII_v3": {
+    "year": "2025",
+    "topic": "AII_v3",
+    "name": "AII_v3",
+    "description": "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institu...",
+    "authors": "Active Inference Institute",
+    "abstract": "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institute's evolving mission and impact across diverse application domains.",
+    "keywords": [
+      "Active Inference Institute",
+      "organizational overview",
+      "research programs",
+      "educational initiatives",
+      "community"
+    ]
+  },
+  "Friedman_2025_AccessibilityActiveInference": {
+    "year": "2025",
+    "topic": "AccessibilityActiveInference",
+    "name": "AccessibilityActiveInference",
+    "description": "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel...",
+    "authors": "Daniel A. Friedman, Active Inference Institute",
+    "abstract": "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes open-source educational resources to address these gaps at different education levels.",
+    "keywords": [
+      "accessibility",
+      "Active Inference",
+      "pedagogy",
+      "summer school curriculum",
+      "Generative Playbooks",
+      "open-source education",
+      "neurotechnology",
+      "neurodiversity",
+      "cognitive security"
+    ]
+  },
+  "Friedman_2025_AgentAndNiche": {
+    "year": "2025",
+    "topic": "AgentAndNiche",
+    "name": "AgentAndNiche",
+    "description": "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Fuller's Synergetics. The text juxtaposes Blake's prophetic verses with speculative ecological-cognitive commentary, exploring themes of contraries as generative principles, threshold dynamics, chemotactic precision, and the fourfold crucible of tetrahedral tensions. Each section of Blake's original tex",
+    "keywords": [
+      "William Blake",
+      "Marriage of Heaven and Hell",
+      "ecological psychology",
+      "Active Inference",
+      "Synergetics",
+      "contraries",
+      "predictive processing",
+      "Markov blankets",
+      "visionary epistemology",
+      "art-science synthesis"
+    ]
+  },
+  "Friedman_2025_AntStack": {
+    "year": "2025",
+    "topic": "AntStack",
+    "name": "AntStack",
+    "description": "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patterns. The framework provides a structured approach to integrating diverse biological data across scales in social insect research.",
+    "keywords": [
+      "AntStack",
+      "multilevel modeling",
+      "ant colonies",
+      "social insects",
+      "multiscale biology",
+      "colony organization"
+    ]
+  },
+  "Friedman_2025_AntStackComplexity": {
+    "year": "2025",
+    "topic": "AntStackComplexity",
+    "name": "AntStackComplexity",
+    "description": "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and non-equilibrium thermodynamics to the multilevel analysis of social insect colonies.",
+    "keywords": [
+      "AntStack",
+      "complexity science",
+      "information theory",
+      "complex adaptive systems",
+      "ant colonies",
+      "non-equilibrium thermodynamics"
+    ]
+  },
+  "Friedman_2025_AuBI": {
+    "year": "2025",
+    "topic": "AuBI",
+    "name": "AuBI",
+    "description": "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems ca...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems can augment human cognitive capabilities while maintaining cognitive sovereignty and information integrity.",
+    "keywords": [
+      "AuBI",
+      "augmented intelligence",
+      "biological intelligence",
+      "Active Inference",
+      "cognitive augmentation",
+      "human-AI interaction"
+    ]
+  },
+  "Friedman_2025_CEREBRUM": {
+    "year": "2025",
+    "topic": "CEREBRUM",
+    "name": "CEREBRUM",
+    "description": "CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are tr...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are treated as case-bearing entities (Nominative, Accusative, Dative, etc.) that assume functional roles within a formal linguistic-type calculus, enabling structured model management and inter-model communication.",
+    "keywords": [
+      "CEREBRUM",
+      "linguistic case systems",
+      "Active Inference",
+      "Bayesian modeling",
+      "model management",
+      "case grammar",
+      "unified modeling"
+    ]
+  },
+  "Friedman_2025_CognitiveArtScience": {
+    "year": "2025",
+    "topic": "CognitiveArtScience",
+    "name": "CognitiveArtScience",
+    "description": "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference, we develop formal connections between aesthetic experience, creative cognition, and scientific reasoning.",
+    "keywords": [
+      "cognitive art-science",
+      "aesthetic experience",
+      "creative cognition",
+      "Active Inference",
+      "art-science integration"
+    ]
+  },
+  "Friedman_2025_ConsciousnessAnts": {
+    "year": "2025",
+    "topic": "ConsciousnessAnts",
+    "name": "ConsciousnessAnts",
+    "description": "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level informati...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level information integration, adaptive behavior, and meta-cognitive processes in ant colonies relate to proposed criteria for consciousness.",
+    "keywords": [
+      "consciousness",
+      "ant colonies",
+      "Ant Colony Test",
+      "information integration",
+      "collective cognition",
+      "meta-cognition"
+    ]
+  },
+  "Friedman_2025_DiscoveryEngine": {
+    "year": "2025",
+    "topic": "DiscoveryEngine",
+    "name": "DiscoveryEngine",
+    "description": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refined through free energy minimization, enabling structured exploration of research questions.",
+    "keywords": [
+      "Discovery Engine",
+      "automated discovery",
+      "Active Inference",
+      "scientific reasoning",
+      "hypothesis generation",
+      "computational science"
+    ]
+  },
+  "Friedman_2025_EvoJump": {
+    "year": "2025",
+    "topic": "EvoJump",
+    "name": "EvoJump",
+    "description": "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work connects major evolutionary transitions theory with the Free Energy Principle.",
+    "keywords": [
+      "evolutionary transitions",
+      "EvoJump",
+      "Active Inference",
+      "major transitions",
+      "phenotypic complexity",
+      "Free Energy Principle"
+    ]
+  },
+  "Friedman_2025_MDKV": {
+    "year": "2025",
+    "topic": "MDKV",
+    "name": "MDKV",
+    "description": "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations between human-readable Markdown documents and structured data (JSON, TOML). The specification is open source under Apache-2.0 and situates MDKV with respect to Matroska (MKV) for extensible container design.",
+    "keywords": [
+      "MDKV",
+      "Markdown",
+      "key-value format",
+      "structured data",
+      "document specification",
+      "YAML-free",
+      "round-trip transformation"
+    ]
+  },
+  "Friedman_2025_MarkdownDecisionProcess": {
+    "year": "2025",
+    "topic": "MarkdownDecisionProcess",
+    "name": "MarkdownDecisionProcess",
+    "description": "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Dr...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theory, the framework operates at Marr's three levels: computational, algorithmic, and implementational. Key innovations include MarkChain for document generation, PolicyOptimizer for reinforcement learning optimization, and BeliefUpdater for probabilisti",
+    "keywords": [
+      "Markdown Decision Process",
+      "document analysis",
+      "Markov chains",
+      "reinforcement learning",
+      "POMDP",
+      "probabilistic modeling",
+      "document generation"
+    ]
+  },
+  "Friedman_2025_OnTime": {
+    "year": "2025",
+    "topic": "OnTime",
+    "name": "OnTime",
+    "description": "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems.",
+    "keywords": [
+      "temporal dynamics",
+      "Active Inference",
+      "synchronization",
+      "collective behavior",
+      "temporal coordination"
+    ]
+  },
+  "Friedman_2025_QuadMath": {
+    "year": "2025",
+    "topic": "QuadMath",
+    "name": "QuadMath",
+    "description": "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace fr...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace framework, develops exact rational arithmetic for IVM lattice operations, and provides open-source companion code and tests for reproducibility.",
+    "keywords": [
+      "QuadMath",
+      "Quadray coordinates",
+      "4D geometry",
+      "Synergetics",
+      "Buckminster Fuller",
+      "IVM lattice",
+      "rational arithmetic",
+      "computational geometry"
+    ]
+  },
+  "Friedman_2025_ResNei": {
+    "year": "2025",
+    "topic": "ResNei",
+    "name": "ResNei",
+    "description": "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared...",
+    "authors": "Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman",
+    "abstract": "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared, interconnected environments. The platform enables collaborative research that transcends traditional academic boundaries.",
+    "keywords": [
+      "ResNei",
+      "Research Neighbourhood",
+      "collaborative research",
+      "distributed collaboration",
+      "interdisciplinary",
+      "knowledge sharing"
+    ]
+  },
+  "Friedman_2025_Symergetics": {
+    "year": "2025",
+    "topic": "Symergetics",
+    "name": "Symergetics",
+    "description": "Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implemen...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implements Quadray coordinates, IVM lattice operations, and symbolic computation tools for exact geometric analysis. Released as open-source software with comprehensive documentation and tests.",
+    "keywords": [
+      "Symergetics",
+      "Synergetics",
+      "Buckminster Fuller",
+      "rational arithmetic",
+      "Quadray coordinates",
+      "IVM lattice",
+      "symbolic computation",
+      "computational geometry"
+    ]
+  },
+  "Friedman_2025_SystemsProcesses": {
+    "year": "2025",
+    "topic": "SystemsProcesses",
+    "name": "SystemsProcesses",
+    "description": "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and...",
+    "authors": "Daniel A. Friedman",
+    "abstract": "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and are enriched by Active Inference, pointing towards a fuller systems science that integrates process philosophy and anticipatory systems.",
+    "keywords": [
+      "systems processes",
+      "Active Inference",
+      "systems science",
+      "metatheory",
+      "process philosophy",
+      "anticipatory systems"
+    ]
+  },
+  "Friedman_2025_TemporalDepth": {
+    "year": "2025",
+    "topic": "TemporalDepth",
+    "name": "TemporalDepth",
+    "description": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i...",
+    "authors": "Daniel A. Friedman, et al.",
+    "abstract": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience is constructed through hierarchical predictive processing, and how disruptions to temporal integration may underlie depersonalization phenomena.",
+    "keywords": [
+      "temporal depth",
+      "depersonalization",
+      "self-coherence",
+      "Active Inference",
+      "predictive processing",
+      "temporal integration",
+      "clinical psychology"
+    ]
+  },
+  "Friedman_2025_Thoughtseeds": {
+    "year": "2025",
+    "topic": "Thoughtseeds",
+    "name": "Thoughtseeds",
+    "description": "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete...",
+    "authors": "Prakash Chandra Kavi, Gorka Zamora-L\u00f3pez, Daniel Ari Friedman, Gustavo Patow",
+    "abstract": "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete and cooperate within a cognitive landscape, using Active Inference to formalize the dynamics of attention, awareness, and thought emergence during meditation.",
+    "keywords": [
+      "Thoughtseeds",
+      "meditation",
+      "thought dynamics",
+      "hierarchical modeling",
+      "agentic framework",
+      "Active Inference",
+      "attention",
+      "mindfulness"
+    ]
+  },
+  "Friedman_2026_BeforePragmatism": {
+    "year": "2026",
+    "topic": "BeforePragmatism",
+    "name": "BeforePragmatism",
+    "description": "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Blake's visionary epistemology prefigures key concepts in American pragmatism (Peirce, Dewey, James) before the formal emergence of the pragmatist tradition.",
+    "keywords": [
+      "William Blake",
+      "pragmatism",
+      "anticipatory epistemology",
+      "America a Prophecy",
+      "Peirce",
+      "Dewey",
+      "James",
+      "prophetic vision"
+    ]
+  },
+  "Friedman_2026_CognitiveIntegrity": {
+    "year": "2026",
+    "topic": "CognitiveIntegrity",
+    "name": "CognitiveIntegrity",
+    "description": "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theore...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theoretical foundations, establishing formal definitions of cognitive integrity, threat models, and defense mechanisms using Active Inference and category theory.",
+    "keywords": [
+      "cognitive integrity",
+      "multiagent security",
+      "cognitive security",
+      "Active Inference",
+      "category theory",
+      "formal foundations",
+      "threat modeling"
+    ]
+  },
+  "Friedman_2026_DoorsOfPerception": {
+    "year": "2026",
+    "topic": "DoorsOfPerception",
+    "name": "DoorsOfPerception",
+    "description": "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atl...",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atlas' sketching how Blake's theory of seeing maps onto prediction error minimization, Markov blankets, hierarchical generative models, and the principle that all perception is active inference.",
+    "keywords": [
+      "William Blake",
+      "Active Inference",
+      "perception",
+      "prediction",
+      "Thematic Atlas",
+      "prophetic vision",
+      "generative models",
+      "Markov blankets"
+    ]
+  }
+}
