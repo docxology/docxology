@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10034512-blue)](https://doi.org/10.5281/zenodo.10034512)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"P3IF","abstract":"The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structured methods for integrating diverse analytical perspectives across security, policy, and organizational domains, with applications to health security and information risk management.","keywords":["P3IF","information risk","cognitive security","interdisciplinary frameworks","requirements management","DHS","health security"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Requirements framework integration
 - Information risk management
 - Cognitive security analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

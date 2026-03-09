@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17244386-blue)](https://doi.org/10.5281/zenodo.17244386)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MarkdownDecisionProcess","abstract":"The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theory, the framework operates at Marr's three levels: computational, algorithmic, and implementational. Key innovations include MarkChain for document generation, PolicyOptimizer for reinforcement learning optimization, and BeliefUpdater for probabilisti","keywords":["Markdown Decision Process","document analysis","Markov chains","reinforcement learning","POMDP","probabilistic modeling","document generation"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - POMDP formulation
 - Bayesian belief updating
 - Document structure analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

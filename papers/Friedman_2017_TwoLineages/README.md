@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1111%2Fmec.13964-blue)](https://doi.org/10.1111/mec.13964)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"TwoLineages","abstract":"Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males from a different genetic lineage to produce workers, while same-lineage matings produce new queens. This unusual mating system creates colonies with complex genetic architectures that provide a natural experiment for studying the relationship between genotype and division of labor. We discuss how d","keywords":["dependent-lineage","mating systems","Pogonomyrmex","harvester ants","genetic caste determination","intragenomic conflict","colony organization","social evolution"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Molecular phylogenetics
 - Behavioral ecology field studies
 - Comparative interspecific analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

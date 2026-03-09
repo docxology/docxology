@@ -41,6 +41,10 @@ When applying this skill:
 - Software development and computational methods
 - Formal systems and notation frameworks
 
+## 🎯 Consulting & Tutoring
+
+[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+
 ## Related Skills
 
 See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the complete publication catalog and related papers.

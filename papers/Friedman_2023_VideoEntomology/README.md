@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3791%2F65002-blue)](https://doi.org/10.3791/65002)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"VideoEntomology","abstract":"We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies, and novel experimental paradigms for studying insect behavior. We review current video methods, discuss their applications in entomological research, and identify future directions for video-enhanced insect science.","keywords":["video entomology","behavioral tracking","automated phenotyping","insect behavior","experimental methods","high-throughput analysis"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Automated behavioral phenotyping
 - Computer vision for entomology
 - High-throughput behavioral analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

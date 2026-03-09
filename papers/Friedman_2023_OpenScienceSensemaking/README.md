@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.31222%2Fosf.io%2F9nb3u-blue)](https://doi.org/10.31222/osf.io/9nb3u)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"OpenScienceSensemaking","abstract":"While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)\u2014an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, ratings, and behavioral traces.","keywords":["OSSm","Open Science Sensemaking","scientific sensemaking","annotation networks","open access","decentralized","information overload"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Decentralized annotation system design
 - Sensemaking data taxonomy
 - Interoperability framework development
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

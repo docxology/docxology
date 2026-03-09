@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Farts7030039-blue)](https://doi.org/10.3390/arts7030039)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PPPiP","abstract":"Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship development. PPPiP combines the advantages of individuated artistic practice with the established framew","keywords":["PPPiP","art therapy","improvisation","intimate relationships","affective neuroscience","creativity","dyadic interaction","sexology","controlled novelty"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Art therapy framework analysis
 - Neuroscience of improvisation review
 - Concept development and prospective design
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

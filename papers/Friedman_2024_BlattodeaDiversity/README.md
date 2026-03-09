@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1002%2Fece3.70063-blue)](https://doi.org/10.1002/ece3.70063)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BlattodeaDiversity","abstract":"This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. We review current understanding of blattodean taxonomy, behavior, ecology, and the evolutionary transition from solitary cockroaches to eusocial termites.","keywords":["Blattodea","cockroach diversity","termites","insect ecology","eusociality","taxonomy","evolutionary biology"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Comparative evolutionary biology
 - Ecological survey
 - Phylogenetic analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

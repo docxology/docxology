@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.neubiorev.2023.105500-blue)](https://doi.org/10.1016/j.neubiorev.2023.105500)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"FederatedInference","abstract":"This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while enabling collective cognition. This speaks to multi-scale inference architectures and distributed deci","keywords":["federated inference","belief sharing","Active Inference","distributed intelligence","multi-agent systems","message passing","collective cognition","privacy-preserving inference"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Belief sharing via message passing
 - Multi-agent generative modeling
 - Distributed inference architecture design
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

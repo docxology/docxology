@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7449368-blue)](https://doi.org/10.5281/zenodo.7449368)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"SystematicLiteratureAnalysis","abstract":"We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and diversification of the FEP/Active Inference literature, mapping its expansion across disciplines and identifying key themes, methods, and trends in the field.","keywords":["systematic literature analysis","Free Energy Principle","Active Inference","Karl Friston","history of science","bibliometrics","ontology"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Citation network analysis
 - Ontological classification
 - Publication trend analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

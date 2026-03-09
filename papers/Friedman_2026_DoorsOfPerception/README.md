@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18600041-blue)](https://doi.org/10.5281/zenodo.18600041)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DoorsOfPerception","abstract":"The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atlas' sketching how Blake's theory of seeing maps onto prediction error minimization, Markov blankets, hierarchical generative models, and the principle that all perception is active inference.","keywords":["William Blake","Active Inference","perception","prediction","Thematic Atlas","prophetic vision","generative models","Markov blankets"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Thematic concordance mapping
 - Art-mathematics synthesis
 - Active Inference application to aesthetics
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

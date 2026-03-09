@@ -3,6 +3,11 @@
 **Daniel A. Friedman** (2020) · *978-1-7364269-0-6*
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GreatPreset","abstract":"This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inference, narrative ecosystems, and information theory, the paper explores how large-scale narrative shifts can either empower or disempower individuals and communities in their sensemaking processes.","keywords":["cognitive security","narrative ecosystems","Great Reset","sensemaking","Active Inference","information theory","socioeconomic narratives"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -23,6 +28,11 @@
 - Cognitive security analysis
 - Narrative ecosystem mapping
 - Active Inference framework application
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

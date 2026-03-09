@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.mehy.2015.09.015-blue)](https://doi.org/10.1016/j.mehy.2015.09.015)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EhrlichialInfection","abstract":"We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA s","keywords":["Ehrlichia","Anaplasma","leukemia","myelodysplastic syndromes","intracellular parasites","Rifampin","immune system dysfunction","bone marrow","autoimmune disorders"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -20,6 +25,11 @@
 - Documents EA's ability to alter host gene transcription, suppress apoptosis, and disrupt cell differentiation
 - Presents three illustrative clinical cases: two leukemia patients treated with Rifampin showing dramatic (though temporary) improvement, and one with PCR evidence of a novel EA species
 - Proposes antibiotic (rifamycin) treatment as a potential therapeutic avenue for leukemia
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

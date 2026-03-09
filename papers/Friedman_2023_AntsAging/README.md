@@ -3,6 +3,11 @@
 **Daniel A. Friedman** (2023) · *[10.5281/zenodo.7855582](https://doi.org/10.5281/zenodo.7855582)*
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AntsAging","abstract":"A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in shaping longevity.","keywords":["ants","aging","senescence","lifespan","caste","queen longevity","social insects","evolutionary biology"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -23,6 +28,11 @@
 - Presentation format
 - Caste-specific lifespan analysis
 - Evolutionary senescence framework
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -69,6 +69,10 @@ Use this skill when investigating infectious etiologies of hematological maligna
 - Design research protocols to test causal links between microbial infection and malignancy
 - Critically analyze hypothesis-driven medical papers balancing speculation with evidence
 
+## 🎯 Consulting & Tutoring
+
+[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+
 ## Related Papers
 
 See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for full publication catalog.

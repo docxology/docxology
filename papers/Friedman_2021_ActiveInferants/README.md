@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffnbeh.2021.647732-blue)](https://doi.org/10.3389/fnbeh.2021.647732)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ActiveInferants","abstract":"In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze paradigm, illustrating the model's ability to recover basic colony phenomena such as trail formation aft","keywords":["active inference","ant foraging","Markov decision process","stigmergy","T-maze","collective behavior","behavioral modeling","eco-evo-devo"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -28,6 +33,11 @@
 - In silico simulation
 - Stigmergic decision-making modeling
 - T-maze paradigm simulation
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17229924-blue)](https://doi.org/10.5281/zenodo.17229924)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EvoJump","abstract":"EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work connects major evolutionary transitions theory with the Free Energy Principle.","keywords":["evolutionary transitions","EvoJump","Active Inference","major transitions","phenotypic complexity","Free Energy Principle"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Evolutionary transition analysis
 - Active Inference evolutionary modeling
 - Major transitions theory
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

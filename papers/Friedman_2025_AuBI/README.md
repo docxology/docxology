@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17228945-blue)](https://doi.org/10.5281/zenodo.17228945)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AuBI","abstract":"AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems can augment human cognitive capabilities while maintaining cognitive sovereignty and information integrity.","keywords":["AuBI","augmented intelligence","biological intelligence","Active Inference","cognitive augmentation","human-AI interaction"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Active Inference augmentation modeling
 - Cognitive architecture analysis
 - Human-AI interface design
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

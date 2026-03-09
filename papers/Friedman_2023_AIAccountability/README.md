@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8025957-blue)](https://doi.org/10.5281/zenodo.8025957)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AIAccountability","abstract":"Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC). The submission addresses AI accountability through cognitive security, information risk management, and the P3IF framework, recommending policy app","keywords":["AI accountability","NTIA","policy comment","cognitive security","P3IF","information risk","AI governance","synthetic intelligence"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Cognitive security analysis
 - P3IF framework application
 - Multi-organizational collaboration
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

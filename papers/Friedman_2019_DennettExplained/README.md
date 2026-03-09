@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.34700%2F7gkw-zh08-blue)](https://doi.org/10.34700/7gkw-zh08)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DennettExplained","abstract":"In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philosophers have the ability to criticize and contribute to the science of the mind, and speaks to the virtues of cross-disciplinary glances and hybrid vigor. He discusses potential scientific and therapeutic value of psychoactive substances within proper settings.","keywords":["consciousness","philosophy of mind","Daniel Dennett","cognitive science","psychedelics","predictive processing","altered states"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 
 - Scholarly interview methodology
 - Philosophical discussion and analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

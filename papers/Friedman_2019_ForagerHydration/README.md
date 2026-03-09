@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41598-019-41586-3-blue)](https://doi.org/10.1038/s41598-019-41586-3)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ForagerHydration","abstract":"Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more sensitive to water loss. Surprisingly, foragers more sensitive to water loss are from colonies more likel","keywords":["Pogonomyrmex barbatus","desiccation physiology","foraging behavior","water balance","colony variation","collective behavior","behavioral ecology","reproductive fitness"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -28,6 +33,11 @@
 - Colony behavioral monitoring
 - Statistical analysis of colony-level variation
 - Long-term colony census data
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

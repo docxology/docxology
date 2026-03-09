@@ -3,6 +3,11 @@
 **Daniel A. Friedman** (2025) · *Book Chapter*
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ConsciousnessAnts","abstract":"Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level information integration, adaptive behavior, and meta-cognitive processes in ant colonies relate to proposed criteria for consciousness.","keywords":["consciousness","ant colonies","Ant Colony Test","information integration","collective cognition","meta-cognition"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -23,6 +28,11 @@
 - Colony-level analysis
 - Information integration measurement
 - Comparative cognitive analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

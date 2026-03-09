@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15170907-blue)](https://doi.org/10.5281/zenodo.15170907)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CEREBRUM","abstract":"CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are treated as case-bearing entities (Nominative, Accusative, Dative, etc.) that assume functional roles within a formal linguistic-type calculus, enabling structured model management and inter-model communication.","keywords":["CEREBRUM","linguistic case systems","Active Inference","Bayesian modeling","model management","case grammar","unified modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Category theory application
 - Model lifecycle management
 - Case-based computational framework
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

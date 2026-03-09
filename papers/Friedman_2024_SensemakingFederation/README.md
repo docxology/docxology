@@ -3,6 +3,11 @@
 **Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman** (2024) · *[10.5281/zenodo.14574046](https://doi.org/10.5281/zenodo.14574046)*
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"SensemakingFederation","abstract":"Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowledge federation, and the future of collaborative digital innovation.","keywords":["sensemaking federation","digital innovation","knowledge federation","collaborative sensemaking","decentralized infrastructure"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -22,6 +27,11 @@
 - Panel discussion
 - Collaborative sensemaking
 - Digital innovation analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

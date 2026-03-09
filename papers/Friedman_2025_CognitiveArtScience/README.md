@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16740439-blue)](https://doi.org/10.5281/zenodo.16740439)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveArtScience","abstract":"This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference, we develop formal connections between aesthetic experience, creative cognition, and scientific reasoning.","keywords":["cognitive art-science","aesthetic experience","creative cognition","Active Inference","art-science integration"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Cognitive science framework application
 - Art-science comparative analysis
 - Active Inference aesthetic modeling
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

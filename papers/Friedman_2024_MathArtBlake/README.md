@@ -3,6 +3,11 @@
 **Daniel Ari Friedman** (2024) · *[10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301)*
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MathArtBlake","abstract":"This work explores the intersection of mathematics, art, and William Blake's prophetic vision. Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patterns that resonate with modern frameworks in geometry, topology, and Active Inference.","keywords":["William Blake","mathematics","art","prophetic vision","geometric structures","Active Inference"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -22,6 +27,11 @@
 - Mathematical analysis of visual art
 - Formal pattern identification
 - Art-science comparative analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

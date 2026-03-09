@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18364119-blue)](https://doi.org/10.5281/zenodo.18364119)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveIntegrity","abstract":"The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theoretical foundations, establishing formal definitions of cognitive integrity, threat models, and defense mechanisms using Active Inference and category theory.","keywords":["cognitive integrity","multiagent security","cognitive security","Active Inference","category theory","formal foundations","threat modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Category-theoretic formalization
 - Active Inference security modeling
 - Threat model construction
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

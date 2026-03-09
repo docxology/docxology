@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7377256-blue)](https://doi.org/10.5281/zenodo.7377256)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MirrorTest","abstract":"We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-recognition, self-directed behavior, and how humans locate themselves relative to mirrors. Atypical reflection predictions may explain instances where self-recognition traits are atypical in certain individuals.","keywords":["mirror test","predictive processing","self-recognition","reflection prediction","Active Inference","self-awareness","prediction error"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Predictive processing framework analysis
 - Behavioral test reinterpretation
 - Theoretical model development
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

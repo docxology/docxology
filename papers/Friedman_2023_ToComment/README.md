@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2023.06.002-blue)](https://doi.org/10.1016/j.plrev.2023.06.002)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ToComment","abstract":"This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.","keywords":["rhetorical analysis","image memes","digital discourse","narrative ecosystems","DRE3 model","public sphere"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Rhetorical ecosystem analysis
 - Digital meme content analysis
 - DRE3 framework application
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

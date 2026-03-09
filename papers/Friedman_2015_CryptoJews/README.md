@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffgene.2015.00261-blue)](https://doi.org/10.3389/fgene.2015.00261)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CryptoJews","abstract":"This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese \"crypto-Jews.\" The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as \"reliable Jewish ancestry predictors\" due to haplotype polyphyly and molecular clock ambiguity \u2014 many ostensibly \"Jewish\" haplotypes are","keywords":["Jewish genetics","haplotypes","crypto-Jews","Iberian Peninsula","admixture","demographic history","Y-chromosome","mtDNA","population genetics"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -20,6 +25,11 @@
 - Identifies critical methodological weaknesses in applying uniparental markers to infer religious or ethnic heritage
 - Advocates for formal demographic modeling and quantitative admixture estimates over narrative-driven interpretations
 - Highlights the distinction between genetic population structure and socio-religious community identity
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7394901-blue)](https://doi.org/10.5281/zenodo.7394901)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"FreeWillSapolsky","abstract":"In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental influences on behavior, the illusion of free will, behavioral determinism, justice, and the implications of a deterministic worldview for society and morality.","keywords":["free will","determinism","Robert Sapolsky","neuroscience","behavioral genetics","philosophy","consciousness","moral philosophy"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 
 - Scholarly interview
 - Philosophical and neuroscientific analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

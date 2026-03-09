@@ -3,6 +3,11 @@
 **Active Inference Institute** (2025) · *[10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266)*
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"5thSymposium","abstract":"Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.","keywords":["Active Inference symposium","conference proceedings","international symposium","research presentations"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -22,6 +27,11 @@
 - Conference organization
 - Research presentation
 - Academic workshop facilitation
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

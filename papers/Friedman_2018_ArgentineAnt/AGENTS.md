@@ -38,6 +38,13 @@
 - Link to related works in the docxology corpus
 - Identify synergies across Active Inference, entomology, and cognitive security
 
+### 💼 Consultant Agent
+**Focus**: Practical application and knowledge transfer
+**Tasks**:
+- Evaluates practical applications and implementation strategies for this research
+- Maps findings to industry challenges, Active Inference, and technological solutions
+- Facilitates knowledge transfer to external teams and collaborators
+
 ## Extraction Log
 
 - **Source PDF**: `Friedman_2018_ArgentineAnt.pdf`

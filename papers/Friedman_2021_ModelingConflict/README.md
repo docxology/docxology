@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5759807-blue)](https://doi.org/10.5281/zenodo.5759807)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ModelingConflict","abstract":"We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model captures and extends OODA loops, the generations of warfare model, and the Rumsfeld Matrix. It aids analysis of modern conflict including cyber, psychological, biological, informational, financial, and ideological dimensions using BOLTS (business, oper","keywords":["Active Inference","conflict modeling","AIC model","OODA loops","cognitive security","information warfare","BOLTS framework","trust management"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Generations of warfare analysis
 - BOLTS component analysis
 - Systems modeling
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.34700%2Fh460-nz89-blue)](https://doi.org/10.34700/h460-nz89)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"WoodliceAndMen","abstract":"In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by simple thermodynamic principles. The conversation covers the FEP's relationship to Bayesian inference, predictive process","keywords":["Free Energy Principle","Karl Friston","Bayesian brain","predictive processing","Markov blanket","consciousness","self-organization","variational inference","philosophy of mind"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Philosophical analysis
 - Free Energy Principle exposition
 - Historical-intellectual biography
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

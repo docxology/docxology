@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10400744-blue)](https://doi.org/10.5281/zenodo.10400744)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"HoneyBeeGeneExpression","abstract":"The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis that novel traits recruit novel genetic elements with accelerated sequence evolution.","keywords":["honey bees","Apis mellifera","gene expression","RNA-Seq","novel traits","taxonomically restricted genes","coding sequence evolution"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Coding sequence evolutionary rate analysis
 - Taxonomically restricted gene identification
 - Differential gene expression analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

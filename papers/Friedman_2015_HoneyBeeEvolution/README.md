@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1093%2Fmolbev%2Fmsu292-blue)](https://doi.org/10.1093/molbev/msu292)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"HoneyBeeEvolution","abstract":"A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs), genes without homologs in related lineages. We find that honey-bee-specific novel tissues show sign","keywords":["honey bees","Apis mellifera","RNA-Seq","taxonomically restricted genes","novel traits","gene expression","evolutionary biology","royal jelly","beeswax","venom"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -29,6 +34,11 @@
 - Coding sequence evolutionary rate analysis
 - BLASTp homology searches
 - Statistical enrichment tests
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

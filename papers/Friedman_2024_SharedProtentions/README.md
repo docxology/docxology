@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe26040303-blue)](https://doi.org/10.3390/e26040303)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"SharedProtentions","abstract":"We develop the concept of shared protentions\u2014shared anticipatory states\u2014in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.","keywords":["shared protentions","multi-agent","Active Inference","anticipation","coupled generative models","coordination","predictive processing"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - Shared generative model formalization
 - Anticipatory coordination analysis
 - Category-theoretic framework
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17235137-blue)](https://doi.org/10.5281/zenodo.17235137)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AgentAndNiche","abstract":"Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Fuller's Synergetics. The text juxtaposes Blake's prophetic verses with speculative ecological-cognitive commentary, exploring themes of contraries as generative principles, threshold dynamics, chemotactic precision, and the fourfold crucible of tetrahedral tensions. Each section of Blake's original tex","keywords":["William Blake","Marriage of Heaven and Hell","ecological psychology","Active Inference","Synergetics","contraries","predictive processing","Markov blankets","visionary epistemology","art-science synthesis"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -28,6 +33,11 @@
 - Synergetics geometry application
 - Active Inference conceptual bridging
 - Ecological psychology framework
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

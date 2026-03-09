@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10160656-blue)](https://doi.org/10.5281/zenodo.10160656)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NSFReporting","abstract":"This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profiles, intelligent processing prompts, and automated reporting tools to enhance the quality and accessibility of postdoctoral research outputs.","keywords":["NSF reporting","postdoctoral research","synthetic intelligence","automated reporting","research dissemination","prompt engineering"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Generative AI system design
 - Prompt engineering for research reporting
 - Automated documentation
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

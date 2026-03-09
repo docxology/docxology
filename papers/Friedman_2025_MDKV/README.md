@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16790554-blue)](https://doi.org/10.5281/zenodo.16790554)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MDKV","abstract":"MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations between human-readable Markdown documents and structured data (JSON, TOML). The specification is open source under Apache-2.0 and situates MDKV with respect to Matroska (MKV) for extensible container design.","keywords":["MDKV","Markdown","key-value format","structured data","document specification","YAML-free","round-trip transformation"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Round-trip document transformation
 - Container format analysis
 - Open-source specification development
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -43,6 +43,10 @@ When applying this skill:
 - Familiarity with William Blake's prophetic works
 - Active Inference and Free Energy Principle basics
 
+## 🎯 Consulting & Tutoring
+
+[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+
 ## Related Skills
 
 See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the complete publication catalog and related papers.

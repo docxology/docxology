@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10798145-blue)](https://doi.org/10.5281/zenodo.10798145)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"QuantumDreams","abstract":"Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse code encoding and multi-layered symbolism to map between quantum physical concepts and experiential-artistic domains.","keywords":["quantum mechanics","art","phenomenology","Active Inference","visual analysis","symbolism","Morse code"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Visual-phenomenological analysis
 - Quantum-artistic comparative mapping
 - Structured symbolic analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

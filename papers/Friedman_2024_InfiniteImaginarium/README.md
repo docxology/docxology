@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10601082-blue)](https://doi.org/10.5281/zenodo.10601082)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InfiniteImaginarium","abstract":"Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing\u2014from rapid intuitive insight to slow deliberate analysis\u2014within creative production contexts.","keywords":["epistemic tempos","knowledge production","creative exploration","way finding","imagination","operational frameworks"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -24,6 +29,11 @@
 - Epistemic tempo analysis
 - Operational framework design
 - Creative process structuring
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

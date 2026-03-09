@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10296601-blue)](https://doi.org/10.5281/zenodo.10296601)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ATLAS","abstract":"The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern information environments. Evolving since the late 1990s, ATLAS provides structured methods for organizing knowledge through patterns of questions that guide analysis and decision-making across diverse domains.","keywords":["ATLAS","pattern languages","knowledge management","question-oriented approach","information architecture","decision support","cognitive tools"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Question-oriented knowledge structuring
 - Knowledge management system design
 - Multi-contributor collaborative development
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

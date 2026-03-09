@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16887800-blue)](https://doi.org/10.5281/zenodo.16887800)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"QuadMath","abstract":"QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace framework, develops exact rational arithmetic for IVM lattice operations, and provides open-source companion code and tests for reproducibility.","keywords":["QuadMath","Quadray coordinates","4D geometry","Synergetics","Buckminster Fuller","IVM lattice","rational arithmetic","computational geometry"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Rational arithmetic implementation
 - Synergetics geometry formalization
 - Computational geometry tooling
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

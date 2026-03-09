@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs42003-020-0813-8-blue)](https://doi.org/10.1038/s42003-020-0813-8)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GeneExpressionForagers","abstract":"Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify pathways related to sensory processing, metabolism, and neurochemical signaling that distinguish forag","keywords":["gene expression","foragers","RNA-Seq","division of labor","transcriptomics","harvester ants","behavioral castes","Pogonomyrmex barbatus"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Gene ontology enrichment analysis
 - Behavioral categorization of workers
 - Bioinformatics pipelines
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

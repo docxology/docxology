@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10038232-blue)](https://doi.org/10.5281/zenodo.10038232)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveSovereignty","abstract":"This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments periodically enter crises, exited by cognitive and material restructuring. Several concordances are drawn ","keywords":["cognitive sovereignty","Agamben","Homo Sacer","Active Inference","state of exception","Thomas Kuhn","paradigm shifts","epistemic agency","biopolitics","bare life"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Active Inference theoretical mapping
 - Kuhnian paradigm shift analysis
 - Concordance identification between frameworks
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

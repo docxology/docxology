@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.yhbeh.2020.104757-blue)](https://doi.org/10.1016/j.yhbeh.2020.104757)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DistributedPhysiology","abstract":"Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation\u2014metabolism, water balance, immunity\u2014is accomplished collectively through decentralized interaction networks rather than centr","keywords":["distributed physiology","superorganism","collective behavior","ant colonies","decentralized control","interaction networks","colony metabolism","social immunity"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Colony-level physiological analysis
 - Network interaction modeling
 - Comparative social insect biology
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.11459322-blue)](https://doi.org/10.5281/zenodo.11459322)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"OntologySUMO","abstract":"We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and subsets, and display relationships among identified SUMO topics. This scaffolding facilitates rigorous mapping of Active Inference to SUMO.","keywords":["ontology alignment","SUMO","Active Inference Ontology","knowledge representation","formal ontology","semantic mapping"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -25,6 +30,11 @@
 - SUMO entity mapping
 - Knowledge representation formalization
 - Collaborative ontology development
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

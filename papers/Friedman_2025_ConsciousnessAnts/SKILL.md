@@ -42,6 +42,10 @@ When applying this skill:
 - Evolutionary biology and ecology fundamentals
 - Social insect biology and colony organization
 
+## 🎯 Consulting & Tutoring
+
+[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+
 ## Related Skills
 
 See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the complete publication catalog and related papers.

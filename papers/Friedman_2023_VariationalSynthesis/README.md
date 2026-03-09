@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe25070964-blue)](https://doi.org/10.3390/e25070964)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"VariationalSynthesis","abstract":"This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle.","keywords":["variational synthesis","natural selection","Free Energy Principle","Bayesian mechanics","path integral","evo-devo","adaptive fitness","particular partition"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Bayesian mechanics
 - Particular partition analysis
 - Free Energy Principle application
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

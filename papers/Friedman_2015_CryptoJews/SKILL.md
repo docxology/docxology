@@ -69,6 +69,10 @@ Use this skill when evaluating population genetics studies that infer ethnic or 
 - Design and propose appropriate demographic models for testing hypotheses about population history
 - Appreciate the complex interplay between genetics, culture, and identity in human populations
 
+## 🎯 Consulting & Tutoring
+
+[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+
 ## Related Papers
 
 See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for full publication catalog.

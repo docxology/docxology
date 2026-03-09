@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7514368-blue)](https://doi.org/10.5281/zenodo.7514368)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BlakeFuller","abstract":"A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, identifying convergences in their approaches to creativity, systems thinking, and human potential. Both figures challenged conventional boundaries between disciplines and proposed integrative frameworks for understanding reality.","keywords":["William Blake","Buckminster Fuller","comprehensivity","design science","prophetic vision","art-science synthesis","52 Living Ideas","juxtaposition"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Comprehensivity analysis
 - Art-science parallel identification
 - Presentation format
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

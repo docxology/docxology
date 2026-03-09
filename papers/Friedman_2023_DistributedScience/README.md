@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.31219%2Fosf.io%2Fdnw5k-blue)](https://doi.org/10.31219/osf.io/dnw5k)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DistributedScience","abstract":"The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual researchers, laboratories, institutions, and the global scientific community each minimize free energy at their respective scales. This framework accounts for hypothesis generation, experimental design, peer review, and knowledge accumulation as nested inference processes. We discuss how this multi-scal","keywords":["distributed science","multi-scale Active Inference","scientific process","Free Energy Principle","meta-science","collective intelligence","cultural evolution","distributed cognition"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -27,6 +32,11 @@
 - Scientific process modeling
 - Free energy minimization at nested scales
 - Meta-scientific analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

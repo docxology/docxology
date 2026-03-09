@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.isci.2018.09.001-blue)](https://doi.org/10.1016/j.isci.2018.09.001)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DopamineForaging","abstract":"Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that experimental manipulation of dopamine signaling alters the propensity of workers to leave the nest and forag","keywords":["dopamine","foraging behavior","Pogonomyrmex barbatus","neuromodulation","task allocation","behavioral pharmacology","biogenic amines","harvester ants"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -28,6 +33,11 @@
 - HPLC neurotransmitter quantification
 - Colony-level behavioral tracking
 - Statistical analysis of behavioral data
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

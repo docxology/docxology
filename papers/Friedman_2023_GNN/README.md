@@ -5,6 +5,11 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7803328-blue)](https://doi.org/10.5281/zenodo.7803328)
 
 ---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GNN","abstract":"Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic system, enabling formal comparison and interoperability across mathematical, scientific, and computational notations. The framework supports automated notation analysis and cross-system translation.","keywords":["GNN","Generalized Notation Notation","meta-notation","symbolic systems","notation translation","formal representation","interoperability"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
 
 ## Abstract
 
@@ -26,6 +31,11 @@
 - Formal representation systems
 - Cross-notation translation algorithms
 - Computational notation analysis
+
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 
