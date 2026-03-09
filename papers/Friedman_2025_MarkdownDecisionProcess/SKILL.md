@@ -1,6 +1,6 @@
 ---
 name: "MarkdownDecisionProcess"
-description: "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Dr..."
+description: "Proficient in probabilistic document analysis and optimization using the Markdown Decision Process framework, integrating advanced techniques in reinforcement learning and Markov models."
 tags: ["computational", "markdown-decision-process", "document-analysis", "markov-chains", "reinforcement-learning", "pomdp"]
 ---
 
@@ -28,17 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Markov chain modeling
-- Reinforcement learning optimization
-- POMDP formulation
-- Bayesian belief updating
-- Document structure analysis
+- Utilization of Markov chains and graph algorithms for document analysis.
+- Application of reinforcement learning techniques for optimizing document structure.
+- Incorporation of Bayesian belief maintenance for handling semantic ambiguity.
+- Deployment of a comprehensive Visualization Framework for exploring document state spaces.
 
 ## Key Findings
 
-- Introduces Markdown Decision Process framework for probabilistic document analysis
-- Develops MarkChain, PolicyOptimizer, and BeliefUpdater components
-- Applies Marr's three levels to document processing
+- MDP provides interpretable document processing with explicit uncertainty quantification.
+- The framework supports both traditional reward-based optimization and Active Inference approaches.
+- Demonstrated resource-efficient operation suitable for production environments.
+- Achieved significant improvements in document quality and optimization across various experiments.
 
 ## Prerequisites
 

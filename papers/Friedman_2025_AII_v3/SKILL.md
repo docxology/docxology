@@ -1,6 +1,6 @@
 ---
 name: "AII_v3"
-description: "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institu..."
+description: "Proficient in Active Inference methodologies and community engagement strategies, with a focus on collaborative learning and research in open science."
 tags: ["active inference", "active-inference-institute", "organizational-overview", "research-programs", "educational-initiatives", "community"]
 ---
 
@@ -25,12 +25,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Organizational documentation
-- Impact assessment
+- Utilization of interactive platforms like Discord for community engagement.
+- Implementation of projects that encourage collaborative learning and research.
+- Organization of events and activities to promote knowledge sharing.
+- Curating educational materials and resources for diverse audiences.
 
 ## Key Findings
 
-- Documents AII v3 organizational growth and expanded research portfolio
+- The institute successfully fosters a collaborative environment for learning about Active Inference.
+- Engagement through various platforms has increased accessibility to the framework.
+- Community involvement has led to the development of innovative projects and research initiatives.
+- The institute's resources have enhanced understanding of the Active Inference framework among participants.
 
 ## Prerequisites
 

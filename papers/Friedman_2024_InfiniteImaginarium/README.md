@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing—from rapid intuitive insight to slow deliberate analysis—within creative production contexts.
+> This paper explores the concept of 'Way Finding' within the framework of the 'Infinite Imaginarium,' contrasting different epistemic modes and tempos. It aims to elucidate how individuals navigate knowledge and understanding in both known and unknown territories.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Maps epistemic tempos and modes in creative knowledge production
-- Provides operational frameworks for navigating the Infinite Imaginarium
+- Introduces the framework of the Infinite Imaginarium to conceptualize knowledge navigation.
+- Differentiates between 'gap-filling' and 'gap-respecting' epistemic modes.
+- Explores the cognitive processes involved in verbal expression and question formulation.
+- Provides a novel perspective on situational-ecological intelligence in cognitive engagements.
 
 ## Methods
 
-- Epistemic tempo analysis
-- Operational framework design
-- Creative process structuring
-
+- Utilizes metaphorical constructs like dominos and Jenga towers to illustrate cognitive processes.
+- Analyzes linguistic and semiotic mechanisms in verbal communication.
+- Employs a comparative approach to examine different epistemic modes.
+- Incorporates examples of cognitive engagement in educational contexts.
 
 ## 🎯 Consulting & Tutoring
 

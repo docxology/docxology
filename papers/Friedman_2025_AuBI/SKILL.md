@@ -1,6 +1,6 @@
 ---
 name: "AuBI"
-description: "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems ca..."
+description: "Expertise in designing and implementing Adaptive Basic Income systems that leverage AI and decentralized technologies for enhanced economic resilience and adaptability."
 tags: ["computational", "aubi", "augmented-intelligence", "biological-intelligence", "active-inference", "cognitive-augmentation"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Active Inference augmentation modeling
-- Cognitive architecture analysis
-- Human-AI interface design
+- Utilizes active inference theory to inform economic modeling.
+- Employs decentralized ledger technologies for transparent and tamper-proof infrastructure.
+- Incorporates predictive analytics to refine UBI interventions based on real-time data.
+- Adopts a B2B2C model to facilitate the deployment of AuBI systems through various stakeholders.
 
 ## Key Findings
 
-- Develops AuBI framework for augmented biological intelligence
-- Examines cognitive augmentation through Active Inference lens
+- Demonstrates that AuBI can address the rigidity and opacity of traditional UBI models.
+- Highlights the potential for adaptive economic systems to respond to evolving socio-economic conditions.
+- Shows that real-time learning can enhance the effectiveness of UBI programs.
+- Suggests that decentralized governance can empower diverse stakeholders in UBI implementation.
 
 ## Prerequisites
 

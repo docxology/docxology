@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-recognition, self-directed behavior, and how humans locate themselves relative to mirrors. Atypical reflection predictions may explain instances where self-recognition traits are atypical in certain individuals.
+> This paper applies a predictive processing interpretation to the mirror test, proposing that a 'reflection prediction' can enhance our understanding of mirror self-recognition and self-directed behavior in humans and other species. It suggests that atypical reflection predictions may explain variations in these traits across individuals.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Applies predictive processing to reinterpret the mirror test
-- Proposes the reflection prediction hypothesis for self-recognition
-- Connects mirror self-recognition to broader predictive coding theory
+- Introduces a predictive processing framework to reinterpret the mirror test results.
+- Proposes the concept of 'reflection prediction' as a mechanism for understanding self-recognition and self-directed behavior.
+- Highlights the implications of reflection prediction errors for agency and cognitive traits.
+- Challenges traditional interpretations of the mirror test by suggesting that both self-directed behavior and ignoring reflections can indicate self-recognition.
 
 ## Methods
 
-- Predictive processing framework analysis
-- Behavioral test reinterpretation
-- Theoretical model development
-
+- Utilizes a predictive processing model to analyze mirror self-recognition.
+- Examines historical and ecological evidence related to the mirror test.
+- Applies concepts of sensory attenuation and active inference to explain behaviors observed in the mirror test.
+- Critiques the traditional reliance on self-directed behavior as a measure of self-recognition.
 
 ## 🎯 Consulting & Tutoring
 

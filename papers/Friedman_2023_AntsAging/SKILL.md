@@ -1,6 +1,6 @@
 ---
 name: "AntsAging"
-description: "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i..."
+description: "Expertise in comparative aging research, focusing on the biological mechanisms of aging in different species, particularly ants and humans."
 tags: ["presentations, courses & media", "ants", "aging", "senescence", "lifespan", "caste"]
 ---
 
@@ -30,15 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Comparative aging biology review
-- Presentation format
-- Caste-specific lifespan analysis
-- Evolutionary senescence framework
+- Employs a conceptual framework based on Tinbergen’s 4 Questions.
+- Engages in reflective analysis rather than empirical research.
+- Facilitates discussions on aging through a comparative lens.
+- Explores existing literature on aging in ants and its implications for human aging.
 
 ## Key Findings
 
-- Presents the paradox of caste-specific lifespan variation in ants
-- Connects ant aging biology to evolutionary theories of senescence
+- Aging may not be uniform across species, with different mechanisms observed in ants and humans.
+- The paper suggests that understanding aging in ants could provide insights into human aging.
+- Questions the effectiveness of current approaches to reversing aging.
+- Highlights the need for further research into the biological clock and its impact on aging.
 
 ## Prerequisites
 

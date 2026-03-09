@@ -1,6 +1,6 @@
 ---
 name: "PPPiP"
-description: "Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on..."
+description: "Expertise in utilizing artistic practices, specifically Partner Pen Play in Parallel (PPPiP), to enhance emotional intimacy and relationship dynamics through collaborative drawing."
 tags: ["art", "pppip", "art-therapy", "improvisation", "intimate-relationships", "affective-neuroscience"]
 ---
 
@@ -31,17 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Interdisciplinary literature synthesis
-- Art therapy framework analysis
-- Neuroscience of improvisation review
-- Concept development and prospective design
+- Describes PPPiP as the act of two individuals drawing together on the same sheet of paper.
+- Utilizes insights from art therapy, sexology, and affective neuroscience to support the practice.
+- Emphasizes the non-clinical, improvisational nature of PPPiP compared to traditional art therapy.
+- Explores the impact of joint attention and neural synchrony during the drawing process.
 
 ## Key Findings
 
-- Introduces PPPiP as a novel dyadic art-based relationship intervention
-- Synthesizes evidence from art therapy, sexology, and affective neuroscience
-- Proposes neural circuit model for emotive-creative co-regulation in partnerships
-- Connects controlled novelty and narrative structure to relationship health
+- PPPiP encourages emotional expression and enhances shared experiences in relationships.
+- The technique is accessible and scalable, requiring only basic materials like pen and paper.
+- Evidence suggests that PPPiP can mitigate the effects of technoference in relationships.
+- Joint attention during PPPiP sessions may lead to increased neural synchrony and prosocial behavior.
 
 ## Prerequisites
 

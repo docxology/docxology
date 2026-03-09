@@ -1,6 +1,6 @@
 ---
 name: "NSFReporting"
-description: "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profi..."
+description: "Expertise in developing generative intelligence systems for enhancing reporting processes in academic settings, focusing on user-centric design and real-time data management."
 tags: ["computational", "nsf-reporting", "postdoctoral-research", "synthetic-intelligence", "automated-reporting", "research-dissemination"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Generative AI system design
-- Prompt engineering for research reporting
-- Automated documentation
+- Utilization of prompt engineering and synthetic intelligence for data formatting.
+- Real-time monitoring and evaluation of postdoctoral activities.
+- Adaptive system evolution based on user feedback and technological advancements.
+- Integration of diverse media forms for report generation.
 
 ## Key Findings
 
-- Proposes AI-enhanced NSF postdoctoral reporting framework
-- Designs automated tools for research output dissemination
+- The proposed system significantly reduces administrative burdens on postdocs.
+- Real-time reporting enhances the ability to monitor and support postdoctoral activities.
+- Uniform reporting framework improves data analysis and comparative studies.
+- User-friendly design fosters greater engagement and usability among postdocs.
 
 ## Prerequisites
 

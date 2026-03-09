@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems.
+> This paper introduces Narrative Information Management (NIM) as a framework to address the challenges of information dynamics across various fields, emphasizing the need for synthesis and exchange of knowledge and tools. By proposing NIM, the authors aim to unify disparate disciplines facing similar information-related challenges and provide insights into effective information systems.
 
 ## Keywords
 
@@ -21,14 +21,17 @@
 
 ## Key Contributions
 
-- Examines temporal coordination in collective systems via Active Inference
+- Proposes Narrative Information Management (NIM) as a unifying framework for addressing information dynamics.
+- Identifies common features of impactful information systems across various disciplines.
+- Explores insights and solutions from eclectic fields facing information challenges.
+- Provides recommendations for future research on NIM.
 
 ## Methods
 
-- Temporal dynamics analysis
-- Active Inference temporal modeling
-- Synchronization analysis
-
+- Conducts a broad summary of challenges faced by information-centered disciplines.
+- Synthesizes a set of common features contributing to effective NIM systems.
+- Explores domain-specific challenges and ad-hoc solutions in various fields.
+- Assesses common features found across discussed domains to inform future work.
 
 ## 🎯 Consulting & Tutoring
 

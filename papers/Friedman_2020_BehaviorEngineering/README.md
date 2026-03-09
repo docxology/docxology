@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to organizational design, team formation, and complex adaptive systems management.
+> This paper proposes a comprehensive framework for Remote Teams that integrates Active Inference with Systems Engineering to enhance communication and decision-making processes. By leveraging the Free Energy Principle, the authors aim to develop effective ontologies, narratives, and tools that can significantly improve team functionality and productivity.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Proposes behavior engineering as a formal discipline
-- Bridges behavioral science with systems engineering principles
-- Provides frameworks for team and organizational behavioral design
+- Establishes the importance of effective communication systems in both natural and designed teams.
+- Synthesizes Active Inference with Systems Engineering to formalize Remote Team processes.
+- Explores the application of Active Inference in both located and all-online Remote Teams.
+- Addresses the need for a structured approach to team communication and lifecycle management.
 
 ## Methods
 
-- Systems engineering framework development
-- Behavioral science synthesis
-- Organizational analysis
-
+- Utilizes the Active Inference framework to analyze communication in teams.
+- Applies Systems Engineering principles to define and manage team functions.
+- Investigates the role of narratives and ontologies in enhancing team communication.
+- Examines the dynamics of team formation and the impact of shared organizational culture.
 
 ## 🎯 Consulting & Tutoring
 

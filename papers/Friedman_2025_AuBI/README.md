@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems can augment human cognitive capabilities while maintaining cognitive sovereignty and information integrity.
+> This paper introduces Adaptive Basic Income (AuBI), a novel framework that integrates artificial intelligence and decentralized infrastructure to enhance the effectiveness and adaptability of Universal Basic Income (UBI) systems. It proposes a systems engineering toolkit for modeling and deploying next-generation economic frameworks that leverage real-time learning and decentralized governance.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Develops AuBI framework for augmented biological intelligence
-- Examines cognitive augmentation through Active Inference lens
+- Introduces the concept of Adaptive Basic Income (AuBI) as a dynamic alternative to traditional UBI.
+- Proposes a systems engineering toolkit for specifying and modeling economic systems.
+- Explores the integration of AI and decentralized technologies to improve UBI implementation.
+- Encourages experimentation and collaboration among policymakers and researchers.
 
 ## Methods
 
-- Active Inference augmentation modeling
-- Cognitive architecture analysis
-- Human-AI interface design
-
+- Utilizes active inference theory to inform economic modeling.
+- Employs decentralized ledger technologies for transparent and tamper-proof infrastructure.
+- Incorporates predictive analytics to refine UBI interventions based on real-time data.
+- Adopts a B2B2C model to facilitate the deployment of AuBI systems through various stakeholders.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation—metabolism, water balance, immunity—is accomplished collectively through decentralized interaction networks rather than centralized control.
+> This paper explores the physiological and molecular processes that govern social life in eusocial insects, emphasizing the importance of colony-level regulation and decentralized physiological mechanisms. It argues for a framework that integrates functional genomics and social physiology to better understand the evolution and behavior of these complex social systems.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Develops the concept of distributed physiology in ant colonies
-- Shows how colony-level metabolic and immune regulation emerges from local interactions
-- Connects individual neurochemistry and behavior to colony-level physiological processes
+- Introduces the concept of 'social physiology' to describe the coordination of colony-level traits.
+- Highlights the evolutionary significance of decentralized physiological processes in eusocial insects.
+- Explores the interaction between organismal and colony-level physiological processes.
+- Proposes a framework for integrating theoretical models with empirical research in eusocial insect studies.
 
 ## Methods
 
-- Literature synthesis
-- Colony-level physiological analysis
-- Network interaction modeling
-- Comparative social insect biology
-
+- Reviews empirical research on physiological processes in eusocial insects.
+- Analyzes the roles of molecular signaling and social communication mechanisms.
+- Compares nestmate-level and colony-level physiological traits.
+- Utilizes functional genomic approaches to investigate the genetics of eusocial behavior.
 
 ## 🎯 Consulting & Tutoring
 

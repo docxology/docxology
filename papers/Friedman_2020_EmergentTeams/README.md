@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique challenges of rapidly assembled collaborative teams.
+> This paper explores the intersection of Complexity Science and Military Science, emphasizing the need for new approaches to conflict management in light of evolving threats. It discusses how rapid team assembly and the pooling of collective expertise can address emergent hazards in military and civilian contexts.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Introduces the Facilitator's Catechism for rapid team alignment
-- Adapts military operations orders for civilian innovation contexts
-- Provides structured protocols for emergent team formation
+- Introduces the concept of Complex Threat Surfaces in military and civilian organizations.
+- Highlights the role of Complexity Science in analyzing and managing complex threats.
+- Proposes Rapid Team Assembly as a method for developing spontaneous expertise and actionable intelligence.
+- Examines lessons from the 2008 Mumbai attack to illustrate the effectiveness of decentralized operations.
 
 ## Methods
 
-- Operations order framework development
-- Military-to-civilian methodology transfer
-- Team process design
-- Organizational behavior analysis
-
+- Utilizes a Complexity Science framework to model and de-risk complex threats.
+- Analyzes counterinsurgency and counterterrorism operations through case studies.
+- Discusses best practices for rapid reorganization and adaptation in response to emergent problems.
+- Examines the use of open-source intelligence (OSINT) in planning and executing operations.
 
 ## 🎯 Consulting & Tutoring
 

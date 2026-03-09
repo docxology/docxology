@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Fuller's Synergetics. The text juxtaposes Blake's prophetic verses with speculative ecological-cognitive commentary, exploring themes of contraries as generative principles, threshold dynamics, chemotactic precision, and the fourfold crucible of tetrahedral tensions. Each section of Blake's original text is paired with dense theoretical commentary connecting predictive processing, Markov blankets, free energy minimization, renormalization group theory, and cultural evolution into a unified visionary framework.
+> This paper explores the interplay between William Blake's revolutionary vision and ecological psychology, proposing a synthesis of agent and niche through the lens of oppositional forces that generate stability and progression. It argues that without contraries, there is no progression, and highlights the importance of dynamical coupling in understanding life and consciousness.
 
 ## Keywords
 
@@ -21,19 +21,17 @@
 
 ## Key Contributions
 
-- Creates a parallel-text dialogue between Blake's Marriage and Active Inference theory
-- Maps Blake's 'contraries' to generative principles in predictive processing
-- Connects tetrahedral tensions (Synergetics) with fourfold cognitive crucibles
-- Demonstrates visionary epistemology as anticipating modern computational frameworks
+- Introduces a novel framework for understanding the relationship between agents and their environments through Blake's philosophical insights.
+- Explores the concept of synergetic opposition as a generative principle in ecological psychology.
+- Demonstrates the relevance of thermodynamic principles in the transformation of information within ecological contexts.
+- Links bacterial motility to cultural evolution, illustrating the scalability of adaptive behaviors.
 
 ## Methods
 
-- Parallel text dialogue (Blake original + theoretical commentary)
-- Mythopoetic-to-formal mapping
-- Synergetics geometry application
-- Active Inference conceptual bridging
-- Ecological psychology framework
-
+- Utilizes philosophical analysis of William Blake's texts to derive ecological insights.
+- Applies concepts from thermodynamics and information theory to ecological psychology.
+- Employs a comparative analysis of biological and cultural evolution to illustrate adaptive behaviors.
+- Explores mathematical models of consciousness and measurement in relation to ecological systems.
 
 ## 🎯 Consulting & Tutoring
 

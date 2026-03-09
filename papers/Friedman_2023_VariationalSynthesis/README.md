@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle.
+> This paper presents a variational formulation of natural selection, emphasizing the interplay between different 'kinds' of 'things' and their influence on each other. It formulates adaptive fitness as a path integral of phenotypic fitness, interpreting evolutionary and developmental dynamics through a Bayesian lens.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Formulates adaptive fitness as path integral of phenotypic fitness
-- Unifies evolutionary and developmental dynamics via Free Energy Principle
-- Introduces variational formulation of natural selection
+- Introduces a variational synthesis of evolutionary and developmental dynamics.
+- Formulates adaptive fitness as a path integral of phenotypic fitness.
+- Demonstrates the necessity of considering populations of distinct natural kinds rather than conspecifics.
+- Establishes a framework for integrating slow phylogenetic processes with fast phenotypic processes.
 
 ## Methods
 
-- Variational inference formalism
-- Path integral formulation
-- Bayesian mechanics
-- Particular partition analysis
-- Free Energy Principle application
-
+- Utilizes Bayesian mechanics to understand the relationship between phylogenetic and phenotypic processes.
+- Applies the free energy principle to model evolutionary and developmental dynamics.
+- Employs path integral formulation of stochastic dynamics and the renormalisation group.
+- Describes natural selection and action selection as emergent properties of random dynamical processes.
 
 ## 🎯 Consulting & Tutoring
 

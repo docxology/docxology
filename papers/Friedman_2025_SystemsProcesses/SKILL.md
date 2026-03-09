@@ -1,6 +1,6 @@
 ---
 name: "SystemsProcesses"
-description: "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and..."
+description: "Expertise in integrating systems processes with active inference to enhance cognitive security and advance systems science."
 tags: ["presentations, courses & media", "systems-processes", "active-inference", "systems-science", "metatheory", "process-philosophy"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Systems process analysis
-- Metatheoretical framework mapping
-- Presentation and discussion
+- Utilizes a conceptual analysis of systems processes and active inference.
+- Incorporates discussions and insights from collaborative meetings with experts.
+- Analyzes existing literature and resources related to active inference.
+- Engages with open-source platforms to disseminate findings.
 
 ## Key Findings
 
-- Maps connections from systems processes to Active Inference
-- Points towards integrated systems science incorporating process philosophy
+- Establishes a clear relationship between systems processes and active inference.
+- Demonstrates the relevance of these concepts to cognitive security.
+- Identifies gaps in current systems science that can be addressed through active inference.
+- Encourages collaborative efforts to advance the field of systems science.
 
 ## Prerequisites
 

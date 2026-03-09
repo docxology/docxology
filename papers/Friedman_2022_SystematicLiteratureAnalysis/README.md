@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and diversification of the FEP/Active Inference literature, mapping its expansion across disciplines and identifying key themes, methods, and trends in the field.
+> This paper conducts a systematic literature analysis of publications related to the Free Energy Principle and Active Inference, particularly focusing on works by Karl J. Friston. The analysis includes manual and automated annotations of structural, visual, and mathematical features across a large dataset of citations and papers, aiming to enhance the understanding and accessibility of this evolving scientific discourse.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Provides first comprehensive literature analysis of FEP/Active Inference publications
-- Maps the disciplinary expansion and thematic evolution of the field
-- Identifies key trends, methods, and gaps in the Active Inference literature
+- Provides a comprehensive literature analysis of the Free Energy Principle and Active Inference.
+- Introduces a systematic approach to annotate and analyze scientific publications.
+- Aims to facilitate integration of manual and automated contributions in research.
+- Addresses the historical and philosophical context of the Free Energy Principle and Active Inference.
 
 ## Methods
 
-- Systematic literature analysis
-- Bibliometric methods
-- Citation network analysis
-- Ontological classification
-- Publication trend analysis
-
+- Utilized Publish or Perish software for citation discovery and dataset compilation.
+- Employed BioPython API to query open source publications from the NCBI Pubmed Database.
+- Conducted manual annotation of papers based on structural, visual, and mathematical features.
+- Developed an analysis pipeline for examining publication dynamics and language use.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental influences on behavior, the illusion of free will, behavioral determinism, justice, and the implications of a deterministic worldview for society and morality.
+> This interview with Robert Sapolsky explores his views on free will and its implications across neuroscience, philosophy, education, and the criminal justice system, anticipating his upcoming book 'Determined: The Science of Life Without Free Will.' The discussion delves into the biological underpinnings of behavior and the philosophical debates surrounding agency and determinism.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Provides Sapolsky's comprehensive case against free will
-- Discusses implications of behavioral determinism for justice and morality
-- Anticipates key arguments from Determined
+- Provides a biological perspective on free will and human behavior.
+- Anticipates the themes of Sapolsky's forthcoming book on determinism.
+- Explores the intersection of neuroscience with legal and philosophical discussions.
+- Challenges common perceptions of free will and its implications for moral responsibility.
 
 ## Methods
 
-- Scholarly interview
-- Philosophical and neuroscientific analysis
-
+- Conducted an interview format to elicit Sapolsky's views.
+- Discussed empirical evidence from neuroscience to support arguments.
+- Engaged with philosophical definitions and implications of free will.
+- Analyzed public responses to previous works to inform the discussion.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theory, the framework operates at Marr's three levels: computational, algorithmic, and implementational. Key innovations include MarkChain for document generation, PolicyOptimizer for reinforcement learning optimization, and BeliefUpdater for probabilistic inference.
+> The Markdown Decision Process (MDP) framework transforms document processing by modeling Markdown documents as stochastic decision processes, facilitating intelligent analysis, generation, and optimization through probabilistic modeling. It integrates decision theory with document engineering, allowing for the generation of coherent documents and structural optimization based on user-defined quality criteria.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Introduces Markdown Decision Process framework for probabilistic document analysis
-- Develops MarkChain, PolicyOptimizer, and BeliefUpdater components
-- Applies Marr's three levels to document processing
+- Introduction of the Markdown Decision Process framework for document processing.
+- Development of MarkChain for higher-order dependency document generation.
+- Implementation of PolicyOptimizer for reinforcement learning-based document optimization.
+- Creation of an extensible Plugin Architecture for domain-specific customizations.
 
 ## Methods
 
-- Markov chain modeling
-- Reinforcement learning optimization
-- POMDP formulation
-- Bayesian belief updating
-- Document structure analysis
-
+- Utilization of Markov chains and graph algorithms for document analysis.
+- Application of reinforcement learning techniques for optimizing document structure.
+- Incorporation of Bayesian belief maintenance for handling semantic ambiguity.
+- Deployment of a comprehensive Visualization Framework for exploring document state spaces.
 
 ## 🎯 Consulting & Tutoring
 

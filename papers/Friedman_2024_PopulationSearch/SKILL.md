@@ -1,6 +1,6 @@
 ---
 name: "PopulationSearch"
-description: "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on th..."
+description: "Proficient in enhancing optimization algorithms through the integration of Active Inference, focusing on anticipatory adaptation and performance improvement in complex problem-solving scenarios."
 tags: ["active inference", "population-search", "active-inference", "ant-colony-optimization", "tsp", "metaheuristics"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Active Inference augmented ACO
-- TSP benchmark evaluation
-- Computational performance analysis
-- Graph topology analysis
+- Utilization of Active Inference framework for anticipatory adaptation.
+- Experimental evaluation of Ant Colony Optimization with Active Inference.
+- Analysis of performance based on varying graph structures.
+- Comparison of traditional reactive approaches with the proposed anticipatory model.
 
 ## Key Findings
 
-- Integrates Active Inference into population-based metaheuristics
-- Demonstrates improved ACO on TSP with anticipatory adaptation
+- Active Inference can enhance the performance of population-based metaheuristics.
+- Improved solutions were achieved with only a slight increase in computational resources.
+- Performance patterns were observed that depend on the number and topology of nodes in the graph.
+- The study suggests directions for future research on Active Inference in optimization contexts.
 
 ## Prerequisites
 

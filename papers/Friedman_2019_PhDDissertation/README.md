@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neurochemistry, gene expression analysis, and theoretical frameworks to understand how colony-level collective behavior emerges from individual-level variation. The work examines the foraging gene, dopaminergic signaling, desiccation physiology, and RNA-Seq transcriptomics across multiple ant colonies in natural populations.
+> This dissertation examines the physiological and transcriptomic variations among colonies of the red harvester ant (Pogonomyrmex barbatus) and their association with collective behaviors. It highlights the neurophysiological basis of behavioral differences and explores how these variations impact foraging strategies and reproductive success.
 
 ## Keywords
 
@@ -19,20 +19,17 @@
 
 ## Key Contributions
 
-- Comprehensive dissertation integrating genes, neurochemistry, behavior, and ecology
-- Demonstrates colony-level variation in foraging behavior, physiology, and gene expression
-- Bridges individual-level molecular mechanisms with colony-level behavioral ecology
+- Investigated the neurophysiological basis of behavioral variation among ant colonies.
+- Demonstrated the impact of dopamine levels on foraging activity in red harvester ants.
+- Explored the relationship between colony foraging behavior and reproductive success.
+- Analyzed gene expression variation in relation to colony traits using RNA-seq.
 
 ## Methods
 
-- RNA-Seq transcriptomics
-- qRT-PCR
-- HPLC neurotransmitter analysis
-- Field behavioral experiments
-- Desiccation physiology assays
-- Statistical genomics
-- Multilevel modeling
-
+- Conducted transcriptomic profiling of forager brains to assess gene expression differences.
+- Performed pharmacological experiments to evaluate the effects of dopamine on foraging behavior.
+- Executed manipulative field experiments to study foraging trips in relation to hydration levels.
+- Utilized RNA-seq to analyze gene expression variation within and among colonies.
 
 ## 🎯 Consulting & Tutoring
 

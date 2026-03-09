@@ -1,6 +1,6 @@
 ---
 name: "DigitalTwins"
-description: "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min..."
+description: "Expertise in the development and governance of Digital Twins, focusing on their safe and ethical implementation in socio-technical systems."
 tags: ["cognitive security", "digital-twins", "active-inference", "generative-models", "predictive-processing", "cyber-physical-systems"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Digital twin modeling
-- Active Inference framework application
-- Generative model design
+- Interdisciplinary collaboration among universities, think-tanks, and industry experts.
+- Analysis of historical applications and vulnerabilities related to Digital Twins.
+- Development of recommendations based on a comprehensive review of existing literature and practices.
+- Consideration of business, operational, legal, technical, and social factors in Digital Twin implementation.
 
 ## Key Findings
 
-- Connects digital twin technology to Active Inference framework
-- Models digital twins as free-energy-minimizing generative systems
+- Digital Twins have the potential to revolutionize research and commerce if implemented responsibly.
+- Failure to address key factors such as trustworthiness and data management could lead to significant risks.
+- The functional surface of a Digital Twin is closely linked to its threat surface, necessitating careful design.
+- Historical approaches to information management provide valuable lessons for current Digital Twin development.
 
 ## Prerequisites
 

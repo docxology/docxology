@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse code encoding and multi-layered symbolism to map between quantum physical concepts and experiential-artistic domains.
+> This paper explores the concept of situational awareness in the context of a Quantum Baseball training environment, emphasizing the interplay between individual and collective experiences. It aims to analyze how visual and phenomenological factors influence performance and preparation in a multi-agential setting.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Maps between quantum mechanical concepts and artistic-experiential domains
-- Develops four-fold framework bridging physics, art, and phenomenology
+- Introduces the concept of Quantum Baseball as a metaphor for situational awareness and training.
+- Analyzes the dynamics of individual and collective experiences in a training environment.
+- Explores the implications of visual-phenomenological moments on performance.
+- Provides a framework for understanding the relationship between agents and their environment.
 
 ## Methods
 
-- Visual-phenomenological analysis
-- Quantum-artistic comparative mapping
-- Structured symbolic analysis
-
+- Utilizes a qualitative analysis of visual experiences during training sessions.
+- Employs metaphorical frameworks to interpret situational dynamics.
+- Incorporates cognitive theories related to visual perception and awareness.
+- Examines the interaction between individual actions and collective training scenarios.
 
 ## 🎯 Consulting & Tutoring
 

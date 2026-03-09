@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and evolutionary time, and the diversity and open-endedness of evolving systems. MVEE provides a theoretical scaffold for integrating across biological, social, and computational domains.
+> This paper presents the MVEE framework, aimed at formalizing the evolution of heredity, environment, and phenotype across biological levels and time. It seeks to extend Variational Neuroethology to create a comprehensive framework for evolutionary studies.
 
 ## Keywords
 
@@ -19,16 +19,17 @@
 
 ## Key Contributions
 
-- Introduces the MVEE (Multilevel Variational Ecology and Evolution) framework
-- Proposes formal integration of heredity, environment, and phenotype across biological scales
-- Addresses plasticity, meta-plasticity, and open-endedness in evolutionary theory
+- Introduces the MVEE framework for evolutionary studies.
+- Integrates concepts of plasticity, meta-plasticity, and ecological variability.
+- Proposes new measurements and experiments to enhance evolutionary research.
+- Addresses interactions across different biological scales.
 
 ## Methods
 
-- Variational formalism
-- Multilevel evolutionary modeling
-- Theoretical biology framework development
-
+- Extends existing theories in Variational Neuroethology.
+- Utilizes a formalized approach to model evolutionary processes.
+- Incorporates interdisciplinary data from biological, social, and computational systems.
+- Analyzes ecological variability over multiple time scales.
 
 ## 🎯 Consulting & Tutoring
 

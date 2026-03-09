@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more sensitive to water loss. Surprisingly, foragers more sensitive to water loss are from colonies more likely to produce offspring colonies.
+> This paper investigates the relationship between hydration status and foraging behavior in red harvester ants (Pogonomyrmex barbatus), revealing that hydrated foragers are more active and that desiccation tolerance is linked to reproductive success among colonies. The findings suggest that physiological differences among colonies influence collective foraging strategies in response to environmental stressors.
 
 ## Keywords
 
@@ -21,19 +21,17 @@
 
 ## Key Contributions
 
-- Shows hydration directly increases foraging propensity in harvester ants
-- Links desiccation sensitivity to colony reproductive success
-- Demonstrates colony-level variation in water management strategy
-- Connects individual physiology to colony fitness via collective behavior
+- Demonstrated the impact of hydration on foraging activity in red harvester ants.
+- Established a link between desiccation tolerance and reproductive success in ant colonies.
+- Identified physiological differences among colonies that affect collective behavior.
+- Provided insights into the evolutionary adaptations of social insects to desiccating environments.
 
 ## Methods
 
-- Field hydration experiments
-- Desiccation tolerance assays
-- Colony behavioral monitoring
-- Statistical analysis of colony-level variation
-- Long-term colony census data
-
+- Conducted field experiments manipulating hydration levels of foragers and observing subsequent foraging behavior.
+- Performed desiccation tests to assess water loss sensitivity in foragers from different colonies.
+- Utilized statistical analyses, including Wilcoxon signed-rank tests and regression models, to evaluate the effects of hydration on foraging trips.
+- Collected environmental data (temperature and humidity) to correlate with foraging activity.
 
 ## 🎯 Consulting & Tutoring
 

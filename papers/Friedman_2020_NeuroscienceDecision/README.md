@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an integrative approach drawing on multiple types of experiments and model systems.
+> This interview with Professor Tim Hanks explores the intersection of neuroscience and decision making, emphasizing the importance of an integrative approach that incorporates various experimental methods and models. Hanks discusses how computational neuroscience informs research agendas and everyday decision-making processes, while also addressing the philosophical implications of free will and conscious awareness.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Provides Tim Hanks's perspective on computational decision-making neuroscience
-- Discusses connections between neural decision-making, free will, and mental health
-- Highlights integrative approaches to studying brain decision processes
+- Introduces an integrative approach to studying decision making that combines multiple experimental methods.
+- Highlights the role of computational neuroscience in shaping research agendas and personal decision-making.
+- Explores the relationship between neural mechanisms and the philosophical concept of free will.
+- Encourages open-mindedness about future developments in neuroscience.
 
 ## Methods
 
-- Scholarly interview
-- Computational neuroscience discussion
-- Decision-making framework analysis
-
+- Utilizes Bayesian reasoning to inform decision-making processes.
+- Discusses the accumulation of evidence to a threshold level as a mechanism for decision commitment.
+- Examines neural activity related to decision-making and its implications for understanding free will.
+- Proposes a roadmap for future research that bridges conscious awareness with neural measurements.
 
 ## 🎯 Consulting & Tutoring
 

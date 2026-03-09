@@ -1,6 +1,6 @@
 ---
 name: "TemporalDepth"
-description: "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i..."
+description: "Expertise in developing integrated theoretical models for understanding complex psychological phenomena, particularly dissociative experiences, through a multidisciplinary approach."
 tags: ["active inference", "temporal-depth", "depersonalization", "self-coherence", "active-inference", "predictive-processing"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Theoretical model development
-- Active Inference formalization
-- Clinical phenomenology analysis
-- Temporal processing modeling
+- Combines first-principles-based perspectives with nonlinear dynamical systems.
+- Utilizes clinical and neurobiological insights to inform the theoretical model.
+- Plans to employ computer simulations to test the model's computational components.
+- Aims to integrate phenomenological data with abstract theoretical models.
 
 ## Key Findings
 
-- Develops Active Inference model of temporal depth in self-experience
-- Connects depersonalization to disrupted temporal predictive processing
+- Identifies a collapse in temporal depth as a significant factor leading to dissociative experiences.
+- Suggests that both integration and disintegration processes are necessary in psychotherapy for dissociative disorders.
+- Proposes that a coherent self is defined by its temporal continuity and depth.
+- Indicates that various dissociative symptoms may share a common pathway despite differing etiologies.
 
 ## Prerequisites
 

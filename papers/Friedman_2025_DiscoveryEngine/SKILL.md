@@ -1,6 +1,6 @@
 ---
 name: "DiscoveryEngine"
-description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem..."
+description: "Expertise in developing AI-driven frameworks for synthesizing and navigating scientific knowledge, utilizing structured representations and advanced machine learning techniques."
 tags: ["computational", "discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Active Inference discovery modeling
-- Automated hypothesis generation
-- Computational scientific reasoning
+- Employs LLM-driven Structured Knowledge Distillation to extract verifiable knowledge components.
+- Utilizes a Conceptual Nexus Model (CNM) as an evolving knowledge graph for specific research domains.
+- Incorporates hybrid approaches combining dense vector embeddings and relational structure encoding.
+- Enables dynamic 'unrolling' of the Conceptual Tensor into human-interpretable views like knowledge graphs.
 
 ## Key Findings
 
-- Develops Discovery Engine for Active Inference-based automated scientific discovery
-- Models scientific discovery as an inference problem with free energy minimization
+- Demonstrates that the Discovery Engine can effectively manage the exponential growth of scientific publications.
+- Shows that AI agents can navigate complex knowledge landscapes and assist in generating novel hypotheses.
+- Identifies the potential for improved reproducibility and validation of scientific contributions.
+- Highlights the importance of transitioning to a machine-readable knowledge infrastructure.
 
 ## Prerequisites
 

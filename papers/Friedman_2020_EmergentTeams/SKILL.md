@@ -1,6 +1,6 @@
 ---
 name: "EmergentTeams"
-description: "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation..."
+description: "Expertise in applying Complexity Science to military operations, focusing on rapid team assembly and open-source intelligence for effective conflict management."
 tags: ["cognitive security", "emergent-teams", "operations-orders", "team-formation", "innovation", "facilitation"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Operations order framework development
-- Military-to-civilian methodology transfer
-- Team process design
-- Organizational behavior analysis
+- Utilizes a Complexity Science framework to model and de-risk complex threats.
+- Analyzes counterinsurgency and counterterrorism operations through case studies.
+- Discusses best practices for rapid reorganization and adaptation in response to emergent problems.
+- Examines the use of open-source intelligence (OSINT) in planning and executing operations.
 
 ## Key Findings
 
-- Introduces the Facilitator's Catechism for rapid team alignment
-- Adapts military operations orders for civilian innovation contexts
-- Provides structured protocols for emergent team formation
+- Emergent teams can effectively respond to complex threats through rapid reorganization.
+- The 2008 Mumbai attack exemplifies the advantages of decentralized, flexible operations over traditional military responses.
+- Successful operations rely heavily on the use of open-source intelligence for real-time decision-making.
+- The lack of flexibility and modular structures in counterterrorism forces can lead to significant operational failures.
 
 ## Prerequisites
 

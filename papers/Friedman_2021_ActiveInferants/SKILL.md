@@ -1,6 +1,6 @@
 ---
 name: "ActiveInferants"
-description: "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi..."
+description: "Proficient in developing and implementing active inference models for behavioral analysis in complex biological systems, particularly in eusocial insects like ants."
 tags: ["entomology", "active-inference", "ant-foraging", "markov-decision-process", "stigmergy", "t-maze"]
 ---
 
@@ -30,18 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Active Inference MDP modeling
-- Markov decision process specification
-- In silico simulation
-- Stigmergic decision-making modeling
-- T-maze paradigm simulation
+- Developed a Bayesian simulation model based on active inference principles.
+- Utilized a Markov decision process to simulate ant foraging behavior.
+- Focused on stigmergic outcomes using a single trail pheromone molecule.
+- Conducted in silico experiments to validate the model against established behavioral paradigms.
 
 ## Key Findings
 
-- First active inference model of ant colony foraging behavior
-- Simulates trail formation via stigmergic MDP
-- Demonstrates T-maze paradigm recovery through free energy minimization
-- Proposes nested multiscale Active Inference framework for biology
+- The model successfully captured emergent phenomena of ant foraging behavior.
+- It illustrated how limited information access among agents can still lead to effective group foraging solutions.
+- The active inference framework was shown to be applicable across different sensory modalities in modeling insect behavior.
+- The study highlighted the potential for future research to explore additional features of ant behavior within this modeling framework.
 
 ## Prerequisites
 

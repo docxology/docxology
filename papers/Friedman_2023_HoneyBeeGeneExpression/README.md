@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis that novel traits recruit novel genetic elements with accelerated sequence evolution.
+> This study investigates the role of coding sequence changes in the evolution of postdevelopmental novelty in honey bees, challenging the traditional evo-devo paradigm. Through RNA-Seq experiments, we demonstrate that positively selected tissue-specific genes, particularly taxonomically restricted genes (TRGs), are crucial for novel physiological functions in adult honey bees.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Shows large-scale coding sequence change underlies honey bee novel traits
-- Provides RNA-Seq evidence for TRG enrichment in postdevelopmental novel tissues
+- Identified the significance of coding sequence changes in the evolution of adult phenotypic novelty in honey bees.
+- Demonstrated that positively selected tissue-specific genes underlie novel physiological functions.
+- Highlighted the role of taxonomically restricted genes (TRGs) in conferring specialized cellular functions.
+- Challenged the evo-devo paradigm by showing that low network connectedness in genes facilitates rapid coding sequence changes.
 
 ## Methods
 
-- RNA-Seq transcriptomics
-- Coding sequence evolutionary rate analysis
-- Taxonomically restricted gene identification
-- Differential gene expression analysis
-
+- Conducted ten RNA-Seq experiments across various tissues in honey bees.
+- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
+- Examined differential gene expression between nurses and foragers to identify genes involved in social functions.
+- Utilized statistical tests to assess the significance of TRG expression in novel versus conserved tissues.
 
 ## 🎯 Consulting & Tutoring
 

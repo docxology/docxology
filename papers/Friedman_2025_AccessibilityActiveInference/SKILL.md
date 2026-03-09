@@ -1,6 +1,6 @@
 ---
 name: "AccessibilityActiveInference"
-description: "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel..."
+description: "Expertise in developing accessible educational resources and curricula in neuroscience, focusing on community engagement and cognitive modeling."
 tags: ["active inference", "accessibility", "active-inference", "pedagogy", "summer-school-curriculum", "generative-playbooks"]
 ---
 
@@ -31,16 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Educational curriculum design
-- Generative Playbook development
-- Open-source educational materials
-- Accessibility assessment across education levels
+- Co-creation of playbooks with community members through working groups.
+- Utilization of generative AI for multilingual and multimedia educational materials.
+- Design of a Summer School curriculum incorporating multiple disciplinary perspectives.
+- Feedback loops with advisory boards and participants for iterative improvement.
 
 ## Key Findings
 
-- Proposes Generative Playbooks for accessible Active Inference learning
-- Identifies barriers to Active Inference dissemination (technical, linguistic, cultural)
-- Designs open-source summer school curriculum for different education levels
+- Identified barriers to the dissemination of Active Inference resources.
+- Demonstrated the need for targeted instructional materials for various audiences.
+- Outlined a structured timeline for developing educational resources.
+- Established a framework for ongoing community engagement and feedback.
 
 ## Prerequisites
 

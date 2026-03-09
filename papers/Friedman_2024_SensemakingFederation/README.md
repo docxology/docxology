@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowledge federation, and the future of collaborative digital innovation.
+> This paper discusses the concept of knowledge federation within the realm of sensemaking, highlighting the establishment of a global open Sensemaking Federation. It explores the dynamics of inter-entity connections and the role of digital public libraries in maintaining knowledge artifacts.
 
 ## Keywords
 
@@ -19,15 +19,17 @@
 
 ## Key Contributions
 
-- Explores frontiers of sensemaking federation in digital contexts
-- Discusses decentralized knowledge infrastructure development
+- Introduction of the concept of digital public libraries as knowledge federation servers.
+- Development of a framework for understanding epistemic communities through K-Hubs.
+- Integration of game-based elements to enhance collaborative sensemaking.
+- Exploration of advanced topic mapping techniques for knowledge organization.
 
 ## Methods
 
-- Panel discussion
-- Collaborative sensemaking
-- Digital innovation analysis
-
+- Facilitation of a panel discussion with experts in sensemaking and digital innovation.
+- Use of topic mapping to create structured knowledge graphs.
+- Incorporation of game mechanics to foster skills in deep listening and idea synthesis.
+- Engagement of diverse participants to explore the federation of meaning.
 
 ## 🎯 Consulting & Tutoring
 

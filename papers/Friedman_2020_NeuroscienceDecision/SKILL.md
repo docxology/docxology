@@ -1,6 +1,6 @@
 ---
 name: "NeuroscienceDecision"
-description: "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have hel..."
+description: "Expertise in integrating neuroscience and decision-making research, with a focus on computational approaches and philosophical implications."
 tags: ["genetics & biomedical research", "decision-making", "computational-neuroscience", "bayesian-brain", "free-will", "mental-health"]
 ---
 
@@ -29,15 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Scholarly interview
-- Computational neuroscience discussion
-- Decision-making framework analysis
+- Utilizes Bayesian reasoning to inform decision-making processes.
+- Discusses the accumulation of evidence to a threshold level as a mechanism for decision commitment.
+- Examines neural activity related to decision-making and its implications for understanding free will.
+- Proposes a roadmap for future research that bridges conscious awareness with neural measurements.
 
 ## Key Findings
 
-- Provides Tim Hanks's perspective on computational decision-making neuroscience
-- Discusses connections between neural decision-making, free will, and mental health
-- Highlights integrative approaches to studying brain decision processes
+- Conscious awareness plays a significant role in decision-making processes, influencing both deliberative and subconscious choices.
+- The concept of decision bounds is critical for understanding how individuals commit to decisions based on evidence.
+- Future research may reveal aspects of decision making that challenge current scientific understanding or require new conceptual frameworks.
+- Different types of consciousness may have distinct evolutionary histories and relationships with neural mechanisms.
 
 ## Prerequisites
 

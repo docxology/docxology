@@ -1,6 +1,6 @@
 ---
 name: "AIAccountability"
-description: "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int..."
+description: "Expertise in developing adaptive regulatory frameworks for AI technologies, integrating interdisciplinary perspectives to enhance ethical and effective governance."
 tags: ["cognitive security", "ai-accountability", "ntia", "policy-comment", "cognitive-security", "p3if"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Policy comment submission
-- Cognitive security analysis
-- P3IF framework application
-- Multi-organizational collaboration
+- Conducted a synthesis of perspectives from various organizations involved in AI and information risk management.
+- Analyzed the implications of blanket regulation versus adaptive regulatory frameworks.
+- Engaged in interdisciplinary discussions to inform recommendations on AI governance.
+- Utilized case studies and examples to illustrate the complexities of AI regulation.
 
 ## Key Findings
 
-- Submits expert multi-organizational comments on NTIA AI accountability policy
-- Applies P3IF and cognitive security frameworks to AI governance recommendations
-- Connects Active Inference to AI accountability challenges
+- Blanket regulation of AI technologies may lead to unintended negative consequences and conflicts.
+- Effective regulation requires a clear understanding of the diverse methodologies and applications of AI.
+- The NTIA can play a crucial role in convening stakeholders to develop adaptive regulatory approaches.
+- Professionalization and insurance structures can enhance the ethical implementation of AI technologies.
 
 ## Prerequisites
 

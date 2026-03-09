@@ -1,6 +1,6 @@
 ---
 name: "DistributedPhysiology"
-description: "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this..."
+description: "Expertise in the physiological and molecular mechanisms underlying social behavior in eusocial insects, with a focus on integrating functional genomics and social physiology."
 tags: ["entomology", "distributed-physiology", "superorganism", "collective-behavior", "ant-colonies", "decentralized-control"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Literature synthesis
-- Colony-level physiological analysis
-- Network interaction modeling
-- Comparative social insect biology
+- Reviews empirical research on physiological processes in eusocial insects.
+- Analyzes the roles of molecular signaling and social communication mechanisms.
+- Compares nestmate-level and colony-level physiological traits.
+- Utilizes functional genomic approaches to investigate the genetics of eusocial behavior.
 
 ## Key Findings
 
-- Develops the concept of distributed physiology in ant colonies
-- Shows how colony-level metabolic and immune regulation emerges from local interactions
-- Connects individual neurochemistry and behavior to colony-level physiological processes
+- Colony-level traits significantly influence productivity and ecological success in eusocial insects.
+- Physiological processes in eusocial colonies are regulated through both molecular signaling and physical interactions.
+- Specialized roles within the colony enhance efficiency and task performance.
+- The framework of eusocial physiology provides novel insights into the evolution of social behavior.
 
 ## Prerequisites
 

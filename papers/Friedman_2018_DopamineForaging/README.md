@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that experimental manipulation of dopamine signaling alters the propensity of workers to leave the nest and forage. Specifically, pharmacological activation of dopamine receptors increased foraging activity, while dopamine receptor antagonists decreased it. These results provide evidence that dopaminergic signaling plays a causal role in regulating foraging behavior in harvester ants.
+> This study investigates the context-dependent expression of the foraging gene in field colonies of harvester ants, focusing on the roles of age, environment, and task. By examining gene expression across different worker groups and under varying light conditions, the research highlights the complex interactions that influence foraging behavior.
 
 ## Keywords
 
@@ -21,19 +21,17 @@
 
 ## Key Contributions
 
-- Demonstrates causal role of dopamine in regulating ant foraging behavior
-- Shows dopamine receptor activation increases foraging propensity
-- Links individual neurochemistry to colony-level collective behavior
-- Provides pharmacological evidence bridging neuroscience and behavioral ecology
+- Demonstrated the temporal regulation of the foraging gene in harvester ants based on age and task.
+- Provided evidence of significant daily oscillations in foraging gene expression linked to activity rhythms.
+- Investigated the effects of light exposure on foraging gene expression in brood workers and foragers.
+- Established correlations between foraging gene expression and the circadian clock gene, cycle.
 
 ## Methods
 
-- Dopamine receptor agonist/antagonist pharmacology
-- Behavioral assays (foraging activity monitoring)
-- HPLC neurotransmitter quantification
-- Colony-level behavioral tracking
-- Statistical analysis of behavioral data
-
+- Collected harvester ant workers from natural populations and categorized them into age- and task-related groups.
+- Conducted field experiments to assess foraging gene expression at different times of day.
+- Manipulated light conditions to evaluate their impact on gene expression in various worker tasks.
+- Analyzed mRNA levels of the foraging gene and the circadian clock gene in relation to worker activity.
 
 ## 🎯 Consulting & Tutoring
 

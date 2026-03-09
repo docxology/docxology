@@ -1,6 +1,6 @@
 ---
 name: "AntStack"
-description: "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte..."
+description: "Expertise in developing modular frameworks for simulating biological agents, focusing on interoperability, energy efficiency, and cognitive modeling."
 tags: ["entomology", "antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Multilevel framework design
-- Cross-scale biological integration
-- Colony modeling methodology
+- Coupling physics-based locomotion with olfactory-visual sensing.
+- Implementing a lightweight neural pipeline for active-inference policy selection.
+- Using pheromone-mediated stigmergy for agent composition.
+- Specifying evaluation suites for navigation, task allocation, and robustness.
 
 ## Key Findings
 
-- Develops AntStack multilevel framework for ant colony modeling
-- Provides structured approach to cross-scale data integration in myrmecology
+- The framework is reproducible, extensible, and transferable to swarm robotics.
+- It links empirical findings in myrmecology to executable models for hypothesis testing.
+- The Ant Stack provides a substrate for energy-efficient synthetic intelligence.
+- It facilitates research in cognitive security and alignment through distributed agents.
 
 ## Prerequisites
 

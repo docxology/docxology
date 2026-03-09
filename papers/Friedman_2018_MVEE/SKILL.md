@@ -1,6 +1,6 @@
 ---
 name: "MVEE"
-description: "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
+description: "Expertise in developing frameworks for evolutionary studies, integrating interdisciplinary data, and formalizing complex biological interactions."
 tags: ["presentations, courses & media", "mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo"]
 ---
 
@@ -30,15 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Variational formalism
-- Multilevel evolutionary modeling
-- Theoretical biology framework development
+- Extends existing theories in Variational Neuroethology.
+- Utilizes a formalized approach to model evolutionary processes.
+- Incorporates interdisciplinary data from biological, social, and computational systems.
+- Analyzes ecological variability over multiple time scales.
 
 ## Key Findings
 
-- Introduces the MVEE (Multilevel Variational Ecology and Evolution) framework
-- Proposes formal integration of heredity, environment, and phenotype across biological scales
-- Addresses plasticity, meta-plasticity, and open-endedness in evolutionary theory
+- Establishes a general framework applicable to various evolutionary studies.
+- Demonstrates the importance of integrating diverse data sources.
+- Identifies key factors influencing evolutionary dynamics.
+- Suggests new avenues for experimental research in evolutionary biology.
 
 ## Prerequisites
 

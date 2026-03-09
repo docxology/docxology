@@ -1,6 +1,6 @@
 ---
 name: "DopamineForaging"
-description: "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate..."
+description: "Expertise in analyzing the molecular mechanisms of behavioral plasticity in social insects, particularly through the study of gene expression and environmental interactions."
 tags: ["entomology", "dopamine", "foraging-behavior", "pogonomyrmex-barbatus", "neuromodulation", "task-allocation"]
 ---
 
@@ -30,18 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Dopamine receptor agonist/antagonist pharmacology
-- Behavioral assays (foraging activity monitoring)
-- HPLC neurotransmitter quantification
-- Colony-level behavioral tracking
-- Statistical analysis of behavioral data
+- Collected harvester ant workers from natural populations and categorized them into age- and task-related groups.
+- Conducted field experiments to assess foraging gene expression at different times of day.
+- Manipulated light conditions to evaluate their impact on gene expression in various worker tasks.
+- Analyzed mRNA levels of the foraging gene and the circadian clock gene in relation to worker activity.
 
 ## Key Findings
 
-- Demonstrates causal role of dopamine in regulating ant foraging behavior
-- Shows dopamine receptor activation increases foraging propensity
-- Links individual neurochemistry to colony-level collective behavior
-- Provides pharmacological evidence bridging neuroscience and behavioral ecology
+- Foraging gene expression varies significantly with worker age and task, showing distinct patterns over time.
+- High levels of foraging mRNA were observed during daylight hours when foragers are most active.
+- Light exposure influenced foraging expression differently in brood workers compared to foragers.
+- The expression of the foraging gene is context-dependent, reflecting both ontogenetic and daily behavioral plasticity.
 
 ## Prerequisites
 

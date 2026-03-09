@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs), genes without homologs in related lineages. We find that honey-bee-specific novel tissues show significant enrichment for TRGs compared to conserved tissues. This is paired with elevated rates of coding sequence change in TRG-enriched tissues. These results support the hypothesis that novel traits preferentially recruit novel genetic elements.
+> This study investigates the role of coding sequence changes in the evolution of postdevelopmental novelty in honey bees, challenging the traditional evo-devo paradigm that emphasizes regulatory changes. Through RNA-Seq experiments, we demonstrate that positively selected, tissue-specific genes with low network connectivity are crucial for the emergence of novel physiological functions in adult honey bees.
 
 ## Keywords
 
@@ -21,20 +21,17 @@
 
 ## Key Contributions
 
-- Demonstrates TRGs are enriched in novel honey bee tissues
-- Provides RNA-Seq data for honey bee royal jelly, venom, and wax glands
-- Supports the hypothesis that novel traits preferentially recruit novel genes
-- Shows elevated rates of coding sequence change in TRG-enriched tissues
+- Demonstrated that positively selected tissue-specific genes underlie novel physiological functions in honey bees.
+- Challenged the evo-devo paradigm by showing that low network connectivity genes contribute to phenotypic novelty.
+- Identified the importance of taxonomically restricted genes (TRGs) in the evolution of novel traits.
+- Provided insights into the genetic mechanisms governing phenotypic novelty in adult organisms.
 
 ## Methods
 
-- RNA-Seq transcriptomics
-- Differential gene expression analysis
-- Taxonomically restricted gene (TRG) identification
-- Coding sequence evolutionary rate analysis
-- BLASTp homology searches
-- Statistical enrichment tests
-
+- Conducted ten RNA-Seq experiments across various honey bee tissues.
+- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
+- Compared gene expression in novel versus conserved tissues to assess the role of coding sequence changes.
+- Examined differentially expressed genes (DEGs) between different adult castes (nurses and foragers).
 
 ## 🎯 Consulting & Tutoring
 

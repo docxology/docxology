@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while enabling collective cognition. This speaks to multi-scale inference architectures and distributed decision-making in both biological and artificial systems.
+> This paper explores federated inference and belief-sharing among agents in a shared environment, demonstrating how communication and language can emerge from minimizing free energy. Through simulations, it illustrates the processes of inference, learning, and model selection that facilitate collective intelligence and the development of language.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Formalizes federated inference extending Active Inference to distributed settings
-- Develops principled belief sharing through message passing between agents
-- Shows how collective cognition emerges without sharing raw observations
-- Provides framework for privacy-preserving distributed intelligence
+- Introduces the concept of federated inference through belief-sharing among agents.
+- Demonstrates the emergence of language as a byproduct of free energy minimization.
+- Provides a framework for understanding collective intelligence in ensembles of agents.
+- Explores the implications of belief-sharing for cultural niche construction and complexity in self-organizing systems.
 
 ## Methods
 
-- Federated Active Inference formalization
-- Belief sharing via message passing
-- Multi-agent generative modeling
-- Distributed inference architecture design
-
+- Utilizes numerical simulations to model belief-sharing and active inference among synthetic agents.
+- Applies the free energy principle to describe the dynamics of belief updating and communication.
+- Examines the acquisition of language through active learning and the transmission of beliefs across generations.
+- Employs Bayesian model selection to illustrate structure learning in generative models.
 
 ## 🎯 Consulting & Tutoring
 

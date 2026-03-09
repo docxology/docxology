@@ -1,6 +1,6 @@
 ---
 name: "P3IF"
-description: "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structu..."
+description: "Expertise in developing and implementing interdisciplinary frameworks for requirements engineering, focusing on enhancing cognitive security and managing information risk in complex decision-making environments."
 tags: ["cognitive security", "p3if", "information-risk", "cognitive-security", "interdisciplinary-frameworks", "requirements-management"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Inter-framework multiplexing
-- Requirements framework integration
-- Information risk management
-- Cognitive security analysis
+- Explores the purpose and function of existing frameworks in requirements engineering.
+- Performs an analysis of relationships and lineages of common frameworks in professional use.
+- Generalizes features of frameworks to identify common dimensions for interoperability.
+- Proposes a modular abstraction layer to extend the value of existing frameworks without replacing them.
 
 ## Key Findings
 
-- Develops P3IF for managing information risk across frameworks
-- Integrates cognitive security with health and homeland security
+- Identifies the need for interdisciplinary collaboration to enhance information integrity and cognitive security.
+- Demonstrates that current frameworks are either too narrow or too broad for effective application in complex decision-making.
+- Highlights the importance of bridging information and decision security silos to improve organizational decision-making.
+- Suggests that a more interoperable approach to requirements engineering can foster greater cognitive security.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference, we develop formal connections between aesthetic experience, creative cognition, and scientific reasoning.
+> This paper positions cognitive science as the systematic study of intra-action and cognitive art as its reflexive counterpart, exploring a bidirectional trajectory toward systemic wholeness. It proposes a four-fold schema that integrates procedural craft, conceptual articulation, adaptive intelligence, and the observing niche to balance exploitation with exploration in cognitive processes.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Develops cognitive foundations for art-science integration
-- Connects aesthetic experience with Active Inference
+- Introduces a four-fold schema linking procedural craft, conceptual articulation, adaptive intelligence, and the observing niche.
+- Proposes a novel perspective on cognitive science as a study of intra-action and cognitive art as its reflexive twin.
+- Explores the balance between exploitation and exploration in cognitive processes through a systemic approach.
+- Suggests the integration of modern computer science and cryptography in developing information architectures for cognitive systems.
 
 ## Methods
 
-- Cognitive science framework application
-- Art-science comparative analysis
-- Active Inference aesthetic modeling
-
+- Utilizes a four-fold schema to analyze cognitive processes and their interrelations.
+- Applies Active Inference from a Low Road perspective for variational approximation in cognitive modeling.
+- Employs alternating analytical moves (2→3) and generative moves (4→3) to compress past data and open space for future possibilities.
+- Integrates empirical specifics with mathematical generalizations for flexible systems modeling.
 
 ## 🎯 Consulting & Tutoring
 

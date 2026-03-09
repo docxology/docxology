@@ -1,6 +1,6 @@
 ---
 name: "BeforePragmatism"
-description: "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic..."
+description: "Expertise in analyzing the intersections of literature, philosophy, and epistemology, with a focus on the contributions of William Blake to contemporary thought."
 tags: ["art", "william-blake", "pragmatism", "anticipatory-epistemology", "america-a-prophecy", "peirce"]
 ---
 
@@ -29,14 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Comparative literary-philosophical analysis
-- Structural convergence identification
-- Historical intellectual mapping
+- Utilizes a comparative analysis of Blake's texts and modern epistemological theories.
+- Applies complexity theory and dynamical systems to interpret Blake's fourfold vision.
+- Employs a historical analysis of the philosophical context surrounding Blake's work.
+- Integrates insights from active inference and pragmatism to develop a cohesive interpretive framework.
 
 ## Key Findings
 
-- Identifies six structural convergences between Blake and pragmatism
-- Argues Blake's vision anticipates American pragmatist epistemology
+- Identifies a coherent epistemological framework in Blake's work that challenges traditional empiricism.
+- Demonstrates how Blake's artistic practices serve as a form of epistemological inquiry.
+- Highlights the relevance of Blake's thought for contemporary discussions on truth and knowledge.
+- Suggests that Blake's vision offers a pathway for integrating artistic and scientific modes of understanding.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atlas' sketching how Blake's theory of seeing maps onto prediction error minimization, Markov blankets, hierarchical generative models, and the principle that all perception is active inference.
+> This paper explores the connections between William Blake's visionary concepts and the mathematical framework of Active Inference. It aims to synthesize these ideas to enhance understanding of perception and prediction in cognitive processes.
 
 ## Keywords
 
@@ -21,15 +21,15 @@
 
 ## Key Contributions
 
-- Maps eight concordances between Blake's vision and Active Inference mathematics
-- Develops Thematic Atlas connecting prophetic epistemology to predictive processing
+- Establishes eight thematic concordances between Blake's vision and Active Inference.
+- Integrates philosophical insights with cognitive science to propose a novel framework for understanding perception.
+- Explores the implications of Active Inference for creativity and transpersonal experiences.
 
 ## Methods
 
-- Thematic concordance mapping
-- Art-mathematics synthesis
-- Active Inference application to aesthetics
-
+- Utilizes a thematic analysis to draw parallels between Blake's concepts and Active Inference.
+- Applies hierarchical generative models to explain cognitive processes.
+- Employs the Free Energy Principle to frame discussions on perception and action.
 
 ## 🎯 Consulting & Tutoring
 

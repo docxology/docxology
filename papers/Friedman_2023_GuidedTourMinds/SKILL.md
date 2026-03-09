@@ -1,6 +1,6 @@
 ---
 name: "GuidedTourMinds"
-description: "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue..."
+description: "Expertise in cognitive modeling and the application of Active Inference principles to understand diverse forms of sentience and agency."
 tags: ["active inference", "path-integrals", "particular-kinds", "mindspace", "active-inference", "free-energy-principle"]
 ---
 
@@ -31,15 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Commentary and theoretical analysis
-- Mindspace cartography framework
-- Non-anthropocentric sentience evaluation
+- Utilizes Active Inference as a framework for measuring and modeling minds.
+- Applies the Free Energy Principle for theoretical grounding in cognitive modeling.
+- Explores the dynamics of particles to understand agency and sentience.
+- Synthesizes Bayesian Statistics and Machine Learning with Category Theory.
 
 ## Key Findings
 
-- Connects typology of particular kinds to Sloman's mindspace mapping project
-- Highlights non-anthropocentric value of Active Inference sentience taxonomy
-- Identifies FEP as principled framework for cartography of possible minds
+- Identifies a two-dimensional mindspace characterized by 'agency' and 'experience'.
+- Demonstrates how the dynamics of particles can indicate levels of agency and selfhood.
+- Establishes a connection between optimization processes and the taxonomy of minds.
+- Suggests that the typology of particular kinds can refine existing mind taxonomies.
 
 ## Prerequisites
 

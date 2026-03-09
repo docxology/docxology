@@ -1,6 +1,6 @@
 ---
 name: "TrustFinder"
-description: "TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University..."
+description: "Proficient in developing and implementing sociotechnical systems for collaborative information management and evaluation, enhancing users' ability to assess claims and find trusted sources."
 tags: ["cognitive security", "trustfinder", "trust-systems", "information-evaluation", "cognitive-security", "verified-information"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Expert consultation and feedback synthesis
-- Sociotechnical system design
-- Trust evaluation framework development
-- Information assessment protocol design
+- Utilization of user-created Workspaces for collaborative projects.
+- Incorporation of various informational structures such as Claims, Claim Instances, and Questions.
+- Application of argument representation frameworks to connect Claims and enhance navigation.
+- Use of crowdsourcing design principles to leverage global research community contributions.
 
 ## Key Findings
 
-- Presents TrustFinder design for collaborative information trust assessment
-- Synthesizes expert recommendations for verified information exchange
-- Develops community-based approach to evaluating claim trustworthiness
+- TrustFinder enhances the navigability and searchability of the information environment.
+- Users can effectively evaluate and vet claims, reducing redundant work.
+- The system supports the mapping of claim origins and their dissemination.
+- Trust scores improve the assessment of information quality and author intent.
 
 ## Prerequisites
 

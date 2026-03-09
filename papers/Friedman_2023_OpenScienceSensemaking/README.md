@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)—an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, ratings, and behavioral traces.
+> This paper argues for the necessity of Open Science Sensemaking (OSSm) to address the challenges of information overload and knowledge fragmentation in the scientific community. It proposes an interoperable and decentralized annotation network that allows researchers to record, own, and share their sensemaking data, thereby enhancing collective scientific understanding.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Proposes Open Science Sensemaking (OSSm) framework
-- Develops taxonomy of scientific sensemaking data types
-- Designs decentralized interoperable annotation infrastructure
+- Introduces the concept of Open Science Sensemaking (OSSm) as a solution to scientific information overload.
+- Proposes a decentralized annotation network for sharing sensemaking data among researchers.
+- Highlights the importance of sensemaking data in improving scientific evaluation and collaboration.
+- Advocates for the integration of sensemaking data into the open science movement.
 
 ## Methods
 
-- Decentralized annotation system design
-- Sensemaking data taxonomy
-- Interoperability framework development
-
+- Outlines a framework for an interoperable annotation network.
+- Examines existing sensemaking data practices and their limitations.
+- Analyzes the role of sensemaking data in algorithmic content curation and recommendation systems.
+- Discusses the application of FAIR principles to sensemaking data.
 
 ## 🎯 Consulting & Tutoring
 

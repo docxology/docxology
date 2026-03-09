@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and are enriched by Active Inference, pointing towards a fuller systems science that integrates process philosophy and anticipatory systems.
+> This paper explores the connections between systems processes and active inference, aiming to enhance the understanding of systems science. It discusses the implications of these concepts for cognitive security and broader scientific inquiry.
 
 ## Keywords
 
@@ -19,15 +19,17 @@
 
 ## Key Contributions
 
-- Maps connections from systems processes to Active Inference
-- Points towards integrated systems science incorporating process philosophy
+- Introduces a novel framework linking systems processes to active inference.
+- Provides insights into the application of active inference in cognitive security.
+- Offers a comprehensive discussion on the evolution of systems science.
+- Presents open-source resources for further exploration and engagement.
 
 ## Methods
 
-- Systems process analysis
-- Metatheoretical framework mapping
-- Presentation and discussion
-
+- Utilizes a conceptual analysis of systems processes and active inference.
+- Incorporates discussions and insights from collaborative meetings with experts.
+- Analyzes existing literature and resources related to active inference.
+- Engages with open-source platforms to disseminate findings.
 
 ## 🎯 Consulting & Tutoring
 

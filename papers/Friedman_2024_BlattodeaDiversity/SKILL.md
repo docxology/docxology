@@ -1,6 +1,6 @@
 ---
 name: "BlattodeaDiversity"
-description: "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W..."
+description: "Expertise in analyzing chemical communication systems and transcriptomic data in social insects, with a focus on cuticular hydrocarbons and their relationship to social complexity."
 tags: ["entomology", "blattodea", "cockroach-diversity", "termites", "insect-ecology", "eusociality"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Taxonomic review
-- Comparative evolutionary biology
-- Ecological survey
-- Phylogenetic analysis
+- Compared CHC complexity and transcriptomic data across selected Blattodea species representing varying social complexities.
+- Utilized gas chromatography coupled with tandem mass spectrometry (GC–MS/MS) for CHC analysis.
+- Constructed a chemical dendrogram based on CHC divergence and correlated it with molecular phylogeny.
+- Analyzed whole-genome transcriptomes to assess CHC biosynthesis gene diversity.
 
 ## Key Findings
 
-- Reviews Blattodea diversity and evolutionary biology
-- Examines the cockroach–termite eusociality transition
+- No consistent pattern of chemical complexity was found correlating with social complexity in Blattodea.
+- Chemical divergence and transcriptomic repertoire did not reflect levels of social organization.
+- The study calls for a more cautious interpretation of the relationship between chemical, genetic, and social complexity.
+- Identified specific CHC compound classes and their associated biosynthesis genes across different species.
 
 ## Prerequisites
 

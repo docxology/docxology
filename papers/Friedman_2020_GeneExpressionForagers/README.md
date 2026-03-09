@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify pathways related to sensory processing, metabolism, and neurochemical signaling that distinguish foragers from in-nest workers.
+> This study investigates how gene expression variation in the brains of red harvester ant foragers is linked to collective behavior and reproductive success. Using RNA-seq, we found that differences in gene expression among colonies correlate with their sensitivity to humidity and the dopamine-to-serotonin ratio in forager brains.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Characterizes transcriptomic profiles distinguishing foragers from nest workers
-- Identifies gene expression pathways underlying foraging behavior
-- Provides RNA-Seq data for behavioral caste comparison in harvester ants
+- Identified gene expression differences in forager brains across ant colonies.
+- Established a link between gene expression variation and colony-level traits related to foraging behavior.
+- Demonstrated that neurophysiological differences influence collective behavior in natural settings.
+- Provided insights into the evolutionary constraints on gene expression related to colony behavior.
 
 ## Methods
 
-- RNA-Seq transcriptomics
-- Differential gene expression analysis
-- Gene ontology enrichment analysis
-- Behavioral categorization of workers
-- Bioinformatics pipelines
-
+- Utilized RNA-seq to profile gene expression in the brains of foragers from nine colonies.
+- Applied supervised and unsupervised statistical approaches to analyze transcriptomic patterns.
+- Conducted dimensional reduction techniques such as PCA and linear discriminant analysis to differentiate colonies.
+- Performed gene ontology enrichment analyses to identify functional categories associated with expression patterns.
 
 ## 🎯 Consulting & Tutoring
 

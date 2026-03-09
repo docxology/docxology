@@ -1,6 +1,6 @@
 ---
 name: "CEREBRUM"
-description: "CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are tr..."
+description: "Proficient in developing and applying cognitive modeling frameworks that integrate linguistic case systems and Bayesian representations for enhanced intelligence production."
 tags: ["active inference", "cerebrum", "linguistic-case-systems", "active-inference", "bayesian-modeling", "model-management"]
 ---
 
@@ -29,17 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Linguistic case system formalization
-- Bayesian Active Inference
-- Category theory application
-- Model lifecycle management
-- Case-based computational framework
+- Application of category theory to cognitive modeling.
+- Utilization of the Free Energy Principle in model descriptions.
+- Development of a formal framework for cognitive models as case-bearing entities.
+- Implementation of hierarchical message passing for dynamic adaptive processes.
 
 ## Key Findings
 
-- Introduces CEREBRUM framework mapping case systems to model management
-- Applies linguistic case roles as functional typing for AI and scientific models
-- Provides a unified framework bridging formal linguistics with Bayesian inference
+- CEREBRUM enables structured representation of model relationships and transformations.
+- Cognitive models can exist in different 'cases' based on their functional roles.
+- The framework enhances adaptability and coordination among analytical models.
+- Emergence of novel case functions for improved cognitive ecosystem management.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "NarrativeEcosystems"
-description: "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-..."
+description: "Expertise in applying Active Inference and Systems Engineering principles to enhance communication and decision-making in Remote Teams."
 tags: ["cognitive security", "narrative-ecosystems", "active-inference", "remote-teams", "onft-framework", "epistemic-foraging"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Active Inference framework application
-- Systems Engineering methodology
-- ONFT framework development
-- Epistemic foraging analysis
+- Utilizes the Active Inference framework to analyze communication in Remote Teams.
+- Applies Systems Engineering principles to formalize Remote Team processes.
+- Investigates the dynamics of narratives and their impact on team coherence.
+- Examines the use of digital tools for enhancing team collaboration and decision-making.
 
 ## Key Findings
 
-- Develops ONFT framework for Remote Team lifecycle management
-- Connects Active Inference with narrative, ontological, and systems engineering concepts
-- Applies epistemic foraging and niche construction to team development
+- Effective ONFT based on Active Inference can significantly improve decision-making in Remote Teams.
+- The integration of communication systems leads to enhanced team efficiency and productivity.
+- Narratives play a crucial role in aligning team members and fostering shared values.
+- Emergent teams require adaptive communication strategies to navigate complex challenges.
 
 ## Prerequisites
 

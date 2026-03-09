@@ -1,6 +1,6 @@
 ---
 name: "HoneyBeeGeneExpression"
-description: "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel..."
+description: "Expertise in evolutionary biology focusing on the genetic mechanisms underlying phenotypic novelty, particularly through the analysis of coding sequence changes in honey bees."
 tags: ["entomology", "honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- RNA-Seq transcriptomics
-- Coding sequence evolutionary rate analysis
-- Taxonomically restricted gene identification
-- Differential gene expression analysis
+- Conducted ten RNA-Seq experiments across various tissues in honey bees.
+- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
+- Examined differential gene expression between nurses and foragers to identify genes involved in social functions.
+- Utilized statistical tests to assess the significance of TRG expression in novel versus conserved tissues.
 
 ## Key Findings
 
-- Shows large-scale coding sequence change underlies honey bee novel traits
-- Provides RNA-Seq evidence for TRG enrichment in postdevelopmental novel tissues
+- Highly expressed TRGs play a significant role in tissues with novel functions compared to conserved tissues.
+- Positively selected genes are often the least connected within gene expression networks.
+- TRGs are critical for generating novel social functions and are frequently positively selected.
+- The study suggests that genes with low network connectivity can evolve rapidly without incurring negative pleiotropic effects.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "ActiveDiffusion"
-description: "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, f..."
+description: "Expertise in integrating Active Inference and Diffusion Models for advanced cognitive system design and decision-making strategies."
 tags: ["active inference", "active-diffusion", "diffusion-models", "active-inference", "generative-ai", "probabilistic-modeling"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Initiative catechism development
-- Active Inference application to diffusion models
-- Collaborative research project design
+- Conducts a thorough literature review on Latent Diffusion Models and belief propagation in Active Inference.
+- Utilizes benchmarks on standard datasets and formats for empirical validation.
+- Employs the cadCAD package for developing frameworks in cognitive ecosystems design.
+- Investigates the application of individual components within LDM architectures in the action-perception loop.
 
 ## Key Findings
 
-- Proposes the Active Diffusion initiative connecting diffusion models and Active Inference
-- Establishes collaborative framework for studying diffusion through free energy minimization
+- Identifies significant similarities between Active Inference and Diffusion Models in their formulation and applications.
+- Demonstrates the effectiveness of DMs in learning representations of dynamic environments.
+- Reveals potential for bridging gaps between continuous and discrete time formulations in generative models.
+- Highlights the role of latent state representations in enhancing sophisticated inference in high-dimensional spaces.
 
 ## Prerequisites
 

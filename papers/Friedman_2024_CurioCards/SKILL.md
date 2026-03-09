@@ -1,6 +1,6 @@
 ---
 name: "CurioCards"
-description: "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct..."
+description: "Expertise in pioneering NFT art projects, leveraging blockchain technology for digital ownership, and fostering artist-collector interactions."
 tags: ["art", "curio-cards", "research-ideation", "creativity-tools", "interdisciplinary-thinking", "prompt-based-exploration"]
 ---
 
@@ -26,14 +26,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Card-based ideation design
-- Creative prompting framework
-- Interdisciplinary exploration tools
+- Utilized Ethereum blockchain technology for the creation and ownership of NFTs.
+- Incorporated various artistic media such as digital art, printmaking, and animation.
+- Engaged multiple artists with distinct styles to create a diverse collection.
+- Developed a permanent online gallery to showcase the artwork.
 
 ## Key Findings
 
-- Introduces Curio Cards for curiosity-driven research ideation
-- Designs card-based prompting system for interdisciplinary exploration
+- Curio Cards reflects a significant advancement in the intersection of art and technology.
+- The project has influenced the way artists interact with collectors and build communities.
+- It established a precedent for future NFT projects in terms of artistic and computational innovation.
+- The collection includes historically significant pieces, such as the first animated GIF on Ethereum.
 
 ## Prerequisites
 

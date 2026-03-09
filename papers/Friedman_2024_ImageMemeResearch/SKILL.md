@@ -1,6 +1,6 @@
 ---
 name: "ImageMemeResearch"
-description: "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov..."
+description: "Expertise in analyzing the rhetorical and ecological dimensions of image memes, employing both qualitative and computational methods to understand their influence on public narratives."
 tags: ["cognitive security", "image-memes", "meme-research", "digital-communication", "narrative-analysis", "rhetorical-analysis"]
 ---
 
@@ -27,15 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Meme content classification
-- Diffusion pattern tracking
-- Sensemaking impact assessment
-- Digital communication analysis
+- Utilizes a multidisciplinary approach combining rhetorical analysis and ecological frameworks.
+- Employs computational techniques for large-scale claim identification in image memes.
+- Analyzes the interaction and evolution of memetic claims within information ecosystems.
+- Collects and curates diverse image meme samples from various social media platforms.
 
 ## Key Findings
 
-- Develops systematic methodologies for image meme research
-- Provides classification frameworks for meme content analysis
+- Image memes serve as significant artifacts that influence public beliefs and sentiments.
+- The framework reveals how image memes can pollute information ecosystems with misinformation.
+- Identifying evidence patterns in image memes can inform strategies to combat misinformation.
+- The study highlights the importance of understanding the cumulative impact of image memes on public discourse.
 
 ## Prerequisites
 

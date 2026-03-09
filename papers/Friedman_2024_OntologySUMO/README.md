@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and subsets, and display relationships among identified SUMO topics. This scaffolding facilitates rigorous mapping of Active Inference to SUMO.
+> This paper presents a framework for aligning the Active Inference Ontology with the Suggested Upper Merged Ontology (SUMO) to enhance the mapping of concepts across various scientific and humanistic fields. The goal is to provide a structured approach to identify relationships between Active Inference terms and SUMO entities, facilitating a comprehensive understanding of their interrelations.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Provides first alignment of Active Inference terms to SUMO ontology
-- Establishes scaffolding for rigorous FEP-SUMO mapping
+- Establishes a preliminary alignment between Active Inference terms and SUMO entities.
+- Identifies relevant SUMO files that contain mappings for Active Inference topics.
+- Proposes a structured methodology for mapping complex concepts across disciplines.
+- Facilitates multilingual technical term integration within the Active Inference framework.
 
 ## Methods
 
-- Ontology alignment methodology
-- SUMO entity mapping
-- Knowledge representation formalization
-- Collaborative ontology development
-
+- Utilizes an alignment table to display relationships between Active Inference and SUMO terms.
+- Employs a systematic approach to categorize Active Inference topics into modules.
+- Analyzes existing SUMO files to identify appropriate mappings for Active Inference concepts.
+- Defines core, entailed, and supplemental topics to organize the presentation of Active Inference data.
 
 ## 🎯 Consulting & Tutoring
 

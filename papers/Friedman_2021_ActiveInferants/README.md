@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze paradigm, illustrating the model's ability to recover basic colony phenomena such as trail formation after food location discovery. We outline how the active inference ant colony model can be extended within a nested multiscale framework.
+> This paper presents an active inference model of ant colony foraging behavior, utilizing a Markov decision process to simulate and analyze the dynamics of trail formation and decision-making in ant colonies. The study aims to integrate insights from behavioral modeling with ecological and evolutionary frameworks to enhance understanding of collective behavior in eusocial insects.
 
 ## Keywords
 
@@ -21,19 +21,17 @@
 
 ## Key Contributions
 
-- First active inference model of ant colony foraging behavior
-- Simulates trail formation via stigmergic MDP
-- Demonstrates T-maze paradigm recovery through free energy minimization
-- Proposes nested multiscale Active Inference framework for biology
+- Introduced an active inference model specifically for ant colony foraging behavior.
+- Demonstrated the model's ability to replicate key phenomena such as trail formation in response to food discovery.
+- Integrated stigmergic regulation into the active inference framework, enhancing the understanding of collective decision-making.
+- Provided a versatile simulation model that can be adapted for various environmental and biophysical manipulations.
 
 ## Methods
 
-- Active Inference MDP modeling
-- Markov decision process specification
-- In silico simulation
-- Stigmergic decision-making modeling
-- T-maze paradigm simulation
-
+- Developed a Bayesian simulation model based on active inference principles.
+- Utilized a Markov decision process to simulate ant foraging behavior.
+- Focused on stigmergic outcomes using a single trail pheromone molecule.
+- Conducted in silico experiments to validate the model against established behavioral paradigms.
 
 ## 🎯 Consulting & Tutoring
 

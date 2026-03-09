@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively minimize free energy. The work connects digital twin technology to predictive processing and organizational modeling.
+> This paper provides insights and recommendations for the development of a National Digital Twins R&D Strategic Plan, emphasizing the importance of addressing trustworthiness, reliability, and responsible use in the implementation of Digital Twins. It argues that while Digital Twins offer significant potential, they also pose risks that must be managed to prevent future challenges.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Connects digital twin technology to Active Inference framework
-- Models digital twins as free-energy-minimizing generative systems
+- Synthesis of perspectives on Digital Twin implementation from diverse organizations and disciplines.
+- Recommendations addressing data management, trustworthiness, and responsible use of Digital Twins.
+- Highlighting the historical context and lessons learned from previous approaches to similar technologies.
+- Emphasizing the need for interdisciplinary collaboration in the development of Digital Twins.
 
 ## Methods
 
-- Digital twin modeling
-- Active Inference framework application
-- Generative model design
-
+- Interdisciplinary collaboration among universities, think-tanks, and industry experts.
+- Analysis of historical applications and vulnerabilities related to Digital Twins.
+- Development of recommendations based on a comprehensive review of existing literature and practices.
+- Consideration of business, operational, legal, technical, and social factors in Digital Twin implementation.
 
 ## 🎯 Consulting & Tutoring
 

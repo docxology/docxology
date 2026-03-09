@@ -1,6 +1,6 @@
 ---
 name: "VideoEntomology"
-description: "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies..."
+description: "Expertise in modern entomological methodologies, including video-based research techniques for studying insect behavior and physiology."
 tags: ["entomology", "video-entomology", "behavioral-tracking", "automated-phenotyping", "insect-behavior", "experimental-methods"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Video-based behavioral tracking
-- Automated behavioral phenotyping
-- Computer vision for entomology
-- High-throughput behavioral analysis
+- Describes protocols for the collection and maintenance of leaf-cutting ant colonies.
+- Presents a method for passive pollen collection from honey bees using a metal mesh.
+- Outlines histological techniques for analyzing honey bee tissues and assessing cell turnover.
+- Details a method for studying the impact of agrochemicals on honey bee queen fecundity.
 
 ## Key Findings
 
-- Reviews video technology applications in experimental entomology
-- Identifies best practices for video-based insect behavioral analysis
+- The presented methods facilitate improved observation and analysis of insect behavior and physiology.
+- Innovative techniques enhance the scalability of research on eusocial insects.
+- The use of video technology increases the reproducibility and accessibility of entomological methods.
+- The research underscores the need for effective methodologies to assess the ecological impacts of agricultural practices.
 
 ## Prerequisites
 

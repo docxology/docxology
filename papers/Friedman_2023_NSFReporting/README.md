@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profiles, intelligent processing prompts, and automated reporting tools to enhance the quality and accessibility of postdoctoral research outputs.
+> This paper proposes a generative intelligence system to enhance postdoctoral reporting at the National Science Foundation (NSF), aiming to improve efficiency and broaden the dissemination of research outputs. By leveraging synthetic intelligence language processing, the system aims to streamline reporting processes for postdocs and NSF program managers.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Proposes AI-enhanced NSF postdoctoral reporting framework
-- Designs automated tools for research output dissemination
+- Introduction of updatable profiles for postdocs to provide comprehensive data.
+- Development of intelligent processing prompts for standardizing submissions.
+- Creation of a dynamic reporting system that generates real-time reports.
+- Implementation of a user-centric interface design for enhanced usability.
 
 ## Methods
 
-- Generative AI system design
-- Prompt engineering for research reporting
-- Automated documentation
-
+- Utilization of prompt engineering and synthetic intelligence for data formatting.
+- Real-time monitoring and evaluation of postdoctoral activities.
+- Adaptive system evolution based on user feedback and technological advancements.
+- Integration of diverse media forms for report generation.
 
 ## 🎯 Consulting & Tutoring
 

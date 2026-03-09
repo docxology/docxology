@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key components include: (1) customizable on-site sensor networks for real-time environmental data gathering, (2) AI-assisted decision support with Active Inference models for personalized recommendations, (3) a community-driven innovation network for peer knowledge sharing, (4) ethical AI deployment with transparent decision-making, and (5) decentralized data processing to keep data and decisions with individual farmers. The project is organized into six Work Packages covering sensor deployment, data integration, AI agents, community platform, ethical framework, and pilot testing.
+> FarmWorks is a decentralized AI-powered agricultural platform designed to empower individual farmers by providing personalized solutions while resisting the centralization of power associated with traditional AI systems. The platform integrates real-time data collection, edge computing, and Active Inference models to enhance decision-making and promote sustainable agricultural practices.
 
 ## Keywords
 
@@ -21,21 +21,17 @@
 
 ## Key Contributions
 
-- Proposes decentralized AI agriculture platform resisting power concentration
-- Integrates Active Inference with real-time sensor data for personalized farm recommendations
-- Designs 6 Work Packages from sensor deployment to pilot testing
-- Develops community-driven knowledge sharing network for farmers
-- Establishes ethical framework for transparent AI deployment in agriculture
+- Development of an open-source decentralized AI platform for agriculture.
+- Empowerment of farmers through personalized, context-aware decision support.
+- Community-driven approach fostering knowledge sharing and innovation.
+- Implementation of an ethical framework for AI deployment aligned with human values.
 
 ## Methods
 
-- IoT sensor network deployment (soil moisture, temperature, pH, humidity)
-- Edge computing for local AI model training
-- Active Inference models for agricultural decision support
-- LoRa and 4G/5G communication protocols
-- Decentralized federated learning
-- Open-source platform development (Vin-Q, ROMI)
-
+- Integration of customizable sensor networks for real-time data collection.
+- Use of Active Inference models for personalized recommendations.
+- Decentralized data processing to enhance privacy and security.
+- Virtual assistant for natural language interaction with farmers.
 
 ## 🎯 Consulting & Tutoring
 

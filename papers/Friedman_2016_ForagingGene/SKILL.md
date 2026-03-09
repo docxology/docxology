@@ -1,6 +1,6 @@
 ---
 name: "ForagingGene"
-description: "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
+description: "Expertise in studying molecular mechanisms of behavioral plasticity in social insects, focusing on gene expression and task allocation in natural populations."
 tags: ["entomology", "foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms"]
 ---
 
@@ -31,19 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- qRT-PCR gene expression quantification
-- Field behavioral observations
-- Experimental light exposure manipulation
-- Temporal gene expression profiling
-- Statistical analysis (ANOVA, t-tests)
-- Colony-level behavioral monitoring
+- Collected harvester ants from natural populations and categorized them into age- and task-related groups.
+- Conducted field experiments to measure foraging gene expression at different times of day.
+- Manipulated light conditions to assess their impact on foraging gene expression.
+- Analyzed the correlation between foraging gene expression and the circadian clock gene.
 
 ## Key Findings
 
-- First field study of foraging gene expression in a natural ant population
-- Demonstrates foraging gene regulation at two timescales (ontogenetic and circadian)
-- Shows that light exposure affects foraging gene expression differently in brood workers vs foragers
-- Links individual gene expression patterns to colony-level task allocation dynamics
+- Foraging gene expression is associated with both ontogenetic changes and daily behavioral patterns.
+- Significant daily oscillations in foraging expression were observed in foragers, but not in brood workers.
+- Light exposure influenced foraging gene expression, indicating a complex interaction between task behavior and environmental cues.
+- Foraging expression levels were correlated with the expression of the circadian clock gene, cycle.
 
 ## Prerequisites
 

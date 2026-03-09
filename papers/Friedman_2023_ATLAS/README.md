@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern information environments. Evolving since the late 1990s, ATLAS provides structured methods for organizing knowledge through patterns of questions that guide analysis and decision-making across diverse domains.
+> The ATLAS system is a comprehensive knowledge management tool designed to enhance data interoperability and shared understanding in complex information environments. It integrates pattern language approaches with question-oriented procedures to facilitate the management and communication of nuanced data sets.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Develops ATLAS question-oriented pattern language for knowledge management
-- Provides structured methods for organizing knowledge through question patterns
-- Creates comprehensive tool addressing complexity of modern information environments
+- Development of a dynamic knowledge management tool addressing modern information supply chain complexities.
+- Integration of pattern language methodologies with question-oriented procedures for improved data interpretation.
+- Establishment of a foundation for transitioning from prototype to scalable implementation of the ATLAS architecture.
+- Community-driven evolution reflecting the need for enhanced data interoperability and cognitive security.
 
 ## Methods
 
-- Pattern language development
-- Question-oriented knowledge structuring
-- Knowledge management system design
-- Multi-contributor collaborative development
-
+- Creation of digital prototypes and paper-and-pencil implementations of the ATLAS architecture.
+- Utilization of pattern language approaches to structure and communicate knowledge.
+- Application of a low-code platform (Coda.io) for developing an alpha version of the COGSEC ATLAS.
+- Incorporation of community feedback to refine and extend the knowledge resource.
 
 ## 🎯 Consulting & Tutoring
 

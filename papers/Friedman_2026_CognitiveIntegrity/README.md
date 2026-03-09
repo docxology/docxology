@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theoretical foundations, establishing formal definitions of cognitive integrity, threat models, and defense mechanisms using Active Inference and category theory.
+> This paper presents the Cognitive Integrity Framework, which provides formal foundations for enhancing security in multiagent systems by addressing cognitive attack surfaces. It aims to establish a theoretical basis for understanding and mitigating vulnerabilities in cognitive operators and cyberphysical systems.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Develops formal foundations for cognitive integrity in multiagent systems
-- Establishes category-theoretic framework for cognitive security
-- Provides threat models and defense mechanisms for cognitive processes
+- Introduction of the Cognitive Integrity Framework for multiagent security.
+- Identification and analysis of cognitive attack surfaces in multiagent operators.
+- Development of a trust calculus and detection bounds for cognitive systems.
+- Proposing novel defense mechanisms tailored for cognitive security.
 
 ## Methods
 
-- Formal security framework development
-- Category-theoretic formalization
-- Active Inference security modeling
-- Threat model construction
-
+- Formal modeling of cognitive states and integrity properties.
+- Trust computation and algebra to assess security postures.
+- Anomaly detection techniques including cognitive drift scoring and behavioral deviation.
+- Architectural and runtime defense strategies designed for cognitive systems.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general.
+> This paper explores the complexities surrounding the scientific study of consciousness by proposing the Ant Colony Test (ACT) as a reverse test for consciousness theories. By examining social insect colonies, the authors aim to provide a framework for evaluating various theories of consciousness and to clarify the discourse on this elusive topic.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Proposes the Ant Colony Test (ACT) for consciousness research
-- Demonstrates that ant colonies meet many criteria for conscious awareness
-- Introduces a rigorous reverse test methodology for consciousness studies
+- Introduces the Ant Colony Test (ACT) as a novel reverse test for theories of consciousness.
+- Reinterprets frameworks for studying consciousness through the lens of social insect evolutionary biology.
+- Highlights the potential of social insect colonies as a model system for ethical experiments on consciousness.
+- Calls for a reassessment of existing theories of consciousness in light of empirical data from social insects.
 
 ## Methods
 
-- Philosophical analysis and theory construction
-- Comparative behavioral review
-- Consciousness criteria evaluation
-- Reverse testing methodology
-
+- Analyzes the dichotomy between forward tests and reverse tests in scientific methodology.
+- Utilizes a comparative approach to assess consciousness theories against the behavior of social insect colonies.
+- Draws on a long lineage of neurobehavioral, evolutionary, and ecological studies of social insects.
+- Employs philosophical analysis to clarify the implications of consciousness in disaggregated systems.
 
 ## 🎯 Consulting & Tutoring
 

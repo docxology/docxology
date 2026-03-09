@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared, interconnected environments. The platform enables collaborative research that transcends traditional academic boundaries.
+> ResNei is an AI-augmented environment aimed at transforming the discovery, analysis, and connection of ideas through a dynamic knowledge graph. It promotes collaboration among generalists and specialists, fostering an interconnected research ecosystem.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Introduces ResNei platform for lateral collaborative research
-- Supports distributed, asynchronous interdisciplinary knowledge development
+- Introduction of the Research Discovery Engine that creates a responsive knowledge graph.
+- Development of Conceptual Nexus Models (CNMs) for modular representation of ideas.
+- Shift from passive systems to a dynamic, action-intention model for enhanced collaboration.
+- Focus on reciprocity, interdependence, and social accountability in research.
 
 ## Methods
 
-- Collaborative platform design
-- Distributed research methodology
-- Interdisciplinary knowledge network construction
-
+- Utilization of a graphical concept model to facilitate engagement between specialists and generalists.
+- Implementation of a dynamic linking system for an evolving corpus of scientific knowledge.
+- Adoption of scientific protocols to ensure reliable evaluation of scientific output.
+- Integration of UX design principles that prioritize collaboration and contextual insight.
 
 ## 🎯 Consulting & Tutoring
 

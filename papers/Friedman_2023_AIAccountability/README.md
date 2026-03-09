@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC). The submission addresses AI accountability through cognitive security, information risk management, and the P3IF framework, recommending policy approaches that account for the multiscale dynamics of AI systems in society.
+> This paper presents recommendations on the implementation of AI technologies, emphasizing the need for nuanced regulatory frameworks rather than blanket policies. It argues that the National Telecommunications and Information Administration (NTIA) is well-positioned to facilitate adaptive regulatory structures that address the complexities of AI.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Submits expert multi-organizational comments on NTIA AI accountability policy
-- Applies P3IF and cognitive security frameworks to AI governance recommendations
-- Connects Active Inference to AI accountability challenges
+- Advocates for a shift from blanket regulation of AI to more adaptive regulatory frameworks.
+- Highlights the unique interdisciplinary perspectives of collaborating organizations on AI governance.
+- Proposes the establishment of professionalization and insurance structures for AI technologies.
+- Emphasizes the importance of the NTIA's role in facilitating discussions and recommendations on AI regulation.
 
 ## Methods
 
-- Policy comment submission
-- Cognitive security analysis
-- P3IF framework application
-- Multi-organizational collaboration
-
+- Conducted a synthesis of perspectives from various organizations involved in AI and information risk management.
+- Analyzed the implications of blanket regulation versus adaptive regulatory frameworks.
+- Engaged in interdisciplinary discussions to inform recommendations on AI governance.
+- Utilized case studies and examples to illustrate the complexities of AI regulation.
 
 ## 🎯 Consulting & Tutoring
 

@@ -1,6 +1,6 @@
 ---
 name: "AgentAndNiche"
-description: "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full..."
+description: "Expertise in integrating philosophical concepts with ecological psychology, focusing on the dynamics of agent-environment interactions and the role of oppositional forces in progression."
 tags: ["art", "william-blake", "marriage-of-heaven-and-hell", "ecological-psychology", "active-inference", "synergetics"]
 ---
 
@@ -33,18 +33,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Parallel text dialogue (Blake original + theoretical commentary)
-- Mythopoetic-to-formal mapping
-- Synergetics geometry application
-- Active Inference conceptual bridging
-- Ecological psychology framework
+- Utilizes philosophical analysis of William Blake's texts to derive ecological insights.
+- Applies concepts from thermodynamics and information theory to ecological psychology.
+- Employs a comparative analysis of biological and cultural evolution to illustrate adaptive behaviors.
+- Explores mathematical models of consciousness and measurement in relation to ecological systems.
 
 ## Key Findings
 
-- Creates a parallel-text dialogue between Blake's Marriage and Active Inference theory
-- Maps Blake's 'contraries' to generative principles in predictive processing
-- Connects tetrahedral tensions (Synergetics) with fourfold cognitive crucibles
-- Demonstrates visionary epistemology as anticipating modern computational frameworks
+- Identifies that oppositional forces are essential for progression and stability in ecological systems.
+- Demonstrates that consciousness is fundamentally entangled with the act of measurement.
+- Establishes that cities can be viewed as dynamic mappings of cultural evolution and ecological interactions.
+- Finds that bacterial motility strategies reflect broader principles applicable to cultural evolution.
 
 ## Prerequisites
 

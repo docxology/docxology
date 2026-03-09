@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual researchers, laboratories, institutions, and the global scientific community each minimize free energy at their respective scales. This framework accounts for hypothesis generation, experimental design, peer review, and knowledge accumulation as nested inference processes. We discuss how this multi-scale view illuminates challenges in scientific practice including replication crises, publication bias, and the organization of distributed scientific communities.
+> This paper presents a multi-scale description of the scientific process as a distributed system of evidence-seeking activities, applying the free energy principle to understand science as Bayesian belief updating. It argues that scientific practice is shaped by both human and non-human agents, emphasizing the need for an integrated view that combines modern and non-modern perspectives on knowledge production.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Formalizes the scientific process as multi-scale Active Inference
-- Models researchers, labs, institutions as nested free-energy-minimizing systems
-- Applies FEP to meta-scientific challenges (replication crisis, publication bias)
-- Shows how distributed cognition emerges in scientific communities
+- Introduces a multi-scale framework for understanding the scientific process as distributed active inference.
+- Integrates modern and non-modern conceptions of science to provide a comprehensive account of knowledge production.
+- Proposes a simulation approach for scientific practice that can inform the development of augmented intelligence systems.
+- Addresses foundational questions regarding the nature of science and its societal implications.
 
 ## Methods
 
-- Multi-scale Active Inference formalization
-- Scientific process modeling
-- Free energy minimization at nested scales
-- Meta-scientific analysis
-
+- Applies the free energy principle to model the scientific process as evidence-seeking.
+- Utilizes Bayesian belief updating to describe the dynamics of scientific cognition.
+- Explores the interaction between individual cognitive functions and collective scientific practices.
+- Employs a meta-theoretical approach to reconcile different epistemological views on science.
 
 ## 🎯 Consulting & Tutoring
 

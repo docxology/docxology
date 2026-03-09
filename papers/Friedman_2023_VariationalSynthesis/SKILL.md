@@ -1,6 +1,6 @@
 ---
 name: "VariationalSynthesis"
-description: "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc..."
+description: "Expertise in applying variational methods and Bayesian inference to model evolutionary and developmental dynamics in biological systems."
 tags: ["active inference", "variational-synthesis", "natural-selection", "free-energy-principle", "bayesian-mechanics", "path-integral"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Variational inference formalism
-- Path integral formulation
-- Bayesian mechanics
-- Particular partition analysis
-- Free Energy Principle application
+- Utilizes Bayesian mechanics to understand the relationship between phylogenetic and phenotypic processes.
+- Applies the free energy principle to model evolutionary and developmental dynamics.
+- Employs path integral formulation of stochastic dynamics and the renormalisation group.
+- Describes natural selection and action selection as emergent properties of random dynamical processes.
 
 ## Key Findings
 
-- Formulates adaptive fitness as path integral of phenotypic fitness
-- Unifies evolutionary and developmental dynamics via Free Energy Principle
-- Introduces variational formulation of natural selection
+- Natural selection can be interpreted as Bayesian model selection.
+- Phenotypic processes can enhance the fit of organisms to their environment over time.
+- The coupling between phylogenetic and phenotypic processes is essential for understanding evolutionary dynamics.
+- The synthesis provides a unified account of evolution and development across different temporal scales.
 
 ## Prerequisites
 

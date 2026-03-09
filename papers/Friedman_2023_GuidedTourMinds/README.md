@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology—based on particle dynamics and generative model structure—provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides first-principles theoretical grounding. The comment highlights how this approach avoids anthropocentric bias and accommodates diverse forms of sentience.
+> This commentary reflects on the paper 'Path integrals, particular kinds, and strange things' by Friston et al., emphasizing the need for a rigorous taxonomy of minds in light of recent advancements in AI. It discusses how the proposed typology of particular kinds can contribute to mapping the space of possible minds using frameworks like Active Inference and the Free Energy Principle.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Connects typology of particular kinds to Sloman's mindspace mapping project
-- Highlights non-anthropocentric value of Active Inference sentience taxonomy
-- Identifies FEP as principled framework for cartography of possible minds
+- Introduces the concept of 'compositional cognitive cartography' to map possible minds.
+- Proposes a non-anthropocentric approach to understanding different kinds of sentience.
+- Highlights the relevance of the Free Energy Principle in modeling minds and their interactions.
+- Suggests future research directions for integrating various taxonomies of minds.
 
 ## Methods
 
-- Commentary and theoretical analysis
-- Mindspace cartography framework
-- Non-anthropocentric sentience evaluation
-
+- Utilizes Active Inference as a framework for measuring and modeling minds.
+- Applies the Free Energy Principle for theoretical grounding in cognitive modeling.
+- Explores the dynamics of particles to understand agency and sentience.
+- Synthesizes Bayesian Statistics and Machine Learning with Category Theory.
 
 ## 🎯 Consulting & Tutoring
 

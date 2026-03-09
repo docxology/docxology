@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are treated as case-bearing entities (Nominative, Accusative, Dative, etc.) that assume functional roles within a formal linguistic-type calculus, enabling structured model management and inter-model communication.
+> This paper introduces the Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM), a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe and deploy generative models. CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, addressing the complexity in computational and cognitive modeling systems.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Introduces CEREBRUM framework mapping case systems to model management
-- Applies linguistic case roles as functional typing for AI and scientific models
-- Provides a unified framework bridging formal linguistics with Bayesian inference
+- Integration of linguistic case systems with cognitive modeling principles.
+- Establishment of a formal linguistic-type calculus for cognitive models.
+- Structured representation of model ecosystems aligned with scientific principles.
+- Addressing complexity in generative and decentralized intelligence systems.
 
 ## Methods
 
-- Linguistic case system formalization
-- Bayesian Active Inference
-- Category theory application
-- Model lifecycle management
-- Case-based computational framework
-
+- Application of category theory to cognitive modeling.
+- Utilization of the Free Energy Principle in model descriptions.
+- Development of a formal framework for cognitive models as case-bearing entities.
+- Implementation of hierarchical message passing for dynamic adaptive processes.
 
 ## 🎯 Consulting & Tutoring
 

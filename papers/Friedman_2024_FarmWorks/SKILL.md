@@ -1,6 +1,6 @@
 ---
 name: "FarmWorks"
-description: "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems..."
+description: "Expertise in developing decentralized AI systems for agriculture, focusing on personalized decision support and ethical AI deployment."
 tags: ["cognitive security", "farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks"]
 ---
 
@@ -33,20 +33,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- IoT sensor network deployment (soil moisture, temperature, pH, humidity)
-- Edge computing for local AI model training
-- Active Inference models for agricultural decision support
-- LoRa and 4G/5G communication protocols
-- Decentralized federated learning
-- Open-source platform development (Vin-Q, ROMI)
+- Integration of customizable sensor networks for real-time data collection.
+- Use of Active Inference models for personalized recommendations.
+- Decentralized data processing to enhance privacy and security.
+- Virtual assistant for natural language interaction with farmers.
 
 ## Key Findings
 
-- Proposes decentralized AI agriculture platform resisting power concentration
-- Integrates Active Inference with real-time sensor data for personalized farm recommendations
-- Designs 6 Work Packages from sensor deployment to pilot testing
-- Develops community-driven knowledge sharing network for farmers
-- Establishes ethical framework for transparent AI deployment in agriculture
+- FarmWorks enhances agricultural productivity while promoting environmental stewardship.
+- The platform allows farmers to retain control and autonomy over their practices.
+- Decentralized architecture improves data privacy and model accuracy.
+- Active Inference models create a continuous feedback loop for personalized decision-making.
 
 ## Prerequisites
 

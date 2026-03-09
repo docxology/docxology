@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese "crypto-Jews." The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as "reliable Jewish ancestry predictors" due to haplotype polyphyly and molecular clock ambiguity — many ostensibly "Jewish" haplotypes are pan-Middle Eastern markers common in both Jewish and Arabic lineages; (2) the original study suggests "complex mating strategies" to explain observed diversity patterns but fails to test this hypothesis against formal demographic models or admixture scenarios. The commentary argues that quantitative estimates of admixture, paired with historical data, could more rigorously infer the unique population histories of the Bragança and Belmonte Jewish communities.
+> This commentary critiques the analysis by Nogueiro et al. (2015) regarding the genetic heritage of Portuguese crypto-Jews, highlighting methodological weaknesses and the ambiguity of genetic markers used to infer Jewish ancestry. It emphasizes the need for more robust statistical methodologies and a careful examination of historical and demographic contexts.
 
 ## Keywords
 
@@ -21,11 +21,10 @@
 
 ## Key Contributions
 
-- Demonstrates that pan-Middle Eastern Y-chromosome and mtDNA haplotypes are insufficient as diagnostic markers of Jewish ancestry
-- Identifies critical methodological weaknesses in applying uniparental markers to infer religious or ethnic heritage
-- Advocates for formal demographic modeling and quantitative admixture estimates over narrative-driven interpretations
-- Highlights the distinction between genetic population structure and socio-religious community identity
-
+- Critiques the methodological issues in Nogueiro et al.'s analysis of Jewish ancestry.
+- Highlights the ambiguity of genetic markers used to infer Jewish heritage.
+- Calls for a more nuanced understanding of the demographic history of crypto-Jews.
+- Suggests the need for empirical evaluation of admixture patterns in historical populations.
 
 ## 🎯 Consulting & Tutoring
 

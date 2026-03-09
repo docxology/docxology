@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.
+> This paper proposes a comprehensive framework for Remote Teams that integrates Active Inference and Systems Engineering to enhance communication and decision-making processes. By defining the roles of Ontologies, Narratives, Formal documents, and Tools (ONFT), the authors aim to improve team efficiency and the phenomenology of the working day.
 
 ## Keywords
 
@@ -19,17 +19,17 @@
 
 ## Key Contributions
 
-- Develops ONFT framework for Remote Team lifecycle management
-- Connects Active Inference with narrative, ontological, and systems engineering concepts
-- Applies epistemic foraging and niche construction to team development
+- Introduces a framework combining Active Inference with Systems Engineering for Remote Teams.
+- Explores the role of communication in enhancing team function and organization.
+- Synthesizes previous work on Active Inference with narratives and ontologies.
+- Addresses the need for effective communication systems in complex multi-agent environments.
 
 ## Methods
 
-- Active Inference framework application
-- Systems Engineering methodology
-- ONFT framework development
-- Epistemic foraging analysis
-
+- Utilizes the Active Inference framework to analyze communication in Remote Teams.
+- Applies Systems Engineering principles to formalize Remote Team processes.
+- Investigates the dynamics of narratives and their impact on team coherence.
+- Examines the use of digital tools for enhancing team collaboration and decision-making.
 
 ## 🎯 Consulting & Tutoring
 

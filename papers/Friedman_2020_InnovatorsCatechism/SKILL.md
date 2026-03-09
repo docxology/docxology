@@ -1,6 +1,6 @@
 ---
 name: "InnovatorsCatechism"
-description: "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to..."
+description: "Expertise in developing structured frameworks for innovation management, enhancing team alignment and communication in dynamic environments."
 tags: ["cognitive security", "operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Operations order framework design
-- Military-civilian methodology transfer
-- Business operations analysis
-- Team formation protocol development
+- Combination of the Facilitator’s Catechism with Blank’s innovation pipeline framework.
+- Analysis of military operations orders and their impact on organizational performance.
+- Utilization of insights from industrial and organizational psychology, sensemaking, and narrative construction.
+- Creation of a series of structured questions for innovators at each stage of the innovation process.
 
 ## Key Findings
 
-- Presents The Innovator's Catechism for early-stage teams
-- Reviews military and business operations orders comprehensively
-- Provides actionable protocol for rapid team alignment in innovation contexts
+- High reliability organizations benefit from structured operational approaches, which can be applied to innovation management.
+- The Innovator’s Catechism provides a flexible framework that addresses the unique challenges faced by early-stage teams.
+- Systematic failures in innovation can be mitigated through improved alignment and communication strategies.
+- The paper highlights the need for adaptive tools in the evolving landscape of innovation and entrepreneurship.
 
 ## Prerequisites
 

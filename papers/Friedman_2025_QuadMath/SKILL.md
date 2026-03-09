@@ -1,6 +1,6 @@
 ---
 name: "QuadMath"
-description: "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace fr..."
+description: "Proficient in advanced mathematical modeling and optimization techniques using 4D and Quadray coordinates, with practical experience in implementing computational frameworks."
 tags: ["art", "quadmath", "quadray-coordinates", "4d-geometry", "synergetics", "buckminster-fuller"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Quadray coordinate computation
-- IVM lattice analysis
-- Rational arithmetic implementation
-- Synergetics geometry formalization
-- Computational geometry tooling
+- Mathematical formulation of 4D coordinates and their properties.
+- Implementation of optimization algorithms, including Nelder-Mead on integer lattices.
+- Use of Fisher information metrics for analyzing geometrical properties.
+- Development of Python-based computational tools for practical applications.
 
 ## Key Findings
 
-- Provides comprehensive analytical review of Quadray coordinate systems
-- Implements Synergetics geometry in computational framework with exact arithmetic
-- Releases open-source companion code for reproducible QuadMath computations
+- Demonstrated the effectiveness of Quadray coordinates in various optimization scenarios.
+- Established connections between different 4D frameworks, enhancing their interoperability.
+- Provided empirical validation of the proposed methods through computational experiments.
+- Identified potential applications in machine learning, computer graphics, and geospatial intelligence.
 
 ## Prerequisites
 

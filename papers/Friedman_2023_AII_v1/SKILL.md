@@ -1,6 +1,6 @@
 ---
 name: "AII_v1"
-description: "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education..."
+description: "Proficient in developing sociotechnical systems for collaborative information management and evaluation, with a focus on enhancing trust and situational awareness in the knowledge economy."
 tags: ["active inference", "active-inference-institute", "open-science", "research-organization", "free-energy-principle", "community-building"]
 ---
 
@@ -26,13 +26,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Organizational documentation
-- Open science methodology
+- Creation of 'Workspaces' for users to collaborate and share information.
+- Utilization of annotation affordances for marking up and enriching content.
+- Application of trust scores to assess the quality and intent of authors and claims.
+- Design of interconnected informational structures such as Claims, Questions, and Claim Instances.
 
 ## Key Findings
 
-- Documents the Active Inference Institute mission and structure
-- Describes open-science organizational model for Active Inference research
+- TrustFinder enhances the navigability and searchability of the information environment.
+- Users can effectively evaluate and vet claims through structured interactions.
+- The system reduces redundant work in information evaluation and mapping.
+- TrustFinder supports the collaborative enrichment of the rhetorical landscape.
 
 ## Prerequisites
 

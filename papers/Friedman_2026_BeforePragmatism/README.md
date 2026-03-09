@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Blake's visionary epistemology prefigures key concepts in American pragmatism (Peirce, Dewey, James) before the formal emergence of the pragmatist tradition.
+> This paper explores the intersections between prophetic vision and empirical inquiry through the lens of William Blake's 'America a Prophecy.' It aims to establish a framework for understanding how Blake's work anticipates contemporary epistemological theories, particularly in relation to active inference.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Identifies six structural convergences between Blake and pragmatism
-- Argues Blake's vision anticipates American pragmatist epistemology
+- Establishes six structural convergences between Blake's prophetic vision and modern epistemological frameworks.
+- Introduces the concept of 'active inference' as a bridge between prophetic vocabulary and formal process theory.
+- Critiques Lockean empiricism through Blake's anti-empiricist stance, emphasizing innate ideas and active perception.
+- Explores the implications of Blake's work for contemporary discussions in pragmatism and epistemology.
 
 ## Methods
 
-- Comparative literary-philosophical analysis
-- Structural convergence identification
-- Historical intellectual mapping
-
+- Utilizes a comparative analysis of Blake's texts and modern epistemological theories.
+- Applies complexity theory and dynamical systems to interpret Blake's fourfold vision.
+- Employs a historical analysis of the philosophical context surrounding Blake's work.
+- Integrates insights from active inference and pragmatism to develop a cohesive interpretive framework.
 
 ## 🎯 Consulting & Tutoring
 

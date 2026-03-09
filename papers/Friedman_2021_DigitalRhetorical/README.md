@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational analysis of digital discourse.
+> This paper advocates for the integration of rhetorical and ecological frameworks to analyze digital image memes, aiming to enhance understanding of how these memes shape online narratives. It highlights the need for a rhetorical approach to better categorize and model multimedia discourse, particularly in the context of the current digital information crisis.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Introduces the DRE3 (Digital Rhetorical Ecosystem three-tiered) model
-- Maps how image memes impact public narratives through parsimony and polysemy
-- Bridges rhetorical studies and ecological systems analysis for digital discourse
+- Introduces a combined rhetorical and ecological framework for analyzing digital image memes.
+- Develops the Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain the impact of memes on public narratives.
+- Emphasizes the narrative power of image memes through parsimony and polysemy.
+- Proposes a new approach to address the epistemic crisis by focusing on rhetorical conditions rather than just misinformation.
 
 ## Methods
 
-- Digital rhetorical analysis
-- Ecosystem modeling (DRE3)
-- Image meme content analysis
-- Comparative rhetorical-ecological framework
-
+- Utilizes a rhetorical approach to analyze message features and audience engagement.
+- Applies an ecosystem approach to trace narratives across digital platforms and media types.
+- Introduces the DRE3 model for systematic analysis of digital discourse.
+- Explores implications for the design of computational analysis systems for digital rhetoric.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patterns. The framework provides a structured approach to integrating diverse biological data across scales in social insect research.
+> The Ant Stack is a modular framework designed to emulate an ant's physical and cognitive functions, comprising three layers: AntBody, AntBrain, and AntMind. It aims to facilitate research in myrmecology and synthetic intelligence through its interoperable design and explicit input/output contracts.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Develops AntStack multilevel framework for ant colony modeling
-- Provides structured approach to cross-scale data integration in myrmecology
+- An explicit, executable Input/Output contract between Body, Brain, and Mind layers.
+- A compact neural control pipeline with local plasticity.
+- A minimal active-inference ant nestmate agent that composes via stigmergy.
+- A standardized evaluation suite with species presets for direct replication.
 
 ## Methods
 
-- Multilevel framework design
-- Cross-scale biological integration
-- Colony modeling methodology
-
+- Coupling physics-based locomotion with olfactory-visual sensing.
+- Implementing a lightweight neural pipeline for active-inference policy selection.
+- Using pheromone-mediated stigmergy for agent composition.
+- Specifying evaluation suites for navigation, task allocation, and robustness.
 
 ## 🎯 Consulting & Tutoring
 

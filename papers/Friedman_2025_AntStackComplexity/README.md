@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and non-equilibrium thermodynamics to the multilevel analysis of social insect colonies.
+> This paper investigates the computational complexity and energetics of the Ant Stack, a framework inspired by biological systems. It aims to provide insights into energy-aware robotics and computational co-design by analyzing the interplay between computational demands and energy efficiency.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Extends AntStack with complexity science frameworks
-- Connects information theory and thermodynamics to ant colony analysis
+- Introduction of the Ant Stack as a novel framework for energy-aware robotics.
+- Development of a comprehensive energy analysis methodology tailored for robotic systems.
+- Identification of key design principles derived from biological systems to enhance computational efficiency.
+- Empirical validation of theoretical models through real-world benchmarking against actual ant energetics.
 
 ## Methods
 
-- Complexity science analysis
-- Information-theoretic metrics
-- Complex adaptive systems modeling
-
+- Utilization of a multi-scale analysis framework for computational workload modeling.
+- Implementation of an energy decomposition framework to estimate energy consumption.
+- Application of real-time complexity analysis to evaluate computational constraints.
+- Integration of uncertainty quantification techniques to enhance model reliability.
 
 ## 🎯 Consulting & Tutoring
 

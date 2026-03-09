@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.
+> Curio Cards is the first art NFT project on Ethereum, launched in 2017, which established a new model for the creation and ownership of digital artwork. The project features contributions from seven diverse artists and introduces novel computational features that advance both art and its social aspects.
 
 ## Keywords
 
@@ -19,15 +19,17 @@
 
 ## Key Contributions
 
-- Introduces Curio Cards for curiosity-driven research ideation
-- Designs card-based prompting system for interdisciplinary exploration
+- Pioneered the creation of collectible digital art on the Ethereum blockchain.
+- Introduced unique features in the ERC-721 Non-Fungible Token Standard.
+- Provided a platform for artists to receive value and engage with collectors.
+- Showcased a variety of artistic styles and media, including the first physical artworks and animated GIFs on Ethereum.
 
 ## Methods
 
-- Card-based ideation design
-- Creative prompting framework
-- Interdisciplinary exploration tools
-
+- Utilized Ethereum blockchain technology for the creation and ownership of NFTs.
+- Incorporated various artistic media such as digital art, printmaking, and animation.
+- Engaged multiple artists with distinct styles to create a diverse collection.
+- Developed a permanent online gallery to showcase the artwork.
 
 ## 🎯 Consulting & Tutoring
 

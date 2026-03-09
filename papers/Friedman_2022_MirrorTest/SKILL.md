@@ -1,6 +1,6 @@
 ---
 name: "MirrorTest"
-description: "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-r..."
+description: "Expertise in applying predictive processing theories to cognitive science, particularly in understanding self-recognition and behavior through innovative frameworks."
 tags: ["art", "mirror-test", "predictive-processing", "self-recognition", "reflection-prediction", "active-inference"]
 ---
 
@@ -29,15 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Predictive processing framework analysis
-- Behavioral test reinterpretation
-- Theoretical model development
+- Utilizes a predictive processing model to analyze mirror self-recognition.
+- Examines historical and ecological evidence related to the mirror test.
+- Applies concepts of sensory attenuation and active inference to explain behaviors observed in the mirror test.
+- Critiques the traditional reliance on self-directed behavior as a measure of self-recognition.
 
 ## Key Findings
 
-- Applies predictive processing to reinterpret the mirror test
-- Proposes the reflection prediction hypothesis for self-recognition
-- Connects mirror self-recognition to broader predictive coding theory
+- Mirror self-recognition can be understood as a product of sensory attenuation when individuals successfully predict their reflection.
+- Self-directed behavior during the mirror test is conceptualized as active inference to correct reflection prediction errors.
+- Species that do not exhibit self-directed behavior may still possess mirror self-recognition capabilities.
+- Reflection prediction errors may lead to atypical agency over reflections, affecting self-awareness and imitation.
 
 ## Prerequisites
 

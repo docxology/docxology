@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency, and collective sensemaking through open standards, decentralized governance, and cognitive security principles.
+> This paper discusses the structuring of information commons through the lens of open standards and cognitive security, aiming to enhance the management and dissemination of information in various contexts. It emphasizes the importance of interdisciplinary collaboration and innovative approaches to address challenges in information risk and security.
 
 ## Keywords
 
@@ -19,17 +19,17 @@
 
 ## Key Contributions
 
-- Provides comprehensive edited volume on structuring the information commons
-- Integrates cognitive security with open standards and information governance
-- Addresses trust and transparency in information ecosystems
+- Introduces a framework for managing information commons using open standards.
+- Explores the intersection of cognitive security and information management.
+- Presents novel methodologies for analyzing digital rhetorical ecosystems.
+- Highlights the role of modular systems in enhancing organizational efficiency.
 
 ## Methods
 
-- Edited volume compilation
-- Cognitive security framework development
-- Open standards analysis
-- Information governance design
-
+- Utilizes narrative information management techniques.
+- Employs swarm intelligence concepts in information verification.
+- Applies active inference models to understand conflict dynamics.
+- Develops a decentralized science ontology for collaborative research.
 
 ## 🎯 Consulting & Tutoring
 

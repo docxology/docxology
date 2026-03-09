@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts—a primitive for public goods funding—can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.
+> This paper discusses the development of frameworks and tools for applied Active Inference in the context of Decentralized Science (DeSci) and Hypercert ecosystems. It aims to enhance the flexibility and utility of Hypercerts through the creation of an Active Entity Ontology for Science (AEOS) and the implementation of Active Blockference.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Applies Active Inference to Hypercert ecosystem modeling
-- Develops cognitive audit methodology for DeSci systems
-- Integrates AEOS ontology with decentralized funding mechanisms
+- Introduction of an Active Entity Ontology for Science (AEOS) to describe interactions within Hypercert ecosystems.
+- Development of Active Blockference for simulating cognitive processes in Hypercert ecosystems.
+- Creation of educational resources and tools for cognitive audits of Hypercert protocols.
+- Rigorous analysis of Hypercert funding mechanisms to enhance their efficacy in DeSci.
 
 ## Methods
 
-- Systems modeling
-- Cognitive auditing
-- Active Blockference framework
-- Decentralized science analysis
-
+- Utilization of Active Inference frameworks for modeling interactions in Hypercert ecosystems.
+- Implementation of multi-agent simulations to explore cognitive and behavioral dynamics.
+- Engagement in informative interviews with stakeholders to understand the Hypercert landscape.
+- Development of entity diagrams and simulations tailored to researcher needs.
 
 ## 🎯 Consulting & Tutoring
 

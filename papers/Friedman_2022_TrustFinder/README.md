@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.
+> TrustFinder is a sociotechnical system designed to enhance situational awareness in the information environment by enabling users to collaboratively manage the information supply chain. It aims to help users find trusted sources and evaluate claims through structured tools and community engagement.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Presents TrustFinder design for collaborative information trust assessment
-- Synthesizes expert recommendations for verified information exchange
-- Develops community-based approach to evaluating claim trustworthiness
+- Development of a collaborative platform for managing information sources and claims.
+- Implementation of trust scores to evaluate the quality of authors and content.
+- Introduction of web and document annotation tools to enrich content and facilitate sensemaking.
+- Establishment of a framework for mapping the information supply chain.
 
 ## Methods
 
-- Expert consultation and feedback synthesis
-- Sociotechnical system design
-- Trust evaluation framework development
-- Information assessment protocol design
-
+- Utilization of user-created Workspaces for collaborative projects.
+- Incorporation of various informational structures such as Claims, Claim Instances, and Questions.
+- Application of argument representation frameworks to connect Claims and enhance navigation.
+- Use of crowdsourcing design principles to leverage global research community contributions.
 
 ## 🎯 Consulting & Tutoring
 

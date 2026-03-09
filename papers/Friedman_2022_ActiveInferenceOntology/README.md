@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference Institute.
+> This document surveys the current state of Active Inference and its future directions, emphasizing the Institute's goal to evolve by actively gathering insights from its members. It highlights the framework's applicability across various disciplines through the lens of information theory and thermodynamics.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Develops a formal ontology for Active Inference concepts and relations
-- Provides structured navigation of the FEP/Active Inference literature
-- Establishes collaborative open-science ontology methodology
+- Provides a comprehensive overview of Active Inference and its applications across multiple disciplines.
+- Establishes the Active Inference Institute as a community-driven organization promoting understanding and practical applications of the framework.
+- Highlights the versatility of Active Inference in addressing real-world problems in diverse fields such as AI, economics, and governance.
+- Encourages collaborative learning and community engagement to expand the reach and impact of Active Inference.
 
 ## Methods
 
-- Ontology development and formalization
-- Knowledge graph construction
-- Semantic mapping
-- Collaborative open-science methodology
-
+- Utilizes a living document format to continuously update and incorporate contributions from community members.
+- Applies principles of information theory and thermodynamics to analyze the interaction of living systems with their environment.
+- Engages members through various learning opportunities, including courses and collaborative research initiatives.
+- Facilitates community discourse to gather insights and perspectives from a diverse range of contributors.
 
 ## 🎯 Consulting & Tutoring
 

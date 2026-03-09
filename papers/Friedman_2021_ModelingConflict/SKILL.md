@@ -1,6 +1,6 @@
 ---
 name: "ModelingConflict"
-description: "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management..."
+description: "Expertise in applying Active Inference frameworks to analyze and model complex conflicts, enhancing understanding of communication and relationship dynamics in various contexts."
 tags: ["active inference", "active-inference", "conflict-modeling", "aic-model", "ooda-loops", "cognitive-security"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Active Inference framework application to conflict
-- OODA loop integration
-- Generations of warfare analysis
-- BOLTS component analysis
-- Systems modeling
+- Utilization of Active Inference as a framework for understanding cognition and behavior in conflict.
+- Survey of past qualitative and quantitative models of conflict to identify gaps and needs.
+- Analysis of the relationship between the AIC model and existing frameworks like OODA and the Rumsfeld Matrix.
+- Exploration of multiscale processes in conflict management and relationship dynamics.
 
 ## Key Findings
 
-- Creates the Active Inference Conflict (AIC) model for modern conflict analysis
-- Extends OODA loops and generations of warfare models using Active Inference
-- Provides framework for analyzing cyber, psychological, and information warfare
+- The AIC model provides a comprehensive framework for understanding modern conflicts involving BOLTS components.
+- It reveals the importance of managing 'unknown-knowns' in conflict scenarios for risk mitigation.
+- The model demonstrates potential for converting conflict-related information differentials into constructive systems.
+- Insights from the AIC model can inform future research directions and applications in conflict management.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "QuantumDreams"
-description: "Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse..."
+description: "Expertise in analyzing situational awareness and performance dynamics in multi-agential environments, with a focus on visual and phenomenological factors."
 tags: ["art", "quantum-mechanics", "phenomenology", "active-inference", "visual-analysis"]
 ---
 
@@ -28,14 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Visual-phenomenological analysis
-- Quantum-artistic comparative mapping
-- Structured symbolic analysis
+- Utilizes a qualitative analysis of visual experiences during training sessions.
+- Employs metaphorical frameworks to interpret situational dynamics.
+- Incorporates cognitive theories related to visual perception and awareness.
+- Examines the interaction between individual actions and collective training scenarios.
 
 ## Key Findings
 
-- Maps between quantum mechanical concepts and artistic-experiential domains
-- Develops four-fold framework bridging physics, art, and phenomenology
+- Identifies key visual-phenomenological moments that enhance situational awareness.
+- Demonstrates the importance of preparation in reducing variability in performance.
+- Highlights the multi-agential nature of training environments and its impact on outcomes.
+- Suggests that visual frameworks can significantly affect cognitive processes during training.
 
 ## Prerequisites
 

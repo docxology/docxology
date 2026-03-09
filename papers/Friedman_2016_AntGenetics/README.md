@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning to reveal the molecular mechanisms underlying colony-level phenomena such as division of labor, collective decision-making, and social immunity. Here we review ant genomics and genetics through the lens of colony-level behavioral ecology, covering topics including caste determination, worker behavioral variation, pheromone communication, and the foraging gene. We highlight how integrating multiple levels of biological organization—from genes to colonies—generates insight into both the proximate mechanisms and evolutionary processes shaping ant societies.
+> This paper reviews the genetics of morphological and physiological diversity in ants, with a focus on the limited studies investigating the genetics of ant behavior. It highlights the significant gene turnover in ant genomes, particularly in genes related to olfactory communication, and emphasizes the need for further research into the genetic basis of ant behavior.
 
 ## Keywords
 
@@ -21,19 +21,17 @@
 
 ## Key Contributions
 
-- Provides comprehensive review of ant behavioral genetics for Annual Review of Neuroscience
-- Synthesizes colony-level behavioral ecology with molecular and genetic mechanisms
-- Highlights the foraging gene as a case study in behavioral genetics across social insect species
-- Identifies key unresolved questions at the genetics–behavior interface in ants
+- Provides a comprehensive review of the current state of ant genetics research, particularly behavioral genetics.
+- Identifies gaps in the literature regarding the genetic basis of ant behavior.
+- Highlights the importance of gene turnover in the evolution of ant communication and behavior.
+- Suggests future directions for research in ant behavioral genetics.
 
 ## Methods
 
-- Genomic and transcriptomic analysis
-- Behavioral genetics approaches
-- Comparative phylogenetics
-- Gene expression profiling
-- Literature synthesis and review
-
+- Utilizes quantitative genetic approaches to assess heritability of task performance.
+- Employs transcriptomic studies to analyze gene expression patterns.
+- Conducts phylogenetic analyses of DNA sequence homology.
+- Investigates epigenetic mechanisms affecting gene regulation.
 
 ## 🎯 Consulting & Tutoring
 

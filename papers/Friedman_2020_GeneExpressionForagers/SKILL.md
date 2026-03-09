@@ -1,6 +1,6 @@
 ---
 name: "GeneExpressionForagers"
-description: "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar..."
+description: "Expertise in analyzing gene expression data and its relationship to behavioral traits in social insects, utilizing advanced statistical and bioinformatics methods."
 tags: ["entomology", "gene-expression", "foragers", "rna-seq", "division-of-labor", "transcriptomics"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- RNA-Seq transcriptomics
-- Differential gene expression analysis
-- Gene ontology enrichment analysis
-- Behavioral categorization of workers
-- Bioinformatics pipelines
+- Utilized RNA-seq to profile gene expression in the brains of foragers from nine colonies.
+- Applied supervised and unsupervised statistical approaches to analyze transcriptomic patterns.
+- Conducted dimensional reduction techniques such as PCA and linear discriminant analysis to differentiate colonies.
+- Performed gene ontology enrichment analyses to identify functional categories associated with expression patterns.
 
 ## Key Findings
 
-- Characterizes transcriptomic profiles distinguishing foragers from nest workers
-- Identifies gene expression pathways underlying foraging behavior
-- Provides RNA-Seq data for behavioral caste comparison in harvester ants
+- Forager brain gene expression profiles varied significantly among colonies, reflecting functional differences in neurophysiology.
+- Expression patterns were more similar among nestmates than between non-nestmates, indicating colony-specific factors.
+- Gene expression variation correlated with colony traits, particularly sensitivity of foraging activity to humidity and dopamine-to-serotonin ratios.
+- Coexpression analysis revealed modules of genes with coordinated expression patterns that were functionally enriched and associated with colony behavior.
 
 ## Prerequisites
 

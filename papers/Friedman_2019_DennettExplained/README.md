@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philosophers have the ability to criticize and contribute to the science of the mind, and speaks to the virtues of cross-disciplinary glances and hybrid vigor. He discusses potential scientific and therapeutic value of psychoactive substances within proper settings.
+> This paper features an interview with Daniel Dennett, exploring his interdisciplinary approach to philosophy, cognitive science, and consciousness. Dennett emphasizes the importance of integrating philosophical insights with scientific inquiry and discusses the potential therapeutic value of psychoactive substances.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Provides Dennett's views on consciousness and predictive processing
-- Discusses the role of philosophy in cognitive science
-- Explores connections between psychedelics and consciousness research
+- Highlights Dennett's unique approach to philosophy that bridges gaps between various disciplines.
+- Discusses the significance of psychoactive substances in scientific and therapeutic contexts.
+- Explores Dennett's influence on the understanding of consciousness and cognitive science.
+- Advocates for the role of philosophers in enhancing scientific methodologies.
 
 ## Methods
 
-- Scholarly interview methodology
-- Philosophical discussion and analysis
-
+- Conducted an interview format to elicit Dennett's thoughts and experiences.
+- Utilized cross-disciplinary perspectives to analyze philosophical and scientific concepts.
+- Engaged in speculative discussions about empirical questions related to consciousness.
+- Incorporated historical context and philosophical lineage to frame Dennett's ideas.
 
 ## 🎯 Consulting & Tutoring
 

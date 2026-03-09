@@ -1,6 +1,6 @@
 ---
 name: "ArgentineAnt"
-description: "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the..."
+description: "Expertise in studying the behavioral ecology of invasive species, focusing on foraging dynamics and environmental interactions."
 tags: ["entomology", "argentine-ant", "linepithema-humile", "invasive-species", "supercolony", "nestmate-recognition"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Behavioral observation in field and laboratory
-- Chemical ecology analysis (cuticular hydrocarbons)
-- Population genetics
-- Invasion biology methods
+- Recorded foraging rates and walking speeds of three L. humile colonies over three 24-hour periods.
+- Measured environmental conditions including temperature, humidity, and light levels.
+- Analyzed the correlation between foraging activity and the presence of the native ant species Prenolepis imparis.
+- Utilized mixed effect models to assess the relationships between environmental factors and ant behavior.
 
 ## Key Findings
 
-- Reviews the behavioral ecology of Argentine ant supercolonies
-- Examines the chemical basis of nestmate recognition in invasive ant populations
-- Discusses how reduced intraspecific aggression enables supercolony formation
+- Colony foraging peaked between 10 and 15˚C, regardless of maximum daily temperature.
+- Worker walking speed increased with temperature and decreased with humidity.
+- Foraging activity was consistent throughout the day and night, with a predictable daily cycle.
+- Heavy rain caused ants to aggregate in sheltered areas, halting foraging activity.
 
 ## Prerequisites
 

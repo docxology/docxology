@@ -1,6 +1,6 @@
 ---
 name: "NarrativeInformationMgmt"
-description: "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management..."
+description: "Expertise in Narrative Information Management, focusing on synthesizing knowledge and facilitating effective information exchange across diverse disciplines."
 tags: ["cognitive security", "narrative-information-management", "nim", "collective-sensemaking", "knowledge-management", "information-systems"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Framework development
-- Cross-domain analysis
-- Information system feature extraction
-- Sensemaking methodology
+- Conducts a literature review on information-focused disciplines to identify impactful system features.
+- Analyzes challenges faced by various fields in managing information and sensemaking.
+- Synthesizes common features of NIM systems from diverse domains.
+- Explores domain-specific challenges and ad-hoc solutions related to information dynamics.
 
 ## Key Findings
 
-- Introduces Narrative Information Management (NIM) as a unifying framework
-- Identifies common features of impactful information systems across domains
-- Bridges knowledge management, library science, and information management
+- Identifies the need for a common ontology to facilitate information exchange among disciplines.
+- Highlights the impact of cognitive overload on decision-making and sensemaking.
+- Demonstrates that effective NIM systems can enhance situational awareness and decision-making.
+- Recommends further exploration of NIM applications in fields like personal finance, genomics, and neuroscience.
 
 ## Prerequisites
 

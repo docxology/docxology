@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies, and novel experimental paradigms for studying insect behavior. We review current video methods, discuss their applications in entomological research, and identify future directions for video-enhanced insect science.
+> This paper discusses the transformative impact of video technology on entomology, summarizing recent methodological advancements that enhance research and education in the field. It emphasizes the importance of adopting these modern protocols to improve the study of insect behavior and ecology.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Reviews video technology applications in experimental entomology
-- Identifies best practices for video-based insect behavioral analysis
+- Highlights the role of video technology in modern entomological research and education.
+- Summarizes various innovative methods for studying leaf-cutting ants and honey bees.
+- Addresses challenges in observing and manipulating eusocial insects in laboratory and field settings.
+- Proposes future directions for entomology, including the integration of emerging technologies.
 
 ## Methods
 
-- Video-based behavioral tracking
-- Automated behavioral phenotyping
-- Computer vision for entomology
-- High-throughput behavioral analysis
-
+- Describes protocols for the collection and maintenance of leaf-cutting ant colonies.
+- Presents a method for passive pollen collection from honey bees using a metal mesh.
+- Outlines histological techniques for analyzing honey bee tissues and assessing cell turnover.
+- Details a method for studying the impact of agrochemicals on honey bee queen fecundity.
 
 ## 🎯 Consulting & Tutoring
 

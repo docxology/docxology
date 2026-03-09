@@ -1,6 +1,6 @@
 ---
 name: "ResNei"
-description: "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared..."
+description: "Proficient in designing AI-augmented research environments that enhance collaboration and knowledge discovery through dynamic knowledge graphs."
 tags: ["computational", "resnei", "research-neighbourhood", "collaborative-research", "distributed-collaboration", "interdisciplinary"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Collaborative platform design
-- Distributed research methodology
-- Interdisciplinary knowledge network construction
+- Utilization of a graphical concept model to facilitate engagement between specialists and generalists.
+- Implementation of a dynamic linking system for an evolving corpus of scientific knowledge.
+- Adoption of scientific protocols to ensure reliable evaluation of scientific output.
+- Integration of UX design principles that prioritize collaboration and contextual insight.
 
 ## Key Findings
 
-- Introduces ResNei platform for lateral collaborative research
-- Supports distributed, asynchronous interdisciplinary knowledge development
+- ResNei enhances research efficiency by creating a responsive and intuitive environment.
+- The platform supports impactful inquiry through the co-evolution of expert and generalist collaboration.
+- It democratizes access to scientific knowledge, making it more manageable for generalists.
+- The project is in early development with working prototypes and a technical paper in preprint.
 
 ## Prerequisites
 

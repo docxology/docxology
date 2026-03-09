@@ -1,6 +1,6 @@
 ---
 name: "InfiniteImaginarium"
-description: "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work..."
+description: "Expertise in navigating complex cognitive landscapes through innovative frameworks and linguistic analysis."
 tags: ["art", "epistemic-tempos", "knowledge-production", "creative-exploration", "way-finding", "imagination"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Epistemic tempo analysis
-- Operational framework design
-- Creative process structuring
+- Utilizes metaphorical constructs like dominos and Jenga towers to illustrate cognitive processes.
+- Analyzes linguistic and semiotic mechanisms in verbal communication.
+- Employs a comparative approach to examine different epistemic modes.
+- Incorporates examples of cognitive engagement in educational contexts.
 
 ## Key Findings
 
-- Maps epistemic tempos and modes in creative knowledge production
-- Provides operational frameworks for navigating the Infinite Imaginarium
+- Identifies the importance of both stable and dynamic epistemic modes in knowledge acquisition.
+- Demonstrates how situational awareness influences cognitive flexibility in information retrieval.
+- Highlights the role of preparation and measurement in effective wayfinding.
+- Suggests that cognitive engagements can be enhanced through understanding the interplay of language and knowledge.
 
 ## Prerequisites
 

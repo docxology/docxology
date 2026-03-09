@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management, and library science by identifying common features of impactful information systems. We explore insights from personal finance, ancestry research, hybrid cloud security, translational neuroscience, and genomics to extract generalizable principles for information management.
+> This paper proposes Narrative Information Management (NIM) as a framework to address information-related challenges across various fields by facilitating knowledge exchange and synthesis. It aims to unify diverse disciplines facing similar issues in organizational sensemaking and offers recommendations for future research.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Introduces Narrative Information Management (NIM) as a unifying framework
-- Identifies common features of impactful information systems across domains
-- Bridges knowledge management, library science, and information management
+- Introduces Narrative Information Management (NIM) as a unifying framework for information dynamics.
+- Identifies common features of effective information systems across various disciplines.
+- Explores insights and solutions from eclectic fields facing information challenges.
+- Provides recommendations for future research directions in information management.
 
 ## Methods
 
-- Framework development
-- Cross-domain analysis
-- Information system feature extraction
-- Sensemaking methodology
-
+- Conducts a literature review on information-focused disciplines to identify impactful system features.
+- Analyzes challenges faced by various fields in managing information and sensemaking.
+- Synthesizes common features of NIM systems from diverse domains.
+- Explores domain-specific challenges and ad-hoc solutions related to information dynamics.
 
 ## 🎯 Consulting & Tutoring
 

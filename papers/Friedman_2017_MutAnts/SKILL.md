@@ -1,6 +1,6 @@
 ---
 name: "MutAnts"
-description: "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of..."
+description: "Expertise in genetic manipulation techniques, particularly CRISPR/Cas9, applied to the study of social insect behavior and neuroanatomy."
 tags: ["entomology", "crispr/cas9", "orco-gene", "olfactory-receptor", "ant-genetics", "ooceraea-biroi"]
 ---
 
@@ -31,17 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- CRISPR/Cas9 gene editing (reviewed)
-- Olfactory receptor gene family analysis
-- Comparative behavioral phenotyping
-- Phylogenetic analysis of OR gene expansion
+- Injected freshly-laid ant eggs with purified Cas9 protein and synthetic guide RNAs targeting the Orco gene.
+- Conducted behavioral assays to assess the impact of Orco knockout on ant behavior and reproductive performance.
+- Utilized olfactory assays to evaluate sensitivity to semiochemicals in Orco null mutants.
+- Analyzed neuroanatomical structures in mutant ants to identify defects in the antennal lobe.
 
 ## Key Findings
 
-- Previews two landmark CRISPR/Cas9 ant gene knockout studies in Cell
-- Contextualizes Orco knockout results within ant olfactory receptor evolution
-- Highlights the massive OR gene family expansion in ants as a social adaptation
-- Identifies key open questions in ant functional genetics
+- Homozygous Orco mutants displayed altered behavior, decreased reproductive capacity, and increased mortality.
+- Orco null mutants showed reduced sensitivity to olfactory stimuli and unique behaviors such as increased wandering.
+- Both studies found significant neuroanatomical defects in the antennal lobe of Orco mutants, indicating a developmental role for the gene.
+- The research underscores the importance of olfaction in ant social behavior and adaptation to diverse environments.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience is constructed through hierarchical predictive processing, and how disruptions to temporal integration may underlie depersonalization phenomena.
+> This paper proposes a theoretical framework for understanding dissociative experiences by integrating various perspectives, including nonlinear dynamical systems and neurobiology. It posits that a significant change in 'temporal depth' may serve as a common factor in the onset of dissociative episodes across different etiologies.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Develops Active Inference model of temporal depth in self-experience
-- Connects depersonalization to disrupted temporal predictive processing
+- Introduces a novel framework for integrating diverse theoretical models of dissociation.
+- Highlights the concept of 'temporal depth' as a potential common factor in dissociative experiences.
+- Proposes a causal relationship between temporal depth collapse and dissociative symptoms.
+- Sets the stage for future empirical studies and therapeutic applications based on the proposed model.
 
 ## Methods
 
-- Theoretical model development
-- Active Inference formalization
-- Clinical phenomenology analysis
-- Temporal processing modeling
-
+- Combines first-principles-based perspectives with nonlinear dynamical systems.
+- Utilizes clinical and neurobiological insights to inform the theoretical model.
+- Plans to employ computer simulations to test the model's computational components.
+- Aims to integrate phenomenological data with abstract theoretical models.
 
 ## 🎯 Consulting & Tutoring
 

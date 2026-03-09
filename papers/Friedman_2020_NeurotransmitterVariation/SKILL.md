@@ -1,6 +1,6 @@
 ---
 name: "NeurotransmitterVariation"
-description: "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a..."
+description: "Proficient in advanced analytical techniques for quantifying neurotransmitter levels in biological samples, utilizing capillary electrophoresis and fast-scan cyclic voltammetry."
 tags: ["entomology", "neurotransmitters", "dopamine", "serotonin", "octopamine", "tyramine"]
 ---
 
@@ -31,17 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV)
-- Single-brain neurotransmitter quantification
-- Carbon-fiber microelectrode detection
-- Field-amplified sample stacking
-- Colony-level statistical comparisons
+- Utilized capillary electrophoresis with fast-scan cyclic voltammetry (CE-FSCV) for neurotransmitter detection.
+- Field-amplified sample stacking was employed to enhance detection limits of neurotransmitters in single ant brains.
+- Ant brains were dissected and homogenized in a controlled environment to prepare samples for analysis.
+- Statistical analysis was performed using GraphPad Prism to evaluate variations in neurotransmitter content.
 
 ## Key Findings
 
-- First quantification of 4 biogenic amines in single ant brains from field colonies
-- Demonstrates less neurotransmitter variation within colonies than among colonies
-- Validates CE-FSCV as a method for natural neurotransmitter variation studies
+- Dopamine was found to be the most abundant biogenic amine, followed by octopamine, serotonin, and tyramine.
+- Significant variation in neurotransmitter content was observed among different ant colonies.
+- The relative standard deviation of neurotransmitter levels was lower within colonies compared to across colonies.
+- Correlations were noted between levels of octopamine, tyramine, and serotonin, but not with dopamine.
 
 ## Prerequisites
 

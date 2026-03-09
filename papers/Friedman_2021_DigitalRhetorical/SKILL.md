@@ -1,6 +1,6 @@
 ---
 name: "DigitalRhetorical"
-description: "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model..."
+description: "Expertise in analyzing digital discourse through the integration of rhetorical and ecological frameworks, focusing on the impact of image memes on public narratives."
 tags: ["cognitive security", "digital-rhetoric", "image-memes", "dre3-model", "narrative-ecosystems", "rhetorical-ecology"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Digital rhetorical analysis
-- Ecosystem modeling (DRE3)
-- Image meme content analysis
-- Comparative rhetorical-ecological framework
+- Utilizes a rhetorical approach to analyze message features and audience engagement.
+- Applies an ecosystem approach to trace narratives across digital platforms and media types.
+- Introduces the DRE3 model for systematic analysis of digital discourse.
+- Explores implications for the design of computational analysis systems for digital rhetoric.
 
 ## Key Findings
 
-- Introduces the DRE3 (Digital Rhetorical Ecosystem three-tiered) model
-- Maps how image memes impact public narratives through parsimony and polysemy
-- Bridges rhetorical studies and ecological systems analysis for digital discourse
+- Image memes play a crucial role in shaping public discourse and destabilizing traditional sources of information.
+- The integration of rhetorical and ecological analyses reveals complex interactions that influence public beliefs and actions.
+- Rhetorical features of digital artifacts encourage superficial engagement with information.
+- A nuanced understanding of rhetorical forms can help address the challenges of the digital information crisis.
 
 ## Prerequisites
 

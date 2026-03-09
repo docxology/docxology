@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by simple thermodynamic principles. The conversation covers the FEP's relationship to Bayesian inference, predictive processing, consciousness, the Markov blanket formalism, and the connections between physics, biology, and philosophy of mind.
+> This paper presents an interview with Karl Friston, exploring the development of the free energy principle as a theoretical framework that unifies psychological, neural, and biological aspects of living beings. It discusses the implications of this framework for understanding cognition, life, and consciousness through a Bayesian lens.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Provides accessible exposition of the Free Energy Principle from its originator
-- Traces the intellectual history of the FEP from childhood intuition to formal framework
-- Discusses implications of FEP for consciousness, life, and cognition
-- Connects the FEP to Bayesian inference, predictive processing, and Markov blankets
+- Introduces the free energy principle as a unifying framework for understanding cognition and consciousness.
+- Explores the relationship between the Bayesian brain hypothesis, predictive coding, and the free energy principle.
+- Highlights the simplicity and elegance of the free energy principle in explaining complex behaviors.
+- Discusses the evolution of the free energy principle from early childhood observations to a comprehensive theoretical model.
 
 ## Methods
 
-- In-depth scholarly interview
-- Philosophical analysis
-- Free Energy Principle exposition
-- Historical-intellectual biography
-
+- Utilizes Bayesian inference to model cognitive processes and perceptual states.
+- Applies variational Bayes for ensemble learning and probability density dynamics.
+- Examines hierarchical structures in the brain to understand spatial and temporal processes in cognition.
+- Analyzes the reduction of surprise and informational entropy in relation to sensory data and hypotheses.
 
 ## 🎯 Consulting & Tutoring
 

@@ -1,6 +1,6 @@
 ---
 name: "AntConsciousness"
-description: "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s..."
+description: "Expertise in applying evolutionary biology frameworks to the philosophical and scientific study of consciousness, particularly through innovative methodologies like the Ant Colony Test."
 tags: ["entomology", "consciousness", "ant-colony", "ant-colony-test", "philosophy-of-science", "social-insects"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Philosophical analysis and theory construction
-- Comparative behavioral review
-- Consciousness criteria evaluation
-- Reverse testing methodology
+- Analyzes the dichotomy between forward tests and reverse tests in scientific methodology.
+- Utilizes a comparative approach to assess consciousness theories against the behavior of social insect colonies.
+- Draws on a long lineage of neurobehavioral, evolutionary, and ecological studies of social insects.
+- Employs philosophical analysis to clarify the implications of consciousness in disaggregated systems.
 
 ## Key Findings
 
-- Proposes the Ant Colony Test (ACT) for consciousness research
-- Demonstrates that ant colonies meet many criteria for conscious awareness
-- Introduces a rigorous reverse test methodology for consciousness studies
+- Social insect colonies fulfill many prerequisites for conscious awareness similar to humans.
+- The ACT can serve as a calibration tool for evaluating the coherence of various consciousness theories.
+- The study reveals the need for a legitimate reverse test to enhance understanding of consciousness.
+- Empirical insights from social insect behavior can inform and refine the discourse on consciousness.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "SensemakingFederation"
-description: "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl..."
+description: "Expertise in knowledge federation and sensemaking, utilizing advanced topic mapping and collaborative techniques to enhance understanding and integration of diverse ideas."
 tags: ["presentations, courses & media", "sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
 ---
 
@@ -26,14 +26,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Panel discussion
-- Collaborative sensemaking
-- Digital innovation analysis
+- Facilitation of a panel discussion with experts in sensemaking and digital innovation.
+- Use of topic mapping to create structured knowledge graphs.
+- Incorporation of game mechanics to foster skills in deep listening and idea synthesis.
+- Engagement of diverse participants to explore the federation of meaning.
 
 ## Key Findings
 
-- Explores frontiers of sensemaking federation in digital contexts
-- Discusses decentralized knowledge infrastructure development
+- Knowledge artifacts can be effectively organized and indexed through topic mapping.
+- Game-based approaches can enhance collaborative sensemaking and idea integration.
+- The establishment of K-Hubs can facilitate better connections between different knowledge communities.
+- Understanding relationships in knowledge requires a nuanced approach that acknowledges their complexity.
 
 ## Prerequisites
 

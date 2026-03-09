@@ -1,6 +1,6 @@
 ---
 name: "5thSymposium"
-description: "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc..."
+description: "Expertise in Active Inference methodologies and applications, with a focus on collaborative research and open science practices."
 tags: ["presentations, courses & media", "active-inference-symposium", "conference-proceedings", "international-symposium", "research-presentations"]
 ---
 
@@ -25,14 +25,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Conference organization
-- Research presentation
-- Academic workshop facilitation
+- Keynote presentations from leading experts in the field.
+- Pre-recorded presentations to provide diverse perspectives.
+- Live-streamed panels for real-time discussions.
+- Interactive workshops to engage participants in hands-on learning.
 
 ## Key Findings
 
-- Documents the 5th International Symposium on Active Inference
-- Provides proceedings and materials from the symposium
+- Increased awareness and understanding of Active Inference applications.
+- Identification of key challenges and opportunities in the field.
+- Enhanced collaboration among interdisciplinary researchers.
+- Development of new methodologies for applying Active Inference.
 
 ## Prerequisites
 

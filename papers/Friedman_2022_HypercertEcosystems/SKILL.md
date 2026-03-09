@@ -1,6 +1,6 @@
 ---
 name: "HypercertEcosystems"
-description: "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze..."
+description: "Expertise in developing frameworks for Active Inference and cognitive modeling in decentralized ecosystems, particularly in the context of Hypercerts and Decentralized Science."
 tags: ["cognitive security", "hypercerts", "desci", "decentralized-science", "active-blockference", "aeos"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Systems modeling
-- Cognitive auditing
-- Active Blockference framework
-- Decentralized science analysis
+- Utilization of Active Inference frameworks for modeling interactions in Hypercert ecosystems.
+- Implementation of multi-agent simulations to explore cognitive and behavioral dynamics.
+- Engagement in informative interviews with stakeholders to understand the Hypercert landscape.
+- Development of entity diagrams and simulations tailored to researcher needs.
 
 ## Key Findings
 
-- Applies Active Inference to Hypercert ecosystem modeling
-- Develops cognitive audit methodology for DeSci systems
-- Integrates AEOS ontology with decentralized funding mechanisms
+- The AEOS implementation enables anticipatory design and real-time analysis of Hypercert ecosystems.
+- Hypercerts can potentially outperform traditional funding mechanisms in certain contexts.
+- Entity-based modeling enhances regulatory compliance and system evaluation.
+- The project aims to provide impactful open-source tools for community design and token engineering.
 
 ## Prerequisites
 

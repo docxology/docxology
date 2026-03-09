@@ -1,6 +1,6 @@
 ---
 name: "MDKV"
-description: "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be..."
+description: "Proficient in developing and utilizing multitrack Markdown containers for structured document management, enhancing collaboration and reproducibility in digital knowledge work."
 tags: ["computational", "mdkv", "markdown", "key-value-format", "structured-data", "document-specification"]
 ---
 
@@ -28,16 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Format specification design
-- Round-trip document transformation
-- Container format analysis
-- Open-source specification development
+- Introduced a ZIP archive format containing a YAML manifest and UTF-8 Markdown files.
+- Formalized the MDKV model and presented its software architecture.
+- Evaluated design trade-offs against adjacent technologies.
+- Provided a CLI and a small GUI for selective preview and live editing.
 
 ## Key Findings
 
-- Introduces MDKV as a YAML-free key-value format for Markdown
-- Enables round-trip Markdown-to-JSON/TOML transformation
-- Provides extensible document container specification
+- MDKV effectively preserves a document's conceptual unity while decoupling its layers for editing and governance.
+- The format supports reproducible exports and facilitates collaboration across different audiences.
+- MDKV's design prioritizes human inspectability and long-term readability over custom binary formats.
+- Use cases demonstrate the format's applicability in various document management scenarios.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from our field study show that the regulation of the foraging gene in harvester ants occurs at two time scales: levels of foraging mRNA are associated with ontogenetic changes over weeks in worker age, location and task, and there are significant daily oscillations in foraging expression in foragers. The temporal dissection of foraging expression reveals that gene expression changes in foragers occur across a scale of hours and the level of expression is predicted by activity rhythms.
+> This study investigates the context-dependent expression of the foraging gene in harvester ants, focusing on how age, environment, and task influence gene regulation. By examining field colonies, we reveal that foraging gene expression varies with ontogenetic changes and daily activity rhythms, highlighting the complex interplay between genetic regulation and behavioral plasticity.
 
 ## Keywords
 
@@ -21,20 +21,17 @@
 
 ## Key Contributions
 
-- First field study of foraging gene expression in a natural ant population
-- Demonstrates foraging gene regulation at two timescales (ontogenetic and circadian)
-- Shows that light exposure affects foraging gene expression differently in brood workers vs foragers
-- Links individual gene expression patterns to colony-level task allocation dynamics
+- Demonstrated the context-dependent regulation of the foraging gene in harvester ants.
+- Provided evidence of daily oscillations in foraging gene expression linked to activity rhythms.
+- Investigated the effects of light exposure on foraging gene expression in different task groups.
+- Highlighted the importance of temporal patterns in behavioral gene expression for understanding social insect behavior.
 
 ## Methods
 
-- qRT-PCR gene expression quantification
-- Field behavioral observations
-- Experimental light exposure manipulation
-- Temporal gene expression profiling
-- Statistical analysis (ANOVA, t-tests)
-- Colony-level behavioral monitoring
-
+- Collected harvester ants from natural populations and categorized them into age- and task-related groups.
+- Conducted field experiments to measure foraging gene expression at different times of day.
+- Manipulated light conditions to assess their impact on foraging gene expression.
+- Analyzed the correlation between foraging gene expression and the circadian clock gene.
 
 ## 🎯 Consulting & Tutoring
 

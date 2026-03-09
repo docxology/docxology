@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level information integration, adaptive behavior, and meta-cognitive processes in ant colonies relate to proposed criteria for consciousness.
+> This paper explores the concept of consciousness in ant colonies, examining whether these collective entities possess a form of awareness. It discusses the implications of collective minds from both scientific and philosophical perspectives.
 
 ## Keywords
 
@@ -19,16 +19,17 @@
 
 ## Key Contributions
 
-- Extends the Ant Colony Test with updated consciousness criteria
-- Examines information integration and meta-cognition in ant colonies
+- Introduces a framework for assessing consciousness in non-human entities.
+- Explores the philosophical implications of collective intelligence in ant colonies.
+- Analyzes existing literature on consciousness and collective behavior in social insects.
+- Proposes new avenues for research in the intersection of philosophy and biology.
 
 ## Methods
 
-- Consciousness criteria evaluation
-- Colony-level analysis
-- Information integration measurement
-- Comparative cognitive analysis
-
+- Literature review of current theories on consciousness and collective behavior.
+- Philosophical analysis of the concept of mind in relation to ant colonies.
+- Comparative analysis of ant behavior and cognitive processes.
+- Interdisciplinary approach combining insights from biology, philosophy, and cognitive science.
 
 ## 🎯 Consulting & Tutoring
 

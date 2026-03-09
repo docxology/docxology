@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, facilitated through the Active Inference Institute, investigates how diffusion processes can be understood and enhanced through the lens of free energy minimization, with applications to generative AI and probabilistic modeling.
+> This paper explores the connections between Active Inference (ActInf) and Diffusion Models (DM) in the context of cognitive sciences and artificial intelligence. It aims to characterize mathematical formalisms and computational applications of these models to enhance decision-making and planning strategies under the Free Energy Principle.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Proposes the Active Diffusion initiative connecting diffusion models and Active Inference
-- Establishes collaborative framework for studying diffusion through free energy minimization
+- Establishes theoretical connections between Active Inference and Diffusion Models.
+- Develops open-source repositories to demonstrate concordances among ActInf, DM, and related methods.
+- Integrates diffusion models within the active inference framework for dynamic environment representation.
+- Explores the implications of Active Diffusion in cognitive ecosystems and decentralized science.
 
 ## Methods
 
-- Initiative catechism development
-- Active Inference application to diffusion models
-- Collaborative research project design
-
+- Conducts a thorough literature review on Latent Diffusion Models and belief propagation in Active Inference.
+- Utilizes benchmarks on standard datasets and formats for empirical validation.
+- Employs the cadCAD package for developing frameworks in cognitive ecosystems design.
+- Investigates the application of individual components within LDM architectures in the action-perception loop.
 
 ## 🎯 Consulting & Tutoring
 

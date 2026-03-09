@@ -1,6 +1,6 @@
 ---
 name: "BlakeFuller"
-description: "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's..."
+description: "Expertise in fostering comprehensivity through interdisciplinary inquiry and collaborative engagement, enabling a multi-perspectival understanding of complex systems."
 tags: ["art", "william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Biographical juxtaposition
-- Comprehensivity analysis
-- Art-science parallel identification
-- Presentation format
+- Utilizes a draft linearized snapshot perspective for presenting ideas.
+- Engages in ongoing discussions and meetings to refine concepts.
+- Integrates multimedia and philosophical frameworks to enhance understanding.
+- Explores ontologies related to Fuller and Blake within the context of Active Inference.
 
 ## Key Findings
 
-- Juxtaposes Blake and Fuller as studies in comprehensivity
-- Identifies structural parallels in their integrative approaches
-- Presents for 52 Living Ideas series connecting historical visionaries
+- Comprehensivity is essential for developing a broad and deep understanding of the world.
+- The ability to question, conceptualize, and act is crucial for effective engagement.
+- Recognizing and addressing pathologies related to comprehensivity is necessary for maintaining relevance.
+- A comprehensive approach fosters the creation of new possibilities and insights.
 
 ## Prerequisites
 

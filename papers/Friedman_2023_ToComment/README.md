@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.
+> This paper advocates for the integration of rhetorical and ecological frameworks to analyze digital image memes, aiming to enhance understanding of how these memes shape online narratives. It highlights the need for a more comprehensive approach to studying image memes, which are often overlooked in favor of text-based formats.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Applies DRE3 model to analyze digital meme rhetoric
-- Examines how memes shape public discourse through rhetorical mechanisms
+- Proposes a combined rhetorical and ecological framework for analyzing digital discourse.
+- Introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3) for understanding meme impact on public narratives.
+- Emphasizes the narrative power of image memes through parsimony and polysemy.
+- Explores implications for computational analysis systems in digital discourse.
 
 ## Methods
 
-- Rhetorical ecosystem analysis
-- Digital meme content analysis
-- DRE3 framework application
-
+- Utilizes a rhetorical approach to analyze message form and audience engagement.
+- Applies ecological concepts to trace narratives across digital platforms.
+- Develops a three-tiered model (DRE3) to categorize and index digital artifacts.
+- Focuses on the interaction between memes and audience identity construction.
 
 ## 🎯 Consulting & Tutoring
 

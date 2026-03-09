@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromosome territories. We discuss how Hi-C and related techniques reveal reorganization of topologically associating domains (TADs) following irradiation and the implications for understanding radiation-induced genomic instability.
+> This paper discusses the influence of nuclear structure on the formation of radiation-induced lethal lesions, particularly focusing on the rejoining of fragmented nuclear DNA caused by ionizing radiation. It synthesizes existing knowledge with new insights from high-throughput sequencing data to better understand how spatial organization within the genome affects the generation of lethal chromosome aberrations.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Reviews the intersection of radiation biology and 3D genome organization
-- Discusses Hi-C applications for understanding radiation-induced chromatin reorganization
-- Synthesizes evidence on how ionizing radiation disrupts TADs and chromatin architecture
+- Synthesis of existing knowledge with new insights from high-throughput sequencing data.
+- Identification of the fractal globule organization of DNA and its implications for radiation damage.
+- Exploration of the spatial proximity of transcriptionally active euchromatin and its susceptibility to radiation.
+- Discussion of the temporal factors influencing the formation of lethal lesions post-irradiation.
 
 ## Methods
 
-- Hi-C chromosome conformation capture
-- Chromatin conformation analysis
-- Radiation biology techniques
-- Bioinformatics pipeline for Hi-C data
-- Literature review and synthesis
-
+- High-throughput sequencing of chromosome conformation capture experiments.
+- Analysis of spatial organization of DNA within the nucleus.
+- Examination of transcriptional programs linking genomic locations.
+- Review of existing models of radiation-induced DNA damage and repair mechanisms.
 
 ## 🎯 Consulting & Tutoring
 

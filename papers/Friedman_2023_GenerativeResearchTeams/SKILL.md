@@ -1,6 +1,6 @@
 ---
 name: "GenerativeResearchTeams"
-description: "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top..."
+description: "Expertise in designing and implementing Generative Research Teams that leverage Active Inference and cognitive models to enhance research efficiency and adaptability."
 tags: ["active inference", "generative-research-team", "active-inference", "generative-model", "cognitive-modeling", "llms"]
 ---
 
@@ -33,18 +33,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- GRT architecture design with modular roles
-- Active Blockference and cadCAD integration
-- Cognitive security (NIM, VIE) application
-- Meta-prompting for adaptive research
-- Human-computational hybrid team design
+- Utilization of Active Inference as a cognitive modeling approach.
+- Implementation of systems engineering principles in GRT design.
+- Development of communication strategies for effective dissemination of research findings.
+- Use of tools like Active Blockference and cadCAD for situational awareness.
 
 ## Key Findings
 
-- Introduces the Generative Research Team (GRT) framework blending human and AI
-- Integrates Active Blockference and cadCAD tools for research composition
-- Applies Narrative Information Management and VIE for cognitive security
-- Develops meta-prompting approach for adaptive research processes
+- GRTs can effectively navigate complex research landscapes and produce impactful outcomes.
+- The integration of human and computational entities enhances problem-solving capabilities.
+- Active Inference improves decision-making and efficiency within research teams.
+- GRTs can adapt to unexpected changes through collaborative environments and resilient architectures.
 
 ## Prerequisites
 

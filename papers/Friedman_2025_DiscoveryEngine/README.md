@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refined through free energy minimization, enabling structured exploration of research questions.
+> This paper introduces the Discovery Engine, a framework designed to transform disconnected scientific literature into a unified, computable representation, addressing challenges of information overload and reproducibility in research. By distilling publications into structured knowledge artifacts and encoding them into a Conceptual Tensor, the framework enables AI-driven exploration and synthesis of scientific knowledge.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Develops Discovery Engine for Active Inference-based automated scientific discovery
-- Models scientific discovery as an inference problem with free energy minimization
+- Introduces the Discovery Engine as a novel framework for synthesizing scientific knowledge.
+- Transforms disconnected literature into structured 'knowledge artifacts' for better accessibility.
+- Develops a Conceptual Tensor that serves as a compressed representation of scientific fields.
+- Facilitates AI agents' interaction with knowledge graphs to identify connections and gaps in research.
 
 ## Methods
 
-- Active Inference discovery modeling
-- Automated hypothesis generation
-- Computational scientific reasoning
-
+- Employs LLM-driven Structured Knowledge Distillation to extract verifiable knowledge components.
+- Utilizes a Conceptual Nexus Model (CNM) as an evolving knowledge graph for specific research domains.
+- Incorporates hybrid approaches combining dense vector embeddings and relational structure encoding.
+- Enables dynamic 'unrolling' of the Conceptual Tensor into human-interpretable views like knowledge graphs.
 
 ## 🎯 Consulting & Tutoring
 

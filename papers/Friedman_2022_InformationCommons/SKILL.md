@@ -1,6 +1,6 @@
 ---
 name: "InformationCommons"
-description: "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency..."
+description: "Expertise in structuring information commons through open standards and cognitive security, with a focus on innovative methodologies for information management and analysis."
 tags: ["cognitive security", "information-commons", "cognitive-security", "open-standards", "trust", "governance"]
 ---
 
@@ -30,16 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Edited volume compilation
-- Cognitive security framework development
-- Open standards analysis
-- Information governance design
+- Utilizes narrative information management techniques.
+- Employs swarm intelligence concepts in information verification.
+- Applies active inference models to understand conflict dynamics.
+- Develops a decentralized science ontology for collaborative research.
 
 ## Key Findings
 
-- Provides comprehensive edited volume on structuring the information commons
-- Integrates cognitive security with open standards and information governance
-- Addresses trust and transparency in information ecosystems
+- Demonstrates the effectiveness of open standards in improving information sharing.
+- Identifies key factors influencing the maturity of market functions.
+- Establishes a correlation between misinformation interventions and public sensemaking.
+- Proposes tools like TrustFinder to enhance trust in digital information.
 
 ## Prerequisites
 

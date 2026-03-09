@@ -1,6 +1,6 @@
 ---
 name: "AntStackComplexity"
-description: "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and..."
+description: "Expertise in energy-aware robotics and computational complexity analysis, with a focus on integrating biological principles into robotic design and performance optimization."
 tags: ["entomology", "antstack", "complexity-science", "information-theory", "complex-adaptive-systems", "ant-colonies"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Complexity science analysis
-- Information-theoretic metrics
-- Complex adaptive systems modeling
+- Utilization of a multi-scale analysis framework for computational workload modeling.
+- Implementation of an energy decomposition framework to estimate energy consumption.
+- Application of real-time complexity analysis to evaluate computational constraints.
+- Integration of uncertainty quantification techniques to enhance model reliability.
 
 ## Key Findings
 
-- Extends AntStack with complexity science frameworks
-- Connects information theory and thermodynamics to ant colony analysis
+- Demonstrated that biological design principles can significantly inform the development of efficient robotic systems.
+- Found that energy efficiency and computational performance are closely linked, revealing trade-offs that can be optimized.
+- Validated the Ant Stack framework through empirical data, showing its applicability in real-world scenarios.
+- Identified critical points and phase transitions in system behavior that impact performance and energy consumption.
 
 ## Prerequisites
 

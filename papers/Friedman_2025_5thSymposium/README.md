@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.
+> The 5th Applied Active Inference Symposium aims to enhance the accessibility and applicability of the Active Inference framework through collaborative discussions and presentations. It serves as a platform for researchers and practitioners to share insights and advancements in the field.
 
 ## Keywords
 
@@ -19,15 +19,17 @@
 
 ## Key Contributions
 
-- Documents the 5th International Symposium on Active Inference
-- Provides proceedings and materials from the symposium
+- Showcases the latest research and applications of Active Inference.
+- Facilitates networking and collaboration among researchers and practitioners.
+- Promotes open science principles in the dissemination of knowledge.
+- Includes interactive workshops to deepen understanding of Active Inference.
 
 ## Methods
 
-- Conference organization
-- Research presentation
-- Academic workshop facilitation
-
+- Keynote presentations from leading experts in the field.
+- Pre-recorded presentations to provide diverse perspectives.
+- Live-streamed panels for real-time discussions.
+- Interactive workshops to engage participants in hands-on learning.
 
 ## 🎯 Consulting & Tutoring
 

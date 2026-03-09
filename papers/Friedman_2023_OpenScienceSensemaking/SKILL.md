@@ -1,6 +1,6 @@
 ---
 name: "OpenScienceSensemaking"
-description: "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem..."
+description: "Expertise in developing and implementing decentralized systems for sharing scientific sensemaking data to enhance collaborative research and knowledge discovery."
 tags: ["cognitive security", "ossm", "open-science-sensemaking", "scientific-sensemaking", "annotation-networks", "open-access"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Decentralized annotation system design
-- Sensemaking data taxonomy
-- Interoperability framework development
+- Outlines a framework for an interoperable annotation network.
+- Examines existing sensemaking data practices and their limitations.
+- Analyzes the role of sensemaking data in algorithmic content curation and recommendation systems.
+- Discusses the application of FAIR principles to sensemaking data.
 
 ## Key Findings
 
-- Proposes Open Science Sensemaking (OSSm) framework
-- Develops taxonomy of scientific sensemaking data types
-- Designs decentralized interoperable annotation infrastructure
+- Current scientific infrastructure inadequately addresses the challenges posed by information overload.
+- Sensemaking data is essential for personalized content recommendation and evaluation processes.
+- The enclosure of sensemaking data by commercial platforms threatens open access and scientific progress.
+- A decentralized approach to sharing sensemaking data can enhance collaboration and knowledge integration.
 
 ## Prerequisites
 

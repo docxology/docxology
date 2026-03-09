@@ -1,6 +1,6 @@
 ---
 name: "GNN"
-description: "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic..."
+description: "Proficient in Generalized Notation Notation (GNN) for representing and communicating Active Inference models, enhancing interdisciplinary collaboration in cognitive sciences."
 tags: ["active inference", "gnn", "generalized-notation-notation", "meta-notation", "symbolic-systems", "notation-translation"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Meta-notational framework development
-- Formal representation systems
-- Cross-notation translation algorithms
-- Computational notation analysis
+- Development of GNN as a standardized language for describing Active Inference models.
+- Utilization of ASCII letters and punctuation structured in a Markdown-compliant source file.
+- Presentation of GNN through examples drawn from existing Active Inference tutorials.
+- Incorporation of various aspects of language including ontology, morphology, grammar, and pragmatics.
 
 ## Key Findings
 
-- Introduces Generalized Notation Notation (GNN) as a universal meta-notation
-- Enables formal comparison and translation across diverse notational systems
-- Provides computational tools for automated notation analysis
+- GNN facilitates the communication and understanding of complex cognitive models.
+- The structured representation of cognitive models reduces friction in collaboration and sharing among researchers.
+- GNN demonstrates flexibility and expressiveness in modeling Active Inference.
+- The approach encourages further exploration and development in the field of cognitive sciences.
 
 ## Prerequisites
 

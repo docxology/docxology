@@ -1,6 +1,6 @@
 ---
 name: "CognitiveIntegrity"
-description: "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theore..."
+description: "Expertise in developing security frameworks for multiagent systems, focusing on cognitive integrity and trust management."
 tags: ["cognitive security", "cognitive-integrity", "multiagent-security", "cognitive-security", "active-inference", "category-theory"]
 ---
 
@@ -28,16 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Formal security framework development
-- Category-theoretic formalization
-- Active Inference security modeling
-- Threat model construction
+- Formal modeling of cognitive states and integrity properties.
+- Trust computation and algebra to assess security postures.
+- Anomaly detection techniques including cognitive drift scoring and behavioral deviation.
+- Architectural and runtime defense strategies designed for cognitive systems.
 
 ## Key Findings
 
-- Develops formal foundations for cognitive integrity in multiagent systems
-- Establishes category-theoretic framework for cognitive security
-- Provides threat models and defense mechanisms for cognitive processes
+- Cognitive systems are vulnerable to unique attack vectors that traditional security measures do not address.
+- The proposed framework enhances the detection and mitigation of cognitive attacks.
+- Trust boundedness is crucial for maintaining the integrity of cognitive systems.
+- The research identifies gaps in current security practices and suggests improvements.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace framework, develops exact rational arithmetic for IVM lattice operations, and provides open-source companion code and tests for reproducibility.
+> This paper presents an analytical review of 4D and Quadray coordinates, focusing on their mathematical foundations and practical applications. It aims to integrate various frameworks and methodologies to enhance understanding and usability in complex systems.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Provides comprehensive analytical review of Quadray coordinate systems
-- Implements Synergetics geometry in computational framework with exact arithmetic
-- Releases open-source companion code for reproducible QuadMath computations
+- Introduction of a comprehensive 4D namespace framework for mathematical modeling.
+- Development of new algorithms for Quadray coordinates and their applications in optimization.
+- Integration of information geometry with Quadray models to improve computational efficiency.
+- Exploration of practical implementations and educational resources for broader accessibility.
 
 ## Methods
 
-- Quadray coordinate computation
-- IVM lattice analysis
-- Rational arithmetic implementation
-- Synergetics geometry formalization
-- Computational geometry tooling
-
+- Mathematical formulation of 4D coordinates and their properties.
+- Implementation of optimization algorithms, including Nelder-Mead on integer lattices.
+- Use of Fisher information metrics for analyzing geometrical properties.
+- Development of Python-based computational tools for practical applications.
 
 ## 🎯 Consulting & Tutoring
 

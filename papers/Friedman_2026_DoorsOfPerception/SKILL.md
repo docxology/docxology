@@ -1,6 +1,6 @@
 ---
 name: "DoorsOfPerception"
-description: "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atl..."
+description: "Expertise in synthesizing philosophical and cognitive science concepts to enhance understanding of perception and predictive modeling."
 tags: ["art", "william-blake", "active-inference", "perception", "prediction", "thematic-atlas"]
 ---
 
@@ -29,14 +29,15 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Thematic concordance mapping
-- Art-mathematics synthesis
-- Active Inference application to aesthetics
+- Utilizes a thematic analysis to draw parallels between Blake's concepts and Active Inference.
+- Applies hierarchical generative models to explain cognitive processes.
+- Employs the Free Energy Principle to frame discussions on perception and action.
 
 ## Key Findings
 
-- Maps eight concordances between Blake's vision and Active Inference mathematics
-- Develops Thematic Atlas connecting prophetic epistemology to predictive processing
+- Demonstrates that Blake's ideas can inform contemporary cognitive science and Active Inference.
+- Suggests that perception is deeply intertwined with predictive processing and imagination.
+- Highlights the role of shared generative models in collective cognition.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "PostdocReview"
-description: "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci..."
+description: "Expertise in interdisciplinary research synthesis, focusing on the integration of biological sciences, cognitive security, and philosophical perspectives."
 tags: ["presentations, courses & media", "postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security"]
 ---
 
@@ -31,15 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Research portfolio review and presentation
-- Multi-domain career documentation
-- Interdisciplinary research synthesis
+- Literature review of recent advancements in relevant fields.
+- Analysis of live chat discussions to gather community insights.
+- Synthesis of findings across diverse disciplines.
+- Engagement with stakeholders to refine research focus.
 
 ## Key Findings
 
-- Documents comprehensive postdoctoral research across six working areas
-- Demonstrates interdisciplinary integration from biology to philosophy
-- Presents career trajectory from entomology through Active Inference to cognitive security
+- Emerging trends in active inference and their implications for cognitive security.
+- The importance of interdisciplinary approaches in addressing complex problems.
+- Recommendations for future research collaborations.
+- Insights into the role of philosophy and arts in scientific inquiry.
 
 ## Prerequisites
 

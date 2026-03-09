@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. We review current understanding of blattodean taxonomy, behavior, ecology, and the evolutionary transition from solitary cockroaches to eusocial termites.
+> This study investigates the relationship between chemical profile complexity and social complexity in the insect order Blattodea, focusing on cuticular hydrocarbons (CHCs) across solitary and eusocial species. Contrary to expectations, the findings reveal no consistent correlation between chemical complexity and social organization, suggesting a need for a more nuanced understanding of these relationships.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Reviews Blattodea diversity and evolutionary biology
-- Examines the cockroach–termite eusociality transition
+- Challenges the assumption that social complexity in insects is reflected in chemical profile complexity.
+- Provides empirical data comparing CHC complexity across different social structures within Blattodea.
+- Explores the genetic diversity of CHC biosynthesis genes in relation to social complexity.
+- Highlights the need for refined methodologies in assessing chemical complexity across species.
 
 ## Methods
 
-- Taxonomic review
-- Comparative evolutionary biology
-- Ecological survey
-- Phylogenetic analysis
-
+- Compared CHC complexity and transcriptomic data across selected Blattodea species representing varying social complexities.
+- Utilized gas chromatography coupled with tandem mass spectrometry (GC–MS/MS) for CHC analysis.
+- Constructed a chemical dendrogram based on CHC divergence and correlated it with molecular phylogeny.
+- Analyzed whole-genome transcriptomes to assess CHC biosynthesis gene diversity.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.
+> This paper integrates concepts from Husserlian phenomenology, active inference, and category theory to create a framework for understanding social action based on shared goals. It emphasizes the role of shared protentions among agents and their connection to collective goal-directed behavior.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Formalizes shared protentions in multi-agent Active Inference
-- Shows how coupled generative models enable coordinated anticipation
+- Development of a comprehensive framework linking phenomenology, active inference, and category theory.
+- Formalization of shared goals in terms of shared protentions within multi-agent systems.
+- Introduction of mathematical tools from category theory to model interactions among agents.
+- Exploration of the emergence of group intentionality through shared protentions.
 
 ## Methods
 
-- Multi-agent Active Inference modeling
-- Shared generative model formalization
-- Anticipatory coordination analysis
-- Category-theoretic framework
-
+- Review of Husserlian phenomenology focusing on inner time-consciousness concepts.
+- Application of active inference as a formal approach to model agent behavior.
+- Utilization of sheaf and topos theory to represent agent interactions and shared understanding.
+- Construction of a 'consensus topos' to analyze social action based on shared goals.
 
 ## 🎯 Consulting & Tutoring
 

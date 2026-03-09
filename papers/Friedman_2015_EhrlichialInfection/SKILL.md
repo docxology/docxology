@@ -1,6 +1,6 @@
 ---
 name: "EhrlichialInfection"
-description: "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
+description: "Expertise in exploring the intersection of infectious diseases and hematological disorders, with a focus on the potential therapeutic applications of antibiotics in treating leukemia."
 tags:
   - ehrlichia
   - anaplasma

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model captures and extends OODA loops, the generations of warfare model, and the Rumsfeld Matrix. It aids analysis of modern conflict including cyber, psychological, biological, informational, financial, and ideological dimensions using BOLTS (business, operations, legal, technical, social) components.
+> This paper integrates conflict studies with Active Inference, proposing the Active Inference Conflict (AIC) model to analyze modern conflict through a multiscale process of communication, trust, and relationship management. The AIC model extends traditional frameworks, offering insights into various forms of conflict that are not adequately addressed by existing models.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Creates the Active Inference Conflict (AIC) model for modern conflict analysis
-- Extends OODA loops and generations of warfare models using Active Inference
-- Provides framework for analyzing cyber, psychological, and information warfare
+- Introduction of the Active Inference Conflict (AIC) model for analyzing modern conflict.
+- Extension of traditional conflict models to include non-kinetic forms of conflict.
+- Integration of insights from various fields to enhance understanding of complex conflicts.
+- Recommendations for future research and social systems design based on qualitative use of the AIC model.
 
 ## Methods
 
-- Active Inference framework application to conflict
-- OODA loop integration
-- Generations of warfare analysis
-- BOLTS component analysis
-- Systems modeling
-
+- Utilization of Active Inference as a framework for understanding cognition and behavior in conflict.
+- Survey of past qualitative and quantitative models of conflict to identify gaps and needs.
+- Analysis of the relationship between the AIC model and existing frameworks like OODA and the Rumsfeld Matrix.
+- Exploration of multiscale processes in conflict management and relationship dynamics.
 
 ## 🎯 Consulting & Tutoring
 

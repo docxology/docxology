@@ -1,6 +1,6 @@
 ---
 name: "EvoJump"
-description: "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work..."
+description: "Proficient in stochastic modeling and advanced statistical analysis for evolutionary biology, utilizing frameworks like EvoJump to derive insights from complex biological data."
 tags: ["active inference", "evolutionary-transitions", "evojump", "active-inference", "major-transitions", "phenotypic-complexity"]
 ---
 
@@ -27,14 +27,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Evolutionary transition analysis
-- Active Inference evolutionary modeling
-- Major transitions theory
+- Utilization of stochastic process modeling techniques, including Ornstein-Uhlenbeck and Cox-Ingersoll-Ross processes.
+- Implementation of wavelet analysis for multi-scale temporal patterns.
+- Application of copula methods for analyzing trait dependencies.
+- Use of Bayesian inference for parameter estimation and model validation.
 
 ## Key Findings
 
-- Examines evolutionary transitions through Active Inference lens
-- Connects major transitions theory with Free Energy Principle
+- Demonstrated the effectiveness of the EvoJump framework in modeling complex evolutionary trajectories.
+- Identified long-range temporal dependencies in evolutionary processes.
+- Provided evidence of selective sweeps and genetic hitchhiking in Drosophila populations.
+- Validated the framework through extensive simulations and statistical methods.
 
 ## Prerequisites
 

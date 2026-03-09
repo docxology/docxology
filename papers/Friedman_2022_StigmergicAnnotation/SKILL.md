@@ -1,6 +1,6 @@
 ---
 name: "StigmergicAnnotation"
-description: "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr..."
+description: "Expertise in designing decentralized frameworks for collective sensemaking and enhancing user agency through stigmergic social annotation."
 tags: ["cognitive security", "stigmergic-annotation", "open-source-attention", "collective-sensemaking", "epistemic-pollution", "decentralized-platforms"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Socio-technical framework development
-- Stigmergic system design
-- Decentralized architecture proposal
-- Collective sensemaking analysis
+- Theoretical analysis of stigmergic communication and its implications for collective sensemaking.
+- Development of a socio-technical framework inspired by open source and decentralization movements.
+- Exploration of architectural elements for decentralized annotation tools, self-sovereign storage, and content discovery services.
+- Comparison of existing systems like Solid and dokieli to highlight the need for a more integrated ecological approach.
 
 ## Key Findings
 
-- Proposes Open Source Attention framework for decentralized attention governance
-- Identifies centralized platforms as sources of epistemic pollution
-- Develops stigmergic annotation as collective sensemaking methodology
+- Centralized platforms contribute to epistemic pollution and hinder effective collective decision-making.
+- Decentralization can empower users to take control of their data and improve the quality of information shared online.
+- Stigmergic markers can serve as valuable resources for both individual and collective sensemaking.
+- A shift towards a maker-centric mindset is essential for fostering healthier epistemic environments.
 
 ## Prerequisites
 

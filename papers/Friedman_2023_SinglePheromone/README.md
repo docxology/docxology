@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamics of pheromone deposition, evaporation, and ant behavioral responses to concentration gradients can produce the full range of observed foraging patterns with a simpler single-pheromone mechanism.
+> This paper critiques the two-pheromone model (2PM) proposed by Dussutour et al. for ant foraging behavior, demonstrating that a single-pheromone model (1PM) can adequately explain the observed patterns. The authors argue that the evidence for a two-pheromone system is not definitive and advocate for further comparative modeling of cognitive mechanisms in animal behavior.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Shows single-pheromone model replicates two-pheromone foraging patterns
-- Provides more parsimonious model of ant collective foraging
-- Validates model against empirical behavioral data
+- Introduces a one-pheromone model (1PM) as an alternative to the two-pheromone model (2PM) for ant foraging.
+- Demonstrates that the main experimental observations can be explained without the need for two distinct pheromones.
+- Highlights the ambiguity in interpreting animal behavior regarding sensory and cognitive mechanisms.
+- Suggests future experimental designs to differentiate between the 1PM and 2PM.
 
 ## Methods
 
-- Agent-based computational modeling
-- Pheromone dynamics simulation
-- Parameter space exploration
-- Behavioral pattern matching against empirical data
-
+- Critically reviews the two-pheromone model (2PM) and its supporting experiments.
+- Develops a mathematical framework for the one-pheromone model (1PM) based on biological plausibility.
+- Utilizes statistical modeling to analyze ant foraging behavior in a Y-maze setup.
+- Proposes specific follow-up experiments to test the validity of the 1PM and 2PM.
 
 ## 🎯 Consulting & Tutoring
 

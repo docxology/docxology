@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and detect the amines. Overall, dopamine content was highest, followed by octopamine, serotonin, and tyramine. There was less variation within a colony than among colonies.
+> This study quantifies the tissue content of four biogenic amines in the brains of red harvester ants from different colonies, linking foraging behavior to neurotransmitter signaling. Using capillary electrophoresis coupled with fast-scan cyclic voltammetry, the research reveals significant variation in neurotransmitter levels among colonies in a natural environment.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- First quantification of 4 biogenic amines in single ant brains from field colonies
-- Demonstrates less neurotransmitter variation within colonies than among colonies
-- Validates CE-FSCV as a method for natural neurotransmitter variation studies
+- First measurements of biogenic amine tissue content in single forager ant brains from natural populations.
+- Demonstration of capillary electrophoresis coupled with fast-scan cyclic voltammetry as an effective method for neurotransmitter analysis in small samples.
+- Identification of significant differences in neurotransmitter levels across ant colonies, suggesting environmental influences on biogenic amine signaling.
+- Establishment of a foundation for future studies correlating neurotransmitter content with ant foraging behavior.
 
 ## Methods
 
-- Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV)
-- Single-brain neurotransmitter quantification
-- Carbon-fiber microelectrode detection
-- Field-amplified sample stacking
-- Colony-level statistical comparisons
-
+- Utilized capillary electrophoresis with fast-scan cyclic voltammetry (CE-FSCV) for neurotransmitter detection.
+- Field-amplified sample stacking was employed to enhance detection limits of neurotransmitters in single ant brains.
+- Ant brains were dissected and homogenized in a controlled environment to prepare samples for analysis.
+- Statistical analysis was performed using GraphPad Prism to evaluate variations in neurotransmitter content.
 
 ## 🎯 Consulting & Tutoring
 

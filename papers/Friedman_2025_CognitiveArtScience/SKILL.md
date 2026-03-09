@@ -1,6 +1,6 @@
 ---
 name: "CognitiveArtScience"
-description: "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference..."
+description: "Expertise in integrating cognitive science and art through a systemic approach that balances exploitation and exploration, utilizing advanced methodologies like Active Inference for cognitive modeling."
 tags: ["art", "cognitive-art-science", "aesthetic-experience", "creative-cognition", "active-inference", "art-science-integration"]
 ---
 
@@ -26,14 +26,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Cognitive science framework application
-- Art-science comparative analysis
-- Active Inference aesthetic modeling
+- Utilizes a four-fold schema to analyze cognitive processes and their interrelations.
+- Applies Active Inference from a Low Road perspective for variational approximation in cognitive modeling.
+- Employs alternating analytical moves (2→3) and generative moves (4→3) to compress past data and open space for future possibilities.
+- Integrates empirical specifics with mathematical generalizations for flexible systems modeling.
 
 ## Key Findings
 
-- Develops cognitive foundations for art-science integration
-- Connects aesthetic experience with Active Inference
+- Cognitive wholeness emerges from the cooperation of explanation and anticipation across different scales.
+- Art and cognitive processes are interconnected, with art serving as a cultural reflection of cognitive understanding.
+- The proposed systems can facilitate a balance between intelligence and wisdom in cognitive science.
+- The alignment paradigm emphasizes the importance of shared cognitive experiences and mutual respect in cognitive interactions.
 
 ## Prerequisites
 

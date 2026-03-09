@@ -1,6 +1,6 @@
 ---
 name: "WoodliceAndMen"
-description: "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit..."
+description: "Expertise in Bayesian modeling and cognitive neuroscience, focusing on the integration of psychological, neural, and biological frameworks to understand cognition and consciousness."
 tags: ["active inference", "free-energy-principle", "karl-friston", "bayesian-brain", "predictive-processing", "markov-blanket"]
 ---
 
@@ -31,17 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- In-depth scholarly interview
-- Philosophical analysis
-- Free Energy Principle exposition
-- Historical-intellectual biography
+- Utilizes Bayesian inference to model cognitive processes and perceptual states.
+- Applies variational Bayes for ensemble learning and probability density dynamics.
+- Examines hierarchical structures in the brain to understand spatial and temporal processes in cognition.
+- Analyzes the reduction of surprise and informational entropy in relation to sensory data and hypotheses.
 
 ## Key Findings
 
-- Provides accessible exposition of the Free Energy Principle from its originator
-- Traces the intellectual history of the FEP from childhood intuition to formal framework
-- Discusses implications of FEP for consciousness, life, and cognition
-- Connects the FEP to Bayesian inference, predictive processing, and Markov blankets
+- The free energy principle provides a deflationary account of cognition that emphasizes simplicity.
+- Cognitive states can be modeled as posterior probabilities that evolve through Bayesian belief updating.
+- The framework distinguishes between predictive coding and Bayesian models in terms of data processing and hypothesis updating.
+- The relationship between the free energy principle and predictive coding reveals insights into top-down and bottom-up processing in the brain.
 
 ## Prerequisites
 

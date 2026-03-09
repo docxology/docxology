@@ -1,6 +1,6 @@
 ---
 name: "GreatPreset"
-description: "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inferen..."
+description: "Expertise in managing remote teams with a focus on cognitive security and operational strategies, enhancing collaboration and performance in virtual environments."
 tags: ["cognitive security", "cognitive-security", "narrative-ecosystems", "great-reset", "sensemaking", "active-inference"]
 ---
 
@@ -29,15 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Cognitive security analysis
-- Narrative ecosystem mapping
-- Active Inference framework application
+- Conducted qualitative interviews with remote team leaders and members.
+- Utilized case study analysis to identify best practices in remote team operations.
+- Applied theoretical frameworks from cognitive security and operational art to analyze findings.
+- Developed a set of guidelines based on empirical data and expert insights.
 
 ## Key Findings
 
-- Applies cognitive security analysis to large-scale socioeconomic narratives
-- Examines the Great Reset through Active Inference and information theory
-- Proposes frameworks for protecting collective sensemaking processes
+- Effective communication is crucial for maintaining trust and collaboration in remote teams.
+- Cognitive security practices significantly enhance team performance and resilience.
+- Operational art principles can be adapted to improve remote team strategies.
+- Case studies reveal diverse approaches to overcoming challenges in remote teamwork.
 
 ## Prerequisites
 

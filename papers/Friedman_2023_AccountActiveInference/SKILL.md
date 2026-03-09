@@ -1,6 +1,6 @@
 ---
 name: "AccountActiveInference"
-description: "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li..."
+description: "Proficient in developing generative models for cognitive systems using Active Inference, integrating analytical and artistic approaches to enhance understanding of cognition."
 tags: ["active inference", "active-inference", "generative-modeling", "accounting-metaphor", "active-accountants", "cognitive-modeling"]
 ---
 
@@ -29,15 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Metaphorical mapping (accounting → generative modeling)
-- Active Inference modeling practice analysis
-- Cognitive systems accounting framework
+- Utilizes a four-fold partition to model Internal, External, Sensory, and Active states as a cognitive Tetrahedra.
+- Applies category theory approaches to enhance Active Inference modeling.
+- Employs analytical stances to account for cognitive properties and processes.
+- Integrates artistic and scientific perspectives in the crafting of generative models.
 
 ## Key Findings
 
-- Introduces 'Active AccountAnts' metaphor for generative modeling practice
-- Maps financial accounting principles to Active Inference model development
-- Distinguishes research questions from application in generative modeling
+- Demonstrates that generative models can effectively account for complex cognitive phenomena.
+- Highlights the limitations of traditional cognitive models that focus on specific phenomena.
+- Suggests that Active Inference can provide deeper insights into cognitive systems by saying less about specific phenomena.
+- Indicates that the relationship between financial and cognitive accounting is more profound than previously understood.
 
 ## Prerequisites
 

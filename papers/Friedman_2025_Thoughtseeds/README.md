@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete and cooperate within a cognitive landscape, using Active Inference to formalize the dynamics of attention, awareness, and thought emergence during meditation.
+> The Thoughtseeds Framework presents a novel computational model for understanding thought dynamics during meditative states, conceptualizing thoughtseeds as dynamic attentional agents. This hierarchical model simulates focused-attention Vipassana meditation and reveals insights into attention regulation and meta-cognitive awareness.
 
 ## Keywords
 
@@ -21,17 +21,17 @@
 
 ## Key Contributions
 
-- Introduces Thoughtseeds framework for modeling thought dynamics in meditation
-- Models thoughts as self-organizing agents using Active Inference
-- Provides agentic framework for investigating meditative states
+- Introduces the Thoughtseeds Framework for modeling thought dynamics in meditation.
+- Integrates Global Workspace Theory and the Intrinsic Ignition Framework to elucidate meditative experiences.
+- Demonstrates the framework's applicability through simulations comparing novice and expert meditators.
+- Offers a biologically plausible perspective on cognitive state emergence and transitions.
 
 ## Methods
 
-- Hierarchical agent-based modeling
-- Active Inference thought dynamics
-- Meditation state analysis
-- Cognitive landscape simulation
-
+- Employs a hierarchical model structured as nested Markov blankets.
+- Simulates focused-attention Vipassana meditation using rule-based training informed by neuroscience.
+- Utilizes computational modeling combined with phenomenological insights.
+- Applies the framework to investigate meditative states and mind-wandering episodes.
 
 ## 🎯 Consulting & Tutoring
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship development. PPPiP combines the advantages of individuated artistic practice with the established frameworks of improvisation and dyadic relationship interventions. Evidence from brain imaging in improvisational and aesthetic contexts supports a model in which PPPiP synergistically activates motor and cortico-limbic neural circuits associated with skilled emotive-creative processes.
+> This paper introduces Partner Pen Play in Parallel (PPPiP), a novel technique for enhancing romantic relationships through simultaneous improvisational drawing. By integrating insights from art therapy, sexology, and neuroscience, the authors propose PPPiP as a low-cost, non-clinical method for fostering intimacy and emotional well-being.
 
 ## Keywords
 
@@ -21,18 +21,17 @@
 
 ## Key Contributions
 
-- Introduces PPPiP as a novel dyadic art-based relationship intervention
-- Synthesizes evidence from art therapy, sexology, and affective neuroscience
-- Proposes neural circuit model for emotive-creative co-regulation in partnerships
-- Connects controlled novelty and narrative structure to relationship health
+- Introduces PPPiP as a new paradigm for relationship improvement.
+- Synthesizes interdisciplinary evidence supporting the efficacy of artistic creation in enhancing intimate relationships.
+- Highlights the importance of narrative structure and controlled novelty in partnerships.
+- Demonstrates how PPPiP can promote neural synchrony and joint attention between partners.
 
 ## Methods
 
-- Interdisciplinary literature synthesis
-- Art therapy framework analysis
-- Neuroscience of improvisation review
-- Concept development and prospective design
-
+- Describes PPPiP as the act of two individuals drawing together on the same sheet of paper.
+- Utilizes insights from art therapy, sexology, and affective neuroscience to support the practice.
+- Emphasizes the non-clinical, improvisational nature of PPPiP compared to traditional art therapy.
+- Explores the impact of joint attention and neural synchrony during the drawing process.
 
 ## 🎯 Consulting & Tutoring
 

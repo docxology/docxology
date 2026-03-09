@@ -1,6 +1,6 @@
 ---
 name: "NuclearStructure"
-description: "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec..."
+description: "Expertise in analyzing the impact of nuclear structure on radiation-induced DNA damage and the formation of lethal lesions, utilizing advanced genomic sequencing techniques."
 tags: ["genetics & biomedical research", "hi-c", "chromosome-conformation", "radiation-biology", "chromatin-architecture", "dna-damage"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Hi-C chromosome conformation capture
-- Chromatin conformation analysis
-- Radiation biology techniques
-- Bioinformatics pipeline for Hi-C data
-- Literature review and synthesis
+- High-throughput sequencing of chromosome conformation capture experiments.
+- Analysis of spatial organization of DNA within the nucleus.
+- Examination of transcriptional programs linking genomic locations.
+- Review of existing models of radiation-induced DNA damage and repair mechanisms.
 
 ## Key Findings
 
-- Reviews the intersection of radiation biology and 3D genome organization
-- Discusses Hi-C applications for understanding radiation-induced chromatin reorganization
-- Synthesizes evidence on how ionizing radiation disrupts TADs and chromatin architecture
+- Lethal chromosome rearrangements are more likely to occur when damage affects multiple sites of contact within the DNA.
+- Transcriptionally active regions of the genome are preferentially susceptible to radiation-induced damage.
+- The spatial distribution of DNA and timing of radiation events significantly influence the formation of lethal lesions.
+- High-throughput spatial analysis can enhance understanding of chromosome aberrations that lead to cell death.
 
 ## Prerequisites
 

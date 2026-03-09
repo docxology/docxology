@@ -1,6 +1,6 @@
 ---
 name: "AntGenetics"
-description: "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning..."
+description: "Expertise in ant genetics, focusing on the interplay between genetic, epigenetic, and environmental factors influencing ant behavior and physiology."
 tags: ["entomology", "ants", "behavioral-genetics", "genomics", "colony-organization", "caste-determination"]
 ---
 
@@ -31,18 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Genomic and transcriptomic analysis
-- Behavioral genetics approaches
-- Comparative phylogenetics
-- Gene expression profiling
-- Literature synthesis and review
+- Utilizes quantitative genetic approaches to assess heritability of task performance.
+- Employs transcriptomic studies to analyze gene expression patterns.
+- Conducts phylogenetic analyses of DNA sequence homology.
+- Investigates epigenetic mechanisms affecting gene regulation.
 
 ## Key Findings
 
-- Provides comprehensive review of ant behavioral genetics for Annual Review of Neuroscience
-- Synthesizes colony-level behavioral ecology with molecular and genetic mechanisms
-- Highlights the foraging gene as a case study in behavioral genetics across social insect species
-- Identifies key unresolved questions at the genetics–behavior interface in ants
+- Demonstrates significant transcriptomic and epigenetic differences between reproductive and sterile females, as well as between males and females.
+- Establishes a genetic association with reproductive status in certain ant species.
+- Finds evidence of heritability in task performance among ant workers.
+- Identifies the role of gene expression in various behaviors, including foraging and response to queens.
 
 ## Prerequisites
 

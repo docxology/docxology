@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institute's evolving mission and impact across diverse application domains.
+> The Active Inference Institute (AII) is dedicated to advancing the understanding and application of the Active Inference framework through education and research. It aims to enhance accessibility and rigor in the field, fostering a collaborative environment for individuals from diverse backgrounds.
 
 ## Keywords
 
@@ -21,13 +21,17 @@
 
 ## Key Contributions
 
-- Documents AII v3 organizational growth and expanded research portfolio
+- Establishment of a participatory Open Science institute focused on Active Inference.
+- Creation of a living document to facilitate direct interaction and learning.
+- Development of various programs and projects to engage the community in Active Inference.
+- Provision of resources such as podcasts, videos, and collaborative textbooks.
 
 ## Methods
 
-- Organizational documentation
-- Impact assessment
-
+- Utilization of interactive platforms like Discord for community engagement.
+- Implementation of projects that encourage collaborative learning and research.
+- Organization of events and activities to promote knowledge sharing.
+- Curating educational materials and resources for diverse audiences.
 
 ## 🎯 Consulting & Tutoring
 

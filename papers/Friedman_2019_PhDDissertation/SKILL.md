@@ -1,6 +1,6 @@
 ---
 name: "PhDDissertation"
-description: "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neuroche..."
+description: "Expertise in analyzing behavioral and physiological variations in social insects through transcriptomic and pharmacological methodologies."
 tags: ["entomology", "phd-dissertation", "pogonomyrmex-barbatus", "collective-behavior", "transcriptomics", "behavioral-ecology"]
 ---
 
@@ -31,19 +31,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- RNA-Seq transcriptomics
-- qRT-PCR
-- HPLC neurotransmitter analysis
-- Field behavioral experiments
-- Desiccation physiology assays
-- Statistical genomics
-- Multilevel modeling
+- Conducted transcriptomic profiling of forager brains to assess gene expression differences.
+- Performed pharmacological experiments to evaluate the effects of dopamine on foraging behavior.
+- Executed manipulative field experiments to study foraging trips in relation to hydration levels.
+- Utilized RNA-seq to analyze gene expression variation within and among colonies.
 
 ## Key Findings
 
-- Comprehensive dissertation integrating genes, neurochemistry, behavior, and ecology
-- Demonstrates colony-level variation in foraging behavior, physiology, and gene expression
-- Bridges individual-level molecular mechanisms with colony-level behavioral ecology
+- Significant differences in brain biogenic amine titers were found among colonies.
+- Increased dopamine levels correlated with heightened foraging activity.
+- Foragers from colonies that reduced foraging in dry conditions exhibited faster water loss and motor coordination decline.
+- Gene expression patterns were linked to colony traits and evolutionary constraints.
 
 ## Prerequisites
 

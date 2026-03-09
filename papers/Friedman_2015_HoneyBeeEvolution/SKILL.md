@@ -1,6 +1,6 @@
 ---
 name: "HoneyBeeEvolution"
-description: "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
+description: "Expertise in analyzing gene expression and evolutionary mechanisms underlying phenotypic novelty in honey bees, utilizing RNA-Seq methodologies."
 tags: ["genetics & biomedical research", "honey-bees", "apis-mellifera", "rna-seq", "taxonomically-restricted-genes", "novel-traits"]
 ---
 
@@ -32,19 +32,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- RNA-Seq transcriptomics
-- Differential gene expression analysis
-- Taxonomically restricted gene (TRG) identification
-- Coding sequence evolutionary rate analysis
-- BLASTp homology searches
-- Statistical enrichment tests
+- Conducted ten RNA-Seq experiments across various honey bee tissues.
+- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
+- Compared gene expression in novel versus conserved tissues to assess the role of coding sequence changes.
+- Examined differentially expressed genes (DEGs) between different adult castes (nurses and foragers).
 
 ## Key Findings
 
-- Demonstrates TRGs are enriched in novel honey bee tissues
-- Provides RNA-Seq data for honey bee royal jelly, venom, and wax glands
-- Supports the hypothesis that novel traits preferentially recruit novel genes
-- Shows elevated rates of coding sequence change in TRG-enriched tissues
+- Highly expressed TRGs are significantly associated with novel physiological functions in honey bees.
+- Positively selected genes are often the least connected within gene expression networks, allowing for rapid coding sequence changes.
+- TRGs play a critical role in the evolution of social behaviors and novel traits in honey bees.
+- The study suggests that coding sequence changes are more important than previously thought for adult phenotypic novelty.
 
 ## Prerequisites
 

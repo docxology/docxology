@@ -1,6 +1,6 @@
 ---
 name: "ATLAS"
-description: "The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities..."
+description: "Proficient in developing and implementing knowledge management systems that integrate pattern language methodologies for enhanced data interoperability and cognitive security."
 tags: ["cognitive security", "atlas", "pattern-languages", "knowledge-management", "question-oriented-approach", "information-architecture"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Pattern language development
-- Question-oriented knowledge structuring
-- Knowledge management system design
-- Multi-contributor collaborative development
+- Creation of digital prototypes and paper-and-pencil implementations of the ATLAS architecture.
+- Utilization of pattern language approaches to structure and communicate knowledge.
+- Application of a low-code platform (Coda.io) for developing an alpha version of the COGSEC ATLAS.
+- Incorporation of community feedback to refine and extend the knowledge resource.
 
 ## Key Findings
 
-- Develops ATLAS question-oriented pattern language for knowledge management
-- Provides structured methods for organizing knowledge through question patterns
-- Creates comprehensive tool addressing complexity of modern information environments
+- ATLAS facilitates the management of complex data sets without requiring fully shared standards.
+- The system showcases adaptability in addressing the challenges of information overload and specialization fragility.
+- Initial implementations indicate potential for local contributions and extensions to the knowledge resource.
+- The ongoing evolution of ATLAS highlights its significance in data analysis and cognitive security.
 
 ## Prerequisites
 

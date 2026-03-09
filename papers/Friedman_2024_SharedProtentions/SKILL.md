@@ -1,6 +1,6 @@
 ---
 name: "SharedProtentions"
-description: "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz..."
+description: "Expertise in integrating phenomenological philosophy with mathematical modeling to analyze collective action and shared goals in multi-agent systems."
 tags: ["active inference", "shared-protentions", "multi-agent", "active-inference", "anticipation", "coupled-generative-models"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Multi-agent Active Inference modeling
-- Shared generative model formalization
-- Anticipatory coordination analysis
-- Category-theoretic framework
+- Review of Husserlian phenomenology focusing on inner time-consciousness concepts.
+- Application of active inference as a formal approach to model agent behavior.
+- Utilization of sheaf and topos theory to represent agent interactions and shared understanding.
+- Construction of a 'consensus topos' to analyze social action based on shared goals.
 
 ## Key Findings
 
-- Formalizes shared protentions in multi-agent Active Inference
-- Shows how coupled generative models enable coordinated anticipation
+- Shared protentions are crucial for coordination and achieving common objectives in multi-agent systems.
+- The framework provides insights into the dynamics of social action and group intentionality.
+- Mathematical modeling allows for predictions of agent behaviors and environmental responses.
+- The approach contributes to the field of computational phenomenology and naturalizes group intentionality.
 
 ## Prerequisites
 

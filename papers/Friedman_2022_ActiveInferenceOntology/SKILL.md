@@ -1,6 +1,6 @@
 ---
 name: "ActiveInferenceOntology"
-description: "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provide..."
+description: "Expertise in Active Inference principles and their applications across various domains, fostering collaborative learning and community engagement."
 tags: ["active inference", "active-inference-ontology", "knowledge-graph", "free-energy-principle", "ontology-development", "sumo"]
 ---
 
@@ -29,16 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Ontology development and formalization
-- Knowledge graph construction
-- Semantic mapping
-- Collaborative open-science methodology
+- Utilizes a living document format to continuously update and incorporate contributions from community members.
+- Applies principles of information theory and thermodynamics to analyze the interaction of living systems with their environment.
+- Engages members through various learning opportunities, including courses and collaborative research initiatives.
+- Facilitates community discourse to gather insights and perspectives from a diverse range of contributors.
 
 ## Key Findings
 
-- Develops a formal ontology for Active Inference concepts and relations
-- Provides structured navigation of the FEP/Active Inference literature
-- Establishes collaborative open-science ontology methodology
+- Active Inference serves as a unifying framework that enhances understanding of human behavior and adaptability.
+- The Institute's evolving nature reflects the diverse perspectives of its members, driving continuous improvement.
+- The framework's applications are broad, impacting fields from computational neuroscience to resource management.
+- Community engagement and collaborative efforts are essential for the sustainability and growth of the Active Inference Ecosystem.
 
 ## Prerequisites
 

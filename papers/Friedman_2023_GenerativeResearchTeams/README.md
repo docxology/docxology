@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like Active Blockference, cadCAD, and cognitive security concepts including Narrative Information Management (NIM) and Verifiable Information Ecosystem (VIE). Through collaborative environments, innovation, resilient architectures, and meta-prompting, the GRT adapts to unexpected changes.
+> The paper introduces the Generative Research Team (GRT), which integrates human, computational, and informational entities using Active Inference and cognitive security to enhance research processes. It emphasizes the modular roles within GRTs that allow for flexible resource allocation and adaptability to various research challenges.
 
 ## Keywords
 
@@ -21,19 +21,17 @@
 
 ## Key Contributions
 
-- Introduces the Generative Research Team (GRT) framework blending human and AI
-- Integrates Active Blockference and cadCAD tools for research composition
-- Applies Narrative Information Management and VIE for cognitive security
-- Develops meta-prompting approach for adaptive research processes
+- Exploration of augmented architectures for research teams.
+- Integration of Active Inference as a cognitive kernel into GRTs with shared intelligence.
+- Application of cognitive models to enhance research processes.
+- Provision of lists of related work and tools in the field.
 
 ## Methods
 
-- GRT architecture design with modular roles
-- Active Blockference and cadCAD integration
-- Cognitive security (NIM, VIE) application
-- Meta-prompting for adaptive research
-- Human-computational hybrid team design
-
+- Utilization of Active Inference as a cognitive modeling approach.
+- Implementation of systems engineering principles in GRT design.
+- Development of communication strategies for effective dissemination of research findings.
+- Use of tools like Active Blockference and cadCAD for situational awareness.
 
 ## 🎯 Consulting & Tutoring
 

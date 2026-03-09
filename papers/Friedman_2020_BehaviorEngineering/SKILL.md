@@ -1,6 +1,6 @@
 ---
 name: "BehaviorEngineering"
-description: "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for conn..."
+description: "Expertise in applying Active Inference and Systems Engineering principles to enhance communication and decision-making in Remote Teams."
 tags: ["active inference", "behavior-engineering", "systems-engineering", "organizational-behavior", "complex-adaptive-systems", "team-formation"]
 ---
 
@@ -28,15 +28,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Systems engineering framework development
-- Behavioral science synthesis
-- Organizational analysis
+- Utilizes the Active Inference framework to analyze communication in teams.
+- Applies Systems Engineering principles to define and manage team functions.
+- Investigates the role of narratives and ontologies in enhancing team communication.
+- Examines the dynamics of team formation and the impact of shared organizational culture.
 
 ## Key Findings
 
-- Proposes behavior engineering as a formal discipline
-- Bridges behavioral science with systems engineering principles
-- Provides frameworks for team and organizational behavioral design
+- Effective communication and shared narratives are crucial for the success of Remote Teams.
+- Active Inference can lead to the development of lightweight tools for decision-making.
+- The integration of Systems Engineering with Active Inference provides a novel approach to team lifecycle management.
+- Emergent teams require adaptive communication strategies to navigate complex problems.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (stopping-time rules, validated spreadsheet programs, trust in calculations) map onto the practice of generative modeling. The analytical stance of the modeler involves accounting for cognitive properties, processes, and perspectives.
+> This paper explores the development of generative models in Active Inference, emphasizing the importance of accounting for cognitive systems and phenomena. It argues for a holistic approach to understanding cognition, integrating various cognitive properties and processes through a framework that resembles financial accounting.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Introduces 'Active AccountAnts' metaphor for generative modeling practice
-- Maps financial accounting principles to Active Inference model development
-- Distinguishes research questions from application in generative modeling
+- Introduces the concept of generative models as a form of cognitive accounting.
+- Proposes a holistic approach to understanding cognition through Active Inference.
+- Establishes connections between financial accounting methods and cognitive modeling.
+- Advocates for a first-principles scale-free approach to cognitive systems.
 
 ## Methods
 
-- Metaphorical mapping (accounting → generative modeling)
-- Active Inference modeling practice analysis
-- Cognitive systems accounting framework
-
+- Utilizes a four-fold partition to model Internal, External, Sensory, and Active states as a cognitive Tetrahedra.
+- Applies category theory approaches to enhance Active Inference modeling.
+- Employs analytical stances to account for cognitive properties and processes.
+- Integrates artistic and scientific perspectives in the crafting of generative models.
 
 ## 🎯 Consulting & Tutoring
 

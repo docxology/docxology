@@ -1,6 +1,6 @@
 ---
 name: "DistributedScience"
-description: "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual rese..."
+description: "Expertise in applying Bayesian principles to model and analyze the scientific process as a distributed system of knowledge production, integrating cognitive and social dimensions."
 tags: ["active inference", "distributed-science", "multi-scale-active-inference", "scientific-process", "free-energy-principle", "meta-science"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Multi-scale Active Inference formalization
-- Scientific process modeling
-- Free energy minimization at nested scales
-- Meta-scientific analysis
+- Applies the free energy principle to model the scientific process as evidence-seeking.
+- Utilizes Bayesian belief updating to describe the dynamics of scientific cognition.
+- Explores the interaction between individual cognitive functions and collective scientific practices.
+- Employs a meta-theoretical approach to reconcile different epistemological views on science.
 
 ## Key Findings
 
-- Formalizes the scientific process as multi-scale Active Inference
-- Models researchers, labs, institutions as nested free-energy-minimizing systems
-- Applies FEP to meta-scientific challenges (replication crisis, publication bias)
-- Shows how distributed cognition emerges in scientific communities
+- Scientific knowledge production is influenced by a complex interplay of social, psychological, and material factors.
+- The Bayesian interpretation provides a formal account of how prior experiences shape scientific inquiry.
+- Active inference offers a framework for understanding intelligence as evidence generation in scientific contexts.
+- The hierarchical integration of individual and collective cognition enhances the understanding of scientific communities.
 
 ## Prerequisites
 

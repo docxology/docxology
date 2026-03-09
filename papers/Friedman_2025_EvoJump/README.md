@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work connects major evolutionary transitions theory with the Free Energy Principle.
+> This paper presents EvoJump, a unified framework for stochastic modeling of evolutionary ontogenetic trajectories, aiming to enhance the understanding of biological processes through advanced statistical methods. The framework integrates various stochastic processes to analyze evolutionary patterns and dynamics effectively.
 
 ## Keywords
 
@@ -21,15 +21,17 @@
 
 ## Key Contributions
 
-- Examines evolutionary transitions through Active Inference lens
-- Connects major transitions theory with Free Energy Principle
+- Development of a unified framework for stochastic modeling in evolutionary biology.
+- Integration of multiple stochastic processes, including Ornstein-Uhlenbeck and Lévy processes.
+- Application of advanced statistical methods such as wavelet analysis and copula methods.
+- Insights into evolutionary dynamics through case studies, including Drosophila analysis.
 
 ## Methods
 
-- Evolutionary transition analysis
-- Active Inference evolutionary modeling
-- Major transitions theory
-
+- Utilization of stochastic process modeling techniques, including Ornstein-Uhlenbeck and Cox-Ingersoll-Ross processes.
+- Implementation of wavelet analysis for multi-scale temporal patterns.
+- Application of copula methods for analyzing trait dependencies.
+- Use of Bayesian inference for parameter estimation and model validation.
 
 ## 🎯 Consulting & Tutoring
 

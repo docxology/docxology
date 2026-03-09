@@ -1,6 +1,6 @@
 ---
 name: "SystematicLiteratureAnalysis"
-description: "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and div..."
+description: "Expertise in systematic literature analysis and annotation methodologies, particularly in the context of the Free Energy Principle and Active Inference."
 tags: ["active inference", "systematic-literature-analysis", "free-energy-principle", "active-inference", "karl-friston", "history-of-science"]
 ---
 
@@ -29,17 +29,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Systematic literature analysis
-- Bibliometric methods
-- Citation network analysis
-- Ontological classification
-- Publication trend analysis
+- Utilized Publish or Perish software for citation discovery and dataset compilation.
+- Employed BioPython API to query open source publications from the NCBI Pubmed Database.
+- Conducted manual annotation of papers based on structural, visual, and mathematical features.
+- Developed an analysis pipeline for examining publication dynamics and language use.
 
 ## Key Findings
 
-- Provides first comprehensive literature analysis of FEP/Active Inference publications
-- Maps the disciplinary expansion and thematic evolution of the field
-- Identifies key trends, methods, and gaps in the Active Inference literature
+- Identified patterns in publication dynamics related to the Free Energy Principle and Active Inference.
+- Demonstrated the rapid evolution of discourse in the FEP/ActInf fields over the past two decades.
+- Highlighted the need for improved educational and research materials to address 'research debt'.
+- Showed the potential for richer interfaces to enhance learning and research engagement.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "CognitiveSovereignty"
-description: "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epist..."
+description: "Expertise in analyzing political philosophy and cognitive theories, particularly in the context of sovereignty and biopolitics, using frameworks like Active Inference."
 tags: ["cognitive security", "cognitive-sovereignty", "agamben", "homo-sacer", "active-inference", "state-of-exception"]
 ---
 
@@ -32,17 +32,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Political philosophy analysis (Agamben)
-- Active Inference theoretical mapping
-- Kuhnian paradigm shift analysis
-- Concordance identification between frameworks
+- Analyzes Homo Sacer through the framework of Active Inference.
+- Draws parallels between Agamben's concepts and cognitive theories.
+- Utilizes philosophical analysis to explore the dynamics of power and knowledge.
+- Presents a computational model (pseudocode) for the Active Stateference entity.
 
 ## Key Findings
 
-- Maps Agamben's state of exception to Active Inference affordance landscape
-- Connects cognitive sovereignty to enacted policy selection under Free Energy Principle
-- Links Kuhn's paradigm crises to belief updating and model revision in Active Inference
-- Establishes bare life ↔ prediction error correspondence
+- Identifies the state of exception as a critical concept in understanding political power dynamics.
+- Demonstrates how bare life is conceptualized in terms of variational free energy.
+- Establishes that sovereign agency can be understood through expected free energy.
+- Suggests that cognitive sovereignty plays a crucial role in the enactment of political and scientific paradigms.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
 name: "CryptoJews"
-description: "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities"
+description: "Expertise in critiquing genetic studies related to historical populations, with a focus on methodological rigor and demographic analysis."
 tags:
   - population-genetics
   - uniparental-markers

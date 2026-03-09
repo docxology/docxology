@@ -1,6 +1,6 @@
 ---
 name: "FederatedInference"
-description: "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generati..."
+description: "Expertise in modeling federated inference and belief-sharing processes in intelligent agent systems, with a focus on the emergence of language and collective intelligence through free energy minimization."
 tags: ["active inference", "federated-inference", "belief-sharing", "active-inference", "distributed-intelligence", "multi-agent-systems"]
 ---
 
@@ -30,17 +30,17 @@ When applying this skill:
 
 ## Methods & Techniques
 
-- Federated Active Inference formalization
-- Belief sharing via message passing
-- Multi-agent generative modeling
-- Distributed inference architecture design
+- Utilizes numerical simulations to model belief-sharing and active inference among synthetic agents.
+- Applies the free energy principle to describe the dynamics of belief updating and communication.
+- Examines the acquisition of language through active learning and the transmission of beliefs across generations.
+- Employs Bayesian model selection to illustrate structure learning in generative models.
 
 ## Key Findings
 
-- Formalizes federated inference extending Active Inference to distributed settings
-- Develops principled belief sharing through message passing between agents
-- Shows how collective cognition emerges without sharing raw observations
-- Provides framework for privacy-preserving distributed intelligence
+- Communication enhances the precision of shared beliefs among agents monitoring their environment.
+- Language can emerge from the active learning processes of agents operating within a common ecological niche.
+- Federated belief-sharing leads to improved inference and learning outcomes compared to isolated agents.
+- The study provides a theoretical basis for understanding consciousness as a form of shared knowledge among agents.
 
 ## Prerequisites
 

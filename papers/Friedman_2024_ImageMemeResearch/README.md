@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We provide frameworks for classifying meme content, tracking diffusion patterns, and assessing sensemaking impacts.
+> This paper presents a multidisciplinary framework, the Digital Rhetorical Ecosystem (DRE3), for scaling up qualitative analyses of image memes, examining them as quasi-arguments that influence public narratives on political and social issues. It integrates rhetorical analysis with ecological frameworks and computational methods to address the identification of claims in memes, bridging qualitative and quantitative research approaches.
 
 ## Keywords
 
@@ -21,16 +21,17 @@
 
 ## Key Contributions
 
-- Develops systematic methodologies for image meme research
-- Provides classification frameworks for meme content analysis
+- Introduces the Digital Rhetorical Ecosystem (DRE3) framework for analyzing image memes.
+- Integrates rhetorical theory with ecological frameworks to study the evolution of memetic claims.
+- Applies computational methods to enhance the identification of claims in image memes at scale.
+- Addresses the social, political, and cultural dimensions of information phenomena related to image memes.
 
 ## Methods
 
-- Meme content classification
-- Diffusion pattern tracking
-- Sensemaking impact assessment
-- Digital communication analysis
-
+- Utilizes a multidisciplinary approach combining rhetorical analysis and ecological frameworks.
+- Employs computational techniques for large-scale claim identification in image memes.
+- Analyzes the interaction and evolution of memetic claims within information ecosystems.
+- Collects and curates diverse image meme samples from various social media platforms.
 
 ## 🎯 Consulting & Tutoring
 
