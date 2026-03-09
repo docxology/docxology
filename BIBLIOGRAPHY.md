@@ -1,10 +1,16 @@
 <div align="center">
 
-# 📚 Complete Bibliography
+# 📚 Complete Bibliography — Daniel Ari Friedman, PhD
 
-**Daniel Ari Friedman — Full Publication Catalog**
+**Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
 **106 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=JJMbUjkAAAAJ)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-docxology-181717?logo=github)](https://github.com/docxology)
+
+*Stanford PhD · Active Inference Institute Officer · Available for [research consulting & tutoring](README.md#-available-for-consulting--tutoring)*
 
 </div>
 

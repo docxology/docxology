@@ -1,10 +1,17 @@
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"Person","name":"Daniel Ari Friedman","givenName":"Daniel","familyName":"Friedman","jobTitle":"AI Researcher & Consultant","description":"Researcher and consultant specializing in Active Inference, Bayesian modeling, computational entomology, and cognitive security. Stanford PhD. Available for AI consulting, tutoring, and research collaboration.","url":"https://github.com/docxology","sameAs":["https://scholar.google.com/citations?user=JJMbUjkAAAAJ","https://linkedin.com/in/danielarifriedman","https://youtube.com/@danielarifriedman","https://activeinference.institute/","https://cogsec.org"],"knowsAbout":["Active Inference","Bayesian modeling","free energy principle","computational biology","cognitive security","entomology","ant colony behavior","collective intelligence","synergetics","Buckminster Fuller","William Blake","AI consulting","machine learning","multi-agent systems","information security"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Stanford University"},"affiliation":{"@type":"Organization","name":"Active Inference Institute","url":"https://activeinference.institute/"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"PhD","recognizedBy":{"@type":"CollegeOrUniversity","name":"Stanford University"}},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Research Consulting","description":"Expert consulting in Active Inference, Bayesian modeling, computational biology, and cognitive security","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Tutoring & Mentorship","description":"Personalized tutoring in Active Inference, Python/Rust AI frameworks, and scientific writing","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}}]}
+-->
+
 <div align="center">
 
-# Daniel Ari Friedman
+# Daniel Ari Friedman, PhD
 
-**Researcher · Artist · Officer**
+**AI Researcher · Consultant · Educator · Artist**
 
-Entomology · Active Inference · Synergetics · Cognitive Security
+*Stanford PhD · Active Inference · Bayesian Modeling · Computational Biology · Cognitive Security*
+
+*Available for AI consulting, tutoring, and research collaboration*
 
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-Officer-6C3483?style=for-the-badge)](https://activeinference.institute/)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=JJMbUjkAAAAJ)
@@ -12,22 +19,36 @@ Entomology · Active Inference · Synergetics · Cognitive Security
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@danielarifriedman)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:Daniel@ActiveInference.Institute)
+[![COGSEC](https://img.shields.io/badge/COGSEC.org-Cognitive_Security-2E86C1?style=flat&logo=shield&logoColor=white)](https://cogsec.org)
 
 </div>
 
-**Quick links:** [📚 Publications](BIBLIOGRAPHY.md) · [💻 Software](SOFTWARE.md) · [📁 Papers](papers/) · [🐜 Entomology](#-entomology--social-insect-biology) · [🧠 Active Inference](#-active-inference--free-energy-principle) · [🛡️ Cognitive Security](#️-cognitive-security--information-ecosystems) · [🎨 Art & Synergetics](#-art-philosophy--synergetics)
+**Quick links:** [📚 Publications](BIBLIOGRAPHY.md) · [💻 Software](SOFTWARE.md) · [📁 Papers](papers/) · [🎯 Consulting & Tutoring](#-available-for-consulting--tutoring) · [🐜 Entomology](#-entomology--social-insect-biology) · [🧠 Active Inference](#-active-inference--free-energy-principle) · [🛡️ Cognitive Security](#️-cognitive-security--information-ecosystems) · [🎨 Art & Synergetics](#-art-philosophy--synergetics)
 
 ---
 
-## 🔬 About
+## 🔬 About — AI Researcher, Consultant & Educator
 
-I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design.
+I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. I am available for **AI research consulting**, **tutoring**, and **collaboration** on projects involving Active Inference, machine learning, and computational science.
 
 - 🐜 **Entomologist** — PhD (Stanford University, 2014-2019 with Prof. Deborah Gordon) on the behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants
-- 🧠 **Active Inference** — Researcher, educator, and organizer at the **Active Inference Institute** working on topics such as federated inference, variational evolutionary dynamics, and multi-agent generative models; builder of computational frameworks (**CEREBRUM**, **GNN**, **InferAnts**)
-- 🛡️ **Cognitive Security** — Author of books and papers on narrative information ecosystems, digital rhetorical analysis, and formal multiagent security frameworks at **COGSEC.org**
-- 🎨 **Artist** — Ink, metal, and collaborative art; explorations of William Blake, Buckminster Fuller, and Synergetics
-- 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal channel streams, as well as other courses, appearances, and open-source curricula
+- 🧠 **Active Inference Researcher** — Researcher, educator, and organizer at the **Active Inference Institute** working on federated inference, variational evolutionary dynamics, and multi-agent generative models; builder of computational AI frameworks (**CEREBRUM**, **GNN**, **InferAnts**)
+- 🛡️ **Cognitive Security Expert** — Author of books and papers on narrative information ecosystems, digital rhetorical analysis, and formal multiagent security frameworks at **[COGSEC.org](https://cogsec.org)**
+- 🎨 **Artist & Philosopher** — Ink, metal, and collaborative art; explorations of William Blake, Buckminster Fuller, and Synergetics
+- 📺 **Educator & Tutor** — 500+ Active Inference livestreams, 200+ personal channel streams, university courses, conference workshops, open-source curricula, and private tutoring
+
+---
+
+## 🎯 Available for Consulting & Tutoring
+
+| Service | Areas of Expertise | Get in Touch |
+|---------|-------------------|--------------|
+| 🔬 **Research Consulting** | Active Inference · Bayesian modeling · Computational biology · Cognitive security · Multi-agent systems | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
+| 🎓 **Tutoring & Mentorship** | Active Inference fundamentals · Python/Rust AI frameworks · Scientific writing · Graduate-level Bayesian methods | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
+| 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
+| 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
+
+> **106 publications** · **77 open-source repositories** · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
@@ -247,7 +268,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ---
 
-## 🗺️ Research Themes
+## 🗺️ Research Themes & Expertise Areas
 
 ```
 Active Inference ──── Entomology ──── Cognitive Security
@@ -262,6 +283,8 @@ Active Inference ──── Entomology ──── Cognitive Security
    Synergetics ────── Ecology ─────── Decentralized
    (Fuller, Blake)    (Consciousness)    Science (DeSci)
 ```
+
+**Keywords**: Active Inference, free energy principle, Bayesian brain, computational neuroscience, ant colony optimization, collective intelligence, myrmecology, cognitive security, information warfare, narrative ecosystems, Buckminster Fuller, synergetics, William Blake, AI consulting, machine learning tutoring, research collaboration, Python, Rust, multi-agent systems, variational inference
 
 ---
 

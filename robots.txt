@@ -1,0 +1,7 @@
+# Robots.txt for docxology profile repository
+# https://github.com/docxology/docxology
+
+User-agent: *
+Allow: /
+
+Sitemap: https://docxology.github.io/docxology/sitemap.xml

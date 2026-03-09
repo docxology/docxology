@@ -1,10 +1,14 @@
 <div align="center">
 
-# 💻 Software
+# 💻 Software — Open-Source AI, Scientific Computing & Research Tools
 
-**Open-Source Repositories by Daniel Ari Friedman ([@docxology](https://github.com/docxology))**
+**Open-Source Repositories by Daniel Ari Friedman, PhD ([@docxology](https://github.com/docxology))**
+
+*Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
 *46 original repositories · 31 Active Inference Institute contributions*
+
+*Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring)*
 
 </div>
 
