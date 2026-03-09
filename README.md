@@ -9,9 +9,9 @@
 
 **AI Researcher · Consultant · Educator · Artist**
 
-*Stanford PhD · Active Inference · Bayesian Modeling · Computational Biology · Cognitive Security*
+Active Inference · Bayesian Modeling · Computational Biology · Cognitive Security*
 
-*Available for AI consulting, tutoring, and research collaboration*
+*Available for consulting, tutoring, and research collaboration*
 
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-Officer-6C3483?style=for-the-badge)](https://activeinference.institute/)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=JJMbUjkAAAAJ)
