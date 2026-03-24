@@ -6,11 +6,13 @@
 
 **106 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=JJMbUjkAAAAJ)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-700+_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?style=flat&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Daniel-Friedman-2)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-docxology-181717?logo=github)](https://github.com/docxology)
 
-*Stanford PhD · Active Inference Institute Officer · Available for [research consulting & tutoring](README.md#-available-for-consulting--tutoring)*
+*Stanford PhD · Active Inference Institute President · Available for [research consulting & tutoring](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
 </div>
 

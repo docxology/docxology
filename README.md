@@ -1,6 +1,6 @@
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"Person","name":"Daniel Ari Friedman","givenName":"Daniel","familyName":"Friedman","jobTitle":"AI Researcher & Consultant","description":"Researcher and consultant specializing in Active Inference, Bayesian modeling, computational entomology, and cognitive security. Stanford PhD. Available for AI consulting, tutoring, and research collaboration.","url":"https://github.com/docxology","sameAs":["https://scholar.google.com/citations?user=JJMbUjkAAAAJ","https://linkedin.com/in/danielarifriedman","https://youtube.com/@danielarifriedman","https://activeinference.institute/","https://cogsec.org"],"knowsAbout":["Active Inference","Bayesian modeling","free energy principle","computational biology","cognitive security","entomology","ant colony behavior","collective intelligence","synergetics","Buckminster Fuller","William Blake","AI consulting","machine learning","multi-agent systems","information security"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Stanford University"},"affiliation":{"@type":"Organization","name":"Active Inference Institute","url":"https://activeinference.institute/"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"PhD","recognizedBy":{"@type":"CollegeOrUniversity","name":"Stanford University"}},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Research Consulting","description":"Expert consulting in Active Inference, Bayesian modeling, computational biology, and cognitive security","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Tutoring & Mentorship","description":"Personalized tutoring in Active Inference, Python/Rust AI frameworks, and scientific writing","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}}]}
+{"@context":"https://schema.org","@type":"Person","name":"Daniel Ari Friedman","givenName":"Daniel","familyName":"Friedman","jobTitle":"AI Researcher & Consultant","description":"Researcher and consultant specializing in Active Inference, Bayesian modeling, computational entomology, and cognitive security. Stanford PhD. Available for AI consulting, tutoring, and research collaboration.","url":"https://github.com/docxology","sameAs":["https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en","https://orcid.org/0000-0001-6232-9096","https://www.researchgate.net/profile/Daniel-Friedman-2","https://linkedin.com/in/danielarifriedman","https://youtube.com/@danielarifriedman","https://www.danielarifriedman.com/","https://activeinference.institute/","https://cogsec.org","https://curio.cards/artist/danielfriedman/","https://www.wikidata.org/wiki/Q85887463","https://www.instagram.com/danielarifriedman/","https://www.flickr.com/photos/daniel_friedman/"],"knowsAbout":["Active Inference","Bayesian modeling","free energy principle","computational biology","cognitive security","entomology","ant colony behavior","collective intelligence","synergetics","Buckminster Fuller","William Blake","AI consulting","machine learning","multi-agent systems","information security","variational inference","computational neuroscience","NFT art","Curio Cards","complexity science"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Stanford University"},"affiliation":{"@type":"Organization","name":"Active Inference Institute","url":"https://activeinference.institute/"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"PhD","recognizedBy":{"@type":"CollegeOrUniversity","name":"Stanford University"}},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Research Consulting","description":"Expert consulting in Active Inference, Bayesian modeling, computational biology, and cognitive security","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Tutoring & Mentorship","description":"Personalized tutoring in Active Inference, Python/Rust AI frameworks, and scientific writing","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}}]}
 -->
 
 <div align="center">
@@ -13,29 +13,34 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 
 *Available for consulting, tutoring, and research collaboration*
 
-[![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-Officer-6C3483?style=for-the-badge)](https://activeinference.institute/)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=JJMbUjkAAAAJ)
+[![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.institute/)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-700+_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@danielarifriedman)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:Daniel@ActiveInference.Institute)
 [![COGSEC](https://img.shields.io/badge/COGSEC.org-Cognitive_Security-2E86C1?style=flat&logo=shield&logoColor=white)](https://cogsec.org)
+[![Website](https://img.shields.io/badge/Website-danielarifriedman.com-000?logo=globe&logoColor=white)](https://www.danielarifriedman.com/)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Daniel-Friedman-2)
+[![Curio Cards](https://img.shields.io/badge/Curio_Cards-NFT_Pioneer-FF6B6B?style=flat)](https://curio.cards/artist/danielfriedman/)
 
 </div>
 
-**Quick links:** [📚 Publications](BIBLIOGRAPHY.md) · [💻 Software](SOFTWARE.md) · [📁 Papers](papers/) · [🎯 Consulting & Tutoring](#-available-for-consulting--tutoring) · [🐜 Entomology](#-entomology--social-insect-biology) · [🧠 Active Inference](#-active-inference--free-energy-principle) · [🛡️ Cognitive Security](#️-cognitive-security--information-ecosystems) · [🎨 Art & Synergetics](#-art-philosophy--synergetics)
+**Quick links:** [📚 Publications](BIBLIOGRAPHY.md) · [💻 Software](SOFTWARE.md) · [📁 Papers](papers/) · [🔗 All Links](LINKS.md) · [👤 Full Profile](PROFILE.md) · [🤝 Collaborators](COLLABORATORS.md) · [🎥 Media & Talks](MEDIA.md) · [🎯 Consulting](#-available-for-consulting--tutoring)
 
 ---
 
 ## 🔬 About — AI Researcher, Consultant & Educator
 
-I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. I am available for **AI research consulting**, **tutoring**, and **collaboration** on projects involving Active Inference, machine learning, and computational science.
+I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. I am available for **AI research consulting**, **tutoring**, and **collaboration** on projects involving Active Inference, machine learning, and computational science. [Full biography →](PROFILE.md)
 
-- 🐜 **Entomologist** — PhD (Stanford University, 2014-2019 with Prof. Deborah Gordon) on the behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants
-- 🧠 **Active Inference Researcher** — Researcher, educator, and organizer at the **Active Inference Institute** working on federated inference, variational evolutionary dynamics, and multi-agent generative models; builder of computational AI frameworks (**CEREBRUM**, **GNN**, **InferAnts**)
-- 🛡️ **Cognitive Security Expert** — Author of books and papers on narrative information ecosystems, digital rhetorical analysis, and formal multiagent security frameworks at **[COGSEC.org](https://cogsec.org)**
-- 🎨 **Artist & Philosopher** — Ink, metal, and collaborative art; explorations of William Blake, Buckminster Fuller, and Synergetics
-- 📺 **Educator & Tutor** — 500+ Active Inference livestreams, 200+ personal channel streams, university courses, conference workshops, open-source curricula, and private tutoring
+- 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](COLLABORATORS.md#deborah-gordon--stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Fellow at UC Davis (2020–2023)
+- 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.institute/)** (501(c)(3) non-profit); co-author with [Karl Friston](COLLABORATORS.md#karl-friston--ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
+- 🛡️ **Cognitive Security Expert** — 3 books + 16 papers on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
+- 🎨 **Artist & NFT Pioneer** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (first art NFTs on Ethereum mainnet, minted May 9, 2017; [Christie's auction Oct 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://www.danielarifriedman.com/art.html)
+- 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, university courses (BIOL-1, BIOL-8), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops, and private tutoring
+- 🌐 **Community Builder** — Co-founder of [Complexity Weekend](https://www.complexityadventures.com/) (since 2019); co-organized Stanford Complexity Group
 
 ---
 
@@ -61,6 +66,10 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 📚 [**BIBLIOGRAPHY.md**](BIBLIOGRAPHY.md) | Unified sortable table of **all 106 publications** — every paper, book, and presentation with DOI links, domain tags, and deep-links to paper folders |
 | 💻 [**SOFTWARE.md**](SOFTWARE.md) | **46 owned repos** + **31 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure |
 | 📁 [**papers/**](papers/) | **99 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
+| 🔗 [**LINKS.md**](LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
+| 👤 [**PROFILE.md**](PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
+| 🤝 [**COLLABORATORS.md**](COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications and institutional map |
+| 🎥 [**MEDIA.md**](MEDIA.md) | **Talks, podcasts & press** — conference presentations, podcast appearances, video series, courses, interviews, and press coverage |
 
 ### By Domain
 

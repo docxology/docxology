@@ -8,7 +8,7 @@
 
 *46 original repositories · 31 Active Inference Institute contributions*
 
-*Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring)*
+*Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
 </div>
 
@@ -143,6 +143,6 @@
 
 <div align="center">
 
-*See also [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog · [README.md](README.md) for profile overview*
+*See also [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog · [README.md](README.md) for profile overview · [LINKS.md](LINKS.md) for all web presences · [COLLABORATORS.md](COLLABORATORS.md) for research network*
 
 </div>
