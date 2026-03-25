@@ -4,9 +4,9 @@
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**106 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**107 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-700+_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?style=flat&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Daniel-Friedman-2)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
@@ -22,15 +22,16 @@
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**88** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**89** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **99 citable works** with paper folders · **95 DOI links** · **37 venues**
+> **100 citable works** with paper folders · **96 DOI links** · **37 venues**
 
 ---
 
 | # | Year | Domain | Type | Title | Venue | DOI/Link | Docs |
 |--:|:----:|:------:|:----:|-------|-------|----------|:----:|
-| 1 | 2026 | 🎥 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | *YouTube* | [video.activeinference.institute](https://video.activeinference.institute/) | — |
+| 1 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090) | [📁](papers/Friedman_2026_ReproducibleResearch/) |
+| 2 | 2026 | 🎥 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | *YouTube* | [video.activeinference.institute](https://video.activeinference.institute/) | — |
 | 2 | 2026 | 🎨 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | *Zenodo* | [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970) | [📁](papers/Friedman_2026_BeforePragmatism/) |
 | 3 | 2026 | 🛡️ | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | *Zenodo* | [10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119) | [📁](papers/Friedman_2026_CognitiveIntegrity/) |
 | 4 | 2026 | 🎥 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | *YouTube* | [youtube.com/@danielarifriedman](https://www.youtube.com/@danielarifriedman/playlists) | — |

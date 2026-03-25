@@ -14,7 +14,7 @@
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and pioneering NFT art on the Ethereum blockchain. His work has garnered 700+ citations on Google Scholar across 100+ publications.
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and pioneering NFT art on the Ethereum blockchain. His work has garnered **727 citations** on Google Scholar (h-index: 15, i10-index: 17) across 107 publications.
 
 ---
 
@@ -25,7 +25,7 @@ Stanford University, Stanford, CA
 Advisor: Professor Deborah M. Gordon
 Thesis: *Behavioral, Physiological, and Transcriptomic Variation Among Colonies of the Red Harvester Ant (Pogonomyrmex barbatus)*
 [Stanford Digital Repository](http://purl.stanford.edu/pb813wm1484)
-Field research conducted at [Jasper Ridge Biological Preserve](https://jrbp.stanford.edu/content/ant-survey-participants) (ant surveys 2014–2015)
+Field research conducted at [Jasper Ridge Biological Preserve](https://jrbp.stanford.edu/content/ant-survey-participants) (ant surveys 2014–2015) and a long-term field site in New Mexico
 
 **NSF Postdoctoral Research Fellowship in Biology** (2020–2023)
 UC Davis, Department of Entomology & Nematology
@@ -49,11 +49,17 @@ As principal investigator and president of the Active Inference Institute, Fried
 
 ### Cognitive Security & Information Ecosystems
 
-Through COGSEC.org, Friedman has authored three books and numerous papers on narrative security, digital rhetoric, information commons, and formal multi-agent security frameworks. This work applies Active Inference and complexity science to understand and improve information ecosystems — from trust systems and cognitive sovereignty to AI accountability policy comments submitted to NTIA and other agencies.
+Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education Forum, informally founded 2018 by RJ Cordes, with Friedman as honorary co-founder by 2019), Friedman has authored 19+ papers and 3 books on narrative security, digital rhetoric, information commons, and formal multi-agent security frameworks. Notable COGSEC volumes include *The Great Preset* (IRT-20, 2020), *Narrative Information Ecosystems* (NIM-21, 2021), *Structuring the Information Commons* (CAT-22, 2022), and *ATLAS* (2023–2024) — a question-oriented approach to pattern languages for knowledge management. Core frameworks include **P3IF** (Properties, Processes, and Perspectives Inter-Framework) for multiplexing interdisciplinary requirements frameworks ([DOI 10.5281/zenodo.7093837](https://doi.org/10.5281/zenodo.7093837)), developed in affiliation with DHS Office of Health Security, UW Applied Physics Lab, Pivot for Humanity, and UC Davis; and the **Cognitive Integrity Framework** for formal multiagent security foundations ([DOI 10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119)). This work applies Active Inference and complexity science to understand and improve information ecosystems — from trust systems and cognitive sovereignty to AI accountability.
 
 ### Art, Philosophy & Synergetics
 
-Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks. Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collection was sold directly on-chain for $0.50–$1.00 per card. A full set of Curio Cards was later auctioned at Christie's on October 1, 2021.
+Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). On May 9, 2017, three of his pen drawings were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks:
+
+- **Card 24** — "Complexity" (333 copies): fragmented geometric fields inspired by brains, ant colonies, and complex systems
+- **Card 25** — (222 copies): rhythmic patterns exploring complexity, passion, and education
+- **Card 26** — (106 copies, rarest in set): playful decreasing supply mechanic; last recorded sale at **17.9 ETH** (>$44,000)
+
+Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collection from **seven artists** (Cryptograffiti, Cryptopop, Daniel Friedman, Marisol Vengas, Phneep, Robek World, Thoros of Myr) was sold directly on-chain for $0.50–$1.00 per card using individual ERC-20 contracts (predating ERC-721). A full set of Curio Cards plus the rare "17b" misprint sold at **Christie's** on October 1, 2021 for over **$1.2 million (393 ETH)** — the first ETH-denominated auction at Christie's.
 
 ### Computational Frameworks
 
@@ -70,9 +76,12 @@ Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and J
 **Website**: [activeinference.institute](https://www.activeinference.institute/)
 **GitHub**: [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute)
 
-The Active Inference Institute emerged from foundational team meetings in 2019–2020 (initially as the Active Inference Lab) and was formally incorporated as a 501(c)(3) non-profit in 2021. Co-founded by Friedman, Alexander Vyatkin, and Yvonne, the Institute is an educational and open science organization supporting diverse projects and infrastructure for learning, teaching, and applying Active Inference. Under Friedman's leadership, the Institute has produced 500+ educational videos, organized five annual Applied Active Inference Symposia (2021–2025), developed open-source tools (GNN, CEREBRUM, ActiveInferAnts), and built a global community of researchers, students, and practitioners.
+The Active Inference Institute emerged from foundational team meetings in 2019–2020 (initially as the Active Inference Lab). The organization transitioned to a non-profit in mid-2022, registered in **Delaware, USA**, and received official **501(c)(3) recognition in 2024** (supported pro bono by Fried Frank law firm). Co-founded by Friedman, Alexander Vyatkin, and Yvonne, the Institute is an educational and open science organization supporting diverse projects and infrastructure for learning, teaching, and applying Active Inference. Under Friedman's leadership, the Institute has produced 500+ educational videos, organized five annual Applied Active Inference Symposia (2021–2025), developed open-source tools (GNN, CEREBRUM, ActiveInferAnts), built a global community, and publishes a monthly newsletter via [Substack](https://activeinferenceinstitute.substack.com/).
+
+**Programs**: Textbook Group (7 cohorts through 2024), Internship Program (since 2022), Fellows Program (5 Research Fellows by Nov 2024), Mentorship Program (launched 2024).
 
 **Current Officers (2025)**:
+
 - Daniel Friedman — President and Treasurer
 - Alexandra Mikhailova — Vice-President and Secretary (2025–ongoing)
 
@@ -81,12 +90,12 @@ The Active Inference Institute emerged from foundational team meetings in 2019�
 **Board of Directors**: [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors)
 **History**: [activeinference.institute/history](https://www.activeinference.institute/history)
 
-### COGSEC.org
+### COGSEC.org (Cognitive Security and Education Forum)
 
-**Role**: Founder
+**Role**: Honorary Co-founder (with RJ Cordes, 2018–2019)
 **Website**: [cogsec.org](https://cogsec.org)
 
-COGSEC focuses on cognitive security — the protection and strengthening of information ecosystems through formal frameworks, open standards, and applied research.
+Founded in 2018 in response to Rand Waltzman's 2017 Senate Armed Services Committee testimony "The Weaponization of Information," COGSEC focuses on cognitive security — the protection and strengthening of information ecosystems through education, sensemaking, red teaming, wargaming, and applied research. COGSEC emphasizes nongovernmental approaches to cognitive resilience and provisional interorganizational teams for research on gray zone information threats. Publications span four named volumes: IRT-20, NIM-21, CAT-22, and ATLAS-23/24.
 
 ### Complexity Weekend / Complexity Adventures
 
@@ -116,7 +125,7 @@ Friedman's visual art practice encompasses high-investment black-and-white abstr
 
 On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint was auctioned at Christie's on October 1, 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
 
-**Art portfolio**: [danielarifriedman.com/art.html](https://www.danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
+**Art portfolio**: [Local Gallery](art/README.md) · [danielarifriedman.com/art.html](https://www.danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
 
 ---
 
@@ -132,6 +141,8 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 - **Thomas Parr** (UCL) — Active Inference, variational synthesis, multi-agent systems
 - **Riddhi Pitliya** — Thoughtseeds framework, Active Inference applications
 - **Maxwell Ramstead** — Multi-agent Active Inference, shared protentions
+- **Conor Heins** — Active Inference computational models
+- **Tim Verbelen** — Active Inference implementations
 - **Eirik Søvik** — Ant consciousness
 - **Robert Cordes** — Image meme research, multidisciplinary paradigms
 - **Axel Constant** — Variational synthesis, evolutionary dynamics
@@ -143,9 +154,12 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 | Metric | Count |
 |--------|-------|
 | Publications | 106 |
-| Google Scholar Citations | 700+ |
-| h-index (estimated) | ~16 |
+| Google Scholar Citations | 727 |
+| h-index | 15 |
+| i10-index | 17 |
+| Citations since 2021 | 495 |
 | Open-Source Repositories (owned) | 46 |
+| GitHub Public Repositories (total) | 251 |
 | Active Inference Institute Repos | 31 |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |

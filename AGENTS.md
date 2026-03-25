@@ -49,7 +49,7 @@
 ```
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── BIBLIOGRAPHY.md    ← Unified sortable table of 106 publications with DOI links
+├── BIBLIOGRAPHY.md    ← Unified sortable table of 107 publications with DOI links
 ├── SOFTWARE.md        ← 46 owned repos + 31 AII contributions
 ├── LINKS.md           ← Comprehensive directory of all web presences and profiles
 ├── PROFILE.md         ← Detailed biographical profile (education, research, art, orgs)
@@ -99,3 +99,17 @@ docxology/
 | 2026-03-24 | ARCHIVIST | Added Thomas Parr (UCL) as collaborator, ALIUS Research Group context, Christie's auction (Oct 2021) | ✅ |
 | 2026-03-24 | INTEGRATOR | Added ScholarGPS, ISSS wiki, NFT Archaeology, Christie's lot links to LINKS.md | ✅ |
 | 2026-03-24 | MAINTAINER | Fact-checked all files via deep internet research (Perplexity); updated index.html, sitemap.xml | ✅ |
+| 2026-03-25 | RESEARCHER | 5-round deep Perplexity research audit: verified h-index 15, i10-index 17, 727 citations, 251 GitHub repos | ✅ |
+| 2026-03-25 | INTEGRATOR | Added Conor Heins & Tim Verbelen (VERSES AI) to COLLABORATORS.md, PROFILE.md, WIKIPEDIA.md | ✅ |
+| 2026-03-25 | ARCHIVIST | Added PubMed, Zenodo links to LINKS.md; added Denise Holt press feature across LINKS/MEDIA | ✅ |
+| 2026-03-25 | INTEGRATOR | Updated Scholar badges to 727 across README, BIBLIOGRAPHY, index.html; added h-index/i10-index to PROFILE | ✅ |
+| 2026-03-25 | MAINTAINER | Updated sitemap.xml dates, enhanced WIKIPEDIA.md with VERSES AI and first-ETH Christie's detail | ✅ |
+| 2026-03-25 | RESEARCHER | Round 2 Perplexity audit: verified AII board (6 members), officers (Mikhailova VP/Secretary 2025+), Delaware incorporation, 501(c)(3) 2024 | ✅ |
+| 2026-03-25 | ARCHIVIST | Verified Curio Cards: Card 24 \"Complexity\" (333 copies), Card 25 (222), Card 26 (106); 7 artists; Christie's $1.2M/393 ETH | ✅ |
+| 2026-03-25 | INTEGRATOR | Added SAB links (Friston, Ramstead, Albarracin, Fields) to COLLABORATORS.md; citation counts (88, 45, 41, 31 for top papers) | ✅ |
+| 2026-03-25 | INTEGRATOR | Added 7 AII pages to LINKS.md (SAB, Strategy, Partnership, Substack, History, Board); CR link; 251 repos | ✅ |
+| 2026-03-25 | MAINTAINER | Enriched PROFILE.md with AII programs (Textbook 7 cohorts, Internship, Fellows, Mentorship), Curio Cards art descriptions | ✅ |
+| 2026-03-25 | ARCHIVIST | Added paper folder Friedman_2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY to 107 works | ✅ |
+| 2026-03-25 | RESEARCHER | Round 3 Perplexity audit: verified COGSEC founding (2018), P3IF affiliations, NM field site, ALIUS team | ✅ |
+| 2026-03-25 | INTEGRATOR | Enriched PROFILE.md with COGSEC history, named volumes (IRT-20, NIM-21, CAT-22, ATLAS), and P3IF affiliations | ✅ |
+| 2026-03-25 | ARCHIVIST | Updated WIKIPEDIA.md, COLLABORATORS.md (RJ Cordes), and LINKS.md with verified COGSEC & ALIUS details | ✅ |
