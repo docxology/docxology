@@ -14,11 +14,12 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 *Available for consulting, tutoring, and research collaboration*
 
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.institute/)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-700+_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@danielarifriedman)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/docxology)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:Daniel@ActiveInference.Institute)
 [![COGSEC](https://img.shields.io/badge/COGSEC.org-Cognitive_Security-2E86C1?style=flat&logo=shield&logoColor=white)](https://cogsec.org)
 [![Website](https://img.shields.io/badge/Website-danielarifriedman.com-000?logo=globe&logoColor=white)](https://www.danielarifriedman.com/)
@@ -38,7 +39,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 - 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](COLLABORATORS.md#deborah-gordon--stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Fellow at UC Davis (2020–2023)
 - 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.institute/)** (501(c)(3) non-profit); co-author with [Karl Friston](COLLABORATORS.md#karl-friston--ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
 - 🛡️ **Cognitive Security Expert** — 3 books + 16 papers on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
-- 🎨 **Artist & NFT Pioneer** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (first art NFTs on Ethereum mainnet, minted May 9, 2017; [Christie's auction Oct 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://www.danielarifriedman.com/art.html)
+- 🎨 **Artist & NFT Pioneer** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (first art NFTs on Ethereum mainnet, minted May 9, 2017; [Christie's auction Oct 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://www.danielarifriedman.com/art.html) · [Local Gallery](art/README.md)
 - 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, university courses (BIOL-1, BIOL-8), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops, and private tutoring
 - 🌐 **Community Builder** — Co-founder of [Complexity Weekend](https://www.complexityadventures.com/) (since 2019); co-organized Stanford Complexity Group
 
@@ -53,7 +54,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **106 publications** · **77 open-source repositories** · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **107 publications** · **77 open-source repositories** · **727 citations** (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
@@ -63,7 +64,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Resource | What's Inside |
 |----------|---------------|
-| 📚 [**BIBLIOGRAPHY.md**](BIBLIOGRAPHY.md) | Unified sortable table of **all 106 publications** — every paper, book, and presentation with DOI links, domain tags, and deep-links to paper folders |
+| 📚 [**BIBLIOGRAPHY.md**](BIBLIOGRAPHY.md) | Unified sortable table of **all 107 publications** — every paper, book, and presentation with DOI links, domain tags, and deep-links to paper folders |
 | 💻 [**SOFTWARE.md**](SOFTWARE.md) | **46 owned repos** + **31 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure |
 | 📁 [**papers/**](papers/) | **99 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
 | 🔗 [**LINKS.md**](LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |

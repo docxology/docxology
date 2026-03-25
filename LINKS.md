@@ -4,7 +4,7 @@
 
 **Comprehensive directory of all public web presences, profiles, and resources**
 
-*Last updated: 2026-03-24 (fact-checked via deep internet research)*
+*Last updated: 2026-03-25 (fact-checked via deep Perplexity internet research — 5 verification rounds)*
 
 </div>
 
@@ -14,7 +14,7 @@
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 700+ citations, full publication list |
+| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 727 citations, h-index 15, i10-index 17 |
 | ORCID | [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096) | Persistent researcher identifier |
 | ResearchGate | [researchgate.net/profile/Daniel-Friedman-2](https://www.researchgate.net/profile/Daniel-Friedman-2) | 54+ publications, metrics, full-text access |
 | DBLP | [dblp.org/pid/346/2173](https://dblp.org/pid/346/2173.html) | Computer science bibliography |
@@ -26,9 +26,12 @@
 | SciProfiles | [sciprofiles.com/profile/447575](https://sciprofiles.com/profile/447575) | MDPI author profile |
 | ArXiv | [arxiv.org (search)](https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author) | Preprints |
 | ScholarGPS | [scholargps.com](https://scholargps.com/scholars/96885945987887/daniel-ari-friedman) | AI-curated scholar analytics |
+| PubMed | [pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/?term=friedman+daniel+ari) | Indexed biomedical publications |
+| Zenodo | [zenodo.org](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Preprints and data deposits (40+ records) |
 | Santa Fe Institute | [wiki.santafe.edu](https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman) | SFI events wiki |
-| ISSS Wiki | [wiki.isss.org](https://wiki.isss.org/index.php/Daniel_Friedman) | International Society for the Systems Sciences |
+| ISSS Wiki | [wiki.isss.org](https://wiki.isss.org/index.php/Daniel_Friedman) | International Society for the Systems Sciences (member since 2022) |
 | ALIUS Research Group | [aliusresearch.org](https://www.aliusresearch.org/) | Alterations of Consciousness research group — published 4 interviews/papers in ALIUS Bulletin |
+| ALIUS Team Page | [aliusresearch.org/team (Friedman)](https://www.aliusresearch.org/team-222796.html) | Individual researcher profile and bio |
 | Stanford Dissertation | [purl.stanford.edu/pb813wm1484](http://purl.stanford.edu/pb813wm1484) | PhD thesis (2019) |
 
 ---
@@ -39,13 +42,18 @@
 |-------------|------|------|
 | Active Inference Institute | President & Treasurer, Co-founder | [activeinference.institute](https://www.activeinference.institute/) |
 | Active Inference Institute Officers | Officer page | [activeinference.institute/officers](https://www.activeinference.institute/officers) |
+| Active Inference Institute Board | Board of Directors (6 members) | [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors) |
+| AII Scientific Advisory Board | SAB (Friston, Ramstead, Albarracin, Fields) | [activeinference.institute/scientific-advisory-board](https://www.activeinference.institute/scientific-advisory-board) |
+| AII History | Founding timeline (2019– ) | [activeinference.institute/history](https://www.activeinference.institute/history) |
+| AII Strategy | Mission, programs, operational plan | [activeinference.institute/strategy](https://www.activeinference.institute/strategy) |
+| AII Partnership | Academia/industry collaboration program | [activeinference.institute/partnership](https://www.activeinference.institute/partnership) |
+| AII Substack Newsletter | Monthly newsletter | [activeinferenceinstitute.substack.com](https://activeinferenceinstitute.substack.com/) |
 | Active Inference Research | Research overview | [activeinference.org/research](https://www.activeinference.org/research) |
-| COGSEC.org | Founder | [cogsec.org](https://cogsec.org) |
+| COGSEC.org | Honorary Co-founder (with RJ Cordes, 2018) | [cogsec.org](https://cogsec.org) |
+| COGSEC About | Origin, mission, publications | [cogsec.org/about](https://www.cogsec.org/about-2) |
 | Complexity Weekend | Co-founder & Co-organizer | [complexityadventures.com](https://www.complexityadventures.com/) |
 | Complexity Adventures (organizer profile) | Organizer | [complexityadventures.com/organizers/2](https://www.complexityadventures.com/organizers/2) |
-| Active Inference Institute Board | Board of Directors | [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors) |
-| Active Inference Institute History | Founding history (est. 2021) | [activeinference.institute/history](https://www.activeinference.institute/history) |
-| College of the Redwoods | Associate Faculty, Biology (fall 2025–) | — |
+| College of the Redwoods | Associate Faculty, Biology (fall 2025–) | [redwoods.edu](https://www.redwoods.edu/) |
 | Jasper Ridge Biological Preserve | Ant survey participant (2014–2015) | [jrbp.stanford.edu](https://jrbp.stanford.edu/content/ant-survey-participants) |
 | Stanford Complexity Group | Co-organizer (during graduate studies) | — |
 
@@ -67,7 +75,7 @@
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 99+ repositories, primary development |
+| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 251 public repositories, primary development |
 | GitHub (secondary) | [github.com/danielarifriedman](https://github.com/danielarifriedman) | Secondary profile |
 | Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 31 repos as officer-level contributor |
 | This Repository | [github.com/docxology/docxology](https://github.com/docxology/docxology) | Master profile & publication index |
@@ -90,8 +98,17 @@
 | Platform | Link |
 |----------|------|
 | LinkedIn | [linkedin.com/in/danielarifriedman](https://www.linkedin.com/in/danielarifriedman) |
+| Telegram | [t.me/docxology](https://t.me/docxology) |
 | Instagram | [@danielarifriedman](https://www.instagram.com/danielarifriedman/) |
 | Facebook | [Daniel Ari Friedman Art](https://www.facebook.com/danielarifriedman/) |
+
+---
+
+## Press & Feature Articles
+
+| Date | Title | Source | Link |
+|------|-------|--------|------|
+| 2024 | "Active Inference: Pioneering a New Era of Artificial Intelligence" (features Friedman & AII) | Denise Holt | [deniseholt.us](https://deniseholt.us/active-inference-pioneering-a-new-era-of-artificial-intelligence/) |
 
 ---
 
@@ -151,7 +168,7 @@
 | File | Description |
 |------|-------------|
 | [README.md](README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 106 publications |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 107 publications |
 | [SOFTWARE.md](SOFTWARE.md) | 46 owned repos + 31 AII contributions |
 | [PROFILE.md](PROFILE.md) | Detailed biographical profile |
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
