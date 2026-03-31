@@ -1,7 +1,7 @@
-# Robots.txt for docxology profile repository
-# https://github.com/docxology/docxology
+# Robots.txt for danielarifriedman.com
+# GitHub Pages: docxology/docxology
 
 User-agent: *
 Allow: /
 
-Sitemap: https://docxology.github.io/docxology/sitemap.xml
+Sitemap: https://www.danielarifriedman.com/sitemap.xml
