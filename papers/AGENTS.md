@@ -11,7 +11,7 @@
 
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability (95/99 currently present)
-- Cross-references with [BIBLIOGRAPHY.md](../BIBLIOGRAPHY.md) entries
+- Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
 - Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all 99 papers
 
 ### 🔬 RESEARCHER

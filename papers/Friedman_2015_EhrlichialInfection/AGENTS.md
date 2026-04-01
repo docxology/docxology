@@ -45,8 +45,8 @@ Research area: **Genetics / Biomedical Research**.
 
 ## Related
 
-- [Bibliography](../../BIBLIOGRAPHY.md)
-- [Software](../../SOFTWARE.md)
+- [Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [Software](../../pages/SOFTWARE.md)
 - [Repository Root](../../README.md)
 
 ### Related Papers in This Repository

@@ -75,4 +75,4 @@ Use this skill when investigating infectious etiologies of hematological maligna
 
 ## Related Papers
 
-See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for full publication catalog.
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for full publication catalog.

@@ -1,3 +1,8 @@
+---
+title: "WIKIPEDIA - Daniel Ari Friedman"
+description: "Daniel Ari Friedman's WIKIPEDIA - AI, Active Inference, and Cognitive Security."
+keywords: "Daniel Ari Friedman, active inference, WIKIPEDIA"
+---
 <!-- Wikipedia article draft for Daniel Ari Friedman -->
 <!-- MediaWiki markup format — ready for submission to Wikipedia -->
 <!-- All claims are sourced from publicly verifiable references -->
@@ -132,3 +137,11 @@ Friedman is the founder of COGSEC.org, an organization focused on cognitive secu
 [[Category:Cognitive security]]
 [[Category:Open science advocates]]
 [[Category:American science writers]]
+
+
+---
+<div align="center">
+
+*Maintained by Daniel Ari Friedman | [← Back to Home](../README.md)*
+
+</div>

@@ -31,7 +31,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 PAPERS_DIR = Path(__file__).parent
-BIBLIOGRAPHY_PATH = PAPERS_DIR.parent / "BIBLIOGRAPHY.md"
+BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))
 METADATA_PATH = PAPERS_DIR / "paper_metadata.json"
 
 # ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -154,7 +154,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict = None) -> str:
         '',
         '## Related',
         '',
-        '- [Full Bibliography](../../BIBLIOGRAPHY.md)',
+        '- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)',
         '- [All Papers](../README.md)',
         ''
     ])
@@ -284,7 +284,7 @@ def generate_skill(folder: str, meta: dict) -> str:
         '',
         '## Related Papers',
         '',
-        'See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for full publication catalog.',
+        'See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for full publication catalog.',
         ''
     ])
     return '\n'.join(lines)

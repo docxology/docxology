@@ -1,6 +1,14 @@
+---
+title: "PROFILE - Daniel Ari Friedman"
+description: "Daniel Ari Friedman's PROFILE - AI, Active Inference, and Cognitive Security."
+keywords: "Daniel Ari Friedman, active inference, PROFILE"
+---
 <div align="center">
 
 # Daniel Ari Friedman, PhD
+
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+
 
 **Scientist · Artist · Philosopher · Educator**
 
@@ -125,7 +133,7 @@ Friedman's visual art practice encompasses high-investment black-and-white abstr
 
 On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint was auctioned at Christie's on October 1, 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
 
-**Art portfolio**: [Local Gallery](art/README.md) · [danielarifriedman.com/art.html](https://www.danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
+**Art portfolio**: [Local Gallery](../art/README.md) · [danielarifriedman.com/art.html](https://www.danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
 
 ---
 
@@ -178,5 +186,13 @@ See [LINKS.md](LINKS.md) for all web presences · [COLLABORATORS.md](COLLABORATO
 <div align="center">
 
 *Part of [docxology/docxology](https://github.com/docxology/docxology) — the structured reference for Daniel Ari Friedman's public work*
+
+</div>
+
+
+---
+<div align="center">
+
+*Maintained by Daniel Ari Friedman | [← Back to Home](../README.md)*
 
 </div>

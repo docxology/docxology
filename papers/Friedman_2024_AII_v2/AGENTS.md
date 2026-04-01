@@ -48,4 +48,4 @@
 
 ## Related Papers
 
-See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the full publication catalog.
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.

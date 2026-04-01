@@ -63,4 +63,4 @@ When applying this skill:
 - [CEREBRUM](../Friedman_2025_CEREBRUM/SKILL.md) — Case-Enabled Reasoning Engine
 - [MDKV](../Friedman_2025_MDKV/SKILL.md) — Multitrack Markdown Container
 
-See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.

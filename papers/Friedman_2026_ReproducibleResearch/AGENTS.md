@@ -58,4 +58,4 @@
 - [CEREBRUM](../Friedman_2025_CEREBRUM/) — Case-Enabled Reasoning Engine with Bayesian Representations
 - [MDKV](../Friedman_2025_MDKV/) — Multitrack Markdown Container for Structured Documents
 
-See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the full publication catalog.
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.

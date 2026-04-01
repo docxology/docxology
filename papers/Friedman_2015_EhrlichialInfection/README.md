@@ -55,4 +55,4 @@
 
 ---
 
-📚 [Back to Bibliography](../../BIBLIOGRAPHY.md) · 💻 [Software](../../SOFTWARE.md) · 🏠 [Repository Root](../../README.md)
+📚 [Back to Bibliography](../../pages/BIBLIOGRAPHY.md) · 💻 [Software](../../pages/SOFTWARE.md) · 🏠 [Repository Root](../../README.md)

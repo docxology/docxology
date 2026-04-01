@@ -50,4 +50,4 @@ When applying this skill:
 
 ## Related Skills
 
-See [BIBLIOGRAPHY.md](../../BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
