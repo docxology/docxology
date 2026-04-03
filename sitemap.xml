@@ -23,14 +23,14 @@
   </url>
   <!-- Pages Hub: Bibliography -->
   <url>
-    <loc>https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md</loc>
+    <loc>https://www.danielarifriedman.com/publications.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Pages Hub: Software -->
   <url>
-    <loc>https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md</loc>
+    <loc>https://www.danielarifriedman.com/software.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -51,14 +51,14 @@
   </url>
   <!-- Pages Hub: Collaborators -->
   <url>
-    <loc>https://github.com/docxology/docxology/blob/main/pages/COLLABORATORS.md</loc>
+    <loc>https://www.danielarifriedman.com/collaborators.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Pages Hub: Media -->
   <url>
-    <loc>https://github.com/docxology/docxology/blob/main/pages/MEDIA.md</loc>
+    <loc>https://www.danielarifriedman.com/media.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

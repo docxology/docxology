@@ -46,7 +46,7 @@
 
 ## Repository Structure
 
-```
+```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
 ├── pages/BIBLIOGRAPHY.md    ← Unified sortable table of 107 publications with DOI links
@@ -58,6 +58,11 @@ docxology/
 ├── pages/MEDIA.md           ← Talks, podcasts, video series, courses, and press coverage
 ├── AGENTS.md          ← This file: agent roles and maintenance log
 ├── index.html         ← GitHub Pages landing page with SEO and structured data
+├── publications.html  ← Canonical HTML target for unified bibliography
+├── software.html      ← Canonical HTML target for software catalog
+├── collaborators.html ← Canonical HTML target for institutional network
+├── media.html         ← Canonical HTML target for podcast/video appearances
+├── style.css          ← Unified custom CSS core
 ├── sitemap.xml        ← SEO sitemap
 ├── robots.txt         ← Robot exclusion file
 ├── docs/              ← Documentation for the entire repository
@@ -82,7 +87,7 @@ docxology/
 ## Maintenance Log
 
 | Date | Agent | Action | Status |
-|------|-------|--------|--------|
+| --- | --- | --- | --- |
 | 2026-03-08 | ARCHIVIST | Rebuilt pages/BIBLIOGRAPHY.md as unified sortable table (106 entries) | ✅ |
 | 2026-03-08 | RESEARCHER | Verified all 99 paper folders have complete documentation | ✅ |
 | 2026-03-08 | EDUCATOR | Fixed SKILL.md for CryptoJews and EhrlichialInfection | ✅ |
@@ -128,3 +133,4 @@ docxology/
 | 2026-04-01 | INTEGRATOR | Created pages/README.md hub index with full navigation table | ✅ |
 | 2026-04-01 | MAINTAINER | Expanded sitemap.xml (15 URLs: added WIKIPEDIA, VIDEOS, RESOURCES, reordered); enhanced robots.txt with allow/disallow rules | ✅ |
 | 2026-04-01 | MAINTAINER | Created manifest.json (PWA) and sw.js (service worker with stale-while-revalidate) | ✅ |
+| 2026-04-03 | MAINTAINER | Structural integrity audit: Migrated 4 main markdown lists to canonical HTML pages (publications, software, collaborators, media) to fix indexability; fixed JSON-LD jobTitle mapping; standardized "March 2026" metrics dating. | ✅ |
