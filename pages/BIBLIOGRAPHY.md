@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**107 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**108 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**89** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**90** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **100 citable works** with paper folders · **96 DOI links** · **37 venues**
+> **101 citable works** with paper folders · **97 DOI links** · **37 venues**
 
 ---
 
@@ -40,11 +40,12 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 |--:|:----:|:------:|:----:|-------|-------|----------|:----:|
 | 1 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090) | [📁](../papers/Friedman_2026_ReproducibleResearch/) |
 | 2 | 2026 | 🎥 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | *YouTube* | [video.activeinference.institute](https://video.activeinference.institute/) | — |
-| 2 | 2026 | 🎨 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | *Zenodo* | [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970) | [📁](../papers/Friedman_2026_BeforePragmatism/) |
-| 3 | 2026 | 🛡️ | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | *Zenodo* | [10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119) | [📁](../papers/Friedman_2026_CognitiveIntegrity/) |
-| 4 | 2026 | 🎥 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | *YouTube* | [youtube.com/@danielarifriedman](https://www.youtube.com/@danielarifriedman/playlists) | — |
-| 5 | 2026 | 🎨 | Paper | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | *Zenodo* | [10.5281/zenodo.18600041](https://doi.org/10.5281/zenodo.18600041) | [📁](../papers/Friedman_2026_DoorsOfPerception/) |
-| 6 | 2025 | 🎥 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | *Presentation* | [10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266) | [📁](../papers/Friedman_2025_5thSymposium/) |
+| 3 | 2026 | 🎨 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | *Zenodo* | [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970) | [📁](../papers/Friedman_2026_BeforePragmatism/) |
+| 4 | 2026 | 🎨 | Paper | The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value | *Zenodo* | [10.5281/zenodo.19335196](https://doi.org/10.5281/zenodo.19335196) | [📁](../papers/Friedman_2026_Bimetalism/) |
+| 5 | 2026 | 🛡️ | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | *Zenodo* | [10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119) | [📁](../papers/Friedman_2026_CognitiveIntegrity/) |
+| 6 | 2026 | 🎥 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | *YouTube* | [youtube.com/@danielarifriedman](https://www.youtube.com/@danielarifriedman/playlists) | — |
+| 7 | 2026 | 🎨 | Paper | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | *Zenodo* | [10.5281/zenodo.18600041](https://doi.org/10.5281/zenodo.18600041) | [📁](../papers/Friedman_2026_DoorsOfPerception/) |
+| 8 | 2025 | 🎥 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | *Presentation* | [10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266) | [📁](../papers/Friedman_2025_5thSymposium/) |
 | 7 | 2025 | 💻 | Paper | Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference | *Zenodo* | [10.5281/zenodo.17228945](https://doi.org/10.5281/zenodo.17228945) | [📁](../papers/Friedman_2025_AuBI/) |
 | 8 | 2025 | 🧠 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | *Zenodo* | [10.5281/zenodo.15170907](https://doi.org/10.5281/zenodo.15170907) | [📁](../papers/Friedman_2025_CEREBRUM/) |
 | 9 | 2025 | 🐜 | Paper | Computational Complexity and Energetics of the Ant Stack | *Zenodo* | [10.5281/zenodo.17238736](https://doi.org/10.5281/zenodo.17238736) | [📁](../papers/Friedman_2025_AntStackComplexity/) |
