@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**108 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**109 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**90** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**91** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **101 citable works** with paper folders · **97 DOI links** · **37 venues**
+> **102 citable works** with paper folders · **98 DOI links** · **37 venues**
 
 ---
 
@@ -146,6 +146,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 104 | 2015 | 🧬 | Paper | Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history | *Frontiers in Genetics* | [10.3389/fgene.2015.00261](https://doi.org/10.3389/fgene.2015.00261) | [📁](../papers/Friedman_2015_CryptoJews/) |
 | 105 | 2015 | 🧬 | Paper | Could Ehrlichial Infection Cause Some Changes Associated with Leukemia? | *Medical Hypotheses* | [10.1016/j.mehy.2015.09.015](https://doi.org/10.1016/j.mehy.2015.09.015) | [📁](../papers/Friedman_2015_EhrlichialInfection/) |
 | 106 | 2015 | 🧬 | Paper | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | *Molecular Biology & Evolution* | [10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292) | [📁](../papers/Friedman_2015_HoneyBeeEvolution/) |
+| 107 | 2026 | 🐜 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574118](https://doi.org/10.5281/zenodo.19574118) | [📁](../papers/Friedman_2026_EntoLinguistics/) |
 
 ---
 
@@ -153,14 +154,15 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🐜 Entomology
 
-> 20 works (2016–2025)
+> 21 works (2016–2026)
 
+- **2026** — Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology · [📁](../papers/Friedman_2026_EntoLinguistics/)
 - **2025** — Computational Complexity and Energetics of the Ant Stack · [📁](../papers/Friedman_2025_AntStackComplexity/)
 - **2025** — The Ant Stack · [📁](../papers/Friedman_2025_AntStack/)
 - **2025** — Towards a Science of Consciousness and Social Complexity... For Ants · [📁](../papers/Friedman_2025_ConsciousnessAnts/)
 - **2024** — Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea · [📁](../papers/Friedman_2024_BlattodeaDiversity/)
 - **2023** — A single-pheromone model accounts for empirical patterns of ant colony foraging · [📁](../papers/Friedman_2023_SinglePheromone/)
-- *...and 15 more in the table above*
+- *...and 14 more in the table above*
 
 ### 🧠 Active Inference
 

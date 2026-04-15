@@ -3,98 +3,98 @@
   <!-- Primary: Landing Page -->
   <url>
     <loc>https://www.danielarifriedman.com/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Primary: Art Gallery -->
   <url>
     <loc>https://www.danielarifriedman.com/art.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- GitHub Profile Repo -->
   <url>
     <loc>https://github.com/docxology/docxology</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Pages Hub: Bibliography -->
   <url>
     <loc>https://www.danielarifriedman.com/publications.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Pages Hub: Software -->
   <url>
     <loc>https://www.danielarifriedman.com/software.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Pages Hub: Profile -->
   <url>
     <loc>https://github.com/docxology/docxology/blob/main/pages/PROFILE.md</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Pages Hub: Links -->
   <url>
     <loc>https://github.com/docxology/docxology/blob/main/pages/LINKS.md</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Pages Hub: Collaborators -->
   <url>
     <loc>https://www.danielarifriedman.com/collaborators.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Pages Hub: Media -->
   <url>
     <loc>https://www.danielarifriedman.com/media.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Pages Hub: Wikipedia -->
   <url>
     <loc>https://github.com/docxology/docxology/blob/main/pages/WIKIPEDIA.md</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Pages Hub: Videos -->
   <url>
     <loc>https://github.com/docxology/docxology/blob/main/pages/VIDEOS.md</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Pages Hub: Resources -->
   <url>
     <loc>https://github.com/docxology/docxology/blob/main/pages/RESOURCES.md</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Papers Directory -->
   <url>
     <loc>https://github.com/docxology/docxology/tree/main/papers</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- README -->
   <url>
     <loc>https://github.com/docxology/docxology/blob/main/README.md</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

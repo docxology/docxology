@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*46 original repositories · 31 Active Inference Institute contributions*
+*47 original repositories · 31 Active Inference Institute contributions*
 
 *Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -61,6 +61,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [active_torchference](https://github.com/docxology/active_torchference) | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization | Python | 0 | 2025-10 |
 | [ant-pheromone](https://github.com/docxology/ant-pheromone) | Computational simulation of ant pheromone trail dynamics and stigmergic communication | Python | 0 | 2022-09 |
 | [ant_stack](https://github.com/docxology/ant_stack) | The Ant Stack — layered computational model of collective ant-colony intelligence · [📄](../papers/Friedman_2025_AntStack/) | Python | 0 | 2025-09 |
+| [ento_linguistics](https://github.com/docxology/ento_linguistics) | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · [📄](../papers/Friedman_2026_EntoLinguistics/) | Python | 0 | 2026-04 |
 | [Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference](https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference) | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment | — | 0 | 2025-04 |
 | [biol-1](https://github.com/docxology/biol-1) | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content | HTML | 0 | 2026-03 |
 | [biol-8](https://github.com/docxology/biol-8) | BIOL-8: Human Anatomy & Physiology course materials — College of the Redwoods; lectures, labs, and interactive HTML content | HTML | 0 | 2026-03 |
@@ -134,16 +135,16 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Category | Owned | Highlighted Repos |
 |----------|:-----:|---|
 | Active Inference & Modeling | 12 | `active_inference`, `active_torchference`, `goference`, `AgenticMesh`, `enactive_inference_model`, `Markov_Blanket_Detection`, `cognitive`, `cognitive-engine`, `ActiveInferAnts`, `EvoJump`, `markdown_decision_process`, `transformer` |
-| Entomology & Biology | 6 | `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `FORMINDEX`, `biol-1`, `biol-8` |
+| Entomology & Biology | 7 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `FORMINDEX`, `biol-1`, `biol-8` |
 | Synergetics & Geometry | 5 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics` |
 | Cognitive Security | 2 | `p3if`, `opentir` |
 | Developer Tools | 10 | `codomyrmex`, `template`, `steganographer`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
 | Data & Policy | 2 | `hhs-opendata`, `crescent-city` |
 | Education | 4 | `literature`, `curriculum`, `course`, `lean_niche` |
 | Other | 5 | `cascadia`, `fuller-obsidian`, `transformer`, `service`, `flick` |
-| **docxology subtotal** | **46** | |
+| **docxology subtotal** | **47** | |
 | AII Contributions (non-fork) | 31 | Officer-level contributions across all Institute repos |
-| **Grand Total** | **77** | |
+| **Grand Total** | **78** | |
 
 > *For 260+ total repositories including personal forks, see the [full profile](https://github.com/docxology?tab=repositories). AII count includes source repos only, not org-level forks (pymdp, Flowise, entropix, fabric, etc.). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog.*
 

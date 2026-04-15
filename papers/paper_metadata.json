@@ -13,7 +13,7 @@
       "iberian-history"
     ],
     "authors": "Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman",
-    "abstract": "This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese \"crypto-Jews.\" The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as \"reliable Jewish ancestry predictors\" due to haplotype polyphyly and molecular clock ambiguity \u2014 many ostensibly \"Jewish\" haplotypes are",
+    "abstract": "This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese \"crypto-Jews.\" The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as \"reliable Jewish ancestry predictors\" due to haplotype polyphyly and molecular clock ambiguity — many ostensibly \"Jewish\" haplotypes are",
     "keywords": [
       "Jewish genetics",
       "haplotypes",
@@ -264,7 +264,7 @@
     "topic": "AntConsciousness",
     "name": "AntConsciousness",
     "description": "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...",
-    "authors": "Daniel A. Friedman, Eirik S\u00f8vik",
+    "authors": "Daniel A. Friedman, Eirik Søvik",
     "abstract": "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general.",
     "keywords": [
       "consciousness",
@@ -352,7 +352,7 @@
     "name": "DistributedPhysiology",
     "description": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this...",
     "authors": "Daniel A. Friedman, Deborah M. Gordon",
-    "abstract": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation\u2014metabolism, water balance, immunity\u2014is accomplished collectively through decentralized interaction networks rather than centr",
+    "abstract": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation—metabolism, water balance, immunity—is accomplished collectively through decentralized interaction networks rather than centr",
     "keywords": [
       "distributed physiology",
       "superorganism",
@@ -423,7 +423,7 @@
     "name": "InnovatorsCatechism",
     "description": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to...",
     "authors": "Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight",
-    "abstract": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism\u2014a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.",
+    "abstract": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism—a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.",
     "keywords": [
       "operations orders",
       "innovation teams",
@@ -563,7 +563,7 @@
     "topic": "ActiveDiffusion",
     "name": "ActiveDiffusion",
     "description": "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, f...",
-    "authors": "Jakub Sm\u00e9kal, Daniel Friedman",
+    "authors": "Jakub Smékal, Daniel Friedman",
     "abstract": "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, facilitated through the Active Inference Institute, investigates how diffusion processes can be understood and enhanced through the lens of free energy minimization, with applications to generative AI and probabilistic modeling.",
     "keywords": [
       "Active Diffusion",
@@ -615,7 +615,7 @@
     "name": "HypercertEcosystems",
     "description": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...",
     "authors": "Active Inference Institute",
-    "abstract": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts\u2014a primitive for public goods funding\u2014can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.",
+    "abstract": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts—a primitive for public goods funding—can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.",
     "keywords": [
       "Hypercerts",
       "DeSci",
@@ -666,9 +666,9 @@
     "year": "2022",
     "topic": "StigmergicAnnotation",
     "name": "StigmergicAnnotation",
-    "description": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention\u2014a socio-technical framework for freeing human attention from platform control thr...",
+    "description": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr...",
     "authors": "Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf",
-    "abstract": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention\u2014a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can restore epistemic health to online environments.",
+    "abstract": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can restore epistemic health to online environments.",
     "keywords": [
       "stigmergic annotation",
       "open source attention",
@@ -769,7 +769,7 @@
     "name": "AccountActiveInference",
     "description": "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li...",
     "authors": "Daniel Ari Friedman",
-    "abstract": "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself\u2014the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (stopping-time rules, validated spreadsheet programs, trust in calculations) map onto the practice of g",
+    "abstract": "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (stopping-time rules, validated spreadsheet programs, trust in calculations) map onto the practice of g",
     "keywords": [
       "Active Inference",
       "generative modeling",
@@ -876,7 +876,7 @@
     "topic": "GenerativeResearchTeams",
     "name": "GenerativeResearchTeams",
     "description": "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top...",
-    "authors": "Daniel Friedman, Jakub Sm\u00e9kal",
+    "authors": "Daniel Friedman, Jakub Smékal",
     "abstract": "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like Active Blockference, cadCAD, and cognitive security concepts including Narrative Information Management",
     "keywords": [
       "Generative Research Team",
@@ -897,7 +897,7 @@
     "name": "GuidedTourMinds",
     "description": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue...",
     "authors": "Ali Rahmjoo, Daniel Ari Friedman",
-    "abstract": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology\u2014based on particle dynamics and generative model structure\u2014provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides firs",
+    "abstract": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology—based on particle dynamics and generative model structure—provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides firs",
     "keywords": [
       "path integrals",
       "particular kinds",
@@ -949,7 +949,7 @@
     "name": "OpenScienceSensemaking",
     "description": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem...",
     "authors": "Ronen Tamari, Daniel A. Friedman",
-    "abstract": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)\u2014an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, ratings, and behavioral traces.",
+    "abstract": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)—an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, ratings, and behavioral traces.",
     "keywords": [
       "OSSm",
       "Open Science Sensemaking",
@@ -1201,7 +1201,7 @@
     "name": "InfiniteImaginarium",
     "description": "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work...",
     "authors": "Daniel Ari Friedman",
-    "abstract": "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing\u2014from rapid intuitive insight to slow deliberate analysis\u2014within creative production contexts.",
+    "abstract": "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing—from rapid intuitive insight to slow deliberate analysis—within creative production contexts.",
     "keywords": [
       "epistemic tempos",
       "knowledge production",
@@ -1312,9 +1312,9 @@
     "year": "2024",
     "topic": "SharedProtentions",
     "name": "SharedProtentions",
-    "description": "We develop the concept of shared protentions\u2014shared anticipatory states\u2014in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz...",
+    "description": "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz...",
     "authors": "Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead",
-    "abstract": "We develop the concept of shared protentions\u2014shared anticipatory states\u2014in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.",
+    "abstract": "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.",
     "keywords": [
       "shared protentions",
       "multi-agent",
@@ -1660,7 +1660,7 @@
     "topic": "Thoughtseeds",
     "name": "Thoughtseeds",
     "description": "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete...",
-    "authors": "Prakash Chandra Kavi, Gorka Zamora-L\u00f3pez, Daniel Ari Friedman, Gustavo Patow",
+    "authors": "Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow",
     "abstract": "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete and cooperate within a cognitive landscape, using Active Inference to formalize the dynamics of attention, awareness, and thought emergence during meditation.",
     "keywords": [
       "Thoughtseeds",
@@ -1697,7 +1697,7 @@
     "name": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
     "description": "A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics.",
     "authors": "Daniel Ari Friedman",
-    "abstract": "This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake\u2019s prophetic corpus, reading the disintegration of the gold\u2013silver standard as a material enactment of the catastrophic cosmological fracture Blake dramatized. We trace this trajectory from the Newtonian golden compass of rigid, atomistic metrology, identifying the 1717 Mint ratio (1:15.21) not merely as a failed economic policy but as the operationalization of \"Newton's sleep\"\u2014a cognitive pathology of pathologically rigid priors that crushed variable sensory evidence of silver\u2019s circulation. This Urizenic enclosure unleashed Gresham's entropy, draining silver and hollowing out domestic coinage, leading to the 1797 Bank Restriction and the subsequent 1816 codification of a golden \"Single Vision\". This entropic pattern resonated transatlantically, reflecting the revolutionary rupture Blake experienced in America a Prophecy (1793). The American metallic monetary arc resembeled the British descent into the \"Ulro\" of fiat abstraction: from Alexander Hamilton's initial 15:1 bimetallic synthesis through the metallic enclosure of the \"Crime of 1873,\" and culminating in William Jennings Bryan's resistance to the \"Cross of Gold\" (1896). Against the \"chimeric measurement\" of the Bank of England and modern fiat systems, which rely on the arithmetic of compounding imperial debt, Blake\u2019s fourfold view provides a scaffold and vocabulary for resisting the totalizing enclosure of value. We reconstruct Blake\u2019s prophetic economics as a sustained phenomenological account and analogy of financialized alienation. Ultimately, this manuscript bridges early industrial commodity fetishism, William Blake's etching, and the contemporary (2020\u20132026) monetary environment.",
+    "abstract": "This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake’s prophetic corpus, reading the disintegration of the gold–silver standard as a material enactment of the catastrophic cosmological fracture Blake dramatized. We trace this trajectory from the Newtonian golden compass of rigid, atomistic metrology, identifying the 1717 Mint ratio (1:15.21) not merely as a failed economic policy but as the operationalization of \"Newton's sleep\"—a cognitive pathology of pathologically rigid priors that crushed variable sensory evidence of silver’s circulation. This Urizenic enclosure unleashed Gresham's entropy, draining silver and hollowing out domestic coinage, leading to the 1797 Bank Restriction and the subsequent 1816 codification of a golden \"Single Vision\". This entropic pattern resonated transatlantically, reflecting the revolutionary rupture Blake experienced in America a Prophecy (1793). The American metallic monetary arc resembeled the British descent into the \"Ulro\" of fiat abstraction: from Alexander Hamilton's initial 15:1 bimetallic synthesis through the metallic enclosure of the \"Crime of 1873,\" and culminating in William Jennings Bryan's resistance to the \"Cross of Gold\" (1896). Against the \"chimeric measurement\" of the Bank of England and modern fiat systems, which rely on the arithmetic of compounding imperial debt, Blake’s fourfold view provides a scaffold and vocabulary for resisting the totalizing enclosure of value. We reconstruct Blake’s prophetic economics as a sustained phenomenological account and analogy of financialized alienation. Ultimately, this manuscript bridges early industrial commodity fetishism, William Blake's etching, and the contemporary (2020–2026) monetary environment.",
     "keywords": [
       "William Blake",
       "Bimetallism",
@@ -1744,6 +1744,56 @@
       "prophetic vision",
       "generative models",
       "Markov blankets"
+    ]
+  },
+  "Friedman_2026_EntoLinguistics": {
+    "year": "2026",
+    "topic": "EntoLinguistics",
+    "name": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+    "description": "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology.",
+    "authors": "Daniel Ari Friedman & Tucker Cahill Chambers",
+    "abstract": "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento-Linguistic framework that decomposes the terminological landscape of insect research into analytically tractable themes, isolating domains where anthropomorphic language most severely distorts causal modeling. Second, we develop an open-source computational pipeline that integrates automated term extraction, co-occurrence network construction, and information-theoretic ambiguity scoring with principles from Active Inference and Complex Systems Theory. Third, we propose and validate four evidence-based meta-standards—Clarity, Appropriateness, Consistency, and Evolvability (CACE)—as a formalized protocol for lexical engineering. Analysis of a corpus encompassing 369 entomological publications (48787 tokens; 7105 unique token types; Type–Token Ratio 0.1456) extracts 888 candidate terms (with 261 assigned to specific semantic domains across 6 conceptual clusters linked by 9 weighted relationships). The resulting terminology networks display strong modularity alongside systematic cross-domain bridging—most prominently in the Power and Labor domain, where 43 bridging terms generate extensive semantic bleed-over into adjacent domains. Terms such as \"queen\" (241 occurrences), \"worker\" (269), and \"caste\" (121) implicitly impose hierarchical control topologies onto biological structures that are fundamentally stigmergic and decentralized. Across all 261 domain-assigned terms, 16.9% exhibit context-dependent semantic drift, demonstrating how conceptual constructs like \"individuality\" span multiple biological scales and consequently blur the formal systemic boundaries (Markov Blankets) required for mathematically rigorous modeling. The accompanying fully reproducible computational pipeline provides the quantitative analytical tools necessary for a more self-aware and epistemically rigorous scientific practice. All code and data are available at https://github.com/docxology/ento_linguistics.",
+    "tags": [
+      "entomology",
+      "scientific-communication",
+      "terminology-networks",
+      "corpus-linguistics",
+      "active-inference",
+      "cace",
+      "semantic-entropy",
+      "myrmecology"
+    ],
+    "keywords": [
+      "entomology",
+      "scientific communication",
+      "terminology networks",
+      "Active Inference",
+      "corpus linguistics",
+      "CACE",
+      "semantic entropy",
+      "myrmecology"
+    ]
+  },
+  "Friedman_2026_ReproducibleResearch": {
+    "year": "2026",
+    "topic": "ReproducibleResearch",
+    "name": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+    "description": "Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL).",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools. template/ applies Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable.",
+    "tags": [
+      "reproducible-research",
+      "infrastructure-as-code",
+      "build-pipeline",
+      "open-science",
+      "model-context-protocol"
+    ],
+    "keywords": [
+      "reproducible research",
+      "infrastructure as code",
+      "build pipeline",
+      "open science",
+      "Model Context Protocol"
     ]
   }
 }

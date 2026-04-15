@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing 100+ publications, 46+ software repositories, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (109 works), 47 owned software repositories (+31 AII contributions), and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -38,7 +38,7 @@
 ### 🛠️ MAINTAINER
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
-- Validates documentation completeness across all 99 paper folders
+- Validates documentation completeness across all paper folders (102 as of 2026-04-15)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -49,8 +49,8 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable table of 107 publications with DOI links
-├── pages/SOFTWARE.md        ← 46 owned repos + 31 AII contributions
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (109 works; DOI links and paper-folder deep-links)
+├── pages/SOFTWARE.md        ← 47 owned repos + 31 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
 ├── pages/PROFILE.md         ← Detailed biographical profile (education, research, art, orgs)
@@ -70,7 +70,7 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 99 per-paper folders
+└── papers/            ← 102 per-paper folders
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
@@ -79,7 +79,7 @@ docxology/
         ├── README.md   ← Paper overview, abstract, keywords, citation
         ├── AGENTS.md   ← Paper-specific agent roles and extraction log
         ├── SKILL.md    ← Claude Code-compatible skill definition
-        └── *.pdf       ← Source PDF (95/99 available)
+        └── *.pdf       ← Source PDF (most folders; filenames vary)
 ```
 
 ---
@@ -88,8 +88,8 @@ docxology/
 
 | Date | Agent | Action | Status |
 | --- | --- | --- | --- |
-| 2026-03-08 | ARCHIVIST | Rebuilt pages/BIBLIOGRAPHY.md as unified sortable table (106 entries) | ✅ |
-| 2026-03-08 | RESEARCHER | Verified all 99 paper folders have complete documentation | ✅ |
+| 2026-03-08 | ARCHIVIST | Rebuilt pages/BIBLIOGRAPHY.md as unified sortable table (historical row count; superseded by later expansions) | ✅ |
+| 2026-03-08 | RESEARCHER | Verified paper-folder documentation completeness (superseded: 102 folders as of 2026-04-15) | ✅ |
 | 2026-03-08 | EDUCATOR | Fixed SKILL.md for CryptoJews and EhrlichialInfection | ✅ |
 | 2026-03-08 | INTEGRATOR | Redesigned README.md with domain matrix and deep-links | ✅ |
 | 2026-03-08 | MAINTAINER | Created root AGENTS.md and papers/AGENTS.md | ✅ |
@@ -120,7 +120,7 @@ docxology/
 | 2026-03-25 | INTEGRATOR | Added SAB links (Friston, Ramstead, Albarracin, Fields) to pages/COLLABORATORS.md; citation counts (88, 45, 41, 31 for top papers) | ✅ |
 | 2026-03-25 | INTEGRATOR | Added 7 AII pages to pages/LINKS.md (SAB, Strategy, Partnership, Substack, History, Board); CR link; 251 repos | ✅ |
 | 2026-03-25 | MAINTAINER | Enriched pages/PROFILE.md with AII programs (Textbook 7 cohorts, Internship, Fellows, Mentorship), Curio Cards art descriptions | ✅ |
-| 2026-03-25 | ARCHIVIST | Added paper folder Friedman_2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY to 107 works | ✅ |
+| 2026-03-25 | ARCHIVIST | Added paper folder Friedman_2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY work count (superseded by later rows) | ✅ |
 | 2026-03-25 | RESEARCHER | Round 3 Perplexity audit: verified COGSEC founding (2018), P3IF affiliations, NM field site, ALIUS team | ✅ |
 | 2026-03-25 | INTEGRATOR | Enriched pages/PROFILE.md with COGSEC history, named volumes (IRT-20, NIM-21, CAT-22, ATLAS), and P3IF affiliations | ✅ |
 | 2026-03-25 | ARCHIVIST | Updated pages/WIKIPEDIA.md, pages/COLLABORATORS.md (RJ Cordes), and pages/LINKS.md with verified COGSEC & ALIUS details | ✅ |
@@ -134,3 +134,6 @@ docxology/
 | 2026-04-01 | MAINTAINER | Expanded sitemap.xml (15 URLs: added WIKIPEDIA, VIDEOS, RESOURCES, reordered); enhanced robots.txt with allow/disallow rules | ✅ |
 | 2026-04-01 | MAINTAINER | Created manifest.json (PWA) and sw.js (service worker with stale-while-revalidate) | ✅ |
 | 2026-04-03 | MAINTAINER | Structural integrity audit: Migrated 4 main markdown lists to canonical HTML pages (publications, software, collaborators, media) to fix indexability; fixed JSON-LD jobTitle mapping; standardized "March 2026" metrics dating. | ✅ |
+| 2026-04-15 | ARCHIVIST | Added Ento-Linguistics (Zenodo) to pages/BIBLIOGRAPHY.md; synced papers/README index (102 folders), papers/AGENTS.md counts, publications.html PUBS + JSON-LD; paper_metadata.json entry Friedman_2026_EntoLinguistics | ✅ |
+| 2026-04-15 | INTEGRATOR | Aligned index.html / publications.html / README counts (109 works); removed duplicate Person JSON-LD on index; added ento_linguistics to SOFTWARE.md, software.html, repo totals 47+31; sitemap lastmod | ✅ |
+| 2026-04-15 | INTEGRATOR | PROFILE.md metrics table (109/107 split); README domain matrix + Entomology selected-pubs table; index.html Computational tag 47 owned | ✅ |

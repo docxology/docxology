@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 99 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 102 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability (95/99 currently present)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all 99 papers
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (102 entries as of 2026-04-15)
 
 ### 🔬 RESEARCHER
 
@@ -41,17 +41,17 @@
 |--------|---------|
 | [regenerate_docs.py](regenerate_docs.py) | Rebuild README.md, AGENTS.md, and SKILL.md from metadata |
 
-### Quality Checks (All 99 Pass)
+### Quality Checks (spot-check after adds)
 
 | Check | Status |
 |-------|--------|
-| README.md present | 99/99 ✅ |
-| AGENTS.md present | 99/99 ✅ |
-| SKILL.md present | 99/99 ✅ |
-| SKILL.md YAML frontmatter (name, description, tags) | 99/99 ✅ |
-| SKILL.md `## Instructions` section | 99/99 ✅ |
-| SKILL.md `## Key Concepts` section | 99/99 ✅ |
-| SKILL.md `## Prerequisites` section | 99/99 ✅ |
+| README.md present | 102/102 folders (last verified 2026-04-15) |
+| AGENTS.md present | 102/102 |
+| SKILL.md present | 102/102 |
+| SKILL.md YAML frontmatter (name, description, tags) | required per folder |
+| SKILL.md `## Instructions` section | required |
+| SKILL.md `## Key Concepts` section | required |
+| SKILL.md `## Prerequisites` section | required |
 
 ---
 
@@ -59,7 +59,7 @@
 
 | Domain | Papers | Example Folders |
 |--------|:------:|-----------------|
-| 🐜 Entomology | 20 | `Friedman_2025_AntStack`, `Friedman_2021_ActiveInferants`, `Friedman_2019_PhDDissertation` |
+| 🐜 Entomology | 21 | `Friedman_2026_EntoLinguistics`, `Friedman_2025_AntStack`, `Friedman_2021_ActiveInferants`, `Friedman_2019_PhDDissertation` |
 | 🧠 Active Inference | 19 | `Friedman_2025_CEREBRUM`, `Friedman_2024_FederatedInference`, `Friedman_2023_GNN` |
 | 🛡️ Cognitive Security | 19 | `Friedman_2026_CognitiveIntegrity`, `Friedman_2022_InformationCommons`, `Friedman_2023_P3IF` |
 | 🎨 Art & Synergetics | 13 | `Friedman_2026_DoorsOfPerception`, `Friedman_2023_BlakeFuller`, `Friedman_2025_QuadMath` |
@@ -77,3 +77,4 @@
 | 2026-03-08 | ARCHIVIST | Verified all 99 folders have complete docs | ✅ |
 | 2026-03-08 | EDUCATOR | Fixed CryptoJews and EhrlichialInfection SKILL.md | ✅ |
 | 2026-03-08 | RESEARCHER | Rebuilt paper_metadata.json with 99 entries | ✅ |
+| 2026-04-15 | ARCHIVIST | Indexed 102 paper folders in README; Entomology domain +1 (Ento-Linguistics); bibliography row in pages/BIBLIOGRAPHY.md | ✅ |

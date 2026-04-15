@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and pioneering NFT art on the Ethereum blockchain. His work has garnered **727 citations** on Google Scholar (h-index: 15, i10-index: 17) across 107 publications.
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and pioneering NFT art on the Ethereum blockchain. His work has garnered **727 citations** on Google Scholar (h-index: 15, i10-index: 17) across **107** indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **109** works including books, presentations, and recent deposits not yet reflected on Scholar.
 
 ---
 
@@ -71,7 +71,7 @@ Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collectio
 
 ### Computational Frameworks
 
-Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, and markdown-based document processing frameworks. His 46+ personal repositories and 31 Active Inference Institute contributions represent a significant body of open-source scientific software.
+Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His 47 personal repositories and 31 Active Inference Institute contributions represent a significant body of open-source scientific software.
 
 ---
 
@@ -161,12 +161,13 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 
 | Metric | Count |
 |--------|-------|
-| Publications | 106 |
+| Works (unified bibliography) | [109](BIBLIOGRAPHY.md) |
+| Google Scholar indexed publications | 107 |
 | Google Scholar Citations | 727 |
 | h-index | 15 |
 | i10-index | 17 |
 | Citations since 2021 | 495 |
-| Open-Source Repositories (owned) | 46 |
+| Open-Source Repositories (owned) | 47 |
 | GitHub Public Repositories (total) | 251 |
 | Active Inference Institute Repos | 31 |
 | Livestreams & Videos | 700+ |

@@ -24,7 +24,7 @@ keywords: "Daniel Ari Friedman, active inference, WIKIPEDIA"
 | orcid = 0000-0001-6232-9096
 }}
 
-'''Daniel Ari Friedman''' is an American researcher, educator, and artist whose work spans [[entomology]], [[active inference]], [[cognitive security]], [[synergetics (Fuller)|synergetics]], and [[computational biology]]. He is the co-founder and president of the [[Active Inference Institute]], a [[501(c)(3)]] non-profit educational organization dedicated to the study and application of [[active inference]].<ref name="aii-officers">{{cite web |url=https://www.activeinference.institute/officers |title=Officers |website=Active Inference Institute |access-date=2026-03-25}}</ref> His research has produced 107 publications across eight domains, with 727 citations (h-index: 15, i10-index: 17) on [[Google Scholar]].<ref name="scholar">{{cite web |url=https://scholar.google.com/citations?user=DXjPFtYAAAAJ |title=Daniel Ari Friedman – Google Scholar |access-date=2026-03-25}}</ref>
+'''Daniel Ari Friedman''' is an American researcher, educator, and artist whose work spans [[entomology]], [[active inference]], [[cognitive security]], [[synergetics (Fuller)|synergetics]], and [[computational biology]]. He is the co-founder and president of the [[Active Inference Institute]], a [[501(c)(3)]] non-profit educational organization dedicated to the study and application of [[active inference]].<ref name="aii-officers">{{cite web |url=https://www.activeinference.institute/officers |title=Officers |website=Active Inference Institute |access-date=2026-03-25}}</ref> His [[Google Scholar]] profile lists 727 citations (h-index: 15, i10-index: 17) across 107 indexed publications; the docxology [https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md online bibliography] catalogs 109 works including presentations and recent deposits.<ref name="scholar">{{cite web |url=https://scholar.google.com/citations?user=DXjPFtYAAAAJ |title=Daniel Ari Friedman – Google Scholar |access-date=2026-03-25}}</ref>
 
 == Education ==
 
@@ -92,7 +92,7 @@ Friedman is the founder of COGSEC.org, an organization focused on cognitive secu
 
 == Selected publications ==
 
-<!-- Representative works across domains; see bibliography for full list of 107 publications -->
+<!-- Representative works across domains; see BIBLIOGRAPHY.md for full 109-work catalog -->
 
 * {{cite journal |last1=Friedman |first1=D.A. |last2=Gordon |first2=D.M. |title=Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior |journal=Annual Review of Neuroscience |year=2016 |doi=10.1146/annurev-neuro-070815-013927}}
 * {{cite journal |last1=Friedman |first1=D.A. |display-authors=etal |title=The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants |journal=iScience |year=2018 |doi=10.1016/j.isci.2018.09.001}}
