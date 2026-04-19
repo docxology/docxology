@@ -1795,5 +1795,66 @@
       "open science",
       "Model Context Protocol"
     ]
+  },
+  "Friedman_2026_ActInfMetaAnalysis": {
+    "year": "2026",
+    "topic": "ActInfMetaAnalysis",
+    "name": "A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring",
+    "description": "Computational meta-analysis of the Active Inference literature (2000–2026): assertion extraction pipeline, nanopublication framework, and citation-weighted hypothesis scoring architecture.",
+    "authors": "Daniel Ari Friedman & J. Dietz",
+    "abstract": "This paper introduces a Literature Review Architecture (LRA) for systematic, scalable analysis of the Active Inference literature. The architecture integrates three innovations: (1) a scalable assertion extraction pipeline that identifies and structures empirical and theoretical claims from full-text papers; (2) a nanopublication framework that encodes extracted assertions as machine-readable, citable knowledge atoms; and (3) a citation-weighted hypothesis scoring system that ranks hypotheses by their evidential support across the citation network. Applied to the Active Inference literature spanning 2000–2026, the LRA provides a quantitative landscape of the field’s theoretical commitments, empirical grounding, and open questions.",
+    "tags": [
+      "active-inference",
+      "meta-analysis",
+      "nanopublications",
+      "assertion-extraction",
+      "citation-weighted-scoring",
+      "literature-review",
+      "free-energy-principle",
+      "computational-bibliography",
+      "open-science"
+    ],
+    "keywords": [
+      "Active Inference",
+      "meta-analysis",
+      "nanopublications",
+      "assertion extraction",
+      "citation-weighted scoring",
+      "literature review architecture",
+      "Free Energy Principle",
+      "computational bibliography"
+    ]
+  },
+  "Friedman_2026_FocusedAttentionMeditation": {
+    "year": "2026",
+    "topic": "FocusedAttentionMeditation",
+    "name": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+    "description": "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DMN suppression in expert meditators.",
+    "authors": "P. C. Kavi, Daniel Ari Friedman & G. Patow",
+    "abstract": "We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF) implementations. Grounded in the Free Energy Principle and Neuronal Packet Hypothesis, we conceptualize meditation as a predictive processing system where “thoughtseeds”—transient, agent-like entities forming Markov blankets—minimize variational free energy via bidirectional coupling with attentional networks (DMN, VAN, DAN, FPN). Simulations across biologically plausible parameters reproduce expert–novice differences: 49% lower free energy during breath focus, suppressed DMN activity (0.18 vs. 0.31), and faster distraction recovery.",
+    "tags": [
+      "active-inference",
+      "focused-attention-meditation",
+      "thoughtseeds",
+      "free-energy-principle",
+      "hierarchical-modeling",
+      "precision-weighting",
+      "contemplative-neuroscience",
+      "expert-novice",
+      "predictive-processing",
+      "computational-psychiatry"
+    ],
+    "keywords": [
+      "Active Inference",
+      "focused attention meditation",
+      "thoughtseeds",
+      "Free Energy Principle",
+      "hierarchical modeling",
+      "expert-novice differences",
+      "DMN",
+      "precision weighting",
+      "Neuronal Packet Hypothesis",
+      "contemplative neuroscience"
+    ]
   }
 }

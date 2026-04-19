@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 102 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 104 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -45,9 +45,9 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 102/102 folders (last verified 2026-04-15) |
-| AGENTS.md present | 102/102 |
-| SKILL.md present | 102/102 |
+| README.md present | 104/104 folders (last verified 2026-04-19) |
+| AGENTS.md present | 104/104 |
+| SKILL.md present | 104/104 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -60,7 +60,7 @@
 | Domain | Papers | Example Folders |
 |--------|:------:|-----------------|
 | 🐜 Entomology | 21 | `Friedman_2026_EntoLinguistics`, `Friedman_2025_AntStack`, `Friedman_2021_ActiveInferants`, `Friedman_2019_PhDDissertation` |
-| 🧠 Active Inference | 19 | `Friedman_2025_CEREBRUM`, `Friedman_2024_FederatedInference`, `Friedman_2023_GNN` |
+| 🧠 Active Inference | 21 | `Friedman_2026_FocusedAttentionMeditation`, `Friedman_2026_ActInfMetaAnalysis`, `Friedman_2025_CEREBRUM`, `Friedman_2024_FederatedInference` |
 | 🛡️ Cognitive Security | 19 | `Friedman_2026_CognitiveIntegrity`, `Friedman_2022_InformationCommons`, `Friedman_2023_P3IF` |
 | 🎨 Art & Synergetics | 13 | `Friedman_2026_DoorsOfPerception`, `Friedman_2023_BlakeFuller`, `Friedman_2025_QuadMath` |
 | 🧬 Genetics & Biomedical | 9 | `Friedman_2015_HoneyBeeEvolution`, `Friedman_2016_NuclearStructure` |
@@ -78,3 +78,5 @@
 | 2026-03-08 | EDUCATOR | Fixed CryptoJews and EhrlichialInfection SKILL.md | ✅ |
 | 2026-03-08 | RESEARCHER | Rebuilt paper_metadata.json with 99 entries | ✅ |
 | 2026-04-15 | ARCHIVIST | Indexed 102 paper folders in README; Entomology domain +1 (Ento-Linguistics); bibliography row in pages/BIBLIOGRAPHY.md | ✅ |
+| 2026-04-19 | ARCHIVIST | Added Friedman_2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934); Active Inference domain 19→20; paper count 102→103; bibliography row 108; metadata.json; publications.html; index.html counts 109→110 | ✅ |
+| 2026-04-19 | ARCHIVIST | Added Friedman_2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer CSCIS vol 2857); Active Inference domain 20→21; paper count 103→104; bibliography row 109; all counts 110→111 | ✅ |

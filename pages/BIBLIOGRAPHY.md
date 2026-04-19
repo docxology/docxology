@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**109 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**111 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -147,6 +147,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 105 | 2015 | 🧬 | Paper | Could Ehrlichial Infection Cause Some Changes Associated with Leukemia? | *Medical Hypotheses* | [10.1016/j.mehy.2015.09.015](https://doi.org/10.1016/j.mehy.2015.09.015) | [📁](../papers/Friedman_2015_EhrlichialInfection/) |
 | 106 | 2015 | 🧬 | Paper | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | *Molecular Biology & Evolution* | [10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292) | [📁](../papers/Friedman_2015_HoneyBeeEvolution/) |
 | 107 | 2026 | 🐜 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574118](https://doi.org/10.5281/zenodo.19574118) | [📁](../papers/Friedman_2026_EntoLinguistics/) |
+| 108 | 2026 | 🧠 | Paper | A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring | *Active Inference Journal* | [10.5281/zenodo.19461934](https://doi.org/10.5281/zenodo.19461934) | [📁](../papers/Friedman_2026_ActInfMetaAnalysis/) |
+| 109 | 2026 | 🧠 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | *CSCIS vol 2857, Springer* | [10.1007/978-3-032-16955-6_11](https://doi.org/10.1007/978-3-032-16955-6_11) | [📁](../papers/Friedman_2026_FocusedAttentionMeditation/) |
 
 ---
 
@@ -166,8 +168,10 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🧠 Active Inference
 
-> 19 works (2018–2025)
+> 21 works (2018–2026)
 
+- **2026** — A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring · [📁](../papers/Friedman_2026_ActInfMetaAnalysis/)
+- **2026** — Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences · [📁](../papers/Friedman_2026_FocusedAttentionMeditation/)
 - **2025** — CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling · [📁](../papers/Friedman_2025_CEREBRUM/)
 - **2025** — EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories · [📁](../papers/Friedman_2025_EvoJump/)
 - **2025** — Increasing the Accessibility and Applicability of Active Inference · [📁](../papers/Friedman_2025_AccessibilityActiveInference/)
