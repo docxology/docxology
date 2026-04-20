@@ -5,6 +5,7 @@ const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/art.html',
+  '/videos.html',
   '/manifest.json'
 ];
 
