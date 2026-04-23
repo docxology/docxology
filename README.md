@@ -54,19 +54,19 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **109 works** in the unified bibliography · **78 open-source repositories** (47 owned + 31 AII) · **727 citations** (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **112 works** in the unified bibliography · **79 open-source repositories** (48 owned + 31 AII) · **727 citations** (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
 ## 📁 Repository Map
 
-> **Full catalog**: 109 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 47 owned repos · 31 AII contributions
+> **Full catalog**: 112 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 48 owned repos · 31 AII contributions
 
 | Resource | What's Inside |
 |----------|---------------|
-| 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (109 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
-| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **47 owned repos** + **31 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure |
-| 📁 [**papers/**](papers/) | **102 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
+| 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (112 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
+| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **48 owned repos** + **31 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure |
+| 📁 [**papers/**](papers/) | **105 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
 | 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
 | 👤 [**pages/PROFILE.md**](pages/PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
@@ -80,7 +80,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | Domain | Publications | Highlights | Software |
 |--------|:-----------:|------------|----------|
 | 🐜 Entomology | [21 works](pages/BIBLIOGRAPHY.md#-entomology) | [EntoLinguistics](papers/Friedman_2026_EntoLinguistics/) · [ActiveInferants](papers/Friedman_2021_ActiveInferants/) · [AntStack](papers/Friedman_2025_AntStack/) · [PhD](papers/Friedman_2019_PhDDissertation/) | [ento_linguistics](https://github.com/docxology/ento_linguistics) · [MetaInformAnt](https://github.com/docxology/MetaInformAnt) · [ant_stack](https://github.com/docxology/ant_stack) |
-| 🧠 Active Inference | [19 papers](pages/BIBLIOGRAPHY.md#-active-inference) | [CEREBRUM](papers/Friedman_2025_CEREBRUM/) · [FederatedInference](papers/Friedman_2024_FederatedInference/) · [GNN](papers/Friedman_2023_GNN/) | [codomyrmex](https://github.com/docxology/codomyrmex) · [cognitive-engine](https://github.com/docxology/cognitive-engine) · [goference](https://github.com/docxology/goference) |
+| 🧠 Active Inference | [22 works](pages/BIBLIOGRAPHY.md#-active-inference) | [CognitiveCaseDiagrams](papers/Friedman_2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/Friedman_2025_CEREBRUM/) · [FederatedInference](papers/Friedman_2024_FederatedInference/) | [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [codomyrmex](https://github.com/docxology/codomyrmex) · [goference](https://github.com/docxology/goference) |
 | 🛡️ Cognitive Security | [19 papers](pages/BIBLIOGRAPHY.md#️-cognitive-security) | [CognitiveIntegrity](papers/Friedman_2026_CognitiveIntegrity/) · [InformationCommons](papers/Friedman_2022_InformationCommons/) · [P3IF](papers/Friedman_2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
 | 🎨 Art & Synergetics | [13 papers](pages/BIBLIOGRAPHY.md#-art--synergetics) | [DoorsOfPerception](papers/Friedman_2026_DoorsOfPerception/) · [BlakeFuller](papers/Friedman_2023_BlakeFuller/) · [QuadMath](papers/Friedman_2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
 | 💻 Computational | [6 papers](pages/BIBLIOGRAPHY.md#-computational) | [DiscoveryEngine](papers/Friedman_2025_DiscoveryEngine/) · [MDKV](papers/Friedman_2025_MDKV/) · [MarkdownDecisionProcess](papers/Friedman_2025_MarkdownDecisionProcess/) | [template](https://github.com/docxology/template) · [steganographer](https://github.com/docxology/steganographer) |
@@ -115,7 +115,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🧠 Active Inference & Free Energy Principle
 
-> **19 works** on theoretical, computational, and applied Active Inference — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-active-inference)
+> **22 works** on theoretical, computational, and applied Active Inference — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-active-inference)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -212,7 +212,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Integration for Ants and Beyond |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
-> **Full list of 47 personal repos + 31 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md)
+> **Full list of 48 personal repos + 31 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md)
 
 </details>
 

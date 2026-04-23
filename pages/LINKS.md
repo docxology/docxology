@@ -176,8 +176,8 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | File | Description |
 |------|-------------|
 | [README.md](../README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 109 works (Google Scholar totals may lag new deposits) |
-| [SOFTWARE.md](SOFTWARE.md) | 47 owned repos + 31 AII contributions |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 112 works (Google Scholar totals may lag new deposits) |
+| [SOFTWARE.md](SOFTWARE.md) | 48 owned repos + 31 AII contributions |
 | [PROFILE.md](PROFILE.md) | Detailed biographical profile |
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |

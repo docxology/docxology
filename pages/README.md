@@ -20,8 +20,8 @@ keywords: "Daniel Ari Friedman, documentation hub, academic portfolio, pages ind
 
 | Page | Description |
 |------|-------------|
-| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **109 works** with DOI links, domain tags, and deep-links to paper folders |
-| 💻 [**SOFTWARE**](SOFTWARE.md) | **47 owned repos** + **31 Active Inference Institute contributions** — frameworks, tools, and infrastructure |
+| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **112 works** with DOI links, domain tags, and deep-links to paper folders |
+| 💻 [**SOFTWARE**](SOFTWARE.md) | **48 owned repos** + **31 Active Inference Institute contributions** — frameworks, tools, and infrastructure |
 | 👤 [**PROFILE**](PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🔗 [**LINKS**](LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, organizations |
 | 🤝 [**COLLABORATORS**](COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications |

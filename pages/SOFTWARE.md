@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*47 original repositories · 31 Active Inference Institute contributions*
+*48 original repositories · 31 Active Inference Institute contributions*
 
 *Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -62,6 +62,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ant-pheromone](https://github.com/docxology/ant-pheromone) | Computational simulation of ant pheromone trail dynamics and stigmergic communication | Python | 0 | 2022-09 |
 | [ant_stack](https://github.com/docxology/ant_stack) | The Ant Stack — layered computational model of collective ant-colony intelligence · [📄](../papers/Friedman_2025_AntStack/) | Python | 0 | 2025-09 |
 | [ento_linguistics](https://github.com/docxology/ento_linguistics) | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · [📄](../papers/Friedman_2026_EntoLinguistics/) | Python | 0 | 2026-04 |
+| [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · [📄](../papers/Friedman_2026_CognitiveCaseDiagrams/) | Python | 0 | 2026-04 |
 | [Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference](https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference) | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment | — | 0 | 2025-04 |
 | [biol-1](https://github.com/docxology/biol-1) | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content | HTML | 0 | 2026-03 |
 | [biol-8](https://github.com/docxology/biol-8) | BIOL-8: Human Anatomy & Physiology course materials — College of the Redwoods; lectures, labs, and interactive HTML content | HTML | 0 | 2026-03 |

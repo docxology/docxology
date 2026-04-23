@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**111 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**112 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**91** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**92** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **102 citable works** with paper folders · **98 DOI links** · **37 venues**
+> **103 citable works** with paper folders · **99 DOI links** · **37 venues**
 
 ---
 
@@ -149,6 +149,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 107 | 2026 | 🐜 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574118](https://doi.org/10.5281/zenodo.19574118) | [📁](../papers/Friedman_2026_EntoLinguistics/) |
 | 108 | 2026 | 🧠 | Paper | A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring | *Active Inference Journal* | [10.5281/zenodo.19461934](https://doi.org/10.5281/zenodo.19461934) | [📁](../papers/Friedman_2026_ActInfMetaAnalysis/) |
 | 109 | 2026 | 🧠 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | *CSCIS vol 2857, Springer* | [10.1007/978-3-032-16955-6_11](https://doi.org/10.1007/978-3-032-16955-6_11) | [📁](../papers/Friedman_2026_FocusedAttentionMeditation/) |
+| 110 | 2026 | 🧠 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | *Active Inference Journal* | [10.5281/zenodo.19695260](https://doi.org/10.5281/zenodo.19695260) | [📁](../papers/Friedman_2026_CognitiveCaseDiagrams/) |
 
 ---
 
@@ -168,8 +169,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🧠 Active Inference
 
-> 21 works (2018–2026)
+> 22 works (2018–2026)
 
+- **2026** — Compositional Approaches to Linguistic Case for Cognitive Modeling · [📁](../papers/Friedman_2026_CognitiveCaseDiagrams/)
 - **2026** — A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring · [📁](../papers/Friedman_2026_ActInfMetaAnalysis/)
 - **2026** — Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences · [📁](../papers/Friedman_2026_FocusedAttentionMeditation/)
 - **2025** — CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling · [📁](../papers/Friedman_2025_CEREBRUM/)

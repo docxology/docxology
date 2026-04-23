@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (111 works), 47 owned software repositories (+31 AII contributions), and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (112 works), 48 owned software repositories (+31 AII contributions), and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -38,7 +38,7 @@
 ### 🛠️ MAINTAINER
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
-- Validates documentation completeness across all paper folders (104 as of 2026-04-19)
+- Validates documentation completeness across all paper folders (105 as of 2026-04-23)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -49,8 +49,8 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (109 works; DOI links and paper-folder deep-links)
-├── pages/SOFTWARE.md        ← 47 owned repos + 31 AII contributions
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (112 works; DOI links and paper-folder deep-links)
+├── pages/SOFTWARE.md        ← 48 owned repos + 31 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
 ├── pages/PROFILE.md         ← Detailed biographical profile (education, research, art, orgs)
@@ -70,7 +70,7 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 104 per-paper folders
+└── papers/            ← 105 per-paper folders
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
@@ -139,3 +139,4 @@ docxology/
 | 2026-04-15 | INTEGRATOR | PROFILE.md metrics table (109/107 split); README domain matrix + Entomology selected-pubs table; index.html Computational tag 47 owned | ✅ |
 | 2026-04-19 | ARCHIVIST | Added Friedman_2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934, Active Inference Journal); README.md, AGENTS.md, SKILL.md created; bibliography row 108; Active Inference domain 19→20; all counts updated 109→110 | ✅ |
 | 2026-04-19 | ARCHIVIST | Added Friedman_2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer IWAI 2025); README.md, AGENTS.md, SKILL.md created; bibliography row 109; Active Inference domain 20→21; all counts updated 110→111; no PDF available noted | ✅ |
+| 2026-04-23 | ARCHIVIST | Added Friedman_2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 110; Active Inference domain 21→22; paper_metadata; publications.html + index.html 112 works; SOFTWARE.md + software.html repo 48; papers/README index 105 | ✅ |

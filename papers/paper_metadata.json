@@ -1856,5 +1856,38 @@
       "Neuronal Packet Hypothesis",
       "contemplative neuroscience"
     ]
+  },
+  "Friedman_2026_CognitiveCaseDiagrams": {
+    "year": "2026",
+    "topic": "CognitiveCaseDiagrams",
+    "name": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+    "description": "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Commutative diagrams encode relational structure, distributional semantics, and belief updating—with linguistic case as the hinge. Case systems as categories; alignment patterns as functors; DisCoCat/DisCoCirc string diagrams; enriched hooks to quantitative similarity; links to Distributional Active Inference and ERP-oriented hypotheses; POVM scaling for multi-agent discourse; prompt injection as functorial type violation under enforced interaction grammars.",
+    "tags": [
+      "active-inference",
+      "category-theory",
+      "linguistic-case",
+      "compositional-semantics",
+      "discocat",
+      "discocirc",
+      "distributional-semantics",
+      "cognitive-modeling",
+      "cognitive-security",
+      "prompt-injection",
+      "typology"
+    ],
+    "keywords": [
+      "Active Inference",
+      "linguistic case",
+      "category theory",
+      "DisCoCat",
+      "DisCoCirc",
+      "distributional semantics",
+      "cognitive modeling",
+      "cognitive security",
+      "prompt injection",
+      "linguistic typology"
+    ]
   }
 }

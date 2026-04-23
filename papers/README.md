@@ -5,7 +5,7 @@ Documentation index for all publications. Each folder contains:
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
 
-## Papers (102)
+## Papers (105)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -111,6 +111,9 @@ Documentation index for all publications. Each folder contains:
 | 100 | [Friedman_2026_ReproducibleResearch](Friedman_2026_ReproducibleResearch/) | ✅ | 2026 | ReproducibleResearch |
 | 101 | [Friedman_2026_Bimetalism](Friedman_2026_Bimetalism/) | ✅ | 2026 | Bimetalism |
 | 102 | [Friedman_2026_EntoLinguistics](Friedman_2026_EntoLinguistics/) | ✅ | 2026 | EntoLinguistics |
+| 103 | [Friedman_2026_ActInfMetaAnalysis](Friedman_2026_ActInfMetaAnalysis/) | ✅ | 2026 | ActInfMetaAnalysis |
+| 104 | [Friedman_2026_FocusedAttentionMeditation](Friedman_2026_FocusedAttentionMeditation/) | ❌ | 2026 | FocusedAttentionMeditation |
+| 105 | [Friedman_2026_CognitiveCaseDiagrams](Friedman_2026_CognitiveCaseDiagrams/) | ✅ | 2026 | CognitiveCaseDiagrams |
 
 ## Scripts
 
