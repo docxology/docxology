@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*48 original repositories · 31 Active Inference Institute contributions*
+*48 original repositories · 32 Active Inference Institute contributions*
 
 *Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -101,6 +101,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ActiveBlockference](https://github.com/ActiveInferenceInstitute/ActiveBlockference) | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework | Jupyter | 31 | 2023 |
 | [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) | Active Inference models for/of ants across 32+ programming languages — the definitive multi-language reference implementation of stigmergic Active Inference | Python | 27 | 2024 |
 | [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB | Python | 23 | 2024 |
+| [FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · [📄](../papers/Friedman_2026_FEPLean/) | Python | 0 | 2026 |
 | [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization | Python | 17 | 2025 |
 | [Active_Inference_Ontology](https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology) | Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts | — | 13 | 2023 |
 | [Journal-Utilities](https://github.com/ActiveInferenceInstitute/Journal-Utilities) | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based transcription, automated formatting, and archival utilities | HTML | 11 | 2024 |
@@ -143,9 +144,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Data & Policy | 2 | `hhs-opendata`, `crescent-city` |
 | Education | 4 | `literature`, `curriculum`, `course`, `lean_niche` |
 | Other | 5 | `cascadia`, `fuller-obsidian`, `transformer`, `service`, `flick` |
-| **docxology subtotal** | **47** | |
-| AII Contributions (non-fork) | 31 | Officer-level contributions across all Institute repos |
-| **Grand Total** | **78** | |
+| **docxology subtotal** | **48** | |
+| AII Contributions (non-fork) | 32 | Officer-level contributions across all Institute repos |
+| **Grand Total** | **80** | |
 
 > *For 260+ total repositories including personal forks, see the [full profile](https://github.com/docxology?tab=repositories). AII count includes source repos only, not org-level forks (pymdp, Flowise, entropix, fabric, etc.). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog.*
 

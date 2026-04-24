@@ -1889,5 +1889,37 @@
       "prompt injection",
       "linguistic typology"
     ]
+  },
+  "Friedman_2026_FEPLean": {
+    "year": "2026",
+    "topic": "FEPLean",
+    "name": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+    "description": "50-topic Lean4/Mathlib4 catalog across FEP, Active Inference, Bayesian mechanics, information geometry, and thermodynamics; sorry-free build on pinned Lean; Hermes/OpenGauss LLM drafting; zero-mock verification; open FEP_Lean.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Curated 50-topic namespaced Lean 4 sketches for FEP-related mathematics: explicit measure-theoretic obligations vs prose; five pillars; deterministic catalogue regeneration; 50/50 sorry-free on lean 4.29 / Mathlib 4.29; LLM layer (Hermes/OpenGauss) with native compiler as ground truth; zero-mock tests; AII FEP_Lean repository and docxology template-based manuscript build.",
+    "tags": [
+      "active-inference",
+      "free-energy-principle",
+      "lean-4",
+      "mathlib4",
+      "formal-verification",
+      "bayesian-mechanics",
+      "information-geometry",
+      "variational-inference",
+      "llm-itp",
+      "reproducible-research"
+    ],
+    "keywords": [
+      "Free Energy Principle",
+      "Active Inference",
+      "Lean 4",
+      "Mathlib4",
+      "formal verification",
+      "Bayesian mechanics",
+      "information geometry",
+      "interactive theorem proving",
+      "LLM-ITP",
+      "reproducible research"
+    ]
   }
 }
