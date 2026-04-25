@@ -32,6 +32,7 @@
 - Links each paper folder to its BIBLIOGRAPHY.md entry and DOI
 - Maps papers to associated software repositories in SOFTWARE.md
 - Connects related papers across domains
+- When the unified bibliography count changes, update the `PUBS` array in `publications.html` (and meta/title/result count there) so the site table stays complete
 
 ---
 

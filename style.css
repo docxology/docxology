@@ -301,10 +301,16 @@ thead th { -webkit-user-select: none; user-select: none; }
         /* Table */
         .pub-table-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
         table{width:100%;border-collapse:collapse}
-        thead th{padding:.75rem 1rem;text-align:left;font-size:.71rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2);cursor:pointer;user-select:none;white-space:nowrap}
-        thead th:hover{color:var(--gold)}
-        thead th .sort-icon{margin-left:.3rem;opacity:.4}
+        thead th{padding:0;text-align:left;font-size:.71rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2);user-select:none;white-space:nowrap;vertical-align:bottom}
+        thead th .th-sort-btn{width:100%;margin:0;padding:.75rem 1rem;border:none;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;text-align:left;cursor:pointer;display:flex;align-items:center;gap:.25rem}
+        thead th.td-num .th-sort-btn{justify-content:flex-end}
+        thead th.td-year .th-sort-btn{justify-content:center}
+        thead th:not(.td-num):not(.td-year) .th-sort-btn{justify-content:flex-start}
+        thead th .th-sort-btn:hover, thead th .th-sort-btn:focus-visible{color:var(--gold);outline:2px solid rgba(201,168,76,0.35);outline-offset:-2px}
+        thead th.sorted .th-sort-btn{color:var(--gold)}
+        thead th .sort-icon{margin-left:.2rem;opacity:.45;font-size:.9em;flex-shrink:0}
         thead th.sorted .sort-icon{opacity:1;color:var(--gold)}
+        .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
         tbody tr{border-bottom:1px solid rgba(180,160,130,0.06);transition:background .15s}
         tbody tr:hover{background:rgba(201,168,76,0.03)}
         tbody tr:last-child{border-bottom:none}
