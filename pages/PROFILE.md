@@ -133,7 +133,7 @@ Friedman's visual art practice encompasses high-investment black-and-white abstr
 
 On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint was auctioned at Christie's on October 1, 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
 
-**Art portfolio**: [Local Gallery](../art/README.md) · [danielarifriedman.com/art.html](https://www.danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
+**Art portfolio**: [Local Gallery](../art/README.md) · [danielarifriedman.com/art.html](https://danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
 
 ---
 

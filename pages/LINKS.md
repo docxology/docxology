@@ -71,10 +71,10 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Site | Link | Description |
 |------|------|-------------|
-| Main Website | [danielarifriedman.com](https://www.danielarifriedman.com/) | Personal homepage |
+| Main Website | [danielarifriedman.com](https://danielarifriedman.com/) | Personal homepage |
 | Coda Profile | [coda.io/@daniel-ari-friedman/website](https://coda.io/@daniel-ari-friedman/website) | Professional platform with resume |
-| Art Portfolio | [danielarifriedman.com/art.html](https://www.danielarifriedman.com/art.html) | Visual art gallery |
-| NFT Page | [danielarifriedman.com/nft.html](https://www.danielarifriedman.com/nft.html) | Curio Cards and blockchain art |
+| Art Portfolio | [danielarifriedman.com/art.html](https://danielarifriedman.com/art.html) | Visual art gallery |
+| NFT Page | [danielarifriedman.com/nft.html](https://danielarifriedman.com/nft.html) | Curio Cards and blockchain art |
 | omg.lol | [docxology.omg.lol](https://docxology.omg.lol) | Link aggregator |
 
 ---

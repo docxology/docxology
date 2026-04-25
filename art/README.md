@@ -12114,7 +12114,7 @@ A swarm of bees in July is not worth a fly.&quot;
 ![Liberty Forever (1776 - 2020 - ????)](50063317517_Liberty%20Forever%20_1776%20-%202020%20-%20_____.jpg)
 
 ## American Social Contract (The Great Seal)
-_<a href="https://www.danielarifriedman.com/meditations/american-social-contract-the-great-seal" rel="noreferrer nofollow">www.danielarifriedman.com/meditations/american-social-con...</a>
+_<a href="https://danielarifriedman.com/meditations/american-social-contract-the-great-seal" rel="noreferrer nofollow">danielarifriedman.com/meditations/american-social-con...</a>
 
 &quot;A Bird cannot fly with one wing only. Human space flight cannot develop any further without active participation of women... If women can be railroad workers in Russia, why can't they fly in space?&quot;
 – Valentina Tereshkova
@@ -13270,7 +13270,7 @@ Quem struit; haud ignara ac non incauta futuri.​&quot;​
 
 ## Winged Snowflake
 _Blog on this piece: 
-<a href="https://www.danielarifriedman.com/blog/winged-snowflake-2021#/" rel="noreferrer nofollow">www.danielarifriedman.com/blog/winged-snowflake-2021#/</a>
+<a href="https://danielarifriedman.com/blog/winged-snowflake-2021#/" rel="noreferrer nofollow">danielarifriedman.com/blog/winged-snowflake-2021#/</a>
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
