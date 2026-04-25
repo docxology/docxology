@@ -14,7 +14,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 *Available for consulting, tutoring, and research collaboration*
 
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.institute/)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-727_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-812_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
@@ -54,7 +54,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **113 works** in the unified bibliography · **80 open-source repositories** (48 owned + 32 AII) · **727 citations** (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **113 works** in the unified bibliography · **251** public GitHub repositories · **80** catalogued software repos (48 owned + 32 AII) · **812** Google Scholar citations (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 

@@ -65,8 +65,8 @@ docxology/
 ├── style.css          ← Unified custom CSS core
 ├── sitemap.xml        ← SEO sitemap
 ├── robots.txt         ← Robot exclusion file
-├── docs/              ← Documentation for the entire repository
-├── code/              ← Repository source code and executable orchestrators
+├── docs/              ← Documentation for the entire repository (see docs/AGENTS.md)
+├── code/              ← Repository source code and executable orchestrators (see code/AGENTS.md)
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
@@ -142,3 +142,4 @@ docxology/
 | 2026-04-23 | ARCHIVIST | Added Friedman_2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 110; Active Inference domain 21→22; paper_metadata; publications.html + index.html 112 works; SOFTWARE.md + software.html repo 48; papers/README index 105 | ✅ |
 | 2026-04-24 | ARCHIVIST | Added Friedman_2026_FEPLean (DOI 10.5281/zenodo.19699234); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 111; 113 works; papers 106; Active Inference 23; SOFTWARE AII 32 + FEP_Lean; publications.html + index | ✅ |
 | 2026-04-25 | INTEGRATOR | Sitemap: added `about.html`; normalized `https://danielarifriedman.com/` (apex) across README, pages/LINKS.md, pages/PROFILE.md, art/README.md, art metadata JSON — aligns with CNAME and canonical HTML | ✅ |
+| 2026-04-25 | MAINTAINER | Synced Google Scholar citation count to **812** (April 2026) across README, pages/BIBLIOGRAPHY.md, LINKS, PROFILE, WIKIPEDIA draft; README blockquote now distinguishes **251** public repos vs **80** catalogued software rows; added `code/AGENTS.md`, `docs/AGENTS.md` | ✅ |

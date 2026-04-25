@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 727 citations, h-index 15, i10-index 17 |
+| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 812 citations, h-index 15, i10-index 17 (April 2026) |
 | ORCID | [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096) | Persistent researcher identifier |
 | ResearchGate | [researchgate.net/profile/Daniel-Friedman-2](https://www.researchgate.net/profile/Daniel-Friedman-2) | 54+ publications, metrics, full-text access |
 | DBLP | [dblp.org/pid/346/2173](https://dblp.org/pid/346/2173.html) | Computer science bibliography |
