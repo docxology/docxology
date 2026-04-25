@@ -20,13 +20,11 @@
     <meta property="og:url" content="https://danielarifriedman.com/">
     <meta property="og:site_name" content="Daniel Ari Friedman">
     <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="profile:first_name" content="Daniel">
     <meta property="profile:last_name" content="Friedman">
-    <!-- Twitter Card (summary_large_image for richer previews) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Daniel Ari Friedman — President, Active Inference Institute | Researcher · Artist">
-    <meta name="twitter:description" content="Computational Biology · Active Inference · Cognitive Security · Entomology | 113 catalogued works | 812 citations (as of Apr 2026)">
-    <meta name="twitter:site" content="@DAFriedman1">
     <!-- JSON-LD: Person -->
     <script type="application/ld+json">
     {
@@ -34,6 +32,8 @@
     "@type": "Person",
     "@id": "https://danielarifriedman.com/#person",
     "name": "Daniel Ari Friedman",
+    "image": "https://github.com/docxology.png",
+    "email": "Daniel@ActiveInference.Institute",
     "givenName": "Daniel",
     "familyName": "Friedman",
     "jobTitle": "Computational Biologist & Active Inference Researcher",
@@ -42,7 +42,6 @@
     "sameAs": [
         "https://danielarifriedman.com/",
         "https://docxology.github.io/docxology/",
-        "https://twitter.com/DAFriedman1",
         "https://github.com/docxology",
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "https://orcid.org/0000-0001-6232-9096",
@@ -63,7 +62,91 @@
     "memberOf": {
         "@type": "Organization",
         "name": "Active Inference Institute"
+    },
+    "worksFor": {
+        "@type": "Organization",
+        "@id": "https://www.activeinference.institute/#organization",
+        "name": "Active Inference Institute",
+        "url": "https://www.activeinference.institute/",
+        "nonprofitStatus": "Nonprofit501c3"
+    },
+    "hasOccupation": [
+        {
+            "@type": "Occupation",
+            "name": "Cognitive Scientist",
+            "occupationLocation": { "@type": "Country", "name": "United States" }
+        },
+        {
+            "@type": "Occupation",
+            "name": "Computational Biologist"
+        }
+    ],
+    "makesOffer": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Active Inference Research Consulting",
+                "description": "Bayesian modeling, multi-agent systems, computational biology consulting",
+                "provider": { "@id": "https://danielarifriedman.com/#person" }
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "AI Tutoring & Mentorship",
+                "description": "Active Inference fundamentals, Python/Rust AI frameworks, scientific writing"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Speaking & Workshops",
+                "description": "Conference keynotes and team workshops on AI, ML, complexity, cognitive security"
+            }
+        }
+    ],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "Daniel@ActiveInference.Institute",
+        "contactType": "Research and Consulting"
     }
+}
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://danielarifriedman.com/#website",
+    "url": "https://danielarifriedman.com/",
+    "name": "Daniel Ari Friedman",
+    "description": "Personal website of Daniel Ari Friedman, PhD",
+    "inLanguage": "en-US",
+    "publisher": { "@id": "https://danielarifriedman.com/#person" },
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://danielarifriedman.com/publications.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://danielarifriedman.com/#service",
+    "name": "Daniel Ari Friedman — Active Inference Consulting",
+    "description": "Research consulting, AI tutoring, and speaking engagements on Active Inference, Bayesian modeling, computational biology, cognitive security, and multi-agent systems.",
+    "provider": { "@id": "https://danielarifriedman.com/#person" },
+    "areaServed": "Worldwide",
+    "url": "https://danielarifriedman.com/#connect",
+    "serviceType": ["Research Consulting", "AI Tutoring", "Speaking & Workshops", "Research Collaboration"],
+    "email": "Daniel@ActiveInference.Institute"
 }
     </script>
     <!-- Fonts: preconnect + swap -->
