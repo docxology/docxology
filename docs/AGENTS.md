@@ -2,4 +2,4 @@
 
 Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs).
 
-Currently empty; add Markdown here when long-form docs outgrow `README.md` or `AGENTS.md` at the repo root.
+See root `AGENTS.md` maintenance log for site/SEO changes. Add long-form architecture or runbooks here when they outgrow the root index.
