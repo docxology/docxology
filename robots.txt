@@ -15,7 +15,7 @@ Allow: /papers/
 Allow: /art/
 Allow: /docs/
 
-Sitemap: https://www.danielarifriedman.com/sitemap.xml
+Sitemap: https://danielarifriedman.com/sitemap.xml
 
 # Crawl-delay for politeness (optional, respected by some bots)
 Crawl-delay: 1

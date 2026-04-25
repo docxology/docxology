@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications — Daniel Ari Friedman, PhD | 113 Works in Active Inference, Entomology &amp; Cognitive Security</title>
-    <meta name="description" content="Complete bibliography of Daniel Ari Friedman, PhD — 113 publications spanning Active Inference, computational entomology, cognitive security, art &amp; synergetics, and genetics. DOI links included. As of April 2026.">
+    <meta name="description" content="Complete bibliography of Daniel Ari Friedman, PhD — 113 publications spanning Active Inference, computational entomology, cognitive security, art &amp; synergetics, and genetics. Sortable table with DOI links. Scholar metrics: 812 citations (April 2026).">
     <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.danielarifriedman.com/publications.html">
+    <link rel="canonical" href="https://danielarifriedman.com/publications.html">
     <link rel="manifest" href="/manifest.json">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Publications — Daniel Ari Friedman, PhD">
-    <meta property="og:description" content="113 publications in Active Inference, entomology, cognitive security, and art. DOI-linked. As of April 2026.">
-    <meta property="og:url" content="https://www.danielarifriedman.com/publications.html">
+    <meta property="og:description" content="113 publications in Active Inference, entomology, cognitive security, and art — DOI-linked, sortable. 812 Google Scholar citations as of April 2026.">
+    <meta property="og:url" content="https://danielarifriedman.com/publications.html">
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -22,7 +22,7 @@
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
-        "url": "https://www.danielarifriedman.com/"
+        "url": "https://danielarifriedman.com/"
     },
     "mainEntity": [
         {
@@ -1900,13 +1900,13 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.danielarifriedman.com/"
+            "item": "https://danielarifriedman.com/"
         },
         {
             "@type": "ListItem",
             "position": 2,
             "name": "Publications",
-            "item": "https://www.danielarifriedman.com/publications.html"
+            "item": "https://danielarifriedman.com/publications.html"
         }
     ]
 }
@@ -1934,7 +1934,7 @@
         <h1>📚 Publications</h1>
         <p class="sub">113 works spanning Active Inference, computational entomology, cognitive security, art &amp; synergetics, genetics, and open science — as of April 2026</p>
         <div class="meta-pills">
-            <span class="pill gold">📊 727 citations · h-index 15 · i10-index 17</span>
+            <span class="pill gold">📊 812 citations · h-index 15 · i10-index 17</span>
             <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" class="pill">Google Scholar</a>
             <a href="https://orcid.org/0000-0001-6232-9096" class="pill">ORCID 0000-0001-6232-9096</a>
             <a href="https://www.researchgate.net/profile/Daniel-Friedman-2" class="pill">ResearchGate</a>
@@ -1942,20 +1942,22 @@
     </header>
 
     <main id="main" class="main">
-        <div class="filter-row" role="search" aria-label="Filter publications">
+        <form class="filter-row" role="search" aria-label="Filter publications" onsubmit="return false">
             <div class="search-wrap">
                 <span class="search-icon" aria-hidden="true">🔍</span>
-                <input type="search" id="pub-search" placeholder="Search titles, venues, keywords…" aria-label="Search publications" oninput="filterPubs()">
+                <input type="search" id="pub-search" placeholder="Search title, venue, type, DOI, domain (e.g. entomology, active inference)…" aria-label="Search publications" oninput="filterPubs()" autocomplete="off" enterkeyhint="search" spellcheck="false">
             </div>
             <div class="filter-btns" role="group" aria-label="Filter by type">
-                <button class="filter-btn active" onclick="setTypeFilter('all',this)" id="filter-all">All</button>
-                <button class="filter-btn" onclick="setTypeFilter('Paper',this)" id="filter-paper">Papers</button>
-                <button class="filter-btn" onclick="setTypeFilter('Book',this)" id="filter-book">Books</button>
-                <button class="filter-btn" onclick="setTypeFilter('Presentation',this)" id="filter-pres">Presentations</button>
-                <button class="filter-btn" onclick="setTypeFilter('Course',this)" id="filter-course">Courses</button>
+                <button type="button" class="filter-btn active" onclick="setTypeFilter('all',this)" id="filter-all">All types</button>
+                <button type="button" class="filter-btn" onclick="setTypeFilter('Paper',this)" id="filter-paper">Papers</button>
+                <button type="button" class="filter-btn" onclick="setTypeFilter('Book',this)" id="filter-book">Books</button>
+                <button type="button" class="filter-btn" onclick="setTypeFilter('Presentation',this)" id="filter-pres">Presentations</button>
+                <button type="button" class="filter-btn" onclick="setTypeFilter('Course',this)" id="filter-course">Courses</button>
+                <button type="button" class="filter-btn" onclick="setTypeFilter('Series',this)" id="filter-series">Series</button>
+                <button type="button" class="filter-btn" onclick="setTypeFilter('Playbook',this)" id="filter-playbook">Playbooks</button>
             </div>
-            <span class="result-count" id="result-count" aria-live="polite">113 shown</span>
-        </div>
+            <span class="result-count" id="result-count" aria-live="polite">113 of 113 shown</span>
+        </form>
 
         <div class="domain-legend" role="group" aria-label="Filter by domain">
             <span class="domain-pill active" onclick="setDomainFilter('all',this)">All domains</span>
@@ -1970,23 +1972,25 @@
         </div>
 
         <div class="pub-table-wrap">
-            <table id="pub-table" aria-label="Complete bibliography">
+            <p class="text-sm text-muted pub-table-hint" style="margin:0 0 0.5rem 0.25rem;font-size:0.78rem;color:var(--text-muted)">Click column headers to sort. Use the search box to filter by any substring (including DOI fragments).</p>
+            <table id="pub-table" class="pub-table" aria-label="Complete bibliography" aria-describedby="pub-table-desc">
+                <caption id="pub-table-desc" class="visually-hidden">All works in the catalog; use search and filters to narrow results. Columns are sortable except the link column.</caption>
                 <thead>
                     <tr>
-                        <th class="td-num" onclick="sortBy('num')"># <span class="sort-icon">↕</span></th>
-                        <th class="td-year" onclick="sortBy('year')">Year <span class="sort-icon">↕</span></th>
-                        <th class="td-domain">Domain</th>
-                        <th class="td-type">Type</th>
-                        <th class="td-title">Title</th>
-                        <th class="td-venue">Venue</th>
-                        <th class="td-doi">DOI / Link</th>
+                        <th class="td-num" scope="col" data-sortable="num"><button type="button" class="th-sort-btn" onclick="sortBy('num')"># <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-year" scope="col" data-sortable="year"><button type="button" class="th-sort-btn" onclick="sortBy('year')">Year <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-domain" scope="col" data-sortable="domain"><button type="button" class="th-sort-btn" onclick="sortBy('domain')">Domain <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-type" scope="col" data-sortable="type"><button type="button" class="th-sort-btn" onclick="sortBy('type')">Type <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-title" scope="col" data-sortable="title"><button type="button" class="th-sort-btn" onclick="sortBy('title')">Title <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-venue" scope="col" data-sortable="venue"><button type="button" class="th-sort-btn" onclick="sortBy('venue')">Venue <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-doi" scope="col" data-sortable="doi"><button type="button" class="th-sort-btn" onclick="sortBy('doi')">Link / ID <span class="sort-icon" aria-hidden="true">↕</span></button></th>
                     </tr>
                 </thead>
                 <tbody id="pub-tbody">
                 <!-- Rows populated by JS -->
                 </tbody>
             </table>
-            <div id="no-results" class="no-results" class="d-none">No matching publications found.</div>
+            <div id="no-results" class="no-results d-none" hidden>No matching publications found.</div>
         </div>
     </main>
 
@@ -2120,70 +2124,147 @@
         {num:113,year:2026,domain:"🧠",type:"Paper",title:"Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19699234"}
     ];
 
+    const PUBS_LEN = PUBS.length; /* one row per BIBLIOGRAPHY work — keep in sync with pages/BIBLIOGRAPHY.md */
+
+    const DOMAIN_KW = {
+        '🐜': 'entomology ants insect',
+        '🧠': 'active inference brain fep free energy',
+        '🛡️': 'cognitive security',
+        '💻': 'computational software',
+        '🌍': 'aii active inference institute ecosystem',
+        '🎥': 'media video course presentation livestream',
+        '🧬': 'genetics genomics biomedical',
+        '🎨': 'art synergetics blake buckminster'
+    };
+    for(let i=0;i<PUBS.length;i++){
+        const p = PUBS[i];
+        const lab = p.domain;
+        p._search = (p.title + ' ' + p.venue + ' ' + p.type + ' ' + p.doi + ' ' + p.year + ' ' + p.domain + ' ' + (DOMAIN_KW[lab] || '')).toLowerCase();
+    }
+
     let currentTypeFilter = 'all';
     let currentDomainFilter = 'all';
-    let currentSort = {col:'num', dir:1};
+    /* dir +1 or -1; default matches readable bib order: # ascending */
+    let currentSort = {col: 'num', dir: 1};
 
     function typeClass(t){
         const m = {Paper:'type-paper',Presentation:'type-presentation',Book:'type-book',Course:'type-course',Series:'type-series',Playbook:'type-playbook'};
         return m[t] || 'type-paper';
     }
 
-    function renderTable(){
-        const q = (document.getElementById('pub-search').value||'').toLowerCase();
-        let data = PUBS.filter(p => {
-            const domainOk = currentDomainFilter==='all' || p.domain.startsWith(currentDomainFilter);
-            const typeOk = currentTypeFilter==='all' || p.type===currentTypeFilter;
-            const textOk = !q || p.title.toLowerCase().includes(q) || p.venue.toLowerCase().includes(q) || String(p.year).includes(q);
-            return domainOk && typeOk && textOk;
-        });
-        data = data.slice().sort((a,b) => {
-            let v1 = a[currentSort.col], v2 = b[currentSort.col];
-            if(typeof v1==='string') v1=v1.toLowerCase(), v2=v2.toLowerCase();
-            return (v1<v2?-1:v1>v2?1:0)*currentSort.dir;
-        });
-        const tbody = document.getElementById('pub-tbody');
-        if(data.length===0){
-            tbody.innerHTML='';
-            document.getElementById('no-results').style.display='block';
-        } else {
-            document.getElementById('no-results').style.display='none';
-            tbody.innerHTML = data.map(p=>`
-                <tr>
-                    <td class="td-num">${p.num}</td>
-                    <td class="td-year">${p.year}</td>
-                    <td class="td-domain">${p.domain}</td>
-                    <td class="td-type"><span class="type-badge ${typeClass(p.type)}">${p.type}</span></td>
-                    <td class="td-title"><a href="${p.doi}" target="_blank" rel="noopener">${p.title}</a></td>
-                    <td class="td-venue">${p.venue}</td>
-                    <td class="td-doi"><a href="${p.doi}" target="_blank" rel="noopener">→ Link</a></td>
-                </tr>`).join('');
+    function domainMatches(pDomain, filterKey){
+        if(filterKey==='all') return true;
+        if(!pDomain || !filterKey) return false;
+        return pDomain.indexOf(filterKey) === 0;
+    }
+
+    function cmpSort(a, b, col, dir){
+        var va, vb;
+        if(col === 'num' || col === 'year'){
+            va = a[col]; vb = b[col];
+            if(va < vb) return -1 * dir;
+            if(va > vb) return 1 * dir;
+            return 0;
         }
-        document.getElementById('result-count').textContent = data.length + ' shown';
+        va = (a[col] == null) ? '' : String(a[col]);
+        vb = (b[col] == null) ? '' : String(b[col]);
+        var r = va.localeCompare(vb, undefined, {sensitivity: 'base'});
+        if(r === 0) r = a.num - b.num;
+        return r * dir;
+    }
+
+    function updateSortUI(){
+        document.querySelectorAll('thead th[data-sortable]').forEach(function(th){
+            th.classList.remove('sorted');
+            var b = th.querySelector('.th-sort-btn');
+            var icon = th.querySelector('.sort-icon');
+            if(!b || !icon) return;
+            b.removeAttribute('aria-sort');
+            var col = th.getAttribute('data-sortable');
+            if(col === currentSort.col){
+                th.classList.add('sorted');
+                b.setAttribute('aria-sort', currentSort.dir < 0 ? 'descending' : 'ascending');
+                icon.textContent = currentSort.dir < 0 ? '\u2193' : '\u2191';
+            } else {
+                icon.textContent = '\u2195';
+            }
+        });
+    }
+
+    function renderTable(){
+        var q = (document.getElementById('pub-search').value || '').toLowerCase().trim();
+        var terms = q ? q.split(/\s+/).filter(function(t){ return t.length > 0; }) : [];
+        var data = PUBS.filter(function(p){
+            if(!domainMatches(p.domain, currentDomainFilter)) return false;
+            if(currentTypeFilter !== 'all' && p.type !== currentTypeFilter) return false;
+            if(terms.length === 0) return true;
+            var s = p._search;
+            for(var i = 0; i < terms.length; i++){
+                if(s.indexOf(terms[i]) === -1) return false;
+            }
+            return true;
+        });
+        data = data.slice().sort(function(a, b){
+            return cmpSort(a, b, currentSort.col, currentSort.dir);
+        });
+        var tbody = document.getElementById('pub-tbody');
+        var empty = document.getElementById('no-results');
+        if(data.length === 0){
+            tbody.innerHTML = '';
+            empty.hidden = false;
+            empty.classList.remove('d-none');
+        } else {
+            empty.hidden = true;
+            empty.classList.add('d-none');
+            tbody.innerHTML = data.map(function(p){
+                return '<tr>' +
+                    '<td class="td-num">' + p.num + '</td>' +
+                    '<td class="td-year">' + p.year + '</td>' +
+                    '<td class="td-domain">' + p.domain + '</td>' +
+                    '<td class="td-type"><span class="type-badge ' + typeClass(p.type) + '">' + p.type + '</span></td>' +
+                    '<td class="td-title"><a href="' + p.doi + '" target="_blank" rel="noopener">' + p.title + '</a></td>' +
+                    '<td class="td-venue">' + p.venue + '</td>' +
+                    '<td class="td-doi"><a href="' + p.doi + '" target="_blank" rel="noopener">→ Link</a></td>' +
+                '</tr>';
+            }).join('');
+        }
+        var n = PUBS.length;
+        var msg = (data.length === n)
+            ? (n + ' of ' + n + ' shown')
+            : (data.length + ' of ' + n + ' shown');
+        document.getElementById('result-count').textContent = msg;
+        updateSortUI();
     }
 
     function filterPubs(){ renderTable(); }
 
     function setTypeFilter(t, btn){
         currentTypeFilter = t;
-        document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
+        document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+        if(btn) btn.classList.add('active');
         renderTable();
     }
 
     function setDomainFilter(d, pill){
         currentDomainFilter = d;
-        document.querySelectorAll('.domain-pill').forEach(p=>p.classList.remove('active'));
-        pill.classList.add('active');
+        document.querySelectorAll('.domain-pill').forEach(function(p){ p.classList.remove('active'); });
+        if(pill) pill.classList.add('active');
         renderTable();
     }
 
+    function defaultDirForCol(col, prevCol){
+        if(col === 'year') return -1; /* newest first */
+        if(col === 'num') return 1;   /* catalog # ascending */
+        return 1; /* A→Z for text columns */
+    }
+
     function sortBy(col){
-        if(currentSort.col===col) currentSort.dir*=-1;
-        else { currentSort.col=col; currentSort.dir=1; }
-        document.querySelectorAll('thead th').forEach(th=>th.classList.remove('sorted'));
-        const map = {num:0,year:1};
-        if(map[col]!==undefined) document.querySelectorAll('thead th')[map[col]].classList.add('sorted');
+        if(currentSort.col === col){
+            currentSort.dir = -currentSort.dir;
+        } else {
+            currentSort.col = col;
+            currentSort.dir = defaultDirForCol(col, currentSort.col);
+        }
         renderTable();
     }
 
