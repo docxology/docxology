@@ -61,7 +61,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | COGSEC About | Origin, mission, publications | [cogsec.org/about](https://www.cogsec.org/about-2) |
 | Complexity Weekend | Co-founder & Co-organizer | [complexityadventures.com](https://www.complexityadventures.com/) |
 | Complexity Adventures (organizer profile) | Organizer | [complexityadventures.com/organizers/2](https://www.complexityadventures.com/organizers/2) |
-| College of the Redwoods | Associate Faculty, Biology (fall 2025–) | [redwoods.edu](https://www.redwoods.edu/) |
+| College of the Redwoods | Associate Faculty, Biology (2025–present) | [redwoods.edu](https://www.redwoods.edu/) |
 | Jasper Ridge Biological Preserve | Ant survey participant (2014–2015) | [jrbp.stanford.edu](https://jrbp.stanford.edu/content/ant-survey-participants) |
 | Stanford Complexity Group | Co-organizer (during graduate studies) | — |
 
@@ -157,7 +157,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | Physics as Information Processing (transcript) | Zenodo | [10.5281/zenodo.10447642](https://doi.org/10.5281/zenodo.10447642) |
 | Innovator's Digital Playbook | Web | [innovatorsdigitalplaybook.com](https://innovatorsdigitalplaybook.com/) |
 | BIOL-1 General Biology | GitHub | [docxology/biol-1](https://github.com/docxology/biol-1) |
-| BIOL-8 Human Anatomy & Physiology | GitHub | [docxology/biol-8](https://github.com/docxology/biol-8) |
+| BIOL-8 Human Biology | GitHub | [docxology/biol-8](https://github.com/docxology/biol-8) |
 
 ---
 
@@ -182,7 +182,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 99 per-paper folders with documentation |
+| [papers/](../papers/) | 106 per-paper folders with documentation |
 
 ---
 

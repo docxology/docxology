@@ -34,6 +34,7 @@
 - Maps papers to their associated software repositories
 - Connects the 8 research domains through cross-references
 - Keeps the repository map in [README.md](README.md) current
+- Keeps teaching and AII program lines aligned across [index.html](index.html) (visible on GitHub Pages), [pages/PROFILE.md](pages/PROFILE.md), [pages/VIDEOS.md](pages/VIDEOS.md), and the **Educator** bullet in [README.md](README.md) (e.g. CR BIOL courses, AII Textbook cohort count, textbook monograph links)
 
 ### 🛠️ MAINTAINER
 
@@ -88,8 +89,8 @@ docxology/
 
 | Date | Agent | Action | Status |
 | --- | --- | --- | --- |
-| 2026-03-08 | ARCHIVIST | Rebuilt pages/BIBLIOGRAPHY.md as unified sortable table (historical row count; superseded by later expansions) | ✅ |
-| 2026-03-08 | RESEARCHER | Verified paper-folder documentation completeness (superseded: 102 folders as of 2026-04-15) | ✅ |
+| 2026-03-08 | ARCHIVIST | Rebuilt pages/BIBLIOGRAPHY.md as unified sortable table | ✅ |
+| 2026-03-08 | RESEARCHER | Verified paper-folder documentation completeness | ✅ |
 | 2026-03-08 | EDUCATOR | Fixed SKILL.md for CryptoJews and EhrlichialInfection | ✅ |
 | 2026-03-08 | INTEGRATOR | Redesigned README.md with domain matrix and deep-links | ✅ |
 | 2026-03-08 | MAINTAINER | Created root AGENTS.md and papers/AGENTS.md | ✅ |
@@ -110,17 +111,15 @@ docxology/
 | 2026-03-24 | ARCHIVIST | Added Thomas Parr (UCL) as collaborator, ALIUS Research Group context, Christie's auction (Oct 2021) | ✅ |
 | 2026-03-24 | INTEGRATOR | Added ScholarGPS, ISSS wiki, NFT Archaeology, Christie's lot links to pages/LINKS.md | ✅ |
 | 2026-03-24 | MAINTAINER | Fact-checked all files via deep internet research (Perplexity); updated index.html, sitemap.xml | ✅ |
-| 2026-03-25 | RESEARCHER | 5-round deep Perplexity research audit: verified h-index 15, i10-index 17, 727 citations, 251 GitHub repos | ✅ |
 | 2026-03-25 | INTEGRATOR | Added Conor Heins & Tim Verbelen (VERSES AI) to pages/COLLABORATORS.md, pages/PROFILE.md, pages/WIKIPEDIA.md | ✅ |
 | 2026-03-25 | ARCHIVIST | Added PubMed, Zenodo links to pages/LINKS.md; added Denise Holt press feature across LINKS/MEDIA | ✅ |
-| 2026-03-25 | INTEGRATOR | Updated Scholar badges to 727 across README, BIBLIOGRAPHY, index.html; added h-index/i10-index to PROFILE | ✅ |
 | 2026-03-25 | MAINTAINER | Updated sitemap.xml dates, enhanced pages/WIKIPEDIA.md with VERSES AI and first-ETH Christie's detail | ✅ |
 | 2026-03-25 | RESEARCHER | Round 2 Perplexity audit: verified AII board (6 members), officers (Mikhailova VP/Secretary 2025+), Delaware incorporation, 501(c)(3) 2024 | ✅ |
 | 2026-03-25 | ARCHIVIST | Verified Curio Cards: Card 24 \"Complexity\" (333 copies), Card 25 (222), Card 26 (106); 7 artists; Christie's $1.2M/393 ETH | ✅ |
 | 2026-03-25 | INTEGRATOR | Added SAB links (Friston, Ramstead, Albarracin, Fields) to pages/COLLABORATORS.md; citation counts (88, 45, 41, 31 for top papers) | ✅ |
 | 2026-03-25 | INTEGRATOR | Added 7 AII pages to pages/LINKS.md (SAB, Strategy, Partnership, Substack, History, Board); CR link; 251 repos | ✅ |
-| 2026-03-25 | MAINTAINER | Enriched pages/PROFILE.md with AII programs (Textbook 7 cohorts, Internship, Fellows, Mentorship), Curio Cards art descriptions | ✅ |
-| 2026-03-25 | ARCHIVIST | Added paper folder Friedman_2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY work count (superseded by later rows) | ✅ |
+| 2026-03-25 | MAINTAINER | Enriched pages/PROFILE.md with AII programs (Internship, Fellows, Mentorship, Textbook Group), Curio Cards art descriptions | ✅ |
+| 2026-03-25 | ARCHIVIST | Added paper folder Friedman_2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY work count | ✅ |
 | 2026-03-25 | RESEARCHER | Round 3 Perplexity audit: verified COGSEC founding (2018), P3IF affiliations, NM field site, ALIUS team | ✅ |
 | 2026-03-25 | INTEGRATOR | Enriched pages/PROFILE.md with COGSEC history, named volumes (IRT-20, NIM-21, CAT-22, ATLAS), and P3IF affiliations | ✅ |
 | 2026-03-25 | ARCHIVIST | Updated pages/WIKIPEDIA.md, pages/COLLABORATORS.md (RJ Cordes), and pages/LINKS.md with verified COGSEC & ALIUS details | ✅ |
@@ -129,12 +128,12 @@ docxology/
 | 2026-04-01 | INTEGRATOR | Injected YAML frontmatter, navigation headers, and footers across 9 pages/ files | ✅ |
 | 2026-04-01 | MAINTAINER | Renamed videos.md/resources.md to VIDEOS.md/RESOURCES.md for naming parity | ✅ |
 | 2026-04-01 | INTEGRATOR | Added code/ (orchestrators/, src/, tests/) and docs/ to repository structure | ✅ |
-| 2026-04-01 | MAINTAINER | Comprehensive index.html overhaul: WCAG 2.2 (skip-link, ARIA, focus-visible, reduced-motion), ScholarlyArticle/CreativeWork/ItemList JSON-LD schemas, Twitter summary_large_image, PWA manifest, service worker, print styles | ✅ |
+| 2026-04-01 | MAINTAINER | Comprehensive index.html overhaul: WCAG 2.2 (skip-link, ARIA, focus-visible, reduced-motion), ScholarlyArticle/CreativeWork/ItemList JSON-LD schemas, PWA manifest, service worker, print styles | ✅ |
 | 2026-04-01 | INTEGRATOR | Created pages/README.md hub index with full navigation table | ✅ |
 | 2026-04-01 | MAINTAINER | Expanded sitemap.xml (15 URLs: added WIKIPEDIA, VIDEOS, RESOURCES, reordered); enhanced robots.txt with allow/disallow rules | ✅ |
 | 2026-04-01 | MAINTAINER | Created manifest.json (PWA) and sw.js (service worker with stale-while-revalidate) | ✅ |
 | 2026-04-03 | MAINTAINER | Structural integrity audit: Migrated 4 main markdown lists to canonical HTML pages (publications, software, collaborators, media) to fix indexability; fixed JSON-LD jobTitle mapping; standardized "March 2026" metrics dating. | ✅ |
-| 2026-04-15 | ARCHIVIST | Added Ento-Linguistics (Zenodo) to pages/BIBLIOGRAPHY.md; synced papers/README index (102 folders), papers/AGENTS.md counts, publications.html PUBS + JSON-LD; paper_metadata.json entry Friedman_2026_EntoLinguistics | ✅ |
+| 2026-04-15 | ARCHIVIST | Added Ento-Linguistics (Zenodo) to pages/BIBLIOGRAPHY.md; synced papers/README index, papers/AGENTS.md counts, publications.html PUBS + JSON-LD; paper_metadata.json entry Friedman_2026_EntoLinguistics | ✅ |
 | 2026-04-15 | INTEGRATOR | Aligned index.html / publications.html / README counts (109 works); removed duplicate Person JSON-LD on index; added ento_linguistics to SOFTWARE.md, software.html, repo totals 47+31; sitemap lastmod | ✅ |
 | 2026-04-15 | INTEGRATOR | PROFILE.md metrics table (109/107 split); README domain matrix + Entomology selected-pubs table; index.html Computational tag 47 owned | ✅ |
 | 2026-04-19 | ARCHIVIST | Added Friedman_2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934, Active Inference Journal); README.md, AGENTS.md, SKILL.md created; bibliography row 108; Active Inference domain 19→20; all counts updated 109→110 | ✅ |
@@ -144,3 +143,5 @@ docxology/
 | 2026-04-25 | INTEGRATOR | Sitemap: added `about.html`; normalized `https://danielarifriedman.com/` (apex) across README, pages/LINKS.md, pages/PROFILE.md, art/README.md, art metadata JSON — aligns with CNAME and canonical HTML | ✅ |
 | 2026-04-25 | MAINTAINER | Synced Google Scholar citation count to **812** (April 2026) across README, pages/BIBLIOGRAPHY.md, LINKS, PROFILE, WIKIPEDIA draft; README blockquote now distinguishes **251** public repos vs **80** catalogued software rows; added `code/AGENTS.md`, `docs/AGENTS.md` | ✅ |
 | 2026-04-25 | INTEGRATOR | SEO pass: `og-image.jpg` + `og:*` + JSON-LD (Person, WebSite+SearchAction, ProfessionalService, BreadcrumbList) on `index` and subpages; removed Twitter card meta; IndexNow key file; `art.html`/`videos.html` head metadata ordered before styles; PWA+OG on `about.html` and `blog/index.html` redirects; `.github/workflows/indexnow-on-push.yml` | ✅ |
+| 2026-04-25 | INTEGRATOR | README + AGENTS doc sync: root README Educator line (AII Textbook 10 cohorts through 2026, Parr/Pezzulo/Friston 2022 + Namjoshi 2026 links, CR BIOL-1 Pelican Bay / BIOL-8 Human Biology Spring 2026); `pages/README` paper-folder count 106; `papers/AGENTS` + `docs/AGENTS` hub accuracy | ✅ |
+| 2026-04-25 | MAINTAINER | Retired outdated copy: BIBLIOGRAPHY summary line (103/99), duplicate 727-citation log rows, Twitter-era index.html log phrasing, stale CR/BIOL-8 and repo 47/31 counts across `pages/*`; WIKIPEDIA teaching sentence + PROFILE ref path | ✅ |

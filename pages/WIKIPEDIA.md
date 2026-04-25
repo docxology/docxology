@@ -42,7 +42,7 @@ Friedman co-founded the Active Inference Institute, which emerged from foundatio
 
 === Academic teaching ===
 
-In fall 2025, Friedman joined the [[College of the Redwoods]] as Associate Faculty in Biology, teaching general biology and human anatomy and physiology.<ref name="profile-repo">{{cite web |url=https://github.com/docxology/docxology/blob/main/PROFILE.md |title=PROFILE.md – Daniel Ari Friedman |website=GitHub |access-date=2026-03-24}}</ref> He has also developed online courses on remote team communication through [[Udemy]].<ref name="udemy-remote">{{cite web |url=https://www.udemy.com/course/communication-for-remote-teams/ |title=Communication for Remote Teams |website=Udemy |access-date=2026-03-24}}</ref>
+Friedman teaches at the [[College of the Redwoods]] as Associate Faculty in Biology, including **BIOL-1** (General Biology, Pelican Bay) and **BIOL-8** (Human Biology) in Spring 2026.<ref name="profile-repo">{{cite web |url=https://github.com/docxology/docxology/blob/main/pages/PROFILE.md |title=PROFILE.md – Daniel Ari Friedman |website=GitHub |access-date=2026-04-25}}</ref> He has also developed online courses on remote team communication through [[Udemy]].<ref name="udemy-remote">{{cite web |url=https://www.udemy.com/course/communication-for-remote-teams/ |title=Communication for Remote Teams |website=Udemy |access-date=2026-03-24}}</ref>
 
 == Research ==
 

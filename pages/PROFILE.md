@@ -71,7 +71,7 @@ Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collectio
 
 ### Computational Frameworks
 
-Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His 47 personal repositories and 31 Active Inference Institute contributions represent a significant body of open-source scientific software.
+Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His 48 personal repositories (catalogued) and 32 Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md) represent a significant body of open-source scientific software.
 
 ---
 
@@ -86,7 +86,7 @@ Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and J
 
 The Active Inference Institute emerged from foundational team meetings in 2019–2020 (initially as the Active Inference Lab). The organization transitioned to a non-profit in mid-2022, registered in **Delaware, USA**, and received official **501(c)(3) recognition in 2024** (supported pro bono by Fried Frank law firm). Co-founded by Friedman, Alexander Vyatkin, and Yvonne, the Institute is an educational and open science organization supporting diverse projects and infrastructure for learning, teaching, and applying Active Inference. Under Friedman's leadership, the Institute has produced 500+ educational videos, organized five annual Applied Active Inference Symposia (2021–2025), developed open-source tools (GNN, CEREBRUM, ActiveInferAnts), built a global community, and publishes a monthly newsletter via [Substack](https://activeinferenceinstitute.substack.com/).
 
-**Programs**: Textbook Group (7 cohorts through 2024), Internship Program (since 2022), Fellows Program (5 Research Fellows by Nov 2024), Mentorship Program (launched 2024).
+**Programs**: Textbook Group (10 cohorts through 2026; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), Internship Program (since 2022), Fellows Program (5 Research Fellows by Nov 2024), Mentorship Program (launched 2024).
 
 **Current Officers (2025)**:
 
@@ -116,7 +116,7 @@ Weekend-long hackathons addressing pressing problems using complexity science, f
 
 ## Teaching
 
-Friedman joined College of the Redwoods as Associate Faculty in Biology (fall 2025), teaching BIOL-1 General Biology and BIOL-8 Human Anatomy & Physiology. He has developed online courses (Udemy: Communication for Remote Teams, Keybase for Remote Teams), and offers extensive private tutoring and mentorship in Active Inference, Bayesian methods, scientific writing, and computational tools. Through the Active Inference Institute, he has facilitated 500+ livestream sessions and study groups.
+Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **BIOL-1: General Biology** (Pelican Bay) and **BIOL-8: Human Biology** (Spring 2026). He has developed online courses (Udemy: Communication for Remote Teams, Keybase for Remote Teams), and offers extensive private tutoring and mentorship in Active Inference, Bayesian methods, scientific writing, and computational tools. Through the Active Inference Institute, he has facilitated 500+ livestream sessions and study groups.
 
 ---
 
@@ -167,9 +167,9 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 | h-index | 15 |
 | i10-index | 17 |
 | Citations since 2021 | 495 |
-| Open-Source Repositories (owned) | 47 |
+| Open-Source Repositories (owned, catalogued) | 48 |
 | GitHub Public Repositories (total) | 251 |
-| Active Inference Institute Repos | 31 |
+| Active Inference Institute Repos (catalogued) | 32 |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |
 | Books Authored | 3 |

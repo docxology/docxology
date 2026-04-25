@@ -42,7 +42,7 @@ The `pages/` directory contains all centralized, non-paper-specific documentatio
 
 ### Related Directories
 
-- **[papers/](../papers/)** — 100 per-paper folders with README, AGENTS, and SKILL files
+- **[papers/](../papers/)** — 106 per-paper folders with README, AGENTS, and SKILL files
 - **[code/](../code/)** — Source code, orchestrators, and test suites
 - **[docs/](../docs/)** — Repository-wide operational documentation
 - **[art/](../art/)** — Visual art gallery assets

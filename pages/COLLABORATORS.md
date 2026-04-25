@@ -203,7 +203,7 @@ Friedman has conducted in-depth published interviews with leading researchers:
 | Santa Fe Institute | Participant in events and workshops |
 | Wonderfest | Speaker — Bay Area science education and public outreach |
 | KuppingerCole | Speaker at European Identity & Cloud Conference 2024 |
-| College of the Redwoods | Associate Faculty, Biology (fall 2025–present) |
+| College of the Redwoods | Associate Faculty, Biology (2025–present; BIOL-1 / BIOL-8, Spring 2026) |
 | Jasper Ridge Biological Preserve | Ant survey participant (2014–2015) |
 | Complexity Weekend / Complexity Adventures | Co-founder and co-organizer (2019–present) |
 

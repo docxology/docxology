@@ -94,7 +94,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 | Course | Institution | Materials |
 |--------|------------|-----------|
 | BIOL-1: General Biology | College of the Redwoods | [github.com/docxology/biol-1](https://github.com/docxology/biol-1) |
-| BIOL-8: Human Anatomy & Physiology | College of the Redwoods | [github.com/docxology/biol-8](https://github.com/docxology/biol-8) |
+| BIOL-8: Human Biology | College of the Redwoods | [github.com/docxology/biol-8](https://github.com/docxology/biol-8) |
 
 ---
 

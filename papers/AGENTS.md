@@ -10,7 +10,7 @@
 ### 📖 ARCHIVIST
 
 - Maintains the directory index in [README.md](README.md)
-- Tracks PDF availability (95/99 currently present)
+- Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
 - Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (106 entries as of 2026-04-24)
 
@@ -75,11 +75,13 @@
 
 | Date | Agent | Action | Status |
 |------|-------|--------|--------|
-| 2026-03-08 | ARCHIVIST | Verified all 99 folders have complete docs | ✅ |
+| 2026-03-08 | ARCHIVIST | Verified paper folders have complete docs (initial index) | ✅ |
 | 2026-03-08 | EDUCATOR | Fixed CryptoJews and EhrlichialInfection SKILL.md | ✅ |
-| 2026-03-08 | RESEARCHER | Rebuilt paper_metadata.json with 99 entries | ✅ |
+| 2026-03-08 | RESEARCHER | Rebuilt paper_metadata.json (initial unified entries) | ✅ |
 | 2026-04-15 | ARCHIVIST | Indexed 102 paper folders in README; Entomology domain +1 (Ento-Linguistics); bibliography row in pages/BIBLIOGRAPHY.md | ✅ |
 | 2026-04-19 | ARCHIVIST | Added Friedman_2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934); Active Inference domain 19→20; paper count 102→103; bibliography row 108; metadata.json; publications.html; index.html counts 109→110 | ✅ |
 | 2026-04-19 | ARCHIVIST | Added Friedman_2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer CSCIS vol 2857); Active Inference domain 20→21; paper count 103→104; bibliography row 109; all counts 110→111 | ✅ |
 | 2026-04-23 | ARCHIVIST | Added Friedman_2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; bibliography row 110; Active Inference domain 21→22; paper_metadata; publications.html + index counts 111→112; papers/README index; SOFTWARE + software.html 47→48 | ✅ |
 | 2026-04-24 | ARCHIVIST | Added Friedman_2026_FEPLean (DOI 10.5281/zenodo.19699234, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; BIBLIOGRAPHY row 111; Active Inference domain 22→23; paper_metadata; publications.html + index counts 112→113; papers/README 106; SOFTWARE AII 31→32 + FEP_Lean | ✅ |
+| 2026-04-25 | MAINTAINER | AGENTS: PDF tracking defers to README index column; log aligned with root doc sync (teaching / hub counts) | ✅ |
+| 2026-04-25 | MAINTAINER | Maintenance log: removed stale “99 folder/99 entries” wording from 2026-03-08 rows (superseded by 106-folder index) | ✅ |

@@ -32,7 +32,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **92** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **103 citable works** with paper folders · **99 DOI links** · **37 venues**
+> **113** works in the table below **·** **106** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 

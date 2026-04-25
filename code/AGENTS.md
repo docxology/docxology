@@ -32,4 +32,4 @@ cd code/tests && uv run pytest -q
 
 ## Maintenance
 
-Requires `yt-dlp` on `PATH` for live fetches. Orchestrator defaults write under `code/data/`.
+Requires `yt-dlp` on `PATH` for live fetches. Orchestrator defaults write under `code/data/`. Static site and profile copy (including teaching lines) live at the repo root and under `pages/`; keep them consistent with [README.md](../README.md) and [AGENTS.md](../AGENTS.md) when you change YouTube or course data that surface on the site.

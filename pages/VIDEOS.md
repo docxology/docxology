@@ -25,7 +25,7 @@ Interactive streams covering interdisciplinary topics, framework development, Sy
 ## Courses & Curriculum
 
 ### Active Inference Textbook Groups
-Structured cohorts walking through the fundamentals of the Free Energy Principle.
+Structured cohorts walking through the fundamentals of the Free Energy Principle (10 cohorts through 2026), aligned with [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) and [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/).
 - Hosted via the [Active Inference Institute](https://activeinference.institute).
 
 ### University Lectures
