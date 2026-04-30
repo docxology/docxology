@@ -1,8 +1,10 @@
-# AGENTS.md — A Literature Review Architecture for Active Inference
+# AGENTS.md — A Living Meta-Analysis Architecture for Active Inference
 
-**Paper**: A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring (2026)  
-**Area**: Active Inference · computational meta-analysis · nanopublications · literature review architecture  
-**Authors**: Daniel Ari Friedman, J. Dietz  
+**Paper**: A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring (2026) · Zenodo **v2**  
+**Area**: Active Inference · computational meta-analysis · nanopublications · living literature review  
+**Authors**: Daniel Ari Friedman, Joel Dietz  
+**Canonical DOI (v2)**: `10.5281/zenodo.19897664` · [Zenodo record](https://zenodo.org/records/19897664)  
+**Prior deposit (v1)**: `10.5281/zenodo.19461934`  
 **Repository**: https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis
 
 ---
@@ -11,14 +13,14 @@
 
 ### 📖 Research Agent
 
-**Focus**: Deep analysis of the Literature Review Architecture (LRA) and its three core components.
+**Focus**: Deep analysis of the living meta-analysis architecture and how extraction, nanopublications, and scoring interact.
 
 **Tasks**:
 
-- Analyze core architecture: assertion extraction pipeline, nanopublication framework, and citation-weighted hypothesis scoring — how these three components interact to produce a quantitative landscape of Active Inference.
-- Evaluate: scalability and reproducibility properties of the LRA applied to 25+ years of Active Inference literature (2000–2026).
-- Map connections to the Free Energy Principle, Predictive Processing, and the theoretical lineage of Active Inference from 2000 to present.
-- Assess how citation weighting affects hypothesis ranking and what claims emerge as most evidentially supported.
+- Analyze the pipeline: multi-source retrieval and deduplication, three-tier (A/B/C) taxonomy, LLM-driven assertion extraction against eight core hypotheses, RDF-compatible nanopublications, and citation-weighted evidence scoring over the knowledge graph.
+- Evaluate scalability and reproducibility for a corpus on the order of hundreds of deduplicated papers (v2: *N* = 819) spanning 2005–2026 growth dynamics in the Active Inference / FEP literature.
+- Map connections to the Free Energy Principle, predictive processing, and falsifiability debates that motivate hypothesis-level evidence profiling.
+- Interpret hypothesis score tiers and rankings as *relative* signals (publication bias and linguistic asymmetry caution in v2), not as validated point estimates without human ground truth.
 
 ### 🔬 Methods Agent
 
@@ -26,11 +28,11 @@
 
 **Tasks**:
 
-- Assess and document: full-text retrieval pipeline, preprocessing strategies, and corpus construction for the 2000–2026 Active Inference literature.
-- Assess and document: NLP assertion extraction design — what counts as an assertion, how hypothesis-bearing sentences are identified and structured.
-- Evaluate: nanopublication encoding format, schema choices, and machine-readability.
-- Verify: citation network construction, weighting methodology, and scoring metrics for hypothesis ranking.
-- Confirm reproducibility via the open-source repository at https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis
+- Document retrieval from arXiv, Semantic Scholar, and OpenAlex; canonical identifier hierarchy (DOI > arXiv ID > Semantic Scholar ID > OpenAlex ID); deduplication outputs.
+- Document the eight-category A/B/C taxonomy (core theory, tools & translation, application domains) and cross-cutting topic / citation-network analyses (NMF topics, intra-corpus citation structure).
+- Evaluate LLM-based abstract-level extraction: directionality, confidence, natural-language reasoning encoded per nanopublication; limitations (no manual validation of every assertion in v2).
+- Verify citation-weighted scoring over the graph and how results are reported (consensus tiers, debate tiers).
+- Confirm reproducibility via https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis
 
 ### 📚 Citation Agent
 
@@ -38,9 +40,9 @@
 
 **Tasks**:
 
-- Track citations and impact of this work (DOI `10.5281/zenodo.19461934`).
-- Map connections to related works in the Friedman corpus — especially prior systematic reviews, ontology work (OntologySUMO), and the Active Inference Institute ecosystem papers.
-- Identify citing papers and downstream applications of the LRA framework or nanopublication pipeline.
+- Track citations and impact using DOI `10.5281/zenodo.19897664` (v2); retain `10.5281/zenodo.19461934` for version-chain and early citations to v1.
+- Map connections to related works in the Friedman corpus — systematic reviews, ontology work (OntologySUMO), and Active Inference Institute ecosystem papers.
+- Identify citing papers and downstream use of the architecture, nanopublication pattern, or open codebase.
 
 ### 🔗 Synthesis Agent
 
@@ -48,9 +50,9 @@
 
 **Tasks**:
 
-- Connect this work to the broader docxology corpus: Active Inference ecosystem papers (AII_v1–v3), CEREBRUM, FederatedInference, DistributedScience, DiscoveryEngine, and the ReproducibleResearch architecture.
-- Identify synergies with cognitive security (P3IF, ATLAS, StigmergicAnnotation) and sensemaking research where structured knowledge representation intersects.
-- Link the nanopublication framework to open science and FAIR data principles across the Friedman bibliography.
+- Connect to the broader docxology corpus: Active Inference ecosystem papers (AII_v1–v3), CEREBRUM, FederatedInference, DistributedScience, DiscoveryEngine, and ReproducibleResearch.
+- Identify synergies with cognitive security (P3IF, ATLAS, StigmergicAnnotation) and sensemaking where structured knowledge representation matters.
+- Link nanopublications and living graphs to open science and FAIR practice.
 
 ### 💼 Consultant Agent
 
@@ -58,15 +60,16 @@
 
 **Tasks**:
 
-- Support teams adopting the LRA pipeline for other research domains beyond Active Inference.
-- Relate findings to systematic review methodology, knowledge graph construction, and evidence synthesis workflows.
-- Guide users applying citation-weighted scoring to ranking competing hypotheses in their own literature reviews.
+- Support teams porting the architecture to other fast-moving literatures.
+- Relate findings to systematic review methods, knowledge graphs, and continuous evidence synthesis.
+- Emphasize human validation workflows when LLM extractions feed high-stakes decisions.
 
 ## Extraction Log
 
-- **Source PDF**: `act_inf_metaanalysis_v1_04-19-2026.pdf`
+- **Source PDF (current)**: `act_inf_metaanalysis_v2_04-30-2026.pdf` (Zenodo v2, 2026-04-30)
+- **Prior PDF**: `act_inf_metaanalysis_v1_04-19-2026.pdf` (v1 deposit)
 - **PDF Status**: Available
-- **Documentation Quality**: Hand-curated from title, citation metadata, and repository (https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis)
+- **Documentation Quality**: Aligned to Zenodo v2 metadata and abstract-level description; hand-curated cross-check with repository
 
 ## Related Papers
 

@@ -1,58 +1,63 @@
 ---
 name: "ActInfMetaAnalysis"
-description: "Expertise in computational meta-analysis of Active Inference literature, including assertion extraction pipelines, nanopublication frameworks, citation-weighted hypothesis scoring, and systematic literature review architecture (2000–2026)."
+description: "Expertise in the living meta-analysis architecture for Active Inference/FEP literature: multi-source retrieval and deduplication, three-tier taxonomy, LLM-to-nanopublication extraction over eight hypotheses, RDF-compatible graphs, citation-weighted scoring (Zenodo v2, 2026)."
 tags:
   - active-inference
   - meta-analysis
   - nanopublications
-  - assertion-extraction
+  - llm-extraction
+  - living-literature-review
   - citation-weighted-scoring
-  - literature-review
   - free-energy-principle
   - computational-bibliography
   - open-science
 ---
 
-# A Literature Review Architecture for Active Inference
+# A Living Meta-Analysis Architecture for Active Inference
 
-**Daniel Ari Friedman** · **J. Dietz** (2026) · Active Inference · computational meta-science
+**Daniel Ari Friedman** · **Joel Dietz** (2026) · Active Inference · computational meta-science
+
+**DOI**: [10.5281/zenodo.19897664](https://doi.org/10.5281/zenodo.19897664) · **Zenodo**: [record v2](https://zenodo.org/records/19897664)
 
 ## Instructions
 
-Use this skill when working with topics related to **systematic literature review, assertion extraction from scientific text, nanopublications, citation-weighted hypothesis scoring, or computational analysis of the Active Inference / Free Energy Principle literature**.
+Use this skill for **living (continuously updatable) meta-analysis**, **LLM-mediated assertion extraction**, **nanopublications**, **hypothesis-level evidence maps**, or **computational surveys of Active Inference / FEP literature**.
 
 When applying this skill:
 
-1. Ground claims about the Active Inference literature in the LRA framework: assertions are discrete, machine-readable claims linked to source evidence and citation weight.
-2. Apply nanopublication structure to represent hypotheses: each claim has a minimal, citable, machine-readable form with provenance and supporting evidence encoded.
+1. Treat extractions as **automated hypotheses about text**, not human-validated facts, unless a validation study is cited.
+2. Prefer the **three-part story**: ingest & dedupe → taxonomic / thematic structure → nanopublication graph + citation-weighted scores.
+3. When interpreting scores, stress **relative** ordering and temporal drift; avoid over-interpreting absolute magnitudes (bias and wording effects are discussed in the paper).
+4. Cite **[v2](https://doi.org/10.5281/zenodo.19897664)** for the current PDF; **[v1](https://doi.org/10.5281/zenodo.19461934)** remains version history.
 
 ## Key Concepts
 
-- **Literature Review Architecture (LRA)** — integrated pipeline combining assertion extraction, nanopublications, and citation-weighted scoring.
-- **Assertion extraction** — NLP pipeline identifying and structuring hypothesis-bearing claims from full-text papers.
-- **Nanopublications** — minimal, citable, machine-readable knowledge atoms encoding scientific assertions with provenance.
-- **Citation-weighted hypothesis scoring** — ranking theoretical claims by cumulative evidential support from the citation network.
-- **Active Inference corpus (2000–2026)** — 25+ years of Free Energy Principle and Active Inference literature processed as the primary dataset.
+- **Living meta-analysis** — pipelines designed to refresh as new papers enter arXiv / Semantic Scholar / OpenAlex-class sources.
+- **Canonical deduplication** — DOI-led identifier hierarchy collapsing duplicate records (*N* = 819 illustrative corpus in v2).
+- **Three-tier taxonomy** — tiers A/B/C covering core theory, tools & translation, and application domains (eight categories).
+- **Eight core hypotheses** — abstract-level LLM judgments with directional support, confidence, and short rationales packaged as nanopublications.
+- **Nanopublications** — small, attributable, machine-readable assertion units suited to RDF-compatible graphs.
+- **Citation-weighted evidence** — aggregates support in the corpus citation structure; outputs tiered consensus / debate summaries.
 
 ## Methods & Techniques
 
-- Full-text retrieval and corpus construction from open-access Active Inference literature (2000–2026).
-- NLP preprocessing: tokenization, sentence segmentation, claim detection, and structured assertion encoding.
-- Nanopublication generation and schema: head/assertion/provenance/pubinfo graph structure.
-- Citation network construction and weighting; scoring metrics for hypothesis-level evidence aggregation.
-- Reproducible pipeline: all code and data at https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis
+- Multi-repository retrieval (arXiv, Semantic Scholar, OpenAlex) and hierarchical ID-based deduplication.
+- Classification into A/B/C taxonomy; auxiliary topic modeling and citation-graph statistics.
+- LLM prompting over abstracts mapped to eight hypotheses; structured nanopublication emission.
+- Graph scoring and qualitative interpretation (application-heavy corpus shape, hub papers, hypothesis tiers).
+- Reproduction: https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis
 
 ## Key Findings
 
-- A comprehensive quantitative landscape of Active Inference theoretical commitments and empirical grounding across 2000–2026.
-- Scalable assertion extraction enabling systematic comparison of competing hypotheses across the literature.
-- Citation-weighted scoring provides evidence-based prioritization of theoretical claims for future investigation.
+- Automated, queryable hypothesis-level landscapes are feasible without hand-labeling every paper—at the cost of validation labor and known LLM biases.
+- Field-level statistics (tier mix, hypothesis tiers, citation sparsity *within* the induced corpus) are first-class outputs alongside point scores.
+- The architecture transfers to other fast-growing literatures if domain hypotheses and ontology hooks are redesigned.
 
 ## Prerequisites
 
-- Familiarity with Active Inference or the Free Energy Principle at a conceptual level.
-- Basic NLP concepts (tokenization, named entity recognition, dependency parsing).
-- Introductory understanding of citation networks and bibliometric methods.
+- Conceptual familiarity with Active Inference or the Free Energy Principle.
+- Basic understanding of bibliographic APIs and duplicate handling.
+- Awareness of limits of abstract-only LLM classification versus full-text semantics.
 
 ## 🎯 Consulting & Tutoring
 
@@ -60,6 +65,6 @@ When applying this skill:
 
 ## Related Skills
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the publication catalog.
 
 **Code and data**: https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis
