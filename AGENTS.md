@@ -146,3 +146,23 @@ docxology/
 | 2026-04-25 | INTEGRATOR | README + AGENTS doc sync: root README Educator line (AII Textbook 10 cohorts through 2026, Parr/Pezzulo/Friston 2022 + Namjoshi 2026 links, CR BIOL-1 Pelican Bay / BIOL-8 Human Biology Spring 2026); `pages/README` paper-folder count 106; `papers/AGENTS` + `docs/AGENTS` hub accuracy | ✅ |
 | 2026-04-25 | MAINTAINER | Retired outdated copy: BIBLIOGRAPHY summary line (103/99), duplicate 727-citation log rows, Twitter-era index.html log phrasing, stale CR/BIOL-8 and repo 47/31 counts across `pages/*`; WIKIPEDIA teaching sentence + PROFILE ref path | ✅ |
 | 2026-04-30 | MAINTAINER | Sitemap: dropped `about.html`, `research.html`, `meditations.html` — each is a redirect stub with `rel=canonical` to `/`; listing them contradicted crawl signals (GSC “Discovered–not indexed”); `lastmod` refresh | ✅ |
+
+---
+
+## Learned User Preferences
+
+- Prefer apex site URLs `https://danielarifriedman.com/` for HTML canonicals, `og:url`, and sitemap `loc` entries so they match `CNAME` and reduce www/apex mismatch issues in Search Console.
+- Omit redirect-only stub pages from `sitemap.xml` when their canonical is the homepage; keep the stub files for inbound links but avoid listing them so crawl signals are not contradictory.
+- When maintaining `index.html` Person JSON-LD, put Wikidata `https://www.wikidata.org/wiki/Q138781444` first in the `sameAs` array (canonical entity anchor for the person).
+- After Google Scholar metrics change, sync the citation count across README, `pages/BIBLIOGRAPHY.md`, `pages/LINKS.md`, `pages/PROFILE.md`, `pages/WIKIPEDIA.md`, and main HTML stats for consistency.
+- Homepage teaching blurbs: BIOL-1 General Biology — College of the Redwoods, Pelican Bay, Spring 2026; BIOL-8 — Human Biology, College of the Redwoods, Spring 2026.
+- AII Textbook Group site copy: 10 cohorts through 2026; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
+- On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
+- After substantive repo edits, run `uv run pytest` in `code/tests` (Python via `uv`) to confirm the suite still passes.
+
+## Learned Workspace Facts
+
+- Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).
+- `publications.html` builds the interactive bibliography from an embedded JavaScript `PUBS` array; adding works requires updating that array and on-page counts, not only `pages/BIBLIOGRAPHY.md`.
+- The INTEGRATOR role in `papers/AGENTS.md` includes keeping `publications.html` / `PUBS` aligned when unified bibliography totals change.
+- Python tooling for the repo lives under `code/`; automated checks use `pytest` in `code/tests`.
