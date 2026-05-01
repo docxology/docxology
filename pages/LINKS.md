@@ -28,7 +28,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | DBLP | [dblp.org/pid/346/2173](https://dblp.org/pid/346/2173.html) | Computer science bibliography |
 | Frontiers Loop | [loop.frontiersin.org/people/220679](https://loop.frontiersin.org/people/220679/bio) | Frontiers author profile |
 | PhilPeople | [philpeople.org/profiles/daniel-ari-friedman](https://philpeople.org/profiles/daniel-ari-friedman) | Philosophy research profile |
-| Wikidata | [Q85887463](https://www.wikidata.org/wiki/Q85887463) | Structured knowledge base entry |
+| Wikidata | [Q138781444](https://www.wikidata.org/wiki/Q138781444) | Structured knowledge base entry |
 | Stanford Profile | [dfri.people.stanford.edu](https://dfri.people.stanford.edu/) | Stanford University page |
 | Semantic Scholar | [semanticscholar.org](https://www.semanticscholar.org/author/Daniel-A.-Friedman/51453144) | AI-curated citation graph |
 | SciProfiles | [sciprofiles.com/profile/447575](https://sciprofiles.com/profile/447575) | MDPI author profile |

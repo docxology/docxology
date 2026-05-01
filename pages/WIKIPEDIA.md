@@ -120,7 +120,7 @@ Friedman is the founder of COGSEC.org, an organization focused on cognitive secu
 * [https://www.youtube.com/@danielarifriedman YouTube channel]
 * [https://video.activeinference.institute/ Active Inference Journal — 500+ educational videos]
 * [https://cogsec.org COGSEC.org]
-* [https://www.wikidata.org/wiki/Q85887463 Wikidata: Q85887463]
+* [https://www.wikidata.org/wiki/Q138781444 Wikidata: Q138781444]
 * [http://purl.stanford.edu/pb813wm1484 Stanford PhD dissertation]
 
 {{Authority control}}
