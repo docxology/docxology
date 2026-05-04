@@ -1,5 +1,5 @@
 {
-  "Friedman_2015_CryptoJews": {
+  "2015_CryptoJews": {
     "year": "2015",
     "topic": "CryptoJews",
     "name": "CryptoJews",
@@ -26,7 +26,7 @@
       "population genetics"
     ]
   },
-  "Friedman_2015_EhrlichialInfection": {
+  "2015_EhrlichialInfection": {
     "year": "2015",
     "topic": "EhrlichialInfection",
     "name": "EhrlichialInfection",
@@ -54,7 +54,7 @@
       "autoimmune disorders"
     ]
   },
-  "Friedman_2015_HoneyBeeEvolution": {
+  "2015_HoneyBeeEvolution": {
     "year": "2015",
     "topic": "HoneyBeeEvolution",
     "name": "HoneyBeeEvolution",
@@ -74,7 +74,7 @@
       "venom"
     ]
   },
-  "Friedman_2016_AntGenetics": {
+  "2016_AntGenetics": {
     "year": "2016",
     "topic": "AntGenetics",
     "name": "AntGenetics",
@@ -93,7 +93,7 @@
       "pheromone communication"
     ]
   },
-  "Friedman_2016_ForagingGene": {
+  "2016_ForagingGene": {
     "year": "2016",
     "topic": "ForagingGene",
     "name": "ForagingGene",
@@ -112,7 +112,7 @@
       "behavioral ecology"
     ]
   },
-  "Friedman_2016_NuclearStructure": {
+  "2016_NuclearStructure": {
     "year": "2016",
     "topic": "NuclearStructure",
     "name": "NuclearStructure",
@@ -130,7 +130,7 @@
       "3C technologies"
     ]
   },
-  "Friedman_2017_MutAnts": {
+  "2017_MutAnts": {
     "year": "2017",
     "topic": "MutAnts",
     "name": "MutAnts",
@@ -149,7 +149,7 @@
       "gene knockout"
     ]
   },
-  "Friedman_2017_TwoLineages": {
+  "2017_TwoLineages": {
     "year": "2017",
     "topic": "TwoLineages",
     "name": "TwoLineages",
@@ -167,7 +167,7 @@
       "social evolution"
     ]
   },
-  "Friedman_2018_ArgentineAnt": {
+  "2018_ArgentineAnt": {
     "year": "2018",
     "topic": "ArgentineAnt",
     "name": "ArgentineAnt",
@@ -185,7 +185,7 @@
       "cuticular hydrocarbons"
     ]
   },
-  "Friedman_2018_DopamineForaging": {
+  "2018_DopamineForaging": {
     "year": "2018",
     "topic": "DopamineForaging",
     "name": "DopamineForaging",
@@ -203,7 +203,7 @@
       "harvester ants"
     ]
   },
-  "Friedman_2018_MVEE": {
+  "2018_MVEE": {
     "year": "2018",
     "topic": "MVEE",
     "name": "MVEE",
@@ -221,7 +221,7 @@
       "open-ended evolution"
     ]
   },
-  "Friedman_2018_PPPiP": {
+  "2018_PPPiP": {
     "year": "2018",
     "topic": "PPPiP",
     "name": "PPPiP",
@@ -240,7 +240,7 @@
       "controlled novelty"
     ]
   },
-  "Friedman_2018_WoodliceAndMen": {
+  "2018_WoodliceAndMen": {
     "year": "2018",
     "topic": "WoodliceAndMen",
     "name": "WoodliceAndMen",
@@ -259,7 +259,7 @@
       "philosophy of mind"
     ]
   },
-  "Friedman_2019_AntConsciousness": {
+  "2019_AntConsciousness": {
     "year": "2019",
     "topic": "AntConsciousness",
     "name": "AntConsciousness",
@@ -276,7 +276,7 @@
       "scientific theories of consciousness"
     ]
   },
-  "Friedman_2019_DennettExplained": {
+  "2019_DennettExplained": {
     "year": "2019",
     "topic": "DennettExplained",
     "name": "DennettExplained",
@@ -293,7 +293,7 @@
       "altered states"
     ]
   },
-  "Friedman_2019_ForagerHydration": {
+  "2019_ForagerHydration": {
     "year": "2019",
     "topic": "ForagerHydration",
     "name": "ForagerHydration",
@@ -311,7 +311,7 @@
       "reproductive fitness"
     ]
   },
-  "Friedman_2019_PhDDissertation": {
+  "2019_PhDDissertation": {
     "year": "2019",
     "topic": "PhDDissertation",
     "name": "PhDDissertation",
@@ -330,7 +330,7 @@
       "Stanford University"
     ]
   },
-  "Friedman_2020_BehaviorEngineering": {
+  "2020_BehaviorEngineering": {
     "year": "2020",
     "topic": "BehaviorEngineering",
     "name": "BehaviorEngineering",
@@ -346,7 +346,7 @@
       "behavioral design"
     ]
   },
-  "Friedman_2020_DistributedPhysiology": {
+  "2020_DistributedPhysiology": {
     "year": "2020",
     "topic": "DistributedPhysiology",
     "name": "DistributedPhysiology",
@@ -364,7 +364,7 @@
       "social immunity"
     ]
   },
-  "Friedman_2020_EmergentTeams": {
+  "2020_EmergentTeams": {
     "year": "2020",
     "topic": "EmergentTeams",
     "name": "EmergentTeams",
@@ -382,7 +382,33 @@
       "research accelerators"
     ]
   },
-  "Friedman_2020_GeneExpressionForagers": {
+  "2020_FacilitatorsCatechism": {
+    "year": "2020",
+    "topic": "FacilitatorsCatechism",
+    "name": "The Facilitator's Catechism",
+    "description": "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and civilian teams.",
+    "authors": "Richard J. Cordes, Daniel Ari Friedman",
+    "abstract": "This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference frame historical, contemporary, and future requirements and constraints. Traditional military operations orders and civilian counterparts are compared in context; survivability, limitations of existing formats, and facilitator needs inform a proposed operations order format—the Facilitator's Catechism.",
+    "keywords": [
+      "OPORD",
+      "operations orders",
+      "organizational sensemaking",
+      "high reliability organizations",
+      "complexity",
+      "remote teams",
+      "Active Inference",
+      "cognitive security"
+    ],
+    "tags": [
+      "OPORD",
+      "operations-orders",
+      "sensemaking",
+      "high-reliability-organizations",
+      "complexity",
+      "active-inference"
+    ]
+  },
+  "2020_GeneExpressionForagers": {
     "year": "2020",
     "topic": "GeneExpressionForagers",
     "name": "GeneExpressionForagers",
@@ -400,7 +426,7 @@
       "Pogonomyrmex barbatus"
     ]
   },
-  "Friedman_2020_GreatPreset": {
+  "2020_GreatPreset": {
     "year": "2020",
     "topic": "GreatPreset",
     "name": "GreatPreset",
@@ -417,7 +443,7 @@
       "socioeconomic narratives"
     ]
   },
-  "Friedman_2020_InnovatorsCatechism": {
+  "2020_InnovatorsCatechism": {
     "year": "2020",
     "topic": "InnovatorsCatechism",
     "name": "InnovatorsCatechism",
@@ -434,7 +460,7 @@
       "hackathons"
     ]
   },
-  "Friedman_2020_NeuroscienceDecision": {
+  "2020_NeuroscienceDecision": {
     "year": "2020",
     "topic": "NeuroscienceDecision",
     "name": "NeuroscienceDecision",
@@ -451,7 +477,7 @@
       "neural circuits"
     ]
   },
-  "Friedman_2020_NeurotransmitterVariation": {
+  "2020_NeurotransmitterVariation": {
     "year": "2020",
     "topic": "NeurotransmitterVariation",
     "name": "NeurotransmitterVariation",
@@ -470,7 +496,7 @@
       "colony variation"
     ]
   },
-  "Friedman_2021_ActiveInferants": {
+  "2021_ActiveInferants": {
     "year": "2021",
     "topic": "ActiveInferants",
     "name": "ActiveInferants",
@@ -488,7 +514,7 @@
       "eco-evo-devo"
     ]
   },
-  "Friedman_2021_DigitalRhetorical": {
+  "2021_DigitalRhetorical": {
     "year": "2021",
     "topic": "DigitalRhetorical",
     "name": "DigitalRhetorical",
@@ -505,7 +531,7 @@
       "computational discourse analysis"
     ]
   },
-  "Friedman_2021_ModelingConflict": {
+  "2021_ModelingConflict": {
     "year": "2021",
     "topic": "ModelingConflict",
     "name": "ModelingConflict",
@@ -523,7 +549,7 @@
       "trust management"
     ]
   },
-  "Friedman_2021_NarrativeEcosystems": {
+  "2021_NarrativeEcosystems": {
     "year": "2021",
     "topic": "NarrativeEcosystems",
     "name": "NarrativeEcosystems",
@@ -541,7 +567,7 @@
       "systems engineering"
     ]
   },
-  "Friedman_2021_NarrativeInformationMgmt": {
+  "2021_NarrativeInformationMgmt": {
     "year": "2021",
     "topic": "NarrativeInformationMgmt",
     "name": "NarrativeInformationMgmt",
@@ -558,7 +584,7 @@
       "interdisciplinary synthesis"
     ]
   },
-  "Friedman_2022_ActiveDiffusion": {
+  "2022_ActiveDiffusion": {
     "year": "2022",
     "topic": "ActiveDiffusion",
     "name": "ActiveDiffusion",
@@ -574,7 +600,7 @@
       "free energy minimization"
     ]
   },
-  "Friedman_2022_ActiveInferenceOntology": {
+  "2022_ActiveInferenceOntology": {
     "year": "2022",
     "topic": "ActiveInferenceOntology",
     "name": "ActiveInferenceOntology",
@@ -591,7 +617,7 @@
       "open science"
     ]
   },
-  "Friedman_2022_FreeWillSapolsky": {
+  "2022_FreeWillSapolsky": {
     "year": "2022",
     "topic": "FreeWillSapolsky",
     "name": "FreeWillSapolsky",
@@ -609,7 +635,7 @@
       "moral philosophy"
     ]
   },
-  "Friedman_2022_HypercertEcosystems": {
+  "2022_HypercertEcosystems": {
     "year": "2022",
     "topic": "HypercertEcosystems",
     "name": "HypercertEcosystems",
@@ -627,7 +653,7 @@
       "systems modeling"
     ]
   },
-  "Friedman_2022_InformationCommons": {
+  "2022_InformationCommons": {
     "year": "2022",
     "topic": "InformationCommons",
     "name": "InformationCommons",
@@ -645,7 +671,7 @@
       "collective sensemaking"
     ]
   },
-  "Friedman_2022_MirrorTest": {
+  "2022_MirrorTest": {
     "year": "2022",
     "topic": "MirrorTest",
     "name": "MirrorTest",
@@ -662,7 +688,7 @@
       "prediction error"
     ]
   },
-  "Friedman_2022_StigmergicAnnotation": {
+  "2022_StigmergicAnnotation": {
     "year": "2022",
     "topic": "StigmergicAnnotation",
     "name": "StigmergicAnnotation",
@@ -679,7 +705,7 @@
       "digital attention"
     ]
   },
-  "Friedman_2022_SystematicLiteratureAnalysis": {
+  "2022_SystematicLiteratureAnalysis": {
     "year": "2022",
     "topic": "SystematicLiteratureAnalysis",
     "name": "SystematicLiteratureAnalysis",
@@ -696,7 +722,7 @@
       "ontology"
     ]
   },
-  "Friedman_2022_TrustFinder": {
+  "2022_TrustFinder": {
     "year": "2022",
     "topic": "TrustFinder",
     "name": "TrustFinder",
@@ -713,7 +739,7 @@
       "sociotechnical systems"
     ]
   },
-  "Friedman_2023_AIAccountability": {
+  "2023_AIAccountability": {
     "year": "2023",
     "topic": "AIAccountability",
     "name": "AIAccountability",
@@ -731,7 +757,7 @@
       "synthetic intelligence"
     ]
   },
-  "Friedman_2023_AII_v1": {
+  "2023_AII_v1": {
     "year": "2023",
     "topic": "AII_v1",
     "name": "AII_v1",
@@ -746,7 +772,7 @@
       "community building"
     ]
   },
-  "Friedman_2023_ATLAS": {
+  "2023_ATLAS": {
     "year": "2023",
     "topic": "ATLAS",
     "name": "ATLAS",
@@ -763,7 +789,7 @@
       "cognitive tools"
     ]
   },
-  "Friedman_2023_AccountActiveInference": {
+  "2023_AccountActiveInference": {
     "year": "2023",
     "topic": "AccountActiveInference",
     "name": "AccountActiveInference",
@@ -780,7 +806,7 @@
       "model development"
     ]
   },
-  "Friedman_2023_AntsAging": {
+  "2023_AntsAging": {
     "year": "2023",
     "topic": "AntsAging",
     "name": "AntsAging",
@@ -798,7 +824,7 @@
       "evolutionary biology"
     ]
   },
-  "Friedman_2023_BlakeFuller": {
+  "2023_BlakeFuller": {
     "year": "2023",
     "topic": "BlakeFuller",
     "name": "BlakeFuller",
@@ -816,7 +842,7 @@
       "juxtaposition"
     ]
   },
-  "Friedman_2023_CognitiveSovereignty": {
+  "2023_CognitiveSovereignty": {
     "year": "2023",
     "topic": "CognitiveSovereignty",
     "name": "CognitiveSovereignty",
@@ -836,7 +862,7 @@
       "bare life"
     ]
   },
-  "Friedman_2023_DistributedScience": {
+  "2023_DistributedScience": {
     "year": "2023",
     "topic": "DistributedScience",
     "name": "DistributedScience",
@@ -854,7 +880,7 @@
       "distributed cognition"
     ]
   },
-  "Friedman_2023_GNN": {
+  "2023_GNN": {
     "year": "2023",
     "topic": "GNN",
     "name": "GNN",
@@ -871,7 +897,7 @@
       "interoperability"
     ]
   },
-  "Friedman_2023_GenerativeResearchTeams": {
+  "2023_GenerativeResearchTeams": {
     "year": "2023",
     "topic": "GenerativeResearchTeams",
     "name": "GenerativeResearchTeams",
@@ -891,7 +917,7 @@
       "meta-prompting"
     ]
   },
-  "Friedman_2023_GuidedTourMinds": {
+  "2023_GuidedTourMinds": {
     "year": "2023",
     "topic": "GuidedTourMinds",
     "name": "GuidedTourMinds",
@@ -910,7 +936,7 @@
       "sentience taxonomy"
     ]
   },
-  "Friedman_2023_HoneyBeeGeneExpression": {
+  "2023_HoneyBeeGeneExpression": {
     "year": "2023",
     "topic": "HoneyBeeGeneExpression",
     "name": "HoneyBeeGeneExpression",
@@ -927,7 +953,7 @@
       "coding sequence evolution"
     ]
   },
-  "Friedman_2023_NSFReporting": {
+  "2023_NSFReporting": {
     "year": "2023",
     "topic": "NSFReporting",
     "name": "NSFReporting",
@@ -943,7 +969,7 @@
       "prompt engineering"
     ]
   },
-  "Friedman_2023_OpenScienceSensemaking": {
+  "2023_OpenScienceSensemaking": {
     "year": "2023",
     "topic": "OpenScienceSensemaking",
     "name": "OpenScienceSensemaking",
@@ -960,7 +986,7 @@
       "information overload"
     ]
   },
-  "Friedman_2023_P3IF": {
+  "2023_P3IF": {
     "year": "2023",
     "topic": "P3IF",
     "name": "P3IF",
@@ -977,7 +1003,7 @@
       "health security"
     ]
   },
-  "Friedman_2023_PostdocReview": {
+  "2023_PostdocReview": {
     "year": "2023",
     "topic": "PostdocReview",
     "name": "PostdocReview",
@@ -996,7 +1022,7 @@
       "interdisciplinary research"
     ]
   },
-  "Friedman_2023_SinglePheromone": {
+  "2023_SinglePheromone": {
     "year": "2023",
     "topic": "SinglePheromone",
     "name": "SinglePheromone",
@@ -1013,7 +1039,7 @@
       "parsimony"
     ]
   },
-  "Friedman_2023_ToComment": {
+  "2023_ToComment": {
     "year": "2023",
     "topic": "ToComment",
     "name": "ToComment",
@@ -1029,7 +1055,7 @@
       "public sphere"
     ]
   },
-  "Friedman_2023_VariationalSynthesis": {
+  "2023_VariationalSynthesis": {
     "year": "2023",
     "topic": "VariationalSynthesis",
     "name": "VariationalSynthesis",
@@ -1047,7 +1073,7 @@
       "particular partition"
     ]
   },
-  "Friedman_2023_VideoEntomology": {
+  "2023_VideoEntomology": {
     "year": "2023",
     "topic": "VideoEntomology",
     "name": "VideoEntomology",
@@ -1063,7 +1089,7 @@
       "high-throughput analysis"
     ]
   },
-  "Friedman_2024_AII_v2": {
+  "2024_AII_v2": {
     "year": "2024",
     "topic": "AII_v2",
     "name": "AII_v2",
@@ -1077,7 +1103,7 @@
       "community"
     ]
   },
-  "Friedman_2024_BioFirm": {
+  "2024_BioFirm": {
     "year": "2024",
     "topic": "BioFirm",
     "name": "BioFirm",
@@ -1093,7 +1119,7 @@
       "adaptive management"
     ]
   },
-  "Friedman_2024_BlattodeaDiversity": {
+  "2024_BlattodeaDiversity": {
     "year": "2024",
     "topic": "BlattodeaDiversity",
     "name": "BlattodeaDiversity",
@@ -1110,7 +1136,7 @@
       "evolutionary biology"
     ]
   },
-  "Friedman_2024_CurioCards": {
+  "2024_CurioCards": {
     "year": "2024",
     "topic": "CurioCards",
     "name": "CurioCards",
@@ -1125,7 +1151,7 @@
       "prompt-based exploration"
     ]
   },
-  "Friedman_2024_DigitalTwins": {
+  "2024_DigitalTwins": {
     "year": "2024",
     "topic": "DigitalTwins",
     "name": "DigitalTwins",
@@ -1141,7 +1167,7 @@
       "simulation"
     ]
   },
-  "Friedman_2024_FarmWorks": {
+  "2024_FarmWorks": {
     "year": "2024",
     "topic": "FarmWorks",
     "name": "FarmWorks",
@@ -1161,7 +1187,7 @@
       "community-driven innovation"
     ]
   },
-  "Friedman_2024_FederatedInference": {
+  "2024_FederatedInference": {
     "year": "2024",
     "topic": "FederatedInference",
     "name": "FederatedInference",
@@ -1179,7 +1205,7 @@
       "privacy-preserving inference"
     ]
   },
-  "Friedman_2024_ImageMemeResearch": {
+  "2024_ImageMemeResearch": {
     "year": "2024",
     "topic": "ImageMemeResearch",
     "name": "ImageMemeResearch",
@@ -1195,7 +1221,7 @@
       "sensemaking"
     ]
   },
-  "Friedman_2024_InfiniteImaginarium": {
+  "2024_InfiniteImaginarium": {
     "year": "2024",
     "topic": "InfiniteImaginarium",
     "name": "InfiniteImaginarium",
@@ -1211,7 +1237,7 @@
       "operational frameworks"
     ]
   },
-  "Friedman_2024_MathArtBlake": {
+  "2024_MathArtBlake": {
     "year": "2024",
     "topic": "MathArtBlake",
     "name": "MathArtBlake",
@@ -1227,7 +1253,7 @@
       "Active Inference"
     ]
   },
-  "Friedman_2024_OntologySUMO": {
+  "2024_OntologySUMO": {
     "year": "2024",
     "topic": "OntologySUMO",
     "name": "OntologySUMO",
@@ -1243,7 +1269,7 @@
       "semantic mapping"
     ]
   },
-  "Friedman_2024_PaleolithicRockstars": {
+  "2024_PaleolithicRockstars": {
     "year": "2024",
     "topic": "PaleolithicRockstars",
     "name": "PaleolithicRockstars",
@@ -1259,7 +1285,7 @@
       "rock art"
     ]
   },
-  "Friedman_2024_PopulationSearch": {
+  "2024_PopulationSearch": {
     "year": "2024",
     "topic": "PopulationSearch",
     "name": "PopulationSearch",
@@ -1276,7 +1302,7 @@
       "computational optimization"
     ]
   },
-  "Friedman_2024_QuantumDreams": {
+  "2024_QuantumDreams": {
     "year": "2024",
     "topic": "QuantumDreams",
     "name": "QuantumDreams",
@@ -1293,7 +1319,7 @@
       "Morse code"
     ]
   },
-  "Friedman_2024_SensemakingFederation": {
+  "2024_SensemakingFederation": {
     "year": "2024",
     "topic": "SensemakingFederation",
     "name": "SensemakingFederation",
@@ -1308,7 +1334,7 @@
       "decentralized infrastructure"
     ]
   },
-  "Friedman_2024_SharedProtentions": {
+  "2024_SharedProtentions": {
     "year": "2024",
     "topic": "SharedProtentions",
     "name": "SharedProtentions",
@@ -1325,7 +1351,7 @@
       "predictive processing"
     ]
   },
-  "Friedman_2025_5thSymposium": {
+  "2025_5thSymposium": {
     "year": "2025",
     "topic": "5thSymposium",
     "name": "5thSymposium",
@@ -1339,7 +1365,7 @@
       "research presentations"
     ]
   },
-  "Friedman_2025_AII_v3": {
+  "2025_AII_v3": {
     "year": "2025",
     "topic": "AII_v3",
     "name": "AII_v3",
@@ -1354,7 +1380,7 @@
       "community"
     ]
   },
-  "Friedman_2025_AccessibilityActiveInference": {
+  "2025_AccessibilityActiveInference": {
     "year": "2025",
     "topic": "AccessibilityActiveInference",
     "name": "AccessibilityActiveInference",
@@ -1373,7 +1399,7 @@
       "cognitive security"
     ]
   },
-  "Friedman_2025_AgentAndNiche": {
+  "2025_AgentAndNiche": {
     "year": "2025",
     "topic": "AgentAndNiche",
     "name": "AgentAndNiche",
@@ -1393,7 +1419,7 @@
       "art-science synthesis"
     ]
   },
-  "Friedman_2025_AntStack": {
+  "2025_AntStack": {
     "year": "2025",
     "topic": "AntStack",
     "name": "AntStack",
@@ -1409,7 +1435,7 @@
       "colony organization"
     ]
   },
-  "Friedman_2025_AntStackComplexity": {
+  "2025_AntStackComplexity": {
     "year": "2025",
     "topic": "AntStackComplexity",
     "name": "AntStackComplexity",
@@ -1425,7 +1451,7 @@
       "non-equilibrium thermodynamics"
     ]
   },
-  "Friedman_2025_AuBI": {
+  "2025_AuBI": {
     "year": "2025",
     "topic": "AuBI",
     "name": "AuBI",
@@ -1441,7 +1467,7 @@
       "human-AI interaction"
     ]
   },
-  "Friedman_2025_CEREBRUM": {
+  "2025_CEREBRUM": {
     "year": "2025",
     "topic": "CEREBRUM",
     "name": "CEREBRUM",
@@ -1458,7 +1484,7 @@
       "unified modeling"
     ]
   },
-  "Friedman_2025_CognitiveArtScience": {
+  "2025_CognitiveArtScience": {
     "year": "2025",
     "topic": "CognitiveArtScience",
     "name": "CognitiveArtScience",
@@ -1473,7 +1499,7 @@
       "art-science integration"
     ]
   },
-  "Friedman_2025_ConsciousnessAnts": {
+  "2025_ConsciousnessAnts": {
     "year": "2025",
     "topic": "ConsciousnessAnts",
     "name": "ConsciousnessAnts",
@@ -1489,7 +1515,7 @@
       "meta-cognition"
     ]
   },
-  "Friedman_2025_DiscoveryEngine": {
+  "2025_DiscoveryEngine": {
     "year": "2025",
     "topic": "DiscoveryEngine",
     "name": "DiscoveryEngine",
@@ -1505,7 +1531,7 @@
       "computational science"
     ]
   },
-  "Friedman_2025_EvoJump": {
+  "2025_EvoJump": {
     "year": "2025",
     "topic": "EvoJump",
     "name": "EvoJump",
@@ -1521,7 +1547,7 @@
       "Free Energy Principle"
     ]
   },
-  "Friedman_2025_MDKV": {
+  "2025_MDKV": {
     "year": "2025",
     "topic": "MDKV",
     "name": "MDKV",
@@ -1538,7 +1564,7 @@
       "round-trip transformation"
     ]
   },
-  "Friedman_2025_MarkdownDecisionProcess": {
+  "2025_MarkdownDecisionProcess": {
     "year": "2025",
     "topic": "MarkdownDecisionProcess",
     "name": "MarkdownDecisionProcess",
@@ -1555,7 +1581,7 @@
       "document generation"
     ]
   },
-  "Friedman_2025_OnTime": {
+  "2025_OnTime": {
     "year": "2025",
     "topic": "OnTime",
     "name": "OnTime",
@@ -1570,7 +1596,7 @@
       "temporal coordination"
     ]
   },
-  "Friedman_2025_QuadMath": {
+  "2025_QuadMath": {
     "year": "2025",
     "topic": "QuadMath",
     "name": "QuadMath",
@@ -1588,7 +1614,7 @@
       "computational geometry"
     ]
   },
-  "Friedman_2025_ResNei": {
+  "2025_ResNei": {
     "year": "2025",
     "topic": "ResNei",
     "name": "ResNei",
@@ -1604,7 +1630,7 @@
       "knowledge sharing"
     ]
   },
-  "Friedman_2025_Symergetics": {
+  "2025_Symergetics": {
     "year": "2025",
     "topic": "Symergetics",
     "name": "Symergetics",
@@ -1622,7 +1648,7 @@
       "computational geometry"
     ]
   },
-  "Friedman_2025_SystemsProcesses": {
+  "2025_SystemsProcesses": {
     "year": "2025",
     "topic": "SystemsProcesses",
     "name": "SystemsProcesses",
@@ -1638,7 +1664,7 @@
       "anticipatory systems"
     ]
   },
-  "Friedman_2025_TemporalDepth": {
+  "2025_TemporalDepth": {
     "year": "2025",
     "topic": "TemporalDepth",
     "name": "TemporalDepth",
@@ -1655,7 +1681,7 @@
       "clinical psychology"
     ]
   },
-  "Friedman_2025_Thoughtseeds": {
+  "2025_Thoughtseeds": {
     "year": "2025",
     "topic": "Thoughtseeds",
     "name": "Thoughtseeds",
@@ -1673,7 +1699,7 @@
       "mindfulness"
     ]
   },
-  "Friedman_2026_BeforePragmatism": {
+  "2026_BeforePragmatism": {
     "year": "2026",
     "topic": "BeforePragmatism",
     "name": "BeforePragmatism",
@@ -1691,7 +1717,7 @@
       "prophetic vision"
     ]
   },
-  "Friedman_2026_Bimetalism": {
+  "2026_Bimetalism": {
     "year": "2026",
     "topic": "Bimetalism",
     "name": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
@@ -1711,7 +1737,7 @@
       "Prophetic Economics"
     ]
   },
-  "Friedman_2026_CognitiveIntegrity": {
+  "2026_CognitiveIntegrity": {
     "year": "2026",
     "topic": "CognitiveIntegrity",
     "name": "CognitiveIntegrity",
@@ -1728,7 +1754,7 @@
       "threat modeling"
     ]
   },
-  "Friedman_2026_DoorsOfPerception": {
+  "2026_DoorsOfPerception": {
     "year": "2026",
     "topic": "DoorsOfPerception",
     "name": "DoorsOfPerception",
@@ -1746,7 +1772,7 @@
       "Markov blankets"
     ]
   },
-  "Friedman_2026_EntoLinguistics": {
+  "2026_EntoLinguistics": {
     "year": "2026",
     "topic": "EntoLinguistics",
     "name": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
@@ -1774,7 +1800,7 @@
       "myrmecology"
     ]
   },
-  "Friedman_2026_ReproducibleResearch": {
+  "2026_ReproducibleResearch": {
     "year": "2026",
     "topic": "ReproducibleResearch",
     "name": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
@@ -1796,7 +1822,7 @@
       "Model Context Protocol"
     ]
   },
-  "Friedman_2026_ActInfMetaAnalysis": {
+  "2026_ActInfMetaAnalysis": {
     "year": "2026",
     "topic": "ActInfMetaAnalysis",
     "name": "A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring",
@@ -1825,7 +1851,7 @@
       "computational bibliography"
     ]
   },
-  "Friedman_2026_FocusedAttentionMeditation": {
+  "2026_FocusedAttentionMeditation": {
     "year": "2026",
     "topic": "FocusedAttentionMeditation",
     "name": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
@@ -1857,7 +1883,7 @@
       "contemplative neuroscience"
     ]
   },
-  "Friedman_2026_CognitiveCaseDiagrams": {
+  "2026_CognitiveCaseDiagrams": {
     "year": "2026",
     "topic": "CognitiveCaseDiagrams",
     "name": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
@@ -1890,7 +1916,7 @@
       "linguistic typology"
     ]
   },
-  "Friedman_2026_FEPLean": {
+  "2026_FEPLean": {
     "year": "2026",
     "topic": "FEPLean",
     "name": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",

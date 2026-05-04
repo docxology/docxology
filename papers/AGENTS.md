@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 106 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 107 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (106 entries as of 2026-04-24)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (107 entries as of 2026-05-04)
 
 ### 🔬 RESEARCHER
 
@@ -32,7 +32,7 @@
 - Links each paper folder to its BIBLIOGRAPHY.md entry and DOI
 - Maps papers to associated software repositories in SOFTWARE.md
 - Connects related papers across domains
-- When the unified bibliography count changes, update the `PUBS` array in `publications.html` (and meta/title/result count there) so the site table stays complete
+- When the unified bibliography count or table order changes, run [`sync_publications_html.py`](papers/sync_publications_html.py) so `publications.html` **PUBS** and JSON-LD **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md).
 
 ---
 
@@ -41,14 +41,15 @@
 | Script | Purpose |
 |--------|---------|
 | [regenerate_docs.py](regenerate_docs.py) | Rebuild README.md, AGENTS.md, and SKILL.md from metadata |
+| [sync_publications_html.py](sync_publications_html.py) | Rebuild `publications.html` **PUBS** and JSON-LD **mainEntity** from the unified bibliography table (`pages/BIBLIOGRAPHY.md`); run after adds/reorders in that table |
 
 ### Quality Checks (spot-check after adds)
 
 | Check | Status |
 |-------|--------|
-| README.md present | 106/106 folders (last verified 2026-04-24) |
-| AGENTS.md present | 106/106 |
-| SKILL.md present | 106/106 |
+| README.md present | 107/107 folders (last verified 2026-05-04) |
+| AGENTS.md present | 107/107 |
+| SKILL.md present | 107/107 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -58,16 +59,18 @@
 
 ## Folder Coverage by Domain
 
-| Domain | Papers | Example Folders |
-|--------|:------:|-----------------|
-| 🐜 Entomology | 21 | `Friedman_2026_EntoLinguistics`, `Friedman_2025_AntStack`, `Friedman_2021_ActiveInferants`, `Friedman_2019_PhDDissertation` |
-| 🧠 Active Inference | 23 | `Friedman_2026_FEPLean`, `Friedman_2026_CognitiveCaseDiagrams`, `Friedman_2026_FocusedAttentionMeditation`, `Friedman_2026_ActInfMetaAnalysis`, `Friedman_2025_CEREBRUM` |
-| 🛡️ Cognitive Security | 19 | `Friedman_2026_CognitiveIntegrity`, `Friedman_2022_InformationCommons`, `Friedman_2023_P3IF` |
-| 🎨 Art & Synergetics | 13 | `Friedman_2026_DoorsOfPerception`, `Friedman_2023_BlakeFuller`, `Friedman_2025_QuadMath` |
-| 🧬 Genetics & Biomedical | 9 | `Friedman_2015_HoneyBeeEvolution`, `Friedman_2016_NuclearStructure` |
-| 🎥 Presentations | 8 | `Friedman_2025_5thSymposium`, `Friedman_2024_BioFirm` |
-| 💻 Computational | 6 | `Friedman_2025_DiscoveryEngine`, `Friedman_2025_MDKV` |
-| 🌍 AII Ecosystem | 5 | `Friedman_2025_AII_v3`, `Friedman_2024_OntologySUMO` |
+| Domain | Works | Example Folders |
+|--------|:-----:|-----------------|
+| 🐜 Entomology | 21 | `2026_EntoLinguistics`, `2025_AntStack`, `2021_ActiveInferants`, `2019_PhDDissertation` |
+| 🧠 Active Inference | 23 | `2026_FEPLean`, `2026_CognitiveCaseDiagrams`, `2026_FocusedAttentionMeditation`, `2026_ActInfMetaAnalysis`, `2025_CEREBRUM` |
+| 🛡️ Cognitive Security | 20 | `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
+| 🎨 Art & Synergetics | 14 | `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
+| 🧬 Genetics & Biomedical | 9 | `2015_HoneyBeeEvolution`, `2016_NuclearStructure` |
+| 💻 Computational | 7 | `2026_ReproducibleResearch`, `2025_DiscoveryEngine`, `2025_MDKV` |
+| 🌍 AII Ecosystem | 5 | `2025_AII_v3`, `2024_OntologySUMO` |
+| 🎥 Presentations & Media | 15 | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
+
+Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 114 total as of the table header).
 
 ---
 
@@ -79,9 +82,9 @@
 | 2026-03-08 | EDUCATOR | Fixed CryptoJews and EhrlichialInfection SKILL.md | ✅ |
 | 2026-03-08 | RESEARCHER | Rebuilt paper_metadata.json (initial unified entries) | ✅ |
 | 2026-04-15 | ARCHIVIST | Indexed 102 paper folders in README; Entomology domain +1 (Ento-Linguistics); bibliography row in pages/BIBLIOGRAPHY.md | ✅ |
-| 2026-04-19 | ARCHIVIST | Added Friedman_2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934); Active Inference domain 19→20; paper count 102→103; bibliography row 108; metadata.json; publications.html; index.html counts 109→110 | ✅ |
-| 2026-04-19 | ARCHIVIST | Added Friedman_2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer CSCIS vol 2857); Active Inference domain 20→21; paper count 103→104; bibliography row 109; all counts 110→111 | ✅ |
-| 2026-04-23 | ARCHIVIST | Added Friedman_2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; bibliography row 110; Active Inference domain 21→22; paper_metadata; publications.html + index counts 111→112; papers/README index; SOFTWARE + software.html 47→48 | ✅ |
-| 2026-04-24 | ARCHIVIST | Added Friedman_2026_FEPLean (DOI 10.5281/zenodo.19699234, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; BIBLIOGRAPHY row 111; Active Inference domain 22→23; paper_metadata; publications.html + index counts 112→113; papers/README 106; SOFTWARE AII 31→32 + FEP_Lean | ✅ |
+| 2026-04-19 | ARCHIVIST | Added 2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934); Active Inference domain 19→20; paper count 102→103; bibliography row 108; metadata.json; publications.html; index.html counts 109→110 | ✅ |
+| 2026-04-19 | ARCHIVIST | Added 2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer CSCIS vol 2857); Active Inference domain 20→21; paper count 103→104; bibliography row 109; all counts 110→111 | ✅ |
+| 2026-04-23 | ARCHIVIST | Added 2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; bibliography row 110; Active Inference domain 21→22; paper_metadata; publications.html + index counts 111→112; papers/README index; SOFTWARE + software.html 47→48 | ✅ |
+| 2026-04-24 | ARCHIVIST | Added 2026_FEPLean (DOI 10.5281/zenodo.19699234, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; BIBLIOGRAPHY row 111; Active Inference domain 22→23; paper_metadata; publications.html + index counts 112→113; papers/README 106; SOFTWARE AII 31→32 + FEP_Lean | ✅ |
 | 2026-04-25 | MAINTAINER | AGENTS: PDF tracking defers to README index column; log aligned with root doc sync (teaching / hub counts) | ✅ |
-| 2026-04-25 | MAINTAINER | Maintenance log: removed stale “99 folder/99 entries” wording from 2026-03-08 rows (superseded by 106-folder index) | ✅ |
+| 2026-05-04 | INTEGRATOR | Domain **Works** table + `sync_publications_html.py` in pipeline; PUBS/mainEntity sync script landed | ✅ |

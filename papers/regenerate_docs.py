@@ -20,21 +20,31 @@ import logging
 from pathlib import Path
 from datetime import datetime
 
+from biblio_table import iter_bibliography_rows
+
+PAPERS_DIR = Path(__file__).resolve().parent
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("regenerate_docs.log")
-    ]
+        logging.FileHandler(PAPERS_DIR / "regenerate_docs.log"),
+    ],
 )
 log = logging.getLogger(__name__)
-
-PAPERS_DIR = Path(__file__).parent
 BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))
 METADATA_PATH = PAPERS_DIR / "paper_metadata.json"
 
 # ─── Helpers ──────────────────────────────────────────────────────────────────
+
+def parse_folder_id(folder: str) -> tuple[str, str]:
+    """Map directory name ``YYYY_Topic`` to ``(year, topic)``."""
+    m = re.match(r"^(\d{4})_(.+)$", folder)
+    if not m:
+        return "unknown", folder
+    return m.group(1), m.group(2)
+
 
 def load_metadata() -> dict:
     """Load consolidated metadata from paper_metadata.json."""
@@ -46,38 +56,29 @@ def load_metadata() -> dict:
 
 
 def parse_bibliography() -> dict:
-    """Parse BIBLIOGRAPHY.md table into a dict keyed by folder name."""
+    """Parse BIBLIOGRAPHY.md table into a dict keyed by folder name (rows with a Docs link)."""
     bib = {}
     if not BIBLIOGRAPHY_PATH.exists():
         log.warning("BIBLIOGRAPHY.md not found")
         return bib
-    with open(BIBLIOGRAPHY_PATH) as f:
-        content = f.read()
-    # Match table rows: | # | Year | Title | Venue | Link | Paper Folder |
-    for line in content.splitlines():
-        m = re.match(
-            r'\|\s*(\d+)\s*\|\s*(\d{4})\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*\[?([^\]\|]+)',
-            line
-        )
-        if m:
-            num, year, title, venue, link, folder = m.groups()
-            folder = folder.strip().rstrip(']').rstrip('/')
-            folder = re.sub(r'\(.*?\)', '', folder).strip()  # remove markdown link parens
-            if folder.startswith('Friedman_'):
-                bib[folder] = {
-                    "num": int(num),
-                    "year": year,
-                    "title": title.strip(),
-                    "venue": venue.strip(),
-                    "link": link.strip()
-                }
+    for row in iter_bibliography_rows(BIBLIOGRAPHY_PATH):
+        folder = row.folder
+        if not folder:
+            continue
+        bib[folder] = {
+            "num": row.num,
+            "year": row.year,
+            "title": row.title,
+            "venue": row.venue,
+            "link": row.link_cell,
+        }
     log.info(f"Parsed {len(bib)} entries from BIBLIOGRAPHY.md")
     return bib
 
 
 def infer_domain(folder: str, meta: dict) -> str:
     """Infer research domain from folder name, tags, and keywords."""
-    topic = folder.split('_', 2)[2] if len(folder.split('_', 2)) > 2 else ''
+    _, topic = parse_folder_id(folder)
     tags = meta.get('tags', [])
     keywords = meta.get('keywords', [])
     all_text = ' '.join([topic.lower()] + [t.lower() for t in tags] + [k.lower() for k in keywords])
@@ -99,9 +100,7 @@ def infer_domain(folder: str, meta: dict) -> str:
 
 def generate_readme(folder: str, meta: dict, bib_entry: dict = None) -> str:
     """Generate README.md content."""
-    parts = folder.split('_', 2)
-    year = parts[1] if len(parts) > 1 else 'unknown'
-    topic = parts[2] if len(parts) > 2 else folder
+    year, topic = parse_folder_id(folder)
     title = meta.get('name', topic)
     authors = meta.get('authors', 'Daniel Ari Friedman')
     abstract = meta.get('abstract', meta.get('description', f'Research paper on {topic}.'))
@@ -163,8 +162,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict = None) -> str:
 
 def generate_agents(folder: str, meta: dict) -> str:
     """Generate AGENTS.md content."""
-    parts = folder.split('_', 2)
-    topic = parts[2] if len(parts) > 2 else folder
+    year, topic = parse_folder_id(folder)
     title = meta.get('name', topic)
     authors = meta.get('authors', 'Daniel Ari Friedman')
     domain = infer_domain(folder, meta)
@@ -173,7 +171,7 @@ def generate_agents(folder: str, meta: dict) -> str:
     lines = [
         f'# AGENTS.md — {title}',
         '',
-        f'**Paper**: {title} ({parts[1] if len(parts) > 1 else "?"})',
+        f'**Paper**: {title} ({year})',
         f'**Area**: {domain}',
         f'**Authors**: {authors}',
         '',
@@ -217,9 +215,7 @@ def generate_agents(folder: str, meta: dict) -> str:
 
 def generate_skill(folder: str, meta: dict) -> str:
     """Generate SKILL.md content with Claude Code-compatible YAML frontmatter."""
-    parts = folder.split('_', 2)
-    year = parts[1] if len(parts) > 1 else 'unknown'
-    topic = parts[2] if len(parts) > 2 else folder
+    year, topic = parse_folder_id(folder)
     title = meta.get('name', topic)
     authors = meta.get('authors', 'Daniel Ari Friedman')
     description = meta.get('description', meta.get('abstract', f'Research on {topic}'))
@@ -301,7 +297,7 @@ def main():
 
     folders = sorted([
         d for d in os.listdir(PAPERS_DIR)
-        if d.startswith('Friedman_') and os.path.isdir(PAPERS_DIR / d)
+        if re.match(r"^\d{4}_", d) and os.path.isdir(PAPERS_DIR / d)
     ])
 
     log.info(f"Found {len(folders)} paper folders, {len(metadata)} metadata entries")
@@ -309,7 +305,8 @@ def main():
     stats = {'created': 0, 'skipped': 0, 'updated': 0}
 
     for folder in folders:
-        meta = metadata.get(folder, {'year': folder.split('_')[1], 'topic': folder.split('_', 2)[2]})
+        yr, tp = parse_folder_id(folder)
+        meta = metadata.get(folder, {'year': yr, 'topic': tp})
         bib_entry = bib.get(folder)
 
         for filename, generator in [

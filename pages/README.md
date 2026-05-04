@@ -20,7 +20,7 @@ keywords: "Daniel Ari Friedman, documentation hub, academic portfolio, pages ind
 
 | Page | Description |
 |------|-------------|
-| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **113 works** with DOI links, domain tags, and deep-links to paper folders |
+| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **114 works** with DOI links, domain tags, and deep-links to paper folders |
 | 💻 [**SOFTWARE**](SOFTWARE.md) | **48 owned repos** + **32 Active Inference Institute contributions** — frameworks, tools, and infrastructure |
 | 👤 [**PROFILE**](PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🔗 [**LINKS**](LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, organizations |
@@ -42,7 +42,7 @@ The `pages/` directory contains all centralized, non-paper-specific documentatio
 
 ### Related Directories
 
-- **[papers/](../papers/)** — 106 per-paper folders with README, AGENTS, and SKILL files
+- **[papers/](../papers/)** — 107 per-paper folders with README, AGENTS, and SKILL files
 - **[code/](../code/)** — Source code, orchestrators, and test suites
 - **[docs/](../docs/)** — Repository-wide operational documentation
 - **[art/](../art/)** — Visual art gallery assets

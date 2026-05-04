@@ -1,4 +1,12 @@
 *.zip
 .DS_Store
 /.cursor
-/.cursor
+
+# Generated logs (regenerate_docs writes under papers/)
+regenerate_docs.log
+papers/regenerate_docs.log
+
+# Python / test artifacts
+**/__pycache__/
+.pytest_cache/
+.benchmarks/

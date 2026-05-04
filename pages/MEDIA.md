@@ -103,7 +103,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 | Date | Title / Description | Source | Link |
 |------|-------------------|--------|------|
 | 2024 | "Active Inference: Pioneering a New Era of Artificial Intelligence" (features Friedman & AII) | Denise Holt | [deniseholt.us](https://deniseholt.us/active-inference-pioneering-a-new-era-of-artificial-intelligence/) |
-| 2024 | Writing on Curio Cards for "On NFT" book | Taschen (ISBN 978-3-8365-9970-2) | [Paper folder](../papers/Friedman_2024_CurioCards/) |
+| 2024 | Writing on Curio Cards for "On NFT" book | Taschen (ISBN 978-3-8365-9970-2) | [Paper folder](../papers/2024_CurioCards/) |
 | 2021-10 | Christie's auction: Full set of 30 Curio Cards + rare "17b" — first ETH-denominated auction at Christie's | Christie's | [christies.com](https://www.christies.com/en/lot/lot-6337619) |
 | 2021 | "Daniel Friedman — Decentralized Beauty: NFT Art and Ants" | Curio Cards / Medium | [medium.com](https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534) |
 | 2017-05-09 | NFT Archaeology entry: Curio Cards recognized as first art NFTs on Ethereum | NFT Archaeology | [nftarchaeology.io](https://nftarchaeology.io/nft-details/curiocards) |
@@ -112,7 +112,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 
 <div align="center">
 
-*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (113 works) · [LINKS.md](LINKS.md) for all web presences*
+*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (114 works) · [LINKS.md](LINKS.md) for all web presences*
 
 </div>
 

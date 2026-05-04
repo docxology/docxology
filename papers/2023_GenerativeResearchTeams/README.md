@@ -1,0 +1,57 @@
+# 🧠 Generative Research Teams: Active Inference Compositions for Research and Meta-Science
+
+**Daniel Friedman, Jakub Smékal** (2023) · *Zenodo*
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8164667-blue)](https://doi.org/10.5281/zenodo.8164667)
+
+---
+<!-- Schema.org structured data for search engines -->
+<!--
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GenerativeResearchTeams","abstract":"The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like Active Blockference, cadCAD, and cognitive security concepts including Narrative Information Management","keywords":["Generative Research Team","Active Inference","generative model","cognitive modeling","LLMs","autonomous agents","open science","decentralized science","Active Blockference","meta-prompting"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+-->
+
+
+## Abstract
+
+> The paper introduces the Generative Research Team (GRT), which integrates human, computational, and informational entities using Active Inference and cognitive security to enhance research processes. It emphasizes the modular roles within GRTs that allow for flexible resource allocation and adaptability to various research challenges.
+
+## Keywords
+
+`Generative Research Team` · `Active Inference` · `generative model` · `cognitive modeling` · `LLMs` · `autonomous agents` · `open science` · `decentralized science` · `Active Blockference` · `meta-prompting`
+
+## Key Contributions
+
+- Exploration of augmented architectures for research teams.
+- Integration of Active Inference as a cognitive kernel into GRTs with shared intelligence.
+- Application of cognitive models to enhance research processes.
+- Provision of lists of related work and tools in the field.
+
+## Methods
+
+- Utilization of Active Inference as a cognitive modeling approach.
+- Implementation of systems engineering principles in GRT design.
+- Development of communication strategies for effective dissemination of research findings.
+- Use of tools like Active Blockference and cadCAD for situational awareness.
+
+## 🎯 Consulting & Tutoring
+
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+
+## Citation
+
+```bibtex
+@article{2023_GenerativeResearchTeams,
+  author = {Daniel Friedman, Jakub Smékal},
+  title = {{Generative Research Teams: Active Inference Compositions for Research and Meta-Science}},
+  journal = {Zenodo},
+  year = {2023},
+  doi = {10.5281/zenodo.8164667},
+}
+```
+
+## File Inventory
+
+- `AGENTS.md` (1,916 bytes)
+- `2023_GenerativeResearchTeams.pdf` (376,476 bytes)
+- `README.md` (1,531 bytes)
+- `SKILL.md` (1,783 bytes)

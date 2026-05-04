@@ -143,7 +143,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | Curio Cards Medium | [medium.com/@curiocards](https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534) | "Decentralized Beauty: NFT Art and Ants" |
 | NFT Archaeology | [nftarchaeology.io](https://nftarchaeology.io/nft-details/curiocards) | Curio Cards historical timeline entry |
 | Foundation.app | [foundation.app/@docxology](https://foundation.app/@docxology) | NFT art marketplace profile |
-| Writing on Curio Cards (Taschen "On NFT" book) | [ISBN 978-3-8365-9970-2](../papers/Friedman_2024_CurioCards/) | Published chapter in Taschen book |
+| Writing on Curio Cards (Taschen "On NFT" book) | [ISBN 978-3-8365-9970-2](../papers/2024_CurioCards/) | Published chapter in Taschen book |
 | Christie's Auction | [christies.com](https://www.christies.com/en/lot/lot-6337619) | Full Curio Cards set auctioned October 1, 2021 |
 
 ---
@@ -176,13 +176,13 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | File | Description |
 |------|-------------|
 | [README.md](../README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 113 works (Google Scholar totals may lag new deposits) |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 114 works (Google Scholar totals may lag new deposits) |
 | [SOFTWARE.md](SOFTWARE.md) | 48 owned repos + 32 AII contributions |
 | [PROFILE.md](PROFILE.md) | Detailed biographical profile |
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 106 per-paper folders with documentation |
+| [papers/](../papers/) | 107 per-paper folders with documentation |
 
 ---
 

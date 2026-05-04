@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (113 works), 48 owned software repositories (+32 AII contributions), and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (114 works), 48 owned software repositories (+32 AII contributions), and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -39,7 +39,8 @@
 ### 🛠️ MAINTAINER
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
-- Validates documentation completeness across all paper folders (106 as of 2026-04-24)
+- Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
+- Validates documentation completeness across all paper folders (107 as of 2026-05-04)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -50,7 +51,7 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (113 works; DOI links and paper-folder deep-links)
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (114 works; DOI links and paper-folder deep-links)
 ├── pages/SOFTWARE.md        ← 48 owned repos + 32 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
@@ -71,12 +72,14 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 106 per-paper folders
+└── papers/            ← 107 per-paper folders (`YYYY_Topic`)
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
+    ├── biblio_table.py       ← Shared iterator for 8-column BIBLIOGRAPHY.md rows
     ├── regenerate_docs.py
-    └── Friedman_YYYY_Topic/
+    ├── sync_publications_html.py  ← Regenerates publications.html PUBS + JSON-LD mainEntity
+    └── YYYY_Topic/
         ├── README.md   ← Paper overview, abstract, keywords, citation
         ├── AGENTS.md   ← Paper-specific agent roles and extraction log
         ├── SKILL.md    ← Claude Code-compatible skill definition
@@ -119,7 +122,7 @@ docxology/
 | 2026-03-25 | INTEGRATOR | Added SAB links (Friston, Ramstead, Albarracin, Fields) to pages/COLLABORATORS.md; citation counts (88, 45, 41, 31 for top papers) | ✅ |
 | 2026-03-25 | INTEGRATOR | Added 7 AII pages to pages/LINKS.md (SAB, Strategy, Partnership, Substack, History, Board); CR link; 251 repos | ✅ |
 | 2026-03-25 | MAINTAINER | Enriched pages/PROFILE.md with AII programs (Internship, Fellows, Mentorship, Textbook Group), Curio Cards art descriptions | ✅ |
-| 2026-03-25 | ARCHIVIST | Added paper folder Friedman_2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY work count | ✅ |
+| 2026-03-25 | ARCHIVIST | Added paper folder 2026_ReproducibleResearch (template/ paper, DOI 10.5281/zenodo.19139090); updated BIBLIOGRAPHY work count | ✅ |
 | 2026-03-25 | RESEARCHER | Round 3 Perplexity audit: verified COGSEC founding (2018), P3IF affiliations, NM field site, ALIUS team | ✅ |
 | 2026-03-25 | INTEGRATOR | Enriched pages/PROFILE.md with COGSEC history, named volumes (IRT-20, NIM-21, CAT-22, ATLAS), and P3IF affiliations | ✅ |
 | 2026-03-25 | ARCHIVIST | Updated pages/WIKIPEDIA.md, pages/COLLABORATORS.md (RJ Cordes), and pages/LINKS.md with verified COGSEC & ALIUS details | ✅ |
@@ -133,19 +136,20 @@ docxology/
 | 2026-04-01 | MAINTAINER | Expanded sitemap.xml (15 URLs: added WIKIPEDIA, VIDEOS, RESOURCES, reordered); enhanced robots.txt with allow/disallow rules | ✅ |
 | 2026-04-01 | MAINTAINER | Created manifest.json (PWA) and sw.js (service worker with stale-while-revalidate) | ✅ |
 | 2026-04-03 | MAINTAINER | Structural integrity audit: Migrated 4 main markdown lists to canonical HTML pages (publications, software, collaborators, media) to fix indexability; fixed JSON-LD jobTitle mapping; standardized "March 2026" metrics dating. | ✅ |
-| 2026-04-15 | ARCHIVIST | Added Ento-Linguistics (Zenodo) to pages/BIBLIOGRAPHY.md; synced papers/README index, papers/AGENTS.md counts, publications.html PUBS + JSON-LD; paper_metadata.json entry Friedman_2026_EntoLinguistics | ✅ |
+| 2026-04-15 | ARCHIVIST | Added Ento-Linguistics (Zenodo) to pages/BIBLIOGRAPHY.md; synced papers/README index, papers/AGENTS.md counts, publications.html PUBS + JSON-LD; paper_metadata.json entry 2026_EntoLinguistics | ✅ |
 | 2026-04-15 | INTEGRATOR | Aligned index.html / publications.html / README counts (109 works); removed duplicate Person JSON-LD on index; added ento_linguistics to SOFTWARE.md, software.html, repo totals 47+31; sitemap lastmod | ✅ |
 | 2026-04-15 | INTEGRATOR | PROFILE.md metrics table (109/107 split); README domain matrix + Entomology selected-pubs table; index.html Computational tag 47 owned | ✅ |
-| 2026-04-19 | ARCHIVIST | Added Friedman_2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934, Active Inference Journal); README.md, AGENTS.md, SKILL.md created; bibliography row 108; Active Inference domain 19→20; all counts updated 109→110 | ✅ |
-| 2026-04-19 | ARCHIVIST | Added Friedman_2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer IWAI 2025); README.md, AGENTS.md, SKILL.md created; bibliography row 109; Active Inference domain 20→21; all counts updated 110→111; no PDF available noted | ✅ |
-| 2026-04-23 | ARCHIVIST | Added Friedman_2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 110; Active Inference domain 21→22; paper_metadata; publications.html + index.html 112 works; SOFTWARE.md + software.html repo 48; papers/README index 105 | ✅ |
-| 2026-04-24 | ARCHIVIST | Added Friedman_2026_FEPLean (DOI 10.5281/zenodo.19699234); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 111; 113 works; papers 106; Active Inference 23; SOFTWARE AII 32 + FEP_Lean; publications.html + index | ✅ |
+| 2026-04-19 | ARCHIVIST | Added 2026_ActInfMetaAnalysis (DOI 10.5281/zenodo.19461934, Active Inference Journal); README.md, AGENTS.md, SKILL.md created; bibliography row 108; Active Inference domain 19→20; all counts updated 109→110 | ✅ |
+| 2026-04-19 | ARCHIVIST | Added 2026_FocusedAttentionMeditation (DOI 10.1007/978-3-032-16955-6_11, Springer IWAI 2025); README.md, AGENTS.md, SKILL.md created; bibliography row 109; Active Inference domain 20→21; all counts updated 110→111; no PDF available noted | ✅ |
+| 2026-04-23 | ARCHIVIST | Added 2026_CognitiveCaseDiagrams (DOI 10.5281/zenodo.19695260, Active Inference Journal v1); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 110; Active Inference domain 21→22; paper_metadata; publications.html + index.html 112 works; SOFTWARE.md + software.html repo 48; papers/README index 105 | ✅ |
+| 2026-04-24 | ARCHIVIST | Added 2026_FEPLean (DOI 10.5281/zenodo.19699234); per-paper README/AGENTS/SKILL; BIBLIOGRAPHY row 111; 113 works; papers 106; Active Inference 23; SOFTWARE AII 32 + FEP_Lean; publications.html + index | ✅ |
 | 2026-04-25 | INTEGRATOR | Sitemap: added `about.html`; normalized `https://danielarifriedman.com/` (apex) across README, pages/LINKS.md, pages/PROFILE.md, art/README.md, art metadata JSON — aligns with CNAME and canonical HTML | ✅ |
 | 2026-04-25 | MAINTAINER | Synced Google Scholar citation count to **812** (April 2026) across README, pages/BIBLIOGRAPHY.md, LINKS, PROFILE, WIKIPEDIA draft; README blockquote now distinguishes **251** public repos vs **80** catalogued software rows; added `code/AGENTS.md`, `docs/AGENTS.md` | ✅ |
 | 2026-04-25 | INTEGRATOR | SEO pass: `og-image.jpg` + `og:*` + JSON-LD (Person, WebSite+SearchAction, ProfessionalService, BreadcrumbList) on `index` and subpages; removed Twitter card meta; IndexNow key file; `art.html`/`videos.html` head metadata ordered before styles; PWA+OG on `about.html` and `blog/index.html` redirects; `.github/workflows/indexnow-on-push.yml` | ✅ |
 | 2026-04-25 | INTEGRATOR | README + AGENTS doc sync: root README Educator line (AII Textbook 10 cohorts through 2026, Parr/Pezzulo/Friston 2022 + Namjoshi 2026 links, CR BIOL-1 Pelican Bay / BIOL-8 Human Biology Spring 2026); `pages/README` paper-folder count 106; `papers/AGENTS` + `docs/AGENTS` hub accuracy | ✅ |
 | 2026-04-25 | MAINTAINER | Retired outdated copy: BIBLIOGRAPHY summary line (103/99), duplicate 727-citation log rows, Twitter-era index.html log phrasing, stale CR/BIOL-8 and repo 47/31 counts across `pages/*`; WIKIPEDIA teaching sentence + PROFILE ref path | ✅ |
-| 2026-04-30 | MAINTAINER | Sitemap: dropped `about.html`, `research.html`, `meditations.html` — each is a redirect stub with `rel=canonical` to `/`; listing them contradicted crawl signals (GSC “Discovered–not indexed”); `lastmod` refresh | ✅ |
+| 2026-05-04 | MAINTAINER | Renamed all `papers/Friedman_*` dirs to `YYYY_Topic`; added `2020_FacilitatorsCatechism` (Zenodo 4203765); bibliography & site counts 113→114; `regenerate_docs.py` parses 8-col BIBLIOGRAPHY table | ✅ |
+| 2026-05-04 | INTEGRATOR | `papers/biblio_table.py` + `papers/sync_publications_html.py`: `publications.html` **PUBS** + JSON-LD **mainEntity** (114) match `pages/BIBLIOGRAPHY.md` row order; domain blurbs (Art/Computational); `papers/AGENTS` **Works** counts from Domain column | ✅ |
 
 ---
 
@@ -163,6 +167,6 @@ docxology/
 ## Learned Workspace Facts
 
 - Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).
-- `publications.html` builds the interactive bibliography from an embedded JavaScript `PUBS` array; adding works requires updating that array and on-page counts, not only `pages/BIBLIOGRAPHY.md`.
+- `publications.html` **PUBS** and JSON-LD **mainEntity** are generated from [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) by [`papers/sync_publications_html.py`](papers/sync_publications_html.py) (`--apply` after table edits); the interactive table also needs on-page counts in that HTML file.
 - The INTEGRATOR role in `papers/AGENTS.md` includes keeping `publications.html` / `PUBS` aligned when unified bibliography totals change.
 - Python tooling for the repo lives under `code/`; automated checks use `pytest` in `code/tests`.
