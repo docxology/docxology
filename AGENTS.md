@@ -150,6 +150,9 @@ docxology/
 | 2026-04-25 | MAINTAINER | Retired outdated copy: BIBLIOGRAPHY summary line (103/99), duplicate 727-citation log rows, Twitter-era index.html log phrasing, stale CR/BIOL-8 and repo 47/31 counts across `pages/*`; WIKIPEDIA teaching sentence + PROFILE ref path | ✅ |
 | 2026-05-04 | MAINTAINER | Renamed all `papers/Friedman_*` dirs to `YYYY_Topic`; added `2020_FacilitatorsCatechism` (Zenodo 4203765); bibliography & site counts 113→114; `regenerate_docs.py` parses 8-col BIBLIOGRAPHY table | ✅ |
 | 2026-05-04 | INTEGRATOR | `papers/biblio_table.py` + `papers/sync_publications_html.py`: `publications.html` **PUBS** + JSON-LD **mainEntity** (114) match `pages/BIBLIOGRAPHY.md` row order; domain blurbs (Art/Computational); `papers/AGENTS` **Works** counts from Domain column | ✅ |
+| 2026-05-12 | MAINTAINER | Repo-wide AGENTS.md + README.md audit (Perplexity-verified): public repo total **251 → 285** (current GitHub); BIBLIOGRAPHY header papers count **93 → 96** to match 96 Paper-type rows; SOFTWARE.md fork-inclusive total **260+ → 285+** | ✅ |
+| 2026-05-12 | INTEGRATOR | README domain figures synced to BIBLIOGRAPHY Type-column ground truth: Active Inference selected-pubs **22 → 23**; Cognitive Security **3 books + 16 papers → 3 books + 17 papers**; Computational matrix **6 → 7 papers** (ReproducibleResearch); Computational section **6 papers + 47 repos → 7 papers + 48 owned + 32 AII**; **31 → 32 AII contributions** | ✅ |
+| 2026-05-12 | RESEARCHER | Verified via Perplexity research (May 2026): Scholar `DXjPFtYAAAAJ` shows 758 citations (cache may differ from manual 812 sync); AII officers — **Daniel = President + Treasurer**, **Mikhailova = VP + Secretary**; AII Board = 10 members; new **33-member Scientific Advisory Board** announced in January 2026 newsletter | ✅ |
 
 ---
 

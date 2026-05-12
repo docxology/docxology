@@ -32,7 +32,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 ## 🧬 Repositories Owned by docxology
 
-> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 260+ total repos including forks see the [full profile](https://github.com/docxology?tab=repositories).
+> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 285+ total repos including forks see the [full profile](https://github.com/docxology?tab=repositories).
 
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|:---:|---|
@@ -148,7 +148,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | AII Contributions (non-fork) | 32 | Officer-level contributions across all Institute repos |
 | **Grand Total** | **80** | |
 
-> *For 260+ total repositories including personal forks, see the [full profile](https://github.com/docxology?tab=repositories). AII count includes source repos only, not org-level forks (pymdp, Flowise, entropix, fabric, etc.). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog.*
+> *For 285+ total repositories including personal forks, see the [full profile](https://github.com/docxology?tab=repositories). AII count includes source repos only, not org-level forks (pymdp, Flowise, entropix, fabric, etc.). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog.*
 
 ---
 

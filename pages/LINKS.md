@@ -83,9 +83,9 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 251 public repositories, primary development |
+| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 285 public repositories, primary development |
 | GitHub (secondary) | [github.com/danielarifriedman](https://github.com/danielarifriedman) | Secondary profile |
-| Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 31 repos as officer-level contributor |
+| Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 32 repos as officer-level contributor |
 | This Repository | [github.com/docxology/docxology](https://github.com/docxology/docxology) | Master profile & publication index |
 | GitHub Pages | [docxology.github.io/docxology](https://docxology.github.io/docxology/) | Landing page |
 

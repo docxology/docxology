@@ -88,3 +88,4 @@ Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIO
 | 2026-04-24 | ARCHIVIST | Added 2026_FEPLean (DOI 10.5281/zenodo.19699234, Active Inference Journal v1); README.md, AGENTS.md, SKILL.md; BIBLIOGRAPHY row 111; Active Inference domain 22→23; paper_metadata; publications.html + index counts 112→113; papers/README 106; SOFTWARE AII 31→32 + FEP_Lean | ✅ |
 | 2026-04-25 | MAINTAINER | AGENTS: PDF tracking defers to README index column; log aligned with root doc sync (teaching / hub counts) | ✅ |
 | 2026-05-04 | INTEGRATOR | Domain **Works** table + `sync_publications_html.py` in pipeline; PUBS/mainEntity sync script landed | ✅ |
+| 2026-05-12 | MAINTAINER | Repo-wide doc audit; this AGENTS.md domain breakdown matches `pages/BIBLIOGRAPHY.md` ground truth (21/23/20/14/9/7/5/15 = 114); spot-checked `2026_FocusedAttentionMeditation` per-paper docs (README/AGENTS/SKILL present, no PDF as expected) | ✅ |

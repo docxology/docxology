@@ -113,7 +113,7 @@ Friedman is the founder of COGSEC.org, an organization focused on cognitive secu
 
 * {{Official website|danielarifriedman.com}}
 * [https://www.activeinference.institute/ Active Inference Institute]
-* [https://github.com/docxology GitHub: docxology] — 251 public repositories
+* [https://github.com/docxology GitHub: docxology] — 285 public repositories
 * [https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en Google Scholar profile]
 * {{ORCID|0000-0001-6232-9096}}
 * [https://curio.cards/artist/danielfriedman/ Curio Cards artist page]

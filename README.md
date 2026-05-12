@@ -54,7 +54,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **114 works** in the unified bibliography · **251** public GitHub repositories · **80** catalogued software repos (48 owned + 32 AII) · **812** Google Scholar citations (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **114 works** in the unified bibliography · **285** public GitHub repositories · **80** catalogued software repos (48 owned + 32 AII) · **812** Google Scholar citations (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
@@ -83,7 +83,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🧠 Active Inference | [23 works](pages/BIBLIOGRAPHY.md#-active-inference) | [FEPLean](papers/2026_FEPLean/) · [CognitiveCaseDiagrams](papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/2025_CEREBRUM/) | [FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
 | 🛡️ Cognitive Security | [20 papers](pages/BIBLIOGRAPHY.md#️-cognitive-security) | [CognitiveIntegrity](papers/2026_CognitiveIntegrity/) · [InformationCommons](papers/2022_InformationCommons/) · [P3IF](papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
 | 🎨 Art & Synergetics | [14 papers](pages/BIBLIOGRAPHY.md#-art--synergetics) | [DoorsOfPerception](papers/2026_DoorsOfPerception/) · [BlakeFuller](papers/2023_BlakeFuller/) · [QuadMath](papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
-| 💻 Computational | [6 papers](pages/BIBLIOGRAPHY.md#-computational) | [DiscoveryEngine](papers/2025_DiscoveryEngine/) · [MDKV](papers/2025_MDKV/) · [MarkdownDecisionProcess](papers/2025_MarkdownDecisionProcess/) | [template](https://github.com/docxology/template) · [steganographer](https://github.com/docxology/steganographer) |
+| 💻 Computational | [7 papers](pages/BIBLIOGRAPHY.md#-computational) | [DiscoveryEngine](papers/2025_DiscoveryEngine/) · [MDKV](papers/2025_MDKV/) · [MarkdownDecisionProcess](papers/2025_MarkdownDecisionProcess/) · [ReproducibleResearch](papers/2026_ReproducibleResearch/) | [template](https://github.com/docxology/template) · [steganographer](https://github.com/docxology/steganographer) |
 | 🧬 Genetics & Biomedical | [9 papers](pages/BIBLIOGRAPHY.md#-genetics--biomedical) | [HoneyBeeEvolution](papers/2015_HoneyBeeEvolution/) · [NuclearStructure](papers/2016_NuclearStructure/) · [DennettExplained](papers/2019_DennettExplained/) | [FORMINDEX](https://github.com/docxology/FORMINDEX) |
 
 ---
@@ -115,7 +115,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🧠 Active Inference & Free Energy Principle
 
-> **22 works** on theoretical, computational, and applied Active Inference — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-active-inference)
+> **23 works** on theoretical, computational, and applied Active Inference — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-active-inference)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -137,7 +137,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🛡️ Cognitive Security & Information Ecosystems
 
-> **3 books + 16 papers** on narrative security, memes, trust, and policy — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#️-cognitive-security)
+> **3 books + 17 papers** on narrative security, memes, trust, and policy — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#️-cognitive-security)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -188,7 +188,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 💻 Computational Frameworks & Software
 
-> **6 papers + 47 repositories** — [Papers in Bibliography →](pages/BIBLIOGRAPHY.md#-computational) · [All repos →](pages/SOFTWARE.md)
+> **7 papers + 48 owned + 32 AII repositories** — [Papers in Bibliography →](pages/BIBLIOGRAPHY.md#-computational) · [All repos →](pages/SOFTWARE.md)
 
 <details>
 <summary><b>Key publications & repositories (click to expand)</b></summary>
@@ -212,7 +212,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Integration for Ants and Beyond |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
-> **Full list of 48 personal repos + 31 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md)
+> **Full list of 48 personal repos + 32 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md)
 
 </details>
 
