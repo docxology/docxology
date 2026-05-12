@@ -1,0 +1,61 @@
+{
+  "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+  "version": "v1",
+  "doi": "10.5281/zenodo.20144984",
+  "doi_url": "https://doi.org/10.5281/zenodo.20144984",
+  "zenodo_record": "https://zenodo.org/records/20144984",
+  "record_id": "20144984",
+  "publication_date": "2026-05-12",
+  "resource_type": {
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "given_name": "Daniel Ari",
+      "family_name": "Friedman",
+      "orcid": "0000-0001-6232-9096",
+      "affiliations": [
+        "Active Inference Institute",
+        "COGSEC"
+      ]
+    }
+  ],
+  "description": "This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified: 'closure of the perceiving system around its own top-down expectations' — which Blake termed 'Newton's Sleep,' Jiang calls 'consciousness capture,' and Active Inference designates as 'pathological prior dominance.' The work maps Jiang's concepts — persuasion machinery, data sanitization, edge-case suppression, and engagement directives — onto Blake's cosmological schema and Active Inference's generative models.",
+  "keywords": [
+    "William Blake",
+    "Active Inference",
+    "Artificial Intelligence",
+    "Cognitive Science",
+    "Free Energy Principle",
+    "AI Architecture",
+    "Consciousness Capture",
+    "Generative Models",
+    "Newton's Sleep",
+    "Single Vision"
+  ],
+  "license": {
+    "id": "cc-by-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "copyright": "Copyleft DAF 2026",
+  "communities": [
+    "security"
+  ],
+  "methodology": "Rapid AI-augmented scholarly publication with human oversight",
+  "files": [
+    {
+      "name": "blake_jiang_DAF_v1_05-12-2026.pdf",
+      "size_bytes": 2476314,
+      "type": "pdf"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/blake_jiang"
+    }
+  ]
+}
