@@ -14,6 +14,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Agentic discovery map: https://danielarifriedman.com/discovery.html
 - Human search page: https://danielarifriedman.com/search.html
 - OpenSearch descriptor: https://danielarifriedman.com/opensearch.xml
+- Agent start guide: https://github.com/docxology/docxology/blob/main/AGENT_START.md
 - Markdown discovery map: https://github.com/docxology/docxology/blob/main/pages/DISCOVERY.md
 - Research domains: https://danielarifriedman.com/domains.html
 - Domain source map: https://github.com/docxology/docxology/blob/main/pages/DOMAINS.md
@@ -28,6 +29,8 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Evidence ledger source: https://github.com/docxology/docxology/blob/main/pages/EVIDENCE.md
 - Data catalog: https://danielarifriedman.com/catalog.html
 - DataCatalog JSON: https://danielarifriedman.com/data/catalog.json
+- Updates page: https://danielarifriedman.com/updates.html
+- Changelog source: https://github.com/docxology/docxology/blob/main/CHANGELOG.md
 - Profile: https://github.com/docxology/docxology/blob/main/pages/PROFILE.md
 - Links: https://github.com/docxology/docxology/blob/main/pages/LINKS.md
 - Papers directory: https://github.com/docxology/docxology/tree/main/papers
@@ -37,6 +40,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - CSL JSON export: https://danielarifriedman.com/bibliography.csl.json
 - RIS export: https://danielarifriedman.com/bibliography.ris
 - Works JSON: https://danielarifriedman.com/data/works.json
+- Artwork JSON: https://danielarifriedman.com/data/artworks.json
 - Software JSON: https://danielarifriedman.com/data/software.json
 - People JSON: https://danielarifriedman.com/data/people.json
 - Organizations JSON: https://danielarifriedman.com/data/organizations.json
@@ -45,11 +49,17 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Work enrichment JSON: https://danielarifriedman.com/data/work-enrichment.json
 - Generated-file manifest: https://danielarifriedman.com/GENERATED.md
 - Generated-file manifest JSON: https://danielarifriedman.com/data/generated-manifest.json
+- Humans/contact file: https://danielarifriedman.com/humans.txt
+- Security contact: https://danielarifriedman.com/.well-known/security.txt
 - Search index: https://danielarifriedman.com/search-index.json
 - RSS feed: https://danielarifriedman.com/feed.xml
 - Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-05-13.json
 - Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-05-13.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-13.json
+- External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-13.md
+- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-05-13.json
+- Browser-smoke manifest: https://github.com/docxology/docxology/blob/main/reports/browser-smoke/2026-05-13/manifest.json
+- Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-05-13.json
 - Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-05-13.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-05-13/manifest.json
 
@@ -61,7 +71,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Treat discovery.html and pages/DISCOVERY.md as the place for API endpoints, source queries, and caveats about public index count mismatches.
 - Treat pages/EVIDENCE.md and data/claims.json as the claim-level source ledger.
 - Treat data/reconciliation.json as the explanation layer for why curated local counts differ from public indexes.
-- Treat search.html, search-index.json, opensearch.xml, catalog.html, data/catalog.json, GENERATED.md, and feed.xml as generated or index-facing discovery artifacts, not independent sources of truth.
+- Treat search.html, search-index.json, opensearch.xml, catalog.html, data/catalog.json, updates.html, GENERATED.md, and feed.xml as generated or index-facing discovery artifacts, not independent sources of truth.
 - Public APIs are freshness checks. Counts can include forks, duplicates, versioned software archives, preprints, or over-merged name variants.
 
 ## Current Snapshot

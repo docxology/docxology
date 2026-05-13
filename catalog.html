@@ -48,6 +48,19 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#artworks",
+      "name": "Artwork Gallery Data",
+      "description": "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html.",
+      "url": "https://danielarifriedman.com/data/artworks.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/artworks.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
       "description": "80 catalogued software repositories across docxology and AII contributions.",
@@ -162,6 +175,58 @@
         "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-13.json",
         "encodingFormat": "application/json"
       }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
+      "name": "External Link Triage",
+      "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#asset-size",
+      "name": "Asset Size Audit",
+      "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
+      "name": "Browser Smoke Manifest",
+      "description": "Selector-based Playwright smoke checks for core local pages.",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#live-site",
+      "name": "Live Site Verification",
+      "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+        "encodingFormat": "application/json"
+      }
     }
   ]
 }
@@ -181,6 +246,11 @@
                     <h2><a href="data/works.json">Curated Works Bibliography</a></h2>
                     <p>115 bibliography rows with citation keys, DOI links, domains, and documentation paths.</p>
                     <span>data/works.json</span>
+                </article>
+                <article class="catalog-card" id="artworks">
+                    <h2><a href="data/artworks.json">Artwork Gallery Data</a></h2>
+                    <p>Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html.</p>
+                    <span>data/artworks.json</span>
                 </article>
                 <article class="catalog-card" id="software">
                     <h2><a href="data/software.json">Software Catalog</a></h2>
@@ -226,6 +296,26 @@
                     <h2><a href="reports/external_links_2026-05-13.json">External Link Report</a></h2>
                     <p>Scoped network freshness report for site-critical outbound links.</p>
                     <span>reports/external_links_2026-05-13.json</span>
+                </article>
+                <article class="catalog-card" id="external-link-triage">
+                    <h2><a href="reports/external_links_triage_2026-05-13.json">External Link Triage</a></h2>
+                    <p>Categorized link warnings: bot-protected, transient, timeout, stale, and review.</p>
+                    <span>reports/external_links_triage_2026-05-13.json</span>
+                </article>
+                <article class="catalog-card" id="asset-size">
+                    <h2><a href="reports/asset_size_2026-05-13.json">Asset Size Audit</a></h2>
+                    <p>Size report for public HTML, OG images, data exports, and runtime assets.</p>
+                    <span>reports/asset_size_2026-05-13.json</span>
+                </article>
+                <article class="catalog-card" id="browser-smoke">
+                    <h2><a href="reports/browser-smoke/2026-05-13/manifest.json">Browser Smoke Manifest</a></h2>
+                    <p>Selector-based Playwright smoke checks for core local pages.</p>
+                    <span>reports/browser-smoke/2026-05-13/manifest.json</span>
+                </article>
+                <article class="catalog-card" id="live-site">
+                    <h2><a href="reports/live_site_verification_2026-05-13.json">Live Site Verification</a></h2>
+                    <p>Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.</p>
+                    <span>reports/live_site_verification_2026-05-13.json</span>
                 </article>
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>

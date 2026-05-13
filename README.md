@@ -28,7 +28,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 
 </div>
 
-**Quick links:** [📚 Publications](publications.html) · [📄 Works](works/) · [🔎 Search](search.html) · [🧭 Domains](domains.html) · [💻 Software](software.html) · [📁 Papers](papers/) · [🔗 All Links](pages/LINKS.md) · [🧾 Cite & Verify](cite-verify.html) · [🧭 Discovery](discovery.html) · [🗃️ Data Catalog](catalog.html) · [👤 Full Profile](pages/PROFILE.md) · [🤝 Collaborators](collaborators.html) · [🎥 Media & Talks](media.html) · [🎯 Consulting](#-available-for-consulting--tutoring)
+**Quick links:** [📚 Publications](publications.html) · [📄 Works](works/) · [🔎 Search](search.html) · [🧭 Domains](domains.html) · [💻 Software](software.html) · [📁 Papers](papers/) · [🔗 All Links](pages/LINKS.md) · [🧾 Cite & Verify](cite-verify.html) · [🧭 Discovery](discovery.html) · [🗃️ Data Catalog](catalog.html) · [📝 Updates](updates.html) · [👤 Full Profile](pages/PROFILE.md) · [🤝 Collaborators](collaborators.html) · [🎥 Media & Talks](media.html) · [🎯 Consulting](#-available-for-consulting--tutoring)
 
 ---
 
@@ -67,6 +67,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (115 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
 | 📄 [**works/**](works/) | **Generated per-work landing pages** — one canonical HTML page per bibliography row with citation, DOI, primary source, and documentation link |
 | 🔎 [**search.html**](search.html) / [**opensearch.xml**](opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
+| 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
 | 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
 | 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **48 owned repos** + **32 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure |
 | 📁 [**papers/**](papers/) | **108 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
@@ -79,8 +80,9 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🎥 [**pages/MEDIA.md**](pages/MEDIA.md) | **Talks, podcasts & press** — conference presentations, podcast appearances, video series, courses, interviews, and press coverage |
 | 🤖 [**llms.txt**](llms.txt) / [**CITATION.cff**](CITATION.cff) / [**codemeta.json**](codemeta.json) / [**search-index.json**](search-index.json) / [**feed.xml**](feed.xml) | **Machine-readable discovery metadata** — agent map, citation metadata, CodeMeta, search index, and RSS feed |
 | 🗃️ [**catalog.html**](catalog.html) / [**data/catalog.json**](data/catalog.json) / [**GENERATED.md**](GENERATED.md) | **Structured data and rebuild map** — Schema.org DataCatalog plus generated-artifact manifest and commands |
-| 📦 [**bibliography.bib**](bibliography.bib) / [**bibliography.csl.json**](bibliography.csl.json) / [**bibliography.ris**](bibliography.ris) / [**data/**](data/) | **Exports for citation managers and agents** — BibTeX, CSL JSON, RIS, works/software/people/organization/claims/reconciliation JSON |
+| 📦 [**bibliography.bib**](bibliography.bib) / [**bibliography.csl.json**](bibliography.csl.json) / [**bibliography.ris**](bibliography.ris) / [**data/**](data/) | **Exports for citation managers and agents** — BibTeX, CSL JSON, RIS, works/artworks/software/people/organization/claims/reconciliation JSON |
 | ✅ [**reports/**](reports/) / [**CHANGELOG.md**](CHANGELOG.md) / [**docs/REDIRECTS.md**](docs/REDIRECTS.md) | **Maintenance evidence** — source snapshots, reconciliation reports, accessibility reports, visual QA screenshots, changelog, and canonical URL policy |
+| 🧑‍🚀 [**AGENT_START.md**](AGENT_START.md) / [**humans.txt**](humans.txt) / [**.well-known/security.txt**](.well-known/security.txt) | **Operational entrypoints** — agent task recipes, human credits/contact, and responsible disclosure metadata |
 | 🛠️ [**code/**](code/) | **Repository Source Code** — `orchestrators/`, `src/`, and `tests/` directories containing executable pipelines and core functions |
 | 📖 [**docs/**](docs/) | **Central Documentation** — Repository-wide operational documentation |
 

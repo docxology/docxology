@@ -1,0 +1,46 @@
+name: Verify live site
+
+on:
+  workflow_dispatch:
+  page_build:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-site-verification
+  cancel-in-progress: true
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Let CDN edges settle
+        run: sleep 60
+
+      - name: Verify live site
+        run: python3 code/orchestrators/verify_live_site.py
+
+      - name: Show summary
+        run: |
+          python3 - <<'PY'
+          import json
+          report = json.load(open("reports/live_site_verification_2026-05-13.json"))
+          print(f"GitHub Pages status: {report['github_pages'].get('status')}")
+          print(f"Passing checks: {report['passing']}/{report['checked_urls']}")
+          print(f"Overall OK: {report['overall_ok']}")
+          PY
+
+      - name: Upload live verification report
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-site-verification
+          path: reports/live_site_verification_2026-05-13.json

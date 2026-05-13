@@ -134,6 +134,10 @@ def citation_text(work: dict) -> str:
 
 def json_ld(work: dict) -> str:
     typ = "ScholarlyArticle" if work["type"] in {"Paper", "Book Chapter"} else "CreativeWork"
+    enrich = work.get("enrichment", {})
+    same_as = [work["url"]] if work.get("url") else []
+    if work.get("doi"):
+        same_as.append(f"https://doi.org/{work['doi']}")
     data = {
         "@context": "https://schema.org",
         "@type": typ,
@@ -143,20 +147,39 @@ def json_ld(work: dict) -> str:
         "author": {"@id": "https://danielarifriedman.com/#person"},
         "datePublished": str(work["year"]),
         "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
+        "mainEntityOfPage": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
         "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
-        "about": [work["domain_name"], work["type"]],
-        "sameAs": [work["url"]] if work.get("url") else [],
+        "about": [
+            {"@type": "DefinedTerm", "name": work["domain_name"]},
+            {"@type": "DefinedTerm", "name": work["type"]},
+        ],
+        "genre": work["type"],
+        "inLanguage": "en",
+        "citation": citation_text(work),
+        "sameAs": same_as,
     }
     if work.get("doi"):
-        data["identifier"] = f"doi:{work['doi']}"
-        data["sameAs"].append(f"https://doi.org/{work['doi']}")
+        data["identifier"] = [
+            {"@type": "PropertyValue", "propertyID": "DOI", "value": work["doi"], "url": f"https://doi.org/{work['doi']}"},
+            {"@type": "PropertyValue", "propertyID": "Citation key", "value": work["citation_key"]},
+        ]
+    else:
+        data["identifier"] = {"@type": "PropertyValue", "propertyID": "Citation key", "value": work["citation_key"]}
     if work.get("venue"):
-        data["publisher"] = work["venue"]
-    enrich = work.get("enrichment", {})
+        data["publisher"] = {"@type": "Organization", "name": work["venue"]}
     if enrich.get("abstract"):
         data["abstract"] = enrich["abstract"]
     if enrich.get("keywords"):
         data["keywords"] = enrich["keywords"]
+        data["about"].extend({"@type": "DefinedTerm", "name": keyword} for keyword in enrich["keywords"][:8])
+    if enrich.get("findings") or enrich.get("methods"):
+        data["description"] = " ".join([*(enrich.get("findings") or []), *(enrich.get("methods") or [])])[:700]
+    if work.get("docs_path"):
+        data["hasPart"] = {
+            "@type": "CreativeWork",
+            "name": "Local paper documentation",
+            "url": f"https://github.com/docxology/docxology/tree/main/{work['docs_path'].rstrip('/')}",
+        }
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 

@@ -25,6 +25,7 @@ def validate_json_files() -> None:
         "search-index.json",
         "data/catalog.json",
         "data/generated-manifest.json",
+        "data/artworks.json",
         "data/works.json",
         "data/work-enrichment.json",
         "data/software.json",
@@ -33,7 +34,11 @@ def validate_json_files() -> None:
         "data/claims.json",
         "data/reconciliation.json",
         "reports/accessibility_static_2026-05-13.json",
+        "reports/asset_size_2026-05-13.json",
+        "reports/browser-smoke/2026-05-13/manifest.json",
         "reports/external_links_2026-05-13.json",
+        "reports/external_links_triage_2026-05-13.json",
+        "reports/live_site_verification_2026-05-13.json",
         "reports/public_source_snapshot_2026-05-13.json",
     ]
     for rel in paths:
@@ -122,14 +127,19 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_catalog.py", "--check"])
+    run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
     run(["python3", "code/orchestrators/build_search_index.py", "--check"])
     run(["python3", "code/orchestrators/generate_feed.py", "--check"])
+    run(["python3", "code/orchestrators/audit_assets.py", "--check"])
     run(["python3", "code/orchestrators/accessibility_audit.py", "--check"])
     run(["python3", "code/orchestrators/build_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/check_external_links.py", "--check"])
+    run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
+    run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
+    run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files()
     validate_citation_cff()

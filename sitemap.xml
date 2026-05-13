@@ -16,12 +16,15 @@
   <url><loc>https://danielarifriedman.com/software.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/search.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/catalog.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://danielarifriedman.com/updates.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://danielarifriedman.com/discovery.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/cite-verify.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://danielarifriedman.com/evidence.html</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://danielarifriedman.com/feed.xml</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://danielarifriedman.com/opensearch.xml</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://danielarifriedman.com/llms.txt</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://danielarifriedman.com/humans.txt</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://danielarifriedman.com/AGENT_START.md</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://danielarifriedman.com/search-index.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://danielarifriedman.com/codemeta.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://danielarifriedman.com/CITATION.cff</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
@@ -29,6 +32,7 @@
   <url><loc>https://danielarifriedman.com/bibliography.csl.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://danielarifriedman.com/bibliography.ris</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://danielarifriedman.com/data/works.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://danielarifriedman.com/data/artworks.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://danielarifriedman.com/data/work-enrichment.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://danielarifriedman.com/data/software.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://danielarifriedman.com/data/people.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
@@ -41,10 +45,15 @@
   <url><loc>https://danielarifriedman.com/CHANGELOG.md</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/docs/REDIRECTS.md</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/docs/RELEASE_2026-05_DISCOVERY_LAYER.md</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://danielarifriedman.com/reports/asset_size_2026-05-13.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/reports/public_source_snapshot_2026-05-13.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/reports/reconciliation_2026-05-13.md</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/reports/accessibility_static_2026-05-13.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/reports/external_links_2026-05-13.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://danielarifriedman.com/reports/external_links_triage_2026-05-13.md</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/reports/visual-qa/2026-05-13/manifest.json</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2015CommentaryPortugueseCryptoJews106.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2015CouldEhrlichialInfectionCause107.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>

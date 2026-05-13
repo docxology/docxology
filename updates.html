@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates — Daniel Ari Friedman</title>
+    <meta name="description" content="Human-readable updates for the docxology public research, software, citation, evidence, and discovery index.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/updates.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="text/markdown" href="/CHANGELOG.md" title="Changelog source">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Updates — Daniel Ari Friedman">
+    <meta property="og:description" content="Recent changes to the public research and software index.">
+    <meta property="og:url" content="https://danielarifriedman.com/updates.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>.updates-list{display:grid;gap:1rem;max-width:920px;margin:0 auto}.update-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem}.update-card h2{font-size:1.1rem;color:var(--gold);margin-bottom:.7rem}.update-card li{margin:.45rem 0;color:var(--text-secondary);line-height:1.65}.update-card code{font-size:.86em;color:var(--silver-bright);background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:4px;padding:.05rem .24rem;overflow-wrap:anywhere}</style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://danielarifriedman.com/updates.html#webpage",
+    "url": "https://danielarifriedman.com/updates.html",
+    "name": "Updates — Daniel Ari Friedman",
+    "description": "Human-readable changelog for the docxology public research and software index.",
+    "dateModified": "2026-05-13",
+    "isPartOf": {
+        "@id": "https://danielarifriedman.com/#website"
+    },
+    "about": {
+        "@id": "https://danielarifriedman.com/#person"
+    },
+    "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "2026-05-13",
+                "description": "Added machine-readable discovery artifacts: `llms.txt`, `CITATION.cff`, `codemeta.json`, bibliography exports, and structured `data/*.json`. Added domain landing pages, per-work landing pages, a generated search index, and an RSS feed. Added `search.html`, `opensearch.xml`, `catalog.html`, `data/catalog.json`, `GENERATED.md`, and `data/generated-manifest.json` for human search, browser discovery, dataset discovery, and generated-file rebuild provenance. Enriched generated work pages and the sear"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "2026-05-12",
+                "description": "Performed repo-wide README and AGENTS audit. Updated public GitHub repository count and domain figures from bibliography ground truth. Verified public-source discrepancies around Google Scholar cache, AII officers, board size, and Scientific Advisory Board context."
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "2026-05-04",
+                "description": "Renamed paper folders from author-title form to `YYYY_Topic`. Added `2020_FacilitatorsCatechism`. Added shared bibliography-table parser and publication HTML synchronization script."
+            }
+        ]
+    }
+}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="search.html">Search</a><a href="discovery.html">Discovery</a><a href="updates.html" class="active">Updates</a></div>
+    </nav>
+    <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>
+    <main id="main" class="main"><section class="section"><div class="updates-list">
+            <article class="update-card">
+                <h2>2026-05-13</h2>
+                <ul><li>Added machine-readable discovery artifacts: <code>llms.txt</code>, <code>CITATION.cff</code>, <code>codemeta.json</code>, bibliography exports, and structured <code>data/*.json</code>.</li><li>Added domain landing pages, per-work landing pages, a generated search index, and an RSS feed.</li><li>Added <code>search.html</code>, <code>opensearch.xml</code>, <code>catalog.html</code>, <code>data/catalog.json</code>, <code>GENERATED.md</code>, and <code>data/generated-manifest.json</code> for human search, browser discovery, dataset discovery, and generated-file rebuild provenance.</li><li>Enriched generated work pages and the search index with abstracts, keywords, methods, and findings extracted from per-paper README/SKILL files.</li><li>Added scoped external-link reporting plus a weekly freshness workflow, Dependabot, tighter workflow permissions, and workflow concurrency controls.</li><li>Added <code>updates.html</code>, <code>AGENT_START.md</code>, <code>humans.txt</code>, <code>.well-known/security.txt</code>, external-link triage, live-site verification, asset-size audit, and selector-based browser smoke reporting.</li><li>Expanded per-work JSON-LD with citation text, DOI identifiers, keywords, documentation links, and structured publisher/about fields.</li><li>Added citation and evidence pages with claim confidence, caveats, maintenance ownership, and public-source reconciliation.</li><li>Added fresh Open Graph images for the homepage, major sections, and research domains.</li><li>Added source-refresh, bibliography export, software export, work-page, evidence, sitemap, reconciliation, accessibility, and visual-QA orchestrators.</li><li>Added GitHub Actions validation for generated files, local links, JSON-LD, sitemap targets, and the Python test suite.</li><li>Updated current counts to 115 curated works, 108 per-paper folders, 48 owned software repositories, 32 AII catalogued contributions, and 286 public docxology GitHub repositories at the latest API check.</li></ul>
+            </article>
+            <article class="update-card">
+                <h2>2026-05-12</h2>
+                <ul><li>Performed repo-wide README and AGENTS audit.</li><li>Updated public GitHub repository count and domain figures from bibliography ground truth.</li><li>Verified public-source discrepancies around Google Scholar cache, AII officers, board size, and Scientific Advisory Board context.</li></ul>
+            </article>
+            <article class="update-card">
+                <h2>2026-05-04</h2>
+                <ul><li>Renamed paper folders from author-title form to <code>YYYY_Topic</code>.</li><li>Added <code>2020_FacilitatorsCatechism</code>.</li><li>Added shared bibliography-table parser and publication HTML synchronization script.</li></ul>
+            </article>
+    </div></section></main>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p></footer>
+</body>
+</html>

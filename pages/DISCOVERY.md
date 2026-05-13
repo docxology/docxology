@@ -13,7 +13,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 
 *Last updated: 2026-05-13 from public APIs and official profile pages*
 
-[Website version](../discovery.html) · [Search](../search.html) · [Data catalog](../catalog.html) · [Curated bibliography](../publications.html) · [All links](LINKS.md)
+[Website version](../discovery.html) · [Search](../search.html) · [Data catalog](../catalog.html) · [Updates](../updates.html) · [Curated bibliography](../publications.html) · [All links](LINKS.md)
 
 </div>
 
@@ -61,6 +61,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | LLMs.txt | [llms.txt](../llms.txt) | Compact agent-facing map of canonical pages and source-of-truth rules |
 | Human search | [search.html](../search.html) | Browser search over works, software, pages, people, organizations, and claims |
 | OpenSearch | [opensearch.xml](../opensearch.xml) | Browser/search-engine descriptor for site search |
+| Agent start guide | [AGENT_START.md](../AGENT_START.md) | Task recipes for agents using the repository |
 | CodeMeta | [codemeta.json](../codemeta.json) | Machine-readable software/source metadata for repository indexes |
 | Citation metadata | [CITATION.cff](../CITATION.cff) | Machine-readable citation metadata for this public research index |
 | Data catalog | [catalog.html](../catalog.html) / [data/catalog.json](../data/catalog.json) | Schema.org DataCatalog for public JSON, citation, and report exports |
@@ -75,9 +76,14 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | RSS feed | [feed.xml](../feed.xml) | Recent work and site-update feed |
 | Per-work pages | [works/](../works/) | Generated HTML pages for individual bibliography entries |
 | Generated-file manifest | [GENERATED.md](../GENERATED.md) / [data/generated-manifest.json](../data/generated-manifest.json) | Rebuild commands and source-to-output mapping for generated artifacts |
+| Updates | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-facing update history and source changelog |
+| Humans / security | [humans.txt](../humans.txt) / [security.txt](../.well-known/security.txt) | Contact, credits, and responsible disclosure metadata |
 | Public-source snapshot | [reports/public_source_snapshot_2026-05-13.json](../reports/public_source_snapshot_2026-05-13.json) | Latest public API freshness report |
 | Reconciliation report | [reports/reconciliation_2026-05-13.md](../reports/reconciliation_2026-05-13.md) | Human-readable comparison of curated counts and public-source counts |
 | External-link report | [reports/external_links_2026-05-13.json](../reports/external_links_2026-05-13.json) | Cached scoped network check for site-critical outbound links |
+| External-link triage | [reports/external_links_triage_2026-05-13.md](../reports/external_links_triage_2026-05-13.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
+| Live-site verification | [reports/live_site_verification_2026-05-13.json](../reports/live_site_verification_2026-05-13.json) | Deployed-site checks for expected markers, CDN headers, and GitHub Pages status |
+| Asset-size audit | [reports/asset_size_2026-05-13.json](../reports/asset_size_2026-05-13.json) | Size budget report for public assets and generated exports |
 | Citation exports | [BibTeX](../bibliography.bib) · [CSL JSON](../bibliography.csl.json) · [RIS](../bibliography.ris) | Citation-manager formats generated from `BIBLIOGRAPHY.md` |
 
 ## Official Organization Pages

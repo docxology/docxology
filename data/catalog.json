@@ -26,6 +26,19 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#artworks",
+      "name": "Artwork Gallery Data",
+      "description": "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html.",
+      "url": "https://danielarifriedman.com/data/artworks.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/artworks.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
       "description": "80 catalogued software repositories across docxology and AII contributions.",
@@ -138,6 +151,58 @@
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-13.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
+      "name": "External Link Triage",
+      "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#asset-size",
+      "name": "Asset Size Audit",
+      "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
+      "name": "Browser Smoke Manifest",
+      "description": "Selector-based Playwright smoke checks for core local pages.",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#live-site",
+      "name": "Live Site Verification",
+      "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
         "encodingFormat": "application/json"
       }
     }

@@ -50,19 +50,76 @@
     },
     "datePublished": "2026",
     "url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
+    "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
     "about": [
-        "Computational",
-        "Paper"
+        {
+            "@type": "DefinedTerm",
+            "name": "Computational"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Paper"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "reproducible research"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "infrastructure as code"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "build pipeline"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Zero-Mock testing"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "steganographic watermarking"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "AI-agent documentation"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Model Context Protocol"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "cryptographic provenance"
+        }
     ],
+    "genre": "Paper",
+    "inLanguage": "en",
+    "citation": "Friedman, Daniel Ari. 2026. A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication. Zenodo.",
     "sameAs": [
         "https://doi.org/10.5281/zenodo.19139090",
         "https://doi.org/10.5281/zenodo.19139090"
     ],
-    "identifier": "doi:10.5281/zenodo.19139090",
-    "publisher": "Zenodo",
+    "identifier": [
+        {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.19139090",
+            "url": "https://doi.org/10.5281/zenodo.19139090"
+        },
+        {
+            "@type": "PropertyValue",
+            "propertyID": "Citation key",
+            "value": "Friedman2026TemplateApproachReproducibleGenerative001"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zenodo"
+    },
     "abstract": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. template/ applies the principle of Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable. It is built on a Two-Layer Architecture that separates 12 reusable infrastructure subpackages (~150 Python modules, validated by ~3,083 tests) from self-contained project workspaces, connected by an eight-stage build pipeline progressing from environment sanitization through test execution (with a Zero-Mock testing policy enforcing 90% project-level and 60% infrastructure-level coverage via real filesyste",
     "keywords": [
         "reproducible research",
@@ -75,7 +132,13 @@
         "cryptographic provenance",
         "literate programming",
         "open science"
-    ]
+    ],
+    "description": "Introduces a Two-Layer Architecture separating reusable infrastructure (~150 modules, ~3,083 tests) from self-contained project workspaces Defines an eight-stage build pipeline from environment sanitization through LLM-assisted review Enforces a Zero-Mock testing policy (90% project / 60% infrastructure coverage) using real filesystem operations Implements SHA-256 cryptographic hashing with steganographic watermarking for provenance Introduces Documentation Duality (README.md + AGENTS.md) and SKILL.md aligned with Model Context Protocol Two-Layer Architecture: infrastructure subpackages vs. project workspaces Eight-stage build pipeline: sanitization → tests → analysis → Pandoc/XeLaTeX → SHA-",
+    "hasPart": {
+        "@type": "CreativeWork",
+        "name": "Local paper documentation",
+        "url": "https://github.com/docxology/docxology/tree/main/papers/2026_ReproducibleResearch"
+    }
 }
     </script>
 </head>

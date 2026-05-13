@@ -30,8 +30,11 @@ SCAN_FILES = [
     "evidence.html",
     "search.html",
     "catalog.html",
+    "updates.html",
     "README.md",
+    "AGENT_START.md",
     "llms.txt",
+    "humans.txt",
     "CITATION.cff",
     "codemeta.json",
     "pages/README.md",
@@ -143,6 +146,24 @@ def request_url(url: str, timeout: int) -> dict:
     return last
 
 
+def category(row: dict) -> str:
+    host = urlparse(row["url"]).netloc.lower()
+    status = int(row.get("status") or 0)
+    if row.get("ok"):
+        return "ok"
+    if status == 404:
+        return "needs-replacement"
+    if status in {401, 402, 403, 429, 999} or host in {"linkedin.com", "www.linkedin.com", "www.researchgate.net"}:
+        return "bot-protected-or-rate-limited"
+    if status in {500, 502, 503, 504}:
+        return "upstream-transient"
+    if status == 0 and "timed out" in row.get("error", "").lower():
+        return "timeout"
+    if status == 0:
+        return "connection-failure"
+    return "review"
+
+
 def build_report(timeout: int, workers: int, limit: int | None) -> dict:
     sources = collect_urls()
     urls = sorted(sources)
@@ -154,6 +175,7 @@ def build_report(timeout: int, workers: int, limit: int | None) -> dict:
         for future in as_completed(futures):
             result = future.result()
             result["sources"] = sources[result["url"]]
+            result["category"] = category(result)
             results.append(result)
     results.sort(key=lambda row: row["url"])
     return {

@@ -1,0 +1,5 @@
+Contact: mailto:Daniel@ActiveInference.Institute
+Preferred-Languages: en
+Canonical: https://danielarifriedman.com/.well-known/security.txt
+Policy: https://github.com/docxology/docxology/issues/new/choose
+Expires: 2027-05-13T23:59:59Z

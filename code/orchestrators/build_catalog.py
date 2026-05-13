@@ -15,6 +15,7 @@ HTML_OUT = REPO_ROOT / "catalog.html"
 
 DATASETS = [
     ("works", "Curated Works Bibliography", "data/works.json", "115 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
+    ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
     ("software", "Software Catalog", "data/software.json", "80 catalogued software repositories across docxology and AII contributions."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
@@ -24,6 +25,10 @@ DATASETS = [
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
     ("external-links", "External Link Report", "reports/external_links_2026-05-13.json", "Scoped network freshness report for site-critical outbound links."),
+    ("external-link-triage", "External Link Triage", "reports/external_links_triage_2026-05-13.json", "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
+    ("asset-size", "Asset Size Audit", "reports/asset_size_2026-05-13.json", "Size report for public HTML, OG images, data exports, and runtime assets."),
+    ("browser-smoke", "Browser Smoke Manifest", "reports/browser-smoke/2026-05-13/manifest.json", "Selector-based Playwright smoke checks for core local pages."),
+    ("live-site", "Live Site Verification", "reports/live_site_verification_2026-05-13.json", "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status."),
 ]
 
 

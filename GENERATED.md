@@ -11,7 +11,12 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Evidence pages | `evidence.html`<br>`pages/EVIDENCE.md` | `data/claims.json`<br>`code/orchestrators/build_evidence_page.py` | `python3 code/orchestrators/build_evidence_page.py` |
 | Search index | `search-index.json` | `data/*.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_search_index.py` |
 | Data catalog | `catalog.html`<br>`data/catalog.json` | `code/orchestrators/build_catalog.py`<br>`data/*.json` | `python3 code/orchestrators/build_catalog.py` |
+| Updates page | `updates.html` | `CHANGELOG.md`<br>`code/orchestrators/build_updates_page.py` | `python3 code/orchestrators/build_updates_page.py` |
 | External link report | `reports/external_links_2026-05-13.json` | `site-critical HTML, Markdown, and JSON-LD files` | `python3 code/orchestrators/check_external_links.py` |
+| External link triage | `reports/external_links_triage_2026-05-13.json`<br>`reports/external_links_triage_2026-05-13.md` | `reports/external_links_2026-05-13.json` | `python3 code/orchestrators/build_external_link_triage.py` |
+| Asset size audit | `reports/asset_size_2026-05-13.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
+| Browser smoke checks | `reports/browser-smoke/2026-05-13/*.png`<br>`reports/browser-smoke/2026-05-13/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
+| Live site verification | `reports/live_site_verification_2026-05-13.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | Visual QA | `reports/visual-qa/2026-05-13/*.png`<br>`reports/visual-qa/2026-05-13/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |

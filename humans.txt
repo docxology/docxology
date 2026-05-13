@@ -1,0 +1,16 @@
+/* TEAM */
+Site: Daniel Ari Friedman / docxology
+URL: https://danielarifriedman.com/
+Repository: https://github.com/docxology/docxology
+Contact: Daniel@ActiveInference.Institute
+
+/* PURPOSE */
+Public research, software, citation, evidence, art, and discovery index for Daniel Ari Friedman.
+
+/* THANKS */
+Active Inference Institute, COGSEC.org, research collaborators, open-source contributors, and public scholarly infrastructure maintainers.
+
+/* SITE */
+Standards: HTML, CSS, JSON-LD, OpenSearch, RSS, CodeMeta, Citation File Format, Schema.org DataCatalog
+Language: English
+Last updated: 2026-05-13

@@ -8,7 +8,7 @@
     "data/organizations.json",
     "data/claims.json"
   ],
-  "count": 231,
+  "count": 238,
   "items": [
     {
       "id": "page:home",
@@ -91,6 +91,18 @@
         "structured data"
       ],
       "content": "Data Catalog Structured DataCatalog for public JSON exports. catalog structured data"
+    },
+    {
+      "id": "page:updates",
+      "type": "page",
+      "title": "Updates",
+      "url": "/updates.html",
+      "summary": "Human-readable changelog for the public research and discovery index.",
+      "tags": [
+        "updates",
+        "changelog"
+      ],
+      "content": "Updates Human-readable changelog for the public research and discovery index. updates changelog"
     },
     {
       "id": "page:discovery",
@@ -230,6 +242,58 @@
       "content": "External Link Report Cached network check over site-critical external links. links reports"
     },
     {
+      "id": "page:external-link-triage",
+      "type": "report",
+      "title": "External Link Triage",
+      "url": "/reports/external_links_triage_2026-05-13.md",
+      "summary": "Categorized warning report for scoped external links.",
+      "tags": [
+        "links",
+        "triage",
+        "reports"
+      ],
+      "content": "External Link Triage Categorized warning report for scoped external links. links triage reports"
+    },
+    {
+      "id": "page:asset-size",
+      "type": "report",
+      "title": "Asset Size Audit",
+      "url": "/reports/asset_size_2026-05-13.json",
+      "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
+      "tags": [
+        "assets",
+        "performance",
+        "reports"
+      ],
+      "content": "Asset Size Audit Size report for public HTML, Open Graph images, data exports, and runtime assets. assets performance reports"
+    },
+    {
+      "id": "page:browser-smoke",
+      "type": "report",
+      "title": "Browser Smoke Manifest",
+      "url": "/reports/browser-smoke/2026-05-13/manifest.json",
+      "summary": "Selector-based browser smoke checks for core local pages.",
+      "tags": [
+        "browser",
+        "qa",
+        "reports"
+      ],
+      "content": "Browser Smoke Manifest Selector-based browser smoke checks for core local pages. browser qa reports"
+    },
+    {
+      "id": "page:live-site",
+      "type": "report",
+      "title": "Live Site Verification",
+      "url": "/reports/live_site_verification_2026-05-13.json",
+      "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
+      "tags": [
+        "deploy",
+        "live",
+        "reports"
+      ],
+      "content": "Live Site Verification Deployed-site status, expected markers, and GitHub Pages build state. deploy live reports"
+    },
+    {
       "id": "page:generated",
       "type": "document",
       "title": "Generated Files",
@@ -240,6 +304,30 @@
         "maintenance"
       ],
       "content": "Generated Files Generated artifact manifest and rebuild commands. generated maintenance"
+    },
+    {
+      "id": "page:agent-start",
+      "type": "document",
+      "title": "Agent Start Guide",
+      "url": "/AGENT_START.md",
+      "summary": "Task recipes for agents using the repository.",
+      "tags": [
+        "agents",
+        "start"
+      ],
+      "content": "Agent Start Guide Task recipes for agents using the repository. agents start"
+    },
+    {
+      "id": "page:humans",
+      "type": "document",
+      "title": "Humans.txt",
+      "url": "/humans.txt",
+      "summary": "Human-maintained contact and site credits.",
+      "tags": [
+        "contact",
+        "humans"
+      ],
+      "content": "Humans.txt Human-maintained contact and site credits. contact humans"
     },
     {
       "id": "page:release-snapshot",

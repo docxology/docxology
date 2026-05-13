@@ -50,19 +50,76 @@
     },
     "datePublished": "2026",
     "url": "https://danielarifriedman.com/works/Friedman2026LiteratureReviewArchitectureActive110.html",
+    "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026LiteratureReviewArchitectureActive110.html",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
     "about": [
-        "Active Inference",
-        "Paper"
+        {
+            "@type": "DefinedTerm",
+            "name": "Active Inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Paper"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Active Inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Free Energy Principle"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "meta-analysis"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "living literature review"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "nanopublications"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "LLM extraction"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "hypothesis scoring"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "knowledge graph"
+        }
     ],
+    "genre": "Paper",
+    "inLanguage": "en",
+    "citation": "Friedman, Daniel Ari. 2026. A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring. Active Inference Journal.",
     "sameAs": [
         "https://doi.org/10.5281/zenodo.19461934",
         "https://doi.org/10.5281/zenodo.19461934"
     ],
-    "identifier": "doi:10.5281/zenodo.19461934",
-    "publisher": "Active Inference Journal",
+    "identifier": [
+        {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.19461934",
+            "url": "https://doi.org/10.5281/zenodo.19461934"
+        },
+        {
+            "@type": "PropertyValue",
+            "propertyID": "Citation key",
+            "value": "Friedman2026LiteratureReviewArchitectureActive110"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Active Inference Journal"
+    },
     "abstract": "No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work presents a living meta-analysis framework: literature is retrieved from arXiv, Semantic Scholar, and OpenAlex and deduplicated ( N = 819 in v2) via a canonical identifier hierarchy (DOI arXiv ID Semantic Scholar ID OpenAlex ID). Papers are classified into a three-tier taxonomy (A: core theory; B: tools and translation; C: application domains) across eight categories. An LLM-powered pipeline evaluates each abstract against eight core hypotheses, emitting structured nanopublications (directionality, confidence, reasoning) that populate an RDF-compatible knowledge graph scored by a citation-weighted evidence function. All extractions are machine-generated and not fully manually validated; hypothesis scores are preliminary and are most useful fo",
     "keywords": [
         "Active Inference",
@@ -76,7 +133,13 @@
         "OpenAlex",
         "Semantic Scholar",
         "arXiv"
-    ]
+    ],
+    "description": "Multi-source retrieval, identifier-based deduplication, and a three-tier (A/B/C) taxonomy for mapping the field. LLM-driven assertion extraction into nanopublications wired for RDF-style graphs and queryable evidence landscapes. Citation-weighted scoring over eight hypotheses with explicit reporting of consensus vs. debate structure and automation caveats. Open pipeline suitable for continuous (living) updates as new papers appear. Corpus construction from arXiv, Semantic Scholar, and OpenAlex; hierarchical deduplication of records. Taxonomic labeling (eight categories under A/B/C); complementary topic modeling (e.g., NMF) and citation-network views. LLM evaluation of abstracts against eight",
+    "hasPart": {
+        "@type": "CreativeWork",
+        "name": "Local paper documentation",
+        "url": "https://github.com/docxology/docxology/tree/main/papers/2026_ActInfMetaAnalysis"
+    }
 }
     </script>
 </head>

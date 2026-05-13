@@ -185,6 +185,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 115 works (Google Scholar totals may lag new deposits) |
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
+| [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
 | [SOFTWARE.md](SOFTWARE.md) | 48 owned repos + 32 AII contributions |
 | [DOMAINS.md](DOMAINS.md) / [domains.html](../domains.html) | Research domain paths through works, software, collaborators, and learning routes |
 | [DISCOVERY.md](DISCOVERY.md) | Canonical IDs, API endpoints, exact public-source queries, and verification notes |
@@ -199,6 +200,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [data/](../data/) | Agent JSON indexes for works, software, people, organizations, claims, reconciliation, work enrichment, and generated files |
 | [reports/](../reports/) | Public-source snapshots, reconciliation reports, external-link reports, accessibility reports, and visual QA screenshots |
 | [GENERATED.md](../GENERATED.md) | Generated-file manifest with rebuild commands and source-to-output mapping |
+| [AGENT_START.md](../AGENT_START.md) / [humans.txt](../humans.txt) / [security.txt](../.well-known/security.txt) | Agent task recipes, human credits/contact, and responsible disclosure metadata |
 | [CHANGELOG.md](../CHANGELOG.md) / [docs/REDIRECTS.md](../docs/REDIRECTS.md) | Human-readable change history and canonical URL policy |
 | [PROFILE.md](PROFILE.md) | Detailed biographical profile |
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |

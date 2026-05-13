@@ -14,8 +14,13 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_work_pages.py` | Generate `works/index.html` and one HTML landing page per bibliography row |
 | `orchestrators/build_evidence_page.py` | Generate `evidence.html` and `pages/EVIDENCE.md` from `data/claims.json` |
 | `orchestrators/build_catalog.py` | Generate `catalog.html` and `data/catalog.json` with Schema.org DataCatalog metadata |
+| `orchestrators/build_updates_page.py` | Generate `updates.html` from `CHANGELOG.md` |
 | `orchestrators/build_search_index.py` | Generate `search-index.json` for site and agent discovery |
 | `orchestrators/check_external_links.py` | Generate scoped outbound-link freshness reports for site-critical files |
+| `orchestrators/build_external_link_triage.py` | Generate categorized external-link warning summaries |
+| `orchestrators/audit_assets.py` | Generate public asset and export size reports |
+| `orchestrators/browser_smoke.py` | Run selector-based Playwright smoke screenshots for core pages |
+| `orchestrators/verify_live_site.py` | Generate live deployed-site verification reports |
 | `orchestrators/build_generated_manifest.py` | Generate `GENERATED.md` and `data/generated-manifest.json` |
 | `orchestrators/generate_feed.py` | Generate `feed.xml` from recent works and site updates |
 | `orchestrators/build_reconciliation_report.py` | Generate curated-vs-public source comparison outputs |
@@ -52,4 +57,4 @@ python3 code/orchestrators/validate_repo.py
 
 Requires `yt-dlp` on `PATH` for live fetches. Orchestrator defaults write under `code/data/`. Static site and profile copy (including teaching lines) live at the repo root and under `pages/`; keep them consistent with [README.md](../README.md) and [AGENTS.md](../AGENTS.md) when you change YouTube or course data that surface on the site.
 
-Generated public-site artifacts should be refreshed in dependency order: bibliography/software exports, domain/work/evidence/catalog/search/feed/reconciliation outputs, generated manifest, external-link report, sitemap, accessibility report, visual QA screenshots, then `validate_repo.py`.
+Generated public-site artifacts should be refreshed in dependency order: bibliography/software exports, domain/work/evidence/catalog/updates/search/feed/reconciliation outputs, generated manifest, external-link report and triage, asset-size report, sitemap, accessibility report, browser smoke, visual QA screenshots, live-site verification, then `validate_repo.py`.

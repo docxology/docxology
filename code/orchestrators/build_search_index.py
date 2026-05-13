@@ -19,6 +19,7 @@ STATIC_PAGES = [
     ("software", "page", "Software", "/software.html", "Owned and AII software repositories.", ["software", "github"]),
     ("search", "page", "Search", "/search.html", "Human-facing search over works, software, pages, people, organizations, and claims.", ["search"]),
     ("catalog", "page", "Data Catalog", "/catalog.html", "Structured DataCatalog for public JSON exports.", ["catalog", "structured data"]),
+    ("updates", "page", "Updates", "/updates.html", "Human-readable changelog for the public research and discovery index.", ["updates", "changelog"]),
     ("discovery", "page", "Discovery Map", "/discovery.html", "Canonical identifiers and public source queries.", ["agents"]),
     ("cite-verify", "page", "Cite & Verify", "/cite-verify.html", "Citation and source-of-truth rules.", ["citation"]),
     ("evidence", "page", "Evidence Ledger", "/evidence.html", "Claim-level evidence and caveats.", ["claims"]),
@@ -31,7 +32,13 @@ STATIC_PAGES = [
     ("accessibility", "report", "Static Accessibility Report", "/reports/accessibility_static_2026-05-13.json", "Static accessibility and metadata audit output.", ["accessibility", "reports"]),
     ("visual-qa", "report", "Visual QA Manifest", "/reports/visual-qa/2026-05-13/manifest.json", "Desktop and mobile Playwright screenshots for key pages.", ["visual", "qa"]),
     ("external-links", "report", "External Link Report", "/reports/external_links_2026-05-13.json", "Cached network check over site-critical external links.", ["links", "reports"]),
+    ("external-link-triage", "report", "External Link Triage", "/reports/external_links_triage_2026-05-13.md", "Categorized warning report for scoped external links.", ["links", "triage", "reports"]),
+    ("asset-size", "report", "Asset Size Audit", "/reports/asset_size_2026-05-13.json", "Size report for public HTML, Open Graph images, data exports, and runtime assets.", ["assets", "performance", "reports"]),
+    ("browser-smoke", "report", "Browser Smoke Manifest", "/reports/browser-smoke/2026-05-13/manifest.json", "Selector-based browser smoke checks for core local pages.", ["browser", "qa", "reports"]),
+    ("live-site", "report", "Live Site Verification", "/reports/live_site_verification_2026-05-13.json", "Deployed-site status, expected markers, and GitHub Pages build state.", ["deploy", "live", "reports"]),
     ("generated", "document", "Generated Files", "/GENERATED.md", "Generated artifact manifest and rebuild commands.", ["generated", "maintenance"]),
+    ("agent-start", "document", "Agent Start Guide", "/AGENT_START.md", "Task recipes for agents using the repository.", ["agents", "start"]),
+    ("humans", "document", "Humans.txt", "/humans.txt", "Human-maintained contact and site credits.", ["contact", "humans"]),
     ("release-snapshot", "document", "2026-05 Discovery Layer Release Snapshot", "/docs/RELEASE_2026-05_DISCOVERY_LAYER.md", "Release note and validation gate for the discovery layer.", ["release", "maintenance"]),
 ]
 

@@ -72,9 +72,10 @@
                 { "@type": "ListItem", "position": 17, "name": "OpenSearch descriptor", "url": "https://danielarifriedman.com/opensearch.xml" },
                 { "@type": "ListItem", "position": 18, "name": "Search index", "url": "https://danielarifriedman.com/search-index.json" },
                 { "@type": "ListItem", "position": 19, "name": "Data catalog", "url": "https://danielarifriedman.com/catalog.html" },
-                { "@type": "ListItem", "position": 20, "name": "RSS feed", "url": "https://danielarifriedman.com/feed.xml" },
-                { "@type": "ListItem", "position": 21, "name": "Per-work pages", "url": "https://danielarifriedman.com/works/" },
-                { "@type": "ListItem", "position": 22, "name": "Visual QA manifest", "url": "https://danielarifriedman.com/reports/visual-qa/2026-05-13/manifest.json" }
+                { "@type": "ListItem", "position": 20, "name": "Updates", "url": "https://danielarifriedman.com/updates.html" },
+                { "@type": "ListItem", "position": 21, "name": "RSS feed", "url": "https://danielarifriedman.com/feed.xml" },
+                { "@type": "ListItem", "position": 22, "name": "Per-work pages", "url": "https://danielarifriedman.com/works/" },
+                { "@type": "ListItem", "position": 23, "name": "Visual QA manifest", "url": "https://danielarifriedman.com/reports/visual-qa/2026-05-13/manifest.json" }
             ]
         }
     }
@@ -93,6 +94,7 @@
             <a href="domains.html">Domains</a>
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
+            <a href="updates.html">Updates</a>
             <a href="discovery.html" class="active">Discovery</a>
             <a href="media.html">Media</a>
             <a href="index.html#connect">Connect</a>
@@ -181,6 +183,7 @@
                         <tr><td>OpenSearch</td><td><a href="opensearch.xml">opensearch.xml</a></td><td>Search-provider descriptor for site search.</td></tr>
                         <tr><td>CodeMeta</td><td><a href="codemeta.json">codemeta.json</a></td><td>Machine-readable software/source metadata for repository indexes.</td></tr>
                         <tr><td>Data catalog</td><td><a href="catalog.html">catalog.html</a> · <a href="data/catalog.json">data/catalog.json</a></td><td>Schema.org DataCatalog for public JSON, citation, and report exports.</td></tr>
+                        <tr><td>Updates</td><td><a href="updates.html">updates.html</a> · <a href="CHANGELOG.md">CHANGELOG.md</a></td><td>Human-readable update history and source changelog.</td></tr>
                         <tr><td>Search index</td><td><a href="search-index.json">search-index.json</a></td><td>Site-wide discovery index for pages, works, repositories, people, organizations, and claims.</td></tr>
                         <tr><td>RSS feed</td><td><a href="feed.xml">feed.xml</a></td><td>Recent works and site-update feed.</td></tr>
                         <tr><td>Citation metadata</td><td><a href="CITATION.cff">CITATION.cff</a></td><td>Machine-readable citation metadata for this public research index.</td></tr>
@@ -193,8 +196,13 @@
                         <tr><td>Reconciliation JSON</td><td><a href="data/reconciliation.json">data/reconciliation.json</a></td><td>Curated-local vs public-index comparison.</td></tr>
                         <tr><td>Work enrichment JSON</td><td><a href="data/work-enrichment.json">data/work-enrichment.json</a></td><td>Extracted abstracts, keywords, methods, and findings used by generated work pages and search.</td></tr>
                         <tr><td>Generated manifest</td><td><a href="GENERATED.md">GENERATED.md</a> · <a href="data/generated-manifest.json">data/generated-manifest.json</a></td><td>Source-to-output mapping and rebuild commands for generated artifacts.</td></tr>
+                        <tr><td>Agent start guide</td><td><a href="AGENT_START.md">AGENT_START.md</a></td><td>Task recipes for agents using this repository.</td></tr>
+                        <tr><td>Humans / security</td><td><a href="humans.txt">humans.txt</a> · <a href=".well-known/security.txt">security.txt</a></td><td>Contact, credits, and responsible disclosure metadata.</td></tr>
                         <tr><td>Reconciliation report</td><td><a href="reports/reconciliation_2026-05-13.md">reports/reconciliation_2026-05-13.md</a></td><td>Human-readable explanation of count differences.</td></tr>
                         <tr><td>External-link report</td><td><a href="reports/external_links_2026-05-13.json">reports/external_links_2026-05-13.json</a></td><td>Cached scoped network check for site-critical outbound links.</td></tr>
+                        <tr><td>External-link triage</td><td><a href="reports/external_links_triage_2026-05-13.md">reports/external_links_triage_2026-05-13.md</a></td><td>Categorized warning report for scoped external links.</td></tr>
+                        <tr><td>Live-site verification</td><td><a href="reports/live_site_verification_2026-05-13.json">reports/live_site_verification_2026-05-13.json</a></td><td>Deployed-site checks for expected markers, CDN headers, and GitHub Pages status.</td></tr>
+                        <tr><td>Asset-size audit</td><td><a href="reports/asset_size_2026-05-13.json">reports/asset_size_2026-05-13.json</a></td><td>Size budget report for public assets and generated exports.</td></tr>
                         <tr><td>Visual QA</td><td><a href="reports/visual-qa/2026-05-13/manifest.json">reports/visual-qa/2026-05-13/manifest.json</a></td><td>Playwright screenshot manifest for key pages and mobile/desktop viewports.</td></tr>
                         <tr><td>Citation exports</td><td><a href="bibliography.bib">BibTeX</a> · <a href="bibliography.csl.json">CSL JSON</a> · <a href="bibliography.ris">RIS</a></td><td>Citation-manager exports generated from the unified bibliography.</td></tr>
                         <tr><td>AII Officers</td><td><a href="https://www.activeinference.institute/officers">activeinference.institute/officers</a></td><td>Confirms current officer context.</td></tr>
@@ -258,6 +266,7 @@ site:github.com/docxology "Daniel Ari Friedman"</code></pre>
             <a href="pages/DISCOVERY.md" class="btn btn-outline">Markdown discovery map</a>
             <a href="search.html" class="btn btn-outline">Search</a>
             <a href="catalog.html" class="btn btn-outline">Data catalog</a>
+            <a href="updates.html" class="btn btn-outline">Updates</a>
             <a href="llms.txt" class="btn btn-outline">LLMs.txt</a>
             <a href="cite-verify.html" class="btn btn-outline">Cite &amp; verify</a>
             <a href="evidence.html" class="btn btn-outline">Evidence</a>

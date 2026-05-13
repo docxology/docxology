@@ -1,6 +1,6 @@
 // Service Worker for danielarifriedman.com
 // Cache-first strategy for static assets, network-first for pages
-const CACHE_NAME = 'daf-portfolio-v6';
+const CACHE_NAME = 'daf-portfolio-v7';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -16,10 +16,13 @@ const STATIC_ASSETS = [
   '/evidence.html',
   '/search.html',
   '/catalog.html',
+  '/updates.html',
   '/works/index.html',
   '/feed.xml',
   '/opensearch.xml',
   '/llms.txt',
+  '/humans.txt',
+  '/AGENT_START.md',
   '/search-index.json',
   '/codemeta.json',
   '/CITATION.cff',
@@ -27,6 +30,7 @@ const STATIC_ASSETS = [
   '/bibliography.csl.json',
   '/bibliography.ris',
   '/data/works.json',
+  '/data/artworks.json',
   '/data/software.json',
   '/data/people.json',
   '/data/organizations.json',
@@ -35,7 +39,10 @@ const STATIC_ASSETS = [
   '/data/work-enrichment.json',
   '/data/reconciliation.json',
   '/data/generated-manifest.json',
+  '/reports/asset_size_2026-05-13.json',
   '/reports/external_links_2026-05-13.json',
+  '/reports/external_links_triage_2026-05-13.json',
+  '/reports/live_site_verification_2026-05-13.json',
   '/GENERATED.md',
   '/publications.html',
   '/software.html',

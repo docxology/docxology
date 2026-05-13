@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://danielarifriedman.com/sitemap.xml
+
+# Human and agent entrypoints
+# https://danielarifriedman.com/humans.txt
+# https://danielarifriedman.com/llms.txt
+# https://danielarifriedman.com/AGENT_START.md

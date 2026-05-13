@@ -27,6 +27,8 @@ PAGES = [
     ("domains", "domains.html"),
     ("search", "search.html?q=active%20inference"),
     ("catalog", "catalog.html"),
+    ("updates", "updates.html"),
+    ("art", "art.html"),
     ("discovery", "discovery.html"),
     ("cite-verify", "cite-verify.html"),
     ("evidence", "evidence.html"),

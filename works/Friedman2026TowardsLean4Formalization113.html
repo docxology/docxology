@@ -50,19 +50,76 @@
     },
     "datePublished": "2026",
     "url": "https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html",
+    "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
     "about": [
-        "Active Inference",
-        "Paper"
+        {
+            "@type": "DefinedTerm",
+            "name": "Active Inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Paper"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Free Energy Principle"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Active Inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Lean 4"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Mathlib4"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "interactive theorem proving"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "formal verification"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "variational inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Bayesian mechanics"
+        }
     ],
+    "genre": "Paper",
+    "inLanguage": "en",
+    "citation": "Friedman, Daniel Ari. 2026. Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics. Active Inference Journal.",
     "sameAs": [
         "https://doi.org/10.5281/zenodo.19699234",
         "https://doi.org/10.5281/zenodo.19699234"
     ],
-    "identifier": "doi:10.5281/zenodo.19699234",
-    "publisher": "Active Inference Journal",
+    "identifier": [
+        {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.19699234",
+            "url": "https://doi.org/10.5281/zenodo.19699234"
+        },
+        {
+            "@type": "PropertyValue",
+            "propertyID": "Citation key",
+            "value": "Friedman2026TowardsLean4Formalization113"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Active Inference Journal"
+    },
     "abstract": "The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a machine-checked substrate for assessing related formal claims has been missing. Dependent-type provers require explicit measure spaces, domination, and integrability that prose often leaves implicit. This work introduces a curated catalog of 50 topics across five pillars—14 FEP, 11 Active Inference, 10 Bayesian Mechanics, 8 Information Geometry, and 7 non-equilibrium Thermodynamics—each as a namespaced Lean 4 sketch against Mathlib4 , with natural-language statements, imports, ecosystem-maturity tags, and sorry-free theorem bodies maintained from a single source of truth. On the pinned stack leanprover/lean4:v4.29.0 / Mathlib4 v4.29.0 , the shipped catalog compiles 50/50 sorry-free under lake env lean. The manuscript describes an LLM-assisted drafting and commentar",
     "keywords": [
         "Free Energy Principle",
@@ -77,7 +134,13 @@
         "LLM-ITP integration",
         "reproducible research",
         "measure theory"
-    ]
+    ],
+    "description": "A 50-topic formal catalog of FEP-related mathematics with explicit Mathlib4-facing statements and a reproducible, version-pinned verification story. Axiomatization vs. problem-solving : positions LLM+ITP work as building shared formal structure, not just benchmark solving. Hermes / OpenGauss pipeline: LLM drafts and explains sketches while native Lean verifies; compilation remains the non-negotiable check. Zero-mock testing policy in the software stack (real files, real SQLite, live compiler, real HTTP) as stated in the manuscript. A Lean primer and Mathlib4 / measure-theoretic probability guidance aimed at Active Inference researchers entering formal methods. Theoretical and systems paper: ",
+    "hasPart": {
+        "@type": "CreativeWork",
+        "name": "Local paper documentation",
+        "url": "https://github.com/docxology/docxology/tree/main/papers/2026_FEPLean"
+    }
 }
     </script>
 </head>

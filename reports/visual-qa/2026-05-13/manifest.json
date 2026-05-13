@@ -76,6 +76,30 @@
       "file": "reports/visual-qa/2026-05-13/catalog-mobile.png"
     },
     {
+      "page": "updates.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/updates-desktop.png"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/updates-mobile.png"
+    },
+    {
+      "page": "art.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/art-desktop.png"
+    },
+    {
+      "page": "art.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/art-mobile.png"
+    },
+    {
       "page": "discovery.html",
       "viewport": "desktop",
       "size": "1440,1100",

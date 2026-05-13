@@ -92,6 +92,17 @@
       "command": "python3 code/orchestrators/build_catalog.py"
     },
     {
+      "name": "Updates page",
+      "outputs": [
+        "updates.html"
+      ],
+      "sources": [
+        "CHANGELOG.md",
+        "code/orchestrators/build_updates_page.py"
+      ],
+      "command": "python3 code/orchestrators/build_updates_page.py"
+    },
+    {
       "name": "External link report",
       "outputs": [
         "reports/external_links_2026-05-13.json"
@@ -100,6 +111,55 @@
         "site-critical HTML, Markdown, and JSON-LD files"
       ],
       "command": "python3 code/orchestrators/check_external_links.py"
+    },
+    {
+      "name": "External link triage",
+      "outputs": [
+        "reports/external_links_triage_2026-05-13.json",
+        "reports/external_links_triage_2026-05-13.md"
+      ],
+      "sources": [
+        "reports/external_links_2026-05-13.json"
+      ],
+      "command": "python3 code/orchestrators/build_external_link_triage.py"
+    },
+    {
+      "name": "Asset size audit",
+      "outputs": [
+        "reports/asset_size_2026-05-13.json"
+      ],
+      "sources": [
+        "root HTML pages",
+        "og-*.jpg",
+        "data/*.json",
+        "style.css",
+        "sw.js"
+      ],
+      "command": "python3 code/orchestrators/audit_assets.py"
+    },
+    {
+      "name": "Browser smoke checks",
+      "outputs": [
+        "reports/browser-smoke/2026-05-13/*.png",
+        "reports/browser-smoke/2026-05-13/manifest.json"
+      ],
+      "sources": [
+        "root HTML pages",
+        "works/index.html",
+        "search-index.json"
+      ],
+      "command": "python3 code/orchestrators/browser_smoke.py"
+    },
+    {
+      "name": "Live site verification",
+      "outputs": [
+        "reports/live_site_verification_2026-05-13.json"
+      ],
+      "sources": [
+        "https://danielarifriedman.com/",
+        "GitHub Pages API"
+      ],
+      "command": "python3 code/orchestrators/verify_live_site.py"
     },
     {
       "name": "Feed",

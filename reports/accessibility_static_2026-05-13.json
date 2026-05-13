@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-05-13",
   "scope": "Static root HTML pages; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 18,
-  "passing": 18,
+  "page_count": 19,
+  "passing": 19,
   "results": [
     {
       "path": "art.html",
@@ -326,6 +326,26 @@
     },
     {
       "path": "software.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0
+    },
+    {
+      "path": "updates.html",
       "ok": true,
       "checks": {
         "lang": true,

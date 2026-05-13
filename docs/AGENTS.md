@@ -19,10 +19,15 @@ See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index
 - Run [`code/orchestrators/build_work_pages.py`](../code/orchestrators/build_work_pages.py) after `data/works.json` changes.
 - Run [`code/orchestrators/build_evidence_page.py`](../code/orchestrators/build_evidence_page.py) after `data/claims.json` changes.
 - Run [`code/orchestrators/build_catalog.py`](../code/orchestrators/build_catalog.py) after `data/*.json` exports change.
+- Run [`code/orchestrators/build_updates_page.py`](../code/orchestrators/build_updates_page.py) after `CHANGELOG.md` changes.
 - Run [`code/orchestrators/build_search_index.py`](../code/orchestrators/build_search_index.py), [`code/orchestrators/generate_feed.py`](../code/orchestrators/generate_feed.py), and [`code/orchestrators/build_sitemap.py`](../code/orchestrators/build_sitemap.py) after public-page or export changes.
 - Run [`code/orchestrators/build_reconciliation_report.py`](../code/orchestrators/build_reconciliation_report.py) after public-source snapshots or curated counts change.
 - Run [`code/orchestrators/build_generated_manifest.py`](../code/orchestrators/build_generated_manifest.py) when generated-artifact lists or commands change.
 - Run [`code/orchestrators/check_external_links.py`](../code/orchestrators/check_external_links.py) to refresh the scoped external-link report; 403/429 entries may be bot protection rather than broken sources.
+- Run [`code/orchestrators/build_external_link_triage.py`](../code/orchestrators/build_external_link_triage.py) after refreshing external links.
+- Run [`code/orchestrators/audit_assets.py`](../code/orchestrators/audit_assets.py) after adding or replacing public images, exports, or runtime assets.
+- Run [`code/orchestrators/browser_smoke.py`](../code/orchestrators/browser_smoke.py) after significant frontend changes when the local Playwright CLI is available.
+- Run [`code/orchestrators/verify_live_site.py`](../code/orchestrators/verify_live_site.py) after GitHub Pages builds to distinguish deploy lag from actual broken live assets.
 - Run [`code/orchestrators/accessibility_audit.py`](../code/orchestrators/accessibility_audit.py) and [`code/orchestrators/visual_qa.py`](../code/orchestrators/visual_qa.py) after significant frontend changes.
 - Run [`code/orchestrators/validate_repo.py`](../code/orchestrators/validate_repo.py) before declaring the repo healthy.
 
