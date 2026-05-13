@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Gallery — Daniel Ari Friedman</title>
-    <meta name="description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — first art NFTs on Ethereum mainnet, sold at Christie's.">
+    <meta name="description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — early Ethereum art NFTs, sold at Christie's.">
     <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/art.html">
@@ -14,11 +14,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Art Gallery — Daniel Ari Friedman | 942 Pen Drawings &amp; Curio Cards NFTs">
-    <meta property="og:description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — first art NFTs on Ethereum mainnet, sold at Christie's.">
+    <meta property="og:description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — early Ethereum art NFTs, sold at Christie's.">
     <meta property="og:url" content="https://danielarifriedman.com/art.html">
-    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image" content="https://danielarifriedman.com/og-art.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Daniel Ari Friedman">
@@ -30,7 +34,7 @@
     "@id": "https://danielarifriedman.com/art.html#collection",
     "name": "Art Gallery — Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/art.html",
-    "description": "942 pen-and-ink drawings and Curio Cards (2017, first art NFTs on Ethereum mainnet) by Daniel Ari Friedman.",
+    "description": "942 pen-and-ink drawings and Curio Cards (2017, early Ethereum art NFTs) by Daniel Ari Friedman.",
     "creator": { "@id": "https://danielarifriedman.com/#person" },
     "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
     "numberOfItems": 942
@@ -74,6 +78,9 @@
         body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
         a{color:var(--gold);text-decoration:none;transition:color .2s}
         a:hover{color:var(--gold-b)}
+        a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+        .skip-link{position:absolute;top:-100%;left:1rem;padding:.6rem 1.2rem;background:var(--gold);color:var(--bg);font-weight:700;border-radius:0 0 8px 8px;z-index:9999}
+        .skip-link:focus{top:0}
 
         /* NAV */
         nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(12,12,14,0.92);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);border-bottom:1px solid rgba(201,168,76,0.15);padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between}
@@ -173,12 +180,14 @@
     </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <nav>
     <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
     <div class="nav-right">
         <span class="nav-count">942 artworks</span>
         <a href="index.html">← Main Site</a>
+        <a href="discovery.html">Discovery</a>
         <a href="https://www.flickr.com/photos/43693624@N07/" target="_blank" rel="noopener">Flickr Archive ↗</a>
     </div>
 </nav>
@@ -215,7 +224,7 @@
     <span class="result-count" id="resultCount"></span>
 </div>
 
-<main class="gallery">
+<main class="gallery" id="main">
     <div class="grid grid-md" id="grid"></div>
     <div class="empty" id="emptyState" style="display:none">
         <div class="empty-icon">🖋</div>
@@ -235,7 +244,7 @@
     <div class="lb-body">
         <div class="lb-img-wrap">
             <button class="lb-nav lb-prev" onclick="navLightbox(-1)">‹</button>
-            <img src="" alt="" class="lb-img" id="lb-img">
+            <img src="" alt="Selected artwork" class="lb-img" id="lb-img">
             <button class="lb-nav lb-next" onclick="navLightbox(1)">›</button>
         </div>
         <div class="lb-panel">
@@ -287,6 +296,22 @@ function esc(s) {
     return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+function plain(s) {
+    const div = document.createElement('div');
+    div.innerHTML = s || '';
+    return (div.textContent || div.innerText || '').replace(/\s+/g, ' ').trim();
+}
+
+function artAlt(art) {
+    const parts = [art.title || 'Untitled artwork', 'pen-and-ink drawing by Daniel Ari Friedman'];
+    if (art.date) parts.push('created ' + art.date.slice(0, 10));
+    const tags = (art.tags || []).filter(t => !['daniel', 'friedman', 'danielarifriedman', 'art', 'drawing', 'draw', 'paper', 'ink', 'pen'].includes(String(t).toLowerCase())).slice(0, 4);
+    if (tags.length) parts.push('tags: ' + tags.join(', '));
+    const desc = plain(art.desc || '').slice(0, 120);
+    if (desc) parts.push(desc);
+    return parts.join('. ');
+}
+
 // ── RENDER ──
 function renderGrid() {
     grid.innerHTML = '';
@@ -296,7 +321,7 @@ function renderGrid() {
         const card = document.createElement('div');
         card.className = 'art-card';
         card.innerHTML =
-            `<img data-src="${esc(art.thumb)}" alt="${esc(art.title)}" class="art-thumb">` +
+            `<img data-src="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb">` +
             `<div class="art-info">` +
             `<div class="art-title" title="${esc(art.title)}">${esc(art.title)}</div>` +
             `<div class="art-meta">${art.date ? art.date.slice(0,10) : ''}</div>` +
@@ -353,7 +378,7 @@ function populate(art) {
     const img = document.getElementById('lb-img');
     img.style.opacity = '0';
     img.src = mainSrc;
-    img.alt = art.title;
+    img.alt = artAlt(art);
     img.onload = () => { img.style.opacity = '1'; };
 
     const origUrl = art.sizes['Original'] || art.sizes['Large 2048'] || art.sizes['X-Large 4K'] || mainSrc;

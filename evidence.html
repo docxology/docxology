@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence Ledger — Daniel Ari Friedman</title>
+    <meta name="description" content="Claim-level evidence ledger for Daniel Ari Friedman: source links, confidence levels, caveats, and latest public-source snapshot.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/evidence.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Evidence Ledger — Daniel Ari Friedman">
+    <meta property="og:description" content="Claim-level evidence ledger with source links, confidence levels, and caveats.">
+    <meta property="og:url" content="https://danielarifriedman.com/evidence.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+        .claim-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+        .claim-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;display:flex;flex-direction:column;gap:.75rem}
+        .claim-card h3{font-size:1rem;line-height:1.45;color:#fff}
+        .claim-card p{font-size:.84rem;color:var(--text-secondary);line-height:1.6}
+        .claim-card dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}
+        .claim-card dt{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted)}
+        .claim-card dd{font-size:.82rem;color:var(--silver-bright);margin:0}
+        .claim-source{margin-top:auto;overflow-wrap:anywhere}
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="software.html">Software</a>
+            <a href="discovery.html">Discovery</a>
+            <a href="cite-verify.html">Cite</a>
+        </div>
+    </nav>
+    <header class="page-hero">
+        <h1>Evidence Ledger</h1>
+        <p class="sub">Source links, confidence levels, caveats, maintenance owners, and public-source freshness reports for key site claims.</p>
+    </header>
+    <main id="main" class="main">
+        <section class="section">
+            <div class="section-header"><h2>Claim Register</h2><p>Use this table as an audit trail, not a substitute for primary sources.</p><div class="section-divider"></div></div>
+            <div class="claim-grid">
+                <article class="claim-card">
+                    <h3>The curated bibliography contains 115 works.</h3>
+                    <p>Curated count includes papers, books, presentations, courses, playbooks, and series.</p>
+                    <dl>
+                        <div><dt>Status</dt><dd>curated-local</dd></div>
+                        <div><dt>Confidence</dt><dd>High</dd></div>
+                        <div><dt>Checked</dt><dd>2026-05-13</dd></div>
+                        <div><dt>Owner</dt><dd>ARCHIVIST</dd></div>
+                    </dl>
+                    <p class="claim-source"><a href="pages/BIBLIOGRAPHY.md">pages/BIBLIOGRAPHY.md</a></p>
+                </article>
+                <article class="claim-card">
+                    <h3>The repository contains 108 per-paper documentation folders.</h3>
+                    <p>Not every bibliography row has a paper folder; media/course rows may not.</p>
+                    <dl>
+                        <div><dt>Status</dt><dd>curated-local</dd></div>
+                        <div><dt>Confidence</dt><dd>High</dd></div>
+                        <div><dt>Checked</dt><dd>2026-05-13</dd></div>
+                        <div><dt>Owner</dt><dd>MAINTAINER</dd></div>
+                    </dl>
+                    <p class="claim-source"><a href="papers/">papers/</a></p>
+                </article>
+                <article class="claim-card">
+                    <h3>The docxology GitHub profile has 286 public repositories.</h3>
+                    <p>GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md.</p>
+                    <dl>
+                        <div><dt>Status</dt><dd>public-api</dd></div>
+                        <div><dt>Confidence</dt><dd>High</dd></div>
+                        <div><dt>Checked</dt><dd>2026-05-13</dd></div>
+                        <div><dt>Owner</dt><dd>INTEGRATOR</dd></div>
+                    </dl>
+                    <p class="claim-source"><a href="https://api.github.com/users/docxology">https://api.github.com/users/docxology</a></p>
+                </article>
+                <article class="claim-card">
+                    <h3>The Active Inference Institute GitHub organization has 50 public repositories.</h3>
+                    <p>Local software catalog tracks 32 AII repositories with docxology contributions.</p>
+                    <dl>
+                        <div><dt>Status</dt><dd>public-api</dd></div>
+                        <div><dt>Confidence</dt><dd>High</dd></div>
+                        <div><dt>Checked</dt><dd>2026-05-13</dd></div>
+                        <div><dt>Owner</dt><dd>INTEGRATOR</dd></div>
+                    </dl>
+                    <p class="claim-source"><a href="https://api.github.com/users/ActiveInferenceInstitute">https://api.github.com/users/ActiveInferenceInstitute</a></p>
+                </article>
+                <article class="claim-card">
+                    <h3>ORCID 0000-0001-6232-9096 is the canonical researcher identifier.</h3>
+                    <p>ORCID public work groups may lag new deposits and may group versions differently.</p>
+                    <dl>
+                        <div><dt>Status</dt><dd>public-identifier</dd></div>
+                        <div><dt>Confidence</dt><dd>High</dd></div>
+                        <div><dt>Checked</dt><dd>2026-05-13</dd></div>
+                        <div><dt>Owner</dt><dd>ARCHIVIST</dd></div>
+                    </dl>
+                    <p class="claim-source"><a href="https://orcid.org/0000-0001-6232-9096">https://orcid.org/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="claim-card">
+                    <h3>Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017.</h3>
+                    <p>Use conservative phrasing; broader first/earliest claims vary by source and definition.</p>
+                    <dl>
+                        <div><dt>Status</dt><dd>public-profile</dd></div>
+                        <div><dt>Confidence</dt><dd>Medium</dd></div>
+                        <div><dt>Checked</dt><dd>2026-05-13</dd></div>
+                        <div><dt>Owner</dt><dd>RESEARCHER</dd></div>
+                    </dl>
+                    <p class="claim-source"><a href="https://curio.cards/artist/danielfriedman/">https://curio.cards/artist/danielfriedman/</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2"><a class="btn btn-outline" href="data/claims.json">Claims JSON</a> <a class="btn btn-outline" href="data/reconciliation.json">Reconciliation JSON</a> <a class="btn btn-outline" href="reports/public_source_snapshot_2026-05-13.json">Latest snapshot</a></p>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
+        <div class="footer-links"><a href="cite-verify.html">Cite & Verify</a><a href="discovery.html">Discovery</a><a href="pages/EVIDENCE.md">Markdown</a><a href="https://github.com/docxology/docxology">Source Repo</a></div>
+    </footer>
+</body>
+</html>

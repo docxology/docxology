@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository as a public research index, software catalog, or source map, please cite it as below."
+title: "docxology: Daniel Ari Friedman public research and software index"
+type: dataset
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+repository-code: "https://github.com/docxology/docxology"
+url: "https://danielarifriedman.com/"
+date-released: "2026-05-13"
+version: "2026.05.13"
+keywords:
+  - Daniel Ari Friedman
+  - Active Inference
+  - computational biology
+  - cognitive security
+  - entomology
+  - open science
+  - software catalog
+abstract: "Profile and source repository indexing Daniel Ari Friedman's public bibliography, paper documentation, software repositories, media, collaborators, public identifiers, and discovery metadata."

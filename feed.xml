@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel Ari Friedman Updates</title>
+    <link>https://danielarifriedman.com/</link>
+    <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Bibliography, software, evidence, and site metadata updates.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 May 2026 16:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Discovery, citation, evidence, and domain pages expanded</title>
+      <link>https://danielarifriedman.com/discovery.html</link>
+      <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
+    </item>
+    <item>
+      <title>Per-work landing pages and search index generated</title>
+      <link>https://danielarifriedman.com/works/</link>
+      <guid isPermaLink="false">site-update-2026-05-13-works</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</title>
+      <link>https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html</link>
+      <guid isPermaLink="false">work-Friedman2026TemplateApproachReproducibleGenerative001</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Active Inference Journal — 500+ videos on Active Inference with transcripts</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html</link>
+      <guid isPermaLink="false">work-Friedman2026ActiveInferenceJournal500002</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Series · YouTube · Media &amp; Teaching · 2026</description>
+    </item>
+    <item>
+      <title>Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</title>
+      <link>https://danielarifriedman.com/works/Friedman2026BeforePragmatismHadName003.html</link>
+      <guid isPermaLink="false">work-Friedman2026BeforePragmatismHadName003</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2026</description>
+    </item>
+    <item>
+      <title>The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</title>
+      <link>https://danielarifriedman.com/works/Friedman2026GoldenCompassLunarFlux004.html</link>
+      <guid isPermaLink="false">work-Friedman2026GoldenCompassLunarFlux004</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2026</description>
+    </item>
+    <item>
+      <title>Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)</title>
+      <link>https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkFormal005.html</link>
+      <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkFormal005</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Cognitive Security · 2026</description>
+    </item>
+    <item>
+      <title>Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions</title>
+      <link>https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html</link>
+      <guid isPermaLink="false">work-Friedman2026PersonalYouTube200Livestreams006</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Series · YouTube · Media &amp; Teaching · 2026</description>
+    </item>
+    <item>
+      <title>The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</title>
+      <link>https://danielarifriedman.com/works/Friedman2026DoorsPerceptionAreThreshold007.html</link>
+      <guid isPermaLink="false">work-Friedman2026DoorsPerceptionAreThreshold007</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2026</description>
+    </item>
+    <item>
+      <title>Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology</title>
+      <link>https://danielarifriedman.com/works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html</link>
+      <guid isPermaLink="false">work-Friedman2026EntoLinguisticsLanguageAmbiguity109</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Entomology · 2026</description>
+    </item>
+    <item>
+      <title>A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring</title>
+      <link>https://danielarifriedman.com/works/Friedman2026LiteratureReviewArchitectureActive110.html</link>
+      <guid isPermaLink="false">work-Friedman2026LiteratureReviewArchitectureActive110</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Active Inference Journal · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences</title>
+      <link>https://danielarifriedman.com/works/Friedman2026DynamicAttentionalAgentsFocused111.html</link>
+      <guid isPermaLink="false">work-Friedman2026DynamicAttentionalAgentsFocused111</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · CSCIS vol 2857, Springer · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>Compositional Approaches to Linguistic Case for Cognitive Modeling</title>
+      <link>https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html</link>
+      <guid isPermaLink="false">work-Friedman2026CompositionalApproachesLinguisticCase112</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Active Inference Journal · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</title>
+      <link>https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html</link>
+      <guid isPermaLink="false">work-Friedman2026TowardsLean4Formalization113</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Active Inference Journal · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ArchitectureFalseGodsWilliam115.html</link>
+      <guid isPermaLink="false">work-Friedman2026ArchitectureFalseGodsWilliam115</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2026</description>
+    </item>
+    <item>
+      <title>5th Applied Active Inference Symposium — Abstract Book</title>
+      <link>https://danielarifriedman.com/works/Friedman20255thAppliedActiveInference008.html</link>
+      <guid isPermaLink="false">work-Friedman20255thAppliedActiveInference008</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Presentation · Presentation · Media &amp; Teaching · 2025</description>
+    </item>
+    <item>
+      <title>Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference</title>
+      <link>https://danielarifriedman.com/works/Friedman2025AdaptiveBasicIncomeAuBI009.html</link>
+      <guid isPermaLink="false">work-Friedman2025AdaptiveBasicIncomeAuBI009</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2025</description>
+    </item>
+    <item>
+      <title>CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling</title>
+      <link>https://danielarifriedman.com/works/Friedman2025CEREBRUMCaseEnabledReasoning010.html</link>
+      <guid isPermaLink="false">work-Friedman2025CEREBRUMCaseEnabledReasoning010</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2025</description>
+    </item>
+    <item>
+      <title>Computational Complexity and Energetics of the Ant Stack</title>
+      <link>https://danielarifriedman.com/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html</link>
+      <guid isPermaLink="false">work-Friedman2025ComputationalComplexityEnergeticsAnt011</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Entomology · 2025</description>
+    </item>
+    <item>
+      <title>EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories</title>
+      <link>https://danielarifriedman.com/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html</link>
+      <guid isPermaLink="false">work-Friedman2025EvoJumpStochasticModelingEvolutionary012</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2025</description>
+    </item>
+    <item>
+      <title>Increasing the Accessibility and Applicability of Active Inference</title>
+      <link>https://danielarifriedman.com/works/Friedman2025IncreasingAccessibilityApplicabilityActive013.html</link>
+      <guid isPermaLink="false">work-Friedman2025IncreasingAccessibilityApplicabilityActive013</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2025</description>
+    </item>
+    <item>
+      <title>MDKV: A Multitrack Markdown Container for Structured, Portable Documents</title>
+      <link>https://danielarifriedman.com/works/Friedman2025MDKVMultitrackMarkdownContainer014.html</link>
+      <guid isPermaLink="false">work-Friedman2025MDKVMultitrackMarkdownContainer014</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2025</description>
+    </item>
+    <item>
+      <title>Markdown Decision Process: A Framework for Probabilistic Document Analysis</title>
+      <link>https://danielarifriedman.com/works/Friedman2025MarkdownDecisionProcessFramework015.html</link>
+      <guid isPermaLink="false">work-Friedman2025MarkdownDecisionProcessFramework015</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2025</description>
+    </item>
+    <item>
+      <title>On Cognitive Art &amp; Science: Toward Wholeness From Both Sides</title>
+      <link>https://danielarifriedman.com/works/Friedman2025CognitiveArtScienceToward016.html</link>
+      <guid isPermaLink="false">work-Friedman2025CognitiveArtScienceToward016</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2025</description>
+    </item>
+    <item>
+      <title>On Time</title>
+      <link>https://danielarifriedman.com/works/Friedman2025Time017.html</link>
+      <guid isPermaLink="false">work-Friedman2025Time017</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2025</description>
+    </item>
+    <item>
+      <title>QuadMath: An Analytical Review of 4D and Quadray Coordinates</title>
+      <link>https://danielarifriedman.com/works/Friedman2025QuadMathAnalyticalReview4D018.html</link>
+      <guid isPermaLink="false">work-Friedman2025QuadMathAnalyticalReview4D018</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2025</description>
+    </item>
+    <item>
+      <title>ResNei: Solution Design Document</title>
+      <link>https://danielarifriedman.com/works/Friedman2025ResNeiSolutionDesignDocument019.html</link>
+      <guid isPermaLink="false">work-Friedman2025ResNeiSolutionDesignDocument019</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2025</description>
+    </item>
+  </channel>
+</rss>

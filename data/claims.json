@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-05-13",
+  "claims": [
+    {
+      "id": "curated-work-count",
+      "claim": "The curated bibliography contains 115 works.",
+      "status": "curated-local",
+      "sources": [
+        "pages/BIBLIOGRAPHY.md",
+        "publications.html",
+        "data/works.json"
+      ],
+      "checked_at": "2026-05-13",
+      "confidence": "high",
+      "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
+      "maintenance_owner": "ARCHIVIST",
+      "caveat": "Curated count includes papers, books, presentations, courses, playbooks, and series."
+    },
+    {
+      "id": "paper-folder-count",
+      "claim": "The repository contains 108 per-paper documentation folders.",
+      "status": "curated-local",
+      "sources": [
+        "papers/",
+        "papers/README.md",
+        "papers/paper_metadata.json"
+      ],
+      "checked_at": "2026-05-13",
+      "confidence": "high",
+      "verification_method": "Folder inventory and paper metadata count.",
+      "maintenance_owner": "MAINTAINER",
+      "caveat": "Not every bibliography row has a paper folder; media/course rows may not."
+    },
+    {
+      "id": "docxology-github-public-repos",
+      "claim": "The docxology GitHub profile has 286 public repositories.",
+      "status": "public-api",
+      "sources": [
+        "https://api.github.com/users/docxology",
+        "reports/public_source_snapshot_2026-05-13.json"
+      ],
+      "checked_at": "2026-05-13",
+      "confidence": "high",
+      "verification_method": "GitHub REST API user profile response.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md."
+    },
+    {
+      "id": "aii-github-public-repos",
+      "claim": "The Active Inference Institute GitHub organization has 50 public repositories.",
+      "status": "public-api",
+      "sources": [
+        "https://api.github.com/users/ActiveInferenceInstitute",
+        "reports/public_source_snapshot_2026-05-13.json"
+      ],
+      "checked_at": "2026-05-13",
+      "confidence": "high",
+      "verification_method": "GitHub REST API organization profile response.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "Local software catalog tracks 32 AII repositories with docxology contributions."
+    },
+    {
+      "id": "orcid-canonical-identifier",
+      "claim": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier.",
+      "status": "public-identifier",
+      "sources": [
+        "https://orcid.org/0000-0001-6232-9096",
+        "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"
+      ],
+      "checked_at": "2026-05-13",
+      "confidence": "high",
+      "verification_method": "ORCID profile and public works endpoint.",
+      "maintenance_owner": "ARCHIVIST",
+      "caveat": "ORCID public work groups may lag new deposits and may group versions differently."
+    },
+    {
+      "id": "curio-cards-early-ethereum-art",
+      "claim": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017.",
+      "status": "public-profile",
+      "sources": [
+        "https://curio.cards/artist/danielfriedman/",
+        "https://www.christies.com/en/lot/lot-6337619",
+        "papers/2024_CurioCards/README.md"
+      ],
+      "checked_at": "2026-05-13",
+      "confidence": "medium",
+      "verification_method": "Curio Cards artist profile, Christie's lot page, and local paper notes.",
+      "maintenance_owner": "RESEARCHER",
+      "caveat": "Use conservative phrasing; broader first/earliest claims vary by source and definition."
+    }
+  ]
+}

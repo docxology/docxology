@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-05-13",
+  "tool": "npx playwright screenshot",
+  "note": "Human review still required; these snapshots guard against obvious layout regressions.",
+  "screenshots": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/home-desktop.png"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/home-mobile.png"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/publications-desktop.png"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/publications-mobile.png"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/works-desktop.png"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/works-mobile.png"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/domains-desktop.png"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/domains-mobile.png"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/search-desktop.png"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/search-mobile.png"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/catalog-desktop.png"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/catalog-mobile.png"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/discovery-desktop.png"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/discovery-mobile.png"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/cite-verify-desktop.png"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/cite-verify-mobile.png"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-05-13/evidence-desktop.png"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-05-13/evidence-mobile.png"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-05-13",
+  "artifacts": [
+    {
+      "name": "Bibliography exports",
+      "outputs": [
+        "bibliography.bib",
+        "bibliography.csl.json",
+        "bibliography.ris",
+        "data/works.json"
+      ],
+      "sources": [
+        "pages/BIBLIOGRAPHY.md",
+        "papers/biblio_table.py"
+      ],
+      "command": "python3 code/orchestrators/export_bibliography.py"
+    },
+    {
+      "name": "Agent data exports",
+      "outputs": [
+        "data/software.json",
+        "data/people.json",
+        "data/organizations.json",
+        "data/claims.json"
+      ],
+      "sources": [
+        "pages/SOFTWARE.md",
+        "code/orchestrators/export_agent_data.py"
+      ],
+      "command": "python3 code/orchestrators/export_agent_data.py"
+    },
+    {
+      "name": "Domain pages",
+      "outputs": [
+        "domains.html",
+        "domain-*.html",
+        "pages/DOMAINS.md"
+      ],
+      "sources": [
+        "data/works.json",
+        "data/software.json",
+        "code/orchestrators/build_domain_pages.py"
+      ],
+      "command": "python3 code/orchestrators/build_domain_pages.py"
+    },
+    {
+      "name": "Work pages",
+      "outputs": [
+        "works/*.html",
+        "data/work-enrichment.json"
+      ],
+      "sources": [
+        "data/works.json",
+        "papers/*/README.md",
+        "papers/*/SKILL.md"
+      ],
+      "command": "python3 code/orchestrators/build_work_pages.py"
+    },
+    {
+      "name": "Evidence pages",
+      "outputs": [
+        "evidence.html",
+        "pages/EVIDENCE.md"
+      ],
+      "sources": [
+        "data/claims.json",
+        "code/orchestrators/build_evidence_page.py"
+      ],
+      "command": "python3 code/orchestrators/build_evidence_page.py"
+    },
+    {
+      "name": "Search index",
+      "outputs": [
+        "search-index.json"
+      ],
+      "sources": [
+        "data/*.json",
+        "data/work-enrichment.json"
+      ],
+      "command": "python3 code/orchestrators/build_search_index.py"
+    },
+    {
+      "name": "Data catalog",
+      "outputs": [
+        "catalog.html",
+        "data/catalog.json"
+      ],
+      "sources": [
+        "code/orchestrators/build_catalog.py",
+        "data/*.json"
+      ],
+      "command": "python3 code/orchestrators/build_catalog.py"
+    },
+    {
+      "name": "External link report",
+      "outputs": [
+        "reports/external_links_2026-05-13.json"
+      ],
+      "sources": [
+        "site-critical HTML, Markdown, and JSON-LD files"
+      ],
+      "command": "python3 code/orchestrators/check_external_links.py"
+    },
+    {
+      "name": "Feed",
+      "outputs": [
+        "feed.xml"
+      ],
+      "sources": [
+        "data/works.json",
+        "code/orchestrators/generate_feed.py"
+      ],
+      "command": "python3 code/orchestrators/generate_feed.py"
+    },
+    {
+      "name": "Sitemap",
+      "outputs": [
+        "sitemap.xml"
+      ],
+      "sources": [
+        "works/*.html",
+        "code/orchestrators/build_sitemap.py"
+      ],
+      "command": "python3 code/orchestrators/build_sitemap.py"
+    },
+    {
+      "name": "Visual QA",
+      "outputs": [
+        "reports/visual-qa/2026-05-13/*.png",
+        "reports/visual-qa/2026-05-13/manifest.json"
+      ],
+      "sources": [
+        "root HTML pages",
+        "style.css"
+      ],
+      "command": "python3 code/orchestrators/visual_qa.py"
+    }
+  ]
+}

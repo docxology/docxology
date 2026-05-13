@@ -1,0 +1,24 @@
+name: Software metadata update
+description: Report a repository description, language, stars, release, or ownership update.
+title: "Software metadata: "
+labels: ["software", "metadata"]
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: GitHub URL or repository name.
+    validations:
+      required: true
+  - type: textarea
+    id: update
+    attributes:
+      label: Requested update
+      description: What should change in SOFTWARE.md or software.html?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: Public evidence for the update, if available.

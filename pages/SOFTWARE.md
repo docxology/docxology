@@ -7,16 +7,16 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 # 💻 Software — Open-Source AI, Scientific Computing & Research Tools
 
-> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
 **Open-Source Repositories by Daniel Ari Friedman, PhD ([@docxology](https://github.com/docxology))**
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*48 original repositories · 32 Active Inference Institute contributions*
+*48 original repositories · 32 catalogued Active Inference Institute contributions · AII organization: 50 public repositories*
 
-*Available for [research consulting & collaboration](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
+*Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
 </div>
 
@@ -32,7 +32,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 ## 🧬 Repositories Owned by docxology
 
-> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 285+ total repos including forks see the [full profile](https://github.com/docxology?tab=repositories).
+> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 286 total public repos including forks see the [full profile](https://github.com/docxology?tab=repositories).
 
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|:---:|---|
@@ -85,7 +85,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [symergetics](https://github.com/docxology/symergetics) | Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics | Python | 0 | 2025-09 |
 | [transformer](https://github.com/docxology/transformer) | Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research | Python | 0 | 2025-10 |
 
-> \* Note: a same-named repository exists at [`ActiveInferenceInstitute/cognitive`](https://github.com/ActiveInferenceInstitute/cognitive) (⭐17); `docxology/cognitive` (⭐13) is an **original** repository — these are distinct projects.
+> \* Note: a same-named repository exists at [`ActiveInferenceInstitute/cognitive`](https://github.com/ActiveInferenceInstitute/cognitive) (⭐18); `docxology/cognitive` (⭐13) is an **original** repository — these are distinct projects.
 
 ---
 
@@ -98,16 +98,16 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Repository | Description | Language | ⭐ | Year |
 |---|---|---|:---:|---|
 | [ActiveInferenceJournal](https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal) | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output | HTML | 42 | 2024 |
-| [ActiveBlockference](https://github.com/ActiveInferenceInstitute/ActiveBlockference) | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework | Jupyter | 31 | 2023 |
-| [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) | Active Inference models for/of ants across 32+ programming languages — the definitive multi-language reference implementation of stigmergic Active Inference | Python | 27 | 2024 |
-| [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB | Python | 23 | 2024 |
-| [FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · [📄](../papers/2026_FEPLean/) | Python | 0 | 2026 |
-| [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization | Python | 17 | 2025 |
+| [ActiveBlockference](https://github.com/ActiveInferenceInstitute/ActiveBlockference) | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework | Jupyter | 32 | 2023 |
+| [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference | Python | 28 | 2024 |
+| [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · [Zenodo software](https://doi.org/10.5281/zenodo.19600217) | Python | 24 | 2024 |
+| [FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · [📄](../papers/2026_FEPLean/) | Python | 3 | 2026 |
+| [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization | Python | 18 | 2025 |
 | [Active_Inference_Ontology](https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology) | Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts | — | 13 | 2023 |
-| [Journal-Utilities](https://github.com/ActiveInferenceInstitute/Journal-Utilities) | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based transcription, automated formatting, and archival utilities | HTML | 11 | 2024 |
+| [Journal-Utilities](https://github.com/ActiveInferenceInstitute/Journal-Utilities) | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · [Zenodo release](https://doi.org/10.5281/zenodo.18686966) | HTML | 11 | 2026 |
 | [Symposium](https://github.com/ActiveInferenceInstitute/Symposium) | Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia | Python | 11 | 2024 |
 | [ActiveInferenceCategoryTheory](https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory) | Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory | — | 10 | 2024 |
-| [CEREBRUM](https://github.com/ActiveInferenceInstitute/CEREBRUM) | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models | Python | 10 | 2025 |
+| [CEREBRUM](https://github.com/ActiveInferenceInstitute/CEREBRUM) | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models | Python | 12 | 2025 |
 | [GEO-INFER](https://github.com/ActiveInferenceInstitute/GEO-INFER) | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence | HTML | 9 | 2024 |
 | [AEOS](https://github.com/ActiveInferenceInstitute/AEOS) | Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models | — | 8 | 2022 |
 | [courses](https://github.com/ActiveInferenceInstitute/courses) | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts | HTML | 8 | 2024 |
@@ -145,16 +145,16 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 4 | `literature`, `curriculum`, `course`, `lean_niche` |
 | Other | 5 | `cascadia`, `fuller-obsidian`, `transformer`, `service`, `flick` |
 | **docxology subtotal** | **48** | |
-| AII Contributions (non-fork) | 32 | Officer-level contributions across all Institute repos |
+| AII Contributions (non-fork) | 32 | Catalogued repositories with docxology contributions |
 | **Grand Total** | **80** | |
 
-> *For 285+ total repositories including personal forks, see the [full profile](https://github.com/docxology?tab=repositories). AII count includes source repos only, not org-level forks (pymdp, Flowise, entropix, fabric, etc.). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog.*
+> *For 286 total public repositories including personal forks, see the [full profile](https://github.com/docxology?tab=repositories). AII catalog count includes source repositories with docxology contributions; the [AII GitHub API](https://api.github.com/users/ActiveInferenceInstitute) returned 50 public organization repositories on 2026-05-13, including org-level forks and adjacent projects. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---
 
 <div align="center">
 
-*See also [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog · [README.md](../README.md) for profile overview · [LINKS.md](LINKS.md) for all web presences · [COLLABORATORS.md](COLLABORATORS.md) for research network*
+*See also [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog · [DISCOVERY.md](DISCOVERY.md) for public-source discovery · [README.md](../README.md) for profile overview · [LINKS.md](LINKS.md) for all web presences · [COLLABORATORS.md](COLLABORATORS.md) for research network*
 
 </div>
 

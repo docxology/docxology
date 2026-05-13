@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-13",
+  "organizations": [
+    {
+      "name": "Active Inference Institute",
+      "alternate_names": [
+        "AII",
+        "Active Inference Lab"
+      ],
+      "url": "https://www.activeinference.institute/",
+      "wikidata": "https://www.wikidata.org/wiki/Q139600792",
+      "github": "https://github.com/ActiveInferenceInstitute",
+      "role": "Research and education nonprofit focused on Active Inference and the Free Energy Principle"
+    },
+    {
+      "name": "COGSEC.org",
+      "url": "https://cogsec.org",
+      "role": "Cognitive security publication and research context"
+    },
+    {
+      "name": "Stanford University",
+      "url": "https://www.stanford.edu/",
+      "role": "PhD institution"
+    },
+    {
+      "name": "College of the Redwoods",
+      "url": "https://www.redwoods.edu/",
+      "role": "Teaching affiliation"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ keywords: "Daniel Ari Friedman, active inference, COLLABORATORS"
 
 # 🤝 Collaborators & Research Network
 
-> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
 **Key collaborations across Active Inference, Entomology, Cognitive Security, and Synergetics**
@@ -198,7 +198,7 @@ Friedman has conducted in-depth published interviews with leading researchers:
 | Arizona State University | Postdoctoral co-mentorship (Tim Linksvayer) |
 | VERSES AI Research Lab | Collaborations with Conor Heins and Tim Verbelen on Active Inference implementations |
 | Active Inference Institute | Co-founder, President, Treasurer; 501(c)(3) non-profit (2021–present) |
-| COGSEC.org | Founder |
+| COGSEC.org | Honorary co-founder |
 | ALIUS Research Group | Contributor — published interviews in *ALIUS Bulletin* (Dennett, Sapolsky, Hanks; co-authored with Friston) |
 | Santa Fe Institute | Participant in events and workshops |
 | Wonderfest | Speaker — Bay Area science education and public outreach |
@@ -211,7 +211,7 @@ Friedman has conducted in-depth published interviews with leading researchers:
 
 <div align="center">
 
-*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (114 works) · [PROFILE.md](PROFILE.md) for full biography*
+*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (115 works) · [PROFILE.md](PROFILE.md) for full biography*
 
 </div>
 

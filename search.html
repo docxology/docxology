@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search — Daniel Ari Friedman</title>
+    <meta name="description" content="Search Daniel Ari Friedman's works, software, research domains, collaborators, evidence, and public metadata.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/search.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Search — Daniel Ari Friedman">
+    <meta property="og:description" content="Search works, software, research domains, collaborators, evidence, and public metadata.">
+    <meta property="og:url" content="https://danielarifriedman.com/search.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#0c0c0e">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danielarifriedman.com/search.html#webpage",
+        "url": "https://danielarifriedman.com/search.html",
+        "name": "Search — Daniel Ari Friedman",
+        "description": "Search Daniel Ari Friedman's works, software, research domains, collaborators, evidence, and public metadata.",
+        "dateModified": "2026-05-13",
+        "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
+        "about": { "@id": "https://danielarifriedman.com/#person" }
+    }
+    </script>
+    <style>
+        .search-shell{max-width:1040px;margin:0 auto;padding:7rem 2rem 4rem}
+        .search-panel{display:grid;gap:1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
+        .search-input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font:inherit;font-size:1.05rem;padding:.8rem 1rem}
+        .search-controls{display:flex;gap:.5rem;flex-wrap:wrap}
+        .search-controls button{border:1px solid var(--border);background:var(--bg-glass);color:var(--text-secondary);border-radius:6px;padding:.4rem .75rem;font:inherit;font-size:.8rem;cursor:pointer}
+        .search-controls button.active{border-color:var(--gold);color:var(--gold)}
+        .result-list{display:grid;gap:.8rem;margin-top:1.5rem}
+        .result-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
+        .result-card h2{font-size:1.02rem;line-height:1.4;margin-bottom:.35rem}
+        .result-card p{color:var(--text-secondary);font-size:.86rem;line-height:1.6}
+        .result-meta{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.65rem;color:var(--text-muted);font-size:.72rem}
+        .result-meta span{border:1px solid var(--border);border-radius:999px;padding:.12rem .48rem}
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="works/">Works</a>
+            <a href="domains.html">Domains</a>
+            <a href="software.html">Software</a>
+            <a href="search.html" class="active">Search</a>
+            <a href="discovery.html">Discovery</a>
+        </div>
+    </nav>
+    <main id="main" class="search-shell">
+        <header class="section-header">
+            <h1>Search</h1>
+            <p>Works, software, domains, people, organizations, claims, and site metadata.</p>
+            <div class="section-divider"></div>
+        </header>
+        <section class="search-panel" aria-label="Site search">
+            <input id="q" class="search-input" type="search" autocomplete="off" placeholder="Search Active Inference, ants, Curio Cards, CEREBRUM..." autofocus>
+            <div id="filters" class="search-controls" aria-label="Result type filters"></div>
+        </section>
+        <section class="result-list" id="results" aria-live="polite"></section>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="search-index.json">search-index.json</a> · <a href="opensearch.xml">OpenSearch</a></p>
+    </footer>
+    <script>
+        const state = { items: [], type: 'all', q: '' };
+        const params = new URLSearchParams(location.search);
+        const input = document.getElementById('q');
+        const filters = document.getElementById('filters');
+        const results = document.getElementById('results');
+        input.value = params.get('q') || '';
+        state.q = input.value;
+
+        function esc(value){
+            return String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        }
+
+        function score(item, terms){
+            const title = item.title.toLowerCase();
+            const content = item.content.toLowerCase();
+            let value = 0;
+            for (const term of terms){
+                if (title.includes(term)) value += 8;
+                if (content.includes(term)) value += 2;
+            }
+            if (item.type === 'work') value += 1;
+            return value;
+        }
+
+        function renderFilters(){
+            const types = ['all', ...Array.from(new Set(state.items.map(i => i.type))).sort()];
+            filters.innerHTML = types.map(type => `<button type="button" class="${type === state.type ? 'active' : ''}" data-type="${esc(type)}">${esc(type)}</button>`).join('');
+            filters.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+                state.type = btn.dataset.type;
+                render();
+            }));
+        }
+
+        function render(){
+            const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+            let matches = state.items;
+            if (state.type !== 'all') matches = matches.filter(item => item.type === state.type);
+            if (terms.length) matches = matches.map(item => ({item, rank: score(item, terms)})).filter(x => x.rank > 0).sort((a,b) => b.rank - a.rank).map(x => x.item);
+            else matches = matches.slice(0, 40);
+            matches = matches.slice(0, 80);
+            results.innerHTML = matches.map(item => {
+                const tags = (item.tags || []).filter(Boolean).slice(0, 5).map(tag => `<span>${esc(tag)}</span>`).join('');
+                return `<article class="result-card"><h2><a href="${esc(item.url)}">${esc(item.title)}</a></h2><p>${esc(item.summary || '')}</p><div class="result-meta"><span>${esc(item.type)}</span>${item.year ? `<span>${esc(item.year)}</span>` : ''}${tags}</div></article>`;
+            }).join('') || '<p class="text-center text-muted mt-2">No results.</p>';
+            const url = new URL(location.href);
+            if (state.q) url.searchParams.set('q', state.q); else url.searchParams.delete('q');
+            history.replaceState(null, '', url);
+        }
+
+        input.addEventListener('input', () => {
+            state.q = input.value;
+            render();
+        });
+
+        fetch('search-index.json')
+            .then(res => res.json())
+            .then(data => {
+                state.items = data.items || [];
+                renderFilters();
+                render();
+            })
+            .catch(() => {
+                results.innerHTML = '<p class="text-center text-muted mt-2">Search index unavailable.</p>';
+            });
+    </script>
+</body>
+</html>

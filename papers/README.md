@@ -5,7 +5,7 @@ Documentation index for all publications. Each folder contains:
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
 
-## Papers (107)
+## Papers (108)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -116,6 +116,7 @@ Documentation index for all publications. Each folder contains:
 | 105 | [2026_CognitiveCaseDiagrams](2026_CognitiveCaseDiagrams/) | ✅ | 2026 | CognitiveCaseDiagrams |
 | 106 | [2026_FEPLean](2026_FEPLean/) | ✅ | 2026 | FEPLean |
 | 107 | [2020_FacilitatorsCatechism](2020_FacilitatorsCatechism/) | ✅ | 2020 | FacilitatorsCatechism |
+| 108 | [2026_BlakeJiang](2026_BlakeJiang/) | ✅ | 2026 | BlakeJiang |
 
 ## Scripts
 

@@ -11,7 +11,7 @@
 
 ## Abstract
 
-> Curio Cards is the first art NFT project on Ethereum, launched in 2017, which established a new model for the creation and ownership of digital artwork. The project features contributions from seven diverse artists and introduces novel computational features that advance both art and its social aspects.
+> Curio Cards is recognized in NFT archaeology as an early art NFT project on Ethereum, launched in 2017, which helped establish a new model for the creation and ownership of digital artwork. The project features contributions from seven artists and introduces computational features that connect art and its social context.
 
 ## Keywords
 

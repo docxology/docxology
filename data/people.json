@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-05-13",
+  "people": [
+    {
+      "name": "Daniel Ari Friedman",
+      "role": "Computational biologist; cognitive scientist; President and Treasurer of the Active Inference Institute",
+      "orcid": "https://orcid.org/0000-0001-6232-9096",
+      "wikidata": "https://www.wikidata.org/wiki/Q138781444",
+      "homepage": "https://danielarifriedman.com/",
+      "github": "https://github.com/docxology"
+    },
+    {
+      "name": "Karl Friston",
+      "role": "Active Inference and Free Energy Principle collaborator",
+      "source": "pages/COLLABORATORS.md#karl-friston--ucl-london"
+    },
+    {
+      "name": "Deborah Gordon",
+      "role": "Stanford PhD advisor and ant collective behavior collaborator",
+      "source": "pages/COLLABORATORS.md#deborah-gordon--stanford-university"
+    },
+    {
+      "name": "Thomas Parr",
+      "role": "Active Inference collaborator and textbook co-author",
+      "source": "pages/COLLABORATORS.md#thomas-parr--ucl-london"
+    },
+    {
+      "name": "MJ Ramstead",
+      "role": "Active Inference and cognitive science collaborator",
+      "source": "pages/COLLABORATORS.md#maxwell-j-d-ramstead--mila--mcgill"
+    }
+  ]
+}

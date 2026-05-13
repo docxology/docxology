@@ -7,12 +7,12 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 # 📚 Complete Bibliography — Daniel Ari Friedman, PhD
 
-> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**114 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**115 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-812_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**96** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**97** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **114** works in the table below **·** **107** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **115** works in the table below **·** **108** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -152,6 +152,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 112 | 2026 | 🧠 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | *Active Inference Journal* | [10.5281/zenodo.19695260](https://doi.org/10.5281/zenodo.19695260) | [📁](../papers/2026_CognitiveCaseDiagrams/) |
 | 113 | 2026 | 🧠 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | *Active Inference Journal* | [10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234) | [📁](../papers/2026_FEPLean/) |
 | 114 | 2020 | 🛡️ | Paper | The Facilitator's Catechism | *Zenodo* | [10.5281/zenodo.4203765](https://doi.org/10.5281/zenodo.4203765) | [📁](../papers/2020_FacilitatorsCatechism/) |
+| 115 | 2026 | 🎨 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984) | [📁](../papers/2026_BlakeJiang/) |
 
 ---
 
@@ -198,8 +199,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🎨 Art & Synergetics
 
-> 14 works (2018–2026)
+> 15 works (2018–2026)
 
+- **2026** — The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision · [📁](../papers/2026_BlakeJiang/)
 - **2026** — Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology · [📁](../papers/2026_BeforePragmatism/)
 - **2026** — The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing · [📁](../papers/2026_DoorsOfPerception/)
 - **2025** — On Cognitive Art & Science: Toward Wholeness From Both Sides · [📁](../papers/2025_CognitiveArtScience/)

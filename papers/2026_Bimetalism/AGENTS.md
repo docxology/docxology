@@ -10,7 +10,7 @@
 
 ### 📖 ARCHIVIST
 
-- Integrated [2026_Bimetalism](file:///Users/4d/Documents/GitHub/docxology/papers/2026_Bimetalism) into unified bibliography.
+- Integrated [2026_Bimetalism](.) into unified bibliography.
 - Verified DOI [10.5281/zenodo.19335196](https://doi.org/10.5281/zenodo.19335196).
 
 ### 🔬 RESEARCHER

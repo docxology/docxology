@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cite & Verify — Daniel Ari Friedman</title>
+    <meta name="description" content="Preferred citation metadata, public identifiers, bibliography exports, and source-of-truth rules for Daniel Ari Friedman and docxology.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/cite-verify.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cite & Verify — Daniel Ari Friedman">
+    <meta property="og:description" content="Preferred citation metadata, public identifiers, bibliography exports, and source-of-truth rules.">
+    <meta property="og:url" content="https://danielarifriedman.com/cite-verify.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#0c0c0e">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="software.html">Software</a>
+            <a href="search.html">Search</a>
+            <a href="discovery.html">Discovery</a>
+            <a href="cite-verify.html" class="active">Cite</a>
+        </div>
+    </nav>
+    <header class="page-hero">
+        <h1>🧾 Cite &amp; Verify</h1>
+        <p class="sub">Preferred citation metadata, public identifiers, bibliography exports, and source-of-truth rules.</p>
+    </header>
+    <main id="main" class="main">
+        <section class="section">
+            <div class="section-header"><h2>Repository Citation</h2><div class="section-divider"></div></div>
+            <div class="card">
+                <p>Friedman, Daniel Ari. <em>docxology: Daniel Ari Friedman public research and software index</em>. 2026. <a href="https://github.com/docxology/docxology">github.com/docxology/docxology</a></p>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Exports</h2><p>Citation-manager and agent-facing formats generated from the curated bibliography.</p><div class="section-divider"></div></div>
+            <div class="cards cards-3">
+                <a class="card" href="CITATION.cff"><h3>CITATION.cff</h3><p>Repository citation metadata.</p></a>
+                <a class="card" href="bibliography.bib"><h3>BibTeX</h3><p>LaTeX, BibTeX, Pandoc, and citation managers.</p></a>
+                <a class="card" href="bibliography.csl.json"><h3>CSL JSON</h3><p>citeproc, Pandoc, and structured citation workflows.</p></a>
+                <a class="card" href="bibliography.ris"><h3>RIS</h3><p>Zotero, EndNote, and Mendeley-style imports.</p></a>
+                <a class="card" href="data/works.json"><h3>Works JSON</h3><p>Structured 115-work bibliography export.</p></a>
+                <a class="card" href="codemeta.json"><h3>CodeMeta</h3><p>Machine-readable software/source metadata.</p></a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header"><h2>Verify</h2><p>Use curated local files first, then public APIs as freshness checks.</p><div class="section-divider"></div></div>
+            <div class="card">
+                <ul>
+                    <li><a href="pages/BIBLIOGRAPHY.md">BIBLIOGRAPHY.md</a> is the curated publication source of truth.</li>
+                    <li><a href="pages/SOFTWARE.md">SOFTWARE.md</a> is the curated software catalog.</li>
+                    <li><a href="discovery.html">discovery.html</a> lists public APIs and query recipes.</li>
+                    <li><a href="evidence.html">evidence.html</a> tracks key claims, sources, confidence, and caveats.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
+        <div class="footer-links"><a href="publications.html">Publications</a><a href="discovery.html">Discovery</a><a href="pages/CITE_VERIFY.md">Markdown</a><a href="https://github.com/docxology/docxology">Source Repo</a></div>
+    </footer>
+</body>
+</html>

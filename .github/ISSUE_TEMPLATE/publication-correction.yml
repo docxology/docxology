@@ -1,0 +1,26 @@
+name: Publication correction
+description: Report a bibliography, DOI, venue, or paper-folder correction.
+title: "Publication correction: "
+labels: ["bibliography", "correction"]
+body:
+  - type: input
+    id: work
+    attributes:
+      label: Work title or catalog row
+      description: Which publication or bibliography row needs attention?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction
+      description: Describe the inaccurate or incomplete metadata.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: DOI, publisher page, ORCID record, PubMed record, Zenodo record, or other public source.
+    validations:
+      required: false

@@ -18,6 +18,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -114,11 +118,13 @@
 
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
         <div class="nav-links">
             <a href="index.html#about">About</a>
             <a href="index.html#research">Research</a>
             <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="discovery.html">Discovery</a>
             <a href="index.html#art">Art</a>
             <a href="media.html">Media</a>
             <a href="index.html#teaching">Teaching</a>
@@ -206,10 +212,12 @@
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="discovery.html">Discovery</a>
             <a href="software.html">Software</a>
             <a href="https://github.com/docxology/docxology/blob/main/pages/COLLABORATORS.md">Raw Markdown</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">Last updated: April 2026</p>
+        <p class="text-center text-sm text-muted mt-1">Last updated: May 2026</p>
     </footer>
 </body>
 </html>

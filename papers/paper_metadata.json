@@ -1947,5 +1947,37 @@
       "LLM-ITP",
       "reproducible research"
     ]
+  },
+  "2026_BlakeJiang": {
+    "year": "2026",
+    "topic": "BlakeJiang",
+    "name": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+    "description": "Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified is closure of the perceiving system around its own top-down expectations, which Blake termed Newton's Sleep, Jiang calls consciousness capture, and Active Inference designates as pathological prior dominance. The work maps Jiang's concepts, including persuasion machinery, data sanitization, edge-case suppression, and engagement directives, onto Blake's cosmological schema and Active Inference's generative models.",
+    "tags": [
+      "william-blake",
+      "active-inference",
+      "artificial-intelligence",
+      "cognitive-science",
+      "free-energy-principle",
+      "ai-architecture",
+      "consciousness-capture",
+      "generative-models",
+      "newtons-sleep",
+      "single-vision"
+    ],
+    "keywords": [
+      "William Blake",
+      "Active Inference",
+      "Artificial Intelligence",
+      "Cognitive Science",
+      "Free Energy Principle",
+      "AI Architecture",
+      "Consciousness Capture",
+      "Generative Models",
+      "Newton's Sleep",
+      "Single Vision"
+    ]
   }
 }

@@ -5,10 +5,10 @@ keywords: "Daniel Ari Friedman, active inference, VIDEOS"
 ---
 # Videos & Media
 
-> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
-This page serves as a master index for all public video series, livestreams, courses, and interviews. While the root [MEDIA.md](../MEDIA.md) file contains high-level conference presentations, this document focuses specifically on serialized video content and ongoing educational streams.
+This page serves as a master index for all public video series, livestreams, courses, and interviews. While [MEDIA.md](MEDIA.md) contains high-level conference presentations, this document focuses specifically on serialized video content and ongoing educational streams.
 
 ## Ongoing Series
 
@@ -30,11 +30,11 @@ Structured cohorts walking through the fundamentals of the Free Energy Principle
 
 ### University Lectures
 Course lectures spanning from basic biology to specialized entomology and computational neuroscience models.
-- **BIOL-1 / BIOL-8**: Select recordings and associated laboratory dashboards (see [cr-bio](../SOFTWARE.md)).
+- **BIOL-1 / BIOL-8**: Select recordings and associated laboratory dashboards (see [cr-bio](SOFTWARE.md)).
 
 ---
 
-*For detailed conference talks, formal keynotes, and press features, see [MEDIA.md](../MEDIA.md).*
+*For detailed conference talks, formal keynotes, and press features, see [MEDIA.md](MEDIA.md).*
 
 
 ---

@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 107 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 108 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (107 entries as of 2026-05-04)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (108 entries as of 2026-05-13)
 
 ### 🔬 RESEARCHER
 
@@ -32,7 +32,7 @@
 - Links each paper folder to its BIBLIOGRAPHY.md entry and DOI
 - Maps papers to associated software repositories in SOFTWARE.md
 - Connects related papers across domains
-- When the unified bibliography count or table order changes, run [`sync_publications_html.py`](papers/sync_publications_html.py) so `publications.html` **PUBS** and JSON-LD **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md).
+- When the unified bibliography count or table order changes, run [`sync_publications_html.py`](sync_publications_html.py) so `publications.html` **PUBS** and JSON-LD **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md).
 
 ---
 
@@ -47,9 +47,9 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 107/107 folders (last verified 2026-05-04) |
-| AGENTS.md present | 107/107 |
-| SKILL.md present | 107/107 |
+| README.md present | 108/108 folders (last verified 2026-05-13) |
+| AGENTS.md present | 108/108 |
+| SKILL.md present | 108/108 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -64,13 +64,13 @@
 | 🐜 Entomology | 21 | `2026_EntoLinguistics`, `2025_AntStack`, `2021_ActiveInferants`, `2019_PhDDissertation` |
 | 🧠 Active Inference | 23 | `2026_FEPLean`, `2026_CognitiveCaseDiagrams`, `2026_FocusedAttentionMeditation`, `2026_ActInfMetaAnalysis`, `2025_CEREBRUM` |
 | 🛡️ Cognitive Security | 20 | `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
-| 🎨 Art & Synergetics | 14 | `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
+| 🎨 Art & Synergetics | 15 | `2026_BlakeJiang`, `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
 | 🧬 Genetics & Biomedical | 9 | `2015_HoneyBeeEvolution`, `2016_NuclearStructure` |
 | 💻 Computational | 7 | `2026_ReproducibleResearch`, `2025_DiscoveryEngine`, `2025_MDKV` |
 | 🌍 AII Ecosystem | 5 | `2025_AII_v3`, `2024_OntologySUMO` |
 | 🎥 Presentations & Media | 15 | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
 
-Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 114 total as of the table header).
+Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 115 total as of the table header).
 
 ---
 
@@ -89,3 +89,4 @@ Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIO
 | 2026-04-25 | MAINTAINER | AGENTS: PDF tracking defers to README index column; log aligned with root doc sync (teaching / hub counts) | ✅ |
 | 2026-05-04 | INTEGRATOR | Domain **Works** table + `sync_publications_html.py` in pipeline; PUBS/mainEntity sync script landed | ✅ |
 | 2026-05-12 | MAINTAINER | Repo-wide doc audit; this AGENTS.md domain breakdown matches `pages/BIBLIOGRAPHY.md` ground truth (21/23/20/14/9/7/5/15 = 114); spot-checked `2026_FocusedAttentionMeditation` per-paper docs (README/AGENTS/SKILL present, no PDF as expected) | ✅ |
+| 2026-05-13 | ARCHIVIST | Added `2026_BlakeJiang` (DOI 10.5281/zenodo.20144984); Art & Synergetics 14→15; bibliography 114→115; paper folders and metadata 107→108 | ✅ |

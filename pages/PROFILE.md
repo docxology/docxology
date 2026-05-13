@@ -7,7 +7,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 # Daniel Ari Friedman, PhD
 
-> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
 **Scientist · Artist · Philosopher · Educator**
@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and pioneering NFT art on the Ethereum blockchain. His work has garnered **812 citations** on Google Scholar (h-index: 15, i10-index: 17) across **107** indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **114** works including books, presentations, and recent deposits not yet reflected on Scholar.
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **812 citations** on Google Scholar (h-index: 15, i10-index: 17) across **107** indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **115** works including books, presentations, and recent deposits not yet reflected on Scholar.
 
 ---
 
@@ -33,7 +33,7 @@ Stanford University, Stanford, CA
 Advisor: Professor Deborah M. Gordon
 Thesis: *Behavioral, Physiological, and Transcriptomic Variation Among Colonies of the Red Harvester Ant (Pogonomyrmex barbatus)*
 [Stanford Digital Repository](http://purl.stanford.edu/pb813wm1484)
-Field research conducted at [Jasper Ridge Biological Preserve](https://jrbp.stanford.edu/content/ant-survey-participants) (ant surveys 2014–2015) and a long-term field site in New Mexico
+Field research conducted at [Jasper Ridge Biological Preserve](https://jrbp.stanford.edu/) and a long-term field site in New Mexico
 
 **NSF Postdoctoral Research Fellowship in Biology** (2020–2023)
 UC Davis, Department of Entomology & Nematology
@@ -57,11 +57,11 @@ As principal investigator and president of the Active Inference Institute, Fried
 
 ### Cognitive Security & Information Ecosystems
 
-Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education Forum, informally founded 2018 by RJ Cordes, with Friedman as honorary co-founder by 2019), Friedman has authored 19+ papers and 3 books on narrative security, digital rhetoric, information commons, and formal multi-agent security frameworks. Notable COGSEC volumes include *The Great Preset* (IRT-20, 2020), *Narrative Information Ecosystems* (NIM-21, 2021), *Structuring the Information Commons* (CAT-22, 2022), and *ATLAS* (2023–2024) — a question-oriented approach to pattern languages for knowledge management. Core frameworks include **P3IF** (Properties, Processes, and Perspectives Inter-Framework) for multiplexing interdisciplinary requirements frameworks ([DOI 10.5281/zenodo.7093837](https://doi.org/10.5281/zenodo.7093837)), developed in affiliation with DHS Office of Health Security, UW Applied Physics Lab, Pivot for Humanity, and UC Davis; and the **Cognitive Integrity Framework** for formal multiagent security foundations ([DOI 10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119)). This work applies Active Inference and complexity science to understand and improve information ecosystems — from trust systems and cognitive sovereignty to AI accountability.
+Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education Forum, informally founded 2018 by RJ Cordes, with Friedman as honorary co-founder by 2019), Friedman has authored 17 papers and 3 books in the unified bibliography on narrative security, digital rhetoric, information commons, and formal multi-agent security frameworks. Notable COGSEC volumes include *The Great Preset* (IRT-20, 2020), *Narrative Information Ecosystems* (NIM-21, 2021), *Structuring the Information Commons* (CAT-22, 2022), and *ATLAS* (2023–2024) — a question-oriented approach to pattern languages for knowledge management. Core frameworks include **P3IF** (Properties, Processes, and Perspectives Inter-Framework) for multiplexing interdisciplinary requirements frameworks ([DOI 10.5281/zenodo.7093837](https://doi.org/10.5281/zenodo.7093837)), developed in affiliation with DHS Office of Health Security, UW Applied Physics Lab, Pivot for Humanity, and UC Davis; and the **Cognitive Integrity Framework** for formal multiagent security foundations ([DOI 10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119)). This work applies Active Inference and complexity science to understand and improve information ecosystems — from trust systems and cognitive sovereignty to AI accountability.
 
 ### Art, Philosophy & Synergetics
 
-Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). On May 9, 2017, three of his pen drawings were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks:
+Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). On May 9, 2017, three of his pen drawings were included in the Curio Cards project, recognized in NFT archaeology as an early Ethereum art NFT collection predating CryptoPunks by approximately six weeks:
 
 - **Card 24** — "Complexity" (333 copies): fragmented geometric fields inspired by brains, ant colonies, and complex systems
 - **Card 25** — (222 copies): rhythmic patterns exploring complexity, passion, and education
@@ -129,9 +129,9 @@ Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **B
 
 ## Visual Art & NFT Contributions
 
-Friedman's visual art practice encompasses high-investment black-and-white abstract pen drawings (10–20 hours each) and rapid experimental works incorporating words, symbols, and colors. His artistic work explores the relationship between scientific thinking and creative expression — a theme formalized in his paper "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement" published in *Arts*.
+Friedman's visual art practice encompasses detailed black-and-white abstract pen drawings and rapid experimental works incorporating words, symbols, and colors. His artistic work explores the relationship between scientific thinking and creative expression — a theme formalized in his paper "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement" published in *Arts*.
 
-On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project — the first art NFT collection on the Ethereum mainnet, predating CryptoPunks by approximately six weeks. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint was auctioned at Christie's on October 1, 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
+On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project, recognized in NFT archaeology as an early Ethereum art NFT collection predating CryptoPunks by approximately six weeks. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint was auctioned at Christie's on October 1, 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
 
 **Art portfolio**: [Local Gallery](../art/README.md) · [danielarifriedman.com/art.html](https://danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
 
@@ -161,14 +161,14 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 
 | Metric | Count |
 |--------|-------|
-| Works (unified bibliography) | [114](BIBLIOGRAPHY.md) |
+| Works (unified bibliography) | [115](BIBLIOGRAPHY.md) |
 | Google Scholar indexed publications | 107 |
 | Google Scholar Citations | 812 |
 | h-index | 15 |
 | i10-index | 17 |
 | Citations since 2021 | 495 |
 | Open-Source Repositories (owned, catalogued) | 48 |
-| GitHub Public Repositories (total) | 251 |
+| GitHub Public Repositories (total) | 286 |
 | Active Inference Institute Repos (catalogued) | 32 |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |
@@ -178,9 +178,26 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 
 ---
 
+## Public Research Graph
+
+The curated bibliography remains the source of truth for this repository. Public indexes are useful for discovery, but they count different objects: journal articles, DOI records, preprints, software archives, and versioned deposits.
+
+| Source | Public Snapshot |
+|--------|-----------------|
+| [ORCID](https://orcid.org/0000-0001-6232-9096) | 20 public work groups |
+| [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | 8 exact-author biomedical records |
+| [Europe PMC](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | 10 exact-author results, including preprints |
+| [Crossref](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | 15 DOI records attached to the ORCID |
+| [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 36 exact-name records; 82 ORCID-linked versioned records and software archives |
+| [GitHub](https://github.com/docxology) | 286 public repositories on the primary profile |
+
+See [DISCOVERY.md](DISCOVERY.md) for canonical IDs, API endpoints, query recipes, and verification notes.
+
+---
+
 ## Links
 
-See [LINKS.md](LINKS.md) for all web presences · [COLLABORATORS.md](COLLABORATORS.md) for the research network · [MEDIA.md](MEDIA.md) for talks, podcasts, and press.
+See [LINKS.md](LINKS.md) for all web presences · [DISCOVERY.md](DISCOVERY.md) for source-discovery queries · [COLLABORATORS.md](COLLABORATORS.md) for the research network · [MEDIA.md](MEDIA.md) for talks, podcasts, and press.
 
 ---
 

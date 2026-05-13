@@ -1,0 +1,807 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "pages/SOFTWARE.md",
+  "count": 80,
+  "repositories": [
+    {
+      "name": "QuadCraft",
+      "url": "https://github.com/docxology/QuadCraft",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
+      "language": "JavaScript",
+      "stars": 8,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "template",
+      "url": "https://github.com/docxology/template",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
+      "language": "Python",
+      "stars": 7,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "MetaInformAnt",
+      "url": "https://github.com/docxology/MetaInformAnt",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond",
+      "language": "Python",
+      "stars": 5,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "codomyrmex",
+      "url": "https://github.com/docxology/codomyrmex",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "AI-native modular coding workspace — 127 modules, 424 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "cognitive-engine",
+      "url": "https://github.com/docxology/cognitive-engine",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "opentir",
+      "url": "https://github.com/docxology/opentir",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2025-11"
+    },
+    {
+      "name": "timeline_generator",
+      "url": "https://github.com/docxology/timeline_generator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
+      "language": "TypeScript",
+      "stars": 3,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "FORMINDEX",
+      "url": "https://github.com/docxology/FORMINDEX",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation",
+      "language": "Rich Text Format",
+      "stars": 3,
+      "updated_or_year": "2024-10"
+    },
+    {
+      "name": "ActiveInferAnts",
+      "url": "https://github.com/docxology/ActiveInferAnts",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2024-04"
+    },
+    {
+      "name": "crescent-city",
+      "url": "https://github.com/docxology/crescent-city",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "End-to-end pipeline for ingesting, parsing, and querying the Crescent City, CA municipal code; TypeScript-based legal-text processing",
+      "language": "TypeScript",
+      "stars": 2,
+      "updated_or_year": "2026-02"
+    },
+    {
+      "name": "ivm-xyz",
+      "url": "https://github.com/docxology/ivm-xyz",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2025-11"
+    },
+    {
+      "name": "Markov_Blanket_Detection",
+      "url": "https://github.com/docxology/Markov_Blanket_Detection",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Dynamic Markov Blanket Detection (DMBD) — PyTorch-accelerated framework for identifying causal relationships in complex systems; static and temporal modes with cognitive-structure labeling",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2025-06"
+    },
+    {
+      "name": "QuadMath",
+      "url": "https://github.com/docxology/QuadMath",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library",
+      "language": "TeX",
+      "stars": 2,
+      "updated_or_year": "2026-02"
+    },
+    {
+      "name": "active_inference",
+      "url": "https://github.com/docxology/active_inference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-11"
+    },
+    {
+      "name": "AgenticMesh",
+      "url": "https://github.com/docxology/AgenticMesh",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-02"
+    },
+    {
+      "name": "curriculum",
+      "url": "https://github.com/docxology/curriculum",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2026-01"
+    },
+    {
+      "name": "lean_niche",
+      "url": "https://github.com/docxology/lean_niche",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-08"
+    },
+    {
+      "name": "literature",
+      "url": "https://github.com/docxology/literature",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-12"
+    },
+    {
+      "name": "obsidian-construction-from-text",
+      "url": "https://github.com/docxology/obsidian-construction-from-text",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-03"
+    },
+    {
+      "name": "qr_live_protocol",
+      "url": "https://github.com/docxology/qr_live_protocol",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "QR code-based live protocol system for real-time data exchange and interactive session management",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-10"
+    },
+    {
+      "name": "ultralink-docx",
+      "url": "https://github.com/docxology/ultralink-docx",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2025-03"
+    },
+    {
+      "name": "cognitive",
+      "url": "https://github.com/docxology/cognitive",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
+      "language": "Python",
+      "stars": 13,
+      "updated_or_year": "2025-09"
+    },
+    {
+      "name": "active_torchference",
+      "url": "https://github.com/docxology/active_torchference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10"
+    },
+    {
+      "name": "ant-pheromone",
+      "url": "https://github.com/docxology/ant-pheromone",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Computational simulation of ant pheromone trail dynamics and stigmergic communication",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2022-09"
+    },
+    {
+      "name": "ant_stack",
+      "url": "https://github.com/docxology/ant_stack",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "The Ant Stack — layered computational model of collective ant-colony intelligence",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-09"
+    },
+    {
+      "name": "ento_linguistics",
+      "url": "https://github.com/docxology/ento_linguistics",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-04"
+    },
+    {
+      "name": "cognitive_case_diagrams",
+      "url": "https://github.com/docxology/cognitive_case_diagrams",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-04"
+    },
+    {
+      "name": "Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+      "url": "https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2025-04"
+    },
+    {
+      "name": "biol-1",
+      "url": "https://github.com/docxology/biol-1",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "biol-8",
+      "url": "https://github.com/docxology/biol-8",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "cascadia",
+      "url": "https://github.com/docxology/cascadia",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cascadia bioregion modeling and data analysis tools",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-08"
+    },
+    {
+      "name": "course",
+      "url": "https://github.com/docxology/course",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Course materials framework for structured interdisciplinary learning modules",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-12"
+    },
+    {
+      "name": "enactive_inference_model",
+      "url": "https://github.com/docxology/enactive_inference_model",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-02"
+    },
+    {
+      "name": "EvoJump",
+      "url": "https://github.com/docxology/EvoJump",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10"
+    },
+    {
+      "name": "flick",
+      "url": "https://github.com/docxology/flick",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Lightweight Python tooling for rapid data flicking and processing pipelines",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-03"
+    },
+    {
+      "name": "fuller-obsidian",
+      "url": "https://github.com/docxology/fuller-obsidian",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2025-02"
+    },
+    {
+      "name": "godel_ivm",
+      "url": "https://github.com/docxology/godel_ivm",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10"
+    },
+    {
+      "name": "goference",
+      "url": "https://github.com/docxology/goference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum",
+      "language": "Go",
+      "stars": 0,
+      "updated_or_year": "2025-09"
+    },
+    {
+      "name": "hhs-opendata",
+      "url": "https://github.com/docxology/hhs-opendata",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-02"
+    },
+    {
+      "name": "infra-calc",
+      "url": "https://github.com/docxology/infra-calc",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems",
+      "language": "JavaScript",
+      "stars": 0,
+      "updated_or_year": "2025-05"
+    },
+    {
+      "name": "markdown_decision_process",
+      "url": "https://github.com/docxology/markdown_decision_process",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10"
+    },
+    {
+      "name": "mdkv",
+      "url": "https://github.com/docxology/mdkv",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-08"
+    },
+    {
+      "name": "p3if",
+      "url": "https://github.com/docxology/p3if",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-01"
+    },
+    {
+      "name": "service",
+      "url": "https://github.com/docxology/service",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Service-layer infrastructure and API tooling for Python-based research applications",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-05"
+    },
+    {
+      "name": "snake",
+      "url": "https://github.com/docxology/snake",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-11"
+    },
+    {
+      "name": "steganographer",
+      "url": "https://github.com/docxology/steganographer",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+      "language": "Rust",
+      "stars": 0,
+      "updated_or_year": "2026-03"
+    },
+    {
+      "name": "symergetics",
+      "url": "https://github.com/docxology/symergetics",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-09"
+    },
+    {
+      "name": "transformer",
+      "url": "https://github.com/docxology/transformer",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10"
+    },
+    {
+      "name": "ActiveInferenceJournal",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
+      "language": "HTML",
+      "stars": 42,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "ActiveBlockference",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework",
+      "language": "Jupyter",
+      "stars": 32,
+      "updated_or_year": "2023"
+    },
+    {
+      "name": "ActiveInferAnts",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
+      "language": "Python",
+      "stars": 28,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "GeneralizedNotationNotation",
+      "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
+      "language": "Python",
+      "stars": 24,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "FEP_Lean",
+      "url": "https://github.com/ActiveInferenceInstitute/FEP_Lean",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026"
+    },
+    {
+      "name": "cognitive",
+      "url": "https://github.com/ActiveInferenceInstitute/cognitive",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization",
+      "language": "Python",
+      "stars": 18,
+      "updated_or_year": "2025"
+    },
+    {
+      "name": "Active_Inference_Ontology",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts",
+      "language": "",
+      "stars": 13,
+      "updated_or_year": "2023"
+    },
+    {
+      "name": "Journal-Utilities",
+      "url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
+      "language": "HTML",
+      "stars": 11,
+      "updated_or_year": "2026"
+    },
+    {
+      "name": "Symposium",
+      "url": "https://github.com/ActiveInferenceInstitute/Symposium",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia",
+      "language": "Python",
+      "stars": 11,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "ActiveInferenceCategoryTheory",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory",
+      "language": "",
+      "stars": 10,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "CEREBRUM",
+      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+      "language": "Python",
+      "stars": 12,
+      "updated_or_year": "2025"
+    },
+    {
+      "name": "GEO-INFER",
+      "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
+      "language": "HTML",
+      "stars": 9,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "AEOS",
+      "url": "https://github.com/ActiveInferenceInstitute/AEOS",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models",
+      "language": "",
+      "stars": 8,
+      "updated_or_year": "2022"
+    },
+    {
+      "name": "courses",
+      "url": "https://github.com/ActiveInferenceInstitute/courses",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts",
+      "language": "HTML",
+      "stars": 8,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "Research-Discovery-Engine",
+      "url": "https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature",
+      "language": "HTML",
+      "stars": 6,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "Parr_et_al_2022_ActInf_Textbook",
+      "url": "https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)",
+      "language": "Julia",
+      "stars": 6,
+      "updated_or_year": "2023"
+    },
+    {
+      "name": "Biofirm",
+      "url": "https://github.com/ActiveInferenceInstitute/Biofirm",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems",
+      "language": "Python",
+      "stars": 5,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "Start",
+      "url": "https://github.com/ActiveInferenceInstitute/Start",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants",
+      "language": "Python",
+      "stars": 5,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "Knowledge-Engineering",
+      "url": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
+      "language": "Jupyter",
+      "stars": 4,
+      "updated_or_year": "2022"
+    },
+    {
+      "name": "ActInf_RxInfer",
+      "url": "https://github.com/ActiveInferenceInstitute/ActInf_RxInfer",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models",
+      "language": "",
+      "stars": 2,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "pymcp",
+      "url": "https://github.com/ActiveInferenceInstitute/pymcp",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2025"
+    },
+    {
+      "name": "GEN24",
+      "url": "https://github.com/ActiveInferenceInstitute/GEN24",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort",
+      "language": "Jupyter",
+      "stars": 1,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "NoOrg",
+      "url": "https://github.com/ActiveInferenceInstitute/NoOrg",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "ultralink",
+      "url": "https://github.com/ActiveInferenceInstitute/ultralink",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
+      "language": "",
+      "stars": 1,
+      "updated_or_year": "2025"
+    },
+    {
+      "name": "ActiveInferenceImplementations",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles",
+      "language": "Jupyter",
+      "stars": 0,
+      "updated_or_year": "2022"
+    },
+    {
+      "name": "ATLAS",
+      "url": "https://github.com/ActiveInferenceInstitute/ATLAS",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025"
+    },
+    {
+      "name": "Bots",
+      "url": "https://github.com/ActiveInferenceInstitute/Bots",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2022"
+    },
+    {
+      "name": "Garden-of-Iris",
+      "url": "https://github.com/ActiveInferenceInstitute/Garden-of-Iris",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2023"
+    },
+    {
+      "name": "gen25",
+      "url": "https://github.com/ActiveInferenceInstitute/gen25",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2025"
+    },
+    {
+      "name": "gnn",
+      "url": "https://github.com/ActiveInferenceInstitute/gnn",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "ISSS",
+      "url": "https://github.com/ActiveInferenceInstitute/ISSS",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2024"
+    },
+    {
+      "name": "topp",
+      "url": "https://github.com/ActiveInferenceInstitute/topp",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2024"
+    }
+  ]
+}

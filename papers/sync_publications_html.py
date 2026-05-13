@@ -105,6 +105,12 @@ def _link(row: BiblioRow) -> str:
     return canonical_link_url(row.link_cell, row.venue)
 
 
+def _docs_url(row: BiblioRow) -> str:
+    if row.folder:
+        return f"https://github.com/docxology/docxology/tree/main/papers/{row.folder}"
+    return ""
+
+
 def pub_js_object(row: BiblioRow, link: str) -> str:
     year = int(row.year) if row.year.isdigit() else row.year
     parts = [
@@ -115,6 +121,9 @@ def pub_js_object(row: BiblioRow, link: str) -> str:
         f"title:{json.dumps(row.title, ensure_ascii=False)}",
         f"venue:{json.dumps(row.venue, ensure_ascii=False)}",
         f"doi:{json.dumps(link, ensure_ascii=False)}",
+        f"docs:{json.dumps(_docs_url(row), ensure_ascii=False)}",
+        f"hasDoi:{str(link.startswith('https://doi.org/')).lower()}",
+        f"hasDocs:{str(bool(row.folder)).lower()}",
     ]
     return "{" + ",".join(parts) + "}"
 

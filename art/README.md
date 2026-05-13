@@ -71,7 +71,7 @@ _The harder it is to make an alignment, the more informative the alignment is. _
 ## A. Rose
 _&quot;Ain't no way, to explain or say...&quot;_
 
-![A. Rose](13625477845_A_%20Rose.jpg)
+![A. Rose](<13625477845_A_ Rose.jpg>)
 
 ## Complexity
 _&quot;It's quite complicated and sounds circular, but we've worked out a way to calculate a Web site's importance.&quot;
@@ -114,7 +114,7 @@ _
 _&quot;Do what you will, this world's a fiction, and is made up, of contradiction.&quot; 
           -William Blake_
 
-![DNA Crystal Structure / Supernova](14073255591_DNA%20Crystal%20Structure%20_%20Supernova.jpg)
+![DNA Crystal Structure / Supernova](<14073255591_DNA Crystal Structure _ Supernova.jpg>)
 
 ## Recombination
 _DNA Recombination is key to many crucial biological processes. Recombination between chromosomes during sex cell production (meiosis) creates novel combinations of genes, and to many, is the &quot;Why?&quot; of Sex. Recombination between versions of the same gene (alleles) allows a kaleidoscope of DNA error-correcting mechanisms to proceed, and occurs countless times each second in your body. Recombination during immune cell differentiation allows the body to recognize an essentially infinite cohort of potential invaders. And now that recombination has been mechanistically deconvoluted, derived technologies facilitate DNA editing in both laboratory and in vivo settings. 
@@ -131,7 +131,7 @@ _The straightest of lines.....the empty page......
 &quot;What we feel and think and are is to a great extent determined by the state of our ductless glands and viscera.&quot;  -Aldous Huxley
 _
 
-![Body Energetic](14219923283_Body%20Energetic.jpg)
+![Body Energetic](<14219923283_Body Energetic.jpg>)
 
 ## Ego
 _Ego is constructed, endlessly insidious. 
@@ -217,7 +217,7 @@ _“Our nada who art in nada, nada be thy name thy kingdom nada thy will be nada
 “I do not think you can name many great inventions that have been made by married men.” 
 ― Nikola Tesla_
 
-![Sunya Hey](14500293878_Sunya%20Hey.jpg)
+![Sunya Hey](<14500293878_Sunya Hey.jpg>)
 
 ## Phylogenetic Vision
 _&quot;The real voyage of discovery consists of not in seeking new landscapes but in having new eyes.&quot; - Marcel Proust
@@ -228,7 +228,7 @@ _&quot;The real voyage of discovery consists of not in seeking new landscapes bu
 
 Ask yourself what there was before there were Four, before there were Two...._
 
-![Phylogenetic Vision](14542394682_Phylogenetic%20Vision.jpg)
+![Phylogenetic Vision](<14542394682_Phylogenetic Vision.jpg>)
 
 ## Systemic
 _“I should define the baroque as that style which deliberately exhausts (or tries to exhaust) all its own  possibilities and which borders on its own parody…I would say that the final stage of all styles is baroque when that style only too obviously exhibits or overdoes its own tricks.” 
@@ -272,7 +272,7 @@ The repairman seemed disappointed, but he kept right on talking. “There’s so
 “Not at all,” said the repairman. “I hope you find that bird.”
 Stuart rose from the ditch, climbed into his car, and started up the road that led toward the north. The sun was just coming up over the hills on his right. As he peered ahead into the great land that stretched before him, the way seemed long. But the sky was bright, and somehow he felt he was headed in the right direction.”_
 
-![Cellular Mobility](14630644406_Cellular%20Mobility.jpg)
+![Cellular Mobility](<14630644406_Cellular Mobility.jpg>)
 
 ## Decapentaplegic
 _“The snow goose need not bathe to make itself white. Neither need you do anything but be yourself.” ― Lao Tzu
@@ -323,7 +323,7 @@ _&quot;Personally, I could never get excited about this work - to me, it only se
 &quot;Well, how about that...&quot; M.T. 
 _
 
-![Quantitative Genetics](14898799381_Quantitative%20Genetics.jpg)
+![Quantitative Genetics](<14898799381_Quantitative Genetics.jpg>)
 
 ## Hexapod // Axiom
 _“The original question, 'Can machines think?' I believe to be too meaningless to deserve discussion.” 
@@ -346,7 +346,7 @@ _“The original question, 'Can machines think?' I believe to be too meaningless
 
 -Alan Turing_
 
-![Hexapod // Axiom](15133906075_Hexapod%20__%20Axiom.jpg)
+![Hexapod // Axiom](<15133906075_Hexapod __ Axiom.jpg>)
 
 ## Los Tuxtlas
 _Que chido!
@@ -361,7 +361,7 @@ _Que chido!
 
 “All that is seen is my form, ant, fly, prince, and pauper” - Sri Sathya Sai Baba _
 
-![Los Tuxtlas](15253690055_Los%20Tuxtlas.jpg)
+![Los Tuxtlas](<15253690055_Los Tuxtlas.jpg>)
 
 ## Air
 _&quot;If I were a gambler, I would take even money that England will not exist in the year 2000&quot; 
@@ -392,7 +392,7 @@ I still have two strong legs, and even wings to fly.&quot;
 
 _
 
-![Grad School pt. 1](15337336576_Grad%20School%20pt_%201.jpg)
+![Grad School pt. 1](<15337336576_Grad School pt_ 1.jpg>)
 
 ## Peace, Love, and Evolution
 _“There are poisons that blind you, and poisons that open your eyes.” 
@@ -410,7 +410,7 @@ peace, evolution and love&quot;
 &quot;It doesn't matter if the water is cold or warm if you're going to have to wade through it anyway.&quot; 
 ―Pierre Teilhard de Chardin  _
 
-![Peace, Love, and Evolution](15350252330_Peace_%20Love_%20and%20Evolution.jpg)
+![Peace, Love, and Evolution](<15350252330_Peace_ Love_ and Evolution.jpg>)
 
 ## Diatomaceous Earth
 _No one ever ragged on the kidney for being co-dependent!!
@@ -425,7 +425,7 @@ Only humankind does not know its own formula.&quot;
 — Ronald Reagan
 _
 
-![Diatomaceous Earth](15364293907_Diatomaceous%20Earth.jpg)
+![Diatomaceous Earth](<15364293907_Diatomaceous Earth.jpg>)
 
 ## Portrait of the Drosophila as a Young Fly
 _&quot;If the people knew what we had done, they would chase us down the street and lynch us.&quot; 
@@ -440,7 +440,7 @@ _&quot;If the people knew what we had done, they would chase us down the street 
 &quot;God, grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.&quot;
 —Reinhold Niebuhr_
 
-![Portrait of the Drosophila as a Young Fly](15417156373_Portrait%20of%20the%20Drosophila%20as%20a%20Young%20Fly.jpg)
+![Portrait of the Drosophila as a Young Fly](<15417156373_Portrait of the Drosophila as a Young Fly.jpg>)
 
 ## Hourglass
 _[pose the problem as being about the world, not the study of the world]
@@ -477,7 +477,7 @@ Horatio: &quot;Where, my lord?&quot;
 Hamlet: &quot;In my mind's eye, Horatio.&quot;
 _
 
-![Mitosis [ In Four Dimensions ]](15480633119_Mitosis%20_%20In%20Four%20Dimensions%20_.jpg)
+![Mitosis [ In Four Dimensions ]](<15480633119_Mitosis _ In Four Dimensions _.jpg>)
 
 ## Haplo-Diploidy
 _&quot;We cannot learn the cipher / That's writ upon our cell; / Stars help us by a mystery / Which we could never spell.&quot;
@@ -517,7 +517,7 @@ Output:
 One.
 _
 
-![Symbolic Language](15507943838_Symbolic%20Language.jpg)
+![Symbolic Language](<15507943838_Symbolic Language.jpg>)
 
 ## I, Ant
 _This is an Ant. Instead of Six legs, it has Four. Actually, instead of any legs at all, it has a capital letter &quot;I&quot; to symbolize the role of the&quot;individual&quot; and &quot;collective&quot; &quot;I&quot;dentity in the experience of the Ant. At all levels, the fractal &quot;I&quot; is made up of infinite multiplication and addition signs to represent the countless deterministic interactions that culminate in stochastic behavior at the organismal level. Since adding a negative number is subtraction, and since multiplying by a fraction is multiplying, the binary toolkit of addition and multiplication allows all other possible functions to be derived. So why choose &quot;+&quot; and &quot;x&quot; over &quot;-&quot; and &quot;÷&quot;? Subtraction and division signs could also be used to derive multiplication and addition - wouldn't that work work just as well? Technically yes, though Life chooses growth over decay every single time. Take a breath - this is quite circular logic - I believe that our category of &quot;living things&quot; is a polyphyletic grouping of all named (namable?) systems that (seem to) choose self-perpetuation over self-negation. 
@@ -532,7 +532,7 @@ And we haven't even touched group selection yet!
 
     &quot;Had I 8 hours to chop down a tree, I would spend 6 of those hours sharpening the axe.&quot; -Abraham Lincoln_
 
-![I, Ant](15542506640_I_%20Ant.jpg)
+![I, Ant](<15542506640_I_ Ant.jpg>)
 
 ## Stretch
 _&quot;The nightmare of materialism, which has turned the life of the universe into an evil, useless game, is not yet past; it holds the awakening soul still in its grip.&quot; 
@@ -573,7 +573,7 @@ And so on to viscosity.”
 ―LaDene Mayville
 _
 
-![Thelonious Parthenogenesis](15603411850_Thelonious%20Parthenogenesis.jpg)
+![Thelonious Parthenogenesis](<15603411850_Thelonious Parthenogenesis.jpg>)
 
 ## An "Ant" is a Colony (The Treachery of Images)
 _&quot;The rhythm of ant-watching is not determined by a series of
@@ -583,7 +583,7 @@ hypotheses, inferences and confirmations. Instead it is a rhythm of inattention,
 &quot;This shows that (now I am using the term ‘proving’ in the traditional sense) one does not prove what one sets out to prove. Therefore no proof should conclude with the words: ‘Quod erat demonstrandum.’&quot;
 -I. Lakatos_
 
-![An "Ant" is a Colony (The Treachery of Images)](15765770033_An%20_Ant_%20is%20a%20Colony%20_The%20Treachery%20of%20Images_.jpg)
+![An "Ant" is a Colony (The Treachery of Images)](<15765770033_An _Ant_ is a Colony _The Treachery of Images_.jpg>)
 
 ## The Dancing Girl
 _“Research is the highest form of adoration”
@@ -598,7 +598,7 @@ _“Research is the highest form of adoration”
 “Don't buy a single vote more than necessary. I'll be damned if I'm going to pay for a landslide.”
 ― Joseph P. Kennedy_
 
-![The Dancing Girl](15816330506_The%20Dancing%20Girl.jpg)
+![The Dancing Girl](<15816330506_The Dancing Girl.jpg>)
 
 ## Neural Network
 _“If this world is a poem, it is not because we see the meaning of it at first but on the strength of its chance occurrences and paradoxes.&quot;
@@ -611,7 +611,7 @@ _“If this world is a poem, it is not because we see the meaning of it at first
 
 1,2,3,4,6,8,9,12,18,24,36,72._
 
-![Neural Network](15839676911_Neural%20Network.jpg)
+![Neural Network](<15839676911_Neural Network.jpg>)
 
 ## Enantiostasis
 _If the Mind and the Body are One, then what is an &quot;out-of-body&quot; experience? While the Mind takes leave from Body, does Body have an &quot;out-of-mind&quot; experience? Which episode would the &quot;I&quot; remember? Why should it be that way? How could you test this? 
@@ -637,7 +637,7 @@ _“Progress has not followed a straight ascending line, but a spiral with rhyth
 &quot;A black cat crossing your path signifies that the animal is going somewhere.&quot;
 - Groucho Marx_
 
-![Loop d'Loop](16019016170_Loop%20d_Loop.jpg)
+![Loop d'Loop](<16019016170_Loop d_Loop.jpg>)
 
 ## Statistical Monsters
 _&quot;There is nothing worse than a sharp image of a fuzzy concept.&quot;
@@ -648,7 +648,7 @@ _&quot;There is nothing worse than a sharp image of a fuzzy concept.&quot;
 
 -Ansel Adams_
 
-![Statistical Monsters](16019977666_Statistical%20Monsters.jpg)
+![Statistical Monsters](<16019977666_Statistical Monsters.jpg>)
 
 ## From Reductionism to Holism
 _“Life is not a problem to be solved, but a reality to be experienced.”
@@ -660,7 +660,7 @@ _“Life is not a problem to be solved, but a reality to be experienced.”
 “Freedom (n.): To ask nothing. To expect nothing. To depend on nothing.”
 ― Ayn Rand, The Fountainhead _
 
-![From Reductionism to Holism](16054286549_From%20Reductionism%20to%20Holism.jpg)
+![From Reductionism to Holism](<16054286549_From Reductionism to Holism.jpg>)
 
 ## Holidaze
 _&quot;Imagine a vast sheet of paper on which straight Lines, Triangles, Squares, Pentagons, Hexagons, and other figures, instead of remaining fixed in their places, move freely about, on or in the surface, but without the power of rising above or sinking below it, very much like shadows—only hard with luminous edges—and you will then have a pretty correct notion of my country and countrymen. Alas, a few years ago, I should have said &quot;my universe:&quot; but now my mind has been opened to higher views of things. In such a country, you will perceive at once that it is impossible that there should be anything of what you call a &quot;solid&quot; kind; but I dare say you will suppose that we could at least distinguish by sight the Triangles, Squares, and other figures, moving about as I have described them. On the contrary, we could see nothing of the kind, not at least so as to distinguish one figure from another. Nothing was visible, nor could be visible, to us, except Straight Lines; and the necessity of this I will speedily demonstrate.&quot;
@@ -730,7 +730,7 @@ O Demonstrations of Reason Dividing Families in Cruelty &amp; Pride!&quot;
 
 -William Blake, Jerusalem_
 
-![Chromatin State of Mind](16356560791_Chromatin%20State%20of%20Mind.jpg)
+![Chromatin State of Mind](<16356560791_Chromatin State of Mind.jpg>)
 
 ## Collective Behavior
 _&quot;Color provokes a psychic vibration. Color hides a power still unknown but real, which acts on every part of the human body...The sound of colors is so definite that it would be hard to find anyone who would express bright yellow with bass notes or dark lake with treble...Color is a means of exerting direct influence on the soul.&quot;
@@ -743,7 +743,7 @@ _&quot;Color provokes a psychic vibration. Color hides a power still unknown but
 
 --W. Kandinsky_
 
-![Collective Behavior](16452408937_Collective%20Behavior.jpg)
+![Collective Behavior](<16452408937_Collective Behavior.jpg>)
 
 ## Autopoesis
 _Questioner: 
@@ -762,7 +762,7 @@ A true heart can tough the poison of hatred without being harmed.....
 Since beginningless time, darkness thrives in the void, but always yields to purifying light.....
 _
 
-![Lion Turtle](16522842127_Lion%20Turtle.jpg)
+![Lion Turtle](<16522842127_Lion Turtle.jpg>)
 
 ## Circular Automaton
 _&quot;With a gentleman I am always a gentleman and a half, and with a fraud I try to be a fraud and a half.&quot;
@@ -773,7 +773,7 @@ _&quot;With a gentleman I am always a gentleman and a half, and with a fraud I t
 
 -Otto von Bismarck_
 
-![Circular Automaton](16525229314_Circular%20Automaton.jpg)
+![Circular Automaton](<16525229314_Circular Automaton.jpg>)
 
 ## Helicobacter pylori
 _&quot;A designer is an emerging synthesis of artist, inventor, mechanic, objective economist and evolutionary strategist.&quot;
@@ -788,7 +788,7 @@ You're eternally lovely - the truly you.&quot;
 
 -Bucky Fuller_
 
-![Helicobacter pylori](16639598656_Helicobacter%20pylori.jpg)
+![Helicobacter pylori](<16639598656_Helicobacter pylori.jpg>)
 
 ## Smooth
 _“Whoever authors your story authorizes your actions.”
@@ -813,7 +813,7 @@ _“I don't know half of you half as well as I should like; and I like less than
 &quot;A healthy social life is found only, when in the mirror of each soul the whole community finds its reflection, and when in the whole community the virtue of each one is living.&quot;
 ― Rudolf Steiner_
 
-![Amor ex Machina](16789616693_Amor%20ex%20Machina.jpg)
+![Amor ex Machina](<16789616693_Amor ex Machina.jpg>)
 
 ## OK Plasmid
 _“Everything in the world is about sex except sex. Sex is about power.” 
@@ -825,7 +825,7 @@ _“Everything in the world is about sex except sex. Sex is about power.”
 “Books are finite, sexual encounters are finite, but the desire to read and to f*** is infinite; it surpasses our own deaths, our fears, our hopes for peace.” 
 ― Roberto Bolo_
 
-![OK Plasmid](16892884418_OK%20Plasmid.jpg)
+![OK Plasmid](<16892884418_OK Plasmid.jpg>)
 
 ## Genome Reannotation
 _Molecular Genetics and Quantitative Genetics are not  opponents. Rather, they serve as a scientific Scylla and Charybdis: reminded of the extreme philosophical and experimental limitations of each approach, we navigate a hybrid course through the  choppy waters of genetic explanation. We can be attracted to the context--dependent merits of an approach (or equally, repulsed by the context-dependent drawbacks of the other), without being tied to ideological allegiances. In this way, That Old Ship of Science continues sailing towards an applicable and elegant understanding of Genetics....
@@ -834,7 +834,7 @@ Email me if curious for the rest of this essay on the relationship between Quant
 
 &lt;3_
 
-![Genome Reannotation](16893009198_Genome%20Reannotation.jpg)
+![Genome Reannotation](<16893009198_Genome Reannotation.jpg>)
 
 ## Semiosis
 _&quot;If something cannot be used to tell a lie, conversely it cannot be used to tell the truth: it cannot in fact be used 'to tell' at all.&quot;
@@ -862,7 +862,7 @@ _&quot;Why do you look at the speck of sawdust in your brother’s eye and pay n
 — Santiago Ramón y Cajal, Recollections of My Life (1898),
 _
 
-![Vitalism is dead. Long live Vitalism!](17049544488_Vitalism%20is%20dead_%20Long%20live%20Vitalism_.jpg)
+![Vitalism is dead. Long live Vitalism!](<17049544488_Vitalism is dead_ Long live Vitalism_.jpg>)
 
 ## Dopamine D2 Receptor
 _This is a symbolic representation of a receptor embedded in the plasma membrane of a synapse. Specifically, it is a dopamine D2 GPCR. The complex is a dimer, observe that the shading on the two subunits are reflections of each other. Chelated within the complex are several metal ions and water-spirits. At the top of the image, the black droplet is dopamine being released from the pre-synaptic axon terminal. By the bottom of the image, the signal has been transformed into a new droplet - consciousness!
@@ -871,7 +871,7 @@ With regards to neurons, &quot;information&quot; is an inter-dimensional chamele
 
 In conclusion, here the single-sentence story so unclear in neurology textbooks, and so obvious in symbolic esoterica: electrochemistry and structural biology unite at the synapse - a narrow cleft that opens up into the vastness of the Mind. _
 
-![Dopamine D2 Receptor](17060025202_Dopamine%20D2%20Receptor.jpg)
+![Dopamine D2 Receptor](<17060025202_Dopamine D2 Receptor.jpg>)
 
 ## Rafflesiaceae
 _“Everything takes time. Bees have to move very fast to stay still.”
@@ -898,7 +898,7 @@ _&quot;'Facts, facts, facts,' cries the scientist if he wants to emphasize the n
 &quot;I mean, you could claim that anything's real if the only basis for believing in it is that nobody's proved it doesn't exist!&quot;
 ― Hermione Granger, Harry Potter and the Deathly Hallows_
 
-![Signalling Games](17455193989_Signalling%20Games.jpg)
+![Signalling Games](<17455193989_Signalling Games.jpg>)
 
 ## Chromatin!
 _&quot;Identity is not an object; it is a process with addresses for all the different directions and dimensions in which it moves, and so it cannot so easily be fixed with a single number.&quot;
@@ -933,7 +933,7 @@ There still are Creatures more minute than those&quot;
 &quot;For in this (frog anatomy) owing to the simplicity of the structure, and the almost complete transparency of the vessels which admits the eye into the interior, things are more clearly shown so that they will bring the light to other more obscure matters.&quot;
 — Marcello Malpighi, De Pulmonibus (1661)_
 
-![Mirror Neuron(s)](17860397601_Mirror%20Neuron_s_.jpg)
+![Mirror Neuron(s)](<17860397601_Mirror Neuron_s_.jpg>)
 
 ## Polarity
 _There is no resolution but resolution. 
@@ -1001,7 +1001,7 @@ And why?”
 
 ― Julian Jaynes, The Origin of Consciousness in the Breakdown of the Bicameral Mind, 1976 _
 
-![The Origin of Somatic Tissue in the Breakdown of the Bistable Pluripotent Cell](18391063081_The%20Origin%20of%20Somatic%20Tissue%20in%20the%20Breakdown%20of%20t.jpg)
+![The Origin of Somatic Tissue in the Breakdown of the Bistable Pluripotent Cell](<18391063081_The Origin of Somatic Tissue in the Breakdown of t.jpg>)
 
 ## The Body has a Mind...
 _&quot;I did not begin when I was born, nor when I was conceived. I have been growing, developing, through incalculable myriads of millenniums. All my previous selves have their voices, echoes, promptings in me. Oh, incalculable times again shall I be born.&quot; 
@@ -1013,7 +1013,7 @@ _&quot;I did not begin when I was born, nor when I was conceived. I have been gr
 Diapause [dahy-uh-pawz]. 
 def. = a period of hormonally controlled quiescence, especially in immature insects._
 
-![The Body has a Mind...](18776984929_The%20Body%20has%20a%20Mind___.jpg)
+![The Body has a Mind...](<18776984929_The Body has a Mind___.jpg>)
 
 ## Contradiction
 _“Let me never fall into the vulgar mistake of dreaming that I am persecuted whenever I am contradicted.”
@@ -1049,7 +1049,7 @@ _&quot;What matters is the shape-making impulse&quot;
 &quot;It was always himself that the coward abandoned first. After this all other betrayals came easily.&quot;
 —Cormac McCarthy, All the Pretty Horses_
 
-![Summer Blossoming](18998197209_Summer%20Blossoming.jpg)
+![Summer Blossoming](<18998197209_Summer Blossoming.jpg>)
 
 ## Glow
 _&quot;I know I am deathless. No doubt I have died myself ten thousand times before. I laugh at what you call dissolution, and I know the amplitude of time.&quot; 
@@ -1075,7 +1075,7 @@ If the answer were: &quot;Philo-Eco-Evo-Devo-Psycho-Neuro-Pheno-Myrmeco-Complexi
 Phenotype is a statement about technology, Genotype is a statement about inheritance.
 _
 
-![The Birds and the Bees](19238337329_The%20Birds%20and%20the%20Bees.jpg)
+![The Birds and the Bees](<19238337329_The Birds and the Bees.jpg>)
 
 ## Stigmergy
 _&quot;If you want to build a ship, don't herd people together to collect wood, don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea.&quot;
@@ -1128,7 +1128,7 @@ At last, The proteins fold, assemble, meta-assemble, as  so on, to form phenotyp
 
 And so it begins again._
 
-![Central Dogma, Part-Dieu](20091245320_Central%20Dogma_%20Part-Dieu.jpg)
+![Central Dogma, Part-Dieu](<20091245320_Central Dogma_ Part-Dieu.jpg>)
 
 ## Entatic Being
 _“Never forget that justice is what love looks like in public”
@@ -1147,7 +1147,7 @@ And have nothing to say?&quot;
 ―G. K. Chesterton, Orthodoxy (1908), p. 58
 _
 
-![Entatic Being](20171761523_Entatic%20Being.jpg)
+![Entatic Being](<20171761523_Entatic Being.jpg>)
 
 ## Tinkers to Evers to Chance
 _On the right, there is a Triple Play: the Seven chakras are represented as the chess pieces (and a tetrahedron), and this entire structure of pieces and boards forms the ribose-sugar-ribose-sugar-... backbone of our dear friends, RNA, DNA, and (some of the) XNA. 
@@ -1159,7 +1159,7 @@ On the left: a human Möbius Stripper with equilateral chakras has a rather one-
 &quot;Chess is a unique cognitive nexus, a place where art and science come together in the human mind and are then refined and improved by experience.&quot;
 — Garry Kasparov _
 
-![Tinkers to Evers to Chance](20279060205_Tinkers%20to%20Evers%20to%20Chance.jpg)
+![Tinkers to Evers to Chance](<20279060205_Tinkers to Evers to Chance.jpg>)
 
 ## Earthrise, Earthset
 _&quot;I live on Earth at present, and I don't know what I am. I know that I am not a category. I am not a thing — a noun. I seem to be a verb, an evolutionary process — an integral function of the universe....I seem to be a verb.&quot;
@@ -1171,7 +1171,7 @@ This Dark Ages prison has no steel bars, chains, or locks. Instead, it is locked
 
 -R. Bucky Fuller_
 
-![Earthrise, Earthset](20279146395_Earthrise_%20Earthset.jpg)
+![Earthrise, Earthset](<20279146395_Earthrise_ Earthset.jpg>)
 
 ## If...
 _&quot;Finge datos currus, quid agas?&quot;
@@ -1200,7 +1200,7 @@ _&quot;A bad liver is to a Frenchman what a nervous breakdown is to an American.
 &quot;All of us from fertile egg to embryo to corpse, are exactly that: warm, wet, furry animals compelled by the sexuality of our forefathers and foremothers to be, either directly or indirectly, our own exciting and excitable, provocative and provocable selves.&quot;
 -Lynn Margulis_
 
-![Heart and Sol](20487333725_Heart%20and%20Sol.jpg)
+![Heart and Sol](<20487333725_Heart and Sol.jpg>)
 
 ## Isochromatin
 _&quot;    When we have passed beyond knowings, then we shall have Knowledge. Reason was the helper; Reason is the bar.
@@ -1272,7 +1272,7 @@ _&quot;Here is the world, sound as a nut, perfect, not the smallest piece of cha
 -R.A. Wilson
 _
 
-![Germ Line](21255372070_Germ%20Line.jpg)
+![Germ Line](<21255372070_Germ Line.jpg>)
 
 ## Life Cycle
 _&quot;Hox Hox.&quot;
@@ -1287,7 +1287,7 @@ _&quot;Hox Hox.&quot;
 &quot;Only the liberation of the natural capacity for love in human beings can master their sadistic destructiveness.
 -Wilhelm Reich, The Function of the Orgasm (1927)_
 
-![Life Cycle](21352856882_Life%20Cycle.jpg)
+![Life Cycle](<21352856882_Life Cycle.jpg>)
 
 ## Macroscope
 _Molon Labe. 
@@ -1362,7 +1362,7 @@ _Die Phylogenese ist die mechanische Ursache cler Ontogenese.
 &quot;Suppose [an] imaginary physicist, the student of Niels Bohr, is shown an experiment in which a virus particle enters a bacterial cell and 20 minutes later the bacterial cell is lysed and 100 virus particles are liberated. He will say: 'How come, one particle has become 100 particles of the same kind in 20 minutes? That is very interesting. Let us find out how it happens! How does the particle get in to the bacterium? How does it multiply? Does it multiply like a bacterium, growing and dividing, or does it multiply by an entirely different mechanism ? Does it have to be inside the bacterium to do this multiplying, or can we squash the bacterium and have the multiplication go on as before? Is this multiplying a trick of organic chemistry which the organic chemists have not yet discovered ? Let us find out. This is so simple a phenomenon that the answers cannot be hard to find. In a few months we will know. All we have to do is to study how conditions will influence the multiplication. We will do a few experiments at different temperatures, in different media, with different viruses, and we will know. Perhaps we may have to break into the bacteria at intermediate stages between infection and lysis. Anyhow, the experiments only take a few hours each, so the whole problem can not take long to solve'. Eight years later he has not got anywhere in solving the problem he set out to solve. But he may say to you 'Well, I made a slight mistake. I could not do it in a few months. Perhaps it will take a few decades, and perhaps it will take the help of a few dozen other people. But listen to what I have found, perhaps you will be interested to join me.'&quot;
 — Max Ludwig Henning Delbrück_
 
-![Revolution by Common Dissent](21726012590_Revolution%20by%20Common%20Dissent.jpg)
+![Revolution by Common Dissent](<21726012590_Revolution by Common Dissent.jpg>)
 
 ## Molecular Apotheosis
 _&quot;I never discuss discussions.&quot;
@@ -1381,7 +1381,7 @@ For the source of his being.&quot;
 
 —Dag Hammarskjöld_
 
-![Molecular Apotheosis](21849655534_Molecular%20Apotheosis.jpg)
+![Molecular Apotheosis](<21849655534_Molecular Apotheosis.jpg>)
 
 ## Tetragrammaton
 _&quot;Biology is a science of three dimensions. The first is the study of each species across all levels of biological organization, molecule to cell to organism to population to ecosystem. The second dimension is the diversity of all species in the biosphere. The third dimension is the history of each species in turn, comprising both its genetic evolution and the environmental change that drove the evolution. Biology, by growing in all three dimensions, is progressing toward unification and will continue to do so.&quot;
@@ -1416,7 +1416,7 @@ _&quot;So the people shouted, when they had blown trumpets: for when the people 
 
 Drawing inspired by the wonderful music of Gordon Allen. _
 
-![Jerico's walls came tumbling down...](21954461654_Jerico_s%20walls%20came%20tumbling%20down___.jpg)
+![Jerico's walls came tumbling down...](<21954461654_Jerico_s walls came tumbling down___.jpg>)
 
 ## W.S. Walcott Alternative Medicine Show
 _&quot;As I was walking among the fires of Hell, delighted with the enjoyments of genius which to Angels looks like torment and insanity…&quot;
@@ -1457,7 +1457,7 @@ W.S. Walcott Medicine Show &quot;
 
 ― Robbie Robertson_
 
-![W.S. Walcott Alternative Medicine Show](21956293183_W_S_%20Walcott%20Alternative%20Medicine%20Show.jpg)
+![W.S. Walcott Alternative Medicine Show](<21956293183_W_S_ Walcott Alternative Medicine Show.jpg>)
 
 ## Ultramyrmex abstractii
 _A poem I wrote:
@@ -1478,7 +1478,7 @@ Because even when the earthly body stumble,
 The Universe will continue, infinite, humble. 
 _
 
-![Ultramyrmex abstractii](22098398962_Ultramyrmex%20abstractii.jpg)
+![Ultramyrmex abstractii](<22098398962_Ultramyrmex abstractii.jpg>)
 
 ## Travelling Song
 _“The sensual mysticism of entire vertical being.”
@@ -1493,7 +1493,7 @@ _“The sensual mysticism of entire vertical being.”
 “...perhaps all the dragons of our lives are princesses who are only waiting to see us once beautiful and brave. Perhaps everything terrible is in its deepest being something helpless that wants help from us.”
 -Rainer Maria Rilke _
 
-![Travelling Song](22126591304_Travelling%20Song.jpg)
+![Travelling Song](<22126591304_Travelling Song.jpg>)
 
 ## Genometry
 _&quot;This Shewing was quick and life-like, and horrifying and dreadful, sweet and lovely. And of all the sight it was most comfort to me that our God and Lord that is so reverend and dreadful, is so homely and courteous: and this most fulfilled me with comfort and assuredness of soul.&quot;
@@ -1529,7 +1529,7 @@ _&quot;Chymia, or Alchemy and Spagyrism, is the art of resolving compound bodies
 &quot;Thus you may multiply each stone 4 times &amp; no more for they will then become oyles shining in ye dark and fit for magicall uses. You may ferment them with [gold] and [silver], by keeping the stone and metal in fusion together for a day, &amp; then project upon metalls. This is the multiplication of ye stone in vertue. To multiply it in weight ad to it of ye first Gold whether philosophic or vulgar.&quot;
 — Sir Isaac Newton, Praxis (c.1693)_
 
-![Inositol monophosphate](22347351132_Inositol%20monophosphate.jpg)
+![Inositol monophosphate](<22347351132_Inositol monophosphate.jpg>)
 
 ## Synergy
 _&quot;Something hit me very hard once, thinking about what one little man could do.&quot;
@@ -1594,7 +1594,7 @@ EINSTEIN: It requires a very high standard of art to realize fully the great ide
 From: &quot;Three conversations: Tagore Talks with Einstein, with Rolland, and Wells&quot; (Asia Magazine, March 1931).
 _
 
-![Action // Thought](22794206291_Action%20__%20Thought.jpg)
+![Action // Thought](<22794206291_Action __ Thought.jpg>)
 
 ## Self-consciousness
 _The triumph of ontogeny over phylogeny!!!
@@ -1628,7 +1628,7 @@ _...a pure teaching can emerge from an impure vessel...
 &quot;One morning...I painted a new-born that I then left to dry on the tennis-court. After two days I found it bristling with ants that made it move to the anaesthetized, silent rhythm of sea-urchins. However I at once realised that this newborn child was none other than the pink breast of my girlfriend, being frenetically eaten by the shining, metallic thickness of the phonograph. But it wasn't her breast either: it was little pieces of my cigarette paper nervously grouped around the magnetic topaz of my fiancees ring.&quot;
 -Salvador Dali, 1927, In 'Mon amie et la plague' [My girlfriend and the beach]._
 
-![Pure teaching, Impure vessel](22874742935_Pure%20teaching_%20Impure%20vessel.jpg)
+![Pure teaching, Impure vessel](<22874742935_Pure teaching_ Impure vessel.jpg>)
 
 ## Soul Work
 _The text says:
@@ -1644,7 +1644,7 @@ to the zenith's top can soar.&quot;
 “To hold our tongues when everyone is gossiping, to smile without hostility at people and institutions, to compensate for the shortage of love in the world with more love in small, private matters; to be more faithful in our work, to show greater patience, to forgo the cheap revenge obtainable from mockery and criticism: all these are things we can do. ”
 ― Hermann Hesse_
 
-![Soul Work](22889038234_Soul%20Work.jpg)
+![Soul Work](<22889038234_Soul Work.jpg>)
 
 ## Central Scrutinizer
 _&quot;There is a reference in Aristotle to a gnat produced by larvae engendered in the slime of vinegar. This must have been Drosophila.&quot;
@@ -1660,7 +1660,7 @@ _&quot;There is a reference in Aristotle to a gnat produced by larvae engendered
 — John Arbuthnot ('An Argument for Divine Providence, taken from the Constant Regularity observ’d in the Births of both Sexes', Philosophical Transactions of the Royal Society, 1710-12, 27,186.)
 _
 
-![Central Scrutinizer](22973577262_Central%20Scrutinizer.jpg)
+![Central Scrutinizer](<22973577262_Central Scrutinizer.jpg>)
 
 ## Communication
 _&quot;Conversation is the laboratory and workshop of the student.&quot;
@@ -1752,7 +1752,7 @@ What phase is room temperature H2O? A child unspoilt by the Gospel of Chemisty w
 
 OM_
 
-![Shiva (Cosmic Dance)](23436371004_Shiva%20_Cosmic%20Dance_.jpg)
+![Shiva (Cosmic Dance)](<23436371004_Shiva _Cosmic Dance_.jpg>)
 
 ## Aries
 _PRACTICE MAKES PRACTICE
@@ -1786,7 +1786,7 @@ Minor Premise: One man can dig a posthole in sixty seconds; therefore
 Conclusion: Sixty men can dig a posthole in one second. This may be called the syllogism arithmetical, in which, by combining logic and mathematics, we obtain a double certainty and are twice blessed.&quot;
 – Ambrose Bierce in 'The Devil's Dictionary'_
 
-![If Shapes Were Spells](23467937768_If%20Shapes%20Were%20Spells.jpg)
+![If Shapes Were Spells](<23467937768_If Shapes Were Spells.jpg>)
 
 ## Stem Cell
 _&quot;It is by logic that we prove, but by intuition that we discover.&quot;
@@ -1806,7 +1806,7 @@ Science and Hypothesis (1902)
 — Richard P. Feynman
  _
 
-![Stem Cell](23653317854_Stem%20Cell.jpg)
+![Stem Cell](<23653317854_Stem Cell.jpg>)
 
 ## Supreme Author
 _Is the Genome conscious? If it were conscious, what would it say? 
@@ -1847,7 +1847,7 @@ AUM
 [To err is human; to persevere in error is of the devil; and no third possibility is granted.]
 ― Seneca_
 
-![Supreme Author](23753363413_Supreme%20Author.jpg)
+![Supreme Author](<23753363413_Supreme Author.jpg>)
 
 ## Infectious Awareness
 _&quot;At the sight of a single bone, of a single piece of bone, I recognize and reconstruct the portion of the whole from which it would have been taken. The whole being to which this fragment belonged appears in my mind's eye.&quot;
@@ -1863,7 +1863,7 @@ _&quot;At the sight of a single bone, of a single piece of bone, I recognize and
 — Taylor Swift
 _
 
-![Infectious Awareness](23857142393_Infectious%20Awareness.jpg)
+![Infectious Awareness](<23857142393_Infectious Awareness.jpg>)
 
 ## Molecular Extravagance
 _“The role of the infinitely small in nature is infinitely great.”
@@ -1875,7 +1875,7 @@ _“The role of the infinitely small in nature is infinitely great.”
 &quot;If these d'Hérelle bodies [filterable Viruses] were really genes, fundamentally like our chromosome genes, they would give us an utterly new angle from which to attack the gene problem. They are filterable, to some extent isolatable, can be handled in test-tubes, and their properties, as shown by their effects on the bacteria, can then be studied after treatment. It would be very rash to call these bodies genes, and yet at present we must confess that there is no distinction known between the genes and them. Hence we can not categorically deny that perhaps we may be able to grind genes in a mortar and cook them in a beaker after all. Must we geneticists become bacteriologists, physiological chemists and physicists, simultaneously with being zoologists and botanists? Let us hope so.
 — Hermann Joseph Muller,'Variation Due to Change in the Individual Gene', The American Naturalist (1922), 56, 48-9. _
 
-![Molecular Extravagance](23982229911_Molecular%20Extravagance.jpg)
+![Molecular Extravagance](<23982229911_Molecular Extravagance.jpg>)
 
 ## Once Upon A Time
 _&quot;Only the mediocre are always at their best.&quot;
@@ -1890,7 +1890,7 @@ _&quot;Only the mediocre are always at their best.&quot;
 &quot;Astronomers have built telescopes which can show myriads of stars unseen before; but when a man looks through a tear in his own eye, that is a lens which opens reaches in the unknown, and reveals orbs which no telescope, however skilfully constructed, could do ; nay, which brings to view even the throne of God, and pierces the nebulous distance where are those eternal verities in which true life consists.&quot;
 – Henry Ward Beecher, 'Life Thoughts' (1858)._
 
-![Once Upon A Time](23985518718_Once%20Upon%20A%20Time.jpg)
+![Once Upon A Time](<23985518718_Once Upon A Time.jpg>)
 
 ## Recovery
 _“I dwell in possibility.” 
@@ -1939,7 +1939,7 @@ _&quot;Water and a bubble on it are one and the same. The bubble has its birth i
 
 ― Sri Ramakrishna Paramahamsa_
 
-![Dakshinamurthy (தட்சிணாமூர்த்தி)](24038341546_Dakshinamurthy%20_தட_ச_ண_ம_ர_த_த__.jpg)
+![Dakshinamurthy (தட்சிணாமூர்த்தி)](<24038341546_Dakshinamurthy _தட_ச_ண_ம_ர_த_த__.jpg>)
 
 ## Tension
 _&quot;Man is an intelligence in servitude to his organs.&quot;
@@ -1987,7 +1987,7 @@ _&quot;He that wrestles with us strengthens our nerves, and sharpens our skill. 
 &quot;Oh, order!  Material order, intellectual order, moral order!  What a comfort and strength, and what an economy!  To know where we are going and what we want; that is order.  To keep one's word, to do the right thing, and at the right time: more order.  To have everything under one's hand, to put one's whole army through its manoeuvres, to work with all one's resources: still order.  To discipline one's habits and efforts and wishes, to organize one's life and distribute one's time, to measure one's duties and assert one's rights, to put one's capital and resources, one's talents and opportunities to profit: again and always order.  Order is light, peace, inner freedom, self-determination: it is power.  To conceive order, to return to order, to realize order in oneself, around oneself, by means of oneself, this is aesthetic and moral beauty, it is well-being, it is what ought to be.&quot;
 – Henri Frédéric Amiel, journal entry (January 27, 1860)._
 
-![Hi-Contrast (Ubuntu)](24142214498_Hi-Contrast%20_Ubuntu_.jpg)
+![Hi-Contrast (Ubuntu)](<24142214498_Hi-Contrast _Ubuntu_.jpg>)
 
 ## Web of Trust
 _&quot;The quest for the Grail is not archeology, it's a race against evil. If it is captured by the Nazis the armies of darkness will march all over the face of the earth. Do you understand me?&quot;
@@ -2001,7 +2001,7 @@ Whereto my finger, like a dial's point,
 Is pointing still, in cleansing them from tears.&quot;
 – William Shakespeare, in lines said by King Richard in 'Richard II' (1592)._
 
-![Web of Trust](24142383898_Web%20of%20Trust.jpg)
+![Web of Trust](<24142383898_Web of Trust.jpg>)
 
 ## The Brain is an Open System
 _&quot;The only sensible ends of literature are, first, the pleasurable toil of writing, secondly, the gratification of one's family and friends, and lastly the solid cash.&quot;
@@ -2013,7 +2013,7 @@ _&quot;The only sensible ends of literature are, first, the pleasurable toil of 
 &quot;The 'Hitchhiker's Guide to the Galaxy' has, in what we laughingly call the past , had a great deal to say on the subject of parallel universes. Very little of this is, however, at all comprehensible to anyone below the level of Advanced God, and since it is now well established that all known gods came into existence a good three-millionths of a second after the Universe began rather than, as they usually claimed, the previous week, they already have a great deal of explaining to do as it is and are therefore not available for comment on matters of deep physics at this time.– 
 – Douglas Adams, &quot;Mostly Harmless&quot;, (1992)_
 
-![The Brain is an Open System](24142384378_The%20Brain%20is%20an%20Open%20System.jpg)
+![The Brain is an Open System](<24142384378_The Brain is an Open System.jpg>)
 
 ## Sex
 _&quot;Zweck sein selbst ist jegliches Tier.&quot;
@@ -2084,7 +2084,7 @@ _“Show me a sane man and I will cure him for you.”
 &quot;In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province. In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast map was Useless, and not without some Pitilessness was it, that they delivered it up to the Inclemencies of Sun and Winters. In the Deserts of the West, still today, there are Tattered Ruins of that Map, inhabited by Animals and Beggars; in all the Land there is no other Relic of the Disciplines of Geography.&quot;
 ― J. L. Borges, On Exactitude in Science (Borges, 1946)_
 
-![Hypercycle (Kali Yuga)](24167235866_Hypercycle%20_Kali%20Yuga_.jpg)
+![Hypercycle (Kali Yuga)](<24167235866_Hypercycle _Kali Yuga_.jpg>)
 
 ## Scarecrow
 _“Amo amas amat amamus amatis amant amavi amavisti amavit amavimus amavistis amaverunt amavero amaveris amaverit… Everything was love. Everything will be love. Everything has been love....&quot;
@@ -2127,7 +2127,7 @@ _“Any man could, if he were so inclined, be the sculptor of his own brain.”
 
 ― Santiago Ramón y Cajal, _
 
-![This is Your Brain on Neuroscience](24255441826_This%20is%20Your%20Brain%20on%20Neuroscience.jpg)
+![This is Your Brain on Neuroscience](<24255441826_This is Your Brain on Neuroscience.jpg>)
 
 ## Gyroscope
 _ &quot;Nisi credideritis, non intelligitis.&quot;
@@ -2174,7 +2174,7 @@ Hexagram 18
 
 6.Withdrawal from the world is only honourable if it is not out of fears. Life then empowers you with its strength to achieve the meeting with Self._
 
-![Inheritance of Acquired Characteristics](24257281444_Inheritance%20of%20Acquired%20Characteristics.jpg)
+![Inheritance of Acquired Characteristics](<24257281444_Inheritance of Acquired Characteristics.jpg>)
 
 ## Preformationism (Fitness Concept)
 _“A bear, however hard he tries, grows tubby without exercise.”
@@ -2193,7 +2193,7 @@ _“A bear, however hard he tries, grows tubby without exercise.”
 
 addition,adjustment,adjustment,admix,advance,advancement,alloy,ally,alteration,amendment,augmentation,augmentation,betterment,blossoming,boost,break,build,change,coalesce,combine,compound,compression,consolidate,development,contraction,conversion,conversion,correction,deformation,development,difference,displacement,distortion,diversification,diversity,elaboration,emergence,emergence,enhancement,enlargement,evolution,exaggeration,expansion,expansion,exploring,extension,flourishing,flowering,fluctuation,fluctuation,growth,heightening,improvement,inconstancy,incorporate,incubation,innovation,integrate,intensification,interface,intermix,join,lengthening,magnification,maturation,maturing,meld,merge,metamorphosis,metamorphosis,mingle,modification,modulation,mutation,network,novelty,oscillation,perfection,permutation,progress,progression,reconstruction,rectification,redesign,redoing,refashioning,refinement,refinement,reform,regulation,remaking,remodeling,replacement,revamping,reversal,review,revise,revolution,reworking,ripening,shift,strengthening,stretch,substitution,supplementation,supplementing,surrogate,switch,tempering,tensegrity,tension,transfiguration,transformation,transformation,transition,transmogrification,transmutation,turn,turnover,tweak,unite,vacillation,variance,variation,variation,variety,vicissitude,wandering,wavering,widening,​_
 
-![Preformationism (Fitness Concept)](24358435531_Preformationism%20_Fitness%20Concept_.jpg)
+![Preformationism (Fitness Concept)](<24358435531_Preformationism _Fitness Concept_.jpg>)
 
 ## Teaching
 _Start in the top left corner of the drawing:
@@ -2225,7 +2225,7 @@ Let a little go
 <a href="http://relisten.net/tedeschi-trucks/2016/10/8/its-so-heavy" rel="nofollow">relisten.net/tedeschi-trucks/2016/10/8/its-so-heavy</a>
 _
 
-![Oh it's so heavy, and I've let it all go!](24404181597_Oh%20it_s%20so%20heavy_%20and%20I_ve%20let%20it%20all%20go_.jpg)
+![Oh it's so heavy, and I've let it all go!](<24404181597_Oh it_s so heavy_ and I_ve let it all go_.jpg>)
 
 ## Ideas and Integrities
 _SOLD: April 2019 
@@ -2245,7 +2245,7 @@ proper or improper.&quot;
 
 _
 
-![Ideas and Integrities](24406083147_Ideas%20and%20Integrities.jpg)
+![Ideas and Integrities](<24406083147_Ideas and Integrities.jpg>)
 
 ## Oxytocin
 _&quot;All compounded things are subject to decay. Strive with diligence!&quot;
@@ -2327,7 +2327,7 @@ And they're certainly not showing
 Any signs that they are slowing!&quot;
 – Willie Wonka, &quot;Charlie and the Chocolate Factory&quot;, Roald Dahl, Pg. 84-85 (1964)._
 
-![Ashes to Ashes](24469326208_Ashes%20to%20Ashes.jpg)
+![Ashes to Ashes](<24469326208_Ashes to Ashes.jpg>)
 
 ## Water Strider
 _&quot;It is your work in life that is the ultimate seduction.&quot;
@@ -2343,7 +2343,7 @@ Before, behind, between, above, below.”
 “So they rolled up their sleeves and sat down to experiment -- by simulation, that is mathematically and all on paper. And the mathematical models of King Krool and the beast did such fierce battle across the equation-covered table, that the constructors' pencils kept snapping. Furious, the beast writhed and wriggled its iterated integrals beneath the King's polynomial blows, collapsed into an infinite series of indeterminate terms, then got back up by raising itself to the nth power, but the King so belabored it with differentials and partial derivatives that its Fourier coefficients all canceled out (see Riemann's Lemma), and in the ensuing confusion the constructors completely lost sight of both King and beast. So they took a break, stretched their legs, had a swig from the Leyden jug to bolster their strength, then went back to work and tried it again from the beginning, this time unleashing their entire arsenal of tensor matrices and grand canonical ensembles, attacking the problem with such fervor that the very paper began to smoke. The King rushed forward with all his cruel coordinates and mean values, stumbled into a dark forest of roots and logarithms, had to backtrack, then encountered the beast on a field of irrational numbers (F_1) and smote it so grievously that it fell two decimal places and lost an epsilon, but the beast slid around an asymptote and hid in an n-dimensional orthogonal phase space, underwent expansion and came out fuming factorially, and fell upon the King and hurt him passing sore. But the King, nothing daunted, put on his Markov chain mail and all his impervious parameters, took his increment Δk to infinity and dealt the beast a truly Boolean blow, sent it reeling through an x-axis and several brackets—but the beast, prepared for this, lowered its horns and—wham!!—the pencils flew like mad through transcendental functions and double eigentransformations, and when at last the beast closed in and the King was down and out for the count, the constructors jumped up, danced a jig, laughed and sang as they tore all their papers to shreds, much to the amazement of the spies perched in the chandelier—perched in vain, for they were uninitiated into the niceties of higher mathematics and consequently had no idea why Trurl and Klapaucius were now shouting, over and over, &quot;Hurrah! Victory!!”
 ― Stanisław Lem, The Cyberiad _
 
-![Water Strider](24673565305_Water%20Strider.jpg)
+![Water Strider](<24673565305_Water Strider.jpg>)
 
 ## ThreeWay
 _“I have drunken deep of joy,
@@ -2380,7 +2380,7 @@ I believe that robotic thinking helps precision of psychological thought, and wi
 &quot;If Wikileaks were a print publication, the injunction would be unthinkable. … What distinguishes this case is that the allegedly intolerable materials were published on the Internet instead of on paper. But that's a poor reason to abandon the principles that protect those who want to publish -- as well as those who want to read. Censorship is censorship, no matter the medium.&quot;
 – Chicago Tribune Editorial, &quot;Electronic censorship&quot; (February 26, 2008). _
 
-![Cryptographic Fingerprint](24853098998_Cryptographic%20Fingerprint.jpg)
+![Cryptographic Fingerprint](<24853098998_Cryptographic Fingerprint.jpg>)
 
 ## Passion
 _A meditation on Music and Mind:
@@ -2441,7 +2441,7 @@ I suppose if we couldn't laugh at the things that don't make sense, we couldn't 
 
 _
 
-![Strength and Weakness](24931002161_Strength%20and%20Weakness.jpg)
+![Strength and Weakness](<24931002161_Strength and Weakness.jpg>)
 
 ## Choice
 _ “...from one thing, know ten thousand things...”
@@ -2473,7 +2473,7 @@ To obviate these concerns, I here suggest the term &quot;self/non-self precognit
 
 In short: The Secret Scientific Brotherhood of the Immuno-nati uses the word &quot;recognition&quot; to pithily describe the immune system, a term that is full to the gills with misconception. I provide the alternative term &quot;precognition&quot;, which by adding but a single letter to the &quot;concept emeritus&quot; of recognition, points the way towards a whole new research program in the multilevel evolutionary ecology of immunity._
 
-![The Reactive Genome](25036466751_The%20Reactive%20Genome.jpg)
+![The Reactive Genome](<25036466751_The Reactive Genome.jpg>)
 
 ## Div, Grad, Curl
 _“Fairies have to be one thing or the other, because being so small they unfortunately have room for one feeling only at a time.”
@@ -2494,7 +2494,7 @@ _“Fairies have to be one thing or the other, because being so small they unfor
 “All mankind is of one author, and is one volume; when one man dies, one chapter is not torn out of the book, but translated into a better language; and every chapter must be so translated...As therefore the bell that rings to a sermon, calls not upon the preacher only, but upon the congregation to come: so this bell calls us all: but how much more me, who am brought so near the door by this sickness....No man is an island, entire of itself...any man's death diminishes me, because I am involved in mankind; and therefore never send to know for whom the bell tolls; it tolls for thee.”
 — John Donne_
 
-![Div, Grad, Curl](25105265759_Div_%20Grad_%20Curl.jpg)
+![Div, Grad, Curl](<25105265759_Div_ Grad_ Curl.jpg>)
 
 ## Narrative
 _“...we may on the whole conclude that inheritance is the rule, and non-inheritance the anomaly.”
@@ -2538,7 +2538,7 @@ _&quot;In a crystal we have the clear evidence of the existence of a formative l
 
 — Nikola Tesla_
 
-![Infinite Space](25379048543_Infinite%20Space.jpg)
+![Infinite Space](<25379048543_Infinite Space.jpg>)
 
 ## Freeform
 _“We are spinning our own fates, good or evil, and never to be undone. Every smallest stroke of virtue or of vice leaves its never-so-little scar.”
@@ -2617,7 +2617,7 @@ _“The painter has the Universe in his mind and hands.”
 “I read. I study and read. I bet I've read everything you read. Don't think I haven't. I consume libraries. I wear out spines and ROM-drives. I do things like get in a taxi and say, 'The library, and step on it.' My instincts concerning syntax and mechanics are better than your own, I can tell, with all due respect. But it transcends the mechanics. I'm not a machine. I feel and believe. I have opinions. Some of them are interesting. I could, if you'd let me, talk and talk.”
 ― David Foster Wallace_
 
-![Connect (the Dissolution)](25580508071_Connect%20_the%20Dissolution_.jpg)
+![Connect (the Dissolution)](<25580508071_Connect _the Dissolution_.jpg>)
 
 ## Life & Death
 _There is Life after Death in the same way that there is Death after Life. 
@@ -2640,7 +2640,7 @@ And to die is different from what any one supposed, and luckier.”
 &quot;Histology is an exotic meal, but can be as repulsive as a dose of medicine for students who are obliged to study it, and little loved by doctors who have finished their study of it all too hastily. Taken compulsorily in large doses it is impossible to digest, but after repeated tastings in small draughts it becomes completely agreeable and even addictive. Whoever possesses a refined sensitivity for artistic manifestations will appreciate that, in the science of histology, there exists an inherent focus of aesthetic emotions.&quot;
 — Pío del Rio Hortega, 'Art and Artifice in the Science of Histology' (1933),_
 
-![Life & Death](25634785121_Life%20_%20Death.jpg)
+![Life & Death](<25634785121_Life _ Death.jpg>)
 
 ## Improvization
 _&quot;Experiment adds to knowledge, Credulity leads to error.&quot;
@@ -2701,7 +2701,7 @@ p.s. &quot;The Bolsheviks will do everything to secure this peaceful development
 p.p.s. &quot;I wish to establish some sort of system not guided by chance but by some sort of definite and exact principle.&quot;
 – Dmitri Mendeleev, Lecture to the Russian Chemical Society_
 
-![Perestroika (Перестро́йка)](25648571567_Perestroika%20_Перестро_йка_.jpg)
+![Perestroika (Перестро́йка)](<25648571567_Perestroika _Перестро_йка_.jpg>)
 
 ## Azure
 _&quot;I am a little world made cunningly
@@ -2738,13 +2738,13 @@ _&quot;Sit still. Stop thinking. Shut up. Get out!&quot;
 &quot;While God created Adam, who was alone, He said, 'It is not good for man to be alone. He also created a woman, from the earth, as He had created Adam himself, and called her Lilith. Adam and Lilith immediately began to fight. She said, 'I will not lie below,' and he said, 'I will not lie beneath you, but only on top. For you are fit only to be in the bottom position, while I am to be the superior one.' Lilith responded, 'We are equal to each other inasmuch as we were both created from the earth.' But they would not listen to one another. When Lilith saw this, she pronounced the Ineffable Name and flew away into the air.&quot;
 ― Alphabet of Sirach_
 
-![I is Another](25795768144_I%20is%20Another.jpg)
+![I is Another](<25795768144_I is Another.jpg>)
 
 ## Body and Spirit
 _&quot;A rich man had a garden and two gardeners. One of these gardeners was very lazy and did not work; but when the owner came to the garden, the lazy man would get up and fold his arms and say, &quot;How beautiful is the face of my master&quot;, and dance before him. The other gardener would not talk much, but would work hard, and produce all sorts of fruits and vegetables which he would carry on his head to his master who lived a long way off. Of these two gardeners, which would be the more beloved of his master? Shiva is that master, and this world is His garden, and there are two sorts of gardeners here; the one who is lazy, hypocritical, and does nothing, only talking about Shiva's beautiful eyes and nose and other features; and the other, who is taking care of Shiva's children, all those that are poor and weak, all animals, and all His creation. Which of these would be the more beloved of Shiva? Certainly he that serves His children. He who wants to serve the father must serve the children first. He who wants to serve Shiva must serve His children — must serve all creatures in this world first. It is said in the Shâstra that those who serve the servants of God are His greatest servants. So you will bear this in mind.&quot;
 – Swami Vivekananda, in &quot;Address at the Rameswaram Temple on Real Worship&quot;._
 
-![Body and Spirit](25891031178_Body%20and%20Spirit.jpg)
+![Body and Spirit](<25891031178_Body and Spirit.jpg>)
 
 ## Noogenesis
 _&quot;Even if I could be Shakespeare I think that I should still choose to be Faraday.&quot;
@@ -2818,7 +2818,7 @@ _&quot;Intellectual, (Lat.) belonging to the Intellect, Spiritual.&quot;
 – Erich Fromm, 'The Sane Society'.
 _
 
-!["Multitasking" is non-tasking](26232519517__Multitasking_%20is%20non-tasking.jpg)
+!["Multitasking" is non-tasking](<26232519517__Multitasking_ is non-tasking.jpg>)
 
 ## Life is Strange...
 _&quot;Universal history is the history of a few metaphors.&quot;
@@ -2833,7 +2833,7 @@ As the creeper that girdles the tree trunk, the Law runneth forward and back;
 For the strength of the Pack is the Wolf, and the strength of the Wolf is the Pack.&quot;
 – Rudyard Kipling, 'Jungle Book' (1895), &quot;The Law of the Jungle&quot;._
 
-![Life is Strange...](26232519527_Life%20is%20Strange___.jpg)
+![Life is Strange...](<26232519527_Life is Strange___.jpg>)
 
 ## Take & Leave
 _&quot;Attainment and science, retainment and art—the two couples keep to themselves, but when they do meet, nothing else in the world matters.&quot;
@@ -2848,7 +2848,7 @@ _&quot;Attainment and science, retainment and art—the two couples keep to them
 &quot;And do you know what 'the world' is to me? Shall I, show it to you in my mirror? This world: a monster of energy, without beginning, without end; a firm, iron magnitude of force that does not grow bigger or smaller, that does not expend itself but only transforms itself; as a whole, of unalterable size, a household without expenses or losses, but likewise without increase or income; enclosed by 'nothingness' as by a boundary; not by something blurry or wasted, not something endlessly extended, but set in a definite space as a definite force, and not a space that might be 'empty' here or there, but rather as force throughout, as a play of forces and waves of forces, at the same time one and many, increasing here and at the same time decreasing there; a sea of forces flowing and rushing together, eternally changing, eternally flooding back, with tremendous years of recurrence, with an ebb and a flood of its forms; out of the simplest forms striving toward the most complex, out of the stillest, most rigid, coldest forms toward the hottest, most turbulent, most self-contradictory, and then again returning home to the simple out of this abundance, out of the play of contradictions back to the joy of concord, still affirming itself in this uniformity of its courses and its years, blessing itself as that which must return eternally, as a becoming that knows no satiety, no disgust, no weariness: this, my Dionysian world of the eternally self-creating, the eternally self-destroying, this mystery world of the twofold voluptuous delight, my 'beyond good and evil,' without goal, unless the joy of the circle itself is a goal; without will, unless a ring feels good will toward itself-do you want a name for this world? A solution for all its riddles? A light for you, too, you best-concealed, strongest, most intrepid, most midnightly men?—This world is the will to power—and nothing besides! And you yourselves are also this will to power—and nothing besides!&quot;
 — Friedrich Nietzsche, 'The Will to Power' (Notes written 1883-1888)._
 
-![Take & Leave](26399972165_Take%20_%20Leave.jpg)
+![Take & Leave](<26399972165_Take _ Leave.jpg>)
 
 ## Kandinsky Flipping
 _&quot;As certain as the Correggiosity of Correggio.&quot;
@@ -2861,7 +2861,7 @@ _&quot;As certain as the Correggiosity of Correggio.&quot;
 – Asger Jorn (1949) in 'Discours aux pingouins' ('Speech to the Penguins'), in 'Cobra' (1949).
 _
 
-![Kandinsky Flipping](26525302019_Kandinsky%20Flipping.jpg)
+![Kandinsky Flipping](<26525302019_Kandinsky Flipping.jpg>)
 
 ## Red Tide
 _Red paper, black pen!!!
@@ -2874,7 +2874,7 @@ Christian Wolff
 &quot;What results [from the compositional system of Boulez's Structures] can only be described as composition by numerology. The possiblities are endless; a computer could be programmed to put down notes according to this prescription and in a very short time could turn out enough music to require years for its performance. By using different numerical rules -- using a knight's move, for example, rather than a bishop's move along the diagonals — music for centuries to come could be produced.&quot;
 – John Backus, 'Die Reihe — A Scientific Evaluation', Perspectives of New Music I/I (Fall 1962): 170._
 
-![Red Tide](26525410259_Red%20Tide.jpg)
+![Red Tide](<26525410259_Red Tide.jpg>)
 
 ## Viral Media
 _&quot;'There, Master Niketas,' Baudolino said, 'when I was not prey to the temptations of this world, I devoted my nights to imagining other worlds. ... There is nothing better than imagining other worlds,' he said, 'to forget the painful one we live in. At least so I thought then. I hadn't yet realized that, imagining other worlds, you end up changing this one.'&quot;
@@ -2883,7 +2883,7 @@ _&quot;'There, Master Niketas,' Baudolino said, 'when I was not prey to the temp
 &quot;I can't believe that people really prefer to go to the concert hall under intellectually trying, socially trying, physically trying conditions, unable to repeat something they have missed, when they can sit at home under the most comfortable and stimulating circumstances and hear it as they want to hear it. I can't imagine what would happen to literature today if one were obliged to congregate in an unpleasant hall and read novels projected on a screen.&quot;
 – Milton Babbitt; quoted in 'Classic Essays on Twentieth-Century Music'._
 
-![Viral Media](26525567569_Viral%20Media.jpg)
+![Viral Media](<26525567569_Viral Media.jpg>)
 
 ## Perspective
 _“No matter how thin you slice it, there will always be two sides.”
@@ -2955,7 +2955,7 @@ Their country conquers with their martyrdom.&quot;
 – Lord Byron
 _
 
-![Magic Carpet](26565390069_Magic%20Carpet.jpg)
+![Magic Carpet](<26565390069_Magic Carpet.jpg>)
 
 ## Do No Harm
 _&quot;Power corrupts, PowerPoint corrupts absolutely&quot; 
@@ -2970,7 +2970,7 @@ _&quot;Power corrupts, PowerPoint corrupts absolutely&quot;
 &quot;Psychiatrists look for twisted molecules and defective genes as the causes of schizophrenia, because schizophrenia is the name of a disease. If Christianity or Communism were called diseases, would they then look for the chemical and genetic “causes” of these 'conditions'?&quot;
 – Thomas Szasz, 'The Second Sin' (New York: 1973), p. 102._
 
-![Do No Harm](26647317428_Do%20No%20Harm.jpg)
+![Do No Harm](<26647317428_Do No Harm.jpg>)
 
 ## Resistance and Flow
 _&quot;It is amazing how complete is the delusion that beauty is goodness.&quot;
@@ -2982,7 +2982,7 @@ _&quot;It is amazing how complete is the delusion that beauty is goodness.&quot;
 &quot;I can have little patience with those who oppose … the theory of evolution or what are called 'mechanistic' explanations of the phenomena of life because of certain moral consequences which at first seem to follow from these theories, and still less with those who regard it as irrelevant or impious to ask certain questions at all. By refusing to face the facts, the conservative only weakens his own position.&quot;
 –  Friedrich Hayek, in 'Why I Am Not a Conservative', in &quot;The Constitution of Liberty&quot; (1960)._
 
-![Resistance and Flow](26647595878_Resistance%20and%20Flow.jpg)
+![Resistance and Flow](<26647595878_Resistance and Flow.jpg>)
 
 ## I'll Fly Away...
 _&quot;ALL WORK AND NO PLAY MAKES JACK A DULL BOY.&quot;
@@ -3000,7 +3000,7 @@ Worlds lie above, beyond its ken; what crosses it can ne'er be true.&quot;
 
 <a href="https://www.youtube.com/watch?v=OXWoGGiac-U" rel="nofollow">www.youtube.com/watch?v=OXWoGGiac-U</a>_
 
-![I'll Fly Away...](26647713048_I_ll%20Fly%20Away___.jpg)
+![I'll Fly Away...](<26647713048_I_ll Fly Away___.jpg>)
 
 ## Freestyle (Non-parametric)
 _“For the strength of the Pack is the Wolf, and the strength of the Wolf is the Pack.”
@@ -3015,7 +3015,7 @@ _“For the strength of the Pack is the Wolf, and the strength of the Wolf is th
 “...the people who move through the streets are all strangers. At each encounter, they imagine a thousand things about one another; meetings which could take place between them, conversations, surprises, caresses, bites. But no one greets anyone; eyes lock for a second, then dart away, seeking other eyes, never stopping...something runs among them, an exchange of glances like lines that connect one figure with another and draw arrows, stars, triangles, until all combinations are used up in a moment, and other characters come on to the scene... ”
 ― Italo Calvino, Invisible Cities _
 
-![Freestyle (Non-parametric)](26699542472_Freestyle%20_Non-parametric_.jpg)
+![Freestyle (Non-parametric)](<26699542472_Freestyle _Non-parametric_.jpg>)
 
 ## Self
 _This ant is rather consumed with the Sisyphean task of improving her &quot;Self&quot; in a deliriously-confusing and rapidly-evaporating world of pheromones. She eagerly follows counterclockwise along a sparse scent trail laid by what she assumes to be some other, more successful ant. Alas, there is no other ant leading the way -- our focal ant is reliving her own past experiments in walking. Locally, the ant's walkway appears to have two mutually-exclusive sides upon which to rest. However, conceptualizing of the entire Möbius walkway in her efficient brain, the ant realizes that any disagreement to be had about the path must stem from discordant reductionism, from two complementarily-limited ways of looking at the same one-sided system. 
@@ -3045,7 +3045,7 @@ _&quot;All that can be said of friendship is like botany to flowers.&quot;
 &quot;The injurious agent in cigarettes comes principally from the burning paper wrapper. The substance thereby formed is called “acrolein.” It has a violent action on the nerve centers, producing degeneration of the cells of the brain, which is quite rapid among boys. Unlike most narcotics, this degeneration is permanent and uncontrollable. I employ no person who smokes cigarettes.&quot;
 [From the Laboratory of Thomas A. Edison, Orange, N.J., April 26, 1914.] _
 
-![Observe Your Reaction](26765190210_Observe%20Your%20Reaction.jpg)
+![Observe Your Reaction](<26765190210_Observe Your Reaction.jpg>)
 
 ## think both ways
 _“The very essence of romance is uncertainty.” 
@@ -3070,7 +3070,7 @@ the world is too full to talk about.”
 “I am not an angel,' I asserted; 'and I will not be one till I die: I will be myself. Mr. Rochester, you must neither expect nor exact anything celestial of me - for you will not get it, any more than I shall get it of you: which I do not at all anticipate.” 
 ― Charlotte Brontë, Jane Eyre_
 
-![think both ways](26810170862_think%20both%20ways.jpg)
+![think both ways](<26810170862_think both ways.jpg>)
 
 ## Entanglement
 _“Everything is design. Everything!”
@@ -3118,7 +3118,7 @@ _“Words are memes that can be pronounced.”
 “What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.&quot;
 ― Carl Sagan, Cosmos Part 11: 'The Persistence of Memory' (1980)._
 
-![Where the rising Crane meets the falling Skyhook](26933401355_Where%20the%20rising%20Crane%20meets%20the%20falling%20Skyhook.jpg)
+![Where the rising Crane meets the falling Skyhook](<26933401355_Where the rising Crane meets the falling Skyhook.jpg>)
 
 ## Protein Folding (Molecular Dynamics)
 _&quot;An abstraction is one thing that represents several real things equally well.&quot;
@@ -3130,7 +3130,7 @@ _&quot;An abstraction is one thing that represents several real things equally w
 &quot;General systems theory is a series of related definitions, assumptions, and postulates about all levels of systems from atomic particles through atoms, molecules, crystals, viruses, cells, organs, individuals, small groups, societies, planets, solar systems, and galaxies. General behavior systems theory is a subcategory of such theory, dealing with living systems, extending roughly from viruses through societies. A significant fact about living things is that they are open systems, with important inputs and outputs. Laws which apply to them differ from those applying to relatively closed systems.&quot;
 – James Grier Miller, &quot;General behavior systems theory and summary&quot; (1956), Journal of Counseling Psychology 3 (2) 120-124._
 
-![Protein Folding (Molecular Dynamics)](26940401748_Protein%20Folding%20_Molecular%20Dynamics_.jpg)
+![Protein Folding (Molecular Dynamics)](<26940401748_Protein Folding _Molecular Dynamics_.jpg>)
 
 ## Where the Sun's Rays Meet
 _&quot;If you hate a person, you hate something in him that is a part of yourself. What isn't part of ourselves doesn't disturb us.&quot;
@@ -3150,7 +3150,7 @@ and the wisdom to distinguish
 the one from the other.&quot;
 – Reinhold Niebuhr, 'The Serenity Prayer' (ca. 1942)._
 
-![Where the Sun's Rays Meet](26950539399_Where%20the%20Sun_s%20Rays%20Meet.jpg)
+![Where the Sun's Rays Meet](<26950539399_Where the Sun_s Rays Meet.jpg>)
 
 ## Replication (Fate)
 _“Trust thyself: every heart vibrates to that iron string.” 
@@ -3168,7 +3168,7 @@ _“Trust thyself: every heart vibrates to that iron string.”
 “Today a young man on acid realized that all matter is merely energy condensed to a slow vibration, that we are all one consciousness experiencing itself subjectively, there is no such thing as death, life is only a dream, and we are the imagination of ourselves. Heres Tom with the Weather.” 
 ― Bill Hicks_
 
-![Replication (Fate)](27010248565_Replication%20_Fate_.jpg)
+![Replication (Fate)](<27010248565_Replication _Fate_.jpg>)
 
 ## Partnership
 _“Those who believe in telekinetics, raise my hand.” 
@@ -3237,7 +3237,7 @@ And look down at the sea
 And I sing 'cause I know
 _
 
-![Shapes on a Page](27010250185_Shapes%20on%20a%20Page.jpg)
+![Shapes on a Page](<27010250185_Shapes on a Page.jpg>)
 
 ## Pyridine Scheme
 _The truth isn't stranger than fiction...it's just...different....
@@ -3262,7 +3262,7 @@ _The truth isn't stranger than fiction...it's just...different....
 &quot;Of course I am not worried about intimidating men. The type of man who will be intimidated by me is exactly the type of man I have no interest in.&quot;
 ― Chimamanda Ngozi Adichie_
 
-![Pyridine Scheme](27025477311_Pyridine%20Scheme.jpg)
+![Pyridine Scheme](<27025477311_Pyridine Scheme.jpg>)
 
 ## Expression
 _“Distracted from distraction by distraction” 
@@ -3291,7 +3291,7 @@ _A writing on the Telomere:
 
 Chromosomes are long tangled strings of deoxyriboproteinacious-ness that require constant emotional and biochemical support. The chromosome is a brilliant design compromise that excels in a host of information-theoretic, biophysical, and eco-evolutionary challenges. All good things come to an end though, and chromosomes are no exception. The sequences at the ends of a linear chromosome are called &quot;telomeres&quot;. &quot;Telos&quot; (τέλος) means &quot;final&quot; and &quot;merοs&quot; (μέρος) refers to a part of a whole. The teleology of the telomere is to play a role in guarding the chromosome from physical and informational decay.  Telomeres are long repetitive strings of DNA built from the mantra-like recital of a short phrase, such as TTAGGG in vertebrates. Om Namo Telomere, as it were. A telomere to a chromosome is like the pencil's eraser to a child: a terminal, protective, nubby structure. It really is true that all's well that ends well; and specifically for chromatin, all's well-maintained whose ends are well-maintained. The telomere is a physical teaching that we don't need to &quot;build a wall&quot; to isolate ourselves from stressful phenomena, that there is a dynamic way to move beyond conflict, that we can harmoniously coexist with damaging intra-cellular and inter-national forces. The telomere is the bread in a gene sandwich; it is a frame that protects and enhances what is inside. The telomere is a life support system for the genome and an insurance policy for the organism. The telomere is all of these things, and more. In conclusion, from the perspective of chromosomal integrity, the telomere is means to an end. But when you realize that the chromosome itself is just one way for a statistical-evolutionary system to realize fitness, then you'll find that the telomere is nothing but the ends to a means._
 
-![Telomere (TTAGGG)](27098551914_Telomere%20_TTAGGG_.jpg)
+![Telomere (TTAGGG)](<27098551914_Telomere _TTAGGG_.jpg>)
 
 ## The Pleasure Principle
 _Ego is the means by which Pleasure becomes Pain. Time is the river that this all occurs in.
@@ -3328,7 +3328,7 @@ There is no moral at the end of this story. No call to action or Seven Ways That
 &quot;Man has no individual I. But there are, instead, hundreds and thousands of separate small &quot;I&quot;s, very often entirely unknown to one another, never coming into contact, or, on the contrary, hostile to each other, mutually exclusive and incompatible. Each minute, each moment, man is saying or thinking, &quot;I&quot;. And each time his I is different. Just now it was a thought, now it is a desire, now a sensation, now another thought, and so on, endlessly. Man is a plurality. Man's name is legion.&quot;
 —G. I. Gurdjieff_
 
-![The Pleasure Principle](27191123053_The%20Pleasure%20Principle.jpg)
+![The Pleasure Principle](<27191123053_The Pleasure Principle.jpg>)
 
 ## Love // Symbiosis pt. I
 _&quot;To rank the effort above the prize may be called love.&quot;
@@ -3340,7 +3340,7 @@ _&quot;To rank the effort above the prize may be called love.&quot;
 &quot;Thus we see how the problem of significance is closely bound up with the problem of the relation between the whole and its parts. It has been said: The whole is more than the sum of its parts. It is more correct to say that the whole is something else than the sum of its parts, because summing is a meaningless procedure, whereas the whole-part relationship is meaningful.&quot;
 – Kurt Koffka, 'Principles of Gestalt Psychology' (1935)._
 
-![Love // Symbiosis pt. I](27231227878_Love%20__%20Symbiosis%20pt_%20I.jpg)
+![Love // Symbiosis pt. I](<27231227878_Love __ Symbiosis pt_ I.jpg>)
 
 ## Balance
 _“We're fascinated by the words--but where we meet is in the silence behind them.”
@@ -3390,7 +3390,7 @@ I hope some day you'll join us,
 And the world will be as one.&quot;
 –John Lennon, in &quot;Imagine&quot;._
 
-![Sleep, Dream, Wake](27292002143_Sleep_%20Dream_%20Wake.jpg)
+![Sleep, Dream, Wake](<27292002143_Sleep_ Dream_ Wake.jpg>)
 
 ## Really Radical
 _&quot;And I said, I will perish with my nest,
@@ -3407,7 +3407,7 @@ and I will multiply days as the phoenix.&quot;
 &quot;As a confirmed melancholic, I can testify that the best and maybe only antidote for melancholia is action. However, like most melancholics, I suffer also from sloth.&quot;
 – Edward Abbey, 'A Voice Crying in the Wilderness' (Vox Clamantis in Deserto)_
 
-![Really Radical](27298635968_Really%20Radical.jpg)
+![Really Radical](<27298635968_Really Radical.jpg>)
 
 ## World/Body/Mind/Self
 _The white canvas around this drawing is the World -- vast and unexplored, imposable and improbable. The World is an answer to its own question. A spacious paradox that resists judgment like some sort of metaphysical teflon. We can never find meaning in the white space, rather we must draw our own meaning on top of it. Such is the World.  
@@ -3464,7 +3464,7 @@ Socrates:  &quot;And I, Meno, like what I am saying.  Some things I have said of
 – Ruhollah Khomeini
 _
 
-![Black and White](27490793309_Black%20and%20White.jpg)
+![Black and White](<27490793309_Black and White.jpg>)
 
 ## каприз
 _Co-draw with S.
@@ -3500,7 +3500,7 @@ _&quot;If by Godot I had meant God I would have said God, and not Godot.&quot;
 &quot;The above proposition is occasionally useful.&quot;
 – Whitehead &amp; Russell, remark after the proof that 1+1=2 in Principia Mathematica, Volume II, 1st edition (1912)_
 
-![Twist of Fate](27542836974_Twist%20of%20Fate.jpg)
+![Twist of Fate](<27542836974_Twist of Fate.jpg>)
 
 ## Universe
 _Hello Viewer,
@@ -3573,7 +3573,7 @@ Thoughts tend to melt, thaw, and resolve themselves into a Do.
 &quot;After death, life reappears in a different form and with different laws. It is inscribed in the laws of the permanence of life on the surface of the earth and everything that has been a plant and an animal will be destroyed and transformed into a gaseous, volatile and mineral substance.&quot; 
 — Louis Pasteur_
 
-![Meiosis (I Dream Of Sex)](27916271162_Meiosis%20_I%20Dream%20Of%20Sex_.jpg)
+![Meiosis (I Dream Of Sex)](<27916271162_Meiosis _I Dream Of Sex_.jpg>)
 
 ## Meditation?
 _&quot;Why do dragons hoard gold? Because the things you most need is always to be found where you least want to look.&quot;
@@ -3598,7 +3598,7 @@ _&quot;Experience teaches...that there is no such thing as a thought experiment 
 
 – Daniel Dennett, 'Darwin's Dangerous Idea' (1995)._
 
-![Triple Helix](27983984969_Triple%20Helix.jpg)
+![Triple Helix](<27983984969_Triple Helix.jpg>)
 
 ## Time....
 _Oh, Western freedom-loving &quot;left-wing&quot; thinkers! Oh, left-wing labourists! Oh, American, German and French progressive students! All of this is still not enough for you. The whole book has been useless for you. You will understand everything immediately, when you yourself — &quot;hands behind the back&quot; — toddle into our Archipelago.
@@ -3656,7 +3656,7 @@ Modern psychology at its best has a questionable understanding of the soul. It h
 
 – Allan Bloom, 'The Closing of the American Mind' (1987[!])._
 
-![More to the Point.](28030939608_More%20to%20the%20Point_.jpg)
+![More to the Point.](<28030939608_More to the Point_.jpg>)
 
 ## Silver Lining
 _&quot;Any man may make a mistake; none but a fool will stick to it. Second thoughts are best as the proverb says.&quot;
@@ -3668,7 +3668,7 @@ _&quot;Any man may make a mistake; none but a fool will stick to it. Second thou
 &quot;A person who knows all that is good and all that is true — as much as can be known — but does not resist evils, knows nothing.&quot;
 – Emanuel Swedenborg, 'Apocalypse Explained #1180'_
 
-![Silver Lining](28031097198_Silver%20Lining.jpg)
+![Silver Lining](<28031097198_Silver Lining.jpg>)
 
 ## Rainbow Dance
 _&quot;Bee to the blossom, moth to the flame;
@@ -3684,7 +3684,7 @@ Each to his passion; what's in a name?&quot;
 &quot;A shadow may be infinitely dark, and also of infinite degrees of absence of darkness. The beginnings and ends of shadow lie between the light and darkness and may be infinitely diminished and infinitely increased. Shadow is the means by which bodies display their form. The forms of bodies could not be understood in detail but for shadow.&quot; 
 – Leonardo da Vinci_
 
-![Rainbow Dance](28055138872_Rainbow%20Dance.jpg)
+![Rainbow Dance](<28055138872_Rainbow Dance.jpg>)
 
 ## Prokaryote
 _Kirk: &quot;The more complex the mind, the greater the need for the simplicity of play.&quot;
@@ -3707,7 +3707,7 @@ _Co-draw with Chenling :)
 &quot;I have read a great deal now on the neurological side and much on the anthropological side and on the philosophical side and we have had all these discussions and all the time I have the feeling that something may break. I mean that some little light at the end of the tunnel may be sensed or some flash of insight may come. I of course know very well that there is no guarantee it will come, but I have already got myself into this state of expectancy that something will come to my imagination which has some germ of truth about it in this most difficult field.&quot;
 – John Carew Eccles (1977) 'The Self and Its Brain: An Argument for Interactionism', with Karl Popper, p. 467._
 
-![Immune System](28347903397_Immune%20System.jpg)
+![Immune System](<28347903397_Immune System.jpg>)
 
 ## Christ & Serpent
 _&quot;Mad, adj. Affected with a high degree of intellectual independence.&quot;
@@ -3722,7 +3722,7 @@ Undistracted by his fine horses a driver
 Who is skilled rides happily, if they are trained.&quot;
 – Mahābhārata 5(51)34:57_
 
-![Christ & Serpent](28347903507_Christ%20_%20Serpent.jpg)
+![Christ & Serpent](<28347903507_Christ _ Serpent.jpg>)
 
 ## Thought Crime
 _&quot;That mysterious independent variable of political calculation, Public Opinion.&quot;
@@ -3738,7 +3738,7 @@ Material Place - &quot;
 – Emily Dickinson, Poem 670 (1863).
 _
 
-![Thought Crime](28731867227_Thought%20Crime.jpg)
+![Thought Crime](<28731867227_Thought Crime.jpg>)
 
 ## Bacteria // Beanbag
 _&quot;A cool mouth, and warm feet, live long.&quot;
@@ -3750,7 +3750,7 @@ _&quot;A cool mouth, and warm feet, live long.&quot;
 &quot;For I do not believe that it is through the interference of Divine Providence … that the spittle of a certain person moved, fell on a certain gnat in a certain place, and killed it.&quot;
 – Maimonides, &quot;Guide for the Perplexed&quot;, Friedländer translation._
 
-![Bacteria // Beanbag](28731867267_Bacteria%20__%20Beanbag.jpg)
+![Bacteria // Beanbag](<28731867267_Bacteria __ Beanbag.jpg>)
 
 ## Plato's Cave
 _“How could they see anything but the shadows if they were never allowed to move their heads?” 
@@ -3763,7 +3763,7 @@ _“How could they see anything but the shadows if they were never allowed to mo
 McLUHAN: &quot;No, I never have. I'm an observer in these matters, not a participant.” 
 ― Marshall McLuhan_
 
-![Plato's Cave](28773685783_Plato_s%20Cave.jpg)
+![Plato's Cave](<28773685783_Plato_s Cave.jpg>)
 
 ## The Evolution of Design in Nature
 _“Let us learn to dream, gentlemen, then perhaps we shall find the truth” 
@@ -3775,7 +3775,7 @@ _“Let us learn to dream, gentlemen, then perhaps we shall find the truth”
 &quot;I believe in evolution. But I also believe, when I hike the Grand Canyon and see it at sunset, that the hand of God is there also.&quot; 
 ―John McCain, GOP primary debate, May 3, 2007_
 
-![The Evolution of Design in Nature](28773790693_The%20Evolution%20of%20Design%20in%20Nature.jpg)
+![The Evolution of Design in Nature](<28773790693_The Evolution of Design in Nature.jpg>)
 
 ## Baupläne (Tripartite)
 _“The secret of politics? Make a good treaty with Russia.” 
@@ -3796,7 +3796,7 @@ For promis'd joy!”
 “Be not the slave of your own past - plunge into the sublime seas, dive deep, and swim far, so you shall come back with new self-respect, with new power, and with an advanced experience that shall explain and overlook the old.” 
 ― Ralph Waldo Emerson_
 
-![Baupläne (Tripartite)](29030797943_Baupläne%20_Tripartite_.jpg)
+![Baupläne (Tripartite)](<29030797943_Baupläne _Tripartite_.jpg>)
 
 ## Excitement is the Daughter of Curiosity
 _&quot;The ideal condition
@@ -3822,7 +3822,7 @@ The reasonable thing is to learn from those who can teach.&quot;
 &quot;You know, I think of the global economy as an inverted triangle, resting on the shoulders of the American consumer.&quot;
 — Hillary Clinton_
 
-![Excitement is the Daughter of Curiosity](29280454583_Excitement%20is%20the%20Daughter%20of%20Curiosity.jpg)
+![Excitement is the Daughter of Curiosity](<29280454583_Excitement is the Daughter of Curiosity.jpg>)
 
 ## Southwest by Southwest
 _“I go to seek a Great Perhaps.” 
@@ -3837,7 +3837,7 @@ _“I go to seek a Great Perhaps.”
 &quot;All life is evolving, for evolution is God's law; and man grows slowly and steadily along with the rest.&quot;
 ― C. W. Leadbeater, The Science of the Sacraments_
 
-![Southwest by Southwest](29287251072_Southwest%20by%20Southwest.jpg)
+![Southwest by Southwest](<29287251072_Southwest by Southwest.jpg>)
 
 ## I left my heart in San Francisco
 _&quot;Isn't it nice that people who prefer Los Angeles to San Francisco live there?&quot;
@@ -3849,7 +3849,7 @@ _&quot;Isn't it nice that people who prefer Los Angeles to San Francisco live th
 &quot;Of all our visitors, I believe I preferred Emperor Norton; the very mention of whose name reminds me I am doing scanty justice to the folks of San Francisco. In what other city would a harmless madman who supposed himself emperor of the two Americas have been so fostered and encouraged? Where else would even the people of the streets have respected the poor soul's illusion? Where else would bankers and merchants have received his visits, cashed his cheques, and submitted to his small assessments? Where else would he have been suffered to attend and address the exhibition days of schools and colleges? Where else, in God's green earth, have taken his pick of restaurants, ransacked the bill of fare, and departed scatheless?&quot;
 – Robert Louis Stevenson, 'The Wrecker' (1892)._
 
-![I left my heart in San Francisco](29345961808_I%20left%20my%20heart%20in%20San%20Francisco.jpg)
+![I left my heart in San Francisco](<29345961808_I left my heart in San Francisco.jpg>)
 
 ## Phylogenomics
 _“I asked the Zebra, 
@@ -3914,7 +3914,7 @@ The people said, a weed.”
 “A false sense of security is the only kind there is.” 
 ― Michael Meade_
 
-![Stress (Heterostasis)](29395346225_Stress%20_Heterostasis_.jpg)
+![Stress (Heterostasis)](<29395346225_Stress _Heterostasis_.jpg>)
 
 ## Passion of the Colony
 _“I choose my friends for their good looks, my acquaintances for their good characters, and my enemies for their good intellects.” 
@@ -3929,7 +3929,7 @@ _“I choose my friends for their good looks, my acquaintances for their good ch
 &quot;Evolution is like walking on a rolling barrel. The walker isn't so much interested in where the barrel is going as he is in keeping on top of it.&quot;
 ― Robert Frost_
 
-![Passion of the Colony](29395451035_Passion%20of%20the%20Colony.jpg)
+![Passion of the Colony](<29395451035_Passion of the Colony.jpg>)
 
 ## Neural Circuit
 _&quot;The fact is the sweetest dream that labor knows.&quot;
@@ -3951,7 +3951,7 @@ _&quot;The fact is the sweetest dream that labor knows.&quot;
 — Sir William Bragg
 _
 
-![Neural Circuit](29452390584_Neural%20Circuit.jpg)
+![Neural Circuit](<29452390584_Neural Circuit.jpg>)
 
 ## Clairvoyance
 _&quot;Fire is the best of servants, but what a master!&quot;
@@ -3984,7 +3984,7 @@ _&quot;I see the moon like a clipped piece of silver. Like gilded bees the stars
 &quot;I have divers times examined the same matter (human semen) from a healthy man... not from a sick man... nor spoiled by keeping... for a long time and not liquefied after the lapse of some time... but immediately after ejaculation before six beats of the pulse had intervened; and I have seen so great a number of living animalcules... in it, that sometimes more than a thousand were moving about in an amount of material the size of a grain of sand... I saw this vast number of animalcules not all through the semen, but only in the liquid matter adhering to the thicker part.&quot;
 — Antonie van Leeuwenhoek (1677)_
 
-![Bridge (No Contest)](29505993632_Bridge%20_No%20Contest_.jpg)
+![Bridge (No Contest)](<29505993632_Bridge _No Contest_.jpg>)
 
 ## Proof via Pattern
 _&quot;Whoever says that this stillness does not exist is merely making noise.&quot;
@@ -4005,7 +4005,7 @@ Of self to one's sphere.&quot;
 &quot;You should call it entropy, for two reasons. In the first place your uncertainty function has been used in statistical mechanics under that name, so it already has a name. In the second place, and more important, no one really knows what entropy really is, so in a debate you will always have the advantage.&quot;
 – John von Neumann, suggesting to Claude Shannon a name for his new uncertainty function._
 
-![Proof via Pattern](29530891313_Proof%20via%20Pattern.jpg)
+![Proof via Pattern](<29530891313_Proof via Pattern.jpg>)
 
 ## Split #Selfie
 _&quot;One may understand the cosmos, but never the ego; the self is more distant than any star.&quot;
@@ -4023,7 +4023,7 @@ _&quot;One may understand the cosmos, but never the ego; the self is more distan
 &quot;It is impossible to answer your question briefly; and I am not sure that I could do so, even if I wrote at some length. But I may say that the impossibility of conceiving that this grand and wondrous universe, with our conscious selves, arose through chance, seems to me the chief argument for the existence of God; but whether this is an argument of real value, I have never been able to decide.&quot;
 — Charles Darwin (replying to query about his religious views, 1873)_
 
-![Split #Selfie](29616424295_Split%20_Selfie.jpg)
+![Split #Selfie](<29616424295_Split _Selfie.jpg>)
 
 ## Rock, Paper, Scissors
 _&quot;Sweets to the sweet: farewell.&quot;
@@ -4038,7 +4038,7 @@ _&quot;Sweets to the sweet: farewell.&quot;
 &quot;Here is the material for a really profound study in group neuroticism; for certainly, no one can deny the existence of a profoundly morbid streak in the Puritan imagination....The very preponderance of passionately pious men in the colony was virtually an assurance of unnatural crime; insomuch as psychology now proves the religious instinct to be a form of transmuted eroticism precisely parallel to the transmutations in other directions which respectively produce such things as sadism, hallucination, melancholia, and other mental morbidities. Bunch together a group of people deliberately chosen for strong religious feelings, and you have a practical guarantee of dark morbidities expressed in crime, perversion, and insanity. This was aggravated, of course, by the Puritan policy of rigorously suppressing all the natural outlets of exuberant feeling--music, laughter, colour, pageantry, and so on. To observe Christmas Day was once a prison offence....&quot;
 – H.P. Lovecraft_
 
-![Rock, Paper, Scissors](29689057583_Rock_%20Paper_%20Scissors.jpg)
+![Rock, Paper, Scissors](<29689057583_Rock_ Paper_ Scissors.jpg>)
 
 ## Ant Painting #1
 _Painting made as a side-effect of painting Ants (Arizona, 2018). 
@@ -4050,7 +4050,7 @@ _Painting made as a side-effect of painting Ants (Arizona, 2018).
 – Jules Olitski (1970), quoted in &quot;Painters Painting, a Candid History of The Modern Art Scene 1940-1970&quot;, E. de Antonio, Abbeville Press 1984, p. 81.
 _
 
-![Ant Painting #1](29700840127_Ant%20Painting%20_1.jpg)
+![Ant Painting #1](<29700840127_Ant Painting _1.jpg>)
 
 ## Embroidery
 _&quot;The wealthy obtain in Paris ready-made wit and science—formulated opinions which save them the need of having wit, science, or opinion of their own.&quot;
@@ -4095,7 +4095,7 @@ _&quot;I will make company with creators, with harvesters, with rejoicers; I wil
 – Stephen King
 _
 
-![...And So On...](30014282946____And%20So%20On___.jpg)
+![...And So On...](<30014282946____And So On___.jpg>)
 
 ## Radioactive Egg
 _&quot;Great minds don't think alike. If they did, the Patent Office would only have about fifty inventions.&quot;
@@ -4113,7 +4113,7 @@ _&quot;Great minds don't think alike. If they did, the Patent Office would only 
 &quot;After five years' work I allowed myself to speculate on the subject, and drew up some short notes; these I enlarged in 1844 into a sketch of the conclusions, which then seemed to me probable: from that period to the present day I have steadily pursued the same object. I hope that I may be excused for entering on these personal details, as I give them to show that I have not been hasty in coming to a decision.&quot;
 — Charles Darwin_
 
-![Radioactive Egg](30142523973_Radioactive%20Egg.jpg)
+![Radioactive Egg](<30142523973_Radioactive Egg.jpg>)
 
 ## Theory & Practice
 _Co-drawn with Pamela Davis Kivelson: <a href="http://facestell.com/" rel="nofollow">facestell.com/</a>
@@ -4130,7 +4130,7 @@ _Co-drawn with Pamela Davis Kivelson: <a href="http://facestell.com/" rel="nofol
 &quot;We speak of 'concrete' and not 'abstract painting', because we have finished with the period of research and speculative experience. In their search for purity artists were obliged to abstract from 'natural forms' in which the plastic elements were hidden, in order to eliminate natural forms and to replace them with 'artistic forms'. To-day the idea of 'artistic form' is as obsolete as the idea of 'natural form'. We establish the period of pure painting by constructing 'spiritual form'. Creative spirit becomes concrete.&quot;
 – Theo van Doesburg, 1930._
 
-![Theory & Practice](30200166820_Theory%20_%20Practice.jpg)
+![Theory & Practice](<30200166820_Theory _ Practice.jpg>)
 
 ## Mindset Reset
 _&quot;Normal people don't understand this concept; they believe that if it ain't broke, don't fix it. Engineers believe that if it ain't broke, it doesn't have enough features yet.&quot;
@@ -4141,7 +4141,7 @@ _&quot;Normal people don't understand this concept; they believe that if it ain'
 
 – Scott Adams_
 
-![Mindset Reset](30222121327_Mindset%20Reset.jpg)
+![Mindset Reset](<30222121327_Mindset Reset.jpg>)
 
 ## Promise
 _Это ещё цвето́чки, а я́годки впереди́.
@@ -4170,7 +4170,7 @@ Joseph Addison, The Spectator 243, (8 December 1711).
 &quot;Maturity includes the recognition that no one is going to see anything in us that we don't see in ourselves. Stop waiting for a producer. Produce yourself.&quot;
 – Marianne Williamson_
 
-![A Blobfish](30223077937_A%20Blobfish.jpg)
+![A Blobfish](<30223077937_A Blobfish.jpg>)
 
 ## Cybernetics
 _&quot;Cybernetics is the study of systems and processes that interact with themselves and produce themselves from themselves.&quot;
@@ -4209,7 +4209,7 @@ _&quot;A short saying often contains much wisdom.&quot;
 &quot;If we wished to relate the space of the [Cubist] painters to geometry, we should have to refer it to the non-Euclidean mathematicians; we should have to study, at some length, certain of Riemann's theorems.&quot; 
 – Jean Metzinger_
 
-![Crossing Over](30319696815_Crossing%20Over.jpg)
+![Crossing Over](<30319696815_Crossing Over.jpg>)
 
 ## Tension
 _&quot;Ironic philosophies produce passionate works.&quot;
@@ -4250,7 +4250,7 @@ _&quot;In this playhouse of infinite forms I have had my play, and here have I c
 – Alexander von Humboldt
 _
 
-![Discussion (Debate?)](30382392061_Discussion%20_Debate__.jpg)
+![Discussion (Debate?)](<30382392061_Discussion _Debate__.jpg>)
 
 ## De-Central Dogma
 _&quot;The tide of evolution carries everything before it, thoughts no less than bodies, and persons no less than nations.&quot;
@@ -4274,7 +4274,7 @@ Always remember that the &quot;Central Dogma&quot; is not &quot;DNA -&gt; RNA -&
 &quot;[The Central Dogma] states that once 'information' has passed into protein it cannot get out again. In more detail, the transfer of information from nucleic acid to nucleic acid, or from nucleic acid to protein may be possible, but transfer from protein to protein, or from protein to nucleic acid is impossible. Information means here the precise determination of sequence, either of bases in the nucleic acid or of amino acid residues in the protein.&quot; 
 — Francis Crick_
 
-![De-Central Dogma](30395377544_De-Central%20Dogma.jpg)
+![De-Central Dogma](<30395377544_De-Central Dogma.jpg>)
 
 ## Incubation (Gemini pt. 1)
 _&quot;The square is not a subconscious form. It is the creation of intuitive reason. The face of the new art. The square is a living, regal infant. The first step of pure creation in art.&quot;
@@ -4286,7 +4286,7 @@ _&quot;The square is not a subconscious form. It is the creation of intuitive re
 &quot;Take the birds which you'll have noticed in so many of my recent paintings. I never thought them up, they just materialized of their own accord; they were born on the canvas... it is absurd to read any sort of symbolic significance into them.&quot;
 – Georges Braque_
 
-![Incubation (Gemini pt. 1)](30412015021_Incubation%20_Gemini%20pt_%201_.jpg)
+![Incubation (Gemini pt. 1)](<30412015021_Incubation _Gemini pt_ 1_.jpg>)
 
 ## Elaboration (Gemini pt. 2)
 _&quot;A tendency toward the abstract is inherent in linear expression: graphic imagery being confined to outlines has a fairy-like quality and at the same time can achieve great precision.&quot;
@@ -4298,7 +4298,7 @@ _&quot;A tendency toward the abstract is inherent in linear expression: graphic 
 &quot;Art today is moving in directions of which our forebears had no inkling; the Horsemen of the Apocalypse are heard galloping through the air... – new artists are signaling to one another from all sides; a glance, a touch of the hand, is enough to convey understanding.&quot;
 – Franz Marc, 1912._
 
-![Elaboration (Gemini pt. 2)](30498700775_Elaboration%20_Gemini%20pt_%202_.jpg)
+![Elaboration (Gemini pt. 2)](<30498700775_Elaboration _Gemini pt_ 2_.jpg>)
 
 ## DNA Flowers
 _To argue with a man who has renounced the use and authority of reason ... is like administering medicines to the dead.&quot;
@@ -4313,7 +4313,7 @@ _To argue with a man who has renounced the use and authority of reason ... is li
 &quot;Man has risen, not fallen. He can choose to develop his capacities as the highest animal and to try to rise still farther, or he can choose otherwise. The choice is his responsibility, and his alone. There is no automatism that will carry him upward without choice or effort and there is no trend solely in the right direction. Evolution has no purpose; man must supply this for himself. The means to gaining right ends involve both organic evolution and human evolution, but human choice as to what are the right ends must be based on human evolution.&quot;
 — George Gaylord Simpson_
 
-![DNA Flowers](30531360583_DNA%20Flowers.jpg)
+![DNA Flowers](<30531360583_DNA Flowers.jpg>)
 
 ## Not a Coincidence.
 _&quot;In my experience, there's no such thing as luck.&quot;
@@ -4333,7 +4333,7 @@ We have something like a miracle&quot;
 &quot;All of our experience indicates that life can manifest itself only in a concrete form, and that it is bound to certain substantial loci. These loci are cells and cell formations. But we are far from seeking the last and highest level of understanding in the morphology of these loci of life. Anatomy does not exclude physiology, but physiology certainly presupposes anatomy. The phenomena that the physiologist investigates occur in special organs with quite characteristic anatomical arrangements; the various morphological parts disclosed by the anatomist are the bearers of properties or, if you will, of forces probed by the physiologist; when the physiologist has established a law, whether through physical or chemical investigation, the anatomist can still proudly state: This is the structure in which the law becomes manifest.&quot;
 — Rudolf Virchow, 1855. _
 
-![Not a Coincidence.](30603344374_Not%20a%20Coincidence_.jpg)
+![Not a Coincidence.](<30603344374_Not a Coincidence_.jpg>)
 
 ## Eusocialism
 _&quot;Self: that invisible chain that snaps tight whenever we stray.&quot;
@@ -4365,7 +4365,7 @@ The bright blessed day, the dark sacred night
 And I think to myself what a wonderful world.&quot;
 – Louis Armstrong, &quot;What a Wonderful World&quot;._
 
-![Element of Protection](30609604238_Element%20of%20Protection.jpg)
+![Element of Protection](<30609604238_Element of Protection.jpg>)
 
 ## Love is at the center
 _&quot;Let this be my last word, that I trust in thy love.&quot;
@@ -4388,7 +4388,7 @@ _&quot;Let this be my last word, that I trust in thy love.&quot;
 &quot;As an organ is exercised, circulation is more particularly directed to it and is more readily performed in it. Consequently, all its secretions and excretions increase. The more an organ is exercised, the more it is nourished.&quot;
 — George-Louis Duvernoy, 1799._
 
-![Love is at the center](30617872874_Love%20is%20at%20the%20center.jpg)
+![Love is at the center](<30617872874_Love is at the center.jpg>)
 
 ## Kùn (Exhaustion, #47)
 _&quot;As for the earth, out of it comes bread, but underneath it is turned up as by fire. Its stones are the place of sapphires, and it has dust of gold.&quot;
@@ -4411,7 +4411,7 @@ One truth is clear, 'Whatever IS, is RIGHT.' &quot;
 &quot;I hear new news every day, and those ordinary rumours of war, plagues, fires, inundations, thefts, murders, massacres, meteors, comets, spectrums, prodigies, apparitions, of towns taken, cities besieged in France, Germany, Turkey, Persia, Poland, &amp;c., daily musters and preparations, and such like, which these tempestuous times afford, battles fought, so many men slain, monomachies, shipwrecks, piracies, and sea-fights, peace, leagues, stratagems, and fresh alarms. A vast confusion of vows, wishes, actions, edicts, petitions, lawsuits, pleas, laws, proclamations, complaints, grievances, are daily brought to our ears. New books every day, pamphlets, currantoes, stories, whole catalogues of volumes of all sorts, new paradoxes, opinions, schisms, heresies, controversies in philosophy, religion, &amp;c. Now come tidings of weddings, maskings, mummeries, entertainments, jubilees, embassies, tilts and tournaments, trophies, triumphs, revels, sports, plays: then again, as in a new shifted scene, treasons, cheating tricks, robberies, enormous villanies in all kinds, funerals, burials, deaths of Princes, new discoveries, expeditions; now comical then tragical matters. To-day we hear of new Lords and officers created, to-morrow of some great men deposed, and then again of fresh honours conferred; one is let loose, another imprisoned; one purchaseth, another breaketh: he thrives, his neighbour turns bankrupt; now plenty, then again dearth and famine; one runs, another rides, wrangles, laughs, weeps &amp;c. Thus I daily hear, and such like, both private and publick news. Amdist the gallantry and misery of the world: jollity, pride, perplexities and cares, simplicity and villany; subtlety, knavery, candour and integrity, mutually mixed and offering themselves, I rub on in a strictly private life; as I have still lived, so I now continue, as I was from the first, left to a solitary life, and mine own domestick discontents: saving that sometimes, not to tell a lie, as Diogenes went into the city, and Democritus to the haven, to see fashions, I did for my recreation now and then walk abroad, look into the world, and could not choose but make some little observation, not so wise an observer as a plain rehearser, not as they did to scoff or laugh at all, but with a mixed passion.&quot;
  — Robert Burton, The Anatomy of Melancholy etc., &quot;Democritus Junior to the Reader&quot;_
 
-![Kùn (Exhaustion, #47)](30689635181_Kùn%20_Exhaustion_%20_47_.jpg)
+![Kùn (Exhaustion, #47)](<30689635181_Kùn _Exhaustion_ _47_.jpg>)
 
 ## Alternative Current
 _&quot;A good teacher must know the rules; a good pupil, the exceptions.&quot;
@@ -4423,7 +4423,7 @@ _&quot;A good teacher must know the rules; a good pupil, the exceptions.&quot;
 &quot;After the planet becomes theirs, many millions of years will have to pass before a beetle particularly loved by God, at the end of its calculations will find written on a sheet of paper in letters of fire that energy is equal to the mass multiplied by the square of the velocity of light. The new kings of the world will live tranquilly for a long time, confining themselves to devouring each other and being parasites among each other on a cottage industry scale.&quot;
 — Primo Levi_
 
-![Alternative Current](30721687903_Alternative%20Current.jpg)
+![Alternative Current](<30721687903_Alternative Current.jpg>)
 
 ## Practice Makes Practice, Perfect Makes Nothing
 _&quot;To our age anything Delphic is anathema. We want the definite. As certainly as ours is a time of the expert and technician, we are living under a dynasty of the intellect, and the aim of the intellect is not to wonder and love and grow wise about life, but to control it.&quot;
@@ -4434,7 +4434,7 @@ _&quot;To our age anything Delphic is anathema. We want the definite. As certain
 
 *** As of uploading on 11/1/2018, there are no google hits for the exact phrase &quot;Practice Makes Practice, Perfect Makes Nothing&quot;. Is it true that no one else has considered this short and highly plausible sentence? _
 
-![Practice Makes Practice, Perfect Makes Nothing](30726433787_Practice%20Makes%20Practice_%20Perfect%20Makes%20Nothing.jpg)
+![Practice Makes Practice, Perfect Makes Nothing](<30726433787_Practice Makes Practice_ Perfect Makes Nothing.jpg>)
 
 ## A Biologist Draws Astrophysics
 _&quot;She looks as if butter wouldn't melt in her mouth.&quot;
@@ -4446,7 +4446,7 @@ _&quot;She looks as if butter wouldn't melt in her mouth.&quot;
 &quot;There is a cult of ignorance in the United States, and there always has been. The strain of anti-intellectualism has been a constant thread winding its way through our political and cultural life, nurtured by the false notion that democracy means that 'my ignorance is just as good as your knowledge.'&quot;
 – Isaac Asimov, Column in Newsweek (21 January 1980)_
 
-![A Biologist Draws Astrophysics](30726584387_A%20Biologist%20Draws%20Astrophysics.jpg)
+![A Biologist Draws Astrophysics](<30726584387_A Biologist Draws Astrophysics.jpg>)
 
 ## Evolution of Form, Ecology of Function
 _&quot;Hypotheses non fingo.&quot;
@@ -4470,7 +4470,7 @@ _&quot;Hypotheses non fingo.&quot;
 &quot;I have witnessed a most remarkable drama here, one which to me as a German was very unexpected, and quite shocking. I saw the famous M. Lavoisier hold a ceremonial auto-da-fe of phlogiston in the Arsenal. His wife served as the sacrificial priestess, and Stahl appeared as the advocatus diaboli to defend phlogiston. In the end, poor phlogiston was burned on the accusation of oxygen. Do you not think I have made a droll discovery? Everything is literally true. I will not say whether the cause of phlogiston is now irretrievably lost, or what I think about the issue. But I am glad that this spectacle was not presented in my fatherland.&quot;
 — Lorenz Crell, 1789._
 
-![Evolution of Form, Ecology of Function](30777807175_Evolution%20of%20Form_%20Ecology%20of%20Function.jpg)
+![Evolution of Form, Ecology of Function](<30777807175_Evolution of Form_ Ecology of Function.jpg>)
 
 ## Median vs. Mean
 _&quot;I had seen the great, but I had not seen the small.&quot;
@@ -4493,7 +4493,7 @@ _&quot;I had seen the great, but I had not seen the small.&quot;
 Some bitter o'er the flowers its bubbling venom flings.&quot;
 – Lord Byron,_
 
-![Median vs. Mean](30828075192_Median%20vs_%20Mean.jpg)
+![Median vs. Mean](<30828075192_Median vs_ Mean.jpg>)
 
 ## Eternal Recurrence
 _&quot;I am a tradesman not a polymath; why I know of planets and politics lies at their intersection with biological evolution.&quot;
@@ -4512,7 +4512,7 @@ From Opticks, (1704).
 &quot;The spectral density of black body radiation ... represents something absolute, and since the search for the absolutes has always appeared to me to be the highest form of research, I applied myself vigorously to its solution.&quot;
 — Max Planck_
 
-![Eternal Recurrence](30970155190_Eternal%20Recurrence.jpg)
+![Eternal Recurrence](<30970155190_Eternal Recurrence.jpg>)
 
 ## Cell
 _&quot;No people do so much harm as those who go about doing good.&quot; 
@@ -4569,7 +4569,7 @@ Oh, I'm so glad I found you there
 Derek and Susan's version:
 <a href="https://www.youtube.com/watch?v=eeGD8y2cikc" rel="nofollow">www.youtube.com/watch?v=eeGD8y2cikc</a>_
 
-![Maybe I was running...](31135883343_Maybe%20I%20was%20running___.jpg)
+![Maybe I was running...](<31135883343_Maybe I was running___.jpg>)
 
 ## Fundamentals
 _&quot;And the whole [is] greater than the part.&quot;
@@ -4600,7 +4600,7 @@ _&quot;Krishna the beautiful aspect of God. Love crystallises into blueness. Blu
 &quot;There is another holy bird, called the Phoenix, which I have never seen but in pictures. He rarely appears in Egypt — only once in every 500 years, so they say, in Heliopolis — and he is supposed to come when his father dies. If the painter describes him truly, his plumage is part golden and part red, and he is very like an eagle in shape and size. They say that this bird comes from Arabia, bringing the body of his father embalmed in myrrh to the temple of the sun, and there he buries him. First he molds an egg of myrrh; then he puts his father in the middle of it. Lastly, he covers up the body with myrrh. This is what they say this bird does. But I do not believe them.&quot;
 – Herodotus, in 'Histories' Vol. 2._
 
-!["Driving" In The Rain](31151982797__Driving_%20In%20The%20Rain.jpg)
+!["Driving" In The Rain](<31151982797__Driving_ In The Rain.jpg>)
 
 ## Delicate
 _&quot;I asked myself about the present: how wide it was, how deep it was, how much was mine to keep.&quot;
@@ -4638,7 +4638,7 @@ Corrected and improved
 By the Author.&quot;
 – Epitaph of Benjamin Franklin_
 
-![Midgut (Digestion)](31177485445_Midgut%20_Digestion_.jpg)
+![Midgut (Digestion)](<31177485445_Midgut _Digestion_.jpg>)
 
 ## Tophat
 _&quot;It’s no use crying over spilt evils. It’s better to mop them up laughing.&quot;
@@ -4663,7 +4663,7 @@ By mere mechanic operation.&quot;
 &quot;American literature sounds like a child learning to talk, and then aping its elders; Russian literature is the voice of a giant, waking from a long sleep, and becoming articulate. It is as though the world had watched this giant's deep slumber for a long time, wondering what he would say when he awakened. And what he has said has been well worth the thousand years of waiting.&quot;
 – W. L. Phelps. 'Essays on Russian Novelists' (1911), page 2._
 
-![I Love Foraging](31363081007_I%20Love%20Foraging.jpg)
+![I Love Foraging](<31363081007_I Love Foraging.jpg>)
 
 ## Coincidence?
 _&quot;The mountains too, at a distance, appear airy masses and smooth, but seen near at hand they are rough.&quot;
@@ -4777,7 +4777,7 @@ Reporter: &quot;Would a reasonable observer say that you are potentially vulnera
 Trump: .....Lemme just tell you what I do. When I leave our country, I’m a very high-profile person, would you say? I am extremely careful. I’m surrounded by bodyguards. I’m surrounded by people. And I always tell them — anywhere, but I always tell them if I’m leaving this country, “Be very careful, because in your hotel rooms and no matter where you go, you’re gonna probably have cameras.” I’m not referring just to Russia, but I would certainly put them in that category. And number one, “I hope you’re gonna be good anyway. But in those rooms, you have cameras in the strangest places. Cameras that are so small with modern technology, you can’t see them and you won’t know. You better be careful, or you’ll be watching yourself on nightly television.” I tell this to people all the time. I was in Russia years ago, with the Miss Universe contest, which did very well — Moscow, the Moscow area did very, very well. And I told many people, “Be careful, because you don’t wanna see yourself on television. Cameras all over the place.” And again, not just Russia, all over. Does anyone really believe that story? I’m also very much of a germaphobe, by the way, believe me..........
 – President Donald Trump Press Conference at Trump Tower (11 January 2017)._
 
-![No droplet causes the storm](31642962814_No%20droplet%20causes%20the%20storm.jpg)
+![No droplet causes the storm](<31642962814_No droplet causes the storm.jpg>)
 
 ## Emotion & Logic
 _&quot;We cannot keep thieves from looking in at our windows, but we need not give them entertainment with open doors.&quot;
@@ -4797,7 +4797,7 @@ As when 'tis in a wrong belief.&quot;
 – Eliezer Yudkowsky
 _
 
-![Emotion & Logic](31675141623_Emotion%20_%20Logic.jpg)
+![Emotion & Logic](<31675141623_Emotion _ Logic.jpg>)
 
 ## Spaceship
 _&quot;When I sleep I sleep and do not dream because it is as well that I am what I seem when I am in my bed and dream.&quot;
@@ -4842,7 +4842,7 @@ _&quot;Those who deny Auschwitz would be ready to remake it.&quot;
 &quot;In these days of doubt, in these days of painful brooding over the fate of my country, thou alone art my rod and my staff, O great, mighty, true and free Russian language!&quot;
 – Ivan Turgenev, 1882._
 
-![Neuroglial Circuit](31775331210_Neuroglial%20Circuit.jpg)
+![Neuroglial Circuit](<31775331210_Neuroglial Circuit.jpg>)
 
 ## Propagation
 _&quot;Those who restrain desire do so because theirs is weak enough to be restrained.&quot;
@@ -4885,7 +4885,7 @@ _&quot;Yet a man may love a paradox, without losing either his wit or his honest
 &quot;Reason is feminine in nature; it can only give after it has received. Of itself it has nothing but the empty forms of its operation. There is no absolutely pure rational knowledge except the four principles to which I have attributed metalogical truth; the principles of identity, contradiction, excluded middle, and sufficient reason of knowledge. For even the rest of logic is not absolutely pure rational knowledge. It presupposes the relations and the combinations of the spheres of concepts. But concepts in general only exist after experience of ideas of perception, and as their whole nature consists in their relation to these, it is clear that they presuppose them.&quot;
 — Arthur Schopenhauer _
 
-![I of the Storm](31907916606_I%20of%20the%20Storm.jpg)
+![I of the Storm](<31907916606_I of the Storm.jpg>)
 
 ## Leaky Integrator
 _&quot;There is not more difference betwixt a grant and feoffment, than betwixt one egg and another.&quot;
@@ -4897,7 +4897,7 @@ _&quot;There is not more difference betwixt a grant and feoffment, than betwixt 
 &quot;DAWN, n. The time when men of reason go to bed. Certain old men prefer to rise at about that time, taking a cold bath and a long walk with an empty stomach, and otherwise mortifying the flesh. They then point with pride to these practices as the cause of their sturdy health and ripe years; the truth being that they are hearty and old, not because of their habits, but in spite of them. The reason we find only robust persons doing this thing is that it has killed all the others who have tried it.&quot;
 – Ambrose Bierce, &quot;The Cynic's Dictionary&quot; (1906); republished as &quot;The Devil's Dictionary&quot; (1911)._
 
-![Leaky Integrator](31910033957_Leaky%20Integrator.jpg)
+![Leaky Integrator](<31910033957_Leaky Integrator.jpg>)
 
 ## Golden Crossings
 _&quot;We laugh at honour and are shocked to find traitors in our midst.&quot;
@@ -4909,7 +4909,7 @@ _&quot;We laugh at honour and are shocked to find traitors in our midst.&quot;
 &quot;I myself find the division of the world into an objective and a subjective side much too arbitrary. The fact that religions through the ages have spoken in images, parables, and paradoxes means simply that there are no other ways of grasping the reality to which they refer. But that does not mean that it is not a genuine reality. And splitting this reality into an objective and a subjective side won't get us very far.&quot;
 – Niels Bohr, in remarks after the Solvay Conference of 1927._
 
-![Golden Crossings](31910034077_Golden%20Crossings.jpg)
+![Golden Crossings](<31910034077_Golden Crossings.jpg>)
 
 ## Outrage
 _Outrage: As bitter going in, as it is going out. 
@@ -4949,7 +4949,7 @@ One sees the mud, and one the stars.&quot;
 
 _
 
-![Thank you](32093590684_Thank%20you.jpg)
+![Thank you](<32093590684_Thank you.jpg>)
 
 ## Unbroken (The Circle Will Be)
 _&quot;No longer shall I paint interiors with men reading and women knitting. I will paint living people who breathe and feel and suffer and love.&quot;
@@ -4961,7 +4961,7 @@ _&quot;No longer shall I paint interiors with men reading and women knitting. I 
 &quot;Aphorisms, except they should be ridiculous, cannot be made but of the pith and heart of sciences; for discourse of illustration is cut off; recitals of examples are cut off; discourse of connection and order is cut off; descriptions of practice are cut off. So there remaineth nothing to fill the aphorisms but some good quantity of observation; and therefore no man can suffice, nor in reason will attempt, to write aphorisms, but he that is sound and grounded.&quot;
 – Francis Bacon (1561–1626), &quot;The Proficience and Advancement of Learning&quot; (1605), Second Book, XI–XX p. 5._
 
-![Unbroken (The Circle Will Be)](32099765007_Unbroken%20_The%20Circle%20Will%20Be_.jpg)
+![Unbroken (The Circle Will Be)](<32099765007_Unbroken _The Circle Will Be_.jpg>)
 
 ## Sexual Selection
 _&quot;Live Mas.&quot;
@@ -4977,7 +4977,7 @@ Estragon: (with exaggerated enthusiasm). &quot;I find this really most extraordi
 &quot;Take the birds which you'll have noticed in so many of my recent paintings. I never thought them up, they just materialized of their own accord; they were born on the canvas... it is absurd to read any sort of symbolic significance into them.&quot;
 – Georges Braque_
 
-![Sexual Selection](32099875007_Sexual%20Selection.jpg)
+![Sexual Selection](<32099875007_Sexual Selection.jpg>)
 
 ## Caltrain is for lovers
 _Caltrain is the public transportation option that goes between San Jose and San Francisco, California. 
@@ -5006,7 +5006,7 @@ Centuries more gave a thumb to his wrist—
 Then he was a MAN and a Positivist.:
 – Mortimer Collins, 1922_
 
-![Caltrain is for lovers](32119564941_Caltrain%20is%20for%20lovers.jpg)
+![Caltrain is for lovers](<32119564941_Caltrain is for lovers.jpg>)
 
 ## Life's Trajectory (Ontogenesis)
 _&quot;There is a certain relief in change, even though it be from bad to worse! As I have often found in traveling in a stagecoach, that it is often a comfort to shift one’s position, and be bruised in a new place.&quot;
@@ -5021,7 +5021,7 @@ _&quot;There is a certain relief in change, even though it be from bad to worse!
 &quot;Reports of the death of reductionism are greatly exaggerated. It is so ingrained in our thinking that if one day some magical force should make us all forget it, we would promptly have to reinvent it. The real worry is not with reductionism, which, as a paradigm and tool, is rather useful. It is necessary, but no longer sufficient. But, weighing up better ideas, it became a burden.&quot;
 – Albert-László Barabási, &quot;The network takeover&quot;, Nature Physics (2012)._
 
-![Life's Trajectory (Ontogenesis)](32179783760_Life_s%20Trajectory%20_Ontogenesis_.jpg)
+![Life's Trajectory (Ontogenesis)](<32179783760_Life_s Trajectory _Ontogenesis_.jpg>)
 
 ## Triangulated
 _&quot;Burning Man is an annual experiment in temporary community dedicated to radical self-expression and radical self-reliance.&quot;
@@ -5050,7 +5050,7 @@ He thinks in secret, and it comes to pass:
 Environment is but his looking-glass.&quot;
 – James Allen, &quot;As A Man Thinketh&quot; (1902)._
 
-![Fractal Heart](32186073067_Fractal%20Heart.jpg)
+![Fractal Heart](<32186073067_Fractal Heart.jpg>)
 
 ## Earth & Space
 _&quot;Eugenics was not inspired by Darwin's natural selection but by ancient agricultural ARTIFICIAL selection. Eugenics is UNnatural selection.&quot;
@@ -5064,7 +5064,7 @@ persons apparently have voluntary control of various parapsychological abilities
 (Green, 1972; Stanford Research Institute, 1973).&quot;
 – &quot;Changing Images of Man&quot;, The Center for the Study of Social Policy / SRI International (1982). _
 
-![Earth & Space](32186233377_Earth%20_%20Space.jpg)
+![Earth & Space](<32186233377_Earth _ Space.jpg>)
 
 ## PEACE
 _&quot;But optics sharp it needs, I ween,
@@ -5099,7 +5099,7 @@ _&quot;Understand this, I mean to arrive at the truth. The truth, however ugly i
 — Hermann Hesse, 'Steppenwolf' (1927) 
 _
 
-![The Cave](32330984124_The%20Cave.jpg)
+![The Cave](<32330984124_The Cave.jpg>)
 
 ## No Raindrop Causes The Flood
 _&quot;शेवटी काय हो, आपण पत्त्याच्या नावाचे धनी, मजकुराचा मालक निराळाच.&quot;
@@ -5112,7 +5112,7 @@ Translation = &quot;In a letter, all we own is the address on the envelope. The 
 &quot;Through wisdom is an house builded; and by understanding it is established: And by knowledge shall the chambers be filled with all precious and pleasant riches.&quot;
 — Proverbs 24:3-4 _
 
-![No Raindrop Causes The Flood](32331088474_No%20Raindrop%20Causes%20The%20Flood.jpg)
+![No Raindrop Causes The Flood](<32331088474_No Raindrop Causes The Flood.jpg>)
 
 ## Natalism
 _&quot;If it took Labouchere three columns to prove that I was forgotten, then there is no difference between fame and obscurity.&quot;
@@ -5155,7 +5155,7 @@ _&quot;Maybe all one can do is hope to end up with the right regrets.&quot;
 — Paul Karl Feyerabend, 'Science in a Free Society' (1978).
 _
 
-![Meditation (in situ hybridization)](32361044343_Meditation%20_in%20situ%20hybridization_.jpg)
+![Meditation (in situ hybridization)](<32361044343_Meditation _in situ hybridization_.jpg>)
 
 ## Karma (Cycle of Errors)
 _&quot;The person attempting to travel two roads at once will get nowhere.&quot;
@@ -5178,7 +5178,7 @@ Of our existence.&quot;
 &quot;When I behold this I sighed, and said within myself, &quot;Surely mortal man is a broomstick!&quot; Nature sent him into the world strong and lusty, in a thriving condition, wearing his own hair on his head, the proper branches of this reasoning vegetable, till the axe of intemperance has lopped off his green boughs, and left him a withered trunk; he then flies to art, and puts on a periwig, valuing himself upon an unnatural bundle of hairs, all covered with powder, that never grew on his head; but now should this our broomstick pretend to enter the scene, proud of those birchen spoils it never bore, and all covered with dust, through the sweepings of the finest lady's chamber, we should be apt to ridicule and despise its vanity. Partial judges that we are of our own excellencies, and other men's defaults!&quot;
 – Jonathan Swift, Meditation on a Broomstick (1703–1710)_
 
-![Karma (Cycle of Errors)](32364884921_Karma%20_Cycle%20of%20Errors_.jpg)
+![Karma (Cycle of Errors)](<32364884921_Karma _Cycle of Errors_.jpg>)
 
 ## Formplay
 _&quot;The opposite of loneliness, it's not togetherness. It is intimacy.&quot;
@@ -5212,7 +5212,7 @@ _&quot;RAILROAD, n. The chief of many mechanical devices enabling us to get away
 &quot;Every person of any experience in Courts of justice, knows that a scintilla of evidence against a railway company is enough to secure a verdict for the plaintiff. I was once in a case before a most able Judge, the late Chief Justice Jervis, in which I was beaten, I dare say rightly, in consequence of an observation of his: &quot;Nothing is so easy as to be wise after the event.&quot;
 – Bramwell, B., Cornman v. The Eastern Counties Rail. Co. (1859), 5 Jur. (N. S.) 658; reported in James William Norton-Kyshe, Dictionary of Legal Quotations (1904)._
 
-![Amtrak (Green New Deal)](32410249487_Amtrak%20_Green%20New%20Deal_.jpg)
+![Amtrak (Green New Deal)](<32410249487_Amtrak _Green New Deal_.jpg>)
 
 ## Duality [duality]
 _&quot;A girl in a convertible is worth five in the phonebook.&quot;
@@ -5231,7 +5231,7 @@ _&quot;A girl in a convertible is worth five in the phonebook.&quot;
 – Matthew Arnold, 'Culture and Anarchy', 1867
 _
 
-![Duality [duality]](32429675060_Duality%20_duality_.jpg)
+![Duality [duality]](<32429675060_Duality _duality_.jpg>)
 
 ## Eggs & Waffles
 _&quot;Could swell the soul to rage, or kindle soft desire....&quot;
@@ -5246,7 +5246,7 @@ _&quot;Could swell the soul to rage, or kindle soft desire....&quot;
 ​​&quot;The natural scientist must be a modern materialist, a conscious adherent of the materialism represented by Marx, i.e., he must be a dialectical materialist.&quot;
 – Vladimir Lenin_
 
-![Eggs & Waffles](32436589271_Eggs%20_%20Waffles.jpg)
+![Eggs & Waffles](<32436589271_Eggs _ Waffles.jpg>)
 
 ## I Can See Why
 _&quot;For example, the tiny ant, a creature of great industry, drags with its mouth whatever it can, and adds it to the heap which she is piling up, not unaware nor careless of the future.&quot;
@@ -5258,7 +5258,7 @@ _&quot;For example, the tiny ant, a creature of great industry, drags with its m
 &quot;Swarm Intelligence can be defined more precisely as: Any attempt to design algorithms or distributed problem-solving methods inspired by the collective behavior of the social insect colonies or other animal societies. The main properties of such systems are flexibility, robustness, decentralization and self-organization.&quot;
 – Ajith Abraham, Crina Grosan, Vitorino Ramos, Springer, editors, &quot;Swarm Intelligence in Data Mining&quot; (2006)._
 
-![I Can See Why](32465199837_I%20Can%20See%20Why.jpg)
+![I Can See Why](<32465199837_I Can See Why.jpg>)
 
 ## Game Theory
 _&quot;Mathematics is not a careful march down a well-cleared highway, but a journey into a strange wilderness, where the explorers often get lost. Rigour should be a signal to the historian that the maps have been made, and the real explorers have gone elsewhere.&quot;
@@ -5271,7 +5271,7 @@ _&quot;Mathematics is not a careful march down a well-cleared highway, but a jou
 – W. C. Allee, &quot;The Social Life of Animals&quot; (1938), Chapter VII: Some Human Implications.
 _
 
-![Game Theory](32465294727_Game%20Theory.jpg)
+![Game Theory](<32465294727_Game Theory.jpg>)
 
 ## Twist
 _&quot;Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.&quot;
@@ -5300,7 +5300,7 @@ Beyond the range of human intellect.&quot;
 &quot;Freudian concepts exposed the fraud of the existence of the 'individual'. To be absolutely clear here: the Freudian concepts expose the fraud, not so as to perpetuate it, but undo it. That is, unlike the mechanical behaviorists, the point was not to prove that the individual was an illusion; rather it was to show to what extent the individual did not yet exist.&quot;
 – Russell Jacoby, Social Amnesia (1975)_
 
-!["Only art pierces the veil..."](32518304116__Only%20art%20pierces%20the%20veil____.jpg)
+!["Only art pierces the veil..."](<32518304116__Only art pierces the veil____.jpg>)
 
 ## all i see (under the see)
 _&quot;It seems to be the fate of idealists to obtain what they have struggled for in a form which destroys their ideals.&quot;
@@ -5321,7 +5321,7 @@ They moved like stars united in their spheres,
 Or like the Rhône by Leman's waters wash'd...&quot;
 – Lord Byron, 'Don Juan' (1818-24), Canto XIV, Stanza 87._
 
-![all i see (under the see)](32638574675_all%20i%20see%20_under%20the%20see_.jpg)
+![all i see (under the see)](<32638574675_all i see _under the see_.jpg>)
 
 ## "Fiat Fiat" (The Agenda)
 _&quot;Though the clown is often deadpan, he is a connoisseur of laughter.&quot;
@@ -5333,7 +5333,7 @@ _&quot;Though the clown is often deadpan, he is a connoisseur of laughter.&quot;
 &quot;FOLLY, n. That &quot;gift and faculty divine&quot; whose creative and controlling energy inspires Man's mind, guides his actions and adorns his life.&quot;
 Ambrose Bierce, The Cynic's Dictionary (1906);_
 
-!["Fiat Fiat" (The Agenda)](32681300967__Fiat%20Fiat_%20_The%20Agenda_.jpg)
+!["Fiat Fiat" (The Agenda)](<32681300967__Fiat Fiat_ _The Agenda_.jpg>)
 
 ## Divisive
 _&quot;Die Theologie ist die Anthropologie.&quot;
@@ -5387,10 +5387,10 @@ Ask of thyself what beauty is.&quot;
 – Philip James Bailey, &quot;Festus&quot; (1813).
 _
 
-![Gene Expression](32745992391_Gene%20Expression.jpg)
+![Gene Expression](<32745992391_Gene Expression.jpg>)
 
 ## Deep State (Cave Within The Cave)
-![Deep State (Cave Within The Cave)](32747386107_Deep%20State%20_Cave%20Within%20The%20Cave_.jpg)
+![Deep State (Cave Within The Cave)](<32747386107_Deep State _Cave Within The Cave_.jpg>)
 
 ## Conspiracy
 _&quot;In my opinion, the King's Gambit is busted. It loses by force.”
@@ -5414,7 +5414,7 @@ _&quot;I am, in point of fact, a particularly haughty and exclusive person, of p
 &quot;Even in our poor old country, with its aristocratic class materialized, its middle class vulgarized, its lower class brutalized, there are to be found individuals, as I have again and again said, lovers of the humane life, lovers of perfection, who emerge in all classes, and who, while they are more or less in conflict with the present, point to a better future.&quot;
 — Matthew Arnold, 'Civilization in the United States' (1888)._
 
-![Organic River](32751832474_Organic%20River.jpg)
+![Organic River](<32751832474_Organic River.jpg>)
 
 ## Brainstorms
 _&quot;Whenever Darwinism is the topic, the temperature rises, because more is at stake than just the empirical facts about how life on Earth evolved, or the correct logic of the theory that accounts for those facts. One of the precious things that is at stake is a vision of what it means to ask, and answer, the question &quot;Why?&quot; Darwin's new perspective turns several traditional assumptions upside down, undermining our standard ideas about what ought to count as satisfying answers to this ancient and inescapable question. Here science and philosophy get completely intertwined. Scientists sometimes deceive themselves into thinking that philosophical ideas are only, at best, decorations or parasitic commentaries on the hard, objective triumphs of science, and that they themselves are immune to the confusions that philosophers devote their lives to dissolving. But there is no such thing as philosophy-free science; there is only science whose philosophical baggage is taken on board without examination.&quot;
@@ -5448,7 +5448,7 @@ _&quot;Is the world created or uncreated? That is the first question.&quot;
 &quot;Not long ago, if you wanted to seize political power in a country you had merely to control the army and the police. Today it is only in the most backward countries that fascist generals, in carrying out a coup d'état, still use tanks. If a country has reached a high degree of industrialization the whole scene changes. The day after the fall of Khrushchev, the editors of Pravda, Izvestiia, the heads of the radio and television were replaced; the army wasn't called out. Today a country belongs to the person who controls communications.&quot;
 – Umberto Eco, 'Il costume di casa' (1973); as translated in 'Travels in Hyperreality' (1986)._
 
-![Checks & Balances](32812642641_Checks%20_%20Balances.jpg)
+![Checks & Balances](<32812642641_Checks _ Balances.jpg>)
 
 ## Ecstatic Dance
 _&quot;Sometimes one would almost like to say: what really matters is only the mind. But where can you find a mind without a body?&quot;
@@ -5463,7 +5463,7 @@ That rise, and fall, that swell, and are no more,
 Born, and forgot, ten thousand in an hour?&quot;
 ​— Edward Young, Love of Fame (1725-1728)_
 
-![Ecstatic Dance](32920792562_Ecstatic%20Dance.jpg)
+![Ecstatic Dance](<32920792562_Ecstatic Dance.jpg>)
 
 ## Jailbreak Your Mind
 _&quot;The sick in soul insist that it is humanity that is sick, and they are the surgeons to operate on it. They want to turn the world into a sickroom. And once they get humanity strapped to the operating table, they operate on it with an ax.&quot;
@@ -5478,7 +5478,7 @@ _&quot;The sick in soul insist that it is humanity that is sick, and they are th
 &quot;Show me a man or a woman alone and I'll show you a saint. Give me two and they'll fall in love. Give me three and they'll invent the charming thing we call 'society'. Give me four and they'll build a pyramid. Give me five and they'll make one an outcast. Give me six and they'll reinvent prejudice. Give me seven and in seven years they'll reinvent warfare. Man may have been made in the image of God, but human society was made in the image of His opposite number, and is always trying to get back home.&quot;
 ​— Stephen King, The Stand: The Complete &amp; Uncut Edition (1990)_
 
-![Jailbreak Your Mind](32921191192_Jailbreak%20Your%20Mind.jpg)
+![Jailbreak Your Mind](<32921191192_Jailbreak Your Mind.jpg>)
 
 ## Determination
 _&quot;Everyone is a prisoner of his own experiences. No one can eliminate prejudices — just recognize them.&quot;
@@ -5502,7 +5502,7 @@ _&quot;When strength is yoked with justice, where is a mightier pair than they?&
 &quot;A quarter of America is a dramatic, tense, violent country, exploding with contradictions, full of brutal, physiological vitality, and that is the America that I have really loved and love. But a good half of it is a country of boredom, emptiness, monotony, brainless production, and brainless consumption, and this is the American inferno.&quot;
 – Italo Calvino, &quot;Letters, 1941-1985&quot;._
 
-![Childcare is Future Care](32975941528_Childcare%20is%20Future%20Care.jpg)
+![Childcare is Future Care](<32975941528_Childcare is Future Care.jpg>)
 
 ## Family (Hereditarianism)
 _&quot;The world is a wheel, and it will all come round right.&quot;
@@ -5514,7 +5514,7 @@ _&quot;The world is a wheel, and it will all come round right.&quot;
 &quot;The Letheri are masters at corrupting words, their meanings. They call war peace, they call tyranny liberty. On which side of the shadow you stand decides a word's meaning. Words are the weapons used by those who see others with contempt. A contempt which only deepens when they see how those others are deceived and made into fools because they choose to believe. Because in their naivety they thought the meaning of a word was fixed, immune to abuse.&quot;
 – Steven Erikson, in &quot;Reaper's Gale&quot; (2007)._
 
-![Family (Hereditarianism)](32976045888_Family%20_Hereditarianism_.jpg)
+![Family (Hereditarianism)](<32976045888_Family _Hereditarianism_.jpg>)
 
 ## Overlap
 _&quot;The disease having been caused by allowing cleverness to displace wisdom, no amount of clever research is likely to produce a cure.&quot;
@@ -5564,7 +5564,7 @@ Turn'd him all ear to hear new utterance flow.&quot;
 
 _
 
-![Theory: Hypothesis & Experiment](33035191686_Theory_%20Hypothesis%20_%20Experiment.jpg)
+![Theory: Hypothesis & Experiment](<33035191686_Theory_ Hypothesis _ Experiment.jpg>)
 
 ## Rationality
 _.......Don't you believe in flying saucers, they ask me? Don't you believe in telepathy? — in ancient astronauts? — in the Bermuda triangle? — in life after death?
@@ -5598,7 +5598,7 @@ And only man is vile?&quot;
 &quot;I swear that what I went through, no animal would have gone through.&quot; This sentence, the noblest ever spoken, this sentence that defines man's place in the universe, that honors him, that re-establishes the true hierarchy, floated back into my thoughts.
 ​—  Antoine de Saint-Exupéry_
 
-![Planets & Stars](33035411956_Planets%20_%20Stars.jpg)
+![Planets & Stars](<33035411956_Planets _ Stars.jpg>)
 
 ## Caught in the Crossfire
 _...&quot;There are strings,&quot; said Mr. Tappertit, &quot;…in the human heart that had better not be wibrated.&quot;...
@@ -5612,7 +5612,7 @@ He thinks in secret, and it comes to pass:
 Environment is but his looking-glass.&quot;
 ​—  James Allen, As A Man Thinketh (1902)._
 
-![Caught in the Crossfire](33076756795_Caught%20in%20the%20Crossfire.jpg)
+![Caught in the Crossfire](<33076756795_Caught in the Crossfire.jpg>)
 
 ## Flood
 _&quot;The Piglet was sitting on the ground at the door of his house blowing happily at a dandelion, and wondering whether it would be this year, next year, sometime or never, and was trying to remember what it was, and hoping it wasn't anything nice...&quot;
@@ -5644,7 +5644,7 @@ He would have written sonnets all his life?&quot;
 &quot;Happiness! Can any human being undertake to define it for another?&quot;
 – Dinah Craik, &quot;A Woman's Thoughts About Women&quot; (1858), Ch. 10._
 
-![SF Bay Area](33151047588_SF%20Bay%20Area.jpg)
+![SF Bay Area](<33151047588_SF Bay Area.jpg>)
 
 ## Fyre
 _&quot;Nought, mighty king, this time hast thou excepted: let my husband live;
@@ -5667,7 +5667,7 @@ _&quot;Far away in some strange constellation in skies infinitely remote, there 
 
 – G. K. Chesterton, &quot;The Everlasting Man&quot; (1927). _
 
-![Conspiracy #3: "Doesn't It Seem Unlikely??"](33166644028_Conspiracy%20_3_%20_Doesn_t%20It%20Seem%20Unlikely___.jpg)
+![Conspiracy #3: "Doesn't It Seem Unlikely??"](<33166644028_Conspiracy _3_ _Doesn_t It Seem Unlikely___.jpg>)
 
 ## Aries (The Lovers)
 _&quot;It pays to be obvious, especially if you have a reputation for subtlety.&quot;
@@ -5682,7 +5682,7 @@ _&quot;It pays to be obvious, especially if you have a reputation for subtlety.&
 &quot;There is something in this universe that justifies the biblical writer in saying, 'You shall reap what you sow.' This is a law-abiding universe. This is a moral universe. It hinges on moral foundations. If we are to make of this a better world, we've got to go back and rediscover that precious value that we've left behind.&quot;
 – Martin Luther King, Jr._
 
-![Aries (The Lovers)](33176165285_Aries%20_The%20Lovers_.jpg)
+![Aries (The Lovers)](<33176165285_Aries _The Lovers_.jpg>)
 
 ## Solid Gold
 _&quot;Even if you persuade me, you won’t persuade me.&quot;
@@ -5701,7 +5701,7 @@ Pray tell me from whence this impertinence springs,
 The sexes at once to confound?&quot;
 – Paul Whitehead, 'Song for Ranelagh'._
 
-![Solid Gold](33192342092_Solid%20Gold.jpg)
+![Solid Gold](<33192342092_Solid Gold.jpg>)
 
 ## Transformation (Regeneration)
 _&quot;Wars of nations are fought to change maps. But wars of poverty are fought to map change.&quot;
@@ -5716,7 +5716,7 @@ _&quot;Wars of nations are fought to change maps. But wars of poverty are fought
 &quot;It is generally supposed that conservatives are usually old people, and that those in favor of change are the young. This is not quite correct. Many conservatives are young people: those who want to live but who do not think about how to live, and have not time to think, and therefore take as a model for themselves a way of life they have seen.&quot;
 – Leo Tolstoy, The Devil (1889)._
 
-![Transformation (Regeneration)](33192343322_Transformation%20_Regeneration_.jpg)
+![Transformation (Regeneration)](<33192343322_Transformation _Regeneration_.jpg>)
 
 ## Union & Disunion
 _&quot;Whether we fall by ambition, blood, or lust,
@@ -5732,7 +5732,7 @@ Like diamonds, we are cut with our own dust.&quot;
 &quot;Males do not represent two discrete populations, heterosexual and homosexual. The world is not to be divided into sheeps and goats. Not all things are black nor all things white. It is a fundamental of taxonomy that nature rarely deals with discrete categories. Only the human mind invents categories and tries to force facts into separated pigeon-holes. The living world is a continuum in each and every one of its aspects. The sooner we learn this concerning human sexual behavior, the sooner we shall reach a sound understanding of the realities of sex.&quot;
 – Alfred Kinsey, Sexual Behaviour in the Human Male (1948)_
 
-![Union & Disunion](33192497402_Union%20_%20Disunion.jpg)
+![Union & Disunion](<33192497402_Union _ Disunion.jpg>)
 
 ## is evolution predictable?
 _&quot;But let judgment run down as waters, and righteousness as a mighty stream.&quot;
@@ -5750,7 +5750,7 @@ From every opening flower.&quot;
 
 _
 
-![is evolution predictable?](33211352150_is%20evolution%20predictable_.jpg)
+![is evolution predictable?](<33211352150_is evolution predictable_.jpg>)
 
 ## Space & Time
 _&quot;Love is my true identity. Selflessness is my true self. Love is my true character. Love is my name.&quot;
@@ -5766,7 +5766,7 @@ _&quot;Love is my true identity. Selflessness is my true self. Love is my true c
 — Ansel Adams, &quot;A Personal Credo&quot; (1943).
 _
 
-![Space & Time](33211353290_Space%20_%20Time.jpg)
+![Space & Time](<33211353290_Space _ Time.jpg>)
 
 ## Elemental Composition
 _&quot;A man's reach must exceed his grasp or what's a metaphor?
@@ -5782,7 +5782,7 @@ _&quot;A man's reach must exceed his grasp or what's a metaphor?
 – Gordon Allport, 'A Psychological Interpretation' (1938), p. 199.
 _
 
-![Elemental Composition](33369481353_Elemental%20Composition.jpg)
+![Elemental Composition](<33369481353_Elemental Composition.jpg>)
 
 ## Emergence
 _&quot;Oh, who can tell, save he whose heart hath tried?&quot;
@@ -5810,7 +5810,7 @@ _&quot;Economics is on the side of humanity now.&quot;
 &quot;Whereas some ascetics and Brahmins remain addicted to attending such shows as dancing, singing, music, displays, recitations, hand-music, cymbals and drums, fairy-shows, acrobatic and conjuring tricks, combats of elephants, buffaloes, bulls, goats, rams, cocks and quail, fighting with staves, boxing, wrestling, sham-fights, parades, manoeuvres and military reviews, the ascetic Gotama refrains from attending such displays.&quot;
 – Gautama Buddha, Digha Nikaya, M. Walshe, trans. (1987), Sutta 1 (Brahmajala Sutta), verse 1.13._
 
-![The Idea of "The Weekend"](33407328968_The%20Idea%20of%20_The%20Weekend_.jpg)
+![The Idea of "The Weekend"](<33407328968_The Idea of _The Weekend_.jpg>)
 
 ## Ethereal vs. Material
 _&quot;Death not merely ends life, it also bestows upon it a silent completeness, snatched from the hazardous flux to which all things human are subject.&quot;
@@ -5825,7 +5825,7 @@ _&quot;Death not merely ends life, it also bestows upon it a silent completeness
 &quot;Just as the good physician should go and offer his services where the sick are most numerous, so, said [Diogenes], the man of wisdom should take up his abode where fools are thickest in order to convict them of their folly and reprove them.&quot;
 — Dio Chrysostom (c. 40 – c. 115)_
 
-![Ethereal vs. Material](33437937122_Ethereal%20vs_%20Material.jpg)
+![Ethereal vs. Material](<33437937122_Ethereal vs_ Material.jpg>)
 
 ## Cytoskeleton
 _​&quot;The market does not exist in the pure state. It is shaped by the cultural configurations which define it and give it direction.&quot;
@@ -5862,7 +5862,7 @@ _&quot;Without education, we are in a horrible and deadly danger of taking educa
 &quot;I have of late, but wherefore I know not, lost all my mirth, forgone all custom of exercises, and indeed it goes so heavily with my disposition that this goodly frame, the earth, seems to me a sterile promontory. This most excellent canopy, the air, look you, this brave o'erhanging firmament, this majestical roof fretted with golden fire, why, it appears no other thing to me then a foul and pestilent congregation of vapours. What a piece of work is a man! How noble in reason! how infinite in faculty! in form, in moving, how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals! And yet, to me, what is this quintessence of dust? man delights not me; no, nor woman neither, though, by your smiling, you seem to say so.&quot;
 – Hamlet, &quot;The Tragedy of Hamlet, Prince of Denmark&quot;, William Shakespeare._
 
-![Blood & Sweat](33476189338_Blood%20_%20Sweat.jpg)
+![Blood & Sweat](<33476189338_Blood _ Sweat.jpg>)
 
 ## Faraday Idea #1
 _&quot;I do not know whether there are gods, but there ought to be.&quot;
@@ -5874,7 +5874,7 @@ _&quot;I do not know whether there are gods, but there ought to be.&quot;
 &quot;First, the physicists in the persons of Faraday and Maxwell, proposed the &quot;electromagnetic field&quot; in contradistinction to matter, as a reality of a different category. Then, during the last century, the mathematicians, … secretly undermined belief in the evidence of Euclidean Geometry. And now, in our time, there has been unloosed a cataclysm which has swept away space, time, and matter hitherto regarded as the firmest pillars of natural science, but only to make place for a view of things of wider scope and entailing a deeper vision.&quot;
 – Hermann Weyl, &quot;Space—Time—Matter&quot; (1952), Introduction._
 
-![Faraday Idea #1](33476330038_Faraday%20Idea%20_1.jpg)
+![Faraday Idea #1](<33476330038_Faraday Idea _1.jpg>)
 
 ## Deeper In Love
 _&quot;Ask not of me, love, what is love? 
@@ -5889,7 +5889,7 @@ Ask what is sweetness of thy kiss;
 Ask of thyself what beauty is.&quot;
 – Philip James Bailey, &quot;Festus&quot; (1813)_
 
-![Deeper In Love](33531276798_Deeper%20In%20Love.jpg)
+![Deeper In Love](<33531276798_Deeper In Love.jpg>)
 
 ## Archipelago
 _&quot;The more complex the mind, the greater the need for the simplicity of play&quot;
@@ -5922,7 +5922,7 @@ The daisies grow.”
 &quot;There is no methodological process by which one can confirm the existence of an object independent of the confirmatory process involving oneself. The outside is a void, there is only the inside. A person's world, the inside or internal view is all that can be known. The rest can only be the object of speculation.&quot;
 — Karl. E. Weick_
 
-!["Who Am I?"](33594346975__Who%20Am%20I__.jpg)
+!["Who Am I?"](<33594346975__Who Am I__.jpg>)
 
 ## Synapse City
 _&quot;Every stage of education begins with childhood. That is why the most educated person on earth so much resembles a child.&quot;
@@ -5934,7 +5934,7 @@ _&quot;Every stage of education begins with childhood. That is why the most educ
 &quot;If, nevertheless, textbooks of pharmacology legitimately contain a chapter on drug abuse and drug addiction, then, by the same token, textbooks of gynecology and urology should contain a chapter on prostitution; textbooks of physiology, a chapter on perversion; textbooks of genetics, a chapter on the racial inferiority of Jews and Negroes.&quot;
 – Thomas Szasz, Ceremonial Chemistry (1974)._
 
-![Synapse City](33602847533_Synapse%20City.jpg)
+![Synapse City](<33602847533_Synapse City.jpg>)
 
 ## Trio
 _&quot;The story of draft resistance in Columbia County is one of the most complex tales of such activity in Pennsylvania, primarily because of the lacunae of primary sources and the nature of the surviving primary sources.&quot;
@@ -5995,7 +5995,7 @@ _​&quot;Art is magic delivered from the lie of being truth.&quot;
 &quot;One needs to be nominalistic, no doubt: power is not an institution, and not a structure; neither is it a certain strength we are endowed with; it is the name that one attributes to a complex strategical situation in a particular society.&quot;
 – Michel Foucault, 'The History of Sexuality', p. 93.​_
 
-![Psychedelic Sludge](33694649391_Psychedelic%20Sludge.jpg)
+![Psychedelic Sludge](<33694649391_Psychedelic Sludge.jpg>)
 
 ## Neuroanatomy
 _&quot;Brain, n. An apparatus with which we think we think.&quot;
@@ -6069,7 +6069,7 @@ _&quot;Enter by this gateway and seek the way of honor, the light of truth, the 
 &quot;Logically the Neo-Pagan should get rid of the institution of marriage altogether, but the very nature of human society, which is built up of cells each of which is a family, and the very nature of human generation, forbid such an extreme. Children must be brought up and acknowledged and sheltered, and the very nature of human affection, whereby there is the bond of affection between the parent and the child, and the child is not of one parent but of both, will compel the Neo-Pagan to modify what might be his logical conclusion of free love and to support some simulacrum of the institution of marriage.&quot;
 – Hilaire Belloc, &quot;Survivals and New Arrivals&quot; (1929), Ch. V._
 
-![Wave-Particle Duality](33813203728_Wave-Particle%20Duality.jpg)
+![Wave-Particle Duality](<33813203728_Wave-Particle Duality.jpg>)
 
 ## Begin With The End In Mind
 _&quot;Arithmetic! Algebra! Geometry! Grandiose trinity! Luminous triangle! Whoever has not known you is without sense!&quot;  
@@ -6084,7 +6084,7 @@ _&quot;Arithmetic! Algebra! Geometry! Grandiose trinity! Luminous triangle! Whoe
 &quot;When someone is honestly 55 percent right, that’s very good and there’s no use wrangling. And if someone is 60 percent right, it’s wonderful, it’s great luck, and let him thank God. But what’s to be said about 75 percent right? Wise people say this is suspicious. Well, and what about 100 percent right? Whoever says he’s 100 percent right is a fanatic, a thug, and the worst kind of rascal.&quot;
 — An old Jew of Galicia_
 
-![Begin With The End In Mind](33824145905_Begin%20With%20The%20End%20In%20Mind.jpg)
+![Begin With The End In Mind](<33824145905_Begin With The End In Mind.jpg>)
 
 ## Where the Suns Rays Meet
 _ACADEME, n. An ancient school where morality and philosophy were taught.
@@ -6094,7 +6094,7 @@ ACADEMY, n. [from ACADEME] A modern school where football is taught.
 &quot;The university, in a society ruled by public opinion, was to have been an island of intellectual freedom where all views were investigated without restriction. … But by consenting to play an active or “positive,” a participatory role in society, the university has become inundated and saturated with the backflow of society’s “problems.” Preoccupied with questions of Health, Sex, Race, War, academics make their reputations and their fortunes. … Any proposed reforms of liberal education which might bring the university into conflict with the whole of the U.S.A. are unthinkable. Increasingly, the people “inside” are identical in their appetites and motives with the people “outside” the university.&quot;
 – Saul Bellow, Introduction to &quot;The Closing of the American Mind&quot; (New York: 1988), p. 18._
 
-![Where the Suns Rays Meet](33942297108_Where%20the%20Suns%20Rays%20Meet.jpg)
+![Where the Suns Rays Meet](<33942297108_Where the Suns Rays Meet.jpg>)
 
 ## Yellow
 _The question actors most often get asked is how they can bear saying the same things over and over again night after night, but God knows the answer to that is, don't we all anyway; might as well get paid for it.
@@ -6122,7 +6122,7 @@ _&quot;It is, Sir, as I have said, a small college. And yet there are those who 
 &quot;Let us learn from the lips of death the lessons of life. Let us live truly while we live, live for what is true and good and lasting. And let the memory of our dead help us to do this. For they are not wholly separated from us, if we remain loyal to them. In spirit they are with us. And we may think of them as silent, invisible, but real presences in our households.&quot;
 – Felix Adler, Life and Destiny (1913)._
 
-![Twenty Nine (29)](34078549923_Twenty%20Nine%20_29_.jpg)
+![Twenty Nine (29)](<34078549923_Twenty Nine _29_.jpg>)
 
 ## Passionate Love
 _&quot;My chief desire is to link myself to you week by week by bonds which shall become ever more intimate and profound.&quot; 
@@ -6137,7 +6137,7 @@ _&quot;My chief desire is to link myself to you week by week by bonds which shal
 ​&quot;​The more I understand the problem, the more significance there is in it. To understand, I must approach it quietly, not impose on the problem my ideas, my feelings of like and dislike. Then the problem will reveal its significance. Why is it not possible to have tranquillity of the mind right from the beginning?​&quot;​
 —​ ​Jiddu Krishnamurti, in &quot;Eighth Talk in The Oak Grove&quot; (7 August 1949)_
 
-![Passionate Love](34134172680_Passionate%20Love.jpg)
+![Passionate Love](<34134172680_Passionate Love.jpg>)
 
 ## Horse Play
 _&quot;We must no more ask whether the soul and body are one than ask whether the wax and the figure impressed on it are one.&quot;
@@ -6149,7 +6149,7 @@ _&quot;We must no more ask whether the soul and body are one than ask whether th
 &quot;When you see the donkey (Hebrew: chamor) of your enemy lying under its burden, you might refrain from helping it; you must aid it&quot; - When you carefully examine your &quot;chomer&quot; (English: materiality), your body, you will see &quot;your enemy&quot;, that it restricts your Divine soul that longs for Godliness and the spiritual. You will see that it &quot;lies under its burden&quot; placed upon it by God, that it should become refined through Torah and Jewish observance, as the body is reluctant and materialistic. It may occur to you that &quot;you will refrain from helping it&quot;, to enable it to fulfill its mission, and instead you will follow the path of asceticism, to break down the body's resistance to spirituality. However, not in this approach will the light of Torah reside, rather &quot;you must aid it&quot; by purifying and refining the body, rather than breaking it. This superior elevation transforms the body into a vehicle for the essential Divine purpose in physical Creation.&quot;
 – Baal Shem Tov (בעל שם טוב) (Rabbi Israel ben Eliezer)_
 
-![Horse Play](34140417916_Horse%20Play.jpg)
+![Horse Play](<34140417916_Horse Play.jpg>)
 
 ## Shifting Balance
 _&quot;Every believer is God's miracle.&quot;
@@ -6171,7 +6171,7 @@ To an admiring Bog!&quot;
 – Francis Bacon, 'Novum Organum' (1620!). 
 _
 
-![Shifting Balance](34185183323_Shifting%20Balance.jpg)
+![Shifting Balance](<34185183323_Shifting Balance.jpg>)
 
 ## To a Student...
 _&quot;To a Student&quot;
@@ -6206,7 +6206,7 @@ And I, my Lords, embody the Law.&quot;
 &quot;Everyone says, stay away from ants. They have no lessons for us; they are crazy little instruments, inhuman, incapable of controlling themselves, lacking manners, lacking souls. When they are massed together, all touching, exchanging bits of information held in their jaws like memoranda, they become a single animal. Look out for that. It is a debasement, a loss of individuality, a violation of human nature, an unnatural act. Sometimes people argue this point of view seriously and with deep thought. Be individuals, solitary and selfish, is the message. Altruism, a jargon word for what used to be called love, is worse than weakness, it is sin, a violation of nature. Be separate. Do not be a social animal. But this is a hard argument to make convincingly when you have to depend on language to make it. You have to print out leaflets or publish books and get them bought and sent around, you have to turn up on television and catch the attention of millions of other human beings all at once, and then you have to say to all of them, all at once, all collected and paying attention: be solitary; do not depend on each other. You can’t do this and keep a straight face.
 – Lewis Thomas, &quot;The Tucson Zoo&quot; (1979). _
 
-![To a Student...](34248501690_To%20a%20Student___.jpg)
+![To a Student...](<34248501690_To a Student___.jpg>)
 
 ## Cellular Inspiration
 _Tatiana Romanova: &quot;The mechanism is... Oh, James, James... Will you make love to me all the time in England?&quot;
@@ -6223,7 +6223,7 @@ They agreed to meet at a cool retreat
 On the Point of Interrogation.&quot;
 – Oliver Herford, Metaphysics_
 
-![Cellular Inspiration](34253434222_Cellular%20Inspiration.jpg)
+![Cellular Inspiration](<34253434222_Cellular Inspiration.jpg>)
 
 ## Digital Love
 _&quot;Politics is supposed to be the second oldest profession. I have come to realize that it bears a very close resemblance to the first.&quot;
@@ -6237,7 +6237,7 @@ And there are differences of administrations, but the same Lord.
 And there are diversities of operations, but it is the same God which worketh all in all.&quot;
 – Paul of Tarsus, in 1 Corinthians 12_
 
-![Digital Love](34253434812_Digital%20Love.jpg)
+![Digital Love](<34253434812_Digital Love.jpg>)
 
 ## Starry Night
 _“Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.”
@@ -6258,7 +6258,7 @@ From inns of molten blue.&quot;
 &quot;I will clarify a distinction that I consider fundamental to political ecology. I shall distinguish the environment as commons from the environment as resource. On our ability to make this particular distinction depends not only the construction of a sound theoretical ecology, but also — and more importantly — effective ecological jurisprudence.&quot;
 Ivan Illich, 'Silence is a Commons' (1982)._
 
-![Starry Night](34253435142_Starry%20Night.jpg)
+![Starry Night](<34253435142_Starry Night.jpg>)
 
 ## Driving (Focus!)
 _&quot;Mystics understand the roots of the Tao but not its branches; scientists understand its branches but not its roots. Science does not need mysticism and mysticism does not need science; but man needs both.&quot;
@@ -6270,7 +6270,7 @@ _&quot;Mystics understand the roots of the Tao but not its branches; scientists 
 &quot;I look at things for the art sake and the beauty sake and for the deal sake.&quot;
 – Donald J Trump, interview with 'New York Magazine', 11 July 1988._
 
-![Driving (Focus!)](34253435812_Driving%20_Focus__.jpg)
+![Driving (Focus!)](<34253435812_Driving _Focus__.jpg>)
 
 ## Rapid Cycling
 _&quot;Mind is infinite and self-ruled, and is mixed with nothing, but is alone itself by itself.&quot;
@@ -6284,7 +6284,7 @@ And it must follow, as the night the day,
 Thou canst not then be false to any man.&quot;
 – William Shakespeare, 'Hamlet', act I, scene iii, lines 78–80_
 
-![Rapid Cycling](34281971711_Rapid%20Cycling.jpg)
+![Rapid Cycling](<34281971711_Rapid Cycling.jpg>)
 
 ## The Chakra System
 _&quot;Yoga exists in the world because everything is linked.&quot;
@@ -6306,7 +6306,7 @@ Environment is but his looking-glass.&quot;
 &quot;I myself find the division of the world into an objective and a subjective side much too arbitrary. The fact that religions through the ages have spoken in images, parables, and paradoxes means simply that there are no other ways of grasping the reality to which they refer. But that does not mean that it is not a genuine reality. And splitting this reality into an objective and a subjective side won't get us very far.&quot;
 – Niels Bohr, in remarks after the Solvay Conference of 1927_
 
-![The Chakra System](34291601023_The%20Chakra%20System.jpg)
+![The Chakra System](<34291601023_The Chakra System.jpg>)
 
 ## Good Morning (...the mind rises...as the world sleeps...)
 _~ Drawn with S.M. in SF ~
@@ -6324,7 +6324,7 @@ _~ Drawn with S.M. in SF ~
 – Douglas Adams, Last Chance to See (1990).
 _
 
-![Good Morning (...the mind rises...as the world sleeps...)](34291798383_Good%20Morning%20____the%20mind%20rises___as%20the%20world%20sle.jpg)
+![Good Morning (...the mind rises...as the world sleeps...)](<34291798383_Good Morning ____the mind rises___as the world sle.jpg>)
 
 ## Reflection (Ethereum)
 _&quot;And so, brothers and sisters, I could not speak to you as spiritual people, but rather as people of the flesh, as infants in Christ. I fed you with milk, not solid food, for you were not ready for solid food.&quot;
@@ -6336,7 +6336,7 @@ _&quot;And so, brothers and sisters, I could not speak to you as spiritual peopl
 &quot;Men talk of the extravagances and frenzies that have been produced by mysticism; they are a mere drop in the bucket. In the main, and from the beginning of time, mysticism has kept men sane. The thing that has driven them mad was logic. ...The only thing that has kept the race of men from the mad extremes of the convent and the pirate-galley, the night-club and the lethal chamber, has been mysticism — the belief that logic is misleading, and that things are not what they seem.&quot;
 – G. K. Chesterton, in Tolstoy (1903)_
 
-![Reflection (Ethereum)](34291996013_Reflection%20_Ethereum_.jpg)
+![Reflection (Ethereum)](<34291996013_Reflection _Ethereum_.jpg>)
 
 ## Careful Preparation
 _&quot;In a world where everyone is a publisher, no one is an editor and that is the danger we face today.&quot;
@@ -6358,7 +6358,7 @@ Hamlet: &quot;Do you think I meant country matters?&quot;
 William Shakespeare, 'The 
 – Tragedy of Hamlet, Prince of Denmark'_
 
-![Careful Preparation](34297853980_Careful%20Preparation.jpg)
+![Careful Preparation](<34297853980_Careful Preparation.jpg>)
 
 ## Blobfish
 _&quot;But the speed was power, and the speed was joy, and the speed was pure beauty.&quot;
@@ -6386,7 +6386,7 @@ Should let itself be snuff'd out by an article.​&quot;​
 ​&quot;​Socialism, like the ancient ideas from which it springs, confuses the distinction between government and society. As a result of this, every time we object to a thing being done by government, the socialists conclude that we object to its being done at all. We disapprove of state education. Then the socialists say that we are opposed to any education. We object to a state religion. Then the socialists say that we want no religion at all. We object to a state-enforced equality. Then they say that we are against equality. And so on, and so on. It is as if the socialists were to accuse us of not wanting persons to eat because we do not want the state to raise grain.​&quot;​
 —​ ​Frédéric Bastiat, ​'The Law', ​(1850)_
 
-![Space, Plane, Line, Point](34478697896_Space_%20Plane_%20Line_%20Point.jpg)
+![Space, Plane, Line, Point](<34478697896_Space_ Plane_ Line_ Point.jpg>)
 
 ## Closer...
 _&quot;אַ שפּראַך איז אַ דיאַלעקט מיט אַן אַרמיי און פֿלאָט​&quot; [A language is a dialect with an army and navy​.]​ 
@@ -6416,7 +6416,7 @@ _​&quot;​Mind is the first and most direct thing in our experience; all else
 ​&quot;​I fully agree with you about the significance and educational value of methodology as well as history and philosophy of science. So many people today — and even professional scientists — seem to me like someone who has seen thousands of trees but has never seen a forest.​&quot;​
 —​ ​Albert Einstein_
 
-![Myself In You](34478698666_Myself%20In%20You.jpg)
+![Myself In You](<34478698666_Myself In You.jpg>)
 
 ## Magic Wand
 _​&quot;​A universal love is not only psychologically possible; it is the only complete and final way in which we are able to love.​&quot;​
@@ -6442,7 +6442,7 @@ The artificer of all things, Memory,
 That sweet Muse-mother.​&quot;​
 —​ Aeschylus (or by his son Euphorion​?​), ​'​Prometheus bound​'​ (ca. 480-430 BC)​.​_
 
-![Magic Wand](34478699016_Magic%20Wand.jpg)
+![Magic Wand](<34478699016_Magic Wand.jpg>)
 
 ## Positive and Negative Feedback
 _&quot;Dance you shall,” said he, “dance in your red shoes till you are pale and cold, till your skin shrivels up and you are a skeleton! Dance you shall, from door to door, and where proud and wicked children live you shall knock, so that they may hear you and fear you! Dance you shall, dance—!&quot;
@@ -6451,7 +6451,7 @@ _&quot;Dance you shall,” said he, “dance in your red shoes till you are pale
 &quot;Professors rarely speak of the place of eros or the erotic in our classrooms. Trained in the philosophical context of Western metaphysical dualism, many of us have accepted the notion that there is a split between the body and the mind. Believing this, individuals enter the classroom to teach as though only the mind is present, and not the body.&quot;
 – bell hooks, 'Teaching to Transgress'._
 
-![Positive and Negative Feedback](34551818301_Positive%20and%20Negative%20Feedback.jpg)
+![Positive and Negative Feedback](<34551818301_Positive and Negative Feedback.jpg>)
 
 ## Tensegrity
 _&quot;Possunt, quia posse videntur.&quot;
@@ -6487,7 +6487,7 @@ Through windows, and through curtains call us?
 Must to thy motions lovers' seasons run?&quot;
 – John Donne, 'The Sun Rising'_
 
-![Design // Thinking](34551948091_Design%20__%20Thinking.jpg)
+![Design // Thinking](<34551948091_Design __ Thinking.jpg>)
 
 ## Nature & Nurture (Genetic Holism)
 _In this drawing, the scientist (at bottom left) is studying a &quot;gene&quot;. In their depiction of the &quot;gene&quot;, the scientist neglects to represent the fact that the environment is what controls the &quot;gene&quot; like a marionette. Much to the detriment of students and other researchers, the scientist defends their genetic reductionism by claiming: &quot;But look at my drawing! All is see is genes!&quot;. Peace be with them, for they err and know not....
@@ -6503,7 +6503,7 @@ _In this drawing, the scientist (at bottom left) is studying a &quot;gene&quot;.
 &quot;A nervous tic, an unconscious look of anxiety, a habit of muttering to yourself—anything that carried with it the suggestion of abnormality, of having something to hide. In any case, to wear an improper expression on your face (to look incredulous when a victory was announced, for example) was itself a punishable offence. There was even a word for it in Newspeak: FACECRIME, it was called.&quot;
 – George Orwell, 'Nineteen Eighty-Four'_
 
-![Nature & Nurture (Genetic Holism)](34552040531_Nature%20_%20Nurture%20_Genetic%20Holism_.jpg)
+![Nature & Nurture (Genetic Holism)](<34552040531_Nature _ Nurture _Genetic Holism_.jpg>)
 
 ## Spill
 _&quot;All men are mortal. Socrates was mortal. Therefore, all men are Socrates.&quot;
@@ -6530,7 +6530,7 @@ _&quot;India is doing great.&quot;
 &quot;I believe in evidence. I believe in observation, measurement, and reasoning, confirmed by independent observers. I'll believe anything, no matter how wild and ridiculous, if there is evidence for it. The wilder and more ridiculous something is, however, the firmer and more solid the evidence will have to be.&quot;
 – Isaac Asimov (1997) 'The Roving Mind'._
 
-![Cellular Metabolism](34567545434_Cellular%20Metabolism.jpg)
+![Cellular Metabolism](<34567545434_Cellular Metabolism.jpg>)
 
 ## Paper Is A Natural Artefact
 _paper is a natural artefact, like hair, teeth, nails, or bone, and should be treated as such.
@@ -6555,7 +6555,7 @@ Darkness within darkness.
 The gateway to all understanding.&quot;
 – Laozi, 'Tao Te Ching', Ch.1_
 
-![Paper Is A Natural Artefact](34608362900_Paper%20Is%20A%20Natural%20Artefact.jpg)
+![Paper Is A Natural Artefact](<34608362900_Paper Is A Natural Artefact.jpg>)
 
 ## Glia-centrism (The Dao of Sash)
 _&quot;A typical neuron makes about ten thousand connections to neighboring neurons. Given the billions of neurons, this means there are as many connections in a single cubic centimeter of brain tissue as there are stars in the Milky Way galaxy.&quot;
@@ -6570,7 +6570,7 @@ _&quot;A typical neuron makes about ten thousand connections to neighboring neur
 &quot;What is so remarkable in all these theories and doctrines is their implicit monism, the claim that behind the obvious multiplicity of the world’s appearances and, even more pertinently to our context, behind the obvious plurality of man’s faculties and abilities, there must exist a oneness — the old 'hen to pan', 'the all is one'—either a single source or a single ruler.&quot;
 – Hannah Arendt , in The Life of the Mind (1971)_
 
-![Glia-centrism (The Dao of Sash)](34714936040_Glia-centrism%20_The%20Dao%20of%20Sash_.jpg)
+![Glia-centrism (The Dao of Sash)](<34714936040_Glia-centrism _The Dao of Sash_.jpg>)
 
 ## Network & Environment
 _&quot;What doesn't kill you makes you stranger.&quot;
@@ -6585,7 +6585,7 @@ _&quot;What doesn't kill you makes you stranger.&quot;
 &quot;Even in our poor old country, with its aristocratic class materialized, its middle class vulgarized, its lower class brutalized, there are to be found individuals, as I have again and again said, lovers of the humane life, lovers of perfection, who emerge in all classes, and who, while they are more or less in conflict with the present, point to a better future.&quot;
 – Matthew Arnold, 'Civilization in the United States' (1888 [!!!])._
 
-![Network & Environment](34715317850_Network%20_%20Environment.jpg)
+![Network & Environment](<34715317850_Network _ Environment.jpg>)
 
 ## Tearing Up
 _&quot;Vanity not only distances us from God: it makes us look ridiculous.&quot;
@@ -6602,7 +6602,7 @@ If name be needed, wonder names them both:
 From wonder into wonder existence opens.&quot;
 – Laozi in the 'Tao Te Ching'._
 
-![Tearing Up](34725471382_Tearing%20Up.jpg)
+![Tearing Up](<34725471382_Tearing Up.jpg>)
 
 ## Energy Lattice
 _&quot;Thus happiness depends, as Nature shows,
@@ -6618,7 +6618,7 @@ Less on exterior things than most suppose.&quot;
 &quot;There are three kinds of objects of belief. Some are always believed and never understood, such as all history, which runs through temporal and human acts. Others must be understood to be believed, such as all human reasonings. Thirdly, there are those which must be believed first and understood later, like divine matters.&quot;
 – Augustine of Hippo, 'Eighty-Three Different Questions' (388–395/7)._
 
-![Energy Lattice](34757504901_Energy%20Lattice.jpg)
+![Energy Lattice](<34757504901_Energy Lattice.jpg>)
 
 ## Crossfade
 _&quot;The fox knows many things, but the hedgehog one big one.&quot;
@@ -6660,7 +6660,7 @@ Life is but a dream.&quot;
 &quot;It is a mistake to confound Alchemy with Chemistry. Modern Chemistry is a science which deals merely with the external forms in which the element of matter is manifesting itself. It never produces anything new. We may mix and compound and decompose two or more chemical bodies an unlimited number of times, and cause them to appear under various different forms, but at the end we will have no augmentation of substance, nor anything more than the combinations of the substances that have been employed at the beginning. Alchemy does not mix or compound anything, it causes that which already exists in a latent state to become active and grow. Alchemy is, therefore, more comparable to botany or agriculture than to Chemistry; and, in fact, the growth of a plant, a tree, or an animal is an alchemical process going on in the alchemical laboratory of nature, and performed by the great Alchemist, the power of God acting in nature.&quot;
 – Franz Hartmann, 'In the Pronaos of the Temple of Wisdom, containing the History of the True and the False Rosicrucians' (1890)._
 
-![Group Consciousness](34863659151_Group%20Consciousness.jpg)
+![Group Consciousness](<34863659151_Group Consciousness.jpg>)
 
 ## Distortion (love is naught, if not self-distorting)
 _&quot;I mix them with my brains, sir.&quot;
@@ -6677,7 +6677,7 @@ For this effect defective comes by cause.&quot;
 &quot;I listened to the teachings of Confucius, imbibed the wisdom of Brahma, and sat beside Buddha beneath the tree of insight. And now I am here, wrestling with ignorance and unbelief. I was on Sinai when Yahweh shed His effulgence on Moses; at the River Jordan I witnessed the miracles of the Nazarene; and in Medina I heard the words of the Messenger to the Arabs. And here I am now, a captive of confusion.&quot;
 – Khalil Gibran, 'The Anthem of Humanity'._
 
-![Distortion (love is naught, if not self-distorting)](34863790901_Distortion%20_love%20is%20naught_%20if%20not%20self-distorting.jpg)
+![Distortion (love is naught, if not self-distorting)](<34863790901_Distortion _love is naught_ if not self-distorting.jpg>)
 
 ## Skinner & Bones
 _&quot;Let men be happy, informed, skillful, well behaved, and productive.&quot;
@@ -6690,7 +6690,7 @@ _&quot;Let men be happy, informed, skillful, well behaved, and productive.&quot;
 
 – B.F. Skinner_
 
-![Skinner & Bones](34888635915_Skinner%20_%20Bones.jpg)
+![Skinner & Bones](<34888635915_Skinner _ Bones.jpg>)
 
 ## Power
 _&quot;They who know the truth are not equal to those who love it, and they who love it are not equal to those who delight in it.&quot;
@@ -6723,7 +6723,7 @@ Centuries more gave a thumb to his wrist—
 Then he was a MAN and a Positivist.&quot;
 –  Mortimer Collins_
 
-![Self Anti-Portrait](34937157242_Self%20Anti-Portrait.jpg)
+![Self Anti-Portrait](<34937157242_Self Anti-Portrait.jpg>)
 
 ## Spider, Sensed
 _&quot;I have learnt much from my teachers, more from my colleagues, and most from my students.&quot;
@@ -6741,7 +6741,7 @@ Thou should not grieve.&quot;
 &quot;It was not until the ant and Veig had passed each other that Niall realized that he had been reading the ant's mind. It was a sensation like actually being the ant, as if he had momentarily taken possession of its body. And while he had been inside the ant's body, he had also become aware of all the other ants in the nest. It was a bewildering feeling, as if his mind had shattered into thousands of fragments, yet each fragment remained a coherent part of the whole.&quot;
 – Colin Wilson, 'Spider World: The Desert' (1987)._
 
-![Spider, Sensed](35022833880_Spider_%20Sensed.jpg)
+![Spider, Sensed](<35022833880_Spider_ Sensed.jpg>)
 
 ## Theory of Evolution
 _&quot;Oh, who can tell, save he whose heart hath tried?&quot;
@@ -6762,7 +6762,7 @@ And mock our eyes with air: thou hast seen these signs;
 They are black vesper's pageants.&quot;
 – William Shakespeare, 'Antony and Cleopatra', Act IV._
 
-![Theory of Evolution](35101843385_Theory%20of%20Evolution.jpg)
+![Theory of Evolution](<35101843385_Theory of Evolution.jpg>)
 
 ## Alternative Realities (Cryptocurrency)
 _&quot;Indifference to style ... is almost always symptomatic of the dogmatic sclerosis of content.&quot;
@@ -6778,7 +6778,7 @@ _&quot;Indifference to style ... is almost always symptomatic of the dogmatic sc
 – Alejandro Jodorowsky, 'Psychomagic: The Transformative Power of Shamanic Psychotherapy' (2010)
 _
 
-![Alternative Realities (Cryptocurrency)](35316301660_Alternative%20Realities%20_Cryptocurrency_.jpg)
+![Alternative Realities (Cryptocurrency)](<35316301660_Alternative Realities _Cryptocurrency_.jpg>)
 
 ## Colorblindness (red/green)
 _&quot;It is not religion but revolution which is the opium of the people.&quot;
@@ -6793,7 +6793,7 @@ _&quot;It is not religion but revolution which is the opium of the people.&quot;
 &quot;All metaphors, at least such of them that are best chosen, are applied to the senses, especially the seeing, which of all senses is the most exquisite. Thus when we say, the tincture of politeness, the softness of good-breeding, the murmer of waters, and sweetness of language; these metaphors are all taken from the other senses. But the metaphors taken from the sense of seeing are much more striking, because they place in the eye of the imagination objects... otherwise... impossible for us to see or comprehend. For there is nothing in nature but what we may adapt its name to signify something else; and every object from which a likeness may be raised, as it may from all objects, if metaphorically applied...&quot;
 – Cicero (55 BC)._
 
-![Colorblindness (red/green)](35403022242_Colorblindness%20_red_green_.jpg)
+![Colorblindness (red/green)](<35403022242_Colorblindness _red_green_.jpg>)
 
 ## Circle the Wagons
 _&quot;The sluggard craves and gets nothing, but the desires of the diligent are fully satisfied.&quot;
@@ -6813,7 +6813,7 @@ I see the Past, Present &amp; Future, existing all at once
 Before me; O Divine Spirit sustain me on thy wings!&quot;
 – William Blake, 'Jerusalem The Emanation of the Giant Albion' (c. 1803–1820)._
 
-![Circle the Wagons](35409628515_Circle%20the%20Wagons.jpg)
+![Circle the Wagons](<35409628515_Circle the Wagons.jpg>)
 
 ## Asemic Writing
 _&quot;Everything in life is miraculous. For the sigil taught me that it rests within the power of each of us to awaken at will from a dragging nightmare of life made up of unimportant tasks and tedious useless little habits, to see life as it really is, and to rejoice in its exquisite wonderfulness. If the sigil were proved to be the top of a tomato-can, it would not alter that big fact, nor my fixed faith.&quot;
@@ -6825,7 +6825,7 @@ _&quot;Everything in life is miraculous. For the sigil taught me that it rests w
 &quot;A person's lifeworm is a tangle of atomic worldlines. A braid. The dotty little atoms trace out smooth lines in spacetime: you are the pattern that these lines make up. There is no one single atom that is exclusively yours. I breathe an atom out, you breathe it in. Your garbage helps my tomatoes grow. And so the little spacetime threads weave us all together. The human race is a single vast tapestry, linked by our shared food and air. There are larger links as well: sperm, egg and umblilicus. Each family tree is an organic whole. Your spacetime body tapers back to the threads of mother's egg and father's sperm. And children, if you have them, are forever rooted in your flesh.&quot;
 – Rudy Rucker in 'The Sex Sphere'._
 
-![Asemic Writing](35409636635_Asemic%20Writing.jpg)
+![Asemic Writing](<35409636635_Asemic Writing.jpg>)
 
 ## Introvert / Extrovert
 _&quot;LO&quot;
@@ -6840,7 +6840,7 @@ _&quot;LO&quot;
 &quot;The bourgeoisie has stripped of its halo every occupation hitherto honored and looked up to with reverent awe. It has converted the physician, the lawyer, the priest, the poet, the man of science, into its paid wage laborers.&quot;
 – Karl Marx, 'The Manifesto of the Communist Party' (1848)_
 
-![Introvert / Extrovert](35409722425_Introvert%20_%20Extrovert.jpg)
+![Introvert / Extrovert](<35409722425_Introvert _ Extrovert.jpg>)
 
 ## From Birth to Death through Life
 _&quot;The spider's touch, how exquisitely fine!
@@ -6856,7 +6856,7 @@ Feels at each thread, and lives along the line.&quot;
 &quot;It is not funny that anything else should fall down, only that a man should fall down … Why do we laugh? Because it is a gravely religious matter: it is the Fall of Man. Only man can be absurd: for only man can be dignified.&quot;
 – G. K. Chesterton_
 
-![From Birth to Death through Life](35409967035_From%20Birth%20to%20Death%20through%20Life.jpg)
+![From Birth to Death through Life](<35409967035_From Birth to Death through Life.jpg>)
 
 ## The Physiology of Sex
 _Tensioned -&gt; relaxed -&gt; recovery -&gt; Rest -&gt; .................
@@ -6883,7 +6883,7 @@ Thus he could reason a priori
 As well as a posteriori.&quot;
 – Bert Leston Taylor_
 
-![The Physiology of Sex](35532189356_The%20Physiology%20of%20Sex.jpg)
+![The Physiology of Sex](<35532189356_The Physiology of Sex.jpg>)
 
 ## Implicate order
 _&quot;A man is born alone and dies alone; and he experiences the good and bad consequences of his karma alone.&quot;
@@ -6901,7 +6901,7 @@ _&quot;A man is born alone and dies alone; and he experiences the good and bad c
 4 But you, Daniel, keep these words secret, and seal up the book until the time of the end. Many will rush here and there as knowledge increases.
 – Daniel 12:1-4, Complete Jewish Bible (CJB) translation. _
 
-![Implicate order](35532190786_Implicate%20order.jpg)
+![Implicate order](<35532190786_Implicate order.jpg>)
 
 ## Embodied Hand (The 4.5-fold Path)
 _&quot;For me, abstraction is real, probably more real than nature. I'll go further and say that abstraction is nearer my heart. I prefer to see with closed eyes.&quot;
@@ -6916,7 +6916,7 @@ _&quot;For me, abstraction is real, probably more real than nature. I'll go furt
 &quot;Oh, squiggly line in my eye fluid. I see you lurking there on the periphery of my vision. But when I try to look at you, you scurry away. Are you shy, squiggly line? Why only when I ignore you, do you return to the center of my eye? Oh, squiggly line, it's alright, you are forgiven.&quot;
 – Stewie Griffin, 'The Tan Aquatic', Family Guy (2007). _
 
-![Embodied Hand (The 4.5-fold Path)](35534539912_Embodied%20Hand%20_The%204_5-fold%20Path_.jpg)
+![Embodied Hand (The 4.5-fold Path)](<35534539912_Embodied Hand _The 4_5-fold Path_.jpg>)
 
 ## Like Lovers Do
 _&quot;The thesis that the human being seeks God because of the disorder he perceives in himself does not take into account that the human being seems to prefer disorder.&quot;
@@ -6928,7 +6928,7 @@ _&quot;The thesis that the human being seeks God because of the disorder he perc
 &quot;Another curious aspect of the theory of evolution is that everybody thinks he understands it. I mean philosophers, social scientists, and so on. While in fact very few people understand it, actually, as it stands, even as it stood when Darwin expressed it, and even less as we now may be able to understand it in biology.&quot;
 – Jacques Monod, 'On the Molecular Theory of Evolution' (1974)._
 
-![Like Lovers Do](35571002125_Like%20Lovers%20Do.jpg)
+![Like Lovers Do](<35571002125_Like Lovers Do.jpg>)
 
 ## Phylogeny ∞ Ontogeny
 _&quot;Keep me away from the wisdom which does not cry, the philosophy which does not laugh, and the greatness which does not bow before children.&quot; 
@@ -6940,7 +6940,7 @@ _&quot;Keep me away from the wisdom which does not cry, the philosophy which doe
 &quot;It was mathematics, the non-empirical science par excellence, wherein the mind appears to play only with itself, that turned out to be the science of sciences, delivering the key to those laws of nature and the universe that are concealed by appearances.&quot;
 – Hannah Arendt, 'The Life of the Mind' (1971)_
 
-![Phylogeny ∞ Ontogeny](36002194131_Phylogeny%20_%20Ontogeny.jpg)
+![Phylogeny ∞ Ontogeny](<36002194131_Phylogeny _ Ontogeny.jpg>)
 
 ## Looking In, Looking Out....
 _&quot;Driven by the forces of love, the fragments of the world seek each other so that the world may come into being.&quot;
@@ -6958,7 +6958,7 @@ The Eternal Sáki from that Bowl has poured
 Millions of Bubbles like us and will pour.&quot;
 – Omar Khayyam, 'Rubaiyat of Omar Khayyam' (1120)._
 
-![Looking In, Looking Out....](36002195791_Looking%20In_%20Looking%20Out____.jpg)
+![Looking In, Looking Out....](<36002195791_Looking In_ Looking Out____.jpg>)
 
 ## Dip him in the river, he who loves water...
 _&quot;If a man could pass through Paradise in a dream, and have a flower presented to him as a pledge that his soul had really been there, and if he found that flower in his hand when he awake — Aye, what then?&quot;
@@ -6970,7 +6970,7 @@ _&quot;If a man could pass through Paradise in a dream, and have a flower presen
 &quot;Know ye that at the right hand of the Indies there is an island called California, very close to that part of the Terrestrial Paradise, which was inhabited by black women without a single man among them, and they lived in the manner of Amazons. They were robust of body with strong passionate hearts and great virtue. The island itself is one of the wildest in the world on account of the bold and craggy rocks...&quot;
 – Garci Rodríguez de Montalvo, 'The Adventures of Esplandián'._
 
-![Dip him in the river, he who loves water...](36095287516_Dip%20him%20in%20the%20river_%20he%20who%20loves%20water___.jpg)
+![Dip him in the river, he who loves water...](<36095287516_Dip him in the river_ he who loves water___.jpg>)
 
 ## Polyrhythmic
 _&quot;To attribute the efficacy of prayers or of sacramental signs to their mere external performance, apart from the interior dispositions they demand, is to fall into superstition.&quot;
@@ -6997,7 +6997,7 @@ _&quot;In your patience possess ye your souls.&quot;
 &quot;For some years now the activity of the artist in our society has been trending more toward the function of the ecologist: one who deals with environmental relationships. Ecology is defined as the totality or pattern of relations between organisms and their environment. Thus the act of creation for the new artist is not so much the invention of new objects as the revelation of previously unrecognized relation- ships between existing phenomena, both physical and metaphysical. So we find that ecology is art in the most fundamental and pragmatic sense, expanding our apprehension of reality.&quot;
 – Gene Youngblood, 'Expanded Cinema', (1970) p. 346; The Artist as Ecologist._
 
-![Concepts are Cages](36136678255_Concepts%20are%20Cages.jpg)
+![Concepts are Cages](<36136678255_Concepts are Cages.jpg>)
 
 ## Relationship (crosswinds)
 _&quot;Without passion man is a mere latent force and possibility, like the flint which awaits the shock of the iron before it can give forth its spark.&quot;
@@ -7015,7 +7015,7 @@ The most lovely hack I've seen.&quot;
 &quot;There is no God, no universe, no human race, no earthly life, no heaven, no hell. It is all a Dream, a grotesque and foolish dream. Nothing exists but you. And You are but a Thought — a vagrant Thought, a useless Thought, a homeless Thought, wandering forlorn among the empty eternities.&quot;
 – Satan, in Mark Twain's 'The Mysterious Stranger'. _
 
-![Relationship (crosswinds)](36275770763_Relationship%20_crosswinds_.jpg)
+![Relationship (crosswinds)](<36275770763_Relationship _crosswinds_.jpg>)
 
 ## This too shall pass...
 _&quot;If the meanings of true and false were switched, this sentence wouldn't be false.&quot;
@@ -7030,7 +7030,7 @@ _&quot;If the meanings of true and false were switched, this sentence wouldn't b
 &quot;A person's lifeworm is a tangle of atomic worldlines. A braid. The dotty little atoms trace out smooth lines in spacetime: you are the pattern that these lines make up. There is no one single atom that is exclusively yours. I breathe an atom out, you breathe it in. Your garbage helps my tomatoes grow. And so the little spacetime threads weave us all together. The human race is a single vast tapestry, linked by our shared food and air. There are larger links as well: sperm, egg and umblilicus. Each family tree is an organic whole. Your spacetime body tapers back to the threads of mother's egg and father's sperm. And children, if you have them, are forever rooted in your flesh.&quot;
 – Rudy Rucker in 'The Sex Sphere'._
 
-![This too shall pass...](36376381953_This%20too%20shall%20pass___.jpg)
+![This too shall pass...](<36376381953_This too shall pass___.jpg>)
 
 ## Distributed Systems
 _&quot;You know what Aquinas says: The three things requisite for beauty are integrity, a wholeness, symmetry, and radiance.&quot;
@@ -7042,7 +7042,7 @@ _&quot;You know what Aquinas says: The three things requisite for beauty are int
 &quot;I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me too. Well, I hope that if you are out there and read this and know that, yes, it's true I'm here, and I'm just as strange as you.&quot;
 – Frida Kahlo_
 
-![Distributed Systems](36609813344_Distributed%20Systems.jpg)
+![Distributed Systems](<36609813344_Distributed Systems.jpg>)
 
 ## Freedom of Speech
 _&quot;Freedom of speech and thought matters, especially when it is speech and thought with which we disagree. The moment the majority decides to destroy people for engaging in thought it dislikes, thought crime becomes a reality.&quot;
@@ -7056,7 +7056,7 @@ _&quot;Freedom of speech and thought matters, especially when it is speech and t
 
 _
 
-![Freedom of Speech](36610216514_Freedom%20of%20Speech.jpg)
+![Freedom of Speech](<36610216514_Freedom of Speech.jpg>)
 
 ## I Am A Strange Loop
 _&quot;I have always thought the actions of men the best interpreters of their thoughts.&quot;
@@ -7072,7 +7072,7 @@ _&quot;I have always thought the actions of men the best interpreters of their t
 – Stephen Hawking
 _
 
-![I Am A Strange Loop](36792960560_I%20Am%20A%20Strange%20Loop.jpg)
+![I Am A Strange Loop](<36792960560_I Am A Strange Loop.jpg>)
 
 ## Some Of My Senses...
 _&quot;Luck is the residue of design.&quot;
@@ -7088,7 +7088,7 @@ Through the ashes of my chance.&quot;
 &quot;You can know how to win through strategy with the long sword, but it cannot be clearly explained in writing. You must practise diligently in order to understand how to win.&quot;
 – Miyamoto Musashi_
 
-![Some Of My Senses...](36793011240_Some%20Of%20My%20Senses___.jpg)
+![Some Of My Senses...](<36793011240_Some Of My Senses___.jpg>)
 
 ## Pyramid Scheme
 _&quot;Only the free mind knows what Love is.&quot;
@@ -7100,7 +7100,7 @@ _&quot;Only the free mind knows what Love is.&quot;
 &quot;There is a very special sense in which materialism has more restrictions than spiritualism. Mr. McCabe thinks me a slave because I am not allowed to believe in determinism. I think Mr. McCabe a slave because he is not allowed to believe in fairies. But if we examine the two vetoes we shall see that his is really much more of a pure veto than mine. The Christian is quite free to believe that there is a considerable amount of settled order and inevitable development in the universe. But the materialist is not allowed to admit into his spotless machine the slightest speck of spiritualism or miracle. Poor Mr. McCabe is not allowed to retain even the tiniest imp, though it might be hiding in a pimpernel.&quot;
 – G. K. Chesterton, &quot;Orthodoxy&quot; (1908)._
 
-![Pyramid Scheme](36866188274_Pyramid%20Scheme.jpg)
+![Pyramid Scheme](<36866188274_Pyramid Scheme.jpg>)
 
 ## Patience (in) All Things
 _
@@ -7117,7 +7117,7 @@ It is not death that a man should fear, but never beginning to live.
 &quot;One cool judgment is worth a thousand hasty councils. The thing to do is to supply light and not heat. At any rate, if it is heat it ought to be white heat and not sputter, because sputtering heat is apt to spread the fire. There ought, if there is any heat at all, to be that warmth of the heart which makes every man thrust aside his own personal feeling, his own personal interest, and take thought of the welfare and benefit of others.&quot;
 – Woodrow Wilson, address on preparedness, Pittsburgh, Pennsylvania (January 29, 1916)._
 
-![Patience (in) All Things](36900717136_Patience%20_in_%20All%20Things.jpg)
+![Patience (in) All Things](<36900717136_Patience _in_ All Things.jpg>)
 
 ## Identify Yourself ("I AM")
 _The silver text asks: &quot;identify&quot;
@@ -7134,7 +7134,7 @@ Footnote:
 Exodus 3:14 The God which ever have been, am, and shall be: the God almighty, by whom all things have their being, and the God of mercy, mindful of my promise, Rev. 1:8.
 _
 
-![Identify Yourself ("I AM")](36906445203_Identify%20Yourself%20__I%20AM__.jpg)
+![Identify Yourself ("I AM")](<36906445203_Identify Yourself __I AM__.jpg>)
 
 ## Mirror, Mirror....
 _&quot;Words ought to be a little wild for they are the assault of thoughts on the unthinking.&quot;
@@ -7154,7 +7154,7 @@ is a mirror to us.]
 &quot;Man's relations to man do not captivate my fancy. It is man's relation to the cosmos — to the unknown — which alone arouses in me the spark of creative imagination. The humanocentric pose is impossible to me, for I cannot acquire the primitive myopia which magnifies the earth and ignores the background.&quot;
 H. P. Lovecraft, in 'The Defence Remains Open!' (April 1921)._
 
-![Mirror, Mirror....](36918532012_Mirror_%20Mirror____.jpg)
+![Mirror, Mirror....](<36918532012_Mirror_ Mirror____.jpg>)
 
 ## Complex Vortex
 _&quot;The entire universe is perfused with signs, if it is not composed exclusively of signs.&quot;
@@ -7172,7 +7172,7 @@ _&quot;The entire universe is perfused with signs, if it is not composed exclusi
 1.21 Each item can be the case or not the case while everything else remains the same.&quot;
 – Ludwig Wittgenstein, 'Tractatus Logico-Philosophicus' (1921)_
 
-![Complex Vortex](37000701326_Complex%20Vortex.jpg)
+![Complex Vortex](<37000701326_Complex Vortex.jpg>)
 
 ## The Fetal Position
 _&quot;No great deed is done
@@ -7189,7 +7189,7 @@ Where he succeeds, the merit's all his own.&quot;
 – W. E. B. Du Bois, 'The Ordeal of Mansart' (1957).
 _
 
-![The Fetal Position](37047876501_The%20Fetal%20Position.jpg)
+![The Fetal Position](<37047876501_The Fetal Position.jpg>)
 
 ## Truth is a Pathless Land
 _&quot;Because your own strength is unequal to the task, do not assume that it is beyond the powers of man; but if anything is within the powers and province of man, believe that it is within your own compass also.&quot;
@@ -7201,7 +7201,7 @@ _&quot;Because your own strength is unequal to the task, do not assume that it i
 &quot;Don't go by reports, by legends, by traditions, by scripture, by logical conjecture, by inference, by analogies, by agreement through pondering views, by probability, or by the thought, 'This contemplative is our teacher.' When you know for yourselves that, 'These qualities are unskillful; these qualities are blameworthy; these qualities are criticized by the wise; these qualities, when adopted &amp; carried out, lead to harm &amp; to suffering' — then you should abandon them.&quot;
 – Gautama Buddha, Kalama Sutta._
 
-![Truth is a Pathless Land](37048079331_Truth%20is%20a%20Pathless%20Land.jpg)
+![Truth is a Pathless Land](<37048079331_Truth is a Pathless Land.jpg>)
 
 ## Balance
 _&quot;Each night, when I go to sleep, I die. And the next morning, when I wake up, I am reborn.&quot;
@@ -7233,12 +7233,12 @@ _&quot;You cannot make a crab walk straight.&quot;
 – Michael Jordan
 _
 
-![As you act.....So you are.](37063420260_As%20you%20act_____So%20you%20are_.jpg)
+![As you act.....So you are.](<37063420260_As you act_____So you are_.jpg>)
 
 ## Soul Mates
 _This is a short visual story about Two people who together formed One. The two people are walking up and to the right, along the &quot;road of life&quot;. In response to some challenge facing them, One partner says to the other, &quot;So it goes!&quot; and the other responds &quot;Yes, and....&quot;,. They do not blame one another for their shortcomings, rather they find creative ways to deal with stressful circumstances together. One of the partners (which one?) is &quot;Drawn to the Source&quot;, or in other words, is following the universal muse. I would say that the other partner is &quot;just&quot; along for the ride, but the reality is that both partners are &quot;just&quot; along for the ride. Finally, on the bottom of the drawing, is &quot;subconscious attraction&quot; -- the bedrock of the relationship in more than one way. _
 
-![Soul Mates](37063420730_Soul%20Mates.jpg)
+![Soul Mates](<37063420730_Soul Mates.jpg>)
 
 ## Eclipse
 _&quot;Vi Veri Vniversum Vivus Vici&quot;
@@ -7271,7 +7271,7 @@ _“Philosophy is not in the business of explaining anything. Actual occasions e
 
 ― Bruno Latour_
 
-![Actor Network Theory (ANT)](37127663134_Actor%20Network%20Theory%20_ANT_.jpg)
+![Actor Network Theory (ANT)](<37127663134_Actor Network Theory _ANT_.jpg>)
 
 ## Zen Garden
 _&quot;If there is anything that we wish to change in the child, we should first examine it and see whether it is not something that could better be changed in ourselves.&quot;
@@ -7287,7 +7287,7 @@ I see the Past, Present &amp; Future, existing all at once
 Before me; O Divine Spirit sustain me on thy wings!&quot;
 – William Blake, 'Jerusalem'. _
 
-![Zen Garden](37127834624_Zen%20Garden.jpg)
+![Zen Garden](<37127834624_Zen Garden.jpg>)
 
 ## The Question Or the Beg?
 _The texts at top and bottom say........
@@ -7306,14 +7306,14 @@ but TIME makes me into nothing as well&quot;
 &quot;But if any excursive brain rove over the images of forepassed times, and wonder that Thou the God Almighty and All-creating and All-supporting, Maker of heaven and earth, didst for innumerable ages forbear from so great a work, before Thou Wouldest make it; let him awake and consider, that he wonders at false conceits. For whence could innumerable ages pass by, which Thou madest not, Thou the Author and Creator of all ages? or what times should there be, which were not made by Thee? or how should they pass by, if they never were? Seeing then Thou art the Creator of all times, if any time was before Thou madest heaven and earth, why say they that Thou didst forego working? For that very time didst Thou make, nor could times pass by, before Thou madest those times. But if before heaven and earth there was no time, why is it demanded, what Thou then didst? For there was no &quot;then,&quot; when there was no time.&quot;
 – Augustine of Hippo, 'Confessions', Eleventh Book._
 
-![The Question Or the Beg?](37127878574_The%20Question%20Or%20the%20Beg_.jpg)
+![The Question Or the Beg?](<37127878574_The Question Or the Beg_.jpg>)
 
 ## PhD (Graduate School)
 _&quot;PhD&quot; is an acronym for: &quot;Pushing our knowledge to where only tHoughts have wandereD!&quot;
 
 People often emphasize the triviality of the novelties unveiled by graduate students in all disciplines. Consider this sentiment to be to intellectual achievement as &quot;My toddler could have made that&quot; is to Art. Carry on..._
 
-![PhD (Graduate School)](37127992554_PhD%20_Graduate%20School_.jpg)
+![PhD (Graduate School)](<37127992554_PhD _Graduate School_.jpg>)
 
 ## Closed // Open
 _&quot;Prudens quaestio dimidium scientiae.&quot;
@@ -7332,7 +7332,7 @@ How can the man at his ease acquire knowledge,
 And how can the earnest student enjoy ease?&quot;
 – Nagarjuna, 'The Tree of Wisdom'_
 
-![Closed // Open](37190223215_Closed%20__%20Open.jpg)
+![Closed // Open](<37190223215_Closed __ Open.jpg>)
 
 ## Public Transportation
 _&quot;In a shared fish, there are no bones.&quot;
@@ -7349,7 +7349,7 @@ I say: Take no thought of the harvest,
 But only of proper sowing.&quot;
 – T. S. Eliot, 'The Rock' (1934)_
 
-![Public Transportation](37190526155_Public%20Transportation.jpg)
+![Public Transportation](<37190526155_Public Transportation.jpg>)
 
 ## Basic Research
 _&quot;He's of stature somewhat low—
@@ -7364,7 +7364,7 @@ That may bothe werke wel and hastily.&quot;
 – Pope Gregory VII, in response to the request made in 1079 by Vratislaus, duke of Bohemia, seeking permission to use Slavonic in local church services. In &quot;Awake!&quot; magazine, December 2011, page 7; 'They Tried to Keep God’s Word From the Masses'.
 _
 
-![Basic Research](37284254564_Basic%20Research.jpg)
+![Basic Research](<37284254564_Basic Research.jpg>)
 
 ## Cytoplasm
 _&quot;… den modernen Schlacht- und Opferruf „Theilung der Arbeit! In Reih' und Glied!”&quot;
@@ -7409,7 +7409,7 @@ Return and back into your Sun subside.&quot;
 &quot;I would not expect religion to be the right tool for sequencing the human genome and by the same token would not expect science to be the means to approaching the supernatural. But on the really interesting larger questions, such as ‘Why are we here?’ or ‘Why do human beings long for spirituality?,’ I find science unsatisfactory.&quot;
 – Francis Collins_
 
-![Here today, Gone tomorrow...](37290009872_Here%20today_%20Gone%20tomorrow___.jpg)
+![Here today, Gone tomorrow...](<37290009872_Here today_ Gone tomorrow___.jpg>)
 
 ## Limits of the Self...
 _&quot;I am too firm in my consciousness of the marvelous to be ever fascinated by the mere supernatural.&quot;
@@ -7421,7 +7421,7 @@ _&quot;I am too firm in my consciousness of the marvelous to be ever fascinated 
 – In addition to his bio-physical heresies, Dr. Reich vastly offended many people by his sociological theory, which holds that fascism is just an exaggerated form of the basic structure of sex-negative societies and has existed under other names in every civilization based on sexual repression. In this theory, the character and muscular armor of the average citizen — a submissive and frightened attitude anchored in body reflexes — causes the average person to want a strong authority figure above them. Tyranny, in this model, is not created by tyrants alone but by neurotic masses who want tyrants.– 
 – Robert Anton Wilson, in &quot;Everything Is Under Control : Conspiracies, Cults, and Cover-Ups&quot; (1998), p. 361._
 
-![Limits of the Self...](37317620080_Limits%20of%20the%20Self___.jpg)
+![Limits of the Self...](<37317620080_Limits of the Self___.jpg>)
 
 ## Name of the Rose (Rose)
 _&quot;He that will not when he may,
@@ -7432,7 +7432,7 @@ When he will he shall have nay.&quot;
 – William Faulkner
 _
 
-![Name of the Rose (Rose)](37319198351_Name%20of%20the%20Rose%20_Rose_.jpg)
+![Name of the Rose (Rose)](<37319198351_Name of the Rose _Rose_.jpg>)
 
 ## Cold War
 _&quot;It's true that things are beautiful when they work. Art is function.&quot;
@@ -7445,7 +7445,7 @@ _&quot;It's true that things are beautiful when they work. Art is function.&quot
 – George MacDonald‎, in &quot;The Fantastic Imagination&quot; (1893).
 _
 
-![Cold War](37527652326_Cold%20War.jpg)
+![Cold War](<37527652326_Cold War.jpg>)
 
 ## Hearing (Earing)
 _&quot;A Chinese prose writer has observed that the unicorn, because of its own anomaly, will pass unnoticed. Our eyes see what they are accustomed to seeing.&quot;
@@ -7457,7 +7457,7 @@ _&quot;A Chinese prose writer has observed that the unicorn, because of its own 
 &quot;The Trickster represents the quality of randomness and chance in the universe, without which there could be no freedom. In the Craft the Goddess is not omnipotent. The cosmos is interesting rather than perfect, and everything is not part of some greater plan, nor is all necessarily under control. Understanding this keeps us humble, able to admit that we cannot know or control or define everything.&quot;
  – Starhawk, in &quot;The Spiral Dance: A Rebirth of the Ancient Religion of the Goddess&quot; (1979)._
 
-![Hearing (Earing)](37544705962_Hearing%20_Earing_.jpg)
+![Hearing (Earing)](<37544705962_Hearing _Earing_.jpg>)
 
 ## Cosmic Egg
 _&quot;I do not demand equal pay for any women save those who do equal work in value. Scorn to be coddled by your employers; make them understand that you are in their service as workers, not as women.&quot;
@@ -7469,7 +7469,7 @@ _&quot;I do not demand equal pay for any women save those who do equal work in v
 &quot;I could wish that men would consider three things which are within themselves. These three things are quite different from the Trinity, but I mention them in order that men may exercise their minds and test themselves and come to realize how different from it they are. The three things I speak of are: to be, to know, and to will. For I am, and I know, and I will. I am a knowing and a willing being; I know that I am and that I will; and I will to be and to know. In these three functions, therefore, let him who can see how integral a life is; for there is one life, one mind, one essence. Finally, the distinction does not separate the things, and yet it is a distinction.&quot;
 – Augustine, &quot;Confessions&quot;_
 
-![Cosmic Egg](37544709282_Cosmic%20Egg.jpg)
+![Cosmic Egg](<37544709282_Cosmic Egg.jpg>)
 
 ## When text becomes ART
 _When does text become art? 
@@ -7484,7 +7484,7 @@ Indeed, the Syntactic (style) road actually encompasses the Semantic (content) r
 
 So perhaps the relationship between Content and Style is less like two parallel roads and more like a bike lane going down the median divider of a communication freeway. The bike traffic (message content) is surrounded on all sides by the car traffic (message style). Despite Newton's Laws, crashes between cars and bikes are usually more painful for the bike rider. In other words, illegible font or off-putting style can destroy the content of a text, but no aberration of content may ever sully an artistic style. _
 
-![When text becomes ART](37576280391_When%20text%20becomes%20ART.jpg)
+![When text becomes ART](<37576280391_When text becomes ART.jpg>)
 
 ## Distributed Development (Ethereum's Timecircle)
 _Allow me to briefly explain a simple scheme for the optimal development, elaboration, and maintenance of a decentralized system. Such decentralized systems include, but are not limited to: cryptocurrencies, academic research groups, and ant colonies. 
@@ -7510,7 +7510,7 @@ In summary, the four fractal stages of decentralized optimization:
 
 p.s. This drawing is Ethereum-centric because cryptocurrencies are exciting areas to explore many of these ideas about distributed socio-economic systems._
 
-![Distributed Development (Ethereum's Timecircle)](37576383771_Distributed%20Development%20_Ethereum_s%20Timecircle_.jpg)
+![Distributed Development (Ethereum's Timecircle)](<37576383771_Distributed Development _Ethereum_s Timecircle_.jpg>)
 
 ## Trump's America
 _&quot;Fighting men are the city's fortress.&quot;
@@ -7525,7 +7525,7 @@ _&quot;Fighting men are the city's fortress.&quot;
 &quot;First radio, then television, have assaulted and overturned the privacy of the home, the real American privacy, which permitted the development of a higher and more independent life within democratic society.....It is not so much the low quality of the fare provided that is troubling. It is much more the difficulty of imagining any order of taste, any way of life with pleasures and learning that naturally fit the lives of the family’s members, keeping itself distinct from the popular culture and resisting the visions of what is admirable and interesting with which they are bombarded.&quot;
 – Allan Bloom, &quot;The Closing of the American Mind&quot; (New York: 1988)._
 
-![Trump's America](37576556581_Trump_s%20America.jpg)
+![Trump's America](<37576556581_Trump_s America.jpg>)
 
 ## Individual Regulation of Mental Foraging
 _While the mind wanders, the self is set FREE!
@@ -7539,7 +7539,7 @@ _While the mind wanders, the self is set FREE!
 &quot;Words do not express thoughts very well. They always become a little different immediately after they are expressed, a little distorted, a little foolish. And yet it also pleases me and seems right that what is of value and wisdom to one man seems nonsense to another.&quot;
 – Hermann Hesse, 'Siddhartha' (1922)._
 
-![Individual Regulation of Mental Foraging](37580654480_Individual%20Regulation%20of%20Mental%20Foraging.jpg)
+![Individual Regulation of Mental Foraging](<37580654480_Individual Regulation of Mental Foraging.jpg>)
 
 ## Interplay
 _&quot;I thought of a labyrinth of labyrinths, of one sinuous spreading labyrinth that would encompass the past and the future and in some way involve the stars.&quot;
@@ -7566,7 +7566,7 @@ _&quot;If you want to prove that God is not dead, first prove that man is alive.
 &quot;When people talk of the Freedom of Writing, Speaking, or thinking, I cannot choose but laugh. No such thing ever existed. No such thing now exists; but I hope it will exist. But it must be hundreds of years after you and I shall write and speak no more.&quot;
 – John Adams Letter to Thomas Jefferson (15 July 1817)._
 
-![Silence is Golden](37806025322_Silence%20is%20Golden.jpg)
+![Silence is Golden](<37806025322_Silence is Golden.jpg>)
 
 ## Decentralized
 _&quot;This is the dimension of imagination. It is an area which we call the Twilight Zone.&quot;
@@ -7590,7 +7590,7 @@ _&quot;People want to watch whatever video they want to watch whenever they want
 &quot;The more we learn about what we are, the more options we will discern about what to try to become. Americans have long honored the 'self-made man,' but now that we are actually learning enough to be able to remake ourselves into something new, many flinch. Many would apparently rather bumble around with their eyes closed, trusting in tradition, than look around to see what’s about to happen. Yes, it is unnerving; yes, it can be scary. After all, there are entirely new mistakes we are now empowered to make for the first time. But it’s the beginning of a great new adventure for our knowing species. And it’s much more exciting, as well as safer, if we open our eyes.&quot;
 – Daniel Dennett, 'We Earth Neurons' (1999)._
 
-![Growth Mindset](37838391845_Growth%20Mindset.jpg)
+![Growth Mindset](<37838391845_Growth Mindset.jpg>)
 
 ## Pattern (Neural Network)
 _&quot;Anything that can be automatically done for you can be automatically done to you.&quot;
@@ -7608,7 +7608,7 @@ That mighty instrument of little men!&quot;
 &quot;The question of whether a computer is playing chess, or doing long division, or translating Chinese, is like the question of whether robots can murder or airplanes can fly -- or people; after all, the &quot;flight&quot; of the Olympic long jump champion is only an order of magnitude short of that of the chicken champion (so I'm told). These are questions of decision, not fact; decision as to whether to adopt a certain metaphoric extension of common usage.&quot;
 – Noam Chomsky, 'Powers and Prospects' (1996). _
 
-![Pattern (Neural Network)](37838435935_Pattern%20_Neural%20Network_.jpg)
+![Pattern (Neural Network)](<37838435935_Pattern _Neural Network_.jpg>)
 
 ## Person on a Train
 _&quot;Weak and miserable as I am, I can still stand up to the terrible tragedy of life and prevail!&quot;
@@ -7621,7 +7621,7 @@ _&quot;Weak and miserable as I am, I can still stand up to the terrible tragedy 
 
 – Jordan Peterson, PhD. _
 
-![Person on a Train](37838735935_Person%20on%20a%20Train.jpg)
+![Person on a Train](<37838735935_Person on a Train.jpg>)
 
 ## Face to Face
 _&quot;Society in every state is a blessing, but government even in its best state is but a necessary evil.&quot;
@@ -7633,7 +7633,7 @@ _&quot;Society in every state is a blessing, but government even in its best sta
 &quot;I personally think intellectual property is an oxymoron. Physical objects have a completely different natural economy than intellectual goods. It's a tricky thing to try to own something that remains in your possession even after you give it to many others.&quot;
 – John Perry Barlow_
 
-![Face to Face](37993255111_Face%20to%20Face.jpg)
+![Face to Face](<37993255111_Face to Face.jpg>)
 
 ## Eusocialism
 _&quot;While an ant was wandering under the shade of the tree of Phæton, a drop of amber enveloped the tiny insect; thus she, who in life was disregarded, became precious by death.&quot;
@@ -7715,7 +7715,7 @@ _&quot;Work consists of whatever a body is obliged to do. Play consists of whate
 &quot;Brahman and Śakti are identical. If you accept the one, you must accept the other. It is like fire and its power to burn. If you see the fire, you must recognize its power to burn also. You cannot think of fire without its power to burn, nor can you think of the power to burn without fire. You cannot conceive of the sun's rays without the sun, nor can you conceive of the sun without its rays. You cannot think of the milk without the whiteness, and again, you cannot think of the whiteness without the milk. Thus one cannot think of Brahman without Śakti, or of Śakti without Brahman. One cannot think of the Absolute without the Relative, or of the Relative without the Absolute.&quot;
 – Ramakrishna, in 'The Gospel of Sri Ramakrishna' (1942), p. 134_
 
-![Metabolism (Holon)](38309001342_Metabolism%20_Holon_.jpg)
+![Metabolism (Holon)](<38309001342_Metabolism _Holon_.jpg>)
 
 ## Starry Day
 _&quot;There is an art in taking the whiplash of suffering full in the face, an art you must learn. Let each single attack exhaust itself; pain always makes single attacks, so that its bite may be more intense, more concentrated. And you, while its fangs are implanted and injecting their venom at one spot, do not forget to offer it another place where it can bite you, and so relieve the pain of the first.&quot;
@@ -7727,7 +7727,7 @@ _&quot;There is an art in taking the whiplash of suffering full in the face, an 
 &quot;Most students of nature sooner or later pass through a process of writing off a large percentage of their supposed capital of knowledge as a merely illusory asset. As we trace more accurately certain familiar sequences of phenomena we begin to realize how closely these sequences, or laws, as we call them, are hemmed round by still other laws of which we can form no notion. With myself this writing off of illusory assets has gone rather far and the cobweb of supposed knowledge has been pinched (as some one has phrased) into a particularly small pill.&quot;
 – William Crookes, Address as President to the Society for Psychical Research (29 January 1897)._
 
-![Starry Day](38309423332_Starry%20Day.jpg)
+![Starry Day](<38309423332_Starry Day.jpg>)
 
 ## Time + Space + Space + Space
 _&quot;Like the watermen that row one way and look another.&quot;
@@ -7739,7 +7739,7 @@ _&quot;Like the watermen that row one way and look another.&quot;
 &quot;The fact is that the truth of harmony and human brotherhood derives not from an absorbed trance but from an awakened prajñâ or wisdom; and its validity depends not on any dramatic ecstatic visions but it belongs to man’s (…) natural reason unspoilt by theologies of exclusiveness.&quot;
 – Ram Swarup: Ramakrishna Mission, p.13. (1986)._
 
-![Time + Space + Space + Space](38459446615_Time%20_%20Space%20_%20Space%20_%20Space.jpg)
+![Time + Space + Space + Space](<38459446615_Time _ Space _ Space _ Space.jpg>)
 
 ## Christmas (Liberation)
 _&quot;For unto us a child is born, unto us a son is given; and the government shall be upon his shoulders; and his name shall be called Wonderful, Counsellor, the Mighty God, the everlasting Father, the Prince of Peace.&quot;
@@ -7752,7 +7752,7 @@ _&quot;For unto us a child is born, unto us a son is given; and the government s
 &quot;We hear the beating of wings over Bethlehem and a light that is not of the sun or of the stars shines in the midnight sky. Let the beauty of the story take away all narrowness, all thought of formal creeds. Let it be remembered as a story that has happened again and again, to men of many different races, that has been expressed through many religions, that has been called by many different names. Time and space and language lay no limitations upon human brotherhood.&quot;
 – The New York Times (25 December 1937)._
 
-![Christmas (Liberation)](38558981554_Christmas%20_Liberation_.jpg)
+![Christmas (Liberation)](<38558981554_Christmas _Liberation_.jpg>)
 
 ## Intersections Intersecting Intersections
 _&quot;I have yet to see any problem, however complicated, which when you looked at it in the right way, did not become more complicated.&quot;
@@ -7765,7 +7765,7 @@ To flutter — and Lo! the Bird is on the Wing&quot;
 &quot;For four thousand years the strong had been rushing on in the road of privilege and power, seeking greatness. Christ stood in the path, and said, &quot; Ye seek greatness. Ye are not even in the way to it. Ye are going up, but the way to greatness is down. Let him who would be great be the love-servant of all.&quot; Greatness consists in the facility and power of going down, and not in the facility of going up.&quot;
 – Henry Ward Beecher, 'Life Thoughts' (1858)._
 
-![Intersections Intersecting Intersections](38558981704_Intersections%20Intersecting%20Intersections.jpg)
+![Intersections Intersecting Intersections](<38558981704_Intersections Intersecting Intersections.jpg>)
 
 ## Bitcoin?
 _&quot;The act of defending any of the cardinal virtues has today all the exhilaration of a vice. Moral truisms have been so much disputed that they have begun to sparkle like so many brilliant paradoxes.&quot;
@@ -7793,7 +7793,7 @@ _&quot;I have one friend whose Facebook updates are exclusively complaining abou
 &quot;For the first time, we saw everything they could bring to the battle. And it was... nothing. Not even a fizzle. All they can say is 'thief, we have our rights, we want our rights, nothing must change, we want more money, thief, thief, thief'. And shove some poor artists in front of them to deliver the message. Whereas we are talking about scarcity vs. abundance, monopolies, the nature of property, 500-year historical perspectives on culture and knowledge, incentive structures, economic theory, disruptive technologies, etc. The difference in intellectual levels between the sides is astounding.&quot;
 – P2P Consortium_
 
-![Divine Fire](38694334902_Divine%20Fire.jpg)
+![Divine Fire](<38694334902_Divine Fire.jpg>)
 
 ## Nationalism
 _&quot;For I would rather be a servant in the House of the Lord than to sit in the seats of the mighty.&quot;
@@ -7816,7 +7816,7 @@ Co-drawn with my Font-Queen, S.
 Interpretations welcomed below ~
 _
 
-![Have Love with the person you sex.](38726088101_Have%20Love%20with%20the%20person%20you%20sex_.jpg)
+![Have Love with the person you sex.](<38726088101_Have Love with the person you sex_.jpg>)
 
 ## #Trilema
 _&quot;Let every one of us cultivate, in every word that issues from our mouth, absolute truth. I say cultivate, because to very few people — as may be noticed of most young children — does truth, this rigid, literal veracity, come by nature. To many, even who love it and prize it dearly in others, it comes only after the self-control, watchfulness, and bitter experience of years.&quot;
@@ -7842,7 +7842,7 @@ _&quot;Men do not mirror themselves in running water, they mirror themselves in 
 &quot;We live in a nightmare of falsehoods, and there are few who are sufficiently awake and aware to see things as they are. Our first duty is to clear away illusions and recover a sense of reality.&quot;
 – Nikolai Berdyaev, 'Political Testament' (1949)._
 
-![Dynamic Equilibrium](38863818575_Dynamic%20Equilibrium.jpg)
+![Dynamic Equilibrium](<38863818575_Dynamic Equilibrium.jpg>)
 
 ## Sort Your Self Out
 _&quot;Thaw with her gentle persuasion is more powerful than Thor with his hammer. The one melts, the other breaks into pieces.&quot;
@@ -7851,7 +7851,7 @@ _&quot;Thaw with her gentle persuasion is more powerful than Thor with his hamme
 &quot;In the depth of his heart he knew he was dying, but not only was he not accustomed to the thought, he simply did not and could not grasp it. The syllogism he had learnt from Kiesewetter's Logic: 'Caius is a man, men are mortal, therefore Caius is mortal' had always seemed to him correct, but he was Cauis, not an abstract man, but a creature quite, quite separate from all others.&quot;
 – Leo Tolstoy in &quot;The Death of Ivan Ilych&quot;_
 
-![Sort Your Self Out](39000142690_Sort%20Your%20Self%20Out.jpg)
+![Sort Your Self Out](<39000142690_Sort Your Self Out.jpg>)
 
 ## Let the sun set on the old....
 _&quot;If you make people think they're thinking, they'll love you; but if you really make them think, they'll hate you.&quot;
@@ -7863,7 +7863,7 @@ _&quot;If you make people think they're thinking, they'll love you; but if you r
 &quot;What I call natural philosophy isn’t new, for it has been practiced in various ways by such distinguished philosophers as Thales, Aristotle, Epicurus, Lucretius, Bacon, Locke, Hume, Mill, Peirce, Russell (after 1920), Dewey, Quine (after 1950), and Kuhn. There are also many contemporary philosophers making progress on problems concerning the nature of knowledge, reality and ethics, without succumbing to the dogmas of analytic philosophy. Philosophy needs to be extraverted, directing its attention to real world problems and relevant scientific findings, not introverted and concerned only with its own history and techniques.&quot;
 – Paul Thagard, 'Eleven Dogmas of Analytic Philosophy' (2012)._
 
-![Let the sun set on the old....](39220172454_Let%20the%20sun%20set%20on%20the%20old____.jpg)
+![Let the sun set on the old....](<39220172454_Let the sun set on the old____.jpg>)
 
 ## Wormhole
 _&quot;You are not like Cerberus, three gentlemen at once, are you?&quot;
@@ -7896,7 +7896,7 @@ The secret of transformation,
 is in the way we handle this very moment.&quot;
 – Nhat Hanh, 'Understanding Our Mind' (2006)._
 
-![New Years!](39266577931_New%20Years_.jpg)
+![New Years!](<39266577931_New Years_.jpg>)
 
 ## Vertebrae (Cross-section)
 _&quot;The matter lies before the eyes of all; everybody sees it, touches it, loves it, but knows it not. It is glorious and vile, precious and of small account, and is found everywhere... But, to be brief, our Matter has as many names as there are things in this world; that is why the foolish know it not.&quot;
@@ -7911,7 +7911,7 @@ The force from the beginning.&quot;
 &quot;In addition to his bio-physical heresies, Dr. Reich vastly offended many people by his sociological theory, which holds that fascism is just an exaggerated form of the basic structure of sex-negative societies and has existed under other names in every civilization based on sexual repression. In this theory, the character and muscular armor of the average citizen — a submissive and frightened attitude anchored in body reflexes — causes the average person to want a strong authority figure above them. Tyranny, in this model, is not created by tyrants alone but by neurotic masses who want tyrants.&quot;
 – Robert Anton Wilson, in 'Everything Is Under Control : Conspiracies, Cults, and Cover-Ups' (1998)._
 
-![Vertebrae (Cross-section)](39307466172_Vertebrae%20_Cross-section_.jpg)
+![Vertebrae (Cross-section)](<39307466172_Vertebrae _Cross-section_.jpg>)
 
 ## Binding
 _&quot;Ein guter Mensch, in seinem dunkeln Drange,
@@ -7944,7 +7944,7 @@ The seasons alter.&quot;
 
 – William Shakespeare (predicting some Moon phenomena? driving weather patterns?)_
 
-![Congress is the Opposite of Progress](39673280953_Congress%20is%20the%20Opposite%20of%20Progress.jpg)
+![Congress is the Opposite of Progress](<39673280953_Congress is the Opposite of Progress.jpg>)
 
 ## Truth Through Geometry
 _The first thought bubble emerging from the figure's mind is a loopy ring. A human child's first categories of the world are topological, not geometric (Jean Piaget *). This phase of evolutionary (species-level) and developmental (child-level) complexity is characterized by the inability to formalize topology beyond the immediate geometric forms found in nature. 
@@ -7960,7 +7960,7 @@ In the final panel, a compass traces out a circle (n.b. not a &quot;Circle&quot;
 ***; Today (2018) compared to any reasonable evolutionary precedent. 
 Also see: Fuller, RB &amp; Applewhite, EJ (1975). Synergetics; Explorations in the Geometry of Thinking. _
 
-![Truth Through Geometry](39695970244_Truth%20Through%20Geometry.jpg)
+![Truth Through Geometry](<39695970244_Truth Through Geometry.jpg>)
 
 ## UFO (OVNI)
 _&quot;I will with patience hear, and find a time
@@ -7971,7 +7971,7 @@ Till then, my noble friend, chew upon this.&quot;
 &quot;Read not to contradict and confute, nor to believe and take for granted, nor to find talk and discourse, but to weigh and consider. Some books are to be tasted, others to be swallowed, and some few to be chewed digested. That is, some books are to be read only parts; others to be read, but not curiously; and some few to be read wholly, and with diligence and attention. Some books also may be read by deputy, and extracts made of them by others; but that would be only in less important arguments, and the meaner sort of books: else distilled books are, like common distilled waters, flashy things. Reading maketh a full man; conference a ready man; and writing an exact man. And, therefore, if a man write little, he had need have a great memory; if he confer little, he had need have a present wit; and if he read little, he had need have much cunning, to seem to know that he doth not.&quot;
 – Francis Bacon, 'I. Of studie', &quot;Essaies&quot; (Jan, 1597)._
 
-![UFO (OVNI)](39730488282_UFO%20_OVNI_.jpg)
+![UFO (OVNI)](<39730488282_UFO _OVNI_.jpg>)
 
 ## Diptych No. 2
 _&quot;Thus life by life and love by love
@@ -7983,7 +7983,7 @@ We followed the chain of change.&quot;
 &quot;....Actually, throughout my life, my two greatest assets have been mental stability and being, like, really smart. Crooked Hillary Clinton also played these cards very hard and, as everyone knows, went down in flames. I went from VERY successful businessman, to top T.V. Star.........to President of the United States (on my first try). I think that would qualify as not smart, but genius....and a very stable genius at that!&quot; 
 – Donald J. Trump (@realDonaldTrump), Jan. 6th, 2018._
 
-![Diptych No. 2](39731285612_Diptych%20No_%202.jpg)
+![Diptych No. 2](<39731285612_Diptych No_ 2.jpg>)
 
 ## Rorschach Butterfly
 _&quot;When strength is yoked with justice, where is a mightier pair than they?&quot;
@@ -7998,7 +7998,7 @@ And go, get drunk with that divine intoxication
 Which is more sober far than all sobriety.&quot;
 – William R. Alger, &quot;The Sober Drunkenness&quot;, 'Poetry of the Orient' (1865), p. 167._
 
-![Rorschach Butterfly](39762508121_Rorschach%20Butterfly.jpg)
+![Rorschach Butterfly](<39762508121_Rorschach Butterfly.jpg>)
 
 ## Keep Calm and Free the Energy!
 _&quot;I am the father of this universe, the mother, the support and the grandsire. I am the object of knowledge, the purifier and the syllable oṃ.&quot;
@@ -8014,7 +8014,7 @@ _&quot;I am the father of this universe, the mother, the support and the grandsi
 
 Co-draw with S. :)_
 
-![Keep Calm and Free the Energy!](39915079635_Keep%20Calm%20and%20Free%20the%20Energy_.jpg)
+![Keep Calm and Free the Energy!](<39915079635_Keep Calm and Free the Energy_.jpg>)
 
 ## Life Is Stranger Than Fiction
 _&quot;Paradoxes explain everything. Since they do, they cannot be explained.&quot;
@@ -8026,7 +8026,7 @@ _&quot;Paradoxes explain everything. Since they do, they cannot be explained.&qu
 &quot;At various times the Game was taken up and imitated by nearly all the scientific and scholarly disciplines, that is, adapted to the special fields. There is documented evidence for its application to the fields of classical philology and logic. The analytical study of musical values had led to the reduction of musical events to physical and mathematical formulas. Soon afterward philology borrowed this method and began to measure linguistic configurations as physics measures processes in nature. The visual arts soon followed suit, architecture having already led the way in establishing the links between visual art and mathematics. Thereafter more and more new relations, analogies, and correspondences were discovered among the abstract formulas obtained in this way. Each discipline which seized upon the Game created its own language of formulas, abbreviations, and possible combinations. Everywhere, the elite intellectual youth developed a passion for these Games, with their dialogues and progressions of formulas. The Game was not mere practice and mere recreation; it became a form of concentrated self-awareness for intellectuals. Mathematicians in particular played it with a virtuosity and formal strictness at once athletic and ascetic. It afforded them a pleasure which somewhat compensated for their renunciation of worldly pleasures and ambitions. For by then such renunciation had already become a regular thing for intellectuals. The Glass Bead Game contributed largely to the complete default of feuilletonism and to that newly awakened delight in strict mental exercises to which we owe the origin of a new, monastically austere intellectual discipline.&quot;
 – Hermann Hesse, &quot;Glass Bead Game&quot; (Magister Ludi)_
 
-![Life Is Stranger Than Fiction](39915173215_Life%20Is%20Stranger%20Than%20Fiction.jpg)
+![Life Is Stranger Than Fiction](<39915173215_Life Is Stranger Than Fiction.jpg>)
 
 ## Path Of Life
 _&quot;Once you get it into your head that somebody is controlling events, you can interpret everything in that light and find no reasonable certainty anywhere.&quot;
@@ -8041,7 +8041,7 @@ As also in birth and death.&quot;
 &quot;The happiest moments of my life have been the few which I have past at home in the bosom of my family…. public emploiment contributes neither to advantage nor happiness. It is but honorable exile from one’s family and affairs.&quot;
 – Thomas Jefferson, letter to Francis Willis, Jr., April 18, 1790_
 
-![Path Of Life](40061340043_Path%20Of%20Life.jpg)
+![Path Of Life](<40061340043_Path Of Life.jpg>)
 
 ## Tree
 _&quot;There is no more lovely, friendly and charming relationship, communion or company than a good marriage.&quot;&quot;
@@ -8076,7 +8076,7 @@ You're the top! You are Mussolini!&quot;
 &quot;The bill calls for a &quot;10-year national mobilizations&quot; toward accomplishing a series of goals... Among the most prominent... meeting 100 percent of the power demand in the United States through clean, renewable, and zero-emission energy sources... ultimate goal is to stop using fossil fuels entirely... to transition away from nuclear energy In addition... a variety of other lofty goals....upgrading all existing buildings... for energy efficiency.... working with farmers &quot;to eliminate pollution and greenhouse gas emissions... as much as is technologically feasible....while supporting family farms and promoting &quot;universal access to healthy food... Overhauling transportation systems... expanding electric car manufacturing... charging stations everywhere... expanding high-speed rail to &quot;a scale where air travel stops becoming necessary&quot;.... guaranteed job &quot;with a family-sustaining wage, adequate family... medical leave, paid vacations.... retirement security.... High-quality health care for all Americans...&quot;
 – National Public Radio (NPR)  (7 February 2019) -- 'Rep. Alexandria Ocasio-Cortez Releases Green New Deal Outline', by Danielle Kurtzleben, NPR._
 
-![Conspiracy #1: When we burn books, the world goes dark.](40076944883_Conspiracy%20_1_%20When%20we%20burn%20books_%20the%20world%20goes%20.jpg)
+![Conspiracy #1: When we burn books, the world goes dark.](<40076944883_Conspiracy _1_ When we burn books_ the world goes .jpg>)
 
 ## Political Spectrum (Left, Center, Right)
 _&quot;Political correctness is the natural continuum from the party line. What we are seeing once again is a self-appointed group of vigilantes imposing their views on others. It is a heritage of communism, but they don't seem to see this.&quot;
@@ -8090,7 +8090,7 @@ Hannah Arendt, &quot;Eichmann in Jerusalem&quot; (1963), Postscript to the revis
 
 Co-draw with S. :)_
 
-![Political Spectrum (Left, Center, Right)](40100776004_Political%20Spectrum%20_Left_%20Center_%20Right_.jpg)
+![Political Spectrum (Left, Center, Right)](<40100776004_Political Spectrum _Left_ Center_ Right_.jpg>)
 
 ## Answer Hazy, Ask Again.....
 _&quot;Cause me no causes.&quot;
@@ -8108,7 +8108,7 @@ _&quot;Cause me no causes.&quot;
 &quot;Tennessee me no Tennessees.&quot;
 – Jack Kerouac, &quot;Visions of Cody&quot; (1972)_
 
-![Answer Hazy, Ask Again.....](40101043044_Answer%20Hazy_%20Ask%20Again_____.jpg)
+![Answer Hazy, Ask Again.....](<40101043044_Answer Hazy_ Ask Again_____.jpg>)
 
 ## Geometer's Sketchpad
 _&quot;There is no royal road to geometry.&quot;
@@ -8122,7 +8122,7 @@ _&quot;There is no royal road to geometry.&quot;
 &quot;A geometrician has learned to perform the most difficult demonstrations and calculations, as a monkey has learned to take his little hat off and on... All has been accomplished through signs, every species has learned what it could understand, and in this way men have acquired symbolic knowledge...&quot;
 – Julien Offray de La Mettrie, &quot;Man a Machine&quot; (1747)._
 
-![Geometer's Sketchpad](40163289603_Geometer_s%20Sketchpad.jpg)
+![Geometer's Sketchpad](<40163289603_Geometer_s Sketchpad.jpg>)
 
 ## Love // Symbiosis pt. II
 _&quot;Never call yourself a philosopher, nor talk a great deal among the unlearned about theorems, but act conformably to them.&quot;
@@ -8134,7 +8134,7 @@ _&quot;Never call yourself a philosopher, nor talk a great deal among the unlear
 &quot;It was appropriate to say up front that systems thinking is the parent of design thinking and systems inquiry embeds design inquiry.&quot;
 – Bela H. Banathy, 'Designing Social Systems in a Changing World' (1996) p. 163._
 
-![Love // Symbiosis pt. II](40209500865_Love%20__%20Symbiosis%20pt_%20II.jpg)
+![Love // Symbiosis pt. II](<40209500865_Love __ Symbiosis pt_ II.jpg>)
 
 ## Spider
 _ &quot;I am what I am. Tell them that I AM has sent you.'&quot;_
@@ -8144,7 +8144,7 @@ _ &quot;I am what I am. Tell them that I AM has sent you.'&quot;_
 ## Extracellular Matrix
 _So much LPS that my hives started acting up. _
 
-![Extracellular Matrix](4024052273_Extracellular%20Matrix.jpg)
+![Extracellular Matrix](<4024052273_Extracellular Matrix.jpg>)
 
 ## Archaea
 _Why don't we have transgenics in Archaea yet?? Seriously. _
@@ -8224,12 +8224,12 @@ _Eye See You. _
 ## Step Pyramid
 _Simple, yet still mandated by the aliens. _
 
-![Step Pyramid](4024816262_Step%20Pyramid.jpg)
+![Step Pyramid](<4024816262_Step Pyramid.jpg>)
 
 ## Crystal Flower
 _CSUS 2010 (lol). _
 
-![Crystal Flower](4024816516_Crystal%20Flower.jpg)
+![Crystal Flower](<4024816516_Crystal Flower.jpg>)
 
 ## Graffiti
 _Frozen sound is crystalized air. _
@@ -8273,7 +8273,7 @@ REASON, n. Propensitate of prejudice.
 &quot;No one has yet been found so firm of mind and purpose as resolutely to compel himself to sweep away all theories and common notions, and to apply the understanding, thus made fair and even, to a fresh examination of particulars. Thus it happens that human knowledge, as we have it, is a mere medley and ill-digested mass, made up of much credulity and much accident, and also of the childish notions which we at first imbibed.&quot;
 – Francis Bacon, &quot;Novum Organum&quot; (1620), Aphorism 97._
 
-![Down the & Out the Rabbit Hole](40386904523_Down%20the%20_%20Out%20the%20Rabbit%20Hole.jpg)
+![Down the & Out the Rabbit Hole](<40386904523_Down the _ Out the Rabbit Hole.jpg>)
 
 ## Trinity
 _&quot;Government has no right to hurt a hair on the head of an Atheist for his Opinions. Let him have a care of his Practices.&quot;
@@ -8297,7 +8297,7 @@ _&quot;The dinosaurs are not extinct. The colorful and successful diversity of t
 &quot;In an unmailed answer to a questionnaire, Gödel described his religion as &quot;baptized Lutheran (but not member of any religious congregation). My belief is theistic, not pantheistic, following Leibniz rather than Spinoza.&quot;[32] Describing religion(s) in general, Gödel said: &quot;Religions are, for the most part, bad—but religion is not&quot;.[33] According to his wife Adele, &quot;Gödel, although he did not go to church, was religious and read the Bible in bed every Sunday morning&quot;,[34] while of Islam, he said, &quot;I like Islam: it is a consistent [or consequential] idea of religion and open-minded.&quot;[35]&quot;
 – Wikipedia, 3/17/2019, Kurt Gödel article. _
 
-![Evolution By Common Dissent](40441700533_Evolution%20By%20Common%20Dissent.jpg)
+![Evolution By Common Dissent](<40441700533_Evolution By Common Dissent.jpg>)
 
 ## Traffic Lights
 _&quot;The only thing I regret about my past is the length of it. If I had to live my life again, I'd make the same mistakes, only sooner.&quot;
@@ -8309,7 +8309,7 @@ _&quot;The only thing I regret about my past is the length of it. If I had to li
 &quot;The dependence of the individual upon society is a fact of nature which cannot be abolished.&quot;
 – Albert Einstein, 'Why Socialism?' (1949)._
 
-![Traffic Lights](40459591754_Traffic%20Lights.jpg)
+![Traffic Lights](<40459591754_Traffic Lights.jpg>)
 
 ## Spirit Glyph
 _&quot;There are as many types of motion or change as there are meanings of the word 'is'.&quot;
@@ -8321,10 +8321,10 @@ _&quot;There are as many types of motion or change as there are meanings of the 
 &quot;A young man who had been troubling society with impalpable doctrines of a new civilization which he called 'the Kingdom of Heaven' had been put out of the way; and I can imagine that believer in material power murmuring as he went homeward, 'it will all blow over now.' Yes. The wind from the Kingdom of Heaven has blown over the world, and shall blow for centuries yet.&quot;
 – George William Russell, in 'The Economics of Ireland and the Policy of the British Government' (1921), p. 23._
 
-![Spirit Glyph](40475549162_Spirit%20Glyph.jpg)
+![Spirit Glyph](<40475549162_Spirit Glyph.jpg>)
 
 ## 40514211503_Traditionalism (1)
-![40514211503_Traditionalism (1)](40514211503_Traditionalism%20(1).jpg)
+![40514211503_Traditionalism (1)](<40514211503_Traditionalism (1).jpg>)
 
 ## Traditionalism
 _&quot;I hold in fact
@@ -8349,7 +8349,7 @@ _&quot;It is very probable, too, that the application of our therapy to numbers 
 &quot;The Bible is an indispensable part of the furniture of a Christian Lodge, only because it is the sacred book of the Christian religion. The Hebrew Pentateuch in a Hebrew Lodge, and the Koran in a Mohammedan one, belong on the Altar; and one of these, and the Square and Compass, properly understood, are the Great Lights by which a Mason must walk and work. The obligation of the candidate is always to be taken on the sacred book or books of his religion, that he may deem it more solemn and binding; and therefore it was that you were asked of what religion you were. We have no other concern with your religious creed.&quot;
 – &quot;Morals and Dogma of the Ancient and Accepted Scottish Rite of Freemasonry&quot; (1871), Ch. I : 'Apprentice, The Twelve-Inch Rule and Common Gavel', p. 1._
 
-![Persona Non Grata](40601701993_Persona%20Non%20Grata.jpg)
+![Persona Non Grata](<40601701993_Persona Non Grata.jpg>)
 
 ## Hello Operon
 _&quot;The light will not shame you, if it shows you your own ugliness, and that ugliness so offends you that you perceive the beauty of the light.&quot;
@@ -8367,10 +8367,10 @@ He holds him safe, he keeps him warm.&quot;
 &quot;Also, there will be signs in the sun and moon and stars, and on the earth anguish of nations not knowing the way out because of the roaring of the sea and its agitation. People will become faint out of fear and expectation of the things coming upon the inhabited earth, for the powers of the heavens will be shaken.&quot;
 – Jesus, Gospel of Luke 21:25-26, NWT._
 
-![Hello Operon](40601768523_Hello%20Operon.jpg)
+![Hello Operon](<40601768523_Hello Operon.jpg>)
 
 ## 40724148503_Self-Reflection (1)
-![40724148503_Self-Reflection (1)](40724148503_Self-Reflection%20(1).jpg)
+![40724148503_Self-Reflection (1)](<40724148503_Self-Reflection (1).jpg>)
 
 ## Self-Reflection
 _&quot;There is an art of reading, as well as an art of thinking, and an art of writing.&quot;
@@ -8387,7 +8387,7 @@ Isaac D'Israeli
 ![Self-Reflection](40724148503_Self-Reflection.jpg)
 
 ## 40853184463_Starburst (1)
-![40853184463_Starburst (1)](40853184463_Starburst%20(1).jpg)
+![40853184463_Starburst (1)](<40853184463_Starburst (1).jpg>)
 
 ## Starburst
 _&quot;He who would do good to another must do it in minute particulars;
@@ -8401,7 +8401,7 @@ For art and science cannot exist but in minutely organized Particulars.&quot;
 ![Starburst](40853184463_Starburst.jpg)
 
 ## 40853205743_Crown without a King (1)
-![40853205743_Crown without a King (1)](40853205743_Crown%20without%20a%20King%20(1).jpg)
+![40853205743_Crown without a King (1)](<40853205743_Crown without a King (1).jpg>)
 
 ## Crown without a King
 _&quot;All the perfumes of Arabia will not sweeten this little hand.&quot;
@@ -8416,16 +8416,16 @@ _&quot;All the perfumes of Arabia will not sweeten this little hand.&quot;
 &quot;We believe that a key part of combating extremism is preventing recruitment by disrupting the underlying ideologies that drive people to commit acts of violence. That's why we support a variety of counterspeech efforts.&quot;
 – Facebook spokesperson Monika Bicker (2018). _
 
-![Crown without a King](40853205743_Crown%20without%20a%20King.jpg)
+![Crown without a King](<40853205743_Crown without a King.jpg>)
 
 ## 41060689622_Neuromuscular Junction (1)
-![41060689622_Neuromuscular Junction (1)](41060689622_Neuromuscular%20Junction%20(1).jpg)
+![41060689622_Neuromuscular Junction (1)](<41060689622_Neuromuscular Junction (1).jpg>)
 
 ## 41060689622_Neuromuscular Junction (2)
-![41060689622_Neuromuscular Junction (2)](41060689622_Neuromuscular%20Junction%20(2).jpg)
+![41060689622_Neuromuscular Junction (2)](<41060689622_Neuromuscular Junction (2).jpg>)
 
 ## 41060689622_Neuromuscular Junction (3)
-![41060689622_Neuromuscular Junction (3)](41060689622_Neuromuscular%20Junction%20(3).jpg)
+![41060689622_Neuromuscular Junction (3)](<41060689622_Neuromuscular Junction (3).jpg>)
 
 ## Neuromuscular Junction
 _Where is your receptive field now? 
@@ -8440,16 +8440,16 @@ _Where is your receptive field now?
 – George Emil Palade, Nobel Prize Lecture (1974).
 _
 
-![Neuromuscular Junction](41060689622_Neuromuscular%20Junction.jpg)
+![Neuromuscular Junction](<41060689622_Neuromuscular Junction.jpg>)
 
 ## 41060723232_Awakening (1)
-![41060723232_Awakening (1)](41060723232_Awakening%20(1).jpg)
+![41060723232_Awakening (1)](<41060723232_Awakening (1).jpg>)
 
 ## 41060723232_Awakening (2)
-![41060723232_Awakening (2)](41060723232_Awakening%20(2).jpg)
+![41060723232_Awakening (2)](<41060723232_Awakening (2).jpg>)
 
 ## 41060723232_Awakening (3)
-![41060723232_Awakening (3)](41060723232_Awakening%20(3).jpg)
+![41060723232_Awakening (3)](<41060723232_Awakening (3).jpg>)
 
 ## Awakening
 _&quot;We want our sound to go into the soul of the audience, and see if it can awaken some little thing in their minds... 'Cause there are so many sleeping people.&quot;
@@ -8464,13 +8464,13 @@ _&quot;We want our sound to go into the soul of the audience, and see if it can 
 ![Awakening](41060723232_Awakening.jpg)
 
 ## 41127462172_Fittness (1)
-![41127462172_Fittness (1)](41127462172_Fittness%20(1).jpg)
+![41127462172_Fittness (1)](<41127462172_Fittness (1).jpg>)
 
 ## 41127462172_Fittness (2)
-![41127462172_Fittness (2)](41127462172_Fittness%20(2).jpg)
+![41127462172_Fittness (2)](<41127462172_Fittness (2).jpg>)
 
 ## 41127462172_Fittness (3)
-![41127462172_Fittness (3)](41127462172_Fittness%20(3).jpg)
+![41127462172_Fittness (3)](<41127462172_Fittness (3).jpg>)
 
 ## Fittness
 _&quot;It is not enough to be in the right place at the right time. You should also have an open mind at the right time.&quot;
@@ -8499,7 +8499,7 @@ _&quot;Every age hath its own problem, and every soul its particular aspiration.
 – Robert A. Heinlein, 'A Comedy of Justice' (1984).
 _
 
-![Markov Blanket](41127548702_Markov%20Blanket.jpg)
+![Markov Blanket](<41127548702_Markov Blanket.jpg>)
 
 ## Figure 8
 _&quot;And I said, I will perish with my nest, 
@@ -8511,16 +8511,16 @@ and I will multiply days as the phoenix.&quot;
 
 Co-draw with S. _
 
-![Figure 8](41521705224_Figure%208.jpg)
+![Figure 8](<41521705224_Figure 8.jpg>)
 
 ## 41521705554_Alt-_Right_Left_ (1)
-![41521705554_Alt-_Right_Left_ (1)](41521705554_Alt-_Right_Left_%20(1).jpg)
+![41521705554_Alt-_Right_Left_ (1)](<41521705554_Alt-_Right_Left_ (1).jpg>)
 
 ## 41521705554_Alt-_Right_Left_ (2)
-![41521705554_Alt-_Right_Left_ (2)](41521705554_Alt-_Right_Left_%20(2).jpg)
+![41521705554_Alt-_Right_Left_ (2)](<41521705554_Alt-_Right_Left_ (2).jpg>)
 
 ## 41521705554_Alt-_Right_Left_ (3)
-![41521705554_Alt-_Right_Left_ (3)](41521705554_Alt-_Right_Left_%20(3).jpg)
+![41521705554_Alt-_Right_Left_ (3)](<41521705554_Alt-_Right_Left_ (3).jpg>)
 
 ## Alt-(Right/Left)
 _&quot;Tragedy is when I cut my finger. Comedy is when you fall into an open sewer and die.&quot;
@@ -8576,7 +8576,7 @@ _Co-draw with S.
 &quot;A foolish consistency is the hobgoblin of little minds, adored by little statesmen and philosophers and divines. With consistency a great soul has simply nothing to do. He may as well concern himself with his shadow on the wall. Speak what you think now in hard words, and to-morrow speak what to-morrow thinks in hard words again, though it contradict every thing you said to-day. — 'Ah, so you shall be sure to be misunderstood.' — Is it so bad, then, to be misunderstood? Pythagoras was misunderstood, and Socrates, and Jesus, and Luther, and Copernicus, and Galileo, and Newton, and every pure and wise spirit that ever took flesh. To be great is to be misunderstood.&quot;
 – Ralph Waldo Emerson, 'Self Reliance' (1841)._
 
-![Abstraction #2](41649053684_Abstraction%20_2.jpg)
+![Abstraction #2](<41649053684_Abstraction _2.jpg>)
 
 ## Quill
 _Gas, pedal, gas, pedal....._
@@ -8601,7 +8601,7 @@ _So noisy!_
 ## Cardiac Muscle
 _thump thump......thump thump......thump thump......_
 
-![Cardiac Muscle](4170919914_Cardiac%20Muscle.jpg)
+![Cardiac Muscle](<4170919914_Cardiac Muscle.jpg>)
 
 ## Recursion
 _&quot;A certain maxim of Logic which I have called Pragmatism has recommended itself to me for diverse reasons and on sundry considerations.&quot;
@@ -8633,10 +8633,10 @@ _&quot;When I consider the Question, Whether there are such Persons in the World
 &quot;From my childhood, I have been familiar with letters; and as I was given to believe that by their help a clear and certain knowledge of all that is useful in life might be acquired, I was ardently desirous of instruction. But as soon as I had finished the entire course of study, at the close of which it is customary to be admitted into the order of the learned, I completely changed my opinion. For I found myself involved in so many doubts and errors, that I was convinced I had advanced no farther in all my attempts at learning, than the discovery at every turn of my own ignorance. And yet I was studying in one of the most celebrated Schools in Europe, in which I thought there must be learned men, if such were anywhere to be found.&quot;
 - René Descartes, &quot;Discourse on Method&quot;._
 
-![Ant Queen :)](41824362375_Ant%20Queen%20__.jpg)
+![Ant Queen :)](<41824362375_Ant Queen __.jpg>)
 
 ## 41857442052_Memory (1)
-![41857442052_Memory (1)](41857442052_Memory%20(1).jpg)
+![41857442052_Memory (1)](<41857442052_Memory (1).jpg>)
 
 ## Memory
 _&quot;The quest for certainty blocks the search for meaning. Uncertainty is the very condition to impel man to unfold his powers.&quot;
@@ -8653,7 +8653,7 @@ _
 ![Memory](41857442052_Memory.jpg)
 
 ## 41857604932_When Moon_ (1)
-![41857604932_When Moon_ (1)](41857604932_When%20Moon_%20(1).jpg)
+![41857604932_When Moon_ (1)](<41857604932_When Moon_ (1).jpg>)
 
 ## When Moon?
 _57. Sun / The Gentle (The Penetrating, Wind)
@@ -8680,7 +8680,7 @@ The image of THE JOYOUS.
 Thus the superior man joins with his friends
 For discussion and practice._
 
-![When Moon?](41857604932_When%20Moon_.jpg)
+![When Moon?](<41857604932_When Moon_.jpg>)
 
 ## Room Spinning
 _&quot;It is a medium of entertainment which permits millions of people to listen to the same joke at the same time, and yet remain lonesome.&quot;
@@ -8689,7 +8689,7 @@ _&quot;It is a medium of entertainment which permits millions of people to liste
 &quot;Perhaps the male in human society is useless. I am frank to admit that I don't know. If women are beginning to feel this way about it--and there is striking evidence at hand that they do--then we are entering upon the cruelest period of the world's history.&quot;
 – Nikola Tesla, 'Mr. Tesla Explains Why He Will Never Marry' (1924)._
 
-![Room Spinning](41900715801_Room%20Spinning.jpg)
+![Room Spinning](<41900715801_Room Spinning.jpg>)
 
 ## Journey
 _&quot;O king, through the country there are royal roads and roads for common citizens, but in geometry there is one road for all.&quot;
@@ -8712,10 +8712,10 @@ _Co-draw with S.
 – Eric Temple Bell, 'The Development of Mathematics' (1940).
 _
 
-![Ocean of Snugs](42323202362_Ocean%20of%20Snugs.jpg)
+![Ocean of Snugs](<42323202362_Ocean of Snugs.jpg>)
 
 ## 42323202702_Ask not what the ant can do for you___ (1)
-![42323202702_Ask not what the ant can do for you___ (1)](42323202702_Ask%20not%20what%20the%20ant%20can%20do%20for%20you___%20(1).jpg)
+![42323202702_Ask not what the ant can do for you___ (1)](<42323202702_Ask not what the ant can do for you___ (1).jpg>)
 
 ## Ask not what the ant can do for you...
 _&quot;By 'Suprematism' I mean the supremacy of pure feeling in creative art. To the Suprematist the visual phenomena of the objective world are, in themselves, meaningless; the significant thing is feeling.&quot;
@@ -8724,10 +8724,10 @@ _&quot;By 'Suprematism' I mean the supremacy of pure feeling in creative art. To
 &quot;These ambiguities, redundances, and deficiences recall those attributed by Dr. Franz Kuhn to a certain Chinese encyclopedia entitled Celestial Emporium of Benevolent Knowledge. On those remote pages it is written that animals are divided into (a) those that belong to the Emperor, (b) embalmed ones, (c) those that are trained, (d) suckling pigs, (e) mermaids, (f) fabulous ones, (g) stray dogs, (h) those that are included in this classification, (i) those that tremble as if they were mad, (j) innumerable ones, (k) those drawn with a very fine camel's hair brush, (l) others, (m) those that have just broken a flower vase, (n) those that resemble flies from a distance.&quot;
 – Jorge Luis Borges, 'The Analytical Language of John Wilkins'._
 
-![Ask not what the ant can do for you...](42323202702_Ask%20not%20what%20the%20ant%20can%20do%20for%20you___.jpg)
+![Ask not what the ant can do for you...](<42323202702_Ask not what the ant can do for you___.jpg>)
 
 ## 42372391291_Pinball is a Trip (1)
-![42372391291_Pinball is a Trip (1)](42372391291_Pinball%20is%20a%20Trip%20(1).jpg)
+![42372391291_Pinball is a Trip (1)](<42372391291_Pinball is a Trip (1).jpg>)
 
 ## Pinball is a Trip
 _Co-draw with S.
@@ -8739,10 +8739,10 @@ _Co-draw with S.
 – In &quot;The Tantra: Its Origin, Theories, Art, and Diffusion from India to Nepal, Tibet, Mongolia, China, Japan, and Indonesia&quot;, p. 31.
 _
 
-![Pinball is a Trip](42372391291_Pinball%20is%20a%20Trip.jpg)
+![Pinball is a Trip](<42372391291_Pinball is a Trip.jpg>)
 
 ## 42372392301_Left Brain _ Right Brain (1)
-![42372392301_Left Brain _ Right Brain (1)](42372392301_Left%20Brain%20_%20Right%20Brain%20(1).jpg)
+![42372392301_Left Brain _ Right Brain (1)](<42372392301_Left Brain _ Right Brain (1).jpg>)
 
 ## Left Brain / Right Brain
 _Co-draw with S.
@@ -8754,7 +8754,7 @@ Hire idiots to paint with cold light and hot shade.&quot;
 &quot;But how is one to make a scientist understand that there is something unalterably deranged about differential calculus, quantum theory, or the obscene and so inanely liturgical ordeals of the precession of the equinoxes.&quot;
 – Antonin Artaud, 'Van Gogh, the Man Suicided by Society' (1947)._
 
-![Left Brain / Right Brain](42372392301_Left%20Brain%20_%20Right%20Brain.jpg)
+![Left Brain / Right Brain](<42372392301_Left Brain _ Right Brain.jpg>)
 
 ## Let He Without Sin Cast The First Stone
 _John 8:1-15 King James Version (KJV).
@@ -8774,7 +8774,7 @@ _John 8:1-15 King James Version (KJV).
 14 Jesus answered and said unto them, Though I bear record of myself, yet my record is true: for I know whence I came, and whither I go; but ye cannot tell whence I come, and whither I go.
 15 Ye judge after the flesh; I judge no man._
 
-![Let He Without Sin Cast The First Stone](42669347810_Let%20He%20Without%20Sin%20Cast%20The%20First%20Stone.jpg)
+![Let He Without Sin Cast The First Stone](<42669347810_Let He Without Sin Cast The First Stone.jpg>)
 
 ## Totem Pole (Dominance)
 _&quot;Man must have been conscious of memories and purposes long before he made any explicit distinction between past, present, and future.&quot;
@@ -8787,7 +8787,7 @@ Before the tongue hath spoke the hand hath done.&quot;
 &quot;If there is a bedrock principle of the First Amendment, it is that the government may not prohibit the expression of an idea simply because society finds the idea itself offensive or disagreeable.&quot;
 – Justice William J. Brennan, Jr., Texas v. Johnson, 491 U.S. 397 (1989)._
 
-![Totem Pole (Dominance)](42675028252_Totem%20Pole%20_Dominance_.jpg)
+![Totem Pole (Dominance)](<42675028252_Totem Pole _Dominance_.jpg>)
 
 ## Thief in the Night
 _&quot;Mad, adj. Affected with a high degree of intellectual independence.&quot;
@@ -8805,7 +8805,7 @@ After a pause full of intense thought on my part, I asked: &quot;But if one hasn
 – Philippians 4:13 
 _
 
-![Thief in the Night](42675028402_Thief%20in%20the%20Night.jpg)
+![Thief in the Night](<42675028402_Thief in the Night.jpg>)
 
 ## Evolution of Sociality
 _&quot;The Arch-flatterer, with whom all the petty flatterers have intelligence, is a man’s self.&quot;
@@ -8817,7 +8817,7 @@ _&quot;The Arch-flatterer, with whom all the petty flatterers have intelligence,
 &quot;General Systems Theory, as originally intended by Von Bertalanffy, is an ideal framework for the modeling of a business enterprise. Work, in its most civilized form should enrich, empower and emancipate. Thus we must continue to find ways to support work as a humanistic, not mechanistic endeavor. We must continue to seek out new models of business that support and enhance the individual as well as the collective whole. Given all this new technology, we need new institutions for handling it.&quot;
 – Anthony Stafford Beer (1974), &quot;Designing Freedom&quot;._
 
-![Evolution of Sociality](42675028622_Evolution%20of%20Sociality.jpg)
+![Evolution of Sociality](<42675028622_Evolution of Sociality.jpg>)
 
 ## Caught in a Snug...
 _&quot;Information? Whose information? Information about what?&quot;
@@ -8829,7 +8829,7 @@ _&quot;Information? Whose information? Information about what?&quot;
 &quot;Caustics are the brightest places in an optical field. They are the singularities of geometrical optics. The most familiar caustic is the rainbow, a grossly distorted image of the Sun in the form of a giant arc in the skyspace of directions, formed by the angular focusing of sunlight that has been twice refracted and once reflected in raindrops.&quot;
 – René Descartes, &quot;Dioptrique&quot; (1637)._
 
-![Caught in a Snug...](42715466665_Caught%20in%20a%20Snug___.jpg)
+![Caught in a Snug...](<42715466665_Caught in a Snug___.jpg>)
 
 ## Ant Painting #2
 _Painting made as a side-effect of painting Ants (Arizona, 2018). 
@@ -8846,7 +8846,7 @@ Blots out our powers, and leaves a blank behind.&quot;
 &quot;Through a vicious circle of pure reason, skepsis itself becomes dogma.&quot;
 – Johann Georg Hamann, &quot;Briefwechsel&quot;, ed. Arthur Henkel (1955-1975), vol. V, p. 432._
 
-![Ant Painting #2](42829094260_Ant%20Painting%20_2.jpg)
+![Ant Painting #2](<42829094260_Ant Painting _2.jpg>)
 
 ## The Kissers
 _&quot;When you know that the snake is in you – that's wisdom.&quot;
@@ -8859,7 +8859,7 @@ _&quot;When you know that the snake is in you – that's wisdom.&quot;
 
 – Jordan B. Peterson_
 
-![The Kissers](42989203021_The%20Kissers.jpg)
+![The Kissers](<42989203021_The Kissers.jpg>)
 
 ## Emerson & University
 _Co-draw with Isaac Puig: <a href="https://www.artstation.com/aacis" rel="nofollow">www.artstation.com/aacis</a>
@@ -8873,7 +8873,7 @@ _Co-draw with Isaac Puig: <a href="https://www.artstation.com/aacis" rel="nofoll
 &quot;The rockets that have made spaceflight possible are an advance that, more than any other technological victory of the twentieth century, was grounded in science fiction… . One thing that no science fiction writer visualized, however, as far as I know, was that the landings on the Moon would be watched by people on Earth by way of television.&quot;
 – Isaac Asimov, in 'Asimov on Physics' (1976)_
 
-![Emerson & University](43019695992_Emerson%20_%20University.jpg)
+![Emerson & University](<43019695992_Emerson _ University.jpg>)
 
 ## Order // Disorder
 _Gestalt is: &quot;a system whose parts are dynamically connected in such a way that a change of one part results in a change of all other parts.&quot;
@@ -8883,13 +8883,13 @@ and structural order.&quot;
 &quot;Chaos provides order. Chaotic agitation and motion are needed to create overall, repetitive order. This ‘order through fluctuations’ keeps dynamic markets stable and evolutionary processes robust. In essence, chaos is a phase transition that gives spontaneous energy the means to achieve repetitive and structural order.&quot;
 – L.K. Samuels, &quot;In Defense of Chaos: The Chaology of Politics, Economics and Human Action&quot; (2013). _
 
-![Order // Disorder](43019891162_Order%20__%20Disorder.jpg)
+![Order // Disorder](<43019891162_Order __ Disorder.jpg>)
 
 ## Blood Vessels
 _''And again: No more gods! no more gods! Man is King, Man is God!— But the great Faith is Love!''
 _
 
-![Blood Vessels](4306014864_Blood%20Vessels.jpg)
+![Blood Vessels](<4306014864_Blood Vessels.jpg>)
 
 ## We, The People.....
 _&quot;We contend that for a nation to try to tax itself into prosperity is like a man standing in a bucket and trying to lift himself up by the handle.&quot;
@@ -8901,7 +8901,7 @@ _&quot;We contend that for a nation to try to tax itself into prosperity is like
 &quot;Let us forget the other names of American statesmen, that have been stamped upon these hills, but still call the loftiest — WASHINGTON. Mountains are Earth's undecaying monuments. They must stand while she endures, and never should be consecrated to the mere great men of their own age and country, but to the mighty ones alone, whose glory is universal, and whom all time will render illustrious.&quot;
 – Nathaniel Hawthorne_
 
-![We, The People.....](43217686641_We_%20The%20People_____.jpg)
+![We, The People.....](<43217686641_We_ The People_____.jpg>)
 
 ## Growth Mindset
 _&quot;There is strong shadow where there is much light.&quot;
@@ -8913,7 +8913,7 @@ _&quot;There is strong shadow where there is much light.&quot;
 &quot;Minds are the ultimate terra incognita, beyond the reach of all science and—in the case of languageless minds—beyond all empathetic conversation as well. So what? A little humility ought to temper our curiosity. Don't confuse ontological questions (about what exists) with epistemological questions (about how we know about it). We must grow comfortable with this wonderful fact about what is off-limits to inquiry.&quot;
 – Daniel C. Dennett, 'Kinds Of Minds'_
 
-![Growth Mindset](43479556290_Growth%20Mindset.jpg)
+![Growth Mindset](<43479556290_Growth Mindset.jpg>)
 
 ## Enchantment
 _&quot;The Now, that indivisible point which studs the length of infinite line 
@@ -8946,7 +8946,7 @@ Make boot upon the summers velvet buds,
 Which pillage they with merry march bring home.&quot;
 – William Shakespeare, &quot;Henry V&quot; (c. 1599), Act I, scene 2, line 188._
 
-![Relationship Development](43569136405_Relationship%20Development.jpg)
+![Relationship Development](<43569136405_Relationship Development.jpg>)
 
 ## Let Go of Distracted States
 _&quot;I do not believe in a fate that will fall on us no matter what we do. I do believe in a fate that will fall on us if we do nothing.&quot;
@@ -8959,7 +8959,7 @@ _&quot;I do not believe in a fate that will fall on us no matter what we do. I d
 Hid within an auger-hole, may rush, and seize us?&quot;
 – William Shakespeare, &quot;Macbeth&quot; (1605), Act II, scene 3, line 127._
 
-![Let Go of Distracted States](43571594352_Let%20Go%20of%20Distracted%20States.jpg)
+![Let Go of Distracted States](<43571594352_Let Go of Distracted States.jpg>)
 
 ## Radiance
 _First paragraph of &quot;The Library of Babel&quot;, Jorge Luis Borges:
@@ -8972,7 +8972,7 @@ _First paragraph of &quot;The Library of Babel&quot;, Jorge Luis Borges:
 _PV = nRT
 _
 
-![Molecular Motion](4371458738_Molecular%20Motion.jpg)
+![Molecular Motion](<4371458738_Molecular Motion.jpg>)
 
 ## Army Ants
 _Hermann Hesse:
@@ -8989,7 +8989,7 @@ I tried to open the door, but the heavy old latch would not stir. The display to
 FOR MADMEN ONLY!&quot;. 
 &quot;Steppenwolf&quot; (1927). _
 
-![Army Ants](43759857164_Army%20Ants.jpg)
+![Army Ants](<43759857164_Army Ants.jpg>)
 
 ## Cave (As Above, So Below
 _&quot;If what you have done yesterday still looks big to you, you haven't done much today.&quot;
@@ -9000,7 +9000,7 @@ _&quot;If what you have done yesterday still looks big to you, you haven't done 
 
 &quot;I was almost annoyed hearing that Putin plays chess and Obama or other leaders of the free world they play checkers. I thought I had to defend the integrity of my game because chess is not a game for dictators for numerous reasons. One, it’s transparent. It’s all information hundred percent available so you know exactly what you have, you know exactly what your opponent has. You don’t know what he or she is thinking, but you definitely know what kind of resources your opponent can use to hurt you, to damage your position.&quot; – –– – Garry Kasparov_
 
-![Cave (As Above, So Below](43760774434_Cave%20_As%20Above_%20So%20Below.jpg)
+![Cave (As Above, So Below](<43760774434_Cave _As Above_ So Below.jpg>)
 
 ## Self in the Sea
 _&quot;To overcome the academic prose you have first to overcome the academic pose.&quot;
@@ -9012,7 +9012,7 @@ _&quot;To overcome the academic prose you have first to overcome the academic po
 &quot;Academe has become a multinational corporation, and scholars have become businessmen, mobile merchants on the make...Today's academic leftists are strutting wannabes, timorous nerds who missed the Sixties while they were grade-grubbing in the library and brown-nosing the senior faculty. Their politics came to them late, secondhand, and special delivery via the Parisian import craze of the Seventies. These people have risen to the top not by challenging the system but by smoothly adapting themselves to it. They're company men, Rosencrantz and Guildensterns, privileged opportunists who rode the wave of fashion.&quot;
 – Camille Paglia, “Junk Bonds and Corporate Raiders: Academe in the Hour of the Wolf,” Arion, Third Series, Vol. 1, No. 2 (Spring, 1991)._
 
-![Self in the Sea](43849200020_Self%20in%20the%20Sea.jpg)
+![Self in the Sea](<43849200020_Self in the Sea.jpg>)
 
 ## Tree Of Knowledge
 _The text reads:
@@ -9027,7 +9027,7 @@ _The text reads:
 – Xenophon, Socrates and Euthydemus in &quot;Memorabilia&quot;, 4.5
 _
 
-![Tree Of Knowledge](43919997344_Tree%20Of%20Knowledge.jpg)
+![Tree Of Knowledge](<43919997344_Tree Of Knowledge.jpg>)
 
 ## Tetragrammar
 _&quot;Action is eloquence.&quot;
@@ -9049,7 +9049,7 @@ _&quot;Ita fabulantur ut qui sciant Dominum audire.&quot;
 &quot;Culture is at once the expression and the reward of an effort, and any system of civilization which tends to relax effort will suffer a corresponding depreciation of culture.&quot;
 – Georges Duhamel, &quot;In Defense of Letters&quot; (1937)._
 
-![Ant Head](43920162014_Ant%20Head.jpg)
+![Ant Head](<43920162014_Ant Head.jpg>)
 
 ## Business Casual
 _&quot;Much learning shows how little mortals know;
@@ -9062,7 +9062,7 @@ Much wealth, how little worldlings can enjoy.&quot;
 &quot;Given the extensive involvement of state violence in the process by which the corporate elite not only achieved its wealth in the past but continues to maintain and augment it in the present, it is clear that the massive inequalities of wealth that characterise present-day “capitalist” society are radically inconsistent with any approach to justice in holdings that is even remotely Nozickian.&quot;
 – Roderick Long, &quot;Left-libertarianism, market anarchism, class conflict and historical theories of distributive justice,&quot; Griffith Law Review, Vol. 21 Issue 2 (2012), p. 425_
 
-![Business Casual](44096222580_Business%20Casual.jpg)
+![Business Casual](<44096222580_Business Casual.jpg>)
 
 ## Roundabout
 _&quot;Oh, order!  Material order, intellectual order, moral order!  What a comfort and strength, and what an economy!  To know where we are going and what we want; that is order.  To keep one's word, to do the right thing, and at the right time: more order.  To have everything under one's hand, to put one's whole army through its manoeuvres, to work with all one's resources: still order.  To discipline one's habits and efforts and wishes, to organize one's life and distribute one's time, to measure one's duties and assert one's rights, to put one's capital and resources, one's talents and opportunities to profit: again and always order.  Order is light, peace, inner freedom, self-determination: it is power.  To conceive order, to return to order, to realize order in oneself, around oneself, by means of oneself, this is aesthetic and moral beauty, it is well-being, it is what ought to be.&quot;
@@ -9079,7 +9079,7 @@ _In the image, &quot;Diversity of Thought&quot; and &quot;Diversity of Identity&
 
 &quot;Tri-versity&quot; is a made-up word, but seemed like the next logical step in the sequence. Perhaps a &quot;tri-versity&quot; is the group of people who are &quot;tri-ing&quot; to make things better (which implies coordinated action towards defining what &quot;better&quot; would be). _
 
-![Diversity in the University](44249105655_Diversity%20in%20the%20University.jpg)
+![Diversity in the University](<44249105655_Diversity in the University.jpg>)
 
 ## ¡ Now I get it !
 _6 steps towards productive thinking: 
@@ -9093,7 +9093,7 @@ _6 steps towards productive thinking:
 
 Also note that step 6 is moving backwards in time to engulf step 3 -- Thought is a strange loop like that. _
 
-![¡ Now I get it !](44249298445__%20Now%20I%20get%20it%20_.jpg)
+![¡ Now I get it !](<44249298445__ Now I get it _.jpg>)
 
 ## Шtochastic (Stochastic)
 _&quot;Rais'd of themselves, their genuine charms they boast 
@@ -9103,7 +9103,7 @@ And those who paint 'em truest praise 'em most.&quot;
 &quot;As technology became more important, the Trickster underwent a shift in character and became the god of crafts — of technology, if you will — while retaining the underlying roguish qualities. So we have the Sumerian Enki, the Greek Prometheus and Hermes, Norse Loki, and so on.&quot;
 – Neal Stephenson, in 'The Diamond Age' (1995)._
 
-![Шtochastic (Stochastic)](44274577010_Шtochastic%20_Stochastic_.jpg)
+![Шtochastic (Stochastic)](<44274577010_Шtochastic _Stochastic_.jpg>)
 
 ## Color Run
 _&quot;No second thoughts.&quot;
@@ -9116,7 +9116,7 @@ In yours and my discharge.&quot;
 &quot;Woz and I very much liked Bob Dylan's poetry, and we spent a lot of time thinking about a lot of that stuff. This was California. You could get LSD fresh made from Stanford. You could sleep on the beach at night with your girlfriend. California has a sense of experimentation and a sense of openness—openness to new possibilities.&quot;
 – Steve Jobs interview in Playboy magazine (February 1985)._
 
-![Color Run](44274670530_Color%20Run.jpg)
+![Color Run](<44274670530_Color Run.jpg>)
 
 ## Aries (Fire, Passions, Diamonds)
 _&quot;Astrology is a disease, not a science.&quot;
@@ -9128,7 +9128,7 @@ _&quot;Astrology is a disease, not a science.&quot;
 &quot;It is not exactly forbidden to say this, that or the other, but it is ‘not done’ to say it, just as in mid-Victorian times it was ‘not done’ to mention trousers in the presence of a lady. Anyone who challenges the prevailing orthodoxy finds himself silenced with surprising effectiveness.&quot;
 – George Orwell_
 
-![Aries (Fire, Passions, Diamonds)](44382213995_Aries%20_Fire_%20Passions_%20Diamonds_.jpg)
+![Aries (Fire, Passions, Diamonds)](<44382213995_Aries _Fire_ Passions_ Diamonds_.jpg>)
 
 ## Anomaly
 _Umberto Eco:
@@ -9154,7 +9154,7 @@ To cope malicious censurers.&quot;
 &quot;One should try to locate power at the extreme of its exercise, where it is always less legal in character.&quot;
 – Michel Foucault, &quot;The History of Sexuality&quot;, p. 97._
 
-![Stomping Grounds](44428283072_Stomping%20Grounds.jpg)
+![Stomping Grounds](<44428283072_Stomping Grounds.jpg>)
 
 ## Falling In Love
 _&quot;This above all: to thine own self be true,
@@ -9170,7 +9170,7 @@ Before me; O Divine Spirit sustain me on thy wings!&quot;
 – William Blake, &quot;Jerusalem The Emanation of the Giant Albion&quot; (c. 1803–1820) Ch. 1, plate 15, lines 6-9.
 _
 
-![Falling In Love](44428525952_Falling%20In%20Love.jpg)
+![Falling In Love](<44428525952_Falling In Love.jpg>)
 
 ## Leafcutter Ants
 _Francis Bacon:
@@ -9184,13 +9184,13 @@ _Francis Bacon:
 We have also sound houses, where we practice and demonstrate all sounds and their generation. We have harmonies which you have not, of quarter sounds and lesser slides of sounds. Divers instruments of music likewise to you unknown, some sweeter than any you have; together with bells and rings that are dainty and sweet. We represent small sounds as great and deep; likewise divers trembling and warblings of sounds, which in their original are entire. We represent and imitate all articulate sounds and letters, and the voices of beasts and birds. We have certain helps which set to the ear to do further the hearing greatly. We have also divers strange and artificial echoes, reflecting the voice many times, and as if it were tossing it; and some that give back the voice louder than it came, some shriller and some deeper; yea, some rendering the voice, differing in the letters or articulate sound from that they receive. We have also means to convey sounds in tubes and pipes, in strange lines and distances...
 &quot;New Atlantis&quot; (1627)._
 
-![Leafcutter Ants](44428526122_Leafcutter%20Ants.jpg)
+![Leafcutter Ants](<44428526122_Leafcutter Ants.jpg>)
 
 ## Southwest State of Mind
 _&quot;Driving is a spectacular form of amnesia. Everything is to be discovered, everything to be obliterated. Admittedly, there is the primal shock of the deserts and the dazzle of California, but when this is gone, the secondary brilliance of the journey begins, that of the excessive, pitiless distance, the infinity of anonymous faces and distances, or of certain miraculous geological formations, which ultimately testify to no human will, while keeping intact an image of upheaval. This form of travel admits of no exceptions: when it runs up against a known face, a familiar landscape, or some decipherable message, the spell is broken: the amnesic, ascetic, asymptotic charm of disappearance succumbs to affect and worldly semiology.&quot;
 – Jean Baudrillard, &quot;America&quot; (1986)._
 
-![Southwest State of Mind](44429012042_Southwest%20State%20of%20Mind.jpg)
+![Southwest State of Mind](<44429012042_Southwest State of Mind.jpg>)
 
 ## #SWRS
 _<a href="https://www.amnh.org/research/southwestern-research-station" rel="noreferrer nofollow">www.amnh.org/research/southwestern-research-station</a>
@@ -9240,12 +9240,12 @@ The head, and neck, and finally doth bring
 To a perfect beast that first deformed thing.&quot;
 – Guillaume de Salluste Du Bartas_
 
-![Dendritic Cell](44478798551_Dendritic%20Cell.jpg)
+![Dendritic Cell](<44478798551_Dendritic Cell.jpg>)
 
 ## Life & Death (Ribosome)
 _The ribosome (the life/death duality) is traveling along the mRNA (from 5'--&gt; 3'). The translational product is memory -- in the brain, and in the ecosystem. _
 
-![Life & Death (Ribosome)](44569337915_Life%20_%20Death%20_Ribosome_.jpg)
+![Life & Death (Ribosome)](<44569337915_Life _ Death _Ribosome_.jpg>)
 
 ## Neurophysiology of Perception001
 _&quot;Isn't it amazing the way the future succeeds in creating an appropriate past?&quot;
@@ -9254,7 +9254,7 @@ _&quot;Isn't it amazing the way the future succeeds in creating an appropriate p
 &quot;The lamp of the body is your eye. When your eye is focused, your whole body is also bright; but when it is envious, your body is also dark.&quot;
 – Gospel of Luke 11:34_
 
-![Neurophysiology of Perception001](44569338145_Neurophysiology%20of%20Perception001.jpg)
+![Neurophysiology of Perception001](<44569338145_Neurophysiology of Perception001.jpg>)
 
 ## Number Theory
 _&quot;Number is the ruler of forms and ideas, and the cause of gods and daemons&quot;
@@ -9266,7 +9266,7 @@ Twain by twain we marry
 One by one we die.&quot;
 – Frederick L. Knowles, 'Grief and Joy'._
 
-![Number Theory](44572656984_Number%20Theory.jpg)
+![Number Theory](<44572656984_Number Theory.jpg>)
 
 ## Moon Landing
 _&quot;Where necessity speaks, it demands.&quot;
@@ -9278,7 +9278,7 @@ _&quot;Where necessity speaks, it demands.&quot;
 &quot;Would I had phrases that are not known, utterances that are strange, in new language that has not been used, free from repetition, not an utterance that has grown stale, which men of old have spoken.&quot;
 – Khakheperresenb_
 
-![Moon Landing](44635701070_Moon%20Landing.jpg)
+![Moon Landing](<44635701070_Moon Landing.jpg>)
 
 ## Psychedelic Symbolism
 _&quot;The objective of all human arrangements is through distracting one’s thoughts to cease to be aware of life.&quot;
@@ -9291,7 +9291,7 @@ _&quot;The objective of all human arrangements is through distracting one’s th
 – Charles Babbage, &quot;On the Economy of Machinery and Manufactures&quot; (1832) p. 191; Ch. 20. &quot;On the division of mental labour&quot;
 _
 
-![Psychedelic Symbolism](44638797871_Psychedelic%20Symbolism.jpg)
+![Psychedelic Symbolism](<44638797871_Psychedelic Symbolism.jpg>)
 
 ## To Welcome Without Judgement is to Act Without Cause.
 _&quot;Still ending, and beginning still.&quot;
@@ -9304,7 +9304,7 @@ William Cowper, The Task (1785), Book III, line 627.
 – Albert Camus, &quot;The Reading Room,&quot; Alger Républicain (1938) critiquing &quot;Nausea&quot; by Jean-Paul Sartre.
 _
 
-![To Welcome Without Judgement is to Act Without Cause.](44752585405_To%20Welcome%20Without%20Judgement%20is%20to%20Act%20Without%20Cau.jpg)
+![To Welcome Without Judgement is to Act Without Cause.](<44752585405_To Welcome Without Judgement is to Act Without Cau.jpg>)
 
 ## Starry Night
 _&quot;So much to win, so much to lose,
@@ -9314,7 +9314,7 @@ No marvel that I fear to choose.&quot;
 &quot;Professors rarely speak of the place of eros or the erotic in our classrooms. Trained in the philosophical context of Western metaphysical dualism, many of us have accepted the notion that there is a split between the body and the mind. Believing this, individuals enter the classroom to teach as though only the mind is present, and not the body.&quot;
 – Bell Hooks, &quot;Teaching to Transgress&quot;_
 
-![Starry Night](44757809534_Starry%20Night.jpg)
+![Starry Night](<44757809534_Starry Night.jpg>)
 
 ## Harmonic Universe
 _&quot;Who is John Galt?&quot;
@@ -9323,7 +9323,7 @@ _&quot;Who is John Galt?&quot;
 &quot;I live in the Managerial Age, in a world of &quot;Admin.&quot; The greatest evil is not now done in those sordid &quot;dens of crime&quot; that Dickens loved to paint. It is not done even in concentration camps and labour camps. In those we see its final result. But it is conceived and ordered (moved, seconded, carried, and minuted) in clean, carpeted, warmed, and well-lighted offices, by quiet men with white collars and cut fingernails and smooth-shaven cheeks who do not need to raise their voice. Hence, naturally enough, my symbol for Hell is something like the bureaucracy of a police state or the offices of a thoroughly nasty business concern.&quot;
 – C.S. Lewis, &quot;The Screwtape Letters&quot; (1942)_
 
-![Harmonic Universe](44824107322_Harmonic%20Universe.jpg)
+![Harmonic Universe](<44824107322_Harmonic Universe.jpg>)
 
 ## Neurotypographical
 _Neurotypographical. [Neuro-typo-graphical], Adjective, describing a person who has Neurotypographia (in contrast with &quot;Neurotypical&quot; people). 
@@ -9362,7 +9362,7 @@ _“It's not true that I had nothing on. I had the radio on.”
 “So she thoroughly taught him that one cannot take pleasure without giving pleasure, and that every gesture, every caress, every touch, every glance, every last bit of the body has its secret, which brings happiness to the person who knows how to wake it. She taught him that after a celebration of love the lovers should not part without admiring each other, without being conquered or having conquered, so that neither is bleak or glutted or has the bad feeling of being used or misused.” 
 ― Hermann Hesse, 'Siddhartha'_
 
-![Sexlife pt. 3 "Three Layer Woman"](44824343362_Sexlife%20pt_%203%20_Three%20Layer%20Woman_.jpg)
+![Sexlife pt. 3 "Three Layer Woman"](<44824343362_Sexlife pt_ 3 _Three Layer Woman_.jpg>)
 
 ## Sexlife pt. 1 "Follow your passion"
 _&quot;Vi Veri Vniversum Vivus Vici&quot;
@@ -9375,7 +9375,7 @@ _&quot;Vi Veri Vniversum Vivus Vici&quot;
 &quot;I saw this dude, he was wearing a leather jacket and at the same time he was eating a hamburger and drinking a glass of milk. I said to him 'Dude you're a cow, the metamorphosis is complete. Don't fall asleep or I'll tip you over.'&quot;
 – Mitch Hedberg_
 
-![Sexlife pt. 1 "Follow your passion"](44874482411_Sexlife%20pt_%201%20_Follow%20your%20passion_.jpg)
+![Sexlife pt. 1 "Follow your passion"](<44874482411_Sexlife pt_ 1 _Follow your passion_.jpg>)
 
 ## Sexlife pt. 2 "First day of my life"
 _&quot;First Day of My Life&quot;
@@ -9410,7 +9410,7 @@ Than waiting to win the lottery
 Besides, maybe this time is different
 I mean, I really think you like me_
 
-![Sexlife pt. 2 "First day of my life"](44874543491_Sexlife%20pt_%202%20_First%20day%20of%20my%20life_.jpg)
+![Sexlife pt. 2 "First day of my life"](<44874543491_Sexlife pt_ 2 _First day of my life_.jpg>)
 
 ## Child Parenting
 _&quot;So loving to my mother
@@ -9424,7 +9424,7 @@ Visit her face too roughly.&quot;
 &quot;The curse which lies upon marriage is that too often the individuals are joined in their weakness rather than in their strength, each asking from the other instead of finding pleasure in giving. It is even more deceptive to dream of gaining through the child a plenitude, a warmth, a value, which one is unable to create for oneself; the child brings joy only to the woman who is capable of disinterestedly desiring the happiness of another, to one who without being wrapped up in self seeks to transcend her own existence.&quot;
 Simone de Beauvoir, &quot;The Second Sex&quot;._
 
-![Child Parenting](44942210874_Child%20Parenting.jpg)
+![Child Parenting](<44942210874_Child Parenting.jpg>)
 
 ## Triangle Inequality
 _&quot;Discourse, the sweeter banquet of the mind.&quot;
@@ -9438,7 +9438,7 @@ Will not affront me, and no other can.
 – Ursula K. Le Guin, &quot;The Dispossessed&quot; (1974), Ch. 3
 _
 
-![Triangle Inequality](44999753905_Triangle%20Inequality.jpg)
+![Triangle Inequality](<44999753905_Triangle Inequality.jpg>)
 
 ## Once the big decision was made...
 _Co-draw with S. 
@@ -9454,7 +9454,7 @@ _Co-draw with S.
 
 _
 
-![Once the big decision was made...](45161071841_Once%20the%20big%20decision%20was%20made___.jpg)
+![Once the big decision was made...](<45161071841_Once the big decision was made___.jpg>)
 
 ## Can't Sleep Love
 _&quot;The word 'imagination' is... in my title. I want you to think of the following words: visual, vision, and visionary; and image, imagery, imagination. ...'Imagination' is a word which derives from the making of images in the mind, from what Wordsworth called 'the inward eye.'&quot;
@@ -9463,7 +9463,7 @@ _&quot;The word 'imagination' is... in my title. I want you to think of the foll
 &quot;Blessed, plainly, is that life which is not valued at the estimation of outsiders, but is known, as judge of itself, by its own inner feelings. It needs no popular opinion as its reward in any way; nor has it any fear of punishments. Thus the less it strives for glory, the more it rises above it.&quot;
 – Ambrose, &quot;On The Duties of the Clergy, Book 2, Chapter 1&quot;._
 
-![Can't Sleep Love](45188243924_Can_t%20Sleep%20Love.jpg)
+![Can't Sleep Love](<45188243924_Can_t Sleep Love.jpg>)
 
 ## Spiraling
 _&quot;I was thrown out of college for cheating on the metaphysics exam: I looked into the soul of another boy.&quot;
@@ -9500,7 +9500,7 @@ _Daniel 7:1-8 New International Version (NIV) - &quot;Daniel’s Dream of Four B
 7 “After that, in my vision at night I looked, and there before me was a fourth beast—terrifying and frightening and very powerful. It had large iron teeth; it crushed and devoured its victims and trampled underfoot whatever was left. It was different from all the former beasts, and it had ten horns.
 8 “While I was thinking about the horns, there before me was another horn, a little one, which came up among them; and three of the first horns were uprooted before it. This horn had eyes like the eyes of a human being and a mouth that spoke boastfully._
 
-![Daniel 7:8](45431656882_Daniel%207_8.jpg)
+![Daniel 7:8](<45431656882_Daniel 7_8.jpg>)
 
 ## Ant
 _&quot;Though this be madness, yet there is a method in’t.&quot;
@@ -9555,7 +9555,7 @@ _&quot;There exists in the world a single path along which no one can go except 
 &quot;Grand Theft Auto IV is the gravest assault upon children in this country since polio. We now have vaccines for that virus... The 'vaccine' that must be administered by the United States government to deal with this virtual virus of violence and sexual depravity is criminal prosecutions of those who have conspired to do this.&quot;
 – Jack Thompson, Letter to US Attorney R. Alexander Acosta._
 
-![Nature and Nurture](45578507164_Nature%20and%20Nurture.jpg)
+![Nature and Nurture](<45578507164_Nature and Nurture.jpg>)
 
 ## Fire!
 _&quot;τὸ ἐν ἀνθρώποις ὑψηλὸν βδέλυγμα ἐνώπιον τοῦ Θεοῦ.&quot;
@@ -9577,7 +9577,7 @@ _&quot;Human verbal communication can operate and always does operate at many co
 &quot;His speech was substantial, and its contents extensive. The messenger, whose mouth was heavy, was not able to repeat it. Because the messenger, whose mouth was tired, was not able to repeat it, the lord of Kulaba patted some clay and wrote the message as if on a tablet. Formerly, the writing of messages on clay was not established. Now, under that sun and on that day, it was indeed so. The lord of Kulaba inscribed the message like a tablet. It was just like that.&quot;
 – Enmerkar and the Lord of Aratta, Neo-Sumerian period (ca. 21st century BCE)._
 
-![The Media Is The Message](45862911972_The%20Media%20Is%20The%20Message.jpg)
+![The Media Is The Message](<45862911972_The Media Is The Message.jpg>)
 
 ## Emergent Phenomena
 _&quot;Not curiosity, not vanity, not the consideration of expediency, not duty and conscientiousness, but an unquenchable, unhappy thirst that brooks no compromise leads us to truth.&quot;
@@ -9589,7 +9589,7 @@ _&quot;Not curiosity, not vanity, not the consideration of expediency, not duty 
 &quot;I've missed more than nine thousand shots in my career. Twenty-six times I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.&quot;
 – Michael Jordan, as quoted in 'Whoever Makes the Most Mistakes Wins : The Paradox of Innovation' (2003)._
 
-![Emergent Phenomena](45912014341_Emergent%20Phenomena.jpg)
+![Emergent Phenomena](<45912014341_Emergent Phenomena.jpg>)
 
 ## Interface
 _&quot;Not the power to remember, but its very opposite, the power to forget, is a necessary condition for our existence.&quot;
@@ -9618,7 +9618,7 @@ When every bird cometh there to choose his mate.&quot;
 &quot;The stronger the thunder, the more powerful the lightning. All reiterate—the New Age arrives in storm and lightning. For the lightning there are needed positive and negative energies. If Maya does not furnish the negative evidence, how then can flash forth the sword-blade of positive reality?&quot;
 – Agni Yoga, &quot;New Era Community&quot; (1926)._
 
-![State "Education"](46008897444_State%20_Education_.jpg)
+![State "Education"](<46008897444_State _Education_.jpg>)
 
 ## Crashing
 _&quot;While I complain of being able to glimpse no more than the shadow of the past, I may be insensitive to reality as it is taking shape at this very moment, since I have not reached the stage of development at which I would be capable of perceiving it. A few hundred years hence, in this same place, another traveller, as despairing as myself, will mourn the disappearance of what I might have seen, but failed to see.&quot;
@@ -9641,7 +9641,7 @@ _&quot;Dreams are illustrations... from the book your soul is writing about you.
 – Julien Offray de La Mettrie, &quot;Man a Machine&quot;.
 _
 
-![Upright (Uptight)](46112331315_Upright%20_Uptight_.jpg)
+![Upright (Uptight)](<46112331315_Upright _Uptight_.jpg>)
 
 ## Splatter
 _&quot;The Spirits of thy Lines infuse a Fire
@@ -9685,7 +9685,7 @@ In the strangest of places if you look at it right.&quot;
 – Psalm 144:1. 
 _
 
-![See Both Sides](46126495254_See%20Both%20Sides.jpg)
+![See Both Sides](<46126495254_See Both Sides.jpg>)
 
 ## Angels & Devils
 _&quot;When, in the year 1913, in my desperate attempt to free art from the ballast of objectivity, I took refuge in the square form and exhibited a picture which consisted of nothing more than a black square on a white field, the critics and, along with them, the public sighed: 'Everything which we loved is lost. We are in a desert .... Before us is nothing but a black square on a white background!'&quot;
@@ -9694,7 +9694,7 @@ _&quot;When, in the year 1913, in my desperate attempt to free art from the ball
 &quot;Those who might dispute our right to employ the term SURREALISM in the very special sense that we understand it are being extremely dishonest, for there can be no doubt that this word had no currency before we came along. Therefore, I am defining it once and for all: SURREALISM, Psychic automatism in its pure state, by which one proposes to express — verbally, by means of the written word, or in any other manner — the actual functioning of thought. Dictated by the thought, in the absence of any control exercised by reason, exempt from any aesthetic or moral concern.&quot;
 – André Breton, 'First Surrealist Manifesto', Paris, 1924._
 
-![Angels & Devils](46127969125_Angels%20_%20Devils.jpg)
+![Angels & Devils](<46127969125_Angels _ Devils.jpg>)
 
 ## Conspiracy #2: Sterilize your mind (and the rest will follow).
 _&quot;You don't fight Russia and America. You get Russia and America to fight each other, and destroy each other.&quot;
@@ -9706,7 +9706,7 @@ _&quot;You don't fight Russia and America. You get Russia and America to fight e
 &quot;I told you I would tell you my names. This is what they call me. I'm called Glad-of-War, Grim, Raider, and Third. I am One-Eyed. I am also called Highest, and True-Guesser. I am Grimnir, and I am the Hooded One. I am All-Father, Gondlir Wand-Bearer. I have as many names as there are winds, as many titles as there are ways to die. My ravens are Huginn and Muninn, Thought and Memory; my wolves are Freki and Geri; my horse is the gallows.&quot;
 – Odin, as portrayed in &quot;American Gods&quot; (2001) by Neil Gaiman, Ch. 6._
 
-![Conspiracy #2: Sterilize your mind (and the rest will follow).](46128130285_Conspiracy%20_2_%20Sterilize%20your%20mind%20_and%20the%20rest%20w.jpg)
+![Conspiracy #2: Sterilize your mind (and the rest will follow).](<46128130285_Conspiracy _2_ Sterilize your mind _and the rest w.jpg>)
 
 ## Mounted
 _&quot;Can any man have a higher notion of the rule of right and the eternal fitness of things?&quot;
@@ -9742,7 +9742,7 @@ _&quot;I don't want to give too much away, but basically — she's God, by the e
 &quot;He complained in no way of the evil reputation under which he lived, indeed, all over the world, and he assured me that he himself was of all living beings the most interested in the destruction of Superstition, and he avowed to me that he had been afraid, relatively as to his proper power, once only, and that was on the day when he had heard a preacher, more subtle than the rest of the human herd, cry in his pulpit: 'My dear brethren, do not ever forget, when you hear the progress of lights praised, that the loveliest trick of the Devil is to persuade you that he does not exist!'&quot;
 – Charles Baudelaire, &quot;The Generous Gambler&quot; (Feb. 1864)._
 
-![Virtuous Spiral](46317766264_Virtuous%20Spiral.jpg)
+![Virtuous Spiral](<46317766264_Virtuous Spiral.jpg>)
 
 ## Trisect the Angle
 _&quot;Qui sait si l'on ne verra pas que le phosphore et l'esprit vont ensemble?&quot;
@@ -9761,7 +9761,7 @@ The central stream of what we feel indeed.&quot;
 – Matthew Arnold, St. Paul and Protestantism (1870).
 _
 
-![Trisect the Angle](46368486635_Trisect%20the%20Angle.jpg)
+![Trisect the Angle](<46368486635_Trisect the Angle.jpg>)
 
 ## Israel (Judges 17:6)
 _&quot;In those days there was no king in Israel, and each one did what was right in his own eyes.&quot;
@@ -9775,7 +9775,7 @@ _&quot;In those days there was no king in Israel, and each one did what was righ
 – Jewish Proverb.
 _
 
-![Israel (Judges 17:6)](46401999072_Israel%20_Judges%2017_6_.jpg)
+![Israel (Judges 17:6)](<46401999072_Israel _Judges 17_6_.jpg>)
 
 ## Software Runs Rampant
 _&quot;Economics is on the side of humanity now.&quot;
@@ -9787,7 +9787,7 @@ _&quot;Economics is on the side of humanity now.&quot;
 &quot;The measure of your quality as a public person, as a citizen, is the gap between what you do and what you say.&quot;
 – Ramsey Clark_
 
-![Software Runs Rampant](46452718021_Software%20Runs%20Rampant.jpg)
+![Software Runs Rampant](<46452718021_Software Runs Rampant.jpg>)
 
 ## 2019 In Context
 _&quot;It was not my intention to doubt that, the Doctrines of the Illuminati, and principles of Jacobinism had not spread in the United States. On the contrary, no one is more truly satisfied of this fact than I am. The idea that I meant to convey, was, that I did not believe that the Lodges of Free Masons in this Country had, as Societies, endeavoured to propagate the diabolical tenets of the first, or pernicious principles of the latter (if they are susceptible of seperation).&quot;
@@ -9798,7 +9798,7 @@ _&quot;It was not my intention to doubt that, the Doctrines of the Illuminati, a
 
 – George Washington, letters. _
 
-![2019 In Context](46491971415_2019%20In%20Context.jpg)
+![2019 In Context](<46491971415_2019 In Context.jpg>)
 
 ## Sunday
 _&quot;This world's a bubble.&quot;
@@ -9824,7 +9824,7 @@ _&quot;Christ founded no church, established no state, gave practically no laws,
 &quot;Except for one or two passages in St. John's Gospel it is difficult to get any words actually ascribed to Jesus in which be claimed to be the Jewish Messiah (rendered in Greek by &quot;the Christ&quot;) and still more difficult is it to find any claim to be a part of the godhead, or any passage in which he explained the doctrine of the Atonement or urged any sacrifices or sacraments (that is to say, priestly offices) upon his followers.&quot;
 – H. G. Wells, in &quot;The Teachings of Jesus of Nazareth&quot;, in &quot;The Outline of History : Being a Plain History of Life and Mankind&quot; (1920)._
 
-![Burden of the Cross](46492079645_Burden%20of%20the%20Cross.jpg)
+![Burden of the Cross](<46492079645_Burden of the Cross.jpg>)
 
 ## Jacob's Ladder
 _&quot;All computation was greatly simplified early in the seventeenth century by the invention of logarithms.&quot;
@@ -9833,7 +9833,7 @@ _&quot;All computation was greatly simplified early in the seventeenth century b
 &quot;The learned calculators, about the close of the 16th, and beginning of the 17th century, finding the operations of multiplication and division by very long numbers, of 7 or 8 places of figures, which they had frequently occasion to perform, in resolving problems relating to geography and astronomy, to be exceedingly troublesome, set themselves to consider, whether it was not possible to find some method of lessening this labour, by substituting other easier operations in their stead. In pursuit of this object, they reflected, that since, in every multiplication by a whole number, the ratio, or proportion, of the product to the multiplicand, is the same as the ratio of the multiplier to unity, it will follow that the ratio of the product to unity (which, according to Euclid's definition of compound ratios, is compounded of the ratios of the said product to the multiplicand and of the multiplicand to unity) must be equal to the sum of the two ratios of the multiplier to unity and of the multiplicand to unity. ... And therefore they thought these artificial numbers, which thus represent, or are proportional to, the magnitudes of the ratios of the natural numbers to unity, might not improperly be called the Logarithms of those ratios, since they express the numbers of smaller ratios of which they are composed. And then, for the sake of brevity, they called them the Logarithms of the said natural numbers themselves, which are the antecedents of the said ratios to unity, of which they are in truth the representatives.&quot;
 – Charles Hutton, &quot;Tracts on Mathematical and Philosophical Subjects&quot; (1812) p. 308._
 
-![Jacob's Ladder](46564956285_Jacob_s%20Ladder.jpg)
+![Jacob's Ladder](<46564956285_Jacob_s Ladder.jpg>)
 
 ## Smokestack
 _&quot;'Tis strange how like a very dunce,
@@ -9861,7 +9861,7 @@ _&quot;There is nothing so powerful as truth — and often nothing so strange.&q
 – Daniel Webster
 _
 
-![Prime Numbers (Pledge of Allegiance)](46585726992_Prime%20Numbers%20_Pledge%20of%20Allegiance_.jpg)
+![Prime Numbers (Pledge of Allegiance)](<46585726992_Prime Numbers _Pledge of Allegiance_.jpg>)
 
 ## Band of Brothers
 _&quot;‘Aphorizein’, from which we get the word ‘aphorism’, means to retreat to such a distance that a horizon of thought is formed which never again closes on itself.&quot;
@@ -9877,7 +9877,7 @@ so avoid anyone who talks too much.&quot;
 “I don’t understand racism. We are all the same and I have the perfect hypothesis to prove it. I play to all those countries and they cry in all the same places in my show. They laugh in the same places. They become hysterical in the same places. They faint in the same places and that’s the perfect hypothesis. There is a commonality that we are all the same.”
 – Michael Jackson_
 
-![Band of Brothers](46680779162_Band%20of%20Brothers.jpg)
+![Band of Brothers](<46680779162_Band of Brothers.jpg>)
 
 ## Moon Rocket
 _&quot;Nature has left this tincture in the blood,
@@ -9893,7 +9893,7 @@ Nor I, nor they themselves, do know.&quot;
 &quot;Manipulations of opinion, insofar as they are inspired by well-defined interests, have limited goals; their effect, however, if they happen to touch upon an issue of authentic concern, is no longer subject to their control and may easily produce consequences they never foresaw or intended.&quot;
 – Hannah Arendt, &quot;Eichmann in Jerusalem&quot; (1963), Postscript to the revised (1965) edition._
 
-![Moon Rocket](46680791162_Moon%20Rocket.jpg)
+![Moon Rocket](<46680791162_Moon Rocket.jpg>)
 
 ## Hygenic Behavior
 _&quot;Ideo credendum quod incredibile.&quot;
@@ -9906,7 +9906,7 @@ _&quot;Ideo credendum quod incredibile.&quot;
 &quot;A man with a definite belief always appears bizarre, because he does not change with the world; he has climbed into a fixed star, and the earth whizzes below him like a zoetrope. Millions of mild black-coated men call themselves sane and sensible merely because they always catch the fashionable insanity, because they are hurried into madness after madness by the maelstrom of the world.&quot;
 – Gilbert K. Chesterton, &quot;Heretics&quot; (1905)._
 
-![Hygenic Behavior](46843844654_Hygenic%20Behavior.jpg)
+![Hygenic Behavior](<46843844654_Hygenic Behavior.jpg>)
 
 ## Dark Flower
 _&quot;After being Turned Down by numerous Publishers, he had decided to write for Posterity.&quot;
@@ -9918,7 +9918,7 @@ _&quot;After being Turned Down by numerous Publishers, he had decided to write f
 &quot;O white-robed Angel, guide my timorous hand to write as on a lofty rock with iron pen the words of truth, that all who pass may read.&quot;
 – William Blake, &quot;Samson&quot;, 'Poetical Sketches' (1783)._
 
-![Dark Flower](46974087132_Dark%20Flower.jpg)
+![Dark Flower](<46974087132_Dark Flower.jpg>)
 
 ## Cubism
 _&quot;Never apologize for showing feeling, my friend. Remember that when you do so, you apologize for truth.&quot;
@@ -9943,7 +9943,7 @@ _&quot;Everything excellent limits us momentarily because we feel unable to matc
 &quot;Do not lust in your heart after her beauty or let her captivate you with her eyes, for the prostitute reduces you to a loaf of bread, and the adulteress preys upon your very life.&quot;
 – Proverbs 6:25-26_
 
-![The Body Electric (Bioelectricity)](47026117711_The%20Body%20Electric%20_Bioelectricity_.jpg)
+![The Body Electric (Bioelectricity)](<47026117711_The Body Electric _Bioelectricity_.jpg>)
 
 ## Suggestogen
 _&quot;Behold, how good and how pleasant it is for brethren to dwell together in unity!&quot;
@@ -9966,7 +9966,7 @@ _Taylor: &quot;Imagine me needing someone. Back on Earth I never did. Oh, there 
 – Leo Tolstoy, &quot;A Letter to a Hindu&quot; (1908).
 _
 
-![We are tied by a Golden Thread](47075965442_We%20are%20tied%20by%20a%20Golden%20Thread.jpg)
+![We are tied by a Golden Thread](<47075965442_We are tied by a Golden Thread.jpg>)
 
 ## Mammalian Browsers (Cognitive Security)
 _&quot;—tommorow is our permanent address 
@@ -9980,7 +9980,7 @@ we'll move away still further:into now&quot;
 &quot;The modern scientific counterpart to belief in God is the belief in the universe as an organism: this disgusts me. This is to make what is quite rare and extremely derivative, the organic, which we perceive only on the surface of the earth, into something essential, universal, and eternal! This is still an anthropomorphizing of nature!&quot;
 – Friedrich Nietzsche, KSA 9/11 [201]._
 
-![Mammalian Browsers (Cognitive Security)](47283050921_Mammalian%20Browsers%20_Cognitive%20Security_.jpg)
+![Mammalian Browsers (Cognitive Security)](<47283050921_Mammalian Browsers _Cognitive Security_.jpg>)
 
 ## Personal Development
 _&quot;Lighten your palette, paint only with the three primary colours and their derivatives.&quot;
@@ -9992,10 +9992,10 @@ _&quot;Lighten your palette, paint only with the three primary colours and their
 &quot;Why is it that millions of children who are pushouts or dropouts amount to business as usual in the public schools, while one family educating a child at home becomes a major threat to universal public education and the survival of democracy?&quot;
 – Stephen Arons, &quot;Compelling Belief: The Culture of American Schooling&quot; (New York: McGraw-Hill, 1983), 88._
 
-![Personal Development](47299405952_Personal%20Development.jpg)
+![Personal Development](<47299405952_Personal Development.jpg>)
 
 ## 47299517142_Freeway (1)
-![47299517142_Freeway (1)](47299517142_Freeway%20(1).jpg)
+![47299517142_Freeway (1)](<47299517142_Freeway (1).jpg>)
 
 ## Freeway
 _&quot;I never submitted the whole system of my opinions to the creed of any party of men whatever in religion, in philosophy, in politics, or in anything else where I was capable of thinking for myself. Such an addiction is the last degradation of a free and moral agent. If I could not go to heaven but with a party, I would not go there at all.&quot;
@@ -10016,7 +10016,7 @@ And for his false opinion pay.&quot;
 ![Freeway](47299517142_Freeway.jpg)
 
 ## 47407174461_All We Know_ Is But A Page (1)
-![47407174461_All We Know_ Is But A Page (1)](47407174461_All%20We%20Know_%20Is%20But%20A%20Page%20(1).jpg)
+![47407174461_All We Know_ Is But A Page (1)](<47407174461_All We Know_ Is But A Page (1).jpg>)
 
 ## All We Know, Is But A Page
 _&quot;In periods of economic upheaval, in periods of economic crisis, wealth is not destroyed, it is merely transferred.&quot;
@@ -10033,10 +10033,10 @@ I'm going to stand fourteen hands high
 On the Psychozoic plain!&quot;
 – Charlotte P. S. Gilman, &quot;Similar Cases&quot;_
 
-![All We Know, Is But A Page](47407174461_All%20We%20Know_%20Is%20But%20A%20Page.jpg)
+![All We Know, Is But A Page](<47407174461_All We Know_ Is But A Page.jpg>)
 
 ## 47407184551_Neurons Of The World_ Unite (1)
-![47407184551_Neurons Of The World_ Unite (1)](47407184551_Neurons%20Of%20The%20World_%20Unite%20(1).jpg)
+![47407184551_Neurons Of The World_ Unite (1)](<47407184551_Neurons Of The World_ Unite (1).jpg>)
 
 ## Neurons Of The World, Unite
 _&quot;The real truth of the matter is, as you and I know, that a financial element in the larger centers has owned the Government ever since the days of Andrew Jackson.&quot;
@@ -10048,10 +10048,10 @@ _&quot;The real truth of the matter is, as you and I know, that a financial elem
 &quot;The antagonism between science and religion, about which we hear so much, appears to me to be purely factitious — fabricated, on the one hand, by short-sighted religious people who confound a certain branch of science, theology, with religion; and, on the other, by equally short-sighted scientific people who forget that science takes for its province only that which is susceptible of clear intellectual comprehension; and that, outside the boundaries of that province, they must be content with imagination, with hope, and with ignorance.&quot;
 – Thomas Huxley, &quot;The interpreters of Genesis and the interpreters of Nature&quot; (1885)._
 
-![Neurons Of The World, Unite](47407184551_Neurons%20Of%20The%20World_%20Unite.jpg)
+![Neurons Of The World, Unite](<47407184551_Neurons Of The World_ Unite.jpg>)
 
 ## 47514688782_New Secular Order _Novus ordo seclorum_ (1)
-![47514688782_New Secular Order _Novus ordo seclorum_ (1)](47514688782_New%20Secular%20Order%20_Novus%20ordo%20seclorum_%20(1).jpg)
+![47514688782_New Secular Order _Novus ordo seclorum_ (1)](<47514688782_New Secular Order _Novus ordo seclorum_ (1).jpg>)
 
 ## New Secular Order (Novus ordo seclorum)
 _&quot;Novus ordo seclorum&quot;
@@ -10066,7 +10066,7 @@ _&quot;Novus ordo seclorum&quot;
 &quot;Since I entered politics, I have chiefly had men's views confided to me privately. Some of the biggest men in the United States, in the field of commerce and manufacture are afraid of somebody, are afraid of something. They know that there is a power somewhere so organized, so subtle, so watchful, so interlocked, so complete, so pervasive, that they better not speak above their breath when they speak in condemnation of it.&quot;
 – Woodrow Wilson, &quot;The New Freedom&quot; (1913)_
 
-![New Secular Order (Novus ordo seclorum)](47514688782_New%20Secular%20Order%20_Novus%20ordo%20seclorum_.jpg)
+![New Secular Order (Novus ordo seclorum)](<47514688782_New Secular Order _Novus ordo seclorum_.jpg>)
 
 ## Electromagnetic Radiation
 _&quot;Men are like steel — when they lose their temper, they lose their worth.&quot;
@@ -10080,10 +10080,10 @@ PROBABILITY DOES NOT EXIST.
 The abandonment of superstitious beliefs about the existence of Phlogiston, the Cosmic Ether, Absolute Space and Time, ... , or Fairies and Witches, was an essential step along the road to scientific thinking. Probability, too, if regarded as something endowed with some kind of objective existence, is no less a misleading misconception, an illusory attempt to exteriorize or materialize our true probabilistic beliefs.&quot;
 – Bruno de Finetti, &quot;Theory of Probability&quot; (1970), Preface._
 
-![Electromagnetic Radiation](47567643041_Electromagnetic%20Radiation.jpg)
+![Electromagnetic Radiation](<47567643041_Electromagnetic Radiation.jpg>)
 
 ## 47571149252_Geometry __ Topology (1)
-![47571149252_Geometry __ Topology (1)](47571149252_Geometry%20__%20Topology%20(1).jpg)
+![47571149252_Geometry __ Topology (1)](<47571149252_Geometry __ Topology (1).jpg>)
 
 ## Geometry && Topology
 _&quot;Habits of thought in the tradition of science are not readily changed, it is not easy to deviate from the customary channels of accumulated experience in conventionalized subjects.&quot;
@@ -10095,10 +10095,10 @@ _&quot;Habits of thought in the tradition of science are not readily changed, it
 &quot;What sort of countenance does love have? What sort of shape does it have? What sort of height does it have? What sort of feet does it have? What sort of hands does it have? No one can say. Yet it has feet, for they lead to the Church. It has hands, for they stretch out to the poor person. It has eyes, for that is how he is in need is understood: Blessed, it says, is he who understands.&quot;
 –  Augustine of Hippo, &quot;Homilies on the First Epistle of John&quot;._
 
-![Geometry && Topology](47571149252_Geometry%20__%20Topology.jpg)
+![Geometry && Topology](<47571149252_Geometry __ Topology.jpg>)
 
 ## 47623946101_Entomology _Antomology_ (1)
-![47623946101_Entomology _Antomology_ (1)](47623946101_Entomology%20_Antomology_%20(1).jpg)
+![47623946101_Entomology _Antomology_ (1)](<47623946101_Entomology _Antomology_ (1).jpg>)
 
 ## Entomology (Antomology)
 _&quot;The more corrupt a society, the more numerous its laws.&quot;
@@ -10113,7 +10113,7 @@ For the dear God who loveth us,
 He made and loveth all.&quot;
 –   Samuel Taylor Coleridge, &quot;The Rime of the Ancient Mariner&quot; (1817), Stanza 22_
 
-![Entomology (Antomology)](47623946101_Entomology%20_Antomology_.jpg)
+![Entomology (Antomology)](<47623946101_Entomology _Antomology_.jpg>)
 
 ## The Treachery of Law ("War on Drugs")
 _&quot;Obviously something is wrong with the entire argument of 'obviousness'.&quot;
@@ -10126,10 +10126,10 @@ _&quot;Obviously something is wrong with the entire argument of 'obviousness'.&q
 – Hammond Innes, &quot;Atlantic Fury&quot; (1962), Chapter II.2.
 _
 
-![The Treachery of Law ("War on Drugs")](47623950821_The%20Treachery%20of%20Law%20__War%20on%20Drugs__.jpg)
+![The Treachery of Law ("War on Drugs")](<47623950821_The Treachery of Law __War on Drugs__.jpg>)
 
 ## 47819673851_Hand in Hand (1)
-![47819673851_Hand in Hand (1)](47819673851_Hand%20in%20Hand%20(1).jpg)
+![47819673851_Hand in Hand (1)](<47819673851_Hand in Hand (1).jpg>)
 
 ## Hand in Hand
 _&quot;There can be no Good Will. Will is always Evil; it is persecution to others or selfishness.&quot;
@@ -10141,7 +10141,7 @@ _&quot;There can be no Good Will. Will is always Evil; it is persecution to othe
 &quot;The central belief of every moron is that he is the victim of a mysterious conspiracy against his common rights and true deserts. He ascribes all his failure to get on in the world, all of his congenital incapacity and damfoolishness, to the machinations of werewolves assembled in Wall Street, or some other such den of infamy.&quot;
 – H.L. Mencken, &quot;Varieties of Envy&quot;_
 
-![Hand in Hand](47819673851_Hand%20in%20Hand.jpg)
+![Hand in Hand](<47819673851_Hand in Hand.jpg>)
 
 ## Thousand Cuts
 _&quot;To ask the question 'What is oil?' is almost like asking 'What is love?'&quot;
@@ -10150,10 +10150,10 @@ _&quot;To ask the question 'What is oil?' is almost like asking 'What is love?'&
 &quot;Ten is the very nature of number. All Greeks and all barbarians alike count up to ten, and having reached ten revert again to the unity. And again, Pythagoras maintains, the power of the number 10 lies in the number 4, the tetrad. This is the reason: if one starts at the unit (1) and adds the successive number up to 4, one will make up the number 10 (1+2+3+4 = 10). And if one exceeds the tetrad, one will exceed 10 too.... So that the number by the unit resides in the number 10, but potentially in the number 4. And so the Pythagoreans used to invoke the Tetrad as their most binding oath: 'By him that gave to our generation the Tetractys, which contains the fount and root of eternal nature...'&quot;
 – Aëtius of Antioch, 'Aëtius' (c. 350) [I. 3.8]_
 
-![Thousand Cuts](48044408791_Thousand%20Cuts.jpg)
+![Thousand Cuts](<48044408791_Thousand Cuts.jpg>)
 
 ## 48044408986_Slow Wave (1)
-![48044408986_Slow Wave (1)](48044408986_Slow%20Wave%20(1).jpg)
+![48044408986_Slow Wave (1)](<48044408986_Slow Wave (1).jpg>)
 
 ## Slow Wave
 _&quot;Enter by this gateway and seek the way of honor, the light of truth, the will to work for men.&quot;
@@ -10167,7 +10167,7 @@ To read it well: that is, to understand.&quot;
 To my proportion'd strength.&quot;
 – John Milton, 'Comus'' (1637), line 329._
 
-![Slow Wave](48044408986_Slow%20Wave.jpg)
+![Slow Wave](<48044408986_Slow Wave.jpg>)
 
 ## Life is a Pyramid Scheme for Information
 _&quot;The academies and universities satisfied Socrates’ demand to be fed in the prytaneum.&quot;
@@ -10180,7 +10180,7 @@ ACADEME, n. An ancient school where morality and philosophy were taught.
 ACADEMY, n. [from ACADEME] A modern school where football is taught.
 – Ambrose Bierce, &quot;The Cynic's Dictionary&quot; (1906); republished as &quot;The Devil's Dictionary&quot; (1911)._
 
-![Life is a Pyramid Scheme for Information](48044479243_Life%20is%20a%20Pyramid%20Scheme%20for%20Information.jpg)
+![Life is a Pyramid Scheme for Information](<48044479243_Life is a Pyramid Scheme for Information.jpg>)
 
 ## Window Of Opportunity
 _&quot;Hope is a good breakfast, but it is a bad supper.&quot;
@@ -10195,7 +10195,7 @@ And they came out all the same&quot;
 &quot;Fellows of colleges in the universities are in one sense the recipients of alms, because they receive funds which originally were of an eleemosynary character.&quot;
 – John Duke Coleridge, C.J., Harrison v. Carter (1876)._
 
-![Window Of Opportunity](48044483836_Window%20Of%20Opportunity.jpg)
+![Window Of Opportunity](<48044483836_Window Of Opportunity.jpg>)
 
 ## Foundations of Grammar
 _&quot;Strange game. The only winning move is not to play.&quot;
@@ -10207,7 +10207,7 @@ _&quot;Strange game. The only winning move is not to play.&quot;
 &quot;The natural scientist must be a modern materialist, a conscious adherent of the materialism represented by Marx, i.e., he must be a dialectical materialist.&quot;
 – Vladimir Lenin, 'Collected Works', Progress Publishers, Moscow, Volume 33, pp. 227-236._
 
-![Foundations of Grammar](48044538233_Foundations%20of%20Grammar.jpg)
+![Foundations of Grammar](<48044538233_Foundations of Grammar.jpg>)
 
 ## One Cubic Cubit
 _&quot;What I cannot do now is the sign of what I shall do hereafter. 
@@ -10220,7 +10220,7 @@ Because this temporal universe was a paradox and an impossibility, therefore the
 4 The wife hath not power of her own body, but the husband: and likewise also the husband hath not power of his own body, but the wife. 
 5 Defraud ye not one the other, except it be with consent for a time, that ye may give yourselves to fasting and prayer; and come together again, that Satan tempt you not for your incontinency._
 
-![One Cubic Cubit](48044570822_One%20Cubic%20Cubit.jpg)
+![One Cubic Cubit](<48044570822_One Cubic Cubit.jpg>)
 
 ## Santa Cruz (All Roads Lead To Roam)
 _&quot;There is ... only a single categorical imperative and it is this: Act only on that maxim through which you can at the same time will that it should become a universal law.&quot;
@@ -10229,7 +10229,7 @@ Immanuel Kant, &quot;Metaphysics of Morals&quot;, Ch. 11 (1797).
 &quot;A miracle worker is an artist of the soul. There’s no higher art than living a good life. An artist informs the world of what’s available behind the masks we all wear. That’s what we’re all here to do. The reason so many of us are obsessed with becoming stars is because we’re not yet starring in our own lives. The cosmic spotlight isn’t pointed at you; it radiates from within you.&quot;
 – Marianne Williamson _
 
-![Santa Cruz (All Roads Lead To Roam)](48235510746_Santa%20Cruz%20_All%20Roads%20Lead%20To%20Roam_.jpg)
+![Santa Cruz (All Roads Lead To Roam)](<48235510746_Santa Cruz _All Roads Lead To Roam_.jpg>)
 
 ## Cave as Womb
 _&quot;In a logical system, it is convenient to say that possibility passes over into actuality. However, in actuality it is not so convenient, and an intermediate term is required. The intermediate term is anxiety… Anxiety is neither a category of necessity nor a category of freedom; it is entangled freedom, where freedom is not free in itself but entangled, not by necessity, but in itself.&quot;
@@ -10240,7 +10240,7 @@ _&quot;In a logical system, it is convenient to say that possibility passes over
 &quot;Don't forget,&quot; said the Secretary, looking down, &quot;that he also means Panic.&quot;
 – G. K. Chesterton in &quot;The Man Who Was Thursday&quot; (1908)._
 
-![Cave as Womb](48235609132_Cave%20as%20Womb.jpg)
+![Cave as Womb](<48235609132_Cave as Womb.jpg>)
 
 ## Mind Body Self
 _&quot;I should have more faith,&quot; he said; &quot;I ought to know by this time that when a fact appears opposed to a long train of deductions it invariably proves to be capable of bearing some other interpretation.&quot;
@@ -10249,7 +10249,7 @@ _&quot;I should have more faith,&quot; he said; &quot;I ought to know by this ti
 &quot;So long as my voice can be heard on this or the other side of the Atlantic, I will hold up America to the lightning scorn of moral indignation. In doing this, I shall feel myself discharging the duty of a true patriot; for he is a lover of his country who rebukes and does not excuse its sins. It is righteousness that exalteth a nation while sin is a reproach to any people.&quot;
 – Frederick Douglass, &quot;Love of God, Love of Man, Love of Country&quot; (24 September 1847)_
 
-![Mind Body Self](48235627792_Mind%20Body%20Self.jpg)
+![Mind Body Self](<48235627792_Mind Body Self.jpg>)
 
 ## America: A Prophecy (In Utero We Trust)
 _&quot;Nothing is terrible except fear itself.&quot;
@@ -10261,7 +10261,7 @@ _&quot;Nothing is terrible except fear itself.&quot;
 &quot;Some of my youthful readers are developing wonderful imaginations. This pleases me. Imagination has brought mankind through the Dark Ages to its present state of civilization. Imagination led Columbus to discover America. Imagination led Franklin to discover electricity. Imagination has given us the steam engine, the telephone, the talking-machine, and the automobile, for these things had to be dreamed of before they became realities. So I believe that dreams — day dreams, you know, with your eyes wide open and your brain machinery whizzing — are likely to lead to the betterment of the world. The imaginative child will become the imaginative man or woman most apt to create, to invent, and therefore to foster civilization. A prominent educator tells me that fairy tales are of untold value in developing imagination in the young. I believe it.&quot;
 – L. Frank Baum, Introduction to &quot;The Lost Princess of Oz&quot; (1917)._
 
-![America: A Prophecy (In Utero We Trust)](48235634696_America_%20A%20Prophecy%20_In%20Utero%20We%20Trust_.jpg)
+![America: A Prophecy (In Utero We Trust)](<48235634696_America_ A Prophecy _In Utero We Trust_.jpg>)
 
 ## V is for Victory
 _&quot;To sound the alarm is not to panic but to seek action from an aroused public.&quot;
@@ -10273,7 +10273,7 @@ _&quot;To sound the alarm is not to panic but to seek action from an aroused pub
 &quot;Men will seem to see new destructions in the sky. The flames that fall from it will seem to rise in it and to fly from it with terror. They will hear every kind of animals speak in human language. They will instantaneously run in person in various parts of the world, without motion. They will see the greatest splendour in the midst of darkness. O! marvel of the human race! What madness has led you thus! You will speak with animals of every species and they with you in human speech. You will see yourself fall from great heights without any harm and torrents will accompany you, and will mingle with their rapid course.&quot;
 – Leonardo da Vinci, &quot;The Notebooks of Leonardo Da Vinci&quot;, XX: Humorous Writings._
 
-![V is for Victory](48235646217_V%20is%20for%20Victory.jpg)
+![V is for Victory](<48235646217_V is for Victory.jpg>)
 
 ## American Moon Landing Policy 1969-2019
 _&quot;Knowledge has no enemy except an ignorant man&quot; 
@@ -10286,7 +10286,7 @@ _&quot;Knowledge has no enemy except an ignorant man&quot;
 &quot;Every nation has to either be with us, or against us. Those who harbor terrorists, or who finance them, are going to pay a price.&quot;
 – Hillary Clinton (13 September 2001)._
 
-![American Moon Landing Policy 1969-2019](48235647846_American%20Moon%20Landing%20Policy%201969-2019.jpg)
+![American Moon Landing Policy 1969-2019](<48235647846_American Moon Landing Policy 1969-2019.jpg>)
 
 ## Benzene
 _&quot;In doing mathematics, I express something personal. It is a source of joy to know that, despite this personal aspect, the fruit of my work can be of interest to other mathematicians.&quot;
@@ -10321,7 +10321,7 @@ Of nought but earth can earth make us partaker,
 But knowledge makes a king most like his Maker.&quot;
 – William Shakespeare_
 
-![Cycles of Time (The Vicious Spiral)](48235759567_Cycles%20of%20Time%20_The%20Vicious%20Spiral_.jpg)
+![Cycles of Time (The Vicious Spiral)](<48235759567_Cycles of Time _The Vicious Spiral_.jpg>)
 
 ## Ying-Yang
 _&quot;The earth is a cylindrical column, surrounded by air; it floats upright in the centre of the universe without support or anything to stand on, yet it does not fall because, being in the centre, it has no preferred direction towards which to lean; if it did, this would disturb the symmetry and balance of the whole. The spherical heavens enclose the atmosphere 'like the bark of a tree', and there are several layers of this enclosure to accommodate the various stellar objects.&quot;
@@ -10349,7 +10349,7 @@ There were tones in the voice that whispered then
 You may hear to-day in a hundred men.&quot;
 – Oliver Wendell Holmes, &quot;Dorothy Q. (A FAMILY PORTRAIT)&quot; (1871)._
 
-![Mind over Matter](48489124931_Mind%20over%20Matter.jpg)
+![Mind over Matter](<48489124931_Mind over Matter.jpg>)
 
 ## Gödel, Escher, Bach
 _&quot;To every ω-consistent recursive class κ of formulae there correspond recursive class signs r, such that neither v Gen r nor Neg (v Gen r) belongs to Flg (κ) (where v is the free variable of r).&quot;
@@ -10364,7 +10364,7 @@ _&quot;To every ω-consistent recursive class κ of formulae there correspond re
 &quot;That swarm of ants that I observed, each one following the one ahead, have every one been Indra in the world of the gods by virtue of their own past action. And now, by virtue of their deeds done in the past, they have gradually fallen to the state of ants.&quot;
 – Krsna, &quot;Indra and the Ants&quot;._
 
-![Gödel, Escher, Bach](48489125096_Gödel_%20Escher_%20Bach.jpg)
+![Gödel, Escher, Bach](<48489125096_Gödel_ Escher_ Bach.jpg>)
 
 ## SurveilAnt State
 _&quot;We’ve got to do several things, and I am, adamantly against illegal immigrants. We’ve got to do more at our borders and people need to stop employing illegal immigrants.&quot;
@@ -10379,7 +10379,7 @@ _&quot;We’ve got to do several things, and I am, adamantly against illegal imm
 Judith 9:11-14 New Revised Standard Version (NRSV)
 11 “For your strength does not depend on numbers, nor your might on the powerful. But you are the God of the lowly, helper of the oppressed, upholder of the weak, protector of the forsaken, savior of those without hope. 12 Please, please, God of my father, God of the heritage of Israel, Lord of heaven and earth, Creator of the waters, King of all your creation, hear my prayer! 13 Make my deceitful words bring wound and bruise on those who have planned cruel things against your covenant, and against your sacred house, and against Mount Zion, and against the house your children possess. 14 Let your whole nation and every tribe know and understand that you are God, the God of all power and might, and that there is no other who protects the people of Israel but you alone!”_
 
-![SurveilAnt State](48489125361_SurveilAnt%20State.jpg)
+![SurveilAnt State](<48489125361_SurveilAnt State.jpg>)
 
 ## Left hand path, Right hand path
 _&quot;Controversy equalizes fools and wise men — and the fools know it.&quot;
@@ -10394,7 +10394,7 @@ _&quot;Controversy equalizes fools and wise men — and the fools know it.&quot;
 &quot;Avoid using the term generically and without definition, because it is not well-known globally and the term may exist primarily as a public relations device to make its supporters’ actual beliefs less clear and more acceptable to a broader audience. In AP stories discussing what the movement says about itself, the term “alt-right” (quotation marks, hyphen and lowercase) may be used in quotes or modified as in the self-described “alt-right” or so-called alt-right.&quot;
 – Associated Press Stylebook_
 
-![Left hand path, Right hand path](48489125836_Left%20hand%20path_%20Right%20hand%20path.jpg)
+![Left hand path, Right hand path](<48489125836_Left hand path_ Right hand path.jpg>)
 
 ## Soul Passage
 _&quot;Psychology has a long past, but only a short history.&quot;
@@ -10412,7 +10412,7 @@ The Savage interrupted him. &quot;But isn't it natural to feel there's a God?&qu
 &quot;But people never are alone now,&quot; said Mustapha Mond. &quot;We make them hate solitude; and we arrange their lives so that it's almost impossible for them ever to have it.&quot;
 – Aldous Huxley, &quot;Brave New World&quot;, chapter 17._
 
-![Soul Passage](48489289667_Soul%20Passage.jpg)
+![Soul Passage](<48489289667_Soul Passage.jpg>)
 
 ## Protected by the 1st & 2nd
 _&quot;What's the news?
@@ -10426,7 +10426,7 @@ Then is doomsday near.&quot;
 &quot;Heredity. Given any organ in a parent and the same or any other organ in its offspring, the mathematical measure of heredity is the correlation of these organs for pairs of parent and offspring... The word organ here must be taken to include any characteristic which can be quantitatively measured.&quot;
 – Karl Pearson, &quot;Mathematical Contributions to the Theory of Evolution III: Regression, Heredity and Panmixia&quot;, Philosophical Transactions of the Royal Society, Series A, Vol. 187 (1896) p. 259._
 
-![Protected by the 1st & 2nd](48578465511_Protected%20by%20the%201st%20_%202nd.jpg)
+![Protected by the 1st & 2nd](<48578465511_Protected by the 1st _ 2nd.jpg>)
 
 ## Pop Pop Pop Minimalism
 _&quot;There has been an increased but still rather limited response to general systems theory, as variously reflected in the work of Bateson, Vayda, Rappaport, Adams, and an interest in the use of computers, programming, matrices, etc. But the interaction between general systems theory (as represented, for example, by the theoretical work of Von Bertalanffy) has been compromised, partly by the state of field data, extraordinarily incomparable as it inevitably is, as well as historical anthropological methods of dealing with wholes. General systems theory has taken its impetus from the excitement of discovering larger and larger contexts, on the one hand, and a kind of microprobing into fine detail within a system, on the other. Both of these activities are intrinsic to anthropology to the extent that field work in living societies has been the basic disciplinary method. It is no revelation to any field-experienced anthropologist that everything is related to everything else, or that whether the entire sociocultural setting can be studied in detail or not, it has to be known in general outline.&quot;
@@ -10437,7 +10437,7 @@ They said to each other, “Come, let’s make bricks and bake them thoroughly.�
 But the Lord came down to see the city and the tower the people were building. The Lord said, “If as one people speaking the same language they have begun to do this, then nothing they plan to do will be impossible for them. Come, let us go down and confuse their language so they will not understand each other.”
 – Genesis 11:1-9_
 
-![Pop Pop Pop Minimalism](48578578771_Pop%20Pop%20Pop%20Minimalism.jpg)
+![Pop Pop Pop Minimalism](<48578578771_Pop Pop Pop Minimalism.jpg>)
 
 ## Radioactive
 _&quot;Roger Bacon had shown how easy it is, and how vain, to survey the operations of Nature and idly refer her wondrous works to chance or accident, or to the immediate interposition of God.&quot;
@@ -10468,7 +10468,7 @@ Richard von Mise, First Lecture, &quot;The Definition of Probability&quot;, p. 8
 &quot;If ... the ability to tell right from wrong should turn out to have anything to do with the ability to think, then we must be able to &quot;demand&quot; its exercise from every sane person, no matter how erudite or ignorant, intelligent or stupid, he may happen to be. Kant—in this respect almost alone among the philosophers—was much bothered by the common opinion that philosophy is only for the few, precisely because of its moral implications.&quot;
 – Hannah Arendt, &quot;The Life of the Mind&quot; (1978), p. 13._
 
-![Gödel gets Diagonalized](48578694082_Gödel%20gets%20Diagonalized.jpg)
+![Gödel gets Diagonalized](<48578694082_Gödel gets Diagonalized.jpg>)
 
 ## The Space Game
 _&quot;For the benefit of all.&quot;
@@ -10483,7 +10483,7 @@ Karl Marx (1867) Das Kapital, Vol. I, Ch. 4, pg.171 - 172
 &quot;It makes a tremendous emotional and practical difference to one whether one accepts the universe in the drab discolored way of stoic resignation to necessity, or with the passionate happiness of Christian saints.&quot;
 – William James, in &quot;The Varieties of Religious Experience: A Study in Human Nature&quot;, Lecture II, &quot;Circumscription of the Topic&quot;._
 
-![The Space Game](48578724396_The%20Space%20Game.jpg)
+![The Space Game](<48578724396_The Space Game.jpg>)
 
 ## Full Bloom
 _&quot;The lizard's ancestors are the cause of its being hunted.&quot;
@@ -10501,7 +10501,7 @@ on its course, though torn by winds, over the wine-blue water.
 By skill charioteer outpasses charioteer.&quot;
 – Homer, &quot;The Iliad&quot;, Book XXIII, lines 315–318_
 
-![Full Bloom](48936206928_Full%20Bloom.jpg)
+![Full Bloom](<48936206928_Full Bloom.jpg>)
 
 ## Single Cellularity
 _&quot;God forbid that India should ever take to industrialism after the manner of the West. ... If an entire nation of 300 million took to similar economic exploitation, it would strip the world bare like locusts.&quot;
@@ -10515,7 +10515,7 @@ Both read the Bible day and night, but thou read’st black where I read white.
 His seventy disciples sent against religion and government.&quot;
 – William Blake, &quot;The Everlasting Gospel&quot; (c.1818)_
 
-![Single Cellularity](48936752881_Single%20Cellularity.jpg)
+![Single Cellularity](<48936752881_Single Cellularity.jpg>)
 
 ## As Above, So Below
 _&quot;A democratic civilization will save itself only if it makes the language of the image into a stimulus for critical reflection — not an invitation for hypnosis.&quot;
@@ -10530,7 +10530,7 @@ _&quot;A democratic civilization will save itself only if it makes the language 
 &quot;Freemasons, n. An order with secret rites, grotesque ceremonies and fantastic costumes, which, originating in the reign of Charles II, among working artisans of London, has been joined successively by the dead of past centuries in unbroken retrogression until now it embraces all the generations of man on the hither side of Adam and is drumming up distinguished recruits among the pre-Creational inhabitants of Chaos and Formless Void. The order was founded at different times by Charlemagne, Julius Caesar, Cyrus, Solomon, Zoroaster, Confucius, Thothmes, and Buddha. Its emblems and symbols have been found in the Catacombs of Paris and Rome, on the stones of the Parthenon and the Chinese Great Wall, among the temples of Karnak and Palmyra and in the Egyptian Pyramids — always by a Freemason.&quot;
 – Ambrose Bierce, in &quot;The Cynic's Word Book&quot; (1906) [later retitled The Devil's Dictionary]_
 
-![As Above, So Below](48936753686_As%20Above_%20So%20Below.jpg)
+![As Above, So Below](<48936753686_As Above_ So Below.jpg>)
 
 ## Montreal (Welcome to...)
 _&quot;We shall form to the American union a barrier against the dangerous extension of the British Province of Canada.&quot;
@@ -10542,7 +10542,7 @@ _&quot;We shall form to the American union a barrier against the dangerous exten
 &quot;Greece is a sort of American vassal; the Netherlands is the country of American bases that grow like tulip bulbs; Cuba is the main sugar plantation of the American monopolies; Turkey is prepared to kowtow before any United States proconsul and Canada is the boring second fiddle in the American symphony.&quot;
 – Andrei Gromyko, as quoted in the New York Herald Tribune (30 June 1953)_
 
-![Montreal (Welcome to...)](48936753856_Montreal%20_Welcome%20to____.jpg)
+![Montreal (Welcome to...)](<48936753856_Montreal _Welcome to____.jpg>)
 
 ## Notes of Coffee
 _&quot;The role of television is the illusion of company, noise. I call it the fifth wall and the second window: the window of illusion.&quot;
@@ -10560,7 +10560,7 @@ The wise, for cure, on exercise depend;
 God never made his work for man to mend.&quot;
 – John Dryden, &quot;Epistle to John Driden of Chesterton&quot;, line 92-95 (1700)._
 
-![Notes of Coffee](48936938527_Notes%20of%20Coffee.jpg)
+![Notes of Coffee](<48936938527_Notes of Coffee.jpg>)
 
 ## Tradition all the way down
 _I think cars today are almost the exact equivalent of the great Gothic cathedrals. I mean the supreme creation of an era, conceived with passion by unknown artists, and consumed in image if not in usage by a whole population which appropriates them as a purely magical object.–  Roland Barthes, The New Citroën, (1957) .
@@ -10572,7 +10572,7 @@ The wealth of Indian provinces, escapes.&quot;– William Cowper, &quot;The Task
 &quot;What security have you for your own safety if every man of vile temper, of low instincts, of base purpose, can find in his own heart a higher law than that which is the rule of society, the Constitution, and the Bible? These higher-law preachers should be tarred and feathered, and whipped by those they have thus instigated. This, my friends, is what was called in good old revolutionary times, Lynch Law. It is sometimes the very best law, because it deals summary justice upon those who would otherwise escape from all other kinds of punishment.&quot;
 – Jefferson Davis, Speech in New York, 1858._
 
-![Tradition all the way down](48941508478_Tradition%20all%20the%20way%20down.jpg)
+![Tradition all the way down](<48941508478_Tradition all the way down.jpg>)
 
 ## What is a Gene 4?
 _Q: What is a Gene 4?
@@ -10590,7 +10590,7 @@ If there is a community of computers living in my head, there had also better be
 &quot;It is an article of passionate faith among 'politically correct' biologists and anthropologists that brain size has no connection with intelligence; that intelligence has nothing to do with genes; and that genes are probably nasty fascist things anyway.&quot;
 – Richard Dawkins, in The Economist, Vol. 328 (1993)_
 
-![What is a Gene 4?](48941508673_What%20is%20a%20Gene%204_.jpg)
+![What is a Gene 4?](<48941508673_What is a Gene 4_.jpg>)
 
 ## Wandering Play
 _&quot;I remain just one thing, and one thing only — and that is a clown. It places me on a far higher plane than any politician.&quot;
@@ -10602,7 +10602,7 @@ _&quot;I remain just one thing, and one thing only — and that is a clown. It p
 &quot;The demagogue is usually sly, a detractor of others, a professor of humility and disinterestedness, a great stickler for equality as respects all above him, a man who acts in corners, and avoids open and manly expositions of his course, calls blackguards gentlemen, and gentlemen folks, appeals to passions and prejudices rather than to reason, and is in all respects, a man of intrigue and deception, of sly cunning and management, instead of manifesting the frank, fearless qualities of the democracy he so prodigally professes.The man who maintains the rights of the people on pure grounds, may be distinguished from the demagogue by the reverse of all these qualities. He does not flatter the people, even while he defends them, for he knows that flattery is a corrupting and dangerous poison. Having nothing to conceal, he is frank and fearless, as are all men with the consciousness of right motives. He oftener chides than commends, for power needs reproof and can dispense with praise.
 He who would be a courtier under a king, is almost certain to be a demagogue in a democracy.&quot;– James Fenimore Cooper, &quot;The American Democrat&quot; (1838). _
 
-![Wandering Play](48942053941_Wandering%20Play.jpg)
+![Wandering Play](<48942053941_Wandering Play.jpg>)
 
 ## King, Warrior, Magician, Lover
 _&quot;To say 'I love you' one must know first how to say the 'I.'&quot;
@@ -10626,7 +10626,7 @@ Be silent.&quot;
 But MAGICK is for ALL.&quot;
 – Aleister Crowley, in his Introduction to Magick Book IV : Liber ABA, Part III : Magick in Theory and Practice (1929)_
 
-![King, Warrior, Magician, Lover](48942247617_King_%20Warrior_%20Magician_%20Lover.jpg)
+![King, Warrior, Magician, Lover](<48942247617_King_ Warrior_ Magician_ Lover.jpg>)
 
 ## Tabula Rasa
 _&quot;Never place a period where God has placed a comma.
@@ -10641,7 +10641,7 @@ _&quot;Never place a period where God has placed a comma.
 &quot;Suppose instead of election a man were qualified for office by petition signed by four thousand citizens. He would then represent those four thousand affirmatively, with no disgruntled minority, for what would have been a minority in a territorial constituency would all be free to start other petitions or join in them. All would then be represented by men of their choice. Or a man with eight thousand supporters might have two votes in this body. Difficulties, objections, practical points to be worked out — many of them! But you could work them out. . . and thereby avoid the chronic sickness of representative government, the disgruntled minority which feels — correctly! — that it has been disenfranchised.&quot; 
 – Robert A. Heinlein   &quot;The Moon Is a Harsh Mistress&quot;_
 
-![Tabula Rasa](48942247782_Tabula%20Rasa.jpg)
+![Tabula Rasa](<48942247782_Tabula Rasa.jpg>)
 
 ## 1st, 2nd, 3rd, 4th, 5th Generation Warfare
 _&quot;He who first called money the sinews of the state seems to have said this with special reference to war.&quot;
@@ -10660,13 +10660,13 @@ And shed libations on his shrine!&quot;
 – Thomas Moore, &quot;Odes of Anacreon&quot;, Ode LXVIII,
 _
 
-![1st, 2nd, 3rd, 4th, 5th Generation Warfare](49095615043_1st_%202nd_%203rd_%204th_%205th%20Generation%20Warfare.jpg)
+![1st, 2nd, 3rd, 4th, 5th Generation Warfare](<49095615043_1st_ 2nd_ 3rd_ 4th_ 5th Generation Warfare.jpg>)
 
 ## A New Dawn Arises
 _&quot;The untransacted destiny of the American people is to subdue the continent — to rush over this vast field to the Pacific Ocean — to animate the many hundred millions of its people, and to cheer them upward — to set the principle of self-government at work — to agitate these herculean masses — to establish a new order in human affairs — to set free the enslaved — to regenerate superannuated nations — to change darkness into light — to stir up the sleep of a hundred centuries — to teach old nations a new civilization — to confirm the destiny of the human race — to carry the career of mankind to its culminating point — to cause stagnant people to be re-born — to perfect science — to emblazon history with the conquest of peace — to shed a new and resplendent glory upon mankind — to unite the world in one social family — to dissolve the spell of tyranny and exalt charity — to absolve the curse that weighs down humanity, and to shed blessings round the world! Divine task! immortal mission! Let us tread fast and joyfully the open trail before us! Let every American heart open wide for patriotism to glow undimmed, and confide with religious faith in the sublime and prodigious destiny of his well-loved country.&quot;
 – William Gilpin, address to the U.S. Senate (2 March 1846); as quoted in Mission of the North American People, Geographical, Social, and Political (1873), by William Gilpin, p. 124_
 
-![A New Dawn Arises](49095615998_A%20New%20Dawn%20Arises.jpg)
+![A New Dawn Arises](<49095615998_A New Dawn Arises.jpg>)
 
 ## Rotator Cuff
 _&quot;Do not tell people how to live their lives. Just tell them stories. And they will figure out how those stories apply to them.&quot;– Randy Pausch, in &quot;The Last Lecture&quot; (2008)
@@ -10677,7 +10677,7 @@ _&quot;Do not tell people how to live their lives. Just tell them stories. And t
 &quot;I simply state that I'm a product of a versatile mind in a restless generation — with every reason to throw my mind and pen in with the radicals. Even if, deep in my heart, I thought we were all blind atoms in a world as limited as a stroke of a pendulum, I and my sort would struggle against tradition; try, at least, to displace old cants with new ones. I've thought I was right about life at various times, but faith is difficult. One thing I know. If living isn't seeking for the grail it may be a damned amusing game.&quot;
 – F. Scott Fitzgerald, in &quot;This Side of Paradise (1920)_
 
-![Rotator Cuff](49095616513_Rotator%20Cuff.jpg)
+![Rotator Cuff](<49095616513_Rotator Cuff.jpg>)
 
 ## Initiation
 _&quot;It is occult students for whom search is now being made, and not mystics; it is for clear-thinking men and women that the call has gone forth, and not for the fanatic or for the person who sees nothing but the ideal, and who is unable to work successfully with situations and things as they are, and who cannot, therefore, apply the necessary and unavoidable compromise.&quot;
@@ -10706,7 +10706,7 @@ _&quot;M. Fries, who is the founder of the system of quaternary arrangement, and
 § 12. A Philosophical system is superior to all others. It may at first appear, perhaps, of little moment, what way we follow follow in enumerating the productions of nature ; but if one way is more certain and more facile than another, that is surely to be preferred.&quot;
 – John Lindley (1826). &quot;Some Account of the Spherical and Numerical System of Nature o/M. Elias Fries&quot;. In: Philosophical magazine: a journal of theoretical, experimental and applied physics, Volume 68, 31st August 1826._
 
-![Gamete, Seed, Fruit, Tree](49095617238_Gamete_%20Seed_%20Fruit_%20Tree.jpg)
+![Gamete, Seed, Fruit, Tree](<49095617238_Gamete_ Seed_ Fruit_ Tree.jpg>)
 
 ## Europe 72
 _&quot;Thy father's merit sets thee up to view, And shows thee in the fairest point of light,To make thy virtues, or thy faults, conspicuous.&quot;
@@ -10718,7 +10718,7 @@ _&quot;Thy father's merit sets thee up to view, And shows thee in the fairest po
 &quot;An excellent plumber is infinitely more admirable than an incompetent philosopher. The society which scorns excellence in plumbing because plumbing is a humble activity and tolerates shoddiness in philosophy because it is an exalted activity will have neither good plumbing nor good philosophy. Neither its pipes nor its theories will hold water.&quot;
 – John W. Gardner, President, Carnegie Corporation, &quot;Excellence: Can We Be Equal and Excellent Too?&quot;, p. 86 (1961)_
 
-![Europe 72](49095617763_Europe%2072.jpg)
+![Europe 72](<49095617763_Europe 72.jpg>)
 
 ## Fourth Political Theory (4PT)
 _&quot;Her dreams, of course, partook of this symmetry. The same dream returns to her periodically, annually, and punctual to its night.&quot;
@@ -10734,7 +10734,7 @@ _&quot;Her dreams, of course, partook of this symmetry. The same dream returns t
 – Charles Zastrow, &quot;The practice of social work&quot; (1995) p. 1; On the history of social work.
 _
 
-![Fourth Political Theory (4PT)](49095620313_Fourth%20Political%20Theory%20_4PT_.jpg)
+![Fourth Political Theory (4PT)](<49095620313_Fourth Political Theory _4PT_.jpg>)
 
 ## Seven Chakras
 _&quot;I am, a spectator, so to speak of the molecular whirlwind which men call individual life; I am conscious of an incessant metamorphosis; an irresistible movement of existence, which is going on within me – and this phenomenology of myself serves as a window opened upon the mystery of the world.&quot;
@@ -10743,7 +10743,7 @@ _&quot;I am, a spectator, so to speak of the molecular whirlwind which men call 
 &quot;What a piece of work is a man! how noble in reason! how infinite in faculty! in form and moving how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals! And, yet, to me, what is this quintessence of dust? man delights not me: no, nor woman neither, though by your smiling, you seem to say so.&quot;
 – William Shakespeare, &quot;Hamlet&quot; (1600-02), Act II, scene 2, line 313._
 
-![Seven Chakras](49096129156_Seven%20Chakras.jpg)
+![Seven Chakras](<49096129156_Seven Chakras.jpg>)
 
 ## Black Sun
 _&quot;Systems seem, like certain worms, to be formed by a kind of generatio aequivoca - by the mere confluence of conceptions, and to gain completeness only with the progress of time.&quot;
@@ -10752,7 +10752,7 @@ _&quot;Systems seem, like certain worms, to be formed by a kind of generatio aeq
 &quot;When I was a schoolboy in England, the old bound volumes of Kipling in the library had gilt swastikas embossed on their covers. The symbol's 'hooks' were left-handed, as opposed to the right-handed ones of the Nazi hakenkreuz, but for a boy growing up after 1945 the shock of encountering the emblem at all was a memorable one. I later learned that in the mid-1930s Kipling had caused this 'signature' to be removed from all his future editions. Having initially sympathized with some of the early European fascist movements, he wanted to express his repudiation of Hitlerism (or 'the Hun,' as he would perhaps have preferred to say), and wanted no part in tainting the ancient Indian rune by association. In its origin it is a Hindu and Jainas symbol for light, and well worth rescuing.&quot;
 – Christopher Hitchens, in &quot;Love, Poverty, and War: Journeys and Essays&quot;_
 
-![Black Sun](49096132346_Black%20Sun.jpg)
+![Black Sun](<49096132346_Black Sun.jpg>)
 
 ## The Great Work vs. Lesser Work
 _&quot;A lot of people facing fascism didn’t become fascists. I don’t happen to believe that we are all monsters.&quot;
@@ -10764,7 +10764,7 @@ _&quot;A lot of people facing fascism didn’t become fascists. I don’t happen
 &quot;His speech was substantial, and its contents extensive. The messenger, whose mouth was heavy, was not able to repeat it. Because the messenger, whose mouth was tired, was not able to repeat it, the lord of Kulaba patted some clay and wrote the message as if on a tablet. Formerly, the writing of messages on clay was not established. Now, under that sun and on that day, it was indeed so. The lord of Kulaba inscribed the message like a tablet. It was just like that.&quot;
 – Enmerkar and the Lord of Aratta, Neo-Sumerian period (ca. 21st century BCE)._
 
-![The Great Work vs. Lesser Work](49096132811_The%20Great%20Work%20vs_%20Lesser%20Work.jpg)
+![The Great Work vs. Lesser Work](<49096132811_The Great Work vs_ Lesser Work.jpg>)
 
 ## Only the Children Escape the Cave....
 _&quot;They died to save their country and they only saved the world.&quot;
@@ -10776,7 +10776,7 @@ _&quot;They died to save their country and they only saved the world.&quot;
 &quot;It is possible to infer character from features, if it is granted that the body and the soul are changed together by the natural affections: I say &quot;natural&quot;, for though perhaps by learning music a man has made some change in his soul, this is not one of those affections natural to us; rather I refer to passions and desires when I speak of natural emotions. If then this were granted and also that for each change there is a corresponding sign, and we could state the affection and sign proper to each kind of animal, we shall be able to infer character from features.&quot;
 – Aristotle, &quot;Analytica Priora&quot; (Prior Analytics), 2.27._
 
-![Only the Children Escape the Cave....](49096319057_Only%20the%20Children%20Escape%20the%20Cave____.jpg)
+![Only the Children Escape the Cave....](<49096319057_Only the Children Escape the Cave____.jpg>)
 
 ## In My Mind, Two Roads Diverged......
 _&quot;Ships that pass in the night, and speak each other in passing,
@@ -10788,7 +10788,7 @@ Only a look and a voice, then darkness again and a silence.&quot;
 &quot;All individuals of the &quot;higher&quot; insects — the butterflies and moths (Lepidopteral), flies and mosquitoes (Dipteral), and wasps, ants, and bees (Hy-menopteral) — along with many amphibians, invertabrates, and fish, undergo drastic change during their life cycles when they metamorphose from larva to adult.&quot;
 – Mary Jane West-Eberhard, &quot;Developmental Plasticity and Evolution&quot;_
 
-![In My Mind, Two Roads Diverged......](49096319822_In%20My%20Mind_%20Two%20Roads%20Diverged______.jpg)
+![In My Mind, Two Roads Diverged......](<49096319822_In My Mind_ Two Roads Diverged______.jpg>)
 
 ## Integration of Form, Integration of Function
 _&quot;Instead of breaking that bridge, we should, if possible, provide another, that he [Xerxes] may retire the sooner out of Europe.&quot;
@@ -10801,7 +10801,7 @@ _&quot;Instead of breaking that bridge, we should, if possible, provide another,
 – Charles Sanders Peirce (1839 – 1914)
 _
 
-![Integration of Form, Integration of Function](49096320182_Integration%20of%20Form_%20Integration%20of%20Function.jpg)
+![Integration of Form, Integration of Function](<49096320182_Integration of Form_ Integration of Function.jpg>)
 
 ## Zig-Zag
 _&quot;It is manifest that everything in the world, whether it be substance or accident, produces rays in its own manner like a star... Everything that has actual existence in the world of the elements emits rays in every direction, which fill the whole world.&quot;
@@ -10824,7 +10824,7 @@ _&quot;Gestalt is the primary attribute of life&quot;– Ludwig von Bertalanffy,
 &quot;Our experiments [by the artists of 'Cobra'] the aim at letting thought express itself spontaneously without the control which reason represents. By means of this irrational spontaneity we get closer to the vital source of life. Our goal is to liberate ourselves from the control of reason which has been and still is the thing which the bourgeoisie has idealized to seize control of life.&quot;
 – Asger Jorn (1949) in 'Discours aux pingouins' ('Speech to the Penguins'), in 'Cobra' 1. (1949)_
 
-![Eye of the Mind](49228751563_Eye%20of%20the%20Mind.jpg)
+![Eye of the Mind](<49228751563_Eye of the Mind.jpg>)
 
 ## Ouroboros
 _&quot;Ontology recapitulates philology.&quot;
@@ -10849,7 +10849,7 @@ The drama of the earth, their tragic stage.&quot;
 
 Three-way PPPiP with S. &amp; CL._
 
-![Inside vs. Outside](49228757233_Inside%20vs_%20Outside.jpg)
+![Inside vs. Outside](<49228757233_Inside vs_ Outside.jpg>)
 
 ## Ether
 _&quot;The magic words are squeamish ossifrage&quot;
@@ -10907,7 +10907,7 @@ _&quot;If dung lies near the corn-carting, and not carried out before harvest, s
 &quot;In principle, Eurasia and our space, the heartland Russia, remain the staging area of a new anti-bourgeois, anti-American revolution ... The new Eurasian empire will be constructed on the fundamental principle of the common enemy: the rejection of Atlanticism, strategic control of the USA, and the refusal to allow liberal values to dominate us. This common civilizational impulse will be the basis of a political and strategic union.&quot;
 – Aleksandr Dugin, &quot;The Basics of Geopolitics&quot; (1997)_
 
-![Doomsday Clock (Minutes to Midnight)](49229224646_Doomsday%20Clock%20_Minutes%20to%20Midnight_.jpg)
+![Doomsday Clock (Minutes to Midnight)](<49229224646_Doomsday Clock _Minutes to Midnight_.jpg>)
 
 ## Angular Momentum
 _&quot;Metaphysical assertions, however, are statements of the psyche, and are therefore psychological. ... Whenever the Westerner hears the word “psychological,” it always sounds to him like “only psychological.”&quot;
@@ -10916,7 +10916,7 @@ _&quot;Metaphysical assertions, however, are statements of the psyche, and are t
 &quot;The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its causes. Therefore in medicine we ought to know the causes of sickness and health. And because health and sickness and their causes are sometimes manifest, and sometimes hidden and not to be comprehended except by the study of symptoms, we must also study the symptoms of health and disease. Now it is established in the sciences that no knowledge is acquired save through the study of its causes and beginnings, if it has had causes and beginnings; nor completed except by knowledge of its accidents and accompanying essentials. Of these causes there are four kinds: material, efficient, formal, and final.&quot;
 – Avicenna (c. 1020) &quot;On Medicine&quot;._
 
-![Angular Momentum](49229226446_Angular%20Momentum.jpg)
+![Angular Momentum](<49229226446_Angular Momentum.jpg>)
 
 ## Mesh Network
 _&quot;Aristotle taught that the brain exists merely to cool the blood and is not involved in the process of thinking. This is true only of certain persons.&quot;
@@ -10942,7 +10942,7 @@ Make for the future — certain is to be.&quot;
 &quot;The 19th of May, 1780, was a remarkable day. Candles were lighted in many houses; the birds were silent and disappeared, and the fowls retired to roost. The legislature of Connecticut was then in session at Hartford. A very general opinion prevailed, that the day of judgment was at hand. The house of Representatives, being unable to transact their business, adjourned. A proposal to adjourn the Council was under consideration. When the opinion of Colonel Davenport was asked, he answered, &quot;I am against an adjournment. The day of judgment is either approaching, or it is not. If it is not, there is no cause of an adjournment: if it is, I choose to be found doing my duty. I wish therefore that candles may be brought.&quot;&quot;
 – Timothy Dwight, in Connecticut Historical Collectons 2d ed (1836) compiled by John Warner Barber, p. 403._
 
-![Mesh Network](49229226996_Mesh%20Network.jpg)
+![Mesh Network](<49229226996_Mesh Network.jpg>)
 
 ## Symbol of Resistance
 _&quot;We may recognize the subject of management cybernetics — which is seen as a rich provider of models for doing Operations research.&quot;– Anthony Stafford Beer (1966)
@@ -10955,7 +10955,7 @@ Next to the merry month of May.&quot;
 &quot;The university, in a society ruled by public opinion, was to have been an island of intellectual freedom where all views were investigated without restriction. … But by consenting to play an active or “positive,” a participatory role in society, the university has become inundated and saturated with the backflow of society’s “problems.” Preoccupied with questions of Health, Sex, Race, War, academics make their reputations and their fortunes. … Any proposed reforms of liberal education which might bring the university into conflict with the whole of the U.S.A. are unthinkable. Increasingly, the people “inside” are identical in their appetites and motives with the people “outside” the university.&quot;
 – Saul Bellow, Introduction to &quot;The Closing of the American Mind&quot; (New York: 1988), p. 18._
 
-![Symbol of Resistance](49229228381_Symbol%20of%20Resistance.jpg)
+![Symbol of Resistance](<49229228381_Symbol of Resistance.jpg>)
 
 ## Spiraling
 _&quot;If we understand the mechanism and motives of the group mind, is it not possible to control and regiment the masses according to our will without their knowing about it? The recent practice of propaganda has proved that it is possible, at least up to a certain point and within certain limits.&quot;
@@ -10981,7 +10981,7 @@ _&quot;One of the heresiarchs of Uqbar had stated that mirrors and copulation ar
 &quot;I am, a spectator, so to speak of the molecular whirlwind which men call individual life; I am conscious of an incessant metamorphosis; an irresistible movement of existence, which is going on within me – and this phenomenology of myself serves as a window opened upon the mystery of the world.&quot;
 – Henri-Frédéric Amiel, in Daphne Simeon, Jeffrey Abugel, &quot;Feeling Unreal: Depersonalization Disorder and the Loss of the Self&quot;_
 
-![Mother Time](49229228946_Mother%20Time.jpg)
+![Mother Time](<49229228946_Mother Time.jpg>)
 
 ## Alchemy
 _&quot;The woodcutter is far better for skill than he is for brute strength.
@@ -11005,7 +11005,7 @@ _&quot;Confusing testosterone with strategy is a bad idea.&quot;
 &quot;Those who might dispute our right to employ the term SURREALISM in the very special sense that we understand it are being extremely dishonest, for there can be no doubt that this word had no currency before we came along. Therefore, I am defining it once and for all: SURREALISM, Psychic automatism in its pure state, by which one proposes to express — verbally, by means of the written word, or in any other manner — the actual functioning of thought. Dictated by the thought, in the absence of any control exercised by reason, exempt from any aesthetic or moral concern.&quot;
 – André Breton, 'First Surrealist Manifesto', Paris, 1924._
 
-![Willow the Wisp](49229443102_Willow%20the%20Wisp.jpg)
+![Willow the Wisp](<49229443102_Willow the Wisp.jpg>)
 
 ## In Bugs We Trust
 _&quot;Theatrical effectiveness, I believe, lies in it's rarity its uniqueness&quot;
@@ -11017,7 +11017,7 @@ _&quot;Theatrical effectiveness, I believe, lies in it's rarity its uniqueness&q
 &quot;General evolution theory, based on the integration of the relevant tenets of general system theory, cybernetics, information and communication theory, chaos theory, dynamical systems theory, and nonequilibrium thermodynamics, can convey a sound understanding of the laws and dynamics that govern the evolution of complex systems in the various realms of investigation.... The basic notions of this new discipline can be developed to give an adequate account of the dynamical evolution of human societies as well. Such an account could furnish the basis of a system of knowledge better able to orient human beings and societies in their rapidly changing milieu.&quot;
 – Ervin László et al. (1993)_
 
-![In Bugs We Trust](49229446482_In%20Bugs%20We%20Trust.jpg)
+![In Bugs We Trust](<49229446482_In Bugs We Trust.jpg>)
 
 ## Three by Three
 _&quot;Evolutionary game theory originated as an application of the mathematical theory of games to biological contexts, arising from the realization that frequency dependent fitness introduces a strategic aspect to evolution. Recently, however, evolutionary game theory has become of increased interest to economists, sociologists, and anthropologists--and social scientists in general--as well as philosophers.&quot;
@@ -11029,7 +11029,7 @@ _&quot;Evolutionary game theory originated as an application of the mathematical
 &quot;There are maybe two or three thousand people in the world as smart as us, little sister. Most of them are making a living somewhere. Teaching, the poor bastards, or doing research. Precious few of them are actually in positions of power.&quot;
 – Orson Scott Card, &quot;Ender's Game&quot; p. 128_
 
-![Three by Three](49229448827_Three%20by%20Three.jpg)
+![Three by Three](<49229448827_Three by Three.jpg>)
 
 ## Pyramid Scheme as a Neural Network
 _&quot;These machines have no common sense; they have not yet learned to &quot;think,&quot; and they do exactly as they are told, no more and no less. This fact is the hardest concept to grasp when one first tries to use a computer.&quot;
@@ -11038,7 +11038,7 @@ _&quot;These machines have no common sense; they have not yet learned to &quot;t
 &quot;Present-day computers are designed primarily to solve preformulated problems or to process data according to predetermined procedures. The course of the computation may be conditional upon results obtained during the computation, but all the alternatives must be foreseen in advance. … The requirement for preformulation or predetermination is sometimes no great disadvantage. It is often said that programming for a computing machine forces one to think clearly, that it disciplines the thought process. If the user can think his problem through in advance, symbiotic association with a computing machine is not necessary.&quot;
 – J. C. R. Licklider (1960) &quot;Man-Computer Symbiosis&quot; _
 
-![Pyramid Scheme as a Neural Network](49229449822_Pyramid%20Scheme%20as%20a%20Neural%20Network.jpg)
+![Pyramid Scheme as a Neural Network](<49229449822_Pyramid Scheme as a Neural Network.jpg>)
 
 ## Nelson Mandala
 _&quot;Anser, apie, vitellus, populus et regna gubernant.&quot;
@@ -11052,7 +11052,7 @@ _&quot;Anser, apie, vitellus, populus et regna gubernant.&quot;
 – Aeschines
 _
 
-![Nelson Mandala](49229450912_Nelson%20Mandala.jpg)
+![Nelson Mandala](<49229450912_Nelson Mandala.jpg>)
 
 ## Buckminister Fuller's Dymaxion World Map
 _&quot;Contingency Theory is not a theory at all, in the conventional sense of theory as a well-developed set of interrelated propositions. It is more an orienting strategy or metatheory, suggesting ways in which a phenomenon ought to be conceptualized or as approach to the phenomenon ought to be explained. Drawn primarily from large-scale empirical studies, contingency theory relies on a few assumptions that have been explicitly stated, and these guide contingency research.&quot;
@@ -11061,7 +11061,7 @@ _&quot;Contingency Theory is not a theory at all, in the conventional sense of t
 &quot;In mathematics there is a certain way of seeking the truth, a way which Plato is said first to have discovered and which was called &quot;analysis&quot; by Theon and was defined by him as &quot;taking the thing sought as granted and proceeding by means of what follows to a truth which is uncontested&quot;; so, on the other hand, &quot;synthesis&quot; is &quot;taking the thing that is granted and proceeding by means of what follows to the conclusion and comprehension of the thing sought.&quot; And although the ancients set forth a twofold analysis, the zetetic and the poristic, to which Theon's definition particularly refers, it is nevertheless fitting that there be established also a third kind, which may be called rhetic or exegetic, so that there is a zetetic art by which is found the equation or proportion between the magnitude that is being sought and those that are given, a poristic art by which from the equation or proportion the truth of the theorem set up is investigated, and an exegetic art by which from the equation set up or the proportion, there is produced the magnitude itself which is being sought. And thus, the whole threefold analytic art, claiming for itself this office, may be defined as the science of right finding in mathematics. ...the zetetic art does not employ its logic on numbers—which was the tediousness of the ancient analysts—but uses its logic through a logistic which in a new way has to do with species [of number]...&quot;
 – François Viète, &quot;In Artem Aanalyticem Isagoge&quot; (1591)_
 
-![Buckminister Fuller's Dymaxion World Map](49229453762_Buckminister%20Fuller_s%20Dymaxion%20World%20Map.jpg)
+![Buckminister Fuller's Dymaxion World Map](<49229453762_Buckminister Fuller_s Dymaxion World Map.jpg>)
 
 ## Iwo Jima
 _&quot;The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.&quot;
@@ -11070,7 +11070,7 @@ _&quot;The right of the people to be secure in their persons, houses, papers, an
 &quot;The 4th of July is the first great fact in your nation's history — the very ring-bolt in the chain of your yet undeveloped destiny. Pride and patriotism, not less than gratitude, prompt you to celebrate and to hold it in perpetual remembrance. I have said that the Declaration of Independence is the ring-bolt to the chain of your nation's destiny; so, indeed, I regard it. The principles contained in that instrument are saving principles. Stand by those principles, be true to them on all occasions, in all places, against all foes, and at whatever cost.&quot;
 – Frederick Douglass, What to the Slave is the Fourth of July? (1852)._
 
-![Iwo Jima](49229455002_Iwo%20Jima.jpg)
+![Iwo Jima](<49229455002_Iwo Jima.jpg>)
 
 ## Ribosome
 _&quot;I knew the ribosome was going to be the focus of Nobel prizes. It stands at the crossroads of biology, between the gene and what comes out of the gene. But I had convinced myself I was not going to be a winner.&quot;
@@ -11109,7 +11109,7 @@ Return and back into your Sun subside.&quot;
 &quot;This is what you shall do: Love the earth and sun and the animals, despise riches, give alms to every one that asks, stand up for the stupid and crazy, devote your income and labor to others, hate tyrants, argue not concerning God, have patience and indulgence toward the people, take off your hat to nothing known or unknown or to any man or number of men, go freely with powerful uneducated persons and with the young and with the mothers of families, read these leaves in the open air every season of every year of your life, re examine all you have been told at school or church or in any book, dismiss whatever insults your own soul, and your very flesh shall be a great poem and have the richest fluency not only in its words but in the silent lines of its lips and face and between the lashes of your eyes and in every motion and joint of your body.&quot;
 – Walt Whitman in Preface to &quot;Leaves of Grass&quot;_
 
-![Rebellion to Tyrants is Obedience to God](49464603368_Rebellion%20to%20Tyrants%20is%20Obedience%20to%20God.jpg)
+![Rebellion to Tyrants is Obedience to God](<49464603368_Rebellion to Tyrants is Obedience to God.jpg>)
 
 ## Screen
 _&quot;Understanding the total impact of the patriarchy on the female experience is endlessly elusive. ... It is a constant process, perpetually blurred by the ebb and flow of so many epiphanies clouded by self-doubt.&quot;
@@ -11171,7 +11171,7 @@ _&quot;I am the prince who decides the destiny of rolling rivers. I keep on the 
 &quot;These are not fables. You will touch with your hands, you will see with your own eyes, the Azoth, the Mercury of Philosophers, which alone will suffice to obtain for you our Stone. … Darkness will appear on the face of the Abyss; Night, Saturn and the Antimony of the Sages will appear; blackness, and the raven's head of the alchemists, and all the colors of the world, will appear at the hour of conjunction; the rainbow also, and the peacock's tail. Finally, after the matter has passed from ashen-colored to white and yellow, you will see the Philosopher's Stone, our King and Dominator Supreme, issue forth from his glassy sepulcher to mount his bed or his throne in his glorified body... diaphanous as crystal; compact and most weighty, as easily fusible by fire as resin, as flowing as wax and more so than quicksilver … the color of saffron when powdered, but red as rubies when in an integral mass...&quot;
 – Heinrich Khunrath, in &quot;Amphitheatrum&quot;_
 
-![Visita Interiora Terræ Rectificando Invenies Occultum Lapidem (VITRIOL)](49464606708_Visita%20Interiora%20Terræ%20Rectificando%20Invenies%20Occul.jpg)
+![Visita Interiora Terræ Rectificando Invenies Occultum Lapidem (VITRIOL)](<49464606708_Visita Interiora Terræ Rectificando Invenies Occul.jpg>)
 
 ## Just a Coincidence pt. II
 _&quot;The ink of political fiction is blood.&quot;
@@ -11183,7 +11183,7 @@ _&quot;The ink of political fiction is blood.&quot;
 &quot;He who asks fortune-tellers the future unwittingly forfeits an inner intimation of coming events that is a thousand times more exact than anything they may say. He is impelled by inertia, rather than curiosity, and nothing is more unlike the submissive apathy with which he hears his fate revealed than the alert dexterity with which the man of courage lays hands on the future.&quot;
 – Walter Benjamin_
 
-![Just a Coincidence pt. II](49464607498_Just%20a%20Coincidence%20pt_%20II.jpg)
+![Just a Coincidence pt. II](<49464607498_Just a Coincidence pt_ II.jpg>)
 
 ## Modern Epigenetics
 _&quot;It is an article of passionate faith among 'politically correct' biologists and anthropologists that brain size has no connection with intelligence; that intelligence has nothing to do with genes; and that genes are probably nasty fascist things anyway.&quot;
@@ -11196,7 +11196,7 @@ _&quot;It is an article of passionate faith among 'politically correct' biologis
 – Jim Morris, interview with &quot;Great Vegan Athletes&quot; (2014).
 _
 
-![Modern Epigenetics](49464608778_Modern%20Epigenetics.jpg)
+![Modern Epigenetics](<49464608778_Modern Epigenetics.jpg>)
 
 ## Hexapoda
 _&quot;No man is entitled to the blessings of freedom unless he be vigilant in its preservation.&quot;
@@ -11224,7 +11224,7 @@ _&quot;The Joker: Do you know how many times we've come close to world war three
 &quot;The capacity to resist coercion stems partly from the individual's identification with a group. The people who stood up best in the Nazi concentration camps were those who felt themselves members of a compact party (the Communists), of a church (priests and ministers), or of a close-knit national group. The individualists, whatever their nationality, caved in. The Western European Jew proved to be the most defenseless. Spurned by the Gentiles (even those within the concentration camps), and without vital ties with a Jewish community, he faced his tormentors alone—forsaken by the whole of humanity. One realizes now that the Ghetto of the Middle Ages was for the Jews more a fortress than a prison. Without the sense of utmost unity and distinctness which the ghetto imposed upon them, they could not have endured with unbroken spirit the violence and abuse of those dark centuries. When the Middle Ages returned for a brief decade in our day, they caught the Jew without his ancient defenses and crushed him.&quot;
 –  Eric Hoffer, &quot;The True Believer &quot;(1951) Ch.13 Factors Promoting Self-sacrifice._
 
-![Battle of Good and Evil (Christmas)](49465092626_Battle%20of%20Good%20and%20Evil%20_Christmas_.jpg)
+![Battle of Good and Evil (Christmas)](<49465092626_Battle of Good and Evil _Christmas_.jpg>)
 
 ## Ant Dancer
 _&quot;Watch your thoughts, for they become words.
@@ -11237,7 +11237,7 @@ Watch your character, for it becomes your destiny.&quot;
 &quot;Many of the core ideas of cybernetics have been assimilated by other disciplines, where they continue to influence scientific developments. Other important cybernetic principles seem to have been forgotten, though, only to be periodically rediscovered or reinvented in different domains. Some examples are the rebirth of neural networks, first invented by cyberneticists in the 1940's, in the late 1960's and again in the late 1980's; the rediscovery of the importance of autonomous interaction by robotics and AI in the 1990's; and the significance of positive feedback effects in complex systems, rediscovered by economists in the 1990's. Perhaps the most significant recent development is the growth of the complex adaptive systems movement, which, in the work of authors such as John Holland, Stuart Kauffman and Brian Arthur and the subfield of artificial life, has used the power of modern computers to simulate and thus experiment with and develop many of the ideas of cybernetics. It thus seems to have taken over the cybernetics banner in its mathematical modelling of complex systems across disciplinary boundaries, however, while largely ignoring the issues of goal-directedness and control.&quot;
 – Francis Heylighen &amp; Cliff Joslyn (2001). &quot;Cybernetics and Second-Order Cybernetics&quot;. Encyclopedia of Physical Science &amp; Technology._
 
-![Ant Dancer](49465093261_Ant%20Dancer.jpg)
+![Ant Dancer](<49465093261_Ant Dancer.jpg>)
 
 ## Dharma
 _&quot;It has been said that democracy is based on the rights of man; it has been replied that it should rather take its stand on the duties of man; but both rights and duties are European ideas. Dharma is the Indian conception in which rights and duties lose the artificial antagonism created by a view of the world which makes selfishness the root of action, and regain their deep and eternal unity. Dharma is the basis of democracy which Asia must recognise, for in this lies the distinction between the soul of Asia and the soul of Europe.&quot;
@@ -11258,7 +11258,7 @@ _&quot;The inevitableness, the idealism, and the blessing of war, as an indispen
 &quot;[Fascism is] a genuinely revolutionary, trans-class form of anti-liberal, and in the last analysis, anti conservative nationalism. As such it is an ideology deeply bound up with modernization and modernity, one which has assumed a considerable variety of external forms to adapt itself to the particular historical and national context in which it appears, and has drawn a wide range of cultural and intellectual currents, both left and right, anti-modern and pro-modern, to articulate itself as a body of ideas, slogans, and doctrine. In the inter-war period it manifested itself primarily in the form of an elite-led &quot;armed party&quot; which attempted, mostly unsuccessfully, to generate a populist mass movement through a liturgical style of politics and a programme of radical policies which promised to overcome a threat posed by international socialism, to end the degeneration affecting the nation under liberalism, and to bring about a radical renewal of its social, political and cultural life as part of what was widely imagined to be the new era being inaugurated in Western civilization. The core mobilizing myth of fascism which conditions its ideology, propaganda, style of politics and actions is the vision of the nation's imminent rebirth from decadence.&quot;
 – Roger Griffin, in &quot;The Palingenetic Core of Generic Fascist Ideology &quot;(2003)._
 
-![Steal Your Face](49465095876_Steal%20Your%20Face.jpg)
+![Steal Your Face](<49465095876_Steal Your Face.jpg>)
 
 ## Rabbit Illusion
 _&quot;If I were designing a phony religion, I'd surely include a version of this little gem -- but I'd have a hard time saying it with a straight face:
@@ -11272,7 +11272,7 @@ Did anyone invent this brilliant adaptation, or is it a wild meme that domestica
 Daniel Dennett ,&quot;Breaking the Spell&quot; (2006).
 _
 
-![Rabbit Illusion](49465098171_Rabbit%20Illusion.jpg)
+![Rabbit Illusion](<49465098171_Rabbit Illusion.jpg>)
 
 ## Moon Flag
 _&quot;If the truth exists, it is in books. Very obscure, hard-to-find and not unbiased books — often published by the John Birch Society.&quot;  
@@ -11285,7 +11285,7 @@ _&quot;If the truth exists, it is in books. Very obscure, hard-to-find and not u
 
  – Curtis Yarvin (Mencius Moldbug)_
 
-![Moon Flag](49465100441_Moon%20Flag.jpg)
+![Moon Flag](<49465100441_Moon Flag.jpg>)
 
 ## Lady Drama Liberty
 _&quot;You have set up in New York Harbor a monstrous idol which you call Liberty. The only thing that remains to complete that monument is to put on its pedestal the inscription written by Dante on the gate of hell: &quot;All hope abandon ye who enter here&quot;.&quot;
@@ -11300,7 +11300,7 @@ Thine eyes at last look far and clear, thou liftest high thy hand
 To spread the light of liberty world-wide for every land.&quot;
 – Henry van Dyke, &quot;Liberty Enlightening the World&quot; (1917)._
 
-![Lady Drama Liberty](49465318102_Lady%20Drama%20Liberty.jpg)
+![Lady Drama Liberty](<49465318102_Lady Drama Liberty.jpg>)
 
 ## Heart Chakras All The Way Down
 _&quot;I will give them an undivided heart and put a new spirit in them; I will remove from them their heart of stone and give them a heart of flesh.&quot;
@@ -11311,7 +11311,7 @@ Hunters for gold or pursuers of fame, they all had gone out on that stream, bear
 
 &quot;Whatever plans we may make, we shall find quite useless when the time for action comes. Revolutions are always full of surprises, and whoever thinks he can play chess with a revolution will soon find how terrible is the grasp of God and how insignificant the human reason before the whirlwind of His breath. That man only is likely to dominate the chances of a Revolution, who makes no plans but preserves his heart pure for the will of God to declare itself. The great rule of life is to have no schemes but one unalterable purpose. If the will is fixed on the purpose it sets itself to accomplish, then circumstances will suggest the right course; but the schemer finds himself always tripped up by the unexpected.&quot;– Sri Aurobindo,_
 
-![Heart Chakras All The Way Down](49465318752_Heart%20Chakras%20All%20The%20Way%20Down.jpg)
+![Heart Chakras All The Way Down](<49465318752_Heart Chakras All The Way Down.jpg>)
 
 ## Odin (Óðinn)
 _&quot;Wyrd is too vast and too complex, for us to comprehend, for we are ourselves, part of wyrd and cannot stand back to observe it as if it were a separate force. Just as fisherman cannot see the full extent of the seas, so even a sorcerer cannot view the totality of wyrd.&quot;
@@ -11323,7 +11323,7 @@ _&quot;Wyrd is too vast and too complex, for us to comprehend, for we are oursel
 &quot;The most fundamental concept in heathenry is wyrd. It is also one of the most difficult to explain and hence one of the most often misunderstood. … The Anglo-Saxon noun wyrd is derived from a verb, weorþan, &quot;to become&quot;, which, in turn, is derived from an IndoEuropean root *uert- meaning &quot;to turn&quot;. (If you noticed the redundant use of &quot;turn&quot; in the previous sentence, good. The use of the modern English phrase &quot;in turn&quot;, illustrates wyrd in action. Watch for it throughout this article.) Wyrd literally means &quot;that which has turned&quot; or &quot;that which has become.&quot; It carries the idea of &quot;turned into&quot; in both the sense of becoming something new and the sense of turning back to an original starting point. In metaphysical terms, wyrd embodies the concept that everything is turning into something else while both being drawn in toward and moving out from its own origins. Thus, we can think of wyrd as a process that continually works the patterns of the past into the patterns of the present.&quot;
 – Arlea Æðelwyrd Hunt-Anschütz, in &quot;What is Wyrd?&quot; in Cup of Wonder No. 5 (October 2001)_
 
-![Odin (Óðinn)](49465319797_Odin%20_Óðinn_.jpg)
+![Odin (Óðinn)](<49465319797_Odin _Óðinn_.jpg>)
 
 ## Alas! Poor Yorick, I knew him, Horatio
 _Hamlet: Lady, shall I lie in your lap?
@@ -11346,7 +11346,7 @@ Hamlet: The body is with the king, but the king is not with the body. The king i
 Guildenstern: A thing, my lord?
 Hamlet: Of nothing._
 
-![Alas! Poor Yorick, I knew him, Horatio](49465320592_Alas_%20Poor%20Yorick_%20I%20knew%20him_%20Horatio.jpg)
+![Alas! Poor Yorick, I knew him, Horatio](<49465320592_Alas_ Poor Yorick_ I knew him_ Horatio.jpg>)
 
 ## Eye In The Sky
 _&quot;If you comprehend, it is not God.&quot;
@@ -11358,7 +11358,7 @@ _&quot;If you comprehend, it is not God.&quot;
 &quot;O Plato! O Pythagoras! ages ago you heard these harmonies, surprised these moments of inward ecstasy, — knew these divine transports! If music thus carries us to heaven, it is because music is harmony, harmony is perfection, perfection is our dream, and our dream is heaven.&quot;
 – Henri-Frédéric Amiel, Journal entry for 17 March 1870._
 
-![Eye In The Sky](49465321327_Eye%20In%20The%20Sky.jpg)
+![Eye In The Sky](<49465321327_Eye In The Sky.jpg>)
 
 ## The Grand Illusion
 _&quot;Man has no individual I. But there are, instead, hundreds and thousands of separate small &quot;I&quot;s, very often entirely unknown to one another, never coming into contact, or, on the contrary, hostile to each other, mutually exclusive and incompatible. Each minute, each moment, man is saying or thinking, &quot;I&quot;. And each time his I is different. Just now it was a thought, now it is a desire, now a sensation, now another thought, and so on, endlessly. Man is a plurality. Man's name is legion.&quot;
@@ -11377,7 +11377,7 @@ Hope of body is disease.&quot;
 
 – George Ivanovich Gurdjieff (Георгий Иванович Гюрджиев)_
 
-![The Grand Illusion](49465323377_The%20Grand%20Illusion.jpg)
+![The Grand Illusion](<49465323377_The Grand Illusion.jpg>)
 
 ## One Dollar Bill
 _&quot;After the golden age of Latinity, we gradually slide into the silver, and at length precipitately descend into the iron.&quot;
@@ -11394,14 +11394,14 @@ And asks no omen but his country's cause.&quot;
 – Agni Yoga, &quot;Supermundane&quot;, (1938).
 _
 
-![One Dollar Bill](49465324127_One%20Dollar%20Bill.jpg)
+![One Dollar Bill](<49465324127_One Dollar Bill.jpg>)
 
 ## Four-Stage Idealism
 _&quot;I can never forget the first sensations I experienced when it dawned upon me that I had observed something possibly of incalculable consequences to mankind. I felt as though I were present at the birth of a new knowledge or the revelation of a great truth. Even now, at times, I can vividly recall the incident, and see my apparatus as though it were actually before me. My first observations positively terrified me, as there was present in them something mysterious, not to say supernatural, and I was alone in my laboratory at night; but at that time the idea of these disturbances being intelligently controlled signals did not yet present itself to me. The changes I noted were taking place periodically, and with such a clear suggestion of number and order that they were not traceable to any cause then known to me. I was familiar, of course, with such electrical disturbances as are produced by the sun, Aurora Borealis and earth currents, and I was as sure as I could be of any fact that these variations were due to none of these causes. The nature of my experiments precluded the possibility of the changes being produced by atmospheric disturbances, as has been rashly asserted by some. It was some time afterward when the thought flashed upon my mind that the disturbances I had observed might be due to an intelligent control. Although I could not decipher their meaning, it was impossible for me to think of them as having been entirely accidental. The feeling is constantly growing on me that I had been the first to hear the greeting of one planet to another. A purpose was behind these electrical signals; and it was with this conviction that I announced to the Red Cross Society, when it asked me to indicate one of the great possible achievements of the next hundred years, that it would probably be the confirmation and interpretation of this planetary challenge to us. Since my return to New York more urgent work has consumed all my attention; but I have never ceased to think of those experiences and of the observations made in Colorado. I am constantly endeavoring to improve and perfect my apparatus, and just as soon as practicable I shall again take up the thread of my investigations at the point where I have been forced to lay it down for a time.&quot;
 – Nikola Tesla
 _
 
-![Four-Stage Idealism](49649114898_Four-Stage%20Idealism.jpg)
+![Four-Stage Idealism](<49649114898_Four-Stage Idealism.jpg>)
 
 ## Creationism
 _&quot;To the art of mechanics is owing all sorts of instruments to work with, all engines of war, ships, bridges, mills, curious roofs and arches, stately theatres, columns, pendent galleries, and all other grand works in building. Also clocks, watches, jacks, chariots, carts and carriages, and even the wheel-barrow. Architecture, navigation, husbandry, and military affairs, owe their invention and use to this art.&quot;
@@ -11428,14 +11428,14 @@ Coupled together for the sake of strife.&quot;
 &quot;The will, as the thing-in-itself, constitutes the inner, true, and indestructible nature of man; yet in itself it is without consciousness. For consciousness is conditioned by the intellect, and the intellect is a mere accident of our being, for it is a function of the brain. The brain, together with the nerves and spinal cord attached to it, is a mere fruit, a product, in fact a parasite, of the rest of the organism, in so far as it is not directly geared to the organism's inner working, but serves the purpose of self-preservation by regulating its relations with the external world. On the other hand, the organism itself is the visibility, the objectivity, of the individual will, its image, as this image presents itself in that very brain (which in the first book we learned to recognize as the condition of the objective world in general).&quot;
 – Arthur Schopenhauer, &quot;The World as Will and Representation&quot; (1819; 1844; 1859), Ch. 19 : On the Primacy of the Will in Self-Consciousness._
 
-![The Guggenheim Museum](49649115883_The%20Guggenheim%20Museum.jpg)
+![The Guggenheim Museum](<49649115883_The Guggenheim Museum.jpg>)
 
 ## Plumb, Square, Level
 _&quot;Even socialists, Marxists, and revolutionaries seem to have lost their belief in the future; the old shibboleths come rolling off their lips, but it is as if they cannot keep the scales from dropping from their eyes.&quot;–  Joseph Epstein
 &quot;Let's go back to our point of departure: the contested issues of freedom and rights, hence sovereignty, insofar as it's to be valued. Do they inhere in persons of flesh and blood or … in abstract constructions like corporations, or capital, or states? In the past century the idea that such entities have special rights, over and above persons, has been strongly advocated. The most prominent examples are Bolshevism, fascism, and private corporatism… Two of these systems have collapsed. The third is alive and flourishing under the banner TINA—There Is No Alternative to the emerging system of state corporate mercantilism disguised with various mantras like globalization and free trade.&quot;
 – Noam Chomsky, &quot;Rogue States&quot; (2000)_
 
-![Plumb, Square, Level](49649115973_Plumb_%20Square_%20Level.jpg)
+![Plumb, Square, Level](<49649115973_Plumb_ Square_ Level.jpg>)
 
 ## Veda
 _&quot;About many things in Hinduism I had been once inclined to believe that it was all imagination that there was much of dream in it, much that was delusion and maya. But now day after day I realised in the mind, I realized in the heart, I realised in the body the truths of the Hindu religion.&quot;
@@ -11464,7 +11464,7 @@ it tells too much&quot;
 – Mahatma Gandhi
 _
 
-![Vedic Pyramid](49649117803_Vedic%20Pyramid.jpg)
+![Vedic Pyramid](<49649117803_Vedic Pyramid.jpg>)
 
 ## America: A Prophecy
 _&quot;To make America the greatest is my goal,
@@ -11481,7 +11481,7 @@ But the USA is my country still,
 &quot;It is the sun-fluids or emanations that impart all motion, and awaken all into life, in the Solar System. It is attraction and repulsion, but not as understood by modern Physics or according to the law of gravity, but in harmony with the laws of manvantaric motion designed from the early Sandhyâ, the Dawn of the rebuilding and higher reformation of the System. These laws are immutable; but the motion of all the bodies—which motion is diverse and alters with every minor Kalpa—is regulated by the Movers, the Intelligences within the Cosmic Soul.&quot;
 – H.P. Blavatsky, &quot;The Secret Doctrine&quot;, Vol. 1, p. 578 (1888)_
 
-![America: A Prophecy](49649118738_America_%20A%20Prophecy.jpg)
+![America: A Prophecy](<49649118738_America_ A Prophecy.jpg>)
 
 ## Europe: A Prophecy
 _&quot;Ambition and intrigue abuse the credulity and experience of men lacking all political, economic, and civic knowledge; they adopt pure illusion as reality; they take license for liberty, treachery for patriotism, and vengeance for justice.&quot;
@@ -11491,7 +11491,7 @@ _&quot;Ambition and intrigue abuse the credulity and experience of men lacking a
 – Edward Abbey, as quoted in &quot;Abbey's Road&quot; (1979)
 _
 
-![Europe: A Prophecy](49649652766_Europe_%20A%20Prophecy.jpg)
+![Europe: A Prophecy](<49649652766_Europe_ A Prophecy.jpg>)
 
 ## Lux In Profundis
 _&quot;An English sentence like 'every whale is a mammal' transcribes directly into algebraic notation as '-W+M'. Similarly, its equivalent, 'no non-mammals are whales', transcribes directly as '-(+(-M)+W)'. Sentences that come ready made for direct transcription are called “Canonical”.&quot;
@@ -11500,7 +11500,7 @@ _&quot;An English sentence like 'every whale is a mammal' transcribes directly i
 &quot;Part of the charm of synthetic organic chemistry derives from the vastness of the intellectual landscape along several dimensions. First, there is the almost infinite variety and number of possible target structures that lurk in the darkness waiting to be made. Then, there is the vast body of organic reactions that serve to transform one substance into another, now so large in number as to be beyond credibility to a non-chemist. There is the staggering range of reagents, reaction conditions, catalysts, elements, and techniques that must be mobilized in order to tame these reactions for synthetic purposes. Finally, it seems that new information is being added to that landscape at a rate that exceeds the ability of a normal person to keep up with it. In such a troubled setting any author, or group of authors, must be regarded as heroic if through their efforts, the task of the synthetic chemist is eased.&quot;– E. J. Corey, Foreword of &quot;Name Reactions in Heterocyclic Chemistry&quot; (2004) by Jie Jack Li.
 _
 
-![Lux In Profundis](49649654376_Lux%20In%20Profundis.jpg)
+![Lux In Profundis](<49649654376_Lux In Profundis.jpg>)
 
 ## Cell Cycle
 _&quot;If a man bring to London an ounce of Silver out of the Earth in Peru in the same time that he can produce a bushel of Corn, then one is the natural price of the other.&quot;
@@ -11510,7 +11510,7 @@ _&quot;If a man bring to London an ounce of Silver out of the Earth in Peru in t
 – D'Arcy Wentworth Thompson, &quot;On Growth and Form&quot; (1917)
 _
 
-![Cell Cycle](49649654481_Cell%20Cycle.jpg)
+![Cell Cycle](<49649654481_Cell Cycle.jpg>)
 
 ## William Blake (Уильям Блейк)
 _&quot;Be strong in the Lord, and in the power of his might. Put on the whole armour of God, that ye may be able to stand against the wiles of the devil. For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places. Wherefore take unto you the whole armour of God, that ye may be able to withstand in the evil day, and having done all, to stand.&quot;– Ephesians 6:10-20 (KJV)
@@ -11519,7 +11519,7 @@ _&quot;Be strong in the Lord, and in the power of his might. Put on the whole ar
 – Mao Zedong, as quoted in &quot;Mao's Road to Power: Revolutionary Writings, 1912-49: v. 5: Toward the Second United Front, January 1935-July 1937: Revolutionary Writings, 1912-49&quot; (2017), p. 861, Routledge.
 _
 
-![William Blake (Уильям Блейк)](49649654841_William%20Blake%20_Уильям%20Блейк_.jpg)
+![William Blake (Уильям Блейк)](<49649654841_William Blake _Уильям Блейк_.jpg>)
 
 ## State of Arkansas
 _&quot;You can tell your mom I moved to Arkansas; you can tell your dog to bite my leg. Or tell your brother Cliff, whose fist can tell my lip. He never really liked me anyway.&quot; 
@@ -11529,7 +11529,7 @@ _&quot;You can tell your mom I moved to Arkansas; you can tell your dog to bite 
 – Ward Churchill, in Z Magazine, vol. 8, p. 32.
 _
 
-![State of Arkansas](49649655611_State%20of%20Arkansas.jpg)
+![State of Arkansas](<49649655611_State of Arkansas.jpg>)
 
 ## The Genesis Block
 _&quot;O, that her hand,
@@ -11543,7 +11543,7 @@ Hard as the palm of ploughman.&quot;
 – Sandra Gorgievski
 _
 
-![The Genesis Block](49649657066_The%20Genesis%20Block.jpg)
+![The Genesis Block](<49649657066_The Genesis Block.jpg>)
 
 ## University of California
 _&quot;You can think of the curriculum as the shadows cast on a wall by the light of education itself as it shines over, under, around, and through the myriad phases of our experience. It is a mistake to be sure to take these shadows for the reality, but they are something that helps us find or grasp or intuit that reality. The false notions that there is a fixed curriculum, that there is a list of things that an educated person ought to know, and that the shadow-exercises on the wall themselves are the content of education—these false notions all come from taking too seriously what was originally a wise recognition—the recognition that the shadows do in fact provide a starting point in our attempt to fully envision reality.&quot;
@@ -11552,7 +11552,7 @@ _&quot;You can think of the curriculum as the shadows cast on a wall by the ligh
 &quot;The world itself is a great fusing pot, out of which the One Humanity is emerging. This necessitates a drastic change in our methods of presenting history and geography. Science has always been universal. Great art and literature have always belonged to the world. It is upon these facts that the education to be given to the children of the world must be built - upon our similarities, our creative achievements, our spiritual idealisms, and our points of contact. Unless this is done, the wounds of the nations will never be healed, and the barriers which have existed for centuries will never be removed... Two major ideas should be taught to the children of every country. They are: the value of the individual and the fact of the one humanity.&quot;
 – Alice Bailey &quot;Education in the New Age&quot;, Lucis Trust Publishing (1954)_
 
-![University of California](49649657476_University%20of%20California.jpg)
+![University of California](<49649657476_University of California.jpg>)
 
 ## E Pluribus Unum
 _&quot;My body is a cage that keeps me
@@ -11571,7 +11571,7 @@ But my mind holds the key.&quot;
 (h) In automatic fire, the accuracy of the AR-15 is considered comparable to the Browning Automatic Rifle and superior to the Sub-Machine Gun.&quot;
 – Advanced Research Projects Agency (August 20, 1962). Report of Task 13A: Test of ArmaLite Rifle AR-15_
 
-![E Pluribus Unum](49649658201_E%20Pluribus%20Unum.jpg)
+![E Pluribus Unum](<49649658201_E Pluribus Unum.jpg>)
 
 ## I Want You For USA
 _&quot;Deliberation seems to be elitist, more appropriate to university seminars and scientific communities than to the general public. Even if everyone could participate in deliberation, would not the more competent and better situated citizens tend to carry the day.&quot;
@@ -11584,12 +11584,12 @@ and the dew that drops from thence
 Hath infected some chairs and stools of authority.&quot;
 – John Fletcher, &quot;The Honest Man's Fortune&quot; (1613)_
 
-![I Want You For USA](49649928952_I%20Want%20You%20For%20USA.jpg)
+![I Want You For USA](<49649928952_I Want You For USA.jpg>)
 
 ## American Government
 _&quot;An artist using statistics as a brush could paint two very different pictures of our country. One would have warning signs: increasing layoffs, rising energy prices, too many failing schools, persistent poverty, the stubborn vestiges of racism. Another picture would be full of blessings: a balanced budget, big surpluses, a military that is second to none, a country at peace with its neighbors, technology that is revolutionizing the world, and our greatest strength, concerned citizens who care for our country and care for each other... Too many of our citizens have cause to doubt our nation’s justice when the law points a finger of suspicion at groups, instead of individuals. All our citizens are created equal and must be treated equally... A strong America is the world's best hope for peace and freedom. Yet the cause of freedom rests on more than our ability to defend ourselves and our allies. Freedom is exported every day, as we ship goods and products that improve the lives of millions of people. Free trade brings greater political and personal freedom.&quot;– George W. Bush, State of the Union (February 27, 2001)_
 
-![American Government](49649929152_American%20Government.jpg)
+![American Government](<49649929152_American Government.jpg>)
 
 ## Elegance
 _&quot;The [Italian Fascist] regime had created an imaginary Spartan country, in which all men had to make believe they were heroic soldiers, all women Roman matrons, all children Balilla (the Genoa street urchin who started a revolt against the Austrian garrison in 1746 by throwing one stone). This was done by means of slogans, flags, stirring speeches from balconies, military music, mass meetings, parades, dashing uniforms, medals, hoaxes, and constant distortions of reality. The Italians woke up too late from their artificial dream, those still alive, that is, hungry, desperate, discredited, the object of derision, cornuti e mazziati, or &quot;cuckolded and beaten up,&quot; governed as in the past by contemptuous foreigners in a country of smoking ruins and decaying corpses, in which most things detachable had been stolen and women raped.&quot;
@@ -11613,7 +11613,7 @@ A virgin phoenix from her ashes risen.&quot;
 
 _
 
-![Phoenix Rising](49649930407_Phoenix%20Rising.jpg)
+![Phoenix Rising](<49649930407_Phoenix Rising.jpg>)
 
 ## Off the Fringe
 _&quot;For many parts of Nature can neither be invented with sufficient subtlety, nor demonstrated with sufficient perspicuity, nor accommodated unto use with sufficient dexterity, without the aid and intervening of the mathematics, of which sort are perspective, music, astronomy, cosmography, architecture, engineery, and divers others.&quot;
@@ -11622,7 +11622,7 @@ _&quot;For many parts of Nature can neither be invented with sufficient subtlety
 &quot;The true Vedantic spirit does not start out with a system of preconceived ideas. It possesses absolute liberty and unrivalled courage among religions with regard to the facts to be observed and the diverse hypotheses it has laid down for their coordination. Never having been hampered by a priestly order, each man has been entirely free to search wherever he pleased for the spiritual explanation of the spectacle of the universe.&quot;
 – Romain Rolland, in &quot;Life of Vivekananda&quot; (1944)_
 
-![Off the Fringe](49649930952_Off%20the%20Fringe.jpg)
+![Off the Fringe](<49649930952_Off the Fringe.jpg>)
 
 ## Inside Out
 _&quot;BIRTH, n. The first and direst of all disasters. As to the nature of it there appears to be no uniformity. Castor and Pollux were born from the egg. Pallas came out of a skull. Galatea was once a block of stone. Peresilis, who wrote in the tenth century, avers that he grew up out of the ground where a priest had spilled holy water. It is known that Arimaxus was derived from a hole in the earth, made by a stroke of lightning. Leucomedon was the son of a cavern in Mount Aetna, and I have myself seen a man come out of a wine cellar.&quot;– Ambrose Bierce, The Cynic's Dictionary (1906); republished as The Devil's Dictionary (1911).
@@ -11630,13 +11630,13 @@ _&quot;BIRTH, n. The first and direst of all disasters. As to the nature of it t
 &quot;The immense majority of individuals, not only among the ignorant masses but also among the civilized and privileged classes, think and want only what everybody else around them thinks and wants. They doubtlessly believe that they think for themselves, but they are only slavishly repeating by rote, with slight modifications, the thoughts and aims of the other conformists which they imperceptibly absorb. This servility, this routine, this perennial absence of the will to revolt and this lack of initiative and independence of thought are the principle causes for the slow, desolate historical development of humanity.&quot;
 – Mikhail Bakunin, &quot;Man, Society, and Freedom&quot; (1871)_
 
-![Inside Out](49649931407_Inside%20Out.jpg)
+![Inside Out](<49649931407_Inside Out.jpg>)
 
 ## Starry Plough
 _&quot;For the [Kogi and Ika] Indians of the Sierra, everything begins and ends with the loom, and the metaphor of thread in the cosmic cloth. Constantly on the move as they gather food and various resources, the Indians refer to their wanderings as &quot;weavings&quot;, each journey a thread woven into a sacred cloak over the Great Mother, each seasonal movement a prayer for the well-being of the people and the entire Earth. When the people of the Sierra plant a field, the women sow lines of crops parallel to the sides of the plot. The men work their way across the field in a horizontal direction. The result, should the domains of man and woman be superimposed one upon the other, is a fabric. The garden is a piece of cloth.&quot;
 – Wade Davis, &quot;Light at the Edge of the World&quot; (2007)_
 
-![Starry Plough](49649932257_Starry%20Plough.jpg)
+![Starry Plough](<49649932257_Starry Plough.jpg>)
 
 ## Yogic Geometry
 _&quot;This I know - if all men should take their troubles to the market to barter with their neighbors, not one, when he had seen the troubles of other men, but would be glad to carry his own home again.&quot;
@@ -11646,7 +11646,7 @@ _&quot;This I know - if all men should take their troubles to the market to bart
 – Adlai Stevenson (1959)
 _
 
-![Yogic Geometry](49649933292_Yogic%20Geometry.jpg)
+![Yogic Geometry](<49649933292_Yogic Geometry.jpg>)
 
 ## Fiat Lux
 _&quot;...the evil of it is, that it is a world wrapped up in too much jeweller's cotton and fine wool, and cannot hear the rushing of the larger worlds, and cannot see them as they circle round the sun. It is a deadened world, and its growth is sometimes unhealthy for want of air.&quot;
@@ -11659,7 +11659,7 @@ _&quot;...the evil of it is, that it is a world wrapped up in too much jeweller'
 – James Brown III; &quot;The Amateur String Quartet&quot;
 _
 
-![Fiat Lux](49649934492_Fiat%20Lux.jpg)
+![Fiat Lux](<49649934492_Fiat Lux.jpg>)
 
 ## 1933 Double Eagle
 _&quot;And by the way, the virus. They're working hard. Looks like by April, you know, in theory, when it gets a little warmer, it miraculously goes away. I hope that's true.&quot;
@@ -11668,7 +11668,7 @@ _&quot;And by the way, the virus. They're working hard. Looks like by April, you
 &quot;In vain do they think themselves innocent who appropriate to their own use alone those goods which God gave in common; by not giving to others that which they themselves receive, they become homicides and murderers, inasmuch as in keeping for themselves those things which would alleviate the sufferings of the poor, we may say that every day they cause the death of as many persons as they might have fed and did not. When, therefore, we offer the means of living to the indigent, we do not give them anything of ours, but that which of right belongs to them. It is less a work of mercy which we perform than the payment of a debt.&quot;
 – Gregory the Great,_
 
-![1933 Double Eagle](49649935317_1933%20Double%20Eagle.jpg)
+![1933 Double Eagle](<49649935317_1933 Double Eagle.jpg>)
 
 ## Aetna Dynamite
 _&quot;When the master-builder has taken up the work concerned, he is to re-establish securely any place where the fortification has fallen into ruins. Let him reinforce and also rebuild it.&quot;
@@ -11681,7 +11681,7 @@ _&quot;When the master-builder has taken up the work concerned, he is to re-esta
 – David B. Guralnik, in &quot;Superstar, Supermom, Super Glue, Superdooper, Superman&quot; in Superman at Fifty: The Persistence of a Legend (1987)
 _
 
-![Aetna Dynamite](49830465578_Aetna%20Dynamite.jpg)
+![Aetna Dynamite](<49830465578_Aetna Dynamite.jpg>)
 
 ## Aquamarine
 _&quot;The secret of the demagogue is to appear as dumb as his audience so that these people can believe themselves as smart as he.&quot;
@@ -11700,7 +11700,7 @@ _&quot;To be able to fall down in such a way that in the same second it looks as
 &quot;Scientists who believe they have adopted the Aristotelian method only because they creep when they do not run from demonstrated particulars to universals, glorify this method of inductive philosophy, and reject that of Plato, which they treat as unsubstantial. Professor Draper laments that such speculative mystics as Ammonius Saccas and Plotinus should have taken the place &quot;of the severe geometers of the old museum.&quot; He forgets that geometry, of all sciences the only one which proceeds from universals to particulars, was precisely the method employed by Plato in his philosophy. As long as exact science confines its observations to physical conditions and proceeds Aristotle-like, it certainly cannot fail. But notwithstanding that the world of matter is boundless for us, it still is finite; and thus materialism will turn forever in this vitiated circle, unable to soar higher than the circumference will permit. The cosmological theory of numerals which Pythagoras learned from the Egyptian hierophants, is alone able to reconcile the two units, matter and spirit, and cause each to demonstrate the other mathematically.  If the Pythagorean metempsychosis should be thoroughly explained and compared with the modern theory of evolution, it would be found to supply every &quot;missing link&quot; in the chain of the latter. But who of our scientists would consent to lose his precious time over the vagaries of the ancients. The ancients knew more concerning certain sciences than our modern savants have yet discovered. Reluctant as many are to confess as much, it has been acknowledged by more than one scientist.&quot;
 – H.P. Blavatsky, &quot;Isis Unveiled&quot;, Part One, Science, Ch. 1 (1877)_
 
-![Crown Thy Good](49830486693_Crown%20Thy%20Good.jpg)
+![Crown Thy Good](<49830486693_Crown Thy Good.jpg>)
 
 ## Pen is Mightier than the Sword
 _&quot;What is comes down to is this: the grocer, the butcher, the baker, the merchant, the landlord, the druggist, the liquor dealer, the policeman, the doctor, the city father and the politician – these are the people who make money out of prostitution, these are the real reapers of the wages of sin.&quot;
@@ -11712,7 +11712,7 @@ _&quot;What is comes down to is this: the grocer, the butcher, the baker, the me
 &quot;The ship wherein Theseus and the youth of Athens returned from Crete had thirty oars, and was preserved by the Athenians down even to the time of Demetrius Phalereus, for they took away the old planks as they decayed, putting in new and stronger timber in their places, in so much that this ship became a standing example among the philosophers, for the logical question of things that grow; one side holding that the ship remained the same, and the other contending that it was not the same.&quot;
 – Plutarch, in Theseus_
 
-![Pen is Mightier than the Sword](49831003006_Pen%20is%20Mightier%20than%20the%20Sword.jpg)
+![Pen is Mightier than the Sword](<49831003006_Pen is Mightier than the Sword.jpg>)
 
 ## Slap to Authority
 _&quot;So many people today — and even professional scientists — seem to me like someone who has seen thousands of trees but has never seen a forest.&quot;
@@ -11724,7 +11724,7 @@ _&quot;So many people today — and even professional scientists — seem to me 
 &quot;I dwell on this prospect with every satisfaction which an ardent love for my Country can inspire: since there is no truth more thoroughly established, than that there exists in the oeconomy and course of nature, an indissoluble union between virtue and happiness, between duty and advantage, between the genuine maxims of an honest and magnanimous policy, and the solid rewards of public prosperity and felicity: Since we ought to be no less persuaded that the propitious smiles of Heaven, can never be expected on a nation that disregards the eternal rules of order and right, which Heaven itself has ordained: And since the preservation of the sacred fire of liberty, and the destiny of the Republican model of Government, are justly considered as deeply, perhaps as finally staked, on the experiment entrusted to the hands of the American people.&quot;
 –  First Inaugural Address (April 30, 1789), published in The Writings of George Washington_
 
-![Slap to Authority](49831027066_Slap%20to%20Authority.jpg)
+![Slap to Authority](<49831027066_Slap to Authority.jpg>)
 
 ## Patriotism: To Have and to Hold!
 _&quot;The Union, next to our liberty, most dear. May we all remember that it can only be preserved by respecting the rights of the States and by distributing equally the benefits and burdens of the Union&quot;
@@ -11738,7 +11738,7 @@ _&quot;The Union, next to our liberty, most dear. May we all remember that it ca
 &quot;Suppose a nation in some distant region should take the Bible for their only law book and every member should regulate his conduct by the precepts there exhibited. . . .What a Eutopia - What a Paradise would this region be!&quot;
 – John Adams, Diaries (22 February 1756)_
 
-![Patriotism: To Have and to Hold!](49831035391_Patriotism_%20To%20Have%20and%20to%20Hold_.jpg)
+![Patriotism: To Have and to Hold!](<49831035391_Patriotism_ To Have and to Hold_.jpg>)
 
 ## Community in the Time of Coronavirus
 _&quot;Outbreaks of new viruses, such as the Wuhan Coronavirus, are a constant reminder of the need to invest in research in emerging virus biology and evolution, how they infect and interact with human cells, and ultimately, to identify safe and effective drugs to treat – or vaccines to prevent – serious disease.&quot;
@@ -11751,7 +11751,7 @@ _&quot;Outbreaks of new viruses, such as the Wuhan Coronavirus, are a constant r
 &quot;When he meets a simple geometrical construction, for instance in the honeycomb, he would fain refer it to physical instinct, or to skill and ingenuity, rather than to the operation of physical forces or mathematical laws; when he sees in a snail, or nautilus, or tiny foraminiferal or radiolarian shell a close approach to sphere or spiral, he is prone of old habit to believe that after all it is something more than a spiral or a sphere, and that in this &quot;something more&quot; there lies what neither mathematics nor physics can explain. In short, he is deeply reluctant to compare the living with the dead, or to explain by geometry or by mechanics the things which have their part in the mystery of life.&quot;
 - D'Arcy Wentworth Thompson, &quot;On Growth and Form &quot;(1917)_
 
-![Community in the Time of Coronavirus](49831296552_Community%20in%20the%20Time%20of%20Coronavirus.jpg)
+![Community in the Time of Coronavirus](<49831296552_Community in the Time of Coronavirus.jpg>)
 
 ## Three-fold Vision
 _&quot;Patriotism is an ephemeral motive that scarcely ever outlasts the particular threat to society that aroused it.&quot;
@@ -11762,7 +11762,7 @@ _&quot;Patriotism is an ephemeral motive that scarcely ever outlasts the particu
 &quot;Prostitution does injury to the dignity of the person who engages in it, reducing the person to an instrument of sexual pleasure. The one who pays sins gravely against himself: he violates the chastity to which his Baptism pledged him and defiles his body, the temple of the Holy Spirit. Prostitution is a social scourge. It usually involves women, but also men, children, and adolescents (The latter two cases involve the added sin of scandal.). While it is always gravely sinful to engage in prostitution, the imputability of the offense can be attenuated by destitution, blackmail, or social pressure.&quot;
 – Catechism of the Catholic Church 2355 by Pope John Paul II (1992)_
 
-![Three-fold Vision](49831310437_Three-fold%20Vision.jpg)
+![Three-fold Vision](<49831310437_Three-fold Vision.jpg>)
 
 ## Proelio Procusi
 _&quot;At the still point of the turning world. Neither flesh nor fleshless;
@@ -11779,7 +11779,7 @@ There would be no dance, and there is only the dance.&quot;
 &quot;If everything must have a cause, then God must have a cause. If there can be anything without a cause, it may just as well be the world as God, so that there cannot be any validity in that argument. It is exactly of the same nature as the Hindu's view, that the world rested upon an elephant and the elephant rested upon a tortoise; and when they said, 'How about the tortoise?' the Indian said, &quot;Suppose we change the subject.&quot;&quot;
 – Bertrand Russell, Why I Am Not A Christian (1927)._
 
-![Proelio Procusi](49831315757_Proelio%20Procusi.jpg)
+![Proelio Procusi](<49831315757_Proelio Procusi.jpg>)
 
 ## LIBERTAS ET PATRIA
 _&quot;We are testing popular government's capacity for self-defense. We are resolved to liberate the soul of American life and prove ourselves an American people in fact, spirit, and purpose, and consecrate ourselves anew and everlastingly to human freedom and humanity's justice. Realizing our new relationship with the world, we want to make it fit to live in, and with might and fright and wrathfulness and barbarity crushed by the conscience of a real civilization. Ours is a small concern about the kind of government any people may choose, but we do mean to outlaw the nation which violates the sacred compacts of international relationships. The decision is to be final... A republic worth living in is worth fighting for, and sacrificing for, and dying for. In the fires of this conflict we shall wipe out the disloyalty of those who wear American garb without the faith, and establish a new concord of citizenship and a new devotion, so that we should have made a safe America the home and hope of a people who are truly American in heart and soul.&quot;–  Warren G. Harding, The Republic Must Awaken (1917).
@@ -11792,7 +11792,7 @@ _&quot;We are testing popular government's capacity for self-defense. We are res
 –   Benjamin Franklin, &quot;Petition from the Pennsylvania Society for the Abolition of Slavery&quot; (3 February 1790)
 _
 
-![LIBERTAS ET PATRIA](49831318917_LIBERTAS%20ET%20PATRIA.jpg)
+![LIBERTAS ET PATRIA](<49831318917_LIBERTAS ET PATRIA.jpg>)
 
 ## DON'T COUGH ON ME
 _The snake represents the mortal coil of each patriot. The &quot;I&quot; of the snake is actually a &quot;we&quot;, as in &quot;we the people&quot;. 
@@ -11811,7 +11811,7 @@ Also, unlike most snakes which threaten with the tail and bite with the mouth, t
 
 Don't cough on me or my rights, this snake stings and this snake bites!_
 
-![DON'T COUGH ON ME](49869825943_DON_T%20COUGH%20ON%20ME.jpg)
+![DON'T COUGH ON ME](<49869825943_DON_T COUGH ON ME.jpg>)
 
 ## Evolution of Freedom
 _&quot;Americans never quit.&quot;
@@ -11832,7 +11832,7 @@ _&quot;Americans never quit.&quot;
 &quot;We make no hypocritical pretense of being interested in the Philippines solely on account of others. While we regard the welfare of those people as a sacred trust, we regard the welfare of the American people first. We see our duty to ourselves as well as to others. We believe in trade expansion. By every legitimate means within the province of government and constitution we mean to stimulate the expansion of our trade and open new markets.&quot;
 – Henry Cabot Lodge, September 21, 1900_
 
-![Evolution of Freedom](49882360348_Evolution%20of%20Freedom.jpg)
+![Evolution of Freedom](<49882360348_Evolution of Freedom.jpg>)
 
 ## I Want To Love It More
 _No one said America was easy to love. Perhaps it would be easier to love if it were more peaceful and more fractal-like (as the drawing suggests). However we were not given this choice of America vs. Utopia (&quot;no-place&quot;). We were blessed with this complex world as it is, America and all.
@@ -11843,7 +11843,7 @@ I venture that all those interested in a participatory and decentralized patriot
 
 We will expect America to behave according to the highest possible standard (American expectationalism), and never allow any exceptions to this rule (American anti-exceptionalism). Ad victoriam!_
 
-![I Want To Love It More](49882914961_I%20Want%20To%20Love%20It%20More.jpg)
+![I Want To Love It More](<49882914961_I Want To Love It More.jpg>)
 
 ## United States Cyber Command
 _&quot;Despite some of the nonsense that has been said about me by those who should know better, and so much nonsense, or some of which subtracts from the sum total of human knowledge, despite this all, I am a man, a black man, an American. And my history is not unlike that of many blacks from the deep South. And in many ways it is not that much different from that of many other Americans.&quot;
@@ -11855,7 +11855,7 @@ _&quot;Despite some of the nonsense that has been said about me by those who sho
 &quot;The puritanic potentialities of science have never been forecast. If it evolves a body of organized rites, and is established as a religion, hierarchically organized, things more than anything else will be done in the name of &quot;decency&quot;. The coarse fumes of tobacco and liquors, the consequent tainting of the breath and staining of white fingers and teeth, which is so offensive to many women, will be the first things attended to.&quot;
 – Wyndham Lewis, &quot;The Family and Feminism&quot;._
 
-![United States Cyber Command](49937682848_United%20States%20Cyber%20Command.jpg)
+![United States Cyber Command](<49937682848_United States Cyber Command.jpg>)
 
 ## The Hoover Institution
 _&quot;Ideas, as the raw material from which knowledge is produced, exist in superabundance, but that makes the production of knowledge more difficult rather than easier.....Knowledge may be enjoyed as a speculative diversion, but it is needed for decision making.&quot;
@@ -11866,7 +11866,7 @@ _&quot;Ideas, as the raw material from which knowledge is produced, exist in sup
 
 - Thomas Sowell_
 
-![The Hoover Institution](49952816572_The%20Hoover%20Institution.jpg)
+![The Hoover Institution](<49952816572_The Hoover Institution.jpg>)
 
 ## Stars and Stripes Forever
 _&quot;FLAG, n. A colored rag borne above troops and hoisted on forts and ships. It appears to serve the same purpose as certain signs that one sees and vacant lots in London -- &quot;Rubbish may be shot here.&quot;&quot;
@@ -11878,7 +11878,7 @@ _&quot;FLAG, n. A colored rag borne above troops and hoisted on forts and ships.
 &quot;The optimist proclaims that we live in the best of all possible worlds; and the pessimist fears this is true. So I elect for neither label.&quot; 
 – James Branch Cabell, The Silver Stallion : A Comedy of Redemption (1926)_
 
-![Stars and Stripes Forever](49966432108_Stars%20and%20Stripes%20Forever.jpg)
+![Stars and Stripes Forever](<49966432108_Stars and Stripes Forever.jpg>)
 
 ## Frog, Snake, Eagle, Phoenix
 _&quot;It is better to be poor and walk in integrity than to be stupid and speak lies.&quot;
@@ -11891,7 +11891,7 @@ _&quot;It is better to be poor and walk in integrity than to be stupid and speak
 – Albert Einstein (1931) &quot;Mein Weltbild&quot; (My World-view).
 _
 
-![Frog, Snake, Eagle, Phoenix](49967216337_Frog_%20Snake_%20Eagle_%20Phoenix.jpg)
+![Frog, Snake, Eagle, Phoenix](<49967216337_Frog_ Snake_ Eagle_ Phoenix.jpg>)
 
 ## Federal Communications Commission (FCC)
 _&quot;When strength is yoked with justice, where is a mightier pair than they?&quot;
@@ -11906,7 +11906,7 @@ Which is more sober far than all sobriety.&quot;
 &quot;A young boy called up and asked me if I preferred grass or astroturf … And I told him that I had never smoked astroturf. I guess that I shouldn’t have said that.&quot;
 – Tug McGraw, when asked if he preferred grass or artificial turf, (1974), as quoted in The Times of San Mateo, California (30 April 1974)._
 
-![Federal Communications Commission (FCC)](49967221142_Federal%20Communications%20Commission%20_FCC_.jpg)
+![Federal Communications Commission (FCC)](<49967221142_Federal Communications Commission _FCC_.jpg>)
 
 ## United States Air Force
 _&quot;Birds of a feather will gather together.&quot;
@@ -11941,7 +11941,7 @@ Gave us wings, ever to soar!
 With scouts before And bombers galore. Hey! 
 Nothing'll stop the U.S. Air Force!_
 
-![United States Air Force](49980370938_United%20States%20Air%20Force.jpg)
+![United States Air Force](<49980370938_United States Air Force.jpg>)
 
 ## Beyond Freedom and Dignity
 _&quot;Just as eating contrary to the inclination is injurious to the health, study without desire spoils the memory, and it retains nothing that it takes in.&quot;
@@ -11956,7 +11956,7 @@ _&quot;Just as eating contrary to the inclination is injurious to the health, st
 &quot;Encourage free schools, and resolve that not one dollar of money shall be appropriated to the support of any sectarian school. Resolve that neither the state nor nation, or both combined, shall support institutions of learning other than those sufficient to afford every child growing up in the land the opportunity of a good common school education, unmixed with sectarian, pagan, or atheistical tenets. Leave the matter of religion to the family altar, the church, and the private school, supported entirely by private contributions. Keep the church and the state forever separate.&quot;
 –  Ulysses S. Grant, speech at the Annual Reunion of the Society of the Army of Tennessee (29 September 1875), Des Moines, Iowa._
 
-![Beyond Freedom and Dignity](49993282117_Beyond%20Freedom%20and%20Dignity.jpg)
+![Beyond Freedom and Dignity](<49993282117_Beyond Freedom and Dignity.jpg>)
 
 ## Wake up, America
 _&quot;And I will put enmity between thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel.&quot;
@@ -11971,7 +11971,7 @@ _&quot;And I will put enmity between thee and the woman, and between thy seed an
 &quot;Every phase of our life belongs to us. The moon does not, except in appearance, lose her first thin, luminous curve, nor her silvery crescent, in rounding to her full. The woman is still both child and girl, in the completeness of womanly character. We have a right to our entire selves, through all the changes of this mortal state, a claim which we shall doubtless carry along with us into the unfolding mysteries of our eternal being. Perhaps in this thought lies hidden the secret of immortal youth: for a seer has said that &quot;to grow old in heaven is to grow young.&quot;&quot;
 –  Lucy Larcom, &quot;A New England Girlhood: Outlined from Memory&quot;, 1889_
 
-![Wake up, America](49994441338_Wake%20up_%20America.jpg)
+![Wake up, America](<49994441338_Wake up_ America.jpg>)
 
 ## Spirit of '76
 _&quot;I shudder when I think of the calamities which slavery is likely to produce in this country. You would think me mad if I were to describe my anticipations.&quot;
@@ -11989,7 +11989,7 @@ _&quot;I shudder when I think of the calamities which slavery is likely to produ
 That man over there says that women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere. Nobody ever helps me into carriages, or over mud-puddles, or gives me any best place! And ain't I a woman? Look at me! Look at my arm! I have ploughed and planted, and gathered into barns, and no man could head me! And ain't I a woman? I could work as much and eat as much as a man — when I could get it — and bear the lash as well! And ain't I a woman? I have borne thirteen children, and seen most all sold off to slavery, and when I cried out with my mother's grief, none but Jesus heard me! And ain't I a woman?  
 – Sojourner Truth &quot;Ain't I a Woman?&quot; (1851) _
 
-![Spirit of '76](50005514326_Spirit%20of%20_76.jpg)
+![Spirit of '76](<50005514326_Spirit of _76.jpg>)
 
 ## Russo-American Relations
 _&quot;I dwell on this prospect with every satisfaction which an ardent love for my Country can inspire: since there is no truth more thoroughly established, than that there exists in the oeconomy and course of nature, an indissoluble union between virtue and happiness, between duty and advantage, between the genuine maxims of an honest and magnanimous policy, and the solid rewards of public prosperity and felicity: Since we ought to be no less persuaded that the propitious smiles of Heaven, can never be expected on a nation that disregards the eternal rules of order and right, which Heaven itself has ordained: And since the preservation of the sacred fire of liberty, and the destiny of the Republican model of Government, are justly considered as deeply, perhaps as finally staked, on the experiment entrusted to the hands of the American people.&quot;
@@ -12001,7 +12001,7 @@ _&quot;I dwell on this prospect with every satisfaction which an ardent love for
 &quot;Russia has made its choice in favor of democracy. Fourteen years ago, independently, without any pressure from outside, it made that decision in the interests of itself and interests of its people -- of its citizens. This is our final choice, and we have no way back. There can be no return to what we used to have before. And the guarantee for this is the choice of the Russian people, themselves. No, guarantees from outside cannot be provided. This is impossible. It would be impossible for Russia today. Any kind of turn towards totalitarianism for Russia would be impossible, due to the condition of the Russian society.&quot;
 – Vladimir Putin, statement in press release, Office of the White House Press Secretary, United States (February 24, 2005)._
 
-![Russo-American Relations](50012256808_Russo-American%20Relations.jpg)
+![Russo-American Relations](<50012256808_Russo-American Relations.jpg>)
 
 ## California Republic
 _&quot;Bright El Dorado, land of gold,
@@ -12018,7 +12018,7 @@ Like an angel, standing in a shaft of light
 Rising up to paradise, I know I'm going to shine.&quot;
 –  John Perry Barlow, &quot;Estimated Prophet&quot;, on the Grateful Dead album Terrapin Station (1977)_
 
-![California Republic](50018880903_California%20Republic.jpg)
+![California Republic](<50018880903_California Republic.jpg>)
 
 ## Stanford University
 _&quot;But in the 1950s, many universities saw an advantage in building up all of the sciences and engineering with an eye toward obtaining federal grant money. No single institution did this better than Stanford University. And no one person was more attuned to using federal grants to build a university than its dean of engineering and eventual provost, Frederick Terman. Dr. Terman, trained as an electrical engineer, was an aggressive man with insight and boundless energy. When he began as dean, Stanford University was considered a good private regional school. When he retired as provost, it was arguably the best university for research in the nation.&quot;
@@ -12032,7 +12032,7 @@ _&quot;But in the 1950s, many universities saw an advantage in building up all o
 In the face of this difficulty [of defining &quot;computer science&quot;] many people, including myself at times, feel that we should ignore the discussion and get on with doing it. But as George Forsythe points out so well in a recent article*, it does matter what people in Washington D.C. think computer science is. According to him, they tend to feel that it is a part of applied mathematics and therefore turn to the mathematicians for advice in the granting of funds. And it is not greatly different elsewhere; in both industry and the universities you can often still see traces of where computing first started, whether in electrical engineering, physics, mathematics, or even business. Evidently the picture which people have of a subject can significantly affect its subsequent development. Therefore, although we cannot hope to settle the question definitively, we need frequently to examine and to air our views on what our subject is and should become.&quot;
 – Richard Hamming, 1968 Turing Award lecture, Journal of the ACM 16 (1), January 1969_
 
-![Stanford University](50019878611_Stanford%20University.jpg)
+![Stanford University](<50019878611_Stanford University.jpg>)
 
 ## Libraries
 _&quot;There are times when I think that the ideal library is composed solely of reference books. They are like understanding friends; always ready to meet your mood, always ready to change the subject when you have had enough of this or that.&quot;
@@ -12054,7 +12054,7 @@ _&quot;I had discovered, early in my researches, that their doctrine was no mere
 Not so fire and water, however. They’re formless, colorful, and they’re always doing something. While suggesting you repent, prophets very seldom predict the wrath of the gods in terms of landslides and hurricanes. No. Floods and fires are what you get for the rottenness of your ways. Primitive man was really on his way when he learned to kindle the one and had enough of the other nearby to put it out. It is coincidence that we’ve filled hells with fires and oceans with monsters? I don’t think so. Both principles are mobile, which is generally a sign of life. Both are mysterious and possess the power to hurt or kill. It is no wonder that intelligent creatures the universe over have reacted to them in a similar fashion. It is the alchemical response.&quot;
 –   Roger Zelazny, &quot;Isle of the Dead&quot; (1969)_
 
-![Sol, Lvna, Earth](50029737616_Sol_%20Lvna_%20Earth.jpg)
+![Sol, Lvna, Earth](<50029737616_Sol_ Lvna_ Earth.jpg>)
 
 ## United States of America (SPQA)
 _&quot;I will say, finally, that I despair of the republic while slavery exists therein. If I look up to God for success, no smile of mercy or forgiveness dispels the gloom of futurity; if to our own resources, they are daily diminishing; if to all history, our destruction is not only possible, but almost certain. Why should we slumber at this momentous crisis? If our hearts were dead to every throb of humanity; if it were lawful to oppress, where power is ample; still, if we had any regard for our safety and happiness, we should strive to crush the Vampire which is feeding upon our life-blood. All the selfishness of our nature cries aloud for a better security. Our own vices are too strong for us, and keep us in perpetual alarm; how, in addition to these, shall we be able to contend successfully with millions of armed and desperate men, as we must eventually, if slavery do not cease?&quot;
@@ -12066,7 +12066,7 @@ _&quot;I will say, finally, that I despair of the republic while slavery exists 
 &quot;It is essential to just government we recognize the equality of all men before the law, and hold that it is the duty of government in its dealings with the people to mete out equal and exact justice to all, of whatever nativity, race, color, or persuasion, religious or political.&quot;
 – US Civil Rights Act of 1875, signed into law on March 1, 1875 by President Ulysses S. Grant._
 
-![United States of America (SPQA)](50041096937_United%20States%20of%20America%20_SPQA_.jpg)
+![United States of America (SPQA)](<50041096937_United States of America _SPQA_.jpg>)
 
 ## Celestial Intelligence Agencies
 _&quot;I listened to the teachings of Confucius, imbibed the wisdom of Brahma, and sat beside Buddha beneath the tree of insight. And now I am here, wrestling with ignorance and unbelief. I was on Sinai when Yahweh shed His effulgence on Moses; at the River Jordan I witnessed the miracles of the Nazarene; and in Medina I heard the words of the Messenger to the Arabs. And here I am now, a captive of confusion.&quot;
@@ -12081,7 +12081,7 @@ _&quot;I listened to the teachings of Confucius, imbibed the wisdom of Brahma, a
 &quot;The great German poet, Goethe, who also lived through a crisis of freedom, said to his generation: &quot;What you have inherited from your fathers, earn over again for yourselves or it will not be yours.&quot; We inherited freedom. We seem unaware that freedom has to be remade and re-earned in each generation of man.&quot;
 – Adlai Stevenson, &quot;Politics and Morality,&quot; Saturday Review (February 7, 1959), p. 12; quoting, in part, Goethe's Faust, act I, scene i, &quot;Was du ererbt von deinen Vätern hast, / Erwirb es, um es zu besitzen.&quot; In Randall Jarrell's translation, &quot;That which you inherit from your fathers / You must earn in order to possess.&quot; Goethe's Faust (republished 1976), p. 35._
 
-![Celestial Intelligence Agencies](50048208407_Celestial%20Intelligence%20Agencies.jpg)
+![Celestial Intelligence Agencies](<50048208407_Celestial Intelligence Agencies.jpg>)
 
 ## Alchemy & Parable
 _&quot;The starving chemist in his golden views
@@ -12094,7 +12094,7 @@ Supremely blest.&quot;
 &quot;These are not fables. You will touch with your hands, you will see with your own eyes, the Azoth, the Mercury of Philosophers, which alone will suffice to obtain for you our Stone. … Darkness will appear on the face of the Abyss; Night, Saturn and the Antimony of the Sages will appear; blackness, and the raven's head of the alchemists, and all the colors of the world, will appear at the hour of conjunction; the rainbow also, and the peacock's tail. Finally, after the matter has passed from ashen-colored to white and yellow, you will see the Philosopher's Stone, our King and Dominator Supreme, issue forth from his glassy sepulcher to mount his bed or his throne in his glorified body... diaphanous as crystal; compact and most weighty, as easily fusible by fire as resin, as flowing as wax and more so than quicksilver … the color of saffron when powdered, but red as rubies when in an integral mass...&quot;
 – Heinrich Khunrath, in &quot;Amphitheatrum&quot;_
 
-![Alchemy & Parable](50054075063_Alchemy%20_%20Parable.jpg)
+![Alchemy & Parable](<50054075063_Alchemy _ Parable.jpg>)
 
 ## Liberty Forever (1776 - 2020 - ????)
 _&quot;Patriotism is a lively sense of collective responsibility. Nationalism is a silly cock crowing on its own dunghill.&quot;
@@ -12111,7 +12111,7 @@ A swarm of bees in June is worth a silver spoon.
 A swarm of bees in July is not worth a fly.&quot;
 – English proverb_
 
-![Liberty Forever (1776 - 2020 - ????)](50063317517_Liberty%20Forever%20_1776%20-%202020%20-%20_____.jpg)
+![Liberty Forever (1776 - 2020 - ????)](<50063317517_Liberty Forever _1776 - 2020 - _____.jpg>)
 
 ## American Social Contract (The Great Seal)
 _<a href="https://danielarifriedman.com/meditations/american-social-contract-the-great-seal" rel="noreferrer nofollow">danielarifriedman.com/meditations/american-social-con...</a>
@@ -12128,7 +12128,7 @@ _<a href="https://danielarifriedman.com/meditations/american-social-contract-the
 &quot;God Almighty has set before me two great objects: the suppression of the slave trade and the reformation of manners.&quot;
 – William Wilberforce in: C. MacFarlane &amp; T. Thomson. (1792), &quot;The comprehensive history of England, from the earliest period to the suppression of the Sepoy revolt&quot;, page 752._
 
-![American Social Contract (The Great Seal)](50084151372_American%20Social%20Contract%20_The%20Great%20Seal_.jpg)
+![American Social Contract (The Great Seal)](<50084151372_American Social Contract _The Great Seal_.jpg>)
 
 ## IN G-D WE TRUST (ALL OTHERS WE VERIFY)
 _&quot;A tax-supported, compulsory educational system is the complete model of the totalitarian state.&quot;
@@ -12146,7 +12146,7 @@ _&quot;A tax-supported, compulsory educational system is the complete model of t
 &quot;A meaningless master’s degree has kept many from becoming true masters. Believing others rather than themselves, and believing to be what they were cried up to be but really were not, they never became what they could have become.&quot;
 – Petrarch, “On the Master’s Degree,” De remediis utriusque fortunae,_
 
-![IN G-D WE TRUST (ALL OTHERS WE VERIFY)](50090954196_IN%20G-D%20WE%20TRUST%20_ALL%20OTHERS%20WE%20VERIFY_.jpg)
+![IN G-D WE TRUST (ALL OTHERS WE VERIFY)](<50090954196_IN G-D WE TRUST _ALL OTHERS WE VERIFY_.jpg>)
 
 ## Great Seal of New Mexico, USA
 _&quot;America has evolved a model for this new free world... America has demonstrated that peoples of the East and peoples of the West may walk side by side in mutual respect and with mutual benefit. The history of our sovereignty there has now the full confidence of the East.&quot;
@@ -12179,7 +12179,7 @@ They have no spiritual visitings elysian,
 They dream no dreamings, and they see no vision.&quot;
 – Letitia Elizabeth Landon, &quot;Fisher's Drawing Room Scrap Book&quot;_
 
-![Great Seal of New Mexico, USA](50097533176_Great%20Seal%20of%20New%20Mexico_%20USA.jpg)
+![Great Seal of New Mexico, USA](<50097533176_Great Seal of New Mexico_ USA.jpg>)
 
 ## Portrait of the Justice as a Young Woman
 _&quot;Fiat iustitia, ne pereat mundus&quot;
@@ -12197,7 +12197,7 @@ Them fully satisfied, and thee appease.&quot;
 &quot;The aim of justice is, as the Romans used to say, to give each his due, and in order for each to be given what is his, it is necessary that it already belong to him; to &quot;give&quot;, in this sense, means to protect the right of possession. Each man gets &quot;what belongs to him&quot; in the course of voluntary exchanges that constitute the economic process, and, by virtue of the operation of the market, each receives for his contribution, precisely the amount that will impel him to increase the supply of the most urgently demanded commodities… Only when each man thereby gets what belongs to him, and someone wants to take it away from him, does a question of justice arise.&quot;
 – Faustino Ballve in &quot;What Economics is Not About&quot; in Essentials of Economics : A Brief Survey of Principles and Policies (1963),_
 
-![Portrait of the Justice as a Young Woman](50103833298_Portrait%20of%20the%20Justice%20as%20a%20Young%20Woman.jpg)
+![Portrait of the Justice as a Young Woman](<50103833298_Portrait of the Justice as a Young Woman.jpg>)
 
 ## Seal of the Great State of Arizona
 _&quot;Baseball, it is said, is only a game. True. And the Grand Canyon is only a hole in Arizona.&quot;
@@ -12209,7 +12209,7 @@ _&quot;Baseball, it is said, is only a game. True. And the Grand Canyon is only 
 &quot;Fort Yuma is probably the hottest place on earth. The thermometer stays at one hundred and twenty in the shade there all the time - except when it varies and goes higher. It is a U.S. military post, and its occupants get so used to the terrific heat that they suffer without it. There is a tradition... that a very, very wicked soldier died there, once, and of course, went straight to the hottest corner of perdition, - and the next day he telegraphed back for his blankets.&quot;
 – Mark Twain, Roughing It (1872)_
 
-![Seal of the Great State of Arizona](50111819246_Seal%20of%20the%20Great%20State%20of%20Arizona.jpg)
+![Seal of the Great State of Arizona](<50111819246_Seal of the Great State of Arizona.jpg>)
 
 ## Ento Pluribus Unum
 _&quot;No advanced thought, no mystical philosophy, no glittering abstractions, no swelling phrases about freedom, not even science with its marvelous inventions and discoveries, can help us much in sustaining this republic; still less can godless theories of creation, or any infidel attempt to rule out the Redeemer from His rightful supremacy in our hearts, afford any hope of security. That way lies despair.&quot;
@@ -12218,7 +12218,7 @@ _&quot;No advanced thought, no mystical philosophy, no glittering abstractions, 
 &quot;Virtue is not a chemical product, as Taine once described it: it is a historic product, like language and literature; and this means that if we cease to care about it, cease to cultivate it, cease to transmit its funded values, a large part of it will become meaningless, like a dead language to which we have lost the key. That, I submit, is what has happened in our own lifetime.&quot;
 – Lewis Mumford, Values for Survival (1946)_
 
-![Ento Pluribus Unum](50112058287_Ento%20Pluribus%20Unum.jpg)
+![Ento Pluribus Unum](<50112058287_Ento Pluribus Unum.jpg>)
 
 ## Georgia State of Mind
 _&quot;Mind is infinite and self-ruled, and is mixed with nothing, but is alone itself by itself.&quot;
@@ -12238,7 +12238,7 @@ _&quot;Mind is infinite and self-ruled, and is mixed with nothing, but is alone 
 
 _
 
-![Georgia State of Mind](50115901592_Georgia%20State%20of%20Mind.jpg)
+![Georgia State of Mind](<50115901592_Georgia State of Mind.jpg>)
 
 ## Colorado State
 _&quot;Such an office demands an upright and incorruptible man, who would take delight in his pious work even without any pay, while a high salary and a position of dignity would attract the meanest characters.&quot;
@@ -12251,7 +12251,7 @@ _&quot;Such an office demands an upright and incorruptible man, who would take d
 – Chief Black Kettle, speaking to Colorado Governor Evans, Colonel Chivington, Major Wynkoop and others in Denver, Colorado (Autumn 1864), as quoted in &quot;The Boy's Book about Indians : Being What I Saw and Heard for Three Years on the Plains&quot; (1873) by Edmund Bostwick Tuttle, p. 61  
 _
 
-![Colorado State](50119572892_Colorado%20State.jpg)
+![Colorado State](<50119572892_Colorado State.jpg>)
 
 ## State of Iowa
 _&quot;God is a God of the present. How he finds you, so he takes and receives you, not as that which you have been, but as that which you now are.&quot;
@@ -12266,7 +12266,7 @@ _&quot;God is a God of the present. How he finds you, so he takes and receives y
 &quot;There is nothing between the paradise dreamed of and the paradise lost. There is nothing, since we always want what we have not got. We hope, and then we regret. We hope for the future, and then we turn to the past, and then we begin slowly and desperately to hope for the past! The two most violent and abiding feelings, hope and regret, both lean upon nothing. To ask, to ask, to have not! Humanity is exactly the same thing as poverty. Happiness has not the time to live; we have not really the time to profit by what we are. Happiness, that thing which never is — and which yet, for one day, is no longer!&quot;
 – Henri Barbusse, &quot;Light &quot;(1919) Ch. XXIII_
 
-![State of Iowa](50123841291_State%20of%20Iowa.jpg)
+![State of Iowa](<50123841291_State of Iowa.jpg>)
 
 ## Nevada Sunrise
 _&quot;[I]ndeed, Ludacris! I'm hotter than Nevada, ready to break the steering column on your Impala!&quot; 
@@ -12281,7 +12281,7 @@ _&quot;[I]ndeed, Ludacris! I'm hotter than Nevada, ready to break the steering c
 &quot;I was a seeker, a mover, a malcontent, and at times a stupid hell-raiser. I was never idle long enough to do much thinking, but I felt somehow that my instincts were right. I shared a vagrant optimism that some of us were making real progress, that we had taken an honest road, and that the best of us would inevitably make it over the top. At the same time, I shared a dark suspicion that the life we were leading was a lost cause, that we were all actors, kidding ourselves along on a senseless odyssey. It was the tension between these two poles — a restless idealism on one hand and a sense of impending doom on the other — that kept me going.&quot;
 – Hunter S. Thompson_
 
-![Nevada Sunrise](50126132556_Nevada%20Sunrise.jpg)
+![Nevada Sunrise](<50126132556_Nevada Sunrise.jpg>)
 
 ## Decentral Antelligence Agency
 _&quot;Fictions of law must be consistent with justice.&quot;
@@ -12309,7 +12309,7 @@ Grave--involving or resulting in serious consequences; likely to produce real ha
 Damage--loss due to injury; injury or harm to person, property, or reputation; hurt; harm.&quot;
 – Chapter 7. Classification Levels, The Federation of American Scientists_
 
-![Decentral Antelligence Agency](50129937163_Decentral%20Antelligence%20Agency.jpg)
+![Decentral Antelligence Agency](<50129937163_Decentral Antelligence Agency.jpg>)
 
 ## USS New York (LPD 21)
 _&quot;The Ax forgets; the tree remembers&quot;  
@@ -12324,7 +12324,7 @@ _&quot;The Ax forgets; the tree remembers&quot;
 &quot;It is possible for one with a well-trained memory to compose clearly in an organized fashion on several different subjects. Once one has the all-important starting-place of the ordering scheme and the contents firmly in their places within it, it is quite possible to move back and forth from one distinct composition to another without losing one's place or becoming confused.&quot;
 – Mary Carruthers_
 
-![USS New York (LPD 21)](50133426646_USS%20New%20York%20_LPD%2021_.jpg)
+![USS New York (LPD 21)](<50133426646_USS New York _LPD 21_.jpg>)
 
 ## American Legion
 _&quot;Kalpa after kalpa a man may be under delusion,
@@ -12337,7 +12337,7 @@ But once enlightened it takes him only a moment to attain Buddhahood.&quot;
 &quot;After reviewing the free-energy principle and active inference, we argue that the model of adaptive phenotypes under the free-energy principle can be used to furnish a formal semantics, enabling us to assign semantic content to specific phenotypic states (the internal states of a Markovian system that exists far from equilibrium). We propose a modified fictionalist account: an organism-centered fictionalism or instrumentalism. We argue that, under the free-energy principle, pursuing even a deflationary account of the content of neural representations licenses the appeal to the kind of semantic content involved in the aboutness or intentionality of cognitive systems; our position is thus coherent with, but rests on distinct assumptions from, the realist position. We argue that the free-energy principle thereby explains the aboutness or intentionality in living systems and hence their capacity to parse their sensory stream using an ontology or set of semantic factors.&quot;
 –  Maxwell Ramstead, Karl Friston, Ines Hipolito, 2020,  <a href="https://arxiv.org/abs/2007.09291" rel="noreferrer nofollow">arxiv.org/abs/2007.09291</a>  _
 
-![American Legion](50136560553_American%20Legion.jpg)
+![American Legion](<50136560553_American Legion.jpg>)
 
 ## United States Intelligence Community
 _Collaboratus Virtus Fides
@@ -12354,7 +12354,7 @@ _Collaboratus Virtus Fides
 &quot;There is a difference between spontaneous and/or good-natured displays of enthusiasm and calculated displays of obnoxious self-indulgence. That train has already gone so far down the wrong track, there’s probably no turning back. So our suggestion here is a more modest one. Hey, knuckleheads, is it too much to ask that you confine your buffoonery to situations that don’t directly damage your team? Week after week, game after game, we see guys who think nothing of incurring penalties for unsportsmanlike conduct, costing their team’s valuable yardage, even late in close games.”
 – Bob Costas_
 
-![United States Intelligence Community](50140113683_United%20States%20Intelligence%20Community.jpg)
+![United States Intelligence Community](<50140113683_United States Intelligence Community.jpg>)
 
 ## Stanford University, Department of Biology
 _&quot;Where is there dignity unless there is also honesty?&quot;
@@ -12369,7 +12369,7 @@ _&quot;Where is there dignity unless there is also honesty?&quot;
 &quot;Risks inherent in economic activities can be dealt with in a wide variety of ways. In addition to the commodity speculation and inventory management discussed in the previous chapter, other ways of dealing with risk include stocks, bonds, and insurance. There are also other economic activities analogous to stocks, bonds, and insurance which deal with risks in ways that are legally different, though similar economically.&quot;
 – Thomas Sowell, &quot;Basic Economics&quot;, 4th ed. (2010), Ch. 13. Risks and Insurance_
 
-![Stanford University, Department of Biology](50148258368_Stanford%20University_%20Department%20of%20Biology.jpg)
+![Stanford University, Department of Biology](<50148258368_Stanford University_ Department of Biology.jpg>)
 
 ## San Francisco
 _&quot;Vision without action is a daydream. Action without vision is a nightmare.&quot;
@@ -12384,7 +12384,7 @@ _&quot;Vision without action is a daydream. Action without vision is a nightmare
 &quot;All men naturally desire knowledge. An indication of this is our esteem for the senses; for apart from their use we esteem them for their own sake, and most of all the sense of sight. Not only with a view to action, but even when no action is contemplated, we prefer sight, generally speaking, to all the other senses. The reason of this is that of all the senses sight best helps us to know things, and reveals many distinctions.&quot;
 – Aristotle, Metaphysics I (980a 21),_
 
-![San Francisco](50163516061_San%20Francisco.jpg)
+![San Francisco](<50163516061_San Francisco.jpg>)
 
 ## Territory of Utah
 _&quot;Socialists take over from bourgeois capitalist society its materialism, its atheism, its cheap prophets, its hostility against the spirit and all spiritual life, its restless striving for success and amusement, its personal selfishness, its incapacity for interior recollection.&quot; 
@@ -12396,7 +12396,7 @@ _&quot;Socialists take over from bourgeois capitalist society its materialism, i
 &quot;The collectivization of labor during recent centuries has now been duplicated by the collectivization of thought. Industrialization collectivized labor by forcing workers to gather in large units and to specialize and simplify the functions of each worker. Similarly, the rise of the intellectual factory, the modern university, which has been indentured to the service of industry and even more so to that of technology, forces a concentration and a specialization of thought. The search for human truth has become the search for productively useful knowledge. ... Thinker is servant to thought, thought is servant to product, product is servant to consumer, and the consumer is enslaved by beliefs and thoughts that are either traditional or are produced mechanically by the demands of an abstract system purged of all human will.&quot;
 – R. E. Puhek, “The Collectivization of Thought”_
 
-![Territory of Utah](50181485636_Territory%20of%20Utah.jpg)
+![Territory of Utah](<50181485636_Territory of Utah.jpg>)
 
 ## United States Army Ants
 _&quot;A Serjeant is a soldier with a halbert, and a drummer is a soldier with a drum.&quot;
@@ -12411,7 +12411,7 @@ _&quot;A Serjeant is a soldier with a halbert, and a drummer is a soldier with a
 &quot;I spent 33 years and four months in active military service and during that period I spent most of my time as a high class muscle man for Big Business, for Wall Street and the bankers. In short, I was a racketeer, a gangster for capitalism. I helped make Mexico and especially Tampico safe for American oil interests in 1914. I helped make Haiti and Cuba a decent place for the National City Bank boys to collect revenues in. I helped in the raping of half a dozen Central American republics for the benefit of Wall Street. I helped purify Nicaragua for the International Banking House of Brown Brothers in 1902-1912. I brought light to the Dominican Republic for the American sugar interests in 1916. I helped make Honduras right for the American fruit companies in 1903. In China in 1927 I helped see to it that Standard Oil went on its way unmolested. Looking back on it, I might have given Al Capone a few hints. The best he could do was to operate his racket in three districts. I operated on three continents.&quot;
 – Smedley Butler, &quot;America's Armed Forces,&quot; Common Sense, vol. 4, no. 11 (1935), pp. 8-12_
 
-![United States Army Ants](50189729631_United%20States%20Army%20Ants.jpg)
+![United States Army Ants](<50189729631_United States Army Ants.jpg>)
 
 ## Wisconsin (Forward!)
 _&quot;Truth persuades by teaching, but does not teach by persuading.&quot;
@@ -12429,7 +12429,7 @@ How two bold kings in different armour veil'd,
 One black, one white, for conquest fought the field.&quot;
 – Marco Girolamo Vida, &quot;Scacchia Ludus&quot; (1527) [Game of Chess]._
 
-![Wisconsin (Forward!)](50210425277_Wisconsin%20_Forward__.jpg)
+![Wisconsin (Forward!)](<50210425277_Wisconsin _Forward__.jpg>)
 
 ## Great Seal of North Dakota
 _&quot;Nothing is further than Earth from Heaven: nothing is nearer than Heaven to Earth.&quot;
@@ -12438,7 +12438,7 @@ _&quot;Nothing is further than Earth from Heaven: nothing is nearer than Heaven 
 &quot;It seems to me that it is these extremists who are advocating a soft approach. Their oversimplifications and their baseless generalizations reflect the softness of those who cannot bear to face the burdens of a continuing struggle against a powerful and resourceful enemy. A truly tough approach, in my judgment, is one which accepts the challenge of communism with the courage and determination to meet it with every instrumentality of foreign policy—political and economic as well as military, and with the willingness to see the struggle through as far into the future as may be necessary. Those who seek to meet the challenge—or, in reality, to evade it—by bold adventures abroad and witch hunts at home are the real devotees of softness—the softness of seeking escape from painful realities by resort to illusory panaceas.&quot;
 –  J. William Fulbright, &quot;Public Policy and Military Responsibility,&quot; speech at the opening session of the National War College and the Industrial College of the Armed Forces, Washington, D.C., August 21, 1961, Congressional Record, vol. 107, p. 16444._
 
-![Great Seal of North Dakota](50237765953_Great%20Seal%20of%20North%20Dakota.jpg)
+![Great Seal of North Dakota](<50237765953_Great Seal of North Dakota.jpg>)
 
 ## EEG State of Mind
 _&quot;The needs of the many outweigh the needs of the few or the one.&quot;
@@ -12452,7 +12452,7 @@ _&quot;The needs of the many outweigh the needs of the few or the one.&quot;
 
 –   Memorabilia (Xenophon)_
 
-![EEG State of Mind](50238414826_EEG%20State%20of%20Mind.jpg)
+![EEG State of Mind](<50238414826_EEG State of Mind.jpg>)
 
 ## Heart's Core
 _I have no desire to get ugly,
@@ -12476,7 +12476,7 @@ If the tax collector hasn't got it before I wake.
 
 – Ogden Nash_
 
-![Heart's Core](50245287993_Heart_s%20Core.jpg)
+![Heart's Core](<50245287993_Heart_s Core.jpg>)
 
 ## Sator Square (Rotas Square)
 _Virtue is the mistress of all things. Virtue is the master of all things.
@@ -12491,7 +12491,7 @@ Where he falls short, 'tis Nature's fault alone
 Where he succeeds, the merit's all his own.&quot;
 –    Charles Churchill, &quot;The Rosciad&quot; (1761), line 1,023._
 
-![Sator Square (Rotas Square)](50245844331_Sator%20Square%20_Rotas%20Square_.jpg)
+![Sator Square (Rotas Square)](<50245844331_Sator Square _Rotas Square_.jpg>)
 
 ## Geometry is Sacred
 _&quot;Let every man or woman here, if you never hear me again, remember this, that if you wish to be great at all, you must begin where you are and what you are, in Philadelphia, now. He that can give to his city any blessing, he who can be a good citizen while he lives here, he that can make better homes, he that can be a blessing whether he works in the shop or sits behind the counter or keeps house, whatever be his life, he who would be great anywhere must first be great in his own Philadelphia.&quot;
@@ -12503,7 +12503,7 @@ _&quot;Let every man or woman here, if you never hear me again, remember this, t
 &quot;I am against bigness and greatness in all their forms, and with the invisible molecular moral forces that work from individual to individual, stealing in through the crannies of the world like so many soft rootlets, or like the capillary oozing of water, and yet rending the hardest monuments of man's pride, if you give them time. The bigger the unit you deal with, the hollower, the more brutal, the more mendacious is the life displayed. So I am against all big organizations as such, national ones first and foremost; against all big successes and big results; and in favor of the eternal forces of truth which always work in the individual and immediately unsuccessful way, under-dogs always, till history comes, after they are long dead, and puts them on top.—You need take no notice of these ebullitions of spleen, which are probably quite unintelligible to anyone but myself.&quot;
 –  William James, letter to Mrs. Henry Whitman (June 7, 1899)_
 
-![Geometry is Sacred](50245850406_Geometry%20is%20Sacred.jpg)
+![Geometry is Sacred](<50245850406_Geometry is Sacred.jpg>)
 
 ## Room for Cubes
 _&quot;If there is anything that we wish to change in the child, we should first examine it and see whether it is not something that could better be changed in ourselves.&quot;–  Carl Jung, The Integration of the Personality (1939)
@@ -12516,7 +12516,7 @@ _&quot;If there is anything that we wish to change in the child, we should first
 
 _
 
-![Room for Cubes](50246005501_Room%20for%20Cubes.jpg)
+![Room for Cubes](<50246005501_Room for Cubes.jpg>)
 
 ## Connecticut State Seal
 _Qui Transtulit Sustinet 
@@ -12535,7 +12535,7 @@ But defines, for the fortunate, that joy in
 which all joys should rejoice.&quot;
 – Robert Penn Warren, &quot;To a Little Girl, One Year Old, in a Ruined Fortress&quot; (1956)_
 
-![Connecticut State Seal](50272617697_Connecticut%20State%20Seal.jpg)
+![Connecticut State Seal](<50272617697_Connecticut State Seal.jpg>)
 
 ## University of Pennsylvania, Philadelphia
 _&quot;If thou wouldst rule well, thou must rule for God; and to do that, thou must be ruled by him who has given to kings his grace to command themselves and their subjects, and to the people the grace to obey God and their kings.&quot;
@@ -12555,7 +12555,7 @@ First held a commencement with suitable state,
 In the year of our Lord, seventeen sixty-eight.&quot;
 –  William Todd Helmuth, &quot;The Story of a City Doctor&quot;_
 
-![University of Pennsylvania, Philadelphia](50309935412_University%20of%20Pennsylvania_%20Philadelphia.jpg)
+![University of Pennsylvania, Philadelphia](<50309935412_University of Pennsylvania_ Philadelphia.jpg>)
 
 ## Free Energy Patriotism
 _&quot;Every mathematician knows it is impossible to understand an elementary course in thermodynamics.&quot;
@@ -12567,7 +12567,7 @@ _&quot;Every mathematician knows it is impossible to understand an elementary co
 &quot;The liberties of our country, the freedom of our civil Constitution are worth defending at all hazards; and it is our duty to defend -them against all attacks. We have received them as a fair inheritance from our worthy ancestors. They purchased them for us with toil, and danger, and expense of treasure and blood, and transmitted them to us with care and diligence. It will bring an everlasting mark of infamy on the present generation, enlightened as it is, if we should suffer them to be wrested from us by violence without a struggle, or be cheated out of them by the artifices of false and designing men. Of the latter, we are in most danger at present. Let us therefore be aware of it. Let us contemplate our forefathers and posterity, and resolve to maintain the rights bequeathed to us from the former for the sake of the latter. Instead of sitting down satisfied with the efforts we have already made, which is the wish of our enemies, the necessity of the times more than ever calls for our utmost circumspection, deliberation, fortitude, and perseverance. Let us remember that &quot;if we suffer tamely a lawless attack upon our liberty, we encourage it, and involve others in our doom!&quot; It is a very serious consideration, which should deeply impress our minds, that millions yet unborn may be the miserable sharers in the event!&quot;
 – Samuel Adams, written as &quot;Candidus&quot; (14 October 1771)._
 
-![Free Energy Patriotism](50322606143_Free%20Energy%20Patriotism.jpg)
+![Free Energy Patriotism](<50322606143_Free Energy Patriotism.jpg>)
 
 ## Glory, Hallelujah
 _&quot;The painful secret of gods and kings is that men are free. They are free, Aegisthus. You know it, but they do not.&quot;
@@ -12582,7 +12582,7 @@ _&quot;The painful secret of gods and kings is that men are free. They are free,
 &quot;The aim of this work may be thus stated: to show that Nature is not “a fortuitous concurrence of atoms,” and to assign to man his rightful place in the scheme of the Universe; to rescue from degradation the archaic truths which are the basis of all religions; and to uncover, to some extent, the fundamental unity from which they all spring; finally, to show that the occult side of nature has never been approached by the Science of modern civilization.&quot;
 – H.P. Blavatsky, &quot;The Secret Doctrine&quot;_
 
-![Glory, Hallelujah](50337784262_Glory_%20Hallelujah.jpg)
+![Glory, Hallelujah](<50337784262_Glory_ Hallelujah.jpg>)
 
 ## Intelligence (303)
 _&quot;He that can have patience can have what he will.&quot;
@@ -12597,7 +12597,7 @@ _&quot;He that can have patience can have what he will.&quot;
 &quot;Here I had tried a straightforward extrapolation of technology, and found myself precipitated over an abyss. It’s a problem we face every time we consider the creation of intelligences greater than our own. When this happens, human history will have reached a kind of singularity — a place where extrapolation breaks down and new models must be applied — and the world will pass beyond our understanding.&quot;
 – Vernor Vinge, &quot;True Names and Other Dangers&quot; (1987)_
 
-![Intelligence (303)](50345812543_Intelligence%20_303_.jpg)
+![Intelligence (303)](<50345812543_Intelligence _303_.jpg>)
 
 ## Strength Thru Intelligence
 _&quot;Grant us the single heart once more
@@ -12616,7 +12616,7 @@ Daniel 12:1-9, American Standard Version:
 
 5 Then I, Daniel, looked, and, behold, there stood other two, the one on the brink of the river on this side, and the other on the brink of the river on that side. 6 And one said to the man clothed in linen, who was above the waters of the river, How long shall it be to the end of these wonders? 7 And I heard the man clothed in linen, who was above the waters of the river, when he held up his right hand and his left hand unto heaven, and sware by him that liveth for ever that it shall be for a time, times, and a half; and when they have made an end of breaking in pieces the power of the holy people, all these things shall be finished. 8 And I heard, but I understood not: then said I, O my lord, what shall be the issue of these things? 9 And he said, Go thy way, Daniel; for the words are shut up and sealed till the time of the end._
 
-![Strength Thru Intelligence](50348780026_Strength%20Thru%20Intelligence.jpg)
+![Strength Thru Intelligence](<50348780026_Strength Thru Intelligence.jpg>)
 
 ## Win the Mind, Win the Day
 _&quot;I'm so crazy I plan to vote for Eisenhower again this November.&quot;
@@ -12636,7 +12636,7 @@ He thinks in secret, and it comes to pass:
 Environment is but his looking-glass.&quot;
 –  James Allen, &quot;As A Man Thinketh&quot; (1902)._
 
-![Win the Mind, Win the Day](50359032223_Win%20the%20Mind_%20Win%20the%20Day.jpg)
+![Win the Mind, Win the Day](<50359032223_Win the Mind_ Win the Day.jpg>)
 
 ## Virginia (Sic Semper Tyrannis)
 _&quot;Peace is not unity in similarity but unity in diversity, in the comparison and conciliation of differences.&quot;
@@ -12648,7 +12648,7 @@ _&quot;Peace is not unity in similarity but unity in diversity, in the compariso
 &quot;Every thinking of being, all philosophy, can never be confirmed by &quot;facts,&quot; ie, by beings. Making itself intelligible is suicide for philosophy. Those who idolize &quot;facts&quot; never notice that their idols only shine in a borrowed light. They are also meant not to notice this; for thereupon they would have to be at a loss and therefore useless. But idolizers and idols are used wherever gods are in flight and so announce their nearness.&quot;
 – Martin Heidegger_
 
-![Virginia (Sic Semper Tyrannis)](50389053568_Virginia%20_Sic%20Semper%20Tyrannis_.jpg)
+![Virginia (Sic Semper Tyrannis)](<50389053568_Virginia _Sic Semper Tyrannis_.jpg>)
 
 ## POW MIA (You Are Not Forgotten)
 _&quot;Sooner or later...one has to take sides — if one is to remain human.&quot;
@@ -12666,7 +12666,7 @@ _&quot;Sooner or later...one has to take sides — if one is to remain human.&qu
 &quot;Men of science in former ages worked in secret, and instead of publishing their discoveries, taught them in secret to carefully selected pupils. Their motives for adopting that policy are readily intelligible... let us consider the position of the adepts as they now exist... They constitute a Brotherhood, or Secret Association, which ramifies all over the East, but the principal seat of which for the present I gather to be in Tibet... The great fraternity is at once the least and the most exclusive organization in the world, and fresh recruits from any race or country are welcome, provided they possess the needed qualifications. The door, as I have been told by one who is himself an adept, is always open to the right man who knocks, but the road that has to be travelled before the door is reached is one which none but very determined travellers can hope to pass.&quot;
 – Alfred Percy Sinnett, in &quot;The Occult World&quot;, Fifth American edition, (1888)._
 
-![POW MIA (You Are Not Forgotten)](50411500763_POW%20MIA%20_You%20Are%20Not%20Forgotten_.jpg)
+![POW MIA (You Are Not Forgotten)](<50411500763_POW MIA _You Are Not Forgotten_.jpg>)
 
 ## Great Seal of the State of South Dakota
 _&quot;May the pens of the diplomats not ruin again what the people have attained with such exertions.&quot;– Gebhard Leberecht von Blücher, After the Battle of Waterloo (1815).
@@ -12676,7 +12676,7 @@ _&quot;May the pens of the diplomats not ruin again what the people have attaine
 &quot;The presidency itself is not a partisan institution. It’s the one office in this nation that represents everyone and it demands a duty of care for all Americans. That is precisely what I will do. I will work as hard for those who didn’t vote for me as I will for those who did vote for me. Now, every vote must be counted. No one’s going to take our democracy away from us, not now, not ever. America’s come too far. America’s fought too many battles. America’s endured too much to ever let that happen. We the people will not be silenced. We the people will not be bullied. We the people will not surrender. My friends, I’m confident we’ll emerge victorious. But this will not be my victory alone or our victory alone. It’ll be a victory for the American people, for our democracy, for America.&quot;
 – Joe Biden_
 
-![Great Seal of the State of South Dakota](50572079898_Great%20Seal%20of%20the%20State%20of%20South%20Dakota.jpg)
+![Great Seal of the State of South Dakota](<50572079898_Great Seal of the State of South Dakota.jpg>)
 
 ## United States Navy
 _&quot;That man who lives with his heart and who constantly dwells on the idea of being of service to the welfare of humanity, that man is in complete harmony with his higher Self.&quot;
@@ -12688,13 +12688,13 @@ _&quot;That man who lives with his heart and who constantly dwells on the idea o
 &quot;It would be some time before I fully realized that the United States sees little need for diplomacy; power is enough. Only the weak rely on diplomacy. This is why the weak are so deeply concerned with the democratic principle of the sovereign equality of states, as a means of providing some small measure of equality for that which is not equal in fact. Coming from a developing country, I was trained extensively in international law and diplomacy and mistakenly assumed that the great powers, especially the United States, also trained their representatives in diplomacy and accepted the value of it. But the Roman Empire had no need for diplomacy. Nor does the United States. Diplomacy is perceived by an imperial power as a waste of time and prestige and a sign of weakness.&quot;
 – Boutros Boutros-Ghali, as quoted in &quot;Unvanquished : A U.S. - U.N. Saga&quot; (1999), p. 198._
 
-![United States Navy](50572809101_United%20States%20Navy.jpg)
+![United States Navy](<50572809101_United States Navy.jpg>)
 
 ## 50572991952_Eyes of the World (1)
-![50572991952_Eyes of the World (1)](50572991952_Eyes%20of%20the%20World%20(1).jpg)
+![50572991952_Eyes of the World (1)](<50572991952_Eyes of the World (1).jpg>)
 
 ## 50572991952_Eyes of the World (2)
-![50572991952_Eyes of the World (2)](50572991952_Eyes%20of%20the%20World%20(2).jpg)
+![50572991952_Eyes of the World (2)](<50572991952_Eyes of the World (2).jpg>)
 
 ## Eyes of the World
 _&quot;It has been uniformly laid down in this Court, as far back as we can remember, that good faith is the basis of all mercantile transactions.&quot;
@@ -12726,13 +12726,13 @@ Saint Stephen will remain
 All he lost he shall regain!&quot;
 – St. Stephen, lyrics by band members Jerry Garcia, Phil Lesh, and Robert Hunter_
 
-![Eyes of the World](50572991952_Eyes%20of%20the%20World.jpg)
+![Eyes of the World](<50572991952_Eyes of the World.jpg>)
 
 ## 50584202581_Seal of the President of the United States of Amer (1)
-![50584202581_Seal of the President of the United States of Amer (1)](50584202581_Seal%20of%20the%20President%20of%20the%20United%20States%20of%20Amer%20(1).jpg)
+![50584202581_Seal of the President of the United States of Amer (1)](<50584202581_Seal of the President of the United States of Amer (1).jpg>)
 
 ## 50584202581_Seal of the President of the United States of Amer (2)
-![50584202581_Seal of the President of the United States of Amer (2)](50584202581_Seal%20of%20the%20President%20of%20the%20United%20States%20of%20Amer%20(2).jpg)
+![50584202581_Seal of the President of the United States of Amer (2)](<50584202581_Seal of the President of the United States of Amer (2).jpg>)
 
 ## Seal of the President of the United States of America
 _&quot;There are no 'human' oppressors. Oppressors have lost their humanity.&quot;
@@ -12744,13 +12744,13 @@ _&quot;There are no 'human' oppressors. Oppressors have lost their humanity.&quo
 &quot;A democracy is more than a form of government; it is primarily a mode of associated living, of conjoint communicated experience. The extension in space of the number of individuals who participate in an interest so that each has to refer his own action to that of others, and to consider the action of others to give point and direction to his own, is equivalent to the breaking down of those barriers of class, race, and national territory which kept men from realizing the full import of their activity. These more numerous and more varied points of contact denote a greater diversity of stimuli to which an individual has to respond; they consequently put a premium on variation in action. They secure a liberation of powers which remain suppressed as long as the incitations to action are partial, as they must be in a group which in its exclusiveness shuts out many interests.&quot;
 – John Dewey, &quot;Democracy and Education&quot; (1916), Chapter 7: The Democratic Ideal_
 
-![Seal of the President of the United States of America](50584202581_Seal%20of%20the%20President%20of%20the%20United%20States%20of%20Amer.jpg)
+![Seal of the President of the United States of America](<50584202581_Seal of the President of the United States of Amer.jpg>)
 
 ## 50642535927_Seal of Texas Tech University _TTU_ (1)
-![50642535927_Seal of Texas Tech University _TTU_ (1)](50642535927_Seal%20of%20Texas%20Tech%20University%20_TTU_%20(1).jpg)
+![50642535927_Seal of Texas Tech University _TTU_ (1)](<50642535927_Seal of Texas Tech University _TTU_ (1).jpg>)
 
 ## 50642535927_Seal of Texas Tech University _TTU_ (2)
-![50642535927_Seal of Texas Tech University _TTU_ (2)](50642535927_Seal%20of%20Texas%20Tech%20University%20_TTU_%20(2).jpg)
+![50642535927_Seal of Texas Tech University _TTU_ (2)](<50642535927_Seal of Texas Tech University _TTU_ (2).jpg>)
 
 ## Seal of Texas Tech University (TTU)
 _&quot;Saskatchewan is much like Texas; except it's more friendly to the United States.&quot;
@@ -12765,10 +12765,10 @@ _&quot;Saskatchewan is much like Texas; except it's more friendly to the United 
 &quot;I should regard them [the Elves interested in technical devices] as no more wicked or foolish (but in much the same peril) as Catholics engaged in certain kinds of physical research (e.g. those producing, if only as by-products, poisonous gases and explosives): things not necessarily evil, but which, things being as they are, and the nature and motives of the economic masters who provide all the means for their work being as they are, are pretty certain to serve evil ends. For which they will not necessarily be to blame, even if aware of them.&quot;
 –  J.R.R. Tolkien, Letter draft to Peter Hastings (manager of a Catholic bookshop in Oxford, who wrote about his enthusiasm for Lord of the Rings) (Sep 1954)._
 
-![Seal of Texas Tech University (TTU)](50642535927_Seal%20of%20Texas%20Tech%20University%20_TTU_.jpg)
+![Seal of Texas Tech University (TTU)](<50642535927_Seal of Texas Tech University _TTU_.jpg>)
 
 ## 50679436448_American Fabric (1)
-![50679436448_American Fabric (1)](50679436448_American%20Fabric%20(1).jpg)
+![50679436448_American Fabric (1)](<50679436448_American Fabric (1).jpg>)
 
 ## American Fabric
 _Template: 
@@ -12783,7 +12783,7 @@ Betsy Ross sewing the first American flag. Painting by Henry Mosler (1841-1920).
 &quot;With regard to their actual course of studies, the main object of all education is, in their opinion, to imbue their scholars with a firm belief in the indestructibility of the human soul, which, according to their belief, merely passes at death from one tenement to another; for by such doctrine alone, they say, which robs death of all its terrors, can the highest form of human courage be developed. Subsidiary to the teachings of this main principle, they hold various lectures and discussions on astronomy, on the extent and geographical distribution of the globe, on the different branches of natural philosophy, and on many problems connected with religion.&quot;
 –  Julius Caesar, &quot;De Bello Gallico&quot;, VI, 13 (58–49 BC)_
 
-![American Fabric](50679436448_American%20Fabric.jpg)
+![American Fabric](<50679436448_American Fabric.jpg>)
 
 ## 2020 Dollar Bill
 _EVER RETHINKING THE LORD’S PRAYER
@@ -12969,10 +12969,10 @@ Amen.
 
 _
 
-![2020 Dollar Bill](50763340178_2020%20Dollar%20Bill.jpg)
+![2020 Dollar Bill](<50763340178_2020 Dollar Bill.jpg>)
 
 ## 51090739247_American Sun (1)
-![51090739247_American Sun (1)](51090739247_American%20Sun%20(1).jpg)
+![51090739247_American Sun (1)](<51090739247_American Sun (1).jpg>)
 
 ## American Sun
 _&quot;Let us see delineated before us the true map of man. Let us hear the dignity of his nature, and the noble rank he holds among the works of God—that consenting to slavery is a sacrilegious breach of trust, as offensive in the sight of God as it is derogatory from our own honor or interest or happiness.&quot;
@@ -12981,10 +12981,10 @@ _&quot;Let us see delineated before us the true map of man. Let us hear the dign
 &quot;I understand that the word ‘occult’ means hidden, but surely that is not meant to be the final state of all this information, hidden forever. I don’t see why there is any need to further obscure things that are actually lucid and bright. Language and strange terminology – to keep them as some private mystery. I think there is too much darkness in magic...........Annie Besant’s book where she put forward the idea that theosophical mystical energies could be portrayed as colours or abstract shapes was practically the invention of abstract art. A lot of artists rushed out and read it and suddenly thought, ‘oh God you could, you could portray love as a colour, or depression as a colour” All of a sudden abstract art happens, a flowering out of occultism&quot;
 –  Alan Moore, &quot;De Abaitua&quot; interview (1998)._
 
-![American Sun](51090739247_American%20Sun.jpg)
+![American Sun](<51090739247_American Sun.jpg>)
 
 ## 51091184018_Peace _ Vigilance (1)
-![51091184018_Peace _ Vigilance (1)](51091184018_Peace%20_%20Vigilance%20(1).jpg)
+![51091184018_Peace _ Vigilance (1)](<51091184018_Peace _ Vigilance (1).jpg>)
 
 ## Peace & Vigilance
 _&quot;These are the times that try men’s souls. The summer soldier and the sunshine patriot will, in this crisis, shrink from the service of their country; but he that stands it now deserves the love and thanks of man and woman. Tyranny, like hell, is not easily conquered.&quot;
@@ -12993,10 +12993,10 @@ _&quot;These are the times that try men’s souls. The summer soldier and the su
 &quot;A well-disciplined militia is a safe, an honorable guard to a community like this, whose inhabitants are by nature brave, and are laudably tenacious of that freedom in which they were born. From a well-regulated militia we have nothing to fear; their interest is the same with that of the State. When a country is invaded, the militia are ready to appear in its defense; they march into the field with that fortitude which a consciousness of the justice of their cause inspires; they do not jeopard their lives for a master who considers them only as the instruments of his ambition, and whom they regard only as the daily dispenser of the scanty pittance of bread and water. No; they fight for their houses, their lands, for their wives, their children; for all who claim the tenderest names, and are held dearest in their hearts; they fight pro aris et focis, for their liberty, and for themselves, and for their God.&quot;
 – John Hancock_
 
-![Peace & Vigilance](51091184018_Peace%20_%20Vigilance.jpg)
+![Peace & Vigilance](<51091184018_Peace _ Vigilance.jpg>)
 
 ## 51227582693_Always Engaged (1)
-![51227582693_Always Engaged (1)](51227582693_Always%20Engaged%20(1).jpg)
+![51227582693_Always Engaged (1)](<51227582693_Always Engaged (1).jpg>)
 
 ## Always Engaged
 _&quot;You were born together, and together you shall be forever more. You shall be together when the white wings of death scatter your days. Ay, you shall be together even in the silent memory of God. But let there be spaces in your togetherness, And let the winds of the heavens dance between you. Love one another, but make not a bond of love: Let it rather be a moving sea between the shores of your souls. Fill each other's cup, but drink not from one cup. Give one another of your bread, but eat not from the same loaf. Sing and dance together and be joyous, but let each of you be alone, Even as the strings of a lute are alone though they quiver with the same music. Give your hearts, but not into each other's keeping. For only the hand of Life can contain your hearts. And stand together yet not too near together: For the pillars of the temple stand apart, And the oak tree and the cypress grow not in each other's shadow.&quot;
@@ -13006,10 +13006,10 @@ _&quot;You were born together, and together you shall be forever more. You shall
 — William Blake, “The Marriage of Heaven and Hell”
 _
 
-![Always Engaged](51227582693_Always%20Engaged.jpg)
+![Always Engaged](<51227582693_Always Engaged.jpg>)
 
 ## 51251890980_Gyroscope (1)
-![51251890980_Gyroscope (1)](51251890980_Gyroscope%20(1).jpg)
+![51251890980_Gyroscope (1)](<51251890980_Gyroscope (1).jpg>)
 
 ## Gyroscope
 _&quot;Armageddon should not be understood as only a physical battle. It is full of incalculable dangers, among which will be epidemics, but the most ruinous consequence will be psychic perversions. People will lose trust in one another, and will compete in doing evil.&quot;
@@ -13024,7 +13024,7 @@ _&quot;Armageddon should not be understood as only a physical battle. It is full
 ![Gyroscope](51251890980_Gyroscope.jpg)
 
 ## 51258951055_Venatores Et Vidices Taciti (1)
-![51258951055_Venatores Et Vidices Taciti (1)](51258951055_Venatores%20Et%20Vidices%20Taciti%20(1).jpg)
+![51258951055_Venatores Et Vidices Taciti (1)](<51258951055_Venatores Et Vidices Taciti (1).jpg>)
 
 ## Venatores Et Vidices Taciti
 _&quot;Our union is now complete; our constitution composed, established, and approved. You are now the guardians of your own liberties. We may justly address you, as the decemviri did the Romans, and say, ‍'‍Nothing that we propose can pass into a law without your consent. Be yourselves, O Americans, the authors of those laws on which your happiness depends.‍'‍&quot;
@@ -13033,7 +13033,7 @@ _&quot;Our union is now complete; our constitution composed, established, and ap
 &quot;There is an influence which is getting strong and stronger day by day, which shows itself more and more in all departments of human activity, and influence most fruitful and beneficial—the influence of the artist. It was a happy day for the mass of humanity when the artist felt the desire of becoming a physician, an electrician, an engineer or mechanician or—whatnot—a mathematician or a financier; for it was he who wrought all these wonders and grandeur we are witnessing. It was he who abolished that small, pedantic, narrow-grooved school teaching which made of an aspiring student a galley-slave, and he who allowed freedom in the choice of subject of study according to one's pleasure and inclination, and so facilitated development.&quot;
 — Nikola Tesla, &quot;Roentgen Rays or Streams&quot;, Electrical Review (12 Aug 1896). _
 
-![Venatores Et Vidices Taciti](51258951055_Venatores%20Et%20Vidices%20Taciti.jpg)
+![Venatores Et Vidices Taciti](<51258951055_Venatores Et Vidices Taciti.jpg>)
 
 ## Air Mobility Command
 _&quot;The person who merely watches the flight of a bird gathers the impression that the bird has nothing to think of but the flapping of its wings. As a matter of fact this is a very small part of its mental labor. To even mention all the things the bird must constantly keep in mind in order to fly securely through the air would take a considerable part of the evening. If I take this piece of paper, and after placing it parallel with the ground, quickly let it fall, it will not settle steadily down as a staid, sensible piece of paper ought to do, but it insists on contravening every recognized rule of decorum, turning over and darting hither and thither in the most erratic manner, much after the style of an untrained horse. Yet this is the style of steed that men must learn to manage before flying can become an everyday sport. The bird has learned this art of equilibrium, and learned it so thoroughly that its skill is not apparent to our sight. We only learn to appreciate it when we try to imitate it.&quot;
@@ -13045,7 +13045,7 @@ _&quot;The person who merely watches the flight of a bird gathers the impression
 &quot;A second, is a relatively long amount of time. If you’re flying a plane by instruments and you’re off by one second, you’re going to miss the runway by nearly one-fifth of a mile [320 m].&quot;
 – Dr. Dennis McCarthy, astronomer at the U.S. Naval Observatory. Cited in Awake! magazine, 1988, 5/22._
 
-![Air Mobility Command](51288066438_Air%20Mobility%20Command.jpg)
+![Air Mobility Command](<51288066438_Air Mobility Command.jpg>)
 
 ## Office of Strategic Services (OSS)
 _&quot;Leges bello siluere coactae.&quot;
@@ -13058,7 +13058,7 @@ _&quot;Leges bello siluere coactae.&quot;
 &quot;Metaphysics reflects on the nature of the existent and on the nature of truth. Metaphysics lays the foundation of an age by giving it the basis of its essential form through a particular analysis of the existent and a particular conception of truth. This basis dominates all the phenomena which distinguish the age. Conversely, it must be possible to recognize the metaphysical basis in these phenomena through sufficient reflection on them. Reflection is the courage to question as deeply as possible the truth of our own presuppositions and the exact place of our own aims.&quot;
 – Martin Heidegger, M. Grene (1976) &quot;The age of the world view&quot;. In Boundary. 2, 1976._
 
-![Office of Strategic Services (OSS)](51366367074_Office%20of%20Strategic%20Services%20_OSS_.jpg)
+![Office of Strategic Services (OSS)](<51366367074_Office of Strategic Services _OSS_.jpg>)
 
 ## United States Space Force (USSF)
 _​​&quot;Great is the glory, for the strife is hard!&quot;
@@ -13071,7 +13071,7 @@ _​​&quot;Great is the glory, for the strife is hard!&quot;
 – William John Macquorn Rankine, in &quot;A Manual of the Steam Engine and other Prime Movers&quot; (1859), p. 31
 _
 
-![United States Space Force (USSF)](51366642515_United%20States%20Space%20Force%20_USSF_.jpg)
+![United States Space Force (USSF)](<51366642515_United States Space Force _USSF_.jpg>)
 
 ## Empathy
 _&quot;I believe that at every level of society - familial, tribal, national and international - the key to a happier and more successful world is the growth of compassion. We do not need to become religious, nor do we need to believe in an ideology. All that is necessary is for each of us to develop our good human qualities. I try to treat whoever I meet as an old friend. This gives me a genuine feeling of happiness. It is the practice of compassion.&quot;
@@ -13083,7 +13083,7 @@ _&quot;I believe that at every level of society - familial, tribal, national and
 ![Empathy](51411403051_Empathy.jpg)
 
 ## 51411403956_Tenacity (1)
-![51411403956_Tenacity (1)](51411403956_Tenacity%20(1).jpg)
+![51411403956_Tenacity (1)](<51411403956_Tenacity (1).jpg>)
 
 ## Tenacity
 _&quot;Fortem Posce Animum&quot;
@@ -13104,7 +13104,7 @@ And I will stand the hazard of the die.​&quot;​
 ![Tenacity](51411403956_Tenacity.jpg)
 
 ## 51411670333_Decentralized Web (1)
-![51411670333_Decentralized Web (1)](51411670333_Decentralized%20Web%20(1).jpg)
+![51411670333_Decentralized Web (1)](<51411670333_Decentralized Web (1).jpg>)
 
 ## Decentralized Web
 _Let us now exercise our intellectual faculties as best we can to apprehend the evolutionary patternings transcending our spontaneous cognitions and recognitions.
@@ -13117,7 +13117,7 @@ Every time man makes a new experiment he always learns more. He cannot learn les
 
  — R. Buckminster Fuller, 1969,&quot;Operating Manual for Spaceship Earth&quot;_
 
-![Decentralized Web](51411670333_Decentralized%20Web.jpg)
+![Decentralized Web](<51411670333_Decentralized Web.jpg>)
 
 ## Patience
 _&quot;We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard.&quot;
@@ -13132,7 +13132,7 @@ _&quot;We choose to go to the Moon in this decade and do the other things, not b
 ![Patience](51412386270_Patience.jpg)
 
 ## 51520889077_Hope (1)
-![51520889077_Hope (1)](51520889077_Hope%20(1).jpg)
+![51520889077_Hope (1)](<51520889077_Hope (1).jpg>)
 
 ## Hope
 _&quot;Only great souls know the grandeur there is in charity.&quot;
@@ -13151,7 +13151,7 @@ The vanished power of the usual reign?&quot;
 ![Hope](51520889077_Hope.jpg)
 
 ## 51521698626_Wormhole (1)
-![51521698626_Wormhole (1)](51521698626_Wormhole%20(1).jpg)
+![51521698626_Wormhole (1)](<51521698626_Wormhole (1).jpg>)
 
 ## Wormhole
 _&quot;In 1927 when people had occasion to ask me about my prognostications and I told them what I thought it would be appropriate to do about what I could see ahead for the 1950'S, 1960’s, and 1970’s people used to say to me, “Very amusing — you are a thousand years ahead of your time.” Having myself studied the increments in which we can think forwardly I was amazed at the ease with which the rest of society seemed to be able to see a thousand years ahead while I could see only one-fortieth of that time distance. As time went on people began to tell me that I was a hundred years ahead, and now they tell me that I’m a little behind the times.&quot;
@@ -13179,7 +13179,7 @@ _&quot;Nothing has such power to broaden the mind as the ability to investigate 
 &quot;Energies emanating from... Aquarius... will (through the effect of its potent force) stimulate... men into a new coherency, into a brotherhood of humanity which will ignore all racial and national differences and will carry the life of men forward into synthesis and unity. This means a tide of unifying life of such power that one cannot now vision it, but which—in a thousand years—will have welded all mankind into a perfect brotherhood.&quot;
 - Alice Bailey, &quot;Treatise on W.M.&quot; (1934)_
 
-![Air Force Office of Scientific Research (AFOSR)](51544957499_Air%20Force%20Office%20of%20Scientific%20Research%20_AFOSR_.jpg)
+![Air Force Office of Scientific Research (AFOSR)](<51544957499_Air Force Office of Scientific Research _AFOSR_.jpg>)
 
 ## Andromeda
 _On the cover of the file was stenciled WILDFIRE, and underneath, an ominous note:
@@ -13215,7 +13215,7 @@ To update our model and to reduce uncertainty
 –  Gautama Buddha, &quot;Saṃyutta Nikāya&quot;, Book 2, Verse 23, as translated by Bhikkhu Bodhi (2000), p. 555
 _
 
-![Act. Infer. Serve.](51642347998_Act_%20Infer_%20Serve_.jpg)
+![Act. Infer. Serve.](<51642347998_Act_ Infer_ Serve_.jpg>)
 
 ## Family
 _​​&quot;I learn more from the anatomy of an ant or a blade of grass...than from all the books which have been written since the beginning of time. This is so, since I have begun...to read the book of God...the model according to which I correct the human books which have been copied badly and arbitrarily and without attention to the things that are written in the original book of the Universe.&quot;
@@ -13238,7 +13238,7 @@ _&quot;I returned, and saw under the sun, that the race is not to the swift, nor
 &quot;It is a mistake to confound Alchemy with Chemistry. Modern Chemistry is a science which deals merely with the external forms in which the element of matter is manifesting itself. It never produces anything new. We may mix and compound and decompose two or more chemical bodies an unlimited number of times, and cause them to appear under various different forms, but at the end we will have no augmentation of substance, nor anything more than the combinations of the substances that have been employed at the beginning. Alchemy does not mix or compound anything, it causes that which already exists in a latent state to become active and grow. Alchemy is, therefore, more comparable to botany or agriculture than to Chemistry; and, in fact, the growth of a plant, a tree, or an animal is an alchemical process going on in the alchemical laboratory of nature, and performed by the great Alchemist, the power of God acting in nature.&quot;
 – Franz Hartmann, in In &quot;the Pronaos of the Temple of Wisdom, containing the History of the True and the False Rosicrucians&quot; (1890), p. 129_
 
-![Strange Loop](51642982190_Strange%20Loop.jpg)
+![Strange Loop](<51642982190_Strange Loop.jpg>)
 
 ## CurioDAO
 _&quot;Wild, dark times are rumbling toward us, and the prophet who wishes to write a new apocalypse will have to invent entirely new beasts, and beasts so terrible that the ancient animal symbols of St. John will seem like cooing doves and cupids in comparison.&quot;
@@ -13266,7 +13266,7 @@ Quem struit; haud ignara ac non incauta futuri.​&quot;​
 ​(​For example, the tiny ant, a creature of great industry, drags with its mouth whatever it can, and adds it to the heap which she is piling up, not unaware nor careless of the future.​)​
 ​​– ​Horace, ​&quot;​Satires​&quot;​, Book I, I, 33._
 
-![Family Tree](51717729583_Family%20Tree.jpg)
+![Family Tree](<51717729583_Family Tree.jpg>)
 
 ## Winged Snowflake
 _Blog on this piece: 
@@ -13284,7 +13284,7 @@ By formulating Helmholtz’s ideas about perception, in terms of modern-day theo
 
 In this paper, we show these perceptual processes are just one aspect of emergent behaviours of systems that conform to a free energy principle. The free energy considered here measures the difference between the probability distribution of environmental quantities that act on the system and an arbitrary distribution encoded by its configuration. The system can minimise free energy by changing its configuration to affect the way it samples the environment or change the distribution it encodes. These changes correspond to action and perception respectively and lead to an adaptive exchange with the environment that is characteristic of biological systems. This treatment assumes that the system’s state and structure encode an implicit and probabilistic model of the environment. We will look at the models entailed by the brain and how minimisation of its free energy can explain its dynamics and structure._
 
-![Winged Snowflake](51735377943_Winged%20Snowflake.jpg)
+![Winged Snowflake](<51735377943_Winged Snowflake.jpg>)
 
 ## Complexity Weekend
 _<a href="https://complexityweekend.com/" rel="noreferrer nofollow">complexityweekend.com/</a>
@@ -13300,7 +13300,7 @@ _<a href="https://complexityweekend.com/" rel="noreferrer nofollow">complexitywe
 &quot;General systems theory is the scientific exploration of &quot;wholes&quot; and &quot;wholeness&quot; which, not so long ago, were considered metaphysical notions transcending the boundaries of science. Hierarchic structure, stability, teleology, differentiation, approach to and maintenance of steady states, goal-directedness — these are a few of such general system properties.&quot;
 – Ervin László (1972) &quot;Introduction to Systems Philosophy: Toward a New Paradigm of Contemporary Thought&quot;. p. xviii_
 
-![Complexity Weekend](51758245960_Complexity%20Weekend.jpg)
+![Complexity Weekend](<51758245960_Complexity Weekend.jpg>)
 
 ## Battle Hymn
 _Battle Hymn of the Republic
@@ -13317,7 +13317,7 @@ Our God is marching on.
 &quot;God, the supreme being, is neither circumscribed by space, nor touched by time; he cannot be found in a particular direction, and his essence cannot change. The secret conversation is thus entirely spiritual; it is a direct encounter between God and the soul, abstracted from all material constraints.&quot;
 - Avicenna, as quoted in 366 &quot;Readings From Islam&quot; (2000), edited by Robert Van der Weyer_
 
-![Battle Hymn](51772832638_Battle%20Hymn.jpg)
+![Battle Hymn](<51772832638_Battle Hymn.jpg>)
 
 ## DeSchool
 _&quot;And the Jews marveled, saying, How knoweth this man the Scriptures, seeing that he never learned!&quot;
@@ -13359,7 +13359,7 @@ _&quot;The bigger the system grows the more disastrous the results of its breakd
 &quot;How shall I describe Youth, the time of contradictions and anomalies The fiercest radicalisms, the most dogged conservatisms, irrepressible gayety, bitter melancholy,—all these moods are equally part of that showery spring-time of life.&quot;
 – Randolph Bourne, §I of &quot;Youth,&quot; The Atlantic Monthly 100, no. 4 (April 1912)_
 
-![26 Too](51934948485_26%20Too.jpg)
+![26 Too](<51934948485_26 Too.jpg>)
 
 ## Ameise
 _&quot;In regard to the Germans and foreigners, I esteem them no better than other people, nor any worse.&quot;
@@ -13383,7 +13383,7 @@ _&quot;There seems to be a lot of retro-game nostalgia in recent years. Perhaps 
 &quot;Technology is so much fun but we can drown in our technology. The fog of information can drive out knowledge.&quot;
 – Daniel J. Boorstin_
 
-![ToeJam & Earl](51934950085_ToeJam%20_%20Earl.jpg)
+![ToeJam & Earl](<51934950085_ToeJam _ Earl.jpg>)
 
 ## Half Dome (Yosemite)
 _Rocks and waters, etc., are words of God and so are men. We all flow from one fountain Soul. All are expressions of one Love. God does not appear, and flow out, only from narrow chinks and round bored wells here and there in favored races and places, but He flows in grand undivided currents, shoreless and boundless over creeds and forms and all kinds of civilizations and peoples and beasts, saturating all and fountainizing all.
@@ -13394,7 +13394,7 @@ There is at least a punky spark in my heart and it may blaze in this autumn gold
 
 John Muir_
 
-![Half Dome (Yosemite)](51934950750_Half%20Dome%20_Yosemite_.jpg)
+![Half Dome (Yosemite)](<51934950750_Half Dome _Yosemite_.jpg>)
 
 ## Encircling the Flag
 _&quot;Chaos of thought and passion, all confused;
@@ -13411,7 +13411,7 @@ The glory, jest and riddle of the world!&quot;
 &quot;Security is mostly a superstition. It does not exist in nature, nor do the children of men as a whole experience it. Avoiding danger is no safer in the long run than outright exposure. Life is either a daring adventure, or nothing.&quot;
 – Helen Keller, &quot;The Open Door&quot; (1957)._
 
-![Encircling the Flag](51934951010_Encircling%20the%20Flag.jpg)
+![Encircling the Flag](<51934951010_Encircling the Flag.jpg>)
 
 ## Dialectical Forest
 _​&quot;Any author who uses mathematics should always express in ordinary language the meaning of the assumptions he admits, as well as the significance of the results obtained. The more abstract his theory, the more imperative this obligation. In fact, mathematics are and can only be a tool to explore reality. In this exploration, mathematics do not constitute an end in itself, they are and can only be a means.&quot;
@@ -13420,7 +13420,7 @@ _​&quot;Any author who uses mathematics should always express in ordinary lang
 &quot;Let us learn from the lips of death the lessons of life. Let us live truly while we live, live for what is true and good and lasting. And let the memory of our dead help us to do this. For they are not wholly separated from us, if we remain loyal to them. In spirit they are with us. And we may think of them as silent, invisible, but real presences in our households.&quot;
 – Felix Adler, &quot;Life and Destiny&quot; (1913), Section 8: Suffering and Consolation._
 
-![Dialectical Forest](51965460122_Dialectical%20Forest.jpg)
+![Dialectical Forest](<51965460122_Dialectical Forest.jpg>)
 
 ## Integral Fractal
 _&quot;That swarm of ants that I observed, each one following the one ahead, have every one been Indra in the world of the gods by virtue of their own past action. And now, by virtue of their deeds done in the past, they have gradually fallen to the state of ants.&quot;
@@ -13439,7 +13439,7 @@ Which pillage they with merry march bring home.&quot;
 
 &quot;Action implies motion; but there may be motion, as in a clock, where, properly speaking, there is no agent. Many motions necessary to life are continually going on in the human body; as those of the heart, lungs, and arteries: but these are not human actions, because man is not the cause of them. For the same reason, breathing, and the motion of the eyelids, are not actions; because, though we may act for a little time in suspending them, for the purpose of seeing or hearing more accurately, they commonly go on without any care of ours; and, while they do so, we are, in regard to them, not active, but passive. ... All action is the work of an agent, that is, of a being who acts; and every being who acts is the beginner of that motion which constitutes the action.&quot;– James Beattie, &quot;Elements of Moral Science&quot;_
 
-![Integral Fractal](51966530078_Integral%20Fractal.jpg)
+![Integral Fractal](<51966530078_Integral Fractal.jpg>)
 
 ## Tie a Yellow Ribbon Round the Ole Oak Tree
 _&quot;The stock market was created by the telegraph and the telephone, and its panics are engineered by carefully orchestrated stories in the press.&quot;
@@ -13452,7 +13452,7 @@ _&quot;The stock market was created by the telegraph and the telephone, and its 
 &quot;We ought, then, to set up images of a kind that can adhere longest in memory. And we shall do so if we establish similitudes as striking as possible; if we set up images that are not many or vague but active; if we assign to them exceptional beauty or singular ugliness; if we ornament some of them, as with crowns or purple cloaks, so that the similitude may be more distinct to us; or if we somehow disfigure them, as by introducing one stained with blood or soiled with mud and smeared with red paint, so that its form is more striking, or by assigning certain comic effects to our images, for that, too, will ensure our remembering them more readily.&quot;
 - &quot;Rhetorica Ad Herrenium&quot;, III, xxii (1st century BCE)_
 
-![Tie a Yellow Ribbon Round the Ole Oak Tree](51991871312_Tie%20a%20Yellow%20Ribbon%20Round%20the%20Ole%20Oak%20Tree.jpg)
+![Tie a Yellow Ribbon Round the Ole Oak Tree](<51991871312_Tie a Yellow Ribbon Round the Ole Oak Tree.jpg>)
 
 ## Scientific American
 _&quot;The first responsibility of a leader is to define reality. The last is to say thank you. In between the two, the leader must become a servant and a debtor. That sums up the progress of an artful leader.&quot;
@@ -13467,7 +13467,7 @@ _&quot;The first responsibility of a leader is to define reality. The last is to
 &quot;It is necessary to recognize that with respect to unity and coherence, mythical explanation carries one much further than scientific explanation. For science does not, as its primary objective, seek a complete and definitive explanation of the Universe... It satisfies itself with partial and conditional responses. Whether they be magical, mythical, or religious, the other systems of explanation include everything. They are applied to all domains. They answer all questions. They account for the origin, for the present and even for the evolution of the universe.&quot;
 – François Jacob, as quoted by John D. Barrow, &quot;New Theories of Everything&quot; (2007)._
 
-![Scientific American](51993417610_Scientific%20American.jpg)
+![Scientific American](<51993417610_Scientific American.jpg>)
 
 ## We Forage Together
 _&quot;When software systems become so intractable that they can no longer be controlled, swarm intelligence offers an alternative way of designing an ‘intelligent’ systems, in which autonomy, emergence, and distributed functioning replace control, preprogramming, and centralization.&quot;
@@ -13480,7 +13480,7 @@ But to the earth some special good doth give.&quot;
 &quot;You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something — your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.&quot;
 – Steve Jobs, in an address at Stanford University (12 June 2005)_
 
-![We Forage Together](52158716688_We%20Forage%20Together.jpg)
+![We Forage Together](<52158716688_We Forage Together.jpg>)
 
 ## American Invocation
 _&quot;The barriers of time and space vanish. All America that ever was and ever will be lives every moment...&quot;
@@ -13498,7 +13498,7 @@ _&quot;The barriers of time and space vanish. All America that ever was and ever
 &quot;The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.&quot;
 – Fourth Amendment to the U.S. Constitution (1791)._
 
-![American Invocation](52193465428_American%20Invocation.jpg)
+![American Invocation](<52193465428_American Invocation.jpg>)
 
 ## Folk Dance
 _&quot;As to dancing, my dear, I never dance, unless I am allowed to do it in my own peculiar way. There is no use trying to describe it: it has to be seen to be believed.&quot;
@@ -13515,7 +13515,7 @@ At the ultimate heart of the body , at the heart of.
 the world there is no solidity…there is only the dance.&quot;
 – George B.Leonard_
 
-![Folk Dance](52196894845_Folk%20Dance.jpg)
+![Folk Dance](<52196894845_Folk Dance.jpg>)
 
 ## Sea Shell
 _​&quot;There is something anachronistic about the very idea of aphorisms or maxims. Contemporary culture isn’t stately enough, or stable enough, to support them.&quot;
@@ -13527,7 +13527,7 @@ _​&quot;There is something anachronistic about the very idea of aphorisms or m
 &quot;Let every man or woman here, if you never hear me again, remember this, that if you wish to be great at all, you must begin where you are and what you are, in Philadelphia, now. He that can give to his city any blessing, he who can be a good citizen while he lives here, he that can make better homes, he that can be a blessing whether he works in the shop or sits behind the counter or keeps house, whatever be his life, he who would be great anywhere must first be great in his own Philadelphia.&quot;
 – Russell H. Conwell, &quot;Acres of Diamonds &quot;(1915), p. 59. (Conwell gave this public address more than 6,000 times from 1877 until his death in 1925. He tailored his speech to individual cities by changing Philadelphia, his home town, to the name of the city where he was speaking)._
 
-![Sea Shell](52302173546_Sea%20Shell.jpg)
+![Sea Shell](<52302173546_Sea Shell.jpg>)
 
 ## A Center For Ants
 _Если книг читать не будешь
@@ -13550,7 +13550,7 @@ _Если книг читать не будешь
 (I am the Roman emperor, and above grammar.)
 ​​– ​Emperor Sigismund I_
 
-![A Center For Ants](52302176466_A%20Center%20For%20Ants.jpg)
+![A Center For Ants](<52302176466_A Center For Ants.jpg>)
 
 ## Balance
 _​Abraham Van Helsing: &quot;Nothing is too small. I counsel you, put down in record even your doubts and surmises. Hereafter it may be of interest to you to see how true you guess. We learn from failure, not from success!&quot;
@@ -13599,7 +13599,7 @@ _&quot;No one doubts that an ordinary man can get on with this world: but we dem
 
 _
 
-![State of Louisiana (Union, Justice, Confidence)](52310375834_State%20of%20Louisiana%20_Union_%20Justice_%20Confidence_.jpg)
+![State of Louisiana (Union, Justice, Confidence)](<52310375834_State of Louisiana _Union_ Justice_ Confidence_.jpg>)
 
 ## Eternal Flame
 _&quot;That which is absurd and impossible, that which in any other history would be called falsehood, deception, outrage and cruelty, cannot be made reasonable, righteous, and true by the added words: 'Thus saith the Lord.'&quot;
@@ -13611,7 +13611,7 @@ _&quot;That which is absurd and impossible, that which in any other history woul
 &quot;She approached the gates of Paradise on earth, and saw the Cherubim guarding the gates of Paradise, and sat down facing the Flaming Sword, for she originated from that flame. When that flame revolved, she fled.&quot;
 – Zohar 1:119b_
 
-![Eternal Flame](52713183206_Eternal%20Flame.jpg)
+![Eternal Flame](<52713183206_Eternal Flame.jpg>)
 
 ## Self-Evident and Self-Evidencing
 _&quot;Am I Self-Conscious? (Or Does Self-Organization Entail Self-Consciousness?)&quot;
@@ -13624,7 +13624,7 @@ Sec. Theoretical and Philosophical Psychology
 
 Is self-consciousness necessary for consciousness? The answer is yes. So there you have it—the answer is yes. This was my response to a question I was asked to address in a recent AEON piece (<a href="https://aeon.co/essays/consciousness-is-not-a-thing-but-a-process-of-inference" rel="noreferrer nofollow">aeon.co/essays/consciousness-is-not-a-thing-but-a-process...</a>). What follows is based upon the notes for that essay, with a special focus on self-organization, self-evidencing and self-modeling. I will try to substantiate my (polemic) answer from the perspective of a physicist. In brief, the argument goes as follows: if we want to talk about creatures, like ourselves, then we have to identify the characteristic behaviors they must exhibit. This is fairly easy to do by noting that living systems return to a set of attracting states time and time again. Mathematically, this implies the existence of a Lyapunov function that turns out to be model evidence (i.e., self-evidence) in Bayesian statistics or surprise (i.e., self-information) in information theory. This means that all biological processes can be construed as performing some form of inference, from evolution through to conscious processing. If this is the case, at what point do we invoke consciousness? The proposal on offer here is that the mind comes into being when self-evidencing has a temporal thickness or counterfactual depth, which grounds inferences about the consequences of my action. On this view, consciousness is nothing more than inference about my future; namely, the self-evidencing consequences of what I could do._
 
-![Self-Evident and Self-Evidencing](52713661893_Self-Evident%20and%20Self-Evidencing.jpg)
+![Self-Evident and Self-Evidencing](<52713661893_Self-Evident and Self-Evidencing.jpg>)
 
 ## All-domain Anomaly Resolution Office (AARO)
 _The All-domain Anomaly Resolution Office (AARO) is an office within the United States Office of the Secretary of Defense that investigates unidentified flying objects (UFOs) and other phenomena in the air, sea, and/or space and/or on land: sometimes referred to as &quot;unidentified aerial phenomena&quot; or &quot;unidentified anomalous phenomena&quot; (UAP).
@@ -13641,12 +13641,12 @@ _The All-domain Anomaly Resolution Office (AARO) is an office within the United 
 &quot;God knows I gave my best in baseball at all times and no man on earth can truthfully judge me otherwise.&quot;
 - Shoeless Joe Jackson_
 
-![All-domain Anomaly Resolution Office (AARO)](53164392892_All-domain%20Anomaly%20Resolution%20Office%20_AARO_.jpg)
+![All-domain Anomaly Resolution Office (AARO)](<53164392892_All-domain Anomaly Resolution Office _AARO_.jpg>)
 
 ## Self Portrait
 _Note the upload date of previous drawing (Oct. 18th, 2009) and the upload date of this one (Jan. 31st, 2012). For the interval between Junior year of high school and Sophmore year of undergraduate, art was life, ergo unscannable.   _
 
-![Self Portrait](6800053591_Self%20Portrait.jpg)
+![Self Portrait](<6800053591_Self Portrait.jpg>)
 
 ## Brain
 _Expansion and Retraction._
@@ -13687,7 +13687,7 @@ _&quot;Nothing is rich but the inexhaustible wealth of nature. She shows us only
  — Michael Faraday
 _
 
-![Circuit Breaker](7002166393_Circuit%20Breaker.jpg)
+![Circuit Breaker](<7002166393_Circuit Breaker.jpg>)
 
 ## Conception
 _Conception is the magic moment in which two unfulfilled biological halves teleologically complete each other. The moment of conception immediately sends shockwaves of molecular signals that resonate through the zygote. These oscillations are amplified, stack to create heavenly harmonies, and eventually, after full differentiation, will climax in the production of more sex cells - that the process might occur again. The ontology of this process is known as development, and the sum of the changes between iterations is known as evolution. Conception is the special space in which there is dissolution of Self, transcendence of Ego, and connection to past and future. _
@@ -13702,7 +13702,7 @@ _We live by the light of an inner Sun._
 ## Noetical Body
 _For J. S._
 
-![Noetical Body](7306181624_Noetical%20Body.jpg)
+![Noetical Body](<7306181624_Noetical Body.jpg>)
 
 ## String Theory
 _Isaiah 43:18-19 Young's Literal Translation (YLT)
@@ -13711,7 +13711,7 @@ _Isaiah 43:18-19 Young's Literal Translation (YLT)
 
 19 Lo, I am doing a new thing, now it springeth up, Do ye not know it? Yea, I put in a wilderness a way, In a desolate place -- floods._
 
-![String Theory](7353400194_String%20Theory.jpg)
+![String Theory](<7353400194_String Theory.jpg>)
 
 ## Chiasma
 _Mediated by Spo11_
@@ -13733,7 +13733,7 @@ Will power is to the mind like a strong blind man who carries on his shoulders a
 ## Gram Positivity
 _Inside, Outside, and the division._
 
-![Gram Positivity](7997764425_Gram%20Positivity.jpg)
+![Gram Positivity](<7997764425_Gram Positivity.jpg>)
 
 ## Triskelion
 _&quot;All is deep and strange to the eyes that see. Our lives are a deeper mystery than we have dreamed.&quot;
@@ -13755,7 +13755,7 @@ _&quot;I is Another.&quot;_
 _ECM == Nucleus 
 _
 
-![Nuclear Matrix](8191862262_Nuclear%20Matrix.jpg)
+![Nuclear Matrix](<8191862262_Nuclear Matrix.jpg>)
 
 ## 8
 _Well........that was intense........
@@ -13804,7 +13804,7 @@ _&quot;I'm so happy!
 AHA! Happy go lucky me!&quot; 
 -Tiny Tim_
 
-![Tree Man](8295910948_Tree%20Man.jpg)
+![Tree Man](<8295910948_Tree Man.jpg>)
 
 ## Stellar
 _&quot; To bring up children without comparison is true education.&quot; Krishnamurti_

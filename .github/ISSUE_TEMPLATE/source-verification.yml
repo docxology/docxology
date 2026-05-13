@@ -1,0 +1,22 @@
+name: Source verification
+description: Ask for a claim, count, or public identifier to be checked.
+title: "Source verification: "
+labels: ["evidence", "verification"]
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim to verify
+      description: Paste the claim, count, identifier, or page text that needs verification.
+    validations:
+      required: true
+  - type: input
+    id: current_source
+    attributes:
+      label: Current source
+      description: Link to the current evidence source, if known.
+  - type: input
+    id: suggested_source
+    attributes:
+      label: Suggested source
+      description: Link to a better or newer source, if known.

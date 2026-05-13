@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications — Daniel Ari Friedman, PhD | 114 Works</title>
-    <meta name="description" content="114 catalogued works by Daniel Ari Friedman across Active Inference, ant colony cognition, cognitive security, and computational biology.">
+    <title>Publications — Daniel Ari Friedman, PhD | 115 Works</title>
+    <meta name="description" content="115 catalogued works by Daniel Ari Friedman across Active Inference, ant colony cognition, cognitive security, art, and computational biology.">
     <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/publications.html">
@@ -12,11 +12,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <link rel="alternate" type="text/x-bibtex" href="/bibliography.bib" title="BibTeX bibliography">
+    <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
+    <link rel="alternate" type="application/x-research-info-systems" href="/bibliography.ris" title="RIS bibliography">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Publications — Daniel Ari Friedman, PhD | 114 Works">
-    <meta property="og:description" content="114 catalogued works by Daniel Ari Friedman across Active Inference, ant colony cognition, cognitive security, and computational biology.">
+    <meta property="og:title" content="Publications — Daniel Ari Friedman, PhD | 115 Works">
+    <meta property="og:description" content="115 catalogued works by Daniel Ari Friedman across Active Inference, ant colony cognition, cognitive security, art, and computational biology.">
     <meta property="og:url" content="https://danielarifriedman.com/publications.html">
-    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <script type="application/ld+json">
@@ -24,7 +31,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Publications — Daniel Ari Friedman, PhD",
-    "description": "Complete bibliography: 114 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
+    "description": "Complete bibliography: 115 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -1968,6 +1975,23 @@
             },
             "keywords": "🛡️",
             "sameAs": "https://doi.org/10.5281/zenodo.4203765"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🎨",
+            "sameAs": "https://doi.org/10.5281/zenodo.20144984"
         }
     ]
 }
@@ -2009,6 +2033,8 @@
             <a href="index.html#about" role="menuitem">About</a>
             <a href="index.html#research" role="menuitem">Research</a>
             <a href="publications.html" class="active" role="menuitem">Publications</a>
+            <a href="domains.html" role="menuitem">Domains</a>
+            <a href="discovery.html" role="menuitem">Discovery</a>
             <a href="index.html#art" role="menuitem">Art</a>
             <a href="media.html" role="menuitem">Media</a>
             <a href="index.html#teaching" role="menuitem">Teaching</a>
@@ -2019,7 +2045,7 @@
 
     <header class="page-hero">
         <h1>📚 Publications</h1>
-        <p class="sub">114 works spanning Active Inference, computational entomology, cognitive security, art &amp; synergetics, genetics, and open science — as of April 2026</p>
+        <p class="sub">115 works spanning Active Inference, computational entomology, cognitive security, art &amp; synergetics, genetics, and open science — as of May 2026</p>
         <div class="meta-pills">
             <span class="pill gold">📊 812 citations · h-index 15 · i10-index 17</span>
             <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" class="pill">Google Scholar</a>
@@ -2043,7 +2069,14 @@
                 <button type="button" class="filter-btn" onclick="setTypeFilter('Series',this)" id="filter-series">Series</button>
                 <button type="button" class="filter-btn" onclick="setTypeFilter('Playbook',this)" id="filter-playbook">Playbooks</button>
             </div>
-            <span class="result-count" id="result-count" aria-live="polite">114 of 114 shown</span>
+            <div class="filter-selects" aria-label="Additional publication filters">
+                <label for="year-filter"><span>Year</span><select id="year-filter" onchange="setYearFilter(this.value)"><option value="all">All years</option></select></label>
+                <label for="venue-filter"><span>Venue</span><select id="venue-filter" onchange="setVenueFilter(this.value)"><option value="all">All venues</option></select></label>
+                <span class="filter-toggle"><input type="checkbox" id="doi-filter" onchange="filterPubs()"> <label for="doi-filter">DOI only</label></span>
+                <span class="filter-toggle"><input type="checkbox" id="docs-filter" onchange="filterPubs()"> <label for="docs-filter">Paper folder</label></span>
+                <button type="button" class="filter-btn" onclick="resetFilters()">Reset</button>
+            </div>
+            <span class="result-count" id="result-count" aria-live="polite">115 of 115 shown</span>
         </form>
 
         <div class="domain-legend" role="group" aria-label="Filter by domain">
@@ -2087,130 +2120,133 @@
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="software.html">Software</a>
+            <a href="search.html">Search</a>
+            <a href="discovery.html">Discovery</a>
             <a href="collaborators.html">Collaborators</a>
             <a href="media.html">Media</a>
             <a href="https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md">Raw Markdown</a>
             <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">Google Scholar</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: April 2026</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
 
     <script>
-        /* <PUBS_SYNC_BEGIN> */
-    const PUBS = [ {num:1,year:2026,domain:"💻",type:"Paper",title:"A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.19139090"},
-        {num:2,year:2026,domain:"🎥",type:"Series",title:"Active Inference Journal — 500+ videos on Active Inference with transcripts",venue:"YouTube",doi:"https://video.activeinference.institute/"},
-        {num:3,year:2026,domain:"🎨",type:"Paper",title:"Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.18807970"},
-        {num:4,year:2026,domain:"🎨",type:"Paper",title:"The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.19335196"},
-        {num:5,year:2026,domain:"🛡️",type:"Paper",title:"Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.18364119"},
-        {num:6,year:2026,domain:"🎥",type:"Series",title:"Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",venue:"YouTube",doi:"https://www.youtube.com/@danielarifriedman/playlists"},
-        {num:7,year:2026,domain:"🎨",type:"Paper",title:"The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.18600041"},
-        {num:8,year:2025,domain:"🎥",type:"Presentation",title:"5th Applied Active Inference Symposium — Abstract Book",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.17555266"},
-        {num:9,year:2025,domain:"💻",type:"Paper",title:"Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17228945"},
-        {num:10,year:2025,domain:"🧠",type:"Paper",title:"CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15170907"},
-        {num:11,year:2025,domain:"🐜",type:"Paper",title:"Computational Complexity and Energetics of the Ant Stack",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17238736"},
-        {num:12,year:2025,domain:"🧠",type:"Paper",title:"EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17229924"},
-        {num:13,year:2025,domain:"🧠",type:"Paper",title:"Increasing the Accessibility and Applicability of Active Inference",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15061667"},
-        {num:14,year:2025,domain:"💻",type:"Paper",title:"MDKV: A Multitrack Markdown Container for Structured, Portable Documents",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16790554"},
-        {num:15,year:2025,domain:"💻",type:"Paper",title:"Markdown Decision Process: A Framework for Probabilistic Document Analysis",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17244386"},
-        {num:16,year:2025,domain:"🎨",type:"Paper",title:"On Cognitive Art & Science: Toward Wholeness From Both Sides",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16740439"},
-        {num:17,year:2025,domain:"🎨",type:"Paper",title:"On Time",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15168381"},
-        {num:18,year:2025,domain:"🎨",type:"Paper",title:"QuadMath: An Analytical Review of 4D and Quadray Coordinates",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16887800"},
-        {num:19,year:2025,domain:"💻",type:"Paper",title:"ResNei: Solution Design Document",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15389682"},
-        {num:20,year:2025,domain:"🎨",type:"Paper",title:"Symergetics: Symbolic Synergetics for Rational Arithmetic",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17114389"},
-        {num:21,year:2025,domain:"🎨",type:"Paper",title:"Synthesis of Agent and Niche",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17235137"},
-        {num:22,year:2025,domain:"🎥",type:"Presentation",title:"Systems Processes, Active Inference, and Beyond",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.17138223"},
-        {num:23,year:2025,domain:"🧠",type:"Paper",title:"Temporal Depth in a Coherent Self and in Depersonalization",venue:"Frontiers in Psychology",doi:"https://doi.org/10.3389/fpsyg.2025.1585315"},
-        {num:24,year:2025,domain:"🌍",type:"Paper",title:"The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.14108991"},
-        {num:25,year:2025,domain:"🐜",type:"Paper",title:"The Ant Stack",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16782756"},
-        {num:26,year:2025,domain:"💻",type:"Paper",title:"The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",venue:"ArXiv",doi:"https://doi.org/10.48550/arXiv.2505.17500"},
-        {num:27,year:2025,domain:"🧠",type:"Paper",title:"Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",venue:"Entropy",doi:"https://doi.org/10.3390/e27050459"},
-        {num:28,year:2025,domain:"🐜",type:"Paper",title:"Towards a Science of Consciousness and Social Complexity... For Ants",venue:"Book Chapter",doi:"https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes"},
-        {num:29,year:2024,domain:"🌍",type:"Paper",title:"Aligning Active Inference Ontology to SUMO",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.11459322"},
-        {num:30,year:2024,domain:"🎥",type:"Presentation",title:"BioFirm Development at Applied Active Inference Symposium 2024",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.14861595"},
-        {num:31,year:2024,domain:"🛡️",type:"Paper",title:"Bridging gaps in image meme research: A multidisciplinary paradigm",venue:"JASIST",doi:"https://doi.org/10.1002/asi.24900"},
-        {num:32,year:2024,domain:"🐜",type:"Paper",title:"Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",venue:"Ecology & Evolution",doi:"https://doi.org/10.1002/ece3.70063"},
-        {num:33,year:2024,domain:"🛡️",type:"Paper",title:"Comments on National Digital Twins R&D Strategic Plan",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.13273681"},
-        {num:34,year:2024,domain:"🧠",type:"Paper",title:"Enhancing Population-based Search with Active Inference",venue:"ArXiv",doi:"https://doi.org/10.48550/arXiv.2408.09548"},
-        {num:35,year:2024,domain:"🛡️",type:"Paper",title:"FarmWorks: Decentralized AI Agents for Personalized Solutions",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.13754585"},
-        {num:36,year:2024,domain:"🧠",type:"Paper",title:"Federated inference and belief sharing",venue:"Neuroscience & Biobehavioral Reviews",doi:"https://doi.org/10.1016/j.neubiorev.2023.105500"},
-        {num:37,year:2024,domain:"🎨",type:"Paper",title:"Four-fold Fields of Quantum Dreams",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10798145"},
-        {num:38,year:2024,domain:"🎥",type:"Presentation",title:"MathArt Stream #8: William Blake and Active Inference",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.13711301"},
-        {num:39,year:2024,domain:"🎥",type:"Presentation",title:"Sensemaking Federation: Exploring the Frontiers of Digital Innovation",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.14574046"},
-        {num:40,year:2024,domain:"🧠",type:"Paper",title:"Shared Protentions in Multi-Agent Active Inference",venue:"Entropy",doi:"https://doi.org/10.3390/e26040303"},
-        {num:41,year:2024,domain:"🌍",type:"Paper",title:"The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.14108991"},
-        {num:42,year:2024,domain:"🎨",type:"Paper",title:"Way Finding in the Infinite Imaginarium",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10601082"},
-        {num:43,year:2024,domain:"🧬",type:"Paper",title:"Why Paleolithic Rockstars were both enigmatic and sporadic",venue:"Physics of Life Reviews",doi:"https://doi.org/10.1016/j.plrev.2024.04.010"},
-        {num:44,year:2024,domain:"🎨",type:"Paper",title:"Writing on Curio Cards for the \"On NFT\" book",venue:"Taschen",doi:"https://www.worldcat.org/isbn/978-3-8365-9970-2"},
-        {num:45,year:2023,domain:"🧠",type:"Paper",title:"A guided tour through the spaces of particular \"minds\"",venue:"Physics of Life Reviews",doi:"https://doi.org/10.1016/j.plrev.2023.11.001"},
-        {num:46,year:2023,domain:"🐜",type:"Paper",title:"A single-pheromone model accounts for empirical patterns of ant colony foraging",venue:"Cognitive Systems Research",doi:"https://doi.org/10.1016/j.cogsys.2023.02.005"},
-        {num:47,year:2023,domain:"🐜",type:"Paper",title:"A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10400744"},
-        {num:48,year:2023,domain:"🧠",type:"Paper",title:"A variational synthesis of evolutionary and developmental dynamics",venue:"Entropy",doi:"https://doi.org/10.3390/e25070964"},
-        {num:49,year:2023,domain:"🛡️",type:"Paper",title:"ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10296601"},
-        {num:50,year:2023,domain:"🧠",type:"Paper",title:"An Account of Active Inference Modeling",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.8415313"},
-        {num:51,year:2023,domain:"🛡️",type:"Paper",title:"Cognitive Sovereignty & Active Inference in the State of Exception",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10038232"},
-        {num:52,year:2023,domain:"🛡️",type:"Paper",title:"Comments on AI Accountability Policy to NTIA",venue:"NTIA",doi:"https://doi.org/10.5281/zenodo.8025957"},
-        {num:53,year:2023,domain:"🧠",type:"Paper",title:"Distributed Science — The Scientific Process as Multi-Scale Active Inference",venue:"OSF",doi:"https://doi.org/10.31219/osf.io/dnw5k"},
-        {num:54,year:2023,domain:"💻",type:"Paper",title:"Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10160656"},
-        {num:55,year:2023,domain:"🐜",type:"Paper",title:"Experimental Entomology in the Age of Video",venue:"JoVE",doi:"https://doi.org/10.3791/65002"},
-        {num:56,year:2023,domain:"🧠",type:"Paper",title:"Generalized Notation Notation for Active Inference Models",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7803328"},
-        {num:57,year:2023,domain:"🧠",type:"Paper",title:"Generative Research Teams: Active Inference Compositions for Research and Meta-Science",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.8164667"},
-        {num:58,year:2023,domain:"🎥",type:"Presentation",title:"Of Ants & Aging",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.7855582"},
-        {num:59,year:2023,domain:"🛡️",type:"Paper",title:"Open Access science needs Open Science Sensemaking (OSSm)",venue:"MetaArXiv",doi:"https://doi.org/10.31222/osf.io/9nb3u"},
-        {num:60,year:2023,domain:"🎥",type:"Presentation",title:"Postdoc review (2020–2023)",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.8377988"},
-        {num:61,year:2023,domain:"🌍",type:"Paper",title:"The Active Inference Institute and Active Inference Ecosystem (v1)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.8266281"},
-        {num:62,year:2023,domain:"🛡️",type:"Paper",title:"The P3IF: Properties, Processes, and Perspectives Inter-Framework",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10034512"},
-        {num:63,year:2023,domain:"🧬",type:"Paper",title:"To comment or not to comment",venue:"Physics of Life Reviews",doi:"https://doi.org/10.1016/j.plrev.2023.06.002"},
-        {num:64,year:2023,domain:"🎥",type:"Course",title:"Transcript of Chris Fields, \"Physics as Information Processing\" course",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10447642"},
-        {num:65,year:2023,domain:"🎨",type:"Paper",title:"William Blake & Buckminster Fuller: Lives in Juxtaposition",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7514368"},
-        {num:66,year:2022,domain:"🧠",type:"Paper",title:"An Active Inference Ontology for Decentralized Science",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.6320574"},
-        {num:67,year:2022,domain:"🌍",type:"Paper",title:"Catechism for Towards Active Diffusion",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7443848"},
-        {num:68,year:2022,domain:"🛡️",type:"Paper",title:"From Users to (Sense)Makers: Stigmergic Social Annotation",venue:"Hypertext '22",doi:"https://doi.org/10.48550/arXiv.2205.06345"},
-        {num:69,year:2022,domain:"🧬",type:"Paper",title:"On free will or the lack thereof (interview with Robert Sapolsky)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.5281/zenodo.7394901"},
-        {num:70,year:2022,domain:"🎨",type:"Paper",title:"Predictive Processing Interpretation of the Mirror Test",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7377256"},
-        {num:71,year:2022,domain:"🛡️",type:"Book",title:"Structuring the Information Commons: Open Standards and Cognitive Security",venue:"COGSEC.org",doi:"https://cogsec.org"},
-        {num:72,year:2022,domain:"🛡️",type:"Paper",title:"Systems Modeling and Cognitive Audits for Hypercert Ecosystems",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7626769"},
-        {num:73,year:2022,domain:"🧠",type:"Paper",title:"The Free Energy Principle & Active Inference: a Systematic Literature Analysis",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7449368"},
-        {num:74,year:2022,domain:"🛡️",type:"Paper",title:"TrustFinder: Recommendations for Community-Based Trust Systems",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7093837"},
-        {num:75,year:2021,domain:"🐜",type:"Paper",title:"Active Inferants: An Active Inference Framework for Ant Colony Behavior",venue:"Frontiers in Behavioral Neuroscience",doi:"https://doi.org/10.3389/fnbeh.2021.647732"},
-        {num:76,year:2021,domain:"🧠",type:"Paper",title:"Active Inference in Modeling Conflict",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.5759807"},
-        {num:77,year:2021,domain:"🛡️",type:"Paper",title:"Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.5573947"},
-        {num:78,year:2021,domain:"🎥",type:"Playbook",title:"Innovator's Digital Playbook",venue:"Web",doi:"https://innovatorsdigitalplaybook.com/"},
-        {num:79,year:2021,domain:"🛡️",type:"Book",title:"Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",venue:"COGSEC.org",doi:"https://cogsec.org"},
-        {num:80,year:2021,domain:"🛡️",type:"Paper",title:"Narrative Information Management",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.5573287"},
-        {num:81,year:2021,domain:"🎥",type:"Playbook",title:"The Facilitator's Catechism Playbook",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4579414"},
-        {num:82,year:2020,domain:"🧠",type:"Paper",title:"Active Inference & Behavior Engineering for Teams",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4021163"},
-        {num:83,year:2020,domain:"🎥",type:"Course",title:"Communication for Remote Teams",venue:"Udemy",doi:"https://www.udemy.com/course/communication-for-remote-teams/"},
-        {num:84,year:2020,domain:"🐜",type:"Paper",title:"Distributed physiology and the molecular basis of social life in eusocial insects",venue:"Hormones & Behavior",doi:"https://doi.org/10.1016/j.yhbeh.2020.104757"},
-        {num:85,year:2020,domain:"🛡️",type:"Paper",title:"Emergent Teams for Complex Threats",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.3986085"},
-        {num:86,year:2020,domain:"🐜",type:"Paper",title:"Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",venue:"Communications Biology",doi:"https://doi.org/10.1038/s42003-020-0813-8"},
-        {num:87,year:2020,domain:"🎥",type:"Course",title:"How to use Keybase for remote teams",venue:"Udemy",doi:"https://www.udemy.com/course/keybase-for-remote-teams/"},
-        {num:88,year:2020,domain:"🐜",type:"Paper",title:"Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",venue:"Analytical & Bioanalytical Chemistry",doi:"https://doi.org/10.1007/s00216-019-02355-3"},
-        {num:89,year:2020,domain:"🛡️",type:"Book",title:"The Great Preset: Remote Teams and Operational Art",venue:"COGSEC.org",doi:"https://cogsec.org"},
-        {num:90,year:2020,domain:"🛡️",type:"Paper",title:"The Innovator's Catechism",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4383230"},
-        {num:91,year:2020,domain:"🧬",type:"Paper",title:"The neuroscience of decision making (interview with Timothy Hanks)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.34700/8pg4-0h12"},
-        {num:92,year:2019,domain:"🧬",type:"Paper",title:"Dennett Explained (interview with Daniel Dennett)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.34700/7gkw-zh08"},
-        {num:93,year:2019,domain:"🐜",type:"Paper",title:"PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",venue:"Stanford University",doi:"http://purl.stanford.edu/pb813wm1484"},
-        {num:94,year:2019,domain:"🐜",type:"Paper",title:"The ant colony as a test for scientific theories of consciousness",venue:"Synthese",doi:"https://doi.org/10.1007/s11229-019-02130-y"},
-        {num:95,year:2019,domain:"🐜",type:"Paper",title:"The physiology of forager hydration and variation among harvester ant colonies",venue:"Scientific Reports",doi:"https://doi.org/10.1038/s41598-019-41586-3"},
-        {num:96,year:2018,domain:"🐜",type:"Paper",title:"Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",venue:"PLoS One",doi:"https://doi.org/10.1371/journal.pone.0202117"},
-        {num:97,year:2018,domain:"🎥",type:"Presentation",title:"MVEE: A Framework for Evolutionary Studies",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.13999298"},
-        {num:98,year:2018,domain:"🧠",type:"Paper",title:"Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.34700/h460-nz89"},
-        {num:99,year:2018,domain:"🎨",type:"Paper",title:"Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",venue:"Arts",doi:"https://doi.org/10.3390/arts7030039"},
-        {num:100,year:2018,domain:"🐜",type:"Paper",title:"The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",venue:"iScience",doi:"https://doi.org/10.1016/j.isci.2018.09.001"},
-        {num:101,year:2017,domain:"🐜",type:"Paper",title:"The MutAnts are here",venue:"Cell",doi:"https://doi.org/10.1016/j.cell.2017.07.046"},
-        {num:102,year:2017,domain:"🐜",type:"Paper",title:"Two lineages that need each other",venue:"Molecular Ecology",doi:"https://doi.org/10.1111/mec.13964"},
-        {num:103,year:2016,domain:"🐜",type:"Paper",title:"Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",venue:"Annual Review of Neuroscience",doi:"https://doi.org/10.1146/annurev-neuro-070815-013927"},
-        {num:104,year:2016,domain:"🐜",type:"Paper",title:"Context-dependent expression of the foraging gene in field colonies of ants",venue:"Proceedings of the Royal Society B",doi:"https://doi.org/10.1098/rspb.2016.0841"},
-        {num:105,year:2016,domain:"🧬",type:"Paper",title:"Influence of Nuclear Structure on formation of radiation-induced lethal lesions",venue:"Int. J. Radiation Biology",doi:"https://doi.org/10.3109/09553002.2016.1144941"},
-        {num:106,year:2015,domain:"🧬",type:"Paper",title:"Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",venue:"Frontiers in Genetics",doi:"https://doi.org/10.3389/fgene.2015.00261"},
-        {num:107,year:2015,domain:"🧬",type:"Paper",title:"Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",venue:"Medical Hypotheses",doi:"https://doi.org/10.1016/j.mehy.2015.09.015"},
-        {num:108,year:2015,domain:"🧬",type:"Paper",title:"Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",venue:"Molecular Biology & Evolution",doi:"https://doi.org/10.1093/molbev/msu292"},
-        {num:109,year:2026,domain:"🐜",type:"Paper",title:"Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.19574118"},
-        {num:110,year:2026,domain:"🧠",type:"Paper",title:"A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19461934"},
-        {num:111,year:2026,domain:"🧠",type:"Paper",title:"Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",venue:"CSCIS vol 2857, Springer",doi:"https://doi.org/10.1007/978-3-032-16955-6_11"},
-        {num:112,year:2026,domain:"🧠",type:"Paper",title:"Compositional Approaches to Linguistic Case for Cognitive Modeling",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19695260"},
-        {num:113,year:2026,domain:"🧠",type:"Paper",title:"Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19699234"},
-        {num:114,year:2020,domain:"🛡️",type:"Paper",title:"The Facilitator's Catechism",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4203765"}
+                /* <PUBS_SYNC_BEGIN> */
+    const PUBS = [ {num:1,year:2026,domain:"💻",type:"Paper",title:"A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.19139090",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_ReproducibleResearch",hasDoi:true,hasDocs:true},
+        {num:2,year:2026,domain:"🎥",type:"Series",title:"Active Inference Journal — 500+ videos on Active Inference with transcripts",venue:"YouTube",doi:"https://video.activeinference.institute/",docs:"",hasDoi:false,hasDocs:false},
+        {num:3,year:2026,domain:"🎨",type:"Paper",title:"Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.18807970",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_BeforePragmatism",hasDoi:true,hasDocs:true},
+        {num:4,year:2026,domain:"🎨",type:"Paper",title:"The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.19335196",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_Bimetalism",hasDoi:true,hasDocs:true},
+        {num:5,year:2026,domain:"🛡️",type:"Paper",title:"Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.18364119",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveIntegrity",hasDoi:true,hasDocs:true},
+        {num:6,year:2026,domain:"🎥",type:"Series",title:"Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",venue:"YouTube",doi:"https://www.youtube.com/@danielarifriedman/playlists",docs:"",hasDoi:false,hasDocs:false},
+        {num:7,year:2026,domain:"🎨",type:"Paper",title:"The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.18600041",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_DoorsOfPerception",hasDoi:true,hasDocs:true},
+        {num:8,year:2025,domain:"🎥",type:"Presentation",title:"5th Applied Active Inference Symposium — Abstract Book",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.17555266",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_5thSymposium",hasDoi:true,hasDocs:true},
+        {num:9,year:2025,domain:"💻",type:"Paper",title:"Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17228945",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_AuBI",hasDoi:true,hasDocs:true},
+        {num:10,year:2025,domain:"🧠",type:"Paper",title:"CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15170907",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_CEREBRUM",hasDoi:true,hasDocs:true},
+        {num:11,year:2025,domain:"🐜",type:"Paper",title:"Computational Complexity and Energetics of the Ant Stack",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17238736",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_AntStackComplexity",hasDoi:true,hasDocs:true},
+        {num:12,year:2025,domain:"🧠",type:"Paper",title:"EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17229924",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_EvoJump",hasDoi:true,hasDocs:true},
+        {num:13,year:2025,domain:"🧠",type:"Paper",title:"Increasing the Accessibility and Applicability of Active Inference",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15061667",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_AccessibilityActiveInference",hasDoi:true,hasDocs:true},
+        {num:14,year:2025,domain:"💻",type:"Paper",title:"MDKV: A Multitrack Markdown Container for Structured, Portable Documents",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16790554",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_MDKV",hasDoi:true,hasDocs:true},
+        {num:15,year:2025,domain:"💻",type:"Paper",title:"Markdown Decision Process: A Framework for Probabilistic Document Analysis",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17244386",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_MarkdownDecisionProcess",hasDoi:true,hasDocs:true},
+        {num:16,year:2025,domain:"🎨",type:"Paper",title:"On Cognitive Art & Science: Toward Wholeness From Both Sides",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16740439",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_CognitiveArtScience",hasDoi:true,hasDocs:true},
+        {num:17,year:2025,domain:"🎨",type:"Paper",title:"On Time",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15168381",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_OnTime",hasDoi:true,hasDocs:true},
+        {num:18,year:2025,domain:"🎨",type:"Paper",title:"QuadMath: An Analytical Review of 4D and Quadray Coordinates",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16887800",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_QuadMath",hasDoi:true,hasDocs:true},
+        {num:19,year:2025,domain:"💻",type:"Paper",title:"ResNei: Solution Design Document",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.15389682",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_ResNei",hasDoi:true,hasDocs:true},
+        {num:20,year:2025,domain:"🎨",type:"Paper",title:"Symergetics: Symbolic Synergetics for Rational Arithmetic",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17114389",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_Symergetics",hasDoi:true,hasDocs:true},
+        {num:21,year:2025,domain:"🎨",type:"Paper",title:"Synthesis of Agent and Niche",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.17235137",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_AgentAndNiche",hasDoi:true,hasDocs:true},
+        {num:22,year:2025,domain:"🎥",type:"Presentation",title:"Systems Processes, Active Inference, and Beyond",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.17138223",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_SystemsProcesses",hasDoi:true,hasDocs:true},
+        {num:23,year:2025,domain:"🧠",type:"Paper",title:"Temporal Depth in a Coherent Self and in Depersonalization",venue:"Frontiers in Psychology",doi:"https://doi.org/10.3389/fpsyg.2025.1585315",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_TemporalDepth",hasDoi:true,hasDocs:true},
+        {num:24,year:2025,domain:"🌍",type:"Paper",title:"The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.14108991",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_AII_v3",hasDoi:true,hasDocs:true},
+        {num:25,year:2025,domain:"🐜",type:"Paper",title:"The Ant Stack",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.16782756",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_AntStack",hasDoi:true,hasDocs:true},
+        {num:26,year:2025,domain:"💻",type:"Paper",title:"The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",venue:"ArXiv",doi:"https://doi.org/10.48550/arXiv.2505.17500",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_DiscoveryEngine",hasDoi:true,hasDocs:true},
+        {num:27,year:2025,domain:"🧠",type:"Paper",title:"Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",venue:"Entropy",doi:"https://doi.org/10.3390/e27050459",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_Thoughtseeds",hasDoi:true,hasDocs:true},
+        {num:28,year:2025,domain:"🐜",type:"Paper",title:"Towards a Science of Consciousness and Social Complexity... For Ants",venue:"Book Chapter",doi:"https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes",docs:"https://github.com/docxology/docxology/tree/main/papers/2025_ConsciousnessAnts",hasDoi:false,hasDocs:true},
+        {num:29,year:2024,domain:"🌍",type:"Paper",title:"Aligning Active Inference Ontology to SUMO",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.11459322",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_OntologySUMO",hasDoi:true,hasDocs:true},
+        {num:30,year:2024,domain:"🎥",type:"Presentation",title:"BioFirm Development at Applied Active Inference Symposium 2024",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.14861595",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_BioFirm",hasDoi:true,hasDocs:true},
+        {num:31,year:2024,domain:"🛡️",type:"Paper",title:"Bridging gaps in image meme research: A multidisciplinary paradigm",venue:"JASIST",doi:"https://doi.org/10.1002/asi.24900",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_ImageMemeResearch",hasDoi:true,hasDocs:true},
+        {num:32,year:2024,domain:"🐜",type:"Paper",title:"Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",venue:"Ecology & Evolution",doi:"https://doi.org/10.1002/ece3.70063",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_BlattodeaDiversity",hasDoi:true,hasDocs:true},
+        {num:33,year:2024,domain:"🛡️",type:"Paper",title:"Comments on National Digital Twins R&D Strategic Plan",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.13273681",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_DigitalTwins",hasDoi:true,hasDocs:true},
+        {num:34,year:2024,domain:"🧠",type:"Paper",title:"Enhancing Population-based Search with Active Inference",venue:"ArXiv",doi:"https://doi.org/10.48550/arXiv.2408.09548",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_PopulationSearch",hasDoi:true,hasDocs:true},
+        {num:35,year:2024,domain:"🛡️",type:"Paper",title:"FarmWorks: Decentralized AI Agents for Personalized Solutions",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.13754585",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_FarmWorks",hasDoi:true,hasDocs:true},
+        {num:36,year:2024,domain:"🧠",type:"Paper",title:"Federated inference and belief sharing",venue:"Neuroscience & Biobehavioral Reviews",doi:"https://doi.org/10.1016/j.neubiorev.2023.105500",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_FederatedInference",hasDoi:true,hasDocs:true},
+        {num:37,year:2024,domain:"🎨",type:"Paper",title:"Four-fold Fields of Quantum Dreams",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10798145",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_QuantumDreams",hasDoi:true,hasDocs:true},
+        {num:38,year:2024,domain:"🎥",type:"Presentation",title:"MathArt Stream #8: William Blake and Active Inference",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.13711301",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_MathArtBlake",hasDoi:true,hasDocs:true},
+        {num:39,year:2024,domain:"🎥",type:"Presentation",title:"Sensemaking Federation: Exploring the Frontiers of Digital Innovation",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.14574046",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_SensemakingFederation",hasDoi:true,hasDocs:true},
+        {num:40,year:2024,domain:"🧠",type:"Paper",title:"Shared Protentions in Multi-Agent Active Inference",venue:"Entropy",doi:"https://doi.org/10.3390/e26040303",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_SharedProtentions",hasDoi:true,hasDocs:true},
+        {num:41,year:2024,domain:"🌍",type:"Paper",title:"The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.14108991",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_AII_v2",hasDoi:true,hasDocs:true},
+        {num:42,year:2024,domain:"🎨",type:"Paper",title:"Way Finding in the Infinite Imaginarium",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10601082",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_InfiniteImaginarium",hasDoi:true,hasDocs:true},
+        {num:43,year:2024,domain:"🧬",type:"Paper",title:"Why Paleolithic Rockstars were both enigmatic and sporadic",venue:"Physics of Life Reviews",doi:"https://doi.org/10.1016/j.plrev.2024.04.010",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_PaleolithicRockstars",hasDoi:true,hasDocs:true},
+        {num:44,year:2024,domain:"🎨",type:"Paper",title:"Writing on Curio Cards for the \"On NFT\" book",venue:"Taschen",doi:"https://www.worldcat.org/isbn/978-3-8365-9970-2",docs:"https://github.com/docxology/docxology/tree/main/papers/2024_CurioCards",hasDoi:false,hasDocs:true},
+        {num:45,year:2023,domain:"🧠",type:"Paper",title:"A guided tour through the spaces of particular \"minds\"",venue:"Physics of Life Reviews",doi:"https://doi.org/10.1016/j.plrev.2023.11.001",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_GuidedTourMinds",hasDoi:true,hasDocs:true},
+        {num:46,year:2023,domain:"🐜",type:"Paper",title:"A single-pheromone model accounts for empirical patterns of ant colony foraging",venue:"Cognitive Systems Research",doi:"https://doi.org/10.1016/j.cogsys.2023.02.005",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_SinglePheromone",hasDoi:true,hasDocs:true},
+        {num:47,year:2023,domain:"🐜",type:"Paper",title:"A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10400744",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_HoneyBeeGeneExpression",hasDoi:true,hasDocs:true},
+        {num:48,year:2023,domain:"🧠",type:"Paper",title:"A variational synthesis of evolutionary and developmental dynamics",venue:"Entropy",doi:"https://doi.org/10.3390/e25070964",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_VariationalSynthesis",hasDoi:true,hasDocs:true},
+        {num:49,year:2023,domain:"🛡️",type:"Paper",title:"ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10296601",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_ATLAS",hasDoi:true,hasDocs:true},
+        {num:50,year:2023,domain:"🧠",type:"Paper",title:"An Account of Active Inference Modeling",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.8415313",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_AccountActiveInference",hasDoi:true,hasDocs:true},
+        {num:51,year:2023,domain:"🛡️",type:"Paper",title:"Cognitive Sovereignty & Active Inference in the State of Exception",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10038232",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_CognitiveSovereignty",hasDoi:true,hasDocs:true},
+        {num:52,year:2023,domain:"🛡️",type:"Paper",title:"Comments on AI Accountability Policy to NTIA",venue:"NTIA",doi:"https://doi.org/10.5281/zenodo.8025957",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_AIAccountability",hasDoi:true,hasDocs:true},
+        {num:53,year:2023,domain:"🧠",type:"Paper",title:"Distributed Science — The Scientific Process as Multi-Scale Active Inference",venue:"OSF",doi:"https://doi.org/10.31219/osf.io/dnw5k",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_DistributedScience",hasDoi:true,hasDocs:true},
+        {num:54,year:2023,domain:"💻",type:"Paper",title:"Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10160656",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_NSFReporting",hasDoi:true,hasDocs:true},
+        {num:55,year:2023,domain:"🐜",type:"Paper",title:"Experimental Entomology in the Age of Video",venue:"JoVE",doi:"https://doi.org/10.3791/65002",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_VideoEntomology",hasDoi:true,hasDocs:true},
+        {num:56,year:2023,domain:"🧠",type:"Paper",title:"Generalized Notation Notation for Active Inference Models",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7803328",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_GNN",hasDoi:true,hasDocs:true},
+        {num:57,year:2023,domain:"🧠",type:"Paper",title:"Generative Research Teams: Active Inference Compositions for Research and Meta-Science",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.8164667",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_GenerativeResearchTeams",hasDoi:true,hasDocs:true},
+        {num:58,year:2023,domain:"🎥",type:"Presentation",title:"Of Ants & Aging",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.7855582",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_AntsAging",hasDoi:true,hasDocs:true},
+        {num:59,year:2023,domain:"🛡️",type:"Paper",title:"Open Access science needs Open Science Sensemaking (OSSm)",venue:"MetaArXiv",doi:"https://doi.org/10.31222/osf.io/9nb3u",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_OpenScienceSensemaking",hasDoi:true,hasDocs:true},
+        {num:60,year:2023,domain:"🎥",type:"Presentation",title:"Postdoc review (2020–2023)",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.8377988",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_PostdocReview",hasDoi:true,hasDocs:true},
+        {num:61,year:2023,domain:"🌍",type:"Paper",title:"The Active Inference Institute and Active Inference Ecosystem (v1)",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.8266281",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_AII_v1",hasDoi:true,hasDocs:true},
+        {num:62,year:2023,domain:"🛡️",type:"Paper",title:"The P3IF: Properties, Processes, and Perspectives Inter-Framework",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10034512",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_P3IF",hasDoi:true,hasDocs:true},
+        {num:63,year:2023,domain:"🧬",type:"Paper",title:"To comment or not to comment",venue:"Physics of Life Reviews",doi:"https://doi.org/10.1016/j.plrev.2023.06.002",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_ToComment",hasDoi:true,hasDocs:true},
+        {num:64,year:2023,domain:"🎥",type:"Course",title:"Transcript of Chris Fields, \"Physics as Information Processing\" course",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.10447642",docs:"",hasDoi:true,hasDocs:false},
+        {num:65,year:2023,domain:"🎨",type:"Paper",title:"William Blake & Buckminster Fuller: Lives in Juxtaposition",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7514368",docs:"https://github.com/docxology/docxology/tree/main/papers/2023_BlakeFuller",hasDoi:true,hasDocs:true},
+        {num:66,year:2022,domain:"🧠",type:"Paper",title:"An Active Inference Ontology for Decentralized Science",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.6320574",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_ActiveInferenceOntology",hasDoi:true,hasDocs:true},
+        {num:67,year:2022,domain:"🌍",type:"Paper",title:"Catechism for Towards Active Diffusion",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7443848",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_ActiveDiffusion",hasDoi:true,hasDocs:true},
+        {num:68,year:2022,domain:"🛡️",type:"Paper",title:"From Users to (Sense)Makers: Stigmergic Social Annotation",venue:"Hypertext '22",doi:"https://doi.org/10.48550/arXiv.2205.06345",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_StigmergicAnnotation",hasDoi:true,hasDocs:true},
+        {num:69,year:2022,domain:"🧬",type:"Paper",title:"On free will or the lack thereof (interview with Robert Sapolsky)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.5281/zenodo.7394901",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_FreeWillSapolsky",hasDoi:true,hasDocs:true},
+        {num:70,year:2022,domain:"🎨",type:"Paper",title:"Predictive Processing Interpretation of the Mirror Test",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7377256",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_MirrorTest",hasDoi:true,hasDocs:true},
+        {num:71,year:2022,domain:"🛡️",type:"Book",title:"Structuring the Information Commons: Open Standards and Cognitive Security",venue:"COGSEC.org",doi:"https://cogsec.org",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_InformationCommons",hasDoi:false,hasDocs:true},
+        {num:72,year:2022,domain:"🛡️",type:"Paper",title:"Systems Modeling and Cognitive Audits for Hypercert Ecosystems",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7626769",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_HypercertEcosystems",hasDoi:true,hasDocs:true},
+        {num:73,year:2022,domain:"🧠",type:"Paper",title:"The Free Energy Principle & Active Inference: a Systematic Literature Analysis",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7449368",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_SystematicLiteratureAnalysis",hasDoi:true,hasDocs:true},
+        {num:74,year:2022,domain:"🛡️",type:"Paper",title:"TrustFinder: Recommendations for Community-Based Trust Systems",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.7093837",docs:"https://github.com/docxology/docxology/tree/main/papers/2022_TrustFinder",hasDoi:true,hasDocs:true},
+        {num:75,year:2021,domain:"🐜",type:"Paper",title:"Active Inferants: An Active Inference Framework for Ant Colony Behavior",venue:"Frontiers in Behavioral Neuroscience",doi:"https://doi.org/10.3389/fnbeh.2021.647732",docs:"https://github.com/docxology/docxology/tree/main/papers/2021_ActiveInferants",hasDoi:true,hasDocs:true},
+        {num:76,year:2021,domain:"🧠",type:"Paper",title:"Active Inference in Modeling Conflict",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.5759807",docs:"https://github.com/docxology/docxology/tree/main/papers/2021_ModelingConflict",hasDoi:true,hasDocs:true},
+        {num:77,year:2021,domain:"🛡️",type:"Paper",title:"Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.5573947",docs:"https://github.com/docxology/docxology/tree/main/papers/2021_DigitalRhetorical",hasDoi:true,hasDocs:true},
+        {num:78,year:2021,domain:"🎥",type:"Playbook",title:"Innovator's Digital Playbook",venue:"Web",doi:"https://innovatorsdigitalplaybook.com/",docs:"",hasDoi:false,hasDocs:false},
+        {num:79,year:2021,domain:"🛡️",type:"Book",title:"Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",venue:"COGSEC.org",doi:"https://cogsec.org",docs:"https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeEcosystems",hasDoi:false,hasDocs:true},
+        {num:80,year:2021,domain:"🛡️",type:"Paper",title:"Narrative Information Management",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.5573287",docs:"https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeInformationMgmt",hasDoi:true,hasDocs:true},
+        {num:81,year:2021,domain:"🎥",type:"Playbook",title:"The Facilitator's Catechism Playbook",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4579414",docs:"",hasDoi:true,hasDocs:false},
+        {num:82,year:2020,domain:"🧠",type:"Paper",title:"Active Inference & Behavior Engineering for Teams",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4021163",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_BehaviorEngineering",hasDoi:true,hasDocs:true},
+        {num:83,year:2020,domain:"🎥",type:"Course",title:"Communication for Remote Teams",venue:"Udemy",doi:"https://www.udemy.com/course/communication-for-remote-teams/",docs:"",hasDoi:false,hasDocs:false},
+        {num:84,year:2020,domain:"🐜",type:"Paper",title:"Distributed physiology and the molecular basis of social life in eusocial insects",venue:"Hormones & Behavior",doi:"https://doi.org/10.1016/j.yhbeh.2020.104757",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_DistributedPhysiology",hasDoi:true,hasDocs:true},
+        {num:85,year:2020,domain:"🛡️",type:"Paper",title:"Emergent Teams for Complex Threats",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.3986085",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_EmergentTeams",hasDoi:true,hasDocs:true},
+        {num:86,year:2020,domain:"🐜",type:"Paper",title:"Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",venue:"Communications Biology",doi:"https://doi.org/10.1038/s42003-020-0813-8",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_GeneExpressionForagers",hasDoi:true,hasDocs:true},
+        {num:87,year:2020,domain:"🎥",type:"Course",title:"How to use Keybase for remote teams",venue:"Udemy",doi:"https://www.udemy.com/course/keybase-for-remote-teams/",docs:"",hasDoi:false,hasDocs:false},
+        {num:88,year:2020,domain:"🐜",type:"Paper",title:"Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",venue:"Analytical & Bioanalytical Chemistry",doi:"https://doi.org/10.1007/s00216-019-02355-3",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_NeurotransmitterVariation",hasDoi:true,hasDocs:true},
+        {num:89,year:2020,domain:"🛡️",type:"Book",title:"The Great Preset: Remote Teams and Operational Art",venue:"COGSEC.org",doi:"https://cogsec.org",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_GreatPreset",hasDoi:false,hasDocs:true},
+        {num:90,year:2020,domain:"🛡️",type:"Paper",title:"The Innovator's Catechism",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4383230",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_InnovatorsCatechism",hasDoi:true,hasDocs:true},
+        {num:91,year:2020,domain:"🧬",type:"Paper",title:"The neuroscience of decision making (interview with Timothy Hanks)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.34700/8pg4-0h12",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_NeuroscienceDecision",hasDoi:true,hasDocs:true},
+        {num:92,year:2019,domain:"🧬",type:"Paper",title:"Dennett Explained (interview with Daniel Dennett)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.34700/7gkw-zh08",docs:"https://github.com/docxology/docxology/tree/main/papers/2019_DennettExplained",hasDoi:true,hasDocs:true},
+        {num:93,year:2019,domain:"🐜",type:"Paper",title:"PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",venue:"Stanford University",doi:"http://purl.stanford.edu/pb813wm1484",docs:"https://github.com/docxology/docxology/tree/main/papers/2019_PhDDissertation",hasDoi:false,hasDocs:true},
+        {num:94,year:2019,domain:"🐜",type:"Paper",title:"The ant colony as a test for scientific theories of consciousness",venue:"Synthese",doi:"https://doi.org/10.1007/s11229-019-02130-y",docs:"https://github.com/docxology/docxology/tree/main/papers/2019_AntConsciousness",hasDoi:true,hasDocs:true},
+        {num:95,year:2019,domain:"🐜",type:"Paper",title:"The physiology of forager hydration and variation among harvester ant colonies",venue:"Scientific Reports",doi:"https://doi.org/10.1038/s41598-019-41586-3",docs:"https://github.com/docxology/docxology/tree/main/papers/2019_ForagerHydration",hasDoi:true,hasDocs:true},
+        {num:96,year:2018,domain:"🐜",type:"Paper",title:"Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",venue:"PLoS One",doi:"https://doi.org/10.1371/journal.pone.0202117",docs:"https://github.com/docxology/docxology/tree/main/papers/2018_ArgentineAnt",hasDoi:true,hasDocs:true},
+        {num:97,year:2018,domain:"🎥",type:"Presentation",title:"MVEE: A Framework for Evolutionary Studies",venue:"Presentation",doi:"https://doi.org/10.5281/zenodo.13999298",docs:"https://github.com/docxology/docxology/tree/main/papers/2018_MVEE",hasDoi:true,hasDocs:true},
+        {num:98,year:2018,domain:"🧠",type:"Paper",title:"Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",venue:"ALIUS Bulletin",doi:"https://doi.org/10.34700/h460-nz89",docs:"https://github.com/docxology/docxology/tree/main/papers/2018_WoodliceAndMen",hasDoi:true,hasDocs:true},
+        {num:99,year:2018,domain:"🎨",type:"Paper",title:"Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",venue:"Arts",doi:"https://doi.org/10.3390/arts7030039",docs:"https://github.com/docxology/docxology/tree/main/papers/2018_PPPiP",hasDoi:true,hasDocs:true},
+        {num:100,year:2018,domain:"🐜",type:"Paper",title:"The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",venue:"iScience",doi:"https://doi.org/10.1016/j.isci.2018.09.001",docs:"https://github.com/docxology/docxology/tree/main/papers/2018_DopamineForaging",hasDoi:true,hasDocs:true},
+        {num:101,year:2017,domain:"🐜",type:"Paper",title:"The MutAnts are here",venue:"Cell",doi:"https://doi.org/10.1016/j.cell.2017.07.046",docs:"https://github.com/docxology/docxology/tree/main/papers/2017_MutAnts",hasDoi:true,hasDocs:true},
+        {num:102,year:2017,domain:"🐜",type:"Paper",title:"Two lineages that need each other",venue:"Molecular Ecology",doi:"https://doi.org/10.1111/mec.13964",docs:"https://github.com/docxology/docxology/tree/main/papers/2017_TwoLineages",hasDoi:true,hasDocs:true},
+        {num:103,year:2016,domain:"🐜",type:"Paper",title:"Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",venue:"Annual Review of Neuroscience",doi:"https://doi.org/10.1146/annurev-neuro-070815-013927",docs:"https://github.com/docxology/docxology/tree/main/papers/2016_AntGenetics",hasDoi:true,hasDocs:true},
+        {num:104,year:2016,domain:"🐜",type:"Paper",title:"Context-dependent expression of the foraging gene in field colonies of ants",venue:"Proceedings of the Royal Society B",doi:"https://doi.org/10.1098/rspb.2016.0841",docs:"https://github.com/docxology/docxology/tree/main/papers/2016_ForagingGene",hasDoi:true,hasDocs:true},
+        {num:105,year:2016,domain:"🧬",type:"Paper",title:"Influence of Nuclear Structure on formation of radiation-induced lethal lesions",venue:"Int. J. Radiation Biology",doi:"https://doi.org/10.3109/09553002.2016.1144941",docs:"https://github.com/docxology/docxology/tree/main/papers/2016_NuclearStructure",hasDoi:true,hasDocs:true},
+        {num:106,year:2015,domain:"🧬",type:"Paper",title:"Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",venue:"Frontiers in Genetics",doi:"https://doi.org/10.3389/fgene.2015.00261",docs:"https://github.com/docxology/docxology/tree/main/papers/2015_CryptoJews",hasDoi:true,hasDocs:true},
+        {num:107,year:2015,domain:"🧬",type:"Paper",title:"Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",venue:"Medical Hypotheses",doi:"https://doi.org/10.1016/j.mehy.2015.09.015",docs:"https://github.com/docxology/docxology/tree/main/papers/2015_EhrlichialInfection",hasDoi:true,hasDocs:true},
+        {num:108,year:2015,domain:"🧬",type:"Paper",title:"Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",venue:"Molecular Biology & Evolution",doi:"https://doi.org/10.1093/molbev/msu292",docs:"https://github.com/docxology/docxology/tree/main/papers/2015_HoneyBeeEvolution",hasDoi:true,hasDocs:true},
+        {num:109,year:2026,domain:"🐜",type:"Paper",title:"Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.19574118",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_EntoLinguistics",hasDoi:true,hasDocs:true},
+        {num:110,year:2026,domain:"🧠",type:"Paper",title:"A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19461934",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_ActInfMetaAnalysis",hasDoi:true,hasDocs:true},
+        {num:111,year:2026,domain:"🧠",type:"Paper",title:"Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",venue:"CSCIS vol 2857, Springer",doi:"https://doi.org/10.1007/978-3-032-16955-6_11",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_FocusedAttentionMeditation",hasDoi:true,hasDocs:true},
+        {num:112,year:2026,domain:"🧠",type:"Paper",title:"Compositional Approaches to Linguistic Case for Cognitive Modeling",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19695260",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveCaseDiagrams",hasDoi:true,hasDocs:true},
+        {num:113,year:2026,domain:"🧠",type:"Paper",title:"Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",venue:"Active Inference Journal",doi:"https://doi.org/10.5281/zenodo.19699234",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_FEPLean",hasDoi:true,hasDocs:true},
+        {num:114,year:2020,domain:"🛡️",type:"Paper",title:"The Facilitator's Catechism",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.4203765",docs:"https://github.com/docxology/docxology/tree/main/papers/2020_FacilitatorsCatechism",hasDoi:true,hasDocs:true},
+        {num:115,year:2026,domain:"🎨",type:"Paper",title:"The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",venue:"Zenodo",doi:"https://doi.org/10.5281/zenodo.20144984",docs:"https://github.com/docxology/docxology/tree/main/papers/2026_BlakeJiang",hasDoi:true,hasDocs:true}
     ];
     /* <PUBS_SYNC_END> */
 
@@ -2234,8 +2270,18 @@
 
     let currentTypeFilter = 'all';
     let currentDomainFilter = 'all';
+    let currentYearFilter = 'all';
+    let currentVenueFilter = 'all';
     /* dir +1 or -1; default matches readable bib order: # ascending */
     let currentSort = {col: 'num', dir: 1};
+
+    function esc(value){
+        return String(value == null ? '' : value)
+            .replace(/&/g,'&amp;')
+            .replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;');
+    }
 
     function typeClass(t){
         const m = {Paper:'type-paper',Presentation:'type-presentation',Book:'type-book',Course:'type-course',Series:'type-series',Playbook:'type-playbook'};
@@ -2246,6 +2292,15 @@
         if(filterKey==='all') return true;
         if(!pDomain || !filterKey) return false;
         return pDomain.indexOf(filterKey) === 0;
+    }
+
+    function populateFilterSelects(){
+        var years = Array.from(new Set(PUBS.map(function(p){ return p.year; }))).sort(function(a,b){ return b-a; });
+        var venues = Array.from(new Set(PUBS.map(function(p){ return p.venue; }).filter(Boolean))).sort(function(a,b){ return a.localeCompare(b, undefined, {sensitivity:'base'}); });
+        var yearSelect = document.getElementById('year-filter');
+        var venueSelect = document.getElementById('venue-filter');
+        yearSelect.innerHTML = '<option value="all">All years</option>' + years.map(function(y){ return '<option value="' + y + '">' + y + '</option>'; }).join('');
+        venueSelect.innerHTML = '<option value="all">All venues</option>' + venues.map(function(v){ return '<option value="' + esc(v) + '">' + esc(v) + '</option>'; }).join('');
     }
 
     function cmpSort(a, b, col, dir){
@@ -2284,9 +2339,15 @@
     function renderTable(){
         var q = (document.getElementById('pub-search').value || '').toLowerCase().trim();
         var terms = q ? q.split(/\s+/).filter(function(t){ return t.length > 0; }) : [];
+        var doiOnly = document.getElementById('doi-filter').checked;
+        var docsOnly = document.getElementById('docs-filter').checked;
         var data = PUBS.filter(function(p){
             if(!domainMatches(p.domain, currentDomainFilter)) return false;
             if(currentTypeFilter !== 'all' && p.type !== currentTypeFilter) return false;
+            if(currentYearFilter !== 'all' && String(p.year) !== currentYearFilter) return false;
+            if(currentVenueFilter !== 'all' && p.venue !== currentVenueFilter) return false;
+            if(doiOnly && !p.hasDoi) return false;
+            if(docsOnly && !p.hasDocs) return false;
             if(terms.length === 0) return true;
             var s = p._search;
             for(var i = 0; i < terms.length; i++){
@@ -2307,14 +2368,17 @@
             empty.hidden = true;
             empty.classList.add('d-none');
             tbody.innerHTML = data.map(function(p){
+                var title = esc(p.title);
+                var primary = p.doi ? '<a href="' + esc(p.doi) + '" target="_blank" rel="noopener">→ Link</a>' : '<span aria-label="No primary link">—</span>';
+                var docs = p.docs ? ' <a href="' + esc(p.docs) + '" target="_blank" rel="noopener">Docs</a>' : '';
                 return '<tr>' +
                     '<td class="td-num">' + p.num + '</td>' +
                     '<td class="td-year">' + p.year + '</td>' +
-                    '<td class="td-domain">' + p.domain + '</td>' +
-                    '<td class="td-type"><span class="type-badge ' + typeClass(p.type) + '">' + p.type + '</span></td>' +
-                    '<td class="td-title"><a href="' + p.doi + '" target="_blank" rel="noopener">' + p.title + '</a></td>' +
-                    '<td class="td-venue">' + p.venue + '</td>' +
-                    '<td class="td-doi"><a href="' + p.doi + '" target="_blank" rel="noopener">→ Link</a></td>' +
+                    '<td class="td-domain">' + esc(p.domain) + '</td>' +
+                    '<td class="td-type"><span class="type-badge ' + typeClass(p.type) + '">' + esc(p.type) + '</span></td>' +
+                    '<td class="td-title"><a href="' + esc(p.doi || p.docs || '#') + '" target="_blank" rel="noopener">' + title + '</a></td>' +
+                    '<td class="td-venue">' + esc(p.venue) + '</td>' +
+                    '<td class="td-doi">' + primary + docs + '</td>' +
                 '</tr>';
             }).join('');
         }
@@ -2342,6 +2406,33 @@
         renderTable();
     }
 
+    function setYearFilter(y){
+        currentYearFilter = y;
+        renderTable();
+    }
+
+    function setVenueFilter(v){
+        currentVenueFilter = v;
+        renderTable();
+    }
+
+    function resetFilters(){
+        document.getElementById('pub-search').value = '';
+        currentTypeFilter = 'all';
+        currentDomainFilter = 'all';
+        currentYearFilter = 'all';
+        currentVenueFilter = 'all';
+        document.getElementById('year-filter').value = 'all';
+        document.getElementById('venue-filter').value = 'all';
+        document.getElementById('doi-filter').checked = false;
+        document.getElementById('docs-filter').checked = false;
+        document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+        document.getElementById('filter-all').classList.add('active');
+        document.querySelectorAll('.domain-pill').forEach(function(p){ p.classList.remove('active'); });
+        document.querySelector('.domain-pill').classList.add('active');
+        renderTable();
+    }
+
     function defaultDirForCol(col, prevCol){
         if(col === 'year') return -1; /* newest first */
         if(col === 'num') return 1;   /* catalog # ascending */
@@ -2361,6 +2452,7 @@
     // Service Worker
     if('serviceWorker' in navigator){ navigator.serviceWorker.register('/sw.js').catch(()=>{}); }
 
+    populateFilterSelects();
     renderTable();
     </script>
 </body>

@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software — Daniel Ari Friedman, PhD</title>
-    <meta name="description" content="Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF. 285 public repositories in Python, Rust, Go, Julia.">
+    <meta name="description" content="Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF. 286 public repositories, 48 owned repos, and 32 catalogued AII contributions.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/software.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Software — Daniel Ari Friedman, PhD">
-    <meta property="og:description" content="Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF. 285 public repos in Python, Rust, Go, Julia.">
+    <meta property="og:description" content="Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF. 286 public repos, 48 owned repos, and 32 catalogued AII contributions.">
     <meta property="og:url" content="https://danielarifriedman.com/software.html">
-    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image" content="https://danielarifriedman.com/og-software.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +33,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Software \u2014 Daniel Ari Friedman, PhD",
-    "description": "48 original repositories and 32 Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
+    "description": "48 original repositories and 32 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -181,6 +185,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "Journal-Utilities",
+            "description": "Active Inference Institute video processing pipeline for downloading, transcribing, enriching, and exporting video-library content.",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+            "programmingLanguage": "HTML",
+            "sameAs": "https://doi.org/10.5281/zenodo.18686966",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "ActiveBlockference",
             "description": "Active Inference agents in cadCAD block-based simulation \u2014 formal agent-based modeling using complex-systems simulation framework.",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
@@ -193,7 +209,7 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "ActiveInferAnts (AII)",
-            "description": "Active Inference models for/of ants across 32+ programming languages \u2014 the definitive multi-language reference implementation.",
+            "description": "Active Inference models for/of ants across 32+ programming languages \u2014 multi-language reference implementation.",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
             "programmingLanguage": "Python",
             "author": {
@@ -274,11 +290,13 @@
 
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
         <div class="nav-links">
             <a href="index.html#about">About</a>
             <a href="index.html#research">Research</a>
             <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="discovery.html">Discovery</a>
             <a href="index.html#art">Art</a>
             <a href="media.html">Media</a>
             <a href="index.html#teaching">Teaching</a>
@@ -288,7 +306,7 @@
 
     <header class="page-hero">
         <h1>💻 Software</h1>
-        <p class="sub">Open-Source Repositories • Python, Rust, Go, TypeScript, Julia<br>Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure.</p>
+        <p class="sub">Open-Source Repositories • Python, Rust, Go, TypeScript, Julia<br>48 owned repositories, 32 catalogued AII contributions, and 286 public GitHub repositories overall.</p>
     </header>
 
     <main id="main" class="main">
@@ -406,8 +424,16 @@
             </div>
             <div class="repo-card">
                 <div class="repo-header">
+                    <a href="https://github.com/ActiveInferenceInstitute/Journal-Utilities" class="repo-title">Journal-Utilities</a>
+                    <span class="repo-stars">⭐ 11</span>
+                </div>
+                <p class="repo-desc">Video-processing pipeline for downloading, transcribing, enriching, and exporting the Active Inference Institute video library · <a href="https://doi.org/10.5281/zenodo.18686966">Zenodo release</a></p>
+                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-HTML"></span>HTML</span></div>
+            </div>
+            <div class="repo-card">
+                <div class="repo-header">
                     <a href="https://github.com/ActiveInferenceInstitute/ActiveBlockference" class="repo-title">ActiveBlockference</a>
-                    <span class="repo-stars">⭐ 31</span>
+                    <span class="repo-stars">⭐ 32</span>
                 </div>
                 <p class="repo-desc">Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework.</p>
                 <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-Jupyter"></span>Jupyter</span></div>
@@ -415,23 +441,23 @@
             <div class="repo-card">
                 <div class="repo-header">
                     <a href="https://github.com/ActiveInferenceInstitute/ActiveInferAnts" class="repo-title">ActiveInferAnts (AII)</a>
-                    <span class="repo-stars">⭐ 27</span>
+                    <span class="repo-stars">⭐ 28</span>
                 </div>
-                <p class="repo-desc">Active Inference models for/of ants across 32+ programming languages — the definitive multi-language reference implementation.</p>
+                <p class="repo-desc">Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation.</p>
                 <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-Python"></span>Python</span></div>
             </div>
             <div class="repo-card">
                 <div class="repo-header">
                     <a href="https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation" class="repo-title">GNN</a>
-                    <span class="repo-stars">⭐ 23</span>
+                    <span class="repo-stars">⭐ 24</span>
                 </div>
-                <p class="repo-desc">GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers.</p>
+                <p class="repo-desc">GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers · <a href="https://doi.org/10.5281/zenodo.19600217">Zenodo software</a></p>
                 <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-Python"></span>Python</span></div>
             </div>
             <div class="repo-card">
                 <div class="repo-header">
                     <a href="https://github.com/ActiveInferenceInstitute/FEP_Lean" class="repo-title">FEP_Lean</a>
-                    <span class="repo-stars">⭐ 0</span>
+                    <span class="repo-stars">⭐ 3</span>
                 </div>
                 <p class="repo-desc">Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss pipeline, zero-mock verification · <a href="https://github.com/docxology/docxology/tree/main/papers/2026_FEPLean">paper</a></p>
                 <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-Python"></span>Python</span></div>
@@ -439,7 +465,7 @@
             <div class="repo-card">
                 <div class="repo-header">
                     <a href="https://github.com/ActiveInferenceInstitute/cognitive" class="repo-title">cognitive</a>
-                    <span class="repo-stars">⭐ 17</span>
+                    <span class="repo-stars">⭐ 18</span>
                 </div>
                 <p class="repo-desc">Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization.</p>
                 <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-Python"></span>Python</span></div>
@@ -447,7 +473,7 @@
             <div class="repo-card">
                 <div class="repo-header">
                     <a href="https://github.com/ActiveInferenceInstitute/CEREBRUM" class="repo-title">CEREBRUM</a>
-                    <span class="repo-stars">⭐ 10</span>
+                    <span class="repo-stars">⭐ 12</span>
                 </div>
                 <p class="repo-desc">Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models.</p>
                 <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-Python"></span>Python</span></div>
@@ -464,10 +490,12 @@
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="discovery.html">Discovery</a>
             <a href="collaborators.html">Collaborators</a>
             <a href="https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md">Raw Markdown</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">Last updated: April 2026</p>
+        <p class="text-center text-sm text-muted mt-1">Last updated: May 2026</p>
     </footer>
 </body>
 </html>

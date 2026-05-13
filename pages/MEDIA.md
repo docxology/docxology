@@ -7,7 +7,7 @@ keywords: "Daniel Ari Friedman, active inference, MEDIA"
 
 # 🎥 Media, Talks & Appearances
 
-> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
+> **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
 **Podcasts, conference presentations, video series, and press for Daniel Ari Friedman, PhD**
@@ -106,13 +106,13 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 | 2024 | Writing on Curio Cards for "On NFT" book | Taschen (ISBN 978-3-8365-9970-2) | [Paper folder](../papers/2024_CurioCards/) |
 | 2021-10 | Christie's auction: Full set of 30 Curio Cards + rare "17b" — first ETH-denominated auction at Christie's | Christie's | [christies.com](https://www.christies.com/en/lot/lot-6337619) |
 | 2021 | "Daniel Friedman — Decentralized Beauty: NFT Art and Ants" | Curio Cards / Medium | [medium.com](https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534) |
-| 2017-05-09 | NFT Archaeology entry: Curio Cards recognized as first art NFTs on Ethereum | NFT Archaeology | [nftarchaeology.io](https://nftarchaeology.io/nft-details/curiocards) |
+| 2017-05-09 | NFT Archaeology entry: Curio Cards recognized as early Ethereum art NFTs | NFT Archaeology | [nftarchaeology.io](https://nftarchaeology.io/nft-details/curiocards) |
 
 ---
 
 <div align="center">
 
-*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (114 works) · [LINKS.md](LINKS.md) for all web presences*
+*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (115 works) · [LINKS.md](LINKS.md) for all web presences*
 
 </div>
 

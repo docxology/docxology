@@ -8,6 +8,13 @@ on:
       - "sitemap.xml"
       - "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
 
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   submit:
     runs-on: ubuntu-latest

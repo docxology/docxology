@@ -29,7 +29,14 @@
         .skip-link{position:absolute;top:-100%;left:1rem;padding:.6rem 1.2rem;background:var(--gold);color:var(--bg-primary);font-weight:700;border-radius:0 0 8px 8px;z-index:999;transition:top .2s}
         .skip-link:focus{top:0}
         /* Reduce motion for accessibility */
-        
+        @media (prefers-reduced-motion: reduce){
+            *,*::before,*::after{
+                animation-duration:.01ms!important;
+                animation-iteration-count:1!important;
+                scroll-behavior:auto!important;
+                transition-duration:.01ms!important;
+            }
+        }
 
         /* ── NAV ── */
         nav{
@@ -62,6 +69,26 @@
         }
         .nav-links .nav-art-link:hover{background:rgba(201,168,76,0.08);border-color:var(--gold);color:var(--gold-bright)}
         .menu-btn{display:none;background:none;border:none;color:var(--text-primary);font-size:1.5rem;cursor:pointer}
+
+        .page-hero{
+            max-width:980px;
+            margin:0 auto;
+            text-align:center;
+            padding:7rem 2rem 3rem;
+        }
+        .page-hero h1{
+            font-family:'Playfair Display',serif;
+            font-size:clamp(2.1rem,6vw,4.2rem);
+            line-height:1.12;
+            margin-bottom:.75rem;
+            color:#fff;
+        }
+        .page-hero .sub{
+            color:var(--text-secondary);
+            max-width:760px;
+            margin:0 auto;
+            line-height:1.7;
+        }
 
         /* ── HERO ── */
         .hero{
@@ -296,10 +323,15 @@ thead th { -webkit-user-select: none; user-select: none; }
         .filter-btns{display:flex;gap:.4rem;flex-wrap:wrap}
         .filter-btn{padding:.35rem .8rem;background:var(--bg-glass);border:1px solid var(--border);border-radius:6px;color:var(--text-secondary);font-size:.75rem;font-weight:500;cursor:pointer;transition:all .2s;font-family:inherit}
         .filter-btn:hover,.filter-btn.active{border-color:rgba(192,57,43,0.4);background:rgba(192,57,43,0.08);color:var(--red-bright)}
+        .filter-selects{display:flex;gap:.55rem;align-items:center;flex-wrap:wrap;width:100%}
+        .filter-selects label{display:inline-flex;align-items:center;gap:.35rem;color:var(--text-muted);font-size:.74rem}
+        .filter-selects select{min-width:8.5rem;padding:.38rem .6rem;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-family:inherit;font-size:.76rem}
+        .filter-toggle{display:inline-flex;align-items:center;gap:.35rem;padding:.32rem .55rem;border:1px solid var(--border);border-radius:6px;background:rgba(255,255,255,0.025);color:var(--text-secondary);font-size:.74rem}
+        .filter-toggle input{accent-color:var(--gold)}
         .result-count{font-size:.75rem;color:var(--text-muted);white-space:nowrap;align-self:center}
 
         /* Table */
-        .pub-table-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+        .pub-table-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto;overflow-y:hidden}
         table{width:100%;border-collapse:collapse}
         thead th{padding:0;text-align:left;font-size:.71rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2);user-select:none;white-space:nowrap;vertical-align:bottom}
         thead th .th-sort-btn{width:100%;margin:0;padding:.75rem 1rem;border:none;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;text-align:left;cursor:pointer;display:flex;align-items:center;gap:.25rem}

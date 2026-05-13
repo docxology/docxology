@@ -1,0 +1,24 @@
+name: Broken link
+description: Report a broken local or external link.
+title: "Broken link: "
+labels: ["links", "maintenance"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      description: Where did you find the broken link?
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Broken link
+      description: Paste the URL or relative path.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected target
+      description: If you know the correct link, include it here.
