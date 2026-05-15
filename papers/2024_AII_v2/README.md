@@ -2,7 +2,7 @@
 
 **Active Inference Institute** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14108991-blue)](https://doi.org/10.5281/zenodo.14108991)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14108992-blue)](https://doi.org/10.5281/zenodo.14108992)
 
 ---
 <!-- Schema.org structured data for search engines -->
@@ -14,6 +14,10 @@
 ## Abstract
 
 > Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and application.
+
+## Version Note
+
+Use DOI [`10.5281/zenodo.14108992`](https://doi.org/10.5281/zenodo.14108992) for the v2 snapshot. The concept DOI `10.5281/zenodo.14108991` remains the version-chain anchor.
 
 ## Keywords
 
@@ -40,7 +44,7 @@
   title = {{The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)}},
   journal = {Zenodo},
   year = {2024},
-  doi = {10.5281/zenodo.14108991},
+  doi = {10.5281/zenodo.14108992},
 }
 ```
 

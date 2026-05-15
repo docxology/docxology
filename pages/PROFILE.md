@@ -71,7 +71,7 @@ Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collectio
 
 ### Computational Frameworks
 
-Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His 48 personal repositories (catalogued) and 32 Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md) represent a significant body of open-source scientific software.
+Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His 49 personal repositories (catalogued) and 32 Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md), plus the [full generated repository inventory](../repositories.html), represent a significant body of open-source scientific software.
 
 ---
 
@@ -81,7 +81,8 @@ Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and J
 
 **Role**: President, Treasurer, Co-founder, and Principal Investigator
 **Legal status**: 501(c)(3) non-profit educational organization (USA)
-**Website**: [activeinference.institute](https://www.activeinference.institute/)
+**Public landing page**: [activeinference.org](https://activeinference.org/)
+**Governance pages**: [activeinference.institute](https://www.activeinference.institute/)
 **GitHub**: [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute)
 
 The Active Inference Institute emerged from foundational team meetings in 2019–2020 (initially as the Active Inference Lab). The organization transitioned to a non-profit in mid-2022, registered in **Delaware, USA**, and received official **501(c)(3) recognition in 2024** (supported pro bono by Fried Frank law firm). Co-founded by Friedman, Alexander Vyatkin, and Yvonne, the Institute is an educational and open science organization supporting diverse projects and infrastructure for learning, teaching, and applying Active Inference. Under Friedman's leadership, the Institute has produced 500+ educational videos, organized five annual Applied Active Inference Symposia (2021–2025), developed open-source tools (GNN, CEREBRUM, ActiveInferAnts), built a global community, and publishes a monthly newsletter via [Substack](https://activeinferenceinstitute.substack.com/).
@@ -167,7 +168,7 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 | h-index | 15 |
 | i10-index | 17 |
 | Citations since 2021 | 495 |
-| Open-Source Repositories (owned, catalogued) | 48 |
+| Open-Source Repositories (owned, catalogued) | 49 |
 | GitHub Public Repositories (total) | 286 |
 | Active Inference Institute Repos (catalogued) | 32 |
 | Livestreams & Videos | 700+ |

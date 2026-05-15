@@ -277,8 +277,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2025
 TI  - The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)
 T2  - Zenodo
-DO  - 10.5281/zenodo.14108991
-UR  - https://doi.org/10.5281/zenodo.14108991
+DO  - 10.5281/zenodo.17982447
+UR  - https://doi.org/10.5281/zenodo.17982447
 KW  - AII Ecosystem
 KW  - Paper
 N1  - Catalog row 24; docs: papers/2025_AII_v3/
@@ -480,8 +480,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2024
 TI  - The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
 T2  - Zenodo
-DO  - 10.5281/zenodo.14108991
-UR  - https://doi.org/10.5281/zenodo.14108991
+DO  - 10.5281/zenodo.14108992
+UR  - https://doi.org/10.5281/zenodo.14108992
 KW  - AII Ecosystem
 KW  - Paper
 N1  - Catalog row 41; docs: papers/2024_AII_v2/
@@ -1298,10 +1298,10 @@ ER  -
 TY  - JOUR
 AU  - Friedman, Daniel Ari
 PY  - 2026
-TI  - A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring
+TI  - A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring
 T2  - Active Inference Journal
-DO  - 10.5281/zenodo.19461934
-UR  - https://doi.org/10.5281/zenodo.19461934
+DO  - 10.5281/zenodo.19897664
+UR  - https://doi.org/10.5281/zenodo.19897664
 KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 110; docs: papers/2026_ActInfMetaAnalysis/

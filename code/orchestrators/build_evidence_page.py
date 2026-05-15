@@ -12,6 +12,11 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
+try:
+    from report_paths import latest_report, rel
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import latest_report, rel
+
 
 def h(value: object) -> str:
     return html.escape(str(value), quote=True)
@@ -28,7 +33,17 @@ def source_link(source: str, prefix: str = "") -> str:
     return prefix + source
 
 
+def latest_report_link(pattern: str, fallback: str, prefix: str = "") -> str:
+    try:
+        path = rel(latest_report(pattern))
+    except FileNotFoundError:
+        path = fallback
+    return prefix + path
+
+
 def render_html(claims: list[dict]) -> str:
+    snapshot = latest_report_link("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
+    inventory = latest_report_link("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
     cards = []
     for claim in claims:
         first_source = claim["sources"][0]
@@ -107,7 +122,7 @@ def render_html(claims: list[dict]) -> str:
             <div class="claim-grid">
 {chr(10).join(cards)}
             </div>
-            <p class="text-center mt-2"><a class="btn btn-outline" href="data/claims.json">Claims JSON</a> <a class="btn btn-outline" href="data/reconciliation.json">Reconciliation JSON</a> <a class="btn btn-outline" href="reports/public_source_snapshot_2026-05-13.json">Latest snapshot</a></p>
+            <p class="text-center mt-2"><a class="btn btn-outline" href="data/claims.json">Claims JSON</a> <a class="btn btn-outline" href="data/reconciliation.json">Reconciliation JSON</a> <a class="btn btn-outline" href="{h(snapshot)}">Latest snapshot</a> <a class="btn btn-outline" href="{h(inventory)}">Source inventory</a></p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -121,6 +136,8 @@ def render_html(claims: list[dict]) -> str:
 
 
 def render_md(claims: list[dict]) -> str:
+    snapshot = latest_report_link("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json", "../")
+    inventory = latest_report_link("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json", "../")
     lines = [
         "---",
         'title: "EVIDENCE - Daniel Ari Friedman"',
@@ -133,7 +150,7 @@ def render_md(claims: list[dict]) -> str:
         "",
         "> **Navigation**: [🏠 Home](../README.md) | [🧭 Discovery](DISCOVERY.md) | [🧾 Cite & Verify](CITE_VERIFY.md) | [📚 Bibliography](BIBLIOGRAPHY.md)",
         "",
-        "[Website version](../evidence.html) · [Source claims JSON](../data/claims.json) · [Reconciliation JSON](../data/reconciliation.json) · [Latest public-source snapshot](../reports/public_source_snapshot_2026-05-13.json)",
+        f"[Website version](../evidence.html) · [Source claims JSON](../data/claims.json) · [Reconciliation JSON](../data/reconciliation.json) · [Latest public-source snapshot]({snapshot}) · [Public-source inventory]({inventory})",
         "",
         "</div>",
         "",

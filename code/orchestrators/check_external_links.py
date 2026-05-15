@@ -18,7 +18,13 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT = REPO_ROOT / "reports" / "external_links_2026-05-13.json"
+
+try:
+    from report_paths import dated_report_path, generated_timestamp, latest_report
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import dated_report_path, generated_timestamp, latest_report
+
+OUT = dated_report_path("external_links", "json")
 
 SCAN_FILES = [
     "index.html",
@@ -179,7 +185,7 @@ def build_report(timeout: int, workers: int, limit: int | None) -> dict:
             results.append(result)
     results.sort(key=lambda row: row["url"])
     return {
-        "generated_at": "2026-05-13",
+        "generated_at": generated_timestamp(),
         "scope": SCAN_FILES,
         "note": "Network freshness report. HTTP 403/429 may indicate bot protection or rate limiting, not necessarily broken content.",
         "total_unique_urls": len(sources),
@@ -198,9 +204,10 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=0, help="Optional maximum URLs to check")
     args = parser.parse_args()
     if args.check:
-        if not OUT.exists():
+        out = latest_report("external_links_[0-9]*.json")
+        if not out.exists():
             raise SystemExit("Missing external link report")
-        payload = json.loads(OUT.read_text(encoding="utf-8"))
+        payload = json.loads(out.read_text(encoding="utf-8"))
         if not payload.get("results"):
             raise SystemExit("External link report has no results")
         print(f"checked external link report ({payload['checked_urls']} URLs)")

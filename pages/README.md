@@ -24,7 +24,7 @@ keywords: "Daniel Ari Friedman, documentation hub, academic portfolio, pages ind
 | 📄 [**WORK PAGES**](../works/) | **Generated per-work landing pages** — citation, DOI, primary source, and documentation link for each bibliography row |
 | 🔎 [**SEARCH**](../search.html) | **Human-facing site search** — works, software, people, organizations, claims, and key pages |
 | 📝 [**UPDATES**](../updates.html) | **Human-facing changelog** — recent public-index and generated-site changes |
-| 💻 [**SOFTWARE**](SOFTWARE.md) | **48 owned repos** + **32 Active Inference Institute contributions** — frameworks, tools, and infrastructure |
+| 💻 [**SOFTWARE**](SOFTWARE.md) | **49 owned repos** + **32 Active Inference Institute contributions** — curated frameworks, tools, and infrastructure; [full generated inventory](../repositories.html) covers all public GitHub repositories |
 | 🧭 [**DOMAINS**](DOMAINS.md) | **Research domain map** — Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational pathways |
 | 👤 [**PROFILE**](PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🔗 [**LINKS**](LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, organizations |

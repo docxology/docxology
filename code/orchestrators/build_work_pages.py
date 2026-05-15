@@ -13,6 +13,11 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
 
+try:
+    from report_paths import generated_timestamp
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import generated_timestamp
+
 
 def h(value: object) -> str:
     return html.escape(str(value), quote=True)
@@ -353,7 +358,16 @@ def render_index(works: list[dict]) -> str:
 """
 
 
-def render_outputs() -> dict[Path, str]:
+def existing_generated_at(path: Path) -> str | None:
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("generated_at")
+    except json.JSONDecodeError:
+        return None
+
+
+def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
     works = load_works()
     enrichments = enrichment_map(works)
     works = [{**work, "enrichment": enrichments.get(work["citation_key"], {})} for work in works]
@@ -362,7 +376,7 @@ def render_outputs() -> dict[Path, str]:
         outputs[WORKS_DIR / f"{work['citation_key']}.html"] = render_work_page(work)
     outputs[ENRICHMENT_OUT] = json.dumps(
         {
-            "generated_at": "2026-05-13",
+            "generated_at": generated_at or generated_timestamp(),
             "source": "papers/*/README.md and papers/*/SKILL.md",
             "count": len(enrichments),
             "works": enrichments,
@@ -377,7 +391,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
     args = parser.parse_args()
-    outputs = render_outputs()
+    generated_at = existing_generated_at(ENRICHMENT_OUT) if args.check else None
+    outputs = render_outputs(generated_at)
     stale: list[str] = []
     if not args.check:
         if WORKS_DIR.exists():

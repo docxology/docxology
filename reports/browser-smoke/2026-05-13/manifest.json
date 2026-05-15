@@ -2,8 +2,8 @@
   "generated_at": "2026-05-13",
   "tool": "npx playwright screenshot",
   "note": "Selector-based smoke checks for core local site behavior.",
-  "passing": 7,
-  "count": 7,
+  "passing": 8,
+  "count": 8,
   "checks": [
     {
       "name": "home",
@@ -11,7 +11,7 @@
       "selector": "h1",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/home.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/index.html\nWaiting for selector h1...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/home.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/index.html\nWaiting for selector h1...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/home.png",
       "stderr": ""
     },
     {
@@ -20,7 +20,7 @@
       "selector": "table",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/publications.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/publications.html\nWaiting for selector table...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/publications.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/publications.html\nWaiting for selector table...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/publications.png",
       "stderr": ""
     },
     {
@@ -29,7 +29,7 @@
       "selector": ".work-row",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/works.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/works/index.html\nWaiting for selector .work-row...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/works.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/works/index.html\nWaiting for selector .work-row...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/works.png",
       "stderr": ""
     },
     {
@@ -38,7 +38,16 @@
       "selector": ".result-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/search.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/search.html?q=active%20inference\nWaiting for selector .result-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/search.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/search.html?q=active%20inference\nWaiting for selector .result-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/search.png",
+      "stderr": ""
+    },
+    {
+      "name": "repositories",
+      "page": "repositories.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-13/repositories.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/repositories.html\nWaiting for selector .inventory-table...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/repositories.png",
       "stderr": ""
     },
     {
@@ -47,7 +56,7 @@
       "selector": ".catalog-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/catalog.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/catalog.html\nWaiting for selector .catalog-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/catalog.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/catalog.html\nWaiting for selector .catalog-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/catalog.png",
       "stderr": ""
     },
     {
@@ -56,7 +65,7 @@
       "selector": ".update-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/updates.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/updates.html\nWaiting for selector .update-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/updates.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/updates.html\nWaiting for selector .update-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/updates.png",
       "stderr": ""
     },
     {
@@ -65,7 +74,7 @@
       "selector": ".art-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-05-13/art.png",
-      "stdout": "Navigating to http://127.0.0.1:65178/art.html\nWaiting for selector .art-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/art.png",
+      "stdout": "Navigating to http://127.0.0.1:56415/art.html\nWaiting for selector .art-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-13/art.png",
       "stderr": ""
     }
   ]

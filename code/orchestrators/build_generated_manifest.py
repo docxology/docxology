@@ -7,9 +7,49 @@ import argparse
 import json
 from pathlib import Path
 
+try:
+    from report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"
+
+
+def _latest_report(pattern: str, fallback: str) -> str:
+    try:
+        return rel(latest_report(pattern))
+    except FileNotFoundError:
+        return fallback
+
+
+def _latest_subdir_manifest(prefix: str, fallback: str) -> str:
+    try:
+        latest = latest_subdir_file(prefix, "manifest.json")
+    except FileNotFoundError:
+        return fallback
+    return rel(latest)
+
+
+def _latest_subdir_pngs(prefix: str, fallback: str) -> str:
+    try:
+        latest = latest_subdir_file(prefix, "manifest.json")
+    except FileNotFoundError:
+        return fallback
+    return rel(latest.parent / "*.png")
+
+
+def _existing_generated_at() -> str | None:
+    if not JSON_OUT.exists():
+        return None
+    try:
+        return json.loads(JSON_OUT.read_text(encoding="utf-8")).get("generated_at")
+    except json.JSONDecodeError:
+        return None
+
+
+LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json")
 
 ARTIFACTS = [
     {
@@ -23,6 +63,12 @@ ARTIFACTS = [
         "outputs": ["data/software.json", "data/people.json", "data/organizations.json", "data/claims.json"],
         "sources": ["pages/SOFTWARE.md", "code/orchestrators/export_agent_data.py"],
         "command": "python3 code/orchestrators/export_agent_data.py",
+    },
+    {
+        "name": "Full GitHub repository inventory",
+        "outputs": ["data/github-repositories.json", "repositories.html"],
+        "sources": ["GitHub REST API", "data/software.json", "code/orchestrators/build_github_inventory.py"],
+        "command": "python3 code/orchestrators/build_github_inventory.py",
     },
     {
         "name": "Domain pages",
@@ -62,31 +108,49 @@ ARTIFACTS = [
     },
     {
         "name": "External link report",
-        "outputs": ["reports/external_links_2026-05-13.json"],
+        "outputs": [_latest_report("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json")],
         "sources": ["site-critical HTML, Markdown, and JSON-LD files"],
         "command": "python3 code/orchestrators/check_external_links.py",
     },
     {
+        "name": "Public source snapshot",
+        "outputs": [_latest_report("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")],
+        "sources": ["GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"],
+        "command": "python3 code/orchestrators/refresh_public_sources.py",
+    },
+    {
+        "name": "Public source inventory",
+        "outputs": [_latest_report("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")],
+        "sources": ["ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"],
+        "command": "python3 code/orchestrators/refresh_public_source_inventory.py",
+    },
+    {
         "name": "External link triage",
-        "outputs": ["reports/external_links_triage_2026-05-13.json", "reports/external_links_triage_2026-05-13.md"],
-        "sources": ["reports/external_links_2026-05-13.json"],
+        "outputs": [
+            _latest_report("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"),
+            _latest_report("external_links_triage_*.md", "reports/external_links_triage_2026-05-13.md"),
+        ],
+        "sources": [LATEST_EXTERNAL_LINK_REPORT],
         "command": "python3 code/orchestrators/build_external_link_triage.py",
     },
     {
         "name": "Asset size audit",
-        "outputs": ["reports/asset_size_2026-05-13.json"],
+        "outputs": [_latest_report("asset_size_*.json", "reports/asset_size_2026-05-13.json")],
         "sources": ["root HTML pages", "og-*.jpg", "data/*.json", "style.css", "sw.js"],
         "command": "python3 code/orchestrators/audit_assets.py",
     },
     {
         "name": "Browser smoke checks",
-        "outputs": ["reports/browser-smoke/2026-05-13/*.png", "reports/browser-smoke/2026-05-13/manifest.json"],
+        "outputs": [
+            _latest_subdir_pngs("browser-smoke", "reports/browser-smoke/2026-05-13/*.png"),
+            _latest_subdir_manifest("browser-smoke", "reports/browser-smoke/2026-05-13/manifest.json"),
+        ],
         "sources": ["root HTML pages", "works/index.html", "search-index.json"],
         "command": "python3 code/orchestrators/browser_smoke.py",
     },
     {
         "name": "Live site verification",
-        "outputs": ["reports/live_site_verification_2026-05-13.json"],
+        "outputs": [_latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-13.json")],
         "sources": ["https://danielarifriedman.com/", "GitHub Pages API"],
         "command": "python3 code/orchestrators/verify_live_site.py",
     },
@@ -104,15 +168,19 @@ ARTIFACTS = [
     },
     {
         "name": "Visual QA",
-        "outputs": ["reports/visual-qa/2026-05-13/*.png", "reports/visual-qa/2026-05-13/manifest.json"],
+        "outputs": [
+            _latest_subdir_pngs("visual-qa", "reports/visual-qa/2026-05-13/*.png"),
+            _latest_subdir_manifest("visual-qa", "reports/visual-qa/2026-05-13/manifest.json"),
+        ],
         "sources": ["root HTML pages", "style.css"],
         "command": "python3 code/orchestrators/visual_qa.py",
     },
 ]
 
 
-def render_json() -> str:
-    return json.dumps({"generated_at": "2026-05-13", "artifacts": ARTIFACTS}, indent=2, ensure_ascii=False) + "\n"
+def render_json(generated_at: str | None = None) -> str:
+    generated_at = generated_at or generated_timestamp()
+    return json.dumps({"generated_at": generated_at, "artifacts": ARTIFACTS}, indent=2, ensure_ascii=False) + "\n"
 
 
 def render_md() -> str:
@@ -139,8 +207,8 @@ def render_md() -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def outputs() -> dict[Path, str]:
-    return {JSON_OUT: render_json(), MD_OUT: render_md()}
+def outputs(generated_at: str | None = None) -> dict[Path, str]:
+    return {JSON_OUT: render_json(generated_at), MD_OUT: render_md()}
 
 
 def main() -> None:
@@ -148,7 +216,8 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated manifest files are stale")
     args = parser.parse_args()
     stale = []
-    for path, content in outputs().items():
+    generated_at = _existing_generated_at() if args.check else None
+    for path, content in outputs(generated_at).items():
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
                 stale.append(str(path.relative_to(REPO_ROOT)))

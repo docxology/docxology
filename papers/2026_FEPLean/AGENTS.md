@@ -3,7 +3,7 @@
 **Paper**: Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics (2026, v1)  
 **Area**: Active Inference · formal verification · Lean 4 · Mathlib4 · FEP · Bayesian mechanics · information geometry · LLM–ITP  
 **Author**: Daniel Ari Friedman (Active Inference Institute)  
-**Code**: https://github.com/ActiveInferenceInstitute/FEP_Lean  
+**Code**: https://github.com/ActiveInferenceInstitute/fep_lean  
 **Archive**: https://doi.org/10.5281/zenodo.19699234
 
 ---

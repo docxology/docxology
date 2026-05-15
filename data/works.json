@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13",
+  "generated_at": "2026-05-15T19:40:37Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "count": 115,
   "works": [
@@ -334,8 +334,8 @@
       "type": "Paper",
       "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.14108991",
-      "doi": "10.5281/zenodo.14108991",
+      "url": "https://doi.org/10.5281/zenodo.17982447",
+      "doi": "10.5281/zenodo.17982447",
       "docs_path": "papers/2025_AII_v3/",
       "has_paper_folder": true
     },
@@ -572,8 +572,8 @@
       "type": "Paper",
       "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.14108991",
-      "doi": "10.5281/zenodo.14108991",
+      "url": "https://doi.org/10.5281/zenodo.14108992",
+      "doi": "10.5281/zenodo.14108992",
       "docs_path": "papers/2024_AII_v2/",
       "has_paper_folder": true
     },
@@ -1531,15 +1531,15 @@
     },
     {
       "num": 110,
-      "citation_key": "Friedman2026LiteratureReviewArchitectureActive110",
+      "citation_key": "Friedman2026LivingMetaAnalysisArchitecture110",
       "year": 2026,
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring",
+      "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
       "venue": "Active Inference Journal",
-      "url": "https://doi.org/10.5281/zenodo.19461934",
-      "doi": "10.5281/zenodo.19461934",
+      "url": "https://doi.org/10.5281/zenodo.19897664",
+      "doi": "10.5281/zenodo.19897664",
       "docs_path": "papers/2026_ActInfMetaAnalysis/",
       "has_paper_folder": true
     },

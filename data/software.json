@@ -1,18 +1,8 @@
 {
-  "generated_at": "2026-05-13",
+  "generated_at": "2026-05-15T19:40:37Z",
   "source": "pages/SOFTWARE.md",
-  "count": 80,
+  "count": 81,
   "repositories": [
-    {
-      "name": "QuadCraft",
-      "url": "https://github.com/docxology/QuadCraft",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
-      "language": "JavaScript",
-      "stars": 8,
-      "updated_or_year": "2026-03"
-    },
     {
       "name": "template",
       "url": "https://github.com/docxology/template",
@@ -20,8 +10,18 @@
       "catalog_section": "docxology",
       "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
       "language": "Python",
-      "stars": 7,
-      "updated_or_year": "2026-03"
+      "stars": 13,
+      "updated_or_year": "2026-05"
+    },
+    {
+      "name": "QuadCraft",
+      "url": "https://github.com/docxology/QuadCraft",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
+      "language": "JavaScript",
+      "stars": 9,
+      "updated_or_year": "2026-05"
     },
     {
       "name": "MetaInformAnt",
@@ -30,8 +30,8 @@
       "catalog_section": "docxology",
       "description": "Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond",
       "language": "Python",
-      "stars": 5,
-      "updated_or_year": "2026-03"
+      "stars": 6,
+      "updated_or_year": "2026-05"
     },
     {
       "name": "codomyrmex",
@@ -40,8 +40,8 @@
       "catalog_section": "docxology",
       "description": "AI-native modular coding workspace — 127 modules, 424 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
       "language": "Python",
-      "stars": 3,
-      "updated_or_year": "2026-03"
+      "stars": 6,
+      "updated_or_year": "2026-05"
     },
     {
       "name": "cognitive-engine",
@@ -70,8 +70,8 @@
       "catalog_section": "docxology",
       "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
       "language": "TypeScript",
-      "stars": 3,
-      "updated_or_year": "2026-03"
+      "stars": 4,
+      "updated_or_year": "2026-04"
     },
     {
       "name": "FORMINDEX",
@@ -90,8 +90,8 @@
       "catalog_section": "docxology",
       "description": "Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy",
       "language": "Python",
-      "stars": 2,
-      "updated_or_year": "2024-04"
+      "stars": 3,
+      "updated_or_year": "2026-04"
     },
     {
       "name": "crescent-city",
@@ -180,8 +180,8 @@
       "catalog_section": "docxology",
       "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
       "language": "Python",
-      "stars": 1,
-      "updated_or_year": "2025-12"
+      "stars": 2,
+      "updated_or_year": "2026-05"
     },
     {
       "name": "obsidian-construction-from-text",
@@ -220,8 +220,8 @@
       "catalog_section": "docxology",
       "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
       "language": "Python",
-      "stars": 13,
-      "updated_or_year": "2025-09"
+      "stars": 14,
+      "updated_or_year": "2026-05"
     },
     {
       "name": "active_torchference",
@@ -269,7 +269,7 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript",
-      "language": "Python",
+      "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-04"
     },
@@ -279,7 +279,7 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment",
-      "language": "",
+      "language": "Julia",
       "stars": 0,
       "updated_or_year": "2025-04"
     },
@@ -460,8 +460,18 @@
       "catalog_section": "docxology",
       "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
       "language": "Rust",
+      "stars": 1,
+      "updated_or_year": "2026-04"
+    },
+    {
+      "name": "blake_jiang",
+      "url": "https://github.com/docxology/blake_jiang",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-03"
+      "updated_or_year": "2026-05"
     },
     {
       "name": "symergetics",
@@ -524,8 +534,8 @@
       "updated_or_year": "2024"
     },
     {
-      "name": "FEP_Lean",
-      "url": "https://github.com/ActiveInferenceInstitute/FEP_Lean",
+      "name": "fep_lean",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",

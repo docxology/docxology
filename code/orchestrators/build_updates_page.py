@@ -42,6 +42,7 @@ def parse_changelog() -> list[dict]:
 
 
 def json_ld(sections: list[dict]) -> str:
+    date_modified = sections[0]["date"] if sections else ""
     data = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -49,7 +50,7 @@ def json_ld(sections: list[dict]) -> str:
         "url": "https://danielarifriedman.com/updates.html",
         "name": "Updates — Daniel Ari Friedman",
         "description": "Human-readable changelog for the docxology public research and software index.",
-        "dateModified": "2026-05-13",
+        "dateModified": date_modified,
         "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
         "about": {"@id": "https://danielarifriedman.com/#person"},
         "mainEntity": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13",
+  "generated_at": "2026-05-15T19:47:25Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -28,6 +28,19 @@
         "code/orchestrators/export_agent_data.py"
       ],
       "command": "python3 code/orchestrators/export_agent_data.py"
+    },
+    {
+      "name": "Full GitHub repository inventory",
+      "outputs": [
+        "data/github-repositories.json",
+        "repositories.html"
+      ],
+      "sources": [
+        "GitHub REST API",
+        "data/software.json",
+        "code/orchestrators/build_github_inventory.py"
+      ],
+      "command": "python3 code/orchestrators/build_github_inventory.py"
     },
     {
       "name": "Domain pages",
@@ -105,7 +118,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-05-13.json"
+        "reports/external_links_2026-05-15.json"
       ],
       "sources": [
         "site-critical HTML, Markdown, and JSON-LD files"
@@ -113,20 +126,40 @@
       "command": "python3 code/orchestrators/check_external_links.py"
     },
     {
-      "name": "External link triage",
+      "name": "Public source snapshot",
       "outputs": [
-        "reports/external_links_triage_2026-05-13.json",
-        "reports/external_links_triage_2026-05-13.md"
+        "reports/public_source_snapshot_2026-05-15.json"
       ],
       "sources": [
-        "reports/external_links_2026-05-13.json"
+        "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
+      ],
+      "command": "python3 code/orchestrators/refresh_public_sources.py"
+    },
+    {
+      "name": "Public source inventory",
+      "outputs": [
+        "reports/public_source_inventory_2026-05-15.json"
+      ],
+      "sources": [
+        "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
+      ],
+      "command": "python3 code/orchestrators/refresh_public_source_inventory.py"
+    },
+    {
+      "name": "External link triage",
+      "outputs": [
+        "reports/external_links_triage_2026-05-15.json",
+        "reports/external_links_triage_2026-05-15.md"
+      ],
+      "sources": [
+        "reports/external_links_2026-05-15.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-05-13.json"
+        "reports/asset_size_2026-05-15.json"
       ],
       "sources": [
         "root HTML pages",
@@ -140,8 +173,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-05-13/*.png",
-        "reports/browser-smoke/2026-05-13/manifest.json"
+        "reports/browser-smoke/2026-05-15/*.png",
+        "reports/browser-smoke/2026-05-15/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -153,7 +186,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-05-13.json"
+        "reports/live_site_verification_2026-05-15.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",
@@ -186,8 +219,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-05-13/*.png",
-        "reports/visual-qa/2026-05-13/manifest.json"
+        "reports/visual-qa/2026-05-15/*.png",
+        "reports/visual-qa/2026-05-15/manifest.json"
       ],
       "sources": [
         "root HTML pages",

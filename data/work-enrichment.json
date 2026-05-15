@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13",
+  "generated_at": "2026-05-15T19:40:39Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 115,
   "works": {
@@ -2716,8 +2716,8 @@
       ],
       "source": "papers/2026_EntoLinguistics/README.md"
     },
-    "Friedman2026LiteratureReviewArchitectureActive110": {
-      "citation_key": "Friedman2026LiteratureReviewArchitectureActive110",
+    "Friedman2026LivingMetaAnalysisArchitecture110": {
+      "citation_key": "Friedman2026LivingMetaAnalysisArchitecture110",
       "abstract": "No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work presents a living meta-analysis framework: literature is retrieved from arXiv, Semantic Scholar, and OpenAlex and deduplicated ( N = 819 in v2) via a canonical identifier hierarchy (DOI arXiv ID Semantic Scholar ID OpenAlex ID). Papers are classified into a three-tier taxonomy (A: core theory; B: tools and translation; C: application domains) across eight categories. An LLM-powered pipeline evaluates each abstract against eight core hypotheses, emitting structured nanopublications (directionality, confidence, reasoning) that populate an RDF-compatible knowledge graph scored by a citation-weighted evidence function. All extractions are machine-generated and not fully manually validated; hypothesis scores are preliminary and are most useful fo",
       "keywords": [
         "Active Inference",
@@ -2830,7 +2830,7 @@
       ],
       "methods": [
         "Theoretical and systems paper: YAML → manuscript → Lake pipeline; per-topic modules with LaTeX-adjacent statement signatures.",
-        "Open-source : https://github.com/ActiveInferenceInstitute/FEP Lean (manuscript build uses the docxology template approach for validated metadata injection).",
+        "Open-source : https://github.com/ActiveInferenceInstitute/fep lean (manuscript build uses the docxology template approach for validated metadata injection).",
         "Archived manuscript (v1): https://doi.org/10.5281/zenodo.19699234 · Zenodo record https://zenodo.org/records/19699234"
       ],
       "source": "papers/2026_FEPLean/README.md"

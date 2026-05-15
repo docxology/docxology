@@ -8,7 +8,7 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-13",
+  "dateModified": "2026-05-15",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -41,12 +41,25 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "80 catalogued software repositories across docxology and AII contributions.",
+      "description": "81 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/software.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#github-repositories",
+      "name": "Full GitHub Repository Inventory",
+      "description": "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags.",
+      "url": "https://danielarifriedman.com/data/github-repositories.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/github-repositories.json",
         "encodingFormat": "application/json"
       }
     },
@@ -143,14 +156,40 @@
     },
     {
       "@type": "Dataset",
-      "@id": "https://danielarifriedman.com/catalog.html#external-links",
-      "name": "External Link Report",
-      "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-05-13.json",
+      "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
+      "name": "Public Source Inventory",
+      "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-15.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
+      "name": "Public Source Snapshot",
+      "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-15.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-15.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#external-links",
+      "name": "External Link Report",
+      "description": "Scoped network freshness report for site-critical outbound links.",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     },
@@ -159,11 +198,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     },
@@ -172,11 +211,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     },
@@ -185,11 +224,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-15/manifest.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-15/manifest.json",
         "encodingFormat": "application/json"
       }
     },
@@ -198,11 +237,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     }

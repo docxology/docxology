@@ -22,6 +22,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Per-work pages index: https://danielarifriedman.com/works/
 - Bibliography source table: https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md
 - Software catalog: https://danielarifriedman.com/software.html
+- Full repository inventory: https://danielarifriedman.com/repositories.html
 - Software source table: https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md
 - Cite and verify: https://danielarifriedman.com/cite-verify.html
 - Cite and verify source: https://github.com/docxology/docxology/blob/main/pages/CITE_VERIFY.md
@@ -42,6 +43,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Works JSON: https://danielarifriedman.com/data/works.json
 - Artwork JSON: https://danielarifriedman.com/data/artworks.json
 - Software JSON: https://danielarifriedman.com/data/software.json
+- GitHub repositories JSON: https://danielarifriedman.com/data/github-repositories.json
 - People JSON: https://danielarifriedman.com/data/people.json
 - Organizations JSON: https://danielarifriedman.com/data/organizations.json
 - Claims JSON: https://danielarifriedman.com/data/claims.json
@@ -53,8 +55,9 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Security contact: https://danielarifriedman.com/.well-known/security.txt
 - Search index: https://danielarifriedman.com/search-index.json
 - RSS feed: https://danielarifriedman.com/feed.xml
-- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-05-13.json
-- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-05-13.md
+- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-05-15.json
+- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-05-15.json
+- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-05-15.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-13.json
 - External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-13.md
 - Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-05-13.json
@@ -78,7 +81,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 
 - 115 works in the curated bibliography.
 - 108 per-paper folders.
-- 48 owned repositories catalogued.
+- 49 owned repositories catalogued.
 - 32 Active Inference Institute repositories catalogued with docxology contributions.
 - 286 public repositories on the primary GitHub profile at last API check.
 - 812 Google Scholar citations as manually synced in April 2026.

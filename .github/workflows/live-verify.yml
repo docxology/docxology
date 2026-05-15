@@ -32,8 +32,11 @@ jobs:
       - name: Show summary
         run: |
           python3 - <<'PY'
+          import glob
           import json
-          report = json.load(open("reports/live_site_verification_2026-05-13.json"))
+          path = sorted(glob.glob("reports/live_site_verification_*.json"))[-1]
+          report = json.load(open(path))
+          print(f"Report: {path}")
           print(f"GitHub Pages status: {report['github_pages'].get('status')}")
           print(f"Passing checks: {report['passing']}/{report['checked_urls']}")
           print(f"Overall OK: {report['overall_ok']}")
@@ -43,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: live-site-verification
-          path: reports/live_site_verification_2026-05-13.json
+          path: reports/live_site_verification_*.json

@@ -1,0 +1,391 @@
+{
+  "generated_at": "2026-05-15T19:42:27Z",
+  "source": "reports/external_links_2026-05-15.json",
+  "checked_urls": 387,
+  "ok": 357,
+  "warnings": 30,
+  "categories": {
+    "bot-protected-or-rate-limited": 27,
+    "connection-failure": 1,
+    "ok": 357,
+    "timeout": 1,
+    "upstream-transient": 1
+  },
+  "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
+  "warnings_by_category": {
+    "bot-protected-or-rate-limited": [
+      {
+        "url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "README.md",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1002/asi.24900",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/DOMAINS.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1002/ece3.70063",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/DOMAINS.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1093/molbev/msu292",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1098/rspb.2016.0841",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1111/mec.13964",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1146/annurev-neuro-070815-013927",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3109/09553002.2016.1144941",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/arts7030039",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/e25070964",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/e26040303",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/e27050459",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8266281",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8377988",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8415313",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://linkedin.com/in/danielarifriedman",
+        "status": 999,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "README.md",
+          "README.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "README.md",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://philpeople.org/profiles/daniel-ari-friedman",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://scholargps.com/scholars/96885945987887/daniel-ari-friedman",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://sciprofiles.com/profile/447575",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.kuppingercole.com/events/eic2024/speakers/3516",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.linkedin.com/in/danielarifriedman",
+        "status": 999,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.researchgate.net/profile/Daniel-Friedman-2",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "index.html",
+          "publications.html",
+          "README.md",
+          "README.md",
+          "pages/LINKS.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.udemy.com/course/communication-for-remote-teams/",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "publications.html",
+          "publications.html",
+          "README.md",
+          "pages/LINKS.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.udemy.com/course/keybase-for-remote-teams/",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html",
+          "pages/LINKS.md",
+          "pages/BIBLIOGRAPHY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "discovery.html",
+          "pages/LINKS.md",
+          "pages/DISCOVERY.md",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      }
+    ],
+    "connection-failure": [
+      {
+        "url": "https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman",
+        "status": 0,
+        "ok": false,
+        "category": "connection-failure",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 85 ms: Couldn't connect to server"
+      }
+    ],
+    "timeout": [
+      {
+        "url": "https://www.christies.com/en/lot/lot-6337619",
+        "status": 0,
+        "ok": false,
+        "category": "timeout",
+        "sources": [
+          "index.html",
+          "README.md",
+          "pages/LINKS.md",
+          "pages/EVIDENCE.md",
+          "pages/EVIDENCE.md"
+        ],
+        "error": "curl: (28) Operation timed out after 10007 milliseconds with 0 bytes received"
+      }
+    ],
+    "upstream-transient": [
+      {
+        "url": "https://dfri.people.stanford.edu/",
+        "status": 503,
+        "ok": false,
+        "category": "upstream-transient",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      }
+    ]
+  }
+}

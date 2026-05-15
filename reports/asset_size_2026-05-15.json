@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-05-15T19:47:25Z",
+  "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
+  "asset_count": 54,
+  "warnings": 0,
+  "total_bytes": 6069537,
+  "largest": [
+    {
+      "path": "data/artworks.json",
+      "kind": "json-data",
+      "bytes": 3254527,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 285086,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 258489,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "data/work-enrichment.json",
+      "kind": "json-data",
+      "bytes": 181943,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "publications.html",
+      "kind": "html",
+      "bytes": 122296,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "og-computational.jpg",
+      "kind": "og-image",
+      "bytes": 108372,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-art-synergetics.jpg",
+      "kind": "og-image",
+      "bytes": 105555,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-cognitive-security.jpg",
+      "kind": "og-image",
+      "bytes": 105437,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-domains.jpg",
+      "kind": "og-image",
+      "bytes": 104822,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-active-inference.jpg",
+      "kind": "og-image",
+      "bytes": 102258,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-discovery.jpg",
+      "kind": "og-image",
+      "bytes": 101450,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-image.jpg",
+      "kind": "og-image",
+      "bytes": 100933,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-publications.jpg",
+      "kind": "og-image",
+      "bytes": 100740,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-entomology.jpg",
+      "kind": "og-image",
+      "bytes": 99776,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-software.jpg",
+      "kind": "og-image",
+      "bytes": 99409,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-media.jpg",
+      "kind": "og-image",
+      "bytes": 98713,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-cite-verify.jpg",
+      "kind": "og-image",
+      "bytes": 98517,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-art.jpg",
+      "kind": "og-image",
+      "bytes": 96775,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 74960,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/works.json",
+      "kind": "json-data",
+      "bytes": 57165,
+      "budget_bytes": 4000000,
+      "ok": true
+    }
+  ],
+  "over_budget": []
+}

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-13",
-  "snapshot": "reports/public_source_snapshot_2026-05-13.json",
-  "claims_count": 6,
+  "generated_at": "2026-05-15T19:39:42.314634+00:00",
+  "snapshot": "reports/public_source_snapshot_2026-05-15.json",
+  "claims_count": 15,
   "comparisons": [
     {
       "name": "Curated bibliography vs ORCID work groups",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Catalogued docxology software vs GitHub public repository count",
-      "local_value": 48,
+      "local_value": 49,
       "public_value": 286,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments."

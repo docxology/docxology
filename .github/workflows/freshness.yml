@@ -26,16 +26,19 @@ jobs:
           python-version: "3.12"
 
       - name: Refresh public-source snapshot
-        run: python3 code/orchestrators/refresh_public_sources.py --output reports/public_source_snapshot_latest.json
+        run: python3 code/orchestrators/refresh_public_sources.py --output reports/public_source_snapshot_latest.json --facts-output reports/public_source_snapshot_latest.facts.json
 
       - name: Compare with checked-in snapshot
         id: diff
         run: |
-          if cmp -s reports/public_source_snapshot_2026-05-13.json reports/public_source_snapshot_latest.json; then
+          BASELINE="$(ls reports/public_source_snapshot_*.json | sort | tail -n 1)"
+          jq -S '.facts' "$BASELINE" > reports/public_source_snapshot_baseline.facts.json
+          if cmp -s reports/public_source_snapshot_baseline.facts.json reports/public_source_snapshot_latest.facts.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+          echo "baseline=$BASELINE" >> "$GITHUB_OUTPUT"
 
       - name: Upload freshness artifact
         uses: actions/upload-artifact@v4
@@ -51,4 +54,4 @@ jobs:
           gh issue create \
             --title "Public-source freshness drift detected" \
             --label "evidence,verification" \
-            --body "The scheduled public-source snapshot differs from the checked-in 2026-05-13 baseline. Review the uploaded workflow artifact, then update curated claims deliberately if the scope and source quality justify it."
+            --body "The scheduled public-source normalized facts differ from the latest checked-in baseline (${{ steps.diff.outputs.baseline }}). Review the uploaded workflow artifact, then update curated claims deliberately if the scope and source quality justify it."

@@ -2701,7 +2701,7 @@ p.s. &quot;The Bolsheviks will do everything to secure this peaceful development
 p.p.s. &quot;I wish to establish some sort of system not guided by chance but by some sort of definite and exact principle.&quot;
 – Dmitri Mendeleev, Lecture to the Russian Chemical Society_
 
-![Perestroika (Перестро́йка)](<25648571567_Perestroika _Перестро_йка_.jpg>)
+![Perestroika (Перестро́йка)](<25648571567_Perestroika _Перестро_йка_.jpg>)
 
 ## Azure
 _&quot;I am a little world made cunningly
@@ -3796,7 +3796,7 @@ For promis'd joy!”
 “Be not the slave of your own past - plunge into the sublime seas, dive deep, and swim far, so you shall come back with new self-respect, with new power, and with an advanced experience that shall explain and overlook the old.” 
 ― Ralph Waldo Emerson_
 
-![Baupläne (Tripartite)](<29030797943_Baupläne _Tripartite_.jpg>)
+![Baupläne (Tripartite)](<29030797943_Baupläne _Tripartite_.jpg>)
 
 ## Excitement is the Daughter of Curiosity
 _&quot;The ideal condition
@@ -4411,7 +4411,7 @@ One truth is clear, 'Whatever IS, is RIGHT.' &quot;
 &quot;I hear new news every day, and those ordinary rumours of war, plagues, fires, inundations, thefts, murders, massacres, meteors, comets, spectrums, prodigies, apparitions, of towns taken, cities besieged in France, Germany, Turkey, Persia, Poland, &amp;c., daily musters and preparations, and such like, which these tempestuous times afford, battles fought, so many men slain, monomachies, shipwrecks, piracies, and sea-fights, peace, leagues, stratagems, and fresh alarms. A vast confusion of vows, wishes, actions, edicts, petitions, lawsuits, pleas, laws, proclamations, complaints, grievances, are daily brought to our ears. New books every day, pamphlets, currantoes, stories, whole catalogues of volumes of all sorts, new paradoxes, opinions, schisms, heresies, controversies in philosophy, religion, &amp;c. Now come tidings of weddings, maskings, mummeries, entertainments, jubilees, embassies, tilts and tournaments, trophies, triumphs, revels, sports, plays: then again, as in a new shifted scene, treasons, cheating tricks, robberies, enormous villanies in all kinds, funerals, burials, deaths of Princes, new discoveries, expeditions; now comical then tragical matters. To-day we hear of new Lords and officers created, to-morrow of some great men deposed, and then again of fresh honours conferred; one is let loose, another imprisoned; one purchaseth, another breaketh: he thrives, his neighbour turns bankrupt; now plenty, then again dearth and famine; one runs, another rides, wrangles, laughs, weeps &amp;c. Thus I daily hear, and such like, both private and publick news. Amdist the gallantry and misery of the world: jollity, pride, perplexities and cares, simplicity and villany; subtlety, knavery, candour and integrity, mutually mixed and offering themselves, I rub on in a strictly private life; as I have still lived, so I now continue, as I was from the first, left to a solitary life, and mine own domestick discontents: saving that sometimes, not to tell a lie, as Diogenes went into the city, and Democritus to the haven, to see fashions, I did for my recreation now and then walk abroad, look into the world, and could not choose but make some little observation, not so wise an observer as a plain rehearser, not as they did to scoff or laugh at all, but with a mixed passion.&quot;
  — Robert Burton, The Anatomy of Melancholy etc., &quot;Democritus Junior to the Reader&quot;_
 
-![Kùn (Exhaustion, #47)](<30689635181_Kùn _Exhaustion_ _47_.jpg>)
+![Kùn (Exhaustion, #47)](<30689635181_Kùn _Exhaustion_ _47_.jpg>)
 
 ## Alternative Current
 _&quot;A good teacher must know the rules; a good pupil, the exceptions.&quot;
@@ -10364,7 +10364,7 @@ _&quot;To every ω-consistent recursive class κ of formulae there correspond re
 &quot;That swarm of ants that I observed, each one following the one ahead, have every one been Indra in the world of the gods by virtue of their own past action. And now, by virtue of their deeds done in the past, they have gradually fallen to the state of ants.&quot;
 – Krsna, &quot;Indra and the Ants&quot;._
 
-![Gödel, Escher, Bach](<48489125096_Gödel_ Escher_ Bach.jpg>)
+![Gödel, Escher, Bach](<48489125096_Gödel_ Escher_ Bach.jpg>)
 
 ## SurveilAnt State
 _&quot;We’ve got to do several things, and I am, adamantly against illegal immigrants. We’ve got to do more at our borders and people need to stop employing illegal immigrants.&quot;
@@ -10468,7 +10468,7 @@ Richard von Mise, First Lecture, &quot;The Definition of Probability&quot;, p. 8
 &quot;If ... the ability to tell right from wrong should turn out to have anything to do with the ability to think, then we must be able to &quot;demand&quot; its exercise from every sane person, no matter how erudite or ignorant, intelligent or stupid, he may happen to be. Kant—in this respect almost alone among the philosophers—was much bothered by the common opinion that philosophy is only for the few, precisely because of its moral implications.&quot;
 – Hannah Arendt, &quot;The Life of the Mind&quot; (1978), p. 13._
 
-![Gödel gets Diagonalized](<48578694082_Gödel gets Diagonalized.jpg>)
+![Gödel gets Diagonalized](<48578694082_Gödel gets Diagonalized.jpg>)
 
 ## The Space Game
 _&quot;For the benefit of all.&quot;
@@ -11323,7 +11323,7 @@ _&quot;Wyrd is too vast and too complex, for us to comprehend, for we are oursel
 &quot;The most fundamental concept in heathenry is wyrd. It is also one of the most difficult to explain and hence one of the most often misunderstood. … The Anglo-Saxon noun wyrd is derived from a verb, weorþan, &quot;to become&quot;, which, in turn, is derived from an IndoEuropean root *uert- meaning &quot;to turn&quot;. (If you noticed the redundant use of &quot;turn&quot; in the previous sentence, good. The use of the modern English phrase &quot;in turn&quot;, illustrates wyrd in action. Watch for it throughout this article.) Wyrd literally means &quot;that which has turned&quot; or &quot;that which has become.&quot; It carries the idea of &quot;turned into&quot; in both the sense of becoming something new and the sense of turning back to an original starting point. In metaphysical terms, wyrd embodies the concept that everything is turning into something else while both being drawn in toward and moving out from its own origins. Thus, we can think of wyrd as a process that continually works the patterns of the past into the patterns of the present.&quot;
 – Arlea Æðelwyrd Hunt-Anschütz, in &quot;What is Wyrd?&quot; in Cup of Wonder No. 5 (October 2001)_
 
-![Odin (Óðinn)](<49465319797_Odin _Óðinn_.jpg>)
+![Odin (Óðinn)](<49465319797_Odin _Óðinn_.jpg>)
 
 ## Alas! Poor Yorick, I knew him, Horatio
 _Hamlet: Lady, shall I lie in your lap?
@@ -11519,7 +11519,7 @@ _&quot;Be strong in the Lord, and in the power of his might. Put on the whole ar
 – Mao Zedong, as quoted in &quot;Mao's Road to Power: Revolutionary Writings, 1912-49: v. 5: Toward the Second United Front, January 1935-July 1937: Revolutionary Writings, 1912-49&quot; (2017), p. 861, Routledge.
 _
 
-![William Blake (Уильям Блейк)](<49649654841_William Blake _Уильям Блейк_.jpg>)
+![William Blake (Уильям Блейк)](<49649654841_William Blake _Уильям Блейк_.jpg>)
 
 ## State of Arkansas
 _&quot;You can tell your mom I moved to Arkansas; you can tell your dog to bite my leg. Or tell your brother Cliff, whose fist can tell my lip. He never really liked me anyway.&quot; 

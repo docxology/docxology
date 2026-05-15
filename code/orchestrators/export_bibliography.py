@@ -26,6 +26,11 @@ sys.path.insert(0, str(PAPERS_DIR))
 from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
 from sync_publications_html import canonical_link_url  # noqa: E402
 
+try:
+    from report_paths import generated_timestamp
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import generated_timestamp
+
 
 DOMAIN_NAMES = {
     "🐜": "Entomology",
@@ -207,10 +212,19 @@ def ris_record(work: Work) -> str:
     return "\n".join(lines)
 
 
-def render_outputs(works: list[Work]) -> dict[Path, str]:
+def existing_generated_at(path: Path) -> str | None:
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("generated_at")
+    except json.JSONDecodeError:
+        return None
+
+
+def render_outputs(works: list[Work], generated_at: str | None = None) -> dict[Path, str]:
     data_dir = REPO_ROOT / "data"
     works_json = {
-        "generated_at": "2026-05-13",
+        "generated_at": generated_at or generated_timestamp(),
         "source": "pages/BIBLIOGRAPHY.md",
         "count": len(works),
         "works": [asdict(w) for w in works],
@@ -232,7 +246,8 @@ def main() -> None:
     args = parser.parse_args()
 
     works = [row_to_work(r) for r in iter_bibliography_rows()]
-    outputs = render_outputs(works)
+    generated_at = existing_generated_at(REPO_ROOT / "data" / "works.json") if args.check else None
+    outputs = render_outputs(works, generated_at)
 
     stale: list[str] = []
     for path, content in outputs.items():

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13",
+  "generated_at": "2026-05-15T19:40:37Z",
   "organizations": [
     {
       "name": "Active Inference Institute",
@@ -8,6 +8,7 @@
         "Active Inference Lab"
       ],
       "url": "https://www.activeinference.institute/",
+      "public_landing_page": "https://activeinference.org/",
       "wikidata": "https://www.wikidata.org/wiki/Q139600792",
       "github": "https://github.com/ActiveInferenceInstitute",
       "role": "Research and education nonprofit focused on Active Inference and the Free Energy Principle"

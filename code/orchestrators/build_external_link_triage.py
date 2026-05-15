@@ -10,9 +10,19 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SOURCE = REPO_ROOT / "reports" / "external_links_2026-05-13.json"
-JSON_OUT = REPO_ROOT / "reports" / "external_links_triage_2026-05-13.json"
-MD_OUT = REPO_ROOT / "reports" / "external_links_triage_2026-05-13.md"
+
+try:
+    from report_paths import latest_report
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import latest_report
+
+
+def source_report() -> Path:
+    return latest_report("external_links_[0-9]*.json")
+
+
+def source_date(path: Path) -> str:
+    return path.stem.removeprefix("external_links_")
 
 
 def category(row: dict) -> str:
@@ -34,7 +44,8 @@ def category(row: dict) -> str:
 
 
 def build() -> tuple[dict, str]:
-    payload = json.loads(SOURCE.read_text(encoding="utf-8"))
+    source = source_report()
+    payload = json.loads(source.read_text(encoding="utf-8"))
     rows = []
     counts: Counter[str] = Counter()
     by_category: dict[str, list[dict]] = defaultdict(list)
@@ -53,8 +64,8 @@ def build() -> tuple[dict, str]:
         if cat != "ok":
             by_category[cat].append(enriched)
     triage = {
-        "generated_at": "2026-05-13",
-        "source": str(SOURCE.relative_to(REPO_ROOT)),
+        "generated_at": payload.get("generated_at", source_date(source)),
+        "source": str(source.relative_to(REPO_ROOT)),
         "checked_urls": payload["checked_urls"],
         "ok": counts["ok"],
         "warnings": payload["checked_urls"] - counts["ok"],
@@ -67,7 +78,7 @@ def build() -> tuple[dict, str]:
         "",
         "Scoped network-link triage for public-facing repository hubs.",
         "",
-        f"- Source report: `{SOURCE.relative_to(REPO_ROOT)}`",
+        f"- Source report: `{source.relative_to(REPO_ROOT)}`",
         f"- Checked URLs: {triage['checked_urls']}",
         f"- OK: {triage['ok']}",
         f"- Warnings: {triage['warnings']}",
@@ -98,7 +109,11 @@ def build() -> tuple[dict, str]:
 
 def outputs() -> dict[Path, str]:
     payload, markdown = build()
-    return {JSON_OUT: json.dumps(payload, indent=2, ensure_ascii=False) + "\n", MD_OUT: markdown}
+    date = source_date(REPO_ROOT / payload["source"])
+    return {
+        REPO_ROOT / "reports" / f"external_links_triage_{date}.json": json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        REPO_ROOT / "reports" / f"external_links_triage_{date}.md": markdown,
+    }
 
 
 def main() -> None:

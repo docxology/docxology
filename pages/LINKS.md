@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 **Comprehensive directory of all public web presences, profiles, and resources**
 
-*Last updated: 2026-05-13 (fact-checked with public APIs, official profile pages, and the curated bibliography)*
+*Last updated: 2026-05-15 (fact-checked with public APIs, official profile pages, and the curated bibliography)*
 
 [Discovery map](DISCOVERY.md): canonical IDs, machine-readable API endpoints, query recipes, and verification notes for agentic retrieval.
 
@@ -32,7 +32,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | PhilPeople | [philpeople.org/profiles/daniel-ari-friedman](https://philpeople.org/profiles/daniel-ari-friedman) | Philosophy research profile |
 | Wikidata | [Q138781444](https://www.wikidata.org/wiki/Q138781444) | Structured knowledge base entry |
 | Stanford Profile | [dfri.people.stanford.edu](https://dfri.people.stanford.edu/) | Stanford University page |
-| Semantic Scholar | [semanticscholar.org](https://www.semanticscholar.org/author/Daniel-A.-Friedman/51453144) | AI-curated citation graph |
+| Semantic Scholar | [semanticscholar.org search](https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance) | AI-curated citation graph; verify candidate author merges before using as profile evidence |
 | SciProfiles | [sciprofiles.com/profile/447575](https://sciprofiles.com/profile/447575) | MDPI author profile |
 | ArXiv | [arxiv.org (search)](https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author) | Preprints |
 | ScholarGPS | [scholargps.com](https://scholargps.com/scholars/96885945987887/daniel-ari-friedman) | AI-curated scholar analytics |
@@ -52,7 +52,8 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Organization | Role | Link |
 |-------------|------|------|
-| Active Inference Institute | President & Treasurer, Co-founder | [activeinference.institute](https://www.activeinference.institute/) |
+| Active Inference Institute | President & Treasurer, Co-founder | [activeinference.org](https://activeinference.org/) |
+| Active Inference Institute Governance Site | Officers, board, history, programs | [activeinference.institute](https://www.activeinference.institute/) |
 | Active Inference Institute Officers | Officer page | [activeinference.institute/officers](https://www.activeinference.institute/officers) |
 | Active Inference Institute Board | Board of Directors (10 current members listed May 2026) | [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors) |
 | AII Scientific Advisory Board | 2026 SAB cohort and prior advisory cohorts | [activeinference.institute/scientific-advisory-board](https://www.activeinference.institute/scientific-advisory-board) |
@@ -91,6 +92,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 286 public repositories, primary development |
 | GitHub (secondary) | [github.com/danielarifriedman](https://github.com/danielarifriedman) | Secondary profile |
 | Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 50 public repositories; 32 catalogued here with docxology contributions |
+| Full Repository Inventory | [repositories.html](../repositories.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated full public GitHub inventory for docxology and AII repositories |
 | Journal-Utilities Zenodo Release | [10.5281/zenodo.18686966](https://doi.org/10.5281/zenodo.18686966) | AII video-processing software release with Daniel Ari Friedman listed as creator |
 | GNN Zenodo Software Release | [10.5281/zenodo.19600217](https://doi.org/10.5281/zenodo.19600217) | Software record for GeneralizedNotationNotation (GNN) |
 | This Repository | [github.com/docxology/docxology](https://github.com/docxology/docxology) | Master profile & publication index |
@@ -186,7 +188,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
 | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
-| [SOFTWARE.md](SOFTWARE.md) | 48 owned repos + 32 AII contributions |
+| [SOFTWARE.md](SOFTWARE.md) | 49 owned repos + 32 AII contributions |
 | [DOMAINS.md](DOMAINS.md) / [domains.html](../domains.html) | Research domain paths through works, software, collaborators, and learning routes |
 | [DISCOVERY.md](DISCOVERY.md) | Canonical IDs, API endpoints, exact public-source queries, and verification notes |
 | [cite-verify.html](../cite-verify.html) / [CITE_VERIFY.md](CITE_VERIFY.md) | Preferred citation metadata, public identifiers, and source-of-truth rules |

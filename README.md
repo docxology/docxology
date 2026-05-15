@@ -1,6 +1,6 @@
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"Person","name":"Daniel Ari Friedman","givenName":"Daniel","familyName":"Friedman","jobTitle":"Computational Biologist & Active Inference Researcher","description":"Researcher and consultant specializing in Active Inference, Bayesian modeling, computational entomology, and cognitive security. Stanford PhD. Available for AI consulting, tutoring, and research collaboration.","url":"https://github.com/docxology","sameAs":["https://www.wikidata.org/wiki/Q138781444","https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en","https://orcid.org/0000-0001-6232-9096","https://www.researchgate.net/profile/Daniel-Friedman-2","https://linkedin.com/in/danielarifriedman","https://youtube.com/@danielarifriedman","https://danielarifriedman.com/","https://activeinference.institute/","https://cogsec.org","https://curio.cards/artist/danielfriedman/","https://www.instagram.com/danielarifriedman/","https://www.flickr.com/photos/daniel_friedman/"],"knowsAbout":["Active Inference","Bayesian modeling","free energy principle","computational biology","cognitive security","entomology","ant colony behavior","collective intelligence","synergetics","Buckminster Fuller","William Blake","AI consulting","machine learning","multi-agent systems","information security","variational inference","computational neuroscience","NFT art","Curio Cards","complexity science"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Stanford University"},"affiliation":{"@type":"Organization","name":"Active Inference Institute","url":"https://activeinference.institute/"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"PhD","recognizedBy":{"@type":"CollegeOrUniversity","name":"Stanford University"}},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Research Consulting","description":"Research consulting in Active Inference, Bayesian modeling, computational biology, and cognitive security","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Tutoring & Mentorship","description":"Personalized tutoring in Active Inference, Python/Rust AI frameworks, and scientific writing","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}}]}
+{"@context":"https://schema.org","@type":"Person","name":"Daniel Ari Friedman","givenName":"Daniel","familyName":"Friedman","jobTitle":"Computational Biologist & Active Inference Researcher","description":"Researcher and consultant specializing in Active Inference, Bayesian modeling, computational entomology, and cognitive security. Stanford PhD. Available for AI consulting, tutoring, and research collaboration.","url":"https://github.com/docxology","sameAs":["https://www.wikidata.org/wiki/Q138781444","https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en","https://orcid.org/0000-0001-6232-9096","https://www.researchgate.net/profile/Daniel-Friedman-2","https://linkedin.com/in/danielarifriedman","https://youtube.com/@danielarifriedman","https://danielarifriedman.com/","https://activeinference.org/","https://activeinference.institute/","https://cogsec.org","https://curio.cards/artist/danielfriedman/","https://www.instagram.com/danielarifriedman/","https://www.flickr.com/photos/daniel_friedman/"],"knowsAbout":["Active Inference","Bayesian modeling","free energy principle","computational biology","cognitive security","entomology","ant colony behavior","collective intelligence","synergetics","Buckminster Fuller","William Blake","AI consulting","machine learning","multi-agent systems","information security","variational inference","computational neuroscience","NFT art","Curio Cards","complexity science"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Stanford University"},"affiliation":{"@type":"Organization","name":"Active Inference Institute","url":"https://activeinference.org/"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"PhD","recognizedBy":{"@type":"CollegeOrUniversity","name":"Stanford University"}},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Research Consulting","description":"Research consulting in Active Inference, Bayesian modeling, computational biology, and cognitive security","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Tutoring & Mentorship","description":"Personalized tutoring in Active Inference, Python/Rust AI frameworks, and scientific writing","provider":{"@type":"Person","name":"Daniel Ari Friedman"}}}]}
 -->
 
 <div align="center">
@@ -13,7 +13,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 
 *Available for consulting, tutoring, and research collaboration*
 
-[![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.institute/)
+[![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.org/)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-812_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 
@@ -37,10 +37,10 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. I am available for **AI research consulting**, **tutoring**, and **collaboration** on projects involving Active Inference, machine learning, and computational science. [Full biography →](pages/PROFILE.md)
 
 - 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](pages/COLLABORATORS.md#deborah-gordon--stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Fellow at UC Davis (2020–2023)
-- 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.institute/)** (501(c)(3) non-profit); co-author with [Karl Friston](pages/COLLABORATORS.md#karl-friston--ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
+- 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.org/)** (501(c)(3) non-profit; governance pages at [activeinference.institute](https://www.activeinference.institute/)); co-author with [Karl Friston](pages/COLLABORATORS.md#karl-friston--ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
 - 🛡️ **Cognitive Security Researcher** — 3 books + 17 papers on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
 - 🎨 **Early NFT Artist** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (recognized in NFT archaeology as early Ethereum art NFTs, minted May 9, 2017; [Christie's auction Oct 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://danielarifriedman.com/art.html) · [Local Gallery](art/README.md)
-- 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, [AII Textbook Group](https://activeinference.institute/) (10 cohorts through 2026; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), College of the Redwoods ([BIOL-1](https://github.com/docxology/biol-1) at Pelican Bay, [BIOL-8](https://github.com/docxology/biol-8) Human Biology; Spring 2026), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops, and private tutoring
+- 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, [AII Textbook Group](https://activeinference.org/) (10 cohorts through 2026; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), College of the Redwoods ([BIOL-1](https://github.com/docxology/biol-1) at Pelican Bay, [BIOL-8](https://github.com/docxology/biol-8) Human Biology; Spring 2026), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops, and private tutoring
 - 🌐 **Community Builder** — Co-founder of [Complexity Weekend](https://www.complexityadventures.com/) (since 2019); co-organized Stanford Complexity Group
 
 ---
@@ -54,13 +54,13 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **115 works** in the unified bibliography · **286** public GitHub repositories · **80** catalogued software repos (48 owned + 32 AII) · **812** Google Scholar citations (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **115 works** in the unified bibliography · **286** public GitHub repositories · **81** catalogued software repos (49 owned + 32 AII) · **812** Google Scholar citations (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
 ## 📁 Repository Map
 
-> **Full catalog**: 115 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 48 owned repos · 32 AII contributions
+> **Full catalog**: 115 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 49 owned repos · 32 AII contributions
 
 | Resource | What's Inside |
 |----------|---------------|
@@ -69,7 +69,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🔎 [**search.html**](search.html) / [**opensearch.xml**](opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
 | 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
 | 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
-| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **48 owned repos** + **32 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure |
+| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **49 owned repos** + **32 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [full generated repository inventory](repositories.html) for public GitHub coverage |
 | 📁 [**papers/**](papers/) | **108 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
 | 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
@@ -91,7 +91,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | Domain | Publications | Highlights | Software |
 |--------|:-----------:|------------|----------|
 | 🐜 Entomology | [21 works](pages/BIBLIOGRAPHY.md#-entomology) | [EntoLinguistics](papers/2026_EntoLinguistics/) · [ActiveInferants](papers/2021_ActiveInferants/) · [AntStack](papers/2025_AntStack/) · [PhD](papers/2019_PhDDissertation/) | [ento_linguistics](https://github.com/docxology/ento_linguistics) · [MetaInformAnt](https://github.com/docxology/MetaInformAnt) · [ant_stack](https://github.com/docxology/ant_stack) |
-| 🧠 Active Inference | [23 works](pages/BIBLIOGRAPHY.md#-active-inference) | [FEPLean](papers/2026_FEPLean/) · [CognitiveCaseDiagrams](papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/2025_CEREBRUM/) | [FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
+| 🧠 Active Inference | [23 works](pages/BIBLIOGRAPHY.md#-active-inference) | [FEPLean](papers/2026_FEPLean/) · [CognitiveCaseDiagrams](papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/2025_CEREBRUM/) | [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
 | 🛡️ Cognitive Security | [20 works](pages/BIBLIOGRAPHY.md#️-cognitive-security) | [CognitiveIntegrity](papers/2026_CognitiveIntegrity/) · [InformationCommons](papers/2022_InformationCommons/) · [P3IF](papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
 | 🎨 Art & Synergetics | [15 works](pages/BIBLIOGRAPHY.md#-art--synergetics) | [BlakeJiang](papers/2026_BlakeJiang/) · [DoorsOfPerception](papers/2026_DoorsOfPerception/) · [BlakeFuller](papers/2023_BlakeFuller/) · [QuadMath](papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
 | 💻 Computational | [7 papers](pages/BIBLIOGRAPHY.md#-computational) | [DiscoveryEngine](papers/2025_DiscoveryEngine/) · [MDKV](papers/2025_MDKV/) · [MarkdownDecisionProcess](papers/2025_MarkdownDecisionProcess/) · [ReproducibleResearch](papers/2026_ReproducibleResearch/) | [template](https://github.com/docxology/template) · [steganographer](https://github.com/docxology/steganographer) |
@@ -200,7 +200,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 💻 Computational Frameworks & Software
 
-> **7 papers + 48 owned + 32 AII repositories** — [Papers in Bibliography →](pages/BIBLIOGRAPHY.md#-computational) · [All repos →](pages/SOFTWARE.md)
+> **7 papers + 49 owned + 32 AII repositories** — [Papers in Bibliography →](pages/BIBLIOGRAPHY.md#-computational) · [Curated repos →](pages/SOFTWARE.md) · [Full inventory →](repositories.html)
 
 <details>
 <summary><b>Key publications & repositories (click to expand)</b></summary>
@@ -224,7 +224,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Integration for Ants and Beyond |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
-> **Full list of 48 personal repos + 32 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md)
+> **Full list of 49 personal repos + 32 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md). For all public GitHub repositories including forks and uncataloged projects, see [repositories.html →](repositories.html).
 
 </details>
 
@@ -239,7 +239,8 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
-| 2025 | The Active Inference Institute & Active Inference Ecosystem (v3) | *Zenodo* | [10.5281/zenodo.14108991](https://doi.org/10.5281/zenodo.14108991) |
+| 2025 | The Active Inference Institute & Active Inference Ecosystem (v3) | *Zenodo* | [10.5281/zenodo.17982447](https://doi.org/10.5281/zenodo.17982447) |
+| 2024 | The Active Inference Institute & Active Inference Ecosystem (v2) | *Zenodo* | [10.5281/zenodo.14108992](https://doi.org/10.5281/zenodo.14108992) |
 | 2024 | Aligning Active Inference Ontology to SUMO | *Zenodo* | [10.5281/zenodo.11459322](https://doi.org/10.5281/zenodo.11459322) |
 | 2023 | The Active Inference Institute and Active Inference Ecosystem (v1) | *Zenodo* | [10.5281/zenodo.8266281](https://doi.org/10.5281/zenodo.8266281) |
 

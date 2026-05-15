@@ -12,7 +12,13 @@ from pathlib import Path
 from urllib.request import urlopen
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT_DIR = REPO_ROOT / "reports" / "browser-smoke" / "2026-05-13"
+
+try:
+    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+
+OUT_DIR = dated_report_dir("browser-smoke")
 MANIFEST = OUT_DIR / "manifest.json"
 
 PAGES = [
@@ -20,6 +26,7 @@ PAGES = [
     ("publications", "publications.html", "table"),
     ("works", "works/index.html", ".work-row"),
     ("search", "search.html?q=active%20inference", ".result-card"),
+    ("repositories", "repositories.html", ".inventory-table"),
     ("catalog", "catalog.html", ".catalog-card"),
     ("updates", "updates.html", ".update-card"),
     ("art", "art.html", ".art-card"),
@@ -84,7 +91,7 @@ def run_smoke() -> dict:
                 }
             )
         manifest = {
-            "generated_at": "2026-05-13",
+            "generated_at": generated_timestamp(),
             "tool": "npx playwright screenshot",
             "note": "Selector-based smoke checks for core local site behavior.",
             "passing": sum(1 for item in checks if item["ok"]),
@@ -102,9 +109,10 @@ def run_smoke() -> dict:
 
 
 def check() -> None:
-    if not MANIFEST.exists():
+    manifest_path = latest_subdir_file("browser-smoke", "manifest.json")
+    if not manifest_path.exists():
         raise SystemExit("Missing browser smoke manifest")
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     failures = [item["page"] for item in manifest.get("checks", []) if not item.get("ok")]
     missing = [item["screenshot"] for item in manifest.get("checks", []) if item.get("screenshot") and not (REPO_ROOT / item["screenshot"]).exists()]
     if failures:

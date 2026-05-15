@@ -9,7 +9,13 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT = REPO_ROOT / "reports" / "accessibility_static_2026-05-13.json"
+
+try:
+    from report_paths import dated_report_path, generated_timestamp, latest_report
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import dated_report_path, generated_timestamp, latest_report
+
+OUT = dated_report_path("accessibility_static", "json")
 
 
 class PageParser(HTMLParser):
@@ -98,7 +104,16 @@ def audit_page(path: Path) -> dict:
     }
 
 
-def render() -> str:
+def existing_generated_at(path: Path) -> str | None:
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("generated_at")
+    except json.JSONDecodeError:
+        return None
+
+
+def render(generated_at: str | None = None) -> str:
     pages = []
     for path in sorted(REPO_ROOT.glob("*.html")):
         text = path.read_text(encoding="utf-8", errors="ignore")
@@ -107,7 +122,7 @@ def render() -> str:
         pages.append(path)
     results = [audit_page(path) for path in pages]
     payload = {
-        "generated_at": "2026-05-13",
+        "generated_at": generated_at or generated_timestamp(),
         "scope": "Static root HTML pages; complements, but does not replace, browser-based accessibility testing.",
         "page_count": len(results),
         "passing": sum(1 for r in results if r["ok"]),
@@ -120,11 +135,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if the static accessibility report is stale or has failures")
     args = parser.parse_args()
-    content = render()
+    out = latest_report("accessibility_static_*.json") if args.check else OUT
+    content = render(existing_generated_at(out) if args.check else None)
     payload = json.loads(content)
     failures = [r["path"] for r in payload["results"] if not r["ok"]]
     if args.check:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
+        if not out.exists() or out.read_text(encoding="utf-8") != content:
             raise SystemExit("Stale static accessibility report")
         if failures:
             raise SystemExit("Static accessibility failures: " + ", ".join(failures[:20]))

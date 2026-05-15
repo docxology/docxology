@@ -61,7 +61,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 21 | 2025 | 🎨 | Paper | Synthesis of Agent and Niche | *Zenodo* | [10.5281/zenodo.17235137](https://doi.org/10.5281/zenodo.17235137) | [📁](../papers/2025_AgentAndNiche/) |
 | 22 | 2025 | 🎥 | Presentation | Systems Processes, Active Inference, and Beyond | *Presentation* | [10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223) | [📁](../papers/2025_SystemsProcesses/) |
 | 23 | 2025 | 🧠 | Paper | Temporal Depth in a Coherent Self and in Depersonalization | *Frontiers in Psychology* | [10.3389/fpsyg.2025.1585315](https://doi.org/10.3389/fpsyg.2025.1585315) | [📁](../papers/2025_TemporalDepth/) |
-| 24 | 2025 | 🌍 | Paper | The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) | *Zenodo* | [10.5281/zenodo.14108991](https://doi.org/10.5281/zenodo.14108991) | [📁](../papers/2025_AII_v3/) |
+| 24 | 2025 | 🌍 | Paper | The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) | *Zenodo* | [10.5281/zenodo.17982447](https://doi.org/10.5281/zenodo.17982447) | [📁](../papers/2025_AII_v3/) |
 | 25 | 2025 | 🐜 | Paper | The Ant Stack | *Zenodo* | [10.5281/zenodo.16782756](https://doi.org/10.5281/zenodo.16782756) | [📁](../papers/2025_AntStack/) |
 | 26 | 2025 | 💻 | Paper | The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes | *ArXiv* | [10.48550/arXiv.2505.17500](https://doi.org/10.48550/arXiv.2505.17500) | [📁](../papers/2025_DiscoveryEngine/) |
 | 27 | 2025 | 🧠 | Paper | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States | *Entropy* | [10.3390/e27050459](https://doi.org/10.3390/e27050459) | [📁](../papers/2025_Thoughtseeds/) |
@@ -78,7 +78,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 38 | 2024 | 🎥 | Presentation | MathArt Stream #8: William Blake and Active Inference | *Presentation* | [10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301) | [📁](../papers/2024_MathArtBlake/) |
 | 39 | 2024 | 🎥 | Presentation | Sensemaking Federation: Exploring the Frontiers of Digital Innovation | *Presentation* | [10.5281/zenodo.14574046](https://doi.org/10.5281/zenodo.14574046) | [📁](../papers/2024_SensemakingFederation/) |
 | 40 | 2024 | 🧠 | Paper | Shared Protentions in Multi-Agent Active Inference | *Entropy* | [10.3390/e26040303](https://doi.org/10.3390/e26040303) | [📁](../papers/2024_SharedProtentions/) |
-| 41 | 2024 | 🌍 | Paper | The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) | *Zenodo* | [10.5281/zenodo.14108991](https://doi.org/10.5281/zenodo.14108991) | [📁](../papers/2024_AII_v2/) |
+| 41 | 2024 | 🌍 | Paper | The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) | *Zenodo* | [10.5281/zenodo.14108992](https://doi.org/10.5281/zenodo.14108992) | [📁](../papers/2024_AII_v2/) |
 | 42 | 2024 | 🎨 | Paper | Way Finding in the Infinite Imaginarium | *Zenodo* | [10.5281/zenodo.10601082](https://doi.org/10.5281/zenodo.10601082) | [📁](../papers/2024_InfiniteImaginarium/) |
 | 43 | 2024 | 🧬 | Paper | Why Paleolithic Rockstars were both enigmatic and sporadic | *Physics of Life Reviews* | [10.1016/j.plrev.2024.04.010](https://doi.org/10.1016/j.plrev.2024.04.010) | [📁](../papers/2024_PaleolithicRockstars/) |
 | 44 | 2024 | 🎨 | Paper | Writing on Curio Cards for the "On NFT" book | *Taschen* | 978-3-8365-9970-2 | [📁](../papers/2024_CurioCards/) |
@@ -147,7 +147,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 107 | 2015 | 🧬 | Paper | Could Ehrlichial Infection Cause Some Changes Associated with Leukemia? | *Medical Hypotheses* | [10.1016/j.mehy.2015.09.015](https://doi.org/10.1016/j.mehy.2015.09.015) | [📁](../papers/2015_EhrlichialInfection/) |
 | 108 | 2015 | 🧬 | Paper | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | *Molecular Biology & Evolution* | [10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292) | [📁](../papers/2015_HoneyBeeEvolution/) |
 | 109 | 2026 | 🐜 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574118](https://doi.org/10.5281/zenodo.19574118) | [📁](../papers/2026_EntoLinguistics/) |
-| 110 | 2026 | 🧠 | Paper | A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring | *Active Inference Journal* | [10.5281/zenodo.19461934](https://doi.org/10.5281/zenodo.19461934) | [📁](../papers/2026_ActInfMetaAnalysis/) |
+| 110 | 2026 | 🧠 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | *Active Inference Journal* | [10.5281/zenodo.19897664](https://doi.org/10.5281/zenodo.19897664) | [📁](../papers/2026_ActInfMetaAnalysis/) |
 | 111 | 2026 | 🧠 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | *CSCIS vol 2857, Springer* | [10.1007/978-3-032-16955-6_11](https://doi.org/10.1007/978-3-032-16955-6_11) | [📁](../papers/2026_FocusedAttentionMeditation/) |
 | 112 | 2026 | 🧠 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | *Active Inference Journal* | [10.5281/zenodo.19695260](https://doi.org/10.5281/zenodo.19695260) | [📁](../papers/2026_CognitiveCaseDiagrams/) |
 | 113 | 2026 | 🧠 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | *Active Inference Journal* | [10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234) | [📁](../papers/2026_FEPLean/) |
@@ -176,7 +176,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 - **2026** — Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics · [📁](../papers/2026_FEPLean/)
 - **2026** — Compositional Approaches to Linguistic Case for Cognitive Modeling · [📁](../papers/2026_CognitiveCaseDiagrams/)
-- **2026** — A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring · [📁](../papers/2026_ActInfMetaAnalysis/)
+- **2026** — A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring · [📁](../papers/2026_ActInfMetaAnalysis/)
 - **2026** — Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences · [📁](../papers/2026_FocusedAttentionMeditation/)
 - **2025** — CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling · [📁](../papers/2025_CEREBRUM/)
 - **2025** — EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories · [📁](../papers/2025_EvoJump/)

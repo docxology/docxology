@@ -22,7 +22,7 @@ tags:
 
 ## Instructions
 
-Use this skill when the task involves **Lean 4**, **Mathlib4**, **formalization of the FEP** or **Active Inference**, **variational / ELBO** statements, **LLM–ITP workflows** (draft vs. verify), **catalog-driven theorem libraries**, or **reproducible compiler-backed verification** as described in the FEP_Lean manuscript.
+Use this skill when the task involves **Lean 4**, **Mathlib4**, **formalization of the FEP** or **Active Inference**, **variational / ELBO** statements, **LLM–ITP workflows** (draft vs. verify), **catalog-driven theorem libraries**, or **reproducible compiler-backed verification** as described in the fep_lean manuscript.
 
 When applying this skill:
 
@@ -67,4 +67,4 @@ When applying this skill:
 
 See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog.
 
-**Code and archive**: [https://github.com/ActiveInferenceInstitute/FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) · [https://doi.org/10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234)
+**Code and archive**: [https://github.com/ActiveInferenceInstitute/fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [https://doi.org/10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234)

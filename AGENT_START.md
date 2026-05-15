@@ -17,9 +17,10 @@ This repository is the public research, software, citation, evidence, and websit
 | Cite the repository | [`CITATION.cff`](CITATION.cff), [`cite-verify.html`](cite-verify.html) | [`bibliography.bib`](bibliography.bib), [`bibliography.csl.json`](bibliography.csl.json) |
 | Find a publication | [`search.html`](search.html), [`works/`](works/) | [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), DOI links |
 | Verify a public claim | [`evidence.html`](evidence.html), [`data/claims.json`](data/claims.json) | Primary URLs listed in the claim ledger |
-| Find software | [`software.html`](software.html), [`data/software.json`](data/software.json) | GitHub repository URLs |
+| Find software | [`software.html`](software.html), [`repositories.html`](repositories.html), [`data/software.json`](data/software.json), [`data/github-repositories.json`](data/github-repositories.json) | Curated and full GitHub repository inventories |
 | Refresh generated files | [`GENERATED.md`](GENERATED.md) | `python3 code/orchestrators/validate_repo.py` |
 | Check deployed site health | [`reports/live_site_verification_2026-05-13.json`](reports/live_site_verification_2026-05-13.json) | `python3 code/orchestrators/verify_live_site.py` |
+| Refresh public-source inventory | [`reports/public_source_inventory_2026-05-15.json`](reports/public_source_inventory_2026-05-15.json) | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Triage external links | [`reports/external_links_triage_2026-05-13.md`](reports/external_links_triage_2026-05-13.md) | `python3 code/orchestrators/check_external_links.py` |
 
 ## Source-Of-Truth Rules
@@ -34,5 +35,5 @@ This repository is the public research, software, citation, evidence, and websit
 
 ```bash
 python3 code/orchestrators/validate_repo.py
-cd code/tests && uv run pytest -q
+cd code/tests && PYTHONDONTWRITEBYTECODE=1 uv run pytest -q
 ```

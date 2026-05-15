@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a **machine-checked** substrate for assessing related formal claims has been missing. Dependent-type provers require explicit measure spaces, domination, and integrability that prose often leaves implicit. This work introduces a **curated catalog of 50 topics** across five pillars—14 FEP, 11 Active Inference, 10 Bayesian Mechanics, 8 Information Geometry, and 7 non-equilibrium Thermodynamics—each as a **namespaced Lean 4 sketch** against **Mathlib4**, with natural-language statements, imports, ecosystem-maturity tags, and **sorry-free** theorem bodies maintained from a single source of truth. On the pinned stack **leanprover/lean4:v4.29.0** / **Mathlib4 v4.29.0**, the shipped catalog compiles **50/50** sorry-free under `lake env lean`. The manuscript describes an **LLM-assisted** drafting and commentary layer (**Hermes** / **OpenGauss**; primary model `moonshotai/kimi-k2.6` with cache keyed to Lean source hashes) while the **Lean 4 kernel** remains sole ground truth for compilation claims, plus a **zero-mock** test discipline. End-to-end reproduction, source, catalog, and figures are released with the open **FEP_Lean** repository.
+> The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a **machine-checked** substrate for assessing related formal claims has been missing. Dependent-type provers require explicit measure spaces, domination, and integrability that prose often leaves implicit. This work introduces a **curated catalog of 50 topics** across five pillars—14 FEP, 11 Active Inference, 10 Bayesian Mechanics, 8 Information Geometry, and 7 non-equilibrium Thermodynamics—each as a **namespaced Lean 4 sketch** against **Mathlib4**, with natural-language statements, imports, ecosystem-maturity tags, and **sorry-free** theorem bodies maintained from a single source of truth. On the pinned stack **leanprover/lean4:v4.29.0** / **Mathlib4 v4.29.0**, the shipped catalog compiles **50/50** sorry-free under `lake env lean`. The manuscript describes an **LLM-assisted** drafting and commentary layer (**Hermes** / **OpenGauss**; primary model `moonshotai/kimi-k2.6` with cache keyed to Lean source hashes) while the **Lean 4 kernel** remains sole ground truth for compilation claims, plus a **zero-mock** test discipline. End-to-end reproduction, source, catalog, and figures are released with the open **fep_lean** repository.
 
 ## Keywords
 
@@ -30,7 +30,7 @@
 ## Methods & Artifacts
 
 - Theoretical and systems paper: **YAML → manuscript → Lake** pipeline; per-topic modules with LaTeX-adjacent statement signatures.
-- **Open-source**: [https://github.com/ActiveInferenceInstitute/FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) (manuscript build uses the [docxology template](https://github.com/docxology/template) approach for validated metadata injection).
+- **Open-source**: [https://github.com/ActiveInferenceInstitute/fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) (manuscript build uses the [docxology template](https://github.com/docxology/template) approach for validated metadata injection).
 - Archived manuscript (v1): [https://doi.org/10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234) · Zenodo record [https://zenodo.org/records/19699234](https://zenodo.org/records/19699234)
 
 ## Consulting & Tutoring
@@ -48,7 +48,7 @@
   version = {v1},
   doi = {10.5281/zenodo.19699234},
   url = {https://doi.org/10.5281/zenodo.19699234},
-  note = {Code: \url{https://github.com/ActiveInferenceInstitute/FEP_Lean}},
+  note = {Code: \url{https://github.com/ActiveInferenceInstitute/fep_lean}},
 }
 ```
 

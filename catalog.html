@@ -30,7 +30,7 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-13",
+  "dateModified": "2026-05-15",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -63,12 +63,25 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "80 catalogued software repositories across docxology and AII contributions.",
+      "description": "81 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/software.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#github-repositories",
+      "name": "Full GitHub Repository Inventory",
+      "description": "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags.",
+      "url": "https://danielarifriedman.com/data/github-repositories.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/github-repositories.json",
         "encodingFormat": "application/json"
       }
     },
@@ -165,14 +178,40 @@
     },
     {
       "@type": "Dataset",
-      "@id": "https://danielarifriedman.com/catalog.html#external-links",
-      "name": "External Link Report",
-      "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-05-13.json",
+      "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
+      "name": "Public Source Inventory",
+      "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-15.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
+      "name": "Public Source Snapshot",
+      "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-15.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-15.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#external-links",
+      "name": "External Link Report",
+      "description": "Scoped network freshness report for site-critical outbound links.",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     },
@@ -181,11 +220,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     },
@@ -194,11 +233,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     },
@@ -207,11 +246,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-15/manifest.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-13/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-15/manifest.json",
         "encodingFormat": "application/json"
       }
     },
@@ -220,11 +259,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-15.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-13.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-15.json",
         "encodingFormat": "application/json"
       }
     }
@@ -254,8 +293,13 @@
                 </article>
                 <article class="catalog-card" id="software">
                     <h2><a href="data/software.json">Software Catalog</a></h2>
-                    <p>80 catalogued software repositories across docxology and AII contributions.</p>
+                    <p>81 catalogued software repositories across docxology and AII contributions.</p>
                     <span>data/software.json</span>
+                </article>
+                <article class="catalog-card" id="github-repositories">
+                    <h2><a href="data/github-repositories.json">Full GitHub Repository Inventory</a></h2>
+                    <p>Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags.</p>
+                    <span>data/github-repositories.json</span>
                 </article>
                 <article class="catalog-card" id="people">
                     <h2><a href="data/people.json">People Index</a></h2>
@@ -292,30 +336,40 @@
                     <p>Site-wide index covering pages, works, software, people, organizations, and claims.</p>
                     <span>search-index.json</span>
                 </article>
+                <article class="catalog-card" id="public-source-inventory">
+                    <h2><a href="reports/public_source_inventory_2026-05-15.json">Public Source Inventory</a></h2>
+                    <p>Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.</p>
+                    <span>reports/public_source_inventory_2026-05-15.json</span>
+                </article>
+                <article class="catalog-card" id="public-source-snapshot">
+                    <h2><a href="reports/public_source_snapshot_2026-05-15.json">Public Source Snapshot</a></h2>
+                    <p>Current public API freshness snapshot with normalized drift-comparison facts.</p>
+                    <span>reports/public_source_snapshot_2026-05-15.json</span>
+                </article>
                 <article class="catalog-card" id="external-links">
-                    <h2><a href="reports/external_links_2026-05-13.json">External Link Report</a></h2>
+                    <h2><a href="reports/external_links_2026-05-15.json">External Link Report</a></h2>
                     <p>Scoped network freshness report for site-critical outbound links.</p>
-                    <span>reports/external_links_2026-05-13.json</span>
+                    <span>reports/external_links_2026-05-15.json</span>
                 </article>
                 <article class="catalog-card" id="external-link-triage">
-                    <h2><a href="reports/external_links_triage_2026-05-13.json">External Link Triage</a></h2>
+                    <h2><a href="reports/external_links_triage_2026-05-15.json">External Link Triage</a></h2>
                     <p>Categorized link warnings: bot-protected, transient, timeout, stale, and review.</p>
-                    <span>reports/external_links_triage_2026-05-13.json</span>
+                    <span>reports/external_links_triage_2026-05-15.json</span>
                 </article>
                 <article class="catalog-card" id="asset-size">
-                    <h2><a href="reports/asset_size_2026-05-13.json">Asset Size Audit</a></h2>
+                    <h2><a href="reports/asset_size_2026-05-15.json">Asset Size Audit</a></h2>
                     <p>Size report for public HTML, OG images, data exports, and runtime assets.</p>
-                    <span>reports/asset_size_2026-05-13.json</span>
+                    <span>reports/asset_size_2026-05-15.json</span>
                 </article>
                 <article class="catalog-card" id="browser-smoke">
-                    <h2><a href="reports/browser-smoke/2026-05-13/manifest.json">Browser Smoke Manifest</a></h2>
+                    <h2><a href="reports/browser-smoke/2026-05-15/manifest.json">Browser Smoke Manifest</a></h2>
                     <p>Selector-based Playwright smoke checks for core local pages.</p>
-                    <span>reports/browser-smoke/2026-05-13/manifest.json</span>
+                    <span>reports/browser-smoke/2026-05-15/manifest.json</span>
                 </article>
                 <article class="catalog-card" id="live-site">
-                    <h2><a href="reports/live_site_verification_2026-05-13.json">Live Site Verification</a></h2>
+                    <h2><a href="reports/live_site_verification_2026-05-15.json">Live Site Verification</a></h2>
                     <p>Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.</p>
-                    <span>reports/live_site_verification_2026-05-13.json</span>
+                    <span>reports/live_site_verification_2026-05-15.json</span>
                 </article>
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>

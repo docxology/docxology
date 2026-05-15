@@ -166,7 +166,7 @@ def build_report() -> dict[str, Any]:
         "ActiveBlockference",
         "ActiveInferAnts",
         "GeneralizedNotationNotation",
-        "FEP_Lean",
+        "fep_lean",
         "cognitive",
         "CEREBRUM",
         "Journal-Utilities",
@@ -185,12 +185,21 @@ def build_report() -> dict[str, Any]:
         ),
         zenodo_record("18686966"),
         zenodo_record("19600217"),
+        zenodo_record("19897664"),
+        zenodo_record("14108992"),
+        zenodo_record("17982447"),
     ]
     checks.extend(github_repo("ActiveInferenceInstitute", repo) for repo in selected_aii_repos)
+    facts = {
+        check["label"]: check.get("result")
+        for check in checks
+        if check.get("ok") and isinstance(check.get("result"), dict)
+    }
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "date": today,
         "note": "Public API freshness report only. Review before updating curated site claims.",
+        "facts": facts,
         "checks": checks,
     }
 
@@ -198,6 +207,7 @@ def build_report() -> dict[str, Any]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", help="Optional output path. Defaults to reports/public_source_snapshot_DATE.json")
+    parser.add_argument("--facts-output", help="Optional path for normalized facts used by CI drift comparisons")
     args = parser.parse_args()
 
     report = build_report()
@@ -206,6 +216,12 @@ def main() -> None:
         out = REPO_ROOT / out
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if args.facts_output:
+        facts_out = Path(args.facts_output)
+        if not facts_out.is_absolute():
+            facts_out = REPO_ROOT / facts_out
+        facts_out.parent.mkdir(parents=True, exist_ok=True)
+        facts_out.write_text(json.dumps(report["facts"], indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
     failures = [c["label"] for c in report["checks"] if not c.get("ok")]
     print(f"wrote {out.relative_to(REPO_ROOT)} with {len(report['checks'])} checks")
     if failures:

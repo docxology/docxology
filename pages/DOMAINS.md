@@ -60,11 +60,11 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 - Start with the literature review and ontology papers.
 - Move to GNN, CEREBRUM, and Cognitive Case Diagrams for notation and modeling.
-- Use FEP_Lean for formalization-oriented work.
+- Use fep_lean for formalization-oriented work.
 
 **Selected works**
 
-- 2026 — [A Literature Review Architecture for Active Inference: Scalable Assertion Extraction, Nanopublications, and Citation-Weighted Hypothesis Scoring](https://doi.org/10.5281/zenodo.19461934)
+- 2026 — [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](https://doi.org/10.5281/zenodo.19897664)
 - 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
 - 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695260)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699234)
@@ -80,7 +80,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
-- [FEP_Lean](https://github.com/ActiveInferenceInstitute/FEP_Lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline
+- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
 

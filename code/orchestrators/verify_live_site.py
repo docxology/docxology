@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import os
 import subprocess
@@ -13,14 +14,20 @@ import urllib.request
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT = REPO_ROOT / "reports" / "live_site_verification_2026-05-13.json"
+
+try:
+    from report_paths import dated_report_path, generated_timestamp, latest_report
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import dated_report_path, generated_timestamp, latest_report
+
+OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
 
 CHECKS = [
     {"path": "", "markers": ["115 Works", "286", "search.html", "Last updated: May 2026"]},
     {"path": "search.html", "markers": ["Search", "search-index.json", "OpenSearch"]},
     {"path": "catalog.html", "markers": ["Data Catalog", "data/catalog.json", "Search Index"]},
-    {"path": "updates.html", "markers": ["Updates", "2026-05-13"]},
+    {"path": "updates.html", "markers": ["Updates", "update-card"]},
     {"path": "opensearch.xml", "markers": ["OpenSearchDescription", "search.html?q={searchTerms}"]},
     {"path": "sitemap.xml", "markers": ["search.html", "catalog.html", "updates.html"]},
     {"path": "llms.txt", "markers": ["Human search page", "Data catalog", "Agent start guide"]},
@@ -147,7 +154,7 @@ def build_report(timeout: int) -> dict:
         )
     pages = pages_status(timeout)
     return {
-        "generated_at": "2026-05-13",
+        "generated_at": generated_timestamp(),
         "base_url": BASE,
         "note": "Live verification can fail while GitHub Pages is still building or CDN caches are stale.",
         "github_pages": pages,
@@ -164,11 +171,16 @@ def main() -> None:
     parser.add_argument("--timeout", type=int, default=20)
     args = parser.parse_args()
     if args.check:
-        if not OUT.exists():
+        out = latest_report("live_site_verification_*.json")
+        if not out.exists():
             raise SystemExit("Missing live-site verification report")
-        payload = json.loads(OUT.read_text(encoding="utf-8"))
+        payload = json.loads(out.read_text(encoding="utf-8"))
         if not payload.get("results"):
             raise SystemExit("Live-site verification report has no results")
+        if not payload.get("overall_ok"):
+            raise SystemExit(
+                f"Live-site verification report is not passing: {payload.get('passing')}/{payload.get('checked_urls')}"
+            )
         print(f"checked live-site verification report ({payload['passing']}/{payload['checked_urls']} passing)")
         return
     payload = build_report(args.timeout)

@@ -2,7 +2,7 @@
 
 **Active Inference Institute** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14108991-blue)](https://doi.org/10.5281/zenodo.14108991)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17982447-blue)](https://doi.org/10.5281/zenodo.17982447)
 
 ---
 <!-- Schema.org structured data for search engines -->
@@ -14,6 +14,10 @@
 ## Abstract
 
 > The Active Inference Institute (AII) is dedicated to advancing the understanding and application of the Active Inference framework through education and research. It aims to enhance accessibility and rigor in the field, fostering a collaborative environment for individuals from diverse backgrounds.
+
+## Version Note
+
+Use DOI [`10.5281/zenodo.17982447`](https://doi.org/10.5281/zenodo.17982447) for the v3 snapshot. The concept DOI `10.5281/zenodo.14108991` remains the version-chain anchor.
 
 ## Keywords
 
@@ -45,7 +49,7 @@
   title = {{The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)}},
   journal = {Zenodo},
   year = {2025},
-  doi = {10.5281/zenodo.14108991},
+  doi = {10.5281/zenodo.17982447},
 }
 ```
 

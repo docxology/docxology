@@ -8,10 +8,12 @@ import json
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-DATE = "2026-05-13"
-SNAPSHOT = REPO_ROOT / "reports" / f"public_source_snapshot_{DATE}.json"
 JSON_OUT = REPO_ROOT / "data" / "reconciliation.json"
-MD_OUT = REPO_ROOT / "reports" / f"reconciliation_{DATE}.md"
+
+try:
+    from report_paths import latest_report, rel
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import latest_report, rel
 
 
 def load_json(path: Path) -> dict:
@@ -27,11 +29,20 @@ def snapshot_value(snapshot: dict, label: str, key: str) -> int | str | None:
     return None
 
 
+def snapshot_path() -> Path:
+    return latest_report("public_source_snapshot_*.json")
+
+
+def snapshot_date(path: Path) -> str:
+    return path.stem.removeprefix("public_source_snapshot_")
+
+
 def build_payload() -> dict:
     works = load_json(REPO_ROOT / "data" / "works.json")
     software = load_json(REPO_ROOT / "data" / "software.json")
     claims = load_json(REPO_ROOT / "data" / "claims.json")
-    snapshot = load_json(SNAPSHOT)
+    source_snapshot = snapshot_path()
+    snapshot = load_json(source_snapshot)
     owned = [r for r in software["repositories"] if r["owner"] == "docxology"]
     aii = [r for r in software["repositories"] if r["owner"] == "ActiveInferenceInstitute"]
     comparisons = [
@@ -79,8 +90,8 @@ def build_payload() -> dict:
         },
     ]
     return {
-        "generated_at": DATE,
-        "snapshot": str(SNAPSHOT.relative_to(REPO_ROOT)),
+        "generated_at": snapshot.get("generated_at", snapshot_date(source_snapshot)),
+        "snapshot": rel(source_snapshot),
         "claims_count": len(claims["claims"]),
         "comparisons": comparisons,
     }
@@ -92,7 +103,7 @@ def render_md(payload: dict) -> str:
         "",
         f"Generated: {payload['generated_at']}",
         "",
-        f"Snapshot: [`{payload['snapshot']}`](public_source_snapshot_{DATE}.json)",
+        f"Snapshot: [`{payload['snapshot']}`]({Path(payload['snapshot']).name})",
         "",
         "This report compares curated local counts against public authority/source indexes. Differences are expected unless the relationship says otherwise.",
         "",
@@ -118,9 +129,10 @@ def render_md(payload: dict) -> str:
 
 def outputs() -> dict[Path, str]:
     payload = build_payload()
+    md_out = REPO_ROOT / "reports" / f"reconciliation_{snapshot_date(REPO_ROOT / payload['snapshot'])}.md"
     return {
         JSON_OUT: json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
-        MD_OUT: render_md(payload),
+        md_out: render_md(payload),
     }
 
 

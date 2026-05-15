@@ -12,11 +12,33 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "catalog.json"
 HTML_OUT = REPO_ROOT / "catalog.html"
 
+try:
+    from report_paths import latest_report, latest_subdir_file, rel, report_date_string
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import latest_report, latest_subdir_file, rel, report_date_string
 
-DATASETS = [
+
+def _latest_rel(pattern: str, fallback: str) -> str:
+    try:
+        return rel(latest_report(pattern))
+    except FileNotFoundError:
+        return fallback
+
+
+def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
+    try:
+        latest = latest_subdir_file(prefix, filename)
+    except FileNotFoundError:
+        return fallback
+    return rel(latest)
+
+
+def datasets() -> list[tuple[str, str, str, str]]:
+    return [
     ("works", "Curated Works Bibliography", "data/works.json", "115 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
-    ("software", "Software Catalog", "data/software.json", "80 catalogued software repositories across docxology and AII contributions."),
+    ("software", "Software Catalog", "data/software.json", "81 catalogued software repositories across docxology and AII contributions."),
+    ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
     ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),
@@ -24,12 +46,14 @@ DATASETS = [
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
-    ("external-links", "External Link Report", "reports/external_links_2026-05-13.json", "Scoped network freshness report for site-critical outbound links."),
-    ("external-link-triage", "External Link Triage", "reports/external_links_triage_2026-05-13.json", "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
-    ("asset-size", "Asset Size Audit", "reports/asset_size_2026-05-13.json", "Size report for public HTML, OG images, data exports, and runtime assets."),
-    ("browser-smoke", "Browser Smoke Manifest", "reports/browser-smoke/2026-05-13/manifest.json", "Selector-based Playwright smoke checks for core local pages."),
-    ("live-site", "Live Site Verification", "reports/live_site_verification_2026-05-13.json", "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status."),
-]
+    ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),
+    ("public-source-snapshot", "Public Source Snapshot", _latest_rel("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json"), "Current public API freshness snapshot with normalized drift-comparison facts."),
+    ("external-links", "External Link Report", _latest_rel("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"), "Scoped network freshness report for site-critical outbound links."),
+    ("external-link-triage", "External Link Triage", _latest_rel("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"), "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
+    ("asset-size", "Asset Size Audit", _latest_rel("asset_size_*.json", "reports/asset_size_2026-05-13.json"), "Size report for public HTML, OG images, data exports, and runtime assets."),
+    ("browser-smoke", "Browser Smoke Manifest", _latest_subdir_rel("browser-smoke", "manifest.json", "reports/browser-smoke/2026-05-13/manifest.json"), "Selector-based Playwright smoke checks for core local pages."),
+    ("live-site", "Live Site Verification", _latest_rel("live_site_verification_*.json", "reports/live_site_verification_2026-05-13.json"), "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status."),
+    ]
 
 
 def h(value: object) -> str:
@@ -40,7 +64,16 @@ def absolute(rel: str) -> str:
     return f"https://danielarifriedman.com/{rel}"
 
 
-def catalog_payload() -> dict:
+def existing_date_modified() -> str | None:
+    if not JSON_OUT.exists():
+        return None
+    try:
+        return json.loads(JSON_OUT.read_text(encoding="utf-8")).get("dateModified")
+    except json.JSONDecodeError:
+        return None
+
+
+def catalog_payload(date_modified: str | None = None) -> dict:
     return {
         "@context": "https://schema.org",
         "@type": "DataCatalog",
@@ -49,7 +82,7 @@ def catalog_payload() -> dict:
         "description": "Machine-readable datasets for Daniel Ari Friedman's public research, software, citation, and evidence index.",
         "url": "https://danielarifriedman.com/catalog.html",
         "creator": {"@id": "https://danielarifriedman.com/#person"},
-        "dateModified": "2026-05-13",
+        "dateModified": date_modified or report_date_string(),
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "dataset": [
             {
@@ -65,23 +98,23 @@ def catalog_payload() -> dict:
                     "encodingFormat": "application/json",
                 },
             }
-            for slug, name, rel, desc in DATASETS
+            for slug, name, rel, desc in datasets()
         ],
     }
 
 
-def render_json() -> str:
-    return json.dumps(catalog_payload(), indent=2, ensure_ascii=False) + "\n"
+def render_json(date_modified: str | None = None) -> str:
+    return json.dumps(catalog_payload(date_modified), indent=2, ensure_ascii=False) + "\n"
 
 
-def render_html() -> str:
+def render_html(date_modified: str | None = None) -> str:
     rows = "\n".join(
         f"""                <article class="catalog-card" id="{h(slug)}">
                     <h2><a href="{h(rel)}">{h(name)}</a></h2>
                     <p>{h(desc)}</p>
                     <span>{h(rel)}</span>
                 </article>"""
-        for slug, name, rel, desc in DATASETS
+        for slug, name, rel, desc in datasets()
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -105,7 +138,7 @@ def render_html() -> str:
     <link rel="stylesheet" href="style.css">
     <style>.catalog-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}.catalog-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}.catalog-card h2{{font-size:1rem;margin-bottom:.4rem}}.catalog-card p{{color:var(--text-secondary);font-size:.86rem;line-height:1.6}}.catalog-card span{{display:block;margin-top:.75rem;color:var(--text-muted);font-size:.75rem;overflow-wrap:anywhere}}</style>
     <script type="application/ld+json">
-{render_json()}
+{render_json(date_modified)}
     </script>
 </head>
 <body>
@@ -125,8 +158,8 @@ def render_html() -> str:
 """
 
 
-def outputs() -> dict[Path, str]:
-    return {JSON_OUT: render_json(), HTML_OUT: render_html()}
+def outputs(date_modified: str | None = None) -> dict[Path, str]:
+    return {JSON_OUT: render_json(date_modified), HTML_OUT: render_html(date_modified)}
 
 
 def main() -> None:
@@ -134,7 +167,8 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated catalog files are stale")
     args = parser.parse_args()
     stale = []
-    for path, content in outputs().items():
+    date_modified = existing_date_modified() if args.check else None
+    for path, content in outputs(date_modified).items():
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
                 stale.append(str(path.relative_to(REPO_ROOT)))

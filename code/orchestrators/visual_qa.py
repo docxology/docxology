@@ -17,7 +17,13 @@ from pathlib import Path
 from urllib.request import urlopen
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT_DIR = REPO_ROOT / "reports" / "visual-qa" / "2026-05-13"
+
+try:
+    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+
+OUT_DIR = dated_report_dir("visual-qa")
 MANIFEST = OUT_DIR / "manifest.json"
 
 PAGES = [
@@ -26,6 +32,7 @@ PAGES = [
     ("works", "works/index.html"),
     ("domains", "domains.html"),
     ("search", "search.html?q=active%20inference"),
+    ("repositories", "repositories.html"),
     ("catalog", "catalog.html"),
     ("updates", "updates.html"),
     ("art", "art.html"),
@@ -90,7 +97,7 @@ def capture() -> dict:
                 )
                 shots.append({"page": rel, "viewport": viewport_name, "size": size, "file": str(out.relative_to(REPO_ROOT))})
         manifest = {
-            "generated_at": "2026-05-13",
+            "generated_at": generated_timestamp(),
             "tool": "npx playwright screenshot",
             "note": "Human review still required; these snapshots guard against obvious layout regressions.",
             "screenshots": shots,
@@ -106,9 +113,10 @@ def capture() -> dict:
 
 
 def check() -> None:
-    if not MANIFEST.exists():
+    manifest_path = latest_subdir_file("visual-qa", "manifest.json")
+    if not manifest_path.exists():
         raise SystemExit("Missing visual QA manifest")
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     missing = [shot["file"] for shot in manifest.get("screenshots", []) if not (REPO_ROOT / shot["file"]).exists()]
     if missing:
         raise SystemExit("Missing visual QA screenshots: " + ", ".join(missing[:10]))

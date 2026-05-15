@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-05-13",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 52,
+  "asset_count": 54,
   "warnings": 0,
-  "total_bytes": 5504952,
+  "total_bytes": 6044136,
   "largest": [
     {
       "path": "data/artworks.json",
@@ -13,16 +13,30 @@
       "ok": true
     },
     {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 284809,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 233757,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 181941,
+      "bytes": 181933,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 122340,
+      "bytes": 122296,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -120,29 +134,15 @@
     {
       "path": "bibliography.csl.json",
       "kind": "citation-export",
-      "bytes": 74988,
+      "bytes": 74960,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 57183,
+      "bytes": 57155,
       "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
-      "path": "bibliography.bib",
-      "kind": "citation-export",
-      "bytes": 45957,
-      "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
-      "path": "videos.html",
-      "kind": "html",
-      "bytes": 42155,
-      "budget_bytes": 500000,
       "ok": true
     }
   ],

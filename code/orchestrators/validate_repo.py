@@ -13,6 +13,11 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+try:
+    from report_paths import latest_report, latest_subdir_file, rel
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import latest_report, latest_subdir_file, rel
+
 
 def run(cmd: list[str]) -> None:
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
@@ -25,6 +30,7 @@ def validate_json_files() -> None:
         "search-index.json",
         "data/catalog.json",
         "data/generated-manifest.json",
+        "data/github-repositories.json",
         "data/artworks.json",
         "data/works.json",
         "data/work-enrichment.json",
@@ -33,16 +39,21 @@ def validate_json_files() -> None:
         "data/organizations.json",
         "data/claims.json",
         "data/reconciliation.json",
-        "reports/accessibility_static_2026-05-13.json",
-        "reports/asset_size_2026-05-13.json",
-        "reports/browser-smoke/2026-05-13/manifest.json",
-        "reports/external_links_2026-05-13.json",
-        "reports/external_links_triage_2026-05-13.json",
-        "reports/live_site_verification_2026-05-13.json",
-        "reports/public_source_snapshot_2026-05-13.json",
     ]
-    for rel in paths:
-        with open(REPO_ROOT / rel, encoding="utf-8") as f:
+    paths.extend(
+        [
+            rel(latest_report("accessibility_static_*.json")),
+            rel(latest_report("asset_size_*.json")),
+            rel(latest_subdir_file("browser-smoke", "manifest.json")),
+            rel(latest_report("external_links_[0-9]*.json")),
+            rel(latest_report("external_links_triage_*.json")),
+            rel(latest_report("live_site_verification_*.json")),
+            rel(latest_report("public_source_inventory_*.json")),
+            rel(latest_report("public_source_snapshot_*.json")),
+        ]
+    )
+    for path_rel in paths:
+        with open(REPO_ROOT / path_rel, encoding="utf-8") as f:
             json.load(f)
 
 
@@ -131,6 +142,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
+    run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
     run(["python3", "code/orchestrators/build_search_index.py", "--check"])
     run(["python3", "code/orchestrators/generate_feed.py", "--check"])
     run(["python3", "code/orchestrators/audit_assets.py", "--check"])
@@ -140,6 +152,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
     run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
+    run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files()
     validate_citation_cff()

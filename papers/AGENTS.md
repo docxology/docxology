@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (108 entries as of 2026-05-13)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (108 entries as of 2026-05-15)
 
 ### 🔬 RESEARCHER
 
@@ -47,7 +47,7 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 108/108 folders (last verified 2026-05-13) |
+| README.md present | 108/108 folders (last verified 2026-05-15) |
 | AGENTS.md present | 108/108 |
 | SKILL.md present | 108/108 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
@@ -90,3 +90,4 @@ Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIO
 | 2026-05-04 | INTEGRATOR | Domain **Works** table + `sync_publications_html.py` in pipeline; PUBS/mainEntity sync script landed | ✅ |
 | 2026-05-12 | MAINTAINER | Repo-wide doc audit; this AGENTS.md domain breakdown matches `pages/BIBLIOGRAPHY.md` ground truth (21/23/20/14/9/7/5/15 = 114); spot-checked `2026_FocusedAttentionMeditation` per-paper docs (README/AGENTS/SKILL present, no PDF as expected) | ✅ |
 | 2026-05-13 | ARCHIVIST | Added `2026_BlakeJiang` (DOI 10.5281/zenodo.20144984); Art & Synergetics 14→15; bibliography 114→115; paper folders and metadata 107→108 | ✅ |
+| 2026-05-15 | ARCHIVIST | Updated AII v2/v3 rows to version-specific Zenodo DOIs and ActInfMetaAnalysis to current v2 DOI/title; retained concept/v1 DOIs only as version-chain context | ✅ |

@@ -8,7 +8,13 @@ import json
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT = REPO_ROOT / "reports" / "asset_size_2026-05-13.json"
+
+try:
+    from report_paths import dated_report_path, generated_timestamp, latest_report
+except ImportError:  # pragma: no cover - package import path
+    from .report_paths import dated_report_path, generated_timestamp, latest_report
+
+OUT = dated_report_path("asset_size", "json")
 
 PATTERNS = [
     ("html", "*.html", 500_000),
@@ -40,11 +46,20 @@ def iter_assets() -> list[dict]:
     return assets
 
 
-def render() -> str:
+def existing_generated_at(path: Path) -> str | None:
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("generated_at")
+    except json.JSONDecodeError:
+        return None
+
+
+def render(generated_at: str | None = None) -> str:
     assets = iter_assets()
     warnings = [item for item in assets if not item["ok"]]
     payload = {
-        "generated_at": "2026-05-13",
+        "generated_at": generated_at or generated_timestamp(),
         "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
         "asset_count": len(assets),
         "warnings": len(warnings),
@@ -59,9 +74,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if the asset-size report is stale")
     args = parser.parse_args()
-    content = render()
+    out = latest_report("asset_size_*.json") if args.check else OUT
+    content = render(existing_generated_at(out) if args.check else None)
     if args.check:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
+        if not out.exists() or out.read_text(encoding="utf-8") != content:
             raise SystemExit("Stale asset-size report")
     else:
         OUT.parent.mkdir(parents=True, exist_ok=True)

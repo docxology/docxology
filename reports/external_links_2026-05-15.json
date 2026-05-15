@@ -1,0 +1,5741 @@
+{
+  "generated_at": "2026-05-15T19:42:27Z",
+  "scope": [
+    "index.html",
+    "publications.html",
+    "software.html",
+    "domains.html",
+    "discovery.html",
+    "cite-verify.html",
+    "evidence.html",
+    "search.html",
+    "catalog.html",
+    "updates.html",
+    "README.md",
+    "AGENT_START.md",
+    "llms.txt",
+    "humans.txt",
+    "CITATION.cff",
+    "codemeta.json",
+    "pages/README.md",
+    "pages/LINKS.md",
+    "pages/DISCOVERY.md",
+    "pages/CITE_VERIFY.md",
+    "pages/EVIDENCE.md",
+    "pages/DOMAINS.md",
+    "pages/PROFILE.md",
+    "pages/SOFTWARE.md",
+    "pages/BIBLIOGRAPHY.md"
+  ],
+  "note": "Network freshness report. HTTP 403/429 may indicate bot protection or rate limiting, not necessarily broken content.",
+  "total_unique_urls": 387,
+  "checked_urls": 387,
+  "ok": 357,
+  "warnings": 30,
+  "results": [
+    {
+      "url": "http://purl.stanford.edu/pb813wm1484",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://purl.stanford.edu/pb813wm1484",
+      "error": "",
+      "elapsed_ms": 373,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "evidence.html",
+        "evidence.html",
+        "pages/LINKS.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/PROFILE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://activeinference.institute/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/",
+      "error": "",
+      "elapsed_ms": 627,
+      "sources": [
+        "index.html",
+        "index.html",
+        "publications.html",
+        "domains.html",
+        "discovery.html",
+        "README.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://activeinference.org/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://activeinference.org/",
+      "error": "",
+      "elapsed_ms": 186,
+      "sources": [
+        "index.html",
+        "index.html",
+        "index.html",
+        "discovery.html",
+        "README.md",
+        "README.md",
+        "README.md",
+        "README.md",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://activeinference.org/#organization",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://activeinference.org/#organization",
+      "error": "",
+      "elapsed_ms": 207,
+      "sources": [
+        "index.html",
+        "index.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://activeinferenceinstitute.substack.com/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://activeinferenceinstitute.substack.com/",
+      "error": "",
+      "elapsed_ms": 359,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096",
+      "ok": true,
+      "status": 200,
+      "method": "GET",
+      "final_url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096",
+      "error": "",
+      "elapsed_ms": 3217,
+      "sources": [
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://api.github.com/users/ActiveInferenceInstitute",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://api.github.com/users/ActiveInferenceInstitute",
+      "error": "",
+      "elapsed_ms": 378,
+      "sources": [
+        "discovery.html",
+        "evidence.html",
+        "evidence.html",
+        "pages/DISCOVERY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://api.github.com/users/docxology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://api.github.com/users/docxology",
+      "error": "",
+      "elapsed_ms": 333,
+      "sources": [
+        "discovery.html",
+        "evidence.html",
+        "evidence.html",
+        "pages/DISCOVERY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author",
+      "error": "",
+      "elapsed_ms": 431,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://coda.io/@daniel-ari-friedman/website",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://coda.io/@daniel-ari-friedman/website",
+      "error": "",
+      "elapsed_ms": 497,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://cogsec.org",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.cogsec.org/",
+      "error": "",
+      "elapsed_ms": 973,
+      "sources": [
+        "index.html",
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "publications.html",
+        "publications.html",
+        "publications.html",
+        "publications.html",
+        "discovery.html",
+        "evidence.html",
+        "evidence.html",
+        "README.md",
+        "README.md",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/PROFILE.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://complexity.transistor.fm/episodes/1-what-ant-behavior-reveals-about-complexity-science",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://complexity.transistor.fm/episodes/1-what-ant-behavior-reveals-about-complexity-science",
+      "error": "",
+      "elapsed_ms": 394,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://creativecommons.org/licenses/by/4.0/",
+      "error": "",
+      "elapsed_ms": 150,
+      "sources": [
+        "catalog.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://curio.cards/artist/danielfriedman/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://curio.cards/artist/danielfriedman/",
+      "error": "",
+      "elapsed_ms": 268,
+      "sources": [
+        "index.html",
+        "index.html",
+        "evidence.html",
+        "evidence.html",
+        "README.md",
+        "README.md",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://dblp.org/pid/346/2173.html",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://dblp.org/pid/346/2173.html",
+      "error": "",
+      "elapsed_ms": 3681,
+      "sources": [
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://deniseholt.us/active-inference-pioneering-a-new-era-of-artificial-intelligence/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://deniseholt.us/active-inference-pioneering-a-new-era-of-artificial-intelligence/",
+      "error": "",
+      "elapsed_ms": 1261,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://dfri.people.stanford.edu/",
+      "ok": false,
+      "status": 503,
+      "method": "GET",
+      "final_url": "https://dfri.people.stanford.edu/",
+      "error": "",
+      "elapsed_ms": 3619,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "upstream-transient"
+    },
+    {
+      "url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
+      "error": "",
+      "elapsed_ms": 425,
+      "sources": [
+        "index.html",
+        "README.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://docs.curio.cards/the-artists/daniel-friedman",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://docs.curio.cards/the-artists/daniel-friedman",
+      "error": "",
+      "elapsed_ms": 2000,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://docxology.github.io/docxology/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://danielarifriedman.com/",
+      "error": "",
+      "elapsed_ms": 838,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://docxology.omg.lol",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://docxology.omg.lol/",
+      "error": "",
+      "elapsed_ms": 862,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1002/asi.24900",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24900",
+      "error": "",
+      "elapsed_ms": 643,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.1002/ece3.70063",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/ece3.70063",
+      "error": "",
+      "elapsed_ms": 746,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-032-16955-6_11",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://link.springer.com/chapter/10.1007/978-3-032-16955-6_11?error=cookies_not_supported&code=e4d89763-394e-498a-a524-4d9f68e95393",
+      "error": "",
+      "elapsed_ms": 2103,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1007/s00216-019-02355-3",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://link.springer.com/article/10.1007/s00216-019-02355-3?error=cookies_not_supported&code=dd6057a4-d608-4d08-83c6-fd8e21827cec",
+      "error": "",
+      "elapsed_ms": 2048,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1007/s11229-019-02130-y",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://link.springer.com/article/10.1007/s11229-019-02130-y?error=cookies_not_supported&code=1573fff1-9fce-4b5f-a93e-84063873be60",
+      "error": "",
+      "elapsed_ms": 4128,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cell.2017.07.046",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867417308826",
+      "error": "",
+      "elapsed_ms": 647,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cogsys.2023.02.005",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1389041723000207",
+      "error": "",
+      "elapsed_ms": 616,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.isci.2018.09.001",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2589004218301366",
+      "error": "",
+      "elapsed_ms": 531,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.mehy.2015.09.015",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0306987715003588",
+      "error": "",
+      "elapsed_ms": 518,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.neubiorev.2023.105500",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0149763423004694",
+      "error": "",
+      "elapsed_ms": 544,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.plrev.2023.06.002",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1571064523000672",
+      "error": "",
+      "elapsed_ms": 617,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.plrev.2023.11.001",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1571064523001811",
+      "error": "",
+      "elapsed_ms": 641,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.plrev.2024.04.010",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1571064524000447",
+      "error": "",
+      "elapsed_ms": 675,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.yhbeh.2020.104757",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0018506X20300830",
+      "error": "",
+      "elapsed_ms": 731,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41598-019-41586-3",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.nature.com/articles/s41598-019-41586-3?error=cookies_not_supported&code=a6fabea6-1e86-4710-ad8e-af63550a6621",
+      "error": "",
+      "elapsed_ms": 1703,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1038/s42003-020-0813-8",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.nature.com/articles/s42003-020-0813-8?error=cookies_not_supported&code=aa771c7c-9253-4d16-88de-9284caeb4a4b",
+      "error": "",
+      "elapsed_ms": 1527,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1093/molbev/msu292",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://academic.oup.com/mbe/article-lookup/doi/10.1093/molbev/msu292",
+      "error": "",
+      "elapsed_ms": 1013,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.1098/rspb.2016.0841",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://royalsocietypublishing.org/doi/10.1098/rspb.2016.0841",
+      "error": "",
+      "elapsed_ms": 967,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.1111/mec.13964",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/mec.13964",
+      "error": "",
+      "elapsed_ms": 737,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.1146/annurev-neuro-070815-013927",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.annualreviews.org/doi/10.1146/annurev-neuro-070815-013927",
+      "error": "",
+      "elapsed_ms": 1059,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.1371/journal.pone.0202117",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0202117",
+      "error": "",
+      "elapsed_ms": 1234,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3109/09553002.2016.1144941",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.tandfonline.com/doi/full/10.3109/09553002.2016.1144941",
+      "error": "",
+      "elapsed_ms": 925,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.31219/osf.io/dnw5k",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://osf.io/dnw5k_v1",
+      "error": "",
+      "elapsed_ms": 507,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.31222/osf.io/9nb3u",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://osf.io/9nb3u_v1",
+      "error": "",
+      "elapsed_ms": 513,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3389/fgene.2015.00261",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2015.00261/full",
+      "error": "",
+      "elapsed_ms": 1570,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3389/fnbeh.2021.647732",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2021.647732/full",
+      "error": "",
+      "elapsed_ms": 1424,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3389/fpsyg.2025.1585315",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1585315/full",
+      "error": "",
+      "elapsed_ms": 872,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3390/arts7030039",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.mdpi.com/2076-0752/7/3/39",
+      "error": "",
+      "elapsed_ms": 801,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.3390/e25070964",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.mdpi.com/1099-4300/25/7/964",
+      "error": "",
+      "elapsed_ms": 796,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.3390/e26040303",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.mdpi.com/1099-4300/26/4/303",
+      "error": "",
+      "elapsed_ms": 765,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.3390/e27050459",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.mdpi.com/1099-4300/27/5/459",
+      "error": "",
+      "elapsed_ms": 688,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.34700/7gkw-zh08",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://aliusresearch.org/bulletin03-dennettinterview.html",
+      "error": "",
+      "elapsed_ms": 545,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.34700/8pg4-0h12",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://aliusresearch.org/bulletin04-hanksinterview.html",
+      "error": "",
+      "elapsed_ms": 580,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.34700/h460-nz89",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://aliusresearch.org/bulletin02-fristoninterview.html",
+      "error": "",
+      "elapsed_ms": 483,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3791/65002",
+      "ok": true,
+      "status": 202,
+      "method": "HEAD",
+      "final_url": "https://app.jove.com/t/65002",
+      "error": "",
+      "elapsed_ms": 338,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2205.06345",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://arxiv.org/abs/2205.06345",
+      "error": "",
+      "elapsed_ms": 409,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2408.09548",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://arxiv.org/abs/2408.09548",
+      "error": "",
+      "elapsed_ms": 476,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2505.17500",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://arxiv.org/abs/2505.17500",
+      "error": "",
+      "elapsed_ms": 607,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5063/schema/codemeta-2.0",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://raw.githubusercontent.com/codemeta/codemeta/2.0/codemeta.jsonld",
+      "error": "",
+      "elapsed_ms": 729,
+      "sources": [
+        "codemeta.json"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10034512",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10034512",
+      "error": "",
+      "elapsed_ms": 1569,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10038232",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10038232",
+      "error": "",
+      "elapsed_ms": 1595,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10160656",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10160657",
+      "error": "",
+      "elapsed_ms": 1895,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10296601",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10362561",
+      "error": "",
+      "elapsed_ms": 1658,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10400744",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10400745",
+      "error": "",
+      "elapsed_ms": 1623,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10447642",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10447643",
+      "error": "",
+      "elapsed_ms": 1675,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10601082",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10601082",
+      "error": "",
+      "elapsed_ms": 1960,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10798145",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/10798145",
+      "error": "",
+      "elapsed_ms": 1748,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.11459322",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/11463326",
+      "error": "",
+      "elapsed_ms": 1590,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.13273681",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/13273682",
+      "error": "",
+      "elapsed_ms": 1458,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.13711301",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/13711302",
+      "error": "",
+      "elapsed_ms": 1709,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.13754585",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/13754586",
+      "error": "",
+      "elapsed_ms": 2000,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.13999298",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/13999299",
+      "error": "",
+      "elapsed_ms": 1560,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.14108992",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/14108992",
+      "error": "",
+      "elapsed_ms": 1640,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.14574046",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/14574047",
+      "error": "",
+      "elapsed_ms": 1723,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.14861595",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/14861596",
+      "error": "",
+      "elapsed_ms": 1768,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.15061667",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/15061667",
+      "error": "",
+      "elapsed_ms": 1626,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.15168381",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/15168382",
+      "error": "",
+      "elapsed_ms": 1711,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.15170907",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/15231156",
+      "error": "",
+      "elapsed_ms": 1652,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.15389682",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/16753709",
+      "error": "",
+      "elapsed_ms": 1641,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.16740439",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/16740439",
+      "error": "",
+      "elapsed_ms": 1745,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.16782756",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/16782757",
+      "error": "",
+      "elapsed_ms": 1462,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.16790554",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/16790555",
+      "error": "",
+      "elapsed_ms": 1394,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.16887800",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/16887800",
+      "error": "",
+      "elapsed_ms": 1480,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17114389",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17114390",
+      "error": "",
+      "elapsed_ms": 1929,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17138223",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17138224",
+      "error": "",
+      "elapsed_ms": 1708,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17228945",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17228946",
+      "error": "",
+      "elapsed_ms": 1616,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17229924",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17229925",
+      "error": "",
+      "elapsed_ms": 1713,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17235137",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17243488",
+      "error": "",
+      "elapsed_ms": 2154,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17238736",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17238737",
+      "error": "",
+      "elapsed_ms": 1900,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17244386",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17244387",
+      "error": "",
+      "elapsed_ms": 1894,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17555266",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17575211",
+      "error": "",
+      "elapsed_ms": 2143,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.17982447",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/17982447",
+      "error": "",
+      "elapsed_ms": 2090,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.18364119",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/18364119",
+      "error": "",
+      "elapsed_ms": 2137,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/PROFILE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.18600041",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/18600041",
+      "error": "",
+      "elapsed_ms": 2055,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.18686966",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/18686966",
+      "error": "",
+      "elapsed_ms": 2058,
+      "sources": [
+        "software.html",
+        "software.html",
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.18807970",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/18984939",
+      "error": "",
+      "elapsed_ms": 2108,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19139090",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19139090",
+      "error": "",
+      "elapsed_ms": 2230,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19335196",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19335196",
+      "error": "",
+      "elapsed_ms": 2020,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19574118",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19574118",
+      "error": "",
+      "elapsed_ms": 2612,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19600217",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19600217",
+      "error": "",
+      "elapsed_ms": 1802,
+      "sources": [
+        "software.html",
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19695260",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19695260",
+      "error": "",
+      "elapsed_ms": 1833,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19699234",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19699234",
+      "error": "",
+      "elapsed_ms": 2240,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19897664",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/19897664",
+      "error": "",
+      "elapsed_ms": 1862,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.20144984",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/20144984",
+      "error": "",
+      "elapsed_ms": 1612,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.3986085",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/3986085",
+      "error": "",
+      "elapsed_ms": 1522,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.4021163",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/4021163",
+      "error": "",
+      "elapsed_ms": 1318,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.4203765",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/4203765",
+      "error": "",
+      "elapsed_ms": 1452,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.4383230",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/4383230",
+      "error": "",
+      "elapsed_ms": 1599,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.4579414",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/4579414",
+      "error": "",
+      "elapsed_ms": 1643,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.5573287",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/5573287",
+      "error": "",
+      "elapsed_ms": 1752,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.5573947",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/5573947",
+      "error": "",
+      "elapsed_ms": 1448,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.5759807",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/5759807",
+      "error": "",
+      "elapsed_ms": 1468,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.6320574",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7484994",
+      "error": "",
+      "elapsed_ms": 1611,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7093837",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7093837",
+      "error": "",
+      "elapsed_ms": 1618,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/PROFILE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7377256",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7377256",
+      "error": "",
+      "elapsed_ms": 1359,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7394901",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7394901",
+      "error": "",
+      "elapsed_ms": 1459,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7443848",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7443848",
+      "error": "",
+      "elapsed_ms": 1474,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7449368",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7449368",
+      "error": "",
+      "elapsed_ms": 1562,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7514368",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7514368",
+      "error": "",
+      "elapsed_ms": 1663,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7626769",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7626769",
+      "error": "",
+      "elapsed_ms": 1610,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7803328",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7803328",
+      "error": "",
+      "elapsed_ms": 1653,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7855582",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/7855582",
+      "error": "",
+      "elapsed_ms": 1626,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.8025957",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/8025957",
+      "error": "",
+      "elapsed_ms": 1404,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.8164667",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/records/8164667",
+      "error": "",
+      "elapsed_ms": 1501,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.8266281",
+      "ok": false,
+      "status": 429,
+      "method": "GET",
+      "final_url": "https://zenodo.org/record/8266281",
+      "error": "",
+      "elapsed_ms": 2378,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.8377988",
+      "ok": false,
+      "status": 429,
+      "method": "GET",
+      "final_url": "https://zenodo.org/record/8377988",
+      "error": "",
+      "elapsed_ms": 2308,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.8415313",
+      "ok": false,
+      "status": 429,
+      "method": "GET",
+      "final_url": "https://zenodo.org/record/8415313",
+      "error": "",
+      "elapsed_ms": 1963,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22",
+      "error": "",
+      "elapsed_ms": 1401,
+      "sources": [
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github-profile-trophy.vercel.app/?username=docxology&theme=dark&no-frame=true&no-bg=true&margin-w=4",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github-profile-trophy.vercel.app/?username=docxology&theme=dark&no-frame=true&no-bg=true&margin-w=4",
+      "error": "",
+      "elapsed_ms": 2702,
+      "sources": [
+        "README.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute",
+      "error": "",
+      "elapsed_ms": 657,
+      "sources": [
+        "index.html",
+        "software.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/AEOS",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/AEOS",
+      "error": "",
+      "elapsed_ms": 1011,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ATLAS",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ATLAS",
+      "error": "",
+      "elapsed_ms": 1041,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ActInf_RxInfer",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ActInf_RxInfer",
+      "error": "",
+      "elapsed_ms": 754,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
+      "error": "",
+      "elapsed_ms": 1182,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "error": "",
+      "elapsed_ms": 1023,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/DOMAINS.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
+      "error": "",
+      "elapsed_ms": 991,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
+      "error": "",
+      "elapsed_ms": 1046,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+      "error": "",
+      "elapsed_ms": 971,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology",
+      "error": "",
+      "elapsed_ms": 963,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Biofirm",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Biofirm",
+      "error": "",
+      "elapsed_ms": 1236,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Bots",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Bots",
+      "error": "",
+      "elapsed_ms": 746,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+      "error": "",
+      "elapsed_ms": 855,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/GEN24",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/GEN24",
+      "error": "",
+      "elapsed_ms": 968,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "error": "",
+      "elapsed_ms": 1626,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Garden-of-Iris",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Garden-of-Iris",
+      "error": "",
+      "elapsed_ms": 799,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "error": "",
+      "elapsed_ms": 1320,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ISSS",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ISSS",
+      "error": "",
+      "elapsed_ms": 925,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "error": "",
+      "elapsed_ms": 1060,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
+      "error": "",
+      "elapsed_ms": 956,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/NoOrg",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/NoOrg",
+      "error": "",
+      "elapsed_ms": 1013,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
+      "error": "",
+      "elapsed_ms": 901,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine",
+      "error": "",
+      "elapsed_ms": 831,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Start",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Start",
+      "error": "",
+      "elapsed_ms": 914,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/Symposium",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/Symposium",
+      "error": "",
+      "elapsed_ms": 1041,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/cognitive",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/cognitive",
+      "error": "",
+      "elapsed_ms": 910,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/SOFTWARE.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/courses",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/courses",
+      "error": "",
+      "elapsed_ms": 997,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "error": "",
+      "elapsed_ms": 884,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/gen25",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/gen25",
+      "error": "",
+      "elapsed_ms": 935,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/gnn",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/gnn",
+      "error": "",
+      "elapsed_ms": 677,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/pymcp",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/pymcp",
+      "error": "",
+      "elapsed_ms": 1205,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/topp",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/topp",
+      "error": "",
+      "elapsed_ms": 1012,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/ultralink",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/ultralink",
+      "error": "",
+      "elapsed_ms": 632,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/danielarifriedman",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/danielarifriedman",
+      "error": "",
+      "elapsed_ms": 589,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology",
+      "error": "",
+      "elapsed_ms": 849,
+      "sources": [
+        "index.html",
+        "index.html",
+        "software.html",
+        "discovery.html",
+        "discovery.html",
+        "README.md",
+        "codemeta.json",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/CITE_VERIFY.md",
+        "pages/PROFILE.md",
+        "pages/SOFTWARE.md",
+        "pages/SOFTWARE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/ActiveInferAnts",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/ActiveInferAnts",
+      "error": "",
+      "elapsed_ms": 892,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/DOMAINS.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/AgenticMesh",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/AgenticMesh",
+      "error": "",
+      "elapsed_ms": 893,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+      "error": "",
+      "elapsed_ms": 1032,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/EvoJump",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/EvoJump",
+      "error": "",
+      "elapsed_ms": 1073,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/FORMINDEX",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/FORMINDEX",
+      "error": "",
+      "elapsed_ms": 901,
+      "sources": [
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/Markov_Blanket_Detection",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/Markov_Blanket_Detection",
+      "error": "",
+      "elapsed_ms": 1062,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/MetaInformAnt",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/MetaInformAnt",
+      "error": "",
+      "elapsed_ms": 1342,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/QuadCraft",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/QuadCraft",
+      "error": "",
+      "elapsed_ms": 1154,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/QuadMath",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/QuadMath",
+      "error": "",
+      "elapsed_ms": 1106,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/active_inference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/active_inference",
+      "error": "",
+      "elapsed_ms": 1370,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/active_torchference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/active_torchference",
+      "error": "",
+      "elapsed_ms": 1183,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/ant-pheromone",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/ant-pheromone",
+      "error": "",
+      "elapsed_ms": 904,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/ant_stack",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/ant_stack",
+      "error": "",
+      "elapsed_ms": 1320,
+      "sources": [
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/biol-1",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/biol-1",
+      "error": "",
+      "elapsed_ms": 963,
+      "sources": [
+        "index.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/biol-8",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/biol-8",
+      "error": "",
+      "elapsed_ms": 1056,
+      "sources": [
+        "index.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/blake_jiang",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/blake_jiang",
+      "error": "",
+      "elapsed_ms": 959,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/cascadia",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/cascadia",
+      "error": "",
+      "elapsed_ms": 1027,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/codomyrmex",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/codomyrmex",
+      "error": "",
+      "elapsed_ms": 1062,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/cognitive",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/cognitive",
+      "error": "",
+      "elapsed_ms": 1194,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/cognitive-engine",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/cognitive-engine",
+      "error": "",
+      "elapsed_ms": 1073,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/cognitive_case_diagrams",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/cognitive_case_diagrams",
+      "error": "",
+      "elapsed_ms": 912,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/course",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/course",
+      "error": "",
+      "elapsed_ms": 1155,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/crescent-city",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/crescent-city",
+      "error": "",
+      "elapsed_ms": 1063,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/curriculum",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/curriculum",
+      "error": "",
+      "elapsed_ms": 947,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology",
+      "error": "",
+      "elapsed_ms": 1031,
+      "sources": [
+        "index.html",
+        "domains.html",
+        "discovery.html",
+        "cite-verify.html",
+        "cite-verify.html",
+        "evidence.html",
+        "llms.txt",
+        "humans.txt",
+        "CITATION.cff",
+        "codemeta.json",
+        "pages/README.md",
+        "pages/README.md",
+        "pages/LINKS.md",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/CITE_VERIFY.md",
+        "pages/CITE_VERIFY.md",
+        "pages/PROFILE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/issues",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/issues",
+      "error": "",
+      "elapsed_ms": 796,
+      "sources": [
+        "codemeta.json"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers",
+      "error": "",
+      "elapsed_ms": 957,
+      "sources": [
+        "llms.txt"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2015_CryptoJews",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2015_CryptoJews",
+      "error": "",
+      "elapsed_ms": 779,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2015_EhrlichialInfection",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2015_EhrlichialInfection",
+      "error": "",
+      "elapsed_ms": 1067,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2015_HoneyBeeEvolution",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2015_HoneyBeeEvolution",
+      "error": "",
+      "elapsed_ms": 875,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2016_AntGenetics",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2016_AntGenetics",
+      "error": "",
+      "elapsed_ms": 812,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2016_ForagingGene",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2016_ForagingGene",
+      "error": "",
+      "elapsed_ms": 802,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2016_NuclearStructure",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2016_NuclearStructure",
+      "error": "",
+      "elapsed_ms": 644,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2017_MutAnts",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2017_MutAnts",
+      "error": "",
+      "elapsed_ms": 996,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2017_TwoLineages",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2017_TwoLineages",
+      "error": "",
+      "elapsed_ms": 854,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2018_ArgentineAnt",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2018_ArgentineAnt",
+      "error": "",
+      "elapsed_ms": 946,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2018_DopamineForaging",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2018_DopamineForaging",
+      "error": "",
+      "elapsed_ms": 920,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2018_MVEE",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2018_MVEE",
+      "error": "",
+      "elapsed_ms": 1123,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2018_PPPiP",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2018_PPPiP",
+      "error": "",
+      "elapsed_ms": 1137,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2018_WoodliceAndMen",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2018_WoodliceAndMen",
+      "error": "",
+      "elapsed_ms": 1197,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2019_AntConsciousness",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2019_AntConsciousness",
+      "error": "",
+      "elapsed_ms": 1177,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2019_DennettExplained",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2019_DennettExplained",
+      "error": "",
+      "elapsed_ms": 932,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2019_ForagerHydration",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2019_ForagerHydration",
+      "error": "",
+      "elapsed_ms": 816,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2019_PhDDissertation",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2019_PhDDissertation",
+      "error": "",
+      "elapsed_ms": 869,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_BehaviorEngineering",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_BehaviorEngineering",
+      "error": "",
+      "elapsed_ms": 712,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_DistributedPhysiology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_DistributedPhysiology",
+      "error": "",
+      "elapsed_ms": 884,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_EmergentTeams",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_EmergentTeams",
+      "error": "",
+      "elapsed_ms": 891,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_FacilitatorsCatechism",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_FacilitatorsCatechism",
+      "error": "",
+      "elapsed_ms": 798,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_GeneExpressionForagers",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_GeneExpressionForagers",
+      "error": "",
+      "elapsed_ms": 791,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_GreatPreset",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_GreatPreset",
+      "error": "",
+      "elapsed_ms": 859,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_InnovatorsCatechism",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_InnovatorsCatechism",
+      "error": "",
+      "elapsed_ms": 834,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_NeuroscienceDecision",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_NeuroscienceDecision",
+      "error": "",
+      "elapsed_ms": 981,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2020_NeurotransmitterVariation",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2020_NeurotransmitterVariation",
+      "error": "",
+      "elapsed_ms": 1103,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2021_ActiveInferants",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2021_ActiveInferants",
+      "error": "",
+      "elapsed_ms": 808,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2021_DigitalRhetorical",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2021_DigitalRhetorical",
+      "error": "",
+      "elapsed_ms": 679,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2021_ModelingConflict",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2021_ModelingConflict",
+      "error": "",
+      "elapsed_ms": 648,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeEcosystems",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeEcosystems",
+      "error": "",
+      "elapsed_ms": 657,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeInformationMgmt",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeInformationMgmt",
+      "error": "",
+      "elapsed_ms": 778,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_ActiveDiffusion",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_ActiveDiffusion",
+      "error": "",
+      "elapsed_ms": 793,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_ActiveInferenceOntology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_ActiveInferenceOntology",
+      "error": "",
+      "elapsed_ms": 805,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_FreeWillSapolsky",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_FreeWillSapolsky",
+      "error": "",
+      "elapsed_ms": 688,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_HypercertEcosystems",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_HypercertEcosystems",
+      "error": "",
+      "elapsed_ms": 756,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_InformationCommons",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_InformationCommons",
+      "error": "",
+      "elapsed_ms": 749,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_MirrorTest",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_MirrorTest",
+      "error": "",
+      "elapsed_ms": 663,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_StigmergicAnnotation",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_StigmergicAnnotation",
+      "error": "",
+      "elapsed_ms": 813,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_SystematicLiteratureAnalysis",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_SystematicLiteratureAnalysis",
+      "error": "",
+      "elapsed_ms": 816,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2022_TrustFinder",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2022_TrustFinder",
+      "error": "",
+      "elapsed_ms": 667,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_AIAccountability",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_AIAccountability",
+      "error": "",
+      "elapsed_ms": 773,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_AII_v1",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_AII_v1",
+      "error": "",
+      "elapsed_ms": 867,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_ATLAS",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_ATLAS",
+      "error": "",
+      "elapsed_ms": 1053,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_AccountActiveInference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_AccountActiveInference",
+      "error": "",
+      "elapsed_ms": 884,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_AntsAging",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_AntsAging",
+      "error": "",
+      "elapsed_ms": 1030,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_BlakeFuller",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_BlakeFuller",
+      "error": "",
+      "elapsed_ms": 893,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_CognitiveSovereignty",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_CognitiveSovereignty",
+      "error": "",
+      "elapsed_ms": 876,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_DistributedScience",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_DistributedScience",
+      "error": "",
+      "elapsed_ms": 1064,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_GNN",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_GNN",
+      "error": "",
+      "elapsed_ms": 1033,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_GenerativeResearchTeams",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_GenerativeResearchTeams",
+      "error": "",
+      "elapsed_ms": 1169,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_GuidedTourMinds",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_GuidedTourMinds",
+      "error": "",
+      "elapsed_ms": 1171,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_HoneyBeeGeneExpression",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_HoneyBeeGeneExpression",
+      "error": "",
+      "elapsed_ms": 1064,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_NSFReporting",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_NSFReporting",
+      "error": "",
+      "elapsed_ms": 1016,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_OpenScienceSensemaking",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_OpenScienceSensemaking",
+      "error": "",
+      "elapsed_ms": 897,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_P3IF",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_P3IF",
+      "error": "",
+      "elapsed_ms": 907,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_PostdocReview",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_PostdocReview",
+      "error": "",
+      "elapsed_ms": 834,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_SinglePheromone",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_SinglePheromone",
+      "error": "",
+      "elapsed_ms": 929,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_ToComment",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_ToComment",
+      "error": "",
+      "elapsed_ms": 797,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_VariationalSynthesis",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_VariationalSynthesis",
+      "error": "",
+      "elapsed_ms": 779,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2023_VideoEntomology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2023_VideoEntomology",
+      "error": "",
+      "elapsed_ms": 832,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_AII_v2",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_AII_v2",
+      "error": "",
+      "elapsed_ms": 828,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_BioFirm",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_BioFirm",
+      "error": "",
+      "elapsed_ms": 793,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_BlattodeaDiversity",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_BlattodeaDiversity",
+      "error": "",
+      "elapsed_ms": 753,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_CurioCards",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_CurioCards",
+      "error": "",
+      "elapsed_ms": 778,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_DigitalTwins",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_DigitalTwins",
+      "error": "",
+      "elapsed_ms": 740,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_FarmWorks",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_FarmWorks",
+      "error": "",
+      "elapsed_ms": 778,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_FederatedInference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_FederatedInference",
+      "error": "",
+      "elapsed_ms": 777,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_ImageMemeResearch",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_ImageMemeResearch",
+      "error": "",
+      "elapsed_ms": 869,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_InfiniteImaginarium",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_InfiniteImaginarium",
+      "error": "",
+      "elapsed_ms": 739,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_MathArtBlake",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_MathArtBlake",
+      "error": "",
+      "elapsed_ms": 924,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_OntologySUMO",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_OntologySUMO",
+      "error": "",
+      "elapsed_ms": 845,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_PaleolithicRockstars",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_PaleolithicRockstars",
+      "error": "",
+      "elapsed_ms": 711,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_PopulationSearch",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_PopulationSearch",
+      "error": "",
+      "elapsed_ms": 852,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_QuantumDreams",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_QuantumDreams",
+      "error": "",
+      "elapsed_ms": 690,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_SensemakingFederation",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_SensemakingFederation",
+      "error": "",
+      "elapsed_ms": 766,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2024_SharedProtentions",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2024_SharedProtentions",
+      "error": "",
+      "elapsed_ms": 817,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_5thSymposium",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_5thSymposium",
+      "error": "",
+      "elapsed_ms": 861,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_AII_v3",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_AII_v3",
+      "error": "",
+      "elapsed_ms": 877,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_AccessibilityActiveInference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_AccessibilityActiveInference",
+      "error": "",
+      "elapsed_ms": 915,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_AgentAndNiche",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_AgentAndNiche",
+      "error": "",
+      "elapsed_ms": 742,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_AntStack",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_AntStack",
+      "error": "",
+      "elapsed_ms": 738,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_AntStackComplexity",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_AntStackComplexity",
+      "error": "",
+      "elapsed_ms": 711,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_AuBI",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_AuBI",
+      "error": "",
+      "elapsed_ms": 705,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_CEREBRUM",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_CEREBRUM",
+      "error": "",
+      "elapsed_ms": 1095,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_CognitiveArtScience",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_CognitiveArtScience",
+      "error": "",
+      "elapsed_ms": 918,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_ConsciousnessAnts",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_ConsciousnessAnts",
+      "error": "",
+      "elapsed_ms": 974,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_DiscoveryEngine",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_DiscoveryEngine",
+      "error": "",
+      "elapsed_ms": 1467,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_EvoJump",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_EvoJump",
+      "error": "",
+      "elapsed_ms": 2323,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_MDKV",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_MDKV",
+      "error": "",
+      "elapsed_ms": 798,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_MarkdownDecisionProcess",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_MarkdownDecisionProcess",
+      "error": "",
+      "elapsed_ms": 809,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_OnTime",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_OnTime",
+      "error": "",
+      "elapsed_ms": 811,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_QuadMath",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_QuadMath",
+      "error": "",
+      "elapsed_ms": 1084,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_ResNei",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_ResNei",
+      "error": "",
+      "elapsed_ms": 1133,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_Symergetics",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_Symergetics",
+      "error": "",
+      "elapsed_ms": 1268,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_SystemsProcesses",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_SystemsProcesses",
+      "error": "",
+      "elapsed_ms": 1214,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_TemporalDepth",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_TemporalDepth",
+      "error": "",
+      "elapsed_ms": 1131,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2025_Thoughtseeds",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2025_Thoughtseeds",
+      "error": "",
+      "elapsed_ms": 1048,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_ActInfMetaAnalysis",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_ActInfMetaAnalysis",
+      "error": "",
+      "elapsed_ms": 904,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_BeforePragmatism",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_BeforePragmatism",
+      "error": "",
+      "elapsed_ms": 964,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_Bimetalism",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_Bimetalism",
+      "error": "",
+      "elapsed_ms": 990,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_BlakeJiang",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_BlakeJiang",
+      "error": "",
+      "elapsed_ms": 1026,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveCaseDiagrams",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveCaseDiagrams",
+      "error": "",
+      "elapsed_ms": 990,
+      "sources": [
+        "publications.html",
+        "software.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveIntegrity",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveIntegrity",
+      "error": "",
+      "elapsed_ms": 867,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_DoorsOfPerception",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_DoorsOfPerception",
+      "error": "",
+      "elapsed_ms": 985,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_EntoLinguistics",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_EntoLinguistics",
+      "error": "",
+      "elapsed_ms": 816,
+      "sources": [
+        "publications.html",
+        "software.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_FEPLean",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_FEPLean",
+      "error": "",
+      "elapsed_ms": 876,
+      "sources": [
+        "publications.html",
+        "software.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_FocusedAttentionMeditation",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_FocusedAttentionMeditation",
+      "error": "",
+      "elapsed_ms": 778,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/tree/main/papers/2026_ReproducibleResearch",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/tree/main/papers/2026_ReproducibleResearch",
+      "error": "",
+      "elapsed_ms": 741,
+      "sources": [
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/enactive_inference_model",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/enactive_inference_model",
+      "error": "",
+      "elapsed_ms": 1556,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/ento_linguistics",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/ento_linguistics",
+      "error": "",
+      "elapsed_ms": 1184,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/flick",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/flick",
+      "error": "",
+      "elapsed_ms": 1079,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/fuller-obsidian",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/fuller-obsidian",
+      "error": "",
+      "elapsed_ms": 1001,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/godel_ivm",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/godel_ivm",
+      "error": "",
+      "elapsed_ms": 1233,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/goference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/goference",
+      "error": "",
+      "elapsed_ms": 1128,
+      "sources": [
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/hhs-opendata",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/hhs-opendata",
+      "error": "",
+      "elapsed_ms": 1195,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/infra-calc",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/infra-calc",
+      "error": "",
+      "elapsed_ms": 1161,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/ivm-xyz",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/ivm-xyz",
+      "error": "",
+      "elapsed_ms": 1127,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/lean_niche",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/lean_niche",
+      "error": "",
+      "elapsed_ms": 1215,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/literature",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/literature",
+      "error": "",
+      "elapsed_ms": 993,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/markdown_decision_process",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/markdown_decision_process",
+      "error": "",
+      "elapsed_ms": 1273,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/mdkv",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/mdkv",
+      "error": "",
+      "elapsed_ms": 1093,
+      "sources": [
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/obsidian-construction-from-text",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/obsidian-construction-from-text",
+      "error": "",
+      "elapsed_ms": 1159,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/opentir",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/opentir",
+      "error": "",
+      "elapsed_ms": 1105,
+      "sources": [
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/p3if",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/p3if",
+      "error": "",
+      "elapsed_ms": 1086,
+      "sources": [
+        "README.md",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/qr_live_protocol",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/qr_live_protocol",
+      "error": "",
+      "elapsed_ms": 1172,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/service",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/service",
+      "error": "",
+      "elapsed_ms": 1034,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/snake",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/snake",
+      "error": "",
+      "elapsed_ms": 1275,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/steganographer",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/steganographer",
+      "error": "",
+      "elapsed_ms": 2125,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/symergetics",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/symergetics",
+      "error": "",
+      "elapsed_ms": 1049,
+      "sources": [
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/template",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/template",
+      "error": "",
+      "elapsed_ms": 987,
+      "sources": [
+        "software.html",
+        "software.html",
+        "README.md",
+        "README.md",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/timeline_generator",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/timeline_generator",
+      "error": "",
+      "elapsed_ms": 949,
+      "sources": [
+        "software.html",
+        "software.html",
+        "pages/DOMAINS.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/transformer",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/transformer",
+      "error": "",
+      "elapsed_ms": 2345,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/ultralink-docx",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/ultralink-docx",
+      "error": "",
+      "elapsed_ms": 1399,
+      "sources": [
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology?tab=repositories",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology?tab=repositories",
+      "error": "",
+      "elapsed_ms": 1318,
+      "sources": [
+        "pages/DISCOVERY.md",
+        "pages/SOFTWARE.md",
+        "pages/SOFTWARE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://innovatorsdigitalplaybook.com/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.innovatorsdigitalplaybook.com/",
+      "error": "",
+      "elapsed_ms": 1298,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://jrbp.stanford.edu/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://jrbp.stanford.edu/",
+      "error": "",
+      "elapsed_ms": 383,
+      "sources": [
+        "pages/LINKS.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://linkedin.com/in/danielarifriedman",
+      "ok": false,
+      "status": 999,
+      "method": "GET",
+      "final_url": "https://linkedin.com/in/danielarifriedman",
+      "error": "",
+      "elapsed_ms": 927,
+      "sources": [
+        "index.html",
+        "README.md",
+        "README.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://loop.frontiersin.org/people/220679/overview",
+      "ok": true,
+      "status": 200,
+      "method": "GET",
+      "final_url": "https://loop.frontiersin.org/people/220679/overview",
+      "error": "",
+      "elapsed_ms": 2280,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://loveandphilosophy.com/beyond-dichotomy-podcast/active-inference",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://loveandphilosophy.com/beyond-dichotomy-podcast/active-inference",
+      "error": "",
+      "elapsed_ms": 786,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534",
+      "error": "",
+      "elapsed_ms": 430,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/",
+      "error": "",
+      "elapsed_ms": 575,
+      "sources": [
+        "index.html",
+        "README.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://nftarchaeology.io/nft-details/curiocards",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://nftarchaeology.io/nft-details/curiocards",
+      "error": "",
+      "elapsed_ms": 908,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://orcid.org/0000-0001-6232-9096",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://orcid.org/0000-0001-6232-9096",
+      "error": "",
+      "elapsed_ms": 318,
+      "sources": [
+        "index.html",
+        "index.html",
+        "index.html",
+        "index.html",
+        "publications.html",
+        "discovery.html",
+        "discovery.html",
+        "discovery.html",
+        "evidence.html",
+        "evidence.html",
+        "README.md",
+        "README.md",
+        "llms.txt",
+        "CITATION.cff",
+        "codemeta.json",
+        "codemeta.json",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/CITE_VERIFY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/PROFILE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://paypal.me/DanielAriFriedman",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.paypal.com/paypalme/DanielAriFriedman",
+      "error": "",
+      "elapsed_ms": 885,
+      "sources": [
+        "README.md",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://philpeople.org/profiles/daniel-ari-friedman",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://philpeople.org/profiles/daniel-ari-friedman",
+      "error": "",
+      "elapsed_ms": 454,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://podcasts.apple.com/us/podcast/the-rarest-nft-daniel-friedman-on-his-work-with-curio-cards/id1410811576?i=1000514634238",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://podcasts.apple.com/us/podcast/the-rarest-nft-daniel-friedman-on-his-work-with-curio-cards/id1410811576?i=1000514634238",
+      "error": "",
+      "elapsed_ms": 383,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
+      "error": "",
+      "elapsed_ms": 418,
+      "sources": [
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D",
+      "error": "",
+      "elapsed_ms": 369,
+      "sources": [
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://rosybvm.com/2021/01/20/rosy-conversation-with-daniel-ari-friedman/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://rosybvm.com/2021/01/20/rosy-conversation-with-daniel-ari-friedman/",
+      "error": "",
+      "elapsed_ms": 252,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://schema.org",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://schema.org/",
+      "error": "",
+      "elapsed_ms": 213,
+      "sources": [
+        "index.html",
+        "index.html",
+        "index.html",
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "software.html",
+        "software.html",
+        "discovery.html",
+        "search.html",
+        "catalog.html",
+        "updates.html",
+        "README.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&amp;hl=en",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&amp;hl=en",
+      "error": "",
+      "elapsed_ms": 487,
+      "sources": [
+        "index.html",
+        "discovery.html",
+        "discovery.html",
+        "evidence.html",
+        "evidence.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
+      "error": "",
+      "elapsed_ms": 250,
+      "sources": [
+        "index.html",
+        "index.html",
+        "index.html",
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "discovery.html",
+        "README.md",
+        "README.md",
+        "codemeta.json",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/CITE_VERIFY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://scholargps.com/scholars/96885945987887/daniel-ari-friedman",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://scholargps.com/scholars/96885945987887/daniel-ari-friedman",
+      "error": "",
+      "elapsed_ms": 390,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://sciprofiles.com/profile/447575",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://sciprofiles.com/profile/447575",
+      "error": "",
+      "elapsed_ms": 503,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://t.me/docxology",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://t.me/docxology",
+      "error": "",
+      "elapsed_ms": 685,
+      "sources": [
+        "README.md",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://video.activeinference.institute/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://coda.io/d/AII_do5M5iYau8H/Videos-and-Podcasts_sup3s-us#_lunGi2WA",
+      "error": "",
+      "elapsed_ms": 649,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://wiki.isss.org/index.php/Daniel_Friedman",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://wiki.isss.org/index.php/Daniel_Friedman",
+      "error": "",
+      "elapsed_ms": 874,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman",
+      "ok": false,
+      "status": 0,
+      "method": "GET",
+      "final_url": "https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman",
+      "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 85 ms: Couldn't connect to server",
+      "elapsed_ms": 510,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "connection-failure"
+    },
+    {
+      "url": "https://wonderfest.org/friedman/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://wonderfest.org/friedman/",
+      "error": "",
+      "elapsed_ms": 635,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/",
+      "error": "",
+      "elapsed_ms": 695,
+      "sources": [
+        "index.html",
+        "index.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/board-of-directors",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/board-of-directors",
+      "error": "",
+      "elapsed_ms": 398,
+      "sources": [
+        "evidence.html",
+        "evidence.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/history",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/history",
+      "error": "",
+      "elapsed_ms": 423,
+      "sources": [
+        "pages/LINKS.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/livestreams",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/livestreams",
+      "error": "",
+      "elapsed_ms": 807,
+      "sources": [
+        "pages/DISCOVERY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/officers",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/officers",
+      "error": "",
+      "elapsed_ms": 393,
+      "sources": [
+        "discovery.html",
+        "evidence.html",
+        "evidence.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/partnership",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/partnership",
+      "error": "",
+      "elapsed_ms": 770,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/research-overview",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/research-overview",
+      "error": "",
+      "elapsed_ms": 267,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/scientific-advisory-board",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/scientific-advisory-board",
+      "error": "",
+      "elapsed_ms": 313,
+      "sources": [
+        "discovery.html",
+        "evidence.html",
+        "evidence.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/strategy",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/strategy",
+      "error": "",
+      "elapsed_ms": 396,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.activeinference.institute/textbook-group",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.activeinference.institute/textbook-group",
+      "error": "",
+      "elapsed_ms": 549,
+      "sources": [
+        "evidence.html",
+        "evidence.html",
+        "pages/DISCOVERY.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.aliusresearch.org/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://aliusresearch.org/",
+      "error": "",
+      "elapsed_ms": 666,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.aliusresearch.org/team-222796.html",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://aliusresearch.org/team-222796.html",
+      "error": "",
+      "elapsed_ms": 553,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.christies.com/en/lot/lot-6337619",
+      "ok": false,
+      "status": 0,
+      "method": "GET",
+      "final_url": "https://www.christies.com/en/lot/lot-6337619",
+      "error": "curl: (28) Operation timed out after 10007 milliseconds with 0 bytes received",
+      "elapsed_ms": 20107,
+      "sources": [
+        "index.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/EVIDENCE.md",
+        "pages/EVIDENCE.md"
+      ],
+      "category": "timeout"
+    },
+    {
+      "url": "https://www.cogsec.org/about-2",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.cogsec.org/about-2",
+      "error": "",
+      "elapsed_ms": 489,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.complexityadventures.com/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.complexityadventures.com/",
+      "error": "",
+      "elapsed_ms": 342,
+      "sources": [
+        "README.md",
+        "pages/LINKS.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.complexityadventures.com/organizers/2",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.complexityadventures.com/organizers/2",
+      "error": "",
+      "elapsed_ms": 360,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes",
+      "error": "",
+      "elapsed_ms": 1590,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/DOMAINS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.facebook.com/danielarifriedman/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.facebook.com/danielarifriedman/",
+      "error": "",
+      "elapsed_ms": 900,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/43693624@N07/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.flickr.com/photos/43693624@N07/",
+      "error": "",
+      "elapsed_ms": 681,
+      "sources": [
+        "index.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.flickr.com/photos/daniel_friedman/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.flickr.com/photos/daniel_friedman/",
+      "error": "",
+      "elapsed_ms": 871,
+      "sources": [
+        "README.md",
+        "pages/LINKS.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.instagram.com/danielarifriedman/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.instagram.com/danielarifriedman/",
+      "error": "",
+      "elapsed_ms": 427,
+      "sources": [
+        "index.html",
+        "README.md",
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.kuppingercole.com/events/eic2024/speakers/3516",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.kuppingercole.com/events/eic2024/speakers/3516",
+      "error": "",
+      "elapsed_ms": 440,
+      "sources": [
+        "index.html",
+        "pages/LINKS.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://www.linkedin.com/in/danielarifriedman",
+      "ok": false,
+      "status": 999,
+      "method": "GET",
+      "final_url": "https://www.linkedin.com/in/danielarifriedman",
+      "error": "",
+      "elapsed_ms": 1202,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://www.redwoods.edu/",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.redwoods.edu/",
+      "error": "",
+      "elapsed_ms": 315,
+      "sources": [
+        "pages/LINKS.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.researchgate.net/profile/Daniel-Friedman-2",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.researchgate.net/profile/Daniel-Friedman-2",
+      "error": "",
+      "elapsed_ms": 499,
+      "sources": [
+        "index.html",
+        "index.html",
+        "publications.html",
+        "README.md",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&amp;sort=relevance",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&amp;sort=relevance",
+      "error": "",
+      "elapsed_ms": 270,
+      "sources": [
+        "discovery.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance",
+      "error": "",
+      "elapsed_ms": 263,
+      "sources": [
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.udemy.com/course/communication-for-remote-teams/",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.udemy.com/course/communication-for-remote-teams/",
+      "error": "",
+      "elapsed_ms": 607,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://www.udemy.com/course/keybase-for-remote-teams/",
+      "ok": false,
+      "status": 403,
+      "method": "GET",
+      "final_url": "https://www.udemy.com/course/keybase-for-remote-teams/",
+      "error": "",
+      "elapsed_ms": 641,
+      "sources": [
+        "publications.html",
+        "publications.html",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q138781444",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.wikidata.org/wiki/Q138781444",
+      "error": "",
+      "elapsed_ms": 465,
+      "sources": [
+        "index.html",
+        "index.html",
+        "discovery.html",
+        "discovery.html",
+        "README.md",
+        "llms.txt",
+        "codemeta.json",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/CITE_VERIFY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q139600792",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.wikidata.org/wiki/Q139600792",
+      "error": "",
+      "elapsed_ms": 662,
+      "sources": [
+        "index.html",
+        "discovery.html",
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://search.worldcat.org/search?q=bn:978-3-8365-9970-2",
+      "error": "",
+      "elapsed_ms": 785,
+      "sources": [
+        "publications.html",
+        "publications.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://www.youtube.com/@danielarifriedman/playlists",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.youtube.com/@danielarifriedman/playlists",
+      "error": "",
+      "elapsed_ms": 503,
+      "sources": [
+        "index.html",
+        "publications.html",
+        "publications.html",
+        "README.md",
+        "pages/LINKS.md",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://youtube.com/@danielarifriedman",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://www.youtube.com/@danielarifriedman",
+      "error": "",
+      "elapsed_ms": 896,
+      "sources": [
+        "index.html",
+        "README.md",
+        "README.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22",
+      "error": "",
+      "elapsed_ms": 2027,
+      "sources": [
+        "discovery.html",
+        "pages/DISCOVERY.md"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22",
+      "ok": false,
+      "status": 429,
+      "method": "GET",
+      "final_url": "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22",
+      "error": "",
+      "elapsed_ms": 1525,
+      "sources": [
+        "discovery.html",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "category": "bot-protected-or-rate-limited"
+    }
+  ]
+}
