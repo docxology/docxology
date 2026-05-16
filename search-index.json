@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T19:47:25Z",
+  "generated_at": "2026-05-16T18:27:33Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -236,7 +236,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-05-15.json",
+      "url": "/reports/accessibility_static_2026-05-16.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -285,7 +285,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-15.json",
+      "url": "/reports/asset_size_2026-05-16.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -3025,14 +3025,14 @@
       "type": "software",
       "title": "codomyrmex",
       "url": "https://github.com/docxology/codomyrmex",
-      "summary": "AI-native modular coding workspace — 127 modules, 424 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "summary": "AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "codomyrmex AI-native modular coding workspace — 127 modules, 424 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration Python docxology"
+      "content": "codomyrmex AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration Python docxology"
     },
     {
       "id": "software:docxology:cognitive-engine",
@@ -9619,7 +9619,7 @@
       "tags": [
         "organization"
       ],
-      "content": "Active Inference Institute https://www.activeinference.institute/ https://activeinference.org/ https://www.wikidata.org/wiki/Q139600792 https://github.com/ActiveInferenceInstitute Research and education nonprofit focused on Active Inference and the Free Energy Principle"
+      "content": "Active Inference Institute https://www.activeinference.institute/ https://activeinference.org/ https://www.wikidata.org/wiki/Q139600792 https://github.com/ActiveInferenceInstitute user The ActiveInferenceInstitute GitHub account is a User account, not an Organization; requests to /orgs/ActiveInferenceInstitute return 404. Use /users/ActiveInferenceInstitute. 88-2985125 501(c)(3) public charity; IRS ruling March 2024 https://projects.propublica.org/nonprofits/organizations/882985125 Research and education nonprofit focused on Active Inference and the Free Energy Principle"
     },
     {
       "id": "organization:COGSEC.org",
@@ -9696,7 +9696,7 @@
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The Active Inference Institute GitHub organization has 50 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -9704,12 +9704,12 @@
         "public-api",
         "high"
       ],
-      "content": "The Active Inference Institute GitHub organization has 50 public repositories. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API organization profile response."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
       "type": "claim",
-      "title": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier.",
+      "title": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. The canonical Google Scholar profile is DXjPFtYAAAAJ; a secondary Scholar profile (Y2bMf3MAAAAJ) is linked from ORCID and should be consolidated/disambiguated.",
       "url": "/evidence.html",
       "summary": "public-identifier · confidence: high",
       "tags": [
@@ -9717,33 +9717,33 @@
         "public-identifier",
         "high"
       ],
-      "content": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. ORCID public work groups may lag new deposits and may group versions differently. ORCID profile and public works endpoint."
+      "content": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. The canonical Google Scholar profile is DXjPFtYAAAAJ; a secondary Scholar profile (Y2bMf3MAAAAJ) is linked from ORCID and should be consolidated/disambiguated. Use DXjPFtYAAAAJ as the single canonical Scholar profile for metrics. ORCID public work groups may lag new deposits and may group versions differently. ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics."
     },
     {
       "id": "claim:curio-cards-early-ethereum-art",
       "type": "claim",
-      "title": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017.",
+      "title": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017; a complete Curio Cards set later sold at Christie's 'Post-War to Present' (New York, Oct 1, 2021) for 393 ETH (~$1.2M), seven artists.",
       "url": "/evidence.html",
-      "summary": "public-profile · confidence: medium",
+      "summary": "public-profile · confidence: high",
       "tags": [
         "claim",
         "public-profile",
-        "medium"
+        "high"
       ],
-      "content": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017. Use conservative phrasing; broader first/earliest claims vary by source and definition. Curio Cards artist profile, Christie's lot page, and local paper notes."
+      "content": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017; a complete Curio Cards set later sold at Christie's 'Post-War to Present' (New York, Oct 1, 2021) for 393 ETH (~$1.2M), seven artists. Present the sale facts as independently verified; present the specific Christie's lot number as a first-party (Christie's) reference only, not independently corroborated. Avoid unqualified 'first/earliest NFT' superlatives. Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's."
     },
     {
       "id": "claim:google-scholar-citations",
       "type": "claim",
-      "title": "Google Scholar citation count is manually synced as 812 citations with h-index 15.",
+      "title": "Google Scholar metrics are recorded as a dated snapshot: 764 citations, h-index 15, i10-index 17 (as of 2026-05-16).",
       "url": "/evidence.html",
-      "summary": "manual-public-profile · confidence: medium",
+      "summary": "dated-snapshot · confidence: high",
       "tags": [
         "claim",
-        "manual-public-profile",
-        "medium"
+        "dated-snapshot",
+        "high"
       ],
-      "content": "Google Scholar citation count is manually synced as 812 citations with h-index 15. Do not overwrite automatically from cached or anonymous Scholar views. Manual Google Scholar profile sync; public cache and access path can vary."
+      "content": "Google Scholar metrics are recorded as a dated snapshot: 764 citations, h-index 15, i10-index 17 (as of 2026-05-16). Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value. Independent dual direct-fetch verification: two separate non-cached retrievals of the canonical profile on 2026-05-16 both returned 764 citations, h-index 15, i10-index 17."
     },
     {
       "id": "claim:stanford-phd",
@@ -9761,20 +9761,20 @@
     {
       "id": "claim:nsf-postdoc-affiliation",
       "type": "claim",
-      "title": "Daniel Ari Friedman was an NSF Postdoctoral Fellow at UC Davis from 2020 to 2023.",
+      "title": "Daniel Ari Friedman held an NSF Postdoctoral Research Fellowship in Biology (award DBI-2010290) co-trained at UC Davis; NSF budget period 2020-2022 with a no-cost extension to 2023.",
       "url": "/evidence.html",
-      "summary": "curated-profile · confidence: medium",
+      "summary": "public-grant-record · confidence: high",
       "tags": [
         "claim",
-        "curated-profile",
-        "medium"
+        "public-grant-record",
+        "high"
       ],
-      "content": "Daniel Ari Friedman was an NSF Postdoctoral Fellow at UC Davis from 2020 to 2023. Add a grant or institutional source if a public authoritative record is located. Curated profile and homepage copy."
+      "content": "Daniel Ari Friedman held an NSF Postdoctoral Research Fellowship in Biology (award DBI-2010290) co-trained at UC Davis; NSF budget period 2020-2022 with a no-cost extension to 2023. Cite the NSF award ID (DBI-2010290) as the authoritative public record. The funding record shows 2020-2022; present 2023 as a no-cost-extension affiliation, not a funded period. NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record."
     },
     {
       "id": "claim:aii-officer-roles",
       "type": "claim",
-      "title": "Active Inference Institute officers list Daniel Friedman as President and Treasurer.",
+      "title": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
       "url": "/evidence.html",
       "summary": "public-profile · confidence: high",
       "tags": [
@@ -9782,7 +9782,7 @@
         "public-profile",
         "high"
       ],
-      "content": "Active Inference Institute officers list Daniel Friedman as President and Treasurer. Officer roles are time-sensitive and should be rechecked before formal bios. AII officers page and local discovery map."
+      "content": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024. Officer roles are time-sensitive. Do not conflate Mikhailova (current VP+Secretary) with Knight (former Secretary 2022-2024, current Board member). AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024)."
     },
     {
       "id": "claim:aii-board-count",
@@ -9800,7 +9800,7 @@
     {
       "id": "claim:aii-scientific-advisory-board-count",
       "type": "claim",
-      "title": "The Active Inference Institute announced a 33-member Scientific Advisory Board cohort in 2026.",
+      "title": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
       "url": "/evidence.html",
       "summary": "public-profile · confidence: medium",
       "tags": [
@@ -9808,7 +9808,7 @@
         "public-profile",
         "medium"
       ],
-      "content": "The Active Inference Institute announced a 33-member Scientific Advisory Board cohort in 2026. Use cautious wording unless the source page explicitly states the cohort count. AII SAB page and local discovery notes."
+      "content": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026. State the cohort as 'listed for 2026' (33 members). Do not assert a specific announcement month unless the source page states one. AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified."
     },
     {
       "id": "claim:aii-textbook-cohorts",

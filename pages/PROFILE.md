@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **812 citations** on Google Scholar (h-index: 15, i10-index: 17) across **107** indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **115** works including books, presentations, and recent deposits not yet reflected on Scholar.
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **764 citations** on Google Scholar (h-index: 15, i10-index: 17, as of 2026-05-16) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **115** works including books, presentations, and recent deposits not yet reflected on Scholar.
 
 ---
 
@@ -35,7 +35,7 @@ Thesis: *Behavioral, Physiological, and Transcriptomic Variation Among Colonies 
 [Stanford Digital Repository](http://purl.stanford.edu/pb813wm1484)
 Field research conducted at [Jasper Ridge Biological Preserve](https://jrbp.stanford.edu/) and a long-term field site in New Mexico
 
-**NSF Postdoctoral Research Fellowship in Biology** (2020–2023)
+**NSF Postdoctoral Research Fellowship in Biology** — PRFB [award DBI-2010290](https://grantome.com/grant/NSF/DBI-2010290), UC Davis (NSF budget period 2020–2022; affiliation extended to 2023)
 UC Davis, Department of Entomology & Nematology
 Co-mentors: Professor Brian Johnson (UC Davis) and Professor Tim Linksvayer (Arizona State University)
 Focus: Behavior, distributed physiology, and evolutionary genomics in social insects
@@ -164,7 +164,7 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 |--------|-------|
 | Works (unified bibliography) | [115](BIBLIOGRAPHY.md) |
 | Google Scholar indexed publications | 107 |
-| Google Scholar Citations | 812 |
+| Google Scholar Citations | 764 (as of 2026-05-16) |
 | h-index | 15 |
 | i10-index | 17 |
 | Citations since 2021 | 495 |

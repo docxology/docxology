@@ -5,7 +5,8 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Artifact | Outputs | Sources | Rebuild command |
 | --- | --- | --- | --- |
 | Bibliography exports | `bibliography.bib`<br>`bibliography.csl.json`<br>`bibliography.ris`<br>`data/works.json` | `pages/BIBLIOGRAPHY.md`<br>`papers/biblio_table.py` | `python3 code/orchestrators/export_bibliography.py` |
-| Agent data exports | `data/software.json`<br>`data/people.json`<br>`data/organizations.json`<br>`data/claims.json` | `pages/SOFTWARE.md`<br>`code/orchestrators/export_agent_data.py` | `python3 code/orchestrators/export_agent_data.py` |
+| Scholar metrics sync | `README.md (badge + blockquote)`<br>`pages/BIBLIOGRAPHY.md (badge)`<br>`index.html (meta/og/stat/li)`<br>`llms.txt`<br>`pages/PROFILE.md (prose + metrics table)`<br>`pages/LINKS.md`<br>`publications.html (header metrics pill)` | `data/scholar-snapshot.json`<br>`code/orchestrators/sync_scholar_metrics.py` | `python3 code/orchestrators/sync_scholar_metrics.py` |
+| Agent data exports | `data/software.json`<br>`data/people.json`<br>`data/organizations.json`<br>`data/claims.json` | `pages/SOFTWARE.md`<br>`data/scholar-snapshot.json`<br>`code/orchestrators/export_agent_data.py` | `python3 code/orchestrators/export_agent_data.py` |
 | Full GitHub repository inventory | `data/github-repositories.json`<br>`repositories.html` | `GitHub REST API`<br>`data/software.json`<br>`code/orchestrators/build_github_inventory.py` | `python3 code/orchestrators/build_github_inventory.py` |
 | Domain pages | `domains.html`<br>`domain-*.html`<br>`pages/DOMAINS.md` | `data/works.json`<br>`data/software.json`<br>`code/orchestrators/build_domain_pages.py` | `python3 code/orchestrators/build_domain_pages.py` |
 | Work pages | `works/*.html`<br>`data/work-enrichment.json` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/SKILL.md` | `python3 code/orchestrators/build_work_pages.py` |
@@ -17,7 +18,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Public source snapshot | `reports/public_source_snapshot_2026-05-15.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
 | Public source inventory | `reports/public_source_inventory_2026-05-15.json` | `ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | External link triage | `reports/external_links_triage_2026-05-15.json`<br>`reports/external_links_triage_2026-05-15.md` | `reports/external_links_2026-05-15.json` | `python3 code/orchestrators/build_external_link_triage.py` |
-| Asset size audit | `reports/asset_size_2026-05-15.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
+| Asset size audit | `reports/asset_size_2026-05-16.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
 | Browser smoke checks | `reports/browser-smoke/2026-05-15/*.png`<br>`reports/browser-smoke/2026-05-15/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
 | Live site verification | `reports/live_site_verification_2026-05-15.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |

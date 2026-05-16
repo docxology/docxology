@@ -1,0 +1,30 @@
+{
+  "schema": "docxology-verification-log/v1",
+  "description": "Dated independent multi-source verification of load-bearing profile claims. Human-readable companion: pages/VERIFICATION_LOG.md.",
+  "passes": [
+    {
+      "date": "2026-05-16",
+      "method": "Independent multi-agent verification against sources not controlled by the subject (publisher DOI resolvers, IRS data via ProPublica, NSF/Grantome, Stanford PURL, ORCID, Wikipedia, independent NFT-history journalism, GitHub API).",
+      "results": [
+        {"claim": "google-scholar-metrics", "verdict": "verified-dated", "value": {"citations": 764, "h_index": 15, "i10_index": 17, "as_of": "2026-05-16"}, "independent_source": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en", "note": "direct dual-fetch; supersedes manually-frozen 812"},
+        {"claim": "stanford-phd", "verdict": "high", "independent_source": "https://purl.stanford.edu/pb813wm1484", "note": "year/department/advisor (Deborah Gordon) corroborated"},
+        {"claim": "nsf-postdoc", "verdict": "high", "independent_source": "https://grantome.com/grant/NSF/DBI-2010290", "note": "NSF PRFB FY2020 $138,000; budget period 2020-2022; 2023 = no-cost-extension affiliation"},
+        {"claim": "aii-501c3", "verdict": "high", "independent_source": "https://projects.propublica.org/nonprofits/organizations/882985125", "note": "EIN 88-2985125; 501(c)(3); IRS ruling March 2024"},
+        {"claim": "aii-officer-roles", "verdict": "high", "independent_source": "https://www.activeinference.institute/officers", "note": "Friedman President+Treasurer; Mikhailova VP+Secretary 2025-; Knight prior Secretary 2022-2024 / current Board"},
+        {"claim": "friston-coauthorship", "verdict": "high", "independent_source": "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2021.647732/full", "note": "Active Inferants, peer-reviewed, Friston co-author; PMID 34248515"},
+        {"claim": "publication-record-sample", "verdict": "high", "independent_source": "doi.org / Crossref / PubMed / Europe PMC", "note": "6/6 sampled DOIs resolve; first author on 4; Zenodo 36 exact-name / 82 ORCID match"},
+        {"claim": "curio-cards-artist", "verdict": "high", "independent_source": "https://docs.curio.cards/the-artists/daniel-friedman", "note": "biographical-fingerprint confirmation; Christie's sale Oct 1 2021 393 ETH/~$1.2M/7 artists independently corroborated"},
+        {"claim": "christies-lot-number-6337619", "verdict": "first-party-only", "independent_source": "https://www.christies.com/en/lot/lot-6337619", "note": "URL resolves HTTP 200, Christie's page matches exact set; lot NUMBER uncorroborated by any source independent of Christie's"},
+        {"claim": "identity-graph", "verdict": "high", "independent_source": "https://orcid.org/0000-0001-6232-9096", "note": "21 nodes -> one entity; professional-only exposure; no PII leak; secondary Scholar ID Y2bMf3MAAAAJ to disambiguate"},
+        {"claim": "github-footprint", "verdict": "high", "independent_source": "https://api.github.com/users/docxology", "note": "docxology 286 public repos; AII 50; ActiveInferenceInstitute is a User account not an Organization"},
+        {"claim": "cr-spring-2026-teaching", "verdict": "principal-confirmed", "independent_source": null, "note": "BIOL-1 Pelican Bay + BIOL-8; confirmed by principal as instructor of record; future-term WebAdvisor schedule may be unpublished; retained verbatim"}
+      ],
+      "softened": [
+        {"item": "107-indexed-publications", "action": "replaced with 'Scholar-indexed publications' (count unverifiable)"},
+        {"item": "sab-announced-january-2026", "action": "now '2026 cohort (33 members)'; announcement month not independently verified"},
+        {"item": "taschen-on-nfts-inclusion", "action": "evidence caveat in claims ledger; bibliography entry retained"},
+        {"item": "codomyrmex-counts", "action": "synced to repo authoritative 128 modules / 600 MCP tools; GitHub description 127/424 stale"}
+      ]
+    }
+  ]
+}

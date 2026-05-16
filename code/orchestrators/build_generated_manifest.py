@@ -59,9 +59,23 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/export_bibliography.py",
     },
     {
+        "name": "Scholar metrics sync",
+        "outputs": [
+            "README.md (badge + blockquote)",
+            "pages/BIBLIOGRAPHY.md (badge)",
+            "index.html (meta/og/stat/li)",
+            "llms.txt",
+            "pages/PROFILE.md (prose + metrics table)",
+            "pages/LINKS.md",
+            "publications.html (header metrics pill)",
+        ],
+        "sources": ["data/scholar-snapshot.json", "code/orchestrators/sync_scholar_metrics.py"],
+        "command": "python3 code/orchestrators/sync_scholar_metrics.py",
+    },
+    {
         "name": "Agent data exports",
         "outputs": ["data/software.json", "data/people.json", "data/organizations.json", "data/claims.json"],
-        "sources": ["pages/SOFTWARE.md", "code/orchestrators/export_agent_data.py"],
+        "sources": ["pages/SOFTWARE.md", "data/scholar-snapshot.json", "code/orchestrators/export_agent_data.py"],
         "command": "python3 code/orchestrators/export_agent_data.py",
     },
     {

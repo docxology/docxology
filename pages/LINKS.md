@@ -24,7 +24,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 812 citations, h-index 15, i10-index 17 (April 2026) |
+| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 764 citations, h-index 15, i10-index 17 (as of 2026-05-16) |
 | ORCID | [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096) | Persistent researcher identifier; 20 public work groups (ORCID API, May 2026) |
 | ResearchGate | [researchgate.net/profile/Daniel-Friedman-2](https://www.researchgate.net/profile/Daniel-Friedman-2) | 54+ publications, metrics, full-text access |
 | DBLP | [dblp.org/pid/346/2173](https://dblp.org/pid/346/2173.html) | Computer science bibliography |
@@ -80,7 +80,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | Main Website | [danielarifriedman.com](https://danielarifriedman.com/) | Personal homepage |
 | Coda Profile | [coda.io/@daniel-ari-friedman/website](https://coda.io/@daniel-ari-friedman/website) | Alternate profile organized around research, art, writing, and interactions |
 | Art Portfolio | [danielarifriedman.com/art.html](https://danielarifriedman.com/art.html) | Visual art gallery |
-| NFT Page | [danielarifriedman.com/nft.html](https://danielarifriedman.com/nft.html) | Curio Cards and blockchain art |
+| Art & NFT Page | [danielarifriedman.com/art.html](https://danielarifriedman.com/art.html) | Pen-and-ink drawings, Curio Cards, and blockchain art (formerly `/nft.html`, now consolidated into `/art.html`) |
 | omg.lol | [docxology.omg.lol](https://docxology.omg.lol) | Link aggregator |
 
 ---

@@ -17,6 +17,40 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
+SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
+
+
+def _scholar_claim() -> dict:
+    """Build the Google Scholar claim from the dated snapshot (single source
+    of truth). Replaces a hardcoded, manually-frozen 812 figure: the snapshot
+    carries the as-of date and fetch method, so the claim is provenance-stamped
+    rather than frozen behind a no-overwrite caveat."""
+    s = json.loads(SCHOLAR_SNAPSHOT.read_text(encoding="utf-8"))
+    return {
+        "id": "google-scholar-citations",
+        "claim": (
+            f"Google Scholar metrics are recorded as a dated snapshot: "
+            f"{s['citations']} citations, h-index {s['h_index']}, "
+            f"i10-index {s['i10_index']} (as of {s['as_of']})."
+        ),
+        "status": "dated-snapshot",
+        "sources": [
+            s["profile_url"],
+            "data/scholar-snapshot.json",
+            "pages/VERIFICATION_LOG.md",
+        ],
+        "checked_at": s["as_of"],
+        "confidence": "high",
+        "verification_method": s["method"],
+        "maintenance_owner": "ARCHIVIST",
+        "caveat": (
+            "Single source of truth: data/scholar-snapshot.json. Update only "
+            "from a direct (non-cached) Scholar fetch, recording the new value, "
+            "as_of date, and method there; regenerate surfaces via "
+            "code/orchestrators/sync_scholar_metrics.py. Never publish a "
+            "citation number above the most recent direct-fetch value."
+        ),
+    }
 
 try:
     from report_paths import generated_timestamp, latest_report, rel
@@ -113,6 +147,11 @@ ORGANIZATIONS = [
         "public_landing_page": "https://activeinference.org/",
         "wikidata": "https://www.wikidata.org/wiki/Q139600792",
         "github": "https://github.com/ActiveInferenceInstitute",
+        "github_account_type": "user",
+        "github_note": "The ActiveInferenceInstitute GitHub account is a User account, not an Organization; requests to /orgs/ActiveInferenceInstitute return 404. Use /users/ActiveInferenceInstitute.",
+        "ein": "88-2985125",
+        "irs_status": "501(c)(3) public charity; IRS ruling March 2024",
+        "irs_record": "https://projects.propublica.org/nonprofits/organizations/882985125",
         "role": "Research and education nonprofit focused on Active Inference and the Free Energy Principle",
     },
     {
@@ -169,59 +208,47 @@ CLAIMS = [
     },
     {
         "id": "aii-github-public-repos",
-        "claim": "The Active Inference Institute GitHub organization has 50 public repositories.",
+        "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
         "status": "public-api",
         "sources": [
             "https://api.github.com/users/ActiveInferenceInstitute",
             "reports/public_source_snapshot_2026-05-15.json"
         ],
-        "checked_at": "2026-05-15",
+        "checked_at": "2026-05-16",
         "confidence": "high",
-        "verification_method": "GitHub REST API organization profile response.",
+        "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
         "maintenance_owner": "INTEGRATOR",
-        "caveat": "Local software catalog tracks 32 AII repositories with docxology contributions.",
+        "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions.",
     },
     {
         "id": "orcid-canonical-identifier",
-        "claim": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier.",
+        "claim": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. The canonical Google Scholar profile is DXjPFtYAAAAJ; a secondary Scholar profile (Y2bMf3MAAAAJ) is linked from ORCID and should be consolidated/disambiguated.",
         "status": "public-identifier",
         "sources": ["https://orcid.org/0000-0001-6232-9096", "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"],
-        "checked_at": "2026-05-15",
+        "checked_at": "2026-05-16",
         "confidence": "high",
-        "verification_method": "ORCID profile and public works endpoint.",
+        "verification_method": "ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics.",
         "maintenance_owner": "ARCHIVIST",
-        "caveat": "ORCID public work groups may lag new deposits and may group versions differently.",
+        "caveat": "Use DXjPFtYAAAAJ as the single canonical Scholar profile for metrics. ORCID public work groups may lag new deposits and may group versions differently.",
     },
     {
         "id": "curio-cards-early-ethereum-art",
-        "claim": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017.",
+        "claim": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017; a complete Curio Cards set later sold at Christie's 'Post-War to Present' (New York, Oct 1, 2021) for 393 ETH (~$1.2M), seven artists.",
         "status": "public-profile",
         "sources": [
             "https://curio.cards/artist/danielfriedman/",
+            "https://docs.curio.cards/the-artists/daniel-friedman",
+            "https://en.wikipedia.org/wiki/Curio_Cards",
             "https://www.christies.com/en/lot/lot-6337619",
             "papers/2024_CurioCards/README.md"
         ],
-        "checked_at": "2026-05-15",
-        "confidence": "medium",
-        "verification_method": "Curio Cards artist profile, Christie's lot page, and local paper notes.",
+        "checked_at": "2026-05-16",
+        "confidence": "high",
+        "verification_method": "Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's.",
         "maintenance_owner": "RESEARCHER",
-        "caveat": "Use conservative phrasing; broader first/earliest claims vary by source and definition.",
+        "caveat": "Present the sale facts as independently verified; present the specific Christie's lot number as a first-party (Christie's) reference only, not independently corroborated. Avoid unqualified 'first/earliest NFT' superlatives.",
     },
-    {
-        "id": "google-scholar-citations",
-        "claim": "Google Scholar citation count is manually synced as 812 citations with h-index 15.",
-        "status": "manual-public-profile",
-        "sources": [
-            "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
-            "README.md",
-            "pages/BIBLIOGRAPHY.md"
-        ],
-        "checked_at": "2026-05-15",
-        "confidence": "medium",
-        "verification_method": "Manual Google Scholar profile sync; public cache and access path can vary.",
-        "maintenance_owner": "ARCHIVIST",
-        "caveat": "Do not overwrite automatically from cached or anonymous Scholar views.",
-    },
+    _scholar_claim(),
     {
         "id": "stanford-phd",
         "claim": "Daniel Ari Friedman earned a PhD at Stanford University with dissertation record pb813wm1484.",
@@ -239,29 +266,34 @@ CLAIMS = [
     },
     {
         "id": "nsf-postdoc-affiliation",
-        "claim": "Daniel Ari Friedman was an NSF Postdoctoral Fellow at UC Davis from 2020 to 2023.",
-        "status": "curated-profile",
-        "sources": ["pages/PROFILE.md", "README.md"],
-        "checked_at": "2026-05-15",
-        "confidence": "medium",
-        "verification_method": "Curated profile and homepage copy.",
+        "claim": "Daniel Ari Friedman held an NSF Postdoctoral Research Fellowship in Biology (award DBI-2010290) co-trained at UC Davis; NSF budget period 2020-2022 with a no-cost extension to 2023.",
+        "status": "public-grant-record",
+        "sources": [
+            "https://grantome.com/grant/NSF/DBI-2010290",
+            "pages/PROFILE.md",
+            "README.md",
+        ],
+        "checked_at": "2026-05-16",
+        "confidence": "high",
+        "verification_method": "NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record.",
         "maintenance_owner": "RESEARCHER",
-        "caveat": "Add a grant or institutional source if a public authoritative record is located.",
+        "caveat": "Cite the NSF award ID (DBI-2010290) as the authoritative public record. The funding record shows 2020-2022; present 2023 as a no-cost-extension affiliation, not a funded period.",
     },
     {
         "id": "aii-officer-roles",
-        "claim": "Active Inference Institute officers list Daniel Friedman as President and Treasurer.",
+        "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
         "status": "public-profile",
         "sources": [
             "https://www.activeinference.institute/officers",
+            "https://projects.propublica.org/nonprofits/organizations/882985125",
             "pages/DISCOVERY.md",
             "pages/PROFILE.md"
         ],
-        "checked_at": "2026-05-15",
+        "checked_at": "2026-05-16",
         "confidence": "high",
-        "verification_method": "AII officers page and local discovery map.",
+        "verification_method": "AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024).",
         "maintenance_owner": "INTEGRATOR",
-        "caveat": "Officer roles are time-sensitive and should be rechecked before formal bios.",
+        "caveat": "Officer roles are time-sensitive. Do not conflate Mikhailova (current VP+Secretary) with Knight (former Secretary 2022-2024, current Board member).",
     },
     {
         "id": "aii-board-count",
@@ -280,18 +312,18 @@ CLAIMS = [
     },
     {
         "id": "aii-scientific-advisory-board-count",
-        "claim": "The Active Inference Institute announced a 33-member Scientific Advisory Board cohort in 2026.",
+        "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
         "status": "public-profile",
         "sources": [
             "https://www.activeinference.institute/scientific-advisory-board",
             "pages/LINKS.md",
             "pages/DISCOVERY.md"
         ],
-        "checked_at": "2026-05-15",
+        "checked_at": "2026-05-16",
         "confidence": "medium",
-        "verification_method": "AII SAB page and local discovery notes.",
+        "verification_method": "AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified.",
         "maintenance_owner": "INTEGRATOR",
-        "caveat": "Use cautious wording unless the source page explicitly states the cohort count.",
+        "caveat": "State the cohort as 'listed for 2026' (33 members). Do not assert a specific announcement month unless the source page states one.",
     },
     {
         "id": "aii-textbook-cohorts",

@@ -1,0 +1,18 @@
+{
+  "metric": "google_scholar",
+  "profile_id": "DXjPFtYAAAAJ",
+  "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
+  "secondary_profile_id": "Y2bMf3MAAAAJ",
+  "secondary_profile_note": "A second Google Scholar profile ID (Y2bMf3MAAAAJ) is linked from the ORCID record. DXjPFtYAAAAJ is the canonical/primary profile used for all public metrics; Y2bMf3MAAAAJ is secondary and should be consolidated or disambiguated to avoid citation-graph fragmentation.",
+  "citations": 764,
+  "h_index": 15,
+  "i10_index": 17,
+  "as_of": "2026-05-16",
+  "method": "Independent dual direct-fetch verification: two separate non-cached retrievals of the canonical profile on 2026-05-16 both returned 764 citations, h-index 15, i10-index 17.",
+  "policy": "This file is the single source of truth for Google Scholar metrics. Update ONLY from a direct (non-cached, non-anonymous-stale) Scholar fetch. On update, record the new value, a new as_of date, and the method here, and append the prior value to history. Public anonymous/cached Scholar views may differ; never publish a citation number above the most recent direct-fetch value recorded here. All hand-maintained surfaces are regenerated from this file via code/orchestrators/sync_scholar_metrics.py, and the agent claims ledger derives from it via code/orchestrators/export_agent_data.py.",
+  "history": [
+    {"as_of": "2026-04", "citations": 812, "h_index": 15, "note": "manual sync (SUPERSEDED — exceeded the live primary source; corrected 2026-05-16)"},
+    {"as_of": "2026-05-12", "citations": 758, "h_index": 15, "note": "maintenance-log audit fetch (AGENTS.md 2026-05-12 row)"},
+    {"as_of": "2026-05-16", "citations": 764, "h_index": 15, "i10_index": 17, "note": "independent dual direct-fetch — CURRENT source of truth"}
+  ]
+}

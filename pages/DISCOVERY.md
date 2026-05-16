@@ -25,7 +25,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 |--------|------|-----|
 | Wikidata | [Q138781444](https://www.wikidata.org/wiki/Q138781444) | Canonical entity anchor for knowledge graph reconciliation |
 | ORCID | [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096) | Persistent researcher identifier; public record currently groups 20 works |
-| Google Scholar | [DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | Citation profile; local site keeps April 2026 manual citation sync |
+| Google Scholar | [DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | **Canonical** citation profile. Metrics recorded as a dated snapshot in [`data/scholar-snapshot.json`](../data/scholar-snapshot.json) (764 citations, h-index 15, i10-index 17, as of 2026-05-16; direct dual-fetch). A secondary Scholar profile (`Y2bMf3MAAAAJ`) is linked from ORCID and should be consolidated/disambiguated — do not mix metrics across the two. |
 | GitHub | [@docxology](https://github.com/docxology) | Primary software profile; GitHub API returned 286 public repositories on 2026-05-15 |
 | Main Site | [danielarifriedman.com](https://danielarifriedman.com/) | Canonical public homepage and SEO target |
 
@@ -54,7 +54,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Source | Link | Notes |
 |--------|------|-------|
 | GitHub API — docxology | [api.github.com/users/docxology](https://api.github.com/users/docxology) | Public repo count, profile timestamps, and profile metadata |
-| GitHub API — AII | [api.github.com/users/ActiveInferenceInstitute](https://api.github.com/users/ActiveInferenceInstitute) | Returned 50 public repositories on 2026-05-15; local catalog tracks 32 AII repositories with docxology contributions |
+| GitHub API — AII | [api.github.com/users/ActiveInferenceInstitute](https://api.github.com/users/ActiveInferenceInstitute) | Returned 50 public repositories on 2026-05-15; local catalog tracks 32 AII repositories with docxology contributions. **Note:** the `ActiveInferenceInstitute` account is a GitHub **User**, not an Organization — use `/users/`; `/orgs/ActiveInferenceInstitute` returns 404. |
 | AII public landing page | [activeinference.org](https://activeinference.org/) | Current public landing page; governance/source pages remain on activeinference.institute |
 | GitHub Search | [docxology repositories](https://github.com/docxology?tab=repositories) | Human-browsable repository list including forks and profile repos |
 | AII GitHub | [ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | Institute software and educational repositories |

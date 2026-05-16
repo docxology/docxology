@@ -14,7 +14,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 *Available for consulting, tutoring, and research collaboration*
 
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.org/)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-812_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
@@ -36,7 +36,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 
 I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. I am available for **AI research consulting**, **tutoring**, and **collaboration** on projects involving Active Inference, machine learning, and computational science. [Full biography →](pages/PROFILE.md)
 
-- 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](pages/COLLABORATORS.md#deborah-gordon--stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Fellow at UC Davis (2020–2023)
+- 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](pages/COLLABORATORS.md#deborah-gordon--stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Research Fellow (PRFB [award DBI-2010290](https://grantome.com/grant/NSF/DBI-2010290)) at UC Davis, 2020–2023 (NSF budget period 2020–2022, extended to 2023)
 - 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.org/)** (501(c)(3) non-profit; governance pages at [activeinference.institute](https://www.activeinference.institute/)); co-author with [Karl Friston](pages/COLLABORATORS.md#karl-friston--ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
 - 🛡️ **Cognitive Security Researcher** — 3 books + 17 papers on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
 - 🎨 **Early NFT Artist** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (recognized in NFT archaeology as early Ethereum art NFTs, minted May 9, 2017; [Christie's auction Oct 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://danielarifriedman.com/art.html) · [Local Gallery](art/README.md)
@@ -54,7 +54,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **115 works** in the unified bibliography · **286** public GitHub repositories · **81** catalogued software repos (49 owned + 32 AII) · **812** Google Scholar citations (h-index: 15) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **115 works** in the unified bibliography · **286** public GitHub repositories · **81** catalogued software repos (49 owned + 32 AII) · **764** Google Scholar citations (h-index: 15, as of 2026-05-16) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
@@ -75,6 +75,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
 | 🧭 [**pages/DISCOVERY.md**](pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |
 | 🧾 [**cite-verify.html**](cite-verify.html) / [**evidence.html**](evidence.html) | **Citation and evidence layer** — preferred citation, public identifiers, source-of-truth rules, and claim ledger ([Markdown](pages/CITE_VERIFY.md)) |
+| ✅ [**pages/VERIFICATION_LOG.md**](pages/VERIFICATION_LOG.md) | **Independent verification log** — dated primary-source corroboration of load-bearing claims (Scholar metrics, EIN, NSF award, DOIs, identity graph) against sources not controlled by the subject ([JSON](data/verification-log.json)) |
 | 👤 [**pages/PROFILE.md**](pages/PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🤝 [**pages/COLLABORATORS.md**](pages/COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications and institutional map |
 | 🎥 [**pages/MEDIA.md**](pages/MEDIA.md) | **Talks, podcasts & press** — conference presentations, podcast appearances, video series, courses, interviews, and press coverage |
@@ -217,7 +218,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Repository | Description |
 |-----------|-------------|
-| [codomyrmex](https://github.com/docxology/codomyrmex) | 🐜 AI-native modular coding workspace — 127 modules, 424 MCP tools |
+| [codomyrmex](https://github.com/docxology/codomyrmex) | 🐜 AI-native modular coding workspace — 128 modules, 600 MCP tools |
 | [template](https://github.com/docxology/template) | Multi-project research template with 10-stage build pipeline |
 | [steganographer](https://github.com/docxology/steganographer) | High-performance Rust cryptographic watermarking |
 | [QuadCraft](https://github.com/docxology/QuadCraft) | MineCraft with Tetrahedra (Quadray coordinates) |
