@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T18:27:33Z",
+  "generated_at": "2026-05-19T18:42:42Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -9,7 +9,7 @@
     "data/organizations.json",
     "data/claims.json"
   ],
-  "count": 586,
+  "count": 589,
   "items": [
     {
       "id": "page:home",
@@ -236,7 +236,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-05-16.json",
+      "url": "/reports/accessibility_static_2026-05-19.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -285,7 +285,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-16.json",
+      "url": "/reports/asset_size_2026-05-19.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -2979,6 +2979,30 @@
       "content": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision Zenodo 10.5281/zenodo.20144984 Friedman2026ArchitectureFalseGodsWilliam115 Art & Synergetics Paper This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified: \"closure of the perceiving system around its own top-down expectations\" — which Blake termed \"Newton's Sleep,\" Jiang calls \"consciousness capture,\" and Active Inference designates as \"pathological prior dominance.\" The work maps Jiang's concepts — persuasion machinery, data sanitization, edge-case suppression, and engagement directives — onto Blake's cosmological schema and Active Inference's generative models. William Blake Active Inference Artificial Intelligence Cognitive Science Free Energy Principle AI Architecture Consciousness Capture Generative Models Single Vision Newton's Sleep The essay identifies a shared concern with cognitive closure across Blake, Jiang, and Active Inference. Jiang's critiques of AI persuasion and data sanitization are mapped onto generative-model dynamics. Blake's \"Single Vision\" is used as a historical language for overly rigid top-down expectation. The piece functions as a bridge text rather than a formal computational model. Cross-framework conceptual mapping Art-philosophy synthesis AI critique through predictive-processing vocabulary Terminology alignment across Blake studies, education commentary, and Active Inference"
     },
     {
+      "id": "work:Friedman2026CrescentCityLivingWaves116",
+      "type": "work",
+      "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "url": "/works/Friedman2026CrescentCityLivingWaves116.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20286171",
+      "summary": "This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the northernmost developed strip of the California coast — read as an emergent nested system : Tolowa Dee-ni",
+      "year": 2026,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "Crescent City",
+        "Del Norte County",
+        "Cascadia subduction zone",
+        "Tsunami warning policy",
+        "Tolowa Dee-ni'",
+        "Redwood ecology",
+        "Local history",
+        "Coastal hazard"
+      ],
+      "content": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast Zenodo 10.5281/zenodo.20286171 Friedman2026CrescentCityLivingWaves116 Cognitive Security Paper This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the northernmost developed strip of the California coast — read as an emergent nested system : Tolowa Dee-ni' villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial timber and commercial fishing; federal termination and the 1983 federal-recognition restoration under Tillie Hardwick v. United States ; Redwood National and State Parks and conservation governance beside a recovering working waterfront; and contemporary Indigenous ocean stewardship including the 2023 Yurok–Tolowa Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked southern Cascadia margin. The study frames the often-cited ~37% fifty-year probability of an M ≥ 8.0 southern-segment rupture as paleoseismic model output from Crescent City Del Norte County Cascadia subduction zone Tsunami warning policy Tolowa Dee-ni' Redwood ecology Local history Coastal hazard Indigenous ocean stewardship Social-ecological systems Panarchy & resilience Coupled human–natural systems No prior single work synthesizes Crescent City's full history; existing accounts are fragmentary or era-bound. The central interpretive claim is one recurring loop: hazard → rebuilding → governance → memory → adaptation . The town is a compact case study in nested geological, ecological, economic, and political risk that resilience/panarchy theory explains better than environmental or social history alone. The 1964 Alaska-earthquake tsunami (deadliest on the contiguous-U.S. Pacific coast) reshaped U.S. Pacific-wide tsunami-warning policy far beyond the local waterfront. Synthetic scholarly history across multiple primary-source domains Social-ecological systems (Ostrom) + panarchy/resilience (Holling, Gunderson) framing Coupled human–natural systems analysis of place, chronology, actors, and governing rules Paleoseismic-model interpretation distinguished from deterministic forecasting Rapid AI-augmented synthesis with human oversight"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -4188,9 +4212,10 @@
         "repository",
         "",
         "ActiveInferenceInstitute",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "ActiveInferenceInstitute/Active_Inference_Ontology   ActiveInferenceInstitute active active-inference inference ontology curated"
+      "content": "ActiveInferenceInstitute/Active_Inference_Ontology   ActiveInferenceInstitute active active-inference inference ontology curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveBlockference",
@@ -4270,10 +4295,9 @@
         "repository",
         "HTML",
         "ActiveInferenceInstitute",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "ActiveInferenceInstitute/ActiveInferenceJournal Content of the Active Inference Journal HTML ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ActiveInferenceJournal Content of the Active Inference Journal HTML ActiveInferenceInstitute  curated"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/AEOS",
@@ -5329,6 +5353,23 @@
       "content": "docxology/ant-pheromone  Python docxology  curated"
     },
     {
+      "id": "github-repo:docxology/ant_social_complexity",
+      "type": "github_repository",
+      "title": "docxology/ant_social_complexity",
+      "url": "https://github.com/docxology/ant_social_complexity",
+      "summary": "docxology repository",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Shell",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/ant_social_complexity  Shell docxology  fork recent"
+    },
+    {
       "id": "github-repo:docxology/ant_stack",
       "type": "github_repository",
       "title": "docxology/ant_stack",
@@ -5340,9 +5381,10 @@
         "repository",
         "Python",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/ant_stack  Python docxology  curated"
+      "content": "docxology/ant_stack  Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/ants",
@@ -5875,10 +5917,9 @@
         "repository",
         "Python",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/cogames  CoGames is a collection of multi-agent cooperative and competitive environments designed for reinforcement learning research. Python docxology  fork recent"
+      "content": "docxology/cogames  CoGames is a collection of multi-agent cooperative and competitive environments designed for reinforcement learning research. Python docxology  fork"
     },
     {
       "id": "github-repo:docxology/cognitive",
@@ -5995,6 +6036,22 @@
         "recent"
       ],
       "content": "docxology/crescent-city Complete pipeline for the Crescent City, CA municipal code. TypeScript docxology california civic-tech community crescent-city government municipal-code open-source curated recent"
+    },
+    {
+      "id": "github-repo:docxology/crescent_city",
+      "type": "github_repository",
+      "title": "docxology/crescent_city",
+      "url": "https://github.com/docxology/crescent_city",
+      "summary": "A comprehensive, reproducible scholarly history of Crescent City, California — Tolowa Dee-ni' habitation through the Cascadia-margin present. 46 chapters, 24 reproducible figures, Pandoc+XeLaTeX pipeline. DOI 10.5281/zenodo.20286171",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/crescent_city A comprehensive, reproducible scholarly history of Crescent City, California — Tolowa Dee-ni' habitation through the Cascadia-margin present. 46 chapters, 24 reproducible figures, Pandoc+XeLaTeX pipeline. DOI 10.5281/zenodo.20286171 Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/Crypto-OpSec-SelfGuard-RoadMap",
@@ -6179,7 +6236,7 @@
       "type": "github_repository",
       "title": "docxology/docxology",
       "url": "https://github.com/docxology/docxology",
-      "summary": "Daniel Ari Friedman, PhD public research and software index: 115 works, 108 paper folders, and 81 curated software repositories.",
+      "summary": "Daniel Ari Friedman, PhD public research and software index: updated with works, papers, art, media, and software repositories.",
       "domain": "docxology",
       "tags": [
         "github",
@@ -6188,7 +6245,7 @@
         "docxology",
         "recent"
       ],
-      "content": "docxology/docxology Daniel Ari Friedman, PhD public research and software index: 115 works, 108 paper folders, and 81 curated software repositories. HTML docxology active-inference ai-consulting ai-researcher ai-tutoring bayesian-modeling cognitive-security computational-biology entomology free-energy-principle machine-learning python research-portfolio rust stanford recent"
+      "content": "docxology/docxology Daniel Ari Friedman, PhD public research and software index: updated with works, papers, art, media, and software repositories. HTML docxology active-inference ai-consulting ai-researcher ai-tutoring bayesian-modeling cognitive-security computational-biology entomology free-energy-principle machine-learning python research-portfolio rust stanford recent"
     },
     {
       "id": "github-repo:docxology/dotscope",
@@ -7108,10 +7165,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/hhs-opendata Analysis of HHS data  Python docxology  curated recent"
+      "content": "docxology/hhs-opendata Analysis of HHS data  Python docxology  curated"
     },
     {
       "id": "github-repo:docxology/hongos",
@@ -9657,7 +9713,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 115 works.",
+      "title": "The curated bibliography contains 116 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -9665,12 +9721,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 115 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 116 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 108 per-paper documentation folders.",
+      "title": "The repository contains 109 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -9678,7 +9734,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 108 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 109 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",

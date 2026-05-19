@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T19:40:39Z",
+  "generated_at": "2026-05-19T16:48:07Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 115,
+  "count": 116,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2888,6 +2888,38 @@
         "Terminology alignment across Blake studies, education commentary, and Active Inference"
       ],
       "source": "papers/2026_BlakeJiang/README.md"
+    },
+    "Friedman2026CrescentCityLivingWaves116": {
+      "citation_key": "Friedman2026CrescentCityLivingWaves116",
+      "abstract": "This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the northernmost developed strip of the California coast — read as an emergent nested system : Tolowa Dee-ni' villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial timber and commercial fishing; federal termination and the 1983 federal-recognition restoration under Tillie Hardwick v. United States ; Redwood National and State Parks and conservation governance beside a recovering working waterfront; and contemporary Indigenous ocean stewardship including the 2023 Yurok–Tolowa Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked southern Cascadia margin. The study frames the often-cited ~37% fifty-year probability of an M ≥ 8.0 southern-segment rupture as paleoseismic model output from",
+      "keywords": [
+        "Crescent City",
+        "Del Norte County",
+        "Cascadia subduction zone",
+        "Tsunami warning policy",
+        "Tolowa Dee-ni'",
+        "Redwood ecology",
+        "Local history",
+        "Coastal hazard",
+        "Indigenous ocean stewardship",
+        "Social-ecological systems",
+        "Panarchy & resilience",
+        "Coupled human–natural systems"
+      ],
+      "findings": [
+        "No prior single work synthesizes Crescent City's full history; existing accounts are fragmentary or era-bound.",
+        "The central interpretive claim is one recurring loop: hazard → rebuilding → governance → memory → adaptation .",
+        "The town is a compact case study in nested geological, ecological, economic, and political risk that resilience/panarchy theory explains better than environmental or social history alone.",
+        "The 1964 Alaska-earthquake tsunami (deadliest on the contiguous-U.S. Pacific coast) reshaped U.S. Pacific-wide tsunami-warning policy far beyond the local waterfront."
+      ],
+      "methods": [
+        "Synthetic scholarly history across multiple primary-source domains",
+        "Social-ecological systems (Ostrom) + panarchy/resilience (Holling, Gunderson) framing",
+        "Coupled human–natural systems analysis of place, chronology, actors, and governing rules",
+        "Paleoseismic-model interpretation distinguished from deterministic forecasting",
+        "Rapid AI-augmented synthesis with human oversight"
+      ],
+      "source": "papers/2026_CrescentCity/README.md"
     }
   }
 }

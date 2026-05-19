@@ -1,0 +1,63 @@
+{
+  "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.20286171",
+  "doi_url": "https://doi.org/10.5281/zenodo.20286171",
+  "zenodo_record": "https://zenodo.org/records/20286171",
+  "record_id": "20286171",
+  "publication_date": "2026-05-19",
+  "resource_type": {
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "given_name": "Daniel Ari",
+      "family_name": "Friedman",
+      "orcid": "0000-0001-6232-9096",
+      "affiliations": [
+        "Active Inference Institute",
+        "COGSEC"
+      ]
+    }
+  ],
+  "description": "A synthetic scholarly history of Crescent City, California — seat of Del Norte County on the northernmost developed strip of the California coast — read as an emergent nested system: Tolowa Dee-ni' villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial timber and commercial fishing; federal termination and the 1983 federal-recognition restoration under Tillie Hardwick v. United States; Redwood National and State Parks beside a recovering working waterfront; and contemporary Indigenous ocean stewardship including the 2023 Yurok–Tolowa Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked southern Cascadia margin; the study frames the ~37% fifty-year probability of an M >= 8.0 southern-segment rupture as paleoseismic model output, not a deterministic forecast. The synthesis situates the town in recurring cycles of extraction, disaster, rebuilding, and institutional adaptation, organized through Space, Time, People, and Ideas, and grounded in coupled human-natural systems, Ostrom social-ecological systems, and Holling/Gunderson panarchy and resilience theory; the book's central interpretive claim is the recurring loop hazard becomes rebuilding, rebuilding becomes governance, governance becomes memory, memory becomes adaptation.",
+  "keywords": [
+    "Crescent City",
+    "Del Norte County",
+    "Cascadia subduction zone",
+    "Tsunami",
+    "Tolowa Dee-ni'",
+    "Redwood ecology",
+    "Local history",
+    "Coastal hazard",
+    "Indigenous ocean stewardship",
+    "Social-ecological systems",
+    "Panarchy and resilience",
+    "Coupled human-natural systems"
+  ],
+  "license": {
+    "id": "cc-by-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "copyright": "Copyleft DAF 2026",
+  "communities": [
+    "security"
+  ],
+  "methodology": "Rapid AI-augmented scholarly synthesis with human oversight",
+  "files": [
+    {
+      "name": "crescent_city_v1_DAF_05_19_2026.pdf",
+      "size_bytes": 12468950,
+      "type": "pdf"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/crescent_city"
+    }
+  ]
+}

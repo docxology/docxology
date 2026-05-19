@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (115 works), 49 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (116 works), 49 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -52,7 +52,7 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (115 works; DOI links and paper-folder deep-links)
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (116 works; DOI links and paper-folder deep-links)
 ├── pages/SOFTWARE.md        ← 49 owned repos + 32 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
@@ -95,7 +95,7 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 108 per-paper folders (`YYYY_Topic`)
+└── papers/            ← 109 per-paper folders (`YYYY_Topic`)
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json

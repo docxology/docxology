@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T19:40:37Z",
+  "generated_at": "2026-05-19T15:22:45Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 115,
+  "count": 116,
   "works": [
     {
       "num": 1,
@@ -1611,6 +1611,20 @@
       "url": "https://doi.org/10.5281/zenodo.20144984",
       "doi": "10.5281/zenodo.20144984",
       "docs_path": "papers/2026_BlakeJiang/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 116,
+      "citation_key": "Friedman2026CrescentCityLivingWaves116",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20286171",
+      "doi": "10.5281/zenodo.20286171",
+      "docs_path": "papers/2026_CrescentCity/",
       "has_paper_folder": true
     }
   ]

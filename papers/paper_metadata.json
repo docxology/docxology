@@ -1979,5 +1979,39 @@
       "Newton's Sleep",
       "Single Vision"
     ]
+  },
+  "2026_CrescentCity": {
+    "year": "2026",
+    "topic": "CrescentCity",
+    "name": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+    "description": "Synthetic scholarly history of Crescent City and Del Norte County read as a coupled human-natural system across Space, Time, People, and Minds — Cascadia hazard, redwood ecology, Tolowa Dee-ni' history, tsunami disaster and warning policy, and the recurring hazard-rebuilding-governance-memory-adaptation loop via Ostrom social-ecological systems and Holling/Gunderson panarchy and resilience theory.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "A synthetic scholarly history of Crescent City, California, seat of Del Norte County on the northernmost developed strip of the California coast, read as an emergent nested system: Tolowa Dee-ni' villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial timber and commercial fishing; federal termination and the 1983 federal-recognition restoration under Tillie Hardwick v. United States; Redwood National and State Parks beside a recovering working waterfront; and contemporary Indigenous ocean stewardship including the 2023 Yurok-Tolowa Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked southern Cascadia margin; the study frames the roughly 37 percent fifty-year probability of an M >= 8.0 southern-segment rupture as paleoseismic model output, not a deterministic forecast. The synthesis situates the town in recurring cycles of extraction, disaster, rebuilding, and institutional adaptation, organized through Space, Time, People, and Ideas, grounded in coupled human-natural systems, Ostrom social-ecological systems, and Holling/Gunderson panarchy and resilience theory; the book's central interpretive claim is the recurring loop: hazard becomes rebuilding, rebuilding becomes governance, governance becomes memory, memory becomes adaptation.",
+    "tags": [
+      "cognitive-security",
+      "social-ecological-systems",
+      "panarchy-resilience",
+      "local-history",
+      "cascadia-subduction-zone",
+      "tsunami",
+      "tolowa-dee-ni",
+      "del-norte-county",
+      "coastal-hazard",
+      "coupled-human-natural-systems"
+    ],
+    "keywords": [
+      "Crescent City",
+      "Del Norte County",
+      "Cascadia subduction zone",
+      "Tsunami",
+      "Tolowa Dee-ni'",
+      "Redwood ecology",
+      "Local history",
+      "Coastal hazard",
+      "Indigenous ocean stewardship",
+      "Social-ecological systems",
+      "Panarchy and resilience",
+      "Coupled human-natural systems"
+    ]
   }
 }

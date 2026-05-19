@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 108 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 109 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (108 entries as of 2026-05-15)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (109 entries as of 2026-05-19)
 
 ### 🔬 RESEARCHER
 
@@ -47,9 +47,9 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 108/108 folders (last verified 2026-05-15) |
-| AGENTS.md present | 108/108 |
-| SKILL.md present | 108/108 |
+| README.md present | 109/109 folders (last verified 2026-05-19) |
+| AGENTS.md present | 109/109 |
+| SKILL.md present | 109/109 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -63,14 +63,14 @@
 |--------|:-----:|-----------------|
 | 🐜 Entomology | 21 | `2026_EntoLinguistics`, `2025_AntStack`, `2021_ActiveInferants`, `2019_PhDDissertation` |
 | 🧠 Active Inference | 23 | `2026_FEPLean`, `2026_CognitiveCaseDiagrams`, `2026_FocusedAttentionMeditation`, `2026_ActInfMetaAnalysis`, `2025_CEREBRUM` |
-| 🛡️ Cognitive Security | 20 | `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
+| 🛡️ Cognitive Security | 21 | `2026_CrescentCity`, `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
 | 🎨 Art & Synergetics | 15 | `2026_BlakeJiang`, `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
 | 🧬 Genetics & Biomedical | 9 | `2015_HoneyBeeEvolution`, `2016_NuclearStructure` |
 | 💻 Computational | 7 | `2026_ReproducibleResearch`, `2025_DiscoveryEngine`, `2025_MDKV` |
 | 🌍 AII Ecosystem | 5 | `2025_AII_v3`, `2024_OntologySUMO` |
 | 🎥 Presentations & Media | 15 | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
 
-Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 115 total as of the table header).
+Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 116 total as of the table header).
 
 ---
 
@@ -91,3 +91,4 @@ Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIO
 | 2026-05-12 | MAINTAINER | Repo-wide doc audit; this AGENTS.md domain breakdown matches `pages/BIBLIOGRAPHY.md` ground truth (21/23/20/14/9/7/5/15 = 114); spot-checked `2026_FocusedAttentionMeditation` per-paper docs (README/AGENTS/SKILL present, no PDF as expected) | ✅ |
 | 2026-05-13 | ARCHIVIST | Added `2026_BlakeJiang` (DOI 10.5281/zenodo.20144984); Art & Synergetics 14→15; bibliography 114→115; paper folders and metadata 107→108 | ✅ |
 | 2026-05-15 | ARCHIVIST | Updated AII v2/v3 rows to version-specific Zenodo DOIs and ActInfMetaAnalysis to current v2 DOI/title; retained concept/v1 DOIs only as version-chain context | ✅ |
+| 2026-05-19 | ARCHIVIST | Added `2026_CrescentCity` (DOI 10.5281/zenodo.20286171); Cognitive Security domain 20→21; bibliography 115→116 (row 116); Papers 97→98; paper folders and metadata 108→109; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications.html resynced | ✅ |

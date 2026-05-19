@@ -8,14 +8,14 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-16",
+  "dateModified": "2026-05-19",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "115 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "116 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "distribution": {
@@ -211,11 +211,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-16.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-19.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-16.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-19.json",
         "encodingFormat": "application/json"
       }
     },

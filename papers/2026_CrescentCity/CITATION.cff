@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: generic
+title: "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast"
+version: "1.0.0"
+date-released: 2026-05-19
+doi: 10.5281/zenodo.20286171
+url: "https://doi.org/10.5281/zenodo.20286171"
+repository-code: "https://github.com/docxology/crescent_city"
+license: CC-BY-4.0
+abstract: >
+  A synthetic scholarly history of Crescent City, California — seat of Del Norte
+  County on the northernmost developed strip of the California coast — read as an
+  emergent nested system: Tolowa Dee-ni' villages on the Smith River estuary;
+  European contact and American settlement; genocide and dispossession in the
+  1850s; industrial timber and commercial fishing; federal termination and the
+  1983 federal-recognition restoration under Tillie Hardwick v. United States;
+  Redwood National and State Parks beside a recovering working waterfront; and
+  contemporary Indigenous ocean stewardship including the 2023 Yurok–Tolowa
+  Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked
+  southern Cascadia margin; the study frames the ~37% fifty-year probability of
+  an M >= 8.0 southern-segment rupture as paleoseismic model output, not a
+  deterministic forecast. The 1964 Alaska earthquake tsunami remains the
+  deadliest event on the contiguous-U.S. Pacific coast. The synthesis situates
+  the town in recurring cycles of extraction, disaster, rebuilding, and
+  institutional adaptation, organized through Space, Time, People, and Ideas.
+keywords:
+  - Crescent City
+  - Del Norte County
+  - Cascadia subduction zone
+  - Tsunami
+  - Tolowa Dee-ni'
+  - Redwood ecology
+  - Local history
+  - Coastal hazard
+  - Indigenous ocean stewardship
+  - Social-ecological systems
+  - Panarchy and resilience
+  - Coupled human-natural systems
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+    affiliation: "Active Inference Institute; COGSEC"
+    email: danielarifriedman@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20286171
+    description: "Zenodo DOI for version 1.0.0"
+  - type: url
+    value: "https://zenodo.org/records/20286171"
+    description: "Zenodo landing page"

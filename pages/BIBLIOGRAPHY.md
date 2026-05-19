@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**115 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**116 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**97** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**98** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **115** works in the table below **·** **108** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **116** works in the table below **·** **109** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -153,6 +153,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 113 | 2026 | 🧠 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | *Active Inference Journal* | [10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234) | [📁](../papers/2026_FEPLean/) |
 | 114 | 2020 | 🛡️ | Paper | The Facilitator's Catechism | *Zenodo* | [10.5281/zenodo.4203765](https://doi.org/10.5281/zenodo.4203765) | [📁](../papers/2020_FacilitatorsCatechism/) |
 | 115 | 2026 | 🎨 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984) | [📁](../papers/2026_BlakeJiang/) |
+| 116 | 2026 | 🛡️ | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | *Zenodo* | [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171) | [📁](../papers/2026_CrescentCity/) |
 
 ---
 
@@ -187,8 +188,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🛡️ Cognitive Security
 
-> 20 works (2020–2026)
+> 21 works (2020–2026)
 
+- **2026** — Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast · [📁](../papers/2026_CrescentCity/)
 - **2026** — Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) · [📁](../papers/2026_CognitiveIntegrity/)
 - **2020** — The Facilitator's Catechism · [📁](../papers/2020_FacilitatorsCatechism/)
 - **2024** — Bridging gaps in image meme research: A multidisciplinary paradigm · [📁](../papers/2024_ImageMemeResearch/)

@@ -2862,5 +2862,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20144984",
     "URL": "https://doi.org/10.5281/zenodo.20144984"
+  },
+  {
+    "id": "Friedman2026CrescentCityLivingWaves116",
+    "type": "article-journal",
+    "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 116; docs: papers/2026_CrescentCity/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20286171",
+    "URL": "https://doi.org/10.5281/zenodo.20286171"
   }
 ]
