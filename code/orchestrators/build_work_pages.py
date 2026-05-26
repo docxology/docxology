@@ -7,11 +7,15 @@ import argparse
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import render_nav  # noqa: E402
 
 try:
     from report_paths import generated_timestamp
@@ -237,19 +241,7 @@ def page_head(work: dict) -> str:
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
-        <div class="nav-links">
-            <a href="../index.html#about">About</a>
-            <a href="../publications.html">Publications</a>
-            <a href="../works/index.html" class="active">Works</a>
-            <a href="../domains.html">Domains</a>
-            <a href="../software.html">Software</a>
-            <a href="../search.html">Search</a>
-            <a href="../discovery.html">Discovery</a>
-        </div>
-    </nav>
+{render_nav(active="works", depth=1)}
 """
 
 
@@ -348,7 +340,7 @@ def render_index(works: list[dict]) -> str:
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation"><a href="../index.html" class="nav-logo">Daniel Ari Friedman</a><div class="nav-links"><a href="../publications.html">Publications</a><a href="../domains.html">Domains</a><a href="../search.html">Search</a><a href="../discovery.html">Discovery</a></div></nav>
+{render_nav(active="works", depth=1)}
     <header class="page-hero"><h1>Works Index</h1><p class="sub">{len(works)} generated landing pages for the unified bibliography.</p></header>
     <main id="main" class="main"><section class="section"><div class="work-list">
 {rows}

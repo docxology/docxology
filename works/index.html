@@ -16,7 +16,19 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation"><a href="../index.html" class="nav-logo">Daniel Ari Friedman</a><div class="nav-links"><a href="../publications.html">Publications</a><a href="../domains.html">Domains</a><a href="../search.html">Search</a><a href="../discovery.html">Discovery</a></div></nav>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../publications.html">Publications</a>
+            <a href="../works/" class="active">Works</a>
+            <a href="../domains.html">Domains</a>
+            <a href="../software.html">Software</a>
+            <a href="../search.html">Search</a>
+            <a href="../discovery.html">Discovery</a>
+        </div>
+    </nav>
     <header class="page-hero"><h1>Works Index</h1><p class="sub">116 generated landing pages for the unified bibliography.</p></header>
     <main id="main" class="main"><section class="section"><div class="work-list">
                 <article class="work-row">

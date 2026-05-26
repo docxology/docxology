@@ -41,7 +41,7 @@
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
 - Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
-- Validates documentation completeness across all paper folders (108 as of 2026-05-15)
+- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **109** folders as of 2026-05-19)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -95,13 +95,13 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 109 per-paper folders (`YYYY_Topic`)
+└── papers/            ← 110 per-paper folders (`YYYY_Topic`)
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
     ├── biblio_table.py       ← Shared iterator for 8-column BIBLIOGRAPHY.md rows
     ├── regenerate_docs.py
-    ├── sync_publications_html.py  ← Regenerates publications.html PUBS + JSON-LD mainEntity
+    ├── sync_publications_html.py  ← Regenerates publications.html head meta + data/publications-ld.json JSON-LD mainEntity
     └── YYYY_Topic/
         ├── README.md   ← Paper overview, abstract, keywords, citation
         ├── AGENTS.md   ← Paper-specific agent roles and extraction log
@@ -185,6 +185,7 @@ docxology/
 | 2026-05-13 | MAINTAINER | Added `updates.html`, `AGENT_START.md`, `humans.txt`, `.well-known/security.txt`, richer per-work JSON-LD, external-link triage, asset-size audit, browser smoke report, and live-site verification reporting | ✅ |
 | 2026-05-15 | MAINTAINER | Implemented completeness/accuracy upgrade: Linux-safe art links, tracked bytecode cleanup, v2/v3 DOI corrections, generated GitHub repository inventory, expanded evidence claims, public-source inventory report, freshness fact comparison, and stale live-site check enforcement | ✅ |
 | 2026-05-16 | MAINTAINER | Integrity-remediation pass (independent 12-source verification): introduced dated Scholar-metrics snapshot (`data/scholar-snapshot.json`) + `sync_scholar_metrics.py` generator, corrected citation figure 812→**764** (live dual-fetch, as of 2026-05-16) across all surfaces and the claims ledger, replaced the "do not overwrite" caveat with a provenance-envelope rule; added primary-source anchors (AII EIN 88-2985125 / ProPublica / IRS ruling March 2024; NSF award DBI-2010290); clarified officer roster (Mikhailova VP+Secretary 2025–; Knight prior Secretary / current Board); softened unverifiable specifics (Christie's lot first-party-only, SAB "2026 cohort", NSF 2020–2022 budget vs 2023 affiliation, "107 indexed pubs"); fixed dead `nft.html`→`art.html`; noted dual Scholar ID + AII-User-not-Org; synced codomyrmex 127/424→**128/600**; added `pages/VERIFICATION_LOG.md` + `data/verification-log.json` | ✅ |
+| 2026-05-26 | MAINTAINER | Thermo-nuclear + web stack pass: count drift guard (`code/src/count_consistency.py`), `publications.html` shell loads `data/works.json` via `js/publications.js`, CollectionPage JSON-LD externalized to `data/publications-ld.json`, `docs/SECURITY.md` + `docs/DESIGN_SYSTEM.md`, shared nav (`code/src/site_nav.py`) on work + domain pages | ✅ |
 
 ---
 
@@ -192,7 +193,7 @@ docxology/
 
 - Prefer apex site URLs `https://danielarifriedman.com/` for HTML canonicals, `og:url`, and sitemap `loc` entries so they match `CNAME` and reduce www/apex mismatch issues in Search Console.
 - Omit redirect-only stub pages from `sitemap.xml` when their canonical is the homepage; keep the stub files for inbound links but avoid listing them so crawl signals are not contradictory.
-- When maintaining `index.html` Person JSON-LD, put Wikidata `https://www.wikidata.org/wiki/Q138781444` first in the `sameAs` array (canonical entity anchor for the person).
+- Keep Wikidata anchored on `https://www.wikidata.org/wiki/Q138781444`: Person JSON-LD in `index.html` must list this URL first in `sameAs`, and body copy (`rel="me"`), `README.md` snippets, LINKS/WIKIPEDIA tables, and anywhere else must use **Q138781444** rather than merged duplicate **Q85887463**.
 - After Google Scholar metrics change, sync the citation count across README, `pages/BIBLIOGRAPHY.md`, `pages/LINKS.md`, `pages/PROFILE.md`, `pages/WIKIPEDIA.md`, and main HTML stats for consistency.
 - Homepage teaching blurbs: BIOL-1 General Biology — College of the Redwoods, Pelican Bay, Spring 2026; BIOL-8 — Human Biology, College of the Redwoods, Spring 2026.
 - AII Textbook Group site copy: 10 cohorts through 2026; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
@@ -202,38 +203,17 @@ docxology/
 ## Learned Workspace Facts
 
 - Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).
-- `publications.html` **PUBS** and JSON-LD **mainEntity** are generated from [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) by [`papers/sync_publications_html.py`](papers/sync_publications_html.py) (`--apply` after table edits); the interactive table also needs on-page counts in that HTML file.
-- The INTEGRATOR role in `papers/AGENTS.md` includes keeping `publications.html` / `PUBS` aligned when unified bibliography totals change.
-- `discovery.html` is the canonical website discovery page; `pages/DISCOVERY.md` is the agentic Markdown companion for canonical public identifiers, exact API endpoints, query recipes, and cautions about public index count mismatches.
-- `llms.txt` is the compact agent-facing source map. `CITATION.cff` and `codemeta.json` provide machine-readable citation and software metadata for repository discovery.
-- `bibliography.bib`, `bibliography.csl.json`, `bibliography.ris`, and `data/works.json` are generated from `pages/BIBLIOGRAPHY.md` by `code/orchestrators/export_bibliography.py`.
-- `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` are generated by `code/orchestrators/export_agent_data.py`.
-- **Google Scholar metrics have a single source of truth:** [`data/scholar-snapshot.json`](data/scholar-snapshot.json). Hand-maintained surfaces (README, BIBLIOGRAPHY, index.html, llms.txt, PROFILE, LINKS) are regenerated from it by [`code/orchestrators/sync_scholar_metrics.py`](code/orchestrators/sync_scholar_metrics.py) (idempotent; `--check` exits 1 on drift). `export_agent_data.py` reads the same snapshot for the claims ledger. To update metrics: do a direct (non-cached) Scholar fetch, edit only the snapshot (new value + `as_of` + `method`, append prior to `history`), then run `sync_scholar_metrics.py` and regenerate `data/claims.json` + the evidence page. Never publish a citation number above the most recent direct-fetch value. This replaces the prior "do not overwrite from cached/anonymous views" freeze, which structurally allowed only upward drift.
-- The `ActiveInferenceInstitute` GitHub account is a **User account, not an Organization**: `https://api.github.com/orgs/ActiveInferenceInstitute` returns 404; use `https://api.github.com/users/ActiveInferenceInstitute`. Recorded in `organizations.json` (`github_account_type: user`).
-- AII independent corporate anchor: **EIN 88-2985125**, 501(c)(3) public charity, IRS ruling March 2024 — verifiable via [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/882985125) (IRS data, independent of self-published pages). Stored in `organizations.json` and the `aii-officer-roles` claim.
-- NSF postdoc authoritative public record: **award DBI-2010290** ([Grantome](https://grantome.com/grant/NSF/DBI-2010290), NSF PRFB FY2020, $138,000). The NSF budget period is 2020–2022; 2023 is a no-cost-extension affiliation, not a funded period — phrase accordingly.
-- `pages/VERIFICATION_LOG.md` + `data/verification-log.json` record the 2026-05-16 independent multi-source verification pass (primary-source anchors for Scholar 764, EIN, NSF award, Stanford PURL, ORCID, Curio attribution, sampled DOIs). Regenerate-adjacent: human-readable log is hand-maintained; update the JSON companion alongside it.
-- A second Google Scholar profile ID (`Y2bMf3MAAAAJ`) is linked from ORCID alongside the canonical `DXjPFtYAAAAJ`. Use `DXjPFtYAAAAJ` for ALL public metrics; the secondary profile should be consolidated/disambiguated to avoid citation-graph fragmentation.
-- The principal-confirmed College of the Redwoods Spring-2026 teaching claim (BIOL-1 General Biology at Pelican Bay; BIOL-8 Human Biology) is **principal-confirmed instructor-of-record**; a future-term CR WebAdvisor schedule may not yet list it publicly. Do NOT soften or remove it on the basis of an unpublished schedule.
-- `domains.html`, `domain-*.html`, and `pages/DOMAINS.md` are generated by `code/orchestrators/build_domain_pages.py`.
-- `works/index.html` and `works/*.html` are generated by `code/orchestrators/build_work_pages.py`.
-- `evidence.html` and `pages/EVIDENCE.md` are generated by `code/orchestrators/build_evidence_page.py` from `data/claims.json`.
-- `search-index.json` is generated by `code/orchestrators/build_search_index.py`; `feed.xml` is generated by `code/orchestrators/generate_feed.py`; `sitemap.xml` is generated by `code/orchestrators/build_sitemap.py`.
-- `data/reconciliation.json` and `reports/reconciliation_2026-05-15.md` are generated by `code/orchestrators/build_reconciliation_report.py`.
-- `data/github-repositories.json` and `repositories.html` are generated by `code/orchestrators/build_github_inventory.py`.
-- `reports/public_source_inventory_2026-05-15.json` is generated by `code/orchestrators/refresh_public_source_inventory.py`.
-- `search.html` reads `search-index.json`; `opensearch.xml` advertises that search endpoint to browsers and search tools.
-- `catalog.html` and `data/catalog.json` are generated by `code/orchestrators/build_catalog.py` as the public DataCatalog layer.
-- `GENERATED.md` and `data/generated-manifest.json` are generated by `code/orchestrators/build_generated_manifest.py`; update them whenever generated artifacts or commands change.
-- `reports/external_links_2026-05-13.json` is generated by `code/orchestrators/check_external_links.py`; scoped warnings can be bot protection, rate limiting, or link failures and should be triaged before copy changes.
-- `reports/external_links_triage_2026-05-13.*` is generated by `code/orchestrators/build_external_link_triage.py`.
-- `reports/asset_size_2026-05-13.json` is generated by `code/orchestrators/audit_assets.py`.
-- `reports/browser-smoke/2026-05-13/` is generated by `code/orchestrators/browser_smoke.py`.
-- `reports/live_site_verification_2026-05-13.json` is generated by `code/orchestrators/verify_live_site.py`; live failures can simply mean GitHub Pages is still building or CDN caches are stale.
-- `reports/accessibility_static_2026-05-13.json` is generated by `code/orchestrators/accessibility_audit.py`; `reports/visual-qa/2026-05-13/` is generated by `code/orchestrators/visual_qa.py`.
-- `reports/public_source_snapshot_*.json` are generated by `code/orchestrators/refresh_public_sources.py`; they are freshness reports, not automatic claim changes.
-- Verified software-release anchors: GNN software DOI `10.5281/zenodo.19600217`; Journal-Utilities v0.1.0 DOI `10.5281/zenodo.18686966`.
-- Python tooling for the repo lives under `code/`; automated checks use `pytest` in `code/tests`, and repository validation uses `code/orchestrators/validate_repo.py`.
+- **Volatile totals** (works count, indexed paper-folder count, Type-column breakdowns): treat `pages/BIBLIOGRAPHY.md` (header/summary/table) plus `papers/README.md` / `papers/AGENTS.md` as canonical before repeating numbers in root `README.md`, `docs/AGENTS.md`, or Maintainer bullets in root `AGENTS.md`—those surfaces often drift unless cross-checked together.
+- Regenerate `publications.html` head meta and `data/publications-ld.json` (**mainEntity**) from `pages/BIBLIOGRAPHY.md` via `papers/sync_publications_html.py --apply` after table edits; catalog UI loads `data/works.json` via `js/publications.js`. Run `export_bibliography.py` when works.json must refresh. The **INTEGRATOR** role in `papers/AGENTS.md` keeps publications surfaces aligned when totals change.
+- `discovery.html` is the canonical website discovery HTML; pair with agent-facing `pages/DISCOVERY.md` and `llms.txt`. Machine-readable citations/software: `CITATION.cff` and `codemeta.json`.
+- `code/orchestrators/export_bibliography.py` emits `bibliography.bib`, `bibliography.csl.json`, `bibliography.ris`, and `data/works.json` from `pages/BIBLIOGRAPHY.md`. `code/orchestrators/export_agent_data.py` generates `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json`.
+- **Google Scholar** single source of truth: `data/scholar-snapshot.json`, propagated by `code/orchestrators/sync_scholar_metrics.py` (idempotent; `--check` exits 1 on drift). `export_agent_data.py` reads the snapshot for claims. Publish only after a **direct** (non-anonymous/non-cached UI) Scholar verify: update snapshot (`as_of`, `method`, append to `history`), run the sync orchestrator, regenerate `data/claims.json` and the evidence page; never publish a citation count above the latest direct-fetch value. Public metrics use profile `DXjPFtYAAAAJ`; ORCID also links `Y2bMf3MAAAAJ`—consolidate to avoid split graphs.
+- `ActiveInferenceInstitute` on GitHub is a **User** account (use `https://api.github.com/users/ActiveInferenceInstitute`, not `/orgs/...`); recorded in `organizations.json` as `github_account_type: user`.
+- Independent anchors: AII **EIN 88-2985125** (see [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/882985125)); NSF PRFB **DBI-2010290** (Grantome/NSF record; budgeted 2020–2022, describe 2023 as no-cost extension not a funded year). `pages/VERIFICATION_LOG.md` + `data/verification-log.json` record the 2026-05-16 multi-source pass and should stay paired when updated.
+- College of the Redwoods Spring-2026 teaching (BIOL-1 at Pelican Bay; BIOL-8 Human Biology) is **principal-confirmed instructor-of-record**; do not remove or soften because a public WebAdvisor schedule is not yet visible.
+- `GENERATED.md` and `data/generated-manifest.json` from `build_generated_manifest.py` map generated HTML/JSON/XML/reports—including domain/work/evidence pages, `search.html` + `search-index.json`, `feed.xml`, `sitemap.xml`, `catalog.html`, reconciliation, GitHub inventory, `opensearch.xml`, link checks, and QA/smoke/visual artifacts; refresh when pipelines change.
+- Repo-wide **reports** (`reports/external_links_*`, `reports/live_site_verification_*`, `reports/public_source_snapshot_*`) may fail or warn for CDN latency, bot protection, or freshness—triage before rewriting site copy based on checker output alone.
+- Python tooling under `code/`; run `uv run pytest` from `code/tests` and validate with `code/orchestrators/validate_repo.py`. Representative Zenodo anchors: GNN `10.5281/zenodo.19600217`, Journal-Utilities `10.5281/zenodo.18686966`.
 
 ## Imported Claude Cowork project instructions
 

@@ -7,6 +7,8 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | Path | Role |
 | --- | --- |
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: fetch tabs, normalize records, save JSON |
+| `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
+| `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
@@ -16,23 +18,14 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_catalog.py` | Generate `catalog.html` and `data/catalog.json` with Schema.org DataCatalog metadata |
 | `orchestrators/build_updates_page.py` | Generate `updates.html` from `CHANGELOG.md` |
 | `orchestrators/build_search_index.py` | Generate `search-index.json` for site and agent discovery |
-| `orchestrators/check_external_links.py` | Generate scoped outbound-link freshness reports for site-critical files |
-| `orchestrators/build_external_link_triage.py` | Generate categorized external-link warning summaries |
-| `orchestrators/audit_assets.py` | Generate public asset and export size reports |
-| `orchestrators/browser_smoke.py` | Run selector-based Playwright smoke screenshots for core pages |
-| `orchestrators/verify_live_site.py` | Generate live deployed-site verification reports |
-| `orchestrators/build_generated_manifest.py` | Generate `GENERATED.md` and `data/generated-manifest.json` |
-| `orchestrators/generate_feed.py` | Generate `feed.xml` from recent works and site updates |
-| `orchestrators/build_reconciliation_report.py` | Generate curated-vs-public source comparison outputs |
-| `orchestrators/accessibility_audit.py` | Generate a static accessibility/metadata report |
-| `orchestrators/build_sitemap.py` | Generate `sitemap.xml` from public pages, exports, reports, and work pages |
-| `orchestrators/visual_qa.py` | Capture Playwright screenshots for key desktop/mobile pages |
-| `orchestrators/refresh_public_sources.py` | Write timestamped public API freshness reports under `reports/` |
-| `orchestrators/generate_og_images.py` | Generate tailored Open Graph preview images |
-| `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, and local links |
+| `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, local links, and count consistency |
+| `orchestrators/sync_scholar_metrics.py` | Propagate `data/scholar-snapshot.json` to hand-maintained surfaces |
 | `data/youtube_personal.json` | Cached export (personal channel) |
 | `data/youtube_institute.json` | Cached export (institute channel) |
 | `tests/test_youtube_fetcher.py` | Unit tests for fetcher parsing and normalization |
+| `tests/test_count_consistency.py` | Unit tests for volatile-count drift detection |
+
+Other orchestrators (external links, sitemap, visual QA, GitHub inventory, etc.) are listed in [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data/generated-manifest.json).
 
 ## Public API (`youtube_fetcher`)
 
@@ -43,6 +36,16 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 - `fetch_channel(channel_url: str, channel_id: str) -> list[dict]` — all tabs, deduped, sorted by `upload_date`.
 - `save_json(videos: list[dict], channel_url: str, channel_id: str, output_path: Path) -> None` — write envelope with `meta` + `videos`.
 - `load_json(path: Path) -> dict | None` — read existing export.
+
+## Generated discovery layer
+
+Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency order:
+
+1. Bibliography edits — `papers/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
+2. Software or claims edits — `export_agent_data.py`, then evidence/catalog/search exports.
+3. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
+4. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
+5. Health gate — `validate_repo.py` (includes count-consistency check).
 
 ## Tests
 
@@ -55,6 +58,4 @@ python3 code/orchestrators/validate_repo.py
 
 ## Maintenance
 
-Requires `yt-dlp` on `PATH` for live fetches. Orchestrator defaults write under `code/data/`. Static site and profile copy (including teaching lines) live at the repo root and under `pages/`; keep them consistent with [README.md](../README.md) and [AGENTS.md](../AGENTS.md) when you change YouTube or course data that surface on the site.
-
-Generated public-site artifacts should be refreshed in dependency order: bibliography/software exports, domain/work/evidence/catalog/updates/search/feed/reconciliation outputs, generated manifest, external-link report and triage, asset-size report, sitemap, accessibility report, browser smoke, visual QA screenshots, live-site verification, then `validate_repo.py`.
+Requires `yt-dlp` on `PATH` for live fetches. Static site copy lives at the repo root and under `pages/`; keep counts aligned with `pages/BIBLIOGRAPHY.md` and `papers/README.md` per root [AGENTS.md](../AGENTS.md) learned facts.

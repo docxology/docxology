@@ -62,6 +62,8 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 > **Full catalog**: 116 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 49 owned repos · 32 AII contributions
 
+> **Counts cross-check:** numeric totals repeated in this file should match [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) (works table) and [`papers/README.md`](papers/README.md) (indexed paper folders) before publish.
+
 | Resource | What's Inside |
 |----------|---------------|
 | 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (116 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
@@ -70,7 +72,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
 | 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
 | 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **49 owned repos** + **32 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [full generated repository inventory](repositories.html) for public GitHub coverage |
-| 📁 [**papers/**](papers/) | **109 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
+| 📁 [**papers/**](papers/) | **110 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
 | 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
 | 🧭 [**pages/DISCOVERY.md**](pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |

@@ -10,8 +10,8 @@ git tag -a 2026-05-discovery-layer -m "2026-05 discovery layer"
 
 ## Included Surface
 
-- 115 curated bibliography works.
-- 108 per-work paper documentation folders.
+- 116 curated bibliography works.
+- 109 per-work paper documentation folders.
 - 116 generated work HTML files, including the index page.
 - Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational Methods.
 - Search UI, OpenSearch descriptor, RSS feed, DataCatalog, citation exports, and agent-facing JSON indexes.

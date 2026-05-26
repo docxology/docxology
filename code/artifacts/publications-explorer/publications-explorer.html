@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications Explorer — Artifact</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .artifact-shell{max-width:1100px;margin:0 auto;padding:6rem 1.5rem 3rem}
+        .artifact-grid{display:grid;gap:.75rem;margin-top:1rem}
+        .artifact-row{display:grid;grid-template-columns:3rem 4rem 1fr auto;gap:.75rem;align-items:baseline;padding:.75rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
+        @media(max-width:720px){.artifact-row{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <main class="artifact-shell">
+        <h1>Publications Explorer</h1>
+        <p class="sub">Artifact preview — data from <code>/data/works.json</code></p>
+        <input id="q" type="search" class="search-input" placeholder="Filter titles, venues, domains…" style="width:100%;margin-top:1rem;padding:.75rem;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;color:var(--text-primary)">
+        <div id="list" class="artifact-grid" aria-live="polite"></div>
+    </main>
+    <script src="/js/search-utils.js"></script>
+    <script>
+        let works = [];
+        function render(){
+            const q = document.getElementById('q').value.toLowerCase().trim();
+            const terms = q ? q.split(/\s+/).filter(Boolean) : [];
+            let rows = works;
+            if (terms.length){
+                rows = works.filter(w => {
+                    const hay = (w.title + ' ' + w.venue + ' ' + w.domain + ' ' + w.type + ' ' + w.year).toLowerCase();
+                    return terms.every(t => hay.includes(t));
+                });
+            }
+            document.getElementById('list').innerHTML = rows.slice(0, 120).map(w =>
+                `<article class="artifact-row"><span>${esc(w.num)}</span><span>${esc(w.year)}</span><div><strong>${esc(w.title)}</strong><div style="color:var(--text-muted);font-size:.85rem">${esc(w.venue)} · ${esc(w.type)}</div></div><a href="${esc(w.url || '#')}" rel="noopener">Source</a></article>`
+            ).join('') || '<p>No matches.</p>';
+        }
+        document.getElementById('q').addEventListener('input', render);
+        fetch('/data/works.json').then(r => r.json()).then(d => { works = d.works || []; render(); });
+    </script>
+</body>
+</html>

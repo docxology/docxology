@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """
-Rewrite publications.html PUBS (inline JS) and JSON-LD mainEntity from pages/BIBLIOGRAPHY.md.
+Rewrite publications.html head meta and data/publications-ld.json from pages/BIBLIOGRAPHY.md.
+
+Catalog table data loads at runtime from data/works.json (see js/publications.js).
+CollectionPage JSON-LD lives in data/publications-ld.json (referenced from publications.html).
 
 Usage:
     python3 sync_publications_html.py           # dry-run: validate counts only
-    python3 sync_publications_html.py --apply   # write publications.html
+    python3 sync_publications_html.py --apply   # write publications.html + publications-ld.json
 """
 
 from __future__ import annotations
@@ -18,13 +21,15 @@ from biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
+PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
 
-PUBS_BEGIN = "/* <PUBS_SYNC_BEGIN> */"
-PUBS_END = "/* <PUBS_SYNC_END> */"
+LD_SYNC_BEGIN = "<!-- <PUBLICATIONS_LD_SYNC_BEGIN> -->"
+LD_SYNC_END = "<!-- <PUBLICATIONS_LD_SYNC_END> -->"
+LD_EXTERNAL_SCRIPT = '<script type="application/ld+json" src="/data/publications-ld.json"></script>'
 
 
 def canonical_link_url(link_cell: str, venue: str) -> str:
-    """URL string for PUBS.doi / JSON-LD sameAs."""
+    """URL string for JSON-LD sameAs."""
     cell = (link_cell or "").strip()
     venue_u = venue.upper()
 
@@ -60,9 +65,7 @@ def canonical_link_url(link_cell: str, venue: str) -> str:
 
 def schema_type_for_row(typ: str) -> str:
     t = typ.strip()
-    if t == "Paper":
-        return "ScholarlyArticle"
-    if t == "Book Chapter":
+    if t in ("Paper", "Book Chapter"):
         return "ScholarlyArticle"
     if t == "Book":
         return "Book"
@@ -78,12 +81,7 @@ def schema_type_for_row(typ: str) -> str:
 
 
 def _author_block() -> list[dict]:
-    return [
-        {
-            "@type": "Person",
-            "name": "Daniel Ari Friedman",
-        }
-    ]
+    return [{"@type": "Person", "name": "Daniel Ari Friedman"}]
 
 
 def main_entity_object(row: BiblioRow, same_as: str) -> dict:
@@ -101,88 +99,116 @@ def main_entity_object(row: BiblioRow, same_as: str) -> dict:
     return obj
 
 
-def _link(row: BiblioRow) -> str:
-    return canonical_link_url(row.link_cell, row.venue)
+def collection_page_description(count: int) -> str:
+    return (
+        f"Complete bibliography: {count} works in Active Inference, entomology, "
+        "cognitive security, art & synergetics, and genetics."
+    )
 
 
-def _docs_url(row: BiblioRow) -> str:
-    if row.folder:
-        return f"https://github.com/docxology/docxology/tree/main/papers/{row.folder}"
-    return ""
+def build_collection_page(rows: list[BiblioRow]) -> dict:
+    count = len(rows)
+    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue)) for r in rows]
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Publications — Daniel Ari Friedman, PhD",
+        "description": collection_page_description(count),
+        "author": {
+            "@type": "Person",
+            "name": "Daniel Ari Friedman",
+            "url": "https://danielarifriedman.com/",
+        },
+        "mainEntity": me,
+    }
 
 
-def pub_js_object(row: BiblioRow, link: str) -> str:
-    year = int(row.year) if row.year.isdigit() else row.year
-    parts = [
-        f"num:{row.num}",
-        f"year:{year}",
-        f"domain:{json.dumps(row.domain, ensure_ascii=False)}",
-        f"type:{json.dumps(row.typ, ensure_ascii=False)}",
-        f"title:{json.dumps(row.title, ensure_ascii=False)}",
-        f"venue:{json.dumps(row.venue, ensure_ascii=False)}",
-        f"doi:{json.dumps(link, ensure_ascii=False)}",
-        f"docs:{json.dumps(_docs_url(row), ensure_ascii=False)}",
-        f"hasDoi:{str(link.startswith('https://doi.org/')).lower()}",
-        f"hasDocs:{str(bool(row.folder)).lower()}",
-    ]
-    return "{" + ",".join(parts) + "}"
-
-
-def format_pubs_block(rows: list[BiblioRow]) -> str:
-    """PUBS array plus sync markers; indentation matches publications.html <script> body."""
-    ind = "    "
-    lines = [ind + PUBS_BEGIN]
-    first = pub_js_object(rows[0], _link(rows[0]))
-    if len(rows) == 1:
-        lines.append(f"{ind}const PUBS = [ {first}")
-    else:
-        lines.append(f"{ind}const PUBS = [ {first},")
-    for r in rows[1:-1]:
-        lines.append(f"{ind}    {pub_js_object(r, _link(r))},")
-    if len(rows) > 1:
-        lines.append(f"{ind}    {pub_js_object(rows[-1], _link(rows[-1]))}")
-    lines.append(f"{ind}];")
-    lines.append(ind + PUBS_END)
-    return "\n".join(lines)
-
-
-def splice_pubs_block(html: str, pubs_block: str) -> str:
-    if PUBS_BEGIN in html and PUBS_END in html:
-        return re.sub(
-            re.escape(PUBS_BEGIN) + r"[\s\S]*?" + re.escape(PUBS_END),
-            pubs_block,
+def replace_head_meta(html: str, count: int) -> str:
+    """Patch title, meta description, and og:* counts from bibliography row count."""
+    title = f"Publications — Daniel Ari Friedman, PhD | {count} Works"
+    desc = (
+        f"{count} catalogued works by Daniel Ari Friedman across Active Inference, "
+        "ant colony cognition, cognitive security, art, and computational biology."
+    )
+    html = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html, count=1)
+    html = re.sub(
+        r'(<meta name="description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'(<meta property="og:description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html,
+        count=1,
+    )
+    hero_sub = re.search(
+        r'(<p class="sub">)\d+ works spanning',
+        html,
+    )
+    if hero_sub:
+        html = re.sub(
+            r'(<p class="sub">)\d+ works spanning',
+            rf"\g<1>{count} works spanning",
             html,
             count=1,
         )
-    m = re.search(r"(^\s*)const PUBS = \[[\s\S]*?\n\s*\];", html, re.MULTILINE)
-    if not m:
-        raise ValueError("Could not locate const PUBS = [...]; in publications.html")
-    return html[: m.start()] + pubs_block + html[m.end() :]
+    return html
 
 
-def first_ld_json_script(html: str) -> tuple[int, int, dict]:
+def external_ld_marker_block() -> str:
+    return f"    {LD_SYNC_BEGIN}\n    {LD_EXTERNAL_SCRIPT}\n    {LD_SYNC_END}"
+
+
+def remove_inline_collection_ld(html: str) -> str:
+    """Drop any inline CollectionPage JSON-LD block (keep BreadcrumbList and other scripts)."""
     start_tag = '<script type="application/ld+json">'
     end_tag = "</script>"
-    i0 = html.find(start_tag)
-    if i0 < 0:
-        raise ValueError("No application/ld+json script found")
-    j0 = i0 + len(start_tag)
-    i1 = html.find(end_tag, j0)
-    if i1 < 0:
-        raise ValueError("Unclosed ld+json script")
-    raw = html[j0:i1].strip()
-    data = json.loads(raw)
-    return j0, i1, data
+    while True:
+        i0 = html.find(start_tag)
+        if i0 < 0:
+            break
+        j0 = i0 + len(start_tag)
+        i1 = html.find(end_tag, j0)
+        if i1 < 0:
+            break
+        raw = html[j0:i1].strip()
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            break
+        if data.get("@type") != "CollectionPage":
+            break
+        html = html[:i0] + html[i1 + len(end_tag) :]
+    return html
 
 
-def replace_main_entity(html: str, rows: list[BiblioRow]) -> str:
-    j0, i1, data = first_ld_json_script(html)
-    if data.get("@type") != "CollectionPage":
-        raise ValueError("First JSON-LD block is not CollectionPage")
-    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue)) for r in rows]
-    data["mainEntity"] = me
-    new_json = json.dumps(data, indent=4, ensure_ascii=False)
-    return html[:j0] + "\n" + new_json + "\n    " + html[i1:]
+def replace_inline_collection_ld(html: str) -> str:
+    """Ensure publications.html references external JSON-LD instead of inline mainEntity."""
+    html = remove_inline_collection_ld(html)
+    marker = external_ld_marker_block()
+    if LD_SYNC_BEGIN in html and LD_SYNC_END in html:
+        return re.sub(
+            re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
+            marker.strip(),
+            html,
+            count=1,
+        )
+    if LD_EXTERNAL_SCRIPT in html:
+        return html
+    insert_at = html.find('<link rel="stylesheet" href="style.css">')
+    if insert_at < 0:
+        insert_at = html.find("</head>")
+    if insert_at < 0:
+        raise ValueError("Could not locate insertion point for external JSON-LD in publications.html")
+    return html[:insert_at] + marker + "\n    " + html[insert_at:]
 
 
 def load_rows() -> list[BiblioRow]:
@@ -200,7 +226,7 @@ def validate_rows(rows: list[BiblioRow]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--apply", action="store_true", help="Write publications.html")
+    parser.add_argument("--apply", action="store_true", help="Write publications.html and publications-ld.json")
     args = parser.parse_args()
 
     rows = load_rows()
@@ -209,21 +235,31 @@ def main() -> None:
     if not PUBLICATIONS_HTML.is_file():
         raise SystemExit(f"Missing {PUBLICATIONS_HTML}")
 
+    collection = build_collection_page(rows)
     html = PUBLICATIONS_HTML.read_text(encoding="utf-8")
-    pubs_block = format_pubs_block(rows)
-    html_out = replace_main_entity(html, rows)
-    html_out = splice_pubs_block(html_out, pubs_block)
+    html_out = replace_inline_collection_ld(html)
+    html_out = replace_head_meta(html_out, len(rows))
 
-    _, _, data_check = first_ld_json_script(html_out)
-    if len(data_check["mainEntity"]) != len(rows):
-        raise SystemExit("mainEntity length mismatch after splice")
+    if len(collection["mainEntity"]) != len(rows):
+        raise SystemExit("mainEntity length mismatch after build")
 
     if not args.apply:
-        print(f"OK dry-run: {len(rows)} rows, mainEntity would be {len(data_check['mainEntity'])} items")
+        print(
+            f"OK dry-run: {len(rows)} rows, "
+            f"publications-ld.json would have {len(collection['mainEntity'])} mainEntity items"
+        )
         return
 
+    PUBLICATIONS_LD_JSON.parent.mkdir(parents=True, exist_ok=True)
+    PUBLICATIONS_LD_JSON.write_text(
+        json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
     PUBLICATIONS_HTML.write_text(html_out, encoding="utf-8")
-    print(f"Wrote {PUBLICATIONS_HTML} ({len(rows)} PUBS + mainEntity)")
+    print(
+        f"Wrote {PUBLICATIONS_LD_JSON} and {PUBLICATIONS_HTML} "
+        f"({len(rows)} mainEntity + head meta)"
+    )
 
 
 if __name__ == "__main__":

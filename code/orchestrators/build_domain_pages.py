@@ -6,10 +6,13 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import render_nav_domain  # noqa: E402
 
 
 @dataclass(frozen=True)
@@ -123,7 +126,15 @@ def h(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def page_head(title: str, description: str, canonical: str, og_image: str = "og-image.jpg") -> str:
+def page_head(
+    title: str,
+    description: str,
+    canonical: str,
+    og_image: str = "og-image.jpg",
+    *,
+    nav_active: str = "domains",
+) -> str:
+    nav = render_nav_domain(active=nav_active)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -149,7 +160,7 @@ def page_head(title: str, description: str, canonical: str, og_image: str = "og-
     <meta property="og:image:height" content="630">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="theme-color" content="#0c0c0e">
     <style>
@@ -169,20 +180,7 @@ def page_head(title: str, description: str, canonical: str, og_image: str = "og-
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#research">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="domains.html" class="active">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="search.html">Search</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="media.html">Media</a>
-        </div>
-    </nav>
+{nav}
 """
 
 

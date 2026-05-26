@@ -20,7 +20,7 @@
         }
         *{margin:0;padding:0;box-sizing:border-box}
         html{scroll-behavior:smooth;scroll-padding-top:72px}
-        body{font-family:'Inter',system-ui,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.7;-webkit-font-smoothing:antialiased}
+        body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.7;-webkit-font-smoothing:antialiased}
         a{color:var(--gold);text-decoration:none;transition:color .2s}
         a:hover{color:var(--gold-bright)}
         /* Accessibility: focus-visible for keyboard navigation */

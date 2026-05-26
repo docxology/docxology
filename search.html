@@ -84,6 +84,7 @@
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="search-index.json">search-index.json</a> · <a href="opensearch.xml">OpenSearch</a></p>
     </footer>
+    <script src="js/search-utils.js"></script>
     <script>
         const state = { items: [], type: 'all', q: '' };
         const params = new URLSearchParams(location.search);
@@ -92,10 +93,6 @@
         const results = document.getElementById('results');
         input.value = params.get('q') || '';
         state.q = input.value;
-
-        function esc(value){
-            return String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-        }
 
         function score(item, terms){
             const title = item.title.toLowerCase();

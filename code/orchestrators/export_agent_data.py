@@ -175,10 +175,10 @@ ORGANIZATIONS = [
 CLAIMS = [
     {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 116 works.",
+        "claim": "The curated bibliography contains 117 works.",
         "status": "curated-local",
         "sources": ["pages/BIBLIOGRAPHY.md", "publications.html", "data/works.json"],
-        "checked_at": "2026-05-19",
+        "checked_at": "2026-05-26",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -186,10 +186,10 @@ CLAIMS = [
     },
     {
         "id": "paper-folder-count",
-        "claim": "The repository contains 109 per-paper documentation folders.",
+        "claim": "The repository contains 110 per-paper documentation folders.",
         "status": "curated-local",
         "sources": ["papers/", "papers/README.md", "papers/paper_metadata.json"],
-        "checked_at": "2026-05-19",
+        "checked_at": "2026-05-26",
         "confidence": "high",
         "verification_method": "Folder inventory and paper metadata count.",
         "maintenance_owner": "MAINTAINER",

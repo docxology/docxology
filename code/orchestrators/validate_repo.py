@@ -119,6 +119,15 @@ def validate_local_links() -> None:
         raise SystemExit("Missing local links:\n" + "\n".join(missing[:120]))
 
 
+def validate_count_consistency() -> None:
+    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+    from count_consistency import collect_count_drift
+
+    errors = collect_count_drift()
+    if errors:
+        raise SystemExit("Volatile count drift:\n" + "\n".join(f"  - {e}" for e in errors))
+
+
 def validate_sitemap_targets() -> None:
     text = (REPO_ROOT / "sitemap.xml").read_text(encoding="utf-8")
     locs = re.findall(r"<loc>https://danielarifriedman\.com/([^<]*)</loc>", text)
@@ -158,6 +167,7 @@ def main() -> None:
     validate_citation_cff()
     validate_xml_files()
     validate_json_ld()
+    validate_count_consistency()
     validate_local_links()
     validate_sitemap_targets()
     print("repo validation ok")

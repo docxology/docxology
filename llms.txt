@@ -79,8 +79,8 @@ This repository is the public research and software index for Daniel Ari Friedma
 
 ## Current Snapshot
 
-- 115 works in the curated bibliography.
-- 108 per-paper folders.
+- 116 works in the curated bibliography.
+- 109 per-paper folders.
 - 49 owned repositories catalogued.
 - 32 Active Inference Institute repositories catalogued with docxology contributions.
 - 286 public repositories on the primary GitHub profile at last API check.

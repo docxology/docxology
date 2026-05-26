@@ -28,7 +28,7 @@ This repository is the public research, software, citation, evidence, and websit
 - Curated local counts intentionally differ from public index counts when public sources include forks, duplicates, software archives, preprints, or name variants.
 - Public APIs are freshness checks, not automatic replacements for curated bibliography and software rows.
 - Treat Wikidata as an entity anchor, not sole evidence for lightly referenced claims.
-- Treat Google Scholar citation counts as manually synced metrics because cache and access path can vary.
+- Google Scholar citation counts use [`data/scholar-snapshot.json`](data/scholar-snapshot.json) as the single source of truth; propagate with [`code/orchestrators/sync_scholar_metrics.py`](code/orchestrators/sync_scholar_metrics.py) (`--check` exits 1 on drift). Update only after a direct (non-cached) Scholar verify—anonymous or cached UI views can disagree with the snapshot.
 - Do not edit generated outputs directly unless the generator itself is also updated.
 
 ## Validation Command

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T18:42:57Z",
+  "generated_at": "2026-05-26T16:29:50Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -177,7 +177,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-05-19.json"
+        "reports/asset_size_2026-05-26.json"
       ],
       "sources": [
         "root HTML pages",
