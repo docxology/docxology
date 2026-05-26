@@ -2013,5 +2013,39 @@
       "Panarchy and resilience",
       "Coupled human-natural systems"
     ]
+  },
+  "2026_BiologyTextbook": {
+    "year": "2026",
+    "topic": "BiologyTextbook",
+    "name": "Introduction to Biology: A Generative Approach",
+    "description": "Open biology textbook with forty-four chapters from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology; generative reproducible artifact with tested Python modules and programmatic figures.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales. Quantitative computations live in tested code modules by domain; figures are generated programmatically. Each chapter pairs with a paper-based laboratory activity and a question bank; model answers are visible in this instructor build. Maintained as a reproducible open-science artifact.",
+    "tags": [
+      "computational",
+      "open-textbook",
+      "biology",
+      "generative-approach",
+      "reproducible-research",
+      "college-of-the-redwoods",
+      "open-science",
+      "programmatic-figures",
+      "undergraduate-biology"
+    ],
+    "keywords": [
+      "Biology",
+      "Open textbook",
+      "Generative approach",
+      "Reproducible research",
+      "Undergraduate biology",
+      "College of the Redwoods",
+      "Computational biology",
+      "Programmatic figures",
+      "Laboratory activities",
+      "Open science"
+    ],
+    "doi": "10.5281/zenodo.20286478",
+    "venue": "Zenodo",
+    "domain": "💻"
   }
 }

@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 7
+- Works: 8
 - Selected repositories: 6
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -161,11 +161,11 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 **Selected works**
 
 - 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.19139090)
+- 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286478)
 - 2025 — [Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference](https://doi.org/10.5281/zenodo.17228945)
 - 2025 — [MDKV: A Multitrack Markdown Container for Structured, Portable Documents](https://doi.org/10.5281/zenodo.16790554)
 - 2025 — [Markdown Decision Process: A Framework for Probabilistic Document Analysis](https://doi.org/10.5281/zenodo.17244386)
 - 2025 — [ResNei: Solution Design Document](https://doi.org/10.5281/zenodo.15389682)
-- 2025 — [The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes](https://doi.org/10.48550/arXiv.2505.17500)
 
 **Selected repositories**
 

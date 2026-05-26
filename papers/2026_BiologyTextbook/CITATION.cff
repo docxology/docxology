@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: book
+title: "Introduction to Biology: A Generative Approach"
+version: "1.0.0"
+date-released: 2026-05-26
+doi: 10.5281/zenodo.20286478
+url: "https://doi.org/10.5281/zenodo.20286478"
+repository-code: "https://github.com/docxology/biology_textbook"
+license: CC-BY-4.0
+abstract: >
+  An open biology textbook with forty-four chapters, ranging from systems science
+  and chemical foundations through cells, metabolism, genetics, microbiology,
+  physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the
+  text presents biology as an evidence-grounded discipline in which mechanisms,
+  measurements, and simple models are developed together. Five recurring
+  themes—evolution, information, structure and function, systems and emergence,
+  and the cell—provide orientation across scales. Quantitative computations live
+  in tested code modules by domain; figures are generated programmatically. Each
+  chapter pairs with a paper-based laboratory activity and a question bank; model
+  answers are visible in this instructor build. Text is CC BY 4.0; accompanying
+  source code is Apache-2.0.
+keywords:
+  - Biology
+  - Open textbook
+  - Generative approach
+  - Reproducible research
+  - Undergraduate biology
+  - College of the Redwoods
+  - Computational biology
+  - Programmatic figures
+  - Laboratory activities
+  - Open science
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+    affiliation: "Active Inference Institute; College of the Redwoods; COGSEC"
+    email: danielarifriedman@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20286478
+    description: "Zenodo DOI for version 1.0.0"
+  - type: url
+    value: "https://zenodo.org/records/20286478"
+    description: "Zenodo landing page"

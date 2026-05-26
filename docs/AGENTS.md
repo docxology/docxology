@@ -8,8 +8,8 @@ See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index
 
 ## Bibliography vs paper folders
 
-- [pages/BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) is the **116-row** unified table (works); the **Docs** column links to a folder under [papers/](../papers/) only when one exists.
-- [papers/](../papers/) has **109** per-work folders (README / AGENTS / SKILL); rows without a folder (e.g. some YouTube series or Udemy courses) have no duplicate in-tree index row beyond BIBLIOGRAPHY.
+- [pages/BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) is the **117-row** unified table (works); the **Docs** column links to a folder under [papers/](../papers/) only when one exists.
+- [papers/](../papers/) has **110** per-work folders (README / AGENTS / SKILL); rows without a folder (e.g. some YouTube series or Udemy courses) have no duplicate in-tree index row beyond BIBLIOGRAPHY.
 - After table **adds or reorders**, run [`papers/sync_publications_html.py`](../papers/sync_publications_html.py) with `--apply` so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay in table order and length; run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for `data/works.json`.
 - [`papers/biblio_table.py`](../papers/biblio_table.py) is the shared eight-column parser used by `sync_publications_html` and [`papers/regenerate_docs.py`](../papers/regenerate_docs.py).
 

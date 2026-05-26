@@ -1,0 +1,66 @@
+{
+  "title": "Introduction to Biology: A Generative Approach",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.20286478",
+  "doi_url": "https://doi.org/10.5281/zenodo.20286478",
+  "zenodo_record": "https://zenodo.org/records/20286478",
+  "record_id": "20286478",
+  "publication_date": "2026-05-26",
+  "resource_type": {
+    "type": "book"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "given_name": "Daniel Ari",
+      "family_name": "Friedman",
+      "orcid": "0000-0001-6232-9096",
+      "affiliations": [
+        "Active Inference Institute",
+        "College of the Redwoods",
+        "COGSEC"
+      ]
+    }
+  ],
+  "description": "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales. Quantitative computations live in tested code modules by domain; figures are generated programmatically. Each chapter pairs with a paper-based laboratory activity and a question bank; model answers are visible in this instructor build. Maintained as a reproducible open-science artifact.",
+  "keywords": [
+    "Biology",
+    "Open textbook",
+    "Generative approach",
+    "Reproducible research",
+    "Undergraduate biology",
+    "College of the Redwoods",
+    "Computational biology",
+    "Programmatic figures",
+    "Laboratory activities",
+    "Open science"
+  ],
+  "license": {
+    "id": "cc-by-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "code_license": {
+    "id": "apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0/"
+  },
+  "copyright": "Copyleft DAF 2026",
+  "communities": [
+    "hydrogen-holographic-science-and-intelligence"
+  ],
+  "methodology": "Generative reproducible open-science textbook via docxology/template pipeline",
+  "files": [
+    {
+      "name": "biology_textbook_v1_05-26-2026-compressed.pdf",
+      "size_bytes": 11476276,
+      "type": "pdf"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/biology_textbook"
+    }
+  ]
+}

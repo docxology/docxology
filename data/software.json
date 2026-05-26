@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-26T16:29:40Z",
+  "generated_at": "2026-05-26T16:32:14Z",
   "source": "pages/SOFTWARE.md",
-  "count": 81,
+  "count": 82,
   "repositories": [
     {
       "name": "template",
@@ -302,6 +302,16 @@
       "language": "HTML",
       "stars": 0,
       "updated_or_year": "2026-03"
+    },
+    {
+      "name": "biology_textbook",
+      "url": "https://github.com/docxology/biology_textbook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-05"
     },
     {
       "name": "cascadia",

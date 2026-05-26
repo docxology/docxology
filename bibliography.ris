@@ -1378,3 +1378,15 @@ KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 116; docs: papers/2026_CrescentCity/
 ER  -
+
+TY  - BOOK
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Introduction to Biology: A Generative Approach
+T2  - Zenodo
+DO  - 10.5281/zenodo.20286478
+UR  - https://doi.org/10.5281/zenodo.20286478
+KW  - Computational
+KW  - Book
+N1  - Catalog row 117; docs: papers/2026_BiologyTextbook/
+ER  -

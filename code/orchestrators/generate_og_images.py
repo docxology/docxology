@@ -13,8 +13,8 @@ W, H = 1200, 630
 
 ASSETS = [
     ("og-image.jpg", "Daniel Ari Friedman", "Research, software, art, and public-source discovery"),
-    ("og-publications.jpg", "Publications", "116 curated works across Active Inference, biology, security, and art"),
-    ("og-software.jpg", "Software", "81 catalogued repositories plus public-source software release anchors"),
+    ("og-publications.jpg", "Publications", "117 curated works across Active Inference, biology, security, and art"),
+    ("og-software.jpg", "Software", "82 catalogued repositories plus public-source software release anchors"),
     ("og-discovery.jpg", "Discovery Map", "Canonical identifiers, APIs, query recipes, and verification notes"),
     ("og-domains.jpg", "Research Domains", "Five pathways through works, software, collaborators, and learning"),
     ("og-entomology.jpg", "Entomology", "Ant colonies, collective behavior, transcriptomics, and cognition"),

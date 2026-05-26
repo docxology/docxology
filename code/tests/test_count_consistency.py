@@ -12,12 +12,12 @@ from count_consistency import collect_count_drift, parse_bibliography_work_count
 
 def test_parse_bibliography_work_count():
     count = parse_bibliography_work_count()
-    assert count >= 116
+    assert count >= 117
 
 
 def test_parse_paper_folder_count():
     count = parse_paper_folder_count()
-    assert count >= 109
+    assert count >= 110
 
 
 def test_collect_count_drift_clean_after_sync():

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-19T15:22:45Z",
+  "generated_at": "2026-05-26T16:30:36Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 116,
+  "count": 117,
   "works": [
     {
       "num": 1,
@@ -1625,6 +1625,20 @@
       "url": "https://doi.org/10.5281/zenodo.20286171",
       "doi": "10.5281/zenodo.20286171",
       "docs_path": "papers/2026_CrescentCity/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 117,
+      "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Book",
+      "title": "Introduction to Biology: A Generative Approach",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20286478",
+      "doi": "10.5281/zenodo.20286478",
+      "docs_path": "papers/2026_BiologyTextbook/",
       "has_paper_folder": true
     }
   ]

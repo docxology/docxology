@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-26T16:29:47Z",
+  "generated_at": "2026-05-26T16:30:37Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 116,
+  "count": 117,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2920,6 +2920,36 @@
         "Rapid AI-augmented synthesis with human oversight"
       ],
       "source": "papers/2026_CrescentCity/README.md"
+    },
+    "Friedman2026IntroductionBiologyGenerativeApproach117": {
+      "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
+      "abstract": "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move between narrative explanation and the quantitative constraints that shape biological claims. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales and align with mainstream undergraduate biology competencies; Unit 0 adds an optional systems, historical, and philosophical lens without replacing the traditional molecular-to-ecological sequence. Where the curriculum is quantitat",
+      "keywords": [
+        "Biology",
+        "open textbook",
+        "generative approach",
+        "reproducible research",
+        "undergraduate biology",
+        "College of the Redwoods",
+        "computational biology",
+        "evidence-based teaching",
+        "programmatic figures",
+        "laboratory activities"
+      ],
+      "findings": [
+        "Biology is presented as a discipline where narrative and quantitative constraints are co-developed, not separated into parallel tracks.",
+        "Forty-four chapters span systems science through ecology while preserving mainstream undergraduate competency alignment.",
+        "Unit 0 supplies optional systems, historical, and philosophical framing without displacing the core molecular-to-ecological arc.",
+        "The edition is designed for course adoption (e.g., College of the Redwoods BIOL-1, BIOL-8) with ready-made labs and assessment banks."
+      ],
+      "methods": [
+        "Generative manuscript production with reproducible build pipeline",
+        "Domain-organized Python modules for quantitative curriculum segments",
+        "Programmatic figure and diagram generation",
+        "Inline primary-literature citation with glossary and curriculum-mapping appendices",
+        "Instructor vs student build variants for assessment materials"
+      ],
+      "source": "papers/2026_BiologyTextbook/README.md"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T16:29:54Z",
+  "generated_at": "2026-05-26T16:31:38Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -9,7 +9,7 @@
     "data/organizations.json",
     "data/claims.json"
   ],
-  "count": 589,
+  "count": 591,
   "items": [
     {
       "id": "page:home",
@@ -3003,6 +3003,30 @@
       "content": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast Zenodo 10.5281/zenodo.20286171 Friedman2026CrescentCityLivingWaves116 Cognitive Security Paper This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the northernmost developed strip of the California coast — read as an emergent nested system : Tolowa Dee-ni' villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial timber and commercial fishing; federal termination and the 1983 federal-recognition restoration under Tillie Hardwick v. United States ; Redwood National and State Parks and conservation governance beside a recovering working waterfront; and contemporary Indigenous ocean stewardship including the 2023 Yurok–Tolowa Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked southern Cascadia margin. The study frames the often-cited ~37% fifty-year probability of an M ≥ 8.0 southern-segment rupture as paleoseismic model output from Crescent City Del Norte County Cascadia subduction zone Tsunami warning policy Tolowa Dee-ni' Redwood ecology Local history Coastal hazard Indigenous ocean stewardship Social-ecological systems Panarchy & resilience Coupled human–natural systems No prior single work synthesizes Crescent City's full history; existing accounts are fragmentary or era-bound. The central interpretive claim is one recurring loop: hazard → rebuilding → governance → memory → adaptation . The town is a compact case study in nested geological, ecological, economic, and political risk that resilience/panarchy theory explains better than environmental or social history alone. The 1964 Alaska-earthquake tsunami (deadliest on the contiguous-U.S. Pacific coast) reshaped U.S. Pacific-wide tsunami-warning policy far beyond the local waterfront. Synthetic scholarly history across multiple primary-source domains Social-ecological systems (Ostrom) + panarchy/resilience (Holling, Gunderson) framing Coupled human–natural systems analysis of place, chronology, actors, and governing rules Paleoseismic-model interpretation distinguished from deterministic forecasting Rapid AI-augmented synthesis with human oversight"
     },
     {
+      "id": "work:Friedman2026IntroductionBiologyGenerativeApproach117",
+      "type": "work",
+      "title": "Introduction to Biology: A Generative Approach",
+      "url": "/works/Friedman2026IntroductionBiologyGenerativeApproach117.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20286478",
+      "summary": "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, ev",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Book",
+        "Computational",
+        "bibliography",
+        "Biology",
+        "open textbook",
+        "generative approach",
+        "reproducible research",
+        "undergraduate biology",
+        "College of the Redwoods",
+        "computational biology",
+        "evidence-based teaching"
+      ],
+      "content": "Introduction to Biology: A Generative Approach Zenodo 10.5281/zenodo.20286478 Friedman2026IntroductionBiologyGenerativeApproach117 Computational Book Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move between narrative explanation and the quantitative constraints that shape biological claims. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales and align with mainstream undergraduate biology competencies; Unit 0 adds an optional systems, historical, and philosophical lens without replacing the traditional molecular-to-ecological sequence. Where the curriculum is quantitat Biology open textbook generative approach reproducible research undergraduate biology College of the Redwoods computational biology evidence-based teaching programmatic figures laboratory activities Biology is presented as a discipline where narrative and quantitative constraints are co-developed, not separated into parallel tracks. Forty-four chapters span systems science through ecology while preserving mainstream undergraduate competency alignment. Unit 0 supplies optional systems, historical, and philosophical framing without displacing the core molecular-to-ecological arc. The edition is designed for course adoption (e.g., College of the Redwoods BIOL-1, BIOL-8) with ready-made labs and assessment banks. Generative manuscript production with reproducible build pipeline Domain-organized Python modules for quantitative curriculum segments Programmatic figure and diagram generation Inline primary-literature citation with glossary and curriculum-mapping appendices Instructor vs student build variants for assessment materials"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -3421,6 +3445,20 @@
         "docxology"
       ],
       "content": "biol-8 BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content HTML docxology"
+    },
+    {
+      "id": "software:docxology:biology_textbook",
+      "type": "software",
+      "title": "biology_textbook",
+      "url": "https://github.com/docxology/biology_textbook",
+      "summary": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "biology_textbook Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo Python docxology"
     },
     {
       "id": "software:docxology:cascadia",

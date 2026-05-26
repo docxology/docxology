@@ -2887,5 +2887,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20286171",
     "URL": "https://doi.org/10.5281/zenodo.20286171"
+  },
+  {
+    "id": "Friedman2026IntroductionBiologyGenerativeApproach117",
+    "type": "book",
+    "title": "Introduction to Biology: A Generative Approach",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Computational; Book",
+    "note": "Catalog row 117; docs: papers/2026_BiologyTextbook/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20286478",
+    "URL": "https://doi.org/10.5281/zenodo.20286478"
   }
 ]

@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (116 works), 49 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (117 works), 50 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -41,7 +41,7 @@
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
 - Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
-- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **109** folders as of 2026-05-19)
+- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **110** folders as of 2026-05-26)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -52,8 +52,8 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (116 works; DOI links and paper-folder deep-links)
-├── pages/SOFTWARE.md        ← 49 owned repos + 32 AII contributions
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (117 works; DOI links and paper-folder deep-links)
+├── pages/SOFTWARE.md        ← 50 owned repos + 32 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
 ├── pages/DISCOVERY.md       ← Public-source discovery map for agents, APIs, and search indexes
@@ -186,6 +186,7 @@ docxology/
 | 2026-05-15 | MAINTAINER | Implemented completeness/accuracy upgrade: Linux-safe art links, tracked bytecode cleanup, v2/v3 DOI corrections, generated GitHub repository inventory, expanded evidence claims, public-source inventory report, freshness fact comparison, and stale live-site check enforcement | ✅ |
 | 2026-05-16 | MAINTAINER | Integrity-remediation pass (independent 12-source verification): introduced dated Scholar-metrics snapshot (`data/scholar-snapshot.json`) + `sync_scholar_metrics.py` generator, corrected citation figure 812→**764** (live dual-fetch, as of 2026-05-16) across all surfaces and the claims ledger, replaced the "do not overwrite" caveat with a provenance-envelope rule; added primary-source anchors (AII EIN 88-2985125 / ProPublica / IRS ruling March 2024; NSF award DBI-2010290); clarified officer roster (Mikhailova VP+Secretary 2025–; Knight prior Secretary / current Board); softened unverifiable specifics (Christie's lot first-party-only, SAB "2026 cohort", NSF 2020–2022 budget vs 2023 affiliation, "107 indexed pubs"); fixed dead `nft.html`→`art.html`; noted dual Scholar ID + AII-User-not-Org; synced codomyrmex 127/424→**128/600**; added `pages/VERIFICATION_LOG.md` + `data/verification-log.json` | ✅ |
 | 2026-05-26 | MAINTAINER | Thermo-nuclear + web stack pass: count drift guard (`code/src/count_consistency.py`), `publications.html` shell loads `data/works.json` via `js/publications.js`, CollectionPage JSON-LD externalized to `data/publications-ld.json`, `docs/SECURITY.md` + `docs/DESIGN_SYSTEM.md`, shared nav (`code/src/site_nav.py`) on work + domain pages | ✅ |
+| 2026-05-26 | ARCHIVIST | Added `2026_BiologyTextbook` (DOI 10.5281/zenodo.20286478); Computational 7→8; Books 3→4; bibliography 116→117 (row 117); paper folders and metadata 109→110; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications + works.json resynced | ✅ |
 
 ---
 

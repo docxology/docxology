@@ -30,7 +30,7 @@ Structured cohorts walking through the fundamentals of the Free Energy Principle
 
 ### University Lectures
 Course lectures spanning from basic biology to specialized entomology and computational neuroscience models.
-- **BIOL-1 / BIOL-8**: Select recordings and associated laboratory dashboards (see [cr-bio](SOFTWARE.md)).
+- **BIOL-1 / BIOL-8**: Select recordings and associated laboratory dashboards (see [cr-bio](SOFTWARE.md)); open textbook deposit [Introduction to Biology: A Generative Approach](../papers/2026_BiologyTextbook/) (DOI [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478)).
 
 ---
 

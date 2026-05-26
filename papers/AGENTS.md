@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 109 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 110 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (109 entries as of 2026-05-19)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (110 entries as of 2026-05-26)
 
 ### 🔬 RESEARCHER
 
@@ -32,7 +32,7 @@
 - Links each paper folder to its BIBLIOGRAPHY.md entry and DOI
 - Maps papers to associated software repositories in SOFTWARE.md
 - Connects related papers across domains
-- When the unified bibliography count or table order changes, run [`sync_publications_html.py`](sync_publications_html.py) so `publications.html` **PUBS** and JSON-LD **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md).
+- When the unified bibliography count or table order changes, run [`sync_publications_html.py`](sync_publications_html.py) so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md); run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for the interactive catalog in `data/works.json`.
 
 ---
 
@@ -41,15 +41,15 @@
 | Script | Purpose |
 |--------|---------|
 | [regenerate_docs.py](regenerate_docs.py) | Rebuild README.md, AGENTS.md, and SKILL.md from metadata |
-| [sync_publications_html.py](sync_publications_html.py) | Rebuild `publications.html` **PUBS** and JSON-LD **mainEntity** from the unified bibliography table (`pages/BIBLIOGRAPHY.md`); run after adds/reorders in that table |
+| [sync_publications_html.py](sync_publications_html.py) | Rebuild `publications.html` head meta and `data/publications-ld.json` JSON-LD **mainEntity** from the unified bibliography table (`pages/BIBLIOGRAPHY.md`); run after adds/reorders in that table |
 
 ### Quality Checks (spot-check after adds)
 
 | Check | Status |
 |-------|--------|
-| README.md present | 109/109 folders (last verified 2026-05-19) |
-| AGENTS.md present | 109/109 |
-| SKILL.md present | 109/109 |
+| README.md present | 110/110 folders (last verified 2026-05-26) |
+| AGENTS.md present | 110/110 |
+| SKILL.md present | 110/110 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -66,11 +66,11 @@
 | 🛡️ Cognitive Security | 21 | `2026_CrescentCity`, `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
 | 🎨 Art & Synergetics | 15 | `2026_BlakeJiang`, `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
 | 🧬 Genetics & Biomedical | 9 | `2015_HoneyBeeEvolution`, `2016_NuclearStructure` |
-| 💻 Computational | 7 | `2026_ReproducibleResearch`, `2025_DiscoveryEngine`, `2025_MDKV` |
+| 💻 Computational | 8 | `2026_BiologyTextbook`, `2026_ReproducibleResearch`, `2025_DiscoveryEngine`, `2025_MDKV` |
 | 🌍 AII Ecosystem | 5 | `2025_AII_v3`, `2024_OntologySUMO` |
 | 🎥 Presentations & Media | 15 | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
 
-Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 116 total as of the table header).
+Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 117 total as of the table header).
 
 ---
 
@@ -92,3 +92,4 @@ Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIO
 | 2026-05-13 | ARCHIVIST | Added `2026_BlakeJiang` (DOI 10.5281/zenodo.20144984); Art & Synergetics 14→15; bibliography 114→115; paper folders and metadata 107→108 | ✅ |
 | 2026-05-15 | ARCHIVIST | Updated AII v2/v3 rows to version-specific Zenodo DOIs and ActInfMetaAnalysis to current v2 DOI/title; retained concept/v1 DOIs only as version-chain context | ✅ |
 | 2026-05-19 | ARCHIVIST | Added `2026_CrescentCity` (DOI 10.5281/zenodo.20286171); Cognitive Security domain 20→21; bibliography 115→116 (row 116); Papers 97→98; paper folders and metadata 108→109; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications.html resynced | ✅ |
+| 2026-05-26 | ARCHIVIST | Added `2026_BiologyTextbook` (DOI 10.5281/zenodo.20286478); Computational 7→8; Books 3→4; bibliography 116→117 (row 117); paper folders and metadata 109→110; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications + works.json resynced | ✅ |

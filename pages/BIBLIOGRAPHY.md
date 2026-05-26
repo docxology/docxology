@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**116 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**117 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**98** Papers · **8** Presentations · **3** Books · **3** Courses · **2** Playbooks · **2** Series
+**98** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **116** works in the table below **·** **109** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **117** works in the table below **·** **110** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -154,6 +154,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 114 | 2020 | 🛡️ | Paper | The Facilitator's Catechism | *Zenodo* | [10.5281/zenodo.4203765](https://doi.org/10.5281/zenodo.4203765) | [📁](../papers/2020_FacilitatorsCatechism/) |
 | 115 | 2026 | 🎨 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984) | [📁](../papers/2026_BlakeJiang/) |
 | 116 | 2026 | 🛡️ | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | *Zenodo* | [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171) | [📁](../papers/2026_CrescentCity/) |
+| 117 | 2026 | 💻 | Book | Introduction to Biology: A Generative Approach | *Zenodo* | [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478) | [📁](../papers/2026_BiologyTextbook/) |
 
 ---
 
@@ -213,8 +214,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 💻 Computational
 
-> 7 works (2023–2026)
+> 8 works (2023–2026)
 
+- **2026** — Introduction to Biology: A Generative Approach · [📁](../papers/2026_BiologyTextbook/)
 - **2025** — Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference · [📁](../papers/2025_AuBI/)
 - **2025** — MDKV: A Multitrack Markdown Container for Structured, Portable Documents · [📁](../papers/2025_MDKV/)
 - **2025** — Markdown Decision Process: A Framework for Probabilistic Document Analysis · [📁](../papers/2025_MarkdownDecisionProcess/)

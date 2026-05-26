@@ -37,7 +37,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     return [
     ("works", "Curated Works Bibliography", "data/works.json", "117 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
-    ("software", "Software Catalog", "data/software.json", "81 catalogued software repositories across docxology and AII contributions."),
+    ("software", "Software Catalog", "data/software.json", "82 catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),

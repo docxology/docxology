@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*49 original repositories · 32 catalogued Active Inference Institute contributions · AII organization: 50 public repositories · [Full generated repository inventory](../repositories.html)*
+*50 original repositories · 32 catalogued Active Inference Institute contributions · AII organization: 50 public repositories · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -66,6 +66,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference](https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference) | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment | Julia | 0 | 2025-04 |
 | [biol-1](https://github.com/docxology/biol-1) | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content | HTML | 0 | 2026-03 |
 | [biol-8](https://github.com/docxology/biol-8) | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content | HTML | 0 | 2026-03 |
+| [biology_textbook](https://github.com/docxology/biology_textbook) | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at [Zenodo](https://doi.org/10.5281/zenodo.20286478) · [📄](../papers/2026_BiologyTextbook/) | Python | 0 | 2026-05 |
 | [cascadia](https://github.com/docxology/cascadia) | Cascadia bioregion modeling and data analysis tools | Python | 0 | 2025-08 |
 | [course](https://github.com/docxology/course) | Course materials framework for structured interdisciplinary learning modules | Python | 0 | 2025-12 |
 | [enactive_inference_model](https://github.com/docxology/enactive_inference_model) | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures · [📄](../papers/2025_Thoughtseeds/) | Python | 0 | 2026-02 |
@@ -138,7 +139,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Category | Owned | Highlighted Repos |
 |----------|:-----:|---|
 | Active Inference & Modeling | 14 | `active_inference`, `active_torchference`, `goference`, `AgenticMesh`, `enactive_inference_model`, `Markov_Blanket_Detection`, `cognitive`, `cognitive-engine`, `ActiveInferAnts`, `EvoJump`, `markdown_decision_process`, `cognitive_case_diagrams`, `Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference`, `transformer` |
-| Entomology & Biology | 7 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `FORMINDEX`, `biol-1`, `biol-8` |
+| Entomology & Biology | 8 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 2 | `p3if`, `opentir` |
 | Developer Tools | 10 | `codomyrmex`, `template`, `steganographer`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |

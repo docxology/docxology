@@ -7,6 +7,7 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - Thermo-nuclear documentation pass: aligned volatile counts (116 works / 109 paper folders) across `llms.txt`, release notes, and publications head meta; added count-consistency validation (`code/src/count_consistency.py`).
 - Refactored `publications.html` to load catalog rows from `data/works.json` via `js/publications.js`; externalized CollectionPage JSON-LD to `data/publications-ld.json` (166-line shell).
 - Added `docs/SECURITY.md`, `docs/DESIGN_SYSTEM.md`, `reports/web_assessment_2026-05-26.md`, shared nav (`code/src/site_nav.py`) on work and domain pages; removed Inter from body typography in favor of system-ui stack.
+- Added `2026_BiologyTextbook` — *Introduction to Biology: A Generative Approach* (DOI [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478); repo `docxology/biology_textbook`); bibliography **116→117**; paper folders **109→110**; Computational domain **7→8**; Books **3→4**.
 
 ## 2026-05-19
 

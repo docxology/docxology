@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-26T16:29:58Z",
+  "generated_at": "2026-05-26T16:31:45Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 57,
   "warnings": 0,
-  "total_bytes": 6048960,
+  "total_bytes": 6054947,
   "largest": [
     {
       "path": "data/artworks.json",
@@ -29,7 +29,7 @@
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 184565,
+      "bytes": 187030,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -127,21 +127,21 @@
     {
       "path": "bibliography.csl.json",
       "kind": "citation-export",
-      "bytes": 75630,
+      "bytes": 76252,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "data/publications-ld.json",
       "kind": "json-data",
-      "bytes": 67021,
+      "bytes": 67558,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 57685,
+      "bytes": 58166,
       "budget_bytes": 4000000,
       "ok": true
     }
