@@ -79,6 +79,28 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/export_agent_data.py",
     },
     {
+        "name": "Resume and CV exports",
+        "outputs": [
+            "data/resume.json",
+            "resume/full.txt",
+            "resume/academic.txt",
+            "resume/software-consulting.txt",
+            "resume/teaching-service.txt",
+            "resume/resume.pdf",
+            "resume/verify.html",
+        ],
+        "sources": [
+            "resume/source.json",
+            "data/works.json",
+            "data/software.json",
+            "data/scholar-snapshot.json",
+            "data/claims.json",
+            "code/src/resume_data.py",
+            "code/orchestrators/build_resume.py",
+        ],
+        "command": "uv run python3 code/orchestrators/build_resume.py --all",
+    },
+    {
         "name": "Software catalog HTML sync",
         "outputs": ["software.html", "data/software-ld.json"],
         "sources": ["pages/SOFTWARE.md", "papers/software_table.py", "papers/sync_software_html.py"],
@@ -89,6 +111,12 @@ ARTIFACTS = [
         "outputs": ["data/github-repositories.json", "repositories.html"],
         "sources": ["GitHub REST API", "data/software.json", "code/orchestrators/build_github_inventory.py"],
         "command": "python3 code/orchestrators/build_github_inventory.py",
+    },
+    {
+        "name": "Paired publication sync report",
+        "outputs": [_latest_report("paired_publications_*.json", "reports/paired_publications_2026-05-27.json")],
+        "sources": ["GitHub Releases API", "Zenodo Records API", "code/src/publication_pairing.py", "code/orchestrators/sync_paired_publications.py"],
+        "command": "python3 code/orchestrators/sync_paired_publications.py",
     },
     {
         "name": "Domain pages",

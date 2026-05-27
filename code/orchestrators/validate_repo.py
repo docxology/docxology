@@ -39,6 +39,7 @@ def validate_json_files() -> None:
         "data/people.json",
         "data/organizations.json",
         "data/claims.json",
+        "data/resume.json",
         "data/reconciliation.json",
     ]
     paths.extend(
@@ -49,6 +50,7 @@ def validate_json_files() -> None:
             rel(latest_report("external_links_[0-9]*.json")),
             rel(latest_report("external_links_triage_*.json")),
             rel(latest_report("live_site_verification_*.json")),
+            rel(latest_report("paired_publications_*.json")),
             rel(latest_report("public_source_inventory_*.json")),
             rel(latest_report("public_source_snapshot_*.json")),
         ]
@@ -146,6 +148,7 @@ def main() -> None:
     run(["python3", "papers/sync_software_html.py"])
     run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
     run(["python3", "code/orchestrators/export_agent_data.py", "--check"])
+    run(["python3", "code/orchestrators/build_resume.py", "--check"])
     run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_catalog.py", "--check"])
@@ -154,6 +157,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
     run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
+    run(["python3", "code/orchestrators/sync_paired_publications.py", "--check"])
     run(["python3", "code/orchestrators/build_search_index.py", "--check"])
     run(["python3", "code/orchestrators/generate_feed.py", "--check"])
     run(["python3", "code/orchestrators/audit_assets.py", "--check"])

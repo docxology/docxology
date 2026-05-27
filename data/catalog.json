@@ -8,7 +8,7 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-26",
+  "dateModified": "2026-05-27",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -100,6 +100,32 @@
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/claims.json",
         "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#resume",
+      "name": "Structured Resume and CV",
+      "description": "Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records.",
+      "url": "https://danielarifriedman.com/data/resume.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/resume.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#resume-verify",
+      "name": "Resume Verification Page",
+      "description": "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links.",
+      "url": "https://danielarifriedman.com/resume/verify.html",
+      "encodingFormat": "text/html",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/resume/verify.html",
+        "encodingFormat": "text/html"
       }
     },
     {
@@ -211,11 +237,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-26.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-27.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-26.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-27.json",
         "encodingFormat": "application/json"
       }
     },

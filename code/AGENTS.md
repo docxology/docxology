@@ -8,10 +8,14 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | --- | --- |
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: fetch tabs, normalize records, save JSON |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
+| `src/publication_pairing.py` | Normalize GitHub release and Zenodo record metadata; classify paired publication evidence |
+| `src/resume_data.py` | Load, clean, validate, merge, and render structured resume/CV data |
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
+| `orchestrators/build_resume.py` | Generate `data/resume.json`, plaintext resume variants, and `resume/resume.pdf` |
+| `orchestrators/sync_paired_publications.py` | Dry-run/apply checker for paired GitHub release + Zenodo DOI publications |
 | `orchestrators/build_domain_pages.py` | Generate `domains.html`, `domain-*.html`, and `pages/DOMAINS.md` |
 | `orchestrators/build_work_pages.py` | Generate `works/index.html` and one HTML landing page per bibliography row |
 | `orchestrators/build_evidence_page.py` | Generate `evidence.html` and `pages/EVIDENCE.md` from `data/claims.json` |
@@ -44,9 +48,11 @@ Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency
 1. Bibliography edits — `papers/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
 2. Software catalog edits — `papers/sync_software_html.py --apply`, `export_agent_data.py`, then domain/search/catalog exports.
 3. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.
-4. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
-5. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
-6. Health gate — `validate_repo.py` (includes count-consistency check).
+4. Resume/CV exports — `build_resume.py --all` after changing `resume/source.json`, bibliography/software data, Scholar snapshot, or claim data.
+5. Paired GitHub + Zenodo publication checks — `sync_paired_publications.py` writes a dry-run report by default; use `--apply` only for strong pairs.
+6. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
+7. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
+8. Health gate — `validate_repo.py` (includes count-consistency check).
 
 ## Tests
 
@@ -54,7 +60,7 @@ From repo root:
 
 ```bash
 cd code/tests && uv run pytest -q
-python3 code/orchestrators/validate_repo.py
+uv run python3 code/orchestrators/validate_repo.py
 ```
 
 ## Maintenance

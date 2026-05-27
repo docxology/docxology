@@ -1,0 +1,212 @@
+Daniel Ari Friedman, PhD
+Computational biologist, Active Inference researcher, cognitive security researcher, educator, and artist
+California, USA, Earth
+
+Email: danielarifriedman@gmail.com; daniel@activeinference.institute
+Sites: https://danielarifriedman.com/; https://cognitivesecurity.us
+GitHub: https://github.com/docxology
+LinkedIn: https://www.linkedin.com/in/danielarifriedman/
+Google Scholar: https://scholar.google.com/citations?user=DXjPFtYAAAAJ
+ORCID: 0000-0001-6232-9096
+Keybase: docxology
+ENS: docxology.eth
+Art portfolio: https://www.flickr.com/photos/daniel_friedman/
+Voice/Text: Ask via email
+
+Variant: teaching-service
+Generated: 2026-05-27T21:31:41Z
+
+Current public metrics: 117 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+
+SUMMARY
+-------
+Multidisciplinary researcher and open-source builder working across social insect biology, Active
+Inference, cognitive security, computational frameworks, education, and art.
+
+EDUCATION
+---------
+2019-2023 | Postdoctoral Fellow | University of California, Davis | Davis, CA, USA
+  - Co-mentors: Prof. Brian Johnson (UC Davis) and Prof. Tim Linksvayer (Arizona State University).
+  - NSF Postdoctoral Research Fellowship in Biology (PRFB), award DBI-2010290; NSF budget period
+  2020-2022 with affiliation extending to 2023.
+  - Genomics, epigenomics, transcriptomics, and behavior in eusocial insects, mainly ants and bees.
+  - Science research, mentoring, participation, service, and organizing events and communities
+  online.
+  - Sources: NSF DBI-2010290: https://grantome.com/grant/NSF/DBI-2010290; UC Davis:
+  https://www.ucdavis.edu/
+2014-2019 | PhD | Stanford University | Stanford, CA, USA
+  - Advisor: Professor Deborah M. Gordon, Biology.
+  - Research, teaching, service, and coursework from Summer 2014 to Summer 2019.
+  - Thesis topics: ant ecology, collective behavior, brain gene expression, and neurometabolism.
+  - Stanford Graduate Fellow (Urbanek Family Fellowship), 2014-2017.
+  - Co-organizer of the Stanford Complexity Group, 2016-2019.
+  - Stanford Neuroscience NeuroChoice Grant for neurometabolism in ants, 2019, $25,000.
+  - Stanford Systems Biology Seed Grant for gene expression and behavior in ants, 2018, $25,000.
+  - Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.
+  - Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.
+  - NSF GRFP Honorable Mention, 2015 and 2016.
+  - Sources: Stanford dissertation: http://purl.stanford.edu/pb813wm1484
+2010-2014 | BSc in Genetics | University of California, Davis | Davis, CA, USA
+  - BSc in Genetics, University of California, Davis.
+  - Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.
+  - Campus Community Service Silver Award, 2014.
+  - Stanley and Jacqueline Schilling Award for Service, 2014.
+  - Completed the Population Biology Graduate Group one-year base PhD curriculum, 2013.
+  - Co-founder of The Aggie Transcript, an undergraduate biology journal, 2014.
+  - Victoria Finnerty Award for Research in Drosophila, 2013.
+  - Elected member of Phi Beta Kappa, UC Davis Chapter, 2014.
+  - Co-organizer of the Chess Club at UC Davis, 2012-2014.
+  - Research Scholars Program in Insect Biology, 2011-2014.
+  - Provost's Undergraduate Fellowship for Drosophila research, 2011, $2,500.
+  - Sources: UC Davis: https://www.ucdavis.edu/
+
+EXPERIENCE
+----------
+2026-ongoing | Community Organization | Del Norte Triplicate | Typographical Editor
+  - Typographical editing for The Triplicate newspaper of Del Norte County and Crescent City.
+  - Sources: The Triplicate: https://www.triplicate.com/
+2021-ongoing | Community Organization | Active Inference Institute | Co-founder, Participant, Officer, President, Treasurer
+  - Co-founded the Active Inference Institute; current President and Treasurer.
+  - Sources: AII officers: https://www.activeinference.institute/officers; AII:
+  https://activeinference.org/
+2019-2024 | Community Organization | Complexity Adventures | Co-founder, Facilitator, Participant, Organizer
+  - Organized activities and community around learning and applying complexity science.
+  - Sources: Complexity Adventures profile: https://www.complexityadventures.com/organizers/2
+2014-2019 | Community Organization | Stanford Complexity Group | Organizer, Participant
+  - Organized the Stanford Complexity Group while it was active.
+  - Sources: Stanford: https://www.stanford.edu/; verification:
+  https://danielarifriedman.com/resume/verify.html
+2019-2023 | Startup | Remotor | Co-founder, Researcher
+  - Education, online event planning, and consulting for remote teams.
+  - Sources: verification: https://danielarifriedman.com/resume/verify.html
+2014-2019 | Research | Gordon Lab | Mentor, Researcher
+  - Graduate research, field work, wet lab, bioinformatics, and mentoring of high schoolers,
+  undergraduates, graduate students, and non-academics.
+  - Sources: Gordon Lab: https://web.stanford.edu/~dmgordon/
+2015-2016 | Teaching | Stanford University | Teacher, Organizer, Graduate Teaching Assistant
+  - Graduate Teaching Assistant for undergraduate and graduate courses: General Biology: Cell and
+  Molecular Biology (2015) and Ethics of Evolutionary Biology (2016).
+  - Sources: Stanford Biology: https://biology.stanford.edu/
+2014 | Teaching | UC Davis | Teacher, Organizer, Course Co-developer
+  - Student teacher and developmental biology course co-developer with Prof. Susan Keen at UC Davis.
+  - Sources: UC Davis Biology: https://biology.ucdavis.edu/
+
+AWARDS AND FELLOWSHIPS
+----------------------
+2014 | UC Davis Genetics Department Citation
+  - Highest Honors.
+  - Sources: UC Davis Genetics: https://genetics.ucdavis.edu/
+2014 | UC Davis service awards
+  - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
+  - Sources: UC Davis: https://www.ucdavis.edu/
+
+WORKS AND PUBLICATIONS (59)
+---------------------------
+[002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
+[006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
+[008] 2025 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | Presentation | 10.5281/zenodo.17555266
+[010] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15170907
+[011] 2025 | Paper | Computational Complexity and Energetics of the Ant Stack | Zenodo | 10.5281/zenodo.17238736
+[012] 2025 | Paper | EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
+[013] 2025 | Paper | Increasing the Accessibility and Applicability of Active Inference | Zenodo | 10.5281/zenodo.15061667
+[022] 2025 | Presentation | Systems Processes, Active Inference, and Beyond | Presentation | 10.5281/zenodo.17138223
+[023] 2025 | Paper | Temporal Depth in a Coherent Self and in Depersonalization | Frontiers in Psychology | 10.3389/fpsyg.2025.1585315
+[025] 2025 | Paper | The Ant Stack | Zenodo | 10.5281/zenodo.16782756
+[027] 2025 | Paper | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States | Entropy | 10.3390/e27050459
+[028] 2025 | Paper | Towards a Science of Consciousness and Social Complexity... For Ants | Book Chapter | https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes
+[030] 2024 | Presentation | BioFirm Development at Applied Active Inference Symposium 2024 | Presentation | 10.5281/zenodo.14861595
+[032] 2024 | Paper | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea | Ecology & Evolution | 10.1002/ece3.70063
+[034] 2024 | Paper | Enhancing Population-based Search with Active Inference | ArXiv | 10.48550/arXiv.2408.09548
+[036] 2024 | Paper | Federated inference and belief sharing | Neuroscience & Biobehavioral Reviews | 10.1016/j.neubiorev.2023.105500
+[038] 2024 | Presentation | MathArt Stream #8: William Blake and Active Inference | Presentation | 10.5281/zenodo.13711301
+[039] 2024 | Presentation | Sensemaking Federation: Exploring the Frontiers of Digital Innovation | Presentation | 10.5281/zenodo.14574046
+[040] 2024 | Paper | Shared Protentions in Multi-Agent Active Inference | Entropy | 10.3390/e26040303
+[045] 2023 | Paper | A guided tour through the spaces of particular "minds" | Physics of Life Reviews | 10.1016/j.plrev.2023.11.001
+[046] 2023 | Paper | A single-pheromone model accounts for empirical patterns of ant colony foraging | Cognitive Systems Research | 10.1016/j.cogsys.2023.02.005
+[047] 2023 | Paper | A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees | Zenodo | 10.5281/zenodo.10400744
+[048] 2023 | Paper | A variational synthesis of evolutionary and developmental dynamics | Entropy | 10.3390/e25070964
+[050] 2023 | Paper | An Account of Active Inference Modeling | Zenodo | 10.5281/zenodo.8415313
+[053] 2023 | Paper | Distributed Science — The Scientific Process as Multi-Scale Active Inference | OSF | 10.31219/osf.io/dnw5k
+[055] 2023 | Paper | Experimental Entomology in the Age of Video | JoVE | 10.3791/65002
+[056] 2023 | Paper | Generalized Notation Notation for Active Inference Models | Zenodo | 10.5281/zenodo.7803328
+[057] 2023 | Paper | Generative Research Teams: Active Inference Compositions for Research and Meta-Science | Zenodo | 10.5281/zenodo.8164667
+[058] 2023 | Presentation | Of Ants & Aging | Presentation | 10.5281/zenodo.7855582
+[060] 2023 | Presentation | Postdoc review (2020–2023) | Presentation | 10.5281/zenodo.8377988
+[064] 2023 | Course | Transcript of Chris Fields, "Physics as Information Processing" course | Zenodo | 10.5281/zenodo.10447642
+[066] 2022 | Paper | An Active Inference Ontology for Decentralized Science | Zenodo | 10.5281/zenodo.6320574
+[073] 2022 | Paper | The Free Energy Principle & Active Inference: a Systematic Literature Analysis | Zenodo | 10.5281/zenodo.7449368
+[075] 2021 | Paper | Active Inferants: An Active Inference Framework for Ant Colony Behavior | Frontiers in Behavioral Neuroscience | 10.3389/fnbeh.2021.647732
+[076] 2021 | Paper | Active Inference in Modeling Conflict | Zenodo | 10.5281/zenodo.5759807
+[078] 2021 | Playbook | Innovator's Digital Playbook | Web | https://innovatorsdigitalplaybook.com/
+[081] 2021 | Playbook | The Facilitator's Catechism Playbook | Zenodo | 10.5281/zenodo.4579414
+[082] 2020 | Paper | Active Inference & Behavior Engineering for Teams | Zenodo | 10.5281/zenodo.4021163
+[083] 2020 | Course | Communication for Remote Teams | Udemy | https://www.udemy.com/course/communication-for-remote-teams/
+[084] 2020 | Paper | Distributed physiology and the molecular basis of social life in eusocial insects | Hormones & Behavior | 10.1016/j.yhbeh.2020.104757
+[086] 2020 | Paper | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | Communications Biology | 10.1038/s42003-020-0813-8
+[087] 2020 | Course | How to use Keybase for remote teams | Udemy | https://www.udemy.com/course/keybase-for-remote-teams/
+[088] 2020 | Paper | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | Analytical & Bioanalytical Chemistry | 10.1007/s00216-019-02355-3
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
+[095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
+[096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
+[097] 2018 | Presentation | MVEE: A Framework for Evolutionary Studies | Presentation | 10.5281/zenodo.13999298
+[098] 2018 | Paper | Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) | ALIUS Bulletin | 10.34700/h460-nz89
+[100] 2018 | Paper | The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants | iScience | 10.1016/j.isci.2018.09.001
+[101] 2017 | Paper | The MutAnts are here | Cell | 10.1016/j.cell.2017.07.046
+[102] 2017 | Paper | Two lineages that need each other | Molecular Ecology | 10.1111/mec.13964
+[103] 2016 | Paper | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | Annual Review of Neuroscience | 10.1146/annurev-neuro-070815-013927
+[104] 2016 | Paper | Context-dependent expression of the foraging gene in field colonies of ants | Proceedings of the Royal Society B | 10.1098/rspb.2016.0841
+[109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574118
+[110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19897664
+[111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
+[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695260
+[113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699234
+
+SOFTWARE (12)
+-------------
+docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
+docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
+docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286478
+docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
+docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
+ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
+ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts
+ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook | Julia | https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook | Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)
+ActiveInferenceInstitute/ISSS | Python | https://github.com/ActiveInferenceInstitute/ISSS | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science
+
+CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
+-----------------------------------------
+2025 | Talk | Enduring Patterns, Emerging Futures: Celebrating Dr. Len Troncale | Systems Processes, Active Inference, and Beyond | 2025-09-17 | Sources: Zenodo presentation: https://doi.org/10.5281/zenodo.17138223
+2024 | Workshop | ISSS 2024 | ...And Eternity in an hour of Systems Science Education and Knowledge Engineering | Sources: ISSS: https://isss.org/world/
+
+SCIENCE ENGAGEMENT, OUTREACH, QUOTES, ARTICLES
+----------------------------------------------
+2026 | Video conversation on another channel | S3E10 The FEP: A Tool for Understanding and Modelling Complex Systems | Sources: BathmikeC podcast: https://bathmikec.podbean.com/e/s3e10-the-fep-a-tool-for-understanding-and-modelling-complex-systems/
+2025 | Video conversation on another channel | (DIA 1/SESSAO 1) Lancamento do Livro: As Colonias de Formigas Sao Conscientes? | Sources: YouTube: https://www.youtube.com/watch?v=BJ-PAt3cqf4
+2024 | Video conversation on another channel | From Ants to Active Inference with Daniel Ari Friedman | Love and Philosophy, Andrea Hiott | Sources: YouTube: https://www.youtube.com/watch?v=x_VPw1K55BM
+2024 | Video conversation on another channel | Interaction. In Search of Daniel Friedman's Deepest Value | Math4Wisdom | Sources: YouTube: https://www.youtube.com/watch?v=T05uLRbcloE
+2023 | Video conversation on another channel | Episode 6: Daniel Friedman - Active Inference Institute - What is Active Inference? | Denise Holt | Sources: YouTube: https://www.youtube.com/watch?v=ZyFgRBp1KE0
+2022 | Video conversation on another channel | What Ant Behavior Reveals About Complexity Science with Daniel Friedman | Making Sense of Complexity | Sources: YouTube: https://youtu.be/lQr98-sG8r0; YouTube episode: https://www.youtube.com/watch?v=4qsyV38qfTw
+2022 | Video conversation on another channel | What is Active Inference?...with Daniel Friedman | Inner Sense | Sources: YouTube: https://youtu.be/yHnm-zMqLvY
+2020 | Video conversation on another channel | Interview with Monica Kang about Complexity Weekend, with co-founder Shaun Swanson and organizer JP Gonzales | Sources: YouTube: https://youtu.be/nEaG4xj6MCE
+2021 | Blurb | Complexity Weekend featured on InnovatorsBox blog, with quotes from Friedman and others | Sources: InnovatorsBox: https://blog.innovatorsbox.com/complexity-weekend/
+2017 | Lecture | Public lecture: Red Vic lecture series, San Francisco. History and philosophy of Art and Biology. | Sources: verification: https://danielarifriedman.com/resume/verify.html
+2016 | Lecture | Public lecture: Red Vic lecture series, San Francisco. History and philosophy of self-organization, stigmergy, and eusocial insects. | Sources: verification: https://danielarifriedman.com/resume/verify.html
+
+PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
+---------------------------------------------------
+2022-2024 | ISSS | Board of Directors | Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board. | Sources: ISSS: https://www.isss.org/home/
+2020-ongoing | Active Inference Institute | Community | Active Inference Institute co-founder. | Sources: Active Inference Institute: https://www.activeinference.institute/
+2020-2023 | Davis Complexity Group | Community | Davis Complexity Group. | Sources: verification: https://danielarifriedman.com/resume/verify.html
+2019-2024 | Complexity Adventures | Community | Complexity Adventures co-founder. | Sources: Complexity Adventures: https://www.complexityadventures.com/
+2018-2019 | Wonderfest | Community | Wonderfest Science Envoy; science outreach and community training. | Sources: Wonderfest: https://wonderfest.org/
+2016-2019 | Stanford Complexity Group | Community | Stanford Complexity Group. | Sources: Stanford: https://www.stanford.edu/; verification: https://danielarifriedman.com/resume/verify.html
+2016 | Stanford | Community | Science Teaching Through Art (STAR) outreach program; poster presentations and conversations about ants at local middle and high schools. | Sources: Stanford: https://www.stanford.edu/
+2014-2017 | Stanford | Community | Stanford Center for Evolutionary and Human Genomics outreach programs, including teaching genetics in local middle schools and hosting high school students at Stanford. | Sources: Stanford Center for Evolution and Human Genomics: https://cehg.stanford.edu/
+2014-2017 | Stanford | Community | Stanford Bio Core Explorations hands-on lecture/workshop for undergraduates: Art and Biology. | Sources: Stanford Biology: https://biology.stanford.edu/
+2013 | UC Davis | Community | Science mentoring at Woodland High School. | Sources: Woodland High School: https://whs.wjusd.org/
+2012-2013 | UC Davis | Community | Volunteer in emergency room at hospital in Sacramento, four hours per week for six months. | Sources: UC Davis Health: https://health.ucdavis.edu/
+2011-2014 | UC Davis | Community | Chess Club at UC Davis President (2012-2014), organizing free outdoor chess at the farmer's market twice weekly for two years. | Sources: UC Davis Campus Recreation: https://campusrecreation.ucdavis.edu/

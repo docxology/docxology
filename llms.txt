@@ -24,6 +24,9 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Software catalog: https://danielarifriedman.com/software.html
 - Full repository inventory: https://danielarifriedman.com/repositories.html
 - Software source table: https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md
+- Resume/CV PDF: https://danielarifriedman.com/resume/resume.pdf
+- Resume/CV structured JSON: https://danielarifriedman.com/data/resume.json
+- Resume/CV plaintext variants: https://danielarifriedman.com/resume/full.txt
 - Cite and verify: https://danielarifriedman.com/cite-verify.html
 - Cite and verify source: https://github.com/docxology/docxology/blob/main/pages/CITE_VERIFY.md
 - Evidence ledger: https://danielarifriedman.com/evidence.html
@@ -47,6 +50,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - People JSON: https://danielarifriedman.com/data/people.json
 - Organizations JSON: https://danielarifriedman.com/data/organizations.json
 - Claims JSON: https://danielarifriedman.com/data/claims.json
+- Resume JSON: https://danielarifriedman.com/data/resume.json
 - Reconciliation JSON: https://danielarifriedman.com/data/reconciliation.json
 - Work enrichment JSON: https://danielarifriedman.com/data/work-enrichment.json
 - Generated-file manifest: https://danielarifriedman.com/GENERATED.md
@@ -73,6 +77,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Treat pages/SOFTWARE.md as the curated software source of truth.
 - Treat discovery.html and pages/DISCOVERY.md as the place for API endpoints, source queries, and caveats about public index count mismatches.
 - Treat pages/EVIDENCE.md and data/claims.json as the claim-level source ledger.
+- Treat resume/source.json as the curated source for resume-specific records; bibliography and software content in data/resume.json is merged from data/works.json and data/software.json.
 - Treat data/reconciliation.json as the explanation layer for why curated local counts differ from public indexes.
 - Treat search.html, search-index.json, opensearch.xml, catalog.html, data/catalog.json, updates.html, GENERATED.md, and feed.xml as generated or index-facing discovery artifacts, not independent sources of truth.
 - Public APIs are freshness checks. Counts can include forks, duplicates, versioned software archives, preprints, or over-merged name variants.

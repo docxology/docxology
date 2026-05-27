@@ -60,6 +60,8 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("discovery", "page", "Discovery Map", "/discovery.html", "Canonical identifiers and public source queries.", ["agents"]),
     ("cite-verify", "page", "Cite & Verify", "/cite-verify.html", "Citation and source-of-truth rules.", ["citation"]),
     ("evidence", "page", "Evidence Ledger", "/evidence.html", "Claim-level evidence and caveats.", ["claims"]),
+    ("resume", "document", "Resume and CV", "/resume/resume.pdf", "Generated resume/CV PDF, plaintext variants, and structured JSON.", ["resume", "cv"]),
+    ("resume-verify", "page", "Resume Verification", "/resume/verify.html", "Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV.", ["resume", "cv", "verification", "hashes"]),
     ("collaborators", "page", "Collaborators", "/collaborators.html", "Research collaborator network.", ["people"]),
     ("media", "page", "Media", "/media.html", "Talks, podcasts, videos, and press.", ["media"]),
     ("art", "page", "Art", "/art.html", "Visual art and Curio Cards work.", ["art"]),
@@ -208,6 +210,36 @@ def claim_item(claim: dict) -> dict:
     }
 
 
+def resume_item(resume: dict) -> dict:
+    profile = resume["profile"]
+    contact = resume["contact"]
+    metrics = resume["metrics"]
+    section_text = " ".join(
+        str(part)
+        for part in [
+            profile.get("summary", ""),
+            " ".join(contact.get("email", [])),
+            " ".join(item.get("workplace", "") for item in resume.get("experience", [])),
+            " ".join(item.get("institution", "") for item in resume.get("education", [])),
+            " ".join(item.get("name", "") for item in resume.get("media_outreach", [])),
+            " ".join(item.get("description", "") for item in resume.get("service", [])),
+        ]
+        if part
+    )
+    return {
+        "id": "resume:structured-cv",
+        "type": "resume",
+        "title": f"{profile['name']} Resume / CV",
+        "url": "/resume/resume.pdf",
+        "summary": (
+            f"Structured CV export: {metrics['works']} works, "
+            f"{metrics['software_catalogued']} software rows, education, experience, service, media, and art-use records."
+        ),
+        "tags": ["resume", "cv", "profile", "plaintext", "pdf"],
+        "content": " ".join([profile["name"], profile["headline"], section_text]).strip(),
+    }
+
+
 def render(generated_at: str | None = None) -> str:
     works = load_json("data/works.json")["works"]
     enrichments = load_json("data/work-enrichment.json").get("works", {})
@@ -216,6 +248,7 @@ def render(generated_at: str | None = None) -> str:
     people = load_json("data/people.json")["people"]
     orgs = load_json("data/organizations.json")["organizations"]
     claims = load_json("data/claims.json")["claims"]
+    resume = load_json("data/resume.json")
     items: list[dict] = []
     for page in static_pages():
         id_, typ, title, url, summary, tags = page
@@ -226,6 +259,7 @@ def render(generated_at: str | None = None) -> str:
     items.extend(person_item(person) for person in people)
     items.extend(org_item(org) for org in orgs)
     items.extend(claim_item(claim) for claim in claims)
+    items.append(resume_item(resume))
     payload = {
         "generated_at": generated_at or generated_timestamp(),
         "source_files": [
@@ -236,6 +270,7 @@ def render(generated_at: str | None = None) -> str:
             "data/people.json",
             "data/organizations.json",
             "data/claims.json",
+            "data/resume.json",
         ],
         "count": len(items),
         "items": items,

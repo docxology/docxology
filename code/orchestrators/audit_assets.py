@@ -20,6 +20,8 @@ PATTERNS = [
     ("html", "*.html", 500_000),
     ("og-image", "og-*.jpg", 220_000),
     ("json-data", "data/*.json", 4_000_000),
+    ("resume-export", "resume/*.txt", 1_000_000),
+    ("resume-export", "resume/*.pdf", 5_000_000),
     ("citation-export", "bibliography.*", 4_000_000),
     ("site-runtime", "sw.js", 50_000),
     ("site-runtime", "manifest.json", 50_000),

@@ -28,7 +28,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 
 </div>
 
-**Quick links:** [📚 Publications](publications.html) · [📄 Works](works/) · [🔎 Search](search.html) · [🧭 Domains](domains.html) · [💻 Software](software.html) · [📁 Papers](papers/) · [🔗 All Links](pages/LINKS.md) · [🧾 Cite & Verify](cite-verify.html) · [🧭 Discovery](discovery.html) · [🗃️ Data Catalog](catalog.html) · [📝 Updates](updates.html) · [👤 Full Profile](pages/PROFILE.md) · [🤝 Collaborators](collaborators.html) · [🎥 Media & Talks](media.html) · [🎯 Consulting](#-available-for-consulting--tutoring)
+**Quick links:** [📚 Publications](publications.html) · [📄 Works](works/) · [📄 Resume/CV](resume/resume.pdf) · [🔎 Search](search.html) · [🧭 Domains](domains.html) · [💻 Software](software.html) · [📁 Papers](papers/) · [🔗 All Links](pages/LINKS.md) · [🧾 Cite & Verify](cite-verify.html) · [🧭 Discovery](discovery.html) · [🗃️ Data Catalog](catalog.html) · [📝 Updates](updates.html) · [👤 Full Profile](pages/PROFILE.md) · [🤝 Collaborators](collaborators.html) · [🎥 Media & Talks](media.html) · [🎯 Consulting](#-available-for-consulting--tutoring)
 
 ---
 
@@ -77,6 +77,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
 | 🧭 [**pages/DISCOVERY.md**](pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |
 | 🧾 [**cite-verify.html**](cite-verify.html) / [**evidence.html**](evidence.html) | **Citation and evidence layer** — preferred citation, public identifiers, source-of-truth rules, and claim ledger ([Markdown](pages/CITE_VERIFY.md)) |
+| 📄 [**resume/**](resume/) / [**data/resume.json**](data/resume.json) | **Structured resume/CV exports** — source-backed JSON, plaintext variants, and generated PDF built from canonical works, software, metrics, and resume-specific records |
 | ✅ [**pages/VERIFICATION_LOG.md**](pages/VERIFICATION_LOG.md) | **Independent verification log** — dated primary-source corroboration of load-bearing claims (Scholar metrics, EIN, NSF award, DOIs, identity graph) against sources not controlled by the subject ([JSON](data/verification-log.json)) |
 | 👤 [**pages/PROFILE.md**](pages/PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🤝 [**pages/COLLABORATORS.md**](pages/COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications and institutional map |

@@ -19,9 +19,10 @@ Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data
 
 1. **Bibliography edits** — `papers/sync_publications_html.py --apply`, then `export_bibliography.py`, then downstream HTML/JSON that consume `data/works.json` (work pages, domain pages, search index, feed, sitemap).
 2. **Software or claims edits** — `export_agent_data.py`, then evidence/catalog/search exports that read `data/claims.json` or `data/software.json`.
-3. **Changelog or manifest changes** — `build_updates_page.py` / `build_generated_manifest.py` when public changelog or generated-artifact lists change.
-4. **Freshness and QA** — public-source snapshots, external-link checks, live-site verification, accessibility/visual QA under [`reports/`](../reports/); triage bot-protection (403/429) before rewriting copy.
-5. **Health gate** — `code/orchestrators/validate_repo.py` before declaring the repo healthy.
+3. **Resume/CV edits** — `build_resume.py --all` after `resume/source.json`, bibliography/software exports, Scholar snapshot, or claim data changes.
+4. **Changelog or manifest changes** — `build_updates_page.py` / `build_generated_manifest.py` when public changelog or generated-artifact lists change.
+5. **Freshness and QA** — public-source snapshots, external-link checks, live-site verification, accessibility/visual QA under [`reports/`](../reports/); triage bot-protection (403/429) before rewriting site copy based on checker output alone.
+6. **Health gate** — `code/orchestrators/validate_repo.py` before declaring the repo healthy.
 
 ## Canonical URLs and reports
 

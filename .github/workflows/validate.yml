@@ -27,8 +27,7 @@ jobs:
         run: python -m pip install uv==0.11.6
 
       - name: Validate generated docs and structured data
-        run: python3 code/orchestrators/validate_repo.py
+        run: uv run python3 code/orchestrators/validate_repo.py
 
       - name: Run tests
-        working-directory: code/tests
-        run: uv run pytest -q
+        run: uv run pytest code/tests -q

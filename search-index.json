@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T17:00:11Z",
+  "generated_at": "2026-05-27T21:31:49Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -7,9 +7,10 @@
     "data/github-repositories.json",
     "data/people.json",
     "data/organizations.json",
-    "data/claims.json"
+    "data/claims.json",
+    "data/resume.json"
   ],
-  "count": 591,
+  "count": 594,
   "items": [
     {
       "id": "page:home",
@@ -152,6 +153,32 @@
       "content": "Evidence Ledger Claim-level evidence and caveats. claims"
     },
     {
+      "id": "page:resume",
+      "type": "document",
+      "title": "Resume and CV",
+      "url": "/resume/resume.pdf",
+      "summary": "Generated resume/CV PDF, plaintext variants, and structured JSON.",
+      "tags": [
+        "resume",
+        "cv"
+      ],
+      "content": "Resume and CV Generated resume/CV PDF, plaintext variants, and structured JSON. resume cv"
+    },
+    {
+      "id": "page:resume-verify",
+      "type": "page",
+      "title": "Resume Verification",
+      "url": "/resume/verify.html",
+      "summary": "Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV.",
+      "tags": [
+        "resume",
+        "cv",
+        "verification",
+        "hashes"
+      ],
+      "content": "Resume Verification Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV. resume cv verification hashes"
+    },
+    {
       "id": "page:collaborators",
       "type": "page",
       "title": "Collaborators",
@@ -285,7 +312,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-26.json",
+      "url": "/reports/asset_size_2026-05-27.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -9942,6 +9969,21 @@
         "medium"
       ],
       "content": "COGSEC.org is the cognitive security publication and research context linked from the profile. Prefer COGSEC pages for COGSEC-specific publication claims. Public site link and curated profile copy."
+    },
+    {
+      "id": "resume:structured-cv",
+      "type": "resume",
+      "title": "Daniel Ari Friedman Resume / CV",
+      "url": "/resume/resume.pdf",
+      "summary": "Structured CV export: 117 works, 82 software rows, education, experience, service, media, and art-use records.",
+      "tags": [
+        "resume",
+        "cv",
+        "profile",
+        "plaintext",
+        "pdf"
+      ],
+      "content": "Daniel Ari Friedman Computational biologist, Active Inference researcher, cognitive security researcher, educator, and artist Multidisciplinary researcher and open-source builder working across social insect biology, Active Inference, cognitive security, computational frameworks, education, and art. danielarifriedman@gmail.com daniel@activeinference.institute Del Norte Triplicate Active Inference Institute Complexity Adventures COGSEC Stanford Complexity Group Stealth Startup Stealth Startup Remotor fm.analytics Cryptoptera Johnson Lab / Linksvayer Lab Gordon Lab Kopp Lab Pedicab People Movers Stanford University UC Davis University of California, Davis Stanford University University of California, Davis Crystal Springs Uplands School S3E10 The FEP: A Tool for Understanding and Modelling Complex Systems (DIA 1/SESSAO 1) Lancamento do Livro: As Colonias de Formigas Sao Conscientes? From Ants to Active Inference with Daniel Ari Friedman Building Smarter AI: Active Inference and Nested Models Interaction. In Search of Daniel Friedman's Deepest Value Active Inference and The Free Energy Principle with Daniel Friedman Episode 6: Daniel Friedman - Active Inference Institute - What is Active Inference? Artist of Curio Cards 24-26 Shares Incredible Journey through Art and Science What Ant Behavior Reveals About Complexity Science with Daniel Friedman What is Active Inference?...with Daniel Friedman Great discussion with Daniel, OG Curio Card artist, cards 24, 25, 26 Daniel Friedman Interview - Adventures in NFTs #3 Banging the Drum with Daniel Friedman KB7 Fireside: Scaling Principled Games KBCast Episode 7: Kernel Block 5 Week 6 and special guest Daniel Ari Friedman Daniel Friedman Interview - Adventures in NFTs #3 Interview with Monica Kang about Complexity Weekend, with co-founder Shaun Swanson and organizer JP Gonzales Blurb in Science magazine inventing the word disinforge Complexity Weekend featured on InnovatorsBox blog, with quotes from Friedman and others Blurb in Science magazine about rethinking time use for scientists Blurb in Science magazine about what ants can teach human city planners Blurb in Science magazine about time travel Public lecture: Red Vic lecture series, San Francisco. History and philosophy of Art and Biology. Public lecture: Red Vic lecture series, San Francisco. History and philosophy of self-organization, stigmergy, and eusocial insects. Quoted in Dopamine Nation by Dr. Anna Lembke, p. 75: The world is sensory rich and causal poor. No Signal 006: Daniel Ari Friedman and Jakub Smekal || Active Inference Daniel Friedman: Drawing Decentralized Beauty From Biology Written interview with RosyBVM Radio Interview, KPOO 89.5 FM in San Francisco Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board. Co-editor, Field and Laboratory Methods for Modern Entomology. Member (MCybS), Cybernetics Society. Information Professional Association. Active Inference Institute co-founder. Davis Complexity Group. Complexity Adventures co-founder. ALIUS Research Group contributor, editor, and co-organizer. Wonderfest Science Envoy; science outreach and community training. Entomological Society of America. NeuroChoice group, Stanford Neurosciences Institute. Graduate student member of Arts Committee for Stanford Biology department. Stanford Complexity Group. Science Teaching Through Art (STAR) outreach program; poster presentations and conversations about ants at local middle and high schools. Santa Fe Institute Complex Systems Summer School, one-month residential program. Five summers of ant fieldwork during PhD under Prof. Deborah Gordon at Southwestern Research Station, Arizona. Summer field ecology class with Stanford Prof. Rodolfo Dirzo at Las Tuxtlas tropical research station, Mexico. Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville. Drosophila work with Dr. Michael Lang in Arizona. Invited peer reviewer for 1-10 articles per year across different journals. International Union for the Study of Social Insects. Stanford Center for Evolutionary and Human Genomics outreach programs, including teaching genetics in local middle schools and hosting high school students at Stanford. Stanford Bio Core Explorations hands-on lecture/workshop for undergraduates: Art and Biology. Science mentoring at Woodland High School. Drums and percussion for UC Davis production of RENT. Volunteer in emergency room at hospital in Sacramento, four hours per week for six months. Chess Club at UC Davis President (2012-2014), organizing free outdoor chess at the farmer's market twice weekly for two years."
     }
   ]
 }

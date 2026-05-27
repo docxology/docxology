@@ -1,0 +1,2215 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-05-27",
+  "source_note": "Curated from the public Coda resume export at /Users/4d/Downloads/Resume.pdf and normalized against local source-of-truth files.",
+  "profile": {
+    "name": "Daniel Ari Friedman",
+    "credential": "PhD",
+    "headline": "Computational biologist, Active Inference researcher, cognitive security researcher, educator, and artist",
+    "location": "California, USA, Earth",
+    "summary": "Multidisciplinary researcher and open-source builder working across social insect biology, Active Inference, cognitive security, computational frameworks, education, and art."
+  },
+  "contact": {
+    "email": [
+      "danielarifriedman@gmail.com",
+      "daniel@activeinference.institute"
+    ],
+    "personal_sites": [
+      "https://danielarifriedman.com/",
+      "https://cognitivesecurity.us"
+    ],
+    "voice_text": "Ask via email",
+    "github": "https://github.com/docxology",
+    "art_portfolio": "https://www.flickr.com/photos/daniel_friedman/",
+    "google_scholar": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ",
+    "linkedin": "https://www.linkedin.com/in/danielarifriedman/",
+    "keybase": "docxology",
+    "ens": "docxology.eth",
+    "orcid": "0000-0001-6232-9096"
+  },
+  "education": [
+    {
+      "id": "postdoctoral-fellow-uc-davis",
+      "degree": "Postdoctoral Fellow",
+      "institution": "University of California, Davis",
+      "location": "Davis, CA, USA",
+      "start_year": 2019,
+      "end_year": 2023,
+      "details": [
+        "Co-mentors: Prof. Brian Johnson (UC Davis) and Prof. Tim Linksvayer (Arizona State University).",
+        "NSF Postdoctoral Research Fellowship in Biology (PRFB), award DBI-2010290; NSF budget period 2020-2022 with affiliation extending to 2023.",
+        "Genomics, epigenomics, transcriptomics, and behavior in eusocial insects, mainly ants and bees.",
+        "Science research, mentoring, participation, service, and organizing events and communities online."
+      ],
+      "links": [
+        {
+          "label": "NSF DBI-2010290",
+          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+        },
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "phd-stanford",
+      "degree": "PhD",
+      "institution": "Stanford University",
+      "location": "Stanford, CA, USA",
+      "start_year": 2014,
+      "end_year": 2019,
+      "details": [
+        "Advisor: Professor Deborah M. Gordon, Biology.",
+        "Research, teaching, service, and coursework from Summer 2014 to Summer 2019.",
+        "Thesis topics: ant ecology, collective behavior, brain gene expression, and neurometabolism.",
+        "Stanford Graduate Fellow (Urbanek Family Fellowship), 2014-2017.",
+        "Co-organizer of the Stanford Complexity Group, 2016-2019.",
+        "Stanford Neuroscience NeuroChoice Grant for neurometabolism in ants, 2019, $25,000.",
+        "Stanford Systems Biology Seed Grant for gene expression and behavior in ants, 2018, $25,000.",
+        "Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.",
+        "Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.",
+        "NSF GRFP Honorable Mention, 2015 and 2016."
+      ],
+      "links": [
+        {
+          "label": "Stanford dissertation",
+          "url": "http://purl.stanford.edu/pb813wm1484"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "bsc-uc-davis",
+      "degree": "BSc in Genetics",
+      "institution": "University of California, Davis",
+      "location": "Davis, CA, USA",
+      "start_year": 2010,
+      "end_year": 2014,
+      "details": [
+        "BSc in Genetics, University of California, Davis.",
+        "Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.",
+        "Campus Community Service Silver Award, 2014.",
+        "Stanley and Jacqueline Schilling Award for Service, 2014.",
+        "Completed the Population Biology Graduate Group one-year base PhD curriculum, 2013.",
+        "Co-founder of The Aggie Transcript, an undergraduate biology journal, 2014.",
+        "Victoria Finnerty Award for Research in Drosophila, 2013.",
+        "Elected member of Phi Beta Kappa, UC Davis Chapter, 2014.",
+        "Co-organizer of the Chess Club at UC Davis, 2012-2014.",
+        "Research Scholars Program in Insect Biology, 2011-2014.",
+        "Provost's Undergraduate Fellowship for Drosophila research, 2011, $2,500."
+      ],
+      "links": [
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "high-school-csus",
+      "degree": "High School",
+      "institution": "Crystal Springs Uplands School",
+      "location": "Hillsborough, CA, USA",
+      "start_year": 2006,
+      "end_year": 2010,
+      "details": [
+        "Crystal Springs Uplands School."
+      ],
+      "links": [
+        {
+          "label": "Crystal Springs Uplands School",
+          "url": "https://www.crystal.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "del-norte-triplicate",
+      "category": "Community Organization",
+      "workplace": "Del Norte Triplicate",
+      "start_year": 2026,
+      "end_year": null,
+      "status": "ongoing",
+      "roles": [
+        "Typographical Editor"
+      ],
+      "description": "Typographical editing for The Triplicate newspaper of Del Norte County and Crescent City.",
+      "links": [
+        {
+          "label": "The Triplicate",
+          "url": "https://www.triplicate.com/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "active-inference-institute",
+      "category": "Community Organization",
+      "workplace": "Active Inference Institute",
+      "start_year": 2021,
+      "end_year": null,
+      "status": "ongoing",
+      "roles": [
+        "Co-founder",
+        "Participant",
+        "Officer",
+        "President",
+        "Treasurer"
+      ],
+      "description": "Co-founded the Active Inference Institute; current President and Treasurer.",
+      "links": [
+        {
+          "label": "AII officers",
+          "url": "https://www.activeinference.institute/officers"
+        },
+        {
+          "label": "AII",
+          "url": "https://activeinference.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "software-consulting",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "complexity-adventures",
+      "category": "Community Organization",
+      "workplace": "Complexity Adventures",
+      "start_year": 2019,
+      "end_year": 2024,
+      "roles": [
+        "Co-founder",
+        "Facilitator",
+        "Participant",
+        "Organizer"
+      ],
+      "description": "Organized activities and community around learning and applying complexity science.",
+      "links": [
+        {
+          "label": "Complexity Adventures profile",
+          "url": "https://www.complexityadventures.com/organizers/2"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "cogsec",
+      "category": "Community Organization",
+      "workplace": "COGSEC",
+      "start_year": 2019,
+      "end_year": null,
+      "status": "ongoing",
+      "roles": [
+        "Researcher"
+      ],
+      "description": "Research facilitation and participation on initiatives related to cognitive security.",
+      "links": [
+        {
+          "label": "COGSEC",
+          "url": "https://www.cogsec.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "stanford-complexity-group",
+      "category": "Community Organization",
+      "workplace": "Stanford Complexity Group",
+      "start_year": 2014,
+      "end_year": 2019,
+      "roles": [
+        "Organizer",
+        "Participant"
+      ],
+      "description": "Organized the Stanford Complexity Group while it was active.",
+      "links": [
+        {
+          "label": "Stanford",
+          "url": "https://www.stanford.edu/"
+        },
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "stealth-startup-2025",
+      "category": "Startup",
+      "workplace": "Stealth Startup",
+      "start_year": 2025,
+      "end_year": 2026,
+      "roles": [
+        "Operator"
+      ],
+      "description": "Systems modeling and related work to be public later.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "stealth-active-inference-startup",
+      "category": "Startup",
+      "workplace": "Stealth Startup",
+      "start_year": 2023,
+      "end_year": 2024,
+      "roles": [
+        "Co-founder",
+        "Operator"
+      ],
+      "description": "Stealth Active Inference startup.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "remotor",
+      "category": "Startup",
+      "workplace": "Remotor",
+      "start_year": 2019,
+      "end_year": 2023,
+      "roles": [
+        "Co-founder",
+        "Researcher"
+      ],
+      "description": "Education, online event planning, and consulting for remote teams.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "fm-analytics",
+      "category": "Startup",
+      "workplace": "fm.analytics",
+      "start_year": 2017,
+      "end_year": 2019,
+      "roles": [
+        "Co-founder",
+        "Researcher"
+      ],
+      "description": "Predictive analytics and dashboard visualizations with Prof. Glenn Magerman at KU Leuven.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "cryptoptera",
+      "category": "Startup",
+      "workplace": "Cryptoptera",
+      "start_year": 2017,
+      "end_year": 2019,
+      "roles": [
+        "Co-founder",
+        "Researcher"
+      ],
+      "description": "Three-person cryptocurrency research group.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "johnson-linksvayer-labs",
+      "category": "Research",
+      "workplace": "Johnson Lab / Linksvayer Lab",
+      "start_year": 2019,
+      "end_year": 2023,
+      "roles": [
+        "Mentor",
+        "Researcher"
+      ],
+      "description": "Postdoctoral position during NSF fellowship with Brian Johnson at UC Davis and Tim Linksvayer at Arizona State University.",
+      "links": [
+        {
+          "label": "Johnson Lab",
+          "url": "https://johnsonlab.ucdavis.edu/"
+        },
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "gordon-lab",
+      "category": "Research",
+      "workplace": "Gordon Lab",
+      "start_year": 2014,
+      "end_year": 2019,
+      "roles": [
+        "Mentor",
+        "Researcher"
+      ],
+      "description": "Graduate research, field work, wet lab, bioinformatics, and mentoring of high schoolers, undergraduates, graduate students, and non-academics.",
+      "links": [
+        {
+          "label": "Gordon Lab",
+          "url": "https://web.stanford.edu/~dmgordon/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "kopp-lab",
+      "category": "Research",
+      "workplace": "Kopp Lab",
+      "start_year": 2010,
+      "end_year": 2014,
+      "roles": [
+        "Researcher"
+      ],
+      "description": "Undergraduate research assistant with Prof. Artyom Kopp in Ecology and Evolution at UC Davis, studying non-coding DNA elements in the evolution of the Drosophila foreleg sex comb.",
+      "links": [
+        {
+          "label": "UC Davis Biology",
+          "url": "https://biology.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "pedicab-people-movers",
+      "category": "Pedicab",
+      "workplace": "Pedicab People Movers",
+      "start_year": 2014,
+      "end_year": 2019,
+      "roles": [
+        "Operator"
+      ],
+      "description": "Operated a pedicab/rickshaw at events including music festivals in California and downtown areas in Davis and San Jose.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "stanford-teaching",
+      "category": "Teaching",
+      "workplace": "Stanford University",
+      "start_year": 2015,
+      "end_year": 2016,
+      "roles": [
+        "Teacher",
+        "Organizer",
+        "Graduate Teaching Assistant"
+      ],
+      "description": "Graduate Teaching Assistant for undergraduate and graduate courses: General Biology: Cell and Molecular Biology (2015) and Ethics of Evolutionary Biology (2016).",
+      "links": [
+        {
+          "label": "Stanford Biology",
+          "url": "https://biology.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "uc-davis-developmental-biology",
+      "category": "Teaching",
+      "workplace": "UC Davis",
+      "start_year": 2014,
+      "end_year": 2014,
+      "roles": [
+        "Teacher",
+        "Organizer",
+        "Course Co-developer"
+      ],
+      "description": "Student teacher and developmental biology course co-developer with Prof. Susan Keen at UC Davis.",
+      "links": [
+        {
+          "label": "UC Davis Biology",
+          "url": "https://biology.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "nsf-prfb",
+      "year": 2020,
+      "name": "NSF Postdoctoral Research Fellowship in Biology",
+      "details": "Award DBI-2010290; NSF budget period 2020-2022.",
+      "links": [
+        {
+          "label": "NSF DBI-2010290",
+          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "stanford-graduate-fellowship",
+      "year": 2014,
+      "name": "Stanford Graduate Fellow, Urbanek Family Fellowship",
+      "details": "Stanford University, 2014-2017.",
+      "links": [
+        {
+          "label": "Stanford Graduate Fellowship",
+          "url": "https://vpge.stanford.edu/fellowships-funding/sgf"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "neurochoice-grant",
+      "year": 2019,
+      "name": "Stanford Neuroscience NeuroChoice Grant",
+      "details": "Neurometabolism in ants, $25,000.",
+      "links": [
+        {
+          "label": "Stanford Neurosciences Institute",
+          "url": "https://neuroscience.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "systems-biology-seed-grant",
+      "year": 2018,
+      "name": "Stanford Systems Biology Seed Grant",
+      "details": "Gene expression and behavior in ants, $25,000.",
+      "links": [
+        {
+          "label": "Stanford Systems Biology",
+          "url": "https://sysbio.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "theodore-roosevelt",
+      "year": 2016,
+      "name": "Theodore Roosevelt Memorial Award",
+      "details": "American Museum of Natural History, $2,500.",
+      "links": [
+        {
+          "label": "AMNH Theodore Roosevelt Grants",
+          "url": "https://www.amnh.org/research/richard-gilder-graduate-school/academics-and-research/fellowships-and-grants/theodore-roosevelt-memorial-grants"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "lewis-clark",
+      "year": 2016,
+      "name": "Lewis and Clark Fund grant",
+      "details": "American Philosophical Society, $4,000.",
+      "links": [
+        {
+          "label": "APS Lewis and Clark Fund",
+          "url": "https://www.amphilsoc.org/grants/lewis-and-clark-fund-exploration-and-field-research"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "nsf-grfp-honorable-mention",
+      "year": 2015,
+      "name": "NSF GRFP Honorable Mention",
+      "details": "Honorable Mention in 2015 and 2016.",
+      "links": [
+        {
+          "label": "NSF GRFP",
+          "url": "https://www.nsfgrfp.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "ucd-genetics-citation",
+      "year": 2014,
+      "name": "UC Davis Genetics Department Citation",
+      "details": "Highest Honors.",
+      "links": [
+        {
+          "label": "UC Davis Genetics",
+          "url": "https://genetics.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "ucd-service-awards",
+      "year": 2014,
+      "name": "UC Davis service awards",
+      "details": "Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.",
+      "links": [
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "victoria-finnerty",
+      "year": 2013,
+      "name": "Victoria Finnerty Award for Research in Drosophila",
+      "details": "UC Davis.",
+      "links": [
+        {
+          "label": "UC Davis Genetics",
+          "url": "https://genetics.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "phi-beta-kappa",
+      "year": 2014,
+      "name": "Phi Beta Kappa",
+      "details": "Elected member, UC Davis Chapter.",
+      "links": [
+        {
+          "label": "Phi Beta Kappa",
+          "url": "https://www.pbk.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "provost-undergraduate-fellowship",
+      "year": 2011,
+      "name": "Provost's Undergraduate Fellowship",
+      "details": "Drosophila research, $2,500.",
+      "links": [
+        {
+          "label": "UC Davis Undergraduate Research Center",
+          "url": "https://urc.ucdavis.edu/puf"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    }
+  ],
+  "conferences": [
+    {
+      "id": "queens-college-2025",
+      "year": 2025,
+      "event": "Queens College, CUNY, Biology",
+      "type": "Talk",
+      "title": "Inference about Foraging and Foraging as Inference",
+      "links": [
+        {
+          "label": "Queens College Biology",
+          "url": "https://www.qc.cuny.edu/academics/bio/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "troncale-2025",
+      "year": 2025,
+      "event": "Enduring Patterns, Emerging Futures: Celebrating Dr. Len Troncale",
+      "type": "Talk",
+      "title": "Systems Processes, Active Inference, and Beyond",
+      "date": "2025-09-17",
+      "links": [
+        {
+          "label": "Zenodo presentation",
+          "url": "https://doi.org/10.5281/zenodo.17138223"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "isss-2024",
+      "year": 2024,
+      "event": "ISSS 2024",
+      "type": "Workshop",
+      "title": "...And Eternity in an hour of Systems Science Education and Knowledge Engineering",
+      "links": [
+        {
+          "label": "ISSS",
+          "url": "https://isss.org/world/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "funding-commons-2024",
+      "year": 2024,
+      "event": "Funding the Commons",
+      "type": "Panel",
+      "title": "Funding AI public goods and keeping them public",
+      "links": [
+        {
+          "label": "Funding the Commons",
+          "url": "https://fundingthecommons.io/"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "eic-2024",
+      "year": 2024,
+      "event": "European Identity and Cloud Conference 2024",
+      "type": "Panel",
+      "title": "Intelligence in the Age of LLMs",
+      "links": [
+        {
+          "label": "KuppingerCole EIC speaker",
+          "url": "https://www.kuppingercole.com/events/eic2024/speakers/3516"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "esa-pacific-2022",
+      "year": 2022,
+      "event": "Entomology Society of America, Pacific Branch",
+      "type": "Talk",
+      "title": "Tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
+      "date": "2022-04-10",
+      "links": [
+        {
+          "label": "Entomological Society of America",
+          "url": "https://entsoc.org/events"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cognitio-2021",
+      "year": 2021,
+      "event": "Cognitio 2021",
+      "type": "Talk",
+      "title": "Thinking like a State: Active inference and the deep roots of complex societies",
+      "details": "Avel Guenin-Carlut, Daniel Friedman, and Virginia Bleu Knight.",
+      "links": [
+        {
+          "label": "Cognitio",
+          "url": "https://cognitio.uqam.ca/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "acm-ci-2021",
+      "year": 2021,
+      "event": "ACM-CI 2021",
+      "type": "Talk",
+      "title": "Introducing Active Inference as An Integrative Principle in The Study of Collective Intelligence",
+      "details": "Avel Guenin-Carlut and Daniel Friedman.",
+      "links": [
+        {
+          "label": "ACM Collective Intelligence",
+          "url": "https://ci.acm.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "iibm-chile-2020",
+      "year": 2020,
+      "event": "IIBM, Chile",
+      "type": "Talk",
+      "title": "Active Inference for Communicating Systems",
+      "date": "2020-11-03",
+      "details": "Invited online seminar.",
+      "links": [
+        {
+          "label": "IIBM",
+          "url": "https://www.iibm.cl/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "essig-ucd-2019",
+      "year": 2019,
+      "event": "Essig Brunch Seminar Series",
+      "type": "Talk",
+      "title": "Invited seminar, Department of Animal Behavior, University of California, Davis",
+      "date": "2019-04-05",
+      "links": [
+        {
+          "label": "UC Davis Entomology",
+          "url": "https://entomology.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "sums-ras-2018",
+      "year": 2018,
+      "event": "Stanford University Mass Spectrometry Research Symposium",
+      "type": "Talk",
+      "title": "Invited seminar, SUMS-RAS",
+      "date": "2018-10-04",
+      "links": [
+        {
+          "label": "Stanford Mass Spectrometry",
+          "url": "https://mass-spec.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "essig-berkeley-2018",
+      "year": 2018,
+      "event": "Essig Entomology Brunch",
+      "type": "Talk",
+      "title": "Invited seminar, University of California, Berkeley",
+      "date": "2018-02-06",
+      "links": [
+        {
+          "label": "Essig Museum",
+          "url": "https://essig.berkeley.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "esa-2017",
+      "year": 2017,
+      "event": "Entomology 2017",
+      "type": "Poster",
+      "title": "The role of dopamine in the regulation of foraging in the red harvester ant",
+      "links": [
+        {
+          "label": "Entomological Society of America",
+          "url": "https://entsoc.org/events/annual-meeting"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "asms-2017",
+      "year": 2017,
+      "event": "ASMS 2017",
+      "type": "Poster",
+      "title": "Quantitative LC-MS/MS analysis of dopamine in single ant brain samples",
+      "details": "KM Krasinska, DA Friedman, DM Gordon, AS Chien.",
+      "links": [
+        {
+          "label": "ASMS Annual Conference",
+          "url": "https://www.asms.org/conferences/annual-conference"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cshl-2015",
+      "year": 2015,
+      "event": "Biology and Genetics of Social Insects, CSHL 2015",
+      "type": "Poster",
+      "title": "Transcriptomic analysis of the regulation of foraging in harvester ants",
+      "details": "DA Friedman, A Pilko, DM Gordon.",
+      "links": [
+        {
+          "label": "Cold Spring Harbor Meetings",
+          "url": "https://meetings.cshl.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "dros-2014",
+      "year": 2014,
+      "event": "Drosophila Research Conference 2014",
+      "type": "Poster",
+      "title": "Evolution of sex comb enhancers in the HOX gene Scr",
+      "details": "DA Friedman, T Orenic, C McCullough, E Eksi, OY Barmina, A Kopp.",
+      "links": [
+        {
+          "label": "GSA Drosophila Conference",
+          "url": "https://genetics-gsa.org/drosophila/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "uc-davis-urc-2012",
+      "year": 2012,
+      "event": "UC Davis Undergraduate Research Conference",
+      "type": "Talk",
+      "title": "Visualizing the Integration of Sensory Neurons into a Sex-Specific Central Nervous System Circuit in 3-D",
+      "details": "DA Friedman.",
+      "links": [
+        {
+          "label": "UC Davis Undergraduate Research Center",
+          "url": "https://urc.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    }
+  ],
+  "media_outreach": [
+    {
+      "id": "fep-tool-2026",
+      "type": "Video conversation on another channel",
+      "year": 2026,
+      "name": "S3E10 The FEP: A Tool for Understanding and Modelling Complex Systems",
+      "links": [
+        {
+          "label": "BathmikeC podcast",
+          "url": "https://bathmikec.podbean.com/e/s3e10-the-fep-a-tool-for-understanding-and-modelling-complex-systems/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "ants-consciousness-book-launch-2025",
+      "type": "Video conversation on another channel",
+      "year": 2025,
+      "name": "(DIA 1/SESSAO 1) Lancamento do Livro: As Colonias de Formigas Sao Conscientes?",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=BJ-PAt3cqf4"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "love-philosophy-2024",
+      "type": "Video conversation on another channel",
+      "year": 2024,
+      "name": "From Ants to Active Inference with Daniel Ari Friedman",
+      "source": "Love and Philosophy, Andrea Hiott",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=x_VPw1K55BM"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "fp1-2024",
+      "type": "Video conversation on another channel",
+      "year": 2024,
+      "name": "Building Smarter AI: Active Inference and Nested Models",
+      "details": "Bagaev, de Vries, Friedman, Pashea.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/u3w24FtAsKw"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "math4wisdom-2024",
+      "type": "Video conversation on another channel",
+      "year": 2024,
+      "name": "Interaction. In Search of Daniel Friedman's Deepest Value",
+      "source": "Math4Wisdom",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=T05uLRbcloE"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "no-way-out-2023",
+      "type": "Video conversation on another channel",
+      "year": 2023,
+      "name": "Active Inference and The Free Energy Principle with Daniel Friedman",
+      "source": "No Way Out podcast",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=pYleeDb-B5E"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "denise-holt-2023",
+      "type": "Video conversation on another channel",
+      "year": 2023,
+      "name": "Episode 6: Daniel Friedman - Active Inference Institute - What is Active Inference?",
+      "source": "Denise Holt",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=ZyFgRBp1KE0"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "jake-gallen-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Artist of Curio Cards 24-26 Shares Incredible Journey through Art and Science",
+      "source": "Jake Gallen",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/X_F2YFJiUnY"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "making-sense-complexity-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "What Ant Behavior Reveals About Complexity Science with Daniel Friedman",
+      "source": "Making Sense of Complexity",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/lQr98-sG8r0"
+        },
+        {
+          "label": "YouTube episode",
+          "url": "https://www.youtube.com/watch?v=4qsyV38qfTw"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "inner-sense-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "What is Active Inference?...with Daniel Friedman",
+      "source": "Inner Sense",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/yHnm-zMqLvY"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "zerog-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Great discussion with Daniel, OG Curio Card artist, cards 24, 25, 26",
+      "source": "ZeroG",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/AHOGPsgJWmU"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "world-crypto-network-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Daniel Friedman Interview - Adventures in NFTs #3",
+      "source": "World Crypto Network",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=mU_IwFsEpNg"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "nicholas-pacheco-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Banging the Drum with Daniel Friedman",
+      "source": "Nicholas Pacheco",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=fBuS4yItitw"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "kernel-kb7-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "KB7 Fireside: Scaling Principled Games",
+      "source": "Kernel",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=vFOk8UR-UVQ"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "kbcast-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "KBCast Episode 7: Kernel Block 5 Week 6 and special guest Daniel Ari Friedman",
+      "source": "Active Inference Lab",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=R5zdTez8CPk"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "world-crypto-network-2021",
+      "type": "Video conversation on another channel",
+      "year": 2021,
+      "name": "Daniel Friedman Interview - Adventures in NFTs #3",
+      "source": "World Crypto Network",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/mU_IwFsEpNg"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "complexity-weekend-2020",
+      "type": "Video conversation on another channel",
+      "year": 2020,
+      "name": "Interview with Monica Kang about Complexity Weekend, with co-founder Shaun Swanson and organizer JP Gonzales",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/nEaG4xj6MCE"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "science-disinforge-2021",
+      "type": "Blurb",
+      "year": 2021,
+      "name": "Blurb in Science magazine inventing the word disinforge",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/doi/10.1126/science.abg0904"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "innovatorsbox-2021",
+      "type": "Blurb",
+      "year": 2021,
+      "name": "Complexity Weekend featured on InnovatorsBox blog, with quotes from Friedman and others",
+      "links": [
+        {
+          "label": "InnovatorsBox",
+          "url": "https://blog.innovatorsbox.com/complexity-weekend/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "science-time-use-2020",
+      "type": "Blurb",
+      "year": 2020,
+      "name": "Blurb in Science magazine about rethinking time use for scientists",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "science-city-planners-2016",
+      "type": "Blurb",
+      "year": 2016,
+      "name": "Blurb in Science magazine about what ants can teach human city planners",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/doi/abs/10.1126/science.aag1520"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "science-time-travel-2013",
+      "type": "Blurb",
+      "year": 2013,
+      "name": "Blurb in Science magazine about time travel",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "red-vic-2017",
+      "type": "Lecture",
+      "year": 2017,
+      "name": "Public lecture: Red Vic lecture series, San Francisco. History and philosophy of Art and Biology.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "red-vic-2016",
+      "type": "Lecture",
+      "year": 2016,
+      "name": "Public lecture: Red Vic lecture series, San Francisco. History and philosophy of self-organization, stigmergy, and eusocial insects.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "dopamine-nation-quote",
+      "type": "Quote",
+      "year": 2021,
+      "name": "Quoted in Dopamine Nation by Dr. Anna Lembke, p. 75: The world is sensory rich and causal poor.",
+      "links": [
+        {
+          "label": "Dopamine Nation",
+          "url": "https://www.penguinrandomhouse.com/books/624957/dopamine-nation-by-anna-lembke-md/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "no-signal-2025",
+      "type": "Profile or Interview",
+      "year": 2025,
+      "name": "No Signal 006: Daniel Ari Friedman and Jakub Smekal || Active Inference",
+      "links": [
+        {
+          "label": "No Signal",
+          "url": "https://kernel0x.substack.com/p/no-signal-006-daniel-ari-friedman"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "curio-dao-profile-2022",
+      "type": "Profile or Interview",
+      "year": 2022,
+      "name": "Daniel Friedman: Drawing Decentralized Beauty From Biology",
+      "source": "Curio DAO",
+      "links": [
+        {
+          "label": "Curio DAO Mirror",
+          "url": "https://mirror.xyz/0x8Fbf5c7Ca1295e892cC865500A8420C3316b889c/ztyis_d2IhlBUAb0LI4mCjJrvomZr939O1T71a5-R1Y"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "rosybvm-2021",
+      "type": "Profile or Interview",
+      "year": 2021,
+      "name": "Written interview with RosyBVM",
+      "links": [
+        {
+          "label": "Rosy Conversation",
+          "url": "https://rosybvm.com/2021/01/20/rosy-conversation-with-daniel-ari-friedman/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "kpoo-radio-2019",
+      "type": "Radio",
+      "year": 2019,
+      "name": "Radio Interview, KPOO 89.5 FM in San Francisco",
+      "date": "2019-02-04",
+      "links": [
+        {
+          "label": "KPOO",
+          "url": "https://kpoo.com/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    }
+  ],
+  "service": [
+    {
+      "id": "isss-board",
+      "start_year": 2022,
+      "end_year": 2024,
+      "description": "Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board.",
+      "group": "ISSS",
+      "type": "Board of Directors",
+      "links": [
+        {
+          "label": "ISSS",
+          "url": "https://www.isss.org/home/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "jove-coeditor",
+      "start_year": 2021,
+      "end_year": 2023,
+      "description": "Co-editor, Field and Laboratory Methods for Modern Entomology.",
+      "group": "JoVE",
+      "type": "Academia",
+      "links": [
+        {
+          "label": "JoVE methods collection",
+          "url": "https://www.jove.com/methods-collections/567/field-and-laboratory-methods-for-modern-entomology"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cybernetics-society",
+      "start_year": 2021,
+      "end_year": 2021,
+      "description": "Member (MCybS), Cybernetics Society.",
+      "group": "Cybernetics Society",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "Cybernetics Society",
+          "url": "http://cybsoc.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "information-professional-association",
+      "start_year": 2020,
+      "end_year": null,
+      "status": "ongoing",
+      "description": "Information Professional Association.",
+      "group": "IPA",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "IPA",
+          "url": "https://information-professionals.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "active-inference-institute-service",
+      "start_year": 2020,
+      "end_year": null,
+      "status": "ongoing",
+      "description": "Active Inference Institute co-founder.",
+      "group": "Active Inference Institute",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Active Inference Institute",
+          "url": "https://www.activeinference.institute/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "software-consulting",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "davis-complexity-group",
+      "start_year": 2020,
+      "end_year": 2023,
+      "description": "Davis Complexity Group.",
+      "group": "Davis Complexity Group",
+      "type": "Community",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "complexity-adventures-service",
+      "start_year": 2019,
+      "end_year": 2024,
+      "description": "Complexity Adventures co-founder.",
+      "group": "Complexity Adventures",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Complexity Adventures",
+          "url": "https://www.complexityadventures.com/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "alius-research-group",
+      "start_year": 2018,
+      "end_year": 2021,
+      "description": "ALIUS Research Group contributor, editor, and co-organizer.",
+      "group": "ALIUS",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "ALIUS Research Group",
+          "url": "https://www.aliusresearch.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "wonderfest",
+      "start_year": 2018,
+      "end_year": 2019,
+      "description": "Wonderfest Science Envoy; science outreach and community training.",
+      "group": "Wonderfest",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Wonderfest",
+          "url": "https://wonderfest.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "esa-membership",
+      "start_year": 2017,
+      "end_year": 2021,
+      "description": "Entomological Society of America.",
+      "group": "ESA",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "Entomological Society of America",
+          "url": "https://www.entsoc.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "neurochoice",
+      "start_year": 2017,
+      "end_year": 2019,
+      "description": "NeuroChoice group, Stanford Neurosciences Institute.",
+      "group": "Stanford",
+      "type": "Academia",
+      "links": [
+        {
+          "label": "NeuroChoice",
+          "url": "https://neurochoice.stanford.edu/purpose"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "stanford-biology-arts-committee",
+      "start_year": 2017,
+      "end_year": 2018,
+      "description": "Graduate student member of Arts Committee for Stanford Biology department.",
+      "group": "Stanford",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "Stanford Biology",
+          "url": "https://biology.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "stanford-complexity-group-service",
+      "start_year": 2016,
+      "end_year": 2019,
+      "description": "Stanford Complexity Group.",
+      "group": "Stanford Complexity Group",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford",
+          "url": "https://www.stanford.edu/"
+        },
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "star-outreach",
+      "start_year": 2016,
+      "end_year": 2016,
+      "description": "Science Teaching Through Art (STAR) outreach program; poster presentations and conversations about ants at local middle and high schools.",
+      "group": "Stanford",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford",
+          "url": "https://www.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "sfi-csss",
+      "start_year": 2015,
+      "end_year": 2015,
+      "description": "Santa Fe Institute Complex Systems Summer School, one-month residential program.",
+      "group": "Santa Fe Institute",
+      "type": "Workshop",
+      "links": [
+        {
+          "label": "Santa Fe Institute CSSS",
+          "url": "https://www.santafe.edu/engage/learn/programs/sfi-complex-systems-summer-school"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "phd-fieldwork",
+      "start_year": 2014,
+      "end_year": 2018,
+      "description": "Five summers of ant fieldwork during PhD under Prof. Deborah Gordon at Southwestern Research Station, Arizona.",
+      "group": "Gordon Lab",
+      "type": "Field work",
+      "links": [
+        {
+          "label": "Southwestern Research Station",
+          "url": "https://www.amnh.org/research/southwestern-research-station"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "las-tuxtlas-field-course",
+      "start_year": 2014,
+      "end_year": 2014,
+      "description": "Summer field ecology class with Stanford Prof. Rodolfo Dirzo at Las Tuxtlas tropical research station, Mexico.",
+      "group": "Stanford",
+      "type": "Field work",
+      "links": [
+        {
+          "label": "Los Tuxtlas Biological Station",
+          "url": "https://www.ibiologia.unam.mx/eblt/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "nimbios-workshop",
+      "start_year": 2014,
+      "end_year": 2014,
+      "description": "Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville.",
+      "group": "NIMBioS",
+      "type": "Workshop",
+      "links": [
+        {
+          "label": "NIMBioS",
+          "url": "http://www.nimbios.org/tutorials/TT_eqg"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "michael-lang-drosophila",
+      "start_year": 2014,
+      "end_year": 2014,
+      "description": "Drosophila work with Dr. Michael Lang in Arizona.",
+      "group": "Science",
+      "type": "Field work",
+      "links": [
+        {
+          "label": "Drosophila Evolution",
+          "url": "https://droseu.net/drosophila-evolution/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "peer-reviewer",
+      "start_year": 2014,
+      "end_year": null,
+      "status": "ongoing",
+      "description": "Invited peer reviewer for 1-10 articles per year across different journals.",
+      "group": "Science",
+      "type": "Academia",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "iussi-membership",
+      "start_year": 2014,
+      "end_year": 2023,
+      "description": "International Union for the Study of Social Insects.",
+      "group": "IUSSI",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "IUSSI",
+          "url": "https://iussi.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cehg-outreach",
+      "start_year": 2014,
+      "end_year": 2017,
+      "description": "Stanford Center for Evolutionary and Human Genomics outreach programs, including teaching genetics in local middle schools and hosting high school students at Stanford.",
+      "group": "Stanford",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford Center for Evolution and Human Genomics",
+          "url": "https://cehg.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "stanford-bio-core-art-biology",
+      "start_year": 2014,
+      "end_year": 2017,
+      "description": "Stanford Bio Core Explorations hands-on lecture/workshop for undergraduates: Art and Biology.",
+      "group": "Stanford",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford Biology",
+          "url": "https://biology.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "woodland-high-mentoring",
+      "start_year": 2013,
+      "end_year": 2013,
+      "description": "Science mentoring at Woodland High School.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Woodland High School",
+          "url": "https://whs.wjusd.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "rent-percussion",
+      "start_year": 2012,
+      "end_year": 2012,
+      "description": "Drums and percussion for UC Davis production of RENT.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "emergency-room-volunteer",
+      "start_year": 2012,
+      "end_year": 2013,
+      "description": "Volunteer in emergency room at hospital in Sacramento, four hours per week for six months.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "UC Davis Health",
+          "url": "https://health.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "uc-davis-chess-club",
+      "start_year": 2011,
+      "end_year": 2014,
+      "description": "Chess Club at UC Davis President (2012-2014), organizing free outdoor chess at the farmer's market twice weekly for two years.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "UC Davis Campus Recreation",
+          "url": "https://campusrecreation.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    }
+  ],
+  "art_uses": [
+    {
+      "id": "art-portfolio",
+      "year": null,
+      "name": "Art portfolio",
+      "description": "Posting drawings to an online portfolio since 2009.",
+      "links": [
+        {
+          "label": "Flickr",
+          "url": "http://flickr.com/photos/daniel_friedman/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "christies-curio-cards-2021",
+      "year": 2021,
+      "name": "Curio Cards",
+      "description": "A full Curio Cards set sold at Christie's on October 1, 2021 for 393 ETH, approximately $1.2 million.",
+      "links": [
+        {
+          "label": "Christie's Curio Cards lot",
+          "url": "https://www.christies.com/lot/lot-6337619"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "arctic-world-archive-2021",
+      "year": 2021,
+      "name": "Curio Cards",
+      "description": "Curio Cards collection stored in the Arctic World Archive with art and provenance data intended for long-duration preservation.",
+      "links": [
+        {
+          "label": "Top Dog Beach Club",
+          "url": "https://topdogbeachclub.com/non-fungible-vault/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "curio-secondary-auction-2021",
+      "year": 2021,
+      "name": "Curio Cards",
+      "description": "Public auction and market history for Curio Cards includes major 2021 sales; verify venue-specific claims before reusing exact auction-house wording.",
+      "links": [
+        {
+          "label": "Sotheby's Curio Cards",
+          "url": "https://metaverse.sothebys.com/natively-digital/lots/curio-cards-complete-set-1-30-plus-17b"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "rebelling-with-care-2019",
+      "year": 2019,
+      "name": "Art used",
+      "description": "Art used in the eBook Rebelling with Care: Exploring open technologies for commoning healthcare.",
+      "links": [
+        {
+          "label": "ResearchGate",
+          "url": "https://www.researchgate.net/publication/335911369_Rebelling_with_Care_Exploring_open_technologies_for_commoning_healthcare"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "slate-fr-2019",
+      "year": 2019,
+      "name": "Art used",
+      "description": "Art used in Slate.fr blog.",
+      "links": [
+        {
+          "label": "Slate France",
+          "url": "https://www.slate.fr/story/173103/fecondation-spermatozoide-ovule-chevalier-belle-au-bois-dormant-mythe-sexisme-naturalisation-biologie?"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "degrowth-blog-2019",
+      "year": 2019,
+      "name": "Art used",
+      "description": "Art used in degrowth blog.",
+      "links": [
+        {
+          "label": "Degrowth.info",
+          "url": "https://www.degrowth.info/blog/on-strategies-for-socioecological-transformation"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "lorena-cabeza-medium-2018",
+      "year": 2018,
+      "name": "Art used",
+      "description": "Art used in Medium post by Lorena Cabeza, August 23, 2018.",
+      "links": [
+        {
+          "label": "Medium",
+          "url": "https://medium.com/@lorenacabeza/manifiesto-la-escritura-y-la-vida-10d4c254c0bf"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "probe-magazine-2018",
+      "year": 2018,
+      "name": "Art used",
+      "description": "Cover image of Probe magazine.",
+      "links": [
+        {
+          "label": "Probe Magazine",
+          "url": "https://www.ssbprobe.com/decentraldogma-danielfriedman"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "curio-cards-2017",
+      "year": 2017,
+      "name": "Curio Cards",
+      "description": "Early Ethereum art NFT project; art for Curio Cards 24, 25, and 26.",
+      "links": [
+        {
+          "label": "Curio Cards artist",
+          "url": "https://curio.cards/artist/danielfriedman/"
+        },
+        {
+          "label": "Curio Cards docs",
+          "url": "https://docs.curio.cards/the-artists/daniel-friedman"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "bas-haring-2017",
+      "year": 2017,
+      "name": "Art used",
+      "description": "Art used in Bas Haring blog.",
+      "links": [
+        {
+          "label": "Me Judice",
+          "url": "https://www.mejudice.nl/artikelen/detail/mijn-economiemuseum-de-markt"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "vice-motherboard-2017",
+      "year": 2017,
+      "name": "Art used",
+      "description": "Art used in Vice Motherboard blog.",
+      "links": [
+        {
+          "label": "VICE Motherboard",
+          "url": "https://www.vice.com/en/article/jpaqk8/a-dollar25-million-book-heist-proves-the-printed-page-is-still-sacred"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "gsa-art-blog-2016",
+      "year": 2016,
+      "name": "Art used",
+      "description": "Featured in Genetics Society of America art blog.",
+      "links": [
+        {
+          "label": "Genes to Genomes",
+          "url": "https://genestogenomes.org/gsa-art-daniel-friedman/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "stanford-art-neuroscience-2016",
+      "year": 2016,
+      "name": "Art used",
+      "description": "Art featured by Stanford Art of Neuroscience competition.",
+      "links": [
+        {
+          "label": "Stanford Scope",
+          "url": "https://scopeblog.stanford.edu/2016/07/06/art-of-neuroscience-competition-highlights-beauty-of-the-brain/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    }
+  ]
+}

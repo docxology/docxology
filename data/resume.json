@@ -1,0 +1,5120 @@
+{
+  "generated_at": "2026-05-27T21:31:41Z",
+  "source_files": [
+    "resume/source.json",
+    "data/works.json",
+    "data/software.json",
+    "data/scholar-snapshot.json",
+    "data/claims.json"
+  ],
+  "profile": {
+    "name": "Daniel Ari Friedman",
+    "credential": "PhD",
+    "headline": "Computational biologist, Active Inference researcher, cognitive security researcher, educator, and artist",
+    "location": "California, USA, Earth",
+    "summary": "Multidisciplinary researcher and open-source builder working across social insect biology, Active Inference, cognitive security, computational frameworks, education, and art."
+  },
+  "contact": {
+    "email": [
+      "danielarifriedman@gmail.com",
+      "daniel@activeinference.institute"
+    ],
+    "personal_sites": [
+      "https://danielarifriedman.com/",
+      "https://cognitivesecurity.us"
+    ],
+    "voice_text": "Ask via email",
+    "github": "https://github.com/docxology",
+    "art_portfolio": "https://www.flickr.com/photos/daniel_friedman/",
+    "google_scholar": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ",
+    "linkedin": "https://www.linkedin.com/in/danielarifriedman/",
+    "keybase": "docxology",
+    "ens": "docxology.eth",
+    "orcid": "0000-0001-6232-9096"
+  },
+  "metrics": {
+    "works": 117,
+    "software_catalogued": 82,
+    "owned_software_catalogued": 50,
+    "aii_software_catalogued": 32,
+    "google_scholar": {
+      "citations": 764,
+      "h_index": 15,
+      "i10_index": 17,
+      "as_of": "2026-05-16",
+      "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en"
+    },
+    "docxology_public_repositories_claim": {
+      "id": "docxology-github-public-repos",
+      "claim": "The docxology GitHub profile has 286 public repositories.",
+      "status": "public-api",
+      "sources": [
+        "https://api.github.com/users/docxology",
+        "reports/public_source_snapshot_2026-05-15.json"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "GitHub REST API user profile response.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md."
+    },
+    "aii_public_repositories_claim": {
+      "id": "aii-github-public-repos",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
+      "status": "public-api",
+      "sources": [
+        "https://api.github.com/users/ActiveInferenceInstitute",
+        "reports/public_source_snapshot_2026-05-15.json"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions."
+    }
+  },
+  "education": [
+    {
+      "id": "postdoctoral-fellow-uc-davis",
+      "degree": "Postdoctoral Fellow",
+      "institution": "University of California, Davis",
+      "location": "Davis, CA, USA",
+      "start_year": 2019,
+      "end_year": 2023,
+      "details": [
+        "Co-mentors: Prof. Brian Johnson (UC Davis) and Prof. Tim Linksvayer (Arizona State University).",
+        "NSF Postdoctoral Research Fellowship in Biology (PRFB), award DBI-2010290; NSF budget period 2020-2022 with affiliation extending to 2023.",
+        "Genomics, epigenomics, transcriptomics, and behavior in eusocial insects, mainly ants and bees.",
+        "Science research, mentoring, participation, service, and organizing events and communities online."
+      ],
+      "links": [
+        {
+          "label": "NSF DBI-2010290",
+          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+        },
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "phd-stanford",
+      "degree": "PhD",
+      "institution": "Stanford University",
+      "location": "Stanford, CA, USA",
+      "start_year": 2014,
+      "end_year": 2019,
+      "details": [
+        "Advisor: Professor Deborah M. Gordon, Biology.",
+        "Research, teaching, service, and coursework from Summer 2014 to Summer 2019.",
+        "Thesis topics: ant ecology, collective behavior, brain gene expression, and neurometabolism.",
+        "Stanford Graduate Fellow (Urbanek Family Fellowship), 2014-2017.",
+        "Co-organizer of the Stanford Complexity Group, 2016-2019.",
+        "Stanford Neuroscience NeuroChoice Grant for neurometabolism in ants, 2019, $25,000.",
+        "Stanford Systems Biology Seed Grant for gene expression and behavior in ants, 2018, $25,000.",
+        "Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.",
+        "Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.",
+        "NSF GRFP Honorable Mention, 2015 and 2016."
+      ],
+      "links": [
+        {
+          "label": "Stanford dissertation",
+          "url": "http://purl.stanford.edu/pb813wm1484"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "bsc-uc-davis",
+      "degree": "BSc in Genetics",
+      "institution": "University of California, Davis",
+      "location": "Davis, CA, USA",
+      "start_year": 2010,
+      "end_year": 2014,
+      "details": [
+        "BSc in Genetics, University of California, Davis.",
+        "Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.",
+        "Campus Community Service Silver Award, 2014.",
+        "Stanley and Jacqueline Schilling Award for Service, 2014.",
+        "Completed the Population Biology Graduate Group one-year base PhD curriculum, 2013.",
+        "Co-founder of The Aggie Transcript, an undergraduate biology journal, 2014.",
+        "Victoria Finnerty Award for Research in Drosophila, 2013.",
+        "Elected member of Phi Beta Kappa, UC Davis Chapter, 2014.",
+        "Co-organizer of the Chess Club at UC Davis, 2012-2014.",
+        "Research Scholars Program in Insect Biology, 2011-2014.",
+        "Provost's Undergraduate Fellowship for Drosophila research, 2011, $2,500."
+      ],
+      "links": [
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "high-school-csus",
+      "degree": "High School",
+      "institution": "Crystal Springs Uplands School",
+      "location": "Hillsborough, CA, USA",
+      "start_year": 2006,
+      "end_year": 2010,
+      "details": [
+        "Crystal Springs Uplands School."
+      ],
+      "links": [
+        {
+          "label": "Crystal Springs Uplands School",
+          "url": "https://www.crystal.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "del-norte-triplicate",
+      "category": "Community Organization",
+      "workplace": "Del Norte Triplicate",
+      "start_year": 2026,
+      "end_year": null,
+      "status": "ongoing",
+      "roles": [
+        "Typographical Editor"
+      ],
+      "description": "Typographical editing for The Triplicate newspaper of Del Norte County and Crescent City.",
+      "links": [
+        {
+          "label": "The Triplicate",
+          "url": "https://www.triplicate.com/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "active-inference-institute",
+      "category": "Community Organization",
+      "workplace": "Active Inference Institute",
+      "start_year": 2021,
+      "end_year": null,
+      "status": "ongoing",
+      "roles": [
+        "Co-founder",
+        "Participant",
+        "Officer",
+        "President",
+        "Treasurer"
+      ],
+      "description": "Co-founded the Active Inference Institute; current President and Treasurer.",
+      "links": [
+        {
+          "label": "AII officers",
+          "url": "https://www.activeinference.institute/officers"
+        },
+        {
+          "label": "AII",
+          "url": "https://activeinference.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "software-consulting",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "complexity-adventures",
+      "category": "Community Organization",
+      "workplace": "Complexity Adventures",
+      "start_year": 2019,
+      "end_year": 2024,
+      "roles": [
+        "Co-founder",
+        "Facilitator",
+        "Participant",
+        "Organizer"
+      ],
+      "description": "Organized activities and community around learning and applying complexity science.",
+      "links": [
+        {
+          "label": "Complexity Adventures profile",
+          "url": "https://www.complexityadventures.com/organizers/2"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "cogsec",
+      "category": "Community Organization",
+      "workplace": "COGSEC",
+      "start_year": 2019,
+      "end_year": null,
+      "status": "ongoing",
+      "roles": [
+        "Researcher"
+      ],
+      "description": "Research facilitation and participation on initiatives related to cognitive security.",
+      "links": [
+        {
+          "label": "COGSEC",
+          "url": "https://www.cogsec.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "stanford-complexity-group",
+      "category": "Community Organization",
+      "workplace": "Stanford Complexity Group",
+      "start_year": 2014,
+      "end_year": 2019,
+      "roles": [
+        "Organizer",
+        "Participant"
+      ],
+      "description": "Organized the Stanford Complexity Group while it was active.",
+      "links": [
+        {
+          "label": "Stanford",
+          "url": "https://www.stanford.edu/"
+        },
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "stealth-startup-2025",
+      "category": "Startup",
+      "workplace": "Stealth Startup",
+      "start_year": 2025,
+      "end_year": 2026,
+      "roles": [
+        "Operator"
+      ],
+      "description": "Systems modeling and related work to be public later.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "stealth-active-inference-startup",
+      "category": "Startup",
+      "workplace": "Stealth Startup",
+      "start_year": 2023,
+      "end_year": 2024,
+      "roles": [
+        "Co-founder",
+        "Operator"
+      ],
+      "description": "Stealth Active Inference startup.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "remotor",
+      "category": "Startup",
+      "workplace": "Remotor",
+      "start_year": 2019,
+      "end_year": 2023,
+      "roles": [
+        "Co-founder",
+        "Researcher"
+      ],
+      "description": "Education, online event planning, and consulting for remote teams.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "fm-analytics",
+      "category": "Startup",
+      "workplace": "fm.analytics",
+      "start_year": 2017,
+      "end_year": 2019,
+      "roles": [
+        "Co-founder",
+        "Researcher"
+      ],
+      "description": "Predictive analytics and dashboard visualizations with Prof. Glenn Magerman at KU Leuven.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "cryptoptera",
+      "category": "Startup",
+      "workplace": "Cryptoptera",
+      "start_year": 2017,
+      "end_year": 2019,
+      "roles": [
+        "Co-founder",
+        "Researcher"
+      ],
+      "description": "Three-person cryptocurrency research group.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "johnson-linksvayer-labs",
+      "category": "Research",
+      "workplace": "Johnson Lab / Linksvayer Lab",
+      "start_year": 2019,
+      "end_year": 2023,
+      "roles": [
+        "Mentor",
+        "Researcher"
+      ],
+      "description": "Postdoctoral position during NSF fellowship with Brian Johnson at UC Davis and Tim Linksvayer at Arizona State University.",
+      "links": [
+        {
+          "label": "Johnson Lab",
+          "url": "https://johnsonlab.ucdavis.edu/"
+        },
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "gordon-lab",
+      "category": "Research",
+      "workplace": "Gordon Lab",
+      "start_year": 2014,
+      "end_year": 2019,
+      "roles": [
+        "Mentor",
+        "Researcher"
+      ],
+      "description": "Graduate research, field work, wet lab, bioinformatics, and mentoring of high schoolers, undergraduates, graduate students, and non-academics.",
+      "links": [
+        {
+          "label": "Gordon Lab",
+          "url": "https://web.stanford.edu/~dmgordon/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "kopp-lab",
+      "category": "Research",
+      "workplace": "Kopp Lab",
+      "start_year": 2010,
+      "end_year": 2014,
+      "roles": [
+        "Researcher"
+      ],
+      "description": "Undergraduate research assistant with Prof. Artyom Kopp in Ecology and Evolution at UC Davis, studying non-coding DNA elements in the evolution of the Drosophila foreleg sex comb.",
+      "links": [
+        {
+          "label": "UC Davis Biology",
+          "url": "https://biology.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "pedicab-people-movers",
+      "category": "Pedicab",
+      "workplace": "Pedicab People Movers",
+      "start_year": 2014,
+      "end_year": 2019,
+      "roles": [
+        "Operator"
+      ],
+      "description": "Operated a pedicab/rickshaw at events including music festivals in California and downtown areas in Davis and San Jose.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "stanford-teaching",
+      "category": "Teaching",
+      "workplace": "Stanford University",
+      "start_year": 2015,
+      "end_year": 2016,
+      "roles": [
+        "Teacher",
+        "Organizer",
+        "Graduate Teaching Assistant"
+      ],
+      "description": "Graduate Teaching Assistant for undergraduate and graduate courses: General Biology: Cell and Molecular Biology (2015) and Ethics of Evolutionary Biology (2016).",
+      "links": [
+        {
+          "label": "Stanford Biology",
+          "url": "https://biology.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "uc-davis-developmental-biology",
+      "category": "Teaching",
+      "workplace": "UC Davis",
+      "start_year": 2014,
+      "end_year": 2014,
+      "roles": [
+        "Teacher",
+        "Organizer",
+        "Course Co-developer"
+      ],
+      "description": "Student teacher and developmental biology course co-developer with Prof. Susan Keen at UC Davis.",
+      "links": [
+        {
+          "label": "UC Davis Biology",
+          "url": "https://biology.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "nsf-prfb",
+      "year": 2020,
+      "name": "NSF Postdoctoral Research Fellowship in Biology",
+      "details": "Award DBI-2010290; NSF budget period 2020-2022.",
+      "links": [
+        {
+          "label": "NSF DBI-2010290",
+          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "stanford-graduate-fellowship",
+      "year": 2014,
+      "name": "Stanford Graduate Fellow, Urbanek Family Fellowship",
+      "details": "Stanford University, 2014-2017.",
+      "links": [
+        {
+          "label": "Stanford Graduate Fellowship",
+          "url": "https://vpge.stanford.edu/fellowships-funding/sgf"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "neurochoice-grant",
+      "year": 2019,
+      "name": "Stanford Neuroscience NeuroChoice Grant",
+      "details": "Neurometabolism in ants, $25,000.",
+      "links": [
+        {
+          "label": "Stanford Neurosciences Institute",
+          "url": "https://neuroscience.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "systems-biology-seed-grant",
+      "year": 2018,
+      "name": "Stanford Systems Biology Seed Grant",
+      "details": "Gene expression and behavior in ants, $25,000.",
+      "links": [
+        {
+          "label": "Stanford Systems Biology",
+          "url": "https://sysbio.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "theodore-roosevelt",
+      "year": 2016,
+      "name": "Theodore Roosevelt Memorial Award",
+      "details": "American Museum of Natural History, $2,500.",
+      "links": [
+        {
+          "label": "AMNH Theodore Roosevelt Grants",
+          "url": "https://www.amnh.org/research/richard-gilder-graduate-school/academics-and-research/fellowships-and-grants/theodore-roosevelt-memorial-grants"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "lewis-clark",
+      "year": 2016,
+      "name": "Lewis and Clark Fund grant",
+      "details": "American Philosophical Society, $4,000.",
+      "links": [
+        {
+          "label": "APS Lewis and Clark Fund",
+          "url": "https://www.amphilsoc.org/grants/lewis-and-clark-fund-exploration-and-field-research"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "nsf-grfp-honorable-mention",
+      "year": 2015,
+      "name": "NSF GRFP Honorable Mention",
+      "details": "Honorable Mention in 2015 and 2016.",
+      "links": [
+        {
+          "label": "NSF GRFP",
+          "url": "https://www.nsfgrfp.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "ucd-genetics-citation",
+      "year": 2014,
+      "name": "UC Davis Genetics Department Citation",
+      "details": "Highest Honors.",
+      "links": [
+        {
+          "label": "UC Davis Genetics",
+          "url": "https://genetics.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "ucd-service-awards",
+      "year": 2014,
+      "name": "UC Davis service awards",
+      "details": "Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.",
+      "links": [
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "victoria-finnerty",
+      "year": 2013,
+      "name": "Victoria Finnerty Award for Research in Drosophila",
+      "details": "UC Davis.",
+      "links": [
+        {
+          "label": "UC Davis Genetics",
+          "url": "https://genetics.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "phi-beta-kappa",
+      "year": 2014,
+      "name": "Phi Beta Kappa",
+      "details": "Elected member, UC Davis Chapter.",
+      "links": [
+        {
+          "label": "Phi Beta Kappa",
+          "url": "https://www.pbk.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "provost-undergraduate-fellowship",
+      "year": 2011,
+      "name": "Provost's Undergraduate Fellowship",
+      "details": "Drosophila research, $2,500.",
+      "links": [
+        {
+          "label": "UC Davis Undergraduate Research Center",
+          "url": "https://urc.ucdavis.edu/puf"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    }
+  ],
+  "conferences": [
+    {
+      "id": "queens-college-2025",
+      "year": 2025,
+      "event": "Queens College, CUNY, Biology",
+      "type": "Talk",
+      "title": "Inference about Foraging and Foraging as Inference",
+      "links": [
+        {
+          "label": "Queens College Biology",
+          "url": "https://www.qc.cuny.edu/academics/bio/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "troncale-2025",
+      "year": 2025,
+      "event": "Enduring Patterns, Emerging Futures: Celebrating Dr. Len Troncale",
+      "type": "Talk",
+      "title": "Systems Processes, Active Inference, and Beyond",
+      "date": "2025-09-17",
+      "links": [
+        {
+          "label": "Zenodo presentation",
+          "url": "https://doi.org/10.5281/zenodo.17138223"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "isss-2024",
+      "year": 2024,
+      "event": "ISSS 2024",
+      "type": "Workshop",
+      "title": "...And Eternity in an hour of Systems Science Education and Knowledge Engineering",
+      "links": [
+        {
+          "label": "ISSS",
+          "url": "https://isss.org/world/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "funding-commons-2024",
+      "year": 2024,
+      "event": "Funding the Commons",
+      "type": "Panel",
+      "title": "Funding AI public goods and keeping them public",
+      "links": [
+        {
+          "label": "Funding the Commons",
+          "url": "https://fundingthecommons.io/"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "eic-2024",
+      "year": 2024,
+      "event": "European Identity and Cloud Conference 2024",
+      "type": "Panel",
+      "title": "Intelligence in the Age of LLMs",
+      "links": [
+        {
+          "label": "KuppingerCole EIC speaker",
+          "url": "https://www.kuppingercole.com/events/eic2024/speakers/3516"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "esa-pacific-2022",
+      "year": 2022,
+      "event": "Entomology Society of America, Pacific Branch",
+      "type": "Talk",
+      "title": "Tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
+      "date": "2022-04-10",
+      "links": [
+        {
+          "label": "Entomological Society of America",
+          "url": "https://entsoc.org/events"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cognitio-2021",
+      "year": 2021,
+      "event": "Cognitio 2021",
+      "type": "Talk",
+      "title": "Thinking like a State: Active inference and the deep roots of complex societies",
+      "details": "Avel Guenin-Carlut, Daniel Friedman, and Virginia Bleu Knight.",
+      "links": [
+        {
+          "label": "Cognitio",
+          "url": "https://cognitio.uqam.ca/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "acm-ci-2021",
+      "year": 2021,
+      "event": "ACM-CI 2021",
+      "type": "Talk",
+      "title": "Introducing Active Inference as An Integrative Principle in The Study of Collective Intelligence",
+      "details": "Avel Guenin-Carlut and Daniel Friedman.",
+      "links": [
+        {
+          "label": "ACM Collective Intelligence",
+          "url": "https://ci.acm.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "iibm-chile-2020",
+      "year": 2020,
+      "event": "IIBM, Chile",
+      "type": "Talk",
+      "title": "Active Inference for Communicating Systems",
+      "date": "2020-11-03",
+      "details": "Invited online seminar.",
+      "links": [
+        {
+          "label": "IIBM",
+          "url": "https://www.iibm.cl/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "essig-ucd-2019",
+      "year": 2019,
+      "event": "Essig Brunch Seminar Series",
+      "type": "Talk",
+      "title": "Invited seminar, Department of Animal Behavior, University of California, Davis",
+      "date": "2019-04-05",
+      "links": [
+        {
+          "label": "UC Davis Entomology",
+          "url": "https://entomology.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "sums-ras-2018",
+      "year": 2018,
+      "event": "Stanford University Mass Spectrometry Research Symposium",
+      "type": "Talk",
+      "title": "Invited seminar, SUMS-RAS",
+      "date": "2018-10-04",
+      "links": [
+        {
+          "label": "Stanford Mass Spectrometry",
+          "url": "https://mass-spec.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "essig-berkeley-2018",
+      "year": 2018,
+      "event": "Essig Entomology Brunch",
+      "type": "Talk",
+      "title": "Invited seminar, University of California, Berkeley",
+      "date": "2018-02-06",
+      "links": [
+        {
+          "label": "Essig Museum",
+          "url": "https://essig.berkeley.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "esa-2017",
+      "year": 2017,
+      "event": "Entomology 2017",
+      "type": "Poster",
+      "title": "The role of dopamine in the regulation of foraging in the red harvester ant",
+      "links": [
+        {
+          "label": "Entomological Society of America",
+          "url": "https://entsoc.org/events/annual-meeting"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "asms-2017",
+      "year": 2017,
+      "event": "ASMS 2017",
+      "type": "Poster",
+      "title": "Quantitative LC-MS/MS analysis of dopamine in single ant brain samples",
+      "details": "KM Krasinska, DA Friedman, DM Gordon, AS Chien.",
+      "links": [
+        {
+          "label": "ASMS Annual Conference",
+          "url": "https://www.asms.org/conferences/annual-conference"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cshl-2015",
+      "year": 2015,
+      "event": "Biology and Genetics of Social Insects, CSHL 2015",
+      "type": "Poster",
+      "title": "Transcriptomic analysis of the regulation of foraging in harvester ants",
+      "details": "DA Friedman, A Pilko, DM Gordon.",
+      "links": [
+        {
+          "label": "Cold Spring Harbor Meetings",
+          "url": "https://meetings.cshl.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "dros-2014",
+      "year": 2014,
+      "event": "Drosophila Research Conference 2014",
+      "type": "Poster",
+      "title": "Evolution of sex comb enhancers in the HOX gene Scr",
+      "details": "DA Friedman, T Orenic, C McCullough, E Eksi, OY Barmina, A Kopp.",
+      "links": [
+        {
+          "label": "GSA Drosophila Conference",
+          "url": "https://genetics-gsa.org/drosophila/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "uc-davis-urc-2012",
+      "year": 2012,
+      "event": "UC Davis Undergraduate Research Conference",
+      "type": "Talk",
+      "title": "Visualizing the Integration of Sensory Neurons into a Sex-Specific Central Nervous System Circuit in 3-D",
+      "details": "DA Friedman.",
+      "links": [
+        {
+          "label": "UC Davis Undergraduate Research Center",
+          "url": "https://urc.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    }
+  ],
+  "media_outreach": [
+    {
+      "id": "fep-tool-2026",
+      "type": "Video conversation on another channel",
+      "year": 2026,
+      "name": "S3E10 The FEP: A Tool for Understanding and Modelling Complex Systems",
+      "links": [
+        {
+          "label": "BathmikeC podcast",
+          "url": "https://bathmikec.podbean.com/e/s3e10-the-fep-a-tool-for-understanding-and-modelling-complex-systems/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "ants-consciousness-book-launch-2025",
+      "type": "Video conversation on another channel",
+      "year": 2025,
+      "name": "(DIA 1/SESSAO 1) Lancamento do Livro: As Colonias de Formigas Sao Conscientes?",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=BJ-PAt3cqf4"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "love-philosophy-2024",
+      "type": "Video conversation on another channel",
+      "year": 2024,
+      "name": "From Ants to Active Inference with Daniel Ari Friedman",
+      "source": "Love and Philosophy, Andrea Hiott",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=x_VPw1K55BM"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "fp1-2024",
+      "type": "Video conversation on another channel",
+      "year": 2024,
+      "name": "Building Smarter AI: Active Inference and Nested Models",
+      "details": "Bagaev, de Vries, Friedman, Pashea.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/u3w24FtAsKw"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "math4wisdom-2024",
+      "type": "Video conversation on another channel",
+      "year": 2024,
+      "name": "Interaction. In Search of Daniel Friedman's Deepest Value",
+      "source": "Math4Wisdom",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=T05uLRbcloE"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "no-way-out-2023",
+      "type": "Video conversation on another channel",
+      "year": 2023,
+      "name": "Active Inference and The Free Energy Principle with Daniel Friedman",
+      "source": "No Way Out podcast",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=pYleeDb-B5E"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "denise-holt-2023",
+      "type": "Video conversation on another channel",
+      "year": 2023,
+      "name": "Episode 6: Daniel Friedman - Active Inference Institute - What is Active Inference?",
+      "source": "Denise Holt",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=ZyFgRBp1KE0"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "jake-gallen-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Artist of Curio Cards 24-26 Shares Incredible Journey through Art and Science",
+      "source": "Jake Gallen",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/X_F2YFJiUnY"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "making-sense-complexity-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "What Ant Behavior Reveals About Complexity Science with Daniel Friedman",
+      "source": "Making Sense of Complexity",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/lQr98-sG8r0"
+        },
+        {
+          "label": "YouTube episode",
+          "url": "https://www.youtube.com/watch?v=4qsyV38qfTw"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "inner-sense-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "What is Active Inference?...with Daniel Friedman",
+      "source": "Inner Sense",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/yHnm-zMqLvY"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "zerog-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Great discussion with Daniel, OG Curio Card artist, cards 24, 25, 26",
+      "source": "ZeroG",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/AHOGPsgJWmU"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "world-crypto-network-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Daniel Friedman Interview - Adventures in NFTs #3",
+      "source": "World Crypto Network",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=mU_IwFsEpNg"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "nicholas-pacheco-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "Banging the Drum with Daniel Friedman",
+      "source": "Nicholas Pacheco",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=fBuS4yItitw"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "kernel-kb7-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "KB7 Fireside: Scaling Principled Games",
+      "source": "Kernel",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=vFOk8UR-UVQ"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "kbcast-2022",
+      "type": "Video conversation on another channel",
+      "year": 2022,
+      "name": "KBCast Episode 7: Kernel Block 5 Week 6 and special guest Daniel Ari Friedman",
+      "source": "Active Inference Lab",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=R5zdTez8CPk"
+        }
+      ],
+      "variants": [
+        "full",
+        "software-consulting"
+      ]
+    },
+    {
+      "id": "world-crypto-network-2021",
+      "type": "Video conversation on another channel",
+      "year": 2021,
+      "name": "Daniel Friedman Interview - Adventures in NFTs #3",
+      "source": "World Crypto Network",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/mU_IwFsEpNg"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "complexity-weekend-2020",
+      "type": "Video conversation on another channel",
+      "year": 2020,
+      "name": "Interview with Monica Kang about Complexity Weekend, with co-founder Shaun Swanson and organizer JP Gonzales",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://youtu.be/nEaG4xj6MCE"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "science-disinforge-2021",
+      "type": "Blurb",
+      "year": 2021,
+      "name": "Blurb in Science magazine inventing the word disinforge",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/doi/10.1126/science.abg0904"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "innovatorsbox-2021",
+      "type": "Blurb",
+      "year": 2021,
+      "name": "Complexity Weekend featured on InnovatorsBox blog, with quotes from Friedman and others",
+      "links": [
+        {
+          "label": "InnovatorsBox",
+          "url": "https://blog.innovatorsbox.com/complexity-weekend/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "science-time-use-2020",
+      "type": "Blurb",
+      "year": 2020,
+      "name": "Blurb in Science magazine about rethinking time use for scientists",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "science-city-planners-2016",
+      "type": "Blurb",
+      "year": 2016,
+      "name": "Blurb in Science magazine about what ants can teach human city planners",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/doi/abs/10.1126/science.aag1520"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "science-time-travel-2013",
+      "type": "Blurb",
+      "year": 2013,
+      "name": "Blurb in Science magazine about time travel",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "red-vic-2017",
+      "type": "Lecture",
+      "year": 2017,
+      "name": "Public lecture: Red Vic lecture series, San Francisco. History and philosophy of Art and Biology.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "red-vic-2016",
+      "type": "Lecture",
+      "year": 2016,
+      "name": "Public lecture: Red Vic lecture series, San Francisco. History and philosophy of self-organization, stigmergy, and eusocial insects.",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "dopamine-nation-quote",
+      "type": "Quote",
+      "year": 2021,
+      "name": "Quoted in Dopamine Nation by Dr. Anna Lembke, p. 75: The world is sensory rich and causal poor.",
+      "links": [
+        {
+          "label": "Dopamine Nation",
+          "url": "https://www.penguinrandomhouse.com/books/624957/dopamine-nation-by-anna-lembke-md/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "no-signal-2025",
+      "type": "Profile or Interview",
+      "year": 2025,
+      "name": "No Signal 006: Daniel Ari Friedman and Jakub Smekal || Active Inference",
+      "links": [
+        {
+          "label": "No Signal",
+          "url": "https://kernel0x.substack.com/p/no-signal-006-daniel-ari-friedman"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "curio-dao-profile-2022",
+      "type": "Profile or Interview",
+      "year": 2022,
+      "name": "Daniel Friedman: Drawing Decentralized Beauty From Biology",
+      "source": "Curio DAO",
+      "links": [
+        {
+          "label": "Curio DAO Mirror",
+          "url": "https://mirror.xyz/0x8Fbf5c7Ca1295e892cC865500A8420C3316b889c/ztyis_d2IhlBUAb0LI4mCjJrvomZr939O1T71a5-R1Y"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "rosybvm-2021",
+      "type": "Profile or Interview",
+      "year": 2021,
+      "name": "Written interview with RosyBVM",
+      "links": [
+        {
+          "label": "Rosy Conversation",
+          "url": "https://rosybvm.com/2021/01/20/rosy-conversation-with-daniel-ari-friedman/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "kpoo-radio-2019",
+      "type": "Radio",
+      "year": 2019,
+      "name": "Radio Interview, KPOO 89.5 FM in San Francisco",
+      "date": "2019-02-04",
+      "links": [
+        {
+          "label": "KPOO",
+          "url": "https://kpoo.com/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    }
+  ],
+  "service": [
+    {
+      "id": "isss-board",
+      "start_year": 2022,
+      "end_year": 2024,
+      "description": "Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board.",
+      "group": "ISSS",
+      "type": "Board of Directors",
+      "links": [
+        {
+          "label": "ISSS",
+          "url": "https://www.isss.org/home/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "jove-coeditor",
+      "start_year": 2021,
+      "end_year": 2023,
+      "description": "Co-editor, Field and Laboratory Methods for Modern Entomology.",
+      "group": "JoVE",
+      "type": "Academia",
+      "links": [
+        {
+          "label": "JoVE methods collection",
+          "url": "https://www.jove.com/methods-collections/567/field-and-laboratory-methods-for-modern-entomology"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cybernetics-society",
+      "start_year": 2021,
+      "end_year": 2021,
+      "description": "Member (MCybS), Cybernetics Society.",
+      "group": "Cybernetics Society",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "Cybernetics Society",
+          "url": "http://cybsoc.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "information-professional-association",
+      "start_year": 2020,
+      "end_year": null,
+      "status": "ongoing",
+      "description": "Information Professional Association.",
+      "group": "IPA",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "IPA",
+          "url": "https://information-professionals.org/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "active-inference-institute-service",
+      "start_year": 2020,
+      "end_year": null,
+      "status": "ongoing",
+      "description": "Active Inference Institute co-founder.",
+      "group": "Active Inference Institute",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Active Inference Institute",
+          "url": "https://www.activeinference.institute/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "software-consulting",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "davis-complexity-group",
+      "start_year": 2020,
+      "end_year": 2023,
+      "description": "Davis Complexity Group.",
+      "group": "Davis Complexity Group",
+      "type": "Community",
+      "links": [
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "complexity-adventures-service",
+      "start_year": 2019,
+      "end_year": 2024,
+      "description": "Complexity Adventures co-founder.",
+      "group": "Complexity Adventures",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Complexity Adventures",
+          "url": "https://www.complexityadventures.com/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "alius-research-group",
+      "start_year": 2018,
+      "end_year": 2021,
+      "description": "ALIUS Research Group contributor, editor, and co-organizer.",
+      "group": "ALIUS",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "ALIUS Research Group",
+          "url": "https://www.aliusresearch.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "wonderfest",
+      "start_year": 2018,
+      "end_year": 2019,
+      "description": "Wonderfest Science Envoy; science outreach and community training.",
+      "group": "Wonderfest",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Wonderfest",
+          "url": "https://wonderfest.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "esa-membership",
+      "start_year": 2017,
+      "end_year": 2021,
+      "description": "Entomological Society of America.",
+      "group": "ESA",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "Entomological Society of America",
+          "url": "https://www.entsoc.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "neurochoice",
+      "start_year": 2017,
+      "end_year": 2019,
+      "description": "NeuroChoice group, Stanford Neurosciences Institute.",
+      "group": "Stanford",
+      "type": "Academia",
+      "links": [
+        {
+          "label": "NeuroChoice",
+          "url": "https://neurochoice.stanford.edu/purpose"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "stanford-biology-arts-committee",
+      "start_year": 2017,
+      "end_year": 2018,
+      "description": "Graduate student member of Arts Committee for Stanford Biology department.",
+      "group": "Stanford",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "Stanford Biology",
+          "url": "https://biology.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "stanford-complexity-group-service",
+      "start_year": 2016,
+      "end_year": 2019,
+      "description": "Stanford Complexity Group.",
+      "group": "Stanford Complexity Group",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford",
+          "url": "https://www.stanford.edu/"
+        },
+        {
+          "label": "verification",
+          "url": "https://danielarifriedman.com/resume/verify.html"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "star-outreach",
+      "start_year": 2016,
+      "end_year": 2016,
+      "description": "Science Teaching Through Art (STAR) outreach program; poster presentations and conversations about ants at local middle and high schools.",
+      "group": "Stanford",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford",
+          "url": "https://www.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "sfi-csss",
+      "start_year": 2015,
+      "end_year": 2015,
+      "description": "Santa Fe Institute Complex Systems Summer School, one-month residential program.",
+      "group": "Santa Fe Institute",
+      "type": "Workshop",
+      "links": [
+        {
+          "label": "Santa Fe Institute CSSS",
+          "url": "https://www.santafe.edu/engage/learn/programs/sfi-complex-systems-summer-school"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "phd-fieldwork",
+      "start_year": 2014,
+      "end_year": 2018,
+      "description": "Five summers of ant fieldwork during PhD under Prof. Deborah Gordon at Southwestern Research Station, Arizona.",
+      "group": "Gordon Lab",
+      "type": "Field work",
+      "links": [
+        {
+          "label": "Southwestern Research Station",
+          "url": "https://www.amnh.org/research/southwestern-research-station"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "las-tuxtlas-field-course",
+      "start_year": 2014,
+      "end_year": 2014,
+      "description": "Summer field ecology class with Stanford Prof. Rodolfo Dirzo at Las Tuxtlas tropical research station, Mexico.",
+      "group": "Stanford",
+      "type": "Field work",
+      "links": [
+        {
+          "label": "Los Tuxtlas Biological Station",
+          "url": "https://www.ibiologia.unam.mx/eblt/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "nimbios-workshop",
+      "start_year": 2014,
+      "end_year": 2014,
+      "description": "Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville.",
+      "group": "NIMBioS",
+      "type": "Workshop",
+      "links": [
+        {
+          "label": "NIMBioS",
+          "url": "http://www.nimbios.org/tutorials/TT_eqg"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "michael-lang-drosophila",
+      "start_year": 2014,
+      "end_year": 2014,
+      "description": "Drosophila work with Dr. Michael Lang in Arizona.",
+      "group": "Science",
+      "type": "Field work",
+      "links": [
+        {
+          "label": "Drosophila Evolution",
+          "url": "https://droseu.net/drosophila-evolution/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "peer-reviewer",
+      "start_year": 2014,
+      "end_year": null,
+      "status": "ongoing",
+      "description": "Invited peer reviewer for 1-10 articles per year across different journals.",
+      "group": "Science",
+      "type": "Academia",
+      "links": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "iussi-membership",
+      "start_year": 2014,
+      "end_year": 2023,
+      "description": "International Union for the Study of Social Insects.",
+      "group": "IUSSI",
+      "type": "Membership",
+      "links": [
+        {
+          "label": "IUSSI",
+          "url": "https://iussi.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "academic"
+      ]
+    },
+    {
+      "id": "cehg-outreach",
+      "start_year": 2014,
+      "end_year": 2017,
+      "description": "Stanford Center for Evolutionary and Human Genomics outreach programs, including teaching genetics in local middle schools and hosting high school students at Stanford.",
+      "group": "Stanford",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford Center for Evolution and Human Genomics",
+          "url": "https://cehg.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "stanford-bio-core-art-biology",
+      "start_year": 2014,
+      "end_year": 2017,
+      "description": "Stanford Bio Core Explorations hands-on lecture/workshop for undergraduates: Art and Biology.",
+      "group": "Stanford",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Stanford Biology",
+          "url": "https://biology.stanford.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "woodland-high-mentoring",
+      "start_year": 2013,
+      "end_year": 2013,
+      "description": "Science mentoring at Woodland High School.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "Woodland High School",
+          "url": "https://whs.wjusd.org/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "rent-percussion",
+      "start_year": 2012,
+      "end_year": 2012,
+      "description": "Drums and percussion for UC Davis production of RENT.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "UC Davis",
+          "url": "https://www.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "emergency-room-volunteer",
+      "start_year": 2012,
+      "end_year": 2013,
+      "description": "Volunteer in emergency room at hospital in Sacramento, four hours per week for six months.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "UC Davis Health",
+          "url": "https://health.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    },
+    {
+      "id": "uc-davis-chess-club",
+      "start_year": 2011,
+      "end_year": 2014,
+      "description": "Chess Club at UC Davis President (2012-2014), organizing free outdoor chess at the farmer's market twice weekly for two years.",
+      "group": "UC Davis",
+      "type": "Community",
+      "links": [
+        {
+          "label": "UC Davis Campus Recreation",
+          "url": "https://campusrecreation.ucdavis.edu/"
+        }
+      ],
+      "variants": [
+        "full",
+        "teaching-service"
+      ]
+    }
+  ],
+  "art_uses": [
+    {
+      "id": "art-portfolio",
+      "year": null,
+      "name": "Art portfolio",
+      "description": "Posting drawings to an online portfolio since 2009.",
+      "links": [
+        {
+          "label": "Flickr",
+          "url": "http://flickr.com/photos/daniel_friedman/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "christies-curio-cards-2021",
+      "year": 2021,
+      "name": "Curio Cards",
+      "description": "A full Curio Cards set sold at Christie's on October 1, 2021 for 393 ETH, approximately $1.2 million.",
+      "links": [
+        {
+          "label": "Christie's Curio Cards lot",
+          "url": "https://www.christies.com/lot/lot-6337619"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "arctic-world-archive-2021",
+      "year": 2021,
+      "name": "Curio Cards",
+      "description": "Curio Cards collection stored in the Arctic World Archive with art and provenance data intended for long-duration preservation.",
+      "links": [
+        {
+          "label": "Top Dog Beach Club",
+          "url": "https://topdogbeachclub.com/non-fungible-vault/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "curio-secondary-auction-2021",
+      "year": 2021,
+      "name": "Curio Cards",
+      "description": "Public auction and market history for Curio Cards includes major 2021 sales; verify venue-specific claims before reusing exact auction-house wording.",
+      "links": [
+        {
+          "label": "Sotheby's Curio Cards",
+          "url": "https://metaverse.sothebys.com/natively-digital/lots/curio-cards-complete-set-1-30-plus-17b"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "rebelling-with-care-2019",
+      "year": 2019,
+      "name": "Art used",
+      "description": "Art used in the eBook Rebelling with Care: Exploring open technologies for commoning healthcare.",
+      "links": [
+        {
+          "label": "ResearchGate",
+          "url": "https://www.researchgate.net/publication/335911369_Rebelling_with_Care_Exploring_open_technologies_for_commoning_healthcare"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "slate-fr-2019",
+      "year": 2019,
+      "name": "Art used",
+      "description": "Art used in Slate.fr blog.",
+      "links": [
+        {
+          "label": "Slate France",
+          "url": "https://www.slate.fr/story/173103/fecondation-spermatozoide-ovule-chevalier-belle-au-bois-dormant-mythe-sexisme-naturalisation-biologie?"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "degrowth-blog-2019",
+      "year": 2019,
+      "name": "Art used",
+      "description": "Art used in degrowth blog.",
+      "links": [
+        {
+          "label": "Degrowth.info",
+          "url": "https://www.degrowth.info/blog/on-strategies-for-socioecological-transformation"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "lorena-cabeza-medium-2018",
+      "year": 2018,
+      "name": "Art used",
+      "description": "Art used in Medium post by Lorena Cabeza, August 23, 2018.",
+      "links": [
+        {
+          "label": "Medium",
+          "url": "https://medium.com/@lorenacabeza/manifiesto-la-escritura-y-la-vida-10d4c254c0bf"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "probe-magazine-2018",
+      "year": 2018,
+      "name": "Art used",
+      "description": "Cover image of Probe magazine.",
+      "links": [
+        {
+          "label": "Probe Magazine",
+          "url": "https://www.ssbprobe.com/decentraldogma-danielfriedman"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "curio-cards-2017",
+      "year": 2017,
+      "name": "Curio Cards",
+      "description": "Early Ethereum art NFT project; art for Curio Cards 24, 25, and 26.",
+      "links": [
+        {
+          "label": "Curio Cards artist",
+          "url": "https://curio.cards/artist/danielfriedman/"
+        },
+        {
+          "label": "Curio Cards docs",
+          "url": "https://docs.curio.cards/the-artists/daniel-friedman"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "bas-haring-2017",
+      "year": 2017,
+      "name": "Art used",
+      "description": "Art used in Bas Haring blog.",
+      "links": [
+        {
+          "label": "Me Judice",
+          "url": "https://www.mejudice.nl/artikelen/detail/mijn-economiemuseum-de-markt"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "vice-motherboard-2017",
+      "year": 2017,
+      "name": "Art used",
+      "description": "Art used in Vice Motherboard blog.",
+      "links": [
+        {
+          "label": "VICE Motherboard",
+          "url": "https://www.vice.com/en/article/jpaqk8/a-dollar25-million-book-heist-proves-the-printed-page-is-still-sacred"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "gsa-art-blog-2016",
+      "year": 2016,
+      "name": "Art used",
+      "description": "Featured in Genetics Society of America art blog.",
+      "links": [
+        {
+          "label": "Genes to Genomes",
+          "url": "https://genestogenomes.org/gsa-art-daniel-friedman/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    },
+    {
+      "id": "stanford-art-neuroscience-2016",
+      "year": 2016,
+      "name": "Art used",
+      "description": "Art featured by Stanford Art of Neuroscience competition.",
+      "links": [
+        {
+          "label": "Stanford Scope",
+          "url": "https://scopeblog.stanford.edu/2016/07/06/art-of-neuroscience-competition-highlights-beauty-of-the-brain/"
+        }
+      ],
+      "variants": [
+        "full"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "num": 1,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.19139090",
+      "doi": "10.5281/zenodo.19139090",
+      "docs_path": "papers/2026_ReproducibleResearch/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 2,
+      "citation_key": "Friedman2026ActiveInferenceJournal500002",
+      "year": 2026,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Series",
+      "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+      "venue": "YouTube",
+      "url": "https://video.activeinference.institute/",
+      "doi": "",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 3,
+      "citation_key": "Friedman2026BeforePragmatismHadName003",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.18807970",
+      "doi": "10.5281/zenodo.18807970",
+      "docs_path": "papers/2026_BeforePragmatism/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 4,
+      "citation_key": "Friedman2026GoldenCompassLunarFlux004",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.19335196",
+      "doi": "10.5281/zenodo.19335196",
+      "docs_path": "papers/2026_Bimetalism/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 5,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.18364119",
+      "doi": "10.5281/zenodo.18364119",
+      "docs_path": "papers/2026_CognitiveIntegrity/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 6,
+      "citation_key": "Friedman2026PersonalYouTube200Livestreams006",
+      "year": 2026,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Series",
+      "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
+      "venue": "YouTube",
+      "url": "https://www.youtube.com/@danielarifriedman/playlists",
+      "doi": "",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 7,
+      "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.18600041",
+      "doi": "10.5281/zenodo.18600041",
+      "docs_path": "papers/2026_DoorsOfPerception/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 8,
+      "citation_key": "Friedman20255thAppliedActiveInference008",
+      "year": 2025,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.17555266",
+      "doi": "10.5281/zenodo.17555266",
+      "docs_path": "papers/2025_5thSymposium/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 9,
+      "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
+      "year": 2025,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17228945",
+      "doi": "10.5281/zenodo.17228945",
+      "docs_path": "papers/2025_AuBI/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 10,
+      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning010",
+      "year": 2025,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15170907",
+      "doi": "10.5281/zenodo.15170907",
+      "docs_path": "papers/2025_CEREBRUM/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 11,
+      "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
+      "year": 2025,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Computational Complexity and Energetics of the Ant Stack",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17238736",
+      "doi": "10.5281/zenodo.17238736",
+      "docs_path": "papers/2025_AntStackComplexity/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 12,
+      "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+      "year": 2025,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17229924",
+      "doi": "10.5281/zenodo.17229924",
+      "docs_path": "papers/2025_EvoJump/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 13,
+      "citation_key": "Friedman2025IncreasingAccessibilityApplicabilityActive013",
+      "year": 2025,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Increasing the Accessibility and Applicability of Active Inference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15061667",
+      "doi": "10.5281/zenodo.15061667",
+      "docs_path": "papers/2025_AccessibilityActiveInference/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 14,
+      "citation_key": "Friedman2025MDKVMultitrackMarkdownContainer014",
+      "year": 2025,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.16790554",
+      "doi": "10.5281/zenodo.16790554",
+      "docs_path": "papers/2025_MDKV/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 15,
+      "citation_key": "Friedman2025MarkdownDecisionProcessFramework015",
+      "year": 2025,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17244386",
+      "doi": "10.5281/zenodo.17244386",
+      "docs_path": "papers/2025_MarkdownDecisionProcess/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 16,
+      "citation_key": "Friedman2025CognitiveArtScienceToward016",
+      "year": 2025,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.16740439",
+      "doi": "10.5281/zenodo.16740439",
+      "docs_path": "papers/2025_CognitiveArtScience/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 17,
+      "citation_key": "Friedman2025Time017",
+      "year": 2025,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "On Time",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15168381",
+      "doi": "10.5281/zenodo.15168381",
+      "docs_path": "papers/2025_OnTime/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 18,
+      "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
+      "year": 2025,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.16887800",
+      "doi": "10.5281/zenodo.16887800",
+      "docs_path": "papers/2025_QuadMath/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 19,
+      "citation_key": "Friedman2025ResNeiSolutionDesignDocument019",
+      "year": 2025,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "ResNei: Solution Design Document",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15389682",
+      "doi": "10.5281/zenodo.15389682",
+      "docs_path": "papers/2025_ResNei/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 20,
+      "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+      "year": 2025,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17114389",
+      "doi": "10.5281/zenodo.17114389",
+      "docs_path": "papers/2025_Symergetics/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 21,
+      "citation_key": "Friedman2025SynthesisAgentNiche021",
+      "year": 2025,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Synthesis of Agent and Niche",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17235137",
+      "doi": "10.5281/zenodo.17235137",
+      "docs_path": "papers/2025_AgentAndNiche/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 22,
+      "citation_key": "Friedman2025SystemsProcessesActiveInference022",
+      "year": 2025,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "Systems Processes, Active Inference, and Beyond",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.17138223",
+      "doi": "10.5281/zenodo.17138223",
+      "docs_path": "papers/2025_SystemsProcesses/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 23,
+      "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
+      "year": 2025,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+      "venue": "Frontiers in Psychology",
+      "url": "https://doi.org/10.3389/fpsyg.2025.1585315",
+      "doi": "10.3389/fpsyg.2025.1585315",
+      "docs_path": "papers/2025_TemporalDepth/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 24,
+      "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
+      "year": 2025,
+      "domain": "🌍",
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.17982447",
+      "doi": "10.5281/zenodo.17982447",
+      "docs_path": "papers/2025_AII_v3/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 25,
+      "citation_key": "Friedman2025AntStack025",
+      "year": 2025,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "The Ant Stack",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.16782756",
+      "doi": "10.5281/zenodo.16782756",
+      "docs_path": "papers/2025_AntStack/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 26,
+      "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
+      "year": 2025,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "venue": "ArXiv",
+      "url": "https://doi.org/10.48550/arXiv.2505.17500",
+      "doi": "10.48550/arXiv.2505.17500",
+      "docs_path": "papers/2025_DiscoveryEngine/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 27,
+      "citation_key": "Friedman2025ThoughtseedsHierarchicalAgenticFramework027",
+      "year": 2025,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+      "venue": "Entropy",
+      "url": "https://doi.org/10.3390/e27050459",
+      "doi": "10.3390/e27050459",
+      "docs_path": "papers/2025_Thoughtseeds/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 28,
+      "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
+      "year": 2025,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
+      "venue": "Book Chapter",
+      "url": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes",
+      "doi": "",
+      "docs_path": "papers/2025_ConsciousnessAnts/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 29,
+      "citation_key": "Friedman2024AligningActiveInferenceOntology029",
+      "year": 2024,
+      "domain": "🌍",
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "title": "Aligning Active Inference Ontology to SUMO",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.11459322",
+      "doi": "10.5281/zenodo.11459322",
+      "docs_path": "papers/2024_OntologySUMO/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 30,
+      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
+      "year": 2024,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.14861595",
+      "doi": "10.5281/zenodo.14861595",
+      "docs_path": "papers/2024_BioFirm/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 31,
+      "citation_key": "Friedman2024BridgingGapsImageMeme031",
+      "year": 2024,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+      "venue": "JASIST",
+      "url": "https://doi.org/10.1002/asi.24900",
+      "doi": "10.1002/asi.24900",
+      "docs_path": "papers/2024_ImageMemeResearch/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 32,
+      "citation_key": "Friedman2024ChemicalTranscriptomicDiversityDo032",
+      "year": 2024,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+      "venue": "Ecology & Evolution",
+      "url": "https://doi.org/10.1002/ece3.70063",
+      "doi": "10.1002/ece3.70063",
+      "docs_path": "papers/2024_BlattodeaDiversity/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 33,
+      "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
+      "year": 2024,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Comments on National Digital Twins R&D Strategic Plan",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.13273681",
+      "doi": "10.5281/zenodo.13273681",
+      "docs_path": "papers/2024_DigitalTwins/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 34,
+      "citation_key": "Friedman2024EnhancingPopulationBasedSearch034",
+      "year": 2024,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Enhancing Population-based Search with Active Inference",
+      "venue": "ArXiv",
+      "url": "https://doi.org/10.48550/arXiv.2408.09548",
+      "doi": "10.48550/arXiv.2408.09548",
+      "docs_path": "papers/2024_PopulationSearch/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 35,
+      "citation_key": "Friedman2024FarmWorksDecentralizedAIAgents035",
+      "year": 2024,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.13754585",
+      "doi": "10.5281/zenodo.13754585",
+      "docs_path": "papers/2024_FarmWorks/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 36,
+      "citation_key": "Friedman2024FederatedInferenceBeliefSharing036",
+      "year": 2024,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Federated inference and belief sharing",
+      "venue": "Neuroscience & Biobehavioral Reviews",
+      "url": "https://doi.org/10.1016/j.neubiorev.2023.105500",
+      "doi": "10.1016/j.neubiorev.2023.105500",
+      "docs_path": "papers/2024_FederatedInference/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 37,
+      "citation_key": "Friedman2024FourFoldFieldsQuantum037",
+      "year": 2024,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Four-fold Fields of Quantum Dreams",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10798145",
+      "doi": "10.5281/zenodo.10798145",
+      "docs_path": "papers/2024_QuantumDreams/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 38,
+      "citation_key": "Friedman2024MathArtStream8William038",
+      "year": 2024,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.13711301",
+      "doi": "10.5281/zenodo.13711301",
+      "docs_path": "papers/2024_MathArtBlake/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 39,
+      "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
+      "year": 2024,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.14574046",
+      "doi": "10.5281/zenodo.14574046",
+      "docs_path": "papers/2024_SensemakingFederation/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 40,
+      "citation_key": "Friedman2024SharedProtentionsMultiAgent040",
+      "year": 2024,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Shared Protentions in Multi-Agent Active Inference",
+      "venue": "Entropy",
+      "url": "https://doi.org/10.3390/e26040303",
+      "doi": "10.3390/e26040303",
+      "docs_path": "papers/2024_SharedProtentions/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 41,
+      "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
+      "year": 2024,
+      "domain": "🌍",
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.14108992",
+      "doi": "10.5281/zenodo.14108992",
+      "docs_path": "papers/2024_AII_v2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 42,
+      "citation_key": "Friedman2024WayFindingInfiniteImaginarium042",
+      "year": 2024,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Way Finding in the Infinite Imaginarium",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10601082",
+      "doi": "10.5281/zenodo.10601082",
+      "docs_path": "papers/2024_InfiniteImaginarium/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 43,
+      "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
+      "year": 2024,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "venue": "Physics of Life Reviews",
+      "url": "https://doi.org/10.1016/j.plrev.2024.04.010",
+      "doi": "10.1016/j.plrev.2024.04.010",
+      "docs_path": "papers/2024_PaleolithicRockstars/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 44,
+      "citation_key": "Friedman2024WritingCurioCardsNFT044",
+      "year": 2024,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Writing on Curio Cards for the \"On NFT\" book",
+      "venue": "Taschen",
+      "url": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
+      "doi": "",
+      "docs_path": "papers/2024_CurioCards/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 45,
+      "citation_key": "Friedman2023GuidedTourThroughSpaces045",
+      "year": 2023,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "A guided tour through the spaces of particular \"minds\"",
+      "venue": "Physics of Life Reviews",
+      "url": "https://doi.org/10.1016/j.plrev.2023.11.001",
+      "doi": "10.1016/j.plrev.2023.11.001",
+      "docs_path": "papers/2023_GuidedTourMinds/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 46,
+      "citation_key": "Friedman2023SinglePheromoneModelAccounts046",
+      "year": 2023,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+      "venue": "Cognitive Systems Research",
+      "url": "https://doi.org/10.1016/j.cogsys.2023.02.005",
+      "doi": "10.1016/j.cogsys.2023.02.005",
+      "docs_path": "papers/2023_SinglePheromone/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 47,
+      "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
+      "year": 2023,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10400744",
+      "doi": "10.5281/zenodo.10400744",
+      "docs_path": "papers/2023_HoneyBeeGeneExpression/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 48,
+      "citation_key": "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
+      "year": 2023,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "A variational synthesis of evolutionary and developmental dynamics",
+      "venue": "Entropy",
+      "url": "https://doi.org/10.3390/e25070964",
+      "doi": "10.3390/e25070964",
+      "docs_path": "papers/2023_VariationalSynthesis/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 49,
+      "citation_key": "Friedman2023ATLASQuestionOrientedApproach049",
+      "year": 2023,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10296601",
+      "doi": "10.5281/zenodo.10296601",
+      "docs_path": "papers/2023_ATLAS/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 50,
+      "citation_key": "Friedman2023AccountActiveInferenceModeling050",
+      "year": 2023,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "An Account of Active Inference Modeling",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.8415313",
+      "doi": "10.5281/zenodo.8415313",
+      "docs_path": "papers/2023_AccountActiveInference/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 51,
+      "citation_key": "Friedman2023CognitiveSovereigntyActiveInference051",
+      "year": 2023,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10038232",
+      "doi": "10.5281/zenodo.10038232",
+      "docs_path": "papers/2023_CognitiveSovereignty/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 52,
+      "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
+      "year": 2023,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Comments on AI Accountability Policy to NTIA",
+      "venue": "NTIA",
+      "url": "https://doi.org/10.5281/zenodo.8025957",
+      "doi": "10.5281/zenodo.8025957",
+      "docs_path": "papers/2023_AIAccountability/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 53,
+      "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+      "year": 2023,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+      "venue": "OSF",
+      "url": "https://doi.org/10.31219/osf.io/dnw5k",
+      "doi": "10.31219/osf.io/dnw5k",
+      "docs_path": "papers/2023_DistributedScience/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 54,
+      "citation_key": "Friedman2023EnhancedNSFPostdoctoralReporting054",
+      "year": 2023,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10160656",
+      "doi": "10.5281/zenodo.10160656",
+      "docs_path": "papers/2023_NSFReporting/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 55,
+      "citation_key": "Friedman2023ExperimentalEntomologyAgeVideo055",
+      "year": 2023,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Experimental Entomology in the Age of Video",
+      "venue": "JoVE",
+      "url": "https://doi.org/10.3791/65002",
+      "doi": "10.3791/65002",
+      "docs_path": "papers/2023_VideoEntomology/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 56,
+      "citation_key": "Friedman2023GeneralizedNotationNotationActive056",
+      "year": 2023,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Generalized Notation Notation for Active Inference Models",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7803328",
+      "doi": "10.5281/zenodo.7803328",
+      "docs_path": "papers/2023_GNN/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 57,
+      "citation_key": "Friedman2023GenerativeResearchTeamsActive057",
+      "year": 2023,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.8164667",
+      "doi": "10.5281/zenodo.8164667",
+      "docs_path": "papers/2023_GenerativeResearchTeams/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 58,
+      "citation_key": "Friedman2023AntsAging058",
+      "year": 2023,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "Of Ants & Aging",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.7855582",
+      "doi": "10.5281/zenodo.7855582",
+      "docs_path": "papers/2023_AntsAging/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 59,
+      "citation_key": "Friedman2023OpenAccessScienceNeeds059",
+      "year": 2023,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+      "venue": "MetaArXiv",
+      "url": "https://doi.org/10.31222/osf.io/9nb3u",
+      "doi": "10.31222/osf.io/9nb3u",
+      "docs_path": "papers/2023_OpenScienceSensemaking/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 60,
+      "citation_key": "Friedman2023PostdocReview20202023060",
+      "year": 2023,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "Postdoc review (2020–2023)",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.8377988",
+      "doi": "10.5281/zenodo.8377988",
+      "docs_path": "papers/2023_PostdocReview/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 61,
+      "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
+      "year": 2023,
+      "domain": "🌍",
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.8266281",
+      "doi": "10.5281/zenodo.8266281",
+      "docs_path": "papers/2023_AII_v1/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 62,
+      "citation_key": "Friedman2023P3IFPropertiesProcessesPerspectives062",
+      "year": 2023,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10034512",
+      "doi": "10.5281/zenodo.10034512",
+      "docs_path": "papers/2023_P3IF/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 63,
+      "citation_key": "Friedman2023CommentOrNotComment063",
+      "year": 2023,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "To comment or not to comment",
+      "venue": "Physics of Life Reviews",
+      "url": "https://doi.org/10.1016/j.plrev.2023.06.002",
+      "doi": "10.1016/j.plrev.2023.06.002",
+      "docs_path": "papers/2023_ToComment/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 64,
+      "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
+      "year": 2023,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Course",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10447642",
+      "doi": "10.5281/zenodo.10447642",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 65,
+      "citation_key": "Friedman2023WilliamBlakeBuckminsterFuller065",
+      "year": 2023,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7514368",
+      "doi": "10.5281/zenodo.7514368",
+      "docs_path": "papers/2023_BlakeFuller/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 66,
+      "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
+      "year": 2022,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "An Active Inference Ontology for Decentralized Science",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.6320574",
+      "doi": "10.5281/zenodo.6320574",
+      "docs_path": "papers/2022_ActiveInferenceOntology/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 67,
+      "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
+      "year": 2022,
+      "domain": "🌍",
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "title": "Catechism for Towards Active Diffusion",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7443848",
+      "doi": "10.5281/zenodo.7443848",
+      "docs_path": "papers/2022_ActiveDiffusion/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 68,
+      "citation_key": "Friedman2022FromUsersSenseMakers068",
+      "year": 2022,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+      "venue": "Hypertext '22",
+      "url": "https://doi.org/10.48550/arXiv.2205.06345",
+      "doi": "10.48550/arXiv.2205.06345",
+      "docs_path": "papers/2022_StigmergicAnnotation/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 69,
+      "citation_key": "Friedman2022FreeWillOrLack069",
+      "year": 2022,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+      "venue": "ALIUS Bulletin",
+      "url": "https://doi.org/10.5281/zenodo.7394901",
+      "doi": "10.5281/zenodo.7394901",
+      "docs_path": "papers/2022_FreeWillSapolsky/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 70,
+      "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
+      "year": 2022,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Predictive Processing Interpretation of the Mirror Test",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7377256",
+      "doi": "10.5281/zenodo.7377256",
+      "docs_path": "papers/2022_MirrorTest/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 71,
+      "citation_key": "Friedman2022StructuringInformationCommonsOpen071",
+      "year": 2022,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Book",
+      "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
+      "venue": "COGSEC.org",
+      "url": "https://cogsec.org",
+      "doi": "",
+      "docs_path": "papers/2022_InformationCommons/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 72,
+      "citation_key": "Friedman2022SystemsModelingCognitiveAudits072",
+      "year": 2022,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7626769",
+      "doi": "10.5281/zenodo.7626769",
+      "docs_path": "papers/2022_HypercertEcosystems/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 73,
+      "citation_key": "Friedman2022FreeEnergyPrincipleActive073",
+      "year": 2022,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7449368",
+      "doi": "10.5281/zenodo.7449368",
+      "docs_path": "papers/2022_SystematicLiteratureAnalysis/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 74,
+      "citation_key": "Friedman2022TrustFinderRecommendationsCommunityBased074",
+      "year": 2022,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.7093837",
+      "doi": "10.5281/zenodo.7093837",
+      "docs_path": "papers/2022_TrustFinder/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 75,
+      "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+      "year": 2021,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+      "venue": "Frontiers in Behavioral Neuroscience",
+      "url": "https://doi.org/10.3389/fnbeh.2021.647732",
+      "doi": "10.3389/fnbeh.2021.647732",
+      "docs_path": "papers/2021_ActiveInferants/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 76,
+      "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
+      "year": 2021,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Active Inference in Modeling Conflict",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.5759807",
+      "doi": "10.5281/zenodo.5759807",
+      "docs_path": "papers/2021_ModelingConflict/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 77,
+      "citation_key": "Friedman2021DigitalRhetoricalEcosystemAnalysis077",
+      "year": 2021,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.5573947",
+      "doi": "10.5281/zenodo.5573947",
+      "docs_path": "papers/2021_DigitalRhetorical/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 78,
+      "citation_key": "Friedman2021InnovatorSDigitalPlaybook078",
+      "year": 2021,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Playbook",
+      "title": "Innovator's Digital Playbook",
+      "venue": "Web",
+      "url": "https://innovatorsdigitalplaybook.com/",
+      "doi": "",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 79,
+      "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+      "year": 2021,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Book",
+      "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+      "venue": "COGSEC.org",
+      "url": "https://cogsec.org",
+      "doi": "",
+      "docs_path": "papers/2021_NarrativeEcosystems/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 80,
+      "citation_key": "Friedman2021NarrativeInformationManagement080",
+      "year": 2021,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Narrative Information Management",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.5573287",
+      "doi": "10.5281/zenodo.5573287",
+      "docs_path": "papers/2021_NarrativeInformationMgmt/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 81,
+      "citation_key": "Friedman2021FacilitatorSCatechismPlaybook081",
+      "year": 2021,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Playbook",
+      "title": "The Facilitator's Catechism Playbook",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.4579414",
+      "doi": "10.5281/zenodo.4579414",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 82,
+      "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
+      "year": 2020,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Active Inference & Behavior Engineering for Teams",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.4021163",
+      "doi": "10.5281/zenodo.4021163",
+      "docs_path": "papers/2020_BehaviorEngineering/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 83,
+      "citation_key": "Friedman2020CommunicationRemoteTeams083",
+      "year": 2020,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Course",
+      "title": "Communication for Remote Teams",
+      "venue": "Udemy",
+      "url": "https://www.udemy.com/course/communication-for-remote-teams/",
+      "doi": "",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 84,
+      "citation_key": "Friedman2020DistributedPhysiologyMolecularBasis084",
+      "year": 2020,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Distributed physiology and the molecular basis of social life in eusocial insects",
+      "venue": "Hormones & Behavior",
+      "url": "https://doi.org/10.1016/j.yhbeh.2020.104757",
+      "doi": "10.1016/j.yhbeh.2020.104757",
+      "docs_path": "papers/2020_DistributedPhysiology/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 85,
+      "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
+      "year": 2020,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Emergent Teams for Complex Threats",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.3986085",
+      "doi": "10.5281/zenodo.3986085",
+      "docs_path": "papers/2020_EmergentTeams/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 86,
+      "citation_key": "Friedman2020GeneExpressionVariationBrains086",
+      "year": 2020,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
+      "venue": "Communications Biology",
+      "url": "https://doi.org/10.1038/s42003-020-0813-8",
+      "doi": "10.1038/s42003-020-0813-8",
+      "docs_path": "papers/2020_GeneExpressionForagers/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 87,
+      "citation_key": "Friedman2020HowUseKeybaseRemote087",
+      "year": 2020,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Course",
+      "title": "How to use Keybase for remote teams",
+      "venue": "Udemy",
+      "url": "https://www.udemy.com/course/keybase-for-remote-teams/",
+      "doi": "",
+      "docs_path": "",
+      "has_paper_folder": false
+    },
+    {
+      "num": 88,
+      "citation_key": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
+      "year": 2020,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+      "venue": "Analytical & Bioanalytical Chemistry",
+      "url": "https://doi.org/10.1007/s00216-019-02355-3",
+      "doi": "10.1007/s00216-019-02355-3",
+      "docs_path": "papers/2020_NeurotransmitterVariation/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 89,
+      "citation_key": "Friedman2020GreatPresetRemoteTeams089",
+      "year": 2020,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Book",
+      "title": "The Great Preset: Remote Teams and Operational Art",
+      "venue": "COGSEC.org",
+      "url": "https://cogsec.org",
+      "doi": "",
+      "docs_path": "papers/2020_GreatPreset/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 90,
+      "citation_key": "Friedman2020InnovatorSCatechism090",
+      "year": 2020,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "The Innovator's Catechism",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.4383230",
+      "doi": "10.5281/zenodo.4383230",
+      "docs_path": "papers/2020_InnovatorsCatechism/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 91,
+      "citation_key": "Friedman2020NeuroscienceDecisionMakingInterview091",
+      "year": 2020,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+      "venue": "ALIUS Bulletin",
+      "url": "https://doi.org/10.34700/8pg4-0h12",
+      "doi": "10.34700/8pg4-0h12",
+      "docs_path": "papers/2020_NeuroscienceDecision/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 92,
+      "citation_key": "Friedman2019DennettExplainedInterviewDaniel092",
+      "year": 2019,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "Dennett Explained (interview with Daniel Dennett)",
+      "venue": "ALIUS Bulletin",
+      "url": "https://doi.org/10.34700/7gkw-zh08",
+      "doi": "10.34700/7gkw-zh08",
+      "docs_path": "papers/2019_DennettExplained/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 93,
+      "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
+      "year": 2019,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "venue": "Stanford University",
+      "url": "http://purl.stanford.edu/pb813wm1484",
+      "doi": "",
+      "docs_path": "papers/2019_PhDDissertation/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 94,
+      "citation_key": "Friedman2019AntColonyAsTest094",
+      "year": 2019,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "The ant colony as a test for scientific theories of consciousness",
+      "venue": "Synthese",
+      "url": "https://doi.org/10.1007/s11229-019-02130-y",
+      "doi": "10.1007/s11229-019-02130-y",
+      "docs_path": "papers/2019_AntConsciousness/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 95,
+      "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
+      "year": 2019,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "The physiology of forager hydration and variation among harvester ant colonies",
+      "venue": "Scientific Reports",
+      "url": "https://doi.org/10.1038/s41598-019-41586-3",
+      "doi": "10.1038/s41598-019-41586-3",
+      "docs_path": "papers/2019_ForagerHydration/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 96,
+      "citation_key": "Friedman2018ForagingBehaviorLocomotionInvasive096",
+      "year": 2018,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
+      "venue": "PLoS One",
+      "url": "https://doi.org/10.1371/journal.pone.0202117",
+      "doi": "10.1371/journal.pone.0202117",
+      "docs_path": "papers/2018_ArgentineAnt/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 97,
+      "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
+      "year": 2018,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "title": "MVEE: A Framework for Evolutionary Studies",
+      "venue": "Presentation",
+      "url": "https://doi.org/10.5281/zenodo.13999298",
+      "doi": "10.5281/zenodo.13999298",
+      "docs_path": "papers/2018_MVEE/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 98,
+      "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
+      "year": 2018,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+      "venue": "ALIUS Bulletin",
+      "url": "https://doi.org/10.34700/h460-nz89",
+      "doi": "10.34700/h460-nz89",
+      "docs_path": "papers/2018_WoodliceAndMen/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 99,
+      "citation_key": "Friedman2018PartnerPenPlayParallel099",
+      "year": 2018,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+      "venue": "Arts",
+      "url": "https://doi.org/10.3390/arts7030039",
+      "doi": "10.3390/arts7030039",
+      "docs_path": "papers/2018_PPPiP/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 100,
+      "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+      "year": 2018,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+      "venue": "iScience",
+      "url": "https://doi.org/10.1016/j.isci.2018.09.001",
+      "doi": "10.1016/j.isci.2018.09.001",
+      "docs_path": "papers/2018_DopamineForaging/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 101,
+      "citation_key": "Friedman2017MutAntsAreHere101",
+      "year": 2017,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "The MutAnts are here",
+      "venue": "Cell",
+      "url": "https://doi.org/10.1016/j.cell.2017.07.046",
+      "doi": "10.1016/j.cell.2017.07.046",
+      "docs_path": "papers/2017_MutAnts/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 102,
+      "citation_key": "Friedman2017TwoLineagesThatNeed102",
+      "year": 2017,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Two lineages that need each other",
+      "venue": "Molecular Ecology",
+      "url": "https://doi.org/10.1111/mec.13964",
+      "doi": "10.1111/mec.13964",
+      "docs_path": "papers/2017_TwoLineages/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 103,
+      "citation_key": "Friedman2016AntGeneticsReproductivePhysiology103",
+      "year": 2016,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+      "venue": "Annual Review of Neuroscience",
+      "url": "https://doi.org/10.1146/annurev-neuro-070815-013927",
+      "doi": "10.1146/annurev-neuro-070815-013927",
+      "docs_path": "papers/2016_AntGenetics/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 104,
+      "citation_key": "Friedman2016ContextDependentExpressionForaging104",
+      "year": 2016,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+      "venue": "Proceedings of the Royal Society B",
+      "url": "https://doi.org/10.1098/rspb.2016.0841",
+      "doi": "10.1098/rspb.2016.0841",
+      "docs_path": "papers/2016_ForagingGene/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 105,
+      "citation_key": "Friedman2016InfluenceNuclearStructureFormation105",
+      "year": 2016,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+      "venue": "Int. J. Radiation Biology",
+      "url": "https://doi.org/10.3109/09553002.2016.1144941",
+      "doi": "10.3109/09553002.2016.1144941",
+      "docs_path": "papers/2016_NuclearStructure/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 106,
+      "citation_key": "Friedman2015CommentaryPortugueseCryptoJews106",
+      "year": 2015,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+      "venue": "Frontiers in Genetics",
+      "url": "https://doi.org/10.3389/fgene.2015.00261",
+      "doi": "10.3389/fgene.2015.00261",
+      "docs_path": "papers/2015_CryptoJews/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 107,
+      "citation_key": "Friedman2015CouldEhrlichialInfectionCause107",
+      "year": 2015,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+      "venue": "Medical Hypotheses",
+      "url": "https://doi.org/10.1016/j.mehy.2015.09.015",
+      "doi": "10.1016/j.mehy.2015.09.015",
+      "docs_path": "papers/2015_EhrlichialInfection/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 108,
+      "citation_key": "Friedman2015LargeScaleCodingSequence108",
+      "year": 2015,
+      "domain": "🧬",
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+      "venue": "Molecular Biology & Evolution",
+      "url": "https://doi.org/10.1093/molbev/msu292",
+      "doi": "10.1093/molbev/msu292",
+      "docs_path": "papers/2015_HoneyBeeEvolution/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 109,
+      "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
+      "year": 2026,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.19574118",
+      "doi": "10.5281/zenodo.19574118",
+      "docs_path": "papers/2026_EntoLinguistics/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 110,
+      "citation_key": "Friedman2026LivingMetaAnalysisArchitecture110",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+      "venue": "Active Inference Journal",
+      "url": "https://doi.org/10.5281/zenodo.19897664",
+      "doi": "10.5281/zenodo.19897664",
+      "docs_path": "papers/2026_ActInfMetaAnalysis/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 111,
+      "citation_key": "Friedman2026DynamicAttentionalAgentsFocused111",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+      "venue": "CSCIS vol 2857, Springer",
+      "url": "https://doi.org/10.1007/978-3-032-16955-6_11",
+      "doi": "10.1007/978-3-032-16955-6_11",
+      "docs_path": "papers/2026_FocusedAttentionMeditation/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 112,
+      "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+      "venue": "Active Inference Journal",
+      "url": "https://doi.org/10.5281/zenodo.19695260",
+      "doi": "10.5281/zenodo.19695260",
+      "docs_path": "papers/2026_CognitiveCaseDiagrams/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 113,
+      "citation_key": "Friedman2026TowardsLean4Formalization113",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "venue": "Active Inference Journal",
+      "url": "https://doi.org/10.5281/zenodo.19699234",
+      "doi": "10.5281/zenodo.19699234",
+      "docs_path": "papers/2026_FEPLean/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 114,
+      "citation_key": "Friedman2020FacilitatorSCatechism114",
+      "year": 2020,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "The Facilitator's Catechism",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.4203765",
+      "doi": "10.5281/zenodo.4203765",
+      "docs_path": "papers/2020_FacilitatorsCatechism/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 115,
+      "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20144984",
+      "doi": "10.5281/zenodo.20144984",
+      "docs_path": "papers/2026_BlakeJiang/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 116,
+      "citation_key": "Friedman2026CrescentCityLivingWaves116",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20286171",
+      "doi": "10.5281/zenodo.20286171",
+      "docs_path": "papers/2026_CrescentCity/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 117,
+      "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Book",
+      "title": "Introduction to Biology: A Generative Approach",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20286478",
+      "doi": "10.5281/zenodo.20286478",
+      "docs_path": "papers/2026_BiologyTextbook/",
+      "has_paper_folder": true
+    }
+  ],
+  "software": [
+    {
+      "name": "template",
+      "url": "https://github.com/docxology/template",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
+      "language": "Python",
+      "stars": 13,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "QuadCraft",
+      "url": "https://github.com/docxology/QuadCraft",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
+      "language": "JavaScript",
+      "stars": 9,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "MetaInformAnt",
+      "url": "https://github.com/docxology/MetaInformAnt",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond",
+      "language": "Python",
+      "stars": 6,
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2021_ActiveInferants/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "codomyrmex",
+      "url": "https://github.com/docxology/codomyrmex",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "language": "Python",
+      "stars": 6,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "cognitive-engine",
+      "url": "https://github.com/docxology/cognitive-engine",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "opentir",
+      "url": "https://github.com/docxology/opentir",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2025-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "timeline_generator",
+      "url": "https://github.com/docxology/timeline_generator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
+      "language": "TypeScript",
+      "stars": 4,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "FORMINDEX",
+      "url": "https://github.com/docxology/FORMINDEX",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation",
+      "language": "Rich Text Format",
+      "stars": 3,
+      "updated_or_year": "2024-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActiveInferAnts",
+      "url": "https://github.com/docxology/ActiveInferAnts",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026-04",
+      "paper_path": "papers/2021_ActiveInferants/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "crescent-city",
+      "url": "https://github.com/docxology/crescent-city",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "End-to-end pipeline for ingesting, parsing, and querying the Crescent City, CA municipal code; TypeScript-based legal-text processing",
+      "language": "TypeScript",
+      "stars": 2,
+      "updated_or_year": "2026-02",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ivm-xyz",
+      "url": "https://github.com/docxology/ivm-xyz",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2025-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Markov_Blanket_Detection",
+      "url": "https://github.com/docxology/Markov_Blanket_Detection",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Dynamic Markov Blanket Detection (DMBD) — PyTorch-accelerated framework for identifying causal relationships in complex systems; static and temporal modes with cognitive-structure labeling",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2025-06",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "QuadMath",
+      "url": "https://github.com/docxology/QuadMath",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library",
+      "language": "TeX",
+      "stars": 2,
+      "updated_or_year": "2026-02",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "active_inference",
+      "url": "https://github.com/docxology/active_inference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-11",
+      "paper_path": "papers/2020_BehaviorEngineering/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "AgenticMesh",
+      "url": "https://github.com/docxology/AgenticMesh",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-02",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "curriculum",
+      "url": "https://github.com/docxology/curriculum",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2026-01",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "lean_niche",
+      "url": "https://github.com/docxology/lean_niche",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "literature",
+      "url": "https://github.com/docxology/literature",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "obsidian-construction-from-text",
+      "url": "https://github.com/docxology/obsidian-construction-from-text",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "qr_live_protocol",
+      "url": "https://github.com/docxology/qr_live_protocol",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "QR code-based live protocol system for real-time data exchange and interactive session management",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ultralink-docx",
+      "url": "https://github.com/docxology/ultralink-docx",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "cognitive",
+      "url": "https://github.com/docxology/cognitive",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
+      "language": "Python",
+      "stars": 14,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "active_torchference",
+      "url": "https://github.com/docxology/active_torchference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ant-pheromone",
+      "url": "https://github.com/docxology/ant-pheromone",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Computational simulation of ant pheromone trail dynamics and stigmergic communication",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2022-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ant_stack",
+      "url": "https://github.com/docxology/ant_stack",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "The Ant Stack — layered computational model of collective ant-colony intelligence",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-09",
+      "paper_path": "papers/2025_AntStack/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ento_linguistics",
+      "url": "https://github.com/docxology/ento_linguistics",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-04",
+      "paper_path": "papers/2026_EntoLinguistics/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "cognitive_case_diagrams",
+      "url": "https://github.com/docxology/cognitive_case_diagrams",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-04",
+      "paper_path": "papers/2026_CognitiveCaseDiagrams/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+      "url": "https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment",
+      "language": "Julia",
+      "stars": 0,
+      "updated_or_year": "2025-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "biol-1",
+      "url": "https://github.com/docxology/biol-1",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "biol-8",
+      "url": "https://github.com/docxology/biol-8",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "biology_textbook",
+      "url": "https://github.com/docxology/biology_textbook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2026_BiologyTextbook/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20286478"
+    },
+    {
+      "name": "cascadia",
+      "url": "https://github.com/docxology/cascadia",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cascadia bioregion modeling and data analysis tools",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "course",
+      "url": "https://github.com/docxology/course",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Course materials framework for structured interdisciplinary learning modules",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-12",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "enactive_inference_model",
+      "url": "https://github.com/docxology/enactive_inference_model",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-02",
+      "paper_path": "papers/2025_Thoughtseeds/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "EvoJump",
+      "url": "https://github.com/docxology/EvoJump",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10",
+      "paper_path": "papers/2025_EvoJump/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "flick",
+      "url": "https://github.com/docxology/flick",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Lightweight Python tooling for rapid data flicking and processing pipelines",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "fuller-obsidian",
+      "url": "https://github.com/docxology/fuller-obsidian",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2025-02",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "godel_ivm",
+      "url": "https://github.com/docxology/godel_ivm",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "goference",
+      "url": "https://github.com/docxology/goference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum",
+      "language": "Go",
+      "stars": 0,
+      "updated_or_year": "2025-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "hhs-opendata",
+      "url": "https://github.com/docxology/hhs-opendata",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-02",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "infra-calc",
+      "url": "https://github.com/docxology/infra-calc",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems",
+      "language": "JavaScript",
+      "stars": 0,
+      "updated_or_year": "2025-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "markdown_decision_process",
+      "url": "https://github.com/docxology/markdown_decision_process",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10",
+      "paper_path": "papers/2025_MarkdownDecisionProcess/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "mdkv",
+      "url": "https://github.com/docxology/mdkv",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-08",
+      "paper_path": "papers/2025_MDKV/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "p3if",
+      "url": "https://github.com/docxology/p3if",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-01",
+      "paper_path": "papers/2023_P3IF/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "service",
+      "url": "https://github.com/docxology/service",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Service-layer infrastructure and API tooling for Python-based research applications",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "snake",
+      "url": "https://github.com/docxology/snake",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "steganographer",
+      "url": "https://github.com/docxology/steganographer",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+      "language": "Rust",
+      "stars": 1,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "blake_jiang",
+      "url": "https://github.com/docxology/blake_jiang",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2026_BlakeJiang/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "symergetics",
+      "url": "https://github.com/docxology/symergetics",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "transformer",
+      "url": "https://github.com/docxology/transformer",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActiveInferenceJournal",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
+      "language": "HTML",
+      "stars": 42,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActiveBlockference",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework",
+      "language": "Jupyter",
+      "stars": 32,
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActiveInferAnts",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
+      "language": "Python",
+      "stars": 28,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "GeneralizedNotationNotation",
+      "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
+      "language": "Python",
+      "stars": 24,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19600217"
+    },
+    {
+      "name": "fep_lean",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_FEPLean/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "cognitive",
+      "url": "https://github.com/ActiveInferenceInstitute/cognitive",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization",
+      "language": "Python",
+      "stars": 18,
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Active_Inference_Ontology",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts",
+      "language": "",
+      "stars": 13,
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Journal-Utilities",
+      "url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
+      "language": "HTML",
+      "stars": 11,
+      "updated_or_year": "2026",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.18686966"
+    },
+    {
+      "name": "Symposium",
+      "url": "https://github.com/ActiveInferenceInstitute/Symposium",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia",
+      "language": "Python",
+      "stars": 11,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActiveInferenceCategoryTheory",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory",
+      "language": "",
+      "stars": 10,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "CEREBRUM",
+      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+      "language": "Python",
+      "stars": 12,
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "GEO-INFER",
+      "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
+      "language": "HTML",
+      "stars": 9,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "AEOS",
+      "url": "https://github.com/ActiveInferenceInstitute/AEOS",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models",
+      "language": "",
+      "stars": 8,
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "courses",
+      "url": "https://github.com/ActiveInferenceInstitute/courses",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts",
+      "language": "HTML",
+      "stars": 8,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Research-Discovery-Engine",
+      "url": "https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature",
+      "language": "HTML",
+      "stars": 6,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Parr_et_al_2022_ActInf_Textbook",
+      "url": "https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)",
+      "language": "Julia",
+      "stars": 6,
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Biofirm",
+      "url": "https://github.com/ActiveInferenceInstitute/Biofirm",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems",
+      "language": "Python",
+      "stars": 5,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Start",
+      "url": "https://github.com/ActiveInferenceInstitute/Start",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants",
+      "language": "Python",
+      "stars": 5,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Knowledge-Engineering",
+      "url": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
+      "language": "Jupyter",
+      "stars": 4,
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActInf_RxInfer",
+      "url": "https://github.com/ActiveInferenceInstitute/ActInf_RxInfer",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models",
+      "language": "",
+      "stars": 2,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "pymcp",
+      "url": "https://github.com/ActiveInferenceInstitute/pymcp",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "GEN24",
+      "url": "https://github.com/ActiveInferenceInstitute/GEN24",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort",
+      "language": "Jupyter",
+      "stars": 1,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "NoOrg",
+      "url": "https://github.com/ActiveInferenceInstitute/NoOrg",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ultralink",
+      "url": "https://github.com/ActiveInferenceInstitute/ultralink",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
+      "language": "",
+      "stars": 1,
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ActiveInferenceImplementations",
+      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles",
+      "language": "Jupyter",
+      "stars": 0,
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ATLAS",
+      "url": "https://github.com/ActiveInferenceInstitute/ATLAS",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Bots",
+      "url": "https://github.com/ActiveInferenceInstitute/Bots",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Garden-of-Iris",
+      "url": "https://github.com/ActiveInferenceInstitute/Garden-of-Iris",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "gen25",
+      "url": "https://github.com/ActiveInferenceInstitute/gen25",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "gnn",
+      "url": "https://github.com/ActiveInferenceInstitute/gnn",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ISSS",
+      "url": "https://github.com/ActiveInferenceInstitute/ISSS",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "topp",
+      "url": "https://github.com/ActiveInferenceInstitute/topp",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "curated-work-count",
+      "claim": "The curated bibliography contains 117 works.",
+      "status": "curated-local",
+      "sources": [
+        "pages/BIBLIOGRAPHY.md",
+        "publications.html",
+        "data/works.json"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
+      "maintenance_owner": "ARCHIVIST",
+      "caveat": "Curated count includes papers, books, presentations, courses, playbooks, and series."
+    },
+    {
+      "id": "paper-folder-count",
+      "claim": "The repository contains 110 per-paper documentation folders.",
+      "status": "curated-local",
+      "sources": [
+        "papers/",
+        "papers/README.md",
+        "papers/paper_metadata.json"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "Folder inventory and paper metadata count.",
+      "maintenance_owner": "MAINTAINER",
+      "caveat": "Not every bibliography row has a paper folder; media/course rows may not."
+    },
+    {
+      "id": "docxology-github-public-repos",
+      "claim": "The docxology GitHub profile has 286 public repositories.",
+      "status": "public-api",
+      "sources": [
+        "https://api.github.com/users/docxology",
+        "reports/public_source_snapshot_2026-05-15.json"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "GitHub REST API user profile response.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md."
+    },
+    {
+      "id": "aii-github-public-repos",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
+      "status": "public-api",
+      "sources": [
+        "https://api.github.com/users/ActiveInferenceInstitute",
+        "reports/public_source_snapshot_2026-05-15.json"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions."
+    },
+    {
+      "id": "orcid-canonical-identifier",
+      "claim": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. The canonical Google Scholar profile is DXjPFtYAAAAJ; a secondary Scholar profile (Y2bMf3MAAAAJ) is linked from ORCID and should be consolidated/disambiguated.",
+      "status": "public-identifier",
+      "sources": [
+        "https://orcid.org/0000-0001-6232-9096",
+        "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics.",
+      "maintenance_owner": "ARCHIVIST",
+      "caveat": "Use DXjPFtYAAAAJ as the single canonical Scholar profile for metrics. ORCID public work groups may lag new deposits and may group versions differently."
+    },
+    {
+      "id": "curio-cards-early-ethereum-art",
+      "claim": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017; a complete Curio Cards set later sold at Christie's 'Post-War to Present' (New York, Oct 1, 2021) for 393 ETH (~$1.2M), seven artists.",
+      "status": "public-profile",
+      "sources": [
+        "https://curio.cards/artist/danielfriedman/",
+        "https://docs.curio.cards/the-artists/daniel-friedman",
+        "https://en.wikipedia.org/wiki/Curio_Cards",
+        "https://www.christies.com/en/lot/lot-6337619",
+        "papers/2024_CurioCards/README.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's.",
+      "maintenance_owner": "RESEARCHER",
+      "caveat": "Present the sale facts as independently verified; present the specific Christie's lot number as a first-party (Christie's) reference only, not independently corroborated. Avoid unqualified 'first/earliest NFT' superlatives."
+    },
+    {
+      "id": "google-scholar-citations",
+      "claim": "Google Scholar metrics are recorded as a dated snapshot: 764 citations, h-index 15, i10-index 17 (as of 2026-05-16).",
+      "status": "dated-snapshot",
+      "sources": [
+        "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
+        "data/scholar-snapshot.json",
+        "pages/VERIFICATION_LOG.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "Independent dual direct-fetch verification: two separate non-cached retrievals of the canonical profile on 2026-05-16 both returned 764 citations, h-index 15, i10-index 17.",
+      "maintenance_owner": "ARCHIVIST",
+      "caveat": "Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value."
+    },
+    {
+      "id": "stanford-phd",
+      "claim": "Daniel Ari Friedman earned a PhD at Stanford University with dissertation record pb813wm1484.",
+      "status": "public-institutional-record",
+      "sources": [
+        "http://purl.stanford.edu/pb813wm1484",
+        "papers/2019_PhDDissertation/README.md",
+        "pages/PROFILE.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "Stanford PURL dissertation record and local paper folder.",
+      "maintenance_owner": "RESEARCHER",
+      "caveat": "Use the Stanford PURL as the public institutional source."
+    },
+    {
+      "id": "nsf-postdoc-affiliation",
+      "claim": "Daniel Ari Friedman held an NSF Postdoctoral Research Fellowship in Biology (award DBI-2010290) co-trained at UC Davis; NSF budget period 2020-2022 with a no-cost extension to 2023.",
+      "status": "public-grant-record",
+      "sources": [
+        "https://grantome.com/grant/NSF/DBI-2010290",
+        "pages/PROFILE.md",
+        "README.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record.",
+      "maintenance_owner": "RESEARCHER",
+      "caveat": "Cite the NSF award ID (DBI-2010290) as the authoritative public record. The funding record shows 2020-2022; present 2023 as a no-cost-extension affiliation, not a funded period."
+    },
+    {
+      "id": "aii-officer-roles",
+      "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
+      "status": "public-profile",
+      "sources": [
+        "https://www.activeinference.institute/officers",
+        "https://projects.propublica.org/nonprofits/organizations/882985125",
+        "pages/DISCOVERY.md",
+        "pages/PROFILE.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024).",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "Officer roles are time-sensitive. Do not conflate Mikhailova (current VP+Secretary) with Knight (former Secretary 2022-2024, current Board member)."
+    },
+    {
+      "id": "aii-board-count",
+      "claim": "The Active Inference Institute board page lists 10 current directors.",
+      "status": "public-profile",
+      "sources": [
+        "https://www.activeinference.institute/board-of-directors",
+        "pages/LINKS.md",
+        "pages/WIKIPEDIA.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "high",
+      "verification_method": "AII board page and local governance notes.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "Board membership is time-sensitive; retain access dates in narrative pages."
+    },
+    {
+      "id": "aii-scientific-advisory-board-count",
+      "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
+      "status": "public-profile",
+      "sources": [
+        "https://www.activeinference.institute/scientific-advisory-board",
+        "pages/LINKS.md",
+        "pages/DISCOVERY.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "medium",
+      "verification_method": "AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified.",
+      "maintenance_owner": "INTEGRATOR",
+      "caveat": "State the cohort as 'listed for 2026' (33 members). Do not assert a specific announcement month unless the source page states one."
+    },
+    {
+      "id": "aii-textbook-cohorts",
+      "claim": "AII Textbook Group copy references 10 cohorts through 2026.",
+      "status": "curated-program-copy",
+      "sources": [
+        "https://www.activeinference.institute/textbook-group",
+        "README.md",
+        "pages/VIDEOS.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "medium",
+      "verification_method": "Curated site copy and AII program page.",
+      "maintenance_owner": "EDUCATOR",
+      "caveat": "Program pages may use different public summary counts; keep local copy aligned with preferred site wording."
+    },
+    {
+      "id": "college-of-the-redwoods-teaching",
+      "claim": "Homepage teaching copy lists BIOL-1 at Pelican Bay and BIOL-8 Human Biology for Spring 2026.",
+      "status": "curated-profile",
+      "sources": [
+        "README.md",
+        "index.html",
+        "pages/PROFILE.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "medium",
+      "verification_method": "Curated homepage and profile synchronization.",
+      "maintenance_owner": "EDUCATOR",
+      "caveat": "Term-specific teaching claims should be updated after each semester."
+    },
+    {
+      "id": "cogsec-role",
+      "claim": "COGSEC.org is the cognitive security publication and research context linked from the profile.",
+      "status": "public-site",
+      "sources": [
+        "https://cogsec.org",
+        "README.md",
+        "pages/PROFILE.md"
+      ],
+      "checked_at": "2026-05-27T18:41:50Z",
+      "confidence": "medium",
+      "verification_method": "Public site link and curated profile copy.",
+      "maintenance_owner": "RESEARCHER",
+      "caveat": "Prefer COGSEC pages for COGSEC-specific publication claims."
+    }
+  ],
+  "variants": {
+    "full": "Complete CV with all structured resume sections, works, and software.",
+    "academic": "Academic CV variant emphasizing education, research, works, awards, conferences, and service.",
+    "software-consulting": "Software and consulting variant emphasizing systems work, software, and applied Active Inference.",
+    "teaching-service": "Teaching and service variant emphasizing education, courses, media, outreach, and community work."
+  }
+}

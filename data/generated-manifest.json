@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T17:00:17Z",
+  "generated_at": "2026-05-27T21:31:49Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -49,6 +49,28 @@
       "command": "python3 code/orchestrators/export_agent_data.py"
     },
     {
+      "name": "Resume and CV exports",
+      "outputs": [
+        "data/resume.json",
+        "resume/full.txt",
+        "resume/academic.txt",
+        "resume/software-consulting.txt",
+        "resume/teaching-service.txt",
+        "resume/resume.pdf",
+        "resume/verify.html"
+      ],
+      "sources": [
+        "resume/source.json",
+        "data/works.json",
+        "data/software.json",
+        "data/scholar-snapshot.json",
+        "data/claims.json",
+        "code/src/resume_data.py",
+        "code/orchestrators/build_resume.py"
+      ],
+      "command": "uv run python3 code/orchestrators/build_resume.py --all"
+    },
+    {
       "name": "Software catalog HTML sync",
       "outputs": [
         "software.html",
@@ -73,6 +95,19 @@
         "code/orchestrators/build_github_inventory.py"
       ],
       "command": "python3 code/orchestrators/build_github_inventory.py"
+    },
+    {
+      "name": "Paired publication sync report",
+      "outputs": [
+        "reports/paired_publications_2026-05-27.json"
+      ],
+      "sources": [
+        "GitHub Releases API",
+        "Zenodo Records API",
+        "code/src/publication_pairing.py",
+        "code/orchestrators/sync_paired_publications.py"
+      ],
+      "command": "python3 code/orchestrators/sync_paired_publications.py"
     },
     {
       "name": "Domain pages",
@@ -191,7 +226,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-05-26.json"
+        "reports/asset_size_2026-05-27.json"
       ],
       "sources": [
         "root HTML pages",

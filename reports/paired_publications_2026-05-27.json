@@ -1,0 +1,432 @@
+{
+  "generated_at": "2026-05-27T18:40:14Z",
+  "source": "GitHub Releases API + Zenodo Records API",
+  "owners": [
+    "docxology"
+  ],
+  "counts": {
+    "github_releases": 14,
+    "zenodo_records": 87,
+    "pairs": 5,
+    "strong_pairs": 4,
+    "needs_review": 1,
+    "create_new": 2,
+    "update_existing": 2
+  },
+  "warnings": [],
+  "actions": [
+    {
+      "action_type": "create_new",
+      "doi": "10.5281/zenodo.20417017",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "confidence": "strong",
+      "reason": "strong new DOI/release pair",
+      "github_repo": "docxology/template_autoresearch_project",
+      "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417017",
+      "folder": "2026_BoundedAutoResearchTiny"
+    },
+    {
+      "action_type": "update_existing",
+      "doi": "10.5281/zenodo.20286171",
+      "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "confidence": "strong",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
+      "github_repo": "docxology/crescent_city",
+      "github_release_url": "https://github.com/docxology/crescent_city/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20286171",
+      "folder": "2026_CrescentCity"
+    },
+    {
+      "action_type": "update_existing",
+      "doi": "10.5281/zenodo.20286478",
+      "title": "Introduction to Biology: A Generative Approach",
+      "confidence": "strong",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
+      "github_repo": "docxology/biology_textbook",
+      "github_release_url": "https://github.com/docxology/biology_textbook/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20286478",
+      "folder": "2026_BiologyTextbook"
+    },
+    {
+      "action_type": "create_new",
+      "doi": "10.5281/zenodo.20417022",
+      "title": "Active Inference Multi-Track Exemplar",
+      "confidence": "strong",
+      "reason": "strong new DOI/release pair",
+      "github_repo": "docxology/template_active_inference",
+      "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417022",
+      "folder": "2026_ActiveInferenceMulti"
+    },
+    {
+      "action_type": "needs_review",
+      "doi": "10.5281/zenodo.16782757",
+      "title": "The Ant Stack",
+      "confidence": "needs_review",
+      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "github_repo": "docxology/ant_stack",
+      "github_release_url": "https://github.com/docxology/ant_stack/releases/tag/v2.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/16782757",
+      "folder": "2025_AntStack2"
+    }
+  ],
+  "pairs": [
+    {
+      "confidence": "strong",
+      "evidence": [
+        "github_release_mentions_doi",
+        "github_release_mentions_zenodo_record",
+        "zenodo_related_identifier_mentions_release",
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "doi": "10.5281/zenodo.20417017",
+      "github_repo": "docxology/template_autoresearch_project",
+      "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417017",
+      "release": {
+        "owner": "docxology",
+        "repo": "template_autoresearch_project",
+        "tag": "v0.2.0",
+        "name": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.2.0)",
+        "body": "Release v0.2.0 for template_autoresearch_project.\n\n## Publication\n- Version: 0.2\n- GitHub release: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0\n- DOI: https://doi.org/10.5281/zenodo.20417017\n- Zenodo: https://zenodo.org/records/20417017\n- PDF SHA-256: `922d12425ac8649d214fc38ad24a0379802d3de7b27f7bd2c9ef659b282a5c85`\n\n## Abstract\nAbstract\n\nThis paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastructure.\nThe case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop. The run evaluates\n4 of 5 proposed candidates,\nincluding Tiny patch-attention classifier, selects\nexp-mlp-tanh-64 (MLP,\n50890 parameters), and improves test_accuracy from\n82.6% to 89.4%\n(6.8% absolute change). The validated diagnostic layer reports\nmacro F1 89.4%, bootstrap accuracy interval\n86.4% to 92.0%, Brier score 0.161,\nnegative log likelihood 0.361, top-2 accuracy\n95.6%, and exact McNemar p-value 0.000.\nThe same pipeline writes proposal, candidate, run, review, benchmark, evidence,\nfigure, confusion-matrix, statistical-summary, probability-quality, and\nsecurity-integrity artifacts from declared output contracts; uses\n0 LLM calls at USD 0.00 cost; and records\n7 configured stages, 6 supported\nlocal-artifact claims, and 78 required artifacts.\nThe local security attestation status is passed,\nwith 0 checksum mismatch(es). The final\nreadiness status is passed, with review gates deferred to a\nhuman rather than self-approved by the generated run.",
+        "html_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
+        "published_at": "2026-05-27T18:36:18Z",
+        "assets": [
+          {
+            "name": "Friedman_2026_Bounded_922d1242.pdf",
+            "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.2.0/Friedman_2026_Bounded_922d1242.pdf",
+            "size": 1303159
+          }
+        ],
+        "full_name": "docxology/template_autoresearch_project"
+      },
+      "record": {
+        "record_id": "20417017",
+        "doi": "10.5281/zenodo.20417017",
+        "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+        "publication_date": "2026",
+        "version": "0.2",
+        "resource_type": {
+          "title": "Journal article",
+          "type": "publication",
+          "subtype": "article"
+        },
+        "creators": [
+          {
+            "name": "Daniel Ari Friedman",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "Abstract\n\nThis paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastructure.\nThe case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop. The run evaluates\n4 of 5 proposed candidates,\nincluding Tiny patch-attention classifier, selects\nexp-mlp-tanh-64 (MLP,\n50890 parameters), and improves test_accuracy from\n82.6% to 89.4%\n(6.8% absolute change). The validated diagnostic layer reports\nmacro F1 89.4%, bootstrap accuracy interval\n86.4% to 92.0%, Brier score 0.161,\nnegative log likelihood 0.361, top-2 accuracy\n95.6%, and exact McNemar p-value 0.000.\nThe same pipeline writes proposal, candidate, run, review, benchmark, evidence,\nfigure, confusion-matrix, statistical-summary, probability-quality, and\nsecurity-integrity artifacts from declared output contracts; uses\n0 LLM calls at USD 0.00 cost; and records\n7 configured stages, 6 supported\nlocal-artifact claims, and 78 required artifacts.\nThe local security attestation status is passed,\nwith 0 checksum mismatch(es). The final\nreadiness status is passed, with review gates deferred to a\nhuman rather than self-approved by the generated run.\n\n---\nAssociated artifacts\nGitHub release: Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.2.0) (https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0)\nPDF SHA-256: 922d12425ac8649d214fc38ad24a0379802d3de7b27f7bd2c9ef659b282a5c85",
+        "keywords": [
+          "autoresearch",
+          "reproducible research",
+          "machine learning benchmark",
+          "artifact readiness",
+          "human review",
+          "local artifact integrity"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "ea1c516f-19ee-41fc-8251-ceefd2a5eb10",
+            "key": "Friedman_2026_Bounded_922d1242.pdf",
+            "size": 1303159,
+            "checksum": "md5:782c942a04ac373d8f940f8a94e6832a",
+            "links": {
+              "self": "https://zenodo.org/api/records/20417017/files/Friedman_2026_Bounded_922d1242.pdf/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/20417017",
+        "doi_url": "https://doi.org/10.5281/zenodo.20417017",
+        "record_url": "https://zenodo.org/records/20417017"
+      }
+    },
+    {
+      "confidence": "strong",
+      "evidence": [
+        "github_release_mentions_doi"
+      ],
+      "doi": "10.5281/zenodo.20286171",
+      "github_repo": "docxology/crescent_city",
+      "github_release_url": "https://github.com/docxology/crescent_city/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20286171",
+      "release": {
+        "owner": "docxology",
+        "repo": "crescent_city",
+        "tag": "v1.0.0",
+        "name": "crescent_city v1.0.0",
+        "body": "## crescent_city v1.0.0 — Initial canonical public release\n\nA comprehensive, reproducible scholarly history of **Crescent City, California** — from twelve generations of Tolowa Dee-ni' habitation through the genocidal settlement era, the 130-year timber and fishing economy, the 1964 Alaska tsunami, and into the present Cascadia-subduction-zone condition.\n\n- **46 topical chapters** across four nested-systems Parts: Space, Time, People, Ideas\n- **24 reproducible figures** generated from source-indexed data ledgers\n- Curated, build-validated BibTeX bibliography (371 citations)\n- Full `docs/` reproducibility & provenance apparatus (source-to-claim audit, claim ledger, ethics)\n- Typeset PDF via Pandoc + XeLaTeX + pandoc-crossref\n- Built on the [Research Project Template](https://github.com/docxology/template)\n\nArchival DOI: `10.5281/zenodo.20286171`\n\nSee [`CHANGELOG.md`](https://github.com/docxology/crescent_city/blob/main/CHANGELOG.md) for the full editorial history.",
+        "html_url": "https://github.com/docxology/crescent_city/releases/tag/v1.0.0",
+        "published_at": "2026-05-19T15:04:46Z",
+        "assets": [],
+        "full_name": "docxology/crescent_city"
+      },
+      "record": {
+        "record_id": "20286171",
+        "doi": "10.5281/zenodo.20286171",
+        "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+        "publication_date": "2026-05-19",
+        "version": "1.0.0",
+        "resource_type": {
+          "title": "Publication",
+          "type": "publication"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "<div>\n<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bound (Huntsinger et al., 2014; Norton, 1979b). The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial tim- ber and commercial fishing; federal termination and 1983 federal recognition restoration under Tillie Hardwick v. United States (Madley, 2016; U.S. District Court, Northern District of California, 1983); Redwood National and State Parks and conservation governance beside a recovering working waterfront (National Park Service, 2021); and contemporary Indige- nous ocean stewardship including the 2023 Yurok&ndash;Tolowa Dee-ni&rsquo; Indigenous Marine Stewardship Area (Yurok Tribe and Tolowa Dee-ni&rsquo; Nation and Resighini Rancheria and Cher-Ae Heights Indian Community, 2024). Crescent City counted 6,673 residents at the 2020 Census, including Pelican Bay group quarters (U.S. Census Bureau, 2026b, 2020). It sits on the locked southern Cascadia margin; this study frames the often-cited thirty-seven-percent fifty-year probability of an M &gt;= 8.0 southern-segment rupture as paleoseismic model output from turbidite correlation and time-dependent recurrence analysis, not as a deterministic forecast (Goldfinger et al., 2012a; Atwater et al., 2005a). Tsunami loss is one strand in that hazard geography &mdash; the 1964 Alaska earthquake tsunami remains the deadliest event on the contiguous-U.S. Pacific coast (eleven deaths locally, twenty-nine downtown blocks destroyed), with reconstruction and Pacific-wide warning consequence treated in sec. 3.11 and sec. 3.12 (Dengler and Magoon, 2005a; National Centers for Environmental Information, 2024; Lander and Lockridge, 1989). The synthesis situates the town in recurring cycles of extraction, disaster, rebuilding, and institutional adaptation &mdash; a compact case study in nested geological, ecological, economic, and political risk (California Ocean Protection Council and California Natural Resources Agency, 2018; Abatzoglou and Williams, 2016; Goldfinger et al., 2012a).</div>\n<div>&nbsp;</div>\n<div>The argument is organized through Space, Time, People, and Ideas &mdash; parallel questions about scales of place, path- dependent chronology, institutional and kinship actors, and the meanings and rules that organize memory, resources, and governance (Tuan, 1977; Massey, 2005; Ostrom, 2009). Part I (Space) moves from Cascadia and sea-level framing through Smith River ecology, coast-redwood parks, harbor oil-spill exposure and seawall engineering, housing, and Highway 101 lifelines. Part II (Time) runs archaeology through agriculture, railroad ambitions and county-wide economic cycles, doc- umented tsunami sequences and Pacific-wide warning policy after 1964, the 2011 Tōhoku event, wildfire, and recent civic currents. Part III (People) centers Tolowa Dee-ni&rsquo; sovereignty and Nee-dash beside neighboring tribal nations, immigrant communities, governance, military service and World War II, education, religion, demographics, and rural health. Part IV (Ideas) treats zoning, resilience, Klamath River restoration, Jefferson political imagination, modern economy, culture, arts, tourism, and Klamath Knot folklore, closing with a synthesizing conclusion. Following the introduction, forty-six topical chapters span Parts I&ndash;IV; chapters on the timeline, research methods, and reproducibility, the references section, and appendices A1 (figure catalog) and A2 (glossary) complete the book. Four cultural-historical threads are treated as constitutive: IMSA co-stewardship (Yurok Tribe and Tolowa Dee-ni&rsquo; Nation and Resighini Rancheria and Cher-Ae Heights Indian Community, 2024); State of Jefferson memory, including a Crescent City judge&rsquo;s three-day governorship in December 1941; Bigfoot/Sasquatch tradition rooted in the Klamath Mountains; and the literary canonization of red- wood groves as numinous space. The manuscript draws on archival records, ethnographic and linguistic sources, geological and oceanographic literature, environmental-history and human-geography scholarship, federal-agency reports, and census data (Drucker, 1937b; Gould, 1966; Tuan, 1977; Massey, 2005; Cronon, 1991; Cook, 1976b; U.S. Census Bureau, 2026b).</div>\n<div>&nbsp;</div>\n<div>The workflow follows Peng&rsquo;s reproducibility framework (Peng, 2011): analytical choices, twenty-four registry-backed figures (data-backed, schematic, and manuscript-metric), and the complete reproduction narrative in sec. 6 are versioned alongside supporting inputs and plotters in data/, src/, and scripts/, with citations resolved against manuscript/refe rences.bib. Manuscript text is licensed CC-BY-4.0 and repository source code under the Apache License 2.0 as declared in manuscript/config.yaml; the archived scholarly artifact is cited by DOI 10.5281/zenodo.20286171. The history remains epistemic work in progress: automated checks verify manuscript structure, citation resolution, and reproducible figures, not independent reverification of every historical interpretation. Collaborators are invited to fork, correct, and extend the open-source Crescent City project at <a href=\"https://github.com/docxology/crescent_city\">https://github.com/docxology/crescent_city</a></div>\n</div>",
+        "keywords": [
+          "California",
+          "Cascadia",
+          "Crescent City",
+          "Jefferson",
+          "USA"
+        ],
+        "related_identifiers": [],
+        "files": [
+          {
+            "id": "58207195-5c77-4837-bca9-4a9655c4731a",
+            "key": "crescent_city_v1_DAF_05_19_2026.pdf",
+            "size": 12468950,
+            "checksum": "md5:48b0c8452315260baeb00dd4e8f5491b",
+            "links": {
+              "self": "https://zenodo.org/api/records/20286171/files/crescent_city_v1_DAF_05_19_2026.pdf/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/20286171",
+        "doi_url": "https://doi.org/10.5281/zenodo.20286171",
+        "record_url": "https://zenodo.org/records/20286171"
+      }
+    },
+    {
+      "confidence": "strong",
+      "evidence": [
+        "github_release_mentions_doi"
+      ],
+      "doi": "10.5281/zenodo.20286478",
+      "github_repo": "docxology/biology_textbook",
+      "github_release_url": "https://github.com/docxology/biology_textbook/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20286478",
+      "release": {
+        "owner": "docxology",
+        "repo": "biology_textbook",
+        "tag": "v1.0.0",
+        "name": "Introduction to Biology v1.0.0 (Instructor Edition)",
+        "body": "# Introduction to Biology v1.0.0 (Instructor Edition)\n\n**Title:** Introduction to Biology — A Generative Approach  \n**Edition:** 1.0  \n**License:** CC BY 4.0 (text) · Apache-2.0 (code)  \n**Export:** Instructor Edition (`include_solutions: true`)\n\n## What's included\n\n- `biology_textbook_combined.pdf` — full combined Instructor Edition PDF\n- `biology_textbook_v1.0.0_executable_bundle.zip` — Stage 10 reproducibility bundle (Dockerfile, lockfiles, source snapshot, claim verifiers, embedded PDF copy)\n\n## Verification (source commit `46bd23b`)\n\n| Gate | Result |\n| --- | --- |\n| pytest | 1405 passed, 90.16% `src/` coverage |\n| ruff + mypy | PASS |\n| Template core pipeline | PIPELINE COMPLETE (~627 s) |\n| PDF log gate | PASS (`--max-overfull-pt 2500 --allow-missing-glyphs`) |\n| Thermo-nuclear review | PASS (no P0/P1) |\n\n## Checksums\n\n- **PDF SHA-256:** `79fe889ab05dc92c4580f8b1701fea12716a221045ddf9adc72a711f4f297f7e`\n- **PDF size:** 22,377,476 bytes\n\n## DOI and follow-up\n\n- Reserved Zenodo DOI: [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478) — deposit manual follow-up\n- Source: https://github.com/docxology/biology_textbook\n",
+        "html_url": "https://github.com/docxology/biology_textbook/releases/tag/v1.0.0",
+        "published_at": "2026-05-26T14:26:32Z",
+        "assets": [
+          {
+            "name": "biology_textbook_combined.pdf",
+            "download_url": "https://github.com/docxology/biology_textbook/releases/download/v1.0.0/biology_textbook_combined.pdf",
+            "size": 22377476
+          },
+          {
+            "name": "biology_textbook_v1.0.0_executable_bundle.zip",
+            "download_url": "https://github.com/docxology/biology_textbook/releases/download/v1.0.0/biology_textbook_v1.0.0_executable_bundle.zip",
+            "size": 27021061
+          }
+        ],
+        "full_name": "docxology/biology_textbook"
+      },
+      "record": {
+        "record_id": "20286478",
+        "doi": "10.5281/zenodo.20286478",
+        "title": "Introduction to Biology: A Generative Approach",
+        "publication_date": "2026-05-26",
+        "version": "1.0.0",
+        "resource_type": {
+          "title": "Book",
+          "type": "publication",
+          "subtype": "book"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "<p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I&ndash;X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move between narrative explanation and the quantitative constraints that shape biological claims. Five recurring themes&mdash;evolution, information, structure and function, systems and emergence, and the cell&mdash;provide orientation across scales and align with mainstream undergraduate biology competencies; Unit 0 adds an optional systems, historical, and philosophical lens without replacing the traditional molecular-to-ecological sequence.</p>\n<p>Where the curriculum is quantitative, corresponding computations live in tested code modules organized by domain (biochemistry, cell biology, genetics, physiology, ecology, evolution, microbiology, botany, and neuroscience), and many figures and process diagrams are generated programmatically rather than supplied as static artwork alone. The edition pairs each chapter with a paper-based laboratory activity and a question bank that progresses from recall to synthesis; model answers are visible in this instructor build. Primary literature is cited inline, glossary and curriculum-mapping appendices support course design, and the manuscript is maintained as a reproducible open-science artifact (source at <a href=\"https://github.com/docxology/biology_textbook\">https://github.com/docxology/biology_textbook</a> ; archived at DOI 10.5281/zenodo.20286478). Text is released under Creative Commons Attribution 4.0; accompanying source code under Apache-2.0.</p>",
+        "keywords": [
+          "Biology"
+        ],
+        "related_identifiers": [],
+        "files": [
+          {
+            "id": "1613dd2d-7e7b-43d8-8113-acf3f1932193",
+            "key": "biology_textbook_v1_05-26-2026-compressed.pdf",
+            "size": 11476276,
+            "checksum": "md5:c0c8ef858487ab87d19e985bd363a6c9",
+            "links": {
+              "self": "https://zenodo.org/api/records/20286478/files/biology_textbook_v1_05-26-2026-compressed.pdf/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/20286478",
+        "doi_url": "https://doi.org/10.5281/zenodo.20286478",
+        "record_url": "https://zenodo.org/records/20286478"
+      }
+    },
+    {
+      "confidence": "strong",
+      "evidence": [
+        "github_release_mentions_doi",
+        "github_release_mentions_zenodo_record",
+        "zenodo_related_identifier_mentions_release",
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "doi": "10.5281/zenodo.20417022",
+      "github_repo": "docxology/template_active_inference",
+      "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417022",
+      "release": {
+        "owner": "docxology",
+        "repo": "template_active_inference",
+        "tag": "v0.2.0",
+        "name": "Active Inference Multi-Track Exemplar (v0.2.0)",
+        "body": "Release v0.2.0 for template_active_inference.\n\n## Publication\n- Version: 0.2.0\n- GitHub release: https://github.com/docxology/template_active_inference/releases/tag/v0.2.0\n- DOI: https://doi.org/10.5281/zenodo.20417022\n- Zenodo: https://zenodo.org/records/20417022\n- PDF SHA-256: `d7e8d4b8280b574149c75de376a7e21368f126221325c52471c58d1ed067db14`\n\n## Abstract\nAbstract\n\nThis public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml).\n\nThe first page (00_00_sheaf_coverage.md (00_00_sheaf_coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time.\n\nThe T-maze demo aligns with pymdp sophisticated_inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated_inference).\n\nMeasured invariant checks: 6 / 6 passed. SI planning horizon: 2 steps.",
+        "html_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
+        "published_at": "2026-05-27T18:36:54Z",
+        "assets": [
+          {
+            "name": "Friedman_2026_Active_d7e8d4b8.pdf",
+            "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.2.0/Friedman_2026_Active_d7e8d4b8.pdf",
+            "size": 665892
+          }
+        ],
+        "full_name": "docxology/template_active_inference"
+      },
+      "record": {
+        "record_id": "20417022",
+        "doi": "10.5281/zenodo.20417022",
+        "title": "Active Inference Multi-Track Exemplar",
+        "publication_date": "2026-05-27",
+        "version": "0.2.0",
+        "resource_type": {
+          "title": "Journal article",
+          "type": "publication",
+          "subtype": "article"
+        },
+        "creators": [
+          {
+            "name": "Daniel Ari Friedman",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "Abstract\n\nThis public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml).\n\nThe first page (00_00_sheaf_coverage.md (00_00_sheaf_coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time.\n\nThe T-maze demo aligns with pymdp sophisticated_inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated_inference).\n\nMeasured invariant checks: 6 / 6 passed. SI planning horizon: 2 steps.\n\n---\nAssociated artifacts\nGitHub release: Active Inference Multi-Track Exemplar (v0.2.0) (https://github.com/docxology/template_active_inference/releases/tag/v0.2.0)\nPDF SHA-256: d7e8d4b8280b574149c75de376a7e21368f126221325c52471c58d1ed067db14",
+        "keywords": [
+          "active inference",
+          "pymdp",
+          "sophisticated inference",
+          "generalized notation notation",
+          "lean"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "1e4cc83f-cf58-4a6b-ac73-3f5bd62cece0",
+            "key": "Friedman_2026_Active_d7e8d4b8.pdf",
+            "size": 665892,
+            "checksum": "md5:d3e27e5b9576b202ca178c18da08b64f",
+            "links": {
+              "self": "https://zenodo.org/api/records/20417022/files/Friedman_2026_Active_d7e8d4b8.pdf/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/20417022",
+        "doi_url": "https://doi.org/10.5281/zenodo.20417022",
+        "record_url": "https://zenodo.org/records/20417022"
+      }
+    },
+    {
+      "confidence": "needs_review",
+      "evidence": [
+        "title_overlap"
+      ],
+      "doi": "10.5281/zenodo.16782757",
+      "github_repo": "docxology/ant_stack",
+      "github_release_url": "https://github.com/docxology/ant_stack/releases/tag/v2.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/16782757",
+      "release": {
+        "owner": "docxology",
+        "repo": "ant_stack",
+        "tag": "v2.0.0",
+        "name": "Ant Stack v2.0.0",
+        "body": "# Ant Stack v2.0.0 Release Notes\n\nRelease date: 2026-05-18\n\nAnt Stack v2.0.0 is a major repository restructure and validation release. It turns the project into a modern `uv` Python package with `bun`-managed Mermaid tooling, package-owned orchestration, canonical generated outputs, and executable architecture contracts.\n\n## Highlights\n\n- Rebuilt the repository around installable `antstack_core` package modules for analysis, cohereants, figures, mathematics, orchestration, publishing, and CLI entrypoints.\n- Added `run-all-antstack`, a package-owned orchestrator that validates one YAML config and generates canonical data, statistics, visualizations, animations, reports, paper projections, logs, manifests, and provenance under `outputs/<run_id>/`.\n- Added current console commands: `antstack-build`, `antstack-ce`, and `run-all-antstack`.\n- Added executable architecture contracts through `antstack_core.architecture`, including module/folder validation, public export checks, Mermaid rendering, and tests against placeholder method bodies.\n- Added real Cohereants helper APIs for physical conversions, spectroscopy, behavioral analysis, statistics, power analysis, and plotting hooks.\n- Added folder-level `README.md` and `AGENTS.md` coverage for every intentional directory and a checker at `tools/ensure_folder_docs.py`.\n- Added Mermaid diagrams and corrected command contracts across the curated documentation set.\n- Preserved compatibility outputs for the complexity energetics paper while establishing canonical outputs under `outputs/<run_id>/`.\n- Removed tracked caches, Python bytecode, OS metadata, and the old `package-lock.json`; added `bun.lock`, `uv.lock`, and project-level ignore policy.\n\n## Validation\n\nThe release was validated with:\n\n```bash\nuv sync --extra dev\nbun install\nuv run pytest --collect-only -q\nuv run pytest -q\nuv run ruff check .\nuv run python tools/ensure_folder_docs.py --check\nuv run antstack-build --validate-only\nuv run run-all-antstack --config configs/run_all_antstack.example.yaml --validate-only\nbun run validate\nbun run test:collect\nbun run lint\n```\n\nVerified suite result:\n\n```text\n676 passed, 10 subtests passed\n```\n\n## Compatibility Notes\n\n- New canonical generated artifacts should go under `outputs/<run_id>/`.\n- Complexity energetics compatibility artifacts still project to `papers/complexity_energetics/out`, `papers/complexity_energetics/assets`, and `papers/complexity_energetics/Generated.md` unless disabled in config.\n- Scripts and CLIs should remain thin wrappers over package APIs.\n- Public package contracts are enforced through `__all__` exports and pytest contract tests.\n",
+        "html_url": "https://github.com/docxology/ant_stack/releases/tag/v2.0.0",
+        "published_at": "2026-05-18T23:00:21Z",
+        "assets": [],
+        "full_name": "docxology/ant_stack"
+      },
+      "record": {
+        "record_id": "16782757",
+        "doi": "10.5281/zenodo.16782757",
+        "title": "The Ant Stack",
+        "publication_date": "2025-08-08",
+        "version": "v1.0",
+        "resource_type": {
+          "title": "Other",
+          "type": "other"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "<div>\n<div>We present the Ant Stack: a compact, modular framework that emulates an ant from physics to cognition. It comprises three interoperable layers&mdash;`AntBody` (morphology, actuation, sensors), `AntBrain` (functional neural circuits templated from conserved insect architectures), and `AntMind` (active inference and stigmergy for individual and collective cognition). The stack uses explicit I/O contracts, sparse/low‑power compute, and species‑parameterized configurations aligned with current myrmecology.</div>\n<br>\n<div>The proposed methods couple physics‑based locomotion and olfactory&ndash;visual sensing with a lightweight neural pipeline (local plasticity) and a minimal generative model for active‑inference policy selection that composes across agents via pheromone‑mediated stigmergy. We specify evaluation suites for navigation, trail following, task allocation, and robustness under noise/adversaries. The framework is reproducible, extensible, and transferable to swarm robotics and other complex systems, with open evaluation assets and baseline species configurations.</div>\n<br>\n<div>Contributions: (1) an explicit, executable Input/Output contract between proposed Body, Brain, and Mind layers; (2) a compact neural control pipeline with local plasticity; (3) a minimal active‑inference ant nestmate agent that composes via stigmergy; (4) a standardized evaluation suite with species presets and seeds for direct replication; (5) a species‑parameterized, manifest‑driven, and version‑pinned artifact set for reproducible translational entomologicalresearch.</div>\n<br>\n<div>For myrmecology, the stack links empirical findings (pheromone dynamics, polarized‑light navigation, species‑level diversity) to executable models for hypothesis testing and cross‑species comparison. Beyond biology, it provides a tractable substrate for energy‑efficient synthetic intelligence, cognitive security, and alignment research where distributed, naturally aligned agents yield resilient group behavior.</div>\n</div>",
+        "keywords": [
+          "Entomology",
+          "ant colony",
+          "stigmergy",
+          "active inference",
+          "myrmecology"
+        ],
+        "related_identifiers": [],
+        "files": [
+          {
+            "id": "c1970388-13ba-475d-b177-f828dc65faeb",
+            "key": "Ant-Stack_v1_DAF_Aug-8-2025.pdf",
+            "size": 622582,
+            "checksum": "md5:dee1e0b1ae649059bca76861fbdb2969",
+            "links": {
+              "self": "https://zenodo.org/api/records/16782757/files/Ant-Stack_v1_DAF_Aug-8-2025.pdf/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/16782757",
+        "doi_url": "https://doi.org/10.5281/zenodo.16782757",
+        "record_url": "https://zenodo.org/records/16782757"
+      }
+    }
+  ],
+  "applied": []
+}

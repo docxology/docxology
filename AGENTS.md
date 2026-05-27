@@ -42,6 +42,7 @@
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
 - Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
 - Runs [sync_software_html.py](papers/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
+- Runs [build_resume.py](code/orchestrators/build_resume.py) with `--all` after edits to [resume/source.json](resume/source.json), bibliography/software data, Scholar metrics, or claim data so [data/resume.json](data/resume.json), plaintext variants, and [resume/resume.pdf](resume/resume.pdf) stay aligned
 - Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **110** folders as of 2026-05-26)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
@@ -90,6 +91,7 @@ docxology/
 ├── codemeta.json      ← CodeMeta software/source metadata
 ├── bibliography.bib / bibliography.csl.json / bibliography.ris ← citation-manager exports
 ├── data/              ← Agent JSON indexes for works, software, people, organizations, claims, catalog, enrichment, and generated files
+├── resume/            ← Structured resume/CV source plus generated plaintext variants and PDF
 ├── reports/           ← Public-source snapshots, reconciliation reports, link reports, accessibility reports, and visual QA screenshots
 ├── docs/              ← Documentation for the entire repository (see docs/AGENTS.md)
 ├── code/              ← Repository source code and executable orchestrators (see code/AGENTS.md)

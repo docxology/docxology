@@ -1,0 +1,268 @@
+Daniel Ari Friedman, PhD
+Computational biologist, Active Inference researcher, cognitive security researcher, educator, and artist
+California, USA, Earth
+
+Email: danielarifriedman@gmail.com; daniel@activeinference.institute
+Sites: https://danielarifriedman.com/; https://cognitivesecurity.us
+GitHub: https://github.com/docxology
+LinkedIn: https://www.linkedin.com/in/danielarifriedman/
+Google Scholar: https://scholar.google.com/citations?user=DXjPFtYAAAAJ
+ORCID: 0000-0001-6232-9096
+Keybase: docxology
+ENS: docxology.eth
+Art portfolio: https://www.flickr.com/photos/daniel_friedman/
+Voice/Text: Ask via email
+
+Variant: software-consulting
+Generated: 2026-05-27T21:31:41Z
+
+Current public metrics: 117 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+
+SUMMARY
+-------
+Multidisciplinary researcher and open-source builder working across social insect biology, Active
+Inference, cognitive security, computational frameworks, education, and art.
+
+EDUCATION
+---------
+
+EXPERIENCE
+----------
+2021-ongoing | Community Organization | Active Inference Institute | Co-founder, Participant, Officer, President, Treasurer
+  - Co-founded the Active Inference Institute; current President and Treasurer.
+  - Sources: AII officers: https://www.activeinference.institute/officers; AII:
+  https://activeinference.org/
+2019-ongoing | Community Organization | COGSEC | Researcher
+  - Research facilitation and participation on initiatives related to cognitive security.
+  - Sources: COGSEC: https://www.cogsec.org/
+2025-2026 | Startup | Stealth Startup | Operator
+  - Systems modeling and related work to be public later.
+  - Sources: verification: https://danielarifriedman.com/resume/verify.html
+2023-2024 | Startup | Stealth Startup | Co-founder, Operator
+  - Stealth Active Inference startup.
+  - Sources: verification: https://danielarifriedman.com/resume/verify.html
+2019-2023 | Startup | Remotor | Co-founder, Researcher
+  - Education, online event planning, and consulting for remote teams.
+  - Sources: verification: https://danielarifriedman.com/resume/verify.html
+2017-2019 | Startup | fm.analytics | Co-founder, Researcher
+  - Predictive analytics and dashboard visualizations with Prof. Glenn Magerman at KU Leuven.
+  - Sources: verification: https://danielarifriedman.com/resume/verify.html
+2017-2019 | Startup | Cryptoptera | Co-founder, Researcher
+  - Three-person cryptocurrency research group.
+  - Sources: verification: https://danielarifriedman.com/resume/verify.html
+
+AWARDS AND FELLOWSHIPS
+----------------------
+
+WORKS AND PUBLICATIONS (110)
+----------------------------
+[001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
+[003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
+[004] 2026 | Paper | The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value | Zenodo | 10.5281/zenodo.19335196
+[005] 2026 | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | Zenodo | 10.5281/zenodo.18364119
+[007] 2026 | Paper | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | Zenodo | 10.5281/zenodo.18600041
+[008] 2025 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | Presentation | 10.5281/zenodo.17555266
+[009] 2025 | Paper | Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference | Zenodo | 10.5281/zenodo.17228945
+[010] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15170907
+[011] 2025 | Paper | Computational Complexity and Energetics of the Ant Stack | Zenodo | 10.5281/zenodo.17238736
+[012] 2025 | Paper | EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
+[013] 2025 | Paper | Increasing the Accessibility and Applicability of Active Inference | Zenodo | 10.5281/zenodo.15061667
+[014] 2025 | Paper | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | Zenodo | 10.5281/zenodo.16790554
+[015] 2025 | Paper | Markdown Decision Process: A Framework for Probabilistic Document Analysis | Zenodo | 10.5281/zenodo.17244386
+[016] 2025 | Paper | On Cognitive Art & Science: Toward Wholeness From Both Sides | Zenodo | 10.5281/zenodo.16740439
+[017] 2025 | Paper | On Time | Zenodo | 10.5281/zenodo.15168381
+[018] 2025 | Paper | QuadMath: An Analytical Review of 4D and Quadray Coordinates | Zenodo | 10.5281/zenodo.16887800
+[019] 2025 | Paper | ResNei: Solution Design Document | Zenodo | 10.5281/zenodo.15389682
+[020] 2025 | Paper | Symergetics: Symbolic Synergetics for Rational Arithmetic | Zenodo | 10.5281/zenodo.17114389
+[021] 2025 | Paper | Synthesis of Agent and Niche | Zenodo | 10.5281/zenodo.17235137
+[022] 2025 | Presentation | Systems Processes, Active Inference, and Beyond | Presentation | 10.5281/zenodo.17138223
+[023] 2025 | Paper | Temporal Depth in a Coherent Self and in Depersonalization | Frontiers in Psychology | 10.3389/fpsyg.2025.1585315
+[024] 2025 | Paper | The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) | Zenodo | 10.5281/zenodo.17982447
+[025] 2025 | Paper | The Ant Stack | Zenodo | 10.5281/zenodo.16782756
+[026] 2025 | Paper | The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes | ArXiv | 10.48550/arXiv.2505.17500
+[027] 2025 | Paper | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States | Entropy | 10.3390/e27050459
+[028] 2025 | Paper | Towards a Science of Consciousness and Social Complexity... For Ants | Book Chapter | https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes
+[029] 2024 | Paper | Aligning Active Inference Ontology to SUMO | Zenodo | 10.5281/zenodo.11459322
+[030] 2024 | Presentation | BioFirm Development at Applied Active Inference Symposium 2024 | Presentation | 10.5281/zenodo.14861595
+[031] 2024 | Paper | Bridging gaps in image meme research: A multidisciplinary paradigm | JASIST | 10.1002/asi.24900
+[032] 2024 | Paper | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea | Ecology & Evolution | 10.1002/ece3.70063
+[033] 2024 | Paper | Comments on National Digital Twins R&D Strategic Plan | Zenodo | 10.5281/zenodo.13273681
+[034] 2024 | Paper | Enhancing Population-based Search with Active Inference | ArXiv | 10.48550/arXiv.2408.09548
+[035] 2024 | Paper | FarmWorks: Decentralized AI Agents for Personalized Solutions | Zenodo | 10.5281/zenodo.13754585
+[036] 2024 | Paper | Federated inference and belief sharing | Neuroscience & Biobehavioral Reviews | 10.1016/j.neubiorev.2023.105500
+[037] 2024 | Paper | Four-fold Fields of Quantum Dreams | Zenodo | 10.5281/zenodo.10798145
+[038] 2024 | Presentation | MathArt Stream #8: William Blake and Active Inference | Presentation | 10.5281/zenodo.13711301
+[039] 2024 | Presentation | Sensemaking Federation: Exploring the Frontiers of Digital Innovation | Presentation | 10.5281/zenodo.14574046
+[040] 2024 | Paper | Shared Protentions in Multi-Agent Active Inference | Entropy | 10.3390/e26040303
+[041] 2024 | Paper | The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) | Zenodo | 10.5281/zenodo.14108992
+[042] 2024 | Paper | Way Finding in the Infinite Imaginarium | Zenodo | 10.5281/zenodo.10601082
+[043] 2024 | Paper | Why Paleolithic Rockstars were both enigmatic and sporadic | Physics of Life Reviews | 10.1016/j.plrev.2024.04.010
+[044] 2024 | Paper | Writing on Curio Cards for the "On NFT" book | Taschen | https://www.worldcat.org/isbn/978-3-8365-9970-2
+[045] 2023 | Paper | A guided tour through the spaces of particular "minds" | Physics of Life Reviews | 10.1016/j.plrev.2023.11.001
+[046] 2023 | Paper | A single-pheromone model accounts for empirical patterns of ant colony foraging | Cognitive Systems Research | 10.1016/j.cogsys.2023.02.005
+[047] 2023 | Paper | A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees | Zenodo | 10.5281/zenodo.10400744
+[048] 2023 | Paper | A variational synthesis of evolutionary and developmental dynamics | Entropy | 10.3390/e25070964
+[049] 2023 | Paper | ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10296601
+[050] 2023 | Paper | An Account of Active Inference Modeling | Zenodo | 10.5281/zenodo.8415313
+[051] 2023 | Paper | Cognitive Sovereignty & Active Inference in the State of Exception | Zenodo | 10.5281/zenodo.10038232
+[052] 2023 | Paper | Comments on AI Accountability Policy to NTIA | NTIA | 10.5281/zenodo.8025957
+[053] 2023 | Paper | Distributed Science — The Scientific Process as Multi-Scale Active Inference | OSF | 10.31219/osf.io/dnw5k
+[054] 2023 | Paper | Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing | Zenodo | 10.5281/zenodo.10160656
+[055] 2023 | Paper | Experimental Entomology in the Age of Video | JoVE | 10.3791/65002
+[056] 2023 | Paper | Generalized Notation Notation for Active Inference Models | Zenodo | 10.5281/zenodo.7803328
+[057] 2023 | Paper | Generative Research Teams: Active Inference Compositions for Research and Meta-Science | Zenodo | 10.5281/zenodo.8164667
+[058] 2023 | Presentation | Of Ants & Aging | Presentation | 10.5281/zenodo.7855582
+[059] 2023 | Paper | Open Access science needs Open Science Sensemaking (OSSm) | MetaArXiv | 10.31222/osf.io/9nb3u
+[060] 2023 | Presentation | Postdoc review (2020–2023) | Presentation | 10.5281/zenodo.8377988
+[061] 2023 | Paper | The Active Inference Institute and Active Inference Ecosystem (v1) | Zenodo | 10.5281/zenodo.8266281
+[062] 2023 | Paper | The P3IF: Properties, Processes, and Perspectives Inter-Framework | Zenodo | 10.5281/zenodo.10034512
+[063] 2023 | Paper | To comment or not to comment | Physics of Life Reviews | 10.1016/j.plrev.2023.06.002
+[065] 2023 | Paper | William Blake & Buckminster Fuller: Lives in Juxtaposition | Zenodo | 10.5281/zenodo.7514368
+[066] 2022 | Paper | An Active Inference Ontology for Decentralized Science | Zenodo | 10.5281/zenodo.6320574
+[067] 2022 | Paper | Catechism for Towards Active Diffusion | Zenodo | 10.5281/zenodo.7443848
+[068] 2022 | Paper | From Users to (Sense)Makers: Stigmergic Social Annotation | Hypertext '22 | 10.48550/arXiv.2205.06345
+[069] 2022 | Paper | On free will or the lack thereof (interview with Robert Sapolsky) | ALIUS Bulletin | 10.5281/zenodo.7394901
+[070] 2022 | Paper | Predictive Processing Interpretation of the Mirror Test | Zenodo | 10.5281/zenodo.7377256
+[071] 2022 | Book | Structuring the Information Commons: Open Standards and Cognitive Security | COGSEC.org | https://cogsec.org
+[072] 2022 | Paper | Systems Modeling and Cognitive Audits for Hypercert Ecosystems | Zenodo | 10.5281/zenodo.7626769
+[073] 2022 | Paper | The Free Energy Principle & Active Inference: a Systematic Literature Analysis | Zenodo | 10.5281/zenodo.7449368
+[074] 2022 | Paper | TrustFinder: Recommendations for Community-Based Trust Systems | Zenodo | 10.5281/zenodo.7093837
+[075] 2021 | Paper | Active Inferants: An Active Inference Framework for Ant Colony Behavior | Frontiers in Behavioral Neuroscience | 10.3389/fnbeh.2021.647732
+[076] 2021 | Paper | Active Inference in Modeling Conflict | Zenodo | 10.5281/zenodo.5759807
+[077] 2021 | Paper | Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse | Zenodo | 10.5281/zenodo.5573947
+[079] 2021 | Book | Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier | COGSEC.org | https://cogsec.org
+[080] 2021 | Paper | Narrative Information Management | Zenodo | 10.5281/zenodo.5573287
+[082] 2020 | Paper | Active Inference & Behavior Engineering for Teams | Zenodo | 10.5281/zenodo.4021163
+[084] 2020 | Paper | Distributed physiology and the molecular basis of social life in eusocial insects | Hormones & Behavior | 10.1016/j.yhbeh.2020.104757
+[085] 2020 | Paper | Emergent Teams for Complex Threats | Zenodo | 10.5281/zenodo.3986085
+[086] 2020 | Paper | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | Communications Biology | 10.1038/s42003-020-0813-8
+[088] 2020 | Paper | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | Analytical & Bioanalytical Chemistry | 10.1007/s00216-019-02355-3
+[089] 2020 | Book | The Great Preset: Remote Teams and Operational Art | COGSEC.org | https://cogsec.org
+[090] 2020 | Paper | The Innovator's Catechism | Zenodo | 10.5281/zenodo.4383230
+[091] 2020 | Paper | The neuroscience of decision making (interview with Timothy Hanks) | ALIUS Bulletin | 10.34700/8pg4-0h12
+[092] 2019 | Paper | Dennett Explained (interview with Daniel Dennett) | ALIUS Bulletin | 10.34700/7gkw-zh08
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
+[095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
+[096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
+[097] 2018 | Presentation | MVEE: A Framework for Evolutionary Studies | Presentation | 10.5281/zenodo.13999298
+[098] 2018 | Paper | Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) | ALIUS Bulletin | 10.34700/h460-nz89
+[099] 2018 | Paper | Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement | Arts | 10.3390/arts7030039
+[100] 2018 | Paper | The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants | iScience | 10.1016/j.isci.2018.09.001
+[101] 2017 | Paper | The MutAnts are here | Cell | 10.1016/j.cell.2017.07.046
+[102] 2017 | Paper | Two lineages that need each other | Molecular Ecology | 10.1111/mec.13964
+[103] 2016 | Paper | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | Annual Review of Neuroscience | 10.1146/annurev-neuro-070815-013927
+[104] 2016 | Paper | Context-dependent expression of the foraging gene in field colonies of ants | Proceedings of the Royal Society B | 10.1098/rspb.2016.0841
+[105] 2016 | Paper | Influence of Nuclear Structure on formation of radiation-induced lethal lesions | Int. J. Radiation Biology | 10.3109/09553002.2016.1144941
+[106] 2015 | Paper | Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history | Frontiers in Genetics | 10.3389/fgene.2015.00261
+[107] 2015 | Paper | Could Ehrlichial Infection Cause Some Changes Associated with Leukemia? | Medical Hypotheses | 10.1016/j.mehy.2015.09.015
+[108] 2015 | Paper | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | Molecular Biology & Evolution | 10.1093/molbev/msu292
+[109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574118
+[110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19897664
+[111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
+[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695260
+[113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699234
+[114] 2020 | Paper | The Facilitator's Catechism | Zenodo | 10.5281/zenodo.4203765
+[115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144984
+[116] 2026 | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | Zenodo | 10.5281/zenodo.20286171
+[117] 2026 | Book | Introduction to Biology: A Generative Approach | Zenodo | 10.5281/zenodo.20286478
+
+SOFTWARE (82)
+-------------
+docxology/template | Python | https://github.com/docxology/template | Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning
+docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
+docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
+docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration
+docxology/cognitive-engine | Python | https://github.com/docxology/cognitive-engine | Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning
+docxology/opentir | Python | https://github.com/docxology/opentir | Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations
+docxology/timeline_generator | TypeScript | https://github.com/docxology/timeline_generator | Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
+docxology/FORMINDEX | Rich Text Format | https://github.com/docxology/FORMINDEX | Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation
+docxology/ActiveInferAnts | Python | https://github.com/docxology/ActiveInferAnts | Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy | paper: papers/2021_ActiveInferants/
+docxology/crescent-city | TypeScript | https://github.com/docxology/crescent-city | End-to-end pipeline for ingesting, parsing, and querying the Crescent City, CA municipal code; TypeScript-based legal-text processing
+docxology/ivm-xyz | Python | https://github.com/docxology/ivm-xyz | Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations
+docxology/Markov_Blanket_Detection | Python | https://github.com/docxology/Markov_Blanket_Detection | Dynamic Markov Blanket Detection (DMBD) — PyTorch-accelerated framework for identifying causal relationships in complex systems; static and temporal modes with cognitive-structure labeling
+docxology/QuadMath | TeX | https://github.com/docxology/QuadMath | Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library
+docxology/active_inference | Python | https://github.com/docxology/active_inference | Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling | paper: papers/2020_BehaviorEngineering/
+docxology/AgenticMesh | Python | https://github.com/docxology/AgenticMesh | Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
+docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
+docxology/lean_niche | Python | https://github.com/docxology/lean_niche | Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics
+docxology/literature | Python | https://github.com/docxology/literature | Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications
+docxology/obsidian-construction-from-text | Python | https://github.com/docxology/obsidian-construction-from-text | Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs
+docxology/qr_live_protocol | Python | https://github.com/docxology/qr_live_protocol | QR code-based live protocol system for real-time data exchange and interactive session management
+docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
+docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
+docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization
+docxology/ant-pheromone | Python | https://github.com/docxology/ant-pheromone | Computational simulation of ant pheromone trail dynamics and stigmergic communication
+docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
+docxology/ento_linguistics | Python | https://github.com/docxology/ento_linguistics | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring | paper: papers/2026_EntoLinguistics/
+docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
+docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Julia | https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment
+docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286478
+docxology/cascadia | Python | https://github.com/docxology/cascadia | Cascadia bioregion modeling and data analysis tools
+docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
+docxology/enactive_inference_model | Python | https://github.com/docxology/enactive_inference_model | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures | paper: papers/2025_Thoughtseeds/
+docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics | paper: papers/2025_EvoJump/
+docxology/flick | Python | https://github.com/docxology/flick | Lightweight Python tooling for rapid data flicking and processing pipelines
+docxology/fuller-obsidian | unspecified | https://github.com/docxology/fuller-obsidian | Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science
+docxology/godel_ivm | Python | https://github.com/docxology/godel_ivm | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
+docxology/goference | Go | https://github.com/docxology/goference | Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum
+docxology/hhs-opendata | Python | https://github.com/docxology/hhs-opendata | Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines
+docxology/infra-calc | JavaScript | https://github.com/docxology/infra-calc | Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems
+docxology/markdown_decision_process | Python | https://github.com/docxology/markdown_decision_process | Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning | paper: papers/2025_MarkdownDecisionProcess/
+docxology/mdkv | Python | https://github.com/docxology/mdkv | MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents | paper: papers/2025_MDKV/
+docxology/p3if | Python | https://github.com/docxology/p3if | Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security | paper: papers/2023_P3IF/
+docxology/service | Python | https://github.com/docxology/service | Service-layer infrastructure and API tooling for Python-based research applications
+docxology/snake | Python | https://github.com/docxology/snake | Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms
+docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
+docxology/symergetics | Python | https://github.com/docxology/symergetics | Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics
+docxology/transformer | Python | https://github.com/docxology/transformer | Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research
+ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
+ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
+ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
+ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
+ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline | paper: papers/2026_FEPLean/
+ActiveInferenceInstitute/cognitive | Python | https://github.com/ActiveInferenceInstitute/cognitive | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
+ActiveInferenceInstitute/Active_Inference_Ontology | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology | Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts
+ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
+ActiveInferenceInstitute/Symposium | Python | https://github.com/ActiveInferenceInstitute/Symposium | Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia
+ActiveInferenceInstitute/ActiveInferenceCategoryTheory | unspecified | https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory | Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory
+ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models
+ActiveInferenceInstitute/GEO-INFER | HTML | https://github.com/ActiveInferenceInstitute/GEO-INFER | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence
+ActiveInferenceInstitute/AEOS | unspecified | https://github.com/ActiveInferenceInstitute/AEOS | Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models
+ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts
+ActiveInferenceInstitute/Research-Discovery-Engine | HTML | https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine | AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature
+ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook | Julia | https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook | Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)
+ActiveInferenceInstitute/Biofirm | Python | https://github.com/ActiveInferenceInstitute/Biofirm | Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems
+ActiveInferenceInstitute/Start | Python | https://github.com/ActiveInferenceInstitute/Start | Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants
+ActiveInferenceInstitute/Knowledge-Engineering | Jupyter | https://github.com/ActiveInferenceInstitute/Knowledge-Engineering | Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference
+ActiveInferenceInstitute/ActInf_RxInfer | unspecified | https://github.com/ActiveInferenceInstitute/ActInf_RxInfer | Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models
+ActiveInferenceInstitute/pymcp | Python | https://github.com/ActiveInferenceInstitute/pymcp | PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling
+ActiveInferenceInstitute/GEN24 | Jupyter | https://github.com/ActiveInferenceInstitute/GEN24 | GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort
+ActiveInferenceInstitute/NoOrg | HTML | https://github.com/ActiveInferenceInstitute/NoOrg | NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions
+ActiveInferenceInstitute/ultralink | unspecified | https://github.com/ActiveInferenceInstitute/ultralink | UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats
+ActiveInferenceInstitute/ActiveInferenceImplementations | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles
+ActiveInferenceInstitute/ATLAS | Python | https://github.com/ActiveInferenceInstitute/ATLAS | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
+ActiveInferenceInstitute/Bots | unspecified | https://github.com/ActiveInferenceInstitute/Bots | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms
+ActiveInferenceInstitute/Garden-of-Iris | Python | https://github.com/ActiveInferenceInstitute/Garden-of-Iris | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics
+ActiveInferenceInstitute/gen25 | unspecified | https://github.com/ActiveInferenceInstitute/gen25 | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort
+ActiveInferenceInstitute/gnn | unspecified | https://github.com/ActiveInferenceInstitute/gnn | Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain
+ActiveInferenceInstitute/ISSS | Python | https://github.com/ActiveInferenceInstitute/ISSS | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science
+ActiveInferenceInstitute/topp | TeX | https://github.com/ActiveInferenceInstitute/topp | The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle
+
+CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
+-----------------------------------------
+2024 | Panel | Funding the Commons | Funding AI public goods and keeping them public | Sources: Funding the Commons: https://fundingthecommons.io/
+2024 | Panel | European Identity and Cloud Conference 2024 | Intelligence in the Age of LLMs | Sources: KuppingerCole EIC speaker: https://www.kuppingercole.com/events/eic2024/speakers/3516
+
+SCIENCE ENGAGEMENT, OUTREACH, QUOTES, ARTICLES
+----------------------------------------------
+2024 | Video conversation on another channel | Building Smarter AI: Active Inference and Nested Models | Bagaev, de Vries, Friedman, Pashea. | Sources: YouTube: https://youtu.be/u3w24FtAsKw
+2022 | Video conversation on another channel | KB7 Fireside: Scaling Principled Games | Kernel | Sources: YouTube: https://www.youtube.com/watch?v=vFOk8UR-UVQ
+2022 | Video conversation on another channel | KBCast Episode 7: Kernel Block 5 Week 6 and special guest Daniel Ari Friedman | Active Inference Lab | Sources: YouTube: https://www.youtube.com/watch?v=R5zdTez8CPk
+
+PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
+---------------------------------------------------
+2020-ongoing | Active Inference Institute | Community | Active Inference Institute co-founder. | Sources: Active Inference Institute: https://www.activeinference.institute/

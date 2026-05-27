@@ -30,7 +30,7 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-26",
+  "dateModified": "2026-05-27",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -122,6 +122,32 @@
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/claims.json",
         "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#resume",
+      "name": "Structured Resume and CV",
+      "description": "Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records.",
+      "url": "https://danielarifriedman.com/data/resume.json",
+      "encodingFormat": "application/json",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/resume.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#resume-verify",
+      "name": "Resume Verification Page",
+      "description": "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links.",
+      "url": "https://danielarifriedman.com/resume/verify.html",
+      "encodingFormat": "text/html",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/resume/verify.html",
+        "encodingFormat": "text/html"
       }
     },
     {
@@ -233,11 +259,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-26.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-27.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-26.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-27.json",
         "encodingFormat": "application/json"
       }
     },
@@ -316,6 +342,16 @@
                     <p>Claim-level evidence ledger with confidence, source links, and caveats.</p>
                     <span>data/claims.json</span>
                 </article>
+                <article class="catalog-card" id="resume">
+                    <h2><a href="data/resume.json">Structured Resume and CV</a></h2>
+                    <p>Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records.</p>
+                    <span>data/resume.json</span>
+                </article>
+                <article class="catalog-card" id="resume-verify">
+                    <h2><a href="resume/verify.html">Resume Verification Page</a></h2>
+                    <p>HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links.</p>
+                    <span>resume/verify.html</span>
+                </article>
                 <article class="catalog-card" id="reconciliation">
                     <h2><a href="data/reconciliation.json">Public-Source Reconciliation</a></h2>
                     <p>Curated local counts compared with public-source indexes.</p>
@@ -357,9 +393,9 @@
                     <span>reports/external_links_triage_2026-05-15.json</span>
                 </article>
                 <article class="catalog-card" id="asset-size">
-                    <h2><a href="reports/asset_size_2026-05-26.json">Asset Size Audit</a></h2>
+                    <h2><a href="reports/asset_size_2026-05-27.json">Asset Size Audit</a></h2>
                     <p>Size report for public HTML, OG images, data exports, and runtime assets.</p>
-                    <span>reports/asset_size_2026-05-26.json</span>
+                    <span>reports/asset_size_2026-05-27.json</span>
                 </article>
                 <article class="catalog-card" id="browser-smoke">
                     <h2><a href="reports/browser-smoke/2026-05-15/manifest.json">Browser Smoke Manifest</a></h2>

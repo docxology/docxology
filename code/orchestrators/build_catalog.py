@@ -42,6 +42,8 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
     ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),
+    ("resume", "Structured Resume and CV", "data/resume.json", "Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records."),
+    ("resume-verify", "Resume Verification Page", "resume/verify.html", "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links."),
     ("reconciliation", "Public-Source Reconciliation", "data/reconciliation.json", "Curated local counts compared with public-source indexes."),
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
@@ -62,6 +64,16 @@ def h(value: object) -> str:
 
 def absolute(rel: str) -> str:
     return f"https://danielarifriedman.com/{rel}"
+
+
+def encoding_format(rel: str) -> str:
+    if rel.endswith(".html"):
+        return "text/html"
+    if rel.endswith(".md"):
+        return "text/markdown"
+    if rel.endswith(".xml"):
+        return "application/xml"
+    return "application/json"
 
 
 def existing_date_modified() -> str | None:
@@ -91,11 +103,11 @@ def catalog_payload(date_modified: str | None = None) -> dict:
                 "name": name,
                 "description": desc,
                 "url": absolute(rel),
-                "encodingFormat": "application/json",
+                "encodingFormat": encoding_format(rel),
                 "distribution": {
                     "@type": "DataDownload",
                     "contentUrl": absolute(rel),
-                    "encodingFormat": "application/json",
+                    "encodingFormat": encoding_format(rel),
                 },
             }
             for slug, name, rel, desc in datasets()

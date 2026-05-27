@@ -1,0 +1,10 @@
+[project]
+name = "docxology"
+version = "0.1.0"
+description = "Public research, software, citation, evidence, and resume export index for Daniel Ari Friedman."
+requires-python = ">=3.12"
+dependencies = [
+    "pypdf>=5.0",
+    "pytest>=8.0",
+    "reportlab>=4.0",
+]
