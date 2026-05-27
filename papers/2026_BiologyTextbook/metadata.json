@@ -7,33 +7,20 @@
   "record_id": "20286478",
   "publication_date": "2026-05-26",
   "resource_type": {
-    "type": "book"
+    "title": "Book",
+    "type": "publication",
+    "subtype": "book"
   },
   "creators": [
     {
       "name": "Friedman, Daniel Ari",
-      "given_name": "Daniel Ari",
-      "family_name": "Friedman",
-      "orcid": "0000-0001-6232-9096",
-      "affiliations": [
-        "Active Inference Institute",
-        "College of the Redwoods",
-        "COGSEC"
-      ]
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales. Quantitative computations live in tested code modules by domain; figures are generated programmatically. Each chapter pairs with a paper-based laboratory activity and a question bank; model answers are visible in this instructor build. Maintained as a reproducible open-science artifact.",
+  "description": "<p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I&ndash;X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move between narrative explanation and the quantitative constraints that shape biological claims. Five recurring themes&mdash;evolution, information, structure and function, systems and emergence, and the cell&mdash;provide orientation across scales and align with mainstream undergraduate biology competencies; Unit 0 adds an optional systems, historical, and philosophical lens without replacing the traditional molecular-to-ecological sequence.</p>\n<p>Where the curriculum is quantitative, corresponding computations live in tested code modules organized by domain (biochemistry, cell biology, genetics, physiology, ecology, evolution, microbiology, botany, and neuroscience), and many figures and process diagrams are generated programmatically rather than supplied as static artwork alone. The edition pairs each chapter with a paper-based laboratory activity and a question bank that progresses from recall to synthesis; model answers are visible in this instructor build. Primary literature is cited inline, glossary and curriculum-mapping appendices support course design, and the manuscript is maintained as a reproducible open-science artifact (source at <a href=\"https://github.com/docxology/biology_textbook\">https://github.com/docxology/biology_textbook</a> ; archived at DOI 10.5281/zenodo.20286478). Text is released under Creative Commons Attribution 4.0; accompanying source code under Apache-2.0.</p>",
   "keywords": [
-    "Biology",
-    "Open textbook",
-    "Generative approach",
-    "Reproducible research",
-    "Undergraduate biology",
-    "College of the Redwoods",
-    "Computational biology",
-    "Programmatic figures",
-    "Laboratory activities",
-    "Open science"
+    "Biology"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -54,7 +41,8 @@
     {
       "name": "biology_textbook_v1_05-26-2026-compressed.pdf",
       "size_bytes": 11476276,
-      "type": "pdf"
+      "checksum": "md5:c0c8ef858487ab87d19e985bd363a6c9",
+      "download_url": "https://zenodo.org/api/records/20286478/files/biology_textbook_v1_05-26-2026-compressed.pdf/content"
     }
   ],
   "related_resources": [
@@ -62,5 +50,15 @@
       "type": "repository",
       "url": "https://github.com/docxology/biology_textbook"
     }
-  ]
+  ],
+  "github_repo": "docxology/biology_textbook",
+  "github_release_url": "https://github.com/docxology/biology_textbook/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "Introduction to Biology v1.0.0 (Instructor Edition)",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi"
+  ],
+  "checked_at": "2026-05-27T22:15:51Z"
 }

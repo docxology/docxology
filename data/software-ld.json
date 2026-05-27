@@ -607,13 +607,14 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "fep_lean",
-            "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+            "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_lean",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "Python"
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.19699234"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -672,13 +673,14 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "CEREBRUM",
-            "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+            "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "Python"
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.15231156"
         },
         {
             "@type": "SoftwareSourceCode",

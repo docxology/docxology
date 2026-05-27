@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
+version: "0.2"
+date-released: 2026
+doi: 10.5281/zenodo.20417017
+url: "https://doi.org/10.5281/zenodo.20417017"
+repository-code: "https://github.com/docxology/template_autoresearch_project"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20417017
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/20417017"
+    description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0"
+    description: "GitHub release"

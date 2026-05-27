@@ -1,0 +1,47 @@
+{
+  "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+  "version": null,
+  "doi": "10.5281/zenodo.19699234",
+  "doi_url": "https://doi.org/10.5281/zenodo.19699234",
+  "zenodo_record": "https://zenodo.org/records/19699234",
+  "record_id": "19699234",
+  "publication_date": "2026-04-24",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "<p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit. Absent a shared formal substrate the long-running debate over what the FEP actually proves &mdash; as opposed to what it sketches, illustrates, or motivates &mdash; debate on certain technical, empirical, and philosophical points can be unproductive. We address this gap with a curated catalog of 50 topics that spans the five technical pillars of the framework &mdash; 14 in the Free Energy Principle proper, 11 in Active Inference, 10 in Bayesian Mechanics, 8 in Information Geometry, and 7 in non-equilibrium Thermodynamics &mdash; each compiled as a namespaced Lean 4 sketch against Mathlib4. Every sketch carries a natural-language statement, Mathlib imports, an ecosystem-maturity tag, and a sorry-free theorem body authored in a single source of truth (scripts/catalogue_sketches.py) and regenerated deterministically into config/topics.yaml. A per- topic aggregate Lean module collects, for each topic, both the full Lean sketch and the typeset LaTeX statement signatures in juxtaposition, so agents who want the mathematics without the proof engineering can read the same content from either side. On the pinned stack leanprover/lean4:v4.29.0 / Mathlib4 v4.29.0 the shipped catalog compiles 50/50 sorry-free under lake env lean, establishing a reproducible, machine-checkable anchor that subsequent theoretical and empirical work on the FEP can extend, dispute, or refine without re-litigating what has already been formalized.</p>\n<p>Atop this verified kernel we layer an LLM-assisted commentary and iterated drafting pipeline (Hermes / OpenGauss) whose primary model is moonshotai/kimi-k2.6 with a cache keyed to Lean source hashes: the language model can draft, explain, and cross-link each sketch, while the Lean 4 kernel remains sole ground truth for every compilation claim in the manuscript. The project enforces a strict zero-mock testing discipline &mdash; every one of the 347 test cases exercises a real file, a real SQLite store, a live compiler invocation, or an actual HTTP call &mdash; and holds combined line-plus-branch coverage of project source above the 89 % CI gate; run run_20260424_064334 completed the full catalog end-to-end with a mean per-topic wall time of 2.1 s, total runtime dominated by model latency rather than proof work. Binding the catalog to the compiler surfaces two complementary findings that structure the discussion: an initial set of FEP-related constructions that already typecheck against today&rsquo;s Mathlib4 &mdash; finite-set probability, Bayesian updating, Kullback&ndash;Leibler divergence on finite spaces, variational free-energy bounds, and substantive measure-theoretic fragments &mdash; and some aspirational sketches (epistemic status: even more tentative), including related to native stochastic differential equations, Fokker&ndash;Planck evolution, full Riemannian information geometry, and a general-measure divergence.</p>\n<p>The net contribution and current direction of the work is to convert long-standing qualitative arguments about the mathematical status of the FEP into a maintainable, version-pinned, publicly auditable record of exactly which claims are machine-checkable and which remain open; methods, source, catalog, figures. The end-to-end reproduction of this manuscript are released at the FEP_Lean open-source repository <a href=\"https://github.com/ActiveInferenceInstitute/FEP_Lean\">https://github.com/ActiveInferenceInstitute/FEP_Lean</a> via the template approach <a href=\"https://github.com/docxology/template\">https://github.com/docxology/template</a> which injects updated validated package-level and manuscript-level metadata into the template as rendered and versioned in practice.</p>",
+  "keywords": [],
+  "files": [
+    {
+      "name": "fep_lean_v1_04-24-2026.pdf",
+      "size_bytes": 1908263,
+      "checksum": "md5:afcb1af74dfb5d84e30161cf58d79095",
+      "download_url": "https://zenodo.org/api/records/19699234/files/fep_lean_v1_04-24-2026.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_lean"
+    }
+  ],
+  "github_repo": "ActiveInferenceInstitute/fep_lean",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "FEP_Lean v1.0.0 — Lean 4 Formalization of the Free Energy Principle",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "title_overlap"
+  ],
+  "checked_at": "2026-05-27T22:15:49Z"
+}

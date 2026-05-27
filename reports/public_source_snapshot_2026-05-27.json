@@ -1,0 +1,536 @@
+{
+  "generated_at": "2026-05-27T22:09:34.768347+00:00",
+  "date": "2026-05-27",
+  "note": "Public API freshness report only. Review before updating curated site claims.",
+  "facts": {
+    "GitHub user docxology": {
+      "login": "docxology",
+      "public_repos": 298,
+      "updated_at": "2026-05-06T12:41:40Z",
+      "html_url": "https://github.com/docxology"
+    },
+    "GitHub user ActiveInferenceInstitute": {
+      "login": "ActiveInferenceInstitute",
+      "public_repos": 51,
+      "updated_at": "2026-05-01T18:26:30Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute"
+    },
+    "ORCID work groups": {
+      "group_count": 20
+    },
+    "PubMed exact author records": {
+      "count": 8,
+      "ids": [
+        "40422414",
+        "38735269",
+        "38667857",
+        "37984119",
+        "34248515",
+        "33384362",
+        "33004499",
+        "32139795"
+      ]
+    },
+    "Europe PMC exact author records": {
+      "hit_count": 10
+    },
+    "Crossref ORCID DOI records": {
+      "total_results": 15
+    },
+    "Zenodo exact-name creator records": {
+      "total": 37,
+      "first_title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+      "first_doi": "10.5281/zenodo.18364119"
+    },
+    "Zenodo ORCID-linked records": {
+      "total": 90,
+      "first_title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+      "first_doi": "10.5281/zenodo.7267947"
+    },
+    "Zenodo record 18686966": {
+      "title": "ActiveInferenceInstitute/Journal-Utilities: v0.1.0: Hardened, Documented, and Feature-Complete",
+      "doi": "10.5281/zenodo.18686966",
+      "publication_date": "2026-02-18",
+      "resource_type": "Software",
+      "creators": [
+        "Holly Grimm",
+        "BazookamanPH",
+        "TheButtskie",
+        "Active Inference Institute",
+        "Daniel Ari Friedman"
+      ]
+    },
+    "Zenodo record 19600217": {
+      "title": "GeneralizedNotationNotation (GNN)",
+      "doi": "10.5281/zenodo.19600217",
+      "publication_date": "2026-04-16",
+      "resource_type": "Software",
+      "creators": [
+        "Friedman, Daniel Ari",
+        "The GeneralizedNotationNotation Community Contributors"
+      ]
+    },
+    "Zenodo record 19897664": {
+      "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+      "doi": "10.5281/zenodo.19897664",
+      "publication_date": "2026-04-30",
+      "resource_type": "Publication",
+      "creators": [
+        "Friedman, Daniel Ari",
+        "Dietz, Joel"
+      ]
+    },
+    "Zenodo record 14108992": {
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "doi": "10.5281/zenodo.14108992",
+      "publication_date": "2024-11-12",
+      "resource_type": "Publication",
+      "creators": [
+        "Active Inference Institute",
+        "Vyatkin, Alex",
+        "Mikhailova, Alexandra",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Elers, Ben",
+        "Berkers, Bert",
+        "Knight, Bleu",
+        "Fields, Chris",
+        "Whittet, Dan",
+        "Friedman, Daniel",
+        "Ticklẽs, Déan",
+        "Paterson, Fraser",
+        "Stubbs, Gareth",
+        "Grimm, Holly",
+        "Smekal, Jakub",
+        "Cooper, Jeremy",
+        "Boik, John",
+        "Burian, Libor",
+        "Albarracin, Mahault",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Thacker, Mick",
+        "Gilli, Peter",
+        "Kaufmann, Rafael",
+        "Cordes, RJ",
+        "Henry, Ryan",
+        "Ramesh, Sandeep",
+        "David, Scott",
+        "Alvarado, Sebastian",
+        "Baker, Zach"
+      ]
+    },
+    "Zenodo record 17982447": {
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "doi": "10.5281/zenodo.17982447",
+      "publication_date": "2025-12-18",
+      "resource_type": "Publication",
+      "creators": [
+        "Active Inference Institute",
+        "Vyatkin, Alex",
+        "Mikhailova, Alexandra",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Elers, Ben",
+        "Berkers, Bert",
+        "Knight, Bleu",
+        "Fields, Chris",
+        "Whittet, Dan",
+        "Friedman, Daniel",
+        "Ticklẽs, Déan",
+        "Paterson, Fraser",
+        "Stubbs, Gareth",
+        "Grimm, Holly",
+        "Smekal, Jakub",
+        "Cooper, Jeremy",
+        "Boik, John",
+        "Burian, Libor",
+        "Albarracin, Mahault",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Thacker, Mick",
+        "Gilli, Peter",
+        "Kaufmann, Rafael",
+        "Cordes, RJ",
+        "Henry, Ryan",
+        "Ramesh, Sandeep",
+        "David, Scott",
+        "Alvarado, Sebastian",
+        "Baker, Zach"
+      ]
+    },
+    "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal": {
+      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+      "stargazers_count": 43,
+      "language": "HTML",
+      "updated_at": "2026-05-25T11:33:09Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+    },
+    "GitHub repo ActiveInferenceInstitute/ActiveBlockference": {
+      "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+      "stargazers_count": 33,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-05-27T20:44:48Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+    },
+    "GitHub repo ActiveInferenceInstitute/ActiveInferAnts": {
+      "full_name": "ActiveInferenceInstitute/ActiveInferAnts",
+      "stargazers_count": 29,
+      "language": "Python",
+      "updated_at": "2026-05-18T14:26:07Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts"
+    },
+    "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation": {
+      "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "stargazers_count": 24,
+      "language": "Pkl",
+      "updated_at": "2026-05-25T17:03:46Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
+    },
+    "GitHub repo ActiveInferenceInstitute/fep_lean": {
+      "full_name": "ActiveInferenceInstitute/fep_lean",
+      "stargazers_count": 3,
+      "language": "Python",
+      "updated_at": "2026-04-27T04:46:06Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
+    },
+    "GitHub repo ActiveInferenceInstitute/cognitive": {
+      "full_name": "ActiveInferenceInstitute/cognitive",
+      "stargazers_count": 18,
+      "language": "Python",
+      "updated_at": "2026-03-09T18:48:08Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+    },
+    "GitHub repo ActiveInferenceInstitute/CEREBRUM": {
+      "full_name": "ActiveInferenceInstitute/CEREBRUM",
+      "stargazers_count": 12,
+      "language": "Python",
+      "updated_at": "2026-04-10T15:53:05Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+    },
+    "GitHub repo ActiveInferenceInstitute/Journal-Utilities": {
+      "full_name": "ActiveInferenceInstitute/Journal-Utilities",
+      "stargazers_count": 11,
+      "language": "HTML",
+      "updated_at": "2026-02-21T11:19:16Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities"
+    }
+  },
+  "checks": [
+    {
+      "label": "GitHub user docxology",
+      "url": "https://api.github.com/users/docxology",
+      "ok": true,
+      "result": {
+        "login": "docxology",
+        "public_repos": 298,
+        "updated_at": "2026-05-06T12:41:40Z",
+        "html_url": "https://github.com/docxology"
+      }
+    },
+    {
+      "label": "GitHub user ActiveInferenceInstitute",
+      "url": "https://api.github.com/users/ActiveInferenceInstitute",
+      "ok": true,
+      "result": {
+        "login": "ActiveInferenceInstitute",
+        "public_repos": 51,
+        "updated_at": "2026-05-01T18:26:30Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute"
+      }
+    },
+    {
+      "label": "ORCID work groups",
+      "url": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
+      "ok": true,
+      "result": {
+        "group_count": 20
+      }
+    },
+    {
+      "label": "PubMed exact author records",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Daniel+Ari+Friedman%5BAuthor%5D&retmode=json",
+      "ok": true,
+      "result": {
+        "count": 8,
+        "ids": [
+          "40422414",
+          "38735269",
+          "38667857",
+          "37984119",
+          "34248515",
+          "33384362",
+          "33004499",
+          "32139795"
+        ]
+      }
+    },
+    {
+      "label": "Europe PMC exact author records",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH%3A%22Daniel+Ari+Friedman%22&format=json&pageSize=1",
+      "ok": true,
+      "result": {
+        "hit_count": 10
+      }
+    },
+    {
+      "label": "Crossref ORCID DOI records",
+      "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096&rows=0",
+      "ok": true,
+      "result": {
+        "total_results": 15
+      }
+    },
+    {
+      "label": "Zenodo exact-name creator records",
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C+Daniel+Ari%22&size=1",
+      "ok": true,
+      "result": {
+        "total": 37,
+        "first_title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+        "first_doi": "10.5281/zenodo.18364119"
+      }
+    },
+    {
+      "label": "Zenodo ORCID-linked records",
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=1",
+      "ok": true,
+      "result": {
+        "total": 90,
+        "first_title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+        "first_doi": "10.5281/zenodo.7267947"
+      }
+    },
+    {
+      "label": "Zenodo record 18686966",
+      "url": "https://zenodo.org/api/records/18686966",
+      "ok": true,
+      "result": {
+        "title": "ActiveInferenceInstitute/Journal-Utilities: v0.1.0: Hardened, Documented, and Feature-Complete",
+        "doi": "10.5281/zenodo.18686966",
+        "publication_date": "2026-02-18",
+        "resource_type": "Software",
+        "creators": [
+          "Holly Grimm",
+          "BazookamanPH",
+          "TheButtskie",
+          "Active Inference Institute",
+          "Daniel Ari Friedman"
+        ]
+      }
+    },
+    {
+      "label": "Zenodo record 19600217",
+      "url": "https://zenodo.org/api/records/19600217",
+      "ok": true,
+      "result": {
+        "title": "GeneralizedNotationNotation (GNN)",
+        "doi": "10.5281/zenodo.19600217",
+        "publication_date": "2026-04-16",
+        "resource_type": "Software",
+        "creators": [
+          "Friedman, Daniel Ari",
+          "The GeneralizedNotationNotation Community Contributors"
+        ]
+      }
+    },
+    {
+      "label": "Zenodo record 19897664",
+      "url": "https://zenodo.org/api/records/19897664",
+      "ok": true,
+      "result": {
+        "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+        "doi": "10.5281/zenodo.19897664",
+        "publication_date": "2026-04-30",
+        "resource_type": "Publication",
+        "creators": [
+          "Friedman, Daniel Ari",
+          "Dietz, Joel"
+        ]
+      }
+    },
+    {
+      "label": "Zenodo record 14108992",
+      "url": "https://zenodo.org/api/records/14108992",
+      "ok": true,
+      "result": {
+        "title": "The Active Inference Institute & Active Inference Ecosystem",
+        "doi": "10.5281/zenodo.14108992",
+        "publication_date": "2024-11-12",
+        "resource_type": "Publication",
+        "creators": [
+          "Active Inference Institute",
+          "Vyatkin, Alex",
+          "Mikhailova, Alexandra",
+          "Hiott, Andrea",
+          "Pashea, Andrew",
+          "Elers, Ben",
+          "Berkers, Bert",
+          "Knight, Bleu",
+          "Fields, Chris",
+          "Whittet, Dan",
+          "Friedman, Daniel",
+          "Ticklẽs, Déan",
+          "Paterson, Fraser",
+          "Stubbs, Gareth",
+          "Grimm, Holly",
+          "Smekal, Jakub",
+          "Cooper, Jeremy",
+          "Boik, John",
+          "Burian, Libor",
+          "Albarracin, Mahault",
+          "Iennaco, Maria Luiza",
+          "Brown, Matthew",
+          "Thacker, Mick",
+          "Gilli, Peter",
+          "Kaufmann, Rafael",
+          "Cordes, RJ",
+          "Henry, Ryan",
+          "Ramesh, Sandeep",
+          "David, Scott",
+          "Alvarado, Sebastian",
+          "Baker, Zach"
+        ]
+      }
+    },
+    {
+      "label": "Zenodo record 17982447",
+      "url": "https://zenodo.org/api/records/17982447",
+      "ok": true,
+      "result": {
+        "title": "The Active Inference Institute & Active Inference Ecosystem",
+        "doi": "10.5281/zenodo.17982447",
+        "publication_date": "2025-12-18",
+        "resource_type": "Publication",
+        "creators": [
+          "Active Inference Institute",
+          "Vyatkin, Alex",
+          "Mikhailova, Alexandra",
+          "Hiott, Andrea",
+          "Pashea, Andrew",
+          "Elers, Ben",
+          "Berkers, Bert",
+          "Knight, Bleu",
+          "Fields, Chris",
+          "Whittet, Dan",
+          "Friedman, Daniel",
+          "Ticklẽs, Déan",
+          "Paterson, Fraser",
+          "Stubbs, Gareth",
+          "Grimm, Holly",
+          "Smekal, Jakub",
+          "Cooper, Jeremy",
+          "Boik, John",
+          "Burian, Libor",
+          "Albarracin, Mahault",
+          "Iennaco, Maria Luiza",
+          "Brown, Matthew",
+          "Thacker, Mick",
+          "Gilli, Peter",
+          "Kaufmann, Rafael",
+          "Cordes, RJ",
+          "Henry, Ryan",
+          "Ramesh, Sandeep",
+          "David, Scott",
+          "Alvarado, Sebastian",
+          "Baker, Zach"
+        ]
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferenceJournal",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+        "stargazers_count": 43,
+        "language": "HTML",
+        "updated_at": "2026-05-25T11:33:09Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveBlockference",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+        "stargazers_count": 33,
+        "language": "Jupyter Notebook",
+        "updated_at": "2026-05-27T20:44:48Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferAnts",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferAnts",
+        "stargazers_count": 29,
+        "language": "Python",
+        "updated_at": "2026-05-18T14:26:07Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "stargazers_count": 24,
+        "language": "Pkl",
+        "updated_at": "2026-05-25T17:03:46Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/fep_lean",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/fep_lean",
+        "stargazers_count": 3,
+        "language": "Python",
+        "updated_at": "2026-04-27T04:46:06Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/cognitive",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/cognitive",
+        "stargazers_count": 18,
+        "language": "Python",
+        "updated_at": "2026-03-09T18:48:08Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/CEREBRUM",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/CEREBRUM",
+        "stargazers_count": 12,
+        "language": "Python",
+        "updated_at": "2026-04-10T15:53:05Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/Journal-Utilities",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/Journal-Utilities",
+        "stargazers_count": 11,
+        "language": "HTML",
+        "updated_at": "2026-02-21T11:19:16Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities"
+      }
+    }
+  ]
+}

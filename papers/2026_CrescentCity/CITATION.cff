@@ -50,3 +50,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20286171"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/crescent_city/releases/tag/v1.0.0"
+    description: "GitHub release"

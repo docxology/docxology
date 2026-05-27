@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-27T18:41:51Z",
+  "generated_at": "2026-05-27T22:18:54Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 117,
+  "count": 124,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2950,6 +2950,154 @@
         "Instructor vs student build variants for assessment materials"
       ],
       "source": "papers/2026_BiologyTextbook/README.md"
+    },
+    "Friedman2025CEREBRUMCaseEnabledReasoning118": {
+      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning118",
+      "abstract": "<div This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured repre",
+      "keywords": [
+        "paired GitHub and Zenodo publication"
+      ],
+      "findings": [
+        "paired publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_CEREBRUM2/README.md"
+    },
+    "Friedman2026PolicyEntanglementActiveInference119": {
+      "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+      "abstract": "Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameteri",
+      "keywords": [
+        "active inference",
+        "free energy principle",
+        "policy inference",
+        "mean-field",
+        "total correlation",
+        "information geometry",
+        "Schmidt rank",
+        "tensor networks",
+        "sophisticated inference",
+        "Lean theorem proving",
+        "machine-checked free-energy identity"
+      ],
+      "findings": [
+        "active inference",
+        "free energy principle",
+        "policy inference",
+        "mean-field",
+        "total correlation"
+      ],
+      "methods": [],
+      "source": "papers/2026_PolicyEntanglementActive/README.md"
+    },
+    "Friedman2026BoundedAutoResearchTinyReproducible120": {
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+      "abstract": "Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but concrete: 2000 training and 500 test images from MNIST handwritten digit database are evaluated by the bounded small MNIST neural-network classification loop. The run evaluates 4 of 5 proposed candidates, including Tiny patch-attention classifier, selects exp-mlp-tanh-64 (MLP, 50890 parameters), and improves test accuracy from 82.6% to 89.4% (6.8% absolute change). The validated diagnostic layer reports macro F1 89.4%, bootstrap accuracy interval 86.4% to 92.0%, Brier score 0.161, negative log likelihood 0.361, top-2 accuracy 95.6%, and exact McNemar p-value 0.000. The same pipeline writes proposal, candidate, run, review, benchmark, ev",
+      "keywords": [
+        "autoresearch",
+        "reproducible research",
+        "machine learning benchmark",
+        "artifact readiness",
+        "human review",
+        "local artifact integrity"
+      ],
+      "findings": [
+        "autoresearch",
+        "reproducible research",
+        "machine learning benchmark",
+        "artifact readiness",
+        "human review"
+      ],
+      "methods": [],
+      "source": "papers/2026_BoundedAutoResearchTiny/README.md"
+    },
+    "Friedman2026ConvergenceAnalysisGradientDescent121": {
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
+      "abstract": "Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/template code project/scripts/optimization analysis.py and hydrated into the manuscript through scripts/z generate manuscript variables.py, so tables and prose track output/data/optimization results.csv after every pipeline run. We evaluate 6 step sizes from $\\alpha = 0.01$ to $\\alpha = 2.5$, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model. The build chain exercises template infrastructure end-to-end: scientific helpers (infrastructure.scientific.stability, infrastructure.scientific.benchmarking), valid",
+      "keywords": [
+        "optimization algorithms",
+        "gradient descent",
+        "convergence analysis",
+        "numerical methods",
+        "mathematical programming",
+        "reproducible research",
+        "infrastructure automation"
+      ],
+      "findings": [
+        "optimization algorithms",
+        "gradient descent",
+        "convergence analysis",
+        "numerical methods",
+        "mathematical programming"
+      ],
+      "methods": [],
+      "source": "papers/2026_ConvergenceAnalysisGradient/README.md"
+    },
+    "Friedman2026EditorialQualityAtScale122": {
+      "citation_key": "Friedman2026EditorialQualityAtScale122",
+      "abstract": "Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript,",
+      "keywords": [
+        "prose analysis",
+        "readability",
+        "editorial review",
+        "reproducible research",
+        "manuscript quality"
+      ],
+      "findings": [
+        "prose analysis",
+        "readability",
+        "editorial review",
+        "reproducible research",
+        "manuscript quality"
+      ],
+      "methods": [],
+      "source": "papers/2026_EditorialQualityAt/README.md"
+    },
+    "Friedman2026TemplateApproachReproducibleGenerative123": {
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
+      "abstract": "Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the researc",
+      "keywords": [
+        "reproducible research",
+        "infrastructure-as-code",
+        "steganography",
+        "cryptographic provenance",
+        "LaTeX rendering",
+        "modular infrastructure",
+        "publication integrity",
+        "zero-mock testing",
+        "thin orchestrator",
+        "two-layer architecture",
+        "FAIR4RS",
+        "research software engineering"
+      ],
+      "findings": [
+        "reproducible research",
+        "infrastructure-as-code",
+        "steganography",
+        "cryptographic provenance",
+        "LaTeX rendering"
+      ],
+      "methods": [],
+      "source": "papers/2026_TemplateApproachReproducible/README.md"
+    },
+    "Friedman2026ActiveInferenceMultiTrack124": {
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+      "abstract": "Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml). The first page (00 00 sheaf coverage.md (00 00 sheaf coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time. The T-maze demo aligns with pymdp sophisticated inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated inference). Measured invariant checks: 6 / 6 passed. SI plan",
+      "keywords": [
+        "active inference",
+        "pymdp",
+        "sophisticated inference",
+        "generalized notation notation",
+        "lean"
+      ],
+      "findings": [
+        "active inference",
+        "pymdp",
+        "sophisticated inference",
+        "generalized notation notation",
+        "lean"
+      ],
+      "methods": [],
+      "source": "papers/2026_ActiveInferenceMulti/README.md"
     }
   }
 }

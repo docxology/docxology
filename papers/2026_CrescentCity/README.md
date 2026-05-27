@@ -52,6 +52,8 @@ Crescent City · Del Norte County · Cascadia subduction zone · Tsunami warning
 
 ## Related
 
+- GitHub release: https://github.com/docxology/crescent_city/releases/tag/v1.0.0
+
 - Zenodo record: https://zenodo.org/records/20286171
 - Source repository: https://github.com/docxology/crescent_city
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

@@ -24,6 +24,7 @@ from software_table import iter_software_rows, software_rows_to_dict  # noqa: E4
 
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
 SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
+WORKS_JSON = REPO_ROOT / "data" / "works.json"
 
 
 def _scholar_claim() -> dict:
@@ -66,6 +67,41 @@ except ImportError:  # pragma: no cover - package import path
 
 def parse_software() -> list[dict]:
     return [software_rows_to_dict(row) for row in iter_software_rows(SOFTWARE_MD)]
+
+
+def _current_work_count() -> int:
+    if WORKS_JSON.exists():
+        payload = json.loads(WORKS_JSON.read_text(encoding="utf-8"))
+        return int(payload.get("count") or len(payload.get("works", [])))
+    rows = [
+        line
+        for line in (REPO_ROOT / "pages" / "BIBLIOGRAPHY.md").read_text(encoding="utf-8").splitlines()
+        if re.match(r"\| \d+ \|", line)
+    ]
+    return len(rows)
+
+
+def _current_paper_folder_count() -> int:
+    return sum(1 for path in (REPO_ROOT / "papers").iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name))
+
+
+def _latest_snapshot_payload() -> dict:
+    try:
+        path = latest_report("public_source_snapshot_*.json")
+    except FileNotFoundError:
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def _snapshot_value(snapshot: dict, label: str, key: str) -> int | str | None:
+    for check in snapshot.get("checks", []):
+        if check.get("label") == label:
+            result = check.get("result") if isinstance(check.get("result"), dict) else {}
+            return result.get(key)
+    return None
 
 
 PEOPLE = [
@@ -136,10 +172,10 @@ ORGANIZATIONS = [
 CLAIMS = [
     {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 117 works.",
+        "claim": "The curated bibliography contains 124 works.",
         "status": "curated-local",
         "sources": ["pages/BIBLIOGRAPHY.md", "publications.html", "data/works.json"],
-        "checked_at": "2026-05-26",
+        "checked_at": "2026-05-27",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -147,10 +183,10 @@ CLAIMS = [
     },
     {
         "id": "paper-folder-count",
-        "claim": "The repository contains 110 per-paper documentation folders.",
+        "claim": "The repository contains 117 per-paper documentation folders.",
         "status": "curated-local",
         "sources": ["papers/", "papers/README.md", "papers/paper_metadata.json"],
-        "checked_at": "2026-05-26",
+        "checked_at": "2026-05-27",
         "confidence": "high",
         "verification_method": "Folder inventory and paper metadata count.",
         "maintenance_owner": "MAINTAINER",
@@ -158,10 +194,10 @@ CLAIMS = [
     },
     {
         "id": "docxology-github-public-repos",
-        "claim": "The docxology GitHub profile has 286 public repositories.",
+        "claim": "The docxology GitHub profile has 298 public repositories.",
         "status": "public-api",
-        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-05-15.json"],
-        "checked_at": "2026-05-15",
+        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-05-27.json"],
+        "checked_at": "2026-05-27",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response.",
         "maintenance_owner": "INTEGRATOR",
@@ -169,13 +205,13 @@ CLAIMS = [
     },
     {
         "id": "aii-github-public-repos",
-        "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
+        "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories.",
         "status": "public-api",
         "sources": [
             "https://api.github.com/users/ActiveInferenceInstitute",
-            "reports/public_source_snapshot_2026-05-15.json"
+            "reports/public_source_snapshot_2026-05-27.json"
         ],
-        "checked_at": "2026-05-16",
+        "checked_at": "2026-05-27",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
         "maintenance_owner": "INTEGRATOR",
@@ -347,8 +383,24 @@ def _hydrate_claim_checks(checked_at: str) -> list[dict]:
     claims = []
     latest_snapshot = _latest_source("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
     latest_inventory = _latest_source("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
+    snapshot = _latest_snapshot_payload()
+    work_count = _current_work_count()
+    folder_count = _current_paper_folder_count()
+    docxology_public_repos = _snapshot_value(snapshot, "GitHub user docxology", "public_repos")
+    aii_public_repos = _snapshot_value(snapshot, "GitHub user ActiveInferenceInstitute", "public_repos")
     for claim in CLAIMS:
         claim_copy = dict(claim)
+        if claim_copy["id"] == "curated-work-count":
+            claim_copy["claim"] = f"The curated bibliography contains {work_count} works."
+        elif claim_copy["id"] == "paper-folder-count":
+            claim_copy["claim"] = f"The repository contains {folder_count} per-paper documentation folders."
+        elif claim_copy["id"] == "docxology-github-public-repos" and docxology_public_repos is not None:
+            claim_copy["claim"] = f"The docxology GitHub profile has {docxology_public_repos} public repositories."
+        elif claim_copy["id"] == "aii-github-public-repos" and aii_public_repos is not None:
+            claim_copy["claim"] = (
+                "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) "
+                f"has {aii_public_repos} public repositories."
+            )
         claim_copy["checked_at"] = checked_at
         claim_copy["sources"] = [
             latest_snapshot if source.startswith("reports/public_source_snapshot_") else

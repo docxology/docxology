@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 110 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 117 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (110 entries as of 2026-05-26)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (117 entries as of 2026-05-27)
 
 ### 🔬 RESEARCHER
 
@@ -48,9 +48,9 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 110/110 folders (last verified 2026-05-26) |
-| AGENTS.md present | 110/110 |
-| SKILL.md present | 110/110 |
+| README.md present | 117/117 folders (last verified 2026-05-27) |
+| AGENTS.md present | 117/117 |
+| SKILL.md present | 117/117 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -71,7 +71,7 @@
 | 🌍 AII Ecosystem | 5 | `2025_AII_v3`, `2024_OntologySUMO` |
 | 🎥 Presentations & Media | 15 | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
 
-Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 117 total as of the table header).
+Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 124 total as of the table header).
 
 ---
 

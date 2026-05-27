@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-05-27T21:31:41Z
+Generated: 2026-05-27T22:18:54Z
 
-Current public metrics: 117 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 124 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (110)
+WORKS AND PUBLICATIONS (117)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -166,6 +166,13 @@ WORKS AND PUBLICATIONS (110)
 [115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144984
 [116] 2026 | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | Zenodo | 10.5281/zenodo.20286171
 [117] 2026 | Book | Introduction to Biology: A Generative Approach | Zenodo | 10.5281/zenodo.20286478
+[118] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15231156
+[119] 2026 | Paper | Policy Entanglement in Active Inference | Zenodo | 10.5281/zenodo.20419186
+[120] 2026 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | Zenodo | 10.5281/zenodo.20417017
+[121] 2026 | Paper | Convergence Analysis of Gradient Descent Optimization | Zenodo | 10.5281/zenodo.20417137
+[122] 2026 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | Zenodo | 10.5281/zenodo.20417105
+[123] 2026 | Paper | A template/ approach to Reproducible Generative Research | Zenodo | 10.5281/zenodo.20419084
+[124] 2026 | Paper | Active Inference Multi-Track Exemplar | Zenodo | 10.5281/zenodo.20417022
 
 SOFTWARE (82)
 -------------
@@ -223,13 +230,13 @@ ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/Acti
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
-ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline | paper: papers/2026_FEPLean/
+ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699234
 ActiveInferenceInstitute/cognitive | Python | https://github.com/ActiveInferenceInstitute/cognitive | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
 ActiveInferenceInstitute/Active_Inference_Ontology | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology | Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/Symposium | Python | https://github.com/ActiveInferenceInstitute/Symposium | Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia
 ActiveInferenceInstitute/ActiveInferenceCategoryTheory | unspecified | https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory | Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory
-ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models
+ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM2/ | zenodo: https://doi.org/10.5281/zenodo.15231156
 ActiveInferenceInstitute/GEO-INFER | HTML | https://github.com/ActiveInferenceInstitute/GEO-INFER | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence
 ActiveInferenceInstitute/AEOS | unspecified | https://github.com/ActiveInferenceInstitute/AEOS | Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models
 ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts

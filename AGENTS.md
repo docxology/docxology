@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (117 works), 50 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (124 works), 50 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -43,7 +43,7 @@
 - Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
 - Runs [sync_software_html.py](papers/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
 - Runs [build_resume.py](code/orchestrators/build_resume.py) with `--all` after edits to [resume/source.json](resume/source.json), bibliography/software data, Scholar metrics, or claim data so [data/resume.json](data/resume.json), plaintext variants, and [resume/resume.pdf](resume/resume.pdf) stay aligned
-- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **110** folders as of 2026-05-26)
+- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **117** folders as of 2026-05-27)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -54,7 +54,7 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (117 works; DOI links and paper-folder deep-links)
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (124 works; DOI links and paper-folder deep-links)
 ├── pages/SOFTWARE.md        ← 50 owned repos + 32 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
@@ -98,7 +98,7 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 110 per-paper folders (`YYYY_Topic`)
+└── papers/            ← 117 per-paper folders (`YYYY_Topic`)
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json

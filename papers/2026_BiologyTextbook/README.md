@@ -49,6 +49,8 @@ Biology · open textbook · generative approach · reproducible research · unde
 
 ## Related
 
+- GitHub release: https://github.com/docxology/biology_textbook/releases/tag/v1.0.0
+
 - Zenodo record: https://zenodo.org/records/20286478
 - Source repository: https://github.com/docxology/biology_textbook
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

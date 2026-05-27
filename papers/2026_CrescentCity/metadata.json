@@ -7,35 +7,23 @@
   "record_id": "20286171",
   "publication_date": "2026-05-19",
   "resource_type": {
-    "type": "publication",
-    "subtype": "other"
+    "title": "Publication",
+    "type": "publication"
   },
   "creators": [
     {
-      "name": "Friedman, Daniel Ari",
-      "given_name": "Daniel Ari",
-      "family_name": "Friedman",
-      "orcid": "0000-0001-6232-9096",
-      "affiliations": [
-        "Active Inference Institute",
-        "COGSEC"
-      ]
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A synthetic scholarly history of Crescent City, California — seat of Del Norte County on the northernmost developed strip of the California coast — read as an emergent nested system: Tolowa Dee-ni' villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial timber and commercial fishing; federal termination and the 1983 federal-recognition restoration under Tillie Hardwick v. United States; Redwood National and State Parks beside a recovering working waterfront; and contemporary Indigenous ocean stewardship including the 2023 Yurok–Tolowa Dee-ni' Indigenous Marine Stewardship Area. The town sits on the locked southern Cascadia margin; the study frames the ~37% fifty-year probability of an M >= 8.0 southern-segment rupture as paleoseismic model output, not a deterministic forecast. The synthesis situates the town in recurring cycles of extraction, disaster, rebuilding, and institutional adaptation, organized through Space, Time, People, and Ideas, and grounded in coupled human-natural systems, Ostrom social-ecological systems, and Holling/Gunderson panarchy and resilience theory; the book's central interpretive claim is the recurring loop hazard becomes rebuilding, rebuilding becomes governance, governance becomes memory, memory becomes adaptation.",
+  "description": "<div>\n<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bound (Huntsinger et al., 2014; Norton, 1979b). The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; industrial tim- ber and commercial fishing; federal termination and 1983 federal recognition restoration under Tillie Hardwick v. United States (Madley, 2016; U.S. District Court, Northern District of California, 1983); Redwood National and State Parks and conservation governance beside a recovering working waterfront (National Park Service, 2021); and contemporary Indige- nous ocean stewardship including the 2023 Yurok&ndash;Tolowa Dee-ni&rsquo; Indigenous Marine Stewardship Area (Yurok Tribe and Tolowa Dee-ni&rsquo; Nation and Resighini Rancheria and Cher-Ae Heights Indian Community, 2024). Crescent City counted 6,673 residents at the 2020 Census, including Pelican Bay group quarters (U.S. Census Bureau, 2026b, 2020). It sits on the locked southern Cascadia margin; this study frames the often-cited thirty-seven-percent fifty-year probability of an M &gt;= 8.0 southern-segment rupture as paleoseismic model output from turbidite correlation and time-dependent recurrence analysis, not as a deterministic forecast (Goldfinger et al., 2012a; Atwater et al., 2005a). Tsunami loss is one strand in that hazard geography &mdash; the 1964 Alaska earthquake tsunami remains the deadliest event on the contiguous-U.S. Pacific coast (eleven deaths locally, twenty-nine downtown blocks destroyed), with reconstruction and Pacific-wide warning consequence treated in sec. 3.11 and sec. 3.12 (Dengler and Magoon, 2005a; National Centers for Environmental Information, 2024; Lander and Lockridge, 1989). The synthesis situates the town in recurring cycles of extraction, disaster, rebuilding, and institutional adaptation &mdash; a compact case study in nested geological, ecological, economic, and political risk (California Ocean Protection Council and California Natural Resources Agency, 2018; Abatzoglou and Williams, 2016; Goldfinger et al., 2012a).</div>\n<div>&nbsp;</div>\n<div>The argument is organized through Space, Time, People, and Ideas &mdash; parallel questions about scales of place, path- dependent chronology, institutional and kinship actors, and the meanings and rules that organize memory, resources, and governance (Tuan, 1977; Massey, 2005; Ostrom, 2009). Part I (Space) moves from Cascadia and sea-level framing through Smith River ecology, coast-redwood parks, harbor oil-spill exposure and seawall engineering, housing, and Highway 101 lifelines. Part II (Time) runs archaeology through agriculture, railroad ambitions and county-wide economic cycles, doc- umented tsunami sequences and Pacific-wide warning policy after 1964, the 2011 Tōhoku event, wildfire, and recent civic currents. Part III (People) centers Tolowa Dee-ni&rsquo; sovereignty and Nee-dash beside neighboring tribal nations, immigrant communities, governance, military service and World War II, education, religion, demographics, and rural health. Part IV (Ideas) treats zoning, resilience, Klamath River restoration, Jefferson political imagination, modern economy, culture, arts, tourism, and Klamath Knot folklore, closing with a synthesizing conclusion. Following the introduction, forty-six topical chapters span Parts I&ndash;IV; chapters on the timeline, research methods, and reproducibility, the references section, and appendices A1 (figure catalog) and A2 (glossary) complete the book. Four cultural-historical threads are treated as constitutive: IMSA co-stewardship (Yurok Tribe and Tolowa Dee-ni&rsquo; Nation and Resighini Rancheria and Cher-Ae Heights Indian Community, 2024); State of Jefferson memory, including a Crescent City judge&rsquo;s three-day governorship in December 1941; Bigfoot/Sasquatch tradition rooted in the Klamath Mountains; and the literary canonization of red- wood groves as numinous space. The manuscript draws on archival records, ethnographic and linguistic sources, geological and oceanographic literature, environmental-history and human-geography scholarship, federal-agency reports, and census data (Drucker, 1937b; Gould, 1966; Tuan, 1977; Massey, 2005; Cronon, 1991; Cook, 1976b; U.S. Census Bureau, 2026b).</div>\n<div>&nbsp;</div>\n<div>The workflow follows Peng&rsquo;s reproducibility framework (Peng, 2011): analytical choices, twenty-four registry-backed figures (data-backed, schematic, and manuscript-metric), and the complete reproduction narrative in sec. 6 are versioned alongside supporting inputs and plotters in data/, src/, and scripts/, with citations resolved against manuscript/refe rences.bib. Manuscript text is licensed CC-BY-4.0 and repository source code under the Apache License 2.0 as declared in manuscript/config.yaml; the archived scholarly artifact is cited by DOI 10.5281/zenodo.20286171. The history remains epistemic work in progress: automated checks verify manuscript structure, citation resolution, and reproducible figures, not independent reverification of every historical interpretation. Collaborators are invited to fork, correct, and extend the open-source Crescent City project at <a href=\"https://github.com/docxology/crescent_city\">https://github.com/docxology/crescent_city</a></div>\n</div>",
   "keywords": [
+    "California",
+    "Cascadia",
     "Crescent City",
-    "Del Norte County",
-    "Cascadia subduction zone",
-    "Tsunami",
-    "Tolowa Dee-ni'",
-    "Redwood ecology",
-    "Local history",
-    "Coastal hazard",
-    "Indigenous ocean stewardship",
-    "Social-ecological systems",
-    "Panarchy and resilience",
-    "Coupled human-natural systems"
+    "Jefferson",
+    "USA"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -51,7 +39,8 @@
     {
       "name": "crescent_city_v1_DAF_05_19_2026.pdf",
       "size_bytes": 12468950,
-      "type": "pdf"
+      "checksum": "md5:48b0c8452315260baeb00dd4e8f5491b",
+      "download_url": "https://zenodo.org/api/records/20286171/files/crescent_city_v1_DAF_05_19_2026.pdf/content"
     }
   ],
   "related_resources": [
@@ -59,5 +48,15 @@
       "type": "repository",
       "url": "https://github.com/docxology/crescent_city"
     }
-  ]
+  ],
+  "github_repo": "docxology/crescent_city",
+  "github_release_url": "https://github.com/docxology/crescent_city/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "crescent_city v1.0.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi"
+  ],
+  "checked_at": "2026-05-27T22:15:51Z"
 }

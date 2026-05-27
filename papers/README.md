@@ -5,7 +5,7 @@ Documentation index for all publications. Each folder contains:
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
 
-## Papers (110)
+## Papers (117)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -120,6 +120,13 @@ Documentation index for all publications. Each folder contains:
 | 109 | [2026_CrescentCity](2026_CrescentCity/) | ✅ | 2026 | CrescentCity |
 | 110 | [2026_BiologyTextbook](2026_BiologyTextbook/) | ✅ | 2026 | BiologyTextbook |
 
+| 111 | [2025_CEREBRUM2](2025_CEREBRUM2/) | ✅ | 2025 | CEREBRUM2 |
+| 112 | [2026_PolicyEntanglementActive](2026_PolicyEntanglementActive/) | ✅ | 2026 | PolicyEntanglementActive |
+| 113 | [2026_BoundedAutoResearchTiny](2026_BoundedAutoResearchTiny/) | ✅ | 2026 | BoundedAutoResearchTiny |
+| 114 | [2026_ConvergenceAnalysisGradient](2026_ConvergenceAnalysisGradient/) | ✅ | 2026 | ConvergenceAnalysisGradient |
+| 115 | [2026_EditorialQualityAt](2026_EditorialQualityAt/) | ✅ | 2026 | EditorialQualityAt |
+| 116 | [2026_TemplateApproachReproducible](2026_TemplateApproachReproducible/) | ✅ | 2026 | TemplateApproachReproducible |
+| 117 | [2026_ActiveInferenceMulti](2026_ActiveInferenceMulti/) | ✅ | 2026 | ActiveInferenceMulti |
 ## Scripts
 
 | Script | Purpose |

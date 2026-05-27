@@ -58,3 +58,7 @@
 - `fep_lean_v1_04-24-2026.pdf`
 - `README.md`
 - `SKILL.md`
+
+## Related
+
+- GitHub release: https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.0.0

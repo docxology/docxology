@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T18:41:50Z",
+  "generated_at": "2026-05-27T22:18:53Z",
   "source": "pages/SOFTWARE.md",
   "count": 82,
   "repositories": [
@@ -656,12 +656,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_FEPLean/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19699234"
     },
     {
       "name": "cognitive",
@@ -728,12 +728,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
       "language": "Python",
       "stars": 12,
       "updated_or_year": "2025",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2025_CEREBRUM2/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.15231156"
     },
     {
       "name": "GEO-INFER",

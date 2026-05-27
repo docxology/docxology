@@ -44,3 +44,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20286478"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/biology_textbook/releases/tag/v1.0.0"
+    description: "GitHub release"

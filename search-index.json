@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T21:31:49Z",
+  "generated_at": "2026-05-27T22:18:54Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 594,
+  "count": 612,
   "items": [
     {
       "id": "page:home",
@@ -238,7 +238,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-05-15.md",
+      "url": "/reports/reconciliation_2026-05-27.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -250,7 +250,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-05-15.json",
+      "url": "/reports/public_source_inventory_2026-05-27.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -3054,6 +3054,158 @@
       "content": "Introduction to Biology: A Generative Approach Zenodo 10.5281/zenodo.20286478 Friedman2026IntroductionBiologyGenerativeApproach117 Computational Book Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move between narrative explanation and the quantitative constraints that shape biological claims. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales and align with mainstream undergraduate biology competencies; Unit 0 adds an optional systems, historical, and philosophical lens without replacing the traditional molecular-to-ecological sequence. Where the curriculum is quantitat Biology open textbook generative approach reproducible research undergraduate biology College of the Redwoods computational biology evidence-based teaching programmatic figures laboratory activities Biology is presented as a discipline where narrative and quantitative constraints are co-developed, not separated into parallel tracks. Forty-four chapters span systems science through ecology while preserving mainstream undergraduate competency alignment. Unit 0 supplies optional systems, historical, and philosophical framing without displacing the core molecular-to-ecological arc. The edition is designed for course adoption (e.g., College of the Redwoods BIOL-1, BIOL-8) with ready-made labs and assessment banks. Generative manuscript production with reproducible build pipeline Domain-organized Python modules for quantitative curriculum segments Programmatic figure and diagram generation Inline primary-literature citation with glossary and curriculum-mapping appendices Instructor vs student build variants for assessment materials"
     },
     {
+      "id": "work:Friedman2025CEREBRUMCaseEnabledReasoning118",
+      "type": "work",
+      "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+      "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
+      "external_url": "https://doi.org/10.5281/zenodo.15231156",
+      "summary": "<div This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitiv",
+      "year": 2025,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "paired GitHub and Zenodo publication"
+      ],
+      "content": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling Zenodo 10.5281/zenodo.15231156 Friedman2025CEREBRUMCaseEnabledReasoning118 Computational Paper <div This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured repre paired GitHub and Zenodo publication paired publication"
+    },
+    {
+      "id": "work:Friedman2026PolicyEntanglementActiveInference119",
+      "type": "work",
+      "title": "Policy Entanglement in Active Inference",
+      "url": "/works/Friedman2026PolicyEntanglementActiveInference119.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20419186",
+      "summary": "Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Stan",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "active inference",
+        "free energy principle",
+        "policy inference",
+        "mean-field",
+        "total correlation",
+        "information geometry",
+        "Schmidt rank",
+        "tensor networks"
+      ],
+      "content": "Policy Entanglement in Active Inference Zenodo 10.5281/zenodo.20419186 Friedman2026PolicyEntanglementActiveInference119 Computational Paper Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameteri active inference free energy principle policy inference mean-field total correlation information geometry Schmidt rank tensor networks sophisticated inference Lean theorem proving machine-checked free-energy identity active inference free energy principle policy inference mean-field total correlation"
+    },
+    {
+      "id": "work:Friedman2026BoundedAutoResearchTinyReproducible120",
+      "type": "work",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20417017",
+      "summary": "Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The ca",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "autoresearch",
+        "reproducible research",
+        "machine learning benchmark",
+        "artifact readiness",
+        "human review",
+        "local artifact integrity"
+      ],
+      "content": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task Zenodo 10.5281/zenodo.20417017 Friedman2026BoundedAutoResearchTinyReproducible120 Computational Paper Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but concrete: 2000 training and 500 test images from MNIST handwritten digit database are evaluated by the bounded small MNIST neural-network classification loop. The run evaluates 4 of 5 proposed candidates, including Tiny patch-attention classifier, selects exp-mlp-tanh-64 (MLP, 50890 parameters), and improves test accuracy from 82.6% to 89.4% (6.8% absolute change). The validated diagnostic layer reports macro F1 89.4%, bootstrap accuracy interval 86.4% to 92.0%, Brier score 0.161, negative log likelihood 0.361, top-2 accuracy 95.6%, and exact McNemar p-value 0.000. The same pipeline writes proposal, candidate, run, review, benchmark, ev autoresearch reproducible research machine learning benchmark artifact readiness human review local artifact integrity autoresearch reproducible research machine learning benchmark artifact readiness human review"
+    },
+    {
+      "id": "work:Friedman2026ConvergenceAnalysisGradientDescent121",
+      "type": "work",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "url": "/works/Friedman2026ConvergenceAnalysisGradientDescent121.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20417137",
+      "summary": "Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The im",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "optimization algorithms",
+        "gradient descent",
+        "convergence analysis",
+        "numerical methods",
+        "mathematical programming",
+        "reproducible research",
+        "infrastructure automation"
+      ],
+      "content": "Convergence Analysis of Gradient Descent Optimization Zenodo 10.5281/zenodo.20417137 Friedman2026ConvergenceAnalysisGradientDescent121 Computational Paper Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/template code project/scripts/optimization analysis.py and hydrated into the manuscript through scripts/z generate manuscript variables.py, so tables and prose track output/data/optimization results.csv after every pipeline run. We evaluate 6 step sizes from $\\alpha = 0.01$ to $\\alpha = 2.5$, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model. The build chain exercises template infrastructure end-to-end: scientific helpers (infrastructure.scientific.stability, infrastructure.scientific.benchmarking), valid optimization algorithms gradient descent convergence analysis numerical methods mathematical programming reproducible research infrastructure automation optimization algorithms gradient descent convergence analysis numerical methods mathematical programming"
+    },
+    {
+      "id": "work:Friedman2026EditorialQualityAtScale122",
+      "type": "work",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "url": "/works/Friedman2026EditorialQualityAtScale122.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20417105",
+      "summary": "Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose ana",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "prose analysis",
+        "readability",
+        "editorial review",
+        "reproducible research",
+        "manuscript quality"
+      ],
+      "content": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline Zenodo 10.5281/zenodo.20417105 Friedman2026EditorialQualityAtScale122 Computational Paper Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript, prose analysis readability editorial review reproducible research manuscript quality prose analysis readability editorial review reproducible research manuscript quality"
+    },
+    {
+      "id": "work:Friedman2026TemplateApproachReproducibleGenerative123",
+      "type": "work",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "url": "/works/Friedman2026TemplateApproachReproducibleGenerative123.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20419084",
+      "summary": "Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforce",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "reproducible research",
+        "infrastructure-as-code",
+        "steganography",
+        "cryptographic provenance",
+        "LaTeX rendering",
+        "modular infrastructure",
+        "publication integrity",
+        "zero-mock testing"
+      ],
+      "content": "A template/ approach to Reproducible Generative Research Zenodo 10.5281/zenodo.20419084 Friedman2026TemplateApproachReproducibleGenerative123 Computational Paper Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the researc reproducible research infrastructure-as-code steganography cryptographic provenance LaTeX rendering modular infrastructure publication integrity zero-mock testing thin orchestrator two-layer architecture FAIR4RS research software engineering reproducible research infrastructure-as-code steganography cryptographic provenance LaTeX rendering"
+    },
+    {
+      "id": "work:Friedman2026ActiveInferenceMultiTrack124",
+      "type": "work",
+      "title": "Active Inference Multi-Track Exemplar",
+      "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20417022",
+      "summary": "Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../t",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "active inference",
+        "pymdp",
+        "sophisticated inference",
+        "generalized notation notation",
+        "lean"
+      ],
+      "content": "Active Inference Multi-Track Exemplar Zenodo 10.5281/zenodo.20417022 Friedman2026ActiveInferenceMultiTrack124 Computational Paper Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml). The first page (00 00 sheaf coverage.md (00 00 sheaf coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time. The T-maze demo aligns with pymdp sophisticated inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated inference). Measured invariant checks: 6 / 6 passed. SI plan active inference pymdp sophisticated inference generalized notation notation lean active inference pymdp sophisticated inference generalized notation notation lean"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -3814,14 +3966,14 @@
       "type": "software",
       "title": "fep_lean",
       "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
-      "summary": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+      "summary": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
       "domain": "active-inference-institute",
       "tags": [
         "software",
         "Python",
         "ActiveInferenceInstitute"
       ],
-      "content": "fep_lean Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline Python ActiveInferenceInstitute"
+      "content": "fep_lean Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:cognitive",
@@ -3898,14 +4050,14 @@
       "type": "software",
       "title": "CEREBRUM",
       "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
-      "summary": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+      "summary": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
       "domain": "active-inference-institute",
       "tags": [
         "software",
         "Python",
         "ActiveInferenceInstitute"
       ],
-      "content": "CEREBRUM Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models Python ActiveInferenceInstitute"
+      "content": "CEREBRUM Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:GEO-INFER",
@@ -4360,9 +4512,10 @@
         "repository",
         "HTML",
         "ActiveInferenceInstitute",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveInferenceJournal Content of the Active Inference Journal HTML ActiveInferenceInstitute  curated"
+      "content": "ActiveInferenceInstitute/ActiveInferenceJournal Content of the Active Inference Journal HTML ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/AEOS",
@@ -4698,12 +4851,12 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "Pkl",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/GeneralizedNotationNotation  Python ActiveInferenceInstitute active active-inference active-inference-notation inference curated recent"
+      "content": "ActiveInferenceInstitute/GeneralizedNotationNotation  Pkl ActiveInferenceInstitute active active-inference active-inference-notation inference curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/generative_agents",
@@ -4814,10 +4967,9 @@
         "repository",
         "HTML",
         "ActiveInferenceInstitute",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "ActiveInferenceInstitute/Journal-Utilities Utilities and Documentation for creating contents for the Active Inference Journal HTML ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/Journal-Utilities Utilities and Documentation for creating contents for the Active Inference Journal HTML ActiveInferenceInstitute  curated"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Knowledge-Engineering",
@@ -4882,6 +5034,22 @@
         "curated"
       ],
       "content": "ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook Active Inference Textbook Group Julia ActiveInferenceInstitute  curated"
+    },
+    {
+      "id": "github-repo:ActiveInferenceInstitute/policy_entanglement",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/policy_entanglement",
+      "url": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
+      "summary": "Policy Entanglement in Active Inference v1.0.0",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/policy_entanglement Policy Entanglement in Active Inference v1.0.0 Python ActiveInferenceInstitute  recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/pymcp",
@@ -5251,10 +5419,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/agentic_coding_flywheel_setup Bootstraps a fresh Ubuntu VPS into a complete multi-agent AI development environment in 30 minutes: coding agents, session management, safety tools, and coordination infrastructure  docxology  fork recent"
+      "content": "docxology/agentic_coding_flywheel_setup Bootstraps a fresh Ubuntu VPS into a complete multi-agent AI development environment in 30 minutes: coding agents, session management, safety tools, and coordination infrastructure  docxology  fork"
     },
     {
       "id": "github-repo:docxology/AgenticMesh",
@@ -5304,6 +5471,23 @@
         "recent"
       ],
       "content": "docxology/AGI_fork   docxology  fork recent"
+    },
+    {
+      "id": "github-repo:docxology/AI-ConductorBlindSpot",
+      "type": "github_repository",
+      "title": "docxology/AI-ConductorBlindSpot",
+      "url": "https://github.com/docxology/AI-ConductorBlindSpot",
+      "summary": "Computational artifacts for The Conductor Blind Spot of the Quadratic Curvature Class on Ring-Structured Categorical Heads, exact-arithmetic certificate verification",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TeX",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/AI-ConductorBlindSpot Computational artifacts for The Conductor Blind Spot of the Quadratic Curvature Class on Ring-Structured Categorical Heads, exact-arithmetic certificate verification TeX docxology  fork recent"
     },
     {
       "id": "github-repo:docxology/aif-fep-db",
@@ -5725,6 +5909,23 @@
         "recent"
       ],
       "content": "docxology/biol-8 BIOL-8: Human Anatomy & Physiology Course Materials - College of the Redwoods HTML docxology  curated recent"
+    },
+    {
+      "id": "github-repo:docxology/biology_textbook",
+      "type": "github_repository",
+      "title": "docxology/biology_textbook",
+      "url": "https://github.com/docxology/biology_textbook",
+      "summary": "docxology repository",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/biology_textbook  Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/blackarch",
@@ -6714,9 +6915,10 @@
         "repository",
         "Python",
         "docxology",
-        "fork"
+        "fork",
+        "recent"
       ],
-      "content": "docxology/FPF First Principle Framework Python docxology  fork"
+      "content": "docxology/FPF First Principle Framework Python docxology  fork recent"
     },
     {
       "id": "github-repo:docxology/fractiverse-ontology",
@@ -7518,10 +7720,9 @@
         "repository",
         "Python",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/ki_us Optimizing the United States of America Python docxology  fork recent"
+      "content": "docxology/ki_us Optimizing the United States of America Python docxology  fork"
     },
     {
       "id": "github-repo:docxology/kilocode",
@@ -7765,6 +7966,23 @@
       "content": "docxology/Markov_Blanket_Detection  Python docxology  curated"
     },
     {
+      "id": "github-repo:docxology/mcp-coq-lsp",
+      "type": "github_repository",
+      "title": "docxology/mcp-coq-lsp",
+      "url": "https://github.com/docxology/mcp-coq-lsp",
+      "summary": "MCP server for Coq LSP",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/mcp-coq-lsp MCP server for Coq LSP  docxology  fork recent"
+    },
+    {
       "id": "github-repo:docxology/mcp_agent_mail",
       "type": "github_repository",
       "title": "docxology/mcp_agent_mail",
@@ -7923,10 +8141,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/movrax Military-Grade Persistent Memory Operating System  docxology  fork recent"
+      "content": "docxology/movrax Military-Grade Persistent Memory Operating System  docxology  fork"
     },
     {
       "id": "github-repo:docxology/Mr.-Ranedeer-AI-Tutor",
@@ -8754,6 +8971,23 @@
       "content": "docxology/QuadMath  TeX docxology  curated"
     },
     {
+      "id": "github-repo:docxology/quantum-logical-framework",
+      "type": "github_repository",
+      "title": "docxology/quantum-logical-framework",
+      "url": "https://github.com/docxology/quantum-logical-framework",
+      "summary": "quantum genesis constructive possibilist quantum logical synthesis",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/quantum-logical-framework quantum genesis constructive possibilist quantum logical synthesis Python docxology  fork recent"
+    },
+    {
       "id": "github-repo:docxology/quantum_geometric_tensor",
       "type": "github_repository",
       "title": "docxology/quantum_geometric_tensor",
@@ -9316,6 +9550,54 @@
       "content": "docxology/template  Python docxology  curated recent"
     },
     {
+      "id": "github-repo:docxology/template-release-smoke",
+      "type": "github_repository",
+      "title": "docxology/template-release-smoke",
+      "url": "https://github.com/docxology/template-release-smoke",
+      "summary": "Integration smoke test for template release orchestrator (do not cite)",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template-release-smoke Integration smoke test for template release orchestrator (do not cite)  docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_active_inference",
+      "type": "github_repository",
+      "title": "docxology/template_active_inference",
+      "url": "https://github.com/docxology/template_active_inference",
+      "summary": "Active inference multi-track exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_active_inference Active inference multi-track exemplar releases  docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_autoresearch_project",
+      "type": "github_repository",
+      "title": "docxology/template_autoresearch_project",
+      "url": "https://github.com/docxology/template_autoresearch_project",
+      "summary": "Template autoresearch project exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_autoresearch_project Template autoresearch project exemplar releases  docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/template_bioinformatics_project",
       "type": "github_repository",
       "title": "docxology/template_bioinformatics_project",
@@ -9330,6 +9612,54 @@
         "recent"
       ],
       "content": "docxology/template_bioinformatics_project  Python docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_code_project",
+      "type": "github_repository",
+      "title": "docxology/template_code_project",
+      "url": "https://github.com/docxology/template_code_project",
+      "summary": "Template code project exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_code_project Template code project exemplar releases  docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_prose_project",
+      "type": "github_repository",
+      "title": "docxology/template_prose_project",
+      "url": "https://github.com/docxology/template_prose_project",
+      "summary": "Template prose project exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_prose_project Template prose project exemplar releases  docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_template",
+      "type": "github_repository",
+      "title": "docxology/template_template",
+      "url": "https://github.com/docxology/template_template",
+      "summary": "Template meta-research exemplar: self-documenting reproducible research repo",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo  docxology  recent"
     },
     {
       "id": "github-repo:docxology/test_public",
@@ -9778,7 +10108,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 117 works.",
+      "title": "The curated bibliography contains 124 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -9786,12 +10116,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 117 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 124 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 110 per-paper documentation folders.",
+      "title": "The repository contains 117 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -9799,12 +10129,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 110 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 117 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 286 public repositories.",
+      "title": "The docxology GitHub profile has 298 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -9812,12 +10142,12 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 286 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 298 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -9825,7 +10155,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
@@ -9975,7 +10305,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 117 works, 82 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 124 works, 82 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

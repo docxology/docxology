@@ -80,7 +80,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
-- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline
+- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
 
@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 8
+- Works: 15
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -162,10 +162,10 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 - 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.19139090)
 - 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286478)
-- 2025 — [Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference](https://doi.org/10.5281/zenodo.17228945)
-- 2025 — [MDKV: A Multitrack Markdown Container for Structured, Portable Documents](https://doi.org/10.5281/zenodo.16790554)
-- 2025 — [Markdown Decision Process: A Framework for Probabilistic Document Analysis](https://doi.org/10.5281/zenodo.17244386)
-- 2025 — [ResNei: Solution Design Document](https://doi.org/10.5281/zenodo.15389682)
+- 2026 — [Policy Entanglement in Active Inference](https://doi.org/10.5281/zenodo.20419186)
+- 2026 — [Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task](https://doi.org/10.5281/zenodo.20417017)
+- 2026 — [Convergence Analysis of Gradient Descent Optimization](https://doi.org/10.5281/zenodo.20417137)
+- 2026 — [Editorial Quality at Scale: A Reproducible Prose-Review Pipeline](https://doi.org/10.5281/zenodo.20417105)
 
 **Selected repositories**
 

@@ -1390,3 +1390,87 @@ KW  - Computational
 KW  - Book
 N1  - Catalog row 117; docs: papers/2026_BiologyTextbook/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling
+T2  - Zenodo
+DO  - 10.5281/zenodo.15231156
+UR  - https://doi.org/10.5281/zenodo.15231156
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 118; docs: papers/2025_CEREBRUM2/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Policy Entanglement in Active Inference
+T2  - Zenodo
+DO  - 10.5281/zenodo.20419186
+UR  - https://doi.org/10.5281/zenodo.20419186
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 119; docs: papers/2026_PolicyEntanglementActive/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
+T2  - Zenodo
+DO  - 10.5281/zenodo.20417017
+UR  - https://doi.org/10.5281/zenodo.20417017
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Convergence Analysis of Gradient Descent Optimization
+T2  - Zenodo
+DO  - 10.5281/zenodo.20417137
+UR  - https://doi.org/10.5281/zenodo.20417137
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
+T2  - Zenodo
+DO  - 10.5281/zenodo.20417105
+UR  - https://doi.org/10.5281/zenodo.20417105
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 122; docs: papers/2026_EditorialQualityAt/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - A template/ approach to Reproducible Generative Research
+T2  - Zenodo
+DO  - 10.5281/zenodo.20419084
+UR  - https://doi.org/10.5281/zenodo.20419084
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 123; docs: papers/2026_TemplateApproachReproducible/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Active Inference Multi-Track Exemplar
+T2  - Zenodo
+DO  - 10.5281/zenodo.20417022
+UR  - https://doi.org/10.5281/zenodo.20417022
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 124; docs: papers/2026_ActiveInferenceMulti/
+ER  -

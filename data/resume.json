@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T21:31:41Z",
+  "generated_at": "2026-05-27T22:18:54Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -33,7 +33,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 117,
+    "works": 124,
     "software_catalogued": 82,
     "owned_software_catalogued": 50,
     "aii_software_catalogued": 32,
@@ -46,13 +46,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 286 public repositories.",
+      "claim": "The docxology GitHub profile has 298 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-05-15.json"
+        "reports/public_source_snapshot_2026-05-27.json"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -60,13 +60,13 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-05-15.json"
+        "reports/public_source_snapshot_2026-05-27.json"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -3896,6 +3896,104 @@
       "doi": "10.5281/zenodo.20286478",
       "docs_path": "papers/2026_BiologyTextbook/",
       "has_paper_folder": true
+    },
+    {
+      "num": 118,
+      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning118",
+      "year": 2025,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.15231156",
+      "doi": "10.5281/zenodo.15231156",
+      "docs_path": "papers/2025_CEREBRUM2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 119,
+      "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Policy Entanglement in Active Inference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20419186",
+      "doi": "10.5281/zenodo.20419186",
+      "docs_path": "papers/2026_PolicyEntanglementActive/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 120,
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20417017",
+      "doi": "10.5281/zenodo.20417017",
+      "docs_path": "papers/2026_BoundedAutoResearchTiny/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 121,
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20417137",
+      "doi": "10.5281/zenodo.20417137",
+      "docs_path": "papers/2026_ConvergenceAnalysisGradient/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 122,
+      "citation_key": "Friedman2026EditorialQualityAtScale122",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20417105",
+      "doi": "10.5281/zenodo.20417105",
+      "docs_path": "papers/2026_EditorialQualityAt/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 123,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20419084",
+      "doi": "10.5281/zenodo.20419084",
+      "docs_path": "papers/2026_TemplateApproachReproducible/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 124,
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Active Inference Multi-Track Exemplar",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20417022",
+      "doi": "10.5281/zenodo.20417022",
+      "docs_path": "papers/2026_ActiveInferenceMulti/",
+      "has_paper_folder": true
     }
   ],
   "software": [
@@ -4552,12 +4650,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_FEPLean/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19699234"
     },
     {
       "name": "cognitive",
@@ -4624,12 +4722,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
       "language": "Python",
       "stars": 12,
       "updated_or_year": "2025",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2025_CEREBRUM2/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.15231156"
     },
     {
       "name": "GEO-INFER",
@@ -4887,14 +4985,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 117 works.",
+      "claim": "The curated bibliography contains 124 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -4902,14 +5000,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 110 per-paper documentation folders.",
+      "claim": "The repository contains 117 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -4917,13 +5015,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 286 public repositories.",
+      "claim": "The docxology GitHub profile has 298 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-05-15.json"
+        "reports/public_source_snapshot_2026-05-27.json"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -4931,13 +5029,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 50 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-05-15.json"
+        "reports/public_source_snapshot_2026-05-27.json"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -4951,7 +5049,7 @@
         "https://orcid.org/0000-0001-6232-9096",
         "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics.",
       "maintenance_owner": "ARCHIVIST",
@@ -4968,7 +5066,7 @@
         "https://www.christies.com/en/lot/lot-6337619",
         "papers/2024_CurioCards/README.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's.",
       "maintenance_owner": "RESEARCHER",
@@ -4983,7 +5081,7 @@
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "Independent dual direct-fetch verification: two separate non-cached retrievals of the canonical profile on 2026-05-16 both returned 764 citations, h-index 15, i10-index 17.",
       "maintenance_owner": "ARCHIVIST",
@@ -4998,7 +5096,7 @@
         "papers/2019_PhDDissertation/README.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "Stanford PURL dissertation record and local paper folder.",
       "maintenance_owner": "RESEARCHER",
@@ -5013,7 +5111,7 @@
         "pages/PROFILE.md",
         "README.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record.",
       "maintenance_owner": "RESEARCHER",
@@ -5029,7 +5127,7 @@
         "pages/DISCOVERY.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024).",
       "maintenance_owner": "INTEGRATOR",
@@ -5044,7 +5142,7 @@
         "pages/LINKS.md",
         "pages/WIKIPEDIA.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "high",
       "verification_method": "AII board page and local governance notes.",
       "maintenance_owner": "INTEGRATOR",
@@ -5059,7 +5157,7 @@
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "medium",
       "verification_method": "AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified.",
       "maintenance_owner": "INTEGRATOR",
@@ -5074,7 +5172,7 @@
         "README.md",
         "pages/VIDEOS.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "medium",
       "verification_method": "Curated site copy and AII program page.",
       "maintenance_owner": "EDUCATOR",
@@ -5089,7 +5187,7 @@
         "index.html",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "medium",
       "verification_method": "Curated homepage and profile synchronization.",
       "maintenance_owner": "EDUCATOR",
@@ -5104,7 +5202,7 @@
         "README.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-27T18:41:50Z",
+      "checked_at": "2026-05-27T22:18:53Z",
       "confidence": "medium",
       "verification_method": "Public site link and curated profile copy.",
       "maintenance_owner": "RESEARCHER",

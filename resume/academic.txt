@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-05-27T21:31:41Z
+Generated: 2026-05-27T22:18:54Z
 
-Current public metrics: 117 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 124 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (117)
+WORKS AND PUBLICATIONS (124)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -253,8 +253,15 @@ WORKS AND PUBLICATIONS (117)
 [115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144984
 [116] 2026 | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | Zenodo | 10.5281/zenodo.20286171
 [117] 2026 | Book | Introduction to Biology: A Generative Approach | Zenodo | 10.5281/zenodo.20286478
+[118] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15231156
+[119] 2026 | Paper | Policy Entanglement in Active Inference | Zenodo | 10.5281/zenodo.20419186
+[120] 2026 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | Zenodo | 10.5281/zenodo.20417017
+[121] 2026 | Paper | Convergence Analysis of Gradient Descent Optimization | Zenodo | 10.5281/zenodo.20417137
+[122] 2026 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | Zenodo | 10.5281/zenodo.20417105
+[123] 2026 | Paper | A template/ approach to Reproducible Generative Research | Zenodo | 10.5281/zenodo.20419084
+[124] 2026 | Paper | Active Inference Multi-Track Exemplar | Zenodo | 10.5281/zenodo.20417022
 
-SOFTWARE (16)
+SOFTWARE (17)
 -------------
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
 docxology/ActiveInferAnts | Python | https://github.com/docxology/ActiveInferAnts | Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy | paper: papers/2021_ActiveInferants/
@@ -270,8 +277,9 @@ docxology/mdkv | Python | https://github.com/docxology/mdkv | MKV-like key-value
 docxology/p3if | Python | https://github.com/docxology/p3if | Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security | paper: papers/2023_P3IF/
 docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
-ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline | paper: papers/2026_FEPLean/
+ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699234
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
+ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM2/ | zenodo: https://doi.org/10.5281/zenodo.15231156
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------

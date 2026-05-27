@@ -2912,5 +2912,180 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20286478",
     "URL": "https://doi.org/10.5281/zenodo.20286478"
+  },
+  {
+    "id": "Friedman2025CEREBRUMCaseEnabledReasoning118",
+    "type": "article-journal",
+    "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 118; docs: papers/2025_CEREBRUM2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.15231156",
+    "URL": "https://doi.org/10.5281/zenodo.15231156"
+  },
+  {
+    "id": "Friedman2026PolicyEntanglementActiveInference119",
+    "type": "article-journal",
+    "title": "Policy Entanglement in Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 119; docs: papers/2026_PolicyEntanglementActive/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20419186",
+    "URL": "https://doi.org/10.5281/zenodo.20419186"
+  },
+  {
+    "id": "Friedman2026BoundedAutoResearchTinyReproducible120",
+    "type": "article-journal",
+    "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417017",
+    "URL": "https://doi.org/10.5281/zenodo.20417017"
+  },
+  {
+    "id": "Friedman2026ConvergenceAnalysisGradientDescent121",
+    "type": "article-journal",
+    "title": "Convergence Analysis of Gradient Descent Optimization",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417137",
+    "URL": "https://doi.org/10.5281/zenodo.20417137"
+  },
+  {
+    "id": "Friedman2026EditorialQualityAtScale122",
+    "type": "article-journal",
+    "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 122; docs: papers/2026_EditorialQualityAt/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417105",
+    "URL": "https://doi.org/10.5281/zenodo.20417105"
+  },
+  {
+    "id": "Friedman2026TemplateApproachReproducibleGenerative123",
+    "type": "article-journal",
+    "title": "A template/ approach to Reproducible Generative Research",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 123; docs: papers/2026_TemplateApproachReproducible/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20419084",
+    "URL": "https://doi.org/10.5281/zenodo.20419084"
+  },
+  {
+    "id": "Friedman2026ActiveInferenceMultiTrack124",
+    "type": "article-journal",
+    "title": "Active Inference Multi-Track Exemplar",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 124; docs: papers/2026_ActiveInferenceMulti/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417022",
+    "URL": "https://doi.org/10.5281/zenodo.20417022"
   }
 ]
