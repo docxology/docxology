@@ -131,6 +131,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_work_pages.py",
     },
     {
+        "name": "Paper folder pages",
+        "outputs": ["papers/*/index.html"],
+        "sources": ["data/works.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/*.pdf"],
+        "command": "python3 code/orchestrators/build_paper_pages.py",
+    },
+    {
         "name": "Evidence pages",
         "outputs": ["evidence.html", "pages/EVIDENCE.md"],
         "sources": ["data/claims.json", "code/orchestrators/build_evidence_page.py"],
@@ -211,7 +217,7 @@ ARTIFACTS = [
     {
         "name": "Sitemap",
         "outputs": ["sitemap.xml"],
-        "sources": ["works/*.html", "code/orchestrators/build_sitemap.py"],
+        "sources": ["works/*.html", "papers/*/index.html", "code/orchestrators/build_sitemap.py"],
         "command": "python3 code/orchestrators/build_sitemap.py",
     },
     {

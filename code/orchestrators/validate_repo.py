@@ -137,6 +137,8 @@ def validate_sitemap_targets() -> None:
     missing = []
     for loc in locs:
         rel = "index.html" if loc == "" else urllib.parse.unquote(loc)
+        if rel.endswith("/"):
+            rel += "index.html"
         if not (REPO_ROOT / rel).exists():
             missing.append(rel)
     if missing:
@@ -151,6 +153,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_resume.py", "--check"])
     run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
+    run(["python3", "code/orchestrators/build_paper_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_catalog.py", "--check"])
     run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])

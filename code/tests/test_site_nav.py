@@ -17,6 +17,12 @@ def test_render_nav_marks_active_and_depth():
     assert "Works" in html
 
 
+def test_render_nav_supports_deeper_pages():
+    html = render_nav(active="works", depth=2)
+    assert 'href="../../publications.html"' in html
+    assert 'href="../../works/" class="active"' in html
+
+
 def test_render_nav_domain_marks_domains_active():
     html = render_nav_domain(active="domains")
     assert 'href="domains.html" class="active"' in html

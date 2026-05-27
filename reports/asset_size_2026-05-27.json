@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-27T23:24:42Z",
+  "generated_at": "2026-05-27T23:46:23Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 64,
   "warnings": 0,
-  "total_bytes": 6772982,
+  "total_bytes": 6773327,
   "largest": [
     {
       "path": "data/artworks.json",

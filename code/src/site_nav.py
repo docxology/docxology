@@ -6,8 +6,8 @@ import html
 
 
 def render_nav(*, active: str = "", depth: int = 0) -> str:
-    """Return nav block. depth=0 for site root pages, depth=1 for works/*.html."""
-    prefix = "../" if depth else ""
+    """Return nav block. depth=0 for root pages, depth=1+ for nested pages."""
+    prefix = "../" * depth
     home = f"{prefix}index.html"
     links = [
         ("about", f"{prefix}index.html#about", "About"),
@@ -33,7 +33,7 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
 
 def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
     """Nav for domain-*.html and domains.html (matches software/search/discovery cluster)."""
-    prefix = "../" if depth else ""
+    prefix = "../" * depth
     home = f"{prefix}index.html"
     links = [
         ("about", f"{home}#about", "About"),
@@ -60,7 +60,7 @@ def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
 
 def render_nav_compact(*, depth: int = 1) -> str:
     """Compact nav for work detail pages (legacy subset + discovery)."""
-    prefix = "../" if depth else ""
+    prefix = "../" * depth
     return (
         f'<nav role="navigation" aria-label="Main navigation">'
         f'<a href="{prefix}index.html" class="nav-logo">Daniel Ari Friedman</a>'

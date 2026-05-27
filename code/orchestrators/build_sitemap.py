@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import re
 from pathlib import Path
 
@@ -127,6 +128,12 @@ def render(lastmod: str | None = None) -> str:
             if path.name == "index.html":
                 continue
             entries.append(url_entry(f"works/{path.name}", "yearly", "0.45", date))
+    works_json = REPO_ROOT / "data" / "works.json"
+    if works_json.exists():
+        works = json.loads(works_json.read_text(encoding="utf-8"))["works"]
+        paper_paths = sorted({str(work.get("docs_path") or "").rstrip("/") + "/" for work in works if work.get("docs_path")})
+        for path in paper_paths:
+            entries.append(url_entry(path, "yearly", "0.35", date))
     return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n" + "\n".join(entries) + "\n</urlset>\n"
 
 

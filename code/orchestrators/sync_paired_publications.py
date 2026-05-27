@@ -874,6 +874,7 @@ def run_regeneration(repo_root: Path = REPO_ROOT) -> None:
         ["python3", "code/orchestrators/export_agent_data.py"],
         ["python3", "code/orchestrators/build_domain_pages.py"],
         ["python3", "code/orchestrators/build_work_pages.py"],
+        ["python3", "code/orchestrators/build_paper_pages.py"],
         ["python3", "code/orchestrators/audit_assets.py"],
         ["python3", "code/orchestrators/build_catalog.py"],
         ["python3", "code/orchestrators/build_search_index.py"],

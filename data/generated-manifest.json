@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:24:42Z",
+  "generated_at": "2026-05-27T23:46:23Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -135,6 +135,19 @@
         "papers/*/SKILL.md"
       ],
       "command": "python3 code/orchestrators/build_work_pages.py"
+    },
+    {
+      "name": "Paper folder pages",
+      "outputs": [
+        "papers/*/index.html"
+      ],
+      "sources": [
+        "data/works.json",
+        "papers/*/README.md",
+        "papers/*/AGENTS.md",
+        "papers/*/*.pdf"
+      ],
+      "command": "python3 code/orchestrators/build_paper_pages.py"
     },
     {
       "name": "Evidence pages",
@@ -279,6 +292,7 @@
       ],
       "sources": [
         "works/*.html",
+        "papers/*/index.html",
         "code/orchestrators/build_sitemap.py"
       ],
       "command": "python3 code/orchestrators/build_sitemap.py"
