@@ -149,7 +149,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
 - Works: 8
-- Selected repositories: 6
+- Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
 **Learning path**
@@ -175,3 +175,5 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 - [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 - [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration
+- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

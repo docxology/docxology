@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T16:32:14Z",
+  "generated_at": "2026-05-27T01:08:31Z",
   "source": "pages/SOFTWARE.md",
   "count": 82,
   "repositories": [
@@ -11,7 +11,9 @@
       "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
       "language": "Python",
       "stars": 13,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "QuadCraft",
@@ -21,7 +23,9 @@
       "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
       "language": "JavaScript",
       "stars": 9,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "MetaInformAnt",
@@ -31,7 +35,9 @@
       "description": "Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond",
       "language": "Python",
       "stars": 6,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2021_ActiveInferants/",
+      "zenodo_url": ""
     },
     {
       "name": "codomyrmex",
@@ -41,7 +47,9 @@
       "description": "AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
       "language": "Python",
       "stars": 6,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "cognitive-engine",
@@ -51,7 +59,9 @@
       "description": "Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-03"
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "opentir",
@@ -61,7 +71,9 @@
       "description": "Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2025-11"
+      "updated_or_year": "2025-11",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "timeline_generator",
@@ -71,7 +83,9 @@
       "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
       "language": "TypeScript",
       "stars": 4,
-      "updated_or_year": "2026-04"
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "FORMINDEX",
@@ -81,7 +95,9 @@
       "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation",
       "language": "Rich Text Format",
       "stars": 3,
-      "updated_or_year": "2024-10"
+      "updated_or_year": "2024-10",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveInferAnts",
@@ -91,7 +107,9 @@
       "description": "Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-04"
+      "updated_or_year": "2026-04",
+      "paper_path": "papers/2021_ActiveInferants/",
+      "zenodo_url": ""
     },
     {
       "name": "crescent-city",
@@ -101,7 +119,9 @@
       "description": "End-to-end pipeline for ingesting, parsing, and querying the Crescent City, CA municipal code; TypeScript-based legal-text processing",
       "language": "TypeScript",
       "stars": 2,
-      "updated_or_year": "2026-02"
+      "updated_or_year": "2026-02",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ivm-xyz",
@@ -111,7 +131,9 @@
       "description": "Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2025-11"
+      "updated_or_year": "2025-11",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Markov_Blanket_Detection",
@@ -121,7 +143,9 @@
       "description": "Dynamic Markov Blanket Detection (DMBD) — PyTorch-accelerated framework for identifying causal relationships in complex systems; static and temporal modes with cognitive-structure labeling",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2025-06"
+      "updated_or_year": "2025-06",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "QuadMath",
@@ -131,7 +155,9 @@
       "description": "Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library",
       "language": "TeX",
       "stars": 2,
-      "updated_or_year": "2026-02"
+      "updated_or_year": "2026-02",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "active_inference",
@@ -141,7 +167,9 @@
       "description": "Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2025-11"
+      "updated_or_year": "2025-11",
+      "paper_path": "papers/2020_BehaviorEngineering/",
+      "zenodo_url": ""
     },
     {
       "name": "AgenticMesh",
@@ -151,7 +179,9 @@
       "description": "Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2025-02"
+      "updated_or_year": "2025-02",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "curriculum",
@@ -161,7 +191,9 @@
       "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science",
       "language": "HTML",
       "stars": 1,
-      "updated_or_year": "2026-01"
+      "updated_or_year": "2026-01",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "lean_niche",
@@ -171,7 +203,9 @@
       "description": "Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2025-08"
+      "updated_or_year": "2025-08",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "literature",
@@ -181,7 +215,9 @@
       "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "obsidian-construction-from-text",
@@ -191,7 +227,9 @@
       "description": "Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2025-03"
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "qr_live_protocol",
@@ -201,7 +239,9 @@
       "description": "QR code-based live protocol system for real-time data exchange and interactive session management",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2025-10"
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ultralink-docx",
@@ -211,7 +251,9 @@
       "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
       "language": "HTML",
       "stars": 1,
-      "updated_or_year": "2025-03"
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "cognitive",
@@ -221,7 +263,9 @@
       "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
       "language": "Python",
       "stars": 14,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "active_torchference",
@@ -231,7 +275,9 @@
       "description": "PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-10"
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ant-pheromone",
@@ -241,7 +287,9 @@
       "description": "Computational simulation of ant pheromone trail dynamics and stigmergic communication",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2022-09"
+      "updated_or_year": "2022-09",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ant_stack",
@@ -251,7 +299,9 @@
       "description": "The Ant Stack — layered computational model of collective ant-colony intelligence",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-09"
+      "updated_or_year": "2025-09",
+      "paper_path": "papers/2025_AntStack/",
+      "zenodo_url": ""
     },
     {
       "name": "ento_linguistics",
@@ -261,7 +311,9 @@
       "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-04"
+      "updated_or_year": "2026-04",
+      "paper_path": "papers/2026_EntoLinguistics/",
+      "zenodo_url": ""
     },
     {
       "name": "cognitive_case_diagrams",
@@ -271,7 +323,9 @@
       "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript",
       "language": "TeX",
       "stars": 0,
-      "updated_or_year": "2026-04"
+      "updated_or_year": "2026-04",
+      "paper_path": "papers/2026_CognitiveCaseDiagrams/",
+      "zenodo_url": ""
     },
     {
       "name": "Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
@@ -281,7 +335,9 @@
       "description": "Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment",
       "language": "Julia",
       "stars": 0,
-      "updated_or_year": "2025-04"
+      "updated_or_year": "2025-04",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "biol-1",
@@ -291,7 +347,9 @@
       "description": "BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-03"
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "biol-8",
@@ -301,7 +359,9 @@
       "description": "BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-03"
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "biology_textbook",
@@ -311,7 +371,9 @@
       "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2026_BiologyTextbook/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20286478"
     },
     {
       "name": "cascadia",
@@ -321,7 +383,9 @@
       "description": "Cascadia bioregion modeling and data analysis tools",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-08"
+      "updated_or_year": "2025-08",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "course",
@@ -331,7 +395,9 @@
       "description": "Course materials framework for structured interdisciplinary learning modules",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-12"
+      "updated_or_year": "2025-12",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "enactive_inference_model",
@@ -341,7 +407,9 @@
       "description": "Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-02"
+      "updated_or_year": "2026-02",
+      "paper_path": "papers/2025_Thoughtseeds/",
+      "zenodo_url": ""
     },
     {
       "name": "EvoJump",
@@ -351,7 +419,9 @@
       "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-10"
+      "updated_or_year": "2025-10",
+      "paper_path": "papers/2025_EvoJump/",
+      "zenodo_url": ""
     },
     {
       "name": "flick",
@@ -361,7 +431,9 @@
       "description": "Lightweight Python tooling for rapid data flicking and processing pipelines",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-03"
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "fuller-obsidian",
@@ -371,7 +443,9 @@
       "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2025-02"
+      "updated_or_year": "2025-02",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "godel_ivm",
@@ -381,7 +455,9 @@
       "description": "Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-10"
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "goference",
@@ -391,7 +467,9 @@
       "description": "Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum",
       "language": "Go",
       "stars": 0,
-      "updated_or_year": "2025-09"
+      "updated_or_year": "2025-09",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "hhs-opendata",
@@ -401,7 +479,9 @@
       "description": "Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-02"
+      "updated_or_year": "2026-02",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "infra-calc",
@@ -411,7 +491,9 @@
       "description": "Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems",
       "language": "JavaScript",
       "stars": 0,
-      "updated_or_year": "2025-05"
+      "updated_or_year": "2025-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "markdown_decision_process",
@@ -421,7 +503,9 @@
       "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-10"
+      "updated_or_year": "2025-10",
+      "paper_path": "papers/2025_MarkdownDecisionProcess/",
+      "zenodo_url": ""
     },
     {
       "name": "mdkv",
@@ -431,7 +515,9 @@
       "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-08"
+      "updated_or_year": "2025-08",
+      "paper_path": "papers/2025_MDKV/",
+      "zenodo_url": ""
     },
     {
       "name": "p3if",
@@ -441,7 +527,9 @@
       "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-01"
+      "updated_or_year": "2026-01",
+      "paper_path": "papers/2023_P3IF/",
+      "zenodo_url": ""
     },
     {
       "name": "service",
@@ -451,7 +539,9 @@
       "description": "Service-layer infrastructure and API tooling for Python-based research applications",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-05"
+      "updated_or_year": "2025-05",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "snake",
@@ -461,7 +551,9 @@
       "description": "Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-11"
+      "updated_or_year": "2025-11",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "steganographer",
@@ -471,7 +563,9 @@
       "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
       "language": "Rust",
       "stars": 1,
-      "updated_or_year": "2026-04"
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "blake_jiang",
@@ -481,7 +575,9 @@
       "description": "William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-05"
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2026_BlakeJiang/",
+      "zenodo_url": ""
     },
     {
       "name": "symergetics",
@@ -491,7 +587,9 @@
       "description": "Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-09"
+      "updated_or_year": "2025-09",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "transformer",
@@ -501,7 +599,9 @@
       "description": "Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025-10"
+      "updated_or_year": "2025-10",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveInferenceJournal",
@@ -511,7 +611,9 @@
       "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
       "language": "HTML",
       "stars": 42,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveBlockference",
@@ -521,7 +623,9 @@
       "description": "Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework",
       "language": "Jupyter",
       "stars": 32,
-      "updated_or_year": "2023"
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveInferAnts",
@@ -531,7 +635,9 @@
       "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
       "language": "Python",
       "stars": 28,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "GeneralizedNotationNotation",
@@ -541,7 +647,9 @@
       "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
       "language": "Python",
       "stars": 24,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19600217"
     },
     {
       "name": "fep_lean",
@@ -551,7 +659,9 @@
       "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026"
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_FEPLean/",
+      "zenodo_url": ""
     },
     {
       "name": "cognitive",
@@ -561,7 +671,9 @@
       "description": "Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization",
       "language": "Python",
       "stars": 18,
-      "updated_or_year": "2025"
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Active_Inference_Ontology",
@@ -571,7 +683,9 @@
       "description": "Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts",
       "language": "",
       "stars": 13,
-      "updated_or_year": "2023"
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Journal-Utilities",
@@ -581,7 +695,9 @@
       "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
       "language": "HTML",
       "stars": 11,
-      "updated_or_year": "2026"
+      "updated_or_year": "2026",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.18686966"
     },
     {
       "name": "Symposium",
@@ -591,7 +707,9 @@
       "description": "Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia",
       "language": "Python",
       "stars": 11,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveInferenceCategoryTheory",
@@ -601,7 +719,9 @@
       "description": "Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory",
       "language": "",
       "stars": 10,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "CEREBRUM",
@@ -611,7 +731,9 @@
       "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
       "language": "Python",
       "stars": 12,
-      "updated_or_year": "2025"
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "GEO-INFER",
@@ -621,7 +743,9 @@
       "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
       "language": "HTML",
       "stars": 9,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "AEOS",
@@ -631,7 +755,9 @@
       "description": "Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models",
       "language": "",
       "stars": 8,
-      "updated_or_year": "2022"
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "courses",
@@ -641,7 +767,9 @@
       "description": "Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts",
       "language": "HTML",
       "stars": 8,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Research-Discovery-Engine",
@@ -651,7 +779,9 @@
       "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature",
       "language": "HTML",
       "stars": 6,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Parr_et_al_2022_ActInf_Textbook",
@@ -661,7 +791,9 @@
       "description": "Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)",
       "language": "Julia",
       "stars": 6,
-      "updated_or_year": "2023"
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Biofirm",
@@ -671,7 +803,9 @@
       "description": "Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems",
       "language": "Python",
       "stars": 5,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Start",
@@ -681,7 +815,9 @@
       "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants",
       "language": "Python",
       "stars": 5,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Knowledge-Engineering",
@@ -691,7 +827,9 @@
       "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
       "language": "Jupyter",
       "stars": 4,
-      "updated_or_year": "2022"
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActInf_RxInfer",
@@ -701,7 +839,9 @@
       "description": "Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models",
       "language": "",
       "stars": 2,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "pymcp",
@@ -711,7 +851,9 @@
       "description": "PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2025"
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "GEN24",
@@ -721,7 +863,9 @@
       "description": "GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort",
       "language": "Jupyter",
       "stars": 1,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "NoOrg",
@@ -731,7 +875,9 @@
       "description": "NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions",
       "language": "HTML",
       "stars": 1,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ultralink",
@@ -741,7 +887,9 @@
       "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
       "language": "",
       "stars": 1,
-      "updated_or_year": "2025"
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveInferenceImplementations",
@@ -751,7 +899,9 @@
       "description": "Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles",
       "language": "Jupyter",
       "stars": 0,
-      "updated_or_year": "2022"
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ATLAS",
@@ -761,7 +911,9 @@
       "description": "Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2025"
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Bots",
@@ -771,7 +923,9 @@
       "description": "Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2022"
+      "updated_or_year": "2022",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "Garden-of-Iris",
@@ -781,7 +935,9 @@
       "description": "Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2023"
+      "updated_or_year": "2023",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "gen25",
@@ -791,7 +947,9 @@
       "description": "GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2025"
+      "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "gnn",
@@ -801,7 +959,9 @@
       "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ISSS",
@@ -811,7 +971,9 @@
       "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "topp",
@@ -821,7 +983,9 @@
       "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
       "language": "TeX",
       "stars": 0,
-      "updated_or_year": "2024"
+      "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
     }
   ]
 }

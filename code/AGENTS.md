@@ -42,10 +42,11 @@ Other orchestrators (external links, sitemap, visual QA, GitHub inventory, etc.)
 Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency order:
 
 1. Bibliography edits — `papers/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
-2. Software or claims edits — `export_agent_data.py`, then evidence/catalog/search exports.
-3. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
-4. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
-5. Health gate — `validate_repo.py` (includes count-consistency check).
+2. Software catalog edits — `papers/sync_software_html.py --apply`, `export_agent_data.py`, then domain/search/catalog exports.
+3. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.
+4. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
+5. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
+6. Health gate — `validate_repo.py` (includes count-consistency check).
 
 ## Tests
 

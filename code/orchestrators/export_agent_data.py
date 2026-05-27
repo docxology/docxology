@@ -13,9 +13,15 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+PAPERS_DIR = REPO_ROOT / "papers"
+sys.path.insert(0, str(PAPERS_DIR))
+
+from software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
+
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
 SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
 
@@ -58,53 +64,8 @@ except ImportError:  # pragma: no cover - package import path
     from .report_paths import generated_timestamp, latest_report, rel
 
 
-def strip_md(value: str) -> str:
-    value = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1", value)
-    value = re.sub(r"<[^>]+>", "", value)
-    value = value.replace("📄", "").strip()
-    return re.sub(r"\s*[·;,-]\s*$", "", value).strip()
-
-
-def parse_link_cell(cell: str) -> tuple[str, str]:
-    m = re.search(r"\[([^\]]+)\]\((https?://[^)]+)\)", cell)
-    if not m:
-        return strip_md(cell), ""
-    return m.group(1), m.group(2)
-
-
 def parse_software() -> list[dict]:
-    text = SOFTWARE_MD.read_text(encoding="utf-8")
-    rows: list[dict] = []
-    section = ""
-    for line in text.splitlines():
-        if line.startswith("## 🧬"):
-            section = "docxology"
-        elif line.startswith("### 🏛️"):
-            section = "active-inference-institute"
-        if not section or not line.startswith("| ["):
-            continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) != 5:
-            continue
-        name, url = parse_link_cell(cells[0])
-        description = strip_md(cells[1])
-        try:
-            stars = int(re.sub(r"[^0-9]", "", cells[3]) or "0")
-        except ValueError:
-            stars = 0
-        rows.append(
-            {
-                "name": name,
-                "url": url,
-                "owner": "docxology" if section == "docxology" else "ActiveInferenceInstitute",
-                "catalog_section": section,
-                "description": description,
-                "language": cells[2] if cells[2] != "—" else "",
-                "stars": stars,
-                "updated_or_year": cells[4],
-            }
-        )
-    return rows
+    return [software_rows_to_dict(row) for row in iter_software_rows(SOFTWARE_MD)]
 
 
 PEOPLE = [

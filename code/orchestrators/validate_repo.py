@@ -34,6 +34,7 @@ def validate_json_files() -> None:
         "data/artworks.json",
         "data/works.json",
         "data/work-enrichment.json",
+        "data/software-ld.json",
         "data/software.json",
         "data/people.json",
         "data/organizations.json",
@@ -142,6 +143,7 @@ def validate_sitemap_targets() -> None:
 
 def main() -> None:
     run(["python3", "papers/sync_publications_html.py"])
+    run(["python3", "papers/sync_software_html.py"])
     run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
     run(["python3", "code/orchestrators/export_agent_data.py", "--check"])
     run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])

@@ -75,8 +75,14 @@ ARTIFACTS = [
     {
         "name": "Agent data exports",
         "outputs": ["data/software.json", "data/people.json", "data/organizations.json", "data/claims.json"],
-        "sources": ["pages/SOFTWARE.md", "data/scholar-snapshot.json", "code/orchestrators/export_agent_data.py"],
+        "sources": ["pages/SOFTWARE.md", "papers/software_table.py", "data/scholar-snapshot.json", "code/orchestrators/export_agent_data.py"],
         "command": "python3 code/orchestrators/export_agent_data.py",
+    },
+    {
+        "name": "Software catalog HTML sync",
+        "outputs": ["software.html", "data/software-ld.json"],
+        "sources": ["pages/SOFTWARE.md", "papers/software_table.py", "papers/sync_software_html.py"],
+        "command": "python3 papers/sync_software_html.py --apply",
     },
     {
         "name": "Full GitHub repository inventory",

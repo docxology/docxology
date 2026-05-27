@@ -397,6 +397,7 @@ thead th { -webkit-user-select: none; user-select: none; }
         .lang-HTML{background:#e34c26}
         .lang-TeX{background:#3D6117}
         .lang-Jupyter{background:#DA5B0B}
+        .lang-RichTextFormat{background:#888888}
 .collab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px, 1fr));gap:1.25rem}
         .collab-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;display:flex;flex-direction:column;transition:all .2s;align-items:flex-start}
         .collab-card:hover{border-color:var(--border-hover);transform:translateY(-2px)}

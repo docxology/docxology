@@ -33,6 +33,7 @@
 - Maps papers to associated software repositories in SOFTWARE.md
 - Connects related papers across domains
 - When the unified bibliography count or table order changes, run [`sync_publications_html.py`](sync_publications_html.py) so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md); run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for the interactive catalog in `data/works.json`.
+- When [`pages/SOFTWARE.md`](../pages/SOFTWARE.md) catalog rows or counts change, run [`sync_software_html.py`](sync_software_html.py) with `--apply` so [software.html](../software.html) repo grids and [`data/software-ld.json`](../data/software-ld.json) **mainEntity** stay aligned; run [`export_agent_data.py`](../code/orchestrators/export_agent_data.py) for `data/software.json`.
 
 ---
 

@@ -1,0 +1,909 @@
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Software — Daniel Ari Friedman, PhD",
+    "description": "50 original repositories and 32 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
+    "author": {
+        "@type": "Person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+    },
+    "mainEntity": [
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template",
+            "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
+            "codeRepository": "https://github.com/docxology/template",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "QuadCraft",
+            "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
+            "codeRepository": "https://github.com/docxology/QuadCraft",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "JavaScript"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "MetaInformAnt",
+            "description": "Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond",
+            "codeRepository": "https://github.com/docxology/MetaInformAnt",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "codomyrmex",
+            "description": "AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+            "codeRepository": "https://github.com/docxology/codomyrmex",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "cognitive-engine",
+            "description": "Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning",
+            "codeRepository": "https://github.com/docxology/cognitive-engine",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "opentir",
+            "description": "Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations",
+            "codeRepository": "https://github.com/docxology/opentir",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "timeline_generator",
+            "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
+            "codeRepository": "https://github.com/docxology/timeline_generator",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TypeScript"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "FORMINDEX",
+            "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation",
+            "codeRepository": "https://github.com/docxology/FORMINDEX",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Rich Text Format"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActiveInferAnts",
+            "description": "Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy",
+            "codeRepository": "https://github.com/docxology/ActiveInferAnts",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "crescent-city",
+            "description": "End-to-end pipeline for ingesting, parsing, and querying the Crescent City, CA municipal code; TypeScript-based legal-text processing",
+            "codeRepository": "https://github.com/docxology/crescent-city",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TypeScript"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ivm-xyz",
+            "description": "Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations",
+            "codeRepository": "https://github.com/docxology/ivm-xyz",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Markov_Blanket_Detection",
+            "description": "Dynamic Markov Blanket Detection (DMBD) — PyTorch-accelerated framework for identifying causal relationships in complex systems; static and temporal modes with cognitive-structure labeling",
+            "codeRepository": "https://github.com/docxology/Markov_Blanket_Detection",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "QuadMath",
+            "description": "Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library",
+            "codeRepository": "https://github.com/docxology/QuadMath",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "active_inference",
+            "description": "Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling",
+            "codeRepository": "https://github.com/docxology/active_inference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "AgenticMesh",
+            "description": "Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles",
+            "codeRepository": "https://github.com/docxology/AgenticMesh",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "curriculum",
+            "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science",
+            "codeRepository": "https://github.com/docxology/curriculum",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "lean_niche",
+            "description": "Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics",
+            "codeRepository": "https://github.com/docxology/lean_niche",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "literature",
+            "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+            "codeRepository": "https://github.com/docxology/literature",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "obsidian-construction-from-text",
+            "description": "Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs",
+            "codeRepository": "https://github.com/docxology/obsidian-construction-from-text",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "qr_live_protocol",
+            "description": "QR code-based live protocol system for real-time data exchange and interactive session management",
+            "codeRepository": "https://github.com/docxology/qr_live_protocol",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ultralink-docx",
+            "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
+            "codeRepository": "https://github.com/docxology/ultralink-docx",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "cognitive",
+            "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
+            "codeRepository": "https://github.com/docxology/cognitive",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "active_torchference",
+            "description": "PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization",
+            "codeRepository": "https://github.com/docxology/active_torchference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ant-pheromone",
+            "description": "Computational simulation of ant pheromone trail dynamics and stigmergic communication",
+            "codeRepository": "https://github.com/docxology/ant-pheromone",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ant_stack",
+            "description": "The Ant Stack — layered computational model of collective ant-colony intelligence",
+            "codeRepository": "https://github.com/docxology/ant_stack",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ento_linguistics",
+            "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
+            "codeRepository": "https://github.com/docxology/ento_linguistics",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "cognitive_case_diagrams",
+            "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript",
+            "codeRepository": "https://github.com/docxology/cognitive_case_diagrams",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+            "description": "Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment",
+            "codeRepository": "https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Julia"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "biol-1",
+            "description": "BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
+            "codeRepository": "https://github.com/docxology/biol-1",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "biol-8",
+            "description": "BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
+            "codeRepository": "https://github.com/docxology/biol-8",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "biology_textbook",
+            "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
+            "codeRepository": "https://github.com/docxology/biology_textbook",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20286478"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "cascadia",
+            "description": "Cascadia bioregion modeling and data analysis tools",
+            "codeRepository": "https://github.com/docxology/cascadia",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "course",
+            "description": "Course materials framework for structured interdisciplinary learning modules",
+            "codeRepository": "https://github.com/docxology/course",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "enactive_inference_model",
+            "description": "Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures",
+            "codeRepository": "https://github.com/docxology/enactive_inference_model",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "EvoJump",
+            "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
+            "codeRepository": "https://github.com/docxology/EvoJump",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "flick",
+            "description": "Lightweight Python tooling for rapid data flicking and processing pipelines",
+            "codeRepository": "https://github.com/docxology/flick",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "fuller-obsidian",
+            "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science",
+            "codeRepository": "https://github.com/docxology/fuller-obsidian",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "godel_ivm",
+            "description": "Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products",
+            "codeRepository": "https://github.com/docxology/godel_ivm",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "goference",
+            "description": "Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum",
+            "codeRepository": "https://github.com/docxology/goference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Go"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "hhs-opendata",
+            "description": "Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines",
+            "codeRepository": "https://github.com/docxology/hhs-opendata",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "infra-calc",
+            "description": "Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems",
+            "codeRepository": "https://github.com/docxology/infra-calc",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "JavaScript"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "markdown_decision_process",
+            "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning",
+            "codeRepository": "https://github.com/docxology/markdown_decision_process",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "mdkv",
+            "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents",
+            "codeRepository": "https://github.com/docxology/mdkv",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "p3if",
+            "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+            "codeRepository": "https://github.com/docxology/p3if",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "service",
+            "description": "Service-layer infrastructure and API tooling for Python-based research applications",
+            "codeRepository": "https://github.com/docxology/service",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "snake",
+            "description": "Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms",
+            "codeRepository": "https://github.com/docxology/snake",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "steganographer",
+            "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+            "codeRepository": "https://github.com/docxology/steganographer",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Rust"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "blake_jiang",
+            "description": "William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing",
+            "codeRepository": "https://github.com/docxology/blake_jiang",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "symergetics",
+            "description": "Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics",
+            "codeRepository": "https://github.com/docxology/symergetics",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "transformer",
+            "description": "Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research",
+            "codeRepository": "https://github.com/docxology/transformer",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActiveInferenceJournal",
+            "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActiveBlockference",
+            "description": "Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Jupyter"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActiveInferAnts",
+            "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "GeneralizedNotationNotation",
+            "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.19600217"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "fep_lean",
+            "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_lean",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "cognitive",
+            "description": "Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/cognitive",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Active_Inference_Ontology",
+            "description": "Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Journal-Utilities",
+            "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML",
+            "sameAs": "https://doi.org/10.5281/zenodo.18686966"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Symposium",
+            "description": "Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Symposium",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActiveInferenceCategoryTheory",
+            "description": "Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "CEREBRUM",
+            "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "GEO-INFER",
+            "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "AEOS",
+            "description": "Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/AEOS",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "courses",
+            "description": "Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/courses",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Research-Discovery-Engine",
+            "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Parr_et_al_2022_ActInf_Textbook",
+            "description": "Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Julia"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Biofirm",
+            "description": "Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Biofirm",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Start",
+            "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Start",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Knowledge-Engineering",
+            "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Jupyter"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActInf_RxInfer",
+            "description": "Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActInf_RxInfer",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "pymcp",
+            "description": "PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/pymcp",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "GEN24",
+            "description": "GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/GEN24",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Jupyter"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "NoOrg",
+            "description": "NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/NoOrg",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ultralink",
+            "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ultralink",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ActiveInferenceImplementations",
+            "description": "Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Jupyter"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ATLAS",
+            "description": "Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ATLAS",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Bots",
+            "description": "Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Bots",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "Garden-of-Iris",
+            "description": "Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Garden-of-Iris",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "gen25",
+            "description": "GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/gen25",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "gnn",
+            "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/gnn",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ISSS",
+            "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/ISSS",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "topp",
+            "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/topp",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        }
+    ]
+}

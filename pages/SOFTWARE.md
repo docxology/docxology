@@ -146,9 +146,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Data & Policy | 2 | `hhs-opendata`, `crescent-city` |
 | Education | 4 | `literature`, `curriculum`, `course`, `lean_niche` |
 | Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
-| **docxology subtotal** | **49** | |
+| **docxology subtotal** | **50** | |
 | AII Contributions (non-fork) | 32 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **81** | |
+| **Grand Total** | **82** | |
 
 > *For 286 total public repositories including personal forks, see the [generated full inventory](../repositories.html) or the [GitHub profile](https://github.com/docxology?tab=repositories). AII catalog count includes source repositories with docxology contributions; the [AII GitHub API](https://api.github.com/users/ActiveInferenceInstitute) returned 50 public organization repositories on 2026-05-15, including org-level forks and adjacent projects. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

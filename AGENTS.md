@@ -41,6 +41,7 @@
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
 - Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
+- Runs [sync_software_html.py](papers/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
 - Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **110** folders as of 2026-05-26)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
@@ -187,6 +188,7 @@ docxology/
 | 2026-05-16 | MAINTAINER | Integrity-remediation pass (independent 12-source verification): introduced dated Scholar-metrics snapshot (`data/scholar-snapshot.json`) + `sync_scholar_metrics.py` generator, corrected citation figure 812→**764** (live dual-fetch, as of 2026-05-16) across all surfaces and the claims ledger, replaced the "do not overwrite" caveat with a provenance-envelope rule; added primary-source anchors (AII EIN 88-2985125 / ProPublica / IRS ruling March 2024; NSF award DBI-2010290); clarified officer roster (Mikhailova VP+Secretary 2025–; Knight prior Secretary / current Board); softened unverifiable specifics (Christie's lot first-party-only, SAB "2026 cohort", NSF 2020–2022 budget vs 2023 affiliation, "107 indexed pubs"); fixed dead `nft.html`→`art.html`; noted dual Scholar ID + AII-User-not-Org; synced codomyrmex 127/424→**128/600**; added `pages/VERIFICATION_LOG.md` + `data/verification-log.json` | ✅ |
 | 2026-05-26 | MAINTAINER | Thermo-nuclear + web stack pass: count drift guard (`code/src/count_consistency.py`), `publications.html` shell loads `data/works.json` via `js/publications.js`, CollectionPage JSON-LD externalized to `data/publications-ld.json`, `docs/SECURITY.md` + `docs/DESIGN_SYSTEM.md`, shared nav (`code/src/site_nav.py`) on work + domain pages | ✅ |
 | 2026-05-26 | ARCHIVIST | Added `2026_BiologyTextbook` (DOI 10.5281/zenodo.20286478); Computational 7→8; Books 3→4; bibliography 116→117 (row 117); paper folders and metadata 109→110; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications + works.json resynced | ✅ |
+| 2026-05-26 | INTEGRATOR | Added `papers/software_table.py` + `papers/sync_software_html.py`: full 82-row `software.html` repo grids + `data/software-ld.json` from `pages/SOFTWARE.md`; `biology_textbook` on software surface; SOFTWARE.md subtotal 49→50; domain/work cross-links | ✅ |
 
 ---
 
@@ -200,12 +202,14 @@ docxology/
 - AII Textbook Group site copy: 10 cohorts through 2026; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
 - On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
 - After substantive repo edits, run `uv run pytest` in `code/tests` (Python via `uv`) to confirm the suite still passes.
+- Prefer full-catalog regeneration of `software.html` from `pages/SOFTWARE.md` (all owned + AII catalog rows, not a highlight subset), mirroring the publications.html / `sync_publications_html.py` pattern.
 
 ## Learned Workspace Facts
 
 - Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).
-- **Volatile totals** (works count, indexed paper-folder count, Type-column breakdowns): treat `pages/BIBLIOGRAPHY.md` (header/summary/table) plus `papers/README.md` / `papers/AGENTS.md` as canonical before repeating numbers in root `README.md`, `docs/AGENTS.md`, or Maintainer bullets in root `AGENTS.md`—those surfaces often drift unless cross-checked together.
+- **Volatile totals** (works count, indexed paper-folder count, Type-column breakdowns): treat `pages/BIBLIOGRAPHY.md` (header, blockquote summary, and table) plus `papers/README.md` / `papers/AGENTS.md` as canonical before repeating numbers in root `README.md`, `docs/AGENTS.md`, or Maintainer bullets in root `AGENTS.md`; keep BIBLIOGRAPHY header and blockquote summary counts aligned—`code/src/count_consistency.py` (via `validate_repo.py`) flags drift against llms.txt, README, publications.html, and `data/works.json`.
 - Regenerate `publications.html` head meta and `data/publications-ld.json` (**mainEntity**) from `pages/BIBLIOGRAPHY.md` via `papers/sync_publications_html.py --apply` after table edits; catalog UI loads `data/works.json` via `js/publications.js`. Run `export_bibliography.py` when works.json must refresh. The **INTEGRATOR** role in `papers/AGENTS.md` keeps publications surfaces aligned when totals change.
+- Regenerate `software.html` repo grids and `data/software-ld.json` (**mainEntity**) from `pages/SOFTWARE.md` via `papers/sync_software_html.py --apply` after catalog edits; run `export_agent_data.py` for `data/software.json`. Full-catalog sync (50 owned + 32 AII rows), not a highlight subset.
 - `discovery.html` is the canonical website discovery HTML; pair with agent-facing `pages/DISCOVERY.md` and `llms.txt`. Machine-readable citations/software: `CITATION.cff` and `codemeta.json`.
 - `code/orchestrators/export_bibliography.py` emits `bibliography.bib`, `bibliography.csl.json`, `bibliography.ris`, and `data/works.json` from `pages/BIBLIOGRAPHY.md`. `code/orchestrators/export_agent_data.py` generates `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json`.
 - **Google Scholar** single source of truth: `data/scholar-snapshot.json`, propagated by `code/orchestrators/sync_scholar_metrics.py` (idempotent; `--check` exits 1 on drift). `export_agent_data.py` reads the snapshot for claims. Publish only after a **direct** (non-anonymous/non-cached UI) Scholar verify: update snapshot (`as_of`, `method`, append to `history`), run the sync orchestrator, regenerate `data/claims.json` and the evidence page; never publish a citation count above the latest direct-fetch value. Public metrics use profile `DXjPFtYAAAAJ`; ORCID also links `Y2bMf3MAAAAJ`—consolidate to avoid split graphs.

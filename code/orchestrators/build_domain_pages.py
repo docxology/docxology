@@ -106,7 +106,17 @@ DOMAINS = [
         short_title="Computational",
         description="Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.",
         domains=("💻",),
-        repo_names=("template", "mdkv", "markdown_decision_process", "steganographer", "timeline_generator", "codomyrmex"),
+        repo_names=(
+            "template",
+            "mdkv",
+            "markdown_decision_process",
+            "steganographer",
+            "timeline_generator",
+            "codomyrmex",
+            "biology_textbook",
+            "biol-1",
+            "biol-8",
+        ),
         learning_path=(
             "Start with the reproducible generative research template.",
             "Use MDKV and Markdown Decision Process for structured document work.",

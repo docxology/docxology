@@ -136,6 +136,23 @@ def local_docs_link(path: str) -> str:
     return f"../{path.rstrip('/')}/" if path else "../publications.html"
 
 
+def source_repository_url(docs_path: str) -> str:
+    if not docs_path:
+        return ""
+    meta_path = REPO_ROOT / docs_path / "metadata.json"
+    if not meta_path.is_file():
+        return ""
+    try:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return ""
+    for item in meta.get("related_resources", []):
+        url = item.get("url", "")
+        if item.get("type") == "repository" and url.startswith("https://github.com/"):
+            return url
+    return ""
+
+
 def citation_text(work: dict) -> str:
     venue = f" {work['venue']}." if work.get("venue") else ""
     return f"Friedman, Daniel Ari. {work['year']}. {work['title']}.{venue}"
@@ -249,6 +266,12 @@ def render_work_page(work: dict) -> str:
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     docs = local_docs_link(work.get("docs_path", ""))
     primary = work.get("url") or "../publications.html"
+    source_repo = source_repository_url(work.get("docs_path", ""))
+    source_repo_btn = (
+        f'<a class="btn btn-outline" href="{h(source_repo)}">Source repository</a>'
+        if source_repo
+        else ""
+    )
     enrich = work.get("enrichment", {})
     abstract = enrich.get("abstract", "")
     keywords = enrich.get("keywords", [])
@@ -299,6 +322,7 @@ def render_work_page(work: dict) -> str:
             <p class="text-center mt-2">
                 <a class="btn btn-gold" href="{h(primary)}">Primary source</a>
                 <a class="btn btn-outline" href="{h(docs)}">Documentation</a>
+                {source_repo_btn}
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>
         </section>

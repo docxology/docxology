@@ -117,7 +117,7 @@ Weekend-long hackathons addressing pressing problems using complexity science, f
 
 ## Teaching
 
-Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **BIOL-1: General Biology** (Pelican Bay) and **BIOL-8: Human Biology** (Spring 2026). He has developed online courses (Udemy: Communication for Remote Teams, Keybase for Remote Teams), and offers extensive private tutoring and mentorship in Active Inference, Bayesian methods, scientific writing, and computational tools. Through the Active Inference Institute, he has facilitated 500+ livestream sessions and study groups.
+Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **BIOL-1: General Biology** (Pelican Bay) and **BIOL-8: Human Biology** (Spring 2026). He maintains [*Introduction to Biology: A Generative Approach*](../papers/2026_BiologyTextbook/) as an open textbook ([Zenodo 10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478); source at [docxology/biology_textbook](https://github.com/docxology/biology_textbook)). He has developed online courses (Udemy: Communication for Remote Teams, Keybase for Remote Teams), and offers extensive private tutoring and mentorship in Active Inference, Bayesian methods, scientific writing, and computational tools. Through the Active Inference Institute, he has facilitated 500+ livestream sessions and study groups.
 
 ---
 
