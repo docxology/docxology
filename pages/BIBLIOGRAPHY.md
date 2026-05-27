@@ -30,7 +30,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**105** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Seriessssssss
+**105** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
 
 > **124** works in the table below **·** **117** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
@@ -156,13 +156,12 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 116 | 2026 | 🛡️ | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | *Zenodo* | [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171) | [📁](../papers/2026_CrescentCity/) |
 | 117 | 2026 | 💻 | Book | Introduction to Biology: A Generative Approach | *Zenodo* | [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478) | [📁](../papers/2026_BiologyTextbook/) |
 | 118 | 2025 | 💻 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | *Zenodo* | [10.5281/zenodo.15231156](https://doi.org/10.5281/zenodo.15231156) | [📁](../papers/2025_CEREBRUM2/) |
-| 119 | 2026 | 💻 | Paper | Policy Entanglement in Active Inference | *Zenodo* | [10.5281/zenodo.20419186](https://doi.org/10.5281/zenodo.20419186) | [📁](../papers/2026_PolicyEntanglementActive/) |
+| 119 | 2026 | 💻 | Paper | Policy Entanglement in Active Inference | *Zenodo* | [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637) | [📁](../papers/2026_PolicyEntanglementActive/) |
 | 120 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20417017](https://doi.org/10.5281/zenodo.20417017) | [📁](../papers/2026_BoundedAutoResearchTiny/) |
 | 121 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20417137](https://doi.org/10.5281/zenodo.20417137) | [📁](../papers/2026_ConvergenceAnalysisGradient/) |
 | 122 | 2026 | 💻 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | *Zenodo* | [10.5281/zenodo.20417105](https://doi.org/10.5281/zenodo.20417105) | [📁](../papers/2026_EditorialQualityAt/) |
 | 123 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20419084](https://doi.org/10.5281/zenodo.20419084) | [📁](../papers/2026_TemplateApproachReproducible/) |
 | 124 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20417022](https://doi.org/10.5281/zenodo.20417022) | [📁](../papers/2026_ActiveInferenceMulti/) |
-
 ---
 
 ## Domain Index

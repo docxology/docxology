@@ -41,6 +41,14 @@ BIBLIOGRAPHY = "pages/BIBLIOGRAPHY.md"
 SOFTWARE = "pages/SOFTWARE.md"
 PAPER_METADATA = "papers/paper_metadata.json"
 TYPE_COUNTS_ORDER = ("Paper", "Presentation", "Book", "Course", "Playbook", "Series")
+TYPE_LABELS = {
+    "Paper": "Papers",
+    "Presentation": "Presentations",
+    "Book": "Books",
+    "Course": "Courses",
+    "Playbook": "Playbooks",
+    "Series": "Series",
+}
 
 
 @dataclass(frozen=True)
@@ -214,6 +222,31 @@ def existing_doi_map(repo_root: Path = REPO_ROOT) -> dict[str, str]:
     return {row["doi"]: row["folder"] for row in parse_bibliography_rows(repo_root) if row["doi"] and row["folder"]}
 
 
+def _pair_key(title: str, github_release_url: str) -> tuple[str, str]:
+    normalized_title = re.sub(r"\s+", " ", title.strip().lower())
+    return normalized_title, github_release_url.strip()
+
+
+def existing_release_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], str]:
+    out: dict[tuple[str, str], str] = {}
+    papers_dir = repo_root / "papers"
+    if not papers_dir.exists():
+        return out
+    for folder_path in sorted(path for path in papers_dir.iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name)):
+        metadata_path = folder_path / "metadata.json"
+        if not metadata_path.exists():
+            continue
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        title = str(metadata.get("title") or "")
+        release_url = str(metadata.get("github_release_url") or "")
+        if title and release_url:
+            out.setdefault(_pair_key(title, release_url), folder_path.name)
+    return out
+
+
 def slug_topic(title: str) -> str:
     head = title.split(":", 1)[0]
     words = re.findall(r"[A-Za-z0-9]+", head)
@@ -228,6 +261,9 @@ def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
     existing = existing_doi_map(repo_root).get(pair.doi)
     if existing:
         return existing
+    existing_by_release = existing_release_title_map(repo_root).get(_pair_key(pair.record.title, pair.github_release_url))
+    if existing_by_release:
+        return existing_by_release
     year_match = re.search(r"\d{4}", pair.record.publication_date or pair.release.published_at)
     year = year_match.group(0) if year_match else str(dt.datetime.now().year)
     base = f"{year}_{slug_topic(pair.record.title)}"
@@ -288,15 +324,20 @@ def infer_domain(pair: PublicationPair) -> str | None:
 
 def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_ROOT) -> list[SyncAction]:
     doi_to_folder = existing_doi_map(repo_root)
+    release_title_to_folder = existing_release_title_map(repo_root)
     actions: list[SyncAction] = []
     for pair in pairs:
-        folder = doi_to_folder.get(pair.doi) or folder_for_pair(pair, repo_root)
+        release_title_folder = release_title_to_folder.get(_pair_key(pair.record.title, pair.github_release_url))
+        folder = doi_to_folder.get(pair.doi) or release_title_folder or folder_for_pair(pair, repo_root)
         if pair.confidence != "strong":
             action_type = "needs_review"
             reason = "pair lacks DOI/release cross-link evidence required for automatic apply"
         elif pair.doi in doi_to_folder:
             action_type = "update_existing"
             reason = "DOI already exists in bibliography; update folder metadata and software links"
+        elif release_title_folder:
+            action_type = "update_existing"
+            reason = "same title and GitHub release already exist; update Zenodo version metadata"
         elif not infer_type(pair.record) or not infer_domain(pair):
             action_type = "needs_review"
             reason = "new pair is strong, but type or domain cannot be inferred safely"
@@ -586,6 +627,25 @@ def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[st
     text = _safe_read(path)
     if pair.doi in text:
         return
+    folder_link = f"../papers/{folder}/"
+    out_lines: list[str] = []
+    replaced = False
+    for line in text.splitlines():
+        if line.startswith("|") and folder_link in line:
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if len(cells) >= 8 and cells[0].isdigit():
+                cells[4] = pair.record.title
+                cells[5] = "*Zenodo*"
+                cells[6] = f"[{pair.doi}](https://doi.org/{pair.doi})"
+                cells[7] = f"[📁](../papers/{folder}/)"
+                line = "| " + " | ".join(cells[:8]) + " |"
+                replaced = True
+        out_lines.append(line)
+    if replaced:
+        out = "\n".join(out_lines).rstrip() + "\n"
+        out = refresh_bibliography_counts(out)
+        _write_if_changed(path, out, updated, repo_root)
+        return
     rows = parse_bibliography_rows(repo_root)
     next_num = max([int(row["num"]) for row in rows], default=0) + 1
     year = (pair.record.publication_date or "")[:4] or (pair.release.published_at or "")[:4] or "n.d."
@@ -629,9 +689,13 @@ def refresh_bibliography_counts(text: str) -> str:
     type_counts = {typ: 0 for typ in TYPE_COUNTS_ORDER}
     for row in rows:
         type_counts[row[3]] = type_counts.get(row[3], 0) + 1
-    summary = " · ".join(f"**{type_counts.get(typ, 0)}** {typ}s" for typ in TYPE_COUNTS_ORDER if type_counts.get(typ, 0))
+    summary = " · ".join(
+        f"**{type_counts.get(typ, 0)}** {TYPE_LABELS.get(typ, typ)}"
+        for typ in TYPE_COUNTS_ORDER
+        if type_counts.get(typ, 0)
+    )
     text = re.sub(
-        r"\*\*\d+\*\* Papers · \*\*\d+\*\* Presentations · \*\*\d+\*\* Books · \*\*\d+\*\* Courses · \*\*\d+\*\* Playbooks · \*\*\d+\*\* Series",
+        r"\*\*\d+\*\* Papers · \*\*\d+\*\* Presentations · \*\*\d+\*\* Books · \*\*\d+\*\* Courses · \*\*\d+\*\* Playbooks · \*\*\d+\*\* Series\w*",
         summary,
         text,
         count=1,
@@ -692,6 +756,8 @@ def update_papers_agents(updated: list[str], repo_root: Path) -> None:
     text = re.sub(r"for \d+ publications", f"for {folder_count} publications", text)
     text = re.sub(r"\(\d+ entries as of [^)]+\)", f"({folder_count} entries as of {dt.date.today().isoformat()})", text)
     text = re.sub(r"README\.md present \| \d+/\d+ folders", f"README.md present | {folder_count}/{folder_count} folders", text)
+    text = re.sub(r"AGENTS\.md present \| \d+/\d+", f"AGENTS.md present | {folder_count}/{folder_count}", text)
+    text = re.sub(r"SKILL\.md present \| \d+/\d+", f"SKILL.md present | {folder_count}/{folder_count}", text)
     _write_if_changed(path, text, updated, repo_root)
 
 
@@ -730,14 +796,21 @@ def apply_publication_pair(
     *,
     repo_root: Path = REPO_ROOT,
     download_files: bool = True,
+    folder: str | None = None,
+    refresh_docs: bool = False,
 ) -> AppliedPublication:
-    folder = folder_for_pair(pair, repo_root)
+    folder = folder or folder_for_pair(pair, repo_root)
     folder_path = repo_root / "papers" / folder
     created = not folder_path.exists()
     updated: list[str] = []
     folder_path.mkdir(parents=True, exist_ok=True)
 
     if created:
+        _write_if_changed(folder_path / "README.md", render_readme(pair, folder), updated, repo_root)
+        _write_if_changed(folder_path / "AGENTS.md", render_agents(pair), updated, repo_root)
+        _write_if_changed(folder_path / "SKILL.md", render_skill(pair, folder), updated, repo_root)
+        _write_if_changed(folder_path / "CITATION.cff", render_citation(pair), updated, repo_root)
+    elif refresh_docs:
         _write_if_changed(folder_path / "README.md", render_readme(pair, folder), updated, repo_root)
         _write_if_changed(folder_path / "AGENTS.md", render_agents(pair), updated, repo_root)
         _write_if_changed(folder_path / "SKILL.md", render_skill(pair, folder), updated, repo_root)
@@ -871,7 +944,12 @@ def main(argv: list[str] | None = None) -> int:
         for action, pair in zip(actions, pairs):
             if action.action_type not in {"create_new", "update_existing"}:
                 continue
-            item = apply_publication_pair(pair, download_files=not args.no_download_files)
+            item = apply_publication_pair(
+                pair,
+                download_files=not args.no_download_files,
+                folder=action.folder,
+                refresh_docs=action.reason.startswith("same title and GitHub release"),
+            )
             applied.append(item)
             changed = changed or bool(item.updated_files)
         if changed:

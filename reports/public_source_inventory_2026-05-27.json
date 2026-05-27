@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T22:09:51Z",
+  "generated_at": "2026-05-27T22:58:44Z",
   "date": "2026-05-27",
   "note": "Paginated public-source inventory for review. Use as discovery evidence, not automatic claim replacement.",
   "sections": [
@@ -749,16 +749,16 @@
       "ok": true,
       "items": [
         {
-          "title": "A template/ approach to Reproducible Generative Research",
-          "doi": "10.5281/zenodo.20419084",
-          "publication_date": "2026-05-03",
+          "title": "Policy Entanglement in Active Inference",
+          "doi": "10.5281/zenodo.20419509",
+          "publication_date": "2026",
           "resource_type": "publication",
           "version": "1.0"
         },
         {
-          "title": "Policy Entanglement in Active Inference",
-          "doi": "10.5281/zenodo.20418905",
-          "publication_date": "2026",
+          "title": "A template/ approach to Reproducible Generative Research",
+          "doi": "10.5281/zenodo.20419084",
+          "publication_date": "2026-05-03",
           "resource_type": "publication",
           "version": "1.0"
         },

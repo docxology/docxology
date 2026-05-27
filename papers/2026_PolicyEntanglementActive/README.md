@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20419186.svg)](https://doi.org/10.5281/zenodo.20419186)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20419637.svg)](https://doi.org/10.5281/zenodo.20419637)
 
 ---
 
@@ -14,18 +14,16 @@ Active inference models often need to choose among several policy streams at onc
 
 The central result is a free-energy decomposition that separates ordinary per-stream free energy, coupling preference terms, the coupling normalizer, and the information cost of leaving independence. The decomposition makes multi-information the explicit surcharge paid by a non-factorized policy posterior and shows how coupling strength, compatibility structure, and off-diagonal preference costs enter the same accounting identity. This result supplies the organizing principle for the rest of the paper. It supports an information-geometric reading of the coupled policy family as a path away from the mean-field submanifold, a projection identity that returns the coupled posterior to its independent marginals, a spectral and tensor-train view of dominant coordinated policy modes, a heterogeneous-ensemble coupling-tax bound, and a phase vocabulary for under-coupled, mixed, and highly concentrated policy posteriors. These interpretations are intentionally limited: the manuscript does not claim a neural, clinical, biological, or quantum implementation, and Markov-blanket and tensor-network language is used as scoped modeling analogy unless a specific theorem row or generated artifact supports a stronger statement.
 
-The main decomposition analytic identity is machine-checked in ℝ in the Mathlib-backed Lean layer with an axiom audit and negative controls. A separate stock-Lean boundary fragment remains Mathlib-free and exposes the theorem surface as typed contracts for the Python simulation layer and the manuscript registry, including witness-consuming rows where analytic payloads are deliberately supplied at the boundary. The executable numerical layer remains a Float pipeline, so a verified Float↔ℝ error bridge is still an explicitly open interface rather than an implied proof; conservative interval brackets on the K=2 decomposition sweep certify Float residuals within a widened high-precision envelope (output/reports/float_real_residual.json) without promoting the registry row to proved. The empirical companion uses pymdp and NumPy to sweep coupled policy ensembles, run short and long rollouts, check the projection identity to round-off precision, produce free-energy, entropy, total-correlation, action-distribution, robustness, and adversarial sidecars, and render figures from those artifacts. The manuscript, figures, theorem map, citation registry, notation glossary (\hyperref[sec:notation]{§S6}{=latex}), bibliography, and PDF are regenerated from the same source-owned pipeline, so prose claims are tied to Lean sources, Python witnesses, output metadata, and validation gates rather than maintained by hand.
+The main decomposition analytic identity is machine-checked in ℝ in the Mathlib-backed Lean layer with an axiom audit and negative controls. A separate stock-Lean boundary fragment remains Mathlib-free and exposes the theorem surface as typed contracts for the Python simulation layer and the manuscript registry, including witness-consuming rows where analytic payloads are deliberately supplied at the boundary. The executable numerical layer remains a Float pipeline, so a verified Float↔ℝ error bridge is still an explicitly open interface rather than an implied proof; conservative interval brackets on the K=2 decomposition sweep certify Float residuals within a widened high-precision envelope (output/reports/float_real_residual.json) without promoting the registry row to proved. The empirical companion uses pymdp and NumPy to sweep coupled policy ensembles, run short and long rollouts, check the projection identity to round-off precision, produce free-energy, entropy, total-correlation, action-distribution, robustness, and adversarial sidecars, and render figures from those artifacts. The manuscript, figures, theorem map, citation registry, notation glossary (§S6), bibliography, and PDF are regenerated from the same source-owned pipeline, so prose claims are tied to Lean sources, Python witnesses, output metadata, and validation gates rather than maintained by hand.
 
-All manuscript methods, tests, and documentation are available as open-source software at https://github.com/ActiveInferenceInstitute/policy_entanglement (DOI: https://doi.org/10.5281/zenodo.20419149).
-
----
+All manuscript methods, tests, and documentation are available as open-source software at https://github.com/ActiveInferenceInstitute/policy_entanglement (DOI: https://doi.org/10.5281/zenodo.20419536).
 
 ---
 Associated artifacts
-GitHub release: Policy Entanglement in Active Inference v1.0.0 (https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0)
-DOI: https://doi.org/10.5281/zenodo.20419149
-Zenodo: https://zenodo.org/records/20419149
-PDF SHA-256: d363375628516768cdafef1c8023f729e0da9799a06c5672cd6a78d7c0c7060d
+GitHub release: v1.0.0 (https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0)
+DOI: https://doi.org/10.5281/zenodo.20418904
+Zenodo: https://zenodo.org/records/20418904
+PDF SHA-256: ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde
 
 ## Keywords
 
@@ -35,24 +33,24 @@ active inference · free energy principle · policy inference · mean-field · t
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20419186](https://doi.org/10.5281/zenodo.20419186) |
+| **DOI** | [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637) |
 | **Published** | 2026 |
 | **Version** | 1.0 |
-| **Zenodo record** | https://zenodo.org/records/20419186 |
+| **Zenodo record** | https://zenodo.org/records/20419637 |
 | **GitHub release** | https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/ActiveInferenceInstitute/policy_entanglement |
 
 ## Files
 
-- `Friedman_2026_Policy_d3633756.pdf` - Zenodo PDF
+- `Friedman_2026_Policy_ae7cdd62.pdf` - Zenodo PDF
 
 ## Citation
 
-> Friedman, D. A. (2026). *Policy Entanglement in Active Inference*. Zenodo. https://doi.org/10.5281/zenodo.20419186
+> Friedman, D. A. (2026). *Policy Entanglement in Active Inference*. Zenodo. https://doi.org/10.5281/zenodo.20419637
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/20419186
+- Zenodo record: https://zenodo.org/records/20419637
 - GitHub release: https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0
 - Source repository: https://github.com/ActiveInferenceInstitute/policy_entanglement
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

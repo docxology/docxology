@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T22:18:53Z",
+  "generated_at": "2026-05-27T23:24:35Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "count": 124,
   "works": [
@@ -1664,8 +1664,8 @@
       "type": "Paper",
       "title": "Policy Entanglement in Active Inference",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.20419186",
-      "doi": "10.5281/zenodo.20419186",
+      "url": "https://doi.org/10.5281/zenodo.20419637",
+      "doi": "10.5281/zenodo.20419637",
       "docs_path": "papers/2026_PolicyEntanglementActive/",
       "has_paper_folder": true
     },

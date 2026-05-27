@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T22:09:34.768347+00:00",
+  "generated_at": "2026-05-27T22:58:34.000559+00:00",
   "date": "2026-05-27",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
@@ -39,13 +39,13 @@
     },
     "Zenodo exact-name creator records": {
       "total": 37,
-      "first_title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
-      "first_doi": "10.5281/zenodo.18364119"
+      "first_title": "William Blake &  Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
+      "first_doi": "10.5281/zenodo.7519132"
     },
     "Zenodo ORCID-linked records": {
       "total": 90,
-      "first_title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
-      "first_doi": "10.5281/zenodo.7267947"
+      "first_title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+      "first_doi": "10.5281/zenodo.6904427"
     },
     "Zenodo record 18686966": {
       "title": "ActiveInferenceInstitute/Journal-Utilities: v0.1.0: Hardened, Documented, and Feature-Complete",
@@ -286,8 +286,8 @@
       "ok": true,
       "result": {
         "total": 37,
-        "first_title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
-        "first_doi": "10.5281/zenodo.18364119"
+        "first_title": "William Blake &  Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
+        "first_doi": "10.5281/zenodo.7519132"
       }
     },
     {
@@ -296,8 +296,8 @@
       "ok": true,
       "result": {
         "total": 90,
-        "first_title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
-        "first_doi": "10.5281/zenodo.7267947"
+        "first_title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+        "first_doi": "10.5281/zenodo.6904427"
       }
     },
     {

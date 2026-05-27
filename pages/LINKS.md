@@ -208,7 +208,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 110 per-paper folders with documentation |
+| [papers/](../papers/) | 117 per-paper folders with documentation |
 
 ---
 

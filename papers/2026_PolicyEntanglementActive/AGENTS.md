@@ -1,7 +1,7 @@
 # AGENTS.md - Policy Entanglement in Active Inference
 
 **Paper**: Policy Entanglement in Active Inference (2026)
-**DOI**: [10.5281/zenodo.20419186](https://doi.org/10.5281/zenodo.20419186)
+**DOI**: [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637)
 **GitHub release**: https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0
 
 ---
@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20419186
+- **Zenodo record**: https://zenodo.org/records/20419637
 - **GitHub release**: https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0
-- **Pairing evidence**: zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap
+- **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

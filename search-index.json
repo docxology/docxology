@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T22:18:54Z",
+  "generated_at": "2026-05-27T23:24:42Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -3075,7 +3075,7 @@
       "type": "work",
       "title": "Policy Entanglement in Active Inference",
       "url": "/works/Friedman2026PolicyEntanglementActiveInference119.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20419186",
+      "external_url": "https://doi.org/10.5281/zenodo.20419637",
       "summary": "Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Stan",
       "year": 2026,
       "domain": "Computational",
@@ -3092,7 +3092,7 @@
         "Schmidt rank",
         "tensor networks"
       ],
-      "content": "Policy Entanglement in Active Inference Zenodo 10.5281/zenodo.20419186 Friedman2026PolicyEntanglementActiveInference119 Computational Paper Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameteri active inference free energy principle policy inference mean-field total correlation information geometry Schmidt rank tensor networks sophisticated inference Lean theorem proving machine-checked free-energy identity active inference free energy principle policy inference mean-field total correlation"
+      "content": "Policy Entanglement in Active Inference Zenodo 10.5281/zenodo.20419637 Friedman2026PolicyEntanglementActiveInference119 Computational Paper Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameteri active inference free energy principle policy inference mean-field total correlation information geometry Schmidt rank tensor networks sophisticated inference Lean theorem proving machine-checked free-energy identity active inference free energy principle policy inference mean-field total correlation"
     },
     {
       "id": "work:Friedman2026BoundedAutoResearchTinyReproducible120",

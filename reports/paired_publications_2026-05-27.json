@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T22:15:53Z",
+  "generated_at": "2026-05-27T23:24:35Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -11,61 +11,61 @@
     "pairs": 53,
     "strong_pairs": 10,
     "needs_review": 43,
-    "create_new": 7,
-    "update_existing": 3
+    "create_new": 0,
+    "update_existing": 10
   },
   "warnings": [],
   "actions": [
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.15231156",
       "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "ActiveInferenceInstitute/CEREBRUM",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.4",
       "zenodo_record_url": "https://zenodo.org/records/15231156",
       "folder": "2025_CEREBRUM2"
     },
     {
-      "action_type": "create_new",
-      "doi": "10.5281/zenodo.20419186",
+      "action_type": "update_existing",
+      "doi": "10.5281/zenodo.20419637",
       "title": "Policy Entanglement in Active Inference",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "ActiveInferenceInstitute/policy_entanglement",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
-      "zenodo_record_url": "https://zenodo.org/records/20419186",
+      "zenodo_record_url": "https://zenodo.org/records/20419637",
       "folder": "2026_PolicyEntanglementActive"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.20417017",
       "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/template_autoresearch_project",
       "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
       "zenodo_record_url": "https://zenodo.org/records/20417017",
       "folder": "2026_BoundedAutoResearchTiny"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.20417137",
       "title": "Convergence Analysis of Gradient Descent Optimization",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/template_code_project",
       "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.4.0",
       "zenodo_record_url": "https://zenodo.org/records/20417137",
       "folder": "2026_ConvergenceAnalysisGradient"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.20417105",
       "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/template_prose_project",
       "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.3.0",
       "zenodo_record_url": "https://zenodo.org/records/20417105",
@@ -83,11 +83,11 @@
       "folder": "2026_FEPLean"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.20419084",
       "title": "A template/ approach to Reproducible Generative Research",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/template_template",
       "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.5",
       "zenodo_record_url": "https://zenodo.org/records/20419084",
@@ -116,11 +116,11 @@
       "folder": "2026_BiologyTextbook"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.20417022",
       "title": "Active Inference Multi-Track Exemplar",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/template_active_inference",
       "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
       "zenodo_record_url": "https://zenodo.org/records/20417022",
@@ -660,34 +660,36 @@
     {
       "confidence": "strong",
       "evidence": [
+        "github_release_mentions_doi",
+        "github_release_mentions_zenodo_record",
         "zenodo_related_identifier_mentions_release",
         "github_repo_self_linked",
         "title_overlap"
       ],
-      "doi": "10.5281/zenodo.20419186",
+      "doi": "10.5281/zenodo.20419637",
       "github_repo": "ActiveInferenceInstitute/policy_entanglement",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
-      "zenodo_record_url": "https://zenodo.org/records/20419186",
+      "zenodo_record_url": "https://zenodo.org/records/20419637",
       "release": {
         "owner": "ActiveInferenceInstitute",
         "repo": "policy_entanglement",
         "tag": "v1.0.0",
         "name": "Policy Entanglement in Active Inference v1.0.0",
-        "body": "Release v1.0.0 for actinf_policy_entanglement_lean.\n\n## Publication\n- Version: 1.0\n- GitHub release: https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0\n- DOI: https://doi.org/10.5281/zenodo.20418905\n- Zenodo: https://zenodo.org/records/20418905\n- PDF SHA-256: `34ce37000d1b3a848b2a946cb910d9f402f8a0d6453d2c055256f39b531b37ee`\n\n## Abstract\nAbstract {-}\n\nActive inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameterized embeddings, numerical witnesses, and structural analogies. Mean-field active inference is the exact independent case. Products of experts, copula variational inference, options, hierarchical and sophisticated inference, branching-time active inference, renormalization-style compression, and Markov-blanket multi-agent views are connected as special cases through their stated posterior-factorization maps.\n\nThe central result is a free-energy decomposition that separates ordinary per-stream free energy, coupling preference terms, the coupling normalizer, and the information cost of leaving independence. The decomposition makes multi-information the explicit surcharge paid by a non-factorized policy posterior and shows how coupling strength, compatibility structure, and off-diagonal preference costs enter the same accounting identity. This result supplies the organizing principle for the rest of the paper. It supports an information-geometric reading of the coupled policy family as a path away from the mean-field submanifold, a projection identity that returns the coupled posterior to its independent marginals, a spectral and tensor-train view of dominant coordinated policy modes, a heterogeneous-ensemble coupling-tax bound, and a phase vocabulary for under-coupled, mixed, and highly concentrated policy posteriors. These interpretations are intentionally limited: the manuscript does not claim a neural, clinical, biological, or quantum implementation, and Markov-blanket and tensor-network language is used as scoped modeling analogy unless a specific theorem row or generated artifact supports a stronger statement.\n\nThe main decomposition analytic identity is machine-checked in ℝ in the Mathlib-backed Lean layer with an axiom audit and negative controls. A separate stock-Lean boundary fragment remains Mathlib-free and exposes the theorem surface as typed contracts for the Python simulation layer and the manuscript registry, including witness-consuming rows where analytic payloads are deliberately supplied at the boundary. The executable numerical layer remains a Float pipeline, so a verified Float↔ℝ error bridge is still an explicitly open interface rather than an implied proof; conservative interval brackets on the K=2 decomposition sweep certify Float residuals within a widened high-precision envelope (output/reports/float_real_residual.json) without promoting the registry row to proved. The empirical companion uses pymdp and NumPy to sweep coupled policy ensembles, run short and long rollouts, check the projection identity to round-off precision, produce free-energy, entropy, total-correlation, action-distribution, robustness, and adversarial sidecars, and render figures from those artifacts. The manuscript, figures, theorem map, citation registry, notation glossary (\\hyperref[sec:notation]{§S6}{=latex}), bibliography, and PDF are regenerated from the same source-owned pipeline, so prose claims are tied to Lean sources, Python witnesses, output metadata, and validation gates rather than maintained by hand.\n\nAll manuscript methods, tests, and documentation are available as open-source software at https://github.com/ActiveInferenceInstitute/policy_entanglement (DOI: https://doi.org/10.5281/zenodo.20418905).\n\n---",
+        "body": "Release v1.0.0 — Policy Entanglement in Active Inference\n\n## Publication\n- Version: 1.0\n- **Cite (concept DOI):** https://doi.org/10.5281/zenodo.20418904\n- **Latest version DOI:** https://doi.org/10.5281/zenodo.20419637\n- **Zenodo (latest):** https://zenodo.org/records/20419637\n- **GitHub release:** https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0\n- **Source:** https://github.com/ActiveInferenceInstitute/policy_entanglement\n\n## PDF (v1.0.0)\nRich cover metadata (DOI, ORCID, email, affiliation), red hyperlinks, single abstract, POMDP introduced at first use. PDF SHA-256: `ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde`.",
         "html_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
         "published_at": "2026-05-27T22:09:02Z",
         "assets": [
           {
-            "name": "Friedman_2026_Policy_34ce3700.pdf",
-            "download_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/download/v1.0.0/Friedman_2026_Policy_34ce3700.pdf",
-            "size": 14420942
+            "name": "actinf_policy_entanglement_lean_combined.pdf",
+            "download_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/download/v1.0.0/actinf_policy_entanglement_lean_combined.pdf",
+            "size": 14419275
           }
         ],
         "full_name": "ActiveInferenceInstitute/policy_entanglement"
       },
       "record": {
-        "record_id": "20419186",
-        "doi": "10.5281/zenodo.20419186",
+        "record_id": "20419637",
+        "doi": "10.5281/zenodo.20419637",
         "title": "Policy Entanglement in Active Inference",
         "publication_date": "2026",
         "version": "1.0",
@@ -703,7 +705,7 @@
             "orcid": "0000-0001-6232-9096"
           }
         ],
-        "description": "Abstract {-}\n\nActive inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameterized embeddings, numerical witnesses, and structural analogies. Mean-field active inference is the exact independent case. Products of experts, copula variational inference, options, hierarchical and sophisticated inference, branching-time active inference, renormalization-style compression, and Markov-blanket multi-agent views are connected as special cases through their stated posterior-factorization maps.\n\nThe central result is a free-energy decomposition that separates ordinary per-stream free energy, coupling preference terms, the coupling normalizer, and the information cost of leaving independence. The decomposition makes multi-information the explicit surcharge paid by a non-factorized policy posterior and shows how coupling strength, compatibility structure, and off-diagonal preference costs enter the same accounting identity. This result supplies the organizing principle for the rest of the paper. It supports an information-geometric reading of the coupled policy family as a path away from the mean-field submanifold, a projection identity that returns the coupled posterior to its independent marginals, a spectral and tensor-train view of dominant coordinated policy modes, a heterogeneous-ensemble coupling-tax bound, and a phase vocabulary for under-coupled, mixed, and highly concentrated policy posteriors. These interpretations are intentionally limited: the manuscript does not claim a neural, clinical, biological, or quantum implementation, and Markov-blanket and tensor-network language is used as scoped modeling analogy unless a specific theorem row or generated artifact supports a stronger statement.\n\nThe main decomposition analytic identity is machine-checked in ℝ in the Mathlib-backed Lean layer with an axiom audit and negative controls. A separate stock-Lean boundary fragment remains Mathlib-free and exposes the theorem surface as typed contracts for the Python simulation layer and the manuscript registry, including witness-consuming rows where analytic payloads are deliberately supplied at the boundary. The executable numerical layer remains a Float pipeline, so a verified Float↔ℝ error bridge is still an explicitly open interface rather than an implied proof; conservative interval brackets on the K=2 decomposition sweep certify Float residuals within a widened high-precision envelope (output/reports/float_real_residual.json) without promoting the registry row to proved. The empirical companion uses pymdp and NumPy to sweep coupled policy ensembles, run short and long rollouts, check the projection identity to round-off precision, produce free-energy, entropy, total-correlation, action-distribution, robustness, and adversarial sidecars, and render figures from those artifacts. The manuscript, figures, theorem map, citation registry, notation glossary (\\hyperref[sec:notation]{§S6}{=latex}), bibliography, and PDF are regenerated from the same source-owned pipeline, so prose claims are tied to Lean sources, Python witnesses, output metadata, and validation gates rather than maintained by hand.\n\nAll manuscript methods, tests, and documentation are available as open-source software at https://github.com/ActiveInferenceInstitute/policy_entanglement (DOI: https://doi.org/10.5281/zenodo.20419149).\n\n---\n\n---\nAssociated artifacts\nGitHub release: Policy Entanglement in Active Inference v1.0.0 (https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.20419149\nZenodo: https://zenodo.org/records/20419149\nPDF SHA-256: d363375628516768cdafef1c8023f729e0da9799a06c5672cd6a78d7c0c7060d",
+        "description": "Abstract {-}\n\nActive inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameterized embeddings, numerical witnesses, and structural analogies. Mean-field active inference is the exact independent case. Products of experts, copula variational inference, options, hierarchical and sophisticated inference, branching-time active inference, renormalization-style compression, and Markov-blanket multi-agent views are connected as special cases through their stated posterior-factorization maps.\n\nThe central result is a free-energy decomposition that separates ordinary per-stream free energy, coupling preference terms, the coupling normalizer, and the information cost of leaving independence. The decomposition makes multi-information the explicit surcharge paid by a non-factorized policy posterior and shows how coupling strength, compatibility structure, and off-diagonal preference costs enter the same accounting identity. This result supplies the organizing principle for the rest of the paper. It supports an information-geometric reading of the coupled policy family as a path away from the mean-field submanifold, a projection identity that returns the coupled posterior to its independent marginals, a spectral and tensor-train view of dominant coordinated policy modes, a heterogeneous-ensemble coupling-tax bound, and a phase vocabulary for under-coupled, mixed, and highly concentrated policy posteriors. These interpretations are intentionally limited: the manuscript does not claim a neural, clinical, biological, or quantum implementation, and Markov-blanket and tensor-network language is used as scoped modeling analogy unless a specific theorem row or generated artifact supports a stronger statement.\n\nThe main decomposition analytic identity is machine-checked in ℝ in the Mathlib-backed Lean layer with an axiom audit and negative controls. A separate stock-Lean boundary fragment remains Mathlib-free and exposes the theorem surface as typed contracts for the Python simulation layer and the manuscript registry, including witness-consuming rows where analytic payloads are deliberately supplied at the boundary. The executable numerical layer remains a Float pipeline, so a verified Float↔ℝ error bridge is still an explicitly open interface rather than an implied proof; conservative interval brackets on the K=2 decomposition sweep certify Float residuals within a widened high-precision envelope (output/reports/float_real_residual.json) without promoting the registry row to proved. The empirical companion uses pymdp and NumPy to sweep coupled policy ensembles, run short and long rollouts, check the projection identity to round-off precision, produce free-energy, entropy, total-correlation, action-distribution, robustness, and adversarial sidecars, and render figures from those artifacts. The manuscript, figures, theorem map, citation registry, notation glossary (§S6), bibliography, and PDF are regenerated from the same source-owned pipeline, so prose claims are tied to Lean sources, Python witnesses, output metadata, and validation gates rather than maintained by hand.\n\nAll manuscript methods, tests, and documentation are available as open-source software at https://github.com/ActiveInferenceInstitute/policy_entanglement (DOI: https://doi.org/10.5281/zenodo.20419536).\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.20418904\nZenodo: https://zenodo.org/records/20418904\nPDF SHA-256: ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde",
         "keywords": [
           "active inference",
           "free energy principle",
@@ -733,18 +735,18 @@
         ],
         "files": [
           {
-            "id": "d6966c41-29f4-4a7e-8a53-da1aa686cfde",
-            "key": "Friedman_2026_Policy_d3633756.pdf",
-            "size": 14420933,
-            "checksum": "md5:ff6a2253b11c79b6cce38380d7fab39e",
+            "id": "29e47fff-3b1e-44e4-abaa-df4253c22b53",
+            "key": "Friedman_2026_Policy_ae7cdd62.pdf",
+            "size": 14419275,
+            "checksum": "md5:62d2dac502218f1b97fdae489459e8d3",
             "links": {
-              "self": "https://zenodo.org/api/records/20419186/files/Friedman_2026_Policy_d3633756.pdf/content"
+              "self": "https://zenodo.org/api/records/20419637/files/Friedman_2026_Policy_ae7cdd62.pdf/content"
             }
           }
         ],
-        "html_url": "https://zenodo.org/records/20419186",
-        "doi_url": "https://doi.org/10.5281/zenodo.20419186",
-        "record_url": "https://zenodo.org/records/20419186"
+        "html_url": "https://zenodo.org/records/20419637",
+        "doi_url": "https://doi.org/10.5281/zenodo.20419637",
+        "record_url": "https://zenodo.org/records/20419637"
       }
     },
     {
@@ -4541,87 +4543,41 @@
     {
       "doi": "10.5281/zenodo.15231156",
       "folder": "2025_CEREBRUM2",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2025_CEREBRUM2/README.md",
-        "papers/2025_CEREBRUM2/AGENTS.md",
-        "papers/2025_CEREBRUM2/SKILL.md",
-        "papers/2025_CEREBRUM2/CITATION.cff",
-        "papers/2025_CEREBRUM2/metadata.json",
-        "papers/2025_CEREBRUM2/CEREBRUM_1-4_April-16-2025.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md",
-        "pages/SOFTWARE.md"
+        "papers/2025_CEREBRUM2/metadata.json"
       ]
     },
     {
-      "doi": "10.5281/zenodo.20419186",
+      "doi": "10.5281/zenodo.20419637",
       "folder": "2026_PolicyEntanglementActive",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2026_PolicyEntanglementActive/README.md",
-        "papers/2026_PolicyEntanglementActive/AGENTS.md",
-        "papers/2026_PolicyEntanglementActive/SKILL.md",
-        "papers/2026_PolicyEntanglementActive/CITATION.cff",
-        "papers/2026_PolicyEntanglementActive/metadata.json",
-        "papers/2026_PolicyEntanglementActive/Friedman_2026_Policy_d3633756.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md"
+        "papers/2026_PolicyEntanglementActive/metadata.json"
       ]
     },
     {
       "doi": "10.5281/zenodo.20417017",
       "folder": "2026_BoundedAutoResearchTiny",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2026_BoundedAutoResearchTiny/README.md",
-        "papers/2026_BoundedAutoResearchTiny/AGENTS.md",
-        "papers/2026_BoundedAutoResearchTiny/SKILL.md",
-        "papers/2026_BoundedAutoResearchTiny/CITATION.cff",
-        "papers/2026_BoundedAutoResearchTiny/metadata.json",
-        "papers/2026_BoundedAutoResearchTiny/Friedman_2026_Bounded_922d1242.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md"
+        "papers/2026_BoundedAutoResearchTiny/metadata.json"
       ]
     },
     {
       "doi": "10.5281/zenodo.20417137",
       "folder": "2026_ConvergenceAnalysisGradient",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2026_ConvergenceAnalysisGradient/README.md",
-        "papers/2026_ConvergenceAnalysisGradient/AGENTS.md",
-        "papers/2026_ConvergenceAnalysisGradient/SKILL.md",
-        "papers/2026_ConvergenceAnalysisGradient/CITATION.cff",
-        "papers/2026_ConvergenceAnalysisGradient/metadata.json",
-        "papers/2026_ConvergenceAnalysisGradient/Friedman_2026_Convergence_b08688ce.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md"
+        "papers/2026_ConvergenceAnalysisGradient/metadata.json"
       ]
     },
     {
       "doi": "10.5281/zenodo.20417105",
       "folder": "2026_EditorialQualityAt",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2026_EditorialQualityAt/README.md",
-        "papers/2026_EditorialQualityAt/AGENTS.md",
-        "papers/2026_EditorialQualityAt/SKILL.md",
-        "papers/2026_EditorialQualityAt/CITATION.cff",
-        "papers/2026_EditorialQualityAt/metadata.json",
-        "papers/2026_EditorialQualityAt/Friedman_2026_Editorial_72e603df.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md"
+        "papers/2026_EditorialQualityAt/metadata.json"
       ]
     },
     {
@@ -4629,27 +4585,15 @@
       "folder": "2026_FEPLean",
       "created": false,
       "updated_files": [
-        "papers/2026_FEPLean/README.md",
-        "papers/2026_FEPLean/metadata.json",
-        "papers/paper_metadata.json",
-        "pages/SOFTWARE.md"
+        "papers/2026_FEPLean/metadata.json"
       ]
     },
     {
       "doi": "10.5281/zenodo.20419084",
       "folder": "2026_TemplateApproachReproducible",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2026_TemplateApproachReproducible/README.md",
-        "papers/2026_TemplateApproachReproducible/AGENTS.md",
-        "papers/2026_TemplateApproachReproducible/SKILL.md",
-        "papers/2026_TemplateApproachReproducible/CITATION.cff",
-        "papers/2026_TemplateApproachReproducible/metadata.json",
-        "papers/2026_TemplateApproachReproducible/Friedman_2026_Template_5f200f33.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md"
+        "papers/2026_TemplateApproachReproducible/metadata.json"
       ]
     },
     {
@@ -4657,10 +4601,7 @@
       "folder": "2026_CrescentCity",
       "created": false,
       "updated_files": [
-        "papers/2026_CrescentCity/README.md",
-        "papers/2026_CrescentCity/CITATION.cff",
-        "papers/2026_CrescentCity/metadata.json",
-        "papers/paper_metadata.json"
+        "papers/2026_CrescentCity/metadata.json"
       ]
     },
     {
@@ -4668,27 +4609,15 @@
       "folder": "2026_BiologyTextbook",
       "created": false,
       "updated_files": [
-        "papers/2026_BiologyTextbook/README.md",
-        "papers/2026_BiologyTextbook/CITATION.cff",
-        "papers/2026_BiologyTextbook/metadata.json",
-        "papers/paper_metadata.json"
+        "papers/2026_BiologyTextbook/metadata.json"
       ]
     },
     {
       "doi": "10.5281/zenodo.20417022",
       "folder": "2026_ActiveInferenceMulti",
-      "created": true,
+      "created": false,
       "updated_files": [
-        "papers/2026_ActiveInferenceMulti/README.md",
-        "papers/2026_ActiveInferenceMulti/AGENTS.md",
-        "papers/2026_ActiveInferenceMulti/SKILL.md",
-        "papers/2026_ActiveInferenceMulti/CITATION.cff",
-        "papers/2026_ActiveInferenceMulti/metadata.json",
-        "papers/2026_ActiveInferenceMulti/Friedman_2026_Active_d7e8d4b8.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "papers/AGENTS.md"
+        "papers/2026_ActiveInferenceMulti/metadata.json"
       ]
     }
   ]

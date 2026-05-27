@@ -1,6 +1,6 @@
 ---
 name: "PolicyEntanglementActive"
-description: "Use for Policy Entanglement in Active Inference, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20419186."
+description: "Use for Policy Entanglement in Active Inference, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20419637."
 tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-field", "total-correlation", "information-geometry", "schmidt-rank", "tensor-networks"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-fi
 
 Use this skill when working with the publication **Policy Entanglement in Active Inference** or its paired release artifacts.
 
-1. Ground citations in DOI `10.5281/zenodo.20419186`.
+1. Ground citations in DOI `10.5281/zenodo.20419637`.
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
 3. Keep release tag `v1.0.0` and repository `ActiveInferenceInstitute/policy_entanglement` linked when updating catalog surfaces.
 

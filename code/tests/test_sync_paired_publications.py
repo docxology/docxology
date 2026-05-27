@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sys
+from dataclasses import replace
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -13,7 +14,11 @@ sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(ORCH_DIR))
 
 from publication_pairing import GitHubRelease, PublicationPair, ZenodoRecord  # noqa: E402
-from sync_paired_publications import apply_publication_pair, build_sync_actions  # noqa: E402
+from sync_paired_publications import (  # noqa: E402
+    apply_publication_pair,
+    build_sync_actions,
+    refresh_bibliography_counts,
+)
 
 
 def _write_minimal_repo(root: Path) -> None:
@@ -148,3 +153,59 @@ def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
     software = (tmp_path / "pages" / "SOFTWARE.md").read_text(encoding="utf-8")
     assert "https://doi.org/10.5281/zenodo.20990001" in software
     assert "[📄](../papers/2026_NewComputationalProject/)" in software
+
+
+def test_same_title_and_release_new_doi_updates_existing_folder(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+
+    updated_record = replace(
+        pair.record,
+        record_id="20990002",
+        doi="10.5281/zenodo.20990002",
+        files=[],
+        html_url="https://zenodo.org/records/20990002",
+    )
+    updated_pair = replace(pair, record=updated_record)
+    actions = build_sync_actions([updated_pair], repo_root=tmp_path)
+
+    assert actions[0].action_type == "update_existing"
+    assert actions[0].folder == "2026_NewComputationalProject"
+
+    applied = apply_publication_pair(
+        updated_pair,
+        repo_root=tmp_path,
+        download_files=False,
+        folder=actions[0].folder,
+        refresh_docs=True,
+    )
+    assert applied.created is False
+
+    bibliography = (tmp_path / "pages" / "BIBLIOGRAPHY.md").read_text(encoding="utf-8")
+    assert bibliography.count("New Computational Project: Reproducible Research") == 1
+    assert "10.5281/zenodo.20990002" in bibliography
+    assert "10.5281/zenodo.20990001" not in bibliography
+
+
+def test_refresh_bibliography_counts_keeps_series_unpluralized():
+    text = "\n".join(
+        [
+            "**124 works** spanning peer-reviewed papers",
+            "",
+            "**105** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Seriesssssssss",
+            "",
+            "> **124** works in the table below",
+            "",
+            "| # | Year | Domain | Type | Title | Venue | DOI/Link | Docs |",
+            "|--:|:----:|:------:|:----:|-------|-------|----------|:----:|",
+            "| 1 | 2026 | 💻 | Paper | One | *Zenodo* | [10.1/x](https://doi.org/10.1/x) | — |",
+            "| 2 | 2026 | 🎥 | Series | Two | *YouTube* | [link](https://example.com) | — |",
+        ]
+    )
+
+    refreshed = refresh_bibliography_counts(text)
+
+    assert "**2 works**" in refreshed
+    assert "**1** Papers · **1** Series" in refreshed
+    assert "Seriess" not in refreshed

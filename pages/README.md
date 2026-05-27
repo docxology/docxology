@@ -51,7 +51,7 @@ The `pages/` directory contains all centralized, non-paper-specific documentatio
 
 ### Related Directories
 
-- **[papers/](../papers/)** — 110 per-paper folders with README, AGENTS, and SKILL files
+- **[papers/](../papers/)** — 117 per-paper folders with README, AGENTS, and SKILL files
 - **[code/](../code/)** — Source code, orchestrators, and test suites
 - **[docs/](../docs/)** — Repository-wide operational documentation
 - **[works/](../works/)** — Generated HTML landing pages for every bibliography row
