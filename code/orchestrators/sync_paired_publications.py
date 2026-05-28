@@ -911,7 +911,10 @@ def parse_owners(raw: str, include_aii: bool) -> list[str]:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        epilog="Runbook: docs/PUBLICATION_SYNC.md",
+    )
     parser.add_argument("--apply", action="store_true", help="Apply strong create/update actions")
     parser.add_argument("--owners", default="docxology", help="Comma-separated GitHub owners to scan")
     parser.add_argument("--include-aii", action="store_true", help="Also scan ActiveInferenceInstitute")

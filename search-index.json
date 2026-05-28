@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:46:23Z",
+  "generated_at": "2026-05-28T00:03:57Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -263,7 +263,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-05-26.json",
+      "url": "/reports/accessibility_static_2026-05-28.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -275,7 +275,7 @@
       "id": "page:visual-qa",
       "type": "report",
       "title": "Visual QA Manifest",
-      "url": "/reports/visual-qa/2026-05-15/manifest.json",
+      "url": "/reports/visual-qa/2026-05-28/manifest.json",
       "summary": "Desktop and mobile Playwright screenshots for key pages.",
       "tags": [
         "visual",
@@ -312,7 +312,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-27.json",
+      "url": "/reports/asset_size_2026-05-28.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -325,7 +325,7 @@
       "id": "page:browser-smoke",
       "type": "report",
       "title": "Browser Smoke Manifest",
-      "url": "/reports/browser-smoke/2026-05-15/manifest.json",
+      "url": "/reports/browser-smoke/2026-05-28/manifest.json",
       "summary": "Selector-based browser smoke checks for core local pages.",
       "tags": [
         "browser",

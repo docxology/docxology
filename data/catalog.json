@@ -8,7 +8,7 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-27",
+  "dateModified": "2026-05-28",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -237,11 +237,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-27.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-28.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-27.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-28.json",
         "encodingFormat": "application/json"
       }
     },
@@ -250,11 +250,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-15/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-28/manifest.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-15/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-28/manifest.json",
         "encodingFormat": "application/json"
       }
     },

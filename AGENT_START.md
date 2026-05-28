@@ -9,6 +9,7 @@ This repository is the public research, software, citation, evidence, and websit
 3. Use [`GENERATED.md`](GENERATED.md) before editing generated artifacts.
 4. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
 5. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.
+6. Use [`docs/PUBLICATION_SYNC.md`](docs/PUBLICATION_SYNC.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
 
 ## Task Recipes
 
@@ -19,7 +20,7 @@ This repository is the public research, software, citation, evidence, and websit
 | Verify a public claim | [`evidence.html`](evidence.html), [`data/claims.json`](data/claims.json) | Primary URLs listed in the claim ledger |
 | Find software | [`software.html`](software.html), [`repositories.html`](repositories.html), [`data/software.json`](data/software.json), [`data/github-repositories.json`](data/github-repositories.json) | Curated and full GitHub repository inventories |
 | Generate resume/CV artifacts | [`resume/`](resume/), [`data/resume.json`](data/resume.json) | `uv run python3 code/orchestrators/build_resume.py --all`, then `--check` |
-| Check paired GitHub + Zenodo publications | [`reports/paired_publications_2026-05-27.json`](reports/paired_publications_2026-05-27.json) | `python3 code/orchestrators/sync_paired_publications.py` (dry-run), then `--apply` for strong pairs only |
+| Check paired GitHub + Zenodo publications | [`docs/PUBLICATION_SYNC.md`](docs/PUBLICATION_SYNC.md), [`reports/paired_publications_2026-05-27.json`](reports/paired_publications_2026-05-27.json) | `GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii` (dry-run), then `--apply` for strong pairs only |
 | Refresh generated files | [`GENERATED.md`](GENERATED.md) | `uv run python3 code/orchestrators/validate_repo.py` |
 | Check deployed site health | [`reports/live_site_verification_2026-05-13.json`](reports/live_site_verification_2026-05-13.json) | `python3 code/orchestrators/verify_live_site.py` |
 | Refresh public-source inventory | [`reports/public_source_inventory_2026-05-15.json`](reports/public_source_inventory_2026-05-15.json) | `python3 code/orchestrators/refresh_public_source_inventory.py` |

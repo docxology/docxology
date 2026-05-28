@@ -26,6 +26,7 @@ PATTERNS = [
     ("site-runtime", "sw.js", 50_000),
     ("site-runtime", "manifest.json", 50_000),
     ("site-runtime", "style.css", 250_000),
+    ("hero-art", "assets/hero-art/*.webp", 320_000),
 ]
 
 

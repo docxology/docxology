@@ -185,7 +185,8 @@ def replace_inline_collection_ld(html_text: str) -> str:
         )
     if LD_EXTERNAL_SCRIPT in html_text:
         return html_text
-    insert_at = html_text.find('<link rel="stylesheet" href="style.css">')
+    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html_text)
+    insert_at = stylesheet_match.start() if stylesheet_match else -1
     if insert_at < 0:
         insert_at = html_text.find("</head>")
     if insert_at < 0:

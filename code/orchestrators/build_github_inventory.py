@@ -8,6 +8,7 @@ import datetime as dt
 import html
 import json
 import os
+import re
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -156,9 +157,17 @@ def h(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
+VISUAL_EMOJI_RE = re.compile(r"[\U0001F300-\U0001FAFF\u2600-\u27BF\ufe0f]")
+
+
+def strip_visual_emoji(value: str) -> str:
+    return re.sub(r"\s{2,}", " ", VISUAL_EMOJI_RE.sub("", value)).strip()
+
+
 def render_rows(repositories: list[dict[str, Any]]) -> str:
     rows = []
     for repo in repositories:
+        description = strip_visual_emoji(repo["description"])
         flags = []
         if repo["curated"]:
             flags.append("curated")
@@ -173,7 +182,7 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
             [
                 repo["name"],
                 repo["full_name"],
-                repo["description"],
+                description,
                 repo["language"].lower(),
                 repo["owner"],
                 flag_text,
@@ -182,7 +191,7 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
         ).lower()
         rows.append(
             f"""                    <tr data-owner="{h(repo['owner'])}" data-curated="{str(repo['curated']).lower()}" data-fork="{str(repo['fork']).lower()}" data-archived="{str(repo['archived']).lower()}" data-recent="{str(repo['recently_updated']).lower()}" data-visibility="{h('private' if repo['private'] else 'public')}" data-language="{h((repo['language'] or '').lower())}" data-search="{h(searchable)}">
-                        <td><a href="{h(repo['html_url'])}">{h(repo['full_name'])}</a><span>{h(repo['description'])}</span></td>
+                        <td><a href="{h(repo['html_url'])}">{h(repo['full_name'])}</a><span>{h(description)}</span></td>
                         <td>{h(repo['language'] or '—')}</td>
                         <td>{h(repo['stars'])}</td>
                         <td>{h(repo['forks'])}</td>
@@ -220,7 +229,7 @@ def render_html(payload: dict[str, Any]) -> str:
     <meta property="og:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
     <meta property="og:url" content="https://danielarifriedman.com/repositories.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-software.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260528e">
     <style>
         .inventory-controls{{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin:1rem 0}}
         .inventory-search{{flex:1 1 260px;min-width:0;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:.75rem .9rem}}

@@ -5,6 +5,8 @@ Documentation index for all publications. Each folder contains:
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
 
+For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/PUBLICATION_SYNC.md](../docs/PUBLICATION_SYNC.md).
+
 ## Papers (117)
 
 | # | Folder | PDF | Year | Topic |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:46:23Z",
+  "generated_at": "2026-05-28T00:56:11Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -104,6 +104,7 @@
       "sources": [
         "GitHub Releases API",
         "Zenodo Records API",
+        "docs/PUBLICATION_SYNC.md",
         "code/src/publication_pairing.py",
         "code/orchestrators/sync_paired_publications.py"
       ],
@@ -239,7 +240,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-05-27.json"
+        "reports/asset_size_2026-05-28.json"
       ],
       "sources": [
         "root HTML pages",
@@ -253,8 +254,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-05-15/*.png",
-        "reports/browser-smoke/2026-05-15/manifest.json"
+        "reports/browser-smoke/2026-05-28/*.png",
+        "reports/browser-smoke/2026-05-28/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -300,8 +301,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-05-15/*.png",
-        "reports/visual-qa/2026-05-15/manifest.json"
+        "reports/visual-qa/2026-05-28/*.png",
+        "reports/visual-qa/2026-05-28/manifest.json"
       ],
       "sources": [
         "root HTML pages",

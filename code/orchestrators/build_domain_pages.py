@@ -171,7 +171,7 @@ def page_head(
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260528e">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .domain-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 3rem}}
@@ -255,7 +255,7 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
         page_head(title, config.description, canonical, f"og-{config.slug}.jpg")
         + f"""
     <header class="domain-hero">
-        <h1>{config.emoji} {h(config.title)}</h1>
+        <h1>{h(config.title)}</h1>
         <p>{h(config.description)}</p>
     </header>
     <main id="main" class="main">
@@ -309,7 +309,7 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
         repo_count = len(select_repositories(repos, config.repo_names))
         cards.append(
             f"""                <article class="mini-card">
-                    <h3><a href="domain-{config.slug}.html">{config.emoji} {h(config.short_title)}</a></h3>
+                    <h3><a href="domain-{config.slug}.html">{h(config.short_title)}</a></h3>
                     <p>{h(config.description)}</p>
                     <p class="text-muted">{count} works · {repo_count} selected repos</p>
                 </article>"""

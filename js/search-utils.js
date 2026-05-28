@@ -1,4 +1,4 @@
-"""HTML escape helper for client-side search surfaces (plain script, no module)."""
+// HTML escape helper for client-side search surfaces (plain script, no module).
 
 function esc(value) {
     return String(value ?? '')

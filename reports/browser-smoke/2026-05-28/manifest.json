@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-05-28T00:55:35Z",
+  "tool": "npx playwright screenshot",
+  "note": "Selector-based smoke checks for core local site behavior.",
+  "passing": 8,
+  "count": 8,
+  "checks": [
+    {
+      "name": "home",
+      "page": "index.html",
+      "selector": "h1",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/home.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/index.html\nWaiting for selector h1...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/home.png",
+      "stderr": ""
+    },
+    {
+      "name": "publications",
+      "page": "publications.html",
+      "selector": "table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/publications.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/publications.html\nWaiting for selector table...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/publications.png",
+      "stderr": ""
+    },
+    {
+      "name": "works",
+      "page": "works/index.html",
+      "selector": ".work-row",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/works.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/works/index.html\nWaiting for selector .work-row...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/works.png",
+      "stderr": ""
+    },
+    {
+      "name": "search",
+      "page": "search.html?q=active%20inference",
+      "selector": ".result-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/search.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/search.html?q=active%20inference\nWaiting for selector .result-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/search.png",
+      "stderr": ""
+    },
+    {
+      "name": "repositories",
+      "page": "repositories.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/repositories.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/repositories.html\nWaiting for selector .inventory-table...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/repositories.png",
+      "stderr": ""
+    },
+    {
+      "name": "catalog",
+      "page": "catalog.html",
+      "selector": ".catalog-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/catalog.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/catalog.html\nWaiting for selector .catalog-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/catalog.png",
+      "stderr": ""
+    },
+    {
+      "name": "updates",
+      "page": "updates.html",
+      "selector": ".update-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/updates.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/updates.html\nWaiting for selector .update-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/updates.png",
+      "stderr": ""
+    },
+    {
+      "name": "art",
+      "page": "art.html",
+      "selector": ".art-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-05-28/art.png",
+      "stdout": "Navigating to http://127.0.0.1:55991/art.html\nWaiting for selector .art-card...\nCapturing screenshot into /Users/4d/Documents/GitHub/docxology/reports/browser-smoke/2026-05-28/art.png",
+      "stderr": ""
+    }
+  ]
+}

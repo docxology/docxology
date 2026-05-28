@@ -30,7 +30,7 @@
     <!-- <PUBLICATIONS_LD_SYNC_BEGIN> -->
     <script type="application/ld+json" src="/data/publications-ld.json"></script>
     <!-- <PUBLICATIONS_LD_SYNC_END> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260528e">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#0c0c0e">
 <script type="application/ld+json">
@@ -70,15 +70,15 @@
             <a href="media.html" role="menuitem">Media</a>
             <a href="index.html#teaching" role="menuitem">Teaching</a>
             <a href="index.html#connect" role="menuitem">Connect</a>
-            <a href="art.html" class="nav-art-link" role="menuitem">🎨 Gallery</a>
+            <a href="art.html" class="nav-art-link" role="menuitem">Gallery</a>
         </div>
     </nav>
 
     <header class="page-hero">
-        <h1>📚 Publications</h1>
+        <h1>Publications</h1>
         <p class="sub">124 works spanning Active Inference, computational entomology, cognitive security, art &amp; synergetics, genetics, and open science — as of May 2026</p>
         <div class="meta-pills">
-            <span class="pill gold">📊 764 citations · h-index 15 · i10-index 17 (as of 2026-05-16)</span>
+            <span class="pill gold">764 citations · h-index 15 · i10-index 17 (as of 2026-05-16)</span>
             <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" class="pill">Google Scholar</a>
             <a href="https://orcid.org/0000-0001-6232-9096" class="pill">ORCID 0000-0001-6232-9096</a>
             <a href="https://www.researchgate.net/profile/Daniel-Friedman-2" class="pill">ResearchGate</a>
@@ -88,7 +88,7 @@
     <main id="main" class="main">
         <form class="filter-row" role="search" aria-label="Filter publications" onsubmit="return false">
             <div class="search-wrap">
-                <span class="search-icon" aria-hidden="true">🔍</span>
+                <span class="search-icon" aria-hidden="true">Search</span>
                 <input type="search" id="pub-search" placeholder="Search title, venue, type, DOI, domain (e.g. entomology, active inference)…" aria-label="Search publications" oninput="filterPubs()" autocomplete="off" enterkeyhint="search" spellcheck="false">
             </div>
             <div class="filter-btns" role="group" aria-label="Filter by type">
@@ -112,14 +112,14 @@
 
         <div class="domain-legend" role="group" aria-label="Filter by domain">
             <span class="domain-pill active" onclick="setDomainFilter('all',this)">All domains</span>
-            <span class="domain-pill" onclick="setDomainFilter('🐜',this)">🐜 Entomology</span>
-            <span class="domain-pill" onclick="setDomainFilter('🧠',this)">🧠 Active Inference</span>
-            <span class="domain-pill" onclick="setDomainFilter('🛡',this)">🛡️ Cognitive Security</span>
-            <span class="domain-pill" onclick="setDomainFilter('🎨',this)">🎨 Art &amp; Synergetics</span>
-            <span class="domain-pill" onclick="setDomainFilter('💻',this)">💻 Computational</span>
-            <span class="domain-pill" onclick="setDomainFilter('🌍',this)">🌍 AII Ecosystem</span>
-            <span class="domain-pill" onclick="setDomainFilter('🎥',this)">🎥 Media</span>
-            <span class="domain-pill" onclick="setDomainFilter('🧬',this)">🧬 Genetics</span>
+            <span class="domain-pill" onclick="setDomainFilter('🐜',this)">Entomology</span>
+            <span class="domain-pill" onclick="setDomainFilter('🧠',this)">Active Inference</span>
+            <span class="domain-pill" onclick="setDomainFilter('🛡',this)">Cognitive Security</span>
+            <span class="domain-pill" onclick="setDomainFilter('🎨',this)">Art &amp; Synergetics</span>
+            <span class="domain-pill" onclick="setDomainFilter('💻',this)">Computational</span>
+            <span class="domain-pill" onclick="setDomainFilter('🌍',this)">AII Ecosystem</span>
+            <span class="domain-pill" onclick="setDomainFilter('🎥',this)">Media</span>
+            <span class="domain-pill" onclick="setDomainFilter('🧬',this)">Genetics</span>
         </div>
 
         <div class="pub-table-wrap">
@@ -161,6 +161,6 @@
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
 
-    <script src="js/publications.js" defer></script>
+    <script src="js/publications.js?v=newspaper-glitch-20260528e" defer></script>
 </body>
 </html>

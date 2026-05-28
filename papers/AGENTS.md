@@ -32,6 +32,7 @@
 - Links each paper folder to its BIBLIOGRAPHY.md entry and DOI
 - Maps papers to associated software repositories in SOFTWARE.md
 - Connects related papers across domains
+- Uses [`docs/PUBLICATION_SYNC.md`](../docs/PUBLICATION_SYNC.md) for GitHub + Zenodo publication intake, strong-pair application, and review-only pairing decisions.
 - When the unified bibliography count or table order changes, run [`sync_publications_html.py`](sync_publications_html.py) so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay aligned with [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md); run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for the interactive catalog in `data/works.json`.
 - When [`pages/SOFTWARE.md`](../pages/SOFTWARE.md) catalog rows or counts change, run [`sync_software_html.py`](sync_software_html.py) with `--apply` so [software.html](../software.html) repo grids and [`data/software-ld.json`](../data/software-ld.json) **mainEntity** stay aligned; run [`export_agent_data.py`](../code/orchestrators/export_agent_data.py) for `data/software.json`.
 
@@ -43,6 +44,7 @@
 |--------|---------|
 | [regenerate_docs.py](regenerate_docs.py) | Rebuild README.md, AGENTS.md, and SKILL.md from metadata |
 | [sync_publications_html.py](sync_publications_html.py) | Rebuild `publications.html` head meta and `data/publications-ld.json` JSON-LD **mainEntity** from the unified bibliography table (`pages/BIBLIOGRAPHY.md`); run after adds/reorders in that table |
+| [../code/orchestrators/sync_paired_publications.py](../code/orchestrators/sync_paired_publications.py) | Dry-run or apply strong GitHub release + Zenodo record pairs using the runbook in [`docs/PUBLICATION_SYNC.md`](../docs/PUBLICATION_SYNC.md) |
 
 ### Quality Checks (spot-check after adds)
 

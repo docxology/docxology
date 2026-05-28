@@ -9,7 +9,7 @@
     <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="googlef0f1a1a4a7ba4be8">
-    <meta name="theme-color" content="#0c0c0e">
+    <meta name="theme-color" content="#000000">
     <meta name="color-scheme" content="dark">
     <link rel="canonical" href="https://danielarifriedman.com/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -204,12 +204,13 @@
     <!-- Fonts: preconnect + swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="assets/hero-art/ant-head.webp">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260528e">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <meta name="theme-color" content="#0c0c0e">
+    <meta name="theme-color" content="#000000">
 </head>
-<body>
+<body class="home-page">
     <!-- Accessibility: Skip to main content -->
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -230,46 +231,36 @@
             <a href="#teaching" role="menuitem">Teaching</a>
             <a href="#connect" role="menuitem">Connect</a>
             <a href="videos.html" role="menuitem">Videos</a>
-            <a href="art.html" class="nav-art-link" role="menuitem">🎨 Gallery</a>
+            <a href="art.html" class="nav-art-link" role="menuitem">Gallery</a>
         </div>
     </nav>
 
     <!-- ── HERO ── -->
     <header class="hero" id="top">
-        <!-- Ambient ant trail — entomology theme -->
-        <div class="ant-trail" aria-hidden="true">
-            <span class="ant ant-1">🐜</span>
-            <span class="ant ant-2">🐜</span>
-            <span class="ant ant-3">🐜</span>
-            <span class="ant ant-4">🐜</span>
-            <span class="ant ant-5">🐜</span>
-            <span class="ant ant-6">🐜</span>
-            <span class="ant ant-7">🐜</span>
-            <span class="ant ant-8">🐜</span>
-        </div>
+        <canvas class="hero-glitch-canvas" aria-hidden="true"></canvas>
         <div class="hero-content animate">
             <h1>Daniel Ari Friedman, PhD</h1>
             <p class="subtitle">Computational Biologist · Active Inference · Cognitive Security · Artist</p>
             <p class="tagline">Computational Biology · Active Inference · Cognitive Security · Entomology</p>
             <div class="cta-row">
-                <a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">✉ Get in Touch</a>
-                <a href="art.html" class="btn btn-gold">🎨 Art Gallery — 942 Works</a>
-                <a href="publications.html" class="btn btn-outline">📚 117 Works</a>
+                <a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a>
+                <a href="art.html" class="btn btn-gold">Art Gallery — 942 Works</a>
+                <a href="publications.html" class="btn btn-outline">117 Works</a>
                 <a href="search.html" class="btn btn-outline">Search</a>
             </div>
             <div class="profile-links">
-                <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" rel="me">📊 Scholar</a>
-                <a href="https://orcid.org/0000-0001-6232-9096" rel="me">🆔 ORCID</a>
-                <a href="https://github.com/docxology" rel="me">🔗 GitHub</a>
-                <a href="https://linkedin.com/in/danielarifriedman" rel="me">💼 LinkedIn</a>
-                <a href="https://youtube.com/@danielarifriedman" rel="me">🎥 YouTube</a>
-                <a href="https://curio.cards/artist/danielfriedman/" rel="me">🎨 Curio Cards</a>
-                <a href="https://www.researchgate.net/profile/Daniel-Friedman-2" rel="me">🔬 ResearchGate</a>
-                <a href="https://www.instagram.com/danielarifriedman/" rel="me">📷 Instagram</a>
-                <a href="https://activeinference.org/" rel="me">🧠 AII</a>
-                <a href="https://cogsec.org" rel="me">🛡 COGSEC</a>
-                <a href="https://www.wikidata.org/wiki/Q138781444" rel="me">📖 Wikidata</a>
-                <a href="discovery.html">🧭 Discovery</a>
+                <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" rel="me">Scholar</a>
+                <a href="https://orcid.org/0000-0001-6232-9096" rel="me">ORCID</a>
+                <a href="https://github.com/docxology" rel="me">GitHub</a>
+                <a href="https://linkedin.com/in/danielarifriedman" rel="me">LinkedIn</a>
+                <a href="https://youtube.com/@danielarifriedman" rel="me">YouTube</a>
+                <a href="https://curio.cards/artist/danielfriedman/" rel="me">Curio Cards</a>
+                <a href="https://www.researchgate.net/profile/Daniel-Friedman-2" rel="me">ResearchGate</a>
+                <a href="https://www.instagram.com/danielarifriedman/" rel="me">Instagram</a>
+                <a href="https://activeinference.org/" rel="me">AII</a>
+                <a href="https://cogsec.org" rel="me">COGSEC</a>
+                <a href="https://www.wikidata.org/wiki/Q138781444" rel="me">Wikidata</a>
+                <a href="discovery.html">Discovery</a>
             </div>
         </div>
     </header>
@@ -341,12 +332,12 @@
                     <div class="section-divider"></div>
                 </div>
                 <div class="cards cards-3">
-                    <a class="card" href="domain-entomology.html"><div class="icon">🐜</div><h3>Entomology &amp; Social Insects</h3><p>Harvester ants, collective behavior, dopamine regulation of foraging, brain gene expression. <em>Cell, iScience, Communications Biology.</em></p><span class="tag">21 works</span></a>
-                    <a class="card" href="domain-active-inference.html"><div class="icon">🧠</div><h3>Active Inference &amp; FEP</h3><p>CEREBRUM, GNN, federated inference, Thoughtseeds, Bayesian modeling. With Karl Friston et al. <em>Entropy, Neuroscience &amp; Biobehavioral Reviews.</em></p><span class="tag">28 works</span></a>
-                    <a class="card" href="domain-cognitive-security.html"><div class="icon">🛡</div><h3>Cognitive Security</h3><p>COGSEC.org, P3IF, narrative security, ATLAS. 3 books: IRT-20, NIM-21, CAT-22. Cognitive Integrity Framework.</p><span class="tag">20 works</span></a>
-                    <a class="card" href="domain-art-synergetics.html"><div class="icon">🎨</div><h3>Art, Philosophy &amp; Synergetics</h3><p>William Blake, Buckminster Fuller, quadray/IVM math, Partner Pen Play, and early Ethereum art NFTs.</p><span class="tag">15 works</span></a>
-                    <a class="card" href="domain-computational.html"><div class="icon">💻</div><h3>Computational Frameworks</h3><p>Python, Rust, Go, TypeScript, Julia. AI-native workspaces, steganography, research templates, and document tooling.</p><span class="tag">7 works · 48 repos</span></a>
-                    <a class="card" href="pages/BIBLIOGRAPHY.md#-genetics--biomedical"><div class="icon">🧬</div><h3>Genetics &amp; Biomedicine</h3><p>Honey bee evolution, nuclear structure, gene expression variation, Ehrlichial infection mechanisms.</p><span class="tag">9 works</span></a>
+                    <a class="card" href="domain-entomology.html"><div class="icon">ENT</div><h3>Entomology &amp; Social Insects</h3><p>Harvester ants, collective behavior, dopamine regulation of foraging, brain gene expression. <em>Cell, iScience, Communications Biology.</em></p><span class="tag">21 works</span></a>
+                    <a class="card" href="domain-active-inference.html"><div class="icon">FEP</div><h3>Active Inference &amp; FEP</h3><p>CEREBRUM, GNN, federated inference, Thoughtseeds, Bayesian modeling. With Karl Friston et al. <em>Entropy, Neuroscience &amp; Biobehavioral Reviews.</em></p><span class="tag">28 works</span></a>
+                    <a class="card" href="domain-cognitive-security.html"><div class="icon">SEC</div><h3>Cognitive Security</h3><p>COGSEC.org, P3IF, narrative security, ATLAS. 3 books: IRT-20, NIM-21, CAT-22. Cognitive Integrity Framework.</p><span class="tag">20 works</span></a>
+                    <a class="card" href="domain-art-synergetics.html"><div class="icon">ART</div><h3>Art, Philosophy &amp; Synergetics</h3><p>William Blake, Buckminster Fuller, quadray/IVM math, Partner Pen Play, and early Ethereum art NFTs.</p><span class="tag">15 works</span></a>
+                    <a class="card" href="domain-computational.html"><div class="icon">COM</div><h3>Computational Frameworks</h3><p>Python, Rust, Go, TypeScript, Julia. AI-native workspaces, steganography, research templates, and document tooling.</p><span class="tag">7 works · 48 repos</span></a>
+                    <a class="card" href="pages/BIBLIOGRAPHY.md#-genetics--biomedical"><div class="icon">BIO</div><h3>Genetics &amp; Biomedicine</h3><p>Honey bee evolution, nuclear structure, gene expression variation, Ehrlichial infection mechanisms.</p><span class="tag">9 works</span></a>
                 </div>
                 <p class="text-center mt-2"><a href="domains.html" class="btn btn-gold">Explore domain pages</a></p>
             </div>
@@ -369,9 +360,9 @@
                 <div class="pub-item"><span class="title">Shared protentions in multi-agent Active Inference</span><span class="venue">Entropy, 2024</span><span class="cites">—</span></div>
             </div>
             <p style="text-align:center;margin-top:1.5rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-                <a href="publications.html" class="btn btn-gold">📚 Full bibliography (117 works)</a>
-                <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" class="btn btn-outline">📊 Google Scholar</a>
-                <a href="https://orcid.org/0000-0001-6232-9096" class="btn btn-outline">🆔 ORCID Profile</a>
+                <a href="publications.html" class="btn btn-gold">Full bibliography (117 works)</a>
+                <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" class="btn btn-outline">Google Scholar</a>
+                <a href="https://orcid.org/0000-0001-6232-9096" class="btn btn-outline">ORCID Profile</a>
             </p>
         </section>
 
@@ -384,23 +375,23 @@
                     <div class="section-divider"></div>
                 </div>
                 <div class="art-highlight">
-                    <div class="hl-label">🎨 Curio Cards — Early Ethereum Art NFTs</div>
+                    <div class="hl-label">Curio Cards — Early Ethereum Art NFTs</div>
                     <div class="hl-sub">Three pen drawings (Cards 24, 25, 26) from a collection of 30 cards by 7 artists · Predates CryptoPunks by ~6 weeks · Christie's sale: $1.2M (393 ETH)</div>
                 </div>
                 <div class="art-cards">
                     <div class="art-card"><div class="card-num">#24</div><div class="card-title">Complexity</div><div class="card-detail">333 copies · Geometric fields inspired by brains &amp; ant colonies</div></div>
                     <div class="art-card"><div class="card-num">#25</div><div class="card-title">Passion</div><div class="card-detail">222 copies · Rhythmic patterns on complexity &amp; education</div></div>
                     <div class="art-card"><div class="card-num">#26</div><div class="card-title">Rarest Card</div><div class="card-detail">106 copies · Last sale: 17.9 ETH (&gt;$44,000)</div></div>
-                    <div class="art-card"><div class="card-num" style="font-size:1.5rem">🏛</div><div class="card-title">Christie's Auction</div><div class="card-detail">Oct 1, 2021 · First ETH auction at Christie's · $1.2M (393 ETH)</div></div>
+                    <div class="art-card"><div class="card-num" style="font-size:1.5rem">ETH</div><div class="card-title">Christie's Auction</div><div class="card-detail">Oct 1, 2021 · First ETH auction at Christie's · $1.2M (393 ETH)</div></div>
                 </div>
                 <p style="text-align:center;margin-top:2rem;font-size:.85rem;color:var(--text-secondary)">
                     942 catalogued pen-and-ink drawings exploring science, consciousness, and complex systems. Published in Taschen's "On NFT" (2024).
                 </p>
                 <p style="text-align:center;margin-top:1.25rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-                    <a href="art.html" class="btn btn-gold">🖼 Browse Full Gallery (942 Works)</a>
-                    <a href="https://curio.cards/artist/danielfriedman/" class="btn btn-outline">🎨 Curio Cards</a>
-                    <a href="https://www.christies.com/en/lot/lot-6337619" class="btn btn-outline">🏛 Christie's Lot</a>
-                    <a href="https://www.flickr.com/photos/43693624@N07/" class="btn btn-outline">📷 Flickr Archive</a>
+                    <a href="art.html" class="btn btn-gold">Browse Full Gallery (942 Works)</a>
+                    <a href="https://curio.cards/artist/danielfriedman/" class="btn btn-outline">Curio Cards</a>
+                    <a href="https://www.christies.com/en/lot/lot-6337619" class="btn btn-outline">Christie's Lot</a>
+                    <a href="https://www.flickr.com/photos/43693624@N07/" class="btn btn-outline">Flickr Archive</a>
                 </p>
             </div>
         </div>
@@ -413,11 +404,11 @@
                 <div class="section-divider"></div>
             </div>
             <div class="media-tabs">
-                <button class="active" onclick="showTab(event,'video')">🎥 Video (700+)</button>
-                <button onclick="showTab(event,'podcasts')">🎙 Podcasts</button>
-                <button onclick="showTab(event,'talks')">🎤 Talks</button>
-                <button onclick="showTab(event,'interviews')">📝 Interviews</button>
-                <button onclick="showTab(event,'press')">📰 Press</button>
+                <button class="active" onclick="showTab(event,'video')">Video (700+)</button>
+                <button onclick="showTab(event,'podcasts')">Podcasts</button>
+                <button onclick="showTab(event,'talks')">Talks</button>
+                <button onclick="showTab(event,'interviews')">Interviews</button>
+                <button onclick="showTab(event,'press')">Press</button>
             </div>
             <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
                 <div id="tab-video" class="media-panel active">
@@ -460,12 +451,12 @@
                     <div class="section-divider"></div>
                 </div>
                 <div class="cards cards-3">
-                    <div class="card"><div class="icon">🏫</div><h3>BIOL-1: General Biology</h3><p>College of the Redwoods, Pelican Bay (Spring 2026). <a href="https://github.com/docxology/biol-1" style="color:var(--gold)">GitHub</a></p></div>
-                    <div class="card"><div class="icon">🦴</div><h3>BIOL-8: Human Biology</h3><p>College of the Redwoods (Spring 2026). <a href="https://github.com/docxology/biol-8" style="color:var(--gold)">GitHub</a></p></div>
-                    <div class="card"><div class="icon">🧠</div><h3>AII Textbook Group</h3><p>10 cohorts through 2026. Deep study of the Active Inference textbook (<a href="https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind" target="_blank" rel="noopener" style="color:var(--gold)">Parr, Pezzulo, Friston 2022</a> and <a href="https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/" target="_blank" rel="noopener" style="color:var(--gold)">Namjoshi 2026</a>).</p></div>
-                    <div class="card"><div class="icon">🎓</div><h3>AII Programs</h3><p>Internship (since 2022), Fellows Program (5 fellows by Nov 2024), Mentorship Program (2024).</p></div>
-                    <div class="card"><div class="icon">💬</div><h3>Communication for Remote Teams</h3><p><a href="https://www.udemy.com/course/communication-for-remote-teams/" style="color:var(--gold)">Udemy course</a> on distributed team collaboration.</p></div>
-                    <div class="card"><div class="icon">📹</div><h3>700+ Livestreams</h3><p>500+ Active Inference Journal sessions + 200+ personal YouTube livestreams on research &amp; art.</p></div>
+                    <div class="card"><div class="icon">B1</div><h3>BIOL-1: General Biology</h3><p>College of the Redwoods, Pelican Bay (Spring 2026). <a href="https://github.com/docxology/biol-1" style="color:var(--gold)">GitHub</a></p></div>
+                    <div class="card"><div class="icon">B8</div><h3>BIOL-8: Human Biology</h3><p>College of the Redwoods (Spring 2026). <a href="https://github.com/docxology/biol-8" style="color:var(--gold)">GitHub</a></p></div>
+                    <div class="card"><div class="icon">AII</div><h3>AII Textbook Group</h3><p>10 cohorts through 2026. Deep study of the Active Inference textbook (<a href="https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind" target="_blank" rel="noopener" style="color:var(--gold)">Parr, Pezzulo, Friston 2022</a> and <a href="https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/" target="_blank" rel="noopener" style="color:var(--gold)">Namjoshi 2026</a>).</p></div>
+                    <div class="card"><div class="icon">EDU</div><h3>AII Programs</h3><p>Internship (since 2022), Fellows Program (5 fellows by Nov 2024), Mentorship Program (2024).</p></div>
+                    <div class="card"><div class="icon">COM</div><h3>Communication for Remote Teams</h3><p><a href="https://www.udemy.com/course/communication-for-remote-teams/" style="color:var(--gold)">Udemy course</a> on distributed team collaboration.</p></div>
+                    <div class="card"><div class="icon">VID</div><h3>700+ Livestreams</h3><p>500+ Active Inference Journal sessions + 200+ personal YouTube livestreams on research &amp; art.</p></div>
                 </div>
             </div>
         </div>
@@ -478,29 +469,29 @@
                 <div class="section-divider"></div>
             </div>
             <div class="connect-grid">
-                <div class="connect-card" style="border-color:rgba(192,57,43,0.25)"><div class="icon">🔬</div><h3>Research Consulting</h3><p>Active Inference · Bayesian modeling · Computational biology · Cognitive security · Multi-agent systems</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
-                <div class="connect-card" style="border-color:rgba(201,168,76,0.25)"><div class="icon">🎓</div><h3>Tutoring &amp; Mentorship</h3><p>Active Inference fundamentals · Python/Rust AI frameworks · Scientific writing · Bayesian methods</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
-                <div class="connect-card" style="border-color:rgba(176,170,162,0.25)"><div class="icon">💬</div><h3>Speaking &amp; Workshops</h3><p>Conference keynotes · Team workshops on AI/ML · Course development · Institutional training</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
-                <div class="connect-card" style="border-color:rgba(201,168,76,0.2)"><div class="icon">🤝</div><h3>Research Collaboration</h3><p>Joint publications · Framework co-development · Grant partnerships · Open-source contributions</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
+                <div class="connect-card" style="border-color:rgba(192,57,43,0.25)"><div class="icon">LAB</div><h3>Research Consulting</h3><p>Active Inference · Bayesian modeling · Computational biology · Cognitive security · Multi-agent systems</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
+                <div class="connect-card" style="border-color:rgba(201,168,76,0.25)"><div class="icon">MENT</div><h3>Tutoring &amp; Mentorship</h3><p>Active Inference fundamentals · Python/Rust AI frameworks · Scientific writing · Bayesian methods</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
+                <div class="connect-card" style="border-color:rgba(176,170,162,0.25)"><div class="icon">TALK</div><h3>Speaking &amp; Workshops</h3><p>Conference keynotes · Team workshops on AI/ML · Course development · Institutional training</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
+                <div class="connect-card" style="border-color:rgba(201,168,76,0.2)"><div class="icon">COOP</div><h3>Research Collaboration</h3><p>Joint publications · Framework co-development · Grant partnerships · Open-source contributions</p><a href="mailto:Daniel@ActiveInference.Institute" class="btn btn-primary">Get in Touch</a></div>
             </div>
             <div style="text-align:center;margin-top:2.5rem">
                 <p style="color:var(--text-secondary);font-size:.9rem;margin-bottom:1rem">
-                    📧 <a href="mailto:Daniel@ActiveInference.Institute">Daniel@ActiveInference.Institute</a> · <a href="mailto:danielarifriedman@gmail.com">danielarifriedman@gmail.com</a>
+                    <a href="mailto:Daniel@ActiveInference.Institute">Daniel@ActiveInference.Institute</a> · <a href="mailto:danielarifriedman@gmail.com">danielarifriedman@gmail.com</a>
                 </p>
                 <div class="profile-links" style="justify-content:center">
-                    <a href="publications.html">📚 Bibliography</a>
-                    <a href="works/">📄 Works</a>
-                    <a href="domains.html">🧭 Domains</a>
-                    <a href="software.html">💻 Software</a>
+                    <a href="publications.html">Bibliography</a>
+                    <a href="works/">Works</a>
+                    <a href="domains.html">Domains</a>
+                    <a href="software.html">Software</a>
                     <a href="repositories.html">Repository Inventory</a>
                     <a href="search.html">Search</a>
-                    <a href="updates.html">📝 Updates</a>
-                    <a href="https://github.com/docxology/docxology/blob/main/pages/PROFILE.md">👤 Profile</a>
-                    <a href="collaborators.html">🤝 Collaborators</a>
-                    <a href="media.html">🎥 Media</a>
-                    <a href="discovery.html">🧭 Discovery</a>
-                    <a href="https://github.com/docxology/docxology/blob/main/pages/CITE_VERIFY.md">🧾 Cite &amp; Verify</a>
-                    <a href="https://github.com/docxology/docxology/blob/main/pages/LINKS.md">🔗 All Links</a>
+                    <a href="updates.html">Updates</a>
+                    <a href="https://github.com/docxology/docxology/blob/main/pages/PROFILE.md">Profile</a>
+                    <a href="collaborators.html">Collaborators</a>
+                    <a href="media.html">Media</a>
+                    <a href="discovery.html">Discovery</a>
+                    <a href="https://github.com/docxology/docxology/blob/main/pages/CITE_VERIFY.md">Cite &amp; Verify</a>
+                    <a href="https://github.com/docxology/docxology/blob/main/pages/LINKS.md">All Links</a>
                 </div>
             </div>
         </section>
@@ -521,6 +512,7 @@
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
 
+    <script type="module" src="js/hero-glitch.js?v=newspaper-glitch-20260528e"></script>
     <script>
     function showTab(e, name) {
         document.querySelectorAll('.media-panel').forEach(p => p.classList.remove('active'));

@@ -115,7 +115,13 @@ ARTIFACTS = [
     {
         "name": "Paired publication sync report",
         "outputs": [_latest_report("paired_publications_*.json", "reports/paired_publications_2026-05-27.json")],
-        "sources": ["GitHub Releases API", "Zenodo Records API", "code/src/publication_pairing.py", "code/orchestrators/sync_paired_publications.py"],
+        "sources": [
+            "GitHub Releases API",
+            "Zenodo Records API",
+            "docs/PUBLICATION_SYNC.md",
+            "code/src/publication_pairing.py",
+            "code/orchestrators/sync_paired_publications.py",
+        ],
         "command": "python3 code/orchestrators/sync_paired_publications.py",
     },
     {

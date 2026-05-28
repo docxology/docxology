@@ -41,6 +41,7 @@
 
 - Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
 - Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
+- Uses [docs/PUBLICATION_SYNC.md](docs/PUBLICATION_SYNC.md) and [sync_paired_publications.py](code/orchestrators/sync_paired_publications.py) to check GitHub releases against Zenodo records, apply strong publication pairs, and leave ambiguous pairs for review
 - Runs [sync_software_html.py](papers/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
 - Runs [build_resume.py](code/orchestrators/build_resume.py) with `--all` after edits to [resume/source.json](resume/source.json), bibliography/software data, Scholar metrics, or claim data so [data/resume.json](data/resume.json), plaintext variants, and [resume/resume.pdf](resume/resume.pdf) stay aligned
 - Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **117** folders as of 2026-05-27)
@@ -94,6 +95,7 @@ docxology/
 ├── resume/            ← Structured resume/CV source plus generated plaintext variants and PDF
 ├── reports/           ← Public-source snapshots, reconciliation reports, link reports, accessibility reports, and visual QA screenshots
 ├── docs/              ← Documentation for the entire repository (see docs/AGENTS.md)
+│   └── PUBLICATION_SYNC.md ← GitHub + Zenodo publication intake and refresh runbook
 ├── code/              ← Repository source code and executable orchestrators (see code/AGENTS.md)
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules

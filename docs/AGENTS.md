@@ -2,7 +2,7 @@
 
 Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs).
 
-See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Add long-form architecture or runbooks here when they outgrow the root index.
+See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`PUBLICATION_SYNC.md`](PUBLICATION_SYNC.md) for the GitHub + Zenodo publication intake workflow. Add long-form architecture or runbooks here when they outgrow the root index.
 
 **Volatile counts:** before editing totals in this file or root `README.md`, verify [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (header/summary/table) and [`papers/README.md`](../papers/README.md) / [`papers/AGENTS.md`](../papers/AGENTS.md)—those surfaces drift easily when only one file is updated.
 

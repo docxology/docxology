@@ -66,8 +66,8 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
         ],
         "publications.html": [
             (
-                r"📊 \d+ citations · h-index \d+ · i10-index \d+(?: \(as of [\d-]+\))?",
-                f"📊 {cit} citations · h-index {h} · i10-index {i10} (as of {as_of})",
+                r"(?:📊 )?\d+ citations · h-index \d+ · i10-index \d+(?: \(as of [\d-]+\))?",
+                f"{cit} citations · h-index {h} · i10-index {i10} (as of {as_of})",
             ),
         ],
         "llms.txt": [

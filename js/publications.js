@@ -12,6 +12,18 @@ const DOMAIN_KW = {
     '🎨': 'art synergetics blake buckminster',
 };
 
+const DOMAIN_LABELS = {
+    '🐜': 'ENT',
+    '🧠': 'FEP',
+    '🛡️': 'SEC',
+    '🛡': 'SEC',
+    '💻': 'COM',
+    '🌍': 'AII',
+    '🎥': 'MED',
+    '🧬': 'BIO',
+    '🎨': 'ART',
+};
+
 let currentTypeFilter = 'all';
 let currentDomainFilter = 'all';
 let currentYearFilter = 'all';
@@ -175,7 +187,7 @@ function renderTable() {
                     '<tr>' +
                     `<td class="td-num">${p.num}</td>` +
                     `<td class="td-year">${p.year}</td>` +
-                    `<td class="td-domain">${esc(p.domain)}</td>` +
+                    `<td class="td-domain">${esc(DOMAIN_LABELS[p.domain] || p.domain)}</td>` +
                     `<td class="td-type"><span class="type-badge ${typeClass(p.type)}">${esc(p.type)}</span></td>` +
                     `<td class="td-title"><a href="${esc(p.doi || p.docs || '#')}" target="_blank" rel="noopener">${title}</a></td>` +
                     `<td class="td-venue">${esc(p.venue)}</td>` +
