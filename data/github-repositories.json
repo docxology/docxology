@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T22:58:23Z",
+  "generated_at": "2026-05-28T12:10:23Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -9,7 +9,7 @@
     "docxology": {
       "login": "docxology",
       "html_url": "https://github.com/docxology",
-      "public_repos": 298,
+      "public_repos": 299,
       "updated_at": "2026-05-06T12:41:40Z"
     },
     "ActiveInferenceInstitute": {
@@ -20,16 +20,16 @@
     }
   },
   "counts": {
-    "total": 349,
-    "docxology": 298,
+    "total": 350,
+    "docxology": 299,
     "ActiveInferenceInstitute": 51,
     "curated": 82,
-    "uncataloged": 267,
+    "uncataloged": 268,
     "forks": 248,
     "archived": 0,
-    "public": 349,
+    "public": 350,
     "private": 0,
-    "recently_updated": 83
+    "recently_updated": 84
   },
   "warnings": [],
   "repositories": [
@@ -1211,8 +1211,8 @@
       "license": "MIT",
       "default_branch": "main",
       "created_at": "2026-05-27T21:43:07Z",
-      "updated_at": "2026-05-27T22:58:24Z",
-      "pushed_at": "2026-05-27T22:58:20Z",
+      "updated_at": "2026-05-27T23:17:12Z",
+      "pushed_at": "2026-05-27T23:17:08Z",
       "curated": false,
       "recently_updated": true
     },
@@ -2619,6 +2619,33 @@
       "recently_updated": false
     },
     {
+      "name": "BeeStack",
+      "full_name": "docxology/BeeStack",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/BeeStack",
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "",
+      "default_branch": "main",
+      "created_at": "2026-05-13T15:40:32Z",
+      "updated_at": "2026-05-28T00:34:03Z",
+      "pushed_at": "2026-05-28T00:34:00Z",
+      "curated": false,
+      "recently_updated": true
+    },
+    {
       "name": "biol-1",
       "full_name": "docxology/biol-1",
       "owner": "docxology",
@@ -3736,8 +3763,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-03-20T21:31:03Z",
-      "updated_at": "2026-05-27T22:20:57Z",
-      "pushed_at": "2026-05-27T22:20:53Z",
+      "updated_at": "2026-05-28T00:57:41Z",
+      "pushed_at": "2026-05-28T00:57:35Z",
       "curated": false,
       "recently_updated": true
     },
@@ -9001,7 +9028,7 @@
       "default_branch": "main",
       "created_at": "2026-05-27T18:34:18Z",
       "updated_at": "2026-05-27T18:35:18Z",
-      "pushed_at": "2026-05-27T18:36:54Z",
+      "pushed_at": "2026-05-27T23:58:43Z",
       "curated": false,
       "recently_updated": true
     },
@@ -9028,7 +9055,7 @@
       "default_branch": "main",
       "created_at": "2026-05-27T18:34:15Z",
       "updated_at": "2026-05-27T18:35:17Z",
-      "pushed_at": "2026-05-27T18:36:18Z",
+      "pushed_at": "2026-05-27T23:59:38Z",
       "curated": false,
       "recently_updated": true
     },
@@ -9082,7 +9109,7 @@
       "default_branch": "main",
       "created_at": "2026-05-27T17:31:44Z",
       "updated_at": "2026-05-27T17:32:12Z",
-      "pushed_at": "2026-05-27T18:51:50Z",
+      "pushed_at": "2026-05-28T00:01:07Z",
       "curated": false,
       "recently_updated": true
     },
@@ -9109,7 +9136,7 @@
       "default_branch": "main",
       "created_at": "2026-05-27T18:34:13Z",
       "updated_at": "2026-05-27T18:35:15Z",
-      "pushed_at": "2026-05-27T18:48:48Z",
+      "pushed_at": "2026-05-27T23:56:40Z",
       "curated": false,
       "recently_updated": true
     },
@@ -9136,7 +9163,7 @@
       "default_branch": "main",
       "created_at": "2026-05-27T21:32:50Z",
       "updated_at": "2026-05-27T21:32:55Z",
-      "pushed_at": "2026-05-27T22:02:24Z",
+      "pushed_at": "2026-05-28T00:03:32Z",
       "curated": false,
       "recently_updated": true
     },

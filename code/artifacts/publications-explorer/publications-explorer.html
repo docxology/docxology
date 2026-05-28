@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications Explorer — Artifact</title>
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528e">
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528f">
     <style>
         .artifact-shell{max-width:1100px;margin:0 auto;padding:6rem 1.5rem 3rem}
         .artifact-grid{display:grid;gap:.75rem;margin-top:1rem}
@@ -37,7 +37,9 @@
             ).join('') || '<p>No matches.</p>';
         }
         document.getElementById('q').addEventListener('input', render);
-        fetch('/data/works.json').then(r => r.json()).then(d => { works = d.works || []; render(); });
+        fetch('/data/works.json?v=newspaper-glitch-20260528f', { cache: 'no-store' })
+            .then(r => r.json())
+            .then(d => { works = d.works || []; render(); });
     </script>
 </body>
 </html>

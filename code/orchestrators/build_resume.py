@@ -1068,26 +1068,34 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta name="description" content="Hashes, source manifest, file sizes, and public links for Daniel Ari Friedman's generated structured resume/CV.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{VERIFY_URL}">
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528e">
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528f">
     <style>
-        :root {{ --resume-red: #A6192E; --resume-red-dark: #7F101F; --resume-red-pale: #FFF1F3; }}
-        body {{ background: #fff; color: #111; }}
+        :root {{
+            --resume-red: #ff0000;
+            --resume-red-dark: #ff0000;
+            --resume-paper: #0b0b0b;
+            --resume-panel: #111111;
+            --resume-ink: #f2f2f2;
+            --resume-muted: #b8b8b8;
+            --resume-rule: rgba(255,255,255,.22);
+        }}
+        body {{ background: var(--bg-primary, #050505); color: var(--resume-ink); }}
         .verify-shell {{ width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 3rem; }}
-        .verify-hero {{ border-bottom: 4px solid var(--resume-red); padding: 2rem 0 1rem; }}
-        .verify-hero h1 {{ color: #111; font-size: clamp(2rem, 6vw, 4.5rem); line-height: .95; margin: 0; }}
-        .verify-hero p {{ color: #333; max-width: 760px; font-size: 1rem; }}
+        .verify-hero {{ border-top: 4px double var(--resume-rule); border-bottom: 4px double var(--resume-rule); padding: 2rem 0 1rem; }}
+        .verify-hero h1 {{ color: var(--resume-ink); font-size: clamp(2rem, 6vw, 4.5rem); line-height: .95; margin: 0; }}
+        .verify-hero p {{ color: var(--resume-muted); max-width: 760px; font-size: 1rem; }}
         .hash-grid, .metric-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .8rem; margin: 1rem 0; }}
-        .hash-card, .metric-card, .flow-card {{ border: 1px solid var(--resume-red); background: var(--resume-red-pale); padding: .85rem; border-radius: 6px; }}
-        .hash-card span, .metric-card span {{ color: var(--resume-red-dark); display: block; font-size: .76rem; font-weight: 700; text-transform: uppercase; }}
-        .hash-card code {{ color: #111; overflow-wrap: anywhere; font-size: .78rem; }}
+        .hash-card, .metric-card, .flow-card {{ border: 1px solid var(--resume-rule); background: var(--resume-panel); padding: .85rem; border-radius: 3px; box-shadow: none; }}
+        .hash-card span, .metric-card span {{ color: var(--resume-red); display: block; font-size: .76rem; font-weight: 700; text-transform: uppercase; }}
+        .hash-card code {{ color: var(--resume-ink); overflow-wrap: anywhere; font-size: .78rem; }}
         .metric-card strong {{ display: block; font-size: 2rem; line-height: 1.1; }}
         table {{ border-collapse: collapse; width: 100%; margin-top: 1rem; }}
-        th {{ background: var(--resume-red-dark); color: #fff; text-align: left; }}
-        th, td {{ border: 1px solid #e8b7bf; padding: .55rem; vertical-align: top; }}
+        th {{ background: #141414; color: var(--resume-ink); text-align: left; border-bottom: 2px solid var(--resume-red); }}
+        th, td {{ border: 1px solid var(--resume-rule); padding: .55rem; vertical-align: top; }}
         td code {{ overflow-wrap: anywhere; }}
         .flow-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .8rem; }}
-        .flow-card h3 {{ margin: 0 0 .3rem; color: var(--resume-red-dark); }}
-        a {{ color: var(--resume-red-dark); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; }}
+        .flow-card h3 {{ margin: 0 0 .3rem; color: var(--resume-ink); }}
+        a {{ color: var(--resume-red); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }}
     </style>
 </head>
 <body>

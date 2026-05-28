@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-05-27T23:24:42Z
+Generated: 2026-05-28T12:28:56Z
 
-Current public metrics: 124 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 130 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (117)
+WORKS AND PUBLICATIONS (123)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -173,6 +173,12 @@ WORKS AND PUBLICATIONS (117)
 [122] 2026 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | Zenodo | 10.5281/zenodo.20417105
 [123] 2026 | Paper | A template/ approach to Reproducible Generative Research | Zenodo | 10.5281/zenodo.20419084
 [124] 2026 | Paper | Active Inference Multi-Track Exemplar | Zenodo | 10.5281/zenodo.20417022
+[125] 2026 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | Zenodo | 10.5281/zenodo.20420357
+[126] 2026 | Paper | Convergence Analysis of Gradient Descent Optimization | Zenodo | 10.5281/zenodo.20420368
+[127] 2026 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | Zenodo | 10.5281/zenodo.20420342
+[128] 2026 | Paper | A template/ approach to Reproducible Generative Research | Zenodo | 10.5281/zenodo.20420387
+[129] 2026 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | Zenodo | 10.5281/zenodo.20420557
+[130] 2026 | Paper | Active Inference Multi-Track Exemplar | Zenodo | 10.5281/zenodo.20420352
 
 SOFTWARE (82)
 -------------

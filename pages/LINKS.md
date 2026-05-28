@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 **Comprehensive directory of all public web presences, profiles, and resources**
 
-*Last updated: 2026-05-15 (fact-checked with public APIs, official profile pages, and the curated bibliography)*
+*Last updated: 2026-05-28 (fact-checked with public APIs, official profile pages, and the curated bibliography)*
 
 [Discovery map](DISCOVERY.md): canonical IDs, machine-readable API endpoints, query recipes, and verification notes for agentic retrieval.
 
@@ -39,7 +39,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | PubMed | [pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | 8 exact-author biomedical records (NCBI E-utilities, May 2026) |
 | Europe PMC | [europepmc.org](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | 10 exact-author results, including preprints (May 2026) |
 | Crossref ORCID API | [api.crossref.org](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | 15 DOI records attached to the ORCID (May 2026) |
-| Zenodo | [zenodo.org](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 36 exact-name records; ORCID-linked API query returns 82 versioned records and software archives (May 2026) |
+| Zenodo | [zenodo.org](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 38 exact-name records; ORCID-linked API query returns 91 versioned records and software archives (May 2026) |
 | Santa Fe Institute | [wiki.santafe.edu](https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman) | SFI events wiki |
 | ISSS Wiki | [wiki.isss.org](https://wiki.isss.org/index.php/Daniel_Friedman) | International Society for the Systems Sciences (member since 2022) |
 | ALIUS Research Group | [aliusresearch.org](https://www.aliusresearch.org/) | Alterations of Consciousness research group — published 4 interviews/papers in ALIUS Bulletin |
@@ -89,9 +89,9 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 286 public repositories, primary development |
+| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 299 public repositories, primary development |
 | GitHub (secondary) | [github.com/danielarifriedman](https://github.com/danielarifriedman) | Secondary profile |
-| Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 50 public repositories; 32 catalogued here with docxology contributions |
+| Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 51 public repositories; 32 catalogued here with docxology contributions |
 | Full Repository Inventory | [repositories.html](../repositories.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated full public GitHub inventory for docxology and AII repositories |
 | Journal-Utilities Zenodo Release | [10.5281/zenodo.18686966](https://doi.org/10.5281/zenodo.18686966) | AII video-processing software release with Daniel Ari Friedman listed as creator |
 | GNN Zenodo Software Release | [10.5281/zenodo.19600217](https://doi.org/10.5281/zenodo.19600217) | Software record for GeneralizedNotationNotation (GNN) |
@@ -184,7 +184,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | File | Description |
 |------|-------------|
 | [README.md](../README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 117 works (Google Scholar totals may lag new deposits) |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 130 works (Google Scholar totals may lag new deposits) |
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
 | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
@@ -208,7 +208,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 117 per-paper folders with documentation |
+| [papers/](../papers/) | 123 per-paper folders with documentation |
 
 ---
 

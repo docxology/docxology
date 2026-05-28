@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*50 original repositories · 32 catalogued Active Inference Institute contributions · AII organization: 50 public repositories · [Full generated repository inventory](../repositories.html)*
+*50 original repositories · 32 catalogued Active Inference Institute contributions · AII account: 51 public repositories · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -32,7 +32,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 ## 🧬 Repositories Owned by docxology
 
-> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 286 total public repos including forks see the [full profile](https://github.com/docxology?tab=repositories) or the [generated full inventory](../repositories.html).
+> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 299 total public repos including forks see the [full profile](https://github.com/docxology?tab=repositories) or the [generated full inventory](../repositories.html).
 
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|:---:|---|
@@ -150,7 +150,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | AII Contributions (non-fork) | 32 | Catalogued repositories with docxology contributions |
 | **Grand Total** | **82** | |
 
-> *For 286 total public repositories including personal forks, see the [generated full inventory](../repositories.html) or the [GitHub profile](https://github.com/docxology?tab=repositories). AII catalog count includes source repositories with docxology contributions; the [AII GitHub API](https://api.github.com/users/ActiveInferenceInstitute) returned 50 public organization repositories on 2026-05-15, including org-level forks and adjacent projects. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
+> *For 299 total public repositories including personal forks, see the [generated full inventory](../repositories.html) or the [GitHub profile](https://github.com/docxology?tab=repositories). AII catalog count includes source repositories with docxology contributions; the [AII GitHub API](https://api.github.com/users/ActiveInferenceInstitute) returned 51 public user-account repositories on 2026-05-28, including account-level forks and adjacent projects. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-27T23:24:35Z",
+  "generated_at": "2026-05-28T12:09:26Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 124,
+  "count": 130,
   "works": [
     {
       "num": 1,
@@ -1737,6 +1737,90 @@
       "url": "https://doi.org/10.5281/zenodo.20417022",
       "doi": "10.5281/zenodo.20417022",
       "docs_path": "papers/2026_ActiveInferenceMulti/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 125,
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible125",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20420357",
+      "doi": "10.5281/zenodo.20420357",
+      "docs_path": "papers/2026_BoundedAutoResearchTiny2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 126,
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent126",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20420368",
+      "doi": "10.5281/zenodo.20420368",
+      "docs_path": "papers/2026_ConvergenceAnalysisGradient2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 127,
+      "citation_key": "Friedman2026EditorialQualityAtScale127",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20420342",
+      "docs_path": "papers/2026_EditorialQualityAt2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 128,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative128",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20420387",
+      "docs_path": "papers/2026_TemplateApproachReproducible2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 129,
+      "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold129",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20420557",
+      "doi": "10.5281/zenodo.20420557",
+      "docs_path": "papers/2026_BeeStack/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 130,
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack130",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Active Inference Multi-Track Exemplar",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20420352",
+      "doi": "10.5281/zenodo.20420352",
+      "docs_path": "papers/2026_ActiveInferenceMulti2/",
       "has_paper_folder": true
     }
   ]

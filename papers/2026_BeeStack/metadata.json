@@ -1,0 +1,74 @@
+{
+  "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.20420557",
+  "doi_url": "https://doi.org/10.5281/zenodo.20420557",
+  "zenodo_record": "https://zenodo.org/records/20420557",
+  "record_id": "20420557",
+  "publication_date": "2026-05-27",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute; Atta Labs",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Chambers, Tucker Cahill",
+      "affiliation": "Atta Labs",
+      "orcid": "0009-0008-3793-7872"
+    }
+  ],
+  "description": "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is traceable from configuration to artifact to manuscript, gaps are catalogued rather than hidden, and the validation rate is a config-band self-test measure, not a biological-realism score. This 1.0 release accompanies the manuscript 'BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation' and includes the combined PDF and the full source archive. Source: https://github.com/docxology/BeeStack",
+  "keywords": [
+    "honeybee",
+    "Apis mellifera",
+    "active inference",
+    "simulation scaffold",
+    "swarm intelligence",
+    "niche construction",
+    "FlyBody",
+    "MuJoCo",
+    "antennal lobe",
+    "mushroom body",
+    "central complex",
+    "waggle dance",
+    "BEEHAVE",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "BeeStack_combined.pdf",
+      "size_bytes": 8059701,
+      "checksum": "md5:e65a35f6c30491c49bc5b33c24ac031a",
+      "download_url": "https://zenodo.org/api/records/20420557/files/BeeStack_combined.pdf/content"
+    },
+    {
+      "name": "BeeStack-1.0.0-source.tar.gz",
+      "size_bytes": 605646,
+      "checksum": "md5:eb170e5bda185e72cb1ca55144c63397",
+      "download_url": "https://zenodo.org/api/records/20420557/files/BeeStack-1.0.0-source.tar.gz/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/BeeStack"
+    }
+  ],
+  "github_repo": "docxology/BeeStack",
+  "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "BeeStack 1.0.0 — Evidence-Typed Honeybee Simulation Scaffold",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-05-28T12:09:09Z"
+}

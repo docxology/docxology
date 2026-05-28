@@ -35,7 +35,7 @@ def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
 
 def datasets() -> list[tuple[str, str, str, str]]:
     return [
-    ("works", "Curated Works Bibliography", "data/works.json", "117 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
+    ("works", "Curated Works Bibliography", "data/works.json", "130 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
     ("software", "Software Catalog", "data/software.json", "82 catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
@@ -147,7 +147,7 @@ def render_html(date_modified: str | None = None) -> str:
     <meta property="og:description" content="Structured JSON datasets for the public research and software index.">
     <meta property="og:url" content="https://danielarifriedman.com/catalog.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
-    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260528e">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260528f">
     <style>.catalog-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}.catalog-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}.catalog-card h2{{font-size:1rem;margin-bottom:.4rem}}.catalog-card p{{color:var(--text-secondary);font-size:.86rem;line-height:1.6}}.catalog-card span{{display:block;margin-top:.75rem;color:var(--text-muted);font-size:.75rem;overflow-wrap:anywhere}}</style>
     <script type="application/ld+json">
 {render_json(date_modified)}

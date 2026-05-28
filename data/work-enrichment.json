@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-28T00:28:33Z",
+  "generated_at": "2026-05-28T12:09:27Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 124,
+  "count": 130,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3098,6 +3098,143 @@
       ],
       "methods": [],
       "source": "papers/2026_ActiveInferenceMulti/README.md"
+    },
+    "Friedman2026BoundedAutoResearchTinyReproducible125": {
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible125",
+      "abstract": "Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but concrete: 2000 training and 500 test images from MNIST handwritten digit database are evaluated by the bounded small MNIST neural-network classification loop. The run evaluates 4 of 5 proposed candidates, including Tiny patch-attention classifier, selects exp-mlp-tanh-64 (MLP, 50890 parameters), and improves test accuracy from 82.6% to 89.4% (6.8% absolute change). The validated diagnostic layer reports macro F1 89.4%, bootstrap accuracy interval 86.4% to 92.0%, Brier score 0.161, negative log likelihood 0.361, top-2 accuracy 95.6%, and exact McNemar p-value 0.000. The same pipeline writes proposal, candidate, run, review, benchmark, ev",
+      "keywords": [
+        "autoresearch",
+        "reproducible research",
+        "machine learning benchmark",
+        "artifact readiness",
+        "human review",
+        "local artifact integrity"
+      ],
+      "findings": [
+        "autoresearch",
+        "reproducible research",
+        "machine learning benchmark",
+        "artifact readiness",
+        "human review"
+      ],
+      "methods": [],
+      "source": "papers/2026_BoundedAutoResearchTiny2/README.md"
+    },
+    "Friedman2026ConvergenceAnalysisGradientDescent126": {
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent126",
+      "abstract": "Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/template code project/scripts/optimization analysis.py and hydrated into the manuscript through scripts/z generate manuscript variables.py, so tables and prose track output/data/optimization results.csv after every pipeline run. We evaluate 6 step sizes from $\\alpha = 0.01$ to $\\alpha = 2.5$, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model. The build chain exercises template infrastructure end-to-end: scientific helpers (infrastructure.scientific.stability, infrastructure.scientific.benchmarking), valid",
+      "keywords": [
+        "optimization algorithms",
+        "gradient descent",
+        "convergence analysis",
+        "numerical methods",
+        "mathematical programming",
+        "reproducible research",
+        "infrastructure automation"
+      ],
+      "findings": [
+        "optimization algorithms",
+        "gradient descent",
+        "convergence analysis",
+        "numerical methods",
+        "mathematical programming"
+      ],
+      "methods": [],
+      "source": "papers/2026_ConvergenceAnalysisGradient2/README.md"
+    },
+    "Friedman2026EditorialQualityAtScale127": {
+      "citation_key": "Friedman2026EditorialQualityAtScale127",
+      "abstract": "Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript,",
+      "keywords": [
+        "prose analysis",
+        "readability",
+        "editorial review",
+        "reproducible research",
+        "manuscript quality"
+      ],
+      "findings": [
+        "prose analysis",
+        "readability",
+        "editorial review",
+        "reproducible research",
+        "manuscript quality"
+      ],
+      "methods": [],
+      "source": "papers/2026_EditorialQualityAt2/README.md"
+    },
+    "Friedman2026TemplateApproachReproducibleGenerative128": {
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative128",
+      "abstract": "Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the researc",
+      "keywords": [
+        "reproducible research",
+        "infrastructure-as-code",
+        "steganography",
+        "cryptographic provenance",
+        "LaTeX rendering",
+        "modular infrastructure",
+        "publication integrity",
+        "zero-mock testing",
+        "thin orchestrator",
+        "two-layer architecture",
+        "FAIR4RS",
+        "research software engineering"
+      ],
+      "findings": [
+        "reproducible research",
+        "infrastructure-as-code",
+        "steganography",
+        "cryptographic provenance",
+        "LaTeX rendering"
+      ],
+      "methods": [],
+      "source": "papers/2026_TemplateApproachReproducible2/README.md"
+    },
+    "Friedman2026BeeStackEvidenceTypedScaffold129": {
+      "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold129",
+      "abstract": "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is traceable from configuration to artifact to manuscript, gaps are catalogued rather than hidden, and the validation rate is a config-band self-test measure, not a biological-realism score. This 1.0 release accompanies the manuscript 'BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation' and includes the combined PDF and the full source archive. Source: https://github.com/docxology/BeeStack",
+      "keywords": [
+        "honeybee",
+        "Apis mellifera",
+        "active inference",
+        "simulation scaffold",
+        "swarm intelligence",
+        "niche construction",
+        "FlyBody",
+        "MuJoCo",
+        "antennal lobe",
+        "mushroom body",
+        "central complex",
+        "waggle dance"
+      ],
+      "findings": [
+        "honeybee",
+        "Apis mellifera",
+        "active inference",
+        "simulation scaffold",
+        "swarm intelligence"
+      ],
+      "methods": [],
+      "source": "papers/2026_BeeStack/README.md"
+    },
+    "Friedman2026ActiveInferenceMultiTrack130": {
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack130",
+      "abstract": "Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml). The first page (00 00 sheaf coverage.md (00 00 sheaf coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time. The T-maze demo aligns with pymdp sophisticated inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated inference). Measured invariant checks: 12 / 12 passed. SI pl",
+      "keywords": [
+        "active inference",
+        "pymdp",
+        "sophisticated inference",
+        "generalized notation notation",
+        "lean"
+      ],
+      "findings": [
+        "active inference",
+        "pymdp",
+        "sophisticated inference",
+        "generalized notation notation",
+        "lean"
+      ],
+      "methods": [],
+      "source": "papers/2026_ActiveInferenceMulti2/README.md"
     }
   }
 }

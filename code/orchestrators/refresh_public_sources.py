@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -22,12 +23,15 @@ USER_AGENT = "docxology-public-source-refresh/1.0 (https://github.com/docxology/
 
 
 def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30) -> dict[str, Any]:
+    headers = {
+        "Accept": accept,
+        "User-Agent": USER_AGENT,
+    }
+    if url.startswith("https://api.github.com/") and os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
     req = urllib.request.Request(
         url,
-        headers={
-            "Accept": accept,
-            "User-Agent": USER_AGENT,
-        },
+        headers=headers,
     )
     with urllib.request.urlopen(req, timeout=timeout) as response:
         return json.loads(response.read().decode("utf-8"))

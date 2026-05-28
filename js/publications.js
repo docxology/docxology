@@ -1,5 +1,14 @@
 /** Publications table: loads catalog from data/works.json (canonical export of BIBLIOGRAPHY.md). */
 let PUBS = [];
+const SCRIPT_QUERY = (() => {
+    const script = document.currentScript || document.querySelector('script[src*="publications.js"]');
+    if (!script) return '';
+    try {
+        return new URL(script.src, window.location.href).search;
+    } catch {
+        return '';
+    }
+})();
 
 const DOMAIN_KW = {
     '🐜': 'entomology ants insect',
@@ -274,7 +283,8 @@ function initPublications(works) {
 }
 
 function loadPublications() {
-    fetch('/data/works.json')
+    const catalogUrl = new URL(`data/works.json${SCRIPT_QUERY}`, window.location.href);
+    fetch(catalogUrl, { cache: 'no-store' })
         .then((response) => {
             if (!response.ok) throw new Error(`works.json HTTP ${response.status}`);
             return response.json();

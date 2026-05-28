@@ -172,10 +172,10 @@ ORGANIZATIONS = [
 CLAIMS = [
     {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 124 works.",
+        "claim": "The curated bibliography contains 130 works.",
         "status": "curated-local",
         "sources": ["pages/BIBLIOGRAPHY.md", "publications.html", "data/works.json"],
-        "checked_at": "2026-05-27",
+        "checked_at": "2026-05-28",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -183,10 +183,10 @@ CLAIMS = [
     },
     {
         "id": "paper-folder-count",
-        "claim": "The repository contains 117 per-paper documentation folders.",
+        "claim": "The repository contains 123 per-paper documentation folders.",
         "status": "curated-local",
         "sources": ["papers/", "papers/README.md", "papers/paper_metadata.json"],
-        "checked_at": "2026-05-27",
+        "checked_at": "2026-05-28",
         "confidence": "high",
         "verification_method": "Folder inventory and paper metadata count.",
         "maintenance_owner": "MAINTAINER",
@@ -194,10 +194,10 @@ CLAIMS = [
     },
     {
         "id": "docxology-github-public-repos",
-        "claim": "The docxology GitHub profile has 298 public repositories.",
+        "claim": "The docxology GitHub profile has 299 public repositories.",
         "status": "public-api",
-        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-05-27.json"],
-        "checked_at": "2026-05-27",
+        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-05-28.json"],
+        "checked_at": "2026-05-28",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response.",
         "maintenance_owner": "INTEGRATOR",
@@ -209,9 +209,9 @@ CLAIMS = [
         "status": "public-api",
         "sources": [
             "https://api.github.com/users/ActiveInferenceInstitute",
-            "reports/public_source_snapshot_2026-05-27.json"
+            "reports/public_source_snapshot_2026-05-28.json"
         ],
-        "checked_at": "2026-05-27",
+        "checked_at": "2026-05-28",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
         "maintenance_owner": "INTEGRATOR",

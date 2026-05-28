@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation"
+version: "1.0"
+date-released: 2026-05-27
+doi: 10.5281/zenodo.20420557
+url: "https://doi.org/10.5281/zenodo.20420557"
+repository-code: "https://github.com/docxology/BeeStack"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20420557
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/20420557"
+    description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/BeeStack/releases/tag/v1.0.0"
+    description: "GitHub release"

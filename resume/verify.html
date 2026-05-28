@@ -7,26 +7,34 @@
     <meta name="description" content="Hashes, source manifest, file sizes, and public links for Daniel Ari Friedman's generated structured resume/CV.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/resume/verify.html">
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528e">
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528f">
     <style>
-        :root { --resume-red: #A6192E; --resume-red-dark: #7F101F; --resume-red-pale: #FFF1F3; }
-        body { background: #fff; color: #111; }
+        :root {
+            --resume-red: #ff0000;
+            --resume-red-dark: #ff0000;
+            --resume-paper: #0b0b0b;
+            --resume-panel: #111111;
+            --resume-ink: #f2f2f2;
+            --resume-muted: #b8b8b8;
+            --resume-rule: rgba(255,255,255,.22);
+        }
+        body { background: var(--bg-primary, #050505); color: var(--resume-ink); }
         .verify-shell { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 3rem; }
-        .verify-hero { border-bottom: 4px solid var(--resume-red); padding: 2rem 0 1rem; }
-        .verify-hero h1 { color: #111; font-size: clamp(2rem, 6vw, 4.5rem); line-height: .95; margin: 0; }
-        .verify-hero p { color: #333; max-width: 760px; font-size: 1rem; }
+        .verify-hero { border-top: 4px double var(--resume-rule); border-bottom: 4px double var(--resume-rule); padding: 2rem 0 1rem; }
+        .verify-hero h1 { color: var(--resume-ink); font-size: clamp(2rem, 6vw, 4.5rem); line-height: .95; margin: 0; }
+        .verify-hero p { color: var(--resume-muted); max-width: 760px; font-size: 1rem; }
         .hash-grid, .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .8rem; margin: 1rem 0; }
-        .hash-card, .metric-card, .flow-card { border: 1px solid var(--resume-red); background: var(--resume-red-pale); padding: .85rem; border-radius: 6px; }
-        .hash-card span, .metric-card span { color: var(--resume-red-dark); display: block; font-size: .76rem; font-weight: 700; text-transform: uppercase; }
-        .hash-card code { color: #111; overflow-wrap: anywhere; font-size: .78rem; }
+        .hash-card, .metric-card, .flow-card { border: 1px solid var(--resume-rule); background: var(--resume-panel); padding: .85rem; border-radius: 3px; box-shadow: none; }
+        .hash-card span, .metric-card span { color: var(--resume-red); display: block; font-size: .76rem; font-weight: 700; text-transform: uppercase; }
+        .hash-card code { color: var(--resume-ink); overflow-wrap: anywhere; font-size: .78rem; }
         .metric-card strong { display: block; font-size: 2rem; line-height: 1.1; }
         table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-        th { background: var(--resume-red-dark); color: #fff; text-align: left; }
-        th, td { border: 1px solid #e8b7bf; padding: .55rem; vertical-align: top; }
+        th { background: #141414; color: var(--resume-ink); text-align: left; border-bottom: 2px solid var(--resume-red); }
+        th, td { border: 1px solid var(--resume-rule); padding: .55rem; vertical-align: top; }
         td code { overflow-wrap: anywhere; }
         .flow-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .8rem; }
-        .flow-card h3 { margin: 0 0 .3rem; color: var(--resume-red-dark); }
-        a { color: var(--resume-red-dark); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; }
+        .flow-card h3 { margin: 0 0 .3rem; color: var(--resume-ink); }
+        a { color: var(--resume-red); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
     </style>
 </head>
 <body>
@@ -34,14 +42,14 @@
         <header class="verify-hero">
             <p><strong>Public Structured CV Verification</strong></p>
             <h1>Resume Verification</h1>
-            <p>Generated 2026-05-27T23:24:42Z. This page records the input source manifest, generated JSON hash, final PDF hash, counts, sizes, and public artifact links.</p>
+            <p>Generated 2026-05-28T12:28:56Z. This page records the input source manifest, generated JSON hash, final PDF hash, counts, sizes, and public artifact links.</p>
         </header>
 
         <section aria-labelledby="artifacts">
             <h2 id="artifacts">Artifacts</h2>
             <div class="flow-grid">
-                <article class="flow-card"><h3>Structured JSON</h3><p><a href="/data/resume.json">/data/resume.json</a></p><p>173,877 bytes</p></article>
-                <article class="flow-card"><h3>Public PDF</h3><p><a href="/resume/resume.pdf">/resume/resume.pdf</a></p><p>257,629 bytes</p></article>
+                <article class="flow-card"><h3>Structured JSON</h3><p><a href="/data/resume.json">/data/resume.json</a></p><p>176,843 bytes</p></article>
+                <article class="flow-card"><h3>Public PDF</h3><p><a href="/resume/resume.pdf">/resume/resume.pdf</a></p><p>259,613 bytes</p></article>
                 <article class="flow-card"><h3>Verification URL</h3><p><a href="/resume/verify.html">/resume/verify.html</a></p><p>https://danielarifriedman.com/resume/verify.html</p></article>
             </div>
         </section>
@@ -49,9 +57,9 @@
         <section aria-labelledby="hashes">
             <h2 id="hashes">Hashes</h2>
             <div class="hash-grid">
-                <article class="hash-card"><span>Source Manifest SHA-256</span><code>5b9efd76e65f2b152d60cc6c73e924be1934a4d1499ca3651a1c36a468bec3b5</code></article>
-                <article class="hash-card"><span>data/resume.json SHA-256</span><code>e4f979d3d96be1f2722be0f704a87040fec8cff373a3d5c432253d8cd694c9d4</code></article>
-                <article class="hash-card"><span>resume/resume.pdf SHA-256</span><code>ce0813686b2a4b71c3643e62b3ea76a607d1bb25e5d0788cfbc5b17aa1606368</code></article>
+                <article class="hash-card"><span>Source Manifest SHA-256</span><code>ab3bdde1847e454ba6f5f5e2d980e6a56d490e7032f343d4e68ec3f84f81bb9e</code></article>
+                <article class="hash-card"><span>data/resume.json SHA-256</span><code>16461f4e4a17a974a4c45d60a4bd174aca1825253120089e27381efef3434261</code></article>
+                <article class="hash-card"><span>resume/resume.pdf SHA-256</span><code>cd60fc3af8829e1f707447592853961ea7d12a5981cc65eb19da49cf5519055a</code></article>
             </div>
         </section>
 
@@ -60,7 +68,7 @@
             <div class="metric-grid">
                 <article class="metric-card">
                     <span>Curated works</span>
-                    <strong>124</strong>
+                    <strong>130</strong>
                 </article>
                 <article class="metric-card">
                     <span>Software rows</span>
@@ -104,9 +112,9 @@
         <section aria-labelledby="flow">
             <h2 id="flow">Source-to-Output Flow</h2>
             <div class="flow-grid">
-                <article class="flow-card"><h3>Inputs</h3><p>resume/source.json + canonical public data exports.</p><p><code>5b9efd76e65f2b15</code></p></article>
-                <article class="flow-card"><h3>Merged Payload</h3><p>data/resume.json</p><p><code>e4f979d3d96be1f2</code></p></article>
-                <article class="flow-card"><h3>Rendered Artifact</h3><p>resume/resume.pdf + footer QR verification.</p><p><code>ce0813686b2a4b71</code></p></article>
+                <article class="flow-card"><h3>Inputs</h3><p>resume/source.json + canonical public data exports.</p><p><code>ab3bdde1847e454b</code></p></article>
+                <article class="flow-card"><h3>Merged Payload</h3><p>data/resume.json</p><p><code>16461f4e4a17a974</code></p></article>
+                <article class="flow-card"><h3>Rendered Artifact</h3><p>resume/resume.pdf + footer QR verification.</p><p><code>cd60fc3af8829e1f</code></p></article>
             </div>
         </section>
 
@@ -122,13 +130,13 @@
                     </tr>
                     <tr>
                         <td>data/works.json</td>
-                        <td>61,624</td>
-                        <td><code>fd284ce57906855b9702d469e50613d67538508137c27ca4eecbb8b4bc627733</code></td>
+                        <td>64,590</td>
+                        <td><code>db8031717367c6d8bcdda37203ce9830eeb38985cae2c9531360d5dcfc82c4ad</code></td>
                     </tr>
                     <tr>
                         <td>data/software.json</td>
                         <td>39,564</td>
-                        <td><code>8f3209d716aa32e412095c1ac1c7f8ffce7a4edeaf51692de6db8e5cf7e6eb0b</code></td>
+                        <td><code>d7ff4da43fe79dbc0a750320ad25d0b137a644c65883cfa5ba8bf31bbba66d5b</code></td>
                     </tr>
                     <tr>
                         <td>data/scholar-snapshot.json</td>
@@ -138,7 +146,7 @@
                     <tr>
                         <td>data/claims.json</td>
                         <td>11,910</td>
-                        <td><code>6aeedd7e132c69c94fbf93212e247ff6edb8e2d8e0bc0e6073307d05487d6aab</code></td>
+                        <td><code>aec659a1ba0849209e40b90f1a80a8b62f935e7bb77b47bf2b243264d1238b97</code></td>
                     </tr>
                 </tbody>
             </table>

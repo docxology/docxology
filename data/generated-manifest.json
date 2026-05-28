@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T00:56:11Z",
+  "generated_at": "2026-05-28T12:28:56Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -99,7 +99,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-05-27.json"
+        "reports/paired_publications_2026-05-28.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -209,7 +209,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-05-27.json"
+        "reports/public_source_snapshot_2026-05-28.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -219,7 +219,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-05-27.json"
+        "reports/public_source_inventory_2026-05-28.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"

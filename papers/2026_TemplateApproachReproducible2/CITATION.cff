@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "A template/ approach to Reproducible Generative Research"
+version: "1.0.6"
+date-released: 2026-05-03
+doi: 10.5281/zenodo.20420387
+url: "https://doi.org/10.5281/zenodo.20420387"
+repository-code: "https://github.com/docxology/template_template"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20420387
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/20420387"
+    description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/template_template/releases/tag/v1.0.6"
+    description: "GitHub release"
