@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (130 works), 50 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography (125 works), 50 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -55,7 +55,7 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (130 works; DOI links and paper-folder deep-links)
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (125 works; DOI links and paper-folder deep-links)
 ├── pages/SOFTWARE.md        ← 50 owned repos + 32 AII contributions
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
@@ -100,7 +100,7 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 123 per-paper folders (`YYYY_Topic`)
+└── papers/            ← 118 per-paper folders (`YYYY_Topic`)
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
@@ -193,7 +193,7 @@ docxology/
 | 2026-05-26 | MAINTAINER | Thermo-nuclear + web stack pass: count drift guard (`code/src/count_consistency.py`), `publications.html` shell loads `data/works.json` via `js/publications.js`, CollectionPage JSON-LD externalized to `data/publications-ld.json`, `docs/SECURITY.md` + `docs/DESIGN_SYSTEM.md`, shared nav (`code/src/site_nav.py`) on work + domain pages | ✅ |
 | 2026-05-26 | ARCHIVIST | Added `2026_BiologyTextbook` (DOI 10.5281/zenodo.20286478); Computational 7→8; Books 3→4; bibliography 116→117 (row 117); paper folders and metadata 109→110; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications + works.json resynced | ✅ |
 | 2026-05-26 | INTEGRATOR | Added `papers/software_table.py` + `papers/sync_software_html.py`: full 82-row `software.html` repo grids + `data/software-ld.json` from `pages/SOFTWARE.md`; `biology_textbook` on software surface; SOFTWARE.md subtotal 49→50; domain/work cross-links | ✅ |
-| 2026-05-28 | ARCHIVIST | Refreshed GitHub/Zenodo paired-publication sync: added 6 strong new Zenodo/GitHub publication records, updated 5 existing release metadata folders, bibliography/publications/data works 124→130, paper folders 117→123, and public-source reports for 299 docxology + 51 AII repositories | ✅ |
+| 2026-05-28 | ARCHIVIST | Deduplicated exact-title 2026 Zenodo version supersessions: kept newest DOI records in canonical non-`2` folders, unified bibliography/publications/data works at 125, paper folders at 118, and hardened paired-publication sync against same-title same-repo duplicates | ✅ |
 
 ---
 

@@ -2,10 +2,10 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
 title: "Convergence Analysis of Gradient Descent Optimization"
-version: "2.3"
+version: "2.5.0"
 date-released: 2026
-doi: 10.5281/zenodo.20417137
-url: "https://doi.org/10.5281/zenodo.20417137"
+doi: 10.5281/zenodo.20420368
+url: "https://doi.org/10.5281/zenodo.20420368"
 repository-code: "https://github.com/docxology/template_code_project"
 authors:
   - family-names: Friedman
@@ -13,11 +13,11 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20417137
+    value: 10.5281/zenodo.20420368
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20417137"
+    value: "https://zenodo.org/records/20420368"
     description: "Zenodo landing page"
   - type: url
-    value: "https://github.com/docxology/template_code_project/releases/tag/v2.4.0"
+    value: "https://github.com/docxology/template_code_project/releases/tag/v2.5.0"
     description: "GitHub release"

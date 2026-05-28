@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417105.svg)](https://doi.org/10.5281/zenodo.20417105)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420342.svg)](https://doi.org/10.5281/zenodo.20420342)
 
 ---
 
@@ -22,8 +22,10 @@ Keywords: prose analysis, readability, editorial review, reproducible manuscript
 
 ---
 Associated artifacts
-GitHub release: v0.3.0 (https://github.com/docxology/template_prose_project/releases/tag/v0.3.0)
-PDF SHA-256: 72e603df162610049da868ab6652dad58874cdc43f95f4c45543516a81a512f7
+GitHub release: v0.4.0 (https://github.com/docxology/template_prose_project/releases/tag/v0.4.0)
+DOI: https://doi.org/10.5281/zenodo.20417104
+Zenodo: https://zenodo.org/records/20417104
+PDF SHA-256: cbe5adae0be78b58c77637042257e9faa61a21b6c5101da52600cf8e2e80c0e2
 
 ## Keywords
 
@@ -33,24 +35,24 @@ prose analysis · readability · editorial review · reproducible research · ma
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20417105](https://doi.org/10.5281/zenodo.20417105) |
+| **DOI** | [10.5281/zenodo.20420342](https://doi.org/10.5281/zenodo.20420342) |
 | **Published** | 2026 |
-| **Version** | 0.2 |
-| **Zenodo record** | https://zenodo.org/records/20417105 |
-| **GitHub release** | https://github.com/docxology/template_prose_project/releases/tag/v0.3.0 |
+| **Version** | 0.4.0 |
+| **Zenodo record** | https://zenodo.org/records/20420342 |
+| **GitHub release** | https://github.com/docxology/template_prose_project/releases/tag/v0.4.0 |
 | **Source repository** | https://github.com/docxology/template_prose_project |
 
 ## Files
 
-- `Friedman_2026_Editorial_72e603df.pdf` - Zenodo PDF
+- `Friedman_2026_Editorial_cbe5adae.pdf` - Zenodo PDF
 
 ## Citation
 
-> Friedman, D. A. (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.20417105
+> Friedman, D. A. (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.20420342
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/20417105
-- GitHub release: https://github.com/docxology/template_prose_project/releases/tag/v0.3.0
+- Zenodo record: https://zenodo.org/records/20420342
+- GitHub release: https://github.com/docxology/template_prose_project/releases/tag/v0.4.0
 - Source repository: https://github.com/docxology/template_prose_project
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

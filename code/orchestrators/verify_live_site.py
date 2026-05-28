@@ -24,7 +24,7 @@ OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
 
 CHECKS = [
-    {"path": "", "markers": ["130 Works", "299", "search.html", "Last updated: May 2026"]},
+    {"path": "", "markers": ["125 Works", "299", "search.html", "Last updated: May 2026"]},
     {"path": "search.html", "markers": ["Search", "search-index.json", "OpenSearch"]},
     {"path": "catalog.html", "markers": ["Data Catalog", "data/catalog.json", "Search Index"]},
     {"path": "updates.html", "markers": ["Updates", "update-card"]},

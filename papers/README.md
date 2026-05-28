@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/PUBLICATION_SYNC.md](../docs/PUBLICATION_SYNC.md).
 
-## Papers (123)
+## Papers (118)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -129,12 +129,7 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 115 | [2026_EditorialQualityAt](2026_EditorialQualityAt/) | ✅ | 2026 | EditorialQualityAt |
 | 116 | [2026_TemplateApproachReproducible](2026_TemplateApproachReproducible/) | ✅ | 2026 | TemplateApproachReproducible |
 | 117 | [2026_ActiveInferenceMulti](2026_ActiveInferenceMulti/) | ✅ | 2026 | ActiveInferenceMulti |
-| 118 | [2026_BoundedAutoResearchTiny2](2026_BoundedAutoResearchTiny2/) | ✅ | 2026 | BoundedAutoResearchTiny2 |
-| 119 | [2026_ConvergenceAnalysisGradient2](2026_ConvergenceAnalysisGradient2/) | ✅ | 2026 | ConvergenceAnalysisGradient2 |
-| 120 | [2026_EditorialQualityAt2](2026_EditorialQualityAt2/) | ✅ | 2026 | EditorialQualityAt2 |
-| 121 | [2026_TemplateApproachReproducible2](2026_TemplateApproachReproducible2/) | ✅ | 2026 | TemplateApproachReproducible2 |
-| 122 | [2026_BeeStack](2026_BeeStack/) | ✅ | 2026 | BeeStack |
-| 123 | [2026_ActiveInferenceMulti2](2026_ActiveInferenceMulti2/) | ✅ | 2026 | ActiveInferenceMulti2 |
+| 118 | [2026_BeeStack](2026_BeeStack/) | ✅ | 2026 | BeeStack |
 ## Scripts
 
 | Script | Purpose |

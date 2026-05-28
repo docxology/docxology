@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**130 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**125 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**111** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
+**106** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **130** works in the table below **·** **123** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **125** works in the table below **·** **118** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -157,17 +157,12 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 117 | 2026 | 💻 | Book | Introduction to Biology: A Generative Approach | *Zenodo* | [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478) | [📁](../papers/2026_BiologyTextbook/) |
 | 118 | 2025 | 💻 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | *Zenodo* | [10.5281/zenodo.15231156](https://doi.org/10.5281/zenodo.15231156) | [📁](../papers/2025_CEREBRUM2/) |
 | 119 | 2026 | 💻 | Paper | Policy Entanglement in Active Inference | *Zenodo* | [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637) | [📁](../papers/2026_PolicyEntanglementActive/) |
-| 120 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20417017](https://doi.org/10.5281/zenodo.20417017) | [📁](../papers/2026_BoundedAutoResearchTiny/) |
-| 121 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20417137](https://doi.org/10.5281/zenodo.20417137) | [📁](../papers/2026_ConvergenceAnalysisGradient/) |
-| 122 | 2026 | 💻 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | *Zenodo* | [10.5281/zenodo.20417105](https://doi.org/10.5281/zenodo.20417105) | [📁](../papers/2026_EditorialQualityAt/) |
-| 123 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20419084](https://doi.org/10.5281/zenodo.20419084) | [📁](../papers/2026_TemplateApproachReproducible/) |
-| 124 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20417022](https://doi.org/10.5281/zenodo.20417022) | [📁](../papers/2026_ActiveInferenceMulti/) |
-| 125 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357) | [📁](../papers/2026_BoundedAutoResearchTiny2/) |
-| 126 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20420368](https://doi.org/10.5281/zenodo.20420368) | [📁](../papers/2026_ConvergenceAnalysisGradient2/) |
-| 127 | 2026 | 💻 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | *Zenodo* | [10.5281/zenodo.20420342](https://doi.org/10.5281/zenodo.20420342) | [📁](../papers/2026_EditorialQualityAt2/) |
-| 128 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20420387](https://doi.org/10.5281/zenodo.20420387) | [📁](../papers/2026_TemplateApproachReproducible2/) |
-| 129 | 2026 | 💻 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | *Zenodo* | [10.5281/zenodo.20420557](https://doi.org/10.5281/zenodo.20420557) | [📁](../papers/2026_BeeStack/) |
-| 130 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352) | [📁](../papers/2026_ActiveInferenceMulti2/) |
+| 120 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357) | [📁](../papers/2026_BoundedAutoResearchTiny/) |
+| 121 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20420368](https://doi.org/10.5281/zenodo.20420368) | [📁](../papers/2026_ConvergenceAnalysisGradient/) |
+| 122 | 2026 | 💻 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | *Zenodo* | [10.5281/zenodo.20420342](https://doi.org/10.5281/zenodo.20420342) | [📁](../papers/2026_EditorialQualityAt/) |
+| 123 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20420387](https://doi.org/10.5281/zenodo.20420387) | [📁](../papers/2026_TemplateApproachReproducible/) |
+| 124 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352) | [📁](../papers/2026_ActiveInferenceMulti/) |
+| 125 | 2026 | 💻 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | *Zenodo* | [10.5281/zenodo.20420557](https://doi.org/10.5281/zenodo.20420557) | [📁](../papers/2026_BeeStack/) |
 ---
 
 ## Domain Index

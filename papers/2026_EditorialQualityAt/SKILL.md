@@ -1,6 +1,6 @@
 ---
 name: "EditorialQualityAt"
-description: "Use for Editorial Quality at Scale: A Reproducible Prose-Review Pipeline, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20417105."
+description: "Use for Editorial Quality at Scale: A Reproducible Prose-Review Pipeline, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20420342."
 tags: ["prose-analysis", "readability", "editorial-review", "reproducible-research", "manuscript-quality"]
 ---
 
@@ -10,9 +10,9 @@ tags: ["prose-analysis", "readability", "editorial-review", "reproducible-resear
 
 Use this skill when working with the publication **Editorial Quality at Scale: A Reproducible Prose-Review Pipeline** or its paired release artifacts.
 
-1. Ground citations in DOI `10.5281/zenodo.20417105`.
+1. Ground citations in DOI `10.5281/zenodo.20420342`.
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.3.0` and repository `docxology/template_prose_project` linked when updating catalog surfaces.
+3. Keep release tag `v0.4.0` and repository `docxology/template_prose_project` linked when updating catalog surfaces.
 
 ## Key Concepts
 

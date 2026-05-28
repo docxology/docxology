@@ -8,10 +8,10 @@ This report compares curated local counts against public authority/source indexe
 
 | Comparison | Local | Public | Relationship | Interpretation |
 | --- | ---: | ---: | --- | --- |
-| Curated bibliography vs ORCID work groups | 130 | 20 | not expected to match | The local bibliography intentionally includes presentations, courses, books, software-linked works, and local documentation. ORCID groups external works by identifier/version. |
-| Curated bibliography vs PubMed exact author records | 130 | 8 | subset | PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography. |
-| Curated bibliography vs Crossref ORCID DOI records | 130 | 15 | subset | Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere. |
-| Curated bibliography vs Zenodo ORCID-linked records | 130 | 91 | overlapping sets | Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table. |
+| Curated bibliography vs ORCID work groups | 125 | 20 | not expected to match | The local bibliography intentionally includes presentations, courses, books, software-linked works, and local documentation. ORCID groups external works by identifier/version. |
+| Curated bibliography vs PubMed exact author records | 125 | 8 | subset | PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography. |
+| Curated bibliography vs Crossref ORCID DOI records | 125 | 15 | subset | Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere. |
+| Curated bibliography vs Zenodo ORCID-linked records | 125 | 91 | overlapping sets | Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table. |
 | Catalogued docxology software vs GitHub public repository count | 50 | 299 | curated subset | SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments. |
 | Catalogued AII contributions vs AII GitHub public repository count | 32 | 51 | curated subset | SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository. |
 

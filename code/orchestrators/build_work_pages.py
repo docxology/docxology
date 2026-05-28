@@ -238,7 +238,7 @@ def page_head(work: dict) -> str:
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260528f">
+    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260528g">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .work-hero{{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
@@ -355,7 +355,7 @@ def render_index(works: list[dict]) -> str:
     <meta name="description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/">
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260528f">
+    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260528g">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">

@@ -188,6 +188,46 @@ def test_same_title_and_release_new_doi_updates_existing_folder(tmp_path: Path):
     assert "10.5281/zenodo.20990001" not in bibliography
 
 
+def test_same_title_and_repo_new_release_updates_existing_folder(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+
+    updated_release = replace(
+        pair.release,
+        tag="v1.1.0",
+        name="New Computational Project v1.1.0",
+        html_url="https://github.com/docxology/new_repo/releases/tag/v1.1.0",
+    )
+    updated_record = replace(
+        pair.record,
+        record_id="20990003",
+        doi="10.5281/zenodo.20990003",
+        files=[],
+        html_url="https://zenodo.org/records/20990003",
+    )
+    updated_pair = replace(pair, release=updated_release, record=updated_record)
+    actions = build_sync_actions([updated_pair], repo_root=tmp_path)
+
+    assert actions[0].action_type == "update_existing"
+    assert actions[0].folder == "2026_NewComputationalProject"
+    assert "GitHub repository" in actions[0].reason
+
+    applied = apply_publication_pair(
+        updated_pair,
+        repo_root=tmp_path,
+        download_files=False,
+        folder=actions[0].folder,
+        refresh_docs=True,
+    )
+    assert applied.created is False
+
+    bibliography = (tmp_path / "pages" / "BIBLIOGRAPHY.md").read_text(encoding="utf-8")
+    assert bibliography.count("New Computational Project: Reproducible Research") == 1
+    assert "10.5281/zenodo.20990003" in bibliography
+    assert "10.5281/zenodo.20990001" not in bibliography
+
+
 def test_refresh_bibliography_counts_keeps_series_unpluralized():
     text = "\n".join(
         [

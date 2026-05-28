@@ -112,7 +112,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 
 <div align="center">
 
-*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (130 works) · [LINKS.md](LINKS.md) for all web presences*
+*Part of [docxology/docxology](https://github.com/docxology/docxology) — See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full bibliography (125 works) · [LINKS.md](LINKS.md) for all web presences*
 
 </div>
 

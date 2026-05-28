@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417017.svg)](https://doi.org/10.5281/zenodo.20417017)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420357.svg)](https://doi.org/10.5281/zenodo.20420357)
 
 ---
 
@@ -38,8 +38,10 @@ human rather than self-approved by the generated run.
 
 ---
 Associated artifacts
-GitHub release: Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.2.0) (https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0)
-PDF SHA-256: 922d12425ac8649d214fc38ad24a0379802d3de7b27f7bd2c9ef659b282a5c85
+GitHub release: v0.3.0 (https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0)
+DOI: https://doi.org/10.5281/zenodo.20417016
+Zenodo: https://zenodo.org/records/20417016
+PDF SHA-256: f02abeeaba525750c4b3751241711b80b472e11cc2c0f7f34f56b62dbea786ef
 
 ## Keywords
 
@@ -49,24 +51,24 @@ autoresearch · reproducible research · machine learning benchmark · artifact 
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20417017](https://doi.org/10.5281/zenodo.20417017) |
+| **DOI** | [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357) |
 | **Published** | 2026 |
-| **Version** | 0.2 |
-| **Zenodo record** | https://zenodo.org/records/20417017 |
-| **GitHub release** | https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0 |
+| **Version** | 0.3.0 |
+| **Zenodo record** | https://zenodo.org/records/20420357 |
+| **GitHub release** | https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0 |
 | **Source repository** | https://github.com/docxology/template_autoresearch_project |
 
 ## Files
 
-- `Friedman_2026_Bounded_922d1242.pdf` - Zenodo PDF
+- `Friedman_2026_Bounded_f02abeea.pdf` - Zenodo PDF
 
 ## Citation
 
-> Friedman, D. A. (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo. https://doi.org/10.5281/zenodo.20417017
+> Friedman, D. A. (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo. https://doi.org/10.5281/zenodo.20420357
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/20417017
-- GitHub release: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0
+- Zenodo record: https://zenodo.org/records/20420357
+- GitHub release: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0
 - Source repository: https://github.com/docxology/template_autoresearch_project
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

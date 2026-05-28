@@ -1,8 +1,8 @@
 # AGENTS.md - Active Inference Multi-Track Exemplar
 
 **Paper**: Active Inference Multi-Track Exemplar (2026)
-**DOI**: [10.5281/zenodo.20417022](https://doi.org/10.5281/zenodo.20417022)
-**GitHub release**: https://github.com/docxology/template_active_inference/releases/tag/v0.2.0
+**DOI**: [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352)
+**GitHub release**: https://github.com/docxology/template_active_inference/releases/tag/v0.3.0
 
 ---
 
@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20417022
-- **GitHub release**: https://github.com/docxology/template_active_inference/releases/tag/v0.2.0
+- **Zenodo record**: https://zenodo.org/records/20420352
+- **GitHub release**: https://github.com/docxology/template_active_inference/releases/tag/v0.3.0
 - **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

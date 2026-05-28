@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **764 citations** on Google Scholar (h-index: 15, i10-index: 17, as of 2026-05-16) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **130** works including books, presentations, and recent deposits not yet reflected on Scholar.
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **764 citations** on Google Scholar (h-index: 15, i10-index: 17, as of 2026-05-16) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **125** works including books, presentations, and recent deposits not yet reflected on Scholar.
 
 ---
 
@@ -162,7 +162,7 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 
 | Metric | Count |
 |--------|-------|
-| Works (unified bibliography) | [130](BIBLIOGRAPHY.md) |
+| Works (unified bibliography) | [125](BIBLIOGRAPHY.md) |
 | Google Scholar indexed publications | 107 |
 | Google Scholar Citations | 764 (as of 2026-05-16) |
 | h-index | 15 |

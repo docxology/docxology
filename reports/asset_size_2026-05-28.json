@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-28T12:28:56Z",
+  "generated_at": "2026-05-28T16:08:47Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 69,
   "warnings": 0,
-  "total_bytes": 7392865,
+  "total_bytes": 7369131,
   "largest": [
     {
       "path": "data/artworks.json",
@@ -29,21 +29,21 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 259613,
+      "bytes": 257975,
       "budget_bytes": 5000000,
       "ok": true
     },
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 207117,
+      "bytes": 199303,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 176843,
+      "bytes": 174371,
       "budget_bytes": 4000000,
       "ok": true
     },

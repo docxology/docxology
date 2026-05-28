@@ -222,9 +222,16 @@ def existing_doi_map(repo_root: Path = REPO_ROOT) -> dict[str, str]:
     return {row["doi"]: row["folder"] for row in parse_bibliography_rows(repo_root) if row["doi"] and row["folder"]}
 
 
+def _normalized_title(title: str) -> str:
+    return re.sub(r"\s+", " ", title.strip().lower())
+
+
 def _pair_key(title: str, github_release_url: str) -> tuple[str, str]:
-    normalized_title = re.sub(r"\s+", " ", title.strip().lower())
-    return normalized_title, github_release_url.strip()
+    return _normalized_title(title), github_release_url.strip()
+
+
+def _repo_title_key(title: str, github_repo: str) -> tuple[str, str]:
+    return _normalized_title(title), github_repo.strip().lower()
 
 
 def existing_release_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], str]:
@@ -247,6 +254,26 @@ def existing_release_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, s
     return out
 
 
+def existing_repo_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], str]:
+    out: dict[tuple[str, str], str] = {}
+    papers_dir = repo_root / "papers"
+    if not papers_dir.exists():
+        return out
+    for folder_path in sorted(path for path in papers_dir.iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name)):
+        metadata_path = folder_path / "metadata.json"
+        if not metadata_path.exists():
+            continue
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        title = str(metadata.get("title") or "")
+        github_repo = str(metadata.get("github_repo") or "")
+        if title and github_repo:
+            out.setdefault(_repo_title_key(title, github_repo), folder_path.name)
+    return out
+
+
 def slug_topic(title: str) -> str:
     head = title.split(":", 1)[0]
     words = re.findall(r"[A-Za-z0-9]+", head)
@@ -264,6 +291,9 @@ def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
     existing_by_release = existing_release_title_map(repo_root).get(_pair_key(pair.record.title, pair.github_release_url))
     if existing_by_release:
         return existing_by_release
+    existing_by_repo = existing_repo_title_map(repo_root).get(_repo_title_key(pair.record.title, pair.github_repo))
+    if existing_by_repo:
+        return existing_by_repo
     year_match = re.search(r"\d{4}", pair.record.publication_date or pair.release.published_at)
     year = year_match.group(0) if year_match else str(dt.datetime.now().year)
     base = f"{year}_{slug_topic(pair.record.title)}"
@@ -325,10 +355,12 @@ def infer_domain(pair: PublicationPair) -> str | None:
 def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_ROOT) -> list[SyncAction]:
     doi_to_folder = existing_doi_map(repo_root)
     release_title_to_folder = existing_release_title_map(repo_root)
+    repo_title_to_folder = existing_repo_title_map(repo_root)
     actions: list[SyncAction] = []
     for pair in pairs:
         release_title_folder = release_title_to_folder.get(_pair_key(pair.record.title, pair.github_release_url))
-        folder = doi_to_folder.get(pair.doi) or release_title_folder or folder_for_pair(pair, repo_root)
+        repo_title_folder = repo_title_to_folder.get(_repo_title_key(pair.record.title, pair.github_repo))
+        folder = doi_to_folder.get(pair.doi) or release_title_folder or repo_title_folder or folder_for_pair(pair, repo_root)
         if pair.confidence != "strong":
             action_type = "needs_review"
             reason = "pair lacks DOI/release cross-link evidence required for automatic apply"
@@ -338,6 +370,9 @@ def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_R
         elif release_title_folder:
             action_type = "update_existing"
             reason = "same title and GitHub release already exist; update Zenodo version metadata"
+        elif repo_title_folder:
+            action_type = "update_existing"
+            reason = "same title and GitHub repository already exist; update Zenodo version metadata"
         elif not infer_type(pair.record) or not infer_domain(pair):
             action_type = "needs_review"
             reason = "new pair is strong, but type or domain cannot be inferred safely"
@@ -952,7 +987,7 @@ def main(argv: list[str] | None = None) -> int:
                 pair,
                 download_files=not args.no_download_files,
                 folder=action.folder,
-                refresh_docs=action.reason.startswith("same title and GitHub release"),
+                refresh_docs=action.reason.startswith("same title and GitHub"),
             )
             applied.append(item)
             changed = changed or bool(item.updated_files)

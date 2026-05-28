@@ -54,25 +54,25 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **130 works** in the unified bibliography · **299** public GitHub repositories on the primary profile · **82** catalogued software repos (50 owned + 32 AII) · **764** Google Scholar citations (h-index: 15, as of 2026-05-16) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **125 works** in the unified bibliography · **299** public GitHub repositories on the primary profile · **82** catalogued software repos (50 owned + 32 AII) · **764** Google Scholar citations (h-index: 15, as of 2026-05-16) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 
 ## 📁 Repository Map
 
-> **Full catalog**: 130 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 50 owned repos · 32 AII contributions
+> **Full catalog**: 125 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 50 owned repos · 32 AII contributions
 
 > **Counts cross-check:** numeric totals repeated in this file should match [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) (works table) and [`papers/README.md`](papers/README.md) (indexed paper folders) before publish.
 
 | Resource | What's Inside |
 |----------|---------------|
-| 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (130 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
+| 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (125 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
 | 📄 [**works/**](works/) | **Generated per-work landing pages** — one canonical HTML page per bibliography row with citation, DOI, primary source, and documentation link |
 | 🔎 [**search.html**](search.html) / [**opensearch.xml**](opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
 | 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
 | 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
 | 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **50 owned repos** + **32 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [full generated repository inventory](repositories.html) for public GitHub coverage |
-| 📁 [**papers/**](papers/) | **123 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
+| 📁 [**papers/**](papers/) | **118 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
 | 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
 | 🧭 [**pages/DISCOVERY.md**](pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |

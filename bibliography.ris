@@ -1420,71 +1420,11 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 T2  - Zenodo
-DO  - 10.5281/zenodo.20417017
-UR  - https://doi.org/10.5281/zenodo.20417017
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - Convergence Analysis of Gradient Descent Optimization
-T2  - Zenodo
-DO  - 10.5281/zenodo.20417137
-UR  - https://doi.org/10.5281/zenodo.20417137
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
-T2  - Zenodo
-DO  - 10.5281/zenodo.20417105
-UR  - https://doi.org/10.5281/zenodo.20417105
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 122; docs: papers/2026_EditorialQualityAt/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - A template/ approach to Reproducible Generative Research
-T2  - Zenodo
-DO  - 10.5281/zenodo.20419084
-UR  - https://doi.org/10.5281/zenodo.20419084
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 123; docs: papers/2026_TemplateApproachReproducible/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - Active Inference Multi-Track Exemplar
-T2  - Zenodo
-DO  - 10.5281/zenodo.20417022
-UR  - https://doi.org/10.5281/zenodo.20417022
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 124; docs: papers/2026_ActiveInferenceMulti/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
-T2  - Zenodo
 DO  - 10.5281/zenodo.20420357
 UR  - https://doi.org/10.5281/zenodo.20420357
 KW  - Computational
 KW  - Paper
-N1  - Catalog row 125; docs: papers/2026_BoundedAutoResearchTiny2/
+N1  - Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/
 ER  -
 
 TY  - JOUR
@@ -1496,7 +1436,7 @@ DO  - 10.5281/zenodo.20420368
 UR  - https://doi.org/10.5281/zenodo.20420368
 KW  - Computational
 KW  - Paper
-N1  - Catalog row 126; docs: papers/2026_ConvergenceAnalysisGradient2/
+N1  - Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/
 ER  -
 
 TY  - JOUR
@@ -1508,7 +1448,7 @@ DO  - 10.5281/zenodo.20420342
 UR  - https://doi.org/10.5281/zenodo.20420342
 KW  - Computational
 KW  - Paper
-N1  - Catalog row 127; docs: papers/2026_EditorialQualityAt2/
+N1  - Catalog row 122; docs: papers/2026_EditorialQualityAt/
 ER  -
 
 TY  - JOUR
@@ -1520,19 +1460,7 @@ DO  - 10.5281/zenodo.20420387
 UR  - https://doi.org/10.5281/zenodo.20420387
 KW  - Computational
 KW  - Paper
-N1  - Catalog row 128; docs: papers/2026_TemplateApproachReproducible2/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
-T2  - Zenodo
-DO  - 10.5281/zenodo.20420557
-UR  - https://doi.org/10.5281/zenodo.20420557
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 129; docs: papers/2026_BeeStack/
+N1  - Catalog row 123; docs: papers/2026_TemplateApproachReproducible/
 ER  -
 
 TY  - JOUR
@@ -1544,5 +1472,17 @@ DO  - 10.5281/zenodo.20420352
 UR  - https://doi.org/10.5281/zenodo.20420352
 KW  - Computational
 KW  - Paper
-N1  - Catalog row 130; docs: papers/2026_ActiveInferenceMulti2/
+N1  - Catalog row 124; docs: papers/2026_ActiveInferenceMulti/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
+T2  - Zenodo
+DO  - 10.5281/zenodo.20420557
+UR  - https://doi.org/10.5281/zenodo.20420557
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 125; docs: papers/2026_BeeStack/
 ER  -

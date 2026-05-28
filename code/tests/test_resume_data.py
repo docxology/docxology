@@ -52,9 +52,9 @@ def test_resume_source_schema_and_required_sections():
 
 def test_resume_payload_merges_canonical_works_and_software_counts():
     payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
-    assert payload["metrics"]["works"] == 130
+    assert payload["metrics"]["works"] == 125
     assert payload["metrics"]["software_catalogued"] == 82
-    assert len(payload["works"]) == 130
+    assert len(payload["works"]) == 125
     assert len(payload["software"]) == 82
     assert payload["metrics"]["google_scholar"]["citations"] == 764
 
@@ -74,7 +74,7 @@ def test_text_outputs_strip_coda_glyphs_and_preserve_doi_lines():
     text = render_text(payload, "full")
     assert not CODA_GLYPH_RE.search(text)
     assert "10.5281/zenod\no" not in text
-    assert "WORKS AND PUBLICATIONS (130)" in text
+    assert "WORKS AND PUBLICATIONS (125)" in text
     assert "SOFTWARE (82)" in text
     doi_lines = [line for line in text.splitlines() if re.search(r"10\.\d{4,9}/", line)]
     assert doi_lines

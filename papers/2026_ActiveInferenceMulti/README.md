@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417022.svg)](https://doi.org/10.5281/zenodo.20417022)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420352.svg)](https://doi.org/10.5281/zenodo.20420352)
 
 ---
 
@@ -16,12 +16,14 @@ The first page (00_00_sheaf_coverage.md (00_00_sheaf_coverage.md)) shows a 16-ro
 
 The T-maze demo aligns with pymdp sophisticated_inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated_inference).
 
-Measured invariant checks: 6 / 6 passed. SI planning horizon: 2 steps.
+Measured invariant checks: 12 / 12 passed. SI planning horizon: 2 steps.
 
 ---
 Associated artifacts
-GitHub release: Active Inference Multi-Track Exemplar (v0.2.0) (https://github.com/docxology/template_active_inference/releases/tag/v0.2.0)
-PDF SHA-256: d7e8d4b8280b574149c75de376a7e21368f126221325c52471c58d1ed067db14
+GitHub release: v0.3.0 (https://github.com/docxology/template_active_inference/releases/tag/v0.3.0)
+DOI: https://doi.org/10.5281/zenodo.20417021
+Zenodo: https://zenodo.org/records/20417021
+PDF SHA-256: 713452dd1b0f2a1c508d298811ecea9606b247723de100403d1524fae50c89d7
 
 ## Keywords
 
@@ -31,24 +33,24 @@ active inference · pymdp · sophisticated inference · generalized notation not
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20417022](https://doi.org/10.5281/zenodo.20417022) |
-| **Published** | 2026-05-27 |
-| **Version** | 0.2.0 |
-| **Zenodo record** | https://zenodo.org/records/20417022 |
-| **GitHub release** | https://github.com/docxology/template_active_inference/releases/tag/v0.2.0 |
+| **DOI** | [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352) |
+| **Published** | 2026-05-28 |
+| **Version** | 0.3.0 |
+| **Zenodo record** | https://zenodo.org/records/20420352 |
+| **GitHub release** | https://github.com/docxology/template_active_inference/releases/tag/v0.3.0 |
 | **Source repository** | https://github.com/docxology/template_active_inference |
 
 ## Files
 
-- `Friedman_2026_Active_d7e8d4b8.pdf` - Zenodo PDF
+- `Friedman_2026_Active_713452dd.pdf` - Zenodo PDF
 
 ## Citation
 
-> Friedman, D. A. (2026). *Active Inference Multi-Track Exemplar*. Zenodo. https://doi.org/10.5281/zenodo.20417022
+> Friedman, D. A. (2026). *Active Inference Multi-Track Exemplar*. Zenodo. https://doi.org/10.5281/zenodo.20420352
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/20417022
-- GitHub release: https://github.com/docxology/template_active_inference/releases/tag/v0.2.0
+- Zenodo record: https://zenodo.org/records/20420352
+- GitHub release: https://github.com/docxology/template_active_inference/releases/tag/v0.3.0
 - Source repository: https://github.com/docxology/template_active_inference
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

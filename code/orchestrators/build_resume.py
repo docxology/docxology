@@ -1068,7 +1068,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta name="description" content="Hashes, source manifest, file sizes, and public links for Daniel Ari Friedman's generated structured resume/CV.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{VERIFY_URL}">
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528f">
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528g">
     <style>
         :root {{
             --resume-red: #ff0000;

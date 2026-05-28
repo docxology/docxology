@@ -2985,8 +2985,8 @@
     "note": "Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20417017",
-    "URL": "https://doi.org/10.5281/zenodo.20417017"
+    "DOI": "10.5281/zenodo.20420357",
+    "URL": "https://doi.org/10.5281/zenodo.20420357"
   },
   {
     "id": "Friedman2026ConvergenceAnalysisGradientDescent121",
@@ -3010,8 +3010,8 @@
     "note": "Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20417137",
-    "URL": "https://doi.org/10.5281/zenodo.20417137"
+    "DOI": "10.5281/zenodo.20420368",
+    "URL": "https://doi.org/10.5281/zenodo.20420368"
   },
   {
     "id": "Friedman2026EditorialQualityAtScale122",
@@ -3035,8 +3035,8 @@
     "note": "Catalog row 122; docs: papers/2026_EditorialQualityAt/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20417105",
-    "URL": "https://doi.org/10.5281/zenodo.20417105"
+    "DOI": "10.5281/zenodo.20420342",
+    "URL": "https://doi.org/10.5281/zenodo.20420342"
   },
   {
     "id": "Friedman2026TemplateApproachReproducibleGenerative123",
@@ -3060,8 +3060,8 @@
     "note": "Catalog row 123; docs: papers/2026_TemplateApproachReproducible/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20419084",
-    "URL": "https://doi.org/10.5281/zenodo.20419084"
+    "DOI": "10.5281/zenodo.20420387",
+    "URL": "https://doi.org/10.5281/zenodo.20420387"
   },
   {
     "id": "Friedman2026ActiveInferenceMultiTrack124",
@@ -3085,111 +3085,11 @@
     "note": "Catalog row 124; docs: papers/2026_ActiveInferenceMulti/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20417022",
-    "URL": "https://doi.org/10.5281/zenodo.20417022"
+    "DOI": "10.5281/zenodo.20420352",
+    "URL": "https://doi.org/10.5281/zenodo.20420352"
   },
   {
-    "id": "Friedman2026BoundedAutoResearchTinyReproducible125",
-    "type": "article-journal",
-    "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 125; docs: papers/2026_BoundedAutoResearchTiny2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420357",
-    "URL": "https://doi.org/10.5281/zenodo.20420357"
-  },
-  {
-    "id": "Friedman2026ConvergenceAnalysisGradientDescent126",
-    "type": "article-journal",
-    "title": "Convergence Analysis of Gradient Descent Optimization",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 126; docs: papers/2026_ConvergenceAnalysisGradient2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420368",
-    "URL": "https://doi.org/10.5281/zenodo.20420368"
-  },
-  {
-    "id": "Friedman2026EditorialQualityAtScale127",
-    "type": "article-journal",
-    "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 127; docs: papers/2026_EditorialQualityAt2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420342",
-    "URL": "https://doi.org/10.5281/zenodo.20420342"
-  },
-  {
-    "id": "Friedman2026TemplateApproachReproducibleGenerative128",
-    "type": "article-journal",
-    "title": "A template/ approach to Reproducible Generative Research",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 128; docs: papers/2026_TemplateApproachReproducible2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420387",
-    "URL": "https://doi.org/10.5281/zenodo.20420387"
-  },
-  {
-    "id": "Friedman2026BeeStackEvidenceTypedScaffold129",
+    "id": "Friedman2026BeeStackEvidenceTypedScaffold125",
     "type": "article-journal",
     "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
     "author": [
@@ -3207,35 +3107,10 @@
     },
     "genre": "Paper",
     "keyword": "Computational; Paper",
-    "note": "Catalog row 129; docs: papers/2026_BeeStack/",
+    "note": "Catalog row 125; docs: papers/2026_BeeStack/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20420557",
     "URL": "https://doi.org/10.5281/zenodo.20420557"
-  },
-  {
-    "id": "Friedman2026ActiveInferenceMultiTrack130",
-    "type": "article-journal",
-    "title": "Active Inference Multi-Track Exemplar",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 130; docs: papers/2026_ActiveInferenceMulti2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420352",
-    "URL": "https://doi.org/10.5281/zenodo.20420352"
   }
 ]

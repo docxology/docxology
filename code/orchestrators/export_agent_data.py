@@ -172,7 +172,7 @@ ORGANIZATIONS = [
 CLAIMS = [
     {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 130 works.",
+        "claim": "The curated bibliography contains 125 works.",
         "status": "curated-local",
         "sources": ["pages/BIBLIOGRAPHY.md", "publications.html", "data/works.json"],
         "checked_at": "2026-05-28",
@@ -183,7 +183,7 @@ CLAIMS = [
     },
     {
         "id": "paper-folder-count",
-        "claim": "The repository contains 123 per-paper documentation folders.",
+        "claim": "The repository contains 118 per-paper documentation folders.",
         "status": "curated-local",
         "sources": ["papers/", "papers/README.md", "papers/paper_metadata.json"],
         "checked_at": "2026-05-28",
