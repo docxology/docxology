@@ -27,5 +27,6 @@ Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data
 ## Canonical URLs and reports
 
 - [docs/REDIRECTS.md](REDIRECTS.md) records canonical URL and redirect-stub rules for GitHub Pages.
+- [docs/GSC_FOLLOWUP.md](GSC_FOLLOWUP.md) — manual Google Search Console runbook after SEO remediation; preflight via `code/orchestrators/gsc_followup_preflight.py`.
 - [CHANGELOG.md](../CHANGELOG.md) summarizes public-index and generated-site changes.
 - [reports/](../reports/) stores source snapshots, reconciliation outputs, external-link reports, accessibility results, and Playwright visual QA screenshots.

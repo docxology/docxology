@@ -197,6 +197,7 @@ docxology/
 | 2026-05-29 | INTEGRATOR | GSC indexing remediation: `works/*.html` primary canonical; `papers/*/` `noindex` + canonical to works; slim sitemap (~157 index-priority URLs); open `robots.txt`; `exports.html` hub; IndexNow filtered via `indexnow_urls.py`; redirect stubs `noindex`; `nft.html` + winged-snowflake stubs | ✅ |
 | 2026-05-29 | MAINTAINER | Added `submit_indexnow.py` orchestrator (bulk GSC-priority POST + per-URL pass); CI workflow delegates to it; tests in `test_submit_indexnow.py` | ✅ |
 | 2026-05-29 | MAINTAINER | SEO follow-up: `seo_invariants.py` + validate_repo enforcement; paper pages drop JSON-LD; publications.js links titles to works; IndexNow single bulk POST; dynamic exports.html works count | ✅ |
+| 2026-05-29 | INTEGRATOR | Added `docs/GSC_FOLLOWUP.md` manual Search Console runbook + `gsc_followup_preflight.py` + `data/gsc-followup-checklist.json` | ✅ |
 
 ---
 

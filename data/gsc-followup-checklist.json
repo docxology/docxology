@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-05-29T16:04:37Z",
+  "property": "https://danielarifriedman.com/",
+  "preflight_ok": true,
+  "priority_urls": [
+    "https://danielarifriedman.com/",
+    "https://danielarifriedman.com/exports.html",
+    "https://danielarifriedman.com/catalog.html",
+    "https://danielarifriedman.com/cite-verify.html",
+    "https://danielarifriedman.com/discovery.html",
+    "https://danielarifriedman.com/publications.html"
+  ],
+  "gsc_links": {
+    "sitemaps": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
+    "url_inspection": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
+    "page_indexing": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+    "performance": "https://search.google.com/search-console/performance/search-analytics?resource_id=https://danielarifriedman.com/"
+  },
+  "manual_steps": [
+    {
+      "id": "gsc-sitemap",
+      "title": "Submit or refresh sitemap.xml",
+      "gsc_url": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
+      "action": "Add sitemap: sitemap.xml \u2192 Submit"
+    },
+    {
+      "id": "gsc-index-hubs",
+      "title": "Request indexing for 6 priority hubs",
+      "gsc_url": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
+      "action": "URL Inspection \u2192 Request indexing for each priority URL"
+    },
+    {
+      "id": "gsc-validate-redirect",
+      "title": "Validate fix: Page with redirect",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Page indexing \u2192 Page with redirect \u2192 Validate fix"
+    },
+    {
+      "id": "gsc-validate-canonical",
+      "title": "Validate fix: Alternate page with proper canonical",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Page indexing \u2192 Alternate canonical \u2192 Validate fix"
+    },
+    {
+      "id": "gsc-validate-404",
+      "title": "Validate fix: Not found (404)",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Page indexing \u2192 Not found (404) \u2192 Validate fix"
+    },
+    {
+      "id": "gsc-monitor",
+      "title": "Weekly Page indexing check (weeks 1\u20134)",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Review Page indexing + Performance weekly for 2\u20134 weeks"
+    }
+  ],
+  "checklist": [
+    "[ ] Signed into GSC for https://danielarifriedman.com/",
+    "[ ] Preflight passed (this script)",
+    "[ ] Submitted sitemap.xml",
+    "[ ] Requested indexing: /, exports.html, catalog.html, cite-verify.html, discovery.html, publications.html",
+    "[ ] Validate fix: Page with redirect",
+    "[ ] Validate fix: Alternate page with proper canonical",
+    "[ ] Validate fix: Not found (404)",
+    "[ ] Calendar reminder: recheck Page indexing in 7 days"
+  ]
+}

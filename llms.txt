@@ -16,6 +16,8 @@ This repository is the public research and software index for Daniel Ari Friedma
 - OpenSearch descriptor: https://danielarifriedman.com/opensearch.xml
 - Agent start guide: https://github.com/docxology/docxology/blob/main/AGENT_START.md
 - Publication sync runbook: https://github.com/docxology/docxology/blob/main/docs/PUBLICATION_SYNC.md
+- Google Search Console follow-up (manual): https://github.com/docxology/docxology/blob/main/docs/GSC_FOLLOWUP.md
+- GSC preflight checklist JSON: https://danielarifriedman.com/data/gsc-followup-checklist.json
 - Markdown discovery map: https://github.com/docxology/docxology/blob/main/pages/DISCOVERY.md
 - Research domains: https://danielarifriedman.com/domains.html
 - Domain source map: https://github.com/docxology/docxology/blob/main/pages/DOMAINS.md

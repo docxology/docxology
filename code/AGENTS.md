@@ -27,6 +27,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_exports_page.py` | Generate `exports.html` HTML hub for citation/JSON exports |
 | `orchestrators/build_sitemap.py` | Generate index-priority `sitemap.xml` (hubs + works + citation exports) |
 | `orchestrators/indexnow_urls.py` | Emit filtered IndexNow URL list from sitemap policy |
+| `orchestrators/gsc_followup_preflight.py` | Local + live preflight before manual GSC follow-up; writes `data/gsc-followup-checklist.json` |
 | `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |
 | `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, local links, and count consistency |
 | `orchestrators/sync_scholar_metrics.py` | Propagate `data/scholar-snapshot.json` to hand-maintained surfaces |
