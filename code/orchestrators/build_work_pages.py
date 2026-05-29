@@ -359,7 +359,14 @@ def render_index(works: list[dict]) -> str:
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Works Index — Daniel Ari Friedman">
+    <meta property="og:description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
+    <meta property="og:url" content="https://danielarifriedman.com/works/">
+    <meta property="og:site_name" content="Daniel Ari Friedman">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <style>.work-list{{display:grid;gap:.75rem}}.work-row{{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}.work-row .year{{color:var(--gold);font-weight:700}}.work-row .venue{{color:var(--text-muted);font-size:.8rem}}@media(max-width:760px){{.work-row{{grid-template-columns:1fr}}}}</style>
 </head>
 <body>

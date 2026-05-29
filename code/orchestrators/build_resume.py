@@ -1068,6 +1068,14 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta name="description" content="Hashes, source manifest, file sizes, and public links for Daniel Ari Friedman's generated structured resume/CV.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{VERIFY_URL}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Resume Verification - Daniel Ari Friedman">
+    <meta property="og:description" content="Hashes, source manifest, file sizes, and public links for Daniel Ari Friedman's generated structured resume/CV.">
+    <meta property="og:url" content="{VERIFY_URL}">
+    <meta property="og:site_name" content="Daniel Ari Friedman">
+    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260528g">
     <style>
         :root {{

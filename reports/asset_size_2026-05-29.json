@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-29T16:07:53Z",
+  "generated_at": "2026-05-29T16:36:21Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 72,
   "warnings": 0,
-  "total_bytes": 7384766,
+  "total_bytes": 7384757,
   "largest": [
     {
       "path": "data/artworks.json",
@@ -29,7 +29,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 257975,
+      "bytes": 257966,
       "budget_bytes": 5000000,
       "ok": true
     },
