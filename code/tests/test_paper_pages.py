@@ -39,3 +39,4 @@ def test_policy_entanglement_page_links_docs_pdf_and_work_page():
     assert "../../works/Friedman2026PolicyEntanglementActiveInference119.html" in content
     assert 'rel="canonical" href="https://danielarifriedman.com/works/Friedman2026PolicyEntanglementActiveInference119.html"' in content
     assert 'meta name="robots" content="noindex, follow"' in content
+    assert "application/ld+json" not in content

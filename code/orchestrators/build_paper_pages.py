@@ -94,34 +94,6 @@ def required_links(folder: Path) -> str:
     )
 
 
-def json_ld(work: dict) -> str:
-    docs_path = str(work["docs_path"]).rstrip("/")
-    data = {
-        "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        "@id": f"https://danielarifriedman.com/{docs_path}/#paper-folder",
-        "name": f"{work['title']} documentation",
-        "headline": work["title"],
-        "author": {"@id": "https://danielarifriedman.com/#person"},
-        "datePublished": str(work["year"]),
-        "url": f"https://danielarifriedman.com/{docs_path}/",
-        "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
-        "about": [
-            {"@type": "DefinedTerm", "name": work["domain_name"]},
-            {"@type": "DefinedTerm", "name": work["type"]},
-        ],
-        "mainEntity": {
-            "@type": "ScholarlyArticle" if work["type"] in {"Paper", "Book Chapter"} else "CreativeWork",
-            "name": work["title"],
-            "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
-        },
-    }
-    if work.get("doi"):
-        data["identifier"] = {"@type": "PropertyValue", "propertyID": "DOI", "value": work["doi"]}
-        data["sameAs"] = [f"https://doi.org/{work['doi']}"]
-    return json.dumps(data, indent=4, ensure_ascii=False)
-
-
 def works_canonical(work: dict) -> str:
     return f"https://danielarifriedman.com/works/{work['citation_key']}.html"
 
@@ -161,9 +133,6 @@ def render_page(work: dict) -> str:
         .muted{{color:var(--text-muted);font-size:.86rem}}
         .overview-box{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}}
     </style>
-    <script type="application/ld+json">
-{json_ld(work)}
-    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>

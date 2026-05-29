@@ -5,18 +5,19 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "exports.html"
 
-EXPORT_ROWS: list[tuple[str, str, str, str]] = [
+EXPORT_ROW_SPECS: list[tuple[str, str, str, str]] = [
     ("CITATION.cff", "CITATION.cff", "Repository citation metadata for GitHub and Zenodo harvesters.", "text/x-yaml"),
     ("bibliography.bib", "BibTeX", "Full bibliography export for LaTeX, Pandoc, and citation managers.", "application/x-bibtex"),
     ("bibliography.csl.json", "CSL JSON", "citeproc- and Pandoc-compatible structured citations.", "application/json"),
     ("bibliography.ris", "RIS", "Import format for Zotero, EndNote, and Mendeley.", "application/x-research-info-systems"),
     ("codemeta.json", "CodeMeta", "Software and source metadata for research software indexers.", "application/json"),
-    ("data/works.json", "Works JSON", "125-row structured bibliography with DOIs, domains, and doc paths.", "application/json"),
+    ("data/works.json", "Works JSON", "{works_count}-row structured bibliography with DOIs, domains, and doc paths.", "application/json"),
     ("data/software.json", "Software JSON", "Owned and AII software catalog rows.", "application/json"),
     ("data/catalog.json", "Catalog JSON", "Schema.org DataCatalog mirror of catalog.html.", "application/json"),
     ("data/claims.json", "Claims JSON", "Evidence ledger with confidence and source links.", "application/json"),
@@ -34,6 +35,19 @@ EXPORT_ROWS: list[tuple[str, str, str, str]] = [
 ]
 
 
+def works_count() -> int:
+    data = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))
+    return len(data["works"])
+
+
+def export_rows() -> list[tuple[str, str, str, str]]:
+    count = works_count()
+    return [
+        (rel, title, desc.format(works_count=count), mime)
+        for rel, title, desc, mime in EXPORT_ROW_SPECS
+    ]
+
+
 def h(value: object) -> str:
     return html.escape(str(value), quote=True)
 
@@ -45,7 +59,7 @@ def render() -> str:
                     <p>{h(desc)}</p>
                     <span class="mime">{h(mime)} · {h(rel)}</span>
                 </article>"""
-        for rel, title, desc, mime in EXPORT_ROWS
+        for rel, title, desc, mime in export_rows()
     )
     return f"""<!DOCTYPE html>
 <html lang="en">

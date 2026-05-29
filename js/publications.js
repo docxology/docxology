@@ -41,6 +41,8 @@ let currentSort = { col: 'num', dir: 1 };
 
 function workToPub(work) {
     const url = work.url || '';
+    const citationKey = work.citation_key || '';
+    const workPage = citationKey ? `/works/${citationKey}.html` : '';
     const docs =
         work.has_paper_folder && work.docs_path
             ? `https://github.com/docxology/docxology/tree/main/${String(work.docs_path).replace(/\/$/, '')}`
@@ -54,6 +56,7 @@ function workToPub(work) {
         venue: work.venue,
         doi: url,
         docs,
+        workPage,
         hasDoi: url.startsWith('https://doi.org/'),
         hasDocs: Boolean(work.has_paper_folder && work.docs_path),
     };
@@ -186,6 +189,9 @@ function renderTable() {
         tbody.innerHTML = data
             .map((p) => {
                 const title = esc(p.title);
+                const titleCell = p.workPage
+                    ? `<a href="${esc(p.workPage)}">${title}</a>`
+                    : `<a href="${esc(p.doi || p.docs || '#')}" target="_blank" rel="noopener">${title}</a>`;
                 const primary = p.doi
                     ? `<a href="${esc(p.doi)}" target="_blank" rel="noopener">→ Link</a>`
                     : '<span aria-label="No primary link">—</span>';
@@ -198,7 +204,7 @@ function renderTable() {
                     `<td class="td-year">${p.year}</td>` +
                     `<td class="td-domain">${esc(DOMAIN_LABELS[p.domain] || p.domain)}</td>` +
                     `<td class="td-type"><span class="type-badge ${typeClass(p.type)}">${esc(p.type)}</span></td>` +
-                    `<td class="td-title"><a href="${esc(p.doi || p.docs || '#')}" target="_blank" rel="noopener">${title}</a></td>` +
+                    `<td class="td-title">${titleCell}</td>` +
                     `<td class="td-venue">${esc(p.venue)}</td>` +
                     `<td class="td-doi">${primary}${docs}</td>` +
                     '</tr>'

@@ -36,15 +36,11 @@ def url_entry(rel_path: str, changefreq: str, priority: str, lastmod: str) -> st
     return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
-def static_rows() -> list[tuple[str, str, str]]:
-    return list(INDEX_PRIORITY_STATIC)
-
-
 def sitemap_locs(lastmod: str | None = None) -> list[str]:
     """Absolute URLs included in sitemap.xml (for IndexNow and tests)."""
     date = lastmod or report_date_string()
     _ = date
-    locs = [loc(rel_path) for rel_path, _, _ in static_rows()]
+    locs = [loc(rel_path) for rel_path, _, _ in INDEX_PRIORITY_STATIC]
     works_dir = REPO_ROOT / "works"
     if works_dir.exists():
         for path in sorted(works_dir.glob("*.html")):
@@ -56,7 +52,7 @@ def sitemap_locs(lastmod: str | None = None) -> list[str]:
 
 def render(lastmod: str | None = None) -> str:
     date = lastmod or report_date_string()
-    entries = [url_entry(*row, date) for row in static_rows()]
+    entries = [url_entry(*row, date) for row in INDEX_PRIORITY_STATIC]
     works_dir = REPO_ROOT / "works"
     if works_dir.exists():
         for path in sorted(works_dir.glob("*.html")):

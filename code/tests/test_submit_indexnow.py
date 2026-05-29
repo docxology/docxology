@@ -11,14 +11,21 @@ ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 sys.path.insert(0, str(ORCH_DIR))
 
-from submit_indexnow import GSC_PRIORITY_URLS, key_location, submit_bulk  # noqa: E402
-from sitemap_policy import SITE_ORIGIN  # noqa: E402
+from submit_indexnow import indexnow_urls, key_location, submit_bulk  # noqa: E402
+from sitemap_policy import SITE_ORIGIN, gsc_priority_urls  # noqa: E402
 
 
 def test_gsc_priority_urls_include_hubs():
-    assert SITE_ORIGIN in GSC_PRIORITY_URLS
-    assert f"{SITE_ORIGIN}exports.html" in GSC_PRIORITY_URLS
-    assert f"{SITE_ORIGIN}publications.html" in GSC_PRIORITY_URLS
+    urls = gsc_priority_urls()
+    assert SITE_ORIGIN in urls
+    assert f"{SITE_ORIGIN}exports.html" in urls
+    assert f"{SITE_ORIGIN}publications.html" in urls
+
+
+def test_indexnow_urls_include_homepage_and_works():
+    urls = indexnow_urls()
+    assert SITE_ORIGIN in urls
+    assert any("/works/" in url and url.endswith(".html") for url in urls)
 
 
 def test_key_location_uses_txt_suffix_for_32_char_key():
@@ -27,7 +34,7 @@ def test_key_location_uses_txt_suffix_for_32_char_key():
 
 
 def test_submit_bulk_dry_run_no_network():
-    assert submit_bulk(GSC_PRIORITY_URLS, "test-key", dry_run=True) == 0
+    assert submit_bulk(gsc_priority_urls(), "test-key", dry_run=True) == 0
 
 
 def test_submit_bulk_success():

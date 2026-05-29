@@ -145,6 +145,15 @@ def validate_sitemap_targets() -> None:
         raise SystemExit("Sitemap targets missing locally: " + ", ".join(missing))
 
 
+def validate_seo_invariants() -> None:
+    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+    from seo_invariants import collect_seo_errors
+
+    errors = collect_seo_errors(REPO_ROOT)
+    if errors:
+        raise SystemExit("SEO invariant violations:\n" + "\n".join(f"  - {e}" for e in errors[:40]))
+
+
 def main() -> None:
     run(["python3", "papers/sync_publications_html.py"])
     run(["python3", "papers/sync_software_html.py"])
@@ -155,6 +164,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_paper_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_catalog.py", "--check"])
+    run(["python3", "code/orchestrators/build_exports_page.py", "--check"])
     run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
@@ -179,6 +189,7 @@ def main() -> None:
     validate_count_consistency()
     validate_local_links()
     validate_sitemap_targets()
+    validate_seo_invariants()
     print("repo validation ok")
 
 

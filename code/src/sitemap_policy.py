@@ -44,6 +44,19 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
+GSC_PRIORITY_PATHS: tuple[str, ...] = (
+    "",
+    "exports.html",
+    "catalog.html",
+    "cite-verify.html",
+    "discovery.html",
+    "publications.html",
+)
+
+
+def gsc_priority_urls() -> list[str]:
+    return [absolute_url(path) for path in GSC_PRIORITY_PATHS]
+
 _INDEXNOW_EXACT = {
     "CITATION.cff",
     "bibliography.bib",

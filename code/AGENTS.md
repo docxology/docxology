@@ -12,6 +12,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/resume_data.py` | Load, clean, validate, merge, and render structured resume/CV data |
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
+| `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
@@ -26,7 +27,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_exports_page.py` | Generate `exports.html` HTML hub for citation/JSON exports |
 | `orchestrators/build_sitemap.py` | Generate index-priority `sitemap.xml` (hubs + works + citation exports) |
 | `orchestrators/indexnow_urls.py` | Emit filtered IndexNow URL list from sitemap policy |
-| `orchestrators/submit_indexnow.py` | Bulk + per-URL IndexNow POST/GET for GSC follow-up (`--priority-only`, `--dry-run`) |
+| `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |
 | `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, local links, and count consistency |
 | `orchestrators/sync_scholar_metrics.py` | Propagate `data/scholar-snapshot.json` to hand-maintained surfaces |
 | `data/youtube_personal.json` | Cached export (personal channel) |
