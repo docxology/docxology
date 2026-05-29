@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T12:14:06Z",
+  "generated_at": "2026-05-29T12:54:44Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -186,6 +186,17 @@
       "command": "python3 code/orchestrators/build_catalog.py"
     },
     {
+      "name": "Exports hub",
+      "outputs": [
+        "exports.html"
+      ],
+      "sources": [
+        "code/orchestrators/build_exports_page.py",
+        "data/catalog.json"
+      ],
+      "command": "python3 code/orchestrators/build_exports_page.py"
+    },
+    {
       "name": "Updates page",
       "outputs": [
         "updates.html"
@@ -293,7 +304,7 @@
       ],
       "sources": [
         "works/*.html",
-        "papers/*/index.html",
+        "code/src/sitemap_policy.py",
         "code/orchestrators/build_sitemap.py"
       ],
       "command": "python3 code/orchestrators/build_sitemap.py"

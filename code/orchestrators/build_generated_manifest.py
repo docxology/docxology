@@ -161,6 +161,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_catalog.py",
     },
     {
+        "name": "Exports hub",
+        "outputs": ["exports.html"],
+        "sources": ["code/orchestrators/build_exports_page.py", "data/catalog.json"],
+        "command": "python3 code/orchestrators/build_exports_page.py",
+    },
+    {
         "name": "Updates page",
         "outputs": ["updates.html"],
         "sources": ["CHANGELOG.md", "code/orchestrators/build_updates_page.py"],
@@ -223,7 +229,7 @@ ARTIFACTS = [
     {
         "name": "Sitemap",
         "outputs": ["sitemap.xml"],
-        "sources": ["works/*.html", "papers/*/index.html", "code/orchestrators/build_sitemap.py"],
+        "sources": ["works/*.html", "code/src/sitemap_policy.py", "code/orchestrators/build_sitemap.py"],
         "command": "python3 code/orchestrators/build_sitemap.py",
     },
     {
