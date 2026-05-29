@@ -33,6 +33,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Evidence ledger: https://danielarifriedman.com/evidence.html
 - Evidence ledger source: https://github.com/docxology/docxology/blob/main/pages/EVIDENCE.md
 - Data catalog: https://danielarifriedman.com/catalog.html
+- Public exports index: https://danielarifriedman.com/exports.html
 - DataCatalog JSON: https://danielarifriedman.com/data/catalog.json
 - Updates page: https://danielarifriedman.com/updates.html
 - Changelog source: https://github.com/docxology/docxology/blob/main/CHANGELOG.md
@@ -70,6 +71,13 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-05-13.json
 - Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-05-13.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-05-13/manifest.json
+
+## Public Crawl Policy
+
+- The entire site is public and crawlable (`robots.txt`: `Allow: /`).
+- `sitemap.xml` lists **index-priority** URLs (HTML hubs, works pages, citation exports) — not a crawl gate.
+- Ops paths (`reports/`, `docs/`, bulk `data/*.json`, ops `.md`) remain public and linked from `discovery.html`, `catalog.html`, and `exports.html`.
+- Primary publication index target: `works/{citation_key}.html`. Paper-folder HTML (`papers/{folder}/`) canonicalizes to the work page.
 
 ## Source Of Truth Rules
 

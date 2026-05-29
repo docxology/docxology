@@ -16,6 +16,8 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
         ("domains", f"{prefix}domains.html", "Domains"),
         ("software", f"{prefix}software.html", "Software"),
         ("search", f"{prefix}search.html", "Search"),
+        ("catalog", f"{prefix}catalog.html", "Data Catalog"),
+        ("cite", f"{prefix}cite-verify.html", "Cite"),
         ("discovery", f"{prefix}discovery.html", "Discovery"),
     ]
     parts = [
@@ -42,6 +44,8 @@ def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
         ("domains", f"{prefix}domains.html", "Domains"),
         ("software", f"{prefix}software.html", "Software"),
         ("search", f"{prefix}search.html", "Search"),
+        ("catalog", f"{prefix}catalog.html", "Data Catalog"),
+        ("cite", f"{prefix}cite-verify.html", "Cite"),
         ("discovery", f"{prefix}discovery.html", "Discovery"),
         ("media", f"{prefix}media.html", "Media"),
     ]
@@ -68,6 +72,8 @@ def render_nav_compact(*, depth: int = 1) -> str:
         f'<a href="{prefix}publications.html">Publications</a>'
         f'<a href="{prefix}domains.html">Domains</a>'
         f'<a href="{prefix}search.html">Search</a>'
+        f'<a href="{prefix}catalog.html">Data Catalog</a>'
+        f'<a href="{prefix}cite-verify.html">Cite</a>'
         f'<a href="{prefix}discovery.html">Discovery</a>'
         f"</div></nav>"
     )

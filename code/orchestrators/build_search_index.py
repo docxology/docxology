@@ -56,6 +56,7 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("repositories", "page", "Repository Inventory", "/repositories.html", "Full generated inventory of public docxology and AII GitHub repositories.", ["software", "github", "inventory"]),
     ("search", "page", "Search", "/search.html", "Human-facing search over works, software, pages, people, organizations, and claims.", ["search"]),
     ("catalog", "page", "Data Catalog", "/catalog.html", "Structured DataCatalog for public JSON exports.", ["catalog", "structured data"]),
+    ("exports", "page", "Public Exports", "/exports.html", "HTML index of citation exports and JSON datasets.", ["exports", "citation", "bibtex"]),
     ("updates", "page", "Updates", "/updates.html", "Human-readable changelog for the public research and discovery index.", ["updates", "changelog"]),
     ("discovery", "page", "Discovery Map", "/discovery.html", "Canonical identifiers and public source queries.", ["agents"]),
     ("cite-verify", "page", "Cite & Verify", "/cite-verify.html", "Citation and source-of-truth rules.", ["citation"]),

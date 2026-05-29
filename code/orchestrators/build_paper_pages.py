@@ -122,11 +122,16 @@ def json_ld(work: dict) -> str:
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 
+def works_canonical(work: dict) -> str:
+    return f"https://danielarifriedman.com/works/{work['citation_key']}.html"
+
+
 def render_page(work: dict) -> str:
     docs_path = str(work["docs_path"]).rstrip("/")
     folder = REPO_ROOT / docs_path
     summary = overview(folder) or "Local documentation and source artifacts for this bibliography entry."
     doi_url = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
+    canonical = works_canonical(work)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,8 +139,8 @@ def render_page(work: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{h(work['title'])} Documentation — Daniel Ari Friedman</title>
     <meta name="description" content="{h(summary[:155].rstrip())}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://danielarifriedman.com/{h(docs_path)}/">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="{h(canonical)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
@@ -144,7 +149,7 @@ def render_page(work: dict) -> str:
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])} Documentation">
     <meta property="og:description" content="{h(summary[:155].rstrip())}">
-    <meta property="og:url" content="https://danielarifriedman.com/{h(docs_path)}/">
+    <meta property="og:url" content="{h(canonical)}">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <style>
         .paper-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
@@ -166,7 +171,7 @@ def render_page(work: dict) -> str:
     <header class="paper-hero">
         <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
-        <p class="sub">Documentation folder for catalog row {h(work['num'])}</p>
+        <p class="sub">Documentation folder for catalog row {h(work['num'])} · <a href="../../works/{h(work['citation_key'])}.html">Canonical work page</a></p>
     </header>
     <main id="main" class="main">
         <section class="section">

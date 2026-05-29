@@ -37,3 +37,5 @@ def test_policy_entanglement_page_links_docs_pdf_and_work_page():
     assert 'href="SKILL.md"' in content
     assert "Friedman_2026_Policy_ae7cdd62.pdf" in content
     assert "../../works/Friedman2026PolicyEntanglementActiveInference119.html" in content
+    assert 'rel="canonical" href="https://danielarifriedman.com/works/Friedman2026PolicyEntanglementActiveInference119.html"' in content
+    assert 'meta name="robots" content="noindex, follow"' in content

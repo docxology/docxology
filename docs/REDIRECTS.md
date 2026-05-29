@@ -8,6 +8,8 @@ This site is served by GitHub Pages at `https://danielarifriedman.com/`, with `C
 - Keep `www` URLs out of `rel="canonical"`, Open Graph `og:url`, sitemap `loc`, and machine-readable exports.
 - Keep redirect-only or compatibility stub pages out of the sitemap when their canonical target is another page.
 - Keep source Markdown paths in GitHub links, but use apex URLs for public HTML pages.
+- **Full public crawl:** `robots.txt` uses `Allow: /` with no `Disallow` rules. Sitemap lists index-priority URLs only; `llms.txt` documents the full public path inventory.
+- **Publication canonicals:** `works/{citation_key}.html` is the primary index target; `papers/{folder}/` pages use `noindex, follow` and canonical to the matching work page.
 
 ## Known Entry Points
 

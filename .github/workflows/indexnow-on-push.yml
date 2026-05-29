@@ -1,4 +1,4 @@
-# Submits sitemap URLs to IndexNow (Bing, Yandex, Naver) after HTML sitemap/SEO changes on main.
+# Submit index-priority URLs to IndexNow (Bing, Yandex, Naver) after HTML/sitemap changes on main.
 name: IndexNow
 on:
   push:
@@ -7,6 +7,8 @@ on:
       - "**.html"
       - "sitemap.xml"
       - "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
+      - "code/orchestrators/indexnow_urls.py"
+      - "code/src/sitemap_policy.py"
 
 permissions:
   contents: read
@@ -31,4 +33,4 @@ jobs:
             code=$(curl -sS -o /dev/null -w "%{http_code}" \
               "https://api.indexnow.org/indexnow?url=${u}&key=${KEY}" || echo "000")
             echo "$code  $u"
-          done < <(grep '<loc>' sitemap.xml | sed 's|.*<loc>||;s|</loc>.*||')
+          done < <(python3 code/orchestrators/indexnow_urls.py)

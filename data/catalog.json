@@ -8,7 +8,7 @@
   "creator": {
     "@id": "https://danielarifriedman.com/#person"
   },
-  "dateModified": "2026-05-28",
+  "dateModified": "2026-05-29",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -237,11 +237,11 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-28.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-29.json",
       "encodingFormat": "application/json",
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-28.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-29.json",
         "encodingFormat": "application/json"
       }
     },

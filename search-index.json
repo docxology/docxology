@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T16:07:13Z",
+  "generated_at": "2026-05-29T12:14:47Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 614,
+  "count": 615,
   "items": [
     {
       "id": "page:home",
@@ -106,6 +106,19 @@
         "structured data"
       ],
       "content": "Data Catalog Structured DataCatalog for public JSON exports. catalog structured data"
+    },
+    {
+      "id": "page:exports",
+      "type": "page",
+      "title": "Public Exports",
+      "url": "/exports.html",
+      "summary": "HTML index of citation exports and JSON datasets.",
+      "tags": [
+        "exports",
+        "citation",
+        "bibtex"
+      ],
+      "content": "Public Exports HTML index of citation exports and JSON datasets. exports citation bibtex"
     },
     {
       "id": "page:updates",
@@ -263,7 +276,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-05-28.json",
+      "url": "/reports/accessibility_static_2026-05-29.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -312,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-28.json",
+      "url": "/reports/asset_size_2026-05-29.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",

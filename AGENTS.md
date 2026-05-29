@@ -194,6 +194,7 @@ docxology/
 | 2026-05-26 | ARCHIVIST | Added `2026_BiologyTextbook` (DOI 10.5281/zenodo.20286478); Computational 7→8; Books 3→4; bibliography 116→117 (row 117); paper folders and metadata 109→110; README/AGENTS/SKILL/CITATION.cff/metadata.json; publications + works.json resynced | ✅ |
 | 2026-05-26 | INTEGRATOR | Added `papers/software_table.py` + `papers/sync_software_html.py`: full 82-row `software.html` repo grids + `data/software-ld.json` from `pages/SOFTWARE.md`; `biology_textbook` on software surface; SOFTWARE.md subtotal 49→50; domain/work cross-links | ✅ |
 | 2026-05-28 | ARCHIVIST | Deduplicated exact-title 2026 Zenodo version supersessions: kept newest DOI records in canonical non-`2` folders, unified bibliography/publications/data works at 125, paper folders at 118, and hardened paired-publication sync against same-title same-repo duplicates | ✅ |
+| 2026-05-29 | INTEGRATOR | GSC indexing remediation: `works/*.html` primary canonical; `papers/*/` `noindex` + canonical to works; slim sitemap (~157 index-priority URLs); open `robots.txt`; `exports.html` hub; IndexNow filtered via `indexnow_urls.py`; redirect stubs `noindex`; `nft.html` + winged-snowflake stubs | ✅ |
 
 ---
 

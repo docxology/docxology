@@ -23,7 +23,14 @@ def test_render_nav_supports_deeper_pages():
     assert 'href="../../works/" class="active"' in html
 
 
+def test_render_nav_includes_catalog_and_cite():
+    html = render_nav(active="catalog", depth=0)
+    assert 'href="catalog.html" class="active"' in html
+    assert 'href="cite-verify.html"' in html
+
+
 def test_render_nav_domain_marks_domains_active():
     html = render_nav_domain(active="domains")
     assert 'href="domains.html" class="active"' in html
     assert "Software" in html
+    assert 'href="catalog.html"' in html

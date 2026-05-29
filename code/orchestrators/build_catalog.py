@@ -158,7 +158,7 @@ def render_html(date_modified: str | None = None) -> str:
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
         <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
-        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="search.html">Search</a><a href="discovery.html">Discovery</a></div>
+        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="catalog.html">Data Catalog</a><a href="exports.html">Exports</a><a href="cite-verify.html">Cite</a><a href="discovery.html">Discovery</a></div>
     </nav>
     <header class="page-hero"><h1>Data Catalog</h1><p class="sub">Structured exports for the bibliography, software catalog, evidence layer, and agentic discovery surfaces.</p></header>
     <main id="main" class="main"><section class="section"><div class="catalog-grid">

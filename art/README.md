@@ -13270,7 +13270,7 @@ Quem struit; haud ignara ac non incauta futuri.​&quot;​
 
 ## Winged Snowflake
 _Blog on this piece: 
-<a href="https://danielarifriedman.com/blog/winged-snowflake-2021#/" rel="noreferrer nofollow">danielarifriedman.com/blog/winged-snowflake-2021#/</a>
+<a href="https://danielarifriedman.com/art.html" rel="noreferrer nofollow">danielarifriedman.com/blog/winged-snowflake-2021#/</a>
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

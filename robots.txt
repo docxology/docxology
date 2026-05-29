@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://danielarifriedman.com/sitemap.xml
+# Public site — full crawl permitted.
+# Index priorities: sitemap.xml
+# Agent map: llms.txt | humans.txt | discovery.html
+# Citation exports: CITATION.cff, bibliography.bib, codemeta.json, exports.html
 
-# Human and agent entrypoints
-# https://danielarifriedman.com/humans.txt
-# https://danielarifriedman.com/llms.txt
-# https://danielarifriedman.com/AGENT_START.md
+Sitemap: https://danielarifriedman.com/sitemap.xml
