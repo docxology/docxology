@@ -8,6 +8,7 @@ on:
       - "sitemap.xml"
       - "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
       - "code/orchestrators/indexnow_urls.py"
+      - "code/orchestrators/submit_indexnow.py"
       - "code/src/sitemap_policy.py"
 
 permissions:
@@ -23,14 +24,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Submit URLs to IndexNow
-        env:
-          KEY_FILE: a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt
-        run: |
-          set -e
-          KEY=$(tr -d ' \n\r' < "$KEY_FILE")
-          test -n "$KEY"
-          while IFS= read -r u; do
-            code=$(curl -sS -o /dev/null -w "%{http_code}" \
-              "https://api.indexnow.org/indexnow?url=${u}&key=${KEY}" || echo "000")
-            echo "$code  $u"
-          done < <(python3 code/orchestrators/indexnow_urls.py)
+        run: python3 code/orchestrators/submit_indexnow.py

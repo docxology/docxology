@@ -26,7 +26,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Browser smoke checks | `reports/browser-smoke/2026-05-28/*.png`<br>`reports/browser-smoke/2026-05-28/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
 | Live site verification | `reports/live_site_verification_2026-05-15.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
-| Sitemap | `sitemap.xml` | `works/*.html`<br>`papers/*/index.html`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
+| Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | Visual QA | `reports/visual-qa/2026-05-28/*.png`<br>`reports/visual-qa/2026-05-28/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
 
 ## Validation
