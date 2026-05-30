@@ -1,25 +1,26 @@
 :root {
-            --bg-primary:    #050505;
-            --bg-secondary:  #0b0b0b;
-            --bg-card:       rgba(13,13,13,0.96);
-            --bg-glass:      rgba(255,255,255,0.026);
-            --text-primary:  #f2f2f2;
-            --text-secondary:#d2d2d2;
-            --text-muted:    #888888;
-            --red:           #ff0000;
-            --red-bright:    #ff0000;
-            --red-pure:      #ff0000;
-            --red-glow:      rgba(255,0,0,0.16);
-            --gold:          #ff0000;
-            --gold-bright:   #ff0000;
-            --gold-glow:     rgba(255,0,0,0.13);
-            --silver:        #b8b8b8;
-            --silver-bright: #f0f0f0;
-            --border:        rgba(255,255,255,0.2);
-            --border-hover:  rgba(255,0,0,0.55);
+            color-scheme: dark;
+            --bg-primary:    #0a0908;
+            --bg-secondary:  #100e0c;
+            --bg-card:       rgba(20,18,16,0.96);
+            --bg-glass:      rgba(255,252,245,0.028);
+            --text-primary:  #f4f1ea;
+            --text-secondary:#cfc9bd;
+            --text-muted:    #9a958a;
+            --red:           #e23b2e;
+            --red-bright:    #ff4133;
+            --red-pure:      #f1463a;
+            --red-glow:      rgba(226,59,46,0.16);
+            --gold:          #e8e2d4;
+            --gold-bright:   #ffffff;
+            --gold-glow:     rgba(232,226,212,0.13);
+            --silver:        #b8b3a8;
+            --silver-bright: #f2efe8;
+            --border:        rgba(244,241,234,0.18);
+            --border-hover:  rgba(241,70,58,0.6);
             --radius:        3px;
-            --paper-line:    rgba(255,255,255,0.18);
-            --paper-soft:    rgba(255,255,255,0.05);
+            --paper-line:    rgba(244,241,234,0.2);
+            --paper-soft:    rgba(244,241,234,0.05);
             --art-a:         url("assets/hero-art/ant-head.webp");
             --art-b:         url("assets/hero-art/decentral-antelligence-agency.webp");
             --art-c:         url("assets/hero-art/mesh-network.webp");
@@ -64,11 +65,13 @@
         /* ── NAV ── */
         nav{
             position:fixed;top:0;left:0;right:0;z-index:200;
-            background:rgba(12,12,14,0.92);
-            -webkit-backdrop-filter:blur(22px) saturate(160%);
-            backdrop-filter:blur(22px) saturate(160%);
-            border-bottom:1px solid rgba(201,168,76,0.15);
-            padding:0 2rem;height:68px;
+            background:rgba(14,12,10,0.93);
+            -webkit-backdrop-filter:blur(22px) saturate(150%);
+            backdrop-filter:blur(22px) saturate(150%);
+            /* newspaper masthead double-rule */
+            border-bottom:1px solid var(--paper-line);
+            box-shadow:0 3px 0 -2px var(--paper-soft),0 4px 0 -2px var(--paper-line);
+            padding:0 2rem;height:64px;
             display:flex;align-items:center;justify-content:space-between;
         }
         .nav-logo{
@@ -112,8 +115,8 @@
         }
         .page-hero h1{
             font-family:'Playfair Display',serif;
-            font-size:clamp(2.1rem,6vw,4.2rem);
-            line-height:1.12;
+            font-size:clamp(1.7rem,3.6vw,2.7rem);
+            line-height:1.14;
             margin-bottom:.75rem;
             color:#fff;
         }
@@ -160,11 +163,18 @@
         }
         .hero h1{
             font-family:'Playfair Display',serif;
-            font-size:clamp(2.4rem,5.5vw,4.2rem);
-            font-weight:800;line-height:1.1;margin-bottom:1rem;
-            background:linear-gradient(135deg,#fff 0%,#d8d8d8 45%,#f4f4f4 100%);
+            font-size:clamp(1.85rem,3.8vw,2.9rem);
+            font-weight:800;line-height:1.12;margin-bottom:1rem;
+            letter-spacing:.005em;
+            background:linear-gradient(135deg,#fff 0%,#e2ddd3 45%,#f6f4ee 100%);
             -webkit-background-clip:text;-webkit-text-fill-color:transparent;
             background-clip:text;
+        }
+        /* Accessibility: clipped (transparent-fill) headings must stay visible in forced-colors / high-contrast */
+        @media (forced-colors: active){
+            .hero h1,.page-hero h1,.nav-logo,.stat .num{
+                -webkit-text-fill-color:currentColor;color:CanvasText;background:none;
+            }
         }
         .hero .subtitle{font-size:1.1rem;color:#c9c9c9;margin-bottom:.5rem;font-weight:400}
         .hero .tagline{
