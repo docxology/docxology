@@ -117,7 +117,7 @@ def render_page(work: dict) -> str:
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530a">
+    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530b">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])} Documentation">
     <meta property="og:description" content="{h(summary[:155].rstrip())}">

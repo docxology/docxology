@@ -1076,7 +1076,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530a">
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530b">
     <style>
         :root {{
             --resume-red: #ff0000;

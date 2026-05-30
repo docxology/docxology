@@ -81,7 +81,7 @@ def render() -> str:
     <meta property="og:description" content="Citation exports and JSON datasets for the public research index.">
     <meta property="og:url" content="https://danielarifriedman.com/exports.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
-    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530a">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530b">
     <style>
         .export-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}
         .export-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}

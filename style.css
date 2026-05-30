@@ -76,7 +76,7 @@
         }
         .nav-logo{
             font-family:'Playfair Display',serif;
-            font-weight:700;font-size:1.1rem;
+            font-weight:700;font-size:.98rem;
             background:linear-gradient(135deg,var(--gold),var(--silver-bright));
             -webkit-background-clip:text;-webkit-text-fill-color:transparent;
             background-clip:text;letter-spacing:.02em;
@@ -163,13 +163,14 @@
         }
         .hero h1{
             font-family:'Playfair Display',serif;
-            font-size:clamp(1.85rem,3.8vw,2.9rem);
-            font-weight:800;line-height:1.12;margin-bottom:1rem;
-            letter-spacing:.005em;
+            font-size:clamp(1.55rem,3vw,2.4rem);
+            font-weight:800;line-height:1.1;margin:.2rem 0 .55rem;
+            letter-spacing:.01em;
             background:linear-gradient(135deg,#fff 0%,#e2ddd3 45%,#f6f4ee 100%);
             -webkit-background-clip:text;-webkit-text-fill-color:transparent;
             background-clip:text;
         }
+        /* newspaper masthead element styles are defined with the newspaper theme block below */
         /* Accessibility: clipped (transparent-fill) headings must stay visible in forced-colors / high-contrast */
         @media (forced-colors: active){
             .hero h1,.page-hero h1,.nav-logo,.stat .num{
@@ -456,19 +457,10 @@ nav{
     background:none;
     -webkit-text-fill-color:currentColor;
     text-transform:uppercase;
-    font-size:1rem;
-    letter-spacing:.08em;
-    line-height:1.08;
-    max-width:11rem;
-}
-.nav-logo::after{
-    content:'PhD';
-    display:block;
-    color:var(--red-pure);
-    font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
-    font-size:.58rem;
-    letter-spacing:.22em;
-    margin-top:.14rem;
+    font-size:.86rem;
+    letter-spacing:.07em;
+    line-height:1.1;
+    max-width:13rem;
 }
 .nav-links{gap:1.1rem}
 .nav-links a,.btn,.filter-btn,.filter-toggle,.result-count,.pill,.tag,.type-badge,.repo-meta,.collab-affil,.media-stats,.footer-links,.profile-links a{
@@ -565,19 +557,20 @@ nav{
     background:none;
     -webkit-text-fill-color:currentColor;
     font-family:Georgia,'Times New Roman',serif;
-    font-size:clamp(2.15rem,4.8vw,4.45rem);
+    font-size:clamp(1.5rem,3vw,2.5rem);
     letter-spacing:.015em;
-    line-height:1.02;
+    line-height:1.06;
     text-transform:uppercase;
-    margin-bottom:.75rem;
+    margin:.15rem 0 .5rem;
     text-shadow:0 1px 0 #000;
 }
 .hero .subtitle{
     color:#efefef;
     font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
-    font-size:clamp(.86rem,1.4vw,1.04rem);
+    font-size:clamp(.78rem,1.3vw,.92rem);
     text-transform:uppercase;
-    letter-spacing:.085em;
+    letter-spacing:.07em;
+    margin-bottom:0;
 }
 .hero .tagline{
     display:inline-block;
@@ -590,6 +583,35 @@ nav{
     font-size:.8rem;
     letter-spacing:.1em;
 }
+/* effective masthead elements (override first-block defs; co-located with newspaper theme) */
+.hero .masthead-rule{
+    display:inline-block;
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;
+    color:#cfc9bd;
+    padding:.35rem .2rem;margin:0 0 .15rem;
+    border-top:1px solid rgba(244,241,234,0.3);
+    border-bottom:1px solid rgba(244,241,234,0.3);
+    line-height:1.4;
+}
+.hero .hero-sections{
+    display:block;text-align:center;
+    margin:1.25rem auto .8rem;max-width:600px;
+    padding:.5rem 0;
+    border-top:3px double rgba(244,241,234,0.5);
+    border-bottom:1px solid rgba(244,241,234,0.24);
+    line-height:2.1;
+}
+.hero .hero-sections a{
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:1rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    color:#f4f1ea;padding:.15rem .95rem;display:inline-block;white-space:nowrap;
+}
+.hero .hero-sections a:not(:last-child){border-right:1px solid rgba(244,241,234,0.28)}
+.hero .hero-sections a:hover,.hero .hero-sections a:focus-visible{color:var(--red-pure)}
+.hero .hero-utility{font-size:.78rem;color:var(--text-muted);margin:0 0 1.4rem;letter-spacing:.02em}
+.hero .hero-utility a{color:#cfc9bd}
+.hero .hero-utility a:hover,.hero .hero-utility a:focus-visible{color:#fff}
 .hero .btn,.btn,.profile-links a,.pill,.filter-btn,.domain-pill,.filter-toggle{
     border-radius:2px;
     text-transform:uppercase;
