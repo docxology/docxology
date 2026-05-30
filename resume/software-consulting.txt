@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-05-29T16:33:45Z
+Generated: 2026-05-30T18:59:20Z
 
-Current public metrics: 125 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 149 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (118)
+WORKS AND PUBLICATIONS (142)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -174,6 +174,30 @@ WORKS AND PUBLICATIONS (118)
 [123] 2026 | Paper | A template/ approach to Reproducible Generative Research | Zenodo | 10.5281/zenodo.20420387
 [124] 2026 | Paper | Active Inference Multi-Track Exemplar | Zenodo | 10.5281/zenodo.20420352
 [125] 2026 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | Zenodo | 10.5281/zenodo.20420557
+[126] 2026 | Paper | When do bugs see (infra)red? | Zenodo | 10.5281/zenodo.20450970
+[127] 2026 | Paper | Self-Improvement Agent Harness: A Deterministic SIA Exemplar | Zenodo | 10.5281/zenodo.20453880
+[128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861596
+[129] 2025 | Paper | Con-cat-enate: emulation of Cat Hippocampus | Zenodo | 10.5281/zenodo.14738798
+[130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737157
+[131] 2025 | Paper | BevCyc - posit on primitive drivers of creatures | Zenodo | 10.5281/zenodo.14737076
+[132] 2025 | Paper | Beacons - pre emulation of social cortex | Zenodo | 10.5281/zenodo.14737060
+[133] 2025 | Paper | Con-cat-enate: pilot overview | Zenodo | 10.5281/zenodo.14737043
+[134] 2024 | Paper | Push and Pull: A priming sequence | Zenodo | 10.5281/zenodo.10659375
+[135] 2023 | Paper | A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance | Zenodo | 10.5281/zenodo.10360148
+[136] 2023 | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10362561
+[137] 2023 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | Zenodo | 10.5281/zenodo.8229512
+[138] 2023 | Paper | Modern Nostr Index Card-based Knowledge Engineering | Zenodo | 10.5281/zenodo.8118156
+[139] 2023 | Paper | Slides for Iris | Zenodo | 10.5281/zenodo.7838653
+[140] 2022 | Paper | Canonical neural networks perform active inference | Zenodo | 10.5281/zenodo.7400536
+[141] 2022 | Paper | Interoception as modeling, allostasis as control | Zenodo | 10.5281/zenodo.7400709
+[142] 2022 | Paper | Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016 | Zenodo | 10.5281/zenodo.7267947
+[143] 2022 | Paper | A Worked Example of the Bayesian Mechanics of Classical Objects | Zenodo | 10.5281/zenodo.7400786
+[144] 2022 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | Zenodo | 10.5281/zenodo.7401875
+[145] 2022 | Paper | Tracking Public Sensemaking through Rhetorical Annotation of Image Memes | Zenodo | 10.5281/zenodo.6904427
+[146] 2021 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | Zenodo | 10.5281/zenodo.5797072
+[147] 2021 | Paper | Collaborative Writing for Catechism-Based Teams | Zenodo | 10.5281/zenodo.4633921
+[148] 2020 | Paper | Reimagining Maps | Zenodo | 10.5281/zenodo.4170026
+[149] 2020 | Paper | Infinite Games for Infinite Teams | Zenodo | 10.5281/zenodo.12601675
 
 SOFTWARE (82)
 -------------

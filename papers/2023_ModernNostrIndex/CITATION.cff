@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Modern Nostr Index Card-based Knowledge Engineering"
+version: "v1"
+date-released: 2023-07-05
+doi: 10.5281/zenodo.8118156
+url: "https://doi.org/10.5281/zenodo.8118156"
+authors:
+  - family-names: Claros
+    given-names: Andrew
+    orcid: "https://orcid.org/0000-0002-7522-0548"
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8118156
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/8118156"
+    description: "Zenodo landing page"

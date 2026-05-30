@@ -1,0 +1,39 @@
+{
+  "title": "Canonical neural networks perform active inference",
+  "version": "v1",
+  "doi": "10.5281/zenodo.7400536",
+  "doi_url": "https://doi.org/10.5281/zenodo.7400536",
+  "zenodo_record": "https://zenodo.org/records/7400536",
+  "record_id": "7400536",
+  "publication_date": "2022-11-09",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Isomura, Takuya",
+      "affiliation": "Brain Intelligence Theory Unit, RIKEN Center for Brain Science, Wako, Saitama, 351-0198, Japan"
+    },
+    {
+      "name": "Daniel Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J. Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM_NlUzyq8M LS #051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY_CajLpt9Q",
+  "keywords": [],
+  "files": [
+    {
+      "name": "ActInf Livestream ",
+      "size_bytes": 94605,
+      "checksum": "md5:c37752811003e536a699c95f3a2d42be",
+      "download_url": "https://zenodo.org/api/records/7400536/files/ActInf%20Livestream%20/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:24Z"
+}

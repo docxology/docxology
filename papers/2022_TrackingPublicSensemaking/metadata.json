@@ -1,0 +1,58 @@
+{
+  "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.6904427",
+  "doi_url": "https://doi.org/10.5281/zenodo.6904427",
+  "zenodo_record": "https://zenodo.org/records/6904427",
+  "record_id": "6904427",
+  "publication_date": "2022-07-25",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Mridula Mascarenhas",
+      "affiliation": "California State University, Monterey Bay, CA. School of Humanities & Communication"
+    },
+    {
+      "name": "RJ Cordes",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Bleu Knight",
+      "affiliation": "Active Inference Institute; New Mexico State University, Las Cruces, NM. Department of Biology"
+    },
+    {
+      "name": "Sarah Murphy",
+      "affiliation": "Seemeless Solutions"
+    },
+    {
+      "name": "Daniel A. Friedman",
+      "affiliation": "COGSEC; Active Inference Institute; University of California, Davis, Department of Entomology and Nematology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use. We argue that addressing crises in the information environment will require a sharper situational awareness and a deeper understanding of how beliefs emerge and crystallize, as well as greater connectivity in the work of teams and organizations in order to reduce the effects of bias and partisanship in collection and analysis. Image memes play an increasingly important role in public sensemaking and discourse and the emergence of public beliefs. Despite their significance, image memes have proven to be a very difficult category of artifact to collect, classify, and analyze in aggregate. In this white paper, the function and form of image memes are discussed, the challenges of performing image meme collection and analysis within the context of emergent, interdisciplinary teams are detailed, and requirements and recommendations for alleviating these challenges are offered.",
+  "keywords": [
+    "Sensemaking",
+    "Memes",
+    "Knowledge Management",
+    "Narrative",
+    "Rhetorical Analysis"
+  ],
+  "files": [
+    {
+      "name": "ECOMEME2-v1.0.pdf",
+      "size_bytes": 4247899,
+      "checksum": "md5:644a535cb85f2b945efaf6b2c912c67e",
+      "download_url": "https://zenodo.org/api/records/6904427/files/ECOMEME2-v1.0.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:28Z"
+}

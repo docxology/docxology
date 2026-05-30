@@ -1,0 +1,39 @@
+{
+  "title": "Con-cat-enate: emulation of Cat Hippocampus",
+  "version": null,
+  "doi": "10.5281/zenodo.14738798",
+  "doi_url": "https://doi.org/10.5281/zenodo.14738798",
+  "zenodo_record": "https://zenodo.org/records/14738798",
+  "record_id": "14738798",
+  "publication_date": "2025-01-25",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Djuwidja, Andrew",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply correct behavior some of the documents mentioning demo 0.01 and its motivation wasnt included (mentioned in the catpilot) therefore might cause confusion&nbsp; (ontop of also not really mentioning what would each of the missing part cause,) much apologies &nbsp; part 1 and part 2 updated of the emulated cat goes along with these documents: pilot:&nbsp; https://zenodo.org/records/14737043 beacons: https://zenodo.org/records/14737060 bevcyc: https://zenodo.org/records/14737076 &nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "0125cat.pdf",
+      "size_bytes": 1423535,
+      "checksum": "md5:e7a2e42e1fbc53e043d1149e19f4b0cc",
+      "download_url": "https://zenodo.org/api/records/14738798/files/0125cat.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:02Z"
+}

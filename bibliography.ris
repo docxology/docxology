@@ -1486,3 +1486,291 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 125; docs: papers/2026_BeeStack/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - When do bugs see (infra)red?
+T2  - Zenodo
+DO  - 10.5281/zenodo.20450970
+UR  - https://doi.org/10.5281/zenodo.20450970
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 126; docs: papers/2026_WhenDoBugs/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Self-Improvement Agent Harness: A Deterministic SIA Exemplar
+T2  - Zenodo
+DO  - 10.5281/zenodo.20453880
+UR  - https://doi.org/10.5281/zenodo.20453880
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 127; docs: papers/2026_SelfImprovementAgent/
+ER  -
+
+TY  - CONF
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024
+T2  - Zenodo
+DO  - 10.5281/zenodo.14861596
+UR  - https://doi.org/10.5281/zenodo.14861596
+KW  - Active Inference
+KW  - Presentation
+N1  - Catalog row 128; docs: papers/2025_BiofirmDevelopmentWith/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - Con-cat-enate: emulation of Cat Hippocampus
+T2  - Zenodo
+DO  - 10.5281/zenodo.14738798
+UR  - https://doi.org/10.5281/zenodo.14738798
+KW  - Genetics & Biomedical
+KW  - Paper
+N1  - Catalog row 129; docs: papers/2025_ConCatEnate/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - Graphspeak: of language and handshake
+T2  - Zenodo
+DO  - 10.5281/zenodo.14737157
+UR  - https://doi.org/10.5281/zenodo.14737157
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 130; docs: papers/2025_Graphspeak/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - BevCyc - posit on primitive drivers of creatures
+T2  - Zenodo
+DO  - 10.5281/zenodo.14737076
+UR  - https://doi.org/10.5281/zenodo.14737076
+KW  - Genetics & Biomedical
+KW  - Paper
+N1  - Catalog row 131; docs: papers/2025_BevCycPositPrimitive/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - Beacons - pre emulation of social cortex
+T2  - Zenodo
+DO  - 10.5281/zenodo.14737060
+UR  - https://doi.org/10.5281/zenodo.14737060
+KW  - Genetics & Biomedical
+KW  - Paper
+N1  - Catalog row 132; docs: papers/2025_BeaconsPreEmulation/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2025
+TI  - Con-cat-enate: pilot overview
+T2  - Zenodo
+DO  - 10.5281/zenodo.14737043
+UR  - https://doi.org/10.5281/zenodo.14737043
+KW  - Genetics & Biomedical
+KW  - Paper
+N1  - Catalog row 133; docs: papers/2025_ConCatEnate2/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2024
+TI  - Push and Pull: A priming sequence
+T2  - Zenodo
+DO  - 10.5281/zenodo.10659375
+UR  - https://doi.org/10.5281/zenodo.10659375
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 134; docs: papers/2024_PushPull/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2023
+TI  - A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
+T2  - Zenodo
+DO  - 10.5281/zenodo.10360148
+UR  - https://doi.org/10.5281/zenodo.10360148
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 135; docs: papers/2023_NaturalAIBased/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2023
+TI  - ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
+T2  - Zenodo
+DO  - 10.5281/zenodo.10362561
+UR  - https://doi.org/10.5281/zenodo.10362561
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 136; docs: papers/2023_ATLAS2/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2023
+TI  - Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"
+T2  - Zenodo
+DO  - 10.5281/zenodo.8229512
+UR  - https://doi.org/10.5281/zenodo.8229512
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 137; docs: papers/2023_TranscriptActiveInference/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2023
+TI  - Modern Nostr Index Card-based Knowledge Engineering
+T2  - Zenodo
+DO  - 10.5281/zenodo.8118156
+UR  - https://doi.org/10.5281/zenodo.8118156
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 138; docs: papers/2023_ModernNostrIndex/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2023
+TI  - Slides for Iris
+T2  - Zenodo
+DO  - 10.5281/zenodo.7838653
+UR  - https://doi.org/10.5281/zenodo.7838653
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 139; docs: papers/2023_SlidesIris/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2022
+TI  - Canonical neural networks perform active inference
+T2  - Zenodo
+DO  - 10.5281/zenodo.7400536
+UR  - https://doi.org/10.5281/zenodo.7400536
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 140; docs: papers/2022_CanonicalNeuralNetworks/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2022
+TI  - Interoception as modeling, allostasis as control
+T2  - Zenodo
+DO  - 10.5281/zenodo.7400709
+UR  - https://doi.org/10.5281/zenodo.7400709
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 141; docs: papers/2022_InteroceptionAsModeling/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2022
+TI  - Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016
+T2  - Zenodo
+DO  - 10.5281/zenodo.7267947
+UR  - https://doi.org/10.5281/zenodo.7267947
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 142; docs: papers/2022_Transcript/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2022
+TI  - A Worked Example of the Bayesian Mechanics of Classical Objects
+T2  - Zenodo
+DO  - 10.5281/zenodo.7400786
+UR  - https://doi.org/10.5281/zenodo.7400786
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 143; docs: papers/2022_WorkedExampleBayesian/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2022
+TI  - Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"
+T2  - Zenodo
+DO  - 10.5281/zenodo.7401875
+UR  - https://doi.org/10.5281/zenodo.7401875
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 144; docs: papers/2022_TranscriptDiscussions/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2022
+TI  - Tracking Public Sensemaking through Rhetorical Annotation of Image Memes
+T2  - Zenodo
+DO  - 10.5281/zenodo.6904427
+UR  - https://doi.org/10.5281/zenodo.6904427
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 145; docs: papers/2022_TrackingPublicSensemaking/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2021
+TI  - Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021
+T2  - Zenodo
+DO  - 10.5281/zenodo.5797072
+UR  - https://doi.org/10.5281/zenodo.5797072
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 146; docs: papers/2021_Transcript/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2021
+TI  - Collaborative Writing for Catechism-Based Teams
+T2  - Zenodo
+DO  - 10.5281/zenodo.4633921
+UR  - https://doi.org/10.5281/zenodo.4633921
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 147; docs: papers/2021_CollaborativeWritingCatechism/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2020
+TI  - Reimagining Maps
+T2  - Zenodo
+DO  - 10.5281/zenodo.4170026
+UR  - https://doi.org/10.5281/zenodo.4170026
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 148; docs: papers/2020_ReimaginingMaps/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2020
+TI  - Infinite Games for Infinite Teams
+T2  - Zenodo
+DO  - 10.5281/zenodo.12601675
+UR  - https://doi.org/10.5281/zenodo.12601675
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 149; docs: papers/2020_InfiniteGamesInfinite/
+ER  -

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Infinite Games for Infinite Teams"
+version: "1"
+date-released: 2020-07-08
+doi: 10.5281/zenodo.12601675
+url: "https://doi.org/10.5281/zenodo.12601675"
+authors:
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Cordes
+    given-names: RJ
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.12601675
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/12601675"
+    description: "Zenodo landing page"

@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance"
+date-released: 2023-12-12
+doi: 10.5281/zenodo.10360148
+url: "https://doi.org/10.5281/zenodo.10360148"
+authors:
+  - family-names: Clippinger
+    given-names: John
+  - family-names: de Vries
+    given-names: Bert
+  - family-names: Noveck
+    given-names: Beth
+  - family-names: Fields
+    given-names: Chris
+  - family-names: Slater
+    given-names: Cory
+  - family-names: Friedman
+    given-names: Daniel Ari
+  - family-names: Silbersweig
+    given-names: David A.
+  - family-names: Lapenta
+    given-names: Francesco
+  - family-names: Grimm
+    given-names: Holly
+  - family-names: Emmett
+    given-names: Jeff
+  - family-names: Shane
+    given-names: Joshua
+  - family-names: Friston
+    given-names: Karl
+  - family-names: Nkemnkia
+    given-names: Martin Nkafu
+  - family-names: Brown
+    given-names: Matthew
+  - family-names: Pirkowski
+    given-names: Matthew
+  - family-names: Levin
+    given-names: Michael
+  - family-names: Zargham
+    given-names: Michael
+  - family-names: Tuan
+    given-names: Nguyen Anh
+  - family-names: Achuthan
+    given-names: Krishnashree
+  - family-names: Patterson
+    given-names: Thomas
+  - family-names: David
+    given-names: Scott L.
+  - family-names: Kehler
+    given-names: Thomas
+  - family-names: Knight
+    given-names: Virginia Bleu
+  - family-names: Nakayama
+    given-names: Yasuhide
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10360148
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/10360148"
+    description: "Zenodo landing page"

@@ -1,0 +1,40 @@
+{
+  "title": "Con-cat-enate: pilot overview",
+  "version": null,
+  "doi": "10.5281/zenodo.14737043",
+  "doi_url": "https://doi.org/10.5281/zenodo.14737043",
+  "zenodo_record": "https://zenodo.org/records/14737043",
+  "record_id": "14737043",
+  "publication_date": "2025-01-25",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "djuwidja, andrew",
+      "affiliation": "Active Inference Insitute",
+      "orcid": "0009-0006-9402-2412"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan",
+  "keywords": [],
+  "files": [
+    {
+      "name": "catpilot.pdf",
+      "size_bytes": 1129982,
+      "checksum": "md5:ba8745ca466b875d07158fdcd3ec7e8d",
+      "download_url": "https://zenodo.org/api/records/14737043/files/catpilot.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:11Z"
+}

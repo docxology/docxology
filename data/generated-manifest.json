@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T12:54:44Z",
+  "generated_at": "2026-05-30T19:00:11Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -99,7 +99,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-05-28.json"
+        "reports/paired_publications_2026-05-30.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -220,7 +220,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-05-28.json"
+        "reports/public_source_snapshot_2026-05-30.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -230,7 +230,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-05-28.json"
+        "reports/public_source_inventory_2026-05-30.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -251,7 +251,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-05-29.json"
+        "reports/asset_size_2026-05-30.json"
       ],
       "sources": [
         "root HTML pages",

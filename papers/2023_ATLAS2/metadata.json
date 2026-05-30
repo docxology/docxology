@@ -1,0 +1,60 @@
+{
+  "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+  "version": null,
+  "doi": "10.5281/zenodo.10362561",
+  "doi_url": "https://doi.org/10.5281/zenodo.10362561",
+  "zenodo_record": "https://zenodo.org/records/10362561",
+  "record_id": "10362561",
+  "publication_date": "2023-12-07",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Cordes, R.J.",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "David, Scott",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Mikhailova, Alexandra",
+      "affiliation": "University of California, Davis (UCD), Center for Neuroscience",
+      "orcid": "0000-0002-8699-7125"
+    },
+    {
+      "name": "Penland, Andrew",
+      "affiliation": "Eight Arms Nine Brains"
+    },
+    {
+      "name": "Young, Sam",
+      "affiliation": null
+    },
+    {
+      "name": "Zacharias, Colten",
+      "affiliation": "COGSEC"
+    }
+  ],
+  "description": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volatile digital landscape, reflects a profound, community response to the challenges of information environments and the fragility of extreme specialization. ATLAS's ongoing evolution showcases its adaptability and significance in the realms of data analysis, knowledge management, and cognitive security, and this first release of a technical specification establishes a foundation for a transition from prototype to scale-appropriate implementation.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "ATLAS_V-1-2.pdf",
+      "size_bytes": 1692619,
+      "checksum": "md5:77196b6212ba2466961e17bb2ee5e8c9",
+      "download_url": "https://zenodo.org/api/records/10362561/files/ATLAS_V-1-2.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:17Z"
+}

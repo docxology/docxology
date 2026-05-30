@@ -1,0 +1,85 @@
+{
+  "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+  "version": "v2.0",
+  "doi": "10.5281/zenodo.5797072",
+  "doi_url": "https://doi.org/10.5281/zenodo.5797072",
+  "zenodo_record": "https://zenodo.org/records/5797072",
+  "record_id": "5797072",
+  "publication_date": "2021-12-21",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Friston, Karl",
+      "affiliation": "Wellcome Centre for Human Neuroimaging, Institute of Neurology, University College London, London WC1N 3AR, UK",
+      "orcid": "0000-0001-7984-8909"
+    },
+    {
+      "name": "Douglass, David Standish",
+      "affiliation": "ActInfLab, American Society for Cybernetics",
+      "orcid": "0000-0001-7894-8019"
+    },
+    {
+      "name": "Iennaco de Vasconcelos, Maria Luiza",
+      "affiliation": "ActInfLab, University of São Paulo, São Paulo, Brazil. Department of Philosophy",
+      "orcid": "0000-0002-5407-4852"
+    },
+    {
+      "name": "Sillett, Stephen",
+      "affiliation": "ActInfLab, Canterbury Christ Church University, Salomons Institute for Applied Psychology",
+      "orcid": "0000-0003-1046-1946"
+    },
+    {
+      "name": "Sganzerla, Lorena",
+      "affiliation": "ActInfLab, Berlin School of Mind and Brain - Humboldt-Universität zu Berlin",
+      "orcid": "0000-0002-5384-6232"
+    },
+    {
+      "name": "Tickles, Dean",
+      "affiliation": "ActInfLab,",
+      "orcid": "0000-0003-2213-0773"
+    },
+    {
+      "name": "Metelkin, Ivan",
+      "affiliation": "ActInfLab, Systems Management School (Moscow)",
+      "orcid": "0000-0003-2899-6690"
+    },
+    {
+      "name": "Vyatkin, Alex",
+      "affiliation": "ActInfLab, Systems Management School (Moscow)",
+      "orcid": "0000-0003-1306-4620"
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "ActInfLab, University of California, Davis, USA, Department of Entomology & Nematology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium.",
+  "keywords": [
+    "Active Inference",
+    "Free Energy Principle",
+    "Symposium",
+    "ActInfLab",
+    "Bayesian Inference",
+    "Education",
+    "Communication",
+    "Tools",
+    "Generative Model"
+  ],
+  "files": [
+    {
+      "name": "v2 - Karl Friston, Applied Active Inference Symposium, ActInfLab, June 21, 2021.pdf",
+      "size_bytes": 4775810,
+      "checksum": "md5:f08ab8aa4bfc18d661fc86b344a88ac9",
+      "download_url": "https://zenodo.org/api/records/5797072/files/v2%20-%20Karl%20Friston,%20Applied%20Active%20Inference%20Symposium,%20ActInfLab,%20June%2021,%202021.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:30Z"
+}

@@ -6,18 +6,31 @@
   "description": "Machine-readable datasets for Daniel Ari Friedman's public research, software, citation, and evidence index.",
   "url": "https://danielarifriedman.com/catalog.html",
   "creator": {
-    "@id": "https://danielarifriedman.com/#person"
+    "@type": "Person",
+    "@id": "https://danielarifriedman.com/#person",
+    "name": "Daniel Ari Friedman",
+    "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-05-29",
+  "dateModified": "2026-05-30",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "125 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "149 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/works.json",
@@ -31,6 +44,16 @@
       "description": "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html.",
       "url": "https://danielarifriedman.com/data/artworks.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/artworks.json",
@@ -44,6 +67,16 @@
       "description": "82 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/software.json",
@@ -57,6 +90,16 @@
       "description": "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags.",
       "url": "https://danielarifriedman.com/data/github-repositories.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/github-repositories.json",
@@ -70,6 +113,16 @@
       "description": "Compact collaborator and identity context for agentic discovery.",
       "url": "https://danielarifriedman.com/data/people.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/people.json",
@@ -83,6 +136,16 @@
       "description": "Organization context for AII, COGSEC, Stanford, and teaching affiliations.",
       "url": "https://danielarifriedman.com/data/organizations.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/organizations.json",
@@ -96,6 +159,16 @@
       "description": "Claim-level evidence ledger with confidence, source links, and caveats.",
       "url": "https://danielarifriedman.com/data/claims.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/claims.json",
@@ -109,6 +182,16 @@
       "description": "Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records.",
       "url": "https://danielarifriedman.com/data/resume.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/resume.json",
@@ -122,6 +205,16 @@
       "description": "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links.",
       "url": "https://danielarifriedman.com/resume/verify.html",
       "encodingFormat": "text/html",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/resume/verify.html",
@@ -135,6 +228,16 @@
       "description": "Curated local counts compared with public-source indexes.",
       "url": "https://danielarifriedman.com/data/reconciliation.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/reconciliation.json",
@@ -148,6 +251,16 @@
       "description": "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files.",
       "url": "https://danielarifriedman.com/data/work-enrichment.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/work-enrichment.json",
@@ -161,6 +274,16 @@
       "description": "Source-to-output map and rebuild commands for generated files.",
       "url": "https://danielarifriedman.com/data/generated-manifest.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/generated-manifest.json",
@@ -174,6 +297,16 @@
       "description": "Site-wide index covering pages, works, software, people, organizations, and claims.",
       "url": "https://danielarifriedman.com/search-index.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/search-index.json",
@@ -185,11 +318,21 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-28.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-30.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-28.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-30.json",
         "encodingFormat": "application/json"
       }
     },
@@ -198,11 +341,21 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-28.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-30.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-28.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-30.json",
         "encodingFormat": "application/json"
       }
     },
@@ -213,6 +366,16 @@
       "description": "Scoped network freshness report for site-critical outbound links.",
       "url": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
@@ -226,6 +389,16 @@
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
       "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
@@ -237,11 +410,21 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-29.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-05-30.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-29.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-05-30.json",
         "encodingFormat": "application/json"
       }
     },
@@ -252,6 +435,16 @@
       "description": "Selector-based Playwright smoke checks for core local pages.",
       "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-28/manifest.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-28/manifest.json",
@@ -265,6 +458,16 @@
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
       "url": "https://danielarifriedman.com/reports/live_site_verification_2026-05-15.json",
       "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-05-15.json",

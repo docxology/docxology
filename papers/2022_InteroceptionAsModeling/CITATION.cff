@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Interoception as modeling, allostasis as control"
+version: "v1"
+date-released: 2022-11-03
+doi: 10.5281/zenodo.7400709
+url: "https://doi.org/10.5281/zenodo.7400709"
+authors:
+  - family-names: Sennesh
+    given-names: Eli
+  - family-names: Theriault
+    given-names: Jordan
+  - family-names: Douglass
+    given-names: Dave
+    orcid: "https://orcid.org/0000-0001-7894-8019"
+  - family-names: Tennant
+    given-names: Ian
+  - family-names: Tickles
+    given-names: Dean
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7400709
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/7400709"
+    description: "Zenodo landing page"

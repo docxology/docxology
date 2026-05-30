@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/PUBLICATION_SYNC.md](../docs/PUBLICATION_SYNC.md).
 
-## Papers (118)
+## Papers (142)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -130,6 +130,30 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 116 | [2026_TemplateApproachReproducible](2026_TemplateApproachReproducible/) | ✅ | 2026 | TemplateApproachReproducible |
 | 117 | [2026_ActiveInferenceMulti](2026_ActiveInferenceMulti/) | ✅ | 2026 | ActiveInferenceMulti |
 | 118 | [2026_BeeStack](2026_BeeStack/) | ✅ | 2026 | BeeStack |
+| 119 | [2026_WhenDoBugs](2026_WhenDoBugs/) | ✅ | 2026 | WhenDoBugs |
+| 120 | [2026_SelfImprovementAgent](2026_SelfImprovementAgent/) | ✅ | 2026 | SelfImprovementAgent |
+| 121 | [2025_BiofirmDevelopmentWith](2025_BiofirmDevelopmentWith/) | — | 2025 | BiofirmDevelopmentWith |
+| 122 | [2025_ConCatEnate](2025_ConCatEnate/) | ✅ | 2025 | ConCatEnate |
+| 123 | [2025_Graphspeak](2025_Graphspeak/) | ✅ | 2025 | Graphspeak |
+| 124 | [2025_BevCycPositPrimitive](2025_BevCycPositPrimitive/) | ✅ | 2025 | BevCycPositPrimitive |
+| 125 | [2025_BeaconsPreEmulation](2025_BeaconsPreEmulation/) | ✅ | 2025 | BeaconsPreEmulation |
+| 126 | [2025_ConCatEnate2](2025_ConCatEnate2/) | ✅ | 2025 | ConCatEnate2 |
+| 127 | [2024_PushPull](2024_PushPull/) | ✅ | 2024 | PushPull |
+| 128 | [2023_NaturalAIBased](2023_NaturalAIBased/) | ✅ | 2023 | NaturalAIBased |
+| 129 | [2023_ATLAS2](2023_ATLAS2/) | ✅ | 2023 | ATLAS2 |
+| 130 | [2023_TranscriptActiveInference](2023_TranscriptActiveInference/) | ✅ | 2023 | TranscriptActiveInference |
+| 131 | [2023_ModernNostrIndex](2023_ModernNostrIndex/) | ✅ | 2023 | ModernNostrIndex |
+| 132 | [2023_SlidesIris](2023_SlidesIris/) | ✅ | 2023 | SlidesIris |
+| 133 | [2022_CanonicalNeuralNetworks](2022_CanonicalNeuralNetworks/) | — | 2022 | CanonicalNeuralNetworks |
+| 134 | [2022_InteroceptionAsModeling](2022_InteroceptionAsModeling/) | — | 2022 | InteroceptionAsModeling |
+| 135 | [2022_Transcript](2022_Transcript/) | — | 2022 | Transcript |
+| 136 | [2022_WorkedExampleBayesian](2022_WorkedExampleBayesian/) | — | 2022 | WorkedExampleBayesian |
+| 137 | [2022_TranscriptDiscussions](2022_TranscriptDiscussions/) | — | 2022 | TranscriptDiscussions |
+| 138 | [2022_TrackingPublicSensemaking](2022_TrackingPublicSensemaking/) | ✅ | 2022 | TrackingPublicSensemaking |
+| 139 | [2021_Transcript](2021_Transcript/) | ✅ | 2021 | Transcript |
+| 140 | [2021_CollaborativeWritingCatechism](2021_CollaborativeWritingCatechism/) | ✅ | 2021 | CollaborativeWritingCatechism |
+| 141 | [2020_ReimaginingMaps](2020_ReimaginingMaps/) | ✅ | 2020 | ReimaginingMaps |
+| 142 | [2020_InfiniteGamesInfinite](2020_InfiniteGamesInfinite/) | ✅ | 2020 | InfiniteGamesInfinite |
 ## Scripts
 
 | Script | Purpose |

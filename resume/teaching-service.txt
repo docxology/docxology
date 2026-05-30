@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-05-29T16:33:45Z
+Generated: 2026-05-30T18:59:20Z
 
-Current public metrics: 125 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 149 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (59)
+WORKS AND PUBLICATIONS (71)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -161,6 +161,18 @@ WORKS AND PUBLICATIONS (59)
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
 [112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695260
 [113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699234
+[128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861596
+[130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737157
+[134] 2024 | Paper | Push and Pull: A priming sequence | Zenodo | 10.5281/zenodo.10659375
+[137] 2023 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | Zenodo | 10.5281/zenodo.8229512
+[138] 2023 | Paper | Modern Nostr Index Card-based Knowledge Engineering | Zenodo | 10.5281/zenodo.8118156
+[139] 2023 | Paper | Slides for Iris | Zenodo | 10.5281/zenodo.7838653
+[140] 2022 | Paper | Canonical neural networks perform active inference | Zenodo | 10.5281/zenodo.7400536
+[141] 2022 | Paper | Interoception as modeling, allostasis as control | Zenodo | 10.5281/zenodo.7400709
+[142] 2022 | Paper | Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016 | Zenodo | 10.5281/zenodo.7267947
+[143] 2022 | Paper | A Worked Example of the Bayesian Mechanics of Classical Objects | Zenodo | 10.5281/zenodo.7400786
+[144] 2022 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | Zenodo | 10.5281/zenodo.7401875
+[146] 2021 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | Zenodo | 10.5281/zenodo.5797072
 
 SOFTWARE (12)
 -------------

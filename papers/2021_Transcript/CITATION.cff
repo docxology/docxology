@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
+version: "v2.0"
+date-released: 2021-12-21
+doi: 10.5281/zenodo.5797072
+url: "https://doi.org/10.5281/zenodo.5797072"
+authors:
+  - family-names: Friston
+    given-names: Karl
+    orcid: "https://orcid.org/0000-0001-7984-8909"
+  - family-names: Douglass
+    given-names: David Standish
+    orcid: "https://orcid.org/0000-0001-7894-8019"
+  - family-names: Iennaco de Vasconcelos
+    given-names: Maria Luiza
+    orcid: "https://orcid.org/0000-0002-5407-4852"
+  - family-names: Sillett
+    given-names: Stephen
+    orcid: "https://orcid.org/0000-0003-1046-1946"
+  - family-names: Sganzerla
+    given-names: Lorena
+    orcid: "https://orcid.org/0000-0002-5384-6232"
+  - family-names: Tickles
+    given-names: Dean
+    orcid: "https://orcid.org/0000-0003-2213-0773"
+  - family-names: Metelkin
+    given-names: Ivan
+    orcid: "https://orcid.org/0000-0003-2899-6690"
+  - family-names: Vyatkin
+    given-names: Alex
+    orcid: "https://orcid.org/0000-0003-1306-4620"
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.5797072
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/5797072"
+    description: "Zenodo landing page"

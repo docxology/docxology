@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**125 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**149 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**106** Papers · **8** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
+**129** Papers · **9** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **125** works in the table below **·** **118** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **149** works in the table below **·** **142** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -163,6 +163,30 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 123 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20420387](https://doi.org/10.5281/zenodo.20420387) | [📁](../papers/2026_TemplateApproachReproducible/) |
 | 124 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352) | [📁](../papers/2026_ActiveInferenceMulti/) |
 | 125 | 2026 | 💻 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | *Zenodo* | [10.5281/zenodo.20420557](https://doi.org/10.5281/zenodo.20420557) | [📁](../papers/2026_BeeStack/) |
+| 126 | 2026 | 💻 | Paper | When do bugs see (infra)red? | *Zenodo* | [10.5281/zenodo.20450970](https://doi.org/10.5281/zenodo.20450970) | [📁](../papers/2026_WhenDoBugs/) |
+| 127 | 2026 | 💻 | Paper | Self-Improvement Agent Harness: A Deterministic SIA Exemplar | *Zenodo* | [10.5281/zenodo.20453880](https://doi.org/10.5281/zenodo.20453880) | [📁](../papers/2026_SelfImprovementAgent/) |
+| 128 | 2025 | 🧠 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | *Zenodo* | [10.5281/zenodo.14861596](https://doi.org/10.5281/zenodo.14861596) | [📁](../papers/2025_BiofirmDevelopmentWith/) |
+| 129 | 2025 | 🧬 | Paper | Con-cat-enate: emulation of Cat Hippocampus | *Zenodo* | [10.5281/zenodo.14738798](https://doi.org/10.5281/zenodo.14738798) | [📁](../papers/2025_ConCatEnate/) |
+| 130 | 2025 | 🧠 | Paper | Graphspeak: of language and handshake | *Zenodo* | [10.5281/zenodo.14737157](https://doi.org/10.5281/zenodo.14737157) | [📁](../papers/2025_Graphspeak/) |
+| 131 | 2025 | 🧬 | Paper | BevCyc - posit on primitive drivers of creatures | *Zenodo* | [10.5281/zenodo.14737076](https://doi.org/10.5281/zenodo.14737076) | [📁](../papers/2025_BevCycPositPrimitive/) |
+| 132 | 2025 | 🧬 | Paper | Beacons - pre emulation of social cortex | *Zenodo* | [10.5281/zenodo.14737060](https://doi.org/10.5281/zenodo.14737060) | [📁](../papers/2025_BeaconsPreEmulation/) |
+| 133 | 2025 | 🧬 | Paper | Con-cat-enate: pilot overview | *Zenodo* | [10.5281/zenodo.14737043](https://doi.org/10.5281/zenodo.14737043) | [📁](../papers/2025_ConCatEnate2/) |
+| 134 | 2024 | 🧠 | Paper | Push and Pull: A priming sequence | *Zenodo* | [10.5281/zenodo.10659375](https://doi.org/10.5281/zenodo.10659375) | [📁](../papers/2024_PushPull/) |
+| 135 | 2023 | 💻 | Paper | A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance | *Zenodo* | [10.5281/zenodo.10360148](https://doi.org/10.5281/zenodo.10360148) | [📁](../papers/2023_NaturalAIBased/) |
+| 136 | 2023 | 🛡️ | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | *Zenodo* | [10.5281/zenodo.10362561](https://doi.org/10.5281/zenodo.10362561) | [📁](../papers/2023_ATLAS2/) |
+| 137 | 2023 | 🧠 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | *Zenodo* | [10.5281/zenodo.8229512](https://doi.org/10.5281/zenodo.8229512) | [📁](../papers/2023_TranscriptActiveInference/) |
+| 138 | 2023 | 🧠 | Paper | Modern Nostr Index Card-based Knowledge Engineering | *Zenodo* | [10.5281/zenodo.8118156](https://doi.org/10.5281/zenodo.8118156) | [📁](../papers/2023_ModernNostrIndex/) |
+| 139 | 2023 | 🧠 | Paper | Slides for Iris | *Zenodo* | [10.5281/zenodo.7838653](https://doi.org/10.5281/zenodo.7838653) | [📁](../papers/2023_SlidesIris/) |
+| 140 | 2022 | 🧠 | Paper | Canonical neural networks perform active inference | *Zenodo* | [10.5281/zenodo.7400536](https://doi.org/10.5281/zenodo.7400536) | [📁](../papers/2022_CanonicalNeuralNetworks/) |
+| 141 | 2022 | 🧠 | Paper | Interoception as modeling, allostasis as control | *Zenodo* | [10.5281/zenodo.7400709](https://doi.org/10.5281/zenodo.7400709) | [📁](../papers/2022_InteroceptionAsModeling/) |
+| 142 | 2022 | 🧠 | Paper | Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016 | *Zenodo* | [10.5281/zenodo.7267947](https://doi.org/10.5281/zenodo.7267947) | [📁](../papers/2022_Transcript/) |
+| 143 | 2022 | 🧠 | Paper | A Worked Example of the Bayesian Mechanics of Classical Objects | *Zenodo* | [10.5281/zenodo.7400786](https://doi.org/10.5281/zenodo.7400786) | [📁](../papers/2022_WorkedExampleBayesian/) |
+| 144 | 2022 | 🧠 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | *Zenodo* | [10.5281/zenodo.7401875](https://doi.org/10.5281/zenodo.7401875) | [📁](../papers/2022_TranscriptDiscussions/) |
+| 145 | 2022 | 🛡️ | Paper | Tracking Public Sensemaking through Rhetorical Annotation of Image Memes | *Zenodo* | [10.5281/zenodo.6904427](https://doi.org/10.5281/zenodo.6904427) | [📁](../papers/2022_TrackingPublicSensemaking/) |
+| 146 | 2021 | 🧠 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | *Zenodo* | [10.5281/zenodo.5797072](https://doi.org/10.5281/zenodo.5797072) | [📁](../papers/2021_Transcript/) |
+| 147 | 2021 | 🛡️ | Paper | Collaborative Writing for Catechism-Based Teams | *Zenodo* | [10.5281/zenodo.4633921](https://doi.org/10.5281/zenodo.4633921) | [📁](../papers/2021_CollaborativeWritingCatechism/) |
+| 148 | 2020 | 🛡️ | Paper | Reimagining Maps | *Zenodo* | [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026) | [📁](../papers/2020_ReimaginingMaps/) |
+| 149 | 2020 | 🛡️ | Paper | Infinite Games for Infinite Teams | *Zenodo* | [10.5281/zenodo.12601675](https://doi.org/10.5281/zenodo.12601675) | [📁](../papers/2020_InfiniteGamesInfinite/) |
 ---
 
 ## Domain Index

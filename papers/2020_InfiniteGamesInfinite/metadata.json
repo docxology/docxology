@@ -1,0 +1,39 @@
+{
+  "title": "Infinite Games for Infinite Teams",
+  "version": "1",
+  "doi": "10.5281/zenodo.12601675",
+  "doi_url": "https://doi.org/10.5281/zenodo.12601675",
+  "zenodo_record": "https://zenodo.org/records/12601675",
+  "record_id": "12601675",
+  "publication_date": "2020-07-08",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": null,
+      "orcid": "0000-0002-9913-7159"
+    }
+  ],
+  "description": "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for security and governance? What is possible now or soon that was not possible before? What approaches could catalyze assessment, design, and deployment of online narratives in real-time? Why is it so important to have meme-detection systems that are culturally-aware, interlingual, intermodal, and human-in-the-loop? What does it look like to take a Complex Adaptive Systems (CAS) approach to the neuromemetics of narrative co-construction and agenda-setting? How could a CAS approach be used to support specifically-defined cultural/institutional/national/global interests? How do we find, formalize, and quantify goals or outcomes within a CAS framework? How can we diagnose, perturb, and create narratives through gameplay? What might a &ldquo;design science for memes&rdquo; look like? How is this present work continuous with and contrasting with previous work in innovation, generative games, and LARPing? How can music, sound, art, and other techniques amplify narrative impact ?",
+  "keywords": [],
+  "files": [
+    {
+      "name": "InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf",
+      "size_bytes": 381535,
+      "checksum": "md5:aa1fc3b3de1f2fd2ff9d2b1f3d5fe3d8",
+      "download_url": "https://zenodo.org/api/records/12601675/files/InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:37Z"
+}

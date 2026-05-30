@@ -1,0 +1,54 @@
+{
+  "title": "Reimagining Maps",
+  "version": "v1",
+  "doi": "10.5281/zenodo.4170026",
+  "doi_url": "https://doi.org/10.5281/zenodo.4170026",
+  "zenodo_record": "https://zenodo.org/records/4170026",
+  "record_id": "4170026",
+  "publication_date": "2020-10-31",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "COGSEC, Atlantic Council GeoTech Center",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "University of California, Davis, Department of Entomology",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Mikel Maron",
+      "affiliation": "Mapbox"
+    }
+  ],
+  "description": "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of spatial mapping techniques to information in knowledge management, or the use of itinerary visualization methods in non-spatial journeys such as learning maps in learning management systems. These fields have been subjected to their own forms of development and evolution leading to new methodologies and concepts somewhat removed from their origins. Cartography itself has undergone a great deal of technology-driven development&nbsp;but would look very different today had it been developed as a new field through the creative application of methodologies and concepts from those it inspired. As the modern information and logistical context presents new challenges and thus new demands for maps, we propose a &ldquo;reimagining of maps&rdquo; through an interdisciplinary synthesis inspired by the interdisciplinary origins of maps themselves.",
+  "keywords": [
+    "Maps",
+    "Cartography",
+    "Remote Teams",
+    "Interdisciplinary Research",
+    "Process Mapping",
+    "Knowledge Management Systems",
+    "Instantaneous Remote Teams",
+    "Intelligence Production",
+    "OSINT"
+  ],
+  "files": [
+    {
+      "name": "Reimagining Maps.pdf",
+      "size_bytes": 725370,
+      "checksum": "md5:69ee4cc6427e566d4c8ddd301d3fb93d",
+      "download_url": "https://zenodo.org/api/records/4170026/files/Reimagining%20Maps.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:35Z"
+}

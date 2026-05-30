@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T12:14:47Z",
+  "generated_at": "2026-05-30T19:00:11Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 615,
+  "count": 639,
   "items": [
     {
       "id": "page:home",
@@ -251,7 +251,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-05-28.md",
+      "url": "/reports/reconciliation_2026-05-30.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -263,7 +263,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-05-28.json",
+      "url": "/reports/public_source_inventory_2026-05-30.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -276,7 +276,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-05-29.json",
+      "url": "/reports/accessibility_static_2026-05-30.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-29.json",
+      "url": "/reports/asset_size_2026-05-30.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -3241,6 +3241,458 @@
         "MuJoCo"
       ],
       "content": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation Zenodo 10.5281/zenodo.20420557 Friedman2026BeeStackEvidenceTypedScaffold125 Computational Paper BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is traceable from configuration to artifact to manuscript, gaps are catalogued rather than hidden, and the validation rate is a config-band self-test measure, not a biological-realism score. This 1.0 release accompanies the manuscript 'BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation' and includes the combined PDF and the full source archive. Source: https://github.com/docxology/BeeStack honeybee Apis mellifera active inference simulation scaffold swarm intelligence niche construction FlyBody MuJoCo antennal lobe mushroom body central complex waggle dance honeybee Apis mellifera active inference simulation scaffold swarm intelligence"
+    },
+    {
+      "id": "work:Friedman2026WhenDoBugsSee126",
+      "type": "work",
+      "title": "When do bugs see (infra)red?",
+      "url": "/works/Friedman2026WhenDoBugsSee126.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20450970",
+      "summary": "<p Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative ento",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "insect olfaction",
+        "infrared detection",
+        "vibrational theory of olfaction",
+        "semiochemicals",
+        "sensilla morphology",
+        "electromagnetic sensing",
+        "active inference",
+        "reproducible research"
+      ],
+      "content": "When do bugs see (infra)red? Zenodo 10.5281/zenodo.20450970 Friedman2026WhenDoBugsSee126 Computational Paper <p Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 µm insect olfaction infrared detection vibrational theory of olfaction semiochemicals sensilla morphology electromagnetic sensing active inference reproducible research insect olfaction infrared detection vibrational theory of olfaction semiochemicals sensilla morphology"
+    },
+    {
+      "id": "work:Friedman2026SelfImprovementAgentHarness127",
+      "type": "work",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "url": "/works/Friedman2026SelfImprovementAgentHarness127.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20453880",
+      "summary": "Abstract This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini class",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "self-improvement agents",
+        "benchmark harness",
+        "reproducible research",
+        "agent evaluation"
+      ],
+      "content": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar Zenodo 10.5281/zenodo.20453880 Friedman2026SelfImprovementAgentHarness127 Computational Paper Abstract This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run snapshot. Task mini classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z generate manuscript variables.py after analysis. Keywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops --- Associated artifacts GitHub release: v0.1.0 (https://github.com/docxology/template/releases/tag/v0.1.0) PDF SHA-256: 7087b6d1dd2e6192b24055408935201c27d7e19ba26267a366b20b2c71b7a721 self-improvement agents benchmark harness reproducible research agent evaluation self-improvement agents benchmark harness reproducible research agent evaluation"
+    },
+    {
+      "id": "work:Friedman2025BiofirmDevelopmentFirstPrinciples128",
+      "type": "work",
+      "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+      "url": "/works/Friedman2025BiofirmDevelopmentFirstPrinciples128.html",
+      "external_url": "https://doi.org/10.5281/zenodo.14861596",
+      "summary": "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024",
+      "year": 2025,
+      "domain": "Active Inference",
+      "tags": [
+        "Presentation",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 Zenodo 10.5281/zenodo.14861596 Friedman2025BiofirmDevelopmentFirstPrinciples128 Active Inference Presentation Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2025ConCatEnateEmulation129",
+      "type": "work",
+      "title": "Con-cat-enate: emulation of Cat Hippocampus",
+      "url": "/works/Friedman2025ConCatEnateEmulation129.html",
+      "external_url": "https://doi.org/10.5281/zenodo.14738798",
+      "summary": "Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those missing parts and the purpose of demo0",
+      "year": 2025,
+      "domain": "Genetics & Biomedical",
+      "tags": [
+        "Paper",
+        "Genetics & Biomedical",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Con-cat-enate: emulation of Cat Hippocampus Zenodo 10.5281/zenodo.14738798 Friedman2025ConCatEnateEmulation129 Genetics & Biomedical Paper Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply correct behavior some of the documents mentioning demo 0.01 and its motivation wasnt included (mentioned in the catpilot) therefore might cause confusion (ontop of also not really mentioning what would each of the missing part cause,) much apologies part 1 and part 2 updated of the emulated cat goes along with these documents: pilot: https://zenodo.org/records/14737043 beacons: https://zenodo.org/records/14737060 bevcyc: https://zenodo.org/records/14737076 Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2025GraphspeakLanguageHandshake130",
+      "type": "work",
+      "title": "Graphspeak: of language and handshake",
+      "url": "/works/Friedman2025GraphspeakLanguageHandshake130.html",
+      "external_url": "https://doi.org/10.5281/zenodo.14737157",
+      "summary": "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (t1,t2,t3) then upon some l",
+      "year": 2025,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Graphspeak: of language and handshake Zenodo 10.5281/zenodo.14737157 Friedman2025GraphspeakLanguageHandshake130 Active Inference Paper An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2025BevCycPositPrimitiveDrivers131",
+      "type": "work",
+      "title": "BevCyc - posit on primitive drivers of creatures",
+      "url": "/works/Friedman2025BevCycPositPrimitiveDrivers131.html",
+      "external_url": "https://doi.org/10.5281/zenodo.14737076",
+      "summary": "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension f",
+      "year": 2025,
+      "domain": "Genetics & Biomedical",
+      "tags": [
+        "Paper",
+        "Genetics & Biomedical",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "BevCyc - posit on primitive drivers of creatures Zenodo 10.5281/zenodo.14737076 Friedman2025BevCycPositPrimitiveDrivers131 Genetics & Biomedical Paper Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time & checkpoints to run with a modulator layer ; to then apply in either a static n n n n n n autofilling nodes for inputs from hippocampus systems; or a decreasing one that emulates stage-of-state or the cycle involved Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2025BeaconsPreEmulationSocial132",
+      "type": "work",
+      "title": "Beacons - pre emulation of social cortex",
+      "url": "/works/Friedman2025BeaconsPreEmulationSocial132.html",
+      "external_url": "https://doi.org/10.5281/zenodo.14737060",
+      "summary": "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a sim of their own sensitiv",
+      "year": 2025,
+      "domain": "Genetics & Biomedical",
+      "tags": [
+        "Paper",
+        "Genetics & Biomedical",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Beacons - pre emulation of social cortex Zenodo 10.5281/zenodo.14737060 Friedman2025BeaconsPreEmulationSocial132 Genetics & Biomedical Paper primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of when the object type is called; then \"emulated\" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon ) Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2025ConCatEnatePilot133",
+      "type": "work",
+      "title": "Con-cat-enate: pilot overview",
+      "url": "/works/Friedman2025ConCatEnatePilot133.html",
+      "external_url": "https://doi.org/10.5281/zenodo.14737043",
+      "summary": "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan",
+      "year": 2025,
+      "domain": "Genetics & Biomedical",
+      "tags": [
+        "Paper",
+        "Genetics & Biomedical",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Con-cat-enate: pilot overview Zenodo 10.5281/zenodo.14737043 Friedman2025ConCatEnatePilot133 Genetics & Biomedical Paper Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2024PushPullPrimingSequence134",
+      "type": "work",
+      "title": "Push and Pull: A priming sequence",
+      "url": "/works/Friedman2024PushPullPrimingSequence134.html",
+      "external_url": "https://doi.org/10.5281/zenodo.10659375",
+      "summary": "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for furth",
+      "year": 2024,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Push and Pull: A priming sequence Zenodo 10.5281/zenodo.10659375 Friedman2024PushPullPrimingSequence134 Active Inference Paper The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with mouse, touchpad, or eye movements. What is presented here is only an initial sequence to complement other and future development of “hand-I” uncouplings, in principle and in practice. Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2023NaturalAIBasedScience135",
+      "type": "work",
+      "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+      "url": "/works/Friedman2023NaturalAIBasedScience135.html",
+      "external_url": "https://doi.org/10.5281/zenodo.10360148",
+      "summary": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\". v1 released on December 12, 2023.",
+      "year": 2023,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "Active Inference",
+        "AI",
+        "Natural",
+        "Policy"
+      ],
+      "content": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance Zenodo 10.5281/zenodo.10360148 Friedman2023NaturalAIBasedScience135 Computational Paper Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\". v1 released on December 12, 2023. Active Inference AI Natural Policy Active Inference AI Natural Policy"
+    },
+    {
+      "id": "work:Friedman2023ATLASQuestionOrientedApproach136",
+      "type": "work",
+      "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+      "url": "/works/Friedman2023ATLASQuestionOrientedApproach136.html",
+      "external_url": "https://doi.org/10.5281/zenodo.10362561",
+      "summary": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was t",
+      "year": 2023,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management Zenodo 10.5281/zenodo.10362561 Friedman2023ATLASQuestionOrientedApproach136 Cognitive Security Paper The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volati Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2023TranscriptActiveInferenceGuestStream137",
+      "type": "work",
+      "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html",
+      "external_url": "https://doi.org/10.5281/zenodo.8229512",
+      "summary": "Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/A",
+      "year": 2023,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Consciousness",
+        "Science",
+        "Communication"
+      ],
+      "content": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Zenodo 10.5281/zenodo.8229512 Friedman2023TranscriptActiveInferenceGuestStream137 Active Inference Paper Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/GuestStream/GuestStream 049 Information on the Institute: https://www.activeinference.org/ Consciousness Science Communication Consciousness Science Communication"
+    },
+    {
+      "id": "work:Friedman2023ModernNostrIndexCard138",
+      "type": "work",
+      "title": "Modern Nostr Index Card-based Knowledge Engineering",
+      "url": "/works/Friedman2023ModernNostrIndexCard138.html",
+      "external_url": "https://doi.org/10.5281/zenodo.8118156",
+      "summary": "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.",
+      "year": 2023,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Nostr",
+        "Complexity",
+        "Large Language Model",
+        "Knowledge Engineering"
+      ],
+      "content": "Modern Nostr Index Card-based Knowledge Engineering Zenodo 10.5281/zenodo.8118156 Friedman2023ModernNostrIndexCard138 Active Inference Paper Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more. Nostr Complexity Large Language Model Knowledge Engineering Nostr Complexity Large Language Model Knowledge Engineering"
+    },
+    {
+      "id": "work:Friedman2023SlidesIris139",
+      "type": "work",
+      "title": "Slides for Iris",
+      "url": "/works/Friedman2023SlidesIris139.html",
+      "external_url": "https://doi.org/10.5281/zenodo.7838653",
+      "summary": "Some initial slides from today. For context see: @speakerjohnash",
+      "year": 2023,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Slides for Iris Zenodo 10.5281/zenodo.7838653 Friedman2023SlidesIris139 Active Inference Paper Some initial slides from today. For context see: @speakerjohnash Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2022CanonicalNeuralNetworksPerform140",
+      "type": "work",
+      "title": "Canonical neural networks perform active inference",
+      "url": "/works/Friedman2022CanonicalNeuralNetworksPerform140.html",
+      "external_url": "https://doi.org/10.5281/zenodo.7400536",
+      "summary": "Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-029",
+      "year": 2022,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Canonical neural networks perform active inference Zenodo 10.5281/zenodo.7400536 Friedman2022CanonicalNeuralNetworksPerform140 Active Inference Paper Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS 051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM NlUzyq8M LS 051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY CajLpt9Q Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2022InteroceptionAsModelingAllostasis141",
+      "type": "work",
+      "title": "Interoception as modeling, allostasis as control",
+      "url": "/works/Friedman2022InteroceptionAsModelingAllostasis141.html",
+      "external_url": "https://doi.org/10.5281/zenodo.7400709",
+      "summary": "Transcript of discussions of the 2022 paper “Interoception as modeling, allostasis as control” by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, & Karen S. Quigley https://www.s",
+      "year": 2022,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Interoception as modeling, allostasis as control Zenodo 10.5281/zenodo.7400709 Friedman2022InteroceptionAsModelingAllostasis141 Active Inference Paper Transcript of discussions of the 2022 paper “Interoception as modeling, allostasis as control” by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, & Karen S. Quigley https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022 https://www.youtube.com/watch?v=l7r0ISlr-Hc Session 050.1, October 20, 2022 https://www.youtube.com/watch?v=tGd-mgSdbio Session 050.2, November 3, 2022 https://www.youtube.com/watch?v=4o-LmkycAC0 Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2022TranscriptMarkSolmsConsciousness142",
+      "type": "work",
+      "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+      "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html",
+      "external_url": "https://doi.org/10.5281/zenodo.7267947",
+      "summary": "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper \"How and Why Consciousness Arises: Some Consi",
+      "year": 2022,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Active Inference",
+        "Consciousness",
+        "Neuroanatomy",
+        "Psychology",
+        "Free Energy Principle",
+        "Livestream"
+      ],
+      "content": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Zenodo 10.5281/zenodo.7267947 Friedman2022TranscriptMarkSolmsConsciousness142 Active Inference Paper This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper \"How and Why Consciousness Arises: Some Considerations from Physics and Physiology\" by Mark Solms and Karl Friston. Active Inference Consciousness Neuroanatomy Psychology Free Energy Principle Livestream Active Inference Consciousness Neuroanatomy Psychology Free Energy Principle"
+    },
+    {
+      "id": "work:Friedman2022WorkedExampleBayesianMechanics143",
+      "type": "work",
+      "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+      "url": "/works/Friedman2022WorkedExampleBayesianMechanics143.html",
+      "external_url": "https://doi.org/10.5281/zenodo.7400786",
+      "summary": "Transcripts of discussions of the 2022 preprint \"A Worked Example of the Bayesian Mechanics of Classical Objects\" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022 https://ww",
+      "year": 2022,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "A Worked Example of the Bayesian Mechanics of Classical Objects Zenodo 10.5281/zenodo.7400786 Friedman2022WorkedExampleBayesianMechanics143 Active Inference Paper Transcripts of discussions of the 2022 preprint \"A Worked Example of the Bayesian Mechanics of Classical Objects\" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022 https://www.youtube.com/watch?v=OtX2Fpzn7KA Session 049.1, October 5, 2022 https://www.youtube.com/watch?v=dAtC-Enmc8M Session 049.2, October 12, 2022 https://www.youtube.com/watch?v=2SuBJBEg9LI Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2022TranscriptDiscussionsCommunicationAs144",
+      "type": "work",
+      "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+      "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html",
+      "external_url": "https://doi.org/10.5281/zenodo.7401875",
+      "summary": "Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier. https://www.tandfonline.com/doi/abs/10.1",
+      "year": 2022,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Zenodo 10.5281/zenodo.7401875 Friedman2022TranscriptDiscussionsCommunicationAs144 Active Inference Paper Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier. https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 Session 048.0, September 2, 2022 https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022 https://www.youtube.com/watch?v=nWFM5zrdmG8 Session 048.1, September 7, 2022 https://www.youtube.com/watch?v=nWFM5zrdmG8 Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2022TrackingPublicSensemakingThrough145",
+      "type": "work",
+      "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+      "url": "/works/Friedman2022TrackingPublicSensemakingThrough145.html",
+      "external_url": "https://doi.org/10.5281/zenodo.6904427",
+      "summary": "Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for exa",
+      "year": 2022,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "Sensemaking",
+        "Memes",
+        "Knowledge Management",
+        "Narrative",
+        "Rhetorical Analysis"
+      ],
+      "content": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes Zenodo 10.5281/zenodo.6904427 Friedman2022TrackingPublicSensemakingThrough145 Cognitive Security Paper Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use. We argue that addressing crises in the information environment will require a sharper situational awareness and a deeper understanding of how beliefs emerge and crystallize, as well as greater connectivity in the work of teams and organizations in order to reduce the effects of bias and partisanship in collection and analysis. Image memes play an increasingly important role in public sensemaking and discourse and the emergence of public beliefs. Despite their significance, image memes have proven to be a very difficult category of artifact to collect, classify, and analyze in aggregate. In this white paper, the fun Sensemaking Memes Knowledge Management Narrative Rhetorical Analysis Sensemaking Memes Knowledge Management Narrative Rhetorical Analysis"
+    },
+    {
+      "id": "work:Friedman2021TranscriptKarlFriston1st146",
+      "type": "work",
+      "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+      "url": "/works/Friedman2021TranscriptKarlFriston1st146.html",
+      "external_url": "https://doi.org/10.5281/zenodo.5797072",
+      "summary": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to th",
+      "year": 2021,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Active Inference",
+        "Free Energy Principle",
+        "Symposium",
+        "ActInfLab",
+        "Bayesian Inference",
+        "Education",
+        "Communication",
+        "Tools"
+      ],
+      "content": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 Zenodo 10.5281/zenodo.5797072 Friedman2021TranscriptKarlFriston1st146 Active Inference Paper On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium. Active Inference Free Energy Principle Symposium ActInfLab Bayesian Inference Education Communication Tools Generative Model Active Inference Free Energy Principle Symposium ActInfLab Bayesian Inference"
+    },
+    {
+      "id": "work:Friedman2021CollaborativeWritingCatechismBased147",
+      "type": "work",
+      "title": "Collaborative Writing for Catechism-Based Teams",
+      "url": "/works/Friedman2021CollaborativeWritingCatechismBased147.html",
+      "external_url": "https://doi.org/10.5281/zenodo.4633921",
+      "summary": "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspecti",
+      "year": 2021,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "Remote Teams",
+        "Collaborative Writing",
+        "Catechisms",
+        "OPORDs"
+      ],
+      "content": "Collaborative Writing for Catechism-Based Teams Zenodo 10.5281/zenodo.4633921 Friedman2021CollaborativeWritingCatechismBased147 Cognitive Security Paper Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or opportunity space the team was formed to address, but also to the disciplines each author brought to the table. Yet, asynchronous and remote collaborative writing can also be rather perilous. Managing deadlines, handling disputes, communicating, staying on mission, managing resources, collective editing (and over-editing), and avoiding contradiction are only some of the challenges. While the presence of a catechism-styled operations order and the use of a team “Facilitator” can greatly improve the likelihood of suc Remote Teams Collaborative Writing Catechisms OPORDs Remote Teams Collaborative Writing Catechisms OPORDs"
+    },
+    {
+      "id": "work:Friedman2020ReimaginingMaps148",
+      "type": "work",
+      "title": "Reimagining Maps",
+      "url": "/works/Friedman2020ReimaginingMaps148.html",
+      "external_url": "https://doi.org/10.5281/zenodo.4170026",
+      "summary": "Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology",
+      "year": 2020,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "Maps",
+        "Cartography",
+        "Remote Teams",
+        "Interdisciplinary Research",
+        "Process Mapping",
+        "Knowledge Management Systems",
+        "Instantaneous Remote Teams",
+        "Intelligence Production"
+      ],
+      "content": "Reimagining Maps Zenodo 10.5281/zenodo.4170026 Friedman2020ReimaginingMaps148 Cognitive Security Paper Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of spatial mapping techniques to information in knowledge management, or the use of itinerary visualization methods in non-spatial journeys such as learning maps in learning management systems. These fields have been subjected to their own forms of development and evolution leading to new methodologies and concepts somewhat removed from their origins. Cartography itself has undergone a great deal of technology-driven development but would look very different today had it been developed as a new field thr Maps Cartography Remote Teams Interdisciplinary Research Process Mapping Knowledge Management Systems Instantaneous Remote Teams Intelligence Production OSINT Maps Cartography Remote Teams Interdisciplinary Research Process Mapping"
+    },
+    {
+      "id": "work:Friedman2020InfiniteGamesInfiniteTeams149",
+      "type": "work",
+      "title": "Infinite Games for Infinite Teams",
+      "url": "/works/Friedman2020InfiniteGamesInfiniteTeams149.html",
+      "external_url": "https://doi.org/10.5281/zenodo.12601675",
+      "summary": "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the intent of discussing the questio",
+      "year": 2020,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Infinite Games for Infinite Teams Zenodo 10.5281/zenodo.12601675 Friedman2020InfiniteGamesInfiniteTeams149 Cognitive Security Paper Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for security and governance? What is possible now or soon that was not possible before? What approaches could catalyze assessment, design, and deployment of online narratives in real-time? Why is it so important to have meme-detection systems that are culturally-aware, interlingual, intermodal, and human-in-the-loop? What does it look like to take a Complex Adaptive Systems (CAS) approach to the neuromemetics of narrative co-construction and agenda-setting? How could a CAS approach be used to support specifical Zenodo publication zenodo-publication"
     },
     {
       "id": "software:docxology:template",
@@ -10161,7 +10613,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 125 works.",
+      "title": "The curated bibliography contains 149 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10169,12 +10621,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 125 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 149 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 118 per-paper documentation folders.",
+      "title": "The repository contains 142 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10182,12 +10634,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 118 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 142 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 299 public repositories.",
+      "title": "The docxology GitHub profile has 300 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -10195,7 +10647,7 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 299 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 300 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
@@ -10358,7 +10810,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 125 works, 82 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 149 works, 82 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

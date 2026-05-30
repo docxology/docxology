@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Graphspeak: of language and handshake"
+date-released: 2025-01-25
+doi: 10.5281/zenodo.14737157
+url: "https://doi.org/10.5281/zenodo.14737157"
+authors:
+  - family-names: djuwidja
+    given-names: andrew
+    orcid: "https://orcid.org/0009-0006-9402-2412"
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14737157
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/14737157"
+    description: "Zenodo landing page"

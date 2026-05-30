@@ -1,0 +1,45 @@
+{
+  "title": "Collaborative Writing for Catechism-Based Teams",
+  "version": "v1.2",
+  "doi": "10.5281/zenodo.4633921",
+  "doi_url": "https://doi.org/10.5281/zenodo.4633921",
+  "zenodo_record": "https://zenodo.org/records/4633921",
+  "record_id": "4633921",
+  "publication_date": "2021-03-19",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "University of California, Davis, Department of Entomology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or opportunity space the team was formed to address, but also to the disciplines each author brought to the table. Yet, asynchronous and remote collaborative writing can also be rather perilous. Managing deadlines, handling disputes, communicating, staying on mission, managing resources, collective editing (and over-editing), and avoiding contradiction are only some of the challenges. While the presence of a catechism-styled operations order&nbsp;and the use of a team &ldquo;Facilitator&rdquo; can greatly improve the likelihood of success, making sure all of the authors have an alignment on protocol and etiquette while writing as a catechism-based team prevents unnecessary misunderstandings and keeps things on schedule. This &quot;3-Paragraph Order&quot; for Collaborative Writing, or C-3PO,&nbsp;is meant to rapidly onboard authors to collaborative writing procedures and etiquette.&nbsp;",
+  "keywords": [
+    "Remote Teams",
+    "Collaborative Writing",
+    "Catechisms",
+    "OPORDs"
+  ],
+  "files": [
+    {
+      "name": "C3PO.pdf",
+      "size_bytes": 152916,
+      "checksum": "md5:8e822e88b3930303e444c352aefddbed",
+      "download_url": "https://zenodo.org/api/records/4633921/files/C3PO.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:33Z"
+}

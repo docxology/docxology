@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-29T16:32:47Z",
+  "generated_at": "2026-05-30T18:59:21Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 125,
+  "count": 149,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3125,6 +3125,374 @@
       ],
       "methods": [],
       "source": "papers/2026_BeeStack/README.md"
+    },
+    "Friedman2026WhenDoBugsSee126": {
+      "citation_key": "Friedman2026WhenDoBugsSee126",
+      "abstract": "<p Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 µm",
+      "keywords": [
+        "insect olfaction",
+        "infrared detection",
+        "vibrational theory of olfaction",
+        "semiochemicals",
+        "sensilla morphology",
+        "electromagnetic sensing",
+        "active inference",
+        "reproducible research"
+      ],
+      "findings": [
+        "insect olfaction",
+        "infrared detection",
+        "vibrational theory of olfaction",
+        "semiochemicals",
+        "sensilla morphology"
+      ],
+      "methods": [],
+      "source": "papers/2026_WhenDoBugs/README.md"
+    },
+    "Friedman2026SelfImprovementAgentHarness127": {
+      "citation_key": "Friedman2026SelfImprovementAgentHarness127",
+      "abstract": "Abstract This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run snapshot. Task mini classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z generate manuscript variables.py after analysis. Keywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops --- Associated artifacts GitHub release: v0.1.0 (https://github.com/docxology/template/releases/tag/v0.1.0) PDF SHA-256: 7087b6d1dd2e6192b24055408935201c27d7e19ba26267a366b20b2c71b7a721",
+      "keywords": [
+        "self-improvement agents",
+        "benchmark harness",
+        "reproducible research",
+        "agent evaluation"
+      ],
+      "findings": [
+        "self-improvement agents",
+        "benchmark harness",
+        "reproducible research",
+        "agent evaluation"
+      ],
+      "methods": [],
+      "source": "papers/2026_SelfImprovementAgent/README.md"
+    },
+    "Friedman2025BiofirmDevelopmentFirstPrinciples128": {
+      "citation_key": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
+      "abstract": "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_BiofirmDevelopmentWith/README.md"
+    },
+    "Friedman2025ConCatEnateEmulation129": {
+      "citation_key": "Friedman2025ConCatEnateEmulation129",
+      "abstract": "Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply correct behavior some of the documents mentioning demo 0.01 and its motivation wasnt included (mentioned in the catpilot) therefore might cause confusion (ontop of also not really mentioning what would each of the missing part cause,) much apologies part 1 and part 2 updated of the emulated cat goes along with these documents: pilot: https://zenodo.org/records/14737043 beacons: https://zenodo.org/records/14737060 bevcyc: https://zenodo.org/records/14737076",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_ConCatEnate/README.md"
+    },
+    "Friedman2025GraphspeakLanguageHandshake130": {
+      "citation_key": "Friedman2025GraphspeakLanguageHandshake130",
+      "abstract": "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_Graphspeak/README.md"
+    },
+    "Friedman2025BevCycPositPrimitiveDrivers131": {
+      "citation_key": "Friedman2025BevCycPositPrimitiveDrivers131",
+      "abstract": "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time & checkpoints to run with a modulator layer ; to then apply in either a static n n n n n n autofilling nodes for inputs from hippocampus systems; or a decreasing one that emulates stage-of-state or the cycle involved",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_BevCycPositPrimitive/README.md"
+    },
+    "Friedman2025BeaconsPreEmulationSocial132": {
+      "citation_key": "Friedman2025BeaconsPreEmulationSocial132",
+      "abstract": "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of when the object type is called; then \"emulated\" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon )",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_BeaconsPreEmulation/README.md"
+    },
+    "Friedman2025ConCatEnatePilot133": {
+      "citation_key": "Friedman2025ConCatEnatePilot133",
+      "abstract": "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2025_ConCatEnate2/README.md"
+    },
+    "Friedman2024PushPullPrimingSequence134": {
+      "citation_key": "Friedman2024PushPullPrimingSequence134",
+      "abstract": "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with mouse, touchpad, or eye movements. What is presented here is only an initial sequence to complement other and future development of “hand-I” uncouplings, in principle and in practice.",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2024_PushPull/README.md"
+    },
+    "Friedman2023NaturalAIBasedScience135": {
+      "citation_key": "Friedman2023NaturalAIBasedScience135",
+      "abstract": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\". v1 released on December 12, 2023.",
+      "keywords": [
+        "Active Inference",
+        "AI",
+        "Natural",
+        "Policy"
+      ],
+      "findings": [
+        "Active Inference",
+        "AI",
+        "Natural",
+        "Policy"
+      ],
+      "methods": [],
+      "source": "papers/2023_NaturalAIBased/README.md"
+    },
+    "Friedman2023ATLASQuestionOrientedApproach136": {
+      "citation_key": "Friedman2023ATLASQuestionOrientedApproach136",
+      "abstract": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volati",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2023_ATLAS2/README.md"
+    },
+    "Friedman2023TranscriptActiveInferenceGuestStream137": {
+      "citation_key": "Friedman2023TranscriptActiveInferenceGuestStream137",
+      "abstract": "Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/GuestStream/GuestStream 049 Information on the Institute: https://www.activeinference.org/",
+      "keywords": [
+        "Consciousness",
+        "Science",
+        "Communication"
+      ],
+      "findings": [
+        "Consciousness",
+        "Science",
+        "Communication"
+      ],
+      "methods": [],
+      "source": "papers/2023_TranscriptActiveInference/README.md"
+    },
+    "Friedman2023ModernNostrIndexCard138": {
+      "citation_key": "Friedman2023ModernNostrIndexCard138",
+      "abstract": "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.",
+      "keywords": [
+        "Nostr",
+        "Complexity",
+        "Large Language Model",
+        "Knowledge Engineering"
+      ],
+      "findings": [
+        "Nostr",
+        "Complexity",
+        "Large Language Model",
+        "Knowledge Engineering"
+      ],
+      "methods": [],
+      "source": "papers/2023_ModernNostrIndex/README.md"
+    },
+    "Friedman2023SlidesIris139": {
+      "citation_key": "Friedman2023SlidesIris139",
+      "abstract": "Some initial slides from today. For context see: @speakerjohnash",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2023_SlidesIris/README.md"
+    },
+    "Friedman2022CanonicalNeuralNetworksPerform140": {
+      "citation_key": "Friedman2022CanonicalNeuralNetworksPerform140",
+      "abstract": "Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS 051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM NlUzyq8M LS 051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY CajLpt9Q",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2022_CanonicalNeuralNetworks/README.md"
+    },
+    "Friedman2022InteroceptionAsModelingAllostasis141": {
+      "citation_key": "Friedman2022InteroceptionAsModelingAllostasis141",
+      "abstract": "Transcript of discussions of the 2022 paper “Interoception as modeling, allostasis as control” by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, & Karen S. Quigley https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022 https://www.youtube.com/watch?v=l7r0ISlr-Hc Session 050.1, October 20, 2022 https://www.youtube.com/watch?v=tGd-mgSdbio Session 050.2, November 3, 2022 https://www.youtube.com/watch?v=4o-LmkycAC0",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2022_InteroceptionAsModeling/README.md"
+    },
+    "Friedman2022TranscriptMarkSolmsConsciousness142": {
+      "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
+      "abstract": "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper \"How and Why Consciousness Arises: Some Considerations from Physics and Physiology\" by Mark Solms and Karl Friston.",
+      "keywords": [
+        "Active Inference",
+        "Consciousness",
+        "Neuroanatomy",
+        "Psychology",
+        "Free Energy Principle",
+        "Livestream"
+      ],
+      "findings": [
+        "Active Inference",
+        "Consciousness",
+        "Neuroanatomy",
+        "Psychology",
+        "Free Energy Principle"
+      ],
+      "methods": [],
+      "source": "papers/2022_Transcript/README.md"
+    },
+    "Friedman2022WorkedExampleBayesianMechanics143": {
+      "citation_key": "Friedman2022WorkedExampleBayesianMechanics143",
+      "abstract": "Transcripts of discussions of the 2022 preprint \"A Worked Example of the Bayesian Mechanics of Classical Objects\" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022 https://www.youtube.com/watch?v=OtX2Fpzn7KA Session 049.1, October 5, 2022 https://www.youtube.com/watch?v=dAtC-Enmc8M Session 049.2, October 12, 2022 https://www.youtube.com/watch?v=2SuBJBEg9LI",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2022_WorkedExampleBayesian/README.md"
+    },
+    "Friedman2022TranscriptDiscussionsCommunicationAs144": {
+      "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+      "abstract": "Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier. https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 Session 048.0, September 2, 2022 https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022 https://www.youtube.com/watch?v=nWFM5zrdmG8 Session 048.1, September 7, 2022 https://www.youtube.com/watch?v=nWFM5zrdmG8",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2022_TranscriptDiscussions/README.md"
+    },
+    "Friedman2022TrackingPublicSensemakingThrough145": {
+      "citation_key": "Friedman2022TrackingPublicSensemakingThrough145",
+      "abstract": "Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use. We argue that addressing crises in the information environment will require a sharper situational awareness and a deeper understanding of how beliefs emerge and crystallize, as well as greater connectivity in the work of teams and organizations in order to reduce the effects of bias and partisanship in collection and analysis. Image memes play an increasingly important role in public sensemaking and discourse and the emergence of public beliefs. Despite their significance, image memes have proven to be a very difficult category of artifact to collect, classify, and analyze in aggregate. In this white paper, the fun",
+      "keywords": [
+        "Sensemaking",
+        "Memes",
+        "Knowledge Management",
+        "Narrative",
+        "Rhetorical Analysis"
+      ],
+      "findings": [
+        "Sensemaking",
+        "Memes",
+        "Knowledge Management",
+        "Narrative",
+        "Rhetorical Analysis"
+      ],
+      "methods": [],
+      "source": "papers/2022_TrackingPublicSensemaking/README.md"
+    },
+    "Friedman2021TranscriptKarlFriston1st146": {
+      "citation_key": "Friedman2021TranscriptKarlFriston1st146",
+      "abstract": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium.",
+      "keywords": [
+        "Active Inference",
+        "Free Energy Principle",
+        "Symposium",
+        "ActInfLab",
+        "Bayesian Inference",
+        "Education",
+        "Communication",
+        "Tools",
+        "Generative Model"
+      ],
+      "findings": [
+        "Active Inference",
+        "Free Energy Principle",
+        "Symposium",
+        "ActInfLab",
+        "Bayesian Inference"
+      ],
+      "methods": [],
+      "source": "papers/2021_Transcript/README.md"
+    },
+    "Friedman2021CollaborativeWritingCatechismBased147": {
+      "citation_key": "Friedman2021CollaborativeWritingCatechismBased147",
+      "abstract": "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or opportunity space the team was formed to address, but also to the disciplines each author brought to the table. Yet, asynchronous and remote collaborative writing can also be rather perilous. Managing deadlines, handling disputes, communicating, staying on mission, managing resources, collective editing (and over-editing), and avoiding contradiction are only some of the challenges. While the presence of a catechism-styled operations order and the use of a team “Facilitator” can greatly improve the likelihood of suc",
+      "keywords": [
+        "Remote Teams",
+        "Collaborative Writing",
+        "Catechisms",
+        "OPORDs"
+      ],
+      "findings": [
+        "Remote Teams",
+        "Collaborative Writing",
+        "Catechisms",
+        "OPORDs"
+      ],
+      "methods": [],
+      "source": "papers/2021_CollaborativeWritingCatechism/README.md"
+    },
+    "Friedman2020ReimaginingMaps148": {
+      "citation_key": "Friedman2020ReimaginingMaps148",
+      "abstract": "Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of spatial mapping techniques to information in knowledge management, or the use of itinerary visualization methods in non-spatial journeys such as learning maps in learning management systems. These fields have been subjected to their own forms of development and evolution leading to new methodologies and concepts somewhat removed from their origins. Cartography itself has undergone a great deal of technology-driven development but would look very different today had it been developed as a new field thr",
+      "keywords": [
+        "Maps",
+        "Cartography",
+        "Remote Teams",
+        "Interdisciplinary Research",
+        "Process Mapping",
+        "Knowledge Management Systems",
+        "Instantaneous Remote Teams",
+        "Intelligence Production",
+        "OSINT"
+      ],
+      "findings": [
+        "Maps",
+        "Cartography",
+        "Remote Teams",
+        "Interdisciplinary Research",
+        "Process Mapping"
+      ],
+      "methods": [],
+      "source": "papers/2020_ReimaginingMaps/README.md"
+    },
+    "Friedman2020InfiniteGamesInfiniteTeams149": {
+      "citation_key": "Friedman2020InfiniteGamesInfiniteTeams149",
+      "abstract": "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for security and governance? What is possible now or soon that was not possible before? What approaches could catalyze assessment, design, and deployment of online narratives in real-time? Why is it so important to have meme-detection systems that are culturally-aware, interlingual, intermodal, and human-in-the-loop? What does it look like to take a Complex Adaptive Systems (CAS) approach to the neuromemetics of narrative co-construction and agenda-setting? How could a CAS approach be used to support specifical",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2020_InfiniteGamesInfinite/README.md"
     }
   }
 }

@@ -1,0 +1,47 @@
+{
+  "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+  "version": "v1",
+  "doi": "10.5281/zenodo.7401875",
+  "doi_url": "https://doi.org/10.5281/zenodo.7401875",
+  "zenodo_record": "https://zenodo.org/records/7401875",
+  "record_id": "7401875",
+  "publication_date": "2022-09-14",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Tison, Rémi",
+      "affiliation": "Department of Philosophy, UQAM"
+    },
+    {
+      "name": "Tickles, Dean",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Knight, Bleu",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp; https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 &nbsp; Session #048.0, September 2, 2022&nbsp; https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022&nbsp; https://www.youtube.com/watch?v=nWFM5zrdmG8 Session 048.1, September 7, 2022&nbsp; https://www.youtube.com/watch?v=nWFM5zrdmG8",
+  "keywords": [],
+  "files": [
+    {
+      "name": "ActInf Livestream 048 ~ 'Communication as Socially Extended Active Inference'.odt",
+      "size_bytes": 140338,
+      "checksum": "md5:6aa364676b2b9e61d3e34ed3d71f2931",
+      "download_url": "https://zenodo.org/api/records/7401875/files/ActInf%20Livestream%20048%20~%20'Communication%20as%20Socially%20Extended%20Active%20Inference'.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:27Z"
+}

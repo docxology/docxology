@@ -1,0 +1,40 @@
+{
+  "title": "Beacons - pre emulation of social cortex",
+  "version": null,
+  "doi": "10.5281/zenodo.14737060",
+  "doi_url": "https://doi.org/10.5281/zenodo.14737060",
+  "zenodo_record": "https://zenodo.org/records/14737060",
+  "record_id": "14737060",
+  "publication_date": "2025-01-25",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "djuwidja, andrew",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0006-9402-2412"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of&nbsp; when the object type is called; then \"emulated\" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon )",
+  "keywords": [],
+  "files": [
+    {
+      "name": "beacons.pdf",
+      "size_bytes": 561920,
+      "checksum": "md5:2ddc1adc113195de7e60a1cd5d779597",
+      "download_url": "https://zenodo.org/api/records/14737060/files/beacons.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:09Z"
+}

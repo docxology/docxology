@@ -1,0 +1,35 @@
+{
+  "title": "Slides for Iris",
+  "version": "1",
+  "doi": "10.5281/zenodo.7838653",
+  "doi_url": "https://doi.org/10.5281/zenodo.7838653",
+  "zenodo_record": "https://zenodo.org/records/7838653",
+  "record_id": "7838653",
+  "publication_date": "2023-04-17",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Some initial slides from today. For context see:&nbsp;@speakerjohnash",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Slides for Iris April 17 2023.pdf",
+      "size_bytes": 280048,
+      "checksum": "md5:03d02730c8b4965bfad208ecb9a4d7d8",
+      "download_url": "https://zenodo.org/api/records/7838653/files/Slides%20for%20Iris%20April%2017%202023.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:22Z"
+}

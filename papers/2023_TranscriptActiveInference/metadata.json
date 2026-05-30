@@ -1,0 +1,54 @@
+{
+  "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+  "version": "v1.1",
+  "doi": "10.5281/zenodo.8229512",
+  "doi_url": "https://doi.org/10.5281/zenodo.8229512",
+  "zenodo_record": "https://zenodo.org/records/8229512",
+  "record_id": "8229512",
+  "publication_date": "2023-07-26",
+  "resource_type": {
+    "title": "Other",
+    "type": "other"
+  },
+  "creators": [
+    {
+      "name": "Peters, Megan A. K.",
+      "affiliation": "Department of Cognitive Sciences, University of California, Irvine",
+      "orcid": "0000-0002-0248-0816"
+    },
+    {
+      "name": "Bradford, Nora",
+      "affiliation": "Department of Cognitive Sciences, University of California, Irvine",
+      "orcid": "0000-0001-8154-3784"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/GuestStream/GuestStream_049 Information on the Institute: https://www.activeinference.org/",
+  "keywords": [
+    "Consciousness",
+    "Science",
+    "Communication"
+  ],
+  "files": [
+    {
+      "name": "GuestStream_049-1_transcript.pdf",
+      "size_bytes": 69428,
+      "checksum": "md5:3ac050acd9e3c6a66ed0b6cf805ff93f",
+      "download_url": "https://zenodo.org/api/records/8229512/files/GuestStream_049-1_transcript.pdf/content"
+    },
+    {
+      "name": "GuestStream_049-1_transcript.odt",
+      "size_bytes": 54757,
+      "checksum": "md5:38e6d0d97a5fedc99d93595fcc3e664d",
+      "download_url": "https://zenodo.org/api/records/8229512/files/GuestStream_049-1_transcript.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:19Z"
+}

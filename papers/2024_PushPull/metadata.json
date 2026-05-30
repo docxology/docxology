@@ -1,0 +1,64 @@
+{
+  "title": "Push and Pull: A priming sequence",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.10659375",
+  "doi_url": "https://doi.org/10.5281/zenodo.10659375",
+  "zenodo_record": "https://zenodo.org/records/10659375",
+  "record_id": "10659375",
+  "publication_date": "2024-02-14",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual&rsquo;s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with mouse, touchpad, or eye movements. What is presented here is only an initial sequence to complement other and future development of &ldquo;hand-I&rdquo; uncouplings, in principle and in practice.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "PushPull_v1_DAF_2-14-2024.rtf",
+      "size_bytes": 5599128,
+      "checksum": "md5:2ebcf6ce0013bb5b8351ab65dc5f576c",
+      "download_url": "https://zenodo.org/api/records/10659375/files/PushPull_v1_DAF_2-14-2024.rtf/content"
+    },
+    {
+      "name": "PushPull_v1_DAF_2-14-2024.txt",
+      "size_bytes": 4862,
+      "checksum": "md5:aad75d6c49052ba80d7bc4e8c4dea879",
+      "download_url": "https://zenodo.org/api/records/10659375/files/PushPull_v1_DAF_2-14-2024.txt/content"
+    },
+    {
+      "name": "PushPull_v1_DAF_2-14-2024.docx",
+      "size_bytes": 33501,
+      "checksum": "md5:4bb0e824c91eb6625981eaa7db90b656",
+      "download_url": "https://zenodo.org/api/records/10659375/files/PushPull_v1_DAF_2-14-2024.docx/content"
+    },
+    {
+      "name": "PushPull_v1_DAF_2-14-2024.pdf",
+      "size_bytes": 101914,
+      "checksum": "md5:4d95e5dd64d0a4d876e9a43d65a4e4f9",
+      "download_url": "https://zenodo.org/api/records/10659375/files/PushPull_v1_DAF_2-14-2024.pdf/content"
+    },
+    {
+      "name": "PushPull_v1_DAF_2-14-2024.odt",
+      "size_bytes": 46604,
+      "checksum": "md5:69a1f47d95bc281affb5d6db59ce018c",
+      "download_url": "https://zenodo.org/api/records/10659375/files/PushPull_v1_DAF_2-14-2024.odt/content"
+    },
+    {
+      "name": "PushPull_v1_DAF_2-14-2024.epub",
+      "size_bytes": 27776,
+      "checksum": "md5:f1861a118080637efc6fe87439d2c2af",
+      "download_url": "https://zenodo.org/api/records/10659375/files/PushPull_v1_DAF_2-14-2024.epub/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:13Z"
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Interoception as modeling, allostasis as control",
+  "version": "v1",
+  "doi": "10.5281/zenodo.7400709",
+  "doi_url": "https://doi.org/10.5281/zenodo.7400709",
+  "zenodo_record": "https://zenodo.org/records/7400709",
+  "record_id": "7400709",
+  "publication_date": "2022-11-03",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Sennesh, Eli",
+      "affiliation": "Northeastern University, Boston, MA , United States"
+    },
+    {
+      "name": "Theriault, Jordan",
+      "affiliation": "Northeastern University, Boston, MA , United States"
+    },
+    {
+      "name": "Douglass, Dave",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-7894-8019"
+    },
+    {
+      "name": "Tennant, Ian",
+      "affiliation": null
+    },
+    {
+      "name": "Tickles, Dean",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, &amp; Karen S. Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20, 2022&nbsp; https://www.youtube.com/watch?v=tGd-mgSdbio Session 050.2, November 3, 2022&nbsp; https://www.youtube.com/watch?v=4o-LmkycAC0 &nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "ActInf Livestream ",
+      "size_bytes": 124907,
+      "checksum": "md5:e7929a38f1d65de970a553936af3a239",
+      "download_url": "https://zenodo.org/api/records/7400709/files/ActInf%20Livestream%20/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:25Z"
+}

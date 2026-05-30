@@ -1,0 +1,63 @@
+{
+  "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+  "version": "1.1",
+  "doi": "10.5281/zenodo.7267947",
+  "doi_url": "https://doi.org/10.5281/zenodo.7267947",
+  "zenodo_record": "https://zenodo.org/records/7267947",
+  "record_id": "7267947",
+  "publication_date": "2022-10-27",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Solms, Mark",
+      "affiliation": "Department of Psychology, University of Cape Town, Cape Town, South Africa",
+      "orcid": "0000-0003-4828-3882"
+    },
+    {
+      "name": "Douglass, David S",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-7894-8019"
+    },
+    {
+      "name": "Sillett, Stephen",
+      "affiliation": "Active Inference Institute, Community Psychologist, Facilitator, Participatory Theatre Director PhD Candidate, Salomons Institute for Applied Psychology, Canterbury Christ Church University. Founder of InFusion Lab, Member of Global Psychosocial Network. Co-Founder of Aiding Dramatic Change in Development",
+      "orcid": "0000-0003-1046-1946"
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute & Department of Entomology and Nematology, University of California, Davis, USA.",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.",
+  "keywords": [
+    "Active Inference",
+    "Consciousness",
+    "Neuroanatomy",
+    "Psychology",
+    "Free Energy Principle",
+    "Livestream"
+  ],
+  "files": [
+    {
+      "name": "ActInfLab GuestStream ",
+      "size_bytes": 5617660,
+      "checksum": "md5:4ca4a24abe17a56ff3ec26110a3a3dfd",
+      "download_url": "https://zenodo.org/api/records/7267947/files/ActInfLab%20GuestStream%C2%A0/content"
+    },
+    {
+      "name": "ActInf GuestStream ",
+      "size_bytes": 29079868,
+      "checksum": "md5:adc84134700133ac6f8bcdd86b12ae5d",
+      "download_url": "https://zenodo.org/api/records/7267947/files/ActInf%20GuestStream%C2%A0/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:25Z"
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016"
+version: "1.1"
+date-released: 2022-10-27
+doi: 10.5281/zenodo.7267947
+url: "https://doi.org/10.5281/zenodo.7267947"
+authors:
+  - family-names: Solms
+    given-names: Mark
+    orcid: "https://orcid.org/0000-0003-4828-3882"
+  - family-names: Douglass
+    given-names: David S
+    orcid: "https://orcid.org/0000-0001-7894-8019"
+  - family-names: Sillett
+    given-names: Stephen
+    orcid: "https://orcid.org/0000-0003-1046-1946"
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7267947
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/7267947"
+    description: "Zenodo landing page"

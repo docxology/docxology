@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes"
+version: "1.0"
+date-released: 2022-07-25
+doi: 10.5281/zenodo.6904427
+url: "https://doi.org/10.5281/zenodo.6904427"
+authors:
+  - family-names: Mascarenhas
+    given-names: Mridula
+  - family-names: Cordes
+    given-names: RJ
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+  - family-names: Knight
+    given-names: Bleu
+  - family-names: Murphy
+    given-names: Sarah
+  - family-names: Friedman
+    given-names: Daniel A.
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.6904427
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/6904427"
+    description: "Zenodo landing page"

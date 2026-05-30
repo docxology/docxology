@@ -2143,5 +2143,312 @@
     ],
     "doi": "10.5281/zenodo.20420557",
     "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0"
+  },
+  "2026_WhenDoBugs": {
+    "year": "2026",
+    "topic": "WhenDoBugs",
+    "name": "When do bugs see (infra)red?",
+    "description": "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 &micro;m), thermal matched controls, power density 0.1--2 mW/cm&sup2;, and N&ge;50 per condition. All analyses use fixed random seeds (42) where stochastic routines are present. Results: The computational figures show where sensillum-scale dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but they do not by themselves establish biological IR olfaction. The strongest empirical anchors are narrower: fast insect ORN first-spike timing, photomechanic IR organs in pyrophilous beetles, hematophagy IR cues in mosquitoes and kissing bugs, thermogenic pollination signals in cycads, thermosensitive coeloconic sensilla in ants, and passive cuticle IR optics . These sources motivate specific experiments while also constraining the manuscript's range and mechanism claims. Conclusions: The framework yields five preregistered falsifiers aligned with \\Cref{sec:discussion}: (1) spectral nulls under matched thermal load, (2) geometric mismatch between sensilla dimensions and predicted resonances, (3) environmental misalignment of CHC peaks with transmission windows, (4) temporal indistinguishability of IR versus thermal ORN latencies, and (5) behavioral independence of IR-only orientation from chemical gradients. Protocols specify QCL/LED bands (2--25 &micro;m), matched power deposition, and N&ge;50 per condition to separate electromagnetic detection from thermal artifacts. Implications: Applications of this work include biomimetic IR sensor design, better-controlled pest-monitoring experiments, and clearer tests of whether insect olfactory systems ever use wavelength-specific electromagnetic information. Keywords: insect olfaction, infrared detection, vibrational theory, electromagnetic sensing, sensilla morphology, cuticular hydrocarbons, atmospheric transmission, biomimetic sensors Reproducibility: Complete implementation with seven case studies in Appendices --- Associated artifacts GitHub release: v1.0.0 (https://github.com/docxology/cohereants/releases/tag/v1.0.0) PDF SHA-256: 36bd97a8ff522937390213a69abb40c8c87a06ab783457e62d7effef4762bac2</p>",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 &micro;m), thermal matched controls, power density 0.1--2 mW/cm&sup2;, and N&ge;50 per condition. All analyses use fixed random seeds (42) where stochastic routines are present. Results: The computational figures show where sensillum-scale dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but they do not by themselves establish biological IR olfaction. The strongest empirical anchors are narrower: fast insect ORN first-spike timing, photomechanic IR organs in pyrophilous beetles, hematophagy IR cues in mosquitoes and kissing bugs, thermogenic pollination signals in cycads, thermosensitive coeloconic sensilla in ants, and passive cuticle IR optics . These sources motivate specific experiments while also constraining the manuscript's range and mechanism claims. Conclusions: The framework yields five preregistered falsifiers aligned with \\Cref{sec:discussion}: (1) spectral nulls under matched thermal load, (2) geometric mismatch between sensilla dimensions and predicted resonances, (3) environmental misalignment of CHC peaks with transmission windows, (4) temporal indistinguishability of IR versus thermal ORN latencies, and (5) behavioral independence of IR-only orientation from chemical gradients. Protocols specify QCL/LED bands (2--25 &micro;m), matched power deposition, and N&ge;50 per condition to separate electromagnetic detection from thermal artifacts. Implications: Applications of this work include biomimetic IR sensor design, better-controlled pest-monitoring experiments, and clearer tests of whether insect olfactory systems ever use wavelength-specific electromagnetic information. Keywords: insect olfaction, infrared detection, vibrational theory, electromagnetic sensing, sensilla morphology, cuticular hydrocarbons, atmospheric transmission, biomimetic sensors Reproducibility: Complete implementation with seven case studies in Appendices --- Associated artifacts GitHub release: v1.0.0 (https://github.com/docxology/cohereants/releases/tag/v1.0.0) PDF SHA-256: 36bd97a8ff522937390213a69abb40c8c87a06ab783457e62d7effef4762bac2</p>",
+    "keywords": [
+      "insect olfaction",
+      "infrared detection",
+      "vibrational theory of olfaction",
+      "semiochemicals",
+      "sensilla morphology",
+      "electromagnetic sensing",
+      "active inference",
+      "reproducible research"
+    ],
+    "doi": "10.5281/zenodo.20450970",
+    "github_release_url": "https://github.com/docxology/cohereants/releases/tag/v1.0.0"
+  },
+  "2026_SelfImprovementAgent": {
+    "year": "2026",
+    "topic": "SelfImprovementAgent",
+    "name": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+    "description": "Abstract This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z_generate_manuscript_variables.py after analysis. Keywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops --- Associated artifacts GitHub release: v0.1.0 (https://github.com/docxology/template/releases/tag/v0.1.0) PDF SHA-256: 7087b6d1dd2e6192b24055408935201c27d7e19ba26267a366b20b2c71b7a721",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Abstract This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z_generate_manuscript_variables.py after analysis. Keywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops --- Associated artifacts GitHub release: v0.1.0 (https://github.com/docxology/template/releases/tag/v0.1.0) PDF SHA-256: 7087b6d1dd2e6192b24055408935201c27d7e19ba26267a366b20b2c71b7a721",
+    "keywords": [
+      "self-improvement agents",
+      "benchmark harness",
+      "reproducible research",
+      "agent evaluation"
+    ],
+    "doi": "10.5281/zenodo.20453880"
+  },
+  "2025_BiofirmDevelopmentWith": {
+    "year": "2025",
+    "topic": "BiofirmDevelopmentWith",
+    "name": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+    "description": "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;",
+    "authors": "John Clippinger, Andrew Pashea, Daniel Friedman",
+    "abstract": "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;",
+    "keywords": [],
+    "doi": "10.5281/zenodo.14861596"
+  },
+  "2025_ConCatEnate": {
+    "year": "2025",
+    "topic": "ConCatEnate",
+    "name": "Con-cat-enate: emulation of Cat Hippocampus",
+    "description": "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply correct behavior some of the documents mentioning demo 0.01 and its motivation wasnt included (mentioned in the catpilot) therefore might cause confusion&nbsp; (ontop of also not really mentioning what would each of the missing part cause,) much apologies &nbsp; part 1 and part 2 updated of the emulated cat goes along with these documents: pilot:&nbsp; https://zenodo.org/records/14737043 beacons: https://zenodo.org/records/14737060 bevcyc: https://zenodo.org/records/14737076 &nbsp;",
+    "authors": "Andrew Djuwidja, Daniel Friedman",
+    "abstract": "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply correct behavior some of the documents mentioning demo 0.01 and its motivation wasnt included (mentioned in the catpilot) therefore might cause confusion&nbsp; (ontop of also not really mentioning what would each of the missing part cause,) much apologies &nbsp; part 1 and part 2 updated of the emulated cat goes along with these documents: pilot:&nbsp; https://zenodo.org/records/14737043 beacons: https://zenodo.org/records/14737060 bevcyc: https://zenodo.org/records/14737076 &nbsp;",
+    "keywords": [],
+    "doi": "10.5281/zenodo.14738798"
+  },
+  "2025_Graphspeak": {
+    "year": "2025",
+    "topic": "Graphspeak",
+    "name": "Graphspeak: of language and handshake",
+    "description": "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others",
+    "authors": "andrew djuwidja, Daniel Friedman",
+    "abstract": "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others",
+    "keywords": [],
+    "doi": "10.5281/zenodo.14737157"
+  },
+  "2025_BevCycPositPrimitive": {
+    "year": "2025",
+    "topic": "BevCycPositPrimitive",
+    "name": "BevCyc - posit on primitive drivers of creatures",
+    "description": "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time &amp; checkpoints to run with a modulator layer ; to then apply in either a static | n n n n n n | autofilling nodes for inputs from hippocampus systems; or a decreasing one that emulates stage-of-state or the cycle involved",
+    "authors": "andrew djuwidja, Daniel Friedman",
+    "abstract": "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time &amp; checkpoints to run with a modulator layer ; to then apply in either a static | n n n n n n | autofilling nodes for inputs from hippocampus systems; or a decreasing one that emulates stage-of-state or the cycle involved",
+    "keywords": [],
+    "doi": "10.5281/zenodo.14737076"
+  },
+  "2025_BeaconsPreEmulation": {
+    "year": "2025",
+    "topic": "BeaconsPreEmulation",
+    "name": "Beacons - pre emulation of social cortex",
+    "description": "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of&nbsp; when the object type is called; then \"emulated\" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon )",
+    "authors": "andrew djuwidja, Daniel Friedman",
+    "abstract": "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of&nbsp; when the object type is called; then \"emulated\" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon )",
+    "keywords": [],
+    "doi": "10.5281/zenodo.14737060"
+  },
+  "2025_ConCatEnate2": {
+    "year": "2025",
+    "topic": "ConCatEnate2",
+    "name": "Con-cat-enate: pilot overview",
+    "description": "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan",
+    "authors": "andrew djuwidja, Daniel Friedman",
+    "abstract": "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan",
+    "keywords": [],
+    "doi": "10.5281/zenodo.14737043"
+  },
+  "2024_PushPull": {
+    "year": "2024",
+    "topic": "PushPull",
+    "name": "Push and Pull: A priming sequence",
+    "description": "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual&rsquo;s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with mouse, touchpad, or eye movements. What is presented here is only an initial sequence to complement other and future development of &ldquo;hand-I&rdquo; uncouplings, in principle and in practice.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual&rsquo;s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with mouse, touchpad, or eye movements. What is presented here is only an initial sequence to complement other and future development of &ldquo;hand-I&rdquo; uncouplings, in principle and in practice.",
+    "keywords": [],
+    "doi": "10.5281/zenodo.10659375"
+  },
+  "2023_NaturalAIBased": {
+    "year": "2023",
+    "topic": "NaturalAIBased",
+    "name": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+    "description": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;",
+    "authors": "John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others",
+    "abstract": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;",
+    "keywords": [
+      "Active Inference",
+      "AI",
+      "Natural",
+      "Policy"
+    ],
+    "doi": "10.5281/zenodo.10360148"
+  },
+  "2023_ATLAS2": {
+    "year": "2023",
+    "topic": "ATLAS2",
+    "name": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+    "description": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volatile digital landscape, reflects a profound, community response to the challenges of information environments and the fragility of extreme specialization. ATLAS's ongoing evolution showcases its adaptability and significance in the realms of data analysis, knowledge management, and cognitive security, and this first release of a technical specification establishes a foundation for a transition from prototype to scale-appropriate implementation.",
+    "authors": "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others",
+    "abstract": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volatile digital landscape, reflects a profound, community response to the challenges of information environments and the fragility of extreme specialization. ATLAS's ongoing evolution showcases its adaptability and significance in the realms of data analysis, knowledge management, and cognitive security, and this first release of a technical specification establishes a foundation for a transition from prototype to scale-appropriate implementation.",
+    "keywords": [],
+    "doi": "10.5281/zenodo.10362561"
+  },
+  "2023_TranscriptActiveInference": {
+    "year": "2023",
+    "topic": "TranscriptActiveInference",
+    "name": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+    "description": "Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/GuestStream/GuestStream_049 Information on the Institute: https://www.activeinference.org/",
+    "authors": "Megan A. K. Peters, Nora Bradford, Daniel Friedman",
+    "abstract": "Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/GuestStream/GuestStream_049 Information on the Institute: https://www.activeinference.org/",
+    "keywords": [
+      "Consciousness",
+      "Science",
+      "Communication"
+    ],
+    "doi": "10.5281/zenodo.8229512"
+  },
+  "2023_ModernNostrIndex": {
+    "year": "2023",
+    "topic": "ModernNostrIndex",
+    "name": "Modern Nostr Index Card-based Knowledge Engineering",
+    "description": "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;",
+    "authors": "Andrew Claros, Daniel Friedman",
+    "abstract": "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;",
+    "keywords": [
+      "Nostr",
+      "Complexity",
+      "Large Language Model",
+      "Knowledge Engineering"
+    ],
+    "doi": "10.5281/zenodo.8118156"
+  },
+  "2023_SlidesIris": {
+    "year": "2023",
+    "topic": "SlidesIris",
+    "name": "Slides for Iris",
+    "description": "Some initial slides from today. For context see:&nbsp;@speakerjohnash",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "Some initial slides from today. For context see:&nbsp;@speakerjohnash",
+    "keywords": [],
+    "doi": "10.5281/zenodo.7838653"
+  },
+  "2022_CanonicalNeuralNetworks": {
+    "year": "2022",
+    "topic": "CanonicalNeuralNetworks",
+    "name": "Canonical neural networks perform active inference",
+    "description": "Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J. Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM_NlUzyq8M LS #051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY_CajLpt9Q",
+    "authors": "Takuya Isomura, Daniel Friedman",
+    "abstract": "Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J. Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM_NlUzyq8M LS #051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY_CajLpt9Q",
+    "keywords": [],
+    "doi": "10.5281/zenodo.7400536"
+  },
+  "2022_InteroceptionAsModeling": {
+    "year": "2022",
+    "topic": "InteroceptionAsModeling",
+    "name": "Interoception as modeling, allostasis as control",
+    "description": "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, &amp; Karen S. Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20, 2022&nbsp; https://www.youtube.com/watch?v=tGd-mgSdbio Session 050.2, November 3, 2022&nbsp; https://www.youtube.com/watch?v=4o-LmkycAC0 &nbsp;",
+    "authors": "Eli Sennesh, Jordan Theriault, Dave Douglass, Ian Tennant, Dean Tickles, Daniel Friedman",
+    "abstract": "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, &amp; Karen S. Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20, 2022&nbsp; https://www.youtube.com/watch?v=tGd-mgSdbio Session 050.2, November 3, 2022&nbsp; https://www.youtube.com/watch?v=4o-LmkycAC0 &nbsp;",
+    "keywords": [],
+    "doi": "10.5281/zenodo.7400709"
+  },
+  "2022_Transcript": {
+    "year": "2022",
+    "topic": "Transcript",
+    "name": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+    "description": "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.",
+    "authors": "Mark Solms, David S Douglass, Stephen Sillett, Daniel Ari Friedman",
+    "abstract": "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.",
+    "keywords": [
+      "Active Inference",
+      "Consciousness",
+      "Neuroanatomy",
+      "Psychology",
+      "Free Energy Principle",
+      "Livestream"
+    ],
+    "doi": "10.5281/zenodo.7267947"
+  },
+  "2022_WorkedExampleBayesian": {
+    "year": "2022",
+    "topic": "WorkedExampleBayesian",
+    "name": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+    "description": "Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022&nbsp; https://www.youtube.com/watch?v=OtX2Fpzn7KA Session 049.1, October 5, 2022&nbsp; https://www.youtube.com/watch?v=dAtC-Enmc8M Session 049.2, October 12, 2022&nbsp; https://www.youtube.com/watch?v=2SuBJBEg9LI &nbsp;",
+    "authors": "Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman",
+    "abstract": "Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022&nbsp; https://www.youtube.com/watch?v=OtX2Fpzn7KA Session 049.1, October 5, 2022&nbsp; https://www.youtube.com/watch?v=dAtC-Enmc8M Session 049.2, October 12, 2022&nbsp; https://www.youtube.com/watch?v=2SuBJBEg9LI &nbsp;",
+    "keywords": [],
+    "doi": "10.5281/zenodo.7400786"
+  },
+  "2022_TranscriptDiscussions": {
+    "year": "2022",
+    "topic": "TranscriptDiscussions",
+    "name": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+    "description": "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp; https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 &nbsp; Session #048.0, September 2, 2022&nbsp; https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022&nbsp; https://www.youtube.com/watch?v=nWFM5zrdmG8 Session 048.1, September 7, 2022&nbsp; https://www.youtube.com/watch?v=nWFM5zrdmG8",
+    "authors": "Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman",
+    "abstract": "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp; https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 &nbsp; Session #048.0, September 2, 2022&nbsp; https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022&nbsp; https://www.youtube.com/watch?v=nWFM5zrdmG8 Session 048.1, September 7, 2022&nbsp; https://www.youtube.com/watch?v=nWFM5zrdmG8",
+    "keywords": [],
+    "doi": "10.5281/zenodo.7401875"
+  },
+  "2022_TrackingPublicSensemaking": {
+    "year": "2022",
+    "topic": "TrackingPublicSensemaking",
+    "name": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+    "description": "Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use. We argue that addressing crises in the information environment will require a sharper situational awareness and a deeper understanding of how beliefs emerge and crystallize, as well as greater connectivity in the work of teams and organizations in order to reduce the effects of bias and partisanship in collection and analysis. Image memes play an increasingly important role in public sensemaking and discourse and the emergence of public beliefs. Despite their significance, image memes have proven to be a very difficult category of artifact to collect, classify, and analyze in aggregate. In this white paper, the function and form of image memes are discussed, the challenges of performing image meme collection and analysis within the context of emergent, interdisciplinary teams are detailed, and requirements and recommendations for alleviating these challenges are offered.",
+    "authors": "Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman",
+    "abstract": "Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use. We argue that addressing crises in the information environment will require a sharper situational awareness and a deeper understanding of how beliefs emerge and crystallize, as well as greater connectivity in the work of teams and organizations in order to reduce the effects of bias and partisanship in collection and analysis. Image memes play an increasingly important role in public sensemaking and discourse and the emergence of public beliefs. Despite their significance, image memes have proven to be a very difficult category of artifact to collect, classify, and analyze in aggregate. In this white paper, the function and form of image memes are discussed, the challenges of performing image meme collection and analysis within the context of emergent, interdisciplinary teams are detailed, and requirements and recommendations for alleviating these challenges are offered.",
+    "keywords": [
+      "Sensemaking",
+      "Memes",
+      "Knowledge Management",
+      "Narrative",
+      "Rhetorical Analysis"
+    ],
+    "doi": "10.5281/zenodo.6904427"
+  },
+  "2021_Transcript": {
+    "year": "2021",
+    "topic": "Transcript",
+    "name": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+    "description": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium.",
+    "authors": "Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others",
+    "abstract": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium.",
+    "keywords": [
+      "Active Inference",
+      "Free Energy Principle",
+      "Symposium",
+      "ActInfLab",
+      "Bayesian Inference",
+      "Education",
+      "Communication",
+      "Tools",
+      "Generative Model"
+    ],
+    "doi": "10.5281/zenodo.5797072"
+  },
+  "2021_CollaborativeWritingCatechism": {
+    "year": "2021",
+    "topic": "CollaborativeWritingCatechism",
+    "name": "Collaborative Writing for Catechism-Based Teams",
+    "description": "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or opportunity space the team was formed to address, but also to the disciplines each author brought to the table. Yet, asynchronous and remote collaborative writing can also be rather perilous. Managing deadlines, handling disputes, communicating, staying on mission, managing resources, collective editing (and over-editing), and avoiding contradiction are only some of the challenges. While the presence of a catechism-styled operations order&nbsp;and the use of a team &ldquo;Facilitator&rdquo; can greatly improve the likelihood of success, making sure all of the authors have an alignment on protocol and etiquette while writing as a catechism-based team prevents unnecessary misunderstandings and keeps things on schedule. This &quot;3-Paragraph Order&quot; for Collaborative Writing, or C-3PO,&nbsp;is meant to rapidly onboard authors to collaborative writing procedures and etiquette.&nbsp;",
+    "authors": "Richard J. Cordes, Daniel Ari Friedman",
+    "abstract": "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or opportunity space the team was formed to address, but also to the disciplines each author brought to the table. Yet, asynchronous and remote collaborative writing can also be rather perilous. Managing deadlines, handling disputes, communicating, staying on mission, managing resources, collective editing (and over-editing), and avoiding contradiction are only some of the challenges. While the presence of a catechism-styled operations order&nbsp;and the use of a team &ldquo;Facilitator&rdquo; can greatly improve the likelihood of success, making sure all of the authors have an alignment on protocol and etiquette while writing as a catechism-based team prevents unnecessary misunderstandings and keeps things on schedule. This &quot;3-Paragraph Order&quot; for Collaborative Writing, or C-3PO,&nbsp;is meant to rapidly onboard authors to collaborative writing procedures and etiquette.&nbsp;",
+    "keywords": [
+      "Remote Teams",
+      "Collaborative Writing",
+      "Catechisms",
+      "OPORDs"
+    ],
+    "doi": "10.5281/zenodo.4633921"
+  },
+  "2020_ReimaginingMaps": {
+    "year": "2020",
+    "topic": "ReimaginingMaps",
+    "name": "Reimagining Maps",
+    "description": "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of spatial mapping techniques to information in knowledge management, or the use of itinerary visualization methods in non-spatial journeys such as learning maps in learning management systems. These fields have been subjected to their own forms of development and evolution leading to new methodologies and concepts somewhat removed from their origins. Cartography itself has undergone a great deal of technology-driven development&nbsp;but would look very different today had it been developed as a new field through the creative application of methodologies and concepts from those it inspired. As the modern information and logistical context presents new challenges and thus new demands for maps, we propose a &ldquo;reimagining of maps&rdquo; through an interdisciplinary synthesis inspired by the interdisciplinary origins of maps themselves.",
+    "authors": "Richard J. Cordes, Daniel Ari Friedman, Mikel Maron",
+    "abstract": "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of spatial mapping techniques to information in knowledge management, or the use of itinerary visualization methods in non-spatial journeys such as learning maps in learning management systems. These fields have been subjected to their own forms of development and evolution leading to new methodologies and concepts somewhat removed from their origins. Cartography itself has undergone a great deal of technology-driven development&nbsp;but would look very different today had it been developed as a new field through the creative application of methodologies and concepts from those it inspired. As the modern information and logistical context presents new challenges and thus new demands for maps, we propose a &ldquo;reimagining of maps&rdquo; through an interdisciplinary synthesis inspired by the interdisciplinary origins of maps themselves.",
+    "keywords": [
+      "Maps",
+      "Cartography",
+      "Remote Teams",
+      "Interdisciplinary Research",
+      "Process Mapping",
+      "Knowledge Management Systems",
+      "Instantaneous Remote Teams",
+      "Intelligence Production",
+      "OSINT"
+    ],
+    "doi": "10.5281/zenodo.4170026"
+  },
+  "2020_InfiniteGamesInfinite": {
+    "year": "2020",
+    "topic": "InfiniteGamesInfinite",
+    "name": "Infinite Games for Infinite Teams",
+    "description": "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for security and governance? What is possible now or soon that was not possible before? What approaches could catalyze assessment, design, and deployment of online narratives in real-time? Why is it so important to have meme-detection systems that are culturally-aware, interlingual, intermodal, and human-in-the-loop? What does it look like to take a Complex Adaptive Systems (CAS) approach to the neuromemetics of narrative co-construction and agenda-setting? How could a CAS approach be used to support specifically-defined cultural/institutional/national/global interests? How do we find, formalize, and quantify goals or outcomes within a CAS framework? How can we diagnose, perturb, and create narratives through gameplay? What might a &ldquo;design science for memes&rdquo; look like? How is this present work continuous with and contrasting with previous work in innovation, generative games, and LARPing? How can music, sound, art, and other techniques amplify narrative impact ?",
+    "authors": "Daniel Friedman, RJ Cordes",
+    "abstract": "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for security and governance? What is possible now or soon that was not possible before? What approaches could catalyze assessment, design, and deployment of online narratives in real-time? Why is it so important to have meme-detection systems that are culturally-aware, interlingual, intermodal, and human-in-the-loop? What does it look like to take a Complex Adaptive Systems (CAS) approach to the neuromemetics of narrative co-construction and agenda-setting? How could a CAS approach be used to support specifically-defined cultural/institutional/national/global interests? How do we find, formalize, and quantify goals or outcomes within a CAS framework? How can we diagnose, perturb, and create narratives through gameplay? What might a &ldquo;design science for memes&rdquo; look like? How is this present work continuous with and contrasting with previous work in innovation, generative games, and LARPing? How can music, sound, art, and other techniques amplify narrative impact ?",
+    "keywords": [],
+    "doi": "10.5281/zenodo.12601675"
   }
 }

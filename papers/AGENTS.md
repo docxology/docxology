@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 118 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for 142 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (118 entries as of 2026-05-28)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (142 entries as of 2026-05-30)
 
 ### 🔬 RESEARCHER
 
@@ -50,9 +50,9 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 118/118 folders (last verified 2026-05-28) |
-| AGENTS.md present | 118/118 |
-| SKILL.md present | 118/118 |
+| README.md present | 142/142 folders (last verified 2026-05-30) |
+| AGENTS.md present | 142/142 |
+| SKILL.md present | 142/142 |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |

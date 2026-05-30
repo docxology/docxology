@@ -12,6 +12,16 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "catalog.json"
 HTML_OUT = REPO_ROOT / "catalog.html"
 
+# Self-contained creator node so Google can resolve the Dataset/DataCatalog
+# `creator` field on this page without dereferencing the index-page #person node.
+CREATOR = {
+    "@type": "Person",
+    "@id": "https://danielarifriedman.com/#person",
+    "name": "Daniel Ari Friedman",
+    "url": "https://danielarifriedman.com/",
+}
+LICENSE = "https://creativecommons.org/licenses/by/4.0/"
+
 try:
     from report_paths import latest_report, latest_subdir_file, rel, report_date_string
 except ImportError:  # pragma: no cover - package import path
@@ -35,7 +45,7 @@ def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
 
 def datasets() -> list[tuple[str, str, str, str]]:
     return [
-    ("works", "Curated Works Bibliography", "data/works.json", "125 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
+    ("works", "Curated Works Bibliography", "data/works.json", "149 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
     ("software", "Software Catalog", "data/software.json", "82 catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
@@ -93,9 +103,9 @@ def catalog_payload(date_modified: str | None = None) -> dict:
         "name": "Daniel Ari Friedman Public Research Data Catalog",
         "description": "Machine-readable datasets for Daniel Ari Friedman's public research, software, citation, and evidence index.",
         "url": "https://danielarifriedman.com/catalog.html",
-        "creator": {"@id": "https://danielarifriedman.com/#person"},
+        "creator": CREATOR,
         "dateModified": date_modified or report_date_string(),
-        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "license": LICENSE,
         "dataset": [
             {
                 "@type": "Dataset",
@@ -104,6 +114,9 @@ def catalog_payload(date_modified: str | None = None) -> dict:
                 "description": desc,
                 "url": absolute(rel),
                 "encodingFormat": encoding_format(rel),
+                "creator": CREATOR,
+                "license": LICENSE,
+                "includedInDataCatalog": {"@id": "https://danielarifriedman.com/catalog.html#catalog"},
                 "distribution": {
                     "@type": "DataDownload",
                     "contentUrl": absolute(rel),

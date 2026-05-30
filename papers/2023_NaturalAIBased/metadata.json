@@ -1,0 +1,136 @@
+{
+  "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+  "version": null,
+  "doi": "10.5281/zenodo.10360148",
+  "doi_url": "https://doi.org/10.5281/zenodo.10360148",
+  "zenodo_record": "https://zenodo.org/records/10360148",
+  "record_id": "10360148",
+  "publication_date": "2023-12-12",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Clippinger, John",
+      "affiliation": "Bioform Labs"
+    },
+    {
+      "name": "de Vries, Bert",
+      "affiliation": "Eindhoven University of Technology"
+    },
+    {
+      "name": "Noveck, Beth",
+      "affiliation": "Northeastern University"
+    },
+    {
+      "name": "Fields, Chris",
+      "affiliation": "Tufts University"
+    },
+    {
+      "name": "Slater, Cory",
+      "affiliation": "Bioform Labs"
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Silbersweig, David A.",
+      "affiliation": "Harvard Medical School"
+    },
+    {
+      "name": "Lapenta, Francesco",
+      "affiliation": "John Cabot University"
+    },
+    {
+      "name": "Grimm, Holly",
+      "affiliation": "ML Engineer"
+    },
+    {
+      "name": "Emmett, Jeff",
+      "affiliation": "BlockScience"
+    },
+    {
+      "name": "Shane, Joshua",
+      "affiliation": "Bioform Labs"
+    },
+    {
+      "name": "Friston, Karl",
+      "affiliation": "University College London"
+    },
+    {
+      "name": "Nkemnkia, Martin Nkafu",
+      "affiliation": "Pontifical Lateran University, Italy"
+    },
+    {
+      "name": "Brown, Matthew",
+      "affiliation": "ThoughtForge Inc."
+    },
+    {
+      "name": "Pirkowski, Matthew",
+      "affiliation": "Bioform Labs"
+    },
+    {
+      "name": "Levin, Michael",
+      "affiliation": "Levin Labs"
+    },
+    {
+      "name": "Zargham, Michael",
+      "affiliation": "BlockScience"
+    },
+    {
+      "name": "Tuan, Nguyen Anh",
+      "affiliation": "Boston Global Forum"
+    },
+    {
+      "name": "Achuthan, Krishnashree",
+      "affiliation": "Amrita University"
+    },
+    {
+      "name": "Patterson, Thomas",
+      "affiliation": "Harvard Kennedy School"
+    },
+    {
+      "name": "David, Scott L.",
+      "affiliation": "University of Washington, Applied Physics Laboratory"
+    },
+    {
+      "name": "Kehler, Thomas",
+      "affiliation": "CrowdSmart.ai"
+    },
+    {
+      "name": "Knight, Virginia Bleu",
+      "affiliation": null
+    },
+    {
+      "name": "Nakayama, Yasuhide",
+      "affiliation": "Former Japanese State Minister of Defense and Foreign Affairs"
+    }
+  ],
+  "description": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;",
+  "keywords": [
+    "Active Inference",
+    "AI",
+    "Natural",
+    "Policy"
+  ],
+  "files": [
+    {
+      "name": "12-11-2023_Natural_AI_Letter_v1.1.pdf",
+      "size_bytes": 67349,
+      "checksum": "md5:06d514dc9e460133af3c9cb41834f629",
+      "download_url": "https://zenodo.org/api/records/10360148/files/12-11-2023_Natural_AI_Letter_v1.1.pdf/content"
+    },
+    {
+      "name": "12-11-2023_Natural_AI_Letter_v1.1.docx",
+      "size_bytes": 12406,
+      "checksum": "md5:97577f1ca7c7e48de54e14931a5aea0e",
+      "download_url": "https://zenodo.org/api/records/10360148/files/12-11-2023_Natural_AI_Letter_v1.1.docx/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-05-30T18:56:15Z"
+}
