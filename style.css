@@ -65,9 +65,7 @@
         /* ── NAV ── */
         nav{
             position:fixed;top:0;left:0;right:0;z-index:200;
-            background:rgba(14,12,10,0.93);
-            -webkit-backdrop-filter:blur(22px) saturate(150%);
-            backdrop-filter:blur(22px) saturate(150%);
+            background:var(--bg-primary);
             /* newspaper masthead double-rule */
             border-bottom:1px solid var(--paper-line);
             box-shadow:0 3px 0 -2px var(--paper-soft),0 4px 0 -2px var(--paper-line);
@@ -127,39 +125,15 @@
             line-height:1.7;
         }
 
-        /* ── HERO ── */
+        /* ── HERO (static minimalist masthead) ── */
         .hero{
-            min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;
-            text-align:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden;
-            background:#000;isolation:isolate;
-        }
-        .hero-glitch-canvas{
-            position:absolute;inset:0;width:100%;height:100%;
-            z-index:0;display:block;background:#000;pointer-events:none;
-        }
-        .hero::before{
-            content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
-            background:
-                radial-gradient(ellipse 70% 50% at 50% 42%, rgba(255,255,255,0.08), transparent 62%),
-                radial-gradient(ellipse 60% 45% at 76% 24%, rgba(255,0,0,0.14), transparent 58%),
-                linear-gradient(180deg,rgba(0,0,0,0.62),rgba(0,0,0,0.34) 42%,rgba(0,0,0,0.76));
-        }
-        .hero::after{
-            content:'';position:absolute;inset:0;z-index:2;pointer-events:none;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px),
-                linear-gradient(rgba(255,0,0,0.1) 1px, transparent 1px);
-            background-size:60px 60px,60px 60px,100% 6px;
-            opacity:.5;mix-blend-mode:screen;animation:heroScan 8s linear infinite;
-        }
-        @keyframes heroScan{
-            from{background-position:0 0,0 0,0 0}
-            to{background-position:0 60px,60px 0,0 48px}
+            display:flex;align-items:center;justify-content:center;
+            text-align:center;padding:8.5rem 2rem 4rem;position:relative;overflow:hidden;
+            background:var(--bg-primary);isolation:isolate;
+            border-bottom:1px solid var(--paper-line);
         }
         .hero-content{
-            position:relative;z-index:3;max-width:900px;
-            text-shadow:0 2px 26px rgba(0,0,0,0.92),0 0 36px rgba(0,0,0,0.82);
+            position:relative;z-index:3;max-width:880px;
         }
         .hero h1{
             font-family:'Playfair Display',serif;
@@ -525,32 +499,17 @@ nav{
 }
 
 .hero{
-    min-height:68vh;
-    min-height:68svh;
-    padding:7.15rem 2rem 2.35rem;
-    border-top:8px double rgba(255,255,255,0.18);
-    border-bottom:8px double rgba(255,255,255,0.28);
-}
-.hero::before{
-    background:
-        linear-gradient(90deg,rgba(0,0,0,0.9),rgba(11,11,11,0.62) 48%,rgba(0,0,0,0.9)),
-        radial-gradient(ellipse 54% 38% at 50% 43%,rgba(255,255,255,0.034),transparent 68%),
-        linear-gradient(180deg,rgba(0,0,0,0.72),rgba(0,0,0,0.88));
-}
-.hero::after{
-    background-image:
-        linear-gradient(rgba(255,255,255,0.078) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(255,255,255,0.032) 1px,transparent 1px),
-        linear-gradient(rgba(255,0,0,0.035) 1px,transparent 1px);
-    background-size:100% 12px,84px 100%,100% 7px;
-    opacity:.18;
+    min-height:auto;
+    padding:8.5rem 2rem 3.25rem;
+    border-top:0;
+    border-bottom:1px solid var(--paper-line);
 }
 .hero-content{
-    max-width:980px;
+    max-width:760px;
     width:100%;
-    padding:1.05rem 0 .98rem;
-    border-top:8px double rgba(255,255,255,0.36);
-    border-bottom:8px double rgba(255,255,255,0.36);
+    padding:1.4rem 1.5rem 1.3rem;
+    border-top:4px double rgba(244,241,234,0.42);
+    border-bottom:4px double rgba(244,241,234,0.42);
 }
 .hero h1{
     color:#fff;
@@ -635,7 +594,7 @@ nav{
     border-color:var(--red-pure);
     color:#fff;
 }
-.hero .btn:hover,.btn:hover{transform:translateY(-1px);box-shadow:none}
+.hero .btn:hover,.btn:hover{transform:none;box-shadow:none;border-color:var(--border-hover);color:#fff}
 
 .stats-bar{
     background:#050505;
@@ -706,7 +665,7 @@ nav{
     width:100%;
     max-width:18rem;
     height:1px;
-    background:var(--red-pure);
+    background:rgba(244,241,234,0.42);
     margin:1rem 0 0;
 }
 
@@ -714,17 +673,15 @@ nav{
     position:relative;
     overflow:hidden;
     isolation:isolate;
-    background:
-        linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01)),
-        var(--bg-card);
-    border:1px solid rgba(255,255,255,0.22);
+    background:var(--bg-card);
+    border:1px solid var(--border);
     border-radius:1px;
-    box-shadow:0 1px 0 rgba(255,255,255,0.04),0 10px 22px rgba(0,0,0,0.18);
+    box-shadow:none;
 }
 .card:hover,.connect-card:hover,.repo-card:hover,.collab-card:hover,.media-card:hover,.art-card:hover,.work-row:hover,.catalog-card:hover,.result-card:hover{
-    border-color:rgba(255,0,0,0.46);
+    border-color:var(--border-hover);
     transform:none;
-    box-shadow:0 1px 0 rgba(255,255,255,0.06),0 12px 26px rgba(0,0,0,0.24);
+    box-shadow:none;
 }
 .card>*,
 .connect-card>*,
