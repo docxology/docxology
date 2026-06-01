@@ -20,7 +20,7 @@ keywords: "Daniel Ari Friedman, documentation hub, academic portfolio, pages ind
 
 | Page | Description |
 |------|-------------|
-| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **149 works** with DOI links, domain tags, and deep-links to paper folders |
+| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **150 works** with DOI links, domain tags, and deep-links to paper folders |
 | 📄 [**WORK PAGES**](../works/) | **Generated per-work landing pages** — citation, DOI, primary source, and documentation link for each bibliography row |
 | 🔎 [**SEARCH**](../search.html) | **Human-facing site search** — works, software, people, organizations, claims, and key pages |
 | 📝 [**UPDATES**](../updates.html) | **Human-facing changelog** — recent public-index and generated-site changes |

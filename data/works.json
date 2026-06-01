@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T18:59:20Z",
+  "generated_at": "2026-06-01T02:01:53Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 149,
+  "count": 150,
   "works": [
     {
       "num": 1,
@@ -2087,6 +2087,20 @@
       "url": "https://doi.org/10.5281/zenodo.12601675",
       "doi": "10.5281/zenodo.12601675",
       "docs_path": "papers/2020_InfiniteGamesInfinite/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 150,
+      "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20482026",
+      "doi": "10.5281/zenodo.20482026",
+      "docs_path": "papers/2026_MusicNeverStopped/",
       "has_paper_folder": true
     }
   ]

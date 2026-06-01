@@ -1774,3 +1774,15 @@ KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 149; docs: papers/2020_InfiniteGamesInfinite/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation
+T2  - Zenodo
+DO  - 10.5281/zenodo.20482026
+UR  - https://doi.org/10.5281/zenodo.20482026
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 150; docs: papers/2026_MusicNeverStopped/
+ER  -

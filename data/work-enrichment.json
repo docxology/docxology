@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T18:59:21Z",
+  "generated_at": "2026-06-01T02:01:54Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 149,
+  "count": 150,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3493,6 +3493,26 @@
       ],
       "methods": [],
       "source": "papers/2020_InfiniteGamesInfinite/README.md"
+    },
+    "Friedman2026MusicNeverStoppedGrateful150": {
+      "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
+      "abstract": "<p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium in",
+      "keywords": [
+        "grateful dead",
+        "setlist data",
+        "category theory",
+        "music information retrieval",
+        "reproducible data compendium"
+      ],
+      "findings": [
+        "grateful dead",
+        "setlist data",
+        "category theory",
+        "music information retrieval",
+        "reproducible data compendium"
+      ],
+      "methods": [],
+      "source": "papers/2026_MusicNeverStopped/README.md"
     }
   }
 }

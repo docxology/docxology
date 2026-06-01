@@ -54,7 +54,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **149 works** in the unified bibliography · **300** public GitHub repositories on the primary profile · **82** catalogued software repos (50 owned + 32 AII) · **764** Google Scholar citations (h-index: 15, as of 2026-05-16) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **150 works** in the unified bibliography · **300** public GitHub repositories on the primary profile · **82** catalogued software repos (50 owned + 32 AII) · **764** Google Scholar citations (h-index: 15, as of 2026-05-16) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
 
 ---
 

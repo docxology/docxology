@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-05-30T23:20:33Z
+Generated: 2026-06-01T02:03:14Z
 
-Current public metrics: 149 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 150 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (149)
+WORKS AND PUBLICATIONS (150)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -285,6 +285,7 @@ WORKS AND PUBLICATIONS (149)
 [147] 2021 | Paper | Collaborative Writing for Catechism-Based Teams | Zenodo | 10.5281/zenodo.4633921
 [148] 2020 | Paper | Reimagining Maps | Zenodo | 10.5281/zenodo.4170026
 [149] 2020 | Paper | Infinite Games for Infinite Teams | Zenodo | 10.5281/zenodo.12601675
+[150] 2026 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | Zenodo | 10.5281/zenodo.20482026
 
 SOFTWARE (17)
 -------------

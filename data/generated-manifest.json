@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T02:16:23Z",
+  "generated_at": "2026-06-01T02:05:17Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -99,7 +99,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-05-30.json"
+        "reports/paired_publications_2026-06-01.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -251,7 +251,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-05-31.json"
+        "reports/asset_size_2026-06-01.json"
       ],
       "sources": [
         "root HTML pages",

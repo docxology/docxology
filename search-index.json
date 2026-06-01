@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T02:16:23Z",
+  "generated_at": "2026-06-01T02:04:03Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 639,
+  "count": 640,
   "items": [
     {
       "id": "page:home",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-05-31.json",
+      "url": "/reports/asset_size_2026-06-01.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -3693,6 +3693,27 @@
         "Zenodo publication"
       ],
       "content": "Infinite Games for Infinite Teams Zenodo 10.5281/zenodo.12601675 Friedman2020InfiniteGamesInfiniteTeams149 Cognitive Security Paper Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for security and governance? What is possible now or soon that was not possible before? What approaches could catalyze assessment, design, and deployment of online narratives in real-time? Why is it so important to have meme-detection systems that are culturally-aware, interlingual, intermodal, and human-in-the-loop? What does it look like to take a Complex Adaptive Systems (CAS) approach to the neuromemetics of narrative co-construction and agenda-setting? How could a CAS approach be used to support specifical Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2026MusicNeverStoppedGrateful150",
+      "type": "work",
+      "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+      "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20482026",
+      "summary": "<p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "grateful dead",
+        "setlist data",
+        "category theory",
+        "music information retrieval",
+        "reproducible data compendium"
+      ],
+      "content": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation Zenodo 10.5281/zenodo.20482026 Friedman2026MusicNeverStoppedGrateful150 Computational Paper <p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium in grateful dead setlist data category theory music information retrieval reproducible data compendium grateful dead setlist data category theory music information retrieval reproducible data compendium"
     },
     {
       "id": "software:docxology:template",
@@ -10613,7 +10634,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 149 works.",
+      "title": "The curated bibliography contains 150 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10621,12 +10642,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 149 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 150 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 142 per-paper documentation folders.",
+      "title": "The repository contains 143 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10634,7 +10655,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 142 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 143 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -10810,7 +10831,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 149 works, 82 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 150 works, 82 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

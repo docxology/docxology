@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**149 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**150 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**129** Papers · **9** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
+**130** Papers · **9** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **149** works in the table below **·** **142** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **150** works in the table below **·** **143** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -187,6 +187,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 147 | 2021 | 🛡️ | Paper | Collaborative Writing for Catechism-Based Teams | *Zenodo* | [10.5281/zenodo.4633921](https://doi.org/10.5281/zenodo.4633921) | [📁](../papers/2021_CollaborativeWritingCatechism/) |
 | 148 | 2020 | 🛡️ | Paper | Reimagining Maps | *Zenodo* | [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026) | [📁](../papers/2020_ReimaginingMaps/) |
 | 149 | 2020 | 🛡️ | Paper | Infinite Games for Infinite Teams | *Zenodo* | [10.5281/zenodo.12601675](https://doi.org/10.5281/zenodo.12601675) | [📁](../papers/2020_InfiniteGamesInfinite/) |
+| 150 | 2026 | 💻 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | *Zenodo* | [10.5281/zenodo.20482026](https://doi.org/10.5281/zenodo.20482026) | [📁](../papers/2026_MusicNeverStopped/) |
 ---
 
 ## Domain Index

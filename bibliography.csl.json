@@ -3712,5 +3712,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.12601675",
     "URL": "https://doi.org/10.5281/zenodo.12601675"
+  },
+  {
+    "id": "Friedman2026MusicNeverStoppedGrateful150",
+    "type": "article-journal",
+    "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 150; docs: papers/2026_MusicNeverStopped/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20482026",
+    "URL": "https://doi.org/10.5281/zenodo.20482026"
   }
 ]
