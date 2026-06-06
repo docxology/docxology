@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**150 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**154 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**130** Papers · **9** Presentations · **4** Books · **3** Courses · **2** Playbooks · **2** Series
+**133** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **150** works in the table below **·** **143** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **154** works in the table below **·** **147** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -188,6 +188,10 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 148 | 2020 | 🛡️ | Paper | Reimagining Maps | *Zenodo* | [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026) | [📁](../papers/2020_ReimaginingMaps/) |
 | 149 | 2020 | 🛡️ | Paper | Infinite Games for Infinite Teams | *Zenodo* | [10.5281/zenodo.12601675](https://doi.org/10.5281/zenodo.12601675) | [📁](../papers/2020_InfiniteGamesInfinite/) |
 | 150 | 2026 | 💻 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | *Zenodo* | [10.5281/zenodo.20482026](https://doi.org/10.5281/zenodo.20482026) | [📁](../papers/2026_MusicNeverStopped/) |
+| 151 | 2026 | 💻 | Paper | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533670](https://doi.org/10.5281/zenodo.20533670) | [📁](../papers/2026_DeterministicTestbedSelf/) |
+| 152 | 2026 | 💻 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) | [📁](../papers/2026_RecoveringLLMPersona/) |
+| 153 | 2026 | 💻 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676) | [📁](../papers/2026_Triplicate/) |
+| 154 | 2026 | 💻 | Book | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126) | [📁](../papers/2026_TemplateTextbook/) |
 ---
 
 ## Domain Index
@@ -202,11 +206,11 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 - **2025** — Towards a Science of Consciousness and Social Complexity... For Ants · [📁](../papers/2025_ConsciousnessAnts/)
 - **2024** — Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea · [📁](../papers/2024_BlattodeaDiversity/)
 - **2023** — A single-pheromone model accounts for empirical patterns of ant colony foraging · [📁](../papers/2023_SinglePheromone/)
-- *...and 14 more in the table above*
+- *...and 15 more in the table above*
 
 ### 🧠 Active Inference
 
-> 23 works (2018–2026)
+> 35 works (2018–2026)
 
 - **2026** — Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics · [📁](../papers/2026_FEPLean/)
 - **2026** — Compositional Approaches to Linguistic Case for Cognitive Modeling · [📁](../papers/2026_CognitiveCaseDiagrams/)
@@ -217,11 +221,11 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 - **2025** — Increasing the Accessibility and Applicability of Active Inference · [📁](../papers/2025_AccessibilityActiveInference/)
 - **2025** — Temporal Depth in a Coherent Self and in Depersonalization · [📁](../papers/2025_TemporalDepth/)
 - **2025** — Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States · [📁](../papers/2025_Thoughtseeds/)
-- *...and 14 more in the table above*
+- *...and 26 more in the table above*
 
 ### 🛡️ Cognitive Security
 
-> 21 works (2020–2026)
+> 26 works (2020–2026)
 
 - **2026** — Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast · [📁](../papers/2026_CrescentCity/)
 - **2026** — Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) · [📁](../papers/2026_CognitiveIntegrity/)
@@ -230,7 +234,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 - **2024** — Comments on National Digital Twins R&D Strategic Plan · [📁](../papers/2024_DigitalTwins/)
 - **2024** — FarmWorks: Decentralized AI Agents for Personalized Solutions · [📁](../papers/2024_FarmWorks/)
 - **2023** — ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management · [📁](../papers/2023_ATLAS/)
-- *...and 14 more in the table above*
+- *...and 19 more in the table above*
 
 ### 🎨 Art & Synergetics
 
@@ -246,15 +250,18 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 💻 Computational
 
-> 8 works (2023–2026)
+> 24 works (2023–2026)
 
+- **2026** — A Deterministic Testbed for Self-Organizing Agent-Team Coordination · [📁](../papers/2026_DeterministicTestbedSelf/)
+- **2026** — Recovering LLM-Persona Accuracies from Unlabeled Votes · [📁](../papers/2026_RecoveringLLMPersona/)
+- **2026** — The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine · [📁](../papers/2026_Triplicate/)
+- **2026** — The Template Textbook · [📁](../papers/2026_TemplateTextbook/)
 - **2026** — Introduction to Biology: A Generative Approach · [📁](../papers/2026_BiologyTextbook/)
+- **2026** — A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication · [📁](../papers/2026_ReproducibleResearch/)
 - **2025** — Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference · [📁](../papers/2025_AuBI/)
 - **2025** — MDKV: A Multitrack Markdown Container for Structured, Portable Documents · [📁](../papers/2025_MDKV/)
 - **2025** — Markdown Decision Process: A Framework for Probabilistic Document Analysis · [📁](../papers/2025_MarkdownDecisionProcess/)
-- **2025** — ResNei: Solution Design Document · [📁](../papers/2025_ResNei/)
-- **2025** — The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes · [📁](../papers/2025_DiscoveryEngine/)
-- *...and 2 more in the table above*
+- *...and 15 more in the table above*
 
 ### 🌍 AII Ecosystem
 
@@ -279,14 +286,14 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🧬 Genetics & Biomedical
 
-> 9 works (2015–2024)
+> 13 works (2015–2024)
 
 - **2024** — Why Paleolithic Rockstars were both enigmatic and sporadic · [📁](../papers/2024_PaleolithicRockstars/)
 - **2023** — To comment or not to comment · [📁](../papers/2023_ToComment/)
 - **2022** — On free will or the lack thereof (interview with Robert Sapolsky) · [📁](../papers/2022_FreeWillSapolsky/)
 - **2020** — The neuroscience of decision making (interview with Timothy Hanks) · [📁](../papers/2020_NeuroscienceDecision/)
 - **2019** — Dennett Explained (interview with Daniel Dennett) · [📁](../papers/2019_DennettExplained/)
-- *...and 4 more in the table above*
+- *...and 8 more in the table above*
 
 ---
 

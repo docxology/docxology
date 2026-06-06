@@ -57,7 +57,7 @@ As principal investigator and president of the Active Inference Institute, Fried
 
 ### Cognitive Security & Information Ecosystems
 
-Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education Forum, informally founded 2018 by RJ Cordes, with Friedman as honorary co-founder by 2019), Friedman has authored 18 papers and 3 books in the unified bibliography on narrative security, digital rhetoric, information commons, and formal multi-agent security frameworks. Notable COGSEC volumes include *The Great Preset* (IRT-20, 2020), *Narrative Information Ecosystems* (NIM-21, 2021), *Structuring the Information Commons* (CAT-22, 2022), and *ATLAS* (2023–2024) — a question-oriented approach to pattern languages for knowledge management. Core frameworks include **P3IF** (Properties, Processes, and Perspectives Inter-Framework) for multiplexing interdisciplinary requirements frameworks ([DOI 10.5281/zenodo.7093837](https://doi.org/10.5281/zenodo.7093837)), developed in affiliation with DHS Office of Health Security, UW Applied Physics Lab, Pivot for Humanity, and UC Davis; and the **Cognitive Integrity Framework** for formal multiagent security foundations ([DOI 10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119)). This work applies Active Inference and complexity science to understand and improve information ecosystems — from trust systems and cognitive sovereignty to AI accountability.
+Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education Forum, informally founded 2018 by RJ Cordes, with Friedman as honorary co-founder by 2019), Friedman has authored 23 papers and 3 books in the unified bibliography on narrative security, digital rhetoric, information commons, and formal multi-agent security frameworks. Notable COGSEC volumes include *The Great Preset* (IRT-20, 2020), *Narrative Information Ecosystems* (NIM-21, 2021), *Structuring the Information Commons* (CAT-22, 2022), and *ATLAS* (2023–2024) — a question-oriented approach to pattern languages for knowledge management. Core frameworks include **P3IF** (Properties, Processes, and Perspectives Inter-Framework) for multiplexing interdisciplinary requirements frameworks ([DOI 10.5281/zenodo.7093837](https://doi.org/10.5281/zenodo.7093837)), developed in affiliation with DHS Office of Health Security, UW Applied Physics Lab, Pivot for Humanity, and UC Davis; and the **Cognitive Integrity Framework** for formal multiagent security foundations ([DOI 10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119)). This work applies Active Inference and complexity science to understand and improve information ecosystems — from trust systems and cognitive sovereignty to AI accountability.
 
 ### Art, Philosophy & Synergetics
 
@@ -169,7 +169,7 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 | i10-index | 17 |
 | Citations since 2021 | 495 |
 | Open-Source Repositories (owned, catalogued) | 50 |
-| GitHub Public Repositories (total) | 299 |
+| GitHub Public Repositories (total) | 305 |
 | Active Inference Institute Repos (catalogued) | 32 |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |
@@ -190,7 +190,7 @@ The curated bibliography remains the source of truth for this repository. Public
 | [Europe PMC](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | 10 exact-author results, including preprints |
 | [Crossref](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | 15 DOI records attached to the ORCID |
 | [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 38 exact-name records; 91 ORCID-linked versioned records and software archives |
-| [GitHub](https://github.com/docxology) | 299 public repositories on the primary profile |
+| [GitHub](https://github.com/docxology) | 305 public repositories on the primary profile |
 
 See [DISCOVERY.md](DISCOVERY.md) for canonical IDs, API endpoints, query recipes, and verification notes.
 

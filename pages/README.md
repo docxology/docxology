@@ -20,11 +20,11 @@ keywords: "Daniel Ari Friedman, documentation hub, academic portfolio, pages ind
 
 | Page | Description |
 |------|-------------|
-| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table of **150 works** with DOI links, domain tags, and deep-links to paper folders |
+| 📚 [**BIBLIOGRAPHY**](BIBLIOGRAPHY.md) | Unified sortable table with DOI links, domain tags, and deep-links to paper folders |
 | 📄 [**WORK PAGES**](../works/) | **Generated per-work landing pages** — citation, DOI, primary source, and documentation link for each bibliography row |
 | 🔎 [**SEARCH**](../search.html) | **Human-facing site search** — works, software, people, organizations, claims, and key pages |
 | 📝 [**UPDATES**](../updates.html) | **Human-facing changelog** — recent public-index and generated-site changes |
-| 💻 [**SOFTWARE**](SOFTWARE.md) | **50 owned repos** + **32 Active Inference Institute contributions** — curated frameworks, tools, and infrastructure; [full generated inventory](../repositories.html) covers all public GitHub repositories |
+| 💻 [**SOFTWARE**](SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — frameworks, tools, and infrastructure; [full generated inventory](../repositories.html) covers all public GitHub repositories |
 | 🧭 [**DOMAINS**](DOMAINS.md) | **Research domain map** — Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational pathways |
 | 👤 [**PROFILE**](PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🔗 [**LINKS**](LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, organizations |
@@ -51,7 +51,8 @@ The `pages/` directory contains all centralized, non-paper-specific documentatio
 
 ### Related Directories
 
-- **[papers/](../papers/)** — 142 per-paper folders with README, AGENTS, and SKILL files
+- **[papers/](../papers/)** — per-paper folders with README, AGENTS, and SKILL files
+- **[reports/current_counts.md](../reports/current_counts.md)** — generated volatile-count snapshot with source metadata and rebuild commands
 - **[code/](../code/)** — Source code, orchestrators, and test suites
 - **[docs/](../docs/)** — Repository-wide operational documentation
 - **[works/](../works/)** — Generated HTML landing pages for every bibliography row

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-06-01T02:03:14Z
+Generated: 2026-06-04T22:33:06Z
 
-Current public metrics: 150 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 154 curated works; 88 catalogued software repositories (56 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (143)
+WORKS AND PUBLICATIONS (147)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -199,10 +199,14 @@ WORKS AND PUBLICATIONS (143)
 [148] 2020 | Paper | Reimagining Maps | Zenodo | 10.5281/zenodo.4170026
 [149] 2020 | Paper | Infinite Games for Infinite Teams | Zenodo | 10.5281/zenodo.12601675
 [150] 2026 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | Zenodo | 10.5281/zenodo.20482026
+[151] 2026 | Paper | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | Zenodo | 10.5281/zenodo.20533670
+[152] 2026 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | Zenodo | 10.5281/zenodo.20498700
+[153] 2026 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | Zenodo | 10.5281/zenodo.20533676
+[154] 2026 | Book | The Template Textbook | Zenodo | 10.5281/zenodo.20533126
 
-SOFTWARE (82)
+SOFTWARE (88)
 -------------
-docxology/template | Python | https://github.com/docxology/template | Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning
+docxology/template | Python | https://github.com/docxology/template | Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.20469500
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
 docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration
@@ -222,11 +226,15 @@ docxology/lean_niche | Python | https://github.com/docxology/lean_niche | Lean/m
 docxology/literature | Python | https://github.com/docxology/literature | Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications
 docxology/obsidian-construction-from-text | Python | https://github.com/docxology/obsidian-construction-from-text | Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs
 docxology/qr_live_protocol | Python | https://github.com/docxology/qr_live_protocol | QR code-based live protocol system for real-time data exchange and interactive session management
+docxology/template_autoscientists | Python | https://github.com/docxology/template_autoscientists | AutoScientists deterministic multi-agent scientific-discovery coordination harness · · Zenodo | paper: papers/2026_DeterministicTestbedSelf/ | zenodo: https://doi.org/10.5281/zenodo.20533670
+docxology/template_newspaper | Python | https://github.com/docxology/template_newspaper | The Triplicate data-driven large-format newspaper layout engine · · Zenodo | paper: papers/2026_Triplicate/ | zenodo: https://doi.org/10.5281/zenodo.20533676
+docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498700
 docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
 docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization
 docxology/ant-pheromone | Python | https://github.com/docxology/ant-pheromone | Computational simulation of ant pheromone trail dynamics and stigmergic communication
 docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
+docxology/cohereants | Python | https://github.com/docxology/cohereants | Computational research on insect infrared sensing and olfaction modeling · · Zenodo | paper: papers/2026_WhenDoBugs/ | zenodo: https://doi.org/10.5281/zenodo.20450970
 docxology/ento_linguistics | Python | https://github.com/docxology/ento_linguistics | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring | paper: papers/2026_EntoLinguistics/
 docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
 docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Julia | https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment
@@ -242,6 +250,7 @@ docxology/fuller-obsidian | unspecified | https://github.com/docxology/fuller-ob
 docxology/godel_ivm | Python | https://github.com/docxology/godel_ivm | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
 docxology/goference | Go | https://github.com/docxology/goference | Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum
 docxology/hhs-opendata | Python | https://github.com/docxology/hhs-opendata | Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines
+docxology/grateful_data | Python | https://github.com/docxology/grateful_data | The Music Never Stopped citation-bound Grateful Dead data compendium · · Zenodo | paper: papers/2026_MusicNeverStopped/ | zenodo: https://doi.org/10.5281/zenodo.20482026
 docxology/infra-calc | JavaScript | https://github.com/docxology/infra-calc | Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems
 docxology/markdown_decision_process | Python | https://github.com/docxology/markdown_decision_process | Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning | paper: papers/2025_MarkdownDecisionProcess/
 docxology/mdkv | Python | https://github.com/docxology/mdkv | MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents | paper: papers/2025_MDKV/
@@ -249,6 +258,7 @@ docxology/p3if | Python | https://github.com/docxology/p3if | Properties, Proces
 docxology/service | Python | https://github.com/docxology/service | Service-layer infrastructure and API tooling for Python-based research applications
 docxology/snake | Python | https://github.com/docxology/snake | Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms
 docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533126
 docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
 docxology/symergetics | Python | https://github.com/docxology/symergetics | Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics
 docxology/transformer | Python | https://github.com/docxology/transformer | Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research

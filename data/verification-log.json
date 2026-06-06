@@ -3,6 +3,25 @@
   "description": "Dated independent multi-source verification of load-bearing profile claims. Human-readable companion: pages/VERIFICATION_LOG.md.",
   "passes": [
     {
+      "date": "2026-06-04",
+      "method": "Targeted public API refresh for publication/software count surfaces using GitHub REST API, public-source snapshot, and paginated public-source inventory reports.",
+      "results": [
+        {
+          "claim": "github-footprint",
+          "verdict": "high",
+          "independent_source": "https://api.github.com/users/docxology",
+          "note": "docxology 305 public repos; AII 51; ActiveInferenceInstitute remains a User account not an Organization"
+        },
+        {
+          "claim": "publication-index-freshness",
+          "verdict": "verified-dated",
+          "independent_source": "reports/public_source_snapshot_2026-06-04.json",
+          "note": "PubMed exact-author 8; Europe PMC 10; Crossref ORCID 15; Zenodo exact-name 40; Zenodo ORCID-linked 98; public APIs are freshness checks, not curated bibliography replacements"
+        }
+      ],
+      "softened": []
+    },
+    {
       "date": "2026-05-16",
       "method": "Independent multi-agent verification against sources not controlled by the subject (publisher DOI resolvers, IRS data via ProPublica, NSF/Grantome, Stanford PURL, ORCID, Wikipedia, independent NFT-history journalism, GitHub API).",
       "results": [
@@ -12,11 +31,11 @@
         {"claim": "aii-501c3", "verdict": "high", "independent_source": "https://projects.propublica.org/nonprofits/organizations/882985125", "note": "EIN 88-2985125; 501(c)(3); IRS ruling March 2024"},
         {"claim": "aii-officer-roles", "verdict": "high", "independent_source": "https://www.activeinference.institute/officers", "note": "Friedman President+Treasurer; Mikhailova VP+Secretary 2025-; Knight prior Secretary 2022-2024 / current Board"},
         {"claim": "friston-coauthorship", "verdict": "high", "independent_source": "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2021.647732/full", "note": "Active Inferants, peer-reviewed, Friston co-author; PMID 34248515"},
-        {"claim": "publication-record-sample", "verdict": "high", "independent_source": "doi.org / Crossref / PubMed / Europe PMC", "note": "6/6 sampled DOIs resolve; first author on 4; Zenodo 36 exact-name / 82 ORCID match"},
+        {"claim": "publication-record-sample", "verdict": "high", "independent_source": "doi.org / Crossref / PubMed / Europe PMC", "note": "6/6 sampled DOIs resolve; first author on 4; Zenodo 36 exact-name / 82 ORCID match at the time; superseded for current count surfaces by 2026-06-04 targeted API refresh"},
         {"claim": "curio-cards-artist", "verdict": "high", "independent_source": "https://docs.curio.cards/the-artists/daniel-friedman", "note": "biographical-fingerprint confirmation; Christie's sale Oct 1 2021 393 ETH/~$1.2M/7 artists independently corroborated"},
         {"claim": "christies-lot-number-6337619", "verdict": "first-party-only", "independent_source": "https://www.christies.com/en/lot/lot-6337619", "note": "URL resolves HTTP 200, Christie's page matches exact set; lot NUMBER uncorroborated by any source independent of Christie's"},
         {"claim": "identity-graph", "verdict": "high", "independent_source": "https://orcid.org/0000-0001-6232-9096", "note": "21 nodes -> one entity; professional-only exposure; no PII leak; secondary Scholar ID Y2bMf3MAAAAJ to disambiguate"},
-        {"claim": "github-footprint", "verdict": "high", "independent_source": "https://api.github.com/users/docxology", "note": "docxology 286 public repos; AII 50; ActiveInferenceInstitute is a User account not an Organization"},
+        {"claim": "github-footprint", "verdict": "high", "independent_source": "https://api.github.com/users/docxology", "note": "docxology 286 public repos; AII 50 at the time; superseded for current count surfaces by 2026-06-04 targeted API refresh; ActiveInferenceInstitute is a User account not an Organization"},
         {"claim": "cr-spring-2026-teaching", "verdict": "principal-confirmed", "independent_source": null, "note": "BIOL-1 Pelican Bay + BIOL-8; confirmed by principal as instructor of record; future-term WebAdvisor schedule may be unpublished; retained verbatim"}
       ],
       "softened": [

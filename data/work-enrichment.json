@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-01T02:01:54Z",
+  "generated_at": "2026-06-04T21:05:48Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 150,
+  "count": 154,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3513,6 +3513,94 @@
       ],
       "methods": [],
       "source": "papers/2026_MusicNeverStopped/README.md"
+    },
+    "Friedman2026DeterministicTestbedSelfOrganizing151": {
+      "citation_key": "Friedman2026DeterministicTestbedSelfOrganizing151",
+      "abstract": "Abstract Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim. We make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers an",
+      "keywords": [
+        "agent coordination",
+        "scientific discovery",
+        "noise-band confirmation",
+        "ablation study",
+        "reproducible research",
+        "language-model agents"
+      ],
+      "findings": [
+        "agent coordination",
+        "scientific discovery",
+        "noise-band confirmation",
+        "ablation study",
+        "reproducible research"
+      ],
+      "methods": [],
+      "source": "papers/2026_DeterministicTestbedSelf/README.md"
+    },
+    "Friedman2026RecoveringLLMPersonaAccuracies152": {
+      "citation_key": "Friedman2026RecoveringLLMPersonaAccuracies152",
+      "abstract": "<p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-l",
+      "keywords": [
+        "algebraic evaluation",
+        "NTQR",
+        "unsupervised evaluation",
+        "evaluation on unlabeled data",
+        "LLM-as-judge",
+        "error-independent evaluation",
+        "ensemble evaluability",
+        "constant classifier",
+        "AI safety warning light",
+        "reproducible research",
+        "answer-key-free recovery",
+        "local large language models"
+      ],
+      "findings": [
+        "algebraic evaluation",
+        "NTQR",
+        "unsupervised evaluation",
+        "evaluation on unlabeled data",
+        "LLM-as-judge"
+      ],
+      "methods": [],
+      "source": "papers/2026_RecoveringLLMPersona/README.md"
+    },
+    "Friedman2026TriplicateDataDrivenLarge153": {
+      "citation_key": "Friedman2026TriplicateDataDrivenLarge153",
+      "abstract": "Abstract We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879). The engine demonstrates designed multi-column page layout — nameplate and ears, spanning headlines, flowing column frames with an optional rail, drop caps, pull quotes, ruled modular boxes, data tables, halftone \"engraving\" figures and running folios — while keeping a strict separation between content (data) and engine (code): a new title is a data edit, never a code change. The layout strategy is a hybrid in which fixed furniture is drawn directly on the canvas to establish where the column grid begins, after which body copy flows through ReportLab frames that split paragraphs across columns automati",
+      "keywords": [
+        "newspaper layout",
+        "typography",
+        "reportlab",
+        "reproducible publishing",
+        "document engineering"
+      ],
+      "findings": [
+        "newspaper layout",
+        "typography",
+        "reportlab",
+        "reproducible publishing",
+        "document engineering"
+      ],
+      "methods": [],
+      "source": "papers/2026_Triplicate/README.md"
+    },
+    "Friedman2026TemplateTextbook154": {
+      "citation_key": "Friedman2026TemplateTextbook154",
+      "abstract": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.",
+      "keywords": [
+        "open textbook",
+        "modular manuscript",
+        "reproducible publishing",
+        "computational backbone",
+        "Python"
+      ],
+      "findings": [
+        "open textbook",
+        "modular manuscript",
+        "reproducible publishing",
+        "computational backbone",
+        "Python"
+      ],
+      "methods": [],
+      "source": "papers/2026_TemplateTextbook/README.md"
     }
   }
 }

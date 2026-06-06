@@ -29,6 +29,7 @@ def validate_json_files() -> None:
         "codemeta.json",
         "search-index.json",
         "data/catalog.json",
+        "data/current-counts.json",
         "data/generated-manifest.json",
         "data/github-repositories.json",
         "data/artworks.json",
@@ -38,6 +39,7 @@ def validate_json_files() -> None:
         "data/software.json",
         "data/people.json",
         "data/organizations.json",
+        "data/paired-publication-decisions.json",
         "data/claims.json",
         "data/resume.json",
         "data/reconciliation.json",
@@ -167,6 +169,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_exports_page.py", "--check"])
     run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
+    run(["python3", "code/orchestrators/build_current_counts.py", "--check"])
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
     run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])

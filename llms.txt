@@ -63,9 +63,9 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Security contact: https://danielarifriedman.com/.well-known/security.txt
 - Search index: https://danielarifriedman.com/search-index.json
 - RSS feed: https://danielarifriedman.com/feed.xml
-- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-05-28.json
-- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-05-28.json
-- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-05-28.md
+- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-06-04.json
+- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-06-04.json
+- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-06-04.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-13.json
 - External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-13.md
 - Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-05-13.json
@@ -96,12 +96,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 
 ## Current Snapshot
 
-- 150 works in the curated bibliography.
-- 143 per-paper folders.
-- 50 owned repositories catalogued.
-- 32 Active Inference Institute repositories catalogued with docxology contributions.
-- 299 public repositories on the primary GitHub profile at last API check.
-- 764 Google Scholar citations (h-index 15, i10-index 17; direct dual-fetch, as of 2026-05-16; source of truth: data/scholar-snapshot.json)
+Current volatile totals are generated in reports/current_counts.md and data/current-counts.json, with source paths, generation metadata, and rebuild commands. Scholar metrics are sourced from data/scholar-snapshot.json and should not be copied into this file as current prose.
 
 ## Citation
 

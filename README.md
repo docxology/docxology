@@ -14,7 +14,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 *Available for consulting, tutoring, and research collaboration*
 
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.org/)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-764_citations-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-current_snapshot-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
@@ -38,7 +38,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 - 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](pages/COLLABORATORS.md#deborah-gordon--stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Research Fellow (PRFB [award DBI-2010290](https://grantome.com/grant/NSF/DBI-2010290)) at UC Davis, 2020–2023 (NSF budget period 2020–2022, extended to 2023)
 - 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.org/)** (501(c)(3) non-profit; governance pages at [activeinference.institute](https://www.activeinference.institute/)); co-author with [Karl Friston](pages/COLLABORATORS.md#karl-friston--ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
-- 🛡️ **Cognitive Security Researcher** — 3 books + 18 papers on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
+- 🛡️ **Cognitive Security Researcher** — bibliography-indexed work on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
 - 🎨 **Early NFT Artist** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (recognized in NFT archaeology as early Ethereum art NFTs, minted May 9, 2017; [Christie's auction Oct 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://danielarifriedman.com/art.html) · [Local Gallery](art/README.md)
 - 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, [AII Textbook Group](https://activeinference.org/) (10 cohorts through 2026; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), College of the Redwoods ([BIOL-1](https://github.com/docxology/biol-1) at Pelican Bay, [BIOL-8](https://github.com/docxology/biol-8) Human Biology; Spring 2026), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops, and private tutoring
 - 🌐 **Community Builder** — Co-founder of [Complexity Weekend](https://www.complexityadventures.com/) (since 2019); co-organized Stanford Complexity Group
@@ -54,25 +54,23 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 💬 **Speaking & Workshops** | Conference keynotes · Team workshops on AI/ML · Course development · Institutional training | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 | 🤝 **Research Collaboration** | Joint publications · Framework co-development · Grant partnerships · Open-source contributions | [📧 Email](mailto:Daniel@ActiveInference.Institute) |
 
-> **150 works** in the unified bibliography · **300** public GitHub repositories on the primary profile · **82** catalogued software repos (50 owned + 32 AII) · **764** Google Scholar citations (h-index: 15, as of 2026-05-16) · **700+ livestreams** · **Stanford PhD** · Co-authored with Karl Friston, Deborah Gordon, and 50+ collaborators
+> **Current generated totals**: see [`reports/current_counts.md`](reports/current_counts.md) for bibliography, paper-folder, software, GitHub inventory, public-source snapshot, and paired-publication counts with generation metadata and rebuild commands. Scholar metrics are sourced from [`data/scholar-snapshot.json`](data/scholar-snapshot.json) and propagated into the resume and claim exports.
 
 ---
 
 ## 📁 Repository Map
 
-> **Full catalog**: 125 works spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026) · 50 owned repos · 32 AII contributions
-
-> **Counts cross-check:** numeric totals repeated in this file should match [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) (works table) and [`papers/README.md`](papers/README.md) (indexed paper folders) before publish.
+> **Current catalog totals** are generated in [`reports/current_counts.md`](reports/current_counts.md). Canonical source tables are [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), [`pages/SOFTWARE.md`](pages/SOFTWARE.md), [`papers/README.md`](papers/README.md), and [`data/github-repositories.json`](data/github-repositories.json).
 
 | Resource | What's Inside |
 |----------|---------------|
-| 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography (125 total; paper-folder deep-links where applicable) — DOI links, domain tags, and per-paper docs |
+| 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography — DOI links, domain tags, and per-paper docs |
 | 📄 [**works/**](works/) | **Generated per-work landing pages** — one canonical HTML page per bibliography row with citation, DOI, primary source, and documentation link |
 | 🔎 [**search.html**](search.html) / [**opensearch.xml**](opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
 | 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
 | 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
-| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | **50 owned repos** + **32 Active Inference Institute contributions** — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [full generated repository inventory](repositories.html) for public GitHub coverage |
-| 📁 [**papers/**](papers/) | **118 per-paper folders** (2015–2026) — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md |
+| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [full generated repository inventory](repositories.html) for public GitHub coverage |
+| 📁 [**papers/**](papers/) | Per-paper folders — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md where a bibliography row has in-tree documentation |
 | 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
 | 🧭 [**pages/DISCOVERY.md**](pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |
@@ -94,12 +92,12 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Domain | Publications | Highlights | Software |
 |--------|:-----------:|------------|----------|
-| 🐜 Entomology | [21 works](pages/BIBLIOGRAPHY.md#-entomology) | [EntoLinguistics](papers/2026_EntoLinguistics/) · [ActiveInferants](papers/2021_ActiveInferants/) · [AntStack](papers/2025_AntStack/) · [PhD](papers/2019_PhDDissertation/) | [ento_linguistics](https://github.com/docxology/ento_linguistics) · [MetaInformAnt](https://github.com/docxology/MetaInformAnt) · [ant_stack](https://github.com/docxology/ant_stack) |
-| 🧠 Active Inference | [23 works](pages/BIBLIOGRAPHY.md#-active-inference) | [FEPLean](papers/2026_FEPLean/) · [CognitiveCaseDiagrams](papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/2025_CEREBRUM/) | [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
-| 🛡️ Cognitive Security | [21 works](pages/BIBLIOGRAPHY.md#️-cognitive-security) | [CognitiveIntegrity](papers/2026_CognitiveIntegrity/) · [InformationCommons](papers/2022_InformationCommons/) · [P3IF](papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
-| 🎨 Art & Synergetics | [15 works](pages/BIBLIOGRAPHY.md#-art--synergetics) | [BlakeJiang](papers/2026_BlakeJiang/) · [DoorsOfPerception](papers/2026_DoorsOfPerception/) · [BlakeFuller](papers/2023_BlakeFuller/) · [QuadMath](papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
-| 💻 Computational | [8 papers](pages/BIBLIOGRAPHY.md#-computational) | [DiscoveryEngine](papers/2025_DiscoveryEngine/) · [MDKV](papers/2025_MDKV/) · [MarkdownDecisionProcess](papers/2025_MarkdownDecisionProcess/) · [ReproducibleResearch](papers/2026_ReproducibleResearch/) · [BiologyTextbook](papers/2026_BiologyTextbook/) | [template](https://github.com/docxology/template) · [biology_textbook](https://github.com/docxology/biology_textbook) · [steganographer](https://github.com/docxology/steganographer) |
-| 🧬 Genetics & Biomedical | [9 papers](pages/BIBLIOGRAPHY.md#-genetics--biomedical) | [HoneyBeeEvolution](papers/2015_HoneyBeeEvolution/) · [NuclearStructure](papers/2016_NuclearStructure/) · [DennettExplained](papers/2019_DennettExplained/) | [FORMINDEX](https://github.com/docxology/FORMINDEX) |
+| 🐜 Entomology | [works](pages/BIBLIOGRAPHY.md#-entomology) | [EntoLinguistics](papers/2026_EntoLinguistics/) · [ActiveInferants](papers/2021_ActiveInferants/) · [AntStack](papers/2025_AntStack/) · [PhD](papers/2019_PhDDissertation/) | [ento_linguistics](https://github.com/docxology/ento_linguistics) · [MetaInformAnt](https://github.com/docxology/MetaInformAnt) · [ant_stack](https://github.com/docxology/ant_stack) |
+| 🧠 Active Inference | [works](pages/BIBLIOGRAPHY.md#-active-inference) | [FEPLean](papers/2026_FEPLean/) · [CognitiveCaseDiagrams](papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/2025_CEREBRUM/) | [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
+| 🛡️ Cognitive Security | [works](pages/BIBLIOGRAPHY.md#️-cognitive-security) | [CognitiveIntegrity](papers/2026_CognitiveIntegrity/) · [InformationCommons](papers/2022_InformationCommons/) · [P3IF](papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
+| 🎨 Art & Synergetics | [works](pages/BIBLIOGRAPHY.md#-art--synergetics) | [BlakeJiang](papers/2026_BlakeJiang/) · [DoorsOfPerception](papers/2026_DoorsOfPerception/) · [BlakeFuller](papers/2023_BlakeFuller/) · [QuadMath](papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
+| 💻 Computational | [works](pages/BIBLIOGRAPHY.md#-computational) | [DeterministicTestbedSelf](papers/2026_DeterministicTestbedSelf/) · [RecoveringLLMPersona](papers/2026_RecoveringLLMPersona/) · [Triplicate](papers/2026_Triplicate/) · [TemplateTextbook](papers/2026_TemplateTextbook/) · [BiologyTextbook](papers/2026_BiologyTextbook/) | [template](https://github.com/docxology/template) · [template_autoscientists](https://github.com/docxology/template_autoscientists) · [ntqr_llm](https://github.com/docxology/ntqr_llm) |
+| 🧬 Genetics & Biomedical | [works](pages/BIBLIOGRAPHY.md#-genetics--biomedical) | [HoneyBeeEvolution](papers/2015_HoneyBeeEvolution/) · [NuclearStructure](papers/2016_NuclearStructure/) · [DennettExplained](papers/2019_DennettExplained/) | [FORMINDEX](https://github.com/docxology/FORMINDEX) |
 
 ---
 
@@ -107,7 +105,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🐜 Entomology & Social Insect Biology
 
-> **21 works** in the entomology domain (peer-reviewed and Zenodo) — ant genetics, behavior, collective intelligence, and scientific language — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-entomology)
+> Entomology domain works include peer-reviewed and Zenodo records on ant genetics, behavior, collective intelligence, and scientific language. Current domain totals live in [`reports/current_counts.md`](reports/current_counts.md); [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-entomology)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -130,7 +128,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🧠 Active Inference & Free Energy Principle
 
-> **23 works** on theoretical, computational, and applied Active Inference — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-active-inference)
+> Theoretical, computational, and applied Active Inference works. Current domain totals live in [`reports/current_counts.md`](reports/current_counts.md); [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-active-inference)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -152,7 +150,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🛡️ Cognitive Security & Information Ecosystems
 
-> **3 books + 18 papers** on narrative security, memes, trust, and policy — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#️-cognitive-security)
+> Narrative security, memes, trust, and policy works. Current domain and type totals live in [`reports/current_counts.md`](reports/current_counts.md); [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#️-cognitive-security)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -182,7 +180,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🎨 Art, Philosophy & Synergetics
 
-> **15 works** on William Blake, Buckminster Fuller, visual art, and interdisciplinary philosophy — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-art--synergetics)
+> Works on William Blake, Buckminster Fuller, visual art, and interdisciplinary philosophy. Current domain totals live in [`reports/current_counts.md`](reports/current_counts.md); [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-art--synergetics)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -204,7 +202,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 💻 Computational Frameworks & Software
 
-> **8 papers + 50 owned + 32 AII repositories** — [Papers in Bibliography →](pages/BIBLIOGRAPHY.md#-computational) · [Curated repos →](pages/SOFTWARE.md) · [Full inventory →](repositories.html)
+> Computational works and software catalogs. Current bibliography, curated-software, and GitHub-inventory totals live in [`reports/current_counts.md`](reports/current_counts.md); [Works in Bibliography →](pages/BIBLIOGRAPHY.md#-computational) · [Curated repos →](pages/SOFTWARE.md) · [Full inventory →](repositories.html)
 
 <details>
 <summary><b>Key publications & repositories (click to expand)</b></summary>
@@ -216,6 +214,10 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes | *ArXiv* | [10.48550/arXiv.2505.17500](https://doi.org/10.48550/arXiv.2505.17500) |
 | 2025 | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | *Zenodo* | [10.5281/zenodo.16790554](https://doi.org/10.5281/zenodo.16790554) |
 | 2025 | Markdown Decision Process: A Framework for Probabilistic Document Analysis | *Zenodo* | [10.5281/zenodo.17244386](https://doi.org/10.5281/zenodo.17244386) |
+| 2026 | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533670](https://doi.org/10.5281/zenodo.20533670) |
+| 2026 | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) |
+| 2026 | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676) |
+| 2026 | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126) |
 
 #### 🔧 Highlighted Repositories
 
@@ -223,12 +225,15 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 |-----------|-------------|
 | [codomyrmex](https://github.com/docxology/codomyrmex) | 🐜 AI-native modular coding workspace — 128 modules, 600 MCP tools |
 | [template](https://github.com/docxology/template) | Multi-project research template with 10-stage build pipeline |
+| [template_autoscientists](https://github.com/docxology/template_autoscientists) | Deterministic multi-agent scientific-discovery coordination harness |
+| [template_newspaper](https://github.com/docxology/template_newspaper) | Data-driven large-format newspaper layout engine |
+| [ntqr_llm](https://github.com/docxology/ntqr_llm) | Algebraic NTQR evaluation for LLM-persona accuracy recovery |
 | [steganographer](https://github.com/docxology/steganographer) | High-performance Rust cryptographic watermarking |
 | [QuadCraft](https://github.com/docxology/QuadCraft) | MineCraft with Tetrahedra (Quadray coordinates) |
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Integration for Ants and Beyond |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
-> **Full list of 49 personal repos + 32 Active Inference Institute contributions**: [pages/SOFTWARE.md →](pages/SOFTWARE.md). For all public GitHub repositories including forks and uncataloged projects, see [repositories.html →](repositories.html).
+> **Full curated software list**: [pages/SOFTWARE.md →](pages/SOFTWARE.md). For all public GitHub repositories including forks and uncataloged projects, see [repositories.html →](repositories.html). Current totals live in [`reports/current_counts.md`](reports/current_counts.md).
 
 </details>
 
@@ -236,7 +241,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🌍 Active Inference Institute & Ecosystem
 
-> **5 works** on institute snapshots, ecosystem maps, and organizational design — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-aii-ecosystem)
+> Institute snapshots, ecosystem maps, and organizational design works. Current domain totals live in [`reports/current_counts.md`](reports/current_counts.md); [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-aii-ecosystem)
 
 <details>
 <summary><b>Institute ecosystem publications (click to expand)</b></summary>
@@ -283,7 +288,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🧬 Genetics & Biomedical Research
 
-> **9 works** on genetics, radiation biology, and biomedical research — [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-genetics--biomedical)
+> Genetics, radiation biology, and biomedical research works. Current domain totals live in [`reports/current_counts.md`](reports/current_counts.md); [Full list in Bibliography →](pages/BIBLIOGRAPHY.md#-genetics--biomedical)
 
 <details>
 <summary><b>Earlier work in genetics, radiation biology, and biomedical research (click to expand)</b></summary>

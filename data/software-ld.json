@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Software — Daniel Ari Friedman, PhD",
-    "description": "50 original repositories and 32 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
+    "description": "56 original repositories and 32 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -12,13 +12,14 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "template",
-            "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
+            "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software",
             "codeRepository": "https://github.com/docxology/template",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "Python"
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20469500"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -231,6 +232,42 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "template_autoscientists",
+            "description": "AutoScientists deterministic multi-agent scientific-discovery coordination harness ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/template_autoscientists",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20533670"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_newspaper",
+            "description": "The Triplicate data-driven large-format newspaper layout engine ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/template_newspaper",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20533676"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ntqr_llm",
+            "description": "Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/ntqr_llm",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20498700"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "ultralink-docx",
             "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
             "codeRepository": "https://github.com/docxology/ultralink-docx",
@@ -283,6 +320,18 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "cohereants",
+            "description": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/cohereants",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20450970"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -451,6 +500,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "grateful_data",
+            "description": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/grateful_data",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20482026"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "infra-calc",
             "description": "Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems",
             "codeRepository": "https://github.com/docxology/infra-calc",
@@ -525,6 +586,18 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Rust"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_textbook",
+            "description": "Modular fillable scaffold for book-length technical works ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/template_textbook",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML",
+            "sameAs": "https://doi.org/10.5281/zenodo.20533126"
         },
         {
             "@type": "SoftwareSourceCode",

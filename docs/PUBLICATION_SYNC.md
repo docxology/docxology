@@ -90,6 +90,8 @@ Apply mode also runs the publication regeneration chain for bibliography exports
 
 For `needs_review` actions, inspect the GitHub release, Zenodo record, DOI, title, creator list, repository URL, and PDF before deciding.
 
+Record manual decisions in [`data/paired-publication-decisions.json`](../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../reports/). An `accept` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata or an already represented work.
+
 If the item is a real publication but cannot be safely auto-applied:
 
 1. Add or update the row in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md).

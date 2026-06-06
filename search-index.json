@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T02:04:03Z",
+  "generated_at": "2026-06-04T22:33:24Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 640,
+  "count": 656,
   "items": [
     {
       "id": "page:home",
@@ -251,7 +251,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-05-30.md",
+      "url": "/reports/reconciliation_2026-06-04.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -263,7 +263,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-05-30.json",
+      "url": "/reports/public_source_inventory_2026-06-04.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-01.json",
+      "url": "/reports/asset_size_2026-06-04.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -3716,18 +3716,106 @@
       "content": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation Zenodo 10.5281/zenodo.20482026 Friedman2026MusicNeverStoppedGrateful150 Computational Paper <p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium in grateful dead setlist data category theory music information retrieval reproducible data compendium grateful dead setlist data category theory music information retrieval reproducible data compendium"
     },
     {
+      "id": "work:Friedman2026DeterministicTestbedSelfOrganizing151",
+      "type": "work",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "url": "/works/Friedman2026DeterministicTestbedSelfOrganizing151.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20533670",
+      "summary": "Abstract Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end direc",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "agent coordination",
+        "scientific discovery",
+        "noise-band confirmation",
+        "ablation study",
+        "reproducible research",
+        "language-model agents"
+      ],
+      "content": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination Zenodo 10.5281/zenodo.20533670 Friedman2026DeterministicTestbedSelfOrganizing151 Computational Paper Abstract Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim. We make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers an agent coordination scientific discovery noise-band confirmation ablation study reproducible research language-model agents agent coordination scientific discovery noise-band confirmation ablation study reproducible research"
+    },
+    {
+      "id": "work:Friedman2026RecoveringLLMPersonaAccuracies152",
+      "type": "work",
+      "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+      "url": "/works/Friedman2026RecoveringLLMPersonaAccuracies152.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20498700",
+      "summary": "<p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"person",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "algebraic evaluation",
+        "NTQR",
+        "unsupervised evaluation",
+        "evaluation on unlabeled data",
+        "LLM-as-judge",
+        "error-independent evaluation",
+        "ensemble evaluability",
+        "constant classifier"
+      ],
+      "content": "Recovering LLM-Persona Accuracies from Unlabeled Votes Zenodo 10.5281/zenodo.20498700 Friedman2026RecoveringLLMPersonaAccuracies152 Computational Paper <p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-l algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge error-independent evaluation ensemble evaluability constant classifier AI safety warning light reproducible research answer-key-free recovery local large language models algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge"
+    },
+    {
+      "id": "work:Friedman2026TriplicateDataDrivenLarge153",
+      "type": "work",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "url": "/works/Friedman2026TriplicateDataDrivenLarge153.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20533676",
+      "summary": "Abstract We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "newspaper layout",
+        "typography",
+        "reportlab",
+        "reproducible publishing",
+        "document engineering"
+      ],
+      "content": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine Zenodo 10.5281/zenodo.20533676 Friedman2026TriplicateDataDrivenLarge153 Computational Paper Abstract We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879). The engine demonstrates designed multi-column page layout — nameplate and ears, spanning headlines, flowing column frames with an optional rail, drop caps, pull quotes, ruled modular boxes, data tables, halftone \"engraving\" figures and running folios — while keeping a strict separation between content (data) and engine (code): a new title is a data edit, never a code change. The layout strategy is a hybrid in which fixed furniture is drawn directly on the canvas to establish where the column grid begins, after which body copy flows through ReportLab frames that split paragraphs across columns automati newspaper layout typography reportlab reproducible publishing document engineering newspaper layout typography reportlab reproducible publishing document engineering"
+    },
+    {
+      "id": "work:Friedman2026TemplateTextbook154",
+      "type": "work",
+      "title": "The Template Textbook",
+      "url": "/works/Friedman2026TemplateTextbook154.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20533126",
+      "summary": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Book",
+        "Computational",
+        "bibliography",
+        "open textbook",
+        "modular manuscript",
+        "reproducible publishing",
+        "computational backbone",
+        "Python"
+      ],
+      "content": "The Template Textbook Zenodo 10.5281/zenodo.20533126 Friedman2026TemplateTextbook154 Computational Book A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. open textbook modular manuscript reproducible publishing computational backbone Python open textbook modular manuscript reproducible publishing computational backbone Python"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
       "url": "https://github.com/docxology/template",
-      "summary": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
+      "summary": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning Python docxology"
+      "content": "template Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software Python docxology"
     },
     {
       "id": "software:docxology:QuadCraft",
@@ -3996,6 +4084,48 @@
       "content": "qr_live_protocol QR code-based live protocol system for real-time data exchange and interactive session management Python docxology"
     },
     {
+      "id": "software:docxology:template_autoscientists",
+      "type": "software",
+      "title": "template_autoscientists",
+      "url": "https://github.com/docxology/template_autoscientists",
+      "summary": "AutoScientists deterministic multi-agent scientific-discovery coordination harness ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_autoscientists AutoScientists deterministic multi-agent scientific-discovery coordination harness ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:template_newspaper",
+      "type": "software",
+      "title": "template_newspaper",
+      "url": "https://github.com/docxology/template_newspaper",
+      "summary": "The Triplicate data-driven large-format newspaper layout engine ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_newspaper The Triplicate data-driven large-format newspaper layout engine ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:ntqr_llm",
+      "type": "software",
+      "title": "ntqr_llm",
+      "url": "https://github.com/docxology/ntqr_llm",
+      "summary": "Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "ntqr_llm Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes ·  · Zenodo Python docxology"
+    },
+    {
       "id": "software:docxology:ultralink-docx",
       "type": "software",
       "title": "ultralink-docx",
@@ -4064,6 +4194,20 @@
         "docxology"
       ],
       "content": "ant_stack The Ant Stack — layered computational model of collective ant-colony intelligence Python docxology"
+    },
+    {
+      "id": "software:docxology:cohereants",
+      "type": "software",
+      "title": "cohereants",
+      "url": "https://github.com/docxology/cohereants",
+      "summary": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "cohereants Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:ento_linguistics",
@@ -4276,6 +4420,20 @@
       "content": "hhs-opendata Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines Python docxology"
     },
     {
+      "id": "software:docxology:grateful_data",
+      "type": "software",
+      "title": "grateful_data",
+      "url": "https://github.com/docxology/grateful_data",
+      "summary": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "grateful_data The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo Python docxology"
+    },
+    {
       "id": "software:docxology:infra-calc",
       "type": "software",
       "title": "infra-calc",
@@ -4372,6 +4530,20 @@
         "docxology"
       ],
       "content": "steganographer High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration Rust docxology"
+    },
+    {
+      "id": "software:docxology:template_textbook",
+      "type": "software",
+      "title": "template_textbook",
+      "url": "https://github.com/docxology/template_textbook",
+      "summary": "Modular fillable scaffold for book-length technical works ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "HTML",
+        "docxology"
+      ],
+      "content": "template_textbook Modular fillable scaffold for book-length technical works ·  · Zenodo HTML docxology"
     },
     {
       "id": "software:docxology:blake_jiang",
@@ -5493,9 +5665,10 @@
         "repository",
         "Jupyter Notebook",
         "ActiveInferenceInstitute",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "ActiveInferenceInstitute/Knowledge-Engineering  Jupyter Notebook ActiveInferenceInstitute  curated"
+      "content": "ActiveInferenceInstitute/Knowledge-Engineering  Jupyter Notebook ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/metta",
@@ -5977,10 +6150,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/AGI_fork   docxology  fork recent"
+      "content": "docxology/AGI_fork   docxology  fork"
     },
     {
       "id": "github-repo:docxology/AI-ConductorBlindSpot",
@@ -6742,10 +6914,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/cognitive-engine  Python docxology  curated recent"
+      "content": "docxology/cognitive-engine  Python docxology  curated"
     },
     {
       "id": "github-repo:docxology/cognitive_case_diagrams",
@@ -6763,6 +6934,23 @@
         "recent"
       ],
       "content": "docxology/cognitive_case_diagrams  TeX docxology  curated recent"
+    },
+    {
+      "id": "github-repo:docxology/cohereants",
+      "type": "github_repository",
+      "title": "docxology/cohereants",
+      "url": "https://github.com/docxology/cohereants",
+      "summary": "When do bugs see (infra)red? Computational research on insect IR sensing and olfaction modeling — engineering bounds and protocol design.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/cohereants When do bugs see (infra)red? Computational research on insect IR sensing and olfaction modeling — engineering bounds and protocol design. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/constructor-theory-simulator",
@@ -7835,6 +8023,23 @@
       "content": "docxology/GradientFreeVI   docxology  fork"
     },
     {
+      "id": "github-repo:docxology/grateful_data",
+      "type": "github_repository",
+      "title": "docxology/grateful_data",
+      "url": "https://github.com/docxology/grateful_data",
+      "summary": "The Music Never Stopped — a citation-bound Grateful Dead data compendium (shows, songs, performances, venues, personnel, recordings, reception) with a category-theoretic interpretation.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/grateful_data The Music Never Stopped — a citation-bound Grateful Dead data compendium (shows, songs, performances, venues, personnel, recordings, reception) with a category-theoretic interpretation. Python docxology  curated recent"
+    },
+    {
       "id": "github-repo:docxology/GrowthModel",
       "type": "github_repository",
       "title": "docxology/GrowthModel",
@@ -8782,6 +8987,23 @@
         "fork"
       ],
       "content": "docxology/non-typical-OSINT-guide The most unusual OSINT guide you've ever seen. The repository is intended for bored professionals only. PRs are welcome!   docxology  fork"
+    },
+    {
+      "id": "github-repo:docxology/ntqr_llm",
+      "type": "github_repository",
+      "title": "docxology/ntqr_llm",
+      "url": "https://github.com/docxology/ntqr_llm",
+      "summary": "Algebraic NTQR evaluation study of LLM-persona ensembles on unlabeled votes",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/ntqr_llm Algebraic NTQR evaluation study of LLM-persona ensembles on unlabeled votes Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/nvmath-python",
@@ -10063,7 +10285,7 @@
       "type": "github_repository",
       "title": "docxology/template",
       "url": "https://github.com/docxology/template",
-      "summary": "docxology repository",
+      "summary": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance (SHA-256 + steganographic PDF watermarking), multi-project workspace, AI-agent-ready with AGENTS.md / SKILL.md throughout.",
       "domain": "docxology",
       "tags": [
         "github",
@@ -10073,7 +10295,7 @@
         "curated",
         "recent"
       ],
-      "content": "docxology/template  Python docxology  curated recent"
+      "content": "docxology/template Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance (SHA-256 + steganographic PDF watermarking), multi-project workspace, AI-agent-ready with AGENTS.md / SKILL.md throughout. Python docxology agents-md ai-agents claude-code computational-research cursor latex multi-project ollama pandoc provenance pytest python reproducible-research research-template scientific-computing steganography uv zenodo curated recent"
     },
     {
       "id": "github-repo:docxology/template-release-smoke",
@@ -10124,6 +10346,23 @@
       "content": "docxology/template_autoresearch_project Template autoresearch project exemplar releases  docxology  recent"
     },
     {
+      "id": "github-repo:docxology/template_autoscientists",
+      "type": "github_repository",
+      "title": "docxology/template_autoscientists",
+      "url": "https://github.com/docxology/template_autoscientists",
+      "summary": "AutoScientists: a deterministic multi-agent scientific-discovery coordination harness — public exemplar of the docxology/template reproducible-research paradigm (≥90% test coverage, no mocks, double-published GitHub + Zenodo 10.5281/zenodo.20533669).",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/template_autoscientists AutoScientists: a deterministic multi-agent scientific-discovery coordination harness — public exemplar of the docxology/template reproducible-research paradigm (≥90% test coverage, no mocks, double-published GitHub + Zenodo 10.5281/zenodo.20533669). Python docxology  curated recent"
+    },
+    {
       "id": "github-repo:docxology/template_bioinformatics_project",
       "type": "github_repository",
       "title": "docxology/template_bioinformatics_project",
@@ -10156,6 +10395,23 @@
       "content": "docxology/template_code_project Template code project exemplar releases  docxology  recent"
     },
     {
+      "id": "github-repo:docxology/template_newspaper",
+      "type": "github_repository",
+      "title": "docxology/template_newspaper",
+      "url": "https://github.com/docxology/template_newspaper",
+      "summary": "The Triplicate: a data-driven large-format newspaper layout engine — public exemplar of the docxology/template reproducible-research paradigm (≥90% test coverage, no mocks, double-published GitHub + Zenodo 10.5281/zenodo.20533675).",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/template_newspaper The Triplicate: a data-driven large-format newspaper layout engine — public exemplar of the docxology/template reproducible-research paradigm (≥90% test coverage, no mocks, double-published GitHub + Zenodo 10.5281/zenodo.20533675). Python docxology  curated recent"
+    },
+    {
       "id": "github-repo:docxology/template_prose_project",
       "type": "github_repository",
       "title": "docxology/template_prose_project",
@@ -10186,6 +10442,23 @@
         "recent"
       ],
       "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo  docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_textbook",
+      "type": "github_repository",
+      "title": "docxology/template_textbook",
+      "url": "https://github.com/docxology/template_textbook",
+      "summary": "The Template Textbook — a modular, fillable scaffold for book-length technical works (data-driven manuscript, tested computational backbone, deterministic figures + Mermaid diagrams, multi-format render).",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "HTML",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/template_textbook The Template Textbook — a modular, fillable scaffold for book-length technical works (data-driven manuscript, tested computational backbone, deterministic figures + Mermaid diagrams, multi-format render). HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/test_public",
@@ -10634,7 +10907,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 150 works.",
+      "title": "The curated bibliography contains 154 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10642,12 +10915,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 150 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 154 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 143 per-paper documentation folders.",
+      "title": "The repository contains 147 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10655,12 +10928,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 143 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 147 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 300 public repositories.",
+      "title": "The docxology GitHub profile has 305 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -10668,7 +10941,7 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 300 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 305 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
@@ -10831,7 +11104,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 150 works, 82 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 154 works, 88 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T02:05:17Z",
+  "generated_at": "2026-06-04T22:33:06Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -18,10 +18,8 @@
     {
       "name": "Scholar metrics sync",
       "outputs": [
-        "README.md (badge + blockquote)",
         "pages/BIBLIOGRAPHY.md (badge)",
         "index.html (meta/og/stat/li)",
-        "llms.txt",
         "pages/PROFILE.md (prose + metrics table)",
         "pages/LINKS.md",
         "publications.html (header metrics pill)"
@@ -31,6 +29,24 @@
         "code/orchestrators/sync_scholar_metrics.py"
       ],
       "command": "python3 code/orchestrators/sync_scholar_metrics.py"
+    },
+    {
+      "name": "Current count report",
+      "outputs": [
+        "reports/current_counts.md",
+        "data/current-counts.json"
+      ],
+      "sources": [
+        "pages/BIBLIOGRAPHY.md",
+        "papers/README.md",
+        "pages/SOFTWARE.md",
+        "data/works.json",
+        "data/software.json",
+        "data/github-repositories.json",
+        "reports/public_source_snapshot_*.json",
+        "reports/paired_publications_*.json"
+      ],
+      "command": "uv run python3 code/orchestrators/build_current_counts.py"
     },
     {
       "name": "Agent data exports",
@@ -99,7 +115,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-06-01.json"
+        "reports/paired_publications_2026-06-04.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -109,6 +125,18 @@
         "code/orchestrators/sync_paired_publications.py"
       ],
       "command": "python3 code/orchestrators/sync_paired_publications.py"
+    },
+    {
+      "name": "Paired publication review decisions",
+      "outputs": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_review_queue_2026-06-04.md"
+      ],
+      "sources": [
+        "reports/paired_publications_2026-06-04.json",
+        "manual review decision"
+      ],
+      "command": "manual review; update data/paired-publication-decisions.json"
     },
     {
       "name": "Domain pages",
@@ -220,7 +248,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-05-30.json"
+        "reports/public_source_snapshot_2026-06-04.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -230,7 +258,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-05-30.json"
+        "reports/public_source_inventory_2026-06-04.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -251,7 +279,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-01.json"
+        "reports/asset_size_2026-06-04.json"
       ],
       "sources": [
         "root HTML pages",

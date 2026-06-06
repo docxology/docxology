@@ -11,14 +11,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-06-01",
+  "dateModified": "2026-06-04",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "149 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "154 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -64,7 +64,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "82 catalogued software repositories across docxology and AII contributions.",
+      "description": "88 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -246,6 +246,29 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#current-counts",
+      "name": "Current Counts Snapshot",
+      "description": "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands.",
+      "url": "https://danielarifriedman.com/data/current-counts.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/current-counts.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#work-enrichment",
       "name": "Work Enrichment",
       "description": "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files.",
@@ -318,7 +341,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-30.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-06-04.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -332,7 +355,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-05-30.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-06-04.json",
         "encodingFormat": "application/json"
       }
     },
@@ -341,7 +364,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-30.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-06-04.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -355,7 +378,30 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-05-30.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-06-04.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#paired-publication-decisions",
+      "name": "Paired Publication Decisions",
+      "description": "Manual review decisions for ambiguous GitHub release + Zenodo record pair candidates.",
+      "url": "https://danielarifriedman.com/data/paired-publication-decisions.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/paired-publication-decisions.json",
         "encodingFormat": "application/json"
       }
     },
@@ -410,7 +456,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-01.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-04.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -424,7 +470,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-01.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-04.json",
         "encodingFormat": "application/json"
       }
     },

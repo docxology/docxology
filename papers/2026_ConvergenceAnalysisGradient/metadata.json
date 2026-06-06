@@ -55,5 +55,259 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-01T02:01:49Z"
+  "checked_at": "2026-06-04T20:45:04Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template_code_project",
+      "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.0.0",
+      "release_tag": "v2.0.0",
+      "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.0.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template_code_project",
+      "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.1.0",
+      "release_tag": "v2.1.0",
+      "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.1.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template_code_project",
+      "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.2.0",
+      "release_tag": "v2.2.0",
+      "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.2.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template_code_project",
+      "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.3.0",
+      "release_tag": "v2.3.0",
+      "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.3.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20420368",
+      "record_title": "Convergence Analysis of Gradient Descent Optimization",
+      "zenodo_record_url": "https://zenodo.org/records/20420368",
+      "github_repo": "docxology/template_code_project",
+      "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.4.0",
+      "release_tag": "v2.4.0",
+      "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.4.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  }
 }

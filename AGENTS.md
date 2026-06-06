@@ -1,7 +1,7 @@
 # AGENTS.md — docxology
 
 **Repository**: [docxology/docxology](https://github.com/docxology/docxology)
-**Purpose**: Master profile repository indexing the unified bibliography (125 works), 50 owned software repositories (+32 AII contributions), full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
+**Purpose**: Master profile repository indexing the unified bibliography, curated software catalog, full generated GitHub inventory, and research documentation across Entomology, Active Inference, Cognitive Security, and Art & Synergetics.
 
 ---
 
@@ -44,7 +44,7 @@
 - Uses [docs/PUBLICATION_SYNC.md](docs/PUBLICATION_SYNC.md) and [sync_paired_publications.py](code/orchestrators/sync_paired_publications.py) to check GitHub releases against Zenodo records, apply strong publication pairs, and leave ambiguous pairs for review
 - Runs [sync_software_html.py](papers/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
 - Runs [build_resume.py](code/orchestrators/build_resume.py) with `--all` after edits to [resume/source.json](resume/source.json), bibliography/software data, Scholar metrics, or claim data so [data/resume.json](data/resume.json), plaintext variants, and [resume/resume.pdf](resume/resume.pdf) stay aligned
-- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md) index and [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) header; **123** folders as of 2026-05-28)
+- Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md), [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), and the generated [`reports/current_counts.md`](reports/current_counts.md) snapshot)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
@@ -55,8 +55,8 @@
 ```text
 docxology/
 ├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
-├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography (125 works; DOI links and paper-folder deep-links)
-├── pages/SOFTWARE.md        ← 50 owned repos + 32 AII contributions
+├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography source table with DOI links and paper-folder deep-links
+├── pages/SOFTWARE.md        ← Curated owned-repo and AII-contribution software catalog
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
 ├── pages/LINKS.md           ← Comprehensive directory of all web presences and profiles
 ├── pages/DISCOVERY.md       ← Public-source discovery map for agents, APIs, and search indexes
@@ -100,7 +100,7 @@ docxology/
 │   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
 │   ├── src/           ← Source code and submodules
 │   └── tests/         ← Test suites and validation tests
-└── papers/            ← 118 per-paper folders (`YYYY_Topic`)
+└── papers/            ← Per-paper folders (`YYYY_Topic`) for bibliography rows with in-tree documentation
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
@@ -198,6 +198,7 @@ docxology/
 | 2026-05-29 | MAINTAINER | Added `submit_indexnow.py` orchestrator (bulk GSC-priority POST + per-URL pass); CI workflow delegates to it; tests in `test_submit_indexnow.py` | ✅ |
 | 2026-05-29 | MAINTAINER | SEO follow-up: `seo_invariants.py` + validate_repo enforcement; paper pages drop JSON-LD; publications.js links titles to works; IndexNow single bulk POST; dynamic exports.html works count | ✅ |
 | 2026-05-29 | INTEGRATOR | Added `docs/GSC_FOLLOWUP.md` manual Search Console runbook + `gsc_followup_preflight.py` + `data/gsc-followup-checklist.json` | ✅ |
+| 2026-06-04 | MAINTAINER | Applied four strong GitHub+Zenodo publication pairs (`template_autoscientists`, `ntqr_llm`, `template_newspaper`, `template_textbook`), refreshed represented DOI pairs, added six owned software rows, recorded GitHub API counts in generated reports, and expanded count drift validation across source/generated surfaces | ✅ |
 
 ---
 
@@ -208,7 +209,7 @@ docxology/
 - Prefer apex site URLs `https://danielarifriedman.com/` for HTML canonicals, `og:url`, and sitemap `loc` entries so they match `CNAME` and reduce www/apex mismatch issues in Search Console.
 - Omit redirect-only stub pages from `sitemap.xml` when their canonical is the homepage; keep the stub files for inbound links but avoid listing them so crawl signals are not contradictory.
 - Keep Wikidata anchored on `https://www.wikidata.org/wiki/Q138781444`: Person JSON-LD in `index.html` must list this URL first in `sameAs`, and body copy (`rel="me"`), `README.md` snippets, LINKS/WIKIPEDIA tables, and anywhere else must use **Q138781444** rather than merged duplicate **Q85887463**.
-- After Google Scholar metrics change, sync the citation count across README, `pages/BIBLIOGRAPHY.md`, `pages/LINKS.md`, `pages/PROFILE.md`, `pages/WIKIPEDIA.md`, and main HTML stats for consistency.
+- After Google Scholar metrics change, update `data/scholar-snapshot.json`, run `code/orchestrators/sync_scholar_metrics.py`, and regenerate claim/resume/public outputs; keep hand-authored docs pointed at the snapshot instead of repeating the current count.
 - Homepage teaching blurbs: BIOL-1 General Biology — College of the Redwoods, Pelican Bay, Spring 2026; BIOL-8 — Human Biology, College of the Redwoods, Spring 2026.
 - AII Textbook Group site copy: 10 cohorts through 2026; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
 - On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
@@ -218,9 +219,9 @@ docxology/
 ## Learned Workspace Facts
 
 - Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).
-- **Volatile totals** (works count, indexed paper-folder count, Type-column breakdowns): treat `pages/BIBLIOGRAPHY.md` (header, blockquote summary, and table) plus `papers/README.md` / `papers/AGENTS.md` as canonical before repeating numbers in root `README.md`, `docs/AGENTS.md`, or Maintainer bullets in root `AGENTS.md`; keep BIBLIOGRAPHY header and blockquote summary counts aligned—`code/src/count_consistency.py` (via `validate_repo.py`) flags drift against llms.txt, README, publications.html, and `data/works.json`.
+- **Volatile totals** (works count, indexed paper-folder count, Type-column breakdowns, domain breakdowns, software catalog counts, and public GitHub inventory counts): generated/plaintext summary lives in [`reports/current_counts.md`](reports/current_counts.md), backed by `data/current-counts.json`. Hand-authored docs should link there, to `pages/BIBLIOGRAPHY.md`, `papers/README.md`, `pages/SOFTWARE.md`, and `data/github-repositories.json`, instead of repeating current values. `code/src/count_consistency.py` and `code/orchestrators/build_current_counts.py --check` are run by `validate_repo.py`.
 - Regenerate `publications.html` head meta and `data/publications-ld.json` (**mainEntity**) from `pages/BIBLIOGRAPHY.md` via `papers/sync_publications_html.py --apply` after table edits; catalog UI loads `data/works.json` via `js/publications.js`. Run `export_bibliography.py` when works.json must refresh. The **INTEGRATOR** role in `papers/AGENTS.md` keeps publications surfaces aligned when totals change.
-- Regenerate `software.html` repo grids and `data/software-ld.json` (**mainEntity**) from `pages/SOFTWARE.md` via `papers/sync_software_html.py --apply` after catalog edits; run `export_agent_data.py` for `data/software.json`. Full-catalog sync (50 owned + 32 AII rows), not a highlight subset.
+- Regenerate `software.html` repo grids and `data/software-ld.json` (**mainEntity**) from `pages/SOFTWARE.md` via `papers/sync_software_html.py --apply` after catalog edits; run `export_agent_data.py` for `data/software.json`. Full-catalog sync, not a highlight subset.
 - `discovery.html` is the canonical website discovery HTML; pair with `pages/DISCOVERY.md`, `llms.txt`, and `exports.html` (citation/JSON export hub in sitemap and nav). Machine-readable citations/software: `CITATION.cff` and `codemeta.json`.
 - `code/src/sitemap_policy.py` defines ~157 index-priority URLs for `sitemap.xml` and IndexNow (promotion list, not crawl gate). `code/orchestrators/submit_indexnow.py` and `.github/workflows/indexnow-on-push.yml` handle IndexNow. `GENERATED.md` and `data/generated-manifest.json` from `build_generated_manifest.py` map generated outputs—refresh when pipelines change.
 - Google Search Console operations (sitemap resubmit, URL inspection) require a signed-in browser—no GSC API in the repo.

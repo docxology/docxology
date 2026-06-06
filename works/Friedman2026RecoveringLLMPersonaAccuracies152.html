@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovering LLM-Persona Accuracies from Unlabeled Votes — Daniel Ari Friedman</title>
+    <meta name="description" content="&lt;p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test th">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026RecoveringLLMPersonaAccuracies152.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <link rel="alternate" type="text/x-bibtex" href="/bibliography.bib" title="BibTeX bibliography">
+    <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Recovering LLM-Persona Accuracies from Unlabeled Votes">
+    <meta property="og:description" content="&lt;p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test th">
+    <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026RecoveringLLMPersonaAccuracies152.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+        .work-hero{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
+        .work-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}
+        .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+        .meta-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
+        .meta-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
+        .cite-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7;color:var(--text-secondary)}
+        .work-detail{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
+        .work-detail ul{margin-left:1.2rem}
+        .keyword-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
+        .keyword-row span{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}
+    </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "@id": "https://danielarifriedman.com/works/Friedman2026RecoveringLLMPersonaAccuracies152.html#work",
+    "name": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+    "headline": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+    "author": {
+        "@id": "https://danielarifriedman.com/#person"
+    },
+    "datePublished": "2026",
+    "url": "https://danielarifriedman.com/works/Friedman2026RecoveringLLMPersonaAccuracies152.html",
+    "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026RecoveringLLMPersonaAccuracies152.html",
+    "isPartOf": {
+        "@id": "https://danielarifriedman.com/#website"
+    },
+    "about": [
+        {
+            "@type": "DefinedTerm",
+            "name": "Computational"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Paper"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "algebraic evaluation"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "NTQR"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "unsupervised evaluation"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "evaluation on unlabeled data"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "LLM-as-judge"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "error-independent evaluation"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "ensemble evaluability"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "constant classifier"
+        }
+    ],
+    "genre": "Paper",
+    "inLanguage": "en",
+    "citation": "Friedman, Daniel Ari. 2026. Recovering LLM-Persona Accuracies from Unlabeled Votes. Zenodo.",
+    "sameAs": [
+        "https://doi.org/10.5281/zenodo.20498700",
+        "https://doi.org/10.5281/zenodo.20498700"
+    ],
+    "identifier": [
+        {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.20498700",
+            "url": "https://doi.org/10.5281/zenodo.20498700"
+        },
+        {
+            "@type": "PropertyValue",
+            "propertyID": "Citation key",
+            "value": "Friedman2026RecoveringLLMPersonaAccuracies152"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zenodo"
+    },
+    "abstract": "<p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-l",
+    "keywords": [
+        "algebraic evaluation",
+        "NTQR",
+        "unsupervised evaluation",
+        "evaluation on unlabeled data",
+        "LLM-as-judge",
+        "error-independent evaluation",
+        "ensemble evaluability",
+        "constant classifier",
+        "AI safety warning light",
+        "reproducible research",
+        "answer-key-free recovery",
+        "local large language models"
+    ],
+    "description": "algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge",
+    "hasPart": {
+        "@type": "CreativeWork",
+        "name": "Local paper documentation",
+        "url": "https://github.com/docxology/docxology/tree/main/papers/2026_RecoveringLLMPersona"
+    }
+}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../publications.html">Publications</a>
+            <a href="../works/" class="active">Works</a>
+            <a href="../domains.html">Domains</a>
+            <a href="../software.html">Software</a>
+            <a href="../search.html">Search</a>
+            <a href="../catalog.html">Data Catalog</a>
+            <a href="../cite-verify.html">Cite</a>
+            <a href="../discovery.html">Discovery</a>
+        </div>
+    </nav>
+
+    <header class="work-hero">
+        <p class="eyebrow">Computational · Paper · 2026</p>
+        <h1>Recovering LLM-Persona Accuracies from Unlabeled Votes</h1>
+        <p class="sub">Zenodo</p>
+    </header>
+    <main id="main" class="main">
+        <section class="section">
+            <div class="meta-grid">
+                <div class="meta-card"><strong>Catalog Row</strong>152</div>
+                <div class="meta-card"><strong>Citation Key</strong>Friedman2026RecoveringLLMPersonaAccuracies152</div>
+                <div class="meta-card"><strong>Paper Folder</strong>Available</div>
+                <div class="meta-card"><strong>DOI</strong><a href="https://doi.org/10.5281/zenodo.20498700">10.5281/zenodo.20498700</a></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
+            <div class="work-detail">
+                <p>&lt;p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader &quot;personas&quot; (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-l</p>
+                <div class="keyword-row"><span>algebraic evaluation</span><span>NTQR</span><span>unsupervised evaluation</span><span>evaluation on unlabeled data</span><span>LLM-as-judge</span><span>error-independent evaluation</span><span>ensemble evaluability</span><span>constant classifier</span><span>AI safety warning light</span><span>reproducible research</span><span>answer-key-free recovery</span><span>local large language models</span></div>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
+            <div class="meta-grid">
+                <div class="work-detail"><strong>Findings / Concepts</strong><ul><li>algebraic evaluation</li><li>NTQR</li><li>unsupervised evaluation</li><li>evaluation on unlabeled data</li><li>LLM-as-judge</li></ul></div>
+                <div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Not yet summarized.</li></ul></div>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>
+            <div class="cite-box">Friedman, Daniel Ari. 2026. Recovering LLM-Persona Accuracies from Unlabeled Votes. Zenodo.</div>
+            <p class="text-center mt-2">
+                <a class="btn btn-gold" href="https://doi.org/10.5281/zenodo.20498700">Primary source</a>
+                <a class="btn btn-outline" href="../papers/2026_RecoveringLLMPersona/">Documentation</a>
+                <a class="btn btn-outline" href="https://github.com/docxology/ntqr_llm">Source repository</a>
+                <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
+            </p>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
+    </footer>
+</body>
+</html>

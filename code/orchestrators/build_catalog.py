@@ -43,11 +43,22 @@ def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
     return rel(latest)
 
 
+def _json_count(path: str, fallback: int) -> int:
+    try:
+        payload = json.loads((REPO_ROOT / path).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return fallback
+    value = payload.get("count")
+    return value if isinstance(value, int) else fallback
+
+
 def datasets() -> list[tuple[str, str, str, str]]:
+    works_count = _json_count("data/works.json", 154)
+    software_count = _json_count("data/software.json", 88)
     return [
-    ("works", "Curated Works Bibliography", "data/works.json", "149 bibliography rows with citation keys, DOI links, domains, and documentation paths."),
+    ("works", "Curated Works Bibliography", "data/works.json", f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
-    ("software", "Software Catalog", "data/software.json", "82 catalogued software repositories across docxology and AII contributions."),
+    ("software", "Software Catalog", "data/software.json", f"{software_count} catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
@@ -55,11 +66,13 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("resume", "Structured Resume and CV", "data/resume.json", "Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records."),
     ("resume-verify", "Resume Verification Page", "resume/verify.html", "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links."),
     ("reconciliation", "Public-Source Reconciliation", "data/reconciliation.json", "Curated local counts compared with public-source indexes."),
+    ("current-counts", "Current Counts Snapshot", "data/current-counts.json", "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands."),
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
     ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),
     ("public-source-snapshot", "Public Source Snapshot", _latest_rel("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json"), "Current public API freshness snapshot with normalized drift-comparison facts."),
+    ("paired-publication-decisions", "Paired Publication Decisions", "data/paired-publication-decisions.json", "Manual review decisions for ambiguous GitHub release + Zenodo record pair candidates."),
     ("external-links", "External Link Report", _latest_rel("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"), "Scoped network freshness report for site-critical outbound links."),
     ("external-link-triage", "External Link Triage", _latest_rel("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"), "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
     ("asset-size", "Asset Size Audit", _latest_rel("asset_size_*.json", "reports/asset_size_2026-05-13.json"), "Size report for public HTML, OG images, data exports, and runtime assets."),

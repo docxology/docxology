@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-04
+
+- Applied four strong GitHub release + Zenodo publication pairs: `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, and `2026_TemplateTextbook`; bibliography **150→154**, paper folders **143→147**.
+- Refreshed represented GitHub/Zenodo publication pairs for existing works, including `WhenDoBugs`, `MusicNeverStopped`, `BeeStack`, `BiologyTextbook`, `CrescentCity`, and template-derived exemplars; left review-only pairings untouched.
+- Added six owned repositories to the curated software catalog (`template_autoscientists`, `template_newspaper`, `template_textbook`, `ntqr_llm`, `grateful_data`, `cohereants`); software catalog **50→56 owned**, **82→88 total**.
+- Recorded June 4 public API counts: docxology GitHub **305** public repositories, AII **51**, Zenodo exact-name **40**, Zenodo ORCID-linked **98**; treated `docxology/template` DOI [10.5281/zenodo.20469500](https://doi.org/10.5281/zenodo.20469500) as software/version metadata, not a bibliography work row.
+- Expanded volatile-count validation across README, AGENTS files, BIBLIOGRAPHY summaries, Discovery, `llms.txt`, software JSON/LD, and GitHub inventory counts.
+
 ## 2026-05-26
 
 - Thermo-nuclear documentation pass: aligned volatile counts (116 works / 109 paper folders) across `llms.txt`, release notes, and publications head meta; added count-consistency validation (`code/src/count_consistency.py`).

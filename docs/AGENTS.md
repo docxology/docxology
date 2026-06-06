@@ -4,12 +4,12 @@ Reserved for repository-level documentation beyond the `pages/` hub (architectur
 
 See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`PUBLICATION_SYNC.md`](PUBLICATION_SYNC.md) for the GitHub + Zenodo publication intake workflow. Add long-form architecture or runbooks here when they outgrow the root index.
 
-**Volatile counts:** before editing totals in this file or root `README.md`, verify [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (header/summary/table) and [`papers/README.md`](../papers/README.md) / [`papers/AGENTS.md`](../papers/AGENTS.md)—those surfaces drift easily when only one file is updated.
+**Volatile counts:** do not repeat current totals in this file or root `README.md`. Link to [`reports/current_counts.md`](../reports/current_counts.md), [`data/current-counts.json`](../data/current-counts.json), and the canonical source tables instead.
 
 ## Bibliography vs paper folders
 
-- [pages/BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) is the **124-row** unified table (works); the **Docs** column links to a folder under [papers/](../papers/) only when one exists.
-- [papers/](../papers/) has **118** per-work folders (README / AGENTS / SKILL); rows without a folder (e.g. some YouTube series or Udemy courses) have no duplicate in-tree index row beyond BIBLIOGRAPHY.
+- [pages/BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) is the unified works table; the **Docs** column links to a folder under [papers/](../papers/) only when one exists.
+- [papers/](../papers/) has per-work folders (README / AGENTS / SKILL) for rows with in-tree documentation; rows without a folder (e.g. some YouTube series or Udemy courses) have no duplicate in-tree index row beyond BIBLIOGRAPHY.
 - After table **adds or reorders**, run [`papers/sync_publications_html.py`](../papers/sync_publications_html.py) with `--apply` so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay in table order and length; run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for `data/works.json`.
 - [`papers/biblio_table.py`](../papers/biblio_table.py) is the shared eight-column parser used by `sync_publications_html` and [`papers/regenerate_docs.py`](../papers/regenerate_docs.py).
 

@@ -1,0 +1,193 @@
+{
+  "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.20533676",
+  "doi_url": "https://doi.org/10.5281/zenodo.20533676",
+  "zenodo_record": "https://zenodo.org/records/20533676",
+  "record_id": "20533676",
+  "publication_date": "2026-06-03",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Abstract\n\nWe present template_newspaper, a pure-Python engine that renders a complete\ntwelve-page, large-format newspaper to a print-ready PDF from structured YAML\ncontent. The exemplar edition is The Triplicate, a homage to the historic\nnewspaper of Crescent City, California (founded 1879). The engine demonstrates\ndesigned multi-column page layout — nameplate and ears, spanning headlines,\nflowing column frames with an optional rail, drop caps, pull quotes, ruled\nmodular boxes, data tables, halftone \"engraving\" figures and running folios —\nwhile keeping a strict separation between content (data) and engine (code):\na new title is a data edit, never a code change. The layout strategy is a hybrid\nin which fixed furniture is drawn directly on the canvas to establish where\nthe column grid begins, after which body copy flows through ReportLab frames\nthat split paragraphs across columns automatically. The project obeys the\nresearch-template monorepo contract and is discovered and executed by the same\norchestration pipeline as its code- and prose-focused siblings.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/template_newspaper/releases/tag/v1.0.0)\nPDF SHA-256: 5c991b5c4c7bb59fd7d7253d7293ec3c3ba2f6262a9e3ba8f1fc224b1c276f03",
+  "keywords": [
+    "newspaper layout",
+    "typography",
+    "reportlab",
+    "reproducible publishing",
+    "document engineering"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Triplicate_5c991b5c.pdf",
+      "size_bytes": 54757,
+      "checksum": "md5:1ba04485bd6cadfb6ae5a8b9e8e4ac7f",
+      "download_url": "https://zenodo.org/api/records/20533676/files/Friedman_2026_Triplicate_5c991b5c.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_newspaper"
+    }
+  ],
+  "github_repo": "docxology/template_newspaper",
+  "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-06-04T20:45:06Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20533676",
+      "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "zenodo_record_url": "https://zenodo.org/records/20533676",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533676",
+      "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "zenodo_record_url": "https://zenodo.org/records/20533676",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533676",
+      "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "zenodo_record_url": "https://zenodo.org/records/20533676",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533676",
+      "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "zenodo_record_url": "https://zenodo.org/records/20533676",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533676",
+      "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "zenodo_record_url": "https://zenodo.org/records/20533676",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533676",
+      "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "zenodo_record_url": "https://zenodo.org/records/20533676",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-01T02:01:53Z",
+  "generated_at": "2026-06-04T21:05:41Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 150,
+  "count": 154,
   "works": [
     {
       "num": 1,
@@ -2101,6 +2101,62 @@
       "url": "https://doi.org/10.5281/zenodo.20482026",
       "doi": "10.5281/zenodo.20482026",
       "docs_path": "papers/2026_MusicNeverStopped/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 151,
+      "citation_key": "Friedman2026DeterministicTestbedSelfOrganizing151",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20533670",
+      "doi": "10.5281/zenodo.20533670",
+      "docs_path": "papers/2026_DeterministicTestbedSelf/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 152,
+      "citation_key": "Friedman2026RecoveringLLMPersonaAccuracies152",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20498700",
+      "doi": "10.5281/zenodo.20498700",
+      "docs_path": "papers/2026_RecoveringLLMPersona/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 153,
+      "citation_key": "Friedman2026TriplicateDataDrivenLarge153",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533676",
+      "docs_path": "papers/2026_Triplicate/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 154,
+      "citation_key": "Friedman2026TemplateTextbook154",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Book",
+      "title": "The Template Textbook",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533126",
+      "docs_path": "papers/2026_TemplateTextbook/",
       "has_paper_folder": true
     }
   ]

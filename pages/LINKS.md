@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 **Comprehensive directory of all public web presences, profiles, and resources**
 
-*Last updated: 2026-05-28 (fact-checked with public APIs, official profile pages, and the curated bibliography)*
+*Last updated: 2026-06-04 (fact-checked with public APIs, official profile pages, and the curated bibliography)*
 
 [Discovery map](DISCOVERY.md): canonical IDs, machine-readable API endpoints, query recipes, and verification notes for agentic retrieval.
 
@@ -89,7 +89,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 299 public repositories, primary development |
+| GitHub (primary) | [github.com/docxology](https://github.com/docxology) | 305 public repositories, primary development |
 | GitHub (secondary) | [github.com/danielarifriedman](https://github.com/danielarifriedman) | Secondary profile |
 | Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | 51 public repositories; 32 catalogued here with docxology contributions |
 | Full Repository Inventory | [repositories.html](../repositories.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated full public GitHub inventory for docxology and AII repositories |
@@ -184,11 +184,11 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | File | Description |
 |------|-------------|
 | [README.md](../README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 125 works (Google Scholar totals may lag new deposits) |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 154 works (Google Scholar totals may lag new deposits) |
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
 | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
-| [SOFTWARE.md](SOFTWARE.md) | 50 owned repos + 32 AII contributions |
+| [SOFTWARE.md](SOFTWARE.md) | 56 owned repos + 32 AII contributions |
 | [DOMAINS.md](DOMAINS.md) / [domains.html](../domains.html) | Research domain paths through works, software, collaborators, and learning routes |
 | [DISCOVERY.md](DISCOVERY.md) | Canonical IDs, API endpoints, exact public-source queries, and verification notes |
 | [cite-verify.html](../cite-verify.html) / [CITE_VERIFY.md](CITE_VERIFY.md) | Preferred citation metadata, public identifiers, and source-of-truth rules |
@@ -208,7 +208,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 118 per-paper folders with documentation |
+| [papers/](../papers/) | 147 per-paper folders with documentation |
 
 ---
 

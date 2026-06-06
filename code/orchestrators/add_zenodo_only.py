@@ -354,13 +354,23 @@ def add_paper_metadata(folder: str, meta: dict, doi: str) -> None:
 def refresh_papers_agents() -> None:
     path = PAPERS / "AGENTS.md"
     text = path.read_text(encoding="utf-8")
-    n = len([p for p in PAPERS.iterdir() if p.is_dir() and re.match(r"\d{4}_", p.name)])
-    today = dt.date.today().isoformat()
-    text = re.sub(r"for \d+ publications", f"for {n} publications", text)
-    text = re.sub(r"\(\d+ entries as of [^)]+\)", f"({n} entries as of {today})", text)
-    text = re.sub(r"README\.md present \| \d+/\d+ folders[^|]*", f"README.md present | {n}/{n} folders (last verified {today}) ", text)
-    text = re.sub(r"AGENTS\.md present \| \d+/\d+", f"AGENTS.md present | {n}/{n}", text)
-    text = re.sub(r"SKILL\.md present \| \d+/\d+", f"SKILL.md present | {n}/{n}", text)
+    text = re.sub(
+        r"for \d+ publications",
+        "for bibliography entries with in-tree documentation",
+        text,
+    )
+    text = re.sub(
+        r"\(\d+ entries as of [^)]+\)",
+        "; current folder/export counts live in [`../reports/current_counts.md`](../reports/current_counts.md)",
+        text,
+    )
+    text = re.sub(
+        r"README\.md present \| \d+/\d+ folders[^|]*",
+        "README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) ",
+        text,
+    )
+    text = re.sub(r"AGENTS\.md present \| \d+/\d+", "AGENTS.md present | required per folder", text)
+    text = re.sub(r"SKILL\.md present \| \d+/\d+", "SKILL.md present | required per folder", text)
     path.write_text(text, encoding="utf-8")
 
 

@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/PUBLICATION_SYNC.md](../docs/PUBLICATION_SYNC.md).
 
-## Papers (143)
+## Papers (147)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -155,6 +155,10 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 141 | [2020_ReimaginingMaps](2020_ReimaginingMaps/) | ✅ | 2020 | ReimaginingMaps |
 | 142 | [2020_InfiniteGamesInfinite](2020_InfiniteGamesInfinite/) | ✅ | 2020 | InfiniteGamesInfinite |
 | 143 | [2026_MusicNeverStopped](2026_MusicNeverStopped/) | ✅ | 2026 | MusicNeverStopped |
+| 144 | [2026_DeterministicTestbedSelf](2026_DeterministicTestbedSelf/) | ✅ | 2026 | DeterministicTestbedSelf |
+| 145 | [2026_RecoveringLLMPersona](2026_RecoveringLLMPersona/) | ✅ | 2026 | RecoveringLLMPersona |
+| 146 | [2026_Triplicate](2026_Triplicate/) | ✅ | 2026 | Triplicate |
+| 147 | [2026_TemplateTextbook](2026_TemplateTextbook/) | ✅ | 2026 | TemplateTextbook |
 ## Scripts
 
 | Script | Purpose |

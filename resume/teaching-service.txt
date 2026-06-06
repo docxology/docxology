@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-06-01T02:03:14Z
+Generated: 2026-06-04T22:33:06Z
 
-Current public metrics: 150 curated works; 82 catalogued software repositories (50 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
+Current public metrics: 154 curated works; 88 catalogued software repositories (56 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
 SUMMARY
 -------
@@ -174,7 +174,7 @@ WORKS AND PUBLICATIONS (71)
 [144] 2022 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | Zenodo | 10.5281/zenodo.7401875
 [146] 2021 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | Zenodo | 10.5281/zenodo.5797072
 
-SOFTWARE (12)
+SOFTWARE (13)
 -------------
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
 docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
@@ -183,6 +183,7 @@ docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Bi
 docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286478
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
 docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533126
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts

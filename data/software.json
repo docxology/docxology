@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-01T02:01:53Z",
+  "generated_at": "2026-06-04T22:33:06Z",
   "source": "pages/SOFTWARE.md",
-  "count": 82,
+  "count": 88,
   "repositories": [
     {
       "name": "template",
       "url": "https://github.com/docxology/template",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning",
+      "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software",
       "language": "Python",
       "stars": 13,
       "updated_or_year": "2026-05",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20469500"
     },
     {
       "name": "QuadCraft",
@@ -244,6 +244,42 @@
       "zenodo_url": ""
     },
     {
+      "name": "template_autoscientists",
+      "url": "https://github.com/docxology/template_autoscientists",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "AutoScientists deterministic multi-agent scientific-discovery coordination harness ·  · Zenodo",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_DeterministicTestbedSelf/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533670"
+    },
+    {
+      "name": "template_newspaper",
+      "url": "https://github.com/docxology/template_newspaper",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "The Triplicate data-driven large-format newspaper layout engine ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_Triplicate/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533676"
+    },
+    {
+      "name": "ntqr_llm",
+      "url": "https://github.com/docxology/ntqr_llm",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_RecoveringLLMPersona/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20498700"
+    },
+    {
       "name": "ultralink-docx",
       "url": "https://github.com/docxology/ultralink-docx",
       "owner": "docxology",
@@ -302,6 +338,18 @@
       "updated_or_year": "2025-09",
       "paper_path": "papers/2025_AntStack/",
       "zenodo_url": ""
+    },
+    {
+      "name": "cohereants",
+      "url": "https://github.com/docxology/cohereants",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2026_WhenDoBugs/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20450970"
     },
     {
       "name": "ento_linguistics",
@@ -484,6 +532,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "grateful_data",
+      "url": "https://github.com/docxology/grateful_data",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_MusicNeverStopped/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20482026"
+    },
+    {
       "name": "infra-calc",
       "url": "https://github.com/docxology/infra-calc",
       "owner": "docxology",
@@ -566,6 +626,18 @@
       "updated_or_year": "2026-04",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "template_textbook",
+      "url": "https://github.com/docxology/template_textbook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Modular fillable scaffold for book-length technical works ·  · Zenodo",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_TemplateTextbook/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533126"
     },
     {
       "name": "blake_jiang",

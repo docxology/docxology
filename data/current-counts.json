@@ -1,0 +1,87 @@
+{
+  "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
+  "command": "uv run python3 code/orchestrators/build_current_counts.py",
+  "counts": {
+    "bibliography_docs_links": 147,
+    "bibliography_works": 154,
+    "domains": {
+      "AII Ecosystem": 5,
+      "Active Inference": 35,
+      "Art & Synergetics": 15,
+      "Cognitive Security": 26,
+      "Computational": 24,
+      "Entomology": 21,
+      "Genetics & Biomedical": 13,
+      "Presentations & Media": 15
+    },
+    "generated_exports": {
+      "data_publications_ld_main_entity": 154,
+      "data_software_json": 88,
+      "data_software_ld_main_entity": 88,
+      "data_works_json": 154
+    },
+    "github_inventory": {
+      "ActiveInferenceInstitute": 51,
+      "archived": 0,
+      "curated": 88,
+      "docxology": 305,
+      "forks": 248,
+      "private": 0,
+      "public": 356,
+      "recently_updated": 89,
+      "total": 356,
+      "uncataloged": 268
+    },
+    "paired_publication_decisions": {
+      "decision": "accept",
+      "groups": 18,
+      "note": "User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows.",
+      "raw_candidates": 78
+    },
+    "paired_publications": {
+      "create_new": 4,
+      "github_releases": 109,
+      "needs_review": 78,
+      "pairs": 95,
+      "strong_pairs": 17,
+      "update_existing": 13,
+      "zenodo_records": 100
+    },
+    "paper_folder_docs": 147,
+    "public_source_snapshot": {
+      "GitHub user ActiveInferenceInstitute": 51,
+      "GitHub user docxology": 305,
+      "ORCID work groups": 20,
+      "PubMed exact author records": 8
+    },
+    "software": {
+      "active_inference_institute": 32,
+      "curated_total": 88,
+      "docxology_owned": 56
+    },
+    "types": {
+      "Books": 5,
+      "Courses": 3,
+      "Papers": 133,
+      "Playbooks": 2,
+      "Presentations": 9,
+      "Series": 2
+    }
+  },
+  "generated_at": "2026-06-04T22:33:24+00:00",
+  "sources": {
+    "bibliography": "pages/BIBLIOGRAPHY.md",
+    "github_inventory": "data/github-repositories.json",
+    "paired_publication_decisions": "data/paired-publication-decisions.json",
+    "paired_publications": "reports/paired_publications_2026-06-04.json",
+    "paper_folders": "papers/README.md",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-06-04.json",
+    "software_catalog": "pages/SOFTWARE.md",
+    "software_export": "data/software.json",
+    "works_export": "data/works.json"
+  },
+  "validation": [
+    "uv run python3 code/orchestrators/validate_repo.py",
+    "cd code/tests && PYTHONDONTWRITEBYTECODE=1 uv run pytest -q"
+  ]
+}

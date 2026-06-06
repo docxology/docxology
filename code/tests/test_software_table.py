@@ -21,9 +21,9 @@ def test_software_row_counts():
     rows = list(iter_software_rows())
     docx = [r for r in rows if r.catalog_section == "docxology"]
     aii = [r for r in rows if r.catalog_section == "active-inference-institute"]
-    assert len(docx) == 50
+    assert len(docx) == 56
     assert len(aii) == 32
-    assert len(rows) == 82
+    assert len(rows) == 88
 
 
 def test_biology_textbook_row_fields():

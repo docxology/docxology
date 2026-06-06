@@ -787,12 +787,23 @@ def update_papers_agents(updated: list[str], repo_root: Path) -> None:
     text = _safe_read(path)
     if not text:
         return
-    folder_count = len([path for path in (repo_root / "papers").iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name)])
-    text = re.sub(r"for \d+ publications", f"for {folder_count} publications", text)
-    text = re.sub(r"\(\d+ entries as of [^)]+\)", f"({folder_count} entries as of {dt.date.today().isoformat()})", text)
-    text = re.sub(r"README\.md present \| \d+/\d+ folders", f"README.md present | {folder_count}/{folder_count} folders", text)
-    text = re.sub(r"AGENTS\.md present \| \d+/\d+", f"AGENTS.md present | {folder_count}/{folder_count}", text)
-    text = re.sub(r"SKILL\.md present \| \d+/\d+", f"SKILL.md present | {folder_count}/{folder_count}", text)
+    text = re.sub(
+        r"for \d+ publications",
+        "for bibliography entries with in-tree documentation",
+        text,
+    )
+    text = re.sub(
+        r"\(\d+ entries as of [^)]+\)",
+        "; current folder/export counts live in [`../reports/current_counts.md`](../reports/current_counts.md)",
+        text,
+    )
+    text = re.sub(
+        r"README\.md present \| \d+/\d+ folders[^|]*",
+        "README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) ",
+        text,
+    )
+    text = re.sub(r"AGENTS\.md present \| \d+/\d+", "AGENTS.md present | required per folder", text)
+    text = re.sub(r"SKILL\.md present \| \d+/\d+", "SKILL.md present | required per folder", text)
     _write_if_changed(path, text, updated, repo_root)
 
 
@@ -926,6 +937,14 @@ def latest_report(repo_root: Path = REPO_ROOT) -> Path | None:
     return reports[-1] if reports else None
 
 
+def display_report_path(path: Path, repo_root: Path = REPO_ROOT) -> str:
+    """Return a compact report path without assuming it lives under the repo."""
+    try:
+        return str(path.relative_to(repo_root))
+    except ValueError:
+        return str(path)
+
+
 def check_report(repo_root: Path = REPO_ROOT) -> None:
     path = latest_report(repo_root)
     if path is None:
@@ -1015,7 +1034,7 @@ def main(argv: list[str] | None = None) -> int:
         applied=applied,
     )
     print(
-        f"wrote {report.relative_to(REPO_ROOT)}: "
+        f"wrote {display_report_path(report)}: "
         f"{len(pairs)} pairs, "
         f"{sum(1 for action in actions if action.action_type == 'create_new')} new, "
         f"{sum(1 for action in actions if action.action_type == 'update_existing')} updates, "

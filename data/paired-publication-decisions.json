@@ -1,0 +1,1981 @@
+{
+  "generated_at": "2026-06-04T22:32:27Z",
+  "source_report": "reports/paired_publications_2026-06-04.json",
+  "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
+  "decision_summary": {
+    "decision": "accept",
+    "groups": 18,
+    "raw_candidates": 78,
+    "note": "User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows."
+  },
+  "groups": [
+    {
+      "id": "R01",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.8229512",
+      "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "candidate_github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
+      "folder": "2023_TranscriptActiveInference",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.8229512",
+          "record_title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+          "zenodo_record_url": "https://zenodo.org/records/8229512",
+          "github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
+          "release_tag": "1",
+          "release_name": "1",
+          "resource_type": {
+            "title": "Other",
+            "type": "other"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.19600217",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "folder": "",
+      "representation": "software-catalog",
+      "raw_candidate_count": 4,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19600217",
+          "record_title": "GeneralizedNotationNotation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/19600217",
+          "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1",
+          "release_tag": "v1",
+          "release_name": "GNN v1",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.19600217",
+          "record_title": "GeneralizedNotationNotation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/19600217",
+          "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1.2.0",
+          "release_tag": "v1.2.0",
+          "release_name": "v1.2.0 — Data Accuracy & Documentation Sync",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.19600217",
+          "record_title": "GeneralizedNotationNotation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/19600217",
+          "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1.3.0",
+          "release_tag": "v1.3.0",
+          "release_name": "v1.3.0 — The Pipeline Coherence & Agentic Integration Release",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.19600217",
+          "record_title": "GeneralizedNotationNotation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/19600217",
+          "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1.6.0",
+          "release_tag": "v1.6.0",
+          "release_name": "v1.6.0: Zero-Mock Testing Stabilization & Documentation Hardening",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.16782757",
+      "title": "The Ant Stack",
+      "candidate_github_repo": "docxology/ant_stack",
+      "folder": "2025_AntStack",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.16782757",
+          "record_title": "The Ant Stack",
+          "zenodo_record_url": "https://zenodo.org/records/16782757",
+          "github_repo": "docxology/ant_stack",
+          "github_release_url": "https://github.com/docxology/ant_stack/releases/tag/v2.0.0",
+          "release_tag": "v2.0.0",
+          "release_name": "Ant Stack v2.0.0",
+          "resource_type": {
+            "title": "Other",
+            "type": "other"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420342",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_EditorialQualityAt",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420352",
+      "title": "Active Inference Multi-Track Exemplar",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ActiveInferenceMulti",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420357",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_BoundedAutoResearchTiny",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420368",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ConvergenceAnalysisGradient",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420387",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_TemplateApproachReproducible",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20453880",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_SelfImprovementAgent",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20453880",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453880",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20453880",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453880",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20453880",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453880",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20453880",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453880",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20453880",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453880",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20453880",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453880",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20469500",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "candidate_github_repo": "docxology/template",
+      "folder": "",
+      "representation": "software-catalog",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20469500",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20469500",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20469500",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20469500",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20469500",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20469500",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20533126",
+      "title": "The Template Textbook",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_TemplateTextbook",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533126",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533126",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Book",
+            "type": "publication",
+            "subtype": "book"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533126",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533126",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Book",
+            "type": "publication",
+            "subtype": "book"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533126",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533126",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Book",
+            "type": "publication",
+            "subtype": "book"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533126",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533126",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Book",
+            "type": "publication",
+            "subtype": "book"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533126",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533126",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Book",
+            "type": "publication",
+            "subtype": "book"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533126",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533126",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Book",
+            "type": "publication",
+            "subtype": "book"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20533670",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_DeterministicTestbedSelf",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533670",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533670",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533670",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533670",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533670",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533670",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533670",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533670",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533670",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533670",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533670",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533670",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20533676",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_Triplicate",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 6,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533676",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533676",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+          "release_tag": "0.1",
+          "release_name": "0.1",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533676",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533676",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+          "release_tag": "0.2",
+          "release_name": "0.2",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533676",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533676",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+          "release_tag": "0.3",
+          "release_name": "0.3",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533676",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533676",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+          "release_tag": "0.4",
+          "release_name": "0.4",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533676",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533676",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+          "release_tag": "0.5",
+          "release_name": "Multiproject",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20533676",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533676",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "Research Project Template v3.0.0",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420352",
+      "title": "Active Inference Multi-Track Exemplar",
+      "candidate_github_repo": "docxology/template_active_inference",
+      "folder": "2026_ActiveInferenceMulti",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420352",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20420352",
+          "github_repo": "docxology/template_active_inference",
+          "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
+          "release_tag": "v0.2.0",
+          "release_name": "Active Inference Multi-Track Exemplar (v0.2.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R15",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420357",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "candidate_github_repo": "docxology/template_autoresearch_project",
+      "folder": "2026_BoundedAutoResearchTiny",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420357",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20420357",
+          "github_repo": "docxology/template_autoresearch_project",
+          "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
+          "release_tag": "v0.2.0",
+          "release_name": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.2.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R16",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420368",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "candidate_github_repo": "docxology/template_code_project",
+      "folder": "2026_ConvergenceAnalysisGradient",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 5,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template_code_project",
+          "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.0.0",
+          "release_tag": "v2.0.0",
+          "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.0.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template_code_project",
+          "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.1.0",
+          "release_tag": "v2.1.0",
+          "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.1.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template_code_project",
+          "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.2.0",
+          "release_tag": "v2.2.0",
+          "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.2.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template_code_project",
+          "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.3.0",
+          "release_tag": "v2.3.0",
+          "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.3.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420368",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20420368",
+          "github_repo": "docxology/template_code_project",
+          "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.4.0",
+          "release_tag": "v2.4.0",
+          "release_name": "Convergence Analysis of Gradient Descent Optimization (v2.4.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R17",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420342",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "candidate_github_repo": "docxology/template_prose_project",
+      "folder": "2026_EditorialQualityAt",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 2,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template_prose_project",
+          "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.2.0",
+          "release_tag": "v0.2.0",
+          "release_name": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline (v0.2.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420342",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20420342",
+          "github_repo": "docxology/template_prose_project",
+          "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.3.0",
+          "release_tag": "v0.3.0",
+          "release_name": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline (v0.3.0)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R18",
+      "decision": "accept",
+      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.20420387",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "candidate_github_repo": "docxology/template_template",
+      "folder": "2026_TemplateApproachReproducible",
+      "representation": "bibliography-folder",
+      "raw_candidate_count": 3,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template_template",
+          "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.3",
+          "release_tag": "v1.0.3",
+          "release_name": "A \\texttt{template/} approach to Reproducible Generative Research (v1.0.3)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template_template",
+          "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.4",
+          "release_tag": "v1.0.4",
+          "release_name": "A \\texttt{template/} approach to Reproducible Generative Research (v1.0.4)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20420387",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20420387",
+          "github_repo": "docxology/template_template",
+          "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.5",
+          "release_tag": "v1.0.5",
+          "release_name": "A template/ approach to Reproducible Generative Research (v1.0.5)",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-04T22:32:27Z",
+          "review_source": "user: Accept for all",
+          "source_report": "reports/paired_publications_2026-06-04.json"
+        }
+      ]
+    }
+  ]
+}

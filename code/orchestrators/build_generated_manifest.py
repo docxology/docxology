@@ -61,16 +61,29 @@ ARTIFACTS = [
     {
         "name": "Scholar metrics sync",
         "outputs": [
-            "README.md (badge + blockquote)",
             "pages/BIBLIOGRAPHY.md (badge)",
             "index.html (meta/og/stat/li)",
-            "llms.txt",
             "pages/PROFILE.md (prose + metrics table)",
             "pages/LINKS.md",
             "publications.html (header metrics pill)",
         ],
         "sources": ["data/scholar-snapshot.json", "code/orchestrators/sync_scholar_metrics.py"],
         "command": "python3 code/orchestrators/sync_scholar_metrics.py",
+    },
+    {
+        "name": "Current count report",
+        "outputs": ["reports/current_counts.md", "data/current-counts.json"],
+        "sources": [
+            "pages/BIBLIOGRAPHY.md",
+            "papers/README.md",
+            "pages/SOFTWARE.md",
+            "data/works.json",
+            "data/software.json",
+            "data/github-repositories.json",
+            "reports/public_source_snapshot_*.json",
+            "reports/paired_publications_*.json",
+        ],
+        "command": "uv run python3 code/orchestrators/build_current_counts.py",
     },
     {
         "name": "Agent data exports",
@@ -123,6 +136,15 @@ ARTIFACTS = [
             "code/orchestrators/sync_paired_publications.py",
         ],
         "command": "python3 code/orchestrators/sync_paired_publications.py",
+    },
+    {
+        "name": "Paired publication review decisions",
+        "outputs": ["data/paired-publication-decisions.json", _latest_report("paired_publications_review_queue_*.md", "reports/paired_publications_review_queue_2026-06-04.md")],
+        "sources": [
+            _latest_report("paired_publications_*.json", "reports/paired_publications_2026-06-04.json"),
+            "manual review decision",
+        ],
+        "command": "manual review; update data/paired-publication-decisions.json",
     },
     {
         "name": "Domain pages",

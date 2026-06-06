@@ -1,0 +1,33 @@
+{
+  "title": "The Ant Stack",
+  "doi": "10.5281/zenodo.16782756",
+  "source": "pages/BIBLIOGRAPHY.md",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.16782757",
+      "record_title": "The Ant Stack",
+      "zenodo_record_url": "https://zenodo.org/records/16782757",
+      "github_repo": "docxology/ant_stack",
+      "github_release_url": "https://github.com/docxology/ant_stack/releases/tag/v2.0.0",
+      "release_tag": "v2.0.0",
+      "release_name": "Ant Stack v2.0.0",
+      "resource_type": {
+        "title": "Other",
+        "type": "other"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  }
+}

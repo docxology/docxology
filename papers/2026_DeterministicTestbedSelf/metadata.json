@@ -1,0 +1,194 @@
+{
+  "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.20533670",
+  "doi_url": "https://doi.org/10.5281/zenodo.20533670",
+  "zenodo_record": "https://zenodo.org/records/20533670",
+  "record_id": "20533670",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Abstract\n\nRecent work on AutoScientists  coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim.\n\nWe make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers and claim no speedup. What the testbed does demonstrate are two distinct, independently measurable benefits. First, noise-robustness: because the objective is stochastic, a single observed gain can be a draw of evaluation noise, so we separate the reported champion metric from the clean noise-free ground truth and show that noise-band confirmation shrinks the gap between them by roughly an order of magnitude — with confirmation on, the final champion's reported metric sits $0.0012$ above its clean value, against $0.0156$ with confirmation removed, while every configuration reaches the same clean optimum. Second, search hygiene: the dead-end registry, consulted by the proposer, cuts redundant re-probes of retired directions from $36$ to $0$ and halts at $36$ of the $60$ experiments — the same clean answer, reached with less waste. A per-mechanism ablation isolates each component's contribution, and the language-model proposer is a clean plug-in seam: a deterministic rule-based agent drives the reproducible figures, and a live Hermes agent (served by Ollama) can be swapped in without touching the coordination loop.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0)\nPDF SHA-256: a7f202bb1aa3c13803508e033c7561e6afe8b74148b60e9a3f91341ebfc21e65",
+  "keywords": [
+    "agent coordination",
+    "scientific discovery",
+    "noise-band confirmation",
+    "ablation study",
+    "reproducible research",
+    "language-model agents"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Deterministic_a7f202bb.pdf",
+      "size_bytes": 270230,
+      "checksum": "md5:d32f9117e4aa04717612c93d89ae7828",
+      "download_url": "https://zenodo.org/api/records/20533670/files/Friedman_2026_Deterministic_a7f202bb.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_autoscientists"
+    }
+  ],
+  "github_repo": "docxology/template_autoscientists",
+  "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-06-04T20:45:03Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20533670",
+      "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "zenodo_record_url": "https://zenodo.org/records/20533670",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533670",
+      "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "zenodo_record_url": "https://zenodo.org/records/20533670",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533670",
+      "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "zenodo_record_url": "https://zenodo.org/records/20533670",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533670",
+      "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "zenodo_record_url": "https://zenodo.org/records/20533670",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533670",
+      "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "zenodo_record_url": "https://zenodo.org/records/20533670",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533670",
+      "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "zenodo_record_url": "https://zenodo.org/records/20533670",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  }
+}

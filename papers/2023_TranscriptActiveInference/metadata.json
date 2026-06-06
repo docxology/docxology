@@ -50,5 +50,33 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-05-30T18:56:19Z"
+  "checked_at": "2026-05-30T18:56:19Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.8229512",
+      "record_title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "zenodo_record_url": "https://zenodo.org/records/8229512",
+      "github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
+      "release_tag": "1",
+      "release_name": "1",
+      "resource_type": {
+        "title": "Other",
+        "type": "other"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  }
 }

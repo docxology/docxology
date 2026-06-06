@@ -1786,3 +1786,51 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 150; docs: papers/2026_MusicNeverStopped/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - A Deterministic Testbed for Self-Organizing Agent-Team Coordination
+T2  - Zenodo
+DO  - 10.5281/zenodo.20533670
+UR  - https://doi.org/10.5281/zenodo.20533670
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 151; docs: papers/2026_DeterministicTestbedSelf/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Recovering LLM-Persona Accuracies from Unlabeled Votes
+T2  - Zenodo
+DO  - 10.5281/zenodo.20498700
+UR  - https://doi.org/10.5281/zenodo.20498700
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 152; docs: papers/2026_RecoveringLLMPersona/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine
+T2  - Zenodo
+DO  - 10.5281/zenodo.20533676
+UR  - https://doi.org/10.5281/zenodo.20533676
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 153; docs: papers/2026_Triplicate/
+ER  -
+
+TY  - BOOK
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Template Textbook
+T2  - Zenodo
+DO  - 10.5281/zenodo.20533126
+UR  - https://doi.org/10.5281/zenodo.20533126
+KW  - Computational
+KW  - Book
+N1  - Catalog row 154; docs: papers/2026_TemplateTextbook/
+ER  -

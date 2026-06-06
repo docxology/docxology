@@ -40,7 +40,8 @@ DOCX_FOOTER_BEGIN = "<!-- <SOFTWARE_DOCX_FOOTER_BEGIN> -->"
 DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
 
 AII_COUNT = 32
-PUBLIC_GITHUB_REPOS = 286
+DOCXOLOGY_COUNT = 56
+PUBLIC_GITHUB_REPOS = 305
 
 
 def load_rows() -> list[SoftwareRow]:
@@ -57,8 +58,8 @@ def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[Soft
     if not rows:
         raise SystemExit("No software rows parsed")
     docx, aii = split_rows(rows)
-    if len(docx) != 50:
-        raise SystemExit(f"Expected 50 docxology rows, got {len(docx)}")
+    if len(docx) != DOCXOLOGY_COUNT:
+        raise SystemExit(f"Expected {DOCXOLOGY_COUNT} docxology rows, got {len(docx)}")
     if len(aii) != AII_COUNT:
         raise SystemExit(f"Expected {AII_COUNT} AII rows, got {len(aii)}")
     return docx, aii

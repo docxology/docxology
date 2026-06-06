@@ -3,10 +3,10 @@
 
 Source of truth: data/scholar-snapshot.json (see its "policy" field).
 
-This orchestrator rewrites the citation / h-index / i10-index figures in every
-hand-maintained surface so they always match the dated snapshot. It is
-idempotent: each rule's regex matches both the pre- and post-rewrite forms and
-normalises to one canonical, dated form, so a second run produces zero diff.
+This orchestrator rewrites the citation / h-index / i10-index figures in the
+generated and profile-detail surfaces that intentionally carry dated Scholar
+metrics. README.md and llms.txt should point at data/scholar-snapshot.json
+instead of repeating current metric values.
 
 Usage:
   python code/orchestrators/sync_scholar_metrics.py            # rewrite in place
@@ -41,10 +41,10 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
     cit, h, i10, as_of = s["citations"], s["h_index"], s["i10_index"], s["as_of"]
     return {
         "README.md": [
-            (r"Google_Scholar-\d+_citations", f"Google_Scholar-{cit}_citations"),
+            (r"Google_Scholar-\d+_citations", "Google_Scholar-current_snapshot"),
             (
                 r"\*\*\d+\*\* Google Scholar citations \(h-index: \d+(?:, as of [\d-]+)?\)",
-                f"**{cit}** Google Scholar citations (h-index: {h}, as of {as_of})",
+                "Google Scholar metrics are sourced from [`data/scholar-snapshot.json`](data/scholar-snapshot.json)",
             ),
         ],
         "pages/BIBLIOGRAPHY.md": [
@@ -70,13 +70,7 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
                 f"{cit} citations · h-index {h} · i10-index {i10} (as of {as_of})",
             ),
         ],
-        "llms.txt": [
-            (
-                r"- \d+ Google Scholar citations[^\n]*",
-                f"- {cit} Google Scholar citations (h-index {h}, i10-index {i10}; "
-                f"direct dual-fetch, as of {as_of}; source of truth: data/scholar-snapshot.json)",
-            ),
-        ],
+        "llms.txt": [],
         "pages/PROFILE.md": [
             (
                 r"\*\*\d+ citations\*\* on Google Scholar \(h-index: \d+, i10-index: \d+"

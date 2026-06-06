@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for 143 publications (2015–2026), each containing README.md, AGENTS.md, and Claude Code-compatible SKILL.md.
+**Purpose**: Per-paper documentation folders for bibliography entries with in-tree README.md, AGENTS.md, and Claude Code-compatible SKILL.md files.
 
 ---
 
@@ -12,7 +12,7 @@
 - Maintains the directory index in [README.md](README.md)
 - Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
-- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders (143 entries as of 2026-05-31)
+- Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders; current folder/export counts live in [`../reports/current_counts.md`](../reports/current_counts.md)
 
 ### 🔬 RESEARCHER
 
@@ -50,9 +50,9 @@
 
 | Check | Status |
 |-------|--------|
-| README.md present | 143/143 folders (last verified 2026-05-30) |
-| AGENTS.md present | 143/143 |
-| SKILL.md present | 143/143 |
+| README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) |
+| AGENTS.md present | required per folder |
+| SKILL.md present | required per folder |
 | SKILL.md YAML frontmatter (name, description, tags) | required per folder |
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
@@ -62,18 +62,18 @@
 
 ## Folder Coverage by Domain
 
-| Domain | Works | Example Folders |
-|--------|:-----:|-----------------|
-| 🐜 Entomology | 21 | `2026_EntoLinguistics`, `2025_AntStack`, `2021_ActiveInferants`, `2019_PhDDissertation` |
-| 🧠 Active Inference | 23 | `2026_FEPLean`, `2026_CognitiveCaseDiagrams`, `2026_FocusedAttentionMeditation`, `2026_ActInfMetaAnalysis`, `2025_CEREBRUM` |
-| 🛡️ Cognitive Security | 21 | `2026_CrescentCity`, `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
-| 🎨 Art & Synergetics | 15 | `2026_BlakeJiang`, `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
-| 🧬 Genetics & Biomedical | 9 | `2015_HoneyBeeEvolution`, `2016_NuclearStructure` |
-| 💻 Computational | 8 | `2026_BiologyTextbook`, `2026_ReproducibleResearch`, `2025_DiscoveryEngine`, `2025_MDKV` |
-| 🌍 AII Ecosystem | 5 | `2025_AII_v3`, `2024_OntologySUMO` |
-| 🎥 Presentations & Media | 15 | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
+| Domain | Example Folders |
+|--------|-----------------|
+| 🐜 Entomology | `2026_EntoLinguistics`, `2025_AntStack`, `2021_ActiveInferants`, `2019_PhDDissertation` |
+| 🧠 Active Inference | `2026_FEPLean`, `2026_CognitiveCaseDiagrams`, `2026_FocusedAttentionMeditation`, `2026_ActInfMetaAnalysis`, `2025_CEREBRUM` |
+| 🛡️ Cognitive Security | `2026_CrescentCity`, `2026_CognitiveIntegrity`, `2022_InformationCommons`, `2023_P3IF`, `2020_FacilitatorsCatechism` |
+| 🎨 Art & Synergetics | `2026_BlakeJiang`, `2026_DoorsOfPerception`, `2026_BeforePragmatism`, `2023_BlakeFuller`, `2025_QuadMath` |
+| 🧬 Genetics & Biomedical | `2015_HoneyBeeEvolution`, `2016_NuclearStructure`, `2019_DennettExplained` |
+| 💻 Computational | `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, `2026_TemplateTextbook`, `2026_BiologyTextbook` |
+| 🌍 AII Ecosystem | `2025_AII_v3`, `2024_OntologySUMO` |
+| 🎥 Presentations & Media | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
 
-Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) (one row per indexed work, 125 total as of the table header).
+Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) and are generated in [`../reports/current_counts.md`](../reports/current_counts.md).
 
 ---
 

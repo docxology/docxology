@@ -17,6 +17,7 @@ from publication_pairing import GitHubRelease, PublicationPair, ZenodoRecord  # 
 from sync_paired_publications import (  # noqa: E402
     apply_publication_pair,
     build_sync_actions,
+    display_report_path,
     refresh_bibliography_counts,
 )
 
@@ -125,6 +126,14 @@ def test_build_sync_actions_marks_new_and_existing_pairs(tmp_path: Path):
     apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
     actions = build_sync_actions([pair], repo_root=tmp_path)
     assert actions[0].action_type == "update_existing"
+
+
+def test_display_report_path_handles_external_reports(tmp_path: Path):
+    repo_root = tmp_path / "repo"
+    repo_root.mkdir()
+
+    assert display_report_path(repo_root / "reports" / "paired.json", repo_root=repo_root) == "reports/paired.json"
+    assert display_report_path(tmp_path / "outside.json", repo_root=repo_root) == str(tmp_path / "outside.json")
 
 
 def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
