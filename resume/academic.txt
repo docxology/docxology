@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-06-04T22:33:06Z
+Generated: 2026-06-07T22:43:03Z
 
 Current public metrics: 154 curated works; 88 catalogued software repositories (56 owned + 32 AII); 764 Google Scholar citations, h-index 15, i10-index 17 as of 2026-05-16.
 
@@ -293,7 +293,7 @@ WORKS AND PUBLICATIONS (154)
 
 SOFTWARE (24)
 -------------
-docxology/template | Python | https://github.com/docxology/template | Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.20469500
+docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
 docxology/ActiveInferAnts | Python | https://github.com/docxology/ActiveInferAnts | Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy | paper: papers/2021_ActiveInferants/
 docxology/active_inference | Python | https://github.com/docxology/active_inference | Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling | paper: papers/2020_BehaviorEngineering/

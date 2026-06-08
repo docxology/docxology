@@ -48,7 +48,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 |---------|------|-------|
 | GeneralizedNotationNotation (GNN) | [10.5281/zenodo.19600217](https://doi.org/10.5281/zenodo.19600217) | Zenodo software record found in exact-name creator search; keep distinct from the GNN paper row |
 | Journal-Utilities v0.1.0 | [10.5281/zenodo.18686966](https://doi.org/10.5281/zenodo.18686966) | Active Inference Institute video-processing software release; authors include Active Inference Institute and Daniel Ari Friedman |
-| docxology/template v3.1.0 | [10.5281/zenodo.20469500](https://doi.org/10.5281/zenodo.20469500) | Zenodo software/version metadata for the research template repository; keep distinct from bibliography work rows |
+| docxology/template v3.3.0 | [10.5281/zenodo.20584820](https://doi.org/10.5281/zenodo.20584820) | Latest Zenodo software/version metadata for the research template repository; keep distinct from bibliography work rows |
 
 ## Software & Organization APIs
 

@@ -7,6 +7,8 @@ import sys
 from dataclasses import replace
 from pathlib import Path
 
+import pytest
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SRC_DIR = REPO_ROOT / "code" / "src"
 ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
@@ -17,6 +19,7 @@ from publication_pairing import GitHubRelease, PublicationPair, ZenodoRecord  # 
 from sync_paired_publications import (  # noqa: E402
     apply_publication_pair,
     build_sync_actions,
+    check_report,
     display_report_path,
     refresh_bibliography_counts,
 )
@@ -134,6 +137,59 @@ def test_display_report_path_handles_external_reports(tmp_path: Path):
 
     assert display_report_path(repo_root / "reports" / "paired.json", repo_root=repo_root) == "reports/paired.json"
     assert display_report_path(tmp_path / "outside.json", repo_root=repo_root) == str(tmp_path / "outside.json")
+
+
+def _write_report(root: Path, payload: dict) -> None:
+    report = root / "reports" / "paired_publications_2026-06-07.json"
+    report.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+
+def _minimal_report_payload(*, warnings: list[str] | None = None, actions: list[dict] | None = None) -> dict:
+    actions = actions or []
+    return {
+        "source": "GitHub Releases API + Zenodo Records API",
+        "counts": {
+            "github_releases": 1,
+            "zenodo_records": 1,
+            "pairs": len(actions),
+            "strong_pairs": 0,
+            "needs_review": sum(1 for action in actions if action.get("action_type") == "needs_review"),
+            "create_new": sum(1 for action in actions if action.get("action_type") == "create_new"),
+            "update_existing": sum(1 for action in actions if action.get("action_type") == "update_existing"),
+        },
+        "warnings": warnings or [],
+        "actions": actions,
+        "pairs": [],
+    }
+
+
+def test_check_report_rejects_api_warnings(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    _write_report(tmp_path, _minimal_report_payload(warnings=["github:docxology/example: rate limit exceeded"]))
+
+    with pytest.raises(SystemExit, match="API warnings"):
+        check_report(repo_root=tmp_path)
+
+
+def test_check_report_rejects_stale_create_new_existing_doi(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+    _write_report(
+        tmp_path,
+        _minimal_report_payload(
+            actions=[
+                {
+                    "action_type": "create_new",
+                    "doi": pair.doi,
+                    "title": pair.record.title,
+                }
+            ]
+        ),
+    )
+
+    with pytest.raises(SystemExit, match="stale create_new"):
+        check_report(repo_root=tmp_path)
 
 
 def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):

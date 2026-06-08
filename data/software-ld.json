@@ -12,14 +12,14 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "template",
-            "description": "Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software",
+            "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0",
             "codeRepository": "https://github.com/docxology/template",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.20469500"
+            "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
         {
             "@type": "SoftwareSourceCode",

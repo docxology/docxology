@@ -32,11 +32,11 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 ## 🧬 Repositories Owned by docxology
 
-> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 305 total public repos including forks see the [full profile](https://github.com/docxology?tab=repositories) or the [generated full inventory](../repositories.html).
+> Original repositories created and maintained under [@docxology](https://github.com/docxology), sorted by star count. Excludes profile repo, test repos, and forks. For 306 total public repos including forks see the [full profile](https://github.com/docxology?tab=repositories) or the [generated full inventory](../repositories.html).
 
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|:---:|---|
-| [template](https://github.com/docxology/template) | Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · [Zenodo software](https://doi.org/10.5281/zenodo.20469500) | Python | 13 | 2026-05 |
+| [template](https://github.com/docxology/template) | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · [Zenodo software v3.3.0](https://doi.org/10.5281/zenodo.20584820) | Python | 17 | 2026-06 |
 | [QuadCraft](https://github.com/docxology/QuadCraft) | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world | JavaScript | 9 | 2026-05 |
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond · [📄](../papers/2021_ActiveInferants/) | Python | 6 | 2026-05 |
 | [codomyrmex](https://github.com/docxology/codomyrmex) | AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration | Python | 6 | 2026-05 |
@@ -156,7 +156,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | AII Contributions (non-fork) | 32 | Catalogued repositories with docxology contributions |
 | **Grand Total** | **88** | |
 
-> *For 305 total public repositories including personal forks, see the [generated full inventory](../repositories.html) or the [GitHub profile](https://github.com/docxology?tab=repositories). AII catalog count includes source repositories with docxology contributions; the [AII GitHub API](https://api.github.com/users/ActiveInferenceInstitute) returned 51 public user-account repositories on 2026-06-04, including account-level forks and adjacent projects. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
+> *For 306 total public repositories including personal forks, see the [generated full inventory](../repositories.html) or the [GitHub profile](https://github.com/docxology?tab=repositories). AII catalog count includes source repositories with docxology contributions; the [AII GitHub API](https://api.github.com/users/ActiveInferenceInstitute) returned 51 public user-account repositories on 2026-06-07, including account-level forks and adjacent projects. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---
 

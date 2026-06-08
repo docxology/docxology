@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T20:59:10Z",
+  "generated_at": "2026-06-07T22:32:09Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -9,8 +9,8 @@
     "docxology": {
       "login": "docxology",
       "html_url": "https://github.com/docxology",
-      "public_repos": 305,
-      "updated_at": "2026-05-06T12:41:40Z"
+      "public_repos": 306,
+      "updated_at": "2026-06-06T00:12:17Z"
     },
     "ActiveInferenceInstitute": {
       "login": "ActiveInferenceInstitute",
@@ -20,14 +20,14 @@
     }
   },
   "counts": {
-    "total": 356,
-    "docxology": 305,
+    "total": 357,
+    "docxology": 306,
     "ActiveInferenceInstitute": 51,
     "curated": 88,
-    "uncataloged": 268,
-    "forks": 248,
+    "uncataloged": 269,
+    "forks": 249,
     "archived": 0,
-    "public": 356,
+    "public": 357,
     "private": 0,
     "recently_updated": 89
   },
@@ -534,7 +534,7 @@
       "updated_at": "2026-03-09T18:48:08Z",
       "pushed_at": "2026-02-08T19:05:05Z",
       "curated": true,
-      "recently_updated": true
+      "recently_updated": false
     },
     {
       "name": "courses",
@@ -774,8 +774,8 @@
       "license": "MIT",
       "default_branch": "main",
       "created_at": "2026-03-19T17:35:28Z",
-      "updated_at": "2026-06-02T20:33:28Z",
-      "pushed_at": "2026-06-02T20:32:56Z",
+      "updated_at": "2026-06-05T16:05:25Z",
+      "pushed_at": "2026-06-05T16:05:18Z",
       "curated": false,
       "recently_updated": true
     },
@@ -2189,7 +2189,7 @@
       "stars": 0,
       "forks": 1,
       "watchers": 0,
-      "open_issues": 1,
+      "open_issues": 2,
       "visibility": "public",
       "private": false,
       "fork": false,
@@ -3790,8 +3790,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-03-20T21:31:03Z",
-      "updated_at": "2026-06-01T02:06:50Z",
-      "pushed_at": "2026-06-01T02:06:45Z",
+      "updated_at": "2026-06-06T18:12:02Z",
+      "pushed_at": "2026-06-06T18:11:57Z",
       "curated": false,
       "recently_updated": true
     },
@@ -9073,8 +9073,8 @@
       "license": "Apache-2.0",
       "default_branch": "main",
       "created_at": "2025-08-18T16:48:46Z",
-      "updated_at": "2026-06-04T20:40:31Z",
-      "pushed_at": "2026-06-04T20:40:23Z",
+      "updated_at": "2026-06-07T22:28:48Z",
+      "pushed_at": "2026-06-07T22:28:44Z",
       "curated": true,
       "recently_updated": true
     },
@@ -9462,6 +9462,33 @@
       "created_at": "2026-04-27T21:30:21Z",
       "updated_at": "2026-04-27T21:30:22Z",
       "pushed_at": "2026-04-27T20:36:53Z",
+      "curated": false,
+      "recently_updated": true
+    },
+    {
+      "name": "TradingAgents",
+      "full_name": "docxology/TradingAgents",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "homepage": "https://arxiv.org/pdf/2412.20138",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "created_at": "2026-06-07T22:19:04Z",
+      "updated_at": "2026-06-07T22:19:04Z",
+      "pushed_at": "2026-06-01T02:02:48Z",
       "curated": false,
       "recently_updated": true
     },

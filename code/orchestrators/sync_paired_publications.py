@@ -954,6 +954,30 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
         raise SystemExit("Paired publication report has unexpected source")
     if "actions" not in payload or "pairs" not in payload or "counts" not in payload:
         raise SystemExit("Paired publication report missing required keys")
+    warnings = payload.get("warnings")
+    if warnings:
+        raise SystemExit(f"Paired publication report has API warnings: {len(warnings)}")
+    actions = payload.get("actions")
+    if not isinstance(actions, list):
+        raise SystemExit("Paired publication report actions must be a list")
+    counts = payload.get("counts")
+    if not isinstance(counts, dict):
+        raise SystemExit("Paired publication report counts must be an object")
+    for action_type in ("create_new", "update_existing", "needs_review"):
+        actual = sum(1 for action in actions if isinstance(action, dict) and action.get("action_type") == action_type)
+        if counts.get(action_type) != actual:
+            raise SystemExit(f"Paired publication report count mismatch for {action_type}: {counts.get(action_type)} != {actual}")
+    existing_dois = {row["doi"] for row in parse_bibliography_rows(repo_root) if row.get("doi")}
+    stale_create = [
+        str(action.get("doi"))
+        for action in actions
+        if isinstance(action, dict)
+        and action.get("action_type") == "create_new"
+        and str(action.get("doi") or "") in existing_dois
+    ]
+    if stale_create:
+        joined = ", ".join(stale_create)
+        raise SystemExit(f"Paired publication report has stale create_new actions for existing DOIs: {joined}")
     print(f"checked paired publication report ({path.relative_to(repo_root)})")
 
 
@@ -997,6 +1021,11 @@ def main(argv: list[str] | None = None) -> int:
     warnings = [*github_warnings, *zenodo_warnings]
     applied: list[AppliedPublication] = []
     changed = False
+
+    if warnings:
+        for warning in warnings:
+            print(f"warning: {warning}", file=sys.stderr)
+        raise SystemExit(f"Refusing to write paired publication report with API warnings: {len(warnings)}")
 
     if args.apply:
         for action, pair in zip(actions, pairs):

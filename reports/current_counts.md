@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-06-04T22:33:24+00:00`
+Generated: `2026-06-07T22:43:04+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -24,8 +24,8 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - works_export: `data/works.json`
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
-- public_source_snapshot: `reports/public_source_snapshot_2026-06-04.json`
-- paired_publications: `reports/paired_publications_2026-06-04.json`
+- public_source_snapshot: `reports/public_source_snapshot_2026-06-07.json`
+- paired_publications: `reports/paired_publications_2026-06-07.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
@@ -69,40 +69,40 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### GitHub Inventory
 
-- total: `356`
-- docxology: `305`
+- total: `357`
+- docxology: `306`
 - ActiveInferenceInstitute: `51`
 - curated: `88`
-- uncataloged: `268`
-- forks: `248`
+- uncataloged: `269`
+- forks: `249`
 - archived: `0`
-- public: `356`
+- public: `357`
 - private: `0`
 - recently_updated: `89`
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `305`
+- GitHub user docxology: `306`
 - GitHub user ActiveInferenceInstitute: `51`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 
 ### Paired Publications
 
-- github_releases: `109`
+- github_releases: `111`
 - zenodo_records: `100`
-- pairs: `95`
+- pairs: `115`
 - strong_pairs: `17`
-- needs_review: `78`
-- create_new: `4`
-- update_existing: `13`
+- needs_review: `98`
+- create_new: `0`
+- update_existing: `17`
 
 ### Paired Publication Decisions
 
 - decision: `accept`
 - groups: `18`
-- raw_candidates: `78`
-- note: `User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows.`
+- raw_candidates: `80`
+- note: `User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows. R10 docxology/template refreshed to latest accepted software DOI 10.5281/zenodo.20584820.`
 
 ## Validation
 

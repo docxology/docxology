@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-04T22:32:27Z",
-  "source_report": "reports/paired_publications_2026-06-04.json",
+  "generated_at": "2026-06-07T22:35:42Z",
+  "source_report": "reports/paired_publications_2026-06-07.json",
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
     "groups": 18,
-    "raw_candidates": 78,
-    "note": "User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows."
+    "raw_candidates": 80,
+    "note": "User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows. R10 docxology/template refreshed to latest accepted software DOI 10.5281/zenodo.20584820."
   },
   "groups": [
     {
@@ -1056,19 +1056,19 @@
     {
       "id": "R10",
       "decision": "accept",
-      "decided_at": "2026-06-04T22:32:27Z",
+      "decided_at": "2026-06-07T22:35:42Z",
       "decided_by": "user",
-      "doi": "10.5281/zenodo.20469500",
+      "doi": "10.5281/zenodo.20584820",
       "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
       "candidate_github_repo": "docxology/template",
       "folder": "",
       "representation": "software-catalog",
-      "raw_candidate_count": 6,
+      "raw_candidate_count": 8,
       "raw_candidates": [
         {
-          "doi": "10.5281/zenodo.20469500",
+          "doi": "10.5281/zenodo.20584820",
           "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
           "github_repo": "docxology/template",
           "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
           "release_tag": "0.1",
@@ -1082,14 +1082,14 @@
             "github_repo_self_linked"
           ],
           "review_decision": "accept",
-          "reviewed_at": "2026-06-04T22:32:27Z",
-          "review_source": "user: Accept for all",
-          "source_report": "reports/paired_publications_2026-06-04.json"
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
         },
         {
-          "doi": "10.5281/zenodo.20469500",
+          "doi": "10.5281/zenodo.20584820",
           "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
           "github_repo": "docxology/template",
           "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
           "release_tag": "0.2",
@@ -1103,14 +1103,14 @@
             "github_repo_self_linked"
           ],
           "review_decision": "accept",
-          "reviewed_at": "2026-06-04T22:32:27Z",
-          "review_source": "user: Accept for all",
-          "source_report": "reports/paired_publications_2026-06-04.json"
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
         },
         {
-          "doi": "10.5281/zenodo.20469500",
+          "doi": "10.5281/zenodo.20584820",
           "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
           "github_repo": "docxology/template",
           "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
           "release_tag": "0.3",
@@ -1124,14 +1124,14 @@
             "github_repo_self_linked"
           ],
           "review_decision": "accept",
-          "reviewed_at": "2026-06-04T22:32:27Z",
-          "review_source": "user: Accept for all",
-          "source_report": "reports/paired_publications_2026-06-04.json"
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
         },
         {
-          "doi": "10.5281/zenodo.20469500",
+          "doi": "10.5281/zenodo.20584820",
           "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
           "github_repo": "docxology/template",
           "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
           "release_tag": "0.4",
@@ -1145,14 +1145,14 @@
             "github_repo_self_linked"
           ],
           "review_decision": "accept",
-          "reviewed_at": "2026-06-04T22:32:27Z",
-          "review_source": "user: Accept for all",
-          "source_report": "reports/paired_publications_2026-06-04.json"
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
         },
         {
-          "doi": "10.5281/zenodo.20469500",
+          "doi": "10.5281/zenodo.20584820",
           "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
           "github_repo": "docxology/template",
           "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
           "release_tag": "0.5",
@@ -1166,14 +1166,14 @@
             "github_repo_self_linked"
           ],
           "review_decision": "accept",
-          "reviewed_at": "2026-06-04T22:32:27Z",
-          "review_source": "user: Accept for all",
-          "source_report": "reports/paired_publications_2026-06-04.json"
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
         },
         {
-          "doi": "10.5281/zenodo.20469500",
+          "doi": "10.5281/zenodo.20584820",
           "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "zenodo_record_url": "https://zenodo.org/records/20469500",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
           "github_repo": "docxology/template",
           "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
           "release_tag": "v3.0.0",
@@ -1187,9 +1187,51 @@
             "github_repo_self_linked"
           ],
           "review_decision": "accept",
-          "reviewed_at": "2026-06-04T22:32:27Z",
-          "review_source": "user: Accept for all",
-          "source_report": "reports/paired_publications_2026-06-04.json"
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20584820",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.2.0",
+          "release_tag": "v3.2.0",
+          "release_name": "Research Project Template v3.2.0",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
+        },
+        {
+          "doi": "10.5281/zenodo.20584820",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/20584820",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.3.0",
+          "release_tag": "v3.3.0",
+          "release_name": "v3.3.0",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-06-07T22:35:42Z",
+          "review_source": "user: software-catalog latest template lineage accepted in 2026-06-07 plan",
+          "source_report": "reports/paired_publications_2026-06-07.json"
         }
       ]
     },

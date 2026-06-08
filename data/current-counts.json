@@ -24,33 +24,33 @@
       "ActiveInferenceInstitute": 51,
       "archived": 0,
       "curated": 88,
-      "docxology": 305,
-      "forks": 248,
+      "docxology": 306,
+      "forks": 249,
       "private": 0,
-      "public": 356,
+      "public": 357,
       "recently_updated": 89,
-      "total": 356,
-      "uncataloged": 268
+      "total": 357,
+      "uncataloged": 269
     },
     "paired_publication_decisions": {
       "decision": "accept",
       "groups": 18,
-      "note": "User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows.",
-      "raw_candidates": 78
+      "note": "User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows. R10 docxology/template refreshed to latest accepted software DOI 10.5281/zenodo.20584820.",
+      "raw_candidates": 80
     },
     "paired_publications": {
-      "create_new": 4,
-      "github_releases": 109,
-      "needs_review": 78,
-      "pairs": 95,
+      "create_new": 0,
+      "github_releases": 111,
+      "needs_review": 98,
+      "pairs": 115,
       "strong_pairs": 17,
-      "update_existing": 13,
+      "update_existing": 17,
       "zenodo_records": 100
     },
     "paper_folder_docs": 147,
     "public_source_snapshot": {
       "GitHub user ActiveInferenceInstitute": 51,
-      "GitHub user docxology": 305,
+      "GitHub user docxology": 306,
       "ORCID work groups": 20,
       "PubMed exact author records": 8
     },
@@ -68,14 +68,14 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-06-04T22:33:24+00:00",
+  "generated_at": "2026-06-07T22:43:04+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
-    "paired_publications": "reports/paired_publications_2026-06-04.json",
+    "paired_publications": "reports/paired_publications_2026-06-07.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-06-04.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-06-07.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"

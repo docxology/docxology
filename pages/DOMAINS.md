@@ -169,7 +169,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 **Selected repositories**
 
-- [template](https://github.com/docxology/template) — Multi-project research template with 10-stage CI/CD pipeline, Ruff linting, multi-Python-version testing, issue/PR templates, and security scanning · Zenodo software
+- [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0
 - [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents
 - [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning
 - [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
