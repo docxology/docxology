@@ -6,7 +6,9 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import subprocess
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -32,8 +34,38 @@ def existing_lastmod() -> str | None:
     return match.group(1) if match else None
 
 
+def _fs_path(rel: str) -> str:
+    """Map a sitemap rel path to the file whose git history dates it."""
+    if rel == "" or rel.endswith("/"):
+        return rel + "index.html"
+    return rel
+
+
+@lru_cache(maxsize=None)
+def git_lastmod(rel: str) -> str | None:
+    """Last commit date (YYYY-MM-DD) for a path, or None if git is unavailable.
+
+    Gives each URL an accurate per-page <lastmod> instead of one shared date.
+    Falls back to None on shallow checkouts / exported trees so the caller can
+    use the global build date — preserving prior behaviour in those cases.
+    """
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", _fs_path(rel)],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    date = result.stdout.strip()
+    return date or None
+
+
 def url_entry(rel_path: str, changefreq: str, priority: str, lastmod: str) -> str:
-    return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
+    entry_lastmod = git_lastmod(rel_path) or lastmod
+    return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{entry_lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
 def sitemap_locs(lastmod: str | None = None) -> list[str]:
