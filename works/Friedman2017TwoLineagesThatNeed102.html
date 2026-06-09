@@ -21,6 +21,10 @@
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Two lineages that need each other">
+    <meta name="twitter:description" content="This paper discusses the dependent-lineage system in harvester ants, where two interdependent lineages are necessary for the production of reproductives an">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -37,6 +41,16 @@
         .work-detail ul{margin-left:1.2rem}
         .keyword-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
         .keyword-row span{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}
+        .breadcrumb{max-width:960px;margin:1.4rem auto 0;padding:0 2rem}
+        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
+        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
+        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
+        .breadcrumb a:hover{text-decoration:underline}
+        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+        .related-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+        .related-list li{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
+        .related-list a{color:var(--silver-bright);text-decoration:none}
+        .related-list a:hover{text-decoration:underline}
     </style>
     <script type="application/ld+json">
 {
@@ -103,6 +117,7 @@
         "https://doi.org/10.1111/mec.13964",
         "https://doi.org/10.1111/mec.13964"
     ],
+    "image": "https://danielarifriedman.com/og-publications.jpg",
     "identifier": [
         {
             "@type": "PropertyValue",
@@ -139,6 +154,32 @@
     }
 }
     </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://danielarifriedman.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Works",
+            "item": "https://danielarifriedman.com/works/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Two lineages that need each other",
+            "item": "https://danielarifriedman.com/works/Friedman2017TwoLineagesThatNeed102.html"
+        }
+    ]
+}
+    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -158,6 +199,9 @@
         </div>
     </nav>
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="../index.html">Home</a></li><li><a href="../works/">Works</a></li><li aria-current="page">Two lineages that need each other</li></ol>
+    </nav>
     <header class="work-hero">
         <p class="eyebrow">Entomology · Paper · 2017</p>
         <h1>Two lineages that need each other</h1>
@@ -196,6 +240,11 @@
                 
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>
+        </section>
+
+        <section class="section">
+            <div class="section-header"><h2>Related in Entomology</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
+            <ul class="related-list"><li><a href="Friedman2026EntoLinguisticsLanguageAmbiguity109.html">Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology</a><span class="muted"> · 2026</span></li><li><a href="Friedman2025TowardsScienceConsciousnessSocial028.html">Towards a Science of Consciousness and Social Complexity... For Ants</a><span class="muted"> · 2025</span></li><li><a href="Friedman2025AntStack025.html">The Ant Stack</a><span class="muted"> · 2025</span></li><li><a href="Friedman2025ComputationalComplexityEnergeticsAnt011.html">Computational Complexity and Energetics of the Ant Stack</a><span class="muted"> · 2025</span></li><li><a href="Friedman2024ChemicalTranscriptomicDiversityDo032.html">Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea</a><span class="muted"> · 2024</span></li><li><a href="Friedman2023ExperimentalEntomologyAgeVideo055.html">Experimental Entomology in the Age of Video</a><span class="muted"> · 2023</span></li></ul>
         </section>
     </main>
     <footer role="contentinfo">

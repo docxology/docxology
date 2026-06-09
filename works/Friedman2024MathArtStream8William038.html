@@ -21,6 +21,10 @@
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MathArt Stream #8: William Blake and Active Inference">
+    <meta name="twitter:description" content="This work explores the intersection of mathematics, art, and William Blake&#x27;s prophetic vision. Through formal analysis of Blake&#x27;s visual and poetic works,">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -37,6 +41,16 @@
         .work-detail ul{margin-left:1.2rem}
         .keyword-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
         .keyword-row span{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}
+        .breadcrumb{max-width:960px;margin:1.4rem auto 0;padding:0 2rem}
+        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
+        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
+        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
+        .breadcrumb a:hover{text-decoration:underline}
+        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+        .related-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+        .related-list li{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
+        .related-list a{color:var(--silver-bright);text-decoration:none}
+        .related-list a:hover{text-decoration:underline}
     </style>
     <script type="application/ld+json">
 {
@@ -95,6 +109,7 @@
         "https://doi.org/10.5281/zenodo.13711301",
         "https://doi.org/10.5281/zenodo.13711301"
     ],
+    "image": "https://danielarifriedman.com/og-publications.jpg",
     "identifier": [
         {
             "@type": "PropertyValue",
@@ -129,6 +144,32 @@
     }
 }
     </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://danielarifriedman.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Works",
+            "item": "https://danielarifriedman.com/works/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "MathArt Stream #8: William Blake and Active Inference",
+            "item": "https://danielarifriedman.com/works/Friedman2024MathArtStream8William038.html"
+        }
+    ]
+}
+    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -148,6 +189,9 @@
         </div>
     </nav>
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="../index.html">Home</a></li><li><a href="../works/">Works</a></li><li aria-current="page">MathArt Stream #8: William Blake and Active Inference</li></ol>
+    </nav>
     <header class="work-hero">
         <p class="eyebrow">Media &amp; Teaching · Presentation · 2024</p>
         <h1>MathArt Stream #8: William Blake and Active Inference</h1>
@@ -186,6 +230,11 @@
                 
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>
+        </section>
+
+        <section class="section">
+            <div class="section-header"><h2>Related in Media &amp; Teaching</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
+            <ul class="related-list"><li><a href="Friedman2026PersonalYouTube200Livestreams006.html">Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026ActiveInferenceJournal500002.html">Active Inference Journal — 500+ videos on Active Inference with transcripts</a><span class="muted"> · 2026</span></li><li><a href="Friedman2025SystemsProcessesActiveInference022.html">Systems Processes, Active Inference, and Beyond</a><span class="muted"> · 2025</span></li><li><a href="Friedman20255thAppliedActiveInference008.html">5th Applied Active Inference Symposium — Abstract Book</a><span class="muted"> · 2025</span></li><li><a href="Friedman2024SensemakingFederationExploringFrontiers039.html">Sensemaking Federation: Exploring the Frontiers of Digital Innovation</a><span class="muted"> · 2024</span></li><li><a href="Friedman2024BioFirmDevelopmentAtApplied030.html">BioFirm Development at Applied Active Inference Symposium 2024</a><span class="muted"> · 2024</span></li></ul>
         </section>
     </main>
     <footer role="contentinfo">

@@ -159,6 +159,59 @@ def citation_text(work: dict) -> str:
     return f"Friedman, Daniel Ari. {work['year']}. {work['title']}.{venue}"
 
 
+def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
+    """(label, absolute URL) pairs from site root to the current work."""
+    return [
+        ("Home", "https://danielarifriedman.com/"),
+        ("Works", "https://danielarifriedman.com/works/"),
+        (work["title"], f"https://danielarifriedman.com/works/{work['citation_key']}.html"),
+    ]
+
+
+def breadcrumb_json_ld(work: dict) -> str:
+    items = [
+        {"@type": "ListItem", "position": i + 1, "name": name, "item": url}
+        for i, (name, url) in enumerate(breadcrumb_trail(work))
+    ]
+    return json.dumps(
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items},
+        indent=4,
+        ensure_ascii=False,
+    )
+
+
+def breadcrumb_html(work: dict) -> str:
+    trail = breadcrumb_trail(work)
+    crumbs = []
+    for idx, (name, _url) in enumerate(trail):
+        if idx == len(trail) - 1:
+            crumbs.append(f'<li aria-current="page">{h(name)}</li>')
+        else:
+            href = "../index.html" if name == "Home" else "../works/"
+            crumbs.append(f'<li><a href="{href}">{h(name)}</a></li>')
+    return (
+        '    <nav class="breadcrumb" aria-label="Breadcrumb">\n'
+        f'        <ol>{"".join(crumbs)}</ol>\n'
+        '    </nav>'
+    )
+
+
+def related_works_html(work: dict) -> str:
+    related = work.get("related", [])
+    if not related:
+        return ""
+    items = "".join(
+        f'<li><a href="{h(r["citation_key"])}.html">{h(r["title"])}</a>'
+        f'<span class="muted"> · {h(r["year"])}</span></li>'
+        for r in related
+    )
+    return f"""
+        <section class="section">
+            <div class="section-header"><h2>Related in {h(work['domain_name'])}</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
+            <ul class="related-list">{items}</ul>
+        </section>"""
+
+
 def json_ld(work: dict) -> str:
     typ = "ScholarlyArticle" if work["type"] in {"Paper", "Book Chapter"} else "CreativeWork"
     enrich = work.get("enrichment", {})
@@ -184,6 +237,7 @@ def json_ld(work: dict) -> str:
         "inLanguage": "en",
         "citation": citation_text(work),
         "sameAs": same_as,
+        "image": "https://danielarifriedman.com/og-publications.jpg",
     }
     if work.get("doi"):
         data["identifier"] = [
@@ -236,6 +290,10 @@ def page_head(work: dict) -> str:
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{h(work['title'])}">
+    <meta name="twitter:description" content="{h(description)}">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -252,9 +310,22 @@ def page_head(work: dict) -> str:
         .work-detail ul{{margin-left:1.2rem}}
         .keyword-row{{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}}
         .keyword-row span{{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}}
+        .breadcrumb{{max-width:960px;margin:1.4rem auto 0;padding:0 2rem}}
+        .breadcrumb ol{{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}}
+        .breadcrumb li+li::before{{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}}
+        .breadcrumb a{{color:var(--silver-bright);text-decoration:none}}
+        .breadcrumb a:hover{{text-decoration:underline}}
+        .breadcrumb [aria-current=page]{{color:var(--text-secondary)}}
+        .related-list{{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}}
+        .related-list li{{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}
+        .related-list a{{color:var(--silver-bright);text-decoration:none}}
+        .related-list a:hover{{text-decoration:underline}}
     </style>
     <script type="application/ld+json">
 {json_ld(work)}
+    </script>
+    <script type="application/ld+json">
+{breadcrumb_json_ld(work)}
     </script>
 </head>
 <body>
@@ -302,6 +373,7 @@ def render_work_page(work: dict) -> str:
     return (
         page_head(work)
         + f"""
+{breadcrumb_html(work)}
     <header class="work-hero">
         <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
@@ -327,6 +399,7 @@ def render_work_page(work: dict) -> str:
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>
         </section>
+{related_works_html(work)}
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
@@ -395,6 +468,13 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
     works = load_works()
     enrichments = enrichment_map(works)
     works = [{**work, "enrichment": enrichments.get(work["citation_key"], {})} for work in works]
+    by_domain: dict[str, list[dict]] = {}
+    for w in works:
+        by_domain.setdefault(w["domain"], []).append(w)
+    for w in works:
+        siblings = [s for s in by_domain.get(w["domain"], []) if s["citation_key"] != w["citation_key"]]
+        siblings.sort(key=lambda x: (int(x["year"]), int(x["num"])), reverse=True)
+        w["related"] = siblings[:6]
     outputs = {WORKS_DIR / "index.html": render_index(works)}
     for work in works:
         outputs[WORKS_DIR / f"{work['citation_key']}.html"] = render_work_page(work)
