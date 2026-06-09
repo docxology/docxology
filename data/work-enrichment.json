@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T21:05:48Z",
+  "generated_at": "2026-06-09T13:48:30Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 154,
   "works": {
@@ -2953,7 +2953,7 @@
     },
     "Friedman2025CEREBRUMCaseEnabledReasoning118": {
       "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning118",
-      "abstract": "<div This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured repre",
+      "abstract": "This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured representa",
       "keywords": [
         "paired GitHub and Zenodo publication"
       ],
@@ -3128,7 +3128,7 @@
     },
     "Friedman2026WhenDoBugsSee126": {
       "citation_key": "Friedman2026WhenDoBugsSee126",
-      "abstract": "<p Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 µm",
+      "abstract": "Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 µm),",
       "keywords": [
         "insect olfaction",
         "infrared detection",
@@ -3496,7 +3496,7 @@
     },
     "Friedman2026MusicNeverStoppedGrateful150": {
       "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
-      "abstract": "<p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium in",
+      "abstract": "We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium integ",
       "keywords": [
         "grateful dead",
         "setlist data",
@@ -3537,7 +3537,7 @@
     },
     "Friedman2026RecoveringLLMPersonaAccuracies152": {
       "citation_key": "Friedman2026RecoveringLLMPersonaAccuracies152",
-      "abstract": "<p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-l",
+      "abstract": "Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-labe",
       "keywords": [
         "algebraic evaluation",
         "NTQR",

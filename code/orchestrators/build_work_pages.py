@@ -38,8 +38,9 @@ def strip_md(text: str) -> str:
     text = re.sub(r"`([^`]+)`", r"\1", text)
     text = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", text)
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
-    text = re.sub(r"[*_>#|]+", " ", text)
     text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"[*_>#|]+", " ", text)
+    text = re.sub(r"[<>]", " ", text)
     text = html.unescape(text)
     return re.sub(r"\s+", " ", text).strip()
 
