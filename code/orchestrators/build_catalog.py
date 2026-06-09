@@ -6,11 +6,21 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "catalog.json"
 HTML_OUT = REPO_ROOT / "catalog.html"
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+
+_BREADCRUMB = [("Home", ""), ("Data Catalog", "catalog.html")]
+
+
+def _head_extra() -> str:
+    return f"    <style>{BREADCRUMB_CSS}</style>\n{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
 
 # Self-contained creator node so Google can resolve the Dataset/DataCatalog
 # `creator` field on this page without dereferencing the index-page #person node.
@@ -178,7 +188,7 @@ def render_html(date_modified: str | None = None) -> str:
     <script type="application/ld+json">
 {render_json(date_modified)}
     </script>
-</head>
+{_head_extra()}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
@@ -186,6 +196,7 @@ def render_html(date_modified: str | None = None) -> str:
         <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
         <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="catalog.html">Data Catalog</a><a href="exports.html">Exports</a><a href="cite-verify.html">Cite</a><a href="discovery.html">Discovery</a></div>
     </nav>
+{render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero"><h1>Data Catalog</h1><p class="sub">Structured exports for the bibliography, software catalog, evidence layer, and agentic discovery surfaces.</p></header>
     <main id="main" class="main"><section class="section"><div class="catalog-grid">
 {rows}

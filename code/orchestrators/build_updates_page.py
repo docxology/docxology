@@ -7,11 +7,21 @@ import argparse
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE = REPO_ROOT / "CHANGELOG.md"
 OUT = REPO_ROOT / "updates.html"
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+
+_BREADCRUMB = [("Home", ""), ("Updates", "updates.html")]
+
+
+def _head_extra() -> str:
+    return f"    <style>{BREADCRUMB_CSS}</style>\n{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
 
 
 def h(value: object) -> str:
@@ -109,7 +119,7 @@ def render() -> str:
     <script type="application/ld+json">
 {json_ld(sections)}
     </script>
-</head>
+{_head_extra()}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
@@ -117,6 +127,7 @@ def render() -> str:
         <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
         <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="search.html">Search</a><a href="discovery.html">Discovery</a><a href="updates.html" class="active">Updates</a></div>
     </nav>
+{render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>
     <main id="main" class="main"><section class="section"><div class="updates-list">
 {body}
