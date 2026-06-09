@@ -12,7 +12,12 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import render_nav_domain  # noqa: E402
+from site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    breadcrumb_list_jsonld,
+    render_breadcrumb,
+    render_nav_domain,
+)
 
 
 @dataclass(frozen=True)
@@ -143,8 +148,21 @@ def page_head(
     og_image: str = "og-image.jpg",
     *,
     nav_active: str = "domains",
+    breadcrumb: list[tuple[str, str]] | None = None,
+    extra_jsonld: list[dict] | None = None,
 ) -> str:
     nav = render_nav_domain(active=nav_active)
+    blocks = list(extra_jsonld or [])
+    crumb_css = ""
+    crumb_html = ""
+    if breadcrumb:
+        crumb_css = BREADCRUMB_CSS
+        crumb_html = "\n" + render_breadcrumb(breadcrumb)
+        blocks.append(breadcrumb_list_jsonld(breadcrumb))
+    jsonld_html = "".join(
+        f'    <script type="application/ld+json">\n{json.dumps(b, indent=4, ensure_ascii=False)}\n    </script>\n'
+        for b in blocks
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,11 +204,12 @@ def page_head(
         .work-row .year{{color:var(--gold);font-weight:700}}
         .work-row .venue{{color:var(--text-muted);font-size:.8rem}}
         @media(max-width:760px){{.work-row{{grid-template-columns:1fr}}}}
+        {crumb_css}
     </style>
-</head>
+{jsonld_html}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-{nav}
+{nav}{crumb_html}
 """
 
 
@@ -251,8 +270,26 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
     collaborators_html = ", ".join(h(c) for c in config.collaborators)
     title = config.title
     canonical = f"domain-{config.slug}.html"
+    breadcrumb = [("Home", ""), ("Domains", "domains.html"), (config.short_title, canonical)]
+    collection_ld = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": f"https://danielarifriedman.com/{canonical}#page",
+        "name": f"{config.title} — Daniel Ari Friedman",
+        "description": config.description,
+        "url": f"https://danielarifriedman.com/{canonical}",
+        "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+        "about": {"@type": "DefinedTerm", "name": config.short_title},
+    }
     return (
-        page_head(title, config.description, canonical, f"og-{config.slug}.jpg")
+        page_head(
+            title,
+            config.description,
+            canonical,
+            f"og-{config.slug}.jpg",
+            breadcrumb=breadcrumb,
+            extra_jsonld=[collection_ld],
+        )
         + f"""
     <header class="domain-hero">
         <h1>{h(config.title)}</h1>
@@ -320,6 +357,16 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
             "Domain landing pages for Daniel Ari Friedman's research, software, collaborators, and learning pathways.",
             "domains.html",
             "og-domains.jpg",
+            breadcrumb=[("Home", ""), ("Domains", "domains.html")],
+            extra_jsonld=[{
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "@id": "https://danielarifriedman.com/domains.html#page",
+                "name": "Research Domains — Daniel Ari Friedman",
+                "description": "Domain landing pages for Daniel Ari Friedman's research, software, collaborators, and learning pathways.",
+                "url": "https://danielarifriedman.com/domains.html",
+                "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+            }],
         )
         + f"""
     <header class="domain-hero">

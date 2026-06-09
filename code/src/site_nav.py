@@ -3,6 +3,54 @@
 from __future__ import annotations
 
 import html
+import json
+
+SITE_ORIGIN = "https://danielarifriedman.com/"
+
+# Inline CSS for the breadcrumb component. Kept inline (rather than in style.css)
+# so pages render correctly without depending on a bumped style.css cache version.
+BREADCRUMB_CSS = (
+    ".breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}"
+    ".breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}"
+    ".breadcrumb li+li::before{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}"
+    ".breadcrumb a{color:var(--silver-bright);text-decoration:none}"
+    ".breadcrumb a:hover{text-decoration:underline}"
+    ".breadcrumb [aria-current=page]{color:var(--text-secondary)}"
+)
+
+
+def breadcrumb_list_jsonld(trail: list[tuple[str, str]]) -> dict:
+    """Schema.org BreadcrumbList from (label, root-relative path) pairs ('' = home)."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": label, "item": SITE_ORIGIN + rel}
+            for i, (label, rel) in enumerate(trail)
+        ],
+    }
+
+
+def breadcrumb_jsonld_script(trail: list[tuple[str, str]]) -> str:
+    payload = json.dumps(breadcrumb_list_jsonld(trail), indent=4, ensure_ascii=False)
+    return f'    <script type="application/ld+json">\n{payload}\n    </script>'
+
+
+def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
+    """Accessible visible breadcrumb nav. Last item is the current page (no link)."""
+    prefix = "../" * depth
+    out = []
+    for i, (label, rel) in enumerate(trail):
+        if i == len(trail) - 1:
+            out.append(f'<li aria-current="page">{html.escape(label)}</li>')
+        else:
+            href = f"{prefix}{rel}" if rel else f"{prefix}index.html"
+            out.append(f'<li><a href="{html.escape(href, quote=True)}">{html.escape(label)}</a></li>')
+    return (
+        '    <nav class="breadcrumb" aria-label="Breadcrumb">\n'
+        f'        <ol>{"".join(out)}</ol>\n'
+        '    </nav>'
+    )
 
 
 def render_nav(*, active: str = "", depth: int = 0) -> str:
