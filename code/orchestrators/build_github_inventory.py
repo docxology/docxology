@@ -9,6 +9,7 @@ import html
 import json
 import os
 import re
+import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -17,6 +18,28 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "github-repositories.json"
 HTML_OUT = REPO_ROOT / "repositories.html"
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+
+_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html")]
+_WEBPAGE_LD = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://danielarifriedman.com/repositories.html#page",
+    "name": "Repository Inventory — Daniel Ari Friedman",
+    "description": "Full generated inventory of public docxology and Active Inference Institute GitHub repositories, with curated catalog coverage flags.",
+    "url": "https://danielarifriedman.com/repositories.html",
+    "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+}
+
+
+def _head_extra() -> str:
+    return (
+        f"    <style>{BREADCRUMB_CSS}</style>\n"
+        f'    <script type="application/ld+json">\n{json.dumps(_WEBPAGE_LD, indent=4, ensure_ascii=False)}\n    </script>\n'
+        f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
+    )
 OWNERS = ("docxology", "ActiveInferenceInstitute")
 USER_AGENT = "docxology-github-inventory/1.0 (+https://danielarifriedman.com/)"
 BASELINE_PATH = REPO_ROOT / "data" / "github-repositories-baseline.json"
@@ -248,7 +271,7 @@ def render_html(payload: dict[str, Any]) -> str:
         .note{{color:var(--text-muted);font-size:.84rem}}
         .inventory-select{{padding:.62rem .78rem;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-secondary)}}
     </style>
-</head>
+{_head_extra()}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
@@ -256,6 +279,7 @@ def render_html(payload: dict[str, Any]) -> str:
         <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
         <div class="nav-links"><a href="publications.html">Publications</a><a href="software.html">Software</a><a href="search.html">Search</a><a href="catalog.html">Catalog</a></div>
     </nav>
+{render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero">
         <h1>Repository Inventory</h1>
         <p class="sub">Full generated inventory of public GitHub repositories for docxology and the Active Inference Institute.</p>

@@ -6,11 +6,34 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+
+_BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
+_WEBPAGE_LD = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://danielarifriedman.com/evidence.html#page",
+    "name": "Evidence Ledger — Daniel Ari Friedman",
+    "description": "Claim-level evidence ledger for Daniel Ari Friedman: source links, confidence levels, caveats, and latest public-source snapshot.",
+    "url": "https://danielarifriedman.com/evidence.html",
+    "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+}
+
+
+def _head_extra() -> str:
+    return (
+        f"    <style>{BREADCRUMB_CSS}</style>\n"
+        f'    <script type="application/ld+json">\n{json.dumps(_WEBPAGE_LD, indent=4, ensure_ascii=False)}\n    </script>\n'
+        f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
+    )
 
 try:
     from report_paths import latest_report, rel
@@ -97,7 +120,7 @@ def render_html(claims: list[dict]) -> str:
         .claim-card dd{{font-size:.82rem;color:var(--silver-bright);margin:0}}
         .claim-source{{margin-top:auto;overflow-wrap:anywhere}}
     </style>
-</head>
+{_head_extra()}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
@@ -112,6 +135,7 @@ def render_html(claims: list[dict]) -> str:
             <a href="cite-verify.html">Cite</a>
         </div>
     </nav>
+{render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero">
         <h1>Evidence Ledger</h1>
         <p class="sub">Source links, confidence levels, caveats, maintenance owners, and public-source freshness reports for key site claims.</p>

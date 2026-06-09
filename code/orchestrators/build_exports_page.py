@@ -6,10 +6,33 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "exports.html"
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+
+_BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
+_WEBPAGE_LD = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://danielarifriedman.com/exports.html#page",
+    "name": "Public Exports — Daniel Ari Friedman",
+    "description": "Machine-readable citation exports, JSON datasets, and syndication files for Daniel Ari Friedman's public research index.",
+    "url": "https://danielarifriedman.com/exports.html",
+    "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+}
+
+
+def _head_extra() -> str:
+    return (
+        f"    <style>{BREADCRUMB_CSS}</style>\n"
+        f'    <script type="application/ld+json">\n{json.dumps(_WEBPAGE_LD, indent=4, ensure_ascii=False)}\n    </script>\n'
+        f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
+    )
 
 EXPORT_ROW_SPECS: list[tuple[str, str, str, str]] = [
     ("CITATION.cff", "CITATION.cff", "Repository citation metadata for GitHub and Zenodo harvesters.", "text/x-yaml"),
@@ -89,7 +112,7 @@ def render() -> str:
         .export-card p{{color:var(--text-secondary);font-size:.86rem;line-height:1.6}}
         .export-card .mime{{display:block;margin-top:.75rem;color:var(--text-muted);font-size:.75rem;overflow-wrap:anywhere}}
     </style>
-</head>
+{_head_extra()}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
@@ -102,6 +125,7 @@ def render() -> str:
             <a href="discovery.html">Discovery</a>
         </div>
     </nav>
+{render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero">
         <h1>Public Exports</h1>
         <p class="sub">Citation-manager formats and JSON datasets. All paths are public and crawlable; this page is the HTML index face for export discovery.</p>

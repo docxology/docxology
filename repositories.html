@@ -34,6 +34,40 @@
         .note{color:var(--text-muted);font-size:.84rem}
         .inventory-select{padding:.62rem .78rem;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-secondary)}
     </style>
+    <style>.breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://danielarifriedman.com/repositories.html#page",
+    "name": "Repository Inventory — Daniel Ari Friedman",
+    "description": "Full generated inventory of public docxology and Active Inference Institute GitHub repositories, with curated catalog coverage flags.",
+    "url": "https://danielarifriedman.com/repositories.html",
+    "isPartOf": {
+        "@id": "https://danielarifriedman.com/#website"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://danielarifriedman.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Repositories",
+            "item": "https://danielarifriedman.com/repositories.html"
+        }
+    ]
+}
+    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -42,6 +76,9 @@
         <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
         <div class="nav-links"><a href="publications.html">Publications</a><a href="software.html">Software</a><a href="search.html">Search</a><a href="catalog.html">Catalog</a></div>
     </nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="index.html">Home</a></li><li aria-current="page">Repositories</li></ol>
+    </nav>
     <header class="page-hero">
         <h1>Repository Inventory</h1>
         <p class="sub">Full generated inventory of public GitHub repositories for docxology and the Active Inference Institute.</p>
@@ -49,15 +86,15 @@
     <main id="main" class="main">
         <section class="section">
         <div class="inventory-counts">
-                <div><strong>357</strong>Total public repos</div>
-                <div><strong>306</strong>docxology</div>
-                <div><strong>51</strong>AII</div>
+                <div><strong>359</strong>Total public repos</div>
+                <div><strong>307</strong>docxology</div>
+                <div><strong>52</strong>AII</div>
                 <div><strong>88</strong>Curated in software catalog</div>
-                <div><strong>357</strong>Public visibility</div>
+                <div><strong>359</strong>Public visibility</div>
                 <div><strong>0</strong>Private visibility</div>
                 <div><strong>249</strong>Forks</div>
                 <div><strong>0</strong>Archived</div>
-                <div><strong>89</strong>Updated in 90 days</div>
+                <div><strong>92</strong>Updated in 90 days</div>
             </div>
             
             <div class="inventory-controls">
@@ -232,9 +269,9 @@
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="cerebrum activeinferenceinstitute/cerebrum cerebrum: case-enabled reasoning engine with bayesian representations for unified modeling python activeinferenceinstitute curated, recent ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/CEREBRUM">ActiveInferenceInstitute/CEREBRUM</a><span>CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling</span></td>
                         <td>Python</td>
-                        <td>12</td>
+                        <td>13</td>
                         <td>3</td>
-                        <td>2026-04-10</td>
+                        <td>2026-06-09</td>
                         <td>curated, recent</td>
                     </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="cognitive activeinferenceinstitute/cognitive  python activeinferenceinstitute curated ">
@@ -381,6 +418,14 @@
                         <td>2025-05-13</td>
                         <td>curated</td>
                     </tr>
+                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="html" data-search="institute_website activeinferenceinstitute/institute_website  html activeinferenceinstitute recent ">
+                        <td><a href="https://github.com/ActiveInferenceInstitute/institute_website">ActiveInferenceInstitute/institute_website</a><span></span></td>
+                        <td>HTML</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2026-06-09</td>
+                        <td>recent</td>
+                    </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="isss activeinferenceinstitute/isss isss python activeinferenceinstitute curated ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/ISSS">ActiveInferenceInstitute/ISSS</a><span>ISSS</span></td>
                         <td>Python</td>
@@ -389,13 +434,13 @@
                         <td>2024-03-22</td>
                         <td>curated</td>
                     </tr>
-                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="" data-search="jock-lang activeinferenceinstitute/jock-lang a simple scripting language that compiles to nock.  activeinferenceinstitute fork ">
+                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="jock-lang activeinferenceinstitute/jock-lang a simple scripting language that compiles to nock.  activeinferenceinstitute fork, recent ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/jock-lang">ActiveInferenceInstitute/jock-lang</a><span>A simple scripting language that compiles to Nock.</span></td>
                         <td>—</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>2024-10-24</td>
-                        <td>fork</td>
+                        <td>2026-06-08</td>
+                        <td>fork, recent</td>
                     </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="false" data-visibility="public" data-language="html" data-search="journal-utilities activeinferenceinstitute/journal-utilities utilities and documentation for creating contents for the active inference journal html activeinferenceinstitute curated ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/Journal-Utilities">ActiveInferenceInstitute/Journal-Utilities</a><span>Utilities and Documentation for creating contents for the Active Inference Journal</span></td>
@@ -1178,7 +1223,7 @@
                         <td>HTML</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>2026-06-06</td>
+                        <td>2026-06-08</td>
                         <td>recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="dotscope docxology/dotscope the physics engine for ai coding agents.  docxology fork, recent ">
@@ -1708,6 +1753,14 @@
                         <td>0</td>
                         <td>2026-01-20</td>
                         <td>fork</td>
+                    </tr>
+                    <tr data-owner="docxology" data-curated="false" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="html" data-search="institute_website docxology/institute_website public github pages website for active inference institute information html docxology recent ">
+                        <td><a href="https://github.com/docxology/institute_website">docxology/institute_website</a><span>Public GitHub Pages website for Active Inference Institute information</span></td>
+                        <td>HTML</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2026-06-08</td>
+                        <td>recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="" data-search="interbrain docxology/interbrain mvp for projectliminality&#x27;s vision for a collective intelligence protocol  docxology fork ">
                         <td><a href="https://github.com/docxology/InterBrain">docxology/InterBrain</a><span>MVP for ProjectLiminality&#x27;s vision for a collective intelligence protocol</span></td>
@@ -2698,7 +2751,7 @@
                         <td>Python</td>
                         <td>17</td>
                         <td>1</td>
-                        <td>2026-06-07</td>
+                        <td>2026-06-09</td>
                         <td>curated, recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="template-release-smoke docxology/template-release-smoke integration smoke test for template release orchestrator (do not cite)  docxology recent ">
@@ -2960,7 +3013,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="note">Generated at 2026-06-07T22:32:09Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
+            <p class="note">Generated at 2026-06-09T03:39:56Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
         </section>
     </main>
     <footer role="contentinfo">
