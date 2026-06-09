@@ -169,7 +169,7 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 | i10-index | 17 |
 | Citations since 2021 | 495 |
 | Open-Source Repositories (owned, catalogued) | 50 |
-| GitHub Public Repositories (total) | 305 |
+| GitHub Public Repositories (total) | [Current generated count](../reports/current_counts.md) |
 | Active Inference Institute Repos (catalogued) | 32 |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |
@@ -189,8 +189,8 @@ The curated bibliography remains the source of truth for this repository. Public
 | [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | 8 exact-author biomedical records |
 | [Europe PMC](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | 10 exact-author results, including preprints |
 | [Crossref](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | 15 DOI records attached to the ORCID |
-| [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 38 exact-name records; 91 ORCID-linked versioned records and software archives |
-| [GitHub](https://github.com/docxology) | 305 public repositories on the primary profile |
+| [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 40 exact-name records; 98 ORCID-linked versioned records and software archives |
+| [GitHub](https://github.com/docxology) | Current public repository totals are recorded in [current counts](../reports/current_counts.md) and the [generated inventory](../repositories.html) |
 
 See [DISCOVERY.md](DISCOVERY.md) for canonical IDs, API endpoints, query recipes, and verification notes.
 

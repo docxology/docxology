@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T22:32:09Z",
+  "generated_at": "2026-06-09T03:39:56Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -9,27 +9,27 @@
     "docxology": {
       "login": "docxology",
       "html_url": "https://github.com/docxology",
-      "public_repos": 306,
+      "public_repos": 307,
       "updated_at": "2026-06-06T00:12:17Z"
     },
     "ActiveInferenceInstitute": {
       "login": "ActiveInferenceInstitute",
       "html_url": "https://github.com/ActiveInferenceInstitute",
-      "public_repos": 51,
-      "updated_at": "2026-05-01T18:26:30Z"
+      "public_repos": 52,
+      "updated_at": "2026-06-08T21:16:03Z"
     }
   },
   "counts": {
-    "total": 357,
-    "docxology": 306,
-    "ActiveInferenceInstitute": 51,
+    "total": 359,
+    "docxology": 307,
+    "ActiveInferenceInstitute": 52,
     "curated": 88,
-    "uncataloged": 269,
+    "uncataloged": 271,
     "forks": 249,
     "archived": 0,
-    "public": 357,
+    "public": 359,
     "private": 0,
-    "recently_updated": 89
+    "recently_updated": 92
   },
   "warnings": [],
   "repositories": [
@@ -490,9 +490,9 @@
       "description": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
       "homepage": "",
       "language": "Python",
-      "stars": 12,
+      "stars": 13,
       "forks": 3,
-      "watchers": 12,
+      "watchers": 13,
       "open_issues": 0,
       "visibility": "public",
       "private": false,
@@ -504,7 +504,7 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-04-07T22:46:41Z",
-      "updated_at": "2026-04-10T15:53:05Z",
+      "updated_at": "2026-06-09T01:43:12Z",
       "pushed_at": "2026-03-06T19:10:17Z",
       "curated": true,
       "recently_updated": true
@@ -1001,6 +1001,33 @@
       "recently_updated": false
     },
     {
+      "name": "institute_website",
+      "full_name": "ActiveInferenceInstitute/institute_website",
+      "owner": "ActiveInferenceInstitute",
+      "html_url": "https://github.com/ActiveInferenceInstitute/institute_website",
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "",
+      "default_branch": "main",
+      "created_at": "2026-06-08T21:16:12Z",
+      "updated_at": "2026-06-09T03:35:48Z",
+      "pushed_at": "2026-06-09T03:35:44Z",
+      "curated": false,
+      "recently_updated": true
+    },
+    {
       "name": "ISSS",
       "full_name": "ActiveInferenceInstitute/ISSS",
       "owner": "ActiveInferenceInstitute",
@@ -1049,10 +1076,10 @@
       "license": "MIT",
       "default_branch": "master",
       "created_at": "2024-10-24T18:12:49Z",
-      "updated_at": "2024-10-24T18:12:49Z",
+      "updated_at": "2026-06-08T17:02:25Z",
       "pushed_at": "2024-10-24T17:32:01Z",
       "curated": false,
-      "recently_updated": false
+      "recently_updated": true
     },
     {
       "name": "Journal-Utilities",
@@ -3790,8 +3817,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-03-20T21:31:03Z",
-      "updated_at": "2026-06-06T18:12:02Z",
-      "pushed_at": "2026-06-06T18:11:57Z",
+      "updated_at": "2026-06-08T00:08:56Z",
+      "pushed_at": "2026-06-08T00:08:53Z",
       "curated": false,
       "recently_updated": true
     },
@@ -5630,6 +5657,33 @@
       "pushed_at": "2026-01-20T16:04:47Z",
       "curated": false,
       "recently_updated": false
+    },
+    {
+      "name": "institute_website",
+      "full_name": "docxology/institute_website",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/institute_website",
+      "description": "Public GitHub Pages website for Active Inference Institute information",
+      "homepage": "",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "",
+      "default_branch": "main",
+      "created_at": "2026-06-08T20:02:52Z",
+      "updated_at": "2026-06-08T20:07:56Z",
+      "pushed_at": "2026-06-08T20:07:53Z",
+      "curated": false,
+      "recently_updated": true
     },
     {
       "name": "InterBrain",
@@ -9043,7 +9097,7 @@
       "stars": 17,
       "forks": 1,
       "watchers": 17,
-      "open_issues": 5,
+      "open_issues": 1,
       "visibility": "public",
       "private": false,
       "fork": false,
@@ -9073,8 +9127,8 @@
       "license": "Apache-2.0",
       "default_branch": "main",
       "created_at": "2025-08-18T16:48:46Z",
-      "updated_at": "2026-06-07T22:28:48Z",
-      "pushed_at": "2026-06-07T22:28:44Z",
+      "updated_at": "2026-06-09T03:27:13Z",
+      "pushed_at": "2026-06-09T03:27:09Z",
       "curated": true,
       "recently_updated": true
     },

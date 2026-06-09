@@ -28,6 +28,7 @@ from software_table import (
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SOFTWARE_HTML = REPO_ROOT / "software.html"
 SOFTWARE_LD_JSON = REPO_ROOT / "data" / "software-ld.json"
+GITHUB_REPOSITORIES_JSON = REPO_ROOT / "data" / "github-repositories.json"
 
 LD_SYNC_BEGIN = "<!-- <SOFTWARE_LD_SYNC_BEGIN> -->"
 LD_SYNC_END = "<!-- <SOFTWARE_LD_SYNC_END> -->"
@@ -41,11 +42,18 @@ DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
 
 AII_COUNT = 32
 DOCXOLOGY_COUNT = 56
-PUBLIC_GITHUB_REPOS = 305
 
 
 def load_rows() -> list[SoftwareRow]:
     return list(iter_software_rows(DEFAULT_SOFTWARE_PATH))
+
+
+def load_github_counts() -> dict[str, int]:
+    if not GITHUB_REPOSITORIES_JSON.is_file():
+        return {}
+    data = json.loads(GITHUB_REPOSITORIES_JSON.read_text(encoding="utf-8"))
+    counts = data.get("counts", {})
+    return {k: v for k, v in counts.items() if isinstance(v, int)}
 
 
 def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
@@ -195,10 +203,16 @@ def replace_inline_collection_ld(html_text: str) -> str:
     return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
 
 
-def replace_head_meta(html_text: str, docx_count: int) -> str:
+def replace_head_meta(html_text: str, docx_count: int, github_counts: dict[str, int]) -> str:
+    public_total = github_counts.get("total")
+    public_phrase = (
+        f"{public_total} public repositories across docxology and AII"
+        if public_total is not None
+        else "generated public GitHub repository totals"
+    )
     desc = (
         "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF. "
-        f"{PUBLIC_GITHUB_REPOS} public repositories, {docx_count} owned repos, "
+        f"{public_phrase}, {docx_count} owned repos, "
         f"and {AII_COUNT} catalogued AII contributions."
     )
     html_text = re.sub(
@@ -216,7 +230,7 @@ def replace_head_meta(html_text: str, docx_count: int) -> str:
     hero = (
         f"Open-Source Repositories • Python, Rust, Go, TypeScript, Julia<br>"
         f"{docx_count} owned repositories, {AII_COUNT} catalogued AII contributions, "
-        f"and {PUBLIC_GITHUB_REPOS} public GitHub repositories overall."
+        f"and {public_phrase}."
     )
     html_text = re.sub(
         r'(<p class="sub">)[^<]*(?:<br>[^<]*)?(</p>)',
@@ -234,6 +248,7 @@ def main() -> None:
 
     rows = load_rows()
     docx, aii = validate_rows(rows)
+    github_counts = load_github_counts()
 
     if not SOFTWARE_HTML.is_file():
         raise SystemExit(f"Missing {SOFTWARE_HTML}")
@@ -241,7 +256,7 @@ def main() -> None:
     collection = build_collection_page(rows)
     html_out = SOFTWARE_HTML.read_text(encoding="utf-8")
     html_out = replace_inline_collection_ld(html_out)
-    html_out = replace_head_meta(html_out, len(docx))
+    html_out = replace_head_meta(html_out, len(docx), github_counts)
     html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
     html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))
     html_out = replace_between_markers(

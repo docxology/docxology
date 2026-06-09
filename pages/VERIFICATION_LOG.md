@@ -18,6 +18,20 @@ nav: ["Home](../README.md)", "Evidence](EVIDENCE.md)", "Cite & Verify](CITE_VERI
 > authoritative for the fact but no source independent of it corroborates the
 > specific identifier.
 
+## 2026-06-09 — Public-source refresh for discovery and generated reports
+
+| Claim | Verdict | Primary source (independent) | Notes |
+|-------|---------|------------------------------|-------|
+| GitHub footprint | **Verified [HIGH]** | [api.github.com/users/docxology](https://api.github.com/users/docxology); [/users/ActiveInferenceInstitute](https://api.github.com/users/ActiveInferenceInstitute) | docxology = **307** public repos; AII = **52** as of 2026-06-09. `ActiveInferenceInstitute` remains a **User** account, not an Organization (`/orgs/` 404s). |
+| Publication index freshness | **Verified, dated** | [`reports/public_source_snapshot_2026-06-09.json`](../reports/public_source_snapshot_2026-06-09.json); [`reports/public_source_inventory_2026-06-09.json`](../reports/public_source_inventory_2026-06-09.json) | PubMed exact-author = 8; Europe PMC exact-author = 10; Crossref ORCID DOI records = 15; Zenodo exact-name = **40**; Zenodo ORCID-linked = **98**. Public API counts are freshness checks and include versioned/software records, not a replacement for the curated 154-row bibliography. |
+
+## 2026-06-07 — Public-source refresh for discovery and generated reports
+
+| Claim | Verdict | Primary source (independent) | Notes |
+|-------|---------|------------------------------|-------|
+| GitHub footprint | **Verified [HIGH]** | [api.github.com/users/docxology](https://api.github.com/users/docxology); [/users/ActiveInferenceInstitute](https://api.github.com/users/ActiveInferenceInstitute) | docxology = **306** public repos; AII = **51** as of 2026-06-07. `ActiveInferenceInstitute` remains a **User** account, not an Organization (`/orgs/` 404s). |
+| Publication index freshness | **Verified, dated** | [`reports/public_source_snapshot_2026-06-07.json`](../reports/public_source_snapshot_2026-06-07.json); [`reports/public_source_inventory_2026-06-07.json`](../reports/public_source_inventory_2026-06-07.json) | PubMed exact-author = 8; Europe PMC exact-author = 10; Crossref ORCID DOI records = 15; Zenodo exact-name = **40**; Zenodo ORCID-linked = **98**. Public API counts are freshness checks and include versioned/software records, not a replacement for the curated 154-row bibliography. |
+
 ## 2026-06-04 — Targeted API refresh for publication/software counts
 
 | Claim | Verdict | Primary source (independent) | Notes |

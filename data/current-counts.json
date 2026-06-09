@@ -21,16 +21,16 @@
       "data_works_json": 154
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 51,
+      "ActiveInferenceInstitute": 52,
       "archived": 0,
       "curated": 88,
-      "docxology": 306,
+      "docxology": 307,
       "forks": 249,
       "private": 0,
-      "public": 357,
-      "recently_updated": 89,
-      "total": 357,
-      "uncataloged": 269
+      "public": 359,
+      "recently_updated": 92,
+      "total": 359,
+      "uncataloged": 271
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -49,8 +49,8 @@
     },
     "paper_folder_docs": 147,
     "public_source_snapshot": {
-      "GitHub user ActiveInferenceInstitute": 51,
-      "GitHub user docxology": 306,
+      "GitHub user ActiveInferenceInstitute": 52,
+      "GitHub user docxology": 307,
       "ORCID work groups": 20,
       "PubMed exact author records": 8
     },
@@ -68,14 +68,14 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-06-07T22:43:04+00:00",
+  "generated_at": "2026-06-09T03:49:11+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
     "paired_publications": "reports/paired_publications_2026-06-07.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-06-07.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-06-09.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"

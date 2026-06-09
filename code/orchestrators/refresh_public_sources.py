@@ -12,6 +12,8 @@ import argparse
 import datetime as dt
 import json
 import os
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -22,7 +24,7 @@ ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-refresh/1.0 (https://github.com/docxology/docxology)"
 
 
-def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30) -> dict[str, Any]:
+def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30, retries: int = 2) -> dict[str, Any]:
     headers = {
         "Accept": accept,
         "User-Agent": USER_AGENT,
@@ -33,8 +35,20 @@ def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30)
         url,
         headers=headers,
     )
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        return json.loads(response.read().decode("utf-8"))
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt >= retries:
+                raise
+            retry_after = exc.headers.get("Retry-After")
+            try:
+                delay = min(float(retry_after), 10.0) if retry_after else 2.0 * (attempt + 1)
+            except ValueError:
+                delay = 2.0 * (attempt + 1)
+            time.sleep(delay)
+    raise RuntimeError("unreachable retry loop")
 
 
 def safe_fetch(label: str, url: str, extractor) -> dict[str, Any]:

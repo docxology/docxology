@@ -3,6 +3,44 @@
   "description": "Dated independent multi-source verification of load-bearing profile claims. Human-readable companion: pages/VERIFICATION_LOG.md.",
   "passes": [
     {
+      "date": "2026-06-09",
+      "method": "Public-source refresh for discovery and generated report surfaces using GitHub REST API, public-source snapshot, and paginated public-source inventory reports.",
+      "results": [
+        {
+          "claim": "github-footprint",
+          "verdict": "high",
+          "independent_source": "https://api.github.com/users/docxology",
+          "note": "docxology 307 public repos; AII 52; ActiveInferenceInstitute remains a User account not an Organization"
+        },
+        {
+          "claim": "publication-index-freshness",
+          "verdict": "verified-dated",
+          "independent_source": "reports/public_source_snapshot_2026-06-09.json",
+          "note": "PubMed exact-author 8; Europe PMC 10; Crossref ORCID 15; Zenodo exact-name 40; Zenodo ORCID-linked 98; public APIs are freshness checks, not curated bibliography replacements"
+        }
+      ],
+      "softened": []
+    },
+    {
+      "date": "2026-06-07",
+      "method": "Public-source refresh for discovery and generated report surfaces using GitHub REST API, public-source snapshot, and paginated public-source inventory reports.",
+      "results": [
+        {
+          "claim": "github-footprint",
+          "verdict": "high",
+          "independent_source": "https://api.github.com/users/docxology",
+          "note": "docxology 306 public repos; AII 51; ActiveInferenceInstitute remains a User account not an Organization"
+        },
+        {
+          "claim": "publication-index-freshness",
+          "verdict": "verified-dated",
+          "independent_source": "reports/public_source_snapshot_2026-06-07.json",
+          "note": "PubMed exact-author 8; Europe PMC 10; Crossref ORCID 15; Zenodo exact-name 40; Zenodo ORCID-linked 98; public APIs are freshness checks, not curated bibliography replacements"
+        }
+      ],
+      "softened": []
+    },
+    {
       "date": "2026-06-04",
       "method": "Targeted public API refresh for publication/software count surfaces using GitHub REST API, public-source snapshot, and paginated public-source inventory reports.",
       "results": [

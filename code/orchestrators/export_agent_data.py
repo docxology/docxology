@@ -194,10 +194,10 @@ CLAIMS = [
     },
     {
         "id": "docxology-github-public-repos",
-        "claim": "The docxology GitHub profile has 299 public repositories.",
+        "claim": "The docxology GitHub profile has 307 public repositories.",
         "status": "public-api",
-        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-05-28.json"],
-        "checked_at": "2026-05-28",
+        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-06-09.json"],
+        "checked_at": "2026-06-09",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response.",
         "maintenance_owner": "INTEGRATOR",
@@ -205,13 +205,13 @@ CLAIMS = [
     },
     {
         "id": "aii-github-public-repos",
-        "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories.",
+        "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories.",
         "status": "public-api",
         "sources": [
             "https://api.github.com/users/ActiveInferenceInstitute",
-            "reports/public_source_snapshot_2026-05-28.json"
+            "reports/public_source_snapshot_2026-06-09.json"
         ],
-        "checked_at": "2026-05-28",
+        "checked_at": "2026-06-09",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
         "maintenance_owner": "INTEGRATOR",

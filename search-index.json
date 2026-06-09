@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T22:43:04Z",
+  "generated_at": "2026-06-09T13:48:54Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 657,
+  "count": 659,
   "items": [
     {
       "id": "page:home",
@@ -251,7 +251,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-06-07.md",
+      "url": "/reports/reconciliation_2026-06-09.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -263,7 +263,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-06-07.json",
+      "url": "/reports/public_source_inventory_2026-06-09.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -276,7 +276,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-07.json",
+      "url": "/reports/accessibility_static_2026-06-09.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-07.json",
+      "url": "/reports/asset_size_2026-06-09.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -3072,7 +3072,7 @@
       "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
       "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
       "external_url": "https://doi.org/10.5281/zenodo.15231156",
-      "summary": "<div This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitiv",
+      "summary": "This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive sci",
       "year": 2025,
       "domain": "Computational",
       "tags": [
@@ -3081,7 +3081,7 @@
         "bibliography",
         "paired GitHub and Zenodo publication"
       ],
-      "content": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling Zenodo 10.5281/zenodo.15231156 Friedman2025CEREBRUMCaseEnabledReasoning118 Computational Paper <div This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured repre paired GitHub and Zenodo publication paired publication"
+      "content": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling Zenodo 10.5281/zenodo.15231156 Friedman2025CEREBRUMCaseEnabledReasoning118 Computational Paper This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured representa paired GitHub and Zenodo publication paired publication"
     },
     {
       "id": "work:Friedman2026PolicyEntanglementActiveInference119",
@@ -3248,7 +3248,7 @@
       "title": "When do bugs see (infra)red?",
       "url": "/works/Friedman2026WhenDoBugsSee126.html",
       "external_url": "https://doi.org/10.5281/zenodo.20450970",
-      "summary": "<p Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative ento",
+      "summary": "Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomol",
       "year": 2026,
       "domain": "Computational",
       "tags": [
@@ -3264,7 +3264,7 @@
         "active inference",
         "reproducible research"
       ],
-      "content": "When do bugs see (infra)red? Zenodo 10.5281/zenodo.20450970 Friedman2026WhenDoBugsSee126 Computational Paper <p Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 µm insect olfaction infrared detection vibrational theory of olfaction semiochemicals sensilla morphology electromagnetic sensing active inference reproducible research insect olfaction infrared detection vibrational theory of olfaction semiochemicals sensilla morphology"
+      "content": "When do bugs see (infra)red? Zenodo 10.5281/zenodo.20450970 Friedman2026WhenDoBugsSee126 Computational Paper Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 µm), insect olfaction infrared detection vibrational theory of olfaction semiochemicals sensilla morphology electromagnetic sensing active inference reproducible research insect olfaction infrared detection vibrational theory of olfaction semiochemicals sensilla morphology"
     },
     {
       "id": "work:Friedman2026SelfImprovementAgentHarness127",
@@ -3700,7 +3700,7 @@
       "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
       "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html",
       "external_url": "https://doi.org/10.5281/zenodo.20482026",
-      "summary": "<p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the",
+      "summary": "We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the pe",
       "year": 2026,
       "domain": "Computational",
       "tags": [
@@ -3713,7 +3713,7 @@
         "music information retrieval",
         "reproducible data compendium"
       ],
-      "content": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation Zenodo 10.5281/zenodo.20482026 Friedman2026MusicNeverStoppedGrateful150 Computational Paper <p We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium in grateful dead setlist data category theory music information retrieval reproducible data compendium grateful dead setlist data category theory music information retrieval reproducible data compendium"
+      "content": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation Zenodo 10.5281/zenodo.20482026 Friedman2026MusicNeverStoppedGrateful150 Computational Paper We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and community records , while taping and trading scholarship shows why setlists and recording metadata are cultural evidence, not merely fan trivia . The surrounding source dossier also binds the non-quantitative historical frame -- formation and Acid Test context, Wall of Sound engineering, live recording/liveness scholarship, Deadhead sociology, studio-era reception, and public recognition -- to checked sources rather than to folklore alone . The compendium integ grateful dead setlist data category theory music information retrieval reproducible data compendium grateful dead setlist data category theory music information retrieval reproducible data compendium"
     },
     {
       "id": "work:Friedman2026DeterministicTestbedSelfOrganizing151",
@@ -3743,7 +3743,7 @@
       "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
       "url": "/works/Friedman2026RecoveringLLMPersonaAccuracies152.html",
       "external_url": "https://doi.org/10.5281/zenodo.20498700",
-      "summary": "<p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"person",
+      "summary": "Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\"",
       "year": 2026,
       "domain": "Computational",
       "tags": [
@@ -3759,7 +3759,7 @@
         "ensemble evaluability",
         "constant classifier"
       ],
-      "content": "Recovering LLM-Persona Accuracies from Unlabeled Votes Zenodo 10.5281/zenodo.20498700 Friedman2026RecoveringLLMPersonaAccuracies152 Computational Paper <p Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-l algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge error-independent evaluation ensemble evaluability constant classifier AI safety warning light reproducible research answer-key-free recovery local large language models algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge"
+      "content": "Recovering LLM-Persona Accuracies from Unlabeled Votes Zenodo 10.5281/zenodo.20498700 Friedman2026RecoveringLLMPersonaAccuracies152 Computational Paper Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama. For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check. On the five models whose three judges all varied (mistral:latest, gemma4:latest, gemma3:4b, gemma2:2b, granite4.1:3b), the unsupervised algebra recovered persona accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor across all six per-labe algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge error-independent evaluation ensemble evaluability constant classifier AI safety warning light reproducible research answer-key-free recovery local large language models algebraic evaluation NTQR unsupervised evaluation evaluation on unlabeled data LLM-as-judge"
     },
     {
       "id": "work:Friedman2026TriplicateDataDrivenLarge153",
@@ -5605,6 +5605,22 @@
       "content": "ActiveInferenceInstitute/gnn generalized notation notation  ActiveInferenceInstitute  curated"
     },
     {
+      "id": "github-repo:ActiveInferenceInstitute/institute_website",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/institute_website",
+      "url": "https://github.com/ActiveInferenceInstitute/institute_website",
+      "summary": "ActiveInferenceInstitute repository",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "HTML",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/institute_website  HTML ActiveInferenceInstitute  recent"
+    },
+    {
       "id": "github-repo:ActiveInferenceInstitute/ISSS",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ISSS",
@@ -5632,9 +5648,10 @@
         "repository",
         "",
         "ActiveInferenceInstitute",
-        "fork"
+        "fork",
+        "recent"
       ],
-      "content": "ActiveInferenceInstitute/jock-lang A simple scripting language that compiles to Nock.  ActiveInferenceInstitute  fork"
+      "content": "ActiveInferenceInstitute/jock-lang A simple scripting language that compiles to Nock.  ActiveInferenceInstitute  fork recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Journal-Utilities",
@@ -8294,6 +8311,22 @@
       "content": "docxology/InsightSpike-AI Brain-Inspired Multi-Agent Architecture for “Spike of Insight” (ΔEPC × ΔIG) Python docxology  fork"
     },
     {
+      "id": "github-repo:docxology/institute_website",
+      "type": "github_repository",
+      "title": "docxology/institute_website",
+      "url": "https://github.com/docxology/institute_website",
+      "summary": "Public GitHub Pages website for Active Inference Institute information",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "HTML",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/institute_website Public GitHub Pages website for Active Inference Institute information HTML docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/InterBrain",
       "type": "github_repository",
       "title": "docxology/InterBrain",
@@ -10949,7 +10982,7 @@
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 306 public repositories.",
+      "title": "The docxology GitHub profile has 307 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -10957,12 +10990,12 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 306 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 307 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -10970,7 +11003,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 51 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",

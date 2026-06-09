@@ -228,6 +228,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/audit_assets.py",
     },
     {
+        "name": "Static accessibility report",
+        "outputs": [_latest_report("accessibility_static_*.json", "reports/accessibility_static_2026-05-13.json")],
+        "sources": ["root HTML pages", "style.css", "code/orchestrators/accessibility_audit.py"],
+        "command": "python3 code/orchestrators/accessibility_audit.py",
+    },
+    {
         "name": "Browser smoke checks",
         "outputs": [
             _latest_subdir_pngs("browser-smoke", "reports/browser-smoke/2026-05-13/*.png"),
