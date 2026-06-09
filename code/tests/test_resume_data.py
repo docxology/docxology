@@ -56,7 +56,7 @@ def test_resume_payload_merges_canonical_works_and_software_counts():
     assert payload["metrics"]["software_catalogued"] == 88
     assert len(payload["works"]) == 154
     assert len(payload["software"]) == 88
-    assert payload["metrics"]["google_scholar"]["citations"] == 764
+    assert payload["metrics"]["google_scholar"]["citations"] == 777
 
 
 def test_all_non_full_variants_have_membership():
