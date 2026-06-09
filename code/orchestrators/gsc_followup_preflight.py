@@ -122,8 +122,8 @@ def local_checks(repo_root: Path) -> list[dict]:
     results.append(
         {
             "check": "sitemap_url_count",
-            "ok": 174 <= len(locs) <= 190,
-            "detail": f"{len(locs)} URLs (expected ~181)",
+            "ok": 186 <= len(locs) <= 206,
+            "detail": f"{len(locs)} URLs (expected ~196)",
         }
     )
     papers_in_sitemap = [loc for loc in locs if "/papers/" in loc]

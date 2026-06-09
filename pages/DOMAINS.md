@@ -19,7 +19,7 @@ keywords: "Daniel Ari Friedman, research domains, Active Inference, entomology, 
 
 Ant colony behavior, physiology, transcriptomics, and computational models of collective cognition.
 
-- Works: 21
+- Works: 22
 - Selected repositories: 7
 - Collaborator context: Deborah Gordon, Karl Friston, Chris Fields
 
@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 40
+- Works: 43
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -86,7 +86,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 Narrative ecosystems, information commons, digital rhetoric, and multiagent security.
 
-- Works: 26
+- Works: 30
 - Selected repositories: 4
 - Collaborator context: RJ Cordes, Carlos Gershenson, Micah Musser
 
@@ -103,7 +103,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 - 2024 — [Bridging gaps in image meme research: A multidisciplinary paradigm](https://doi.org/10.1002/asi.24900)
 - 2024 — [Comments on National Digital Twins R&D Strategic Plan](https://doi.org/10.5281/zenodo.13273681)
 - 2024 — [FarmWorks: Decentralized AI Agents for Personalized Solutions](https://doi.org/10.5281/zenodo.13754585)
-- 2023 — [ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management](https://doi.org/10.5281/zenodo.10296601)
+- 2024 — [Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum](https://doi.org/10.5281/zenodo.13273682)
 
 **Selected repositories**
 

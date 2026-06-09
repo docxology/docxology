@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T13:48:54Z",
+  "generated_at": "2026-06-09T15:35:54Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 659,
+  "count": 669,
   "items": [
     {
       "id": "page:home",
@@ -3802,6 +3802,166 @@
         "Python"
       ],
       "content": "The Template Textbook Zenodo 10.5281/zenodo.20533126 Friedman2026TemplateTextbook154 Computational Book A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. open textbook modular manuscript reproducible publishing computational backbone Python open textbook modular manuscript reproducible publishing computational backbone Python"
+    },
+    {
+      "id": "work:Friedman2016LessonsFromColony155",
+      "type": "work",
+      "title": "Lessons from the colony",
+      "url": "/works/Friedman2016LessonsFromColony155.html",
+      "external_url": "https://www.science.org/doi/10.1126/science.352.6288.886",
+      "summary": "Paper · Science · Entomology",
+      "year": 2016,
+      "domain": "Entomology",
+      "tags": [
+        "Paper",
+        "Entomology",
+        "bibliography"
+      ],
+      "content": "Lessons from the colony Science Friedman2016LessonsFromColony155 Entomology Paper"
+    },
+    {
+      "id": "work:Friedman2016FullSpeedAheadCity156",
+      "type": "work",
+      "title": "Full speed ahead to the City on the Hill",
+      "url": "/works/Friedman2016FullSpeedAheadCity156.html",
+      "external_url": "https://doi.org/10.1126/science.352.6288.886",
+      "summary": "Paper · Science · AII Ecosystem",
+      "year": 2016,
+      "domain": "AII Ecosystem",
+      "tags": [
+        "Paper",
+        "AII Ecosystem",
+        "bibliography"
+      ],
+      "content": "Full speed ahead to the City on the Hill Science 10.1126/science.352.6288.886 Friedman2016FullSpeedAheadCity156 AII Ecosystem Paper"
+    },
+    {
+      "id": "work:Friedman2021Disinforge157",
+      "type": "work",
+      "title": "Disinforge",
+      "url": "/works/Friedman2021Disinforge157.html",
+      "external_url": "https://www.science.org/doi/10.1126/science.371.6524.22",
+      "summary": "Paper · Science · Cognitive Security",
+      "year": 2021,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography"
+      ],
+      "content": "Disinforge Science Friedman2021Disinforge157 Cognitive Security Paper"
+    },
+    {
+      "id": "work:Friedman2021DefiningEvents2020Hindsight158",
+      "type": "work",
+      "title": "Defining events: 2020 in hindsight",
+      "url": "/works/Friedman2021DefiningEvents2020Hindsight158.html",
+      "external_url": "https://doi.org/10.1126/science.371.6524.22",
+      "summary": "Paper · Science · Cognitive Security",
+      "year": 2021,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography"
+      ],
+      "content": "Defining events: 2020 in hindsight Science 10.1126/science.371.6524.22 Friedman2021DefiningEvents2020Hindsight158 Cognitive Security Paper"
+    },
+    {
+      "id": "work:Friedman2022ActiveBlockferenceCadCADActive159",
+      "type": "work",
+      "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+      "url": "/works/Friedman2022ActiveBlockferenceCadCADActive159.html",
+      "external_url": "https://doi.org/10.1007/978-3-031-28719-0_10",
+      "summary": "Paper · International Workshop on Active Inference · Active Inference",
+      "year": 2022,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography"
+      ],
+      "content": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling International Workshop on Active Inference 10.1007/978-3-031-28719-0_10 Friedman2022ActiveBlockferenceCadCADActive159 Active Inference Paper"
+    },
+    {
+      "id": "work:Friedman2024FromNeuronalPacketsThoughtseeds160",
+      "type": "work",
+      "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+      "url": "/works/Friedman2024FromNeuronalPacketsThoughtseeds160.html",
+      "external_url": "https://doi.org/10.48550/arXiv.2408.15982",
+      "summary": "Paper · arXiv · Active Inference",
+      "year": 2024,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography"
+      ],
+      "content": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace arXiv 10.48550/arXiv.2408.15982 Friedman2024FromNeuronalPacketsThoughtseeds160 Active Inference Paper"
+    },
+    {
+      "id": "work:Friedman2021KnowledgeManagementArchipelago161",
+      "type": "work",
+      "title": "Knowledge Management Archipelago",
+      "url": "/works/Friedman2021KnowledgeManagementArchipelago161.html",
+      "external_url": "https://doi.org/10.5281/zenodo.5034809",
+      "summary": "Paper · Zenodo · Cognitive Security",
+      "year": 2021,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography"
+      ],
+      "content": "Knowledge Management Archipelago Zenodo 10.5281/zenodo.5034809 Friedman2021KnowledgeManagementArchipelago161 Cognitive Security Paper"
+    },
+    {
+      "id": "work:Friedman2024CommentsSubmittedByBlockScience162",
+      "type": "work",
+      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "url": "/works/Friedman2024CommentsSubmittedByBlockScience162.html",
+      "external_url": "https://doi.org/10.5281/zenodo.13273682",
+      "summary": "Paper · Zenodo · Cognitive Security",
+      "year": 2024,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography"
+      ],
+      "content": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum Zenodo 10.5281/zenodo.13273682 Friedman2024CommentsSubmittedByBlockScience162 Cognitive Security Paper"
+    },
+    {
+      "id": "work:Friedman2017OsteopathyVariableVariabilityHealth163",
+      "type": "work",
+      "title": "Osteopathy and the Variable Variability of Health",
+      "url": "/works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
+      "external_url": "",
+      "summary": "Paper · The Cranial Letter 70(4) · Genetics & Biomedical",
+      "year": 2017,
+      "domain": "Genetics & Biomedical",
+      "tags": [
+        "Paper",
+        "Genetics & Biomedical",
+        "bibliography"
+      ],
+      "content": "Osteopathy and the Variable Variability of Health The Cranial Letter 70(4) Friedman2017OsteopathyVariableVariabilityHealth163 Genetics & Biomedical Paper"
+    },
+    {
+      "id": "work:Friedman2016CellsMechanobiologyOsteopathy164",
+      "type": "work",
+      "title": "Cells, Mechanobiology, and Osteopathy",
+      "url": "/works/Friedman2016CellsMechanobiologyOsteopathy164.html",
+      "external_url": "",
+      "summary": "Paper · The Cranial Letter 69(1) · Genetics & Biomedical",
+      "year": 2016,
+      "domain": "Genetics & Biomedical",
+      "tags": [
+        "Paper",
+        "Genetics & Biomedical",
+        "bibliography"
+      ],
+      "content": "Cells, Mechanobiology, and Osteopathy The Cranial Letter 69(1) Friedman2016CellsMechanobiologyOsteopathy164 Genetics & Biomedical Paper"
     },
     {
       "id": "software:docxology:template",
@@ -10956,7 +11116,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 154 works.",
+      "title": "The curated bibliography contains 164 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -10964,7 +11124,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 154 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 164 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
@@ -11034,7 +11194,7 @@
     {
       "id": "claim:google-scholar-citations",
       "type": "claim",
-      "title": "Google Scholar metrics are recorded as a dated snapshot: 764 citations, h-index 15, i10-index 17 (as of 2026-05-16).",
+      "title": "Google Scholar metrics are recorded as a dated snapshot: 777 citations, h-index 15, i10-index 17 (as of 2026-06-09).",
       "url": "/evidence.html",
       "summary": "dated-snapshot · confidence: high",
       "tags": [
@@ -11042,7 +11202,7 @@
         "dated-snapshot",
         "high"
       ],
-      "content": "Google Scholar metrics are recorded as a dated snapshot: 764 citations, h-index 15, i10-index 17 (as of 2026-05-16). Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value. Independent dual direct-fetch verification: two separate non-cached retrievals of the canonical profile on 2026-05-16 both returned 764 citations, h-index 15, i10-index 17."
+      "content": "Google Scholar metrics are recorded as a dated snapshot: 777 citations, h-index 15, i10-index 17 (as of 2026-06-09). Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value. Direct logged-in browser-session fetch of the canonical profile on 2026-06-09 (non-cached, non-anonymous): All-time 777 citations, h-index 15, i10-index 17 (Since-2021: 544 / 14 / 15)."
     },
     {
       "id": "claim:stanford-phd",
@@ -11153,7 +11313,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 154 works, 88 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 164 works, 88 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

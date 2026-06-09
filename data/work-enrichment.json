@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T14:08:17Z",
+  "generated_at": "2026-06-09T15:35:37Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 154,
+  "count": 164,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3601,6 +3601,86 @@
       ],
       "methods": [],
       "source": "papers/2026_TemplateTextbook/README.md"
+    },
+    "Friedman2016LessonsFromColony155": {
+      "citation_key": "Friedman2016LessonsFromColony155",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2016FullSpeedAheadCity156": {
+      "citation_key": "Friedman2016FullSpeedAheadCity156",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2021Disinforge157": {
+      "citation_key": "Friedman2021Disinforge157",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2021DefiningEvents2020Hindsight158": {
+      "citation_key": "Friedman2021DefiningEvents2020Hindsight158",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2022ActiveBlockferenceCadCADActive159": {
+      "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2024FromNeuronalPacketsThoughtseeds160": {
+      "citation_key": "Friedman2024FromNeuronalPacketsThoughtseeds160",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2021KnowledgeManagementArchipelago161": {
+      "citation_key": "Friedman2021KnowledgeManagementArchipelago161",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2024CommentsSubmittedByBlockScience162": {
+      "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2017OsteopathyVariableVariabilityHealth163": {
+      "citation_key": "Friedman2017OsteopathyVariableVariabilityHealth163",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
+    },
+    "Friedman2016CellsMechanobiologyOsteopathy164": {
+      "citation_key": "Friedman2016CellsMechanobiologyOsteopathy164",
+      "abstract": "",
+      "keywords": [],
+      "findings": [],
+      "methods": [],
+      "source": ""
     }
   }
 }

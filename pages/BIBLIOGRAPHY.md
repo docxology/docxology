@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**154 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**164 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**133** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**143** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **154** works in the table below **·** **147** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **164** works in the table below **·** **147** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -192,13 +192,23 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 152 | 2026 | 💻 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) | [📁](../papers/2026_RecoveringLLMPersona/) |
 | 153 | 2026 | 💻 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676) | [📁](../papers/2026_Triplicate/) |
 | 154 | 2026 | 💻 | Book | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126) | [📁](../papers/2026_TemplateTextbook/) |
+| 155 | 2016 | 🐜 | Paper | Lessons from the colony | *Science* | [science.org](https://www.science.org/doi/10.1126/science.352.6288.886) | — |
+| 156 | 2016 | 🌍 | Paper | Full speed ahead to the City on the Hill | *Science* | [10.1126/science.352.6288.886](https://doi.org/10.1126/science.352.6288.886) | — |
+| 157 | 2021 | 🛡️ | Paper | Disinforge | *Science* | [science.org](https://www.science.org/doi/10.1126/science.371.6524.22) | — |
+| 158 | 2021 | 🛡️ | Paper | Defining events: 2020 in hindsight | *Science* | [10.1126/science.371.6524.22](https://doi.org/10.1126/science.371.6524.22) | — |
+| 159 | 2022 | 🧠 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | *International Workshop on Active Inference* | [10.1007/978-3-031-28719-0_10](https://doi.org/10.1007/978-3-031-28719-0_10) | — |
+| 160 | 2024 | 🧠 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | *arXiv* | [arXiv:2408.15982](https://doi.org/10.48550/arXiv.2408.15982) | — |
+| 161 | 2021 | 🛡️ | Paper | Knowledge Management Archipelago | *Zenodo* | [10.5281/zenodo.5034809](https://doi.org/10.5281/zenodo.5034809) | — |
+| 162 | 2024 | 🛡️ | Paper | Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum | *Zenodo* | [10.5281/zenodo.13273682](https://doi.org/10.5281/zenodo.13273682) | — |
+| 163 | 2017 | 🧬 | Paper | Osteopathy and the Variable Variability of Health | *The Cranial Letter 70(4)* | — | — |
+| 164 | 2016 | 🧬 | Paper | Cells, Mechanobiology, and Osteopathy | *The Cranial Letter 69(1)* | — | — |
 ---
 
 ## Domain Index
 
 ### 🐜 Entomology
 
-> 21 works (2016–2026)
+> 22 works (2016–2026)
 
 - **2026** — Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology · [📁](../papers/2026_EntoLinguistics/)
 - **2025** — Computational Complexity and Energetics of the Ant Stack · [📁](../papers/2025_AntStackComplexity/)
@@ -210,7 +220,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🧠 Active Inference
 
-> 35 works (2018–2026)
+> 37 works (2018–2026)
 
 - **2026** — Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics · [📁](../papers/2026_FEPLean/)
 - **2026** — Compositional Approaches to Linguistic Case for Cognitive Modeling · [📁](../papers/2026_CognitiveCaseDiagrams/)
@@ -225,7 +235,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🛡️ Cognitive Security
 
-> 26 works (2020–2026)
+> 30 works (2020–2026)
 
 - **2026** — Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast · [📁](../papers/2026_CrescentCity/)
 - **2026** — Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) · [📁](../papers/2026_CognitiveIntegrity/)
@@ -265,7 +275,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🌍 AII Ecosystem
 
-> 5 works (2022–2025)
+> 6 works (2016–2025)
 
 - **2025** — The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) · [📁](../papers/2025_AII_v3/)
 - **2024** — Aligning Active Inference Ontology to SUMO · [📁](../papers/2024_OntologySUMO/)
@@ -286,7 +296,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🧬 Genetics & Biomedical
 
-> 13 works (2015–2024)
+> 15 works (2015–2024)
 
 - **2024** — Why Paleolithic Rockstars were both enigmatic and sporadic · [📁](../papers/2024_PaleolithicRockstars/)
 - **2023** — To comment or not to comment · [📁](../papers/2023_ToComment/)

@@ -3837,5 +3837,249 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20533126",
     "URL": "https://doi.org/10.5281/zenodo.20533126"
+  },
+  {
+    "id": "Friedman2016LessonsFromColony155",
+    "type": "article-journal",
+    "title": "Lessons from the colony",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 155; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "URL": "https://www.science.org/doi/10.1126/science.352.6288.886"
+  },
+  {
+    "id": "Friedman2016FullSpeedAheadCity156",
+    "type": "article-journal",
+    "title": "Full speed ahead to the City on the Hill",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 156; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "DOI": "10.1126/science.352.6288.886",
+    "URL": "https://doi.org/10.1126/science.352.6288.886"
+  },
+  {
+    "id": "Friedman2021Disinforge157",
+    "type": "article-journal",
+    "title": "Disinforge",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 157; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "URL": "https://www.science.org/doi/10.1126/science.371.6524.22"
+  },
+  {
+    "id": "Friedman2021DefiningEvents2020Hindsight158",
+    "type": "article-journal",
+    "title": "Defining events: 2020 in hindsight",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 158; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "DOI": "10.1126/science.371.6524.22",
+    "URL": "https://doi.org/10.1126/science.371.6524.22"
+  },
+  {
+    "id": "Friedman2022ActiveBlockferenceCadCADActive159",
+    "type": "article-journal",
+    "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 159; docs: not available",
+    "container-title": "International Workshop on Active Inference",
+    "publisher": "International Workshop on Active Inference",
+    "DOI": "10.1007/978-3-031-28719-0_10",
+    "URL": "https://doi.org/10.1007/978-3-031-28719-0_10"
+  },
+  {
+    "id": "Friedman2024FromNeuronalPacketsThoughtseeds160",
+    "type": "article-journal",
+    "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 160; docs: not available",
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "DOI": "10.48550/arXiv.2408.15982",
+    "URL": "https://doi.org/10.48550/arXiv.2408.15982"
+  },
+  {
+    "id": "Friedman2021KnowledgeManagementArchipelago161",
+    "type": "article-journal",
+    "title": "Knowledge Management Archipelago",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 161; docs: not available",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.5034809",
+    "URL": "https://doi.org/10.5281/zenodo.5034809"
+  },
+  {
+    "id": "Friedman2024CommentsSubmittedByBlockScience162",
+    "type": "article-journal",
+    "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 162; docs: not available",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.13273682",
+    "URL": "https://doi.org/10.5281/zenodo.13273682"
+  },
+  {
+    "id": "Friedman2017OsteopathyVariableVariabilityHealth163",
+    "type": "article-journal",
+    "title": "Osteopathy and the Variable Variability of Health",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 163; docs: not available",
+    "container-title": "The Cranial Letter 70(4)",
+    "publisher": "The Cranial Letter 70(4)"
+  },
+  {
+    "id": "Friedman2016CellsMechanobiologyOsteopathy164",
+    "type": "article-journal",
+    "title": "Cells, Mechanobiology, and Osteopathy",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 164; docs: not available",
+    "container-title": "The Cranial Letter 69(1)",
+    "publisher": "The Cranial Letter 69(1)"
   }
 ]

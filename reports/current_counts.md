@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-06-09T03:49:11+00:00`
+Generated: `2026-06-09T15:35:54+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -30,7 +30,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ## Counts
 
-- Bibliography works: `154`
+- Bibliography works: `164`
 - Paper-folder docs: `147`
 - Bibliography docs links: `147`
 
@@ -38,21 +38,21 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 - Books: `5`
 - Courses: `3`
-- Papers: `133`
+- Papers: `143`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
 
 ### Domains
 
-- Entomology: `21`
-- Active Inference: `35`
-- Cognitive Security: `26`
+- Entomology: `22`
+- Active Inference: `37`
+- Cognitive Security: `30`
 - Art & Synergetics: `15`
 - Computational: `24`
-- AII Ecosystem: `5`
+- AII Ecosystem: `6`
 - Presentations & Media: `15`
-- Genetics & Biomedical: `13`
+- Genetics & Biomedical: `15`
 
 ### Software
 
@@ -62,9 +62,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `154`
+- data_works_json: `164`
 - data_software_json: `88`
-- data_publications_ld_main_entity: `154`
+- data_publications_ld_main_entity: `164`
 - data_software_ld_main_entity: `88`
 
 ### GitHub Inventory

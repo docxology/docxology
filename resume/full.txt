@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-06-09T15:19:14Z
+Generated: 2026-06-09T15:35:37Z
 
-Current public metrics: 154 curated works; 88 catalogued software repositories (56 owned + 32 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 164 curated works; 88 catalogued software repositories (56 owned + 32 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (154)
+WORKS AND PUBLICATIONS (164)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -318,6 +318,16 @@ WORKS AND PUBLICATIONS (154)
 [152] 2026 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | Zenodo | 10.5281/zenodo.20498700
 [153] 2026 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | Zenodo | 10.5281/zenodo.20533676
 [154] 2026 | Book | The Template Textbook | Zenodo | 10.5281/zenodo.20533126
+[155] 2016 | Paper | Lessons from the colony | Science | https://www.science.org/doi/10.1126/science.352.6288.886
+[156] 2016 | Paper | Full speed ahead to the City on the Hill | Science | 10.1126/science.352.6288.886
+[157] 2021 | Paper | Disinforge | Science | https://www.science.org/doi/10.1126/science.371.6524.22
+[158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.371.6524.22
+[159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
+[160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
+[161] 2021 | Paper | Knowledge Management Archipelago | Zenodo | 10.5281/zenodo.5034809
+[162] 2024 | Paper | Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum | Zenodo | 10.5281/zenodo.13273682
+[163] 2017 | Paper | Osteopathy and the Variable Variability of Health | The Cranial Letter 70(4)
+[164] 2016 | Paper | Cells, Mechanobiology, and Osteopathy | The Cranial Letter 69(1)
 
 SOFTWARE (88)
 -------------
