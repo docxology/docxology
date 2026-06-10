@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Publications — Daniel Ari Friedman, PhD",
-    "description": "Complete bibliography: 164 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
+    "description": "Complete bibliography: 165 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -2794,6 +2794,23 @@
                 "name": "The Cranial Letter 69(1)"
             },
             "keywords": "🧬"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "iTrace: verification-first webcam eye-movement analysis",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.20614909"
         }
     ]
 }

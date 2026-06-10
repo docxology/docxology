@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 24
+- Works: 25
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -176,4 +176,35 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 - [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+
+## 🧬 [Genetics & Biomedicine](../domain-biomedicine.html)
+
+Honey bee evolution, gene expression variation, nuclear structure, population genetics, and biomedical mechanisms.
+
+- Works: 15
+- Selected repositories: 5
+- Collaborator context: Deborah Gordon, UC Davis Genetics, Stanford Biology
+
+**Learning path**
+
+- Start with the harvester ant brain gene-expression and behavioral-genetics papers for the core empirical thread.
+- Read the honey bee evolution and population-genetics commentaries for comparative context.
+- Use the open biology textbook and course materials for foundational background.
+
+**Selected works**
+
+- 2025 — [Con-cat-enate: emulation of Cat Hippocampus](https://doi.org/10.5281/zenodo.14738798)
+- 2025 — [BevCyc - posit on primitive drivers of creatures](https://doi.org/10.5281/zenodo.14737076)
+- 2025 — [Beacons - pre emulation of social cortex](https://doi.org/10.5281/zenodo.14737060)
+- 2025 — [Con-cat-enate: pilot overview](https://doi.org/10.5281/zenodo.14737043)
+- 2024 — [Why Paleolithic Rockstars were both enigmatic and sporadic](https://doi.org/10.1016/j.plrev.2024.04.010)
+- 2023 — [To comment or not to comment](https://doi.org/10.1016/j.plrev.2023.06.002)
+
+**Selected repositories**
+
+- [MetaInformAnt](https://github.com/docxology/MetaInformAnt) — Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond
+- [EvoJump](https://github.com/docxology/EvoJump) — Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics
+- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

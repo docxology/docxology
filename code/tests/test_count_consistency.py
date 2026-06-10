@@ -34,10 +34,10 @@ def test_collect_count_drift_clean_after_sync():
 
 def test_current_canonical_source_counts():
     rows = parse_bibliography_rows()
-    assert len(rows) == 164
-    assert sum(1 for row in rows if "../papers/" in row["docs"]) == 147
+    assert len(rows) == 165
+    assert sum(1 for row in rows if "../papers/" in row["docs"]) == 148
     assert Counter(row["type"] for row in rows) == {
-        "Paper": 143,
+        "Paper": 144,
         "Presentation": 9,
         "Book": 5,
         "Course": 3,
@@ -49,9 +49,9 @@ def test_current_canonical_source_counts():
         "\U0001f9e0": 37,
         "\U0001f6e1\ufe0f": 30,
         "\U0001f3a8": 15,
-        "\U0001f4bb": 24,
+        "\U0001f4bb": 25,
         "\U0001f30d": 6,
         "\U0001f3a5": 15,
         "\U0001f9ec": 15,
     }
-    assert parse_software_catalog_counts() == (56, 32)
+    assert parse_software_catalog_counts() == (57, 32)

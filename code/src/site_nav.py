@@ -7,6 +7,47 @@ import json
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
+
+def clip_description(text: str, limit: int = 155) -> str:
+    """Clip a meta description to <= limit chars on a word boundary.
+
+    Avoids cutting mid-word; appends an ellipsis when truncation occurs.
+    Used for SERP snippets, og:description, and twitter:description.
+    """
+    text = " ".join(str(text or "").split()).strip()
+    if len(text) <= limit:
+        return text
+    cut = text[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-")
+    if not cut:  # single very long token; hard cut as last resort
+        cut = text[: limit - 1].rstrip()
+    return cut + "…"
+
+
+def social_meta_tags(
+    og_title: str,
+    description: str,
+    og_image_url: str,
+    *,
+    image_alt: str,
+    indent: str = "    ",
+) -> str:
+    """og:image:alt + Twitter summary_large_image card tags.
+
+    Returns a newline-joined block (no trailing newline) mirroring the page's
+    Open Graph values so X/Slack/Discord render large-image previews. og_title
+    should match the page's og:title; description should already be clipped.
+    """
+    esc = lambda v: html.escape(str(v), quote=True)  # noqa: E731
+    lines = [
+        f'{indent}<meta property="og:image:alt" content="{esc(image_alt)}">',
+        f'{indent}<meta name="twitter:card" content="summary_large_image">',
+        f'{indent}<meta name="twitter:title" content="{esc(og_title)}">',
+        f'{indent}<meta name="twitter:description" content="{esc(description)}">',
+        f'{indent}<meta name="twitter:image" content="{esc(og_image_url)}">',
+    ]
+    return "\n".join(lines)
+
+
 # Inline CSS for the breadcrumb component. Kept inline (rather than in style.css)
 # so pages render correctly without depending on a bumped style.css cache version.
 BREADCRUMB_CSS = (

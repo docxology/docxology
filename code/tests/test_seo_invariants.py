@@ -12,6 +12,8 @@ from seo_invariants import (  # noqa: E402
     REDIRECT_STUBS,
     check_paper_pages,
     check_sitemap_policy,
+    check_social_meta,
+    check_work_descriptions,
     collect_seo_errors,
 )
 
@@ -33,3 +35,11 @@ def test_redirect_stub_list_covers_known_stubs():
     rels = {rel for rel, _ in REDIRECT_STUBS}
     assert "about.html" in rels
     assert "nft.html" in rels
+
+
+def test_indexable_pages_have_twitter_and_og_alt():
+    assert check_social_meta(REPO_ROOT) == []
+
+
+def test_work_descriptions_not_truncated_midword():
+    assert check_work_descriptions(REPO_ROOT) == []

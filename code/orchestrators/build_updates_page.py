@@ -114,6 +114,13 @@ def render() -> str:
     <meta property="og:description" content="Recent changes to the public research and software index.">
     <meta property="og:url" content="https://danielarifriedman.com/updates.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Updates — Daniel Ari Friedman">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Updates — Daniel Ari Friedman">
+    <meta name="twitter:description" content="Recent changes to the public research and software index.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>.updates-list{{display:grid;gap:1rem;max-width:920px;margin:0 auto}}.update-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem}}.update-card h2{{font-size:1.1rem;color:var(--gold);margin-bottom:.7rem}}.update-card li{{margin:.45rem 0;color:var(--text-secondary);line-height:1.65}}.update-card code{{font-size:.86em;color:var(--silver-bright);background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:4px;padding:.05rem .24rem;overflow-wrap:anywhere}}</style>
     <script type="application/ld+json">

@@ -15,7 +15,7 @@ WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import render_nav  # noqa: E402
+from site_nav import clip_description, render_nav, social_meta_tags  # noqa: E402
 
 try:
     from report_paths import generated_timestamp
@@ -266,7 +266,7 @@ def json_ld(work: dict) -> str:
 
 def page_head(work: dict) -> str:
     description = work.get("enrichment", {}).get("abstract") or f"{work['type']} in {work['domain_name']} by Daniel Ari Friedman, catalogued in the unified bibliography."
-    description = description[:155].rstrip()
+    description = clip_description(description)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -290,6 +290,7 @@ def page_head(work: dict) -> str:
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{h(work['title'])}">
     <meta name="twitter:description" content="{h(description)}">
@@ -351,12 +352,15 @@ def render_work_page(work: dict) -> str:
     methods = enrich.get("methods", [])
     detail_sections = ""
     if abstract or keywords:
+        abstract_html = f"<p>{h(abstract)}</p>" if abstract else "<p>Detailed local abstract is not available for this work yet.</p>"
+        keyword_spans = "".join(f"<span>{h(k)}</span>" for k in keywords)
+        keyword_row = f'<div class="keyword-row">{keyword_spans}</div>' if keywords else ""
         detail_sections += f"""
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                {f'<p>{h(abstract)}</p>' if abstract else '<p>Detailed local abstract is not available for this work yet.</p>'}
-                {f'<div class="keyword-row">{''.join(f'<span>{h(k)}</span>' for k in keywords)}</div>' if keywords else ''}
+                {abstract_html}
+                {keyword_row}
             </div>
         </section>"""
     if findings or methods:
@@ -441,6 +445,11 @@ def render_index(works: list[dict]) -> str:
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Works Index — Daniel Ari Friedman">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Works Index — Daniel Ari Friedman">
+    <meta name="twitter:description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <style>.work-list{{display:grid;gap:.75rem}}.work-row{{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}.work-row .year{{color:var(--gold);font-weight:700}}.work-row .venue{{color:var(--text-muted);font-size:.8rem}}@media(max-width:760px){{.work-row{{grid-template-columns:1fr}}}}</style>
 </head>
 <body>

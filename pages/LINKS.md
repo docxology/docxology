@@ -188,7 +188,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
 | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
-| [SOFTWARE.md](SOFTWARE.md) | 56 owned repos + 32 AII contributions |
+| [SOFTWARE.md](SOFTWARE.md) | 57 owned repos + 32 AII contributions |
 | [DOMAINS.md](DOMAINS.md) / [domains.html](../domains.html) | Research domain paths through works, software, collaborators, and learning routes |
 | [DISCOVERY.md](DISCOVERY.md) | Canonical IDs, API endpoints, exact public-source queries, and verification notes |
 | [cite-verify.html](../cite-verify.html) / [CITE_VERIFY.md](CITE_VERIFY.md) | Preferred citation metadata, public identifiers, and source-of-truth rules |

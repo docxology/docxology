@@ -17,6 +17,13 @@
     <meta property="og:description" content="Recent changes to the public research and software index.">
     <meta property="og:url" content="https://danielarifriedman.com/updates.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Updates — Daniel Ari Friedman">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Updates — Daniel Ari Friedman">
+    <meta name="twitter:description" content="Recent changes to the public research and software index.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>.updates-list{display:grid;gap:1rem;max-width:920px;margin:0 auto}.update-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem}.update-card h2{font-size:1.1rem;color:var(--gold);margin-bottom:.7rem}.update-card li{margin:.45rem 0;color:var(--text-secondary);line-height:1.65}.update-card code{font-size:.86em;color:var(--silver-bright);background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:4px;padding:.05rem .24rem;overflow-wrap:anywhere}</style>
     <script type="application/ld+json">
@@ -27,7 +34,7 @@
     "url": "https://danielarifriedman.com/updates.html",
     "name": "Updates — Daniel Ari Friedman",
     "description": "Human-readable changelog for the docxology public research and software index.",
-    "dateModified": "2026-06-04",
+    "dateModified": "2026-06-10",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
@@ -40,36 +47,42 @@
             {
                 "@type": "ListItem",
                 "position": 1,
+                "name": "2026-06-10",
+                "description": "SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: `build_work_pages.py` now clips on a word boundary with an ellipsis via new `clip_description()` in `code/src/site_nav.py` (145 of 165 work descriptions corrected; rendered length ≤160). Added Twitter Card (`summary_large_image`) and `og:image:alt` tags site-wide. Generators (`build_work_pages`, `build_domain_pages`, `build_catalog`, `build_exports_page`, `build_evidence_page`, `build_updates_page`, `build_g"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
                 "name": "2026-06-04",
                 "description": "Applied four strong GitHub release + Zenodo publication pairs: `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, and `2026_TemplateTextbook`; bibliography **150→154**, paper folders **143→147**. Refreshed represented GitHub/Zenodo publication pairs for existing works, including `WhenDoBugs`, `MusicNeverStopped`, `BeeStack`, `BiologyTextbook`, `CrescentCity`, and template-derived exemplars; left review-only pairings untouched. Added six owned repositories to the cur"
             },
             {
                 "@type": "ListItem",
-                "position": 2,
+                "position": 3,
                 "name": "2026-05-26",
                 "description": "Thermo-nuclear documentation pass: aligned volatile counts (116 works / 109 paper folders) across `llms.txt`, release notes, and publications head meta; added count-consistency validation (`code/src/count_consistency.py`). Refactored `publications.html` to load catalog rows from `data/works.json` via `js/publications.js`; externalized CollectionPage JSON-LD to `data/publications-ld.json` (166-line shell). Added `docs/SECURITY.md`, `docs/DESIGN_SYSTEM.md`, `reports/web_assessment_2026-05-26.md`, "
             },
             {
                 "@type": "ListItem",
-                "position": 3,
+                "position": 4,
                 "name": "2026-05-19",
                 "description": "Added `2026_CrescentCity` — *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast* (DOI [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171); repo `docxology/crescent_city`), filed under Cognitive Security. Created the per-paper documentation set: `README.md`, `AGENTS.md`, `SKILL.md`, `CITATION.cff`, and `metadata.json`. Registered the work in `papers/paper_metadata.json`, the `papers/README.md` index, and `papers/AGENTS.md` (counts + mainte"
             },
             {
                 "@type": "ListItem",
-                "position": 4,
+                "position": 5,
                 "name": "2026-05-13",
                 "description": "Added machine-readable discovery artifacts: `llms.txt`, `CITATION.cff`, `codemeta.json`, bibliography exports, and structured `data/*.json`. Added domain landing pages, per-work landing pages, a generated search index, and an RSS feed. Added `search.html`, `opensearch.xml`, `catalog.html`, `data/catalog.json`, `GENERATED.md`, and `data/generated-manifest.json` for human search, browser discovery, dataset discovery, and generated-file rebuild provenance. Enriched generated work pages and the sear"
             },
             {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 6,
                 "name": "2026-05-12",
                 "description": "Performed repo-wide README and AGENTS audit. Updated public GitHub repository count and domain figures from bibliography ground truth. Verified public-source discrepancies around Google Scholar cache, AII officers, board size, and Scientific Advisory Board context."
             },
             {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 7,
                 "name": "2026-05-04",
                 "description": "Renamed paper folders from author-title form to `YYYY_Topic`. Added `2020_FacilitatorsCatechism`. Added shared bibliography-table parser and publication HTML synchronization script."
             }
@@ -111,6 +124,10 @@
     </nav>
     <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>
     <main id="main" class="main"><section class="section"><div class="updates-list">
+            <article class="update-card">
+                <h2>2026-06-10</h2>
+                <ul><li>SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: <code>build_work_pages.py</code> now clips on a word boundary with an ellipsis via new <code>clip_description()</code> in <code>code/src/site_nav.py</code> (145 of 165 work descriptions corrected; rendered length ≤160).</li><li>Added Twitter Card (<code>summary_large_image</code>) and <code>og:image:alt</code> tags site-wide. Generators (<code>build_work_pages</code>, <code>build_domain_pages</code>, <code>build_catalog</code>, <code>build_exports_page</code>, <code>build_evidence_page</code>, <code>build_updates_page</code>, <code>build_github_inventory</code>) emit them; hand-maintained pages (index, publications, art, videos, collaborators, search, discovery, cite-verify, media, software) are covered by a new idempotent <code>code/orchestrators/ensure_social_meta.py</code>.</li><li>Added the sixth research-domain landing page <code>domain-biomedicine.html</code> (Genetics &amp; Biomedicine, , 15 works) with <code>og-biomedicine.jpg</code>; added to <code>sitemap_policy.py</code>; relinked the homepage card from a raw <code>pages/BIBLIOGRAPHY.md#…</code> anchor to the new page.</li><li>Polished homepage: removed duplicate <code>theme-color</code> and standardized to <code>#0c0c0e</code> (matches manifest); tightened the meta/og description to 153 chars; added word separators between publication-card title/venue/citation spans so text extractors and screen readers no longer read them run-together.</li><li>New SEO invariants in <code>code/src/seo_invariants.py</code> (<code>check_social_meta</code>, <code>check_work_descriptions</code>) with tests in <code>test_seo_invariants.py</code> and <code>test_site_nav.py</code>; full suite 88 passing.</li></ul>
+            </article>
             <article class="update-card">
                 <h2>2026-06-04</h2>
                 <ul><li>Applied four strong GitHub release + Zenodo publication pairs: <code>2026_DeterministicTestbedSelf</code>, <code>2026_RecoveringLLMPersona</code>, <code>2026_Triplicate</code>, and <code>2026_TemplateTextbook</code>; bibliography **150→154**, paper folders **143→147**.</li><li>Refreshed represented GitHub/Zenodo publication pairs for existing works, including <code>WhenDoBugs</code>, <code>MusicNeverStopped</code>, <code>BeeStack</code>, <code>BiologyTextbook</code>, <code>CrescentCity</code>, and template-derived exemplars; left review-only pairings untouched.</li><li>Added six owned repositories to the curated software catalog (<code>template_autoscientists</code>, <code>template_newspaper</code>, <code>template_textbook</code>, <code>ntqr_llm</code>, <code>grateful_data</code>, <code>cohereants</code>); software catalog **50→56 owned**, **82→88 total**.</li><li>Recorded June 4 public API counts: docxology GitHub **305** public repositories, AII **51**, Zenodo exact-name **40**, Zenodo ORCID-linked **98**; treated <code>docxology/template</code> DOI [10.5281/zenodo.20469500](https://doi.org/10.5281/zenodo.20469500) as software/version metadata, not a bibliography work row.</li><li>Expanded volatile-count validation across README, AGENTS files, BIBLIOGRAPHY summaries, Discovery, <code>llms.txt</code>, software JSON/LD, and GitHub inventory counts.</li></ul>

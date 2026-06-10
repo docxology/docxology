@@ -41,7 +41,7 @@ DOCX_FOOTER_BEGIN = "<!-- <SOFTWARE_DOCX_FOOTER_BEGIN> -->"
 DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
 
 AII_COUNT = 32
-DOCXOLOGY_COUNT = 56
+DOCXOLOGY_COUNT = 57
 
 
 def load_rows() -> list[SoftwareRow]:
@@ -210,11 +210,18 @@ def replace_head_meta(html_text: str, docx_count: int, github_counts: dict[str, 
         if public_total is not None
         else "generated public GitHub repository totals"
     )
-    desc = (
-        "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF. "
-        f"{public_phrase}, {docx_count} owned repos, "
-        f"and {AII_COUNT} catalogued AII contributions."
-    )
+    # Keep the meta/og description under ~160 chars for clean SERP snippets;
+    # fuller phrasing with "across docxology and AII" remains in the hero below.
+    if public_total is not None:
+        desc = (
+            "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF — "
+            f"{public_total} public repositories, {docx_count} owned, {AII_COUNT} AII contributions."
+        )
+    else:
+        desc = (
+            "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF — "
+            f"{docx_count} owned repositories and {AII_COUNT} catalogued AII contributions."
+        )
     html_text = re.sub(
         r'(<meta name="description" content=")[^"]*(")',
         rf"\g<1>{desc}\2",

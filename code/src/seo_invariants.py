@@ -129,6 +129,54 @@ def check_sitemap_policy(repo_root: Path) -> list[str]:
     return errors
 
 
+import html as _html_mod
+
+
+def _meta_description(html: str) -> str | None:
+    match = re.search(r'<meta\s+name="description"\s+content="([^"]*)"', html, re.I)
+    return match.group(1) if match else None
+
+
+def check_social_meta(repo_root: Path) -> list[str]:
+    """Every indexable page with an og:image must also carry a Twitter Card
+    (twitter:card) and og:image:alt, so X/Slack/Discord render rich previews."""
+    errors: list[str] = []
+    paths = sorted(repo_root.glob("*.html")) + sorted((repo_root / "works").glob("*.html"))
+    for path in paths:
+        html = _read(path)
+        robots = _meta_robots(html)
+        if robots and robots.startswith("noindex"):
+            continue
+        if 'property="og:image"' not in html:
+            continue
+        rel = str(path.relative_to(repo_root))
+        if 'name="twitter:card"' not in html:
+            errors.append(f"{rel}: og:image present but missing twitter:card")
+        if 'property="og:image:alt"' not in html:
+            errors.append(f"{rel}: og:image present but missing og:image:alt")
+    return errors
+
+
+def check_work_descriptions(repo_root: Path) -> list[str]:
+    """Work-page meta descriptions must be clipped on a word boundary, never by
+    a hard character cut. Truncated descriptions end with an ellipsis (…); the
+    rendered (unescaped) length must stay within the ~160-char SERP budget.
+    Word-boundary correctness itself is covered by the clip_description unit
+    test in test_site_nav.py."""
+    errors: list[str] = []
+    for path in sorted((repo_root / "works").glob("*.html")):
+        if path.name == "index.html":
+            continue
+        desc = _meta_description(_read(path))
+        if desc is None:
+            errors.append(f"works/{path.name}: missing meta description")
+            continue
+        rendered = _html_mod.unescape(desc)
+        if len(rendered) > 160:
+            errors.append(f"works/{path.name}: meta description {len(rendered)} rendered chars (>160)")
+    return errors
+
+
 def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     root = repo_root or REPO_ROOT
     errors: list[str] = []
@@ -136,4 +184,6 @@ def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     errors.extend(check_work_pages(root))
     errors.extend(check_redirect_stubs(root))
     errors.extend(check_sitemap_policy(root))
+    errors.extend(check_social_meta(root))
+    errors.extend(check_work_descriptions(root))
     return errors

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T15:35:54Z",
+  "generated_at": "2026-06-10T19:32:22Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 669,
+  "count": 672,
   "items": [
     {
       "id": "page:home",
@@ -3964,6 +3964,29 @@
       "content": "Cells, Mechanobiology, and Osteopathy The Cranial Letter 69(1) Friedman2016CellsMechanobiologyOsteopathy164 Genetics & Biomedical Paper"
     },
     {
+      "id": "work:Friedman2026ITraceVerificationFirstWebcam165",
+      "type": "work",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "url": "/works/Friedman2026ITraceVerificationFirstWebcam165.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20614909",
+      "summary": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "eye-tracking",
+        "webcam",
+        "gaze",
+        "saccades",
+        "pupillometry",
+        "open-source",
+        "diagnostic-pilot"
+      ],
+      "content": "iTrace: verification-first webcam eye-movement analysis Zenodo 10.5281/zenodo.20614909 Friedman2026ITraceVerificationFirstWebcam165 Computational Paper iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation. eye-tracking webcam gaze saccades pupillometry open-source diagnostic-pilot eye-tracking webcam gaze saccades pupillometry"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -4284,6 +4307,20 @@
         "docxology"
       ],
       "content": "ntqr_llm Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:itrace",
+      "type": "software",
+      "title": "itrace",
+      "url": "https://github.com/docxology/itrace",
+      "summary": "Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "itrace Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports ·  · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:ultralink-docx",
@@ -8535,6 +8572,23 @@
       "content": "docxology/IntroductionToAlgebraicEvaluation A collection of essays and code on algebraic methods to evaluate noisy judges on unlabeled test data. Jupyter Notebook docxology  fork"
     },
     {
+      "id": "github-repo:docxology/itrace",
+      "type": "github_repository",
+      "title": "docxology/itrace",
+      "url": "https://github.com/docxology/itrace",
+      "summary": "Verification-first webcam eye-movement analysis (gaze, saccades, pupillometry) — MIT-licensed Python core, algorithmically verified. Zenodo DOI 10.5281/zenodo.20614908",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/itrace Verification-first webcam eye-movement analysis (gaze, saccades, pupillometry) — MIT-licensed Python core, algorithmically verified. Zenodo DOI 10.5281/zenodo.20614908 Python docxology  curated recent"
+    },
+    {
       "id": "github-repo:docxology/ivm-xyz",
       "type": "github_repository",
       "title": "docxology/ivm-xyz",
@@ -11116,7 +11170,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 164 works.",
+      "title": "The curated bibliography contains 165 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11124,12 +11178,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 164 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 165 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 147 per-paper documentation folders.",
+      "title": "The repository contains 148 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11137,7 +11191,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 147 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 148 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -11313,7 +11367,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 164 works, 88 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 165 works, 89 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

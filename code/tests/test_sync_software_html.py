@@ -29,15 +29,15 @@ def test_dry_run_cli():
         check=False,
     )
     assert result.returncode == 0
-    assert "OK dry-run: 56 docxology + 32 AII rows" in result.stdout
+    assert "OK dry-run: 57 docxology + 32 AII rows" in result.stdout
 
 
 def test_collection_page_entity_count():
     rows = load_rows()
     validate_rows(rows)
     collection = build_collection_page(rows)
-    assert len(collection["mainEntity"]) == 88
-    assert "56 original repositories" in collection["description"]
+    assert len(collection["mainEntity"]) == 89
+    assert "57 original repositories" in collection["description"]
 
 
 def test_generated_software_surfaces():
@@ -47,7 +47,8 @@ def test_generated_software_surfaces():
     assert 'src="/data/software-ld.json"' in html
     ld = json.loads(SOFTWARE_LD_JSON.read_text(encoding="utf-8"))
     assert ld["@type"] == "CollectionPage"
-    assert len(ld["mainEntity"]) == 88
+    assert len(ld["mainEntity"]) == 89
     names = {item["name"] for item in ld["mainEntity"]}
     assert "biology_textbook" in names
+    assert "itrace" in names
     assert "template_autoscientists" in names

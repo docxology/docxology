@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-09T13:44:52Z",
+  "generated_at": "2026-06-09T18:29:46Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 74,
   "warnings": 0,
-  "total_bytes": 7672708,
+  "total_bytes": 7750629,
   "largest": [
     {
       "path": "data/artworks.json",
@@ -15,35 +15,35 @@
     {
       "path": "data/github-repositories.json",
       "kind": "json-data",
-      "bytes": 305645,
+      "bytes": 306545,
       "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
-      "path": "repositories.html",
-      "kind": "html",
-      "bytes": 277658,
-      "budget_bytes": 500000,
       "ok": true
     },
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 272754,
+      "bytes": 280331,
       "budget_bytes": 5000000,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 280271,
+      "budget_bytes": 500000,
       "ok": true
     },
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 229143,
+      "bytes": 232510,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 191673,
+      "bytes": 197163,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -80,6 +80,13 @@
       "kind": "og-image",
       "bytes": 108372,
       "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 106905,
+      "budget_bytes": 4000000,
       "ok": true
     },
     {
@@ -129,13 +136,6 @@
       "kind": "og-image",
       "bytes": 100740,
       "budget_bytes": 220000,
-      "ok": true
-    },
-    {
-      "path": "bibliography.csl.json",
-      "kind": "citation-export",
-      "bytes": 100151,
-      "budget_bytes": 4000000,
       "ok": true
     },
     {

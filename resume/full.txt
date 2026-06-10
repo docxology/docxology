@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-06-09T15:35:37Z
+Generated: 2026-06-09T18:25:28Z
 
-Current public metrics: 164 curated works; 88 catalogued software repositories (56 owned + 32 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 165 curated works; 89 catalogued software repositories (57 owned + 32 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (164)
+WORKS AND PUBLICATIONS (165)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -328,8 +328,9 @@ WORKS AND PUBLICATIONS (164)
 [162] 2024 | Paper | Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum | Zenodo | 10.5281/zenodo.13273682
 [163] 2017 | Paper | Osteopathy and the Variable Variability of Health | The Cranial Letter 70(4)
 [164] 2016 | Paper | Cells, Mechanobiology, and Osteopathy | The Cranial Letter 69(1)
+[165] 2026 | Paper | iTrace: verification-first webcam eye-movement analysis | Zenodo | 10.5281/zenodo.20614909
 
-SOFTWARE (88)
+SOFTWARE (89)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -354,6 +355,7 @@ docxology/qr_live_protocol | Python | https://github.com/docxology/qr_live_proto
 docxology/template_autoscientists | Python | https://github.com/docxology/template_autoscientists | AutoScientists deterministic multi-agent scientific-discovery coordination harness · · Zenodo | paper: papers/2026_DeterministicTestbedSelf/ | zenodo: https://doi.org/10.5281/zenodo.20533670
 docxology/template_newspaper | Python | https://github.com/docxology/template_newspaper | The Triplicate data-driven large-format newspaper layout engine · · Zenodo | paper: papers/2026_Triplicate/ | zenodo: https://doi.org/10.5281/zenodo.20533676
 docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498700
+docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Zenodo | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614909
 docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
 docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization

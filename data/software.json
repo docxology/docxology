@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T15:35:37Z",
+  "generated_at": "2026-06-09T18:25:12Z",
   "source": "pages/SOFTWARE.md",
-  "count": 88,
+  "count": 89,
   "repositories": [
     {
       "name": "template",
@@ -278,6 +278,18 @@
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_RecoveringLLMPersona/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20498700"
+    },
+    {
+      "name": "itrace",
+      "url": "https://github.com/docxology/itrace",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_ITrace/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20614909"
     },
     {
       "name": "ultralink-docx",

@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/PUBLICATION_SYNC.md](../docs/PUBLICATION_SYNC.md).
 
-## Papers (147)
+## Papers (148)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -159,6 +159,7 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 145 | [2026_RecoveringLLMPersona](2026_RecoveringLLMPersona/) | ✅ | 2026 | RecoveringLLMPersona |
 | 146 | [2026_Triplicate](2026_Triplicate/) | ✅ | 2026 | Triplicate |
 | 147 | [2026_TemplateTextbook](2026_TemplateTextbook/) | ✅ | 2026 | TemplateTextbook |
+| 148 | [2026_ITrace](2026_ITrace/) | ✅ | 2026 | ITrace |
 ## Scripts
 
 | Script | Purpose |

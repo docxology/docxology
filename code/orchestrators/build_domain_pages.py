@@ -17,6 +17,7 @@ from site_nav import (  # noqa: E402
     breadcrumb_list_jsonld,
     render_breadcrumb,
     render_nav_domain,
+    social_meta_tags,
 )
 
 
@@ -129,6 +130,21 @@ DOMAINS = [
         ),
         collaborators=("Active Inference Institute contributors", "Open-source repository contributors"),
     ),
+    DomainConfig(
+        slug="biomedicine",
+        emoji="🧬",
+        title="Genetics & Biomedicine",
+        short_title="Genetics & Biomedicine",
+        description="Honey bee evolution, gene expression variation, nuclear structure, population genetics, and biomedical mechanisms.",
+        domains=("🧬",),
+        repo_names=("MetaInformAnt", "EvoJump", "biology_textbook", "biol-8", "biol-1"),
+        learning_path=(
+            "Start with the harvester ant brain gene-expression and behavioral-genetics papers for the core empirical thread.",
+            "Read the honey bee evolution and population-genetics commentaries for comparative context.",
+            "Use the open biology textbook and course materials for foundational background.",
+        ),
+        collaborators=("Deborah Gordon", "UC Davis Genetics", "Stanford Biology"),
+    ),
 ]
 
 
@@ -186,6 +202,7 @@ def page_head(
     <meta property="og:image" content="https://danielarifriedman.com/{og_image}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+{social_meta_tags(f"{title} — Daniel Ari Friedman", description, f"https://danielarifriedman.com/{og_image}", image_alt=f"{title} — Daniel Ari Friedman")}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -371,7 +388,7 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
         + f"""
     <header class="domain-hero">
         <h1>Research Domains</h1>
-        <p>Five entry points through the bibliography, software catalog, collaborator network, and learning pathways.</p>
+        <p>Entry points through the bibliography, software catalog, collaborator network, and learning pathways.</p>
     </header>
     <main id="main" class="main">
         <section class="section">

@@ -1948,3 +1948,15 @@ KW  - Genetics & Biomedical
 KW  - Paper
 N1  - Catalog row 164; docs: not available
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - iTrace: verification-first webcam eye-movement analysis
+T2  - Zenodo
+DO  - 10.5281/zenodo.20614909
+UR  - https://doi.org/10.5281/zenodo.20614909
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 165; docs: papers/2026_ITrace/
+ER  -

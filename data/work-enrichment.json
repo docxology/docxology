@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T15:35:37Z",
+  "generated_at": "2026-06-10T19:35:07Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 164,
+  "count": 165,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3681,6 +3681,28 @@
       "findings": [],
       "methods": [],
       "source": ""
+    },
+    "Friedman2026ITraceVerificationFirstWebcam165": {
+      "citation_key": "Friedman2026ITraceVerificationFirstWebcam165",
+      "abstract": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.",
+      "keywords": [
+        "eye-tracking",
+        "webcam",
+        "gaze",
+        "saccades",
+        "pupillometry",
+        "open-source",
+        "diagnostic-pilot"
+      ],
+      "findings": [
+        "eye-tracking",
+        "webcam",
+        "gaze",
+        "saccades",
+        "pupillometry"
+      ],
+      "methods": [],
+      "source": "papers/2026_ITrace/README.md"
     }
   }
 }

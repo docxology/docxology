@@ -1,0 +1,60 @@
+{
+  "title": "iTrace: verification-first webcam eye-movement analysis",
+  "version": "0.4.1",
+  "doi": "10.5281/zenodo.20614909",
+  "doi_url": "https://doi.org/10.5281/zenodo.20614909",
+  "zenodo_record": "https://zenodo.org/records/20614909",
+  "record_id": "20614909",
+  "publication_date": "2026-06-09",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.",
+  "keywords": [
+    "eye-tracking",
+    "webcam",
+    "gaze",
+    "saccades",
+    "pupillometry",
+    "open-source",
+    "diagnostic-pilot"
+  ],
+  "files": [
+    {
+      "name": "itrace-0.4.1-manuscript.pdf",
+      "size_bytes": 5324090,
+      "checksum": "md5:6a77ca92ab62517feef8f7bd6b6b7735",
+      "download_url": "https://zenodo.org/api/records/20614909/files/itrace-0.4.1-manuscript.pdf/content"
+    },
+    {
+      "name": "itrace-v0.4.1.zip",
+      "size_bytes": 36271446,
+      "checksum": "md5:23294b9521d7346d5038441c91a8735d",
+      "download_url": "https://zenodo.org/api/records/20614909/files/itrace-v0.4.1.zip/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/itrace"
+    }
+  ],
+  "github_repo": "docxology/itrace",
+  "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
+  "release_tag": "v0.4.1",
+  "release_name": "iTrace v0.4.1",
+  "pdf_sha256": "",
+  "pairing_confidence": "needs_review",
+  "pairing_evidence": [
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-06-09T18:22:02Z"
+}

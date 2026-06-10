@@ -17,6 +17,7 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("domain-cognitive-security.html", "monthly", "0.7"),
     ("domain-art-synergetics.html", "monthly", "0.7"),
     ("domain-computational.html", "monthly", "0.7"),
+    ("domain-biomedicine.html", "monthly", "0.7"),
     ("art.html", "weekly", "0.9"),
     ("videos.html", "weekly", "0.8"),
     ("collaborators.html", "monthly", "0.7"),

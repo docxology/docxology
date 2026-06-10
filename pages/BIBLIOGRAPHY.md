@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**164 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**165 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**143** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**144** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **164** works in the table below **·** **147** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **165** works in the table below **·** **148** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -202,6 +202,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 162 | 2024 | 🛡️ | Paper | Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum | *Zenodo* | [10.5281/zenodo.13273682](https://doi.org/10.5281/zenodo.13273682) | — |
 | 163 | 2017 | 🧬 | Paper | Osteopathy and the Variable Variability of Health | *The Cranial Letter 70(4)* | — | — |
 | 164 | 2016 | 🧬 | Paper | Cells, Mechanobiology, and Osteopathy | *The Cranial Letter 69(1)* | — | — |
+| 165 | 2026 | 💻 | Paper | iTrace: verification-first webcam eye-movement analysis | *Zenodo* | [10.5281/zenodo.20614909](https://doi.org/10.5281/zenodo.20614909) | [📁](../papers/2026_ITrace/) |
 ---
 
 ## Domain Index
@@ -260,7 +261,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 💻 Computational
 
-> 24 works (2023–2026)
+> 25 works (2023–2026)
 
 - **2026** — A Deterministic Testbed for Self-Organizing Agent-Team Coordination · [📁](../papers/2026_DeterministicTestbedSelf/)
 - **2026** — Recovering LLM-Persona Accuracies from Unlabeled Votes · [📁](../papers/2026_RecoveringLLMPersona/)

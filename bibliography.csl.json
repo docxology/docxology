@@ -4081,5 +4081,30 @@
     "note": "Catalog row 164; docs: not available",
     "container-title": "The Cranial Letter 69(1)",
     "publisher": "The Cranial Letter 69(1)"
+  },
+  {
+    "id": "Friedman2026ITraceVerificationFirstWebcam165",
+    "type": "article-journal",
+    "title": "iTrace: verification-first webcam eye-movement analysis",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 165; docs: papers/2026_ITrace/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20614909",
+    "URL": "https://doi.org/10.5281/zenodo.20614909"
   }
 ]

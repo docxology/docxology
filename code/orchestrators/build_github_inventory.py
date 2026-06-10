@@ -252,6 +252,13 @@ def render_html(payload: dict[str, Any]) -> str:
     <meta property="og:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
     <meta property="og:url" content="https://danielarifriedman.com/repositories.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-software.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Repository Inventory — Daniel Ari Friedman">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Repository Inventory — Daniel Ari Friedman">
+    <meta name="twitter:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-software.jpg">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>
         .inventory-controls{{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin:1rem 0}}

@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-06-09T15:35:54+00:00`
+Generated: `2026-06-09T18:27:17+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,20 +25,20 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-06-09.json`
-- paired_publications: `reports/paired_publications_2026-06-07.json`
+- paired_publications: `reports/paired_publications_2026-06-09.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `164`
-- Paper-folder docs: `147`
-- Bibliography docs links: `147`
+- Bibliography works: `165`
+- Paper-folder docs: `148`
+- Bibliography docs links: `148`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `143`
+- Papers: `144`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
@@ -49,36 +49,36 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `37`
 - Cognitive Security: `30`
 - Art & Synergetics: `15`
-- Computational: `24`
+- Computational: `25`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
 
 ### Software
 
-- docxology_owned: `56`
+- docxology_owned: `57`
 - active_inference_institute: `32`
-- curated_total: `88`
+- curated_total: `89`
 
 ### Generated Exports
 
-- data_works_json: `164`
-- data_software_json: `88`
-- data_publications_ld_main_entity: `164`
-- data_software_ld_main_entity: `88`
+- data_works_json: `165`
+- data_software_json: `89`
+- data_publications_ld_main_entity: `165`
+- data_software_ld_main_entity: `89`
 
 ### GitHub Inventory
 
-- total: `359`
-- docxology: `307`
+- total: `360`
+- docxology: `308`
 - ActiveInferenceInstitute: `52`
-- curated: `88`
+- curated: `89`
 - uncataloged: `271`
 - forks: `249`
 - archived: `0`
-- public: `359`
+- public: `360`
 - private: `0`
-- recently_updated: `92`
+- recently_updated: `93`
 
 ### Public Source Snapshot
 
@@ -89,20 +89,20 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `111`
-- zenodo_records: `100`
-- pairs: `115`
+- github_releases: `112`
+- zenodo_records: `101`
+- pairs: `116`
 - strong_pairs: `17`
-- needs_review: `98`
+- needs_review: `99`
 - create_new: `0`
 - update_existing: `17`
 
 ### Paired Publication Decisions
 
 - decision: `accept`
-- groups: `18`
-- raw_candidates: `80`
-- note: `User instructed: Accept for all. Acceptance records the candidate GitHub release + Zenodo record relation; software-only records remain software/version metadata rather than new bibliography rows. R10 docxology/template refreshed to latest accepted software DOI 10.5281/zenodo.20584820.`
+- groups: `19`
+- raw_candidates: `81`
+- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R19 adds docxology/itrace v0.4.1 as bibliography folder 2026_ITrace with DOI 10.5281/zenodo.20614909.`
 
 ## Validation
 

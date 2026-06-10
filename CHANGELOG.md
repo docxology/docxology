@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-10
+
+- SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: `build_work_pages.py` now clips on a word boundary with an ellipsis via new `clip_description()` in `code/src/site_nav.py` (145 of 165 work descriptions corrected; rendered length ≤160).
+- Added Twitter Card (`summary_large_image`) and `og:image:alt` tags site-wide. Generators (`build_work_pages`, `build_domain_pages`, `build_catalog`, `build_exports_page`, `build_evidence_page`, `build_updates_page`, `build_github_inventory`) emit them; hand-maintained pages (index, publications, art, videos, collaborators, search, discovery, cite-verify, media, software) are covered by a new idempotent `code/orchestrators/ensure_social_meta.py`.
+- Added the sixth research-domain landing page `domain-biomedicine.html` (Genetics & Biomedicine, 🧬, 15 works) with `og-biomedicine.jpg`; added to `sitemap_policy.py`; relinked the homepage card from a raw `pages/BIBLIOGRAPHY.md#…` anchor to the new page.
+- Polished homepage: removed duplicate `theme-color` and standardized to `#0c0c0e` (matches manifest); tightened the meta/og description to 153 chars; added word separators between publication-card title/venue/citation spans so text extractors and screen readers no longer read them run-together.
+- New SEO invariants in `code/src/seo_invariants.py` (`check_social_meta`, `check_work_descriptions`) with tests in `test_seo_invariants.py` and `test_site_nav.py`; full suite 88 passing.
+
 ## 2026-06-04
 
 - Applied four strong GitHub release + Zenodo publication pairs: `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, and `2026_TemplateTextbook`; bibliography **150→154**, paper folders **143→147**.

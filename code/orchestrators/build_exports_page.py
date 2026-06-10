@@ -104,6 +104,13 @@ def render() -> str:
     <meta property="og:description" content="Citation exports and JSON datasets for the public research index.">
     <meta property="og:url" content="https://danielarifriedman.com/exports.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Public Exports — Daniel Ari Friedman">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Public Exports — Daniel Ari Friedman">
+    <meta name="twitter:description" content="Citation exports and JSON datasets for the public research index.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>
         .export-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}
