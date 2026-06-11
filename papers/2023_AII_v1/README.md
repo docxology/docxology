@@ -13,7 +13,7 @@
 
 ## Abstract
 
-> TrustFinder is a sociotechnical system designed to enhance situational awareness in the information environment by enabling users to collaboratively manage and evaluate claims and sources. It aims to structure the information landscape to facilitate the discovery of trusted information and streamline the assessment of claims.
+> An overview of the Active Inference Institute (AII) — its mission, organizational structure, projects, and community. The Institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains.
 
 ## Keywords
 
@@ -21,17 +21,14 @@
 
 ## Key Contributions
 
-- Development of a collaborative platform for managing the information supply chain.
-- Implementation of user-driven trust scoring for evaluating sources and claims.
-- Integration of web and document annotation tools to enhance content interaction.
-- Establishment of a framework for argument representation and crowdsourcing design principles.
+- Describes the Active Inference Institute's mission, organizational structure, and community.
+- Surveys AII research, education, and application activities across the Active Inference ecosystem.
+- Frames open-science practice around the Free Energy Principle and Active Inference.
 
 ## Methods
 
-- Creation of 'Workspaces' for users to collaborate and share information.
-- Utilization of annotation affordances for marking up and enriching content.
-- Application of trust scores to assess the quality and intent of authors and claims.
-- Design of interconnected informational structures such as Claims, Questions, and Claim Instances.
+- Descriptive overview of the Institute's programs, governance, and community structures.
+- Documents open-science workflows, participation pathways, and ecosystem collaborations.
 
 ## 🎯 Consulting & Tutoring
 

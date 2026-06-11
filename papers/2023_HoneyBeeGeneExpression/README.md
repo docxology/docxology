@@ -7,31 +7,29 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"HoneyBeeGeneExpression","abstract":"The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis that novel traits recruit novel genetic elements with accelerated sequence evolution.","keywords":["honey bees","Apis mellifera","gene expression","RNA-Seq","novel traits","taxonomically restricted genes","coding sequence evolution"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees","abstract":"The honey bee (Apis mellifera) is a key model organism for complex social behavior and physiology, where tissue-specific gene expression (TSGE) is difficult to analyze given large bioinformatics datasets and manual tissue processing. We present a meta-analytic approach to TSGE in A. mellifera using open-source bioinformatics packages: from an initial pool of 4,349 samples and 12,398 loci, rigorous analysis yields a publicly available snapshot of 731 samples and 177 loci representing high-quality TSGE estimates, intended as a reusable resource for honey bee and comparative gene-expression research.","keywords":["honey bees","Apis mellifera","tissue-specific gene expression","meta-analysis","RNA-seq","bioinformatics pipeline","open-source"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
 -->
 
 
 ## Abstract
 
-> This study investigates the role of coding sequence changes in the evolution of postdevelopmental novelty in honey bees, challenging the traditional evo-devo paradigm. Through RNA-Seq experiments, we demonstrate that positively selected tissue-specific genes, particularly taxonomically restricted genes (TRGs), are crucial for novel physiological functions in adult honey bees.
+> The honey bee (*Apis mellifera*) is a key model organism for complex social behavior and physiology, where tissue-specific gene expression (TSGE) is difficult to analyze given large bioinformatics datasets and manual tissue processing. We present a meta-analytic approach to TSGE in *A. mellifera* using open-source bioinformatics packages: from an initial pool of 4,349 samples and 12,398 loci, rigorous analysis yields a publicly available snapshot of 731 samples and 177 loci representing high-quality TSGE estimates, intended as a reusable resource for honey bee and comparative gene-expression research.
 
 ## Keywords
 
-`honey bees` · `Apis mellifera` · `gene expression` · `RNA-Seq` · `novel traits` · `taxonomically restricted genes` · `coding sequence evolution`
+`honey bees` · `Apis mellifera` · `tissue-specific gene expression` · `meta-analysis` · `RNA-seq` · `bioinformatics pipeline` · `open-source`
 
 ## Key Contributions
 
-- Identified the significance of coding sequence changes in the evolution of adult phenotypic novelty in honey bees.
-- Demonstrated that positively selected tissue-specific genes underlie novel physiological functions.
-- Highlighted the role of taxonomically restricted genes (TRGs) in conferring specialized cellular functions.
-- Challenged the evo-devo paradigm by showing that low network connectedness in genes facilitates rapid coding sequence changes.
+- Presents a reproducible meta-analytic pipeline for tissue-specific gene expression (TSGE) in honey bees built on open-source bioinformatics tools.
+- Curates a high-quality public snapshot of 731 samples and 177 loci from an initial pool of 4,349 samples and 12,398 loci.
+- Provides a reusable community resource for comparative gene-expression analysis in *Apis mellifera* and beyond.
 
 ## Methods
 
-- Conducted ten RNA-Seq experiments across various tissues in honey bees.
-- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
-- Examined differential gene expression between nurses and foragers to identify genes involved in social functions.
-- Utilized statistical tests to assess the significance of TRG expression in novel versus conserved tissues.
+- Aggregated and standardized publicly available honey bee RNA-seq datasets across tissues.
+- Applied open-source bioinformatics packages to filter samples and loci for quality.
+- Reduced 4,349 samples and 12,398 loci to a curated snapshot of 731 samples and 177 loci representing high-quality TSGE estimates.
 
 ## 🎯 Consulting & Tutoring
 

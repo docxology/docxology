@@ -87,3 +87,38 @@ In the text/DOM layer, the homepage concatenates fields without separators — e
 6. Add `seo_invariants` checks for: no mid-word description, `twitter:card` parity with `og:image`, no raw-`.md` links from indexable pages.
 
 All changes flow through the existing generators + test suite, consistent with the repo's build-and-verify model.
+
+---
+
+## Addendum — deep scan + Google Search Console (2026-06-10, round 2)
+
+### Static deep scan (all 196 served HTML files)
+
+Verified clean: **373 JSON-LD blocks, 0 invalid**; full `<img>` alt coverage (the 942-piece art gallery renders alt from `artAlt()` — title + medium + date + tags); no broken internal links (the only `.md` links are the repo's intentional agent-readable source exposure); every indexable page has a unique title except one (see below); `lang`/`viewport`/canonical present on all indexable pages.
+
+Issues found and fixed (via generators):
+
+- **Non-unique fallback meta descriptions.** 17 work pages without an enriched abstract shared a templated `"{type} in {domain} by …"` description (4 Cognitive Security papers identical, etc.). `build_work_pages.py` now builds a per-work fallback that includes the title → 162/165 work descriptions unique.
+- **ScholarlyArticle author was a bare cross-document `@id`.** Google can't reliably resolve `{"@id": ".../#person"}` across documents for authorship rich results. Now emits inline `@type`/`name`/`url` alongside the `@id` on all 166 work pages.
+- **Paper-folder pages truncated descriptions mid-word** (same bug class, 148 noindex pages affecting social unfurls). `build_paper_pages.py` now uses `clip_description()`.
+
+Flagged for your verification (not auto-changed — accuracy-sensitive):
+
+- **3 work pairs share an identical abstract** because the source `papers/*/README.md` Abstract is the *wrong paper's* text: `2023_ToComment` carries the Digital-Rhetorical/image-memes abstract; `2023_AII_v1` carries the TrustFinder abstract; `2023_HoneyBeeGeneExpression` overlaps the 2015 honey-bee-evolution abstract. These need correct abstracts sourced from the actual papers (DOIs available).
+- **Duplicate title:** two CEREBRUM records (`…010`, `…118`) with different Zenodo DOIs share an identical title — a bibliography-curation call (dedupe, or differentiate/version the titles).
+
+### Google Search Console (URL-prefix property `https://danielarifriedman.com/`, last 3 months)
+
+Totals: **74 clicks · 3.25K impressions · 2.3% CTR · avg position 9.**
+
+- **Top queries:** `daniel ari friedman` (16 clicks, pos 3.1), `daniel friedman active inference` (10 clicks, pos 4.2) — brand queries convert well (~34% CTR). The site sits at position ~3 for the author's own name (Scholar/ORCID/AII outrank — normal).
+- **High-impression, zero-click queries (the opportunity):** `pppip` (84 impressions, likely P3IF), `"interoception as modeling, allostasis as control"` (50 imp, pos 9.6), `mdkv` (17 imp, pos 6.8 — his software), `art friedman phd stanford` (20 imp). These product/paper terms rank but on the page-1 fringe or page 2.
+- **Top pages by impressions:** `repositories.html` **907 imp / 0.2% CTR / pos 11.3**, `videos.html` **620 / 0.5% / 10.7**, `publications.html` **325 / 1.2% / 8.0**. These are impression giants stuck at positions 8–11, where CTR is structurally low — the lever is **position** (depth, internal links, backlinks), not snippet wording.
+- **Indexing coverage: 118 indexed, 111 not.** Breakdown: 12 noindex (correct), 3 redirects (correct), 2 alternate-canonical (correct), **43 "Crawled – currently not indexed"** and **50 "Discovered – currently not indexed"** (thin/templated work pages — exactly what the unique-description + enriched-author fixes target), and **1 "Not found (404)"** = `papers/2024_PopulationSearch/`, which is **stale** (crawled 2026-05-24, page published 2026-05-30; now returns 200, noindex, correctly canonicalized) and will clear on re-crawl.
+
+### Recommended next steps (position & indexing — beyond meta tags)
+
+1. **After pushing,** request indexing in GSC for the new `domain-biomedicine.html` and re-submit `sitemap.xml`; this nudges the 50 "discovered, not indexed" pages.
+2. **Capture the product-term demand** (`mdkv`, `P3IF`/`pppip`, `ai discovery engine`): give each flagship tool a dedicated, indexable, well-linked landing section rather than only a row inside `repositories.html`/`software.html`.
+3. **Correct the 3 mis-attributed abstracts** above — fixes both duplicate content and accuracy.
+4. **Earn links** to deepen indexing of the work-page corpus (the 43+50 unindexed are a domain-authority/crawl-priority signal, not a markup defect).

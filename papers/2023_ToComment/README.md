@@ -7,31 +7,26 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ToComment","abstract":"This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.","keywords":["rhetorical analysis","image memes","digital discourse","narrative ecosystems","DRE3 model","public sphere"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"To comment or not to comment, that is the question!","abstract":"A commentary in Physics of Life Reviews by Mridula Mascarenhas, Richard J. Cordes, and Daniel A. Friedman responding to the target article 'To copy or not to copy?' by Hector M. Manrique and Michael J. Walker, which examines imitation, copying fidelity, and the foundations of human cumulative technological culture.","keywords":["commentary","imitation","social learning","cumulative culture","copying fidelity","Physics of Life Reviews"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
 -->
 
 
 ## Abstract
 
-> This paper advocates for the integration of rhetorical and ecological frameworks to analyze digital image memes, aiming to enhance understanding of how these memes shape online narratives. It highlights the need for a more comprehensive approach to studying image memes, which are often overlooked in favor of text-based formats.
+> A commentary in *Physics of Life Reviews* by Mridula Mascarenhas, Richard J. Cordes, and Daniel A. Friedman responding to the target article "To copy or not to copy?" by Héctor M. Manrique and Michael J. Walker, which examines imitation, copying fidelity, and the foundations of human cumulative technological culture. The comment engages the target's account of social learning and its role in the evolution of culture.
 
 ## Keywords
 
-`rhetorical analysis` · `image memes` · `digital discourse` · `narrative ecosystems` · `DRE3 model` · `public sphere`
+`commentary` · `imitation` · `social learning` · `cumulative culture` · `copying fidelity` · `Physics of Life Reviews`
 
 ## Key Contributions
 
-- Proposes a combined rhetorical and ecological framework for analyzing digital discourse.
-- Introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3) for understanding meme impact on public narratives.
-- Emphasizes the narrative power of image memes through parsimony and polysemy.
-- Explores implications for computational analysis systems in digital discourse.
+- A peer commentary engaging Manrique and Walker's account of imitation and the origins of human cumulative technological culture.
+- Situates copying fidelity and social learning within broader discussions of cultural evolution.
 
 ## Methods
 
-- Utilizes a rhetorical approach to analyze message form and audience engagement.
-- Applies ecological concepts to trace narratives across digital platforms.
-- Develops a three-tiered model (DRE3) to categorize and index digital artifacts.
-- Focuses on the interaction between memes and audience identity construction.
+- Critical commentary and conceptual analysis of the target article; see the published comment for the full argument.
 
 ## 🎯 Consulting & Tutoring
 

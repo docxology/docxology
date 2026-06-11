@@ -14,7 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import render_nav  # noqa: E402
+from site_nav import clip_description, render_nav  # noqa: E402
 
 
 def h(value: object) -> str:
@@ -110,7 +110,7 @@ def render_page(work: dict) -> str:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{h(work['title'])} Documentation — Daniel Ari Friedman</title>
-    <meta name="description" content="{h(summary[:155].rstrip())}">
+    <meta name="description" content="{h(clip_description(summary))}">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{h(canonical)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -120,7 +120,7 @@ def render_page(work: dict) -> str:
     <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])} Documentation">
-    <meta property="og:description" content="{h(summary[:155].rstrip())}">
+    <meta property="og:description" content="{h(clip_description(summary))}">
     <meta property="og:url" content="{h(canonical)}">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <style>

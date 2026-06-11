@@ -224,7 +224,12 @@ def json_ld(work: dict) -> str:
         "@id": f"https://danielarifriedman.com/works/{work['citation_key']}.html#work",
         "name": work["title"],
         "headline": work["title"],
-        "author": {"@id": "https://danielarifriedman.com/#person"},
+        "author": {
+            "@type": "Person",
+            "@id": "https://danielarifriedman.com/#person",
+            "name": "Daniel Ari Friedman",
+            "url": "https://danielarifriedman.com/",
+        },
         "datePublished": str(work["year"]),
         "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
         "mainEntityOfPage": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
@@ -265,7 +270,14 @@ def json_ld(work: dict) -> str:
 
 
 def page_head(work: dict) -> str:
-    description = work.get("enrichment", {}).get("abstract") or f"{work['type']} in {work['domain_name']} by Daniel Ari Friedman, catalogued in the unified bibliography."
+    # Prefer the enriched abstract; otherwise build a per-work fallback that
+    # includes the title so each page has a unique, descriptive meta description
+    # (a bare "{type} in {domain} by ..." template collides across same-type works).
+    fallback = (
+        f"{work['title']} — {str(work['type']).lower()} in {work['domain_name']} "
+        f"by Daniel Ari Friedman ({work['year']}). Part of the unified bibliography."
+    )
+    description = work.get("enrichment", {}).get("abstract") or fallback
     description = clip_description(description)
     return f"""<!DOCTYPE html>
 <html lang="en">

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T19:35:07Z",
+  "generated_at": "2026-06-11T03:23:01Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 165,
   "works": {
@@ -1139,27 +1139,25 @@
     },
     "Friedman2023SnapshotPipelineTissueSpecific047": {
       "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
-      "abstract": "This study investigates the role of coding sequence changes in the evolution of postdevelopmental novelty in honey bees, challenging the traditional evo-devo paradigm. Through RNA-Seq experiments, we demonstrate that positively selected tissue-specific genes, particularly taxonomically restricted genes (TRGs), are crucial for novel physiological functions in adult honey bees.",
+      "abstract": "The honey bee ( Apis mellifera ) is a key model organism for complex social behavior and physiology, where tissue-specific gene expression (TSGE) is difficult to analyze given large bioinformatics datasets and manual tissue processing. We present a meta-analytic approach to TSGE in A. mellifera using open-source bioinformatics packages: from an initial pool of 4,349 samples and 12,398 loci, rigorous analysis yields a publicly available snapshot of 731 samples and 177 loci representing high-quality TSGE estimates, intended as a reusable resource for honey bee and comparative gene-expression research.",
       "keywords": [
         "honey bees",
         "Apis mellifera",
-        "gene expression",
-        "RNA-Seq",
-        "novel traits",
-        "taxonomically restricted genes",
-        "coding sequence evolution"
+        "tissue-specific gene expression",
+        "meta-analysis",
+        "RNA-seq",
+        "bioinformatics pipeline",
+        "open-source"
       ],
       "findings": [
-        "Identified the significance of coding sequence changes in the evolution of adult phenotypic novelty in honey bees.",
-        "Demonstrated that positively selected tissue-specific genes underlie novel physiological functions.",
-        "Highlighted the role of taxonomically restricted genes (TRGs) in conferring specialized cellular functions.",
-        "Challenged the evo-devo paradigm by showing that low network connectedness in genes facilitates rapid coding sequence changes."
+        "Presents a reproducible meta-analytic pipeline for tissue-specific gene expression (TSGE) in honey bees built on open-source bioinformatics tools.",
+        "Curates a high-quality public snapshot of 731 samples and 177 loci from an initial pool of 4,349 samples and 12,398 loci.",
+        "Provides a reusable community resource for comparative gene-expression analysis in Apis mellifera and beyond."
       ],
       "methods": [
-        "Conducted ten RNA-Seq experiments across various tissues in honey bees.",
-        "Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).",
-        "Examined differential gene expression between nurses and foragers to identify genes involved in social functions.",
-        "Utilized statistical tests to assess the significance of TRG expression in novel versus conserved tissues."
+        "Aggregated and standardized publicly available honey bee RNA-seq datasets across tissues.",
+        "Applied open-source bioinformatics packages to filter samples and loci for quality.",
+        "Reduced 4,349 samples and 12,398 loci to a curated snapshot of 731 samples and 177 loci representing high-quality TSGE estimates."
       ],
       "source": "papers/2023_HoneyBeeGeneExpression/README.md"
     },
@@ -1513,7 +1511,7 @@
     },
     "Friedman2023ActiveInferenceInstituteActive061": {
       "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
-      "abstract": "TrustFinder is a sociotechnical system designed to enhance situational awareness in the information environment by enabling users to collaboratively manage and evaluate claims and sources. It aims to structure the information landscape to facilitate the discovery of trusted information and streamline the assessment of claims.",
+      "abstract": "An overview of the Active Inference Institute (AII) — its mission, organizational structure, projects, and community. The Institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains.",
       "keywords": [
         "Active Inference Institute",
         "open science",
@@ -1522,16 +1520,13 @@
         "community building"
       ],
       "findings": [
-        "Development of a collaborative platform for managing the information supply chain.",
-        "Implementation of user-driven trust scoring for evaluating sources and claims.",
-        "Integration of web and document annotation tools to enhance content interaction.",
-        "Establishment of a framework for argument representation and crowdsourcing design principles."
+        "Describes the Active Inference Institute's mission, organizational structure, and community.",
+        "Surveys AII research, education, and application activities across the Active Inference ecosystem.",
+        "Frames open-science practice around the Free Energy Principle and Active Inference."
       ],
       "methods": [
-        "Creation of 'Workspaces' for users to collaborate and share information.",
-        "Utilization of annotation affordances for marking up and enriching content.",
-        "Application of trust scores to assess the quality and intent of authors and claims.",
-        "Design of interconnected informational structures such as Claims, Questions, and Claim Instances."
+        "Descriptive overview of the Institute's programs, governance, and community structures.",
+        "Documents open-science workflows, participation pathways, and ecosystem collaborations."
       ],
       "source": "papers/2023_AII_v1/README.md"
     },
@@ -1563,26 +1558,21 @@
     },
     "Friedman2023CommentOrNotComment063": {
       "citation_key": "Friedman2023CommentOrNotComment063",
-      "abstract": "This paper advocates for the integration of rhetorical and ecological frameworks to analyze digital image memes, aiming to enhance understanding of how these memes shape online narratives. It highlights the need for a more comprehensive approach to studying image memes, which are often overlooked in favor of text-based formats.",
+      "abstract": "A commentary in Physics of Life Reviews by Mridula Mascarenhas, Richard J. Cordes, and Daniel A. Friedman responding to the target article \"To copy or not to copy?\" by Héctor M. Manrique and Michael J. Walker, which examines imitation, copying fidelity, and the foundations of human cumulative technological culture. The comment engages the target's account of social learning and its role in the evolution of culture.",
       "keywords": [
-        "rhetorical analysis",
-        "image memes",
-        "digital discourse",
-        "narrative ecosystems",
-        "DRE3 model",
-        "public sphere"
+        "commentary",
+        "imitation",
+        "social learning",
+        "cumulative culture",
+        "copying fidelity",
+        "Physics of Life Reviews"
       ],
       "findings": [
-        "Proposes a combined rhetorical and ecological framework for analyzing digital discourse.",
-        "Introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3) for understanding meme impact on public narratives.",
-        "Emphasizes the narrative power of image memes through parsimony and polysemy.",
-        "Explores implications for computational analysis systems in digital discourse."
+        "A peer commentary engaging Manrique and Walker's account of imitation and the origins of human cumulative technological culture.",
+        "Situates copying fidelity and social learning within broader discussions of cultural evolution."
       ],
       "methods": [
-        "Utilizes a rhetorical approach to analyze message form and audience engagement.",
-        "Applies ecological concepts to trace narratives across digital platforms.",
-        "Develops a three-tiered model (DRE3) to categorize and index digital artifacts.",
-        "Focuses on the interaction between memes and audience identity construction."
+        "Critical commentary and conceptual analysis of the target article; see the published comment for the full argument."
       ],
       "source": "papers/2023_ToComment/README.md"
     },
