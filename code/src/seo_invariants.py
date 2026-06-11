@@ -13,6 +13,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from build_sitemap import sitemap_locs  # noqa: E402
+from site_nav import canonical_work_key  # noqa: E402
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
@@ -88,7 +89,8 @@ def check_work_pages(repo_root: Path) -> list[str]:
         if path.name == "index.html":
             expected = f"{SITE_ORIGIN}works/"
         else:
-            expected = f"{SITE_ORIGIN}{rel}"
+            # Duplicate works canonicalize to their primary entry (see WORK_CANONICAL_OVERRIDES).
+            expected = f"{SITE_ORIGIN}works/{canonical_work_key(path.stem)}.html"
         if canonical != expected:
             errors.append(f"{rel}: canonical {canonical!r} != {expected!r}")
     return errors

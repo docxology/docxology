@@ -15,7 +15,7 @@ WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import clip_description, render_nav, social_meta_tags  # noqa: E402
+from site_nav import canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
 
 try:
     from report_paths import generated_timestamp
@@ -279,6 +279,7 @@ def page_head(work: dict) -> str:
     )
     description = work.get("enrichment", {}).get("abstract") or fallback
     description = clip_description(description)
+    canon_url = f"https://danielarifriedman.com/works/{canonical_work_key(work['citation_key'])}.html"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -287,7 +288,7 @@ def page_head(work: dict) -> str:
     <title>{h(work['title'])} — Daniel Ari Friedman</title>
     <meta name="description" content="{h(description)}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://danielarifriedman.com/works/{h(work['citation_key'])}.html">
+    <link rel="canonical" href="{h(canon_url)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
@@ -298,7 +299,7 @@ def page_head(work: dict) -> str:
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])}">
     <meta property="og:description" content="{h(description)}">
-    <meta property="og:url" content="https://danielarifriedman.com/works/{h(work['citation_key'])}.html">
+    <meta property="og:url" content="{h(canon_url)}">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">

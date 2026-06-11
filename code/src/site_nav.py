@@ -7,6 +7,22 @@ import json
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
+# Work pages that are duplicates of another catalogued work (same paper, different
+# Zenodo deposit/version) point their rel=canonical at the primary entry so search
+# engines consolidate ranking signals instead of splitting them across duplicates.
+#   key (duplicate citation_key) -> value (canonical/primary citation_key)
+WORK_CANONICAL_OVERRIDES = {
+    # CEREBRUM "v1.4" (papers/2025_CEREBRUM2, num 118) is the same paper as the
+    # primary CEREBRUM entry (papers/2025_CEREBRUM, num 10); Zenodo DOI
+    # 10.5281/zenodo.15170907 resolves to 10.5281/zenodo.15231156. Consolidate.
+    "Friedman2025CEREBRUMCaseEnabledReasoning118": "Friedman2025CEREBRUMCaseEnabledReasoning010",
+}
+
+
+def canonical_work_key(citation_key: str) -> str:
+    """Return the canonical citation_key for a work (itself unless it is a known duplicate)."""
+    return WORK_CANONICAL_OVERRIDES.get(citation_key, citation_key)
+
 
 def clip_description(text: str, limit: int = 155) -> str:
     """Clip a meta description to <= limit chars on a word boundary.
