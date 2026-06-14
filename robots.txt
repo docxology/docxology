@@ -7,3 +7,4 @@ Allow: /
 # Citation exports: CITATION.cff, bibliography.bib, codemeta.json, exports.html
 
 Sitemap: https://danielarifriedman.com/sitemap.xml
+Sitemap: https://danielarifriedman.com/sitemap-images.xml
