@@ -11,6 +11,21 @@ This site is served by GitHub Pages at `https://danielarifriedman.com/`, with `C
 - **Full public crawl:** `robots.txt` uses `Allow: /` with no `Disallow` rules. Sitemap lists index-priority URLs only; `llms.txt` documents the full public path inventory.
 - **Publication canonicals:** `works/{citation_key}.html` is the primary index target; `papers/{folder}/` pages use `noindex, follow` and canonical to the matching work page.
 
+## Work URLs are a permanent contract
+
+`works/{citation_key}.html` is a **permanent opaque identifier**, not a display string. The
+`citation_key` (`Friedman{year}{TitleSlug}{num:03d}`) is also the BibTeX key in
+`bibliography.bib`, so external academics may have cited it. This host has no server-side
+redirects, so a changed key = a 404 (or a forever-maintained meta-refresh stub).
+
+- **Never re-slug an existing work's key on a title/year edit.** The work's `num` is its
+  immutable id; if you must fix a title, keep the URL stable.
+- Uniqueness is enforced at build time (`build_work_pages.py` raises on a duplicate
+  `citation_key`) and stability is guarded by `code/tests/test_frozen_work_keys.py`
+  (freezes every existing `num -> citation_key`; adds/removes are fine, churn fails).
+- New works get the next `num` (`max+1`, auto-assigned by `add_zenodo_only.py`); gaps from
+  removed works are retired, never renumbered (`sync_publications_html.validate_rows`).
+
 ## Known Entry Points
 
 - Homepage: `https://danielarifriedman.com/`

@@ -498,8 +498,19 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
         siblings.sort(key=lambda x: (int(x["year"]), int(x["num"])), reverse=True)
         w["related"] = siblings[:6]
     outputs = {WORKS_DIR / "index.html": render_index(works)}
+    # citation_key is the permanent public URL primitive (works/{key}.html). It must be
+    # unique: two works mapping to the same key would silently overwrite one page (and its
+    # canonical/JSON-LD @id). Fail loud here rather than ship a clobbered/missing work.
+    seen_keys: dict[str, dict] = {}
     for work in works:
-        outputs[WORKS_DIR / f"{work['citation_key']}.html"] = render_work_page(work)
+        key = work["citation_key"]
+        if key in seen_keys:
+            raise SystemExit(
+                f"Duplicate work citation_key {key!r}: bibliography rows num "
+                f"{seen_keys[key]['num']} and {work['num']} collide on works/{key}.html"
+            )
+        seen_keys[key] = work
+        outputs[WORKS_DIR / f"{key}.html"] = render_work_page(work)
     outputs[ENRICHMENT_OUT] = json.dumps(
         {
             "generated_at": generated_at or generated_timestamp(),
