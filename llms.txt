@@ -15,8 +15,8 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Human search page: https://danielarifriedman.com/search.html
 - OpenSearch descriptor: https://danielarifriedman.com/opensearch.xml
 - Agent start guide: https://github.com/docxology/docxology/blob/main/AGENT_START.md
-- Publication sync runbook: https://github.com/docxology/docxology/blob/main/docs/PUBLICATION_SYNC.md
-- Google Search Console follow-up (manual): https://github.com/docxology/docxology/blob/main/docs/GSC_FOLLOWUP.md
+- Publication sync runbook: https://github.com/docxology/docxology/blob/main/docs/operations/publication-sync.md
+- Google Search Console follow-up (manual): https://github.com/docxology/docxology/blob/main/docs/seo/gsc-followup.md
 - GSC preflight checklist JSON: https://danielarifriedman.com/data/gsc-followup-checklist.json
 - Markdown discovery map: https://github.com/docxology/docxology/blob/main/pages/DISCOVERY.md
 - Research domains: https://danielarifriedman.com/domains.html
@@ -84,7 +84,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 ## Source Of Truth Rules
 
 - Treat pages/BIBLIOGRAPHY.md as the curated bibliography source of truth.
-- Use docs/PUBLICATION_SYNC.md for GitHub + Zenodo publication intake, DOI version refreshes, dry-run review, and apply/validation commands.
+- Use docs/operations/publication-sync.md for GitHub + Zenodo publication intake, DOI version refreshes, dry-run review, and apply/validation commands.
 - Treat publications.html as the canonical HTML rendering of that bibliography.
 - Treat pages/SOFTWARE.md as the curated software source of truth.
 - Treat discovery.html and pages/DISCOVERY.md as the place for API endpoints, source queries, and caveats about public index count mismatches.

@@ -1,6 +1,6 @@
 # Design system — danielarifriedman.com
 
-Extracted from [`style.css`](../style.css). Generated pages and new UI should reuse these tokens rather than introducing parallel palettes.
+Extracted from [`style.css`](../../style.css). Generated pages and new UI should reuse these tokens rather than introducing parallel palettes.
 
 ## Principles
 
@@ -47,12 +47,12 @@ Extracted from [`style.css`](../style.css). Generated pages and new UI should re
 
 ## Navigation source of truth
 
-Shared HTML nav: [`code/src/site_nav.py`](../code/src/site_nav.py).
+Shared HTML nav: [`code/src/site_nav.py`](../../code/src/site_nav.py).
 
 - **Work pages:** `render_nav(active=..., depth=1)` — regenerate with `python3 code/orchestrators/build_work_pages.py`
 - **Domain pages:** `render_nav_domain(active="domains")` — regenerate with `python3 code/orchestrators/build_domain_pages.py`
 
-Hand-maintained pages (e.g. `publications.html`, `index.html`) may use extended link sets; keep href prefixes consistent with [`docs/REDIRECTS.md`](REDIRECTS.md) (apex canonical URLs).
+Hand-maintained pages (e.g. `publications.html`, `index.html`) may use extended link sets; keep href prefixes consistent with [`seo/canonical-policy.md`](../seo/canonical-policy.md) (apex canonical URLs).
 
 ## Future refresh (Claude Design / Webdesign)
 

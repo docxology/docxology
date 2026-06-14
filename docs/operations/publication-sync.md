@@ -2,11 +2,11 @@
 
 This is the canonical runbook for checking GitHub releases against Zenodo records and adding new or updated publications to the unified bibliography.
 
-Use this workflow when new GitHub releases, Zenodo deposits, PDFs, or DOI versions may have appeared. The automation keeps [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md), [`data/works.json`](../data/works.json), paper folders, generated paper pages, and site indexes aligned.
+Use this workflow when new GitHub releases, Zenodo deposits, PDFs, or DOI versions may have appeared. The automation keeps [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md), [`data/works.json`](../../data/works.json), paper folders, generated paper pages, and site indexes aligned.
 
 ## Source Contract
 
-- [`code/orchestrators/sync_paired_publications.py`](../code/orchestrators/sync_paired_publications.py) is the canonical GitHub Releases + Zenodo Records pairing tool.
+- [`code/orchestrators/sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) is the canonical GitHub Releases + Zenodo Records pairing tool.
 - GitHub releases provide source-repository and release context. Zenodo records provide DOI, archival metadata, record URLs, and downloadable PDFs.
 - Strong `create_new` and `update_existing` actions may be applied automatically with `--apply`.
 - `needs_review` actions are review-only. Do not auto-apply them without manual curation.
@@ -40,7 +40,7 @@ GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/refresh_public
 GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_inventory.py
 ```
 
-The generated reports under [`reports/`](../reports/) are evidence snapshots. They support review but do not replace the curated bibliography.
+The generated reports under [`reports/`](../../reports/) are evidence snapshots. They support review but do not replace the curated bibliography.
 
 ## Dry Run Pairing
 
@@ -78,11 +78,11 @@ By default, apply mode downloads available Zenodo PDFs and updates curated/gener
 
 Expected source-owned updates include:
 
-- bibliography rows in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md)
-- per-paper folders under [`papers/`](../papers/) with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and PDFs when available
-- [`papers/paper_metadata.json`](../papers/paper_metadata.json)
-- [`papers/README.md`](../papers/README.md) and [`papers/AGENTS.md`](../papers/AGENTS.md)
-- software cross-links in [`pages/SOFTWARE.md`](../pages/SOFTWARE.md) when a paired repository should be catalogued
+- bibliography rows in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md)
+- per-paper folders under [`papers/`](../../papers/) with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and PDFs when available
+- [`papers/paper_metadata.json`](../../papers/paper_metadata.json)
+- [`papers/README.md`](../../papers/README.md) and [`papers/AGENTS.md`](../../papers/AGENTS.md)
+- software cross-links in [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) when a paired repository should be catalogued
 
 Apply mode also runs the publication regeneration chain for bibliography exports, publications HTML, software exports, domain/work/paper pages, catalog/search/feed/sitemap, asset audit, and generated manifest.
 
@@ -90,13 +90,13 @@ Apply mode also runs the publication regeneration chain for bibliography exports
 
 For `needs_review` actions, inspect the GitHub release, Zenodo record, DOI, title, creator list, repository URL, and PDF before deciding.
 
-Record manual decisions in [`data/paired-publication-decisions.json`](../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../reports/). An `accept` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata or an already represented work.
+Record manual decisions in [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../../reports/). An `accept` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata or an already represented work.
 
 If the item is a real publication but cannot be safely auto-applied:
 
-1. Add or update the row in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md).
+1. Add or update the row in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md).
 2. Create or update the matching `papers/YYYY_Topic/` folder with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and any public PDF.
-3. Update [`papers/paper_metadata.json`](../papers/paper_metadata.json) and paper indexes if the folder set changed.
+3. Update [`papers/paper_metadata.json`](../../papers/paper_metadata.json) and paper indexes if the folder set changed.
 4. Run the regeneration and validation commands below.
 
 Do not create duplicate rows for newer Zenodo versions of the same work; update the existing row and preserve version-chain context where useful.
@@ -114,17 +114,17 @@ uv run python3 code/orchestrators/validate_repo.py
 uv run pytest code/tests -q
 ```
 
-If bibliography, software, evidence, or reconciliation data changed outside the apply path, also run the specific generator listed in [`GENERATED.md`](../GENERATED.md) before validation.
+If bibliography, software, evidence, or reconciliation data changed outside the apply path, also run the specific generator listed in [`GENERATED.md`](../../GENERATED.md) before validation.
 
 ## Acceptance Checks
 
 Before committing or pushing, confirm:
 
-- [`publications.html`](../publications.html) includes each new or updated work.
-- [`data/works.json`](../data/works.json) includes the canonical DOI and paper-folder path.
+- [`publications.html`](../../publications.html) includes each new or updated work.
+- [`data/works.json`](../../data/works.json) includes the canonical DOI and paper-folder path.
 - Each publication folder has `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, and at least one local artifact link when a PDF exists.
-- [`papers/<folder>/index.html`](../papers/) exists for every bibliography row with a docs path.
-- [`sitemap.xml`](../sitemap.xml), [`search-index.json`](../search-index.json), [`GENERATED.md`](../GENERATED.md), and [`data/generated-manifest.json`](../data/generated-manifest.json) reflect the new public URLs.
+- [`papers/<folder>/index.html`](../../papers/) exists for every bibliography row with a docs path.
+- [`sitemap.xml`](../../sitemap.xml), [`search-index.json`](../../search-index.json), [`GENERATED.md`](../../GENERATED.md), and [`data/generated-manifest.json`](../../data/generated-manifest.json) reflect the new public URLs.
 
 After push, verify representative live URLs:
 

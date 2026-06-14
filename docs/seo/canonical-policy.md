@@ -45,4 +45,4 @@ redirects, so a changed key = a 404 (or a forever-maintained meta-refresh stub).
 - Add the page to `llms.txt` if agents should discover it.
 - Add local links from at least one human navigation surface.
 - Do not list redirect-only stubs in `sitemap.xml`.
-- After major SEO/sitemap changes, run `uv run python3 code/orchestrators/gsc_followup_preflight.py` then follow [GSC_FOLLOWUP.md](GSC_FOLLOWUP.md) in a signed-in browser.
+- After major SEO/sitemap changes, run `uv run python3 code/orchestrators/gsc_followup_preflight.py` then follow [gsc-followup.md](gsc-followup.md) in a signed-in browser.

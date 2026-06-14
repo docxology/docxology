@@ -239,7 +239,7 @@ def print_summary(report: dict) -> None:
     for line in report["checklist"]:
         print(f"  {line}")
     print()
-    print("Full runbook: docs/GSC_FOLLOWUP.md")
+    print("Full runbook: docs/seo/gsc-followup.md")
 
 
 def main() -> None:

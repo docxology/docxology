@@ -135,4 +135,4 @@ uv run python3 code/orchestrators/submit_indexnow.py   # Bing, Yandex, Naver
 uv run python3 code/orchestrators/validate_repo.py      # includes seo_invariants
 ```
 
-See also [docs/REDIRECTS.md](REDIRECTS.md) and [code/src/seo_invariants.py](../code/src/seo_invariants.py).
+See also [canonical-policy.md](canonical-policy.md) and [code/src/seo_invariants.py](../../code/src/seo_invariants.py).

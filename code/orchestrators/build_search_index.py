@@ -67,7 +67,7 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("media", "page", "Media", "/media.html", "Talks, podcasts, videos, and press.", ["media"]),
     ("art", "page", "Art", "/art.html", "Visual art and Curio Cards work.", ["art"]),
     ("changelog", "document", "Changelog", "/CHANGELOG.md", "Public-index and generated-site change history.", ["maintenance"]),
-    ("redirects", "document", "Redirect And Canonical Policy", "/docs/REDIRECTS.md", "Canonical URL and redirect-stub rules.", ["canonical", "seo"]),
+    ("redirects", "document", "Redirect And Canonical Policy", "/docs/seo/canonical-policy.md", "Canonical URL and redirect-stub rules.", ["canonical", "seo"]),
     ("reconciliation", "report", "Public-Source Reconciliation Report", reconciliation, "Curated local counts compared with public source indexes.", ["evidence", "reports"]),
     ("public-source-inventory", "report", "Public Source Inventory", public_source_inventory, "Paginated public-source inventory for source discovery and claim auditing.", ["evidence", "public sources", "reports"]),
     ("accessibility", "report", "Static Accessibility Report", accessibility, "Static accessibility and metadata audit output.", ["accessibility", "reports"]),
@@ -80,7 +80,7 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("generated", "document", "Generated Files", "/GENERATED.md", "Generated artifact manifest and rebuild commands.", ["generated", "maintenance"]),
     ("agent-start", "document", "Agent Start Guide", "/AGENT_START.md", "Task recipes for agents using the repository.", ["agents", "start"]),
     ("humans", "document", "Humans.txt", "/humans.txt", "Human-maintained contact and site credits.", ["contact", "humans"]),
-    ("release-snapshot", "document", "2026-05 Discovery Layer Release Snapshot", "/docs/RELEASE_2026-05_DISCOVERY_LAYER.md", "Release note and validation gate for the discovery layer.", ["release", "maintenance"]),
+    ("release-snapshot", "document", "2026-05 Discovery Layer Release Snapshot", "/docs/releases/2026-05-discovery-layer.md", "Release note and validation gate for the discovery layer.", ["release", "maintenance"]),
     ]
 
 

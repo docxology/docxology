@@ -14,11 +14,11 @@ Static GitHub Pages site for a public research profile. No authentication, no se
 
 ## Responsible disclosure
 
-See [`.well-known/security.txt`](../.well-known/security.txt) — contact `Daniel@ActiveInference.Institute`, policy via GitHub issue chooser.
+See [`.well-known/security.txt`](../../.well-known/security.txt) — contact `Daniel@ActiveInference.Institute`, policy via GitHub issue chooser.
 
 ## Client-side XSS
 
-Search and publications UIs build HTML from `search-index.json` / `data/works.json`. All dynamic text passes through `esc()` in [`js/search-utils.js`](../js/search-utils.js) and [`js/publications.js`](../js/publications.js). Prefer keeping escape logic centralized; do not add unescaped `innerHTML` from index data.
+Search and publications UIs build HTML from `search-index.json` / `data/works.json`. All dynamic text passes through `esc()` in [`js/search-utils.js`](../../js/search-utils.js) and [`js/publications.js`](../../js/publications.js). Prefer keeping escape logic centralized; do not add unescaped `innerHTML` from index data.
 
 ## Content Security Policy
 
@@ -46,4 +46,4 @@ Do not commit API keys, tokens, or private paths. Public JSON exports must not e
 
 ## Assessment report
 
-See [`reports/web_assessment_2026-05-26.md`](../reports/web_assessment_2026-05-26.md) for the 2026-05-26 static review summary.
+See [`reports/web_assessment_2026-05-26.md`](../../reports/web_assessment_2026-05-26.md) for the 2026-05-26 static review summary.

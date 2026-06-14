@@ -203,7 +203,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [reports/](../reports/) | Public-source snapshots, reconciliation reports, external-link reports, accessibility reports, and visual QA screenshots |
 | [GENERATED.md](../GENERATED.md) | Generated-file manifest with rebuild commands and source-to-output mapping |
 | [AGENT_START.md](../AGENT_START.md) / [humans.txt](../humans.txt) / [security.txt](../.well-known/security.txt) | Agent task recipes, human credits/contact, and responsible disclosure metadata |
-| [CHANGELOG.md](../CHANGELOG.md) / [docs/REDIRECTS.md](../docs/REDIRECTS.md) | Human-readable change history and canonical URL policy |
+| [CHANGELOG.md](../CHANGELOG.md) / [docs/seo/canonical-policy.md](../docs/seo/canonical-policy.md) | Human-readable change history and canonical URL policy |
 | [PROFILE.md](PROFILE.md) | Detailed biographical profile |
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |

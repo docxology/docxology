@@ -1,8 +1,8 @@
 # AGENTS.md — `docs/`
 
-Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs).
+Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs). For the human-facing navigation index of this folder, see [`README.md`](README.md); docs are grouped under `architecture/`, `operations/`, `seo/`, `design/`, `security/`, and `releases/`.
 
-See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`PUBLICATION_SYNC.md`](PUBLICATION_SYNC.md) for the GitHub + Zenodo publication intake workflow. Add long-form architecture or runbooks here when they outgrow the root index.
+See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`operations/publication-sync.md`](operations/publication-sync.md) for the GitHub + Zenodo publication intake workflow. Add long-form architecture or runbooks under the matching topic directory.
 
 **Volatile counts:** do not repeat current totals in this file or root `README.md`. Link to [`reports/current_counts.md`](../reports/current_counts.md), [`data/current-counts.json`](../data/current-counts.json), and the canonical source tables instead.
 
@@ -26,7 +26,7 @@ Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data
 
 ## Canonical URLs and reports
 
-- [docs/REDIRECTS.md](REDIRECTS.md) records canonical URL and redirect-stub rules for GitHub Pages.
-- [docs/GSC_FOLLOWUP.md](GSC_FOLLOWUP.md) — manual Google Search Console runbook after SEO remediation; preflight via `code/orchestrators/gsc_followup_preflight.py`.
+- [docs/seo/canonical-policy.md](seo/canonical-policy.md) records canonical URL, redirect-stub, and permanent-work-URL rules for GitHub Pages.
+- [docs/seo/gsc-followup.md](seo/gsc-followup.md) — manual Google Search Console runbook after SEO remediation; preflight via `code/orchestrators/gsc_followup_preflight.py`.
 - [CHANGELOG.md](../CHANGELOG.md) summarizes public-index and generated-site changes.
 - [reports/](../reports/) stores source snapshots, reconciliation outputs, external-link reports, accessibility results, and Playwright visual QA screenshots.

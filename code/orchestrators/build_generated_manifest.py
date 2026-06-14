@@ -131,7 +131,7 @@ ARTIFACTS = [
         "sources": [
             "GitHub Releases API",
             "Zenodo Records API",
-            "docs/PUBLICATION_SYNC.md",
+            "docs/operations/publication-sync.md",
             "code/src/publication_pairing.py",
             "code/orchestrators/sync_paired_publications.py",
         ],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T22:45:17Z",
+  "generated_at": "2026-06-14T23:10:16Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -239,7 +239,7 @@
       "id": "page:redirects",
       "type": "document",
       "title": "Redirect And Canonical Policy",
-      "url": "/docs/REDIRECTS.md",
+      "url": "/docs/seo/canonical-policy.md",
       "summary": "Canonical URL and redirect-stub rules.",
       "tags": [
         "canonical",
@@ -400,7 +400,7 @@
       "id": "page:release-snapshot",
       "type": "document",
       "title": "2026-05 Discovery Layer Release Snapshot",
-      "url": "/docs/RELEASE_2026-05_DISCOVERY_LAYER.md",
+      "url": "/docs/releases/2026-05-discovery-layer.md",
       "summary": "Release note and validation gate for the discovery layer.",
       "tags": [
         "release",
