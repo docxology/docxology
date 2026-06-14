@@ -396,4 +396,30 @@ def collect_count_drift() -> list[str]:
         me_len = len(ld.get("mainEntity", []))
         _append_if_mismatch(errors, "data/publications-ld.json mainEntity length", me_len, works)
 
+    # Hand-maintained narrative pages that quote the work/folder count in prose. These
+    # have no generator, so nothing keeps them current — guard them here so they cannot
+    # silently rot (they had drifted to 125/154 before being reconciled 2026-06-14).
+    links = (REPO_ROOT / "pages" / "LINKS.md").read_text(encoding="utf-8")
+    _append_if_mismatch(errors, "pages/LINKS.md bibliography works", _find_int(r"table of all (\d+) works", links), works)
+    _append_if_mismatch(errors, "pages/LINKS.md paper folders", _find_int(r"(\d+) per-paper folders with documentation", links), folders)
+
+    profile = (REPO_ROOT / "pages" / "PROFILE.md").read_text(encoding="utf-8")
+    _append_if_mismatch(errors, "pages/PROFILE.md prose works", _find_int(r"lists \*\*(\d+)\*\* works", profile), works)
+    _append_if_mismatch(errors, "pages/PROFILE.md metrics table works", _find_int(r"Works \(unified bibliography\)\s*\|\s*\[(\d+)\]", profile), works)
+
+    wikipedia = (REPO_ROOT / "pages" / "WIKIPEDIA.md").read_text(encoding="utf-8")
+    _append_if_mismatch(errors, "pages/WIKIPEDIA.md lead catalog works", _find_int(r"catalogs (\d+) works", wikipedia), works)
+    _append_if_mismatch(errors, "pages/WIKIPEDIA.md full catalog note", _find_int(r"full (\d+)-work catalog", wikipedia), works)
+
+    for page in ("COLLABORATORS.md", "MEDIA.md"):
+        text = (REPO_ROOT / "pages" / page).read_text(encoding="utf-8")
+        _append_if_mismatch(errors, f"pages/{page} footer works", _find_int(r"the full bibliography \((\d+) works\)", text), works)
+
+    # Hand-maintained HTML pages that quote the work count in prose (not count-derived
+    # like publications.html). They had drifted to 154/125 before 2026-06-14.
+    discovery_html = (REPO_ROOT / "discovery.html").read_text(encoding="utf-8")
+    _append_if_mismatch(errors, "discovery.html works-json export", _find_int(r"export of the (\d+)-work bibliography", discovery_html), works)
+    cite_verify_html = (REPO_ROOT / "cite-verify.html").read_text(encoding="utf-8")
+    _append_if_mismatch(errors, "cite-verify.html works-json export", _find_int(r"Structured (\d+)-work bibliography export", cite_verify_html), works)
+
     return errors

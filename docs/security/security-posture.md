@@ -14,7 +14,11 @@ Static GitHub Pages site for a public research profile. No authentication, no se
 
 ## Responsible disclosure
 
-See [`.well-known/security.txt`](../../.well-known/security.txt) — contact `Daniel@ActiveInference.Institute`, policy via GitHub issue chooser.
+RFC 9116 `security.txt` is published at both [`/.well-known/security.txt`](../../.well-known/security.txt) (canonical) and [`/security.txt`](../../security.txt) (root mirror) — contact `Daniel@ActiveInference.Institute`, policy via GitHub issue chooser. Both carry a `Canary:` pointer to `/canary.txt` and an `Encryption:` pointer to `/.well-known/pgp-key.txt`; keep `Expires:` aligned to the quarterly canary cadence.
+
+## Warrant canary
+
+A warrant canary (`canary.txt`, dead-man's-switch, quarterly re-sign) affirms no secret legal process / duress / state compulsion. **It is a personal attestation: only the operator fills the live freshness anchors and PGP-clearsigns it** — it is published only when signed (an unsigned canary is intentionally withheld). When live it must be linked from a human nav surface and listed for discovery; the `Canary:`/`Encryption:` fields in `security.txt` resolve once it and `.well-known/pgp-key.txt` land.
 
 ## Client-side XSS
 

@@ -15,6 +15,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Human search page: https://danielarifriedman.com/search.html
 - OpenSearch descriptor: https://danielarifriedman.com/opensearch.xml
 - Agent start guide: https://github.com/docxology/docxology/blob/main/AGENT_START.md
+- Repository documentation index: https://github.com/docxology/docxology/blob/main/docs/README.md
 - Publication sync runbook: https://github.com/docxology/docxology/blob/main/docs/operations/publication-sync.md
 - Google Search Console follow-up (manual): https://github.com/docxology/docxology/blob/main/docs/seo/gsc-followup.md
 - GSC preflight checklist JSON: https://danielarifriedman.com/data/gsc-followup-checklist.json
@@ -47,9 +48,13 @@ This repository is the public research and software index for Daniel Ari Friedma
 - BibTeX export: https://danielarifriedman.com/bibliography.bib
 - CSL JSON export: https://danielarifriedman.com/bibliography.csl.json
 - RIS export: https://danielarifriedman.com/bibliography.ris
-- Works JSON: https://danielarifriedman.com/data/works.json
+- Works JSON (canonical machine-readable registry of every work — num, citation_key, url, doi, paper-folder): https://danielarifriedman.com/data/works.json
+- Publications JSON-LD (CollectionPage mainEntity): https://danielarifriedman.com/data/publications-ld.json
 - Artwork JSON: https://danielarifriedman.com/data/artworks.json
 - Software JSON: https://danielarifriedman.com/data/software.json
+- Software JSON-LD: https://danielarifriedman.com/data/software-ld.json
+- Paired-publication decisions JSON: https://danielarifriedman.com/data/paired-publication-decisions.json
+- Current volatile counts JSON: https://danielarifriedman.com/data/current-counts.json
 - GitHub repositories JSON: https://danielarifriedman.com/data/github-repositories.json
 - People JSON: https://danielarifriedman.com/data/people.json
 - Organizations JSON: https://danielarifriedman.com/data/organizations.json

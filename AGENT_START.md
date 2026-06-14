@@ -10,6 +10,7 @@ This repository is the public research, software, citation, evidence, and websit
 4. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
 5. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.
 6. Use [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
+7. Browse [`docs/README.md`](docs/README.md) for the full repository-documentation index (architecture, operations, SEO, design, security, releases); [`docs/AGENTS.md`](docs/AGENTS.md) holds agent operational guidance.
 
 ## Task Recipes
 

@@ -184,7 +184,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | File | Description |
 |------|-------------|
 | [README.md](../README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 154 works (Google Scholar totals may lag new deposits) |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 167 works (Google Scholar totals may lag new deposits) |
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
 | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
@@ -208,7 +208,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 147 per-paper folders with documentation |
+| [papers/](../papers/) | 150 per-paper folders with documentation |
 
 ---
 
