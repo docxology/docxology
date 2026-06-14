@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Publications — Daniel Ari Friedman, PhD",
-    "description": "Complete bibliography: 165 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
+    "description": "Complete bibliography: 167 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -24,7 +24,7 @@
                 "name": "Zenodo"
             },
             "keywords": "💻",
-            "sameAs": "https://doi.org/10.5281/zenodo.19139090"
+            "sameAs": "https://doi.org/10.5281/zenodo.20669283"
         },
         {
             "@type": "CreativeWorkSeries",
@@ -2000,23 +2000,6 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "headline": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
-            "datePublished": "2025",
-            "author": [
-                {
-                    "@type": "Person",
-                    "name": "Daniel Ari Friedman"
-                }
-            ],
-            "publisher": {
-                "@type": "Organization",
-                "name": "Zenodo"
-            },
-            "keywords": "💻",
-            "sameAs": "https://doi.org/10.5281/zenodo.15231156"
-        },
-        {
-            "@type": "ScholarlyArticle",
             "headline": "Policy Entanglement in Active Inference",
             "datePublished": "2026",
             "author": [
@@ -2811,6 +2794,57 @@
             },
             "keywords": "💻",
             "sameAs": "https://doi.org/10.5281/zenodo.20614909"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.20693217"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.20647443"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "GeneralizedNotationNotation (GNN)",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "sameAs": "https://doi.org/10.5281/zenodo.20671741"
         }
     ]
 }

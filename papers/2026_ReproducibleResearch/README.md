@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19139090-blue)](https://doi.org/10.5281/zenodo.19139090)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20669283-blue)](https://doi.org/10.5281/zenodo.20669283)
 
 ---
 <!-- Schema.org structured data for search engines -->
@@ -48,8 +48,8 @@
   title = {{A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication}},
   journal = {Zenodo},
   year = {2026},
-  doi = {10.5281/zenodo.19139090},
-  url = {https://zenodo.org/records/19139090},
+  doi = {10.5281/zenodo.20669283},
+  url = {https://zenodo.org/records/20669283},
 }
 ```
 
@@ -63,4 +63,4 @@
 ## Links
 
 - **Repository**: [github.com/docxology/template](https://github.com/docxology/template)
-- **Zenodo**: [zenodo.org/records/19139090](https://zenodo.org/records/19139090)
+- **Zenodo**: [zenodo.org/records/20669283](https://zenodo.org/records/20669283)

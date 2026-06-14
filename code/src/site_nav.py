@@ -11,12 +11,9 @@ SITE_ORIGIN = "https://danielarifriedman.com/"
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
 # engines consolidate ranking signals instead of splitting them across duplicates.
 #   key (duplicate citation_key) -> value (canonical/primary citation_key)
-WORK_CANONICAL_OVERRIDES = {
-    # CEREBRUM "v1.4" (papers/2025_CEREBRUM2, num 118) is the same paper as the
-    # primary CEREBRUM entry (papers/2025_CEREBRUM, num 10); Zenodo DOI
-    # 10.5281/zenodo.15170907 resolves to 10.5281/zenodo.15231156. Consolidate.
-    "Friedman2025CEREBRUMCaseEnabledReasoning118": "Friedman2025CEREBRUMCaseEnabledReasoning010",
-}
+#   Currently empty — the CEREBRUM "v1.4" duplicate this once consolidated was
+#   removed outright. Add entries here if a future deposit duplicates a work.
+WORK_CANONICAL_OVERRIDES: dict[str, str] = {}
 
 
 def canonical_work_key(citation_key: str) -> str:

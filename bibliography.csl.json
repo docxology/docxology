@@ -21,8 +21,8 @@
     "note": "Catalog row 1; docs: papers/2026_ReproducibleResearch/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.19139090",
-    "URL": "https://doi.org/10.5281/zenodo.19139090"
+    "DOI": "10.5281/zenodo.20669283",
+    "URL": "https://doi.org/10.5281/zenodo.20669283"
   },
   {
     "id": "Friedman2026ActiveInferenceJournal500002",
@@ -2914,31 +2914,6 @@
     "URL": "https://doi.org/10.5281/zenodo.20286478"
   },
   {
-    "id": "Friedman2025CEREBRUMCaseEnabledReasoning118",
-    "type": "article-journal",
-    "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2025
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 118; docs: papers/2025_CEREBRUM2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.15231156",
-    "URL": "https://doi.org/10.5281/zenodo.15231156"
-  },
-  {
     "id": "Friedman2026PolicyEntanglementActiveInference119",
     "type": "article-journal",
     "title": "Policy Entanglement in Active Inference",
@@ -4106,5 +4081,80 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20614909",
     "URL": "https://doi.org/10.5281/zenodo.20614909"
+  },
+  {
+    "id": "Friedman2026DemoCreateDeclarativeAudioVisual166",
+    "type": "article-journal",
+    "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 166; docs: papers/2026_DemoCreate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20693217",
+    "URL": "https://doi.org/10.5281/zenodo.20693217"
+  },
+  {
+    "id": "Friedman2026ENTOENcryptedTypedOmnitrack167",
+    "type": "article-journal",
+    "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 167; docs: papers/2026_ENTO/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20647443",
+    "URL": "https://doi.org/10.5281/zenodo.20647443"
+  },
+  {
+    "id": "Friedman2026GeneralizedNotationNotationGNN168",
+    "type": "article-journal",
+    "title": "GeneralizedNotationNotation (GNN)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 168; docs: papers/2026_GeneralizedNotationNotationGNN/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20671741",
+    "URL": "https://doi.org/10.5281/zenodo.20671741"
   }
 ]

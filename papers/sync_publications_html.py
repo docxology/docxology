@@ -217,12 +217,18 @@ def load_rows() -> list[BiblioRow]:
 
 
 def validate_rows(rows: list[BiblioRow]) -> None:
+    # `num` is a STABLE id embedded in each work's citation key / page URL
+    # (Friedman{year}{suffix}{num:03d}), assigned append-only as max+1. Numbers must
+    # be strictly increasing and unique, but gaps are allowed: removing a work leaves
+    # its number retired rather than renumbering (and breaking) every later URL.
     n = len(rows)
     if n == 0:
         raise SystemExit("No bibliography rows parsed")
+    prev = 0
     for i, r in enumerate(rows, start=1):
-        if r.num != i:
-            raise SystemExit(f"Row order/num mismatch at index {i}: expected num {i}, got {r.num}")
+        if r.num <= prev:
+            raise SystemExit(f"Row order/num mismatch at index {i}: num {r.num} not greater than previous {prev}")
+        prev = r.num
 
 
 def main() -> None:

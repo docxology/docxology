@@ -3,8 +3,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication
 T2  - Zenodo
-DO  - 10.5281/zenodo.19139090
-UR  - https://doi.org/10.5281/zenodo.19139090
+DO  - 10.5281/zenodo.20669283
+UR  - https://doi.org/10.5281/zenodo.20669283
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 1; docs: papers/2026_ReproducibleResearch/
@@ -1393,18 +1393,6 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
-PY  - 2025
-TI  - CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling
-T2  - Zenodo
-DO  - 10.5281/zenodo.15231156
-UR  - https://doi.org/10.5281/zenodo.15231156
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 118; docs: papers/2025_CEREBRUM2/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Policy Entanglement in Active Inference
 T2  - Zenodo
@@ -1959,4 +1947,40 @@ UR  - https://doi.org/10.5281/zenodo.20614909
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 165; docs: papers/2026_ITrace/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - DemoCreate: Declarative Audio-Visual Demo Generation for Software
+T2  - Zenodo
+DO  - 10.5281/zenodo.20693217
+UR  - https://doi.org/10.5281/zenodo.20693217
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 166; docs: papers/2026_DemoCreate/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data
+T2  - Zenodo
+DO  - 10.5281/zenodo.20647443
+UR  - https://doi.org/10.5281/zenodo.20647443
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 167; docs: papers/2026_ENTO/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - GeneralizedNotationNotation (GNN)
+T2  - Zenodo
+DO  - 10.5281/zenodo.20671741
+UR  - https://doi.org/10.5281/zenodo.20671741
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 168; docs: papers/2026_GeneralizedNotationNotationGNN/
 ER  -

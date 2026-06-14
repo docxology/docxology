@@ -21,19 +21,16 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Data catalog | `catalog.html`<br>`data/catalog.json` | `code/orchestrators/build_catalog.py`<br>`data/*.json` | `python3 code/orchestrators/build_catalog.py` |
 | Exports hub | `exports.html` | `code/orchestrators/build_exports_page.py`<br>`data/catalog.json` | `python3 code/orchestrators/build_exports_page.py` |
 | Updates page | `updates.html` | `CHANGELOG.md`<br>`code/orchestrators/build_updates_page.py` | `python3 code/orchestrators/build_updates_page.py` |
-| Open Graph share images | `og-*.jpg` | `code/orchestrators/generate_og_images.py` (ASSETS list) | `python3 code/orchestrators/generate_og_images.py` |
-| Social meta on hand-maintained pages | `index.html`<br>`publications.html`<br>`art.html`<br>`videos.html`<br>`collaborators.html`<br>`search.html`<br>`discovery.html`<br>`cite-verify.html`<br>`media.html`<br>`software.html` (Twitter Card + og:image:alt only) | existing `og:*` tags on each page<br>`code/orchestrators/ensure_social_meta.py` | `python3 code/orchestrators/ensure_social_meta.py` (use `--check` to verify) |
 | External link report | `reports/external_links_2026-05-15.json` | `site-critical HTML, Markdown, and JSON-LD files` | `python3 code/orchestrators/check_external_links.py` |
 | Public source snapshot | `reports/public_source_snapshot_2026-06-09.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
 | Public source inventory | `reports/public_source_inventory_2026-06-09.json` | `ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | External link triage | `reports/external_links_triage_2026-05-15.json`<br>`reports/external_links_triage_2026-05-15.md` | `reports/external_links_2026-05-15.json` | `python3 code/orchestrators/build_external_link_triage.py` |
-| Asset size audit | `reports/asset_size_2026-06-09.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
-| Static accessibility report | `reports/accessibility_static_2026-06-09.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
+| Asset size audit | `reports/asset_size_2026-06-14.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
+| Static accessibility report | `reports/accessibility_static_2026-06-14.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
 | Browser smoke checks | `reports/browser-smoke/2026-05-28/*.png`<br>`reports/browser-smoke/2026-05-28/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
 | Live site verification | `reports/live_site_verification_2026-05-15.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
-| Image sitemap | `sitemap-images.xml` | `data/artworks.json`<br>`art/*.jpg`<br>`code/orchestrators/build_image_sitemap.py` | `python3 code/orchestrators/build_image_sitemap.py` |
 | Visual QA | `reports/visual-qa/2026-05-28/*.png`<br>`reports/visual-qa/2026-05-28/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
 
 ## Validation

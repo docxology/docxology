@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T18:25:12Z",
+  "generated_at": "2026-06-14T22:30:05Z",
   "source": "pages/SOFTWARE.md",
   "count": 89,
   "repositories": [
@@ -816,8 +816,8 @@
       "language": "Python",
       "stars": 12,
       "updated_or_year": "2025",
-      "paper_path": "papers/2025_CEREBRUM2/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.15231156"
+      "paper_path": "papers/2025_CEREBRUM/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.15170907"
     },
     {
       "name": "GEO-INFER",

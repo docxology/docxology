@@ -50,7 +50,7 @@
 - **Source PDF**: `template_daf_v1_03202026.pdf` (1,153,790 bytes)
 - **PDF Status**: ✅ Available
 - **Documentation Quality**: Curated from Zenodo metadata and user-provided abstract
-- **DOI**: [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090)
+- **DOI**: [10.5281/zenodo.20669283](https://doi.org/10.5281/zenodo.20669283)
 
 ## Related Papers
 

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data"
+version: "0.4"
+date-released: 2026-06-11
+doi: 10.5281/zenodo.20647443
+url: "https://doi.org/10.5281/zenodo.20647443"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20647443
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/20647443"
+    description: "Zenodo landing page"

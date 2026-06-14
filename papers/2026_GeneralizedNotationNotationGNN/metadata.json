@@ -1,0 +1,49 @@
+{
+  "title": "GeneralizedNotationNotation (GNN)",
+  "version": "v2.0.0",
+  "doi": "10.5281/zenodo.20671741",
+  "doi_url": "https://doi.org/10.5281/zenodo.20671741",
+  "zenodo_record": "https://zenodo.org/records/20671741",
+  "record_id": "20671741",
+  "publication_date": "2026-06-12",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "The GeneralizedNotationNotation Community Contributors",
+      "affiliation": null
+    }
+  ],
+  "description": "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a \"Triple Play\" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models.",
+  "keywords": [
+    "active inference",
+    "generative models",
+    "cognitive modeling",
+    "notation system",
+    "reproducibility",
+    "computational neuroscience",
+    "bayesian inference",
+    "standards",
+    "gnn",
+    "python"
+  ],
+  "files": [
+    {
+      "name": "ActiveInferenceInstitute/GeneralizedNotationNotation-v2.0.0.zip",
+      "size_bytes": 137202416,
+      "checksum": "md5:9739334452859f0a132d9e11acd509af",
+      "download_url": "https://zenodo.org/api/records/20671741/files/ActiveInferenceInstitute/GeneralizedNotationNotation-v2.0.0.zip/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-14T22:26:11Z"
+}

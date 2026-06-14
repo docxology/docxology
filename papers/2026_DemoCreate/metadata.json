@@ -1,0 +1,60 @@
+{
+  "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+  "version": "0.6.2",
+  "doi": "10.5281/zenodo.20693217",
+  "doi_url": "https://doi.org/10.5281/zenodo.20693217",
+  "zenodo_record": "https://zenodo.org/records/20693217",
+  "record_id": "20693217",
+  "publication_date": "2026-06-04",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, capture via mss/Playwright, animation via Manim, assembly via MoviePy/ffmpeg) sits behind an abstract interface with a pure-Python deterministic default, so the package produces a real demo with only light dependencies and upgrades when extras are installed. On-screen actions are anchored to spoken trigger words via TTS&rarr;STT synchronization: narration audio is generated, transcribed back to word-level timestamps, and used to align the action stream with the narration.",
+  "keywords": [
+    "demo-generation",
+    "screencast",
+    "text-to-speech",
+    "code-walkthrough",
+    "video",
+    "narration",
+    "whisper",
+    "manim",
+    "playwright",
+    "reproducible",
+    "deterministic",
+    "tts-stt-synchronization",
+    "virtual-ide"
+  ],
+  "files": [
+    {
+      "name": "democreate-0.6.2-py3-none-any.whl",
+      "size_bytes": 172758,
+      "checksum": "md5:69d57765d701aa12ecb92a72fb547aee",
+      "download_url": "https://zenodo.org/api/records/20693217/files/democreate-0.6.2-py3-none-any.whl/content"
+    },
+    {
+      "name": "democreate-0.6.2-manuscript.pdf",
+      "size_bytes": 1246461,
+      "checksum": "md5:38a62e6fb2b55de584a46d8257b02194",
+      "download_url": "https://zenodo.org/api/records/20693217/files/democreate-0.6.2-manuscript.pdf/content"
+    },
+    {
+      "name": "democreate-0.6.2-source.zip",
+      "size_bytes": 35551741,
+      "checksum": "md5:300ab65faecc98d5eb70c082fbec8066",
+      "download_url": "https://zenodo.org/api/records/20693217/files/democreate-0.6.2-source.zip/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-14T22:15:56Z"
+}

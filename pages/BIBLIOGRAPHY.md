@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**165 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**167 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,15 +30,15 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**144** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**146** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **165** works in the table below **·** **148** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **167** works in the table below **·** **150** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
 | # | Year | Domain | Type | Title | Venue | DOI/Link | Docs |
 |--:|:----:|:------:|:----:|-------|-------|----------|:----:|
-| 1 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090) | [📁](../papers/2026_ReproducibleResearch/) |
+| 1 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.20669283](https://doi.org/10.5281/zenodo.20669283) | [📁](../papers/2026_ReproducibleResearch/) |
 | 2 | 2026 | 🎥 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | *YouTube* | [video.activeinference.institute](https://video.activeinference.institute/) | — |
 | 3 | 2026 | 🎨 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | *Zenodo* | [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970) | [📁](../papers/2026_BeforePragmatism/) |
 | 4 | 2026 | 🎨 | Paper | The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value | *Zenodo* | [10.5281/zenodo.19335196](https://doi.org/10.5281/zenodo.19335196) | [📁](../papers/2026_Bimetalism/) |
@@ -155,7 +155,6 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 115 | 2026 | 🎨 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984) | [📁](../papers/2026_BlakeJiang/) |
 | 116 | 2026 | 🛡️ | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | *Zenodo* | [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171) | [📁](../papers/2026_CrescentCity/) |
 | 117 | 2026 | 💻 | Book | Introduction to Biology: A Generative Approach | *Zenodo* | [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478) | [📁](../papers/2026_BiologyTextbook/) |
-| 118 | 2025 | 💻 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | *Zenodo* | [10.5281/zenodo.15231156](https://doi.org/10.5281/zenodo.15231156) | [📁](../papers/2025_CEREBRUM2/) |
 | 119 | 2026 | 💻 | Paper | Policy Entanglement in Active Inference | *Zenodo* | [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637) | [📁](../papers/2026_PolicyEntanglementActive/) |
 | 120 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357) | [📁](../papers/2026_BoundedAutoResearchTiny/) |
 | 121 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20420368](https://doi.org/10.5281/zenodo.20420368) | [📁](../papers/2026_ConvergenceAnalysisGradient/) |
@@ -203,6 +202,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 163 | 2017 | 🧬 | Paper | Osteopathy and the Variable Variability of Health | *The Cranial Letter 70(4)* | — | — |
 | 164 | 2016 | 🧬 | Paper | Cells, Mechanobiology, and Osteopathy | *The Cranial Letter 69(1)* | — | — |
 | 165 | 2026 | 💻 | Paper | iTrace: verification-first webcam eye-movement analysis | *Zenodo* | [10.5281/zenodo.20614909](https://doi.org/10.5281/zenodo.20614909) | [📁](../papers/2026_ITrace/) |
+| 166 | 2026 | 💻 | Paper | DemoCreate: Declarative Audio-Visual Demo Generation for Software | *Zenodo* | [10.5281/zenodo.20693217](https://doi.org/10.5281/zenodo.20693217) | [📁](../papers/2026_DemoCreate/) |
+| 167 | 2026 | 💻 | Paper | ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data | *Zenodo* | [10.5281/zenodo.20647443](https://doi.org/10.5281/zenodo.20647443) | [📁](../papers/2026_ENTO/) |
+| 168 | 2026 | 🧠 | Paper | GeneralizedNotationNotation (GNN) | *Zenodo* | [10.5281/zenodo.20671741](https://doi.org/10.5281/zenodo.20671741) | [📁](../papers/2026_GeneralizedNotationNotationGNN/) |
 ---
 
 ## Domain Index
@@ -221,7 +223,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 🧠 Active Inference
 
-> 37 works (2018–2026)
+> 38 works (2018–2026)
 
 - **2026** — Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics · [📁](../papers/2026_FEPLean/)
 - **2026** — Compositional Approaches to Linguistic Case for Cognitive Modeling · [📁](../papers/2026_CognitiveCaseDiagrams/)
@@ -261,7 +263,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 💻 Computational
 
-> 25 works (2023–2026)
+> 26 works (2023–2026)
 
 - **2026** — A Deterministic Testbed for Self-Organizing Agent-Team Coordination · [📁](../papers/2026_DeterministicTestbedSelf/)
 - **2026** — Recovering LLM-Persona Accuracies from Unlabeled Votes · [📁](../papers/2026_RecoveringLLMPersona/)

@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 43
+- Works: 44
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -68,8 +68,8 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
 - 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695260)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699234)
+- 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.20671741)
 - 2025 — [CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling](https://doi.org/10.5281/zenodo.15170907)
-- 2025 — [EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories](https://doi.org/10.5281/zenodo.17229924)
 
 **Selected repositories**
 
@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 25
+- Works: 26
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -160,7 +160,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 **Selected works**
 
-- 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.19139090)
+- 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.20669283)
 - 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286478)
 - 2026 — [Policy Entanglement in Active Inference](https://doi.org/10.5281/zenodo.20419637)
 - 2026 — [Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task](https://doi.org/10.5281/zenodo.20420357)

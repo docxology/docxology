@@ -43,13 +43,3 @@ def test_indexable_pages_have_twitter_and_og_alt():
 
 def test_work_descriptions_not_truncated_midword():
     assert check_work_descriptions(REPO_ROOT) == []
-
-
-def test_duplicate_cerebrum_canonicalizes_to_primary():
-    from seo_invariants import _canonical, _read
-
-    dup = REPO_ROOT / "works" / "Friedman2025CEREBRUMCaseEnabledReasoning118.html"
-    canonical = _canonical(_read(dup))
-    assert canonical == (
-        "https://danielarifriedman.com/works/Friedman2025CEREBRUMCaseEnabledReasoning010.html"
-    )

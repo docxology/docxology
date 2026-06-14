@@ -1,0 +1,46 @@
+{
+  "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+  "version": "0.4",
+  "doi": "10.5281/zenodo.20647443",
+  "doi_url": "https://doi.org/10.5281/zenodo.20647443",
+  "zenodo_record": "https://zenodo.org/records/20647443",
+  "record_id": "20647443",
+  "publication_date": "2026-06-11",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, spectrograms, provenance proofs &mdash; into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacute; length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection. This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/docxology/entofile.",
+  "keywords": [
+    "research data formats",
+    "authenticated encryption",
+    "AES-256-GCM",
+    "reproducible research",
+    "multimodal containers"
+  ],
+  "files": [
+    {
+      "name": "entofile-0.4.pdf",
+      "size_bytes": 3481755,
+      "checksum": "md5:9d112da737dd1e50bb8a5587aa9311b9",
+      "download_url": "https://zenodo.org/api/records/20647443/files/entofile-0.4.pdf/content"
+    },
+    {
+      "name": "entofile-0.4-source.zip",
+      "size_bytes": 521809,
+      "checksum": "md5:7dd2854c99637f087d941e9dec0b37a3",
+      "download_url": "https://zenodo.org/api/records/20647443/files/entofile-0.4-source.zip/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-14T22:15:58Z"
+}

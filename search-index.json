@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T04:08:39Z",
+  "generated_at": "2026-06-14T22:45:17Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 672,
+  "count": 674,
   "items": [
     {
       "id": "page:home",
@@ -276,7 +276,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-09.json",
+      "url": "/reports/accessibility_static_2026-06-14.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-09.json",
+      "url": "/reports/asset_size_2026-06-14.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -413,7 +413,7 @@
       "type": "work",
       "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
       "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-      "external_url": "https://doi.org/10.5281/zenodo.19139090",
+      "external_url": "https://doi.org/10.5281/zenodo.20669283",
       "summary": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechani",
       "year": 2026,
       "domain": "Computational",
@@ -430,7 +430,7 @@
         "Model Context Protocol",
         "cryptographic provenance"
       ],
-      "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Zenodo 10.5281/zenodo.19139090 Friedman2026TemplateApproachReproducibleGenerative001 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. template/ applies the principle of Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable. It is built on a Two-Layer Architecture that separates 12 reusable infrastructure subpackages (~150 Python modules, validated by ~3,083 tests) from self-contained project workspaces, connected by an eight-stage build pipeline progressing from environment sanitization through test execution (with a Zero-Mock testing policy enforcing 90% project-level and 60% infrastructure-level coverage via real filesyste reproducible research infrastructure as code build pipeline Zero-Mock testing steganographic watermarking AI-agent documentation Model Context Protocol cryptographic provenance literate programming open science Introduces a Two-Layer Architecture separating reusable infrastructure (~150 modules, ~3,083 tests) from self-contained project workspaces Defines an eight-stage build pipeline from environment sanitization through LLM-assisted review Enforces a Zero-Mock testing policy (90% project / 60% infrastructure coverage) using real filesystem operations Implements SHA-256 cryptographic hashing with steganographic watermarking for provenance Introduces Documentation Duality (README.md + AGENTS.md) and SKILL.md aligned with Model Context Protocol Two-Layer Architecture: infrastructure subpackages vs. project workspaces Eight-stage build pipeline: sanitization → tests → analysis → Pandoc/XeLaTeX → SHA-256 → steganographic watermarking → PDF validation → LLM review Zero-Mock testing policy enforcing real filesystem and subprocess operations Documentation Duality standard with MCP-aligned SKILL.md files Comparative feature analysis against Snakemake, Nextflow, CWL, Quarto, Jupyter Book, R Markdown, Overleaf, DVC, OpenAI Prism"
+      "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Zenodo 10.5281/zenodo.20669283 Friedman2026TemplateApproachReproducibleGenerative001 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. template/ applies the principle of Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable. It is built on a Two-Layer Architecture that separates 12 reusable infrastructure subpackages (~150 Python modules, validated by ~3,083 tests) from self-contained project workspaces, connected by an eight-stage build pipeline progressing from environment sanitization through test execution (with a Zero-Mock testing policy enforcing 90% project-level and 60% infrastructure-level coverage via real filesyste reproducible research infrastructure as code build pipeline Zero-Mock testing steganographic watermarking AI-agent documentation Model Context Protocol cryptographic provenance literate programming open science Introduces a Two-Layer Architecture separating reusable infrastructure (~150 modules, ~3,083 tests) from self-contained project workspaces Defines an eight-stage build pipeline from environment sanitization through LLM-assisted review Enforces a Zero-Mock testing policy (90% project / 60% infrastructure coverage) using real filesystem operations Implements SHA-256 cryptographic hashing with steganographic watermarking for provenance Introduces Documentation Duality (README.md + AGENTS.md) and SKILL.md aligned with Model Context Protocol Two-Layer Architecture: infrastructure subpackages vs. project workspaces Eight-stage build pipeline: sanitization → tests → analysis → Pandoc/XeLaTeX → SHA-256 → steganographic watermarking → PDF validation → LLM review Zero-Mock testing policy enforcing real filesystem and subprocess operations Documentation Duality standard with MCP-aligned SKILL.md files Comparative feature analysis against Snakemake, Nextflow, CWL, Quarto, Jupyter Book, R Markdown, Overleaf, DVC, OpenAI Prism"
     },
     {
       "id": "work:Friedman2026ActiveInferenceJournal500002",
@@ -3067,23 +3067,6 @@
       "content": "Introduction to Biology: A Generative Approach Zenodo 10.5281/zenodo.20286478 Friedman2026IntroductionBiologyGenerativeApproach117 Computational Book Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move between narrative explanation and the quantitative constraints that shape biological claims. Five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—provide orientation across scales and align with mainstream undergraduate biology competencies; Unit 0 adds an optional systems, historical, and philosophical lens without replacing the traditional molecular-to-ecological sequence. Where the curriculum is quantitat Biology open textbook generative approach reproducible research undergraduate biology College of the Redwoods computational biology evidence-based teaching programmatic figures laboratory activities Biology is presented as a discipline where narrative and quantitative constraints are co-developed, not separated into parallel tracks. Forty-four chapters span systems science through ecology while preserving mainstream undergraduate competency alignment. Unit 0 supplies optional systems, historical, and philosophical framing without displacing the core molecular-to-ecological arc. The edition is designed for course adoption (e.g., College of the Redwoods BIOL-1, BIOL-8) with ready-made labs and assessment banks. Generative manuscript production with reproducible build pipeline Domain-organized Python modules for quantitative curriculum segments Programmatic figure and diagram generation Inline primary-literature citation with glossary and curriculum-mapping appendices Instructor vs student build variants for assessment materials"
     },
     {
-      "id": "work:Friedman2025CEREBRUMCaseEnabledReasoning118",
-      "type": "work",
-      "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
-      "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
-      "external_url": "https://doi.org/10.5281/zenodo.15231156",
-      "summary": "This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive sci",
-      "year": 2025,
-      "domain": "Computational",
-      "tags": [
-        "Paper",
-        "Computational",
-        "bibliography",
-        "paired GitHub and Zenodo publication"
-      ],
-      "content": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling Zenodo 10.5281/zenodo.15231156 Friedman2025CEREBRUMCaseEnabledReasoning118 Computational Paper This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured representa paired GitHub and Zenodo publication paired publication"
-    },
-    {
       "id": "work:Friedman2026PolicyEntanglementActiveInference119",
       "type": "work",
       "title": "Policy Entanglement in Active Inference",
@@ -3985,6 +3968,75 @@
         "diagnostic-pilot"
       ],
       "content": "iTrace: verification-first webcam eye-movement analysis Zenodo 10.5281/zenodo.20614909 Friedman2026ITraceVerificationFirstWebcam165 Computational Paper iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation. eye-tracking webcam gaze saccades pupillometry open-source diagnostic-pilot eye-tracking webcam gaze saccades pupillometry"
+    },
+    {
+      "id": "work:Friedman2026DemoCreateDeclarativeAudioVisual166",
+      "type": "work",
+      "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+      "url": "/works/Friedman2026DemoCreateDeclarativeAudioVisual166.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20693217",
+      "summary": "DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunk",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "demo-generation",
+        "screencast",
+        "text-to-speech",
+        "code-walkthrough",
+        "video",
+        "narration",
+        "whisper",
+        "manim"
+      ],
+      "content": "DemoCreate: Declarative Audio-Visual Demo Generation for Software Zenodo 10.5281/zenodo.20693217 Friedman2026DemoCreateDeclarativeAudioVisual166 Computational Paper DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, capture via mss/Playwright, animation via Manim, assembly via MoviePy/ffmpeg) sits behind an abstract interface with a pure-Python deterministic default, so the package produces a real demo with only light dependencies and upgrades when extras are installed. On-screen actions are anchored to spoken trigger words via TTS→STT synchronization: narration audio is generated, transcribed back to word-level timestamps, and used to align the action stream with the narration. demo-generation screencast text-to-speech code-walkthrough video narration whisper manim playwright reproducible deterministic tts-stt-synchronization demo-generation screencast text-to-speech code-walkthrough video"
+    },
+    {
+      "id": "work:Friedman2026ENTOENcryptedTypedOmnitrack167",
+      "type": "work",
+      "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+      "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20647443",
+      "summary": "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "research data formats",
+        "authenticated encryption",
+        "AES-256-GCM",
+        "reproducible research",
+        "multimodal containers"
+      ],
+      "content": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data Zenodo 10.5281/zenodo.20647443 Friedman2026ENTOENcryptedTypedOmnitrack167 Computational Paper ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection. This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/do research data formats authenticated encryption AES-256-GCM reproducible research multimodal containers research data formats authenticated encryption AES-256-GCM reproducible research multimodal containers"
+    },
+    {
+      "id": "work:Friedman2026GeneralizedNotationNotationGNN168",
+      "type": "work",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20671741",
+      "summary": "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interopera",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "active inference",
+        "generative models",
+        "cognitive modeling",
+        "notation system",
+        "reproducibility",
+        "computational neuroscience",
+        "bayesian inference",
+        "standards"
+      ],
+      "content": "GeneralizedNotationNotation (GNN) Zenodo 10.5281/zenodo.20671741 Friedman2026GeneralizedNotationNotationGNN168 Active Inference Paper Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a \"Triple Play\" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models. active inference generative models cognitive modeling notation system reproducibility computational neuroscience bayesian inference standards gnn python active inference generative models cognitive modeling notation system reproducibility"
     },
     {
       "id": "software:docxology:template",
@@ -11170,7 +11222,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 165 works.",
+      "title": "The curated bibliography contains 167 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11178,12 +11230,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 165 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 167 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 148 per-paper documentation folders.",
+      "title": "The repository contains 150 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11191,7 +11243,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 148 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 150 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -11367,7 +11419,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 165 works, 89 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 167 works, 89 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

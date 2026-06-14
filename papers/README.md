@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/PUBLICATION_SYNC.md](../docs/PUBLICATION_SYNC.md).
 
-## Papers (148)
+## Papers (150)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -121,8 +121,6 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 108 | [2026_BlakeJiang](2026_BlakeJiang/) | ✅ | 2026 | BlakeJiang |
 | 109 | [2026_CrescentCity](2026_CrescentCity/) | ✅ | 2026 | CrescentCity |
 | 110 | [2026_BiologyTextbook](2026_BiologyTextbook/) | ✅ | 2026 | BiologyTextbook |
-
-| 111 | [2025_CEREBRUM2](2025_CEREBRUM2/) | ✅ | 2025 | CEREBRUM2 |
 | 112 | [2026_PolicyEntanglementActive](2026_PolicyEntanglementActive/) | ✅ | 2026 | PolicyEntanglementActive |
 | 113 | [2026_BoundedAutoResearchTiny](2026_BoundedAutoResearchTiny/) | ✅ | 2026 | BoundedAutoResearchTiny |
 | 114 | [2026_ConvergenceAnalysisGradient](2026_ConvergenceAnalysisGradient/) | ✅ | 2026 | ConvergenceAnalysisGradient |
@@ -160,6 +158,9 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 146 | [2026_Triplicate](2026_Triplicate/) | ✅ | 2026 | Triplicate |
 | 147 | [2026_TemplateTextbook](2026_TemplateTextbook/) | ✅ | 2026 | TemplateTextbook |
 | 148 | [2026_ITrace](2026_ITrace/) | ✅ | 2026 | ITrace |
+| 149 | [2026_DemoCreate](2026_DemoCreate/) | ✅ | 2026 | DemoCreate |
+| 150 | [2026_ENTO](2026_ENTO/) | ✅ | 2026 | ENTO |
+| 151 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
 ## Scripts
 
 | Script | Purpose |

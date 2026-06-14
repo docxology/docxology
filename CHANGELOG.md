@@ -2,6 +2,13 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-14
+
+- Added two Zenodo-only publications via `add_zenodo_only.py`: **DemoCreate** (`zenodo.20693217`, 💻) and **ENTO** (`zenodo.20647443`, 💻); added the **GeneralizedNotationNotation (GNN)** software v2.0.0 (`zenodo.20671741`, 🧠) as a distinct work from the 2023 GNN paper (different Zenodo concept). Bibliography **165→167**.
+- Completed the CEREBRUM dedup the 2026-06-10 pass flagged for the maintainer: removed the duplicate work `…118` (papers/2025_CEREBRUM2, the v1.4 deposit `zenodo.15231156`) outright, keeping the primary `…010` (papers/2025_CEREBRUM, `zenodo.15170907`). Retired the now-empty `WORK_CANONICAL_OVERRIDES` entry and its regression test; re-pointed the CEREBRUM software-catalog entry to the surviving paper folder. Removed-work numbers are retired, not renumbered, so existing work-page URLs stay stable — `sync_publications_html.validate_rows` now allows numbering gaps (strictly-increasing instead of exactly-sequential).
+- Re-pointed the template/ Reproducible Generative Research bibliography entry (row 1) to its latest release `zenodo.20669283` (v3.4.0).
+- Reconciled all volatile-count surfaces to **167 works / 150 paper folders** (BIBLIOGRAPHY header + per-domain counts, papers/README, index.html, DISCOVERY, and the regenerated data/exports); count-consistency drift clean, 92 tests passing.
+
 ## 2026-06-10
 
 - SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: `build_work_pages.py` now clips on a word boundary with an ellipsis via new `clip_description()` in `code/src/site_nav.py` (145 of 165 work descriptions corrected; rendered length ≤160).

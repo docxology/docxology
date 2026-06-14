@@ -2,23 +2,23 @@
   "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
   "command": "uv run python3 code/orchestrators/build_current_counts.py",
   "counts": {
-    "bibliography_docs_links": 148,
-    "bibliography_works": 165,
+    "bibliography_docs_links": 150,
+    "bibliography_works": 167,
     "domains": {
       "AII Ecosystem": 6,
-      "Active Inference": 37,
+      "Active Inference": 38,
       "Art & Synergetics": 15,
       "Cognitive Security": 30,
-      "Computational": 25,
+      "Computational": 26,
       "Entomology": 22,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
     },
     "generated_exports": {
-      "data_publications_ld_main_entity": 165,
+      "data_publications_ld_main_entity": 167,
       "data_software_json": 89,
       "data_software_ld_main_entity": 89,
-      "data_works_json": 165
+      "data_works_json": 167
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 52,
@@ -47,7 +47,7 @@
       "update_existing": 17,
       "zenodo_records": 101
     },
-    "paper_folder_docs": 148,
+    "paper_folder_docs": 150,
     "public_source_snapshot": {
       "GitHub user ActiveInferenceInstitute": 52,
       "GitHub user docxology": 307,
@@ -62,13 +62,13 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 144,
+      "Papers": 146,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2
     }
   },
-  "generated_at": "2026-06-09T18:27:17+00:00",
+  "generated_at": "2026-06-14T22:42:43+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

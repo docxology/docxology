@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-11T04:07:49Z",
+  "generated_at": "2026-06-14T22:30:06Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 165,
+  "count": 167,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2941,18 +2941,6 @@
       ],
       "source": "papers/2026_BiologyTextbook/README.md"
     },
-    "Friedman2025CEREBRUMCaseEnabledReasoning118": {
-      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning118",
-      "abstract": "This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, relationships, and transformations. The CEREBRUM framework uses structures from category theory and modeling techniques related to the Free Energy Principle, in describing and utilizing models across contexts. CEREBRUM addresses the growing complexity in computational and cognitive modeling systems (e.g. generative, decentralized, agentic intelligences), by providing structured representa",
-      "keywords": [
-        "paired GitHub and Zenodo publication"
-      ],
-      "findings": [
-        "paired publication"
-      ],
-      "methods": [],
-      "source": "papers/2025_CEREBRUM2/README.md"
-    },
     "Friedman2026PolicyEntanglementActiveInference119": {
       "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
       "abstract": "Abstract {-} Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible. This manuscript introduces policy entanglement: a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials. The construction preserves the finite active inference setting while making cross-stream dependence a first-class modeling object rather than an implicit artifact of the chosen factorization. The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameteri",
@@ -3693,6 +3681,78 @@
       ],
       "methods": [],
       "source": "papers/2026_ITrace/README.md"
+    },
+    "Friedman2026DemoCreateDeclarativeAudioVisual166": {
+      "citation_key": "Friedman2026DemoCreateDeclarativeAudioVisual166",
+      "abstract": "DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, capture via mss/Playwright, animation via Manim, assembly via MoviePy/ffmpeg) sits behind an abstract interface with a pure-Python deterministic default, so the package produces a real demo with only light dependencies and upgrades when extras are installed. On-screen actions are anchored to spoken trigger words via TTS→STT synchronization: narration audio is generated, transcribed back to word-level timestamps, and used to align the action stream with the narration.",
+      "keywords": [
+        "demo-generation",
+        "screencast",
+        "text-to-speech",
+        "code-walkthrough",
+        "video",
+        "narration",
+        "whisper",
+        "manim",
+        "playwright",
+        "reproducible",
+        "deterministic",
+        "tts-stt-synchronization"
+      ],
+      "findings": [
+        "demo-generation",
+        "screencast",
+        "text-to-speech",
+        "code-walkthrough",
+        "video"
+      ],
+      "methods": [],
+      "source": "papers/2026_DemoCreate/README.md"
+    },
+    "Friedman2026ENTOENcryptedTypedOmnitrack167": {
+      "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
+      "abstract": "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection. This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/do",
+      "keywords": [
+        "research data formats",
+        "authenticated encryption",
+        "AES-256-GCM",
+        "reproducible research",
+        "multimodal containers"
+      ],
+      "findings": [
+        "research data formats",
+        "authenticated encryption",
+        "AES-256-GCM",
+        "reproducible research",
+        "multimodal containers"
+      ],
+      "methods": [],
+      "source": "papers/2026_ENTO/README.md"
+    },
+    "Friedman2026GeneralizedNotationNotationGNN168": {
+      "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+      "abstract": "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a \"Triple Play\" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models.",
+      "keywords": [
+        "active inference",
+        "generative models",
+        "cognitive modeling",
+        "notation system",
+        "reproducibility",
+        "computational neuroscience",
+        "bayesian inference",
+        "standards",
+        "gnn",
+        "python"
+      ],
+      "findings": [
+        "active inference",
+        "generative models",
+        "cognitive modeling",
+        "notation system",
+        "reproducibility"
+      ],
+      "methods": [],
+      "source": "papers/2026_GeneralizedNotationNotationGNN/README.md"
     }
   }
 }
