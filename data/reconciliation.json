@@ -5,42 +5,42 @@
   "comparisons": [
     {
       "name": "Curated bibliography vs ORCID work groups",
-      "local_value": 167,
+      "local_value": 168,
       "public_value": 20,
       "relationship": "not expected to match",
       "interpretation": "The local bibliography intentionally includes presentations, courses, books, software-linked works, and local documentation. ORCID groups external works by identifier/version."
     },
     {
       "name": "Curated bibliography vs PubMed exact author records",
-      "local_value": 167,
+      "local_value": 168,
       "public_value": 8,
       "relationship": "subset",
       "interpretation": "PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography."
     },
     {
       "name": "Curated bibliography vs Crossref ORCID DOI records",
-      "local_value": 167,
+      "local_value": 168,
       "public_value": 15,
       "relationship": "subset",
       "interpretation": "Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere."
     },
     {
       "name": "Curated bibliography vs Zenodo ORCID-linked records",
-      "local_value": 167,
+      "local_value": 168,
       "public_value": 98,
       "relationship": "overlapping sets",
       "interpretation": "Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table."
     },
     {
       "name": "Catalogued docxology software vs GitHub public repository count",
-      "local_value": 57,
+      "local_value": 58,
       "public_value": 307,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments."
     },
     {
       "name": "Catalogued AII contributions vs AII GitHub public repository count",
-      "local_value": 32,
+      "local_value": 33,
       "public_value": 52,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository."

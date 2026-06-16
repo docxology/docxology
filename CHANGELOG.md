@@ -2,6 +2,10 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-15
+
+- Completed **COGANT** (`zenodo.20705351`, 💻) and **coasys** / **COGANT** software-catalog intake after commit `b6fa1b4`: added `2026_COGANT` to `papers/README.md` (151 folders), `paper_metadata.json`, and the Computational domain blurb (27 works); regenerated publications, software, sitemap, resume, evidence, search, feed, domain, and count exports. Bibliography **167→168**; software catalog **89→91** (58 owned + 33 AII); paper folders **150→151**.
+
 ## 2026-06-14
 
 - Added two Zenodo-only publications via `add_zenodo_only.py`: **DemoCreate** (`zenodo.20693217`, 💻) and **ENTO** (`zenodo.20647443`, 💻); added the **GeneralizedNotationNotation (GNN)** software v2.0.0 (`zenodo.20671741`, 🧠) as a distinct work from the 2023 GNN paper (different Zenodo concept). Bibliography **165→167**.

@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**167 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**168 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -264,7 +264,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ### 💻 Computational
 
-> 26 works (2023–2026)
+> 27 works (2023–2026)
 
 - **2026** — A Deterministic Testbed for Self-Organizing Agent-Team Coordination · [📁](../papers/2026_DeterministicTestbedSelf/)
 - **2026** — Recovering LLM-Persona Accuracies from Unlabeled Votes · [📁](../papers/2026_RecoveringLLMPersona/)

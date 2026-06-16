@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-14T22:30:05Z",
+  "generated_at": "2026-06-16T03:29:25Z",
   "source": "pages/SOFTWARE.md",
-  "count": 89,
+  "count": 91,
   "repositories": [
     {
       "name": "template",
@@ -253,7 +253,7 @@
       "stars": 1,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_DeterministicTestbedSelf/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20533670"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533669"
     },
     {
       "name": "template_newspaper",
@@ -265,7 +265,7 @@
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_Triplicate/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20533676"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533675"
     },
     {
       "name": "ntqr_llm",
@@ -290,6 +290,18 @@
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_ITrace/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20614909"
+    },
+    {
+      "name": "coasys",
+      "url": "https://github.com/docxology/coasys",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ultralink-docx",
@@ -649,7 +661,7 @@
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_TemplateTextbook/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20533126"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533125"
     },
     {
       "name": "blake_jiang",
@@ -998,6 +1010,18 @@
       "updated_or_year": "2025",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "COGANT",
+      "url": "https://github.com/ActiveInferenceInstitute/COGANT",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_COGANT/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20705351"
     },
     {
       "name": "Bots",

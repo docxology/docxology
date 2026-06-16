@@ -2612,5 +2612,24 @@
       "python"
     ],
     "doi": "10.5281/zenodo.7803313"
+  },
+  "2026_COGANT": {
+    "year": "2026",
+    "topic": "COGANT",
+    "name": "COGANT: Deterministic Codebase-to-GNN Translation",
+    "description": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN). It is an evidence compiler: a fixpoint rule pipeline emits graph, matrix, provenance, visualization, and roundtrip artifacts from a program-graph intermediate representation with confidence and provenance.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN). It is an evidence compiler: a fixpoint rule pipeline emits graph, matrix, provenance, visualization, and roundtrip artifacts from a program-graph intermediate representation with confidence and provenance.",
+    "keywords": [
+      "program analysis",
+      "Generalized Notation Notation",
+      "intermediate representation",
+      "code property graph",
+      "active inference",
+      "reproducible research",
+      "codebase-to-model translation",
+      "cognitive ecosystem modeling"
+    ],
+    "doi": "10.5281/zenodo.20705351"
   }
 }

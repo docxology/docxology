@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-06-16T03:22:54+00:00`
+Generated: `2026-06-16T03:29:25+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -31,7 +31,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ## Counts
 
 - Bibliography works: `168`
-- Paper-folder docs: `150`
+- Paper-folder docs: `151`
 - Bibliography docs links: `151`
 
 ### Types
@@ -63,9 +63,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Generated Exports
 
 - data_works_json: `168`
-- data_software_json: `89`
-- data_publications_ld_main_entity: `167`
-- data_software_ld_main_entity: `89`
+- data_software_json: `91`
+- data_publications_ld_main_entity: `168`
+- data_software_ld_main_entity: `91`
 
 ### GitHub Inventory
 

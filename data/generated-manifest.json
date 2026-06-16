@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T23:55:18Z",
+  "generated_at": "2026-06-16T03:32:44Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -279,7 +279,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-14.json"
+        "reports/asset_size_2026-06-16.json"
       ],
       "sources": [
         "root HTML pages",
@@ -293,7 +293,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-06-14.json"
+        "reports/accessibility_static_2026-06-16.json"
       ],
       "sources": [
         "root HTML pages",

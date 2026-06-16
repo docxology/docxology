@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T03:22:53Z",
+  "generated_at": "2026-06-16T03:31:22Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,9 +34,9 @@
   },
   "metrics": {
     "works": 168,
-    "software_catalogued": 89,
-    "owned_software_catalogued": 57,
-    "aii_software_catalogued": 32,
+    "software_catalogued": 91,
+    "owned_software_catalogued": 58,
+    "aii_software_catalogued": 33,
     "google_scholar": {
       "citations": 777,
       "h_index": 15,
@@ -52,7 +52,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-06-09.json"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -66,7 +66,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-06-09.json"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -4863,7 +4863,7 @@
       "stars": 1,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_DeterministicTestbedSelf/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20533670"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533669"
     },
     {
       "name": "template_newspaper",
@@ -4875,7 +4875,7 @@
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_Triplicate/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20533676"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533675"
     },
     {
       "name": "ntqr_llm",
@@ -4900,6 +4900,18 @@
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_ITrace/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20614909"
+    },
+    {
+      "name": "coasys",
+      "url": "https://github.com/docxology/coasys",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ultralink-docx",
@@ -5259,7 +5271,7 @@
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_TemplateTextbook/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20533126"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20533125"
     },
     {
       "name": "blake_jiang",
@@ -5610,6 +5622,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "COGANT",
+      "url": "https://github.com/ActiveInferenceInstitute/COGANT",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_COGANT/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20705351"
+    },
+    {
       "name": "Bots",
       "url": "https://github.com/ActiveInferenceInstitute/Bots",
       "owner": "ActiveInferenceInstitute",
@@ -5685,14 +5709,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 167 works.",
+      "claim": "The curated bibliography contains 168 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -5700,14 +5724,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 150 per-paper documentation folders.",
+      "claim": "The repository contains 151 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -5721,7 +5745,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-06-09.json"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -5735,7 +5759,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-06-09.json"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -5749,7 +5773,7 @@
         "https://orcid.org/0000-0001-6232-9096",
         "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics.",
       "maintenance_owner": "ARCHIVIST",
@@ -5766,7 +5790,7 @@
         "https://www.christies.com/en/lot/lot-6337619",
         "papers/2024_CurioCards/README.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's.",
       "maintenance_owner": "RESEARCHER",
@@ -5781,7 +5805,7 @@
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "Direct logged-in browser-session fetch of the canonical profile on 2026-06-09 (non-cached, non-anonymous): All-time 777 citations, h-index 15, i10-index 17 (Since-2021: 544 / 14 / 15).",
       "maintenance_owner": "ARCHIVIST",
@@ -5796,7 +5820,7 @@
         "papers/2019_PhDDissertation/README.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "Stanford PURL dissertation record and local paper folder.",
       "maintenance_owner": "RESEARCHER",
@@ -5811,7 +5835,7 @@
         "pages/PROFILE.md",
         "README.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record.",
       "maintenance_owner": "RESEARCHER",
@@ -5827,7 +5851,7 @@
         "pages/DISCOVERY.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024).",
       "maintenance_owner": "INTEGRATOR",
@@ -5842,7 +5866,7 @@
         "pages/LINKS.md",
         "pages/WIKIPEDIA.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "high",
       "verification_method": "AII board page and local governance notes.",
       "maintenance_owner": "INTEGRATOR",
@@ -5857,7 +5881,7 @@
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "medium",
       "verification_method": "AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified.",
       "maintenance_owner": "INTEGRATOR",
@@ -5872,7 +5896,7 @@
         "README.md",
         "pages/VIDEOS.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "medium",
       "verification_method": "Curated site copy and AII program page.",
       "maintenance_owner": "EDUCATOR",
@@ -5887,7 +5911,7 @@
         "index.html",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "medium",
       "verification_method": "Curated homepage and profile synchronization.",
       "maintenance_owner": "EDUCATOR",
@@ -5902,7 +5926,7 @@
         "README.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-06-14T22:30:05Z",
+      "checked_at": "2026-06-16T03:29:25Z",
       "confidence": "medium",
       "verification_method": "Public site link and curated profile copy.",
       "maintenance_owner": "RESEARCHER",

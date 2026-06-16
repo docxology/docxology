@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Software — Daniel Ari Friedman, PhD",
-    "description": "57 original repositories and 32 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
+    "description": "58 original repositories and 33 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -240,7 +240,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.20533670"
+            "sameAs": "https://doi.org/10.5281/zenodo.20533669"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -252,7 +252,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.20533676"
+            "sameAs": "https://doi.org/10.5281/zenodo.20533675"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -277,6 +277,17 @@
             },
             "programmingLanguage": "Python",
             "sameAs": "https://doi.org/10.5281/zenodo.20614909"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "coasys",
+            "description": "Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories",
+            "codeRepository": "https://github.com/docxology/coasys",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -609,7 +620,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "HTML",
-            "sameAs": "https://doi.org/10.5281/zenodo.20533126"
+            "sameAs": "https://doi.org/10.5281/zenodo.20533125"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -928,6 +939,18 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "COGANT",
+            "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/COGANT",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20705351"
         },
         {
             "@type": "SoftwareSourceCode",

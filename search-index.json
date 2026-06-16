@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T03:22:53Z",
+  "generated_at": "2026-06-16T03:32:44Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 675,
+  "count": 677,
   "items": [
     {
       "id": "page:home",
@@ -276,7 +276,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-14.json",
+      "url": "/reports/accessibility_static_2026-06-16.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-14.json",
+      "url": "/reports/asset_size_2026-06-16.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -4399,6 +4399,20 @@
       "content": "itrace Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports ·  · Zenodo Python docxology"
     },
     {
+      "id": "software:docxology:coasys",
+      "type": "software",
+      "title": "coasys",
+      "url": "https://github.com/docxology/coasys",
+      "summary": "Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "coasys Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories Python docxology"
+    },
+    {
       "id": "software:docxology:ultralink-docx",
       "type": "software",
       "title": "ultralink-docx",
@@ -5223,6 +5237,20 @@
         "ActiveInferenceInstitute"
       ],
       "content": "ATLAS Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces Python ActiveInferenceInstitute"
+    },
+    {
+      "id": "software:ActiveInferenceInstitute:COGANT",
+      "type": "software",
+      "title": "COGANT",
+      "url": "https://github.com/ActiveInferenceInstitute/COGANT",
+      "summary": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "COGANT Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:Bots",
@@ -11246,7 +11274,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 167 works.",
+      "title": "The curated bibliography contains 168 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11254,12 +11282,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 167 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 168 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 150 per-paper documentation folders.",
+      "title": "The repository contains 151 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11267,7 +11295,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 150 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 151 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -11443,7 +11471,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 167 works, 89 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 168 works, 91 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

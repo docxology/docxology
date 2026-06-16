@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (150)
+## Papers (151)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -161,6 +161,7 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 149 | [2026_DemoCreate](2026_DemoCreate/) | ✅ | 2026 | DemoCreate |
 | 150 | [2026_ENTO](2026_ENTO/) | ✅ | 2026 | ENTO |
 | 151 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
+| 152 | [2026_COGANT](2026_COGANT/) | — | 2026 | COGANT |
 ## Scripts
 
 | Script | Purpose |

@@ -67,7 +67,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | CodeMeta | [codemeta.json](../codemeta.json) | Machine-readable software/source metadata for repository indexes |
 | Citation metadata | [CITATION.cff](../CITATION.cff) | Machine-readable citation metadata for this public research index |
 | Data catalog | [catalog.html](../catalog.html) / [data/catalog.json](../data/catalog.json) | Schema.org DataCatalog for public JSON, citation, and report exports |
-| Works JSON | [data/works.json](../data/works.json) | Structured export of the 167-work bibliography |
+| Works JSON | [data/works.json](../data/works.json) | Structured export of the 168-work bibliography |
 | Software JSON | [data/software.json](../data/software.json) | Structured export of the curated software catalog; current count is in [`../reports/current_counts.md`](../reports/current_counts.md) |
 | GitHub repository inventory | [repositories.html](../repositories.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated full public repository inventory, including forks and uncataloged repos; current owner counts are in [`../reports/current_counts.md`](../reports/current_counts.md) |
 | People JSON | [data/people.json](../data/people.json) | Compact people index for agentic context |

@@ -15,9 +15,9 @@
       "Presentations & Media": 15
     },
     "generated_exports": {
-      "data_publications_ld_main_entity": 167,
-      "data_software_json": 89,
-      "data_software_ld_main_entity": 89,
+      "data_publications_ld_main_entity": 168,
+      "data_software_json": 91,
+      "data_software_ld_main_entity": 91,
       "data_works_json": 168
     },
     "github_inventory": {
@@ -47,7 +47,7 @@
       "update_existing": 17,
       "zenodo_records": 101
     },
-    "paper_folder_docs": 150,
+    "paper_folder_docs": 151,
     "public_source_snapshot": {
       "GitHub user ActiveInferenceInstitute": 52,
       "GitHub user docxology": 307,
@@ -68,7 +68,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-06-16T03:22:54+00:00",
+  "generated_at": "2026-06-16T03:29:25+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
