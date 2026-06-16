@@ -206,6 +206,7 @@ docxology/
 | 2026-06-15 | MAINTAINER | Reconciled COGANT/coasys intake drift: **168 works / 151 paper folders / 91 software** across generated surfaces, sitemap, resume, tests, and guarded narrative pages | ✅ |
 | 2026-06-14 | ARCHIVIST | Added DemoCreate/ENTO/GNN-v2.0.0; removed the duplicate CEREBRUM2 work (numbers retired, not renumbered — `validate_rows` now allows gaps); re-pointed the template entry to v3.4.0; reconciled all surfaces to **167 works / 150 folders** | ✅ |
 | 2026-06-14 | INTEGRATOR | Hardened work identity without a URL migration: `build_work_pages.py` rejects duplicate `citation_key`; `test_frozen_work_keys.py` freezes every `num→citation_key`; documented `works/{citation_key}.html` as a permanent contract. Modularized `docs/` into topic subdirs + `docs/README.md` index. Guarded 5 previously-unchecked narrative pages (LINKS/PROFILE/WIKIPEDIA/COLLABORATORS/MEDIA, had drifted to 125/154) in `count_consistency`. Added RFC 9116 `security.txt` | ✅ |
+| 2026-06-16 | INTEGRATOR | Evergreen volatile totals: narrative pages signpost `reports/current_counts.md`; `count_consistency` + tests derive from bibliography/software parsers; `sync_*_html.py` syncs twitter descriptions with og/meta; index domain cards drop stale per-domain literals | ✅ |
 
 ---
 

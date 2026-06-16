@@ -184,11 +184,11 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | File | Description |
 |------|-------------|
 | [README.md](../README.md) | Profile overview with domain matrix and consulting info |
-| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable table of all 168 works (Google Scholar totals may lag new deposits) |
+| [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable bibliography table ([current totals](../reports/current_counts.md); Google Scholar totals may lag new deposits) |
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |
 | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-readable update history |
-| [SOFTWARE.md](SOFTWARE.md) | 57 owned repos + 32 AII contributions |
+| [SOFTWARE.md](SOFTWARE.md) | Curated owned + AII software catalog ([current totals](../reports/current_counts.md)) |
 | [DOMAINS.md](DOMAINS.md) / [domains.html](../domains.html) | Research domain paths through works, software, collaborators, and learning routes |
 | [DISCOVERY.md](DISCOVERY.md) | Canonical IDs, API endpoints, exact public-source queries, and verification notes |
 | [cite-verify.html](../cite-verify.html) / [CITE_VERIFY.md](CITE_VERIFY.md) | Preferred citation metadata, public identifiers, and source-of-truth rules |
@@ -208,7 +208,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | [COLLABORATORS.md](COLLABORATORS.md) | Key collaborators and research network |
 | [MEDIA.md](MEDIA.md) | Talks, podcasts, video series, courses, and press |
 | [AGENTS.md](../AGENTS.md) | Agent roles and maintenance log |
-| [papers/](../papers/) | 151 per-paper folders with documentation |
+| [papers/](../papers/) | Per-paper documentation folders ([current totals](../reports/current_counts.md)) |
 
 ---
 

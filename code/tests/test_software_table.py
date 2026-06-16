@@ -7,7 +7,9 @@ from pathlib import Path
 
 PAPERS_DIR = Path(__file__).resolve().parents[2] / "papers"
 sys.path.insert(0, str(PAPERS_DIR))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
+from count_consistency import parse_software_catalog_counts  # noqa: E402
 from software_table import (  # noqa: E402
     description_html,
     iter_software_rows,
@@ -21,9 +23,10 @@ def test_software_row_counts():
     rows = list(iter_software_rows())
     docx = [r for r in rows if r.catalog_section == "docxology"]
     aii = [r for r in rows if r.catalog_section == "active-inference-institute"]
-    assert len(docx) == 58
-    assert len(aii) == 33
-    assert len(rows) == 91
+    expected_docx, expected_aii = parse_software_catalog_counts()
+    assert len(docx) == expected_docx
+    assert len(aii) == expected_aii
+    assert len(rows) == expected_docx + expected_aii
 
 
 def test_biology_textbook_row_fields():

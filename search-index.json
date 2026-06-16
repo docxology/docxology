@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T03:36:10Z",
+  "generated_at": "2026-06-16T04:14:37Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -351,7 +351,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-05-15.json",
+      "url": "/reports/live_site_verification_2026-06-16.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -11321,7 +11321,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 33 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",

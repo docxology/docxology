@@ -23,6 +23,10 @@ from resume_data import (  # noqa: E402
     load_resume_inputs,
     render_text,
 )
+from count_consistency import (  # noqa: E402
+    canonical_bibliography_snapshot,
+    canonical_software_snapshot,
+)
 
 
 FIXED_TIME = "2026-05-27T00:00:00Z"
@@ -51,11 +55,13 @@ def test_resume_source_schema_and_required_sections():
 
 
 def test_resume_payload_merges_canonical_works_and_software_counts():
+    biblio = canonical_bibliography_snapshot()
+    software = canonical_software_snapshot()
     payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
-    assert payload["metrics"]["works"] == 168
-    assert payload["metrics"]["software_catalogued"] == 91
-    assert len(payload["works"]) == 168
-    assert len(payload["software"]) == 91
+    assert payload["metrics"]["works"] == biblio["works"]
+    assert payload["metrics"]["software_catalogued"] == software["total"]
+    assert len(payload["works"]) == biblio["works"]
+    assert len(payload["software"]) == software["total"]
     assert payload["metrics"]["google_scholar"]["citations"] == 777
 
 
@@ -70,12 +76,14 @@ def test_all_non_full_variants_have_membership():
 
 
 def test_text_outputs_strip_coda_glyphs_and_preserve_doi_lines():
+    biblio = canonical_bibliography_snapshot()
+    software = canonical_software_snapshot()
     payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
     text = render_text(payload, "full")
     assert not CODA_GLYPH_RE.search(text)
     assert "10.5281/zenod\no" not in text
-    assert "WORKS AND PUBLICATIONS (168)" in text
-    assert "SOFTWARE (91)" in text
+    assert f"WORKS AND PUBLICATIONS ({biblio['works']})" in text
+    assert f"SOFTWARE ({software['total']})" in text
     doi_lines = [line for line in text.splitlines() if re.search(r"10\.\d{4,9}/", line)]
     assert doi_lines
     assert all(line.startswith("[") or "zenodo:" in line or "DOI" not in line for line in doi_lines)

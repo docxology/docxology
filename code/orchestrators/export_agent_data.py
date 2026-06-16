@@ -19,12 +19,15 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 sys.path.insert(0, str(PAPERS_DIR))
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
+from count_consistency import parse_software_catalog_counts  # noqa: E402
 from software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
 
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
 SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
 WORKS_JSON = REPO_ROOT / "data" / "works.json"
+CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 
 
 def _scholar_claim() -> dict:
@@ -96,12 +99,106 @@ def _latest_snapshot_payload() -> dict:
         return {}
 
 
+def _current_counts_payload() -> dict:
+    if not CURRENT_COUNTS_JSON.exists():
+        return {}
+    try:
+        return json.loads(CURRENT_COUNTS_JSON.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def _date_prefix(value: str | None) -> str | None:
+    if not value:
+        return None
+    return value[:10]
+
+
+def _require_static_counts_in_fragment(
+    claim_id: str,
+    claim: str,
+    *,
+    work_count: int | None,
+    folder_count: int | None,
+    docxology_public_repos: int | None,
+    aii_public_repos: int | None,
+) -> list[str]:
+    errors: list[str] = []
+    if claim_id == "curated-work-count":
+        if not claim or f"{int(work_count or 0)} works" not in claim:
+            errors.append("curated-work-count claim missing authoritative work count")
+    elif claim_id == "paper-folder-count":
+        if not claim or f"{int(folder_count or 0)} per-paper documentation folders" not in claim:
+            errors.append("paper-folder-count claim missing authoritative paper-folder count")
+    elif claim_id == "docxology-github-public-repos":
+        if docxology_public_repos is None or not claim or f"has {docxology_public_repos} public repositories" not in claim:
+            errors.append("docxology-github-public-repos claim missing authoritative repository count")
+    elif claim_id == "aii-github-public-repos":
+        if aii_public_repos is None or not claim or f"has {aii_public_repos} public repositories" not in claim:
+            errors.append("aii-github-public-repos claim missing authoritative repository count")
+    return errors
+
+
+def _stale_claim_fragment_errors(
+    claim: dict,
+    work_count: int | None,
+    folder_count: int | None,
+    docxology_public_repos: int | None,
+    aii_public_repos: int | None,
+    *,
+    source_counts_timestamp: str | None = None,
+    source_public_source_timestamp: str | None = None,
+) -> list[str]:
+    claim_id = claim.get("id")
+    claim_text = claim.get("claim", "")
+    checked_at = claim.get("checked_at")
+    errors = _require_static_counts_in_fragment(
+        claim_id,
+        claim_text,
+        work_count=work_count,
+        folder_count=folder_count,
+        docxology_public_repos=docxology_public_repos,
+        aii_public_repos=aii_public_repos,
+    )
+    if checked_at and source_counts_timestamp and claim_id in {"curated-work-count", "paper-folder-count"}:
+        if _date_prefix(checked_at) and _date_prefix(checked_at) != _date_prefix(source_counts_timestamp):
+            errors.append(
+                f"{claim_id} checked_at {checked_at} does not match source timestamp {source_counts_timestamp}"
+            )
+    if checked_at and source_public_source_timestamp and claim_id in {
+        "docxology-github-public-repos",
+        "aii-github-public-repos",
+    }:
+        if _date_prefix(checked_at) and _date_prefix(checked_at) != _date_prefix(source_public_source_timestamp):
+            errors.append(
+                f"{claim_id} checked_at {checked_at} does not match public-source timestamp {source_public_source_timestamp}"
+            )
+    return errors
+
 def _snapshot_value(snapshot: dict, label: str, key: str) -> int | str | None:
     for check in snapshot.get("checks", []):
         if check.get("label") == label:
             result = check.get("result") if isinstance(check.get("result"), dict) else {}
             return result.get(key)
     return None
+
+
+_CURRENT_COUNTS_PAYLOAD = _current_counts_payload()
+_CURRENT_COUNTS = _CURRENT_COUNTS_PAYLOAD.get("counts", {})
+_CURRENT_COUNTS_TS = _CURRENT_COUNTS_PAYLOAD.get("generated_at")
+_PUBLIC_SOURCE_SNAPSHOT = _latest_snapshot_payload()
+_PUBLIC_SOURCE_SNAPSHOT_TS = _PUBLIC_SOURCE_SNAPSHOT.get("generated_at")
+_GITHUB_INVENTORY_COUNTS = _CURRENT_COUNTS.get("github_inventory", {})
+_GITHUB_PUBLIC_SOURCE_SNAPSHOT = _latest_snapshot_payload()
+_DOCX_PUBLIC_REPOS = _snapshot_value(_GITHUB_PUBLIC_SOURCE_SNAPSHOT, "GitHub user docxology", "public_repos")
+if _DOCX_PUBLIC_REPOS is None:
+    _DOCX_PUBLIC_REPOS = _GITHUB_INVENTORY_COUNTS.get("docxology")
+_AII_PUBLIC_REPOS = _snapshot_value(_GITHUB_PUBLIC_SOURCE_SNAPSHOT, "GitHub user ActiveInferenceInstitute", "public_repos")
+if _AII_PUBLIC_REPOS is None:
+    _AII_PUBLIC_REPOS = _GITHUB_INVENTORY_COUNTS.get("ActiveInferenceInstitute")
+
+_WORK_COUNT = int(_CURRENT_COUNTS.get("bibliography_works", _current_work_count()))
+_FOLDER_COUNT = int(_CURRENT_COUNTS.get("paper_folder_docs", _current_paper_folder_count()))
 
 
 PEOPLE = [
@@ -172,10 +269,10 @@ ORGANIZATIONS = [
 CLAIMS = [
     {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 125 works.",
+        "claim": f"The curated bibliography contains {_WORK_COUNT} works.",
         "status": "curated-local",
         "sources": ["pages/BIBLIOGRAPHY.md", "publications.html", "data/works.json"],
-        "checked_at": "2026-05-28",
+        "checked_at": _CURRENT_COUNTS_TS or "2026-06-16T03:36:11+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -183,10 +280,10 @@ CLAIMS = [
     },
     {
         "id": "paper-folder-count",
-        "claim": "The repository contains 118 per-paper documentation folders.",
+        "claim": f"The repository contains {_FOLDER_COUNT} per-paper documentation folders.",
         "status": "curated-local",
         "sources": ["papers/", "papers/README.md", "papers/paper_metadata.json"],
-        "checked_at": "2026-05-28",
+        "checked_at": _CURRENT_COUNTS_TS or "2026-06-16T03:36:11+00:00",
         "confidence": "high",
         "verification_method": "Folder inventory and paper metadata count.",
         "maintenance_owner": "MAINTAINER",
@@ -194,10 +291,10 @@ CLAIMS = [
     },
     {
         "id": "docxology-github-public-repos",
-        "claim": "The docxology GitHub profile has 307 public repositories.",
+        "claim": f"The docxology GitHub profile has {_DOCX_PUBLIC_REPOS} public repositories.",
         "status": "public-api",
         "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-06-09.json"],
-        "checked_at": "2026-06-09",
+        "checked_at": _PUBLIC_SOURCE_SNAPSHOT_TS or _CURRENT_COUNTS_TS or "2026-06-09T03:41:15.072709+00:00",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response.",
         "maintenance_owner": "INTEGRATOR",
@@ -205,17 +302,20 @@ CLAIMS = [
     },
     {
         "id": "aii-github-public-repos",
-        "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories.",
+        "claim": (
+            "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) "
+            f"has {_AII_PUBLIC_REPOS} public repositories."
+        ),
         "status": "public-api",
         "sources": [
             "https://api.github.com/users/ActiveInferenceInstitute",
             "reports/public_source_snapshot_2026-06-09.json"
         ],
-        "checked_at": "2026-06-09",
+        "checked_at": _PUBLIC_SOURCE_SNAPSHOT_TS or _CURRENT_COUNTS_TS or "2026-06-09T03:41:15.072709+00:00",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
         "maintenance_owner": "INTEGRATOR",
-        "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 32 AII repositories with docxology contributions.",
+        "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks AII repositories with docxology contributions (see pages/SOFTWARE.md and reports/current_counts.md).",
     },
     {
         "id": "orcid-canonical-identifier",
@@ -379,15 +479,49 @@ def _existing_generated_at(path: Path) -> str | None:
         return None
 
 
-def _hydrate_claim_checks(checked_at: str) -> list[dict]:
+def _hydrate_claim_checks(checked_at: str, *, enforce_stale_checks: bool = True) -> list[dict]:
     claims = []
     latest_snapshot = _latest_source("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
     latest_inventory = _latest_source("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
     snapshot = _latest_snapshot_payload()
-    work_count = _current_work_count()
-    folder_count = _current_paper_folder_count()
+    payload_json = _current_counts_payload()
+    payload_counts = payload_json.get("counts", {})
+    work_count = payload_counts.get("bibliography_works", _current_work_count())
+    folder_count = payload_counts.get("paper_folder_docs", _current_paper_folder_count())
+    _, catalogued_aii = parse_software_catalog_counts()
+    counts_payload = _current_counts_payload().get("counts", {}).get("github_inventory", {})
     docxology_public_repos = _snapshot_value(snapshot, "GitHub user docxology", "public_repos")
+    if docxology_public_repos is None:
+        docxology_public_repos = counts_payload.get("docxology")
     aii_public_repos = _snapshot_value(snapshot, "GitHub user ActiveInferenceInstitute", "public_repos")
+    if aii_public_repos is None:
+        aii_public_repos = counts_payload.get("ActiveInferenceInstitute")
+    source_counts_timestamp = payload_json.get("generated_at")
+    source_public_source_timestamp = snapshot.get("generated_at")
+    stale: list[str] = []
+    stale_claims = {claim.get("id"): claim for claim in CLAIMS}
+    if enforce_stale_checks:
+        for claim_id in (
+            "curated-work-count",
+            "paper-folder-count",
+            "docxology-github-public-repos",
+            "aii-github-public-repos",
+        ):
+            claim = stale_claims.get(claim_id)
+            if claim:
+                stale.extend(
+                    _stale_claim_fragment_errors(
+                        claim,
+                        work_count,
+                        folder_count,
+                        docxology_public_repos,
+                        aii_public_repos,
+                        source_counts_timestamp=source_counts_timestamp,
+                        source_public_source_timestamp=source_public_source_timestamp,
+                    )
+                )
+    if stale:
+        raise SystemExit("Volatile claim fragments are stale: " + "; ".join(stale))
     for claim in CLAIMS:
         claim_copy = dict(claim)
         if claim_copy["id"] == "curated-work-count":
@@ -401,6 +535,10 @@ def _hydrate_claim_checks(checked_at: str) -> list[dict]:
                 "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) "
                 f"has {aii_public_repos} public repositories."
             )
+            claim_copy["caveat"] = (
+                "Use /users/ActiveInferenceInstitute, not /orgs/. "
+                f"Local software catalog tracks {catalogued_aii} AII repositories with docxology contributions."
+            )
         claim_copy["checked_at"] = checked_at
         claim_copy["sources"] = [
             latest_snapshot if source.startswith("reports/public_source_snapshot_") else
@@ -411,10 +549,10 @@ def _hydrate_claim_checks(checked_at: str) -> list[dict]:
     return claims
 
 
-def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
+def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: bool = True) -> dict[Path, str]:
     software = parse_software()
     generated_at = generated_at or generated_timestamp()
-    claims = _hydrate_claim_checks(generated_at)
+    claims = _hydrate_claim_checks(generated_at, enforce_stale_checks=enforce_stale_checks)
     return {
         REPO_ROOT / "data" / "software.json": json.dumps(
             {
@@ -448,7 +586,7 @@ def main() -> None:
     args = parser.parse_args()
 
     generated_at = _existing_generated_at(REPO_ROOT / "data" / "claims.json") if args.check else None
-    outputs = render_outputs(generated_at)
+    outputs = render_outputs(generated_at, enforce_stale_checks=args.check)
     stale: list[str] = []
     for path, content in outputs.items():
         if args.check:

@@ -149,6 +149,12 @@ def replace_head_meta(html: str, count: int) -> str:
         html,
         count=1,
     )
+    html = re.sub(
+        r'(<meta name="twitter:description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html,
+        count=1,
+    )
     hero_sub = re.search(
         r'(<p class="sub">)\d+ works spanning',
         html,

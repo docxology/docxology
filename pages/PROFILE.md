@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **777 citations** on Google Scholar (h-index: 15, i10-index: 17, as of 2026-06-09) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists **168** works including books, presentations, and recent deposits not yet reflected on Scholar.
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **777 citations** on Google Scholar (h-index: 15, i10-index: 17, as of 2026-06-09) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists books, presentations, and recent deposits not yet reflected on Scholar ([current totals](../reports/current_counts.md)).
 
 ---
 
@@ -71,7 +71,7 @@ Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collectio
 
 ### Computational Frameworks
 
-Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His 49 personal repositories (catalogued) and 32 Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md), plus the [full generated repository inventory](../repositories.html), represent a significant body of open-source scientific software.
+Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His catalogued owned repositories and Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md) ([current totals](../reports/current_counts.md)), plus the [full generated repository inventory](../repositories.html), represent a significant body of open-source scientific software.
 
 ---
 
@@ -162,15 +162,15 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 
 | Metric | Count |
 |--------|-------|
-| Works (unified bibliography) | [168](BIBLIOGRAPHY.md) |
+| Works (unified bibliography) | [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) · [current totals](../reports/current_counts.md) |
 | Google Scholar indexed publications | 107 |
 | Google Scholar Citations | 777 (as of 2026-06-09) |
 | h-index | 15 |
 | i10-index | 17 |
 | Citations since 2021 | 495 |
-| Open-Source Repositories (owned, catalogued) | 50 |
+| Open-Source Repositories (owned, catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |
 | GitHub Public Repositories (total) | [Current generated count](../reports/current_counts.md) |
-| Active Inference Institute Repos (catalogued) | 32 |
+| Active Inference Institute Repos (catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |
 | Books Authored | 4 |

@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -14,52 +16,111 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 try:
-    from report_paths import latest_report, latest_subdir_file, rel
+    from report_paths import latest_report, latest_subdir_file
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, latest_subdir_file, rel
+    from .report_paths import latest_report, latest_subdir_file
+
+
+REQUIRED_JSON_FILES: list[str] = [
+    "bibliography.csl.json",
+    "codemeta.json",
+    "search-index.json",
+    "data/catalog.json",
+    "data/current-counts.json",
+    "data/generated-manifest.json",
+    "data/github-repositories.json",
+    "data/artworks.json",
+    "data/works.json",
+    "data/work-enrichment.json",
+    "data/software-ld.json",
+    "data/software.json",
+    "data/people.json",
+    "data/organizations.json",
+    "data/paired-publication-decisions.json",
+    "data/claims.json",
+    "data/resume.json",
+    "data/reconciliation.json",
+]
+
+OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
+    ("accessibility_static_*.json", "accessibility static checks"),
+    ("asset_size_*.json", "asset-size audit"),
+    ("external_links_[0-9]*.json", "external-links snapshot"),
+    ("external_links_triage_*.json", "external-links triage"),
+    ("live_site_verification_*.json", "live-site verification"),
+    ("paired_publications_*.json", "paired-publication snapshot"),
+    ("public_source_inventory_*.json", "public-source inventory"),
+    ("public_source_snapshot_*.json", "public-source snapshot"),
+]
 
 
 def run(cmd: list[str]) -> None:
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
 
 
-def validate_json_files() -> None:
-    paths = [
-        "bibliography.csl.json",
-        "codemeta.json",
-        "search-index.json",
-        "data/catalog.json",
-        "data/current-counts.json",
-        "data/generated-manifest.json",
-        "data/github-repositories.json",
-        "data/artworks.json",
-        "data/works.json",
-        "data/work-enrichment.json",
-        "data/software-ld.json",
-        "data/software.json",
-        "data/people.json",
-        "data/organizations.json",
-        "data/paired-publication-decisions.json",
-        "data/claims.json",
-        "data/resume.json",
-        "data/reconciliation.json",
-    ]
-    paths.extend(
-        [
-            rel(latest_report("accessibility_static_*.json")),
-            rel(latest_report("asset_size_*.json")),
-            rel(latest_subdir_file("browser-smoke", "manifest.json")),
-            rel(latest_report("external_links_[0-9]*.json")),
-            rel(latest_report("external_links_triage_*.json")),
-            rel(latest_report("live_site_verification_*.json")),
-            rel(latest_report("paired_publications_*.json")),
-            rel(latest_report("public_source_inventory_*.json")),
-            rel(latest_report("public_source_snapshot_*.json")),
-        ]
-    )
-    for path_rel in paths:
-        with open(REPO_ROOT / path_rel, encoding="utf-8") as f:
+def _load_json_payload(
+    path: Path,
+    errors: list[str],
+    warnings: list[str],
+    *,
+    optional: bool = False,
+) -> None:
+    try:
+        with path.open(encoding="utf-8") as f:
             json.load(f)
+    except FileNotFoundError:
+        message = f"Missing JSON artifact: {path}"
+        if optional:
+            warnings.append(message)
+        else:
+            errors.append(message)
+    except json.JSONDecodeError as exc:
+        if optional:
+            warnings.append(f"Invalid JSON artifact {path}: {exc}")
+        else:
+            errors.append(f"Invalid JSON artifact {path}: {exc}")
+
+
+def validate_json_files(strict_reports: bool) -> None:
+    """Validate required JSON artifacts and report artifacts.
+
+    Required artifacts are always strict. Optional report artifacts are warnings by
+    default, but strict when --strict-reports is enabled.
+    """
+    errors: list[str] = []
+    warnings: list[str] = []
+
+    for rel_path in REQUIRED_JSON_FILES:
+        _load_json_payload(REPO_ROOT / rel_path, errors, warnings, optional=False)
+
+    for pattern, label in OPTIONAL_REPORT_PATTERNS:
+        report = latest_report(pattern, required=False)
+        if not report:
+            message = f"Optional {label} report missing: {pattern}"
+            if strict_reports:
+                errors.append(message)
+            else:
+                warnings.append(message)
+            continue
+        _load_json_payload(report, errors, warnings, optional=not strict_reports)
+
+    browser_smoke = latest_subdir_file("browser-smoke", "manifest.json", required=False)
+    if not browser_smoke:
+        message = "Optional browser-smoke manifest missing: browser-smoke/manifest.json"
+        if strict_reports:
+            errors.append(message)
+        else:
+            warnings.append(message)
+    else:
+        _load_json_payload(browser_smoke, errors, warnings, optional=not strict_reports)
+
+    if warnings:
+        print("optional artifact warnings:")
+        for warning in warnings:
+            print(f"  - {warning}")
+
+    if errors:
+        raise SystemExit("JSON artifact validation failed:\n" + "\n".join(f"  - {e}" for e in errors))
 
 
 def validate_citation_cff() -> None:
@@ -156,7 +217,24 @@ def validate_seo_invariants() -> None:
         raise SystemExit("SEO invariant violations:\n" + "\n".join(f"  - {e}" for e in errors[:40]))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--strict-reports",
+        action="store_true",
+        help="Fail when optional report artifacts are missing or invalid.",
+    )
+    return parser.parse_args()
+
+
+def _strict_reports_enabled(cli_value: bool) -> bool:
+    return cli_value or os.environ.get("DOCXOLOGY_STRICT_REPORTS", "").lower() in {"1", "true", "yes", "on"}
+
+
 def main() -> None:
+    args = parse_args()
+    strict_reports = _strict_reports_enabled(args.strict_reports)
+
     run(["python3", "papers/sync_publications_html.py"])
     run(["python3", "papers/sync_software_html.py"])
     run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
@@ -185,15 +263,15 @@ def main() -> None:
     run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
     run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
-    validate_json_files()
+    validate_json_files(strict_reports)
     validate_citation_cff()
     validate_xml_files()
     validate_json_ld()
-    validate_count_consistency()
     validate_local_links()
+    validate_count_consistency()
     validate_sitemap_targets()
     validate_seo_invariants()
-    print("repo validation ok")
+    print("Repository validation completed")
 
 
 if __name__ == "__main__":

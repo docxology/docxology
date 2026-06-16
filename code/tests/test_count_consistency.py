@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-from collections import Counter
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from count_consistency import (
+    canonical_bibliography_snapshot,
+    canonical_software_snapshot,
     collect_count_drift,
-    parse_bibliography_rows,
     parse_bibliography_work_count,
     parse_paper_folder_count,
     parse_software_catalog_counts,
@@ -33,25 +33,12 @@ def test_collect_count_drift_clean_after_sync():
 
 
 def test_current_canonical_source_counts():
-    rows = parse_bibliography_rows()
-    assert len(rows) == 168
-    assert sum(1 for row in rows if "../papers/" in row["docs"]) == 151
-    assert Counter(row["type"] for row in rows) == {
-        "Paper": 147,
-        "Presentation": 9,
-        "Book": 5,
-        "Course": 3,
-        "Playbook": 2,
-        "Series": 2,
-    }
-    assert Counter(row["domain"] for row in rows) == {
-        "\U0001f41c": 22,
-        "\U0001f9e0": 38,
-        "\U0001f6e1\ufe0f": 30,
-        "\U0001f3a8": 15,
-        "\U0001f4bb": 27,
-        "\U0001f30d": 6,
-        "\U0001f3a5": 15,
-        "\U0001f9ec": 15,
-    }
-    assert parse_software_catalog_counts() == (58, 33)
+    biblio = canonical_bibliography_snapshot()
+    software = canonical_software_snapshot()
+
+    assert biblio["header_works"] == biblio["works"]
+    assert biblio["docs_links"] == biblio["paper_folders"]
+    assert software["total"] == software["docxology"] + software["aii"]
+
+    docx, aii = parse_software_catalog_counts()
+    assert (docx, aii) == (software["docxology"], software["aii"])

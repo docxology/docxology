@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T03:32:44Z",
+  "generated_at": "2026-06-16T04:14:28Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -318,7 +318,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-05-15.json"
+        "reports/live_site_verification_2026-06-16.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

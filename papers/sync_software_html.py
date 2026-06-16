@@ -13,6 +13,7 @@ import argparse
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 from software_table import (
@@ -26,6 +27,9 @@ from software_table import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from count_consistency import parse_software_catalog_counts  # noqa: E402
+
 SOFTWARE_HTML = REPO_ROOT / "software.html"
 SOFTWARE_LD_JSON = REPO_ROOT / "data" / "software-ld.json"
 GITHUB_REPOSITORIES_JSON = REPO_ROOT / "data" / "github-repositories.json"
@@ -39,9 +43,6 @@ AII_GRID_BEGIN = "<!-- <SOFTWARE_AII_GRID_BEGIN> -->"
 AII_GRID_END = "<!-- <SOFTWARE_AII_GRID_END> -->"
 DOCX_FOOTER_BEGIN = "<!-- <SOFTWARE_DOCX_FOOTER_BEGIN> -->"
 DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
-
-AII_COUNT = 33
-DOCXOLOGY_COUNT = 58
 
 
 def load_rows() -> list[SoftwareRow]:
@@ -65,11 +66,12 @@ def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[Softwar
 def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
     if not rows:
         raise SystemExit("No software rows parsed")
+    expected_docx, expected_aii = parse_software_catalog_counts()
     docx, aii = split_rows(rows)
-    if len(docx) != DOCXOLOGY_COUNT:
-        raise SystemExit(f"Expected {DOCXOLOGY_COUNT} docxology rows, got {len(docx)}")
-    if len(aii) != AII_COUNT:
-        raise SystemExit(f"Expected {AII_COUNT} AII rows, got {len(aii)}")
+    if len(docx) != expected_docx:
+        raise SystemExit(f"Expected {expected_docx} docxology rows from SOFTWARE.md, got {len(docx)}")
+    if len(aii) != expected_aii:
+        raise SystemExit(f"Expected {expected_aii} AII rows from SOFTWARE.md, got {len(aii)}")
     return docx, aii
 
 
@@ -89,9 +91,9 @@ def main_entity_object(row: SoftwareRow) -> dict:
     return obj
 
 
-def collection_page_description(docx_count: int) -> str:
+def collection_page_description(docx_count: int, aii_count: int) -> str:
     return (
-        f"{docx_count} original repositories and {AII_COUNT} catalogued "
+        f"{docx_count} original repositories and {aii_count} catalogued "
         "Active Inference Institute contributions spanning Active Inference, "
         "entomology, and synergetics."
     )
@@ -104,7 +106,7 @@ def build_collection_page(rows: list[SoftwareRow]) -> dict:
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Software — Daniel Ari Friedman, PhD",
-        "description": collection_page_description(len(docx)),
+        "description": collection_page_description(len(docx), len(aii)),
         "author": {
             "@type": "Person",
             "name": "Daniel Ari Friedman",
@@ -122,14 +124,7 @@ def render_repo_card(row: SoftwareRow, *, show_updated: bool) -> str:
         if show_updated
         else ""
     )
-    return f"""            <div class="repo-card">
-                <div class="repo-header">
-                    <a href="{html.escape(row.url, quote=True)}" class="repo-title">{html.escape(row.name)}</a>
-                    <span class="repo-stars">⭐ {row.stars}</span>
-                </div>
-                <p class="repo-desc">{description_html(row.description_raw)}</p>
-                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot lang-{lang_class}"></span>{html.escape(lang)}</span>{updated}</div>
-            </div>"""
+    return f"""            <div class=\"repo-card\">\n                <div class=\"repo-header\">\n                    <a href=\"{html.escape(row.url, quote=True)}\" class=\"repo-title\">{html.escape(row.name)}</a>\n                    <span class=\"repo-stars\">⭐ {row.stars}</span>\n                </div>\n                <p class=\"repo-desc\">{description_html(row.description_raw)}</p>\n                <div class=\"repo-meta\"><span class=\"repo-lang\"><span class=\"lang-dot lang-{lang_class}\"></span>{html.escape(lang)}</span>{updated}</div>\n            </div>"""
 
 
 def render_docx_grid(rows: list[SoftwareRow]) -> str:
@@ -194,7 +189,7 @@ def replace_inline_collection_ld(html_text: str) -> str:
         )
     if LD_EXTERNAL_SCRIPT in html_text:
         return html_text
-    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html_text)
+    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^\"]*)?">', html_text)
     insert_at = stylesheet_match.start() if stylesheet_match else -1
     if insert_at < 0:
         insert_at = html_text.find("</head>")
@@ -203,7 +198,7 @@ def replace_inline_collection_ld(html_text: str) -> str:
     return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
 
 
-def replace_head_meta(html_text: str, docx_count: int, github_counts: dict[str, int]) -> str:
+def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]) -> str:
     public_total = github_counts.get("total")
     public_phrase = (
         f"{public_total} public repositories across docxology and AII"
@@ -215,12 +210,12 @@ def replace_head_meta(html_text: str, docx_count: int, github_counts: dict[str, 
     if public_total is not None:
         desc = (
             "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF — "
-            f"{public_total} public repositories, {docx_count} owned, {AII_COUNT} AII contributions."
+            f"{public_total} public repositories, {docx_count} owned, {aii_count} AII contributions."
         )
     else:
         desc = (
             "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF — "
-            f"{docx_count} owned repositories and {AII_COUNT} catalogued AII contributions."
+            f"{docx_count} owned repositories and {aii_count} catalogued AII contributions."
         )
     html_text = re.sub(
         r'(<meta name="description" content=")[^"]*(")',
@@ -234,9 +229,15 @@ def replace_head_meta(html_text: str, docx_count: int, github_counts: dict[str, 
         html_text,
         count=1,
     )
+    html_text = re.sub(
+        r'(<meta name="twitter:description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html_text,
+        count=1,
+    )
     hero = (
         f"Open-Source Repositories • Python, Rust, Go, TypeScript, Julia<br>"
-        f"{docx_count} owned repositories, {AII_COUNT} catalogued AII contributions, "
+        f"{docx_count} owned repositories, {aii_count} catalogued AII contributions, "
         f"and {public_phrase}."
     )
     html_text = re.sub(
@@ -246,6 +247,21 @@ def replace_head_meta(html_text: str, docx_count: int, github_counts: dict[str, 
         count=1,
     )
     return html_text
+
+
+def _assert_html_summary(html_text: str, docx_count: int, aii_count: int, total_count: int) -> None:
+    if f"{docx_count} owned repositories" not in html_text:
+        raise SystemExit(f"software.html missing owned repository summary for {docx_count}")
+    if f"{aii_count} catalogued" not in html_text:
+        raise SystemExit(f"software.html missing AII catalog summary for {aii_count}")
+    if f"{docx_count + aii_count} repos" in html_text:
+        raise SystemExit("software.html contains unexpected hardcoded summary format")
+
+
+def _assert_collection_consistency(collection: dict, rows: list[SoftwareRow]) -> None:
+    main_entities = collection.get("mainEntity", [])
+    if len(main_entities) != len(rows):
+        raise SystemExit("mainEntity length mismatch after build")
 
 
 def main() -> None:
@@ -263,18 +279,15 @@ def main() -> None:
     collection = build_collection_page(rows)
     html_out = SOFTWARE_HTML.read_text(encoding="utf-8")
     html_out = replace_inline_collection_ld(html_out)
-    html_out = replace_head_meta(html_out, len(docx), github_counts)
+    html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
     html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
     html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))
     html_out = replace_between_markers(
         html_out, DOCX_FOOTER_BEGIN, DOCX_FOOTER_END, render_docx_footer(len(docx)).strip()
     )
 
-    if len(collection["mainEntity"]) != len(rows):
-        raise SystemExit("mainEntity length mismatch after build")
-
-    if "49 original" in html_out.lower():
-        raise SystemExit("software.html still contains stale '49 original' copy")
+    _assert_collection_consistency(collection, rows)
+    _assert_html_summary(html_out, len(docx), len(aii), len(rows))
 
     if not args.apply:
         print(

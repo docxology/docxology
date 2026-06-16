@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 import json
 import os
 import subprocess
@@ -14,6 +13,7 @@ import urllib.request
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 
 try:
     from report_paths import dated_report_path, generated_timestamp, latest_report
@@ -23,20 +23,115 @@ except ImportError:  # pragma: no cover - package import path
 OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
 
-CHECKS = [
-    {"path": "", "markers": ["167 Works", "299", "search.html", "Last updated: May 2026"]},
-    {"path": "search.html", "markers": ["Search", "search-index.json", "OpenSearch"]},
-    {"path": "catalog.html", "markers": ["Data Catalog", "data/catalog.json", "Search Index"]},
-    {"path": "updates.html", "markers": ["Updates", "update-card"]},
-    {"path": "opensearch.xml", "markers": ["OpenSearchDescription", "search.html?q={searchTerms}"]},
-    {"path": "sitemap.xml", "markers": ["search.html", "catalog.html", "updates.html"]},
-    {"path": "llms.txt", "markers": ["Human search page", "Data catalog", "Agent start guide"]},
-    {"path": "search-index.json", "markers": ['"count"', '"items"', "Active Inference"]},
-    {"path": "data/catalog.json", "markers": ["DataCatalog", "External Link Triage", "Asset Size Audit"]},
-    {"path": "GENERATED.md", "markers": ["Generated Files", "Live site verification"]},
-    {"path": "humans.txt", "markers": ["Daniel Ari Friedman", "docxology"]},
-    {"path": ".well-known/security.txt", "markers": ["Contact:", "Policy:"]},
-]
+
+def _read_current_counts() -> dict:
+    if not CURRENT_COUNTS_JSON.exists():
+        return {}
+    try:
+        return json.loads(CURRENT_COUNTS_JSON.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def load_dynamic_checks() -> list[dict[str, list[str]]]:
+    """Build marker checks from canonical volatile-count sources."""
+    payload = _read_current_counts()
+    counts = payload.get("counts", {})
+    software = counts.get("software", {})
+    github_inventory = counts.get("github_inventory", {})
+
+    def as_text(value: int | str | None) -> str | None:
+        return str(value) if value is not None else None
+
+    works = as_text(counts.get("bibliography_works"))
+    software_docx = as_text(software.get("docxology_owned"))
+    software_aii = as_text(software.get("active_inference_institute"))
+    public_repos = as_text(github_inventory.get("public"))
+
+    checks = [
+        {
+            "path": "",
+            "markers": ["danielarifriedman.com", "publications", "software.html", "Search"],
+        },
+        {
+            "path": "publications.html",
+            "markers": ["Publications", "data/publications-ld.json", "catalogued works"],
+        },
+        {
+            "path": "software.html",
+            "markers": ["Software", "data/software-ld.json", "Open-Source Repositories"],
+        },
+        {
+            "path": "search.html",
+            "markers": ["Search", "search-index.json", "OpenSearch"],
+        },
+        {
+            "path": "catalog.html",
+            "markers": ["Data Catalog", "\"@context\"", "/data/catalog.json", "application/ld+json"],
+        },
+        {
+            "path": "updates.html",
+            "markers": ["Updates", "update-card", "changelog"],
+        },
+        {
+            "path": "opensearch.xml",
+            "markers": ["OpenSearchDescription", "search.html?q={searchTerms}"],
+        },
+        {
+            "path": "sitemap.xml",
+            "markers": ["sitemap", "publications.html", "software.html"],
+        },
+        {
+            "path": "llms.txt",
+            "markers": ["Human search page", "Data catalog", "Agent start guide"],
+        },
+        {
+            "path": "search-index.json",
+            "markers": ['"count"', '"items"', "items"],
+        },
+        {
+            "path": "data/catalog.json",
+            "markers": ["DataCatalog", "External Link Triage", "Software"],
+        },
+        {
+            "path": "GENERATED.md",
+            "markers": ["# Generated Files", "Rebuild command", "Validation"],
+        },
+        {
+            "path": "humans.txt",
+            "markers": ["Daniel Ari Friedman", "docxology"],
+        },
+        {
+            "path": ".well-known/security.txt",
+            "markers": ["Contact:", "Policy:"],
+        },
+    ]
+
+    if works is not None:
+        checks[1]["markers"].append(f"{works} Works")
+    if software_docx is not None:
+        checks[2]["markers"].append(f"{software_docx} owned")
+    if software_aii is not None:
+        checks[2]["markers"].append(f"{software_aii} catalogued")
+    if public_repos is not None:
+        checks[2]["markers"].append(f"{public_repos} public repositories")
+
+    return checks
+
+
+def load_current_counts_fingerprint() -> dict[str, int | str | None]:
+    payload = _read_current_counts()
+    counts = payload.get("counts", {})
+    software = counts.get("software", {})
+    github_inventory = counts.get("github_inventory", {})
+    return {
+        "generated_at": payload.get("generated_at"),
+        "works": counts.get("bibliography_works"),
+        "software_docx": software.get("docxology_owned"),
+        "software_aii": software.get("active_inference_institute"),
+        "software_total": software.get("curated_total"),
+        "public_repos": github_inventory.get("public"),
+    }
 
 
 def fetch(url: str, timeout: int, extra_headers: dict[str, str] | None = None) -> dict:
@@ -129,8 +224,10 @@ def pages_status(timeout: int) -> dict:
 
 
 def build_report(timeout: int) -> dict:
+    checks = load_dynamic_checks()
+    fingerprint = load_current_counts_fingerprint()
     results = []
-    for check in CHECKS:
+    for check in checks:
         url = BASE + check["path"]
         response = fetch(url, timeout)
         markers = {marker: marker in response["text"] for marker in check["markers"]}
@@ -152,10 +249,12 @@ def build_report(timeout: int) -> dict:
                 "error": response["error"],
             }
         )
+
     pages = pages_status(timeout)
     return {
         "generated_at": generated_timestamp(),
         "base_url": BASE,
+        "expected_counts": fingerprint,
         "note": "Live verification can fail while GitHub Pages is still building or CDN caches are stale.",
         "github_pages": pages,
         "checked_urls": len(results),
@@ -170,17 +269,27 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Validate the cached report exists and is parseable")
     parser.add_argument("--timeout", type=int, default=20)
     args = parser.parse_args()
+    current_fingerprint = load_current_counts_fingerprint()
     if args.check:
+        if not CURRENT_COUNTS_JSON.exists():
+            raise SystemExit("Current-counts source missing: data/current-counts.json")
         out = latest_report("live_site_verification_*.json")
         if not out.exists():
             raise SystemExit("Missing live-site verification report")
         payload = json.loads(out.read_text(encoding="utf-8"))
+        if payload.get("expected_counts") != current_fingerprint:
+            raise SystemExit(
+                f"Live-site verification counts snapshot mismatch: expected={current_fingerprint} got={payload.get('expected_counts')}"
+            )
         if not payload.get("results"):
             raise SystemExit("Live-site verification report has no results")
         if not payload.get("overall_ok"):
             raise SystemExit(
                 f"Live-site verification report is not passing: {payload.get('passing')}/{payload.get('checked_urls')}"
             )
+        for item in payload.get("results", []):
+            if item.get("status") >= 400:
+                raise SystemExit(f"Live-site page failure: {item.get('url')} status {item.get('status')}")
         print(f"checked live-site verification report ({payload['passing']}/{payload['checked_urls']} passing)")
         return
     payload = build_report(args.timeout)
