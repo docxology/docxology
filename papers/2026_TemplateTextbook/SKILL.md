@@ -1,6 +1,6 @@
 ---
 name: "TemplateTextbook"
-description: "Use for The Template Textbook, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533126."
+description: "Use for The Template Textbook, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533125."
 tags: ["open-textbook", "modular-manuscript", "reproducible-publishing", "computational-backbone", "python"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["open-textbook", "modular-manuscript", "reproducible-publishing", "comput
 
 Use this skill when working with the publication **The Template Textbook** or its paired release artifacts.
 
-1. Ground citations in DOI `10.5281/zenodo.20533126`.
+1. Ground citations in DOI `10.5281/zenodo.20533125`.
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
 3. Keep release tag `v0.1.0` and repository `docxology/template_textbook` linked when updating catalog surfaces.
 

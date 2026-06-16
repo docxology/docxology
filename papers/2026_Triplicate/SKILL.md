@@ -1,6 +1,6 @@
 ---
 name: "Triplicate"
-description: "Use for The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533676."
+description: "Use for The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533675."
 tags: ["newspaper-layout", "typography", "reportlab", "reproducible-publishing", "document-engineering"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["newspaper-layout", "typography", "reportlab", "reproducible-publishing",
 
 Use this skill when working with the publication **The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine** or its paired release artifacts.
 
-1. Ground citations in DOI `10.5281/zenodo.20533676`.
+1. Ground citations in DOI `10.5281/zenodo.20533675`.
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
 3. Keep release tag `v1.0.0` and repository `docxology/template_newspaper` linked when updating catalog surfaces.
 

@@ -1,7 +1,7 @@
 # AGENTS.md - Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
 
 **Paper**: Editorial Quality at Scale: A Reproducible Prose-Review Pipeline (2026)
-**DOI**: [10.5281/zenodo.20420342](https://doi.org/10.5281/zenodo.20420342)
+**DOI**: [10.5281/zenodo.20417104](https://doi.org/10.5281/zenodo.20417104)
 **GitHub release**: https://github.com/docxology/template_prose_project/releases/tag/v0.4.0
 
 ---

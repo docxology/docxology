@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420352.svg)](https://doi.org/10.5281/zenodo.20420352)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417021.svg)](https://doi.org/10.5281/zenodo.20417021)
 
 ---
 
@@ -33,7 +33,7 @@ active inference · pymdp · sophisticated inference · generalized notation not
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352) |
+| **DOI** | [10.5281/zenodo.20417021](https://doi.org/10.5281/zenodo.20417021) |
 | **Published** | 2026-05-28 |
 | **Version** | 0.3.0 |
 | **Zenodo record** | https://zenodo.org/records/20420352 |
@@ -46,7 +46,7 @@ active inference · pymdp · sophisticated inference · generalized notation not
 
 ## Citation
 
-> Friedman, D. A. (2026). *Active Inference Multi-Track Exemplar*. Zenodo. https://doi.org/10.5281/zenodo.20420352
+> Friedman, D. A. (2026). *Active Inference Multi-Track Exemplar*. Zenodo. https://doi.org/10.5281/zenodo.20417021
 
 ## Related
 

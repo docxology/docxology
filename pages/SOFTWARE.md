@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*57 original repositories · 32 catalogued Active Inference Institute contributions · [Current public GitHub totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*58 original repositories · 33 catalogued Active Inference Institute contributions · [Current public GitHub totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -56,10 +56,11 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [literature](https://github.com/docxology/literature) | Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications | Python | 2 | 2026-05 |
 | [obsidian-construction-from-text](https://github.com/docxology/obsidian-construction-from-text) | Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs | Python | 1 | 2025-03 |
 | [qr_live_protocol](https://github.com/docxology/qr_live_protocol) | QR code-based live protocol system for real-time data exchange and interactive session management | Python | 1 | 2025-10 |
-| [template_autoscientists](https://github.com/docxology/template_autoscientists) | AutoScientists deterministic multi-agent scientific-discovery coordination harness · [📄](../papers/2026_DeterministicTestbedSelf/) · [Zenodo](https://doi.org/10.5281/zenodo.20533670) | Python | 1 | 2026-06 |
-| [template_newspaper](https://github.com/docxology/template_newspaper) | The Triplicate data-driven large-format newspaper layout engine · [📄](../papers/2026_Triplicate/) · [Zenodo](https://doi.org/10.5281/zenodo.20533676) | Python | 0 | 2026-06 |
+| [template_autoscientists](https://github.com/docxology/template_autoscientists) | AutoScientists deterministic multi-agent scientific-discovery coordination harness · [📄](../papers/2026_DeterministicTestbedSelf/) · [Zenodo](https://doi.org/10.5281/zenodo.20533669) | Python | 1 | 2026-06 |
+| [template_newspaper](https://github.com/docxology/template_newspaper) | The Triplicate data-driven large-format newspaper layout engine · [📄](../papers/2026_Triplicate/) · [Zenodo](https://doi.org/10.5281/zenodo.20533675) | Python | 0 | 2026-06 |
 | [ntqr_llm](https://github.com/docxology/ntqr_llm) | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · [📄](../papers/2026_RecoveringLLMPersona/) · [Zenodo](https://doi.org/10.5281/zenodo.20498700) | Python | 0 | 2026-06 |
 | [itrace](https://github.com/docxology/itrace) | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · [📄](../papers/2026_ITrace/) · [Zenodo](https://doi.org/10.5281/zenodo.20614909) | Python | 0 | 2026-06 |
+| [coasys](https://github.com/docxology/coasys) | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories | Python | 0 | 2026-06 |
 | [ultralink-docx](https://github.com/docxology/ultralink-docx) | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents | HTML | 1 | 2025-03 |
 | [cognitive](https://github.com/docxology/cognitive) | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization | Python | 14\* | 2026-05 |
 | [active_torchference](https://github.com/docxology/active_torchference) | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization | Python | 0 | 2025-10 |
@@ -89,7 +90,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [service](https://github.com/docxology/service) | Service-layer infrastructure and API tooling for Python-based research applications | Python | 0 | 2025-05 |
 | [snake](https://github.com/docxology/snake) | Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms | Python | 0 | 2025-11 |
 | [steganographer](https://github.com/docxology/steganographer) | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration | Rust | 1 | 2026-04 |
-| [template_textbook](https://github.com/docxology/template_textbook) | Modular fillable scaffold for book-length technical works · [📄](../papers/2026_TemplateTextbook/) · [Zenodo](https://doi.org/10.5281/zenodo.20533126) | HTML | 0 | 2026-06 |
+| [template_textbook](https://github.com/docxology/template_textbook) | Modular fillable scaffold for book-length technical works · [📄](../papers/2026_TemplateTextbook/) · [Zenodo](https://doi.org/10.5281/zenodo.20533125) | HTML | 0 | 2026-06 |
 | [blake_jiang](https://github.com/docxology/blake_jiang) | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing · [📄](../papers/2026_BlakeJiang/) | Python | 0 | 2026-05 |
 | [symergetics](https://github.com/docxology/symergetics) | Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics | Python | 0 | 2025-09 |
 | [transformer](https://github.com/docxology/transformer) | Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research | Python | 0 | 2025-10 |
@@ -132,6 +133,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ultralink](https://github.com/ActiveInferenceInstitute/ultralink) | UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats | — | 1 | 2025 |
 | [ActiveInferenceImplementations](https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations) | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles | Jupyter | 0 | 2022 |
 | [ATLAS](https://github.com/ActiveInferenceInstitute/ATLAS) | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces | Python | 0 | 2025 |
+| [COGANT](https://github.com/ActiveInferenceInstitute/COGANT) | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · [📄](../papers/2026_COGANT/) · [Zenodo](https://doi.org/10.5281/zenodo.20705351) | Python | 0 | 2026 |
 | [Bots](https://github.com/ActiveInferenceInstitute/Bots) | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms | — | 0 | 2022 |
 | [Garden-of-Iris](https://github.com/ActiveInferenceInstitute/Garden-of-Iris) | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics | Python | 0 | 2023 |
 | [gen25](https://github.com/ActiveInferenceInstitute/gen25) | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort | — | 0 | 2025 |
@@ -149,13 +151,13 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 2 | `p3if`, `opentir` |
-| Developer Tools | 14 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `ntqr_llm`, `itrace`, `steganographer`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
+| Developer Tools | 15 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
 | Data & Policy | 3 | `hhs-opendata`, `crescent-city`, `grateful_data` |
 | Education | 5 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook` |
 | Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
-| **docxology subtotal** | **57** | |
-| AII Contributions (non-fork) | 32 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **89** | |
+| **docxology subtotal** | **58** | |
+| AII Contributions (non-fork) | 33 | Catalogued repositories with docxology contributions |
+| **Grand Total** | **91** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

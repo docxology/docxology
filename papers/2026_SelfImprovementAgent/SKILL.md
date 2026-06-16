@@ -1,6 +1,6 @@
 ---
 name: "SelfImprovementAgent"
-description: "Use for Self-Improvement Agent Harness: A Deterministic SIA Exemplar, a Zenodo publication with DOI 10.5281/zenodo.20453880."
+description: "Use for Self-Improvement Agent Harness: A Deterministic SIA Exemplar, a Zenodo publication with DOI 10.5281/zenodo.20453879."
 tags: ["self-improvement-agents", "benchmark-harness", "reproducible-research", "agent-evaluation"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["self-improvement-agents", "benchmark-harness", "reproducible-research", 
 
 Use this skill when working with the publication **Self-Improvement Agent Harness: A Deterministic SIA Exemplar** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.20453880`.
+1. Ground citations in DOI `10.5281/zenodo.20453879`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

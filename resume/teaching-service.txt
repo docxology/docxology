@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-06-14T22:42:42Z
+Generated: 2026-06-16T03:22:53Z
 
-Current public metrics: 167 curated works; 89 catalogued software repositories (57 owned + 32 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 168 curated works; 89 catalogued software repositories (57 owned + 32 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -176,7 +176,7 @@ WORKS AND PUBLICATIONS (75)
 [155] 2016 | Paper | Lessons from the colony | Science | https://www.science.org/doi/10.1126/science.352.6288.886
 [159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
-[168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.20671741
+[168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
 
 SOFTWARE (13)
 -------------

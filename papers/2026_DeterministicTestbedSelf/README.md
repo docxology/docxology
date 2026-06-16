@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20533670.svg)](https://doi.org/10.5281/zenodo.20533670)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20533669.svg)](https://doi.org/10.5281/zenodo.20533669)
 
 ---
 
@@ -27,7 +27,7 @@ agent coordination · scientific discovery · noise-band confirmation · ablatio
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20533670](https://doi.org/10.5281/zenodo.20533670) |
+| **DOI** | [10.5281/zenodo.20533669](https://doi.org/10.5281/zenodo.20533669) |
 | **Published** | 2026 |
 | **Version** | 1.0.0 |
 | **Zenodo record** | https://zenodo.org/records/20533670 |
@@ -40,7 +40,7 @@ agent coordination · scientific discovery · noise-band confirmation · ablatio
 
 ## Citation
 
-> Friedman, D. A. (2026). *A Deterministic Testbed for Self-Organizing Agent-Team Coordination*. Zenodo. https://doi.org/10.5281/zenodo.20533670
+> Friedman, D. A. (2026). *A Deterministic Testbed for Self-Organizing Agent-Team Coordination*. Zenodo. https://doi.org/10.5281/zenodo.20533669
 
 ## Related
 

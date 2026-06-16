@@ -4,8 +4,8 @@ type: article
 title: "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline"
 version: "0.4.0"
 date-released: 2026
-doi: 10.5281/zenodo.20420342
-url: "https://doi.org/10.5281/zenodo.20420342"
+doi: 10.5281/zenodo.20417104
+url: "https://doi.org/10.5281/zenodo.20417104"
 repository-code: "https://github.com/docxology/template_prose_project"
 authors:
   - family-names: Friedman
@@ -13,7 +13,7 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20420342
+    value: 10.5281/zenodo.20417104
     description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/20420342"

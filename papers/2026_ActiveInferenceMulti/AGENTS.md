@@ -1,7 +1,7 @@
 # AGENTS.md - Active Inference Multi-Track Exemplar
 
 **Paper**: Active Inference Multi-Track Exemplar (2026)
-**DOI**: [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352)
+**DOI**: [10.5281/zenodo.20417021](https://doi.org/10.5281/zenodo.20417021)
 **GitHub release**: https://github.com/docxology/template_active_inference/releases/tag/v0.3.0
 
 ---

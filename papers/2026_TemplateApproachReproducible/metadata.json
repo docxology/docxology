@@ -1,8 +1,8 @@
 {
   "title": "A template/ approach to Reproducible Generative Research",
   "version": "1.0.6",
-  "doi": "10.5281/zenodo.20420387",
-  "doi_url": "https://doi.org/10.5281/zenodo.20420387",
+  "doi": "10.5281/zenodo.20419007",
+  "doi_url": "https://doi.org/10.5281/zenodo.20419007",
   "zenodo_record": "https://zenodo.org/records/20420387",
   "record_id": "20420387",
   "publication_date": "2026-05-03",
@@ -63,7 +63,7 @@
   "checked_at": "2026-06-04T20:45:04Z",
   "accepted_pairings": [
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template",
@@ -85,7 +85,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template",
@@ -107,7 +107,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template",
@@ -129,7 +129,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template",
@@ -151,7 +151,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template",
@@ -173,7 +173,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template",
@@ -195,7 +195,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template_template",
@@ -218,7 +218,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template_template",
@@ -241,7 +241,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420387",
+      "doi": "10.5281/zenodo.20419007",
       "record_title": "A template/ approach to Reproducible Generative Research",
       "zenodo_record_url": "https://zenodo.org/records/20420387",
       "github_repo": "docxology/template_template",

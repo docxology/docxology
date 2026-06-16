@@ -1,0 +1,53 @@
+{
+  "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+  "version": "0.6.0",
+  "doi": "10.5281/zenodo.20705351",
+  "doi_url": "https://doi.org/10.5281/zenodo.20705351",
+  "concept_doi": "10.5281/zenodo.20705350",
+  "zenodo_record": "https://zenodo.org/records/20705351",
+  "record_id": "20705351",
+  "publication_date": "2026-06-15",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN - Generalized Notation Notation, not graph neural networks). It is an evidence compiler: it propagates reviewable program facts through a fixpoint rule pipeline and emits graph, matrix, provenance, visualization, and roundtrip artifacts rather than a single opaque embedding or proof. A program-graph intermediate representation (IR) carries confidence and provenance; a fixpoint translation engine applies 22 declarative rules mapping nodes onto 7 Active Inference mapping kinds. Each emitted bundle includes a seed-induced structural partition using Markov-blanket role vocabulary, and a reverse synthesizer reconstructs a runnable Python package from an emitted GNN bundle, closing a forward-reverse-forward evaluation loop. The v0.6.0 release reports 9,697 passing tests, 95.55% line coverage, and a 25-target round-trip regression corpus. Dual Python/Rust architecture; MIT-licensed. Code home: https://github.com/ActiveInferenceInstitute/COGANT.",
+  "keywords": [
+    "program analysis",
+    "Generalized Notation Notation",
+    "GNN",
+    "intermediate representation",
+    "code property graph",
+    "active inference",
+    "reproducible research",
+    "codebase-to-model translation",
+    "cognitive ecosystem modeling"
+  ],
+  "files": [
+    {
+      "name": "COGANT-0.6.0.pdf",
+      "size_bytes": 3654907,
+      "checksum": "md5:dedaed9bedb1243962e9a462a38e47fc",
+      "download_url": "https://zenodo.org/api/records/20705351/files/COGANT-0.6.0.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "https://github.com/ActiveInferenceInstitute/COGANT",
+      "type": "software"
+    }
+  ],
+  "github_repo": "https://github.com/ActiveInferenceInstitute/COGANT",
+  "source": "zenodo-with-github",
+  "checked_at": "2026-06-15T18:00:00Z"
+}

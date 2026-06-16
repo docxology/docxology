@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**146** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**147** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **167** works in the table below **·** **150** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **168** works in the table below **·** **151** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -156,14 +156,14 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 116 | 2026 | 🛡️ | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | *Zenodo* | [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171) | [📁](../papers/2026_CrescentCity/) |
 | 117 | 2026 | 💻 | Book | Introduction to Biology: A Generative Approach | *Zenodo* | [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478) | [📁](../papers/2026_BiologyTextbook/) |
 | 119 | 2026 | 💻 | Paper | Policy Entanglement in Active Inference | *Zenodo* | [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637) | [📁](../papers/2026_PolicyEntanglementActive/) |
-| 120 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357) | [📁](../papers/2026_BoundedAutoResearchTiny/) |
-| 121 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20420368](https://doi.org/10.5281/zenodo.20420368) | [📁](../papers/2026_ConvergenceAnalysisGradient/) |
-| 122 | 2026 | 💻 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | *Zenodo* | [10.5281/zenodo.20420342](https://doi.org/10.5281/zenodo.20420342) | [📁](../papers/2026_EditorialQualityAt/) |
-| 123 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20420387](https://doi.org/10.5281/zenodo.20420387) | [📁](../papers/2026_TemplateApproachReproducible/) |
-| 124 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20420352](https://doi.org/10.5281/zenodo.20420352) | [📁](../papers/2026_ActiveInferenceMulti/) |
+| 120 | 2026 | 💻 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | *Zenodo* | [10.5281/zenodo.20417016](https://doi.org/10.5281/zenodo.20417016) | [📁](../papers/2026_BoundedAutoResearchTiny/) |
+| 121 | 2026 | 💻 | Paper | Convergence Analysis of Gradient Descent Optimization | *Zenodo* | [10.5281/zenodo.20417136](https://doi.org/10.5281/zenodo.20417136) | [📁](../papers/2026_ConvergenceAnalysisGradient/) |
+| 122 | 2026 | 💻 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | *Zenodo* | [10.5281/zenodo.20417104](https://doi.org/10.5281/zenodo.20417104) | [📁](../papers/2026_EditorialQualityAt/) |
+| 123 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research | *Zenodo* | [10.5281/zenodo.20419007](https://doi.org/10.5281/zenodo.20419007) | [📁](../papers/2026_TemplateApproachReproducible/) |
+| 124 | 2026 | 💻 | Paper | Active Inference Multi-Track Exemplar | *Zenodo* | [10.5281/zenodo.20417021](https://doi.org/10.5281/zenodo.20417021) | [📁](../papers/2026_ActiveInferenceMulti/) |
 | 125 | 2026 | 💻 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | *Zenodo* | [10.5281/zenodo.20420557](https://doi.org/10.5281/zenodo.20420557) | [📁](../papers/2026_BeeStack/) |
 | 126 | 2026 | 💻 | Paper | When do bugs see (infra)red? | *Zenodo* | [10.5281/zenodo.20450970](https://doi.org/10.5281/zenodo.20450970) | [📁](../papers/2026_WhenDoBugs/) |
-| 127 | 2026 | 💻 | Paper | Self-Improvement Agent Harness: A Deterministic SIA Exemplar | *Zenodo* | [10.5281/zenodo.20453880](https://doi.org/10.5281/zenodo.20453880) | [📁](../papers/2026_SelfImprovementAgent/) |
+| 127 | 2026 | 💻 | Paper | Self-Improvement Agent Harness: A Deterministic SIA Exemplar | *Zenodo* | [10.5281/zenodo.20453879](https://doi.org/10.5281/zenodo.20453879) | [📁](../papers/2026_SelfImprovementAgent/) |
 | 128 | 2025 | 🧠 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | *Zenodo* | [10.5281/zenodo.14861596](https://doi.org/10.5281/zenodo.14861596) | [📁](../papers/2025_BiofirmDevelopmentWith/) |
 | 129 | 2025 | 🧬 | Paper | Con-cat-enate: emulation of Cat Hippocampus | *Zenodo* | [10.5281/zenodo.14738798](https://doi.org/10.5281/zenodo.14738798) | [📁](../papers/2025_ConCatEnate/) |
 | 130 | 2025 | 🧠 | Paper | Graphspeak: of language and handshake | *Zenodo* | [10.5281/zenodo.14737157](https://doi.org/10.5281/zenodo.14737157) | [📁](../papers/2025_Graphspeak/) |
@@ -187,10 +187,10 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 148 | 2020 | 🛡️ | Paper | Reimagining Maps | *Zenodo* | [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026) | [📁](../papers/2020_ReimaginingMaps/) |
 | 149 | 2020 | 🛡️ | Paper | Infinite Games for Infinite Teams | *Zenodo* | [10.5281/zenodo.12601675](https://doi.org/10.5281/zenodo.12601675) | [📁](../papers/2020_InfiniteGamesInfinite/) |
 | 150 | 2026 | 💻 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | *Zenodo* | [10.5281/zenodo.20482026](https://doi.org/10.5281/zenodo.20482026) | [📁](../papers/2026_MusicNeverStopped/) |
-| 151 | 2026 | 💻 | Paper | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533670](https://doi.org/10.5281/zenodo.20533670) | [📁](../papers/2026_DeterministicTestbedSelf/) |
+| 151 | 2026 | 💻 | Paper | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533669](https://doi.org/10.5281/zenodo.20533669) | [📁](../papers/2026_DeterministicTestbedSelf/) |
 | 152 | 2026 | 💻 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) | [📁](../papers/2026_RecoveringLLMPersona/) |
-| 153 | 2026 | 💻 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676) | [📁](../papers/2026_Triplicate/) |
-| 154 | 2026 | 💻 | Book | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126) | [📁](../papers/2026_TemplateTextbook/) |
+| 153 | 2026 | 💻 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533675](https://doi.org/10.5281/zenodo.20533675) | [📁](../papers/2026_Triplicate/) |
+| 154 | 2026 | 💻 | Book | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) | [📁](../papers/2026_TemplateTextbook/) |
 | 155 | 2016 | 🐜 | Paper | Lessons from the colony | *Science* | [science.org](https://www.science.org/doi/10.1126/science.352.6288.886) | — |
 | 156 | 2016 | 🌍 | Paper | Full speed ahead to the City on the Hill | *Science* | [10.1126/science.352.6288.886](https://doi.org/10.1126/science.352.6288.886) | — |
 | 157 | 2021 | 🛡️ | Paper | Disinforge | *Science* | [science.org](https://www.science.org/doi/10.1126/science.371.6524.22) | — |
@@ -204,7 +204,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 165 | 2026 | 💻 | Paper | iTrace: verification-first webcam eye-movement analysis | *Zenodo* | [10.5281/zenodo.20614909](https://doi.org/10.5281/zenodo.20614909) | [📁](../papers/2026_ITrace/) |
 | 166 | 2026 | 💻 | Paper | DemoCreate: Declarative Audio-Visual Demo Generation for Software | *Zenodo* | [10.5281/zenodo.20693217](https://doi.org/10.5281/zenodo.20693217) | [📁](../papers/2026_DemoCreate/) |
 | 167 | 2026 | 💻 | Paper | ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data | *Zenodo* | [10.5281/zenodo.20647443](https://doi.org/10.5281/zenodo.20647443) | [📁](../papers/2026_ENTO/) |
-| 168 | 2026 | 🧠 | Paper | GeneralizedNotationNotation (GNN) | *Zenodo* | [10.5281/zenodo.20671741](https://doi.org/10.5281/zenodo.20671741) | [📁](../papers/2026_GeneralizedNotationNotationGNN/) |
+| 168 | 2026 | 🧠 | Paper | GeneralizedNotationNotation (GNN) | *Zenodo* | [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313) | [📁](../papers/2026_GeneralizedNotationNotationGNN/) |
+| 169 | 2026 | 💻 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351) | [📁](../papers/2026_COGANT/) |
 ---
 
 ## Domain Index

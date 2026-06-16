@@ -1,0 +1,161 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+================================================================================
+                          WARRANT CANARY
+              Daniel Ari Friedman / docxology research site
+                      https://danielarifriedman.com/
+================================================================================
+
+Document:        Warrant Canary v1
+Operator:        Daniel Ari Friedman (sole operator)
+Site:            https://danielarifriedman.com/
+Repository:      https://github.com/docxology/docxology
+Contact:         Daniel@ActiveInference.Institute
+Statement date:  2026-06-14 (UTC)
+Cadence:         Re-signed QUARTERLY. Next update due on or before 2026-09-14.
+Canonical URL:   https://danielarifriedman.com/canary.txt
+
+--------------------------------------------------------------------------------
+AFFIRMATIONS (as of the statement date above)
+--------------------------------------------------------------------------------
+
+I, Daniel Ari Friedman, the sole operator of the docxology research site, affirm
+the following to the best of my knowledge, in my personal capacity, as of the
+statement date above. Each affirmation has been true at all times up to and
+including this date:
+
+ 1. I have NOT received any National Security Letter (NSL), as described in
+    18 U.S.C. 2709 or any analogous authority.
+
+ 2. I have NOT received any Foreign Intelligence Surveillance Act (FISA) order,
+    FISA warrant, FISA directive, or any order from the Foreign Intelligence
+    Surveillance Court.
+
+ 3. I have NOT received any secret, sealed, or otherwise non-public subpoena,
+    warrant, court order, or other legal process compelling the production of
+    data, the installation of surveillance capability, or the modification of
+    this site or its infrastructure.
+
+ 4. I have NOT received any gag order, non-disclosure directive, or other
+    instrument prohibiting me from disclosing the existence or contents of any
+    legal process.
+
+ 5. No search, seizure, imaging, cloning, or physical or remote access to this
+    site's source repository, build pipeline, hosting, DNS, signing keys, or
+    other operational infrastructure has been carried out by, or on behalf of,
+    any government or third party with compulsory authority.
+
+ 6. No government agency or other party has compelled me to weaken, backdoor,
+    disable, or circumvent any security, integrity, or cryptographic measure
+    protecting this site or its readers.
+
+ 7. I have NOT been required to modify, suppress, retract, or insert any content,
+    citation, dataset, or record on this site by any government, court, or party
+    acting under color of legal compulsion.
+
+ 8. I am NOT acting under duress, coercion, blackmail, threat, or any form of
+    secret compulsion in publishing this statement, and I am of sound mind and
+    acting of my own free will.
+
+ 9. I am NOT operating this site under any state sanction, license condition,
+    secret agreement, or compulsion that constrains my editorial or operational
+    independence.
+
+10. I retain FULL and SOLE editorial and operational control over this site,
+    its repository, and its publishing infrastructure. No undisclosed third
+    party holds control, veto, or compelled-cooperation authority over it.
+
+If any of the above ceases to be true, and I am legally permitted to act, I will
+remove or amend the corresponding affirmation. If I am legally prohibited from
+stating that an affirmation is no longer true, I will allow this canary to LAPSE
+rather than publish a false statement (see DEAD-MAN'S-SWITCH below).
+
+--------------------------------------------------------------------------------
+DEAD-MAN'S-SWITCH (how to read this canary)
+--------------------------------------------------------------------------------
+
+This canary is re-signed on a QUARTERLY cadence. A fresh, validly PGP-signed
+copy with an updated statement date and updated freshness proof (below) will be
+published on or before each quarterly deadline.
+
+ - TREAT AS HEALTHY only if: the statement date is within the last 3 months,
+   the next-update deadline has not passed, the PGP signature verifies against
+   the fingerprint below, AND the freshness proof references data no older than
+   the statement date.
+
+ - TREAT AS A WARNING (assume compromise / compelled silence) if ANY of:
+     * no freshly signed update appears by the next-update deadline
+       (2026-09-14 for this revision), or
+     * the signature fails to verify or the signing key changes without prior
+       notice, or
+     * the wording of the affirmations changes materially or any affirmation
+       silently disappears, or
+     * the freshness proof is missing, stale, or internally inconsistent.
+
+The ABSENCE of a timely, valid, freshly signed update is itself the signal.
+Silence speaks. Do not assume a missed update is mere neglect.
+
+--------------------------------------------------------------------------------
+FRESHNESS PROOF (proves this was not pre-written or pre-signed)
+--------------------------------------------------------------------------------
+
+The following values were unpredictable before their stated times and are
+independently verifiable by anyone. Their inclusion proves this statement was
+authored on or after 2026-06-14 and could not have been signed in advance.
+
+The anchors below MUST be filled with REAL, freshly-fetched values immediately
+before signing. Do NOT publish placeholder or second-hand values — a fabricated
+freshness proof destroys the canary's credibility. Fetch all three at sign time:
+
+ [A] Recent news headline (human-memorable, independently checkable):
+     "[HEADLINE — a major, verifiable news event from the last 1-2 days]"
+     Reported [YYYY-MM-DD]. Verifiable via [OUTLET(S)].
+
+ [B] Bitcoin block (proof-of-work, cannot be forged or back-dated):
+     Height:    [LATEST_BLOCK_HEIGHT]
+     Blockhash: [LATEST_BLOCK_HASH]
+     Verify:    https://mempool.space/block/[LATEST_BLOCK_HEIGHT]
+     # fetch: curl -s https://mempool.space/api/blocks/tip/height
+     #        curl -s https://mempool.space/api/block-height/<height>
+
+ [C] NIST Randomness Beacon 2.0 pulse (signed public randomness):
+     Chain 2, pulse index [PULSE_INDEX]
+     Timestamp:  [PULSE_TIMESTAMP_UTC]
+     outputValue (localRandomValue):
+       [PULSE_OUTPUT_VALUE_64_HEX_BYTES]
+     Verify:    https://beacon.nist.gov/beacon/2.0/chain/2/pulse/[PULSE_INDEX]
+     # fetch: curl -s https://beacon.nist.gov/beacon/2.0/pulse/last
+
+At each quarterly re-signing, ALL THREE anchors [A], [B], [C] are re-fetched live
+and replaced with then-current values BEFORE clearsigning.
+
+--------------------------------------------------------------------------------
+VERIFICATION INSTRUCTIONS
+--------------------------------------------------------------------------------
+
+1. Import the signing key (fingerprint below). Confirm the fingerprint out of
+   band against a previously trusted copy and/or my keyserver/GitHub identity.
+2. Verify the clearsigned signature:  gpg --verify canary.txt
+3. Confirm the statement date is within the last quarter and the next-update
+   deadline has not passed.
+4. Spot-check the freshness proof anchors [A]/[B]/[C] against their public
+   sources.
+
+Signing key fingerprint (placeholder — replace with real key before signing):
+    [DANIEL_PGP_KEY_FINGERPRINT_40_HEX_PLACEHOLDER]
+
+Public key:
+    https://danielarifriedman.com/.well-known/pgp-key.txt   [PLACEHOLDER]
+    https://github.com/docxology.gpg                         [PLACEHOLDER]
+
+================================================================================
+This statement is dedicated to the public domain (CC0). Mirror it freely.
+================================================================================
+-----BEGIN PGP SIGNATURE-----
+
+[PGP_CLEARSIGN_SIGNATURE_BLOCK_PLACEHOLDER]
+Daniel signs this file locally with:  gpg --clearsign --digest-algo SHA512 canary.txt
+The signed output replaces this placeholder block.
+
+-----END PGP SIGNATURE-----

@@ -2960,8 +2960,8 @@
     "note": "Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420357",
-    "URL": "https://doi.org/10.5281/zenodo.20420357"
+    "DOI": "10.5281/zenodo.20417016",
+    "URL": "https://doi.org/10.5281/zenodo.20417016"
   },
   {
     "id": "Friedman2026ConvergenceAnalysisGradientDescent121",
@@ -2985,8 +2985,8 @@
     "note": "Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420368",
-    "URL": "https://doi.org/10.5281/zenodo.20420368"
+    "DOI": "10.5281/zenodo.20417136",
+    "URL": "https://doi.org/10.5281/zenodo.20417136"
   },
   {
     "id": "Friedman2026EditorialQualityAtScale122",
@@ -3010,8 +3010,8 @@
     "note": "Catalog row 122; docs: papers/2026_EditorialQualityAt/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420342",
-    "URL": "https://doi.org/10.5281/zenodo.20420342"
+    "DOI": "10.5281/zenodo.20417104",
+    "URL": "https://doi.org/10.5281/zenodo.20417104"
   },
   {
     "id": "Friedman2026TemplateApproachReproducibleGenerative123",
@@ -3035,8 +3035,8 @@
     "note": "Catalog row 123; docs: papers/2026_TemplateApproachReproducible/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420387",
-    "URL": "https://doi.org/10.5281/zenodo.20420387"
+    "DOI": "10.5281/zenodo.20419007",
+    "URL": "https://doi.org/10.5281/zenodo.20419007"
   },
   {
     "id": "Friedman2026ActiveInferenceMultiTrack124",
@@ -3060,8 +3060,8 @@
     "note": "Catalog row 124; docs: papers/2026_ActiveInferenceMulti/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20420352",
-    "URL": "https://doi.org/10.5281/zenodo.20420352"
+    "DOI": "10.5281/zenodo.20417021",
+    "URL": "https://doi.org/10.5281/zenodo.20417021"
   },
   {
     "id": "Friedman2026BeeStackEvidenceTypedScaffold125",
@@ -3135,8 +3135,8 @@
     "note": "Catalog row 127; docs: papers/2026_SelfImprovementAgent/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20453880",
-    "URL": "https://doi.org/10.5281/zenodo.20453880"
+    "DOI": "10.5281/zenodo.20453879",
+    "URL": "https://doi.org/10.5281/zenodo.20453879"
   },
   {
     "id": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
@@ -3735,8 +3735,8 @@
     "note": "Catalog row 151; docs: papers/2026_DeterministicTestbedSelf/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20533670",
-    "URL": "https://doi.org/10.5281/zenodo.20533670"
+    "DOI": "10.5281/zenodo.20533669",
+    "URL": "https://doi.org/10.5281/zenodo.20533669"
   },
   {
     "id": "Friedman2026RecoveringLLMPersonaAccuracies152",
@@ -3785,8 +3785,8 @@
     "note": "Catalog row 153; docs: papers/2026_Triplicate/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20533676",
-    "URL": "https://doi.org/10.5281/zenodo.20533676"
+    "DOI": "10.5281/zenodo.20533675",
+    "URL": "https://doi.org/10.5281/zenodo.20533675"
   },
   {
     "id": "Friedman2026TemplateTextbook154",
@@ -3810,8 +3810,8 @@
     "note": "Catalog row 154; docs: papers/2026_TemplateTextbook/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20533126",
-    "URL": "https://doi.org/10.5281/zenodo.20533126"
+    "DOI": "10.5281/zenodo.20533125",
+    "URL": "https://doi.org/10.5281/zenodo.20533125"
   },
   {
     "id": "Friedman2016LessonsFromColony155",
@@ -4154,7 +4154,32 @@
     "note": "Catalog row 168; docs: papers/2026_GeneralizedNotationNotationGNN/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20671741",
-    "URL": "https://doi.org/10.5281/zenodo.20671741"
+    "DOI": "10.5281/zenodo.7803313",
+    "URL": "https://doi.org/10.5281/zenodo.7803313"
+  },
+  {
+    "id": "Friedman2026COGANTDeterministicCodebaseGNN169",
+    "type": "article-journal",
+    "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 169; docs: papers/2026_COGANT/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20705351",
+    "URL": "https://doi.org/10.5281/zenodo.20705351"
   }
 ]

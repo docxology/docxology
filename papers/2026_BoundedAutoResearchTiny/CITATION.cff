@@ -4,8 +4,8 @@ type: article
 title: "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
 version: "0.3.0"
 date-released: 2026
-doi: 10.5281/zenodo.20420357
-url: "https://doi.org/10.5281/zenodo.20420357"
+doi: 10.5281/zenodo.20417016
+url: "https://doi.org/10.5281/zenodo.20417016"
 repository-code: "https://github.com/docxology/template_autoresearch_project"
 authors:
   - family-names: Friedman
@@ -13,7 +13,7 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20420357
+    value: 10.5281/zenodo.20417016
     description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/20420357"

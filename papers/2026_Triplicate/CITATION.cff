@@ -4,8 +4,8 @@ type: article
 title: "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine"
 version: "1.0.0"
 date-released: 2026-06-03
-doi: 10.5281/zenodo.20533676
-url: "https://doi.org/10.5281/zenodo.20533676"
+doi: 10.5281/zenodo.20533675
+url: "https://doi.org/10.5281/zenodo.20533675"
 repository-code: "https://github.com/docxology/template_newspaper"
 authors:
   - family-names: Friedman
@@ -13,7 +13,7 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20533676
+    value: 10.5281/zenodo.20533675
     description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/20533676"

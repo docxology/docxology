@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420368.svg)](https://doi.org/10.5281/zenodo.20420368)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417136.svg)](https://doi.org/10.5281/zenodo.20417136)
 
 ---
 
@@ -35,7 +35,7 @@ optimization algorithms · gradient descent · convergence analysis · numerical
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20420368](https://doi.org/10.5281/zenodo.20420368) |
+| **DOI** | [10.5281/zenodo.20417136](https://doi.org/10.5281/zenodo.20417136) |
 | **Published** | 2026 |
 | **Version** | 2.5.0 |
 | **Zenodo record** | https://zenodo.org/records/20420368 |
@@ -48,7 +48,7 @@ optimization algorithms · gradient descent · convergence analysis · numerical
 
 ## Citation
 
-> Friedman, D. A. (2026). *Convergence Analysis of Gradient Descent Optimization*. Zenodo. https://doi.org/10.5281/zenodo.20420368
+> Friedman, D. A. (2026). *Convergence Analysis of Gradient Descent Optimization*. Zenodo. https://doi.org/10.5281/zenodo.20417136
 
 ## Related
 

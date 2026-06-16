@@ -1,7 +1,7 @@
 # AGENTS.md - The Template Textbook
 
 **Paper**: The Template Textbook (2026)
-**DOI**: [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126)
+**DOI**: [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125)
 **GitHub release**: https://github.com/docxology/template_textbook/releases/tag/v0.1.0
 
 ---

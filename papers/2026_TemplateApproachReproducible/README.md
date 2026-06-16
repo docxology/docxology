@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420387.svg)](https://doi.org/10.5281/zenodo.20420387)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20419007.svg)](https://doi.org/10.5281/zenodo.20419007)
 
 ---
 
@@ -29,7 +29,7 @@ reproducible research · infrastructure-as-code · steganography · cryptographi
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20420387](https://doi.org/10.5281/zenodo.20420387) |
+| **DOI** | [10.5281/zenodo.20419007](https://doi.org/10.5281/zenodo.20419007) |
 | **Published** | 2026-05-03 |
 | **Version** | 1.0.6 |
 | **Zenodo record** | https://zenodo.org/records/20420387 |
@@ -42,7 +42,7 @@ reproducible research · infrastructure-as-code · steganography · cryptographi
 
 ## Citation
 
-> Friedman, D. A. (2026). *A template/ approach to Reproducible Generative Research*. Zenodo. https://doi.org/10.5281/zenodo.20420387
+> Friedman, D. A. (2026). *A template/ approach to Reproducible Generative Research*. Zenodo. https://doi.org/10.5281/zenodo.20419007
 
 ## Related
 

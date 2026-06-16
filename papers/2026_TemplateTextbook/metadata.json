@@ -1,8 +1,8 @@
 {
   "title": "The Template Textbook",
   "version": "0.1",
-  "doi": "10.5281/zenodo.20533126",
-  "doi_url": "https://doi.org/10.5281/zenodo.20533126",
+  "doi": "10.5281/zenodo.20533125",
+  "doi_url": "https://doi.org/10.5281/zenodo.20533125",
   "zenodo_record": "https://zenodo.org/records/20533126",
   "record_id": "20533126",
   "publication_date": "2026-06-03",
@@ -61,7 +61,7 @@
   "checked_at": "2026-06-04T20:45:07Z",
   "accepted_pairings": [
     {
-      "doi": "10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533125",
       "record_title": "The Template Textbook",
       "zenodo_record_url": "https://zenodo.org/records/20533126",
       "github_repo": "docxology/template",
@@ -83,7 +83,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533125",
       "record_title": "The Template Textbook",
       "zenodo_record_url": "https://zenodo.org/records/20533126",
       "github_repo": "docxology/template",
@@ -105,7 +105,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533125",
       "record_title": "The Template Textbook",
       "zenodo_record_url": "https://zenodo.org/records/20533126",
       "github_repo": "docxology/template",
@@ -127,7 +127,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533125",
       "record_title": "The Template Textbook",
       "zenodo_record_url": "https://zenodo.org/records/20533126",
       "github_repo": "docxology/template",
@@ -149,7 +149,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533125",
       "record_title": "The Template Textbook",
       "zenodo_record_url": "https://zenodo.org/records/20533126",
       "github_repo": "docxology/template",
@@ -171,7 +171,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533126",
+      "doi": "10.5281/zenodo.20533125",
       "record_title": "The Template Textbook",
       "zenodo_record_url": "https://zenodo.org/records/20533126",
       "github_repo": "docxology/template",

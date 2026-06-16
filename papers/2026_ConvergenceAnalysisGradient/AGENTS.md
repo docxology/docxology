@@ -1,7 +1,7 @@
 # AGENTS.md - Convergence Analysis of Gradient Descent Optimization
 
 **Paper**: Convergence Analysis of Gradient Descent Optimization (2026)
-**DOI**: [10.5281/zenodo.20420368](https://doi.org/10.5281/zenodo.20420368)
+**DOI**: [10.5281/zenodo.20417136](https://doi.org/10.5281/zenodo.20417136)
 **GitHub release**: https://github.com/docxology/template_code_project/releases/tag/v2.5.0
 
 ---

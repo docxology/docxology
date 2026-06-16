@@ -1,6 +1,6 @@
 ---
 name: "GeneralizedNotationNotationGNN"
-description: "Use for GeneralizedNotationNotation (GNN), a Zenodo publication with DOI 10.5281/zenodo.20671741."
+description: "Use for GeneralizedNotationNotation (GNN), a Zenodo publication with DOI 10.5281/zenodo.7803313."
 tags: ["active-inference", "generative-models", "cognitive-modeling", "notation-system", "reproducibility", "computational-neuroscience", "bayesian-inference", "standards"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["active-inference", "generative-models", "cognitive-modeling", "notation-
 
 Use this skill when working with the publication **GeneralizedNotationNotation (GNN)** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.20671741`.
+1. Ground citations in DOI `10.5281/zenodo.7803313`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

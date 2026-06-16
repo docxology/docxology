@@ -1,7 +1,7 @@
 # AGENTS.md - Self-Improvement Agent Harness: A Deterministic SIA Exemplar
 
 **Paper**: Self-Improvement Agent Harness: A Deterministic SIA Exemplar (2026)
-**DOI**: [10.5281/zenodo.20453880](https://doi.org/10.5281/zenodo.20453880)
+**DOI**: [10.5281/zenodo.20453879](https://doi.org/10.5281/zenodo.20453879)
 **Zenodo record**: https://zenodo.org/records/20453880
 
 ---

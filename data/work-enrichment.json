@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-14T22:30:06Z",
+  "generated_at": "2026-06-16T03:22:52Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 167,
+  "count": 168,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3753,6 +3753,29 @@
       ],
       "methods": [],
       "source": "papers/2026_GeneralizedNotationNotationGNN/README.md"
+    },
+    "Friedman2026COGANTDeterministicCodebaseGNN169": {
+      "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+      "abstract": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN — Generalized Notation Notation , not graph neural networks). It is best understood as an evidence compiler : it propagates reviewable program facts through a fixpoint rule pipeline (in the tradition of fixpoint program analysis) and emits graph, matrix, provenance, visualization, and roundtrip artifacts rather than a single opaque embedding or proof. A program-graph intermediate representation (IR) carries confidence and provenance; a fixpoint translation engine applies 22 declarative rules mapping nodes onto 7 Active Inference mapping kinds . Each emitted bundle includes a seed-induced structural partition using Markov-blanket role vocabulary, and a reverse synthesizer reconstruc",
+      "keywords": [
+        "program analysis",
+        "Generalized Notation Notation (GNN)",
+        "intermediate representation",
+        "code property graph",
+        "active inference",
+        "reproducible research",
+        "codebase-to-model translation",
+        "cognitive ecosystem modeling"
+      ],
+      "findings": [
+        "program analysis — fixpoint propagation of reviewable program facts",
+        "Generalized Notation Notation (GNN) — Active Inference model artifact format",
+        "intermediate representation — confidence- and provenance-carrying program graph",
+        "active inference — 7 mapping kinds; Markov-blanket structural partition",
+        "reproducible research — forward→reverse→forward roundtrip evidence"
+      ],
+      "methods": [],
+      "source": "papers/2026_COGANT/README.md"
     }
   }
 }

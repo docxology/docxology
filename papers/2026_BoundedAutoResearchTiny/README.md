@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420357.svg)](https://doi.org/10.5281/zenodo.20420357)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417016.svg)](https://doi.org/10.5281/zenodo.20417016)
 
 ---
 
@@ -51,7 +51,7 @@ autoresearch · reproducible research · machine learning benchmark · artifact 
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357) |
+| **DOI** | [10.5281/zenodo.20417016](https://doi.org/10.5281/zenodo.20417016) |
 | **Published** | 2026 |
 | **Version** | 0.3.0 |
 | **Zenodo record** | https://zenodo.org/records/20420357 |
@@ -64,7 +64,7 @@ autoresearch · reproducible research · machine learning benchmark · artifact 
 
 ## Citation
 
-> Friedman, D. A. (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo. https://doi.org/10.5281/zenodo.20420357
+> Friedman, D. A. (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo. https://doi.org/10.5281/zenodo.20417016
 
 ## Related
 

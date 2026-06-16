@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T23:55:18Z",
+  "generated_at": "2026-06-16T03:22:53Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 674,
+  "count": 675,
   "items": [
     {
       "id": "page:home",
@@ -3095,7 +3095,7 @@
       "type": "work",
       "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
       "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20420357",
+      "external_url": "https://doi.org/10.5281/zenodo.20417016",
       "summary": "Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The ca",
       "year": 2026,
       "domain": "Computational",
@@ -3110,14 +3110,14 @@
         "human review",
         "local artifact integrity"
       ],
-      "content": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task Zenodo 10.5281/zenodo.20420357 Friedman2026BoundedAutoResearchTinyReproducible120 Computational Paper Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but concrete: 2000 training and 500 test images from MNIST handwritten digit database are evaluated by the bounded small MNIST neural-network classification loop. The run evaluates 4 of 5 proposed candidates, including Tiny patch-attention classifier, selects exp-mlp-tanh-64 (MLP, 50890 parameters), and improves test accuracy from 82.6% to 89.4% (6.8% absolute change). The validated diagnostic layer reports macro F1 89.4%, bootstrap accuracy interval 86.4% to 92.0%, Brier score 0.161, negative log likelihood 0.361, top-2 accuracy 95.6%, and exact McNemar p-value 0.000. The same pipeline writes proposal, candidate, run, review, benchmark, ev autoresearch reproducible research machine learning benchmark artifact readiness human review local artifact integrity autoresearch reproducible research machine learning benchmark artifact readiness human review"
+      "content": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task Zenodo 10.5281/zenodo.20417016 Friedman2026BoundedAutoResearchTinyReproducible120 Computational Paper Abstract This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but concrete: 2000 training and 500 test images from MNIST handwritten digit database are evaluated by the bounded small MNIST neural-network classification loop. The run evaluates 4 of 5 proposed candidates, including Tiny patch-attention classifier, selects exp-mlp-tanh-64 (MLP, 50890 parameters), and improves test accuracy from 82.6% to 89.4% (6.8% absolute change). The validated diagnostic layer reports macro F1 89.4%, bootstrap accuracy interval 86.4% to 92.0%, Brier score 0.161, negative log likelihood 0.361, top-2 accuracy 95.6%, and exact McNemar p-value 0.000. The same pipeline writes proposal, candidate, run, review, benchmark, ev autoresearch reproducible research machine learning benchmark artifact readiness human review local artifact integrity autoresearch reproducible research machine learning benchmark artifact readiness human review"
     },
     {
       "id": "work:Friedman2026ConvergenceAnalysisGradientDescent121",
       "type": "work",
       "title": "Convergence Analysis of Gradient Descent Optimization",
       "url": "/works/Friedman2026ConvergenceAnalysisGradientDescent121.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20420368",
+      "external_url": "https://doi.org/10.5281/zenodo.20417136",
       "summary": "Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The im",
       "year": 2026,
       "domain": "Computational",
@@ -3133,14 +3133,14 @@
         "reproducible research",
         "infrastructure automation"
       ],
-      "content": "Convergence Analysis of Gradient Descent Optimization Zenodo 10.5281/zenodo.20420368 Friedman2026ConvergenceAnalysisGradientDescent121 Computational Paper Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/template code project/scripts/optimization analysis.py and hydrated into the manuscript through scripts/z generate manuscript variables.py, so tables and prose track output/data/optimization results.csv after every pipeline run. We evaluate 6 step sizes from $\\alpha = 0.01$ to $\\alpha = 2.5$, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model. The build chain exercises template infrastructure end-to-end: scientific helpers (infrastructure.scientific.stability, infrastructure.scientific.benchmarking), valid optimization algorithms gradient descent convergence analysis numerical methods mathematical programming reproducible research infrastructure automation optimization algorithms gradient descent convergence analysis numerical methods mathematical programming"
+      "content": "Convergence Analysis of Gradient Descent Optimization Zenodo 10.5281/zenodo.20417136 Friedman2026ConvergenceAnalysisGradientDescent121 Computational Paper Abstract This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/template code project/scripts/optimization analysis.py and hydrated into the manuscript through scripts/z generate manuscript variables.py, so tables and prose track output/data/optimization results.csv after every pipeline run. We evaluate 6 step sizes from $\\alpha = 0.01$ to $\\alpha = 2.5$, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model. The build chain exercises template infrastructure end-to-end: scientific helpers (infrastructure.scientific.stability, infrastructure.scientific.benchmarking), valid optimization algorithms gradient descent convergence analysis numerical methods mathematical programming reproducible research infrastructure automation optimization algorithms gradient descent convergence analysis numerical methods mathematical programming"
     },
     {
       "id": "work:Friedman2026EditorialQualityAtScale122",
       "type": "work",
       "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "url": "/works/Friedman2026EditorialQualityAtScale122.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20420342",
+      "external_url": "https://doi.org/10.5281/zenodo.20417104",
       "summary": "Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose ana",
       "year": 2026,
       "domain": "Computational",
@@ -3154,14 +3154,14 @@
         "reproducible research",
         "manuscript quality"
       ],
-      "content": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline Zenodo 10.5281/zenodo.20420342 Friedman2026EditorialQualityAtScale122 Computational Paper Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript, prose analysis readability editorial review reproducible research manuscript quality prose analysis readability editorial review reproducible research manuscript quality"
+      "content": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline Zenodo 10.5281/zenodo.20417104 Friedman2026EditorialQualityAtScale122 Computational Paper Abstract This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript, prose analysis readability editorial review reproducible research manuscript quality prose analysis readability editorial review reproducible research manuscript quality"
     },
     {
       "id": "work:Friedman2026TemplateApproachReproducibleGenerative123",
       "type": "work",
       "title": "A template/ approach to Reproducible Generative Research",
       "url": "/works/Friedman2026TemplateApproachReproducibleGenerative123.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20420387",
+      "external_url": "https://doi.org/10.5281/zenodo.20419007",
       "summary": "Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforce",
       "year": 2026,
       "domain": "Computational",
@@ -3178,14 +3178,14 @@
         "publication integrity",
         "zero-mock testing"
       ],
-      "content": "A template/ approach to Reproducible Generative Research Zenodo 10.5281/zenodo.20420387 Friedman2026TemplateApproachReproducibleGenerative123 Computational Paper Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the researc reproducible research infrastructure-as-code steganography cryptographic provenance LaTeX rendering modular infrastructure publication integrity zero-mock testing thin orchestrator two-layer architecture FAIR4RS research software engineering reproducible research infrastructure-as-code steganography cryptographic provenance LaTeX rendering"
+      "content": "A template/ approach to Reproducible Generative Research Zenodo 10.5281/zenodo.20419007 Friedman2026TemplateApproachReproducibleGenerative123 Computational Paper Abstract The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the researc reproducible research infrastructure-as-code steganography cryptographic provenance LaTeX rendering modular infrastructure publication integrity zero-mock testing thin orchestrator two-layer architecture FAIR4RS research software engineering reproducible research infrastructure-as-code steganography cryptographic provenance LaTeX rendering"
     },
     {
       "id": "work:Friedman2026ActiveInferenceMultiTrack124",
       "type": "work",
       "title": "Active Inference Multi-Track Exemplar",
       "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20420352",
+      "external_url": "https://doi.org/10.5281/zenodo.20417021",
       "summary": "Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../t",
       "year": 2026,
       "domain": "Computational",
@@ -3199,7 +3199,7 @@
         "generalized notation notation",
         "lean"
       ],
-      "content": "Active Inference Multi-Track Exemplar Zenodo 10.5281/zenodo.20420352 Friedman2026ActiveInferenceMultiTrack124 Computational Paper Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml). The first page (00 00 sheaf coverage.md (00 00 sheaf coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time. The T-maze demo aligns with pymdp sophisticated inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated inference). Measured invariant checks: 12 / 12 passed. SI pl active inference pymdp sophisticated inference generalized notation notation lean active inference pymdp sophisticated inference generalized notation notation lean"
+      "content": "Active Inference Multi-Track Exemplar Zenodo 10.5281/zenodo.20417021 Friedman2026ActiveInferenceMultiTrack124 Computational Paper Abstract This public exemplar binds 7 pipeline tracks — Lean, analytical Python, pymdp sophisticated inference, GNN, ontology concordance, visualizations, and the sheaf manuscript composer — declared in tracks.yaml (../tracks.yaml). Flat manuscript sections follow an IMRAD outline (Introduction, Methods, Results, Discussion, plus appendix) assembled from 10 sheaf fragment types registered in manuscript/sheaf/tracks.yaml (sheaf/tracks.yaml). The first page (00 00 sheaf coverage.md (00 00 sheaf coverage.md)) shows a 16-row coverage matrix (4 IMRAD group headers and 12 composed subsections, including a full-track appendix proof) regenerated from the live manifest at compose time. The T-maze demo aligns with pymdp sophisticated inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated inference). Measured invariant checks: 12 / 12 passed. SI pl active inference pymdp sophisticated inference generalized notation notation lean active inference pymdp sophisticated inference generalized notation notation lean"
     },
     {
       "id": "work:Friedman2026BeeStackEvidenceTypedScaffold125",
@@ -3254,7 +3254,7 @@
       "type": "work",
       "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
       "url": "/works/Friedman2026SelfImprovementAgentHarness127.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20453880",
+      "external_url": "https://doi.org/10.5281/zenodo.20453879",
       "summary": "Abstract This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini class",
       "year": 2026,
       "domain": "Computational",
@@ -3267,7 +3267,7 @@
         "reproducible research",
         "agent evaluation"
       ],
-      "content": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar Zenodo 10.5281/zenodo.20453880 Friedman2026SelfImprovementAgentHarness127 Computational Paper Abstract This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run snapshot. Task mini classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z generate manuscript variables.py after analysis. Keywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops --- Associated artifacts GitHub release: v0.1.0 (https://github.com/docxology/template/releases/tag/v0.1.0) PDF SHA-256: 7087b6d1dd2e6192b24055408935201c27d7e19ba26267a366b20b2c71b7a721 self-improvement agents benchmark harness reproducible research agent evaluation self-improvement agents benchmark harness reproducible research agent evaluation"
+      "content": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar Zenodo 10.5281/zenodo.20453879 Friedman2026SelfImprovementAgentHarness127 Computational Paper Abstract This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run snapshot. Task mini classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z generate manuscript variables.py after analysis. Keywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops --- Associated artifacts GitHub release: v0.1.0 (https://github.com/docxology/template/releases/tag/v0.1.0) PDF SHA-256: 7087b6d1dd2e6192b24055408935201c27d7e19ba26267a366b20b2c71b7a721 self-improvement agents benchmark harness reproducible research agent evaluation self-improvement agents benchmark harness reproducible research agent evaluation"
     },
     {
       "id": "work:Friedman2025BiofirmDevelopmentFirstPrinciples128",
@@ -3703,7 +3703,7 @@
       "type": "work",
       "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
       "url": "/works/Friedman2026DeterministicTestbedSelfOrganizing151.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20533670",
+      "external_url": "https://doi.org/10.5281/zenodo.20533669",
       "summary": "Abstract Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end direc",
       "year": 2026,
       "domain": "Computational",
@@ -3718,7 +3718,7 @@
         "reproducible research",
         "language-model agents"
       ],
-      "content": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination Zenodo 10.5281/zenodo.20533670 Friedman2026DeterministicTestbedSelfOrganizing151 Computational Paper Abstract Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim. We make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers an agent coordination scientific discovery noise-band confirmation ablation study reproducible research language-model agents agent coordination scientific discovery noise-band confirmation ablation study reproducible research"
+      "content": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination Zenodo 10.5281/zenodo.20533669 Friedman2026DeterministicTestbedSelfOrganizing151 Computational Paper Abstract Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim. We make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers an agent coordination scientific discovery noise-band confirmation ablation study reproducible research language-model agents agent coordination scientific discovery noise-band confirmation ablation study reproducible research"
     },
     {
       "id": "work:Friedman2026RecoveringLLMPersonaAccuracies152",
@@ -3749,7 +3749,7 @@
       "type": "work",
       "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "url": "/works/Friedman2026TriplicateDataDrivenLarge153.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20533676",
+      "external_url": "https://doi.org/10.5281/zenodo.20533675",
       "summary": "Abstract We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage",
       "year": 2026,
       "domain": "Computational",
@@ -3763,14 +3763,14 @@
         "reproducible publishing",
         "document engineering"
       ],
-      "content": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine Zenodo 10.5281/zenodo.20533676 Friedman2026TriplicateDataDrivenLarge153 Computational Paper Abstract We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879). The engine demonstrates designed multi-column page layout — nameplate and ears, spanning headlines, flowing column frames with an optional rail, drop caps, pull quotes, ruled modular boxes, data tables, halftone \"engraving\" figures and running folios — while keeping a strict separation between content (data) and engine (code): a new title is a data edit, never a code change. The layout strategy is a hybrid in which fixed furniture is drawn directly on the canvas to establish where the column grid begins, after which body copy flows through ReportLab frames that split paragraphs across columns automati newspaper layout typography reportlab reproducible publishing document engineering newspaper layout typography reportlab reproducible publishing document engineering"
+      "content": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine Zenodo 10.5281/zenodo.20533675 Friedman2026TriplicateDataDrivenLarge153 Computational Paper Abstract We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879). The engine demonstrates designed multi-column page layout — nameplate and ears, spanning headlines, flowing column frames with an optional rail, drop caps, pull quotes, ruled modular boxes, data tables, halftone \"engraving\" figures and running folios — while keeping a strict separation between content (data) and engine (code): a new title is a data edit, never a code change. The layout strategy is a hybrid in which fixed furniture is drawn directly on the canvas to establish where the column grid begins, after which body copy flows through ReportLab frames that split paragraphs across columns automati newspaper layout typography reportlab reproducible publishing document engineering newspaper layout typography reportlab reproducible publishing document engineering"
     },
     {
       "id": "work:Friedman2026TemplateTextbook154",
       "type": "work",
       "title": "The Template Textbook",
       "url": "/works/Friedman2026TemplateTextbook154.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20533126",
+      "external_url": "https://doi.org/10.5281/zenodo.20533125",
       "summary": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/",
       "year": 2026,
       "domain": "Computational",
@@ -3784,7 +3784,7 @@
         "computational backbone",
         "Python"
       ],
-      "content": "The Template Textbook Zenodo 10.5281/zenodo.20533126 Friedman2026TemplateTextbook154 Computational Book A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. open textbook modular manuscript reproducible publishing computational backbone Python open textbook modular manuscript reproducible publishing computational backbone Python"
+      "content": "The Template Textbook Zenodo 10.5281/zenodo.20533125 Friedman2026TemplateTextbook154 Computational Book A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. open textbook modular manuscript reproducible publishing computational backbone Python open textbook modular manuscript reproducible publishing computational backbone Python"
     },
     {
       "id": "work:Friedman2016LessonsFromColony155",
@@ -4019,7 +4019,7 @@
       "type": "work",
       "title": "GeneralizedNotationNotation (GNN)",
       "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20671741",
+      "external_url": "https://doi.org/10.5281/zenodo.7803313",
       "summary": "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interopera",
       "year": 2026,
       "domain": "Active Inference",
@@ -4036,7 +4036,31 @@
         "bayesian inference",
         "standards"
       ],
-      "content": "GeneralizedNotationNotation (GNN) Zenodo 10.5281/zenodo.20671741 Friedman2026GeneralizedNotationNotationGNN168 Active Inference Paper Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a \"Triple Play\" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models. active inference generative models cognitive modeling notation system reproducibility computational neuroscience bayesian inference standards gnn python active inference generative models cognitive modeling notation system reproducibility"
+      "content": "GeneralizedNotationNotation (GNN) Zenodo 10.5281/zenodo.7803313 Friedman2026GeneralizedNotationNotationGNN168 Active Inference Paper Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a \"Triple Play\" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models. active inference generative models cognitive modeling notation system reproducibility computational neuroscience bayesian inference standards gnn python active inference generative models cognitive modeling notation system reproducibility"
+    },
+    {
+      "id": "work:Friedman2026COGANTDeterministicCodebaseGNN169",
+      "type": "work",
+      "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+      "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20705351",
+      "summary": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN — Generali",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "program analysis",
+        "Generalized Notation Notation (GNN)",
+        "intermediate representation",
+        "code property graph",
+        "active inference",
+        "reproducible research",
+        "codebase-to-model translation",
+        "cognitive ecosystem modeling"
+      ],
+      "content": "COGANT: Deterministic Codebase-to-GNN Translation Zenodo 10.5281/zenodo.20705351 Friedman2026COGANTDeterministicCodebaseGNN169 Computational Paper COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN — Generalized Notation Notation , not graph neural networks). It is best understood as an evidence compiler : it propagates reviewable program facts through a fixpoint rule pipeline (in the tradition of fixpoint program analysis) and emits graph, matrix, provenance, visualization, and roundtrip artifacts rather than a single opaque embedding or proof. A program-graph intermediate representation (IR) carries confidence and provenance; a fixpoint translation engine applies 22 declarative rules mapping nodes onto 7 Active Inference mapping kinds . Each emitted bundle includes a seed-induced structural partition using Markov-blanket role vocabulary, and a reverse synthesizer reconstruc program analysis Generalized Notation Notation (GNN) intermediate representation code property graph active inference reproducible research codebase-to-model translation cognitive ecosystem modeling program analysis — fixpoint propagation of reviewable program facts Generalized Notation Notation (GNN) — Active Inference model artifact format intermediate representation — confidence- and provenance-carrying program graph active inference — 7 mapping kinds; Markov-blanket structural partition reproducible research — forward→reverse→forward roundtrip evidence"
     },
     {
       "id": "software:docxology:template",

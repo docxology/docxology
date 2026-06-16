@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420342.svg)](https://doi.org/10.5281/zenodo.20420342)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20417104.svg)](https://doi.org/10.5281/zenodo.20417104)
 
 ---
 
@@ -35,7 +35,7 @@ prose analysis · readability · editorial review · reproducible research · ma
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20420342](https://doi.org/10.5281/zenodo.20420342) |
+| **DOI** | [10.5281/zenodo.20417104](https://doi.org/10.5281/zenodo.20417104) |
 | **Published** | 2026 |
 | **Version** | 0.4.0 |
 | **Zenodo record** | https://zenodo.org/records/20420342 |
@@ -48,7 +48,7 @@ prose analysis · readability · editorial review · reproducible research · ma
 
 ## Citation
 
-> Friedman, D. A. (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.20420342
+> Friedman, D. A. (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.20417104
 
 ## Related
 

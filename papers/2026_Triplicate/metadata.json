@@ -1,8 +1,8 @@
 {
   "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
   "version": "1.0.0",
-  "doi": "10.5281/zenodo.20533676",
-  "doi_url": "https://doi.org/10.5281/zenodo.20533676",
+  "doi": "10.5281/zenodo.20533675",
+  "doi_url": "https://doi.org/10.5281/zenodo.20533675",
   "zenodo_record": "https://zenodo.org/records/20533676",
   "record_id": "20533676",
   "publication_date": "2026-06-03",
@@ -53,7 +53,7 @@
   "checked_at": "2026-06-04T20:45:06Z",
   "accepted_pairings": [
     {
-      "doi": "10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533675",
       "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "zenodo_record_url": "https://zenodo.org/records/20533676",
       "github_repo": "docxology/template",
@@ -75,7 +75,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533675",
       "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "zenodo_record_url": "https://zenodo.org/records/20533676",
       "github_repo": "docxology/template",
@@ -97,7 +97,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533675",
       "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "zenodo_record_url": "https://zenodo.org/records/20533676",
       "github_repo": "docxology/template",
@@ -119,7 +119,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533675",
       "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "zenodo_record_url": "https://zenodo.org/records/20533676",
       "github_repo": "docxology/template",
@@ -141,7 +141,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533675",
       "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "zenodo_record_url": "https://zenodo.org/records/20533676",
       "github_repo": "docxology/template",
@@ -163,7 +163,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20533676",
+      "doi": "10.5281/zenodo.20533675",
       "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "zenodo_record_url": "https://zenodo.org/records/20533676",
       "github_repo": "docxology/template",

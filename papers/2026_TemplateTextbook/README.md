@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20533126.svg)](https://doi.org/10.5281/zenodo.20533126)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20533125.svg)](https://doi.org/10.5281/zenodo.20533125)
 
 ---
 
@@ -18,7 +18,7 @@ open textbook · modular manuscript · reproducible publishing · computational 
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126) |
+| **DOI** | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) |
 | **Published** | 2026-06-03 |
 | **Version** | 0.1 |
 | **Zenodo record** | https://zenodo.org/records/20533126 |
@@ -31,7 +31,7 @@ open textbook · modular manuscript · reproducible publishing · computational 
 
 ## Citation
 
-> Friedman, D. A. (2026). *The Template Textbook*. Zenodo. https://doi.org/10.5281/zenodo.20533126
+> Friedman, D. A. (2026). *The Template Textbook*. Zenodo. https://doi.org/10.5281/zenodo.20533125
 
 ## Related
 

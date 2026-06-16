@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20671741.svg)](https://doi.org/10.5281/zenodo.20671741)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7803313.svg)](https://doi.org/10.5281/zenodo.7803313)
 
 ---
 
@@ -18,7 +18,7 @@ active inference · generative models · cognitive modeling · notation system �
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20671741](https://doi.org/10.5281/zenodo.20671741) |
+| **DOI** | [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313) |
 | **Published** | 2026-06-12 |
 | **Version** | v2.0.0 |
 | **Zenodo record** | https://zenodo.org/records/20671741 |
@@ -29,7 +29,7 @@ active inference · generative models · cognitive modeling · notation system �
 
 ## Citation
 
-> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. https://doi.org/10.5281/zenodo.20671741
+> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. https://doi.org/10.5281/zenodo.7803313
 
 ## Related
 

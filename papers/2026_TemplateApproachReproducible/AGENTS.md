@@ -1,7 +1,7 @@
 # AGENTS.md - A template/ approach to Reproducible Generative Research
 
 **Paper**: A template/ approach to Reproducible Generative Research (2026)
-**DOI**: [10.5281/zenodo.20420387](https://doi.org/10.5281/zenodo.20420387)
+**DOI**: [10.5281/zenodo.20419007](https://doi.org/10.5281/zenodo.20419007)
 **GitHub release**: https://github.com/docxology/template_template/releases/tag/v1.0.6
 
 ---

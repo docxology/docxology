@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20533676.svg)](https://doi.org/10.5281/zenodo.20533676)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20533675.svg)](https://doi.org/10.5281/zenodo.20533675)
 
 ---
 
@@ -38,7 +38,7 @@ newspaper layout · typography · reportlab · reproducible publishing · docume
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676) |
+| **DOI** | [10.5281/zenodo.20533675](https://doi.org/10.5281/zenodo.20533675) |
 | **Published** | 2026-06-03 |
 | **Version** | 1.0.0 |
 | **Zenodo record** | https://zenodo.org/records/20533676 |
@@ -51,7 +51,7 @@ newspaper layout · typography · reportlab · reproducible publishing · docume
 
 ## Citation
 
-> Friedman, D. A. (2026). *The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine*. Zenodo. https://doi.org/10.5281/zenodo.20533676
+> Friedman, D. A. (2026). *The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine*. Zenodo. https://doi.org/10.5281/zenodo.20533675
 
 ## Related
 

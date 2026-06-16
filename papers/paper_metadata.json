@@ -2027,7 +2027,7 @@
       "human review",
       "local artifact integrity"
     ],
-    "doi": "10.5281/zenodo.20420357",
+    "doi": "10.5281/zenodo.20417016",
     "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0"
   },
   "2026_ConvergenceAnalysisGradient": {
@@ -2046,7 +2046,7 @@
       "reproducible research",
       "infrastructure automation"
     ],
-    "doi": "10.5281/zenodo.20420368",
+    "doi": "10.5281/zenodo.20417136",
     "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.5.0"
   },
   "2026_EditorialQualityAt": {
@@ -2063,7 +2063,7 @@
       "reproducible research",
       "manuscript quality"
     ],
-    "doi": "10.5281/zenodo.20420342",
+    "doi": "10.5281/zenodo.20417104",
     "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.4.0"
   },
   "2026_TemplateApproachReproducible": {
@@ -2087,7 +2087,7 @@
       "FAIR4RS",
       "research software engineering"
     ],
-    "doi": "10.5281/zenodo.20420387",
+    "doi": "10.5281/zenodo.20419007",
     "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.6"
   },
   "2026_ActiveInferenceMulti": {
@@ -2104,7 +2104,7 @@
       "generalized notation notation",
       "lean"
     ],
-    "doi": "10.5281/zenodo.20420352",
+    "doi": "10.5281/zenodo.20417021",
     "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.0"
   },
   "2026_BeeStack": {
@@ -2166,7 +2166,7 @@
       "reproducible research",
       "agent evaluation"
     ],
-    "doi": "10.5281/zenodo.20453880"
+    "doi": "10.5281/zenodo.20453879"
   },
   "2025_BiofirmDevelopmentWith": {
     "year": "2025",
@@ -2472,7 +2472,7 @@
       "reproducible research",
       "language-model agents"
     ],
-    "doi": "10.5281/zenodo.20533670",
+    "doi": "10.5281/zenodo.20533669",
     "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0"
   },
   "2026_RecoveringLLMPersona": {
@@ -2513,7 +2513,7 @@
       "reproducible publishing",
       "document engineering"
     ],
-    "doi": "10.5281/zenodo.20533676",
+    "doi": "10.5281/zenodo.20533675",
     "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.0"
   },
   "2026_TemplateTextbook": {
@@ -2530,7 +2530,7 @@
       "computational backbone",
       "Python"
     ],
-    "doi": "10.5281/zenodo.20533126",
+    "doi": "10.5281/zenodo.20533125",
     "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.0"
   },
   "2026_ITrace": {
@@ -2611,6 +2611,6 @@
       "gnn",
       "python"
     ],
-    "doi": "10.5281/zenodo.20671741"
+    "doi": "10.5281/zenodo.7803313"
   }
 }

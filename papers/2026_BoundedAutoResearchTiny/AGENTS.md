@@ -1,7 +1,7 @@
 # AGENTS.md - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 
 **Paper**: Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (2026)
-**DOI**: [10.5281/zenodo.20420357](https://doi.org/10.5281/zenodo.20420357)
+**DOI**: [10.5281/zenodo.20417016](https://doi.org/10.5281/zenodo.20417016)
 **GitHub release**: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0
 
 ---

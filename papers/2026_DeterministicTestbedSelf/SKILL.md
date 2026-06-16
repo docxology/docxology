@@ -1,6 +1,6 @@
 ---
 name: "DeterministicTestbedSelf"
-description: "Use for A Deterministic Testbed for Self-Organizing Agent-Team Coordination, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533670."
+description: "Use for A Deterministic Testbed for Self-Organizing Agent-Team Coordination, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533669."
 tags: ["agent-coordination", "scientific-discovery", "noise-band-confirmation", "ablation-study", "reproducible-research", "language-model-agents"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["agent-coordination", "scientific-discovery", "noise-band-confirmation", 
 
 Use this skill when working with the publication **A Deterministic Testbed for Self-Organizing Agent-Team Coordination** or its paired release artifacts.
 
-1. Ground citations in DOI `10.5281/zenodo.20533670`.
+1. Ground citations in DOI `10.5281/zenodo.20533669`.
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
 3. Keep release tag `v1.0.0` and repository `docxology/template_autoscientists` linked when updating catalog surfaces.
 

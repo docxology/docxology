@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20453880.svg)](https://doi.org/10.5281/zenodo.20453880)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20453879.svg)](https://doi.org/10.5281/zenodo.20453879)
 
 ---
 
@@ -18,7 +18,7 @@ self-improvement agents · benchmark harness · reproducible research · agent e
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20453880](https://doi.org/10.5281/zenodo.20453880) |
+| **DOI** | [10.5281/zenodo.20453879](https://doi.org/10.5281/zenodo.20453879) |
 | **Published** | 2026 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/20453880 |
@@ -29,7 +29,7 @@ self-improvement agents · benchmark harness · reproducible research · agent e
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Self-Improvement Agent Harness: A Deterministic SIA Exemplar*. Zenodo. https://doi.org/10.5281/zenodo.20453880
+> Daniel Ari Friedman (2026). *Self-Improvement Agent Harness: A Deterministic SIA Exemplar*. Zenodo. https://doi.org/10.5281/zenodo.20453879
 
 ## Related
 

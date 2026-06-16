@@ -1,7 +1,7 @@
 # AGENTS.md - A Deterministic Testbed for Self-Organizing Agent-Team Coordination
 
 **Paper**: A Deterministic Testbed for Self-Organizing Agent-Team Coordination (2026)
-**DOI**: [10.5281/zenodo.20533670](https://doi.org/10.5281/zenodo.20533670)
+**DOI**: [10.5281/zenodo.20533669](https://doi.org/10.5281/zenodo.20533669)
 **GitHub release**: https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0
 
 ---

@@ -214,10 +214,11 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes | *ArXiv* | [10.48550/arXiv.2505.17500](https://doi.org/10.48550/arXiv.2505.17500) |
 | 2025 | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | *Zenodo* | [10.5281/zenodo.16790554](https://doi.org/10.5281/zenodo.16790554) |
 | 2025 | Markdown Decision Process: A Framework for Probabilistic Document Analysis | *Zenodo* | [10.5281/zenodo.17244386](https://doi.org/10.5281/zenodo.17244386) |
-| 2026 | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533670](https://doi.org/10.5281/zenodo.20533670) |
+| 2026 | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533669](https://doi.org/10.5281/zenodo.20533669) |
 | 2026 | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) |
-| 2026 | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676) |
-| 2026 | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533126](https://doi.org/10.5281/zenodo.20533126) |
+| 2026 | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533675](https://doi.org/10.5281/zenodo.20533675) |
+| 2026 | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) |
+| 2026 | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351) |
 
 #### 🔧 Highlighted Repositories
 

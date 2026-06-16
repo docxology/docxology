@@ -1,7 +1,7 @@
 # AGENTS.md - The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine
 
 **Paper**: The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine (2026)
-**DOI**: [10.5281/zenodo.20533676](https://doi.org/10.5281/zenodo.20533676)
+**DOI**: [10.5281/zenodo.20533675](https://doi.org/10.5281/zenodo.20533675)
 **GitHub release**: https://github.com/docxology/template_newspaper/releases/tag/v1.0.0
 
 ---

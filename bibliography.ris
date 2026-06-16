@@ -1408,8 +1408,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 T2  - Zenodo
-DO  - 10.5281/zenodo.20420357
-UR  - https://doi.org/10.5281/zenodo.20420357
+DO  - 10.5281/zenodo.20417016
+UR  - https://doi.org/10.5281/zenodo.20417016
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/
@@ -1420,8 +1420,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Convergence Analysis of Gradient Descent Optimization
 T2  - Zenodo
-DO  - 10.5281/zenodo.20420368
-UR  - https://doi.org/10.5281/zenodo.20420368
+DO  - 10.5281/zenodo.20417136
+UR  - https://doi.org/10.5281/zenodo.20417136
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/
@@ -1432,8 +1432,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
 T2  - Zenodo
-DO  - 10.5281/zenodo.20420342
-UR  - https://doi.org/10.5281/zenodo.20420342
+DO  - 10.5281/zenodo.20417104
+UR  - https://doi.org/10.5281/zenodo.20417104
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 122; docs: papers/2026_EditorialQualityAt/
@@ -1444,8 +1444,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A template/ approach to Reproducible Generative Research
 T2  - Zenodo
-DO  - 10.5281/zenodo.20420387
-UR  - https://doi.org/10.5281/zenodo.20420387
+DO  - 10.5281/zenodo.20419007
+UR  - https://doi.org/10.5281/zenodo.20419007
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 123; docs: papers/2026_TemplateApproachReproducible/
@@ -1456,8 +1456,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Active Inference Multi-Track Exemplar
 T2  - Zenodo
-DO  - 10.5281/zenodo.20420352
-UR  - https://doi.org/10.5281/zenodo.20420352
+DO  - 10.5281/zenodo.20417021
+UR  - https://doi.org/10.5281/zenodo.20417021
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 124; docs: papers/2026_ActiveInferenceMulti/
@@ -1492,8 +1492,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Self-Improvement Agent Harness: A Deterministic SIA Exemplar
 T2  - Zenodo
-DO  - 10.5281/zenodo.20453880
-UR  - https://doi.org/10.5281/zenodo.20453880
+DO  - 10.5281/zenodo.20453879
+UR  - https://doi.org/10.5281/zenodo.20453879
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 127; docs: papers/2026_SelfImprovementAgent/
@@ -1780,8 +1780,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A Deterministic Testbed for Self-Organizing Agent-Team Coordination
 T2  - Zenodo
-DO  - 10.5281/zenodo.20533670
-UR  - https://doi.org/10.5281/zenodo.20533670
+DO  - 10.5281/zenodo.20533669
+UR  - https://doi.org/10.5281/zenodo.20533669
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 151; docs: papers/2026_DeterministicTestbedSelf/
@@ -1804,8 +1804,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine
 T2  - Zenodo
-DO  - 10.5281/zenodo.20533676
-UR  - https://doi.org/10.5281/zenodo.20533676
+DO  - 10.5281/zenodo.20533675
+UR  - https://doi.org/10.5281/zenodo.20533675
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 153; docs: papers/2026_Triplicate/
@@ -1816,8 +1816,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Template Textbook
 T2  - Zenodo
-DO  - 10.5281/zenodo.20533126
-UR  - https://doi.org/10.5281/zenodo.20533126
+DO  - 10.5281/zenodo.20533125
+UR  - https://doi.org/10.5281/zenodo.20533125
 KW  - Computational
 KW  - Book
 N1  - Catalog row 154; docs: papers/2026_TemplateTextbook/
@@ -1978,9 +1978,21 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - GeneralizedNotationNotation (GNN)
 T2  - Zenodo
-DO  - 10.5281/zenodo.20671741
-UR  - https://doi.org/10.5281/zenodo.20671741
+DO  - 10.5281/zenodo.7803313
+UR  - https://doi.org/10.5281/zenodo.7803313
 KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 168; docs: papers/2026_GeneralizedNotationNotationGNN/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - COGANT: Deterministic Codebase-to-GNN Translation
+T2  - Zenodo
+DO  - 10.5281/zenodo.20705351
+UR  - https://doi.org/10.5281/zenodo.20705351
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 169; docs: papers/2026_COGANT/
 ER  -

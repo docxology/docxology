@@ -4,8 +4,8 @@ type: article
 title: "GeneralizedNotationNotation (GNN)"
 version: "v2.0.0"
 date-released: 2026-06-12
-doi: 10.5281/zenodo.20671741
-url: "https://doi.org/10.5281/zenodo.20671741"
+doi: 10.5281/zenodo.7803313
+url: "https://doi.org/10.5281/zenodo.7803313"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
@@ -14,7 +14,7 @@ authors:
     given-names: The GeneralizedNotationNotation Community
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20671741
+    value: 10.5281/zenodo.7803313
     description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/20671741"

@@ -1,8 +1,8 @@
 {
   "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
   "version": "0.4.0",
-  "doi": "10.5281/zenodo.20420342",
-  "doi_url": "https://doi.org/10.5281/zenodo.20420342",
+  "doi": "10.5281/zenodo.20417104",
+  "doi_url": "https://doi.org/10.5281/zenodo.20417104",
   "zenodo_record": "https://zenodo.org/records/20420342",
   "record_id": "20420342",
   "publication_date": "2026",
@@ -56,7 +56,7 @@
   "checked_at": "2026-06-04T20:45:04Z",
   "accepted_pairings": [
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template",
@@ -78,7 +78,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template",
@@ -100,7 +100,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template",
@@ -122,7 +122,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template",
@@ -144,7 +144,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template",
@@ -166,7 +166,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template",
@@ -188,7 +188,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template_prose_project",
@@ -211,7 +211,7 @@
       "source_report": "reports/paired_publications_2026-06-04.json"
     },
     {
-      "doi": "10.5281/zenodo.20420342",
+      "doi": "10.5281/zenodo.20417104",
       "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "zenodo_record_url": "https://zenodo.org/records/20420342",
       "github_repo": "docxology/template_prose_project",

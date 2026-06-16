@@ -4,15 +4,15 @@ type: article
 title: "Self-Improvement Agent Harness: A Deterministic SIA Exemplar"
 version: "0.1.0"
 date-released: 2026
-doi: 10.5281/zenodo.20453880
-url: "https://doi.org/10.5281/zenodo.20453880"
+doi: 10.5281/zenodo.20453879
+url: "https://doi.org/10.5281/zenodo.20453879"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20453880
+    value: 10.5281/zenodo.20453879
     description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/20453880"
