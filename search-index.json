@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T12:51:37Z",
+  "generated_at": "2026-06-17T12:54:14Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11311,7 +11311,7 @@
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 151 per-paper documentation folders.",
+      "title": "The repository contains 152 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11319,7 +11319,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 151 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 152 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
