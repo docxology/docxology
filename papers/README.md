@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (151)
+## Papers (152)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -121,47 +121,48 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 108 | [2026_BlakeJiang](2026_BlakeJiang/) | ✅ | 2026 | BlakeJiang |
 | 109 | [2026_CrescentCity](2026_CrescentCity/) | ✅ | 2026 | CrescentCity |
 | 110 | [2026_BiologyTextbook](2026_BiologyTextbook/) | ✅ | 2026 | BiologyTextbook |
-| 112 | [2026_PolicyEntanglementActive](2026_PolicyEntanglementActive/) | ✅ | 2026 | PolicyEntanglementActive |
-| 113 | [2026_BoundedAutoResearchTiny](2026_BoundedAutoResearchTiny/) | ✅ | 2026 | BoundedAutoResearchTiny |
-| 114 | [2026_ConvergenceAnalysisGradient](2026_ConvergenceAnalysisGradient/) | ✅ | 2026 | ConvergenceAnalysisGradient |
-| 115 | [2026_EditorialQualityAt](2026_EditorialQualityAt/) | ✅ | 2026 | EditorialQualityAt |
-| 116 | [2026_TemplateApproachReproducible](2026_TemplateApproachReproducible/) | ✅ | 2026 | TemplateApproachReproducible |
-| 117 | [2026_ActiveInferenceMulti](2026_ActiveInferenceMulti/) | ✅ | 2026 | ActiveInferenceMulti |
-| 118 | [2026_BeeStack](2026_BeeStack/) | ✅ | 2026 | BeeStack |
-| 119 | [2026_WhenDoBugs](2026_WhenDoBugs/) | ✅ | 2026 | WhenDoBugs |
-| 120 | [2026_SelfImprovementAgent](2026_SelfImprovementAgent/) | ✅ | 2026 | SelfImprovementAgent |
-| 121 | [2025_BiofirmDevelopmentWith](2025_BiofirmDevelopmentWith/) | — | 2025 | BiofirmDevelopmentWith |
-| 122 | [2025_ConCatEnate](2025_ConCatEnate/) | ✅ | 2025 | ConCatEnate |
-| 123 | [2025_Graphspeak](2025_Graphspeak/) | ✅ | 2025 | Graphspeak |
-| 124 | [2025_BevCycPositPrimitive](2025_BevCycPositPrimitive/) | ✅ | 2025 | BevCycPositPrimitive |
-| 125 | [2025_BeaconsPreEmulation](2025_BeaconsPreEmulation/) | ✅ | 2025 | BeaconsPreEmulation |
-| 126 | [2025_ConCatEnate2](2025_ConCatEnate2/) | ✅ | 2025 | ConCatEnate2 |
-| 127 | [2024_PushPull](2024_PushPull/) | ✅ | 2024 | PushPull |
-| 128 | [2023_NaturalAIBased](2023_NaturalAIBased/) | ✅ | 2023 | NaturalAIBased |
-| 129 | [2023_ATLAS2](2023_ATLAS2/) | ✅ | 2023 | ATLAS2 |
-| 130 | [2023_TranscriptActiveInference](2023_TranscriptActiveInference/) | ✅ | 2023 | TranscriptActiveInference |
-| 131 | [2023_ModernNostrIndex](2023_ModernNostrIndex/) | ✅ | 2023 | ModernNostrIndex |
-| 132 | [2023_SlidesIris](2023_SlidesIris/) | ✅ | 2023 | SlidesIris |
-| 133 | [2022_CanonicalNeuralNetworks](2022_CanonicalNeuralNetworks/) | — | 2022 | CanonicalNeuralNetworks |
-| 134 | [2022_InteroceptionAsModeling](2022_InteroceptionAsModeling/) | — | 2022 | InteroceptionAsModeling |
-| 135 | [2022_Transcript](2022_Transcript/) | — | 2022 | Transcript |
-| 136 | [2022_WorkedExampleBayesian](2022_WorkedExampleBayesian/) | — | 2022 | WorkedExampleBayesian |
-| 137 | [2022_TranscriptDiscussions](2022_TranscriptDiscussions/) | — | 2022 | TranscriptDiscussions |
-| 138 | [2022_TrackingPublicSensemaking](2022_TrackingPublicSensemaking/) | ✅ | 2022 | TrackingPublicSensemaking |
-| 139 | [2021_Transcript](2021_Transcript/) | ✅ | 2021 | Transcript |
-| 140 | [2021_CollaborativeWritingCatechism](2021_CollaborativeWritingCatechism/) | ✅ | 2021 | CollaborativeWritingCatechism |
-| 141 | [2020_ReimaginingMaps](2020_ReimaginingMaps/) | ✅ | 2020 | ReimaginingMaps |
-| 142 | [2020_InfiniteGamesInfinite](2020_InfiniteGamesInfinite/) | ✅ | 2020 | InfiniteGamesInfinite |
-| 143 | [2026_MusicNeverStopped](2026_MusicNeverStopped/) | ✅ | 2026 | MusicNeverStopped |
-| 144 | [2026_DeterministicTestbedSelf](2026_DeterministicTestbedSelf/) | ✅ | 2026 | DeterministicTestbedSelf |
-| 145 | [2026_RecoveringLLMPersona](2026_RecoveringLLMPersona/) | ✅ | 2026 | RecoveringLLMPersona |
-| 146 | [2026_Triplicate](2026_Triplicate/) | ✅ | 2026 | Triplicate |
-| 147 | [2026_TemplateTextbook](2026_TemplateTextbook/) | ✅ | 2026 | TemplateTextbook |
-| 148 | [2026_ITrace](2026_ITrace/) | ✅ | 2026 | ITrace |
-| 149 | [2026_DemoCreate](2026_DemoCreate/) | ✅ | 2026 | DemoCreate |
-| 150 | [2026_ENTO](2026_ENTO/) | ✅ | 2026 | ENTO |
-| 151 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
-| 152 | [2026_COGANT](2026_COGANT/) | — | 2026 | COGANT |
+| 111 | [2026_PolicyEntanglementActive](2026_PolicyEntanglementActive/) | ✅ | 2026 | PolicyEntanglementActive |
+| 112 | [2026_BoundedAutoResearchTiny](2026_BoundedAutoResearchTiny/) | ✅ | 2026 | BoundedAutoResearchTiny |
+| 113 | [2026_ConvergenceAnalysisGradient](2026_ConvergenceAnalysisGradient/) | ✅ | 2026 | ConvergenceAnalysisGradient |
+| 114 | [2026_EditorialQualityAt](2026_EditorialQualityAt/) | ✅ | 2026 | EditorialQualityAt |
+| 115 | [2026_TemplateApproachReproducible](2026_TemplateApproachReproducible/) | ✅ | 2026 | TemplateApproachReproducible |
+| 116 | [2026_ActiveInferenceMulti](2026_ActiveInferenceMulti/) | ✅ | 2026 | ActiveInferenceMulti |
+| 117 | [2026_BeeStack](2026_BeeStack/) | ✅ | 2026 | BeeStack |
+| 118 | [2026_WhenDoBugs](2026_WhenDoBugs/) | ✅ | 2026 | WhenDoBugs |
+| 119 | [2026_SelfImprovementAgent](2026_SelfImprovementAgent/) | ✅ | 2026 | SelfImprovementAgent |
+| 120 | [2025_BiofirmDevelopmentWith](2025_BiofirmDevelopmentWith/) | — | 2025 | BiofirmDevelopmentWith |
+| 121 | [2025_ConCatEnate](2025_ConCatEnate/) | ✅ | 2025 | ConCatEnate |
+| 122 | [2025_Graphspeak](2025_Graphspeak/) | ✅ | 2025 | Graphspeak |
+| 123 | [2025_BevCycPositPrimitive](2025_BevCycPositPrimitive/) | ✅ | 2025 | BevCycPositPrimitive |
+| 124 | [2025_BeaconsPreEmulation](2025_BeaconsPreEmulation/) | ✅ | 2025 | BeaconsPreEmulation |
+| 125 | [2025_ConCatEnate2](2025_ConCatEnate2/) | ✅ | 2025 | ConCatEnate2 |
+| 126 | [2024_PushPull](2024_PushPull/) | ✅ | 2024 | PushPull |
+| 127 | [2023_NaturalAIBased](2023_NaturalAIBased/) | ✅ | 2023 | NaturalAIBased |
+| 128 | [2023_ATLAS2](2023_ATLAS2/) | ✅ | 2023 | ATLAS2 |
+| 129 | [2023_TranscriptActiveInference](2023_TranscriptActiveInference/) | ✅ | 2023 | TranscriptActiveInference |
+| 130 | [2023_ModernNostrIndex](2023_ModernNostrIndex/) | ✅ | 2023 | ModernNostrIndex |
+| 131 | [2023_SlidesIris](2023_SlidesIris/) | ✅ | 2023 | SlidesIris |
+| 132 | [2022_CanonicalNeuralNetworks](2022_CanonicalNeuralNetworks/) | — | 2022 | CanonicalNeuralNetworks |
+| 133 | [2022_InteroceptionAsModeling](2022_InteroceptionAsModeling/) | — | 2022 | InteroceptionAsModeling |
+| 134 | [2022_Transcript](2022_Transcript/) | — | 2022 | Transcript |
+| 135 | [2022_WorkedExampleBayesian](2022_WorkedExampleBayesian/) | — | 2022 | WorkedExampleBayesian |
+| 136 | [2022_TranscriptDiscussions](2022_TranscriptDiscussions/) | — | 2022 | TranscriptDiscussions |
+| 137 | [2022_TrackingPublicSensemaking](2022_TrackingPublicSensemaking/) | ✅ | 2022 | TrackingPublicSensemaking |
+| 138 | [2021_Transcript](2021_Transcript/) | ✅ | 2021 | Transcript |
+| 139 | [2021_CollaborativeWritingCatechism](2021_CollaborativeWritingCatechism/) | ✅ | 2021 | CollaborativeWritingCatechism |
+| 140 | [2020_ReimaginingMaps](2020_ReimaginingMaps/) | ✅ | 2020 | ReimaginingMaps |
+| 141 | [2020_InfiniteGamesInfinite](2020_InfiniteGamesInfinite/) | ✅ | 2020 | InfiniteGamesInfinite |
+| 142 | [2026_MusicNeverStopped](2026_MusicNeverStopped/) | ✅ | 2026 | MusicNeverStopped |
+| 143 | [2026_DeterministicTestbedSelf](2026_DeterministicTestbedSelf/) | ✅ | 2026 | DeterministicTestbedSelf |
+| 144 | [2026_RecoveringLLMPersona](2026_RecoveringLLMPersona/) | ✅ | 2026 | RecoveringLLMPersona |
+| 145 | [2026_Triplicate](2026_Triplicate/) | ✅ | 2026 | Triplicate |
+| 146 | [2026_TemplateTextbook](2026_TemplateTextbook/) | ✅ | 2026 | TemplateTextbook |
+| 147 | [2026_ITrace](2026_ITrace/) | ✅ | 2026 | ITrace |
+| 148 | [2026_DemoCreate](2026_DemoCreate/) | ✅ | 2026 | DemoCreate |
+| 149 | [2026_ENTO](2026_ENTO/) | ✅ | 2026 | ENTO |
+| 150 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
+| 151 | [2026_COGANT](2026_COGANT/) | — | 2026 | COGANT |
+| 152 | [2026_AGEINT](2026_AGEINT/) | ✅ | 2026 | AGEINT |
 ## Scripts
 
 | Script | Purpose |

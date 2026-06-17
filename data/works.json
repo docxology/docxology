@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T03:36:09Z",
+  "generated_at": "2026-06-17T12:38:01Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 168,
+  "count": 169,
   "works": [
     {
       "num": 1,
@@ -2353,6 +2353,20 @@
       "url": "https://doi.org/10.5281/zenodo.20705351",
       "doi": "10.5281/zenodo.20705351",
       "docs_path": "papers/2026_COGANT/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 170,
+      "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "AGEINT: Agentic Intelligence",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20732275",
+      "doi": "10.5281/zenodo.20732275",
+      "docs_path": "papers/2026_AGEINT/",
       "has_paper_folder": true
     }
   ]

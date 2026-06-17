@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T03:36:10Z",
+  "generated_at": "2026-06-17T12:51:23Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 168,
+  "count": 169,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3776,6 +3776,31 @@
       ],
       "methods": [],
       "source": "papers/2026_COGANT/README.md"
+    },
+    "Friedman2026AGEINTAgenticIntelligence170": {
+      "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+      "abstract": "Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the page. It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source identities, then asks the reader to inspect the same things an instructor or assurance reviewer would inspect: the part map that frames the domain, the module overview that names the learner task, the source spine that separates official, standards, scholarly, public-domain, practitioner, vendor, and provenance-only support while separating source quality from narrative fluency, the evidence packet that a student would retain, the reviewer challeng",
+      "keywords": [
+        "agentic intelligence",
+        "AGEINT",
+        "AI agents",
+        "intelligence tradecraft",
+        "cognitive security",
+        "structured analytic techniques",
+        "active inference",
+        "model context protocol",
+        "multi-agent systems",
+        "operational governance"
+      ],
+      "findings": [
+        "agentic intelligence",
+        "AGEINT",
+        "AI agents",
+        "intelligence tradecraft",
+        "cognitive security"
+      ],
+      "methods": [],
+      "source": "papers/2026_AGEINT/README.md"
     }
   }
 }

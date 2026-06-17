@@ -2,23 +2,23 @@
   "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
   "command": "uv run python3 code/orchestrators/build_current_counts.py",
   "counts": {
-    "bibliography_docs_links": 151,
-    "bibliography_works": 168,
+    "bibliography_docs_links": 152,
+    "bibliography_works": 169,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 38,
       "Art & Synergetics": 15,
       "Cognitive Security": 30,
-      "Computational": 27,
+      "Computational": 28,
       "Entomology": 22,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
     },
     "generated_exports": {
-      "data_publications_ld_main_entity": 168,
+      "data_publications_ld_main_entity": 169,
       "data_software_json": 91,
       "data_software_ld_main_entity": 91,
-      "data_works_json": 168
+      "data_works_json": 169
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 52,
@@ -39,15 +39,15 @@
       "raw_candidates": 81
     },
     "paired_publications": {
-      "create_new": 0,
-      "github_releases": 112,
-      "needs_review": 99,
-      "pairs": 116,
-      "strong_pairs": 17,
-      "update_existing": 17,
-      "zenodo_records": 101
+      "create_new": 2,
+      "github_releases": 129,
+      "needs_review": 120,
+      "pairs": 141,
+      "strong_pairs": 21,
+      "update_existing": 19,
+      "zenodo_records": 105
     },
-    "paper_folder_docs": 151,
+    "paper_folder_docs": 152,
     "public_source_snapshot": {
       "GitHub user ActiveInferenceInstitute": 52,
       "GitHub user docxology": 307,
@@ -62,18 +62,18 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 147,
+      "Papers": 148,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2
     }
   },
-  "generated_at": "2026-06-16T03:36:11+00:00",
+  "generated_at": "2026-06-17T12:51:39+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
-    "paired_publications": "reports/paired_publications_2026-06-09.json",
+    "paired_publications": "reports/paired_publications_2026-06-17.json",
     "paper_folders": "papers/README.md",
     "public_source_snapshot": "reports/public_source_snapshot_2026-06-09.json",
     "software_catalog": "pages/SOFTWARE.md",

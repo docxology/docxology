@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-06-16T03:36:11+00:00`
+Generated: `2026-06-17T12:51:39+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,20 +25,20 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-06-09.json`
-- paired_publications: `reports/paired_publications_2026-06-09.json`
+- paired_publications: `reports/paired_publications_2026-06-17.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `168`
-- Paper-folder docs: `151`
-- Bibliography docs links: `151`
+- Bibliography works: `169`
+- Paper-folder docs: `152`
+- Bibliography docs links: `152`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `147`
+- Papers: `148`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
@@ -49,7 +49,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `38`
 - Cognitive Security: `30`
 - Art & Synergetics: `15`
-- Computational: `27`
+- Computational: `28`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
@@ -62,9 +62,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `168`
+- data_works_json: `169`
 - data_software_json: `91`
-- data_publications_ld_main_entity: `168`
+- data_publications_ld_main_entity: `169`
 - data_software_ld_main_entity: `91`
 
 ### GitHub Inventory
@@ -89,13 +89,13 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `112`
-- zenodo_records: `101`
-- pairs: `116`
-- strong_pairs: `17`
-- needs_review: `99`
-- create_new: `0`
-- update_existing: `17`
+- github_releases: `129`
+- zenodo_records: `105`
+- pairs: `141`
+- strong_pairs: `21`
+- needs_review: `120`
+- create_new: `2`
+- update_existing: `19`
 
 ### Paired Publication Decisions
 

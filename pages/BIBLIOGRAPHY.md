@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**168 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**169 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**147** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**148** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **168** works in the table below **·** **151** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **169** works in the table below **·** **151** indexed paper folders in [papers/](../papers/) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -206,6 +206,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 167 | 2026 | 💻 | Paper | ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data | *Zenodo* | [10.5281/zenodo.20647443](https://doi.org/10.5281/zenodo.20647443) | [📁](../papers/2026_ENTO/) |
 | 168 | 2026 | 🧠 | Paper | GeneralizedNotationNotation (GNN) | *Zenodo* | [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313) | [📁](../papers/2026_GeneralizedNotationNotationGNN/) |
 | 169 | 2026 | 💻 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351) | [📁](../papers/2026_COGANT/) |
+| 170 | 2026 | 💻 | Paper | AGEINT: Agentic Intelligence | *Zenodo* | [10.5281/zenodo.20732275](https://doi.org/10.5281/zenodo.20732275) | [📁](../papers/2026_AGEINT/) |
 ---
 
 ## Domain Index

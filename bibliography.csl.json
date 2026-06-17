@@ -4181,5 +4181,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20705351",
     "URL": "https://doi.org/10.5281/zenodo.20705351"
+  },
+  {
+    "id": "Friedman2026AGEINTAgenticIntelligence170",
+    "type": "article-journal",
+    "title": "AGEINT: Agentic Intelligence",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 170; docs: papers/2026_AGEINT/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20732275",
+    "URL": "https://doi.org/10.5281/zenodo.20732275"
   }
 ]

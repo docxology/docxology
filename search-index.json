@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T04:14:37Z",
+  "generated_at": "2026-06-17T12:51:37Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 677,
+  "count": 678,
   "items": [
     {
       "id": "page:home",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-16.json",
+      "url": "/reports/asset_size_2026-06-17.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -4061,6 +4061,30 @@
         "cognitive ecosystem modeling"
       ],
       "content": "COGANT: Deterministic Codebase-to-GNN Translation Zenodo 10.5281/zenodo.20705351 Friedman2026COGANTDeterministicCodebaseGNN169 Computational Paper COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN — Generalized Notation Notation , not graph neural networks). It is best understood as an evidence compiler : it propagates reviewable program facts through a fixpoint rule pipeline (in the tradition of fixpoint program analysis) and emits graph, matrix, provenance, visualization, and roundtrip artifacts rather than a single opaque embedding or proof. A program-graph intermediate representation (IR) carries confidence and provenance; a fixpoint translation engine applies 22 declarative rules mapping nodes onto 7 Active Inference mapping kinds . Each emitted bundle includes a seed-induced structural partition using Markov-blanket role vocabulary, and a reverse synthesizer reconstruc program analysis Generalized Notation Notation (GNN) intermediate representation code property graph active inference reproducible research codebase-to-model translation cognitive ecosystem modeling program analysis — fixpoint propagation of reviewable program facts Generalized Notation Notation (GNN) — Active Inference model artifact format intermediate representation — confidence- and provenance-carrying program graph active inference — 7 mapping kinds; Markov-blanket structural partition reproducible research — forward→reverse→forward roundtrip evidence"
+    },
+    {
+      "id": "work:Friedman2026AGEINTAgenticIntelligence170",
+      "type": "work",
+      "title": "AGEINT: Agentic Intelligence",
+      "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20732275",
+      "summary": "Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "agentic intelligence",
+        "AGEINT",
+        "AI agents",
+        "intelligence tradecraft",
+        "cognitive security",
+        "structured analytic techniques",
+        "active inference",
+        "model context protocol"
+      ],
+      "content": "AGEINT: Agentic Intelligence Zenodo 10.5281/zenodo.20732275 Friedman2026AGEINTAgenticIntelligence170 Computational Paper Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the page. It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source identities, then asks the reader to inspect the same things an instructor or assurance reviewer would inspect: the part map that frames the domain, the module overview that names the learner task, the source spine that separates official, standards, scholarly, public-domain, practitioner, vendor, and provenance-only support while separating source quality from narrative fluency, the evidence packet that a student would retain, the reviewer challeng agentic intelligence AGEINT AI agents intelligence tradecraft cognitive security structured analytic techniques active inference model context protocol multi-agent systems operational governance agentic intelligence AGEINT AI agents intelligence tradecraft cognitive security"
     },
     {
       "id": "software:docxology:template",
@@ -11274,7 +11298,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 168 works.",
+      "title": "The curated bibliography contains 169 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11282,7 +11306,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 168 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 169 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
@@ -11471,7 +11495,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 168 works, 91 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 169 works, 91 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",
