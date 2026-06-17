@@ -39,7 +39,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | PubMed | [pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | 8 exact-author biomedical records (NCBI E-utilities, May 2026) |
 | Europe PMC | [europepmc.org](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | 10 exact-author results, including preprints (May 2026) |
 | Crossref ORCID API | [api.crossref.org](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | 15 DOI records attached to the ORCID (May 2026) |
-| Zenodo | [zenodo.org](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 38 exact-name records; ORCID-linked API query returns 91 versioned records and software archives (May 2026) |
+| Zenodo | [zenodo.org](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 40 exact-name records; ORCID-linked API query returns 98 versioned records and software archives (2026-06-09) |
 | Santa Fe Institute | [wiki.santafe.edu](https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman) | SFI events wiki |
 | ISSS Wiki | [wiki.isss.org](https://wiki.isss.org/index.php/Daniel_Friedman) | International Society for the Systems Sciences (member since 2022) |
 | ALIUS Research Group | [aliusresearch.org](https://www.aliusresearch.org/) | Alterations of Consciousness research group — published 4 interviews/papers in ALIUS Bulletin |

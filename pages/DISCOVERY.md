@@ -25,7 +25,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 |--------|------|-----|
 | Wikidata | [Q138781444](https://www.wikidata.org/wiki/Q138781444) | Canonical entity anchor for knowledge graph reconciliation |
 | ORCID | [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096) | Persistent researcher identifier; public record currently groups 20 works |
-| Google Scholar | [DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | **Canonical** citation profile. Metrics recorded as a dated snapshot in [`data/scholar-snapshot.json`](../data/scholar-snapshot.json) (764 citations, h-index 15, i10-index 17, as of 2026-05-16; direct dual-fetch). A secondary Scholar profile (`Y2bMf3MAAAAJ`) is linked from ORCID and should be consolidated/disambiguated — do not mix metrics across the two. |
+| Google Scholar | [DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | **Canonical** citation profile. Metrics recorded as a dated snapshot in [`data/scholar-snapshot.json`](../data/scholar-snapshot.json): 777 citations, h-index 15, i10-index 17 (as of 2026-06-09). A secondary Scholar profile (`Y2bMf3MAAAAJ`) is linked from ORCID and should be consolidated/disambiguated — do not mix metrics across the two. |
 | GitHub | [@docxology](https://github.com/docxology) | Primary software profile; latest generated API snapshot and public repo count are recorded in [`../reports/current_counts.md`](../reports/current_counts.md) and [`../data/github-repositories.json`](../data/github-repositories.json) |
 | Main Site | [danielarifriedman.com](https://danielarifriedman.com/) | Canonical public homepage and SEO target |
 

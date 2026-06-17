@@ -95,6 +95,12 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
                 f"{cit} citations, h-index {h}, i10-index {i10} (as of {as_of})",
             ),
         ],
+        "pages/DISCOVERY.md": [
+            (
+                r"\d+ citations, h-index \d+, i10-index \d+ \([^)]*\)",
+                f"{cit} citations, h-index {h}, i10-index {i10} (as of {as_of})",
+            ),
+        ],
     }
 
 

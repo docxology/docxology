@@ -1,6 +1,6 @@
 # Google Search Console — manual follow-up runbook
 
-Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedman.com/) (sitemap ~157 URLs, `works/` canonicals, open crawl, `exports.html` hub). **IndexNow does not notify Google.** These steps require a signed-in browser with owner or full-user access to the GSC property.
+Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedman.com/) (sitemap ~196 URLs, `works/` canonicals, open crawl, `exports.html` hub). **IndexNow does not notify Google.** These steps require a signed-in browser with owner or full-user access to the GSC property.
 
 **Property:** [https://danielarifriedman.com/](https://danielarifriedman.com/) (apex, not `www`)
 
@@ -19,7 +19,7 @@ Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedma
    uv run python3 code/orchestrators/gsc_followup_preflight.py
    ```
 4. Sanity checks (also covered by preflight):
-   - [sitemap.xml](https://danielarifriedman.com/sitemap.xml) — ~157 URLs, no `/papers/` paths
+   - [sitemap.xml](https://danielarifriedman.com/sitemap.xml) — ~196 URLs, no `/papers/` paths
    - [robots.txt](https://danielarifriedman.com/robots.txt) — `Allow: /` only
 
 ---
@@ -32,7 +32,7 @@ Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedma
 2. Under **Add a new sitemap**, enter `sitemap.xml` and click **Submit**.
 3. If already listed, confirm **Last read** updates over the next few days (resubmit is fine).
 
-**Success:** Status **Success**; discovered URLs trend toward ~157.
+**Success:** Status **Success**; discovered URLs trend toward ~196.
 
 ---
 

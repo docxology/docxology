@@ -167,13 +167,13 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 | Google Scholar Citations | 777 (as of 2026-06-09) |
 | h-index | 15 |
 | i10-index | 17 |
-| Citations since 2021 | 495 |
+| Citations since 2021 | 544 (as of 2026-06-09) |
 | Open-Source Repositories (owned, catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |
 | GitHub Public Repositories (total) | [Current generated count](../reports/current_counts.md) |
 | Active Inference Institute Repos (catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |
 | Livestreams & Videos | 700+ |
 | Research Domains | 8 |
-| Books Authored | 4 |
+| Books Authored | 5 |
 | Programming Languages Used | Python, Rust, Go, TypeScript, Julia, TeX, HTML |
 | Collaborators | 50+ |
 
