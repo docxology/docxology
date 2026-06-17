@@ -16,7 +16,10 @@ import re
 import sys
 from pathlib import Path
 
-from software_table import (
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+from software_table import (  # noqa: E402
     SoftwareRow,
     DEFAULT_SOFTWARE_PATH,
     description_html,
@@ -25,9 +28,6 @@ from software_table import (
     lang_css_class,
     zenodo_url,
 )
-
-REPO_ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from count_consistency import parse_software_catalog_counts  # noqa: E402
 
 SOFTWARE_HTML = REPO_ROOT / "software.html"

@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 from typing import Iterator, NamedTuple
 
-DEFAULT_BIB_PATH = Path(__file__).resolve().parent.parent / "pages" / "BIBLIOGRAPHY.md"
+DEFAULT_BIB_PATH = Path(__file__).resolve().parents[2] / "pages" / "BIBLIOGRAPHY.md"
 
 
 class BiblioRow(NamedTuple):

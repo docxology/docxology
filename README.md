@@ -219,6 +219,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2026 | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533675](https://doi.org/10.5281/zenodo.20533675) |
 | 2026 | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) |
 | 2026 | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351) |
+| 2026 | AGEINT: Agentic Intelligence | *Zenodo* | [10.5281/zenodo.20732275](https://doi.org/10.5281/zenodo.20732275) |
 
 #### 🔧 Highlighted Repositories
 

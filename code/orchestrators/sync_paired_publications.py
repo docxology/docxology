@@ -914,9 +914,9 @@ def write_report(
 
 def run_regeneration(repo_root: Path = REPO_ROOT) -> None:
     commands = [
-        ["python3", "papers/sync_publications_html.py", "--apply"],
+        ["python3", "code/orchestrators/sync_publications_html.py", "--apply"],
         ["python3", "code/orchestrators/export_bibliography.py"],
-        ["python3", "papers/sync_software_html.py", "--apply"],
+        ["python3", "code/orchestrators/sync_software_html.py", "--apply"],
         ["python3", "code/orchestrators/export_agent_data.py"],
         ["python3", "code/orchestrators/build_domain_pages.py"],
         ["python3", "code/orchestrators/build_work_pages.py"],

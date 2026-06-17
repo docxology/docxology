@@ -20,8 +20,8 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PAPERS_DIR = REPO_ROOT / "papers"
-sys.path.insert(0, str(PAPERS_DIR))
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
 from sync_publications_html import canonical_link_url  # noqa: E402

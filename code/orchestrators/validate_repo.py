@@ -235,8 +235,8 @@ def main() -> None:
     args = parse_args()
     strict_reports = _strict_reports_enabled(args.strict_reports)
 
-    run(["python3", "papers/sync_publications_html.py"])
-    run(["python3", "papers/sync_software_html.py"])
+    run(["python3", "code/orchestrators/sync_publications_html.py"])
+    run(["python3", "code/orchestrators/sync_software_html.py"])
     run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
     run(["python3", "code/orchestrators/export_agent_data.py", "--check"])
     run(["python3", "code/orchestrators/build_resume.py", "--check"])

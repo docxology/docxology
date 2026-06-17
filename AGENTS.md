@@ -39,10 +39,10 @@
 
 ### 🛠️ MAINTAINER
 
-- Runs [regenerate_docs.py](papers/regenerate_docs.py) to rebuild documentation
-- Runs [sync_publications_html.py](papers/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
+- Runs [regenerate_docs.py](code/orchestrators/regenerate_docs.py) to rebuild documentation
+- Runs [sync_publications_html.py](code/orchestrators/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
 - Uses [docs/operations/publication-sync.md](docs/operations/publication-sync.md) and [sync_paired_publications.py](code/orchestrators/sync_paired_publications.py) to check GitHub releases against Zenodo records, apply strong publication pairs, and leave ambiguous pairs for review
-- Runs [sync_software_html.py](papers/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
+- Runs [sync_software_html.py](code/orchestrators/sync_software_html.py) with `--apply` after edits to [pages/SOFTWARE.md](pages/SOFTWARE.md) so [software.html](software.html) and [data/software-ld.json](data/software-ld.json) stay aligned
 - Runs [build_resume.py](code/orchestrators/build_resume.py) with `--all` after edits to [resume/source.json](resume/source.json), bibliography/software data, Scholar metrics, or claim data so [data/resume.json](data/resume.json), plaintext variants, and [resume/resume.pdf](resume/resume.pdf) stay aligned
 - Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md), [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), and the generated [`reports/current_counts.md`](reports/current_counts.md) snapshot)
 - Ensures consistent formatting and accurate metadata
@@ -100,17 +100,14 @@ docxology/
 │   ├── design/        ← design-system.md
 │   ├── security/      ← security-posture.md
 │   └── releases/      ← Archived point-in-time release snapshots
-├── code/              ← Repository source code and executable orchestrators (see code/AGENTS.md)
-│   ├── orchestrators/ ← Thin orchestrators and pipeline controllers
-│   ├── src/           ← Source code and submodules
+├── code/              ← All repository source code and executable orchestrators (see code/AGENTS.md)
+│   ├── orchestrators/ ← Runnable orchestrators (regenerate_docs.py, sync_publications_html.py, sync_software_html.py, export_*, build_*)
+│   ├── src/           ← Shared libraries/parsers (biblio_table.py 8-column BIBLIOGRAPHY parser, software_table.py, count_consistency.py)
 │   └── tests/         ← Test suites and validation tests
 └── papers/            ← Per-paper folders (`YYYY_Topic`) for bibliography rows with in-tree documentation
     ├── README.md      ← Papers directory index
     ├── AGENTS.md      ← Papers-level agent roles
     ├── paper_metadata.json
-    ├── biblio_table.py       ← Shared iterator for 8-column BIBLIOGRAPHY.md rows
-    ├── regenerate_docs.py
-    ├── sync_publications_html.py  ← Regenerates publications.html head meta + data/publications-ld.json JSON-LD mainEntity
     └── YYYY_Topic/
         ├── README.md   ← Paper overview, abstract, keywords, citation
         ├── AGENTS.md   ← Paper-specific agent roles and extraction log
@@ -207,6 +204,7 @@ docxology/
 | 2026-06-14 | ARCHIVIST | Added DemoCreate/ENTO/GNN-v2.0.0; removed the duplicate CEREBRUM2 work (numbers retired, not renumbered — `validate_rows` now allows gaps); re-pointed the template entry to v3.4.0; reconciled all surfaces to **167 works / 150 folders** | ✅ |
 | 2026-06-14 | INTEGRATOR | Hardened work identity without a URL migration: `build_work_pages.py` rejects duplicate `citation_key`; `test_frozen_work_keys.py` freezes every `num→citation_key`; documented `works/{citation_key}.html` as a permanent contract. Modularized `docs/` into topic subdirs + `docs/README.md` index. Guarded 5 previously-unchecked narrative pages (LINKS/PROFILE/WIKIPEDIA/COLLABORATORS/MEDIA, had drifted to 125/154) in `count_consistency`. Added RFC 9116 `security.txt` | ✅ |
 | 2026-06-16 | INTEGRATOR | Evergreen volatile totals: narrative pages signpost `reports/current_counts.md`; `count_consistency` + tests derive from bibliography/software parsers; `sync_*_html.py` syncs twitter descriptions with og/meta; index domain cards drop stale per-domain literals | ✅ |
+| 2026-06-17 | INTEGRATOR | Added **AGEINT** (`zenodo.20732275`, `docxology/AGEINT` v0.1.0) as work 170 via scoped `sync_paired_publications.py --since 2026-06-16 --apply`; stripped leaked `<p>` HTML from the Zenodo abstract; renumbered `papers/README.md` index to strict 1..152 (closed gap 111 + duplicate 152); reconciled all surfaces to **169 works / 152 paper folders / 91 software**; `validate_repo` + 100 tests green. CEREBRUM (`zenodo.15231156`) and Self-Improvement Agent (`zenodo.20693012`) confirmed as re-versions — update-only, not new rows | ✅ |
 
 ---
 
@@ -228,8 +226,8 @@ docxology/
 
 - Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).
 - **Volatile totals** (works count, indexed paper-folder count, Type-column breakdowns, domain breakdowns, software catalog counts, and public GitHub inventory counts): generated/plaintext summary lives in [`reports/current_counts.md`](reports/current_counts.md), backed by `data/current-counts.json`. Hand-authored docs should link there, to `pages/BIBLIOGRAPHY.md`, `papers/README.md`, `pages/SOFTWARE.md`, and `data/github-repositories.json`, instead of repeating current values. `code/src/count_consistency.py` and `code/orchestrators/build_current_counts.py --check` are run by `validate_repo.py`.
-- Regenerate `publications.html` head meta and `data/publications-ld.json` (**mainEntity**) from `pages/BIBLIOGRAPHY.md` via `papers/sync_publications_html.py --apply` after table edits; catalog UI loads `data/works.json` via `js/publications.js`. Run `export_bibliography.py` when works.json must refresh. The **INTEGRATOR** role in `papers/AGENTS.md` keeps publications surfaces aligned when totals change.
-- Regenerate `software.html` repo grids and `data/software-ld.json` (**mainEntity**) from `pages/SOFTWARE.md` via `papers/sync_software_html.py --apply` after catalog edits; run `export_agent_data.py` for `data/software.json`. Full-catalog sync, not a highlight subset.
+- Regenerate `publications.html` head meta and `data/publications-ld.json` (**mainEntity**) from `pages/BIBLIOGRAPHY.md` via `code/orchestrators/sync_publications_html.py --apply` after table edits; catalog UI loads `data/works.json` via `js/publications.js`. Run `export_bibliography.py` when works.json must refresh. The **INTEGRATOR** role in `papers/AGENTS.md` keeps publications surfaces aligned when totals change.
+- Regenerate `software.html` repo grids and `data/software-ld.json` (**mainEntity**) from `pages/SOFTWARE.md` via `code/orchestrators/sync_software_html.py --apply` after catalog edits; run `export_agent_data.py` for `data/software.json`. Full-catalog sync, not a highlight subset.
 - `discovery.html` is the canonical website discovery HTML; pair with `pages/DISCOVERY.md`, `llms.txt`, and `exports.html` (citation/JSON export hub in sitemap and nav). Machine-readable citations/software: `CITATION.cff` and `codemeta.json`.
 - `code/src/sitemap_policy.py` defines ~157 index-priority URLs for `sitemap.xml` and IndexNow (promotion list, not crawl gate). `code/orchestrators/submit_indexnow.py` and `.github/workflows/indexnow-on-push.yml` handle IndexNow. `GENERATED.md` and `data/generated-manifest.json` from `build_generated_manifest.py` map generated outputs—refresh when pipelines change.
 - Google Search Console operations (sitemap resubmit, URL inspection) require a signed-in browser—no GSC API in the repo.

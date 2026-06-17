@@ -34,7 +34,7 @@
     "url": "https://danielarifriedman.com/updates.html",
     "name": "Updates — Daniel Ari Friedman",
     "description": "Human-readable changelog for the docxology public research and software index.",
-    "dateModified": "2026-06-15",
+    "dateModified": "2026-06-17",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
@@ -47,54 +47,60 @@
             {
                 "@type": "ListItem",
                 "position": 1,
+                "name": "2026-06-17",
+                "description": "Added **AGEINT: Agentic Intelligence** (`zenodo.20732275`, ) — `docxology/AGEINT` v0.1.0, a Synthetic Analytic Tradecraft curriculum-and-assurance atlas — as work **170** via the canonical `sync_paired_publications.py` apply path, scoped `--since 2026-06-16` to isolate the single new release. Stripped the `<p>` HTML the Zenodo abstract carried into `metadata.json`/`README.md`; renumbered the `papers/README.md` index strictly **1..152** (closed the gap at 111 left by the CEREBRUM dedup, plus a du"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
                 "name": "2026-06-15",
                 "description": "Completed **COGANT** (`zenodo.20705351`, ) and **coasys** / **COGANT** software-catalog intake after commit `b6fa1b4`: added `2026_COGANT` to `papers/README.md` (151 folders), `paper_metadata.json`, and the Computational domain blurb (27 works); regenerated publications, software, sitemap, resume, evidence, search, feed, domain, and count exports. Bibliography **167→168**; software catalog **89→91** (58 owned + 33 AII); paper folders **150→151**."
             },
             {
                 "@type": "ListItem",
-                "position": 2,
+                "position": 3,
                 "name": "2026-06-14",
                 "description": "Added two Zenodo-only publications via `add_zenodo_only.py`: **DemoCreate** (`zenodo.20693217`, ) and **ENTO** (`zenodo.20647443`, ); added the **GeneralizedNotationNotation (GNN)** software v2.0.0 (`zenodo.20671741`, ) as a distinct work from the 2023 GNN paper (different Zenodo concept). Bibliography **165→167**. Completed the CEREBRUM dedup the 2026-06-10 pass flagged for the maintainer: removed the duplicate work `…118` (papers/2025_CEREBRUM2, the v1.4 deposit `zenodo.15231156`) outright, ke"
             },
             {
                 "@type": "ListItem",
-                "position": 3,
+                "position": 4,
                 "name": "2026-06-10",
                 "description": "SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: `build_work_pages.py` now clips on a word boundary with an ellipsis via new `clip_description()` in `code/src/site_nav.py` (145 of 165 work descriptions corrected; rendered length ≤160). Added Twitter Card (`summary_large_image`) and `og:image:alt` tags site-wide. Generators (`build_work_pages`, `build_domain_pages`, `build_catalog`, `build_exports_page`, `build_evidence_page`, `build_updates_page`, `build_g"
             },
             {
                 "@type": "ListItem",
-                "position": 4,
+                "position": 5,
                 "name": "2026-06-04",
                 "description": "Applied four strong GitHub release + Zenodo publication pairs: `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, and `2026_TemplateTextbook`; bibliography **150→154**, paper folders **143→147**. Refreshed represented GitHub/Zenodo publication pairs for existing works, including `WhenDoBugs`, `MusicNeverStopped`, `BeeStack`, `BiologyTextbook`, `CrescentCity`, and template-derived exemplars; left review-only pairings untouched. Added six owned repositories to the cur"
             },
             {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 6,
                 "name": "2026-05-26",
                 "description": "Thermo-nuclear documentation pass: aligned volatile counts (116 works / 109 paper folders) across `llms.txt`, release notes, and publications head meta; added count-consistency validation (`code/src/count_consistency.py`). Refactored `publications.html` to load catalog rows from `data/works.json` via `js/publications.js`; externalized CollectionPage JSON-LD to `data/publications-ld.json` (166-line shell). Added `docs/SECURITY.md`, `docs/DESIGN_SYSTEM.md`, `reports/web_assessment_2026-05-26.md`, "
             },
             {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 7,
                 "name": "2026-05-19",
                 "description": "Added `2026_CrescentCity` — *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast* (DOI [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171); repo `docxology/crescent_city`), filed under Cognitive Security. Created the per-paper documentation set: `README.md`, `AGENTS.md`, `SKILL.md`, `CITATION.cff`, and `metadata.json`. Registered the work in `papers/paper_metadata.json`, the `papers/README.md` index, and `papers/AGENTS.md` (counts + mainte"
             },
             {
                 "@type": "ListItem",
-                "position": 7,
+                "position": 8,
                 "name": "2026-05-13",
                 "description": "Added machine-readable discovery artifacts: `llms.txt`, `CITATION.cff`, `codemeta.json`, bibliography exports, and structured `data/*.json`. Added domain landing pages, per-work landing pages, a generated search index, and an RSS feed. Added `search.html`, `opensearch.xml`, `catalog.html`, `data/catalog.json`, `GENERATED.md`, and `data/generated-manifest.json` for human search, browser discovery, dataset discovery, and generated-file rebuild provenance. Enriched generated work pages and the sear"
             },
             {
                 "@type": "ListItem",
-                "position": 8,
+                "position": 9,
                 "name": "2026-05-12",
                 "description": "Performed repo-wide README and AGENTS audit. Updated public GitHub repository count and domain figures from bibliography ground truth. Verified public-source discrepancies around Google Scholar cache, AII officers, board size, and Scientific Advisory Board context."
             },
             {
                 "@type": "ListItem",
-                "position": 9,
+                "position": 10,
                 "name": "2026-05-04",
                 "description": "Renamed paper folders from author-title form to `YYYY_Topic`. Added `2020_FacilitatorsCatechism`. Added shared bibliography-table parser and publication HTML synchronization script."
             }
@@ -136,6 +142,10 @@
     </nav>
     <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>
     <main id="main" class="main"><section class="section"><div class="updates-list">
+            <article class="update-card">
+                <h2>2026-06-17</h2>
+                <ul><li>Added **AGEINT: Agentic Intelligence** (<code>zenodo.20732275</code>, ) — <code>docxology/AGEINT</code> v0.1.0, a Synthetic Analytic Tradecraft curriculum-and-assurance atlas — as work **170** via the canonical <code>sync_paired_publications.py</code> apply path, scoped <code>--since 2026-06-16</code> to isolate the single new release. Stripped the <code>&lt;p&gt;</code> HTML the Zenodo abstract carried into <code>metadata.json</code>/<code>README.md</code>; renumbered the <code>papers/README.md</code> index strictly **1..152** (closed the gap at 111 left by the CEREBRUM dedup, plus a duplicate <code>152</code>). Regenerated all dependent surfaces. Bibliography **168→169**; paper folders **151→152**; software unchanged at **91**; Computational domain **27→28**. Identified **CEREBRUM** (<code>zenodo.15231156</code>) and **Self-Improvement Agent Harness** (<code>zenodo.20693012</code>) as re-versions of existing works <code>…010</code> / <code>…127</code> (newer version DOIs of already-curated concepts) — update-only, not new rows.</li></ul>
+            </article>
             <article class="update-card">
                 <h2>2026-06-15</h2>
                 <ul><li>Completed **COGANT** (<code>zenodo.20705351</code>, ) and **coasys** / **COGANT** software-catalog intake after commit <code>b6fa1b4</code>: added <code>2026_COGANT</code> to <code>papers/README.md</code> (151 folders), <code>paper_metadata.json</code>, and the Computational domain blurb (27 works); regenerated publications, software, sitemap, resume, evidence, search, feed, domain, and count exports. Bibliography **167→168**; software catalog **89→91** (58 owned + 33 AII); paper folders **150→151**.</li></ul>

@@ -52,8 +52,8 @@ Other orchestrators (external links, sitemap, visual QA, GitHub inventory, etc.)
 
 Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency order:
 
-1. Bibliography edits — `papers/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
-2. Software catalog edits — `papers/sync_software_html.py --apply`, `export_agent_data.py`, then domain/search/catalog exports.
+1. Bibliography edits — `code/orchestrators/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
+2. Software catalog edits — `code/orchestrators/sync_software_html.py --apply`, `export_agent_data.py`, then domain/search/catalog exports.
 3. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.
 4. Resume/CV exports — `build_resume.py --all` after changing `resume/source.json`, bibliography/software data, Scholar snapshot, or claim data.
 5. Paired GitHub + Zenodo publication checks — `sync_paired_publications.py` writes a dry-run report by default; use `--apply` only for strong pairs.

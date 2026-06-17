@@ -2,6 +2,10 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-17
+
+- Added **AGEINT: Agentic Intelligence** (`zenodo.20732275`, 💻) — `docxology/AGEINT` v0.1.0, a Synthetic Analytic Tradecraft curriculum-and-assurance atlas — as work **170** via the canonical `sync_paired_publications.py` apply path, scoped `--since 2026-06-16` to isolate the single new release. Stripped the `<p>` HTML the Zenodo abstract carried into `metadata.json`/`README.md`; renumbered the `papers/README.md` index strictly **1..152** (closed the gap at 111 left by the CEREBRUM dedup, plus a duplicate `152`). Regenerated all dependent surfaces. Bibliography **168→169**; paper folders **151→152**; software unchanged at **91**; Computational domain **27→28**. Identified **CEREBRUM** (`zenodo.15231156`) and **Self-Improvement Agent Harness** (`zenodo.20693012`) as re-versions of existing works `…010` / `…127` (newer version DOIs of already-curated concepts) — update-only, not new rows.
+
 ## 2026-06-15
 
 - Completed **COGANT** (`zenodo.20705351`, 💻) and **coasys** / **COGANT** software-catalog intake after commit `b6fa1b4`: added `2026_COGANT` to `papers/README.md` (151 folders), `paper_metadata.json`, and the Computational domain blurb (27 works); regenerated publications, software, sitemap, resume, evidence, search, feed, domain, and count exports. Bibliography **167→168**; software catalog **89→91** (58 owned + 33 AII); paper folders **150→151**.

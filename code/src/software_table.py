@@ -11,7 +11,7 @@ import re
 from pathlib import Path
 from typing import Iterator, NamedTuple
 
-DEFAULT_SOFTWARE_PATH = Path(__file__).resolve().parent.parent / "pages" / "SOFTWARE.md"
+DEFAULT_SOFTWARE_PATH = Path(__file__).resolve().parents[2] / "pages" / "SOFTWARE.md"
 
 PAPER_LINK_RE = re.compile(r"\[📄\]\(([^)]+)\)")
 ZENODO_LINK_RE = re.compile(

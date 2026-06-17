@@ -17,8 +17,6 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PAPERS_DIR = REPO_ROOT / "papers"
-sys.path.insert(0, str(PAPERS_DIR))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from count_consistency import parse_software_catalog_counts  # noqa: E402

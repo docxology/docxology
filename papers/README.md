@@ -165,18 +165,16 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 152 | [2026_AGEINT](2026_AGEINT/) | ✅ | 2026 | AGEINT |
 ## Scripts
 
+All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:
+
 | Script | Purpose |
 |--------|---------|
-| `regenerate_docs.py` | Regenerate all README/AGENTS/SKILL from bibliography |
-| `update_paper_docs.py` | PDF-based documentation generator |
-| `update_paper_docs_v2.py` | Enhanced PDF analysis with deep extraction |
-| `fix_and_regenerate.py` | Apply corrections and improve SKILL.md format |
+| [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py) | Regenerate every per-folder README.md / AGENTS.md / SKILL.md from `paper_metadata.json` (`--apply` to write, `--force` to overwrite) |
+| [`code/orchestrators/sync_publications_html.py`](../code/orchestrators/sync_publications_html.py) | Rebuild `publications.html` head meta + `data/publications-ld.json` mainEntity from `pages/BIBLIOGRAPHY.md` |
+| [`code/src/biblio_table.py`](../code/src/biblio_table.py) | Shared eight-column `pages/BIBLIOGRAPHY.md` row parser |
 
 ## Metadata
 
-| File | Entries |
+| File | Purpose |
 |------|---------|
-| `paper_metadata.json` | Extracted paper metadata |
-| `paper_metadata_2.json` | Extracted paper metadata |
-| `paper_metadata_3.json` | Extracted paper metadata |
-| `paper_metadata_4.json` | Extracted paper metadata |
+| `paper_metadata.json` | Canonical per-folder metadata index — one entry per `YYYY_Topic/` folder |

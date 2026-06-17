@@ -9,9 +9,8 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PAPERS_DIR = REPO_ROOT / "papers"
-sys.path.insert(0, str(PAPERS_DIR))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 from count_consistency import parse_software_catalog_counts  # noqa: E402
 from sync_software_html import (  # noqa: E402
@@ -26,7 +25,7 @@ from sync_software_html import (  # noqa: E402
 def test_dry_run_cli():
     expected_docx, expected_aii = parse_software_catalog_counts()
     result = subprocess.run(
-        ["python3", "papers/sync_software_html.py"],
+        ["python3", "code/orchestrators/sync_software_html.py"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,

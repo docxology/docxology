@@ -10,14 +10,14 @@ See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index
 
 - [pages/BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) is the unified works table; the **Docs** column links to a folder under [papers/](../papers/) only when one exists.
 - [papers/](../papers/) has per-work folders (README / AGENTS / SKILL) for rows with in-tree documentation; rows without a folder (e.g. some YouTube series or Udemy courses) have no duplicate in-tree index row beyond BIBLIOGRAPHY.
-- After table **adds or reorders**, run [`papers/sync_publications_html.py`](../papers/sync_publications_html.py) with `--apply` so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay in table order and length; run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for `data/works.json`.
-- [`papers/biblio_table.py`](../papers/biblio_table.py) is the shared eight-column parser used by `sync_publications_html` and [`papers/regenerate_docs.py`](../papers/regenerate_docs.py).
+- After table **adds or reorders**, run [`code/orchestrators/sync_publications_html.py`](../code/orchestrators/sync_publications_html.py) with `--apply` so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay in table order and length; run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for `data/works.json`.
+- [`code/src/biblio_table.py`](../code/src/biblio_table.py) is the shared eight-column parser used by `sync_publications_html` and [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py).
 
 ## Generated discovery layer
 
 Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data/generated-manifest.json) as the exhaustive rebuild matrix (orchestrator → output paths). This file records **ordering principles** only:
 
-1. **Bibliography edits** — `papers/sync_publications_html.py --apply`, then `export_bibliography.py`, then downstream HTML/JSON that consume `data/works.json` (work pages, domain pages, search index, feed, sitemap).
+1. **Bibliography edits** — `code/orchestrators/sync_publications_html.py --apply`, then `export_bibliography.py`, then downstream HTML/JSON that consume `data/works.json` (work pages, domain pages, search index, feed, sitemap).
 2. **Software or claims edits** — `export_agent_data.py`, then evidence/catalog/search exports that read `data/claims.json` or `data/software.json`.
 3. **Resume/CV edits** — `build_resume.py --all` after `resume/source.json`, bibliography/software exports, Scholar snapshot, or claim data changes.
 4. **Changelog or manifest changes** — `build_updates_page.py` / `build_generated_manifest.py` when public changelog or generated-artifact lists change.

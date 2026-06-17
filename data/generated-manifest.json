@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T12:54:15Z",
+  "generated_at": "2026-06-17T13:13:28Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -11,7 +11,7 @@
       ],
       "sources": [
         "pages/BIBLIOGRAPHY.md",
-        "papers/biblio_table.py"
+        "code/src/biblio_table.py"
       ],
       "command": "python3 code/orchestrators/export_bibliography.py"
     },
@@ -58,7 +58,7 @@
       ],
       "sources": [
         "pages/SOFTWARE.md",
-        "papers/software_table.py",
+        "code/src/software_table.py",
         "data/scholar-snapshot.json",
         "code/orchestrators/export_agent_data.py"
       ],
@@ -94,10 +94,10 @@
       ],
       "sources": [
         "pages/SOFTWARE.md",
-        "papers/software_table.py",
-        "papers/sync_software_html.py"
+        "code/src/software_table.py",
+        "code/orchestrators/sync_software_html.py"
       ],
-      "command": "python3 papers/sync_software_html.py --apply"
+      "command": "python3 code/orchestrators/sync_software_html.py --apply"
     },
     {
       "name": "Full GitHub repository inventory",

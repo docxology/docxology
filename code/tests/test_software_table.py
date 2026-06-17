@@ -5,8 +5,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-PAPERS_DIR = Path(__file__).resolve().parents[2] / "papers"
-sys.path.insert(0, str(PAPERS_DIR))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from count_consistency import parse_software_catalog_counts  # noqa: E402

@@ -20,9 +20,11 @@ import logging
 from pathlib import Path
 from datetime import datetime
 
-from biblio_table import iter_bibliography_rows
+REPO_ROOT = Path(__file__).resolve().parents[2]
+PAPERS_DIR = REPO_ROOT / "papers"
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-PAPERS_DIR = Path(__file__).resolve().parent
+from biblio_table import iter_bibliography_rows  # noqa: E402
 
 logging.basicConfig(
     level=logging.INFO,
