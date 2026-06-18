@@ -55,25 +55,25 @@ def parse_bibliography_rows(biblio_path: Path = BIBLIO_PATH) -> list[dict[str, s
 
 
 def parse_bibliography_work_count(biblio_path: Path = BIBLIO_PATH) -> int:
+    text = biblio_path.read_text(encoding="utf-8")
+    m = re.search(r"\*\*(\d+)\*\*\s+works", text)
+    if m:
+        return int(m.group(1))
     counts = _load_current_counts_payload().get("counts", {})
     if isinstance(counts.get("bibliography_works"), int):
         return int(counts["bibliography_works"])
-    text = biblio_path.read_text(encoding="utf-8")
-    m = re.search(r"\*\*(\d+)\*\*\s+works", text)
-    if not m:
-        raise ValueError(f"Could not parse works count from {biblio_path}")
-    return int(m.group(1))
+    raise ValueError(f"Could not parse works count from {biblio_path}")
 
 
 def parse_paper_folder_count(papers_readme: Path = PAPERS_README) -> int:
+    text = papers_readme.read_text(encoding="utf-8")
+    m = re.search(r"## Papers \((\d+)\)", text)
+    if m:
+        return int(m.group(1))
     counts = _load_current_counts_payload().get("counts", {})
     if isinstance(counts.get("paper_folder_docs"), int):
         return int(counts["paper_folder_docs"])
-    text = papers_readme.read_text(encoding="utf-8")
-    m = re.search(r"## Papers \((\d+)\)", text)
-    if not m:
-        raise ValueError(f"Could not parse paper folder count from {papers_readme}")
-    return int(m.group(1))
+    raise ValueError(f"Could not parse paper folder count from {papers_readme}")
 
 
 def parse_software_catalog_counts(software_path: Path = SOFTWARE_PATH) -> tuple[int, int]:
@@ -265,6 +265,91 @@ def _current_counts_report(errors: list[str], works: int, folders: int, software
     )
 
 
+def _bibliography_prose_counts(errors: list[str], works: int, folders: int) -> None:
+    text = BIBLIO_PATH.read_text(encoding="utf-8")
+    works_match = re.search(r"\*\*(\d+)\s+works\*\*", text)
+    folders_match = re.search(r"\*\*(\d+)\*\*\s+indexed paper folders", text)
+    type_counts = _type_counts(parse_bibliography_rows())
+    _append_if_mismatch(
+        errors,
+        "pages/BIBLIOGRAPHY.md hero works",
+        int(works_match.group(1)) if works_match else None,
+        works,
+    )
+    _append_if_mismatch(
+        errors,
+        "pages/BIBLIOGRAPHY.md indexed paper folders",
+        int(folders_match.group(1)) if folders_match else None,
+        folders,
+    )
+    for typ, label in TYPE_LABELS.items():
+        match = re.search(rf"\*\*(\d+)\*\*\s+{re.escape(label)}", text)
+        _append_if_mismatch(
+            errors,
+            f"pages/BIBLIOGRAPHY.md type summary {label}",
+            int(match.group(1)) if match else None,
+            type_counts.get(typ, 0),
+        )
+    _require_contains(
+        errors,
+        "pages/BIBLIOGRAPHY.md current-count signpost",
+        text,
+        "../reports/current_counts.md",
+    )
+    if re.search(r"\.\.\.and \d+ more in the table above", text):
+        errors.append("pages/BIBLIOGRAPHY.md: residual domain counts should signpost current totals")
+
+
+def _software_prose_counts(errors: list[str], software_docx: int, software_aii: int) -> None:
+    text = SOFTWARE_PATH.read_text(encoding="utf-8")
+    hero_match = re.search(
+        r"\*(\d+)\s+original repositories · (\d+)\s+catalogued Active Inference Institute contributions",
+        text,
+    )
+    if hero_match:
+        _append_if_mismatch(
+            errors,
+            "pages/SOFTWARE.md hero docxology repositories",
+            int(hero_match.group(1)),
+            software_docx,
+        )
+        _append_if_mismatch(
+            errors,
+            "pages/SOFTWARE.md hero AII repositories",
+            int(hero_match.group(2)),
+            software_aii,
+        )
+    else:
+        errors.append("pages/SOFTWARE.md: missing repository-count hero")
+    docx_summary = re.search(r"\| \*\*docxology subtotal\*\* \| \*\*(\d+)\*\*", text)
+    aii_summary = re.search(r"\| AII Contributions \(non-fork\) \| (\d+) \|", text)
+    grand_summary = re.search(r"\| \*\*Grand Total\*\* \| \*\*(\d+)\*\*", text)
+    _append_if_mismatch(
+        errors,
+        "pages/SOFTWARE.md docxology subtotal",
+        int(docx_summary.group(1)) if docx_summary else None,
+        software_docx,
+    )
+    _append_if_mismatch(
+        errors,
+        "pages/SOFTWARE.md AII subtotal",
+        int(aii_summary.group(1)) if aii_summary else None,
+        software_aii,
+    )
+    _append_if_mismatch(
+        errors,
+        "pages/SOFTWARE.md grand total",
+        int(grand_summary.group(1)) if grand_summary else None,
+        software_docx + software_aii,
+    )
+    _require_contains(
+        errors,
+        "pages/SOFTWARE.md current-count signpost",
+        text,
+        "../reports/current_counts.md",
+    )
+
+
 def collect_count_drift() -> list[str]:
     """Return human-readable drift messages; empty if consistent."""
     rows = parse_bibliography_rows()
@@ -340,6 +425,8 @@ def collect_count_drift() -> list[str]:
         )
 
     _current_counts_report(errors, works, folders, software_docx, software_aii)
+    _bibliography_prose_counts(errors, works, folders)
+    _software_prose_counts(errors, software_docx, software_aii)
     _software_json_counts(errors, software_docx, software_aii)
     _github_inventory_counts(errors)
 

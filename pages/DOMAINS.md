@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 44
+- Works: 45
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -69,7 +69,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695260)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699234)
 - 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.7803313)
-- 2025 — [CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling](https://doi.org/10.5281/zenodo.15170907)
+- 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20749817)
 
 **Selected repositories**
 

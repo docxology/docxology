@@ -2008,3 +2008,15 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 170; docs: papers/2026_AGEINT/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - On-Policy Distillation as Active Inference in Finite Variational Models
+T2  - Zenodo
+DO  - 10.5281/zenodo.20749817
+UR  - https://doi.org/10.5281/zenodo.20749817
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 171; docs: papers/2026_PolicyDistillationAs/
+ER  -

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-17T12:51:23Z",
+  "generated_at": "2026-06-18T16:06:34Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 169,
+  "count": 170,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3801,6 +3801,29 @@
       ],
       "methods": [],
       "source": "papers/2026_AGEINT/README.md"
+    },
+    "Friedman2026PolicyDistillationAsActive171": {
+      "citation_key": "Friedman2026PolicyDistillationAsActive171",
+      "abstract": "Abstract This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL distillation loss is variational free energy up to the evidence constant, $F = D {\\mathrm{KL}}(q\\,\\ \\,p(s\\mid o)) - \\log p(o)$, whose KL target is the teacher-induced posterior $p(s\\mid o)\\propto p(o,s)$ . The title's \"as\" is therefore a scoped mathematical correspondence rather than the slogan OPD = Active Inference. Variational free energy names the realized-rollout distillation loss; expected free energy remains the planning-side objective by which the pymdp agent selects actions . On-policy",
+      "keywords": [
+        "on-policy distillation",
+        "active inference",
+        "self-distillation",
+        "privileged information",
+        "free energy principle",
+        "reverse KL divergence",
+        "pymdp",
+        "sophisticated inference"
+      ],
+      "findings": [
+        "on-policy distillation",
+        "active inference",
+        "self-distillation",
+        "privileged information",
+        "free energy principle"
+      ],
+      "methods": [],
+      "source": "papers/2026_PolicyDistillationAs/README.md"
     }
   }
 }

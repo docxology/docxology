@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-06-17T12:54:11Z
+Generated: 2026-06-18T16:10:31Z
 
-Current public metrics: 169 curated works; 91 catalogued software repositories (58 owned + 33 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 170 curated works; 92 catalogued software repositories (58 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (169)
+WORKS AND PUBLICATIONS (170)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.20669283
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -305,8 +305,9 @@ WORKS AND PUBLICATIONS (169)
 [168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
 [169] 2026 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | Zenodo | 10.5281/zenodo.20705351
 [170] 2026 | Paper | AGEINT: Agentic Intelligence | Zenodo | 10.5281/zenodo.20732275
+[171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20749817
 
-SOFTWARE (26)
+SOFTWARE (27)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -334,6 +335,7 @@ ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceI
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
 ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
+ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------

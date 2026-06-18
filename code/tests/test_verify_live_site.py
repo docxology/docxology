@@ -83,6 +83,40 @@ def test_verify_live_site_check_command_validates_fingerprint(monkeypatch, tmp_p
     assert "checked live-site verification report" in output
 
 
+def test_verify_live_site_check_allows_marker_only_deploy_lag(monkeypatch, tmp_path, capsys):
+    counts_path = tmp_path / "data" / "current-counts.json"
+    _write_current_counts(counts_path)
+    monkeypatch.setattr(vl, "CURRENT_COUNTS_JSON", counts_path)
+    report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
+    _write_report(report_path, {}, overall_ok=False, expected_counts=vl.load_current_counts_fingerprint())
+
+    monkeypatch.setattr(vl, "latest_report", lambda pattern, required=False: report_path)
+    monkeypatch.setattr(sys, "argv", ["verify_live_site.py", "--check"])
+
+    vl.main()
+    output = capsys.readouterr().out
+    assert "live markers pending deploy" in output
+
+
+def test_verify_live_site_check_fails_on_http_error(monkeypatch, tmp_path):
+    counts_path = tmp_path / "data" / "current-counts.json"
+    _write_current_counts(counts_path)
+    monkeypatch.setattr(vl, "CURRENT_COUNTS_JSON", counts_path)
+    report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
+    _write_report(
+        report_path,
+        {"results": [{"status": 200}, {"status": 500, "url": "https://example.test/bad"}]},
+        overall_ok=False,
+        expected_counts=vl.load_current_counts_fingerprint(),
+    )
+
+    monkeypatch.setattr(vl, "latest_report", lambda pattern, required=False: report_path)
+    monkeypatch.setattr(sys, "argv", ["verify_live_site.py", "--check"])
+
+    with pytest.raises(SystemExit, match="Live-site page failure"):
+        vl.main()
+
+
 def test_verify_live_site_check_fails_when_fingerprint_drifted(monkeypatch, tmp_path):
     counts_path = tmp_path / "data" / "current-counts.json"
     _write_current_counts(counts_path)

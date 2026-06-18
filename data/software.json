@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-17T12:53:46Z",
+  "generated_at": "2026-06-18T16:10:31Z",
   "source": "pages/SOFTWARE.md",
-  "count": 91,
+  "count": 92,
   "repositories": [
     {
       "name": "template",
@@ -1022,6 +1022,18 @@
       "updated_or_year": "2026",
       "paper_path": "papers/2026_COGANT/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20705351"
+    },
+    {
+      "name": "on_policy_distillation",
+      "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_PolicyDistillationAs/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20749817"
     },
     {
       "name": "Bots",

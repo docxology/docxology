@@ -11,14 +11,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-06-17",
+  "dateModified": "2026-06-18",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "169 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "170 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -64,7 +64,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "91 catalogued software repositories across docxology and AII contributions.",
+      "description": "92 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -341,7 +341,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-06-09.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-06-18.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -355,7 +355,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-06-09.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-06-18.json",
         "encodingFormat": "application/json"
       }
     },
@@ -364,7 +364,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-06-09.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-06-18.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -378,7 +378,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-06-09.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-06-18.json",
         "encodingFormat": "application/json"
       }
     },
@@ -456,7 +456,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-17.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-18.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -470,7 +470,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-17.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-18.json",
         "encodingFormat": "application/json"
       }
     },
@@ -502,7 +502,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-16.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-18.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +516,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-16.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-18.json",
         "encodingFormat": "application/json"
       }
     }

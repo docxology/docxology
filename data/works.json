@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-17T12:38:01Z",
+  "generated_at": "2026-06-18T16:06:34Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 169,
+  "count": 170,
   "works": [
     {
       "num": 1,
@@ -2367,6 +2367,20 @@
       "url": "https://doi.org/10.5281/zenodo.20732275",
       "doi": "10.5281/zenodo.20732275",
       "docs_path": "papers/2026_AGEINT/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 171,
+      "citation_key": "Friedman2026PolicyDistillationAsActive171",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20749817",
+      "doi": "10.5281/zenodo.20749817",
+      "docs_path": "papers/2026_PolicyDistillationAs/",
       "has_paper_folder": true
     }
   ]

@@ -11,6 +11,7 @@ ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 sys.path.insert(0, str(ORCH_DIR))
 
+import build_sitemap  # noqa: E402
 from build_sitemap import render, sitemap_locs  # noqa: E402
 from sitemap_policy import INDEX_PRIORITY_STATIC, indexnow_urls_from_locs  # noqa: E402
 
@@ -46,3 +47,21 @@ def test_static_policy_lists_exports_hub():
     paths = {row[0] for row in INDEX_PRIORITY_STATIC}
     assert "exports.html" in paths
     assert "cite-verify.html" in paths
+
+
+def test_existing_lastmod_uses_latest_entry(tmp_path: Path, monkeypatch):
+    sitemap = tmp_path / "sitemap.xml"
+    sitemap.write_text(
+        "\n".join(
+            [
+                "<urlset>",
+                "<url><lastmod>2026-06-16</lastmod></url>",
+                "<url><lastmod>2026-06-18</lastmod></url>",
+                "</urlset>",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(build_sitemap, "OUT", sitemap)
+
+    assert build_sitemap.existing_lastmod() == "2026-06-18"

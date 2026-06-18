@@ -58,6 +58,7 @@ This writes `reports/paired_publications_YYYY-MM-DD.json`. Review:
   - `create_new`: strong GitHub + Zenodo pair not already represented in the bibliography.
   - `update_existing`: existing row/folder should receive newer DOI, version, PDF, metadata, or source links.
   - `needs_review`: plausible but ambiguous pair; inspect manually before changing curated files.
+  - `already_reviewed`: exact release/record pair is recorded in `data/paired-publication-decisions.json` as represented, superseded, or version-history-only; do not create a duplicate row.
 - `warnings[]` for API or metadata issues that may affect completeness.
 
 Validate the latest cached report:
@@ -90,7 +91,7 @@ Apply mode also runs the publication regeneration chain for bibliography exports
 
 For `needs_review` actions, inspect the GitHub release, Zenodo record, DOI, title, creator list, repository URL, and PDF before deciding.
 
-Record manual decisions in [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../../reports/). An `accept` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata or an already represented work.
+Record manual decisions in [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../../reports/). An `accept` or `superseded` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata, version history, or an already represented work. Exact reviewed pairs will be reported as `already_reviewed` on future scans.
 
 If the item is a real publication but cannot be safely auto-applied:
 

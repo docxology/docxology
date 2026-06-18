@@ -40,6 +40,7 @@ USER_AGENT = "docxology-paired-publication-sync/1.0 (+https://danielarifriedman.
 BIBLIOGRAPHY = "pages/BIBLIOGRAPHY.md"
 SOFTWARE = "pages/SOFTWARE.md"
 PAPER_METADATA = "papers/paper_metadata.json"
+PAIRED_PUBLICATION_DECISIONS = "data/paired-publication-decisions.json"
 TYPE_COUNTS_ORDER = ("Paper", "Presentation", "Book", "Course", "Playbook", "Series")
 TYPE_LABELS = {
     "Paper": "Papers",
@@ -274,6 +275,41 @@ def existing_repo_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str]
     return out
 
 
+def _reviewed_pair_key(doi: str, github_release_url: str) -> tuple[str, str]:
+    return doi.strip().lower(), github_release_url.strip()
+
+
+def reviewed_pair_decisions(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], dict[str, str]]:
+    path = repo_root / PAIRED_PUBLICATION_DECISIONS
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    decisions: dict[tuple[str, str], dict[str, str]] = {}
+    for group in payload.get("groups", []):
+        if not isinstance(group, dict):
+            continue
+        group_decision = str(group.get("decision") or "").strip()
+        representation = str(group.get("representation") or "").strip()
+        folder = str(group.get("folder") or "").strip()
+        for candidate in group.get("raw_candidates", []):
+            if not isinstance(candidate, dict):
+                continue
+            doi = str(candidate.get("doi") or group.get("doi") or "").strip()
+            release_url = str(candidate.get("github_release_url") or "").strip()
+            if not doi or not release_url:
+                continue
+            decisions[_reviewed_pair_key(doi, release_url)] = {
+                "decision": group_decision,
+                "representation": representation,
+                "folder": folder,
+                "group_id": str(group.get("id") or "").strip(),
+            }
+    return decisions
+
+
 def slug_topic(title: str) -> str:
     head = title.split(":", 1)[0]
     words = re.findall(r"[A-Za-z0-9]+", head)
@@ -356,12 +392,20 @@ def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_R
     doi_to_folder = existing_doi_map(repo_root)
     release_title_to_folder = existing_release_title_map(repo_root)
     repo_title_to_folder = existing_repo_title_map(repo_root)
+    reviewed_decisions = reviewed_pair_decisions(repo_root)
     actions: list[SyncAction] = []
     for pair in pairs:
         release_title_folder = release_title_to_folder.get(_pair_key(pair.record.title, pair.github_release_url))
         repo_title_folder = repo_title_to_folder.get(_repo_title_key(pair.record.title, pair.github_repo))
         folder = doi_to_folder.get(pair.doi) or release_title_folder or repo_title_folder or folder_for_pair(pair, repo_root)
-        if pair.confidence != "strong":
+        reviewed = reviewed_decisions.get(_reviewed_pair_key(pair.doi, pair.github_release_url))
+        if reviewed:
+            action_type = "already_reviewed"
+            representation = reviewed.get("representation") or "manual decision"
+            group_id = reviewed.get("group_id") or "decision log"
+            reason = f"{group_id} records this pair as {representation}; do not create a duplicate bibliography row"
+            folder = reviewed.get("folder") or folder
+        elif pair.confidence != "strong":
             action_type = "needs_review"
             reason = "pair lacks DOI/release cross-link evidence required for automatic apply"
         elif pair.doi in doi_to_folder:
@@ -896,6 +940,7 @@ def write_report(
             "zenodo_records": len(records),
             "pairs": len(pairs),
             "strong_pairs": sum(1 for pair in pairs if pair.confidence == "strong"),
+            "already_reviewed": sum(1 for action in actions if action.action_type == "already_reviewed"),
             "needs_review": sum(1 for action in actions if action.action_type == "needs_review"),
             "create_new": sum(1 for action in actions if action.action_type == "create_new"),
             "update_existing": sum(1 for action in actions if action.action_type == "update_existing"),
@@ -963,10 +1008,11 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
     counts = payload.get("counts")
     if not isinstance(counts, dict):
         raise SystemExit("Paired publication report counts must be an object")
-    for action_type in ("create_new", "update_existing", "needs_review"):
+    for action_type in ("create_new", "update_existing", "needs_review", "already_reviewed"):
         actual = sum(1 for action in actions if isinstance(action, dict) and action.get("action_type") == action_type)
-        if counts.get(action_type) != actual:
-            raise SystemExit(f"Paired publication report count mismatch for {action_type}: {counts.get(action_type)} != {actual}")
+        expected = counts.get(action_type, 0)
+        if expected != actual:
+            raise SystemExit(f"Paired publication report count mismatch for {action_type}: {expected} != {actual}")
     existing_dois = {row["doi"] for row in parse_bibliography_rows(repo_root) if row.get("doi")}
     stale_create = [
         str(action.get("doi"))
@@ -1065,9 +1111,10 @@ def main(argv: list[str] | None = None) -> int:
     print(
         f"wrote {display_report_path(report)}: "
         f"{len(pairs)} pairs, "
-        f"{sum(1 for action in actions if action.action_type == 'create_new')} new, "
-        f"{sum(1 for action in actions if action.action_type == 'update_existing')} updates, "
-        f"{sum(1 for action in actions if action.action_type == 'needs_review')} needs review"
+            f"{sum(1 for action in actions if action.action_type == 'create_new')} new, "
+            f"{sum(1 for action in actions if action.action_type == 'update_existing')} updates, "
+            f"{sum(1 for action in actions if action.action_type == 'needs_review')} needs review, "
+            f"{sum(1 for action in actions if action.action_type == 'already_reviewed')} already reviewed"
     )
     return 0
 

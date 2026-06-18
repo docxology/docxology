@@ -30,8 +30,8 @@ def loc(rel: str) -> str:
 def existing_lastmod() -> str | None:
     if not OUT.exists():
         return None
-    match = re.search(r"<lastmod>([^<]+)</lastmod>", OUT.read_text(encoding="utf-8"))
-    return match.group(1) if match else None
+    matches = re.findall(r"<lastmod>([^<]+)</lastmod>", OUT.read_text(encoding="utf-8"))
+    return max(matches) if matches else None
 
 
 def _fs_path(rel: str) -> str:

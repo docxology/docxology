@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T13:24:51Z",
+  "generated_at": "2026-06-18T17:10:34Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -115,7 +115,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-06-17.json"
+        "reports/paired_publications_2026-06-18.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -133,7 +133,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-06-17.json",
+        "reports/paired_publications_2026-06-18.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -248,7 +248,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-06-09.json"
+        "reports/public_source_snapshot_2026-06-18.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -258,7 +258,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-06-09.json"
+        "reports/public_source_inventory_2026-06-18.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -279,7 +279,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-17.json"
+        "reports/asset_size_2026-06-18.json"
       ],
       "sources": [
         "root HTML pages",
@@ -318,7 +318,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-06-16.json"
+        "reports/live_site_verification_2026-06-18.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Publications — Daniel Ari Friedman, PhD",
-    "description": "Complete bibliography: 169 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
+    "description": "Complete bibliography: 170 works in Active Inference, entomology, cognitive security, art & synergetics, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -2879,6 +2879,23 @@
             },
             "keywords": "💻",
             "sameAs": "https://doi.org/10.5281/zenodo.20732275"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "On-Policy Distillation as Active Inference in Finite Variational Models",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "sameAs": "https://doi.org/10.5281/zenodo.20749817"
         }
     ]
 }

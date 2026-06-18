@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (152)
+## Papers (153)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -163,6 +163,7 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 150 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
 | 151 | [2026_COGANT](2026_COGANT/) | — | 2026 | COGANT |
 | 152 | [2026_AGEINT](2026_AGEINT/) | ✅ | 2026 | AGEINT |
+| 153 | [2026_PolicyDistillationAs](2026_PolicyDistillationAs/) | ✅ | 2026 | PolicyDistillationAs |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

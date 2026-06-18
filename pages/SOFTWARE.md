@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*58 original repositories · 33 catalogued Active Inference Institute contributions · [Current public GitHub totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*58 original repositories · 34 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -134,6 +134,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ActiveInferenceImplementations](https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations) | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles | Jupyter | 0 | 2022 |
 | [ATLAS](https://github.com/ActiveInferenceInstitute/ATLAS) | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces | Python | 0 | 2025 |
 | [COGANT](https://github.com/ActiveInferenceInstitute/COGANT) | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · [📄](../papers/2026_COGANT/) · [Zenodo](https://doi.org/10.5281/zenodo.20705351) | Python | 0 | 2026 |
+| [on_policy_distillation](https://github.com/ActiveInferenceInstitute/on_policy_distillation) | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · [📄](../papers/2026_PolicyDistillationAs/) · [Zenodo](https://doi.org/10.5281/zenodo.20749817) | Python | 0 | 2026 |
 | [Bots](https://github.com/ActiveInferenceInstitute/Bots) | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms | — | 0 | 2022 |
 | [Garden-of-Iris](https://github.com/ActiveInferenceInstitute/Garden-of-Iris) | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics | Python | 0 | 2023 |
 | [gen25](https://github.com/ActiveInferenceInstitute/gen25) | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort | — | 0 | 2025 |
@@ -147,7 +148,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 | Category | Owned | Highlighted Repos |
 |----------|:-----:|---|
-| Active Inference & Modeling | 14 | `active_inference`, `active_torchference`, `goference`, `AgenticMesh`, `enactive_inference_model`, `Markov_Blanket_Detection`, `cognitive`, `cognitive-engine`, `ActiveInferAnts`, `EvoJump`, `markdown_decision_process`, `cognitive_case_diagrams`, `Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference`, `transformer` |
+| Active Inference & Modeling | 15 | `active_inference`, `active_torchference`, `goference`, `AgenticMesh`, `enactive_inference_model`, `Markov_Blanket_Detection`, `cognitive`, `cognitive-engine`, `ActiveInferAnts`, `EvoJump`, `markdown_decision_process`, `cognitive_case_diagrams`, `Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference`, `transformer`, `on_policy_distillation` |
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 2 | `p3if`, `opentir` |
@@ -156,8 +157,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 5 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook` |
 | Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
 | **docxology subtotal** | **58** | |
-| AII Contributions (non-fork) | 33 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **91** | |
+| AII Contributions (non-fork) | 34 | Catalogued repositories with docxology contributions |
+| **Grand Total** | **92** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

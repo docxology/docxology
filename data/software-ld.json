@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Software — Daniel Ari Friedman, PhD",
-    "description": "58 original repositories and 33 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
+    "description": "58 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, entomology, and synergetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -951,6 +951,18 @@
             },
             "programmingLanguage": "Python",
             "sameAs": "https://doi.org/10.5281/zenodo.20705351"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "on_policy_distillation",
+            "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20749817"
         },
         {
             "@type": "SoftwareSourceCode",

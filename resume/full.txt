@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-06-17T12:54:11Z
+Generated: 2026-06-18T16:10:31Z
 
-Current public metrics: 169 curated works; 91 catalogued software repositories (58 owned + 33 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 170 curated works; 92 catalogued software repositories (58 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (169)
+WORKS AND PUBLICATIONS (170)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.20669283
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -333,8 +333,9 @@ WORKS AND PUBLICATIONS (169)
 [168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
 [169] 2026 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | Zenodo | 10.5281/zenodo.20705351
 [170] 2026 | Paper | AGEINT: Agentic Intelligence | Zenodo | 10.5281/zenodo.20732275
+[171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20749817
 
-SOFTWARE (91)
+SOFTWARE (92)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -421,6 +422,7 @@ ActiveInferenceInstitute/ultralink | unspecified | https://github.com/ActiveInfe
 ActiveInferenceInstitute/ActiveInferenceImplementations | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles
 ActiveInferenceInstitute/ATLAS | Python | https://github.com/ActiveInferenceInstitute/ATLAS | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
 ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
+ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
 ActiveInferenceInstitute/Bots | unspecified | https://github.com/ActiveInferenceInstitute/Bots | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms
 ActiveInferenceInstitute/Garden-of-Iris | Python | https://github.com/ActiveInferenceInstitute/Garden-of-Iris | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics
 ActiveInferenceInstitute/gen25 | unspecified | https://github.com/ActiveInferenceInstitute/gen25 | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T13:24:51Z",
+  "generated_at": "2026-06-18T17:10:34Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -10,7 +10,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 678,
+  "count": 691,
   "items": [
     {
       "id": "page:home",
@@ -251,7 +251,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-06-09.md",
+      "url": "/reports/reconciliation_2026-06-18.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -263,7 +263,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-06-09.json",
+      "url": "/reports/public_source_inventory_2026-06-18.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -325,7 +325,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-17.json",
+      "url": "/reports/asset_size_2026-06-18.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -351,7 +351,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-16.json",
+      "url": "/reports/live_site_verification_2026-06-18.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4087,6 +4087,30 @@
       "content": "AGEINT: Agentic Intelligence Zenodo 10.5281/zenodo.20732275 Friedman2026AGEINTAgenticIntelligence170 Computational Paper Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the page. It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source identities, then asks the reader to inspect the same things an instructor or assurance reviewer would inspect: the part map that frames the domain, the module overview that names the learner task, the source spine that separates official, standards, scholarly, public-domain, practitioner, vendor, and provenance-only support while separating source quality from narrative fluency, the evidence packet that a student would retain, the reviewer challeng agentic intelligence AGEINT AI agents intelligence tradecraft cognitive security structured analytic techniques active inference model context protocol multi-agent systems operational governance agentic intelligence AGEINT AI agents intelligence tradecraft cognitive security"
     },
     {
+      "id": "work:Friedman2026PolicyDistillationAsActive171",
+      "type": "work",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "url": "/works/Friedman2026PolicyDistillationAsActive171.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20749817",
+      "summary": "Abstract This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construc",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "on-policy distillation",
+        "active inference",
+        "self-distillation",
+        "privileged information",
+        "free energy principle",
+        "reverse KL divergence",
+        "pymdp",
+        "sophisticated inference"
+      ],
+      "content": "On-Policy Distillation as Active Inference in Finite Variational Models Zenodo 10.5281/zenodo.20749817 Friedman2026PolicyDistillationAsActive171 Active Inference Paper Abstract This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL distillation loss is variational free energy up to the evidence constant, $F = D {\\mathrm{KL}}(q\\,\\ \\,p(s\\mid o)) - \\log p(o)$, whose KL target is the teacher-induced posterior $p(s\\mid o)\\propto p(o,s)$ . The title's \"as\" is therefore a scoped mathematical correspondence rather than the slogan OPD = Active Inference. Variational free energy names the realized-rollout distillation loss; expected free energy remains the planning-side objective by which the pymdp agent selects actions . On-policy on-policy distillation active inference self-distillation privileged information free energy principle reverse KL divergence pymdp sophisticated inference on-policy distillation active inference self-distillation privileged information free energy principle"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -5277,6 +5301,20 @@
       "content": "COGANT Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo Python ActiveInferenceInstitute"
     },
     {
+      "id": "software:ActiveInferenceInstitute:on_policy_distillation",
+      "type": "software",
+      "title": "on_policy_distillation",
+      "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
+      "summary": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "on_policy_distillation On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo Python ActiveInferenceInstitute"
+    },
+    {
       "id": "software:ActiveInferenceInstitute:Bots",
       "type": "software",
       "title": "Bots",
@@ -5638,6 +5676,23 @@
       "content": "ActiveInferenceInstitute/CEREBRUM CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling Python ActiveInferenceInstitute  curated recent"
     },
     {
+      "id": "github-repo:ActiveInferenceInstitute/COGANT",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/COGANT",
+      "url": "https://github.com/ActiveInferenceInstitute/COGANT",
+      "summary": "ActiveInferenceInstitute repository",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "curated",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/COGANT  Python ActiveInferenceInstitute  curated recent"
+    },
+    {
       "id": "github-repo:ActiveInferenceInstitute/cognitive",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/cognitive",
@@ -5857,12 +5912,12 @@
       "tags": [
         "github",
         "repository",
-        "Pkl",
+        "Python",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/GeneralizedNotationNotation  Pkl ActiveInferenceInstitute active active-inference active-inference-notation inference curated recent"
+      "content": "ActiveInferenceInstitute/GeneralizedNotationNotation  Python ActiveInferenceInstitute active active-inference active-inference-notation inference curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/generative_agents",
@@ -6044,6 +6099,22 @@
       "content": "ActiveInferenceInstitute/NoOrg NoOrg is a Real Org HTML ActiveInferenceInstitute  curated"
     },
     {
+      "id": "github-repo:ActiveInferenceInstitute/on_policy_distillation",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/on_policy_distillation",
+      "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
+      "summary": "On Policy Distillation and Active Inference",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/on_policy_distillation On Policy Distillation and Active Inference Python ActiveInferenceInstitute  recent"
+    },
+    {
       "id": "github-repo:ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
@@ -6167,10 +6238,9 @@
         "repository",
         "Python",
         "ActiveInferenceInstitute",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "ActiveInferenceInstitute/Symposium  Python ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/Symposium  Python ActiveInferenceInstitute  curated"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/topp",
@@ -6236,6 +6306,23 @@
         "fork"
       ],
       "content": "docxology/actinf_varsynth   docxology  fork"
+    },
+    {
+      "id": "github-repo:docxology/Active-Inference-Collision-Avoidance",
+      "type": "github_repository",
+      "title": "docxology/Active-Inference-Collision-Avoidance",
+      "url": "https://github.com/docxology/Active-Inference-Collision-Avoidance",
+      "summary": "docxology repository",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/Active-Inference-Collision-Avoidance   docxology  fork recent"
     },
     {
       "id": "github-repo:docxology/active-inference-pocket-lab",
@@ -6414,6 +6501,22 @@
         "fork"
       ],
       "content": "docxology/AFFiNE There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.   docxology  fork"
+    },
+    {
+      "id": "github-repo:docxology/AGEINT",
+      "type": "github_repository",
+      "title": "docxology/AGEINT",
+      "url": "https://github.com/docxology/AGEINT",
+      "summary": "AGEINT — Agentic Intelligence Curriculum",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "HTML",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/AGEINT AGEINT — Agentic Intelligence Curriculum HTML docxology  recent"
     },
     {
       "id": "github-repo:docxology/agentic-cursorrules",
@@ -7194,6 +7297,23 @@
       "content": "docxology/client Keybase Go Library, Client, Service, OS X, iOS, Android, Electron Go docxology  fork"
     },
     {
+      "id": "github-repo:docxology/coasys",
+      "type": "github_repository",
+      "title": "docxology/coasys",
+      "url": "https://github.com/docxology/coasys",
+      "summary": "Using all coasys repos",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/coasys Using all coasys repos Python docxology  curated recent"
+    },
+    {
       "id": "github-repo:docxology/codomyrmex",
       "type": "github_repository",
       "title": "docxology/codomyrmex",
@@ -7435,10 +7555,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/dagaz   docxology  fork recent"
+      "content": "docxology/dagaz   docxology  fork"
     },
     {
       "id": "github-repo:docxology/DagBall",
@@ -7471,6 +7590,22 @@
         "fork"
       ],
       "content": "docxology/dangerzone Take potentially dangerous PDFs, office documents, or images and convert them to safe PDFs Python docxology  fork"
+    },
+    {
+      "id": "github-repo:docxology/democreate",
+      "type": "github_repository",
+      "title": "docxology/democreate",
+      "url": "https://github.com/docxology/democreate",
+      "summary": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/developer",
@@ -7685,6 +7820,22 @@
       "content": "docxology/ento_linguistics  Python docxology  curated recent"
     },
     {
+      "id": "github-repo:docxology/entofile",
+      "type": "github_repository",
+      "title": "docxology/entofile",
+      "url": "https://github.com/docxology/entofile",
+      "summary": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. Python docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/eshkol",
       "type": "github_repository",
       "title": "docxology/eshkol",
@@ -7715,6 +7866,23 @@
         "fork"
       ],
       "content": "docxology/eventeum A resilient Ethereum event listener that bridges your smart contract events and backend microservices Java docxology  fork"
+    },
+    {
+      "id": "github-repo:docxology/evo",
+      "type": "github_repository",
+      "title": "docxology/evo",
+      "url": "https://github.com/docxology/evo",
+      "summary": "turns your codebase into an autoresearch loop — discovers what to measure, instruments the benchmark, then runs tree search with parallel subagents.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/evo turns your codebase into an autoresearch loop — discovers what to measure, instruments the benchmark, then runs tree search with parallel subagents.  docxology  fork recent"
     },
     {
       "id": "github-repo:docxology/EvoJump",
@@ -8846,6 +9014,23 @@
       "content": "docxology/kilocode Open Source AI coding assistant for planning, building, and fixing code. We're a superset of Roo, Cline, and our own features. Follow us: kilocode.ai/social  docxology  fork"
     },
     {
+      "id": "github-repo:docxology/kmyth",
+      "type": "github_repository",
+      "title": "docxology/kmyth",
+      "url": "https://github.com/docxology/kmyth",
+      "summary": "docxology repository",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/kmyth   docxology  fork recent"
+    },
+    {
       "id": "github-repo:docxology/KnowledgeBase",
       "type": "github_repository",
       "title": "docxology/KnowledgeBase",
@@ -9443,6 +9628,23 @@
         "fork"
       ],
       "content": "docxology/obsidian-scientific-research-vault An already-configured Obsidian vault for scientific research  docxology  fork"
+    },
+    {
+      "id": "github-repo:docxology/ODEM",
+      "type": "github_repository",
+      "title": "docxology/ODEM",
+      "url": "https://github.com/docxology/ODEM",
+      "summary": "docxology repository",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "fork",
+        "recent"
+      ],
+      "content": "docxology/ODEM  Python docxology  fork recent"
     },
     {
       "id": "github-repo:docxology/oh-my-opencode",
@@ -10697,11 +10899,11 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_active_inference Active inference multi-track exemplar releases  docxology  recent"
+      "content": "docxology/template_active_inference Active inference multi-track exemplar releases Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_autoresearch_project",
@@ -10713,11 +10915,11 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_autoresearch_project Template autoresearch project exemplar releases  docxology  recent"
+      "content": "docxology/template_autoresearch_project Template autoresearch project exemplar releases Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_autoscientists",
@@ -10747,10 +10949,9 @@
         "github",
         "repository",
         "Python",
-        "docxology",
-        "recent"
+        "docxology"
       ],
-      "content": "docxology/template_bioinformatics_project  Python docxology  recent"
+      "content": "docxology/template_bioinformatics_project  Python docxology"
     },
     {
       "id": "github-repo:docxology/template_code_project",
@@ -10762,11 +10963,11 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_code_project Template code project exemplar releases  docxology  recent"
+      "content": "docxology/template_code_project Template code project exemplar releases Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_newspaper",
@@ -10795,11 +10996,27 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_prose_project Template prose project exemplar releases  docxology  recent"
+      "content": "docxology/template_prose_project Template prose project exemplar releases Python docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_sia",
+      "type": "github_repository",
+      "title": "docxology/template_sia",
+      "url": "https://github.com/docxology/template_sia",
+      "summary": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_template",
@@ -10811,11 +11028,11 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo  docxology  recent"
+      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_textbook",
@@ -11298,7 +11515,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 169 works.",
+      "title": "The curated bibliography contains 170 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11306,12 +11523,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 169 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 170 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 152 per-paper documentation folders.",
+      "title": "The repository contains 153 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -11319,12 +11536,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 152 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 153 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 307 public repositories.",
+      "title": "The docxology GitHub profile has 317 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -11332,12 +11549,12 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 307 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 317 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 54 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -11345,7 +11562,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 52 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 33 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 54 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
@@ -11495,7 +11712,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 169 works, 91 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 170 works, 92 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

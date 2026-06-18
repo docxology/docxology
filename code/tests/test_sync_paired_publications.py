@@ -29,6 +29,7 @@ def _write_minimal_repo(root: Path) -> None:
     (root / "pages").mkdir()
     (root / "papers").mkdir()
     (root / "reports").mkdir()
+    (root / "data").mkdir()
     (root / "pages" / "BIBLIOGRAPHY.md").write_text(
         "\n".join(
             [
@@ -67,6 +68,55 @@ def _write_minimal_repo(root: Path) -> None:
     (root / "papers" / "README.md").write_text("# Papers\n\n## Papers (0)\n", encoding="utf-8")
     (root / "papers" / "AGENTS.md").write_text(
         "# Papers\n\nREADME.md present | 0/0 folders\n", encoding="utf-8"
+    )
+
+
+def _write_review_decision(root: Path, pair: PublicationPair, *, folder: str = "2026_NewComputationalProject") -> None:
+    payload = {
+        "generated_at": "2026-06-18T00:00:00Z",
+        "source_report": "reports/paired_publications_2026-06-18.json",
+        "source_review_queue": "",
+        "decision_summary": {
+            "decision": "accept",
+            "groups": 1,
+            "raw_candidates": 1,
+            "note": "test decision",
+        },
+        "groups": [
+            {
+                "id": "R01",
+                "decision": "superseded",
+                "decided_at": "2026-06-18T00:00:00Z",
+                "decided_by": "codex",
+                "doi": pair.doi,
+                "title": pair.record.title,
+                "candidate_github_repo": pair.github_repo,
+                "folder": folder,
+                "representation": "version-history",
+                "raw_candidate_count": 1,
+                "raw_candidates": [
+                    {
+                        "doi": pair.doi,
+                        "record_title": pair.record.title,
+                        "zenodo_record_url": pair.zenodo_record_url,
+                        "github_repo": pair.github_repo,
+                        "github_release_url": pair.github_release_url,
+                        "release_tag": pair.release.tag,
+                        "release_name": pair.release.name,
+                        "resource_type": pair.record.resource_type,
+                        "raw_confidence": pair.confidence,
+                        "evidence": list(pair.evidence),
+                        "review_decision": "superseded",
+                        "reviewed_at": "2026-06-18T00:00:00Z",
+                        "review_source": "test",
+                        "source_report": "reports/paired_publications_2026-06-18.json",
+                    }
+                ],
+            }
+        ],
+    }
+    (root / "data" / "paired-publication-decisions.json").write_text(
+        json.dumps(payload, indent=2) + "\n", encoding="utf-8"
     )
 
 
@@ -129,6 +179,29 @@ def test_build_sync_actions_marks_new_and_existing_pairs(tmp_path: Path):
     apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
     actions = build_sync_actions([pair], repo_root=tmp_path)
     assert actions[0].action_type == "update_existing"
+
+
+def test_build_sync_actions_honors_reviewed_noncanonical_versions(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+
+    actions = build_sync_actions([pair], repo_root=tmp_path)
+
+    assert actions[0].action_type == "already_reviewed"
+    assert actions[0].folder == "2026_NewComputationalProject"
+    assert "do not create a duplicate bibliography row" in actions[0].reason
+
+
+def test_reviewed_decision_takes_precedence_over_existing_doi(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+    _write_review_decision(tmp_path, pair)
+
+    actions = build_sync_actions([pair], repo_root=tmp_path)
+
+    assert actions[0].action_type == "already_reviewed"
 
 
 def test_display_report_path_handles_external_reports(tmp_path: Path):
