@@ -70,7 +70,10 @@ uv run python3 code/orchestrators/validate_repo.py
 
 Software path: `pages/SOFTWARE.md` → `sync_software_html.py --apply` → `export_agent_data.py`.
 After editing any HTML head template that changes file size, refresh the size report with
-`audit_assets.py` (otherwise `validate_repo` fails on a stale report). Network-dependent
+`audit_assets.py` (otherwise `validate_repo` fails on a stale report). `build_sitemap.py`
+derives each URL's `<lastmod>` from **git commit dates**, so regenerate `sitemap.xml` *after*
+committing page changes (a fresh commit bumps every touched file's date) and keep CI on a
+full-history checkout (`fetch-depth: 0`) or `build_sitemap.py --check` reports a stale sitemap. Network-dependent
 generators (`build_github_inventory.py`, `refresh_public_sources.py`) hit live APIs; their
 outputs are committed — patch the output by hand if you only need a small head/meta change
 and can't reach the API, then keep the template in sync.

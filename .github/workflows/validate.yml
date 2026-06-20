@@ -17,6 +17,11 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          # Full history so build_sitemap.py can derive per-URL <lastmod> from
+          # git commit dates reproducibly (shallow checkout yields the single
+          # fetched commit's date for every file → "Stale generated sitemap.xml").
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
