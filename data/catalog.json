@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-06-18",
+  "dateModified": "2026-06-20",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -103,6 +103,29 @@
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/github-repositories.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#videos",
+      "name": "YouTube Video Metadata",
+      "description": "1127 personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status.",
+      "url": "https://danielarifriedman.com/data/videos.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/videos.json",
         "encodingFormat": "application/json"
       }
     },
@@ -456,7 +479,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-18.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-20.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -470,7 +493,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-20.json",
         "encodingFormat": "application/json"
       }
     },
@@ -502,7 +525,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-18.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-20.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +539,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-20.json",
         "encodingFormat": "application/json"
       }
     }

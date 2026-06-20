@@ -159,6 +159,24 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_work_pages.py",
     },
     {
+        "name": "Video pages",
+        "outputs": ["videos/*.html", "data/videos.json"],
+        "sources": [
+            "code/data/youtube_personal.json",
+            "code/data/youtube_institute.json",
+            "data/video-transcripts/*.txt",
+            "data/works.json",
+            "data/work-enrichment.json",
+        ],
+        "command": "python3 code/orchestrators/build_video_pages.py",
+    },
+    {
+        "name": "Video transcript cache",
+        "outputs": ["data/video-transcripts/*.txt"],
+        "sources": ["YouTube captions", "code/orchestrators/fetch_video_transcripts.py"],
+        "command": "python3 code/orchestrators/fetch_video_transcripts.py --channel all",
+    },
+    {
         "name": "Paper folder pages",
         "outputs": ["papers/*/index.html"],
         "sources": ["data/works.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/*.pdf"],

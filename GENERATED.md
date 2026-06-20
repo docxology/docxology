@@ -15,6 +15,8 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Paired publication review decisions | `data/paired-publication-decisions.json`<br>`reports/paired_publications_review_queue_2026-06-04.md` | `reports/paired_publications_2026-06-18.json`<br>`manual review decision` | `manual review; update data/paired-publication-decisions.json` |
 | Domain pages | `domains.html`<br>`domain-*.html`<br>`pages/DOMAINS.md` | `data/works.json`<br>`data/software.json`<br>`code/orchestrators/build_domain_pages.py` | `python3 code/orchestrators/build_domain_pages.py` |
 | Work pages | `works/*.html`<br>`data/work-enrichment.json` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/SKILL.md` | `python3 code/orchestrators/build_work_pages.py` |
+| Video pages | `videos/*.html`<br>`data/videos.json` | `code/data/youtube_personal.json`<br>`code/data/youtube_institute.json`<br>`data/video-transcripts/*.txt`<br>`data/works.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_video_pages.py` |
+| Video transcript cache | `data/video-transcripts/*.txt` | `YouTube captions`<br>`code/orchestrators/fetch_video_transcripts.py` | `python3 code/orchestrators/fetch_video_transcripts.py --channel all` |
 | Paper folder pages | `papers/*/index.html` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/AGENTS.md`<br>`papers/*/*.pdf` | `python3 code/orchestrators/build_paper_pages.py` |
 | Evidence pages | `evidence.html`<br>`pages/EVIDENCE.md` | `data/claims.json`<br>`code/orchestrators/build_evidence_page.py` | `python3 code/orchestrators/build_evidence_page.py` |
 | Search index | `search-index.json` | `data/*.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_search_index.py` |
@@ -25,10 +27,10 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Public source snapshot | `reports/public_source_snapshot_2026-06-18.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
 | Public source inventory | `reports/public_source_inventory_2026-06-18.json` | `ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | External link triage | `reports/external_links_triage_2026-05-15.json`<br>`reports/external_links_triage_2026-05-15.md` | `reports/external_links_2026-05-15.json` | `python3 code/orchestrators/build_external_link_triage.py` |
-| Asset size audit | `reports/asset_size_2026-06-18.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
-| Static accessibility report | `reports/accessibility_static_2026-06-16.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
+| Asset size audit | `reports/asset_size_2026-06-20.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
+| Static accessibility report | `reports/accessibility_static_2026-06-20.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
 | Browser smoke checks | `reports/browser-smoke/2026-05-28/*.png`<br>`reports/browser-smoke/2026-05-28/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
-| Live site verification | `reports/live_site_verification_2026-06-18.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
+| Live site verification | `reports/live_site_verification_2026-06-20.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | Visual QA | `reports/visual-qa/2026-05-28/*.png`<br>`reports/visual-qa/2026-05-28/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |

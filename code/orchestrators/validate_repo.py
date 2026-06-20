@@ -150,7 +150,12 @@ def validate_json_ld() -> None:
         raise SystemExit("No JSON-LD blocks found")
 
 
+def strip_fenced_code_blocks(text: str) -> str:
+    return re.sub(r"(?ms)^(```|~~~)[^\n]*\n.*?^\1[ \t]*$", "", text)
+
+
 def iter_local_links(text: str) -> list[str]:
+    text = strip_fenced_code_blocks(text)
     md_link = re.compile(r"\[[^\]]+\]\((<[^>]+>|[^)]+)\)")
     html_link = re.compile(r"\b(?:href|src)=['\"]([^'\"]+)['\"]")
     return md_link.findall(text) + html_link.findall(text)

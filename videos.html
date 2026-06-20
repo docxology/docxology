@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Timeline — Daniel Ari Friedman</title>
-  <meta name="description" content="Interactive timeline of all videos from Daniel Ari Friedman's personal YouTube channel and the Active Inference Institute channel, across the years.">
+  <title>Daniel Ari Friedman Videos | Active Inference Talks</title>
+  <meta name="description" content="Explore 700+ Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
   <meta name="author" content="Daniel Ari Friedman">
   <meta name="theme-color" content="#0c0c0e">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -16,28 +16,30 @@
   <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <link rel="alternate" type="application/json" href="/data/videos.json" title="Video metadata index">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Video Timeline — Daniel Ari Friedman | 700+ Livestreams">
-  <meta property="og:description" content="700+ livestreams: 500+ Active Inference Institute educational sessions and 200+ personal livestreams on research, art, and complexity.">
+  <meta property="og:title" content="Daniel Ari Friedman Videos | Active Inference Talks">
+  <meta property="og:description" content="Explore 700+ Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
   <meta property="og:url" content="https://danielarifriedman.com/videos.html">
   <meta property="og:image" content="https://danielarifriedman.com/og-media.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Video Timeline — Daniel Ari Friedman | 700+ Livestreams">
+  <meta property="og:image:alt" content="Daniel Ari Friedman Videos | Active Inference Talks">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Video Timeline — Daniel Ari Friedman | 700+ Livestreams">
-  <meta name="twitter:description" content="700+ livestreams: 500+ Active Inference Institute educational sessions and 200+ personal livestreams on research, art, and complexity.">
+  <meta name="twitter:title" content="Daniel Ari Friedman Videos | Active Inference Talks">
+  <meta name="twitter:description" content="Explore 700+ Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
   <meta name="twitter:image" content="https://danielarifriedman.com/og-media.jpg">
+  <meta name="twitter:image:alt" content="Daniel Ari Friedman Videos | Active Inference Talks">
   <meta property="og:site_name" content="Daniel Ari Friedman">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://danielarifriedman.com/videos.html#collection",
-    "name": "Video Timeline — Daniel Ari Friedman",
+    "name": "Daniel Ari Friedman Videos | Active Inference Talks",
     "url": "https://danielarifriedman.com/videos.html",
-    "description": "700+ educational livestreams on Active Inference, complexity, and research.",
+    "description": "700+ educational livestreams and talks on Active Inference, complexity, cognitive security, art, and research.",
     "creator": { "@id": "https://danielarifriedman.com/#person" }
   }
   </script>
@@ -163,6 +165,43 @@
       font-size: .85rem; color: var(--text-secondary);
     }
     .hero-stats span { color: var(--text-primary); font-weight: 600; }
+
+    .video-topic-panel {
+      max-width: 900px;
+      margin: -1rem auto 2rem;
+      padding: 0 2rem 1rem;
+    }
+    .video-topic-panel h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.35rem, 3vw, 1.85rem);
+      line-height: 1.2;
+      margin-bottom: .6rem;
+    }
+    .video-topic-panel p {
+      color: var(--text-secondary);
+      max-width: 760px;
+      line-height: 1.65;
+      font-size: .92rem;
+    }
+    .video-topic-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin-top: 1rem;
+    }
+    .video-topic-links a {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      padding: .4rem .72rem;
+      font-size: .8rem;
+      font-weight: 600;
+    }
+    .video-topic-links a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
 
     /* ── TOOLBAR ─────────────────────────────────────────── */
     .toolbar {
@@ -482,7 +521,7 @@
 
 <!-- ── HERO ── -->
 <div class="hero">
-  <h1>Video Timeline</h1>
+  <h1>Active Inference Video Timeline</h1>
   <div class="hero-meta">
     <a href="https://www.youtube.com/@danielarifriedman" target="_blank" rel="noopener" class="channel-badge badge-personal">
       ▲ Personal Channel
@@ -495,6 +534,20 @@
 </div>
 
 <main id="main">
+
+<section class="video-topic-panel" aria-labelledby="video-topic-heading">
+  <h2 id="video-topic-heading">Talks, Courses, Interviews, and Research Livestreams</h2>
+  <p>Browse Daniel Ari Friedman's public video record across Active Inference Institute education, cognitive security, computational biology, art, complexity science, and open research practice.</p>
+  <div class="video-topic-links" aria-label="Related video and research routes">
+    <a href="domain-active-inference.html">Active Inference</a>
+    <a href="publications.html">Research publications</a>
+    <a href="search.html?q=cognitive%20security">Cognitive security</a>
+    <a href="domain-computational.html">Computational methods</a>
+    <a href="videos/">Video page index</a>
+    <a href="media.html">Podcasts and interviews</a>
+    <a href="https://www.youtube.com/@activeinference" target="_blank" rel="noopener">AII YouTube</a>
+  </div>
+</section>
 
 <!-- ── TOOLBAR ── -->
 <div class="toolbar" id="toolbar" role="toolbar" aria-label="Timeline controls">
@@ -810,9 +863,7 @@ function buildTimeline() {
 
     const card = document.createElement('a');
     card.className = `vid-card vid-${v.channel}`;
-    card.href = `https://www.youtube.com/watch?v=${v.id}`;
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
+    card.href = `videos/${v.channel}-${v.id}.html`;
     card.dataset.id = v.id;
     card.dataset.channel = v.channel;
     card.dataset.year = v.year;
@@ -869,8 +920,7 @@ function buildMobileList() {
     groups[ch].slice().reverse().forEach(v => {
       const a = document.createElement('a');
       a.className = 'mobile-vid-item';
-      a.href = `https://www.youtube.com/watch?v=${v.id}`;
-      a.target = '_blank'; a.rel = 'noopener noreferrer';
+      a.href = `videos/${v.channel}-${v.id}.html`;
       a.dataset.query = v.title.toLowerCase();
 
       const img = document.createElement('img');

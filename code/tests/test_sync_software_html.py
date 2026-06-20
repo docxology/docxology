@@ -58,8 +58,11 @@ def test_generated_software_surfaces():
     twitter_match = re.search(r'<meta name="twitter:description" content="([^"]*)">', html)
     assert og_match and twitter_match
     assert og_match.group(1) == twitter_match.group(1)
-    assert f"{expected_docx} owned" in og_match.group(1)
-    assert f"{expected_aii} AII" in og_match.group(1)
+    description = og_match.group(1)
+    assert len(description) <= 160
+    for term in ["CEREBRUM", "GNN", "P3IF", "MDKV", "Active Inference", "research software"]:
+        assert term in description
+    assert "public repositories" in description
     ld = json.loads(SOFTWARE_LD_JSON.read_text(encoding="utf-8"))
     assert ld["@type"] == "CollectionPage"
     assert len(ld["mainEntity"]) == expected_docx + expected_aii

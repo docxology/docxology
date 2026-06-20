@@ -1,0 +1,35 @@
+<!-- @dsCard group="Foundations" title="Radius + spacing" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radius + spacing — danielarifriedman.com</title>
+<style>
+:root{color-scheme:dark;--bg-primary:#0a0908;--bg-card:rgba(20,18,16,0.96);--text-primary:#f4f1ea;--text-muted:#9a958a;--gold:#e8e2d4;--border:rgba(244,241,234,0.18);--radius:3px}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif;padding:2.4rem}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;margin:0 0 1.4rem;color:#fff}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin:1.6rem 0 .8rem}
+.row{display:flex;gap:1rem;align-items:flex-end;flex-wrap:wrap}
+.radius{width:96px;height:64px;background:var(--bg-card);border:1px solid var(--border)}
+.label{font-size:.74rem;color:var(--text-muted);margin-top:.4rem}
+.space{background:rgba(241,70,58,.5);height:18px}
+.stack>div{display:flex;align-items:center;gap:.8rem;margin:.5rem 0}
+.stack code{font-size:.74rem;color:var(--text-muted);width:5rem}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<h1>Radius &amp; spacing</h1>
+<h2>Corner radius (--radius: 3px — restrained, editorial)</h2>
+<div class="row">
+  <div><div class="radius" style="border-radius:3px"></div><div class="label">3px · cards, inputs (--radius)</div></div>
+  <div><div class="radius" style="border-radius:8px"></div><div class="label">8px · buttons</div></div>
+  <div><div class="radius" style="border-radius:20px"></div><div class="label">20px · pills</div></div>
+</div>
+<h2>Spacing scale (rem)</h2>
+<div class="stack">
+  <div><code>0.45rem</code><div class="space" style="width:.45rem"></div></div>
+  <div><code>0.75rem</code><div class="space" style="width:.75rem"></div></div>
+  <div><code>1rem</code><div class="space" style="width:1rem"></div></div>
+  <div><code>1.4rem</code><div class="space" style="width:1.4rem"></div></div>
+  <div><code>2rem</code><div class="space" style="width:2rem"></div></div>
+</div>
+</body></html>

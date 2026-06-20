@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repository Inventory — Daniel Ari Friedman</title>
-    <meta name="description" content="Full generated inventory of public docxology and Active Inference Institute GitHub repositories, with curated catalog coverage flags.">
+    <title>GitHub Repositories — Daniel Ari Friedman &amp; AII</title>
+    <meta name="description" content="Search 371 public GitHub repos from docxology and AII: Active Inference software, computational biology, cognitive security, and research tools.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/repositories.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/github-repositories.json" title="GitHub repositories JSON">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Repository Inventory — Daniel Ari Friedman">
-    <meta property="og:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
+    <meta property="og:title" content="GitHub Repositories — Daniel Ari Friedman &amp; AII">
+    <meta property="og:description" content="Search 371 public GitHub repos from docxology and AII: Active Inference software, computational biology, cognitive security, and research tools.">
     <meta property="og:url" content="https://danielarifriedman.com/repositories.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-software.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Repository Inventory — Daniel Ari Friedman">
+    <meta property="og:image:alt" content="GitHub Repositories — Daniel Ari Friedman &amp; AII">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Repository Inventory — Daniel Ari Friedman">
-    <meta name="twitter:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
+    <meta name="twitter:title" content="GitHub Repositories — Daniel Ari Friedman &amp; AII">
+    <meta name="twitter:description" content="Search 371 public GitHub repos from docxology and AII: Active Inference software, computational biology, cognitive security, and research tools.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-software.jpg">
+    <meta name="twitter:image:alt" content="GitHub Repositories — Daniel Ari Friedman &amp; AII">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>
         .inventory-controls{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin:1rem 0}
@@ -40,6 +41,13 @@
         .inventory-counts strong{display:block;color:#fff;font-size:1.35rem}
         .note{color:var(--text-muted);font-size:.84rem}
         .inventory-select{padding:.62rem .78rem;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-secondary)}
+        .inventory-route-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin-top:1.25rem}
+        .inventory-route-card{display:block;border:1px solid var(--border);border-radius:8px;background:var(--bg-card);padding:1rem;text-decoration:none}
+        .inventory-route-card strong{display:block;color:var(--gold);font-size:.95rem;margin-bottom:.25rem}
+        .inventory-route-card span{display:block;color:var(--text-secondary);font-size:.82rem;line-height:1.45}
+        .topic-routes{display:flex;flex-wrap:wrap;gap:.55rem;margin:1rem 0 0}
+        .topic-routes a{display:inline-flex;border:1px solid var(--border);border-radius:999px;padding:.35rem .7rem;background:rgba(255,255,255,.03);font-size:.78rem;color:var(--text-secondary);text-decoration:none}
+        .topic-routes a:hover{border-color:var(--gold);color:var(--gold)}
     </style>
     <style>.breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
     <script type="application/ld+json">
@@ -47,8 +55,8 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://danielarifriedman.com/repositories.html#page",
-    "name": "Repository Inventory — Daniel Ari Friedman",
-    "description": "Full generated inventory of public docxology and Active Inference Institute GitHub repositories, with curated catalog coverage flags.",
+    "name": "GitHub Repositories — Daniel Ari Friedman & AII",
+    "description": "Searchable public GitHub repository inventory for docxology and Active Inference Institute research software.",
     "url": "https://danielarifriedman.com/repositories.html",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
@@ -87,23 +95,58 @@
         <ol><li><a href="index.html">Home</a></li><li aria-current="page">Repositories</li></ol>
     </nav>
     <header class="page-hero">
-        <h1>Repository Inventory</h1>
-        <p class="sub">Full generated inventory of public GitHub repositories for docxology and the Active Inference Institute.</p>
+        <h1>GitHub Repository Inventory</h1>
+        <p class="sub">Searchable public software map for Daniel Ari Friedman, docxology, and Active Inference Institute repositories.</p>
     </header>
     <main id="main" class="main">
         <section class="section">
-        <div class="inventory-counts">
+            <div class="section-header">
+                <h2>Open Source Research Software</h2>
+                <p>Route from the full GitHub inventory into curated publications, software, domain pages, and machine-readable exports.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="inventory-route-grid" aria-label="Repository inventory routes">
+                <a class="inventory-route-card" href="software.html"><strong>Curated software catalog</strong><span>Owned projects and Active Inference Institute contributions with publication links.</span></a>
+                <a class="inventory-route-card" href="publications.html"><strong>Publication catalog</strong><span>Search works across Active Inference, entomology, cognitive security, art, and biology.</span></a>
+                <a class="inventory-route-card" href="works/"><strong>Per-work landing pages</strong><span>Canonical pages for bibliography entries, citations, abstracts, and related works.</span></a>
+                <a class="inventory-route-card" href="domain-active-inference.html"><strong>Active Inference software</strong><span>GNN, CEREBRUM, FEP formalization, belief sharing, and educational infrastructure.</span></a>
+                <a class="inventory-route-card" href="domain-computational.html"><strong>Computational methods</strong><span>Reproducible research templates, MDKV, discovery engines, and developer tooling.</span></a>
+                <a class="inventory-route-card" href="catalog.html"><strong>Data catalog</strong><span>JSON exports for works, software, people, organizations, claims, and repository inventory.</span></a>
+            </div>
+            <div class="topic-routes" aria-label="High-interest repository searches">
+                <a href="search.html?q=active%20inference">Active Inference</a>
+                <a href="search.html?q=mdkv">MDKV</a>
+                <a href="search.html?q=p3if">P3IF</a>
+                <a href="search.html?q=cognitive%20security">Cognitive security</a>
+                <a href="search.html?q=computational%20biology">Computational biology</a>
+                <a href="search.html?q=SpikingBrain">SpikingBrain</a>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header">
+                <h2>Repository Coverage</h2>
+                <p>Generated from the GitHub REST API and cross-marked against the curated software catalog.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="inventory-counts">
                 <div><strong>371</strong>Total public repos</div>
                 <div><strong>317</strong>docxology</div>
                 <div><strong>54</strong>AII</div>
-                <div><strong>91</strong>Curated in software catalog</div>
+                <div><strong>92</strong>Curated in software catalog</div>
                 <div><strong>371</strong>Public visibility</div>
                 <div><strong>0</strong>Private visibility</div>
-                <div><strong>253</strong>Forks</div>
+                <div><strong>252</strong>Forks</div>
                 <div><strong>0</strong>Archived</div>
-                <div><strong>101</strong>Updated in 90 days</div>
+                <div><strong>102</strong>Updated in 90 days</div>
             </div>
             
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Search and Filter the Complete Inventory</h2>
+                <p>Filter by owner, curation status, language, recency, forks, and text across names, topics, and descriptions.</p>
+                <div class="section-divider"></div>
+            </div>
             <div class="inventory-controls">
                 <input id="inventorySearch" class="inventory-search" type="search" placeholder="Search repositories, languages, descriptions, topics..." autocomplete="off">
                 <select id="inventoryLanguage" class="inventory-select" aria-label="Filter by language">
@@ -288,13 +331,13 @@
                         <td>2026-06-15</td>
                         <td>curated, recent</td>
                     </tr>
-                    <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="cognitive activeinferenceinstitute/cognitive  python activeinferenceinstitute curated ">
+                    <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="cognitive activeinferenceinstitute/cognitive  python activeinferenceinstitute curated, recent ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/cognitive">ActiveInferenceInstitute/cognitive</a><span></span></td>
                         <td>Python</td>
-                        <td>18</td>
+                        <td>19</td>
                         <td>4</td>
-                        <td>2026-03-09</td>
-                        <td>curated</td>
+                        <td>2026-06-18</td>
+                        <td>curated, recent</td>
                     </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="html" data-search="courses activeinferenceinstitute/courses courses for learning active inference html activeinferenceinstitute curated, recent ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/courses">ActiveInferenceInstitute/courses</a><span>Courses for learning Active Inference</span></td>
@@ -395,9 +438,9 @@
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="generalizednotationnotation activeinferenceinstitute/generalizednotationnotation  python activeinferenceinstitute curated, recent active active-inference active-inference-notation inference">
                         <td><a href="https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation">ActiveInferenceInstitute/GeneralizedNotationNotation</a><span></span></td>
                         <td>Python</td>
-                        <td>25</td>
+                        <td>26</td>
                         <td>3</td>
-                        <td>2026-06-18</td>
+                        <td>2026-06-19</td>
                         <td>curated, recent</td>
                     </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="" data-search="generative_agents activeinferenceinstitute/generative_agents generative agents: interactive simulacra of human behavior  activeinferenceinstitute fork ">
@@ -437,7 +480,7 @@
                         <td>HTML</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>2026-06-10</td>
+                        <td>2026-06-20</td>
                         <td>recent</td>
                     </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="isss activeinferenceinstitute/isss isss python activeinferenceinstitute curated ">
@@ -488,13 +531,13 @@
                         <td>2026-01-31</td>
                         <td>curated</td>
                     </tr>
-                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="on_policy_distillation activeinferenceinstitute/on_policy_distillation on policy distillation and active inference python activeinferenceinstitute recent ">
+                    <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="on_policy_distillation activeinferenceinstitute/on_policy_distillation on policy distillation and active inference python activeinferenceinstitute curated, recent ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/on_policy_distillation">ActiveInferenceInstitute/on_policy_distillation</a><span>On Policy Distillation and Active Inference</span></td>
                         <td>Python</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2026-06-18</td>
-                        <td>recent</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2026-06-19</td>
+                        <td>curated, recent</td>
                     </tr>
                     <tr data-owner="ActiveInferenceInstitute" data-curated="true" data-fork="false" data-archived="false" data-recent="false" data-visibility="public" data-language="julia" data-search="parr_et_al_2022_actinf_textbook activeinferenceinstitute/parr_et_al_2022_actinf_textbook active inference textbook group julia activeinferenceinstitute curated ">
                         <td><a href="https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook">ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook</a><span>Active Inference Textbook Group</span></td>
@@ -1093,7 +1136,7 @@
                         <td>Python</td>
                         <td>7</td>
                         <td>2</td>
-                        <td>2026-06-12</td>
+                        <td>2026-06-19</td>
                         <td>curated, recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="cogames docxology/cogames cogames is a collection of multi-agent cooperative and competitive environments designed for reinforcement learning research. python docxology fork ">
@@ -1277,16 +1320,16 @@
                         <td>HTML</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>2026-06-17</td>
+                        <td>2026-06-18</td>
                         <td>recent</td>
                     </tr>
-                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="dotscope docxology/dotscope the physics engine for ai coding agents.  docxology fork, recent ">
+                    <tr data-owner="docxology" data-curated="false" data-fork="false" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="dotscope docxology/dotscope the physics engine for ai coding agents.  docxology recent ">
                         <td><a href="https://github.com/docxology/dotscope">docxology/dotscope</a><span>The Physics Engine for AI Coding Agents.</span></td>
                         <td>—</td>
                         <td>0</td>
                         <td>0</td>
                         <td>2026-04-14</td>
-                        <td>fork, recent</td>
+                        <td>recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="julia" data-search="efeasvfe docxology/efeasvfe  julia docxology fork ">
                         <td><a href="https://github.com/docxology/EFEasVFE">docxology/EFEasVFE</a><span></span></td>
@@ -2093,7 +2136,7 @@
                         <td>Python</td>
                         <td>6</td>
                         <td>1</td>
-                        <td>2026-06-14</td>
+                        <td>2026-06-19</td>
                         <td>curated, recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="metta docxology/metta  python docxology fork ">
@@ -3115,7 +3158,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="note">Generated at 2026-06-18T16:05:54Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
+            <p class="note">Generated at 2026-06-20T04:25:29Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
         </section>
     </main>
     <footer role="contentinfo">

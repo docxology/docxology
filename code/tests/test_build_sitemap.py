@@ -33,6 +33,17 @@ def test_sitemap_includes_work_pages():
     assert any(loc.endswith("works/Friedman2026PolicyEntanglementActiveInference119.html") for loc in locs)
 
 
+def test_sitemap_includes_video_pages_when_generated(tmp_path: Path, monkeypatch):
+    videos_dir = tmp_path / "videos"
+    videos_dir.mkdir()
+    (videos_dir / "institute-abc123.html").write_text("<html></html>", encoding="utf-8")
+    monkeypatch.setattr(build_sitemap, "REPO_ROOT", tmp_path)
+    build_sitemap.git_lastmod.cache_clear()
+    locs = re.findall(r"<loc>([^<]+)</loc>", render())
+    assert "https://danielarifriedman.com/videos/" in locs
+    assert "https://danielarifriedman.com/videos/institute-abc123.html" in locs
+
+
 def test_indexnow_subset_of_sitemap():
     locs = sitemap_locs()
     indexnow = indexnow_urls_from_locs(locs)
@@ -47,6 +58,7 @@ def test_static_policy_lists_exports_hub():
     paths = {row[0] for row in INDEX_PRIORITY_STATIC}
     assert "exports.html" in paths
     assert "cite-verify.html" in paths
+    assert "videos/" in paths
 
 
 def test_existing_lastmod_uses_latest_entry(tmp_path: Path, monkeypatch):

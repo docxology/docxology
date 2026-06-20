@@ -49,11 +49,12 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     live_site = _latest_url("live_site_verification_*.json", "/reports/live_site_verification_2026-05-13.json")
     return [
     ("home", "page", "Daniel Ari Friedman", "/", "Homepage and professional profile.", ["homepage", "profile"]),
-    ("publications", "page", "Publications", "/publications.html", "Unified bibliography table.", ["bibliography", "papers"]),
+    ("publications", "page", "Publications", "/publications.html", "Searchable bibliography of Active Inference, biology, cognitive security, art, and computational works.", ["bibliography", "papers", "active inference"]),
     ("works", "page", "Works Index", "/works/", "Generated per-work bibliography pages.", ["works", "citations"]),
     ("domains", "page", "Research Domains", "/domains.html", "Domain landing pages and learning paths.", ["domains"]),
     ("software", "page", "Software", "/software.html", "Owned and AII software repositories.", ["software", "github"]),
-    ("repositories", "page", "Repository Inventory", "/repositories.html", "Full generated inventory of public docxology and AII GitHub repositories.", ["software", "github", "inventory"]),
+    ("repositories", "page", "GitHub Repositories", "/repositories.html", "Search public docxology and Active Inference Institute repositories by topic, language, owner, and curation status.", ["software", "github", "inventory", "active inference"]),
+    ("videos", "page", "Videos", "/videos.html", "Timeline of Active Inference talks, research livestreams, courses, interviews, and public video sessions.", ["videos", "active inference", "talks", "youtube"]),
     ("search", "page", "Search", "/search.html", "Human-facing search over works, software, pages, people, organizations, and claims.", ["search"]),
     ("catalog", "page", "Data Catalog", "/catalog.html", "Structured DataCatalog for public JSON exports.", ["catalog", "structured data"]),
     ("exports", "page", "Public Exports", "/exports.html", "HTML index of citation exports and JSON datasets.", ["exports", "citation", "bibtex"]),
@@ -175,6 +176,35 @@ def github_repo_item(repo: dict) -> dict:
     }
 
 
+def video_item(video: dict) -> dict:
+    topics = [topic["label"] for topic in video.get("topics", [])]
+    related_works = [work["title"] for work in video.get("related_works", [])]
+    return {
+        "id": f"video:{video['channel']}:{video['id']}",
+        "type": "video",
+        "title": video["title"],
+        "url": video["page_url"],
+        "external_url": video["youtube_url"],
+        "summary": (
+            f"{video['channel_label']} video from {video['date']}"
+            + (f" · {', '.join(topics[:3])}" if topics else "")
+        ),
+        "year": video["year"],
+        "domain": video["channel_label"],
+        "tags": ["video", "youtube", video["channel"], *topics],
+        "content": " ".join(
+            [
+                video["title"],
+                video["channel_label"],
+                video["date"],
+                " ".join(topics),
+                " ".join(related_works),
+                video.get("transcript_excerpt", ""),
+            ]
+        ).strip(),
+    }
+
+
 def person_item(person: dict) -> dict:
     return {
         "id": f"person:{person['name']}",
@@ -246,6 +276,7 @@ def render(generated_at: str | None = None) -> str:
     enrichments = load_json("data/work-enrichment.json").get("works", {})
     software = load_json("data/software.json")["repositories"]
     github_repositories = load_json("data/github-repositories.json")["repositories"]
+    videos = load_json("data/videos.json")["videos"]
     people = load_json("data/people.json")["people"]
     orgs = load_json("data/organizations.json")["organizations"]
     claims = load_json("data/claims.json")["claims"]
@@ -257,6 +288,7 @@ def render(generated_at: str | None = None) -> str:
     items.extend(work_item(work, enrichments) for work in works)
     items.extend(software_item(repo) for repo in software)
     items.extend(github_repo_item(repo) for repo in github_repositories)
+    items.extend(video_item(video) for video in videos)
     items.extend(person_item(person) for person in people)
     items.extend(org_item(org) for org in orgs)
     items.extend(claim_item(claim) for claim in claims)
@@ -268,6 +300,7 @@ def render(generated_at: str | None = None) -> str:
             "data/work-enrichment.json",
             "data/software.json",
             "data/github-repositories.json",
+            "data/videos.json",
             "data/people.json",
             "data/organizations.json",
             "data/claims.json",

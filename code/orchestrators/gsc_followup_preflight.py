@@ -21,6 +21,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from sitemap_policy import SITE_ORIGIN, gsc_priority_urls  # noqa: E402
+from build_sitemap import sitemap_locs  # noqa: E402
 
 try:
     from report_paths import dated_report_path, generated_timestamp
@@ -48,7 +49,7 @@ MANUAL_STEPS = [
     },
     {
         "id": "gsc-index-hubs",
-        "title": "Request indexing for 6 priority hubs",
+        "title": "Request indexing for priority URLs",
         "gsc_url": GSC_LINKS["url_inspection"],
         "action": "URL Inspection → Request indexing for each priority URL",
     },
@@ -119,11 +120,12 @@ def local_checks(repo_root: Path) -> list[dict]:
     sitemap = repo_root / "sitemap.xml"
     text = sitemap.read_text(encoding="utf-8")
     locs = re.findall(r"<loc>([^<]+)</loc>", text)
+    expected_url_count = len(sitemap_locs())
     results.append(
         {
             "check": "sitemap_url_count",
-            "ok": 186 <= len(locs) <= 206,
-            "detail": f"{len(locs)} URLs (expected ~196)",
+            "ok": len(locs) == expected_url_count,
+            "detail": f"{len(locs)} URLs (expected {expected_url_count})",
         }
     )
     papers_in_sitemap = [loc for loc in locs if "/papers/" in loc]
@@ -192,6 +194,10 @@ def build_report(repo_root: Path, skip_live: bool) -> dict:
     local = local_checks(repo_root)
     live = [] if skip_live else live_checks()
     preflight_ok = all(row["ok"] for row in local + live)
+    priority_paths = ", ".join(
+        "/" if url == SITE_ORIGIN else "/" + url.removeprefix(SITE_ORIGIN)
+        for url in gsc_priority_urls()
+    )
     return {
         "generated_at": generated_timestamp(),
         "property": PROPERTY,
@@ -205,7 +211,7 @@ def build_report(repo_root: Path, skip_live: bool) -> dict:
             f"[ ] Signed into GSC for {PROPERTY}",
             "[ ] Preflight passed (this script)",
             "[ ] Submitted sitemap.xml",
-            "[ ] Requested indexing: /, exports.html, catalog.html, cite-verify.html, discovery.html, publications.html",
+            f"[ ] Requested indexing: {priority_paths}",
             "[ ] Validate fix: Page with redirect",
             "[ ] Validate fix: Alternate page with proper canonical",
             "[ ] Validate fix: Not found (404)",

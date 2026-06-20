@@ -1,6 +1,6 @@
 # Google Search Console — manual follow-up runbook
 
-Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedman.com/) (sitemap ~196 URLs, `works/` canonicals, open crawl, `exports.html` hub). **IndexNow does not notify Google.** These steps require a signed-in browser with owner or full-user access to the GSC property.
+Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedman.com/) (sitemap includes priority hubs, canonical `works/` pages, generated `videos/` pages, open crawl, and the `exports.html` hub). **IndexNow does not notify Google.** These steps require a signed-in browser with owner or full-user access to the GSC property.
 
 **Property:** [https://danielarifriedman.com/](https://danielarifriedman.com/) (apex, not `www`)
 
@@ -19,35 +19,40 @@ Site-side SEO fixes are live on [danielarifriedman.com](https://danielarifriedma
    uv run python3 code/orchestrators/gsc_followup_preflight.py
    ```
 4. Sanity checks (also covered by preflight):
-   - [sitemap.xml](https://danielarifriedman.com/sitemap.xml) — ~196 URLs, no `/papers/` paths
+   - [sitemap.xml](https://danielarifriedman.com/sitemap.xml) — generated URL count from preflight, no `/papers/` paths
    - [robots.txt](https://danielarifriedman.com/robots.txt) — `Allow: /` only
 
 ---
 
 ## Step 1 — Resubmit the sitemap
 
-**Why:** Google should discover the slimmed sitemap (was ~309 URLs; `papers/` removed).
+**Why:** Google should discover the slimmed sitemap (`papers/` removed; high-value hubs and work pages retained).
 
 1. Open [Sitemaps](https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/).
 2. Under **Add a new sitemap**, enter `sitemap.xml` and click **Submit**.
 3. If already listed, confirm **Last read** updates over the next few days (resubmit is fine).
 
-**Success:** Status **Success**; discovered URLs trend toward ~196.
+**Success:** Status **Success**; discovered URLs trend toward the current sitemap URL count.
 
 ---
 
-## Step 2 — Request indexing (6 priority hubs)
+## Step 2 — Request indexing (priority URLs)
 
 Use [URL Inspection](https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/) for each URL:
 
 | URL |
 |-----|
 | https://danielarifriedman.com/ |
+| https://danielarifriedman.com/repositories.html |
+| https://danielarifriedman.com/videos.html |
+| https://danielarifriedman.com/videos/ |
+| https://danielarifriedman.com/software.html |
 | https://danielarifriedman.com/exports.html |
 | https://danielarifriedman.com/catalog.html |
 | https://danielarifriedman.com/cite-verify.html |
 | https://danielarifriedman.com/discovery.html |
 | https://danielarifriedman.com/publications.html |
+| https://danielarifriedman.com/works/ |
 
 Per URL: paste URL → Enter → **Request indexing** (daily quota applies; spread across days if needed).
 
@@ -108,7 +113,7 @@ Meaningful count changes often take **1–4 weeks**.
 [ ] Signed into GSC for https://danielarifriedman.com/
 [ ] Preflight passed: uv run python3 code/orchestrators/gsc_followup_preflight.py
 [ ] Submitted sitemap.xml
-[ ] Requested indexing: /, exports.html, catalog.html, cite-verify.html, discovery.html, publications.html
+[ ] Requested indexing: /, repositories.html, videos.html, videos/, software.html, exports.html, catalog.html, cite-verify.html, discovery.html, publications.html, works/
 [ ] Validate fix: Page with redirect
 [ ] Validate fix: Alternate page with proper canonical
 [ ] Validate fix: Not found (404)

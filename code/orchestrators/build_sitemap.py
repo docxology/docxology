@@ -68,6 +68,10 @@ def url_entry(rel_path: str, changefreq: str, priority: str, lastmod: str) -> st
     return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{entry_lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
+def generated_url_entry(rel_path: str, changefreq: str, priority: str, lastmod: str) -> str:
+    return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
+
+
 def sitemap_locs(lastmod: str | None = None) -> list[str]:
     """Absolute URLs included in sitemap.xml (for IndexNow and tests)."""
     date = lastmod or report_date_string()
@@ -79,6 +83,12 @@ def sitemap_locs(lastmod: str | None = None) -> list[str]:
             if path.name == "index.html":
                 continue
             locs.append(loc(f"works/{path.name}"))
+    videos_dir = REPO_ROOT / "videos"
+    if videos_dir.exists():
+        for path in sorted(videos_dir.glob("*.html")):
+            if path.name == "index.html":
+                continue
+            locs.append(loc(f"videos/{path.name}"))
     return locs
 
 
@@ -91,6 +101,12 @@ def render(lastmod: str | None = None) -> str:
             if path.name == "index.html":
                 continue
             entries.append(url_entry(f"works/{path.name}", "yearly", "0.45", date))
+    videos_dir = REPO_ROOT / "videos"
+    if videos_dir.exists():
+        for path in sorted(videos_dir.glob("*.html")):
+            if path.name == "index.html":
+                continue
+            entries.append(generated_url_entry(f"videos/{path.name}", "yearly", "0.35", date))
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

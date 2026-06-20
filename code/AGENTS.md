@@ -13,13 +13,15 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
-| `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` |
+| `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` (`--fast` merges flat-playlist refreshes with cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
 | `orchestrators/build_resume.py` | Generate `data/resume.json`, plaintext resume variants, and `resume/resume.pdf` |
 | `orchestrators/sync_paired_publications.py` | Dry-run/apply checker for paired GitHub release + Zenodo DOI publications |
 | `orchestrators/build_domain_pages.py` | Generate `domains.html`, `domain-*.html`, and `pages/DOMAINS.md` |
 | `orchestrators/build_work_pages.py` | Generate `works/index.html` and one HTML landing page per bibliography row |
+| `orchestrators/build_video_pages.py` | Generate `videos/index.html`, one HTML landing page per YouTube video, and `data/videos.json` |
+| `orchestrators/fetch_video_transcripts.py` | Optional caption-cache fetcher: YouTube captions → `data/video-transcripts/*.txt` |
 | `orchestrators/build_evidence_page.py` | Generate `evidence.html` and `pages/EVIDENCE.md` from `data/claims.json` |
 | `orchestrators/build_catalog.py` | Generate `catalog.html` and `data/catalog.json` with Schema.org DataCatalog metadata |
 | `orchestrators/build_updates_page.py` | Generate `updates.html` from `CHANGELOG.md` |
@@ -54,12 +56,13 @@ Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency
 
 1. Bibliography edits — `code/orchestrators/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
 2. Software catalog edits — `code/orchestrators/sync_software_html.py --apply`, `export_agent_data.py`, then domain/search/catalog exports.
-3. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.
-4. Resume/CV exports — `build_resume.py --all` after changing `resume/source.json`, bibliography/software data, Scholar snapshot, or claim data.
-5. Paired GitHub + Zenodo publication checks — `sync_paired_publications.py` writes a dry-run report by default; use `--apply` only for strong pairs.
-6. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
-7. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
-8. Health gate — `validate_repo.py` (includes count-consistency check).
+3. YouTube metadata edits — `build_video_pages.py`, then search/catalog/sitemap exports; run `fetch_video_transcripts.py` first only when refreshing cached caption text.
+4. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.
+5. Resume/CV exports — `build_resume.py --all` after changing `resume/source.json`, bibliography/software data, Scholar snapshot, or claim data.
+6. Paired GitHub + Zenodo publication checks — `sync_paired_publications.py` writes a dry-run report by default; use `--apply` only for strong pairs.
+7. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
+8. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
+9. Health gate — `validate_repo.py` (includes count-consistency check).
 
 ## Tests
 

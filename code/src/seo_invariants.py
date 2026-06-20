@@ -29,6 +29,8 @@ REDIRECT_STUBS: list[tuple[str, str]] = [
 _META_ROBOTS = re.compile(r'<meta\s+name="robots"\s+content="([^"]+)"', re.I)
 _LINK_CANONICAL = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.I)
 _SITEMAP_LOC = re.compile(r"<loc>(https://danielarifriedman\.com/[^<]*)</loc>")
+_META_PROPERTY = re.compile(r'<meta\s+property="([^"]+)"\s+content="([^"]*)"', re.I)
+_META_NAME = re.compile(r'<meta\s+name="([^"]+)"\s+content="([^"]*)"', re.I)
 
 
 def _read(path: Path) -> str:
@@ -43,6 +45,20 @@ def _meta_robots(html: str) -> str | None:
 def _canonical(html: str) -> str | None:
     match = _LINK_CANONICAL.search(html)
     return match.group(1).strip() if match else None
+
+
+def _property_meta(html: str, prop: str) -> str | None:
+    for key, value in _META_PROPERTY.findall(html):
+        if key.lower() == prop.lower():
+            return value
+    return None
+
+
+def _name_meta(html: str, name: str) -> str | None:
+    for key, value in _META_NAME.findall(html):
+        if key.lower() == name.lower():
+            return value
+    return None
 
 
 def _works_by_docs_path(repo_root: Path) -> dict[str, dict]:
@@ -156,6 +172,16 @@ def check_social_meta(repo_root: Path) -> list[str]:
             errors.append(f"{rel}: og:image present but missing twitter:card")
         if 'property="og:image:alt"' not in html:
             errors.append(f"{rel}: og:image present but missing og:image:alt")
+        if 'name="twitter:image:alt"' not in html:
+            errors.append(f"{rel}: og:image present but missing twitter:image:alt")
+        if path.parent == repo_root:
+            og_title = _property_meta(html, "og:title")
+            twitter_title = _name_meta(html, "twitter:title")
+            image_alt = _property_meta(html, "og:image:alt")
+            if og_title and twitter_title and og_title != twitter_title:
+                errors.append(f"{rel}: twitter:title {twitter_title!r} != og:title {og_title!r}")
+            if og_title and image_alt and og_title != image_alt:
+                errors.append(f"{rel}: og:image:alt {image_alt!r} != og:title {og_title!r}")
     return errors
 
 

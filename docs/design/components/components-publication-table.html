@@ -1,0 +1,40 @@
+<!-- @dsCard group="Components" title="Publication table" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publication table — danielarifriedman.com</title>
+<style>
+:root{color-scheme:dark;--bg-primary:#0a0908;--bg-card:rgba(20,18,16,0.96);--text-primary:#f4f1ea;--text-secondary:#cfc9bd;--text-muted:#9a958a;--gold:#e8e2d4;--red-pure:#f1463a;--border:rgba(244,241,234,0.18);--radius:3px}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif;padding:2.4rem}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;margin:0 0 1.4rem;color:#fff}
+.filter-row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin-bottom:1.2rem;padding:1rem 1.25rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius)}
+.filter-row input{flex:1;min-width:160px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:var(--radius);color:var(--text-primary);padding:.5rem .7rem;font-size:.85rem}
+.result-count{font-size:.78rem;color:var(--text-muted)}
+.pub-table-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.86rem}
+th,td{text-align:left;padding:.7rem .9rem;border-bottom:1px solid var(--border)}
+th{color:var(--text-muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em}
+td a{color:var(--text-primary);text-decoration:none}
+td a:hover{color:#fff}
+.year{color:var(--gold);font-weight:700}
+.type-badge{display:inline-block;padding:.1rem .45rem;border-radius:4px;font-size:.66rem;font-weight:600;text-transform:uppercase;background:rgba(241,70,58,.16);color:#ff8a80}
+.doi{color:var(--text-muted);font-size:.78rem}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<h1>Publication table</h1>
+<div class="filter-row">
+  <input type="search" placeholder="Filter by title, venue, or DOI…" aria-label="Filter publications">
+  <span class="result-count" aria-live="polite">Showing 3 of 169 works</span>
+</div>
+<div class="pub-table-wrap">
+  <table>
+    <thead><tr><th>Year</th><th>Title</th><th>Type</th><th>Domain</th><th>DOI</th></tr></thead>
+    <tbody>
+      <tr><td class="year">2026</td><td><a href="#">Active Inference Meta-Analysis</a></td><td><span class="type-badge">Paper</span></td><td>Active Inference</td><td class="doi">10.5281/zenodo.19461934</td></tr>
+      <tr><td class="year">2026</td><td><a href="#">Cognitive Case Diagrams</a></td><td><span class="type-badge">Paper</span></td><td>Active Inference</td><td class="doi">10.5281/zenodo.19695260</td></tr>
+      <tr><td class="year">2026</td><td><a href="#">Biology Textbook</a></td><td><span class="type-badge">Book</span></td><td>Computational</td><td class="doi">10.5281/zenodo.20286478</td></tr>
+    </tbody>
+  </table>
+</div>
+</body></html>

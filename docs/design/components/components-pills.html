@@ -1,0 +1,37 @@
+<!-- @dsCard group="Components" title="Domain pills + type badges" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pills + badges — danielarifriedman.com</title>
+<style>
+:root{color-scheme:dark;--bg-primary:#0a0908;--text-primary:#f4f1ea;--text-secondary:#cfc9bd;--text-muted:#9a958a;--gold:#e8e2d4;--red-pure:#f1463a;--border:rgba(244,241,234,0.18)}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif;padding:2.4rem}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;margin:0 0 1.4rem;color:#fff}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin:1.6rem 0 .8rem}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.domain-pill{display:inline-flex;align-items:center;gap:.3rem;padding:.25rem .65rem;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:20px;font-size:.72rem;color:var(--text-secondary);cursor:pointer;transition:all .2s}
+.domain-pill:hover,.domain-pill.active{border-color:rgba(201,168,76,0.4);color:var(--gold);background:rgba(201,168,76,0.05)}
+.type-badge{display:inline-block;padding:.1rem .45rem;border-radius:4px;font-size:.68rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.t-paper{background:rgba(241,70,58,.16);color:#ff8a80}
+.t-book{background:rgba(232,226,212,.16);color:#e8e2d4}
+.t-software{background:rgba(120,180,255,.16);color:#9ec5ff}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<h1>Domain pills &amp; type badges</h1>
+<h2>Domain filter pills</h2>
+<div class="row">
+  <span class="domain-pill active">All</span>
+  <span class="domain-pill">Active Inference</span>
+  <span class="domain-pill">Entomology</span>
+  <span class="domain-pill">Cognitive Security</span>
+  <span class="domain-pill">Computational</span>
+  <span class="domain-pill">Art &amp; Synergetics</span>
+</div>
+<h2>Type badges</h2>
+<div class="row">
+  <span class="type-badge t-paper">Paper</span>
+  <span class="type-badge t-book">Book</span>
+  <span class="type-badge t-software">Software</span>
+</div>
+</body></html>

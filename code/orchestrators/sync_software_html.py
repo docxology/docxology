@@ -93,9 +93,8 @@ def main_entity_object(row: SoftwareRow) -> dict:
 
 def collection_page_description(docx_count: int, aii_count: int) -> str:
     return (
-        f"{docx_count} original repositories and {aii_count} catalogued "
-        "Active Inference Institute contributions spanning Active Inference, "
-        "entomology, and synergetics."
+        f"{docx_count} original repositories and {aii_count} catalogued Active Inference Institute "
+        "contributions spanning Active Inference, cognitive security, computational biology, and research tools."
     )
 
 
@@ -105,7 +104,7 @@ def build_collection_page(rows: list[SoftwareRow]) -> dict:
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Software — Daniel Ari Friedman, PhD",
+        "name": "Daniel Ari Friedman Software",
         "description": collection_page_description(len(docx), len(aii)),
         "author": {
             "@type": "Person",
@@ -200,6 +199,7 @@ def replace_inline_collection_ld(html_text: str) -> str:
 
 def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]) -> str:
     public_total = github_counts.get("total")
+    title = "Daniel Ari Friedman Software | Active Inference Tools"
     public_phrase = (
         f"{public_total} public repositories across docxology and AII"
         if public_total is not None
@@ -209,14 +209,15 @@ def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_co
     # fuller phrasing with "across docxology and AII" remains in the hero below.
     if public_total is not None:
         desc = (
-            "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF — "
-            f"{public_total} public repositories, {docx_count} owned, {aii_count} AII contributions."
+            f"Explore CEREBRUM, GNN, P3IF, MDKV, and {public_total} public repositories by "
+            "Daniel Ari Friedman and AII across Active Inference and research software."
         )
     else:
         desc = (
-            "Open-source frameworks by Daniel Ari Friedman: CEREBRUM, GNN, Thoughtseeds, P3IF — "
-            f"{docx_count} owned repositories and {aii_count} catalogued AII contributions."
+            "Explore CEREBRUM, GNN, P3IF, MDKV, and open-source research software by "
+            "Daniel Ari Friedman across Active Inference, biology, and security."
         )
+    html_text = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html_text, count=1)
     html_text = re.sub(
         r'(<meta name="description" content=")[^"]*(")',
         rf"\g<1>{desc}\2",
@@ -224,8 +225,26 @@ def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_co
         count=1,
     )
     html_text = re.sub(
+        r'(<meta property="og:title" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta property="og:image:alt" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
         r'(<meta property="og:description" content=")[^"]*(")',
         rf"\g<1>{desc}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta name="twitter:title" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
         html_text,
         count=1,
     )

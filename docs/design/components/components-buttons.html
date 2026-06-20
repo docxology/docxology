@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" title="Buttons" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buttons — danielarifriedman.com</title>
+<style>
+:root{color-scheme:dark;--bg-primary:#0a0908;--text-primary:#f4f1ea;--text-muted:#9a958a;--border:rgba(244,241,234,0.18);--red-pure:#f1463a}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif;padding:2.4rem}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;margin:0 0 1.4rem;color:#fff}
+.row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:1.6rem}
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.65rem 1.4rem;border-radius:8px;font-weight:600;font-size:.88rem;letter-spacing:.01em;transition:all .25s;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.24);background:rgba(14,14,14,0.72);color:#f4f4f4;box-shadow:0 10px 30px rgba(0,0,0,0.36);cursor:pointer;text-decoration:none}
+.btn-gold{color:#fff;border-color:rgba(255,255,255,0.34)}
+.btn-gold:hover{background:rgba(255,255,255,0.13);border-color:rgba(255,0,0,0.65);color:#fff;transform:translateY(-1px)}
+.btn-outline{color:#d2d2d2;background:rgba(18,18,18,0.68)}
+.btn-outline:hover{border-color:rgba(255,0,0,0.6);color:#fff}
+.label{font-size:.74rem;color:var(--text-muted);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<h1>Buttons</h1>
+<div class="label">Default · gold · outline</div>
+<div class="row">
+  <a class="btn" href="#">View publications</a>
+  <a class="btn btn-gold" href="#">Cite this work</a>
+  <a class="btn btn-outline" href="#">Download CV</a>
+</div>
+<div class="label">With icon</div>
+<div class="row">
+  <a class="btn btn-gold" href="#">↗ ORCID</a>
+  <a class="btn btn-outline" href="#">⤓ BibTeX</a>
+</div>
+</body></html>

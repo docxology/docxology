@@ -24,6 +24,7 @@
     <meta name="twitter:title" content="Data Catalog — Daniel Ari Friedman">
     <meta name="twitter:description" content="Structured JSON datasets for the public research and software index.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta name="twitter:image:alt" content="Data Catalog — Daniel Ari Friedman">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>.catalog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}.catalog-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}.catalog-card h2{font-size:1rem;margin-bottom:.4rem}.catalog-card p{color:var(--text-secondary);font-size:.86rem;line-height:1.6}.catalog-card span{display:block;margin-top:.75rem;color:var(--text-muted);font-size:.75rem;overflow-wrap:anywhere}</style>
     <script type="application/ld+json">
@@ -40,7 +41,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-06-18",
+  "dateModified": "2026-06-20",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -132,6 +133,29 @@
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/github-repositories.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#videos",
+      "name": "YouTube Video Metadata",
+      "description": "1127 personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status.",
+      "url": "https://danielarifriedman.com/data/videos.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/videos.json",
         "encodingFormat": "application/json"
       }
     },
@@ -485,7 +509,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-18.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-06-20.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -499,7 +523,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-06-20.json",
         "encodingFormat": "application/json"
       }
     },
@@ -531,7 +555,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-18.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-20.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -545,7 +569,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-20.json",
         "encodingFormat": "application/json"
       }
     }
@@ -606,6 +630,11 @@
                     <h2><a href="data/github-repositories.json">Full GitHub Repository Inventory</a></h2>
                     <p>Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags.</p>
                     <span>data/github-repositories.json</span>
+                </article>
+                <article class="catalog-card" id="videos">
+                    <h2><a href="data/videos.json">YouTube Video Metadata</a></h2>
+                    <p>1127 personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status.</p>
+                    <span>data/videos.json</span>
                 </article>
                 <article class="catalog-card" id="people">
                     <h2><a href="data/people.json">People Index</a></h2>
@@ -683,9 +712,9 @@
                     <span>reports/external_links_triage_2026-05-15.json</span>
                 </article>
                 <article class="catalog-card" id="asset-size">
-                    <h2><a href="reports/asset_size_2026-06-18.json">Asset Size Audit</a></h2>
+                    <h2><a href="reports/asset_size_2026-06-20.json">Asset Size Audit</a></h2>
                     <p>Size report for public HTML, OG images, data exports, and runtime assets.</p>
-                    <span>reports/asset_size_2026-06-18.json</span>
+                    <span>reports/asset_size_2026-06-20.json</span>
                 </article>
                 <article class="catalog-card" id="browser-smoke">
                     <h2><a href="reports/browser-smoke/2026-05-28/manifest.json">Browser Smoke Manifest</a></h2>
@@ -693,9 +722,9 @@
                     <span>reports/browser-smoke/2026-05-28/manifest.json</span>
                 </article>
                 <article class="catalog-card" id="live-site">
-                    <h2><a href="reports/live_site_verification_2026-06-18.json">Live Site Verification</a></h2>
+                    <h2><a href="reports/live_site_verification_2026-06-20.json">Live Site Verification</a></h2>
                     <p>Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.</p>
-                    <span>reports/live_site_verification_2026-06-18.json</span>
+                    <span>reports/live_site_verification_2026-06-20.json</span>
                 </article>
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>

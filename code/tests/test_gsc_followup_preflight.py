@@ -15,6 +15,7 @@ from gsc_followup_preflight import (  # noqa: E402
     build_report,
     local_checks,
 )
+from sitemap_policy import gsc_priority_urls  # noqa: E402
 
 
 def test_manual_steps_cover_plan_todos():
@@ -38,4 +39,6 @@ def test_local_checks_pass_on_repo():
 def test_build_report_skip_live_preflight_ok():
     report = build_report(REPO_ROOT, skip_live=True)
     assert report["preflight_ok"] is True
-    assert len(report["priority_urls"]) == 6
+    assert report["priority_urls"] == gsc_priority_urls()
+    assert "https://danielarifriedman.com/repositories.html" in report["priority_urls"]
+    assert "https://danielarifriedman.com/videos.html" in report["priority_urls"]

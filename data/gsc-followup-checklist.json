@@ -1,14 +1,19 @@
 {
-  "generated_at": "2026-06-14T22:10:23Z",
+  "generated_at": "2026-06-20T05:06:06Z",
   "property": "https://danielarifriedman.com/",
   "preflight_ok": true,
   "priority_urls": [
     "https://danielarifriedman.com/",
+    "https://danielarifriedman.com/repositories.html",
+    "https://danielarifriedman.com/videos.html",
+    "https://danielarifriedman.com/videos/",
+    "https://danielarifriedman.com/software.html",
     "https://danielarifriedman.com/exports.html",
     "https://danielarifriedman.com/catalog.html",
     "https://danielarifriedman.com/cite-verify.html",
     "https://danielarifriedman.com/discovery.html",
-    "https://danielarifriedman.com/publications.html"
+    "https://danielarifriedman.com/publications.html",
+    "https://danielarifriedman.com/works/"
   ],
   "gsc_links": {
     "sitemaps": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
@@ -25,7 +30,7 @@
     },
     {
       "id": "gsc-index-hubs",
-      "title": "Request indexing for 6 priority hubs",
+      "title": "Request indexing for priority URLs",
       "gsc_url": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
       "action": "URL Inspection \u2192 Request indexing for each priority URL"
     },
@@ -58,7 +63,7 @@
     "[ ] Signed into GSC for https://danielarifriedman.com/",
     "[ ] Preflight passed (this script)",
     "[ ] Submitted sitemap.xml",
-    "[ ] Requested indexing: /, exports.html, catalog.html, cite-verify.html, discovery.html, publications.html",
+    "[ ] Requested indexing: /, /repositories.html, /videos.html, /videos/, /software.html, /exports.html, /catalog.html, /cite-verify.html, /discovery.html, /publications.html, /works/",
     "[ ] Validate fix: Page with redirect",
     "[ ] Validate fix: Alternate page with proper canonical",
     "[ ] Validate fix: Not found (404)",

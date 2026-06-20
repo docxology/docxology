@@ -65,11 +65,13 @@ def _json_count(path: str, fallback: int) -> int:
 def datasets() -> list[tuple[str, str, str, str]]:
     works_count = _json_count("data/works.json", 154)
     software_count = _json_count("data/software.json", 88)
+    video_count = _json_count("data/videos.json", 0)
     return [
     ("works", "Curated Works Bibliography", "data/works.json", f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
     ("software", "Software Catalog", "data/software.json", f"{software_count} catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
+    ("videos", "YouTube Video Metadata", "data/videos.json", f"{video_count} personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
     ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),
@@ -190,6 +192,7 @@ def render_html(date_modified: str | None = None) -> str:
     <meta name="twitter:title" content="Data Catalog — Daniel Ari Friedman">
     <meta name="twitter:description" content="Structured JSON datasets for the public research and software index.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta name="twitter:image:alt" content="Data Catalog — Daniel Ari Friedman">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>.catalog-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}.catalog-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}.catalog-card h2{{font-size:1rem;margin-bottom:.4rem}}.catalog-card p{{color:var(--text-secondary);font-size:.86rem;line-height:1.6}}.catalog-card span{{display:block;margin-top:.75rem;color:var(--text-muted);font-size:.75rem;overflow-wrap:anywhere}}</style>
     <script type="application/ld+json">

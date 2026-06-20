@@ -45,6 +45,7 @@ def test_social_meta_tags_emits_card_and_alt():
     assert 'name="twitter:card" content="summary_large_image"' in block
     assert 'property="og:image:alt"' in block
     assert 'name="twitter:image" content="https://danielarifriedman.com/og-image.jpg"' in block
+    assert 'name="twitter:image:alt" content="Title — Daniel Ari Friedman"' in block
 
 
 def test_render_nav_marks_active_and_depth():

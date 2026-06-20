@@ -12,3 +12,4 @@ papers/regenerate_docs.log
 .benchmarks/
 .venv/
 .claude/
+.cursor/hooks/state/continual-learning.json

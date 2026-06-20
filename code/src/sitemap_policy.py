@@ -20,6 +20,7 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("domain-biomedicine.html", "monthly", "0.7"),
     ("art.html", "weekly", "0.9"),
     ("videos.html", "weekly", "0.8"),
+    ("videos/", "weekly", "0.7"),
     ("collaborators.html", "monthly", "0.7"),
     ("media.html", "monthly", "0.7"),
     ("software.html", "monthly", "0.7"),
@@ -47,11 +48,16 @@ SITE_ORIGIN = "https://danielarifriedman.com/"
 
 GSC_PRIORITY_PATHS: tuple[str, ...] = (
     "",
+    "repositories.html",
+    "videos.html",
+    "videos/",
+    "software.html",
     "exports.html",
     "catalog.html",
     "cite-verify.html",
     "discovery.html",
     "publications.html",
+    "works/",
 )
 
 
@@ -83,7 +89,7 @@ def indexnow_urls_from_locs(locs: list[str]) -> list[str]:
             out.append(SITE_ORIGIN)
             continue
         path = loc.removeprefix(SITE_ORIGIN)
-        if path.endswith(".html") or path == "works/" or path.startswith("works/"):
+        if path.endswith(".html") or path in {"works/", "videos/"} or path.startswith(("works/", "videos/")):
             out.append(loc)
         elif path in _INDEXNOW_EXACT:
             out.append(loc)

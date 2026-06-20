@@ -1,0 +1,26 @@
+<!-- @dsCard group="Components" title="Content cards" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cards — danielarifriedman.com</title>
+<style>
+:root{color-scheme:dark;--bg-primary:#0a0908;--bg-card:rgba(20,18,16,0.96);--text-primary:#f4f1ea;--text-secondary:#cfc9bd;--text-muted:#9a958a;--gold:#e8e2d4;--red-pure:#f1463a;--border:rgba(244,241,234,0.18);--radius:3px}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif;padding:2.4rem}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;margin:0 0 1.4rem;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem}
+.card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.3rem;transition:border-color .2s,transform .2s}
+.card:hover{border-color:rgba(241,70,58,.6);transform:translateY(-2px)}
+.card .icon{font-size:1.4rem;margin-bottom:.6rem}
+.card h3{font-size:1.08rem;margin:0 0 .5rem;color:#fff}
+.card p{font-size:.9rem;color:var(--text-secondary);line-height:1.65;margin:0}
+.card .tag{display:inline-block;margin-top:.9rem;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--gold)}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<h1>Content cards</h1>
+<div class="cards">
+  <div class="card"><div class="icon">🐜</div><h3>Entomology</h3><p>Ant collective behavior, computational entomology, and field research on social insects.</p><span class="tag">Research domain</span></div>
+  <div class="card"><div class="icon">🧠</div><h3>Active Inference</h3><p>The Free Energy Principle, Bayesian modeling, and multi-agent systems for adaptive behavior.</p><span class="tag">Research domain</span></div>
+  <div class="card"><div class="icon">🛡️</div><h3>Cognitive Security</h3><p>Strengthening information ecosystems, narrative analysis, and the information commons.</p><span class="tag">Research domain</span></div>
+</div>
+</body></html>

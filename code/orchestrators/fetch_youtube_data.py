@@ -34,11 +34,34 @@ CHANNELS = {
 }
 
 
-def fetch_and_save(channel_id: str) -> None:
+def merge_videos(existing: list[dict], fetched: list[dict]) -> list[dict]:
+    by_id = {video["id"]: video for video in existing if video.get("id")}
+    for video in fetched:
+        if video.get("id"):
+            prior = by_id.get(video["id"])
+            if prior:
+                merged = {**prior, **video}
+                for key in ("upload_date", "year", "month", "day"):
+                    if prior.get(key):
+                        merged[key] = prior[key]
+                if prior.get("view_count") and not video.get("view_count"):
+                    merged["view_count"] = prior["view_count"]
+                by_id[video["id"]] = merged
+            else:
+                by_id[video["id"]] = video
+    return sorted(by_id.values(), key=lambda video: (video.get("upload_date", ""), video.get("id", "")))
+
+
+def fetch_and_save(channel_id: str, *, fast: bool = False) -> None:
     cfg = CHANNELS[channel_id]
-    print(f"\n--- Fetching {channel_id} channel: {cfg['url']} ---")
+    mode = "fast" if fast else "exact"
+    print(f"\n--- Fetching {channel_id} channel ({mode}): {cfg['url']} ---")
     t0 = time.time()
-    videos = yf.fetch_channel(cfg["url"], channel_id)
+    videos = yf.fetch_channel(cfg["url"], channel_id, tabs=yf.FAST_TABS if fast else None)
+    if fast:
+        existing = yf.load_json(cfg["output"])
+        if existing:
+            videos = merge_videos(existing.get("videos", []), videos)
     elapsed = time.time() - t0
 
     if videos:
@@ -69,6 +92,7 @@ def main() -> None:
     parser.add_argument("--personal", action="store_true", help="Fetch personal channel only")
     parser.add_argument("--institute", action="store_true", help="Fetch institute channel only")
     parser.add_argument("--dry-run", action="store_true", help="Print stats from existing JSON")
+    parser.add_argument("--fast", action="store_true", help="Use flat-playlist metadata for all tabs")
     args = parser.parse_args()
 
     if args.personal and not args.institute:
@@ -86,7 +110,7 @@ def main() -> None:
         print("=== Fetching YouTube channel metadata ===")
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         for ch in targets:
-            fetch_and_save(ch)
+            fetch_and_save(ch, fast=args.fast)
         print("\nDone. Commit code/data/*.json to update the site.")
 
 

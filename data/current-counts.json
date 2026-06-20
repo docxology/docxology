@@ -23,14 +23,14 @@
     "github_inventory": {
       "ActiveInferenceInstitute": 54,
       "archived": 0,
-      "curated": 91,
+      "curated": 92,
       "docxology": 317,
-      "forks": 253,
+      "forks": 252,
       "private": 0,
       "public": 371,
-      "recently_updated": 101,
+      "recently_updated": 102,
       "total": 371,
-      "uncataloged": 280
+      "uncataloged": 279
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -69,7 +69,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-06-18T16:09:39+00:00",
+  "generated_at": "2026-06-20T05:05:34+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

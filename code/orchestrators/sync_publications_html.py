@@ -104,8 +104,8 @@ def main_entity_object(row: BiblioRow, same_as: str) -> dict:
 
 def collection_page_description(count: int) -> str:
     return (
-        f"Complete bibliography: {count} works in Active Inference, entomology, "
-        "cognitive security, art & synergetics, and genetics."
+        f"Complete bibliography of {count} works by Daniel Ari Friedman across Active Inference, "
+        "entomology, cognitive security, art, computational biology, and genetics."
     )
 
 
@@ -115,7 +115,7 @@ def build_collection_page(rows: list[BiblioRow]) -> dict:
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Publications — Daniel Ari Friedman, PhD",
+        "name": "Daniel Ari Friedman Publications",
         "description": collection_page_description(count),
         "author": {
             "@type": "Person",
@@ -128,10 +128,10 @@ def build_collection_page(rows: list[BiblioRow]) -> dict:
 
 def replace_head_meta(html: str, count: int) -> str:
     """Patch title, meta description, and og:* counts from bibliography row count."""
-    title = f"Publications — Daniel Ari Friedman, PhD | {count} Works"
+    title = f"Daniel Ari Friedman Publications | {count} Research Works"
     desc = (
-        f"{count} catalogued works by Daniel Ari Friedman across Active Inference, "
-        "ant colony cognition, cognitive security, art, and computational biology."
+        f"Search {count} works by Daniel Ari Friedman on Active Inference, "
+        "computational biology, cognitive security, art, and research software."
     )
     html = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html, count=1)
     html = re.sub(
@@ -147,8 +147,20 @@ def replace_head_meta(html: str, count: int) -> str:
         count=1,
     )
     html = re.sub(
+        r'(<meta property="og:image:alt" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html,
+        count=1,
+    )
+    html = re.sub(
         r'(<meta property="og:description" content=")[^"]*(")',
         rf"\g<1>{desc}\2",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'(<meta name="twitter:title" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
         html,
         count=1,
     )

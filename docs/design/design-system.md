@@ -54,11 +54,23 @@ Shared HTML nav: [`code/src/site_nav.py`](../../code/src/site_nav.py).
 
 Hand-maintained pages (e.g. `publications.html`, `index.html`) may use extended link sets; keep href prefixes consistent with [`seo/canonical-policy.md`](../seo/canonical-policy.md) (apex canonical URLs).
 
+## Component library (local + Claude Design sync)
+
+A self-contained preview library mirrors these tokens and components in
+[`components/`](components/) — one standalone `*.html` per component, each carrying a
+first-line `<!-- @dsCard group="…" -->` marker. It is the **local** side of a `/design-sync`
+with the Claude Design project **"danielarifriedman.com Design System"**.
+
+- Foundations: color tokens, type scale, radius/spacing.
+- Components: buttons, navigation, content cards, domain pills + type badges, publication table.
+- Sync is **incremental** — one component at a time, never a wholesale replace. Edit the
+  preview here when `style.css` tokens change, then push it; never hand-edit the remote project.
+
 ## Future refresh (Claude Design / Webdesign)
 
 Optional hero/nav refresh via Claude Design should:
 
-1. Read this token table first (ExtractDesignSystem).
+1. Read this token table and the [`components/`](components/) previews first.
 2. Scope to index + publications shells only.
 3. Preserve bibliography copy and machine-readable head metadata.
 4. Re-run visual QA (`code/orchestrators/visual_qa.py`) after integration.

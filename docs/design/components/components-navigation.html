@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" title="Navigation bar" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigation — danielarifriedman.com</title>
+<style>
+:root{color-scheme:dark;--bg-primary:#0a0908;--text-primary:#f4f1ea;--text-secondary:#cfc9bd;--border:rgba(244,241,234,0.18);--red-pure:#f1463a}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 2rem;border-bottom:1px solid var(--border);background:rgba(10,9,8,0.86);backdrop-filter:blur(8px)}
+.nav-logo{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.05rem;color:#fff;text-decoration:none}
+.nav-links{display:flex;gap:1.1rem;align-items:center}
+.nav-links a{font-size:.85rem;color:var(--text-secondary);text-decoration:none;padding-bottom:.2rem;border-bottom:2px solid transparent;transition:all .2s}
+.nav-links a:hover,.nav-links a.active{color:#fff;border-bottom-color:var(--red-pure)}
+.nav-art-link{padding:.3rem .7rem;border:1px solid var(--border);border-radius:20px}
+.note{padding:1.4rem 2rem;color:#9a958a;font-size:.8rem}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<nav role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="#">Daniel Ari Friedman</a>
+  <div class="nav-links">
+    <a href="#" class="active">About</a>
+    <a href="#">Research</a>
+    <a href="#">Publications</a>
+    <a href="#">Domains</a>
+    <a href="#">Software</a>
+    <a href="#">Search</a>
+    <a href="#" class="nav-art-link">Art</a>
+  </div>
+</nav>
+<p class="note">Fixed 68px bar, gold/red underline on hover + active. Collapses to a menu toggle below 760px.</p>
+</body></html>

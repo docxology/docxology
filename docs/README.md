@@ -16,6 +16,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **SEO** | [`seo/canonical-policy.md`](seo/canonical-policy.md) | Redirect + canonical URL policy; permanent work-URL contract (GitHub Pages) |
 | **SEO** | [`seo/gsc-followup.md`](seo/gsc-followup.md) | Google Search Console manual follow-up runbook |
 | **Design** | [`design/design-system.md`](design/design-system.md) | Color/type tokens, accessibility, layout, nav source-of-truth |
+| **Design** | [`design/components/`](design/components/README.md) | Local component-preview library; `/design-sync` source for the Claude Design project |
 | **Security** | [`security/security-posture.md`](security/security-posture.md) | Static-site security posture, XSS, CSP, responsible disclosure |
 | **Releases** | [`releases/2026-05-discovery-layer.md`](releases/2026-05-discovery-layer.md) | Archived 2026-05 discovery-layer snapshot |
 

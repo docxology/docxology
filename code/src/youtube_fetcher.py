@@ -18,6 +18,12 @@ TABS = [
     ("shorts",  "approximate"),
 ]
 
+FAST_TABS = [
+    ("videos", "approximate"),
+    ("streams", "approximate"),
+    ("shorts", "approximate"),
+]
+
 
 def run_yt_dlp(url: str, mode: str = "full", timeout: int = 600) -> list[str]:
     """Run yt-dlp on a URL, return JSONL lines.
@@ -116,12 +122,12 @@ def fetch_tab(channel_url: str, tab: str, channel_id: str, mode: str) -> list[di
     return videos
 
 
-def fetch_channel(channel_url: str, channel_id: str) -> list[dict]:
+def fetch_channel(channel_url: str, channel_id: str, tabs: list[tuple[str, str]] | None = None) -> list[dict]:
     """Fetch all tabs for a channel, deduplicate, return date-sorted VideoRecords."""
     seen_ids: set[str] = set()
     all_videos: list[dict] = []
 
-    for tab, mode in TABS:
+    for tab, mode in tabs or TABS:
         try:
             videos = fetch_tab(channel_url, tab, channel_id, mode)
         except Exception as e:

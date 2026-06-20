@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search — Daniel Ari Friedman</title>
-    <meta name="description" content="Search Daniel Ari Friedman's works, software, research domains, collaborators, evidence, and public metadata.">
+    <meta name="description" content="Search Daniel Ari Friedman's works, videos, software, research domains, collaborators, evidence, and public metadata.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/search.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -25,6 +25,7 @@
     <meta name="twitter:title" content="Search — Daniel Ari Friedman">
     <meta name="twitter:description" content="Search works, software, research domains, collaborators, evidence, and public metadata.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta name="twitter:image:alt" content="Search — Daniel Ari Friedman">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
         "@id": "https://danielarifriedman.com/search.html#webpage",
         "url": "https://danielarifriedman.com/search.html",
         "name": "Search — Daniel Ari Friedman",
-        "description": "Search Daniel Ari Friedman's works, software, research domains, collaborators, evidence, and public metadata.",
+        "description": "Search Daniel Ari Friedman's works, videos, software, research domains, collaborators, evidence, and public metadata.",
         "dateModified": "2026-05-13",
         "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
         "about": { "@id": "https://danielarifriedman.com/#person" }
@@ -90,6 +91,7 @@
             <a href="works/">Works</a>
             <a href="domains.html">Domains</a>
             <a href="software.html">Software</a>
+            <a href="videos.html">Videos</a>
             <a href="search.html" class="active">Search</a>
             <a href="discovery.html">Discovery</a>
         </div>
@@ -100,7 +102,7 @@
     <main id="main" class="search-shell">
         <header class="section-header">
             <h1>Search</h1>
-            <p>Works, software, domains, people, organizations, claims, and site metadata.</p>
+            <p>Works, videos, software, domains, people, organizations, claims, and site metadata.</p>
             <div class="section-divider"></div>
         </header>
         <section class="search-panel" aria-label="Site search">
@@ -165,7 +167,7 @@
             render();
         });
 
-        fetch('search-index.json')
+        fetch('search-index.json?v=video-index-20260620', { cache: 'no-store' })
             .then(res => res.json())
             .then(data => {
                 state.items = data.items || [];

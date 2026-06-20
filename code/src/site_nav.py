@@ -57,6 +57,7 @@ def social_meta_tags(
         f'{indent}<meta name="twitter:title" content="{esc(og_title)}">',
         f'{indent}<meta name="twitter:description" content="{esc(description)}">',
         f'{indent}<meta name="twitter:image" content="{esc(og_image_url)}">',
+        f'{indent}<meta name="twitter:image:alt" content="{esc(image_alt)}">',
     ]
     return "\n".join(lines)
 
@@ -117,6 +118,7 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
         ("works", f"{prefix}works/", "Works"),
         ("domains", f"{prefix}domains.html", "Domains"),
         ("software", f"{prefix}software.html", "Software"),
+        ("videos", f"{prefix}videos.html", "Videos"),
         ("search", f"{prefix}search.html", "Search"),
         ("catalog", f"{prefix}catalog.html", "Data Catalog"),
         ("cite", f"{prefix}cite-verify.html", "Cite"),

@@ -308,6 +308,7 @@ def page_head(work: dict) -> str:
     <meta name="twitter:title" content="{h(work['title'])}">
     <meta name="twitter:description" content="{h(description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta name="twitter:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -463,6 +464,7 @@ def render_index(works: list[dict]) -> str:
     <meta name="twitter:title" content="Works Index — Daniel Ari Friedman">
     <meta name="twitter:description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta name="twitter:image:alt" content="Works Index — Daniel Ari Friedman">
     <style>.work-list{{display:grid;gap:.75rem}}.work-row{{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}.work-row .year{{color:var(--gold);font-weight:700}}.work-row .venue{{color:var(--text-muted);font-size:.8rem}}@media(max-width:760px){{.work-row{{grid-template-columns:1fr}}}}</style>
 </head>
 <body>

@@ -27,8 +27,11 @@ _WEBPAGE_LD = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://danielarifriedman.com/repositories.html#page",
-    "name": "Repository Inventory — Daniel Ari Friedman",
-    "description": "Full generated inventory of public docxology and Active Inference Institute GitHub repositories, with curated catalog coverage flags.",
+    "name": "GitHub Repositories — Daniel Ari Friedman & AII",
+    "description": (
+        "Searchable public GitHub repository inventory for docxology and Active Inference Institute "
+        "research software."
+    ),
     "url": "https://danielarifriedman.com/repositories.html",
     "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
 }
@@ -228,6 +231,11 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
 def render_html(payload: dict[str, Any]) -> str:
     counts = payload["counts"]
     rows = render_rows(payload["repositories"])
+    page_title = "GitHub Repositories — Daniel Ari Friedman & AII"
+    page_description = (
+        f"Search {counts['total']} public GitHub repos from docxology and AII: "
+        "Active Inference software, computational biology, cognitive security, and research tools."
+    )
     warning = ""
     if payload["warnings"]:
         warning = f"<p class=\"note\">Warnings: {h('; '.join(payload['warnings']))}</p>"
@@ -240,25 +248,26 @@ def render_html(payload: dict[str, Any]) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repository Inventory — Daniel Ari Friedman</title>
-    <meta name="description" content="Full generated inventory of public docxology and Active Inference Institute GitHub repositories, with curated catalog coverage flags.">
+    <title>{h(page_title)}</title>
+    <meta name="description" content="{h(page_description)}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/repositories.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/github-repositories.json" title="GitHub repositories JSON">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Repository Inventory — Daniel Ari Friedman">
-    <meta property="og:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
+    <meta property="og:title" content="{h(page_title)}">
+    <meta property="og:description" content="{h(page_description)}">
     <meta property="og:url" content="https://danielarifriedman.com/repositories.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-software.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Repository Inventory — Daniel Ari Friedman">
+    <meta property="og:image:alt" content="{h(page_title)}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Repository Inventory — Daniel Ari Friedman">
-    <meta name="twitter:description" content="Full generated inventory of public GitHub repositories with curated catalog flags.">
+    <meta name="twitter:title" content="{h(page_title)}">
+    <meta name="twitter:description" content="{h(page_description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-software.jpg">
+    <meta name="twitter:image:alt" content="{h(page_title)}">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <style>
         .inventory-controls{{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin:1rem 0}}
@@ -277,6 +286,13 @@ def render_html(payload: dict[str, Any]) -> str:
         .inventory-counts strong{{display:block;color:#fff;font-size:1.35rem}}
         .note{{color:var(--text-muted);font-size:.84rem}}
         .inventory-select{{padding:.62rem .78rem;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-secondary)}}
+        .inventory-route-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin-top:1.25rem}}
+        .inventory-route-card{{display:block;border:1px solid var(--border);border-radius:8px;background:var(--bg-card);padding:1rem;text-decoration:none}}
+        .inventory-route-card strong{{display:block;color:var(--gold);font-size:.95rem;margin-bottom:.25rem}}
+        .inventory-route-card span{{display:block;color:var(--text-secondary);font-size:.82rem;line-height:1.45}}
+        .topic-routes{{display:flex;flex-wrap:wrap;gap:.55rem;margin:1rem 0 0}}
+        .topic-routes a{{display:inline-flex;border:1px solid var(--border);border-radius:999px;padding:.35rem .7rem;background:rgba(255,255,255,.03);font-size:.78rem;color:var(--text-secondary);text-decoration:none}}
+        .topic-routes a:hover{{border-color:var(--gold);color:var(--gold)}}
     </style>
 {_head_extra()}</head>
 <body>
@@ -288,12 +304,40 @@ def render_html(payload: dict[str, Any]) -> str:
     </nav>
 {render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero">
-        <h1>Repository Inventory</h1>
-        <p class="sub">Full generated inventory of public GitHub repositories for docxology and the Active Inference Institute.</p>
+        <h1>GitHub Repository Inventory</h1>
+        <p class="sub">Searchable public software map for Daniel Ari Friedman, docxology, and Active Inference Institute repositories.</p>
     </header>
     <main id="main" class="main">
         <section class="section">
-        <div class="inventory-counts">
+            <div class="section-header">
+                <h2>Open Source Research Software</h2>
+                <p>Route from the full GitHub inventory into curated publications, software, domain pages, and machine-readable exports.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="inventory-route-grid" aria-label="Repository inventory routes">
+                <a class="inventory-route-card" href="software.html"><strong>Curated software catalog</strong><span>Owned projects and Active Inference Institute contributions with publication links.</span></a>
+                <a class="inventory-route-card" href="publications.html"><strong>Publication catalog</strong><span>Search works across Active Inference, entomology, cognitive security, art, and biology.</span></a>
+                <a class="inventory-route-card" href="works/"><strong>Per-work landing pages</strong><span>Canonical pages for bibliography entries, citations, abstracts, and related works.</span></a>
+                <a class="inventory-route-card" href="domain-active-inference.html"><strong>Active Inference software</strong><span>GNN, CEREBRUM, FEP formalization, belief sharing, and educational infrastructure.</span></a>
+                <a class="inventory-route-card" href="domain-computational.html"><strong>Computational methods</strong><span>Reproducible research templates, MDKV, discovery engines, and developer tooling.</span></a>
+                <a class="inventory-route-card" href="catalog.html"><strong>Data catalog</strong><span>JSON exports for works, software, people, organizations, claims, and repository inventory.</span></a>
+            </div>
+            <div class="topic-routes" aria-label="High-interest repository searches">
+                <a href="search.html?q=active%20inference">Active Inference</a>
+                <a href="search.html?q=mdkv">MDKV</a>
+                <a href="search.html?q=p3if">P3IF</a>
+                <a href="search.html?q=cognitive%20security">Cognitive security</a>
+                <a href="search.html?q=computational%20biology">Computational biology</a>
+                <a href="search.html?q=SpikingBrain">SpikingBrain</a>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header">
+                <h2>Repository Coverage</h2>
+                <p>Generated from the GitHub REST API and cross-marked against the curated software catalog.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="inventory-counts">
                 <div><strong>{counts['total']}</strong>Total public repos</div>
                 <div><strong>{counts['docxology']}</strong>docxology</div>
                 <div><strong>{counts['ActiveInferenceInstitute']}</strong>AII</div>
@@ -305,6 +349,13 @@ def render_html(payload: dict[str, Any]) -> str:
                 <div><strong>{counts['recently_updated']}</strong>Updated in 90 days</div>
             </div>
             {warning}
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Search and Filter the Complete Inventory</h2>
+                <p>Filter by owner, curation status, language, recency, forks, and text across names, topics, and descriptions.</p>
+                <div class="section-divider"></div>
+            </div>
             <div class="inventory-controls">
                 <input id="inventorySearch" class="inventory-search" type="search" placeholder="Search repositories, languages, descriptions, topics..." autocomplete="off">
                 <select id="inventoryLanguage" class="inventory-select" aria-label="Filter by language">

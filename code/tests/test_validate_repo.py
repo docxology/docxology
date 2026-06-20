@@ -14,6 +14,20 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 import validate_repo as vr  # noqa: E402
 
 
+def test_iter_local_links_ignores_fenced_markdown_examples():
+    text = """See [real link](pages/README.md).
+
+```markdown
+![Example figure](../output/figures/example.png){#fig:example}
+<a href="missing-example.html">example</a>
+```
+"""
+
+    links = vr.iter_local_links(text)
+
+    assert links == ["pages/README.md"]
+
+
 def test_validate_json_files_default_warns_on_missing_optional_artifacts(monkeypatch, tmp_path, capsys):
     monkeypatch.setattr(vr, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(vr, "REQUIRED_JSON_FILES", [])
