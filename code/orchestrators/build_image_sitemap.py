@@ -37,16 +37,31 @@ def load_artworks() -> list[dict]:
     return data["artworks"] if isinstance(data, dict) else data
 
 
+def _winner(names: list[str]) -> str:
+    """Pick a stable representative when several files share a numeric prefix.
+
+    Filesystem glob order is platform-dependent (macOS vs Linux), so a bare
+    ``setdefault`` over ``glob`` chooses different duplicate downloads on each
+    OS and the generated sitemap differs between local and CI. Select
+    deterministically: prefer the canonical name without a " (N)" dedup suffix,
+    then the shortest, then lexicographically smallest.
+    """
+    return min(names, key=lambda n: (" (" in n, len(n), n))
+
+
 def local_files_by_id() -> dict[str, str]:
-    """Map artwork id (numeric filename prefix) -> local art/ filename."""
-    out: dict[str, str] = {}
+    """Map artwork id (numeric filename prefix) -> local art/ filename.
+
+    Deterministic across platforms — see :func:`_winner`.
+    """
+    candidates: dict[str, list[str]] = {}
     if not ART_DIR.is_dir():
-        return out
+        return {}
     for p in ART_DIR.glob("*.jpg"):
         prefix = p.name.split("_", 1)[0]
         if prefix.isdigit():
-            out.setdefault(prefix, p.name)
-    return out
+            candidates.setdefault(prefix, []).append(p.name)
+    return {prefix: _winner(names) for prefix, names in candidates.items()}
 
 
 def best_flickr_url(art: dict) -> str | None:
