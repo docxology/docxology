@@ -19,6 +19,7 @@ import argparse
 import html
 import json
 import sys
+import unicodedata
 from pathlib import Path
 from urllib.parse import quote
 
@@ -58,9 +59,13 @@ def local_files_by_id() -> dict[str, str]:
     if not ART_DIR.is_dir():
         return {}
     for p in ART_DIR.glob("*.jpg"):
-        prefix = p.name.split("_", 1)[0]
+        # Normalize to NFC: macOS readdir returns precomposed (NFC) names while a
+        # Linux checkout yields the raw NFD bytes, so without this the generated
+        # URLs for accented artwork names differ between local and CI.
+        name = unicodedata.normalize("NFC", p.name)
+        prefix = name.split("_", 1)[0]
         if prefix.isdigit():
-            candidates.setdefault(prefix, []).append(p.name)
+            candidates.setdefault(prefix, []).append(name)
     return {prefix: _winner(names) for prefix, names in candidates.items()}
 
 
