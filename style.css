@@ -30,7 +30,7 @@
         *{margin:0;padding:0;box-sizing:border-box}
         html{scroll-behavior:smooth;scroll-padding-top:72px}
         body{
-            font-family:Georgia,'Times New Roman',serif;
+            font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
             font-size:17px;
             background:
                 repeating-linear-gradient(0deg,rgba(255,255,255,0.023) 0 1px,transparent 1px 6px),
@@ -426,7 +426,7 @@ nav{
     box-shadow:0 8px 20px rgba(0,0,0,0.36);
 }
 .nav-logo{
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     color:#fff;
     background:none;
     -webkit-text-fill-color:currentColor;
@@ -465,7 +465,7 @@ nav{
     padding:.7rem 0 .78rem;
     border-top:6px double var(--paper-line);
     border-bottom:6px double var(--paper-line);
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     color:#fff;
     text-transform:uppercase;
     letter-spacing:.04em;
@@ -515,7 +515,7 @@ nav{
     color:#fff;
     background:none;
     -webkit-text-fill-color:currentColor;
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     font-size:clamp(1.5rem,3vw,2.5rem);
     letter-spacing:.015em;
     line-height:1.06;
@@ -545,7 +545,7 @@ nav{
 /* effective masthead elements (override first-block defs; co-located with newspaper theme) */
 .hero .masthead-rule{
     display:inline-block;
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;
     color:#cfc9bd;
     padding:.35rem .2rem;margin:0 0 .15rem;
@@ -562,7 +562,7 @@ nav{
     line-height:2.1;
 }
 .hero .hero-sections a{
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     font-size:1rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
     color:#f4f1ea;padding:.15rem .95rem;display:inline-block;white-space:nowrap;
 }
@@ -616,7 +616,7 @@ nav{
     color:#fff;
     background:none;
     -webkit-text-fill-color:currentColor;
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
 }
 
 .section{
@@ -647,7 +647,7 @@ nav{
     padding-bottom:.55rem;
 }
 .section-header h2{
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     font-size:clamp(2.05rem,3.4vw,3.45rem);
     text-transform:uppercase;
     letter-spacing:.018em;
@@ -758,7 +758,7 @@ nav{
     letter-spacing:.08em;
 }
 .card h3,.connect-card h3,.repo-title,.collab-name,.media-title,.catalog-card h2,.result-card h2,.mini-card h3,.art-card .card-title{
-    font-family:Georgia,'Times New Roman',serif;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     color:#fff;
     letter-spacing:.01em;
 }
