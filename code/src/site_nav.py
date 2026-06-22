@@ -127,7 +127,7 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
     parts = [
         f'    <nav role="navigation" aria-label="Main navigation">',
         f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" onclick="document.querySelector(\'.nav-links\').classList.toggle(\'open\')" aria-label="Toggle menu">☰</button>',
+        '        <button class="menu-btn" onclick="var o=document.querySelector(\'.nav-links\').classList.toggle(\'open\');this.setAttribute(\'aria-expanded\',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>',
         '        <div class="nav-links">',
     ]
     for key, href, label in links:
@@ -156,7 +156,7 @@ def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
     parts = [
         '    <nav role="navigation" aria-label="Main navigation">',
         f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" onclick="document.querySelector(\'.nav-links\').classList.toggle(\'open\')" aria-label="Toggle menu">☰</button>',
+        '        <button class="menu-btn" onclick="var o=document.querySelector(\'.nav-links\').classList.toggle(\'open\');this.setAttribute(\'aria-expanded\',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>',
         '        <div class="nav-links">',
     ]
     for key, href, label in links:

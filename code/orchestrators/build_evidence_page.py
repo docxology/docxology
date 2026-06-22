@@ -131,7 +131,7 @@ def render_html(claims: list[dict]) -> str:
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>
         <div class="nav-links">
             <a href="index.html#about">About</a>
             <a href="publications.html">Publications</a>

@@ -4,37 +4,44 @@ Extracted from [`style.css`](../../style.css). Generated pages and new UI should
 
 ## Principles
 
-- Editorial dark theme: warm neutrals, gold accent, restrained motion (`prefers-reduced-motion` honored).
-- Body copy uses system UI stack; display headings use **Playfair Display** where loaded.
+- Editorial dark theme: warm neutrals, **red accent** for links and focus, gold/silver as secondary highlights, restrained motion (`prefers-reduced-motion` honored).
+- Body copy uses an **editorial Georgia serif** stack; display headings use **Playfair Display**.
 - Avoid generic “AI landing page” patterns (centered hero stacks, purple gradients, uniform pill buttons everywhere).
 
 ## Color tokens (`:root`)
 
-| Token | Role |
-| --- | --- |
-| `--bg-primary` | Page background `#0c0c0e` |
-| `--bg-secondary` | Secondary surfaces |
-| `--bg-card` | Cards, panels |
-| `--bg-glass` | Subtle glass overlays |
-| `--text-primary` | Primary copy |
-| `--text-secondary` | Supporting copy |
-| `--text-muted` | Meta, captions |
-| `--gold` / `--gold-bright` | Links, accents, focus |
-| `--red` | Entomology domain accent |
-| `--silver` | Secondary highlights |
-| `--border` / `--border-hover` | Dividers, hover states |
-| `--radius` | Default corner radius (14px) |
+Values below are the source of truth in [`style.css`](../../style.css) `:root`; the interactive swatches in [`components/foundations-colors.html`](components/foundations-colors.html) mirror them.
+
+| Token | Role | Value |
+| --- | --- | --- |
+| `--bg-primary` | Page background | `#0a0908` |
+| `--bg-secondary` | Secondary surfaces | `#100e0c` |
+| `--bg-card` | Cards, panels | `rgba(20,18,16,0.96)` |
+| `--bg-glass` | Subtle glass overlays | `rgba(255,252,245,0.028)` |
+| `--text-primary` | Primary copy | `#f4f1ea` |
+| `--text-secondary` | Supporting copy | `#cfc9bd` |
+| `--text-muted` | Meta, captions | `#9a958a` |
+| `--red` / `--red-bright` / `--red-pure` | Links, focus, entomology accent | `#e23b2e` / `#ff4133` / `#f1463a` |
+| `--red-glow` | Red overlay/glow | `rgba(226,59,46,0.16)` |
+| `--gold` / `--gold-bright` | Accents, hover, highlights | `#e8e2d4` / `#ffffff` |
+| `--gold-glow` | Gold overlay/glow | `rgba(232,226,212,0.13)` |
+| `--silver` / `--silver-bright` | Secondary highlights | `#b8b3a8` / `#f2efe8` |
+| `--border` / `--border-hover` | Dividers, hover states | `rgba(244,241,234,0.18)` / `rgba(241,70,58,0.6)` |
+| `--paper-line` / `--paper-soft` | Newspaper-style rules, subtle overlays | `rgba(244,241,234,0.2)` / `rgba(244,241,234,0.05)` |
+| `--radius` | Default corner radius | `3px` |
+
+Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 
 ## Typography
 
-- **Body:** `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`
-- **Display (h1, hero):** `'Playfair Display', Georgia, serif` where font link present
-- **Scale:** clamp-based hero headings; body ~1.7 line-height
+- **Body:** `Georgia, 'Times New Roman', serif` — an editorial serif for long-form reading (`font-size: 17px`)
+- **Display (h1, hero, section headings):** `'Playfair Display', serif`
+- **Scale:** clamp-based hero headings; body `line-height: 1.78`
 
 ## Accessibility
 
 - Skip link (`.skip-link`) on main templates
-- `:focus-visible` outline — 2px gold, 3px offset
+- `:focus-visible` outline — 2px red (`--red-pure`), 3px offset
 - `@media (prefers-reduced-motion: reduce)` collapses animations
 - Table captions and `aria-live` on filter result counts (publications, search)
 

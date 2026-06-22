@@ -926,3 +926,37 @@ footer{
 .d-none { display: none; }
 .d-flex { display: flex; }
 .jc-center { justify-content: center; }
+
+/* ============================================================
+   Accessibility & responsive refinements (appended — wins cascade)
+   ============================================================ */
+
+/* Mobile hamburger: >=44px WCAG touch target, glyph centered */
+@media (max-width: 860px) {
+    .menu-btn {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+/* Small phones (320–480px): tighten gutters so content never overflows */
+@media (max-width: 480px) {
+    nav { padding: 0 1rem; }
+    .section, .page-hero { padding-left: 0.9rem; padding-right: 0.9rem; }
+    .nav-links { padding: 0.5rem 1rem 1rem; }
+}
+
+/* Print: reveal content link targets and keep cards intact across pages */
+@media print {
+    main a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+        word-break: break-all;
+        color: #555;
+    }
+    .card, .section { page-break-inside: avoid; }
+}

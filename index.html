@@ -222,7 +222,7 @@
     <!-- ── NAV ── -->
     <nav role="navigation" aria-label="Main navigation">
         <a href="#" class="nav-logo" aria-label="Daniel Ari Friedman — Home">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
         <div class="nav-links" id="nav-menu" role="menubar">
             <a href="#about" role="menuitem">About</a>
             <a href="#research" role="menuitem">Research</a>
