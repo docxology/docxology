@@ -11,6 +11,7 @@ Use this workflow when new GitHub releases, Zenodo deposits, PDFs, or DOI versio
 - Strong `create_new` and `update_existing` actions may be applied automatically with `--apply`.
 - `needs_review` actions are review-only. Do not auto-apply them without manual curation.
 - Same-title / same-GitHub-release Zenodo versions update the existing row instead of creating duplicate bibliography entries.
+- **Canonical DOI = Zenodo *concept* DOI** (the `conceptdoi` field, which always resolves to the latest version), not a per-version DOI. Use the concept DOI in `pages/BIBLIOGRAPHY.md`, `pages/SOFTWARE.md` Zenodo links, and per-folder `metadata.json`/`CITATION.cff`/`README`. Exception: distinct works that deliberately share one concept DOI (e.g. yearly AII Ecosystem v1/v2/v3 snapshots) keep their per-version DOIs to stay unique.
 - Public APIs are freshness checks. Curated local rows remain the source of truth after review and application.
 
 ## Preconditions

@@ -1,6 +1,6 @@
 # AGENTS.md — `docs/`
 
-Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs). For the human-facing navigation index of this folder, see [`README.md`](README.md); docs are grouped under `architecture/`, `operations/`, `seo/`, `design/`, `security/`, and `releases/`.
+Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs). For the human-facing navigation index of this folder, see [`README.md`](README.md); docs are grouped under `operations/`, `seo/`, `design/`, `security/`, and `releases/` (architecture notes live in this file).
 
 See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`operations/publication-sync.md`](operations/publication-sync.md) for the GitHub + Zenodo publication intake workflow. Add long-form architecture or runbooks under the matching topic directory.
 

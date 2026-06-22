@@ -44,13 +44,33 @@ Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 - `:focus-visible` outline — 2px red (`--red-pure`), 3px offset
 - `@media (prefers-reduced-motion: reduce)` collapses animations
 - Table captions and `aria-live` on filter result counts (publications, search)
+- Mobile menu button carries `aria-expanded` (toggled on open/close), a ≥44px touch
+  target, and an Esc-to-close handler (`site_nav.MENU_ESC_SCRIPT`)
+- Heading hierarchy: one `<h1>` per page, no skipped levels; all form controls labelled
+- Enforced by [`code/orchestrators/accessibility_audit.py`](../../code/orchestrators/accessibility_audit.py)
+  (`single_h1`, `no_heading_skips`, `form_controls_labelled`, skip-link, focus-visible,
+  reduced-motion, img-alt, button labels) — runs inside `validate_repo.py`
 
 ## Layout components
 
-- Fixed nav (68px) with mobile toggle (`.menu-btn`, `.nav-links.open`)
+- Fixed nav — **64px** in the base theme, **74px** in the newspaper override layer — with
+  an accessible mobile toggle (`.menu-btn` + `aria-expanded`, `.nav-links.open`)
 - `.page-hero` / `.section` / `.section-alt` rhythm
 - `.btn`, `.btn-gold`, `.btn-outline` for CTAs
 - Publications: `.pub-table`, `.filter-row`, `.domain-pill`
+
+## Stylesheet structure
+
+`style.css` is a single file with a deliberate **two-layer cascade**, not a duplicate:
+
+- **Base theme** (~L44–432): the gold/serif "broadsheet" design system.
+- **Newspaper override layer** (~L434+): re-declares the same selectors (`nav`,
+  `.nav-logo`, `.hero`, `.section`, `footer`, …) with **different values** (black bg,
+  Inter, double rules) and wins by cascade order.
+
+The two layers look like duplication but are **not** — ~33 selectors are intentional
+per-property overrides. Do **not** "dedup" by deleting either copy; it would change
+production rendering. (Only genuinely-dead duplicate rules have been removed.)
 
 ## Navigation source of truth
 
