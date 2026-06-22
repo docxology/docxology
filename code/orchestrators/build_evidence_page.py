@@ -14,7 +14,7 @@ HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import BREADCRUMB_CSS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
 _WEBPAGE_LD = {
@@ -160,7 +160,7 @@ def render_html(claims: list[dict]) -> str:
         <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
         <div class="footer-links"><a href="cite-verify.html">Cite & Verify</a><a href="discovery.html">Discovery</a><a href="pages/EVIDENCE.md">Markdown</a><a href="https://github.com/docxology/docxology">Source Repo</a></div>
     </footer>
-<script>/*menu-esc*/(function(){{if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{var m=document.querySelector(".nav-links.open");if(m){{m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){{b.setAttribute("aria-expanded","false");b.focus();}}}}}}}});}})();</script></body>
+{MENU_ESC_SCRIPT}</body>
 </html>
 """
 

@@ -14,7 +14,7 @@ JSON_OUT = REPO_ROOT / "data" / "catalog.json"
 HTML_OUT = REPO_ROOT / "catalog.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import BREADCRUMB_CSS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Data Catalog", "catalog.html")]
 
@@ -212,7 +212,7 @@ def render_html(date_modified: str | None = None) -> str:
 {rows}
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>
-<script>/*menu-esc*/(function(){{if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{var m=document.querySelector(".nav-links.open");if(m){{m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){{b.setAttribute("aria-expanded","false");b.focus();}}}}}}}});}})();</script></body>
+{MENU_ESC_SCRIPT}</body>
 </html>
 """
 

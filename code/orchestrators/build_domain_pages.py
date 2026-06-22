@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    MENU_ESC_SCRIPT,
     breadcrumb_list_jsonld,
     render_breadcrumb,
     render_nav_domain,
@@ -244,7 +245,7 @@ def page_footer() -> str:
         </div>
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
-<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script></body>
+""" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
 
