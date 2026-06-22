@@ -166,11 +166,6 @@
             }
         }
         .hero .subtitle{font-size:1.1rem;color:#c9c9c9;margin-bottom:.5rem;font-weight:400}
-        .hero .tagline{
-            font-size:.88rem;color:var(--red-pure);margin-bottom:2rem;
-            font-weight:500;letter-spacing:.07em;text-transform:uppercase;
-        }
-        .cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
         .btn{display:inline-flex;align-items:center;gap:.45rem;padding:.65rem 1.4rem;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .25s;letter-spacing:.01em}
         .hero .btn{position:relative;overflow:hidden;border-color:rgba(255,255,255,0.24);background:rgba(14,14,14,0.72);color:#f4f4f4;box-shadow:0 10px 30px rgba(0,0,0,0.36)}
         .hero .btn::after{content:'';position:absolute;left:12%;right:12%;bottom:8px;height:1px;background:var(--red-pure);opacity:0;transform:scaleX(.35);transition:opacity .2s,transform .2s}
@@ -289,7 +284,6 @@
         .media-item .meta{font-size:.74rem;color:var(--text-muted);margin-top:.15rem}
 
         /* ── CONNECT ── */
-        .connect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
         .connect-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all .3s}
         .connect-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
         .connect-card .icon{font-size:1.5rem;margin-bottom:.75rem}
@@ -384,11 +378,6 @@ thead th { -webkit-user-select: none; user-select: none; }
         .domain-pill{display:inline-flex;align-items:center;gap:.3rem;padding:.25rem .65rem;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:20px;font-size:.72rem;color:var(--text-secondary);cursor:pointer;transition:all .2s}
         .domain-pill:hover,.domain-pill.active{border-color:var(--gold-40);color:var(--gold);background:var(--gold-05)}
 
-        footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--border);color:var(--text-muted);font-size:.78rem}
-        footer a{color:var(--text-secondary)}
-        footer a:hover{color:var(--gold)}
-        .footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:.75rem}
-        .footer-rule{width:40px;height:1px;background:linear-gradient(90deg,var(--red),var(--gold));margin:.75rem auto}
 .repo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px, 1fr));gap:1.25rem}
         .repo-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;display:flex;flex-direction:column;transition:all .2s}
         .repo-card:hover{border-color:var(--border-hover);transform:translateY(-2px)}
@@ -544,17 +533,6 @@ nav{
     text-transform:uppercase;
     letter-spacing:.07em;
     margin-bottom:0;
-}
-.hero .tagline{
-    display:inline-block;
-    padding:.14rem .28rem;
-    color:var(--red-pure);
-    background:transparent;
-    border-top:1px solid rgba(255,0,0,0.82);
-    border-bottom:1px solid rgba(255,0,0,0.82);
-    font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
-    font-size:.8rem;
-    letter-spacing:.1em;
 }
 /* effective masthead elements (override first-block defs; co-located with newspaper theme) */
 .hero .masthead-rule{
@@ -905,7 +883,6 @@ footer{
         line-height:1.02;
     }
     .hero .subtitle{font-size:.72rem}
-    .hero .tagline{font-size:.68rem;line-height:1.55}
     .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     .stat:nth-child(2n){border-right:0}
     .page-hero,.domain-hero{padding:7.8rem 1rem 1.75rem}
@@ -934,12 +911,9 @@ footer{
 .text-center { text-align: center; }
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
-.text-xs { font-size: 0.68rem; }
 .text-sm { font-size: 0.7rem; }
 .text-muted { color: var(--text-muted); }
 .d-none { display: none; }
-.d-flex { display: flex; }
-.jc-center { justify-content: center; }
 
 /* ============================================================
    Accessibility & responsive refinements (appended — wins cascade)

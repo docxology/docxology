@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T05:34:03Z",
+  "generated_at": "2026-06-22T05:46:04Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 77,
   "warnings": 0,
-  "total_bytes": 11371465,
+  "total_bytes": 11370148,
   "largest": [
     {
       "path": "data/videos.json",
