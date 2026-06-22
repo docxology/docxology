@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T05:10:04Z",
+  "generated_at": "2026-06-22T02:15:16Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -305,7 +305,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-20.json"
+        "reports/asset_size_2026-06-22.json"
       ],
       "sources": [
         "root HTML pages",
@@ -319,7 +319,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-06-20.json"
+        "reports/accessibility_static_2026-06-22.json"
       ],
       "sources": [
         "root HTML pages",
@@ -344,7 +344,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-06-20.json"
+        "reports/live_site_verification_2026-06-22.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

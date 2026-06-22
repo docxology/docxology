@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-06-18T16:10:31Z
+Generated: 2026-06-22T02:08:39Z
 
-Current public metrics: 170 curated works; 92 catalogued software repositories (58 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 172 curated works; 92 catalogued software repositories (58 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (163)
+WORKS AND PUBLICATIONS (165)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.20669283
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -217,8 +217,10 @@ WORKS AND PUBLICATIONS (163)
 [167] 2026 | Paper | ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data | Zenodo | 10.5281/zenodo.20647443
 [168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
 [169] 2026 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | Zenodo | 10.5281/zenodo.20705351
-[170] 2026 | Paper | AGEINT: Agentic Intelligence | Zenodo | 10.5281/zenodo.20732275
-[171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20749817
+[170] 2026 | Paper | AGEINT: Agentic Intelligence | Zenodo | 10.5281/zenodo.20732274
+[171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20747834
+[172] 2026 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | Zenodo | 10.5281/zenodo.20786638
+[173] 2026 | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | Zenodo | 10.5281/zenodo.20789899
 
 SOFTWARE (92)
 -------------

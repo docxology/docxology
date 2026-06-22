@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-18T16:06:34Z",
+  "generated_at": "2026-06-22T02:07:12Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 170,
+  "count": 172,
   "works": [
     {
       "num": 1,
@@ -2364,8 +2364,8 @@
       "type": "Paper",
       "title": "AGEINT: Agentic Intelligence",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.20732275",
-      "doi": "10.5281/zenodo.20732275",
+      "url": "https://doi.org/10.5281/zenodo.20732274",
+      "doi": "10.5281/zenodo.20732274",
       "docs_path": "papers/2026_AGEINT/",
       "has_paper_folder": true
     },
@@ -2378,9 +2378,37 @@
       "type": "Paper",
       "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.20749817",
-      "doi": "10.5281/zenodo.20749817",
+      "url": "https://doi.org/10.5281/zenodo.20747834",
+      "doi": "10.5281/zenodo.20747834",
       "docs_path": "papers/2026_PolicyDistillationAs/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 172,
+      "citation_key": "Friedman2026TemplateMadlibDeterministicToken172",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20786638",
+      "doi": "10.5281/zenodo.20786638",
+      "docs_path": "papers/2026_TemplateMadlib/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 173,
+      "citation_key": "Friedman2026CaliforniaPublicRecordsTechnical173",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20789899",
+      "doi": "10.5281/zenodo.20789899",
+      "docs_path": "papers/2026_CaliforniaPublicRecords/",
       "has_paper_folder": true
     }
   ]

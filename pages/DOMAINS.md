@@ -69,7 +69,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695260)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699234)
 - 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.7803313)
-- 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20749817)
+- 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20747834)
 
 **Selected repositories**
 
@@ -86,7 +86,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 Narrative ecosystems, information commons, digital rhetoric, and multiagent security.
 
-- Works: 30
+- Works: 31
 - Selected repositories: 4
 - Collaborator context: RJ Cordes, Carlos Gershenson, Micah Musser
 
@@ -100,10 +100,10 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 - 2026 — [Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)](https://doi.org/10.5281/zenodo.18364119)
 - 2026 — [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](https://doi.org/10.5281/zenodo.20286171)
+- 2026 — [California Public Records: A Technical and Legal Reference for the Post-AB 473 Era](https://doi.org/10.5281/zenodo.20789899)
 - 2024 — [Bridging gaps in image meme research: A multidisciplinary paradigm](https://doi.org/10.1002/asi.24900)
 - 2024 — [Comments on National Digital Twins R&D Strategic Plan](https://doi.org/10.5281/zenodo.13273681)
 - 2024 — [FarmWorks: Decentralized AI Agents for Personalized Solutions](https://doi.org/10.5281/zenodo.13754585)
-- 2024 — [Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum](https://doi.org/10.5281/zenodo.13273682)
 
 **Selected repositories**
 
@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 28
+- Works: 29
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

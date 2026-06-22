@@ -1,0 +1,48 @@
+{
+  "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.20786638",
+  "doi_url": "https://doi.org/10.5281/zenodo.20786638",
+  "concept_doi": "10.5281/zenodo.20786638",
+  "version_doi": "10.5281/zenodo.20786639",
+  "zenodo_record": "https://zenodo.org/records/20786639",
+  "record_id": "20786639",
+  "publication_date": "2026-06-21",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. It keeps playful Mad Lib token-injection mechanics inside a serious reproducibility contract, with deterministic conditional assembly of manuscript sections.",
+  "keywords": [
+    "madlib generation",
+    "token injection",
+    "conditional manuscripts",
+    "reproducible research",
+    "IMRAD"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Template_a593c1fe.pdf",
+      "download_url": "https://zenodo.org/api/records/20786639/files/Friedman_2026_Template_a593c1fe.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "https://github.com/docxology/template_madlib",
+      "type": "software"
+    }
+  ],
+  "github_repo": "https://github.com/docxology/template_madlib",
+  "source": "zenodo-with-github",
+  "checked_at": "2026-06-21T00:00:00Z"
+}

@@ -4204,8 +4204,8 @@
     "note": "Catalog row 170; docs: papers/2026_AGEINT/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20732275",
-    "URL": "https://doi.org/10.5281/zenodo.20732275"
+    "DOI": "10.5281/zenodo.20732274",
+    "URL": "https://doi.org/10.5281/zenodo.20732274"
   },
   {
     "id": "Friedman2026PolicyDistillationAsActive171",
@@ -4229,7 +4229,57 @@
     "note": "Catalog row 171; docs: papers/2026_PolicyDistillationAs/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20749817",
-    "URL": "https://doi.org/10.5281/zenodo.20749817"
+    "DOI": "10.5281/zenodo.20747834",
+    "URL": "https://doi.org/10.5281/zenodo.20747834"
+  },
+  {
+    "id": "Friedman2026TemplateMadlibDeterministicToken172",
+    "type": "article-journal",
+    "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 172; docs: papers/2026_TemplateMadlib/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20786638",
+    "URL": "https://doi.org/10.5281/zenodo.20786638"
+  },
+  {
+    "id": "Friedman2026CaliforniaPublicRecordsTechnical173",
+    "type": "article-journal",
+    "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 173; docs: papers/2026_CaliforniaPublicRecords/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20789899",
+    "URL": "https://doi.org/10.5281/zenodo.20789899"
   }
 ]

@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20749817.svg)](https://doi.org/10.5281/zenodo.20749817)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20747834.svg)](https://doi.org/10.5281/zenodo.20747834)
 
 ---
 
@@ -33,7 +33,7 @@ on-policy distillation · active inference · self-distillation · privileged in
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.20749817](https://doi.org/10.5281/zenodo.20749817) |
+| **DOI** | [10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834) |
 | **Published** | 2026-06-18 |
 | **Version** | 1.0.2 |
 | **Zenodo record** | https://zenodo.org/records/20749817 |
@@ -46,7 +46,7 @@ on-policy distillation · active inference · self-distillation · privileged in
 
 ## Citation
 
-> Friedman, D. A. (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Zenodo. https://doi.org/10.5281/zenodo.20749817
+> Friedman, D. A. (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Zenodo. https://doi.org/10.5281/zenodo.20747834
 
 ## Related
 

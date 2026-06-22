@@ -1,8 +1,10 @@
 {
   "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
   "version": "1.0.2",
-  "doi": "10.5281/zenodo.20749817",
-  "doi_url": "https://doi.org/10.5281/zenodo.20749817",
+  "doi": "10.5281/zenodo.20747834",
+  "doi_url": "https://doi.org/10.5281/zenodo.20747834",
+  "concept_doi": "10.5281/zenodo.20747834",
+  "version_doi": "10.5281/zenodo.20749817",
   "zenodo_record": "https://zenodo.org/records/20749817",
   "record_id": "20749817",
   "publication_date": "2026-06-18",

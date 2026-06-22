@@ -4,20 +4,20 @@ type: article
 title: "AGEINT: Agentic Intelligence"
 version: "0.1"
 date-released: 2026-06-17
-doi: 10.5281/zenodo.20732275
-url: "https://doi.org/10.5281/zenodo.20732275"
-repository-code: "https://github.com/docxology/AGEINT"
+doi: 10.5281/zenodo.20732274
+url: "https://doi.org/10.5281/zenodo.20732274"
+license: CC-BY-4.0
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.20732274
+    description: "Zenodo concept DOI (all versions)"
+  - type: doi
     value: 10.5281/zenodo.20732275
-    description: "Zenodo DOI"
+    description: "Zenodo version DOI (0.1)"
   - type: url
     value: "https://zenodo.org/records/20732275"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/AGEINT/releases/tag/v0.1.0"
-    description: "GitHub release"

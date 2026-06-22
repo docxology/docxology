@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T05:15:23Z",
+  "generated_at": "2026-06-22T02:15:14Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1819,
+  "count": 1821,
   "items": [
     {
       "id": "page:home",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-20.json",
+      "url": "/reports/accessibility_static_2026-06-22.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-20.json",
+      "url": "/reports/asset_size_2026-06-22.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-20.json",
+      "url": "/reports/live_site_verification_2026-06-22.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4084,8 +4084,8 @@
       "type": "work",
       "title": "AGEINT: Agentic Intelligence",
       "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20732275",
-      "summary": "Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic",
+      "external_url": "https://doi.org/10.5281/zenodo.20732274",
+      "summary": "AGEINT (Agentic Intelligence) is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the page. It",
       "year": 2026,
       "domain": "Computational",
       "tags": [
@@ -4093,22 +4093,20 @@
         "Computational",
         "bibliography",
         "agentic intelligence",
-        "AGEINT",
-        "AI agents",
         "intelligence tradecraft",
         "cognitive security",
         "structured analytic techniques",
         "active inference",
-        "model context protocol"
+        "multi-agent systems"
       ],
-      "content": "AGEINT: Agentic Intelligence Zenodo 10.5281/zenodo.20732275 Friedman2026AGEINTAgenticIntelligence170 Computational Paper Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the page. It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source identities, then asks the reader to inspect the same things an instructor or assurance reviewer would inspect: the part map that frames the domain, the module overview that names the learner task, the source spine that separates official, standards, scholarly, public-domain, practitioner, vendor, and provenance-only support while separating source quality from narrative fluency, the evidence packet that a student would retain, the reviewer challeng agentic intelligence AGEINT AI agents intelligence tradecraft cognitive security structured analytic techniques active inference model context protocol multi-agent systems operational governance agentic intelligence AGEINT AI agents intelligence tradecraft cognitive security"
+      "content": "AGEINT: Agentic Intelligence Zenodo 10.5281/zenodo.20732274 Friedman2026AGEINTAgenticIntelligence170 Computational Paper AGEINT (Agentic Intelligence) is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the page. It converts a Structured-Intelligence-Studies guide's table of contents and bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source references, framed around cognitive security, structured analytic techniques, and Active Inference. agentic intelligence intelligence tradecraft cognitive security structured analytic techniques active inference multi-agent systems agentic intelligence intelligence tradecraft cognitive security structured analytic techniques active inference"
     },
     {
       "id": "work:Friedman2026PolicyDistillationAsActive171",
       "type": "work",
       "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
       "url": "/works/Friedman2026PolicyDistillationAsActive171.html",
-      "external_url": "https://doi.org/10.5281/zenodo.20749817",
+      "external_url": "https://doi.org/10.5281/zenodo.20747834",
       "summary": "Abstract This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construc",
       "year": 2026,
       "domain": "Active Inference",
@@ -4125,7 +4123,51 @@
         "pymdp",
         "sophisticated inference"
       ],
-      "content": "On-Policy Distillation as Active Inference in Finite Variational Models Zenodo 10.5281/zenodo.20749817 Friedman2026PolicyDistillationAsActive171 Active Inference Paper Abstract This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL distillation loss is variational free energy up to the evidence constant, $F = D {\\mathrm{KL}}(q\\,\\ \\,p(s\\mid o)) - \\log p(o)$, whose KL target is the teacher-induced posterior $p(s\\mid o)\\propto p(o,s)$ . The title's \"as\" is therefore a scoped mathematical correspondence rather than the slogan OPD = Active Inference. Variational free energy names the realized-rollout distillation loss; expected free energy remains the planning-side objective by which the pymdp agent selects actions . On-policy on-policy distillation active inference self-distillation privileged information free energy principle reverse KL divergence pymdp sophisticated inference on-policy distillation active inference self-distillation privileged information free energy principle"
+      "content": "On-Policy Distillation as Active Inference in Finite Variational Models Zenodo 10.5281/zenodo.20747834 Friedman2026PolicyDistillationAsActive171 Active Inference Paper Abstract This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL distillation loss is variational free energy up to the evidence constant, $F = D {\\mathrm{KL}}(q\\,\\ \\,p(s\\mid o)) - \\log p(o)$, whose KL target is the teacher-induced posterior $p(s\\mid o)\\propto p(o,s)$ . The title's \"as\" is therefore a scoped mathematical correspondence rather than the slogan OPD = Active Inference. Variational free energy names the realized-rollout distillation loss; expected free energy remains the planning-side objective by which the pymdp agent selects actions . On-policy on-policy distillation active inference self-distillation privileged information free energy principle reverse KL divergence pymdp sophisticated inference on-policy distillation active inference self-distillation privileged information free energy principle"
+    },
+    {
+      "id": "work:Friedman2026TemplateMadlibDeterministicToken172",
+      "type": "work",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "url": "/works/Friedman2026TemplateMadlibDeterministicToken172.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20786638",
+      "summary": "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. It keeps pl",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "madlib generation",
+        "token injection",
+        "conditional manuscripts",
+        "reproducible research",
+        "IMRAD"
+      ],
+      "content": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts Zenodo 10.5281/zenodo.20786638 Friedman2026TemplateMadlibDeterministicToken172 Computational Paper This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. It keeps playful Mad Lib token-injection mechanics inside a serious reproducibility contract, with deterministic conditional assembly of manuscript sections. madlib generation token injection conditional manuscripts reproducible research IMRAD madlib generation token injection conditional manuscripts reproducible research IMRAD"
+    },
+    {
+      "id": "work:Friedman2026CaliforniaPublicRecordsTechnical173",
+      "type": "work",
+      "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+      "url": "/works/Friedman2026CaliforniaPublicRecordsTechnical173.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20789899",
+      "summary": "A technical and legal reference to California's public-records ecosystem, anchored by the California Public Records Act (CPRA), recodified by Assembly Bill 473 effective January 2023 to Government Code §§ 7920.000 et seq",
+      "year": 2026,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "California Public Records Act",
+        "open data",
+        "CKAN",
+        "Socrata",
+        "ArcGIS",
+        "cognitive security",
+        "civic technology"
+      ],
+      "content": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era Zenodo 10.5281/zenodo.20789899 Friedman2026CaliforniaPublicRecordsTechnical173 Cognitive Security Paper A technical and legal reference to California's public-records ecosystem, anchored by the California Public Records Act (CPRA), recodified by Assembly Bill 473 effective January 2023 to Government Code §§ 7920.000 et seq., and extended in practice through state and local open-data portals, request platforms, API frameworks (CKAN, Socrata, ArcGIS), metadata schemas, intergovernmental data-sharing surfaces, and exemption rules. California Public Records Act open data CKAN Socrata ArcGIS cognitive security civic technology California Public Records Act open data CKAN Socrata ArcGIS"
     },
     {
       "id": "software:docxology:template",
@@ -31118,7 +31160,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 170 works.",
+      "title": "The curated bibliography contains 172 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31126,12 +31168,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 170 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 172 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 153 per-paper documentation folders.",
+      "title": "The repository contains 155 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31139,7 +31181,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 153 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 155 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31315,7 +31357,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 170 works, 92 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 172 works, 92 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

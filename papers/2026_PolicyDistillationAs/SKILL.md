@@ -1,6 +1,6 @@
 ---
 name: "PolicyDistillationAs"
-description: "Use for On-Policy Distillation as Active Inference in Finite Variational Models, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20749817."
+description: "Use for On-Policy Distillation as Active Inference in Finite Variational Models, a paired GitHub and Zenodo publication with concept DOI 10.5281/zenodo.20747834 (version 1.0.2: 10.5281/zenodo.20749817)."
 tags: ["on-policy-distillation", "active-inference", "self-distillation", "privileged-information", "free-energy-principle", "reverse-kl-divergence", "pymdp", "sophisticated-inference"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["on-policy-distillation", "active-inference", "self-distillation", "privi
 
 Use this skill when working with the publication **On-Policy Distillation as Active Inference in Finite Variational Models** or its paired release artifacts.
 
-1. Ground citations in DOI `10.5281/zenodo.20749817`.
+1. Ground citations in concept DOI `10.5281/zenodo.20747834` (version 1.0.2: `10.5281/zenodo.20749817`).
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
 3. Keep release tag `v1.0.2` and repository `ActiveInferenceInstitute/on_policy_distillation` linked when updating catalog surfaces.
 

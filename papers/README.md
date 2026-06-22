@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (153)
+## Papers (155)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -161,9 +161,11 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 148 | [2026_DemoCreate](2026_DemoCreate/) | ✅ | 2026 | DemoCreate |
 | 149 | [2026_ENTO](2026_ENTO/) | ✅ | 2026 | ENTO |
 | 150 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
-| 151 | [2026_COGANT](2026_COGANT/) | — | 2026 | COGANT |
+| 151 | [2026_COGANT](2026_COGANT/) | ✅ | 2026 | COGANT |
 | 152 | [2026_AGEINT](2026_AGEINT/) | ✅ | 2026 | AGEINT |
 | 153 | [2026_PolicyDistillationAs](2026_PolicyDistillationAs/) | ✅ | 2026 | PolicyDistillationAs |
+| 154 | [2026_TemplateMadlib](2026_TemplateMadlib/) | ✅ | 2026 | TemplateMadlib |
+| 155 | [2026_CaliforniaPublicRecords](2026_CaliforniaPublicRecords/) | ✅ | 2026 | CaliforniaPublicRecords |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

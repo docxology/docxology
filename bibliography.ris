@@ -2002,8 +2002,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - AGEINT: Agentic Intelligence
 T2  - Zenodo
-DO  - 10.5281/zenodo.20732275
-UR  - https://doi.org/10.5281/zenodo.20732275
+DO  - 10.5281/zenodo.20732274
+UR  - https://doi.org/10.5281/zenodo.20732274
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 170; docs: papers/2026_AGEINT/
@@ -2014,9 +2014,33 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - On-Policy Distillation as Active Inference in Finite Variational Models
 T2  - Zenodo
-DO  - 10.5281/zenodo.20749817
-UR  - https://doi.org/10.5281/zenodo.20749817
+DO  - 10.5281/zenodo.20747834
+UR  - https://doi.org/10.5281/zenodo.20747834
 KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 171; docs: papers/2026_PolicyDistillationAs/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
+T2  - Zenodo
+DO  - 10.5281/zenodo.20786638
+UR  - https://doi.org/10.5281/zenodo.20786638
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 172; docs: papers/2026_TemplateMadlib/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
+T2  - Zenodo
+DO  - 10.5281/zenodo.20789899
+UR  - https://doi.org/10.5281/zenodo.20789899
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 173; docs: papers/2026_CaliforniaPublicRecords/
 ER  -

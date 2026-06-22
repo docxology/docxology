@@ -1,0 +1,44 @@
+{
+  "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.20789899",
+  "doi_url": "https://doi.org/10.5281/zenodo.20789899",
+  "concept_doi": "10.5281/zenodo.20789899",
+  "version_doi": "10.5281/zenodo.20789916",
+  "zenodo_record": "https://zenodo.org/records/20789916",
+  "record_id": "20789916",
+  "publication_date": "2026-06-21",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A technical and legal reference to California's public-records ecosystem, anchored by the California Public Records Act (CPRA), recodified by Assembly Bill 473 effective January 2023 to Government Code \u00a7\u00a7 7920.000 et seq., and extended in practice through state and local open-data portals, request platforms, API frameworks (CKAN, Socrata, ArcGIS), metadata schemas, intergovernmental data-sharing surfaces, and exemption rules.",
+  "keywords": [
+    "California Public Records Act",
+    "open data",
+    "CKAN",
+    "Socrata",
+    "ArcGIS",
+    "cognitive security",
+    "civic technology"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_California_8f09eac2.pdf",
+      "download_url": "https://zenodo.org/api/records/20789916/files/Friedman_2026_California_8f09eac2.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-21T00:00:00Z"
+}
