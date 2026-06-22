@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-22T02:15:13Z",
+  "generated_at": "2026-06-22T02:38:23Z",
   "base_url": "https://danielarifriedman.com/",
   "expected_counts": {
-    "generated_at": "2026-06-22T02:15:09+00:00",
+    "generated_at": "2026-06-22T02:38:20+00:00",
     "works": 172,
-    "software_docx": 58,
+    "software_docx": 60,
     "software_aii": 34,
-    "software_total": 92,
-    "public_repos": 371
+    "software_total": 94,
+    "public_repos": 372
   },
   "note": "Live verification can fail while GitHub Pages is still building or CDN caches are stale.",
   "github_pages": {
@@ -21,7 +21,7 @@
     "html_url": "https://danielarifriedman.com/"
   },
   "checked_urls": 14,
-  "passing": 13,
+  "passing": 12,
   "overall_ok": false,
   "results": [
     {
@@ -30,7 +30,7 @@
       "ok": true,
       "status": 200,
       "bytes": 36027,
-      "elapsed_ms": 213,
+      "elapsed_ms": 134,
       "markers": {
         "danielarifriedman.com": true,
         "publications": true,
@@ -38,12 +38,12 @@
         "Search": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-8cbb\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-8cbb\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-sjc10081-SJC"
+        "age": "17",
+        "x-cache": "HIT",
+        "x-served-by": "cache-sjc10077-SJC"
       },
       "error": ""
     },
@@ -53,7 +53,7 @@
       "ok": false,
       "status": 200,
       "bytes": 16120,
-      "elapsed_ms": 199,
+      "elapsed_ms": 105,
       "markers": {
         "Publications": true,
         "data/publications-ld.json": true,
@@ -61,37 +61,37 @@
         "172 Works": false
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:10 GMT",
-        "etag": "\"6a36c2e2-3ef8\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-3ef8\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-sjc1000109-SJC"
+        "age": "72",
+        "x-cache": "HIT",
+        "x-served-by": "cache-pao-kpao1770062-PAO"
       },
       "error": ""
     },
     {
       "path": "software.html",
       "url": "https://danielarifriedman.com/software.html",
-      "ok": true,
+      "ok": false,
       "status": 200,
       "bytes": 65318,
-      "elapsed_ms": 260,
+      "elapsed_ms": 142,
       "markers": {
         "Software": true,
         "data/software-ld.json": true,
         "Open-Source Repositories": true,
-        "58 owned": true,
+        "60 owned": false,
         "34 catalogued": true,
-        "371 public repositories": true
+        "372 public repositories": false
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-ff26\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-ff26\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-pao-kpao1770067-PAO"
+        "age": "72",
+        "x-cache": "HIT",
+        "x-served-by": "cache-pao-kpao1770077-PAO"
       },
       "error": ""
     },
@@ -101,19 +101,19 @@
       "ok": true,
       "status": 200,
       "bytes": 10467,
-      "elapsed_ms": 221,
+      "elapsed_ms": 120,
       "markers": {
         "Search": true,
         "search-index.json": true,
         "OpenSearch": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:10 GMT",
-        "etag": "\"6a36c2e2-28e3\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-28e3\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-pao-kpao1770040-PAO"
+        "age": "16",
+        "x-cache": "HIT",
+        "x-served-by": "cache-pao-kpao1770047-PAO"
       },
       "error": ""
     },
@@ -123,7 +123,7 @@
       "ok": true,
       "status": 200,
       "bytes": 35615,
-      "elapsed_ms": 116,
+      "elapsed_ms": 146,
       "markers": {
         "Data Catalog": true,
         "\"@context\"": true,
@@ -131,12 +131,12 @@
         "application/ld+json": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-8b1f\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-8b1f\"",
         "cache-control": "max-age=600",
-        "age": "69",
+        "age": "16",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10024-SJC"
+        "x-served-by": "cache-sjc1000090-SJC"
       },
       "error": ""
     },
@@ -146,19 +146,19 @@
       "ok": true,
       "status": 200,
       "bytes": 28955,
-      "elapsed_ms": 107,
+      "elapsed_ms": 129,
       "markers": {
         "Updates": true,
         "update-card": true,
         "changelog": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:10 GMT",
-        "etag": "\"6a36c2e2-711b\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:28 GMT",
+        "etag": "\"6a389b74-711b\"",
         "cache-control": "max-age=600",
-        "age": "69",
+        "age": "72",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10043-SJC"
+        "x-served-by": "cache-sjc10020-SJC"
       },
       "error": ""
     },
@@ -168,18 +168,18 @@
       "ok": true,
       "status": 200,
       "bytes": 634,
-      "elapsed_ms": 88,
+      "elapsed_ms": 112,
       "markers": {
         "OpenSearchDescription": true,
         "search.html?q={searchTerms}": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-27a\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-27a\"",
         "cache-control": "max-age=600",
-        "age": "69",
+        "age": "16",
         "x-cache": "HIT",
-        "x-served-by": "cache-pao-kpao1770063-PAO"
+        "x-served-by": "cache-sjc10040-SJC"
       },
       "error": ""
     },
@@ -188,20 +188,20 @@
       "url": "https://danielarifriedman.com/sitemap.xml",
       "ok": true,
       "status": 200,
-      "bytes": 232926,
-      "elapsed_ms": 293,
+      "bytes": 233322,
+      "elapsed_ms": 179,
       "markers": {
         "sitemap": true,
         "publications.html": true,
         "software.html": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:09 GMT",
-        "etag": "\"6a36c2e1-38dde\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:28 GMT",
+        "etag": "\"6a389b74-38f6a\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-pao-kpao1770062-PAO"
+        "age": "71",
+        "x-cache": "HIT",
+        "x-served-by": "cache-sjc10065-SJC"
       },
       "error": ""
     },
@@ -211,19 +211,19 @@
       "ok": true,
       "status": 200,
       "bytes": 8489,
-      "elapsed_ms": 95,
+      "elapsed_ms": 113,
       "markers": {
         "Human search page": true,
         "Data catalog": true,
         "Agent start guide": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:09 GMT",
-        "etag": "\"6a36c2e1-2129\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:28 GMT",
+        "etag": "\"6a389b74-2129\"",
         "cache-control": "max-age=600",
-        "age": "69",
+        "age": "71",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10054-SJC"
+        "x-served-by": "cache-sjc10052-SJC"
       },
       "error": ""
     },
@@ -232,20 +232,20 @@
       "url": "https://danielarifriedman.com/search-index.json",
       "ok": true,
       "status": 200,
-      "bytes": 1787712,
-      "elapsed_ms": 1087,
+      "bytes": 1790555,
+      "elapsed_ms": 315,
       "markers": {
         "\"count\"": true,
         "\"items\"": true,
         "items": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-1b4740\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:30 GMT",
+        "etag": "\"6a389b76-1b525b\"",
         "cache-control": "max-age=600",
-        "age": "69",
+        "age": "71",
         "x-cache": "HIT",
-        "x-served-by": "cache-pao-kpao1770035-PAO"
+        "x-served-by": "cache-sjc10063-SJC"
       },
       "error": ""
     },
@@ -255,19 +255,19 @@
       "ok": true,
       "status": 200,
       "bytes": 22475,
-      "elapsed_ms": 191,
+      "elapsed_ms": 88,
       "markers": {
         "DataCatalog": true,
         "External Link Triage": true,
         "Software": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-57cb\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:30 GMT",
+        "etag": "\"6a389b76-57cb\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-sjc10051-SJC"
+        "age": "71",
+        "x-cache": "HIT",
+        "x-served-by": "cache-sjc10065-SJC"
       },
       "error": ""
     },
@@ -277,19 +277,19 @@
       "ok": true,
       "status": 200,
       "bytes": 7156,
-      "elapsed_ms": 225,
+      "elapsed_ms": 91,
       "markers": {
         "# Generated Files": true,
         "Rebuild command": true,
         "Validation": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:11 GMT",
-        "etag": "\"6a36c2e3-1bf4\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:29 GMT",
+        "etag": "\"6a389b75-1bf4\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-sjc1000124-SJC"
+        "age": "71",
+        "x-cache": "HIT",
+        "x-served-by": "cache-sjc10038-SJC"
       },
       "error": ""
     },
@@ -299,18 +299,18 @@
       "ok": true,
       "status": 200,
       "bytes": 601,
-      "elapsed_ms": 102,
+      "elapsed_ms": 86,
       "markers": {
         "Daniel Ari Friedman": true,
         "docxology": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:09 GMT",
-        "etag": "\"6a36c2e1-259\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:28 GMT",
+        "etag": "\"6a389b74-259\"",
         "cache-control": "max-age=600",
-        "age": "69",
+        "age": "71",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10034-SJC"
+        "x-served-by": "cache-sjc10074-SJC"
       },
       "error": ""
     },
@@ -320,18 +320,18 @@
       "ok": true,
       "status": 200,
       "bytes": 462,
-      "elapsed_ms": 216,
+      "elapsed_ms": 104,
       "markers": {
         "Contact:": true,
         "Policy:": true
       },
       "cache": {
-        "last-modified": "Sat, 20 Jun 2026 16:42:10 GMT",
-        "etag": "\"6a36c2e2-1ce\"",
+        "last-modified": "Mon, 22 Jun 2026 02:18:30 GMT",
+        "etag": "\"6a389b76-1ce\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-pao-kpao1770070-PAO"
+        "age": "71",
+        "x-cache": "HIT",
+        "x-served-by": "cache-pao-kpao1770082-PAO"
       },
       "error": ""
     }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T02:08:21Z",
+  "generated_at": "2026-06-22T02:37:00Z",
   "source": "pages/SOFTWARE.md",
-  "count": 92,
+  "count": 94,
   "repositories": [
     {
       "name": "template",
@@ -244,6 +244,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "AGEINT",
+      "url": "https://github.com/docxology/AGEINT",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft ·  · Zenodo",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_AGEINT/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20732274"
+    },
+    {
       "name": "template_autoscientists",
       "url": "https://github.com/docxology/template_autoscientists",
       "owner": "docxology",
@@ -277,7 +289,7 @@
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_RecoveringLLMPersona/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20498700"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20498699"
     },
     {
       "name": "itrace",
@@ -289,7 +301,7 @@
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_ITrace/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20614909"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20614908"
     },
     {
       "name": "coasys",
@@ -302,6 +314,18 @@
       "updated_or_year": "2026-06",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "template_madlib",
+      "url": "https://github.com/docxology/template_madlib",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_TemplateMadlib/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20786638"
     },
     {
       "name": "ultralink-docx",

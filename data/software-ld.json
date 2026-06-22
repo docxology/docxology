@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "58 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "60 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -232,6 +232,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "AGEINT",
+            "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/AGEINT",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML",
+            "sameAs": "https://doi.org/10.5281/zenodo.20732274"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "template_autoscientists",
             "description": "AutoScientists deterministic multi-agent scientific-discovery coordination harness ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/template_autoscientists",
@@ -264,7 +276,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.20498700"
+            "sameAs": "https://doi.org/10.5281/zenodo.20498699"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -276,7 +288,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.20614909"
+            "sameAs": "https://doi.org/10.5281/zenodo.20614908"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -288,6 +300,18 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_madlib",
+            "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/template_madlib",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20786638"
         },
         {
             "@type": "SoftwareSourceCode",

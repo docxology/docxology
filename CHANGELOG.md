@@ -2,6 +2,13 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-21
+
+- Added two Zenodo publications: **Template Madlib** (`zenodo.20786638`, 💻) — `docxology/template_madlib`, deterministic token injection for conditional IMRAD manuscripts — as work **172**, and **California Public Records** (`zenodo.20789899`, 🛡️) — a technical and legal reference for the post-AB 473 era — as work **173**. Downloaded both PDFs, generated work/paper pages, and registered `papers/README.md` entries. Bibliography **170→172**; paper folders **153→155**. Also added the previously-missing **COGANT-0.6.0.pdf** and removed a duplicate On-Policy Distillation folder.
+- Repo-wide **Zenodo DOI concept-consistency** pass: switched **70** bibliography rows (plus the 4 newest works and the `itrace` / `ntqr_llm` / `on_policy_distillation` software-catalog links) from per-version DOIs to their **concept DOIs**, each verified against the Zenodo API `conceptdoi` field so the citation always resolves to the latest version. Deliberately excluded version-distinct works that share a single concept DOI (e.g. the AII Ecosystem v1/v2/v3 snapshots) to avoid duplicate DOIs.
+- Added **AGEINT** (`docxology/AGEINT`) and **template_madlib** (`docxology/template_madlib`) to the software catalog: docxology owned **58→60**, Grand Total **92→94** (Education 5→6, Developer Tools 15→16); recomputed the GitHub-inventory curated split.
+- Fixes: `sync_publications_html.py` now patches `twitter:image:alt` with the live work count (was stale at 170); removed a doubled "Abstract" heading and added the MIT `license` field in the On-Policy Distillation paper folder; reconciled that folder's metadata to its concept DOI.
+
 ## 2026-06-17
 
 - Added **AGEINT: Agentic Intelligence** (`zenodo.20732275`, 💻) — `docxology/AGEINT` v0.1.0, a Synthetic Analytic Tradecraft curriculum-and-assurance atlas — as work **170** via the canonical `sync_paired_publications.py` apply path, scoped `--since 2026-06-16` to isolate the single new release. Stripped the `<p>` HTML the Zenodo abstract carried into `metadata.json`/`README.md`; renumbered the `papers/README.md` index strictly **1..152** (closed the gap at 111 left by the CEREBRUM dedup, plus a duplicate `152`). Regenerated all dependent surfaces. Bibliography **168→169**; paper folders **151→152**; software unchanged at **91**; Computational domain **27→28**. Identified **CEREBRUM** (`zenodo.15231156`) and **Self-Improvement Agent Harness** (`zenodo.20693012`) as re-versions of existing works `…010` / `…127` (newer version DOIs of already-curated concepts) — update-only, not new rows.

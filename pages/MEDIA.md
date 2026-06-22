@@ -46,8 +46,8 @@ Long-form creative and intellectual livestreams including pen drawings, Synerget
 | 2024 | Sensemaking Federation: Exploring the Frontiers of Digital Innovation | Conference | [10.5281/zenodo.14574046](https://doi.org/10.5281/zenodo.14574046) |
 | 2024 | MathArt Stream #8: William Blake and Active Inference | Livestream | [10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301) |
 | 2024 | KuppingerCole EIC 2024 — Active Inference and Identity | European Identity & Cloud Conference | [Speaker profile](https://www.kuppingercole.com/events/eic2024/speakers/3516) (confirmed speaker #3516) |
-| 2023 | Of Ants & Aging | Conference | [10.5281/zenodo.7855582](https://doi.org/10.5281/zenodo.7855582) |
-| 2023 | Postdoc Review (2020–2023) | UC Davis | [10.5281/zenodo.8377988](https://doi.org/10.5281/zenodo.8377988) |
+| 2023 | Of Ants & Aging | Conference | [10.5281/zenodo.7855581](https://doi.org/10.5281/zenodo.7855581) |
+| 2023 | Postdoc Review (2020–2023) | UC Davis | [10.5281/zenodo.8377987](https://doi.org/10.5281/zenodo.8377987) |
 | 2018 | MVEE: A Framework for Evolutionary Studies | Conference | [10.5281/zenodo.13999298](https://doi.org/10.5281/zenodo.13999298) |
 
 ---
@@ -73,7 +73,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 |------|---------|-------|-------------|-----|
 | 2019 | Daniel Dennett | Philosophy of mind, consciousness | *ALIUS Bulletin* | [10.34700/7gkw-zh08](https://doi.org/10.34700/7gkw-zh08) |
 | 2020 | Timothy Hanks | Decision neuroscience | *ALIUS Bulletin* | [10.34700/8pg4-0h12](https://doi.org/10.34700/8pg4-0h12) |
-| 2022 | Robert Sapolsky | Free will, determinism | *ALIUS Bulletin* | [10.5281/zenodo.7394901](https://doi.org/10.5281/zenodo.7394901) |
+| 2022 | Robert Sapolsky | Free will, determinism | *ALIUS Bulletin* | [10.5281/zenodo.7394900](https://doi.org/10.5281/zenodo.7394900) |
 
 ---
 
@@ -85,7 +85,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 | How to use Keybase for Remote Teams | Udemy | [udemy.com](https://www.udemy.com/course/keybase-for-remote-teams/) |
 | Physics as Information Processing (Chris Fields transcript) | Zenodo | [10.5281/zenodo.10447642](https://doi.org/10.5281/zenodo.10447642) |
 | Innovator's Digital Playbook | Web | [innovatorsdigitalplaybook.com](https://innovatorsdigitalplaybook.com/) |
-| Facilitator's Catechism Playbook | Zenodo | [10.5281/zenodo.4579414](https://doi.org/10.5281/zenodo.4579414) |
+| Facilitator's Catechism Playbook | Zenodo | [10.5281/zenodo.4579413](https://doi.org/10.5281/zenodo.4579413) |
 
 ---
 

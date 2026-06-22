@@ -112,7 +112,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
-| 2026 | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574118](https://doi.org/10.5281/zenodo.19574118) |
+| 2026 | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574117](https://doi.org/10.5281/zenodo.19574117) |
 | 2025 | The Ant Stack | *Zenodo* | [10.5281/zenodo.16782756](https://doi.org/10.5281/zenodo.16782756) |
 | 2021 | Active Inferants: An Active Inference Framework for Ant Colony Behavior | *Frontiers in Behavioral Neuroscience* | [10.3389/fnbeh.2021.647732](https://doi.org/10.3389/fnbeh.2021.647732) |
 | 2020 | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | *Communications Biology* | [10.1038/s42003-020-0813-8](https://doi.org/10.1038/s42003-020-0813-8) |
@@ -139,7 +139,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics | *Entropy* | [10.3390/e27050459](https://doi.org/10.3390/e27050459) |
 | 2024 | Federated inference and belief sharing | *Neuroscience & Biobehavioral Reviews* | [10.1016/j.neubiorev.2023.105500](https://doi.org/10.1016/j.neubiorev.2023.105500) |
 | 2023 | A variational synthesis of evolutionary and developmental dynamics | *Entropy* | [10.3390/e25070964](https://doi.org/10.3390/e25070964) |
-| 2023 | Generalized Notation Notation for Active Inference Models | *Zenodo* | [10.5281/zenodo.7803328](https://doi.org/10.5281/zenodo.7803328) |
+| 2023 | Generalized Notation Notation for Active Inference Models | *Zenodo* | [10.5281/zenodo.7803327](https://doi.org/10.5281/zenodo.7803327) |
 | 2018 | Of woodlice and men (with Karl Friston) | *ALIUS Bulletin* | [10.34700/h460-nz89](https://doi.org/10.34700/h460-nz89) |
 
 > 📁 **Paper folders**: [CEREBRUM](papers/2025_CEREBRUM/) · [GNN](papers/2023_GNN/) · [FederatedInference](papers/2024_FederatedInference/) · [Thoughtseeds](papers/2025_Thoughtseeds/) · [EvoJump](papers/2025_EvoJump/)
@@ -167,10 +167,10 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
-| 2026 | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | *Zenodo* | [10.5281/zenodo.18364119](https://doi.org/10.5281/zenodo.18364119) |
+| 2026 | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | *Zenodo* | [10.5281/zenodo.18364118](https://doi.org/10.5281/zenodo.18364118) |
 | 2024 | Bridging gaps in image meme research: A multidisciplinary paradigm | *JASIST* | [10.1002/asi.24900](https://doi.org/10.1002/asi.24900) |
 | 2024 | FarmWorks: Decentralized AI Agents for Personalized Solutions | *Zenodo* | [10.5281/zenodo.13754585](https://doi.org/10.5281/zenodo.13754585) |
-| 2023 | Cognitive Sovereignty & Active Inference in the State of Exception | *Zenodo* | [10.5281/zenodo.10038232](https://doi.org/10.5281/zenodo.10038232) |
+| 2023 | Cognitive Sovereignty & Active Inference in the State of Exception | *Zenodo* | [10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231) |
 
 > 📁 **Paper folders**: [CognitiveIntegrity](papers/2026_CognitiveIntegrity/) · [InformationCommons](papers/2022_InformationCommons/) · [NarrativeEcosystems](papers/2021_NarrativeEcosystems/) · [FarmWorks](papers/2024_FarmWorks/)
 
@@ -187,12 +187,12 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
-| 2026 | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984) |
-| 2026 | The Doors of Perception are the Threshold of Prediction: Active Inference and Blake's Theory of Seeing | *Zenodo* | [10.5281/zenodo.18600041](https://doi.org/10.5281/zenodo.18600041) |
+| 2026 | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144983](https://doi.org/10.5281/zenodo.20144983) |
+| 2026 | The Doors of Perception are the Threshold of Prediction: Active Inference and Blake's Theory of Seeing | *Zenodo* | [10.5281/zenodo.18600040](https://doi.org/10.5281/zenodo.18600040) |
 | 2026 | Before Pragmatism Had a Name: Blake's "America A Prophecy" | *Zenodo* | [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970) |
 | 2025 | Synthesis of Agent and Niche | *Zenodo* | [10.5281/zenodo.17235137](https://doi.org/10.5281/zenodo.17235137) |
-| 2025 | QuadMath: An Analytical Review of 4D and Quadray Coordinates | *Zenodo* | [10.5281/zenodo.16887800](https://doi.org/10.5281/zenodo.16887800) |
-| 2023 | William Blake & Buckminster Fuller: Lives in Juxtaposition | *Zenodo* | [10.5281/zenodo.7514368](https://doi.org/10.5281/zenodo.7514368) |
+| 2025 | QuadMath: An Analytical Review of 4D and Quadray Coordinates | *Zenodo* | [10.5281/zenodo.16887799](https://doi.org/10.5281/zenodo.16887799) |
+| 2023 | William Blake & Buckminster Fuller: Lives in Juxtaposition | *Zenodo* | [10.5281/zenodo.7514367](https://doi.org/10.5281/zenodo.7514367) |
 
 > 📁 **Paper folders**: [BlakeJiang](papers/2026_BlakeJiang/) · [DoorsOfPerception](papers/2026_DoorsOfPerception/) · [BeforePragmatism](papers/2026_BeforePragmatism/) · [BlakeFuller](papers/2023_BlakeFuller/) · [QuadMath](papers/2025_QuadMath/) · [Symergetics](papers/2025_Symergetics/)
 
@@ -215,10 +215,10 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | *Zenodo* | [10.5281/zenodo.16790554](https://doi.org/10.5281/zenodo.16790554) |
 | 2025 | Markdown Decision Process: A Framework for Probabilistic Document Analysis | *Zenodo* | [10.5281/zenodo.17244386](https://doi.org/10.5281/zenodo.17244386) |
 | 2026 | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | *Zenodo* | [10.5281/zenodo.20533669](https://doi.org/10.5281/zenodo.20533669) |
-| 2026 | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) |
+| 2026 | Recovering LLM-Persona Accuracies from Unlabeled Votes | *Zenodo* | [10.5281/zenodo.20498699](https://doi.org/10.5281/zenodo.20498699) |
 | 2026 | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | *Zenodo* | [10.5281/zenodo.20533675](https://doi.org/10.5281/zenodo.20533675) |
 | 2026 | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) |
-| 2026 | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351) |
+| 2026 | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705350](https://doi.org/10.5281/zenodo.20705350) |
 | 2026 | AGEINT: Agentic Intelligence | *Zenodo* | [10.5281/zenodo.20732275](https://doi.org/10.5281/zenodo.20732275) |
 
 #### 🔧 Highlighted Repositories
@@ -253,7 +253,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | The Active Inference Institute & Active Inference Ecosystem (v3) | *Zenodo* | [10.5281/zenodo.17982447](https://doi.org/10.5281/zenodo.17982447) |
 | 2024 | The Active Inference Institute & Active Inference Ecosystem (v2) | *Zenodo* | [10.5281/zenodo.14108992](https://doi.org/10.5281/zenodo.14108992) |
 | 2024 | Aligning Active Inference Ontology to SUMO | *Zenodo* | [10.5281/zenodo.11459322](https://doi.org/10.5281/zenodo.11459322) |
-| 2023 | The Active Inference Institute and Active Inference Ecosystem (v1) | *Zenodo* | [10.5281/zenodo.8266281](https://doi.org/10.5281/zenodo.8266281) |
+| 2023 | The Active Inference Institute and Active Inference Ecosystem (v1) | *Zenodo* | [10.5281/zenodo.8266280](https://doi.org/10.5281/zenodo.8266280) |
 
 > 📁 **Paper folders**: [AII_v3](papers/2025_AII_v3/) · [AII_v2](papers/2024_AII_v2/) · [AII_v1](papers/2023_AII_v1/)
 
@@ -282,7 +282,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | Systems Processes, Active Inference, and Beyond | [Zenodo](https://doi.org/10.5281/zenodo.17138223) |
 | 2025 | 5th Applied Active Inference Symposium — Abstract Book | [Zenodo](https://doi.org/10.5281/zenodo.17555266) |
 | 2024 | BioFirm Development at Applied Active Inference Symposium 2024 | [Zenodo](https://doi.org/10.5281/zenodo.14861595) |
-| 2023 | Of Ants & Aging | [Zenodo](https://doi.org/10.5281/zenodo.7855582) |
+| 2023 | Of Ants & Aging | [Zenodo](https://doi.org/10.5281/zenodo.7855581) |
 
 </details>
 
@@ -298,7 +298,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
 | 2024 | Why Paleolithic Rockstars were both enigmatic and sporadic | *Physics of Life Reviews* | [10.1016/j.plrev.2024.04.010](https://doi.org/10.1016/j.plrev.2024.04.010) |
-| 2022 | On free will or the lack thereof (interview with Robert Sapolsky) | *ALIUS Bulletin* | [10.5281/zenodo.7394901](https://doi.org/10.5281/zenodo.7394901) |
+| 2022 | On free will or the lack thereof (interview with Robert Sapolsky) | *ALIUS Bulletin* | [10.5281/zenodo.7394900](https://doi.org/10.5281/zenodo.7394900) |
 | 2019 | Dennett Explained (interview with Daniel Dennett) | *ALIUS Bulletin* | [10.34700/7gkw-zh08](https://doi.org/10.34700/7gkw-zh08) |
 | 2015 | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | *Molecular Biology & Evolution* | [10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292) |
 

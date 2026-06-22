@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-06-22T02:08:39Z
+Generated: 2026-06-22T02:38:20Z
 
-Current public metrics: 172 curated works; 92 catalogued software repositories (58 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 172 curated works; 94 catalogued software repositories (60 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -56,22 +56,22 @@ AWARDS AND FELLOWSHIPS
 
 WORKS AND PUBLICATIONS (165)
 ----------------------------
-[001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.20669283
+[001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
-[004] 2026 | Paper | The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value | Zenodo | 10.5281/zenodo.19335196
-[005] 2026 | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | Zenodo | 10.5281/zenodo.18364119
-[007] 2026 | Paper | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | Zenodo | 10.5281/zenodo.18600041
+[004] 2026 | Paper | The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value | Zenodo | 10.5281/zenodo.19335195
+[005] 2026 | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | Zenodo | 10.5281/zenodo.18364118
+[007] 2026 | Paper | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | Zenodo | 10.5281/zenodo.18600040
 [008] 2025 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | Presentation | 10.5281/zenodo.17555266
 [009] 2025 | Paper | Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference | Zenodo | 10.5281/zenodo.17228945
 [010] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15170907
 [011] 2025 | Paper | Computational Complexity and Energetics of the Ant Stack | Zenodo | 10.5281/zenodo.17238736
 [012] 2025 | Paper | EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
-[013] 2025 | Paper | Increasing the Accessibility and Applicability of Active Inference | Zenodo | 10.5281/zenodo.15061667
+[013] 2025 | Paper | Increasing the Accessibility and Applicability of Active Inference | Zenodo | 10.5281/zenodo.15061666
 [014] 2025 | Paper | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | Zenodo | 10.5281/zenodo.16790554
 [015] 2025 | Paper | Markdown Decision Process: A Framework for Probabilistic Document Analysis | Zenodo | 10.5281/zenodo.17244386
-[016] 2025 | Paper | On Cognitive Art & Science: Toward Wholeness From Both Sides | Zenodo | 10.5281/zenodo.16740439
+[016] 2025 | Paper | On Cognitive Art & Science: Toward Wholeness From Both Sides | Zenodo | 10.5281/zenodo.16740438
 [017] 2025 | Paper | On Time | Zenodo | 10.5281/zenodo.15168381
-[018] 2025 | Paper | QuadMath: An Analytical Review of 4D and Quadray Coordinates | Zenodo | 10.5281/zenodo.16887800
+[018] 2025 | Paper | QuadMath: An Analytical Review of 4D and Quadray Coordinates | Zenodo | 10.5281/zenodo.16887799
 [019] 2025 | Paper | ResNei: Solution Design Document | Zenodo | 10.5281/zenodo.15389682
 [020] 2025 | Paper | Symergetics: Symbolic Synergetics for Rational Arithmetic | Zenodo | 10.5281/zenodo.17114389
 [021] 2025 | Paper | Synthesis of Agent and Niche | Zenodo | 10.5281/zenodo.17235137
@@ -90,12 +90,12 @@ WORKS AND PUBLICATIONS (165)
 [034] 2024 | Paper | Enhancing Population-based Search with Active Inference | ArXiv | 10.48550/arXiv.2408.09548
 [035] 2024 | Paper | FarmWorks: Decentralized AI Agents for Personalized Solutions | Zenodo | 10.5281/zenodo.13754585
 [036] 2024 | Paper | Federated inference and belief sharing | Neuroscience & Biobehavioral Reviews | 10.1016/j.neubiorev.2023.105500
-[037] 2024 | Paper | Four-fold Fields of Quantum Dreams | Zenodo | 10.5281/zenodo.10798145
+[037] 2024 | Paper | Four-fold Fields of Quantum Dreams | Zenodo | 10.5281/zenodo.10798144
 [038] 2024 | Presentation | MathArt Stream #8: William Blake and Active Inference | Presentation | 10.5281/zenodo.13711301
 [039] 2024 | Presentation | Sensemaking Federation: Exploring the Frontiers of Digital Innovation | Presentation | 10.5281/zenodo.14574046
 [040] 2024 | Paper | Shared Protentions in Multi-Agent Active Inference | Entropy | 10.3390/e26040303
 [041] 2024 | Paper | The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) | Zenodo | 10.5281/zenodo.14108992
-[042] 2024 | Paper | Way Finding in the Infinite Imaginarium | Zenodo | 10.5281/zenodo.10601082
+[042] 2024 | Paper | Way Finding in the Infinite Imaginarium | Zenodo | 10.5281/zenodo.10601081
 [043] 2024 | Paper | Why Paleolithic Rockstars were both enigmatic and sporadic | Physics of Life Reviews | 10.1016/j.plrev.2024.04.010
 [044] 2024 | Paper | Writing on Curio Cards for the "On NFT" book | Taschen | https://www.worldcat.org/isbn/978-3-8365-9970-2
 [045] 2023 | Paper | A guided tour through the spaces of particular "minds" | Physics of Life Reviews | 10.1016/j.plrev.2023.11.001
@@ -103,42 +103,42 @@ WORKS AND PUBLICATIONS (165)
 [047] 2023 | Paper | A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees | Zenodo | 10.5281/zenodo.10400744
 [048] 2023 | Paper | A variational synthesis of evolutionary and developmental dynamics | Entropy | 10.3390/e25070964
 [049] 2023 | Paper | ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10296601
-[050] 2023 | Paper | An Account of Active Inference Modeling | Zenodo | 10.5281/zenodo.8415313
-[051] 2023 | Paper | Cognitive Sovereignty & Active Inference in the State of Exception | Zenodo | 10.5281/zenodo.10038232
-[052] 2023 | Paper | Comments on AI Accountability Policy to NTIA | NTIA | 10.5281/zenodo.8025957
+[050] 2023 | Paper | An Account of Active Inference Modeling | Zenodo | 10.5281/zenodo.8415312
+[051] 2023 | Paper | Cognitive Sovereignty & Active Inference in the State of Exception | Zenodo | 10.5281/zenodo.10038231
+[052] 2023 | Paper | Comments on AI Accountability Policy to NTIA | NTIA | 10.5281/zenodo.8025956
 [053] 2023 | Paper | Distributed Science — The Scientific Process as Multi-Scale Active Inference | OSF | 10.31219/osf.io/dnw5k
 [054] 2023 | Paper | Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing | Zenodo | 10.5281/zenodo.10160656
 [055] 2023 | Paper | Experimental Entomology in the Age of Video | JoVE | 10.3791/65002
-[056] 2023 | Paper | Generalized Notation Notation for Active Inference Models | Zenodo | 10.5281/zenodo.7803328
-[057] 2023 | Paper | Generative Research Teams: Active Inference Compositions for Research and Meta-Science | Zenodo | 10.5281/zenodo.8164667
-[058] 2023 | Presentation | Of Ants & Aging | Presentation | 10.5281/zenodo.7855582
+[056] 2023 | Paper | Generalized Notation Notation for Active Inference Models | Zenodo | 10.5281/zenodo.7803327
+[057] 2023 | Paper | Generative Research Teams: Active Inference Compositions for Research and Meta-Science | Zenodo | 10.5281/zenodo.8164666
+[058] 2023 | Presentation | Of Ants & Aging | Presentation | 10.5281/zenodo.7855581
 [059] 2023 | Paper | Open Access science needs Open Science Sensemaking (OSSm) | MetaArXiv | 10.31222/osf.io/9nb3u
-[060] 2023 | Presentation | Postdoc review (2020–2023) | Presentation | 10.5281/zenodo.8377988
-[061] 2023 | Paper | The Active Inference Institute and Active Inference Ecosystem (v1) | Zenodo | 10.5281/zenodo.8266281
-[062] 2023 | Paper | The P3IF: Properties, Processes, and Perspectives Inter-Framework | Zenodo | 10.5281/zenodo.10034512
+[060] 2023 | Presentation | Postdoc review (2020–2023) | Presentation | 10.5281/zenodo.8377987
+[061] 2023 | Paper | The Active Inference Institute and Active Inference Ecosystem (v1) | Zenodo | 10.5281/zenodo.8266280
+[062] 2023 | Paper | The P3IF: Properties, Processes, and Perspectives Inter-Framework | Zenodo | 10.5281/zenodo.10034511
 [063] 2023 | Paper | To comment or not to comment | Physics of Life Reviews | 10.1016/j.plrev.2023.06.002
-[065] 2023 | Paper | William Blake & Buckminster Fuller: Lives in Juxtaposition | Zenodo | 10.5281/zenodo.7514368
+[065] 2023 | Paper | William Blake & Buckminster Fuller: Lives in Juxtaposition | Zenodo | 10.5281/zenodo.7514367
 [066] 2022 | Paper | An Active Inference Ontology for Decentralized Science | Zenodo | 10.5281/zenodo.6320574
-[067] 2022 | Paper | Catechism for Towards Active Diffusion | Zenodo | 10.5281/zenodo.7443848
+[067] 2022 | Paper | Catechism for Towards Active Diffusion | Zenodo | 10.5281/zenodo.7443847
 [068] 2022 | Paper | From Users to (Sense)Makers: Stigmergic Social Annotation | Hypertext '22 | 10.48550/arXiv.2205.06345
-[069] 2022 | Paper | On free will or the lack thereof (interview with Robert Sapolsky) | ALIUS Bulletin | 10.5281/zenodo.7394901
-[070] 2022 | Paper | Predictive Processing Interpretation of the Mirror Test | Zenodo | 10.5281/zenodo.7377256
+[069] 2022 | Paper | On free will or the lack thereof (interview with Robert Sapolsky) | ALIUS Bulletin | 10.5281/zenodo.7394900
+[070] 2022 | Paper | Predictive Processing Interpretation of the Mirror Test | Zenodo | 10.5281/zenodo.7377255
 [071] 2022 | Book | Structuring the Information Commons: Open Standards and Cognitive Security | COGSEC.org | https://cogsec.org
-[072] 2022 | Paper | Systems Modeling and Cognitive Audits for Hypercert Ecosystems | Zenodo | 10.5281/zenodo.7626769
-[073] 2022 | Paper | The Free Energy Principle & Active Inference: a Systematic Literature Analysis | Zenodo | 10.5281/zenodo.7449368
-[074] 2022 | Paper | TrustFinder: Recommendations for Community-Based Trust Systems | Zenodo | 10.5281/zenodo.7093837
+[072] 2022 | Paper | Systems Modeling and Cognitive Audits for Hypercert Ecosystems | Zenodo | 10.5281/zenodo.7626768
+[073] 2022 | Paper | The Free Energy Principle & Active Inference: a Systematic Literature Analysis | Zenodo | 10.5281/zenodo.7449367
+[074] 2022 | Paper | TrustFinder: Recommendations for Community-Based Trust Systems | Zenodo | 10.5281/zenodo.7093836
 [075] 2021 | Paper | Active Inferants: An Active Inference Framework for Ant Colony Behavior | Frontiers in Behavioral Neuroscience | 10.3389/fnbeh.2021.647732
-[076] 2021 | Paper | Active Inference in Modeling Conflict | Zenodo | 10.5281/zenodo.5759807
-[077] 2021 | Paper | Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse | Zenodo | 10.5281/zenodo.5573947
+[076] 2021 | Paper | Active Inference in Modeling Conflict | Zenodo | 10.5281/zenodo.5750934
+[077] 2021 | Paper | Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse | Zenodo | 10.5281/zenodo.5573946
 [079] 2021 | Book | Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier | COGSEC.org | https://cogsec.org
-[080] 2021 | Paper | Narrative Information Management | Zenodo | 10.5281/zenodo.5573287
-[082] 2020 | Paper | Active Inference & Behavior Engineering for Teams | Zenodo | 10.5281/zenodo.4021163
+[080] 2021 | Paper | Narrative Information Management | Zenodo | 10.5281/zenodo.5565577
+[082] 2020 | Paper | Active Inference & Behavior Engineering for Teams | Zenodo | 10.5281/zenodo.4021162
 [084] 2020 | Paper | Distributed physiology and the molecular basis of social life in eusocial insects | Hormones & Behavior | 10.1016/j.yhbeh.2020.104757
-[085] 2020 | Paper | Emergent Teams for Complex Threats | Zenodo | 10.5281/zenodo.3986085
+[085] 2020 | Paper | Emergent Teams for Complex Threats | Zenodo | 10.5281/zenodo.3986084
 [086] 2020 | Paper | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | Communications Biology | 10.1038/s42003-020-0813-8
 [088] 2020 | Paper | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | Analytical & Bioanalytical Chemistry | 10.1007/s00216-019-02355-3
 [089] 2020 | Book | The Great Preset: Remote Teams and Operational Art | COGSEC.org | https://cogsec.org
-[090] 2020 | Paper | The Innovator's Catechism | Zenodo | 10.5281/zenodo.4383230
+[090] 2020 | Paper | The Innovator's Catechism | Zenodo | 10.5281/zenodo.4383229
 [091] 2020 | Paper | The neuroscience of decision making (interview with Timothy Hanks) | ALIUS Bulletin | 10.34700/8pg4-0h12
 [092] 2019 | Paper | Dennett Explained (interview with Daniel Dennett) | ALIUS Bulletin | 10.34700/7gkw-zh08
 [093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
@@ -157,49 +157,49 @@ WORKS AND PUBLICATIONS (165)
 [106] 2015 | Paper | Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history | Frontiers in Genetics | 10.3389/fgene.2015.00261
 [107] 2015 | Paper | Could Ehrlichial Infection Cause Some Changes Associated with Leukemia? | Medical Hypotheses | 10.1016/j.mehy.2015.09.015
 [108] 2015 | Paper | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | Molecular Biology & Evolution | 10.1093/molbev/msu292
-[109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574118
-[110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19897664
+[109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574117
+[110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19461933
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
-[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695260
-[113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699234
-[114] 2020 | Paper | The Facilitator's Catechism | Zenodo | 10.5281/zenodo.4203765
-[115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144984
-[116] 2026 | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | Zenodo | 10.5281/zenodo.20286171
-[117] 2026 | Book | Introduction to Biology: A Generative Approach | Zenodo | 10.5281/zenodo.20286478
-[119] 2026 | Paper | Policy Entanglement in Active Inference | Zenodo | 10.5281/zenodo.20419637
+[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695259
+[113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699233
+[114] 2020 | Paper | The Facilitator's Catechism | Zenodo | 10.5281/zenodo.4062540
+[115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144983
+[116] 2026 | Paper | Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast | Zenodo | 10.5281/zenodo.20286170
+[117] 2026 | Book | Introduction to Biology: A Generative Approach | Zenodo | 10.5281/zenodo.20286477
+[119] 2026 | Paper | Policy Entanglement in Active Inference | Zenodo | 10.5281/zenodo.20418904
 [120] 2026 | Paper | Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task | Zenodo | 10.5281/zenodo.20417016
 [121] 2026 | Paper | Convergence Analysis of Gradient Descent Optimization | Zenodo | 10.5281/zenodo.20417136
 [122] 2026 | Paper | Editorial Quality at Scale: A Reproducible Prose-Review Pipeline | Zenodo | 10.5281/zenodo.20417104
 [123] 2026 | Paper | A template/ approach to Reproducible Generative Research | Zenodo | 10.5281/zenodo.20419007
 [124] 2026 | Paper | Active Inference Multi-Track Exemplar | Zenodo | 10.5281/zenodo.20417021
-[125] 2026 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | Zenodo | 10.5281/zenodo.20420557
-[126] 2026 | Paper | When do bugs see (infra)red? | Zenodo | 10.5281/zenodo.20450970
+[125] 2026 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | Zenodo | 10.5281/zenodo.20420556
+[126] 2026 | Paper | When do bugs see (infra)red? | Zenodo | 10.5281/zenodo.20450880
 [127] 2026 | Paper | Self-Improvement Agent Harness: A Deterministic SIA Exemplar | Zenodo | 10.5281/zenodo.20453879
 [128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861596
-[129] 2025 | Paper | Con-cat-enate: emulation of Cat Hippocampus | Zenodo | 10.5281/zenodo.14738798
-[130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737157
-[131] 2025 | Paper | BevCyc - posit on primitive drivers of creatures | Zenodo | 10.5281/zenodo.14737076
-[132] 2025 | Paper | Beacons - pre emulation of social cortex | Zenodo | 10.5281/zenodo.14737060
-[133] 2025 | Paper | Con-cat-enate: pilot overview | Zenodo | 10.5281/zenodo.14737043
-[134] 2024 | Paper | Push and Pull: A priming sequence | Zenodo | 10.5281/zenodo.10659375
-[135] 2023 | Paper | A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance | Zenodo | 10.5281/zenodo.10360148
+[129] 2025 | Paper | Con-cat-enate: emulation of Cat Hippocampus | Zenodo | 10.5281/zenodo.13626536
+[130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737156
+[131] 2025 | Paper | BevCyc - posit on primitive drivers of creatures | Zenodo | 10.5281/zenodo.14737075
+[132] 2025 | Paper | Beacons - pre emulation of social cortex | Zenodo | 10.5281/zenodo.14737059
+[133] 2025 | Paper | Con-cat-enate: pilot overview | Zenodo | 10.5281/zenodo.14737042
+[134] 2024 | Paper | Push and Pull: A priming sequence | Zenodo | 10.5281/zenodo.10659374
+[135] 2023 | Paper | A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance | Zenodo | 10.5281/zenodo.10360056
 [136] 2023 | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10362561
-[137] 2023 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | Zenodo | 10.5281/zenodo.8229512
-[138] 2023 | Paper | Modern Nostr Index Card-based Knowledge Engineering | Zenodo | 10.5281/zenodo.8118156
-[139] 2023 | Paper | Slides for Iris | Zenodo | 10.5281/zenodo.7838653
-[140] 2022 | Paper | Canonical neural networks perform active inference | Zenodo | 10.5281/zenodo.7400536
-[141] 2022 | Paper | Interoception as modeling, allostasis as control | Zenodo | 10.5281/zenodo.7400709
-[142] 2022 | Paper | Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016 | Zenodo | 10.5281/zenodo.7267947
-[143] 2022 | Paper | A Worked Example of the Bayesian Mechanics of Classical Objects | Zenodo | 10.5281/zenodo.7400786
-[144] 2022 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | Zenodo | 10.5281/zenodo.7401875
-[145] 2022 | Paper | Tracking Public Sensemaking through Rhetorical Annotation of Image Memes | Zenodo | 10.5281/zenodo.6904427
-[146] 2021 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | Zenodo | 10.5281/zenodo.5797072
-[147] 2021 | Paper | Collaborative Writing for Catechism-Based Teams | Zenodo | 10.5281/zenodo.4633921
-[148] 2020 | Paper | Reimagining Maps | Zenodo | 10.5281/zenodo.4170026
-[149] 2020 | Paper | Infinite Games for Infinite Teams | Zenodo | 10.5281/zenodo.12601675
-[150] 2026 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | Zenodo | 10.5281/zenodo.20482026
+[137] 2023 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | Zenodo | 10.5281/zenodo.8228934
+[138] 2023 | Paper | Modern Nostr Index Card-based Knowledge Engineering | Zenodo | 10.5281/zenodo.8118155
+[139] 2023 | Paper | Slides for Iris | Zenodo | 10.5281/zenodo.7838652
+[140] 2022 | Paper | Canonical neural networks perform active inference | Zenodo | 10.5281/zenodo.7400525
+[141] 2022 | Paper | Interoception as modeling, allostasis as control | Zenodo | 10.5281/zenodo.7400708
+[142] 2022 | Paper | Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016 | Zenodo | 10.5281/zenodo.7259006
+[143] 2022 | Paper | A Worked Example of the Bayesian Mechanics of Classical Objects | Zenodo | 10.5281/zenodo.7400785
+[144] 2022 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | Zenodo | 10.5281/zenodo.7401874
+[145] 2022 | Paper | Tracking Public Sensemaking through Rhetorical Annotation of Image Memes | Zenodo | 10.5281/zenodo.6904426
+[146] 2021 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | Zenodo | 10.5281/zenodo.5797040
+[147] 2021 | Paper | Collaborative Writing for Catechism-Based Teams | Zenodo | 10.5281/zenodo.4624298
+[148] 2020 | Paper | Reimagining Maps | Zenodo | 10.5281/zenodo.4170025
+[149] 2020 | Paper | Infinite Games for Infinite Teams | Zenodo | 10.5281/zenodo.12601674
+[150] 2026 | Paper | The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation | Zenodo | 10.5281/zenodo.20482025
 [151] 2026 | Paper | A Deterministic Testbed for Self-Organizing Agent-Team Coordination | Zenodo | 10.5281/zenodo.20533669
-[152] 2026 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | Zenodo | 10.5281/zenodo.20498700
+[152] 2026 | Paper | Recovering LLM-Persona Accuracies from Unlabeled Votes | Zenodo | 10.5281/zenodo.20498699
 [153] 2026 | Paper | The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine | Zenodo | 10.5281/zenodo.20533675
 [154] 2026 | Book | The Template Textbook | Zenodo | 10.5281/zenodo.20533125
 [155] 2016 | Paper | Lessons from the colony | Science | https://www.science.org/doi/10.1126/science.352.6288.886
@@ -208,21 +208,21 @@ WORKS AND PUBLICATIONS (165)
 [158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.371.6524.22
 [159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
-[161] 2021 | Paper | Knowledge Management Archipelago | Zenodo | 10.5281/zenodo.5034809
+[161] 2021 | Paper | Knowledge Management Archipelago | Zenodo | 10.5281/zenodo.5034808
 [162] 2024 | Paper | Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum | Zenodo | 10.5281/zenodo.13273682
 [163] 2017 | Paper | Osteopathy and the Variable Variability of Health | The Cranial Letter 70(4)
 [164] 2016 | Paper | Cells, Mechanobiology, and Osteopathy | The Cranial Letter 69(1)
-[165] 2026 | Paper | iTrace: verification-first webcam eye-movement analysis | Zenodo | 10.5281/zenodo.20614909
-[166] 2026 | Paper | DemoCreate: Declarative Audio-Visual Demo Generation for Software | Zenodo | 10.5281/zenodo.20693217
-[167] 2026 | Paper | ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data | Zenodo | 10.5281/zenodo.20647443
+[165] 2026 | Paper | iTrace: verification-first webcam eye-movement analysis | Zenodo | 10.5281/zenodo.20614908
+[166] 2026 | Paper | DemoCreate: Declarative Audio-Visual Demo Generation for Software | Zenodo | 10.5281/zenodo.20693216
+[167] 2026 | Paper | ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data | Zenodo | 10.5281/zenodo.20396328
 [168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
-[169] 2026 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | Zenodo | 10.5281/zenodo.20705351
+[169] 2026 | Paper | COGANT: Deterministic Codebase-to-GNN Translation | Zenodo | 10.5281/zenodo.20705350
 [170] 2026 | Paper | AGEINT: Agentic Intelligence | Zenodo | 10.5281/zenodo.20732274
 [171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20747834
 [172] 2026 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | Zenodo | 10.5281/zenodo.20786638
 [173] 2026 | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | Zenodo | 10.5281/zenodo.20789899
 
-SOFTWARE (92)
+SOFTWARE (94)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -244,11 +244,13 @@ docxology/lean_niche | Python | https://github.com/docxology/lean_niche | Lean/m
 docxology/literature | Python | https://github.com/docxology/literature | Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications
 docxology/obsidian-construction-from-text | Python | https://github.com/docxology/obsidian-construction-from-text | Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs
 docxology/qr_live_protocol | Python | https://github.com/docxology/qr_live_protocol | QR code-based live protocol system for real-time data exchange and interactive session management
+docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Zenodo | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
 docxology/template_autoscientists | Python | https://github.com/docxology/template_autoscientists | AutoScientists deterministic multi-agent scientific-discovery coordination harness · · Zenodo | paper: papers/2026_DeterministicTestbedSelf/ | zenodo: https://doi.org/10.5281/zenodo.20533669
 docxology/template_newspaper | Python | https://github.com/docxology/template_newspaper | The Triplicate data-driven large-format newspaper layout engine · · Zenodo | paper: papers/2026_Triplicate/ | zenodo: https://doi.org/10.5281/zenodo.20533675
-docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498700
-docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Zenodo | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614909
+docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498699
+docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Zenodo | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
 docxology/coasys | Python | https://github.com/docxology/coasys | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories
+docxology/template_madlib | Python | https://github.com/docxology/template_madlib | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Zenodo | paper: papers/2026_TemplateMadlib/ | zenodo: https://doi.org/10.5281/zenodo.20786638
 docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
 docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization

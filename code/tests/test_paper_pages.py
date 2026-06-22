@@ -31,7 +31,7 @@ def test_policy_entanglement_page_links_docs_pdf_and_work_page():
     content = render_outputs()[path]
 
     assert "Policy Entanglement in Active Inference" in content
-    assert "10.5281/zenodo.20419637" in content
+    assert "10.5281/zenodo.20418904" in content
     assert 'href="README.md"' in content
     assert 'href="AGENTS.md"' in content
     assert 'href="SKILL.md"' in content

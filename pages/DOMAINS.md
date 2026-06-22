@@ -31,7 +31,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 **Selected works**
 
-- 2026 — [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](https://doi.org/10.5281/zenodo.19574118)
+- 2026 — [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](https://doi.org/10.5281/zenodo.19574117)
 - 2025 — [Computational Complexity and Energetics of the Ant Stack](https://doi.org/10.5281/zenodo.17238736)
 - 2025 — [The Ant Stack](https://doi.org/10.5281/zenodo.16782756)
 - 2025 — [Towards a Science of Consciousness and Social Complexity... For Ants](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)
@@ -64,10 +64,10 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 **Selected works**
 
-- 2026 — [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](https://doi.org/10.5281/zenodo.19897664)
+- 2026 — [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](https://doi.org/10.5281/zenodo.19461933)
 - 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
-- 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695260)
-- 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699234)
+- 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695259)
+- 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699233)
 - 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.7803313)
 - 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20747834)
 
@@ -98,8 +98,8 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 **Selected works**
 
-- 2026 — [Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)](https://doi.org/10.5281/zenodo.18364119)
-- 2026 — [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](https://doi.org/10.5281/zenodo.20286171)
+- 2026 — [Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)](https://doi.org/10.5281/zenodo.18364118)
+- 2026 — [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](https://doi.org/10.5281/zenodo.20286170)
 - 2026 — [California Public Records: A Technical and Legal Reference for the Post-AB 473 Era](https://doi.org/10.5281/zenodo.20789899)
 - 2024 — [Bridging gaps in image meme research: A multidisciplinary paradigm](https://doi.org/10.1002/asi.24900)
 - 2024 — [Comments on National Digital Twins R&D Strategic Plan](https://doi.org/10.5281/zenodo.13273681)
@@ -129,10 +129,10 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 **Selected works**
 
 - 2026 — [Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology](https://doi.org/10.5281/zenodo.18807970)
-- 2026 — [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](https://doi.org/10.5281/zenodo.19335196)
-- 2026 — [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](https://doi.org/10.5281/zenodo.18600041)
-- 2026 — [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](https://doi.org/10.5281/zenodo.20144984)
-- 2025 — [On Cognitive Art & Science: Toward Wholeness From Both Sides](https://doi.org/10.5281/zenodo.16740439)
+- 2026 — [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](https://doi.org/10.5281/zenodo.19335195)
+- 2026 — [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](https://doi.org/10.5281/zenodo.18600040)
+- 2026 — [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](https://doi.org/10.5281/zenodo.20144983)
+- 2025 — [On Cognitive Art & Science: Toward Wholeness From Both Sides](https://doi.org/10.5281/zenodo.16740438)
 - 2025 — [On Time](https://doi.org/10.5281/zenodo.15168381)
 
 **Selected repositories**
@@ -160,9 +160,9 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 **Selected works**
 
-- 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.20669283)
-- 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286478)
-- 2026 — [Policy Entanglement in Active Inference](https://doi.org/10.5281/zenodo.20419637)
+- 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.16903351)
+- 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286477)
+- 2026 — [Policy Entanglement in Active Inference](https://doi.org/10.5281/zenodo.20418904)
 - 2026 — [Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task](https://doi.org/10.5281/zenodo.20417016)
 - 2026 — [Convergence Analysis of Gradient Descent Optimization](https://doi.org/10.5281/zenodo.20417136)
 - 2026 — [Editorial Quality at Scale: A Reproducible Prose-Review Pipeline](https://doi.org/10.5281/zenodo.20417104)
@@ -194,10 +194,10 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 **Selected works**
 
-- 2025 — [Con-cat-enate: emulation of Cat Hippocampus](https://doi.org/10.5281/zenodo.14738798)
-- 2025 — [BevCyc - posit on primitive drivers of creatures](https://doi.org/10.5281/zenodo.14737076)
-- 2025 — [Beacons - pre emulation of social cortex](https://doi.org/10.5281/zenodo.14737060)
-- 2025 — [Con-cat-enate: pilot overview](https://doi.org/10.5281/zenodo.14737043)
+- 2025 — [Con-cat-enate: emulation of Cat Hippocampus](https://doi.org/10.5281/zenodo.13626536)
+- 2025 — [BevCyc - posit on primitive drivers of creatures](https://doi.org/10.5281/zenodo.14737075)
+- 2025 — [Beacons - pre emulation of social cortex](https://doi.org/10.5281/zenodo.14737059)
+- 2025 — [Con-cat-enate: pilot overview](https://doi.org/10.5281/zenodo.14737042)
 - 2024 — [Why Paleolithic Rockstars were both enigmatic and sporadic](https://doi.org/10.1016/j.plrev.2024.04.010)
 - 2023 — [To comment or not to comment](https://doi.org/10.1016/j.plrev.2023.06.002)
 

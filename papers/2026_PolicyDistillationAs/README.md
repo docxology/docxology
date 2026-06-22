@@ -8,8 +8,6 @@
 
 ## Abstract
 
-Abstract
-
 This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL distillation loss is variational free energy up to the evidence constant, $F = D_{\mathrm{KL}}(q\,\|\,p(s\mid o)) - \log p(o)$, whose KL target is the teacher-induced posterior $p(s\mid o)\propto p(o,s)$ .
 
 The title's "as" is therefore a scoped mathematical correspondence rather than the slogan OPD = Active Inference. Variational free energy names the realized-rollout distillation loss; expected free energy remains the planning-side objective by which the pymdp agent selects actions . On-policy student rollouts generate the observations on which the posterior is scored, connecting the construction to induced-distribution mismatch in imitation learning and exposure-bias analyses while preserving their different objectives, empirical regimes, and contested severity . Privileged traces and feedback play the role that train-time-only information plays in the LUPI/distillation lineage .

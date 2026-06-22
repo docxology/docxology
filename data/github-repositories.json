@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T04:25:29Z",
+  "generated_at": "2026-06-22T02:37:00Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -9,7 +9,7 @@
     "docxology": {
       "login": "docxology",
       "html_url": "https://github.com/docxology",
-      "public_repos": 317,
+      "public_repos": 318,
       "updated_at": "2026-06-06T00:12:17Z"
     },
     "ActiveInferenceInstitute": {
@@ -20,16 +20,16 @@
     }
   },
   "counts": {
-    "total": 371,
-    "docxology": 317,
+    "total": 372,
+    "docxology": 318,
     "ActiveInferenceInstitute": 54,
-    "curated": 92,
-    "uncataloged": 279,
+    "curated": 94,
+    "uncataloged": 278,
     "forks": 252,
     "archived": 0,
-    "public": 371,
+    "public": 372,
     "private": 0,
-    "recently_updated": 102
+    "recently_updated": 103
   },
   "warnings": [],
   "repositories": [
@@ -801,8 +801,8 @@
       "license": "MIT",
       "default_branch": "main",
       "created_at": "2026-03-19T17:35:28Z",
-      "updated_at": "2026-06-16T13:51:35Z",
-      "pushed_at": "2026-06-16T13:50:29Z",
+      "updated_at": "2026-06-21T05:15:28Z",
+      "pushed_at": "2026-06-21T05:15:24Z",
       "curated": false,
       "recently_updated": true
     },
@@ -895,9 +895,9 @@
       "description": "",
       "homepage": "",
       "language": "Python",
-      "stars": 26,
+      "stars": 27,
       "forks": 3,
-      "watchers": 26,
+      "watchers": 27,
       "open_issues": 5,
       "visibility": "public",
       "private": false,
@@ -914,8 +914,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2023-04-02T19:45:34Z",
-      "updated_at": "2026-06-19T16:50:20Z",
-      "pushed_at": "2026-06-18T17:12:57Z",
+      "updated_at": "2026-06-21T06:17:44Z",
+      "pushed_at": "2026-06-21T05:15:11Z",
       "curated": true,
       "recently_updated": true
     },
@@ -995,8 +995,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2025-05-13T14:17:56Z",
-      "updated_at": "2026-06-16T12:28:37Z",
-      "pushed_at": "2026-06-16T12:28:32Z",
+      "updated_at": "2026-06-21T05:15:15Z",
+      "pushed_at": "2026-06-21T05:15:09Z",
       "curated": true,
       "recently_updated": true
     },
@@ -1049,8 +1049,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2026-06-08T21:16:12Z",
-      "updated_at": "2026-06-20T03:54:35Z",
-      "pushed_at": "2026-06-20T03:54:30Z",
+      "updated_at": "2026-06-22T02:24:13Z",
+      "pushed_at": "2026-06-22T02:24:10Z",
       "curated": false,
       "recently_updated": true
     },
@@ -1932,7 +1932,7 @@
       "created_at": "2026-05-24T23:28:57Z",
       "updated_at": "2026-06-18T00:16:24Z",
       "pushed_at": "2026-06-17T12:35:24Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -3979,8 +3979,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-03-20T21:31:03Z",
-      "updated_at": "2026-06-18T17:13:32Z",
-      "pushed_at": "2026-06-18T17:13:26Z",
+      "updated_at": "2026-06-22T02:16:14Z",
+      "pushed_at": "2026-06-22T02:16:09Z",
       "curated": false,
       "recently_updated": true
     },
@@ -6815,8 +6815,8 @@
       "license": "Apache-2.0",
       "default_branch": "main",
       "created_at": "2022-01-08T18:33:36Z",
-      "updated_at": "2026-06-19T14:01:21Z",
-      "pushed_at": "2026-06-19T14:01:15Z",
+      "updated_at": "2026-06-21T20:59:59Z",
+      "pushed_at": "2026-06-21T20:59:55Z",
       "curated": true,
       "recently_updated": true
     },
@@ -9424,8 +9424,8 @@
       "license": "Apache-2.0",
       "default_branch": "main",
       "created_at": "2025-08-18T16:48:46Z",
-      "updated_at": "2026-06-18T16:54:28Z",
-      "pushed_at": "2026-06-18T16:54:24Z",
+      "updated_at": "2026-06-21T21:30:05Z",
+      "pushed_at": "2026-06-21T21:30:01Z",
       "curated": true,
       "recently_updated": true
     },
@@ -9589,6 +9589,33 @@
       "updated_at": "2026-06-14T20:18:55Z",
       "pushed_at": "2026-06-14T20:18:50Z",
       "curated": false,
+      "recently_updated": true
+    },
+    {
+      "name": "template_madlib",
+      "full_name": "docxology/template_madlib",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/template_madlib",
+      "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts",
+      "homepage": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "",
+      "default_branch": "main",
+      "created_at": "2026-06-21T16:45:37Z",
+      "updated_at": "2026-06-21T16:48:52Z",
+      "pushed_at": "2026-06-21T16:49:04Z",
+      "curated": true,
       "recently_updated": true
     },
     {

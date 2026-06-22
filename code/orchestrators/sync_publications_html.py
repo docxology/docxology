@@ -153,6 +153,12 @@ def replace_head_meta(html: str, count: int) -> str:
         count=1,
     )
     html = re.sub(
+        r'(<meta name="twitter:image:alt" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html,
+        count=1,
+    )
+    html = re.sub(
         r'(<meta property="og:description" content=")[^"]*(")',
         rf"\g<1>{desc}\2",
         html,

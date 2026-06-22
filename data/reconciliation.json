@@ -33,7 +33,7 @@
     },
     {
       "name": "Catalogued docxology software vs GitHub public repository count",
-      "local_value": 58,
+      "local_value": 60,
       "public_value": 317,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments."

@@ -6,6 +6,7 @@ version: "1.0.2"
 date-released: 2026-06-18
 doi: 10.5281/zenodo.20747834
 url: "https://doi.org/10.5281/zenodo.20747834"
+license: MIT
 repository-code: "https://github.com/ActiveInferenceInstitute/on_policy_distillation"
 authors:
   - family-names: Friedman

@@ -44,7 +44,7 @@ def test_itrace_row_fields():
     assert row.stars == 0
     exported = software_rows_to_dict(row)
     assert exported["paper_path"] == "papers/2026_ITrace/"
-    assert exported["zenodo_url"] == "https://doi.org/10.5281/zenodo.20614909"
+    assert exported["zenodo_url"] == "https://doi.org/10.5281/zenodo.20614908"
 
 
 def test_description_html_paper_and_zenodo_links():
