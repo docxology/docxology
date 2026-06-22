@@ -36,6 +36,8 @@ program analysis · Generalized Notation Notation (GNN) · intermediate represen
 
 ## Related
 
+- GitHub release: https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0
+
 - Zenodo record: https://zenodo.org/records/20705351
 - Code repository: https://github.com/ActiveInferenceInstitute/COGANT
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

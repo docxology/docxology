@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ActiveInferenceOntology","abstract":"We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference Institute.","keywords":["Active Inference Ontology","knowledge graph","Free Energy Principle","ontology development","SUMO","knowledge representation","open science"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ActiveInferenceOntology","abstract":"We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference Institute.","keywords":["Active Inference Ontology","knowledge graph","Free Energy Principle","ontology development","SUMO","knowledge representation","open science"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

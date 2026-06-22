@@ -1,8 +1,8 @@
 {
   "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
   "version": "1.0.0",
-  "doi": "10.5281/zenodo.20498700",
-  "doi_url": "https://doi.org/10.5281/zenodo.20498700",
+  "doi": "10.5281/zenodo.20498699",
+  "doi_url": "https://doi.org/10.5281/zenodo.20498699",
   "zenodo_record": "https://zenodo.org/records/20498700",
   "record_id": "20498700",
   "publication_date": "2026-06-01",
@@ -54,11 +54,10 @@
   "pdf_sha256": "e1196698427f9fe04d1f3071705adb6e5459983649c78d7f5d074756e989148b",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "github_release_mentions_doi",
     "github_release_mentions_zenodo_record",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-04T20:45:04Z"
+  "checked_at": "2026-06-22T23:19:43Z"
 }

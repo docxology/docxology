@@ -5,7 +5,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BioFirm","abstract":"BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts.","keywords":["BioFirm","bioregional stewardship","Active Inference","organizational modeling","sustainability","adaptive management"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BioFirm","abstract":"BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts.","keywords":["BioFirm","bioregional stewardship","Active Inference","organizational modeling","sustainability","adaptive management"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -31,7 +31,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

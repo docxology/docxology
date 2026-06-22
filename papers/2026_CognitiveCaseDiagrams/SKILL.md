@@ -1,18 +1,7 @@
 ---
 name: "CognitiveCaseDiagrams"
 description: "Expertise in compositional approaches to linguistic case for cognitive modeling: case as categorical structure, typological alignment as functors, DisCoCat/DisCoCirc diagrams, links to Distributional Active Inference, and protocol-level analysis of prompt injection as functorial type violations."
-tags:
-  - active-inference
-  - category-theory
-  - linguistic-case
-  - compositional-semantics
-  - discocat
-  - discocirc
-  - distributional-semantics
-  - cognitive-modeling
-  - cognitive-security
-  - prompt-injection
-  - typology
+tags: ["active-inference", "category-theory", "linguistic-case", "compositional-semantics", "discocat", "discocirc", "distributional-semantics", "cognitive-modeling", "cognitive-security", "prompt-injection", "typology"]
 ---
 
 # Compositional Approaches to Linguistic Case for Cognitive Modeling
@@ -60,7 +49,7 @@ When applying this skill:
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Skills
 

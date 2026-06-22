@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveIntegrity","abstract":"The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theoretical foundations, establishing formal definitions of cognitive integrity, threat models, and defense mechanisms using Active Inference and category theory.","keywords":["cognitive integrity","multiagent security","cognitive security","Active Inference","category theory","formal foundations","threat modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveIntegrity","abstract":"The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theoretical foundations, establishing formal definitions of cognitive integrity, threat models, and defense mechanisms using Active Inference and category theory.","keywords":["cognitive integrity","multiagent security","cognitive security","Active Inference","category theory","formal foundations","threat modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

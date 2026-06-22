@@ -1,7 +1,7 @@
 ---
 name: "TemplateMadlib"
 description: "Use for Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts, a Zenodo publication with concept DOI 10.5281/zenodo.20786638."
-tags: ['madlib-generation', 'token-injection', 'conditional-manuscripts', 'reproducible-research', 'imrad']
+tags: ["madlib-generation", "token-injection", "conditional-manuscripts", "reproducible-research", "imrad"]
 ---
 
 # Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts

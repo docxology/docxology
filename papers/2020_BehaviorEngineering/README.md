@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BehaviorEngineering","abstract":"Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to organizational design, team formation, and complex adaptive systems management.","keywords":["behavior engineering","systems engineering","organizational behavior","complex adaptive systems","team formation","behavioral design"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BehaviorEngineering","abstract":"Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to organizational design, team formation, and complex adaptive systems management.","keywords":["behavior engineering","systems engineering","organizational behavior","complex adaptive systems","team formation","behavioral design"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

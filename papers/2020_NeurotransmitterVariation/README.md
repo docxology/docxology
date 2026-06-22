@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NeurotransmitterVariation","abstract":"Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and detect the amines. Overall, dopamine content was highest, followed by octopamine, serotonin, and tyra","keywords":["neurotransmitters","dopamine","serotonin","octopamine","tyramine","Pogonomyrmex barbatus","CE-FSCV","biogenic amines","colony variation"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NeurotransmitterVariation","abstract":"Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and detect the amines. Overall, dopamine content was highest, followed by octopamine, serotonin, and tyra","keywords":["neurotransmitters","dopamine","serotonin","octopamine","tyramine","Pogonomyrmex barbatus","CE-FSCV","biogenic amines","colony variation"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -33,5 +33,7 @@ research data formats · authenticated encryption · AES-256-GCM · reproducible
 
 ## Related
 
+- GitHub release: https://github.com/docxology/entofile/releases/tag/v0.4
+
 - Zenodo record: https://zenodo.org/records/20647443
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

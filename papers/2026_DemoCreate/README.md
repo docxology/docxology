@@ -33,5 +33,7 @@ demo-generation · screencast · text-to-speech · code-walkthrough · video · 
 
 ## Related
 
+- GitHub release: https://github.com/docxology/democreate/releases/tag/v0.6.2
+
 - Zenodo record: https://zenodo.org/records/20693217
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

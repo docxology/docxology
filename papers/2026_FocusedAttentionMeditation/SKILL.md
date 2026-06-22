@@ -1,17 +1,7 @@
 ---
 name: "FocusedAttentionMeditation"
 description: "Expertise in hierarchical Active Inference modeling of focused attention meditation, including thoughtseed dynamics, precision weighting, attentional network coupling (DMN/VAN/DAN/FPN), and computational expert-novice differences in Vipassana practice."
-tags:
-  - active-inference
-  - focused-attention-meditation
-  - thoughtseeds
-  - free-energy-principle
-  - hierarchical-modeling
-  - precision-weighting
-  - contemplative-neuroscience
-  - expert-novice
-  - predictive-processing
-  - computational-psychiatry
+tags: ["active-inference", "focused-attention-meditation", "thoughtseeds", "free-energy-principle", "hierarchical-modeling", "precision-weighting", "contemplative-neuroscience", "expert-novice", "predictive-processing", "computational-psychiatry"]
 ---
 
 # Dynamic Attentional Agents in Focused Attention Meditation
@@ -60,7 +50,7 @@ When applying this skill:
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Skills
 

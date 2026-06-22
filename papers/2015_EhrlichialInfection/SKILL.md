@@ -1,14 +1,7 @@
 ---
 name: "EhrlichialInfection"
 description: "Expertise in exploring the intersection of infectious diseases and hematological disorders, with a focus on the potential therapeutic applications of antibiotics in treating leukemia."
-tags:
-  - ehrlichia
-  - anaplasma
-  - leukemia
-  - intracellular-parasites
-  - apoptosis-suppression
-  - rifampin
-  - hematological-malignancy
+tags: ["ehrlichia", "anaplasma", "leukemia", "intracellular-parasites", "apoptosis-suppression", "rifampin", "hematological-malignancy"]
 ---
 
 # SKILL.md — Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?
@@ -71,7 +64,7 @@ Use this skill when investigating infectious etiologies of hematological maligna
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Papers
 

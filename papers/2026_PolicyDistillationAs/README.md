@@ -48,6 +48,10 @@ on-policy distillation · active inference · self-distillation · privileged in
 
 ## Related
 
+- GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0
+
+- GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1
+
 - Zenodo record: https://zenodo.org/records/20749817
 - GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2
 - Source repository: https://github.com/ActiveInferenceInstitute/on_policy_distillation

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T02:36:59Z",
+  "generated_at": "2026-06-22T23:19:46Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 172,
+  "count": 173,
   "works": [
     {
       "num": 1,
@@ -2409,6 +2409,20 @@
       "url": "https://doi.org/10.5281/zenodo.20789899",
       "doi": "10.5281/zenodo.20789899",
       "docs_path": "papers/2026_CaliforniaPublicRecords/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 174,
+      "citation_key": "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20804585",
+      "doi": "10.5281/zenodo.20804585",
+      "docs_path": "papers/2026_CogSecSkills/",
       "has_paper_folder": true
     }
   ]

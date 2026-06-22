@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AccessibilityActiveInference","abstract":"A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes open-source educational resources to address these gaps at different education levels.","keywords":["accessibility","Active Inference","pedagogy","summer school curriculum","Generative Playbooks","open-source education","neurotechnology","neurodiversity","cognitive security"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AccessibilityActiveInference","abstract":"A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes open-source educational resources to address these gaps at different education levels.","keywords":["accessibility","Active Inference","pedagogy","summer school curriculum","Generative Playbooks","open-source education","neurotechnology","neurodiversity","cognitive security"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

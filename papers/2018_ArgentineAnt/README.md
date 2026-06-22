@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ArgentineAnt","abstract":"Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggression, allowing colony fusion and supercolony formation. We review the sensory ecology of nestmate ","keywords":["Argentine ant","Linepithema humile","invasive species","supercolony","nestmate recognition","collective behavior","chemical ecology","cuticular hydrocarbons"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ArgentineAnt","abstract":"Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggression, allowing colony fusion and supercolony formation. We review the sensory ecology of nestmate ","keywords":["Argentine ant","Linepithema humile","invasive species","supercolony","nestmate recognition","collective behavior","chemical ecology","cuticular hydrocarbons"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

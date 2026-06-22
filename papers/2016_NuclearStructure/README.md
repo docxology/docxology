@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NuclearStructure","abstract":"Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromoso","keywords":["Hi-C","chromosome conformation","radiation biology","chromatin architecture","DNA damage","topologically associating domains","nuclear organization","3C technologies"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NuclearStructure","abstract":"Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromoso","keywords":["Hi-C","chromosome conformation","radiation biology","chromatin architecture","DNA damage","topologically associating domains","nuclear organization","3C technologies"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ForagingGene","abstract":"Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from o","keywords":["foraging gene","Pogonomyrmex barbatus","harvester ants","gene expression","circadian rhythms","task allocation","division of labor","field study","behavioral ecology"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ForagingGene","abstract":"Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from o","keywords":["foraging gene","Pogonomyrmex barbatus","harvester ants","gene expression","circadian rhythms","task allocation","division of labor","field study","behavioral ecology"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EmergentTeams","abstract":"Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique challenges of rapidly assembled collaborative teams.","keywords":["emergent teams","operations orders","team formation","innovation","facilitation","collective intelligence","hackathons","research accelerators"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EmergentTeams","abstract":"Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique challenges of rapidly assembled collaborative teams.","keywords":["emergent teams","operations orders","team formation","innovation","facilitation","collective intelligence","hackathons","research accelerators"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

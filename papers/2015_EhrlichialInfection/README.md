@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EhrlichialInfection","abstract":"We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA s","keywords":["Ehrlichia","Anaplasma","leukemia","myelodysplastic syndromes","intracellular parasites","Rifampin","immune system dysfunction","bone marrow","autoimmune disorders"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EhrlichialInfection","abstract":"We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA s","keywords":["Ehrlichia","Anaplasma","leukemia","myelodysplastic syndromes","intracellular parasites","Rifampin","immune system dysfunction","bone marrow","autoimmune disorders"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -28,7 +28,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -1,16 +1,7 @@
 ---
 name: "ActInfMetaAnalysis"
 description: "Expertise in the living meta-analysis architecture for Active Inference/FEP literature: multi-source retrieval and deduplication, three-tier taxonomy, LLM-to-nanopublication extraction over eight hypotheses, RDF-compatible graphs, citation-weighted scoring (Zenodo v2, 2026)."
-tags:
-  - active-inference
-  - meta-analysis
-  - nanopublications
-  - llm-extraction
-  - living-literature-review
-  - citation-weighted-scoring
-  - free-energy-principle
-  - computational-bibliography
-  - open-science
+tags: ["active-inference", "meta-analysis", "nanopublications", "llm-extraction", "living-literature-review", "citation-weighted-scoring", "free-energy-principle", "computational-bibliography", "open-science"]
 ---
 
 # A Living Meta-Analysis Architecture for Active Inference
@@ -61,7 +52,7 @@ When applying this skill:
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Skills
 

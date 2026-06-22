@@ -1,7 +1,7 @@
 ---
 name: "AGEINT"
 description: "Use for AGEINT: Agentic Intelligence, a Zenodo publication with concept DOI 10.5281/zenodo.20732274."
-tags: ['agentic-intelligence', 'intelligence-tradecraft', 'cognitive-security', 'structured-analytic-techniques', 'active-inference', 'multi-agent-systems']
+tags: ["agentic-intelligence", "intelligence-tradecraft", "cognitive-security", "structured-analytic-techniques", "active-inference", "multi-agent-systems"]
 ---
 
 # AGEINT: Agentic Intelligence

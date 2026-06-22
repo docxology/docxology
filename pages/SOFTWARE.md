@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*60 original repositories · 34 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*61 original repositories · 34 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -62,13 +62,14 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ntqr_llm](https://github.com/docxology/ntqr_llm) | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · [📄](../papers/2026_RecoveringLLMPersona/) · [Zenodo](https://doi.org/10.5281/zenodo.20498699) | Python | 0 | 2026-06 |
 | [itrace](https://github.com/docxology/itrace) | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · [📄](../papers/2026_ITrace/) · [Zenodo](https://doi.org/10.5281/zenodo.20614908) | Python | 0 | 2026-06 |
 | [coasys](https://github.com/docxology/coasys) | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories | Python | 0 | 2026-06 |
+| [CogSecSkills](https://github.com/docxology/CogSecSkills) | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · [📄](../papers/2026_CogSecSkills/) · [Zenodo](https://doi.org/10.5281/zenodo.20804585) | Python | 0 | 2026-06 |
 | [template_madlib](https://github.com/docxology/template_madlib) | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · [📄](../papers/2026_TemplateMadlib/) · [Zenodo](https://doi.org/10.5281/zenodo.20786638) | Python | 0 | 2026-06 |
 | [ultralink-docx](https://github.com/docxology/ultralink-docx) | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents | HTML | 1 | 2025-03 |
 | [cognitive](https://github.com/docxology/cognitive) | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization | Python | 14\* | 2026-05 |
 | [active_torchference](https://github.com/docxology/active_torchference) | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization | Python | 0 | 2025-10 |
 | [ant-pheromone](https://github.com/docxology/ant-pheromone) | Computational simulation of ant pheromone trail dynamics and stigmergic communication | Python | 0 | 2022-09 |
 | [ant_stack](https://github.com/docxology/ant_stack) | The Ant Stack — layered computational model of collective ant-colony intelligence · [📄](../papers/2025_AntStack/) | Python | 0 | 2025-09 |
-| [cohereants](https://github.com/docxology/cohereants) | Computational research on insect infrared sensing and olfaction modeling · [📄](../papers/2026_WhenDoBugs/) · [Zenodo](https://doi.org/10.5281/zenodo.20450970) | Python | 0 | 2026-05 |
+| [cohereants](https://github.com/docxology/cohereants) | Computational research on insect infrared sensing and olfaction modeling · [📄](../papers/2026_WhenDoBugs/) · [Zenodo](https://doi.org/10.5281/zenodo.20450970) · [Zenodo](https://doi.org/10.5281/zenodo.20450880) | Python | 0 | 2026-05 |
 | [ento_linguistics](https://github.com/docxology/ento_linguistics) | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · [📄](../papers/2026_EntoLinguistics/) | Python | 0 | 2026-04 |
 | [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · [📄](../papers/2026_CognitiveCaseDiagrams/) | TeX | 0 | 2026-04 |
 | [Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference](https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference) | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment | Julia | 0 | 2025-04 |
@@ -84,7 +85,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [godel_ivm](https://github.com/docxology/godel_ivm) | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products | Python | 0 | 2025-10 |
 | [goference](https://github.com/docxology/goference) | Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum | Go | 0 | 2025-09 |
 | [hhs-opendata](https://github.com/docxology/hhs-opendata) | Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines | Python | 0 | 2026-02 |
-| [grateful_data](https://github.com/docxology/grateful_data) | The Music Never Stopped citation-bound Grateful Dead data compendium · [📄](../papers/2026_MusicNeverStopped/) · [Zenodo](https://doi.org/10.5281/zenodo.20482026) | Python | 0 | 2026-06 |
+| [grateful_data](https://github.com/docxology/grateful_data) | The Music Never Stopped citation-bound Grateful Dead data compendium · [📄](../papers/2026_MusicNeverStopped/) · [Zenodo](https://doi.org/10.5281/zenodo.20482026) · [Zenodo](https://doi.org/10.5281/zenodo.20482025) | Python | 0 | 2026-06 |
 | [infra-calc](https://github.com/docxology/infra-calc) | Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems | JavaScript | 0 | 2025-05 |
 | [markdown_decision_process](https://github.com/docxology/markdown_decision_process) | Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning · [📄](../papers/2025_MarkdownDecisionProcess/) | Python | 0 | 2025-10 |
 | [mdkv](https://github.com/docxology/mdkv) | MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents · [📄](../papers/2025_MDKV/) | Python | 0 | 2025-08 |
@@ -135,8 +136,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ultralink](https://github.com/ActiveInferenceInstitute/ultralink) | UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats | — | 1 | 2025 |
 | [ActiveInferenceImplementations](https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations) | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles | Jupyter | 0 | 2022 |
 | [ATLAS](https://github.com/ActiveInferenceInstitute/ATLAS) | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces | Python | 0 | 2025 |
-| [COGANT](https://github.com/ActiveInferenceInstitute/COGANT) | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · [📄](../papers/2026_COGANT/) · [Zenodo](https://doi.org/10.5281/zenodo.20705351) | Python | 0 | 2026 |
-| [on_policy_distillation](https://github.com/ActiveInferenceInstitute/on_policy_distillation) | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · [📄](../papers/2026_PolicyDistillationAs/) · [Zenodo](https://doi.org/10.5281/zenodo.20749817) | Python | 0 | 2026 |
+| [COGANT](https://github.com/ActiveInferenceInstitute/COGANT) | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · [📄](../papers/2026_COGANT/) · [Zenodo](https://doi.org/10.5281/zenodo.20705351) · [Zenodo](https://doi.org/10.5281/zenodo.20705350) | Python | 0 | 2026 |
+| [on_policy_distillation](https://github.com/ActiveInferenceInstitute/on_policy_distillation) | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · [📄](../papers/2026_PolicyDistillationAs/) · [Zenodo](https://doi.org/10.5281/zenodo.20749817) · [Zenodo](https://doi.org/10.5281/zenodo.20747834) | Python | 0 | 2026 |
 | [Bots](https://github.com/ActiveInferenceInstitute/Bots) | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms | — | 0 | 2022 |
 | [Garden-of-Iris](https://github.com/ActiveInferenceInstitute/Garden-of-Iris) | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics | Python | 0 | 2023 |
 | [gen25](https://github.com/ActiveInferenceInstitute/gen25) | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort | — | 0 | 2025 |
@@ -153,14 +154,14 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Active Inference & Modeling | 15 | `active_inference`, `active_torchference`, `goference`, `AgenticMesh`, `enactive_inference_model`, `Markov_Blanket_Detection`, `cognitive`, `cognitive-engine`, `ActiveInferAnts`, `EvoJump`, `markdown_decision_process`, `cognitive_case_diagrams`, `Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference`, `transformer`, `on_policy_distillation` |
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
-| Cognitive Security | 2 | `p3if`, `opentir` |
+| Cognitive Security | 3 | `p3if`, `opentir`, `CogSecSkills` |
 | Developer Tools | 16 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
 | Data & Policy | 3 | `hhs-opendata`, `crescent-city`, `grateful_data` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
-| **docxology subtotal** | **60** | |
+| **docxology subtotal** | **61** | |
 | AII Contributions (non-fork) | 34 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **94** | |
+| **Grand Total** | **95** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

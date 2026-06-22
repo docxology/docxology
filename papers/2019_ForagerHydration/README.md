@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ForagerHydration","abstract":"Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more sensitive to water loss. Surprisingly, foragers more sensitive to water loss are from colonies more likel","keywords":["Pogonomyrmex barbatus","desiccation physiology","foraging behavior","water balance","colony variation","collective behavior","behavioral ecology","reproductive fitness"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ForagerHydration","abstract":"Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more sensitive to water loss. Surprisingly, foragers more sensitive to water loss are from colonies more likel","keywords":["Pogonomyrmex barbatus","desiccation physiology","foraging behavior","water balance","colony variation","collective behavior","behavioral ecology","reproductive fitness"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NSFReporting","abstract":"This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profiles, intelligent processing prompts, and automated reporting tools to enhance the quality and accessibility of postdoctoral research outputs.","keywords":["NSF reporting","postdoctoral research","synthetic intelligence","automated reporting","research dissemination","prompt engineering"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NSFReporting","abstract":"This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profiles, intelligent processing prompts, and automated reporting tools to enhance the quality and accessibility of postdoctoral research outputs.","keywords":["NSF reporting","postdoctoral research","synthetic intelligence","automated reporting","research dissemination","prompt engineering"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

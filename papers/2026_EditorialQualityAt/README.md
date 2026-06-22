@@ -52,6 +52,9 @@ prose analysis · readability · editorial review · reproducible research · ma
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_prose_project/releases/tag/v0.4.1
+- Zenodo record: https://zenodo.org/records/20693007
+
 - Zenodo record: https://zenodo.org/records/20420342
 - GitHub release: https://github.com/docxology/template_prose_project/releases/tag/v0.4.0
 - Source repository: https://github.com/docxology/template_prose_project

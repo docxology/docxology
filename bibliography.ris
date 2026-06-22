@@ -2044,3 +2044,15 @@ KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 173; docs: papers/2026_CaliforniaPublicRecords/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - CogSecSkills: Multiharness Cognitive Security Skill Library
+T2  - Zenodo
+DO  - 10.5281/zenodo.20804585
+UR  - https://doi.org/10.5281/zenodo.20804585
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 174; docs: papers/2026_CogSecSkills/
+ER  -

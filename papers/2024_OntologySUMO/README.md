@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"OntologySUMO","abstract":"We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and subsets, and display relationships among identified SUMO topics. This scaffolding facilitates rigorous mapping of Active Inference to SUMO.","keywords":["ontology alignment","SUMO","Active Inference Ontology","knowledge representation","formal ontology","semantic mapping"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"OntologySUMO","abstract":"We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and subsets, and display relationships among identified SUMO topics. This scaffolding facilitates rigorous mapping of Active Inference to SUMO.","keywords":["ontology alignment","SUMO","Active Inference Ontology","knowledge representation","formal ontology","semantic mapping"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

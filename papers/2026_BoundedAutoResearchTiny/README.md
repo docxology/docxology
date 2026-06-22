@@ -68,6 +68,9 @@ autoresearch · reproducible research · machine learning benchmark · artifact 
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.1
+- Zenodo record: https://zenodo.org/records/20692993
+
 - Zenodo record: https://zenodo.org/records/20420357
 - GitHub release: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0
 - Source repository: https://github.com/docxology/template_autoresearch_project

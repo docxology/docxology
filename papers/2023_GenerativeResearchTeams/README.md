@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GenerativeResearchTeams","abstract":"The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like Active Blockference, cadCAD, and cognitive security concepts including Narrative Information Management","keywords":["Generative Research Team","Active Inference","generative model","cognitive modeling","LLMs","autonomous agents","open science","decentralized science","Active Blockference","meta-prompting"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GenerativeResearchTeams","abstract":"The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like Active Blockference, cadCAD, and cognitive security concepts including Narrative Information Management","keywords":["Generative Research Team","Active Inference","generative model","cognitive modeling","LLMs","autonomous agents","open science","decentralized science","Active Blockference","meta-prompting"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

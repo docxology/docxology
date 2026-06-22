@@ -25,3 +25,9 @@ identifiers:
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2"
     description: "GitHub release"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1"
+    description: "GitHub release"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0"
+    description: "GitHub release"

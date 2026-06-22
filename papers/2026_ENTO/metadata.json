@@ -1,8 +1,8 @@
 {
   "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
   "version": "0.4",
-  "doi": "10.5281/zenodo.20647443",
-  "doi_url": "https://doi.org/10.5281/zenodo.20647443",
+  "doi": "10.5281/zenodo.20396328",
+  "doi_url": "https://doi.org/10.5281/zenodo.20396328",
   "zenodo_record": "https://zenodo.org/records/20647443",
   "record_id": "20647443",
   "publication_date": "2026-06-11",
@@ -17,7 +17,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, spectrograms, provenance proofs &mdash; into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacute; length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection. This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/docxology/entofile.",
+  "description": "<p><strong>ENTO</strong> (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, spectrograms, provenance proofs &mdash; into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacute; length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection.</p><p>This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/docxology/entofile.</p>",
   "keywords": [
     "research data formats",
     "authenticated encryption",
@@ -39,8 +39,22 @@
       "download_url": "https://zenodo.org/api/records/20647443/files/entofile-0.4-source.zip/content"
     }
   ],
-  "related_resources": [],
-  "github_repo": "",
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/entofile"
+    }
+  ],
+  "github_repo": "docxology/entofile",
   "source": "zenodo-only",
-  "checked_at": "2026-06-14T22:15:58Z"
+  "checked_at": "2026-06-22T23:19:43Z",
+  "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
+  "release_tag": "v0.4",
+  "release_name": "ENTO 0.4 — initial public release",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "github_repo_self_linked"
+  ]
 }

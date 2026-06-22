@@ -5,7 +5,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CurioCards","abstract":"Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.","keywords":["Curio Cards","research ideation","creativity tools","interdisciplinary thinking","prompt-based exploration"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CurioCards","abstract":"Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.","keywords":["Curio Cards","research ideation","creativity tools","interdisciplinary thinking","prompt-based exploration"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

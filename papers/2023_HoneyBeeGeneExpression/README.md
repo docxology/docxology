@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees","abstract":"The honey bee (Apis mellifera) is a key model organism for complex social behavior and physiology, where tissue-specific gene expression (TSGE) is difficult to analyze given large bioinformatics datasets and manual tissue processing. We present a meta-analytic approach to TSGE in A. mellifera using open-source bioinformatics packages: from an initial pool of 4,349 samples and 12,398 loci, rigorous analysis yields a publicly available snapshot of 731 samples and 177 loci representing high-quality TSGE estimates, intended as a reusable resource for honey bee and comparative gene-expression research.","keywords":["honey bees","Apis mellifera","tissue-specific gene expression","meta-analysis","RNA-seq","bioinformatics pipeline","open-source"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees","abstract":"The honey bee (Apis mellifera) is a key model organism for complex social behavior and physiology, where tissue-specific gene expression (TSGE) is difficult to analyze given large bioinformatics datasets and manual tissue processing. We present a meta-analytic approach to TSGE in A. mellifera using open-source bioinformatics packages: from an initial pool of 4,349 samples and 12,398 loci, rigorous analysis yields a publicly available snapshot of 731 samples and 177 loci representing high-quality TSGE estimates, intended as a reusable resource for honey bee and comparative gene-expression research.","keywords":["honey bees","Apis mellifera","tissue-specific gene expression","meta-analysis","RNA-seq","bioinformatics pipeline","open-source"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

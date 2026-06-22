@@ -16,12 +16,12 @@
   "license": "MIT",
   "creators": [
     {
-      "name": "Friedman, Daniel Ari",
+      "name": "Daniel Ari Friedman",
       "affiliation": "Active Inference Institute",
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. It keeps playful Mad Lib token-injection mechanics inside a serious reproducibility contract, with deterministic conditional assembly of manuscript sections.",
+  "description": "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and the source code decides what text is emitted.\n\nThe committed seed is 431 and the current schema expands 22 slot rule(s) into 40 token choice(s) across 10 lexicon categories. The configured narrative moves are state the manuscript-generation problem, name the deterministic intervention, and summarize the audit surface. The central hypothesis is: Deterministic lexical injection can generate a complete conditional IMRAD manuscript while preserving token provenance, section intent, and audit-ready method evidence.\n\nThe result is not a claim that lexical substitution creates scholarship. It is a worked template for conditional manuscript assembly: section enablement, token provenance, figure registration, and unresolved-placeholder checks all become inspectable artifacts before the shared renderer produces PDF, HTML, and slides.\n\n---\nAssociated artifacts\nGitHub release: Template Madlib v0.1.0 (https://github.com/docxology/template_madlib/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20786638\nZenodo: https://zenodo.org/records/20786638\nPDF SHA-256: a593c1fedd4b4762c59b3e4f0b678efb84af0b1fa09f1ddff2995a9a805b7bc5",
   "keywords": [
     "madlib generation",
     "token injection",
@@ -32,17 +32,28 @@
   "files": [
     {
       "name": "Friedman_2026_Template_a593c1fe.pdf",
+      "size_bytes": 1001108,
+      "checksum": "md5:ae0230ea95ca20e0f4692595840bcc80",
       "download_url": "https://zenodo.org/api/records/20786639/files/Friedman_2026_Template_a593c1fe.pdf/content"
     }
   ],
   "related_resources": [
     {
-      "relation": "isSupplementedBy",
-      "identifier": "https://github.com/docxology/template_madlib",
-      "type": "software"
+      "type": "repository",
+      "url": "https://github.com/docxology/template_madlib"
     }
   ],
-  "github_repo": "https://github.com/docxology/template_madlib",
+  "github_repo": "docxology/template_madlib",
   "source": "zenodo-with-github",
-  "checked_at": "2026-06-21T00:00:00Z"
+  "checked_at": "2026-06-22T23:19:45Z",
+  "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "Template Madlib v0.1.0",
+  "pdf_sha256": "a593c1fedd4b4762c59b3e4f0b678efb84af0b1fa09f1ddff2995a9a805b7bc5",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ]
 }

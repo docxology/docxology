@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AII_v1","abstract":"An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains.","keywords":["Active Inference Institute","open science","research organization","Free Energy Principle","community building"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AII_v1","abstract":"An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains.","keywords":["Active Inference Institute","open science","research organization","Free Energy Principle","community building"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -32,7 +32,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

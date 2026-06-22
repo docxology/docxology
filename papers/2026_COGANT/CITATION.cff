@@ -24,3 +24,6 @@ identifiers:
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/COGANT"
     description: "Source code repository"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0"
+    description: "GitHub release"

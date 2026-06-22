@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"TrustFinder","abstract":"TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.","keywords":["TrustFinder","trust systems","information evaluation","cognitive security","verified information","collaborative assessment","sociotechnical systems"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"TrustFinder","abstract":"TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.","keywords":["TrustFinder","trust systems","information evaluation","cognitive security","verified information","collaborative assessment","sociotechnical systems"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

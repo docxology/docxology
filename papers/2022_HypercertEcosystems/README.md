@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"HypercertEcosystems","abstract":"We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts\u2014a primitive for public goods funding\u2014can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.","keywords":["Hypercerts","DeSci","decentralized science","Active Blockference","AEOS","cognitive audits","public goods funding","systems modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"HypercertEcosystems","abstract":"We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts\u2014a primitive for public goods funding\u2014can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.","keywords":["Hypercerts","DeSci","decentralized science","Active Blockference","AEOS","cognitive audits","public goods funding","systems modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

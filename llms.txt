@@ -89,7 +89,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 ## Source Of Truth Rules
 
 - Treat pages/BIBLIOGRAPHY.md as the curated bibliography source of truth.
-- Use docs/operations/publication-sync.md for GitHub + Zenodo publication intake, DOI version refreshes, dry-run review, and apply/validation commands.
+- Use docs/operations/publication-sync.md for GitHub + Zenodo publication intake, Zenodo-only backfill, GitHub-only software triage, DOI version refreshes, dry-run review, and apply/validation commands.
 - Treat publications.html as the canonical HTML rendering of that bibliography.
 - Treat pages/SOFTWARE.md as the curated software source of truth.
 - Treat discovery.html and pages/DISCOVERY.md as the place for API endpoints, source queries, and caveats about public index count mismatches.

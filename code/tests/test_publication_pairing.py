@@ -41,6 +41,7 @@ def test_api_normalization_for_github_and_zenodo_records():
         {
             "id": 1,
             "doi": "10.5281/zenodo.1",
+            "conceptdoi": "10.5281/zenodo.0",
             "links": {"html": "https://zenodo.org/records/1"},
             "metadata": {
                 "title": "Example Release",
@@ -59,6 +60,7 @@ def test_api_normalization_for_github_and_zenodo_records():
     assert release.full_name == "docxology/example"
     assert release.assets[0].name == "paper.pdf"
     assert record.record_id == "1"
+    assert record.doi == "10.5281/zenodo.0"
     assert record.record_url == "https://zenodo.org/records/1"
 
 

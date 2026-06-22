@@ -1,19 +1,7 @@
 ---
 name: "FEPLean"
 description: "Lean 4 and Mathlib4 formalization of the Free Energy Principle: 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting with native compiler verification, zero-mock testing, and bridges from variational/Active Inference/Bayesian mechanics to machine-checked statements."
-tags:
-  - active-inference
-  - free-energy-principle
-  - lean-4
-  - mathlib4
-  - interactive-theorem-proving
-  - formal-verification
-  - bayesian-mechanics
-  - information-geometry
-  - variational-inference
-  - measure-theory
-  - llm-itp
-  - reproducible-research
+tags: ["active-inference", "free-energy-principle", "lean-4", "mathlib4", "interactive-theorem-proving", "formal-verification", "bayesian-mechanics", "information-geometry", "variational-inference", "measure-theory", "llm-itp", "reproducible-research"]
 ---
 
 # Towards Lean 4 Formalization of the Free Energy Principle
@@ -61,7 +49,7 @@ When applying this skill:
 
 ## Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI research consulting and tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI research consulting and tutoring related to this skill.
 
 ## Related Skills
 

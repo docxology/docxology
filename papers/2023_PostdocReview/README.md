@@ -5,7 +5,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PostdocReview","abstract":"A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation covers research contributions, collaborations, publications, and future directions across these domains, demonstrating the interdisciplinary breadth of the postdoctoral research program.","keywords":["postdoctoral review","research portfolio","Active Inference","entomology","cognitive security","meta-science","philosophy","biology","interdisciplinary research"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PostdocReview","abstract":"A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation covers research contributions, collaborations, publications, and future directions across these domains, demonstrating the interdisciplinary breadth of the postdoctoral research program.","keywords":["postdoctoral review","research portfolio","Active Inference","entomology","cognitive security","meta-science","philosophy","biology","interdisciplinary research"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

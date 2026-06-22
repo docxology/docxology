@@ -17,3 +17,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20693217"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/democreate/releases/tag/v0.6.2"
+    description: "GitHub release"

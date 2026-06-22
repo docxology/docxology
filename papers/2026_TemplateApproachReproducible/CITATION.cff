@@ -21,3 +21,6 @@ identifiers:
   - type: url
     value: "https://github.com/docxology/template_template/releases/tag/v1.0.6"
     description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/template_template/releases/tag/v1.0.7"
+    description: "GitHub release"

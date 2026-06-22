@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ActiveDiffusion","abstract":"The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, facilitated through the Active Inference Institute, investigates how diffusion processes can be understood and enhanced through the lens of free energy minimization, with applications to generative AI and probabilistic modeling.","keywords":["Active Diffusion","diffusion models","Active Inference","generative AI","probabilistic modeling","free energy minimization"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"ActiveDiffusion","abstract":"The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, facilitated through the Active Inference Institute, investigates how diffusion processes can be understood and enhanced through the lens of free energy minimization, with applications to generative AI and probabilistic modeling.","keywords":["Active Diffusion","diffusion models","Active Inference","generative AI","probabilistic modeling","free energy minimization"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

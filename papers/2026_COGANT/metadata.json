@@ -1,8 +1,8 @@
 {
   "title": "COGANT: Deterministic Codebase-to-GNN Translation",
   "version": "0.6.0",
-  "doi": "10.5281/zenodo.20705351",
-  "doi_url": "https://doi.org/10.5281/zenodo.20705351",
+  "doi": "10.5281/zenodo.20705350",
+  "doi_url": "https://doi.org/10.5281/zenodo.20705350",
   "concept_doi": "10.5281/zenodo.20705350",
   "zenodo_record": "https://zenodo.org/records/20705351",
   "record_id": "20705351",
@@ -20,7 +20,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN - Generalized Notation Notation, not graph neural networks). It is an evidence compiler: it propagates reviewable program facts through a fixpoint rule pipeline and emits graph, matrix, provenance, visualization, and roundtrip artifacts rather than a single opaque embedding or proof. A program-graph intermediate representation (IR) carries confidence and provenance; a fixpoint translation engine applies 22 declarative rules mapping nodes onto 7 Active Inference mapping kinds. Each emitted bundle includes a seed-induced structural partition using Markov-blanket role vocabulary, and a reverse synthesizer reconstructs a runnable Python package from an emitted GNN bundle, closing a forward-reverse-forward evaluation loop. The v0.6.0 release reports 9,697 passing tests, 95.55% line coverage, and a 25-target round-trip regression corpus. Dual Python/Rust architecture; MIT-licensed. Code home: https://github.com/ActiveInferenceInstitute/COGANT.",
+  "description": "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN). It is an evidence compiler: it propagates reviewable program facts through a finite fixpoint rule pipeline and emits graph, matrix, provenance, visualization, and round-trip artifacts with confidence and provenance, rather than a single opaque embedding. A reverse synthesizer reconstructs a runnable Python package from an emitted GNN bundle, closing a forward-reverse-forward evaluation loop. This is the first public release (v0.6.0). Source: https://github.com/ActiveInferenceInstitute/COGANT",
   "keywords": [
     "program analysis",
     "Generalized Notation Notation",
@@ -42,12 +42,21 @@
   ],
   "related_resources": [
     {
-      "relation": "isSupplementedBy",
-      "identifier": "https://github.com/ActiveInferenceInstitute/COGANT",
-      "type": "software"
+      "type": "repository",
+      "url": "https://github.com/ActiveInferenceInstitute/COGANT"
     }
   ],
-  "github_repo": "https://github.com/ActiveInferenceInstitute/COGANT",
+  "github_repo": "ActiveInferenceInstitute/COGANT",
   "source": "zenodo-with-github",
-  "checked_at": "2026-06-15T18:00:00Z"
+  "checked_at": "2026-06-22T23:19:45Z",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
+  "release_tag": "v0.6.0",
+  "release_name": "COGANT v0.6.0 — first public release",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ]
 }

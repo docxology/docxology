@@ -50,7 +50,7 @@ When applying this skill:
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Skills
 

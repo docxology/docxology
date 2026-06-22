@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-06-22T02:38:20Z
+Generated: 2026-06-22T23:34:22Z
 
-Current public metrics: 172 curated works; 94 catalogued software repositories (60 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 173 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (172)
+WORKS AND PUBLICATIONS (173)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -336,8 +336,9 @@ WORKS AND PUBLICATIONS (172)
 [171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20747834
 [172] 2026 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | Zenodo | 10.5281/zenodo.20786638
 [173] 2026 | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | Zenodo | 10.5281/zenodo.20789899
+[174] 2026 | Paper | CogSecSkills: Multiharness Cognitive Security Skill Library | Zenodo | 10.5281/zenodo.20804585
 
-SOFTWARE (94)
+SOFTWARE (95)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -365,13 +366,14 @@ docxology/template_newspaper | Python | https://github.com/docxology/template_ne
 docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498699
 docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Zenodo | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
 docxology/coasys | Python | https://github.com/docxology/coasys | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories
+docxology/CogSecSkills | Python | https://github.com/docxology/CogSecSkills | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Zenodo | paper: papers/2026_CogSecSkills/ | zenodo: https://doi.org/10.5281/zenodo.20804585
 docxology/template_madlib | Python | https://github.com/docxology/template_madlib | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Zenodo | paper: papers/2026_TemplateMadlib/ | zenodo: https://doi.org/10.5281/zenodo.20786638
 docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
 docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization
 docxology/ant-pheromone | Python | https://github.com/docxology/ant-pheromone | Computational simulation of ant pheromone trail dynamics and stigmergic communication
 docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
-docxology/cohereants | Python | https://github.com/docxology/cohereants | Computational research on insect infrared sensing and olfaction modeling · · Zenodo | paper: papers/2026_WhenDoBugs/ | zenodo: https://doi.org/10.5281/zenodo.20450970
+docxology/cohereants | Python | https://github.com/docxology/cohereants | Computational research on insect infrared sensing and olfaction modeling · · Zenodo · Zenodo | paper: papers/2026_WhenDoBugs/ | zenodo: https://doi.org/10.5281/zenodo.20450970
 docxology/ento_linguistics | Python | https://github.com/docxology/ento_linguistics | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring | paper: papers/2026_EntoLinguistics/
 docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
 docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Julia | https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment
@@ -387,7 +389,7 @@ docxology/fuller-obsidian | unspecified | https://github.com/docxology/fuller-ob
 docxology/godel_ivm | Python | https://github.com/docxology/godel_ivm | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
 docxology/goference | Go | https://github.com/docxology/goference | Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum
 docxology/hhs-opendata | Python | https://github.com/docxology/hhs-opendata | Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines
-docxology/grateful_data | Python | https://github.com/docxology/grateful_data | The Music Never Stopped citation-bound Grateful Dead data compendium · · Zenodo | paper: papers/2026_MusicNeverStopped/ | zenodo: https://doi.org/10.5281/zenodo.20482026
+docxology/grateful_data | Python | https://github.com/docxology/grateful_data | The Music Never Stopped citation-bound Grateful Dead data compendium · · Zenodo · Zenodo | paper: papers/2026_MusicNeverStopped/ | zenodo: https://doi.org/10.5281/zenodo.20482026
 docxology/infra-calc | JavaScript | https://github.com/docxology/infra-calc | Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems
 docxology/markdown_decision_process | Python | https://github.com/docxology/markdown_decision_process | Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning | paper: papers/2025_MarkdownDecisionProcess/
 docxology/mdkv | Python | https://github.com/docxology/mdkv | MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents | paper: papers/2025_MDKV/
@@ -425,8 +427,8 @@ ActiveInferenceInstitute/NoOrg | HTML | https://github.com/ActiveInferenceInstit
 ActiveInferenceInstitute/ultralink | unspecified | https://github.com/ActiveInferenceInstitute/ultralink | UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats
 ActiveInferenceInstitute/ActiveInferenceImplementations | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles
 ActiveInferenceInstitute/ATLAS | Python | https://github.com/ActiveInferenceInstitute/ATLAS | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
-ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
-ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
+ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
+ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
 ActiveInferenceInstitute/Bots | unspecified | https://github.com/ActiveInferenceInstitute/Bots | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms
 ActiveInferenceInstitute/Garden-of-Iris | Python | https://github.com/ActiveInferenceInstitute/Garden-of-Iris | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics
 ActiveInferenceInstitute/gen25 | unspecified | https://github.com/ActiveInferenceInstitute/gen25 | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort

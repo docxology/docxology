@@ -5,7 +5,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MVEE","abstract":"How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and evolutionary time, and the diversity and open-endedness of evolving systems. MVEE provides a theoretical sc","keywords":["MVEE","evolutionary theory","multilevel evolution","phenotypic plasticity","eco-evo-devo","variational methods","multilevel selection","open-ended evolution"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MVEE","abstract":"How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and evolutionary time, and the diversity and open-endedness of evolving systems. MVEE provides a theoretical sc","keywords":["MVEE","evolutionary theory","multilevel evolution","phenotypic plasticity","eco-evo-devo","variational methods","multilevel selection","open-ended evolution"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

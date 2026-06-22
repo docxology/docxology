@@ -1,15 +1,7 @@
 ---
 name: "EntoLinguistics"
 description: "Expertise in entomological scientific language, terminology networks, corpus methods, CACE lexical standards, and Active Inference–aligned discourse analysis."
-tags:
-  - entomology
-  - scientific-communication
-  - terminology-networks
-  - corpus-linguistics
-  - active-inference
-  - cace
-  - semantic-entropy
-  - myrmecology
+tags: ["entomology", "scientific-communication", "terminology-networks", "corpus-linguistics", "active-inference", "cace", "semantic-entropy", "myrmecology"]
 ---
 
 # Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
@@ -56,7 +48,7 @@ When applying this skill:
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Skills
 

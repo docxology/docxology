@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T05:46:04Z",
+  "generated_at": "2026-06-22T23:34:23Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -115,7 +115,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-06-18.json"
+        "reports/paired_publications_2026-06-22.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -133,10 +133,25 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-06-18.json",
+        "reports/paired_publications_2026-06-22.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
+    },
+    {
+      "name": "Zenodo-only publication backfill",
+      "outputs": [
+        "pages/BIBLIOGRAPHY.md",
+        "papers/<YEAR>_<Slug>/",
+        "papers/paper_metadata.json",
+        "papers/README.md"
+      ],
+      "sources": [
+        "Zenodo Records API",
+        "docs/operations/publication-sync.md",
+        "code/orchestrators/add_zenodo_only.py"
+      ],
+      "command": "python3 code/orchestrators/add_zenodo_only.py <record_id>"
     },
     {
       "name": "Domain pages",

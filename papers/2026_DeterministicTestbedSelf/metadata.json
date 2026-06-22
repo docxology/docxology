@@ -1,10 +1,10 @@
 {
   "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "doi": "10.5281/zenodo.20533669",
   "doi_url": "https://doi.org/10.5281/zenodo.20533669",
-  "zenodo_record": "https://zenodo.org/records/20533670",
-  "record_id": "20533670",
+  "zenodo_record": "https://zenodo.org/records/20693001",
+  "record_id": "20693001",
   "publication_date": "2026",
   "resource_type": {
     "title": "Journal article",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Abstract\n\nRecent work on AutoScientists  coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim.\n\nWe make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers and claim no speedup. What the testbed does demonstrate are two distinct, independently measurable benefits. First, noise-robustness: because the objective is stochastic, a single observed gain can be a draw of evaluation noise, so we separate the reported champion metric from the clean noise-free ground truth and show that noise-band confirmation shrinks the gap between them by roughly an order of magnitude — with confirmation on, the final champion's reported metric sits $0.0012$ above its clean value, against $0.0156$ with confirmation removed, while every configuration reaches the same clean optimum. Second, search hygiene: the dead-end registry, consulted by the proposer, cuts redundant re-probes of retired directions from $36$ to $0$ and halts at $36$ of the $60$ experiments — the same clean answer, reached with less waste. A per-mechanism ablation isolates each component's contribution, and the language-model proposer is a clean plug-in seam: a deterministic rule-based agent drives the reproducible figures, and a live Hermes agent (served by Ollama) can be swapped in without touching the coordination loop.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0)\nPDF SHA-256: a7f202bb1aa3c13803508e033c7561e6afe8b74148b60e9a3f91341ebfc21e65",
+  "description": "Abstract\n\nRecent work on AutoScientists  coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim.\n\nWe make the comparison fair by holding the total number of objective evaluations fixed: coordinated teams partition a single sequential experiment budget rather than adding parallel compute. Under that matched budget, coordination cannot — and in our results does not — beat a single-thread baseline on the final champion metric; we report the actual numbers and claim no speedup. What the testbed does demonstrate are two distinct, independently measurable benefits. First, noise-robustness: because the objective is stochastic, a single observed gain can be a draw of evaluation noise, so we separate the reported champion metric from the clean noise-free ground truth and show that noise-band confirmation shrinks the gap between them by roughly an order of magnitude — with confirmation on, the final champion's reported metric sits $0.0012$ above its clean value, against $0.0156$ with confirmation removed, while every configuration reaches the same clean optimum. Second, search hygiene: the dead-end registry, consulted by the proposer, cuts redundant re-probes of retired directions from $36$ to $0$ and halts at $36$ of the $60$ experiments — the same clean answer, reached with less waste. A per-mechanism ablation isolates each component's contribution, and the language-model proposer is a clean plug-in seam: a deterministic rule-based agent drives the reproducible figures, and a live Hermes agent (served by Ollama) can be swapped in without touching the coordination loop.\n\n---\nAssociated artifacts\nGitHub release: v1.0.1 (https://github.com/docxology/template_autoscientists/releases/tag/v1.0.1)\nDOI: https://doi.org/10.5281/zenodo.20533669\nZenodo: https://zenodo.org/records/20533669\nPDF SHA-256: 972bc4e0a82c97a88442ffc4370a17dd3323de96f27f91294dcb19dab3934a29",
   "keywords": [
     "agent coordination",
     "scientific discovery",
@@ -29,10 +29,10 @@
   ],
   "files": [
     {
-      "name": "Friedman_2026_Deterministic_a7f202bb.pdf",
-      "size_bytes": 270230,
-      "checksum": "md5:d32f9117e4aa04717612c93d89ae7828",
-      "download_url": "https://zenodo.org/api/records/20533670/files/Friedman_2026_Deterministic_a7f202bb.pdf/content"
+      "name": "Friedman_2026_Deterministic_972bc4e0.pdf",
+      "size_bytes": 272080,
+      "checksum": "md5:80b7c42a0bf333ebead102200c4d8ea0",
+      "download_url": "https://zenodo.org/api/records/20693001/files/Friedman_2026_Deterministic_972bc4e0.pdf/content"
     }
   ],
   "related_resources": [
@@ -42,16 +42,18 @@
     }
   ],
   "github_repo": "docxology/template_autoscientists",
-  "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0",
-  "release_tag": "v1.0.0",
-  "release_name": "",
-  "pdf_sha256": "",
+  "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.1",
+  "release_tag": "v1.0.1",
+  "release_name": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination (v1.0.1)",
+  "pdf_sha256": "972bc4e0a82c97a88442ffc4370a17dd3323de96f27f91294dcb19dab3934a29",
   "pairing_confidence": "strong",
   "pairing_evidence": [
+    "github_release_mentions_zenodo_record",
     "zenodo_related_identifier_mentions_release",
-    "github_repo_self_linked"
+    "github_repo_self_linked",
+    "title_overlap"
   ],
-  "checked_at": "2026-06-04T20:45:03Z",
+  "checked_at": "2026-06-22T23:19:33Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20533669",

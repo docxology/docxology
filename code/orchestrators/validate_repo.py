@@ -257,6 +257,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
     run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
     run(["python3", "code/orchestrators/sync_paired_publications.py", "--check"])
+    run(["python3", "code/orchestrators/audit_publication_skills.py", "--check"])
     run(["python3", "code/orchestrators/build_search_index.py", "--check"])
     run(["python3", "code/orchestrators/generate_feed.py", "--check"])
     run(["python3", "code/orchestrators/audit_assets.py", "--check"])

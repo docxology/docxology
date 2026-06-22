@@ -1,13 +1,7 @@
 ---
 name: "CryptoJews"
 description: "Expertise in critiquing genetic studies related to historical populations, with a focus on methodological rigor and demographic analysis."
-tags:
-  - population-genetics
-  - uniparental-markers
-  - crypto-jews
-  - haplotype-polyphyly
-  - admixture-modeling
-  - iberian-history
+tags: ["population-genetics", "uniparental-markers", "crypto-jews", "haplotype-polyphyly", "admixture-modeling", "iberian-history"]
 ---
 
 # SKILL.md — Commentary: Portuguese Crypto-Jews
@@ -71,7 +65,7 @@ Use this skill when evaluating population genetics studies that infer ethnic or 
 
 ## 🎯 Consulting & Tutoring
 
-[Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) is available for AI Research Consulting and Tutoring related to this skill.
+[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
 
 ## Related Papers
 

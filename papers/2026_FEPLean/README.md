@@ -8,7 +8,7 @@
 
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics","abstract":"50-topic Lean 4 catalog against Mathlib4 spanning FEP, Active Inference, Bayesian mechanics, information geometry, and thermodynamics; sorry-free verification on pinned Lean/Mathlib, Hermes/OpenGauss LLM pipeline, zero-mock testing.","keywords":["Free Energy Principle","Active Inference","Lean 4","Mathlib4","interactive theorem proving","formal verification","Bayesian mechanics","information geometry","LLM-ITP","reproducible research"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/","affiliation":[{"@type":"Organization","name":"Active Inference Institute"}]}]}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics","abstract":"50-topic Lean 4 catalog against Mathlib4 spanning FEP, Active Inference, Bayesian mechanics, information geometry, and thermodynamics; sorry-free verification on pinned Lean/Mathlib, Hermes/OpenGauss LLM pipeline, zero-mock testing.","keywords":["Free Energy Principle","Active Inference","Lean 4","Mathlib4","interactive theorem proving","formal verification","Bayesian mechanics","information geometry","LLM-ITP","reproducible research"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/","affiliation":[{"@type":"Organization","name":"Active Inference Institute"}]}]}
 -->
 
 ## Abstract
@@ -35,7 +35,7 @@
 
 ## Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on formal methods for Active Inference, Lean/Mathlib, and LLM–ITP workflows.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on formal methods for Active Inference, Lean/Mathlib, and LLM–ITP workflows.
 
 ## Citation
 

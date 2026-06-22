@@ -5,7 +5,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PhDDissertation","abstract":"This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neurochemistry, gene expression analysis, and theoretical frameworks to understand how colony-level collective behavior emerges from individual-level variation. The work examines the foraging gene, dopaminergic signaling, desiccation physiology, and RNA-Seq transcriptomics across multiple ant colonies in na","keywords":["PhD dissertation","Pogonomyrmex barbatus","collective behavior","transcriptomics","behavioral ecology","foraging gene","dopamine","colony variation","Stanford University"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PhDDissertation","abstract":"This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neurochemistry, gene expression analysis, and theoretical frameworks to understand how colony-level collective behavior emerges from individual-level variation. The work examines the foraging gene, dopaminergic signaling, desiccation physiology, and RNA-Seq transcriptomics across multiple ant colonies in na","keywords":["PhD dissertation","Pogonomyrmex barbatus","collective behavior","transcriptomics","behavioral ecology","foraging gene","dopamine","colony variation","Stanford University"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

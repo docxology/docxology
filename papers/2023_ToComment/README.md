@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"To comment or not to comment, that is the question!","abstract":"A commentary in Physics of Life Reviews by Mridula Mascarenhas, Richard J. Cordes, and Daniel A. Friedman responding to the target article 'To copy or not to copy?' by Hector M. Manrique and Michael J. Walker, which examines imitation, copying fidelity, and the foundations of human cumulative technological culture.","keywords":["commentary","imitation","social learning","cumulative culture","copying fidelity","Physics of Life Reviews"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"To comment or not to comment, that is the question!","abstract":"A commentary in Physics of Life Reviews by Mridula Mascarenhas, Richard J. Cordes, and Daniel A. Friedman responding to the target article 'To copy or not to copy?' by Hector M. Manrique and Michael J. Walker, which examines imitation, copying fidelity, and the foundations of human cumulative technological culture.","keywords":["commentary","imitation","social learning","cumulative culture","copying fidelity","Physics of Life Reviews"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -30,7 +30,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

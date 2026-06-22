@@ -4,9 +4,24 @@ This is the canonical runbook for checking GitHub releases against Zenodo record
 
 Use this workflow when new GitHub releases, Zenodo deposits, PDFs, or DOI versions may have appeared. The automation keeps [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md), [`data/works.json`](../../data/works.json), paper folders, generated paper pages, and site indexes aligned.
 
+## Intake Decision Map
+
+Use this map before editing curated files:
+
+| Public record found | Integrate with | Rule |
+| --- | --- | --- |
+| GitHub release + matching Zenodo DOI | [`sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) | Dry-run first; apply only `create_new` / `update_existing` actions from a warning-free report. |
+| Zenodo DOI with no matching GitHub release | [`add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py) | Use the Zenodo record id, then run the regeneration and validation chain. |
+| GitHub repository or release with no archival DOI | [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and [`build_github_inventory.py`](../../code/orchestrators/build_github_inventory.py) | Catalog it as software only when it belongs in the curated software table; do not invent a bibliography row. |
+| New Zenodo version of an existing work | Existing row and folder | Update the current row/folder metadata; do not create a duplicate work unless it is intentionally distinct. |
+| Ambiguous match | [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) | Record the review decision; future scans should report the exact pair as `already_reviewed`. |
+
+The safest default is: **scan live sources, inspect the report, apply only strong pairs, and treat everything else as manual curation.**
+
 ## Source Contract
 
 - [`code/orchestrators/sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) is the canonical GitHub Releases + Zenodo Records pairing tool.
+- [`code/orchestrators/add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py) is the companion tool for real Zenodo publications that do not have a paired GitHub release.
 - GitHub releases provide source-repository and release context. Zenodo records provide DOI, archival metadata, record URLs, and downloadable PDFs.
 - Strong `create_new` and `update_existing` actions may be applied automatically with `--apply`.
 - `needs_review` actions are review-only. Do not auto-apply them without manual curation.
@@ -33,7 +48,7 @@ If other work is present, layer the publication-sync changes on top without reve
 
 ## Refresh Public Sources
 
-Run these when you need the public-source snapshots and GitHub inventory current before a pairing decision:
+Run these when you need the public-source snapshots and GitHub inventory current before a pairing decision or software-catalog review:
 
 ```bash
 GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/refresh_public_sources.py
@@ -42,6 +57,14 @@ GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_i
 ```
 
 The generated reports under [`reports/`](../../reports/) are evidence snapshots. They support review but do not replace the curated bibliography.
+
+For a focused recent-release pass, use the pairing tool's date filter:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii --since YYYY-MM-DD
+```
+
+Use a broad scan when the prior report is old, when API warnings appeared, or when the latest known publication date is uncertain.
 
 ## Dry Run Pairing
 
@@ -68,6 +91,8 @@ Validate the latest cached report:
 uv run python3 code/orchestrators/sync_paired_publications.py --check
 ```
 
+Do not rely on a report that fails `--check`. A report with API warnings, count mismatches, or stale `create_new` actions is only a failed scan artifact, not evidence that the repository is current.
+
 ## Apply Strong Pairs
 
 Apply only strong create/update actions:
@@ -88,7 +113,7 @@ Expected source-owned updates include:
 
 Apply mode also runs the publication regeneration chain for bibliography exports, publications HTML, software exports, domain/work/paper pages, catalog/search/feed/sitemap, asset audit, and generated manifest.
 
-## Manual Review Path
+## Manual Review Path For Ambiguous Pairs
 
 For `needs_review` actions, inspect the GitHub release, Zenodo record, DOI, title, creator list, repository URL, and PDF before deciding.
 
@@ -102,6 +127,42 @@ If the item is a real publication but cannot be safely auto-applied:
 4. Run the regeneration and validation commands below.
 
 Do not create duplicate rows for newer Zenodo versions of the same work; update the existing row and preserve version-chain context where useful.
+
+## Zenodo-Only Publications
+
+When Zenodo has a real publication record but no matching GitHub release, use the Zenodo-only backfill helper instead of trying to force a paired-publication decision:
+
+```bash
+uv run python3 code/orchestrators/add_zenodo_only.py <record_id>
+```
+
+Use an optional domain override when inference is not safe:
+
+```bash
+uv run python3 code/orchestrators/add_zenodo_only.py <record_id>:💻
+```
+
+The helper fetches Zenodo metadata, creates the paper folder, downloads the first available PDF, appends the bibliography and papers index rows, and updates `papers/paper_metadata.json`. It does not replace review: confirm authorship, type, domain, title, DOI, and whether the record is a version of an already represented work before running it.
+
+After a Zenodo-only add, run the regeneration and validation commands below. If the record also represents software, update [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md), then run `sync_software_html.py --apply` and `export_agent_data.py` before the broad validation gate.
+
+## GitHub-Only Records
+
+A GitHub repository or release without a DOI is not automatically a publication. Decide whether it belongs in:
+
+- [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md), for curated owned or AII-contribution software.
+- [`data/github-repositories.json`](../../data/github-repositories.json) / [`repositories.html`](../../repositories.html), for the full generated public GitHub inventory.
+- No curated surface, for forks, tests, internal-only releases, or repositories outside the profile scope.
+
+After a curated software edit, run:
+
+```bash
+uv run python3 code/orchestrators/sync_software_html.py --apply
+uv run python3 code/orchestrators/export_agent_data.py
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_inventory.py
+```
+
+Then continue with the regeneration and validation commands below.
 
 ## Regenerate Dependent Surfaces
 

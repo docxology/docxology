@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T02:37:00Z",
+  "generated_at": "2026-06-22T23:34:22Z",
   "source": "pages/SOFTWARE.md",
-  "count": 94,
+  "count": 95,
   "repositories": [
     {
       "name": "template",
@@ -316,6 +316,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "CogSecSkills",
+      "url": "https://github.com/docxology/CogSecSkills",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "papers/2026_CogSecSkills/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20804585"
+    },
+    {
       "name": "template_madlib",
       "url": "https://github.com/docxology/template_madlib",
       "owner": "docxology",
@@ -392,7 +404,7 @@
       "url": "https://github.com/docxology/cohereants",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo",
+      "description": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-05",
@@ -584,7 +596,7 @@
       "url": "https://github.com/docxology/grateful_data",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo",
+      "description": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
@@ -1040,7 +1052,7 @@
       "url": "https://github.com/ActiveInferenceInstitute/COGANT",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo",
+      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
@@ -1052,7 +1064,7 @@
       "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo",
+      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",

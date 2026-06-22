@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"StigmergicAnnotation","abstract":"We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention\u2014a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can restore epistemic health to online environments.","keywords":["stigmergic annotation","open source attention","collective sensemaking","epistemic pollution","decentralized platforms","social annotation","digital attention"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"StigmergicAnnotation","abstract":"We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention\u2014a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can restore epistemic health to online environments.","keywords":["stigmergic annotation","open source attention","collective sensemaking","epistemic pollution","decentralized platforms","social annotation","digital attention"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

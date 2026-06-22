@@ -124,7 +124,7 @@ class ZenodoRecord:
         record_id = str(payload.get("id") or payload.get("record_id") or "")
         return cls(
             record_id=record_id,
-            doi=str(payload.get("doi") or meta.get("doi") or ""),
+            doi=str(payload.get("conceptdoi") or meta.get("conceptdoi") or payload.get("doi") or meta.get("doi") or ""),
             title=str(meta.get("title") or ""),
             publication_date=str(meta.get("publication_date") or ""),
             version=str(meta.get("version")) if meta.get("version") is not None else None,

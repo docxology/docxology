@@ -55,6 +55,9 @@ newspaper layout · typography · reportlab · reproducible publishing · docume
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_newspaper/releases/tag/v1.0.1
+- Zenodo record: https://zenodo.org/records/20693002
+
 - Zenodo record: https://zenodo.org/records/20533676
 - GitHub release: https://github.com/docxology/template_newspaper/releases/tag/v1.0.0
 - Source repository: https://github.com/docxology/template_newspaper

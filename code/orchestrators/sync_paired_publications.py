@@ -1014,12 +1014,18 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
         if expected != actual:
             raise SystemExit(f"Paired publication report count mismatch for {action_type}: {expected} != {actual}")
     existing_dois = {row["doi"] for row in parse_bibliography_rows(repo_root) if row.get("doi")}
+    applied_created_dois = {
+        str(item.get("doi") or "")
+        for item in payload.get("applied", [])
+        if isinstance(item, dict) and item.get("created") is True
+    }
     stale_create = [
         str(action.get("doi"))
         for action in actions
         if isinstance(action, dict)
         and action.get("action_type") == "create_new"
         and str(action.get("doi") or "") in existing_dois
+        and str(action.get("doi") or "") not in applied_created_dois
     ]
     if stale_create:
         joined = ", ".join(stale_create)

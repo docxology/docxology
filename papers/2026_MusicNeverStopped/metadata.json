@@ -1,8 +1,8 @@
 {
   "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
   "version": "1.0.0",
-  "doi": "10.5281/zenodo.20482026",
-  "doi_url": "https://doi.org/10.5281/zenodo.20482026",
+  "doi": "10.5281/zenodo.20482025",
+  "doi_url": "https://doi.org/10.5281/zenodo.20482025",
   "zenodo_record": "https://zenodo.org/records/20482026",
   "record_id": "20482026",
   "publication_date": "2026-05-31",
@@ -47,9 +47,10 @@
   "pdf_sha256": "296b3b5c5e9f3d628e15ae5d467dd5cc418bd018f0166194c9494b33b3367dda",
   "pairing_confidence": "strong",
   "pairing_evidence": [
+    "github_release_mentions_doi",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-04T20:45:04Z"
+  "checked_at": "2026-06-22T23:19:43Z"
 }

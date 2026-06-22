@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DistributedPhysiology","abstract":"Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation\u2014metabolism, water balance, immunity\u2014is accomplished collectively through decentralized interaction networks rather than centr","keywords":["distributed physiology","superorganism","collective behavior","ant colonies","decentralized control","interaction networks","colony metabolism","social immunity"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DistributedPhysiology","abstract":"Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation\u2014metabolism, water balance, immunity\u2014is accomplished collectively through decentralized interaction networks rather than centr","keywords":["distributed physiology","superorganism","collective behavior","ant colonies","decentralized control","interaction networks","colony metabolism","social immunity"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

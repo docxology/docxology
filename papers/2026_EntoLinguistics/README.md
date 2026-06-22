@@ -8,7 +8,7 @@
 
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EntoLinguistics","abstract":"Scientific language constitutes the generative models through which researchers parse complex systems. This paper introduces a six-domain Ento-Linguistic framework, an open-source computational pipeline for term extraction and terminology networks, and CACE meta-standards (Clarity, Appropriateness, Consistency, Evolvability) for lexical engineering in entomology.","keywords":["entomology","scientific communication","terminology networks","Active Inference","corpus linguistics","CACE","semantic entropy","myrmecology"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"},{"@type":"Person","name":"Tucker Cahill Chambers"}]}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"EntoLinguistics","abstract":"Scientific language constitutes the generative models through which researchers parse complex systems. This paper introduces a six-domain Ento-Linguistic framework, an open-source computational pipeline for term extraction and terminology networks, and CACE meta-standards (Clarity, Appropriateness, Consistency, Evolvability) for lexical engineering in entomology.","keywords":["entomology","scientific communication","terminology networks","Active Inference","corpus linguistics","CACE","semantic entropy","myrmecology"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"},{"@type":"Person","name":"Tucker Cahill Chambers"}]}
 -->
 
 *How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)*
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

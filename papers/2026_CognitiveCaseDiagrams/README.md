@@ -8,7 +8,7 @@
 
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Compositional Approaches to Linguistic Case for Cognitive Modeling","abstract":"Category-theoretic treatment of linguistic case as a bridge between grammatical structure, distributional semantics, and belief updating; DisCoCat/DisCoCirc diagrams, alignment typology as functors, links to Distributional Active Inference and cognitive security (prompt injection as type violation).","keywords":["Active Inference","linguistic case","category theory","DisCoCat","DisCoCirc","distributional semantics","cognitive modeling","cognitive security","prompt injection"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/","affiliation":[{"@type":"Organization","name":"Active Inference Institute"},{"@type":"Organization","name":"COGSEC"},{"@type":"Organization","name":"College of the Redwoods"}]}]}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Compositional Approaches to Linguistic Case for Cognitive Modeling","abstract":"Category-theoretic treatment of linguistic case as a bridge between grammatical structure, distributional semantics, and belief updating; DisCoCat/DisCoCirc diagrams, alignment typology as functors, links to Distributional Active Inference and cognitive security (prompt injection as type violation).","keywords":["Active Inference","linguistic case","category theory","DisCoCat","DisCoCirc","distributional semantics","cognitive modeling","cognitive security","prompt injection"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/","affiliation":[{"@type":"Organization","name":"Active Inference Institute"},{"@type":"Organization","name":"COGSEC"},{"@type":"Organization","name":"College of the Redwoods"}]}]}
 -->
 
 ## Abstract
@@ -34,7 +34,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, compositional semantics, and cognitive security.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, compositional semantics, and cognitive security.
 
 ## Citation
 

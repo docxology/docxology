@@ -8,7 +8,7 @@
 
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring","abstract":"Automated living meta-analysis for Active Inference/FEP: multi-source literature retrieval and deduplication; three-tier taxonomy; LLM-driven nanopublications over eight hypotheses; RDF-compatible knowledge graph with citation-weighted scoring; corpus N=819 (v2).","keywords":["Active Inference","meta-analysis","nanopublications","living literature review","hypothesis scoring","LLM extraction","Free Energy Principle","OpenAlex","Semantic Scholar","arXiv"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"},{"@type":"Person","name":"Joel Dietz"}]}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring","abstract":"Automated living meta-analysis for Active Inference/FEP: multi-source literature retrieval and deduplication; three-tier taxonomy; LLM-driven nanopublications over eight hypotheses; RDF-compatible knowledge graph with citation-weighted scoring; corpus N=819 (v2).","keywords":["Active Inference","meta-analysis","nanopublications","living literature review","hypothesis scoring","LLM extraction","Free Energy Principle","OpenAlex","Semantic Scholar","arXiv"],"author":[{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"},{"@type":"Person","name":"Joel Dietz"}]}
 -->
 
 *Computational meta-analysis of the Active Inference and FEP literature (v2, April 2026)*
@@ -42,7 +42,7 @@ Zenodo **[v2](https://zenodo.org/records/19897664)** (`10.5281/zenodo.19897664`,
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational meta-science.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational meta-science.
 
 ## Citation
 

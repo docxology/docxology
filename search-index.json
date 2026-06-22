@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T05:34:07Z",
+  "generated_at": "2026-06-22T23:34:23Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1824,
+  "count": 1827,
   "items": [
     {
       "id": "page:home",
@@ -4170,6 +4170,27 @@
       "content": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era Zenodo 10.5281/zenodo.20789899 Friedman2026CaliforniaPublicRecordsTechnical173 Cognitive Security Paper A technical and legal reference to California's public-records ecosystem, anchored by the California Public Records Act (CPRA), recodified by Assembly Bill 473 effective January 2023 to Government Code §§ 7920.000 et seq., and extended in practice through state and local open-data portals, request platforms, API frameworks (CKAN, Socrata, ArcGIS), metadata schemas, intergovernmental data-sharing surfaces, and exemption rules. California Public Records Act open data CKAN Socrata ArcGIS cognitive security civic technology California Public Records Act open data CKAN Socrata ArcGIS"
     },
     {
+      "id": "work:Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
+      "type": "work",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "url": "/works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20804585",
+      "summary": "CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open r",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "cognitive security",
+        "agent skills",
+        "analytic tradecraft",
+        "structured analytic techniques",
+        "multiharness"
+      ],
+      "content": "CogSecSkills: Multiharness Cognitive Security Skill Library Zenodo 10.5281/zenodo.20804585 Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174 Computational Paper CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open repository from github.com/docxology/CogSecSkills; the motivation is an information environment in which mis-, dis-, and malinformation are analytically distinct but operationally entangled, false content can diffuse rapidly at platform scale, and credible source evaluation increasingly demands explicit expert practice rather than page-bound reading alone, so that agents asked to weigh competing hypotheses, trace provenance, or critically review a claim need a repeatable procedure and a stable tool-use contract rather than improvisation. The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognit cognitive security agent skills analytic tradecraft structured analytic techniques multiharness cognitive security agent skills analytic tradecraft structured analytic techniques multiharness"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -4534,6 +4555,20 @@
       "content": "coasys Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories Python docxology"
     },
     {
+      "id": "software:docxology:CogSecSkills",
+      "type": "software",
+      "title": "CogSecSkills",
+      "url": "https://github.com/docxology/CogSecSkills",
+      "summary": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "CogSecSkills Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes ·  · Zenodo Python docxology"
+    },
+    {
       "id": "software:docxology:template_madlib",
       "type": "software",
       "title": "template_madlib",
@@ -4622,14 +4657,14 @@
       "type": "software",
       "title": "cohereants",
       "url": "https://github.com/docxology/cohereants",
-      "summary": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo",
+      "summary": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "cohereants Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo Python docxology"
+      "content": "cohereants Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:ento_linguistics",
@@ -4846,14 +4881,14 @@
       "type": "software",
       "title": "grateful_data",
       "url": "https://github.com/docxology/grateful_data",
-      "summary": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo",
+      "summary": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "grateful_data The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo Python docxology"
+      "content": "grateful_data The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:infra-calc",
@@ -5378,28 +5413,28 @@
       "type": "software",
       "title": "COGANT",
       "url": "https://github.com/ActiveInferenceInstitute/COGANT",
-      "summary": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo",
+      "summary": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo · Zenodo",
       "domain": "active-inference-institute",
       "tags": [
         "software",
         "Python",
         "ActiveInferenceInstitute"
       ],
-      "content": "COGANT Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo Python ActiveInferenceInstitute"
+      "content": "COGANT Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:on_policy_distillation",
       "type": "software",
       "title": "on_policy_distillation",
       "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
-      "summary": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo",
+      "summary": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo · Zenodo",
       "domain": "active-inference-institute",
       "tags": [
         "software",
         "Python",
         "ActiveInferenceInstitute"
       ],
-      "content": "on_policy_distillation On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo Python ActiveInferenceInstitute"
+      "content": "on_policy_distillation On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:Bots",
@@ -6473,10 +6508,9 @@
         "repository",
         "Python",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/Active_Inference_for_Fun Tiny, transparent experiments in Active Inference using pymdp Python docxology active-inference bayesian-modeling education free-energy-principle neuroscience pymdp python tutorial fork recent"
+      "content": "docxology/Active_Inference_for_Fun Tiny, transparent experiments in Active Inference using pymdp Python docxology active-inference bayesian-modeling education free-energy-principle neuroscience pymdp python tutorial fork"
     },
     {
       "id": "github-repo:docxology/active_torchference",
@@ -7071,10 +7105,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/babyagi3   docxology agents ai artificial-intelligence autonomous-agents llm python task-planning fork recent"
+      "content": "docxology/babyagi3   docxology agents ai artificial-intelligence autonomous-agents llm python task-planning fork"
     },
     {
       "id": "github-repo:docxology/bdh",
@@ -7487,6 +7520,22 @@
       "content": "docxology/cognitive_case_diagrams  TeX docxology  curated recent"
     },
     {
+      "id": "github-repo:docxology/CogSecSkills",
+      "type": "github_repository",
+      "title": "docxology/CogSecSkills",
+      "url": "https://github.com/docxology/CogSecSkills",
+      "summary": "Multiharness agentic tool-use skills for Cognitive Security & analytic tradecraft — 100 SAT/cogsec skills runnable under Claude Code, Codex, Hermes. Defensive, educational, accountable.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/CogSecSkills Multiharness agentic tool-use skills for Cognitive Security & analytic tradecraft — 100 SAT/cogsec skills runnable under Claude Code, Codex, Hermes. Defensive, educational, accountable. Python docxology agentic-ai claude cognitive-security counterintelligence defensive-security intelligence-analysis multiharness osint structured-analytic-techniques recent"
+    },
+    {
       "id": "github-repo:docxology/cohereants",
       "type": "github_repository",
       "title": "docxology/cohereants",
@@ -7563,10 +7612,9 @@
         "repository",
         "TypeScript",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/crescent-city Complete pipeline for the Crescent City, CA municipal code. TypeScript docxology california civic-tech community crescent-city government municipal-code open-source curated recent"
+      "content": "docxology/crescent-city Complete pipeline for the Crescent City, CA municipal code. TypeScript docxology california civic-tech community crescent-city government municipal-code open-source curated"
     },
     {
       "id": "github-repo:docxology/crescent_city",
@@ -7612,10 +7660,9 @@
         "repository",
         "HTML",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/curriculum Course materials and curriculum for biology, ecology, and Active Inference education HTML docxology active-inference biology course-materials curriculum ecology education open-education teaching curated recent"
+      "content": "docxology/curriculum Course materials and curriculum for biology, ecology, and Active Inference education HTML docxology active-inference biology course-materials curriculum ecology education open-education teaching curated"
     },
     {
       "id": "github-repo:docxology/cursor-boost",
@@ -8065,10 +8112,9 @@
         "repository",
         "Python",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/FEP_RL_VAE A variational autoencoder using reinforcement learning and the free energy principle to show the power of my general_FEP_RL package. Python docxology active-inference bayesian deep-learning free-energy-principle machine-learning python reinforcement-learning variational-autoencoder fork recent"
+      "content": "docxology/FEP_RL_VAE A variational autoencoder using reinforcement learning and the free energy principle to show the power of my general_FEP_RL package. Python docxology active-inference bayesian deep-learning free-energy-principle machine-learning python reinforcement-learning variational-autoencoder fork"
     },
     {
       "id": "github-repo:docxology/firecrawl",
@@ -8146,10 +8192,9 @@
         "repository",
         "Python",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/flybody MuJoCo fruit fly body model and locomotion RL tasks Python docxology computational-biology drosophila fly-brain locomotion mujoco neuroscience reinforcement-learning simulation fork recent"
+      "content": "docxology/flybody MuJoCo fruit fly body model and locomotion RL tasks Python docxology computational-biology drosophila fly-brain locomotion mujoco neuroscience reinforcement-learning simulation fork"
     },
     {
       "id": "github-repo:docxology/foam",
@@ -8390,10 +8435,9 @@
         "repository",
         "TypeScript",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/GitNexus GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration TypeScript docxology browser code-analysis code-exploration developer-tools graph-rag javascript knowledge-graph rag fork recent"
+      "content": "docxology/GitNexus GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration TypeScript docxology browser code-analysis code-exploration developer-tools graph-rag javascript knowledge-graph rag fork"
     },
     {
       "id": "github-repo:docxology/GLOSSOPETRAE",
@@ -8407,10 +8451,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/GLOSSOPETRAE LINGUISTIC ENGINE FOR AI  docxology ai etymology language-model linguistics natural-language-processing nlp python fork recent"
+      "content": "docxology/GLOSSOPETRAE LINGUISTIC ENGINE FOR AI  docxology ai etymology language-model linguistics natural-language-processing nlp python fork"
     },
     {
       "id": "github-repo:docxology/gno",
@@ -9340,9 +9383,10 @@
         "repository",
         "Python",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/Markov_Blanket_Detection  Python docxology  curated"
+      "content": "docxology/Markov_Blanket_Detection  Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/mcp-coq-lsp",
@@ -9942,10 +9986,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/OpenPlanter Open-source smart planting system — IoT sensors, automated irrigation, and sustainable agriculture tools  docxology agriculture arduino iot open-source plants sensors smart-farming sustainability fork recent"
+      "content": "docxology/OpenPlanter Open-source smart planting system — IoT sensors, automated irrigation, and sustainable agriculture tools  docxology agriculture arduino iot open-source plants sensors smart-farming sustainability fork"
     },
     {
       "id": "github-repo:docxology/opentir",
@@ -9959,10 +10002,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/opentir OpenTIR — Open-source tool for multi-repo analysis, code visualization, and software research intelligence Python docxology code-analysis multi-repo open-source python research-tools software-analysis visualization curated recent"
+      "content": "docxology/opentir OpenTIR — Open-source tool for multi-repo analysis, code visualization, and software research intelligence Python docxology code-analysis multi-repo open-source python research-tools software-analysis visualization curated"
     },
     {
       "id": "github-repo:docxology/osc-geo-h3grid-srv",
@@ -10152,10 +10194,9 @@
         "repository",
         "TypeScript",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/Personal_AI_Infrastructure Personal AI Infrastructure for upgrading humans. TypeScript docxology ai-tools automation infrastructure personal-ai productivity python self-improvement fork recent"
+      "content": "docxology/Personal_AI_Infrastructure Personal AI Infrastructure for upgrading humans. TypeScript docxology ai-tools automation infrastructure personal-ai productivity python self-improvement fork"
     },
     {
       "id": "github-repo:docxology/pkl",
@@ -10619,10 +10660,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/SciSciGPT   docxology ai bibliometrics gpt nlp python research science-of-science scientometrics fork recent"
+      "content": "docxology/SciSciGPT   docxology ai bibliometrics gpt nlp python research science-of-science scientometrics fork"
     },
     {
       "id": "github-repo:docxology/service",
@@ -11444,10 +11484,9 @@
         "repository",
         "",
         "docxology",
-        "fork",
-        "recent"
+        "fork"
       ],
-      "content": "docxology/worldmonitor Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface  docxology dashboard data-visualization geopolitics monitoring news-aggregation osint python situational-awareness fork recent"
+      "content": "docxology/worldmonitor Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface  docxology dashboard data-visualization geopolitics monitoring news-aggregation osint python situational-awareness fork"
     },
     {
       "id": "github-repo:docxology/xai-gpt-agent-toolkit",
@@ -31206,7 +31245,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 172 works.",
+      "title": "The curated bibliography contains 173 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31214,12 +31253,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 172 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 173 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 155 per-paper documentation folders.",
+      "title": "The repository contains 156 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31227,7 +31266,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 155 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 156 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31403,7 +31442,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 172 works, 94 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 173 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

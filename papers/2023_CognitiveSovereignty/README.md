@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveSovereignty","abstract":"This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments periodically enter crises, exited by cognitive and material restructuring. Several concordances are drawn ","keywords":["cognitive sovereignty","Agamben","Homo Sacer","Active Inference","state of exception","Thomas Kuhn","paradigm shifts","epistemic agency","biopolitics","bare life"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveSovereignty","abstract":"This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments periodically enter crises, exited by cognitive and material restructuring. Several concordances are drawn ","keywords":["cognitive sovereignty","Agamben","Homo Sacer","Active Inference","state of exception","Thomas Kuhn","paradigm shifts","epistemic agency","biopolitics","bare life"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CEREBRUM","abstract":"CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are treated as case-bearing entities (Nominative, Accusative, Dative, etc.) that assume functional roles within a formal linguistic-type calculus, enabling structured model management and inter-model communication.","keywords":["CEREBRUM","linguistic case systems","Active Inference","Bayesian modeling","model management","case grammar","unified modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CEREBRUM","abstract":"CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are treated as case-bearing entities (Nominative, Accusative, Dative, etc.) that assume functional roles within a formal linguistic-type calculus, enabling structured model management and inter-model communication.","keywords":["CEREBRUM","linguistic case systems","Active Inference","Bayesian modeling","model management","case grammar","unified modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 
@@ -55,3 +55,8 @@
 - `2025_CEREBRUM.pdf` (4,062,779 bytes)
 - `README.md` (1,715 bytes)
 - `SKILL.md` (1,954 bytes)
+
+## Related
+
+- GitHub release: https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.4
+- Zenodo record: https://zenodo.org/records/15231156

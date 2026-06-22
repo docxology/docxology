@@ -147,6 +147,21 @@ ARTIFACTS = [
         "command": "manual review; update data/paired-publication-decisions.json",
     },
     {
+        "name": "Zenodo-only publication backfill",
+        "outputs": [
+            "pages/BIBLIOGRAPHY.md",
+            "papers/<YEAR>_<Slug>/",
+            "papers/paper_metadata.json",
+            "papers/README.md",
+        ],
+        "sources": [
+            "Zenodo Records API",
+            "docs/operations/publication-sync.md",
+            "code/orchestrators/add_zenodo_only.py",
+        ],
+        "command": "python3 code/orchestrators/add_zenodo_only.py <record_id>",
+    },
+    {
         "name": "Domain pages",
         "outputs": ["domains.html", "domain-*.html", "pages/DOMAINS.md"],
         "sources": ["data/works.json", "data/software.json", "code/orchestrators/build_domain_pages.py"],

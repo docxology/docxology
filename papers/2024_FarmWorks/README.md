@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"FarmWorks","abstract":"FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key components include: (1) customizable on-site sensor networks for real-time environmental data gatheri","keywords":["FarmWorks","decentralized AI","precision agriculture","Active Inference","sensor networks","edge computing","farmer autonomy","sustainable agriculture","IoT","community-driven innovation"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"FarmWorks","abstract":"FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key components include: (1) customizable on-site sensor networks for real-time environmental data gatheri","keywords":["FarmWorks","decentralized AI","precision agriculture","Active Inference","sensor networks","edge computing","farmer autonomy","sustainable agriculture","IoT","community-driven innovation"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

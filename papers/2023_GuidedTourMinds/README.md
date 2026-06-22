@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GuidedTourMinds","abstract":"This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology\u2014based on particle dynamics and generative model structure\u2014provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides firs","keywords":["path integrals","particular kinds","mindspace","Active Inference","Free Energy Principle","consciousness","Sloman","non-anthropocentric","sentience taxonomy"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GuidedTourMinds","abstract":"This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology\u2014based on particle dynamics and generative model structure\u2014provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides firs","keywords":["path integrals","particular kinds","mindspace","Active Inference","Free Energy Principle","consciousness","Sloman","non-anthropocentric","sentience taxonomy"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

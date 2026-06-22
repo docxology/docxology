@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BlakeFuller","abstract":"A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, identifying convergences in their approaches to creativity, systems thinking, and human potential. Both figures challenged conventional boundaries between disciplines and proposed integrative frameworks for understanding reality.","keywords":["William Blake","Buckminster Fuller","comprehensivity","design science","prophetic vision","art-science synthesis","52 Living Ideas","juxtaposition"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BlakeFuller","abstract":"A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, identifying convergences in their approaches to creativity, systems thinking, and human potential. Both figures challenged conventional boundaries between disciplines and proposed integrative frameworks for understanding reality.","keywords":["William Blake","Buckminster Fuller","comprehensivity","design science","prophetic vision","art-science synthesis","52 Living Ideas","juxtaposition"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

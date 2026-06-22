@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Symergetics","abstract":"Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implements Quadray coordinates, IVM lattice operations, and symbolic computation tools for exact geometric analysis. Released as open-source software with comprehensive documentation and tests.","keywords":["Symergetics","Synergetics","Buckminster Fuller","rational arithmetic","Quadray coordinates","IVM lattice","symbolic computation","computational geometry"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Symergetics","abstract":"Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implements Quadray coordinates, IVM lattice operations, and symbolic computation tools for exact geometric analysis. Released as open-source software with comprehensive documentation and tests.","keywords":["Symergetics","Synergetics","Buckminster Fuller","rational arithmetic","Quadray coordinates","IVM lattice","symbolic computation","computational geometry"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

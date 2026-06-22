@@ -265,6 +265,27 @@ def test_check_report_rejects_stale_create_new_existing_doi(tmp_path: Path):
         check_report(repo_root=tmp_path)
 
 
+def test_check_report_accepts_applied_create_new_existing_doi(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+    _write_report(
+        tmp_path,
+        _minimal_report_payload(
+            actions=[
+                {
+                    "action_type": "create_new",
+                    "doi": pair.doi,
+                    "title": pair.record.title,
+                }
+            ]
+        )
+        | {"applied": [{"doi": pair.doi, "folder": "2026_NewComputationalProject", "created": True}]},
+    )
+
+    check_report(repo_root=tmp_path)
+
+
 def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
     _write_minimal_repo(tmp_path)
     pair = _pair()

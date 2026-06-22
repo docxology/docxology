@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AntConsciousness","abstract":"Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general.","keywords":["consciousness","ant colony","Ant Colony Test","philosophy of science","social insects","collective cognition","scientific theories of consciousness"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AntConsciousness","abstract":"Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general.","keywords":["consciousness","ant colony","Ant Colony Test","philosophy of science","social insects","collective cognition","scientific theories of consciousness"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

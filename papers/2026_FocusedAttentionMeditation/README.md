@@ -8,7 +8,7 @@
 
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Dynamic Attentional Agents in Focused Attention Meditation","abstract":"A three-level hierarchical framework models attentional dynamics in focused attention (FA) meditation using the Free Energy Principle and Neuronal Packet Hypothesis. Thoughtseeds — transient, agent-like Markov-blanket entities — minimize variational free energy via bidirectional coupling with DMN, VAN, DAN, and FPN. Simulations reproduce expert–novice differences: experts achieve 49% lower free energy during breath focus, suppressed DMN activity, and faster distraction recovery.","keywords":["Active Inference","focused attention meditation","thoughtseeds","Free Energy Principle","hierarchical modeling","expert-novice differences","DMN","predictive processing","contemplative neuroscience"],"author":[{"@type":"Person","name":"P. C. Kavi"},{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"},{"@type":"Person","name":"G. Patow"}],"isPartOf":{"@type":"Book","name":"Active Inference. IWAI 2025","publisher":"Springer","volumeNumber":"2857"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Dynamic Attentional Agents in Focused Attention Meditation","abstract":"A three-level hierarchical framework models attentional dynamics in focused attention (FA) meditation using the Free Energy Principle and Neuronal Packet Hypothesis. Thoughtseeds — transient, agent-like Markov-blanket entities — minimize variational free energy via bidirectional coupling with DMN, VAN, DAN, and FPN. Simulations reproduce expert–novice differences: experts achieve 49% lower free energy during breath focus, suppressed DMN activity, and faster distraction recovery.","keywords":["Active Inference","focused attention meditation","thoughtseeds","Free Energy Principle","hierarchical modeling","expert-novice differences","DMN","predictive processing","contemplative neuroscience"],"author":[{"@type":"Person","name":"P. C. Kavi"},{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"},{"@type":"Person","name":"G. Patow"}],"isPartOf":{"@type":"Book","name":"Active Inference. IWAI 2025","publisher":"Springer","volumeNumber":"2857"}}
 -->
 
 *In: Albarracin, M., et al. (Eds.), Active Inference — IWAI 2025. Communications in Computer and Information Science, vol 2857. Springer, Cham.*
@@ -39,7 +39,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, contemplative neuroscience, and hierarchical modeling.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, contemplative neuroscience, and hierarchical modeling.
 
 ## Citation
 

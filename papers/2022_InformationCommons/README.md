@@ -5,7 +5,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InformationCommons","abstract":"An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency, and collective sensemaking through open standards, decentralized governance, and cognitive security principles.","keywords":["information commons","cognitive security","open standards","trust","governance","decentralized systems","information integrity","collective sensemaking"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InformationCommons","abstract":"An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency, and collective sensemaking through open standards, decentralized governance, and cognitive security principles.","keywords":["information commons","cognitive security","open standards","trust","governance","decentralized systems","information integrity","collective sensemaking"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

@@ -1,43 +1,31 @@
 {
   "title": "The Template Textbook",
-  "version": "0.1",
+  "version": "0.1.1",
   "doi": "10.5281/zenodo.20533125",
   "doi_url": "https://doi.org/10.5281/zenodo.20533125",
-  "zenodo_record": "https://zenodo.org/records/20533126",
-  "record_id": "20533126",
-  "publication_date": "2026-06-03",
+  "zenodo_record": "https://zenodo.org/records/20693022",
+  "record_id": "20693022",
+  "publication_date": "2026",
   "resource_type": {
-    "title": "Book",
+    "title": "Journal article",
     "type": "publication",
-    "subtype": "book"
+    "subtype": "article"
   },
   "creators": [
     {
-      "name": "Friedman, Daniel Ari",
+      "name": "Daniel Ari Friedman",
       "affiliation": "Active Inference Institute",
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.",
-  "keywords": [
-    "open textbook",
-    "modular manuscript",
-    "reproducible publishing",
-    "computational backbone",
-    "Python"
-  ],
+  "description": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.\n\n---\nAssociated artifacts\nGitHub release: v0.1.1 (https://github.com/docxology/template_textbook/releases/tag/v0.1.1)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/20533125\nPDF SHA-256: c6c97f24b860f1972e3437f13ce71c2d967399d6d5d5ded1ba39eae2f38ecc2d",
+  "keywords": [],
   "files": [
     {
-      "name": "template_textbook_v0.1.0_source.zip",
-      "size_bytes": 1511598,
-      "checksum": "md5:f3c7037dd242de7c71fd697b1677e555",
-      "download_url": "https://zenodo.org/api/records/20533126/files/template_textbook_v0.1.0_source.zip/content"
-    },
-    {
-      "name": "template_textbook_combined.pdf",
-      "size_bytes": 1116735,
-      "checksum": "md5:c7b8722bdf917a3d60b5045e7992cb55",
-      "download_url": "https://zenodo.org/api/records/20533126/files/template_textbook_combined.pdf/content"
+      "name": "Friedman_2026_Template_c6c97f24.pdf",
+      "size_bytes": 1122785,
+      "checksum": "md5:f9259e02bbdd177c72245ba45b9f8843",
+      "download_url": "https://zenodo.org/api/records/20693022/files/Friedman_2026_Template_c6c97f24.pdf/content"
     }
   ],
   "related_resources": [
@@ -54,11 +42,10 @@
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
-    "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-04T20:45:07Z",
+  "checked_at": "2026-06-22T23:19:41Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20533125",

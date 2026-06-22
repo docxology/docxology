@@ -12,7 +12,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | Area | Document | What it's for |
 |------|----------|---------------|
 | **Architecture** | [`AGENTS.md`](AGENTS.md) | Repo structure: bibliography vs paper folders, generated discovery-layer rebuild ordering, volatile-count policy |
-| **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake runbook |
+| **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
 | **SEO** | [`seo/canonical-policy.md`](seo/canonical-policy.md) | Redirect + canonical URL policy; permanent work-URL contract (GitHub Pages) |
 | **SEO** | [`seo/gsc-followup.md`](seo/gsc-followup.md) | Google Search Console manual follow-up runbook |
 | **Design** | [`design/design-system.md`](design/design-system.md) | Color/type tokens, accessibility, layout, nav source-of-truth |

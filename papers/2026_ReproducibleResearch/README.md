@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A template/ approach to Reproducible Generative Research","abstract":"template/ applies the principle of Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable. Built on a Two-Layer Architecture separating 12 reusable infrastructure subpackages from self-contained project workspaces, connected by an eight-stage build pipeline.","keywords":["reproducible research","infrastructure as code","build pipeline","Zero-Mock testing","steganographic watermarking","AI-agent documentation","Model Context Protocol","cryptographic provenance","literate programming","open science"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"A template/ approach to Reproducible Generative Research","abstract":"template/ applies the principle of Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable. Built on a Two-Layer Architecture separating 12 reusable infrastructure subpackages from self-contained project workspaces, connected by an eight-stage build pipeline.","keywords":["reproducible research","infrastructure as code","build pipeline","Zero-Mock testing","steganographic watermarking","AI-agent documentation","Model Context Protocol","cryptographic provenance","literate programming","open science"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 ## Abstract
@@ -38,7 +38,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on reproducible research, build pipelines, and AI-agent documentation.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on reproducible research, build pipelines, and AI-agent documentation.
 
 ## Citation
 

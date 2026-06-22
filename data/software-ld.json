@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "60 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "61 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -303,6 +303,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "CogSecSkills",
+            "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/CogSecSkills",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.20804585"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "template_madlib",
             "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/template_madlib",
@@ -371,7 +383,7 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "cohereants",
-            "description": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo",
+            "description": "Computational research on insect infrared sensing and olfaction modeling ·  · Zenodo · Zenodo",
             "codeRepository": "https://github.com/docxology/cohereants",
             "author": {
                 "@type": "Person",
@@ -548,7 +560,7 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "grateful_data",
-            "description": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo",
+            "description": "The Music Never Stopped citation-bound Grateful Dead data compendium ·  · Zenodo · Zenodo",
             "codeRepository": "https://github.com/docxology/grateful_data",
             "author": {
                 "@type": "Person",
@@ -967,7 +979,7 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "COGANT",
-            "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo",
+            "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo · Zenodo",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/COGANT",
             "author": {
                 "@type": "Person",
@@ -979,7 +991,7 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "on_policy_distillation",
-            "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo",
+            "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo · Zenodo",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
             "author": {
                 "@type": "Person",

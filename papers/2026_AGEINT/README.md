@@ -35,6 +35,8 @@ agentic intelligence · intelligence tradecraft · cognitive security · structu
 
 ## Related
 
+- GitHub release: https://github.com/docxology/AGEINT/releases/tag/v0.1.0
+
 - Zenodo record: https://zenodo.org/records/20732275
 - Code repository: https://github.com/docxology/AGEINT
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

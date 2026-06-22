@@ -50,6 +50,9 @@ active inference · pymdp · sophisticated inference · generalized notation not
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_active_inference/releases/tag/v0.3.1
+- Zenodo record: https://zenodo.org/records/20693424
+
 - Zenodo record: https://zenodo.org/records/20420352
 - GitHub release: https://github.com/docxology/template_active_inference/releases/tag/v0.3.0
 - Source repository: https://github.com/docxology/template_active_inference

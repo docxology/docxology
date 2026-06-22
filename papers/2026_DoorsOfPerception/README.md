@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DoorsOfPerception","abstract":"The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atlas' sketching how Blake's theory of seeing maps onto prediction error minimization, Markov blankets, hierarchical generative models, and the principle that all perception is active inference.","keywords":["William Blake","Active Inference","perception","prediction","Thematic Atlas","prophetic vision","generative models","Markov blankets"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DoorsOfPerception","abstract":"The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atlas' sketching how Blake's theory of seeing maps onto prediction error minimization, Markov blankets, hierarchical generative models, and the principle that all perception is active inference.","keywords":["William Blake","Active Inference","perception","prediction","Thematic Atlas","prophetic vision","generative models","Markov blankets"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

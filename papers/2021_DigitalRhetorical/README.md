@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DigitalRhetorical","abstract":"This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational analysis of digital discourse.","keywords":["digital rhetoric","image memes","DRE3 model","narrative ecosystems","rhetorical ecology","sensemaking","computational discourse analysis"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"DigitalRhetorical","abstract":"This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational analysis of digital discourse.","keywords":["digital rhetoric","image memes","DRE3 model","narrative ecosystems","rhetorical ecology","sensemaking","computational discourse analysis"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

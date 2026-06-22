@@ -1,7 +1,7 @@
 ---
 name: "CaliforniaPublicRecords"
 description: "Use for California Public Records: A Technical and Legal Reference for the Post-AB 473 Era, a Zenodo publication with concept DOI 10.5281/zenodo.20789899."
-tags: ['california-public-records-act', 'open-data', 'ckan', 'socrata', 'arcgis', 'cognitive-security', 'civic-technology']
+tags: ["california-public-records-act", "open-data", "ckan", "socrata", "arcgis", "cognitive-security", "civic-technology"]
 ---
 
 # California Public Records: A Technical and Legal Reference for the Post-AB 473 Era

@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PPPiP","abstract":"Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship development. PPPiP combines the advantages of individuated artistic practice with the established framew","keywords":["PPPiP","art therapy","improvisation","intimate relationships","affective neuroscience","creativity","dyadic interaction","sexology","controlled novelty"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PPPiP","abstract":"Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship development. PPPiP combines the advantages of individuated artistic practice with the established framew","keywords":["PPPiP","art therapy","improvisation","intimate relationships","affective neuroscience","creativity","dyadic interaction","sexology","controlled novelty"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

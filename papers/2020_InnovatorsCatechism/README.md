@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InnovatorsCatechism","abstract":"Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism\u2014a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.","keywords":["operations orders","innovation teams","Innovator's Catechism","team alignment","military transfer","organizational design","hackathons"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InnovatorsCatechism","abstract":"Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism\u2014a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.","keywords":["operations orders","innovation teams","Innovator's Catechism","team alignment","military transfer","organizational design","hackathons"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 

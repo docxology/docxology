@@ -5,9 +5,9 @@ Documentation index for all publications. Each folder contains:
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
 
-For new GitHub + Zenodo releases, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
+For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (155)
+## Papers (156)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -166,6 +166,7 @@ For new GitHub + Zenodo releases, use the canonical publication intake runbook: 
 | 153 | [2026_PolicyDistillationAs](2026_PolicyDistillationAs/) | ✅ | 2026 | PolicyDistillationAs |
 | 154 | [2026_TemplateMadlib](2026_TemplateMadlib/) | ✅ | 2026 | TemplateMadlib |
 | 155 | [2026_CaliforniaPublicRecords](2026_CaliforniaPublicRecords/) | ✅ | 2026 | CaliforniaPublicRecords |
+| 156 | [2026_CogSecSkills](2026_CogSecSkills/) | ✅ | 2026 | CogSecSkills |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

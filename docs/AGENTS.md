@@ -2,7 +2,7 @@
 
 Reserved for repository-level documentation beyond the `pages/` hub (architecture notes, runbooks, migration logs). For the human-facing navigation index of this folder, see [`README.md`](README.md); docs are grouped under `operations/`, `seo/`, `design/`, `security/`, and `releases/` (architecture notes live in this file).
 
-See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`operations/publication-sync.md`](operations/publication-sync.md) for the GitHub + Zenodo publication intake workflow. Add long-form architecture or runbooks under the matching topic directory.
+See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index.html`, `pages/PROFILE.md`, `README` Educator bullet), and maintenance log. Indexed paper folders are listed in [`papers/README.md`](../papers/README.md). Use [`operations/publication-sync.md`](operations/publication-sync.md) for GitHub + Zenodo paired publication intake, Zenodo-only backfill, and software-only GitHub record triage. Add long-form architecture or runbooks under the matching topic directory.
 
 **Volatile counts:** do not repeat current totals in this file or root `README.md`. Link to [`reports/current_counts.md`](../reports/current_counts.md), [`data/current-counts.json`](../data/current-counts.json), and the canonical source tables instead.
 
@@ -23,7 +23,7 @@ Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data
 4. **Resume/CV edits** — `build_resume.py --all` after `resume/source.json`, bibliography/software exports, Scholar snapshot, or claim data changes.
 5. **Changelog or manifest changes** — `build_updates_page.py` / `build_generated_manifest.py` when public changelog or generated-artifact lists change.
 6. **Freshness and QA** — public-source snapshots, external-link checks, live-site verification, accessibility/visual QA under [`reports/`](../reports/); triage bot-protection (403/429) before rewriting site copy based on checker output alone.
-7. **Health gate** — `code/orchestrators/validate_repo.py` before declaring the repo healthy.
+7. **Health gate** — `code/orchestrators/validate_repo.py` before declaring the repo healthy; it includes publication-skill coverage/frontmatter checks through `code/orchestrators/audit_publication_skills.py --check`.
 
 ## Canonical URLs and reports
 

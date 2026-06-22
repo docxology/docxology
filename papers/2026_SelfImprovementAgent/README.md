@@ -33,5 +33,8 @@ self-improvement agents · benchmark harness · reproducible research · agent e
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_sia/releases/tag/v0.1.1
+- Zenodo record: https://zenodo.org/records/20693012
+
 - Zenodo record: https://zenodo.org/records/20453880
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

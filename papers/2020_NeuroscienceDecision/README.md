@@ -7,7 +7,7 @@
 ---
 <!-- Schema.org structured data for search engines -->
 <!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NeuroscienceDecision","abstract":"In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an integrative approach drawing on multiple types of experiments and model systems.","keywords":["decision making","computational neuroscience","Bayesian brain","free will","mental health","attention","neural circuits"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://docxology.github.io/docxology/"}}
+{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NeuroscienceDecision","abstract":"In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an integrative approach drawing on multiple types of experiments and model systems.","keywords":["decision making","computational neuroscience","Bayesian brain","free will","mental health","attention","neural circuits"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
 -->
 
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Consulting & Tutoring
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://docxology.github.io/docxology/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
 
 ## Citation
 
