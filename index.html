@@ -286,7 +286,7 @@
                 </div>
                 <aside class="sidebar">
                     <div class="sidebar-card">
-                        <h4>Education</h4>
+                        <h3>Education</h3>
                         <ul>
                             <li><strong>PhD</strong> Ecology &amp; Evolution — Stanford (2014–2019)</li>
                             <li><strong>NSF Postdoc</strong> — UC Davis (2020–2023)</li>
@@ -294,7 +294,7 @@
                         </ul>
                     </div>
                     <div class="sidebar-card">
-                        <h4>Organizations</h4>
+                        <h3>Organizations</h3>
                         <ul>
                             <li><strong>Active Inference Institute</strong> — President &amp; Co-founder</li>
                             <li><strong>COGSEC.org</strong> — Honorary Co-founder</li>
@@ -525,5 +525,6 @@
         navigator.serviceWorker.register('/sw.js').catch(() => {});
     }
     </script>
+<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
 </body>
 </html>

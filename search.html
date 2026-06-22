@@ -106,7 +106,7 @@
             <div class="section-divider"></div>
         </header>
         <section class="search-panel" aria-label="Site search">
-            <input id="q" class="search-input" type="search" autocomplete="off" placeholder="Search Active Inference, ants, Curio Cards, CEREBRUM..." autofocus>
+            <input id="q" class="search-input" type="search" aria-label="Search publications and works" autocomplete="off" placeholder="Search Active Inference, ants, Curio Cards, CEREBRUM..." autofocus>
             <div id="filters" class="search-controls" aria-label="Result type filters"></div>
         </section>
         <section class="result-list" id="results" aria-live="polite"></section>
@@ -178,5 +178,6 @@
                 results.innerHTML = '<p class="text-center text-muted mt-2">Search index unavailable.</p>';
             });
     </script>
+<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
 </body>
 </html>

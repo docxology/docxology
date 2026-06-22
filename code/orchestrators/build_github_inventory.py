@@ -357,7 +357,7 @@ def render_html(payload: dict[str, Any]) -> str:
                 <div class="section-divider"></div>
             </div>
             <div class="inventory-controls">
-                <input id="inventorySearch" class="inventory-search" type="search" placeholder="Search repositories, languages, descriptions, topics..." autocomplete="off">
+                <input id="inventorySearch" class="inventory-search" type="search" aria-label="Search repositories" placeholder="Search repositories, languages, descriptions, topics..." autocomplete="off">
                 <select id="inventoryLanguage" class="inventory-select" aria-label="Filter by language">
                     <option value="">All languages</option>
 {language_options}
@@ -430,7 +430,7 @@ def render_html(payload: dict[str, Any]) -> str:
         languageFilter.addEventListener('change', applyFilters);
         applyFilters();
     </script>
-</body>
+<script>/*menu-esc*/(function(){{if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{var m=document.querySelector(".nav-links.open");if(m){{m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){{b.setAttribute("aria-expanded","false");b.focus();}}}}}}}});}})();</script></body>
 </html>
 """
 

@@ -148,7 +148,7 @@
                 <div class="section-divider"></div>
             </div>
             <div class="inventory-controls">
-                <input id="inventorySearch" class="inventory-search" type="search" placeholder="Search repositories, languages, descriptions, topics..." autocomplete="off">
+                <input id="inventorySearch" class="inventory-search" type="search" aria-label="Search repositories" placeholder="Search repositories, languages, descriptions, topics..." autocomplete="off">
                 <select id="inventoryLanguage" class="inventory-select" aria-label="Filter by language">
                     <option value="">All languages</option>
                 <option value="c">c</option>
@@ -3166,7 +3166,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="note">Generated at 2026-06-22T02:37:00Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
+            <p class="note">Generated at 2026-06-22T05:32:51Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -3214,5 +3214,5 @@
         languageFilter.addEventListener('change', applyFilters);
         applyFilters();
     </script>
-</body>
+<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script></body>
 </html>

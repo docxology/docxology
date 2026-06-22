@@ -71,6 +71,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <style>
+        /* art.html is an intentionally BESPOKE gallery page: a distinct brutalist/
+           saturated identity (pure-red accents, neutral grays, double borders,
+           Georgia logo). Its tokens deliberately diverge from the site-wide
+           style.css palette — do NOT unify them (see docs/design/design-system.md). */
         :root {
             --bg:#050505; --bg2:#090909; --bg3:rgba(17,17,17,0.94);
             --fg:#f2f2f2; --fg2:#d2d2d2; --fg3:#888;
@@ -221,9 +225,9 @@
 <div class="toolbar">
     <div class="search-wrap">
         <span class="search-icon">Search</span>
-        <input type="text" id="searchInput" placeholder="Search by title, tag, description…" oninput="filterGallery()">
+        <input type="text" id="searchInput" aria-label="Search artworks" placeholder="Search by title, tag, description…" oninput="filterGallery()">
     </div>
-    <select class="sort-select" id="sortSelect" onchange="filterGallery()">
+    <select class="sort-select" id="sortSelect" onchange="filterGallery()" aria-label="Sort artworks">
         <option value="newest">Newest First</option>
         <option value="oldest">Oldest First</option>
         <option value="title">A → Z</option>

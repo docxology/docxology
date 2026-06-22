@@ -33,6 +33,9 @@ class PageParser(HTMLParser):
         self.images_without_alt: list[str] = []
         self.buttons_without_label = 0
         self._button_stack: list[dict] = []
+        self.headings: list[int] = []
+        self.label_fors: set[str] = set()
+        self.form_controls: list[dict] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attr = {k: v or "" for k, v in attrs}
@@ -54,6 +57,18 @@ class PageParser(HTMLParser):
             self.og_image = True
         elif tag == "img" and not attr.get("alt"):
             self.images_without_alt.append(attr.get("src", "unknown"))
+        elif tag in ("h1", "h2", "h3", "h4", "h5", "h6"):
+            self.headings.append(int(tag[1]))
+        elif tag == "label" and attr.get("for"):
+            self.label_fors.add(attr["for"])
+        elif tag in ("input", "select", "textarea"):
+            if attr.get("type", "").lower() not in ("hidden", "submit", "button", "reset", "image"):
+                self.form_controls.append(
+                    {
+                        "id": attr.get("id", ""),
+                        "has_label": bool(attr.get("aria-label") or attr.get("aria-labelledby") or attr.get("title")),
+                    }
+                )
         elif tag == "button":
             self._button_stack.append(
                 {
@@ -94,6 +109,12 @@ def audit_page(path: Path) -> dict:
         "buttons_labelled": parser.buttons_without_label == 0,
         "focus_visible_css": "focus-visible" in (REPO_ROOT / "style.css").read_text(encoding="utf-8"),
         "reduced_motion_css": "prefers-reduced-motion" in (REPO_ROOT / "style.css").read_text(encoding="utf-8"),
+        "single_h1": parser.headings.count(1) == 1,
+        "no_heading_skips": (not parser.headings or parser.headings[0] == 1)
+        and all(parser.headings[i] <= parser.headings[i - 1] + 1 for i in range(1, len(parser.headings))),
+        "form_controls_labelled": all(
+            c["has_label"] or (c["id"] and c["id"] in parser.label_fors) for c in parser.form_controls
+        ),
     }
     return {
         "path": str(path.relative_to(REPO_ROOT)),

@@ -214,7 +214,7 @@ def page_head(
         .domain-hero p{{color:var(--text-secondary);max-width:760px;margin:0 auto;line-height:1.7}}
         .mini-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}}
         .mini-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem}}
-        .mini-card h3{{font-size:1rem;margin-bottom:.35rem}}
+        .mini-card h2,.mini-card h3{{font-size:1rem;margin-bottom:.35rem;font-weight:700}}
         .mini-card p,.mini-card li{{font-size:.86rem;color:var(--text-secondary);line-height:1.6}}
         .work-list{{display:grid;gap:.75rem}}
         .work-row{{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}
@@ -244,7 +244,7 @@ def page_footer() -> str:
         </div>
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
-</body>
+<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script></body>
 </html>
 """
 
@@ -315,9 +315,9 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
     <main id="main" class="main">
         <section class="section">
             <div class="mini-grid">
-                <div class="mini-card"><h3>{len(domain_works)} Works</h3><p>Curated works in this domain from the unified bibliography.</p></div>
-                <div class="mini-card"><h3>{len(domain_repos)} Related Repositories</h3><p>Selected software entries connected to this domain.</p></div>
-                <div class="mini-card"><h3>Collaborator Context</h3><p>{collaborators_html}</p></div>
+                <div class="mini-card"><h2>{len(domain_works)} Works</h2><p>Curated works in this domain from the unified bibliography.</p></div>
+                <div class="mini-card"><h2>{len(domain_repos)} Related Repositories</h2><p>Selected software entries connected to this domain.</p></div>
+                <div class="mini-card"><h2>Collaborator Context</h2><p>{collaborators_html}</p></div>
             </div>
         </section>
         <section class="section section-alt">
@@ -363,7 +363,7 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
         repo_count = len(select_repositories(repos, config.repo_names))
         cards.append(
             f"""                <article class="mini-card">
-                    <h3><a href="domain-{config.slug}.html">{h(config.short_title)}</a></h3>
+                    <h2><a href="domain-{config.slug}.html">{h(config.short_title)}</a></h2>
                     <p>{h(config.description)}</p>
                     <p class="text-muted">{count} works · {repo_count} selected repos</p>
                 </article>"""
