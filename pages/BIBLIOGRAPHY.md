@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**173 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**174 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**152** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**153** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **173** works in the table below **·** **156** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **174** works in the table below **·** **157** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -211,6 +211,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 172 | 2026 | 💻 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | *Zenodo* | [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638) | [📁](../papers/2026_TemplateMadlib/) |
 | 173 | 2026 | 🛡️ | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | *Zenodo* | [10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899) | [📁](../papers/2026_CaliforniaPublicRecords/) |
 | 174 | 2026 | 💻 | Paper | CogSecSkills: Multiharness Cognitive Security Skill Library | *Zenodo* | [10.5281/zenodo.20804585](https://doi.org/10.5281/zenodo.20804585) | [📁](../papers/2026_CogSecSkills/) |
+| 175 | 2026 | 💻 | Paper | Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction | *Zenodo* | [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) | [📁](../papers/2026_RealizingEmptiness/) |
 ---
 
 ## Domain Index

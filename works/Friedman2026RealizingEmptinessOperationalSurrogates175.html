@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction — Daniel Ari Friedman</title>
+    <meta name="description" content="This project operationalizes the 2026 preprint &quot;There is no self-evidence: A physics of emptiness realisation&quot; as a source-anchored software artifact…">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <link rel="alternate" type="text/x-bibtex" href="/bibliography.bib" title="BibTeX bibliography">
+    <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction">
+    <meta property="og:description" content="This project operationalizes the 2026 preprint &quot;There is no self-evidence: A physics of emptiness realisation&quot; as a source-anchored software artifact…">
+    <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction — Daniel Ari Friedman">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction">
+    <meta name="twitter:description" content="This project operationalizes the 2026 preprint &quot;There is no self-evidence: A physics of emptiness realisation&quot; as a source-anchored software artifact…">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta name="twitter:image:alt" content="Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction — Daniel Ari Friedman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+        .work-hero{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
+        .work-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}
+        .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+        .meta-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
+        .meta-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
+        .cite-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7;color:var(--text-secondary)}
+        .work-detail{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
+        .work-detail ul{margin-left:1.2rem}
+        .keyword-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
+        .keyword-row span{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}
+        .breadcrumb{max-width:960px;margin:1.4rem auto 0;padding:0 2rem}
+        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
+        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
+        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
+        .breadcrumb a:hover{text-decoration:underline}
+        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+        .related-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+        .related-list li{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
+        .related-list a{color:var(--silver-bright);text-decoration:none}
+        .related-list a:hover{text-decoration:underline}
+    </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "@id": "https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html#work",
+    "name": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+    "headline": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+    "author": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+    },
+    "datePublished": "2026",
+    "url": "https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html",
+    "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html",
+    "isPartOf": {
+        "@id": "https://danielarifriedman.com/#website"
+    },
+    "about": [
+        {
+            "@type": "DefinedTerm",
+            "name": "Computational"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Paper"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "active inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Bayesian model reduction"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "quantum reference frames"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "emptiness"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "formal methods"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "pymdp"
+        }
+    ],
+    "genre": "Paper",
+    "inLanguage": "en",
+    "citation": "Friedman, Daniel Ari. 2026. Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction. Zenodo.",
+    "sameAs": [
+        "https://doi.org/10.5281/zenodo.20834846",
+        "https://doi.org/10.5281/zenodo.20834846"
+    ],
+    "image": "https://danielarifriedman.com/og-publications.jpg",
+    "identifier": [
+        {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.20834846",
+            "url": "https://doi.org/10.5281/zenodo.20834846"
+        },
+        {
+            "@type": "PropertyValue",
+            "propertyID": "Citation key",
+            "value": "Friedman2026RealizingEmptinessOperationalSurrogates175"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zenodo"
+    },
+    "abstract": "This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations, positive-control-style finite mechanism checks, and discriminating tests that reject stronger readings when a control is perturbed. The formal layer maps the paper's quantum free-energy principle (qFEP) and quantum reference frame (QRF) equations into finite operational surrogates, bridging each paper equation to a specific software artifact. The computed artifacts are a suite of finite quantum-information and contextuality audits — spanning two-qubit separability and entanglement entropy, Bell and",
+    "keywords": [
+        "active inference",
+        "Bayesian model reduction",
+        "quantum reference frames",
+        "emptiness",
+        "formal methods",
+        "pymdp"
+    ],
+    "description": "active inference Bayesian model reduction quantum reference frames emptiness formal methods",
+    "hasPart": {
+        "@type": "CreativeWork",
+        "name": "Local paper documentation",
+        "url": "https://github.com/docxology/docxology/tree/main/papers/2026_RealizingEmptiness"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://danielarifriedman.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Works",
+            "item": "https://danielarifriedman.com/works/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+            "item": "https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../publications.html">Publications</a>
+            <a href="../works/" class="active">Works</a>
+            <a href="../domains.html">Domains</a>
+            <a href="../software.html">Software</a>
+            <a href="../videos.html">Videos</a>
+            <a href="../search.html">Search</a>
+            <a href="../catalog.html">Data Catalog</a>
+            <a href="../cite-verify.html">Cite</a>
+            <a href="../discovery.html">Discovery</a>
+        </div>
+    </nav>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="../index.html">Home</a></li><li><a href="../works/">Works</a></li><li aria-current="page">Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction</li></ol>
+    </nav>
+    <header class="work-hero">
+        <p class="eyebrow">Computational · Paper · 2026</p>
+        <h1>Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction</h1>
+        <p class="sub">Zenodo</p>
+    </header>
+    <main id="main" class="main">
+        <section class="section">
+            <div class="meta-grid">
+                <div class="meta-card"><strong>Catalog Row</strong>175</div>
+                <div class="meta-card"><strong>Citation Key</strong>Friedman2026RealizingEmptinessOperationalSurrogates175</div>
+                <div class="meta-card"><strong>Paper Folder</strong>Available</div>
+                <div class="meta-card"><strong>DOI</strong><a href="https://doi.org/10.5281/zenodo.20834846">10.5281/zenodo.20834846</a></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
+            <div class="work-detail">
+                <p>This project operationalizes the 2026 preprint &quot;There is no self-evidence: A physics of emptiness realisation&quot; as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations, positive-control-style finite mechanism checks, and discriminating tests that reject stronger readings when a control is perturbed. The formal layer maps the paper&#x27;s quantum free-energy principle (qFEP) and quantum reference frame (QRF) equations into finite operational surrogates, bridging each paper equation to a specific software artifact. The computed artifacts are a suite of finite quantum-information and contextuality audits — spanning two-qubit separability and entanglement entropy, Bell and</p>
+                <div class="keyword-row"><span>active inference</span><span>Bayesian model reduction</span><span>quantum reference frames</span><span>emptiness</span><span>formal methods</span><span>pymdp</span></div>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
+            <div class="meta-grid">
+                <div class="work-detail"><strong>Findings / Concepts</strong><ul><li>active inference</li><li>Bayesian model reduction</li><li>quantum reference frames</li><li>emptiness</li><li>formal methods</li></ul></div>
+                <div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Not yet summarized.</li></ul></div>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>
+            <div class="cite-box">Friedman, Daniel Ari. 2026. Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction. Zenodo.</div>
+            <p class="text-center mt-2">
+                <a class="btn btn-gold" href="https://doi.org/10.5281/zenodo.20834846">Primary source</a>
+                <a class="btn btn-outline" href="../papers/2026_RealizingEmptiness/">Documentation</a>
+                <a class="btn btn-outline" href="https://github.com/docxology/realizing_emptiness">Source repository</a>
+                <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-header"><h2>Related in Computational</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
+            <ul class="related-list"><li><a href="Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html">CogSecSkills: Multiharness Cognitive Security Skill Library</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026TemplateMadlibDeterministicToken172.html">Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026AGEINTAgenticIntelligence170.html">AGEINT: Agentic Intelligence</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026COGANTDeterministicCodebaseGNN169.html">COGANT: Deterministic Codebase-to-GNN Translation</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026ENTOENcryptedTypedOmnitrack167.html">ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026DemoCreateDeclarativeAudioVisual166.html">DemoCreate: Declarative Audio-Visual Demo Generation for Software</a><span class="muted"> · 2026</span></li></ul>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
+    </footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T23:19:46Z",
+  "generated_at": "2026-06-24T23:18:17Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 173,
+  "count": 174,
   "works": [
     {
       "num": 1,
@@ -2423,6 +2423,20 @@
       "url": "https://doi.org/10.5281/zenodo.20804585",
       "doi": "10.5281/zenodo.20804585",
       "docs_path": "papers/2026_CogSecSkills/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 175,
+      "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20834846",
+      "doi": "10.5281/zenodo.20834846",
+      "docs_path": "papers/2026_RealizingEmptiness/",
       "has_paper_folder": true
     }
   ]

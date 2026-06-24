@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T23:34:23Z",
+  "generated_at": "2026-06-24T23:22:02Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1827,
+  "count": 1828,
   "items": [
     {
       "id": "page:home",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-22.json",
+      "url": "/reports/asset_size_2026-06-24.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-22.json",
+      "url": "/reports/live_site_verification_2026-06-24.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4189,6 +4189,28 @@
         "multiharness"
       ],
       "content": "CogSecSkills: Multiharness Cognitive Security Skill Library Zenodo 10.5281/zenodo.20804585 Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174 Computational Paper CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open repository from github.com/docxology/CogSecSkills; the motivation is an information environment in which mis-, dis-, and malinformation are analytically distinct but operationally entangled, false content can diffuse rapidly at platform scale, and credible source evaluation increasingly demands explicit expert practice rather than page-bound reading alone, so that agents asked to weigh competing hypotheses, trace provenance, or critically review a claim need a repeatable procedure and a stable tool-use contract rather than improvisation. The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognit cognitive security agent skills analytic tradecraft structured analytic techniques multiharness cognitive security agent skills analytic tradecraft structured analytic techniques multiharness"
+    },
+    {
+      "id": "work:Friedman2026RealizingEmptinessOperationalSurrogates175",
+      "type": "work",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20834846",
+      "summary": "This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for predi",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "active inference",
+        "Bayesian model reduction",
+        "quantum reference frames",
+        "emptiness",
+        "formal methods",
+        "pymdp"
+      ],
+      "content": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction Zenodo 10.5281/zenodo.20834846 Friedman2026RealizingEmptinessOperationalSurrogates175 Computational Paper This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations, positive-control-style finite mechanism checks, and discriminating tests that reject stronger readings when a control is perturbed. The formal layer maps the paper's quantum free-energy principle (qFEP) and quantum reference frame (QRF) equations into finite operational surrogates, bridging each paper equation to a specific software artifact. The computed artifacts are a suite of finite quantum-information and contextuality audits — spanning two-qubit separability and entanglement entropy, Bell and active inference Bayesian model reduction quantum reference frames emptiness formal methods pymdp active inference Bayesian model reduction quantum reference frames emptiness formal methods"
     },
     {
       "id": "software:docxology:template",
@@ -31245,7 +31267,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 173 works.",
+      "title": "The curated bibliography contains 174 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31253,12 +31275,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 173 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 174 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 156 per-paper documentation folders.",
+      "title": "The repository contains 157 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31266,7 +31288,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 156 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 157 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31442,7 +31464,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 173 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 174 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

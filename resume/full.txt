@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-06-22T23:34:22Z
+Generated: 2026-06-24T23:19:36Z
 
-Current public metrics: 173 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 174 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (173)
+WORKS AND PUBLICATIONS (174)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -337,6 +337,7 @@ WORKS AND PUBLICATIONS (173)
 [172] 2026 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | Zenodo | 10.5281/zenodo.20786638
 [173] 2026 | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | Zenodo | 10.5281/zenodo.20789899
 [174] 2026 | Paper | CogSecSkills: Multiharness Cognitive Security Skill Library | Zenodo | 10.5281/zenodo.20804585
+[175] 2026 | Paper | Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction | Zenodo | 10.5281/zenodo.20834846
 
 SOFTWARE (95)
 -------------

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T23:19:46Z",
+  "generated_at": "2026-06-24T23:18:17Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 173,
+  "count": 174,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3882,6 +3882,27 @@
       ],
       "methods": [],
       "source": "papers/2026_CogSecSkills/README.md"
+    },
+    "Friedman2026RealizingEmptinessOperationalSurrogates175": {
+      "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+      "abstract": "This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations, positive-control-style finite mechanism checks, and discriminating tests that reject stronger readings when a control is perturbed. The formal layer maps the paper's quantum free-energy principle (qFEP) and quantum reference frame (QRF) equations into finite operational surrogates, bridging each paper equation to a specific software artifact. The computed artifacts are a suite of finite quantum-information and contextuality audits — spanning two-qubit separability and entanglement entropy, Bell and",
+      "keywords": [
+        "active inference",
+        "Bayesian model reduction",
+        "quantum reference frames",
+        "emptiness",
+        "formal methods",
+        "pymdp"
+      ],
+      "findings": [
+        "active inference",
+        "Bayesian model reduction",
+        "quantum reference frames",
+        "emptiness",
+        "formal methods"
+      ],
+      "methods": [],
+      "source": "papers/2026_RealizingEmptiness/README.md"
     }
   }
 }

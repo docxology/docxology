@@ -2056,3 +2056,15 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 174; docs: papers/2026_CogSecSkills/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction
+T2  - Zenodo
+DO  - 10.5281/zenodo.20834846
+UR  - https://doi.org/10.5281/zenodo.20834846
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 175; docs: papers/2026_RealizingEmptiness/
+ER  -

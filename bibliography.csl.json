@@ -4306,5 +4306,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20804585",
     "URL": "https://doi.org/10.5281/zenodo.20804585"
+  },
+  {
+    "id": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+    "type": "article-journal",
+    "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 175; docs: papers/2026_RealizingEmptiness/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20834846",
+    "URL": "https://doi.org/10.5281/zenodo.20834846"
   }
 ]
