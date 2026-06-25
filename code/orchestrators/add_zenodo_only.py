@@ -19,6 +19,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+import subprocess
 import sys
 import urllib.request
 from pathlib import Path
@@ -375,6 +376,9 @@ def refresh_papers_agents() -> None:
 
 
 def main(argv: list[str]) -> int:
+    # --no-regenerate skips the post-add local rebuild (e.g. when batching several adds).
+    regenerate = "--no-regenerate" not in argv
+    argv = [a for a in argv if a != "--no-regenerate"]
     overrides = {}
     ids = []
     for a in argv:
@@ -417,6 +421,19 @@ def main(argv: list[str]) -> int:
         print(f"added #{num} [{domain} {typ}] {folder}  <- {title[:55]}")
     refresh_papers_agents()
     print(f"\n{len(added)} record(s) added.")
+
+    # Close the partial-regeneration gap: a Zenodo-only add touches the bibliography and
+    # paper folders but leaves works.json, counts, agent data, pages, search/feed/sitemap,
+    # and the manifest stale. Rebuild the local generated layer in one dependency-ordered
+    # pass (same driver the publication-sync runbook documents). Network freshness and the
+    # live-site snapshot remain a deliberate follow-up.
+    if added and regenerate:
+        print("\nRegenerating local generated layer (regenerate_all.py)...")
+        subprocess.run(
+            ["python3", "code/orchestrators/regenerate_all.py"],
+            cwd=REPO_ROOT, check=True,
+        )
+        print("Run `verify_live_site.py` (if counts changed) then `validate_repo.py` before committing.")
     return 0
 
 

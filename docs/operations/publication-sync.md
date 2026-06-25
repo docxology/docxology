@@ -146,7 +146,7 @@ uv run python3 code/orchestrators/add_zenodo_only.py <record_id>:💻
 
 The helper fetches Zenodo metadata, creates the paper folder, downloads the first available PDF, appends the bibliography and papers index rows, and updates `papers/paper_metadata.json`. It does not replace review: confirm authorship, type, domain, title, DOI, and whether the record is a version of an already represented work before running it.
 
-After a Zenodo-only add, run the regeneration and validation commands below. If the record also represents software, update [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md), then run `sync_software_html.py --apply` and `export_agent_data.py` before the broad validation gate.
+After adding records it runs [`regenerate_all.py`](#regenerate-dependent-surfaces) automatically to rebuild the local generated layer (pass `--no-regenerate` to defer, e.g. when batching several adds). You still owe the network/validation follow-ups: refresh the live-site snapshot if counts changed, then run `validate_repo.py`. If the record also represents software, update [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and re-run `regenerate_all.py` before the broad validation gate.
 
 ## GitHub-Only Records
 
@@ -202,6 +202,24 @@ total). If `validate_repo.py` still reports `Stale generated <file>`, run the ma
 generator from [`GENERATED.md`](../../GENERATED.md) and re-run `regenerate_all.py`.
 Regenerate [`sitemap.xml`](../../sitemap.xml) **after committing** (its `<lastmod>` is
 derived from git commit dates) — see [Acceptance Checks](#acceptance-checks).
+
+## Reports Retention
+
+`visual_qa.py` and `browser_smoke.py` write a fresh dated screenshot set under
+`reports/<tool>/YYYY-MM-DD/` every run, and only the latest is read by validation. Left
+unpruned these dominate the tracked tree (~88 MB at one point). Periodically trim the
+superseded sets:
+
+```bash
+uv run python3 code/orchestrators/prune_old_reports.py          # dry-run
+uv run python3 code/orchestrators/prune_old_reports.py --apply  # keep latest, delete older
+git add -A reports/ && uv run python3 code/orchestrators/validate_repo.py
+```
+
+It only prunes the self-contained screenshot subdirectories (and skips any still referenced
+by published content). Dated JSON reports (`paired_publications_*`, `public_source_*`, …)
+are intentionally retained — paper `metadata.json`, the claims ledger, and `GENERATED.md`
+cite specific ones as provenance.
 
 ## Acceptance Checks
 
