@@ -225,7 +225,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Repository | Description |
 |-----------|-------------|
-| [codomyrmex](https://github.com/docxology/codomyrmex) | 🐜 AI-native modular coding workspace — 128 modules, 600 MCP tools |
+| [codomyrmex](https://github.com/docxology/codomyrmex) | 🐜 AI-native modular coding workspace — 100+ modules, 500+ MCP tools |
 | [template](https://github.com/docxology/template) | Multi-project research template with 10-stage build pipeline |
 | [template_autoscientists](https://github.com/docxology/template_autoscientists) | Deterministic multi-agent scientific-discovery coordination harness |
 | [template_newspaper](https://github.com/docxology/template_newspaper) | Data-driven large-format newspaper layout engine |

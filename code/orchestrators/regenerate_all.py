@@ -59,12 +59,15 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_exports_page.py", []),
     ("build_updates_page.py", []),
     ("build_evidence_page.py", []),              # evidence.html + EVIDENCE.md <- claims.json
-    ("build_reconciliation_report.py", []),
-    ("build_catalog.py", []),
-    ("build_search_index.py", []),               # <- catalog + pages
+    ("build_reconciliation_report.py", []),      # writes reports/reconciliation_*.md
+    ("audit_assets.py", []),                     # writes reports/asset_size_*.json
+    ("accessibility_audit.py", []),              # writes reports/accessibility_static_*.json
+    # Indexes below link the *latest* dated reports, so they must run AFTER the report
+    # producers above. (validate_repo's --check order differs because --check never
+    # writes a new dated report; in write mode the order matters.)
+    ("build_catalog.py", []),                    # links latest asset_size/a11y/reconciliation reports
+    ("build_search_index.py", []),               # links latest reports + indexes pages
     ("generate_feed.py", []),
-    ("audit_assets.py", []),
-    ("accessibility_audit.py", []),              # local static a11y report
     ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit
     ("build_generated_manifest.py", []),         # LAST — hashes all of the above
 ]

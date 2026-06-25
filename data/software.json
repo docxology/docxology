@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T23:19:25Z",
+  "generated_at": "2026-06-25T02:32:26Z",
   "source": "pages/SOFTWARE.md",
   "count": 95,
   "repositories": [
@@ -44,7 +44,7 @@
       "url": "https://github.com/docxology/codomyrmex",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "description": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
       "language": "Python",
       "stars": 6,
       "updated_or_year": "2026-05",

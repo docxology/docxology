@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T23:22:02Z",
+  "generated_at": "2026-06-25T02:33:48Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-22.json",
+      "url": "/reports/accessibility_static_2026-06-25.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-24.json",
+      "url": "/reports/asset_size_2026-06-25.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-24.json",
+      "url": "/reports/live_site_verification_2026-06-25.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4259,14 +4259,14 @@
       "type": "software",
       "title": "codomyrmex",
       "url": "https://github.com/docxology/codomyrmex",
-      "summary": "AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "summary": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "codomyrmex AI-native modular coding workspace — 128 modules, 600 MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration Python docxology"
+      "content": "codomyrmex AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration Python docxology"
     },
     {
       "id": "software:docxology:cognitive-engine",
