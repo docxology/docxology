@@ -408,3 +408,27 @@ def test_refresh_bibliography_counts_keeps_series_unpluralized():
     assert "**2 works**" in refreshed
     assert "**1** Papers · **1** Series" in refreshed
     assert "Seriess" not in refreshed
+
+
+def test_refresh_bibliography_counts_updates_indexed_paper_folders():
+    # Two rows have ../papers/ folder links, one (a Series) does not.
+    text = "\n".join(
+        [
+            "**1 works** spanning papers",
+            "",
+            "> **1** works in the table below **·** **1** indexed paper folders in [papers/](../papers/) **·** more",
+            "",
+            "| # | Year | Domain | Type | Title | Venue | DOI/Link | Docs |",
+            "|--:|:----:|:------:|:----:|-------|-------|----------|:----:|",
+            "| 1 | 2026 | 💻 | Paper | One | *Zenodo* | [10.1/x](https://doi.org/10.1/x) | [📁](../papers/2026_One/) |",
+            "| 2 | 2026 | 🧠 | Paper | Two | *Zenodo* | [10.1/y](https://doi.org/10.1/y) | [📁](../papers/2026_Two/) |",
+            "| 3 | 2026 | 🎥 | Series | Three | *YouTube* | [link](https://example.com) | — |",
+        ]
+    )
+
+    refreshed = refresh_bibliography_counts(text)
+
+    # 3 works total, but only 2 carry per-paper folders.
+    assert "**3 works**" in refreshed
+    assert "**2** indexed paper folders" in refreshed
+    assert "**1** indexed paper folders" not in refreshed

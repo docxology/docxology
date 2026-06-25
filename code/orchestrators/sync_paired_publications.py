@@ -779,6 +779,17 @@ def refresh_bibliography_counts(text: str) -> str:
         text,
         count=1,
     )
+    # Keep the "**N** indexed paper folders" prose in sync with the table's folder
+    # links (count_consistency._folder_links_in_bibliography validates this). Apply
+    # used to bump the works total but not this, forcing a manual edit + failed
+    # validate_repo on every new-folder publication.
+    folder_links = sum(1 for row in rows if len(row) > 7 and "../papers/" in row[7])
+    text = re.sub(
+        r"\*\*\d+\*\*\s+indexed paper folders",
+        f"**{folder_links}** indexed paper folders",
+        text,
+        count=1,
+    )
     return text
 
 
