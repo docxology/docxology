@@ -52,6 +52,9 @@ optimization algorithms · gradient descent · convergence analysis · numerical
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_code_project/releases/tag/v2.5.2
+- Zenodo record: https://zenodo.org/records/20931934
+
 - GitHub release: https://github.com/docxology/template_code_project/releases/tag/v2.5.1
 - Zenodo record: https://zenodo.org/records/20692963
 

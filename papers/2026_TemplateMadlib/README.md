@@ -35,6 +35,9 @@ madlib generation · token injection · conditional manuscripts · reproducible 
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_madlib/releases/tag/v0.1.1
+- Zenodo record: https://zenodo.org/records/20932025
+
 - GitHub release: https://github.com/docxology/template_madlib/releases/tag/v0.1.0
 
 - Zenodo record: https://zenodo.org/records/20786639

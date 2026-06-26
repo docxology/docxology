@@ -1,11 +1,11 @@
 {
   "title": "Active Inference Multi-Track Exemplar",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "doi": "10.5281/zenodo.20417021",
   "doi_url": "https://doi.org/10.5281/zenodo.20417021",
-  "zenodo_record": "https://zenodo.org/records/20693424",
-  "record_id": "20693424",
-  "publication_date": "2026-06-14",
+  "zenodo_record": "https://zenodo.org/records/20931870",
+  "record_id": "20931870",
+  "publication_date": "2026-06-26",
   "resource_type": {
     "title": "Journal article",
     "type": "publication",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "<p>We study a minimal Active Inference stack on toy models: a Bernoulli&ndash;Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections. The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before rendering, so no figure or statistic can drift from the artifact that produced it &mdash; 6 sheaf axioms are verified before composition and 25 negative controls keep each failure path live. Claims are limited to those models and their generated artifacts. reports a 17-row coverage matrix (5 IMRAD group headers) regenerated from the live manifest at compose time. documents the T-maze harness aligned with pymdp sophisticated_inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated_inference). records 12 / 12 invariant checks passed. SI planning horizon: 2 steps. Sweep RMSE 0 nats bounds analytical&ndash;empirical agreement on the coupling grid. --- Associated artifacts GitHub release: v0.3.1 (https://github.com/docxology/template_active_inference/releases/tag/v0.3.1) DOI: https://doi.org/10.5281/zenodo.20417021 Zenodo: https://zenodo.org/records/20417021 PDF SHA-256: 158b2fe21682d299420ef8eee577b45b3ddb04878dcf5a1fc0e88f1ece472812</p>",
+  "description": "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections. The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before rendering, so no figure or statistic can drift from the artifact that produced it — 6 sheaf axioms are verified before composition and 25 negative controls keep each failure path live. Claims are limited to those models and their generated artifacts.\n\n reports a 17-row coverage matrix (5 IMRAD group headers) regenerated from the live manifest at compose time.  documents the T-maze harness aligned with pymdp sophisticated_inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated_inference).\n\n records 12 / 12 invariant checks passed. SI planning horizon: 2 steps. Sweep RMSE 0 nats bounds analytical–empirical agreement on the coupling grid.\n\n---\nAssociated artifacts\nGitHub release: v0.3.2 (https://github.com/docxology/template_active_inference/releases/tag/v0.3.2)\nDOI: https://doi.org/10.5281/zenodo.20417021\nZenodo: https://zenodo.org/records/20417021\nPDF SHA-256: f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c",
   "keywords": [
     "active inference",
     "pymdp",
@@ -28,10 +28,10 @@
   ],
   "files": [
     {
-      "name": "Friedman_2026_Active_158b2fe2.pdf",
-      "size_bytes": 4011794,
-      "checksum": "md5:9ccc29f646833ce0ea6533f1380bbba3",
-      "download_url": "https://zenodo.org/api/records/20693424/files/Friedman_2026_Active_158b2fe2.pdf/content"
+      "name": "Friedman_2026_Active_f191b48f.pdf",
+      "size_bytes": 4101185,
+      "checksum": "md5:6f4384a19ed6e98fe20de9a457b69163",
+      "download_url": "https://zenodo.org/api/records/20931870/files/Friedman_2026_Active_f191b48f.pdf/content"
     }
   ],
   "related_resources": [
@@ -41,10 +41,10 @@
     }
   ],
   "github_repo": "docxology/template_active_inference",
-  "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.1",
-  "release_tag": "v0.3.1",
-  "release_name": "Active Inference Multi-Track Exemplar (v0.3.1)",
-  "pdf_sha256": "158b2fe21682d299420ef8eee577b45b3ddb04878dcf5a1fc0e88f1ece472812",
+  "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
+  "release_tag": "v0.3.2",
+  "release_name": "Active Inference Multi-Track Exemplar (v0.3.2)",
+  "pdf_sha256": "f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_zenodo_record",
@@ -52,7 +52,7 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-24T23:18:14Z",
+  "checked_at": "2026-06-26T15:16:09Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20417021",

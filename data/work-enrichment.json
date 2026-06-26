@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-25T02:32:26Z",
+  "generated_at": "2026-06-26T15:17:16Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 174,
+  "count": 176,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3903,6 +3903,55 @@
       ],
       "methods": [],
       "source": "papers/2026_RealizingEmptiness/README.md"
+    },
+    "Friedman2026LivingMetaAnalysisModafinil176": {
+      "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+      "abstract": "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a complete quantitative portrait of its literature. For this instance the term is Modafinil. The pipeline dispatches across 7 literature engines (arXiv, OpenAlex, Semantic Scholar, Crossref, PubMed, SovietRxiv, and ChinaRxiv), each degrading gracefully to a skipped source when an API key or the network is unavailable, then merges and de-duplicates records by a canonical identifier hierarchy (DOI $>$ arXiv ID $>$ Semantic Scholar ID $>$ OpenAlex ID $>$ title digest) into a corpus of $N = 2302$ records spanning 2000--2026 (26 years). Records are classified into a configurable 6-bucket subfield taxonomy (Clinical Sleep, Cognition, Pharmacology, Ps",
+      "keywords": [
+        "modafinil",
+        "meta-analysis",
+        "literature retrieval",
+        "bibliometrics",
+        "record de-duplication",
+        "full-text mining",
+        "document embeddings",
+        "citation network",
+        "topic modeling",
+        "entity extraction",
+        "wakefulness",
+        "cognitive enhancement"
+      ],
+      "findings": [
+        "modafinil",
+        "meta-analysis",
+        "literature retrieval",
+        "bibliometrics",
+        "record de-duplication"
+      ],
+      "methods": [],
+      "source": "papers/2026_LivingMetaAnalysis/README.md"
+    },
+    "Friedman2026RefinementGoldMetallurgicalAnalogy177": {
+      "citation_key": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
+      "abstract": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold. The analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible. Results: The",
+      "keywords": [
+        "gold refining",
+        "manuscript composition",
+        "mega-madlib",
+        "token injection",
+        "scientific purity",
+        "assaying",
+        "karat grading"
+      ],
+      "findings": [
+        "gold refining",
+        "manuscript composition",
+        "mega-madlib",
+        "token injection",
+        "scientific purity"
+      ],
+      "methods": [],
+      "source": "papers/2026_RefinementGold/README.md"
     }
   }
 }

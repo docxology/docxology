@@ -1,10 +1,10 @@
 {
   "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "doi": "10.5281/zenodo.20417016",
   "doi_url": "https://doi.org/10.5281/zenodo.20417016",
-  "zenodo_record": "https://zenodo.org/records/20692993",
-  "record_id": "20692993",
+  "zenodo_record": "https://zenodo.org/records/20931907",
+  "record_id": "20931907",
   "publication_date": "2026",
   "resource_type": {
     "title": "Journal article",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Abstract\n\nThis paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastructure.\nThe case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop. The run evaluates\n4 of 5 proposed candidates,\nincluding Tiny patch-attention classifier, selects\nexp-mlp-tanh-64 (MLP,\n50890 parameters), and improves test_accuracy from\n82.6% to 89.4%\n(6.8% absolute change). The validated diagnostic layer reports\nmacro F1 89.4%, bootstrap accuracy interval\n86.4% to 92.0%, Brier score 0.161,\nnegative log likelihood 0.361, top-2 accuracy\n95.6%, and exact McNemar p-value 0.000.\nThe same pipeline writes proposal, candidate, run, review, benchmark, evidence,\nfigure, confusion-matrix, statistical-summary, probability-quality, and\nsecurity-integrity artifacts from declared output contracts; uses\n0 LLM calls at USD 0.00 cost; and records\n7 configured stages, 6 supported\nlocal-artifact claims, and 78 required artifacts.\nThe local security attestation status is passed,\nwith 0 checksum mismatch(es). The final\nreadiness status is passed, with review gates deferred to a\nhuman rather than self-approved by the generated run.\n\n---\nAssociated artifacts\nGitHub release: v0.3.1 (https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.1)\nDOI: https://doi.org/10.5281/zenodo.20417016\nZenodo: https://zenodo.org/records/20417016\nPDF SHA-256: 537dd8a6ebc38252294ed71d2fdb7a423898db8e6c757ca14b13bb12b450189a",
+  "description": "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastructure.\nThe case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop. The run evaluates\n4 of 5 proposed candidates,\nincluding Tiny patch-attention classifier, selects\nexp-mlp-tanh-64 (MLP,\n50890 parameters), and improves test_accuracy from\n82.6% to 89.4%\n(6.8% absolute change). The validated diagnostic layer reports\nmacro F1 89.4%, bootstrap accuracy interval\n86.4% to 92.0%, Brier score 0.161,\nnegative log likelihood 0.361, top-2 accuracy\n95.6%, and exact McNemar p-value 0.000.\nThe same pipeline writes proposal, candidate, run, review, benchmark, evidence,\nfigure, confusion-matrix, statistical-summary, probability-quality, and\nsecurity-integrity artifacts from declared output contracts; uses\n0 LLM calls at USD 0.00 cost; and records\n7 configured stages, 6 supported\nlocal-artifact claims, and 78 required artifacts.\nThe local security attestation status is passed,\nwith 0 checksum mismatch(es). The final\nreadiness status is passed, with review gates deferred to a\nhuman rather than self-approved by the generated run.\n\n---\nAssociated artifacts\nGitHub release: v0.3.2 (https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2)\nDOI: https://doi.org/10.5281/zenodo.20417016\nZenodo: https://zenodo.org/records/20417016\nPDF SHA-256: e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a",
   "keywords": [
     "autoresearch",
     "reproducible research",
@@ -29,10 +29,10 @@
   ],
   "files": [
     {
-      "name": "Friedman_2026_Bounded_537dd8a6.pdf",
-      "size_bytes": 1343238,
-      "checksum": "md5:81568e127a527e0213ad64e513f319e3",
-      "download_url": "https://zenodo.org/api/records/20692993/files/Friedman_2026_Bounded_537dd8a6.pdf/content"
+      "name": "Friedman_2026_Bounded_e07b6285.pdf",
+      "size_bytes": 1344238,
+      "checksum": "md5:c2059200d73ecfefc8fb1f5365787bca",
+      "download_url": "https://zenodo.org/api/records/20931907/files/Friedman_2026_Bounded_e07b6285.pdf/content"
     }
   ],
   "related_resources": [
@@ -42,10 +42,10 @@
     }
   ],
   "github_repo": "docxology/template_autoresearch_project",
-  "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.1",
-  "release_tag": "v0.3.1",
-  "release_name": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.3.1)",
-  "pdf_sha256": "537dd8a6ebc38252294ed71d2fdb7a423898db8e6c757ca14b13bb12b450189a",
+  "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
+  "release_tag": "v0.3.2",
+  "release_name": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.3.2)",
+  "pdf_sha256": "e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_zenodo_record",
@@ -53,7 +53,7 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-24T23:18:14Z",
+  "checked_at": "2026-06-26T15:15:39Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20417016",

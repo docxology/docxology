@@ -2068,3 +2068,27 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 175; docs: papers/2026_RealizingEmptiness/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - A Living Meta-Analysis of the Modafinil Literature
+T2  - Zenodo
+DO  - 10.5281/zenodo.20931964
+UR  - https://doi.org/10.5281/zenodo.20931964
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 176; docs: papers/2026_LivingMetaAnalysis/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition
+T2  - Zenodo
+DO  - 10.5281/zenodo.20931955
+UR  - https://doi.org/10.5281/zenodo.20931955
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 177; docs: papers/2026_RefinementGold/
+ER  -

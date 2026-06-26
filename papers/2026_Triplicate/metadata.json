@@ -1,10 +1,10 @@
 {
   "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "doi": "10.5281/zenodo.20533675",
   "doi_url": "https://doi.org/10.5281/zenodo.20533675",
-  "zenodo_record": "https://zenodo.org/records/20693002",
-  "record_id": "20693002",
+  "zenodo_record": "https://zenodo.org/records/20932039",
+  "record_id": "20932039",
   "publication_date": "2026",
   "resource_type": {
     "title": "Journal article",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Abstract\n\nWe present template_newspaper, a pure-Python engine that renders a complete\ntwelve-page, large-format newspaper to a print-ready PDF from structured YAML\ncontent. The exemplar edition is The Triplicate, a homage to the historic\nnewspaper of Crescent City, California (founded 1879). The engine demonstrates\ndesigned multi-column page layout — nameplate and ears, spanning headlines,\nflowing column frames with an optional rail, drop caps, pull quotes, ruled\nmodular boxes, data tables, halftone \"engraving\" figures and running folios —\nwhile keeping a strict separation between content (data) and engine (code):\na new title is a data edit, never a code change. The layout strategy is a hybrid\nin which fixed furniture is drawn directly on the canvas to establish where\nthe column grid begins, after which body copy flows through ReportLab frames\nthat split paragraphs across columns automatically. The project obeys the\nresearch-template monorepo contract and is discovered and executed by the same\norchestration pipeline as its code- and prose-focused siblings.\n\n---\nAssociated artifacts\nGitHub release: v1.0.1 (https://github.com/docxology/template_newspaper/releases/tag/v1.0.1)\nDOI: https://doi.org/10.5281/zenodo.20533675\nZenodo: https://zenodo.org/records/20533675\nPDF SHA-256: 851f9973d618f41aa8b5fc72315dd8abb5ca540ad7b7fad941e464172f4a8ed7",
+  "description": "We present template_newspaper, a pure-Python engine that renders a complete\ntwelve-page, large-format newspaper to a print-ready PDF from structured YAML\ncontent. The exemplar edition is The Triplicate, a homage to the historic\nnewspaper of Crescent City, California (founded 1879). The engine demonstrates\ndesigned multi-column page layout — nameplate and ears, spanning headlines,\nflowing column frames with an optional rail, drop caps, pull quotes, ruled\nmodular boxes, data tables, halftone \"engraving\" figures and running folios —\nwhile keeping a strict separation between content (data) and engine (code):\na new title is a data edit, never a code change. The layout strategy is a hybrid\nin which fixed furniture is drawn directly on the canvas to establish where\nthe column grid begins, after which body copy flows through ReportLab frames\nthat split paragraphs across columns automatically. The project obeys the\nresearch-template monorepo contract and is discovered and executed by the same\norchestration pipeline as its code- and prose-focused siblings.\n\n---\nAssociated artifacts\nGitHub release: v1.0.2 (https://github.com/docxology/template_newspaper/releases/tag/v1.0.2)\nDOI: https://doi.org/10.5281/zenodo.20533675\nZenodo: https://zenodo.org/records/20533675\nPDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77",
   "keywords": [
     "newspaper layout",
     "typography",
@@ -28,10 +28,10 @@
   ],
   "files": [
     {
-      "name": "Friedman_2026_Triplicate_851f9973.pdf",
-      "size_bytes": 58485,
-      "checksum": "md5:3dcebf2fd2cd26c2fc3d01cd86df5ae7",
-      "download_url": "https://zenodo.org/api/records/20693002/files/Friedman_2026_Triplicate_851f9973.pdf/content"
+      "name": "Friedman_2026_Triplicate_6c693dbd.pdf",
+      "size_bytes": 58491,
+      "checksum": "md5:c0bf1bd76a4649fa5644f91fce4921fc",
+      "download_url": "https://zenodo.org/api/records/20932039/files/Friedman_2026_Triplicate_6c693dbd.pdf/content"
     }
   ],
   "related_resources": [
@@ -41,10 +41,10 @@
     }
   ],
   "github_repo": "docxology/template_newspaper",
-  "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.1",
-  "release_tag": "v1.0.1",
-  "release_name": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine (v1.0.1)",
-  "pdf_sha256": "851f9973d618f41aa8b5fc72315dd8abb5ca540ad7b7fad941e464172f4a8ed7",
+  "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
+  "release_tag": "v1.0.2",
+  "release_name": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine (v1.0.2)",
+  "pdf_sha256": "6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_zenodo_record",
@@ -52,7 +52,7 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-24T23:18:14Z",
+  "checked_at": "2026-06-26T15:16:00Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20533675",

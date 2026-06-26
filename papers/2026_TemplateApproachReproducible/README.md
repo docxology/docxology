@@ -46,6 +46,9 @@ reproducible research · infrastructure-as-code · steganography · cryptographi
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_template/releases/tag/v1.0.8
+- Zenodo record: https://zenodo.org/records/20932076
+
 - GitHub release: https://github.com/docxology/template_template/releases/tag/v1.0.7
 - Zenodo record: https://zenodo.org/records/20693013
 

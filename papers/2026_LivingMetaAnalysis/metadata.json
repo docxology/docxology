@@ -1,0 +1,64 @@
+{
+  "title": "A Living Meta-Analysis of the Modafinil Literature",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.20931964",
+  "doi_url": "https://doi.org/10.5281/zenodo.20931964",
+  "zenodo_record": "https://zenodo.org/records/20931965",
+  "record_id": "20931965",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc\nreviews bind no evidence to a reproducible pipeline. We present a configurable,\nreproducible meta-analysis framework that takes a single search term and produces a\ncomplete quantitative portrait of its literature. For this instance the term is\nModafinil. The pipeline dispatches across 7 literature\nengines (arXiv, OpenAlex, Semantic Scholar, Crossref, PubMed, SovietRxiv, and ChinaRxiv), each degrading gracefully to a skipped source when an API\nkey or the network is unavailable, then merges and de-duplicates records by a canonical\nidentifier hierarchy (DOI $&gt;$ arXiv ID $&gt;$ Semantic Scholar ID $&gt;$ OpenAlex ID $&gt;$ title\ndigest) into a corpus of $N = 2302$ records spanning 2000--2026\n(26 years). Records are classified into a configurable 6-bucket\nsubfield taxonomy (Clinical Sleep, Cognition, Pharmacology, Psychiatry, Safety, and Neuroscience); the largest subfield is Clinical Sleep\n(64.3\\% of the classified corpus). The corpus grows at a compound annual\nrate of 3.45\\% (mean year-over-year growth 6.3\\%, doubling time\n11.3 years), peaking in 2025 with 112 records.\n\nNon-negative matrix factorization extracts 5 latent topics over a\n500-feature vocabulary, offline deterministic embeddings place every\ntitle, abstract, and (when available) full text in a shared vector space, and\ncitation-network analysis exposes the corpus's internal structure (8,772\nintra-corpus edges across 2204 nodes, 1377 communities,\ngraph density 0.18\\%). Of 38,802 total outgoing\nreferences, 22.6\\% resolve to another record inside the corpus.\nAbstract coverage stands at 55.5\\%, open-access status is known for\n14.4\\% of records, and 40.9\\% have a direct PDF link. An optional,\nLLM-gated knowledge-graph stage scores the 6 hypotheses explored against\nthe evidence. This run produced 18 publication-quality figures.\n\nEvery domain-specific value in this manuscript — the search term, keyword set, engine\nroster, subfield taxonomy, and hypotheses — is injected from a single configuration file\nand the pipeline's own outputs; re-targeting the configuration re-targets the entire\npaper. The result is a reusable architecture for living literature reviews:\ncontinuously re-runnable, evidence-bound syntheses for any topic.\n\nKeywords: modafinil, meta-analysis, literature retrieval, bibliometrics, record de-duplication, full-text mining, document embeddings, citation network, topic modeling, entity extraction, wakefulness, cognitive enhancement, reproducible research\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20931964\nZenodo: https://zenodo.org/records/20931964\nPDF SHA-256: 412d4fcf4b0c2e14fb950f9080f107d81fd9a90dfdf216b9161a13833eff62ff",
+  "keywords": [
+    "modafinil",
+    "meta-analysis",
+    "literature retrieval",
+    "bibliometrics",
+    "record de-duplication",
+    "full-text mining",
+    "document embeddings",
+    "citation network",
+    "topic modeling",
+    "entity extraction",
+    "wakefulness",
+    "cognitive enhancement",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Living_412d4fcf.pdf",
+      "size_bytes": 7314033,
+      "checksum": "md5:6504fdc61d497e1665bd6a304c1ffcaf",
+      "download_url": "https://zenodo.org/api/records/20931965/files/Friedman_2026_Living_412d4fcf.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_literature_meta_analysis"
+    }
+  ],
+  "github_repo": "docxology/template_literature_meta_analysis",
+  "github_release_url": "https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "A Living Meta-Analysis of the Modafinil Literature (v0.1.0)",
+  "pdf_sha256": "412d4fcf4b0c2e14fb950f9080f107d81fd9a90dfdf216b9161a13833eff62ff",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_zenodo_record",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-06-26T15:15:42Z"
+}

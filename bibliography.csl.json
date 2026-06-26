@@ -4331,5 +4331,55 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20834846",
     "URL": "https://doi.org/10.5281/zenodo.20834846"
+  },
+  {
+    "id": "Friedman2026LivingMetaAnalysisModafinil176",
+    "type": "article-journal",
+    "title": "A Living Meta-Analysis of the Modafinil Literature",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 176; docs: papers/2026_LivingMetaAnalysis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20931964",
+    "URL": "https://doi.org/10.5281/zenodo.20931964"
+  },
+  {
+    "id": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
+    "type": "article-journal",
+    "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 177; docs: papers/2026_RefinementGold/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20931955",
+    "URL": "https://doi.org/10.5281/zenodo.20931955"
   }
 ]

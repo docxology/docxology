@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:33:48Z",
+  "generated_at": "2026-06-26T15:17:19Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -115,7 +115,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-06-24.json"
+        "reports/paired_publications_2026-06-26.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -133,7 +133,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-06-24.json",
+        "reports/paired_publications_2026-06-26.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -320,7 +320,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-25.json"
+        "reports/asset_size_2026-06-26.json"
       ],
       "sources": [
         "root HTML pages",
@@ -334,7 +334,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-06-25.json"
+        "reports/accessibility_static_2026-06-26.json"
       ],
       "sources": [
         "root HTML pages",
@@ -359,7 +359,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-06-25.json"
+        "reports/live_site_verification_2026-06-26.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

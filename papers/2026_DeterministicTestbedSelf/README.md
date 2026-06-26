@@ -44,6 +44,9 @@ agent coordination · scientific discovery · noise-band confirmation · ablatio
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2
+- Zenodo record: https://zenodo.org/records/20931927
+
 - GitHub release: https://github.com/docxology/template_autoscientists/releases/tag/v1.0.1
 - Zenodo record: https://zenodo.org/records/20693001
 

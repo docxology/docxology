@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-25T02:32:25Z",
+  "generated_at": "2026-06-26T15:17:16Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 174,
+  "count": 176,
   "works": [
     {
       "num": 1,
@@ -2437,6 +2437,34 @@
       "url": "https://doi.org/10.5281/zenodo.20834846",
       "doi": "10.5281/zenodo.20834846",
       "docs_path": "papers/2026_RealizingEmptiness/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 176,
+      "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20931964",
+      "doi": "10.5281/zenodo.20931964",
+      "docs_path": "papers/2026_LivingMetaAnalysis/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 177,
+      "citation_key": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20931955",
+      "doi": "10.5281/zenodo.20931955",
+      "docs_path": "papers/2026_RefinementGold/",
       "has_paper_folder": true
     }
   ]

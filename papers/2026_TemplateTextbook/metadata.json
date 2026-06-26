@@ -1,10 +1,10 @@
 {
   "title": "The Template Textbook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "doi": "10.5281/zenodo.20533125",
   "doi_url": "https://doi.org/10.5281/zenodo.20533125",
-  "zenodo_record": "https://zenodo.org/records/20693022",
-  "record_id": "20693022",
+  "zenodo_record": "https://zenodo.org/records/20932112",
+  "record_id": "20932112",
   "publication_date": "2026",
   "resource_type": {
     "title": "Journal article",
@@ -18,14 +18,14 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.\n\n---\nAssociated artifacts\nGitHub release: v0.1.1 (https://github.com/docxology/template_textbook/releases/tag/v0.1.1)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/20533125\nPDF SHA-256: c6c97f24b860f1972e3437f13ce71c2d967399d6d5d5ded1ba39eae2f38ecc2d",
+  "description": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.\n\n---\nAssociated artifacts\nGitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/20533125\nPDF SHA-256: 7b67cb2d9118f0a72001395f0a94c529313804d7e5cdf7f6ca2dc9f7ab57d168",
   "keywords": [],
   "files": [
     {
-      "name": "Friedman_2026_Template_c6c97f24.pdf",
-      "size_bytes": 1122785,
-      "checksum": "md5:f9259e02bbdd177c72245ba45b9f8843",
-      "download_url": "https://zenodo.org/api/records/20693022/files/Friedman_2026_Template_c6c97f24.pdf/content"
+      "name": "Friedman_2026_Template_7b67cb2d.pdf",
+      "size_bytes": 939766,
+      "checksum": "md5:8ca3dccc845b627d2aca63a03218c060",
+      "download_url": "https://zenodo.org/api/records/20932112/files/Friedman_2026_Template_7b67cb2d.pdf/content"
     }
   ],
   "related_resources": [
@@ -45,7 +45,7 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-24T23:18:14Z",
+  "checked_at": "2026-06-26T15:16:06Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20533125",

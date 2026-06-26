@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:33:48Z",
+  "generated_at": "2026-06-26T15:17:17Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1828,
+  "count": 1830,
   "items": [
     {
       "id": "page:home",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-25.json",
+      "url": "/reports/accessibility_static_2026-06-26.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-25.json",
+      "url": "/reports/asset_size_2026-06-26.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-25.json",
+      "url": "/reports/live_site_verification_2026-06-26.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4211,6 +4211,53 @@
         "pymdp"
       ],
       "content": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction Zenodo 10.5281/zenodo.20834846 Friedman2026RealizingEmptinessOperationalSurrogates175 Computational Paper This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations, positive-control-style finite mechanism checks, and discriminating tests that reject stronger readings when a control is perturbed. The formal layer maps the paper's quantum free-energy principle (qFEP) and quantum reference frame (QRF) equations into finite operational surrogates, bridging each paper equation to a specific software artifact. The computed artifacts are a suite of finite quantum-information and contextuality audits — spanning two-qubit separability and entanglement entropy, Bell and active inference Bayesian model reduction quantum reference frames emptiness formal methods pymdp active inference Bayesian model reduction quantum reference frames emptiness formal methods"
+    },
+    {
+      "id": "work:Friedman2026LivingMetaAnalysisModafinil176",
+      "type": "work",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20931964",
+      "summary": "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a sing",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "modafinil",
+        "meta-analysis",
+        "literature retrieval",
+        "bibliometrics",
+        "record de-duplication",
+        "full-text mining",
+        "document embeddings",
+        "citation network"
+      ],
+      "content": "A Living Meta-Analysis of the Modafinil Literature Zenodo 10.5281/zenodo.20931964 Friedman2026LivingMetaAnalysisModafinil176 Computational Paper Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a complete quantitative portrait of its literature. For this instance the term is Modafinil. The pipeline dispatches across 7 literature engines (arXiv, OpenAlex, Semantic Scholar, Crossref, PubMed, SovietRxiv, and ChinaRxiv), each degrading gracefully to a skipped source when an API key or the network is unavailable, then merges and de-duplicates records by a canonical identifier hierarchy (DOI $>$ arXiv ID $>$ Semantic Scholar ID $>$ OpenAlex ID $>$ title digest) into a corpus of $N = 2302$ records spanning 2000--2026 (26 years). Records are classified into a configurable 6-bucket subfield taxonomy (Clinical Sleep, Cognition, Pharmacology, Ps modafinil meta-analysis literature retrieval bibliometrics record de-duplication full-text mining document embeddings citation network topic modeling entity extraction wakefulness cognitive enhancement modafinil meta-analysis literature retrieval bibliometrics record de-duplication"
+    },
+    {
+      "id": "work:Friedman2026RefinementGoldMetallurgicalAnalogy177",
+      "type": "work",
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "url": "/works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20931955",
+      "summary": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "gold refining",
+        "manuscript composition",
+        "mega-madlib",
+        "token injection",
+        "scientific purity",
+        "assaying",
+        "karat grading"
+      ],
+      "content": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition Zenodo 10.5281/zenodo.20931955 Friedman2026RefinementGoldMetallurgicalAnalogy177 Computational Paper This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold. The analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible. Results: The gold refining manuscript composition mega-madlib token injection scientific purity assaying karat grading gold refining manuscript composition mega-madlib token injection scientific purity"
     },
     {
       "id": "software:docxology:template",
@@ -31267,7 +31314,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 174 works.",
+      "title": "The curated bibliography contains 176 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31275,12 +31322,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 174 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 176 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 157 per-paper documentation folders.",
+      "title": "The repository contains 159 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31288,7 +31335,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 157 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 159 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31464,7 +31511,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 174 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 176 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",
