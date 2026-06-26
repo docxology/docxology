@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T18:52:07Z",
+  "generated_at": "2026-06-26T19:04:23Z",
   "base_url": "https://danielarifriedman.com/",
   "expected_counts": {
     "generated_at": "2026-06-26T18:51:19+00:00",
@@ -21,8 +21,8 @@
     "html_url": "https://danielarifriedman.com/"
   },
   "checked_urls": 14,
-  "passing": 13,
-  "overall_ok": false,
+  "passing": 14,
+  "overall_ok": true,
   "results": [
     {
       "path": "index.html",
@@ -30,7 +30,7 @@
       "ok": true,
       "status": 200,
       "bytes": 36415,
-      "elapsed_ms": 126,
+      "elapsed_ms": 250,
       "markers": {
         "danielarifriedman.com": true,
         "publications": true,
@@ -38,35 +38,35 @@
         "Search": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:07 GMT",
-        "etag": "\"6a3e991f-8e3f\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:55 GMT",
+        "etag": "\"6a3ecca3-8e3f\"",
         "cache-control": "max-age=600",
-        "age": "549",
-        "x-cache": "HIT",
-        "x-served-by": "cache-pao-kpao1770079-PAO"
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-pao-kpao1770070-PAO"
       },
       "error": ""
     },
     {
       "path": "publications.html",
       "url": "https://danielarifriedman.com/publications.html",
-      "ok": false,
+      "ok": true,
       "status": 200,
-      "bytes": 16508,
-      "elapsed_ms": 115,
+      "bytes": 16592,
+      "elapsed_ms": 197,
       "markers": {
         "Publications": true,
         "data/publications-ld.json": true,
-        "catalogued works": false,
-        "176 Works": false
+        "catalogued works": true,
+        "176 Works": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-407c\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:56 GMT",
+        "etag": "\"6a3ecca4-40d0\"",
         "cache-control": "max-age=600",
-        "age": "549",
+        "age": "27",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10059-SJC"
+        "x-served-by": "cache-sjc1000125-SJC"
       },
       "error": ""
     },
@@ -76,7 +76,7 @@
       "ok": true,
       "status": 200,
       "bytes": 68191,
-      "elapsed_ms": 177,
+      "elapsed_ms": 320,
       "markers": {
         "Software": true,
         "data/software-ld.json": true,
@@ -86,12 +86,12 @@
         "373 public repositories": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-10a5f\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:55 GMT",
+        "etag": "\"6a3ecca3-10a5f\"",
         "cache-control": "max-age=600",
-        "age": "549",
-        "x-cache": "HIT",
-        "x-served-by": "cache-pao-kpao1770022-PAO"
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-pao-kpao1770078-PAO"
       },
       "error": ""
     },
@@ -101,19 +101,19 @@
       "ok": true,
       "status": 200,
       "bytes": 10920,
-      "elapsed_ms": 95,
+      "elapsed_ms": 275,
       "markers": {
         "Search": true,
         "search-index.json": true,
         "OpenSearch": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-2aa8\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:55 GMT",
+        "etag": "\"6a3ecca3-2aa8\"",
         "cache-control": "max-age=600",
-        "age": "548",
-        "x-cache": "HIT",
-        "x-served-by": "cache-pao-kpao1770035-PAO"
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10052-SJC"
       },
       "error": ""
     },
@@ -123,7 +123,7 @@
       "ok": true,
       "status": 200,
       "bytes": 36024,
-      "elapsed_ms": 99,
+      "elapsed_ms": 111,
       "markers": {
         "Data Catalog": true,
         "\"@context\"": true,
@@ -131,12 +131,12 @@
         "application/ld+json": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-8cb8\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:56 GMT",
+        "etag": "\"6a3ecca4-8cb8\"",
         "cache-control": "max-age=600",
-        "age": "548",
+        "age": "27",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10029-SJC"
+        "x-served-by": "cache-sjc10080-SJC"
       },
       "error": ""
     },
@@ -146,19 +146,19 @@
       "ok": true,
       "status": 200,
       "bytes": 31990,
-      "elapsed_ms": 103,
+      "elapsed_ms": 198,
       "markers": {
         "Updates": true,
         "update-card": true,
         "changelog": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:07 GMT",
-        "etag": "\"6a3e991f-7cf6\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:55 GMT",
+        "etag": "\"6a3ecca3-7cf6\"",
         "cache-control": "max-age=600",
-        "age": "548",
+        "age": "27",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000143-SJC"
+        "x-served-by": "cache-sjc10066-SJC"
       },
       "error": ""
     },
@@ -168,18 +168,18 @@
       "ok": true,
       "status": 200,
       "bytes": 634,
-      "elapsed_ms": 117,
+      "elapsed_ms": 268,
       "markers": {
         "OpenSearchDescription": true,
         "search.html?q={searchTerms}": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-27a\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:56 GMT",
+        "etag": "\"6a3ecca4-27a\"",
         "cache-control": "max-age=600",
-        "age": "548",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10024-SJC"
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000102-SJC"
       },
       "error": ""
     },
@@ -189,19 +189,19 @@
       "ok": true,
       "status": 200,
       "bytes": 234127,
-      "elapsed_ms": 162,
+      "elapsed_ms": 348,
       "markers": {
         "sitemap": true,
         "publications.html": true,
         "software.html": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:05 GMT",
-        "etag": "\"6a3e991d-3928f\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:54 GMT",
+        "etag": "\"6a3ecca2-3928f\"",
         "cache-control": "max-age=600",
-        "age": "480",
+        "age": "27",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000093-SJC"
+        "x-served-by": "cache-sjc1000140-SJC"
       },
       "error": ""
     },
@@ -211,19 +211,19 @@
       "ok": true,
       "status": 200,
       "bytes": 8540,
-      "elapsed_ms": 88,
+      "elapsed_ms": 112,
       "markers": {
         "Human search page": true,
         "Data catalog": true,
         "Agent start guide": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:04 GMT",
-        "etag": "\"6a3e991c-215c\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:54 GMT",
+        "etag": "\"6a3ecca2-215c\"",
         "cache-control": "max-age=600",
-        "age": "548",
+        "age": "27",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000091-SJC"
+        "x-served-by": "cache-sjc1000101-SJC"
       },
       "error": ""
     },
@@ -233,19 +233,19 @@
       "ok": true,
       "status": 200,
       "bytes": 1802851,
-      "elapsed_ms": 597,
+      "elapsed_ms": 565,
       "markers": {
         "\"count\"": true,
         "\"items\"": true,
         "items": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-1b8263\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:56 GMT",
+        "etag": "\"6a3ecca4-1b8263\"",
         "cache-control": "max-age=600",
-        "age": "0",
-        "x-cache": "MISS",
-        "x-served-by": "cache-sjc10063-SJC"
+        "age": "26",
+        "x-cache": "HIT",
+        "x-served-by": "cache-pao-kpao1770025-PAO"
       },
       "error": ""
     },
@@ -255,19 +255,19 @@
       "ok": true,
       "status": 200,
       "bytes": 22475,
-      "elapsed_ms": 94,
+      "elapsed_ms": 264,
       "markers": {
         "DataCatalog": true,
         "External Link Triage": true,
         "Software": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-57cb\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:55 GMT",
+        "etag": "\"6a3ecca3-57cb\"",
         "cache-control": "max-age=600",
-        "age": "547",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000146-SJC"
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10033-SJC"
       },
       "error": ""
     },
@@ -277,19 +277,19 @@
       "ok": true,
       "status": 200,
       "bytes": 7469,
-      "elapsed_ms": 85,
+      "elapsed_ms": 186,
       "markers": {
         "# Generated Files": true,
         "Rebuild command": true,
         "Validation": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-1d2d\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:56 GMT",
+        "etag": "\"6a3ecca4-1d2d\"",
         "cache-control": "max-age=600",
-        "age": "547",
+        "age": "26",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10036-SJC"
+        "x-served-by": "cache-pao-kpao1770023-PAO"
       },
       "error": ""
     },
@@ -305,12 +305,12 @@
         "docxology": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:05 GMT",
-        "etag": "\"6a3e991d-259\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:54 GMT",
+        "etag": "\"6a3ecca2-259\"",
         "cache-control": "max-age=600",
-        "age": "547",
+        "age": "26",
         "x-cache": "HIT",
-        "x-served-by": "cache-sjc10036-SJC"
+        "x-served-by": "cache-pao-kpao1770069-PAO"
       },
       "error": ""
     },
@@ -320,18 +320,18 @@
       "ok": true,
       "status": 200,
       "bytes": 462,
-      "elapsed_ms": 116,
+      "elapsed_ms": 180,
       "markers": {
         "Contact:": true,
         "Policy:": true
       },
       "cache": {
-        "last-modified": "Fri, 26 Jun 2026 15:22:06 GMT",
-        "etag": "\"6a3e991e-1ce\"",
+        "last-modified": "Fri, 26 Jun 2026 19:01:56 GMT",
+        "etag": "\"6a3ecca4-1ce\"",
         "cache-control": "max-age=600",
-        "age": "480",
+        "age": "25",
         "x-cache": "HIT",
-        "x-served-by": "cache-pao-kpao1770039-PAO"
+        "x-served-by": "cache-sjc10036-SJC"
       },
       "error": ""
     }
