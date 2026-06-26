@@ -130,7 +130,7 @@ def replace_head_meta(html: str, count: int) -> str:
     """Patch title, meta description, and og:* counts from bibliography row count."""
     title = f"Daniel Ari Friedman Publications | {count} Research Works"
     desc = (
-        f"Search {count} works by Daniel Ari Friedman on Active Inference, "
+        f"Search {count} Works across {count} catalogued works by Daniel Ari Friedman on Active Inference, "
         "computational biology, cognitive security, art, and research software."
     )
     html = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html, count=1)
