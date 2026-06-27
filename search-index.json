@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T18:51:21Z",
+  "generated_at": "2026-06-27T22:21:41Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1830,
+  "count": 1831,
   "items": [
     {
       "id": "page:home",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-26.json",
+      "url": "/reports/accessibility_static_2026-06-27.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-26.json",
+      "url": "/reports/asset_size_2026-06-27.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-26.json",
+      "url": "/reports/live_site_verification_2026-06-27.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4258,6 +4258,30 @@
         "karat grading"
       ],
       "content": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition Zenodo 10.5281/zenodo.20931955 Friedman2026RefinementGoldMetallurgicalAnalogy177 Computational Paper This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold. The analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible. Results: The gold refining manuscript composition mega-madlib token injection scientific purity assaying karat grading gold refining manuscript composition mega-madlib token injection scientific purity"
+    },
+    {
+      "id": "work:Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+      "type": "work",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html",
+      "external_url": "https://doi.org/10.5281/zenodo.20976824",
+      "summary": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and depl",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "active inference",
+        "expected free energy",
+        "recursive self-improvement",
+        "Generalized Notation Notation",
+        "economic world model",
+        "portfolio optimization",
+        "epistemic value",
+        "reproducible research"
+      ],
+      "content": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference Zenodo 10.5281/zenodo.20976824 Friedman2026AlphaCOGANTRecursiveCorporateSelf178 Computational Paper The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standing is summarized by t-RSI, a standardized gap between alpha-creation and alpha-decay rates. AlphaCOGANT observes that this construction is, term for term, an Active Inference agent — and makes the correspondence executable. We render AlphaFund's Economic World Model (EWM) as a generative model written in Generalized Notation Notation (GNN), produced by the COGANT codebase-to-GNN translation pattern. The firm's five capital channels — Investments, Sensors, Actuators, Parameters, and R&D — become the hidden-state factors of a partially-observed model; capital allocation becomes the control vector; and the portfolio optimizer's marginal-return ob active inference expected free energy recursive self-improvement Generalized Notation Notation economic world model portfolio optimization epistemic value reproducible research active inference expected free energy recursive self-improvement Generalized Notation Notation economic world model"
     },
     {
       "id": "software:docxology:template",
@@ -31314,7 +31338,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 176 works.",
+      "title": "The curated bibliography contains 177 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31322,12 +31346,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 176 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 177 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 159 per-paper documentation folders.",
+      "title": "The repository contains 160 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31335,7 +31359,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 159 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 160 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31511,7 +31535,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 176 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 177 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

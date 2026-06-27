@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"
+version: "1.0.1"
+date-released: 2026
+doi: 10.5281/zenodo.20976824
+url: "https://doi.org/10.5281/zenodo.20976824"
+repository-code: "https://github.com/docxology/alphacogant"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20976824
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/20977774"
+    description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/alphacogant/releases/tag/v1.0.1"
+    description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/alphacogant/releases/tag/v1.0.0"
+    description: "GitHub release"

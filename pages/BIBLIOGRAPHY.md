@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**176 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**177 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**155** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**156** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **176** works in the table below **·** **159** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **177** works in the table below **·** **160** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -214,6 +214,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 175 | 2026 | 💻 | Paper | Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction | *Zenodo* | [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) | [📁](../papers/2026_RealizingEmptiness/) |
 | 176 | 2026 | 💻 | Paper | A Living Meta-Analysis of the Modafinil Literature | *Zenodo* | [10.5281/zenodo.20931964](https://doi.org/10.5281/zenodo.20931964) | [📁](../papers/2026_LivingMetaAnalysis/) |
 | 177 | 2026 | 💻 | Paper | Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition | *Zenodo* | [10.5281/zenodo.20931955](https://doi.org/10.5281/zenodo.20931955) | [📁](../papers/2026_RefinementGold/) |
+| 178 | 2026 | 💻 | Paper | AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference | *Zenodo* | [10.5281/zenodo.20976824](https://doi.org/10.5281/zenodo.20976824) | [📁](../papers/2026_AlphaCOGANT/) |
 ---
 
 ## Domain Index

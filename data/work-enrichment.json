@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-26T18:51:20Z",
+  "generated_at": "2026-06-27T22:21:41Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 176,
+  "count": 177,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3952,6 +3952,29 @@
       ],
       "methods": [],
       "source": "papers/2026_RefinementGold/README.md"
+    },
+    "Friedman2026AlphaCOGANTRecursiveCorporateSelf178": {
+      "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+      "abstract": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standing is summarized by t-RSI, a standardized gap between alpha-creation and alpha-decay rates. AlphaCOGANT observes that this construction is, term for term, an Active Inference agent — and makes the correspondence executable. We render AlphaFund's Economic World Model (EWM) as a generative model written in Generalized Notation Notation (GNN), produced by the COGANT codebase-to-GNN translation pattern. The firm's five capital channels — Investments, Sensors, Actuators, Parameters, and R&D — become the hidden-state factors of a partially-observed model; capital allocation becomes the control vector; and the portfolio optimizer's marginal-return ob",
+      "keywords": [
+        "active inference",
+        "expected free energy",
+        "recursive self-improvement",
+        "Generalized Notation Notation",
+        "economic world model",
+        "portfolio optimization",
+        "epistemic value",
+        "reproducible research"
+      ],
+      "findings": [
+        "active inference",
+        "expected free energy",
+        "recursive self-improvement",
+        "Generalized Notation Notation",
+        "economic world model"
+      ],
+      "methods": [],
+      "source": "papers/2026_AlphaCOGANT/README.md"
     }
   }
 }

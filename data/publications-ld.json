@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 176 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 177 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -2998,6 +2998,23 @@
             },
             "keywords": "💻",
             "sameAs": "https://doi.org/10.5281/zenodo.20931955"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.20976824"
         }
     ]
 }

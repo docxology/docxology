@@ -4381,5 +4381,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20931955",
     "URL": "https://doi.org/10.5281/zenodo.20931955"
+  },
+  {
+    "id": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+    "type": "article-journal",
+    "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 178; docs: papers/2026_AlphaCOGANT/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20976824",
+    "URL": "https://doi.org/10.5281/zenodo.20976824"
   }
 ]

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-26T18:51:19Z",
+  "generated_at": "2026-06-27T22:21:40Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 176,
+  "count": 177,
   "works": [
     {
       "num": 1,
@@ -2465,6 +2465,20 @@
       "url": "https://doi.org/10.5281/zenodo.20931955",
       "doi": "10.5281/zenodo.20931955",
       "docs_path": "papers/2026_RefinementGold/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 178,
+      "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20976824",
+      "doi": "10.5281/zenodo.20976824",
+      "docs_path": "papers/2026_AlphaCOGANT/",
       "has_paper_folder": true
     }
   ]
