@@ -27,9 +27,120 @@ def h(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
+# Ordered (display label, publishing-status label) for the 8 platforms a work may
+# live on. The status label matches the present/missing strings emitted into
+# data/publishing-status.json (the generated source of truth); the display label is
+# what the work page shows.
+PLATFORMS: list[tuple[str, str]] = [
+    ("Zenodo", "Zenodo (DOI)"),
+    ("GitHub", "GitHub"),
+    ("arXiv", "arXiv"),
+    ("OSF", "OSF"),
+    ("HuggingFace", "HuggingFace"),
+    ("Software Heritage", "IPFS/Software-Heritage"),
+    ("PyPI", "PyPI"),
+    ("Canonical page", "personal-site canonical page"),
+]
+
+
+def load_publishing_status() -> dict[str, dict]:
+    """Map canonical_page (== each work's docs_path) -> its publishing-status entry."""
+    path = REPO_ROOT / "data" / "publishing-status.json"
+    if not path.is_file():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        entries = json.load(f)
+    return {e["canonical_page"]: e for e in entries if e.get("canonical_page")}
+
+
 def load_works() -> list[dict]:
     with open(REPO_ROOT / "data" / "works.json", encoding="utf-8") as f:
-        return json.load(f)["works"]
+        works = json.load(f)["works"]
+    pub = load_publishing_status()
+    for work in works:
+        work["publishing"] = pub.get(work.get("docs_path", ""), {})
+    return works
+
+
+def _github_repo(identifiers: dict) -> str:
+    gh = identifiers.get("github")
+    if isinstance(gh, list):
+        gh = gh[0] if gh else ""
+    return str(gh or "")
+
+
+def platform_link(status_label: str, work: dict) -> str:
+    """Absolute URL for a work's presence on the given platform, or '' if not derivable.
+
+    Thin read of the joined publishing-status identifiers (the generated source of truth),
+    reusing the same DOI/sameAs URL conventions as json_ld().
+    """
+    identifiers = work.get("publishing", {}).get("identifiers", {})
+    if status_label == "Zenodo (DOI)":
+        doi = identifiers.get("zenodo_doi")
+        return f"https://doi.org/{doi}" if doi else ""
+    if status_label == "GitHub":
+        repo = _github_repo(identifiers)
+        if not repo:
+            return ""
+        return repo if repo.startswith("http") else f"https://github.com/{repo}"
+    if status_label == "arXiv":
+        arxiv = identifiers.get("arxiv")
+        if not arxiv:
+            return ""
+        bare = str(arxiv).split("arXiv.")[-1]
+        return f"https://arxiv.org/abs/{bare}"
+    if status_label == "OSF":
+        osf = identifiers.get("osf")
+        return f"https://doi.org/{osf}" if osf else ""
+    if status_label == "HuggingFace":
+        hf = identifiers.get("huggingface")
+        return f"https://huggingface.co/{hf}" if hf else ""
+    if status_label == "IPFS/Software-Heritage":
+        repo = _github_repo(identifiers)
+        if not repo:
+            return ""
+        origin = repo if repo.startswith("http") else f"https://github.com/{repo}"
+        return f"https://archive.softwareheritage.org/browse/origin/directory/?origin_url={origin}"
+    if status_label == "PyPI":
+        pypi = identifiers.get("pypi")
+        return f"https://pypi.org/project/{pypi}/" if pypi else ""
+    if status_label == "personal-site canonical page":
+        canon = identifiers.get("canonical") or work.get("docs_path", "")
+        return f"https://danielarifriedman.com/{canon.rstrip('/')}/" if canon else ""
+    return ""
+
+
+def present_platform_urls(work: dict) -> list[str]:
+    """Absolute URLs for the platforms a work is actually present on (deduped, ordered)."""
+    present = set(work.get("publishing", {}).get("present_platforms", []))
+    urls: list[str] = []
+    for _display, status_label in PLATFORMS:
+        if status_label in present:
+            link = platform_link(status_label, work)
+            if link and link not in urls:
+                urls.append(link)
+    return urls
+
+
+def platform_availability_card(work: dict) -> str:
+    """A meta-card listing all 8 platforms: present ones link out, missing ones are muted."""
+    pub = work.get("publishing", {})
+    if not pub:
+        return ""
+    present = set(pub.get("present_platforms", []))
+    rows: list[str] = []
+    for display, status_label in PLATFORMS:
+        if status_label in present:
+            link = platform_link(status_label, work)
+            label = f'<a href="{h(link)}">{h(display)}</a>' if link else h(display)
+            rows.append(f'<li>✅ {label}</li>')
+        else:
+            rows.append(f'<li class="muted">⬜ {h(display)}</li>')
+    return (
+        '<div class="meta-card platform-card"><strong>Platform availability</strong>'
+        f'<ul class="platform-list">{"".join(rows)}</ul></div>'
+    )
 
 
 def strip_md(text: str) -> str:
@@ -218,6 +329,10 @@ def json_ld(work: dict) -> str:
     same_as = [work["url"]] if work.get("url") else []
     if work.get("doi"):
         same_as.append(f"https://doi.org/{work['doi']}")
+    # Keep structured data in sync with the visible Platform availability card.
+    for url in present_platform_urls(work):
+        if url not in same_as:
+            same_as.append(url)
     data = {
         "@context": "https://schema.org",
         "@type": typ,
@@ -325,6 +440,11 @@ def page_head(work: dict) -> str:
         .work-detail ul{{margin-left:1.2rem}}
         .keyword-row{{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}}
         .keyword-row span{{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}}
+        .platform-card{{grid-column:1/-1}}
+        .platform-list{{list-style:none;padding:0;margin:.35rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.25rem .9rem;font-size:.85rem}}
+        .platform-list a{{color:var(--silver-bright);text-decoration:none}}
+        .platform-list a:hover{{text-decoration:underline}}
+        .platform-list .muted{{color:var(--text-muted)}}
         .breadcrumb{{max-width:960px;margin:1.4rem auto 0;padding:0 2rem}}
         .breadcrumb ol{{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}}
         .breadcrumb li+li::before{{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}}
@@ -404,6 +524,7 @@ def render_work_page(work: dict) -> str:
                 <div class="meta-card"><strong>Citation Key</strong>{h(work['citation_key'])}</div>
                 <div class="meta-card"><strong>Paper Folder</strong>{'Available' if work.get('has_paper_folder') else 'Not available'}</div>
                 <div class="meta-card"><strong>DOI</strong>{f'<a href="{h(doi_link)}">{h(work["doi"])}</a>' if doi_link else 'Not listed'}</div>
+                {platform_availability_card(work)}
             </div>
         </section>
 {detail_sections}
