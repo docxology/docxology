@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-28T03:14:40Z",
+  "generated_at": "2026-06-29T22:12:54Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 177,
+  "count": 178,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3975,6 +3975,26 @@
       ],
       "methods": [],
       "source": "papers/2026_AlphaCOGANT/README.md"
+    },
+    "Friedman2026MappingWilliamBlakeS179": {
+      "citation_key": "Friedman2026MappingWilliamBlakeS179",
+      "abstract": "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.",
+      "keywords": [
+        "William Blake",
+        "digital humanities",
+        "corpus acquisition",
+        "source provenance",
+        "rights-bounded release"
+      ],
+      "findings": [
+        "William Blake",
+        "digital humanities",
+        "corpus acquisition",
+        "source provenance",
+        "rights-bounded release"
+      ],
+      "methods": [],
+      "source": "papers/2026_MappingWilliamBlake/README.md"
     }
   }
 }

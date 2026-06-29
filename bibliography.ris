@@ -2104,3 +2104,15 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 178; docs: papers/2026_AlphaCOGANT/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls
+T2  - Zenodo
+DO  - 10.5281/zenodo.21047573
+UR  - https://doi.org/10.5281/zenodo.21047573
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 179; docs: papers/2026_MappingWilliamBlake/
+ER  -

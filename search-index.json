@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T22:21:41Z",
+  "generated_at": "2026-06-29T22:12:55Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1831,
+  "count": 1832,
   "items": [
     {
       "id": "page:home",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-27.json",
+      "url": "/reports/accessibility_static_2026-06-29.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-27.json",
+      "url": "/reports/asset_size_2026-06-29.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-27.json",
+      "url": "/reports/live_site_verification_2026-06-29.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4282,6 +4282,27 @@
         "reproducible research"
       ],
       "content": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference Zenodo 10.5281/zenodo.20976824 Friedman2026AlphaCOGANTRecursiveCorporateSelf178 Computational Paper The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standing is summarized by t-RSI, a standardized gap between alpha-creation and alpha-decay rates. AlphaCOGANT observes that this construction is, term for term, an Active Inference agent — and makes the correspondence executable. We render AlphaFund's Economic World Model (EWM) as a generative model written in Generalized Notation Notation (GNN), produced by the COGANT codebase-to-GNN translation pattern. The firm's five capital channels — Investments, Sensors, Actuators, Parameters, and R&D — become the hidden-state factors of a partially-observed model; capital allocation becomes the control vector; and the portfolio optimizer's marginal-return ob active inference expected free energy recursive self-improvement Generalized Notation Notation economic world model portfolio optimization epistemic value reproducible research active inference expected free energy recursive self-improvement Generalized Notation Notation economic world model"
+    },
+    {
+      "id": "work:Friedman2026MappingWilliamBlakeS179",
+      "type": "work",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "url": "/works/Friedman2026MappingWilliamBlakeS179.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21047573",
+      "summary": "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-au",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "William Blake",
+        "digital humanities",
+        "corpus acquisition",
+        "source provenance",
+        "rights-bounded release"
+      ],
+      "content": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls Zenodo 10.5281/zenodo.21047573 Friedman2026MappingWilliamBlakeS179 Computational Paper A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms. William Blake digital humanities corpus acquisition source provenance rights-bounded release William Blake digital humanities corpus acquisition source provenance rights-bounded release"
     },
     {
       "id": "software:docxology:template",
@@ -31338,7 +31359,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 177 works.",
+      "title": "The curated bibliography contains 178 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31346,12 +31367,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 177 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 178 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 160 per-paper documentation folders.",
+      "title": "The repository contains 161 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31359,7 +31380,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 160 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 161 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31535,7 +31556,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 177 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 178 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

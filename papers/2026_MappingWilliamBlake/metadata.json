@@ -1,0 +1,54 @@
+{
+  "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+  "version": null,
+  "doi": "10.5281/zenodo.21047573",
+  "doi_url": "https://doi.org/10.5281/zenodo.21047573",
+  "zenodo_record": "https://zenodo.org/records/21047574",
+  "record_id": "21047574",
+  "publication_date": "2026-06-29",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.",
+  "keywords": [
+    "William Blake",
+    "digital humanities",
+    "corpus acquisition",
+    "source provenance",
+    "rights-bounded release"
+  ],
+  "files": [
+    {
+      "name": "blake_working_paper.pdf",
+      "size_bytes": 11255591,
+      "checksum": "md5:ec897f65c5a85fb7e4393f8e67e8a2f3",
+      "download_url": "https://zenodo.org/api/records/21047574/files/blake_working_paper.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/blake"
+    }
+  ],
+  "github_repo": "docxology/blake",
+  "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "blake v0.1.0 — reproducible, rights-bounded Blake corpus workflow",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-06-29T22:11:13Z"
+}

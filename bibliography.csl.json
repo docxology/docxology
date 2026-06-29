@@ -4406,5 +4406,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.20976824",
     "URL": "https://doi.org/10.5281/zenodo.20976824"
+  },
+  {
+    "id": "Friedman2026MappingWilliamBlakeS179",
+    "type": "article-journal",
+    "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 179; docs: papers/2026_MappingWilliamBlake/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21047573",
+    "URL": "https://doi.org/10.5281/zenodo.21047573"
   }
 ]
