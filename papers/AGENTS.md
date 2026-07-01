@@ -23,8 +23,8 @@
 ### 🎓 EDUCATOR
 
 - Generates Claude Code-compatible SKILL.md for each paper
-- Ensures YAML frontmatter with `name`, `description`, and `tags`
-- Populates `## Instructions`, `## Key Concepts`, `## Prerequisites` sections
+- Ensures YAML frontmatter with `name`, `description`, `tags`, `domain`, `citation`, and optional `doi`
+- Populates `## Context`, `## Methods`, `## Key Findings`, `## Related Works`, `## Validation`, `## Prerequisites`, and `## Instructions` sections
 - Creates learning pathways across the 8 research domains
 
 ### 🔗 INTEGRATOR
@@ -55,12 +55,16 @@ Universal baseline (every paper folder, regardless of when it was created):
 | README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) |
 | AGENTS.md present | required per folder |
 | SKILL.md present | required per folder |
-| SKILL.md YAML frontmatter (name, description, tags) | required per folder |
-| SKILL.md `## Instructions` section | required |
-| SKILL.md `## Key Concepts` section | required |
-| SKILL.md `## Prerequisites` section | required |
+|| SKILL.md YAML frontmatter (name, description, tags, domain, citation) | required per folder |
+|| SKILL.md `## Context` section | required |
+|| SKILL.md `## Methods` section | required |
+|| SKILL.md `## Key Findings` section | required |
+|| SKILL.md `## Related Works` section | required |
+|| SKILL.md `## Validation` section | required |
+|| SKILL.md `## Prerequisites` section | required |
+|| SKILL.md `## Instructions` section | required |
 
-Additional files required for any folder created or updated through the automated publication-sync pipeline (`sync_paired_publications.py`, `add_zenodo_only.py` — see [`docs/operations/publication-sync.md`](../docs/operations/publication-sync.md)):
+Additional files required
 
 | Check | Status |
 |-------|--------|

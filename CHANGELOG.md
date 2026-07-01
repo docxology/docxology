@@ -2,6 +2,15 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-01
+
+- Massive metadata enrichment sweep: all 164 paper folders now have extended schema (domain, type, methods, key_findings, related_papers, checked_at) via `batch_enrich_metadata.py`. 44 previously-missing `metadata.json` files created, 119 existing ones extended with paper-specific content.
+- Multi-agent triple audit completed: metadata completeness (164/164 pass), navigability (all SKILL.md cross-references valid, all bibliography rows linked), domain accuracy (0 discrepancies), HTML output quality (26 root pages + 183 work pages well-formed, JSON-LD valid), live site parity (14/14 checks pass, no drift).
+- Quality improvement pass: replaced 3 placeholder key_findings, fixed 55 truncated findings with sentence-boundary extraction, replaced generic domain-template methods with paper-specific methods for 163 papers (e.g. "Uniparental marker haplotype analysis", "Lean 4 theorem proving", "CPRA legal analysis").
+- Added `code/orchestrators/batch_enrich_metadata.py` (bulk metadata generation), `code/orchestrators/improve_metadata_quality.py` (paper-specific methods/findings), `code/src/paper_metadata_schema.py` (dataclass schema).
+- Full `validate_repo.py --strict-reports` pipeline passes (30+ checks including browser smoke, accessibility, visual QA, live-site verification, sitemap, search index, external links).
+- Added works **#180 "Sortition Upstream of NTQR"** (`zenodo.21083779`), **#181 "Exploratory Data Analysis: A Reproducible Notebook Template"** (`zenodo.21086292`), **#182 "A Domain Language for Specifying Controlled Methods"** (`zenodo.21086548`) — all 💻 Computational, with paper folders and full metadata.
+
 ## 2026-06-29
 
 - Added work **#179 "Mapping William Blake's Works"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in `reports/publishing_status_megaindex.md`.
