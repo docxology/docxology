@@ -11,6 +11,8 @@
     "type": "publication",
     "subtype": "article"
   },
+  "domain": "Computational",
+  "type": "Paper",
   "creators": [
     {
       "name": "Daniel Ari Friedman",
@@ -22,7 +24,8 @@
       "affiliation": "Atta Labs"
     }
   ],
-  "description": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio\noptimization problem:  a corporation recursively improves when realized economic\ngains finance the next cycle of better prediction and deployment, and the firm's\nstanding is summarized by t-RSI, a standardized gap between alpha-creation and\nalpha-decay rates. AlphaCOGANT observes that this construction is, term for\nterm, an Active Inference agent  — and makes the correspondence executable.\n\nWe render AlphaFund's Economic World Model (EWM) as a generative model written\nin Generalized Notation Notation (GNN), produced by the COGANT\ncodebase-to-GNN translation pattern. The firm's five capital channels —\nInvestments, Sensors, Actuators, Parameters, and R&amp;D — become the hidden-state\nfactors of a partially-observed model; capital allocation becomes the control\nvector; and the portfolio optimizer's marginal-return objective becomes\nExpected Free Energy (EFE) minimization. The EFE decomposition supplies a\nprincipled reading of AlphaFund's own categories: its pragmatic value is\nexpected log-equity growth (the alpha-creation rate, read off the broker ledger),\nand its epistemic value is the information gain about the EWM that Sensors and\nR&amp;D purchase (the data-scaling and forecast-sharpening laws). t-RSI is recovered\nas the standardized distance between the create-rate and decay-rate posteriors —\nthe thresholded EFE-improvement certificate that admits a self-improvement commit\nonly when creation confidently exceeds decay.\n\nWe give the technical and computational realization: a GNN model file for the\nfive-channel firm, a tested NumPy Active Inference engine that performs state\ninference, computes the epistemic/pragmatic EFE split and the marginal-return\nvector, and evaluates the t-RSI certificate. We argue that GNN-via-COGANT brings\ntwo things AlphaFund's program needs and Active Inference already enforces:\nfiltration integrity (the model may condition only on information available\nat decision time — the same \"no-peeking\" discipline that separates an EWM from a\nlanguage model) and auditable capital allocation (every admissible funding\nmove has a negative-EFE score under a single, legible objective). This is not\nfinancial advice; it is a demonstration that this reduced\nrecursive-corporate-self-improvement model has a direct Active Inference\nrepresentation supported by source-owning methods and artifact checks .\n\n---\nAssociated artifacts\nGitHub release: v1.0.1 (https://github.com/docxology/alphacogant/releases/tag/v1.0.1)\nDOI: https://doi.org/10.5281/zenodo.20976824\nZenodo: https://zenodo.org/records/20976824\nPDF SHA-256: 41efa7a8a98e6a67cece68377b8f0c5f19304e85c664ec9516353ee24eb0421f",
+  "description": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem...",
+  "abstract": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standing is summarized by t-RSI, a standardized gap between alpha-creation and alpha-decay rates. AlphaCOGANT observes that this construction is, term for term, an Active Inference agent — and makes the correspondence executable. We render AlphaFund's Economic World Model (EWM) as a generative model written in Generalized Notation Notation (GNN), produced by the COGANT codebase-to-GNN translation pattern. The firm's five capital channels — Investments, Sensors, Actuators, Parameters, and R&D — become the hidden-state factors of a partially-observed model; capital allocation becomes the control vector; and the portfolio optimizer's marginal-return objective becomes Expected Free Energy (EFE) minimization. The EFE decomposition supplies a principled reading of AlphaFund's own categories: its pragmatic value is expected log-equity growth (the alpha-creation rate, read off the broker ledger), and its epistemic value is the information gain about the EWM that Sensors and R&D purchase (the data-scaling and forecast-sharpening laws). t-RSI is recovered as the standardized distance between the create-rate and decay-rate posteriors — the thresholded EFE-improvement certificate that admits a self-improvement commit only when creation confidently exceeds decay.",
   "keywords": [
     "active inference",
     "expected free energy",
@@ -57,5 +60,35 @@
     "github_release_mentions_doi",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-07-01T00:30:08Z"
+  "checked_at": "2026-07-01T00:30:08Z",
+  "venue": "Zenodo",
+  "methods": [
+    {"name": "Generalized Notation Notation (GNN) modeling", "description": "Formal specification of generative models in JSON/YAML format"},
+    {"name": "Active Inference simulation", "description": "NumPy engine for EFE computation and t-RSI evaluation"},
+    {"name": "Portfolio optimization analysis", "description": "Marginal-return vector computation and epistemic/pragmatic split"},
+    {"name": "State inference", "description": "Partially-observed model inference over five capital channels"}
+  ],
+  "key_findings": [
+    "t-RSI metric recovers as standardized EFE-improvement certificate for recursive self-improvement",
+    "Corporate EWM maps to five-channel hidden-state factors: Investments, Sensors, Actuators, Parameters, R&D",
+    "Epistemic value equals information gain about EWM purchased by Sensors/R&D (data-scaling law)",
+    "Filtration integrity constraint enforces no-peeking discipline in corporate modeling"
+  ],
+  "related_papers": [
+    "2026_COGANT",
+    "2025_CEREBRUM",
+    "2026_FEPLean"
+  ],
+  "related_software": [
+    "docxology/alphacogant",
+    "ActiveInferenceInstitute/COGANT",
+    "docxology/GeneralizedNotationNotationGNN"
+  ],
+  "citation_bibtex": "@article{friedman2026alphacogant,\n  author = {Friedman, Daniel Ari},\n  title = {AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference},\n  year = {2026},\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.20976824}\n}",
+  "license_spdx": "MIT",
+  "reproducibility_artifacts": [
+    "GNN model file for five-channel firm",
+    "NumPy Active Inference engine with tests",
+    "t-RSI certificate evaluation scripts"
+  ]
 }
