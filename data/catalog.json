@@ -525,7 +525,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-06-30.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-07-01.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -539,7 +539,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-06-30.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-07-01.json",
         "encodingFormat": "application/json"
       }
     }
