@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20804586
+- **Zenodo record**: https://zenodo.org/records/20804585
 - **GitHub release**: https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0
 - **Pairing evidence**: github_release_mentions_doi, zenodo_related_identifier_mentions_release, github_repo_self_linked

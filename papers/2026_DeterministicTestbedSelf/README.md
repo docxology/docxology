@@ -30,7 +30,7 @@ agent coordination · scientific discovery · noise-band confirmation · ablatio
 | **DOI** | [10.5281/zenodo.20533669](https://doi.org/10.5281/zenodo.20533669) |
 | **Published** | 2026 |
 | **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20533670 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20533669 |
 | **GitHub release** | https://github.com/docxology/template_autoscientists/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/template_autoscientists |
 

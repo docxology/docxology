@@ -1,0 +1,80 @@
+{
+  "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+  "version": "1",
+  "doi": "10.5281/zenodo.13754585",
+  "doi_url": "https://doi.org/10.5281/zenodo.13754585",
+  "zenodo_record": "https://zenodo.org/records/13754585",
+  "record_id": "13754586",
+  "publication_date": "2024-09-12",
+  "resource_type": {
+    "title": "Other",
+    "type": "other"
+  },
+  "creators": [
+    {
+      "name": "Baulin, Vladimir",
+      "affiliation": "University Rovira i Virgili - Spain",
+      "orcid": "0000-0003-2086-4271"
+    },
+    {
+      "name": "Vyatkin, Alex",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-1306-4620"
+    },
+    {
+      "name": "GUÉNIN—CARLUT, Avel",
+      "affiliation": "University of Sussex",
+      "orcid": "0000-0001-8239-7264"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Bolt, John",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0002-0878-5546"
+    },
+    {
+      "name": "Falkenstein, Stefan",
+      "affiliation": "University of Michigan",
+      "orcid": "0009-0008-5054-4969"
+    },
+    {
+      "name": "Jassal, Parishrut",
+      "affiliation": "National Institute for Educational Planning and Administration, India",
+      "orcid": "0009-0008-4351-805X"
+    },
+    {
+      "name": "Trois, Celio",
+      "affiliation": "University Rovira i Virgili - Spain",
+      "orcid": "0000-0002-7386-9749"
+    },
+    {
+      "name": "Minchin, Jonathan",
+      "affiliation": "DeepSea Numerical",
+      "orcid": "0000-0001-8152-1796"
+    }
+  ],
+  "description": "Project description submitted as part of application to Future of Life Institute - How to mitigate AI-driven power concentration Climate change intensifies agricultural challenges, requiring more and more advanced technological solutions. Small farmers increasingly rely on technical assistance, which is becoming centralized, dominated by large agricultural corporations and governments imposing sophisticated pre-designated solutions. As AI proliferates within these centralized solutions, diseases mitigation methods, climate credits, government subsidies, and regulations risk monopolizing farmers' activities. This tendency, amplified by AI development, &nbsp;threatens to undermine farmers' autonomy and limit their ability to make independent decisions, converting them into consumers of centralized technological solutions. &nbsp; We propose to develop FarmWorks &mdash; a platform for human-AI interaction in agriculture that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems.&nbsp;FarmWorks addresses the above challenges by providing an open source decentralized AI-powered agricultural platform that empowers individual farmers with cutting-edge technology while preserving their autonomy and promoting sustainable practices. By integrating real-time data collection, edge computing, and Active Inference models, FarmWorks enables farmers to make informed decisions tailored to their specific contexts (for example, integrating humidity data and epidemiological models to assist farmers with remediative and anticipatory treatments for mold).",
+  "keywords": [],
+  "files": [
+    {
+      "name": "FarmWorks_v1_9-12-2024.docx",
+      "size_bytes": 522243,
+      "checksum": "md5:5b71040722f5e013720d0929bb80a96a",
+      "download_url": "https://zenodo.org/api/records/13754586/files/FarmWorks_v1_9-12-2024.docx/content"
+    },
+    {
+      "name": "FarmWorks_v1_9-12-2024.pdf",
+      "size_bytes": 670467,
+      "checksum": "md5:dfb3e52329782de87edbf669419cbfde",
+      "download_url": "https://zenodo.org/api/records/13754586/files/FarmWorks_v1_9-12-2024.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:27Z"
+}

@@ -21,7 +21,7 @@ research data formats · authenticated encryption · AES-256-GCM · reproducible
 | **DOI** | [10.5281/zenodo.20647443](https://doi.org/10.5281/zenodo.20647443) |
 | **Published** | 2026-06-11 |
 | **Version** | 0.4 |
-| **Zenodo record** | https://zenodo.org/records/20647443 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20396328 |
 
 ## Files
 

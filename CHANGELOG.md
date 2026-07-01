@@ -2,12 +2,38 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-06-29
+
+- Added work **#179 "Mapping William Blake's Works"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in `reports/publishing_status_megaindex.md`.
+
+## 2026-06-27
+
+- Added work **#178 "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"** (`zenodo.20976824`, `docxology/alphacogant` v1.0.1) with paper folder, PDF, and work page; updated "A template/ approach to Reproducible Generative Research" to Zenodo version v1.0.9. Regenerated the dependent layer and refreshed the live-site verification snapshot.
+- `build_work_pages.py` now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site), driven by a new `data/publishing-status.json`; added `reports/publishing_status_megaindex.md`, a publishing-status mega-index across 272 items (works + software) with per-platform coverage and gaps. Began archiving origins to Software Heritage via anonymous Save Code Now.
+
+## 2026-06-26
+
+- Added works **#176 "A Living Meta-Analysis of the Modafinil Literature"** and **#177 "Refinement of Gold"** via the paired GitHub+Zenodo scan, with new paper folders (README/AGENTS/SKILL/CITATION.cff/metadata.json) and Zenodo PDFs; refreshed `checked_at` metadata on 27 existing paired works. Regenerated bibliography exports, publications/works/paper/domain pages, catalog, search index, feed, sitemap, resume, claims, evidence/reconciliation, and current counts; live-site snapshot refreshed.
+
+## 2026-06-24
+
+- Added work **#175 "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"** (`zenodo.20834846`, `docxology/realizing_emptiness` v1.0.0) via `sync_paired_publications.py --apply`; refreshed `checked_at` metadata and software links for 25 existing works; fixed the `pages/BIBLIOGRAPHY.md` paper-folder prose count (156→157).
+- Added `code/orchestrators/regenerate_all.py`: a single-command, dependency-ordered, local-only write-mode counterpart to `validate_repo.py`'s `--check` sequence (manifest last), replacing manual whack-a-mole after a publication-sync apply. `refresh_bibliography_counts` now also keeps the "**N** indexed paper folders" prose current. `validate_repo.py` now runs `sync_scholar_metrics.py --check`, catching Scholar-metric drift across README/BIBLIOGRAPHY/PROFILE/LINKS/DISCOVERY (previously unguarded).
+- Pruned superseded dated QA screenshot sets under `reports/visual-qa` and `reports/browser-smoke` (validation only reads the latest); `reports/` 100 MB → 40 MB. `add_zenodo_only.py` now runs `regenerate_all.py` automatically after adding records.
+- Softened unguarded external/domain prose counts that would drift as external repos grow (codomyrmex module counts, COGSEC bio paper/book counts); fixed `regenerate_all.py`'s report-producer ordering so write-mode indexes don't go stale relative to the dated reports they link.
+
+## 2026-06-22
+
+- Synced the **CogSecSkills** publication (`zenodo.20804585`, 💻) and hardened publication intake.
+
 ## 2026-06-21
 
 - Added two Zenodo publications: **Template Madlib** (`zenodo.20786638`, 💻) — `docxology/template_madlib`, deterministic token injection for conditional IMRAD manuscripts — as work **172**, and **California Public Records** (`zenodo.20789899`, 🛡️) — a technical and legal reference for the post-AB 473 era — as work **173**. Downloaded both PDFs, generated work/paper pages, and registered `papers/README.md` entries. Bibliography **170→172**; paper folders **153→155**. Also added the previously-missing **COGANT-0.6.0.pdf** and removed a duplicate On-Policy Distillation folder.
 - Repo-wide **Zenodo DOI concept-consistency** pass: switched **70** bibliography rows (plus the 4 newest works and the `itrace` / `ntqr_llm` / `on_policy_distillation` software-catalog links) from per-version DOIs to their **concept DOIs**, each verified against the Zenodo API `conceptdoi` field so the citation always resolves to the latest version. Deliberately excluded version-distinct works that share a single concept DOI (e.g. the AII Ecosystem v1/v2/v3 snapshots) to avoid duplicate DOIs.
 - Added **AGEINT** (`docxology/AGEINT`) and **template_madlib** (`docxology/template_madlib`) to the software catalog: docxology owned **58→60**, Grand Total **92→94** (Education 5→6, Developer Tools 15→16); recomputed the GitHub-inventory curated split.
 - Fixes: `sync_publications_html.py` now patches `twitter:image:alt` with the live work count (was stale at 170); removed a doubled "Abstract" heading and added the MIT `license` field in the On-Policy Distillation paper folder; reconciled that folder's metadata to its concept DOI.
+- Design/a11y pass: reconciled `design-system.md` to the actual `style.css` (corrected background/radius/body-font/focus-color tokens, documented previously-missing tokens); added mobile-menu `aria-expanded` toggling, ESC-to-close, and a 44px WCAG touch target across all 20 nav pages and their generators; fixed heading-hierarchy skips (h1→h3/h2→h4) on domain and index pages; added `aria-label`s to 3 unlabelled search inputs; tokenized 26 hardcoded gold `rgba()` values into 14 `--gold-NN` tokens (no visual change); `accessibility_audit.py` now enforces single-h1, no-heading-skips, and form-control-labels (22/22 pages pass).
+- Migrated the site body font from Georgia serif to **Inter** to match the design system (Playfair Display headings unchanged); centralized the duplicated menu-ESC handler into `site_nav.MENU_ESC_SCRIPT`; removed 26 lines of verified-dead CSS (duplicate footer block, zero-reference selectors) after confirming the two-layer base+newspaper override structure is intentional, not duplication.
 
 ## 2026-06-17
 

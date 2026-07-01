@@ -34,7 +34,7 @@ gold refining · manuscript composition · mega-madlib · token injection · sci
 | **DOI** | [10.5281/zenodo.20931955](https://doi.org/10.5281/zenodo.20931955) |
 | **Published** | 2026-06-25 |
 | **Version** | 0.1.0 |
-| **Zenodo record** | https://zenodo.org/records/20931956 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20931955 |
 | **GitHub release** | https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0 |
 | **Source repository** | https://github.com/docxology/template_gold_refinement |
 

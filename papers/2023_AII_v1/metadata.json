@@ -1,0 +1,150 @@
+{
+  "title": "The Active Inference Institute and Active Inference Ecosystem",
+  "version": "001.1",
+  "doi": "10.5281/zenodo.8266280",
+  "doi_url": "https://doi.org/10.5281/zenodo.8266280",
+  "zenodo_record": "https://zenodo.org/records/8266280",
+  "record_id": "8266281",
+  "publication_date": "2023-08-19",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Active Inference Institute",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0008-7721-7407"
+    },
+    {
+      "name": "Aguirre, Ander",
+      "affiliation": "Active Inference Institute, Ohio State University",
+      "orcid": "0000-0002-6337-8292"
+    },
+    {
+      "name": "Boik, John",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-1289-7997"
+    },
+    {
+      "name": "Burian, Libor",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0007-6181-340X"
+    },
+    {
+      "name": "Brown, Matthew",
+      "affiliation": "Active Inference Institute, ThoughtForge Inc.",
+      "orcid": "0000-0002-7552-0989"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "David, Scott",
+      "affiliation": "Active Inference Institute, Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), University of Washington - Applied Physics Laboratory.",
+      "orcid": "0000-0003-0679-3286"
+    },
+    {
+      "name": "Douglass, David S",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-7894-8019"
+    },
+    {
+      "name": "Fernandez-Maquieira, Pablo",
+      "affiliation": "Active Inference Institute, NFT-Crap"
+    },
+    {
+      "name": "Friedman, Daniel A",
+      "affiliation": "Active Inference Institute, University of California (Davis)",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Grimm, Holly",
+      "affiliation": "Active Inference Institute,",
+      "orcid": "0009-0001-6181-2569"
+    },
+    {
+      "name": "Guénin–Carlut, Avel",
+      "affiliation": "Active Inference Institute, Verses Lab, University of Sussex, Kairos Research",
+      "orcid": "0000-0001-8239-7264"
+    },
+    {
+      "name": "Iennaco, Maria Luiza",
+      "affiliation": "Active Inference Institute, University of São Paulo",
+      "orcid": "0000-0002-5407-4852"
+    },
+    {
+      "name": "Knight, V Bleu",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0002-9894-1989"
+    },
+    {
+      "name": "Mikhailova, Alexandra",
+      "affiliation": "Active Inference Institute, University of California (Davis)",
+      "orcid": "0000-0002-8699-7125"
+    },
+    {
+      "name": "Rahmjoo, Ali",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0002-3244-7419"
+    },
+    {
+      "name": "Razi, Adeel",
+      "affiliation": "Active Inference Institute, Turner Institute for Brain and Mental Health, Monash University, Australia 12. Wellcome Centre for Human NeuroImaging, University College London, CIFAR Azrieli Global Scholars program, CIFAR, Toronto, Canada",
+      "orcid": "0000-0002-0779-9439"
+    },
+    {
+      "name": "Smékal, Jakub",
+      "affiliation": "Active Inference Institute,",
+      "orcid": "0000-0003-4989-4968"
+    },
+    {
+      "name": "Tamari, Ronen",
+      "affiliation": "Active Inference Institute, Hebrew University of Jerusalem, Common SenseMakers",
+      "orcid": "0000-0002-6049-591X"
+    },
+    {
+      "name": "Tickles, Dean",
+      "affiliation": "Active Inference Institute,",
+      "orcid": "0000-0003-2213-0773"
+    },
+    {
+      "name": "Vyatkin, Alex",
+      "affiliation": "Active Inference Institute,",
+      "orcid": "0000-0003-1306-4620"
+    }
+  ],
+  "description": "This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions. It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute.",
+  "keywords": [
+    "Active Inference",
+    "Active Inference Ecosystem",
+    "Active Inference Institute"
+  ],
+  "files": [
+    {
+      "name": "ActiveInference_Institute-Ecosystem_2023_v1-1.odt",
+      "size_bytes": 631775,
+      "checksum": "md5:38b260b291b4545a5ac07cb0ad2c217a",
+      "download_url": "https://zenodo.org/api/records/8266281/files/ActiveInference_Institute-Ecosystem_2023_v1-1.odt/content"
+    },
+    {
+      "name": "ActiveInference_Institute-Ecosystem_2023_v1-1.docx",
+      "size_bytes": 1178338,
+      "checksum": "md5:830baec6ca5d0530d5e9bc96198e0f6f",
+      "download_url": "https://zenodo.org/api/records/8266281/files/ActiveInference_Institute-Ecosystem_2023_v1-1.docx/content"
+    },
+    {
+      "name": "ActiveInference_Institute-Ecosystem_2023_v1-1.pdf",
+      "size_bytes": 939049,
+      "checksum": "md5:8727f52a8c9456f102b6e23755cbe4fa",
+      "download_url": "https://zenodo.org/api/records/8266281/files/ActiveInference_Institute-Ecosystem_2023_v1-1.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:05Z"
+}

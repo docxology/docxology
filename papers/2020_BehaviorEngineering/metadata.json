@@ -1,0 +1,61 @@
+{
+  "title": "Active Inference & Behavior Engineering for Teams",
+  "version": "1",
+  "doi": "10.5281/zenodo.4021162",
+  "doi_url": "https://doi.org/10.5281/zenodo.4021162",
+  "zenodo_record": "https://zenodo.org/records/4021162",
+  "record_id": "4021163",
+  "publication_date": "2020-09-09",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Vyatkin, Alexander",
+      "affiliation": null,
+      "orcid": "0000-0003-1306-4620"
+    },
+    {
+      "name": "Metelkin, Ivan",
+      "affiliation": null,
+      "orcid": "0000-0003-2899-6690"
+    },
+    {
+      "name": "Mikhailova, Alexandra",
+      "affiliation": null,
+      "orcid": "0000-0002-8699-7125"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": null,
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous &amp; asynchronous communications, memes, geospatial maps, hardware/software use, and contact escalation. We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest. Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis. In this paper we explore how a new generation of ONFT for Remote Teams could be based on Active Inference, a process theory related to the Free Energy Principle. Effective ONFT based upon Active Inference could lead to the realization of lightweight and powerful epistemic tools to guide everyday decision-making in an embodied, enactive fashion. Such a technology for Remote Teams would lead to fundamental changes in various aspects of Team function, for example the efficiency of a Team&rsquo;s production of artifacts or self-reported &ldquo;phenomenology of the working day&rdquo;.",
+  "keywords": [
+    "Active Inference",
+    "Free Energy Principle",
+    "Remote Teams",
+    "Communication",
+    "Technology"
+  ],
+  "files": [
+    {
+      "name": "AIN1_Act_Inf_Narratives_v1.pdf",
+      "size_bytes": 3810012,
+      "checksum": "md5:dbdb6ffd6728b56d45c3eae20b421c4b",
+      "download_url": "https://zenodo.org/api/records/4021163/files/AIN1_Act_Inf_Narratives_v1.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:41Z"
+}

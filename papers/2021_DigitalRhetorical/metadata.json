@@ -1,0 +1,51 @@
+{
+  "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+  "version": "1.1",
+  "doi": "10.5281/zenodo.5573946",
+  "doi_url": "https://doi.org/10.5281/zenodo.5573946",
+  "zenodo_record": "https://zenodo.org/records/5573946",
+  "record_id": "5573947",
+  "publication_date": "2021-10-16",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Mridula Mascarenhas",
+      "affiliation": "California State University Monterey Bay, School of Humanities and Communication"
+    },
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "COGSEC; Atlantic Council GeoTech Center",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel A. Friedman",
+      "affiliation": "COGSEC; University of California, Davis, Department of Entomology and Nematology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives. In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation. Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags. We argue that using a rhetorical approach (which emphasizes message form and audience) in large-scale analyses of multimedia and other digital artifacts can enhance analytic tools for categorizing, indexing, searching, and modeling online discourse. Further, by integrating a rhetorical and an ecosystem approach to studying digital discourse, we can formally trace multimedia rhetorical artifacts like image memes across platforms, media types, and languages. Combined rhetorical and ecosystem analyses can reveal how digital artifacts like image memes create, sustain, and disrupt public narratives and, thereby, socio-political dynamics. Three key elements of our approach are a) recognizing how parsimony and polysemy give image memes narrative power, b) focusing on how image memes engage audiences through identity construction, and c) applying &ldquo;Rhetorical Ecosystem&rdquo; mapping, based upon toolkit transfer and system design implications. Drawing from concepts in rhetoric, ecology, and complex systems analysis we introduce a Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain how memes impact public narratives and beliefs. We then explore implications of this DRE3 model for the design and development of systems for computational analysis of digital discourse.",
+  "keywords": [
+    "Rhetoric",
+    "Ecology",
+    "Memes",
+    "Sensemaking",
+    "SCADA",
+    "NIM"
+  ],
+  "files": [
+    {
+      "name": "ECOMEME v1.1.pdf",
+      "size_bytes": 2259667,
+      "checksum": "md5:eb16ffcd28e2f9ed173392af7ab59944",
+      "download_url": "https://zenodo.org/api/records/5573947/files/ECOMEME%20v1.1.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:47Z"
+}

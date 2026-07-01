@@ -1,0 +1,63 @@
+{
+  "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
+  "version": "v1",
+  "doi": "10.5281/zenodo.7449367",
+  "doi_url": "https://doi.org/10.5281/zenodo.7449367",
+  "zenodo_record": "https://zenodo.org/records/7449367",
+  "record_id": "7449368",
+  "publication_date": "2022-12-16",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Knight, Virginia Bleu",
+      "affiliation": "Active Inference Institute, New Mexico State University, Las Cruces NM. Department of Biology",
+      "orcid": "0000-0002-9894-1989"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "Cognitive Security and Education Forum (COGSEC), Active Inference Institute",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute, Cognitive Security and Education Forum (COGSEC), University of California, Davis. Department of Entomology & Nematology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Here we perform a literature analysis of publications in scientific literature using the term &ldquo;Free Energy Principle&rdquo; or &ldquo;Active Inference&rdquo;, with an emphasis on works written by Karl J Friston. For a subset of papers with accessible full texts, we performed manual annotation (related to structural, visual, and mathematical features) and automated analyses (related to the terms in the Active Inference Institute&rsquo;s Active Inference Ontology). The initial analysis here, at the scale of thousands of citations and hundreds of annotated papers, is presented as a first step towards the development of systems which could:&nbsp; Encompass increased scope of relevant works, including non-textual Integrate multiple forms of annotation and participation&nbsp; Facilitate integration of manual and artificial contributions Feature richer interfaces for use in learning &amp; research Address field-specific local questions and provide transferable approaches Speak to broader questions in the history and philosophy of science&nbsp; This project is maintained by the Active Inference Institute. This project&nbsp;has&nbsp;an&nbsp; interactive Coda site &nbsp;and a Github repository .",
+  "keywords": [
+    "Active Inference",
+    "Free Energy Principle",
+    "Literature analysis",
+    "History of Science",
+    "Ontology"
+  ],
+  "files": [
+    {
+      "name": "KnightCordesFriedman_2022_ActInf_FEP_Literature_v1.zip",
+      "size_bytes": 3562924,
+      "checksum": "md5:b2b003f47bd13cba28cbeb94dd52b9d4",
+      "download_url": "https://zenodo.org/api/records/7449368/files/KnightCordesFriedman_2022_ActInf_FEP_Literature_v1.zip/content"
+    },
+    {
+      "name": "KnightCordesFriedman_2022_ActInf_FEP_Literature_v1.pdf",
+      "size_bytes": 3254903,
+      "checksum": "md5:6e0d467a622af2b84f27e234c00e477d",
+      "download_url": "https://zenodo.org/api/records/7449368/files/KnightCordesFriedman_2022_ActInf_FEP_Literature_v1.pdf/content"
+    },
+    {
+      "name": "KnightCordesFriedman_2022_ActInf_FEP_Literature_v1.odt",
+      "size_bytes": 3629849,
+      "checksum": "md5:f8f75223878614a96538122ed4633073",
+      "download_url": "https://zenodo.org/api/records/7449368/files/KnightCordesFriedman_2022_ActInf_FEP_Literature_v1.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:59Z"
+}

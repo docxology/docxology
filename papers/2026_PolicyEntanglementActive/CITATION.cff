@@ -16,7 +16,7 @@ identifiers:
     value: 10.5281/zenodo.20419637
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20419637"
+    value: "https://zenodo.org/records/20418904"
     description: "Zenodo landing page"
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0"

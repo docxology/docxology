@@ -1,0 +1,45 @@
+{
+  "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
+  "version": "v1",
+  "doi": "10.5281/zenodo.19574117",
+  "doi_url": "https://doi.org/10.5281/zenodo.19574117",
+  "zenodo_record": "https://zenodo.org/records/19574117",
+  "record_id": "19574118",
+  "publication_date": "2026-04-15",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Chambers, Tucker Cahill",
+      "affiliation": null,
+      "orcid": "0009-0008-3793-7872"
+    }
+  ],
+  "description": "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding&mdash; and correcting&mdash;the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento- Linguistic framework that decomposes the terminological landscape of insect research into analytically tractable themes, isolating domains where anthropomorphic language most severely distorts causal modeling. Second, we de- velop an open-source computational pipeline that integrates automated term extraction, co-occurrence network construction, and information-theoretic ambiguity scoring with principles from Active Inference and Complex Systems Theory. Third, we propose and validate four evidence-based meta-standards&mdash;Clarity, Appropriateness, Consistency, and Evolvability (CACE)&mdash;as a formalized protocol for lexical engineering. Analysis of a corpus encompassing 369 entomological publications (48787 tokens; 7105 unique token types; Type&ndash;Token Ratio 0.1456) extracts 888 candidate terms (with 261 assigned to specific semantic domains across 6 conceptual clusters linked by 9 weighted relationships). The resulting terminology networks display strong modularity alongside systematic cross-domain bridging&mdash;most prominently in the Power and Labor domain, where 43 bridging terms generate extensive semantic bleed-over into adjacent domains. Terms such as &ldquo;queen&rdquo; (241 occurrences), &ldquo;worker&rdquo; (269), and &ldquo;caste&rdquo; (121) implicitly impose hierarchical control topologies onto biological structures that are funda- mentally stigmergic and decentralized. Across all 261 domain-assigned terms, 16.9% exhibit context-dependent semantic drift, demonstrating how conceptual constructs like &ldquo;individuality&rdquo; span multiple biological scales and consequently blur the formal systemic boundaries (Markov Blankets) required for mathematically rigorous mod- eling. The accompanying fully reproducible computational pipeline provides the quantitative analytical tools necessary for a more self-aware and epistemically rigorous scientific practice. All code and data are available at https://github.com/docxology/ento_linguistics.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Ento_Linguistics_DAF_TCC_v1_04-15-2026.zip",
+      "size_bytes": 142027862,
+      "checksum": "md5:721f49ee6ecbc041e9fe513d32b1ff8b",
+      "download_url": "https://zenodo.org/api/records/19574118/files/Ento_Linguistics_DAF_TCC_v1_04-15-2026.zip/content"
+    },
+    {
+      "name": "Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf",
+      "size_bytes": 5889924,
+      "checksum": "md5:03ed20fedbf8d454bfb4e2aa44396d7f",
+      "download_url": "https://zenodo.org/api/records/19574118/files/Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:10Z"
+}

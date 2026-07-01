@@ -1,0 +1,51 @@
+{
+  "title": "The Innovator's Catechism",
+  "version": "v1",
+  "doi": "10.5281/zenodo.4383229",
+  "doi_url": "https://doi.org/10.5281/zenodo.4383229",
+  "zenodo_record": "https://zenodo.org/records/4383229",
+  "record_id": "4383230",
+  "publication_date": "2020-12-21",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "COGSEC; Remotor Consulting Group; Atlantic Council GeoTech Center",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel A. Friedman",
+      "affiliation": "COGSEC; Remotor Consulting Group; University of California, Davis, Department of Entomology",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Steven E. Phelan",
+      "affiliation": "Fayetteville State University, Dept. of Graduate & Professional Studies in Business",
+      "orcid": "0000-0003-3897-3273"
+    }
+  ],
+  "description": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives in order to achieve success. Many of these teams disintegrate or fail to perform due to lack of alignment. Operations orders, such as those in use by the military, have demonstrable impact on organizational efficacy and success. This paper summarizes the history, development, and impact of military operations orders, discusses the history and development of their business counterparts, and presents the &ldquo;The Innovator&rsquo;s Catechism&rdquo;, a catechism-styled operations order for use by early-stage innovation teams. This operations order is built from the &ldquo;Facilitator&rsquo;s Catechism&rdquo;, an operations order for rapidly formed research teams, with acknowledgment for the special information requirements present for emergent and early-stage teams that are market-facing.",
+  "keywords": [
+    "Entrepreneurship",
+    "Remote Teams",
+    "OPORD",
+    "High Reliability Organizations",
+    "Small Teams"
+  ],
+  "files": [
+    {
+      "name": "The Innovators Catechism.pdf",
+      "size_bytes": 2008642,
+      "checksum": "md5:2fd99dcfb1cdc0c630d23d80f0c54db2",
+      "download_url": "https://zenodo.org/api/records/4383230/files/The%20Innovators%20Catechism.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:46Z"
+}

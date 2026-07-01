@@ -13,11 +13,13 @@ import json
 import re
 import subprocess
 import time
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
     from report_paths import dated_report_path, generated_timestamp, latest_report

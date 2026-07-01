@@ -1,0 +1,64 @@
+{
+  "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.10601081",
+  "doi_url": "https://doi.org/10.5281/zenodo.10601081",
+  "zenodo_record": "https://zenodo.org/records/10601081",
+  "record_id": "10601082",
+  "publication_date": "2024-01-31",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "As we head through and past January 2024, I wondered if/that&hellip;",
+  "keywords": [
+    "Active Inference",
+    "Dark Imaginarium",
+    "Epistemic value",
+    "Pragmatic value"
+  ],
+  "files": [
+    {
+      "name": "WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.pdf",
+      "size_bytes": 97657,
+      "checksum": "md5:fea617cd2e20d897d9ab7b26f16f7639",
+      "download_url": "https://zenodo.org/api/records/10601082/files/WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.pdf/content"
+    },
+    {
+      "name": "WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.rtf",
+      "size_bytes": 689660,
+      "checksum": "md5:28c7ffbdc62ff6723f3d8650398ff1cc",
+      "download_url": "https://zenodo.org/api/records/10601082/files/WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.rtf/content"
+    },
+    {
+      "name": "WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.docx",
+      "size_bytes": 19135,
+      "checksum": "md5:26cae82d7618555f6453af16d2032e79",
+      "download_url": "https://zenodo.org/api/records/10601082/files/WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.docx/content"
+    },
+    {
+      "name": "WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.epub",
+      "size_bytes": 13773,
+      "checksum": "md5:4256cba6f6d5cc0cc74f8d832b6f959f",
+      "download_url": "https://zenodo.org/api/records/10601082/files/WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.epub/content"
+    },
+    {
+      "name": "WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.odt",
+      "size_bytes": 24281,
+      "checksum": "md5:099ce896aac6edb1a1d2f946da33aced",
+      "download_url": "https://zenodo.org/api/records/10601082/files/WayFinding_InfiniteImaginarium_v1_DAF_1-31-2024.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:29Z"
+}

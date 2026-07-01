@@ -23,7 +23,7 @@ madlib generation · token injection · conditional manuscripts · reproducible 
 | **Published** | 2026-06-21 |
 | **Version** | 0.1.0 |
 | **License** | MIT |
-| **Zenodo record** | https://zenodo.org/records/20786639 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20786638 |
 
 ## Files
 

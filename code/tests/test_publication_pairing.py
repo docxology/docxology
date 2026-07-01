@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -11,11 +12,14 @@ sys.path.insert(0, str(SRC_DIR))
 
 from publication_pairing import (  # noqa: E402
     GitHubRelease,
+    PublicationPair,
     ZenodoRecord,
     confidence_for_pair,
     extract_dois,
     find_publication_pairs,
+    infer_domain,
     is_ignored_release,
+    yaml_double_quoted,
 )
 
 
@@ -61,7 +65,9 @@ def test_api_normalization_for_github_and_zenodo_records():
     assert release.assets[0].name == "paper.pdf"
     assert record.record_id == "1"
     assert record.doi == "10.5281/zenodo.0"
-    assert record.record_url == "https://zenodo.org/records/1"
+    # record_url must agree with the canonical concept DOI, not the version-specific record_id,
+    # so the same document never cites two different Zenodo record URLs for one work.
+    assert record.record_url == "https://zenodo.org/records/0"
 
 
 def test_template_smoke_release_is_ignored():
@@ -216,3 +222,74 @@ def test_release_self_repo_link_alone_does_not_create_pair():
     )
 
     assert confidence_for_pair(release, record) is None
+
+
+def _unescape_yaml_double_quoted(escaped: str) -> str:
+    # Single left-to-right pass: a backslash followed by any character means
+    # that character literally. Mirrors how a YAML double-quoted scalar resolves
+    # the \\ and \" escapes yaml_double_quoted() produces.
+    return re.sub(r"\\(.)", r"\1", escaped)
+
+
+def test_yaml_double_quoted_escapes_inner_quotes_and_backslashes():
+    title = 'Transcript of: Mark Solms, "Consciousness as Precision Optimization"'
+    escaped = yaml_double_quoted(title)
+    assert '"' not in escaped.replace('\\"', "")  # every quote is escaped
+    assert _unescape_yaml_double_quoted(escaped) == title
+
+    backslash_title = "A path C:\\data and a \"quote\""
+    escaped2 = yaml_double_quoted(backslash_title)
+    assert _unescape_yaml_double_quoted(escaped2) == backslash_title
+
+
+def _domain_pair(*, title: str, description: str, keywords: list[str]) -> PublicationPair:
+    release = GitHubRelease(
+        owner="docxology",
+        repo="probe",
+        tag="v0.1.0",
+        name="probe v0.1.0",
+        body="DOI: https://doi.org/10.5281/zenodo.1",
+        html_url="https://github.com/docxology/probe/releases/tag/v0.1.0",
+        published_at="2026-06-25T00:00:00Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="1",
+        doi="10.5281/zenodo.1",
+        title=title,
+        publication_date="2026-06-25",
+        version="0.1.0",
+        resource_type={"type": "publication", "title": "Publication"},
+        creators=[{"name": "Friedman, Daniel Ari"}],
+        description=description,
+        keywords=keywords,
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/1",
+    )
+    return PublicationPair(release=release, record=record, confidence="strong", evidence=())
+
+
+def test_infer_domain_does_not_false_positive_on_substrings():
+    # "dominant" contains "ant" and "smart" contains "art"; neither should trigger
+    # entomology/art domain tags without a genuine whole-word match.
+    pair = _domain_pair(
+        title="Sortition Upstream of NTQR",
+        description=(
+            "The dominant lever is which rule forms the panel, not its size; "
+            "a smart selection rule recovers best under a fully deterministic instrument."
+        ),
+        keywords=["sortition", "unlabeled evaluation", "expert panels"],
+    )
+
+    assert infer_domain(pair) is None
+
+
+def test_infer_domain_matches_whole_word_entomology_term():
+    pair = _domain_pair(
+        title="Ant Foraging Behavior",
+        description="A study of ant colony foraging behavior.",
+        keywords=["entomology"],
+    )
+
+    assert infer_domain(pair) == "🐜"

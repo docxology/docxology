@@ -21,7 +21,7 @@ William Blake · digital humanities · corpus acquisition · source provenance �
 | **DOI** | [10.5281/zenodo.21047573](https://doi.org/10.5281/zenodo.21047573) |
 | **Published** | 2026-06-29 |
 | **Version** | Unknown |
-| **Zenodo record** | https://zenodo.org/records/21047574 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/21047573 |
 | **GitHub release** | https://github.com/docxology/blake/releases/tag/v0.1.0 |
 | **Source repository** | https://github.com/docxology/blake |
 

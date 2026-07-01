@@ -1,0 +1,56 @@
+{
+  "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+  "version": "v1.1",
+  "doi": "10.5281/zenodo.10038231",
+  "doi_url": "https://doi.org/10.5281/zenodo.10038231",
+  "zenodo_record": "https://zenodo.org/records/10038231",
+  "record_id": "10038232",
+  "publication_date": "2023-10-24",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This paper provides an analysis of Giorgio Agamben's book Homo Sacer in the tradition of Active Inference. Homo Sacer articulates the relationship between bare life and political existence in Western politics and metaphysics. Agamben argues that politics is founded on the inclusive exclusion of bare life, where natural biological life – the physiology and cognition of the body – is politicized only through its exclusion as an exception. Drawing on Aristotle's definition of man as a political animal, Agamben traces the historical development of this structure and its continuation in modern biopolitics. Here we develop the above concepts in the setting of cognitive sovereignty and connect Agamben's framing of the political state of exception with Thomas Kuhn's theory of revolutionary science. We assert that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A given paradigmatic framework, whether in the normal political or normal scientific setting, establishes what counts as valid knowledge and action. Such normative establishments periodically enter crises, which are exited by cognitive and material restructuring downstream of the sovereign's cognitive agency (an agent's cognitive sovereignty). The paper explores how Active Inference, a theoretical framework for scientific inference, can enhance our understanding of sovereignty, agency, and the state of exception. As an introductory offering into this space, several concordances are drawn between Active Inference and Homo Sacer . Specifically: the state of exception is discussed in terms of affordances, bare life is discussed in terms of variational free energy, and sovereign agency is discussed in terms of expected free energy. Pseudocode of an \"Active Stateference\" entity is provided.&nbsp;&nbsp; Overall, this paper offers an initial accounting of Homo Sacer from the Active Inference perspective, and sketches some salient directions for understanding the dynamics of power, knowledge, and sovereignty in politics and science.&nbsp;",
+  "keywords": [
+    "Active Inference",
+    "Homo Sacer",
+    "Biopolitics"
+  ],
+  "files": [
+    {
+      "name": "CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.pdf",
+      "size_bytes": 220677,
+      "checksum": "md5:86f95057979f019836f5358cd411cdab",
+      "download_url": "https://zenodo.org/api/records/10038232/files/CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.pdf/content"
+    },
+    {
+      "name": "CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.epub",
+      "size_bytes": 25967,
+      "checksum": "md5:b940ca21e8aae7a6d2f5723309a103ab",
+      "download_url": "https://zenodo.org/api/records/10038232/files/CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.epub/content"
+    },
+    {
+      "name": "CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.docx",
+      "size_bytes": 33090,
+      "checksum": "md5:29e9f336881d6f1066db93177694c5fe",
+      "download_url": "https://zenodo.org/api/records/10038232/files/CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.docx/content"
+    },
+    {
+      "name": "CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.odt",
+      "size_bytes": 37815,
+      "checksum": "md5:418bc636eececb178ed3908156968bc8",
+      "download_url": "https://zenodo.org/api/records/10038232/files/CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:12Z"
+}

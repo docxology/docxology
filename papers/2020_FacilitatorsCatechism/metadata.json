@@ -1,0 +1,52 @@
+{
+  "title": "The Facilitator's Catechism",
+  "version": "v2",
+  "doi": "10.5281/zenodo.4062540",
+  "doi_url": "https://doi.org/10.5281/zenodo.4062540",
+  "zenodo_record": "https://zenodo.org/records/4062540",
+  "record_id": "4203765",
+  "publication_date": "2020-10-01",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "COGSEC; Remotor Consulting Group; Atlantic Council GeoTech Center",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "COGSEC; Remotor Consulting Group; University of California, Davis, Department of Entomology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from research on Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference are used to consider the historical, contemporary, and future requirements and constraints of Operations Orders. Examples of traditional military Operations Orders and their civilian counterparts are detailed in context with their respective environments and requirements. Key characteristics of survivability, contemporary and future requirements, and current limitations of extant Operations Orders are addressed in order to inform the proposal of a new Operations Order format for use by Process Facilitators of military, intelligence, and civilian teams: the &ldquo;Facilitator&rsquo;s Catechism&rdquo;.",
+  "keywords": [
+    "OPORD",
+    "Operations Orders",
+    "Military History",
+    "Remote Teams",
+    "Complexity",
+    "High Reliability Organizations",
+    "Organizational Sensemaking",
+    "Complex Threat Surfaces",
+    "Small Teams",
+    "Systems Engineering",
+    "Active Inference"
+  ],
+  "files": [
+    {
+      "name": "The Facilitators Catechismv2.pdf",
+      "size_bytes": 1981417,
+      "checksum": "md5:b08e045d5cba93b3d80cb3be109f2501",
+      "download_url": "https://zenodo.org/api/records/4203765/files/The%20Facilitators%20Catechismv2.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:44Z"
+}

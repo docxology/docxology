@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "FarmWorks: Decentralized AI Agents for Personalized Solutions"
+version: "1"
+date-released: 2024-09-12
+doi: 10.5281/zenodo.13754585
+url: "https://doi.org/10.5281/zenodo.13754585"
+authors:
+  - family-names: Baulin
+    given-names: Vladimir
+    orcid: "https://orcid.org/0000-0003-2086-4271"
+  - family-names: Vyatkin
+    given-names: Alex
+    orcid: "https://orcid.org/0000-0003-1306-4620"
+  - family-names: GUÉNIN—CARLUT
+    given-names: Avel
+    orcid: "https://orcid.org/0000-0001-8239-7264"
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Bolt
+    given-names: John
+    orcid: "https://orcid.org/0009-0002-0878-5546"
+  - family-names: Falkenstein
+    given-names: Stefan
+    orcid: "https://orcid.org/0009-0008-5054-4969"
+  - family-names: Jassal
+    given-names: Parishrut
+    orcid: "https://orcid.org/0009-0008-4351-805X"
+  - family-names: Trois
+    given-names: Celio
+    orcid: "https://orcid.org/0000-0002-7386-9749"
+  - family-names: Minchin
+    given-names: Jonathan
+    orcid: "https://orcid.org/0000-0001-8152-1796"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.13754585
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/13754585"
+    description: "Zenodo landing page"

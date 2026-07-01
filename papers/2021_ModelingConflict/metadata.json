@@ -1,0 +1,49 @@
+{
+  "title": "Active Inference in Modeling Conflict",
+  "version": "v1.2",
+  "doi": "10.5281/zenodo.5750934",
+  "doi_url": "https://doi.org/10.5281/zenodo.5750934",
+  "zenodo_record": "https://zenodo.org/records/5750934",
+  "record_id": "5759807",
+  "publication_date": "2021-12-02",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Scott David",
+      "affiliation": "Active Inference Lab; Information Risk and Synthetic Intelligence Research Initiative (IRSIRI),  University of Washington - Applied Physics Laboratory"
+    },
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "Active Inference Lab; COGSEC; Atlantic Council GeoTech Center",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel A. Friedman",
+      "affiliation": "Active Inference Lab; COGSEC; University of California, Davis, Department of Entomology and Nematology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "In this paper, we integrate conflict studies with Active Inference, a developing framework which provides an integrative and systems-level perspective on cognition and behavior. This formalization, the Active Inference Conflict (AIC) model, situates conflict in terms of a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model helps capture and extend the insights of previous models applied to aspects of conflict and war, such as OODA loops (observe-orient-decide-act), the generations of warfare model, and the Rumsfeld Matrix. The AIC model aids in the analysis of pertinent aspects of modern conflict, such as cyber, psychological, biological, informational, financial, and ideological conflict, that are not amenable to coherent or consistent analysis using traditional models of human conflict. AIC is demonstrated to be of use in both monitoring and studying conflict, as well as in designing systems intended to facilitate controlled or managed conflict in scenarios characterized by business, operations, legal, technical, and social (BOLTS) components. Insights and implications from qualitative use are used as a foundation for offering recommendations for future research and social systems design.",
+  "keywords": [
+    "Active Inference",
+    "Conflict",
+    "BOLTS",
+    "NIM"
+  ],
+  "files": [
+    {
+      "name": "AIC v1_2.pdf",
+      "size_bytes": 1025494,
+      "checksum": "md5:bb07e5a4aa1e3d20f26885fb169bf5c6",
+      "download_url": "https://zenodo.org/api/records/5759807/files/AIC%20v1_2.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:49Z"
+}

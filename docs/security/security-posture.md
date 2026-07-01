@@ -14,11 +14,11 @@ Static GitHub Pages site for a public research profile. No authentication, no se
 
 ## Responsible disclosure
 
-RFC 9116 `security.txt` is published at both [`/.well-known/security.txt`](../../.well-known/security.txt) (canonical) and [`/security.txt`](../../security.txt) (root mirror) — contact `Daniel@ActiveInference.Institute`, policy via GitHub issue chooser. Both carry a `Canary:` pointer to `/canary.txt` and an `Encryption:` pointer to `/.well-known/pgp-key.txt`; keep `Expires:` aligned to the quarterly canary cadence.
+RFC 9116 `security.txt` is published at both [`/.well-known/security.txt`](../../.well-known/security.txt) (canonical) and [`/security.txt`](../../security.txt) (root mirror) — contact `Daniel@ActiveInference.Institute`, policy via GitHub issue chooser. Both carry a `Canary:` pointer to `/canary.txt`; keep `Expires:` aligned to the quarterly canary cadence. An `Encryption:` field is deliberately omitted until a real PGP public key is published at `/.well-known/pgp-key.txt` — add the field back only once that file actually exists, so the RFC 9116 metadata never points to a dead reference.
 
 ## Warrant canary
 
-A warrant canary (`canary.txt`, dead-man's-switch, quarterly re-sign) affirms no secret legal process / duress / state compulsion. **It is a personal attestation: only the operator fills the live freshness anchors and PGP-clearsigns it** — it is published only when signed (an unsigned canary is intentionally withheld). When live it must be linked from a human nav surface and listed for discovery; the `Canary:`/`Encryption:` fields in `security.txt` resolve once it and `.well-known/pgp-key.txt` land.
+A warrant canary (`canary.txt`, dead-man's-switch, quarterly re-sign) affirms no secret legal process / duress / state compulsion. **It is a personal attestation: only the operator fills the live freshness anchors and PGP-clearsigns it** — it is published only when signed (an unsigned canary is intentionally withheld); it has since landed and is signed. The `Encryption:` field in `security.txt` should be added once `.well-known/pgp-key.txt` lands.
 
 ## Client-side XSS
 

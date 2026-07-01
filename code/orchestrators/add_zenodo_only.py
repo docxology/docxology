@@ -29,7 +29,8 @@ SRC = REPO_ROOT / "code" / "src"
 sys.path.insert(0, str(SRC))
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-from sync_paired_publications import refresh_bibliography_counts, slug_topic  # noqa: E402
+from publication_pairing import slug_topic, yaml_double_quoted, zenodo_record_url_from_doi  # noqa: E402
+from sync_paired_publications import refresh_bibliography_counts  # noqa: E402
 
 ORCID = "0000-0001-6232-9096"
 UA = "docxology-zenodo-backfill/1.0 (+https://danielarifriedman.com/)"
@@ -48,6 +49,16 @@ def fetch(record_id: str) -> dict:
         return json.loads(r.read().decode("utf-8"))
 
 
+def record_url(rec: dict) -> str:
+    """Concept-DOI-derived Zenodo landing page URL, consistent with the DOI shown
+    alongside it. rec['id'] is the version-specific record id, which can differ
+    from the concept id and would otherwise make the same document cite two
+    different Zenodo URLs for one work (see ZenodoRecord.record_url)."""
+    meta = rec.get("metadata") or {}
+    doi = rec.get("conceptdoi") or meta.get("conceptdoi") or rec.get("doi") or meta.get("doi") or ""
+    return zenodo_record_url_from_doi(doi) or f"https://zenodo.org/records/{rec.get('id')}"
+
+
 def clean(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text or "")
     return re.sub(r"\s+", " ", text).strip()
@@ -64,21 +75,26 @@ def infer_type(rtype: str, subtype: str, title: str) -> str:
     return "Paper"
 
 
+def _contains_term(text: str, term: str) -> bool:
+    """Whole-word/whole-phrase match so e.g. "ant" does not hit "dominant" and "art" does not hit "smart"."""
+    return re.search(rf"\b{re.escape(term)}\b", text) is not None
+
+
 def infer_domain(text: str) -> str:
     t = text.lower()
-    if any(w in t for w in ["ant", "bee", "insect", "ento", "foraging", "olfact", "semiochem"]):
+    if any(_contains_term(t, w) for w in ["ant", "bee", "insect", "ento", "foraging", "olfact", "semiochem"]):
         return "🐜"
-    if any(w in t for w in ["cognitive security", "cogsec", "narrative", "sensemaking", "rhetoric", "trust", "integrity", "memetic"]):
+    if any(_contains_term(t, w) for w in ["cognitive security", "cogsec", "narrative", "sensemaking", "rhetoric", "trust", "integrity", "memetic"]):
         return "🛡️"
-    if any(w in t for w in ["blake", "synergetics", "fuller", "quadray", "art "]):
+    if any(_contains_term(t, w) for w in ["blake", "synergetics", "fuller", "quadray", "art"]):
         return "🎨"
-    if any(w in t for w in ["genetic", "genomic", "transcriptomic", "biomedical", "hippocampus", "cortex", "neuro"]):
+    if any(_contains_term(t, w) for w in ["genetic", "genomic", "transcriptomic", "biomedical", "hippocampus", "cortex", "neuro"]):
         return "🧬"
-    if any(w in t for w in ["active inference", "free energy", "bayesian", "markov", "friston", "allostasis", "interoception"]):
+    if any(_contains_term(t, w) for w in ["active inference", "free energy", "bayesian", "markov", "friston", "allostasis", "interoception"]):
         return "🧠"
-    if any(w in t for w in ["software", "code", "pipeline", "reproducible", "computational", "benchmark", "harness", "agent"]):
+    if any(_contains_term(t, w) for w in ["software", "code", "pipeline", "reproducible", "computational", "benchmark", "harness", "agent"]):
         return "💻"
-    if "active inference institute" in t or "ecosystem" in t:
+    if "active inference institute" in t or _contains_term(t, "ecosystem"):
         return "🌍"
     return "🧠"
 
@@ -137,7 +153,7 @@ def render_readme(rec: dict, meta: dict) -> str:
 | **DOI** | [{doi}](https://doi.org/{doi}) |
 | **Published** | {meta.get('publication_date') or 'Unknown'} |
 | **Version** | {meta.get('version') or 'Unknown'} |
-| **Zenodo record** | https://zenodo.org/records/{rec.get('id')} |
+| **Zenodo record** | {record_url(rec)} |
 
 ## Files
 
@@ -149,7 +165,7 @@ def render_readme(rec: dict, meta: dict) -> str:
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/{rec.get('id')}
+- Zenodo record: {record_url(rec)}
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
 """
 
@@ -161,7 +177,7 @@ def render_agents(rec: dict, meta: dict) -> str:
 
 **Paper**: {title} ({year})
 **DOI**: [{rec.get('doi','')}](https://doi.org/{rec.get('doi','')})
-**Zenodo record**: https://zenodo.org/records/{rec.get('id')}
+**Zenodo record**: {record_url(rec)}
 
 ---
 
@@ -176,7 +192,7 @@ def render_agents(rec: dict, meta: dict) -> str:
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/{rec.get('id')}
+- **Zenodo record**: {record_url(rec)}
 - **Source**: Zenodo-only record (no paired GitHub release)
 """
 
@@ -188,7 +204,7 @@ def render_skill(rec: dict, meta: dict) -> str:
     concepts = "\n".join(f"- **{k}**" for k in kws)
     return f"""---
 name: "{slug_topic(title)}"
-description: "Use for {title}, a Zenodo publication with DOI {rec.get('doi','')}."
+description: "Use for {yaml_double_quoted(title)}, a Zenodo publication with DOI {rec.get('doi','')}."
 tags: {json.dumps(tags)}
 ---
 
@@ -231,7 +247,7 @@ def render_citation(rec: dict, meta: dict) -> str:
     return f"""cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "{title}"{version}
+title: "{yaml_double_quoted(title)}"{version}
 date-released: {meta.get('publication_date') or year}
 doi: {rec.get('doi','')}
 url: "https://doi.org/{rec.get('doi','')}"
@@ -242,7 +258,7 @@ identifiers:
     value: {rec.get('doi','')}
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/{rec.get('id')}"
+    value: "{record_url(rec)}"
     description: "Zenodo landing page"
 """
 
@@ -257,7 +273,7 @@ def metadata_payload(rec: dict, meta: dict) -> dict:
         "version": meta.get("version"),
         "doi": rec.get("doi"),
         "doi_url": f"https://doi.org/{rec.get('doi')}",
-        "zenodo_record": f"https://zenodo.org/records/{rec.get('id')}",
+        "zenodo_record": f"{record_url(rec)}",
         "record_id": str(rec.get("id")),
         "publication_date": meta.get("publication_date"),
         "resource_type": meta.get("resource_type"),

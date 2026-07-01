@@ -1,0 +1,46 @@
+{
+  "title": "MathArt Stream #8 ~ William Blake and Active Inference",
+  "version": null,
+  "doi": "10.5281/zenodo.13711301",
+  "doi_url": "https://doi.org/10.5281/zenodo.13711301",
+  "zenodo_record": "https://zenodo.org/records/13711301",
+  "record_id": "13711302",
+  "publication_date": "2024-09-06",
+  "resource_type": {
+    "title": "Presentation",
+    "type": "presentation"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC&nbsp; Shanna Dobson, Daniel Friedman \"William Blake, Kierkegaard, Gothic\" https://www.youtube.com/live/yIS0OW2o18s &nbsp; &nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "WilliamBlake_MathArt-Stream_DAF_9_6_2024.pptx",
+      "size_bytes": 29477747,
+      "checksum": "md5:892fb123d9a141cabc41b21659a5f7df",
+      "download_url": "https://zenodo.org/api/records/13711302/files/WilliamBlake_MathArt-Stream_DAF_9_6_2024.pptx/content"
+    },
+    {
+      "name": "WilliamBlake_MathArt-Stream_DAF_9_6_2024.odp",
+      "size_bytes": 29556928,
+      "checksum": "md5:d9515bc382f09904c9f6003961f5a49c",
+      "download_url": "https://zenodo.org/api/records/13711302/files/WilliamBlake_MathArt-Stream_DAF_9_6_2024.odp/content"
+    },
+    {
+      "name": "WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf",
+      "size_bytes": 5847019,
+      "checksum": "md5:c940f6e4b1a6f234be3b6fac2783e7ba",
+      "download_url": "https://zenodo.org/api/records/13711302/files/WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:30Z"
+}

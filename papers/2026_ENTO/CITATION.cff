@@ -15,7 +15,7 @@ identifiers:
     value: 10.5281/zenodo.20647443
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20647443"
+    value: "https://zenodo.org/records/20396328"
     description: "Zenodo landing page"
   - type: url
     value: "https://github.com/docxology/entofile/releases/tag/v0.4"

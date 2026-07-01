@@ -21,7 +21,7 @@ demo-generation · screencast · text-to-speech · code-walkthrough · video · 
 | **DOI** | [10.5281/zenodo.20693217](https://doi.org/10.5281/zenodo.20693217) |
 | **Published** | 2026-06-04 |
 | **Version** | 0.6.2 |
-| **Zenodo record** | https://zenodo.org/records/20693217 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20693216 |
 
 ## Files
 

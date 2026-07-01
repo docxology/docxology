@@ -14,6 +14,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
     from report_paths import latest_report, latest_subdir_file
@@ -253,6 +254,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
     run(["python3", "code/orchestrators/build_current_counts.py", "--check"])
+    run(["python3", "code/orchestrators/generate_og_images.py", "--check"])
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
     run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
@@ -264,6 +266,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/audit_assets.py", "--check"])
     run(["python3", "code/orchestrators/accessibility_audit.py", "--check"])
     run(["python3", "code/orchestrators/build_sitemap.py", "--check"])
+    run(["python3", "code/orchestrators/build_image_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/check_external_links.py", "--check"])
     run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])

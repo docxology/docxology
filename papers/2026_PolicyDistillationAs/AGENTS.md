@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20749817
+- **Zenodo record**: https://zenodo.org/records/20747834
 - **GitHub release**: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2
 - **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

@@ -1,0 +1,34 @@
+{
+  "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
+  "version": null,
+  "doi": "10.5281/zenodo.13273681",
+  "doi_url": "https://doi.org/10.5281/zenodo.13273681",
+  "zenodo_record": "https://zenodo.org/records/13273681",
+  "record_id": "13273682",
+  "publication_date": "2024-08-08",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "BlockScience"
+    }
+  ],
+  "description": "Digital Twins are useful enough to be dangerous. US Government Agency interest in funding and facilitating research, development, engineering, and implementation of Digital Twins (alongside factors related to their safe implementation) is therefore both reassuring and urgently necessary. Factors such as trustworthiness, reliability, interoperability, stability, sustainability, and responsible use must be addressed now, as there may not be another opportunity to do so before mass proliferation. If these factors can be adequately addressed, Digital Twins hold the potential to integrate physical and digital space &ndash; sparking a renaissance of capability exploration that will expand the horizons of research and commerce. If they are not, Digital Twins will inadvertently &ndash; but inevitably &ndash; become an evergreen source of threats and frustrations that will continue to challenge future generations. Here we argue that (i) conceptually, Digital Twins are not new &ndash; and thus we can learn from the common vulnerabilities, exploits, and remedies developed by prior approaches to closely-related problems in control theory and cybernetics, (ii) stable reference and data management capabilities and provisioning considerations are the underlying (but often-overlooked) prerequisites to building reliable Digital Twins, and (iii) the functional surface of a Digital Twin is roughly identical to its threat surface. We conclude with summary recommendations.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "BLOCKSCIENCE-UWAPL-COGSEC-AII_NITRD-2024-1337.pdf",
+      "size_bytes": 595764,
+      "checksum": "md5:d0b4161550c2e881762419b4b5beffb9",
+      "download_url": "https://zenodo.org/api/records/13273682/files/BLOCKSCIENCE-UWAPL-COGSEC-AII_NITRD-2024-1337.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:26Z"
+}

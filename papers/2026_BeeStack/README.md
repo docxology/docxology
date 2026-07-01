@@ -21,7 +21,7 @@ honeybee · Apis mellifera · active inference · simulation scaffold · swarm i
 | **DOI** | [10.5281/zenodo.20420557](https://doi.org/10.5281/zenodo.20420557) |
 | **Published** | 2026-05-27 |
 | **Version** | 1.0 |
-| **Zenodo record** | https://zenodo.org/records/20420557 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20420556 |
 | **GitHub release** | https://github.com/docxology/BeeStack/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/BeeStack |
 

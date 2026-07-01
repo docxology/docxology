@@ -1,0 +1,41 @@
+{
+  "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+  "version": "v1",
+  "doi": "10.5281/zenodo.19335195",
+  "doi_url": "https://doi.org/10.5281/zenodo.19335195",
+  "zenodo_record": "https://zenodo.org/records/19335195",
+  "record_id": "19335196",
+  "publication_date": "2026-04-03",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake&rsquo;s prophetic corpus, reading the disintegration of the gold&ndash;silver standard as a material enactment of the catastrophic cosmological fracture Blake dramatized. We trace this trajectory from the Newtonian golden compass of rigid, atomistic metrology, identifying the 1717 Mint ratio (1:15.21) not merely as a failed economic policy but as the operationalization of \"Newton's sleep\"&mdash;a cognitive pathology of pathologically rigid priors that crushed variable sensory evidence of silver&rsquo;s circulation. This Urizenic enclosure unleashed Gresham's entropy, draining silver and hollowing out domestic coinage, leading to the 1797 Bank Restriction and the subsequent 1816 codification of a golden \"Single Vision\". This entropic pattern resonated transatlantically, reflecting the revolutionary rupture Blake experienced in America a Prophecy (1793). The American metallic monetary arc resembeled the British descent into the \"Ulro\" of fiat abstraction: from Alexander Hamilton's initial 15:1 bimetallic synthesis through the metallic enclosure of the \"Crime of 1873,\" and culminating in William Jennings Bryan's resistance to the \"Cross of Gold\" (1896). Against the \"chimeric measurement\" of the Bank of England and modern fiat systems, which rely on the arithmetic of compounding imperial debt, Blake&rsquo;s fourfold view provides a scaffold and vocabulary for resisting the totalizing enclosure of value. We reconstruct Blake&rsquo;s prophetic economics as a sustained phenomenological account and analogy of financialized alienation. Ultimately, this manuscript bridges early industrial commodity fetishism, William Blake's etching, and the contemporary (2020&ndash;2026) monetary environment.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Blake_Bimetalism_DAF_v1_04032026.zip",
+      "size_bytes": 16212396,
+      "checksum": "md5:e6e68ef8e7042f0967d2770c4fc20dcc",
+      "download_url": "https://zenodo.org/api/records/19335196/files/Blake_Bimetalism_DAF_v1_04032026.zip/content"
+    },
+    {
+      "name": "Blake_Bimetalism_DAF_v1_04032026.pdf",
+      "size_bytes": 708881,
+      "checksum": "md5:0bcb1fbddbf2272211f2e82f29b23036",
+      "download_url": "https://zenodo.org/api/records/19335196/files/Blake_Bimetalism_DAF_v1_04032026.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:04Z"
+}

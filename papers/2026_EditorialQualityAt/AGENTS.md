@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20420342
+- **Zenodo record**: https://zenodo.org/records/20417104
 - **GitHub release**: https://github.com/docxology/template_prose_project/releases/tag/v0.4.0
 - **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

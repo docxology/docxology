@@ -1,0 +1,52 @@
+{
+  "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.16740438",
+  "doi_url": "https://doi.org/10.5281/zenodo.16740438",
+  "zenodo_record": "https://zenodo.org/records/16740438",
+  "record_id": "16740439",
+  "publication_date": "2025-08-04",
+  "resource_type": {
+    "title": "Other",
+    "type": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Positioning cognitive science as the systematic study of intra-action and cognitive art as its reflexive twin, this paper traces a bidirectional trajectory toward systemic wholeness. Procedural craft (firstness) and conceptual articulation (secondness) co-evolve into adaptive intelligence (thirdness), as continuously audited by the observing niche that embeds, measures, and reinterprets those intelligences (fourthness). This four-fold schema maps onto concrete information architectures: from insect bodies, to cryptographically verifiable plain texts, on through variational Bayesian simulations approached from the Low Road of Active Inference. Alternating 2&rarr;3 analytical moves which compress past data into predictive structure, with 4&rarr;3 generative moves which open space for unknown futures &ndash; these systems are capable of balancing exploitation with exploration, measurement with meaning, and optimization with open-ended creativity. True cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "On_Cognitive_Art_DAF_v1_8-4-2025.epub",
+      "size_bytes": 1752804,
+      "checksum": "md5:1f382c849f7ae0387ac4499492357fbd",
+      "download_url": "https://zenodo.org/api/records/16740439/files/On_Cognitive_Art_DAF_v1_8-4-2025.epub/content"
+    },
+    {
+      "name": "On_Cognitive_Art_DAF_v1_8-4-2025.pdf",
+      "size_bytes": 658289,
+      "checksum": "md5:dc08589c8735361fbdc8d5a73b4309d8",
+      "download_url": "https://zenodo.org/api/records/16740439/files/On_Cognitive_Art_DAF_v1_8-4-2025.pdf/content"
+    },
+    {
+      "name": "On_Cognitive_Art_DAF_v1_8-4-2025.rtf",
+      "size_bytes": 10348690,
+      "checksum": "md5:fb20fc9142a04b976c862cfc1edb65ca",
+      "download_url": "https://zenodo.org/api/records/16740439/files/On_Cognitive_Art_DAF_v1_8-4-2025.rtf/content"
+    },
+    {
+      "name": "On_Cognitive_Art_DAF_v1_8-4-2025.odt",
+      "size_bytes": 567772,
+      "checksum": "md5:ccc3fdbf86d329a52d1792c2ce5af4a5",
+      "download_url": "https://zenodo.org/api/records/16740439/files/On_Cognitive_Art_DAF_v1_8-4-2025.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:46Z"
+}

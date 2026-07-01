@@ -36,7 +36,7 @@ active inference · free energy principle · policy inference · mean-field · t
 | **DOI** | [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637) |
 | **Published** | 2026 |
 | **Version** | 1.0 |
-| **Zenodo record** | https://zenodo.org/records/20419637 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20418904 |
 | **GitHub release** | https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/ActiveInferenceInstitute/policy_entanglement |
 

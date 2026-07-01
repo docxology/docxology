@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\""
+version: "v1"
+date-released: 2024-12-30
+doi: 10.5281/zenodo.14574046
+url: "https://doi.org/10.5281/zenodo.14574046"
+authors:
+  - family-names: Scenius
+    given-names: Sensemaking
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14574046
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/14574046"
+    description: "Zenodo landing page"

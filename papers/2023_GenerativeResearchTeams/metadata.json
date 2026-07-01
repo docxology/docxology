@@ -1,0 +1,62 @@
+{
+  "title": "Generative Research Teams: Active Inference Compositions For Research and Meta-Science",
+  "version": "v1",
+  "doi": "10.5281/zenodo.8164666",
+  "doi_url": "https://doi.org/10.5281/zenodo.8164666",
+  "zenodo_record": "https://zenodo.org/records/8164666",
+  "record_id": "8164667",
+  "publication_date": "2023-07-19",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Smékal, Jakub",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-4989-4968"
+    }
+  ],
+  "description": "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing for flexible resource and attention allocation. The GRT can be designed to address various areas of concern such as Research, Peer Review, Funding, Communication, Cryptography, and more, using implementations that blend human and computational capacities. Tools like Active Blockference and cadCAD, along with Cognitive Security concepts like Narrative Information Management (NIM) and Verifiable Information Ecosystem (VIE), ensure situational awareness and reliability in research trajectories. Here we provide both a worked and a sketched example of a GRT with specific roles and functions. Through collaborative environments, innovation, resilient architectures, and meta-prompting, the GRT adapts to unexpected changes. Effective communication strategies facilitate wide dissemination of research findings. The primary novel contributions here include the exploration of augmented architectures, the integration of Active Inference as a cognitive kernel into GRTs with shared intelligence, and the application of cognitive models for enhanced research processes. Additionally lists of related work and tools are provided, reflecting some of the contemporary work in this space. In the future, advanced GRT will be able to navigate uncertain landscapes and produce impactful outcomes. Today we are using GRT to study Active Inference; tomorrow we will use Active Inference to study GRT.&nbsp; All code used is available at https://github.com/ActiveInferenceInstitute/ActiveBlockference/tree/main/GRTs &nbsp; An interactive Coda document hosts information related to GRT:&nbsp; https://coda.io/@active-inference-institute/generative-research-teams-grt/sketched-example-2",
+  "keywords": [
+    "Active Inference",
+    "Generative Model",
+    "Generative Research Team",
+    "Cognitive Modeling",
+    "Large Language Models",
+    "Autonomous Agents",
+    "Research Team",
+    "Open Science",
+    "Decentralized Science"
+  ],
+  "files": [
+    {
+      "name": "GenerativeResearchTeams_7_19_2023.odt",
+      "size_bytes": 192207,
+      "checksum": "md5:3d47f1e749834b23958bfb480cb709df",
+      "download_url": "https://zenodo.org/api/records/8164667/files/GenerativeResearchTeams_7_19_2023.odt/content"
+    },
+    {
+      "name": "GenerativeResearchTeams_7_19_2023.docx",
+      "size_bytes": 472330,
+      "checksum": "md5:630d2efd1e1f3d8f73b9cd7402b11cc1",
+      "download_url": "https://zenodo.org/api/records/8164667/files/GenerativeResearchTeams_7_19_2023.docx/content"
+    },
+    {
+      "name": "GenerativeResearchTeams_7_19_2023.pdf",
+      "size_bytes": 376476,
+      "checksum": "md5:f3ce48cdea559a3cd7ebb8362dc35f41",
+      "download_url": "https://zenodo.org/api/records/8164667/files/GenerativeResearchTeams_7_19_2023.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:16Z"
+}

@@ -1,0 +1,114 @@
+{
+  "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
+  "version": "3",
+  "doi": "10.5281/zenodo.6320574",
+  "doi_url": "https://doi.org/10.5281/zenodo.6320574",
+  "zenodo_record": "https://zenodo.org/records/6320574",
+  "record_id": "7484994",
+  "publication_date": "2022-12-26",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute, Complexity Weekend",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Applegate-Swanson, Shaun",
+      "affiliation": "Active Inference Institute, Complexity Weekend",
+      "orcid": "0000-0001-9474-6038"
+    },
+    {
+      "name": "Balbuena, Jessica Angeli",
+      "affiliation": "Active Inference Institute, Complexity Weekend",
+      "orcid": "0000-0003-2741-4476"
+    },
+    {
+      "name": "Choudhury, Arhan",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6897-2947"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "Active Inference Institute, Complexity Weekend",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "El Damaty, Shady",
+      "affiliation": "OpSci",
+      "orcid": "0000-0002-2318-4477"
+    },
+    {
+      "name": "Guénin—Carlut, Avel",
+      "affiliation": "Active Inference Institute, Kairos Reseearch",
+      "orcid": "0000-0001-8239-7264"
+    },
+    {
+      "name": "Knight, V. Bleu",
+      "affiliation": "Active Inference Institute, Complexity Weekend",
+      "orcid": "0000-0002-9894-1989"
+    },
+    {
+      "name": "Metelkin, Ivan",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-2899-6690"
+    },
+    {
+      "name": "Shrivastava, Siddhant",
+      "affiliation": "Active Inference Institute, Complexity Weekend, Kernel",
+      "orcid": "0000-0002-9688-4730"
+    },
+    {
+      "name": "Singh, Amit Kumar",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0002-8870-9676"
+    },
+    {
+      "name": "Smékal, Jakub",
+      "affiliation": "Active Inference Institute, OpSci",
+      "orcid": "0000-0003-4989-4968"
+    },
+    {
+      "name": "Tuttle. Caleb",
+      "affiliation": "OpSci",
+      "orcid": "0000-0002-8469-2221"
+    },
+    {
+      "name": "Vyatkin, Alexander",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-1306-4620"
+    }
+  ],
+  "description": "In this work, we examine science from the vantage points of blockchain technology and its connection to decentralized science (DeSci). We consider science as a collective process using Active Inference, an integrative framework that models the cognitive processes of perception, planning, and action selection in terms of Bayesian probabilities and updating. We present the Active Entity Ontology for Science ( AEOS , available at coda.io/@active-inference-institute/active-entity-ontology-for-science-aeos ) as a composable and versionable system for modeling various science systems, using the Active Inference entity partitioning. Such DeSci systems are considered from the perspective of BOLTS (Business, Operations, Legal, Technical, Social). Further steps for developing and utilizing AEOS in the context of scientific ecosystems are provided.",
+  "keywords": [
+    "Active Inference",
+    "Decentralized Science",
+    "DeSci",
+    "Science",
+    "Ontology",
+    "Sensemaking",
+    "Epistemic Commons"
+  ],
+  "files": [
+    {
+      "name": "v3_ActInf-DeSci-AEOS-2022.pdf",
+      "size_bytes": 1034196,
+      "checksum": "md5:3ac260088a1115736202e2b75d77ae54",
+      "download_url": "https://zenodo.org/api/records/7484994/files/v3_ActInf-DeSci-AEOS-2022.pdf/content"
+    },
+    {
+      "name": "v3_ActInf-DeSci-AEOS-2022.odt",
+      "size_bytes": 836967,
+      "checksum": "md5:b8718aeedbb578c300046987e9d474b9",
+      "download_url": "https://zenodo.org/api/records/7484994/files/v3_ActInf-DeSci-AEOS-2022.odt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:54Z"
+}

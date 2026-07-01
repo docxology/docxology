@@ -28,7 +28,7 @@ cognitive security · agent skills · analytic tradecraft · structured analytic
 | **DOI** | [10.5281/zenodo.20804585](https://doi.org/10.5281/zenodo.20804585) |
 | **Published** | 2026 |
 | **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20804586 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20804585 |
 | **GitHub release** | https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/CogSecSkills |
 

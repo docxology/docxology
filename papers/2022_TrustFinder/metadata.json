@@ -1,0 +1,48 @@
+{
+  "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.7093836",
+  "doi_url": "https://doi.org/10.5281/zenodo.7093836",
+  "zenodo_record": "https://zenodo.org/records/7093836",
+  "record_id": "7093837",
+  "publication_date": "2022-08-25",
+  "resource_type": {
+    "title": "Book chapter",
+    "type": "publication",
+    "subtype": "section"
+  },
+  "creators": [
+    {
+      "name": "R.J. Cordes",
+      "affiliation": "Active Inference Lab; COGSEC",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Scott David",
+      "affiliation": "Active Inference Lab; Information Risk and Synthetic Intelligence Research Initiative (IRSIRI),  University of Washington - Applied Physics Laboratory"
+    },
+    {
+      "name": "Daniel Friedman",
+      "affiliation": "Active Inference Lab; COGSEC; University of California, Davis, Department of Entomology and Nematology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "There is a broadly recognized need for better situational awareness within the information environment. Each year, millions of articles, books, documents, and datasets are published. Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims. This document builds on the feedback of dozens of experts across myriad fields submitted to the University of Washington Applied Physics Lab&rsquo;s Verified Information Exchange Environments Program, to present recommendations for a sociotechnical system, &ldquo;TrustFinder&rdquo;, for collaborative management of the information supply chain. TrustFinder implements controls and standards, web and document annotation affordances, argument representation frameworks, and crowdsourcing design principles in order to harness the work of global research communities. The ultimate goal of TrustFinder is to structure the information environment to such an extent that it enables users to find trusted sources of information and rapidly assess concepts and claims.",
+  "keywords": [
+    "Sensemaking",
+    "Mechanism Design",
+    "System Specification"
+  ],
+  "files": [
+    {
+      "name": "VIE-IG_1.pdf",
+      "size_bytes": 1666008,
+      "checksum": "md5:bf57331b67cd9618c325e85b02be327e",
+      "download_url": "https://zenodo.org/api/records/7093837/files/VIE-IG_1.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:01Z"
+}

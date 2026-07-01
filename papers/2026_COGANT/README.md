@@ -23,7 +23,7 @@ program analysis · Generalized Notation Notation (GNN) · intermediate represen
 | **Published** | 2026-06-15 |
 | **Version** | 0.6.0 |
 | **License** | MIT |
-| **Zenodo record** | https://zenodo.org/records/20705351 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20705350 |
 | **Code** | https://github.com/ActiveInferenceInstitute/COGANT |
 
 ## Files

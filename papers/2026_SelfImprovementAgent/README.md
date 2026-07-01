@@ -21,7 +21,7 @@ self-improvement agents · benchmark harness · reproducible research · agent e
 | **DOI** | [10.5281/zenodo.20453879](https://doi.org/10.5281/zenodo.20453879) |
 | **Published** | 2026 |
 | **Version** | 0.1.0 |
-| **Zenodo record** | https://zenodo.org/records/20453880 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20453879 |
 
 ## Files
 

@@ -1,0 +1,73 @@
+{
+  "title": "Four-fold Fields of Quantum Dreams",
+  "version": "v1",
+  "doi": "10.5281/zenodo.10798144",
+  "doi_url": "https://doi.org/10.5281/zenodo.10798144",
+  "zenodo_record": "https://zenodo.org/records/10798144",
+  "record_id": "10798145",
+  "publication_date": "2024-03-08",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Tickles, Dean",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-2213-0773"
+    }
+  ],
+  "description": "A very human consideration about taking perspectives on frameworks, told through an adventure playing out in a moment at a Quantum Baseball Spring Training gym.&nbsp;",
+  "keywords": [
+    "Active Inference",
+    "Free Energy Principle",
+    "Baseball"
+  ],
+  "files": [
+    {
+      "name": "FourFoldFields _Friedman_Tickles_v1_3-8-2024.epub",
+      "size_bytes": 1089187,
+      "checksum": "md5:9d6616ab95e7ff037062bfef808ae8f1",
+      "download_url": "https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.epub/content"
+    },
+    {
+      "name": "FourFoldFields _Friedman_Tickles_v1_3-8-2024.pdf",
+      "size_bytes": 1003135,
+      "checksum": "md5:ad207a06a145b2c9bfd2922f35994f8b",
+      "download_url": "https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.pdf/content"
+    },
+    {
+      "name": "FourFoldFields _Friedman_Tickles_v1_3-8-2024.txt",
+      "size_bytes": 15430,
+      "checksum": "md5:8ff98d134bb96520c9e7b5f35d584d6b",
+      "download_url": "https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.txt/content"
+    },
+    {
+      "name": "FourFoldFields _Friedman_Tickles_v1_3-8-2024.rtf",
+      "size_bytes": 24034745,
+      "checksum": "md5:b176dd7f1e5291a661c1a7c2bf72459b",
+      "download_url": "https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.rtf/content"
+    },
+    {
+      "name": "FourFoldFields _Friedman_Tickles_v1_3-8-2024.odt",
+      "size_bytes": 1119204,
+      "checksum": "md5:e4f9c976dbc30055d47ae22812fd14eb",
+      "download_url": "https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.odt/content"
+    },
+    {
+      "name": "FourFoldFields _Friedman_Tickles_v1_3-8-2024.docx",
+      "size_bytes": 1404132,
+      "checksum": "md5:5ef92501917642cbfc06d4a49dfd7d5f",
+      "download_url": "https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.docx/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:33Z"
+}

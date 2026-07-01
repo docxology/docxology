@@ -1,0 +1,61 @@
+{
+  "title": "Sortition Upstream of NTQR",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.21083779",
+  "doi_url": "https://doi.org/10.5281/zenodo.21083779",
+  "zenodo_record": "https://zenodo.org/records/21083779",
+  "record_id": "21083780",
+  "publication_date": "2026-06-25",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "How should you choose the judges, jurors, or reviewers who form a panel — and does\nthat upstream choice change how well you can evaluate them without an answer key?\nA panel can be selected many ways — by competence, by a representative lottery\n(sortition), by ideological bloc, or at random — and, separately, its noisy\njudgments can be evaluated blind: given the agreement/disagreement pattern among\nthree binary judges, the ntqr package's error-independent (EIE) evaluator returns\nlogically consistent estimates of item prevalence and per-judge accuracy with no\nlabels at all. But that evaluator takes the panel as given. We join the two\nquestions and ask whether the rule that forms the panel changes the\noracle-referenced error of the no-answer-key evaluation — how far the blind estimate\nlands from the answer-key result, lower being better.\n\nOn a fully deterministic instrument (96 seeds, 96 experts,\n300 items), the dominant lever is which rule forms the panel, not its size:\ncompetence-first selection recovers best (0.037), while\nrepresentative, single-bloc, and random selection collapse together — by\nconstruction, because with independent judge errors composition cannot move an\nestimator that only sees agreement. Supplying the missing channel — same-group judges\nsharing a latent, marginal-accuracy-preserving error confound — makes the strategies\nfan out monotonically as within-bloc coupling rises: representative sortition stays\nflat while single-bloc selection degrades, the gap widening from 0.000 to\n0.112. Within this instrument the relationship is closed-form: recovery\nerror tracks the panel's Herfindahl concentration index over the axis a shared\nerror rides on — minimized exactly by a balanced (representative) draw, maximized by a\nsingle bloc — and a continuous representativeness dial confirms error rises\nmonotonically with it.\n\nThe protection is conditional: re-keying the confound to an axis the lottery does\nnot balance erases the protection (0.147→0.229). The\nlesson for selecting and evaluating panels is thus a falsifiable, simulation-bounded\nprediction, not a preference for any one rule — representativeness protects blind\nrecovery precisely when the panel balances the attribute a shared error rides on.\nEvidence is synthetic and oracle-scored; in a single small live model\n(gemma3:4b) the synthetically-best competence-first rule was the worst,\nillustrating that a selection rule validated on parameterized judges need not carry\nover to prompted ones — a hypothesis to test, not an established caution. All methods\nand documentation are openly available at the public repository\ndocxology/ntqr_allotment.\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.21083779\nZenodo: https://zenodo.org/records/21083779\nPDF SHA-256: 73289489d2d123f198ccee83adac10e61a752805d908970030c2d5ac009061e4",
+  "keywords": [
+    "sortition",
+    "NTQR",
+    "unlabeled evaluation",
+    "expert panels",
+    "peer review",
+    "error independence",
+    "statistical power",
+    "panel formation",
+    "synthetic evaluation",
+    "LLM reviewers"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Sortition_73289489.pdf",
+      "size_bytes": 4380836,
+      "checksum": "md5:c942b77a40441780a20aac0295742dda",
+      "download_url": "https://zenodo.org/api/records/21083780/files/Friedman_2026_Sortition_73289489.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/ntqr_allotment"
+    }
+  ],
+  "github_repo": "docxology/ntqr_allotment",
+  "github_release_url": "https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "Sortition Upstream of NTQR v0.1.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-06-30T22:27:22Z"
+}

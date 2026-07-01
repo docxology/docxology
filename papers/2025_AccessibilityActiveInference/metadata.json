@@ -1,0 +1,44 @@
+{
+  "title": "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development",
+  "version": null,
+  "doi": "10.5281/zenodo.15061666",
+  "doi_url": "https://doi.org/10.5281/zenodo.15061666",
+  "zenodo_record": "https://zenodo.org/records/15061666",
+  "record_id": "15061667",
+  "publication_date": "2025-03-20",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Mikhailova, Alexandra",
+      "affiliation": null,
+      "orcid": "0000-0002-8699-7125"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This letter was submitted to the Dana Frontiers program in January 2025, on behalf of the Active Inference Institute , in pursuit of funding several promising activities (generative playbooks for applying Active Inference, and a Summer School program). Though this application was not funded, we have uploaded it as an open source artefact here, seeking participation and resourcing for these and other projects, in due time, place, and fashion.",
+  "keywords": [
+    "Active Inference",
+    "Education",
+    "Application"
+  ],
+  "files": [
+    {
+      "name": "ActiveInferenceInstitute_PlaybooksAndSummerSchool_Mikhailova-Friedman.pdf",
+      "size_bytes": 127944,
+      "checksum": "md5:c98db6297035a3212189611bbd7d77f0",
+      "download_url": "https://zenodo.org/api/records/15061667/files/ActiveInferenceInstitute_PlaybooksAndSummerSchool_Mikhailova-Friedman.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:40Z"
+}

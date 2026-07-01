@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "doi": "10.5281/zenodo.20834846",
   "doi_url": "https://doi.org/10.5281/zenodo.20834846",
-  "zenodo_record": "https://zenodo.org/records/20834847",
+  "zenodo_record": "https://zenodo.org/records/20834846",
   "record_id": "20834847",
   "publication_date": "2026-06-24",
   "resource_type": {
@@ -50,5 +50,5 @@
     "github_release_mentions_doi",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-06-29T22:11:13Z"
+  "checked_at": "2026-06-30T22:27:22Z"
 }

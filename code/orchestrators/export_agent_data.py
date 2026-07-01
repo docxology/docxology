@@ -226,7 +226,7 @@ PEOPLE = [
     {
         "name": "MJ Ramstead",
         "role": "Active Inference and cognitive science collaborator",
-        "source": "pages/COLLABORATORS.md#maxwell-j-d-ramstead--mila--mcgill",
+        "source": "pages/COLLABORATORS.md#maxwell-ramstead",
     },
 ]
 
@@ -477,7 +477,7 @@ def _existing_generated_at(path: Path) -> str | None:
         return None
 
 
-def _hydrate_claim_checks(checked_at: str, *, enforce_stale_checks: bool = True) -> list[dict]:
+def _hydrate_claim_checks(*, enforce_stale_checks: bool = True) -> list[dict]:
     claims = []
     latest_snapshot = _latest_source("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
     latest_inventory = _latest_source("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
@@ -537,7 +537,11 @@ def _hydrate_claim_checks(checked_at: str, *, enforce_stale_checks: bool = True)
                 "Use /users/ActiveInferenceInstitute, not /orgs/. "
                 f"Local software catalog tracks {catalogued_aii} AII repositories with docxology contributions."
             )
-        claim_copy["checked_at"] = checked_at
+        # Do not stamp claim_copy["checked_at"] with the export run's timestamp here:
+        # every claim in CLAIMS already carries its own checked_at, set from when it
+        # was actually verified (a Scholar fetch date, a live-count snapshot date, or a
+        # manual review date). Overwriting it with "now" on every regen falsely implied
+        # every claim had just been re-verified.
         claim_copy["sources"] = [
             latest_snapshot if source.startswith("reports/public_source_snapshot_") else
             latest_inventory if source.startswith("reports/public_source_inventory_") else source
@@ -550,7 +554,7 @@ def _hydrate_claim_checks(checked_at: str, *, enforce_stale_checks: bool = True)
 def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: bool = True) -> dict[Path, str]:
     software = parse_software()
     generated_at = generated_at or generated_timestamp()
-    claims = _hydrate_claim_checks(generated_at, enforce_stale_checks=enforce_stale_checks)
+    claims = _hydrate_claim_checks(enforce_stale_checks=enforce_stale_checks)
     return {
         REPO_ROOT / "data" / "software.json": json.dumps(
             {

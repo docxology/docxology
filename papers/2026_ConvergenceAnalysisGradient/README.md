@@ -38,7 +38,7 @@ optimization algorithms · gradient descent · convergence analysis · numerical
 | **DOI** | [10.5281/zenodo.20417136](https://doi.org/10.5281/zenodo.20417136) |
 | **Published** | 2026 |
 | **Version** | 2.5.0 |
-| **Zenodo record** | https://zenodo.org/records/20420368 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20417136 |
 | **GitHub release** | https://github.com/docxology/template_code_project/releases/tag/v2.5.0 |
 | **Source repository** | https://github.com/docxology/template_code_project |
 

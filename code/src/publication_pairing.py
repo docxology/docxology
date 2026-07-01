@@ -7,10 +7,17 @@ on local release receipts.
 
 from __future__ import annotations
 
+import json
 import re
+import sys
 from dataclasses import asdict, dataclass
+from pathlib import Path
 from typing import Any, Iterable
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from report_paths import generated_timestamp  # noqa: E402
+
+ORCID = "0000-0001-6232-9096"
 
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.I)
 GITHUB_RELEASE_RE = re.compile(
@@ -145,9 +152,16 @@ class ZenodoRecord:
 
     @property
     def record_url(self) -> str:
+        # doi is the Zenodo *concept* DOI (see from_api); derive the record URL from it so the
+        # record link always agrees with the canonical DOI shown alongside it. record_id is the
+        # version-specific Zenodo record id, which can differ from the concept id and would make
+        # the same document cite two different Zenodo URLs for one work.
+        derived = zenodo_record_url_from_doi(self.doi)
+        if derived:
+            return derived
         if self.record_id:
             return f"https://zenodo.org/records/{self.record_id}"
-        return zenodo_record_url_from_doi(self.doi)
+        return ""
 
     def to_dict(self) -> dict[str, Any]:
         payload = asdict(self)
@@ -255,6 +269,14 @@ def extract_github_release_urls(text: str) -> list[str]:
 def extract_pdf_sha256(text: str) -> str:
     match = PDF_SHA_RE.search(text or "")
     return match.group(1).lower() if match else ""
+
+
+def yaml_double_quoted(value: str) -> str:
+    """Escape a string for safe embedding inside a YAML double-quoted scalar
+    (e.g. CITATION.cff `title: "..."`). Titles containing a literal `"` (common
+    in transcript/commentary titles that quote another work) would otherwise
+    terminate the scalar early and break YAML parsing."""
+    return value.replace("\\", "\\\\").replace('"', '\\"')
 
 
 def zenodo_record_url_from_doi(doi: str) -> str:
@@ -382,3 +404,244 @@ def find_publication_pairs(
         ),
         reverse=False,
     )
+
+
+def slug_topic(title: str) -> str:
+    head = title.split(":", 1)[0]
+    words = re.findall(r"[A-Za-z0-9]+", head)
+    if not words:
+        words = re.findall(r"[A-Za-z0-9]+", title)
+    words = [word for word in words if word.lower() not in {"a", "an", "and", "for", "in", "of", "on", "the", "to"}]
+    words = words[:3] or ["Work"]
+    return "".join(word[:1].upper() + word[1:] for word in words)
+
+
+def infer_type(record: ZenodoRecord) -> str | None:
+    values = " ".join(str(value) for value in record.resource_type.values()).lower()
+    if "book" in values:
+        return "Book"
+    if "presentation" in values:
+        return "Presentation"
+    if "course" in values:
+        return "Course"
+    if "publication" in values or "article" in values or record.doi:
+        return "Paper"
+    return None
+
+
+def _contains_term(text: str, term: str) -> bool:
+    """Whole-word/whole-phrase match so e.g. "ant" does not hit "dominant" and "art" does not hit "smart"."""
+    return re.search(rf"\b{re.escape(term)}\b", text) is not None
+
+
+def infer_domain(pair: PublicationPair) -> str | None:
+    text = " ".join(
+        [
+            pair.record.title,
+            pair.record.description,
+            " ".join(pair.record.keywords),
+            pair.github_repo,
+            pair.release.name,
+        ]
+    ).lower()
+    if any(_contains_term(text, term) for term in ["textbook", "reproducible", "computational", "software", "code", "pipeline"]):
+        return "💻"
+    if any(_contains_term(text, term) for term in ["active inference", "free energy", "bayesian", "markov blanket"]):
+        return "🧠"
+    if any(_contains_term(text, term) for term in ["cognitive security", "cogsec", "narrative", "trust", "integrity"]):
+        return "🛡️"
+    if any(_contains_term(text, term) for term in ["ant", "bee", "insect", "ento", "foraging"]):
+        return "🐜"
+    if any(_contains_term(text, term) for term in ["blake", "synergetics", "art", "fuller", "quadray"]):
+        return "🎨"
+    if any(_contains_term(text, term) for term in ["genetic", "genomic", "transcriptomic", "biomedical"]):
+        return "🧬"
+    if "activeinferenceinstitute" in text or "active inference institute" in text:
+        return "🌍"
+    return None
+
+
+def metadata_payload(pair: PublicationPair) -> dict[str, Any]:
+    release = pair.release
+    record = pair.record
+    files = []
+    for item in record.files:
+        if isinstance(item, dict):
+            files.append(
+                {
+                    "name": item.get("key") or item.get("filename") or "",
+                    "size_bytes": item.get("size"),
+                    "checksum": item.get("checksum", ""),
+                    "download_url": (item.get("links") or {}).get("self") if isinstance(item.get("links"), dict) else "",
+                }
+            )
+    payload = {
+        "title": record.title,
+        "version": record.version,
+        "doi": record.doi,
+        "doi_url": record.doi_url,
+        "zenodo_record": record.record_url,
+        "record_id": record.record_id,
+        "publication_date": record.publication_date,
+        "resource_type": record.resource_type,
+        "creators": record.creators,
+        "description": record.description,
+        "keywords": record.keywords,
+        "files": files,
+        "related_resources": [{"type": "repository", "url": f"https://github.com/{release.full_name}"}],
+        "github_repo": release.full_name,
+        "github_release_url": release.html_url,
+        "release_tag": release.tag,
+        "release_name": release.name,
+        "pdf_sha256": extract_pdf_sha256(release.body),
+        "pairing_confidence": pair.confidence,
+        "pairing_evidence": list(pair.evidence),
+        "checked_at": generated_timestamp(),
+    }
+    return payload
+
+
+def render_readme(pair: PublicationPair, folder: str) -> str:
+    record = pair.record
+    keywords = " · ".join(record.keywords) if record.keywords else "paired GitHub and Zenodo publication"
+    pdf_lines = []
+    for item in record.files:
+        name = str(item.get("key") or item.get("filename") or "")
+        if name.lower().endswith(".pdf"):
+            pdf_lines.append(f"- `{name}` - Zenodo PDF")
+    if not pdf_lines:
+        pdf_lines.append("- Zenodo PDF: not downloaded")
+    return f"""# {record.title}
+
+**Daniel Ari Friedman** ({(record.publication_date or '')[:4] or 'n.d.'}) · *Zenodo*
+
+[![DOI](https://zenodo.org/badge/DOI/{record.doi}.svg)](https://doi.org/{record.doi})
+
+---
+
+## Abstract
+
+{record.description or 'Publication metadata synchronized from Zenodo and GitHub.'}
+
+## Keywords
+
+{keywords}
+
+## Publication Details
+
+| Field | Value |
+|------|-------|
+| **DOI** | [{record.doi}](https://doi.org/{record.doi}) |
+| **Published** | {record.publication_date or 'Unknown'} |
+| **Version** | {record.version or 'Unknown'} |
+| **Zenodo record** | {record.record_url} |
+| **GitHub release** | {pair.github_release_url} |
+| **Source repository** | https://github.com/{pair.github_repo} |
+
+## Files
+
+{chr(10).join(pdf_lines)}
+
+## Citation
+
+> Friedman, D. A. ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. https://doi.org/{record.doi}
+
+## Related
+
+- Zenodo record: {record.record_url}
+- GitHub release: {pair.github_release_url}
+- Source repository: https://github.com/{pair.github_repo}
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+"""
+
+
+def render_agents(pair: PublicationPair) -> str:
+    year = (pair.record.publication_date or "")[:4] or "n.d."
+    return f"""# AGENTS.md - {pair.record.title}
+
+**Paper**: {pair.record.title} ({year})
+**DOI**: [{pair.doi}](https://doi.org/{pair.doi})
+**GitHub release**: {pair.github_release_url}
+
+---
+
+## Agent Roles
+
+### Citation Agent
+- Use the Zenodo DOI as the canonical citation.
+- Track future GitHub release and Zenodo version changes.
+
+### Integration Agent
+- Keep README, CITATION.cff, metadata.json, paper_metadata.json, BIBLIOGRAPHY.md, and software links synchronized.
+- Preserve the paired GitHub + Zenodo release relationship.
+
+## Extraction Log
+
+- **Zenodo record**: {pair.zenodo_record_url}
+- **GitHub release**: {pair.github_release_url}
+- **Pairing evidence**: {", ".join(pair.evidence)}
+"""
+
+
+def render_skill(pair: PublicationPair, folder: str) -> str:
+    tags = [tag.lower().replace(" ", "-") for tag in (pair.record.keywords or ["paired-publication"])[:8]]
+    title = yaml_double_quoted(pair.record.title)
+    return f"""---
+name: "{slug_topic(pair.record.title)}"
+description: "Use for {title}, a paired GitHub and Zenodo publication with DOI {pair.doi}."
+tags: {json.dumps(tags)}
+---
+
+# {pair.record.title}
+
+## Instructions
+
+Use this skill when working with the publication **{pair.record.title}** or its paired release artifacts.
+
+1. Ground citations in DOI `{pair.doi}`.
+2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
+3. Keep release tag `{pair.release.tag}` and repository `{pair.github_repo}` linked when updating catalog surfaces.
+
+## Key Concepts
+
+{chr(10).join(f'- **{keyword}**' for keyword in (pair.record.keywords or ['paired publication']))}
+
+## Prerequisites
+
+- Familiarity with the source repository and Zenodo record.
+- Awareness that new versions may update both GitHub and Zenodo surfaces.
+
+## Related
+
+- [README.md](README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+"""
+
+
+def render_citation(pair: PublicationPair) -> str:
+    year = (pair.record.publication_date or "")[:4] or "n.d."
+    version = f'\nversion: "{pair.record.version}"' if pair.record.version else ""
+    title = yaml_double_quoted(pair.record.title)
+    return f"""cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "{title}"{version}
+date-released: {pair.record.publication_date or year}
+doi: {pair.doi}
+url: "https://doi.org/{pair.doi}"
+repository-code: "https://github.com/{pair.github_repo}"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/{ORCID}"
+identifiers:
+  - type: doi
+    value: {pair.doi}
+    description: "Zenodo DOI"
+  - type: url
+    value: "{pair.zenodo_record_url}"
+    description: "Zenodo landing page"
+  - type: url
+    value: "{pair.github_release_url}"
+    description: "GitHub release"
+"""

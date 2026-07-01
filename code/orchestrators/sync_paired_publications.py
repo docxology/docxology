@@ -29,8 +29,16 @@ from publication_pairing import (  # noqa: E402
     PublicationPair,
     SyncAction,
     ZenodoRecord,
-    extract_pdf_sha256,
     find_publication_pairs,
+    generated_timestamp,
+    infer_domain,
+    infer_type,
+    metadata_payload,
+    render_agents,
+    render_citation,
+    render_readme,
+    render_skill,
+    slug_topic,
 )
 
 ORCID = "0000-0001-6232-9096"
@@ -58,10 +66,6 @@ class AppliedPublication:
     folder: str
     created: bool
     updated_files: tuple[str, ...]
-
-
-def generated_timestamp() -> str:
-    return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
 def report_path_for_today(repo_root: Path = REPO_ROOT) -> Path:
@@ -310,16 +314,6 @@ def reviewed_pair_decisions(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str]
     return decisions
 
 
-def slug_topic(title: str) -> str:
-    head = title.split(":", 1)[0]
-    words = re.findall(r"[A-Za-z0-9]+", head)
-    if not words:
-        words = re.findall(r"[A-Za-z0-9]+", title)
-    words = [word for word in words if word.lower() not in {"a", "an", "and", "for", "in", "of", "on", "the", "to"}]
-    words = words[:3] or ["Work"]
-    return "".join(word[:1].upper() + word[1:] for word in words)
-
-
 def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
     existing = existing_doi_map(repo_root).get(pair.doi)
     if existing:
@@ -346,46 +340,6 @@ def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
         candidate = f"{base}{i}"
         i += 1
     return candidate
-
-
-def infer_type(record: ZenodoRecord) -> str | None:
-    values = " ".join(str(value) for value in record.resource_type.values()).lower()
-    if "book" in values:
-        return "Book"
-    if "presentation" in values:
-        return "Presentation"
-    if "course" in values:
-        return "Course"
-    if "publication" in values or "article" in values or record.doi:
-        return "Paper"
-    return None
-
-
-def infer_domain(pair: PublicationPair) -> str | None:
-    text = " ".join(
-        [
-            pair.record.title,
-            pair.record.description,
-            " ".join(pair.record.keywords),
-            pair.github_repo,
-            pair.release.name,
-        ]
-    ).lower()
-    if any(term in text for term in ["textbook", "reproducible", "computational", "software", "code", "pipeline"]):
-        return "💻"
-    if any(term in text for term in ["active inference", "free energy", "bayesian", "markov blanket"]):
-        return "🧠"
-    if any(term in text for term in ["cognitive security", "cogsec", "narrative", "trust", "integrity"]):
-        return "🛡️"
-    if any(term in text for term in ["ant", "bee", "insect", "ento", "foraging"]):
-        return "🐜"
-    if any(term in text for term in ["blake", "synergetics", "art", "fuller", "quadray"]):
-        return "🎨"
-    if any(term in text for term in ["genetic", "genomic", "transcriptomic", "biomedical"]):
-        return "🧬"
-    if "activeinferenceinstitute" in text or "active inference institute" in text:
-        return "🌍"
-    return None
 
 
 def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_ROOT) -> list[SyncAction]:
@@ -449,190 +403,6 @@ def _write_if_changed(path: Path, content: str, updated: list[str], repo_root: P
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     updated.append(str(path.relative_to(repo_root)))
-
-
-def metadata_payload(pair: PublicationPair) -> dict[str, Any]:
-    release = pair.release
-    record = pair.record
-    files = []
-    for item in record.files:
-        if isinstance(item, dict):
-            files.append(
-                {
-                    "name": item.get("key") or item.get("filename") or "",
-                    "size_bytes": item.get("size"),
-                    "checksum": item.get("checksum", ""),
-                    "download_url": (item.get("links") or {}).get("self") if isinstance(item.get("links"), dict) else "",
-                }
-            )
-    payload = {
-        "title": record.title,
-        "version": record.version,
-        "doi": record.doi,
-        "doi_url": record.doi_url,
-        "zenodo_record": record.record_url,
-        "record_id": record.record_id,
-        "publication_date": record.publication_date,
-        "resource_type": record.resource_type,
-        "creators": record.creators,
-        "description": record.description,
-        "keywords": record.keywords,
-        "files": files,
-        "related_resources": [{"type": "repository", "url": f"https://github.com/{release.full_name}"}],
-        "github_repo": release.full_name,
-        "github_release_url": release.html_url,
-        "release_tag": release.tag,
-        "release_name": release.name,
-        "pdf_sha256": extract_pdf_sha256(release.body),
-        "pairing_confidence": pair.confidence,
-        "pairing_evidence": list(pair.evidence),
-        "checked_at": generated_timestamp(),
-    }
-    return payload
-
-
-def render_readme(pair: PublicationPair, folder: str) -> str:
-    record = pair.record
-    keywords = " · ".join(record.keywords) if record.keywords else "paired GitHub and Zenodo publication"
-    pdf_lines = []
-    for item in record.files:
-        name = str(item.get("key") or item.get("filename") or "")
-        if name.lower().endswith(".pdf"):
-            pdf_lines.append(f"- `{name}` - Zenodo PDF")
-    if not pdf_lines:
-        pdf_lines.append("- Zenodo PDF: not downloaded")
-    return f"""# {record.title}
-
-**Daniel Ari Friedman** ({(record.publication_date or '')[:4] or 'n.d.'}) · *Zenodo*
-
-[![DOI](https://zenodo.org/badge/DOI/{record.doi}.svg)](https://doi.org/{record.doi})
-
----
-
-## Abstract
-
-{record.description or 'Publication metadata synchronized from Zenodo and GitHub.'}
-
-## Keywords
-
-{keywords}
-
-## Publication Details
-
-| Field | Value |
-|------|-------|
-| **DOI** | [{record.doi}](https://doi.org/{record.doi}) |
-| **Published** | {record.publication_date or 'Unknown'} |
-| **Version** | {record.version or 'Unknown'} |
-| **Zenodo record** | {record.record_url} |
-| **GitHub release** | {pair.github_release_url} |
-| **Source repository** | https://github.com/{pair.github_repo} |
-
-## Files
-
-{chr(10).join(pdf_lines)}
-
-## Citation
-
-> Friedman, D. A. ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. https://doi.org/{record.doi}
-
-## Related
-
-- Zenodo record: {record.record_url}
-- GitHub release: {pair.github_release_url}
-- Source repository: https://github.com/{pair.github_repo}
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
-"""
-
-
-def render_agents(pair: PublicationPair) -> str:
-    year = (pair.record.publication_date or "")[:4] or "n.d."
-    return f"""# AGENTS.md - {pair.record.title}
-
-**Paper**: {pair.record.title} ({year})
-**DOI**: [{pair.doi}](https://doi.org/{pair.doi})
-**GitHub release**: {pair.github_release_url}
-
----
-
-## Agent Roles
-
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Track future GitHub release and Zenodo version changes.
-
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, BIBLIOGRAPHY.md, and software links synchronized.
-- Preserve the paired GitHub + Zenodo release relationship.
-
-## Extraction Log
-
-- **Zenodo record**: {pair.zenodo_record_url}
-- **GitHub release**: {pair.github_release_url}
-- **Pairing evidence**: {", ".join(pair.evidence)}
-"""
-
-
-def render_skill(pair: PublicationPair, folder: str) -> str:
-    tags = [tag.lower().replace(" ", "-") for tag in (pair.record.keywords or ["paired-publication"])[:8]]
-    return f"""---
-name: "{slug_topic(pair.record.title)}"
-description: "Use for {pair.record.title}, a paired GitHub and Zenodo publication with DOI {pair.doi}."
-tags: {json.dumps(tags)}
----
-
-# {pair.record.title}
-
-## Instructions
-
-Use this skill when working with the publication **{pair.record.title}** or its paired release artifacts.
-
-1. Ground citations in DOI `{pair.doi}`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `{pair.release.tag}` and repository `{pair.github_repo}` linked when updating catalog surfaces.
-
-## Key Concepts
-
-{chr(10).join(f'- **{keyword}**' for keyword in (pair.record.keywords or ['paired publication']))}
-
-## Prerequisites
-
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
-"""
-
-
-def render_citation(pair: PublicationPair) -> str:
-    year = (pair.record.publication_date or "")[:4] or "n.d."
-    version = f'\nversion: "{pair.record.version}"' if pair.record.version else ""
-    return f"""cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
-type: article
-title: "{pair.record.title}"{version}
-date-released: {pair.record.publication_date or year}
-doi: {pair.doi}
-url: "https://doi.org/{pair.doi}"
-repository-code: "https://github.com/{pair.github_repo}"
-authors:
-  - family-names: Friedman
-    given-names: Daniel Ari
-    orcid: "https://orcid.org/{ORCID}"
-identifiers:
-  - type: doi
-    value: {pair.doi}
-    description: "Zenodo DOI"
-  - type: url
-    value: "{pair.zenodo_record_url}"
-    description: "Zenodo landing page"
-  - type: url
-    value: "{pair.github_release_url}"
-    description: "GitHub release"
-"""
 
 
 def update_existing_readme(path: Path, pair: PublicationPair, updated: list[str], repo_root: Path) -> None:

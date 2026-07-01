@@ -16,7 +16,7 @@ identifiers:
     value: 10.5281/zenodo.20498700
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20498700"
+    value: "https://zenodo.org/records/20498699"
     description: "Zenodo landing page"
   - type: url
     value: "https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0"

@@ -1,0 +1,43 @@
+{
+  "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
+  "version": "0.1",
+  "doi": "10.5281/zenodo.17228945",
+  "doi_url": "https://doi.org/10.5281/zenodo.17228945",
+  "zenodo_record": "https://zenodo.org/records/17228945",
+  "record_id": "17228946",
+  "publication_date": "2025-09-29",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Die Schwarze Katze",
+      "affiliation": null
+    },
+    {
+      "name": "Djuwidja, Andrew",
+      "affiliation": null,
+      "orcid": "0009-0006-9402-2412"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Universal Basic Income (UBI) is defined as a transformative economic policy designed to provide all citizens with a regular, unconditional sum of money, regardless of their circumstances.&nbsp;Here we argue that the overlay of several modern technologies on UBI can help enhance its relevance, effectiveness, and impact. We review applications of artificial intelligence (AI) and decentralized infrastructure in UBI application, and describe prospects for a cognitive ecosystems approach towards modeling.&nbsp;Here we describe a version 0.1 specification for an Adaptive (Universal) Basic Income system called AuBI, describing a systems engineering-grade toolkit/sandbox/design suite for specifying, modeling, and designing economic systems.&nbsp;Keywords for AuBI include decentralized infrastructure, active inference modules, informed adaptive income, Bayesian community income floors, LLM, AI, data storage, data sovereignty, micro UBI, adaptive economic agents, collective predictive processing and more.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "AuBI_9-29-2025.pdf",
+      "size_bytes": 34435370,
+      "checksum": "md5:aee9859b8da97c888a907b1a6fca52a1",
+      "download_url": "https://zenodo.org/api/records/17228946/files/AuBI_9-29-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:44Z"
+}

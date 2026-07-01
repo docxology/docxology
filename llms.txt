@@ -68,15 +68,15 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Security contact: https://danielarifriedman.com/.well-known/security.txt
 - Search index: https://danielarifriedman.com/search-index.json
 - RSS feed: https://danielarifriedman.com/feed.xml
-- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-06-09.json
-- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-06-09.json
-- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-06-09.md
+- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-06-18.json
+- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-06-18.json
+- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-06-18.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-15.json
 - External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-15.md
-- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-06-09.json
+- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-06-30.json
 - Browser-smoke manifest: https://github.com/docxology/docxology/blob/main/reports/browser-smoke/2026-05-28/manifest.json
-- Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-05-15.json
-- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-06-09.json
+- Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-06-30.json
+- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-06-30.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-05-28/manifest.json
 
 ## Public Crawl Policy

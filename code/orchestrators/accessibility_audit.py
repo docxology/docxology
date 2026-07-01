@@ -5,10 +5,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
     from report_paths import dated_report_path, generated_timestamp, latest_report

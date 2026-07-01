@@ -64,13 +64,17 @@ docxology/
 ├── pages/COLLABORATORS.md   ← Key collaborators and institutional research network
 ├── pages/MEDIA.md           ← Talks, podcasts, video series, courses, and press coverage
 ├── AGENTS.md          ← This file: agent roles and maintenance log
+├── CHANGELOG.md       ← Human-readable summary of notable public-index, website, bibliography, and discovery-layer changes
 ├── index.html         ← GitHub Pages landing page with SEO and structured data
 ├── discovery.html     ← Canonical HTML discovery map for public-source APIs and identifiers
 ├── search.html        ← Human-facing search over works, software, pages, people, organizations, and claims
 ├── repositories.html  ← Generated full public GitHub repository inventory for docxology and AII
 ├── opensearch.xml     ← Browser/search-engine descriptor for site search
 ├── catalog.html       ← Schema.org DataCatalog page for public data exports
-├── updates.html       ← Generated human-readable changelog page
+├── updates.html       ← Generated human-readable changelog page (HTML rendering of CHANGELOG.md)
+├── exports.html       ← Generated HTML hub for citation/JSON exports
+├── cite-verify.html   ← Citation and evidence layer: preferred citation, public identifiers, source-of-truth rules
+├── evidence.html      ← Claim ledger: dated, sourced verification status for load-bearing claims
 ├── domains.html       ← Research-domain landing page index
 ├── domain-*.html      ← Domain-specific HTML pages for major research clusters
 ├── works/             ← Generated per-work HTML landing pages for each bibliography row
@@ -78,6 +82,12 @@ docxology/
 ├── software.html      ← Canonical HTML target for software catalog
 ├── collaborators.html ← Canonical HTML target for institutional network
 ├── media.html         ← Canonical HTML target for podcast/video appearances
+├── art.html           ← Art gallery landing page (client-side rendered from data/artworks.json)
+├── art/               ← Local copies of gallery artwork images
+├── videos.html        ← Video/talks landing page
+├── videos/            ← Generated per-video HTML landing pages
+├── blog/              ← Hand-authored long-form writing (index.html plus per-post folders)
+├── about.html         ← Short About page
 ├── style.css          ← Unified custom CSS core
 ├── sitemap.xml        ← SEO sitemap
 ├── robots.txt         ← Robot exclusion file
@@ -207,6 +217,15 @@ docxology/
 | 2026-06-17 | INTEGRATOR | Added **AGEINT** (`zenodo.20732275`, `docxology/AGEINT` v0.1.0) as work 170 via scoped `sync_paired_publications.py --since 2026-06-16 --apply`; stripped leaked `<p>` HTML from the Zenodo abstract; renumbered `papers/README.md` index to strict 1..152 (closed gap 111 + duplicate 152); reconciled all surfaces to **169 works / 152 paper folders / 91 software**; `validate_repo` + 100 tests green. CEREBRUM (`zenodo.15231156`) and Self-Improvement Agent (`zenodo.20693012`) confirmed as re-versions — update-only, not new rows | ✅ |
 | 2026-06-20 | MAINTAINER | Added repo-root `CLAUDE.md` (generated-vs-source discipline, rebuild ordering, SEO/identity invariants, commands). SEO: enforced `twitter:image:alt` on every indexable `og:image` page — `site_nav.social_meta_tags`, `ensure_social_meta.py`, and the inline heads in `build_work_pages`/`build_catalog`/`build_exports_page`/`build_evidence_page`/`build_updates_page`/`build_github_inventory`; added the invariant to `seo_invariants.check_social_meta` + tests; regenerated all surfaces (193 pages now carry it); refreshed asset-size report. `validate_repo` + 112 tests green | ✅ |
 | 2026-06-20 | INTEGRATOR | Started `/design-sync` for the public website: created Claude Design project **"danielarifriedman.com Design System"** and seeded a local preview library at `docs/design/components/` (8 `@dsCard` previews — colors, type, spacing, buttons, nav, cards, pills+badges, publication table) extracted from `style.css` tokens; linked from `docs/README.md` and `docs/design/design-system.md` | ✅ |
+| 2026-06-21 | MAINTAINER | Reconciled `design-system.md` to the actual `style.css` (background/radius/body-font/focus-color tokens); migrated site body font Georgia serif → Inter; mobile-menu `aria-expanded`/ESC-close/44px touch target across all 20 nav pages; fixed heading-hierarchy skips; tokenized 26 hardcoded gold `rgba()` values into `--gold-NN`; `accessibility_audit.py` now enforces single-h1/no-skips/form-labels (22/22 passing); removed 26 lines of verified-dead CSS | ✅ |
+| 2026-06-21 | ARCHIVIST | Added **Template Madlib** (`zenodo.20786638`, work 172) and **California Public Records** (`zenodo.20789899`, work 173); repo-wide Zenodo DOI concept-consistency pass across 70 bibliography rows; added AGEINT + template_madlib to the software catalog (94 total) | ✅ |
+| 2026-06-22 | MAINTAINER | Synced the **CogSecSkills** publication (`zenodo.20804585`, work 173→174 range) and hardened publication intake | ✅ |
+| 2026-06-24 | MAINTAINER | Added **Realizing Emptiness** (`zenodo.20834846`, work 175); added `regenerate_all.py` as the single-command write-mode counterpart to `validate_repo --check`; `validate_repo` now runs `sync_scholar_metrics.py --check`; pruned superseded QA screenshot sets (-62 MB); softened unguarded external/domain prose counts (codomyrmex, COGSEC bio) | ✅ |
+| 2026-06-26 | ARCHIVIST | Added **A Living Meta-Analysis of the Modafinil Literature** (work 176) and **Refinement of Gold** (work 177) via the paired GitHub+Zenodo scan; refreshed `checked_at` metadata on 27 existing paired works | ✅ |
+| 2026-06-27 | ARCHIVIST | Added **AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference** (`zenodo.20976824`, work 178); updated the template/ Reproducible Generative Research entry to v1.0.9 | ✅ |
+| 2026-06-27 | INTEGRATOR | `build_work_pages.py` now renders a Platform availability card on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site) driven by new `data/publishing-status.json`; added `reports/publishing_status_megaindex.md` covering 272 items | ✅ |
+| 2026-06-29 | ARCHIVIST | Added **Mapping William Blake's Works** (`zenodo.21047573`, `docxology/blake` v0.1.0, work 179) via `sync_paired_publications.py --apply`; fixed 32 malformed bare-domain markdown links in `reports/publishing_status_megaindex.md` | ✅ |
+| 2026-06-30 | MAINTAINER | Added **Sortition Upstream of NTQR** (`zenodo.21083779`, `docxology/ntqr_allotment` v0.1.0, work 180) via `sync_paired_publications.py --apply` plus 31 metadata refreshes on existing rows. Comprehensive structure/docs audit + fixes: corrected `infer_domain()`'s substring false-positive (🐜 misclassification on "dominant"); fixed `ZenodoRecord.record_url` to derive from the concept DOI instead of the version-specific record id (was creating self-contradicting Zenodo URLs within the same document — repaired across 29 affected paper folders repo-wide); fixed the `freshness.yml` CI workflow's baseline-selection glob (always self-compared, permanently reporting no drift); stopped `export_agent_data.py` from overwriting every claim's `checked_at` with the export run's timestamp regardless of whether it was actually re-verified; fixed `generate_og_images.py`'s hardcoded stale counts and wired it (plus `build_image_sitemap.py`) into `regenerate_all.py`/`validate_repo.py`/`GENERATED.md`/`data/generated-manifest.json`; backfilled this maintenance log and `CHANGELOG.md` through 2026-06-29 | ✅ |
 
 ---
 

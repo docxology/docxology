@@ -1,0 +1,43 @@
+{
+  "title": "Of Ants & Aging",
+  "version": "v1",
+  "doi": "10.5281/zenodo.7855581",
+  "doi_url": "https://doi.org/10.5281/zenodo.7855581",
+  "zenodo_record": "https://zenodo.org/records/7855581",
+  "record_id": "7855582",
+  "publication_date": "2023-04-22",
+  "resource_type": {
+    "title": "Presentation",
+    "type": "presentation"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Presentation given via remote appearAnts at &quot;Curing Aging 2023&quot;, on April 22nd 2023 (https://www.curing-aging.com/).",
+  "keywords": [
+    "Ants",
+    "Aging"
+  ],
+  "files": [
+    {
+      "name": "DAF_Ants_Aging_4_22_2023.pptx",
+      "size_bytes": 35602043,
+      "checksum": "md5:61f6447c5f2008fdaabd76743cf1c445",
+      "download_url": "https://zenodo.org/api/records/7855582/files/DAF_Ants_Aging_4_22_2023.pptx/content"
+    },
+    {
+      "name": "DAF_Ants_Aging_4_22_2023.pdf",
+      "size_bytes": 6327601,
+      "checksum": "md5:a627336bcd822a8b3030ef01ce01cb1e",
+      "download_url": "https://zenodo.org/api/records/7855582/files/DAF_Ants_Aging_4_22_2023.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:09Z"
+}

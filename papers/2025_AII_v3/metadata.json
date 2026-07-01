@@ -1,0 +1,181 @@
+{
+  "title": "The Active Inference Institute & Active Inference Ecosystem",
+  "version": "v3",
+  "doi": "10.5281/zenodo.17982447",
+  "doi_url": "https://doi.org/10.5281/zenodo.17982447",
+  "zenodo_record": "https://zenodo.org/records/17982447",
+  "record_id": "17982447",
+  "publication_date": "2025-12-18",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Active Inference Institute",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Vyatkin, Alex",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-1306-4620"
+    },
+    {
+      "name": "Mikhailova, Alexandra",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0002-8699-7125"
+    },
+    {
+      "name": "Hiott, Andrea",
+      "affiliation": "Universität Heidelberg",
+      "orcid": "0000-0003-0748-2295"
+    },
+    {
+      "name": "Pashea, Andrew",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0004-4061-6296"
+    },
+    {
+      "name": "Elers, Ben",
+      "affiliation": "The Brain Innovation Project",
+      "orcid": "0009-0009-2761-9229"
+    },
+    {
+      "name": "Berkers, Bert",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0006-6583-6687"
+    },
+    {
+      "name": "Knight, Bleu",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0002-9894-1989"
+    },
+    {
+      "name": "Fields, Chris",
+      "affiliation": "Allen Discovery Center, Tufts University",
+      "orcid": "0000-0002-4812-0744"
+    },
+    {
+      "name": "Whittet, Dan",
+      "affiliation": "AHA Sustainability",
+      "orcid": "0009-0009-5089-0551"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Ticklẽs, Déan",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-2213-0773"
+    },
+    {
+      "name": "Paterson, Fraser",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Stubbs, Gareth",
+      "affiliation": "Rabdan Academy",
+      "orcid": "0000-0002-7631-2823"
+    },
+    {
+      "name": "Grimm, Holly",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0001-6181-2569"
+    },
+    {
+      "name": "Smekal, Jakub",
+      "affiliation": "Stanford University",
+      "orcid": "0000-0003-4989-4968"
+    },
+    {
+      "name": "Cooper, Jeremy",
+      "affiliation": "Regent University, School of Psychology & Counseling",
+      "orcid": "0000-0002-2243-1966"
+    },
+    {
+      "name": "Boik, John",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-1289-7997"
+    },
+    {
+      "name": "Burian, Libor",
+      "affiliation": null
+    },
+    {
+      "name": "Albarracin, Mahault",
+      "affiliation": "Universite du Quebec a Montreal",
+      "orcid": "0000-0003-0916-4645"
+    },
+    {
+      "name": "Iennaco, Maria Luiza",
+      "affiliation": "University of São Paulo",
+      "orcid": "0000-0002-5407-4852"
+    },
+    {
+      "name": "Brown, Matthew",
+      "affiliation": "ThoughtForge Inc",
+      "orcid": "0000-0002-7552-0989"
+    },
+    {
+      "name": "Thacker, Mick",
+      "affiliation": "Royal College of Surgeons in Ireland",
+      "orcid": "0000-0002-9034-1137"
+    },
+    {
+      "name": "Gilli, Peter",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0006-2755-5921"
+    },
+    {
+      "name": "Kaufmann, Rafael",
+      "affiliation": "Gaia Lab",
+      "orcid": "0009-0003-8678-4896"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "BlockScience",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Henry, Ryan",
+      "affiliation": "Yale University",
+      "orcid": "0000-0002-0706-6841"
+    },
+    {
+      "name": "Ramesh, Sandeep",
+      "affiliation": "Panopticon Ventures",
+      "orcid": "0009-0006-4976-3326"
+    },
+    {
+      "name": "David, Scott",
+      "affiliation": "University of Washington: Applied Physics Laboratory",
+      "orcid": "0000-0003-0679-3286"
+    },
+    {
+      "name": "Alvarado, Sebastian",
+      "affiliation": "Queens College + City University of New York, Biology Department",
+      "orcid": "0000-0001-5866-4043"
+    },
+    {
+      "name": "Baker, Zach",
+      "affiliation": "University of Colorado",
+      "orcid": "0009-0006-7283-9392"
+    }
+  ],
+  "description": "This document surveys the current state of The Active Inference Institute and The Active Inference Ecosystem , in the context of our current and future directions. As embodied agents, we aim to update our decisions, goals and predictions as an institute by actively gathering (sampling) insights (observations) from our members. As Heraclitus once said &ldquo;No one ever steps in the same river twice. For it&rsquo;s never the same river and it&rsquo;s never the same person&rdquo;. In the same way, the Institute evolves with each new member, accumulating a variety of perspectives to drive improvement. The&nbsp; interactive and living form of this document can be found here .&nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Active_Inference_Institute_Dec-18-2025.pdf",
+      "size_bytes": 5800551,
+      "checksum": "md5:ded0c2e93748d2a65dd0e3297cdd4f61",
+      "download_url": "https://zenodo.org/api/records/17982447/files/Active_Inference_Institute_Dec-18-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:38Z"
+}

@@ -16,7 +16,7 @@ identifiers:
     value: 10.5281/zenodo.20804585
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20804586"
+    value: "https://zenodo.org/records/20804585"
     description: "Zenodo landing page"
   - type: url
     value: "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"

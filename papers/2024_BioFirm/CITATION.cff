@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024"
+date-released: 2025-02-12
+doi: 10.5281/zenodo.14861595
+url: "https://doi.org/10.5281/zenodo.14861595"
+authors:
+  - family-names: Clippinger
+    given-names: John
+  - family-names: Pashea
+    given-names: Andrew
+    orcid: "https://orcid.org/0009-0004-4061-6296"
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14861595
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/14861595"
+    description: "Zenodo landing page"

@@ -227,7 +227,7 @@ Before committing or pushing, confirm:
 
 - [`publications.html`](../../publications.html) includes each new or updated work.
 - [`data/works.json`](../../data/works.json) includes the canonical DOI and paper-folder path.
-- Each publication folder has `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, and at least one local artifact link when a PDF exists.
+- Each publication folder has `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and at least one local artifact link when a PDF exists.
 - [`papers/<folder>/index.html`](../../papers/) exists for every bibliography row with a docs path.
 - [`sitemap.xml`](../../sitemap.xml), [`search-index.json`](../../search-index.json), [`GENERATED.md`](../../GENERATED.md), and [`data/generated-manifest.json`](../../data/generated-manifest.json) reflect the new public URLs.
 

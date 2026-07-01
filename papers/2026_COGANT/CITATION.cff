@@ -19,7 +19,7 @@ identifiers:
     value: 10.5281/zenodo.20705350
     description: "Zenodo concept DOI (all versions)"
   - type: url
-    value: "https://zenodo.org/records/20705351"
+    value: "https://zenodo.org/records/20705350"
     description: "Zenodo landing page"
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/COGANT"

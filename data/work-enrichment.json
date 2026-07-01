@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-29T22:12:54Z",
+  "generated_at": "2026-06-30T23:59:21Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 178,
+  "count": 179,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3995,6 +3995,31 @@
       ],
       "methods": [],
       "source": "papers/2026_MappingWilliamBlake/README.md"
+    },
+    "Friedman2026SortitionUpstreamNTQR180": {
+      "citation_key": "Friedman2026SortitionUpstreamNTQR180",
+      "abstract": "How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the agreement/disagreement pattern among three binary judges, the ntqr package's error-independent (EIE) evaluator returns logically consistent estimates of item prevalence and per-judge accuracy with no labels at all. But that evaluator takes the panel as given. We join the two questions and ask whether the rule that forms the panel changes the oracle-referenced error of the no-answer-key evaluation — how far the blind estimate lands from the answer-key result, lower being better. On a fully deterministic instrument (96 seeds, 96 exp",
+      "keywords": [
+        "sortition",
+        "NTQR",
+        "unlabeled evaluation",
+        "expert panels",
+        "peer review",
+        "error independence",
+        "statistical power",
+        "panel formation",
+        "synthetic evaluation",
+        "LLM reviewers"
+      ],
+      "findings": [
+        "sortition",
+        "NTQR",
+        "unlabeled evaluation",
+        "expert panels",
+        "peer review"
+      ],
+      "methods": [],
+      "source": "papers/2026_SortitionUpstreamNTQR/README.md"
     }
   }
 }

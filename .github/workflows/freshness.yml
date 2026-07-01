@@ -31,7 +31,13 @@ jobs:
       - name: Compare with checked-in snapshot
         id: diff
         run: |
-          BASELINE="$(ls reports/public_source_snapshot_*.json | sort | tail -n 1)"
+          # Glob only dated (YYYY-MM-DD) snapshots, which naturally excludes the
+          # "_latest.json" file generated above: including it would make this
+          # script pick itself as the baseline and diff the new snapshot against
+          # itself, permanently reporting changed=false regardless of real drift.
+          shopt -s nullglob
+          candidates=(reports/public_source_snapshot_[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json)
+          BASELINE="$(printf '%s\n' "${candidates[@]}" | sort | tail -n 1)"
           jq -S '.facts' "$BASELINE" > reports/public_source_snapshot_baseline.facts.json
           if cmp -s reports/public_source_snapshot_baseline.facts.json reports/public_source_snapshot_latest.facts.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"

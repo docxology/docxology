@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization"
+version: "0.1"
+date-released: 2025-10-02
+doi: 10.5281/zenodo.17244386
+url: "https://doi.org/10.5281/zenodo.17244386"
+authors:
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17244386
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/17244386"
+    description: "Zenodo landing page"

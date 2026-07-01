@@ -1,0 +1,60 @@
+{
+  "title": "Narrative Information Management",
+  "version": "1.1",
+  "doi": "10.5281/zenodo.5565577",
+  "doi_url": "https://doi.org/10.5281/zenodo.5565577",
+  "zenodo_record": "https://zenodo.org/records/5565577",
+  "record_id": "5573287",
+  "publication_date": "2021-10-12",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "Complexity Weekend; COGSEC; Atlantic Council GeoTech Center",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Shaun Applegate-Swanson",
+      "affiliation": "Complexity Weekend; Microsoft",
+      "orcid": "0000-0001-9474-6038"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Complexity Weekend; COGSEC; Active Inference Lab; University of California, Davis, Department of Entomology and Nematology",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Virginia Bleu Knight",
+      "affiliation": "Complexity Weekend; Active Inference Lab"
+    },
+    {
+      "name": "Alexandra Mikhailova",
+      "affiliation": "Complexity Weekend; University of California, Davis, Center for Neuroscience",
+      "orcid": "0000-0002-8699-7125"
+    }
+  ],
+  "description": "There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing information-related challenges. While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas. In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking. Through this framework, we offer an initial common set of features of impactful information systems found in literature on information-focused disciplines, such as knowledge management, and explore what insights and ad-hoc solutions may be found in an eclectic set of fields facing information challenges, including personal finance, ancestry research, hybrid cloud infrastructure security, translational neuroscience, and genomics. Finally, we offer recommendations for future research.",
+  "keywords": [
+    "Sensemaking",
+    "NIM",
+    "Narrative",
+    "Information Management",
+    "Knowledge Management"
+  ],
+  "files": [
+    {
+      "name": "NIM21 v1.1.pdf",
+      "size_bytes": 738658,
+      "checksum": "md5:59b2857ed60d7fa16d8ac5b8a29d3473",
+      "download_url": "https://zenodo.org/api/records/5573287/files/NIM21%20v1.1.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:50Z"
+}

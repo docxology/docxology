@@ -1,0 +1,33 @@
+{
+  "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+  "version": "v3.5.1",
+  "doi": "10.5281/zenodo.16903351",
+  "doi_url": "https://doi.org/10.5281/zenodo.16903351",
+  "zenodo_record": "https://zenodo.org/records/16903351",
+  "record_id": "20932520",
+  "publication_date": "2026-06-26",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": null
+    }
+  ],
+  "description": "Research Project Template v3.5.1 Final metadata release for the public template publication sweep. Archives the root source state after all standalone template DOI/version writebacks. Keeps every public exemplar release and Zenodo record aligned in the generated publication matrix. Records the first Zenodo/GitHub publications for template_gold_refinement and template_literature_meta_analysis. Root gates passed: Ruff, mypy, strict template drift, publication records, confidentiality, generated-artifact guard, no-mocks, Bandit, skills checks, and hook smoke tests.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "docxology/template-v3.5.1.zip",
+      "size_bytes": 11204091,
+      "checksum": "md5:8bae3ccb71b1ab4c95d0b60d254dc0a2",
+      "download_url": "https://zenodo.org/api/records/20932520/files/docxology/template-v3.5.1.zip/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:12Z"
+}

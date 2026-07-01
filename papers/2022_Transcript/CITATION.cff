@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016"
+title: "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016"
 version: "1.1"
 date-released: 2022-10-27
 doi: 10.5281/zenodo.7267947
@@ -24,5 +24,5 @@ identifiers:
     value: 10.5281/zenodo.7267947
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/7267947"
+    value: "https://zenodo.org/records/7259006"
     description: "Zenodo landing page"

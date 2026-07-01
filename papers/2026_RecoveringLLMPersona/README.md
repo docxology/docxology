@@ -21,7 +21,7 @@ algebraic evaluation · NTQR · unsupervised evaluation · evaluation on unlabel
 | **DOI** | [10.5281/zenodo.20498700](https://doi.org/10.5281/zenodo.20498700) |
 | **Published** | 2026-06-01 |
 | **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20498700 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20498699 |
 | **GitHub release** | https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/ntqr_llm |
 

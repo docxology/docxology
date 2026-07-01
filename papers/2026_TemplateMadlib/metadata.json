@@ -5,7 +5,7 @@
   "doi_url": "https://doi.org/10.5281/zenodo.20786638",
   "concept_doi": "10.5281/zenodo.20786638",
   "version_doi": "10.5281/zenodo.20786639",
-  "zenodo_record": "https://zenodo.org/records/20932025",
+  "zenodo_record": "https://zenodo.org/records/20786638",
   "record_id": "20932025",
   "publication_date": "2026-06-26",
   "resource_type": {
@@ -45,7 +45,7 @@
   ],
   "github_repo": "docxology/template_madlib",
   "source": "zenodo-with-github",
-  "checked_at": "2026-06-29T22:11:13Z",
+  "checked_at": "2026-06-30T22:27:31Z",
   "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
   "release_tag": "v0.1.0",
   "release_name": "Template Madlib v0.1.0",

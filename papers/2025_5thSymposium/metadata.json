@@ -1,0 +1,191 @@
+{
+  "title": "Abstract book for: 5th Applied Active Inference Symposium",
+  "version": "v2",
+  "doi": "10.5281/zenodo.17555266",
+  "doi_url": "https://doi.org/10.5281/zenodo.17555266",
+  "zenodo_record": "https://zenodo.org/records/17555266",
+  "record_id": "17575211",
+  "publication_date": "2025-11-10",
+  "resource_type": {
+    "title": "Event",
+    "type": "event"
+  },
+  "creators": [
+    {
+      "name": "Active Inference Institute",
+      "affiliation": null
+    },
+    {
+      "name": "Safron, Adam",
+      "affiliation": null
+    },
+    {
+      "name": "Kiefer, Alex",
+      "affiliation": null
+    },
+    {
+      "name": "Sabine, Alexander",
+      "affiliation": null
+    },
+    {
+      "name": "Hiott, Andrea",
+      "affiliation": null
+    },
+    {
+      "name": "Pashea, Andrew",
+      "affiliation": null
+    },
+    {
+      "name": "Alicea, Bradly",
+      "affiliation": null
+    },
+    {
+      "name": "Fields, Chris",
+      "affiliation": null
+    },
+    {
+      "name": "Holt, Denise",
+      "affiliation": null
+    },
+    {
+      "name": "Shah, Harshil",
+      "affiliation": null
+    },
+    {
+      "name": "Maitra, Satyaki",
+      "affiliation": null
+    },
+    {
+      "name": "Pae, Hongju",
+      "affiliation": null
+    },
+    {
+      "name": "Tennant, Ian",
+      "affiliation": null
+    },
+    {
+      "name": "Cloutier, Jean-François",
+      "affiliation": null
+    },
+    {
+      "name": "Freda, Jim",
+      "affiliation": null
+    },
+    {
+      "name": "Dietz, Joel",
+      "affiliation": null
+    },
+    {
+      "name": "Boik, John",
+      "affiliation": null
+    },
+    {
+      "name": "Friston, Karl",
+      "affiliation": null
+    },
+    {
+      "name": "Iennaco, Maria Luiza",
+      "affiliation": null
+    },
+    {
+      "name": "Brown, Matthew",
+      "affiliation": null
+    },
+    {
+      "name": "Garfield, Michael",
+      "affiliation": null
+    },
+    {
+      "name": "Hinrichs, Nicolás",
+      "affiliation": null
+    },
+    {
+      "name": "Octopus",
+      "affiliation": null
+    },
+    {
+      "name": "PabloFM",
+      "affiliation": null
+    },
+    {
+      "name": "Waade, Peter Thestrup",
+      "affiliation": null
+    },
+    {
+      "name": "Worden, Robert",
+      "affiliation": null
+    },
+    {
+      "name": "Senchal, Sam A",
+      "affiliation": null
+    },
+    {
+      "name": "Montañez, Samuel",
+      "affiliation": null
+    },
+    {
+      "name": "Namjoshi, Sanjeev",
+      "affiliation": null
+    },
+    {
+      "name": "Shrivastava, Siddhant",
+      "affiliation": null
+    },
+    {
+      "name": "de Jager, Sonia",
+      "affiliation": null
+    },
+    {
+      "name": "Macurdy, Steph",
+      "affiliation": null
+    },
+    {
+      "name": "Weiniger, Steven",
+      "affiliation": null
+    },
+    {
+      "name": "Hasty, Susan",
+      "affiliation": null
+    },
+    {
+      "name": "Nguyen, Viet Dung",
+      "affiliation": null
+    },
+    {
+      "name": "Gebhardt, William",
+      "affiliation": null
+    },
+    {
+      "name": "Lennon, Michael",
+      "affiliation": null
+    },
+    {
+      "name": "Newell, Dave",
+      "affiliation": null
+    },
+    {
+      "name": "Huembeli, Patrick",
+      "affiliation": null
+    },
+    {
+      "name": "Ramstead, Maxwell",
+      "affiliation": null
+    }
+  ],
+  "description": "This is the abstract for the Abstract Book for the 5th Applied Active Inference Symposium (Nov 12-14, 2025). The Active Inference Institute (AII) is an open-science institute dedicated to improving the accessibility, rigor, and applicability of the Active Inference framework. Included are the abstracts of the registered Presenters, who presented in a Live Session or submitted Pre-recorded Talks. All information: http://symposium.activeinference.institute/ Direct link to program: https://coda.io/d/_d08cdDbWwRy/Symposium-Program_surazvwP",
+  "keywords": [
+    "Active Inference"
+  ],
+  "files": [
+    {
+      "name": "5th_Applied_Active_Inference_Symposium_Abstracts_2025.pdf",
+      "size_bytes": 414282,
+      "checksum": "md5:c82ae19574c6cf1fc97463e329f25c2a",
+      "download_url": "https://zenodo.org/api/records/17575211/files/5th_Applied_Active_Inference_Symposium_Abstracts_2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:37Z"
+}

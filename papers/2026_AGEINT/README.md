@@ -23,7 +23,7 @@ agentic intelligence · intelligence tradecraft · cognitive security · structu
 | **Published** | 2026-06-17 |
 | **Version** | 0.1 |
 | **License** | CC-BY-4.0 |
-| **Zenodo record** | https://zenodo.org/records/20732275 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20732274 |
 
 ## Files
 

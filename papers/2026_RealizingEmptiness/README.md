@@ -23,7 +23,7 @@ active inference · Bayesian model reduction · quantum reference frames · empt
 | **DOI** | [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) |
 | **Published** | 2026-06-24 |
 | **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20834847 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20834846 |
 | **GitHub release** | https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/realizing_emptiness |
 

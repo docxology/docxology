@@ -1,0 +1,46 @@
+{
+  "title": "Systems Processes, Active Inference, and Beyond",
+  "version": null,
+  "doi": "10.5281/zenodo.17138223",
+  "doi_url": "https://doi.org/10.5281/zenodo.17138223",
+  "zenodo_record": "https://zenodo.org/records/17138223",
+  "record_id": "17138224",
+  "publication_date": "2025-09-17",
+  "resource_type": {
+    "title": "Presentation",
+    "type": "presentation"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr. Len Troncale\", an online event in September 2025 https://troncale.sched.com/ .",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Len-Troncale_DAF_9-17-2025.pdf",
+      "size_bytes": 3636370,
+      "checksum": "md5:281234ee45a793c2c9800f4c1a202cd6",
+      "download_url": "https://zenodo.org/api/records/17138224/files/Len-Troncale_DAF_9-17-2025.pdf/content"
+    },
+    {
+      "name": "Len-Troncale_DAF_9-17-2025.odp",
+      "size_bytes": 20298044,
+      "checksum": "md5:4edb38b4475b332a78156a817be2e0b8",
+      "download_url": "https://zenodo.org/api/records/17138224/files/Len-Troncale_DAF_9-17-2025.odp/content"
+    },
+    {
+      "name": "Len-Troncale_DAF_9-17-2025.pptx",
+      "size_bytes": 20422864,
+      "checksum": "md5:84c37a0c8e8797ae9b81ff4dfcb3b1d0",
+      "download_url": "https://zenodo.org/api/records/17138224/files/Len-Troncale_DAF_9-17-2025.pptx/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:00Z"
+}

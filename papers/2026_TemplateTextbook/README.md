@@ -21,7 +21,7 @@ open textbook · modular manuscript · reproducible publishing · computational 
 | **DOI** | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) |
 | **Published** | 2026-06-03 |
 | **Version** | 0.1 |
-| **Zenodo record** | https://zenodo.org/records/20533126 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20533125 |
 | **GitHub release** | https://github.com/docxology/template_textbook/releases/tag/v0.1.0 |
 | **Source repository** | https://github.com/docxology/template_textbook |
 

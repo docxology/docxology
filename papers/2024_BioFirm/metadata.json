@@ -1,0 +1,67 @@
+{
+  "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+  "version": null,
+  "doi": "10.5281/zenodo.14861595",
+  "doi_url": "https://doi.org/10.5281/zenodo.14861595",
+  "zenodo_record": "https://zenodo.org/records/14861595",
+  "record_id": "14861596",
+  "publication_date": "2025-02-12",
+  "resource_type": {
+    "title": "Presentation",
+    "type": "presentation"
+  },
+  "creators": [
+    {
+      "name": "John Clippinger",
+      "affiliation": "Bioform Labs"
+    },
+    {
+      "name": "Andrew Pashea",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0009-0004-4061-6296"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "BIOFIBIOFIRM_v2.pptx",
+      "size_bytes": 3792928,
+      "checksum": "md5:53ce1262b604dcb50ffdd9c5794b8d69",
+      "download_url": "https://zenodo.org/api/records/14861596/files/BIOFIBIOFIRM_v2.pptx/content"
+    },
+    {
+      "name": "John H Clippinger & Andrew Pashea_ “BioFirm Workshop part 2_.mp4",
+      "size_bytes": 505106551,
+      "checksum": "md5:8848c5c177713a0f203d254753df2b3a",
+      "download_url": "https://zenodo.org/api/records/14861596/files/John%20H%20Clippinger%20&%20Andrew%20Pashea_%20%E2%80%9CBioFirm%20Workshop%20part%202_.mp4/content"
+    },
+    {
+      "name": "Day3_Roundtable.mp4",
+      "size_bytes": 461527767,
+      "checksum": "md5:d1b32b277206d7e787ba54e35fb7def5",
+      "download_url": "https://zenodo.org/api/records/14861596/files/Day3_Roundtable.mp4/content"
+    },
+    {
+      "name": "Andrew Pashea - Active Inference Symposium 2024 (1).pptx",
+      "size_bytes": 4354599,
+      "checksum": "md5:2984988f9f109126dcbe41d0563b7d03",
+      "download_url": "https://zenodo.org/api/records/14861596/files/Andrew%20Pashea%20-%20Active%20Inference%20Symposium%202024%20(1).pptx/content"
+    },
+    {
+      "name": "John H Clippinger “Workshop part 1_ Introduction to Applying Active Inference“.mp4",
+      "size_bytes": 271640214,
+      "checksum": "md5:c7b2ff0d303453b772e49bb1078dd090",
+      "download_url": "https://zenodo.org/api/records/14861596/files/John%20H%20Clippinger%20%E2%80%9CWorkshop%20part%201_%20Introduction%20to%20Applying%20Active%20Inference%E2%80%9C.mp4/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:24Z"
+}

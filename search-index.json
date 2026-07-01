@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T22:12:55Z",
+  "generated_at": "2026-06-30T23:59:22Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1832,
+  "count": 1833,
   "items": [
     {
       "id": "page:home",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-29.json",
+      "url": "/reports/accessibility_static_2026-06-30.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-29.json",
+      "url": "/reports/asset_size_2026-06-30.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -368,7 +368,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-06-29.json",
+      "url": "/reports/live_site_verification_2026-06-30.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4303,6 +4303,30 @@
         "rights-bounded release"
       ],
       "content": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls Zenodo 10.5281/zenodo.21047573 Friedman2026MappingWilliamBlakeS179 Computational Paper A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms. William Blake digital humanities corpus acquisition source provenance rights-bounded release William Blake digital humanities corpus acquisition source provenance rights-bounded release"
+    },
+    {
+      "id": "work:Friedman2026SortitionUpstreamNTQR180",
+      "type": "work",
+      "title": "Sortition Upstream of NTQR",
+      "url": "/works/Friedman2026SortitionUpstreamNTQR180.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21083779",
+      "summary": "How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "sortition",
+        "NTQR",
+        "unlabeled evaluation",
+        "expert panels",
+        "peer review",
+        "error independence",
+        "statistical power",
+        "panel formation"
+      ],
+      "content": "Sortition Upstream of NTQR Zenodo 10.5281/zenodo.21083779 Friedman2026SortitionUpstreamNTQR180 Computational Paper How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the agreement/disagreement pattern among three binary judges, the ntqr package's error-independent (EIE) evaluator returns logically consistent estimates of item prevalence and per-judge accuracy with no labels at all. But that evaluator takes the panel as given. We join the two questions and ask whether the rule that forms the panel changes the oracle-referenced error of the no-answer-key evaluation — how far the blind estimate lands from the answer-key result, lower being better. On a fully deterministic instrument (96 seeds, 96 exp sortition NTQR unlabeled evaluation expert panels peer review error independence statistical power panel formation synthetic evaluation LLM reviewers sortition NTQR unlabeled evaluation expert panels peer review"
     },
     {
       "id": "software:docxology:template",
@@ -31304,13 +31328,13 @@
       "id": "person:MJ Ramstead",
       "type": "person",
       "title": "MJ Ramstead",
-      "url": "pages/COLLABORATORS.md#maxwell-j-d-ramstead--mila--mcgill",
+      "url": "pages/COLLABORATORS.md#maxwell-ramstead",
       "summary": "Active Inference and cognitive science collaborator",
       "tags": [
         "person",
         "collaborator"
       ],
-      "content": "MJ Ramstead Active Inference and cognitive science collaborator pages/COLLABORATORS.md#maxwell-j-d-ramstead--mila--mcgill"
+      "content": "MJ Ramstead Active Inference and cognitive science collaborator pages/COLLABORATORS.md#maxwell-ramstead"
     },
     {
       "id": "organization:Active Inference Institute",
@@ -31359,7 +31383,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 178 works.",
+      "title": "The curated bibliography contains 179 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31367,12 +31391,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 178 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 179 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 161 per-paper documentation folders.",
+      "title": "The repository contains 162 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31380,7 +31404,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 161 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 162 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31556,7 +31580,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 178 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 179 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

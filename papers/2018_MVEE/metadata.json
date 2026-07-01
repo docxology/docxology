@@ -1,0 +1,46 @@
+{
+  "title": "MVEE:  A Framework for Evolutionary Studies",
+  "version": null,
+  "doi": "10.5281/zenodo.13999298",
+  "doi_url": "https://doi.org/10.5281/zenodo.13999298",
+  "zenodo_record": "https://zenodo.org/records/13999298",
+  "record_id": "13999299",
+  "publication_date": "2018-01-18",
+  "resource_type": {
+    "title": "Presentation",
+    "type": "presentation"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Stanford University",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more.&nbsp; Uploaded to Zenodo in 2024.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "MVEE_2018.pdf",
+      "size_bytes": 7041356,
+      "checksum": "md5:1683d0ea71ae9b1fd22c1b40b2ad7d0d",
+      "download_url": "https://zenodo.org/api/records/13999299/files/MVEE_2018.pdf/content"
+    },
+    {
+      "name": "MVEE_2018.odp",
+      "size_bytes": 24270168,
+      "checksum": "md5:0c2ee7b2652db6f11f7445e449d9f10d",
+      "download_url": "https://zenodo.org/api/records/13999299/files/MVEE_2018.odp/content"
+    },
+    {
+      "name": "MVEE_2018.pptx",
+      "size_bytes": 24184953,
+      "checksum": "md5:1a8a7b6ddf9d354f6a153d195efcfbc5",
+      "download_url": "https://zenodo.org/api/records/13999299/files/MVEE_2018.pptx/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:39Z"
+}

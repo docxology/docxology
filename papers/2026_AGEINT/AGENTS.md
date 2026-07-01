@@ -19,5 +19,5 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20732275
+- **Zenodo record**: https://zenodo.org/records/20732274
 - **Source**: Zenodo record paired with GitHub repository https://github.com/docxology/AGEINT

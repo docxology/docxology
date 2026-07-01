@@ -25,8 +25,8 @@ This repository is the public research, software, citation, evidence, and websit
 | Audit publication skills | [`papers/`](papers/), [`data/works.json`](data/works.json) | `uv run python3 code/orchestrators/audit_publication_skills.py --check` |
 | Refresh generated files | [`GENERATED.md`](GENERATED.md) | `uv run python3 code/orchestrators/regenerate_all.py --validate` (one-pass rebuild of the local generated layer, then validate) |
 | Google Search Console follow-up | [`docs/seo/gsc-followup.md`](docs/seo/gsc-followup.md), [`data/gsc-followup-checklist.json`](data/gsc-followup-checklist.json) | `uv run python3 code/orchestrators/gsc_followup_preflight.py` |
-| Check deployed site health | [`reports/live_site_verification_2026-05-15.json`](reports/live_site_verification_2026-05-15.json) | `python3 code/orchestrators/verify_live_site.py` |
-| Refresh public-source inventory | [`reports/public_source_inventory_2026-06-09.json`](reports/public_source_inventory_2026-06-09.json) | `python3 code/orchestrators/refresh_public_source_inventory.py` |
+| Check deployed site health | latest `reports/live_site_verification_*.json` | `python3 code/orchestrators/verify_live_site.py` |
+| Refresh public-source inventory | latest `reports/public_source_inventory_*.json` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Triage external links | [`reports/external_links_triage_2026-05-15.md`](reports/external_links_triage_2026-05-15.md) | `python3 code/orchestrators/check_external_links.py` |
 
 ## Source-Of-Truth Rules

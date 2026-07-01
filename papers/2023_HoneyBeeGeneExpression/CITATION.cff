@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)"
+version: "v1.0"
+date-released: 2023-12-18
+doi: 10.5281/zenodo.10400744
+url: "https://doi.org/10.5281/zenodo.10400744"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Tong
+    given-names: Chao
+    orcid: "https://orcid.org/0000-0001-5202-5507"
+  - family-names: Linksvayer
+    given-names: Timothy A.
+    orcid: "https://orcid.org/0000-0001-7034-1546"
+  - family-names: Freund
+    given-names: Matthias
+    orcid: "https://orcid.org/0000-0002-5683-6275"
+  - family-names: Keough
+    given-names: Nicole Weronika
+    orcid: "https://orcid.org/0009-0002-1058-5105"
+  - family-names: Johnson
+    given-names: Brian
+    orcid: "https://orcid.org/0000-0001-6390-7230"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10400744
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/10400744"
+    description: "Zenodo landing page"

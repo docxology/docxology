@@ -1,0 +1,34 @@
+{
+  "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+  "version": null,
+  "doi": "10.5281/zenodo.17229924",
+  "doi_url": "https://doi.org/10.5281/zenodo.17229924",
+  "zenodo_record": "https://zenodo.org/records/17229924",
+  "record_id": "17229925",
+  "publication_date": "2025-09-30",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Biological development unfolds as a stochastic process characterized by continuous variation and discrete transitions, yet traditional analytical methods fail to capture this complexity, and we present EvoJump, a unified computational framework that models developmental trajectories as stochastic processes analyzed through cross-sectional laser plane views of phenotypic distributions. EvoJump integrates multiple stochastic process models including jump-diffusion, fractional Brownian motion, Cox-Ingersoll-Ross, and L&eacute;vy processes with advanced statistical methods including wavelet analysis, copula modeling, extreme value theory, and regime-switching detection, enabling analysis of developmental trajectories and evolutionary constraints, prediction of phenotypic outcomes with uncertainty quantification, and identification of developmental phase transitions and dependencies. Implemented in Python with comprehensive testing framework and extensive documentation, EvoJump bridges quantitative genetics and modern computational methods, enabling researchers to address fundamental questions about the mechanistic basis of phenotypic evolution across ontogeny, and the framework demonstrates robust performance with synthetic data validation and scales efficiently to large phenotyping datasets. All methods and the material for generating the paper are available in https://github.com/docxology/EvoJump",
+  "keywords": [],
+  "files": [
+    {
+      "name": "EvoJump_DAF_9-30-2025.pdf",
+      "size_bytes": 7410576,
+      "checksum": "md5:9eadb8b2037f3ff9bb1d8eacf18d7663",
+      "download_url": "https://zenodo.org/api/records/17229925/files/EvoJump_DAF_9-30-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:48Z"
+}

@@ -1,0 +1,52 @@
+{
+  "title": "On Time",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.15168381",
+  "doi_url": "https://doi.org/10.5281/zenodo.15168381",
+  "zenodo_record": "https://zenodo.org/records/15168381",
+  "record_id": "15168382",
+  "publication_date": "2025-04-07",
+  "resource_type": {
+    "title": "Other",
+    "type": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This work explores the interplay between knowledge and wisdom as dynamic processes within the passage of time. Knowledge is framed as learning in time&mdash;sequentially accumulating observations&mdash;and learning from time, discerning causal patterns and tendencies. Wisdom, conversely, is presented as learning from time&mdash;metacognitive reflection on sequences of sequences&mdash;and learning in time, embracing the immediacy of perspective and timing. Together, these dualities form a tetralemma: a unified framework where knowledge and wisdom intersect across temporal dimensions. This relational synthesis invites a perspective shift between unity and plurality, situating human experience both within and beyond time. Ultimately, the inquiry seeks to honor the role of Eldership as a temporal guide, fostering recognition and empowerment for collective growth across generations. &nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "On_Time_4-7-2025.md",
+      "size_bytes": 1998,
+      "checksum": "md5:ed11c783725282e7763d3bea38846f67",
+      "download_url": "https://zenodo.org/api/records/15168382/files/On_Time_4-7-2025.md/content"
+    },
+    {
+      "name": "On_Time_4-7-2025.odt",
+      "size_bytes": 15126,
+      "checksum": "md5:9804efe18d1ba0296743cf8e642dbd36",
+      "download_url": "https://zenodo.org/api/records/15168382/files/On_Time_4-7-2025.odt/content"
+    },
+    {
+      "name": "On_Time_4-7-2025.docx",
+      "size_bytes": 9393,
+      "checksum": "md5:76fbe16d2add8cfd9c336ff55b86c780",
+      "download_url": "https://zenodo.org/api/records/15168382/files/On_Time_4-7-2025.docx/content"
+    },
+    {
+      "name": "On_Time_4-7-2025.pdf",
+      "size_bytes": 56934,
+      "checksum": "md5:ed979661a39678c773368d7745cfb0bf",
+      "download_url": "https://zenodo.org/api/records/15168382/files/On_Time_4-7-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:53Z"
+}

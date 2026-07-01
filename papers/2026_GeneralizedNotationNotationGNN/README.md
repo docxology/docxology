@@ -21,7 +21,7 @@ active inference · generative models · cognitive modeling · notation system �
 | **DOI** | [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313) |
 | **Published** | 2026-06-12 |
 | **Version** | v2.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20671741 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/7803313 |
 
 ## Files
 

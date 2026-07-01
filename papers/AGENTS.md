@@ -48,6 +48,8 @@
 
 ### Quality Checks (spot-check after adds)
 
+Universal baseline (every paper folder, regardless of when it was created):
+
 | Check | Status |
 |-------|--------|
 | README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) |
@@ -57,6 +59,13 @@
 | SKILL.md `## Instructions` section | required |
 | SKILL.md `## Key Concepts` section | required |
 | SKILL.md `## Prerequisites` section | required |
+
+Additional files required for any folder created or updated through the automated publication-sync pipeline (`sync_paired_publications.py`, `add_zenodo_only.py` — see [`docs/operations/publication-sync.md`](../docs/operations/publication-sync.md)):
+
+| Check | Status |
+|-------|--------|
+| `metadata.json` present | required for pipeline-managed folders; backfilled from the live Zenodo API for every pre-pipeline folder with a Zenodo DOI (2026-06-30). The remaining gap is folders whose canonical record is a non-Zenodo DOI (journal article, arXiv, OSF) — these never have a Zenodo-shaped `metadata.json`/`CITATION.cff` to backfill. |
+| `CITATION.cff` present | required for pipeline-managed folders; same scope and backfill status as `metadata.json` |
 
 ---
 

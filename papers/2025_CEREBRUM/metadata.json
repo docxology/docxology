@@ -3,7 +3,7 @@
   "version": "1.4",
   "doi": "10.5281/zenodo.15170907",
   "doi_url": "https://doi.org/10.5281/zenodo.15170907",
-  "zenodo_record": "https://zenodo.org/records/15231156",
+  "zenodo_record": "https://zenodo.org/records/15170907",
   "record_id": "15231156",
   "publication_date": "2025-04-16",
   "resource_type": {
@@ -42,5 +42,5 @@
   "pairing_evidence": [
     "github_release_mentions_zenodo_record"
   ],
-  "checked_at": "2026-06-29T22:11:13Z"
+  "checked_at": "2026-06-30T22:27:22Z"
 }

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "On free will or the lack thereof"
+date-released: 2022-12-03
+doi: 10.5281/zenodo.7394900
+url: "https://doi.org/10.5281/zenodo.7394900"
+authors:
+  - family-names: Sapolsky
+    given-names: Robert
+    orcid: "https://orcid.org/0000-0002-7435-5838"
+  - family-names: Mikhailova
+    given-names: Alexandra
+    orcid: "https://orcid.org/0000-0002-8699-7125"
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7394900
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/7394900"
+    description: "Zenodo landing page"

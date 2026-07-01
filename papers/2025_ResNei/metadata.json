@@ -1,0 +1,72 @@
+{
+  "title": "ResNei: Solution Design Document",
+  "version": null,
+  "doi": "10.5281/zenodo.15389682",
+  "doi_url": "https://doi.org/10.5281/zenodo.15389682",
+  "zenodo_record": "https://zenodo.org/records/15389682",
+  "record_id": "16753709",
+  "publication_date": "2025-08-08",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Lumiruusu, Janna",
+      "affiliation": null,
+      "orcid": "0009-0005-2166-0045"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Rahman, Shagor",
+      "affiliation": null,
+      "orcid": "0009-0004-0460-0078"
+    },
+    {
+      "name": "Baulin, Vladimir",
+      "affiliation": null,
+      "orcid": "0000-0003-2086-4271"
+    },
+    {
+      "name": "Pashea, Andrew",
+      "affiliation": null,
+      "orcid": "0009-0004-4061-6296"
+    }
+  ],
+  "description": "ResNei &mdash; Research Neighbourhood &ndash; is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas. At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge. This graph is structured as a set of Conceptual Nexus Models (CNMs)&mdash;modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration. Our UX design moves away from conventional passive, attention-driven systems toward a dynamic, action-intention model that centres collaboration, responsiveness, and contextual insight. A world where research becomes not just efficient, but responsive, intuitive, and interconnected. This platform aims to scale research processes through the interplay of generalists and specialists. Our platform involves a graphical concept model, enabling specialists to engage with reliable evaluation of scientific output, while democratising the otherwise intractable web of knowledge for the generalist. The co-evolution of expert-lead early adoption with generalist participation drives insight and growth: where research thrives through their collaboration. Grounded in scientific protocols and social accountability, ResNei values reciprocity, interdependence, and access. Innovation here acknowledges its real-world costs&mdash;social, ecological, and temporal&mdash;and builds not just tools, but shared capacity for meaningful discovery. Project Status: As of the second version of this publication in August 2025, this Solution Design Document outlines the foundational concepts, architecture, and guiding principles of ResNei. The project is currently in early development, with a set of working prototypes and a technical paper in preprint. This document supports the transition from conceptual design to implementation.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Resnei Solution Design Document v2.odt",
+      "size_bytes": 1862512,
+      "checksum": "md5:c1cd46ad2df0e414fa20bbcc8e961771",
+      "download_url": "https://zenodo.org/api/records/16753709/files/Resnei%20Solution%20Design%20Document%20v2.odt/content"
+    },
+    {
+      "name": "Resnei Solution Design Document v2.epub",
+      "size_bytes": 1557132,
+      "checksum": "md5:e17759573294ee1a25a165ba039b5be4",
+      "download_url": "https://zenodo.org/api/records/16753709/files/Resnei%20Solution%20Design%20Document%20v2.epub/content"
+    },
+    {
+      "name": "Resnei Solution Design Document v2.docx",
+      "size_bytes": 3278785,
+      "checksum": "md5:a45c39f077696e0dd62961c1de6d56d7",
+      "download_url": "https://zenodo.org/api/records/16753709/files/Resnei%20Solution%20Design%20Document%20v2.docx/content"
+    },
+    {
+      "name": "Resnei Solution Design Document v2.pdf",
+      "size_bytes": 1842767,
+      "checksum": "md5:5697eb8e79c1eee59bec4b2df05ef3ae",
+      "download_url": "https://zenodo.org/api/records/16753709/files/Resnei%20Solution%20Design%20Document%20v2.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:56Z"
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition",
+  "version": "1",
+  "doi": "10.5281/zenodo.7377255",
+  "doi_url": "https://doi.org/10.5281/zenodo.7377255",
+  "zenodo_record": "https://zenodo.org/records/7377255",
+  "record_id": "7377256",
+  "publication_date": "2022-11-29",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Sean O'Connor",
+      "affiliation": "Independent Researcher",
+      "orcid": "0000-0002-0858-5635"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "The &quot;mirror test&quot; has been used as a behavioral measure of mirror self-recognition for a variety of species. In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior. Furthermore, we hypothesize that a &ldquo;reflection prediction&rdquo;, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a social perspective. As we show that a reflection prediction may help to explain how these traits may emerge in human cognition, we also point out that atypical reflection predictions or atypical use of a reflection prediction may help to explain instances where these traits are atypical in certain individuals.",
+  "keywords": [
+    "Mirror self-recognition",
+    "Mirror test",
+    "Self-directed behavior",
+    "Active inference",
+    "Predictive processing",
+    "Sensory attenuation",
+    "Mirror neuron",
+    "Body Image",
+    "Psycopathology",
+    "Autism",
+    "Depersonalization Disorder",
+    "Schizophrenia",
+    "Body integrity identity disorder",
+    "Imitation",
+    "Self-Awareness",
+    "Theory of mind",
+    "George Herbert Mead"
+  ],
+  "files": [
+    {
+      "name": "Predictive Processing Interpretation of the Mirror Test.pdf",
+      "size_bytes": 206849,
+      "checksum": "md5:0b44a22c04817c12f6928c01954ab245",
+      "download_url": "https://zenodo.org/api/records/7377256/files/Predictive%20Processing%20Interpretation%20of%20the%20Mirror%20Test.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:58Z"
+}

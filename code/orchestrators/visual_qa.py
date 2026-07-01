@@ -13,10 +13,12 @@ import json
 import socket
 import subprocess
 import time
+import sys
 from pathlib import Path
 from urllib.request import urlopen
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
     from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file

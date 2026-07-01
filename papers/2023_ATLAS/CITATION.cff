@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management"
+date-released: 2023-12-07
+doi: 10.5281/zenodo.10296601
+url: "https://doi.org/10.5281/zenodo.10296601"
+authors:
+  - family-names: Cordes
+    given-names: R.J.
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+  - family-names: David
+    given-names: Scott
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Mikhailova
+    given-names: Alexandra
+    orcid: "https://orcid.org/0000-0002-8699-7125"
+  - family-names: Penland
+    given-names: Andrew
+  - family-names: Young
+    given-names: Sam
+  - family-names: Zacharias
+    given-names: Colten
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10296601
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/10296601"
+    description: "Zenodo landing page"

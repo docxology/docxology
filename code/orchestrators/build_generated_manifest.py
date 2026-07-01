@@ -5,14 +5,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
     from report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
 except ImportError:  # pragma: no cover - package import path
     from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"
 
@@ -84,6 +87,12 @@ ARTIFACTS = [
             "reports/paired_publications_*.json",
         ],
         "command": "uv run python3 code/orchestrators/build_current_counts.py",
+    },
+    {
+        "name": "Open Graph preview images",
+        "outputs": ["og-*.jpg", "data/og-image-counts.json"],
+        "sources": ["data/current-counts.json", "code/orchestrators/generate_og_images.py"],
+        "command": "python3 code/orchestrators/generate_og_images.py",
     },
     {
         "name": "Agent data exports",
@@ -292,6 +301,12 @@ ARTIFACTS = [
         "outputs": ["sitemap.xml"],
         "sources": ["works/*.html", "code/src/sitemap_policy.py", "code/orchestrators/build_sitemap.py"],
         "command": "python3 code/orchestrators/build_sitemap.py",
+    },
+    {
+        "name": "Image sitemap",
+        "outputs": ["sitemap-images.xml"],
+        "sources": ["data/artworks.json", "art/*", "code/orchestrators/build_image_sitemap.py"],
+        "command": "python3 code/orchestrators/build_image_sitemap.py",
     },
     {
         "name": "Visual QA",

@@ -7,12 +7,14 @@ import argparse
 import datetime as dt
 import json
 import os
+import sys
 import urllib.parse
 import urllib.request
 from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-inventory/1.0 (+https://danielarifriedman.com/)"
 

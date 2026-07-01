@@ -1,0 +1,43 @@
+{
+  "title": "An Account of Active Inference Modeling",
+  "version": "v1.0",
+  "doi": "10.5281/zenodo.8415312",
+  "doi_url": "https://doi.org/10.5281/zenodo.8415312",
+  "zenodo_record": "https://zenodo.org/records/8415312",
+  "record_id": "8415313",
+  "publication_date": "2023-10-06",
+  "resource_type": {
+    "title": "Report",
+    "type": "publication",
+    "subtype": "report"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute; COGSEC",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This report provides a&nbsp;single-page&nbsp;account of Active Inference modeling.&nbsp; This report was written entirely by hand without any synthetic computational-linguistic intelligences. Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from.&nbsp;",
+  "keywords": [
+    "Active Inference"
+  ],
+  "files": [
+    {
+      "name": "An Account of Active Inference Modeling v1.docx",
+      "size_bytes": 9643,
+      "checksum": "md5:493cb80630036a82dbfda4a3a74e199d",
+      "download_url": "https://zenodo.org/api/records/8415313/files/An%20Account%20of%20Active%20Inference%20Modeling%20v1.docx/content"
+    },
+    {
+      "name": "An Account of Active Inference Modeling v1.pdf",
+      "size_bytes": 55132,
+      "checksum": "md5:b5c3ec407bf06e4432cb6b196f0e19b4",
+      "download_url": "https://zenodo.org/api/records/8415313/files/An%20Account%20of%20Active%20Inference%20Modeling%20v1.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:08Z"
+}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "The Free Energy Principle & Active Inference: a Systematic Literature Analysis"
+version: "v1"
+date-released: 2022-12-16
+doi: 10.5281/zenodo.7449367
+url: "https://doi.org/10.5281/zenodo.7449367"
+authors:
+  - family-names: Knight
+    given-names: Virginia Bleu
+    orcid: "https://orcid.org/0000-0002-9894-1989"
+  - family-names: Cordes
+    given-names: RJ
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7449367
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/7449367"
+    description: "Zenodo landing page"

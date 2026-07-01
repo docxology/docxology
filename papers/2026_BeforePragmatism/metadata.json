@@ -1,0 +1,42 @@
+{
+  "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+  "version": null,
+  "doi": "10.5281/zenodo.18807970",
+  "doi_url": "https://doi.org/10.5281/zenodo.18807970",
+  "zenodo_record": "https://zenodo.org/records/18807970",
+  "record_id": "18984939",
+  "publication_date": "2026-03-12",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "When Boston's Angel in William Blake's America: a Prophecy (1793) declares \"No more I follow, no more obedience pay!\" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists&mdash;writing a continent away and a century later&mdash;would formalize as the structure of inquiry itself: the organism confronting a novel encounter, breaking inherited habit, and forging new modes of engagement with what Dewey called the \"indeterminate situation.\" This manuscript traces six structural convergences between Blake's visionary epistemology and the pragmatist tradition from Peirce through Brandom. Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the \"five gates of their law-built Heaven\" performs Dewey's collapse of the spectator theory and James's insistence that relations are as real as their relata; and the Four Zoas&mdash;Urizen, Luvah, Tharmas, Urthona&mdash;function as Blake's proto-cognitive architecture, anticipating the factorized generative model of Active Inference where reason, passion, sensation, and imagination must coordinate or the system fragments into what Blake names \"Newton's Sleep.\" The sixth dimension extends the synthesis to Fuller and Applewhite's Synergetics, where the tetrahedron replaces the cube as the fundamental unit of spatial thought&mdash;a geometric operationalism that parallels Blake's rejection of Newtonian-Cartesian abstraction and Peirce's pragmatic maxim that the meaning of a concept lies entirely in its conceivable practical effects. The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference&mdash;the process theory of the Free Energy Principle&mdash;in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as \"Human Existence itself,\" precision weighting distributes cognitive authority across the Zoas, and multi-agent belief alignment formalizes Peirce's community of inquirers converging toward truth under fallibilistic self-correction. Drawing on the emerging literature connecting pragmatism with predictive processing&mdash;Pietarinen and Beni's identification of free energy minimization as formalized Peircean abduction, Gallagher's framing of classical pragmatism as the conceptual ancestor of enactivism, and the pragmatic turn in cognitive science&mdash;the manuscript positions Blake as a third vertex in a triadic synthesis linking prophetic vision, democratic philosophy, and Bayesian neuroscience. The implications extend from computational psychiatry (Newton's Sleep as pathological prior dominance) through digital humanities (the Blake Archive as a semiotic laboratory) to AI alignment (the Fourfold Vision as a corrective to the single vision of next-token prediction), while Synergetics and Urner's computational pedagogy ground the synthesis in an alternative geometry where thinking, making, and experiencing are operationally inseparable. What emerges is the recognition that Blake's prophetic fire, Pragmatism's self-correcting inquiry, and the science of variational inference are three refractions of a single ancient light&mdash;the light by which self-organizing systems navigate entropy, forging from the flux of prediction and error the architectures of meaning that make a cosmos out of chaos.",
+  "keywords": [
+    "William Blake"
+  ],
+  "files": [
+    {
+      "name": "BlakeAmericaPragmatism_DAF_v2_03122026.zip",
+      "size_bytes": 296671869,
+      "checksum": "md5:294b36f2b5533b060ea33b54fd5a165e",
+      "download_url": "https://zenodo.org/api/records/18984939/files/BlakeAmericaPragmatism_DAF_v2_03122026.zip/content"
+    },
+    {
+      "name": "BlakeAmericaPragmatism_DAF_v2_03122026.pdf",
+      "size_bytes": 1653944,
+      "checksum": "md5:55b82ff4f15ac0bf99ba265ddc974804",
+      "download_url": "https://zenodo.org/api/records/18984939/files/BlakeAmericaPragmatism_DAF_v2_03122026.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:03Z"
+}

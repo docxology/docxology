@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Four-fold Fields of Quantum Dreams"
+version: "v1"
+date-released: 2024-03-08
+doi: 10.5281/zenodo.10798144
+url: "https://doi.org/10.5281/zenodo.10798144"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Tickles
+    given-names: Dean
+    orcid: "https://orcid.org/0000-0003-2213-0773"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10798144
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/10798144"
+    description: "Zenodo landing page"

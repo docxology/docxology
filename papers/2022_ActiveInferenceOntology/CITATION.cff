@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons"
+version: "3"
+date-released: 2022-12-26
+doi: 10.5281/zenodo.6320574
+url: "https://doi.org/10.5281/zenodo.6320574"
+authors:
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Applegate-Swanson
+    given-names: Shaun
+    orcid: "https://orcid.org/0000-0001-9474-6038"
+  - family-names: Balbuena
+    given-names: Jessica Angeli
+    orcid: "https://orcid.org/0000-0003-2741-4476"
+  - family-names: Choudhury
+    given-names: Arhan
+    orcid: "https://orcid.org/0000-0001-6897-2947"
+  - family-names: Cordes
+    given-names: RJ
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+  - family-names: El Damaty
+    given-names: Shady
+    orcid: "https://orcid.org/0000-0002-2318-4477"
+  - family-names: Guénin—Carlut
+    given-names: Avel
+    orcid: "https://orcid.org/0000-0001-8239-7264"
+  - family-names: Knight
+    given-names: V. Bleu
+    orcid: "https://orcid.org/0000-0002-9894-1989"
+  - family-names: Metelkin
+    given-names: Ivan
+    orcid: "https://orcid.org/0000-0003-2899-6690"
+  - family-names: Shrivastava
+    given-names: Siddhant
+    orcid: "https://orcid.org/0000-0002-9688-4730"
+  - family-names: Singh
+    given-names: Amit Kumar
+    orcid: "https://orcid.org/0000-0002-8870-9676"
+  - family-names: Smékal
+    given-names: Jakub
+    orcid: "https://orcid.org/0000-0003-4989-4968"
+  - family-names: Caleb
+    given-names: Tuttle.
+    orcid: "https://orcid.org/0000-0002-8469-2221"
+  - family-names: Vyatkin
+    given-names: Alexander
+    orcid: "https://orcid.org/0000-0003-1306-4620"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.6320574
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/6320574"
+    description: "Zenodo landing page"

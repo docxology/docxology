@@ -61,7 +61,7 @@ active inference · expected free energy · recursive self-improvement · Genera
 | **DOI** | [10.5281/zenodo.20976824](https://doi.org/10.5281/zenodo.20976824) |
 | **Published** | 2026 |
 | **Version** | 1.0.1 |
-| **Zenodo record** | https://zenodo.org/records/20977774 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20976824 |
 | **GitHub release** | https://github.com/docxology/alphacogant/releases/tag/v1.0.1 |
 | **Source repository** | https://github.com/docxology/alphacogant |
 

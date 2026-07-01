@@ -3,7 +3,7 @@
   "version": "0.3.2",
   "doi": "10.5281/zenodo.20417016",
   "doi_url": "https://doi.org/10.5281/zenodo.20417016",
-  "zenodo_record": "https://zenodo.org/records/20931907",
+  "zenodo_record": "https://zenodo.org/records/20417016",
   "record_id": "20931907",
   "publication_date": "2026",
   "resource_type": {
@@ -53,7 +53,7 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-29T22:11:13Z",
+  "checked_at": "2026-06-30T22:27:22Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20417016",

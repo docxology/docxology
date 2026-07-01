@@ -1,0 +1,58 @@
+{
+  "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.16790554",
+  "doi_url": "https://doi.org/10.5281/zenodo.16790554",
+  "zenodo_record": "https://zenodo.org/records/16790554",
+  "record_id": "16790555",
+  "publication_date": "2025-08-10",
+  "resource_type": {
+    "title": "Other",
+    "type": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel. Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences. This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file. An `.mdkv` is a ZIP archive with a YAML `manifest.yaml` and a `tracks/` directory of UTF‑8 Markdown files. MDKV provides a principled data model, validation, search, and export services, a CLI, and a small GUI for selective preview and live editing. We formalize the MDKV model, present its software architecture, explain round‑trip export semantics, and evaluate design trade‑offs against adjacent technologies. The MDKV initial specification is open source under the Apache‑2.0 license and maintained at the project repository https://github.com/docxology/mdkv . We also situate MDKV with respect to Matroska (MKV) as background on containerization: although the two are orthogonal in domain (text vs. multimedia), they share conceptual lineage in extensible container design. We conclude with use cases, implications for governance and reproducibility, and future work such as richer validation rules and alternative exporters. This paper is itself a Markdown file that renders into a valid MDKV. The built artifact is available at paper/paper.mdkv ; combined exports are under&nbsp; paper/_bundle .",
+  "keywords": [],
+  "files": [
+    {
+      "name": "mdkv_paper.md",
+      "size_bytes": 41421,
+      "checksum": "md5:e72eec6af63c128441a74e2a3a880675",
+      "download_url": "https://zenodo.org/api/records/16790555/files/mdkv_paper.md/content"
+    },
+    {
+      "name": "build_paper_bundle.py",
+      "size_bytes": 9837,
+      "checksum": "md5:2677775ca52ce505e610a090fe7a86e2",
+      "download_url": "https://zenodo.org/api/records/16790555/files/build_paper_bundle.py/content"
+    },
+    {
+      "name": "build_paper_bundle.sh",
+      "size_bytes": 582,
+      "checksum": "md5:373b5d4f8ddd4c9d14f08b100841b278",
+      "download_url": "https://zenodo.org/api/records/16790555/files/build_paper_bundle.sh/content"
+    },
+    {
+      "name": "mdkv_v1_DAF_08-10-2025.pdf",
+      "size_bytes": 147448,
+      "checksum": "md5:d93931742ebdfff1d21fb34a4f832bb9",
+      "download_url": "https://zenodo.org/api/records/16790555/files/mdkv_v1_DAF_08-10-2025.pdf/content"
+    },
+    {
+      "name": "paper.mdkv",
+      "size_bytes": 15634,
+      "checksum": "md5:0be2d7e318f3fe3f5aee99f2d1e5c6b3",
+      "download_url": "https://zenodo.org/api/records/16790555/files/paper.mdkv/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:50Z"
+}

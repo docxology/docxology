@@ -1,0 +1,40 @@
+{
+  "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+  "version": "v1",
+  "doi": "10.5281/zenodo.18600040",
+  "doi_url": "https://doi.org/10.5281/zenodo.18600040",
+  "zenodo_record": "https://zenodo.org/records/18600040",
+  "record_id": "18600041",
+  "publication_date": "2026-02-12",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Looking at the sun, William Blake saw an innumerable company of the heavenly host where Newton's heirs saw only a golden coin. \"If the doors of perception were cleansed,\" Blake wrote, \"every thing would appear to man as it is: infinite.\" This paper argues that Blake's prophetic vocabulary, far from being merely poetic, constitutes an anticipatory phenomenological insight into the cognitive architecture that Active Inference now formalizes mathematically. Blake's \"doors\" are statistical boundaries separating self from world; his \"Newton's sleep\" is the pathology of rigid priors crushing sensory evidence; his \"fourfold vision\" maps onto hierarchical precision-weighting across processing depths; his insistence that \"Imagination is the Human Existence itself\" anticipates the insight that selfhood is constituted by the generative model. These are not retrospective metaphors imposed on a Romantic poet, but convergent descriptions of the same perceptual territory, arrived at through radically different methods two centuries apart. We approach this convergence in the spirit of Hesse's Glass Bead Game: not as proof that one tradition vindicates or completes the other, but as a synthetic juxtaposition of Art and Science&mdash;two moves in the same ancient, ongoing game of making sense of sense-making. Through close reading of *The Marriage of Heaven and Hell*, *Milton*, *Jerusalem*, and other works, we trace eight structural correspondences between Blake's perceptual philosophy and the Active Inference framework: Boundary, Vision, States, Imagination, Time, Space, Action, and Collectives&mdash;the last encompassing Blake's Four Zoas as a factorized model of collective mind. Each correspondence begins with Blake's phenomenological fire&mdash;his exact words, his illuminated images&mdash;and follows the mathematical shadow that Active Inference casts across the same ground: Markov blankets, hierarchical generative models, precision dynamics, temporal depth, spatial inference, free energy minimization, and multi-agent coordination. The formalism developed by the Active Inference community provides mathematical precision, yet we resist treating it as a finished edifice; the framework is better understood as one contemporary articulation of principles that Blake, and traditions before him, grasped through other means. The synthesis contributes to both lineages: Blake scholarship gains formal grounding of insights long dismissed as mystical enthusiasm; cognitive science gains phenomenological depth, historical precedent, and the humbling recognition that its discoveries may be rediscoveries after all. The doors of perception have always been thresholds of prediction&mdash;Blake's visions and the equations point towards the same boundary, and the conversation between them remains open evermore. Epistemic status: \"delighted with the enjoyments\" of AI which \"look like torment and insanity\". Take all syntax and semantics with a \"grain of sand\". For my personal limitations and typographical errors I plead \"Mutual Forgiveness of each Vice\".",
+  "keywords": [],
+  "files": [
+    {
+      "name": "blake_active_inference_DAF_v1_2-12-2026.pdf",
+      "size_bytes": 4259955,
+      "checksum": "md5:6a4cb621dcb1ad7e9433bd625ebc4e08",
+      "download_url": "https://zenodo.org/api/records/18600041/files/blake_active_inference_DAF_v1_2-12-2026.pdf/content"
+    },
+    {
+      "name": "blake_active_inference_DAF_v1_2-12-2026.zip",
+      "size_bytes": 40603447,
+      "checksum": "md5:6c5d5738259ca657d90e25e7d6aebdf0",
+      "download_url": "https://zenodo.org/api/records/18600041/files/blake_active_inference_DAF_v1_2-12-2026.zip/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:09Z"
+}

@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20498700
+- **Zenodo record**: https://zenodo.org/records/20498699
 - **GitHub release**: https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0
 - **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

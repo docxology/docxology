@@ -21,7 +21,7 @@ insect olfaction · infrared detection · vibrational theory of olfaction · sem
 | **DOI** | [10.5281/zenodo.20450970](https://doi.org/10.5281/zenodo.20450970) |
 | **Published** | 2026-05-29 |
 | **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20450970 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20450880 |
 | **GitHub release** | https://github.com/docxology/cohereants/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/cohereants |
 

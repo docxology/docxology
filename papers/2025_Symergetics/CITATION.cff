@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting"
+version: "v1"
+date-released: 2025-09-13
+doi: 10.5281/zenodo.17114389
+url: "https://doi.org/10.5281/zenodo.17114389"
+authors:
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17114389
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/17114389"
+    description: "Zenodo landing page"

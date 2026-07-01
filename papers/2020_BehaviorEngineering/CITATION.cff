@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Active Inference & Behavior Engineering for Teams"
+version: "1"
+date-released: 2020-09-09
+doi: 10.5281/zenodo.4021162
+url: "https://doi.org/10.5281/zenodo.4021162"
+authors:
+  - family-names: Vyatkin
+    given-names: Alexander
+    orcid: "https://orcid.org/0000-0003-1306-4620"
+  - family-names: Metelkin
+    given-names: Ivan
+    orcid: "https://orcid.org/0000-0003-2899-6690"
+  - family-names: Mikhailova
+    given-names: Alexandra
+    orcid: "https://orcid.org/0000-0002-8699-7125"
+  - family-names: Cordes
+    given-names: RJ
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.4021162
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/4021162"
+    description: "Zenodo landing page"

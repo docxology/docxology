@@ -36,7 +36,7 @@ active inference · pymdp · sophisticated inference · generalized notation not
 | **DOI** | [10.5281/zenodo.20417021](https://doi.org/10.5281/zenodo.20417021) |
 | **Published** | 2026-05-28 |
 | **Version** | 0.3.0 |
-| **Zenodo record** | https://zenodo.org/records/20420352 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20417021 |
 | **GitHub release** | https://github.com/docxology/template_active_inference/releases/tag/v0.3.0 |
 | **Source repository** | https://github.com/docxology/template_active_inference |
 

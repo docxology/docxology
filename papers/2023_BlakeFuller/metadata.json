@@ -1,0 +1,50 @@
+{
+  "title": "William Blake &  Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
+  "version": "2",
+  "doi": "10.5281/zenodo.7514367",
+  "doi_url": "https://doi.org/10.5281/zenodo.7514367",
+  "zenodo_record": "https://zenodo.org/records/7514367",
+  "record_id": "7519132",
+  "publication_date": "2023-01-08",
+  "resource_type": {
+    "title": "Presentation",
+    "type": "presentation"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "University of California (Davis), Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Slides for a presentation, initially for 52 Living Ideas on January 8th 2023 at 6pm PT.&nbsp; This is a work in progress, presented for educational and collaborative reasons.&nbsp;&nbsp; Watch on YouTube:&nbsp; https://youtu.be/JGI0vx_aBdM",
+  "keywords": [
+    "William Blake",
+    "Buckminster Fuller",
+    "Comprehensivity"
+  ],
+  "files": [
+    {
+      "name": "Blake-Fuller_Lives_in_Juxtaposition-DAF-2023.pptx",
+      "size_bytes": 100694868,
+      "checksum": "md5:be6baa8eabf8a0544e4bc99b2a6eedab",
+      "download_url": "https://zenodo.org/api/records/7519132/files/Blake-Fuller_Lives_in_Juxtaposition-DAF-2023.pptx/content"
+    },
+    {
+      "name": "FullerBlake_DAF_1_9_2023_Recording.mp4",
+      "size_bytes": 377051147,
+      "checksum": "md5:8cf77d3e3d7f339136dedf550d5e31cf",
+      "download_url": "https://zenodo.org/api/records/7519132/files/FullerBlake_DAF_1_9_2023_Recording.mp4/content"
+    },
+    {
+      "name": "Blake-Fuller_Lives_in_Juxtaposition-DAF-2023.pdf",
+      "size_bytes": 16838192,
+      "checksum": "md5:0c6516a8f92e53aff6ecdf830e7aa516",
+      "download_url": "https://zenodo.org/api/records/7519132/files/Blake-Fuller_Lives_in_Juxtaposition-DAF-2023.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:11Z"
+}

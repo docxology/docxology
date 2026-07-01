@@ -1,0 +1,54 @@
+{
+  "title": "Emergent Teams for Complex Threats",
+  "version": null,
+  "doi": "10.5281/zenodo.3986084",
+  "doi_url": "https://doi.org/10.5281/zenodo.3986084",
+  "zenodo_record": "https://zenodo.org/records/3986084",
+  "record_id": "3986085",
+  "publication_date": "2020-05-15",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Richard J. Cordes",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "University of California, Davis, Department of Entomology",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management. Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors. Consequently, the operating environment has changed. Extant, centralized actors have experienced new adversities such as ideological warfare and sustained low intensity and gray zone conflict while new, decentralized participants have emerged and evolved. Nation states, as a part of normal operations, now have to contend with the potential for novel, emergent hazards from a myriad of Complex Threat Surfaces in littoral and other environments. We highlight how Complexity Science has been of use in the analysis of Complex Threat Surfaces in the military and within civilian organizations, particularly High Reliability Organisations or HROs. This paper discusses the intersection of Complexity Science and Military Science by focusing on analysis of counterinsurgency and counterterrorism operations. We highlight rapid reorganization, pooling collective expertise, and the assembly of novel organizational components as a potential basis for developing spontaneous expertise, actionable intelligence, and solutions to the aforementioned novel, emergent hazards.",
+  "keywords": [
+    "Gray Zone Warfare",
+    "OSINT",
+    "Remote Teams",
+    "Small Teams",
+    "Organizational Sensemaking",
+    "High Reliability Organizations",
+    "Complex Threat Surfaces",
+    "Counterterrorism",
+    "Complexity",
+    "Insurgency",
+    "Counterinsurgency",
+    "Terrorism",
+    "Low Intensity Conflict"
+  ],
+  "files": [
+    {
+      "name": "CordesFriedman2020.pdf",
+      "size_bytes": 186028,
+      "checksum": "md5:4079c630aa07d20f6882666839c0db5f",
+      "download_url": "https://zenodo.org/api/records/3986085/files/CordesFriedman2020.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:43Z"
+}

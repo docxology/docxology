@@ -51,6 +51,7 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("sync_publications_html.py", ["--apply"]),  # publications.html + -ld   <- works.json
     ("sync_software_html.py", ["--apply"]),      # software.html + -ld       <- pages/SOFTWARE.md
     ("build_current_counts.py", []),             # current-counts.{json,md}  <- works + software
+    ("generate_og_images.py", []),               # og-*.jpg + counts sidecar <- current-counts.json
     ("export_agent_data.py", []),                # claims/people/orgs        <- counts
     ("build_resume.py", ["--all"]),              # resume.{json,txt,pdf}     <- claims + counts
     ("build_domain_pages.py", []),
@@ -69,6 +70,7 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_search_index.py", []),               # links latest reports + indexes pages
     ("generate_feed.py", []),
     ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit
+    ("build_image_sitemap.py", []),               # sitemap-images.xml       <- data/artworks.json
     ("build_generated_manifest.py", []),         # LAST — hashes all of the above
 ]
 

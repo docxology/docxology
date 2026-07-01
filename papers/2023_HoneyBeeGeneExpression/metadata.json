@@ -1,0 +1,77 @@
+{
+  "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
+  "version": "v1.0",
+  "doi": "10.5281/zenodo.10400744",
+  "doi_url": "https://doi.org/10.5281/zenodo.10400744",
+  "zenodo_record": "https://zenodo.org/records/10400744",
+  "record_id": "10400745",
+  "publication_date": "2023-12-18",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "University of California, Davis, CA, USA",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Tong, Chao",
+      "affiliation": "Arizona State University, Tempe, AZ, USA",
+      "orcid": "0000-0001-5202-5507"
+    },
+    {
+      "name": "Linksvayer, Timothy A.",
+      "affiliation": "Arizona State University, Tempe, AZ, USA",
+      "orcid": "0000-0001-7034-1546"
+    },
+    {
+      "name": "Freund, Matthias",
+      "affiliation": "University of Würzburg, Wurzburg, Germany",
+      "orcid": "0000-0002-5683-6275"
+    },
+    {
+      "name": "Keough, Nicole Weronika",
+      "affiliation": "University of California, Davis, CA, USA",
+      "orcid": "0009-0002-1058-5105"
+    },
+    {
+      "name": "Johnson, Brian",
+      "affiliation": "University of California, Davis, CA, USA",
+      "orcid": "0000-0001-6390-7230"
+    }
+  ],
+  "description": "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes. A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing. In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages. From an initial pool of 4349 samples and 12,398 loci, our rigorous analysis resulted in a snapshot of 731 samples and 177 loci, representing high-quality estimates of TSGE patterns. This snapshot is publicly available, serving as a valuable resource for researchers interested in A. mellifera and beyond. Ongoing work will refine this analytical tool and expand its application to other species, thereby contributing to the broader understanding of gene expression patterns.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "MetaInformAnt_Transcriptome_12-18-2023.zip",
+      "size_bytes": 844673971,
+      "checksum": "md5:2fa6cd9e41400f2351e2c66df7b506c1",
+      "download_url": "https://zenodo.org/api/records/10400745/files/MetaInformAnt_Transcriptome_12-18-2023.zip/content"
+    },
+    {
+      "name": "Apis-seq_v1_12_18_2023.pdf",
+      "size_bytes": 693355,
+      "checksum": "md5:c0e9dff2a3931367c9331204f09cb02c",
+      "download_url": "https://zenodo.org/api/records/10400745/files/Apis-seq_v1_12_18_2023.pdf/content"
+    },
+    {
+      "name": "Apis-seq_v1_12_18_2023.odt",
+      "size_bytes": 620157,
+      "checksum": "md5:64de898b411ed2befa7b1cd49d06ed46",
+      "download_url": "https://zenodo.org/api/records/10400745/files/Apis-seq_v1_12_18_2023.odt/content"
+    },
+    {
+      "name": "Apis-seq_v1_12_18_2023.docx",
+      "size_bytes": 601243,
+      "checksum": "md5:a44f3de9300bb4b62cb6f9c6c92816b5",
+      "download_url": "https://zenodo.org/api/records/10400745/files/Apis-seq_v1_12_18_2023.docx/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:17Z"
+}

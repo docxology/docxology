@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T22:12:57Z",
+  "generated_at": "2026-06-30T23:59:24Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -47,6 +47,18 @@
         "reports/paired_publications_*.json"
       ],
       "command": "uv run python3 code/orchestrators/build_current_counts.py"
+    },
+    {
+      "name": "Open Graph preview images",
+      "outputs": [
+        "og-*.jpg",
+        "data/og-image-counts.json"
+      ],
+      "sources": [
+        "data/current-counts.json",
+        "code/orchestrators/generate_og_images.py"
+      ],
+      "command": "python3 code/orchestrators/generate_og_images.py"
     },
     {
       "name": "Agent data exports",
@@ -115,7 +127,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-06-29.json"
+        "reports/paired_publications_2026-06-30.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -133,7 +145,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-06-29.json",
+        "reports/paired_publications_2026-06-30.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -320,7 +332,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-29.json"
+        "reports/asset_size_2026-06-30.json"
       ],
       "sources": [
         "root HTML pages",
@@ -334,7 +346,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-06-29.json"
+        "reports/accessibility_static_2026-06-30.json"
       ],
       "sources": [
         "root HTML pages",
@@ -359,7 +371,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-06-29.json"
+        "reports/live_site_verification_2026-06-30.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",
@@ -389,6 +401,18 @@
         "code/orchestrators/build_sitemap.py"
       ],
       "command": "python3 code/orchestrators/build_sitemap.py"
+    },
+    {
+      "name": "Image sitemap",
+      "outputs": [
+        "sitemap-images.xml"
+      ],
+      "sources": [
+        "data/artworks.json",
+        "art/*",
+        "code/orchestrators/build_image_sitemap.py"
+      ],
+      "command": "python3 code/orchestrators/build_image_sitemap.py"
     },
     {
       "name": "Visual QA",

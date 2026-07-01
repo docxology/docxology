@@ -6,4 +6,3 @@ Preferred-Languages: en
 Canonical: https://danielarifriedman.com/.well-known/security.txt
 Canonical: https://danielarifriedman.com/security.txt
 Policy: https://github.com/docxology/docxology/issues/new/choose
-Encryption: https://danielarifriedman.com/.well-known/pgp-key.txt

@@ -1,0 +1,43 @@
+{
+  "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+  "version": "1",
+  "doi": "10.5281/zenodo.18364118",
+  "doi_url": "https://doi.org/10.5281/zenodo.18364118",
+  "zenodo_record": "https://zenodo.org/records/18364118",
+  "record_id": "18364119",
+  "publication_date": "2026-01-28",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes&mdash;rather than mere data corruption&mdash;becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (&Omega;1&ndash;&Omega;5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation&mdash;agents that appear functional but hold corrupted beliefs&mdash;and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .",
+  "keywords": [
+    "Cognitive Security",
+    "Multiagent"
+  ],
+  "files": [
+    {
+      "name": "CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf",
+      "size_bytes": 931657,
+      "checksum": "md5:34baacc1f498f131a52f7f7c10516b4f",
+      "download_url": "https://zenodo.org/api/records/18364119/files/CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf/content"
+    },
+    {
+      "name": "CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.tex",
+      "size_bytes": 274319,
+      "checksum": "md5:070633c7331f9741f24eb55f0a6651e9",
+      "download_url": "https://zenodo.org/api/records/18364119/files/CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.tex/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:08Z"
+}

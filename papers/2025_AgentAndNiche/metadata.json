@@ -1,0 +1,35 @@
+{
+  "title": "Synthesis of Agent and Niche",
+  "version": "v2",
+  "doi": "10.5281/zenodo.17235137",
+  "doi_url": "https://doi.org/10.5281/zenodo.17235137",
+  "zenodo_record": "https://zenodo.org/records/17235137",
+  "record_id": "17243488",
+  "publication_date": "2025-10-01",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This paper enacts a computational juxtaposition between William Blake's 1790 illuminated poem \"The Marriage of Heaven and Hell\", and a personal-poetic perspective on ecological psychology. This paper is rendered as a dual-column PDF reflecting Blake's insight &mdash; \"Without contraries is no progression\" &mdash; in its very architecture. The left column (\"Synthesis of Agent and Niche\") transposes Blake's prophetic vision into the mathematical language of free energy principle, active inference, biosemiotics, and niche construction, revealing how poetic intuitions about Energy versus Reason, body versus soul, and heaven versus hell prefigure modern understandings of embodied cognition, self-organizing systems, and the thermodynamic imperatives driving bio-cultural evolution. The right column preserves Blake's original text, creating a stereoscopic, or duck-rabbit, minimum-2 effect where the 18th- and 21st-century perspectives textographically illuminate each other, rendering the other newly legible through their juxtaposition. Taken rhetorically, the work argues that Blake's romantic vision and contemporary cognitive science constitute complementary expressions of concepts like: universe, life, general and specific situationality, generativity, intra-action, the necessity of opposition and provocation, and the orientation of energetic engagement over passive observation. The project's epistemic stance (\"Definitely Speculative &amp; Claude 4.5-pilled\") acknowledges its experimental nature while insisting that etching (on) the edge often requires crossing boundaries.&nbsp;The medium of composition &mdash; Python scripts that transform Markdown files into a PDF, with calibrated typography and dual-gradient backgrounds distinguishing the columns separated and connected by a dashed line &mdash; demonstrates how modern computational infrastructure can serve as amplification of humanistic inquiry. Only and actually: execution and rendering of this hybrid text performs the synthesis it describes (or at least one like it!). From that morpho-semiosis, there is a suggestion that the marriage of poetic and scientific, visionary and formal, yields insights unavailable to either, as taken or given alone. In that way the work operates as awareness literature, synthetic milestone, technical writing draft, pragmatic cognitive fiction, and open source computational artifact published to Github and Zenodo in September 2025.&nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "SAN_DAF_10-01-2025.pdf",
+      "size_bytes": 196024,
+      "checksum": "md5:fce7043ef771ab88c0f7dd52d5802778",
+      "download_url": "https://zenodo.org/api/records/17243488/files/SAN_DAF_10-01-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:41Z"
+}

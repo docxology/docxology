@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20834847
+- **Zenodo record**: https://zenodo.org/records/20834846
 - **GitHub release**: https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0
 - **Pairing evidence**: github_release_mentions_doi, github_repo_self_linked

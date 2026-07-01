@@ -23,7 +23,7 @@ California Public Records Act · open data · CKAN · Socrata · ArcGIS · cogni
 | **Published** | 2026-06-21 |
 | **Version** | 0.1.0 |
 | **License** | CC-BY-4.0 |
-| **Zenodo record** | https://zenodo.org/records/20789916 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20789899 |
 
 ## Files
 

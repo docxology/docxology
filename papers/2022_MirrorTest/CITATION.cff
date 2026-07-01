@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition"
+version: "1"
+date-released: 2022-11-29
+doi: 10.5281/zenodo.7377255
+url: "https://doi.org/10.5281/zenodo.7377255"
+authors:
+  - family-names: O'Connor
+    given-names: Sean
+    orcid: "https://orcid.org/0000-0002-0858-5635"
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7377255
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/7377255"
+    description: "Zenodo landing page"

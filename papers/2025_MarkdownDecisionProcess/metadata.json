@@ -1,0 +1,34 @@
+{
+  "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
+  "version": "0.1",
+  "doi": "10.5281/zenodo.17244386",
+  "doi_url": "https://doi.org/10.5281/zenodo.17244386",
+  "zenodo_record": "https://zenodo.org/records/17244386",
+  "record_id": "17244387",
+  "publication_date": "2025-10-02",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "The Markdown Decision Process (MDP) framework revolutionizes document processing by treating Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through rigorous probabilistic modeling. This comprehensive framework bridges decision theory with practical document engineering, providing tools that learn from existing content to generate coherent documents and optimize structure according to user-defined quality criteria. At its core, MDP models Markdown elements as states in a stochastic process where transitions follow learned probabilistic patterns. Drawing from Markov Decision Process (MDP) and Partially Observable Markov Decision Process (POMDP) theory, the framework explicitly addresses the fundamental uncertainty in interpreting syntactic structure as semantic meaning, a challenge that has limited traditional document processing approaches. The framework operates at multiple complementary levels of analysis, following David Marr's influential framework: (1) Computational theory defines document processing as maximizing expected quality under uncertainty; (2) Algorithmic implementation employs Markov chains, graph algorithms, and reinforcement learning; and (3) Physical realization uses efficient Python implementations suitable for production deployment. Key innovations include: (1) MarkChain, sophisticated Markov chain models for document generation with higher-order dependencies and smoothing; (2) PolicyOptimizer, reinforcement learning techniques for document optimization that maximize user-specified reward functions; (3) BeliefUpdater, a probabilistic inference system handling semantic ambiguity through Bayesian belief maintenance; (4) Visualization Framework, comprehensive tools for exploring document state spaces and transition dynamics; and (5) Plugin Architecture, an extensible system enabling domain-specific customizations. Unlike black-box neural approaches, MDP provides interpretable, theoretically-grounded document processing with explicit uncertainty quantification. The framework supports both traditional reward-based optimization and Active Inference approaches, enabling uncertainty-aware decision making, domain-specific customization without extensive retraining, and resource-efficient operation suitable for production environments. All methods, tests, documentation, and resources to regenerate this paper are available at https://github.com/docxology/markdown_decision_process .",
+  "keywords": [],
+  "files": [
+    {
+      "name": "MarkdownDecisionProcess_DAF_10-02-2025.pdf",
+      "size_bytes": 796266,
+      "checksum": "md5:9900a2f463a4079d6aa6edff377aacb7",
+      "download_url": "https://zenodo.org/api/records/17244387/files/MarkdownDecisionProcess_DAF_10-02-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:52Z"
+}

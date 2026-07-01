@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
+date-released: 2025-09-30
+doi: 10.5281/zenodo.17229924
+url: "https://doi.org/10.5281/zenodo.17229924"
+authors:
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17229924
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/17229924"
+    description: "Zenodo landing page"

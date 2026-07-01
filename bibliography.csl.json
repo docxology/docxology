@@ -4431,5 +4431,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21047573",
     "URL": "https://doi.org/10.5281/zenodo.21047573"
+  },
+  {
+    "id": "Friedman2026SortitionUpstreamNTQR180",
+    "type": "article-journal",
+    "title": "Sortition Upstream of NTQR",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 180; docs: papers/2026_SortitionUpstreamNTQR/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21083779",
+    "URL": "https://doi.org/10.5281/zenodo.21083779"
   }
 ]

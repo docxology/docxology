@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Emergent Teams for Complex Threats"
+date-released: 2020-05-15
+doi: 10.5281/zenodo.3986084
+url: "https://doi.org/10.5281/zenodo.3986084"
+authors:
+  - family-names: Cordes
+    given-names: Richard J.
+    orcid: "https://orcid.org/0000-0002-9913-7159"
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.3986084
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/3986084"
+    description: "Zenodo landing page"

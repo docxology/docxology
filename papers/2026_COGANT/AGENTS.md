@@ -21,5 +21,5 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20705351
+- **Zenodo record**: https://zenodo.org/records/20705350
 - **Source**: Zenodo record paired with GitHub repository ActiveInferenceInstitute/COGANT

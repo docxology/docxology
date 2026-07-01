@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-29T22:12:54Z",
+  "generated_at": "2026-06-30T23:59:20Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 178,
+  "count": 179,
   "works": [
     {
       "num": 1,
@@ -2493,6 +2493,20 @@
       "url": "https://doi.org/10.5281/zenodo.21047573",
       "doi": "10.5281/zenodo.21047573",
       "docs_path": "papers/2026_MappingWilliamBlake/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 180,
+      "citation_key": "Friedman2026SortitionUpstreamNTQR180",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Sortition Upstream of NTQR",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21083779",
+      "doi": "10.5281/zenodo.21083779",
+      "docs_path": "papers/2026_SortitionUpstreamNTQR/",
       "has_paper_folder": true
     }
   ]

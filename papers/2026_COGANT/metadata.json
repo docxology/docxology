@@ -4,7 +4,7 @@
   "doi": "10.5281/zenodo.20705350",
   "doi_url": "https://doi.org/10.5281/zenodo.20705350",
   "concept_doi": "10.5281/zenodo.20705350",
-  "zenodo_record": "https://zenodo.org/records/20705351",
+  "zenodo_record": "https://zenodo.org/records/20705350",
   "record_id": "20705351",
   "publication_date": "2026-06-15",
   "resource_type": {
@@ -48,7 +48,7 @@
   ],
   "github_repo": "ActiveInferenceInstitute/COGANT",
   "source": "zenodo-with-github",
-  "checked_at": "2026-06-29T22:11:13Z",
+  "checked_at": "2026-06-30T22:27:22Z",
   "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
   "release_tag": "v0.6.0",
   "release_name": "COGANT v0.6.0 — first public release",

@@ -17,5 +17,5 @@ identifiers:
     value: 10.5281/zenodo.7803313
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20671741"
+    value: "https://zenodo.org/records/7803313"
     description: "Zenodo landing page"

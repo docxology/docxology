@@ -19,5 +19,5 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20786639
+- **Zenodo record**: https://zenodo.org/records/20786638
 - **Source**: Zenodo record paired with GitHub repository https://github.com/docxology/template_madlib

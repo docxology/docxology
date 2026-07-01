@@ -1,0 +1,53 @@
+{
+  "title": "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.8025956",
+  "doi_url": "https://doi.org/10.5281/zenodo.8025956",
+  "zenodo_record": "https://zenodo.org/records/8025956",
+  "record_id": "8025957",
+  "publication_date": "2023-06-11",
+  "resource_type": {
+    "title": "Other",
+    "type": "publication",
+    "subtype": "other"
+  },
+  "creators": [
+    {
+      "name": "David, Scott",
+      "affiliation": "University of Washington"
+    },
+    {
+      "name": "Abu-Ghazaleh, Jumana",
+      "affiliation": "Pivot for Humanity"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "COGSEC"
+    }
+  ],
+  "description": "Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII),&nbsp;Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)&nbsp; to the National Telecommunications and Information Administration&rsquo;s&nbsp;Request for Comment on AI Accountability Policy.&nbsp;Docket No. NTIA-2023-0005-0001.",
+  "keywords": [
+    "Artificial Intelligence",
+    "Cyberinsurance",
+    "Professionalization",
+    "Regulation",
+    "Self-Regulation",
+    "Policy"
+  ],
+  "files": [
+    {
+      "name": "NTIA_6-11-23_IRSIRI-AII-PIVOT-COGSEC.pdf",
+      "size_bytes": 554792,
+      "checksum": "md5:7c1a85cb95b254279eb37a1232fe94ac",
+      "download_url": "https://zenodo.org/api/records/8025957/files/NTIA_6-11-23_IRSIRI-AII-PIVOT-COGSEC.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:03Z"
+}

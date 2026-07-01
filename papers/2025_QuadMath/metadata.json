@@ -1,0 +1,34 @@
+{
+  "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+  "version": "v1",
+  "doi": "10.5281/zenodo.16887799",
+  "doi_url": "https://doi.org/10.5281/zenodo.16887799",
+  "zenodo_record": "https://zenodo.org/records/16887799",
+  "record_id": "16887800",
+  "publication_date": "2025-08-16",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "We review a unified analytical framework for four dimensional (4D) modeling and Quadray coordinates, synthesizing geometric foundations, optimization on tetrahedral lattices, and information geometry. Building on R. Buckminster Fuller&rsquo;s Synergetics and the Quadray coordinate system, with extensive reference to Kirby Urner&rsquo;s computational implementations across multiple programming languages (see the comprehensive 4dsolutions ecosystem including Python, Rust, Clojure, and POV-Ray implementations), we review how integer lattice constraints yield integer volume quantization of tetrahedral simplexes, creating discrete &ldquo;energy levels&rdquo; that regularize optimization and enable integer-based optimization. We adapt standard methods (e.g., Nelder&ndash;Mead method) to the quadray lattice, define Fisher information in Quadray parameter space, and analyze optimization as geodesic motion on an information manifold via the natural gradient. We review three distinct 4D namespaces &mdash; Coxeter.4D (Euclidean E4), Einstein.4D (Minkowski spacetime), and Fuller.4D (synergetics/Quadrays) &mdash; develop analytical tools and equations, and survey extensions and applications across AI, active inference, cognitive security, and complex systems. The result is a cohesive, interpretable approach for robust, geometry-grounded computation in 4D. All source code for the manuscript is available at QuadMath https://github.com/docxology/QuadMath .",
+  "keywords": [],
+  "files": [
+    {
+      "name": "QuadMath_v1_DAF_08-16-2025.pdf",
+      "size_bytes": 8528524,
+      "checksum": "md5:1d79d0e7f6696dc7dcb311d642521cdc",
+      "download_url": "https://zenodo.org/api/records/16887800/files/QuadMath_v1_DAF_08-16-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:55Z"
+}

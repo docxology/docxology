@@ -21,7 +21,7 @@ grateful dead · setlist data · category theory · music information retrieval 
 | **DOI** | [10.5281/zenodo.20482026](https://doi.org/10.5281/zenodo.20482026) |
 | **Published** | 2026-05-31 |
 | **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/20482026 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20482025 |
 | **GitHub release** | https://github.com/docxology/grateful_data/releases/tag/v1.0.0 |
 | **Source repository** | https://github.com/docxology/grateful_data |
 

@@ -1,0 +1,36 @@
+{
+  "title": "Computational Complexity and Energetics of the Ant Stack",
+  "version": "v1",
+  "doi": "10.5281/zenodo.17238736",
+  "doi_url": "https://doi.org/10.5281/zenodo.17238736",
+  "zenodo_record": "https://zenodo.org/records/17238736",
+  "record_id": "17238737",
+  "publication_date": "2025-09-30",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence. Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at 100 Hz control frequencies. Energy efficiency has emerged as a critical constraint in embodied AI systems, yet traditional complexity analysis fails to capture the nuanced energy-performance trade-offs inherent in real-world implementations. The Ant Stack represents a biologically-inspired approach to embodied intelligence that requires systematic analysis of its computational and energetic characteristics to inform practical design decisions.&nbsp; We derive closed-form expressions for per-module time and space complexity in core computational loops, incorporating analytical scaling relationships from computational experiments. Our analysis bridges algorithmic complexity to detailed energy models that account for compute operations (FLOPs at 1.0 pJ each), memory hierarchy (SRAM at 0.10 pJ/byte, DRAM at 20.0 pJ/byte), neuromorphic spikes (1.0 aJ each), and physical actuation, enabling energy budgeting with bootstrap confidence intervals for uncertainty quantification. Our analysis reveals three distinct computational regimes across the Ant Stack modules with profound design implications. The AntBody exhibits O(J + C^1.5) complexity dominated by contact resolution rather than joint dynamics, where the C^1.5 scaling of Projected Gauss-Seidel solvers creates computational bottlenecks beyond 20 active contacts. This demonstrates locomotion efficiency within robotic platform ranges (CoT &asymp; 1.93), though 2-6&times; higher than biological ants (CoT 0.1-0.3).&nbsp; The AntBrain scales as O(K + &rho;N_KC + H) with biological sparsity patterns (&rho; &asymp; 0.02) that prevent combinatorial explosion, enabling sub-linear energy scaling as sensory dimensionality increases. This reveals the largest optimization potential (4.2 &times; 10^8&times; theoretical minimum) through neuromorphic hardware acceleration. The AntMind demonstrates O(B H_p) complexity through bounded rationality, but exponential policy tree growth creates super-linear energy scaling that limits planning horizons to H_p &le; 15 for computational tractability. Our work provides validated theoretical contributions to embodied AI complexity analysis, including an analytical complexity framework with solver-dependent contact dynamics analysis (PGS: O(C^1.5), LCP: O(C^3), MLCP: O(C^2.5)) incorporating biologically-motivated neural sparsity (&rho; &le; 0.02) and bounded rational active inference limits (H_p &le; 15). We establish comprehensive energy modeling spanning FLOP-based computation, hierarchical memory access, neuromorphic spikes, and mechanical actuation, validated against Landauer limits (kT ln 2 &asymp; 2.8 &times; 10^-21 J/bit) and thermodynamic efficiency bounds.&nbsp; Additional contributions include information-theoretic foundations connecting Shannon's channel capacity, Landauer's principle, and Carnot efficiency limits for embodied AI system design, with quantitative validation against biological benchmarks. We provide phase transition analysis identifying critical points in system behavior such as contact density transitions (C &asymp; 20) and neural sparsity thresholds (&rho; &asymp; 0.02), with scaling regime classification. Our biological validation framework provides quantitative comparison with real ant energetics to establish efficiency targets and optimization potential. Finally, we present a reproducible analysis methodology featuring manifest-driven experiments with bootstrap confidence intervals (n &ge; 1000), deterministic seeding, automated figure generation, and cross-validation against established benchmarks. Our work establishes design principles for energy-efficient insect-inspired embodied AI systems, providing analytical frameworks for mechanical actuation efficiency and neural processing optimization. These findings inform hardware-software co-design strategies and provide benchmarks for energy-constrained autonomous systems, with particular relevance for mobile robotics, autonomous vehicles, and distributed sensor networks. The framework bridges theoretical complexity analysis with practical energy considerations, offering a systematic approach to understanding and optimizing the computational and energetic trade-offs in biomimetic embodied intelligence. All methods to regenerate the analysis and render the publication are in https://github.com/docxology/ant_stack",
+  "keywords": [
+    "Ant"
+  ],
+  "files": [
+    {
+      "name": "Complexity-Energetics_AntStack_9-30-2025.pdf",
+      "size_bytes": 2682615,
+      "checksum": "md5:dddb1ba50bb08089b57d0f172d006186",
+      "download_url": "https://zenodo.org/api/records/17238737/files/Complexity-Energetics_AntStack_9-30-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:43Z"
+}

@@ -61,7 +61,7 @@ modafinil · meta-analysis · literature retrieval · bibliometrics · record de
 | **DOI** | [10.5281/zenodo.20931964](https://doi.org/10.5281/zenodo.20931964) |
 | **Published** | 2026 |
 | **Version** | 0.1.0 |
-| **Zenodo record** | https://zenodo.org/records/20931965 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20931964 |
 | **GitHub release** | https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0 |
 | **Source repository** | https://github.com/docxology/template_literature_meta_analysis |
 

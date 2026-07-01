@@ -3,7 +3,7 @@
   "version": "0.6.2",
   "doi": "10.5281/zenodo.20693216",
   "doi_url": "https://doi.org/10.5281/zenodo.20693216",
-  "zenodo_record": "https://zenodo.org/records/20693217",
+  "zenodo_record": "https://zenodo.org/records/20693216",
   "record_id": "20693217",
   "publication_date": "2026-06-04",
   "resource_type": {
@@ -61,7 +61,7 @@
   ],
   "github_repo": "docxology/democreate",
   "source": "zenodo-only",
-  "checked_at": "2026-06-29T22:11:13Z",
+  "checked_at": "2026-06-30T22:27:22Z",
   "github_release_url": "https://github.com/docxology/democreate/releases/tag/v0.6.2",
   "release_tag": "v0.6.2",
   "release_name": "DemoCreate v0.6.2",

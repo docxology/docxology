@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20482026
+- **Zenodo record**: https://zenodo.org/records/20482025
 - **GitHub release**: https://github.com/docxology/grateful_data/releases/tag/v1.0.0
 - **Pairing evidence**: zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

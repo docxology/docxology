@@ -1,0 +1,38 @@
+{
+  "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+  "version": "v2",
+  "doi": "10.5281/zenodo.19461933",
+  "doi_url": "https://doi.org/10.5281/zenodo.19461933",
+  "zenodo_record": "https://zenodo.org/records/19461933",
+  "record_id": "19897664",
+  "publication_date": "2026-04-30",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Dietz, Joel",
+      "affiliation": "Massachusetts Institute of Technology (MIT)"
+    }
+  ],
+  "description": "No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis cannot keep pace with a field that has grown at a compound annual rate of 20.36% across 2005&ndash;2026, and the FEP&rsquo;s theoretical generality has invited falsifiability critiques that only hypothesis-specific evidence profiling can address. Building on pioneering systematic manual annotation paired with ontology-based anal- ysis at the scale of hundreds of papers, we present a computational meta-analysis framework that automates and scales this approach. The pipeline retrieves literature from arXiv, Semantic Scholar, and OpenAlex, deduplicating 𝑁 = 819 papers via a canonical identifier hierarchy (DOI &gt; arXiv ID &gt; Semantic Scholar ID &gt; OpenAlex ID). It classifies papers into a three-tier taxonomy spanning eight categories: A (Core Theory), B (Tools &amp; Translation), and C (Application Domains). An LLM-powered extraction system then evaluates each abstract against eight core hypotheses, producing structured nanopublications&mdash;each encoding directionality, a confidence score, and natural-language reasoning&mdash;that populate an RDF-compatible knowledge graph scored by a citation-weighted evidence function. All extracted assertions are automatically generated and have not been manually validated; hypothesis scores should be considered preliminary. The resulting evidence landscape reveals a field where application domains (Domain C, 64.0%) collectively dominate the corpus, with tools development (Domain B, 20.8%)&mdash;including pymdp, RxInfer.jl, and interpretable alternatives such as Free Energy Projective Simulation&mdash;and core theory (Domain A, 15.2%) rounding out the taxonomy. Non-negative matrix factorization identifies 5 latent topics that cross-cut the keyword taxonomy, and citation network analysis exposes a sparse yet structured graph (2,176 intra-corpus edges out of 29,323 total outgoing references&mdash;only 7.4% reference resolution, reflecting the corpus&rsquo;s specialised scope rather than the underlying citation density of any single paper) anchored by pronounced hub papers. Hypothesis scores cluster into three tiers: a broad consensus tier (score &gt; 0.83) covering five hypotheses&mdash;H7 Morphogenesis, H2 AIF Optimality, H4 Predictive Coding, H6 Clinical Utility, and H5 Scalability; a near-consensus boundary (H8 Language AIF, score &asymp;+0.83); a moderate debate tier (H3 Markov Blanket Realism, &asymp;+0.78); and a diffuse tier (H1 FEP Universality, &asymp;+0.48) where a large neutral plurality reflects the principle&rsquo;s broad invocation without explicit empirical test&mdash;though absolute score magnitudes are inflated by publication bias and linguistic asymmetry in academic writing, making relative rankings and temporal trajectories more reliable than point estimates. By demonstrating that automated LLM-driven assertion extraction&mdash;operating without human-validated ground truth&mdash;can generate scalable, queryable representations of scientific evidence, this work provides a reusable architecture for living literature reviews&mdash;continuously updated knowledge graphs that track hypothesis-level consensus across rapidly evolving fields. All code, results, and methods to reproduce this manuscript are open source at https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis/ .&nbsp;",
+  "keywords": [],
+  "files": [
+    {
+      "name": "act_inf_metaanalysis_v2_04-30-2026.pdf",
+      "size_bytes": 3137760,
+      "checksum": "md5:b918dfa83ffe359f5c698e30d3c602b4",
+      "download_url": "https://zenodo.org/api/records/19897664/files/act_inf_metaanalysis_v2_04-30-2026.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:01Z"
+}

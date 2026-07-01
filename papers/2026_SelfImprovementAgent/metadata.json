@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "doi": "10.5281/zenodo.20453879",
   "doi_url": "https://doi.org/10.5281/zenodo.20453879",
-  "zenodo_record": "https://zenodo.org/records/20932066",
+  "zenodo_record": "https://zenodo.org/records/20453879",
   "record_id": "20932066",
   "publication_date": "2026",
   "resource_type": {
@@ -41,7 +41,7 @@
   ],
   "github_repo": "docxology/template_sia",
   "source": "zenodo-only",
-  "checked_at": "2026-06-29T22:11:13Z",
+  "checked_at": "2026-06-30T22:27:22Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20453879",

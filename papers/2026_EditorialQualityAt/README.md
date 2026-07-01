@@ -38,7 +38,7 @@ prose analysis · readability · editorial review · reproducible research · ma
 | **DOI** | [10.5281/zenodo.20417104](https://doi.org/10.5281/zenodo.20417104) |
 | **Published** | 2026 |
 | **Version** | 0.4.0 |
-| **Zenodo record** | https://zenodo.org/records/20420342 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20417104 |
 | **GitHub release** | https://github.com/docxology/template_prose_project/releases/tag/v0.4.0 |
 | **Source repository** | https://github.com/docxology/template_prose_project |
 

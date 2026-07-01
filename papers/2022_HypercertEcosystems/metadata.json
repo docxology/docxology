@@ -1,0 +1,46 @@
+{
+  "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+  "version": "v1",
+  "doi": "10.5281/zenodo.7626768",
+  "doi_url": "https://doi.org/10.5281/zenodo.7626768",
+  "zenodo_record": "https://zenodo.org/records/7626768",
+  "record_id": "7626769",
+  "publication_date": "2022-10-26",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Smékal, Jakub",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0003-4989-4968"
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This document is a grant application to Protocol Labs, from&nbsp;Active Inference Institute (Active Blockference project).&nbsp; The grant was submitted in October 2022&nbsp;and was not funded. Learn more, get in touch, get involved, or fund us:&nbsp; https://www.activeinference.org/",
+  "keywords": [
+    "Active Inference",
+    "Hypercerts",
+    "Active Blockference",
+    "cadCAD",
+    "Systems Engineering"
+  ],
+  "files": [
+    {
+      "name": "AII _ Blockference _ Protocol Labs Research RFP.pdf",
+      "size_bytes": 76972,
+      "checksum": "md5:399ec3dfa9ea6a3b90374c427cec3aca",
+      "download_url": "https://zenodo.org/api/records/7626769/files/AII%20_%20Blockference%20_%20Protocol%20Labs%20Research%20RFP.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:56Z"
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+  "version": "v1",
+  "doi": "10.5281/zenodo.10160656",
+  "doi_url": "https://doi.org/10.5281/zenodo.10160656",
+  "zenodo_record": "https://zenodo.org/records/10160656",
+  "record_id": "10160657",
+  "publication_date": "2023-11-20",
+  "resource_type": {
+    "title": "Report",
+    "type": "publication",
+    "subtype": "report"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems. The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations. The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework. Implementation strategies include a user-centric interface, robust cyber/cognitive security measures, and adaptive evolution. The goal is to streamline postdoctoral reporting, reduce administrative burdens, and enable more effective monitoring and support of postdoctoral research activities.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing.docx",
+      "size_bytes": 8262,
+      "checksum": "md5:f2fff1eecdb01a292a956eb0d9c7b766",
+      "download_url": "https://zenodo.org/api/records/10160657/files/Enhanced%20NSF%20Postdoctoral%20Reporting%20via%20Synthetic%20Intelligence%20Language%20Processing.docx/content"
+    },
+    {
+      "name": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing.odt",
+      "size_bytes": 18066,
+      "checksum": "md5:61f0560904687b3c44c40c5c73833dc5",
+      "download_url": "https://zenodo.org/api/records/10160657/files/Enhanced%20NSF%20Postdoctoral%20Reporting%20via%20Synthetic%20Intelligence%20Language%20Processing.odt/content"
+    },
+    {
+      "name": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing (1).pdf",
+      "size_bytes": 52432,
+      "checksum": "md5:aa1b7461cfab3f3e990397f5a8341b03",
+      "download_url": "https://zenodo.org/api/records/10160657/files/Enhanced%20NSF%20Postdoctoral%20Reporting%20via%20Synthetic%20Intelligence%20Language%20Processing%20(1).pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:19Z"
+}

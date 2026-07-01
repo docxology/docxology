@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20533126
+- **Zenodo record**: https://zenodo.org/records/20533125
 - **GitHub release**: https://github.com/docxology/template_textbook/releases/tag/v0.1.0
 - **Pairing evidence**: github_release_mentions_doi, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap

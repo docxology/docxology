@@ -32,7 +32,7 @@ reproducible research · infrastructure-as-code · steganography · cryptographi
 | **DOI** | [10.5281/zenodo.20419007](https://doi.org/10.5281/zenodo.20419007) |
 | **Published** | 2026-05-03 |
 | **Version** | 1.0.6 |
-| **Zenodo record** | https://zenodo.org/records/20420387 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20419007 |
 | **GitHub release** | https://github.com/docxology/template_template/releases/tag/v1.0.6 |
 | **Source repository** | https://github.com/docxology/template_template |
 

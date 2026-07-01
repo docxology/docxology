@@ -1,0 +1,61 @@
+{
+  "title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+  "version": null,
+  "doi": "10.5281/zenodo.10034511",
+  "doi_url": "https://doi.org/10.5281/zenodo.10034511",
+  "zenodo_record": "https://zenodo.org/records/10034511",
+  "record_id": "10034512",
+  "publication_date": "2023-10-23",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Wilkinson, Thomas M.",
+      "affiliation": "Office of Health Security, U.S. Department of Homeland Security",
+      "orcid": "0009-0005-1149-7723"
+    },
+    {
+      "name": "Cordes, RJ",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0002-9913-7159"
+    },
+    {
+      "name": "David, Scott",
+      "affiliation": "Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), University of Washington, Applied Physics Laboratory",
+      "orcid": "0000-0003-0679-3286"
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Requirements engineering frameworks have historically been developed in the context of cybersecurity and have tended to focus almost exclusively on the technical and operational aspects of data security. Now, however, frameworks are being stretched to support interdisciplinary and multiorganizational information systems, requirements, and risks, securing downstream processes such as data analytics and balancing cross-domain priorities and perspectives. In this paper, we (i) explore the purpose of frameworks and their function in facilitating requirements engineering in information systems, (ii) perform an analysis of the relationships and lineages of common frameworks in professional use today, and (iii) propose the Properties, Processes, and Perspectives Inter-Framework (P3IF). P3IF enables flexible requirements engineering for complex information systems by providing a modular abstraction layer between existing frameworks, extending their value without replacing them. Factors from frameworks used across disparate domains are multiplexed to harmonize vocabularies and narratives across different organizations and needs, to create new approaches to managing information risk, and to enhance the cognitive security of decisions-makers by expanding security considerations beyond cybersecurity to include the entire information pipeline from sourcing to semantics.",
+  "keywords": [
+    "Requirements Engineering",
+    "Cybersecurity",
+    "Cognitive Security",
+    "Health Security",
+    "Evidence-Based Decisionmaking",
+    "Interoperability",
+    "Frameworks",
+    "Risk Management",
+    "Knowledge Management",
+    "Information Management"
+  ],
+  "files": [
+    {
+      "name": "TAAB-P3IF_v1_10.5281_zenodo.10034512.pdf",
+      "size_bytes": 3426653,
+      "checksum": "md5:9187080b069e2422cc0e6c22b3e44912",
+      "download_url": "https://zenodo.org/api/records/10034512/files/TAAB-P3IF_v1_10.5281_zenodo.10034512.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:20Z"
+}

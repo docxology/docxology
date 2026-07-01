@@ -8,11 +8,13 @@ import json
 import os
 import subprocess
 import time
+import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 
 try:

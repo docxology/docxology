@@ -1,0 +1,37 @@
+{
+  "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+  "version": "v1",
+  "doi": "10.5281/zenodo.19695259",
+  "doi_url": "https://doi.org/10.5281/zenodo.19695259",
+  "zenodo_record": "https://zenodo.org/records/19695259",
+  "record_id": "19695260",
+  "publication_date": "2026-04-23",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Commutative diagrams are cognitively privileged representations because a single diagram simultaneously encodes three things a cognitive agent needs at once: the algebraic structure of a relational situation, the distributional semantics by which language reports on that situation, and the inference process by which belief is updated when new evidence arrives; the traditional linguistic category of case &mdash; who did what to whom &mdash; is the natural fulcrum on which all three layers turn. We review formalized linguistic case systems as categories whose objects are case roles and whose morphisms are grammatical relations, and we capture every cross-linguistic alignment type (nominative-accusative, ergative-absolutive, tripartite, active-stative, fluid-S) as a structure-preserving functor between case categories. Sentences and discourses become compact-closed string diagrams via DisCoCat and DisCoCirc, computable as executable witnesses of grammatical and cognitive composition; enriching the case category with [0,1]-weighted hom-values supplies quantitative measures and an explicit link to distributional proximity; a topos-theoretic bridge then ties the typological, type-logical, distributional- semantic, enriched-categorical, and quantum layers together. Integrating this stack with Distributional Active Inference yields first-principles, falsifiable predictions for neurophysiological event-related potentials during sentence comprehension, and translating grammatical relations into Positive-Operator-Valued Measurements scales the same scaffolding to coherent multi-agent discourse. In terms of Cognitive Security and AI safety, typological invariants motivate a protocol-level defense: when multi-turn agent interactions are modeled as a fixed category of licensed morphisms with explicit role types and wiring, prompt injection aligns with ill-typed role promotion and can be analyzed as a functorial type violation &mdash; an engineering and specification target, not an automatic guarantee, on present-day LLM APIs. The resulting category-theoretic scaffolding makes quantitative neurophysiological predictions, makes prompt injection statically decidable in principle relative to that same fixed protocol (where the interaction grammar is enforced), and turns cross-linguistic typology into a proof-by-functor rather than a taxonomy; the manuscript is accompanied by 1197 executable tests across sixty-four test files at 95.96% line-and-branch coverage on src/ (from coverage.json) and 30 programmatically generated figures, so every formal claim either runs or is honestly flagged as future work. The complete source code, test suite, manuscript, and all figures are available open source on the GitHub repository https://github.com/docxology/cognitive_case_diagrams and archived with DOI 10.5281/zenodo.19695260 .",
+  "keywords": [
+    "Active Inference",
+    "Category Theory"
+  ],
+  "files": [
+    {
+      "name": "cognitive_case_diagrams_v1_DAF_04-23-2026.pdf",
+      "size_bytes": 13601721,
+      "checksum": "md5:8740f4b058d8ca2202c5fdccc9e4a5ce",
+      "download_url": "https://zenodo.org/api/records/19695260/files/cognitive_case_diagrams_v1_DAF_04-23-2026.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:26:06Z"
+}

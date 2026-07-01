@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20420557
+- **Zenodo record**: https://zenodo.org/records/20420556
 - **GitHub release**: https://github.com/docxology/BeeStack/releases/tag/v1.0.0
 - **Pairing evidence**: github_release_mentions_doi, github_repo_self_linked, title_overlap

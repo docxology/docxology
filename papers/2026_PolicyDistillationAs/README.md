@@ -34,7 +34,7 @@ on-policy distillation · active inference · self-distillation · privileged in
 | **DOI** | [10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834) |
 | **Published** | 2026-06-18 |
 | **Version** | 1.0.2 |
-| **Zenodo record** | https://zenodo.org/records/20749817 |
+| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20747834 |
 | **GitHub release** | https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2 |
 | **Source repository** | https://github.com/ActiveInferenceInstitute/on_policy_distillation |
 

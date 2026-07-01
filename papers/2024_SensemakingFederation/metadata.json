@@ -1,0 +1,63 @@
+{
+  "title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
+  "version": "v1",
+  "doi": "10.5281/zenodo.14574046",
+  "doi_url": "https://doi.org/10.5281/zenodo.14574046",
+  "zenodo_record": "https://zenodo.org/records/14574046",
+  "record_id": "14574047",
+  "publication_date": "2024-12-30",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Sensemaking Scenius",
+      "affiliation": "The Sensemaking Scenius"
+    }
+  ],
+  "description": "This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space .&nbsp; The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting.&nbsp;&nbsp; This version of the transcript has been lightly edited for readability. For verbatim quotations, please refer to the original recording.",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1 .epub",
+      "size_bytes": 32610,
+      "checksum": "md5:a51b999f37a8b39f1b671aabc072d13e",
+      "download_url": "https://zenodo.org/api/records/14574047/files/Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1%20.epub/content"
+    },
+    {
+      "name": "Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1 .pdf",
+      "size_bytes": 281717,
+      "checksum": "md5:abf849d1177375c05f8626fd94483b37",
+      "download_url": "https://zenodo.org/api/records/14574047/files/Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1%20.pdf/content"
+    },
+    {
+      "name": "Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1 .md",
+      "size_bytes": 77497,
+      "checksum": "md5:7a3694b38b3947b84a07503eba66b5ea",
+      "download_url": "https://zenodo.org/api/records/14574047/files/Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1%20.md/content"
+    },
+    {
+      "name": "Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1 .odt",
+      "size_bytes": 43324,
+      "checksum": "md5:4832b5d204188803e6d684207faeb1d9",
+      "download_url": "https://zenodo.org/api/records/14574047/files/Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1%20.odt/content"
+    },
+    {
+      "name": "Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1 .docx",
+      "size_bytes": 41537,
+      "checksum": "md5:4375d0c20a923a89a772c3e352492f65",
+      "download_url": "https://zenodo.org/api/records/14574047/files/Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1%20.docx/content"
+    },
+    {
+      "name": "Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1 .txt",
+      "size_bytes": 77541,
+      "checksum": "md5:a76455b32f8608c4b4fc6217c09dbaed",
+      "download_url": "https://zenodo.org/api/records/14574047/files/Sensemaking-Federation_Scenius_Transcript_12-5-2024_v1%20.txt/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:35Z"
+}

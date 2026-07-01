@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-06-29T22:12:54Z
+Generated: 2026-06-30T23:59:21Z
 
-Current public metrics: 178 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 179 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (178)
+WORKS AND PUBLICATIONS (179)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -314,6 +314,7 @@ WORKS AND PUBLICATIONS (178)
 [177] 2026 | Paper | Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition | Zenodo | 10.5281/zenodo.20931955
 [178] 2026 | Paper | AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference | Zenodo | 10.5281/zenodo.20976824
 [179] 2026 | Paper | Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls | Zenodo | 10.5281/zenodo.21047573
+[180] 2026 | Paper | Sortition Upstream of NTQR | Zenodo | 10.5281/zenodo.21083779
 
 SOFTWARE (30)
 -------------

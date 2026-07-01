@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379"
+date-released: 2024-08-08
+doi: 10.5281/zenodo.13273681
+url: "https://doi.org/10.5281/zenodo.13273681"
+authors:
+  - family-names: Cordes
+    given-names: RJ
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.13273681
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/13273681"
+    description: "Zenodo landing page"

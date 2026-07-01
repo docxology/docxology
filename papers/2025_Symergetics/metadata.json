@@ -1,0 +1,36 @@
+{
+  "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
+  "version": "v1",
+  "doi": "10.5281/zenodo.17114389",
+  "doi_url": "https://doi.org/10.5281/zenodo.17114389",
+  "zenodo_record": "https://zenodo.org/records/17114389",
+  "record_id": "17114390",
+  "publication_date": "2025-09-13",
+  "resource_type": {
+    "title": "Publication",
+    "type": "publication"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Floating-point arithmetic introduces systematic approximation errors that obscure fundamental mathematical relationships in geometric calculations, producing results like 2.999999999999999 instead of the exact integer 3. These compounding and confounding precision losses stymie a full-featured implementation of Buckminster Fuller's Synergetics framework, which requires symbolic operations on all-integer accounting based upon ratios geometrically based upon high-frequency shapes. Here we present Symergetics (Symbolic Synergetics), an open source Python package which provides exact rational arithmetic methods framed within the vectorial geometry of the Synergetics framework. The package implements a Quadray coordinate system for tetrahedral geometry within the Isotropic Vector Matrix (IVM) lattice, exact volume calculations for Platonic solids using IVM units (tetrahedron = 1, octahedron = 4, cube = 3, cuboctahedron = 20), and pattern analysis algorithms for Scheherazade numbers (1001^n) and primorial sequences using exact arithmetic. The computational implementation achieves high test coverage with rigorous validation, demonstrating 100% precision preservation across 953 test cases. Applications include active inference modeling, crystallographic analysis, materials science, and computational geometry. Complete implementation details are available in the core modules and computation modules . The package is distributed under Apache 2.0 license at the Symergetics repository: https://github.com/docxology/symergetics . Towards a symbolic and Synergetic future, together we go!",
+  "keywords": [
+    "Synergetics"
+  ],
+  "files": [
+    {
+      "name": "Symergetics_v1_DAF_9-13-2025.pdf",
+      "size_bytes": 5730668,
+      "checksum": "md5:75a69f7af992f087790c26c36f2e4b25",
+      "download_url": "https://zenodo.org/api/records/17114390/files/Symergetics_v1_DAF_9-13-2025.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:25:58Z"
+}

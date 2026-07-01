@@ -35,7 +35,7 @@
     "url": "https://danielarifriedman.com/updates.html",
     "name": "Updates — Daniel Ari Friedman",
     "description": "Human-readable changelog for the docxology public research and software index.",
-    "dateModified": "2026-06-21",
+    "dateModified": "2026-06-29",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
@@ -48,66 +48,96 @@
             {
                 "@type": "ListItem",
                 "position": 1,
+                "name": "2026-06-29",
+                "description": "Added work **#179 \"Mapping William Blake's Works\"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in `reports/publishing"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "2026-06-27",
+                "description": "Added work **#178 \"AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference\"** (`zenodo.20976824`, `docxology/alphacogant` v1.0.1) with paper folder, PDF, and work page; updated \"A template/ approach to Reproducible Generative Research\" to Zenodo version v1.0.9. Regenerated the dependent layer and refreshed the live-site verification snapshot. `build_work_pages.py` now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "2026-06-26",
+                "description": "Added works **#176 \"A Living Meta-Analysis of the Modafinil Literature\"** and **#177 \"Refinement of Gold\"** via the paired GitHub+Zenodo scan, with new paper folders (README/AGENTS/SKILL/CITATION.cff/metadata.json) and Zenodo PDFs; refreshed `checked_at` metadata on 27 existing paired works. Regenerated bibliography exports, publications/works/paper/domain pages, catalog, search index, feed, sitemap, resume, claims, evidence/reconciliation, and current counts; live-site snapshot refreshed."
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "2026-06-24",
+                "description": "Added work **#175 \"Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction\"** (`zenodo.20834846`, `docxology/realizing_emptiness` v1.0.0) via `sync_paired_publications.py --apply`; refreshed `checked_at` metadata and software links for 25 existing works; fixed the `pages/BIBLIOGRAPHY.md` paper-folder prose count (156→157). Added `code/orchestrators/regenerate_all.py`: a single-command, dependency-ordered, local-only write-mode counterpart"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "2026-06-22",
+                "description": "Synced the **CogSecSkills** publication (`zenodo.20804585`, ) and hardened publication intake."
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
                 "name": "2026-06-21",
                 "description": "Added two Zenodo publications: **Template Madlib** (`zenodo.20786638`, ) — `docxology/template_madlib`, deterministic token injection for conditional IMRAD manuscripts — as work **172**, and **California Public Records** (`zenodo.20789899`, ) — a technical and legal reference for the post-AB 473 era — as work **173**. Downloaded both PDFs, generated work/paper pages, and registered `papers/README.md` entries. Bibliography **170→172**; paper folders **153→155**. Also added the previously-missing "
             },
             {
                 "@type": "ListItem",
-                "position": 2,
+                "position": 7,
                 "name": "2026-06-17",
                 "description": "Added **AGEINT: Agentic Intelligence** (`zenodo.20732275`, ) — `docxology/AGEINT` v0.1.0, a Synthetic Analytic Tradecraft curriculum-and-assurance atlas — as work **170** via the canonical `sync_paired_publications.py` apply path, scoped `--since 2026-06-16` to isolate the single new release. Stripped the `<p>` HTML the Zenodo abstract carried into `metadata.json`/`README.md`; renumbered the `papers/README.md` index strictly **1..152** (closed the gap at 111 left by the CEREBRUM dedup, plus a du"
             },
             {
                 "@type": "ListItem",
-                "position": 3,
+                "position": 8,
                 "name": "2026-06-15",
                 "description": "Completed **COGANT** (`zenodo.20705351`, ) and **coasys** / **COGANT** software-catalog intake after commit `b6fa1b4`: added `2026_COGANT` to `papers/README.md` (151 folders), `paper_metadata.json`, and the Computational domain blurb (27 works); regenerated publications, software, sitemap, resume, evidence, search, feed, domain, and count exports. Bibliography **167→168**; software catalog **89→91** (58 owned + 33 AII); paper folders **150→151**."
             },
             {
                 "@type": "ListItem",
-                "position": 4,
+                "position": 9,
                 "name": "2026-06-14",
                 "description": "Added two Zenodo-only publications via `add_zenodo_only.py`: **DemoCreate** (`zenodo.20693217`, ) and **ENTO** (`zenodo.20647443`, ); added the **GeneralizedNotationNotation (GNN)** software v2.0.0 (`zenodo.20671741`, ) as a distinct work from the 2023 GNN paper (different Zenodo concept). Bibliography **165→167**. Completed the CEREBRUM dedup the 2026-06-10 pass flagged for the maintainer: removed the duplicate work `…118` (papers/2025_CEREBRUM2, the v1.4 deposit `zenodo.15231156`) outright, ke"
             },
             {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 10,
                 "name": "2026-06-10",
                 "description": "SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: `build_work_pages.py` now clips on a word boundary with an ellipsis via new `clip_description()` in `code/src/site_nav.py` (145 of 165 work descriptions corrected; rendered length ≤160). Added Twitter Card (`summary_large_image`) and `og:image:alt` tags site-wide. Generators (`build_work_pages`, `build_domain_pages`, `build_catalog`, `build_exports_page`, `build_evidence_page`, `build_updates_page`, `build_g"
             },
             {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 11,
                 "name": "2026-06-04",
                 "description": "Applied four strong GitHub release + Zenodo publication pairs: `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, and `2026_TemplateTextbook`; bibliography **150→154**, paper folders **143→147**. Refreshed represented GitHub/Zenodo publication pairs for existing works, including `WhenDoBugs`, `MusicNeverStopped`, `BeeStack`, `BiologyTextbook`, `CrescentCity`, and template-derived exemplars; left review-only pairings untouched. Added six owned repositories to the cur"
             },
             {
                 "@type": "ListItem",
-                "position": 7,
+                "position": 12,
                 "name": "2026-05-26",
                 "description": "Thermo-nuclear documentation pass: aligned volatile counts (116 works / 109 paper folders) across `llms.txt`, release notes, and publications head meta; added count-consistency validation (`code/src/count_consistency.py`). Refactored `publications.html` to load catalog rows from `data/works.json` via `js/publications.js`; externalized CollectionPage JSON-LD to `data/publications-ld.json` (166-line shell). Added `docs/SECURITY.md`, `docs/DESIGN_SYSTEM.md`, `reports/web_assessment_2026-05-26.md`, "
             },
             {
                 "@type": "ListItem",
-                "position": 8,
+                "position": 13,
                 "name": "2026-05-19",
                 "description": "Added `2026_CrescentCity` — *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast* (DOI [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171); repo `docxology/crescent_city`), filed under Cognitive Security. Created the per-paper documentation set: `README.md`, `AGENTS.md`, `SKILL.md`, `CITATION.cff`, and `metadata.json`. Registered the work in `papers/paper_metadata.json`, the `papers/README.md` index, and `papers/AGENTS.md` (counts + mainte"
             },
             {
                 "@type": "ListItem",
-                "position": 9,
+                "position": 14,
                 "name": "2026-05-13",
                 "description": "Added machine-readable discovery artifacts: `llms.txt`, `CITATION.cff`, `codemeta.json`, bibliography exports, and structured `data/*.json`. Added domain landing pages, per-work landing pages, a generated search index, and an RSS feed. Added `search.html`, `opensearch.xml`, `catalog.html`, `data/catalog.json`, `GENERATED.md`, and `data/generated-manifest.json` for human search, browser discovery, dataset discovery, and generated-file rebuild provenance. Enriched generated work pages and the sear"
             },
             {
                 "@type": "ListItem",
-                "position": 10,
+                "position": 15,
                 "name": "2026-05-12",
                 "description": "Performed repo-wide README and AGENTS audit. Updated public GitHub repository count and domain figures from bibliography ground truth. Verified public-source discrepancies around Google Scholar cache, AII officers, board size, and Scientific Advisory Board context."
             },
             {
                 "@type": "ListItem",
-                "position": 11,
+                "position": 16,
                 "name": "2026-05-04",
                 "description": "Renamed paper folders from author-title form to `YYYY_Topic`. Added `2020_FacilitatorsCatechism`. Added shared bibliography-table parser and publication HTML synchronization script."
             }
@@ -150,8 +180,28 @@
     <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>
     <main id="main" class="main"><section class="section"><div class="updates-list">
             <article class="update-card">
+                <h2>2026-06-29</h2>
+                <ul><li>Added work **#179 &quot;Mapping William Blake&#x27;s Works&quot;** (<code>zenodo.21047573</code>, <code>docxology/blake</code> v0.1.0) via the canonical <code>sync_paired_publications.py --apply</code> path, plus benign <code>checked_at</code> metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; <code>validate_repo</code> + pytest green. Also fixed 32 malformed bare-domain markdown links in <code>reports/publishing_status_megaindex.md</code>.</li></ul>
+            </article>
+            <article class="update-card">
+                <h2>2026-06-27</h2>
+                <ul><li>Added work **#178 &quot;AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference&quot;** (<code>zenodo.20976824</code>, <code>docxology/alphacogant</code> v1.0.1) with paper folder, PDF, and work page; updated &quot;A template/ approach to Reproducible Generative Research&quot; to Zenodo version v1.0.9. Regenerated the dependent layer and refreshed the live-site verification snapshot.</li><li><code>build_work_pages.py</code> now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site), driven by a new <code>data/publishing-status.json</code>; added <code>reports/publishing_status_megaindex.md</code>, a publishing-status mega-index across 272 items (works + software) with per-platform coverage and gaps. Began archiving origins to Software Heritage via anonymous Save Code Now.</li></ul>
+            </article>
+            <article class="update-card">
+                <h2>2026-06-26</h2>
+                <ul><li>Added works **#176 &quot;A Living Meta-Analysis of the Modafinil Literature&quot;** and **#177 &quot;Refinement of Gold&quot;** via the paired GitHub+Zenodo scan, with new paper folders (README/AGENTS/SKILL/CITATION.cff/metadata.json) and Zenodo PDFs; refreshed <code>checked_at</code> metadata on 27 existing paired works. Regenerated bibliography exports, publications/works/paper/domain pages, catalog, search index, feed, sitemap, resume, claims, evidence/reconciliation, and current counts; live-site snapshot refreshed.</li></ul>
+            </article>
+            <article class="update-card">
+                <h2>2026-06-24</h2>
+                <ul><li>Added work **#175 &quot;Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction&quot;** (<code>zenodo.20834846</code>, <code>docxology/realizing_emptiness</code> v1.0.0) via <code>sync_paired_publications.py --apply</code>; refreshed <code>checked_at</code> metadata and software links for 25 existing works; fixed the <code>pages/BIBLIOGRAPHY.md</code> paper-folder prose count (156→157).</li><li>Added <code>code/orchestrators/regenerate_all.py</code>: a single-command, dependency-ordered, local-only write-mode counterpart to <code>validate_repo.py</code>&#x27;s <code>--check</code> sequence (manifest last), replacing manual whack-a-mole after a publication-sync apply. <code>refresh_bibliography_counts</code> now also keeps the &quot;**N** indexed paper folders&quot; prose current. <code>validate_repo.py</code> now runs <code>sync_scholar_metrics.py --check</code>, catching Scholar-metric drift across README/BIBLIOGRAPHY/PROFILE/LINKS/DISCOVERY (previously unguarded).</li><li>Pruned superseded dated QA screenshot sets under <code>reports/visual-qa</code> and <code>reports/browser-smoke</code> (validation only reads the latest); <code>reports/</code> 100 MB → 40 MB. <code>add_zenodo_only.py</code> now runs <code>regenerate_all.py</code> automatically after adding records.</li><li>Softened unguarded external/domain prose counts that would drift as external repos grow (codomyrmex module counts, COGSEC bio paper/book counts); fixed <code>regenerate_all.py</code>&#x27;s report-producer ordering so write-mode indexes don&#x27;t go stale relative to the dated reports they link.</li></ul>
+            </article>
+            <article class="update-card">
+                <h2>2026-06-22</h2>
+                <ul><li>Synced the **CogSecSkills** publication (<code>zenodo.20804585</code>, ) and hardened publication intake.</li></ul>
+            </article>
+            <article class="update-card">
                 <h2>2026-06-21</h2>
-                <ul><li>Added two Zenodo publications: **Template Madlib** (<code>zenodo.20786638</code>, ) — <code>docxology/template_madlib</code>, deterministic token injection for conditional IMRAD manuscripts — as work **172**, and **California Public Records** (<code>zenodo.20789899</code>, ) — a technical and legal reference for the post-AB 473 era — as work **173**. Downloaded both PDFs, generated work/paper pages, and registered <code>papers/README.md</code> entries. Bibliography **170→172**; paper folders **153→155**. Also added the previously-missing **COGANT-0.6.0.pdf** and removed a duplicate On-Policy Distillation folder.</li><li>Repo-wide **Zenodo DOI concept-consistency** pass: switched **70** bibliography rows (plus the 4 newest works and the <code>itrace</code> / <code>ntqr_llm</code> / <code>on_policy_distillation</code> software-catalog links) from per-version DOIs to their **concept DOIs**, each verified against the Zenodo API <code>conceptdoi</code> field so the citation always resolves to the latest version. Deliberately excluded version-distinct works that share a single concept DOI (e.g. the AII Ecosystem v1/v2/v3 snapshots) to avoid duplicate DOIs.</li><li>Added **AGEINT** (<code>docxology/AGEINT</code>) and **template_madlib** (<code>docxology/template_madlib</code>) to the software catalog: docxology owned **58→60**, Grand Total **92→94** (Education 5→6, Developer Tools 15→16); recomputed the GitHub-inventory curated split.</li><li>Fixes: <code>sync_publications_html.py</code> now patches <code>twitter:image:alt</code> with the live work count (was stale at 170); removed a doubled &quot;Abstract&quot; heading and added the MIT <code>license</code> field in the On-Policy Distillation paper folder; reconciled that folder&#x27;s metadata to its concept DOI.</li></ul>
+                <ul><li>Added two Zenodo publications: **Template Madlib** (<code>zenodo.20786638</code>, ) — <code>docxology/template_madlib</code>, deterministic token injection for conditional IMRAD manuscripts — as work **172**, and **California Public Records** (<code>zenodo.20789899</code>, ) — a technical and legal reference for the post-AB 473 era — as work **173**. Downloaded both PDFs, generated work/paper pages, and registered <code>papers/README.md</code> entries. Bibliography **170→172**; paper folders **153→155**. Also added the previously-missing **COGANT-0.6.0.pdf** and removed a duplicate On-Policy Distillation folder.</li><li>Repo-wide **Zenodo DOI concept-consistency** pass: switched **70** bibliography rows (plus the 4 newest works and the <code>itrace</code> / <code>ntqr_llm</code> / <code>on_policy_distillation</code> software-catalog links) from per-version DOIs to their **concept DOIs**, each verified against the Zenodo API <code>conceptdoi</code> field so the citation always resolves to the latest version. Deliberately excluded version-distinct works that share a single concept DOI (e.g. the AII Ecosystem v1/v2/v3 snapshots) to avoid duplicate DOIs.</li><li>Added **AGEINT** (<code>docxology/AGEINT</code>) and **template_madlib** (<code>docxology/template_madlib</code>) to the software catalog: docxology owned **58→60**, Grand Total **92→94** (Education 5→6, Developer Tools 15→16); recomputed the GitHub-inventory curated split.</li><li>Fixes: <code>sync_publications_html.py</code> now patches <code>twitter:image:alt</code> with the live work count (was stale at 170); removed a doubled &quot;Abstract&quot; heading and added the MIT <code>license</code> field in the On-Policy Distillation paper folder; reconciled that folder&#x27;s metadata to its concept DOI.</li><li>Design/a11y pass: reconciled <code>design-system.md</code> to the actual <code>style.css</code> (corrected background/radius/body-font/focus-color tokens, documented previously-missing tokens); added mobile-menu <code>aria-expanded</code> toggling, ESC-to-close, and a 44px WCAG touch target across all 20 nav pages and their generators; fixed heading-hierarchy skips (h1→h3/h2→h4) on domain and index pages; added <code>aria-label</code>s to 3 unlabelled search inputs; tokenized 26 hardcoded gold <code>rgba()</code> values into 14 <code>--gold-NN</code> tokens (no visual change); <code>accessibility_audit.py</code> now enforces single-h1, no-heading-skips, and form-control-labels (22/22 pages pass).</li><li>Migrated the site body font from Georgia serif to **Inter** to match the design system (Playfair Display headings unchanged); centralized the duplicated menu-ESC handler into <code>site_nav.MENU_ESC_SCRIPT</code>; removed 26 lines of verified-dead CSS (duplicate footer block, zero-reference selectors) after confirming the two-layer base+newspaper override structure is intentional, not duplication.</li></ul>
             </article>
             <article class="update-card">
                 <h2>2026-06-17</h2>

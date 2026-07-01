@@ -8,15 +8,17 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | --- | --- |
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: fetch tabs, normalize records, save JSON |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
-| `src/publication_pairing.py` | Normalize GitHub release and Zenodo record metadata; classify paired publication evidence |
+| `src/publication_pairing.py` | Normalize GitHub release and Zenodo record metadata; classify paired publication evidence, type, and domain; render README/AGENTS/SKILL/CITATION.cff templates |
 | `src/resume_data.py` | Load, clean, validate, merge, and render structured resume/CV data |
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
+| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by ~20 orchestrators, no CLI of its own |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` (`--fast` merges flat-playlist refreshes with cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
 | `orchestrators/build_resume.py` | Generate `data/resume.json`, plaintext resume variants, and `resume/resume.pdf` |
+| `orchestrators/generate_og_images.py` | Generate `og-*.jpg` Open Graph previews with live counts from `data/current-counts.json` (`--check` validates against `data/og-image-counts.json`) |
 | `orchestrators/sync_paired_publications.py` | Dry-run/apply checker for paired GitHub release + Zenodo DOI publications |
 | `orchestrators/add_zenodo_only.py` | Backfill real Zenodo publication records that have no paired GitHub release |
 | `orchestrators/audit_publication_skills.py` | Validate publication `SKILL.md` coverage, frontmatter, instructions, and canonical-link hygiene |
@@ -30,6 +32,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_search_index.py` | Generate `search-index.json` for site and agent discovery |
 | `orchestrators/build_exports_page.py` | Generate `exports.html` HTML hub for citation/JSON exports |
 | `orchestrators/build_sitemap.py` | Generate index-priority `sitemap.xml` (hubs + works + citation exports) |
+| `orchestrators/build_image_sitemap.py` | Generate `sitemap-images.xml` for the art gallery from `data/artworks.json` and local `art/` files |
 | `orchestrators/indexnow_urls.py` | Emit filtered IndexNow URL list from sitemap policy |
 | `orchestrators/gsc_followup_preflight.py` | Local + live preflight before manual GSC follow-up; writes `data/gsc-followup-checklist.json` |
 | `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |

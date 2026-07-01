@@ -53,20 +53,27 @@ Other workflows: `indexnow-on-push.yml`, `freshness.yml`, `live-verify.yml`.
 
 ### Rebuild ordering
 
-Outputs depend on upstream outputs, so regenerate in dependency order. After a
-`pages/BIBLIOGRAPHY.md` edit:
+Outputs depend on upstream outputs, so regenerate in dependency order. The single
+dependency-ordered driver for this is `regenerate_all.py` — run it after any
+`pages/BIBLIOGRAPHY.md` / `pages/SOFTWARE.md` edit (or any other source change)
+instead of invoking individual orchestrators by hand:
 
 ```bash
-python3 code/orchestrators/export_bibliography.py          # → data/works.json + bib/csl/ris
-python3 code/orchestrators/sync_publications_html.py --apply
-python3 code/orchestrators/build_work_pages.py             # → works/*.html
-python3 code/orchestrators/build_domain_pages.py
-python3 code/orchestrators/build_search_index.py
-python3 code/orchestrators/build_sitemap.py
-python3 code/orchestrators/generate_feed.py
-uv run python3 code/orchestrators/build_current_counts.py
-uv run python3 code/orchestrators/validate_repo.py
+uv run python3 code/orchestrators/regenerate_all.py --validate
 ```
+
+It is local-only and idempotent (no network freshness steps — those are a deliberate
+separate step; see `docs/operations/publication-sync.md`), and ends with
+`build_generated_manifest.py` (hashes every other output) then `validate_repo.py`.
+Run `--list` to print the plan without executing. Internally it runs, in order:
+`export_bibliography.py` → `sync_publications_html.py --apply` → `sync_software_html.py
+--apply` → `build_current_counts.py` → `generate_og_images.py` → `export_agent_data.py` →
+`build_resume.py --all` → `build_domain_pages.py` → `build_work_pages.py` →
+`build_paper_pages.py` → `build_exports_page.py` → `build_updates_page.py` →
+`build_evidence_page.py` → `build_reconciliation_report.py` → `audit_assets.py` →
+`accessibility_audit.py` → `build_catalog.py` → `build_search_index.py` →
+`generate_feed.py` → `build_sitemap.py` → `build_image_sitemap.py` →
+`build_generated_manifest.py`.
 
 Software path: `pages/SOFTWARE.md` → `sync_software_html.py --apply` → `export_agent_data.py`.
 After editing any HTML head template that changes file size, refresh the size report with

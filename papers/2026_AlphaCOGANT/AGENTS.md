@@ -18,6 +18,6 @@
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20977774
+- **Zenodo record**: https://zenodo.org/records/20976824
 - **GitHub release**: https://github.com/docxology/alphacogant/releases/tag/v1.0.1
 - **Pairing evidence**: github_release_mentions_doi, zenodo_related_identifier_mentions_release, github_repo_self_linked

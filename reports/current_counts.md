@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-06-29T22:12:54+00:00`
+Generated: `2026-06-30T23:59:20+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,20 +25,20 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-06-18.json`
-- paired_publications: `reports/paired_publications_2026-06-29.json`
+- paired_publications: `reports/paired_publications_2026-06-30.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `178`
-- Paper-folder docs: `161`
-- Bibliography docs links: `161`
+- Bibliography works: `179`
+- Paper-folder docs: `162`
+- Bibliography docs links: `162`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `157`
+- Papers: `158`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
@@ -49,7 +49,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `39`
 - Cognitive Security: `31`
 - Art & Synergetics: `15`
-- Computational: `35`
+- Computational: `36`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
@@ -62,9 +62,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `178`
+- data_works_json: `179`
 - data_software_json: `95`
-- data_publications_ld_main_entity: `178`
+- data_publications_ld_main_entity: `179`
 - data_software_ld_main_entity: `95`
 
 ### GitHub Inventory
@@ -89,14 +89,14 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `161`
-- zenodo_records: `114`
-- pairs: `216`
-- strong_pairs: `31`
+- github_releases: `164`
+- zenodo_records: `115`
+- pairs: `217`
+- strong_pairs: `32`
 - already_reviewed: `0`
 - needs_review: `185`
 - create_new: `1`
-- update_existing: `30`
+- update_existing: `31`
 
 ### Paired Publication Decisions
 

@@ -1,0 +1,51 @@
+{
+  "title": "On free will or the lack thereof",
+  "version": null,
+  "doi": "10.5281/zenodo.7394900",
+  "doi_url": "https://doi.org/10.5281/zenodo.7394900",
+  "zenodo_record": "https://zenodo.org/records/7394900",
+  "record_id": "7394901",
+  "publication_date": "2022-12-03",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Sapolsky, Robert",
+      "affiliation": "Stanford University",
+      "orcid": "0000-0002-7435-5838"
+    },
+    {
+      "name": "Mikhailova, Alexandra",
+      "affiliation": "University of California, Davis",
+      "orcid": "0000-0002-8699-7125"
+    },
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": "University of California, Davis",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "In this interview, Robert Sapolsky outlines his view on Free Will and related topics. The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will. Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system.",
+  "keywords": [
+    "Free Will",
+    "Human Behavior",
+    "Legal System",
+    "Philosophy",
+    "Complexity"
+  ],
+  "files": [
+    {
+      "name": "ALIUS Interview-Robert Sapolsky (2022).pdf",
+      "size_bytes": 296824,
+      "checksum": "md5:0b4d6fd4dc62f8032ceacc1c8251b679",
+      "download_url": "https://zenodo.org/api/records/7394901/files/ALIUS%20Interview-Robert%20Sapolsky%20(2022).pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-06-30T23:24:55Z"
+}

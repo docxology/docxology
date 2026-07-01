@@ -3,7 +3,7 @@
   "version": "0.4",
   "doi": "10.5281/zenodo.20396328",
   "doi_url": "https://doi.org/10.5281/zenodo.20396328",
-  "zenodo_record": "https://zenodo.org/records/20647443",
+  "zenodo_record": "https://zenodo.org/records/20396328",
   "record_id": "20647443",
   "publication_date": "2026-06-11",
   "resource_type": {
@@ -47,7 +47,7 @@
   ],
   "github_repo": "docxology/entofile",
   "source": "zenodo-only",
-  "checked_at": "2026-06-29T22:11:13Z",
+  "checked_at": "2026-06-30T22:27:22Z",
   "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
   "release_tag": "v0.4",
   "release_name": "ENTO 0.4 — initial public release",

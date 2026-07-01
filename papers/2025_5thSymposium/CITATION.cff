@@ -1,0 +1,94 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Abstract book for: 5th Applied Active Inference Symposium"
+version: "v2"
+date-released: 2025-11-10
+doi: 10.5281/zenodo.17555266
+url: "https://doi.org/10.5281/zenodo.17555266"
+authors:
+  - family-names: Institute
+    given-names: Active Inference
+  - family-names: Safron
+    given-names: Adam
+  - family-names: Kiefer
+    given-names: Alex
+  - family-names: Sabine
+    given-names: Alexander
+  - family-names: Hiott
+    given-names: Andrea
+  - family-names: Pashea
+    given-names: Andrew
+  - family-names: Alicea
+    given-names: Bradly
+  - family-names: Fields
+    given-names: Chris
+  - family-names: Holt
+    given-names: Denise
+  - family-names: Shah
+    given-names: Harshil
+  - family-names: Maitra
+    given-names: Satyaki
+  - family-names: Pae
+    given-names: Hongju
+  - family-names: Tennant
+    given-names: Ian
+  - family-names: Cloutier
+    given-names: Jean-François
+  - family-names: Freda
+    given-names: Jim
+  - family-names: Dietz
+    given-names: Joel
+  - family-names: Boik
+    given-names: John
+  - family-names: Friston
+    given-names: Karl
+  - family-names: Iennaco
+    given-names: Maria Luiza
+  - family-names: Brown
+    given-names: Matthew
+  - family-names: Garfield
+    given-names: Michael
+  - family-names: Hinrichs
+    given-names: Nicolás
+  - name: Octopus
+  - name: PabloFM
+  - family-names: Waade
+    given-names: Peter Thestrup
+  - family-names: Worden
+    given-names: Robert
+  - family-names: Senchal
+    given-names: Sam A
+  - family-names: Montañez
+    given-names: Samuel
+  - family-names: Namjoshi
+    given-names: Sanjeev
+  - family-names: Shrivastava
+    given-names: Siddhant
+  - family-names: de Jager
+    given-names: Sonia
+  - family-names: Macurdy
+    given-names: Steph
+  - family-names: Weiniger
+    given-names: Steven
+  - family-names: Hasty
+    given-names: Susan
+  - family-names: Nguyen
+    given-names: Viet Dung
+  - family-names: Gebhardt
+    given-names: William
+  - family-names: Lennon
+    given-names: Michael
+  - family-names: Newell
+    given-names: Dave
+  - family-names: Huembeli
+    given-names: Patrick
+  - family-names: Ramstead
+    given-names: Maxwell
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17555266
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/17555266"
+    description: "Zenodo landing page"
