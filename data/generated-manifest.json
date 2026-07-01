@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:59:24Z",
+  "generated_at": "2026-07-01T00:30:33Z",
   "artifacts": [
     {
       "name": "Bibliography exports",
@@ -127,7 +127,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-06-30.json"
+        "reports/paired_publications_2026-07-01.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -145,7 +145,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-06-30.json",
+        "reports/paired_publications_2026-07-01.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -332,7 +332,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-06-30.json"
+        "reports/asset_size_2026-07-01.json"
       ],
       "sources": [
         "root HTML pages",
@@ -346,7 +346,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-06-30.json"
+        "reports/accessibility_static_2026-07-01.json"
       ],
       "sources": [
         "root HTML pages",

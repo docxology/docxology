@@ -55,11 +55,12 @@
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
+    "github_release_mentions_zenodo_record",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-30T22:27:31Z",
+  "checked_at": "2026-07-01T00:30:10Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20419007",

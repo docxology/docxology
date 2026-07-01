@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**179 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**181 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**158** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**160** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **179** works in the table below **·** **162** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **181** works in the table below **·** **164** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -217,6 +217,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 178 | 2026 | 💻 | Paper | AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference | *Zenodo* | [10.5281/zenodo.20976824](https://doi.org/10.5281/zenodo.20976824) | [📁](../papers/2026_AlphaCOGANT/) |
 | 179 | 2026 | 💻 | Paper | Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls | *Zenodo* | [10.5281/zenodo.21047573](https://doi.org/10.5281/zenodo.21047573) | [📁](../papers/2026_MappingWilliamBlake/) |
 | 180 | 2026 | 💻 | Paper | Sortition Upstream of NTQR | *Zenodo* | [10.5281/zenodo.21083779](https://doi.org/10.5281/zenodo.21083779) | [📁](../papers/2026_SortitionUpstreamNTQR/) |
+| 181 | 2026 | 💻 | Paper | Exploratory Data Analysis: A Reproducible Notebook Template | *Zenodo* | [10.5281/zenodo.21086292](https://doi.org/10.5281/zenodo.21086292) | [📁](../papers/2026_ExploratoryDataAnalysis/) |
+| 182 | 2026 | 💻 | Paper | A Domain Language for Specifying Controlled Methods | *Zenodo* | [10.5281/zenodo.21086548](https://doi.org/10.5281/zenodo.21086548) | [📁](../papers/2026_DomainLanguageSpecifying/) |
 ---
 
 ## Domain Index

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-06-30T23:59:21Z
+Generated: 2026-07-01T00:30:30Z
 
-Current public metrics: 179 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 181 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (172)
+WORKS AND PUBLICATIONS (174)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -228,6 +228,8 @@ WORKS AND PUBLICATIONS (172)
 [178] 2026 | Paper | AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference | Zenodo | 10.5281/zenodo.20976824
 [179] 2026 | Paper | Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls | Zenodo | 10.5281/zenodo.21047573
 [180] 2026 | Paper | Sortition Upstream of NTQR | Zenodo | 10.5281/zenodo.21083779
+[181] 2026 | Paper | Exploratory Data Analysis: A Reproducible Notebook Template | Zenodo | 10.5281/zenodo.21086292
+[182] 2026 | Paper | A Domain Language for Specifying Controlled Methods | Zenodo | 10.5281/zenodo.21086548
 
 SOFTWARE (95)
 -------------

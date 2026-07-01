@@ -2128,3 +2128,27 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 180; docs: papers/2026_SortitionUpstreamNTQR/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Exploratory Data Analysis: A Reproducible Notebook Template
+T2  - Zenodo
+DO  - 10.5281/zenodo.21086292
+UR  - https://doi.org/10.5281/zenodo.21086292
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 181; docs: papers/2026_ExploratoryDataAnalysis/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - A Domain Language for Specifying Controlled Methods
+T2  - Zenodo
+DO  - 10.5281/zenodo.21086548
+UR  - https://doi.org/10.5281/zenodo.21086548
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 182; docs: papers/2026_DomainLanguageSpecifying/
+ER  -

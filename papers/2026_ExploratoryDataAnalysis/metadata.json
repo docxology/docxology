@@ -1,0 +1,56 @@
+{
+  "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.21086292",
+  "doi_url": "https://doi.org/10.5281/zenodo.21086292",
+  "zenodo_record": "https://zenodo.org/records/21086292",
+  "record_id": "21086293",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Exploratory data analysis (EDA) is the most common entry point in applied\nresearch, yet it is also where reproducibility most often breaks down: logic\naccumulates in notebook cells that are never tested and quietly drift from the\nprose describing them. This paper presents the computational-notebook\nexemplar of the Research Project Template (https://github.com/docxology/template):\nan interactive walkthrough notebook\n(projects/templates/template_eda_notebook/notebooks/eda_walkthrough.ipynb)\nthat imports a small, fully-tested EDA library rather than carrying logic in its\ncells.\n\nWe ship a deterministic dataset (data/measurements.csv) with a designed\ncorrelation structure and a handful of missing values, then load, clean,\nsummarize, correlate, and visualize it entirely through tested functions in\nsrc/eda/. The library is side-effect-free — no plotting and no file I/O — and\nstandalone (numpy and pandas only), so it is covered above the 90% project gate\nand reused identically from the notebook, the thin analysis script\n(scripts/eda_analysis.py), and this manuscript.\n\nContributions are methodological and architectural. On the methods side,\nwe walk the canonical first EDA pass: surface missingness explicitly rather than\nimputing it, compute per-column descriptive statistics and per-group means, and\nrank features by Pearson correlation. On the architecture side, we demonstrate\nthe notebook-to-tested-source extraction workflow — explore fast in a cell, and\nthe moment a computation matters, move it into the library behind a failing\ntest — verified by a zero-mock suite and a structural notebook-binding check\n().\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.21086292\nZenodo: https://zenodo.org/records/21086292\nPDF SHA-256: 0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d",
+  "keywords": [
+    "exploratory data analysis",
+    "computational notebook",
+    "reproducible research",
+    "pandas",
+    "data cleaning",
+    "correlation analysis"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Exploratory_0b10852b.pdf",
+      "size_bytes": 158570,
+      "checksum": "md5:9270a97abfd832bf6c152ed973f4de92",
+      "download_url": "https://zenodo.org/api/records/21086293/files/Friedman_2026_Exploratory_0b10852b.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_eda_notebook"
+    }
+  ],
+  "github_repo": "docxology/template_eda_notebook",
+  "github_release_url": "https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "Exploratory Data Analysis: A Reproducible Notebook Template (v1.0.0)",
+  "pdf_sha256": "0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-07-01T00:30:08Z"
+}

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 179 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 181 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -3049,6 +3049,40 @@
             },
             "keywords": "💻",
             "sameAs": "https://doi.org/10.5281/zenodo.21083779"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Exploratory Data Analysis: A Reproducible Notebook Template",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.21086292"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "A Domain Language for Specifying Controlled Methods",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.21086548"
         }
     ]
 }

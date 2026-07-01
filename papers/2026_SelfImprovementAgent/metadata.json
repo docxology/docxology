@@ -41,7 +41,7 @@
   ],
   "github_repo": "docxology/template_sia",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T22:27:22Z",
+  "checked_at": "2026-07-01T00:30:10Z",
   "accepted_pairings": [
     {
       "doi": "10.5281/zenodo.20453879",
@@ -187,7 +187,6 @@
   "pdf_sha256": "6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "github_release_mentions_zenodo_record",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"

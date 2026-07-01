@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:59:21Z",
+  "generated_at": "2026-07-01T00:30:30Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -33,7 +33,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 179,
+    "works": 181,
     "software_catalogued": 95,
     "owned_software_catalogued": 61,
     "aii_software_catalogued": 34,
@@ -4764,6 +4764,34 @@
       "doi": "10.5281/zenodo.21083779",
       "docs_path": "papers/2026_SortitionUpstreamNTQR/",
       "has_paper_folder": true
+    },
+    {
+      "num": 181,
+      "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21086292",
+      "doi": "10.5281/zenodo.21086292",
+      "docs_path": "papers/2026_ExploratoryDataAnalysis/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 182,
+      "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21086548",
+      "doi": "10.5281/zenodo.21086548",
+      "docs_path": "papers/2026_DomainLanguageSpecifying/",
+      "has_paper_folder": true
     }
   ],
   "software": [
@@ -5911,14 +5939,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 179 works.",
+      "claim": "The curated bibliography contains 181 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-06-30T23:59:20+00:00",
+      "checked_at": "2026-07-01T00:30:29+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -5926,14 +5954,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 162 per-paper documentation folders.",
+      "claim": "The repository contains 164 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-06-30T23:59:20+00:00",
+      "checked_at": "2026-07-01T00:30:29+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

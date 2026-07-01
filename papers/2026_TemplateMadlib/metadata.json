@@ -45,7 +45,7 @@
   ],
   "github_repo": "docxology/template_madlib",
   "source": "zenodo-with-github",
-  "checked_at": "2026-06-30T22:27:31Z",
+  "checked_at": "2026-07-01T00:30:10Z",
   "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
   "release_tag": "v0.1.0",
   "release_name": "Template Madlib v0.1.0",
@@ -53,6 +53,7 @@
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
+    "github_release_mentions_zenodo_record",
     "github_repo_self_linked"
   ]
 }

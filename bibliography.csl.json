@@ -4456,5 +4456,55 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21083779",
     "URL": "https://doi.org/10.5281/zenodo.21083779"
+  },
+  {
+    "id": "Friedman2026ExploratoryDataAnalysisReproducible181",
+    "type": "article-journal",
+    "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 181; docs: papers/2026_ExploratoryDataAnalysis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21086292",
+    "URL": "https://doi.org/10.5281/zenodo.21086292"
+  },
+  {
+    "id": "Friedman2026DomainLanguageSpecifyingControlled182",
+    "type": "article-journal",
+    "title": "A Domain Language for Specifying Controlled Methods",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 182; docs: papers/2026_DomainLanguageSpecifying/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21086548",
+    "URL": "https://doi.org/10.5281/zenodo.21086548"
   }
 ]

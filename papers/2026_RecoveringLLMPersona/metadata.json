@@ -54,10 +54,9 @@
   "pdf_sha256": "e1196698427f9fe04d1f3071705adb6e5459983649c78d7f5d074756e989148b",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "github_release_mentions_zenodo_record",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-30T22:27:22Z"
+  "checked_at": "2026-07-01T00:30:10Z"
 }

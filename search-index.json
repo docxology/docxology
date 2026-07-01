@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:59:22Z",
+  "generated_at": "2026-07-01T00:30:31Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1833,
+  "count": 1835,
   "items": [
     {
       "id": "page:home",
@@ -293,7 +293,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-06-30.json",
+      "url": "/reports/accessibility_static_2026-07-01.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -342,7 +342,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-06-30.json",
+      "url": "/reports/asset_size_2026-07-01.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -4327,6 +4327,50 @@
         "panel formation"
       ],
       "content": "Sortition Upstream of NTQR Zenodo 10.5281/zenodo.21083779 Friedman2026SortitionUpstreamNTQR180 Computational Paper How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the agreement/disagreement pattern among three binary judges, the ntqr package's error-independent (EIE) evaluator returns logically consistent estimates of item prevalence and per-judge accuracy with no labels at all. But that evaluator takes the panel as given. We join the two questions and ask whether the rule that forms the panel changes the oracle-referenced error of the no-answer-key evaluation — how far the blind estimate lands from the answer-key result, lower being better. On a fully deterministic instrument (96 seeds, 96 exp sortition NTQR unlabeled evaluation expert panels peer review error independence statistical power panel formation synthetic evaluation LLM reviewers sortition NTQR unlabeled evaluation expert panels peer review"
+    },
+    {
+      "id": "work:Friedman2026ExploratoryDataAnalysisReproducible181",
+      "type": "work",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "url": "/works/Friedman2026ExploratoryDataAnalysisReproducible181.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21086292",
+      "summary": "Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never tested and quietly drift",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "exploratory data analysis",
+        "computational notebook",
+        "reproducible research",
+        "pandas",
+        "data cleaning",
+        "correlation analysis"
+      ],
+      "content": "Exploratory Data Analysis: A Reproducible Notebook Template Zenodo 10.5281/zenodo.21086292 Friedman2026ExploratoryDataAnalysisReproducible181 Computational Paper Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never tested and quietly drift from the prose describing them. This paper presents the computational-notebook exemplar of the Research Project Template (https://github.com/docxology/template): an interactive walkthrough notebook (projects/templates/template eda notebook/notebooks/eda walkthrough.ipynb) that imports a small, fully-tested EDA library rather than carrying logic in its cells. We ship a deterministic dataset (data/measurements.csv) with a designed correlation structure and a handful of missing values, then load, clean, summarize, correlate, and visualize it entirely through tested functions in src/eda/. The library is side-effect-free — no plotting and no file I/O — and standalone (numpy a exploratory data analysis computational notebook reproducible research pandas data cleaning correlation analysis exploratory data analysis computational notebook reproducible research pandas data cleaning"
+    },
+    {
+      "id": "work:Friedman2026DomainLanguageSpecifyingControlled182",
+      "type": "work",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "url": "/works/Friedman2026DomainLanguageSpecifyingControlled182.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21086548",
+      "summary": "This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this m",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "methods paper",
+        "domain-specific language",
+        "controlled methods",
+        "deterministic compilation",
+        "staged validation",
+        "dimensional analysis"
+      ],
+      "content": "A Domain Language for Specifying Controlled Methods Zenodo 10.5281/zenodo.21086548 Friedman2026DomainLanguageSpecifyingControlled182 Computational Paper This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this manuscript's subject is the methodology itself: a controlled vocabulary, a unit system with dimensional safety, four staged validation gates, and a deterministic compiler, implemented in projects/templates/template methods paper/src/methods dsl/ and described section by section in . The domain language's vocabulary is informed by BPL (Biology Programming Language, ), an upstream reference that encodes laboratory protocols as programs with biology-native types, staged validation, and deterministic compilation; this exemplar generalizes BPL's intent vocabulary and pipeline shape from wet-lab protocols to any controlled procedure. A Method is a name, a set of typed parameters methods paper domain-specific language controlled methods deterministic compilation staged validation dimensional analysis methods paper domain-specific language controlled methods deterministic compilation staged validation"
     },
     {
       "id": "software:docxology:template",
@@ -31383,7 +31427,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 179 works.",
+      "title": "The curated bibliography contains 181 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31391,12 +31435,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 179 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 181 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 162 per-paper documentation folders.",
+      "title": "The repository contains 164 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -31404,7 +31448,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 162 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 164 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -31580,7 +31624,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 179 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 181 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

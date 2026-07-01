@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-30T23:59:21Z",
+  "generated_at": "2026-07-01T00:30:30Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 179,
+  "count": 181,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4020,6 +4020,48 @@
       ],
       "methods": [],
       "source": "papers/2026_SortitionUpstreamNTQR/README.md"
+    },
+    "Friedman2026ExploratoryDataAnalysisReproducible181": {
+      "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+      "abstract": "Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never tested and quietly drift from the prose describing them. This paper presents the computational-notebook exemplar of the Research Project Template (https://github.com/docxology/template): an interactive walkthrough notebook (projects/templates/template eda notebook/notebooks/eda walkthrough.ipynb) that imports a small, fully-tested EDA library rather than carrying logic in its cells. We ship a deterministic dataset (data/measurements.csv) with a designed correlation structure and a handful of missing values, then load, clean, summarize, correlate, and visualize it entirely through tested functions in src/eda/. The library is side-effect-free — no plotting and no file I/O — and standalone (numpy a",
+      "keywords": [
+        "exploratory data analysis",
+        "computational notebook",
+        "reproducible research",
+        "pandas",
+        "data cleaning",
+        "correlation analysis"
+      ],
+      "findings": [
+        "exploratory data analysis",
+        "computational notebook",
+        "reproducible research",
+        "pandas",
+        "data cleaning"
+      ],
+      "methods": [],
+      "source": "papers/2026_ExploratoryDataAnalysis/README.md"
+    },
+    "Friedman2026DomainLanguageSpecifyingControlled182": {
+      "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+      "abstract": "This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this manuscript's subject is the methodology itself: a controlled vocabulary, a unit system with dimensional safety, four staged validation gates, and a deterministic compiler, implemented in projects/templates/template methods paper/src/methods dsl/ and described section by section in . The domain language's vocabulary is informed by BPL (Biology Programming Language, ), an upstream reference that encodes laboratory protocols as programs with biology-native types, staged validation, and deterministic compilation; this exemplar generalizes BPL's intent vocabulary and pipeline shape from wet-lab protocols to any controlled procedure. A Method is a name, a set of typed parameters",
+      "keywords": [
+        "methods paper",
+        "domain-specific language",
+        "controlled methods",
+        "deterministic compilation",
+        "staged validation",
+        "dimensional analysis"
+      ],
+      "findings": [
+        "methods paper",
+        "domain-specific language",
+        "controlled methods",
+        "deterministic compilation",
+        "staged validation"
+      ],
+      "methods": [],
+      "source": "papers/2026_DomainLanguageSpecifying/README.md"
     }
   }
 }
