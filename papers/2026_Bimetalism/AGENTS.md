@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics.
 - Maps contributions to Art & Synergetics literature
 

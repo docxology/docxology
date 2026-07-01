@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
-- Identifies findings: BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship., The framework models organizations as biological-inspired adaptive systems, using active i...
+- Extracts methods: Content production, Pedagogical design
+- Identifies findings: Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

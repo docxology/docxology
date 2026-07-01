@@ -18,17 +18,15 @@ This work addresses topics in **Genetics & Biomedical**: Paleolithic art, cave p
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
 Core contributions and results:
 
-- An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.
-- The work examines cave paintings and rock art as evidence of early human cognitiv...
+- An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..
+- The work examines cave paintings and rock art as evidence of early human cognitiv....
 
 ## Related Works
 

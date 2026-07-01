@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science., It argues that realized epist...
 - Maps contributions to Cognitive Security literature
 

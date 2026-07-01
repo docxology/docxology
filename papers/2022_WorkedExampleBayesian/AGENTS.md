@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 
 - Maps contributions to Active Inference literature
 

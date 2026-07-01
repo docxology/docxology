@@ -27,25 +27,17 @@
   ],
   "methods": [
     {
-      "name": "Narrative analysis and discourse mapping",
-      "description": "Applied narrative analysis and discourse mapping methodology"
-    },
-    {
-      "name": "Misinformation detection frameworks",
-      "description": "Applied misinformation detection frameworks methodology"
+      "name": "Narrative analysis",
+      "description": "Applied narrative analysis approach"
     },
     {
       "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling methodology"
-    },
-    {
-      "name": "Cognitive defense pattern analysis",
-      "description": "Applied cognitive defense pattern analysis methodology"
+      "description": "Applied trust and integrity modeling approach"
     }
   ],
   "key_findings": [
-    "An edited volume examining open standards and cognitive security for structuring the information commons.",
-    "The book addresses how information ecosystems can be designed to promote trust, transparency..."
+    "An edited volume examining open standards and cognitive security for structuring the information commons..",
+    "The book addresses how information ecosystems can be designed to promote trust, transparency...."
   ],
   "related_papers": [
     "2020_EmergentTeams",

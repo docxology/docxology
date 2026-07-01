@@ -16,15 +16,12 @@
 
 ## Methods
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 
-- This work explores the intersection of mathematics, art, and William Blake's prophetic vision.
-- Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte...
+- Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC  Shanna Dobson, Daniel Friedman "William Blake, Kierkegaard, Gothic" https://www.youtube.com/live/yIS0OW2o18s.
 
 ## Artifacts
 

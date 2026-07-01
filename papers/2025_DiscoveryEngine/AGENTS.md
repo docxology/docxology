@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
-- Identifies findings: The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles., The system models the scientific discovery process as an inference problem...
+- Extracts methods: Active Inference, Software pipeline design
+- Identifies findings: The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.., The system models the scientific discovery process as an inference problem....
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

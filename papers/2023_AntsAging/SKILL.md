@@ -18,10 +18,8 @@ This work addresses topics in **Presentations & Media**: ants, aging, senescence
 
 Primary methods and techniques applied in this work:
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 

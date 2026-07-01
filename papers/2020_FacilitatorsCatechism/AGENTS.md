@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: OPORD analysis and catechism-style process design, Organizational sensemaking and high-reliability frameworks
 - Identifies findings: Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and 
 - Maps contributions to Cognitive Security literature
 

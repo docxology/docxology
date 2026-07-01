@@ -19,16 +19,14 @@ This work addresses topics in **Active Inference**: federated inference, belief 
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence.
-- By extending Active Inference to multi-agent settings, agents maintain local generati...
+- formulates federated inference and belief sharing as a principled approach to distributed intelligence..
+- By extending Active Inference to multi-agent settings, agents maintain local generati....
 
 ## Related Works
 

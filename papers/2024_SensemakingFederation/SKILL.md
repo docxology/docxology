@@ -18,17 +18,16 @@ This work addresses topics in **Presentations & Media**: sensemaking federation,
 
 Primary methods and techniques applied in this work:
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 
 Core contributions and results:
 
-- Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius.
-- The panel discusses decentralized sensemaking infrastructure, knowl...
+- This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space ..
+- The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting..
+- This version of the transcript has been lightly edited for readability..
 
 ## Related Works
 

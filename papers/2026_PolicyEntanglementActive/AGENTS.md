@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: <p>Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning hori, Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible
 - Maps contributions to Computational literature
 

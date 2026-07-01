@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
-- Identifies findings: A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition., The study in comprehensivity explores structural parallels between Blake's...
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
+- Identifies findings: William Blake's prophetic works contain formal structures that prefigure modern systems thinking, Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

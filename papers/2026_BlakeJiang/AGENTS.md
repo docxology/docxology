@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance.
 - Maps contributions to Art & Synergetics literature
 

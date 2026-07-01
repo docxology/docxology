@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking., We address the need for synthesis among knowledge management, information management...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio, While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas.., In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking..
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

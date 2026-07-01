@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with, Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed.
 - Maps contributions to Computational literature
 

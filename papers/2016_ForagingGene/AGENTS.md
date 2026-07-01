@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Previous work has found that workers of similar genotype adopt different behavioural phenotypes., Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: Previous work has found that workers of similar genotype adopt different behavioural phenotypes.., Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

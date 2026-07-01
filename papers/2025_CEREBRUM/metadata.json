@@ -47,20 +47,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "name": "Case-enabled reasoning over Bayesian models",
+      "description": "Applied case-enabled reasoning over bayesian models approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Active inference with case-based priors",
+      "description": "Applied active inference with case-based priors approach"
     }
   ],
   "key_findings": [

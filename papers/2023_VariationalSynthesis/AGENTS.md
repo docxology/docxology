@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc
 - Maps contributions to Active Inference literature
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology., We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes.., A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing.., In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages..
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 

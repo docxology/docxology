@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top
 - Maps contributions to Active Inference literature
 

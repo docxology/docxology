@@ -19,10 +19,8 @@ This work addresses topics in **Active Inference**: CEREBRUM.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Case-enabled reasoning over Bayesian models
+- Active inference with case-based priors
 
 ## Key Findings
 

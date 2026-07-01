@@ -53,20 +53,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual analysis and iconographic interpretation",
-      "description": "Applied visual analysis and iconographic interpretation methodology"
-    },
-    {
-      "name": "Historical and conceptual synthesis",
-      "description": "Applied historical and conceptual synthesis methodology"
+      "name": "Visual and symbolic analysis",
+      "description": "Applied visual and symbolic analysis approach"
     },
     {
       "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping methodology"
-    },
-    {
-      "name": "Symbolic and metaphorical analysis",
-      "description": "Applied symbolic and metaphorical analysis methodology"
+      "description": "Applied cross-domain pattern mapping approach"
     }
   ],
   "key_findings": [

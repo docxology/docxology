@@ -17,14 +17,12 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence.
-- By extending Active Inference to multi-agent settings, agents maintain local generati...
+- formulates federated inference and belief sharing as a principled approach to distributed intelligence..
+- By extending Active Inference to multi-agent settings, agents maintain local generati....
 
 ## Artifacts
 

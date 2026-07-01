@@ -18,10 +18,8 @@ This work addresses topics in **Art & Synergetics**: William Blake, Bimetallism,
 
 Primary methods and techniques applied in this work:
 
-- Visual analysis and iconographic interpretation
-- Historical and conceptual synthesis
+- Visual and symbolic analysis
 - Cross-domain pattern mapping
-- Symbolic and metaphorical analysis
 
 ## Key Findings
 

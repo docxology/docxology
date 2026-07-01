@@ -18,13 +18,11 @@
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
-- Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers.
-- Here we examine the relationship between the...
+- Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers..
+- Here we examine the relationship between the....
 
 ## Artifacts
 

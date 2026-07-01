@@ -31,24 +31,16 @@
   "methods": [
     {
       "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "description": "Applied free energy minimization approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Bayesian modeling and inference",
+      "description": "Applied bayesian modeling and inference approach"
     }
   ],
   "key_findings": [
-    "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states.",
-    "The framework models thoughts as self-organizing agents (thoughtseeds) that compete..."
+    "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..",
+    "The framework models thoughts as self-organizing agents (thoughtseeds) that compete...."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence., By extending Active Inference to multi-agent settings, agents maintain local generati...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: formulates federated inference and belief sharing as a principled approach to distributed intelligence.., By extending Active Inference to multi-agent settings, agents maintain local generati....
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

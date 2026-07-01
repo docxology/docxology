@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus., The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design.
 - Maps contributions to Cognitive Security literature
 

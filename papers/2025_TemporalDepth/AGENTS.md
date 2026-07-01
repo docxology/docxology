@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization., Using Active Inference, we formalize how subjective temporal experience i...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization.., Using Active Inference, we formalize how subjective temporal experience i....
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

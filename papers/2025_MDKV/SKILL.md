@@ -18,17 +18,16 @@ This work addresses topics in **Computational**: MDKV, Markdown, key-value forma
 
 Primary methods and techniques applied in this work:
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents.
-- Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be...
+- Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel..
+- Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences..
+- This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file..
 
 ## Related Works
 

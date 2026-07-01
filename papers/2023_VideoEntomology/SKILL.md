@@ -20,15 +20,13 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- We examine the transformative impact of video technology on experimental entomology.
-- Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...
+- We examine the transformative impact of video technology on experimental entomology..
+- Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies....
 
 ## Related Works
 

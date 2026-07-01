@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) (
 - Maps contributions to Active Inference literature
 

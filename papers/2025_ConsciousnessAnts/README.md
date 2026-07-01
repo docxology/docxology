@@ -16,8 +16,6 @@
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 

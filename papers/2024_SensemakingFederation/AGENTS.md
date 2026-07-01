@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
-- Identifies findings: Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius., The panel discusses decentralized sensemaking infrastructure, knowl...
+- Extracts methods: Content production, Pedagogical design
+- Identifies findings: This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space .., The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting.., This version of the transcript has been lightly edited for readability..
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

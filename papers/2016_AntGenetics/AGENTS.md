@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states., Genetic approaches are beginning...
 - Maps contributions to Entomology literature
 

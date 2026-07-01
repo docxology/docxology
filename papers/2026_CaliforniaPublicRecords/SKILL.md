@@ -18,16 +18,17 @@ This work addresses topics in **Cognitive Security**: californiapublicrecords.
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
-- Trust and integrity modeling
-- Cognitive defense pattern analysis
+- California Public Records Act (CPRA) legal analysis
+- Open-data portal integration (CKAN/Socrata/ArcGIS)
+- Government transparency framework evaluation
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records
+- CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure
+- Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology
 
 ## Related Works
 

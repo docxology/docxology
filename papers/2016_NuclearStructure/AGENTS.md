@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability., Chromosome conformation capture (3C) tec...
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Identifies findings: Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.., Chromosome conformation capture (3C) tec....
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse., Analysis of We prov...
 - Maps contributions to Cognitive Security literature
 

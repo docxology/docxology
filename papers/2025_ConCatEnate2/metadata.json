@@ -41,24 +41,17 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Genomic sequencing and bioinformatics",
-      "description": "Applied genomic sequencing and bioinformatics methodology"
+      "name": "Genomic and bioinformatic analysis",
+      "description": "Applied genomic and bioinformatic analysis approach"
     },
     {
-      "name": "Phylogenetic and evolutionary analysis",
-      "description": "Applied phylogenetic and evolutionary analysis methodology"
-    },
-    {
-      "name": "Statistical genetics and heritability estimation",
-      "description": "Applied statistical genetics and heritability estimation methodology"
-    },
-    {
-      "name": "Molecular mechanism investigation",
-      "description": "Applied molecular mechanism investigation methodology"
+      "name": "Statistical genetics",
+      "description": "Applied statistical genetics approach"
     }
   ],
   "key_findings": [
-    "See full paper for detailed findings and analysis"
+    "Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction",
+    "Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience"
   ],
   "related_papers": [
     "2015_CryptoJews",

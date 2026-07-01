@@ -16,15 +16,13 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
+- Active inference agent-based simulation
+- Markov decision process modeling of foraging
 
 ## Key Findings
 
-- In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments.
-- Active inference is a multiscale approach to behavi...
+- In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments..
+- Active inference is a multiscale approach to behavi....
 
 ## Artifacts
 

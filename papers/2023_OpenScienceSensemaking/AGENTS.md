@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute., We contend that open access to diverse sources of scientific sensem...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute.., We contend that open access to diverse sources of scientific sensem....
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

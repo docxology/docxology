@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: This paper describes a small, tested domain language for specifying
 controlled methods — the methods-paper exemplar of the
 Research Project Template (https://github.com/docxology/template)., Unlike a

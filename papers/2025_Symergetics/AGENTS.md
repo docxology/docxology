@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics., Analysis of The package implemen...
 - Maps contributions to Art & Synergetics literature
 

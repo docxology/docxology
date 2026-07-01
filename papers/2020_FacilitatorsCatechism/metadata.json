@@ -53,20 +53,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis and discourse mapping",
-      "description": "Applied narrative analysis and discourse mapping methodology"
+      "name": "OPORD analysis and catechism-style process design",
+      "description": "Applied opord analysis and catechism-style process design approach"
     },
     {
-      "name": "Misinformation detection frameworks",
-      "description": "Applied misinformation detection frameworks methodology"
-    },
-    {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling methodology"
-    },
-    {
-      "name": "Cognitive defense pattern analysis",
-      "description": "Applied cognitive defense pattern analysis methodology"
+      "name": "Organizational sensemaking and high-reliability frameworks",
+      "description": "Applied organizational sensemaking and high-reliability frameworks approach"
     }
   ],
   "key_findings": [

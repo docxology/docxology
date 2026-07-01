@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts, Slide-based presentation format effectively communicates active inference concepts to diverse audiences
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

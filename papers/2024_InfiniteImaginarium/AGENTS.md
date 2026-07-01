@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration., Analysis of The work...
 - Maps contributions to Art & Synergetics literature
 

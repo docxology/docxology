@@ -28,20 +28,16 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "name": "Active inference modeling of consciousness",
+      "description": "Applied active inference modeling of consciousness approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
+      "name": "Bayesian mechanics of self-organizing systems",
+      "description": "Applied bayesian mechanics of self-organizing systems approach"
     },
     {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Philosophical analysis of Markov blanket formalism",
+      "description": "Applied philosophical analysis of markov blanket formalism approach"
     }
   ],
   "key_findings": [

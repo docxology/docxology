@@ -18,10 +18,8 @@ This work addresses topics in **Genetics & Biomedical**: Ehrlichia, Anaplasma, l
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 

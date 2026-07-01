@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
-- Identifies findings: This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope., The framework includes updatable profi...
+- Extracts methods: Software pipeline design, Data-driven analysis
+- Identifies findings: This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems.., The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations.., The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework..
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

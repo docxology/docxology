@@ -24,25 +24,17 @@
   ],
   "methods": [
     {
-      "name": "Genomic sequencing and bioinformatics",
-      "description": "Applied genomic sequencing and bioinformatics methodology"
+      "name": "Genomic and bioinformatic analysis",
+      "description": "Applied genomic and bioinformatic analysis approach"
     },
     {
-      "name": "Phylogenetic and evolutionary analysis",
-      "description": "Applied phylogenetic and evolutionary analysis methodology"
-    },
-    {
-      "name": "Statistical genetics and heritability estimation",
-      "description": "Applied statistical genetics and heritability estimation methodology"
-    },
-    {
-      "name": "Molecular mechanism investigation",
-      "description": "Applied molecular mechanism investigation methodology"
+      "name": "Statistical genetics",
+      "description": "Applied statistical genetics approach"
     }
   ],
   "key_findings": [
-    "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.",
-    "Chromosome conformation capture (3C) tec..."
+    "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..",
+    "Chromosome conformation capture (3C) tec...."
   ],
   "related_papers": [
     "2015_CryptoJews",

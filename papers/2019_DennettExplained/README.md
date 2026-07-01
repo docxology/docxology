@@ -16,15 +16,13 @@
 
 ## Methods
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
-- In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens.
-- Analysis of Dennett argues that philos...
+- In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..
+- Dennett argues that philos....
 
 ## Artifacts
 

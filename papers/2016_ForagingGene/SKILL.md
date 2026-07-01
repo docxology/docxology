@@ -20,15 +20,13 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- Previous work has found that workers of similar genotype adopt different behavioural phenotypes.
-- Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...
+- Previous work has found that workers of similar genotype adopt different behavioural phenotypes..
+- Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati....
 
 ## Related Works
 

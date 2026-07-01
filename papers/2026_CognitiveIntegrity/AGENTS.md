@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems., Analysis of Part 1 of 3 covers theore...
 - Maps contributions to Cognitive Security literature
 

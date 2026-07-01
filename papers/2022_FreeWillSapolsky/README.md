@@ -16,15 +16,14 @@
 
 ## Methods
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
-- In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will.
-- Topics covered include neuroscience, genetics, environmental...
+- In this interview, Robert Sapolsky outlines his view on Free Will and related topics..
+- The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will..
+- Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system..
 
 ## Artifacts
 

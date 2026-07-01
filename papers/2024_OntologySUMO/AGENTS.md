@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Community coordination and governance, Open science infrastructure development, Educational program design
-- Identifies findings: We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities., For a subset of Active Inference terms, we identify published SUMO files likely to cont...
+- Extracts methods: Suggested Upper Merged Ontology (SUMO) formalization, Cross-domain ontology alignment
+- Identifies findings: SUMO formalization enables principled cross-domain reasoning for AI systems, Upper ontology alignment bridges cognitive science and artificial intelligence through shared category structures
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR

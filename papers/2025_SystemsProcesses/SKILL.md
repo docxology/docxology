@@ -18,17 +18,15 @@ This work addresses topics in **Presentations & Media**: systems processes, Acti
 
 Primary methods and techniques applied in this work:
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 
 Core contributions and results:
 
-- This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks.
-- The work discusses how systems science concepts connect to and...
+- Slides for a session at "Enduring Patterns, Emerging Futures: Celebrating Dr..
+- Len Troncale", an online event in September 2025 https://troncale.sched.com/ ..
 
 ## Related Works
 

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: <p>DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine., A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model.
 - Maps contributions to Computational literature
 

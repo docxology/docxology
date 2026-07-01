@@ -47,20 +47,12 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Multimedia content production",
-      "description": "Applied multimedia content production methodology"
+      "name": "Content production",
+      "description": "Applied content production approach"
     },
     {
-      "name": "Pedagogical framework design",
-      "description": "Applied pedagogical framework design methodology"
-    },
-    {
-      "name": "Public communication of science",
-      "description": "Applied public communication of science methodology"
-    },
-    {
-      "name": "Cross-platform media distribution",
-      "description": "Applied cross-platform media distribution methodology"
+      "name": "Pedagogical design",
+      "description": "Applied pedagogical design approach"
     }
   ],
   "key_findings": [

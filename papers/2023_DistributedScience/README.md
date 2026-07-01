@@ -17,14 +17,12 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics.
-- We formalize the scientific process as multi-scale Active Inference, where individual rese...
+- The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics..
+- We formalize the scientific process as multi-scale Active Inference, where individual rese....
 
 ## Artifacts
 

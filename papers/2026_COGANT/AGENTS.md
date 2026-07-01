@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Deterministic codebase-to-GNN translation, Software architecture pattern extraction
 - Identifies findings: COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Nota, It is an evidence compiler: it propagates reviewable program facts through a finite fixpoint rule pipeline and emits graph, matrix, provenance, visualization, and round-trip artifacts with confidence 
 - Maps contributions to Computational literature
 

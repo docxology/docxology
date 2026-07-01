@@ -18,17 +18,16 @@ This work addresses topics in **Cognitive Security**: Narrative Information Mana
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking.
-- We address the need for synthesis among knowledge management, information management...
+- There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio
+- While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas..
+- In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking..
 
 ## Related Works
 

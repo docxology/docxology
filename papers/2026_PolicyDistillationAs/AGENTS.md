@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: <p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them., In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL dist
 - Maps contributions to Active Inference literature
 

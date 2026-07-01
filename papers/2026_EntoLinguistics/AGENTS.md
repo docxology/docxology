@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology.
 - Maps contributions to Entomology literature
 

@@ -18,17 +18,15 @@ This work addresses topics in **Genetics & Biomedical**: consciousness, philosop
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
 Core contributions and results:
 
-- In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens.
-- Analysis of Dennett argues that philos...
+- In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..
+- Dennett argues that philos....
 
 ## Related Works
 

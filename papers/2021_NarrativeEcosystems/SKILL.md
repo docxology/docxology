@@ -18,17 +18,15 @@ This work addresses topics in **Cognitive Security**: narrative ecosystems, Acti
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.
-- We explore communication in located teams and all-...
+- Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems..
+- We explore communication in located teams and all-....
 
 ## Related Works
 

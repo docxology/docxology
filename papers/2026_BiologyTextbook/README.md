@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Generative textbook scaffold methodology
+- Modular pedagogical content design
 
 ## Key Findings
 

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Community coordination and governance, Open science infrastructure development, Educational program design
+- Extracts methods: Program coordination, Community governance design
 - Identifies findings: Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement., Analysis of Covers the institu...
 - Maps contributions to AII Ecosystem literature
 

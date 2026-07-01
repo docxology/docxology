@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in ., The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps.
 - Maps contributions to Computational literature
 

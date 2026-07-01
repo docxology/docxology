@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL).
 - Maps contributions to Computational literature
 

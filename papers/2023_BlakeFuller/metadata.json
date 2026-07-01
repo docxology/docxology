@@ -51,25 +51,17 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual analysis and iconographic interpretation",
-      "description": "Applied visual analysis and iconographic interpretation methodology"
-    },
-    {
-      "name": "Historical and conceptual synthesis",
-      "description": "Applied historical and conceptual synthesis methodology"
+      "name": "Visual and symbolic analysis",
+      "description": "Applied visual and symbolic analysis approach"
     },
     {
       "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping methodology"
-    },
-    {
-      "name": "Symbolic and metaphorical analysis",
-      "description": "Applied symbolic and metaphorical analysis methodology"
+      "description": "Applied cross-domain pattern mapping approach"
     }
   ],
   "key_findings": [
-    "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition.",
-    "The study in comprehensivity explores structural parallels between Blake's..."
+    "William Blake's prophetic works contain formal structures that prefigure modern systems thinking",
+    "Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought"
   ],
   "related_papers": [
     "2018_PPPiP",

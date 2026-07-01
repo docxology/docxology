@@ -18,17 +18,15 @@ This work addresses topics in **Genetics & Biomedical**: Hi-C, chromosome confor
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
 Core contributions and results:
 
-- Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.
-- Chromosome conformation capture (3C) tec...
+- Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..
+- Chromosome conformation capture (3C) tec....
 
 ## Related Works
 

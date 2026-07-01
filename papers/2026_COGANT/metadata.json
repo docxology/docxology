@@ -63,20 +63,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Deterministic codebase-to-GNN translation",
+      "description": "Applied deterministic codebase-to-gnn translation approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
-    },
-    {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Software architecture pattern extraction",
+      "description": "Applied software architecture pattern extraction approach"
     }
   ],
   "key_findings": [

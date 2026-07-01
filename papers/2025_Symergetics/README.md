@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Visual analysis and iconographic interpretation
-- Historical and conceptual synthesis
+- Visual and symbolic analysis
 - Cross-domain pattern mapping
-- Symbolic and metaphorical analysis
 
 ## Key Findings
 

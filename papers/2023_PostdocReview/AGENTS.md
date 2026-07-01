@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
+- Extracts methods: Content production, Pedagogical design
 - Identifies findings: A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci
 - Maps contributions to Presentations & Media literature
 

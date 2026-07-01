@@ -45,24 +45,17 @@
   "methods": [
     {
       "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "description": "Applied free energy minimization approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Bayesian modeling and inference",
+      "description": "Applied bayesian modeling and inference approach"
     }
   ],
   "key_findings": [
-    "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena.",
-    "This paper argues that developing generative models is more li..."
+    "This report provides a single-page account of Active Inference modeling..",
+    "This report was written entirely by hand without any synthetic computational-linguistic intelligences..",
+    "Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from.."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",

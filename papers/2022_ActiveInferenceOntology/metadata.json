@@ -115,20 +115,12 @@
   "type": "Paper",
   "methods": [
     {
+      "name": "Active Inference",
+      "description": "Applied active inference approach"
+    },
+    {
       "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
-    },
-    {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "description": "Applied free energy minimization approach"
     }
   ],
   "key_findings": [

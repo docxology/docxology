@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Case-enabled reasoning over Bayesian models, Active inference with case-based priors
 - Identifies findings: <div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM)., CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion.
 - Maps contributions to Active Inference literature
 

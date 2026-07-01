@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management
 - Maps contributions to Active Inference literature
 

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J., Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context.
 - Maps contributions to Active Inference literature
 

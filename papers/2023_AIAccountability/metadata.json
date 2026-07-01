@@ -54,25 +54,17 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis and discourse mapping",
-      "description": "Applied narrative analysis and discourse mapping methodology"
-    },
-    {
-      "name": "Misinformation detection frameworks",
-      "description": "Applied misinformation detection frameworks methodology"
+      "name": "Narrative analysis",
+      "description": "Applied narrative analysis approach"
     },
     {
       "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling methodology"
-    },
-    {
-      "name": "Cognitive defense pattern analysis",
-      "description": "Applied cognitive defense pattern analysis methodology"
+      "description": "Applied trust and integrity modeling approach"
     }
   ],
   "key_findings": [
-    "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No.",
-    "NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int..."
+    "Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)  to the National Telecommunications and Information Administrat",
+    "NTIA-2023-0005-0001.."
   ],
   "related_papers": [
     "2020_EmergentTeams",

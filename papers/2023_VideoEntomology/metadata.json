@@ -26,24 +26,16 @@
   "methods": [
     {
       "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays methodology"
+      "description": "Applied field observation and behavioral assays approach"
     },
     {
       "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis methodology"
-    },
-    {
-      "name": "Transcriptomic and gene expression profiling",
-      "description": "Applied transcriptomic and gene expression profiling methodology"
-    },
-    {
-      "name": "Collective behavior modeling",
-      "description": "Applied collective behavior modeling methodology"
+      "description": "Applied population genetics analysis approach"
     }
   ],
   "key_findings": [
-    "We examine the transformative impact of video technology on experimental entomology.",
-    "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies..."
+    "We examine the transformative impact of video technology on experimental entomology..",
+    "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...."
   ],
   "related_papers": [
     "2016_AntGenetics",

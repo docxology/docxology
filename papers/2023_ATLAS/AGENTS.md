@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities.
 - Maps contributions to Cognitive Security literature
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects., Here we characterize transcriptomic profiles of foragers compar...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects.., Here we characterize transcriptomic profiles of foragers compar....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

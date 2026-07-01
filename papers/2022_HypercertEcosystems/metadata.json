@@ -47,25 +47,18 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis and discourse mapping",
-      "description": "Applied narrative analysis and discourse mapping methodology"
-    },
-    {
-      "name": "Misinformation detection frameworks",
-      "description": "Applied misinformation detection frameworks methodology"
+      "name": "Narrative analysis",
+      "description": "Applied narrative analysis approach"
     },
     {
       "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling methodology"
-    },
-    {
-      "name": "Cognitive defense pattern analysis",
-      "description": "Applied cognitive defense pattern analysis methodology"
+      "description": "Applied trust and integrity modeling approach"
     }
   ],
   "key_findings": [
-    "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci).",
-    "Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze..."
+    "This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project)..",
+    "The grant was submitted in October 2022 and was not funded..",
+    "Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/."
   ],
   "related_papers": [
     "2020_EmergentTeams",

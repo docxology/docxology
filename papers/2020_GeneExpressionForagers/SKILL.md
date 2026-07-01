@@ -20,15 +20,13 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects.
-- Here we characterize transcriptomic profiles of foragers compar...
+- Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects..
+- Here we characterize transcriptomic profiles of foragers compar....
 
 ## Related Works
 

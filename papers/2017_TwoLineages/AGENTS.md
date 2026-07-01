@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior., In dependent-lineage species, queens must mate with males...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior.., In dependent-lineage species, queens must mate with males....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

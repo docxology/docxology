@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci)., Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project).., The grant was submitted in October 2022 and was not funded.., Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

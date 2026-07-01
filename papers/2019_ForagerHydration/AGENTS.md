@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected., Here we present field experiments showing t...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected.., Here we present field experiments showing t....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

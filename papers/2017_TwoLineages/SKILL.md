@@ -20,15 +20,13 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior.
-- In dependent-lineage species, queens must mate with males...
+- Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior..
+- In dependent-lineage species, queens must mate with males....
 
 ## Related Works
 

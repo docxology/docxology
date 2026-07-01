@@ -47,25 +47,16 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Multimedia content production",
-      "description": "Applied multimedia content production methodology"
+      "name": "Content production",
+      "description": "Applied content production approach"
     },
     {
-      "name": "Pedagogical framework design",
-      "description": "Applied pedagogical framework design methodology"
-    },
-    {
-      "name": "Public communication of science",
-      "description": "Applied public communication of science methodology"
-    },
-    {
-      "name": "Cross-platform media distribution",
-      "description": "Applied cross-platform media distribution methodology"
+      "name": "Pedagogical design",
+      "description": "Applied pedagogical design approach"
     }
   ],
   "key_findings": [
-    "This work explores the intersection of mathematics, art, and William Blake's prophetic vision.",
-    "Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte..."
+    "Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC  Shanna Dobson, Daniel Friedman \"William Blake, Kierkegaard, Gothic\" https://www.youtube.com/live/yIS0OW2o18s."
   ],
   "related_papers": [
     "2018_MVEE",

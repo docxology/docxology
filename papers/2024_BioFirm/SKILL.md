@@ -18,17 +18,14 @@ This work addresses topics in **Presentations & Media**: BioFirm, bioregional st
 
 Primary methods and techniques applied in this work:
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 
 Core contributions and results:
 
-- BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship.
-- The framework models organizations as biological-inspired adaptive systems, using active i...
+- Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024.
 
 ## Related Works
 

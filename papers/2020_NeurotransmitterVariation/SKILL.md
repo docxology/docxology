@@ -20,15 +20,13 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions.
-- Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...
+- Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions..
+- Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a....
 
 ## Related Works
 

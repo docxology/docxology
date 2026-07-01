@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Active inference modeling of consciousness, Bayesian mechanics of self-organizing systems, Philosophical analysis of Markov blanket formalism
 - Identifies findings: In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit
 - Maps contributions to Active Inference literature
 

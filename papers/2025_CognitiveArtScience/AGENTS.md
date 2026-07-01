@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation., Analysis of Through Active Inference...
 - Maps contributions to Art & Synergetics literature
 

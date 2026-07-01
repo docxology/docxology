@@ -16,15 +16,14 @@
 
 ## Methods
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci).
-- Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...
+- This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project)..
+- The grant was submitted in October 2022 and was not funded..
+- Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/.
 
 ## Artifacts
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T20:51:32Z",
+  "generated_at": "2026-07-01T21:11:40Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 181,
   "works": {
@@ -17,10 +17,8 @@
         "Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL)."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_ReproducibleResearch/README.md"
     },
@@ -46,14 +44,13 @@
         "prophetic vision"
       ],
       "findings": [
-        "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology.",
-        "The paper identifies six structural convergences between Blake's prophetic..."
+        "When Boston's Angel in William Blake's America: a Prophecy (1793) declares \"No more I follow, no more obedience pay!\" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists—writing a cont",
+        "Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the \"five gates of their law-built Heaven\" performs Dewey's collapse of the sp",
+        "The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference—the process theory of the Free Energy Principle—in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2026_BeforePragmatism/README.md"
     },
@@ -76,10 +73,8 @@
         "A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2026_Bimetalism/README.md"
     },
@@ -100,10 +95,8 @@
         "Analysis of Part 1 of 3 covers theore..."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2026_CognitiveIntegrity/README.md"
     },
@@ -133,10 +126,8 @@
         "The paper develops a 'Thematic Atl..."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2026_DoorsOfPerception/README.md"
     },
@@ -153,10 +144,8 @@
         "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc"
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2025_5thSymposium/README.md"
     },
@@ -176,10 +165,8 @@
         "The paper examines how AI systems ca..."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2025_AuBI/README.md"
     },
@@ -194,10 +181,8 @@
         "CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion."
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Case-enabled reasoning over Bayesian models",
+        "Active inference with case-based priors"
       ],
       "source": "papers/2025_CEREBRUM/README.md"
     },
@@ -213,14 +198,13 @@
         "non-equilibrium thermodynamics"
       ],
       "findings": [
-        "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization.",
-        "We connect concepts from information theory, complex adaptive systems, and..."
+        "We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence..",
+        "Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at 100 Hz control frequencies..",
+        "Energy efficiency has emerged as a critical constraint in embodied AI systems, yet traditional complexity analysis fails to capture the nuanced energy-performance trade-offs inherent in real-world implementations.."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2025_AntStackComplexity/README.md"
     },
@@ -241,9 +225,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2025_EvoJump/README.md"
     },
@@ -266,9 +248,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2025_AccessibilityActiveInference/README.md"
     },
@@ -285,14 +265,13 @@
         "round-trip transformation"
       ],
       "findings": [
-        "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents.",
-        "Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be..."
+        "Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel..",
+        "Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes – each with distinct lifecycles and audiences..",
+        "This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document’s canonical content and auxiliary tracks into a single, portable .mdkv file.."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2025_MDKV/README.md"
     },
@@ -313,10 +292,8 @@
         "Analysis of Dr..."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2025_MarkdownDecisionProcess/README.md"
     },
@@ -335,10 +312,8 @@
         "Analysis of Through Active Inference..."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2025_CognitiveArtScience/README.md"
     },
@@ -356,10 +331,8 @@
         "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2025_OnTime/README.md"
     },
@@ -377,14 +350,12 @@
         "computational geometry"
       ],
       "findings": [
-        "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework.",
-        "The paper introduces a 4D namespace fr..."
+        "Higher-dimensional geometry provides novel mathematical foundations for cognitive modeling and representation",
+        "4D visualization techniques significantly improve interpretability of abstract cognitive state representations"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "4D mathematical analysis and visualization",
+        "Analytical geometry and topological methods"
       ],
       "source": "papers/2025_QuadMath/README.md"
     },
@@ -400,14 +371,13 @@
         "knowledge sharing"
       ],
       "findings": [
-        "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration.",
-        "Knowledge develops across disciplines and methods through shared..."
+        "ResNei — Research Neighbourhood – is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas..",
+        "At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge..",
+        "This graph is structured as a set of Conceptual Nexus Models (CNMs)—modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration.."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2025_ResNei/README.md"
     },
@@ -429,10 +399,8 @@
         "Analysis of The package implemen..."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2025_Symergetics/README.md"
     },
@@ -455,10 +423,8 @@
         "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2025_AgentAndNiche/README.md"
     },
@@ -474,14 +440,12 @@
         "anticipatory systems"
       ],
       "findings": [
-        "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks.",
-        "The work discusses how systems science concepts connect to and..."
+        "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr..",
+        "Len Troncale\", an online event in September 2025 https://troncale.sched.com/ .."
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2025_SystemsProcesses/README.md"
     },
@@ -498,14 +462,12 @@
         "clinical psychology"
       ],
       "findings": [
-        "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization.",
-        "Using Active Inference, we formalize how subjective temporal experience i..."
+        "develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..",
+        "Using Active Inference, we formalize how subjective temporal experience i...."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2025_TemporalDepth/README.md"
     },
@@ -524,10 +486,8 @@
         "Analysis of Covers the institu..."
       ],
       "methods": [
-        "Community coordination and governance",
-        "Open science infrastructure development",
-        "Educational program design",
-        "Inter-organizational collaboration"
+        "Program coordination",
+        "Community governance design"
       ],
       "source": "papers/2025_AII_v3/README.md"
     },
@@ -547,9 +507,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2025_AntStack/README.md"
     },
@@ -565,14 +523,12 @@
         "computational science"
       ],
       "findings": [
-        "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.",
-        "The system models the scientific discovery process as an inference problem..."
+        "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles..",
+        "The system models the scientific discovery process as an inference problem...."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Active Inference",
+        "Software pipeline design"
       ],
       "source": "papers/2025_DiscoveryEngine/README.md"
     },
@@ -590,14 +546,12 @@
         "mindfulness"
       ],
       "findings": [
-        "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states.",
-        "The framework models thoughts as self-organizing agents (thoughtseeds) that compete..."
+        "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..",
+        "The framework models thoughts as self-organizing agents (thoughtseeds) that compete...."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2025_Thoughtseeds/README.md"
     },
@@ -618,9 +572,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2025_ConsciousnessAnts/README.md"
     },
@@ -636,14 +588,12 @@
         "semantic mapping"
       ],
       "findings": [
-        "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities.",
-        "For a subset of Active Inference terms, we identify published SUMO files likely to cont..."
+        "SUMO formalization enables principled cross-domain reasoning for AI systems",
+        "Upper ontology alignment bridges cognitive science and artificial intelligence through shared category structures"
       ],
       "methods": [
-        "Community coordination and governance",
-        "Open science infrastructure development",
-        "Educational program design",
-        "Inter-organizational collaboration"
+        "Suggested Upper Merged Ontology (SUMO) formalization",
+        "Cross-domain ontology alignment"
       ],
       "source": "papers/2024_OntologySUMO/README.md"
     },
@@ -659,14 +609,11 @@
         "adaptive management"
       ],
       "findings": [
-        "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship.",
-        "The framework models organizations as biological-inspired adaptive systems, using active i..."
+        "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024."
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2024_BioFirm/README.md"
     },
@@ -686,10 +633,8 @@
         "Analysis of We prov..."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2024_ImageMemeResearch/README.md"
     },
@@ -711,9 +656,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2024_BlattodeaDiversity/README.md"
     },
@@ -732,10 +675,8 @@
         "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2024_DigitalTwins/README.md"
     },
@@ -752,14 +693,12 @@
         "computational optimization"
       ],
       "findings": [
-        "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation.",
-        "Demonstrated with Ant Colony Optimization (ACO) on th..."
+        "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..",
+        "Demonstrated with Ant Colony Optimization (ACO) on th...."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2024_PopulationSearch/README.md"
     },
@@ -782,10 +721,8 @@
         "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2024_FarmWorks/README.md"
     },
@@ -803,14 +740,12 @@
         "privacy-preserving inference"
       ],
       "findings": [
-        "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence.",
-        "By extending Active Inference to multi-agent settings, agents maintain local generati..."
+        "formulates federated inference and belief sharing as a principled approach to distributed intelligence..",
+        "By extending Active Inference to multi-agent settings, agents maintain local generati...."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2024_FederatedInference/README.md"
     },
@@ -831,10 +766,8 @@
         "Analysis of The work uses Morse..."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2024_QuantumDreams/README.md"
     },
@@ -850,14 +783,11 @@
         "Active Inference"
       ],
       "findings": [
-        "This work explores the intersection of mathematics, art, and William Blake's prophetic vision.",
-        "Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte..."
+        "Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC Shanna Dobson, Daniel Friedman \"William Blake, Kierkegaard, Gothic\" https://www.youtube.com/live/yIS0OW2o18s."
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2024_MathArtBlake/README.md"
     },
@@ -872,14 +802,13 @@
         "decentralized infrastructure"
       ],
       "findings": [
-        "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius.",
-        "The panel discusses decentralized sensemaking infrastructure, knowl..."
+        "This transcript comes from an event “Sensemaking Federation: Exploring the Frontiers of Digital Innovation” on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space ..",
+        "The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting..",
+        "This version of the transcript has been lightly edited for readability.."
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2024_SensemakingFederation/README.md"
     },
@@ -896,14 +825,12 @@
         "predictive processing"
       ],
       "findings": [
-        "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.",
-        "Protentions are future-directed expectations that shape perception and action; here we formaliz..."
+        "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference..",
+        "Protentions are future-directed expectations that shape perception and action; here we formaliz...."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2024_SharedProtentions/README.md"
     },
@@ -920,10 +847,8 @@
         "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap"
       ],
       "methods": [
-        "Community coordination and governance",
-        "Open science infrastructure development",
-        "Educational program design",
-        "Inter-organizational collaboration"
+        "Program coordination",
+        "Community governance design"
       ],
       "source": "papers/2024_AII_v2/README.md"
     },
@@ -943,10 +868,8 @@
         "Analysis of The work..."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2024_InfiniteImaginarium/README.md"
     },
@@ -962,14 +885,12 @@
         "rock art"
       ],
       "findings": [
-        "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.",
-        "The work examines cave paintings and rock art as evidence of early human cognitiv..."
+        "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..",
+        "The work examines cave paintings and rock art as evidence of early human cognitiv...."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2024_PaleolithicRockstars/README.md"
     },
@@ -984,14 +905,12 @@
         "prompt-based exploration"
       ],
       "findings": [
-        "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation.",
-        "The system facilitates creative and interdisciplinary thinking by providing struct..."
+        "Curio card format combines artistic design with structured knowledge representation",
+        "Physical-to-digital workflow enables novel forms of scholarly communication and curation"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2024_CurioCards/README.md"
     },
@@ -1014,9 +933,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_GuidedTourMinds/README.md"
     },
@@ -1033,14 +950,12 @@
         "parsimony"
       ],
       "findings": [
-        "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones.",
-        "Our model demonstrates that the dynamic..."
+        "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones..",
+        "Our model demonstrates that the dynamic...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2023_SinglePheromone/README.md"
     },
@@ -1057,14 +972,13 @@
         "coding sequence evolution"
       ],
       "findings": [
-        "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology.",
-        "We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel..."
+        "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes..",
+        "A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing..",
+        "In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages.."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2023_HoneyBeeGeneExpression/README.md"
     },
@@ -1086,9 +1000,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_VariationalSynthesis/README.md"
     },
@@ -1108,10 +1020,8 @@
         "The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2023_ATLAS/README.md"
     },
@@ -1128,14 +1038,13 @@
         "model development"
       ],
       "findings": [
-        "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena.",
-        "This paper argues that developing generative models is more li..."
+        "This report provides a single-page account of Active Inference modeling..",
+        "This report was written entirely by hand without any synthetic computational-linguistic intelligences..",
+        "Thank you to the learners, interns, and participants of the Active Inference Institute to whom I& 39;ve mostly learned from.."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_AccountActiveInference/README.md"
     },
@@ -1159,10 +1068,8 @@
         "It argues that realized epist..."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2023_CognitiveSovereignty/README.md"
     },
@@ -1180,14 +1087,12 @@
         "synthetic intelligence"
       ],
       "findings": [
-        "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No.",
-        "NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int..."
+        "Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC) to the National Telecommunications and Information Administrat",
+        "NTIA-2023-0005-0001.."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2023_AIAccountability/README.md"
     },
@@ -1205,14 +1110,12 @@
         "distributed cognition"
       ],
       "findings": [
-        "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics.",
-        "We formalize the scientific process as multi-scale Active Inference, where individual rese..."
+        "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics..",
+        "We formalize the scientific process as multi-scale Active Inference, where individual rese...."
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_DistributedScience/README.md"
     },
@@ -1228,14 +1131,13 @@
         "prompt engineering"
       ],
       "findings": [
-        "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope.",
-        "The framework includes updatable profi..."
+        "This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems..",
+        "The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations..",
+        "The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework.."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2023_NSFReporting/README.md"
     },
@@ -1251,14 +1153,12 @@
         "high-throughput analysis"
       ],
       "findings": [
-        "We examine the transformative impact of video technology on experimental entomology.",
-        "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies..."
+        "We examine the transformative impact of video technology on experimental entomology..",
+        "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2023_VideoEntomology/README.md"
     },
@@ -1275,14 +1175,13 @@
         "interoperability"
       ],
       "findings": [
-        "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems.",
-        "GNN provides meta-notational tools for describing any symbolic..."
+        "introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains..",
+        "GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models..",
+        "In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice.."
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Generalized Notation Notation (GNN) schema design",
+        "Graph-based knowledge representation"
       ],
       "source": "papers/2023_GNN/README.md"
     },
@@ -1306,9 +1205,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_GenerativeResearchTeams/README.md"
     },
@@ -1329,10 +1226,8 @@
         "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i"
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2023_AntsAging/README.md"
     },
@@ -1349,14 +1244,12 @@
         "information overload"
       ],
       "findings": [
-        "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute.",
-        "We contend that open access to diverse sources of scientific sensem..."
+        "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute..",
+        "We contend that open access to diverse sources of scientific sensem...."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2023_OpenScienceSensemaking/README.md"
     },
@@ -1378,10 +1271,8 @@
         "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci"
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2023_PostdocReview/README.md"
     },
@@ -1396,14 +1287,12 @@
         "community building"
       ],
       "findings": [
-        "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community.",
-        "The institute serves as a hub for Active Inference research, education..."
+        "This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions..",
+        "It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute.."
       ],
       "methods": [
-        "Community coordination and governance",
-        "Open science infrastructure development",
-        "Educational program design",
-        "Inter-organizational collaboration"
+        "Program coordination",
+        "Community governance design"
       ],
       "source": "papers/2023_AII_v1/README.md"
     },
@@ -1424,10 +1313,8 @@
         "Analysis of P3IF provides structu..."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2023_P3IF/README.md"
     },
@@ -1443,14 +1330,12 @@
         "public sphere"
       ],
       "findings": [
-        "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives.",
-        "Building on the DRE3 model, we analyze h..."
+        "develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives..",
+        "Building on the DRE3 model, we analyze h...."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2023_ToComment/README.md"
     },
@@ -1476,14 +1361,12 @@
         "juxtaposition"
       ],
       "findings": [
-        "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition.",
-        "The study in comprehensivity explores structural parallels between Blake's..."
+        "William Blake's prophetic works contain formal structures that prefigure modern systems thinking",
+        "Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2023_BlakeFuller/README.md"
     },
@@ -1504,10 +1387,8 @@
         "Analysis of The ontology provide..."
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Active Inference",
+        "Free energy minimization"
       ],
       "source": "papers/2022_ActiveInferenceOntology/README.md"
     },
@@ -1527,10 +1408,8 @@
         "Analysis of The project, f..."
       ],
       "methods": [
-        "Community coordination and governance",
-        "Open science infrastructure development",
-        "Educational program design",
-        "Inter-organizational collaboration"
+        "Program coordination",
+        "Community governance design"
       ],
       "source": "papers/2022_ActiveDiffusion/README.md"
     },
@@ -1550,10 +1429,8 @@
         "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2022_StigmergicAnnotation/README.md"
     },
@@ -1571,14 +1448,13 @@
         "moral philosophy"
       ],
       "findings": [
-        "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will.",
-        "Topics covered include neuroscience, genetics, environmental..."
+        "In this interview, Robert Sapolsky outlines his view on Free Will and related topics..",
+        "The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will..",
+        "Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system.."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2022_FreeWillSapolsky/README.md"
     },
@@ -1595,14 +1471,13 @@
         "prediction error"
       ],
       "findings": [
-        "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition.",
-        "We hypothesize that a 'reflection prediction' may explain mirror self-r..."
+        "The \"mirror test\" has been used as a behavioral measure of mirror self-recognition for a variety of species..",
+        "In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior..",
+        "Furthermore, we hypothesize that a “reflection prediction”, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia"
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2022_MirrorTest/README.md"
     },
@@ -1620,14 +1495,12 @@
         "collective sensemaking"
       ],
       "findings": [
-        "An edited volume examining open standards and cognitive security for structuring the information commons.",
-        "The book addresses how information ecosystems can be designed to promote trust, transparency..."
+        "An edited volume examining open standards and cognitive security for structuring the information commons..",
+        "The book addresses how information ecosystems can be designed to promote trust, transparency...."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2022_InformationCommons/README.md"
     },
@@ -1645,14 +1518,13 @@
         "systems modeling"
       ],
       "findings": [
-        "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci).",
-        "Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze..."
+        "This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project)..",
+        "The grant was submitted in October 2022 and was not funded..",
+        "Learn more, get in touch, get involved, or fund us: https://www.activeinference.org/."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2022_HypercertEcosystems/README.md"
     },
@@ -1674,9 +1546,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2022_SystematicLiteratureAnalysis/README.md"
     },
@@ -1693,14 +1563,13 @@
         "sociotechnical systems"
       ],
       "findings": [
-        "TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims.",
-        "Built on feedback from dozens of experts across fields submitted to the University..."
+        "There is a broadly recognized need for better situational awareness within the information environment..",
+        "Each year, millions of articles, books, documents, and datasets are published..",
+        "Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims.."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2022_TrustFinder/README.md"
     },
@@ -1718,14 +1587,12 @@
         "eco-evo-devo"
       ],
       "findings": [
-        "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments.",
-        "Active inference is a multiscale approach to behavi..."
+        "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments..",
+        "Active inference is a multiscale approach to behavi...."
       ],
       "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Active inference agent-based simulation",
+        "Markov decision process modeling of foraging"
       ],
       "source": "papers/2021_ActiveInferants/README.md"
     },
@@ -1747,9 +1614,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2021_ModelingConflict/README.md"
     },
@@ -1766,14 +1631,13 @@
         "computational discourse analysis"
       ],
       "findings": [
-        "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data.",
-        "We develop a Digital Rhetorical Ecosystem three-tiered model..."
+        "makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives..",
+        "In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation..",
+        "Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags.."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2021_DigitalRhetorical/README.md"
     },
@@ -1799,14 +1663,12 @@
         "systems engineering"
       ],
       "findings": [
-        "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.",
-        "We explore communication in located teams and all-..."
+        "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems..",
+        "We explore communication in located teams and all-...."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2021_NarrativeEcosystems/README.md"
     },
@@ -1823,14 +1685,13 @@
         "interdisciplinary synthesis"
       ],
       "findings": [
-        "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking.",
-        "We address the need for synthesis among knowledge management, information management..."
+        "There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio",
+        "While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas..",
+        "In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking.."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2021_NarrativeInformationMgmt/README.md"
     },
@@ -1854,14 +1715,13 @@
         "behavioral design"
       ],
       "findings": [
-        "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales.",
-        "This paper proposes frameworks for conn..."
+        "Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and",
+        "We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest..",
+        "Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis.."
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Agent-based modeling of collective behavior",
+        "Behavioral engineering and incentive design"
       ],
       "source": "papers/2020_BehaviorEngineering/README.md"
     },
@@ -1892,9 +1752,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2020_DistributedPhysiology/README.md"
     },
@@ -1912,14 +1770,13 @@
         "research accelerators"
       ],
       "findings": [
-        "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives.",
-        "This paper presents the Facilitator's Catechism, an operation..."
+        "While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management..",
+        "Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors..",
+        "Consequently, the operating environment has changed.."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2020_EmergentTeams/README.md"
     },
@@ -1937,14 +1794,12 @@
         "Pogonomyrmex barbatus"
       ],
       "findings": [
-        "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects.",
-        "Here we characterize transcriptomic profiles of foragers compar..."
+        "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects..",
+        "Here we characterize transcriptomic profiles of foragers compar...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2020_GeneExpressionForagers/README.md"
     },
@@ -1971,14 +1826,12 @@
         "colony variation"
       ],
       "findings": [
-        "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions.",
-        "Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a..."
+        "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions..",
+        "Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2020_NeurotransmitterVariation/README.md"
     },
@@ -1999,10 +1852,8 @@
         "Through the lens of Active Inferen..."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2020_GreatPreset/README.md"
     },
@@ -2023,10 +1874,8 @@
         "Many of these teams fail due to..."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2020_InnovatorsCatechism/README.md"
     },
@@ -2043,14 +1892,12 @@
         "neural circuits"
       ],
       "findings": [
-        "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career.",
-        "Hanks explores how ideas from computational neuroscience have hel..."
+        "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career..",
+        "Hanks explores how ideas from computational neuroscience have hel...."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2020_NeuroscienceDecision/README.md"
     },
@@ -2067,14 +1914,12 @@
         "altered states"
       ],
       "findings": [
-        "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens.",
-        "Analysis of Dennett argues that philos..."
+        "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..",
+        "Dennett argues that philos...."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2019_DennettExplained/README.md"
     },
@@ -2093,14 +1938,13 @@
         "Stanford University"
       ],
       "findings": [
-        "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus).",
-        "It integrates field behavioral ecology, neuroche..."
+        "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)..",
+        "It integrates field behavioral ecology, neuroche...."
       ],
       "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Multi-year field observation of harvester ant colonies",
+        "Transcriptomic profiling of behavioral variation",
+        "Quantitative behavioral biology and statistics"
       ],
       "source": "papers/2019_PhDDissertation/README.md"
     },
@@ -2117,14 +1961,13 @@
         "scientific theories of consciousness"
       ],
       "findings": [
-        "Here we address the scientific study of consciousness by proposing the ant colony as a model system.",
-        "We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s..."
+        "Here we address the scientific study of consciousness by proposing the ant colony as a model system..",
+        "We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...."
       ],
       "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Collective behavior and consciousness theory",
+        "Multi-agent modeling of ant colony cognition",
+        "Comparative neuroethological analysis"
       ],
       "source": "papers/2019_AntConsciousness/README.md"
     },
@@ -2142,14 +1985,12 @@
         "reproductive fitness"
       ],
       "findings": [
-        "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected.",
-        "Here we present field experiments showing t..."
+        "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected..",
+        "Here we present field experiments showing t...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2019_ForagerHydration/README.md"
     },
@@ -2167,14 +2008,12 @@
         "cuticular hydrocarbons"
       ],
       "findings": [
-        "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers.",
-        "Here we examine the relationship between the..."
+        "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers..",
+        "Here we examine the relationship between the...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2018_ArgentineAnt/README.md"
     },
@@ -2192,14 +2031,12 @@
         "open-ended evolution"
       ],
       "findings": [
-        "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels?",
-        "This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
+        "MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more..",
+        "Uploaded to Zenodo in 2024.."
       ],
       "methods": [
-        "Multimedia content production",
-        "Pedagogical framework design",
-        "Public communication of science",
-        "Cross-platform media distribution"
+        "Content production",
+        "Pedagogical design"
       ],
       "source": "papers/2018_MVEE/README.md"
     },
@@ -2221,10 +2058,9 @@
         "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit"
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Active inference modeling of consciousness",
+        "Bayesian mechanics of self-organizing systems",
+        "Philosophical analysis of Markov blanket formalism"
       ],
       "source": "papers/2018_WoodliceAndMen/README.md"
     },
@@ -2243,14 +2079,13 @@
         "controlled novelty"
       ],
       "findings": [
-        "Healthy romantic relationships contribute to human physical health and emotional well-being.",
-        "Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on..."
+        "Healthy romantic relationships contribute to human physical health and emotional well-being..",
+        "Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on...."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Experimental paradigm design for relational improvement",
+        "Mixed-methods analysis of partnered interaction",
+        "Arts-based research methodology"
       ],
       "source": "papers/2018_PPPiP/README.md"
     },
@@ -2273,9 +2108,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2018_DopamineForaging/README.md"
     },
@@ -2299,9 +2132,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2017_MutAnts/README.md"
     },
@@ -2319,14 +2150,12 @@
         "social evolution"
       ],
       "findings": [
-        "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior.",
-        "In dependent-lineage species, queens must mate with males..."
+        "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior..",
+        "In dependent-lineage species, queens must mate with males...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2017_TwoLineages/README.md"
     },
@@ -2350,9 +2179,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2016_AntGenetics/README.md"
     },
@@ -2371,14 +2198,12 @@
         "behavioral ecology"
       ],
       "findings": [
-        "Previous work has found that workers of similar genotype adopt different behavioural phenotypes.",
-        "Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
+        "Previous work has found that workers of similar genotype adopt different behavioural phenotypes..",
+        "Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...."
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2016_ForagingGene/README.md"
     },
@@ -2396,14 +2221,12 @@
         "3C technologies"
       ],
       "findings": [
-        "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.",
-        "Chromosome conformation capture (3C) tec..."
+        "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..",
+        "Chromosome conformation capture (3C) tec...."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2016_NuclearStructure/README.md"
     },
@@ -2425,10 +2248,9 @@
         "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities"
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Uniparental marker haplotype analysis",
+        "Population genetic admixture modeling",
+        "Molecular clock and phylogenetic inference"
       ],
       "source": "papers/2015_CryptoJews/README.md"
     },
@@ -2450,10 +2272,8 @@
         "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2015_EhrlichialInfection/README.md"
     },
@@ -2473,14 +2293,13 @@
         "venom"
       ],
       "findings": [
-        "A key question in evolutionary biology concerns how novel traits arise at the molecular level.",
-        "Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
+        "A key question in evolutionary biology concerns how novel traits arise at the molecular level..",
+        "Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...."
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Transcriptomic sequencing and assembly",
+        "Coding sequence evolution analysis",
+        "Comparative genomics of social insects"
       ],
       "source": "papers/2015_HoneyBeeEvolution/README.md"
     },
@@ -2502,9 +2321,7 @@
       ],
       "methods": [
         "Field observation and behavioral assays",
-        "Population genetics analysis",
-        "Transcriptomic and gene expression profiling",
-        "Collective behavior modeling"
+        "Population genetics analysis"
       ],
       "source": "papers/2026_EntoLinguistics/README.md"
     },
@@ -2526,9 +2343,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2026_ActInfMetaAnalysis/README.md"
     },
@@ -2552,9 +2367,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2026_FocusedAttentionMeditation/README.md"
     },
@@ -2578,9 +2391,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2026_CognitiveCaseDiagrams/README.md"
     },
@@ -2595,10 +2406,8 @@
         "Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit."
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Lean 4 theorem proving for FEP formalization",
+        "AI-assisted theorem sketching and verification"
       ],
       "source": "papers/2026_FEPLean/README.md"
     },
@@ -2619,10 +2428,8 @@
         "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "OPORD analysis and catechism-style process design",
+        "Organizational sensemaking and high-reliability frameworks"
       ],
       "source": "papers/2020_FacilitatorsCatechism/README.md"
     },
@@ -2645,10 +2452,8 @@
         "Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance."
       ],
       "methods": [
-        "Visual analysis and iconographic interpretation",
-        "Historical and conceptual synthesis",
-        "Cross-domain pattern mapping",
-        "Symbolic and metaphorical analysis"
+        "Visual and symbolic analysis",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2026_BlakeJiang/README.md"
     },
@@ -2666,10 +2471,8 @@
         "The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s;"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2026_CrescentCity/README.md"
     },
@@ -2684,10 +2487,8 @@
         "Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Generative textbook scaffold methodology",
+        "Modular pedagogical content design"
       ],
       "source": "papers/2026_BiologyTextbook/README.md"
     },
@@ -2712,10 +2513,8 @@
         "Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_PolicyEntanglementActive/README.md"
     },
@@ -2735,10 +2534,8 @@
         "The case study is intentionally small but concrete: 2000 training"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_BoundedAutoResearchTiny/README.md"
     },
@@ -2759,10 +2556,8 @@
         "The implementation lives in projects/templates/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/templates/template code project/scripts/optimization analysi"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_ConvergenceAnalysisGradient/README.md"
     },
@@ -2781,10 +2576,8 @@
         "It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, e"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_EditorialQualityAt/README.md"
     },
@@ -2810,10 +2603,8 @@
         "Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_TemplateApproachReproducible/README.md"
     },
@@ -2832,10 +2623,8 @@
         "The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before renderin"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_ActiveInferenceMulti/README.md"
     },
@@ -2861,10 +2650,8 @@
         "It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_BeeStack/README.md"
     },
@@ -2886,10 +2673,8 @@
         "The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding ."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_WhenDoBugs/README.md"
     },
@@ -2907,10 +2692,8 @@
         "The default pipeline replays fixture-backed generations for the mini classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_SelfImprovementAgent/README.md"
     },
@@ -2925,9 +2708,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2025_BiofirmDevelopmentWith/README.md"
     },
@@ -2941,10 +2722,8 @@
         "Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those"
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2025_ConCatEnate/README.md"
     },
@@ -2959,9 +2738,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2025_Graphspeak/README.md"
     },
@@ -2975,10 +2752,8 @@
         "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont"
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2025_BevCycPositPrimitive/README.md"
     },
@@ -2992,10 +2767,8 @@
         "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a"
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2025_BeaconsPreEmulation/README.md"
     },
@@ -3006,13 +2779,12 @@
         "ConCatEnate2"
       ],
       "findings": [
-        "See full paper for detailed findings and analysis"
+        "Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction",
+        "Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience"
       ],
       "methods": [
-        "Genomic sequencing and bioinformatics",
-        "Phylogenetic and evolutionary analysis",
-        "Statistical genetics and heritability estimation",
-        "Molecular mechanism investigation"
+        "Genomic and bioinformatic analysis",
+        "Statistical genetics"
       ],
       "source": "papers/2025_ConCatEnate2/README.md"
     },
@@ -3028,9 +2800,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2024_PushPull/README.md"
     },
@@ -3047,10 +2817,8 @@
         "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\". v1 released on December 12, 2023."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2023_NaturalAIBased/README.md"
     },
@@ -3065,10 +2833,8 @@
         "The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2023_ATLAS2/README.md"
     },
@@ -3086,9 +2852,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_TranscriptActiveInference/README.md"
     },
@@ -3106,9 +2870,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_ModernNostrIndex/README.md"
     },
@@ -3119,13 +2881,12 @@
         "SlidesIris"
       ],
       "findings": [
-        "See full paper for detailed findings and analysis"
+        "Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts",
+        "Slide-based presentation format effectively communicates active inference concepts to diverse audiences"
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2023_SlidesIris/README.md"
     },
@@ -3141,9 +2902,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2022_CanonicalNeuralNetworks/README.md"
     },
@@ -3159,9 +2918,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2022_InteroceptionAsModeling/README.md"
     },
@@ -3182,9 +2939,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2022_Transcript/README.md"
     },
@@ -3199,9 +2954,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2022_WorkedExampleBayesian/README.md"
     },
@@ -3216,9 +2969,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2022_TranscriptDiscussions/README.md"
     },
@@ -3237,10 +2988,8 @@
         "Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2022_TrackingPublicSensemaking/README.md"
     },
@@ -3264,9 +3013,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2021_Transcript/README.md"
     },
@@ -3284,10 +3031,8 @@
         "The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or oppo"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2021_CollaborativeWritingCatechism/README.md"
     },
@@ -3310,10 +3055,8 @@
         "The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design."
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2020_ReimaginingMaps/README.md"
     },
@@ -3328,10 +3071,8 @@
         "How are global online narratives constructed and received in 2020?"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "Narrative analysis",
+        "Trust and integrity modeling"
       ],
       "source": "papers/2020_InfiniteGamesInfinite/README.md"
     },
@@ -3350,10 +3091,8 @@
         "The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and co"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_MusicNeverStopped/README.md"
     },
@@ -3373,10 +3112,8 @@
         "This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_DeterministicTestbedSelf/README.md"
     },
@@ -3402,10 +3139,8 @@
         "We test this end to end on real large language models."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_RecoveringLLMPersona/README.md"
     },
@@ -3424,10 +3159,8 @@
         "The exemplar edition is The Triplicate, a homage to the historic"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_Triplicate/README.md"
     },
@@ -3442,10 +3175,8 @@
         "---"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_TemplateTextbook/README.md"
     },
@@ -3546,10 +3277,8 @@
         "Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the em"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_ITrace/README.md"
     },
@@ -3575,10 +3304,8 @@
         "A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_DemoCreate/README.md"
     },
@@ -3597,10 +3324,8 @@
         "Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_ENTO/README.md"
     },
@@ -3625,9 +3350,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2026_GeneralizedNotationNotationGNN/README.md"
     },
@@ -3650,10 +3373,8 @@
         "It is an evidence compiler: it propagates reviewable program facts through a finite fixpoint rule pipeline and emits graph, matrix, provenance, visualization, and round-trip artifacts with confidence"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Deterministic codebase-to-GNN translation",
+        "Software architecture pattern extraction"
       ],
       "source": "papers/2026_COGANT/README.md"
     },
@@ -3677,10 +3398,8 @@
         "It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source ident"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_AGEINT/README.md"
     },
@@ -3703,9 +3422,7 @@
       ],
       "methods": [
         "Free energy minimization",
-        "Generative modeling and simulation",
-        "Bayesian inference and belief updating",
-        "Policy selection and expected free energy"
+        "Bayesian modeling and inference"
       ],
       "source": "papers/2026_PolicyDistillationAs/README.md"
     },
@@ -3724,10 +3441,8 @@
         "The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and the sourc"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Deterministic token injection for manuscript generation",
+        "Conditional IMRAD manuscript hydration"
       ],
       "source": "papers/2026_TemplateMadlib/README.md"
     },
@@ -3738,13 +3453,14 @@
         "CaliforniaPublicRecords"
       ],
       "findings": [
-        "See full paper for detailed findings and analysis"
+        "California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records",
+        "CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure",
+        "Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology"
       ],
       "methods": [
-        "Narrative analysis and discourse mapping",
-        "Misinformation detection frameworks",
-        "Trust and integrity modeling",
-        "Cognitive defense pattern analysis"
+        "California Public Records Act (CPRA) legal analysis",
+        "Open-data portal integration (CKAN/Socrata/ArcGIS)",
+        "Government transparency framework evaluation"
       ],
       "source": "papers/2026_CaliforniaPublicRecords/README.md"
     },
@@ -3763,10 +3479,8 @@
         "The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognitive Security, Critical Review and Assurance, OSINT and Source I"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_CogSecSkills/README.md"
     },
@@ -3786,10 +3500,8 @@
         "Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_RealizingEmptiness/README.md"
     },
@@ -3815,10 +3527,8 @@
         "We present a configurable,"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_LivingMetaAnalysis/README.md"
     },
@@ -3839,10 +3549,8 @@
         "The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-puri"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_RefinementGold/README.md"
     },
@@ -3888,10 +3596,9 @@
         "This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle."
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Digital humanities corpus construction",
+        "Evidence-ledger provenance tracking",
+        "Rights-bounded release workflow"
       ],
       "source": "papers/2026_MappingWilliamBlake/README.md"
     },
@@ -3915,10 +3622,8 @@
         "A panel can be selected many ways — by competence, by a representative lottery"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_SortitionUpstreamNTQR/README.md"
     },
@@ -3938,10 +3643,8 @@
         "This paper presents the computational-notebook"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_ExploratoryDataAnalysis/README.md"
     },
@@ -3961,10 +3664,8 @@
         "Unlike a"
       ],
       "methods": [
-        "Deterministic software pipeline design",
-        "Reproducible workflow orchestration",
-        "Data-driven analysis and visualization",
-        "Infrastructure-as-code methodology"
+        "Software pipeline design",
+        "Data-driven analysis"
       ],
       "source": "papers/2026_DomainLanguageSpecifying/README.md"
     }

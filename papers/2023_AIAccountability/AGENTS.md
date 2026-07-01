@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No., NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)  to the National Telecommunications and Information Administrat, NTIA-2023-0005-0001..
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

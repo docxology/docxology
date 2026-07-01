@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and
 - Maps contributions to Art & Synergetics literature
 

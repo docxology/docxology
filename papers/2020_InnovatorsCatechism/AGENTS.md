@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives., Many of these teams fail due to...
 - Maps contributions to Cognitive Security literature
 

@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Deterministic codebase-to-GNN translation
+- Software architecture pattern extraction
 
 ## Key Findings
 

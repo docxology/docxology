@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena., This paper argues that developing generative models is more li...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: This report provides a single-page account of Active Inference modeling.., This report was written entirely by hand without any synthetic computational-linguistic intelligences.., Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from..
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

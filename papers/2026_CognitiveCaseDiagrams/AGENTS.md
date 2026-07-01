@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection.
 - Maps contributions to Active Inference literature
 

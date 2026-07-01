@@ -20,10 +20,8 @@ bounded small MNIST neural-network classification ...
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 

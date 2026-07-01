@@ -19,16 +19,14 @@ This work addresses topics in **Active Inference**: shared protentions, multi-ag
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
 Core contributions and results:
 
-- We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.
-- Protentions are future-directed expectations that shape perception and action; here we formaliz...
+- We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference..
+- Protentions are future-directed expectations that shape perception and action; here we formaliz....
 
 ## Related Works
 

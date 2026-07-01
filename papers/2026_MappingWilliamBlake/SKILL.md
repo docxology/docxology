@@ -19,10 +19,9 @@ This work addresses topics in **Computational**: William Blake, digital humaniti
 
 Primary methods and techniques applied in this work:
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Digital humanities corpus construction
+- Evidence-ledger provenance tracking
+- Rights-bounded release workflow
 
 ## Key Findings
 

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full
 - Maps contributions to Art & Synergetics literature
 

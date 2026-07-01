@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
-- Identifies findings: This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks., The work discusses how systems science concepts connect to and...
+- Extracts methods: Content production, Pedagogical design
+- Identifies findings: Slides for a session at "Enduring Patterns, Emerging Futures: Celebrating Dr.., Len Troncale", an online event in September 2025 https://troncale.sched.com/ ..
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

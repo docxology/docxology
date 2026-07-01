@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers., Here we examine the relationship between the...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers.., Here we examine the relationship between the....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
-- Identifies findings: Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation., The system facilitates creative and interdisciplinary thinking by providing struct...
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
+- Identifies findings: Curio card format combines artistic design with structured knowledge representation, Physical-to-digital workflow enables novel forms of scholarly communication and curation
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

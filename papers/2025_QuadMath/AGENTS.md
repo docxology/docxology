@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
-- Identifies findings: QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework., The paper introduces a 4D namespace fr...
+- Extracts methods: 4D mathematical analysis and visualization, Analytical geometry and topological methods
+- Identifies findings: Higher-dimensional geometry provides novel mathematical foundations for cognitive modeling and representation, 4D visualization techniques significantly improve interpretability of abstract cognitive state representations
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

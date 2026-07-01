@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;
 - Maps contributions to Active Inference literature
 

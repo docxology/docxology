@@ -48,25 +48,18 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "name": "Generalized Notation Notation (GNN) schema design",
+      "description": "Applied generalized notation notation (gnn) schema design approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Graph-based knowledge representation",
+      "description": "Applied graph-based knowledge representation approach"
     }
   ],
   "key_findings": [
-    "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems.",
-    "GNN provides meta-notational tools for describing any symbolic..."
+    "introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains..",
+    "GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models..",
+    "In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice.."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",

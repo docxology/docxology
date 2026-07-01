@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: An edited volume examining open standards and cognitive security for structuring the information commons., The book addresses how information ecosystems can be designed to promote trust, transparency...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: An edited volume examining open standards and cognitive security for structuring the information commons.., The book addresses how information ecosystems can be designed to promote trust, transparency....
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

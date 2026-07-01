@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression., The work examines cave paintings and rock art as evidence of early human cognitiv...
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Identifies findings: An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.., The work examines cave paintings and rock art as evidence of early human cognitiv....
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

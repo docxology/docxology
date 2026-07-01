@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity., Analysis of The work...
 - Maps contributions to Active Inference literature
 

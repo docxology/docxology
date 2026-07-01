@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives., Building on the DRE3 model, we analyze h...
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Identifies findings: develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives.., Building on the DRE3 model, we analyze h....
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

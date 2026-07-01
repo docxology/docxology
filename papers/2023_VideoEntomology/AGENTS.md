@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: We examine the transformative impact of video technology on experimental entomology., Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: We examine the transformative impact of video technology on experimental entomology.., Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

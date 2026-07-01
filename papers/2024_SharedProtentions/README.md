@@ -17,14 +17,12 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.
-- Protentions are future-directed expectations that shape perception and action; here we formaliz...
+- We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference..
+- Protentions are future-directed expectations that shape perception and action; here we formaliz....
 
 ## Artifacts
 

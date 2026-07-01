@@ -18,17 +18,15 @@ This work addresses topics in **Cognitive Security**: AI accountability, NTIA, p
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No.
-- NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int...
+- Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)  to the National Telecommunications and Information Administrat
+- NTIA-2023-0005-0001..
 
 ## Related Works
 

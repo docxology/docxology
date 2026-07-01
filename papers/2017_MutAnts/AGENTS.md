@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior., Analysis of In this issue of...
 - Maps contributions to Entomology literature
 

@@ -26,19 +26,11 @@
   "methods": [
     {
       "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "description": "Applied free energy minimization approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Bayesian modeling and inference",
+      "description": "Applied bayesian modeling and inference approach"
     }
   ],
   "key_findings": [

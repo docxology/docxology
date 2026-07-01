@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: Individual behavioral variation within colonies is shaped by neurochemical signaling., Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa.
 - Maps contributions to Entomology literature
 

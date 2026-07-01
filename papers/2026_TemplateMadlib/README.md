@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Deterministic token injection for manuscript generation
+- Conditional IMRAD manuscript hydration
 
 ## Key Findings
 

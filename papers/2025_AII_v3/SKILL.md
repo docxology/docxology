@@ -18,10 +18,8 @@ This work addresses topics in **AII Ecosystem**: Active Inference Institute, org
 
 Primary methods and techniques applied in this work:
 
-- Community coordination and governance
-- Open science infrastructure development
-- Educational program design
-- Inter-organizational collaboration
+- Program coordination
+- Community governance design
 
 ## Key Findings
 

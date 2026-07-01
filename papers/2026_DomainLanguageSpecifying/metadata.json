@@ -57,20 +57,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
-    },
-    {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Data-driven analysis",
+      "description": "Applied data-driven analysis approach"
     }
   ],
   "key_findings": [

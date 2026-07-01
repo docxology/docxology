@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
 - Identifies findings: Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those
 - Maps contributions to Genetics & Biomedical literature
 

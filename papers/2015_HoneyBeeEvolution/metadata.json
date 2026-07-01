@@ -26,25 +26,21 @@
   ],
   "methods": [
     {
-      "name": "Genomic sequencing and bioinformatics",
-      "description": "Applied genomic sequencing and bioinformatics methodology"
+      "name": "Transcriptomic sequencing and assembly",
+      "description": "Applied transcriptomic sequencing and assembly approach"
     },
     {
-      "name": "Phylogenetic and evolutionary analysis",
-      "description": "Applied phylogenetic and evolutionary analysis methodology"
+      "name": "Coding sequence evolution analysis",
+      "description": "Applied coding sequence evolution analysis approach"
     },
     {
-      "name": "Statistical genetics and heritability estimation",
-      "description": "Applied statistical genetics and heritability estimation methodology"
-    },
-    {
-      "name": "Molecular mechanism investigation",
-      "description": "Applied molecular mechanism investigation methodology"
+      "name": "Comparative genomics of social insects",
+      "description": "Applied comparative genomics of social insects approach"
     }
   ],
   "key_findings": [
-    "A key question in evolutionary biology concerns how novel traits arise at the molecular level.",
-    "Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
+    "A key question in evolutionary biology concerns how novel traits arise at the molecular level..",
+    "Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...."
   ],
   "related_papers": [
     "2015_CryptoJews",

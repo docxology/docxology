@@ -16,15 +16,13 @@
 
 ## Methods
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute.
-- We contend that open access to diverse sources of scientific sensem...
+- While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute..
+- We contend that open access to diverse sources of scientific sensem....
 
 ## Artifacts
 

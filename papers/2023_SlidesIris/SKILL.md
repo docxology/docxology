@@ -20,15 +20,14 @@ This work addresses topics in **Active Inference**: SlidesIris.
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts
+- Slide-based presentation format effectively communicates active inference concepts to diverse audiences
 
 ## Related Works
 

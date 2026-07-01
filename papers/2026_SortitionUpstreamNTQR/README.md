@@ -20,10 +20,8 @@ judgments can be evaluated blind: given the agreement/disagreement pattern among
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 

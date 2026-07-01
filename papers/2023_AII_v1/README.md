@@ -16,15 +16,13 @@
 
 ## Methods
 
-- Community coordination and governance
-- Open science infrastructure development
-- Educational program design
-- Inter-organizational collaboration
+- Program coordination
+- Community governance design
 
 ## Key Findings
 
-- An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community.
-- The institute serves as a hub for Active Inference research, education...
+- This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions..
+- It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute..
 
 ## Artifacts
 

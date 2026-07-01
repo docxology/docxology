@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives., This paper presents the Facilitator's Catechism, an operation...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management.., Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors.., Consequently, the operating environment has changed..
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

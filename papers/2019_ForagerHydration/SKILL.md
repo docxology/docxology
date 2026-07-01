@@ -20,15 +20,13 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected.
-- Here we present field experiments showing t...
+- Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected..
+- Here we present field experiments showing t....
 
 ## Related Works
 

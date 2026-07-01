@@ -48,25 +48,18 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
-    },
-    {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Data-driven analysis",
+      "description": "Applied data-driven analysis approach"
     }
   ],
   "key_findings": [
-    "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope.",
-    "The framework includes updatable profi..."
+    "This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems..",
+    "The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations..",
+    "The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework.."
   ],
   "related_papers": [
     "2023_NaturalAIBased",

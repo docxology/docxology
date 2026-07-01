@@ -19,10 +19,8 @@ This work addresses topics in **Active Inference**: FEPLean.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Lean 4 theorem proving for FEP formalization
+- AI-assisted theorem sketching and verification
 
 ## Key Findings
 

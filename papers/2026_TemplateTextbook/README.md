@@ -21,10 +21,8 @@ DOI: https://doi.org/10.5281/zenodo.2053312...
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 

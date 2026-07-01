@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: We present template_newspaper, a pure-Python engine that renders a complete
 twelve-page, large-format newspaper to a print-ready PDF from structured YAML
 content., The exemplar edition is The Triplicate, a homage to the historic

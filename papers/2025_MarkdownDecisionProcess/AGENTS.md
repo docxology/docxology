@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling., Analysis of Dr...
 - Maps contributions to Computational literature
 

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
 - Identifies findings: Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont
 - Maps contributions to Genetics & Biomedical literature
 

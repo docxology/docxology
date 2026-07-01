@@ -20,15 +20,14 @@ Primary methods and techniques applied in this work:
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization.
-- We connect concepts from information theory, complex adaptive systems, and...
+- We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence..
+- Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at 100 Hz control frequencies..
+- Energy efficiency has emerged as a critical constraint in embodied AI systems, yet traditional complexity analysis fails to capture the nuanced energy-performance trade-offs inherent in real-world implementations..
 
 ## Related Works
 

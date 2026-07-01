@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston., We trace the history, growth, and div...
 - Maps contributions to Active Inference literature
 

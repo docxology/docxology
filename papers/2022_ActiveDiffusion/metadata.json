@@ -45,20 +45,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Community coordination and governance",
-      "description": "Applied community coordination and governance methodology"
+      "name": "Program coordination",
+      "description": "Applied program coordination approach"
     },
     {
-      "name": "Open science infrastructure development",
-      "description": "Applied open science infrastructure development methodology"
-    },
-    {
-      "name": "Educational program design",
-      "description": "Applied educational program design methodology"
-    },
-    {
-      "name": "Inter-organizational collaboration",
-      "description": "Applied inter-organizational collaboration methodology"
+      "name": "Community governance design",
+      "description": "Applied community governance design approach"
     }
   ],
   "key_findings": [

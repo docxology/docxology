@@ -18,10 +18,8 @@ This work addresses topics in **Cognitive Security**: stigmergic annotation, ope
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 

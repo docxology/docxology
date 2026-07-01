@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
+- Extracts methods: Content production, Pedagogical design
 - Identifies findings: Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc
 - Maps contributions to Presentations & Media literature
 

@@ -65,20 +65,12 @@
   "type": "Book",
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Generative textbook scaffold methodology",
+      "description": "Applied generative textbook scaffold methodology approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
-    },
-    {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Modular pedagogical content design",
+      "description": "Applied modular pedagogical content design approach"
     }
   ],
   "key_findings": [

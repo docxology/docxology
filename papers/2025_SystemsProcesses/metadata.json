@@ -47,25 +47,17 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Multimedia content production",
-      "description": "Applied multimedia content production methodology"
+      "name": "Content production",
+      "description": "Applied content production approach"
     },
     {
-      "name": "Pedagogical framework design",
-      "description": "Applied pedagogical framework design methodology"
-    },
-    {
-      "name": "Public communication of science",
-      "description": "Applied public communication of science methodology"
-    },
-    {
-      "name": "Cross-platform media distribution",
-      "description": "Applied cross-platform media distribution methodology"
+      "name": "Pedagogical design",
+      "description": "Applied pedagogical design approach"
     }
   ],
   "key_findings": [
-    "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks.",
-    "The work discusses how systems science concepts connect to and..."
+    "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr..",
+    "Len Troncale\", an online event in September 2025 https://troncale.sched.com/ .."
   ],
   "related_papers": [
     "2018_MVEE",

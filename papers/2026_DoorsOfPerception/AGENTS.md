@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference., The paper develops a 'Thematic Atl...
 - Maps contributions to Art & Synergetics literature
 

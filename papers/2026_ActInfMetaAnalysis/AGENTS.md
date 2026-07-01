@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture.
 - Maps contributions to Active Inference literature
 

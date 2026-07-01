@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: Exploratory data analysis (EDA) is the most common entry point in applied
 research, yet it is also where reproducibility most often breaks down: logic
 accumulates in notebook cells that are never test, This paper presents the computational-notebook

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
 - Identifies findings: Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis., Analysis of The work uses Morse...
 - Maps contributions to Art & Synergetics literature
 

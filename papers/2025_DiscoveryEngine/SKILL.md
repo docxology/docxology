@@ -18,17 +18,15 @@ This work addresses topics in **Computational**: Discovery Engine, automated dis
 
 Primary methods and techniques applied in this work:
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Active Inference
+- Software pipeline design
 
 ## Key Findings
 
 Core contributions and results:
 
-- The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.
-- The system models the scientific discovery process as an inference problem...
+- The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles..
+- The system models the scientific discovery process as an inference problem....
 
 ## Related Works
 

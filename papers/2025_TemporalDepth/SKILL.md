@@ -19,16 +19,14 @@ This work addresses topics in **Active Inference**: temporal depth, depersonaliz
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization.
-- Using Active Inference, we formalize how subjective temporal experience i...
+- develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..
+- Using Active Inference, we formalize how subjective temporal experience i....
 
 ## Related Works
 

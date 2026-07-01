@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc
 reviews bind no evidence to a reproducible pipeline., We present a configurable,
 reproducible meta-analysis framework that takes a single search term and produces a

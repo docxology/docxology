@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones., Our model demonstrates that the dynamic...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones.., Our model demonstrates that the dynamic....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

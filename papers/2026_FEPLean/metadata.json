@@ -48,20 +48,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "name": "Lean 4 theorem proving for FEP formalization",
+      "description": "Applied lean 4 theorem proving for fep formalization approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "AI-assisted theorem sketching and verification",
+      "description": "Applied ai-assisted theorem sketching and verification approach"
     }
   ],
   "key_findings": [

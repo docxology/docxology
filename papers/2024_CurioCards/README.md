@@ -14,15 +14,13 @@
 
 ## Methods
 
-- Visual analysis and iconographic interpretation
-- Historical and conceptual synthesis
+- Visual and symbolic analysis
 - Cross-domain pattern mapping
-- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation.
-- The system facilitates creative and interdisciplinary thinking by providing struct...
+- Curio card format combines artistic design with structured knowledge representation
+- Physical-to-digital workflow enables novel forms of scholarly communication and curation
 
 ## Artifacts
 

@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
-- Trust and integrity modeling
-- Cognitive defense pattern analysis
+- OPORD analysis and catechism-style process design
+- Organizational sensemaking and high-reliability frameworks
 
 ## Key Findings
 

@@ -17,14 +17,12 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation.
-- Demonstrated with Ant Colony Optimization (ACO) on th...
+- We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..
+- Demonstrated with Ant Colony Optimization (ACO) on th....
 
 ## Artifacts
 

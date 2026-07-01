@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute., The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.
 - Maps contributions to Active Inference literature
 

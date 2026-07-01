@@ -18,17 +18,15 @@ This work addresses topics in **Art & Synergetics**: William Blake, Buckminster 
 
 Primary methods and techniques applied in this work:
 
-- Visual analysis and iconographic interpretation
-- Historical and conceptual synthesis
+- Visual and symbolic analysis
 - Cross-domain pattern mapping
-- Symbolic and metaphorical analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition.
-- The study in comprehensivity explores structural parallels between Blake's...
+- William Blake's prophetic works contain formal structures that prefigure modern systems thinking
+- Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought
 
 ## Related Works
 

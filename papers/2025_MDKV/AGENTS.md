@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
-- Identifies findings: MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents., Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be...
+- Extracts methods: Software pipeline design, Data-driven analysis
+- Identifies findings: Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel.., Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences.., This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file..
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

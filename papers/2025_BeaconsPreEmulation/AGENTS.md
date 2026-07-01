@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
 - Identifies findings: primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a
 - Maps contributions to Genetics & Biomedical literature
 

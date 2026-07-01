@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
+- Extracts methods: Content production, Pedagogical design
 - Identifies findings: A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i
 - Maps contributions to Presentations & Media literature
 

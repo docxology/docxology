@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)., It integrates field behavioral ecology, neuroche...
+- Extracts methods: Multi-year field observation of harvester ant colonies, Transcriptomic profiling of behavioral variation, Quantitative behavioral biology and statistics
+- Identifies findings: This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus).., It integrates field behavioral ecology, neuroche....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

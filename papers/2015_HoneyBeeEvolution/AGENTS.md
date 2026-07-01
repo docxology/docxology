@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: A key question in evolutionary biology concerns how novel traits arise at the molecular level., Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...
+- Extracts methods: Transcriptomic sequencing and assembly, Coding sequence evolution analysis, Comparative genomics of social insects
+- Identifies findings: A key question in evolutionary biology concerns how novel traits arise at the molecular level.., Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly....
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

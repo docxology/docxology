@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models., It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling.
 - Maps contributions to Active Inference literature
 

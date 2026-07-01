@@ -28,20 +28,16 @@
   ],
   "methods": [
     {
-      "name": "Genomic sequencing and bioinformatics",
-      "description": "Applied genomic sequencing and bioinformatics methodology"
+      "name": "Uniparental marker haplotype analysis",
+      "description": "Applied uniparental marker haplotype analysis approach"
     },
     {
-      "name": "Phylogenetic and evolutionary analysis",
-      "description": "Applied phylogenetic and evolutionary analysis methodology"
+      "name": "Population genetic admixture modeling",
+      "description": "Applied population genetic admixture modeling approach"
     },
     {
-      "name": "Statistical genetics and heritability estimation",
-      "description": "Applied statistical genetics and heritability estimation methodology"
-    },
-    {
-      "name": "Molecular mechanism investigation",
-      "description": "Applied molecular mechanism investigation methodology"
+      "name": "Molecular clock and phylogenetic inference",
+      "description": "Applied molecular clock and phylogenetic inference approach"
     }
   ],
   "key_findings": [

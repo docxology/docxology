@@ -19,9 +19,7 @@ This work addresses topics in **Active Inference**: systematic literature analys
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 

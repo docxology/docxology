@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue
 - Maps contributions to Active Inference literature
 

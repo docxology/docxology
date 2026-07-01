@@ -18,10 +18,8 @@ Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accu
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 

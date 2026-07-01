@@ -28,24 +28,16 @@
   "methods": [
     {
       "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays methodology"
+      "description": "Applied field observation and behavioral assays approach"
     },
     {
       "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis methodology"
-    },
-    {
-      "name": "Transcriptomic and gene expression profiling",
-      "description": "Applied transcriptomic and gene expression profiling methodology"
-    },
-    {
-      "name": "Collective behavior modeling",
-      "description": "Applied collective behavior modeling methodology"
+      "description": "Applied population genetics analysis approach"
     }
   ],
   "key_findings": [
-    "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected.",
-    "Here we present field experiments showing t..."
+    "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected..",
+    "Here we present field experiments showing t...."
   ],
   "related_papers": [
     "2016_AntGenetics",

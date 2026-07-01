@@ -17,13 +17,12 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts
+- Slide-based presentation format effectively communicates active inference concepts to diverse audiences
 
 ## Artifacts
 

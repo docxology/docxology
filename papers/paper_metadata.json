@@ -2857,5 +2857,22 @@
     ],
     "doi": "10.5281/zenodo.21086548",
     "github_release_url": "https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0"
+  },
+  "2026_CaliforniaPublicRecords": {
+    "year": "2026",
+    "topic": "CaliforniaPublicRecords",
+    "name": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+    "description": "A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473.",
+    "doi": "10.5281/zenodo.20789899",
+    "authors": "Daniel Ari Friedman",
+    "keywords": [
+      "California Public Records Act",
+      "open data",
+      "CKAN",
+      "Socrata",
+      "ArcGIS",
+      "cognitive security",
+      "civic technology"
+    ]
   }
 }

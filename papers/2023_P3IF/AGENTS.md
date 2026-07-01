@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security., Analysis of P3IF provides structu...
 - Maps contributions to Cognitive Security literature
 

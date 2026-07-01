@@ -16,15 +16,14 @@
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 
-- ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration.
-- Knowledge develops across disciplines and methods through shared...
+- ResNei &mdash; Research Neighbourhood &ndash; is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas..
+- At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge..
+- This graph is structured as a set of Conceptual Nexus Models (CNMs)&mdash;modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration..
 
 ## Artifacts
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data., We develop a Digital Rhetorical Ecosystem three-tiered model...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives.., In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation.., Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags..
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

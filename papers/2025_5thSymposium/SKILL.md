@@ -18,10 +18,8 @@ This work addresses topics in **Presentations & Media**: Active Inference sympos
 
 Primary methods and techniques applied in this work:
 
-- Multimedia content production
-- Pedagogical framework design
-- Public communication of science
-- Cross-platform media distribution
+- Content production
+- Pedagogical design
 
 ## Key Findings
 

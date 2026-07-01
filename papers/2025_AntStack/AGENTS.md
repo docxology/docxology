@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte
 - Maps contributions to Entomology literature
 

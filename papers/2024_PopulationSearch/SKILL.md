@@ -19,16 +19,14 @@ This work addresses topics in **Active Inference**: population search, Active In
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
 Core contributions and results:
 
-- We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation.
-- Demonstrated with Ant Colony Optimization (ACO) on th...
+- We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..
+- Demonstrated with Ant Colony Optimization (ACO) on th....
 
 ## Related Works
 

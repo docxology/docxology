@@ -59,25 +59,18 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual analysis and iconographic interpretation",
-      "description": "Applied visual analysis and iconographic interpretation methodology"
-    },
-    {
-      "name": "Historical and conceptual synthesis",
-      "description": "Applied historical and conceptual synthesis methodology"
+      "name": "Visual and symbolic analysis",
+      "description": "Applied visual and symbolic analysis approach"
     },
     {
       "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping methodology"
-    },
-    {
-      "name": "Symbolic and metaphorical analysis",
-      "description": "Applied symbolic and metaphorical analysis methodology"
+      "description": "Applied cross-domain pattern mapping approach"
     }
   ],
   "key_findings": [
-    "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition.",
-    "We hypothesize that a 'reflection prediction' may explain mirror self-r..."
+    "The &quot;mirror test&quot; has been used as a behavioral measure of mirror self-recognition for a variety of species..",
+    "In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior..",
+    "Furthermore, we hypothesize that a &ldquo;reflection prediction&rdquo;, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia"
   ],
   "related_papers": [
     "2018_PPPiP",

@@ -62,25 +62,18 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization methodology"
+      "name": "Agent-based modeling of collective behavior",
+      "description": "Applied agent-based modeling of collective behavior approach"
     },
     {
-      "name": "Generative modeling and simulation",
-      "description": "Applied generative modeling and simulation methodology"
-    },
-    {
-      "name": "Bayesian inference and belief updating",
-      "description": "Applied bayesian inference and belief updating methodology"
-    },
-    {
-      "name": "Policy selection and expected free energy",
-      "description": "Applied policy selection and expected free energy methodology"
+      "name": "Behavioral engineering and incentive design",
+      "description": "Applied behavioral engineering and incentive design approach"
     }
   ],
   "key_findings": [
-    "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales.",
-    "This paper proposes frameworks for conn..."
+    "Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and ",
+    "We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest..",
+    "Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis.."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",

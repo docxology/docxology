@@ -18,10 +18,8 @@ This work addresses topics in **Active Inference**: Active Inference Ontology, k
 
 Primary methods and techniques applied in this work:
 
+- Active Inference
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
 
 ## Key Findings
 

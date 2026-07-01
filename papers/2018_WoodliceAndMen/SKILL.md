@@ -18,10 +18,9 @@ This work addresses topics in **Active Inference**: Free Energy Principle, Karl 
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Active inference modeling of consciousness
+- Bayesian mechanics of self-organizing systems
+- Philosophical analysis of Markov blanket formalism
 
 ## Key Findings
 

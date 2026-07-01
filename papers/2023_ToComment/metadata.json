@@ -25,25 +25,17 @@
   ],
   "methods": [
     {
-      "name": "Genomic sequencing and bioinformatics",
-      "description": "Applied genomic sequencing and bioinformatics methodology"
+      "name": "Genomic and bioinformatic analysis",
+      "description": "Applied genomic and bioinformatic analysis approach"
     },
     {
-      "name": "Phylogenetic and evolutionary analysis",
-      "description": "Applied phylogenetic and evolutionary analysis methodology"
-    },
-    {
-      "name": "Statistical genetics and heritability estimation",
-      "description": "Applied statistical genetics and heritability estimation methodology"
-    },
-    {
-      "name": "Molecular mechanism investigation",
-      "description": "Applied molecular mechanism investigation methodology"
+      "name": "Statistical genetics",
+      "description": "Applied statistical genetics approach"
     }
   ],
   "key_findings": [
-    "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives.",
-    "Building on the DRE3 model, we analyze h..."
+    "develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives..",
+    "Building on the DRE3 model, we analyze h...."
   ],
   "related_papers": [
     "2015_CryptoJews",

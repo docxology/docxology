@@ -16,10 +16,8 @@
 
 ## Methods
 
-- Community coordination and governance
-- Open science infrastructure development
-- Educational program design
-- Inter-organizational collaboration
+- Program coordination
+- Community governance design
 
 ## Key Findings
 

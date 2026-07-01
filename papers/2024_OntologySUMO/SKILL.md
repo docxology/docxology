@@ -18,17 +18,15 @@ This work addresses topics in **AII Ecosystem**: ontology alignment, SUMO, Activ
 
 Primary methods and techniques applied in this work:
 
-- Community coordination and governance
-- Open science infrastructure development
-- Educational program design
-- Inter-organizational collaboration
+- Suggested Upper Merged Ontology (SUMO) formalization
+- Cross-domain ontology alignment
 
 ## Key Findings
 
 Core contributions and results:
 
-- We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities.
-- For a subset of Active Inference terms, we identify published SUMO files likely to cont...
+- SUMO formalization enables principled cross-domain reasoning for AI systems
+- Upper ontology alignment bridges cognitive science and artificial intelligence through shared category structures
 
 ## Related Works
 

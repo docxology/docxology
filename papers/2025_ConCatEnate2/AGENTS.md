@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Identifies findings: Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction, Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

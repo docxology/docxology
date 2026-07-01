@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation., Demonstrated with Ant Colony Optimization (ACO) on th...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation.., Demonstrated with Ant Colony Optimization (ACO) on th....
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

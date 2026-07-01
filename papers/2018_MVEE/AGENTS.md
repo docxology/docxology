@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
-- Identifies findings: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels?, This presentation introduces the Multilevel Variational Ecology and Evolution (MVE...
+- Extracts methods: Content production, Pedagogical design
+- Identifies findings: MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more.., Uploaded to Zenodo in 2024..
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states., The framework models thoughts as self-organizing agents (thoughtseeds) that compete...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states.., The framework models thoughts as self-organizing agents (thoughtseeds) that compete....
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

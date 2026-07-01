@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments., Active inference is a multiscale approach to behavi...
+- Extracts methods: Active inference agent-based simulation, Markov decision process modeling of foraging
+- Identifies findings: In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments.., Active inference is a multiscale approach to behavi....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

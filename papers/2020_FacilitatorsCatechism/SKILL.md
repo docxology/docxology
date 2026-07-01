@@ -18,10 +18,8 @@ This work addresses topics in **Cognitive Security**: OPORD, operations orders, 
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
-- Trust and integrity modeling
-- Cognitive defense pattern analysis
+- OPORD analysis and catechism-style process design
+- Organizational sensemaking and high-reliability frameworks
 
 ## Key Findings
 

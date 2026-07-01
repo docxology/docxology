@@ -16,10 +16,8 @@
 
 ## Methods
 
+- Active Inference
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
 
 ## Key Findings
 

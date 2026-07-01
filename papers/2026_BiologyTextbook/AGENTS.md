@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Generative textbook scaffold methodology, Modular pedagogical content design
 - Identifies findings: <p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, geneti, Organized as Unit 0 plus Units I&ndash;X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move 
 - Maps contributions to Computational literature
 

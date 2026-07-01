@@ -16,10 +16,9 @@
 
 ## Methods
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Uniparental marker haplotype analysis
+- Population genetic admixture modeling
+- Molecular clock and phylogenetic inference
 
 ## Key Findings
 

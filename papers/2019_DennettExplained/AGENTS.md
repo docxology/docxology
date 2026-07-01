@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens., Analysis of Dennett argues that philos...
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Identifies findings: In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens.., Dennett argues that philos....
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

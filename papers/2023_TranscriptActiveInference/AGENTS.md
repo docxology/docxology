@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Transcript from livestream on July 25, 2023 at the Active Inference Institute., YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu
 - Maps contributions to Active Inference literature
 

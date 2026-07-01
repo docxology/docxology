@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Here we address the scientific study of consciousness by proposing the ant colony as a model system., We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...
+- Extracts methods: Collective behavior and consciousness theory, Multi-agent modeling of ant colony cognition, Comparative neuroethological analysis
+- Identifies findings: Here we address the scientific study of consciousness by proposing the ant colony as a model system.., We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

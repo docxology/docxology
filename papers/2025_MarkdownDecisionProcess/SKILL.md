@@ -18,10 +18,8 @@ This work addresses topics in **Computational**: Markdown Decision Process, docu
 
 Primary methods and techniques applied in this work:
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Software pipeline design
+- Data-driven analysis
 
 ## Key Findings
 

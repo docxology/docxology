@@ -16,15 +16,13 @@
 
 ## Methods
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
-- In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career.
-- Hanks explores how ideas from computational neuroscience have hel...
+- In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career..
+- Hanks explores how ideas from computational neuroscience have hel....
 
 ## Artifacts
 

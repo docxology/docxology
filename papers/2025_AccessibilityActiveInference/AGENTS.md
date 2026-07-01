@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel
 - Maps contributions to Active Inference literature
 

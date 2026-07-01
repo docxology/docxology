@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics., We formalize the scientific process as multi-scale Active Inference, where individual rese...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics.., We formalize the scientific process as multi-scale Active Inference, where individual rese....
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

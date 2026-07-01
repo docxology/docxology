@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework., The paper examines how AI systems ca...
 - Maps contributions to Computational literature
 

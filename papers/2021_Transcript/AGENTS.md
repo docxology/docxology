@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston., The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools.
 - Maps contributions to Active Inference literature
 

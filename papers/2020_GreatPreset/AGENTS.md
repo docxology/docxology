@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior., Through the lens of Active Inferen...
 - Maps contributions to Cognitive Security literature
 

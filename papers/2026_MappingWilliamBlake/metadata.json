@@ -55,20 +55,16 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Digital humanities corpus construction",
+      "description": "Applied digital humanities corpus construction approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
+      "name": "Evidence-ledger provenance tracking",
+      "description": "Applied evidence-ledger provenance tracking approach"
     },
     {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Rights-bounded release workflow",
+      "description": "Applied rights-bounded release workflow approach"
     }
   ],
   "key_findings": [

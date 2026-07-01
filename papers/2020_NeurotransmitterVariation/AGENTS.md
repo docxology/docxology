@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
-- Identifies findings: Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions., Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Identifies findings: Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions.., Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a....
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research., We examine how colony-level informati...
 - Maps contributions to Entomology literature
 

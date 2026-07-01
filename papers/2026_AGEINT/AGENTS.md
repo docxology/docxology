@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: <p>Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machiner, It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source ident
 - Maps contributions to Computational literature
 

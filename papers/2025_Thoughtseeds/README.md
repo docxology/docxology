@@ -17,14 +17,12 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states.
-- The framework models thoughts as self-organizing agents (thoughtseeds) that compete...
+- Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..
+- The framework models thoughts as self-organizing agents (thoughtseeds) that compete....
 
 ## Artifacts
 

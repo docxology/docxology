@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, , Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20
 - Maps contributions to Active Inference literature
 

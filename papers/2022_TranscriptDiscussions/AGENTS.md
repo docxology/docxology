@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
 - Identifies findings: Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp
 - Maps contributions to Active Inference literature
 

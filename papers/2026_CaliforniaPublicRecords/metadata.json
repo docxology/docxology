@@ -45,24 +45,22 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis and discourse mapping",
-      "description": "Applied narrative analysis and discourse mapping methodology"
+      "name": "California Public Records Act (CPRA) legal analysis",
+      "description": "Applied california public records act (cpra) legal analysis approach"
     },
     {
-      "name": "Misinformation detection frameworks",
-      "description": "Applied misinformation detection frameworks methodology"
+      "name": "Open-data portal integration (CKAN/Socrata/ArcGIS)",
+      "description": "Applied open-data portal integration (ckan/socrata/arcgis) approach"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling methodology"
-    },
-    {
-      "name": "Cognitive defense pattern analysis",
-      "description": "Applied cognitive defense pattern analysis methodology"
+      "name": "Government transparency framework evaluation",
+      "description": "Applied government transparency framework evaluation approach"
     }
   ],
   "key_findings": [
-    "See full paper for detailed findings and analysis"
+    "California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records",
+    "CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure",
+    "Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology"
   ],
   "related_papers": [
     "2020_EmergentTeams",

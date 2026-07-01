@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr
 - Maps contributions to Cognitive Security literature
 

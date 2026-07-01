@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
 - Maps contributions to Computational literature
 

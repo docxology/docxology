@@ -14,15 +14,13 @@
 
 ## Methods
 
-- Narrative analysis and discourse mapping
-- Misinformation detection frameworks
+- Narrative analysis
 - Trust and integrity modeling
-- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- An edited volume examining open standards and cognitive security for structuring the information commons.
-- The book addresses how information ecosystems can be designed to promote trust, transparency...
+- An edited volume examining open standards and cognitive security for structuring the information commons..
+- The book addresses how information ecosystems can be designed to promote trust, transparency....
 
 ## Artifacts
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems., We explore communication in located teams and all-...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.., We explore communication in located teams and all-....
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

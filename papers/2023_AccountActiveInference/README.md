@@ -17,14 +17,13 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Bayesian modeling and inference
 
 ## Key Findings
 
-- In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena.
-- This paper argues that developing generative models is more li...
+- This report provides a single-page account of Active Inference modeling..
+- This report was written entirely by hand without any synthetic computational-linguistic intelligences..
+- Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from..
 
 ## Artifacts
 

@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
+- Extracts methods: Uniparental marker haplotype analysis, Population genetic admixture modeling, Molecular clock and phylogenetic inference
 - Identifies findings: Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities
 - Maps contributions to Genetics & Biomedical literature
 

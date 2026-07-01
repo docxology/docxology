@@ -19,16 +19,15 @@ This work addresses topics in **Genetics & Biomedical**: ConCatEnate2.
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction
+- Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience
 
 ## Related Works
 

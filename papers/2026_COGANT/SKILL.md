@@ -19,10 +19,8 @@ This work addresses topics in **Computational**: program analysis, Generalized N
 
 Primary methods and techniques applied in this work:
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Deterministic codebase-to-GNN translation
+- Software architecture pattern extraction
 
 ## Key Findings
 

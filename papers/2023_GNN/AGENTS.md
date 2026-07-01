@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems., GNN provides meta-notational tools for describing any symbolic...
+- Extracts methods: Generalized Notation Notation (GNN) schema design, Graph-based knowledge representation
+- Identifies findings: introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains.., GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models.., In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice..
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

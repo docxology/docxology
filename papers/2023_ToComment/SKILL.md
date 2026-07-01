@@ -18,17 +18,15 @@ This work addresses topics in **Genetics & Biomedical**: rhetorical analysis, im
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing and bioinformatics
-- Phylogenetic and evolutionary analysis
-- Statistical genetics and heritability estimation
-- Molecular mechanism investigation
+- Genomic and bioinformatic analysis
+- Statistical genetics
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives.
-- Building on the DRE3 model, we analyze h...
+- develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives..
+- Building on the DRE3 model, we analyze h....
 
 ## Related Works
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
-- Identifies findings: In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will., Topics covered include neuroscience, genetics, environmental...
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Identifies findings: In this interview, Robert Sapolsky outlines his view on Free Will and related topics.., The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will.., Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system..
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

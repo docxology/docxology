@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Extracts methods: Active Inference, Free energy minimization
 - Identifies findings: We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature., Analysis of The ontology provide...
 - Maps contributions to Active Inference literature
 

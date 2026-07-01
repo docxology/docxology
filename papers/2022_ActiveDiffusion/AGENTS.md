@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Community coordination and governance, Open science infrastructure development, Educational program design
+- Extracts methods: Program coordination, Community governance design
 - Identifies findings: The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models., Analysis of The project, f...
 - Maps contributions to AII Ecosystem literature
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
-- Identifies findings: TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims., Built on feedback from dozens of experts across fields submitted to the University...
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: There is a broadly recognized need for better situational awareness within the information environment.., Each year, millions of articles, books, documents, and datasets are published.., Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims..
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

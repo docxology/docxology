@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Extracts methods: Narrative analysis, Trust and integrity modeling
 - Identifies findings: This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min
 - Maps contributions to Cognitive Security literature
 

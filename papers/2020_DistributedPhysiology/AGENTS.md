@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis
 - Identifies findings: Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals., Analysis of We examine how this...
 - Maps contributions to Entomology literature
 

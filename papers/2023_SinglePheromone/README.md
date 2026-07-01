@@ -18,13 +18,11 @@
 
 - Field observation and behavioral assays
 - Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
 
 ## Key Findings
 
-- We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones.
-- Our model demonstrates that the dynamic...
+- We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones..
+- Our model demonstrates that the dynamic....
 
 ## Artifacts
 

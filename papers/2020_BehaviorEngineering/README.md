@@ -16,15 +16,14 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling and simulation
-- Bayesian inference and belief updating
-- Policy selection and expected free energy
+- Agent-based modeling of collective behavior
+- Behavioral engineering and incentive design
 
 ## Key Findings
 
-- Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales.
-- This paper proposes frameworks for conn...
+- Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and 
+- We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest..
+- Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis..
 
 ## Artifacts
 

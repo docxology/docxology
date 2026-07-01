@@ -19,25 +19,17 @@
   ],
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Active Inference",
+      "description": "Applied active inference approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
-    },
-    {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
     }
   ],
   "key_findings": [
-    "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.",
-    "The system models the scientific discovery process as an inference problem..."
+    "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles..",
+    "The system models the scientific discovery process as an inference problem...."
   ],
   "related_papers": [
     "2023_NSFReporting",

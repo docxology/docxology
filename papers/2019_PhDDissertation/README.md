@@ -14,15 +14,14 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
-- Transcriptomic and gene expression profiling
-- Collective behavior modeling
+- Multi-year field observation of harvester ant colonies
+- Transcriptomic profiling of behavioral variation
+- Quantitative behavioral biology and statistics
 
 ## Key Findings
 
-- This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus).
-- It integrates field behavioral ecology, neuroche...
+- This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)..
+- It integrates field behavioral ecology, neuroche....
 
 ## Artifacts
 

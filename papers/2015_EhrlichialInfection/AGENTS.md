@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
+- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
 - Identifies findings: Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment
 - Maps contributions to Genetics & Biomedical literature
 

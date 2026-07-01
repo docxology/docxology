@@ -60,20 +60,12 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Deterministic software pipeline design",
-      "description": "Applied deterministic software pipeline design methodology"
+      "name": "Deterministic token injection for manuscript generation",
+      "description": "Applied deterministic token injection for manuscript generation approach"
     },
     {
-      "name": "Reproducible workflow orchestration",
-      "description": "Applied reproducible workflow orchestration methodology"
-    },
-    {
-      "name": "Data-driven analysis and visualization",
-      "description": "Applied data-driven analysis and visualization methodology"
-    },
-    {
-      "name": "Infrastructure-as-code methodology",
-      "description": "Applied infrastructure-as-code methodology methodology"
+      "name": "Conditional IMRAD manuscript hydration",
+      "description": "Applied conditional imrad manuscript hydration approach"
     }
   ],
   "key_findings": [

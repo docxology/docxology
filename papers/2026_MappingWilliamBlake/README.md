@@ -16,10 +16,9 @@
 
 ## Methods
 
-- Deterministic software pipeline design
-- Reproducible workflow orchestration
-- Data-driven analysis and visualization
-- Infrastructure-as-code methodology
+- Digital humanities corpus construction
+- Evidence-ledger provenance tracking
+- Rights-bounded release workflow
 
 ## Key Findings
 

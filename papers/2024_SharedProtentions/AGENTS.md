@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
-- Identifies findings: We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference., Protentions are future-directed expectations that shape perception and action; here we formaliz...
+- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Identifies findings: We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.., Protentions are future-directed expectations that shape perception and action; here we formaliz....
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

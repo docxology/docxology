@@ -19,25 +19,17 @@
   ],
   "methods": [
     {
-      "name": "Genomic sequencing and bioinformatics",
-      "description": "Applied genomic sequencing and bioinformatics methodology"
+      "name": "Genomic and bioinformatic analysis",
+      "description": "Applied genomic and bioinformatic analysis approach"
     },
     {
-      "name": "Phylogenetic and evolutionary analysis",
-      "description": "Applied phylogenetic and evolutionary analysis methodology"
-    },
-    {
-      "name": "Statistical genetics and heritability estimation",
-      "description": "Applied statistical genetics and heritability estimation methodology"
-    },
-    {
-      "name": "Molecular mechanism investigation",
-      "description": "Applied molecular mechanism investigation methodology"
+      "name": "Statistical genetics",
+      "description": "Applied statistical genetics approach"
     }
   ],
   "key_findings": [
-    "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.",
-    "The work examines cave paintings and rock art as evidence of early human cognitiv..."
+    "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..",
+    "The work examines cave paintings and rock art as evidence of early human cognitiv...."
   ],
   "related_papers": [
     "2015_CryptoJews",

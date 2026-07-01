@@ -14,7 +14,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: How should you choose the judges, jurors, or reviewers who form a panel — and does
 that upstream choice change how well you can evaluate them without an answer key?, A panel can be selected many ways — by competence, by a representative lottery
 (sortition), by ideological bloc, or at random — and, separately, its noisy
