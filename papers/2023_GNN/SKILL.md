@@ -1,55 +1,55 @@
 ---
 name: "GNN"
-description: "Proficient in Generalized Notation Notation (GNN) for representing and communicating Active Inference models, enhancing interdisciplinary collaboration in cognitive sciences."
-tags: ["active inference", "gnn", "generalized-notation-notation", "meta-notation", "symbolic-systems", "notation-translation"]
+description: "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic..."
+tags: ["gnn", "generalized-notation-notation", "meta-notation", "symbolic-systems", "notation-translation", "formal-representation", "interoperability"]
+domain: "Active Inference"
+citation: "Daniel A. Friedman (2023). *GNN*. Active Inference."
 ---
 
-# Generalized Notation Notation for Active Inference Models
+# GNN
 
 **Daniel A. Friedman** (2023) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **GNN, Generalized Notation Notation, meta-notation, symbolic systems**.
+This work addresses topics in **Active Inference**: GNN, Generalized Notation Notation, meta-notation, symbolic systems.
 
-When applying this skill:
-1. Apply GNN for cross-notation analysis and translation
-1. Design meta-notational frameworks for symbolic system interoperability
-1. Implement computational tools for formal notation representation
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **GNN**
-- **Generalized Notation Notation**
-- **meta-notation**
-- **symbolic systems**
-- **notation translation**
-- **formal representation**
-- **interoperability**
-
-## Methods & Techniques
-
-- Development of GNN as a standardized language for describing Active Inference models.
-- Utilization of ASCII letters and punctuation structured in a Markdown-compliant source file.
-- Presentation of GNN through examples drawn from existing Active Inference tutorials.
-- Incorporation of various aspects of language including ontology, morphology, grammar, and pragmatics.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- GNN facilitates the communication and understanding of complex cognitive models.
-- The structured representation of cognitive models reduces friction in collaboration and sharing among researchers.
-- GNN demonstrates flexibility and expressiveness in modeling Active Inference.
-- The approach encourages further exploration and development in the field of cognitive sciences.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:14Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with GNN, Generalized Notation Notation, meta-notation
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

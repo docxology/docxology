@@ -1,55 +1,56 @@
 ---
 name: "MVEE"
-description: "Expertise in developing frameworks for evolutionary studies, integrating interdisciplinary data, and formalizing complex biological interactions."
-tags: ["presentations, courses & media", "mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo"]
+description: "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
+tags: ["mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo", "variational-methods", "multilevel-selection", "open-ended-evolution"]
+domain: "Presentations & Media"
+citation: "Daniel Ari Friedman (2018). *MVEE*. Presentations & Media."
 ---
 
-# MVEE: A Framework for Evolutionary Studies
+# MVEE
 
-**Daniel Ari Friedman** (2018) · Presentations, Courses & Media
+**Daniel Ari Friedman** (2018) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **MVEE, evolutionary theory, multilevel evolution, phenotypic plasticity**.
+This work addresses topics in **Presentations & Media**: MVEE, evolutionary theory, multilevel evolution, phenotypic plasticity.
 
-When applying this skill:
-1. Apply variational methods to evolutionary and ecological modeling
-1. Integrate multilevel selection theory with developmental and behavioral biology
-1. Design formal frameworks for open-ended evolutionary systems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **MVEE**
-- **evolutionary theory**
-- **multilevel evolution**
-- **phenotypic plasticity**
-- **eco-evo-devo**
-- **variational methods**
-- **multilevel selection**
-- **open-ended evolution**
-
-## Methods & Techniques
-
-- Extends existing theories in Variational Neuroethology.
-- Utilizes a formalized approach to model evolutionary processes.
-- Incorporates interdisciplinary data from biological, social, and computational systems.
-- Analyzes ecological variability over multiple time scales.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Establishes a general framework applicable to various evolutionary studies.
-- Demonstrates the importance of integrating diverse data sources.
-- Identifies key factors influencing evolutionary dynamics.
-- Suggests new avenues for experimental research in evolutionary biology.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:39Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with MVEE, evolutionary theory, multilevel evolution
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,58 +1,56 @@
 ---
-name: "BiologyTextbook"
-description: "Use for the open generative biology textbook — 44 chapters (Unit 0 + I–X), five recurring themes, tested quantitative code modules, paper-based labs, and instructor-build question banks aligned with undergraduate biology competencies."
-tags: ["biology", "open-textbook", "generative-approach", "reproducible-research", "college-of-the-redwoods", "computational-biology", "undergraduate-education", "open-science"]
+name: "Introduction to Biology: A Generative Approach"
+description: "<p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecolo..."
+tags: ["biology"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Introduction to Biology: A Generative Approach*. Computational."
+doi: "10.5281/zenodo.20286478"
 ---
 
 # Introduction to Biology: A Generative Approach
 
-**Daniel Ari Friedman** (2026) - Computational / Biology Education
+**Daniel Ari Friedman** (2026) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with the open textbook **Introduction to Biology: A Generative Approach**, when designing or teaching undergraduate biology courses, or when connecting narrative biology content to tested quantitative code modules.
+This work addresses topics in **Computational**: Biology.
 
-When applying this skill:
+## Methods
 
-1. Ground citations in the Zenodo DOI `10.5281/zenodo.20286478` (version 1.0.0).
-2. Treat the five recurring themes—evolution, information, structure and function, systems and emergence, and the cell—as cross-chapter orientation, not isolated unit labels.
-3. Distinguish narrative explanations from quantitative modules in the companion repository; cite the appropriate layer.
-4. Note that this PDF is an **instructor build** with model answers visible in the question bank.
-5. Link related corpus materials (especially reproducible research infrastructure) before inventing new framing.
+Primary methods and techniques applied in this work:
 
-## Key Concepts
-
-- **Unit 0 + Units I–X** — optional systems/historical/philosophical lens plus traditional molecular-to-ecological sequence
-- **Five themes** — evolution, information, structure and function, systems and emergence, the cell
-- **Evidence-grounded biology** — mechanisms, measurements, and simple models developed together
-- **Code modules by domain** — biochemistry, cell biology, genetics, physiology, ecology, evolution, microbiology, botany, neuroscience
-- **Programmatic figures** — process diagrams generated from tested code, not static artwork alone
-- **Paper-based laboratories** — one lab activity paired with each chapter
-- **Question bank** — recall through synthesis; model answers visible in instructor build
-- **Reproducible artifact** — manuscript maintained via docxology/template pipeline
-
-## Methods & Techniques
-
-- Generative manuscript production with reproducible build pipeline
-- Domain-organized Python modules for quantitative curriculum segments
-- Programmatic figure and diagram generation
-- Inline primary-literature citation with glossary and curriculum-mapping appendices
-- Instructor vs student build variants for assessment materials
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Biology is presented as a discipline where narrative and quantitative constraints are co-developed, not separated into parallel tracks.
-- Forty-four chapters span systems science through ecology while preserving mainstream undergraduate competency alignment.
-- Unit 0 supplies optional systems, historical, and philosophical framing without displacing the core molecular-to-ecological arc.
-- The edition is designed for course adoption (e.g., College of the Redwoods BIOL-1, BIOL-8) with ready-made labs and assessment banks.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20286478
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-06-04T20:45:04Z
 
 ## Prerequisites
 
-- Introductory undergraduate biology or equivalent background
-- Comfort reading simple quantitative models and basic code-module outputs
-- Familiarity with open educational resource adoption workflows (optional)
+- Familiarity with Biology
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related Skills
+## Instructions
 
-- [ReproducibleResearch](../2026_ReproducibleResearch/SKILL.md)
-- [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20286478`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

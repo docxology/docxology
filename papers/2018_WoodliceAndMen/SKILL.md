@@ -1,57 +1,56 @@
 ---
 name: "WoodliceAndMen"
-description: "Expertise in Bayesian modeling and cognitive neuroscience, focusing on the integration of psychological, neural, and biological frameworks to understand cognition and consciousness."
-tags: ["active inference", "free-energy-principle", "karl-friston", "bayesian-brain", "predictive-processing", "markov-blanket"]
+description: "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit..."
+tags: ["free-energy-principle", "karl-friston", "bayesian-brain", "predictive-processing", "markov-blanket", "consciousness", "self-organization", "variational-inference", "philosophy-of-mind"]
+domain: "Active Inference"
+citation: "Karl Friston, Martin Fortier, Daniel A. Friedman (2018). *WoodliceAndMen*. Active Inference."
 ---
 
-# Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
+# WoodliceAndMen
 
 **Karl Friston, Martin Fortier, Daniel A. Friedman** (2018) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Free Energy Principle, Karl Friston, Bayesian brain, predictive processing**.
+This work addresses topics in **Active Inference**: Free Energy Principle, Karl Friston, Bayesian brain, predictive processing.
 
-When applying this skill:
-1. Explain the Free Energy Principle and its intellectual origins
-1. Apply the Markov blanket formalism to understand biological self-organization
-1. Connect predictive processing to consciousness and cognition
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Free Energy Principle**
-- **Karl Friston**
-- **Bayesian brain**
-- **predictive processing**
-- **Markov blanket**
-- **consciousness**
-- **self-organization**
-- **variational inference**
-- **philosophy of mind**
-
-## Methods & Techniques
-
-- Utilizes Bayesian inference to model cognitive processes and perceptual states.
-- Applies variational Bayes for ensemble learning and probability density dynamics.
-- Examines hierarchical structures in the brain to understand spatial and temporal processes in cognition.
-- Analyzes the reduction of surprise and informational entropy in relation to sensory data and hypotheses.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- The free energy principle provides a deflationary account of cognition that emphasizes simplicity.
-- Cognitive states can be modeled as posterior probabilities that evolve through Bayesian belief updating.
-- The framework distinguishes between predictive coding and Bayesian models in terms of data processing and hypothesis updating.
-- The relationship between the free energy principle and predictive coding reveals insights into top-down and bottom-up processing in the brain.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Free Energy Principle, Karl Friston, Bayesian brain
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

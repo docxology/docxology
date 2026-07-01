@@ -1,56 +1,56 @@
 ---
 name: "AIAccountability"
-description: "Expertise in developing adaptive regulatory frameworks for AI technologies, integrating interdisciplinary perspectives to enhance ethical and effective governance."
-tags: ["cognitive security", "ai-accountability", "ntia", "policy-comment", "cognitive-security", "p3if"]
+description: "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int..."
+tags: ["ai-accountability", "ntia", "policy-comment", "cognitive-security", "p3if", "information-risk", "ai-governance", "synthetic-intelligence"]
+domain: "Cognitive Security"
+citation: "Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC) (2023). *AIAccountability*. Cognitive Security."
 ---
 
-# Comments on AI Accountability Policy to NTIA
+# AIAccountability
 
 **Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC)** (2023) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **AI accountability, NTIA, policy comment, cognitive security**.
+This work addresses topics in **Cognitive Security**: AI accountability, NTIA, policy comment, cognitive security.
 
-When applying this skill:
-1. Draft AI governance policy comments using cognitive security frameworks
-1. Apply P3IF to analyze AI accountability challenges
-1. Coordinate multi-organizational responses to federal AI policy requests
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **AI accountability**
-- **NTIA**
-- **policy comment**
-- **cognitive security**
-- **P3IF**
-- **information risk**
-- **AI governance**
-- **synthetic intelligence**
-
-## Methods & Techniques
-
-- Conducted a synthesis of perspectives from various organizations involved in AI and information risk management.
-- Analyzed the implications of blanket regulation versus adaptive regulatory frameworks.
-- Engaged in interdisciplinary discussions to inform recommendations on AI governance.
-- Utilized case studies and examples to illustrate the complexities of AI regulation.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
 ## Key Findings
 
-- Blanket regulation of AI technologies may lead to unintended negative consequences and conflicts.
-- Effective regulation requires a clear understanding of the diverse methodologies and applications of AI.
-- The NTIA can play a crucial role in convening stakeholders to develop adaptive regulatory approaches.
-- Professionalization and insurance structures can enhance the ethical implementation of AI technologies.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:03Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with AI accountability, NTIA, policy comment
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

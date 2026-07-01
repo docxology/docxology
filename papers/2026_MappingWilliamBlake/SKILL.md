@@ -1,33 +1,57 @@
 ---
-name: "MappingWilliamBlake"
-description: "Use for Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.21047573."
+name: "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls"
+description: "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics fro..."
 tags: ["william-blake", "digital-humanities", "corpus-acquisition", "source-provenance", "rights-bounded-release"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls*. Computational."
+doi: "10.5281/zenodo.21047573"
 ---
 
 # Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.21047573`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.1.0` and repository `docxology/blake` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: William Blake, digital humanities, corpus acquisition, source provenance.
 
-## Key Concepts
+## Methods
 
-- **William Blake**
-- **digital humanities**
-- **corpus acquisition**
-- **source provenance**
-- **rights-bounded release**
+Primary methods and techniques applied in this work:
+
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.21047573
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with William Blake, digital humanities, corpus acquisition
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.21047573`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

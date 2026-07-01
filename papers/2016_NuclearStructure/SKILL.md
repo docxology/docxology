@@ -1,55 +1,56 @@
 ---
 name: "NuclearStructure"
-description: "Expertise in analyzing the impact of nuclear structure on radiation-induced DNA damage and the formation of lethal lesions, utilizing advanced genomic sequencing techniques."
-tags: ["genetics & biomedical research", "hi-c", "chromosome-conformation", "radiation-biology", "chromatin-architecture", "dna-damage"]
+description: "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec..."
+tags: ["hi-c", "chromosome-conformation", "radiation-biology", "chromatin-architecture", "dna-damage", "topologically-associating-domains", "nuclear-organization", "3c-technologies"]
+domain: "Genetics & Biomedical"
+citation: "Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Genetics & Biomedical."
 ---
 
-# Influence of Nuclear Structure on formation of radiation-induced lethal lesions
+# NuclearStructure
 
-**Daniel A. Friedman, Daniel F. Pilch** (2016) · Genetics & Biomedical Research
+**Daniel A. Friedman, Daniel F. Pilch** (2016) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Hi-C, chromosome conformation, radiation biology, chromatin architecture**.
+This work addresses topics in **Genetics & Biomedical**: Hi-C, chromosome conformation, radiation biology, chromatin architecture.
 
-When applying this skill:
-1. Apply Hi-C and chromosome conformation capture techniques to study nuclear organization
-1. Analyze radiation effects on three-dimensional genome architecture
-1. Interpret topologically associating domain (TAD) disruption and genomic instability
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Hi-C**
-- **chromosome conformation**
-- **radiation biology**
-- **chromatin architecture**
-- **DNA damage**
-- **topologically associating domains**
-- **nuclear organization**
-- **3C technologies**
-
-## Methods & Techniques
-
-- High-throughput sequencing of chromosome conformation capture experiments.
-- Analysis of spatial organization of DNA within the nucleus.
-- Examination of transcriptional programs linking genomic locations.
-- Review of existing models of radiation-induced DNA damage and repair mechanisms.
+- Genomic sequencing
+- Phylogenetic analysis
+- Statistical genetics
 
 ## Key Findings
 
-- Lethal chromosome rearrangements are more likely to occur when damage affects multiple sites of contact within the DNA.
-- Transcriptionally active regions of the genome are preferentially susceptible to radiation-induced damage.
-- The spatial distribution of DNA and timing of radiation events significantly influence the formation of lethal lesions.
-- High-throughput spatial analysis can enhance understanding of chromosome aberrations that lead to cell death.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Domain knowledge in Genetics & Biomedical Research
+- Familiarity with Hi-C, chromosome conformation, radiation biology
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

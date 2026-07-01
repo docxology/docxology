@@ -1,56 +1,56 @@
 ---
 name: "BlakeFuller"
-description: "Expertise in fostering comprehensivity through interdisciplinary inquiry and collaborative engagement, enabling a multi-perspectival understanding of complex systems."
-tags: ["art", "william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision"]
+description: "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's..."
+tags: ["william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision", "art-science-synthesis", "52-living-ideas", "juxtaposition"]
+domain: "Art & Synergetics"
+citation: "Daniel A. Friedman (2023). *BlakeFuller*. Art & Synergetics."
 ---
 
-# William Blake & Buckminster Fuller: Lives in Juxtaposition
+# BlakeFuller
 
-**Daniel A. Friedman** (2023) · Art
+**Daniel A. Friedman** (2023) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **William Blake, Buckminster Fuller, comprehensivity, design science**.
+This work addresses topics in **Art & Synergetics**: William Blake, Buckminster Fuller, comprehensivity, design science.
 
-When applying this skill:
-1. Analyze Blake and Fuller through the lens of comprehensivity
-1. Identify structural parallels between visionary thinkers across eras
-1. Present art-science synthesis to interdisciplinary audiences
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **William Blake**
-- **Buckminster Fuller**
-- **comprehensivity**
-- **design science**
-- **prophetic vision**
-- **art-science synthesis**
-- **52 Living Ideas**
-- **juxtaposition**
-
-## Methods & Techniques
-
-- Utilizes a draft linearized snapshot perspective for presenting ideas.
-- Engages in ongoing discussions and meetings to refine concepts.
-- Integrates multimedia and philosophical frameworks to enhance understanding.
-- Explores ontologies related to Fuller and Blake within the context of Active Inference.
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
 
 ## Key Findings
 
-- Comprehensivity is essential for developing a broad and deep understanding of the world.
-- The ability to question, conceptualize, and act is crucial for effective engagement.
-- Recognizing and addressing pathologies related to comprehensivity is necessary for maintaining relevance.
-- A comprehensive approach fosters the creation of new possibilities and insights.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:11Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with William Blake, Buckminster Fuller, comprehensivity
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

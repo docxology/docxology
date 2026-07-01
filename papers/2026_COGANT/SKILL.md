@@ -1,28 +1,57 @@
 ---
-name: "COGANT"
-description: "Use for COGANT: Deterministic Codebase-to-GNN Translation, a Zenodo publication (paired with the ActiveInferenceInstitute/COGANT repository) with DOI 10.5281/zenodo.20705351."
-tags: ["program-analysis", "generalized-notation-notation", "intermediate-representation", "active-inference", "reproducible-research"]
+name: "COGANT: Deterministic Codebase-to-GNN Translation"
+description: "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN). It is an evidence compiler: it propaga..."
+tags: ["program-analysis", "generalized-notation-notation", "gnn", "intermediate-representation", "code-property-graph", "active-inference", "reproducible-research", "codebase-to-model-translation", "cognitive-ecosystem-modeling"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *COGANT: Deterministic Codebase-to-GNN Translation*. Computational."
+doi: "10.5281/zenodo.20705350"
 ---
 
 # COGANT: Deterministic Codebase-to-GNN Translation
 
+**Daniel Ari Friedman** (2026) · Computational
+
+## Context
+
+This work addresses topics in **Computational**: program analysis, Generalized Notation Notation, GNN, intermediate representation.
+
+## Methods
+
+Primary methods and techniques applied in this work:
+
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20705350
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
+
+## Prerequisites
+
+- Familiarity with program analysis, Generalized Notation Notation, GNN
+- Background in Computational fundamentals
+- Access to source repository: N/A
+
 ## Instructions
 
-Use this skill when working with the publication **COGANT: Deterministic Codebase-to-GNN Translation** or its archival record.
+When working with this paper:
 
-1. Ground citations in DOI `10.5281/zenodo.20705351` (concept DOI `10.5281/zenodo.20705350`).
-2. Treat the Zenodo record as the archival source and ActiveInferenceInstitute/COGANT as the code home.
-3. Remember: "GNN" denotes **Generalized Notation Notation**, the Active Inference Institute model format — not graph neural networks.
-
-## Key Concepts
-
-- **program analysis** — fixpoint propagation of reviewable program facts
-- **Generalized Notation Notation (GNN)** — Active Inference model artifact format
-- **intermediate representation** — confidence- and provenance-carrying program graph
-- **active inference** — 7 mapping kinds; Markov-blanket structural partition
-- **reproducible research** — forward→reverse→forward roundtrip evidence
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+1. Reference the DOI for citation: `10.5281/zenodo.20705350`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

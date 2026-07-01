@@ -1,61 +1,56 @@
 ---
-name: "BlakeJiang"
-description: "Use for interpreting the Blake/Jiang essay on AI critique, single vision, consciousness capture, and Active Inference prior dominance."
-tags: ["art", "william-blake", "active-inference", "ai-critique", "cognitive-security", "single-vision", "generative-models"]
+name: "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
+description: "Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance."
+tags: ["william-blake", "active-inference", "artificial-intelligence", "cognitive-science", "free-energy-principle", "ai-architecture", "consciousness-capture", "generative-models", "newtons-sleep", "single-vision"]
+domain: "Art & Synergetics"
+citation: "Daniel Ari Friedman (2026). *The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision*. Art & Synergetics."
 ---
 
-# The Architecture of False Gods
+# The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision
 
-**Daniel Ari Friedman** (2026) - Art & Synergetics / Active Inference
+**Daniel Ari Friedman** (2026) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with the paper **The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision** or when connecting William Blake's perceptual theory to contemporary AI critique and Active Inference.
+This work addresses topics in **Art & Synergetics**: William Blake, Active Inference, Artificial Intelligence, Cognitive Science.
 
-When applying this skill:
+## Methods
 
-1. Ground citations in the Zenodo DOI `10.5281/zenodo.20144984`.
-2. Treat "Single Vision", "consciousness capture", and "pathological prior dominance" as aligned concepts, not identical technical terms.
-3. Distinguish interpretive synthesis from formal Active Inference modeling.
-4. Link related corpus materials before inventing new framing.
+Primary methods and techniques applied in this work:
 
-## Key Concepts
-
-- William Blake
-- Professor Jiang Xueqin
-- Single Vision
-- Newton's Sleep
-- consciousness capture
-- pathological prior dominance
-- Active Inference
-- Free Energy Principle
-- generative models
-- persuasion machinery
-- edge-case suppression
-
-## Methods & Techniques
-
-- Cross-framework conceptual mapping
-- Art-philosophy synthesis
-- AI critique through predictive-processing vocabulary
-- Terminology alignment across Blake studies, education commentary, and Active Inference
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- The essay identifies a shared concern with cognitive closure across Blake, Jiang, and Active Inference.
-- Jiang's critiques of AI persuasion and data sanitization are mapped onto generative-model dynamics.
-- Blake's "Single Vision" is used as a historical language for overly rigid top-down expectation.
-- The piece functions as a bridge text rather than a formal computational model.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Familiarity with William Blake's critique of mechanistic perception
-- Basic Active Inference and Free Energy Principle vocabulary
-- Comfort distinguishing metaphorical alignment from mathematical equivalence
+- Familiarity with William Blake, Active Inference, Artificial Intelligence
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## Related Skills
+## Instructions
 
-- [DoorsOfPerception](../2026_DoorsOfPerception/SKILL.md)
-- [BeforePragmatism](../2026_BeforePragmatism/SKILL.md)
-- [BlakeFuller](../2023_BlakeFuller/SKILL.md)
-- [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

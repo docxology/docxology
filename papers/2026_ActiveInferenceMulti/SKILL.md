@@ -1,33 +1,57 @@
 ---
-name: "ActiveInferenceMulti"
-description: "Use for Active Inference Multi-Track Exemplar, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20417021."
+name: "Active Inference Multi-Track Exemplar"
+description: "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections. The methodological contribution is a..."
 tags: ["active-inference", "pymdp", "sophisticated-inference", "generalized-notation-notation", "lean"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Active Inference Multi-Track Exemplar*. Computational."
+doi: "10.5281/zenodo.20417021"
 ---
 
 # Active Inference Multi-Track Exemplar
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **Active Inference Multi-Track Exemplar** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20417021`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.3.0` and repository `docxology/template_active_inference` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: active inference, pymdp, sophisticated inference, generalized notation notation.
 
-## Key Concepts
+## Methods
 
-- **active inference**
-- **pymdp**
-- **sophisticated inference**
-- **generalized notation notation**
-- **lean**
+Primary methods and techniques applied in this work:
+
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20417021
+- PDF SHA-256: f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with active inference, pymdp, sophisticated inference
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20417021`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

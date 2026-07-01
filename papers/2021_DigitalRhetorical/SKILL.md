@@ -1,55 +1,56 @@
 ---
 name: "DigitalRhetorical"
-description: "Expertise in analyzing digital discourse through the integration of rhetorical and ecological frameworks, focusing on the impact of image memes on public narratives."
-tags: ["cognitive security", "digital-rhetoric", "image-memes", "dre3-model", "narrative-ecosystems", "rhetorical-ecology"]
+description: "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model..."
+tags: ["digital-rhetoric", "image-memes", "dre3-model", "narrative-ecosystems", "rhetorical-ecology", "sensemaking", "computational-discourse-analysis"]
+domain: "Cognitive Security"
+citation: "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2021). *DigitalRhetorical*. Cognitive Security."
 ---
 
-# Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse
+# DigitalRhetorical
 
 **Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2021) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **digital rhetoric, image memes, DRE3 model, narrative ecosystems**.
+This work addresses topics in **Cognitive Security**: digital rhetoric, image memes, DRE3 model, narrative ecosystems.
 
-When applying this skill:
-1. Apply rhetorical analysis to digital image meme ecosystems
-1. Model information ecosystems using the DRE3 framework
-1. Design computational systems for analyzing digital discourse
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **digital rhetoric**
-- **image memes**
-- **DRE3 model**
-- **narrative ecosystems**
-- **rhetorical ecology**
-- **sensemaking**
-- **computational discourse analysis**
-
-## Methods & Techniques
-
-- Utilizes a rhetorical approach to analyze message features and audience engagement.
-- Applies an ecosystem approach to trace narratives across digital platforms and media types.
-- Introduces the DRE3 model for systematic analysis of digital discourse.
-- Explores implications for the design of computational analysis systems for digital rhetoric.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
 ## Key Findings
 
-- Image memes play a crucial role in shaping public discourse and destabilizing traditional sources of information.
-- The integration of rhetorical and ecological analyses reveals complex interactions that influence public beliefs and actions.
-- Rhetorical features of digital artifacts encourage superficial engagement with information.
-- A nuanced understanding of rhetorical forms can help address the challenges of the digital information crisis.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:47Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with digital rhetoric, image memes, DRE3 model
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,33 +1,56 @@
 ---
-name: "TemplateTextbook"
-description: "Use for The Template Textbook, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533125."
-tags: ["open-textbook", "modular-manuscript", "reproducible-publishing", "computational-backbone", "python"]
+name: "The Template Textbook"
+description: "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. --- Associa..."
+tags: ["templatetextbook"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *The Template Textbook*. Computational."
+doi: "10.5281/zenodo.20533125"
 ---
 
 # The Template Textbook
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **The Template Textbook** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20533125`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.1.0` and repository `docxology/template_textbook` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: TemplateTextbook.
 
-## Key Concepts
+## Methods
 
-- **open textbook**
-- **modular manuscript**
-- **reproducible publishing**
-- **computational backbone**
-- **Python**
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20533125
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with TemplateTextbook
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20533125`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

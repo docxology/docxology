@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring — Daniel Ari Friedman</title>
-    <meta name="description" content="No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work…">
+    <meta name="description" content="This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv…">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -16,7 +16,7 @@
     <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
     <meta property="og:type" content="article">
     <meta property="og:title" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring">
-    <meta property="og:description" content="No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work…">
+    <meta property="og:description" content="This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
     <meta property="og:image:alt" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring">
-    <meta name="twitter:description" content="No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work…">
+    <meta name="twitter:description" content="This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring — Daniel Ari Friedman">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,15 +93,7 @@
         },
         {
             "@type": "DefinedTerm",
-            "name": "Free Energy Principle"
-        },
-        {
-            "@type": "DefinedTerm",
             "name": "meta-analysis"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "living literature review"
         },
         {
             "@type": "DefinedTerm",
@@ -109,15 +101,23 @@
         },
         {
             "@type": "DefinedTerm",
-            "name": "LLM extraction"
+            "name": "assertion extraction"
         },
         {
             "@type": "DefinedTerm",
-            "name": "hypothesis scoring"
+            "name": "citation-weighted scoring"
         },
         {
             "@type": "DefinedTerm",
-            "name": "knowledge graph"
+            "name": "literature review architecture"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Free Energy Principle"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "computational bibliography"
         }
     ],
     "genre": "Paper",
@@ -146,21 +146,18 @@
         "@type": "Organization",
         "name": "Active Inference Journal"
     },
-    "abstract": "No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work presents a living meta-analysis framework: literature is retrieved from arXiv, Semantic Scholar, and OpenAlex and deduplicated ( N = 819 in v2) via a canonical identifier hierarchy (DOI arXiv ID Semantic Scholar ID OpenAlex ID). Papers are classified into a three-tier taxonomy (A: core theory; B: tools and translation; C: application domains) across eight categories. An LLM-powered pipeline evaluates each abstract against eight core hypotheses, emitting structured nanopublications (directionality, confidence, reasoning) that populate an RDF-compatible knowledge graph scored by a citation-weighted evidence function. All extractions are machine-generated and not fully manually validated; hypothesis scores are preliminary and are most useful fo",
+    "abstract": "This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports relativ...",
     "keywords": [
         "Active Inference",
-        "Free Energy Principle",
         "meta-analysis",
-        "living literature review",
         "nanopublications",
-        "LLM extraction",
-        "hypothesis scoring",
-        "knowledge graph",
-        "OpenAlex",
-        "Semantic Scholar",
-        "arXiv"
+        "assertion extraction",
+        "citation-weighted scoring",
+        "literature review architecture",
+        "Free Energy Principle",
+        "computational bibliography"
     ],
-    "description": "Multi-source retrieval, identifier-based deduplication, and a three-tier (A/B/C) taxonomy for mapping the field. LLM-driven assertion extraction into nanopublications wired for RDF-style graphs and queryable evidence landscapes. Citation-weighted scoring over eight hypotheses with explicit reporting of consensus vs. debate structure and automation caveats. Open pipeline suitable for continuous (living) updates as new papers appear. Corpus construction from arXiv, Semantic Scholar, and OpenAlex; hierarchical deduplication of records. Taxonomic labeling (eight categories under A/B/C); complementary topic modeling (e.g., NMF) and citation-network views. LLM evaluation of abstracts against eight",
+    "description": "See full paper for detailed findings and analysis Free energy minimization Generative modeling Bayesian inference",
     "hasPart": {
         "@type": "CreativeWork",
         "name": "Local paper documentation",
@@ -236,15 +233,15 @@
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                <p>No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle literature at scale. This work presents a living meta-analysis framework: literature is retrieved from arXiv, Semantic Scholar, and OpenAlex and deduplicated ( N = 819 in v2) via a canonical identifier hierarchy (DOI arXiv ID Semantic Scholar ID OpenAlex ID). Papers are classified into a three-tier taxonomy (A: core theory; B: tools and translation; C: application domains) across eight categories. An LLM-powered pipeline evaluates each abstract against eight core hypotheses, emitting structured nanopublications (directionality, confidence, reasoning) that populate an RDF-compatible knowledge graph scored by a citation-weighted evidence function. All extractions are machine-generated and not fully manually validated; hypothesis scores are preliminary and are most useful fo</p>
-                <div class="keyword-row"><span>Active Inference</span><span>Free Energy Principle</span><span>meta-analysis</span><span>living literature review</span><span>nanopublications</span><span>LLM extraction</span><span>hypothesis scoring</span><span>knowledge graph</span><span>OpenAlex</span><span>Semantic Scholar</span><span>arXiv</span></div>
+                <p>This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports relativ...</p>
+                <div class="keyword-row"><span>Active Inference</span><span>meta-analysis</span><span>nanopublications</span><span>assertion extraction</span><span>citation-weighted scoring</span><span>literature review architecture</span><span>Free Energy Principle</span><span>computational bibliography</span></div>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
             <div class="meta-grid">
-                <div class="work-detail"><strong>Findings / Concepts</strong><ul><li>Multi-source retrieval, identifier-based deduplication, and a three-tier (A/B/C) taxonomy for mapping the field.</li><li>LLM-driven assertion extraction into nanopublications wired for RDF-style graphs and queryable evidence landscapes.</li><li>Citation-weighted scoring over eight hypotheses with explicit reporting of consensus vs. debate structure and automation caveats.</li><li>Open pipeline suitable for continuous (living) updates as new papers appear.</li></ul></div>
-                <div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Corpus construction from arXiv, Semantic Scholar, and OpenAlex; hierarchical deduplication of records.</li><li>Taxonomic labeling (eight categories under A/B/C); complementary topic modeling (e.g., NMF) and citation-network views.</li><li>LLM evaluation of abstracts against eight hypotheses; nanopublication records with directionality, confidence, and rationale.</li><li>Graph-level citation-weighted aggregation; interpretive emphasis on relative tiers and biases (publication bias, linguistic asymmetry) per manuscript discussion.</li><li>Reproducible implementation: https://github.com/ActiveInferenceInstitute/act inf metaanalysis</li></ul></div>
+                <div class="work-detail"><strong>Findings / Concepts</strong><ul><li>See full paper for detailed findings and analysis</li></ul></div>
+                <div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Free energy minimization</li><li>Generative modeling</li><li>Bayesian inference</li></ul></div>
             </div>
         </section>
         <section class="section section-alt">

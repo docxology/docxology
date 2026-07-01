@@ -1,33 +1,57 @@
 ---
-name: "MusicNeverStopped"
-description: "Use for The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20482026."
+name: "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation"
+description: "<p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category-theoretic interpretation of the performance graph..."
 tags: ["grateful-dead", "setlist-data", "category-theory", "music-information-retrieval", "reproducible-data-compendium"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation*. Computational."
+doi: "10.5281/zenodo.20482025"
 ---
 
 # The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20482026`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.0` and repository `docxology/grateful_data` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: grateful dead, setlist data, category theory, music information retrieval.
 
-## Key Concepts
+## Methods
 
-- **grateful dead**
-- **setlist data**
-- **category theory**
-- **music information retrieval**
-- **reproducible data compendium**
+Primary methods and techniques applied in this work:
+
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20482025
+- PDF SHA-256: 296b3b5c5e9f3d628e15ae5d467dd5cc418bd018f0166194c9494b33b3367dda
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with grateful dead, setlist data, category theory
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20482025`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

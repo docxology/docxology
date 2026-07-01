@@ -1,57 +1,56 @@
 ---
 name: "AntGenetics"
-description: "Expertise in ant genetics, focusing on the interplay between genetic, epigenetic, and environmental factors influencing ant behavior and physiology."
-tags: ["entomology", "ants", "behavioral-genetics", "genomics", "colony-organization", "caste-determination"]
+description: "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning..."
+tags: ["ants", "behavioral-genetics", "genomics", "colony-organization", "caste-determination", "division-of-labor", "foraging-gene", "social-insects", "pheromone-communication"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Deborah M. Gordon (2016). *AntGenetics*. Entomology."
 ---
 
-# Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior
+# AntGenetics
 
 **Daniel A. Friedman, Deborah M. Gordon** (2016) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **ants, behavioral genetics, genomics, colony organization**.
+This work addresses topics in **Entomology**: ants, behavioral genetics, genomics, colony organization.
 
-When applying this skill:
-1. Synthesize ant behavioral genetics across multiple levels of biological organization
-1. Evaluate the molecular underpinnings of caste determination and division of labor
-1. Apply comparative genomic approaches to study social insect evolution
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **ants**
-- **behavioral genetics**
-- **genomics**
-- **colony organization**
-- **caste determination**
-- **division of labor**
-- **foraging gene**
-- **social insects**
-- **pheromone communication**
-
-## Methods & Techniques
-
-- Utilizes quantitative genetic approaches to assess heritability of task performance.
-- Employs transcriptomic studies to analyze gene expression patterns.
-- Conducts phylogenetic analyses of DNA sequence homology.
-- Investigates epigenetic mechanisms affecting gene regulation.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Demonstrates significant transcriptomic and epigenetic differences between reproductive and sterile females, as well as between males and females.
-- Establishes a genetic association with reproductive status in certain ant species.
-- Finds evidence of heritability in task performance among ant workers.
-- Identifies the role of gene expression in various behaviors, including foraging and response to queens.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with ants, behavioral genetics, genomics
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

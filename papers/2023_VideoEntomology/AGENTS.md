@@ -1,55 +1,39 @@
-# AGENTS.md — Experimental Entomology in the Age of Video
+# AGENTS.md — VideoEntomology
 
-**Paper**: Experimental Entomology in the Age of Video (2023)
-**Area**: Entomology
+**Paper**: VideoEntomology (2023)
+**Domain**: Entomology
 **Authors**: Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Experimental Entomology in the Age of Video
-**Tasks**:
-- Analyze core argument: We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyp...
-- Evaluate: Reviews video technology applications in experimental entomology
-- Evaluate: Identifies best practices for video-based insect behavioral analysis
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for VideoEntomology
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Video-based behavioral tracking
-- Assess and document: Automated behavioral phenotyping
-- Assess and document: Computer vision for entomology
-- Assess and document: High-throughput behavioral analysis
+### 🔬 RESEARCHER
+- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Entomology literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this entomology work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Entomology concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: video entomology, behavioral tracking, automated phenotyping, insect behavior, experimental methods
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects VideoEntomology to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2023_VideoEntomology.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

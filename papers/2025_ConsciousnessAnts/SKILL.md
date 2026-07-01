@@ -1,53 +1,56 @@
 ---
 name: "ConsciousnessAnts"
-description: "Expertise in analyzing collective intelligence and consciousness in non-human entities, integrating philosophical and scientific perspectives."
-tags: ["entomology", "consciousness", "ant-colonies", "ant-colony-test", "information-integration", "collective-cognition"]
+description: "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level informati..."
+tags: ["consciousness", "ant-colonies", "ant-colony-test", "information-integration", "collective-cognition", "meta-cognition"]
+domain: "Entomology"
+citation: "Daniel A. Friedman (2025). *ConsciousnessAnts*. Entomology."
 ---
 
-# Towards a Science of Consciousness and Social Complexity... For Ants
+# ConsciousnessAnts
 
 **Daniel A. Friedman** (2025) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **consciousness, ant colonies, Ant Colony Test, information integration**.
+This work addresses topics in **Entomology**: consciousness, ant colonies, Ant Colony Test, information integration.
 
-When applying this skill:
-1. Evaluate consciousness criteria in distributed biological systems
-1. Analyze collective cognition and information integration in ant colonies
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **consciousness**
-- **ant colonies**
-- **Ant Colony Test**
-- **information integration**
-- **collective cognition**
-- **meta-cognition**
-
-## Methods & Techniques
-
-- Literature review of current theories on consciousness and collective behavior.
-- Philosophical analysis of the concept of mind in relation to ant colonies.
-- Comparative analysis of ant behavior and cognitive processes.
-- Interdisciplinary approach combining insights from biology, philosophy, and cognitive science.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Ant colonies exhibit behaviors that suggest a form of collective decision-making.
-- The concept of consciousness may need to be redefined to include collective entities.
-- Philosophical implications challenge traditional views on individual versus collective minds.
-- Further research is needed to fully understand the cognitive capabilities of social insects.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with consciousness, ant colonies, Ant Colony Test
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

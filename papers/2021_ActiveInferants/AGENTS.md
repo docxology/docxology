@@ -1,57 +1,39 @@
-# AGENTS.md — Active Inferants: An Active Inference Framework for Ant Colony Behavior
+# AGENTS.md — ActiveInferants
 
-**Paper**: Active Inferants: An Active Inference Framework for Ant Colony Behavior (2021)
-**Area**: Entomology
+**Paper**: ActiveInferants (2021)
+**Domain**: Entomology
 **Authors**: Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Active Inferants: An Active Inference Framework for Ant Colony Behavior
-**Tasks**:
-- Analyze core argument: In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. A...
-- Evaluate: First active inference model of ant colony foraging behavior
-- Evaluate: Simulates trail formation via stigmergic MDP
-- Evaluate: Demonstrates T-maze paradigm recovery through free energy minimization
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ActiveInferants
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Active Inference MDP modeling
-- Assess and document: Markov decision process specification
-- Assess and document: In silico simulation
-- Assess and document: Stigmergic decision-making modeling
-- Assess and document: T-maze paradigm simulation
+### 🔬 RESEARCHER
+- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Entomology literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this entomology work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Entomology concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: active inference, ant foraging, Markov decision process, stigmergy, T-maze
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects ActiveInferants to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2021_ActiveInferants.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

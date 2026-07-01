@@ -1,57 +1,39 @@
-# AGENTS.md — The physiology of forager hydration and variation among harvester ant colonies
+# AGENTS.md — ForagerHydration
 
-**Paper**: The physiology of forager hydration and variation among harvester ant colonies (2019)
-**Area**: Entomology
+**Paper**: ForagerHydration (2019)
+**Domain**: Entomology
 **Authors**: Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of The physiology of forager hydration and variation among harvester ant colonies
-**Tasks**:
-- Analyze core argument: Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds coll...
-- Evaluate: Shows hydration directly increases foraging propensity in harvester ants
-- Evaluate: Links desiccation sensitivity to colony reproductive success
-- Evaluate: Demonstrates colony-level variation in water management strategy
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ForagerHydration
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Field hydration experiments
-- Assess and document: Desiccation tolerance assays
-- Assess and document: Colony behavioral monitoring
-- Assess and document: Statistical analysis of colony-level variation
-- Assess and document: Long-term colony census data
+### 🔬 RESEARCHER
+- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Entomology literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this entomology work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Entomology concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: Pogonomyrmex barbatus, desiccation physiology, foraging behavior, water balance, colony variation
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects ForagerHydration to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2019_ForagerHydration.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

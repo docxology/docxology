@@ -1,49 +1,56 @@
 ---
 name: "BioFirm"
 description: "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active i..."
-tags: ["presentations, courses & media", "biofirm", "bioregional-stewardship", "active-inference", "organizational-modeling", "sustainability"]
+tags: ["biofirm", "bioregional-stewardship", "active-inference", "organizational-modeling", "sustainability", "adaptive-management"]
+domain: "Presentations & Media"
+citation: "Daniel A. Friedman (2024). *BioFirm*. Presentations & Media."
 ---
 
-# BioFirm Development at Applied Active Inference Symposium 2024
+# BioFirm
 
-**Daniel A. Friedman** (2024) · Presentations, Courses & Media
+**Daniel A. Friedman** (2024) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **BioFirm, bioregional stewardship, Active Inference, organizational modeling**.
+This work addresses topics in **Presentations & Media**: BioFirm, bioregional stewardship, Active Inference, organizational modeling.
 
-When applying this skill:
-1. Apply Active Inference to bioregional organizational design
-1. Model adaptive organizational systems for sustainability
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **BioFirm**
-- **bioregional stewardship**
-- **Active Inference**
-- **organizational modeling**
-- **sustainability**
-- **adaptive management**
-
-## Methods & Techniques
-
-- Active Inference organizational modeling
-- Bioregional analysis
-- Adaptive systems design
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Develops BioFirm framework for bioregional stewardship via Active Inference
-- Models organizational governance as biological adaptive systems
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:24Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with BioFirm, bioregional stewardship, Active Inference
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

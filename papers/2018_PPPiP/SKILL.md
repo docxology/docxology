@@ -1,57 +1,56 @@
 ---
 name: "PPPiP"
-description: "Expertise in utilizing artistic practices, specifically Partner Pen Play in Parallel (PPPiP), to enhance emotional intimacy and relationship dynamics through collaborative drawing."
-tags: ["art", "pppip", "art-therapy", "improvisation", "intimate-relationships", "affective-neuroscience"]
+description: "Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on..."
+tags: ["pppip", "art-therapy", "improvisation", "intimate-relationships", "affective-neuroscience", "creativity", "dyadic-interaction", "sexology", "controlled-novelty"]
+domain: "Art & Synergetics"
+citation: "Alexandra Mikhailova, Daniel A. Friedman (2018). *PPPiP*. Art & Synergetics."
 ---
 
-# Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
+# PPPiP
 
-**Alexandra Mikhailova, Daniel A. Friedman** (2018) · Art
+**Alexandra Mikhailova, Daniel A. Friedman** (2018) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **PPPiP, art therapy, improvisation, intimate relationships**.
+This work addresses topics in **Art & Synergetics**: PPPiP, art therapy, improvisation, intimate relationships.
 
-When applying this skill:
-1. Design interdisciplinary well-being interventions bridging art and neuroscience
-1. Synthesize evidence from art therapy, affective neuroscience, and sexology
-1. Apply the concept of controlled novelty in interpersonal relationship contexts
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **PPPiP**
-- **art therapy**
-- **improvisation**
-- **intimate relationships**
-- **affective neuroscience**
-- **creativity**
-- **dyadic interaction**
-- **sexology**
-- **controlled novelty**
-
-## Methods & Techniques
-
-- Describes PPPiP as the act of two individuals drawing together on the same sheet of paper.
-- Utilizes insights from art therapy, sexology, and affective neuroscience to support the practice.
-- Emphasizes the non-clinical, improvisational nature of PPPiP compared to traditional art therapy.
-- Explores the impact of joint attention and neural synchrony during the drawing process.
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
 
 ## Key Findings
 
-- PPPiP encourages emotional expression and enhances shared experiences in relationships.
-- The technique is accessible and scalable, requiring only basic materials like pen and paper.
-- Evidence suggests that PPPiP can mitigate the effects of technoference in relationships.
-- Joint attention during PPPiP sessions may lead to increased neural synchrony and prosocial behavior.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with PPPiP, art therapy, improvisation
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

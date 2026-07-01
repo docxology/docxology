@@ -1,23 +1,39 @@
-# AGENTS.md - Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
+# AGENTS.md — Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
 
 **Paper**: Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts (2026)
-**DOI**: [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638)
-**Concept DOI**: [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638)
-**Version DOI**: [10.5281/zenodo.20786639](https://doi.org/10.5281/zenodo.20786639)
-**Zenodo record**: https://zenodo.org/records/20786639
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo concept DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for TemplateMadlib
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20786638
-- **Source**: Zenodo record paired with GitHub repository https://github.com/docxology/template_madlib
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

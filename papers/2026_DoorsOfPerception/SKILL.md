@@ -1,53 +1,56 @@
 ---
 name: "DoorsOfPerception"
-description: "Expertise in synthesizing philosophical and cognitive science concepts to enhance understanding of perception and predictive modeling."
-tags: ["art", "william-blake", "active-inference", "perception", "prediction", "thematic-atlas"]
+description: "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atl..."
+tags: ["william-blake", "active-inference", "perception", "prediction", "thematic-atlas", "prophetic-vision", "generative-models", "markov-blankets"]
+domain: "Art & Synergetics"
+citation: "Daniel Ari Friedman (2026). *DoorsOfPerception*. Art & Synergetics."
 ---
 
-# The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing
+# DoorsOfPerception
 
-**Daniel Ari Friedman** (2026) · Art
+**Daniel Ari Friedman** (2026) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **William Blake, Active Inference, perception, prediction**.
+This work addresses topics in **Art & Synergetics**: William Blake, Active Inference, perception, prediction.
 
-When applying this skill:
-1. Map between artistic vision and mathematical frameworks of Active Inference
-1. Apply the Thematic Atlas methodology to art-science synthesis
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **William Blake**
-- **Active Inference**
-- **perception**
-- **prediction**
-- **Thematic Atlas**
-- **prophetic vision**
-- **generative models**
-- **Markov blankets**
-
-## Methods & Techniques
-
-- Utilizes a thematic analysis to draw parallels between Blake's concepts and Active Inference.
-- Applies hierarchical generative models to explain cognitive processes.
-- Employs the Free Energy Principle to frame discussions on perception and action.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Demonstrates that Blake's ideas can inform contemporary cognitive science and Active Inference.
-- Suggests that perception is deeply intertwined with predictive processing and imagination.
-- Highlights the role of shared generative models in collective cognition.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:26:09Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with William Blake, Active Inference, perception
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

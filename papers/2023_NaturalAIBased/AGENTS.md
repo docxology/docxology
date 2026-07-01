@@ -1,21 +1,39 @@
-# AGENTS.md - A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
+# AGENTS.md — A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
 
 **Paper**: A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance (2023)
-**DOI**: [10.5281/zenodo.10360148](https://doi.org/10.5281/zenodo.10360148)
-**Zenodo record**: https://zenodo.org/records/10360148
+**Domain**: Computational
+**Authors**: John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for NaturalAIBased
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/10360148
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

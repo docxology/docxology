@@ -1,71 +1,55 @@
 ---
 name: "EhrlichialInfection"
-description: "Expertise in exploring the intersection of infectious diseases and hematological disorders, with a focus on the potential therapeutic applications of antibiotics in treating leukemia."
+description: "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
 tags: ["ehrlichia", "anaplasma", "leukemia", "intracellular-parasites", "apoptosis-suppression", "rifampin", "hematological-malignancy"]
+domain: "Genetics & Biomedical"
+citation: "Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo (2015). *EhrlichialInfection*. Genetics & Biomedical."
 ---
 
-# SKILL.md — Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?
+# EhrlichialInfection
 
-**Paper**: Could ehrlichial infection cause some of the changes associated with leukemia? (2015)
-**Area**: Genetics / Biomedical Research
-**Authors**: Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo
+**Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo** (2015) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when investigating infectious etiologies of hematological malignancies or evaluating hypothesis-driven medical research linking microbial pathogens to cancer. Apply the analytical framework here—particularly the evidence for Ehrlichia/Anaplasma-mediated apoptosis suppression and transcriptomic disruption in bone marrow stem cells—when assessing research on intracellular parasite pathogenesis or when designing clinical studies testing antibiotic interventions (rifamycins) for leukemia-associated infections.
+This work addresses topics in **Genetics & Biomedical**: Ehrlichia, Anaplasma, leukemia, myelodysplastic syndromes.
 
-## Core Skills
+## Methods
 
-### Domain Knowledge
+Primary methods and techniques applied in this work:
 
-- Understand intracellular obligate parasitic bacteria (Ehrlichia/Anaplasma) and their host-cell interactions
-- Analyze how EA suppress apoptosis and alter host gene transcription in bone marrow stem cells
-- Evaluate the hypothesis that a single infectious agent may underlie multiple hematological malignancies
-- Understand the pathophysiology linking myelodysplastic syndromes, leukemia, and autoimmune disorders
+- Literature review
+- Theoretical analysis
 
-### Technical Skills
+## Key Findings
 
-- Interpret clinical case data linking infections to hematological outcomes
-- Evaluate PCR-based detection of obligate intracellular parasites
-- Assess antibiotic treatment protocols (rifamycin sensitivity) for EA infections
-- Design hypothesis-driven biomedical research linking microbiology to oncology
+Core contributions and results:
 
-### Communication Skills
+- See full paper for detailed findings and analysis
 
-- Present a medical hypothesis with supporting evidence and appropriate caveats
-- Communicate complex host-parasite interactions to clinical and research audiences
-- Propose future directions for hypothesis testing in clinical trials
+## Related Works
 
-## Key Concepts
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
-- **Ehrlichia/Anaplasma (EA)** — obligate intracellular parasitic bacteria infecting leukocytes
-- **Apoptosis suppression** — EA's ability to prevent programmed cell death in host cells
-- **Transcriptomic effects** — EA-induced changes in host gene expression during replication
-- **Rifampin (rifamycin)** — antibiotic class most effective against EA infections
-- **Myelodysplastic syndromes** — bone marrow disorders that may share etiology with leukemia
-- **Blast cells** — immature, dysfunctional immune cells characteristic of leukemia
-- **Bone marrow stem cells** — reservoir for EA colonization disrupting normal hematopoiesis
-- **Haplodiploid parasitology** — EA reproductive strategies within host cells
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Microbiology fundamentals (intracellular parasitism, obligate vs. facultative parasites)
-- Hematology (bone marrow function, hematopoiesis, leukocyte development)
-- Basic oncology (leukemia subtypes: ALL, AML, CLL, CML)
-- Molecular biology (transcription, apoptosis pathways, PCR methods)
-- Clinical pharmacology (antibiotic mechanisms of action)
+- Familiarity with Ehrlichia, Anaplasma, leukemia
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## Learning Outcomes
+## Instructions
 
-- Evaluate how intracellular parasites can disrupt immune system development and lead to hematological disorders
-- Assess the strength of clinical case evidence for infectious etiology of cancer
-- Design research protocols to test causal links between microbial infection and malignancy
-- Critically analyze hypothesis-driven medical papers balancing speculation with evidence
+When working with this paper:
 
-## 🎯 Consulting & Tutoring
-
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for full publication catalog.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

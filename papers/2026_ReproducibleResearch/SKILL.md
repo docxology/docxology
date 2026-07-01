@@ -1,66 +1,55 @@
 ---
-name: "ReproducibleResearch"
-description: "Expertise in designing reproducible research infrastructure using Infrastructure as Code principles, with a focus on deterministic build pipelines, Zero-Mock testing, steganographic provenance, and AI-agent-aligned documentation standards."
-tags: ["reproducible-research", "infrastructure-as-code", "build-pipeline", "zero-mock-testing", "steganographic-watermarking", "model-context-protocol", "documentation-duality", "open-science"]
+name: "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+description: "Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL)."
+tags: ["reproducible-research", "infrastructure-as-code", "build-pipeline", "open-science", "model-context-protocol"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication*. Computational."
 ---
 
-# A template/ approach to Reproducible Generative Research
+# A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication
 
-**Daniel Ari Friedman** (2026) · Computational / Open Science
+**Daniel Ari Friedman** (2026) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **reproducible research, build pipelines, Infrastructure as Code, AI-agent documentation, and research provenance**.
+This work addresses topics in **Computational**: reproducible research, infrastructure as code, build pipeline, open science.
 
-When applying this skill:
-1. Apply the Two-Layer Architecture pattern (infrastructure subpackages vs. project workspaces)
-1. Implement Zero-Mock testing policies using real filesystem and subprocess operations
-1. Design Documentation Duality systems (README.md + AGENTS.md + SKILL.md)
-1. Build deterministic, multi-stage research pipelines with cryptographic provenance
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Two-Layer Architecture**: Separation of reusable infrastructure (~150 modules, ~3,083 tests) from self-contained project workspaces
-- **Eight-Stage Build Pipeline**: sanitization → tests → analysis → Pandoc/XeLaTeX → SHA-256 → steganographic watermarking → PDF validation → LLM review
-- **Zero-Mock Testing**: Policy enforcing 90% project-level and 60% infrastructure-level coverage via real operations
-- **Documentation Duality**: Every directory has README.md (human) + AGENTS.md (machine)
-- **SKILL.md**: Structured skill descriptors aligned with Model Context Protocol
-- **Steganographic Watermarking**: Invisible cryptographic provenance embedded in rendered documents
-- **SHA-256 Provenance**: Cryptographic hash chain from source to publication
-- **Self-Referential Architecture**: The manuscript is rendered by the pipeline it describes
-
-## Methods & Techniques
-
-- Infrastructure as Code applied to research lifecycle management
-- Pandoc + XeLaTeX for manuscript rendering within automated pipelines
-- SHA-256 cryptographic hashing with steganographic watermarking for document provenance
-- Real-operation testing (Zero-Mock) with enforced coverage thresholds
-- Comparative feature analysis methodology across tool ecosystems
-- Model Context Protocol integration for AI-agent capability discovery
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Only 24% of 1.4 million Jupyter notebooks can be successfully re-executed
-- No existing tool integrates all 11 distinctive capabilities within a single enforced pipeline
-- Zero-Mock testing achieves 100% pipeline success across three heterogeneous projects
-- Self-referential architecture proves the system's self-productive capacity
-- Documentation Duality enables both human comprehension and AI-agent interoperability
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:26:12Z
 
 ## Prerequisites
 
-- Python package management and build systems
-- LaTeX document preparation (Pandoc, XeLaTeX)
-- Software testing methodology (pytest, coverage)
-- Basic cryptography (SHA-256, steganography concepts)
+- Familiarity with reproducible research, infrastructure as code, build pipeline
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-- [GNN](../2023_GNN/SKILL.md) — Generalized Notation Notation
-- [CEREBRUM](../2025_CEREBRUM/SKILL.md) — Case-Enabled Reasoning Engine
-- [MDKV](../2025_MDKV/SKILL.md) — Multitrack Markdown Container
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

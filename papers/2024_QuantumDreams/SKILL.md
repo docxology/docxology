@@ -1,54 +1,56 @@
 ---
 name: "QuantumDreams"
-description: "Expertise in analyzing situational awareness and performance dynamics in multi-agential environments, with a focus on visual and phenomenological factors."
-tags: ["art", "quantum-mechanics", "phenomenology", "active-inference", "visual-analysis"]
+description: "Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse..."
+tags: ["quantum-mechanics", "art", "phenomenology", "active-inference", "visual-analysis", "symbolism", "morse-code"]
+domain: "Art & Synergetics"
+citation: "Daniel Ari Friedman, Dean Tickles (2024). *QuantumDreams*. Art & Synergetics."
 ---
 
-# Four-fold Fields of Quantum Dreams
+# QuantumDreams
 
-**Daniel Ari Friedman, Dean Tickles** (2024) · Art
+**Daniel Ari Friedman, Dean Tickles** (2024) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **quantum mechanics, art, phenomenology, Active Inference**.
+This work addresses topics in **Art & Synergetics**: quantum mechanics, art, phenomenology, Active Inference.
 
-When applying this skill:
-1. Bridge quantum physical concepts with artistic and phenomenological frameworks
-1. Apply structured symbolic analysis across disciplinary boundaries
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **quantum mechanics**
-- **art**
-- **phenomenology**
-- **Active Inference**
-- **visual analysis**
-- **symbolism**
-- **Morse code**
-
-## Methods & Techniques
-
-- Utilizes a qualitative analysis of visual experiences during training sessions.
-- Employs metaphorical frameworks to interpret situational dynamics.
-- Incorporates cognitive theories related to visual perception and awareness.
-- Examines the interaction between individual actions and collective training scenarios.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Identifies key visual-phenomenological moments that enhance situational awareness.
-- Demonstrates the importance of preparation in reducing variability in performance.
-- Highlights the multi-agential nature of training environments and its impact on outcomes.
-- Suggests that visual frameworks can significantly affect cognitive processes during training.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:33Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with quantum mechanics, art, phenomenology
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

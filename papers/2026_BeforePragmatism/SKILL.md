@@ -1,55 +1,56 @@
 ---
 name: "BeforePragmatism"
-description: "Expertise in analyzing the intersections of literature, philosophy, and epistemology, with a focus on the contributions of William Blake to contemporary thought."
-tags: ["art", "william-blake", "pragmatism", "anticipatory-epistemology", "america-a-prophecy", "peirce"]
+description: "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic..."
+tags: ["william-blake", "pragmatism", "anticipatory-epistemology", "america-a-prophecy", "peirce", "dewey", "james", "prophetic-vision"]
+domain: "Art & Synergetics"
+citation: "Daniel Ari Friedman (2026). *BeforePragmatism*. Art & Synergetics."
 ---
 
-# Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology
+# BeforePragmatism
 
-**Daniel Ari Friedman** (2026) · Art
+**Daniel Ari Friedman** (2026) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **William Blake, pragmatism, anticipatory epistemology, America a Prophecy**.
+This work addresses topics in **Art & Synergetics**: William Blake, pragmatism, anticipatory epistemology, America a Prophecy.
 
-When applying this skill:
-1. Analyze structural convergences between visionary literature and philosophy
-1. Connect William Blake's prophetic works to American pragmatist tradition
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **William Blake**
-- **pragmatism**
-- **anticipatory epistemology**
-- **America a Prophecy**
-- **Peirce**
-- **Dewey**
-- **James**
-- **prophetic vision**
-
-## Methods & Techniques
-
-- Utilizes a comparative analysis of Blake's texts and modern epistemological theories.
-- Applies complexity theory and dynamical systems to interpret Blake's fourfold vision.
-- Employs a historical analysis of the philosophical context surrounding Blake's work.
-- Integrates insights from active inference and pragmatism to develop a cohesive interpretive framework.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Identifies a coherent epistemological framework in Blake's work that challenges traditional empiricism.
-- Demonstrates how Blake's artistic practices serve as a form of epistemological inquiry.
-- Highlights the relevance of Blake's thought for contemporary discussions on truth and knowledge.
-- Suggests that Blake's vision offers a pathway for integrating artistic and scientific modes of understanding.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:26:03Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with William Blake, pragmatism, anticipatory epistemology
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,57 +1,39 @@
-# AGENTS.md — Symergetics: Symbolic Synergetics for Rational Arithmetic
+# AGENTS.md — Symergetics
 
-**Paper**: Symergetics: Symbolic Synergetics for Rational Arithmetic (2025)
-**Area**: Art
+**Paper**: Symergetics (2025)
+**Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Symergetics: Symbolic Synergetics for Rational Arithmetic
-**Tasks**:
-- Analyze core argument: Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buck...
-- Evaluate: Introduces Symergetics package for symbolic Synergetics computation
-- Evaluate: Implements all-integer accounting and exact geometric analysis
-- Evaluate: Releases comprehensive open-source tools for Synergetics research
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for Symergetics
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Symbolic computation framework
-- Assess and document: Quadray coordinate implementation
-- Assess and document: IVM lattice enumeration
-- Assess and document: Exact rational arithmetic
-- Assess and document: Open-source software development
+### 🔬 RESEARCHER
+- Extracts methods: Visual analysis, Historical interpretation, Conceptual synthesis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Art & Synergetics literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this art work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Art & Synergetics concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: Symergetics, Synergetics, Buckminster Fuller, rational arithmetic, Quadray coordinates
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects Symergetics to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2025_Symergetics.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

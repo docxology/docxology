@@ -1,55 +1,56 @@
 ---
 name: "GreatPreset"
-description: "Expertise in managing remote teams with a focus on cognitive security and operational strategies, enhancing collaboration and performance in virtual environments."
-tags: ["cognitive security", "cognitive-security", "narrative-ecosystems", "great-reset", "sensemaking", "active-inference"]
+description: "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inferen..."
+tags: ["cognitive-security", "narrative-ecosystems", "great-reset", "sensemaking", "active-inference", "information-theory", "socioeconomic-narratives"]
+domain: "Cognitive Security"
+citation: "Daniel A. Friedman (2020). *GreatPreset*. Cognitive Security."
 ---
 
-# The Great Preset: Remote Teams and Operational Art | COGSEC.org
+# GreatPreset
 
 **Daniel A. Friedman** (2020) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **cognitive security, narrative ecosystems, Great Reset, sensemaking**.
+This work addresses topics in **Cognitive Security**: cognitive security, narrative ecosystems, Great Reset, sensemaking.
 
-When applying this skill:
-1. Analyze large-scale narrative ecosystems using cognitive security frameworks
-1. Apply Active Inference to socioeconomic narrative analysis
-1. Evaluate information threats to collective sensemaking
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **cognitive security**
-- **narrative ecosystems**
-- **Great Reset**
-- **sensemaking**
-- **Active Inference**
-- **information theory**
-- **socioeconomic narratives**
-
-## Methods & Techniques
-
-- Conducted qualitative interviews with remote team leaders and members.
-- Utilized case study analysis to identify best practices in remote team operations.
-- Applied theoretical frameworks from cognitive security and operational art to analyze findings.
-- Developed a set of guidelines based on empirical data and expert insights.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Effective communication is crucial for maintaining trust and collaboration in remote teams.
-- Cognitive security practices significantly enhance team performance and resilience.
-- Operational art principles can be adapted to improve remote team strategies.
-- Case studies reveal diverse approaches to overcoming challenges in remote teamwork.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with cognitive security, narrative ecosystems, Great Reset
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

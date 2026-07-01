@@ -1,34 +1,57 @@
 ---
-name: "RealizingEmptiness"
-description: "Use for Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20834846."
+name: "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
+description: "<div>This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaini..."
 tags: ["active-inference", "bayesian-model-reduction", "quantum-reference-frames", "emptiness", "formal-methods", "pymdp"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction*. Computational."
+doi: "10.5281/zenodo.20834846"
 ---
 
 # Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20834846`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.0` and repository `docxology/realizing_emptiness` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: active inference, Bayesian model reduction, quantum reference frames, emptiness.
 
-## Key Concepts
+## Methods
 
-- **active inference**
-- **Bayesian model reduction**
-- **quantum reference frames**
-- **emptiness**
-- **formal methods**
-- **pymdp**
+Primary methods and techniques applied in this work:
+
+- Field observation
+- Population genetics analysis
+- Behavioral assays
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20834846
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with active inference, Bayesian model reduction, quantum reference frames
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20834846`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

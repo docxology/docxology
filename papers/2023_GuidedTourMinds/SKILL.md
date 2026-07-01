@@ -1,57 +1,56 @@
 ---
 name: "GuidedTourMinds"
-description: "Expertise in cognitive modeling and the application of Active Inference principles to understand diverse forms of sentience and agency."
-tags: ["active inference", "path-integrals", "particular-kinds", "mindspace", "active-inference", "free-energy-principle"]
+description: "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue..."
+tags: ["path-integrals", "particular-kinds", "mindspace", "active-inference", "free-energy-principle", "consciousness", "sloman", "non-anthropocentric", "sentience-taxonomy"]
+domain: "Active Inference"
+citation: "Ali Rahmjoo, Daniel Ari Friedman (2023). *GuidedTourMinds*. Active Inference."
 ---
 
-# A guided tour through the spaces of particular "minds"
+# GuidedTourMinds
 
 **Ali Rahmjoo, Daniel Ari Friedman** (2023) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **path integrals, particular kinds, mindspace, Active Inference**.
+This work addresses topics in **Active Inference**: path integrals, particular kinds, mindspace, Active Inference.
 
-When applying this skill:
-1. Apply Active Inference to the cartography of possible minds
-1. Evaluate sentience taxonomies from non-anthropocentric perspectives
-1. Connect particular kinds typology to broader philosophy of mind
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **path integrals**
-- **particular kinds**
-- **mindspace**
-- **Active Inference**
-- **Free Energy Principle**
-- **consciousness**
-- **Sloman**
-- **non-anthropocentric**
-- **sentience taxonomy**
-
-## Methods & Techniques
-
-- Utilizes Active Inference as a framework for measuring and modeling minds.
-- Applies the Free Energy Principle for theoretical grounding in cognitive modeling.
-- Explores the dynamics of particles to understand agency and sentience.
-- Synthesizes Bayesian Statistics and Machine Learning with Category Theory.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Identifies a two-dimensional mindspace characterized by 'agency' and 'experience'.
-- Demonstrates how the dynamics of particles can indicate levels of agency and selfhood.
-- Establishes a connection between optimization processes and the taxonomy of minds.
-- Suggests that the typology of particular kinds can refine existing mind taxonomies.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with path integrals, particular kinds, mindspace
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

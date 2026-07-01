@@ -1,37 +1,38 @@
-# Con-cat-enate: emulation of Cat Hippocampus
+# 🧬 Con-cat-enate: emulation of Cat Hippocampus
 
 **Andrew Djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14738798.svg)](https://doi.org/10.5281/zenodo.14738798)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13626536](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.13626536)-blue)]([10.5281/zenodo.13626536](https://doi.org/10.5281/zenodo.13626536))
 
 ---
 
 ## Abstract
 
-Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply correct behavior some of the documents mentioning demo 0.01 and its motivation wasnt included (mentioned in the catpilot) therefore might cause confusion&nbsp; (ontop of also not really mentioning what would each of the missing part cause,) much apologies &nbsp; part 1 and part 2 updated of the emulated cat goes along with these documents: pilot:&nbsp; https://zenodo.org/records/14737043 beacons: https://zenodo.org/records/14737060 bevcyc: https://zenodo.org/records/14737076 &nbsp;
+> Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; a...
 
 ## Keywords
 
-Zenodo publication
+`ConCatEnate`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.14738798](https://doi.org/10.5281/zenodo.14738798) |
-| **Published** | 2025-01-25 |
-| **Version** | Unknown |
-| **Zenodo record** | https://zenodo.org/records/14738798 |
+- Literature review
+- Theoretical analysis
 
-## Files
+## Key Findings
 
-- `0125cat.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.14738798
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Zenodo. https://doi.org/10.5281/zenodo.14738798
+> Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/14738798
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

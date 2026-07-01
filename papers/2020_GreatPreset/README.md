@@ -1,54 +1,37 @@
-# 🛡️ The Great Preset: Remote Teams and Operational Art | COGSEC.org
+# 🛡️ GreatPreset
 
-**Daniel A. Friedman** (2020) · *978-1-7364269-0-6*
+**Daniel A. Friedman** (2020) · *COGSEC.org*
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GreatPreset","abstract":"This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inference, narrative ecosystems, and information theory, the paper explores how large-scale narrative shifts can either empower or disempower individuals and communities in their sensemaking processes.","keywords":["cognitive security","narrative ecosystems","Great Reset","sensemaking","Active Inference","information theory","socioeconomic narratives"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> The paper explores the dynamics of remote teams and their operational strategies, emphasizing the importance of cognitive security in collaborative environments. It aims to provide insights into effective management and communication practices for remote teams.
+> This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inference, narrative ecosystems, and information theory, the paper explores how large-scale narrative shifts can either empower or disempower individuals and communities in their sensemaking processes.
 
 ## Keywords
 
 `cognitive security` · `narrative ecosystems` · `Great Reset` · `sensemaking` · `Active Inference` · `information theory` · `socioeconomic narratives`
 
-## Key Contributions
-
-- Introduces a framework for understanding cognitive security in remote team settings.
-- Analyzes the impact of operational art on team collaboration and performance.
-- Offers practical strategies for enhancing communication and trust among remote team members.
-- Highlights case studies demonstrating successful remote team management.
-
 ## Methods
 
-- Conducted qualitative interviews with remote team leaders and members.
-- Utilized case study analysis to identify best practices in remote team operations.
-- Applied theoretical frameworks from cognitive security and operational art to analyze findings.
-- Developed a set of guidelines based on empirical data and expert insights.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 978-1-7364269-0-6
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2020_GreatPreset,
-  author = {Daniel A. Friedman},
-  title = {{The Great Preset: Remote Teams and Operational Art | COGSEC.org}},
-  journal = {978-1-7364269-0-6},
-  year = {2020},
-}
-```
+> Daniel A. Friedman (2020). *GreatPreset*. COGSEC.org.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,893 bytes)
-- `2020_GreatPreset.pdf` (5,001,516 bytes)
-- `README.md` (1,458 bytes)
-- `SKILL.md` (1,805 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

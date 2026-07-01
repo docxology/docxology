@@ -1,57 +1,39 @@
-# AGENTS.md — PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus*
+# AGENTS.md — PhDDissertation
 
-**Paper**: PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus* (2019)
-**Area**: Entomology
+**Paper**: PhDDissertation (2019)
+**Domain**: Entomology
 **Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus*
-**Tasks**:
-- Analyze core argument: This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)...
-- Evaluate: Comprehensive dissertation integrating genes, neurochemistry, behavior, and ecology
-- Evaluate: Demonstrates colony-level variation in foraging behavior, physiology, and gene expression
-- Evaluate: Bridges individual-level molecular mechanisms with colony-level behavioral ecology
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for PhDDissertation
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: RNA-Seq transcriptomics
-- Assess and document: qRT-PCR
-- Assess and document: HPLC neurotransmitter analysis
-- Assess and document: Field behavioral experiments
-- Assess and document: Desiccation physiology assays
+### 🔬 RESEARCHER
+- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Entomology literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this entomology work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Entomology concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: PhD dissertation, Pogonomyrmex barbatus, collective behavior, transcriptomics, behavioral ecology
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects PhDDissertation to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2019_PhDDissertation.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

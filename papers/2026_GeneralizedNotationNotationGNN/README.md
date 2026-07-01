@@ -1,37 +1,39 @@
-# GeneralizedNotationNotation (GNN)
+# 🧠 GeneralizedNotationNotation (GNN)
 
 **Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7803313.svg)](https://doi.org/10.5281/zenodo.7803313)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7803313](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7803313)-blue)]([10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313))
 
 ---
 
 ## Abstract
 
-Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a "Triple Play" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models.
+> Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It suppor...
 
 ## Keywords
 
-active inference · generative models · cognitive modeling · notation system · reproducibility · computational neuroscience · bayesian inference · standards · gnn · python
+`active inference` · `generative models` · `cognitive modeling` · `notation system` · `reproducibility` · `computational neuroscience` · `bayesian inference` · `standards` · `gnn` · `python`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313) |
-| **Published** | 2026-06-12 |
-| **Version** | v2.0.0 |
-| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/7803313 |
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-## Files
+## Key Findings
 
-- Zenodo PDF: see record
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.7803313
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. https://doi.org/10.5281/zenodo.7803313
+> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/20671741
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

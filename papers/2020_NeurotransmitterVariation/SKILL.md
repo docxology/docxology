@@ -1,57 +1,56 @@
 ---
 name: "NeurotransmitterVariation"
-description: "Proficient in advanced analytical techniques for quantifying neurotransmitter levels in biological samples, utilizing capillary electrophoresis and fast-scan cyclic voltammetry."
-tags: ["entomology", "neurotransmitters", "dopamine", "serotonin", "octopamine", "tyramine"]
+description: "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a..."
+tags: ["neurotransmitters", "dopamine", "serotonin", "octopamine", "tyramine", "pogonomyrmex-barbatus", "ce-fscv", "biogenic-amines", "colony-variation"]
+domain: "Entomology"
+citation: "Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *NeurotransmitterVariation*. Entomology."
 ---
 
-# Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
+# NeurotransmitterVariation
 
 **Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton** (2020) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **neurotransmitters, dopamine, serotonin, octopamine**.
+This work addresses topics in **Entomology**: neurotransmitters, dopamine, serotonin, octopamine.
 
-When applying this skill:
-1. Apply CE-FSCV for single-brain neurotransmitter quantification
-1. Measure natural variation in biogenic amines across social insect colonies
-1. Design analytical chemistry approaches for ecologically relevant neurochemistry
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **neurotransmitters**
-- **dopamine**
-- **serotonin**
-- **octopamine**
-- **tyramine**
-- **Pogonomyrmex barbatus**
-- **CE-FSCV**
-- **biogenic amines**
-- **colony variation**
-
-## Methods & Techniques
-
-- Utilized capillary electrophoresis with fast-scan cyclic voltammetry (CE-FSCV) for neurotransmitter detection.
-- Field-amplified sample stacking was employed to enhance detection limits of neurotransmitters in single ant brains.
-- Ant brains were dissected and homogenized in a controlled environment to prepare samples for analysis.
-- Statistical analysis was performed using GraphPad Prism to evaluate variations in neurotransmitter content.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Dopamine was found to be the most abundant biogenic amine, followed by octopamine, serotonin, and tyramine.
-- Significant variation in neurotransmitter content was observed among different ant colonies.
-- The relative standard deviation of neurotransmitter levels was lower within colonies compared to across colonies.
-- Correlations were noted between levels of octopamine, tyramine, and serotonin, but not with dopamine.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with neurotransmitters, dopamine, serotonin
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

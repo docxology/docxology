@@ -1,26 +1,56 @@
 ---
-name: "ModernNostrIndex"
-description: "Use for Modern Nostr Index Card-based Knowledge Engineering, a Zenodo publication with DOI 10.5281/zenodo.8118156."
+name: "Modern Nostr Index Card-based Knowledge Engineering"
+description: "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;"
 tags: ["nostr", "complexity", "large-language-model", "knowledge-engineering"]
+domain: "Active Inference"
+citation: "Andrew Claros, Daniel Friedman (2023). *Modern Nostr Index Card-based Knowledge Engineering*. Active Inference."
+doi: "10.5281/zenodo.8118156"
 ---
 
 # Modern Nostr Index Card-based Knowledge Engineering
 
+**Andrew Claros, Daniel Friedman** (2023) · Active Inference
+
+## Context
+
+This work addresses topics in **Active Inference**: Nostr, Complexity, Large Language Model, Knowledge Engineering.
+
+## Methods
+
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.8118156
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-05-30T18:56:21Z
+
+## Prerequisites
+
+- Familiarity with Nostr, Complexity, Large Language Model
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
+
 ## Instructions
 
-Use this skill when working with the publication **Modern Nostr Index Card-based Knowledge Engineering** or its archival record.
+When working with this paper:
 
-1. Ground citations in DOI `10.5281/zenodo.8118156`.
-2. Treat the Zenodo record as the archival source.
-
-## Key Concepts
-
-- **Nostr**
-- **Complexity**
-- **Large Language Model**
-- **Knowledge Engineering**
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+1. Reference the DOI for citation: `10.5281/zenodo.8118156`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,56 +1,39 @@
-# AGENTS.md — Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)
+# AGENTS.md — CognitiveIntegrity
 
-**Paper**: Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) (2026)
-**Area**: Cognitive Security
+**Paper**: CognitiveIntegrity (2026)
+**Domain**: Cognitive Security
 **Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)
-**Tasks**:
-- Analyze core argument: The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes...
-- Evaluate: Develops formal foundations for cognitive integrity in multiagent systems
-- Evaluate: Establishes category-theoretic framework for cognitive security
-- Evaluate: Provides threat models and defense mechanisms for cognitive processes
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for CognitiveIntegrity
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Formal security framework development
-- Assess and document: Category-theoretic formalization
-- Assess and document: Active Inference security modeling
-- Assess and document: Threat model construction
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this cognitive security work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: cognitive integrity, multiagent security, cognitive security, Active Inference, category theory
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects CognitiveIntegrity to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2026_CognitiveIntegrity.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

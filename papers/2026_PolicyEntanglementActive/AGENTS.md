@@ -1,23 +1,39 @@
-# AGENTS.md - Policy Entanglement in Active Inference
+# AGENTS.md — Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary
 
-**Paper**: Policy Entanglement in Active Inference (2026)
-**DOI**: [10.5281/zenodo.20419637](https://doi.org/10.5281/zenodo.20419637)
-**GitHub release**: https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0
+**Paper**: Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary (2026)
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Track future GitHub release and Zenodo version changes.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for PolicyEntanglementActive
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, BIBLIOGRAPHY.md, and software links synchronized.
-- Preserve the paired GitHub + Zenodo release relationship.
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20418904
-- **GitHub release**: https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0
-- **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

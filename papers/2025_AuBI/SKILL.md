@@ -1,53 +1,56 @@
 ---
 name: "AuBI"
-description: "Expertise in designing and implementing Adaptive Basic Income systems that leverage AI and decentralized technologies for enhanced economic resilience and adaptability."
-tags: ["computational", "aubi", "augmented-intelligence", "biological-intelligence", "active-inference", "cognitive-augmentation"]
+description: "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems ca..."
+tags: ["aubi", "augmented-intelligence", "biological-intelligence", "active-inference", "cognitive-augmentation", "human-ai-interaction"]
+domain: "Computational"
+citation: "Daniel A. Friedman (2025). *AuBI*. Computational."
 ---
 
-# Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
+# AuBI
 
 **Daniel A. Friedman** (2025) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **AuBI, augmented intelligence, biological intelligence, Active Inference**.
+This work addresses topics in **Computational**: AuBI, augmented intelligence, biological intelligence, Active Inference.
 
-When applying this skill:
-1. Design augmented intelligence systems using Active Inference
-1. Evaluate human-AI cognitive augmentation approaches
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **AuBI**
-- **augmented intelligence**
-- **biological intelligence**
-- **Active Inference**
-- **cognitive augmentation**
-- **human-AI interaction**
-
-## Methods & Techniques
-
-- Utilizes active inference theory to inform economic modeling.
-- Employs decentralized ledger technologies for transparent and tamper-proof infrastructure.
-- Incorporates predictive analytics to refine UBI interventions based on real-time data.
-- Adopts a B2B2C model to facilitate the deployment of AuBI systems through various stakeholders.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Demonstrates that AuBI can address the rigidity and opacity of traditional UBI models.
-- Highlights the potential for adaptive economic systems to respond to evolving socio-economic conditions.
-- Shows that real-time learning can enhance the effectiveness of UBI programs.
-- Suggests that decentralized governance can empower diverse stakeholders in UBI implementation.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:44Z
 
 ## Prerequisites
 
-- Software development and computational methods
-- Formal systems and notation frameworks
+- Familiarity with AuBI, augmented intelligence, biological intelligence
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

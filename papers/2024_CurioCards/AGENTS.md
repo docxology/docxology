@@ -1,54 +1,39 @@
-# AGENTS.md — Writing on Curio Cards for the "On NFT" book | *Taschen*
+# AGENTS.md — CurioCards
 
-**Paper**: Writing on Curio Cards for the "On NFT" book | *Taschen* (2024)
-**Area**: Art
+**Paper**: CurioCards (2024)
+**Domain**: Art & Synergetics
 **Authors**: Daniel A. Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Writing on Curio Cards for the "On NFT" book | *Taschen*
-**Tasks**:
-- Analyze core argument: Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative ...
-- Evaluate: Introduces Curio Cards for curiosity-driven research ideation
-- Evaluate: Designs card-based prompting system for interdisciplinary exploration
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for CurioCards
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Card-based ideation design
-- Assess and document: Creative prompting framework
-- Assess and document: Interdisciplinary exploration tools
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Art & Synergetics literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this art work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Art & Synergetics concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: Curio Cards, research ideation, creativity tools, interdisciplinary thinking, prompt-based exploration
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects CurioCards to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2024_CurioCards.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

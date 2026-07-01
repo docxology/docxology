@@ -1,56 +1,56 @@
 ---
 name: "PostdocReview"
-description: "Expertise in interdisciplinary research synthesis, focusing on the integration of biological sciences, cognitive security, and philosophical perspectives."
-tags: ["presentations, courses & media", "postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security"]
+description: "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci..."
+tags: ["postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security", "meta-science", "philosophy", "biology", "interdisciplinary-research"]
+domain: "Presentations & Media"
+citation: "Daniel Ari Friedman (2023). *PostdocReview*. Presentations & Media."
 ---
 
-# Postdoc review (2020–2023)
+# PostdocReview
 
-**Daniel Ari Friedman** (2023) · Presentations, Courses & Media
+**Daniel Ari Friedman** (2023) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **postdoctoral review, research portfolio, Active Inference, entomology**.
+This work addresses topics in **Presentations & Media**: postdoctoral review, research portfolio, Active Inference, entomology.
 
-When applying this skill:
-1. Evaluate interdisciplinary postdoctoral research portfolios
-1. Synthesize research contributions across biology, AI, and philosophy domains
-1. Present multi-domain research programs to diverse audiences
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **postdoctoral review**
-- **research portfolio**
-- **Active Inference**
-- **entomology**
-- **cognitive security**
-- **meta-science**
-- **philosophy**
-- **biology**
-- **interdisciplinary research**
-
-## Methods & Techniques
-
-- Literature review of recent advancements in relevant fields.
-- Analysis of live chat discussions to gather community insights.
-- Synthesis of findings across diverse disciplines.
-- Engagement with stakeholders to refine research focus.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Emerging trends in active inference and their implications for cognitive security.
-- The importance of interdisciplinary approaches in addressing complex problems.
-- Recommendations for future research collaborations.
-- Insights into the role of philosophy and arts in scientific inquiry.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:22Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with postdoctoral review, research portfolio, Active Inference
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

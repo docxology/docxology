@@ -1,57 +1,39 @@
-# AGENTS.md — Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
+# AGENTS.md — NeurotransmitterVariation
 
-**Paper**: Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains (2020)
-**Area**: Entomology
+**Paper**: NeurotransmitterVariation (2020)
+**Domain**: Entomology
 **Authors**: Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
-**Tasks**:
-- Analyze core argument: Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 b...
-- Evaluate: First quantification of 4 biogenic amines in single ant brains from field colonies
-- Evaluate: Demonstrates less neurotransmitter variation within colonies than among colonies
-- Evaluate: Validates CE-FSCV as a method for natural neurotransmitter variation studies
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for NeurotransmitterVariation
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV)
-- Assess and document: Single-brain neurotransmitter quantification
-- Assess and document: Carbon-fiber microelectrode detection
-- Assess and document: Field-amplified sample stacking
-- Assess and document: Colony-level statistical comparisons
+### 🔬 RESEARCHER
+- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Entomology literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this entomology work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Entomology concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: neurotransmitters, dopamine, serotonin, octopamine, tyramine
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects NeurotransmitterVariation to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2020_NeurotransmitterVariation.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

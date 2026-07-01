@@ -1,54 +1,39 @@
-# 📄 5th Applied Active Inference Symposium — Abstract Book
+# 📄 5thSymposium
 
-**Active Inference Institute** (2025) · *[10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266)*
+**Active Inference Institute** (2025) · *Presentation*
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17555266](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.17555266)-blue)]([10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"5thSymposium","abstract":"Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.","keywords":["Active Inference symposium","conference proceedings","international symposium","research presentations"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> The 5th Applied Active Inference Symposium aims to enhance the accessibility and applicability of the Active Inference framework through collaborative discussions and presentations. It serves as a platform for researchers and practitioners to share insights and advancements in the field.
+> Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.
 
 ## Keywords
 
 `Active Inference symposium` · `conference proceedings` · `international symposium` · `research presentations`
 
-## Key Contributions
-
-- Showcases the latest research and applications of Active Inference.
-- Facilitates networking and collaboration among researchers and practitioners.
-- Promotes open science principles in the dissemination of knowledge.
-- Includes interactive workshops to deepen understanding of Active Inference.
-
 ## Methods
 
-- Keynote presentations from leading experts in the field.
-- Pre-recorded presentations to provide diverse perspectives.
-- Live-streamed panels for real-time discussions.
-- Interactive workshops to engage participants in hands-on learning.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2025_5thSymposium,
-  author = {Active Inference Institute},
-  title = {{5th Applied Active Inference Symposium — Abstract Book}},
-  journal = {[10.5281/zenodo.17555266](https://doi.org/10.5281/zenodo.17555266)},
-  year = {2025},
-}
-```
+> Active Inference Institute (2025). *5thSymposium*. Presentation.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,789 bytes)
-- `2025_5thSymposium.pdf` (519,447 bytes)
-- `README.md` (1,236 bytes)
-- `SKILL.md` (1,626 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

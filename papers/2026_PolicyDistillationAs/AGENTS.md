@@ -1,23 +1,39 @@
-# AGENTS.md - On-Policy Distillation as Active Inference in Finite Variational Models
+# AGENTS.md — On-Policy Distillation as Active Inference in Finite Variational Models
 
 **Paper**: On-Policy Distillation as Active Inference in Finite Variational Models (2026)
-**DOI**: [10.5281/zenodo.20749817](https://doi.org/10.5281/zenodo.20749817)
-**GitHub release**: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2
+**Domain**: Active Inference
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Track future GitHub release and Zenodo version changes.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for PolicyDistillationAs
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, BIBLIOGRAPHY.md, and software links synchronized.
-- Preserve the paired GitHub + Zenodo release relationship.
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Active Inference literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Active Inference concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects On-Policy Distillation as Active Inference in Finite Variational Models to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20747834
-- **GitHub release**: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2
-- **Pairing evidence**: github_release_mentions_doi, github_release_mentions_zenodo_record, zenodo_related_identifier_mentions_release, github_repo_self_linked, title_overlap
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

@@ -1,57 +1,39 @@
-# 🛡️ TrustFinder: Recommendations for Community-Based Trust Systems
+# 🛡️ TrustFinder
 
 **R.J. Cordes, Scott David, Daniel A. Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7093837-blue)](https://doi.org/10.5281/zenodo.7093837)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7093836](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7093836)-blue)]([10.5281/zenodo.7093836](https://doi.org/10.5281/zenodo.7093836))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"TrustFinder","abstract":"TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.","keywords":["TrustFinder","trust systems","information evaluation","cognitive security","verified information","collaborative assessment","sociotechnical systems"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> TrustFinder is a sociotechnical system designed to enhance situational awareness in the information environment by enabling users to collaboratively manage the information supply chain. It aims to help users find trusted sources and evaluate claims through structured tools and community engagement.
+> TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.
 
 ## Keywords
 
 `TrustFinder` · `trust systems` · `information evaluation` · `cognitive security` · `verified information` · `collaborative assessment` · `sociotechnical systems`
 
-## Key Contributions
-
-- Development of a collaborative platform for managing information sources and claims.
-- Implementation of trust scores to evaluate the quality of authors and content.
-- Introduction of web and document annotation tools to enrich content and facilitate sensemaking.
-- Establishment of a framework for mapping the information supply chain.
-
 ## Methods
 
-- Utilization of user-created Workspaces for collaborative projects.
-- Incorporation of various informational structures such as Claims, Claim Instances, and Questions.
-- Application of argument representation frameworks to connect Claims and enhance navigation.
-- Use of crowdsourcing design principles to leverage global research community contributions.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.7093836](https://doi.org/10.5281/zenodo.7093836)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2022_TrustFinder,
-  author = {R.J. Cordes, Scott David, Daniel A. Friedman},
-  title = {{TrustFinder: Recommendations for Community-Based Trust Systems}},
-  journal = {Zenodo},
-  year = {2022},
-  doi = {10.5281/zenodo.7093837},
-}
-```
+> R.J. Cordes, Scott David, Daniel A. Friedman (2022). *TrustFinder*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,999 bytes)
-- `2022_TrustFinder.pdf` (1,666,008 bytes)
-- `README.md` (1,701 bytes)
-- `SKILL.md` (1,902 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

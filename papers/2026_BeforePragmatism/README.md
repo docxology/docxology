@@ -1,57 +1,39 @@
-# 🎨 Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology
+# 📄 BeforePragmatism
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18807970-blue)](https://doi.org/10.5281/zenodo.18807970)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18807970](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.18807970)-blue)]([10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"BeforePragmatism","abstract":"Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Blake's visionary epistemology prefigures key concepts in American pragmatism (Peirce, Dewey, James) before the formal emergence of the pragmatist tradition.","keywords":["William Blake","pragmatism","anticipatory epistemology","America a Prophecy","Peirce","Dewey","James","prophetic vision"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper explores the intersections between prophetic vision and empirical inquiry through the lens of William Blake's 'America a Prophecy.' It aims to establish a framework for understanding how Blake's work anticipates contemporary epistemological theories, particularly in relation to active inference.
+> Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Blake's visionary epistemology prefigures key concepts in American pragmatism (Peirce, Dewey, James) before the formal emergence of the pragmatist tradi...
 
 ## Keywords
 
 `William Blake` · `pragmatism` · `anticipatory epistemology` · `America a Prophecy` · `Peirce` · `Dewey` · `James` · `prophetic vision`
 
-## Key Contributions
-
-- Establishes six structural convergences between Blake's prophetic vision and modern epistemological frameworks.
-- Introduces the concept of 'active inference' as a bridge between prophetic vocabulary and formal process theory.
-- Critiques Lockean empiricism through Blake's anti-empiricist stance, emphasizing innate ideas and active perception.
-- Explores the implications of Blake's work for contemporary discussions in pragmatism and epistemology.
-
 ## Methods
 
-- Utilizes a comparative analysis of Blake's texts and modern epistemological theories.
-- Applies complexity theory and dynamical systems to interpret Blake's fourfold vision.
-- Employs a historical analysis of the philosophical context surrounding Blake's work.
-- Integrates insights from active inference and pragmatism to develop a cohesive interpretive framework.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2026_BeforePragmatism,
-  author = {Daniel Ari Friedman},
-  title = {{Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology}},
-  journal = {Zenodo},
-  year = {2026},
-  doi = {10.5281/zenodo.18807970},
-}
-```
+> Daniel Ari Friedman (2026). *BeforePragmatism*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,916 bytes)
-- `2026_BeforePragmatism.pdf` (1,716,520 bytes)
-- `README.md` (1,612 bytes)
-- `SKILL.md` (1,833 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

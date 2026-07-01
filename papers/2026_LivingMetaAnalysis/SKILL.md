@@ -1,41 +1,56 @@
 ---
-name: "LivingMetaAnalysis"
-description: "Use for A Living Meta-Analysis of the Modafinil Literature, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20931964."
-tags: ["modafinil", "meta-analysis", "literature-retrieval", "bibliometrics", "record-de-duplication", "full-text-mining", "document-embeddings", "citation-network"]
+name: "A Living Meta-Analysis of the Modafinil Literature"
+description: "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a ..."
+tags: ["modafinil", "meta-analysis", "literature-retrieval", "bibliometrics", "record-de-duplication", "full-text-mining", "document-embeddings", "citation-network", "topic-modeling", "entity-extraction"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *A Living Meta-Analysis of the Modafinil Literature*. Computational."
+doi: "10.5281/zenodo.20931964"
 ---
 
 # A Living Meta-Analysis of the Modafinil Literature
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **A Living Meta-Analysis of the Modafinil Literature** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20931964`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.1.0` and repository `docxology/template_literature_meta_analysis` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: modafinil, meta-analysis, literature retrieval, bibliometrics.
 
-## Key Concepts
+## Methods
 
-- **modafinil**
-- **meta-analysis**
-- **literature retrieval**
-- **bibliometrics**
-- **record de-duplication**
-- **full-text mining**
-- **document embeddings**
-- **citation network**
-- **topic modeling**
-- **entity extraction**
-- **wakefulness**
-- **cognitive enhancement**
-- **reproducible research**
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20931964
+- PDF SHA-256: 412d4fcf4b0c2e14fb950f9080f107d81fd9a90dfdf216b9161a13833eff62ff
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:09Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with modafinil, meta-analysis, literature retrieval
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20931964`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

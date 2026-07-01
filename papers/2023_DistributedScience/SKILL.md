@@ -1,56 +1,56 @@
 ---
 name: "DistributedScience"
-description: "Expertise in applying Bayesian principles to model and analyze the scientific process as a distributed system of knowledge production, integrating cognitive and social dimensions."
-tags: ["active inference", "distributed-science", "multi-scale-active-inference", "scientific-process", "free-energy-principle", "meta-science"]
+description: "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual rese..."
+tags: ["distributed-science", "multi-scale-active-inference", "scientific-process", "free-energy-principle", "meta-science", "collective-intelligence", "cultural-evolution", "distributed-cognition"]
+domain: "Active Inference"
+citation: "Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant (2023). *DistributedScience*. Active Inference."
 ---
 
-# Distributed Science — The Scientific Process as Multi-Scale Active Inference
+# DistributedScience
 
 **Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant** (2023) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **distributed science, multi-scale Active Inference, scientific process, Free Energy Principle**.
+This work addresses topics in **Active Inference**: distributed science, multi-scale Active Inference, scientific process, Free Energy Principle.
 
-When applying this skill:
-1. Apply multi-scale Active Inference to model the scientific process
-1. Analyze meta-scientific challenges through the Free Energy Principle
-1. Model distributed cognition in scientific communities
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **distributed science**
-- **multi-scale Active Inference**
-- **scientific process**
-- **Free Energy Principle**
-- **meta-science**
-- **collective intelligence**
-- **cultural evolution**
-- **distributed cognition**
-
-## Methods & Techniques
-
-- Applies the free energy principle to model the scientific process as evidence-seeking.
-- Utilizes Bayesian belief updating to describe the dynamics of scientific cognition.
-- Explores the interaction between individual cognitive functions and collective scientific practices.
-- Employs a meta-theoretical approach to reconcile different epistemological views on science.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Scientific knowledge production is influenced by a complex interplay of social, psychological, and material factors.
-- The Bayesian interpretation provides a formal account of how prior experiences shape scientific inquiry.
-- Active inference offers a framework for understanding intelligence as evidence generation in scientific contexts.
-- The hierarchical integration of individual and collective cognition enhances the understanding of scientific communities.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with distributed science, multi-scale Active Inference, scientific process
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

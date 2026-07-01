@@ -1,55 +1,56 @@
 ---
 name: "MirrorTest"
-description: "Expertise in applying predictive processing theories to cognitive science, particularly in understanding self-recognition and behavior through innovative frameworks."
-tags: ["art", "mirror-test", "predictive-processing", "self-recognition", "reflection-prediction", "active-inference"]
+description: "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-r..."
+tags: ["mirror-test", "predictive-processing", "self-recognition", "reflection-prediction", "active-inference", "self-awareness", "prediction-error"]
+domain: "Art & Synergetics"
+citation: "Sean O'Connor, Daniel Ari Friedman (2022). *MirrorTest*. Art & Synergetics."
 ---
 
-# Predictive Processing Interpretation of the Mirror Test
+# MirrorTest
 
-**Sean O'Connor, Daniel Ari Friedman** (2022) · Art
+**Sean O'Connor, Daniel Ari Friedman** (2022) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **mirror test, predictive processing, self-recognition, reflection prediction**.
+This work addresses topics in **Art & Synergetics**: mirror test, predictive processing, self-recognition, reflection prediction.
 
-When applying this skill:
-1. Apply predictive processing frameworks to behavioral phenomena
-1. Reinterpret classic behavioral tests through Bayesian and Active Inference lenses
-1. Develop novel hypotheses connecting self-recognition to prediction error minimization
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **mirror test**
-- **predictive processing**
-- **self-recognition**
-- **reflection prediction**
-- **Active Inference**
-- **self-awareness**
-- **prediction error**
-
-## Methods & Techniques
-
-- Utilizes a predictive processing model to analyze mirror self-recognition.
-- Examines historical and ecological evidence related to the mirror test.
-- Applies concepts of sensory attenuation and active inference to explain behaviors observed in the mirror test.
-- Critiques the traditional reliance on self-directed behavior as a measure of self-recognition.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Mirror self-recognition can be understood as a product of sensory attenuation when individuals successfully predict their reflection.
-- Self-directed behavior during the mirror test is conceptualized as active inference to correct reflection prediction errors.
-- Species that do not exhibit self-directed behavior may still possess mirror self-recognition capabilities.
-- Reflection prediction errors may lead to atypical agency over reflections, affecting self-awareness and imitation.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:58Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with mirror test, predictive processing, self-recognition
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,57 +1,38 @@
-# 🛡️ The Innovator's Catechism
+# 🛡️ InnovatorsCatechism
 
 **Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4383230-blue)](https://doi.org/10.5281/zenodo.4383230)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4383229](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.4383229)-blue)]([10.5281/zenodo.4383229](https://doi.org/10.5281/zenodo.4383229))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InnovatorsCatechism","abstract":"Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism\u2014a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.","keywords":["operations orders","innovation teams","Innovator's Catechism","team alignment","military transfer","organizational design","hackathons"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper presents 'The Innovator’s Catechism', a structured operations order designed for early-stage innovation teams to enhance alignment on narrative, workflow, and objectives. By adapting military operations orders for business contexts, the authors aim to improve the reliability and effectiveness of innovation management.
+> Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism—a catechism-styled operations order for early-stage ...
 
 ## Keywords
 
 `operations orders` · `innovation teams` · `Innovator's Catechism` · `team alignment` · `military transfer` · `organizational design` · `hackathons`
 
-## Key Contributions
-
-- Introduction of 'The Innovator’s Catechism' tailored for early-stage innovation teams.
-- Adaptation of military operations orders to enhance organizational efficacy in business settings.
-- Integration of insights from high reliability organizations (HROs) and innovation management.
-- Development of a structured framework to facilitate communication and alignment in innovation teams.
-
 ## Methods
 
-- Combination of the Facilitator’s Catechism with Blank’s innovation pipeline framework.
-- Analysis of military operations orders and their impact on organizational performance.
-- Utilization of insights from industrial and organizational psychology, sensemaking, and narrative construction.
-- Creation of a series of structured questions for innovators at each stage of the innovation process.
+- Literature review
+- Theoretical analysis
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.4383229](https://doi.org/10.5281/zenodo.4383229)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2020_InnovatorsCatechism,
-  author = {Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight},
-  title = {{The Innovator's Catechism}},
-  journal = {Zenodo},
-  year = {2020},
-  doi = {10.5281/zenodo.4383230},
-}
-```
+> Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,907 bytes)
-- `2020_InnovatorsCatechism.pdf` (2,008,642 bytes)
-- `README.md` (1,740 bytes)
-- `SKILL.md` (1,839 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

@@ -1,21 +1,39 @@
-# AGENTS.md - Beacons - pre emulation of social cortex
+# AGENTS.md — Beacons - pre emulation of social cortex
 
 **Paper**: Beacons - pre emulation of social cortex (2025)
-**DOI**: [10.5281/zenodo.14737060](https://doi.org/10.5281/zenodo.14737060)
-**Zenodo record**: https://zenodo.org/records/14737060
+**Domain**: Genetics & Biomedical
+**Authors**: andrew djuwidja, Daniel Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: andrew djuwidja, Daniel Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for BeaconsPreEmulation
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Genetics & Biomedical literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Genetics & Biomedical concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects Beacons - pre emulation of social cortex to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/14737060
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

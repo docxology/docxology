@@ -1,56 +1,56 @@
 ---
 name: "ArgentineAnt"
-description: "Expertise in studying the behavioral ecology of invasive species, focusing on foraging dynamics and environmental interactions."
-tags: ["entomology", "argentine-ant", "linepithema-humile", "invasive-species", "supercolony", "nestmate-recognition"]
+description: "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the..."
+tags: ["argentine-ant", "linepithema-humile", "invasive-species", "supercolony", "nestmate-recognition", "collective-behavior", "chemical-ecology", "cuticular-hydrocarbons"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Deborah M. Gordon (2018). *ArgentineAnt*. Entomology."
 ---
 
-# Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations
+# ArgentineAnt
 
 **Daniel A. Friedman, Deborah M. Gordon** (2018) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Argentine ant, Linepithema humile, invasive species, supercolony**.
+This work addresses topics in **Entomology**: Argentine ant, Linepithema humile, invasive species, supercolony.
 
-When applying this skill:
-1. Analyze invasive social insect ecology and supercolony dynamics
-1. Understand chemical ecology of nestmate recognition via cuticular hydrocarbons
-1. Evaluate genetic and behavioral mechanisms of invasion success
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Argentine ant**
-- **Linepithema humile**
-- **invasive species**
-- **supercolony**
-- **nestmate recognition**
-- **collective behavior**
-- **chemical ecology**
-- **cuticular hydrocarbons**
-
-## Methods & Techniques
-
-- Recorded foraging rates and walking speeds of three L. humile colonies over three 24-hour periods.
-- Measured environmental conditions including temperature, humidity, and light levels.
-- Analyzed the correlation between foraging activity and the presence of the native ant species Prenolepis imparis.
-- Utilized mixed effect models to assess the relationships between environmental factors and ant behavior.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Colony foraging peaked between 10 and 15˚C, regardless of maximum daily temperature.
-- Worker walking speed increased with temperature and decreased with humidity.
-- Foraging activity was consistent throughout the day and night, with a predictable daily cycle.
-- Heavy rain caused ants to aggregate in sheltered areas, halting foraging activity.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with Argentine ant, Linepithema humile, invasive species
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

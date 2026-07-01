@@ -1,56 +1,39 @@
-# AGENTS.md — From Users to (Sense)Makers: Stigmergic Social Annotation
+# AGENTS.md — StigmergicAnnotation
 
-**Paper**: From Users to (Sense)Makers: Stigmergic Social Annotation (2022)
-**Area**: Cognitive Security
+**Paper**: StigmergicAnnotation (2022)
+**Domain**: Cognitive Security
 **Authors**: Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of From Users to (Sense)Makers: Stigmergic Social Annotation
-**Tasks**:
-- Analyze core argument: We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for...
-- Evaluate: Proposes Open Source Attention framework for decentralized attention governance
-- Evaluate: Identifies centralized platforms as sources of epistemic pollution
-- Evaluate: Develops stigmergic annotation as collective sensemaking methodology
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for StigmergicAnnotation
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Socio-technical framework development
-- Assess and document: Stigmergic system design
-- Assess and document: Decentralized architecture proposal
-- Assess and document: Collective sensemaking analysis
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this cognitive security work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: stigmergic annotation, open source attention, collective sensemaking, epistemic pollution, decentralized platforms
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects StigmergicAnnotation to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2022_StigmergicAnnotation.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

@@ -1,56 +1,55 @@
 ---
 name: "HypercertEcosystems"
-description: "Expertise in developing frameworks for Active Inference and cognitive modeling in decentralized ecosystems, particularly in the context of Hypercerts and Decentralized Science."
-tags: ["cognitive security", "hypercerts", "desci", "decentralized-science", "active-blockference", "aeos"]
+description: "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze..."
+tags: ["hypercerts", "desci", "decentralized-science", "active-blockference", "aeos", "cognitive-audits", "public-goods-funding", "systems-modeling"]
+domain: "Cognitive Security"
+citation: "Active Inference Institute (2022). *HypercertEcosystems*. Cognitive Security."
 ---
 
-# Systems Modeling and Cognitive Audits for Hypercert Ecosystems
+# HypercertEcosystems
 
 **Active Inference Institute** (2022) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Hypercerts, DeSci, decentralized science, Active Blockference**.
+This work addresses topics in **Cognitive Security**: Hypercerts, DeSci, decentralized science, Active Blockference.
 
-When applying this skill:
-1. Model decentralized science ecosystems using Active Inference
-1. Apply cognitive audit methodology to evaluate DeSci platforms
-1. Integrate Hypercert primitives with organizational ontologies
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Hypercerts**
-- **DeSci**
-- **decentralized science**
-- **Active Blockference**
-- **AEOS**
-- **cognitive audits**
-- **public goods funding**
-- **systems modeling**
-
-## Methods & Techniques
-
-- Utilization of Active Inference frameworks for modeling interactions in Hypercert ecosystems.
-- Implementation of multi-agent simulations to explore cognitive and behavioral dynamics.
-- Engagement in informative interviews with stakeholders to understand the Hypercert landscape.
-- Development of entity diagrams and simulations tailored to researcher needs.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- The AEOS implementation enables anticipatory design and real-time analysis of Hypercert ecosystems.
-- Hypercerts can potentially outperform traditional funding mechanisms in certain contexts.
-- Entity-based modeling enhances regulatory compliance and system evaluation.
-- The project aims to provide impactful open-source tools for community design and token engineering.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:56Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with Hypercerts, DeSci, decentralized science
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

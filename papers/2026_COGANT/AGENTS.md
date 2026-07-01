@@ -1,25 +1,39 @@
-# AGENTS.md - COGANT: Deterministic Codebase-to-GNN Translation
+# AGENTS.md — COGANT: Deterministic Codebase-to-GNN Translation
 
 **Paper**: COGANT: Deterministic Codebase-to-GNN Translation (2026)
-**DOI**: [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351)
-**Concept DOI**: [10.5281/zenodo.20705350](https://doi.org/10.5281/zenodo.20705350)
-**Zenodo record**: https://zenodo.org/records/20705351
-**Code**: https://github.com/ActiveInferenceInstitute/COGANT
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Note that "GNN" here means **Generalized Notation Notation**, not graph neural networks.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for COGANT
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, and BIBLIOGRAPHY.md synchronized.
-- The paired code repository is ActiveInferenceInstitute/COGANT.
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects COGANT: Deterministic Codebase-to-GNN Translation to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20705350
-- **Source**: Zenodo record paired with GitHub repository ActiveInferenceInstitute/COGANT
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

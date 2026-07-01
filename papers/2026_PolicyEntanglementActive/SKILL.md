@@ -1,39 +1,57 @@
 ---
-name: "PolicyEntanglementActive"
-description: "Use for Policy Entanglement in Active Inference, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20419637."
-tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-field", "total-correlation", "information-geometry", "schmidt-rank", "tensor-networks"]
+name: "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary"
+description: "<p>Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implement..."
+tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-field", "total-correlation", "information-geometry", "schmidt-rank", "tensor-networks", "sophisticated-inference", "lean-theorem-proving"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary*. Computational."
+doi: "10.5281/zenodo.20418904"
 ---
 
-# Policy Entanglement in Active Inference
+# Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **Policy Entanglement in Active Inference** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20419637`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.0` and repository `ActiveInferenceInstitute/policy_entanglement` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: active inference, free energy principle, policy inference, mean-field.
 
-## Key Concepts
+## Methods
 
-- **active inference**
-- **free energy principle**
-- **policy inference**
-- **mean-field**
-- **total correlation**
-- **information geometry**
-- **Schmidt rank**
-- **tensor networks**
-- **sophisticated inference**
-- **Lean theorem proving**
-- **machine-checked free-energy identity**
+Primary methods and techniques applied in this work:
+
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20418904
+- PDF SHA-256: ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:08Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with active inference, free energy principle, policy inference
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20418904`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,54 +1,56 @@
 ---
 name: "P3IF"
-description: "Expertise in developing and implementing interdisciplinary frameworks for requirements engineering, focusing on enhancing cognitive security and managing information risk in complex decision-making environments."
-tags: ["cognitive security", "p3if", "information-risk", "cognitive-security", "interdisciplinary-frameworks", "requirements-management"]
+description: "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structu..."
+tags: ["p3if", "information-risk", "cognitive-security", "interdisciplinary-frameworks", "requirements-management", "dhs", "health-security"]
+domain: "Cognitive Security"
+citation: "Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman (2023). *P3IF*. Cognitive Security."
 ---
 
-# The P3IF: Properties, Processes, and Perspectives Inter-Framework
+# P3IF
 
 **Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman** (2023) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **P3IF, information risk, cognitive security, interdisciplinary frameworks**.
+This work addresses topics in **Cognitive Security**: P3IF, information risk, cognitive security, interdisciplinary frameworks.
 
-When applying this skill:
-1. Apply P3IF for multiplexing interdisciplinary requirements frameworks
-1. Manage information risk through integrated cognitive security approaches
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **P3IF**
-- **information risk**
-- **cognitive security**
-- **interdisciplinary frameworks**
-- **requirements management**
-- **DHS**
-- **health security**
-
-## Methods & Techniques
-
-- Explores the purpose and function of existing frameworks in requirements engineering.
-- Performs an analysis of relationships and lineages of common frameworks in professional use.
-- Generalizes features of frameworks to identify common dimensions for interoperability.
-- Proposes a modular abstraction layer to extend the value of existing frameworks without replacing them.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
 ## Key Findings
 
-- Identifies the need for interdisciplinary collaboration to enhance information integrity and cognitive security.
-- Demonstrates that current frameworks are either too narrow or too broad for effective application in complex decision-making.
-- Highlights the importance of bridging information and decision security silos to improve organizational decision-making.
-- Suggests that a more interoperable approach to requirements engineering can foster greater cognitive security.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:20Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with P3IF, information risk, cognitive security
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

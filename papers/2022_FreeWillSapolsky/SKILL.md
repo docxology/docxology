@@ -1,55 +1,56 @@
 ---
 name: "FreeWillSapolsky"
-description: "Expertise in the intersection of neuroscience and philosophy, particularly regarding the implications of free will and determinism on human behavior and moral responsibility."
-tags: ["genetics & biomedical research", "free-will", "determinism", "robert-sapolsky", "neuroscience", "behavioral-genetics"]
+description: "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental..."
+tags: ["free-will", "determinism", "robert-sapolsky", "neuroscience", "behavioral-genetics", "philosophy", "consciousness", "moral-philosophy"]
+domain: "Genetics & Biomedical"
+citation: "Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman (2022). *FreeWillSapolsky*. Genetics & Biomedical."
 ---
 
-# On free will or the lack thereof (interview with Robert Sapolsky)
+# FreeWillSapolsky
 
-**Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman** (2022) · Genetics & Biomedical Research
+**Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman** (2022) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **free will, determinism, Robert Sapolsky, neuroscience**.
+This work addresses topics in **Genetics & Biomedical**: free will, determinism, Robert Sapolsky, neuroscience.
 
-When applying this skill:
-1. Evaluate arguments for and against free will from neuroscience
-1. Analyze the implications of behavioral determinism for ethics and justice
-1. Engage with interdisciplinary debates on consciousness and agency
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **free will**
-- **determinism**
-- **Robert Sapolsky**
-- **neuroscience**
-- **behavioral genetics**
-- **philosophy**
-- **consciousness**
-- **moral philosophy**
-
-## Methods & Techniques
-
-- Conducted an interview format to elicit Sapolsky's views.
-- Discussed empirical evidence from neuroscience to support arguments.
-- Engaged with philosophical definitions and implications of free will.
-- Analyzed public responses to previous works to inform the discussion.
+- Genomic sequencing
+- Phylogenetic analysis
+- Statistical genetics
 
 ## Key Findings
 
-- Sapolsky argues that free will is largely an illusion shaped by biological and environmental factors.
-- The sense of agency is often a post-hoc attribution rather than a reflection of true autonomy.
-- Beliefs about free will can influence behavior, but the relationship is complex and not fully understood.
-- The discussion highlights the need for a nuanced understanding of moral responsibility in light of determinism.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:55Z
 
 ## Prerequisites
 
-- Domain knowledge in Genetics & Biomedical Research
+- Familiarity with free will, determinism, Robert Sapolsky
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

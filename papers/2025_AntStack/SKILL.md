@@ -1,53 +1,56 @@
 ---
 name: "AntStack"
-description: "Expertise in developing modular frameworks for simulating biological agents, focusing on interoperability, energy efficiency, and cognitive modeling."
-tags: ["entomology", "antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology"]
+description: "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte..."
+tags: ["antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology", "colony-organization"]
+domain: "Entomology"
+citation: "Daniel A. Friedman (2025). *AntStack*. Entomology."
 ---
 
-# The Ant Stack
+# AntStack
 
 **Daniel A. Friedman** (2025) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **AntStack, multilevel modeling, ant colonies, social insects**.
+This work addresses topics in **Entomology**: AntStack, multilevel modeling, ant colonies, social insects.
 
-When applying this skill:
-1. Apply multilevel modeling frameworks to social insect biology
-1. Integrate molecular, behavioral, and colony-level data in AntStack
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **AntStack**
-- **multilevel modeling**
-- **ant colonies**
-- **social insects**
-- **multiscale biology**
-- **colony organization**
-
-## Methods & Techniques
-
-- Coupling physics-based locomotion with olfactory-visual sensing.
-- Implementing a lightweight neural pipeline for active-inference policy selection.
-- Using pheromone-mediated stigmergy for agent composition.
-- Specifying evaluation suites for navigation, task allocation, and robustness.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- The framework is reproducible, extensible, and transferable to swarm robotics.
-- It links empirical findings in myrmecology to executable models for hypothesis testing.
-- The Ant Stack provides a substrate for energy-efficient synthetic intelligence.
-- It facilitates research in cognitive security and alignment through distributed agents.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with AntStack, multilevel modeling, ant colonies
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

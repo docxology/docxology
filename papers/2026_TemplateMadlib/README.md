@@ -1,45 +1,38 @@
-# Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
+# 💻 Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20786638.svg)](https://doi.org/10.5281/zenodo.20786638)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20786638](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20786638)-blue)]([10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638))
 
 ---
 
 ## Abstract
 
-This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. It keeps playful Mad Lib token-injection mechanics inside a serious reproducibility contract, with deterministic conditional assembly of manuscript sections.
+> This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and ...
 
 ## Keywords
 
-madlib generation · token injection · conditional manuscripts · reproducible research · IMRAD
+`madlib generation` · `token injection` · `conditional manuscripts` · `reproducible research` · `IMRAD`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI (concept)** | [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638) |
-| **DOI (version)** | [10.5281/zenodo.20786639](https://doi.org/10.5281/zenodo.20786639) |
-| **Published** | 2026-06-21 |
-| **Version** | 0.1.0 |
-| **License** | MIT |
-| **Zenodo record** | https://zenodo.org/records/https://zenodo.org/records/20786638 |
+- Literature review
+- Theoretical analysis
 
-## Files
+## Key Findings
 
-- `Friedman_2026_Template_a593c1fe.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.20786638
+- PDF SHA-256: a593c1fedd4b4762c59b3e4f0b678efb84af0b1fa09f1ddff2995a9a805b7bc5
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts*. Zenodo. https://doi.org/10.5281/zenodo.20786638
+> Daniel Ari Friedman (2026). *Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts*. Zenodo.
 
 ## Related
 
-- GitHub release: https://github.com/docxology/template_madlib/releases/tag/v0.1.1
-- Zenodo record: https://zenodo.org/records/20932025
-
-- GitHub release: https://github.com/docxology/template_madlib/releases/tag/v0.1.0
-
-- Zenodo record: https://zenodo.org/records/20786639
-- Code repository: https://github.com/docxology/template_madlib
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

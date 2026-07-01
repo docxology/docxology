@@ -1,53 +1,55 @@
 ---
 name: "NSFReporting"
-description: "Expertise in developing generative intelligence systems for enhancing reporting processes in academic settings, focusing on user-centric design and real-time data management."
-tags: ["computational", "nsf-reporting", "postdoctoral-research", "synthetic-intelligence", "automated-reporting", "research-dissemination"]
+description: "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profi..."
+tags: ["nsf-reporting", "postdoctoral-research", "synthetic-intelligence", "automated-reporting", "research-dissemination", "prompt-engineering"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2023). *NSFReporting*. Computational."
 ---
 
-# Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing
+# NSFReporting
 
 **Daniel Ari Friedman** (2023) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **NSF reporting, postdoctoral research, synthetic intelligence, automated reporting**.
+This work addresses topics in **Computational**: NSF reporting, postdoctoral research, synthetic intelligence, automated reporting.
 
-When applying this skill:
-1. Design AI-assisted scientific reporting systems
-1. Apply prompt engineering to automate research documentation
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **NSF reporting**
-- **postdoctoral research**
-- **synthetic intelligence**
-- **automated reporting**
-- **research dissemination**
-- **prompt engineering**
-
-## Methods & Techniques
-
-- Utilization of prompt engineering and synthetic intelligence for data formatting.
-- Real-time monitoring and evaluation of postdoctoral activities.
-- Adaptive system evolution based on user feedback and technological advancements.
-- Integration of diverse media forms for report generation.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- The proposed system significantly reduces administrative burdens on postdocs.
-- Real-time reporting enhances the ability to monitor and support postdoctoral activities.
-- Uniform reporting framework improves data analysis and comparative studies.
-- User-friendly design fosters greater engagement and usability among postdocs.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:19Z
 
 ## Prerequisites
 
-- Software development and computational methods
-- Formal systems and notation frameworks
+- Familiarity with NSF reporting, postdoctoral research, synthetic intelligence
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

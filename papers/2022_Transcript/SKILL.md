@@ -1,28 +1,57 @@
 ---
-name: "Transcript"
-description: "Use for Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016, a Zenodo publication with DOI 10.5281/zenodo.7267947."
+name: "Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016"
+description: "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics an..."
 tags: ["active-inference", "consciousness", "neuroanatomy", "psychology", "free-energy-principle", "livestream"]
+domain: "Active Inference"
+citation: "Mark Solms, David S Douglass, Stephen Sillett, Daniel Ari Friedman (2022). *Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016*. Active Inference."
+doi: "10.5281/zenodo.7267947"
 ---
 
 # Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016
 
+**Mark Solms, David S Douglass, Stephen Sillett, Daniel Ari Friedman** (2022) · Active Inference
+
+## Context
+
+This work addresses topics in **Active Inference**: Active Inference, Consciousness, Neuroanatomy, Psychology.
+
+## Methods
+
+Primary methods and techniques applied in this work:
+
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.7267947
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-05-30T18:56:25Z
+
+## Prerequisites
+
+- Familiarity with Active Inference, Consciousness, Neuroanatomy
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
+
 ## Instructions
 
-Use this skill when working with the publication **Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016** or its archival record.
+When working with this paper:
 
-1. Ground citations in DOI `10.5281/zenodo.7267947`.
-2. Treat the Zenodo record as the archival source.
-
-## Key Concepts
-
-- **Active Inference**
-- **Consciousness**
-- **Neuroanatomy**
-- **Psychology**
-- **Free Energy Principle**
-- **Livestream**
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+1. Reference the DOI for citation: `10.5281/zenodo.7267947`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

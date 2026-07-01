@@ -1,34 +1,57 @@
 ---
-name: "BoundedAutoResearchTiny"
-description: "Use for Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20417016."
+name: "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
+description: "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but con..."
 tags: ["autoresearch", "reproducible-research", "machine-learning-benchmark", "artifact-readiness", "human-review", "local-artifact-integrity"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Computational."
+doi: "10.5281/zenodo.20417016"
 ---
 
 # Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20417016`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.3.0` and repository `docxology/template_autoresearch_project` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: autoresearch, reproducible research, machine learning benchmark, artifact readiness.
 
-## Key Concepts
+## Methods
 
-- **autoresearch**
-- **reproducible research**
-- **machine learning benchmark**
-- **artifact readiness**
-- **human review**
-- **local artifact integrity**
+Primary methods and techniques applied in this work:
+
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20417016
+- PDF SHA-256: e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:08Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with autoresearch, reproducible research, machine learning benchmark
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20417016`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

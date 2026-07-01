@@ -1,56 +1,56 @@
 ---
 name: "InformationCommons"
-description: "Expertise in structuring information commons through open standards and cognitive security, with a focus on innovative methodologies for information management and analysis."
-tags: ["cognitive security", "information-commons", "cognitive-security", "open-standards", "trust", "governance"]
+description: "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency..."
+tags: ["information-commons", "cognitive-security", "open-standards", "trust", "governance", "decentralized-systems", "information-integrity", "collective-sensemaking"]
+domain: "Cognitive Security"
+citation: "Scott David, R.J. Cordes, Daniel A. Friedman (editors) (2022). *InformationCommons*. Cognitive Security."
 ---
 
-# Structuring the Information Commons: Open Standards and Cognitive Security | COGSEC.org
+# InformationCommons
 
 **Scott David, R.J. Cordes, Daniel A. Friedman (editors)** (2022) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **information commons, cognitive security, open standards, trust**.
+This work addresses topics in **Cognitive Security**: information commons, cognitive security, open standards, trust.
 
-When applying this skill:
-1. Design information commons with open standards and cognitive security
-1. Evaluate governance frameworks for information ecosystems
-1. Apply cognitive security principles to decentralized information systems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **information commons**
-- **cognitive security**
-- **open standards**
-- **trust**
-- **governance**
-- **decentralized systems**
-- **information integrity**
-- **collective sensemaking**
-
-## Methods & Techniques
-
-- Utilizes narrative information management techniques.
-- Employs swarm intelligence concepts in information verification.
-- Applies active inference models to understand conflict dynamics.
-- Develops a decentralized science ontology for collaborative research.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
 ## Key Findings
 
-- Demonstrates the effectiveness of open standards in improving information sharing.
-- Identifies key factors influencing the maturity of market functions.
-- Establishes a correlation between misinformation interventions and public sensemaking.
-- Proposes tools like TrustFinder to enhance trust in digital information.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with information commons, cognitive security, open standards
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

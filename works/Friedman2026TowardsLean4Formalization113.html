@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics — Daniel Ari Friedman</title>
-    <meta name="description" content="The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a machine-checked substrate…">
+    <meta name="description" content="The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an…">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -16,7 +16,7 @@
     <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics">
-    <meta property="og:description" content="The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a machine-checked substrate…">
+    <meta property="og:description" content="The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
     <meta property="og:image:alt" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics">
-    <meta name="twitter:description" content="The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a machine-checked substrate…">
+    <meta name="twitter:description" content="The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics — Daniel Ari Friedman">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,35 +89,7 @@
         },
         {
             "@type": "DefinedTerm",
-            "name": "Free Energy Principle"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "Active Inference"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "Lean 4"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "Mathlib4"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "interactive theorem proving"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "formal verification"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "variational inference"
-        },
-        {
-            "@type": "DefinedTerm",
-            "name": "Bayesian mechanics"
+            "name": "FEPLean"
         }
     ],
     "genre": "Paper",
@@ -147,22 +119,11 @@
         "@type": "Organization",
         "name": "Active Inference Journal"
     },
-    "abstract": "The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a machine-checked substrate for assessing related formal claims has been missing. Dependent-type provers require explicit measure spaces, domination, and integrability that prose often leaves implicit. This work introduces a curated catalog of 50 topics across five pillars—14 FEP, 11 Active Inference, 10 Bayesian Mechanics, 8 Information Geometry, and 7 non-equilibrium Thermodynamics—each as a namespaced Lean 4 sketch against Mathlib4 , with natural-language statements, imports, ecosystem-maturity tags, and sorry-free theorem bodies maintained from a single source of truth. On the pinned stack leanprover/lean4:v4.29.0 / Mathlib4 v4.29.0 , the shipped catalog compiles 50/50 sorry-free under lake env lean. The manuscript describes an LLM-assisted drafting and commentar",
+    "abstract": "The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may l...",
     "keywords": [
-        "Free Energy Principle",
-        "Active Inference",
-        "Lean 4",
-        "Mathlib4",
-        "interactive theorem proving",
-        "formal verification",
-        "variational inference",
-        "Bayesian mechanics",
-        "information geometry",
-        "LLM-ITP integration",
-        "reproducible research",
-        "measure theory"
+        "FEPLean"
     ],
-    "description": "A 50-topic formal catalog of FEP-related mathematics with explicit Mathlib4-facing statements and a reproducible, version-pinned verification story. Axiomatization vs. problem-solving : positions LLM+ITP work as building shared formal structure, not just benchmark solving. Hermes / OpenGauss pipeline: LLM drafts and explains sketches while native Lean verifies; compilation remains the non-negotiable check. Zero-mock testing policy in the software stack (real files, real SQLite, live compiler, real HTTP) as stated in the manuscript. A Lean primer and Mathlib4 / measure-theoretic probability guidance aimed at Active Inference researchers entering formal methods. Theoretical and systems paper: ",
+    "description": "See full paper for detailed findings and analysis Literature review Theoretical analysis",
     "hasPart": {
         "@type": "CreativeWork",
         "name": "Local paper documentation",
@@ -238,15 +199,15 @@
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                <p>The Free Energy Principle (FEP) unifies a broad class of system properties under a variational free-energy functional, but a machine-checked substrate for assessing related formal claims has been missing. Dependent-type provers require explicit measure spaces, domination, and integrability that prose often leaves implicit. This work introduces a curated catalog of 50 topics across five pillars—14 FEP, 11 Active Inference, 10 Bayesian Mechanics, 8 Information Geometry, and 7 non-equilibrium Thermodynamics—each as a namespaced Lean 4 sketch against Mathlib4 , with natural-language statements, imports, ecosystem-maturity tags, and sorry-free theorem bodies maintained from a single source of truth. On the pinned stack leanprover/lean4:v4.29.0 / Mathlib4 v4.29.0 , the shipped catalog compiles 50/50 sorry-free under lake env lean. The manuscript describes an LLM-assisted drafting and commentar</p>
-                <div class="keyword-row"><span>Free Energy Principle</span><span>Active Inference</span><span>Lean 4</span><span>Mathlib4</span><span>interactive theorem proving</span><span>formal verification</span><span>variational inference</span><span>Bayesian mechanics</span><span>information geometry</span><span>LLM-ITP integration</span><span>reproducible research</span><span>measure theory</span></div>
+                <p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may l...</p>
+                <div class="keyword-row"><span>FEPLean</span></div>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
             <div class="meta-grid">
-                <div class="work-detail"><strong>Findings / Concepts</strong><ul><li>A 50-topic formal catalog of FEP-related mathematics with explicit Mathlib4-facing statements and a reproducible, version-pinned verification story.</li><li>Axiomatization vs. problem-solving : positions LLM+ITP work as building shared formal structure, not just benchmark solving.</li><li>Hermes / OpenGauss pipeline: LLM drafts and explains sketches while native Lean verifies; compilation remains the non-negotiable check.</li><li>Zero-mock testing policy in the software stack (real files, real SQLite, live compiler, real HTTP) as stated in the manuscript.</li><li>A Lean primer and Mathlib4 / measure-theoretic probability guidance aimed at Active Inference researchers entering formal methods.</li></ul></div>
-                <div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Theoretical and systems paper: YAML → manuscript → Lake pipeline; per-topic modules with LaTeX-adjacent statement signatures.</li><li>Open-source : https://github.com/ActiveInferenceInstitute/fep lean (manuscript build uses the docxology template approach for validated metadata injection).</li><li>Archived manuscript (v1): https://doi.org/10.5281/zenodo.19699234 · Zenodo record https://zenodo.org/records/19699234</li></ul></div>
+                <div class="work-detail"><strong>Findings / Concepts</strong><ul><li>See full paper for detailed findings and analysis</li></ul></div>
+                <div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Literature review</li><li>Theoretical analysis</li></ul></div>
             </div>
         </section>
         <section class="section section-alt">

@@ -1,56 +1,56 @@
 ---
 name: "ActiveInferants"
-description: "Proficient in developing and implementing active inference models for behavioral analysis in complex biological systems, particularly in eusocial insects like ants."
-tags: ["entomology", "active-inference", "ant-foraging", "markov-decision-process", "stigmergy", "t-maze"]
+description: "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi..."
+tags: ["active-inference", "ant-foraging", "markov-decision-process", "stigmergy", "t-maze", "collective-behavior", "behavioral-modeling", "eco-evo-devo"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant (2021). *ActiveInferants*. Entomology."
 ---
 
-# Active Inferants: An Active Inference Framework for Ant Colony Behavior
+# ActiveInferants
 
 **Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant** (2021) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **active inference, ant foraging, Markov decision process, stigmergy**.
+This work addresses topics in **Entomology**: active inference, ant foraging, Markov decision process, stigmergy.
 
-When applying this skill:
-1. Specify and simulate Active Inference MDP models for collective behavior
-1. Model stigmergic communication using Bayesian generative models
-1. Apply Active Inference framework to ethological systems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **active inference**
-- **ant foraging**
-- **Markov decision process**
-- **stigmergy**
-- **T-maze**
-- **collective behavior**
-- **behavioral modeling**
-- **eco-evo-devo**
-
-## Methods & Techniques
-
-- Developed a Bayesian simulation model based on active inference principles.
-- Utilized a Markov decision process to simulate ant foraging behavior.
-- Focused on stigmergic outcomes using a single trail pheromone molecule.
-- Conducted in silico experiments to validate the model against established behavioral paradigms.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- The model successfully captured emergent phenomena of ant foraging behavior.
-- It illustrated how limited information access among agents can still lead to effective group foraging solutions.
-- The active inference framework was shown to be applicable across different sensory modalities in modeling insect behavior.
-- The study highlighted the potential for future research to explore additional features of ant behavior within this modeling framework.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with active inference, ant foraging, Markov decision process
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

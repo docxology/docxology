@@ -1,53 +1,55 @@
 ---
 name: "ResNei"
-description: "Proficient in designing AI-augmented research environments that enhance collaboration and knowledge discovery through dynamic knowledge graphs."
-tags: ["computational", "resnei", "research-neighbourhood", "collaborative-research", "distributed-collaboration", "interdisciplinary"]
+description: "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared..."
+tags: ["resnei", "research-neighbourhood", "collaborative-research", "distributed-collaboration", "interdisciplinary", "knowledge-sharing"]
+domain: "Computational"
+citation: "Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman (2025). *ResNei*. Computational."
 ---
 
-# ResNei: Solution Design Document
+# ResNei
 
 **Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman** (2025) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **ResNei, Research Neighbourhood, collaborative research, distributed collaboration**.
+This work addresses topics in **Computational**: ResNei, Research Neighbourhood, collaborative research, distributed collaboration.
 
-When applying this skill:
-1. Use ResNei for distributed interdisciplinary research collaboration
-1. Design collaborative knowledge environments for lateral idea growth
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **ResNei**
-- **Research Neighbourhood**
-- **collaborative research**
-- **distributed collaboration**
-- **interdisciplinary**
-- **knowledge sharing**
-
-## Methods & Techniques
-
-- Utilization of a graphical concept model to facilitate engagement between specialists and generalists.
-- Implementation of a dynamic linking system for an evolving corpus of scientific knowledge.
-- Adoption of scientific protocols to ensure reliable evaluation of scientific output.
-- Integration of UX design principles that prioritize collaboration and contextual insight.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- ResNei enhances research efficiency by creating a responsive and intuitive environment.
-- The platform supports impactful inquiry through the co-evolution of expert and generalist collaboration.
-- It democratizes access to scientific knowledge, making it more manageable for generalists.
-- The project is in early development with working prototypes and a technical paper in preprint.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:56Z
 
 ## Prerequisites
 
-- Software development and computational methods
-- Formal systems and notation frameworks
+- Familiarity with ResNei, Research Neighbourhood, collaborative research
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

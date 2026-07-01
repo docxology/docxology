@@ -1,63 +1,56 @@
 ---
-name: "CrescentCity"
-description: "Use for interpreting the synthetic history of Crescent City and Del Norte County as a coupled human–natural system — Cascadia hazard, redwood ecology, Tolowa Dee-ni' history, tsunami disaster and warning policy, and the hazard→rebuilding→governance→memory→adaptation feedback loop via Ostrom social-ecological systems and panarchy/resilience theory."
-tags: ["cognitive-security", "social-ecological-systems", "panarchy-resilience", "local-history", "cascadia-subduction-zone", "tsunami", "tolowa-dee-ni", "coastal-hazard"]
+name: "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast"
+description: "<div> <div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bou..."
+tags: ["california", "cascadia", "crescent-city", "jefferson", "usa"]
+domain: "Cognitive Security"
+citation: "Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Cognitive Security."
+doi: "10.5281/zenodo.20286171"
 ---
 
-# Crescent City in Living Waves
+# Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast
 
-**Daniel Ari Friedman** (2026) - Cognitive Security / Nested Systems & Local History
+**Daniel Ari Friedman** (2026) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with the monograph **Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast**, or when reasoning about Crescent City / Del Norte County history, Cascadia coastal-hazard planning, or place studied as a nested adaptive system.
+This work addresses topics in **Cognitive Security**: California, Cascadia, Crescent City, Jefferson.
 
-When applying this skill:
+## Methods
 
-1. Ground citations in the Zenodo DOI `10.5281/zenodo.20286171` (version 1.0.0).
-2. Use the four-part frame — **Space, Time, People, Ideas/Minds** — to locate any claim before generalizing it.
-3. Read claims through the book's central feedback loop: **hazard → rebuilding → governance → memory → adaptation**.
-4. Treat the ~37% / fifty-year M ≥ 8.0 figure as paleoseismic model output, not a deterministic forecast.
-5. Distinguish primary-source history from interpretive systems synthesis (Ostrom SES, Holling/Gunderson panarchy); link related corpus materials before inventing new framing.
+Primary methods and techniques applied in this work:
 
-## Key Concepts
-
-- **Crescent City / Del Norte County** — northernmost developed strip of the California coast
-- **Cascadia subduction zone** — the locked southern margin and megathrust scenario
-- **Tolowa Dee-ni'** — Smith River estuary villages, dispossession, 1983 recognition restoration
-- **1964 Alaska tsunami** — deadliest event on the contiguous-U.S. Pacific coast
-- **Tsunami warning policy** — the 1964 watershed for U.S. Pacific-wide warning systems
-- **Redwood National and State Parks** — conservation governance beside a working waterfront
-- **Indigenous ocean stewardship** — the 2023 Yurok–Tolowa Dee-ni' Marine Stewardship Area
-- **Social-ecological systems** — Ostrom's resource-systems / users / institutions / outcomes vocabulary
-- **Panarchy & resilience** — Holling/Gunderson: long stability punctuated by abrupt reorganization
-- **Coupled human–natural systems** — Liu et al.: settlement, fisheries, forests, hazards as feedback
-
-## Methods & Techniques
-
-- Synthetic scholarly history across multiple primary-source domains
-- Social-ecological systems (Ostrom) + panarchy/resilience (Holling, Gunderson) framing
-- Coupled human–natural systems analysis of place, chronology, actors, and governing rules
-- Paleoseismic-model interpretation distinguished from deterministic forecasting
-- Rapid AI-augmented synthesis with human oversight
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- No prior single work synthesizes Crescent City's full history; existing accounts are fragmentary or era-bound.
-- The central interpretive claim is one recurring loop: **hazard → rebuilding → governance → memory → adaptation**.
-- The town is a compact case study in nested geological, ecological, economic, and political risk that resilience/panarchy theory explains better than environmental or social history alone.
-- The 1964 Alaska-earthquake tsunami (deadliest on the contiguous-U.S. Pacific coast) reshaped U.S. Pacific-wide tsunami-warning policy far beyond the local waterfront.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20286171
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-06-04T20:45:04Z
 
 ## Prerequisites
 
-- Familiarity with Pacific Northwest coastal geography and Cascadia subduction-zone basics
-- Comfort distinguishing model output from forecast
-- Working vocabulary of social-ecological systems and resilience/panarchy theory
-- Background in reading institutional / Indigenous / environmental history together
+- Familiarity with California, Cascadia, Crescent City
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## Related Papers
+## Instructions
 
-- [2024_FarmWorks](../2024_FarmWorks/SKILL.md)
-- [2023_ATLAS](../2023_ATLAS/SKILL.md)
-- [2022_InformationCommons](../2022_InformationCommons/SKILL.md)
-- [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20286171`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

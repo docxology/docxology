@@ -1,51 +1,55 @@
 ---
 name: "SensemakingFederation"
-description: "Expertise in knowledge federation and sensemaking, utilizing advanced topic mapping and collaborative techniques to enhance understanding and integration of diverse ideas."
-tags: ["presentations, courses & media", "sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
+description: "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl..."
+tags: ["sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
+domain: "Presentations & Media"
+citation: "Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman (2024). *SensemakingFederation*. Presentations & Media."
 ---
 
-# Sensemaking Federation: Exploring the Frontiers of Digital Innovation
+# SensemakingFederation
 
-**Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman** (2024) · Presentations, Courses & Media
+**Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman** (2024) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **sensemaking federation, digital innovation, knowledge federation, collaborative sensemaking**.
+This work addresses topics in **Presentations & Media**: sensemaking federation, digital innovation, knowledge federation, collaborative sensemaking.
 
-When applying this skill:
-1. Navigate sensemaking federation approaches
-1. Design collaborative digital innovation infrastructure
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **sensemaking federation**
-- **digital innovation**
-- **knowledge federation**
-- **collaborative sensemaking**
-- **decentralized infrastructure**
-
-## Methods & Techniques
-
-- Facilitation of a panel discussion with experts in sensemaking and digital innovation.
-- Use of topic mapping to create structured knowledge graphs.
-- Incorporation of game mechanics to foster skills in deep listening and idea synthesis.
-- Engagement of diverse participants to explore the federation of meaning.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Knowledge artifacts can be effectively organized and indexed through topic mapping.
-- Game-based approaches can enhance collaborative sensemaking and idea integration.
-- The establishment of K-Hubs can facilitate better connections between different knowledge communities.
-- Understanding relationships in knowledge requires a nuanced approach that acknowledges their complexity.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:35Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with sensemaking federation, digital innovation, knowledge federation
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,54 +1,37 @@
-# 🛡️ Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier | COGSEC.org
+# 🛡️ NarrativeEcosystems
 
-**Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight** (2021) · *978-1-7364269-2-0*
+**Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight** (2021) · *COGSEC.org*
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"NarrativeEcosystems","abstract":"Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.","keywords":["narrative ecosystems","Active Inference","Remote Teams","ONFT framework","epistemic foraging","niche construction","collective intelligence","systems engineering"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper proposes a comprehensive framework for Remote Teams that integrates Active Inference and Systems Engineering to enhance communication and decision-making processes. By defining the roles of Ontologies, Narratives, Formal documents, and Tools (ONFT), the authors aim to improve team efficiency and the phenomenology of the working day.
+> Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche cons...
 
 ## Keywords
 
 `narrative ecosystems` · `Active Inference` · `Remote Teams` · `ONFT framework` · `epistemic foraging` · `niche construction` · `collective intelligence` · `systems engineering`
 
-## Key Contributions
-
-- Introduces a framework combining Active Inference with Systems Engineering for Remote Teams.
-- Explores the role of communication in enhancing team function and organization.
-- Synthesizes previous work on Active Inference with narratives and ontologies.
-- Addresses the need for effective communication systems in complex multi-agent environments.
-
 ## Methods
 
-- Utilizes the Active Inference framework to analyze communication in Remote Teams.
-- Applies Systems Engineering principles to formalize Remote Team processes.
-- Investigates the dynamics of narratives and their impact on team coherence.
-- Examines the use of digital tools for enhancing team collaboration and decision-making.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 978-1-7364269-2-0
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2021_NarrativeEcosystems,
-  author = {Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight},
-  title = {{Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier | COGSEC.org}},
-  journal = {978-1-7364269-2-0},
-  year = {2021},
-}
-```
+> Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight (2021). *NarrativeEcosystems*. COGSEC.org.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (2,074 bytes)
-- `2021_NarrativeEcosystems.pdf` (3,810,012 bytes)
-- `README.md` (1,703 bytes)
-- `SKILL.md` (1,934 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

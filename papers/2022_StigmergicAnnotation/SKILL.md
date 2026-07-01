@@ -1,55 +1,55 @@
 ---
 name: "StigmergicAnnotation"
-description: "Expertise in designing decentralized frameworks for collective sensemaking and enhancing user agency through stigmergic social annotation."
-tags: ["cognitive security", "stigmergic-annotation", "open-source-attention", "collective-sensemaking", "epistemic-pollution", "decentralized-platforms"]
+description: "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr..."
+tags: ["stigmergic-annotation", "open-source-attention", "collective-sensemaking", "epistemic-pollution", "decentralized-platforms", "social-annotation", "digital-attention"]
+domain: "Cognitive Security"
+citation: "Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *StigmergicAnnotation*. Cognitive Security."
 ---
 
-# From Users to (Sense)Makers: Stigmergic Social Annotation
+# StigmergicAnnotation
 
 **Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **stigmergic annotation, open source attention, collective sensemaking, epistemic pollution**.
+This work addresses topics in **Cognitive Security**: stigmergic annotation, open source attention, collective sensemaking, epistemic pollution.
 
-When applying this skill:
-1. Design stigmergic systems for decentralized collective sensemaking
-1. Analyze epistemic environments and attention governance
-1. Develop socio-technical frameworks for open-source digital infrastructure
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **stigmergic annotation**
-- **open source attention**
-- **collective sensemaking**
-- **epistemic pollution**
-- **decentralized platforms**
-- **social annotation**
-- **digital attention**
-
-## Methods & Techniques
-
-- Theoretical analysis of stigmergic communication and its implications for collective sensemaking.
-- Development of a socio-technical framework inspired by open source and decentralization movements.
-- Exploration of architectural elements for decentralized annotation tools, self-sovereign storage, and content discovery services.
-- Comparison of existing systems like Solid and dokieli to highlight the need for a more integrated ecological approach.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Centralized platforms contribute to epistemic pollution and hinder effective collective decision-making.
-- Decentralization can empower users to take control of their data and improve the quality of information shared online.
-- Stigmergic markers can serve as valuable resources for both individual and collective sensemaking.
-- A shift towards a maker-centric mindset is essential for fostering healthier epistemic environments.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with stigmergic annotation, open source attention, collective sensemaking
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

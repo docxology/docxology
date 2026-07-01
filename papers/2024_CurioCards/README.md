@@ -1,54 +1,36 @@
-# 🎨 Writing on Curio Cards for the "On NFT" book | *Taschen*
+# 📄 CurioCards
 
-**Daniel A. Friedman** (2024) · *978-3-8365-9970-2*
+**Daniel A. Friedman** (2024) · *Taschen*
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CurioCards","abstract":"Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.","keywords":["Curio Cards","research ideation","creativity tools","interdisciplinary thinking","prompt-based exploration"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> Curio Cards is recognized in NFT archaeology as an early art NFT project on Ethereum, launched in 2017, which helped establish a new model for the creation and ownership of digital artwork. The project features contributions from seven artists and introduces computational features that connect art and its social context.
+> Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.
 
 ## Keywords
 
 `Curio Cards` · `research ideation` · `creativity tools` · `interdisciplinary thinking` · `prompt-based exploration`
 
-## Key Contributions
-
-- Pioneered the creation of collectible digital art on the Ethereum blockchain.
-- Introduced unique features in the ERC-721 Non-Fungible Token Standard.
-- Provided a platform for artists to receive value and engage with collectors.
-- Showcased a variety of artistic styles and media, including the first physical artworks and animated GIFs on Ethereum.
-
 ## Methods
 
-- Utilized Ethereum blockchain technology for the creation and ownership of NFTs.
-- Incorporated various artistic media such as digital art, printmaking, and animation.
-- Engaged multiple artists with distinct styles to create a diverse collection.
-- Developed a permanent online gallery to showcase the artwork.
+- Literature review
+- Theoretical analysis
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 978-3-8365-9970-2
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2024_CurioCards,
-  author = {Daniel A. Friedman},
-  title = {{Writing on Curio Cards for the "On NFT" book | *Taschen*}},
-  journal = {978-3-8365-9970-2},
-  year = {2024},
-}
-```
+> Daniel A. Friedman (2024). *CurioCards*. Taschen.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,759 bytes)
-- `2024_CurioCards.pdf` (1,851,294 bytes)
-- `README.md` (1,202 bytes)
-- `SKILL.md` (1,628 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

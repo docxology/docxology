@@ -1,37 +1,38 @@
-# Slides for Iris
+# 🧠 Slides for Iris
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7838653.svg)](https://doi.org/10.5281/zenodo.7838653)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7838652](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7838652)-blue)]([10.5281/zenodo.7838652](https://doi.org/10.5281/zenodo.7838652))
 
 ---
 
 ## Abstract
 
-Some initial slides from today. For context see:&nbsp;@speakerjohnash
+> Some initial slides from today. For context see:&nbsp;@speakerjohnash
 
 ## Keywords
 
-Zenodo publication
+`SlidesIris`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.7838653](https://doi.org/10.5281/zenodo.7838653) |
-| **Published** | 2023-04-17 |
-| **Version** | 1 |
-| **Zenodo record** | https://zenodo.org/records/7838653 |
+- Literature review
+- Theoretical analysis
 
-## Files
+## Key Findings
 
-- `Slides for Iris April 17 2023.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.7838653
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *Slides for Iris*. Zenodo. https://doi.org/10.5281/zenodo.7838653
+> Daniel Ari Friedman (2023). *Slides for Iris*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/7838653
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

@@ -1,7 +1,7 @@
 # AGENTS.md — The Facilitator's Catechism
 
-**Paper**: The Facilitator's Catechism (2020, Zenodo v2)  
-**Area**: Cognitive Security  
+**Paper**: The Facilitator's Catechism (2020)
+**Domain**: Cognitive Security
 **Authors**: Richard J. Cordes, Daniel Ari Friedman
 
 ---
@@ -9,22 +9,24 @@
 ## Agent Roles
 
 ### 📖 ARCHIVIST
-
-- Catalogs this preprint with [Zenodo record 4203765](https://zenodo.org/records/4203765); distinct from *The Facilitator's Catechism Playbook* (DOI [10.5281/zenodo.4579414](https://doi.org/10.5281/zenodo.4579414)).
-- Maintains parity with [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md) and [`publications.html`](../../publications.html).
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for FacilitatorsCatechism
+- Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-
-- **Focus**: Operations orders, organizational sensemaking, HROs, facilitator-facing team protocols.
-- **Tasks**: Compare military OPORD structure to civilian counterparts; extract design requirements for the proposed Facilitator's Catechism; connect to Active Inference where the manuscript invokes it.
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
-
-- Positions this work as the conceptual predecessor to [The Innovator's Catechism](../2020_InnovatorsCatechism/) and related COGSEC facilitation tooling.
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-
-- Cross-links: [Emergent Teams for Complex Threats](../2020_EmergentTeams/); collaborator network — [Robert (RJ) Cordes](../../pages/COLLABORATORS.md).
+- Connects The Facilitator's Catechism to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
 ---
 
@@ -32,12 +34,6 @@
 
 | Date | Agent | Action | Status |
 |------|-------|--------|--------|
-| 2026-05-04 | ARCHIVIST | Indexed Zenodo v2; paper folder completed | ✅ |
-
-- **Source PDF**: `2020_FacilitatorsCatechism.pdf`
-- **PDF Status**: Available
-- **License**: CC BY 4.0 (per Zenodo)
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

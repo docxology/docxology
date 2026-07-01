@@ -1,54 +1,56 @@
 ---
 name: "CognitiveIntegrity"
-description: "Expertise in developing security frameworks for multiagent systems, focusing on cognitive integrity and trust management."
-tags: ["cognitive security", "cognitive-integrity", "multiagent-security", "cognitive-security", "active-inference", "category-theory"]
+description: "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theore..."
+tags: ["cognitive-integrity", "multiagent-security", "cognitive-security", "active-inference", "category-theory", "formal-foundations", "threat-modeling"]
+domain: "Cognitive Security"
+citation: "Daniel Ari Friedman (2026). *CognitiveIntegrity*. Cognitive Security."
 ---
 
-# Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)
+# CognitiveIntegrity
 
 **Daniel Ari Friedman** (2026) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **cognitive integrity, multiagent security, cognitive security, Active Inference**.
+This work addresses topics in **Cognitive Security**: cognitive integrity, multiagent security, cognitive security, Active Inference.
 
-When applying this skill:
-1. Apply formal methods to cognitive security in multiagent systems
-1. Design category-theoretic frameworks for cognitive integrity
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **cognitive integrity**
-- **multiagent security**
-- **cognitive security**
-- **Active Inference**
-- **category theory**
-- **formal foundations**
-- **threat modeling**
-
-## Methods & Techniques
-
-- Formal modeling of cognitive states and integrity properties.
-- Trust computation and algebra to assess security postures.
-- Anomaly detection techniques including cognitive drift scoring and behavioral deviation.
-- Architectural and runtime defense strategies designed for cognitive systems.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Cognitive systems are vulnerable to unique attack vectors that traditional security measures do not address.
-- The proposed framework enhances the detection and mitigation of cognitive attacks.
-- Trust boundedness is crucial for maintaining the integrity of cognitive systems.
-- The research identifies gaps in current security practices and suggests improvements.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:26:08Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with cognitive integrity, multiagent security, cognitive security
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

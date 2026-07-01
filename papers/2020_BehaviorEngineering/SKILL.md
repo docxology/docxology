@@ -1,54 +1,55 @@
 ---
 name: "BehaviorEngineering"
-description: "Expertise in applying Active Inference and Systems Engineering principles to enhance communication and decision-making in Remote Teams."
-tags: ["active inference", "behavior-engineering", "systems-engineering", "organizational-behavior", "complex-adaptive-systems", "team-formation"]
+description: "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for conn..."
+tags: ["behavior-engineering", "systems-engineering", "organizational-behavior", "complex-adaptive-systems", "team-formation", "behavioral-design"]
+domain: "Active Inference"
+citation: "Daniel A. Friedman (2020). *BehaviorEngineering*. Active Inference."
 ---
 
-# Active Inference & Behavior Engineering for Teams
+# BehaviorEngineering
 
 **Daniel A. Friedman** (2020) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **behavior engineering, systems engineering, organizational behavior, complex adaptive systems**.
+This work addresses topics in **Active Inference**: behavior engineering, systems engineering, organizational behavior, complex adaptive systems.
 
-When applying this skill:
-1. Apply systems engineering principles to behavioral analysis
-1. Design organizational systems that account for behavioral complexity
-1. Integrate behavioral science with engineering methodology
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **behavior engineering**
-- **systems engineering**
-- **organizational behavior**
-- **complex adaptive systems**
-- **team formation**
-- **behavioral design**
-
-## Methods & Techniques
-
-- Utilizes the Active Inference framework to analyze communication in teams.
-- Applies Systems Engineering principles to define and manage team functions.
-- Investigates the role of narratives and ontologies in enhancing team communication.
-- Examines the dynamics of team formation and the impact of shared organizational culture.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Effective communication and shared narratives are crucial for the success of Remote Teams.
-- Active Inference can lead to the development of lightweight tools for decision-making.
-- The integration of Systems Engineering with Active Inference provides a novel approach to team lifecycle management.
-- Emergent teams require adaptive communication strategies to navigate complex problems.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:41Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with behavior engineering, systems engineering, organizational behavior
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,55 +1,55 @@
 ---
 name: "InnovatorsCatechism"
-description: "Expertise in developing structured frameworks for innovation management, enhancing team alignment and communication in dynamic environments."
-tags: ["cognitive security", "operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer"]
+description: "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to..."
+tags: ["operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer", "organizational-design", "hackathons"]
+domain: "Cognitive Security"
+citation: "Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Cognitive Security."
 ---
 
-# The Innovator's Catechism
+# InnovatorsCatechism
 
 **Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight** (2020) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **operations orders, innovation teams, Innovator's Catechism, team alignment**.
+This work addresses topics in **Cognitive Security**: operations orders, innovation teams, Innovator's Catechism, team alignment.
 
-When applying this skill:
-1. Design structured operations orders for innovation teams
-1. Transfer military organizational frameworks to civilian innovation
-1. Facilitate rapid team alignment using catechism-structured protocols
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **operations orders**
-- **innovation teams**
-- **Innovator's Catechism**
-- **team alignment**
-- **military transfer**
-- **organizational design**
-- **hackathons**
-
-## Methods & Techniques
-
-- Combination of the Facilitator’s Catechism with Blank’s innovation pipeline framework.
-- Analysis of military operations orders and their impact on organizational performance.
-- Utilization of insights from industrial and organizational psychology, sensemaking, and narrative construction.
-- Creation of a series of structured questions for innovators at each stage of the innovation process.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- High reliability organizations benefit from structured operational approaches, which can be applied to innovation management.
-- The Innovator’s Catechism provides a flexible framework that addresses the unique challenges faced by early-stage teams.
-- Systematic failures in innovation can be mitigated through improved alignment and communication strategies.
-- The paper highlights the need for adaptive tools in the evolving landscape of innovation and entrepreneurship.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:46Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with operations orders, innovation teams, Innovator's Catechism
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

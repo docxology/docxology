@@ -1,56 +1,56 @@
 ---
 name: "QuadMath"
-description: "Proficient in advanced mathematical modeling and optimization techniques using 4D and Quadray coordinates, with practical experience in implementing computational frameworks."
-tags: ["art", "quadmath", "quadray-coordinates", "4d-geometry", "synergetics", "buckminster-fuller"]
+description: "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace fr..."
+tags: ["quadmath", "quadray-coordinates", "4d-geometry", "synergetics", "buckminster-fuller", "ivm-lattice", "rational-arithmetic", "computational-geometry"]
+domain: "Art & Synergetics"
+citation: "Daniel Ari Friedman (2025). *QuadMath*. Art & Synergetics."
 ---
 
-# QuadMath: An Analytical Review of 4D and Quadray Coordinates
+# QuadMath
 
-**Daniel Ari Friedman** (2025) · Art
+**Daniel Ari Friedman** (2025) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **QuadMath, Quadray coordinates, 4D geometry, Synergetics**.
+This work addresses topics in **Art & Synergetics**: QuadMath, Quadray coordinates, 4D geometry, Synergetics.
 
-When applying this skill:
-1. Implement Quadray and 4D coordinate computations
-1. Apply Buckminster Fuller's Synergetics in computational geometry
-1. Use exact rational arithmetic for geometric pattern discovery
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **QuadMath**
-- **Quadray coordinates**
-- **4D geometry**
-- **Synergetics**
-- **Buckminster Fuller**
-- **IVM lattice**
-- **rational arithmetic**
-- **computational geometry**
-
-## Methods & Techniques
-
-- Mathematical formulation of 4D coordinates and their properties.
-- Implementation of optimization algorithms, including Nelder-Mead on integer lattices.
-- Use of Fisher information metrics for analyzing geometrical properties.
-- Development of Python-based computational tools for practical applications.
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
 
 ## Key Findings
 
-- Demonstrated the effectiveness of Quadray coordinates in various optimization scenarios.
-- Established connections between different 4D frameworks, enhancing their interoperability.
-- Provided empirical validation of the proposed methods through computational experiments.
-- Identified potential applications in machine learning, computer graphics, and geospatial intelligence.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:55Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with QuadMath, Quadray coordinates, 4D geometry
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

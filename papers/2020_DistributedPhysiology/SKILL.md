@@ -1,56 +1,56 @@
 ---
 name: "DistributedPhysiology"
-description: "Expertise in the physiological and molecular mechanisms underlying social behavior in eusocial insects, with a focus on integrating functional genomics and social physiology."
-tags: ["entomology", "distributed-physiology", "superorganism", "collective-behavior", "ant-colonies", "decentralized-control"]
+description: "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this..."
+tags: ["distributed-physiology", "superorganism", "collective-behavior", "ant-colonies", "decentralized-control", "interaction-networks", "colony-metabolism", "social-immunity"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Deborah M. Gordon (2020). *DistributedPhysiology*. Entomology."
 ---
 
-# Distributed physiology and the molecular basis of social life in eusocial insects
+# DistributedPhysiology
 
 **Daniel A. Friedman, Deborah M. Gordon** (2020) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **distributed physiology, superorganism, collective behavior, ant colonies**.
+This work addresses topics in **Entomology**: distributed physiology, superorganism, collective behavior, ant colonies.
 
-When applying this skill:
-1. Analyze superorganismal physiology in social insect colonies
-1. Model decentralized collective regulation systems
-1. Connect individual-level mechanisms to colony-level physiological outcomes
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **distributed physiology**
-- **superorganism**
-- **collective behavior**
-- **ant colonies**
-- **decentralized control**
-- **interaction networks**
-- **colony metabolism**
-- **social immunity**
-
-## Methods & Techniques
-
-- Reviews empirical research on physiological processes in eusocial insects.
-- Analyzes the roles of molecular signaling and social communication mechanisms.
-- Compares nestmate-level and colony-level physiological traits.
-- Utilizes functional genomic approaches to investigate the genetics of eusocial behavior.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Colony-level traits significantly influence productivity and ecological success in eusocial insects.
-- Physiological processes in eusocial colonies are regulated through both molecular signaling and physical interactions.
-- Specialized roles within the colony enhance efficiency and task performance.
-- The framework of eusocial physiology provides novel insights into the evolution of social behavior.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with distributed physiology, superorganism, collective behavior
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

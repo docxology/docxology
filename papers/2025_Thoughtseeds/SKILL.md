@@ -1,55 +1,56 @@
 ---
 name: "Thoughtseeds"
-description: "Expertise in computational modeling of cognitive processes, particularly in understanding thought dynamics during meditative states."
-tags: ["active inference", "thoughtseeds", "meditation", "thought-dynamics", "hierarchical-modeling", "agentic-framework"]
+description: "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete..."
+tags: ["thoughtseeds", "meditation", "thought-dynamics", "hierarchical-modeling", "agentic-framework", "active-inference", "attention", "mindfulness"]
+domain: "Active Inference"
+citation: "Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds*. Active Inference."
 ---
 
-# Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States
+# Thoughtseeds
 
 **Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow** (2025) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Thoughtseeds, meditation, thought dynamics, hierarchical modeling**.
+This work addresses topics in **Active Inference**: Thoughtseeds, meditation, thought dynamics, hierarchical modeling.
 
-When applying this skill:
-1. Model thought dynamics using the Thoughtseeds framework
-1. Apply Active Inference to meditative and contemplative practices
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Thoughtseeds**
-- **meditation**
-- **thought dynamics**
-- **hierarchical modeling**
-- **agentic framework**
-- **Active Inference**
-- **attention**
-- **mindfulness**
-
-## Methods & Techniques
-
-- Employs a hierarchical model structured as nested Markov blankets.
-- Simulates focused-attention Vipassana meditation using rule-based training informed by neuroscience.
-- Utilizes computational modeling combined with phenomenological insights.
-- Applies the framework to investigate meditative states and mind-wandering episodes.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Identifies four emergent states from thoughtseed interactions: breath_control, mind_wandering, meta_awareness, and redirect_breath.
-- Shows that experts maintain control dominance for focused attention, while novices experience frequent mind-wandering.
-- Demonstrates self-organizing dynamics in thought processes during meditation.
-- Provides testable predictions about meditation skill development and cognitive processes.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Thoughtseeds, meditation, thought dynamics
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

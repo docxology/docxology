@@ -1,54 +1,56 @@
 ---
 name: "SharedProtentions"
-description: "Expertise in integrating phenomenological philosophy with mathematical modeling to analyze collective action and shared goals in multi-agent systems."
-tags: ["active inference", "shared-protentions", "multi-agent", "active-inference", "anticipation", "coupled-generative-models"]
+description: "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz..."
+tags: ["shared-protentions", "multi-agent", "active-inference", "anticipation", "coupled-generative-models", "coordination", "predictive-processing"]
+domain: "Active Inference"
+citation: "Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead (2024). *SharedProtentions*. Active Inference."
 ---
 
-# Shared Protentions in Multi-Agent Active Inference
+# SharedProtentions
 
 **Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead** (2024) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **shared protentions, multi-agent, Active Inference, anticipation**.
+This work addresses topics in **Active Inference**: shared protentions, multi-agent, Active Inference, anticipation.
 
-When applying this skill:
-1. Model shared anticipatory states in multi-agent Active Inference
-1. Formalize multi-agent coordination through coupled generative models
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **shared protentions**
-- **multi-agent**
-- **Active Inference**
-- **anticipation**
-- **coupled generative models**
-- **coordination**
-- **predictive processing**
-
-## Methods & Techniques
-
-- Review of Husserlian phenomenology focusing on inner time-consciousness concepts.
-- Application of active inference as a formal approach to model agent behavior.
-- Utilization of sheaf and topos theory to represent agent interactions and shared understanding.
-- Construction of a 'consensus topos' to analyze social action based on shared goals.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Shared protentions are crucial for coordination and achieving common objectives in multi-agent systems.
-- The framework provides insights into the dynamics of social action and group intentionality.
-- Mathematical modeling allows for predictions of agent behaviors and environmental responses.
-- The approach contributes to the field of computational phenomenology and naturalizes group intentionality.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with shared protentions, multi-agent, Active Inference
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,56 +1,39 @@
-# AGENTS.md — ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management
+# AGENTS.md — ATLAS
 
-**Paper**: ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management (2023)
-**Area**: Cognitive Security
+**Paper**: ATLAS (2023)
+**Domain**: Cognitive Security
 **Authors**: R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management
-**Tasks**:
-- Analyze core argument: The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-orien...
-- Evaluate: Develops ATLAS question-oriented pattern language for knowledge management
-- Evaluate: Provides structured methods for organizing knowledge through question patterns
-- Evaluate: Creates comprehensive tool addressing complexity of modern information environments
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ATLAS
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Pattern language development
-- Assess and document: Question-oriented knowledge structuring
-- Assess and document: Knowledge management system design
-- Assess and document: Multi-contributor collaborative development
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this cognitive security work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: ATLAS, pattern languages, knowledge management, question-oriented approach, information architecture
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects ATLAS to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2023_ATLAS.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

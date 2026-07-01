@@ -1,56 +1,39 @@
-# AGENTS.md — Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse
+# AGENTS.md — DigitalRhetorical
 
-**Paper**: Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse (2021)
-**Area**: Cognitive Security
+**Paper**: DigitalRhetorical (2021)
+**Domain**: Cognitive Security
 **Authors**: Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse
-**Tasks**:
-- Analyze core argument: This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop ...
-- Evaluate: Introduces the DRE3 (Digital Rhetorical Ecosystem three-tiered) model
-- Evaluate: Maps how image memes impact public narratives through parsimony and polysemy
-- Evaluate: Bridges rhetorical studies and ecological systems analysis for digital discourse
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for DigitalRhetorical
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Digital rhetorical analysis
-- Assess and document: Ecosystem modeling (DRE3)
-- Assess and document: Image meme content analysis
-- Assess and document: Comparative rhetorical-ecological framework
+### 🔬 RESEARCHER
+- Extracts methods: Narrative analysis, Misinformation detection, Trust frameworks
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this cognitive security work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: digital rhetoric, image memes, DRE3 model, narrative ecosystems, rhetorical ecology
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects DigitalRhetorical to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2021_DigitalRhetorical.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

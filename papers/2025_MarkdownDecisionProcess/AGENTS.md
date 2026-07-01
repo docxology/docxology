@@ -1,57 +1,39 @@
-# AGENTS.md — Markdown Decision Process: A Framework for Probabilistic Document Analysis
+# AGENTS.md — MarkdownDecisionProcess
 
-**Paper**: Markdown Decision Process: A Framework for Probabilistic Document Analysis (2025)
-**Area**: Computational
+**Paper**: MarkdownDecisionProcess (2025)
+**Domain**: Computational
 **Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Markdown Decision Process: A Framework for Probabilistic Document Analysis
-**Tasks**:
-- Analyze core argument: The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, a...
-- Evaluate: Introduces Markdown Decision Process framework for probabilistic document analysis
-- Evaluate: Develops MarkChain, PolicyOptimizer, and BeliefUpdater components
-- Evaluate: Applies Marr's three levels to document processing
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for MarkdownDecisionProcess
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Markov chain modeling
-- Assess and document: Reinforcement learning optimization
-- Assess and document: POMDP formulation
-- Assess and document: Bayesian belief updating
-- Assess and document: Document structure analysis
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this computational work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: Markdown Decision Process, document analysis, Markov chains, reinforcement learning, POMDP
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects MarkdownDecisionProcess to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2025_MarkdownDecisionProcess.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

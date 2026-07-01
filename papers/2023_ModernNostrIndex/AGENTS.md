@@ -1,21 +1,39 @@
-# AGENTS.md - Modern Nostr Index Card-based Knowledge Engineering
+# AGENTS.md — Modern Nostr Index Card-based Knowledge Engineering
 
 **Paper**: Modern Nostr Index Card-based Knowledge Engineering (2023)
-**DOI**: [10.5281/zenodo.8118156](https://doi.org/10.5281/zenodo.8118156)
-**Zenodo record**: https://zenodo.org/records/8118156
+**Domain**: Active Inference
+**Authors**: Andrew Claros, Daniel Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: Andrew Claros, Daniel Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ModernNostrIndex
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Active Inference literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Active Inference concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects Modern Nostr Index Card-based Knowledge Engineering to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/8118156
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

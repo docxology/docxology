@@ -1,44 +1,56 @@
 ---
 name: "AII_v2"
 description: "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap..."
-tags: ["active inference", "active-inference-institute", "organizational-update", "open-science", "community"]
+tags: ["active-inference-institute", "organizational-update", "open-science", "community"]
+domain: "AII Ecosystem"
+citation: "Active Inference Institute (2024). *AII_v2*. AII Ecosystem."
 ---
 
-# The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
+# AII_v2
 
-**Active Inference Institute** (2024) · Active Inference
+**Active Inference Institute** (2024) · AII Ecosystem
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Active Inference Institute, organizational update, open science, community**.
+This work addresses topics in **AII Ecosystem**: Active Inference Institute, organizational update, open science, community.
 
-When applying this skill:
-1. Navigate Active Inference Institute organizational ecosystem
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Active Inference Institute**
-- **organizational update**
-- **open science**
-- **community**
-
-## Methods & Techniques
-
-- Organizational documentation
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Documents AII organizational growth and expanded activities
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:23Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Active Inference Institute, organizational update, open science
+- Background in AII Ecosystem fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

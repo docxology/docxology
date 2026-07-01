@@ -1,54 +1,56 @@
 ---
 name: "BlattodeaDiversity"
-description: "Expertise in analyzing chemical communication systems and transcriptomic data in social insects, with a focus on cuticular hydrocarbons and their relationship to social complexity."
-tags: ["entomology", "blattodea", "cockroach-diversity", "termites", "insect-ecology", "eusociality"]
+description: "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W..."
+tags: ["blattodea", "cockroach-diversity", "termites", "insect-ecology", "eusociality", "taxonomy", "evolutionary-biology"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, et al. (2024). *BlattodeaDiversity*. Entomology."
 ---
 
-# Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea
+# BlattodeaDiversity
 
 **Daniel A. Friedman, et al.** (2024) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Blattodea, cockroach diversity, termites, insect ecology**.
+This work addresses topics in **Entomology**: Blattodea, cockroach diversity, termites, insect ecology.
 
-When applying this skill:
-1. Analyze cockroach and termite taxonomy and ecology
-1. Evaluate the evolutionary transition to eusociality in Blattodea
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Blattodea**
-- **cockroach diversity**
-- **termites**
-- **insect ecology**
-- **eusociality**
-- **taxonomy**
-- **evolutionary biology**
-
-## Methods & Techniques
-
-- Compared CHC complexity and transcriptomic data across selected Blattodea species representing varying social complexities.
-- Utilized gas chromatography coupled with tandem mass spectrometry (GC–MS/MS) for CHC analysis.
-- Constructed a chemical dendrogram based on CHC divergence and correlated it with molecular phylogeny.
-- Analyzed whole-genome transcriptomes to assess CHC biosynthesis gene diversity.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- No consistent pattern of chemical complexity was found correlating with social complexity in Blattodea.
-- Chemical divergence and transcriptomic repertoire did not reflect levels of social organization.
-- The study calls for a more cautious interpretation of the relationship between chemical, genetic, and social complexity.
-- Identified specific CHC compound classes and their associated biosynthesis genes across different species.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with Blattodea, cockroach diversity, termites
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

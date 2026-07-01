@@ -1,54 +1,39 @@
-# AGENTS.md — To comment or not to comment
+# AGENTS.md — ToComment
 
-**Paper**: To comment or not to comment (2023)
-**Area**: Genetics & Biomedical Research
+**Paper**: ToComment (2023)
+**Domain**: Genetics & Biomedical
 **Authors**: Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of To comment or not to comment
-**Tasks**:
-- Analyze core argument: This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online na...
-- Evaluate: Applies DRE3 model to analyze digital meme rhetoric
-- Evaluate: Examines how memes shape public discourse through rhetorical mechanisms
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ToComment
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Rhetorical ecosystem analysis
-- Assess and document: Digital meme content analysis
-- Assess and document: DRE3 framework application
+### 🔬 RESEARCHER
+- Extracts methods: Narrative analysis, Misinformation detection, Trust frameworks
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Genetics & Biomedical literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this genetics & biomedical research work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Genetics & Biomedical concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: rhetorical analysis, image memes, digital discourse, narrative ecosystems, DRE3 model
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects ToComment to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2023_ToComment.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

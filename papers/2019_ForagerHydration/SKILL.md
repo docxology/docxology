@@ -1,56 +1,56 @@
 ---
 name: "ForagerHydration"
-description: "Expertise in behavioral ecophysiology, focusing on the effects of hydration on foraging behavior and reproductive success in social insects."
-tags: ["entomology", "pogonomyrmex-barbatus", "desiccation-physiology", "foraging-behavior", "water-balance", "colony-variation"]
+description: "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing t..."
+tags: ["pogonomyrmex-barbatus", "desiccation-physiology", "foraging-behavior", "water-balance", "colony-variation", "collective-behavior", "behavioral-ecology", "reproductive-fitness"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *ForagerHydration*. Entomology."
 ---
 
-# The physiology of forager hydration and variation among harvester ant colonies
+# ForagerHydration
 
 **Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon** (2019) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Pogonomyrmex barbatus, desiccation physiology, foraging behavior, water balance**.
+This work addresses topics in **Entomology**: Pogonomyrmex barbatus, desiccation physiology, foraging behavior, water balance.
 
-When applying this skill:
-1. Design and conduct field experiments on ant foraging behavior
-1. Measure individual physiological responses (desiccation tolerance) in social insects
-1. Link individual variation to colony-level ecological outcomes
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Pogonomyrmex barbatus**
-- **desiccation physiology**
-- **foraging behavior**
-- **water balance**
-- **colony variation**
-- **collective behavior**
-- **behavioral ecology**
-- **reproductive fitness**
-
-## Methods & Techniques
-
-- Conducted field experiments manipulating hydration levels of foragers and observing subsequent foraging behavior.
-- Performed desiccation tests to assess water loss sensitivity in foragers from different colonies.
-- Utilized statistical analyses, including Wilcoxon signed-rank tests and regression models, to evaluate the effects of hydration on foraging trips.
-- Collected environmental data (temperature and humidity) to correlate with foraging activity.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Hydrated foragers made significantly more foraging trips than unhydrated foragers.
-- Colony-specific responses to desiccation risk were observed, with some colonies exhibiting greater sensitivity to water loss.
-- Desiccation tolerance was associated with higher reproductive success in colonies.
-- Foragers' hydration status influenced their decision-making regarding foraging trips.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with Pogonomyrmex barbatus, desiccation physiology, foraging behavior
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

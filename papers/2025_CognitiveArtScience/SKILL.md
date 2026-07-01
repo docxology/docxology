@@ -1,52 +1,56 @@
 ---
 name: "CognitiveArtScience"
-description: "Expertise in integrating cognitive science and art through a systemic approach that balances exploitation and exploration, utilizing advanced methodologies like Active Inference for cognitive modeling."
-tags: ["art", "cognitive-art-science", "aesthetic-experience", "creative-cognition", "active-inference", "art-science-integration"]
+description: "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference..."
+tags: ["cognitive-art-science", "aesthetic-experience", "creative-cognition", "active-inference", "art-science-integration"]
+domain: "Art & Synergetics"
+citation: "Daniel A. Friedman (2025). *CognitiveArtScience*. Art & Synergetics."
 ---
 
-# On Cognitive Art & Science: Toward Wholeness From Both Sides
+# CognitiveArtScience
 
-**Daniel A. Friedman** (2025) · Art
+**Daniel A. Friedman** (2025) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **cognitive art-science, aesthetic experience, creative cognition, Active Inference**.
+This work addresses topics in **Art & Synergetics**: cognitive art-science, aesthetic experience, creative cognition, Active Inference.
 
-When applying this skill:
-1. Apply cognitive science frameworks to art-science integration
-1. Model aesthetic experience through Active Inference
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **cognitive art-science**
-- **aesthetic experience**
-- **creative cognition**
-- **Active Inference**
-- **art-science integration**
-
-## Methods & Techniques
-
-- Utilizes a four-fold schema to analyze cognitive processes and their interrelations.
-- Applies Active Inference from a Low Road perspective for variational approximation in cognitive modeling.
-- Employs alternating analytical moves (2→3) and generative moves (4→3) to compress past data and open space for future possibilities.
-- Integrates empirical specifics with mathematical generalizations for flexible systems modeling.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Cognitive wholeness emerges from the cooperation of explanation and anticipation across different scales.
-- Art and cognitive processes are interconnected, with art serving as a cultural reflection of cognitive understanding.
-- The proposed systems can facilitate a balance between intelligence and wisdom in cognitive science.
-- The alignment paradigm emphasizes the importance of shared cognitive experiences and mutual respect in cognitive interactions.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:46Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with cognitive art-science, aesthetic experience, creative cognition
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

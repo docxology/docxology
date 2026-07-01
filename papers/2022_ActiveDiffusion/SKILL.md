@@ -1,53 +1,56 @@
 ---
 name: "ActiveDiffusion"
-description: "Expertise in integrating Active Inference and Diffusion Models for advanced cognitive system design and decision-making strategies."
-tags: ["active inference", "active-diffusion", "diffusion-models", "active-inference", "generative-ai", "probabilistic-modeling"]
+description: "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, f..."
+tags: ["active-diffusion", "diffusion-models", "active-inference", "generative-ai", "probabilistic-modeling", "free-energy-minimization"]
+domain: "AII Ecosystem"
+citation: "Jakub Smékal, Daniel Friedman (2022). *ActiveDiffusion*. AII Ecosystem."
 ---
 
-# Catechism for Towards Active Diffusion
+# ActiveDiffusion
 
-**Jakub Smékal, Daniel Friedman** (2022) · Active Inference
+**Jakub Smékal, Daniel Friedman** (2022) · AII Ecosystem
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Active Diffusion, diffusion models, Active Inference, generative AI**.
+This work addresses topics in **AII Ecosystem**: Active Diffusion, diffusion models, Active Inference, generative AI.
 
-When applying this skill:
-1. Connect diffusion models with Active Inference principles
-1. Design collaborative research initiatives around emerging AI paradigms
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Active Diffusion**
-- **diffusion models**
-- **Active Inference**
-- **generative AI**
-- **probabilistic modeling**
-- **free energy minimization**
-
-## Methods & Techniques
-
-- Conducts a thorough literature review on Latent Diffusion Models and belief propagation in Active Inference.
-- Utilizes benchmarks on standard datasets and formats for empirical validation.
-- Employs the cadCAD package for developing frameworks in cognitive ecosystems design.
-- Investigates the application of individual components within LDM architectures in the action-perception loop.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Identifies significant similarities between Active Inference and Diffusion Models in their formulation and applications.
-- Demonstrates the effectiveness of DMs in learning representations of dynamic environments.
-- Reveals potential for bridging gaps between continuous and discrete time formulations in generative models.
-- Highlights the role of latent state representations in enhancing sophisticated inference in high-dimensional spaces.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:52Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Active Diffusion, diffusion models, Active Inference
+- Background in AII Ecosystem fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

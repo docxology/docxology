@@ -1,54 +1,55 @@
 ---
 name: "MDKV"
-description: "Proficient in developing and utilizing multitrack Markdown containers for structured document management, enhancing collaboration and reproducibility in digital knowledge work."
-tags: ["computational", "mdkv", "markdown", "key-value-format", "structured-data", "document-specification"]
+description: "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be..."
+tags: ["mdkv", "markdown", "key-value-format", "structured-data", "document-specification", "yaml-free", "round-trip-transformation"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2025). *MDKV*. Computational."
 ---
 
-# MDKV: A Multitrack Markdown Container for Structured, Portable Documents
+# MDKV
 
 **Daniel Ari Friedman** (2025) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **MDKV, Markdown, key-value format, structured data**.
+This work addresses topics in **Computational**: MDKV, Markdown, key-value format, structured data.
 
-When applying this skill:
-1. Design lightweight document format specifications
-1. Implement round-trip document transformations between Markdown and structured data
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **MDKV**
-- **Markdown**
-- **key-value format**
-- **structured data**
-- **document specification**
-- **YAML-free**
-- **round-trip transformation**
-
-## Methods & Techniques
-
-- Introduced a ZIP archive format containing a YAML manifest and UTF-8 Markdown files.
-- Formalized the MDKV model and presented its software architecture.
-- Evaluated design trade-offs against adjacent technologies.
-- Provided a CLI and a small GUI for selective preview and live editing.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- MDKV effectively preserves a document's conceptual unity while decoupling its layers for editing and governance.
-- The format supports reproducible exports and facilitates collaboration across different audiences.
-- MDKV's design prioritizes human inspectability and long-term readability over custom binary formats.
-- Use cases demonstrate the format's applicability in various document management scenarios.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:50Z
 
 ## Prerequisites
 
-- Software development and computational methods
-- Formal systems and notation frameworks
+- Familiarity with MDKV, Markdown, key-value format
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

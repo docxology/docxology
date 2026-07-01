@@ -1,57 +1,39 @@
-# 🎨 On Time
+# 📄 OnTime
 
 **Daniel A. Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15168381-blue)](https://doi.org/10.5281/zenodo.15168381)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15168381](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.15168381)-blue)]([10.5281/zenodo.15168381](https://doi.org/10.5281/zenodo.15168381))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"OnTime","abstract":"On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems.","keywords":["temporal dynamics","Active Inference","synchronization","collective behavior","temporal coordination"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper introduces Narrative Information Management (NIM) as a framework to address the challenges of information dynamics across various fields, emphasizing the need for synthesis and exchange of knowledge and tools. By proposing NIM, the authors aim to unify disparate disciplines facing similar information-related challenges and provide insights into effective information systems.
+> On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems.
 
 ## Keywords
 
 `temporal dynamics` · `Active Inference` · `synchronization` · `collective behavior` · `temporal coordination`
 
-## Key Contributions
-
-- Proposes Narrative Information Management (NIM) as a unifying framework for addressing information dynamics.
-- Identifies common features of impactful information systems across various disciplines.
-- Explores insights and solutions from eclectic fields facing information challenges.
-- Provides recommendations for future research on NIM.
-
 ## Methods
 
-- Conducts a broad summary of challenges faced by information-centered disciplines.
-- Synthesizes a set of common features contributing to effective NIM systems.
-- Explores domain-specific challenges and ad-hoc solutions in various fields.
-- Assesses common features found across discussed domains to inform future work.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.15168381](https://doi.org/10.5281/zenodo.15168381)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2025_OnTime,
-  author = {Daniel A. Friedman},
-  title = {{On Time}},
-  journal = {Zenodo},
-  year = {2025},
-  doi = {10.5281/zenodo.15168381},
-}
-```
+> Daniel A. Friedman (2025). *OnTime*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,527 bytes)
-- `2025_OnTime.pdf` (738,658 bytes)
-- `README.md` (1,083 bytes)
-- `SKILL.md` (1,520 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

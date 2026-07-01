@@ -1,21 +1,39 @@
-# AGENTS.md - GeneralizedNotationNotation (GNN)
+# AGENTS.md — GeneralizedNotationNotation (GNN)
 
 **Paper**: GeneralizedNotationNotation (GNN) (2026)
-**DOI**: [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313)
-**Zenodo record**: https://zenodo.org/records/20671741
+**Domain**: Active Inference
+**Authors**: Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for GeneralizedNotationNotationGNN
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Active Inference literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Active Inference concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects GeneralizedNotationNotation (GNN) to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/7803313
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

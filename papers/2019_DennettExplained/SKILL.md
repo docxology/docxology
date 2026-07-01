@@ -1,54 +1,55 @@
 ---
 name: "DennettExplained"
-description: "Expertise in interdisciplinary philosophy, integrating cognitive science and empirical research to explore consciousness and the implications of psychoactive substances."
-tags: ["genetics & biomedical research", "consciousness", "philosophy-of-mind", "daniel-dennett", "cognitive-science", "psychedelics"]
+description: "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philos..."
+tags: ["consciousness", "philosophy-of-mind", "daniel-dennett", "cognitive-science", "psychedelics", "predictive-processing", "altered-states"]
+domain: "Genetics & Biomedical"
+citation: "Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman (2019). *DennettExplained*. Genetics & Biomedical."
 ---
 
-# Dennett Explained (interview with Daniel Dennett)
+# DennettExplained
 
-**Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · Genetics & Biomedical Research
+**Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **consciousness, philosophy of mind, Daniel Dennett, cognitive science**.
+This work addresses topics in **Genetics & Biomedical**: consciousness, philosophy of mind, Daniel Dennett, cognitive science.
 
-When applying this skill:
-1. Engage with philosophy of mind debates on consciousness and cognition
-1. Apply cross-disciplinary approaches to cognitive science
-1. Evaluate the relationship between altered states and theories of consciousness
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **consciousness**
-- **philosophy of mind**
-- **Daniel Dennett**
-- **cognitive science**
-- **psychedelics**
-- **predictive processing**
-- **altered states**
-
-## Methods & Techniques
-
-- Conducted an interview format to elicit Dennett's thoughts and experiences.
-- Utilized cross-disciplinary perspectives to analyze philosophical and scientific concepts.
-- Engaged in speculative discussions about empirical questions related to consciousness.
-- Incorporated historical context and philosophical lineage to frame Dennett's ideas.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Dennett's work encourages a collaborative approach between philosophy and science.
-- Psychoactive substances may offer valuable insights into consciousness when studied responsibly.
-- Philosophers can provide critical perspectives that enhance scientific inquiry.
-- Dennett's ideas have anticipated trends in cognitive science, particularly in predictive processing.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Domain knowledge in Genetics & Biomedical Research
+- Familiarity with consciousness, philosophy of mind, Daniel Dennett
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

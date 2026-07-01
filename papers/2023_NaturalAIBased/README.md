@@ -1,37 +1,39 @@
-# A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
+# 💻 A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
 
 **John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others** (2023) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10360148.svg)](https://doi.org/10.5281/zenodo.10360148)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10360056](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10360056)-blue)]([10.5281/zenodo.10360056](https://doi.org/10.5281/zenodo.10360056))
 
 ---
 
 ## Abstract
 
-Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
+> Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
 
 ## Keywords
 
-Active Inference · AI · Natural · Policy
+`Active Inference` · `AI` · `Natural` · `Policy`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.10360148](https://doi.org/10.5281/zenodo.10360148) |
-| **Published** | 2023-12-12 |
-| **Version** | Unknown |
-| **Zenodo record** | https://zenodo.org/records/10360148 |
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-## Files
+## Key Findings
 
-- `12-11-2023_Natural_AI_Letter_v1.1.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.10360148
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo. https://doi.org/10.5281/zenodo.10360148
+> John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/10360148
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

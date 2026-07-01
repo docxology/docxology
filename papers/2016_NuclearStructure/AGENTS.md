@@ -1,57 +1,39 @@
-# AGENTS.md — Influence of Nuclear Structure on formation of radiation-induced lethal lesions
+# AGENTS.md — NuclearStructure
 
-**Paper**: Influence of Nuclear Structure on formation of radiation-induced lethal lesions (2016)
-**Area**: Genetics & Biomedical Research
+**Paper**: NuclearStructure (2016)
+**Domain**: Genetics & Biomedical
 **Authors**: Daniel A. Friedman, Daniel F. Pilch
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Influence of Nuclear Structure on formation of radiation-induced lethal lesions
-**Tasks**:
-- Analyze core argument: Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic ins...
-- Evaluate: Reviews the intersection of radiation biology and 3D genome organization
-- Evaluate: Discusses Hi-C applications for understanding radiation-induced chromatin reorganization
-- Evaluate: Synthesizes evidence on how ionizing radiation disrupts TADs and chromatin architecture
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for NuclearStructure
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Hi-C chromosome conformation capture
-- Assess and document: Chromatin conformation analysis
-- Assess and document: Radiation biology techniques
-- Assess and document: Bioinformatics pipeline for Hi-C data
-- Assess and document: Literature review and synthesis
+### 🔬 RESEARCHER
+- Extracts methods: Genomic sequencing, Phylogenetic analysis, Statistical genetics
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Genetics & Biomedical literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this genetics & biomedical research work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Genetics & Biomedical concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: Hi-C, chromosome conformation, radiation biology, chromatin architecture, DNA damage
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects NuclearStructure to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2016_NuclearStructure.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

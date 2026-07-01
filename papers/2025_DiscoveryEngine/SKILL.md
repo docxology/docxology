@@ -1,53 +1,56 @@
 ---
 name: "DiscoveryEngine"
-description: "Expertise in developing AI-driven frameworks for synthesizing and navigating scientific knowledge, utilizing structured representations and advanced machine learning techniques."
-tags: ["computational", "discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation"]
+description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem..."
+tags: ["discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation", "computational-science"]
+domain: "Computational"
+citation: "Daniel A. Friedman (2025). *DiscoveryEngine*. Computational."
 ---
 
-# The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
+# DiscoveryEngine
 
 **Daniel A. Friedman** (2025) · Computational
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Discovery Engine, automated discovery, Active Inference, scientific reasoning**.
+This work addresses topics in **Computational**: Discovery Engine, automated discovery, Active Inference, scientific reasoning.
 
-When applying this skill:
-1. Design automated scientific discovery systems using Active Inference
-1. Model hypothesis generation and testing as inference processes
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Discovery Engine**
-- **automated discovery**
-- **Active Inference**
-- **scientific reasoning**
-- **hypothesis generation**
-- **computational science**
-
-## Methods & Techniques
-
-- Employs LLM-driven Structured Knowledge Distillation to extract verifiable knowledge components.
-- Utilizes a Conceptual Nexus Model (CNM) as an evolving knowledge graph for specific research domains.
-- Incorporates hybrid approaches combining dense vector embeddings and relational structure encoding.
-- Enables dynamic 'unrolling' of the Conceptual Tensor into human-interpretable views like knowledge graphs.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Demonstrates that the Discovery Engine can effectively manage the exponential growth of scientific publications.
-- Shows that AI agents can navigate complex knowledge landscapes and assist in generating novel hypotheses.
-- Identifies the potential for improved reproducibility and validation of scientific contributions.
-- Highlights the importance of transitioning to a machine-readable knowledge infrastructure.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Software development and computational methods
-- Formal systems and notation frameworks
+- Familiarity with Discovery Engine, automated discovery, Active Inference
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

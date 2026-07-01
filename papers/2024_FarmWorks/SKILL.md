@@ -1,59 +1,56 @@
 ---
 name: "FarmWorks"
-description: "Expertise in developing decentralized AI systems for agriculture, focusing on personalized decision support and ethical AI deployment."
-tags: ["cognitive security", "farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks"]
+description: "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems..."
+tags: ["farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks", "edge-computing", "farmer-autonomy", "sustainable-agriculture", "iot", "community-driven-innovation"]
+domain: "Cognitive Security"
+citation: "Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin (2024). *FarmWorks*. Cognitive Security."
 ---
 
-# FarmWorks: Decentralized AI Agents for Personalized Solutions
+# FarmWorks
 
 **Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin** (2024) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **FarmWorks, decentralized AI, precision agriculture, Active Inference**.
+This work addresses topics in **Cognitive Security**: FarmWorks, decentralized AI, precision agriculture, Active Inference.
 
-When applying this skill:
-1. Design decentralized AI platforms for agricultural applications
-1. Deploy IoT sensor networks with edge computing for farm-scale data collection
-1. Apply Active Inference models for personalized agricultural decision support
-1. Build community-driven innovation networks that preserve farmer autonomy
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **FarmWorks**
-- **decentralized AI**
-- **precision agriculture**
-- **Active Inference**
-- **sensor networks**
-- **edge computing**
-- **farmer autonomy**
-- **sustainable agriculture**
-- **IoT**
-- **community-driven innovation**
-
-## Methods & Techniques
-
-- Integration of customizable sensor networks for real-time data collection.
-- Use of Active Inference models for personalized recommendations.
-- Decentralized data processing to enhance privacy and security.
-- Virtual assistant for natural language interaction with farmers.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- FarmWorks enhances agricultural productivity while promoting environmental stewardship.
-- The platform allows farmers to retain control and autonomy over their practices.
-- Decentralized architecture improves data privacy and model accuracy.
-- Active Inference models create a continuous feedback loop for personalized decision-making.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:27Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with FarmWorks, decentralized AI, precision agriculture
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

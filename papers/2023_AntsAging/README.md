@@ -1,54 +1,39 @@
-# 📄 Of Ants & Aging
+# 📄 AntsAging
 
-**Daniel A. Friedman** (2023) · *[10.5281/zenodo.7855582](https://doi.org/10.5281/zenodo.7855582)*
+**Daniel A. Friedman** (2023) · *Presentation*
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7855581](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7855581)-blue)]([10.5281/zenodo.7855581](https://doi.org/10.5281/zenodo.7855581))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AntsAging","abstract":"A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in shaping longevity.","keywords":["ants","aging","senescence","lifespan","caste","queen longevity","social insects","evolutionary biology"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper explores the relationship between ants and aging, presenting reflections on the mechanisms of aging in both ants and humans. It aims to stimulate discussion on the biological processes underlying aging and the potential for reversing it.
+> A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in shapi...
 
 ## Keywords
 
 `ants` · `aging` · `senescence` · `lifespan` · `caste` · `queen longevity` · `social insects` · `evolutionary biology`
 
-## Key Contributions
-
-- Introduces a comparative analysis of aging mechanisms in ants and humans.
-- Raises questions about the nature of aging as either passive damage accumulation or active self-destruction.
-- Utilizes Tinbergen’s 4 Questions framework to investigate the reasons behind biological aging.
-- Encourages interdisciplinary dialogue on aging research.
-
 ## Methods
 
-- Employs a conceptual framework based on Tinbergen’s 4 Questions.
-- Engages in reflective analysis rather than empirical research.
-- Facilitates discussions on aging through a comparative lens.
-- Explores existing literature on aging in ants and its implications for human aging.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.7855581](https://doi.org/10.5281/zenodo.7855581)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2023_AntsAging,
-  author = {Daniel A. Friedman},
-  title = {{Of Ants & Aging}},
-  journal = {[10.5281/zenodo.7855582](https://doi.org/10.5281/zenodo.7855582)},
-  year = {2023},
-}
-```
+> Daniel A. Friedman (2023). *AntsAging*. Presentation.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,634 bytes)
-- `2023_AntsAging.pdf` (6,327,601 bytes)
-- `README.md` (1,345 bytes)
-- `SKILL.md` (1,606 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

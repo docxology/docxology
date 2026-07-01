@@ -1,57 +1,56 @@
 ---
 name: "MutAnts"
-description: "Expertise in genetic manipulation techniques, particularly CRISPR/Cas9, applied to the study of social insect behavior and neuroanatomy."
-tags: ["entomology", "crispr/cas9", "orco-gene", "olfactory-receptor", "ant-genetics", "ooceraea-biroi"]
+description: "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of..."
+tags: ["crispr/cas9", "orco-gene", "olfactory-receptor", "ant-genetics", "ooceraea-biroi", "harpegnathos-saltator", "social-behavior", "pheromone", "gene-knockout"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *MutAnts*. Entomology."
 ---
 
-# The MutAnts are here
+# MutAnts
 
 **Daniel A. Friedman, Deborah M. Gordon, Liqun Luo** (2017) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **CRISPR/Cas9, Orco gene, olfactory receptor, ant genetics**.
+This work addresses topics in **Entomology**: CRISPR/Cas9, Orco gene, olfactory receptor, ant genetics.
 
-When applying this skill:
-1. Evaluate CRISPR/Cas9 gene editing applications in non-model organisms
-1. Understand olfactory receptor evolution and social insect pheromone communication
-1. Analyze the functional genetics of collective behavior in eusocial insects
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **CRISPR/Cas9**
-- **Orco gene**
-- **olfactory receptor**
-- **ant genetics**
-- **Ooceraea biroi**
-- **Harpegnathos saltator**
-- **social behavior**
-- **pheromone**
-- **gene knockout**
-
-## Methods & Techniques
-
-- Injected freshly-laid ant eggs with purified Cas9 protein and synthetic guide RNAs targeting the Orco gene.
-- Conducted behavioral assays to assess the impact of Orco knockout on ant behavior and reproductive performance.
-- Utilized olfactory assays to evaluate sensitivity to semiochemicals in Orco null mutants.
-- Analyzed neuroanatomical structures in mutant ants to identify defects in the antennal lobe.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Homozygous Orco mutants displayed altered behavior, decreased reproductive capacity, and increased mortality.
-- Orco null mutants showed reduced sensitivity to olfactory stimuli and unique behaviors such as increased wandering.
-- Both studies found significant neuroanatomical defects in the antennal lobe of Orco mutants, indicating a developmental role for the gene.
-- The research underscores the importance of olfaction in ant social behavior and adaptation to diverse environments.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with CRISPR/Cas9, Orco gene, olfactory receptor
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

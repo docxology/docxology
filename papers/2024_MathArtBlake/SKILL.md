@@ -1,49 +1,56 @@
 ---
 name: "MathArtBlake"
 description: "This work explores the intersection of mathematics, art, and William Blake's prophetic vision. Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte..."
-tags: ["presentations, courses & media", "william-blake", "mathematics", "art", "prophetic-vision", "geometric-structures"]
+tags: ["william-blake", "mathematics", "art", "prophetic-vision", "geometric-structures", "active-inference"]
+domain: "Presentations & Media"
+citation: "Daniel Ari Friedman (2024). *MathArtBlake*. Presentations & Media."
 ---
 
-# MathArt Stream #8: William Blake and Active Inference
+# MathArtBlake
 
-**Daniel Ari Friedman** (2024) · Presentations, Courses & Media
+**Daniel Ari Friedman** (2024) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **William Blake, mathematics, art, prophetic vision**.
+This work addresses topics in **Presentations & Media**: William Blake, mathematics, art, prophetic vision.
 
-When applying this skill:
-1. Analyze mathematical structures in artistic works
-1. Bridge formal mathematics with artistic interpretation
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **William Blake**
-- **mathematics**
-- **art**
-- **prophetic vision**
-- **geometric structures**
-- **Active Inference**
-
-## Methods & Techniques
-
-- Mathematical analysis of visual art
-- Formal pattern identification
-- Art-science comparative analysis
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Identifies mathematical structures in Blake's visual and poetic works
-- Connects Blake's artistic vision to modern mathematical frameworks
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:30Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with William Blake, mathematics, art
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,23 +1,39 @@
-# AGENTS.md - AGEINT: Agentic Intelligence
+# AGENTS.md — AGEINT: Agentic Intelligence
 
 **Paper**: AGEINT: Agentic Intelligence (2026)
-**DOI**: [10.5281/zenodo.20732274](https://doi.org/10.5281/zenodo.20732274)
-**Concept DOI**: [10.5281/zenodo.20732274](https://doi.org/10.5281/zenodo.20732274)
-**Version DOI**: [10.5281/zenodo.20732275](https://doi.org/10.5281/zenodo.20732275)
-**Zenodo record**: https://zenodo.org/records/20732275
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo concept DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for AGEINT
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects AGEINT: Agentic Intelligence to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20732274
-- **Source**: Zenodo record paired with GitHub repository https://github.com/docxology/AGEINT
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

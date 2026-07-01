@@ -1,52 +1,56 @@
 ---
 name: "ToComment"
-description: "Expertise in analyzing digital discourse through the integration of rhetorical and ecological frameworks, with a focus on the impact of image memes on public narratives."
-tags: ["genetics & biomedical research", "rhetorical-analysis", "image-memes", "digital-discourse", "narrative-ecosystems", "dre3-model"]
+description: "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze h..."
+tags: ["rhetorical-analysis", "image-memes", "digital-discourse", "narrative-ecosystems", "dre3-model", "public-sphere"]
+domain: "Genetics & Biomedical"
+citation: "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2023). *ToComment*. Genetics & Biomedical."
 ---
 
-# To comment or not to comment
+# ToComment
 
-**Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2023) · Genetics & Biomedical Research
+**Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2023) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **rhetorical analysis, image memes, digital discourse, narrative ecosystems**.
+This work addresses topics in **Genetics & Biomedical**: rhetorical analysis, image memes, digital discourse, narrative ecosystems.
 
-When applying this skill:
-1. Analyze digital meme ecosystems using rhetorical frameworks
-1. Apply the DRE3 model to study digital discourse dynamics
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **rhetorical analysis**
-- **image memes**
-- **digital discourse**
-- **narrative ecosystems**
-- **DRE3 model**
-- **public sphere**
-
-## Methods & Techniques
-
-- Utilizes a rhetorical approach to analyze message form and audience engagement.
-- Applies ecological concepts to trace narratives across digital platforms.
-- Develops a three-tiered model (DRE3) to categorize and index digital artifacts.
-- Focuses on the interaction between memes and audience identity construction.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
 ## Key Findings
 
-- Image memes play a crucial role in shaping public narratives and beliefs.
-- The integration of rhetorical and ecological analyses reveals complex interactions in digital discourse.
-- Rhetorical conditions contribute to the erosion of trust in mainstream information sources.
-- A nuanced understanding of digital ecosystems is essential for addressing the epistemic crisis.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Domain knowledge in Genetics & Biomedical Research
+- Familiarity with rhetorical analysis, image memes, digital discourse
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

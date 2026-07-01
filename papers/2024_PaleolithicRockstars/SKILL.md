@@ -1,49 +1,56 @@
 ---
 name: "PaleolithicRockstars"
 description: "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv..."
-tags: ["genetics & biomedical research", "paleolithic-art", "cave-paintings", "cognitive-evolution", "consciousness", "aesthetic-experience"]
+tags: ["paleolithic-art", "cave-paintings", "cognitive-evolution", "consciousness", "aesthetic-experience", "rock-art"]
+domain: "Genetics & Biomedical"
+citation: "Daniel Ari Friedman (2024). *PaleolithicRockstars*. Genetics & Biomedical."
 ---
 
-# Why Paleolithic Rockstars were both enigmatic and sporadic
+# PaleolithicRockstars
 
-**Daniel Ari Friedman** (2024) · Genetics & Biomedical Research
+**Daniel Ari Friedman** (2024) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Paleolithic art, cave paintings, cognitive evolution, consciousness**.
+This work addresses topics in **Genetics & Biomedical**: Paleolithic art, cave paintings, cognitive evolution, consciousness.
 
-When applying this skill:
-1. Analyze Paleolithic art through cognitive evolution frameworks
-1. Connect ancient creative expression to modern consciousness theories
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Paleolithic art**
-- **cave paintings**
-- **cognitive evolution**
-- **consciousness**
-- **aesthetic experience**
-- **rock art**
-
-## Methods & Techniques
-
-- Archaeological evidence analysis
-- Cognitive evolution framework
-- Aesthetic theory application
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
 
 ## Key Findings
 
-- Connects Paleolithic art to modern theories of consciousness and cognition
-- Examines rock art as evidence of early creative and cognitive capabilities
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Domain knowledge in Genetics & Biomedical Research
+- Familiarity with Paleolithic art, cave paintings, cognitive evolution
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

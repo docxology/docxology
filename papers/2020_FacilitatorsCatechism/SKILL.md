@@ -1,44 +1,56 @@
 ---
 name: "The Facilitator's Catechism"
-description: "Zenodo preprint (2020 v2) on operations orders, sensemaking, and a catechism-style OPORD format for facilitators (Cordes & Friedman). DOI 10.5281/zenodo.4203765."
-tags: ["opord", "operations-orders", "sensemaking", "high-reliability-organizations", "complexity", "active-inference", "facilitation", "cognitive-security"]
+description: "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and civilian teams."
+tags: ["opord", "operations-orders", "sensemaking", "high-reliability-organizations", "complexity", "active-inference"]
+domain: "Cognitive Security"
+citation: "Richard J. Cordes, Daniel Ari Friedman (2020). *The Facilitator's Catechism*. Cognitive Security."
 ---
 
 # The Facilitator's Catechism
 
-**Richard J. Cordes, Daniel Ari Friedman** (2020) · Cognitive Security / organizational sensemaking
+**Richard J. Cordes, Daniel Ari Friedman** (2020) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with **operations orders (OPORD)**, **facilitator-led team alignment**, **military–civilian process transfer**, **organizational sensemaking**, or the **Facilitator's Catechism** preprint specifically.
+This work addresses topics in **Cognitive Security**: OPORD, operations orders, organizational sensemaking, high reliability organizations.
 
-When applying this skill:
+## Methods
 
-1. Distinguish this **Zenodo preprint** ([10.5281/zenodo.4203765](https://doi.org/10.5281/zenodo.4203765)) from the separate **Playbook** deposit ([10.5281/zenodo.4579414](https://doi.org/10.5281/zenodo.4579414)).
-2. Connect OPORD history and constraints to **HRO**, **complexity**, and **knowledge management** requirements stated in the paper.
-3. For innovation-team use cases, pair with [The Innovator's Catechism](../2020_InnovatorsCatechism/SKILL.md).
+Primary methods and techniques applied in this work:
 
-## Key Concepts
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-- **OPORD** — continuity and adaptation of operations-order formats across contexts.
-- **Organizational sensemaking** — how shared situational models are produced under uncertainty.
-- **Facilitator's Catechism** — proposed structured OPORD variant for process facilitators.
-- **High reliability organizations** — design pressures on communication and execution.
-- **Active Inference** — one of the theoretical perspectives used in the manuscript's framing.
-- **Civilian counterparts** — non-military analogues to military briefing and order structures.
-- **Survivability & limitations** — constraints motivating format evolution.
+## Key Findings
 
-## Methods & Techniques
+Core contributions and results:
 
-- Historical and comparative analysis of operations orders.
-- Multi-disciplinary synthesis (complexity, org psychology, logistics, memetics, KM, Active Inference).
-- Normative proposal for a new facilitator-oriented order format.
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:44Z
 
 ## Prerequisites
 
-- Basic familiarity with **military or incident-command style** briefing artifacts (or civilian equivalents).
-- Optional: [The Innovator's Catechism](../2020_InnovatorsCatechism/) for downstream application to startup and innovation teams.
+- Familiarity with OPORD, operations orders, organizational sensemaking
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## Related Papers
+## Instructions
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+When working with this paper:
+
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

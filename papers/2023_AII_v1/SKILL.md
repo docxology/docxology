@@ -1,52 +1,56 @@
 ---
 name: "AII_v1"
-description: "Proficient in developing sociotechnical systems for collaborative information management and evaluation, with a focus on enhancing trust and situational awareness in the knowledge economy."
-tags: ["active inference", "active-inference-institute", "open-science", "research-organization", "free-energy-principle", "community-building"]
+description: "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education..."
+tags: ["active-inference-institute", "open-science", "research-organization", "free-energy-principle", "community-building"]
+domain: "AII Ecosystem"
+citation: "Active Inference Institute (2023). *AII_v1*. AII Ecosystem."
 ---
 
-# The Active Inference Institute and Active Inference Ecosystem (v1)
+# AII_v1
 
-**Active Inference Institute** (2023) · Active Inference
+**Active Inference Institute** (2023) · AII Ecosystem
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Active Inference Institute, open science, research organization, Free Energy Principle**.
+This work addresses topics in **AII Ecosystem**: Active Inference Institute, open science, research organization, Free Energy Principle.
 
-When applying this skill:
-1. Navigate Active Inference Institute organizational structure
-1. Apply open-science practices to research community building
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Active Inference Institute**
-- **open science**
-- **research organization**
-- **Free Energy Principle**
-- **community building**
-
-## Methods & Techniques
-
-- Creation of 'Workspaces' for users to collaborate and share information.
-- Utilization of annotation affordances for marking up and enriching content.
-- Application of trust scores to assess the quality and intent of authors and claims.
-- Design of interconnected informational structures such as Claims, Questions, and Claim Instances.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- TrustFinder enhances the navigability and searchability of the information environment.
-- Users can effectively evaluate and vet claims through structured interactions.
-- The system reduces redundant work in information evaluation and mapping.
-- TrustFinder supports the collaborative enrichment of the rhetorical landscape.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:05Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Active Inference Institute, open science, research organization
+- Background in AII Ecosystem fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

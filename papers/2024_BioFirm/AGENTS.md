@@ -1,54 +1,39 @@
-# AGENTS.md — BioFirm Development at Applied Active Inference Symposium 2024
+# AGENTS.md — BioFirm
 
-**Paper**: BioFirm Development at Applied Active Inference Symposium 2024 (2024)
-**Area**: Presentations, Courses & Media
+**Paper**: BioFirm (2024)
+**Domain**: Presentations & Media
 **Authors**: Daniel A. Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of BioFirm Development at Applied Active Inference Symposium 2024
-**Tasks**:
-- Analyze core argument: BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as bi...
-- Evaluate: Develops BioFirm framework for bioregional stewardship via Active Inference
-- Evaluate: Models organizational governance as biological adaptive systems
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for BioFirm
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Active Inference organizational modeling
-- Assess and document: Bioregional analysis
-- Assess and document: Adaptive systems design
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Presentations & Media literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this presentations, courses & media work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Presentations & Media concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: BioFirm, bioregional stewardship, Active Inference, organizational modeling, sustainability
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects BioFirm to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2024_BioFirm.pdf`
-- **PDF Status**: ⏳ Pending
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

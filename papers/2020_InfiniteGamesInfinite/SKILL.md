@@ -1,23 +1,56 @@
 ---
-name: "InfiniteGamesInfinite"
-description: "Use for Infinite Games for Infinite Teams, a Zenodo publication with DOI 10.5281/zenodo.12601675."
-tags: ["zenodo-publication"]
+name: "Infinite Games for Infinite Teams"
+description: "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below...."
+tags: ["infinitegamesinfinite"]
+domain: "Cognitive Security"
+citation: "Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Cognitive Security."
+doi: "10.5281/zenodo.12601675"
 ---
 
 # Infinite Games for Infinite Teams
 
+**Daniel Friedman, RJ Cordes** (2020) · Cognitive Security
+
+## Context
+
+This work addresses topics in **Cognitive Security**: InfiniteGamesInfinite.
+
+## Methods
+
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.12601675
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-05-30T18:56:37Z
+
+## Prerequisites
+
+- Familiarity with InfiniteGamesInfinite
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
+
 ## Instructions
 
-Use this skill when working with the publication **Infinite Games for Infinite Teams** or its archival record.
+When working with this paper:
 
-1. Ground citations in DOI `10.5281/zenodo.12601675`.
-2. Treat the Zenodo record as the archival source.
-
-## Key Concepts
-
-- **zenodo-publication**
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+1. Reference the DOI for citation: `10.5281/zenodo.12601675`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

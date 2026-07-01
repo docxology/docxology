@@ -1,55 +1,55 @@
 ---
 name: "ATLAS"
-description: "Proficient in developing and implementing knowledge management systems that integrate pattern language methodologies for enhanced data interoperability and cognitive security."
-tags: ["cognitive security", "atlas", "pattern-languages", "knowledge-management", "question-oriented-approach", "information-architecture"]
+description: "The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities..."
+tags: ["atlas", "pattern-languages", "knowledge-management", "question-oriented-approach", "information-architecture", "decision-support", "cognitive-tools"]
+domain: "Cognitive Security"
+citation: "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias (2023). *ATLAS*. Cognitive Security."
 ---
 
-# ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management
+# ATLAS
 
 **R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias** (2023) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **ATLAS, pattern languages, knowledge management, question-oriented approach**.
+This work addresses topics in **Cognitive Security**: ATLAS, pattern languages, knowledge management, question-oriented approach.
 
-When applying this skill:
-1. Apply ATLAS question-oriented pattern languages for knowledge management
-1. Structure knowledge using question-driven analytical frameworks
-1. Design pattern-based decision support systems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **ATLAS**
-- **pattern languages**
-- **knowledge management**
-- **question-oriented approach**
-- **information architecture**
-- **decision support**
-- **cognitive tools**
-
-## Methods & Techniques
-
-- Creation of digital prototypes and paper-and-pencil implementations of the ATLAS architecture.
-- Utilization of pattern language approaches to structure and communicate knowledge.
-- Application of a low-code platform (Coda.io) for developing an alpha version of the COGSEC ATLAS.
-- Incorporation of community feedback to refine and extend the knowledge resource.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- ATLAS facilitates the management of complex data sets without requiring fully shared standards.
-- The system showcases adaptability in addressing the challenges of information overload and specialization fragility.
-- Initial implementations indicate potential for local contributions and extensions to the knowledge resource.
-- The ongoing evolution of ATLAS highlights its significance in data analysis and cognitive security.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:06Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with ATLAS, pattern languages, knowledge management
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

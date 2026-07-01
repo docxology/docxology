@@ -1,57 +1,38 @@
-# 🎨 Way Finding in the Infinite Imaginarium
+# 📄 InfiniteImaginarium
 
 **Daniel Ari Friedman** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10601082-blue)](https://doi.org/10.5281/zenodo.10601082)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10601081](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10601081)-blue)]([10.5281/zenodo.10601081](https://doi.org/10.5281/zenodo.10601081))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"InfiniteImaginarium","abstract":"Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing\u2014from rapid intuitive insight to slow deliberate analysis\u2014within creative production contexts.","keywords":["epistemic tempos","knowledge production","creative exploration","way finding","imagination","operational frameworks"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper explores the concept of 'Way Finding' within the framework of the 'Infinite Imaginarium,' contrasting different epistemic modes and tempos. It aims to elucidate how individuals navigate knowledge and understanding in both known and unknown territories.
+> Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing—from rapid intuitive insight to slow deliberate analysis—within creative production contexts.
 
 ## Keywords
 
 `epistemic tempos` · `knowledge production` · `creative exploration` · `way finding` · `imagination` · `operational frameworks`
 
-## Key Contributions
-
-- Introduces the framework of the Infinite Imaginarium to conceptualize knowledge navigation.
-- Differentiates between 'gap-filling' and 'gap-respecting' epistemic modes.
-- Explores the cognitive processes involved in verbal expression and question formulation.
-- Provides a novel perspective on situational-ecological intelligence in cognitive engagements.
-
 ## Methods
 
-- Utilizes metaphorical constructs like dominos and Jenga towers to illustrate cognitive processes.
-- Analyzes linguistic and semiotic mechanisms in verbal communication.
-- Employs a comparative approach to examine different epistemic modes.
-- Incorporates examples of cognitive engagement in educational contexts.
+- Literature review
+- Theoretical analysis
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.10601081](https://doi.org/10.5281/zenodo.10601081)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2024_InfiniteImaginarium,
-  author = {Daniel Ari Friedman},
-  title = {{Way Finding in the Infinite Imaginarium}},
-  journal = {Zenodo},
-  year = {2024},
-  doi = {10.5281/zenodo.10601082},
-}
-```
+> Daniel Ari Friedman (2024). *InfiniteImaginarium*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,698 bytes)
-- `2024_InfiniteImaginarium.pdf` (97,657 bytes)
-- `README.md` (1,377 bytes)
-- `SKILL.md` (1,581 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

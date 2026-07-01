@@ -1,53 +1,55 @@
 ---
 name: "InfiniteImaginarium"
-description: "Expertise in navigating complex cognitive landscapes through innovative frameworks and linguistic analysis."
-tags: ["art", "epistemic-tempos", "knowledge-production", "creative-exploration", "way-finding", "imagination"]
+description: "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work..."
+tags: ["epistemic-tempos", "knowledge-production", "creative-exploration", "way-finding", "imagination", "operational-frameworks"]
+domain: "Art & Synergetics"
+citation: "Daniel Ari Friedman (2024). *InfiniteImaginarium*. Art & Synergetics."
 ---
 
-# Way Finding in the Infinite Imaginarium
+# InfiniteImaginarium
 
-**Daniel Ari Friedman** (2024) · Art
+**Daniel Ari Friedman** (2024) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **epistemic tempos, knowledge production, creative exploration, way finding**.
+This work addresses topics in **Art & Synergetics**: epistemic tempos, knowledge production, creative exploration, way finding.
 
-When applying this skill:
-1. Navigate different epistemic tempos in creative research
-1. Apply operational frameworks to creative knowledge production
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **epistemic tempos**
-- **knowledge production**
-- **creative exploration**
-- **way finding**
-- **imagination**
-- **operational frameworks**
-
-## Methods & Techniques
-
-- Utilizes metaphorical constructs like dominos and Jenga towers to illustrate cognitive processes.
-- Analyzes linguistic and semiotic mechanisms in verbal communication.
-- Employs a comparative approach to examine different epistemic modes.
-- Incorporates examples of cognitive engagement in educational contexts.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Identifies the importance of both stable and dynamic epistemic modes in knowledge acquisition.
-- Demonstrates how situational awareness influences cognitive flexibility in information retrieval.
-- Highlights the role of preparation and measurement in effective wayfinding.
-- Suggests that cognitive engagements can be enhanced through understanding the interplay of language and knowledge.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:29Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with epistemic tempos, knowledge production, creative exploration
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

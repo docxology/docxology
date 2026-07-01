@@ -1,56 +1,56 @@
 ---
 name: "FederatedInference"
-description: "Expertise in modeling federated inference and belief-sharing processes in intelligent agent systems, with a focus on the emergence of language and collective intelligence through free energy minimization."
-tags: ["active inference", "federated-inference", "belief-sharing", "active-inference", "distributed-intelligence", "multi-agent-systems"]
+description: "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generati..."
+tags: ["federated-inference", "belief-sharing", "active-inference", "distributed-intelligence", "multi-agent-systems", "message-passing", "collective-cognition", "privacy-preserving-inference"]
+domain: "Active Inference"
+citation: "Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith (2024). *FederatedInference*. Active Inference."
 ---
 
-# Federated inference and belief sharing
+# FederatedInference
 
 **Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith** (2024) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **federated inference, belief sharing, Active Inference, distributed intelligence**.
+This work addresses topics in **Active Inference**: federated inference, belief sharing, Active Inference, distributed intelligence.
 
-When applying this skill:
-1. Apply federated inference frameworks to multi-agent Active Inference
-1. Design belief-sharing architectures for distributed intelligence
-1. Implement privacy-preserving collective cognition systems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **federated inference**
-- **belief sharing**
-- **Active Inference**
-- **distributed intelligence**
-- **multi-agent systems**
-- **message passing**
-- **collective cognition**
-- **privacy-preserving inference**
-
-## Methods & Techniques
-
-- Utilizes numerical simulations to model belief-sharing and active inference among synthetic agents.
-- Applies the free energy principle to describe the dynamics of belief updating and communication.
-- Examines the acquisition of language through active learning and the transmission of beliefs across generations.
-- Employs Bayesian model selection to illustrate structure learning in generative models.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Communication enhances the precision of shared beliefs among agents monitoring their environment.
-- Language can emerge from the active learning processes of agents operating within a common ecological niche.
-- Federated belief-sharing leads to improved inference and learning outcomes compared to isolated agents.
-- The study provides a theoretical basis for understanding consciousness as a form of shared knowledge among agents.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with federated inference, belief sharing, Active Inference
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

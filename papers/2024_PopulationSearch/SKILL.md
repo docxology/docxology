@@ -1,54 +1,56 @@
 ---
 name: "PopulationSearch"
-description: "Proficient in enhancing optimization algorithms through the integration of Active Inference, focusing on anticipatory adaptation and performance improvement in complex problem-solving scenarios."
-tags: ["active inference", "population-search", "active-inference", "ant-colony-optimization", "tsp", "metaheuristics"]
+description: "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on th..."
+tags: ["population-search", "active-inference", "ant-colony-optimization", "tsp", "metaheuristics", "anticipatory-adaptation", "computational-optimization"]
+domain: "Active Inference"
+citation: "Nassim Dehouche, Daniel Friedman (2024). *PopulationSearch*. Active Inference."
 ---
 
-# Enhancing Population-based Search with Active Inference
+# PopulationSearch
 
 **Nassim Dehouche, Daniel Friedman** (2024) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **population search, Active Inference, Ant Colony Optimization, TSP**.
+This work addresses topics in **Active Inference**: population search, Active Inference, Ant Colony Optimization, TSP.
 
-When applying this skill:
-1. Augment population-based metaheuristics with Active Inference
-1. Evaluate computational optimization performance on benchmark problems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **population search**
-- **Active Inference**
-- **Ant Colony Optimization**
-- **TSP**
-- **metaheuristics**
-- **anticipatory adaptation**
-- **computational optimization**
-
-## Methods & Techniques
-
-- Utilization of Active Inference framework for anticipatory adaptation.
-- Experimental evaluation of Ant Colony Optimization with Active Inference.
-- Analysis of performance based on varying graph structures.
-- Comparison of traditional reactive approaches with the proposed anticipatory model.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Active Inference can enhance the performance of population-based metaheuristics.
-- Improved solutions were achieved with only a slight increase in computational resources.
-- Performance patterns were observed that depend on the number and topology of nodes in the graph.
-- The study suggests directions for future research on Active Inference in optimization contexts.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with population search, Active Inference, Ant Colony Optimization
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

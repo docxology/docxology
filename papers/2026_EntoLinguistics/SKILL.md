@@ -1,57 +1,56 @@
 ---
-name: "EntoLinguistics"
-description: "Expertise in entomological scientific language, terminology networks, corpus methods, CACE lexical standards, and Active Inference–aligned discourse analysis."
+name: "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology"
+description: "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology."
 tags: ["entomology", "scientific-communication", "terminology-networks", "corpus-linguistics", "active-inference", "cace", "semantic-entropy", "myrmecology"]
+domain: "Entomology"
+citation: "Daniel Ari Friedman & Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Entomology."
 ---
 
 # Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
 
-**Daniel Ari Friedman** · **Tucker Cahill Chambers** (2026) · Entomology · discourse analysis
+**Daniel Ari Friedman & Tucker Cahill Chambers** (2026) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **entomological terminology, scientific communication, corpus-based term extraction, terminology networks, semantic ambiguity, or CACE (Clarity, Appropriateness, Consistency, Evolvability)**.
+This work addresses topics in **Entomology**: entomology, scientific communication, terminology networks, Active Inference.
 
-When applying this skill:
+## Methods
 
-1. Ground claims in the six Ento-Linguistic domains and distinguish metaphor-laden from mechanistic descriptions where modeling is at stake.
-1. Treat terminology reform as epistemic hygiene: align lexicon with generative models, reproducible pipelines, and explicit scoring (e.g., CACE, semantic entropy).
+Primary methods and techniques applied in this work:
 
-## Key Concepts
-
-- **Ento-Linguistic domains** — Unit of Individuality; Power & Labor; Behavior & Identity; Sex & Reproduction; Kin & Relatedness; Economics.
-- **Terminology networks** — co-occurrence structure, modularity, cross-domain bridging terms.
-- **Semantic entropy** — ambiguity of term usage across contexts.
-- **CACE** — Clarity, Appropriateness, Consistency, Evolvability as meta-standards for terms.
-- **Active Inference** — language as hyper-prior; community model updating and misspecification.
-- **Markov blanket** — formal boundaries relevant to individuality and scale in models.
-
-## Methods & Techniques
-
-- Literature mining and corpus construction (e.g., PubMed, arXiv) with deduplication and NLP preprocessing.
-- Automated term extraction, domain seed expansion, n-gram and compound-term handling.
-- Semantic clustering of contexts and entropy-based ambiguity flags.
-- Statistical comparison across domains; network centrality and bridging-term analysis.
-- Rhetorical and framing analysis; per-term CACE scoring.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- A 369-publication corpus yields structured terminology statistics (e.g., 888 candidate terms, 261 domain-assigned) and network structure with cross-domain bridging, notably in Power & Labor.
-- High-frequency social-metaphor terms (e.g., queen, worker, caste) co-occur with hierarchical framing that can misalign with stigmergic colony dynamics.
-- A substantial share of domain-assigned terms show context-dependent semantic drift, complicating scale-consistent modeling.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:26:10Z
 
 ## Prerequisites
 
-- Social insect biology and basic myrmecology terminology.
-- Introductory statistics and NLP concepts (tokenization, clustering, multiple testing).
-- Active Inference or Bayesian modeling at a conceptual level.
+- Familiarity with entomology, scientific communication, terminology networks
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
-
-**Code and data**: https://github.com/docxology/ento_linguistics
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

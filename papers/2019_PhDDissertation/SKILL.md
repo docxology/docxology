@@ -1,57 +1,56 @@
 ---
 name: "PhDDissertation"
-description: "Expertise in analyzing behavioral and physiological variations in social insects through transcriptomic and pharmacological methodologies."
-tags: ["entomology", "phd-dissertation", "pogonomyrmex-barbatus", "collective-behavior", "transcriptomics", "behavioral-ecology"]
+description: "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neuroche..."
+tags: ["phd-dissertation", "pogonomyrmex-barbatus", "collective-behavior", "transcriptomics", "behavioral-ecology", "foraging-gene", "dopamine", "colony-variation", "stanford-university"]
+domain: "Entomology"
+citation: "Daniel Ari Friedman (2019). *PhDDissertation*. Entomology."
 ---
 
-# PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of *Pogonomyrmex barbatus*
+# PhDDissertation
 
 **Daniel Ari Friedman** (2019) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **PhD dissertation, Pogonomyrmex barbatus, collective behavior, transcriptomics**.
+This work addresses topics in **Entomology**: PhD dissertation, Pogonomyrmex barbatus, collective behavior, transcriptomics.
 
-When applying this skill:
-1. Conduct integrative multilevel studies of social insect biology
-1. Apply RNA-Seq and qRT-PCR to behavioral ecology questions
-1. Design colony-level field studies with molecular-level resolution
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **PhD dissertation**
-- **Pogonomyrmex barbatus**
-- **collective behavior**
-- **transcriptomics**
-- **behavioral ecology**
-- **foraging gene**
-- **dopamine**
-- **colony variation**
-- **Stanford University**
-
-## Methods & Techniques
-
-- Conducted transcriptomic profiling of forager brains to assess gene expression differences.
-- Performed pharmacological experiments to evaluate the effects of dopamine on foraging behavior.
-- Executed manipulative field experiments to study foraging trips in relation to hydration levels.
-- Utilized RNA-seq to analyze gene expression variation within and among colonies.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Significant differences in brain biogenic amine titers were found among colonies.
-- Increased dopamine levels correlated with heightened foraging activity.
-- Foragers from colonies that reduced foraging in dry conditions exhibited faster water loss and motor coordination decline.
-- Gene expression patterns were linked to colony traits and evolutionary constraints.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with PhD dissertation, Pogonomyrmex barbatus, collective behavior
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

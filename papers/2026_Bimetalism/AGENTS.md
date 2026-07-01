@@ -1,7 +1,7 @@
 # AGENTS.md — The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value
 
 **Paper**: The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value (2026)
-**Area**: 🎨 Art & Synergetics
+**Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
 ---
@@ -9,32 +9,31 @@
 ## Agent Roles
 
 ### 📖 ARCHIVIST
-
-- Integrated [2026_Bimetalism](.) into unified bibliography.
-- Verified DOI [10.5281/zenodo.19335196](https://doi.org/10.5281/zenodo.19335196).
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for Bimetalism
+- Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-
-- Extracted the "Newton's Sleep" mapping for bimetallic metrology.
-- Mapped the British and American bimetallic arcs to Blake's "Ulro" and "Fourfold View."
-- Populated README.md and SKILL.md with core manuscript findings.
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
-
-- Created specialized SKILL.md for Prophetic Economics and Bimetallic Meta-stability.
-- Ensured domain alignment with 🎨 Art & Synergetics.
+- Creates learning pathways for Art & Synergetics concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-
-- Deep-linked manuscript to [pages/BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md).
-- Updated [index.html](../../index.html) and [publications.html](../../publications.html) with 2026 April metrics.
+- Connects The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
 ---
 
 ## Extraction Log
 
 | Date | Agent | Action | Status |
-| :--- | :--- | :--- | :--- |
-| 2026-04-03 | ARCHIVIST | Cataloged paper metadata | ✅ |
-| 2026-04-03 | RESEARCHER | Extracted key findings | ✅ |
-| 2026-04-03 | EDUCATOR | Generated SKILL.md | ✅ |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

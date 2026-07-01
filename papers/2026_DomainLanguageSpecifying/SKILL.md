@@ -1,34 +1,56 @@
 ---
-name: "DomainLanguageSpecifying"
-description: "Use for A Domain Language for Specifying Controlled Methods, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.21086548."
+name: "A Domain Language for Specifying Controlled Methods"
+description: "This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this manuscript's subject is the met..."
 tags: ["methods-paper", "domain-specific-language", "controlled-methods", "deterministic-compilation", "staged-validation", "dimensional-analysis"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *A Domain Language for Specifying Controlled Methods*. Computational."
+doi: "10.5281/zenodo.21086548"
 ---
 
 # A Domain Language for Specifying Controlled Methods
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **A Domain Language for Specifying Controlled Methods** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.21086548`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.0` and repository `docxology/template_methods_paper` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: methods paper, domain-specific language, controlled methods, deterministic compilation.
 
-## Key Concepts
+## Methods
 
-- **methods paper**
-- **domain-specific language**
-- **controlled methods**
-- **deterministic compilation**
-- **staged validation**
-- **dimensional analysis**
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.21086548
+- PDF SHA-256: ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:09Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with methods paper, domain-specific language, controlled methods
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.21086548`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

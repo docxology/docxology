@@ -1,57 +1,39 @@
-# 🎨 Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
+# 📄 PPPiP
 
 **Alexandra Mikhailova, Daniel A. Friedman** (2018) · *Arts*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3390%2Farts7030039-blue)](https://doi.org/10.3390/arts7030039)
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Farts7030039](https:%2F%2Fdoi.org%2F10.3390%2Farts7030039)-blue)]([10.3390/arts7030039](https://doi.org/10.3390/arts7030039))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"PPPiP","abstract":"Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship development. PPPiP combines the advantages of individuated artistic practice with the established framew","keywords":["PPPiP","art therapy","improvisation","intimate relationships","affective neuroscience","creativity","dyadic interaction","sexology","controlled novelty"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper introduces Partner Pen Play in Parallel (PPPiP), a novel technique for enhancing romantic relationships through simultaneous improvisational drawing. By integrating insights from art therapy, sexology, and neuroscience, the authors propose PPPiP as a low-cost, non-clinical method for fostering intimacy and emotional well-being.
+> Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship deve...
 
 ## Keywords
 
 `PPPiP` · `art therapy` · `improvisation` · `intimate relationships` · `affective neuroscience` · `creativity` · `dyadic interaction` · `sexology` · `controlled novelty`
 
-## Key Contributions
-
-- Introduces PPPiP as a new paradigm for relationship improvement.
-- Synthesizes interdisciplinary evidence supporting the efficacy of artistic creation in enhancing intimate relationships.
-- Highlights the importance of narrative structure and controlled novelty in partnerships.
-- Demonstrates how PPPiP can promote neural synchrony and joint attention between partners.
-
 ## Methods
 
-- Describes PPPiP as the act of two individuals drawing together on the same sheet of paper.
-- Utilizes insights from art therapy, sexology, and affective neuroscience to support the practice.
-- Emphasizes the non-clinical, improvisational nature of PPPiP compared to traditional art therapy.
-- Explores the impact of joint attention and neural synchrony during the drawing process.
+- Visual analysis
+- Historical interpretation
+- Conceptual synthesis
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.3390/arts7030039](https://doi.org/10.3390/arts7030039)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2018_PPPiP,
-  author = {Alexandra Mikhailova, Daniel A. Friedman},
-  title = {{Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement}},
-  journal = {Arts},
-  year = {2018},
-  doi = {10.3390/arts7030039},
-}
-```
+> Alexandra Mikhailova, Daniel A. Friedman (2018). *PPPiP*. Arts.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (2,019 bytes)
-- `2018_PPPiP.pdf` (5,177,980 bytes)
-- `README.md` (2,189 bytes)
-- `SKILL.md` (1,934 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

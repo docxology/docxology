@@ -1,57 +1,39 @@
-# AGENTS.md — QuadMath: An Analytical Review of 4D and Quadray Coordinates
+# AGENTS.md — QuadMath
 
-**Paper**: QuadMath: An Analytical Review of 4D and Quadray Coordinates (2025)
-**Area**: Art
+**Paper**: QuadMath (2025)
+**Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of QuadMath: An Analytical Review of 4D and Quadray Coordinates
-**Tasks**:
-- Analyze core argument: QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational...
-- Evaluate: Provides comprehensive analytical review of Quadray coordinate systems
-- Evaluate: Implements Synergetics geometry in computational framework with exact arithmetic
-- Evaluate: Releases open-source companion code for reproducible QuadMath computations
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for QuadMath
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Quadray coordinate computation
-- Assess and document: IVM lattice analysis
-- Assess and document: Rational arithmetic implementation
-- Assess and document: Synergetics geometry formalization
-- Assess and document: Computational geometry tooling
+### 🔬 RESEARCHER
+- Extracts methods: Visual analysis, Historical interpretation, Conceptual synthesis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Art & Synergetics literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this art work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Art & Synergetics concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: QuadMath, Quadray coordinates, 4D geometry, Synergetics, Buckminster Fuller
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects QuadMath to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2025_QuadMath.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

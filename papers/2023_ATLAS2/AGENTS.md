@@ -1,21 +1,39 @@
-# AGENTS.md - ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
+# AGENTS.md — ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
 
 **Paper**: ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management (2023)
-**DOI**: [10.5281/zenodo.10362561](https://doi.org/10.5281/zenodo.10362561)
-**Zenodo record**: https://zenodo.org/records/10362561
+**Domain**: Cognitive Security
+**Authors**: R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ATLAS2
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/10362561
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

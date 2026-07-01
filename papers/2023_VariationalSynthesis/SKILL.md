@@ -1,56 +1,56 @@
 ---
 name: "VariationalSynthesis"
-description: "Expertise in applying variational methods and Bayesian inference to model evolutionary and developmental dynamics in biological systems."
-tags: ["active inference", "variational-synthesis", "natural-selection", "free-energy-principle", "bayesian-mechanics", "path-integral"]
+description: "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc..."
+tags: ["variational-synthesis", "natural-selection", "free-energy-principle", "bayesian-mechanics", "path-integral", "evo-devo", "adaptive-fitness", "particular-partition"]
+domain: "Active Inference"
+citation: "Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *VariationalSynthesis*. Active Inference."
 ---
 
-# A variational synthesis of evolutionary and developmental dynamics
+# VariationalSynthesis
 
 **Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell** (2023) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **variational synthesis, natural selection, Free Energy Principle, Bayesian mechanics**.
+This work addresses topics in **Active Inference**: variational synthesis, natural selection, Free Energy Principle, Bayesian mechanics.
 
-When applying this skill:
-1. Apply variational formalism to evolutionary theory
-1. Use path integrals to model adaptive fitness dynamics
-1. Connect Bayesian mechanics to developmental and evolutionary biology
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **variational synthesis**
-- **natural selection**
-- **Free Energy Principle**
-- **Bayesian mechanics**
-- **path integral**
-- **evo-devo**
-- **adaptive fitness**
-- **particular partition**
-
-## Methods & Techniques
-
-- Utilizes Bayesian mechanics to understand the relationship between phylogenetic and phenotypic processes.
-- Applies the free energy principle to model evolutionary and developmental dynamics.
-- Employs path integral formulation of stochastic dynamics and the renormalisation group.
-- Describes natural selection and action selection as emergent properties of random dynamical processes.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Natural selection can be interpreted as Bayesian model selection.
-- Phenotypic processes can enhance the fit of organisms to their environment over time.
-- The coupling between phylogenetic and phenotypic processes is essential for understanding evolutionary dynamics.
-- The synthesis provides a unified account of evolution and development across different temporal scales.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with variational synthesis, natural selection, Free Energy Principle
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

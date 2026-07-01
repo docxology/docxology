@@ -1,34 +1,56 @@
 ---
-name: "DeterministicTestbedSelf"
-description: "Use for A Deterministic Testbed for Self-Organizing Agent-Team Coordination, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.20533669."
+name: "A Deterministic Testbed for Self-Organizing Agent-Team Coordination"
+description: "Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate..."
 tags: ["agent-coordination", "scientific-discovery", "noise-band-confirmation", "ablation-study", "reproducible-research", "language-model-agents"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *A Deterministic Testbed for Self-Organizing Agent-Team Coordination*. Computational."
+doi: "10.5281/zenodo.20533669"
 ---
 
 # A Deterministic Testbed for Self-Organizing Agent-Team Coordination
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **A Deterministic Testbed for Self-Organizing Agent-Team Coordination** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.20533669`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.0` and repository `docxology/template_autoscientists` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: agent coordination, scientific discovery, noise-band confirmation, ablation study.
 
-## Key Concepts
+## Methods
 
-- **agent coordination**
-- **scientific discovery**
-- **noise-band confirmation**
-- **ablation study**
-- **reproducible research**
-- **language-model agents**
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.20533669
+- PDF SHA-256: 0af391375b14eb397812a8050657e2980fbc3a768e6fb108aa2f7eff46773e16
+- Pairing confidence: strong
+- Last checked: 2026-07-01T00:30:10Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with agent coordination, scientific discovery, noise-band confirmation
+- Background in Computational fundamentals
+- Access to source repository: N/A
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.20533669`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,58 +1,56 @@
 ---
 name: "CognitiveSovereignty"
-description: "Expertise in analyzing political philosophy and cognitive theories, particularly in the context of sovereignty and biopolitics, using frameworks like Active Inference."
-tags: ["cognitive security", "cognitive-sovereignty", "agamben", "homo-sacer", "active-inference", "state-of-exception"]
+description: "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epist..."
+tags: ["cognitive-sovereignty", "agamben", "homo-sacer", "active-inference", "state-of-exception", "thomas-kuhn", "paradigm-shifts", "epistemic-agency", "biopolitics", "bare-life"]
+domain: "Cognitive Security"
+citation: "Daniel Ari Friedman (2023). *CognitiveSovereignty*. Cognitive Security."
 ---
 
-# Cognitive Sovereignty & Active Inference in the State of Exception
+# CognitiveSovereignty
 
 **Daniel Ari Friedman** (2023) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **cognitive sovereignty, Agamben, Homo Sacer, Active Inference**.
+This work addresses topics in **Cognitive Security**: cognitive sovereignty, Agamben, Homo Sacer, Active Inference.
 
-When applying this skill:
-1. Analyze political philosophy (Agamben, biopolitics) through Active Inference
-1. Connect sovereignty and epistemic agency to precision-weighted belief updating
-1. Map between political theory and computational cognitive frameworks
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **cognitive sovereignty**
-- **Agamben**
-- **Homo Sacer**
-- **Active Inference**
-- **state of exception**
-- **Thomas Kuhn**
-- **paradigm shifts**
-- **epistemic agency**
-- **biopolitics**
-- **bare life**
-
-## Methods & Techniques
-
-- Analyzes Homo Sacer through the framework of Active Inference.
-- Draws parallels between Agamben's concepts and cognitive theories.
-- Utilizes philosophical analysis to explore the dynamics of power and knowledge.
-- Presents a computational model (pseudocode) for the Active Stateference entity.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Identifies the state of exception as a critical concept in understanding political power dynamics.
-- Demonstrates how bare life is conceptualized in terms of variational free energy.
-- Establishes that sovereign agency can be understood through expected free energy.
-- Suggests that cognitive sovereignty plays a crucial role in the enactment of political and scientific paradigms.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:12Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with cognitive sovereignty, Agamben, Homo Sacer
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

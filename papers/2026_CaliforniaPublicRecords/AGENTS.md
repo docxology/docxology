@@ -1,23 +1,39 @@
-# AGENTS.md - California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
+# AGENTS.md — CaliforniaPublicRecords
 
-**Paper**: California Public Records: A Technical and Legal Reference for the Post-AB 473 Era (2026)
-**DOI**: [10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899)
-**Concept DOI**: [10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899)
-**Version DOI**: [10.5281/zenodo.20789916](https://doi.org/10.5281/zenodo.20789916)
-**Zenodo record**: https://zenodo.org/records/20789916
+**Paper**: CaliforniaPublicRecords (2026)
+**Domain**: Cognitive Security
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo concept DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for CaliforniaPublicRecords
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Cognitive Security literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects CaliforniaPublicRecords to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/20789899
-- **Source**: Zenodo record; announced code home https://github.com/docxology/CA_public_records (not yet public at time of cataloging)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

@@ -1,56 +1,56 @@
 ---
 name: "TwoLineages"
-description: "Expertise in evolutionary biology and ecological dynamics, particularly in the study of social insect reproductive systems and genetic determination."
-tags: ["entomology", "dependent-lineage", "mating-systems", "pogonomyrmex", "harvester-ants", "genetic-caste-determination"]
+description: "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males..."
+tags: ["dependent-lineage", "mating-systems", "pogonomyrmex", "harvester-ants", "genetic-caste-determination", "intragenomic-conflict", "colony-organization", "social-evolution"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Deborah M. Gordon (2017). *TwoLineages*. Entomology."
 ---
 
-# Two lineages that need each other
+# TwoLineages
 
 **Daniel A. Friedman, Deborah M. Gordon** (2017) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **dependent-lineage, mating systems, Pogonomyrmex, harvester ants**.
+This work addresses topics in **Entomology**: dependent-lineage, mating systems, Pogonomyrmex, harvester ants.
 
-When applying this skill:
-1. Analyze complex mating systems and their impact on colony genetic architecture
-1. Evaluate genetic caste determination mechanisms in harvester ants
-1. Connect population genetics with colony-level behavioral ecology
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **dependent-lineage**
-- **mating systems**
-- **Pogonomyrmex**
-- **harvester ants**
-- **genetic caste determination**
-- **intragenomic conflict**
-- **colony organization**
-- **social evolution**
-
-## Methods & Techniques
-
-- Utilization of RNA sequencing to investigate genetic systems in harvester ants.
-- Analysis of mating patterns and reproductive outcomes in ant colonies.
-- Long-term ecological studies to assess lineage ratios and survival rates.
-- Examination of hybridization hypotheses through phylogenetic evidence.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- The dependent-lineage system is crucial for the survival and reproduction of harvester ant colonies.
-- There is a persistent asymmetry in lineage ratios that is not explained by ecological factors.
-- Mating with multiple males from different lineages is necessary for viable colony establishment.
-- The genetic systems of ants exhibit significant diversity, suggesting a complex evolutionary history.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with dependent-lineage, mating systems, Pogonomyrmex
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

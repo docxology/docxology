@@ -1,54 +1,56 @@
 ---
 name: "HoneyBeeGeneExpression"
-description: "Expertise in evolutionary biology focusing on the genetic mechanisms underlying phenotypic novelty, particularly through the analysis of coding sequence changes in honey bees."
-tags: ["entomology", "honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits"]
+description: "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel..."
+tags: ["honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits", "taxonomically-restricted-genes", "coding-sequence-evolution"]
+domain: "Entomology"
+citation: "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Entomology."
 ---
 
-# A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
+# HoneyBeeGeneExpression
 
 **William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson** (2023) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **honey bees, Apis mellifera, gene expression, RNA-Seq**.
+This work addresses topics in **Entomology**: honey bees, Apis mellifera, gene expression, RNA-Seq.
 
-When applying this skill:
-1. Apply RNA-Seq to study the evolution of novel traits in social insects
-1. Analyze coding sequence evolutionary rates in honey bees
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **honey bees**
-- **Apis mellifera**
-- **gene expression**
-- **RNA-Seq**
-- **novel traits**
-- **taxonomically restricted genes**
-- **coding sequence evolution**
-
-## Methods & Techniques
-
-- Conducted ten RNA-Seq experiments across various tissues in honey bees.
-- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
-- Examined differential gene expression between nurses and foragers to identify genes involved in social functions.
-- Utilized statistical tests to assess the significance of TRG expression in novel versus conserved tissues.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Highly expressed TRGs play a significant role in tissues with novel functions compared to conserved tissues.
-- Positively selected genes are often the least connected within gene expression networks.
-- TRGs are critical for generating novel social functions and are frequently positively selected.
-- The study suggests that genes with low network connectivity can evolve rapidly without incurring negative pleiotropic effects.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:17Z
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with honey bees, Apis mellifera, gene expression
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

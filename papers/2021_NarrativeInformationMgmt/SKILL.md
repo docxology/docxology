@@ -1,55 +1,56 @@
 ---
 name: "NarrativeInformationMgmt"
-description: "Expertise in Narrative Information Management, focusing on synthesizing knowledge and facilitating effective information exchange across diverse disciplines."
-tags: ["cognitive security", "narrative-information-management", "nim", "collective-sensemaking", "knowledge-management", "information-systems"]
+description: "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management..."
+tags: ["narrative-information-management", "nim", "collective-sensemaking", "knowledge-management", "information-systems", "cognitive-load", "interdisciplinary-synthesis"]
+domain: "Cognitive Security"
+citation: "Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *NarrativeInformationMgmt*. Cognitive Security."
 ---
 
-# Narrative Information Management
+# NarrativeInformationMgmt
 
 **Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Narrative Information Management, NIM, collective sensemaking, knowledge management**.
+This work addresses topics in **Cognitive Security**: Narrative Information Management, NIM, collective sensemaking, knowledge management.
 
-When applying this skill:
-1. Apply Narrative Information Management (NIM) principles
-1. Design information systems for collective sensemaking
-1. Synthesize knowledge management approaches across diverse domains
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Narrative Information Management**
-- **NIM**
-- **collective sensemaking**
-- **knowledge management**
-- **information systems**
-- **cognitive load**
-- **interdisciplinary synthesis**
-
-## Methods & Techniques
-
-- Conducts a literature review on information-focused disciplines to identify impactful system features.
-- Analyzes challenges faced by various fields in managing information and sensemaking.
-- Synthesizes common features of NIM systems from diverse domains.
-- Explores domain-specific challenges and ad-hoc solutions related to information dynamics.
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
 
 ## Key Findings
 
-- Identifies the need for a common ontology to facilitate information exchange among disciplines.
-- Highlights the impact of cognitive overload on decision-making and sensemaking.
-- Demonstrates that effective NIM systems can enhance situational awareness and decision-making.
-- Recommends further exploration of NIM applications in fields like personal finance, genomics, and neuroscience.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:50Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with Narrative Information Management, NIM, collective sensemaking
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

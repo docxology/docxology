@@ -1,56 +1,39 @@
-# AGENTS.md — Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
+# AGENTS.md — PPPiP
 
-**Paper**: Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement (2018)
-**Area**: Art
+**Paper**: PPPiP (2018)
+**Domain**: Art & Synergetics
 **Authors**: Alexandra Mikhailova, Daniel A. Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
-**Tasks**:
-- Analyze core argument: Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), t...
-- Evaluate: Introduces PPPiP as a novel dyadic art-based relationship intervention
-- Evaluate: Synthesizes evidence from art therapy, sexology, and affective neuroscience
-- Evaluate: Proposes neural circuit model for emotive-creative co-regulation in partnerships
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for PPPiP
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Interdisciplinary literature synthesis
-- Assess and document: Art therapy framework analysis
-- Assess and document: Neuroscience of improvisation review
-- Assess and document: Concept development and prospective design
+### 🔬 RESEARCHER
+- Extracts methods: Visual analysis, Historical interpretation, Conceptual synthesis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Art & Synergetics literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this art work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Art & Synergetics concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: PPPiP, art therapy, improvisation, intimate relationships, affective neuroscience
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects PPPiP to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2018_PPPiP.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

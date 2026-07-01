@@ -1,37 +1,38 @@
-# Con-cat-enate: pilot overview
+# 🧬 Con-cat-enate: pilot overview
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14737043.svg)](https://doi.org/10.5281/zenodo.14737043)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737042](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14737042)-blue)]([10.5281/zenodo.14737042](https://doi.org/10.5281/zenodo.14737042))
 
 ---
 
 ## Abstract
 
-Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan
+> Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan
 
 ## Keywords
 
-Zenodo publication
+`ConCatEnate2`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.14737043](https://doi.org/10.5281/zenodo.14737043) |
-| **Published** | 2025-01-25 |
-| **Version** | Unknown |
-| **Zenodo record** | https://zenodo.org/records/14737043 |
+- Literature review
+- Theoretical analysis
 
-## Files
+## Key Findings
 
-- `catpilot.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.14737043
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *Con-cat-enate: pilot overview*. Zenodo. https://doi.org/10.5281/zenodo.14737043
+> andrew djuwidja, Daniel Friedman (2025). *Con-cat-enate: pilot overview*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/14737043
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

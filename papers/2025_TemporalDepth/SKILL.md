@@ -1,54 +1,56 @@
 ---
 name: "TemporalDepth"
-description: "Expertise in developing integrated theoretical models for understanding complex psychological phenomena, particularly dissociative experiences, through a multidisciplinary approach."
-tags: ["active inference", "temporal-depth", "depersonalization", "self-coherence", "active-inference", "predictive-processing"]
+description: "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i..."
+tags: ["temporal-depth", "depersonalization", "self-coherence", "active-inference", "predictive-processing", "temporal-integration", "clinical-psychology"]
+domain: "Active Inference"
+citation: "Daniel A. Friedman, et al. (2025). *TemporalDepth*. Active Inference."
 ---
 
-# Temporal Depth in a Coherent Self and in Depersonalization
+# TemporalDepth
 
 **Daniel A. Friedman, et al.** (2025) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **temporal depth, depersonalization, self-coherence, Active Inference**.
+This work addresses topics in **Active Inference**: temporal depth, depersonalization, self-coherence, Active Inference.
 
-When applying this skill:
-1. Apply Active Inference to clinical psychology and depersonalization
-1. Model temporal depth in self-experience using hierarchical predictive processing
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **temporal depth**
-- **depersonalization**
-- **self-coherence**
-- **Active Inference**
-- **predictive processing**
-- **temporal integration**
-- **clinical psychology**
-
-## Methods & Techniques
-
-- Combines first-principles-based perspectives with nonlinear dynamical systems.
-- Utilizes clinical and neurobiological insights to inform the theoretical model.
-- Plans to employ computer simulations to test the model's computational components.
-- Aims to integrate phenomenological data with abstract theoretical models.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Identifies a collapse in temporal depth as a significant factor leading to dissociative experiences.
-- Suggests that both integration and disintegration processes are necessary in psychotherapy for dissociative disorders.
-- Proposes that a coherent self is defined by its temporal continuity and depth.
-- Indicates that various dissociative symptoms may share a common pathway despite differing etiologies.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with temporal depth, depersonalization, self-coherence
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

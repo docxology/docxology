@@ -1,57 +1,39 @@
-# 🛡️ Cognitive Sovereignty & Active Inference in the State of Exception
+# 🛡️ CognitiveSovereignty
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10038232-blue)](https://doi.org/10.5281/zenodo.10038232)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10038231](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10038231)-blue)]([10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CognitiveSovereignty","abstract":"This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments periodically enter crises, exited by cognitive and material restructuring. Several concordances are drawn ","keywords":["cognitive sovereignty","Agamben","Homo Sacer","Active Inference","state of exception","Thomas Kuhn","paradigm shifts","epistemic agency","biopolitics","bare life"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper analyzes Giorgio Agamben's Homo Sacer through the lens of Active Inference, exploring the relationship between bare life and political existence in Western politics. It connects Agamben's concepts with cognitive sovereignty and revolutionary science, asserting that epistemic agency is grounded in the cognitive sovereign's policy selection.
+> This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments period...
 
 ## Keywords
 
 `cognitive sovereignty` · `Agamben` · `Homo Sacer` · `Active Inference` · `state of exception` · `Thomas Kuhn` · `paradigm shifts` · `epistemic agency` · `biopolitics` · `bare life`
 
-## Key Contributions
-
-- Introduces the concept of cognitive sovereignty in relation to Agamben's Homo Sacer.
-- Connects Agamben's state of exception with Thomas Kuhn's theory of revolutionary science.
-- Explores the implications of Active Inference for understanding sovereignty and agency.
-- Provides pseudocode for an 'Active Stateference' model.
-
 ## Methods
 
-- Analyzes Homo Sacer through the framework of Active Inference.
-- Draws parallels between Agamben's concepts and cognitive theories.
-- Utilizes philosophical analysis to explore the dynamics of power and knowledge.
-- Presents a computational model (pseudocode) for the Active Stateference entity.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2023_CognitiveSovereignty,
-  author = {Daniel Ari Friedman},
-  title = {{Cognitive Sovereignty & Active Inference in the State of Exception}},
-  journal = {Zenodo},
-  year = {2023},
-  doi = {10.5281/zenodo.10038232},
-}
-```
+> Daniel Ari Friedman (2023). *CognitiveSovereignty*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,837 bytes)
-- `2023_CognitiveSovereignty.pdf` (220,677 bytes)
-- `README.md` (1,500 bytes)
-- `SKILL.md` (1,789 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

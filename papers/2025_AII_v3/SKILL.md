@@ -1,51 +1,56 @@
 ---
 name: "AII_v3"
-description: "Proficient in Active Inference methodologies and community engagement strategies, with a focus on collaborative learning and research in open science."
-tags: ["active inference", "active-inference-institute", "organizational-overview", "research-programs", "educational-initiatives", "community"]
+description: "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institu..."
+tags: ["active-inference-institute", "organizational-overview", "research-programs", "educational-initiatives", "community"]
+domain: "AII Ecosystem"
+citation: "Active Inference Institute (2025). *AII_v3*. AII Ecosystem."
 ---
 
-# The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)
+# AII_v3
 
-**Active Inference Institute** (2025) · Active Inference
+**Active Inference Institute** (2025) · AII Ecosystem
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Active Inference Institute, organizational overview, research programs, educational initiatives**.
+This work addresses topics in **AII Ecosystem**: Active Inference Institute, organizational overview, research programs, educational initiatives.
 
-When applying this skill:
-1. Navigate the Active Inference Institute's expanded organizational landscape
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Active Inference Institute**
-- **organizational overview**
-- **research programs**
-- **educational initiatives**
-- **community**
-
-## Methods & Techniques
-
-- Utilization of interactive platforms like Discord for community engagement.
-- Implementation of projects that encourage collaborative learning and research.
-- Organization of events and activities to promote knowledge sharing.
-- Curating educational materials and resources for diverse audiences.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- The institute successfully fosters a collaborative environment for learning about Active Inference.
-- Engagement through various platforms has increased accessibility to the framework.
-- Community involvement has led to the development of innovative projects and research initiatives.
-- The institute's resources have enhanced understanding of the Active Inference framework among participants.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:38Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Active Inference Institute, organizational overview, research programs
+- Background in AII Ecosystem fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

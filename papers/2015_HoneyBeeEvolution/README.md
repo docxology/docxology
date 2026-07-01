@@ -1,57 +1,39 @@
-# 📄 Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees
+# 🧬 HoneyBeeEvolution
 
 **Daniel A. Friedman, Brian R. Johnson** (2015) · *Molecular Biology & Evolution*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1093%2Fmolbev%2Fmsu292-blue)](https://doi.org/10.1093/molbev/msu292)
+[![DOI](https://img.shields.io/badge/DOI-10.1093%2Fmolbev%2Fmsu292](https:%2F%2Fdoi.org%2F10.1093%2Fmolbev%2Fmsu292)-blue)]([10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"HoneyBeeEvolution","abstract":"A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs), genes without homologs in related lineages. We find that honey-bee-specific novel tissues show sign","keywords":["honey bees","Apis mellifera","RNA-Seq","taxonomically restricted genes","novel traits","gene expression","evolutionary biology","royal jelly","beeswax","venom"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This study investigates the role of coding sequence changes in the evolution of postdevelopmental novelty in honey bees, challenging the traditional evo-devo paradigm that emphasizes regulatory changes. Through RNA-Seq experiments, we demonstrate that positively selected, tissue-specific genes with low network connectivity are crucial for the emergence of novel physiological functions in adult honey bees.
+> A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs),...
 
 ## Keywords
 
 `honey bees` · `Apis mellifera` · `RNA-Seq` · `taxonomically restricted genes` · `novel traits` · `gene expression` · `evolutionary biology` · `royal jelly` · `beeswax` · `venom`
 
-## Key Contributions
-
-- Demonstrated that positively selected tissue-specific genes underlie novel physiological functions in honey bees.
-- Challenged the evo-devo paradigm by showing that low network connectivity genes contribute to phenotypic novelty.
-- Identified the importance of taxonomically restricted genes (TRGs) in the evolution of novel traits.
-- Provided insights into the genetic mechanisms governing phenotypic novelty in adult organisms.
-
 ## Methods
 
-- Conducted ten RNA-Seq experiments across various honey bee tissues.
-- Analyzed gene expression patterns to identify highly expressed taxonomically restricted genes (HE-TRGs).
-- Compared gene expression in novel versus conserved tissues to assess the role of coding sequence changes.
-- Examined differentially expressed genes (DEGs) between different adult castes (nurses and foragers).
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2015_HoneyBeeEvolution,
-  author = {Daniel A. Friedman, Brian R. Johnson},
-  title = {{Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees}},
-  journal = {Molecular Biology & Evolution},
-  year = {2015},
-  doi = {10.1093/molbev/msu292},
-}
-```
+> Daniel A. Friedman, Brian R. Johnson (2015). *HoneyBeeEvolution*. Molecular Biology & Evolution.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (2,176 bytes)
-- `2015_HoneyBeeEvolution.pdf` (537,373 bytes)
-- `README.md` (2,316 bytes)
-- `SKILL.md` (2,134 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

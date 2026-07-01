@@ -1,54 +1,55 @@
 ---
 name: "OpenScienceSensemaking"
-description: "Expertise in developing and implementing decentralized systems for sharing scientific sensemaking data to enhance collaborative research and knowledge discovery."
-tags: ["cognitive security", "ossm", "open-science-sensemaking", "scientific-sensemaking", "annotation-networks", "open-access"]
+description: "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem..."
+tags: ["ossm", "open-science-sensemaking", "scientific-sensemaking", "annotation-networks", "open-access", "decentralized", "information-overload"]
+domain: "Cognitive Security"
+citation: "Ronen Tamari, Daniel A. Friedman (2023). *OpenScienceSensemaking*. Cognitive Security."
 ---
 
-# Open Access science needs Open Science Sensemaking (OSSm)
+# OpenScienceSensemaking
 
 **Ronen Tamari, Daniel A. Friedman** (2023) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **OSSm, Open Science Sensemaking, scientific sensemaking, annotation networks**.
+This work addresses topics in **Cognitive Security**: OSSm, Open Science Sensemaking, scientific sensemaking, annotation networks.
 
-When applying this skill:
-1. Design decentralized annotation systems for scientific sensemaking
-1. Implement interoperable open-science data sharing infrastructure
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **OSSm**
-- **Open Science Sensemaking**
-- **scientific sensemaking**
-- **annotation networks**
-- **open access**
-- **decentralized**
-- **information overload**
-
-## Methods & Techniques
-
-- Outlines a framework for an interoperable annotation network.
-- Examines existing sensemaking data practices and their limitations.
-- Analyzes the role of sensemaking data in algorithmic content curation and recommendation systems.
-- Discusses the application of FAIR principles to sensemaking data.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Current scientific infrastructure inadequately addresses the challenges posed by information overload.
-- Sensemaking data is essential for personalized content recommendation and evaluation processes.
-- The enclosure of sensemaking data by commercial platforms threatens open access and scientific progress.
-- A decentralized approach to sharing sensemaking data can enhance collaboration and knowledge integration.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with OSSm, Open Science Sensemaking, scientific sensemaking
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

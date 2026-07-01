@@ -1,52 +1,56 @@
 ---
 name: "SystemsProcesses"
-description: "Expertise in integrating systems processes with active inference to enhance cognitive security and advance systems science."
-tags: ["presentations, courses & media", "systems-processes", "active-inference", "systems-science", "metatheory", "process-philosophy"]
+description: "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and..."
+tags: ["systems-processes", "active-inference", "systems-science", "metatheory", "process-philosophy", "anticipatory-systems"]
+domain: "Presentations & Media"
+citation: "Daniel A. Friedman (2025). *SystemsProcesses*. Presentations & Media."
 ---
 
-# Systems Processes, Active Inference, and Beyond
+# SystemsProcesses
 
-**Daniel A. Friedman** (2025) · Presentations, Courses & Media
+**Daniel A. Friedman** (2025) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **systems processes, Active Inference, systems science, metatheory**.
+This work addresses topics in **Presentations & Media**: systems processes, Active Inference, systems science, metatheory.
 
-When applying this skill:
-1. Connect systems process theory with Active Inference
-1. Navigate metatheoretical frameworks in systems science
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **systems processes**
-- **Active Inference**
-- **systems science**
-- **metatheory**
-- **process philosophy**
-- **anticipatory systems**
-
-## Methods & Techniques
-
-- Utilizes a conceptual analysis of systems processes and active inference.
-- Incorporates discussions and insights from collaborative meetings with experts.
-- Analyzes existing literature and resources related to active inference.
-- Engages with open-source platforms to disseminate findings.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Establishes a clear relationship between systems processes and active inference.
-- Demonstrates the relevance of these concepts to cognitive security.
-- Identifies gaps in current systems science that can be addressed through active inference.
-- Encourages collaborative efforts to advance the field of systems science.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:26:00Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with systems processes, Active Inference, systems science
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

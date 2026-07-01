@@ -1,54 +1,39 @@
-# AGENTS.md — The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
+# AGENTS.md — DiscoveryEngine
 
-**Paper**: The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes (2025)
-**Area**: Computational
+**Paper**: DiscoveryEngine (2025)
+**Domain**: Computational
 **Authors**: Daniel A. Friedman
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
-**Tasks**:
-- Analyze core argument: The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the sc...
-- Evaluate: Develops Discovery Engine for Active Inference-based automated scientific discovery
-- Evaluate: Models scientific discovery as an inference problem with free energy minimization
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for DiscoveryEngine
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: Active Inference discovery modeling
-- Assess and document: Automated hypothesis generation
-- Assess and document: Computational scientific reasoning
+### 🔬 RESEARCHER
+- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this computational work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: Discovery Engine, automated discovery, Active Inference, scientific reasoning, hypothesis generation
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects DiscoveryEngine to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2025_DiscoveryEngine.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

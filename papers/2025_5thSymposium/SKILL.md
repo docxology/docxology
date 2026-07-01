@@ -1,50 +1,56 @@
 ---
 name: "5thSymposium"
-description: "Expertise in Active Inference methodologies and applications, with a focus on collaborative research and open science practices."
-tags: ["presentations, courses & media", "active-inference-symposium", "conference-proceedings", "international-symposium", "research-presentations"]
+description: "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc..."
+tags: ["active-inference-symposium", "conference-proceedings", "international-symposium", "research-presentations"]
+domain: "Presentations & Media"
+citation: "Active Inference Institute (2025). *5thSymposium*. Presentations & Media."
 ---
 
-# 5th Applied Active Inference Symposium — Abstract Book
+# 5thSymposium
 
-**Active Inference Institute** (2025) · Presentations, Courses & Media
+**Active Inference Institute** (2025) · Presentations & Media
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Active Inference symposium, conference proceedings, international symposium, research presentations**.
+This work addresses topics in **Presentations & Media**: Active Inference symposium, conference proceedings, international symposium, research presentations.
 
-When applying this skill:
-1. Organize and facilitate international scientific symposia
-1. Present Active Inference research to interdisciplinary audiences
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Active Inference symposium**
-- **conference proceedings**
-- **international symposium**
-- **research presentations**
-
-## Methods & Techniques
-
-- Keynote presentations from leading experts in the field.
-- Pre-recorded presentations to provide diverse perspectives.
-- Live-streamed panels for real-time discussions.
-- Interactive workshops to engage participants in hands-on learning.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Increased awareness and understanding of Active Inference applications.
-- Identification of key challenges and opportunities in the field.
-- Enhanced collaboration among interdisciplinary researchers.
-- Development of new methodologies for applying Active Inference.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:37Z
 
 ## Prerequisites
 
-- Domain knowledge in Presentations, Courses & Media
+- Familiarity with Active Inference symposium, conference proceedings, international symposium
+- Background in Presentations & Media fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

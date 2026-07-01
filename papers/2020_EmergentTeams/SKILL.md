@@ -1,56 +1,55 @@
 ---
 name: "EmergentTeams"
-description: "Expertise in applying Complexity Science to military operations, focusing on rapid team assembly and open-source intelligence for effective conflict management."
-tags: ["cognitive security", "emergent-teams", "operations-orders", "team-formation", "innovation", "facilitation"]
+description: "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation..."
+tags: ["emergent-teams", "operations-orders", "team-formation", "innovation", "facilitation", "collective-intelligence", "hackathons", "research-accelerators"]
+domain: "Cognitive Security"
+citation: "Daniel A. Friedman, R.J. Cordes, Scott David (2020). *EmergentTeams*. Cognitive Security."
 ---
 
-# Emergent Teams for Complex Threats
+# EmergentTeams
 
 **Daniel A. Friedman, R.J. Cordes, Scott David** (2020) · Cognitive Security
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **emergent teams, operations orders, team formation, innovation**.
+This work addresses topics in **Cognitive Security**: emergent teams, operations orders, team formation, innovation.
 
-When applying this skill:
-1. Design operations orders for rapidly formed teams
-1. Transfer military organizational concepts to civilian innovation settings
-1. Facilitate rapid alignment and workflow establishment in emergent teams
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **emergent teams**
-- **operations orders**
-- **team formation**
-- **innovation**
-- **facilitation**
-- **collective intelligence**
-- **hackathons**
-- **research accelerators**
-
-## Methods & Techniques
-
-- Utilizes a Complexity Science framework to model and de-risk complex threats.
-- Analyzes counterinsurgency and counterterrorism operations through case studies.
-- Discusses best practices for rapid reorganization and adaptation in response to emergent problems.
-- Examines the use of open-source intelligence (OSINT) in planning and executing operations.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- Emergent teams can effectively respond to complex threats through rapid reorganization.
-- The 2008 Mumbai attack exemplifies the advantages of decentralized, flexible operations over traditional military responses.
-- Successful operations rely heavily on the use of open-source intelligence for real-time decision-making.
-- The lack of flexibility and modular structures in counterterrorism forces can lead to significant operational failures.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:24:43Z
 
 ## Prerequisites
 
-- Information security and risk management
-- Cognitive science and sensemaking frameworks
+- Familiarity with emergent teams, operations orders, team formation
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

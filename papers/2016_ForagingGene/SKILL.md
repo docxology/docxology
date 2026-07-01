@@ -1,57 +1,56 @@
 ---
 name: "ForagingGene"
-description: "Expertise in studying molecular mechanisms of behavioral plasticity in social insects, focusing on gene expression and task allocation in natural populations."
-tags: ["entomology", "foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms"]
+description: "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
+tags: ["foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms", "task-allocation", "division-of-labor", "field-study", "behavioral-ecology"]
+domain: "Entomology"
+citation: "Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon (2016). *ForagingGene*. Entomology."
 ---
 
-# Context-dependent expression of the foraging gene in field colonies of ants
+# ForagingGene
 
 **Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon** (2016) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **foraging gene, Pogonomyrmex barbatus, harvester ants, gene expression**.
+This work addresses topics in **Entomology**: foraging gene, Pogonomyrmex barbatus, harvester ants, gene expression.
 
-When applying this skill:
-1. Design and execute field-based gene expression studies in social insects
-1. Apply qRT-PCR to quantify gene expression in individual ant workers
-1. Interpret temporal gene expression dynamics (ontogenetic and circadian) in colony context
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **foraging gene**
-- **Pogonomyrmex barbatus**
-- **harvester ants**
-- **gene expression**
-- **circadian rhythms**
-- **task allocation**
-- **division of labor**
-- **field study**
-- **behavioral ecology**
-
-## Methods & Techniques
-
-- Collected harvester ants from natural populations and categorized them into age- and task-related groups.
-- Conducted field experiments to measure foraging gene expression at different times of day.
-- Manipulated light conditions to assess their impact on foraging gene expression.
-- Analyzed the correlation between foraging gene expression and the circadian clock gene.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Foraging gene expression is associated with both ontogenetic changes and daily behavioral patterns.
-- Significant daily oscillations in foraging expression were observed in foragers, but not in brood workers.
-- Light exposure influenced foraging gene expression, indicating a complex interaction between task behavior and environmental cues.
-- Foraging expression levels were correlated with the expression of the circadian clock gene, cycle.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with foraging gene, Pogonomyrmex barbatus, harvester ants
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

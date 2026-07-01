@@ -1,53 +1,56 @@
 ---
 name: "EvoJump"
-description: "Proficient in stochastic modeling and advanced statistical analysis for evolutionary biology, utilizing frameworks like EvoJump to derive insights from complex biological data."
-tags: ["active inference", "evolutionary-transitions", "evojump", "active-inference", "major-transitions", "phenotypic-complexity"]
+description: "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work..."
+tags: ["evolutionary-transitions", "evojump", "active-inference", "major-transitions", "phenotypic-complexity", "free-energy-principle"]
+domain: "Active Inference"
+citation: "Daniel A. Friedman (2025). *EvoJump*. Active Inference."
 ---
 
-# EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
+# EvoJump
 
 **Daniel A. Friedman** (2025) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **evolutionary transitions, EvoJump, Active Inference, major transitions**.
+This work addresses topics in **Active Inference**: evolutionary transitions, EvoJump, Active Inference, major transitions.
 
-When applying this skill:
-1. Model evolutionary transitions using Active Inference
-1. Analyze major transitions in biological complexity through FEP
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **evolutionary transitions**
-- **EvoJump**
-- **Active Inference**
-- **major transitions**
-- **phenotypic complexity**
-- **Free Energy Principle**
-
-## Methods & Techniques
-
-- Utilization of stochastic process modeling techniques, including Ornstein-Uhlenbeck and Cox-Ingersoll-Ross processes.
-- Implementation of wavelet analysis for multi-scale temporal patterns.
-- Application of copula methods for analyzing trait dependencies.
-- Use of Bayesian inference for parameter estimation and model validation.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Demonstrated the effectiveness of the EvoJump framework in modeling complex evolutionary trajectories.
-- Identified long-range temporal dependencies in evolutionary processes.
-- Provided evidence of selective sweeps and genetic hitchhiking in Drosophila populations.
-- Validated the framework through extensive simulations and statistical methods.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:48Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with evolutionary transitions, EvoJump, Active Inference
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

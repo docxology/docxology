@@ -1,29 +1,55 @@
 ---
 name: "CaliforniaPublicRecords"
-description: "Use for California Public Records: A Technical and Legal Reference for the Post-AB 473 Era, a Zenodo publication with concept DOI 10.5281/zenodo.20789899."
-tags: ["california-public-records-act", "open-data", "ckan", "socrata", "arcgis", "cognitive-security", "civic-technology"]
+description: "Research on CaliforniaPublicRecords"
+tags: ["californiapublicrecords"]
+domain: "Cognitive Security"
+citation: "Daniel Ari Friedman (2026). *CaliforniaPublicRecords*. Cognitive Security."
 ---
 
-# California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
+# CaliforniaPublicRecords
+
+**Daniel Ari Friedman** (2026) · Cognitive Security
+
+## Context
+
+This work addresses topics in **Cognitive Security**: californiapublicrecords.
+
+## Methods
+
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-21T00:00:00Z
+
+## Prerequisites
+
+- Familiarity with californiapublicrecords
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
 
 ## Instructions
 
-Use this skill when working with the publication **California Public Records: A Technical and Legal Reference for the Post-AB 473 Era** or its archival record.
+When working with this paper:
 
-1. Ground citations in concept DOI `10.5281/zenodo.20789899` (version 0.1.0: `10.5281/zenodo.20789916`).
-2. Treat the Zenodo record as the archival source.
-
-## Key Concepts
-
-- **California Public Records Act**
-- **open data**
-- **CKAN**
-- **Socrata**
-- **ArcGIS**
-- **cognitive security**
-- **civic technology**
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

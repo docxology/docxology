@@ -2,61 +2,37 @@
 
 **Daniel Ari Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15170907-blue)](https://doi.org/10.5281/zenodo.15170907)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15170907](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.15170907)-blue)]([10.5281/zenodo.15170907](https://doi.org/10.5281/zenodo.15170907))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"CEREBRUM","abstract":"CEREBRUM (Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling) introduces a framework that integrates linguistic case systems with Bayesian Active Inference. Models are treated as case-bearing entities (Nominative, Accusative, Dative, etc.) that assume functional roles within a formal linguistic-type calculus, enabling structured model management and inter-model communication.","keywords":["CEREBRUM","linguistic case systems","Active Inference","Bayesian modeling","model management","case grammar","unified modeling"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper introduces the Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM), a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe and deploy generative models. CEREBRUM establishes a formal linguistic-type calculus for cognitive model use, addressing the complexity in computational and cognitive modeling systems.
+> <div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion. By treating models as case-bearing entities that can play multiple contextual ro...
 
 ## Keywords
 
-`CEREBRUM` · `linguistic case systems` · `Active Inference` · `Bayesian modeling` · `model management` · `case grammar` · `unified modeling`
-
-## Key Contributions
-
-- Integration of linguistic case systems with cognitive modeling principles.
-- Establishment of a formal linguistic-type calculus for cognitive models.
-- Structured representation of model ecosystems aligned with scientific principles.
-- Addressing complexity in generative and decentralized intelligence systems.
+`CEREBRUM`
 
 ## Methods
 
-- Application of category theory to cognitive modeling.
-- Utilization of the Free Energy Principle in model descriptions.
-- Development of a formal framework for cognitive models as case-bearing entities.
-- Implementation of hierarchical message passing for dynamic adaptive processes.
+- Literature review
+- Theoretical analysis
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.15170907
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2025_CEREBRUM,
-  author = {Daniel Ari Friedman},
-  title = {{CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling}},
-  journal = {Zenodo},
-  year = {2025},
-  doi = {10.5281/zenodo.15170907},
-}
-```
-
-## File Inventory
-
-- `AGENTS.md` (2,091 bytes)
-- `2025_CEREBRUM.pdf` (4,062,779 bytes)
-- `README.md` (1,715 bytes)
-- `SKILL.md` (1,954 bytes)
+> Daniel Ari Friedman (2025). *CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling*. Zenodo.
 
 ## Related
 
-- GitHub release: https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.4
-- Zenodo record: https://zenodo.org/records/15231156
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

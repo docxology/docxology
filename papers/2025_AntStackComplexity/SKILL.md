@@ -1,53 +1,56 @@
 ---
 name: "AntStackComplexity"
-description: "Expertise in energy-aware robotics and computational complexity analysis, with a focus on integrating biological principles into robotic design and performance optimization."
-tags: ["entomology", "antstack", "complexity-science", "information-theory", "complex-adaptive-systems", "ant-colonies"]
+description: "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and..."
+tags: ["antstack", "complexity-science", "information-theory", "complex-adaptive-systems", "ant-colonies", "non-equilibrium-thermodynamics"]
+domain: "Entomology"
+citation: "Daniel A. Friedman (2025). *AntStackComplexity*. Entomology."
 ---
 
-# Computational Complexity and Energetics of the Ant Stack
+# AntStackComplexity
 
 **Daniel A. Friedman** (2025) · Entomology
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **AntStack, complexity science, information theory, complex adaptive systems**.
+This work addresses topics in **Entomology**: AntStack, complexity science, information theory, complex adaptive systems.
 
-When applying this skill:
-1. Apply complexity science and information theory to social insect systems
-1. Use non-equilibrium thermodynamics to analyze colony-level phenomena
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **AntStack**
-- **complexity science**
-- **information theory**
-- **complex adaptive systems**
-- **ant colonies**
-- **non-equilibrium thermodynamics**
-
-## Methods & Techniques
-
-- Utilization of a multi-scale analysis framework for computational workload modeling.
-- Implementation of an energy decomposition framework to estimate energy consumption.
-- Application of real-time complexity analysis to evaluate computational constraints.
-- Integration of uncertainty quantification techniques to enhance model reliability.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Demonstrated that biological design principles can significantly inform the development of efficient robotic systems.
-- Found that energy efficiency and computational performance are closely linked, revealing trade-offs that can be optimized.
-- Validated the Ant Stack framework through empirical data, showing its applicability in real-world scenarios.
-- Identified critical points and phase transitions in system behavior that impact performance and energy consumption.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:43Z
 
 ## Prerequisites
 
-- Evolutionary biology and ecology fundamentals
-- Social insect biology and colony organization
+- Familiarity with AntStack, complexity science, information theory
+- Background in Entomology fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

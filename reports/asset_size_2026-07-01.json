@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-01T00:36:54Z",
+  "generated_at": "2026-07-01T20:30:55Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 79,
   "warnings": 0,
-  "total_bytes": 11789180,
+  "total_bytes": 11701168,
   "largest": [
     {
       "path": "data/videos.json",
@@ -48,13 +48,6 @@
       "ok": true
     },
     {
-      "path": "data/work-enrichment.json",
-      "kind": "json-data",
-      "bytes": 255325,
-      "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
       "path": "data/resume.json",
       "kind": "json-data",
       "bytes": 208394,
@@ -66,6 +59,13 @@
       "kind": "hero-art",
       "bytes": 168864,
       "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "data/work-enrichment.json",
+      "kind": "json-data",
+      "bytes": 167313,
+      "budget_bytes": 4000000,
       "ok": true
     },
     {

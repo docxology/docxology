@@ -1,56 +1,39 @@
-# AGENTS.md — The MutAnts are here
+# AGENTS.md — MutAnts
 
-**Paper**: The MutAnts are here (2017)
-**Area**: Entomology
+**Paper**: MutAnts (2017)
+**Domain**: Entomology
 **Authors**: Daniel A. Friedman, Deborah M. Gordon, Liqun Luo
 
 ---
 
 ## Agent Roles
 
-### 📖 Research Agent
-**Focus**: Deep analysis of The MutAnts are here
-**Tasks**:
-- Analyze core argument: The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to or...
-- Evaluate: Previews two landmark CRISPR/Cas9 ant gene knockout studies in Cell
-- Evaluate: Contextualizes Orco knockout results within ant olfactory receptor evolution
-- Evaluate: Highlights the massive OR gene family expansion in ants as a social adaptation
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for MutAnts
+- Updates related_papers links when new connections are identified
 
-### 🔬 Methods Agent
-**Focus**: Methodological rigor and replication
-**Tasks**:
-- Assess and document: CRISPR/Cas9 gene editing (reviewed)
-- Assess and document: Olfactory receptor gene family analysis
-- Assess and document: Comparative behavioral phenotyping
-- Assess and document: Phylogenetic analysis of OR gene expansion
+### 🔬 RESEARCHER
+- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Entomology literature
 
-### 📚 Citation Agent
-**Focus**: Citation context and scholarly impact
-**Tasks**:
-- Track citations and impact of this entomology work
-- Map connections to related works in the Friedman corpus
-- Identify citing papers and downstream applications
+### 🎓 EDUCATOR
+- Creates learning pathways for Entomology concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
 
-### 🔗 Synthesis Agent
-**Focus**: Cross-paper and cross-domain connections
-**Tasks**:
-- Connect themes: CRISPR/Cas9, Orco gene, olfactory receptor, ant genetics, Ooceraea biroi
-- Link to related works in the docxology corpus
-- Identify synergies across Active Inference, entomology, and cognitive security
+### 🔗 INTEGRATOR
+- Connects MutAnts to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
 
-### 💼 Consultant Agent
-**Focus**: Practical application and knowledge transfer
-**Tasks**:
-- Evaluates practical applications and implementation strategies for this research
-- Maps findings to industry challenges, Active Inference, and technological solutions
-- Facilitates knowledge transfer to external teams and collaborators
+---
 
 ## Extraction Log
 
-- **Source PDF**: `2017_MutAnts.pdf`
-- **PDF Status**: ✅ Available
-- **Documentation Quality**: Hand-curated from direct PDF analysis
-
-## Related Papers
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the full publication catalog.
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |

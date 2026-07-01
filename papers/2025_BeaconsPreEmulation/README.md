@@ -1,37 +1,38 @@
-# Beacons - pre emulation of social cortex
+# 🧬 Beacons - pre emulation of social cortex
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14737060.svg)](https://doi.org/10.5281/zenodo.14737060)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737059](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14737059)-blue)]([10.5281/zenodo.14737059](https://doi.org/10.5281/zenodo.14737059))
 
 ---
 
 ## Abstract
 
-primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of&nbsp; when the object type is called; then "emulated" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon )
+> primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of&nbsp; when the object type is called; then "emulated" in the mind a pulse-to-response only version of the associated objects fo...
 
 ## Keywords
 
-Zenodo publication
+`BeaconsPreEmulation`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.14737060](https://doi.org/10.5281/zenodo.14737060) |
-| **Published** | 2025-01-25 |
-| **Version** | Unknown |
-| **Zenodo record** | https://zenodo.org/records/14737060 |
+- Literature review
+- Theoretical analysis
 
-## Files
+## Key Findings
 
-- `beacons.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.14737060
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *Beacons - pre emulation of social cortex*. Zenodo. https://doi.org/10.5281/zenodo.14737060
+> andrew djuwidja, Daniel Friedman (2025). *Beacons - pre emulation of social cortex*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/14737060
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

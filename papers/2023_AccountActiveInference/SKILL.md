@@ -1,55 +1,56 @@
 ---
 name: "AccountActiveInference"
-description: "Proficient in developing generative models for cognitive systems using Active Inference, integrating analytical and artistic approaches to enhance understanding of cognition."
-tags: ["active inference", "active-inference", "generative-modeling", "accounting-metaphor", "active-accountants", "cognitive-modeling"]
+description: "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li..."
+tags: ["active-inference", "generative-modeling", "accounting-metaphor", "active-accountants", "cognitive-modeling", "epistemic-agency", "model-development"]
+domain: "Active Inference"
+citation: "Daniel Ari Friedman (2023). *AccountActiveInference*. Active Inference."
 ---
 
-# An Account of Active Inference Modeling
+# AccountActiveInference
 
 **Daniel Ari Friedman** (2023) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **Active Inference, generative modeling, accounting metaphor, Active AccountAnts**.
+This work addresses topics in **Active Inference**: Active Inference, generative modeling, accounting metaphor, Active AccountAnts.
 
-When applying this skill:
-1. Apply the accounting metaphor to Active Inference model development
-1. Distinguish research and application phases in generative modeling
-1. Use 'Active AccountAnts' framework for systematic cognitive systems analysis
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **Active Inference**
-- **generative modeling**
-- **accounting metaphor**
-- **Active AccountAnts**
-- **cognitive modeling**
-- **epistemic agency**
-- **model development**
-
-## Methods & Techniques
-
-- Utilizes a four-fold partition to model Internal, External, Sensory, and Active states as a cognitive Tetrahedra.
-- Applies category theory approaches to enhance Active Inference modeling.
-- Employs analytical stances to account for cognitive properties and processes.
-- Integrates artistic and scientific perspectives in the crafting of generative models.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
 ## Key Findings
 
-- Demonstrates that generative models can effectively account for complex cognitive phenomena.
-- Highlights the limitations of traditional cognitive models that focus on specific phenomena.
-- Suggests that Active Inference can provide deeper insights into cognitive systems by saying less about specific phenomena.
-- Indicates that the relationship between financial and cognitive accounting is more profound than previously understood.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:08Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with Active Inference, generative modeling, accounting metaphor
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

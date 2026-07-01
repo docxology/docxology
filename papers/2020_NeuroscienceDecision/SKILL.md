@@ -1,54 +1,56 @@
 ---
 name: "NeuroscienceDecision"
-description: "Expertise in integrating neuroscience and decision-making research, with a focus on computational approaches and philosophical implications."
-tags: ["genetics & biomedical research", "decision-making", "computational-neuroscience", "bayesian-brain", "free-will", "mental-health"]
+description: "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have hel..."
+tags: ["decision-making", "computational-neuroscience", "bayesian-brain", "free-will", "mental-health", "attention", "neural-circuits"]
+domain: "Genetics & Biomedical"
+citation: "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *NeuroscienceDecision*. Genetics & Biomedical."
 ---
 
-# The neuroscience of decision making (interview with Timothy Hanks)
+# NeuroscienceDecision
 
-**Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · Genetics & Biomedical Research
+**Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · Genetics & Biomedical
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **decision making, computational neuroscience, Bayesian brain, free will**.
+This work addresses topics in **Genetics & Biomedical**: decision making, computational neuroscience, Bayesian brain, free will.
 
-When applying this skill:
-1. Understand computational models of neural decision-making
-1. Connect neuroscience of decision-making with questions of free will
-1. Apply integrative experimental approaches to study brain processes
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **decision making**
-- **computational neuroscience**
-- **Bayesian brain**
-- **free will**
-- **mental health**
-- **attention**
-- **neural circuits**
-
-## Methods & Techniques
-
-- Utilizes Bayesian reasoning to inform decision-making processes.
-- Discusses the accumulation of evidence to a threshold level as a mechanism for decision commitment.
-- Examines neural activity related to decision-making and its implications for understanding free will.
-- Proposes a roadmap for future research that bridges conscious awareness with neural measurements.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Conscious awareness plays a significant role in decision-making processes, influencing both deliberative and subconscious choices.
-- The concept of decision bounds is critical for understanding how individuals commit to decisions based on evidence.
-- Future research may reveal aspects of decision making that challenge current scientific understanding or require new conceptual frameworks.
-- Different types of consciousness may have distinct evolutionary histories and relationships with neural mechanisms.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: unknown
 
 ## Prerequisites
 
-- Domain knowledge in Genetics & Biomedical Research
+- Familiarity with decision making, computational neuroscience, Bayesian brain
+- Background in Genetics & Biomedical fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

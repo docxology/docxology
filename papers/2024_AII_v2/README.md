@@ -1,55 +1,39 @@
-# 🧠 The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
+# 📄 AII_v2
 
 **Active Inference Institute** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14108992-blue)](https://doi.org/10.5281/zenodo.14108992)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14108992](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14108992)-blue)]([10.5281/zenodo.14108992](https://doi.org/10.5281/zenodo.14108992))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"AII_v2","abstract":"Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and application.","keywords":["Active Inference Institute","organizational update","open science","community"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
 > Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and application.
 
-## Version Note
-
-Use DOI [`10.5281/zenodo.14108992`](https://doi.org/10.5281/zenodo.14108992) for the v2 snapshot. The concept DOI `10.5281/zenodo.14108991` remains the version-chain anchor.
-
 ## Keywords
 
 `Active Inference Institute` · `organizational update` · `open science` · `community`
 
-## Key Contributions
-
-- Documents AII organizational growth and expanded activities
-
 ## Methods
 
-- Organizational documentation
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
+## Key Findings
 
-## 🎯 Consulting & Tutoring
+- See full paper for detailed findings and analysis
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+## Artifacts
+
+- DOI: [10.5281/zenodo.14108992](https://doi.org/10.5281/zenodo.14108992)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2024_AII_v2,
-  author = {Active Inference Institute},
-  title = {{The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)}},
-  journal = {Zenodo},
-  year = {2024},
-  doi = {10.5281/zenodo.14108992},
-}
-```
+> Active Inference Institute (2024). *AII_v2*. Zenodo.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,635 bytes)
-- `README.md` (1,090 bytes)
-- `SKILL.md` (1,479 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

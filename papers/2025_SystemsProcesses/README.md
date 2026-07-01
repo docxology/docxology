@@ -1,54 +1,39 @@
-# 📄 Systems Processes, Active Inference, and Beyond
+# 📄 SystemsProcesses
 
-**Daniel A. Friedman** (2025) · *[10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223)*
+**Daniel A. Friedman** (2025) · *Presentation*
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17138223](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.17138223)-blue)]([10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223))
 
 ---
-<!-- Schema.org structured data for search engines -->
-<!--
-{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"SystemsProcesses","abstract":"This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and are enriched by Active Inference, pointing towards a fuller systems science that integrates process philosophy and anticipatory systems.","keywords":["systems processes","Active Inference","systems science","metatheory","process philosophy","anticipatory systems"],"author":{"@type":"Person","name":"Daniel Ari Friedman","url":"https://danielarifriedman.com/"}}
--->
-
 
 ## Abstract
 
-> This paper explores the connections between systems processes and active inference, aiming to enhance the understanding of systems science. It discusses the implications of these concepts for cognitive security and broader scientific inquiry.
+> This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and are enriched by Active Inference, pointing towards a fuller systems science that integrates process philosophy and anticipatory systems.
 
 ## Keywords
 
 `systems processes` · `Active Inference` · `systems science` · `metatheory` · `process philosophy` · `anticipatory systems`
 
-## Key Contributions
-
-- Introduces a novel framework linking systems processes to active inference.
-- Provides insights into the application of active inference in cognitive security.
-- Offers a comprehensive discussion on the evolution of systems science.
-- Presents open-source resources for further exploration and engagement.
-
 ## Methods
 
-- Utilizes a conceptual analysis of systems processes and active inference.
-- Incorporates discussions and insights from collaborative meetings with experts.
-- Analyzes existing literature and resources related to active inference.
-- Engages with open-source platforms to disseminate findings.
+- Field observation
+- Population genetics analysis
+- Behavioral assays
 
-## 🎯 Consulting & Tutoring
+## Key Findings
 
-**Available for AI Research Consulting and Tutoring.** [Contact Daniel Ari Friedman, PhD](https://danielarifriedman.com/) for collaboration on Active Inference, Bayesian modeling, and computational biology.
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223)
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-```bibtex
-@article{2025_SystemsProcesses,
-  author = {Daniel A. Friedman},
-  title = {{Systems Processes, Active Inference, and Beyond}},
-  journal = {[10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223)},
-  year = {2025},
-}
-```
+> Daniel A. Friedman (2025). *SystemsProcesses*. Presentation.
 
-## File Inventory
+## Related
 
-- `AGENTS.md` (1,772 bytes)
-- `2025_SystemsProcesses.pdf` (3,636,370 bytes)
-- `README.md` (1,353 bytes)
-- `SKILL.md` (1,621 bytes)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

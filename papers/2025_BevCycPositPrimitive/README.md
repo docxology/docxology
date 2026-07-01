@@ -1,37 +1,38 @@
-# BevCyc - posit on primitive drivers of creatures
+# 🧬 BevCyc - posit on primitive drivers of creatures
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14737076.svg)](https://doi.org/10.5281/zenodo.14737076)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737075](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14737075)-blue)]([10.5281/zenodo.14737075](https://doi.org/10.5281/zenodo.14737075))
 
 ---
 
 ## Abstract
 
-Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time &amp; checkpoints to run with a modulator layer ; to then apply in either a static | n n n n n n | autofilling nodes for inputs from hippocampus systems; or a decreasing one that emulates stage-of-state or the cycle involved
+> Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time &amp; checkpoints to run with a modulator layer ; to then apply...
 
 ## Keywords
 
-Zenodo publication
+`BevCycPositPrimitive`
 
-## Publication Details
+## Methods
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.14737076](https://doi.org/10.5281/zenodo.14737076) |
-| **Published** | 2025-01-25 |
-| **Version** | Unknown |
-| **Zenodo record** | https://zenodo.org/records/14737076 |
+- Literature review
+- Theoretical analysis
 
-## Files
+## Key Findings
 
-- `bevcyc.pdf` - Zenodo PDF
+- See full paper for detailed findings and analysis
+
+## Artifacts
+
+- DOI: 10.5281/zenodo.14737076
+- PDF SHA-256: See zenodo_record
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo. https://doi.org/10.5281/zenodo.14737076
+> andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo.
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/14737076
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

@@ -1,52 +1,56 @@
 ---
 name: "OnTime"
-description: "Expertise in Narrative Information Management, focusing on synthesizing knowledge and tools to enhance organizational sensemaking and address information dynamics."
-tags: ["art", "temporal-dynamics", "active-inference", "synchronization", "collective-behavior", "temporal-coordination"]
+description: "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and..."
+tags: ["temporal-dynamics", "active-inference", "synchronization", "collective-behavior", "temporal-coordination"]
+domain: "Art & Synergetics"
+citation: "Daniel A. Friedman (2025). *OnTime*. Art & Synergetics."
 ---
 
-# On Time
+# OnTime
 
-**Daniel A. Friedman** (2025) · Art
+**Daniel A. Friedman** (2025) · Art & Synergetics
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **temporal dynamics, Active Inference, synchronization, collective behavior**.
+This work addresses topics in **Art & Synergetics**: temporal dynamics, Active Inference, synchronization, collective behavior.
 
-When applying this skill:
-1. Model temporal dynamics in collective systems using Active Inference
-1. Analyze synchronization patterns in biological and social systems
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **temporal dynamics**
-- **Active Inference**
-- **synchronization**
-- **collective behavior**
-- **temporal coordination**
-
-## Methods & Techniques
-
-- Conducts a broad summary of challenges faced by information-centered disciplines.
-- Synthesizes a set of common features contributing to effective NIM systems.
-- Explores domain-specific challenges and ad-hoc solutions in various fields.
-- Assesses common features found across discussed domains to inform future work.
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
 
 ## Key Findings
 
-- Highlights the importance of reducing cognitive load for effective decision-making.
-- Demonstrates that providing more information can worsen outcomes without appropriate tools.
-- Identifies the need for a common ontology to facilitate information exchange.
-- Concludes with a discussion on the potential for NIM to enhance collective sensemaking.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: Not assigned
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-06-30T23:25:53Z
 
 ## Prerequisites
 
-- Familiarity with William Blake's prophetic works
-- Active Inference and Free Energy Principle basics
+- Familiarity with temporal dynamics, Active Inference, synchronization
+- Background in Art & Synergetics fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Use the canonical citation above.
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

@@ -1,31 +1,57 @@
 ---
-name: "ReimaginingMaps"
-description: "Use for Reimagining Maps, a Zenodo publication with DOI 10.5281/zenodo.4170026."
-tags: ["maps", "cartography", "remote-teams", "interdisciplinary-research", "process-mapping", "knowledge-management-systems", "instantaneous-remote-teams", "intelligence-production"]
+name: "Reimagining Maps"
+description: "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experie..."
+tags: ["maps", "cartography", "remote-teams", "interdisciplinary-research", "process-mapping", "knowledge-management-systems", "instantaneous-remote-teams", "intelligence-production", "osint"]
+domain: "Cognitive Security"
+citation: "Richard J. Cordes, Daniel Ari Friedman, Mikel Maron (2020). *Reimagining Maps*. Cognitive Security."
+doi: "10.5281/zenodo.4170026"
 ---
 
 # Reimagining Maps
 
+**Richard J. Cordes, Daniel Ari Friedman, Mikel Maron** (2020) · Cognitive Security
+
+## Context
+
+This work addresses topics in **Cognitive Security**: Maps, Cartography, Remote Teams, Interdisciplinary Research.
+
+## Methods
+
+Primary methods and techniques applied in this work:
+
+- Field observation
+- Population genetics analysis
+- Behavioral assays
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.4170026
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: unknown
+- Last checked: 2026-05-30T18:56:35Z
+
+## Prerequisites
+
+- Familiarity with Maps, Cartography, Remote Teams
+- Background in Cognitive Security fundamentals
+- Access to source repository: N/A
+
 ## Instructions
 
-Use this skill when working with the publication **Reimagining Maps** or its archival record.
+When working with this paper:
 
-1. Ground citations in DOI `10.5281/zenodo.4170026`.
-2. Treat the Zenodo record as the archival source.
-
-## Key Concepts
-
-- **Maps**
-- **Cartography**
-- **Remote Teams**
-- **Interdisciplinary Research**
-- **Process Mapping**
-- **Knowledge Management Systems**
-- **Instantaneous Remote Teams**
-- **Intelligence Production**
-- **OSINT**
-
-## Related
-
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+1. Reference the DOI for citation: `10.5281/zenodo.4170026`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

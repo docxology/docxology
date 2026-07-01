@@ -1,55 +1,56 @@
 ---
-name: "CEREBRUM"
-description: "Proficient in developing and applying cognitive modeling frameworks that integrate linguistic case systems and Bayesian representations for enhanced intelligence production."
-tags: ["active inference", "cerebrum", "linguistic-case-systems", "active-inference", "bayesian-modeling", "model-management"]
+name: "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling"
+description: "<div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to des..."
+tags: ["cerebrum"]
+domain: "Active Inference"
+citation: "Daniel Ari Friedman (2025). *CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling*. Active Inference."
+doi: "10.5281/zenodo.15170907"
 ---
 
 # CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling
 
 **Daniel Ari Friedman** (2025) · Active Inference
 
-## Instructions
+## Context
 
-Use this skill when working with topics related to **CEREBRUM, linguistic case systems, Active Inference, Bayesian modeling**.
+This work addresses topics in **Active Inference**: CEREBRUM.
 
-When applying this skill:
-1. Apply linguistic case systems as computational frameworks for model management
-1. Design model lifecycle management using CEREBRUM's case-based approach
-1. Formalize inter-model communication using linguistic case grammar
+## Methods
 
-## Key Concepts
+Primary methods and techniques applied in this work:
 
-- **CEREBRUM**
-- **linguistic case systems**
-- **Active Inference**
-- **Bayesian modeling**
-- **model management**
-- **case grammar**
-- **unified modeling**
-
-## Methods & Techniques
-
-- Application of category theory to cognitive modeling.
-- Utilization of the Free Energy Principle in model descriptions.
-- Development of a formal framework for cognitive models as case-bearing entities.
-- Implementation of hierarchical message passing for dynamic adaptive processes.
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
-- CEREBRUM enables structured representation of model relationships and transformations.
-- Cognitive models can exist in different 'cases' based on their functional roles.
-- The framework enhances adaptability and coordination among analytical models.
-- Emergence of novel case functions for improved cognitive ecosystem management.
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.15170907
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-06-30T22:27:22Z
 
 ## Prerequisites
 
-- Probability theory and Bayesian inference basics
-- Free Energy Principle and generative models
+- Familiarity with CEREBRUM
+- Background in Active Inference fundamentals
+- Access to source repository: N/A
 
-## 🎯 Consulting & Tutoring
+## Instructions
 
-[Daniel Ari Friedman, PhD](https://danielarifriedman.com/) is available for AI Research Consulting and Tutoring related to this skill.
+When working with this paper:
 
-## Related Skills
-
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for the complete publication catalog and related papers.
+1. Reference the DOI for citation: `10.5281/zenodo.15170907`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.
