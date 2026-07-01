@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T00:30:30Z",
+  "generated_at": "2026-07-01T00:36:53Z",
   "claims": [
     {
       "id": "curated-work-count",
@@ -10,7 +10,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-01T00:30:29+00:00",
+      "checked_at": "2026-07-01T00:36:53+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -25,7 +25,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-01T00:30:29+00:00",
+      "checked_at": "2026-07-01T00:36:53+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
