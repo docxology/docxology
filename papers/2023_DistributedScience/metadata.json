@@ -1,0 +1,65 @@
+{
+  "title": "DistributedScience",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Francesco Balzan"
+    },
+    {
+      "name": "John Campbell"
+    },
+    {
+      "name": "Karl Friston"
+    },
+    {
+      "name": "Maxwell J.D. Ramstead"
+    },
+    {
+      "name": "Daniel Friedman"
+    },
+    {
+      "name": "Axel Constant"
+    }
+  ],
+  "description": "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual rese...",
+  "abstract": "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual researchers, laboratories, institutions, and the global scientific community each minimize free energy at their respective scales. This framework accounts for hypothesis generation, experimental design, peer review, and knowledge accumulation as nested inference processes. We discuss how this multi-scal",
+  "keywords": [
+    "distributed science",
+    "multi-scale Active Inference",
+    "scientific process",
+    "Free Energy Principle",
+    "meta-science",
+    "collective intelligence",
+    "cultural evolution",
+    "distributed cognition"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics.",
+    "We formalize the scientific process as multi-scale Active Inference, where individual rese..."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

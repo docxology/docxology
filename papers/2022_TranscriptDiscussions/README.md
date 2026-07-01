@@ -16,12 +16,14 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp
 
 ## Artifacts
 

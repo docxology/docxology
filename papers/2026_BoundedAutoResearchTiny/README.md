@@ -20,13 +20,18 @@ bounded small MNIST neural-network classification ...
 
 ## Methods
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that
+turns an AutoResearch loop into ordinary reproducible research infrastruct
+- The case study is intentionally small but concrete: 2000 training
+and 500 test images from MNIST handwritten digit database are evaluated by the
+bounded small MNIST neural-network classification loop.
 
 ## Artifacts
 

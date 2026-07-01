@@ -190,5 +190,37 @@
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
+  ],
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .",
+    "The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps."
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_sia"
   ]
 }

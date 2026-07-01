@@ -1,0 +1,47 @@
+{
+  "title": "CurioCards",
+  "domain": "Art & Synergetics",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct...",
+  "abstract": "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing structured prompts that encourage novel connections between ideas and research questions.",
+  "keywords": [
+    "Curio Cards",
+    "research ideation",
+    "creativity tools",
+    "interdisciplinary thinking",
+    "prompt-based exploration"
+  ],
+  "methods": [
+    {
+      "name": "Visual analysis and iconographic interpretation",
+      "description": "Applied visual analysis and iconographic interpretation methodology"
+    },
+    {
+      "name": "Historical and conceptual synthesis",
+      "description": "Applied historical and conceptual synthesis methodology"
+    },
+    {
+      "name": "Cross-domain pattern mapping",
+      "description": "Applied cross-domain pattern mapping methodology"
+    },
+    {
+      "name": "Symbolic and metaphorical analysis",
+      "description": "Applied symbolic and metaphorical analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation.",
+    "The system facilitates creative and interdisciplinary thinking by providing struct..."
+  ],
+  "related_papers": [
+    "2018_PPPiP",
+    "2022_MirrorTest",
+    "2023_BlakeFuller"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

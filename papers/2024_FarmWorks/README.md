@@ -16,13 +16,14 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems.
 
 ## Artifacts
 

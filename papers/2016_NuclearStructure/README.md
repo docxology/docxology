@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Genomic sequencing
-- Phylogenetic analysis
-- Statistical genetics
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.
+- Chromosome conformation capture (3C) tec...
 
 ## Artifacts
 

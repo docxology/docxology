@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Identifies findings: Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J., Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2020_BehaviorEngineering](../2020_BehaviorEngineering/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)

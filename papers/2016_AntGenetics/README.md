@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states.
+- Genetic approaches are beginning...
 
 ## Artifacts
 

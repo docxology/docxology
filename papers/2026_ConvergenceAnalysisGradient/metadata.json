@@ -307,5 +307,37 @@
     "decision": "accept",
     "reviewed_at": "2026-06-04T22:32:27Z",
     "source": "data/paired-publication-decisions.json"
-  }
+  },
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/templa",
+    "The implementation lives in projects/templates/template_code_project/src/optimizer.py; experiments and figures are orchestrated by projects/templates/template_code_project/scripts/optimization_analysi"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_code_project"
+  ]
 }

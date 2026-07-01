@@ -19,18 +19,22 @@ This work addresses topics in **Genetics & Biomedical**: BevCycPositPrimitive.
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2015_CryptoJews](../2015_CryptoJews/)
+- [2015_EhrlichialInfection](../2015_EhrlichialInfection/)
+- [2015_HoneyBeeEvolution](../2015_HoneyBeeEvolution/)
 
 ## Validation
 

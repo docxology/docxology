@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation.
+- Analysis of Through Active Inference...
 
 ## Artifacts
 

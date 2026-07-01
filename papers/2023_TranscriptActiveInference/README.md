@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Transcript from livestream on July 25, 2023 at the Active Inference Institute.
+- YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu
 
 ## Artifacts
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Identifies findings: The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference., The paper develops a 'Thematic Atl...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_PPPiP](../2018_PPPiP/)
+- [2022_MirrorTest](../2022_MirrorTest/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)

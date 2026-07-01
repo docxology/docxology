@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci).
+- Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...
 
 ## Artifacts
 

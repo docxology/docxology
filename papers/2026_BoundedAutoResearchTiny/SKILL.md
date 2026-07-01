@@ -19,19 +19,26 @@ This work addresses topics in **Computational**: autoresearch, reproducible rese
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that
+turns an AutoResearch loop into ordinary reproducible research infrastruct
+- The case study is intentionally small but concrete: 2000 training
+and 500 test images from MNIST handwritten digit database are evaluated by the
+bounded small MNIST neural-network classification loop.
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

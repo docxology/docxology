@@ -19,19 +19,23 @@ This work addresses topics in **Computational**: algebraic evaluation, NTQR, uns
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- <p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key.
+- We test this end to end on real large language models.
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

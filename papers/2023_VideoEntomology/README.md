@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We examine the transformative impact of video technology on experimental entomology.
+- Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...
 
 ## Artifacts
 

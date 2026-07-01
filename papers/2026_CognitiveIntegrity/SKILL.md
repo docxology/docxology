@@ -18,19 +18,23 @@ This work addresses topics in **Cognitive Security**: cognitive integrity, multi
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems.
+- Analysis of Part 1 of 3 covers theore...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
 
 ## Validation
 

@@ -19,19 +19,23 @@ This work addresses topics in **Computational**: honeybee, Apis mellifera, activ
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche).
+- It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

@@ -19,18 +19,23 @@ This work addresses topics in **Cognitive Security**: Remote Teams, Collaborativ
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit.
+- The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or oppo
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
 
 ## Validation
 

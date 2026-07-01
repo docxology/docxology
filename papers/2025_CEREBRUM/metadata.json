@@ -42,5 +42,37 @@
   "pairing_evidence": [
     "github_release_mentions_zenodo_record"
   ],
-  "checked_at": "2026-06-30T22:27:22Z"
+  "checked_at": "2026-06-30T22:27:22Z",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "<div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM).",
+    "CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "related_software": [
+    "ActiveInferenceInstitute/CEREBRUM"
+  ]
 }

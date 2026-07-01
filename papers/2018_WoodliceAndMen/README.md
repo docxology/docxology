@@ -17,12 +17,13 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit
 
 ## Artifacts
 

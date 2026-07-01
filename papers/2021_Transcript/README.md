@@ -17,12 +17,14 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston.
+- The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools.
 
 ## Artifacts
 

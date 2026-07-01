@@ -36,5 +36,33 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-05-30T18:56:06Z"
+  "checked_at": "2026-05-30T18:56:06Z",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont"
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2015_HoneyBeeEvolution"
+  ]
 }

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Identifies findings: The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics., We formalize the scientific process as multi-scale Active Inference, where individual rese...
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2020_BehaviorEngineering](../2020_BehaviorEngineering/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)

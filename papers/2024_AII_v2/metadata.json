@@ -177,5 +177,33 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:25:23Z"
+  "checked_at": "2026-06-30T23:25:23Z",
+  "domain": "AII Ecosystem",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Community coordination and governance",
+      "description": "Applied community coordination and governance methodology"
+    },
+    {
+      "name": "Open science infrastructure development",
+      "description": "Applied open science infrastructure development methodology"
+    },
+    {
+      "name": "Educational program design",
+      "description": "Applied educational program design methodology"
+    },
+    {
+      "name": "Inter-organizational collaboration",
+      "description": "Applied inter-organizational collaboration methodology"
+    }
+  ],
+  "key_findings": [
+    "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap"
+  ],
+  "related_papers": [
+    "2022_ActiveDiffusion",
+    "2023_AII_v1",
+    "2024_OntologySUMO"
+  ]
 }

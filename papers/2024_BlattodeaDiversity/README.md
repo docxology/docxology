@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology.
+- Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles.
 
 ## Artifacts
 

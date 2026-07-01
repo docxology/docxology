@@ -19,18 +19,28 @@ This work addresses topics in **Computational**: methods paper, domain-specific 
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This paper describes a small, tested domain language for specifying
+controlled methods — the methods-paper exemplar of the
+Research Project Template (https://github.com/docxology/template).
+- Unlike a
+results paper, this manuscript's subject is the methodology itself: a
+controlled vocabulary, a unit system with dimensional safety, four staged
+validation gates, and a deterministic compiler,
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

@@ -21,12 +21,20 @@ an interactive wa...
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Exploratory data analysis (EDA) is the most common entry point in applied
+research, yet it is also where reproducibility most often breaks down: logic
+accumulates in notebook cells that are never test
+- This paper presents the computational-notebook
+exemplar of the Research Project Template (https://github.com/docxology/template):
+an interactive walkthrough notebook
+(projects/templates/template_eda_n
 
 ## Artifacts
 

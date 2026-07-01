@@ -14,13 +14,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research.
+- We examine how colony-level informati...
 
 ## Artifacts
 

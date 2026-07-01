@@ -1,0 +1,56 @@
+{
+  "title": "WoodliceAndMen",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Karl Friston"
+    },
+    {
+      "name": "Martin Fortier"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit...",
+  "abstract": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by simple thermodynamic principles. The conversation covers the FEP's relationship to Bayesian inference, predictive process",
+  "keywords": [
+    "Free Energy Principle",
+    "Karl Friston",
+    "Bayesian brain",
+    "predictive processing",
+    "Markov blanket",
+    "consciousness",
+    "self-organization",
+    "variational inference",
+    "philosophy of mind"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit"
+  ],
+  "related_papers": [
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict",
+    "2021_Transcript"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

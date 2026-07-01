@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis.
+- Analysis of The work uses Morse...
 
 ## Artifacts
 

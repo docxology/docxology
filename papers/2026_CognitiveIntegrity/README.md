@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems.
+- Analysis of Part 1 of 3 covers theore...
 
 ## Artifacts
 

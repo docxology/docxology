@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Genomic sequencing
-- Phylogenetic analysis
-- Statistical genetics
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will.
+- Topics covered include neuroscience, genetics, environmental...
 
 ## Artifacts
 

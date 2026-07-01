@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Identifies findings: This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline., The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-puri
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,13 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
+
+### Related Software
+- https://github.com/docxology/template_gold_refinement

@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives.
+- This paper presents the Facilitator's Catechism, an operation...
 
 ## Artifacts
 

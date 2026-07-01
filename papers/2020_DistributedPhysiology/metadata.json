@@ -1,0 +1,53 @@
+{
+  "title": "DistributedPhysiology",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    }
+  ],
+  "description": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this...",
+  "abstract": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation—metabolism, water balance, immunity—is accomplished collectively through decentralized interaction networks rather than centr",
+  "keywords": [
+    "distributed physiology",
+    "superorganism",
+    "collective behavior",
+    "ant colonies",
+    "decentralized control",
+    "interaction networks",
+    "colony metabolism",
+    "social immunity"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals.",
+    "Analysis of We examine how this..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Identifies findings: In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena., This paper argues that developing generative models is more li...
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2020_BehaviorEngineering](../2020_BehaviorEngineering/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)

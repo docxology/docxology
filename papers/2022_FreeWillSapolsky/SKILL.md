@@ -18,19 +18,23 @@ This work addresses topics in **Genetics & Biomedical**: free will, determinism,
 
 Primary methods and techniques applied in this work:
 
-- Genomic sequencing
-- Phylogenetic analysis
-- Statistical genetics
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will.
+- Topics covered include neuroscience, genetics, environmental...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2015_CryptoJews](../2015_CryptoJews/)
+- [2015_EhrlichialInfection](../2015_EhrlichialInfection/)
+- [2015_HoneyBeeEvolution](../2015_HoneyBeeEvolution/)
 
 ## Validation
 

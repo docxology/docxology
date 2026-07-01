@@ -70,5 +70,37 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-07-01T00:30:10Z"
+  "checked_at": "2026-07-01T00:30:10Z",
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche).",
+    "It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/BeeStack"
+  ]
 }

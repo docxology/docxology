@@ -16,8 +16,10 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 

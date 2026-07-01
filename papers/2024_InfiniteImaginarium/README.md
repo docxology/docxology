@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration.
+- Analysis of The work...
 
 ## Artifacts
 

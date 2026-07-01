@@ -16,13 +16,14 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology.
 
 ## Artifacts
 

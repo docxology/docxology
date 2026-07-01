@@ -19,18 +19,26 @@ This work addresses topics in **Computational**: sortition, NTQR, unlabeled eval
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- How should you choose the judges, jurors, or reviewers who form a panel — and does
+that upstream choice change how well you can evaluate them without an answer key?
+- A panel can be selected many ways — by competence, by a representative lottery
+(sortition), by ideological bloc, or at random — and, separately, its noisy
+judgments can be evaluated blind: given the a
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

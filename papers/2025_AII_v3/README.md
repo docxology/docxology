@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Community coordination and governance
+- Open science infrastructure development
+- Educational program design
+- Inter-organizational collaboration
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement.
+- Analysis of Covers the institu...
 
 ## Artifacts
 

@@ -1,0 +1,57 @@
+{
+  "title": "MutAnts",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    },
+    {
+      "name": "Liqun Luo"
+    }
+  ],
+  "description": "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of...",
+  "abstract": "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of Cell, Trible et al. (2017) and Yan et al. (2017) advance the field of ant genetics by performing CRISPR/Cas9-mediated knockout of the Orco olfactory co-receptor gene in two ant species separated by 100+ million years of evolution: the clonal raider ant (Ooceraea biroi) and Jerdon's jumping ant (Har",
+  "keywords": [
+    "CRISPR/Cas9",
+    "Orco gene",
+    "olfactory receptor",
+    "ant genetics",
+    "Ooceraea biroi",
+    "Harpegnathos saltator",
+    "social behavior",
+    "pheromone",
+    "gene knockout"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior.",
+    "Analysis of In this issue of..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_TwoLineages"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

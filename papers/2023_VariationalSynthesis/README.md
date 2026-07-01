@@ -17,12 +17,13 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc
 
 ## Artifacts
 

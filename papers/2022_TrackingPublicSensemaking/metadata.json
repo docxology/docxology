@@ -54,5 +54,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-05-30T18:56:28Z"
+  "checked_at": "2026-05-30T18:56:28Z",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "Political polarization and declining trust in institutions are driving societal destabilization and radicalization.",
+    "Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ]
 }

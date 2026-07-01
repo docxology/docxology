@@ -19,18 +19,23 @@ This work addresses topics in **Active Inference**: CanonicalNeuralNetworks.
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J.
+- Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context.
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2020_BehaviorEngineering](../2020_BehaviorEngineering/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)
 
 ## Validation
 

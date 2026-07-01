@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
+- Identifies findings: BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship., The framework models organizations as biological-inspired adaptive systems, using active i...
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_MVEE](../2018_MVEE/)
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)

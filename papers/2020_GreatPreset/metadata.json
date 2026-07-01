@@ -1,0 +1,49 @@
+{
+  "title": "GreatPreset",
+  "domain": "Cognitive Security",
+  "type": "Book",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inferen...",
+  "abstract": "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inference, narrative ecosystems, and information theory, the paper explores how large-scale narrative shifts can either empower or disempower individuals and communities in their sensemaking processes.",
+  "keywords": [
+    "cognitive security",
+    "narrative ecosystems",
+    "Great Reset",
+    "sensemaking",
+    "Active Inference",
+    "information theory",
+    "socioeconomic narratives"
+  ],
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior.",
+    "Through the lens of Active Inferen..."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_InfiniteGamesInfinite"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

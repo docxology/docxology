@@ -48,5 +48,33 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:24:44Z"
+  "checked_at": "2026-06-30T23:24:44Z",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and "
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_GreatPreset",
+    "2020_InfiniteGamesInfinite"
+  ]
 }

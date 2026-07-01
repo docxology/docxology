@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after re
+- The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and the sourc
 
 ## Artifacts
 

@@ -53,5 +53,37 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-07-01T00:30:10Z"
+  "checked_at": "2026-07-01T00:30:10Z",
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "<p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category",
+    "The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and co"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/grateful_data"
+  ]
 }

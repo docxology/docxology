@@ -56,5 +56,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:24:50Z"
+  "checked_at": "2026-06-30T23:24:50Z",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking.",
+    "We address the need for synthesis among knowledge management, information management..."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ]
 }

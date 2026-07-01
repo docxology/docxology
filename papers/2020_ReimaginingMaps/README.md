@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus.
+- The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design.
 
 ## Artifacts
 

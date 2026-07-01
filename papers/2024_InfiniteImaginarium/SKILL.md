@@ -18,18 +18,23 @@ This work addresses topics in **Art & Synergetics**: epistemic tempos, knowledge
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration.
+- Analysis of The work...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_PPPiP](../2018_PPPiP/)
+- [2022_MirrorTest](../2022_MirrorTest/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)
 
 ## Validation
 

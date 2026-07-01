@@ -18,19 +18,23 @@ This work addresses topics in **Art & Synergetics**: mirror test, predictive pro
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition.
+- We hypothesize that a 'reflection prediction' may explain mirror self-r...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_PPPiP](../2018_PPPiP/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)
+- [2024_CurioCards](../2024_CurioCards/)
 
 ## Validation
 

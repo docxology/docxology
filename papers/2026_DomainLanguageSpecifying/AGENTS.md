@@ -14,8 +14,13 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Identifies findings: This paper describes a small, tested domain language for specifying
+controlled methods — the methods-paper exemplar of the
+Research Project Template (https://github.com/docxology/template)., Unlike a
+results paper, this manuscript's subject is the methodology itself: a
+controlled vocabulary, a unit system with dimensional safety, four staged
+validation gates, and a deterministic compiler,
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +42,13 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
+
+### Related Software
+- https://github.com/docxology/template_methods_paper

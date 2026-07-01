@@ -70,5 +70,37 @@
   "pairing_evidence": [
     "github_release_mentions_doi",
     "github_repo_self_linked"
+  ],
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "<p>DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine.",
+    "A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model."
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/democreate"
   ]
 }

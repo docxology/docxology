@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents.
+- Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be...
 
 ## Artifacts
 

@@ -1,0 +1,62 @@
+{
+  "title": "ActiveInferants",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Alexander Tschantz"
+    },
+    {
+      "name": "Maxwell J.D. Ramstead"
+    },
+    {
+      "name": "Karl Friston"
+    },
+    {
+      "name": "Axel Constant"
+    }
+  ],
+  "description": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi...",
+  "abstract": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze paradigm, illustrating the model's ability to recover basic colony phenomena such as trail formation aft",
+  "keywords": [
+    "active inference",
+    "ant foraging",
+    "Markov decision process",
+    "stigmergy",
+    "T-maze",
+    "collective behavior",
+    "behavioral modeling",
+    "eco-evo-devo"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments.",
+    "Active inference is a multiscale approach to behavi..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

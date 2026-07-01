@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Free energy minimization, Generative modeling and simulation, Bayesian inference and belief updating
+- Identifies findings: Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales., This paper proposes frameworks for conn...
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)
+- [2021_Transcript](../2021_Transcript/)

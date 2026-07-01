@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Community coordination and governance, Open science infrastructure development, Educational program design
+- Identifies findings: An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community., The institute serves as a hub for Active Inference research, education...
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2022_ActiveDiffusion](../2022_ActiveDiffusion/)
+- [2024_AII_v2](../2024_AII_v2/)
+- [2024_OntologySUMO](../2024_OntologySUMO/)

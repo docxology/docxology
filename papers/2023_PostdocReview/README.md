@@ -16,13 +16,14 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci
 
 ## Artifacts
 

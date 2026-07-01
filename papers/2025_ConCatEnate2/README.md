@@ -16,8 +16,10 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 

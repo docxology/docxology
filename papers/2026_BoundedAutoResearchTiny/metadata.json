@@ -214,5 +214,37 @@
     "decision": "accept",
     "reviewed_at": "2026-06-04T22:32:27Z",
     "source": "data/paired-publication-decisions.json"
-  }
+  },
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastruct",
+    "The case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop."
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_autoresearch_project"
+  ]
 }

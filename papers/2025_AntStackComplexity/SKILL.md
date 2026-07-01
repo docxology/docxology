@@ -18,19 +18,23 @@ This work addresses topics in **Entomology**: AntStack, complexity science, info
 
 Primary methods and techniques applied in this work:
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization.
+- We connect concepts from information theory, complex adaptive systems, and...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2016_AntGenetics](../2016_AntGenetics/)
+- [2016_ForagingGene](../2016_ForagingGene/)
+- [2017_MutAnts](../2017_MutAnts/)
 
 ## Validation
 

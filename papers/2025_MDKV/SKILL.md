@@ -18,18 +18,23 @@ This work addresses topics in **Computational**: MDKV, Markdown, key-value forma
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents.
+- Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis, Historical interpretation, Conceptual synthesis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Identifies findings: QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework., The paper introduces a 4D namespace fr...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2018_PPPiP](../2018_PPPiP/)
+- [2022_MirrorTest](../2022_MirrorTest/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)

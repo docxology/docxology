@@ -17,12 +17,13 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management
 
 ## Artifacts
 

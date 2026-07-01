@@ -33,5 +33,33 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:26:06Z"
+  "checked_at": "2026-06-30T23:26:06Z",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ]
 }

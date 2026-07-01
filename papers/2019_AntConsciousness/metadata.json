@@ -1,0 +1,52 @@
+{
+  "title": "AntConsciousness",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Eirik Søvik"
+    }
+  ],
+  "description": "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...",
+  "abstract": "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general.",
+  "keywords": [
+    "consciousness",
+    "ant colony",
+    "Ant Colony Test",
+    "philosophy of science",
+    "social insects",
+    "collective cognition",
+    "scientific theories of consciousness"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Here we address the scientific study of consciousness by proposing the ant colony as a model system.",
+    "We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

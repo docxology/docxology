@@ -78,5 +78,34 @@
     "decision": "accept",
     "reviewed_at": "2026-06-04T22:32:27Z",
     "source": "data/paired-publication-decisions.json"
-  }
+  },
+  "domain": "Active Inference",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "Transcript from livestream on July 25, 2023 at the Active Inference Institute.",
+    "YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu"
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ]
 }

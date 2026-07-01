@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse.
+- Analysis of We prov...
 
 ## Artifacts
 

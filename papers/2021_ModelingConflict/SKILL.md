@@ -19,18 +19,21 @@ This work addresses topics in **Active Inference**: Active Inference, conflict m
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2020_BehaviorEngineering](../2020_BehaviorEngineering/)
+- [2021_Transcript](../2021_Transcript/)
 
 ## Validation
 

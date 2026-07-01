@@ -1,0 +1,80 @@
+{
+  "title": "FederatedInference",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Karl J. Friston"
+    },
+    {
+      "name": "Thomas Parr"
+    },
+    {
+      "name": "Conor Heins"
+    },
+    {
+      "name": "Axel Constant"
+    },
+    {
+      "name": "Daniel Friedman"
+    },
+    {
+      "name": "Takuya Isomura"
+    },
+    {
+      "name": "Chris Fields"
+    },
+    {
+      "name": "Tim Verbelen"
+    },
+    {
+      "name": "Maxwell Ramstead"
+    },
+    {
+      "name": "John Clippinger"
+    },
+    {
+      "name": "Christopher D. Frith"
+    }
+  ],
+  "description": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generati...",
+  "abstract": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while enabling collective cognition. This speaks to multi-scale inference architectures and distributed deci",
+  "keywords": [
+    "federated inference",
+    "belief sharing",
+    "Active Inference",
+    "distributed intelligence",
+    "multi-agent systems",
+    "message passing",
+    "collective cognition",
+    "privacy-preserving inference"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence.",
+    "By extending Active Inference to multi-agent settings, agents maintain local generati..."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

@@ -16,13 +16,14 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection.
 
 ## Artifacts
 

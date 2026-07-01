@@ -1,0 +1,48 @@
+{
+  "title": "PaleolithicRockstars",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman"
+    }
+  ],
+  "description": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv...",
+  "abstract": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitive capabilities and their connection to modern theories of consciousness and aesthetic experience.",
+  "keywords": [
+    "Paleolithic art",
+    "cave paintings",
+    "cognitive evolution",
+    "consciousness",
+    "aesthetic experience",
+    "rock art"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.",
+    "The work examines cave paintings and rock art as evidence of early human cognitiv..."
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2015_HoneyBeeEvolution"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Previous work has found that workers of similar genotype adopt different behavioural phenotypes.
+- Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...
 
 ## Artifacts
 

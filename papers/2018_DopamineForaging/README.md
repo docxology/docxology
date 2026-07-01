@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Individual behavioral variation within colonies is shaped by neurochemical signaling.
+- Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa.
 
 ## Artifacts
 

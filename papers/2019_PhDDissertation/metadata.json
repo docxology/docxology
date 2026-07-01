@@ -1,0 +1,51 @@
+{
+  "title": "PhDDissertation",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman"
+    }
+  ],
+  "description": "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neuroche...",
+  "abstract": "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neurochemistry, gene expression analysis, and theoretical frameworks to understand how colony-level collective behavior emerges from individual-level variation. The work examines the foraging gene, dopaminergic signaling, desiccation physiology, and RNA-Seq transcriptomics across multiple ant colonies in na",
+  "keywords": [
+    "PhD dissertation",
+    "Pogonomyrmex barbatus",
+    "collective behavior",
+    "transcriptomics",
+    "behavioral ecology",
+    "foraging gene",
+    "dopamine",
+    "colony variation",
+    "Stanford University"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus).",
+    "It integrates field behavioral ecology, neuroche..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

@@ -1,0 +1,52 @@
+{
+  "title": "BlattodeaDiversity",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "et al."
+    }
+  ],
+  "description": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W...",
+  "abstract": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. We review current understanding of blattodean taxonomy, behavior, ecology, and the evolutionary transition from solitary cockroaches to eusocial termites.",
+  "keywords": [
+    "Blattodea",
+    "cockroach diversity",
+    "termites",
+    "insect ecology",
+    "eusociality",
+    "taxonomy",
+    "evolutionary biology"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology.",
+    "Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

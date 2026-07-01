@@ -52,5 +52,37 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-07-01T00:30:09Z"
+  "checked_at": "2026-07-01T00:30:09Z",
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper describes a small, tested domain language for specifying\ncontrolled methods — the methods-paper exemplar of the\nResearch Project Template (https://github.com/docxology/template).",
+    "Unlike a\nresults paper, this manuscript's subject is the methodology itself: a\ncontrolled vocabulary, a unit system with dimensional safety, four staged\nvalidation gates, and a deterministic compiler,"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_methods_paper"
+  ]
 }

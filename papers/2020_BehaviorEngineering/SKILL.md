@@ -18,18 +18,23 @@ This work addresses topics in **Active Inference**: behavior engineering, system
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales.
+- This paper proposes frameworks for conn...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)
+- [2021_Transcript](../2021_Transcript/)
 
 ## Validation
 

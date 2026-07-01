@@ -41,5 +41,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-05-30T18:56:33Z"
+  "checked_at": "2026-05-30T18:56:33Z",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit.",
+    "The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or oppo"
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ]
 }

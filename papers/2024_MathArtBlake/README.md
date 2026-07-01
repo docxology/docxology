@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This work explores the intersection of mathematics, art, and William Blake's prophetic vision.
+- Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte...
 
 ## Artifacts
 

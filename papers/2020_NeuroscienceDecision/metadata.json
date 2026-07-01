@@ -1,0 +1,55 @@
+{
+  "title": "NeuroscienceDecision",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Timothy Hanks"
+    },
+    {
+      "name": "Alexandra Mikhailova"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have hel...",
+  "abstract": "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an integrative approach drawing on multiple types of experiments and model systems.",
+  "keywords": [
+    "decision making",
+    "computational neuroscience",
+    "Bayesian brain",
+    "free will",
+    "mental health",
+    "attention",
+    "neural circuits"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career.",
+    "Hanks explores how ideas from computational neuroscience have hel..."
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2015_HoneyBeeEvolution"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

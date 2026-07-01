@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Generative modeling, Bayesian inference
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Multimedia content production, Pedagogical framework design, Public communication of science
+- Identifies findings: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels?, This presentation introduces the Multilevel Variational Ecology and Evolution (MVE...
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)
+- [2024_BioFirm](../2024_BioFirm/)

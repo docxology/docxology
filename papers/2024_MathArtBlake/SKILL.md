@@ -18,19 +18,23 @@ This work addresses topics in **Presentations & Media**: William Blake, mathemat
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This work explores the intersection of mathematics, art, and William Blake's prophetic vision.
+- Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_MVEE](../2018_MVEE/)
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)
 
 ## Validation
 

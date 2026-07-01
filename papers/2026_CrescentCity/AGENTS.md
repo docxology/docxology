@@ -14,8 +14,9 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Narrative analysis and discourse mapping, Misinformation detection frameworks, Trust and integrity modeling
+- Identifies findings: <div>
+<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; wher, The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; 
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +38,13 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
+
+### Related Software
+- https://github.com/docxology/crescent_city

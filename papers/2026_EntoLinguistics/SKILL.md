@@ -18,19 +18,22 @@ This work addresses topics in **Entomology**: entomology, scientific communicati
 
 Primary methods and techniques applied in this work:
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology.
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2016_AntGenetics](../2016_AntGenetics/)
+- [2016_ForagingGene](../2016_ForagingGene/)
+- [2017_MutAnts](../2017_MutAnts/)
 
 ## Validation
 

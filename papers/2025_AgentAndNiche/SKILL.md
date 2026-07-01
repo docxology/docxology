@@ -18,19 +18,22 @@ This work addresses topics in **Art & Synergetics**: William Blake, Marriage of 
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_PPPiP](../2018_PPPiP/)
+- [2022_MirrorTest](../2022_MirrorTest/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)
 
 ## Validation
 

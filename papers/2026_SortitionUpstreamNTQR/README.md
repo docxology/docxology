@@ -20,12 +20,18 @@ judgments can be evaluated blind: given the agreement/disagreement pattern among
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- How should you choose the judges, jurors, or reviewers who form a panel — and does
+that upstream choice change how well you can evaluate them without an answer key?
+- A panel can be selected many ways — by competence, by a representative lottery
+(sortition), by ideological bloc, or at random — and, separately, its noisy
+judgments can be evaluated blind: given the a
 
 ## Artifacts
 

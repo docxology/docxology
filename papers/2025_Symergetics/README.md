@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Visual analysis
-- Historical interpretation
-- Conceptual synthesis
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics.
+- Analysis of The package implemen...
 
 ## Artifacts
 

@@ -18,18 +18,23 @@ This work addresses topics in **Cognitive Security**: Hypercerts, DeSci, decentr
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci).
+- Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
 
 ## Validation
 

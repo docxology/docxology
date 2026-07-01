@@ -19,19 +19,23 @@ This work addresses topics in **Computational**: William Blake, digital humaniti
 
 Primary methods and techniques applied in this work:
 
-- Visual analysis
-- Historical interpretation
-- Conceptual synthesis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source
+- This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle.
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

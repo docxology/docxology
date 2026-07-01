@@ -36,5 +36,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:26:09Z"
+  "checked_at": "2026-06-30T23:26:09Z",
+  "domain": "Art & Synergetics",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Visual analysis and iconographic interpretation",
+      "description": "Applied visual analysis and iconographic interpretation methodology"
+    },
+    {
+      "name": "Historical and conceptual synthesis",
+      "description": "Applied historical and conceptual synthesis methodology"
+    },
+    {
+      "name": "Cross-domain pattern mapping",
+      "description": "Applied cross-domain pattern mapping methodology"
+    },
+    {
+      "name": "Symbolic and metaphorical analysis",
+      "description": "Applied symbolic and metaphorical analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference.",
+    "The paper develops a 'Thematic Atl..."
+  ],
+  "related_papers": [
+    "2018_PPPiP",
+    "2022_MirrorTest",
+    "2023_BlakeFuller"
+  ]
 }

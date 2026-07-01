@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims.
+- Built on feedback from dozens of experts across fields submitted to the University...
 
 ## Artifacts
 

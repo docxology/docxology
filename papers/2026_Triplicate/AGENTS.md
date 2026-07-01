@@ -14,8 +14,11 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Identifies findings: We present template_newspaper, a pure-Python engine that renders a complete
+twelve-page, large-format newspaper to a print-ready PDF from structured YAML
+content., The exemplar edition is The Triplicate, a homage to the historic
+newspaper of Crescent City, California (founded 1879).
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +40,13 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
+
+### Related Software
+- https://github.com/docxology/template_newspaper

@@ -18,19 +18,23 @@ This work addresses topics in **Entomology**: honey bees, Apis mellifera, gene e
 
 Primary methods and techniques applied in this work:
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology.
+- We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2016_AntGenetics](../2016_AntGenetics/)
+- [2016_ForagingGene](../2016_ForagingGene/)
+- [2017_MutAnts](../2017_MutAnts/)
 
 ## Validation
 

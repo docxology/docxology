@@ -1,0 +1,55 @@
+{
+  "title": "DennettExplained",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel Dennett"
+    },
+    {
+      "name": "Brendan Fleig-Goldstein"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philos...",
+  "abstract": "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philosophers have the ability to criticize and contribute to the science of the mind, and speaks to the virtues of cross-disciplinary glances and hybrid vigor. He discusses potential scientific and therapeutic value of psychoactive substances within proper settings.",
+  "keywords": [
+    "consciousness",
+    "philosophy of mind",
+    "Daniel Dennett",
+    "cognitive science",
+    "psychedelics",
+    "predictive processing",
+    "altered states"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens.",
+    "Analysis of Dennett argues that philos..."
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2015_HoneyBeeEvolution"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

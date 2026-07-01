@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data.
+- We develop a Digital Rhetorical Ecosystem three-tiered model...
 
 ## Artifacts
 

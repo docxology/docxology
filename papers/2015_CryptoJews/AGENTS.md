@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic sequencing, Phylogenetic analysis, Statistical genetics
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Genomic sequencing and bioinformatics, Phylogenetic and evolutionary analysis, Statistical genetics and heritability estimation
+- Identifies findings: Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2015_EhrlichialInfection](../2015_EhrlichialInfection/)
+- [2015_HoneyBeeEvolution](../2015_HoneyBeeEvolution/)
+- [2016_NuclearStructure](../2016_NuclearStructure/)

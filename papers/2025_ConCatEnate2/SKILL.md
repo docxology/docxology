@@ -19,8 +19,10 @@ This work addresses topics in **Genetics & Biomedical**: ConCatEnate2.
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
@@ -30,7 +32,9 @@ Core contributions and results:
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2015_CryptoJews](../2015_CryptoJews/)
+- [2015_EhrlichialInfection](../2015_EhrlichialInfection/)
+- [2015_HoneyBeeEvolution](../2015_HoneyBeeEvolution/)
 
 ## Validation
 

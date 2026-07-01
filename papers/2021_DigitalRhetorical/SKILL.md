@@ -18,19 +18,23 @@ This work addresses topics in **Cognitive Security**: digital rhetoric, image me
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data.
+- We develop a Digital Rhetorical Ecosystem three-tiered model...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
 
 ## Validation
 

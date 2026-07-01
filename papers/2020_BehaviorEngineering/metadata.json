@@ -57,5 +57,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:24:41Z"
+  "checked_at": "2026-06-30T23:24:41Z",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales.",
+    "This paper proposes frameworks for conn..."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2021_ModelingConflict",
+    "2021_Transcript"
+  ]
 }

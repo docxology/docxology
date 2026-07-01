@@ -63,5 +63,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:25:24Z"
+  "checked_at": "2026-06-30T23:25:24Z",
+  "domain": "Presentations & Media",
+  "type": "Presentation",
+  "methods": [
+    {
+      "name": "Multimedia content production",
+      "description": "Applied multimedia content production methodology"
+    },
+    {
+      "name": "Pedagogical framework design",
+      "description": "Applied pedagogical framework design methodology"
+    },
+    {
+      "name": "Public communication of science",
+      "description": "Applied public communication of science methodology"
+    },
+    {
+      "name": "Cross-platform media distribution",
+      "description": "Applied cross-platform media distribution methodology"
+    }
+  ],
+  "key_findings": [
+    "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship.",
+    "The framework models organizations as biological-inspired adaptive systems, using active i..."
+  ],
+  "related_papers": [
+    "2018_MVEE",
+    "2023_AntsAging",
+    "2023_PostdocReview"
+  ]
 }

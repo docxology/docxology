@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition.
+- We hypothesize that a 'reflection prediction' may explain mirror self-r...
 
 ## Artifacts
 

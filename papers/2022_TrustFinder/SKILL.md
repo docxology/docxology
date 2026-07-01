@@ -18,19 +18,23 @@ This work addresses topics in **Cognitive Security**: TrustFinder, trust systems
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims.
+- Built on feedback from dozens of experts across fields submitted to the University...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
 
 ## Validation
 

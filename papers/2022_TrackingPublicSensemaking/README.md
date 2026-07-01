@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Political polarization and declining trust in institutions are driving societal destabilization and radicalization.
+- Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use.
 
 ## Artifacts
 

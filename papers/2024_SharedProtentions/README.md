@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.
+- Protentions are future-directed expectations that shape perception and action; here we formaliz...
 
 ## Artifacts
 

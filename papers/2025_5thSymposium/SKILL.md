@@ -18,19 +18,22 @@ This work addresses topics in **Presentations & Media**: Active Inference sympos
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_MVEE](../2018_MVEE/)
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)
 
 ## Validation
 

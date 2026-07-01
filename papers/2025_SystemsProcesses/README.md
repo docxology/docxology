@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks.
+- The work discusses how systems science concepts connect to and...
 
 ## Artifacts
 

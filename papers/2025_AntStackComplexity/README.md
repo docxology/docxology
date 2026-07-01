@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization.
+- We connect concepts from information theory, complex adaptive systems, and...
 
 ## Artifacts
 

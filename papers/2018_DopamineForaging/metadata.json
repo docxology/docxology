@@ -1,0 +1,56 @@
+{
+  "title": "DopamineForaging",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Annette Pilko"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    }
+  ],
+  "description": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate...",
+  "abstract": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that experimental manipulation of dopamine signaling alters the propensity of workers to leave the nest and forag",
+  "keywords": [
+    "dopamine",
+    "foraging behavior",
+    "Pogonomyrmex barbatus",
+    "neuromodulation",
+    "task allocation",
+    "behavioral pharmacology",
+    "biogenic amines",
+    "harvester ants"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Individual behavioral variation within colonies is shaped by neurochemical signaling.",
+    "Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

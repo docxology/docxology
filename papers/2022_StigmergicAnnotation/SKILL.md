@@ -18,18 +18,22 @@ This work addresses topics in **Cognitive Security**: stigmergic annotation, ope
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
 
 ## Validation
 
@@ -38,7 +42,7 @@ Verification points for this work:
 - DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: unknown
+- Last checked: 2026-07-01T20:50:01Z
 
 ## Prerequisites
 

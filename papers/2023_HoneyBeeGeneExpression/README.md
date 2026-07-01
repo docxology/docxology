@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology.
+- We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel...
 
 ## Artifacts
 

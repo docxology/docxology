@@ -18,19 +18,23 @@ This work addresses topics in **Presentations & Media**: MVEE, evolutionary theo
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels?
+- This presentation introduces the Multilevel Variational Ecology and Evolution (MVE...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)
+- [2024_BioFirm](../2024_BioFirm/)
 
 ## Validation
 

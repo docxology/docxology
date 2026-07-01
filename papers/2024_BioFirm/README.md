@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship.
+- The framework models organizations as biological-inspired adaptive systems, using active i...
 
 ## Artifacts
 

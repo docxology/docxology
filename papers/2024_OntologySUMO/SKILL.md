@@ -18,19 +18,23 @@ This work addresses topics in **AII Ecosystem**: ontology alignment, SUMO, Activ
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Community coordination and governance
+- Open science infrastructure development
+- Educational program design
+- Inter-organizational collaboration
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities.
+- For a subset of Active Inference terms, we identify published SUMO files likely to cont...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2022_ActiveDiffusion](../2022_ActiveDiffusion/)
+- [2023_AII_v1](../2023_AII_v1/)
+- [2024_AII_v2](../2024_AII_v2/)
 
 ## Validation
 

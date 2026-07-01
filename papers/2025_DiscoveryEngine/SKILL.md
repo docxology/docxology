@@ -18,19 +18,23 @@ This work addresses topics in **Computational**: Discovery Engine, automated dis
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.
+- The system models the scientific discovery process as an inference problem...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 
@@ -39,7 +43,7 @@ Verification points for this work:
 - DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: unknown
+- Last checked: 2026-07-01T20:50:01Z
 
 ## Prerequisites
 

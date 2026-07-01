@@ -1,0 +1,53 @@
+{
+  "title": "NuclearStructure",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Daniel F. Pilch"
+    }
+  ],
+  "description": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec...",
+  "abstract": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromoso",
+  "keywords": [
+    "Hi-C",
+    "chromosome conformation",
+    "radiation biology",
+    "chromatin architecture",
+    "DNA damage",
+    "topologically associating domains",
+    "nuclear organization",
+    "3C technologies"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.",
+    "Chromosome conformation capture (3C) tec..."
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2015_HoneyBeeEvolution"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

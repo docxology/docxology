@@ -18,19 +18,23 @@ This work addresses topics in **Cognitive Security**: cognitive security, narrat
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior.
+- Through the lens of Active Inferen...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_InfiniteGamesInfinite](../2020_InfiniteGamesInfinite/)
 
 ## Validation
 
@@ -39,7 +43,7 @@ Verification points for this work:
 - DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: unknown
+- Last checked: 2026-07-01T20:50:01Z
 
 ## Prerequisites
 

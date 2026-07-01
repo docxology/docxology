@@ -52,5 +52,37 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-07-01T00:30:08Z"
+  "checked_at": "2026-07-01T00:30:08Z",
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "Exploratory data analysis (EDA) is the most common entry point in applied\nresearch, yet it is also where reproducibility most often breaks down: logic\naccumulates in notebook cells that are never test",
+    "This paper presents the computational-notebook\nexemplar of the Research Project Template (https://github.com/docxology/template):\nan interactive walkthrough notebook\n(projects/templates/template_eda_n"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_eda_notebook"
+  ]
 }

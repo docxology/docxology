@@ -57,5 +57,37 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-07-01T00:30:10Z"
+  "checked_at": "2026-07-01T00:30:10Z",
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "How should you choose the judges, jurors, or reviewers who form a panel — and does\nthat upstream choice change how well you can evaluate them without an answer key?",
+    "A panel can be selected many ways — by competence, by a representative lottery\n(sortition), by ideological bloc, or at random — and, separately, its noisy\njudgments can be evaluated blind: given the a"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/ntqr_allotment"
+  ]
 }

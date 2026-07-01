@@ -59,5 +59,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:25:35Z"
+  "checked_at": "2026-06-30T23:25:35Z",
+  "domain": "Presentations & Media",
+  "type": "Presentation",
+  "methods": [
+    {
+      "name": "Multimedia content production",
+      "description": "Applied multimedia content production methodology"
+    },
+    {
+      "name": "Pedagogical framework design",
+      "description": "Applied pedagogical framework design methodology"
+    },
+    {
+      "name": "Public communication of science",
+      "description": "Applied public communication of science methodology"
+    },
+    {
+      "name": "Cross-platform media distribution",
+      "description": "Applied cross-platform media distribution methodology"
+    }
+  ],
+  "key_findings": [
+    "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius.",
+    "The panel discusses decentralized sensemaking infrastructure, knowl..."
+  ],
+  "related_papers": [
+    "2018_MVEE",
+    "2023_AntsAging",
+    "2023_PostdocReview"
+  ]
 }

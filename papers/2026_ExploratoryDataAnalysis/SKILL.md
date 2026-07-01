@@ -19,18 +19,28 @@ This work addresses topics in **Computational**: exploratory data analysis, comp
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Exploratory data analysis (EDA) is the most common entry point in applied
+research, yet it is also where reproducibility most often breaks down: logic
+accumulates in notebook cells that are never test
+- This paper presents the computational-notebook
+exemplar of the Research Project Template (https://github.com/docxology/template):
+an interactive walkthrough notebook
+(projects/templates/template_eda_n
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

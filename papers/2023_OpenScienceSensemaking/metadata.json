@@ -1,0 +1,52 @@
+{
+  "title": "OpenScienceSensemaking",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Ronen Tamari"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem...",
+  "abstract": "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)—an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, ratings, and behavioral traces.",
+  "keywords": [
+    "OSSm",
+    "Open Science Sensemaking",
+    "scientific sensemaking",
+    "annotation networks",
+    "open access",
+    "decentralized",
+    "information overload"
+  ],
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute.",
+    "We contend that open access to diverse sources of scientific sensem..."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

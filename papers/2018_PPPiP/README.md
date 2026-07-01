@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Visual analysis
-- Historical interpretation
-- Conceptual synthesis
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Healthy romantic relationships contribute to human physical health and emotional well-being.
+- Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on...
 
 ## Artifacts
 

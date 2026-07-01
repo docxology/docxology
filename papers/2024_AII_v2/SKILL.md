@@ -18,19 +18,22 @@ This work addresses topics in **AII Ecosystem**: Active Inference Institute, org
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Community coordination and governance
+- Open science infrastructure development
+- Educational program design
+- Inter-organizational collaboration
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2022_ActiveDiffusion](../2022_ActiveDiffusion/)
+- [2023_AII_v1](../2023_AII_v1/)
+- [2024_OntologySUMO](../2024_OntologySUMO/)
 
 ## Validation
 

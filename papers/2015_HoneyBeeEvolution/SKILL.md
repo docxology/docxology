@@ -18,19 +18,23 @@ This work addresses topics in **Genetics & Biomedical**: honey bees, Apis mellif
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- A key question in evolutionary biology concerns how novel traits arise at the molecular level.
+- Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2015_CryptoJews](../2015_CryptoJews/)
+- [2015_EhrlichialInfection](../2015_EhrlichialInfection/)
+- [2016_NuclearStructure](../2016_NuclearStructure/)
 
 ## Validation
 
@@ -39,7 +43,7 @@ Verification points for this work:
 - DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: unknown
+- Last checked: 2026-07-01T20:50:01Z
 
 ## Prerequisites
 

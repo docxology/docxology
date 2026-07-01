@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels?
+- This presentation introduces the Multilevel Variational Ecology and Evolution (MVE...
 
 ## Artifacts
 

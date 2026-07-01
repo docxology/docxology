@@ -14,8 +14,11 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Deterministic software pipeline design, Reproducible workflow orchestration, Data-driven analysis and visualization
+- Identifies findings: How should you choose the judges, jurors, or reviewers who form a panel — and does
+that upstream choice change how well you can evaluate them without an answer key?, A panel can be selected many ways — by competence, by a representative lottery
+(sortition), by ideological bloc, or at random — and, separately, its noisy
+judgments can be evaluated blind: given the a
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +40,13 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
+
+### Related Software
+- https://github.com/docxology/ntqr_allotment

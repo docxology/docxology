@@ -1,0 +1,52 @@
+{
+  "title": "SinglePheromone",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Eric Saund"
+    },
+    {
+      "name": "Daniel Ari Friedman"
+    }
+  ],
+  "description": "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamic...",
+  "abstract": "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamics of pheromone deposition, evaporation, and ant behavioral responses to concentration gradients can produce the full range of observed foraging patterns with a simpler single-pheromone mechanism.",
+  "keywords": [
+    "pheromone",
+    "ant foraging",
+    "computational model",
+    "collective behavior",
+    "stigmergy",
+    "trail formation",
+    "parsimony"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones.",
+    "Our model demonstrates that the dynamic..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

@@ -1,0 +1,56 @@
+{
+  "title": "EhrlichialInfection",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Charles A. Kallick"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Mramba B.A. Nyindo"
+    }
+  ],
+  "description": "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment",
+  "abstract": "We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA s",
+  "keywords": [
+    "Ehrlichia",
+    "Anaplasma",
+    "leukemia",
+    "myelodysplastic syndromes",
+    "intracellular parasites",
+    "Rifampin",
+    "immune system dysfunction",
+    "bone marrow",
+    "autoimmune disorders"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_HoneyBeeEvolution",
+    "2016_NuclearStructure"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

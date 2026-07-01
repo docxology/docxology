@@ -1,0 +1,54 @@
+{
+  "title": "VideoEntomology",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Judith R. Wexler"
+    },
+    {
+      "name": "Sebastian Alvarado"
+    }
+  ],
+  "description": "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...",
+  "abstract": "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies, and novel experimental paradigms for studying insect behavior. We review current video methods, discuss their applications in entomological research, and identify future directions for video-enhanced insect science.",
+  "keywords": [
+    "video entomology",
+    "behavioral tracking",
+    "automated phenotyping",
+    "insect behavior",
+    "experimental methods",
+    "high-throughput analysis"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "We examine the transformative impact of video technology on experimental entomology.",
+    "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

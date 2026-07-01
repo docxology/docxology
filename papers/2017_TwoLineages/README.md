@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior.
+- In dependent-lineage species, queens must mate with males...
 
 ## Artifacts
 

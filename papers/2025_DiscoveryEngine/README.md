@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.
+- The system models the scientific discovery process as an inference problem...
 
 ## Artifacts
 

@@ -1,0 +1,56 @@
+{
+  "title": "GeneExpressionForagers",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Brian R. Johnson"
+    },
+    {
+      "name": "Timothy A. Linksvayer"
+    }
+  ],
+  "description": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar...",
+  "abstract": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify pathways related to sensory processing, metabolism, and neurochemical signaling that distinguish forag",
+  "keywords": [
+    "gene expression",
+    "foragers",
+    "RNA-Seq",
+    "division of labor",
+    "transcriptomics",
+    "harvester ants",
+    "behavioral castes",
+    "Pogonomyrmex barbatus"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects.",
+    "Here we characterize transcriptomic profiles of foragers compar..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

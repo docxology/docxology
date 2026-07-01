@@ -1,0 +1,66 @@
+{
+  "title": "ForagingGene",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Anna Pilko"
+    },
+    {
+      "name": "Doriane Skowronski"
+    },
+    {
+      "name": "Krista Kerber"
+    },
+    {
+      "name": "Noa Pinter-Wollman"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    }
+  ],
+  "description": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...",
+  "abstract": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from o",
+  "keywords": [
+    "foraging gene",
+    "Pogonomyrmex barbatus",
+    "harvester ants",
+    "gene expression",
+    "circadian rhythms",
+    "task allocation",
+    "division of labor",
+    "field study",
+    "behavioral ecology"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Previous work has found that workers of similar genotype adopt different behavioural phenotypes.",
+    "Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2017_MutAnts",
+    "2017_TwoLineages"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

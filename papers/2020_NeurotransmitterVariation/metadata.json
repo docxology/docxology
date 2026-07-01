@@ -1,0 +1,60 @@
+{
+  "title": "NeurotransmitterVariation",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Mimi Shin"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    },
+    {
+      "name": "B. Jill Venton"
+    }
+  ],
+  "description": "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...",
+  "abstract": "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and detect the amines. Overall, dopamine content was highest, followed by octopamine, serotonin, and tyra",
+  "keywords": [
+    "neurotransmitters",
+    "dopamine",
+    "serotonin",
+    "octopamine",
+    "tyramine",
+    "Pogonomyrmex barbatus",
+    "CE-FSCV",
+    "biogenic amines",
+    "colony variation"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions.",
+    "Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

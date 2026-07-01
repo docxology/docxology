@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual analysis, Historical interpretation, Conceptual synthesis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Visual analysis and iconographic interpretation, Historical and conceptual synthesis, Cross-domain pattern mapping
+- Identifies findings: Healthy romantic relationships contribute to human physical health and emotional well-being., Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2022_MirrorTest](../2022_MirrorTest/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)
+- [2024_CurioCards](../2024_CurioCards/)

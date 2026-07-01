@@ -1,0 +1,64 @@
+{
+  "title": "SharedProtentions",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Mahault Albarracin"
+    },
+    {
+      "name": "Riddhi J. Pitliya"
+    },
+    {
+      "name": "Toby St. Clere Smithe"
+    },
+    {
+      "name": "Daniel Ari Friedman"
+    },
+    {
+      "name": "Karl Friston"
+    },
+    {
+      "name": "Maxwell J.D. Ramstead"
+    }
+  ],
+  "description": "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz...",
+  "abstract": "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.",
+  "keywords": [
+    "shared protentions",
+    "multi-agent",
+    "Active Inference",
+    "anticipation",
+    "coupled generative models",
+    "coordination",
+    "predictive processing"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.",
+    "Protentions are future-directed expectations that shape perception and action; here we formaliz..."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

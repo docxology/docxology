@@ -19,18 +19,26 @@ This work addresses topics in **Computational**: newspaper layout, typography, r
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- We present template_newspaper, a pure-Python engine that renders a complete
+twelve-page, large-format newspaper to a print-ready PDF from structured YAML
+content.
+- The exemplar edition is The Triplicate, a homage to the historic
+newspaper of Crescent City, California (founded 1879).
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_NSFReporting](../2023_NSFReporting/)
+- [2023_NaturalAIBased](../2023_NaturalAIBased/)
+- [2025_AuBI](../2025_AuBI/)
 
 ## Validation
 

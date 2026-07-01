@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions.
+- Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...
 
 ## Artifacts
 

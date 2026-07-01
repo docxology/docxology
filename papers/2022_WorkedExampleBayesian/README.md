@@ -16,12 +16,14 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 
 
 ## Artifacts
 

@@ -184,5 +184,37 @@
     "decision": "accept",
     "reviewed_at": "2026-06-04T22:32:27Z",
     "source": "data/paired-publication-decisions.json"
-  }
+  },
+  "domain": "Computational",
+  "type": "Book",
+  "methods": [
+    {
+      "name": "Deterministic software pipeline design",
+      "description": "Applied deterministic software pipeline design methodology"
+    },
+    {
+      "name": "Reproducible workflow orchestration",
+      "description": "Applied reproducible workflow orchestration methodology"
+    },
+    {
+      "name": "Data-driven analysis and visualization",
+      "description": "Applied data-driven analysis and visualization methodology"
+    },
+    {
+      "name": "Infrastructure-as-code methodology",
+      "description": "Applied infrastructure-as-code methodology methodology"
+    }
+  ],
+  "key_findings": [
+    "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and",
+    "---\nAssociated artifacts\nGitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/205"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_textbook"
+  ]
 }

@@ -16,12 +16,15 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems.
+- GNN provides meta-notational tools for describing any symbolic...
 
 ## Artifacts
 

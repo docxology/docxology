@@ -18,19 +18,23 @@ This work addresses topics in **Presentations & Media**: systems processes, Acti
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks.
+- The work discusses how systems science concepts connect to and...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_MVEE](../2018_MVEE/)
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)
 
 ## Validation
 

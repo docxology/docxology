@@ -1,0 +1,53 @@
+{
+  "title": "GuidedTourMinds",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Ali Rahmjoo"
+    },
+    {
+      "name": "Daniel Ari Friedman"
+    }
+  ],
+  "description": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue...",
+  "abstract": "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology—based on particle dynamics and generative model structure—provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference provides a framework for measuring, modeling, and implementing such minds, while the FEP provides firs",
+  "keywords": [
+    "path integrals",
+    "particular kinds",
+    "mindspace",
+    "Active Inference",
+    "Free Energy Principle",
+    "consciousness",
+    "Sloman",
+    "non-anthropocentric",
+    "sentience taxonomy"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue"
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

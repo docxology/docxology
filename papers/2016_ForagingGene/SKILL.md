@@ -18,19 +18,23 @@ This work addresses topics in **Entomology**: foraging gene, Pogonomyrmex barbat
 
 Primary methods and techniques applied in this work:
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Previous work has found that workers of similar genotype adopt different behavioural phenotypes.
+- Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2016_AntGenetics](../2016_AntGenetics/)
+- [2017_MutAnts](../2017_MutAnts/)
+- [2017_TwoLineages](../2017_TwoLineages/)
 
 ## Validation
 
@@ -39,7 +43,7 @@ Verification points for this work:
 - DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: unknown
+- Last checked: 2026-07-01T20:50:01Z
 
 ## Prerequisites
 

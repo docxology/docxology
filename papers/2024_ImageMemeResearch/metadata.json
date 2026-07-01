@@ -1,0 +1,54 @@
+{
+  "title": "ImageMemeResearch",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "R.J. Cordes"
+    },
+    {
+      "name": "Mridula Mascarenhas"
+    }
+  ],
+  "description": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov...",
+  "abstract": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We provide frameworks for classifying meme content, tracking diffusion patterns, and assessing sensemaking impacts.",
+  "keywords": [
+    "image memes",
+    "meme research",
+    "digital communication",
+    "narrative analysis",
+    "rhetorical analysis",
+    "sensemaking"
+  ],
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse.",
+    "Analysis of We prov..."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

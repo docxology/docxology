@@ -18,19 +18,23 @@ This work addresses topics in **Art & Synergetics**: QuadMath, Quadray coordinat
 
 Primary methods and techniques applied in this work:
 
-- Visual analysis
-- Historical interpretation
-- Conceptual synthesis
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework.
+- The paper introduces a 4D namespace fr...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_PPPiP](../2018_PPPiP/)
+- [2022_MirrorTest](../2022_MirrorTest/)
+- [2023_BlakeFuller](../2023_BlakeFuller/)
 
 ## Validation
 

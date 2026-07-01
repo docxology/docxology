@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Free energy minimization
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena.
+- This paper argues that developing generative models is more li...
 
 ## Artifacts
 

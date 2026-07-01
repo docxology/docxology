@@ -42,5 +42,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:24:39Z"
+  "checked_at": "2026-06-30T23:24:39Z",
+  "domain": "Presentations & Media",
+  "type": "Presentation",
+  "methods": [
+    {
+      "name": "Multimedia content production",
+      "description": "Applied multimedia content production methodology"
+    },
+    {
+      "name": "Pedagogical framework design",
+      "description": "Applied pedagogical framework design methodology"
+    },
+    {
+      "name": "Public communication of science",
+      "description": "Applied public communication of science methodology"
+    },
+    {
+      "name": "Cross-platform media distribution",
+      "description": "Applied cross-platform media distribution methodology"
+    }
+  ],
+  "key_findings": [
+    "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels?",
+    "This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
+  ],
+  "related_papers": [
+    "2023_AntsAging",
+    "2023_PostdocReview",
+    "2024_BioFirm"
+  ]
 }

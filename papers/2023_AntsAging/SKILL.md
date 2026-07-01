@@ -18,19 +18,22 @@ This work addresses topics in **Presentations & Media**: ants, aging, senescence
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_MVEE](../2018_MVEE/)
+- [2023_PostdocReview](../2023_PostdocReview/)
+- [2024_BioFirm](../2024_BioFirm/)
 
 ## Validation
 

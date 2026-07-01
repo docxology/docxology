@@ -43,5 +43,37 @@
     "github_release_mentions_doi",
     "title_overlap"
   ],
-  "checked_at": "2026-06-04T20:45:04Z"
+  "checked_at": "2026-06-04T20:45:04Z",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "<p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a",
+    "Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "related_software": [
+    "ActiveInferenceInstitute/fep_lean"
+  ]
 }

@@ -1,0 +1,55 @@
+{
+  "title": "HoneyBeeEvolution",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Brian R. Johnson"
+    }
+  ],
+  "description": "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...",
+  "abstract": "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs), genes without homologs in related lineages. We find that honey-bee-specific novel tissues show sign",
+  "keywords": [
+    "honey bees",
+    "Apis mellifera",
+    "RNA-Seq",
+    "taxonomically restricted genes",
+    "novel traits",
+    "gene expression",
+    "evolutionary biology",
+    "royal jelly",
+    "beeswax",
+    "venom"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "A key question in evolutionary biology concerns how novel traits arise at the molecular level.",
+    "Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2016_NuclearStructure"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

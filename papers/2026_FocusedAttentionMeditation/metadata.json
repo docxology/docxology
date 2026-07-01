@@ -1,0 +1,57 @@
+{
+  "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "P. C. Kavi"
+    },
+    {
+      "name": "Daniel Ari Friedman"
+    },
+    {
+      "name": "G. Patow"
+    }
+  ],
+  "description": "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DMN suppression in expert meditators.",
+  "abstract": "We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF) implementations. Grounded in the Free Energy Principle and Neuronal Packet Hypothesis, we conceptualize meditation as a predictive processing system where “thoughtseeds”—transient, agent-like entities forming Markov blankets—minimize variational free energy via bidirectional coupling with attentional networks (DMN, VAN, DAN, FPN). Simulations across biologically plausible parameters reproduce expert–novice differences: 49% lower free energy during breath focus, suppressed DMN activity (0.18 vs. 0.31), and faster distraction recovery.",
+  "keywords": [
+    "Active Inference",
+    "focused attention meditation",
+    "thoughtseeds",
+    "Free Energy Principle",
+    "hierarchical modeling",
+    "expert-novice differences",
+    "DMN",
+    "precision weighting",
+    "Neuronal Packet Hypothesis",
+    "contemplative neuroscience"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DM"
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

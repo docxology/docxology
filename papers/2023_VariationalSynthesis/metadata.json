@@ -1,0 +1,67 @@
+{
+  "title": "VariationalSynthesis",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Karl Friston"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Axel Constant"
+    },
+    {
+      "name": "V. Bleu Knight"
+    },
+    {
+      "name": "Chris Fields"
+    },
+    {
+      "name": "Thomas Parr"
+    },
+    {
+      "name": "John O. Campbell"
+    }
+  ],
+  "description": "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc...",
+  "abstract": "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle.",
+  "keywords": [
+    "variational synthesis",
+    "natural selection",
+    "Free Energy Principle",
+    "Bayesian mechanics",
+    "path integral",
+    "evo-devo",
+    "adaptive fitness",
+    "particular partition"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization methodology"
+    },
+    {
+      "name": "Generative modeling and simulation",
+      "description": "Applied generative modeling and simulation methodology"
+    },
+    {
+      "name": "Bayesian inference and belief updating",
+      "description": "Applied bayesian inference and belief updating methodology"
+    },
+    {
+      "name": "Policy selection and expected free energy",
+      "description": "Applied policy selection and expected free energy methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc"
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

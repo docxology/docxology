@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Here we address the scientific study of consciousness by proposing the ant colony as a model system.
+- We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...
 
 ## Artifacts
 

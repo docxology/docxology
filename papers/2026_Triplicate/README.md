@@ -21,12 +21,18 @@ flowing column fr...
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We present template_newspaper, a pure-Python engine that renders a complete
+twelve-page, large-format newspaper to a print-ready PDF from structured YAML
+content.
+- The exemplar edition is The Triplicate, a homage to the historic
+newspaper of Crescent City, California (founded 1879).
 
 ## Artifacts
 

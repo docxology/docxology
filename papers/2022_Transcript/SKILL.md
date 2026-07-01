@@ -20,18 +20,22 @@ This work addresses topics in **Active Inference**: Active Inference, Consciousn
 Primary methods and techniques applied in this work:
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute.
+- The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_WoodliceAndMen](../2018_WoodliceAndMen/)
+- [2020_BehaviorEngineering](../2020_BehaviorEngineering/)
+- [2021_ModelingConflict](../2021_ModelingConflict/)
 
 ## Validation
 

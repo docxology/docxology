@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects.
+- Here we characterize transcriptomic profiles of foragers compar...
 
 ## Artifacts
 

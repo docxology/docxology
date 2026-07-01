@@ -1,0 +1,56 @@
+{
+  "title": "InformationCommons",
+  "domain": "Cognitive Security",
+  "type": "Book",
+  "creators": [
+    {
+      "name": "Scott David"
+    },
+    {
+      "name": "R.J. Cordes"
+    },
+    {
+      "name": "Daniel A. Friedman (editors)"
+    }
+  ],
+  "description": "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency...",
+  "abstract": "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency, and collective sensemaking through open standards, decentralized governance, and cognitive security principles.",
+  "keywords": [
+    "information commons",
+    "cognitive security",
+    "open standards",
+    "trust",
+    "governance",
+    "decentralized systems",
+    "information integrity",
+    "collective sensemaking"
+  ],
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "An edited volume examining open standards and cognitive security for structuring the information commons.",
+    "The book addresses how information ecosystems can be designed to promote trust, transparency..."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

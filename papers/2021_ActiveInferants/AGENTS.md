@@ -14,8 +14,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation, Population genetics analysis, Behavioral assays
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: Field observation and behavioral assays, Population genetics analysis, Transcriptomic and gene expression profiling
+- Identifies findings: In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments., Active inference is a multiscale approach to behavi...
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,3 +37,10 @@
 | 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
 | 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
 | 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2016_AntGenetics](../2016_AntGenetics/)
+- [2016_ForagingGene](../2016_ForagingGene/)
+- [2017_MutAnts](../2017_MutAnts/)

@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Visual analysis and iconographic interpretation
+- Historical and conceptual synthesis
+- Cross-domain pattern mapping
+- Symbolic and metaphorical analysis
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology.
+- The paper identifies six structural convergences between Blake's prophetic...
 
 ## Artifacts
 

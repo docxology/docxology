@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
+- Field observation and behavioral assays
 - Population genetics analysis
-- Behavioral assays
+- Transcriptomic and gene expression profiling
+- Collective behavior modeling
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments.
+- Active inference is a multiscale approach to behavi...
 
 ## Artifacts
 

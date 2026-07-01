@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Visual analysis
-- Historical interpretation
-- Conceptual synthesis
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.
+- The work examines cave paintings and rock art as evidence of early human cognitiv...
 
 ## Artifacts
 

@@ -17,12 +17,13 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DM
 
 ## Artifacts
 

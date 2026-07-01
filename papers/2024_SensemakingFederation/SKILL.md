@@ -18,18 +18,23 @@ This work addresses topics in **Presentations & Media**: sensemaking federation,
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Multimedia content production
+- Pedagogical framework design
+- Public communication of science
+- Cross-platform media distribution
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius.
+- The panel discusses decentralized sensemaking infrastructure, knowl...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2018_MVEE](../2018_MVEE/)
+- [2023_AntsAging](../2023_AntsAging/)
+- [2023_PostdocReview](../2023_PostdocReview/)
 
 ## Validation
 

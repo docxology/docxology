@@ -105,5 +105,34 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:25:32Z"
+  "checked_at": "2026-06-30T23:25:32Z",
+  "domain": "AII Ecosystem",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Community coordination and governance",
+      "description": "Applied community coordination and governance methodology"
+    },
+    {
+      "name": "Open science infrastructure development",
+      "description": "Applied open science infrastructure development methodology"
+    },
+    {
+      "name": "Educational program design",
+      "description": "Applied educational program design methodology"
+    },
+    {
+      "name": "Inter-organizational collaboration",
+      "description": "Applied inter-organizational collaboration methodology"
+    }
+  ],
+  "key_findings": [
+    "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities.",
+    "For a subset of Active Inference terms, we identify published SUMO files likely to cont..."
+  ],
+  "related_papers": [
+    "2022_ActiveDiffusion",
+    "2023_AII_v1",
+    "2024_AII_v2"
+  ]
 }

@@ -1,0 +1,53 @@
+{
+  "title": "TwoLineages",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    }
+  ],
+  "description": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males...",
+  "abstract": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males from a different genetic lineage to produce workers, while same-lineage matings produce new queens. This unusual mating system creates colonies with complex genetic architectures that provide a natural experiment for studying the relationship between genotype and division of labor. We discuss how d",
+  "keywords": [
+    "dependent-lineage",
+    "mating systems",
+    "Pogonomyrmex",
+    "harvester ants",
+    "genetic caste determination",
+    "intragenomic conflict",
+    "colony organization",
+    "social evolution"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior.",
+    "In dependent-lineage species, queens must mate with males..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

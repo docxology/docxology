@@ -1,0 +1,53 @@
+{
+  "title": "ArgentineAnt",
+  "domain": "Entomology",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Deborah M. Gordon"
+    }
+  ],
+  "description": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the...",
+  "abstract": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggression, allowing colony fusion and supercolony formation. We review the sensory ecology of nestmate ",
+  "keywords": [
+    "Argentine ant",
+    "Linepithema humile",
+    "invasive species",
+    "supercolony",
+    "nestmate recognition",
+    "collective behavior",
+    "chemical ecology",
+    "cuticular hydrocarbons"
+  ],
+  "methods": [
+    {
+      "name": "Field observation and behavioral assays",
+      "description": "Applied field observation and behavioral assays methodology"
+    },
+    {
+      "name": "Population genetics analysis",
+      "description": "Applied population genetics analysis methodology"
+    },
+    {
+      "name": "Transcriptomic and gene expression profiling",
+      "description": "Applied transcriptomic and gene expression profiling methodology"
+    },
+    {
+      "name": "Collective behavior modeling",
+      "description": "Applied collective behavior modeling methodology"
+    }
+  ],
+  "key_findings": [
+    "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers.",
+    "Here we examine the relationship between the..."
+  ],
+  "related_papers": [
+    "2016_AntGenetics",
+    "2016_ForagingGene",
+    "2017_MutAnts"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

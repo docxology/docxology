@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- <p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key.
+- We test this end to end on real large language models.
 
 ## Artifacts
 

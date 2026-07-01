@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Community coordination and governance
+- Open science infrastructure development
+- Educational program design
+- Inter-organizational collaboration
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities.
+- For a subset of Active Inference terms, we identify published SUMO files likely to cont...
 
 ## Artifacts
 

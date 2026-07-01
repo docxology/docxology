@@ -16,13 +16,14 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
 
 ## Artifacts
 

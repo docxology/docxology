@@ -16,13 +16,15 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- A key question in evolutionary biology concerns how novel traits arise at the molecular level.
+- Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...
 
 ## Artifacts
 

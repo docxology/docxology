@@ -1,0 +1,56 @@
+{
+  "title": "NarrativeEcosystems",
+  "domain": "Cognitive Security",
+  "type": "Book",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "R.J. Cordes"
+    },
+    {
+      "name": "Virginia Bleu Knight"
+    }
+  ],
+  "description": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-...",
+  "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.",
+  "keywords": [
+    "narrative ecosystems",
+    "Active Inference",
+    "Remote Teams",
+    "ONFT framework",
+    "epistemic foraging",
+    "niche construction",
+    "collective intelligence",
+    "systems engineering"
+  ],
+  "methods": [
+    {
+      "name": "Narrative analysis and discourse mapping",
+      "description": "Applied narrative analysis and discourse mapping methodology"
+    },
+    {
+      "name": "Misinformation detection frameworks",
+      "description": "Applied misinformation detection frameworks methodology"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling methodology"
+    },
+    {
+      "name": "Cognitive defense pattern analysis",
+      "description": "Applied cognitive defense pattern analysis methodology"
+    }
+  ],
+  "key_findings": [
+    "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.",
+    "We explore communication in located teams and all-..."
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

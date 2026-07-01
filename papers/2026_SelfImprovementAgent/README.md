@@ -18,12 +18,15 @@ Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accu
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+- Deterministic software pipeline design
+- Reproducible workflow orchestration
+- Data-driven analysis and visualization
+- Infrastructure-as-code methodology
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .
+- The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps.
 
 ## Artifacts
 

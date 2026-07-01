@@ -18,19 +18,23 @@ This work addresses topics in **AII Ecosystem**: Active Diffusion, diffusion mod
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Community coordination and governance
+- Open science infrastructure development
+- Educational program design
+- Inter-organizational collaboration
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models.
+- Analysis of The project, f...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2023_AII_v1](../2023_AII_v1/)
+- [2024_AII_v2](../2024_AII_v2/)
+- [2024_OntologySUMO](../2024_OntologySUMO/)
 
 ## Validation
 

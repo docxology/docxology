@@ -16,13 +16,14 @@
 
 ## Methods
 
-- Genomic sequencing
-- Phylogenetic analysis
-- Statistical genetics
+- Genomic sequencing and bioinformatics
+- Phylogenetic and evolutionary analysis
+- Statistical genetics and heritability estimation
+- Molecular mechanism investigation
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities
 
 ## Artifacts
 

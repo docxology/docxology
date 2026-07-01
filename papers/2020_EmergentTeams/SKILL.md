@@ -18,18 +18,23 @@ This work addresses topics in **Cognitive Security**: emergent teams, operations
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+- Narrative analysis and discourse mapping
+- Misinformation detection frameworks
+- Trust and integrity modeling
+- Cognitive defense pattern analysis
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+- Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives.
+- This paper presents the Facilitator's Catechism, an operation...
 
 ## Related Works
 
-See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)
+- [2020_InfiniteGamesInfinite](../2020_InfiniteGamesInfinite/)
 
 ## Validation
 

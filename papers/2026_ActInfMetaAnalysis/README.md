@@ -17,12 +17,13 @@
 ## Methods
 
 - Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Generative modeling and simulation
+- Bayesian inference and belief updating
+- Policy selection and expected free energy
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+- Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture.
 
 ## Artifacts
 

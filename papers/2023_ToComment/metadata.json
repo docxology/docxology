@@ -1,0 +1,54 @@
+{
+  "title": "ToComment",
+  "domain": "Genetics & Biomedical",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Mridula Mascarenhas"
+    },
+    {
+      "name": "Richard J. Cordes"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    }
+  ],
+  "description": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze h...",
+  "abstract": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.",
+  "keywords": [
+    "rhetorical analysis",
+    "image memes",
+    "digital discourse",
+    "narrative ecosystems",
+    "DRE3 model",
+    "public sphere"
+  ],
+  "methods": [
+    {
+      "name": "Genomic sequencing and bioinformatics",
+      "description": "Applied genomic sequencing and bioinformatics methodology"
+    },
+    {
+      "name": "Phylogenetic and evolutionary analysis",
+      "description": "Applied phylogenetic and evolutionary analysis methodology"
+    },
+    {
+      "name": "Statistical genetics and heritability estimation",
+      "description": "Applied statistical genetics and heritability estimation methodology"
+    },
+    {
+      "name": "Molecular mechanism investigation",
+      "description": "Applied molecular mechanism investigation methodology"
+    }
+  ],
+  "key_findings": [
+    "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives.",
+    "Building on the DRE3 model, we analyze h..."
+  ],
+  "related_papers": [
+    "2015_CryptoJews",
+    "2015_EhrlichialInfection",
+    "2015_HoneyBeeEvolution"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}
