@@ -4,7 +4,11 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 
 | Artifact | Outputs | Sources | Rebuild command |
 | --- | --- | --- | --- |
-| Bibliography exports | `bibliography.bib`<br>`bibliography.csl.json`<br>`bibliography.ris`<br>`data/works.json` | `pages/BIBLIOGRAPHY.md`<br>`code/src/biblio_table.py` | `python3 code/orchestrators/export_bibliography.py` |
+| Paper folder doc regeneration | `papers/*/README.md` `papers/*/AGENTS.md` `papers/*/SKILL.md` | `papers/paper_metadata.json` `pages/BIBLIOGRAPHY.md` `papers/*/metadata.json` | `uv run python3 code/orchestrators/regenerate_docs.py --apply --force` |
+| Publications HTML sync | `publications.html` `data/publications-ld.json` | `pages/BIBLIOGRAPHY.md` `code/src/biblio_table.py` | `python3 code/orchestrators/sync_publications_html.py --apply` |
+| Metadata enrichment | `papers/*/metadata.json` | `papers/paper_metadata.json` `pages/BIBLIOGRAPHY.md` | `uv run python3 code/orchestrators/batch_enrich_metadata.py --apply` |
+| Metadata quality improvement | `papers/*/metadata.json` | `papers/*/metadata.json` | `uv run python3 code/orchestrators/improve_metadata_quality.py --apply` |
+| Bibliography exports | `bibliography.bib` `bibliography.csl.json` `bibliography.ris` `data/works.json` | `pages/BIBLIOGRAPHY.md` `code/src/biblio_table.py` | `python3 code/orchestrators/export_bibliography.py` |
 | Scholar metrics sync | `pages/BIBLIOGRAPHY.md (badge)`<br>`index.html (meta/og/stat/li)`<br>`pages/PROFILE.md (prose + metrics table)`<br>`pages/LINKS.md`<br>`publications.html (header metrics pill)` | `data/scholar-snapshot.json`<br>`code/orchestrators/sync_scholar_metrics.py` | `python3 code/orchestrators/sync_scholar_metrics.py` |
 | Current count report | `reports/current_counts.md`<br>`data/current-counts.json` | `pages/BIBLIOGRAPHY.md`<br>`papers/README.md`<br>`pages/SOFTWARE.md`<br>`data/works.json`<br>`data/software.json`<br>`data/github-repositories.json`<br>`reports/public_source_snapshot_*.json`<br>`reports/paired_publications_*.json` | `uv run python3 code/orchestrators/build_current_counts.py` |
 | Open Graph preview images | `og-*.jpg`<br>`data/og-image-counts.json` | `data/current-counts.json`<br>`code/orchestrators/generate_og_images.py` | `python3 code/orchestrators/generate_og_images.py` |
