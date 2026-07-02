@@ -149,7 +149,7 @@ def render_readme(rec: dict, meta: dict) -> str:
 
 {kw_line}
 
-## Publication Details
+## Artifacts
 
 | Field | Value |
 |------|-------|

@@ -14,7 +14,7 @@ A Source-Anchored Map of Entomological Law There is no statute, treatise, or law
 
 entomological law · legal entomology · forensic entomology · endangered species · invasive species · insect welfare · gene drive · biological weapons convention · reproducible legal scholarship
 
-## Publication Details
+## Artifacts
 
 | Field | Value |
 |------|-------|

@@ -540,7 +540,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
 
 {keywords}
 
-## Publication Details
+## Artifacts
 
 | Field | Value |
 |------|-------|
