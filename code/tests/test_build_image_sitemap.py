@@ -30,8 +30,9 @@ def test_image_sitemap_uses_deployed_image_sources():
     text = bis.OUT.read_text(encoding="utf-8")
     total = text.count("<image:loc>")
     flickr = text.count("<image:loc>https://live.staticflickr.com/")
-    assert flickr == total
-    assert "https://danielarifriedman.com/art/" not in text
+    local = text.count("<image:loc>https://danielarifriedman.com/art/")
+    assert flickr + local == total
+    assert local == 0
 
 
 def test_robots_references_image_sitemap():

@@ -20336,9 +20336,11 @@
       "date": "2018-09-12 09:02:27",
       "views": "1583",
       "media": "photo",
-      "thumb": "art/44588719682_Yinception.jpg",
+      "thumb": "https://live.staticflickr.com/1889/44588719682_bdd6b14547_b.jpg",
       "flickr_url": "https://www.flickr.com/photos/43693624@N07/44588719682",
-      "sizes": {}
+      "sizes": {
+        "Large": "https://live.staticflickr.com/1889/44588719682_bdd6b14547_b.jpg"
+      }
     },
     {
       "id": "43919997344",
@@ -25916,9 +25918,11 @@
       "date": "2017-12-27 10:59:44",
       "views": "2064",
       "media": "photo",
-      "thumb": "art/39336610901_Theory __ Practice.jpg",
+      "thumb": "https://live.staticflickr.com/4633/39336610901_375f1a9366_b.jpg",
       "flickr_url": "https://www.flickr.com/photos/43693624@N07/39336610901",
-      "sizes": {}
+      "sizes": {
+        "Large": "https://live.staticflickr.com/4633/39336610901_375f1a9366_b.jpg"
+      }
     },
     {
       "id": "27490793309",
@@ -30354,9 +30358,11 @@
       "date": "2017-09-07 11:58:43",
       "views": "1542",
       "media": "photo",
-      "thumb": "art/36692409970_Foraging _Foraging_ Foraging_ Foraging_.jpg",
+      "thumb": "https://live.staticflickr.com/4374/36692409970_1b18c23e70_b.jpg",
       "flickr_url": "https://www.flickr.com/photos/43693624@N07/36692409970",
-      "sizes": {}
+      "sizes": {
+        "Large": "https://live.staticflickr.com/4374/36692409970_1b18c23e70_b.jpg"
+      }
     },
     {
       "id": "36095287516",

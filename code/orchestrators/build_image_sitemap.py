@@ -5,11 +5,11 @@ The gallery (art.html) presents 900+ pen-and-ink drawings. The page is rendered
 client-side from data/artworks.json, so the images are not visible to crawlers in
 the static HTML. This sitemap declares each artwork image explicitly so Google
 Images can discover them through the source Flickr URLs already recorded in the
-gallery data. The repository retains local archival copies under /art/, but the
-GitHub Pages deployment intentionally excludes that large mirror.
+gallery data. A few records only have local fallback thumbnails; those are kept
+under /art/ and emitted only when no direct Flickr image URL exists.
 
 Outputs: sitemap-images.xml
-Sources: data/artworks.json
+Sources: data/artworks.json, local fallback files under art/
 Rebuild: python3 code/orchestrators/build_image_sitemap.py   (--check to verify)
 """
 
@@ -90,8 +90,13 @@ def _absolutize(loc: str | None) -> str | None:
 
 
 def image_loc(art: dict, local: dict[str, str]) -> str | None:
-    _ = local
-    return _absolutize(best_flickr_url(art))
+    remote = _absolutize(best_flickr_url(art))
+    if remote:
+        return remote
+    fname = local.get(str(art.get("id")))
+    if fname:
+        return SITE + "art/" + quote(fname)
+    return None
 
 
 def render(artworks: list[dict], local: dict[str, str]) -> str:
