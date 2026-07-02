@@ -4,12 +4,12 @@
 The gallery (art.html) presents 900+ pen-and-ink drawings. The page is rendered
 client-side from data/artworks.json, so the images are not visible to crawlers in
 the static HTML. This sitemap declares each artwork image explicitly so Google
-Images can discover them, preferring the same-domain copies served from /art/
-(stronger ownership signal) and falling back to the source Flickr URL when no
-local file is present.
+Images can discover them through the source Flickr URLs already recorded in the
+gallery data. The repository retains local archival copies under /art/, but the
+GitHub Pages deployment intentionally excludes that large mirror.
 
 Outputs: sitemap-images.xml
-Sources: data/artworks.json, local files under art/
+Sources: data/artworks.json
 Rebuild: python3 code/orchestrators/build_image_sitemap.py   (--check to verify)
 """
 
@@ -74,7 +74,10 @@ def best_flickr_url(art: dict) -> str | None:
     for key in ("Original", "X-Large 3K", "Large 2048", "Large 1600", "Large", "Medium 800", "Medium"):
         if sizes.get(key):
             return sizes[key]
-    return art.get("thumb")
+    thumb = art.get("thumb")
+    if isinstance(thumb, str) and thumb.startswith(("http://", "https://")):
+        return thumb
+    return None
 
 
 def _absolutize(loc: str | None) -> str | None:
@@ -87,9 +90,7 @@ def _absolutize(loc: str | None) -> str | None:
 
 
 def image_loc(art: dict, local: dict[str, str]) -> str | None:
-    fname = local.get(str(art.get("id")))
-    if fname:
-        return SITE + "art/" + quote(fname)
+    _ = local
     return _absolutize(best_flickr_url(art))
 
 

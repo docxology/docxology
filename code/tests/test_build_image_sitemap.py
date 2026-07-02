@@ -26,11 +26,12 @@ def test_image_sitemap_well_formed_and_namespaced():
     assert text.count("<image:image>") > 100  # the gallery has hundreds of works
 
 
-def test_image_sitemap_prefers_same_domain_images():
+def test_image_sitemap_uses_deployed_image_sources():
     text = bis.OUT.read_text(encoding="utf-8")
-    local = text.count("<image:loc>https://danielarifriedman.com/art/")
     total = text.count("<image:loc>")
-    assert local > 0.9 * total  # the vast majority resolve to same-domain files
+    flickr = text.count("<image:loc>https://live.staticflickr.com/")
+    assert flickr == total
+    assert "https://danielarifriedman.com/art/" not in text
 
 
 def test_robots_references_image_sitemap():
