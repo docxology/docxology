@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10038231](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10038231)-blue)]([10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10038231-blue)](https://doi.org/10.5281/zenodo.10038231)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/10038231](https://zenodo.org/records/10038231)
+- PDF: [2023_CognitiveSovereignty.pdf](2023_CognitiveSovereignty.pdf)
+- PDF download: [CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.pdf](https://zenodo.org/api/records/10038232/files/CognitiveSovereignty_ActiveInference_StateOf_Exception_v1-1.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10038231)
 
 ## Citation
 

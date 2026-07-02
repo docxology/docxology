@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20693216](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20693216)-blue)]([10.5281/zenodo.20693216](https://doi.org/10.5281/zenodo.20693216))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20693216-blue)](https://doi.org/10.5281/zenodo.20693216)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20693216
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/democreate](https://github.com/docxology/democreate)
+- GitHub release: [v0.6.2](https://github.com/docxology/democreate/releases/tag/v0.6.2)
+- DOI: [10.5281/zenodo.20693216](https://doi.org/10.5281/zenodo.20693216)
+- Zenodo record: [https://zenodo.org/records/20693216](https://zenodo.org/records/20693216)
+- PDF: [democreate-0.6.2-manuscript.pdf](democreate-0.6.2-manuscript.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20693216)
 
 ## Citation
 

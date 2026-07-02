@@ -2,7 +2,7 @@
 
 **William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10400744](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10400744)-blue)]([10.5281/zenodo.10400744](https://doi.org/10.5281/zenodo.10400744))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10400744-blue)](https://doi.org/10.5281/zenodo.10400744)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10400744](https://doi.org/10.5281/zenodo.10400744)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/10400744](https://zenodo.org/records/10400744)
+- PDF: [2023_HoneyBeeGeneExpression.pdf](2023_HoneyBeeGeneExpression.pdf)
+- PDF download: [Apis-seq_v1_12_18_2023.pdf](https://zenodo.org/api/records/10400745/files/Apis-seq_v1_12_18_2023.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10400744)
 
 ## Citation
 

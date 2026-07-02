@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20614908](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20614908)-blue)]([10.5281/zenodo.20614908](https://doi.org/10.5281/zenodo.20614908))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20614909-blue)](https://doi.org/10.5281/zenodo.20614909)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20614909
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/itrace](https://github.com/docxology/itrace)
+- GitHub release: [v0.4.1](https://github.com/docxology/itrace/releases/tag/v0.4.1)
+- DOI: [10.5281/zenodo.20614909](https://doi.org/10.5281/zenodo.20614909)
+- Zenodo record: [https://zenodo.org/records/20614909](https://zenodo.org/records/20614909)
+- PDF: [itrace-0.4.1-manuscript.pdf](itrace-0.4.1-manuscript.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20614909)
 
 ## Citation
 

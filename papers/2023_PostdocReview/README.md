@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2023) · *Presentation*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8377987](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.8377987)-blue)]([10.5281/zenodo.8377987](https://doi.org/10.5281/zenodo.8377987))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8377987-blue)](https://doi.org/10.5281/zenodo.8377987)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.8377987](https://doi.org/10.5281/zenodo.8377987)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/8377987](https://zenodo.org/records/8377987)
+- PDF: [2023_PostdocReview.pdf](2023_PostdocReview.pdf)
+- PDF download: [DAF_Postdoc_Summary_9_25_2023.pdf](https://zenodo.org/api/records/8377988/files/DAF_Postdoc_Summary_9_25_2023.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8377987)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon** (2019) · *Scientific Reports*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41598-019-41586-3](https:%2F%2Fdoi.org%2F10.1038%2Fs41598-019-41586-3)-blue)]([10.1038/s41598-019-41586-3](https://doi.org/10.1038/s41598-019-41586-3))
+[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41598-019-41586-3-blue)](https://doi.org/10.1038/s41598-019-41586-3)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1038/s41598-019-41586-3](https://doi.org/10.1038/s41598-019-41586-3)
-- PDF SHA-256: See zenodo_record
+- PDF: [2019_ForagerHydration.pdf](2019_ForagerHydration.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

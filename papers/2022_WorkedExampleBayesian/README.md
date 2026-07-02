@@ -2,7 +2,7 @@
 
 **Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7400785](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7400785)-blue)]([10.5281/zenodo.7400785](https://doi.org/10.5281/zenodo.7400785))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7400786-blue)](https://doi.org/10.5281/zenodo.7400786)
 
 ---
 
@@ -25,8 +25,9 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.7400786
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.7400786](https://doi.org/10.5281/zenodo.7400786)
+- Zenodo record: [https://zenodo.org/records/7400786](https://zenodo.org/records/7400786)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7400786)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20747834](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20747834)-blue)]([10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20747834-blue)](https://doi.org/10.5281/zenodo.20747834)
 
 ---
 
@@ -26,7 +26,11 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20747834
+- GitHub repository: [ActiveInferenceInstitute/on_policy_distillation](https://github.com/ActiveInferenceInstitute/on_policy_distillation)
+- GitHub release: [v1.0.0](https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834)
+- Zenodo record: [https://zenodo.org/records/20747834](https://zenodo.org/records/20747834)
+- PDF: [Friedman_2026_Onpolicy_c6b5ec49.pdf](Friedman_2026_Onpolicy_c6b5ec49.pdf)
 - PDF SHA-256: db0f2e4f193efa4dd65058d8d8094659a7c9200454acb2da14e88c304f29819e
 
 ## Citation

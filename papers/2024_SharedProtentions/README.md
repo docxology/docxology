@@ -2,7 +2,7 @@
 
 **Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead** (2024) · *Entropy*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe26040303](https:%2F%2Fdoi.org%2F10.3390%2Fe26040303)-blue)]([10.3390/e26040303](https://doi.org/10.3390/e26040303))
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe26040303-blue)](https://doi.org/10.3390/e26040303)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3390/e26040303](https://doi.org/10.3390/e26040303)
-- PDF SHA-256: See zenodo_record
+- PDF: [2024_SharedProtentions.pdf](2024_SharedProtentions.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Active Inference Institute** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17982447](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.17982447)-blue)]([10.5281/zenodo.17982447](https://doi.org/10.5281/zenodo.17982447))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17982447-blue)](https://doi.org/10.5281/zenodo.17982447)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.17982447](https://doi.org/10.5281/zenodo.17982447)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/17982447](https://zenodo.org/records/17982447)
+- PDF: [2025_AII_v3.pdf](2025_AII_v3.pdf)
+- PDF download: [Active_Inference_Institute_Dec-18-2025.pdf](https://zenodo.org/api/records/17982447/files/Active_Inference_Institute_Dec-18-2025.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/17982447)
 
 ## Citation
 

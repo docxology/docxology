@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20732274](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20732274)-blue)]([10.5281/zenodo.20732274](https://doi.org/10.5281/zenodo.20732274))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20732274-blue)](https://doi.org/10.5281/zenodo.20732274)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20732274
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/AGEINT](https://github.com/docxology/AGEINT)
+- GitHub release: [v0.1.0](https://github.com/docxology/AGEINT/releases/tag/v0.1.0)
+- DOI: [10.5281/zenodo.20732274](https://doi.org/10.5281/zenodo.20732274)
+- Zenodo record: [https://zenodo.org/records/20732274](https://zenodo.org/records/20732274)
+- PDF: [AGEINT-Agentic-Intelligence-Edition-0.1.pdf](AGEINT-Agentic-Intelligence-Edition-0.1.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20732274)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others** (2021) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5797040](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.5797040)-blue)]([10.5281/zenodo.5797040](https://doi.org/10.5281/zenodo.5797040))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5797072-blue)](https://doi.org/10.5281/zenodo.5797072)
 
 ---
 
@@ -26,8 +26,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.5797072
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.5797072](https://doi.org/10.5281/zenodo.5797072)
+- Zenodo record: [https://zenodo.org/records/5797072](https://zenodo.org/records/5797072)
+- PDF: [v2 - Karl Friston, Applied Active Inference Symposium, ActInfLab, June 21, 2021.pdf](v2%20-%20Karl%20Friston%2C%20Applied%20Active%20Inference%20Symposium%2C%20ActInfLab%2C%20June%2021%2C%202021.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/5797072)
 
 ## Citation
 

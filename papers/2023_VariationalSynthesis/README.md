@@ -2,7 +2,7 @@
 
 **Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell** (2023) · *Entropy*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe25070964](https:%2F%2Fdoi.org%2F10.3390%2Fe25070964)-blue)]([10.3390/e25070964](https://doi.org/10.3390/e25070964))
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe25070964-blue)](https://doi.org/10.3390/e25070964)
 
 ---
 
@@ -26,7 +26,8 @@
 ## Artifacts
 
 - DOI: [10.3390/e25070964](https://doi.org/10.3390/e25070964)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_VariationalSynthesis.pdf](2023_VariationalSynthesis.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

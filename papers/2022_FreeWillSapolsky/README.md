@@ -2,7 +2,7 @@
 
 **Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman** (2022) · *ALIUS Bulletin*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7394900](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7394900)-blue)]([10.5281/zenodo.7394900](https://doi.org/10.5281/zenodo.7394900))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7394900-blue)](https://doi.org/10.5281/zenodo.7394900)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.7394900](https://doi.org/10.5281/zenodo.7394900)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/7394900](https://zenodo.org/records/7394900)
+- PDF: [2022_FreeWillSapolsky.pdf](2022_FreeWillSapolsky.pdf)
+- PDF download: [ALIUS Interview-Robert Sapolsky (2022).pdf](https://zenodo.org/api/records/7394901/files/ALIUS%20Interview-Robert%20Sapolsky%20%282022%29.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7394900)
 
 ## Citation
 

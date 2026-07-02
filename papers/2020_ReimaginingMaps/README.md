@@ -2,7 +2,7 @@
 
 **Richard J. Cordes, Daniel Ari Friedman, Mikel Maron** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4170025](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.4170025)-blue)]([10.5281/zenodo.4170025](https://doi.org/10.5281/zenodo.4170025))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4170026-blue)](https://doi.org/10.5281/zenodo.4170026)
 
 ---
 
@@ -26,8 +26,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.4170026
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026)
+- Zenodo record: [https://zenodo.org/records/4170026](https://zenodo.org/records/4170026)
+- PDF: [Reimagining Maps.pdf](Reimagining%20Maps.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/4170026)
 
 ## Citation
 

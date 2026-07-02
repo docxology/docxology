@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13754585](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.13754585)-blue)]([10.5281/zenodo.13754585](https://doi.org/10.5281/zenodo.13754585))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13754585-blue)](https://doi.org/10.5281/zenodo.13754585)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.13754585](https://doi.org/10.5281/zenodo.13754585)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/13754585](https://zenodo.org/records/13754585)
+- PDF: [2024_FarmWorks.pdf](2024_FarmWorks.pdf)
+- PDF download: [FarmWorks_v1_9-12-2024.pdf](https://zenodo.org/api/records/13754586/files/FarmWorks_v1_9-12-2024.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/13754585)
 
 ## Citation
 

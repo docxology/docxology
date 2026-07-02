@@ -2,7 +2,7 @@
 
 **Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow** (2025) · *Entropy*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe27050459](https:%2F%2Fdoi.org%2F10.3390%2Fe27050459)-blue)]([10.3390/e27050459](https://doi.org/10.3390/e27050459))
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe27050459-blue)](https://doi.org/10.3390/e27050459)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3390/e27050459](https://doi.org/10.3390/e27050459)
-- PDF SHA-256: See zenodo_record
+- PDF: [2025_Thoughtseeds.pdf](2025_Thoughtseeds.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

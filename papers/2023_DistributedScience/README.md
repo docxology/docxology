@@ -2,7 +2,7 @@
 
 **Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant** (2023) · *OSF*
 
-[![DOI](https://img.shields.io/badge/DOI-10.31219%2Fosf.io%2Fdnw5k](https:%2F%2Fdoi.org%2F10.31219%2Fosf.io%2Fdnw5k)-blue)]([10.31219/osf.io/dnw5k](https://doi.org/10.31219/osf.io/dnw5k))
+[![DOI](https://img.shields.io/badge/DOI-10.31219%2Fosf.io%2Fdnw5k-blue)](https://doi.org/10.31219/osf.io/dnw5k)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.31219/osf.io/dnw5k](https://doi.org/10.31219/osf.io/dnw5k)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_DistributedScience.pdf](2023_DistributedScience.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

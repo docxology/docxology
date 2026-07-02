@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20482025](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20482025)-blue)]([10.5281/zenodo.20482025](https://doi.org/10.5281/zenodo.20482025))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20482025-blue)](https://doi.org/10.5281/zenodo.20482025)
 
 ---
 
@@ -26,7 +26,11 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20482025
+- GitHub repository: [docxology/grateful_data](https://github.com/docxology/grateful_data)
+- GitHub release: [v1.0.0](https://github.com/docxology/grateful_data/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20482025](https://doi.org/10.5281/zenodo.20482025)
+- Zenodo record: [https://zenodo.org/records/20482025](https://zenodo.org/records/20482025)
+- PDF: [Friedman_2026_Music_2d42bfd0.pdf](Friedman_2026_Music_2d42bfd0.pdf)
 - PDF SHA-256: 296b3b5c5e9f3d628e15ae5d467dd5cc418bd018f0166194c9494b33b3367dda
 
 ## Citation

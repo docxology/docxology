@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20418904](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20418904)-blue)]([10.5281/zenodo.20418904](https://doi.org/10.5281/zenodo.20418904))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20418904-blue)](https://doi.org/10.5281/zenodo.20418904)
 
 ---
 
@@ -26,7 +26,11 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20418904
+- GitHub repository: [ActiveInferenceInstitute/policy_entanglement](https://github.com/ActiveInferenceInstitute/policy_entanglement)
+- GitHub release: [v1.0.0](https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20418904](https://doi.org/10.5281/zenodo.20418904)
+- Zenodo record: [https://zenodo.org/records/20418904](https://zenodo.org/records/20418904)
+- PDF: [Friedman_2026_Policy_ae7cdd62.pdf](Friedman_2026_Policy_ae7cdd62.pdf)
 - PDF SHA-256: ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde
 
 ## Citation

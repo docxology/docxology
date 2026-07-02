@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417021](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20417021)-blue)]([10.5281/zenodo.20417021](https://doi.org/10.5281/zenodo.20417021))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417021-blue)](https://doi.org/10.5281/zenodo.20417021)
 
 ---
 
@@ -26,7 +26,13 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20417021
+- GitHub repository: [docxology/template_active_inference](https://github.com/docxology/template_active_inference)
+- GitHub release: [v0.3.2](https://github.com/docxology/template_active_inference/releases/tag/v0.3.2)
+- DOI: [10.5281/zenodo.20417021](https://doi.org/10.5281/zenodo.20417021)
+- Zenodo record: [https://zenodo.org/records/20417021](https://zenodo.org/records/20417021)
+- PDF: [Friedman_2026_Active_158b2fe2.pdf](Friedman_2026_Active_158b2fe2.pdf)
+- PDF: [Friedman_2026_Active_713452dd.pdf](Friedman_2026_Active_713452dd.pdf)
+- PDF: [Friedman_2026_Active_f191b48f.pdf](Friedman_2026_Active_f191b48f.pdf)
 - PDF SHA-256: f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c
 
 ## Citation

@@ -24,8 +24,8 @@
 
 ## Artifacts
 
-- DOI: 978-1-7364269-0-6
-- PDF SHA-256: See zenodo_record
+- PDF: [2020_GreatPreset.pdf](2020_GreatPreset.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737156](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14737156)-blue)]([10.5281/zenodo.14737156](https://doi.org/10.5281/zenodo.14737156))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737157-blue)](https://doi.org/10.5281/zenodo.14737157)
 
 ---
 
@@ -25,8 +25,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.14737157
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.14737157](https://doi.org/10.5281/zenodo.14737157)
+- Zenodo record: [https://zenodo.org/records/14737157](https://zenodo.org/records/14737157)
+- PDF: [graph.pdf](graph.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14737157)
 
 ## Citation
 

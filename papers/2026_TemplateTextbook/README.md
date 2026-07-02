@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20533125](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20533125)-blue)]([10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20533125-blue)](https://doi.org/10.5281/zenodo.20533125)
 
 ---
 
@@ -35,8 +35,14 @@ Zenodo: https://zenodo.org/records/205
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20533125
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/template_textbook](https://github.com/docxology/template_textbook)
+- GitHub release: [v0.1.0](https://github.com/docxology/template_textbook/releases/tag/v0.1.0)
+- DOI: [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125)
+- Zenodo record: [https://zenodo.org/records/20533125](https://zenodo.org/records/20533125)
+- PDF: [Friedman_2026_Template_7b67cb2d.pdf](Friedman_2026_Template_7b67cb2d.pdf)
+- PDF: [Friedman_2026_Template_c6c97f24.pdf](Friedman_2026_Template_c6c97f24.pdf)
+- PDF: [template_textbook_combined.pdf](template_textbook_combined.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20533125)
 
 ## Citation
 

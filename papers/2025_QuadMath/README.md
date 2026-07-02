@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16887799](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.16887799)-blue)]([10.5281/zenodo.16887799](https://doi.org/10.5281/zenodo.16887799))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16887799-blue)](https://doi.org/10.5281/zenodo.16887799)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.16887799](https://doi.org/10.5281/zenodo.16887799)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/16887799](https://zenodo.org/records/16887799)
+- PDF: [2025_QuadMath.pdf](2025_QuadMath.pdf)
+- PDF download: [QuadMath_v1_DAF_08-16-2025.pdf](https://zenodo.org/api/records/16887800/files/QuadMath_v1_DAF_08-16-2025.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/16887799)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · *ALIUS Bulletin*
 
-[![DOI](https://img.shields.io/badge/DOI-10.34700%2F7gkw-zh08](https:%2F%2Fdoi.org%2F10.34700%2F7gkw-zh08)-blue)]([10.34700/7gkw-zh08](https://doi.org/10.34700/7gkw-zh08))
+[![DOI](https://img.shields.io/badge/DOI-10.34700%2F7gkw-zh08-blue)](https://doi.org/10.34700/7gkw-zh08)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.34700/7gkw-zh08](https://doi.org/10.34700/7gkw-zh08)
-- PDF SHA-256: See zenodo_record
+- PDF: [2019_DennettExplained.pdf](2019_DennettExplained.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

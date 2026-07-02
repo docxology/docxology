@@ -2,7 +2,7 @@
 
 **Jakub Smékal, Daniel Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7443847](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7443847)-blue)]([10.5281/zenodo.7443847](https://doi.org/10.5281/zenodo.7443847))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7443847-blue)](https://doi.org/10.5281/zenodo.7443847)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.7443847](https://doi.org/10.5281/zenodo.7443847)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/7443847](https://zenodo.org/records/7443847)
+- PDF: [2022_ActiveDiffusion.pdf](2022_ActiveDiffusion.pdf)
+- PDF download: [Active Diffusion Catechism.pdf](https://zenodo.org/api/records/7443848/files/Active%20Diffusion%20Catechism.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7443847)
 
 ## Citation
 

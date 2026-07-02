@@ -25,8 +25,8 @@
 
 ## Artifacts
 
-- DOI: [purl.stanford.edu](http://purl.stanford.edu/pb813wm1484)
-- PDF SHA-256: See zenodo_record
+- PDF: [2019_PhDDissertation.pdf](2019_PhDDissertation.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

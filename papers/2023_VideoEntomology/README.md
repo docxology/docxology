@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado** (2023) · *JoVE*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3791%2F65002](https:%2F%2Fdoi.org%2F10.3791%2F65002)-blue)]([10.3791/65002](https://doi.org/10.3791/65002))
+[![DOI](https://img.shields.io/badge/DOI-10.3791%2F65002-blue)](https://doi.org/10.3791/65002)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3791/65002](https://doi.org/10.3791/65002)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_VideoEntomology.pdf](2023_VideoEntomology.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

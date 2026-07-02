@@ -2,7 +2,7 @@
 
 **Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7401874](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7401874)-blue)]([10.5281/zenodo.7401874](https://doi.org/10.5281/zenodo.7401874))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7401875-blue)](https://doi.org/10.5281/zenodo.7401875)
 
 ---
 
@@ -25,8 +25,9 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.7401875
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.7401875](https://doi.org/10.5281/zenodo.7401875)
+- Zenodo record: [https://zenodo.org/records/7401875](https://zenodo.org/records/7401875)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7401875)
 
 ## Citation
 

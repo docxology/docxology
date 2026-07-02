@@ -2,7 +2,7 @@
 
 **David S. Douglass, Adam Pease, Daniel Friedman, et al.** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.11459322](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.11459322)-blue)]([10.5281/zenodo.11459322](https://doi.org/10.5281/zenodo.11459322))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.11459322-blue)](https://doi.org/10.5281/zenodo.11459322)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.11459322](https://doi.org/10.5281/zenodo.11459322)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/11459322](https://zenodo.org/records/11459322)
+- PDF: [2024_OntologySUMO.pdf](2024_OntologySUMO.pdf)
+- PDF download: [Aligning Active Inference Ontology to SUMO.pdf](https://zenodo.org/api/records/11463326/files/Aligning%20Active%20Inference%20Ontology%20to%20SUMO.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/11459322)
 
 ## Citation
 

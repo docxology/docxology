@@ -2,7 +2,7 @@
 
 **Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5565577](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.5565577)-blue)]([10.5281/zenodo.5565577](https://doi.org/10.5281/zenodo.5565577))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5565577-blue)](https://doi.org/10.5281/zenodo.5565577)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.5565577](https://doi.org/10.5281/zenodo.5565577)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/5565577](https://zenodo.org/records/5565577)
+- PDF: [2021_NarrativeInformationMgmt.pdf](2021_NarrativeInformationMgmt.pdf)
+- PDF download: [NIM21 v1.1.pdf](https://zenodo.org/api/records/5573287/files/NIM21%20v1.1.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/5565577)
 
 ## Citation
 

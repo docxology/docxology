@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17244386](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.17244386)-blue)]([10.5281/zenodo.17244386](https://doi.org/10.5281/zenodo.17244386))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17244386-blue)](https://doi.org/10.5281/zenodo.17244386)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.17244386](https://doi.org/10.5281/zenodo.17244386)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/17244386](https://zenodo.org/records/17244386)
+- PDF: [2025_MarkdownDecisionProcess.pdf](2025_MarkdownDecisionProcess.pdf)
+- PDF download: [MarkdownDecisionProcess_DAF_10-02-2025.pdf](https://zenodo.org/api/records/17244387/files/MarkdownDecisionProcess_DAF_10-02-2025.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/17244386)
 
 ## Citation
 

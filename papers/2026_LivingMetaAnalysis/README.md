@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20931964](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20931964)-blue)]([10.5281/zenodo.20931964](https://doi.org/10.5281/zenodo.20931964))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20931964-blue)](https://doi.org/10.5281/zenodo.20931964)
 
 ---
 
@@ -34,7 +34,11 @@ complete quantitative portrait of its literature.
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20931964
+- GitHub repository: [docxology/template_literature_meta_analysis](https://github.com/docxology/template_literature_meta_analysis)
+- GitHub release: [v0.1.0](https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0)
+- DOI: [10.5281/zenodo.20931964](https://doi.org/10.5281/zenodo.20931964)
+- Zenodo record: [https://zenodo.org/records/20931964](https://zenodo.org/records/20931964)
+- PDF: [Friedman_2026_Living_412d4fcf.pdf](Friedman_2026_Living_412d4fcf.pdf)
 - PDF SHA-256: 412d4fcf4b0c2e14fb950f9080f107d81fd9a90dfdf216b9161a13833eff62ff
 
 ## Citation

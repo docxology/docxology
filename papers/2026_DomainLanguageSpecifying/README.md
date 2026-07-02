@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21086548](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.21086548)-blue)]([10.5281/zenodo.21086548](https://doi.org/10.5281/zenodo.21086548))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21086548-blue)](https://doi.org/10.5281/zenodo.21086548)
 
 ---
 
@@ -36,7 +36,11 @@ validation gates, and a deterministic compiler,
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.21086548
+- GitHub repository: [docxology/template_methods_paper](https://github.com/docxology/template_methods_paper)
+- GitHub release: [v1.0.0](https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.21086548](https://doi.org/10.5281/zenodo.21086548)
+- Zenodo record: [https://zenodo.org/records/21086548](https://zenodo.org/records/21086548)
+- PDF: [Friedman_2026_Domain_ecd8519f.pdf](Friedman_2026_Domain_ecd8519f.pdf)
 - PDF SHA-256: ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a
 
 ## Citation

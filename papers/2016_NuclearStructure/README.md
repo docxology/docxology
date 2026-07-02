@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Daniel F. Pilch** (2016) · *Int. J. Radiation Biology*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3109%2F09553002.2016.1144941](https:%2F%2Fdoi.org%2F10.3109%2F09553002.2016.1144941)-blue)]([10.3109/09553002.2016.1144941](https://doi.org/10.3109/09553002.2016.1144941))
+[![DOI](https://img.shields.io/badge/DOI-10.3109%2F09553002.2016.1144941-blue)](https://doi.org/10.3109/09553002.2016.1144941)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3109/09553002.2016.1144941](https://doi.org/10.3109/09553002.2016.1144941)
-- PDF SHA-256: See zenodo_record
+- PDF: [2016_NuclearStructure.pdf](2016_NuclearStructure.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

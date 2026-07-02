@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20834846](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20834846)-blue)]([10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20834846-blue)](https://doi.org/10.5281/zenodo.20834846)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20834846
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/realizing_emptiness](https://github.com/docxology/realizing_emptiness)
+- GitHub release: [v1.0.0](https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846)
+- Zenodo record: [https://zenodo.org/records/20834846](https://zenodo.org/records/20834846)
+- PDF: [realizing_emptiness_combined.pdf](realizing_emptiness_combined.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20834846)
 
 ## Citation
 

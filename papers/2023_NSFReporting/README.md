@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10160656](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10160656)-blue)]([10.5281/zenodo.10160656](https://doi.org/10.5281/zenodo.10160656))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10160656-blue)](https://doi.org/10.5281/zenodo.10160656)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10160656](https://doi.org/10.5281/zenodo.10160656)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/10160656](https://zenodo.org/records/10160656)
+- PDF: [2023_NSFReporting.pdf](2023_NSFReporting.pdf)
+- PDF download: [Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing (1).pdf](https://zenodo.org/api/records/10160657/files/Enhanced%20NSF%20Postdoctoral%20Reporting%20via%20Synthetic%20Intelligence%20Language%20Processing%20%281%29.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10160656)
 
 ## Citation
 

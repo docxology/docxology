@@ -20,6 +20,7 @@ import logging
 from pathlib import Path
 from datetime import datetime
 from typing import Any
+from urllib.parse import quote, urlsplit, urlunsplit
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
@@ -37,6 +38,8 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))
+DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.I)
+DOI_TRAILING = ".,;:)]}`'\""
 
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -80,6 +83,45 @@ def parse_bibliography() -> dict:
         }
     log.info(f"Parsed {len(bib)} entries from BIBLIOGRAPHY.md")
     return bib
+
+
+def extract_doi(value: Any) -> str:
+    if not value:
+        return ""
+    match = DOI_RE.search(str(value))
+    if not match:
+        return ""
+    return match.group(0).rstrip(DOI_TRAILING)
+
+
+def doi_url(doi: str, fallback_url: str | None = None) -> str:
+    if fallback_url and fallback_url.startswith("http"):
+        return fallback_url
+    if not doi:
+        return ""
+    return "https://doi.org/" + quote(doi, safe="/:")
+
+
+def doi_badge(doi: str, target_url: str) -> str:
+    badge_value = quote(doi, safe="")
+    return f"[![DOI](https://img.shields.io/badge/DOI-{badge_value}-blue)]({target_url})"
+
+
+def markdown_target(url: str) -> str:
+    if url.startswith(("http://", "https://")):
+        parsed = urlsplit(url)
+        return urlunsplit((
+            parsed.scheme,
+            parsed.netloc,
+            quote(parsed.path, safe="/%"),
+            quote(parsed.query, safe="=&%/:?+"),
+            quote(parsed.fragment, safe="=&%/:?+"),
+        ))
+    return quote(url, safe="/#%")
+
+
+def markdown_link(label: str, url: str) -> str:
+    return f"[{label}]({markdown_target(url)})" if url else label
 
 
 def resolve_domain(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
@@ -169,7 +211,7 @@ def extract_related_papers(meta: dict, all_folders: list[str]) -> list[str]:
 def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
     """Generate README.md content with enhanced structure."""
     year, topic = parse_folder_id(folder)
-    title = meta.get('name', topic)
+    title = meta.get('name') or meta.get('title') or topic
     authors = meta.get('authors', 'Daniel Ari Friedman')
 
     # Get abstract from description or metadata
@@ -202,14 +244,11 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
         '',
     ]
 
-    if link and 'doi' in link.lower():
-        doi_match = re.search(r'(10\.\S+)', link)
-        if doi_match:
-            doi_text = doi_match.group(1)
-            # Clean the link for the badge (no protocol in badge URL)
-            link_clean = link.split()[0] if ' ' in link else link
-            lines.append(f'[![DOI](https://img.shields.io/badge/DOI-{doi_text.replace("/", "%2F")}-blue)]({link_clean})')
-            lines.append('')
+    doi = extract_doi(meta.get('doi') or link)
+    doi_target = doi_url(doi, meta.get('doi_url'))
+    if doi and doi_target:
+        lines.append(doi_badge(doi, doi_target))
+        lines.append('')
 
     lines.extend([
         '---',
@@ -247,16 +286,33 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
 
     # Check for associated GitHub repo
     github_repo = meta.get('github_repo')
+    github_release_url = meta.get('github_release_url')
     if github_repo:
-        lines.append(f'- GitHub release: https://github.com/{github_repo}')
+        lines.append(f'- GitHub repository: {markdown_link(github_repo, f"https://github.com/{github_repo}")}')
+    if github_release_url:
+        release_label = meta.get('release_tag') or meta.get('release_name') or 'Release'
+        lines.append(f'- GitHub release: {markdown_link(release_label, github_release_url)}')
 
     # Check for DOI
-    doi = meta.get('doi') or (bib_entry.get('link') if bib_entry else '')
-    if doi:
-        lines.append(f'- DOI: {doi}')
+    if doi and doi_target:
+        lines.append(f'- DOI: {markdown_link(doi, doi_target)}')
+
+    zenodo_record = meta.get('zenodo_record')
+    if zenodo_record:
+        lines.append(f'- Zenodo record: {markdown_link(zenodo_record, zenodo_record)}')
+
+    local_pdfs = sorted((PAPERS_DIR / folder).glob('*.pdf'))
+    for pdf in local_pdfs[:3]:
+        lines.append(f'- PDF: {markdown_link(pdf.name, pdf.name)}')
+
+    for file_info in meta.get('files', [])[:3]:
+        name = file_info.get('name', '')
+        download_url = file_info.get('download_url', '')
+        if name and download_url and name.lower().endswith('.pdf') and not any(pdf.name == name for pdf in local_pdfs):
+            lines.append(f'- PDF download: {markdown_link(name, download_url)}')
 
     lines.extend([
-        f'- PDF SHA-256: {meta.get("pdf_sha256") or "See zenodo_record"}',
+        f'- PDF SHA-256: {meta.get("pdf_sha256") or (markdown_link("See Zenodo record", zenodo_record) if zenodo_record else "Not recorded")}',
         '',
         '## Citation',
         '',
@@ -274,7 +330,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
 def generate_agents(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
     """Generate AGENTS.md content with enhanced structure."""
     year, topic = parse_folder_id(folder)
-    title = meta.get('name', topic)
+    title = meta.get('name') or meta.get('title') or topic
     authors = meta.get('authors', 'Daniel Ari Friedman')
     domain = resolve_domain(folder, meta, bib_entry)
     description = meta.get('description', meta.get('abstract', f'Research on {topic}'))[:200]
@@ -351,7 +407,7 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     Extended version with Methods, Key Findings, Related Works, Datasets, and Validation sections.
     """
     year, topic = parse_folder_id(folder)
-    title = meta.get('name', topic)
+    title = meta.get('name') or meta.get('title') or topic
     authors = meta.get('authors', 'Daniel Ari Friedman')
     description = meta.get('description', meta.get('abstract', f'Research on {topic}')).strip()
     domain = resolve_domain(folder, meta, bib_entry)
@@ -533,7 +589,12 @@ def main():
         if folder_meta_path.exists():
             with open(folder_meta_path) as f:
                 folder_meta = json.load(f)
-            for key in ['methods', 'key_findings', 'related_papers', 'related_software', 'domain', 'pdf_sha256', 'pairing_confidence', 'checked_at']:
+            for key in [
+                'title', 'version', 'doi', 'doi_url', 'zenodo_record', 'record_id',
+                'github_repo', 'github_release_url', 'release_tag', 'release_name',
+                'files', 'methods', 'key_findings', 'related_papers', 'related_software',
+                'domain', 'pdf_sha256', 'pairing_confidence', 'checked_at',
+            ]:
                 if key in folder_meta:
                     meta[key] = folder_meta[key]
 

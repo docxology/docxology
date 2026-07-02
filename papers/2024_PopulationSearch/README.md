@@ -2,7 +2,7 @@
 
 **Nassim Dehouche, Daniel Friedman** (2024) · *ArXiv*
 
-[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2408.09548](https:%2F%2Fdoi.org%2F10.48550%2FarXiv.2408.09548)-blue)]([10.48550/arXiv.2408.09548](https://doi.org/10.48550/arXiv.2408.09548))
+[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2408.09548-blue)](https://doi.org/10.48550/arXiv.2408.09548)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.48550/arXiv.2408.09548](https://doi.org/10.48550/arXiv.2408.09548)
-- PDF SHA-256: See zenodo_record
+- PDF: [2024_PopulationSearch.pdf](2024_PopulationSearch.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

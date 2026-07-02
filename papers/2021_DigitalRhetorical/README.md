@@ -2,7 +2,7 @@
 
 **Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5573946](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.5573946)-blue)]([10.5281/zenodo.5573946](https://doi.org/10.5281/zenodo.5573946))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5573946-blue)](https://doi.org/10.5281/zenodo.5573946)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.5573946](https://doi.org/10.5281/zenodo.5573946)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/5573946](https://zenodo.org/records/5573946)
+- PDF: [2021_DigitalRhetorical.pdf](2021_DigitalRhetorical.pdf)
+- PDF download: [ECOMEME v1.1.pdf](https://zenodo.org/api/records/5573947/files/ECOMEME%20v1.1.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/5573946)
 
 ## Citation
 

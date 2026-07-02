@@ -2,7 +2,7 @@
 
 **John Clippinger, Andrew Pashea, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14861596](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14861596)-blue)]([10.5281/zenodo.14861596](https://doi.org/10.5281/zenodo.14861596))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14861596-blue)](https://doi.org/10.5281/zenodo.14861596)
 
 ---
 
@@ -25,8 +25,9 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.14861596
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.14861596](https://doi.org/10.5281/zenodo.14861596)
+- Zenodo record: [https://zenodo.org/records/14861596](https://zenodo.org/records/14861596)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14861596)
 
 ## Citation
 

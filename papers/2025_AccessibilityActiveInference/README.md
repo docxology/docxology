@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Active Inference Institute** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15061666](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.15061666)-blue)]([10.5281/zenodo.15061666](https://doi.org/10.5281/zenodo.15061666))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15061666-blue)](https://doi.org/10.5281/zenodo.15061666)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.15061666](https://doi.org/10.5281/zenodo.15061666)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/15061666](https://zenodo.org/records/15061666)
+- PDF: [2025_AccessibilityActiveInference.pdf](2025_AccessibilityActiveInference.pdf)
+- PDF download: [ActiveInferenceInstitute_PlaybooksAndSummerSchool_Mikhailova-Friedman.pdf](https://zenodo.org/api/records/15061667/files/ActiveInferenceInstitute_PlaybooksAndSummerSchool_Mikhailova-Friedman.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/15061666)
 
 ## Citation
 

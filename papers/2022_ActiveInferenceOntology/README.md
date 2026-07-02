@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Virginia Bleu Knight** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6320574](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.6320574)-blue)]([10.5281/zenodo.6320574](https://doi.org/10.5281/zenodo.6320574))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6320574-blue)](https://doi.org/10.5281/zenodo.6320574)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.6320574](https://doi.org/10.5281/zenodo.6320574)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/6320574](https://zenodo.org/records/6320574)
+- PDF: [2022_ActiveInferenceOntology.pdf](2022_ActiveInferenceOntology.pdf)
+- PDF download: [v3_ActInf-DeSci-AEOS-2022.pdf](https://zenodo.org/api/records/7484994/files/v3_ActInf-DeSci-AEOS-2022.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/6320574)
 
 ## Citation
 

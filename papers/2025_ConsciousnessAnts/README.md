@@ -24,8 +24,8 @@
 
 ## Artifacts
 
-- DOI: [978-65-5272-128-0](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)
-- PDF SHA-256: See zenodo_record
+- PDF: [2025_ConsciousnessAnts.pdf](2025_ConsciousnessAnts.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

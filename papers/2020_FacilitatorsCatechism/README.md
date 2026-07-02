@@ -2,7 +2,7 @@
 
 **Richard J. Cordes, Daniel Ari Friedman** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4062540](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.4062540)-blue)]([10.5281/zenodo.4062540](https://doi.org/10.5281/zenodo.4062540))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4062540-blue)](https://doi.org/10.5281/zenodo.4062540)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.4062540](https://doi.org/10.5281/zenodo.4062540)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/4062540](https://zenodo.org/records/4062540)
+- PDF: [2020_FacilitatorsCatechism.pdf](2020_FacilitatorsCatechism.pdf)
+- PDF download: [The Facilitators Catechismv2.pdf](https://zenodo.org/api/records/4203765/files/The%20Facilitators%20Catechismv2.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/4062540)
 
 ## Citation
 

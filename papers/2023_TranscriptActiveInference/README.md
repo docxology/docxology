@@ -2,7 +2,7 @@
 
 **Megan A. K. Peters, Nora Bradford, Daniel Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8228934](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.8228934)-blue)]([10.5281/zenodo.8228934](https://doi.org/10.5281/zenodo.8228934))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8229512-blue)](https://doi.org/10.5281/zenodo.8229512)
 
 ---
 
@@ -26,8 +26,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.8229512
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.8229512](https://doi.org/10.5281/zenodo.8229512)
+- Zenodo record: [https://zenodo.org/records/8229512](https://zenodo.org/records/8229512)
+- PDF: [GuestStream_049-1_transcript.pdf](GuestStream_049-1_transcript.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8229512)
 
 ## Citation
 

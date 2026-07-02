@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13273681](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.13273681)-blue)]([10.5281/zenodo.13273681](https://doi.org/10.5281/zenodo.13273681))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13273681-blue)](https://doi.org/10.5281/zenodo.13273681)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.13273681](https://doi.org/10.5281/zenodo.13273681)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/13273681](https://zenodo.org/records/13273681)
+- PDF: [2024_DigitalTwins.pdf](2024_DigitalTwins.pdf)
+- PDF download: [BLOCKSCIENCE-UWAPL-COGSEC-AII_NITRD-2024-1337.pdf](https://zenodo.org/api/records/13273682/files/BLOCKSCIENCE-UWAPL-COGSEC-AII_NITRD-2024-1337.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/13273681)
 
 ## Citation
 

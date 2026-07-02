@@ -2,7 +2,7 @@
 
 **Eric Saund, Daniel Ari Friedman** (2023) · *Cognitive Systems Research*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cogsys.2023.02.005](https:%2F%2Fdoi.org%2F10.1016%2Fj.cogsys.2023.02.005)-blue)]([10.1016/j.cogsys.2023.02.005](https://doi.org/10.1016/j.cogsys.2023.02.005))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cogsys.2023.02.005-blue)](https://doi.org/10.1016/j.cogsys.2023.02.005)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.cogsys.2023.02.005](https://doi.org/10.1016/j.cogsys.2023.02.005)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_SinglePheromone.pdf](2023_SinglePheromone.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

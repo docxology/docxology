@@ -2,7 +2,7 @@
 
 **Sean O'Connor, Daniel Ari Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7377255](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7377255)-blue)]([10.5281/zenodo.7377255](https://doi.org/10.5281/zenodo.7377255))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7377255-blue)](https://doi.org/10.5281/zenodo.7377255)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.7377255](https://doi.org/10.5281/zenodo.7377255)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/7377255](https://zenodo.org/records/7377255)
+- PDF: [2022_MirrorTest.pdf](2022_MirrorTest.pdf)
+- PDF download: [Predictive Processing Interpretation of the Mirror Test.pdf](https://zenodo.org/api/records/7377256/files/Predictive%20Processing%20Interpretation%20of%20the%20Mirror%20Test.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7377255)
 
 ## Citation
 

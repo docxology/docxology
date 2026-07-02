@@ -2,7 +2,7 @@
 
 **Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15389682](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.15389682)-blue)]([10.5281/zenodo.15389682](https://doi.org/10.5281/zenodo.15389682))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15389682-blue)](https://doi.org/10.5281/zenodo.15389682)
 
 ---
 
@@ -28,7 +28,9 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.15389682](https://doi.org/10.5281/zenodo.15389682)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/15389682](https://zenodo.org/records/15389682)
+- PDF: [2025_ResNei.pdf](2025_ResNei.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/15389682)
 
 ## Citation
 

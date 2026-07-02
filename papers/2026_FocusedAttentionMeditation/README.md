@@ -2,7 +2,7 @@
 
 **P. C. Kavi, Daniel Ari Friedman & G. Patow** (2026) · *CSCIS vol 2857, Springer*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1007%2F978-3-032-16955-6_11](https:%2F%2Fdoi.org%2F10.1007%2F978-3-032-16955-6_11)-blue)]([10.1007/978-3-032-16955-6_11](https://doi.org/10.1007/978-3-032-16955-6_11))
+[![DOI](https://img.shields.io/badge/DOI-10.1007%2F978-3-032-16955-6_11-blue)](https://doi.org/10.1007/978-3-032-16955-6_11)
 
 ---
 
@@ -26,7 +26,7 @@
 ## Artifacts
 
 - DOI: [10.1007/978-3-032-16955-6_11](https://doi.org/10.1007/978-3-032-16955-6_11)
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: Not recorded
 
 ## Citation
 

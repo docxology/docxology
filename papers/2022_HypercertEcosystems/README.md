@@ -2,7 +2,7 @@
 
 **Active Inference Institute** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7626768](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7626768)-blue)]([10.5281/zenodo.7626768](https://doi.org/10.5281/zenodo.7626768))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7626768-blue)](https://doi.org/10.5281/zenodo.7626768)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.7626768](https://doi.org/10.5281/zenodo.7626768)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/7626768](https://zenodo.org/records/7626768)
+- PDF: [2022_HypercertEcosystems.pdf](2022_HypercertEcosystems.pdf)
+- PDF download: [AII _ Blockference _ Protocol Labs Research RFP.pdf](https://zenodo.org/api/records/7626769/files/AII%20_%20Blockference%20_%20Protocol%20Labs%20Research%20RFP.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7626768)
 
 ## Citation
 

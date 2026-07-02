@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant** (2021) · *Frontiers in Behavioral Neuroscience*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffnbeh.2021.647732](https:%2F%2Fdoi.org%2F10.3389%2Ffnbeh.2021.647732)-blue)]([10.3389/fnbeh.2021.647732](https://doi.org/10.3389/fnbeh.2021.647732))
+[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffnbeh.2021.647732-blue)](https://doi.org/10.3389/fnbeh.2021.647732)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3389/fnbeh.2021.647732](https://doi.org/10.3389/fnbeh.2021.647732)
-- PDF SHA-256: See zenodo_record
+- PDF: [2021_ActiveInferants.pdf](2021_ActiveInferants.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

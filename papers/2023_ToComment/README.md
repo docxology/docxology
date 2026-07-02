@@ -2,7 +2,7 @@
 
 **Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2023) · *Physics of Life Reviews*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2023.06.002](https:%2F%2Fdoi.org%2F10.1016%2Fj.plrev.2023.06.002)-blue)]([10.1016/j.plrev.2023.06.002](https://doi.org/10.1016/j.plrev.2023.06.002))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2023.06.002-blue)](https://doi.org/10.1016/j.plrev.2023.06.002)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.plrev.2023.06.002](https://doi.org/10.1016/j.plrev.2023.06.002)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_ToComment.pdf](2023_ToComment.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

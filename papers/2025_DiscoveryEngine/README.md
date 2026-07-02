@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2025) · *ArXiv*
 
-[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2505.17500](https:%2F%2Fdoi.org%2F10.48550%2FarXiv.2505.17500)-blue)]([10.48550/arXiv.2505.17500](https://doi.org/10.48550/arXiv.2505.17500))
+[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2505.17500-blue)](https://doi.org/10.48550/arXiv.2505.17500)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.48550/arXiv.2505.17500](https://doi.org/10.48550/arXiv.2505.17500)
-- PDF SHA-256: See zenodo_record
+- PDF: [2025_DiscoveryEngine.pdf](2025_DiscoveryEngine.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

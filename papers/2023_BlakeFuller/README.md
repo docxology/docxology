@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7514367](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7514367)-blue)]([10.5281/zenodo.7514367](https://doi.org/10.5281/zenodo.7514367))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7514367-blue)](https://doi.org/10.5281/zenodo.7514367)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.7514367](https://doi.org/10.5281/zenodo.7514367)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/7514367](https://zenodo.org/records/7514367)
+- PDF: [2023_BlakeFuller.pdf](2023_BlakeFuller.pdf)
+- PDF download: [Blake-Fuller_Lives_in_Juxtaposition-DAF-2023.pdf](https://zenodo.org/api/records/7519132/files/Blake-Fuller_Lives_in_Juxtaposition-DAF-2023.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7514367)
 
 ## Citation
 

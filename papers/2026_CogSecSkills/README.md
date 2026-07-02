@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20804585](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20804585)-blue)]([10.5281/zenodo.20804585](https://doi.org/10.5281/zenodo.20804585))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20804585-blue)](https://doi.org/10.5281/zenodo.20804585)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20804585
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/CogSecSkills](https://github.com/docxology/CogSecSkills)
+- GitHub release: [v1.0.0](https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20804585](https://doi.org/10.5281/zenodo.20804585)
+- Zenodo record: [https://zenodo.org/records/20804585](https://zenodo.org/records/20804585)
+- PDF: [Friedman_2026_Cogsecskills_1a99a2e4.pdf](Friedman_2026_Cogsecskills_1a99a2e4.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20804585)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7803313](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7803313)-blue)]([10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7803313-blue)](https://doi.org/10.5281/zenodo.7803313)
 
 ---
 
@@ -26,8 +26,9 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.7803313
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313)
+- Zenodo record: [https://zenodo.org/records/7803313](https://zenodo.org/records/7803313)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7803313)
 
 ## Citation
 

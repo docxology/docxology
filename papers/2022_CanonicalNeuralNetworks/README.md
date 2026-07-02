@@ -2,7 +2,7 @@
 
 **Takuya Isomura, Daniel Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7400525](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.7400525)-blue)]([10.5281/zenodo.7400525](https://doi.org/10.5281/zenodo.7400525))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7400536-blue)](https://doi.org/10.5281/zenodo.7400536)
 
 ---
 
@@ -26,8 +26,9 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.7400536
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.7400536](https://doi.org/10.5281/zenodo.7400536)
+- Zenodo record: [https://zenodo.org/records/7400536](https://zenodo.org/records/7400536)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7400536)
 
 ## Citation
 

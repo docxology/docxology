@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286477](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20286477)-blue)]([10.5281/zenodo.20286477](https://doi.org/10.5281/zenodo.20286477))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286478-blue)](https://doi.org/10.5281/zenodo.20286478)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20286478
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/biology_textbook](https://github.com/docxology/biology_textbook)
+- GitHub release: [v1.0.0](https://github.com/docxology/biology_textbook/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478)
+- Zenodo record: [https://zenodo.org/records/20286478](https://zenodo.org/records/20286478)
+- PDF: [biology_textbook_v1_05-26-2026-compressed.pdf](biology_textbook_v1_05-26-2026-compressed.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20286478)
 
 ## Citation
 

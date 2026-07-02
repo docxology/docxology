@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman & Tucker Cahill Chambers** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19574117](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.19574117)-blue)]([10.5281/zenodo.19574117](https://doi.org/10.5281/zenodo.19574117))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19574117-blue)](https://doi.org/10.5281/zenodo.19574117)
 
 ---
 
@@ -26,7 +26,9 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.19574117](https://doi.org/10.5281/zenodo.19574117)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/19574117](https://zenodo.org/records/19574117)
+- PDF: [Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf](Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19574117)
 
 ## Citation
 

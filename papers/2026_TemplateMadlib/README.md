@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20786638](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20786638)-blue)]([10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20786638-blue)](https://doi.org/10.5281/zenodo.20786638)
 
 ---
 
@@ -26,7 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20786638
+- GitHub repository: [docxology/template_madlib](https://github.com/docxology/template_madlib)
+- GitHub release: [v0.1.0](https://github.com/docxology/template_madlib/releases/tag/v0.1.0)
+- DOI: [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638)
+- Zenodo record: [https://zenodo.org/records/20786638](https://zenodo.org/records/20786638)
+- PDF: [Friedman_2026_Template_a593c1fe.pdf](Friedman_2026_Template_a593c1fe.pdf)
+- PDF: [Friedman_2026_Template_d9248f4f.pdf](Friedman_2026_Template_d9248f4f.pdf)
 - PDF SHA-256: a593c1fedd4b4762c59b3e4f0b678efb84af0b1fa09f1ddff2995a9a805b7bc5
 
 ## Citation

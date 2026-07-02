@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21083779](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.21083779)-blue)]([10.5281/zenodo.21083779](https://doi.org/10.5281/zenodo.21083779))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21083779-blue)](https://doi.org/10.5281/zenodo.21083779)
 
 ---
 
@@ -33,8 +33,12 @@ judgments can be evaluated blind: given the a
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.21083779
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/ntqr_allotment](https://github.com/docxology/ntqr_allotment)
+- GitHub release: [v0.1.0](https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0)
+- DOI: [10.5281/zenodo.21083779](https://doi.org/10.5281/zenodo.21083779)
+- Zenodo record: [https://zenodo.org/records/21083779](https://zenodo.org/records/21083779)
+- PDF: [Friedman_2026_Sortition_73289489.pdf](Friedman_2026_Sortition_73289489.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21083779)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon** (2016) · *Proceedings of the Royal Society B*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1098%2Frspb.2016.0841](https:%2F%2Fdoi.org%2F10.1098%2Frspb.2016.0841)-blue)]([10.1098/rspb.2016.0841](https://doi.org/10.1098/rspb.2016.0841))
+[![DOI](https://img.shields.io/badge/DOI-10.1098%2Frspb.2016.0841-blue)](https://doi.org/10.1098/rspb.2016.0841)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1098/rspb.2016.0841](https://doi.org/10.1098/rspb.2016.0841)
-- PDF SHA-256: See zenodo_record
+- PDF: [2016_ForagingGene.pdf](2016_ForagingGene.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

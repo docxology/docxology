@@ -2,7 +2,7 @@
 
 **Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo** (2015) · *Medical Hypotheses*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.mehy.2015.09.015](https:%2F%2Fdoi.org%2F10.1016%2Fj.mehy.2015.09.015)-blue)]([10.1016/j.mehy.2015.09.015](https://doi.org/10.1016/j.mehy.2015.09.015))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.mehy.2015.09.015-blue)](https://doi.org/10.1016/j.mehy.2015.09.015)
 
 ---
 
@@ -26,7 +26,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.mehy.2015.09.015](https://doi.org/10.1016/j.mehy.2015.09.015)
-- PDF SHA-256: See zenodo_record
+- PDF: [2015_EhrlichialInfection.pdf](2015_EhrlichialInfection.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

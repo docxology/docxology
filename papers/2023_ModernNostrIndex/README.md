@@ -2,7 +2,7 @@
 
 **Andrew Claros, Daniel Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8118155](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.8118155)-blue)]([10.5281/zenodo.8118155](https://doi.org/10.5281/zenodo.8118155))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8118156-blue)](https://doi.org/10.5281/zenodo.8118156)
 
 ---
 
@@ -25,8 +25,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.8118156
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.8118156](https://doi.org/10.5281/zenodo.8118156)
+- Zenodo record: [https://zenodo.org/records/8118156](https://zenodo.org/records/8118156)
+- PDF: [Index_Card_7_5_2023.pdf](Index_Card_7_5_2023.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8118156)
 
 ## Citation
 

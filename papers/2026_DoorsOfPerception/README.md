@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18600040](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.18600040)-blue)]([10.5281/zenodo.18600040](https://doi.org/10.5281/zenodo.18600040))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18600040-blue)](https://doi.org/10.5281/zenodo.18600040)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.18600040](https://doi.org/10.5281/zenodo.18600040)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/18600040](https://zenodo.org/records/18600040)
+- PDF: [2026_DoorsOfPerception.pdf](2026_DoorsOfPerception.pdf)
+- PDF download: [blake_active_inference_DAF_v1_2-12-2026.pdf](https://zenodo.org/api/records/18600041/files/blake_active_inference_DAF_v1_2-12-2026.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/18600040)
 
 ## Citation
 

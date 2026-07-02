@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Deborah M. Gordon** (2018) · *PLoS One*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1371%2Fjournal.pone.0202117](https:%2F%2Fdoi.org%2F10.1371%2Fjournal.pone.0202117)-blue)]([10.1371/journal.pone.0202117](https://doi.org/10.1371/journal.pone.0202117))
+[![DOI](https://img.shields.io/badge/DOI-10.1371%2Fjournal.pone.0202117-blue)](https://doi.org/10.1371/journal.pone.0202117)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1371/journal.pone.0202117](https://doi.org/10.1371/journal.pone.0202117)
-- PDF SHA-256: See zenodo_record
+- PDF: [2018_ArgentineAnt.pdf](2018_ArgentineAnt.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Alexandra Mikhailova, Daniel A. Friedman** (2018) · *Arts*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3390%2Farts7030039](https:%2F%2Fdoi.org%2F10.3390%2Farts7030039)-blue)]([10.3390/arts7030039](https://doi.org/10.3390/arts7030039))
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Farts7030039-blue)](https://doi.org/10.3390/arts7030039)
 
 ---
 
@@ -28,7 +28,8 @@
 ## Artifacts
 
 - DOI: [10.3390/arts7030039](https://doi.org/10.3390/arts7030039)
-- PDF SHA-256: See zenodo_record
+- PDF: [2018_PPPiP.pdf](2018_PPPiP.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

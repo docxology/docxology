@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2025) · *Presentation*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17138223](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.17138223)-blue)]([10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17138223-blue)](https://doi.org/10.5281/zenodo.17138223)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.17138223](https://doi.org/10.5281/zenodo.17138223)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/17138223](https://zenodo.org/records/17138223)
+- PDF: [2025_SystemsProcesses.pdf](2025_SystemsProcesses.pdf)
+- PDF download: [Len-Troncale_DAF_9-17-2025.pdf](https://zenodo.org/api/records/17138224/files/Len-Troncale_DAF_9-17-2025.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/17138223)
 
 ## Citation
 

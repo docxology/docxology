@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286170](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20286170)-blue)]([10.5281/zenodo.20286170](https://doi.org/10.5281/zenodo.20286170))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286171-blue)](https://doi.org/10.5281/zenodo.20286171)
 
 ---
 
@@ -28,8 +28,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20286171
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/crescent_city](https://github.com/docxology/crescent_city)
+- GitHub release: [v1.0.0](https://github.com/docxology/crescent_city/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171)
+- Zenodo record: [https://zenodo.org/records/20286171](https://zenodo.org/records/20286171)
+- PDF: [crescent_city_v1_DAF_05_19_2026.pdf](crescent_city_v1_DAF_05_19_2026.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20286171)
 
 ## Citation
 

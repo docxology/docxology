@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Active Inference Journal*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19699233](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.19699233)-blue)]([10.5281/zenodo.19699233](https://doi.org/10.5281/zenodo.19699233))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19699234-blue)](https://doi.org/10.5281/zenodo.19699234)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.19699234
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [ActiveInferenceInstitute/fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean)
+- GitHub release: [v1.0.0](https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.19699234](https://doi.org/10.5281/zenodo.19699234)
+- Zenodo record: [https://zenodo.org/records/19699234](https://zenodo.org/records/19699234)
+- PDF: [fep_lean_v1_04-24-2026.pdf](fep_lean_v1_04-24-2026.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19699234)
 
 ## Citation
 

@@ -24,8 +24,8 @@
 
 ## Artifacts
 
-- DOI: 978-3-8365-9970-2
-- PDF SHA-256: See zenodo_record
+- PDF: [2024_CurioCards.pdf](2024_CurioCards.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

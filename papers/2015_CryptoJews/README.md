@@ -2,7 +2,7 @@
 
 **Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman** (2015) · *Frontiers in Genetics*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffgene.2015.00261](https:%2F%2Fdoi.org%2F10.3389%2Ffgene.2015.00261)-blue)]([10.3389/fgene.2015.00261](https://doi.org/10.3389/fgene.2015.00261))
+[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffgene.2015.00261-blue)](https://doi.org/10.3389/fgene.2015.00261)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3389/fgene.2015.00261](https://doi.org/10.3389/fgene.2015.00261)
-- PDF SHA-256: See zenodo_record
+- PDF: [2015_CryptoJews.pdf](2015_CryptoJews.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

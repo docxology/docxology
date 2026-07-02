@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17238736](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.17238736)-blue)]([10.5281/zenodo.17238736](https://doi.org/10.5281/zenodo.17238736))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17238736-blue)](https://doi.org/10.5281/zenodo.17238736)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.17238736](https://doi.org/10.5281/zenodo.17238736)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/17238736](https://zenodo.org/records/17238736)
+- PDF: [2025_AntStackComplexity.pdf](2025_AntStackComplexity.pdf)
+- PDF download: [Complexity-Energetics_AntStack_9-30-2025.pdf](https://zenodo.org/api/records/17238737/files/Complexity-Energetics_AntStack_9-30-2025.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/17238736)
 
 ## Citation
 

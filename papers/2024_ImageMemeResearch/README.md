@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas** (2024) · *JASIST*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1002%2Fasi.24900](https:%2F%2Fdoi.org%2F10.1002%2Fasi.24900)-blue)]([10.1002/asi.24900](https://doi.org/10.1002/asi.24900))
+[![DOI](https://img.shields.io/badge/DOI-10.1002%2Fasi.24900-blue)](https://doi.org/10.1002/asi.24900)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1002/asi.24900](https://doi.org/10.1002/asi.24900)
-- PDF SHA-256: See zenodo_record
+- PDF: [2024_ImageMemeResearch.pdf](2024_ImageMemeResearch.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

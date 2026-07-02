@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman & J. Dietz** (2026) · *Active Inference Journal*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19461933](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.19461933)-blue)]([10.5281/zenodo.19461933](https://doi.org/10.5281/zenodo.19461933))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19461933-blue)](https://doi.org/10.5281/zenodo.19461933)
 
 ---
 
@@ -26,7 +26,9 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.19461933](https://doi.org/10.5281/zenodo.19461933)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/19461933](https://zenodo.org/records/19461933)
+- PDF: [act_inf_metaanalysis_v2_04-30-2026.pdf](act_inf_metaanalysis_v2_04-30-2026.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19461933)
 
 ## Citation
 

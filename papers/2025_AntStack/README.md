@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16782756](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.16782756)-blue)]([10.5281/zenodo.16782756](https://doi.org/10.5281/zenodo.16782756))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16782756-blue)](https://doi.org/10.5281/zenodo.16782756)
 
 ---
 
@@ -26,7 +26,8 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.16782756](https://doi.org/10.5281/zenodo.16782756)
-- PDF SHA-256: See zenodo_record
+- PDF: [2025_AntStack.pdf](2025_AntStack.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

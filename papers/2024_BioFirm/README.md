@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2024) · *Presentation*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14861595](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.14861595)-blue)]([10.5281/zenodo.14861595](https://doi.org/10.5281/zenodo.14861595))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14861595-blue)](https://doi.org/10.5281/zenodo.14861595)
 
 ---
 
@@ -26,7 +26,8 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.14861595](https://doi.org/10.5281/zenodo.14861595)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/14861595](https://zenodo.org/records/14861595)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14861595)
 
 ## Citation
 

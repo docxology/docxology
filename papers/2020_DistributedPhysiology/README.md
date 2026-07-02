@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Deborah M. Gordon** (2020) · *Hormones & Behavior*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.yhbeh.2020.104757](https:%2F%2Fdoi.org%2F10.1016%2Fj.yhbeh.2020.104757)-blue)]([10.1016/j.yhbeh.2020.104757](https://doi.org/10.1016/j.yhbeh.2020.104757))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.yhbeh.2020.104757-blue)](https://doi.org/10.1016/j.yhbeh.2020.104757)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.yhbeh.2020.104757](https://doi.org/10.1016/j.yhbeh.2020.104757)
-- PDF SHA-256: See zenodo_record
+- PDF: [2020_DistributedPhysiology.pdf](2020_DistributedPhysiology.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

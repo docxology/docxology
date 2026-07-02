@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8415312](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.8415312)-blue)]([10.5281/zenodo.8415312](https://doi.org/10.5281/zenodo.8415312))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8415312-blue)](https://doi.org/10.5281/zenodo.8415312)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.8415312](https://doi.org/10.5281/zenodo.8415312)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/8415312](https://zenodo.org/records/8415312)
+- PDF: [2023_AccountActiveInference.pdf](2023_AccountActiveInference.pdf)
+- PDF download: [An Account of Active Inference Modeling v1.pdf](https://zenodo.org/api/records/8415313/files/An%20Account%20of%20Active%20Inference%20Modeling%20v1.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8415312)
 
 ## Citation
 

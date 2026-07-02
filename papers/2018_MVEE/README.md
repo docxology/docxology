@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2018) · *Presentation*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13999298](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.13999298)-blue)]([10.5281/zenodo.13999298](https://doi.org/10.5281/zenodo.13999298))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13999298-blue)](https://doi.org/10.5281/zenodo.13999298)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.13999298](https://doi.org/10.5281/zenodo.13999298)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/13999298](https://zenodo.org/records/13999298)
+- PDF: [2018_MVEE.pdf](2018_MVEE.pdf)
+- PDF download: [MVEE_2018.pdf](https://zenodo.org/api/records/13999299/files/MVEE_2018.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/13999298)
 
 ## Citation
 

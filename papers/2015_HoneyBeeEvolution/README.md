@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Brian R. Johnson** (2015) · *Molecular Biology & Evolution*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1093%2Fmolbev%2Fmsu292](https:%2F%2Fdoi.org%2F10.1093%2Fmolbev%2Fmsu292)-blue)]([10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292))
+[![DOI](https://img.shields.io/badge/DOI-10.1093%2Fmolbev%2Fmsu292-blue)](https://doi.org/10.1093/molbev/msu292)
 
 ---
 
@@ -28,7 +28,8 @@
 ## Artifacts
 
 - DOI: [10.1093/molbev/msu292](https://doi.org/10.1093/molbev/msu292)
-- PDF SHA-256: See zenodo_record
+- PDF: [2015_HoneyBeeEvolution.pdf](2015_HoneyBeeEvolution.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

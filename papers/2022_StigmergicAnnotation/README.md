@@ -2,7 +2,7 @@
 
 **Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · *Hypertext '22*
 
-[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2205.06345](https:%2F%2Fdoi.org%2F10.48550%2FarXiv.2205.06345)-blue)]([10.48550/arXiv.2205.06345](https://doi.org/10.48550/arXiv.2205.06345))
+[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2205.06345-blue)](https://doi.org/10.48550/arXiv.2205.06345)
 
 ---
 
@@ -26,7 +26,8 @@
 ## Artifacts
 
 - DOI: [10.48550/arXiv.2205.06345](https://doi.org/10.48550/arXiv.2205.06345)
-- PDF SHA-256: See zenodo_record
+- PDF: [2022_StigmergicAnnotation.pdf](2022_StigmergicAnnotation.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

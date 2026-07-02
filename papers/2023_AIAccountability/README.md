@@ -2,7 +2,7 @@
 
 **Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC)** (2023) · *NTIA*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8025956](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.8025956)-blue)]([10.5281/zenodo.8025956](https://doi.org/10.5281/zenodo.8025956))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8025956-blue)](https://doi.org/10.5281/zenodo.8025956)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.8025956](https://doi.org/10.5281/zenodo.8025956)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/8025956](https://zenodo.org/records/8025956)
+- PDF: [2023_AIAccountability.pdf](2023_AIAccountability.pdf)
+- PDF download: [NTIA_6-11-23_IRSIRI-AII-PIVOT-COGSEC.pdf](https://zenodo.org/api/records/8025957/files/NTIA_6-11-23_IRSIRI-AII-PIVOT-COGSEC.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8025956)
 
 ## Citation
 

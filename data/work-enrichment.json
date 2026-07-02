@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T12:47:46Z",
+  "generated_at": "2026-07-02T13:19:52Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 181,
   "works": {
@@ -3448,9 +3448,15 @@
     },
     "Friedman2026CaliforniaPublicRecordsTechnical173": {
       "citation_key": "Friedman2026CaliforniaPublicRecordsTechnical173",
-      "abstract": "Research paper on CaliforniaPublicRecords.",
+      "abstract": "A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473.",
       "keywords": [
-        "CaliforniaPublicRecords"
+        "California Public Records Act",
+        "open data",
+        "CKAN",
+        "Socrata",
+        "ArcGIS",
+        "cognitive security",
+        "civic technology"
       ],
       "findings": [
         "California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records",

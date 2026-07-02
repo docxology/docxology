@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21086292](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.21086292)-blue)]([10.5281/zenodo.21086292](https://doi.org/10.5281/zenodo.21086292))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21086292-blue)](https://doi.org/10.5281/zenodo.21086292)
 
 ---
 
@@ -36,7 +36,11 @@ an interactive walkthrough notebook
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.21086292
+- GitHub repository: [docxology/template_eda_notebook](https://github.com/docxology/template_eda_notebook)
+- GitHub release: [v1.0.0](https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.21086292](https://doi.org/10.5281/zenodo.21086292)
+- Zenodo record: [https://zenodo.org/records/21086292](https://zenodo.org/records/21086292)
+- PDF: [Friedman_2026_Exploratory_0b10852b.pdf](Friedman_2026_Exploratory_0b10852b.pdf)
 - PDF SHA-256: 0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d
 
 ## Citation

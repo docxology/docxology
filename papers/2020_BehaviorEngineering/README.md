@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4021162](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.4021162)-blue)]([10.5281/zenodo.4021162](https://doi.org/10.5281/zenodo.4021162))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4021162-blue)](https://doi.org/10.5281/zenodo.4021162)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.4021162](https://doi.org/10.5281/zenodo.4021162)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/4021162](https://zenodo.org/records/4021162)
+- PDF: [2020_BehaviorEngineering.pdf](2020_BehaviorEngineering.pdf)
+- PDF download: [AIN1_Act_Inf_Narratives_v1.pdf](https://zenodo.org/api/records/4021163/files/AIN1_Act_Inf_Narratives_v1.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/4021162)
 
 ## Citation
 

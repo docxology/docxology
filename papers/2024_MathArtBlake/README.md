@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2024) · *Presentation*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13711301](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.13711301)-blue)]([10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13711301-blue)](https://doi.org/10.5281/zenodo.13711301)
 
 ---
 
@@ -26,7 +26,9 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/13711301](https://zenodo.org/records/13711301)
+- PDF download: [WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf](https://zenodo.org/api/records/13711302/files/WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/13711301)
 
 ## Citation
 

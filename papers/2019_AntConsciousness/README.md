@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Eirik Søvik** (2019) · *Synthese*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1007%2Fs11229-019-02130-y](https:%2F%2Fdoi.org%2F10.1007%2Fs11229-019-02130-y)-blue)]([10.1007/s11229-019-02130-y](https://doi.org/10.1007/s11229-019-02130-y))
+[![DOI](https://img.shields.io/badge/DOI-10.1007%2Fs11229-019-02130-y-blue)](https://doi.org/10.1007/s11229-019-02130-y)
 
 ---
 
@@ -28,7 +28,8 @@
 ## Artifacts
 
 - DOI: [10.1007/s11229-019-02130-y](https://doi.org/10.1007/s11229-019-02130-y)
-- PDF SHA-256: See zenodo_record
+- PDF: [2019_AntConsciousness.pdf](2019_AntConsciousness.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

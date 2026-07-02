@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20420556](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20420556)-blue)]([10.5281/zenodo.20420556](https://doi.org/10.5281/zenodo.20420556))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20420556-blue)](https://doi.org/10.5281/zenodo.20420556)
 
 ---
 
@@ -26,8 +26,12 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20420556
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/BeeStack](https://github.com/docxology/BeeStack)
+- GitHub release: [v1.0.0](https://github.com/docxology/BeeStack/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20420556](https://doi.org/10.5281/zenodo.20420556)
+- Zenodo record: [https://zenodo.org/records/20420556](https://zenodo.org/records/20420556)
+- PDF: [BeeStack_combined.pdf](BeeStack_combined.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20420556)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10034511](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10034511)-blue)]([10.5281/zenodo.10034511](https://doi.org/10.5281/zenodo.10034511))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10034511-blue)](https://doi.org/10.5281/zenodo.10034511)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10034511](https://doi.org/10.5281/zenodo.10034511)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/10034511](https://zenodo.org/records/10034511)
+- PDF: [2023_P3IF.pdf](2023_P3IF.pdf)
+- PDF download: [TAAB-P3IF_v1_10.5281_zenodo.10034512.pdf](https://zenodo.org/api/records/10034512/files/TAAB-P3IF_v1_10.5281_zenodo.10034512.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10034511)
 
 ## Citation
 

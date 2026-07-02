@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Annette Pilko, Deborah M. Gordon** (2018) · *iScience*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.isci.2018.09.001](https:%2F%2Fdoi.org%2F10.1016%2Fj.isci.2018.09.001)-blue)]([10.1016/j.isci.2018.09.001](https://doi.org/10.1016/j.isci.2018.09.001))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.isci.2018.09.001-blue)](https://doi.org/10.1016/j.isci.2018.09.001)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.isci.2018.09.001](https://doi.org/10.1016/j.isci.2018.09.001)
-- PDF SHA-256: See zenodo_record
+- PDF: [2018_DopamineForaging.pdf](2018_DopamineForaging.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

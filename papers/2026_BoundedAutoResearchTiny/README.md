@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417016](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20417016)-blue)]([10.5281/zenodo.20417016](https://doi.org/10.5281/zenodo.20417016))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417016-blue)](https://doi.org/10.5281/zenodo.20417016)
 
 ---
 
@@ -33,7 +33,13 @@ bounded small MNIST neural-network classification loop.
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20417016
+- GitHub repository: [docxology/template_autoresearch_project](https://github.com/docxology/template_autoresearch_project)
+- GitHub release: [v0.3.2](https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2)
+- DOI: [10.5281/zenodo.20417016](https://doi.org/10.5281/zenodo.20417016)
+- Zenodo record: [https://zenodo.org/records/20417016](https://zenodo.org/records/20417016)
+- PDF: [Friedman_2026_Bounded_537dd8a6.pdf](Friedman_2026_Bounded_537dd8a6.pdf)
+- PDF: [Friedman_2026_Bounded_e07b6285.pdf](Friedman_2026_Bounded_e07b6285.pdf)
+- PDF: [Friedman_2026_Bounded_f02abeea.pdf](Friedman_2026_Bounded_f02abeea.pdf)
 - PDF SHA-256: e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a
 
 ## Citation

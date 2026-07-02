@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Deborah M. Gordon, Liqun Luo** (2017) · *Cell*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cell.2017.07.046](https:%2F%2Fdoi.org%2F10.1016%2Fj.cell.2017.07.046)-blue)]([10.1016/j.cell.2017.07.046](https://doi.org/10.1016/j.cell.2017.07.046))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cell.2017.07.046-blue)](https://doi.org/10.1016/j.cell.2017.07.046)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.cell.2017.07.046](https://doi.org/10.1016/j.cell.2017.07.046)
-- PDF SHA-256: See zenodo_record
+- PDF: [2017_MutAnts.pdf](2017_MutAnts.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

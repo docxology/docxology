@@ -24,8 +24,8 @@
 
 ## Artifacts
 
-- DOI: 978-1-7364269-2-0
-- PDF SHA-256: See zenodo_record
+- PDF: [2021_NarrativeEcosystems.pdf](2021_NarrativeEcosystems.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

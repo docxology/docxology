@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16740438](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.16740438)-blue)]([10.5281/zenodo.16740438](https://doi.org/10.5281/zenodo.16740438))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16740438-blue)](https://doi.org/10.5281/zenodo.16740438)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.16740438](https://doi.org/10.5281/zenodo.16740438)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/16740438](https://zenodo.org/records/16740438)
+- PDF: [2025_CognitiveArtScience.pdf](2025_CognitiveArtScience.pdf)
+- PDF download: [On_Cognitive_Art_DAF_v1_8-4-2025.pdf](https://zenodo.org/api/records/16740439/files/On_Cognitive_Art_DAF_v1_8-4-2025.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/16740438)
 
 ## Citation
 

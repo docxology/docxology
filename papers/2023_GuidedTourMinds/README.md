@@ -2,7 +2,7 @@
 
 **Ali Rahmjoo, Daniel Ari Friedman** (2023) · *Physics of Life Reviews*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2023.11.001](https:%2F%2Fdoi.org%2F10.1016%2Fj.plrev.2023.11.001)-blue)]([10.1016/j.plrev.2023.11.001](https://doi.org/10.1016/j.plrev.2023.11.001))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2023.11.001-blue)](https://doi.org/10.1016/j.plrev.2023.11.001)
 
 ---
 
@@ -26,7 +26,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.plrev.2023.11.001](https://doi.org/10.1016/j.plrev.2023.11.001)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_GuidedTourMinds.pdf](2023_GuidedTourMinds.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

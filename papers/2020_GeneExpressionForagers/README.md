@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer** (2020) · *Communications Biology*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs42003-020-0813-8](https:%2F%2Fdoi.org%2F10.1038%2Fs42003-020-0813-8)-blue)]([10.1038/s42003-020-0813-8](https://doi.org/10.1038/s42003-020-0813-8))
+[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs42003-020-0813-8-blue)](https://doi.org/10.1038/s42003-020-0813-8)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1038/s42003-020-0813-8](https://doi.org/10.1038/s42003-020-0813-8)
-- PDF SHA-256: See zenodo_record
+- PDF: [2020_GeneExpressionForagers.pdf](2020_GeneExpressionForagers.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

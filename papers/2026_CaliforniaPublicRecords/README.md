@@ -1,18 +1,18 @@
-# 🛡️ CaliforniaPublicRecords
+# 🛡️ California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20789899](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20789899)-blue)]([10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20789899-blue)](https://doi.org/10.5281/zenodo.20789899)
 
 ---
 
 ## Abstract
 
-> Research paper on CaliforniaPublicRecords.
+> A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473.
 
 ## Keywords
 
-`CaliforniaPublicRecords`
+`California Public Records Act` · `open data` · `CKAN` · `Socrata` · `ArcGIS` · `cognitive security` · `civic technology`
 
 ## Methods
 
@@ -29,11 +29,13 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/20789899](https://zenodo.org/records/20789899)
+- PDF: [Friedman_2026_California_8f09eac2.pdf](Friedman_2026_California_8f09eac2.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20789899)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *CaliforniaPublicRecords*. Zenodo.
+> Daniel Ari Friedman (2026). *California Public Records: A Technical and Legal Reference for the Post-AB 473 Era*. Zenodo.
 
 ## Related
 

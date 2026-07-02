@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417104](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20417104)-blue)]([10.5281/zenodo.20417104](https://doi.org/10.5281/zenodo.20417104))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417104-blue)](https://doi.org/10.5281/zenodo.20417104)
 
 ---
 
@@ -26,7 +26,13 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20417104
+- GitHub repository: [docxology/template_prose_project](https://github.com/docxology/template_prose_project)
+- GitHub release: [v0.4.2](https://github.com/docxology/template_prose_project/releases/tag/v0.4.2)
+- DOI: [10.5281/zenodo.20417104](https://doi.org/10.5281/zenodo.20417104)
+- Zenodo record: [https://zenodo.org/records/20417104](https://zenodo.org/records/20417104)
+- PDF: [Friedman_2026_Editorial_290d21b1.pdf](Friedman_2026_Editorial_290d21b1.pdf)
+- PDF: [Friedman_2026_Editorial_b59313ea.pdf](Friedman_2026_Editorial_b59313ea.pdf)
+- PDF: [Friedman_2026_Editorial_cbe5adae.pdf](Friedman_2026_Editorial_cbe5adae.pdf)
 - PDF SHA-256: 290d21b10bd588b978d6a3200cdf0e3c2441ca86fcdc777ab41975fa910a260e
 
 ## Citation

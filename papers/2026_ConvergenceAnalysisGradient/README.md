@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417136](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20417136)-blue)]([10.5281/zenodo.20417136](https://doi.org/10.5281/zenodo.20417136))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20417136-blue)](https://doi.org/10.5281/zenodo.20417136)
 
 ---
 
@@ -26,7 +26,13 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20417136
+- GitHub repository: [docxology/template_code_project](https://github.com/docxology/template_code_project)
+- GitHub release: [v2.5.2](https://github.com/docxology/template_code_project/releases/tag/v2.5.2)
+- DOI: [10.5281/zenodo.20417136](https://doi.org/10.5281/zenodo.20417136)
+- Zenodo record: [https://zenodo.org/records/20417136](https://zenodo.org/records/20417136)
+- PDF: [Friedman_2026_Convergence_33ceeb67.pdf](Friedman_2026_Convergence_33ceeb67.pdf)
+- PDF: [Friedman_2026_Convergence_cd54b958.pdf](Friedman_2026_Convergence_cd54b958.pdf)
+- PDF: [Friedman_2026_Convergence_d63f738b.pdf](Friedman_2026_Convergence_d63f738b.pdf)
 - PDF SHA-256: cd54b95893501467503fab2c4b432573306bc94f7040085550beb87d094b4e50
 
 ## Citation

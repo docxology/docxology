@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10659374](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10659374)-blue)]([10.5281/zenodo.10659374](https://doi.org/10.5281/zenodo.10659374))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10659375-blue)](https://doi.org/10.5281/zenodo.10659375)
 
 ---
 
@@ -26,8 +26,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.10659375
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.10659375](https://doi.org/10.5281/zenodo.10659375)
+- Zenodo record: [https://zenodo.org/records/10659375](https://zenodo.org/records/10659375)
+- PDF: [PushPull_v1_DAF_2-14-2024.pdf](PushPull_v1_DAF_2-14-2024.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10659375)
 
 ## Citation
 

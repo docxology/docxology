@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20976824](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.20976824)-blue)]([10.5281/zenodo.20976824](https://doi.org/10.5281/zenodo.20976824))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20976824-blue)](https://doi.org/10.5281/zenodo.20976824)
 
 ---
 
@@ -35,8 +35,12 @@ t...
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.20976824
-- PDF SHA-256: See zenodo_record
+- GitHub repository: [docxology/alphacogant](https://github.com/docxology/alphacogant)
+- GitHub release: [v1.0.0](https://github.com/docxology/alphacogant/releases/tag/v1.0.0)
+- DOI: [10.5281/zenodo.20976824](https://doi.org/10.5281/zenodo.20976824)
+- Zenodo record: [https://zenodo.org/records/20976824](https://zenodo.org/records/20976824)
+- PDF: [Friedman_2026_Alphacogant_41efa7a8.pdf](Friedman_2026_Alphacogant_41efa7a8.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20976824)
 
 ## Citation
 

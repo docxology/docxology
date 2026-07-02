@@ -2,7 +2,7 @@
 
 **Ronen Tamari, Daniel A. Friedman** (2023) · *MetaArXiv*
 
-[![DOI](https://img.shields.io/badge/DOI-10.31222%2Fosf.io%2F9nb3u](https:%2F%2Fdoi.org%2F10.31222%2Fosf.io%2F9nb3u)-blue)]([10.31222/osf.io/9nb3u](https://doi.org/10.31222/osf.io/9nb3u))
+[![DOI](https://img.shields.io/badge/DOI-10.31222%2Fosf.io%2F9nb3u-blue)](https://doi.org/10.31222/osf.io/9nb3u)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.31222/osf.io/9nb3u](https://doi.org/10.31222/osf.io/9nb3u)
-- PDF SHA-256: See zenodo_record
+- PDF: [2023_OpenScienceSensemaking.pdf](2023_OpenScienceSensemaking.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

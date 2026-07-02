@@ -24,8 +24,8 @@
 
 ## Artifacts
 
-- DOI: 978-1-7364269-3-7
-- PDF SHA-256: See zenodo_record
+- PDF: [2022_InformationCommons.pdf](2022_InformationCommons.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

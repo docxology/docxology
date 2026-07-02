@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, Deborah M. Gordon** (2017) · *Molecular Ecology*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1111%2Fmec.13964](https:%2F%2Fdoi.org%2F10.1111%2Fmec.13964)-blue)]([10.1111/mec.13964](https://doi.org/10.1111/mec.13964))
+[![DOI](https://img.shields.io/badge/DOI-10.1111%2Fmec.13964-blue)](https://doi.org/10.1111/mec.13964)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1111/mec.13964](https://doi.org/10.1111/mec.13964)
-- PDF SHA-256: See zenodo_record
+- PDF: [2017_TwoLineages.pdf](2017_TwoLineages.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

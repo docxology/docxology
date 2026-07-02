@@ -2,7 +2,7 @@
 
 **Scott David, R.J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5750934](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.5750934)-blue)]([10.5281/zenodo.5750934](https://doi.org/10.5281/zenodo.5750934))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5750934-blue)](https://doi.org/10.5281/zenodo.5750934)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.5750934](https://doi.org/10.5281/zenodo.5750934)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/5750934](https://zenodo.org/records/5750934)
+- PDF: [2021_ModelingConflict.pdf](2021_ModelingConflict.pdf)
+- PDF download: [AIC v1_2.pdf](https://zenodo.org/api/records/5759807/files/AIC%20v1_2.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/5750934)
 
 ## Citation
 

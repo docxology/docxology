@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, et al.** (2025) · *Frontiers in Psychology*
 
-[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffpsyg.2025.1585315](https:%2F%2Fdoi.org%2F10.3389%2Ffpsyg.2025.1585315)-blue)]([10.3389/fpsyg.2025.1585315](https://doi.org/10.3389/fpsyg.2025.1585315))
+[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffpsyg.2025.1585315-blue)](https://doi.org/10.3389/fpsyg.2025.1585315)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.3389/fpsyg.2025.1585315](https://doi.org/10.3389/fpsyg.2025.1585315)
-- PDF SHA-256: See zenodo_record
+- PDF: [2025_TemporalDepth.pdf](2025_TemporalDepth.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

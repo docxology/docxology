@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman, Dean Tickles** (2024) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10798144](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10798144)-blue)]([10.5281/zenodo.10798144](https://doi.org/10.5281/zenodo.10798144))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10798144-blue)](https://doi.org/10.5281/zenodo.10798144)
 
 ---
 
@@ -27,7 +27,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10798144](https://doi.org/10.5281/zenodo.10798144)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/10798144](https://zenodo.org/records/10798144)
+- PDF: [2024_QuantumDreams.pdf](2024_QuantumDreams.pdf)
+- PDF download: [FourFoldFields _Friedman_Tickles_v1_3-8-2024.pdf](https://zenodo.org/api/records/10798145/files/FourFoldFields%20_Friedman_Tickles_v1_3-8-2024.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10798144)
 
 ## Citation
 

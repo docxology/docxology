@@ -2,7 +2,7 @@
 
 **Daniel Friedman, RJ Cordes** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.12601674](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.12601674)-blue)]([10.5281/zenodo.12601674](https://doi.org/10.5281/zenodo.12601674))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.12601675-blue)](https://doi.org/10.5281/zenodo.12601675)
 
 ---
 
@@ -26,8 +26,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.12601675
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.12601675](https://doi.org/10.5281/zenodo.12601675)
+- Zenodo record: [https://zenodo.org/records/12601675](https://zenodo.org/records/12601675)
+- PDF: [InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf](InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/12601675)
 
 ## Citation
 

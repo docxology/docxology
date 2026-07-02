@@ -2,7 +2,7 @@
 
 **R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10296601](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.10296601)-blue)]([10.5281/zenodo.10296601](https://doi.org/10.5281/zenodo.10296601))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10296601-blue)](https://doi.org/10.5281/zenodo.10296601)
 
 ---
 
@@ -26,7 +26,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10296601](https://doi.org/10.5281/zenodo.10296601)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/10296601](https://zenodo.org/records/10296601)
+- PDF: [2023_ATLAS.pdf](2023_ATLAS.pdf)
+- PDF download: [ATLAS_V-1-2.pdf](https://zenodo.org/api/records/10362561/files/ATLAS_V-1-2.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10296601)
 
 ## Citation
 

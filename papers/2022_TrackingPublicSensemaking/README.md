@@ -2,7 +2,7 @@
 
 **Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6904426](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.6904426)-blue)]([10.5281/zenodo.6904426](https://doi.org/10.5281/zenodo.6904426))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6904427-blue)](https://doi.org/10.5281/zenodo.6904427)
 
 ---
 
@@ -26,8 +26,10 @@
 
 ## Artifacts
 
-- DOI: 10.5281/zenodo.6904427
-- PDF SHA-256: See zenodo_record
+- DOI: [10.5281/zenodo.6904427](https://doi.org/10.5281/zenodo.6904427)
+- Zenodo record: [https://zenodo.org/records/6904427](https://zenodo.org/records/6904427)
+- PDF: [ECOMEME2-v1.0.pdf](ECOMEME2-v1.0.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/6904427)
 
 ## Citation
 

@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, et al.** (2024) · *Ecology & Evolution*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1002%2Fece3.70063](https:%2F%2Fdoi.org%2F10.1002%2Fece3.70063)-blue)]([10.1002/ece3.70063](https://doi.org/10.1002/ece3.70063))
+[![DOI](https://img.shields.io/badge/DOI-10.1002%2Fece3.70063-blue)](https://doi.org/10.1002/ece3.70063)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1002/ece3.70063](https://doi.org/10.1002/ece3.70063)
-- PDF SHA-256: See zenodo_record
+- PDF: [2024_BlattodeaDiversity.pdf](2024_BlattodeaDiversity.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

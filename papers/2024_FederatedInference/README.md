@@ -2,7 +2,7 @@
 
 **Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith** (2024) · *Neuroscience & Biobehavioral Reviews*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.neubiorev.2023.105500](https:%2F%2Fdoi.org%2F10.1016%2Fj.neubiorev.2023.105500)-blue)]([10.1016/j.neubiorev.2023.105500](https://doi.org/10.1016/j.neubiorev.2023.105500))
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.neubiorev.2023.105500-blue)](https://doi.org/10.1016/j.neubiorev.2023.105500)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1016/j.neubiorev.2023.105500](https://doi.org/10.1016/j.neubiorev.2023.105500)
-- PDF SHA-256: See zenodo_record
+- PDF: [2024_FederatedInference.pdf](2024_FederatedInference.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

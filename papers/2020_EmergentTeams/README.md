@@ -2,7 +2,7 @@
 
 **Daniel A. Friedman, R.J. Cordes, Scott David** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3986084](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.3986084)-blue)]([10.5281/zenodo.3986084](https://doi.org/10.5281/zenodo.3986084))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3986084-blue)](https://doi.org/10.5281/zenodo.3986084)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.3986084](https://doi.org/10.5281/zenodo.3986084)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/3986084](https://zenodo.org/records/3986084)
+- PDF: [2020_EmergentTeams.pdf](2020_EmergentTeams.pdf)
+- PDF download: [CordesFriedman2020.pdf](https://zenodo.org/api/records/3986085/files/CordesFriedman2020.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/3986084)
 
 ## Citation
 

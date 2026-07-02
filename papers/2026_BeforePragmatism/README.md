@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18807970](https:%2F%2Fdoi.org%2F10.5281%2Fzenodo.18807970)-blue)]([10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970))
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18807970-blue)](https://doi.org/10.5281/zenodo.18807970)
 
 ---
 
@@ -28,7 +28,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970)
-- PDF SHA-256: See zenodo_record
+- Zenodo record: [https://zenodo.org/records/18807970](https://zenodo.org/records/18807970)
+- PDF: [2026_BeforePragmatism.pdf](2026_BeforePragmatism.pdf)
+- PDF download: [BlakeAmericaPragmatism_DAF_v2_03122026.pdf](https://zenodo.org/api/records/18984939/files/BlakeAmericaPragmatism_DAF_v2_03122026.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/18807970)
 
 ## Citation
 

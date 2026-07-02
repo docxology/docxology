@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T12:50:00Z",
+  "generated_at": "2026-07-02T13:20:21Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -4124,16 +4124,22 @@
       "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
       "url": "/works/Friedman2026CaliforniaPublicRecordsTechnical173.html",
       "external_url": "https://doi.org/10.5281/zenodo.20789899",
-      "summary": "Research paper on CaliforniaPublicRecords.",
+      "summary": "A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473.",
       "year": 2026,
       "domain": "Cognitive Security",
       "tags": [
         "Paper",
         "Cognitive Security",
         "bibliography",
-        "CaliforniaPublicRecords"
+        "California Public Records Act",
+        "open data",
+        "CKAN",
+        "Socrata",
+        "ArcGIS",
+        "cognitive security",
+        "civic technology"
       ],
-      "content": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era Zenodo 10.5281/zenodo.20789899 Friedman2026CaliforniaPublicRecordsTechnical173 Cognitive Security Paper Research paper on CaliforniaPublicRecords. CaliforniaPublicRecords California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology California Public Records Act (CPRA) legal analysis Open-data portal integration (CKAN/Socrata/ArcGIS) Government transparency framework evaluation"
+      "content": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era Zenodo 10.5281/zenodo.20789899 Friedman2026CaliforniaPublicRecordsTechnical173 Cognitive Security Paper A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473. California Public Records Act open data CKAN Socrata ArcGIS cognitive security civic technology California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology California Public Records Act (CPRA) legal analysis Open-data portal integration (CKAN/Socrata/ArcGIS) Government transparency framework evaluation"
     },
     {
       "id": "work:Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",

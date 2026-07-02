@@ -2,7 +2,7 @@
 
 **Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton** (2020) · *Analytical & Bioanalytical Chemistry*
 
-[![DOI](https://img.shields.io/badge/DOI-10.1007%2Fs00216-019-02355-3](https:%2F%2Fdoi.org%2F10.1007%2Fs00216-019-02355-3)-blue)]([10.1007/s00216-019-02355-3](https://doi.org/10.1007/s00216-019-02355-3))
+[![DOI](https://img.shields.io/badge/DOI-10.1007%2Fs00216-019-02355-3-blue)](https://doi.org/10.1007/s00216-019-02355-3)
 
 ---
 
@@ -27,7 +27,8 @@
 ## Artifacts
 
 - DOI: [10.1007/s00216-019-02355-3](https://doi.org/10.1007/s00216-019-02355-3)
-- PDF SHA-256: See zenodo_record
+- PDF: [2020_NeurotransmitterVariation.pdf](2020_NeurotransmitterVariation.pdf)
+- PDF SHA-256: Not recorded
 
 ## Citation
 
