@@ -267,7 +267,9 @@ def source_repository_url(docs_path: str) -> str:
 
 def citation_text(work: dict) -> str:
     venue = f" {work['venue']}." if work.get("venue") else ""
-    return f"Friedman, Daniel Ari. {work['year']}. {work['title']}.{venue}"
+    url = work.get("url") or f"https://danielarifriedman.com/works/{work['citation_key']}.html"
+    doi = f" DOI: {work['doi']}." if work.get("doi") else ""
+    return f"Friedman, Daniel Ari. {work['year']}. {work['title']}.{venue}{doi} URL: {url}."
 
 
 def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
