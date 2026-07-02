@@ -45,7 +45,7 @@ newspaper of Crescent City, California (founded 1879).
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine*. Zenodo.
+> Daniel Ari Friedman (2026). *The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine*. Zenodo. DOI: 10.5281/zenodo.20533675. URL: https://doi.org/10.5281/zenodo.20533675.
 
 ## Related
 

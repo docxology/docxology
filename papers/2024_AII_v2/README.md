@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Active Inference Institute (2024). *AII_v2*. Zenodo.
+> Active Inference Institute (2024). *AII_v2*. Zenodo. DOI: 10.5281/zenodo.14108992. URL: https://doi.org/10.5281/zenodo.14108992.
 
 ## Related
 

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.
+> This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper "How and Why Consciousness Arises: Some Considerations from Physics and Physiology" by Mark Solms and Karl Friston.
 
 ## Keywords
 
@@ -22,7 +22,7 @@
 ## Key Findings
 
 - This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute.
-- The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston.
+- The focus is the 2018 paper "How and Why Consciousness Arises: Some Considerations from Physics and Physiology" by Mark Solms and Karl Friston.
 
 ## Artifacts
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Mark Solms, David S Douglass, Stephen Sillett, Daniel Ari Friedman (2022). *Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016*. Zenodo.
+> Mark Solms, David S Douglass, Stephen Sillett, Daniel Ari Friedman (2022). *Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016*. Zenodo. DOI: 10.5281/zenodo.7267947. URL: https://doi.org/10.5281/zenodo.7267947.
 
 ## Related
 

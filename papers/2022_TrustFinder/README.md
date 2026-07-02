@@ -35,7 +35,7 @@
 
 ## Citation
 
-> R.J. Cordes, Scott David, Daniel A. Friedman (2022). *TrustFinder*. Zenodo.
+> R.J. Cordes, Scott David, Daniel A. Friedman (2022). *TrustFinder*. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836.
 
 ## Related
 

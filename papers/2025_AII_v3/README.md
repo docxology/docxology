@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Active Inference Institute (2025). *AII_v3*. Zenodo.
+> Active Inference Institute (2025). *AII_v3*. Zenodo. DOI: 10.5281/zenodo.17982447. URL: https://doi.org/10.5281/zenodo.17982447.
 
 ## Related
 

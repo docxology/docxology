@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Virginia Bleu Knight (2022). *ActiveInferenceOntology*. Zenodo.
+> Daniel A. Friedman, Virginia Bleu Knight (2022). *ActiveInferenceOntology*. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574.
 
 ## Related
 

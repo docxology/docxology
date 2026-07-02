@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J. Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.co...
+> Transcript of a three-session series of discussions of the paper "Canonical neural networks perform active inference" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM_NlUzyq8M LS...
 
 ## Keywords
 
@@ -21,8 +21,8 @@
 
 ## Key Findings
 
-- Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J.
-- Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context.
+- Transcript of a three-session series of discussions of the paper "Canonical neural networks perform active inference" by Takuya Isomura, Hideaki Shimazaki & Karl J.
+- Friston. https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context.
 
 ## Artifacts
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Takuya Isomura, Daniel Friedman (2022). *Canonical neural networks perform active inference*. Zenodo.
+> Takuya Isomura, Daniel Friedman (2022). *Canonical neural networks perform active inference*. Zenodo. DOI: 10.5281/zenodo.7400536. URL: https://doi.org/10.5281/zenodo.7400536.
 
 ## Related
 

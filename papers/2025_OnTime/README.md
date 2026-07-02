@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *OnTime*. Zenodo.
+> Daniel A. Friedman (2025). *OnTime*. Zenodo. DOI: 10.5281/zenodo.15168381. URL: https://doi.org/10.5281/zenodo.15168381.
 
 ## Related
 

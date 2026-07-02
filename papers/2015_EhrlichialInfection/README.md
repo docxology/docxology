@@ -31,7 +31,7 @@
 
 ## Citation
 
-> Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo (2015). *EhrlichialInfection*. Medical Hypotheses.
+> Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo (2015). *EhrlichialInfection*. Medical Hypotheses. DOI: 10.1016/j.mehy.2015.09.015. URL: https://doi.org/10.1016/j.mehy.2015.09.015.
 
 ## Related
 

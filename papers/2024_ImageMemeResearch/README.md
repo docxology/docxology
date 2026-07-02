@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas (2024). *ImageMemeResearch*. JASIST.
+> Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas (2024). *ImageMemeResearch*. JASIST. DOI: 10.1002/asi.24900. URL: https://doi.org/10.1002/asi.24900.
 
 ## Related
 

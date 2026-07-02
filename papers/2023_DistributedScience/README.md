@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant (2023). *DistributedScience*. OSF.
+> Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant (2023). *DistributedScience*. OSF. DOI: 10.31219/osf.io/dnw5k. URL: https://doi.org/10.31219/osf.io/dnw5k.
 
 ## Related
 

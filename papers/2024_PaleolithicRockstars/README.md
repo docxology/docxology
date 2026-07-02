@@ -31,7 +31,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *PaleolithicRockstars*. Physics of Life Reviews.
+> Daniel Ari Friedman (2024). *PaleolithicRockstars*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2024.04.010. URL: https://doi.org/10.1016/j.plrev.2024.04.010.
 
 ## Related
 

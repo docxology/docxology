@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *PostdocReview*. Presentation.
+> Daniel Ari Friedman (2023). *PostdocReview*. Presentation. DOI: 10.5281/zenodo.8377987. URL: https://doi.org/10.5281/zenodo.8377987.
 
 ## Related
 

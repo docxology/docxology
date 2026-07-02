@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space ..
+- This transcript comes from an event “Sensemaking Federation: Exploring the Frontiers of Digital Innovation” on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space ..
 - The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting..
 - This version of the transcript has been lightly edited for readability..
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman (2024). *SensemakingFederation*. Presentation.
+> Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman (2024). *SensemakingFederation*. Presentation. DOI: 10.5281/zenodo.14574046. URL: https://doi.org/10.5281/zenodo.14574046.
 
 ## Related
 

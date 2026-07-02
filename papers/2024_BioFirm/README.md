@@ -31,7 +31,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2024). *BioFirm*. Presentation.
+> Daniel A. Friedman (2024). *BioFirm*. Presentation. DOI: 10.5281/zenodo.14861595. URL: https://doi.org/10.5281/zenodo.14861595.
 
 ## Related
 

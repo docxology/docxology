@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T16:43:12Z",
+  "generated_at": "2026-07-02T18:04:40Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 181,
   "works": {
@@ -1040,7 +1040,7 @@
       "findings": [
         "This report provides a single-page account of Active Inference modeling..",
         "This report was written entirely by hand without any synthetic computational-linguistic intelligences..",
-        "Thank you to the learners, interns, and participants of the Active Inference Institute to whom I& 39;ve mostly learned from.."
+        "Thank you to the learners, interns, and participants of the Active Inference Institute to whom I've mostly learned from.."
       ],
       "methods": [
         "Free energy minimization",
@@ -2892,7 +2892,7 @@
     },
     "Friedman2022CanonicalNeuralNetworksPerform140": {
       "citation_key": "Friedman2022CanonicalNeuralNetworksPerform140",
-      "abstract": "Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS 051.1: First participatory group discussion. https://www.youtube.co...",
+      "abstract": "Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS 051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM NlUzyq8M LS...",
       "keywords": [
         "CanonicalNeuralNetworks"
       ],
@@ -3166,13 +3166,12 @@
     },
     "Friedman2026TemplateTextbook154": {
       "citation_key": "Friedman2026TemplateTextbook154",
-      "abstract": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. --- Associated artifacts GitHub release: v0.1.2 (https://github.com/docxology/template textbook/releases/tag/v0.1.2) DOI: https://doi.org/10.5281/zenodo.2053312...",
+      "abstract": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.",
       "keywords": [
         "TemplateTextbook"
       ],
       "findings": [
-        "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and",
-        "---"
+        "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and"
       ],
       "methods": [
         "Software pipeline design",
@@ -3311,7 +3310,7 @@
     },
     "Friedman2026ENTOENcryptedTypedOmnitrack167": {
       "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
-      "abstract": "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacut...",
+      "abstract": "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire...",
       "keywords": [
         "research data formats",
         "authenticated encryption",

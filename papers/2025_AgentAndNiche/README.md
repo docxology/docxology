@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *AgentAndNiche*. Zenodo.
+> Daniel Ari Friedman (2025). *AgentAndNiche*. Zenodo. DOI: 10.5281/zenodo.17235137. URL: https://doi.org/10.5281/zenodo.17235137.
 
 ## Related
 

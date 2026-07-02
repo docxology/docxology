@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin (2024). *FarmWorks*. Zenodo.
+> Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin (2024). *FarmWorks*. Zenodo. DOI: 10.5281/zenodo.13754585. URL: https://doi.org/10.5281/zenodo.13754585.
 
 ## Related
 

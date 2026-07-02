@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research*. Zenodo.
+> Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research*. Zenodo. DOI: 10.5281/zenodo.20419007. URL: https://doi.org/10.5281/zenodo.20419007.
 
 ## Related
 

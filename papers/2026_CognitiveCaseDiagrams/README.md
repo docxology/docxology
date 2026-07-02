@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Compositional Approaches to Linguistic Case for Cognitive Modeling*. Active Inference Journal.
+> Daniel Ari Friedman (2026). *Compositional Approaches to Linguistic Case for Cognitive Modeling*. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259.
 
 ## Related
 

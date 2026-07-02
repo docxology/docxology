@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *InfiniteImaginarium*. Zenodo.
+> Daniel Ari Friedman (2024). *InfiniteImaginarium*. Zenodo. DOI: 10.5281/zenodo.10601081. URL: https://doi.org/10.5281/zenodo.10601081.
 
 ## Related
 

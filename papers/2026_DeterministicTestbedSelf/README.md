@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Recent work on AutoScientists  coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, ...
+> Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate directions, noise-band confirmation of claimed improvements, and stagnation-driven reorganization of teams. This exemplar provides a deterministic, ...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Recent work on AutoScientists  coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired de
+- Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired de
 - This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim.
 
 ## Artifacts
@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *A Deterministic Testbed for Self-Organizing Agent-Team Coordination*. Zenodo.
+> Daniel Ari Friedman (2026). *A Deterministic Testbed for Self-Organizing Agent-Team Coordination*. Zenodo. DOI: 10.5281/zenodo.20533669. URL: https://doi.org/10.5281/zenodo.20533669.
 
 ## Related
 

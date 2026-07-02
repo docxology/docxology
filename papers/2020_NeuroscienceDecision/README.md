@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *NeuroscienceDecision*. ALIUS Bulletin.
+> Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *NeuroscienceDecision*. ALIUS Bulletin. DOI: 10.34700/8pg4-0h12. URL: https://doi.org/10.34700/8pg4-0h12.
 
 ## Related
 

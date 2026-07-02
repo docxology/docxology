@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Eirik Søvik (2019). *AntConsciousness*. Synthese.
+> Daniel A. Friedman, Eirik Søvik (2019). *AntConsciousness*. Synthese. DOI: 10.1007/s11229-019-02130-y. URL: https://doi.org/10.1007/s11229-019-02130-y.
 
 ## Related
 

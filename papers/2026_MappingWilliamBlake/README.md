@@ -36,7 +36,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls*. Zenodo.
+> Daniel Ari Friedman (2026). *Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls*. Zenodo. DOI: 10.5281/zenodo.21047573. URL: https://doi.org/10.5281/zenodo.21047573.
 
 ## Related
 

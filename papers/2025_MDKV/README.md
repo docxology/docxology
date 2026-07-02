@@ -22,8 +22,8 @@
 ## Key Findings
 
 - Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel..
-- Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences..
-- This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file..
+- Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes – each with distinct lifecycles and audiences..
+- This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document’s canonical content and auxiliary tracks into a single, portable `.mdkv` file..
 
 ## Artifacts
 
@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *MDKV*. Zenodo.
+> Daniel Ari Friedman (2025). *MDKV*. Zenodo. DOI: 10.5281/zenodo.16790554. URL: https://doi.org/10.5281/zenodo.16790554.
 
 ## Related
 

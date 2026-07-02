@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2023). *GNN*. Zenodo.
+> Daniel A. Friedman (2023). *GNN*. Zenodo. DOI: 10.5281/zenodo.7803327. URL: https://doi.org/10.5281/zenodo.7803327.
 
 ## Related
 

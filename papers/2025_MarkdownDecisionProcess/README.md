@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *MarkdownDecisionProcess*. Zenodo.
+> Daniel Ari Friedman (2025). *MarkdownDecisionProcess*. Zenodo. DOI: 10.5281/zenodo.17244386. URL: https://doi.org/10.5281/zenodo.17244386.
 
 ## Related
 

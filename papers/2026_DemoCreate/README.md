@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p>DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, ...
+> DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, ...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- <p>DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine.
+- DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine.
 - A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model.
 
 ## Artifacts
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *DemoCreate: Declarative Audio-Visual Demo Generation for Software*. Zenodo.
+> Daniel Ari Friedman (2026). *DemoCreate: Declarative Audio-Visual Demo Generation for Software*. Zenodo. DOI: 10.5281/zenodo.20693216. URL: https://doi.org/10.5281/zenodo.20693216.
 
 ## Related
 

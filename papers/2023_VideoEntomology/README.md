@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado (2023). *VideoEntomology*. JoVE.
+> Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado (2023). *VideoEntomology*. JoVE. DOI: 10.3791/65002. URL: https://doi.org/10.3791/65002.
 
 ## Related
 

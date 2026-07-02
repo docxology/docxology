@@ -31,7 +31,7 @@
 
 ## Citation
 
-> Ali Rahmjoo, Daniel Ari Friedman (2023). *GuidedTourMinds*. Physics of Life Reviews.
+> Ali Rahmjoo, Daniel Ari Friedman (2023). *GuidedTourMinds*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.11.001. URL: https://doi.org/10.1016/j.plrev.2023.11.001.
 
 ## Related
 

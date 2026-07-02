@@ -36,7 +36,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts*. Zenodo.
+> Daniel Ari Friedman (2026). *Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts*. Zenodo. DOI: 10.5281/zenodo.20786638. URL: https://doi.org/10.5281/zenodo.20786638.
 
 ## Related
 

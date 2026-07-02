@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL disti...
+> This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL disti...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- <p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them.
+- This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them.
 - In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL dist
 
 ## Artifacts
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Zenodo.
+> Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Zenodo. DOI: 10.5281/zenodo.20747834. URL: https://doi.org/10.5281/zenodo.20747834.
 
 ## Related
 

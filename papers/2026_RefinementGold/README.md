@@ -37,7 +37,7 @@ The a...
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition*. Zenodo.
+> Daniel Ari Friedman (2026). *Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition*. Zenodo. DOI: 10.5281/zenodo.20931955. URL: https://doi.org/10.5281/zenodo.20931955.
 
 ## Related
 

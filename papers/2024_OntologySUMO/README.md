@@ -34,7 +34,7 @@
 
 ## Citation
 
-> David S. Douglass, Adam Pease, Daniel Friedman, et al. (2024). *OntologySUMO*. Zenodo.
+> David S. Douglass, Adam Pease, Daniel Friedman, et al. (2024). *OntologySUMO*. Zenodo. DOI: 10.5281/zenodo.11459322. URL: https://doi.org/10.5281/zenodo.11459322.
 
 ## Related
 

@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman & Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Zenodo.
+> Daniel Ari Friedman & Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Zenodo. DOI: 10.5281/zenodo.19574117. URL: https://doi.org/10.5281/zenodo.19574117.
 
 ## Related
 

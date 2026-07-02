@@ -42,7 +42,7 @@ judgments can be evaluated blind: given the a
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR*. Zenodo.
+> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
 
 ## Related
 

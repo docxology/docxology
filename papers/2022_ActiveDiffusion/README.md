@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Jakub Smékal, Daniel Friedman (2022). *ActiveDiffusion*. Zenodo.
+> Jakub Smékal, Daniel Friedman (2022). *ActiveDiffusion*. Zenodo. DOI: 10.5281/zenodo.7443847. URL: https://doi.org/10.5281/zenodo.7443847.
 
 ## Related
 

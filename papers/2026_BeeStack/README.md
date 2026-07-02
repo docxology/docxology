@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation*. Zenodo.
+> Daniel Ari Friedman (2026). *BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation*. Zenodo. DOI: 10.5281/zenodo.20420556. URL: https://doi.org/10.5281/zenodo.20420556.
 
 ## Related
 

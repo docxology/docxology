@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *ForagerHydration*. Scientific Reports.
+> Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *ForagerHydration*. Scientific Reports. DOI: 10.1038/s41598-019-41586-3. URL: https://doi.org/10.1038/s41598-019-41586-3.
 
 ## Related
 

@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Eric Saund, Daniel Ari Friedman (2023). *SinglePheromone*. Cognitive Systems Research.
+> Eric Saund, Daniel Ari Friedman (2023). *SinglePheromone*. Cognitive Systems Research. DOI: 10.1016/j.cogsys.2023.02.005. URL: https://doi.org/10.1016/j.cogsys.2023.02.005.
 
 ## Related
 

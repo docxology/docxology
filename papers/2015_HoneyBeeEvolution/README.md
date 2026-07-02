@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Brian R. Johnson (2015). *HoneyBeeEvolution*. Molecular Biology & Evolution.
+> Daniel A. Friedman, Brian R. Johnson (2015). *HoneyBeeEvolution*. Molecular Biology & Evolution. DOI: 10.1093/molbev/msu292. URL: https://doi.org/10.1093/molbev/msu292.
 
 ## Related
 

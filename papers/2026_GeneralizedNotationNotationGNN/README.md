@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo.
+> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. DOI: 10.5281/zenodo.7803313. URL: https://doi.org/10.5281/zenodo.7803313.
 
 ## Related
 

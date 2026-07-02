@@ -11,6 +11,7 @@ import json
 import re
 import sys
 from dataclasses import asdict, dataclass
+from html import unescape
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -236,6 +237,17 @@ def asset_to_dict(asset: GitHubAsset | dict[str, Any]) -> dict[str, Any]:
     if isinstance(asset, GitHubAsset):
         return asset.to_dict()
     return dict(asset)
+
+
+def clean_markdown_text(value: Any) -> str:
+    text = unescape(str(value or ""))
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def clean_abstract_text(value: Any) -> str:
+    text = clean_markdown_text(value)
+    return re.split(r"\s---\s+Associated artifacts\b", text, maxsplit=1)[0].strip()
 
 
 def _normalize_doi(value: str) -> str:
@@ -504,6 +516,7 @@ def metadata_payload(pair: PublicationPair) -> dict[str, Any]:
 def render_readme(pair: PublicationPair, folder: str) -> str:
     record = pair.record
     keywords = " · ".join(record.keywords) if record.keywords else "paired GitHub and Zenodo publication"
+    description = clean_abstract_text(record.description) or "Publication metadata synchronized from Zenodo and GitHub."
     pdf_lines = []
     for item in record.files:
         name = str(item.get("key") or item.get("filename") or "")
@@ -521,7 +534,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
 
 ## Abstract
 
-{record.description or 'Publication metadata synchronized from Zenodo and GitHub.'}
+{description}
 
 ## Keywords
 
@@ -544,7 +557,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
 
 ## Citation
 
-> Friedman, D. A. ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. https://doi.org/{record.doi}
+> Friedman, D. A. ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. DOI: {record.doi}. URL: https://doi.org/{record.doi}.
 
 ## Related
 

@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2016). *AntGenetics*. Annual Review of Neuroscience.
+> Daniel A. Friedman, Deborah M. Gordon (2016). *AntGenetics*. Annual Review of Neuroscience. DOI: 10.1146/annurev-neuro-070815-013927. URL: https://doi.org/10.1146/annurev-neuro-070815-013927.
 
 ## Related
 

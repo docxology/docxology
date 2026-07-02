@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2017). *TwoLineages*. Molecular Ecology.
+> Daniel A. Friedman, Deborah M. Gordon (2017). *TwoLineages*. Molecular Ecology. DOI: 10.1111/mec.13964. URL: https://doi.org/10.1111/mec.13964.
 
 ## Related
 

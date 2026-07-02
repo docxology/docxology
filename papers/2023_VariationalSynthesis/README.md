@@ -31,7 +31,7 @@
 
 ## Citation
 
-> Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *VariationalSynthesis*. Entropy.
+> Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *VariationalSynthesis*. Entropy. DOI: 10.3390/e25070964. URL: https://doi.org/10.3390/e25070964.
 
 ## Related
 

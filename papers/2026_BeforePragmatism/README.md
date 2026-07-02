@@ -21,9 +21,9 @@
 
 ## Key Findings
 
-- When Boston's Angel in William Blake's America: a Prophecy (1793) declares "No more I follow, no more obedience pay!" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists&mdash;writing a cont
+- When Boston's Angel in William Blake's America: a Prophecy (1793) declares "No more I follow, no more obedience pay!" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists—writing a cont
 - Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the "five gates of their law-built Heaven" performs Dewey's collapse of the sp
-- The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference&mdash;the process theory of the Free Energy Principle&mdash;in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as
+- The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference—the process theory of the Free Energy Principle—in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as
 
 ## Artifacts
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *BeforePragmatism*. Zenodo.
+> Daniel Ari Friedman (2026). *BeforePragmatism*. Zenodo. DOI: 10.5281/zenodo.18807970. URL: https://doi.org/10.5281/zenodo.18807970.
 
 ## Related
 

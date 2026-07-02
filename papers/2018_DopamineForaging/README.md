@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Annette Pilko, Deborah M. Gordon (2018). *DopamineForaging*. iScience.
+> Daniel A. Friedman, Annette Pilko, Deborah M. Gordon (2018). *DopamineForaging*. iScience. DOI: 10.1016/j.isci.2018.09.001. URL: https://doi.org/10.1016/j.isci.2018.09.001.
 
 ## Related
 

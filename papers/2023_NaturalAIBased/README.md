@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
+> Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance". v1 released on December 12, 2023.
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
+- Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance". v1 released on December 12, 2023.
 
 ## Artifacts
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo.
+> John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo. DOI: 10.5281/zenodo.10360148. URL: https://doi.org/10.5281/zenodo.10360148.
 
 ## Related
 

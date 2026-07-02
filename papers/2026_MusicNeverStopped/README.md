@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and th...
+> We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and th...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- <p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category
+- We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category
 - The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and co
 
 ## Artifacts
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation*. Zenodo.
+> Daniel Ari Friedman (2026). *The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation*. Zenodo. DOI: 10.5281/zenodo.20482025. URL: https://doi.org/10.5281/zenodo.20482025.
 
 ## Related
 

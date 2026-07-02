@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *DiscoveryEngine*. ArXiv.
+> Daniel A. Friedman (2025). *DiscoveryEngine*. ArXiv. DOI: 10.48550/arXiv.2505.17500. URL: https://doi.org/10.48550/arXiv.2505.17500.
 
 ## Related
 

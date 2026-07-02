@@ -21,9 +21,9 @@
 
 ## Key Findings
 
-- The &quot;mirror test&quot; has been used as a behavioral measure of mirror self-recognition for a variety of species..
+- The "mirror test" has been used as a behavioral measure of mirror self-recognition for a variety of species..
 - In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior..
-- Furthermore, we hypothesize that a &ldquo;reflection prediction&rdquo;, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia
+- Furthermore, we hypothesize that a “reflection prediction”, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia
 
 ## Artifacts
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Sean O'Connor, Daniel Ari Friedman (2022). *MirrorTest*. Zenodo.
+> Sean O'Connor, Daniel Ari Friedman (2022). *MirrorTest*. Zenodo. DOI: 10.5281/zenodo.7377255. URL: https://doi.org/10.5281/zenodo.7377255.
 
 ## Related
 

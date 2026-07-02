@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman, Dean Tickles (2024). *QuantumDreams*. Zenodo.
+> Daniel Ari Friedman, Dean Tickles (2024). *QuantumDreams*. Zenodo. DOI: 10.5281/zenodo.10798144. URL: https://doi.org/10.5281/zenodo.10798144.
 
 ## Related
 

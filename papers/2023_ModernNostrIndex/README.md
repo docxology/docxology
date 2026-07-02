@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;
+> Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;
+- Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.
 
 ## Artifacts
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Andrew Claros, Daniel Friedman (2023). *Modern Nostr Index Card-based Knowledge Engineering*. Zenodo.
+> Andrew Claros, Daniel Friedman (2023). *Modern Nostr Index Card-based Knowledge Engineering*. Zenodo. DOI: 10.5281/zenodo.8118156. URL: https://doi.org/10.5281/zenodo.8118156.
 
 ## Related
 

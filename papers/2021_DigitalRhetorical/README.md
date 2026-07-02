@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2021). *DigitalRhetorical*. Zenodo.
+> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2021). *DigitalRhetorical*. Zenodo. DOI: 10.5281/zenodo.5573946. URL: https://doi.org/10.5281/zenodo.5573946.
 
 ## Related
 

@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *EvoJump*. Zenodo.
+> Daniel A. Friedman (2025). *EvoJump*. Zenodo. DOI: 10.5281/zenodo.17229924. URL: https://doi.org/10.5281/zenodo.17229924.
 
 ## Related
 

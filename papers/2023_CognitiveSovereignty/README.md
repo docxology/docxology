@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *CognitiveSovereignty*. Zenodo.
+> Daniel Ari Friedman (2023). *CognitiveSovereignty*. Zenodo. DOI: 10.5281/zenodo.10038231. URL: https://doi.org/10.5281/zenodo.10038231.
 
 ## Related
 

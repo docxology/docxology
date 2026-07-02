@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *NarrativeInformationMgmt*. Zenodo.
+> Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *NarrativeInformationMgmt*. Zenodo. DOI: 10.5281/zenodo.5565577. URL: https://doi.org/10.5281/zenodo.5565577.
 
 ## Related
 

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I&ndash;X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simp...
+> Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simp...
 
 ## Keywords
 
@@ -21,8 +21,8 @@
 
 ## Key Findings
 
-- <p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, geneti
-- Organized as Unit 0 plus Units I&ndash;X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move 
+- Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, geneti
+- Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move
 
 ## Artifacts
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Introduction to Biology: A Generative Approach*. Zenodo.
+> Daniel Ari Friedman (2026). *Introduction to Biology: A Generative Approach*. Zenodo. DOI: 10.5281/zenodo.20286478. URL: https://doi.org/10.5281/zenodo.20286478.
 
 ## Related
 

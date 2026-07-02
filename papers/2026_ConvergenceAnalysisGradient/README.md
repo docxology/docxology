@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Convergence Analysis of Gradient Descent Optimization*. Zenodo.
+> Daniel Ari Friedman (2026). *Convergence Analysis of Gradient Descent Optimization*. Zenodo. DOI: 10.5281/zenodo.20417136. URL: https://doi.org/10.5281/zenodo.20417136.
 
 ## Related
 

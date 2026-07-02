@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Some initial slides from today. For context see:&nbsp;@speakerjohnash
+> Some initial slides from today. For context see: @speakerjohnash
 
 ## Keywords
 
@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *Slides for Iris*. Zenodo.
+> Daniel Ari Friedman (2023). *Slides for Iris*. Zenodo. DOI: 10.5281/zenodo.7838653. URL: https://doi.org/10.5281/zenodo.7838653.
 
 ## Related
 

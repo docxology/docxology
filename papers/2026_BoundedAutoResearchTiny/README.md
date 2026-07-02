@@ -44,7 +44,7 @@ bounded small MNIST neural-network classification loop.
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo.
+> Daniel Ari Friedman (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo. DOI: 10.5281/zenodo.20417016. URL: https://doi.org/10.5281/zenodo.20417016.
 
 ## Related
 

@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel Friedman, Jakub Smékal (2023). *GenerativeResearchTeams*. Zenodo.
+> Daniel Friedman, Jakub Smékal (2023). *GenerativeResearchTeams*. Zenodo. DOI: 10.5281/zenodo.8164666. URL: https://doi.org/10.5281/zenodo.8164666.
 
 ## Related
 

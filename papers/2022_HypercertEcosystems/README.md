@@ -23,7 +23,7 @@
 
 - This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project)..
 - The grant was submitted in October 2022 and was not funded..
-- Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/.
+- Learn more, get in touch, get involved, or fund us: https://www.activeinference.org/.
 
 ## Artifacts
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Active Inference Institute (2022). *HypercertEcosystems*. Zenodo.
+> Active Inference Institute (2022). *HypercertEcosystems*. Zenodo. DOI: 10.5281/zenodo.7626768. URL: https://doi.org/10.5281/zenodo.7626768.
 
 ## Related
 

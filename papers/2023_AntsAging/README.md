@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2023). *AntsAging*. Presentation.
+> Daniel A. Friedman (2023). *AntsAging*. Presentation. DOI: 10.5281/zenodo.7855581. URL: https://doi.org/10.5281/zenodo.7855581.
 
 ## Related
 

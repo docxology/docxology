@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *iTrace: verification-first webcam eye-movement analysis*. Zenodo.
+> Daniel Ari Friedman (2026). *iTrace: verification-first webcam eye-movement analysis*. Zenodo. DOI: 10.5281/zenodo.20614909. URL: https://doi.org/10.5281/zenodo.20614909.
 
 ## Related
 

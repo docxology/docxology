@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *MutAnts*. Cell.
+> Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *MutAnts*. Cell. DOI: 10.1016/j.cell.2017.07.046. URL: https://doi.org/10.1016/j.cell.2017.07.046.
 
 ## Related
 

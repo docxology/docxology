@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *CognitiveArtScience*. Zenodo.
+> Daniel A. Friedman (2025). *CognitiveArtScience*. Zenodo. DOI: 10.5281/zenodo.16740438. URL: https://doi.org/10.5281/zenodo.16740438.
 
 ## Related
 

@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *CognitiveIntegrity*. Zenodo.
+> Daniel Ari Friedman (2026). *CognitiveIntegrity*. Zenodo. DOI: 10.5281/zenodo.18364118. URL: https://doi.org/10.5281/zenodo.18364118.
 
 ## Related
 

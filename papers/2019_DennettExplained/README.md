@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman (2019). *DennettExplained*. ALIUS Bulletin.
+> Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman (2019). *DennettExplained*. ALIUS Bulletin. DOI: 10.34700/7gkw-zh08. URL: https://doi.org/10.34700/7gkw-zh08.
 
 ## Related
 

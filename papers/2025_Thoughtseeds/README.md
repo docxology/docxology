@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds*. Entropy.
+> Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds*. Entropy. DOI: 10.3390/e27050459. URL: https://doi.org/10.3390/e27050459.
 
 ## Related
 

@@ -45,7 +45,7 @@ an interactive walkthrough notebook
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Exploratory Data Analysis: A Reproducible Notebook Template*. Zenodo.
+> Daniel Ari Friedman (2026). *Exploratory Data Analysis: A Reproducible Notebook Template*. Zenodo. DOI: 10.5281/zenodo.21086292. URL: https://doi.org/10.5281/zenodo.21086292.
 
 ## Related
 

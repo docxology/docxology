@@ -23,7 +23,7 @@
 
 - This report provides a single-page account of Active Inference modeling..
 - This report was written entirely by hand without any synthetic computational-linguistic intelligences..
-- Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from..
+- Thank you to the learners, interns, and participants of the Active Inference Institute to whom I've mostly learned from..
 
 ## Artifacts
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *AccountActiveInference*. Zenodo.
+> Daniel Ari Friedman (2023). *AccountActiveInference*. Zenodo. DOI: 10.5281/zenodo.8415312. URL: https://doi.org/10.5281/zenodo.8415312.
 
 ## Related
 

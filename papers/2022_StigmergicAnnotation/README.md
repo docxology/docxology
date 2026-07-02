@@ -31,7 +31,7 @@
 
 ## Citation
 
-> Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *StigmergicAnnotation*. Hypertext '22.
+> Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *StigmergicAnnotation*. Hypertext '22. DOI: 10.48550/arXiv.2205.06345. URL: https://doi.org/10.48550/arXiv.2205.06345.
 
 ## Related
 

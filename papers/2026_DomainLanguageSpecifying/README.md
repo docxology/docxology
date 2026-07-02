@@ -45,7 +45,7 @@ validation gates, and a deterministic compiler,
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *A Domain Language for Specifying Controlled Methods*. Zenodo.
+> Daniel Ari Friedman (2026). *A Domain Language for Specifying Controlled Methods*. Zenodo. DOI: 10.5281/zenodo.21086548. URL: https://doi.org/10.5281/zenodo.21086548.
 
 ## Related
 

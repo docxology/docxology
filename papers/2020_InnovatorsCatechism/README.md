@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Zenodo.
+> Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Zenodo. DOI: 10.5281/zenodo.4383229. URL: https://doi.org/10.5281/zenodo.4383229.
 
 ## Related
 

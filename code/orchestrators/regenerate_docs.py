@@ -17,6 +17,7 @@ import os
 import re
 import sys
 import logging
+from html import unescape
 from pathlib import Path
 from datetime import datetime
 from typing import Any
@@ -92,6 +93,24 @@ def extract_doi(value: Any) -> str:
     if not match:
         return ""
     return match.group(0).rstrip(DOI_TRAILING)
+
+
+def clean_markdown_text(value: Any) -> str:
+    text = unescape(str(value or ""))
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def clean_abstract_text(value: Any) -> str:
+    text = clean_markdown_text(value)
+    return re.split(r"\s---\s+Associated artifacts\b", text, maxsplit=1)[0].strip()
+
+
+def truncate_display_text(text: str, limit: int = 400) -> str:
+    if len(text) <= limit:
+        return text
+    head = text[:limit].rsplit(" ", 1)[0].rstrip(".,;:(")
+    return (head or text[:limit].rstrip()) + "..."
 
 
 def doi_url(doi: str, fallback_url: str | None = None) -> str:
@@ -211,17 +230,17 @@ def extract_related_papers(meta: dict, all_folders: list[str]) -> list[str]:
 def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
     """Generate README.md content with enhanced structure."""
     year, topic = parse_folder_id(folder)
-    title = meta.get('name') or meta.get('title') or topic
-    authors = meta.get('authors', 'Daniel Ari Friedman')
+    title = clean_markdown_text(meta.get('name') or meta.get('title') or topic)
+    authors = clean_markdown_text(meta.get('authors', 'Daniel Ari Friedman'))
 
     # Get abstract from description or metadata
-    abstract = meta.get('abstract', meta.get('description', f'Research paper on {topic}.'))
+    abstract = clean_abstract_text(meta.get('abstract', meta.get('description', f'Research paper on {topic}.')))
     # Truncate for display
-    abstract_short = abstract[:400] + '...' if len(abstract) > 400 else abstract
+    abstract_short = truncate_display_text(abstract)
 
     keywords = meta.get('keywords', meta.get('tags', []))
     domain = resolve_domain(folder, meta, bib_entry)
-    venue = bib_entry.get('venue', 'Zenodo') if bib_entry else 'Zenodo'
+    venue = clean_markdown_text(bib_entry.get('venue', 'Zenodo') if bib_entry else 'Zenodo')
     link = bib_entry.get('link', '') if bib_entry else ''
 
     # Methods and findings
@@ -266,7 +285,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
     ])
 
     for method in methods[:6]:
-        lines.append(f'- {method}')
+        lines.append(f'- {clean_markdown_text(method)}')
     lines.append('')
 
     lines.extend([
@@ -275,7 +294,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
     ])
 
     for finding in findings[:6]:
-        lines.append(f'- {finding}')
+        lines.append(f'- {clean_markdown_text(finding)}')
     lines.append('')
 
     # Artifacts section
@@ -316,7 +335,8 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
         '',
         '## Citation',
         '',
-        f'> {authors} ({year}). *{title}*. {venue}.',
+        f'> {authors} ({year}). *{title}*. {venue}.'
+        + (f' DOI: {doi}. URL: {doi_target}.' if doi and doi_target else ''),
         '',
         '## Related',
         '',

@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *AuBI*. Zenodo.
+> Daniel A. Friedman (2025). *AuBI*. Zenodo. DOI: 10.5281/zenodo.17228945. URL: https://doi.org/10.5281/zenodo.17228945.
 
 ## Related
 

@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Richard J. Cordes, Daniel Ari Friedman (2021). *Collaborative Writing for Catechism-Based Teams*. Zenodo.
+> Richard J. Cordes, Daniel Ari Friedman (2021). *Collaborative Writing for Catechism-Based Teams*. Zenodo. DOI: 10.5281/zenodo.4633921. URL: https://doi.org/10.5281/zenodo.4633921.
 
 ## Related
 

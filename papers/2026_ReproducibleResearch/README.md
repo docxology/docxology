@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication*. Zenodo.
+> Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication*. Zenodo. DOI: 10.5281/zenodo.16903351. URL: https://doi.org/10.5281/zenodo.16903351.
 
 ## Related
 

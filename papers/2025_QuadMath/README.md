@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *QuadMath*. Zenodo.
+> Daniel Ari Friedman (2025). *QuadMath*. Zenodo. DOI: 10.5281/zenodo.16887799. URL: https://doi.org/10.5281/zenodo.16887799.
 
 ## Related
 

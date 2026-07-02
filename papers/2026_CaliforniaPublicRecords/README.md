@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *California Public Records: A Technical and Legal Reference for the Post-AB 473 Era*. Zenodo.
+> Daniel Ari Friedman (2026). *California Public Records: A Technical and Legal Reference for the Post-AB 473 Era*. Zenodo. DOI: 10.5281/zenodo.20789899. URL: https://doi.org/10.5281/zenodo.20789899.
 
 ## Related
 

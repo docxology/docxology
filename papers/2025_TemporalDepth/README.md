@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, et al. (2025). *TemporalDepth*. Frontiers in Psychology.
+> Daniel A. Friedman, et al. (2025). *TemporalDepth*. Frontiers in Psychology. DOI: 10.3389/fpsyg.2025.1585315. URL: https://doi.org/10.3389/fpsyg.2025.1585315.
 
 ## Related
 

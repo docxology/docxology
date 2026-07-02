@@ -19,6 +19,7 @@ from publication_pairing import (  # noqa: E402
     find_publication_pairs,
     infer_domain,
     is_ignored_release,
+    render_readme,
     yaml_double_quoted,
 )
 
@@ -68,6 +69,44 @@ def test_api_normalization_for_github_and_zenodo_records():
     # record_url must agree with the canonical concept DOI, not the version-specific record_id,
     # so the same document never cites two different Zenodo record URLs for one work.
     assert record.record_url == "https://zenodo.org/records/0"
+
+
+def test_render_readme_cleans_html_and_includes_doi_and_url_in_citation():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="example",
+        tag="v1.0.0",
+        name="Example Release",
+        body="DOI: 10.5281/zenodo.20396328",
+        html_url="https://github.com/docxology/example/releases/tag/v1.0.0",
+        published_at="2026-05-27T00:00:00Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="20396328",
+        doi="10.5281/zenodo.20396328",
+        title="Example Release",
+        publication_date="2026-05-27",
+        version="1.0.0",
+        resource_type={"type": "publication"},
+        creators=[{"name": "Friedman, Daniel Ari"}],
+        description="<p>Example &mdash; publication.</p>\n\n---\nAssociated artifacts\nDOI: https://doi.org/10.5281/zenodo.20396328",
+        keywords=["example"],
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/20396328",
+    )
+    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=("doi",))
+
+    readme = render_readme(pair, "2026_Example")
+
+    assert "Example \u2014 publication." in readme
+    assert "Associated artifacts" not in readme
+    assert "<p>" not in readme
+    assert (
+        "> Friedman, D. A. (2026). *Example Release*. Zenodo. "
+        "DOI: 10.5281/zenodo.20396328. URL: https://doi.org/10.5281/zenodo.20396328."
+    ) in readme
 
 
 def test_template_smoke_release_is_ignored():

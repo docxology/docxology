@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Active Inference Institute (2025). *AccessibilityActiveInference*. Zenodo.
+> Daniel A. Friedman, Active Inference Institute (2025). *AccessibilityActiveInference*. Zenodo. DOI: 10.5281/zenodo.15061666. URL: https://doi.org/10.5281/zenodo.15061666.
 
 ## Related
 

@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, R.J. Cordes, Scott David (2020). *EmergentTeams*. Zenodo.
+> Daniel A. Friedman, R.J. Cordes, Scott David (2020). *EmergentTeams*. Zenodo. DOI: 10.5281/zenodo.3986084. URL: https://doi.org/10.5281/zenodo.3986084.
 
 ## Related
 

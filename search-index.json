@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:58:31Z",
+  "generated_at": "2026-07-02T18:05:15Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -1546,7 +1546,7 @@
         "epistemic agency",
         "model development"
       ],
-      "content": "An Account of Active Inference Modeling Zenodo 10.5281/zenodo.8415312 Friedman2023AccountActiveInferenceModeling050 Active Inference Paper In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (st... Active Inference generative modeling accounting metaphor Active AccountAnts cognitive modeling epistemic agency model development This report provides a single-page account of Active Inference modeling.. This report was written entirely by hand without any synthetic computational-linguistic intelligences.. Thank you to the learners, interns, and participants of the Active Inference Institute to whom I& 39;ve mostly learned from.. Free energy minimization Bayesian modeling and inference"
+      "content": "An Account of Active Inference Modeling Zenodo 10.5281/zenodo.8415312 Friedman2023AccountActiveInferenceModeling050 Active Inference Paper In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (st... Active Inference generative modeling accounting metaphor Active AccountAnts cognitive modeling epistemic agency model development This report provides a single-page account of Active Inference modeling.. This report was written entirely by hand without any synthetic computational-linguistic intelligences.. Thank you to the learners, interns, and participants of the Active Inference Institute to whom I've mostly learned from.. Free energy minimization Bayesian modeling and inference"
     },
     {
       "id": "work:Friedman2023CognitiveSovereigntyActiveInference051",
@@ -3501,7 +3501,7 @@
         "bibliography",
         "CanonicalNeuralNetworks"
       ],
-      "content": "Canonical neural networks perform active inference Zenodo 10.5281/zenodo.7400525 Friedman2022CanonicalNeuralNetworksPerform140 Active Inference Paper Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS 051.1: First participatory group discussion. https://www.youtube.co... CanonicalNeuralNetworks Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. Free energy minimization Bayesian modeling and inference"
+      "content": "Canonical neural networks perform active inference Zenodo 10.5281/zenodo.7400525 Friedman2022CanonicalNeuralNetworksPerform140 Active Inference Paper Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS 051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM NlUzyq8M LS... CanonicalNeuralNetworks Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context. Free energy minimization Bayesian modeling and inference"
     },
     {
       "id": "work:Friedman2022InteroceptionAsModelingAllostasis141",
@@ -3785,7 +3785,7 @@
         "bibliography",
         "TemplateTextbook"
       ],
-      "content": "The Template Textbook Zenodo 10.5281/zenodo.20533125 Friedman2026TemplateTextbook154 Computational Book A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. --- Associated artifacts GitHub release: v0.1.2 (https://github.com/docxology/template textbook/releases/tag/v0.1.2) DOI: https://doi.org/10.5281/zenodo.2053312... TemplateTextbook A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and --- Software pipeline design Data-driven analysis"
+      "content": "The Template Textbook Zenodo 10.5281/zenodo.20533125 Friedman2026TemplateTextbook154 Computational Book A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. TemplateTextbook A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and Software pipeline design Data-driven analysis"
     },
     {
       "id": "work:Friedman2016LessonsFromColony155",
@@ -4013,7 +4013,7 @@
         "reproducible research",
         "multimodal containers"
       ],
-      "content": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data Zenodo 10.5281/zenodo.20396328 Friedman2026ENTOENcryptedTypedOmnitrack167 Computational Paper ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacut... research data formats authenticated encryption AES-256-GCM reproducible research multimodal containers ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, s Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. Software pipeline design Data-driven analysis"
+      "content": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data Zenodo 10.5281/zenodo.20396328 Friedman2026ENTOENcryptedTypedOmnitrack167 Computational Paper ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire... research data formats authenticated encryption AES-256-GCM reproducible research multimodal containers ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, s Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. Software pipeline design Data-driven analysis"
     },
     {
       "id": "work:Friedman2026GeneralizedNotationNotationGNN168",

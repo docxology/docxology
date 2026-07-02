@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual&rsquo;s understanding of how their attention interacts with computer use movements, such as ...
+> The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as ...
 
 ## Keywords
 
@@ -22,7 +22,7 @@
 ## Key Findings
 
 - The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer
-- The priming sequence of exercises is presented to inform an individual&rsquo;s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with
+- The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with
 
 ## Artifacts
 
@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *Push and Pull: A priming sequence*. Zenodo.
+> Daniel Ari Friedman (2024). *Push and Pull: A priming sequence*. Zenodo. DOI: 10.5281/zenodo.10659375. URL: https://doi.org/10.5281/zenodo.10659375.
 
 ## Related
 

@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Nassim Dehouche, Daniel Friedman (2024). *PopulationSearch*. ArXiv.
+> Nassim Dehouche, Daniel Friedman (2024). *PopulationSearch*. ArXiv. DOI: 10.48550/arXiv.2408.09548. URL: https://doi.org/10.48550/arXiv.2408.09548.
 
 ## Related
 

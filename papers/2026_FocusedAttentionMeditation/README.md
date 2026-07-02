@@ -30,7 +30,7 @@
 
 ## Citation
 
-> P. C. Kavi, Daniel Ari Friedman & G. Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer.
+> P. C. Kavi, Daniel Ari Friedman & G. Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11.
 
 ## Related
 

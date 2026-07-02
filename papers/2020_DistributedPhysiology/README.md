@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2020). *DistributedPhysiology*. Hormones & Behavior.
+> Daniel A. Friedman, Deborah M. Gordon (2020). *DistributedPhysiology*. Hormones & Behavior. DOI: 10.1016/j.yhbeh.2020.104757. URL: https://doi.org/10.1016/j.yhbeh.2020.104757.
 
 ## Related
 

@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2024). *DigitalTwins*. Zenodo.
+> Daniel A. Friedman (2024). *DigitalTwins*. Zenodo. DOI: 10.5281/zenodo.13273681. URL: https://doi.org/10.5281/zenodo.13273681.
 
 ## Related
 

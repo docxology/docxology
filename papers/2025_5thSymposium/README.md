@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Active Inference Institute (2025). *5thSymposium*. Presentation.
+> Active Inference Institute (2025). *5thSymposium*. Presentation. DOI: 10.5281/zenodo.17555266. URL: https://doi.org/10.5281/zenodo.17555266.
 
 ## Related
 

@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon (2016). *ForagingGene*. Proceedings of the Royal Society B.
+> Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon (2016). *ForagingGene*. Proceedings of the Royal Society B. DOI: 10.1098/rspb.2016.0841. URL: https://doi.org/10.1098/rspb.2016.0841.
 
 ## Related
 

@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer (2020). *GeneExpressionForagers*. Communications Biology.
+> Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer (2020). *GeneExpressionForagers*. Communications Biology. DOI: 10.1038/s42003-020-0813-8. URL: https://doi.org/10.1038/s42003-020-0813-8.
 
 ## Related
 

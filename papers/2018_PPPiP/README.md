@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Alexandra Mikhailova, Daniel A. Friedman (2018). *PPPiP*. Arts.
+> Alexandra Mikhailova, Daniel A. Friedman (2018). *PPPiP*. Arts. DOI: 10.3390/arts7030039. URL: https://doi.org/10.3390/arts7030039.
 
 ## Related
 

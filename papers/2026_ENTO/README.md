@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p><strong>ENTO</strong> (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, spectrograms, provenance proofs &mdash; into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacut...
+> ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire...
 
 ## Keywords
 
@@ -21,8 +21,8 @@
 
 ## Key Findings
 
-- <p><strong>ENTO</strong> (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, s
-- Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacute; length padding.
+- ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, s
+- Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding.
 
 ## Artifacts
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data*. Zenodo.
+> Daniel Ari Friedman (2026). *ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data*. Zenodo. DOI: 10.5281/zenodo.20396328. URL: https://doi.org/10.5281/zenodo.20396328.
 
 ## Related
 

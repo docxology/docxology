@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman (2023). *P3IF*. Zenodo.
+> Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman (2023). *P3IF*. Zenodo. DOI: 10.5281/zenodo.10034511. URL: https://doi.org/10.5281/zenodo.10034511.
 
 ## Related
 

@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2018). *MVEE*. Presentation.
+> Daniel Ari Friedman (2018). *MVEE*. Presentation. DOI: 10.5281/zenodo.13999298. URL: https://doi.org/10.5281/zenodo.13999298.
 
 ## Related
 

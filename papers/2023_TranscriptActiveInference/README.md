@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Megan A. K. Peters, Nora Bradford, Daniel Friedman (2023). *Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"*. Zenodo.
+> Megan A. K. Peters, Nora Bradford, Daniel Friedman (2023). *Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"*. Zenodo. DOI: 10.5281/zenodo.8229512. URL: https://doi.org/10.5281/zenodo.8229512.
 
 ## Related
 

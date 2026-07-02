@@ -22,6 +22,7 @@ import re
 import subprocess
 import sys
 import urllib.request
+from html import unescape
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -60,8 +61,10 @@ def record_url(rec: dict) -> str:
 
 
 def clean(text: str) -> str:
-    text = re.sub(r"<[^>]+>", " ", text or "")
-    return re.sub(r"\s+", " ", text).strip()
+    text = unescape(text or "")
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return re.split(r"\s---\s+Associated artifacts\b", text, maxsplit=1)[0].strip()
 
 
 def infer_type(rtype: str, subtype: str, title: str) -> str:
@@ -161,7 +164,7 @@ def render_readme(rec: dict, meta: dict) -> str:
 
 ## Citation
 
-> {authors_inline(meta.get('creators', []))} ({year}). *{title}*. Zenodo. https://doi.org/{doi}
+> {authors_inline(meta.get('creators', []))} ({year}). *{title}*. Zenodo. DOI: {doi}. URL: https://doi.org/{doi}.
 
 ## Related
 

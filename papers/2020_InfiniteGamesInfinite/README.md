@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for ...
+> Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the intent of discussing the questions outlined below. How are global online narratives constructed and received in 2020? Why are the processes of narrative design and culture production so important for ...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the 
+- Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the
 - How are global online narratives constructed and received in 2020?
 
 ## Artifacts
@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Zenodo.
+> Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Zenodo. DOI: 10.5281/zenodo.12601675. URL: https://doi.org/10.5281/zenodo.12601675.
 
 ## Related
 

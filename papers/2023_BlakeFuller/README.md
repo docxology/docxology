@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2023). *BlakeFuller*. Zenodo.
+> Daniel A. Friedman (2023). *BlakeFuller*. Zenodo. DOI: 10.5281/zenodo.7514367. URL: https://doi.org/10.5281/zenodo.7514367.
 
 ## Related
 

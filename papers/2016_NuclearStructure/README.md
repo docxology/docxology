@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Int. J. Radiation Biology.
+> Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941.
 
 ## Related
 

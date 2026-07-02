@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *SystemsProcesses*. Presentation.
+> Daniel A. Friedman (2025). *SystemsProcesses*. Presentation. DOI: 10.5281/zenodo.17138223. URL: https://doi.org/10.5281/zenodo.17138223.
 
 ## Related
 

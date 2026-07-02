@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, et al. (2024). *BlattodeaDiversity*. Ecology & Evolution.
+> Daniel A. Friedman, et al. (2024). *BlattodeaDiversity*. Ecology & Evolution. DOI: 10.1002/ece3.70063. URL: https://doi.org/10.1002/ece3.70063.
 
 ## Related
 

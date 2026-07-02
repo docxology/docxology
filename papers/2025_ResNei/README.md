@@ -21,9 +21,9 @@
 
 ## Key Findings
 
-- ResNei &mdash; Research Neighbourhood &ndash; is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas..
+- ResNei — Research Neighbourhood – is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas..
 - At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge..
-- This graph is structured as a set of Conceptual Nexus Models (CNMs)&mdash;modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration..
+- This graph is structured as a set of Conceptual Nexus Models (CNMs)—modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration..
 
 ## Artifacts
 
@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman (2025). *ResNei*. Zenodo.
+> Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman (2025). *ResNei*. Zenodo. DOI: 10.5281/zenodo.15389682. URL: https://doi.org/10.5281/zenodo.15389682.
 
 ## Related
 

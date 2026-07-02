@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Ronen Tamari, Daniel A. Friedman (2023). *OpenScienceSensemaking*. MetaArXiv.
+> Ronen Tamari, Daniel A. Friedman (2023). *OpenScienceSensemaking*. MetaArXiv. DOI: 10.31222/osf.io/9nb3u. URL: https://doi.org/10.31222/osf.io/9nb3u.
 
 ## Related
 

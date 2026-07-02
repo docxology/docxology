@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and 
+- Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and
 
 ## Artifacts
 
@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Richard J. Cordes, Daniel Ari Friedman (2020). *The Facilitator's Catechism*. Zenodo.
+> Richard J. Cordes, Daniel Ari Friedman (2020). *The Facilitator's Catechism*. Zenodo. DOI: 10.5281/zenodo.4062540. URL: https://doi.org/10.5281/zenodo.4062540.
 
 ## Related
 

@@ -35,7 +35,7 @@
 
 ## Citation
 
-> William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Zenodo.
+> William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Zenodo. DOI: 10.5281/zenodo.10400744. URL: https://doi.org/10.5281/zenodo.10400744.
 
 ## Related
 

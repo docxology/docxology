@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2023). *ToComment*. Physics of Life Reviews.
+> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2023). *ToComment*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.06.002. URL: https://doi.org/10.1016/j.plrev.2023.06.002.
 
 ## Related
 

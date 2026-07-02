@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Karl Friston, Martin Fortier, Daniel A. Friedman (2018). *WoodliceAndMen*. ALIUS Bulletin.
+> Karl Friston, Martin Fortier, Daniel A. Friedman (2018). *WoodliceAndMen*. ALIUS Bulletin. DOI: 10.34700/h460-nz89. URL: https://doi.org/10.34700/h460-nz89.
 
 ## Related
 

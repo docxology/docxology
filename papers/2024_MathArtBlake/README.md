@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC  Shanna Dobson, Daniel Friedman "William Blake, Kierkegaard, Gothic" https://www.youtube.com/live/yIS0OW2o18s.
+- Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC Shanna Dobson, Daniel Friedman "William Blake, Kierkegaard, Gothic" https://www.youtube.com/live/yIS0OW2o18s.
 
 ## Artifacts
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *MathArtBlake*. Presentation.
+> Daniel Ari Friedman (2024). *MathArtBlake*. Presentation. DOI: 10.5281/zenodo.13711301. URL: https://doi.org/10.5281/zenodo.13711301.
 
 ## Related
 

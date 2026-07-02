@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2018). *ArgentineAnt*. PLoS One.
+> Daniel A. Friedman, Deborah M. Gordon (2018). *ArgentineAnt*. PLoS One. DOI: 10.1371/journal.pone.0202117. URL: https://doi.org/10.1371/journal.pone.0202117.
 
 ## Related
 

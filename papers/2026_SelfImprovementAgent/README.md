@@ -39,7 +39,7 @@ Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accu
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Self-Improvement Agent Harness: A Deterministic SIA Exemplar*. Zenodo.
+> Daniel Ari Friedman (2026). *Self-Improvement Agent Harness: A Deterministic SIA Exemplar*. Zenodo. DOI: 10.5281/zenodo.20453879. URL: https://doi.org/10.5281/zenodo.20453879.
 
 ## Related
 

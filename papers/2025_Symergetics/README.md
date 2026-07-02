@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *Symergetics*. Zenodo.
+> Daniel Ari Friedman (2025). *Symergetics*. Zenodo. DOI: 10.5281/zenodo.17114389. URL: https://doi.org/10.5281/zenodo.17114389.
 
 ## Related
 

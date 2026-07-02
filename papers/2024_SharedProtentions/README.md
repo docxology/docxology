@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead (2024). *SharedProtentions*. Entropy.
+> Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead (2024). *SharedProtentions*. Entropy. DOI: 10.3390/e26040303. URL: https://doi.org/10.3390/e26040303.
 
 ## Related
 

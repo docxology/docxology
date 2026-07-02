@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant (2021). *ActiveInferants*. Frontiers in Behavioral Neuroscience.
+> Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant (2021). *ActiveInferants*. Frontiers in Behavioral Neuroscience. DOI: 10.3389/fnbeh.2021.647732. URL: https://doi.org/10.3389/fnbeh.2021.647732.
 
 ## Related
 

@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman (2022). *FreeWillSapolsky*. ALIUS Bulletin.
+> Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman (2022). *FreeWillSapolsky*. ALIUS Bulletin. DOI: 10.5281/zenodo.7394900. URL: https://doi.org/10.5281/zenodo.7394900.
 
 ## Related
 

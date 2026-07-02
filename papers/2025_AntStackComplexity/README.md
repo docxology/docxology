@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *AntStackComplexity*. Zenodo.
+> Daniel A. Friedman (2025). *AntStackComplexity*. Zenodo. DOI: 10.5281/zenodo.17238736. URL: https://doi.org/10.5281/zenodo.17238736.
 
 ## Related
 

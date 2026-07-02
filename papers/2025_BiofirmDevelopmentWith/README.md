@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;
+> Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;
+- Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024
 
 ## Artifacts
 
@@ -31,7 +31,7 @@
 
 ## Citation
 
-> John Clippinger, Andrew Pashea, Daniel Friedman (2025). *Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024*. Zenodo.
+> John Clippinger, Andrew Pashea, Daniel Friedman (2025). *Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024*. Zenodo. DOI: 10.5281/zenodo.14861596. URL: https://doi.org/10.5281/zenodo.14861596.
 
 ## Related
 

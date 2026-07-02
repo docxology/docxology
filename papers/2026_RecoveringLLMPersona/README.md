@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key. We test this end to end on real large language models. Three trader "personas" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio thr...
+> Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader "personas" (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio thr...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- <p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key.
+- Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key.
 - We test this end to end on real large language models.
 
 ## Artifacts
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Recovering LLM-Persona Accuracies from Unlabeled Votes*. Zenodo.
+> Daniel Ari Friedman (2026). *Recovering LLM-Persona Accuracies from Unlabeled Votes*. Zenodo. DOI: 10.5281/zenodo.20498699. URL: https://doi.org/10.5281/zenodo.20498699.
 
 ## Related
 

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time &amp; checkpoints to run with a modulator layer ; to then apply...
+> Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time & checkpoints to run with a modulator layer ; to then apply...
 
 ## Keywords
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo.
+> andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo. DOI: 10.5281/zenodo.14737076. URL: https://doi.org/10.5281/zenodo.14737076.
 
 ## Related
 

@@ -8,8 +8,8 @@
 
 ## Abstract
 
-> <div>
-<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bound (Huntsinger et al., 2014; Norton, 1979b). The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith Riv...
+> 
+This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — where published accounts remain fragmentary or era-bound (Huntsinger et al., 2014; Norton, 1979b). The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith Riv...
 
 ## Keywords
 
@@ -22,9 +22,9 @@
 
 ## Key Findings
 
-- <div>
-<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; wher
-- The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; 
+- 
+This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — wher
+- The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s;
 
 ## Artifacts
 
@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo.
+> Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo. DOI: 10.5281/zenodo.20286171. URL: https://doi.org/10.5281/zenodo.20286171.
 
 ## Related
 

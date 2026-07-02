@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Scott David, R.J. Cordes, Daniel A. Friedman (2021). *ModelingConflict*. Zenodo.
+> Scott David, R.J. Cordes, Daniel A. Friedman (2021). *ModelingConflict*. Zenodo. DOI: 10.5281/zenodo.5750934. URL: https://doi.org/10.5281/zenodo.5750934.
 
 ## Related
 

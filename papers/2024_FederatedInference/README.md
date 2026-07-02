@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith (2024). *FederatedInference*. Neuroscience & Biobehavioral Reviews.
+> Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith (2024). *FederatedInference*. Neuroscience & Biobehavioral Reviews. DOI: 10.1016/j.neubiorev.2023.105500. URL: https://doi.org/10.1016/j.neubiorev.2023.105500.
 
 ## Related
 

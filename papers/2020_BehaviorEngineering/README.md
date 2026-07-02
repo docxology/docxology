@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and 
+- Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and
 - We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest..
 - Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis..
 
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2020). *BehaviorEngineering*. Zenodo.
+> Daniel A. Friedman (2020). *BehaviorEngineering*. Zenodo. DOI: 10.5281/zenodo.4021162. URL: https://doi.org/10.5281/zenodo.4021162.
 
 ## Related
 

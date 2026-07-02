@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Active Inference Multi-Track Exemplar*. Zenodo.
+> Daniel Ari Friedman (2026). *Active Inference Multi-Track Exemplar*. Zenodo. DOI: 10.5281/zenodo.20417021. URL: https://doi.org/10.5281/zenodo.20417021.
 
 ## Related
 

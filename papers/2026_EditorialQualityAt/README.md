@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo.
+> Daniel Ari Friedman (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo. DOI: 10.5281/zenodo.20417104. URL: https://doi.org/10.5281/zenodo.20417104.
 
 ## Related
 

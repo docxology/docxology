@@ -33,7 +33,7 @@
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *Con-cat-enate: pilot overview*. Zenodo.
+> andrew djuwidja, Daniel Friedman (2025). *Con-cat-enate: pilot overview*. Zenodo. DOI: 10.5281/zenodo.14737043. URL: https://doi.org/10.5281/zenodo.14737043.
 
 ## Related
 

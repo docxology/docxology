@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *NSFReporting*. Zenodo.
+> Daniel Ari Friedman (2023). *NSFReporting*. Zenodo. DOI: 10.5281/zenodo.10160656. URL: https://doi.org/10.5281/zenodo.10160656.
 
 ## Related
 

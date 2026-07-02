@@ -33,7 +33,7 @@
 
 ## Citation
 
-> R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Zenodo.
+> R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Zenodo. DOI: 10.5281/zenodo.10362561. URL: https://doi.org/10.5281/zenodo.10362561.
 
 ## Related
 

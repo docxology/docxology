@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value*. Zenodo.
+> Daniel Ari Friedman (2026). *The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value*. Zenodo. DOI: 10.5281/zenodo.19335195. URL: https://doi.org/10.5281/zenodo.19335195.
 
 ## Related
 

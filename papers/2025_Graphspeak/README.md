@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others
+> An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) (
+- An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (
 
 ## Artifacts
 
@@ -32,7 +32,7 @@
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *Graphspeak: of language and handshake*. Zenodo.
+> andrew djuwidja, Daniel Friedman (2025). *Graphspeak: of language and handshake*. Zenodo. DOI: 10.5281/zenodo.14737157. URL: https://doi.org/10.5281/zenodo.14737157.
 
 ## Related
 

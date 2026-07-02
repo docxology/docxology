@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman (2015). *CryptoJews*. Frontiers in Genetics.
+> Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman (2015). *CryptoJews*. Frontiers in Genetics. DOI: 10.3389/fgene.2015.00261. URL: https://doi.org/10.3389/fgene.2015.00261.
 
 ## Related
 

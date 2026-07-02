@@ -32,7 +32,7 @@
 
 ## Citation
 
-> Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *NeurotransmitterVariation*. Analytical & Bioanalytical Chemistry.
+> Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *NeurotransmitterVariation*. Analytical & Bioanalytical Chemistry. DOI: 10.1007/s00216-019-02355-3. URL: https://doi.org/10.1007/s00216-019-02355-3.
 
 ## Related
 

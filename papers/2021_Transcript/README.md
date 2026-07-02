@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others (2021). *Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021*. Zenodo.
+> Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others (2021). *Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021*. Zenodo. DOI: 10.5281/zenodo.5797072. URL: https://doi.org/10.5281/zenodo.5797072.
 
 ## Related
 

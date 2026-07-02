@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman (2022). *SystematicLiteratureAnalysis*. Zenodo.
+> Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman (2022). *SystematicLiteratureAnalysis*. Zenodo. DOI: 10.5281/zenodo.7449367. URL: https://doi.org/10.5281/zenodo.7449367.
 
 ## Related
 

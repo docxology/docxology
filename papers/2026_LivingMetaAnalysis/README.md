@@ -43,7 +43,7 @@ complete quantitative portrait of its literature.
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *A Living Meta-Analysis of the Modafinil Literature*. Zenodo.
+> Daniel Ari Friedman (2026). *A Living Meta-Analysis of the Modafinil Literature*. Zenodo. DOI: 10.5281/zenodo.20931964. URL: https://doi.org/10.5281/zenodo.20931964.
 
 ## Related
 

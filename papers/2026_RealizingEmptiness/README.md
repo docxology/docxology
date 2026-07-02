@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <div>This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations,...
+> This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles: formal sanity checks for source equations,...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- <div>This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact.
+- This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact.
 - Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles
 
 ## Artifacts
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction*. Zenodo.
+> Daniel Ari Friedman (2026). *Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction*. Zenodo. DOI: 10.5281/zenodo.20834846. URL: https://doi.org/10.5281/zenodo.20834846.
 
 ## Related
 

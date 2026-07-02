@@ -33,7 +33,7 @@
 
 ## Citation
 
-> Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman (2022). *Tracking Public Sensemaking through Rhetorical Annotation of Image Memes*. Zenodo.
+> Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman (2022). *Tracking Public Sensemaking through Rhetorical Annotation of Image Memes*. Zenodo. DOI: 10.5281/zenodo.6904427. URL: https://doi.org/10.5281/zenodo.6904427.
 
 ## Related
 

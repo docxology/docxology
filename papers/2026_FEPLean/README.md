@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> <p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may l...
+> The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may l...
 
 ## Keywords
 
@@ -21,7 +21,7 @@
 
 ## Key Findings
 
-- <p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a
+- The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a
 - Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit.
 
 ## Artifacts
@@ -35,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Active Inference Journal.
+> Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Active Inference Journal. DOI: 10.5281/zenodo.19699234. URL: https://doi.org/10.5281/zenodo.19699234.
 
 ## Related
 
