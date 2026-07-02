@@ -153,7 +153,8 @@ After adding records it runs [`regenerate_all.py`](#regenerate-dependent-surface
 A GitHub repository or release without a DOI is not automatically a publication. Decide whether it belongs in:
 
 - [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md), for curated owned or AII-contribution software.
-- [`data/github-repositories.json`](../../data/github-repositories.json) / [`repositories.html`](../../repositories.html), for the full generated public GitHub inventory.
+- [`data/github-repositories.json`](../../data/github-repositories.json), for the complete generated public GitHub inventory.
+- [`repositories.html`](../../repositories.html) / [`repositories-forks.html`](../../repositories-forks.html), for the primary non-fork inventory and the separate fork archive.
 - No curated surface, for forks, tests, internal-only releases, or repositories outside the profile scope.
 
 After a curated software edit, run:

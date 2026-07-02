@@ -57,7 +57,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | GitHub API — docxology | [api.github.com/users/docxology](https://api.github.com/users/docxology) | Public repo count, profile timestamps, and profile metadata |
 | GitHub API — AII | [api.github.com/users/ActiveInferenceInstitute](https://api.github.com/users/ActiveInferenceInstitute) | Latest generated API snapshot and local catalog count are recorded in [`../reports/current_counts.md`](../reports/current_counts.md) and [`../data/github-repositories.json`](../data/github-repositories.json). **Note:** the `ActiveInferenceInstitute` account is a GitHub **User**, not an Organization — use `/users/`; `/orgs/ActiveInferenceInstitute` returns 404. |
 | AII public landing page | [activeinference.org](https://activeinference.org/) | Current public landing page; governance/source pages remain on activeinference.institute |
-| GitHub Search | [docxology repositories](https://github.com/docxology?tab=repositories) | Human-browsable repository list including forks and profile repos |
+| GitHub Search | [docxology repositories](https://github.com/docxology?tab=repositories) | Human-browsable GitHub profile list; use the local inventory pages below for the primary/fork split |
 | AII GitHub | [ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | Institute software and educational repositories |
 | AII Wikidata | [Q139600792](https://www.wikidata.org/wiki/Q139600792) | Organization knowledge-graph anchor; useful for reconciliation, but currently lightly referenced |
 | LLMs.txt | [llms.txt](../llms.txt) | Compact agent-facing map of canonical pages and source-of-truth rules |
@@ -69,7 +69,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Data catalog | [catalog.html](../catalog.html) / [data/catalog.json](../data/catalog.json) | Schema.org DataCatalog for public JSON, citation, and report exports |
 | Works JSON | [data/works.json](../data/works.json) | Structured bibliography export; row count in [current totals](../reports/current_counts.md) |
 | Software JSON | [data/software.json](../data/software.json) | Structured export of the curated software catalog; current count is in [`../reports/current_counts.md`](../reports/current_counts.md) |
-| GitHub repository inventory | [repositories.html](../repositories.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated full public repository inventory, including forks and uncataloged repos; current owner counts are in [`../reports/current_counts.md`](../reports/current_counts.md) |
+| GitHub repository inventory | [repositories.html](../repositories.html) / [repositories-forks.html](../repositories-forks.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated public repository inventory: the primary HTML page excludes forks, forks are archived separately, and JSON remains complete for agents; current owner counts are in [`../reports/current_counts.md`](../reports/current_counts.md) |
 | People JSON | [data/people.json](../data/people.json) | Compact people index for agentic context |
 | Organizations JSON | [data/organizations.json](../data/organizations.json) | Compact organization index for agentic context |
 | Claims JSON | [data/claims.json](../data/claims.json) | Evidence ledger data for key public claims |

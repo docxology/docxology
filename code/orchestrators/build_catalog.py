@@ -70,7 +70,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("works", "Curated Works Bibliography", "data/works.json", f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
     ("software", "Software Catalog", "data/software.json", f"{software_count} catalogued software repositories across docxology and AII contributions."),
-    ("github-repositories", "Full GitHub Repository Inventory", "data/github-repositories.json", "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags."),
+    ("github-repositories", "GitHub Repository Inventory", "data/github-repositories.json", "Generated public docxology and Active Inference Institute repository data; the primary HTML page excludes forks and links to a separate fork archive."),
     ("videos", "YouTube Video Metadata", "data/videos.json", f"{video_count} personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),

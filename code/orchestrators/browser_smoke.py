@@ -29,6 +29,7 @@ PAGES = [
     ("works", "works/index.html", ".work-row"),
     ("search", "search.html?q=active%20inference", ".result-card"),
     ("repositories", "repositories.html", ".inventory-table"),
+    ("repository-forks", "repositories-forks.html", ".inventory-table"),
     ("catalog", "catalog.html", ".catalog-card"),
     ("updates", "updates.html", ".update-card"),
     ("art", "art.html", ".art-card"),

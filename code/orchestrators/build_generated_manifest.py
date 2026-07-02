@@ -154,7 +154,7 @@ ARTIFACTS = [
     },
     {
         "name": "Full GitHub repository inventory",
-        "outputs": ["data/github-repositories.json", "repositories.html"],
+        "outputs": ["data/github-repositories.json", "repositories.html", "repositories-forks.html"],
         "sources": ["GitHub REST API", "data/software.json", "code/orchestrators/build_github_inventory.py"],
         "command": "python3 code/orchestrators/build_github_inventory.py",
     },

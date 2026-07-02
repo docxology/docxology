@@ -71,7 +71,7 @@ Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collectio
 
 ### Computational Frameworks
 
-Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His catalogued owned repositories and Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md) ([current totals](../reports/current_counts.md)), plus the [full generated repository inventory](../repositories.html), represent a significant body of open-source scientific software.
+Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and Julia — including AI-native coding workspaces (codomyrmex), cryptographic steganography tools, research templates with CI/CD pipelines, markdown-based document processing frameworks, and the **ento_linguistics** corpus pipeline (Ento-Linguistics; Zenodo). His catalogued owned repositories and Active Inference Institute contributions in [SOFTWARE.md](SOFTWARE.md) ([current totals](../reports/current_counts.md)), plus the [primary generated repository inventory](../repositories.html) and [fork archive](../repositories-forks.html), represent a significant body of open-source scientific software.
 
 ---
 
@@ -190,7 +190,7 @@ The curated bibliography remains the source of truth for this repository. Public
 | [Europe PMC](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | 10 exact-author results, including preprints |
 | [Crossref](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | 15 DOI records attached to the ORCID |
 | [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | 40 exact-name records; 98 ORCID-linked versioned records and software archives |
-| [GitHub](https://github.com/docxology) | Current public repository totals are recorded in [current counts](../reports/current_counts.md) and the [generated inventory](../repositories.html) |
+| [GitHub](https://github.com/docxology) | Current public repository totals are recorded in [current counts](../reports/current_counts.md), with primary repositories in the [generated inventory](../repositories.html) and forks in the [fork archive](../repositories-forks.html) |
 
 See [DISCOVERY.md](DISCOVERY.md) for canonical IDs, API endpoints, query recipes, and verification notes.
 

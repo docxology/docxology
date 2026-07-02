@@ -55,7 +55,8 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("works", "page", "Works Index", "/works/", "Generated per-work bibliography pages.", ["works", "citations"]),
     ("domains", "page", "Research Domains", "/domains.html", "Domain landing pages and learning paths.", ["domains"]),
     ("software", "page", "Software", "/software.html", "Owned and AII software repositories.", ["software", "github"]),
-    ("repositories", "page", "GitHub Repositories", "/repositories.html", "Search public docxology and Active Inference Institute repositories by topic, language, owner, and curation status.", ["software", "github", "inventory", "active inference"]),
+    ("repositories", "page", "Primary GitHub Repositories", "/repositories.html", "Search non-fork public docxology and Active Inference Institute repositories by topic, language, owner, and curation status.", ["software", "github", "inventory", "active inference"]),
+    ("repositories-forks", "page", "Forked GitHub Repositories", "/repositories-forks.html", "Separated archive of forked public docxology and Active Inference Institute repositories.", ["software", "github", "inventory", "forks"]),
     ("videos", "page", "Videos", "/videos.html", "Timeline of Active Inference talks, research livestreams, courses, interviews, and public video sessions.", ["videos", "active inference", "talks", "youtube"]),
     ("search", "page", "Search", "/search.html", "Human-facing search over works, software, pages, people, organizations, and claims.", ["search"]),
     ("catalog", "page", "Data Catalog", "/catalog.html", "Structured DataCatalog for public JSON exports.", ["catalog", "structured data"]),
@@ -289,7 +290,7 @@ def render(generated_at: str | None = None) -> str:
         items.append({"id": f"page:{id_}", "type": typ, "title": title, "url": url, "summary": summary, "tags": tags, "content": " ".join([title, summary, *tags])})
     items.extend(work_item(work, enrichments) for work in works)
     items.extend(software_item(repo) for repo in software)
-    items.extend(github_repo_item(repo) for repo in github_repositories)
+    items.extend(github_repo_item(repo) for repo in github_repositories if not repo.get("fork"))
     items.extend(video_item(video) for video in videos)
     items.extend(person_item(person) for person in people)
     items.extend(org_item(org) for org in orgs)

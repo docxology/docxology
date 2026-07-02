@@ -48,7 +48,7 @@ EXPORT_ROW_SPECS: list[tuple[str, str, str, str]] = [
     ("data/organizations.json", "Organizations JSON", "Institutional affiliation index.", "application/json"),
     ("data/resume.json", "Resume JSON", "Structured CV data merged from resume/source.json.", "application/json"),
     ("data/artworks.json", "Artworks JSON", "Gallery metadata for pen-and-ink and blockchain art.", "application/json"),
-    ("data/github-repositories.json", "GitHub inventory JSON", "Full public repository inventory.", "application/json"),
+    ("data/github-repositories.json", "GitHub inventory JSON", "Full public repository data; the human-facing inventory separates primary repositories from forks.", "application/json"),
     ("data/work-enrichment.json", "Work enrichment JSON", "Abstracts and keywords extracted from paper folders.", "application/json"),
     ("data/generated-manifest.json", "Generated manifest JSON", "Source-to-output rebuild map.", "application/json"),
     ("data/reconciliation.json", "Reconciliation JSON", "Curated counts vs public-source indexes.", "application/json"),

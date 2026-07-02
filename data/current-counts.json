@@ -21,16 +21,21 @@
       "data_works_json": 181
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 54,
+      "ActiveInferenceInstitute": 38,
       "archived": 0,
-      "curated": 94,
-      "docxology": 319,
-      "forks": 252,
+      "curated": 92,
+      "docxology": 328,
+      "fork_ActiveInferenceInstitute": 2,
+      "fork_docxology": 237,
+      "forks": 239,
+      "primary_ActiveInferenceInstitute": 36,
+      "primary_docxology": 91,
+      "primary_total": 127,
       "private": 0,
-      "public": 373,
-      "recently_updated": 92,
-      "total": 373,
-      "uncataloged": 279
+      "public": 366,
+      "recently_updated": 113,
+      "total": 366,
+      "uncataloged": 274
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -69,7 +74,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-07-02T13:19:50+00:00",
+  "generated_at": "2026-07-02T13:53:35+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

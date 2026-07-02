@@ -35,6 +35,7 @@ PAGES = [
     ("domains", "domains.html"),
     ("search", "search.html?q=active%20inference"),
     ("repositories", "repositories.html"),
+    ("repository-forks", "repositories-forks.html"),
     ("catalog", "catalog.html"),
     ("updates", "updates.html"),
     ("art", "art.html"),

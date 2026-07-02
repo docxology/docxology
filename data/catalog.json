@@ -86,8 +86,8 @@
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#github-repositories",
-      "name": "Full GitHub Repository Inventory",
-      "description": "Generated full inventory of public docxology and Active Inference Institute repositories with curated catalog flags.",
+      "name": "GitHub Repository Inventory",
+      "description": "Generated public docxology and Active Inference Institute repository data; the primary HTML page excludes forks and links to a separate fork archive.",
       "url": "https://danielarifriedman.com/data/github-repositories.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -502,7 +502,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-05-28/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-07-02/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +516,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-05-28/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-07-02/manifest.json",
         "encodingFormat": "application/json"
       }
     },

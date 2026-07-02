@@ -69,7 +69,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🔎 [**search.html**](search.html) / [**opensearch.xml**](opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
 | 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
 | 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
-| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [full generated repository inventory](repositories.html) for public GitHub coverage |
+| 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [primary repository inventory](repositories.html) and [fork archive](repositories-forks.html) for public GitHub coverage |
 | 📁 [**papers/**](papers/) | Per-paper folders — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md where a bibliography row has in-tree documentation |
 | 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
@@ -202,7 +202,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 💻 Computational Frameworks & Software
 
-> Computational works and software catalogs. Current bibliography, curated-software, and GitHub-inventory totals live in [`reports/current_counts.md`](reports/current_counts.md); [Works in Bibliography →](pages/BIBLIOGRAPHY.md#computational) · [Curated repos →](pages/SOFTWARE.md) · [Full inventory →](repositories.html)
+> Computational works and software catalogs. Current bibliography, curated-software, and GitHub-inventory totals live in [`reports/current_counts.md`](reports/current_counts.md); [Works in Bibliography →](pages/BIBLIOGRAPHY.md#computational) · [Curated repos →](pages/SOFTWARE.md) · [Primary inventory →](repositories.html)
 
 <details>
 <summary><b>Key publications & repositories (click to expand)</b></summary>
@@ -235,7 +235,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Integration for Ants and Beyond |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
-> **Full curated software list**: [pages/SOFTWARE.md →](pages/SOFTWARE.md). For all public GitHub repositories including forks and uncataloged projects, see [repositories.html →](repositories.html). Current totals live in [`reports/current_counts.md`](reports/current_counts.md).
+> **Full curated software list**: [pages/SOFTWARE.md →](pages/SOFTWARE.md). For public GitHub coverage, use the [primary repository inventory →](repositories.html); forks are separated into the [fork archive →](repositories-forks.html). Current totals live in [`reports/current_counts.md`](reports/current_counts.md).
 
 </details>
 

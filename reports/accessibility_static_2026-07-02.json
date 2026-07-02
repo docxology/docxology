@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T13:19:52Z",
+  "generated_at": "2026-07-02T13:53:36Z",
   "scope": "Static root HTML pages; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 22,
-  "passing": 22,
+  "page_count": 23,
+  "passing": 23,
   "results": [
     {
       "path": "art.html",
@@ -374,6 +374,29 @@
     },
     {
       "path": "publications.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0
+    },
+    {
+      "path": "repositories-forks.html",
       "ok": true,
       "checks": {
         "lang": true,

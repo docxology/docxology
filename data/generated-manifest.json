@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:22:42Z",
+  "generated_at": "2026-07-02T13:58:31Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -162,7 +162,8 @@
       "name": "Full GitHub repository inventory",
       "outputs": [
         "data/github-repositories.json",
-        "repositories.html"
+        "repositories.html",
+        "repositories-forks.html"
       ],
       "sources": [
         "GitHub REST API",
@@ -405,8 +406,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-05-28/*.png",
-        "reports/browser-smoke/2026-05-28/manifest.json"
+        "reports/browser-smoke/2026-07-02/*.png",
+        "reports/browser-smoke/2026-07-02/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -464,8 +465,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-05-28/*.png",
-        "reports/visual-qa/2026-05-28/manifest.json"
+        "reports/visual-qa/2026-07-02/*.png",
+        "reports/visual-qa/2026-07-02/manifest.json"
       ],
       "sources": [
         "root HTML pages",

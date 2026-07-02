@@ -15,7 +15,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Agent data exports | `data/software.json`<br>`data/people.json`<br>`data/organizations.json`<br>`data/claims.json` | `pages/SOFTWARE.md`<br>`code/src/software_table.py`<br>`data/scholar-snapshot.json`<br>`code/orchestrators/export_agent_data.py` | `python3 code/orchestrators/export_agent_data.py` |
 | Resume and CV exports | `data/resume.json`<br>`resume/full.txt`<br>`resume/academic.txt`<br>`resume/software-consulting.txt`<br>`resume/teaching-service.txt`<br>`resume/resume.pdf`<br>`resume/verify.html` | `resume/source.json`<br>`data/works.json`<br>`data/software.json`<br>`data/scholar-snapshot.json`<br>`data/claims.json`<br>`code/src/resume_data.py`<br>`code/orchestrators/build_resume.py` | `uv run python3 code/orchestrators/build_resume.py --all` |
 | Software catalog HTML sync | `software.html`<br>`data/software-ld.json` | `pages/SOFTWARE.md`<br>`code/src/software_table.py`<br>`code/orchestrators/sync_software_html.py` | `python3 code/orchestrators/sync_software_html.py --apply` |
-| Full GitHub repository inventory | `data/github-repositories.json`<br>`repositories.html` | `GitHub REST API`<br>`data/software.json`<br>`code/orchestrators/build_github_inventory.py` | `python3 code/orchestrators/build_github_inventory.py` |
+| Full GitHub repository inventory | `data/github-repositories.json`<br>`repositories.html`<br>`repositories-forks.html` | `GitHub REST API`<br>`data/software.json`<br>`code/orchestrators/build_github_inventory.py` | `python3 code/orchestrators/build_github_inventory.py` |
 | Paired publication sync report | `reports/paired_publications_2026-07-01.json` | `GitHub Releases API`<br>`Zenodo Records API`<br>`docs/operations/publication-sync.md`<br>`code/src/publication_pairing.py`<br>`code/orchestrators/sync_paired_publications.py` | `python3 code/orchestrators/sync_paired_publications.py` |
 | Paired publication review decisions | `data/paired-publication-decisions.json`<br>`reports/paired_publications_review_queue_2026-06-04.md` | `reports/paired_publications_2026-07-01.json`<br>`manual review decision` | `manual review; update data/paired-publication-decisions.json` |
 | Zenodo-only publication backfill | `pages/BIBLIOGRAPHY.md`<br>`papers/<YEAR>_<Slug>/`<br>`papers/paper_metadata.json`<br>`papers/README.md` | `Zenodo Records API`<br>`docs/operations/publication-sync.md`<br>`code/orchestrators/add_zenodo_only.py` | `python3 code/orchestrators/add_zenodo_only.py <record_id>` |
@@ -35,12 +35,12 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | External link triage | `reports/external_links_triage_2026-05-15.json`<br>`reports/external_links_triage_2026-05-15.md` | `reports/external_links_2026-05-15.json` | `python3 code/orchestrators/build_external_link_triage.py` |
 | Asset size audit | `reports/asset_size_2026-07-02.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
 | Static accessibility report | `reports/accessibility_static_2026-07-02.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
-| Browser smoke checks | `reports/browser-smoke/2026-05-28/*.png`<br>`reports/browser-smoke/2026-05-28/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
+| Browser smoke checks | `reports/browser-smoke/2026-07-02/*.png`<br>`reports/browser-smoke/2026-07-02/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
 | Live site verification | `reports/live_site_verification_2026-07-02.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | Image sitemap | `sitemap-images.xml` | `data/artworks.json`<br>`art/*`<br>`code/orchestrators/build_image_sitemap.py` | `python3 code/orchestrators/build_image_sitemap.py` |
-| Visual QA | `reports/visual-qa/2026-05-28/*.png`<br>`reports/visual-qa/2026-05-28/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
+| Visual QA | `reports/visual-qa/2026-07-02/*.png`<br>`reports/visual-qa/2026-07-02/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
 
 ## Validation
 
