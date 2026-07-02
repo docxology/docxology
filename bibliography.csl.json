@@ -4506,5 +4506,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21086548",
     "URL": "https://doi.org/10.5281/zenodo.21086548"
+  },
+  {
+    "id": "Friedman2026EntomologicalLawFieldMap183",
+    "type": "article-journal",
+    "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 183; docs: papers/2026_EntomologicalLaw/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21137276",
+    "URL": "https://doi.org/10.5281/zenodo.21137276"
   }
 ]

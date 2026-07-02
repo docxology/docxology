@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-02T13:53:34Z",
+  "generated_at": "2026-07-02T19:19:29Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 181,
+  "count": 182,
   "works": [
     {
       "num": 1,
@@ -2535,6 +2535,20 @@
       "url": "https://doi.org/10.5281/zenodo.21086548",
       "doi": "10.5281/zenodo.21086548",
       "docs_path": "papers/2026_DomainLanguageSpecifying/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 183,
+      "citation_key": "Friedman2026EntomologicalLawFieldMap183",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21137276",
+      "doi": "10.5281/zenodo.21137276",
+      "docs_path": "papers/2026_EntomologicalLaw/",
       "has_paper_folder": true
     }
   ]

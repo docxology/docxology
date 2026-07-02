@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-02T18:04:40Z",
+  "generated_at": "2026-07-02T19:19:30Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 181,
+  "count": 182,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3673,6 +3673,30 @@
         "Data-driven analysis"
       ],
       "source": "papers/2026_DomainLanguageSpecifying/README.md"
+    },
+    "Friedman2026EntomologicalLawFieldMap183": {
+      "citation_key": "Friedman2026EntomologicalLawFieldMap183",
+      "abstract": "A Source-Anchored Map of Entomological Law There is no statute, treatise, or law-school casebook titled \"Entomological Law.\" The phrase names a synthetic field — the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed for: Can a fly testify? Who owns a swarm? Is a bumblebee a fish? Can you patent a mosquito? May a court excommunicate a weevil? Does a cricket suffer? May insects be used in war? This reference compiles that field as a machine-readable and reproducible artifact organized around the legal role an insect occupies in a given dispute. It encodes 8 legal roles — witness, regulated threat, protected subject, property, invention, defendant, moral patient, and weapon — and binds to them 18 landmark decisions, 43 statutes and treaties across 9 categories and 10 jurisdictions, 24 insect taxa, 13 certifying and regulat",
+      "keywords": [
+        "entomological law",
+        "legal entomology",
+        "forensic entomology",
+        "endangered species",
+        "invasive species",
+        "insect welfare",
+        "gene drive",
+        "biological weapons convention",
+        "reproducible legal scholarship"
+      ],
+      "findings": [
+        "entomological law",
+        "legal entomology",
+        "forensic entomology",
+        "endangered species",
+        "invasive species"
+      ],
+      "methods": [],
+      "source": "papers/2026_EntomologicalLaw/README.md"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T18:05:15Z",
+  "generated_at": "2026-07-02T19:23:23Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1590,
+  "count": 1591,
   "items": [
     {
       "id": "page:home",
@@ -4357,6 +4357,30 @@
         "dimensional analysis"
       ],
       "content": "A Domain Language for Specifying Controlled Methods Zenodo 10.5281/zenodo.21086548 Friedman2026DomainLanguageSpecifyingControlled182 Computational Paper This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this manuscript's subject is the methodology itself: a controlled vocabulary, a unit system with dimensional safety, four staged validation gates, and a deterministic compiler, implement... methods paper domain-specific language controlled methods deterministic compilation staged validation dimensional analysis This paper describes a small, tested domain language for specifying Unlike a Software pipeline design Data-driven analysis"
+    },
+    {
+      "id": "work:Friedman2026EntomologicalLawFieldMap183",
+      "type": "work",
+      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "url": "/works/Friedman2026EntomologicalLawFieldMap183.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21137276",
+      "summary": "A Source-Anchored Map of Entomological Law There is no statute, treatise, or law-school casebook titled \"Entomological Law.\" The phrase names a synthetic field — the convergence zone where the six-legged world repeatedly",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "entomological law",
+        "legal entomology",
+        "forensic entomology",
+        "endangered species",
+        "invasive species",
+        "insect welfare",
+        "gene drive",
+        "biological weapons convention"
+      ],
+      "content": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon Zenodo 10.5281/zenodo.21137276 Friedman2026EntomologicalLawFieldMap183 Computational Paper A Source-Anchored Map of Entomological Law There is no statute, treatise, or law-school casebook titled \"Entomological Law.\" The phrase names a synthetic field — the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed for: Can a fly testify? Who owns a swarm? Is a bumblebee a fish? Can you patent a mosquito? May a court excommunicate a weevil? Does a cricket suffer? May insects be used in war? This reference compiles that field as a machine-readable and reproducible artifact organized around the legal role an insect occupies in a given dispute. It encodes 8 legal roles — witness, regulated threat, protected subject, property, invention, defendant, moral patient, and weapon — and binds to them 18 landmark decisions, 43 statutes and treaties across 9 categories and 10 jurisdictions, 24 insect taxa, 13 certifying and regulat entomological law legal entomology forensic entomology endangered species invasive species insect welfare gene drive biological weapons convention reproducible legal scholarship entomological law legal entomology forensic entomology endangered species invasive species"
     },
     {
       "id": "software:docxology:template",
@@ -27465,7 +27489,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 181 works.",
+      "title": "The curated bibliography contains 182 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27473,12 +27497,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 181 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 182 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 164 per-paper documentation folders.",
+      "title": "The repository contains 165 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27486,7 +27510,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 164 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 165 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -27662,7 +27686,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 181 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 182 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",
