@@ -1,6 +1,53 @@
 {
-  "generated_at": "2026-07-01T21:32:22Z",
+  "generated_at": "2026-07-02T12:50:30Z",
   "artifacts": [
+    {
+      "name": "Paper folder doc regeneration",
+      "outputs": [
+        "papers/*/README.md",
+        "papers/*/AGENTS.md",
+        "papers/*/SKILL.md"
+      ],
+      "sources": [
+        "papers/paper_metadata.json",
+        "pages/BIBLIOGRAPHY.md",
+        "papers/*/metadata.json"
+      ],
+      "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply --force"
+    },
+    {
+      "name": "Publications HTML sync",
+      "outputs": [
+        "publications.html",
+        "data/publications-ld.json"
+      ],
+      "sources": [
+        "pages/BIBLIOGRAPHY.md",
+        "code/src/biblio_table.py"
+      ],
+      "command": "python3 code/orchestrators/sync_publications_html.py --apply"
+    },
+    {
+      "name": "Metadata enrichment",
+      "outputs": [
+        "papers/*/metadata.json"
+      ],
+      "sources": [
+        "papers/paper_metadata.json",
+        "pages/BIBLIOGRAPHY.md"
+      ],
+      "command": "uv run python3 code/orchestrators/batch_enrich_metadata.py --apply"
+    },
+    {
+      "name": "Metadata quality improvement",
+      "outputs": [
+        "papers/*/metadata.json"
+      ],
+      "sources": [
+        "papers/*/metadata.json"
+      ],
+      "command": "uv run python3 code/orchestrators/improve_metadata_quality.py --apply"
+    },
     {
       "name": "Bibliography exports",
       "outputs": [
@@ -332,7 +379,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-07-01.json"
+        "reports/asset_size_2026-07-02.json"
       ],
       "sources": [
         "root HTML pages",
@@ -346,7 +393,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-07-01.json"
+        "reports/accessibility_static_2026-07-02.json"
       ],
       "sources": [
         "root HTML pages",
@@ -371,7 +418,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-07-01.json"
+        "reports/live_site_verification_2026-07-02.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

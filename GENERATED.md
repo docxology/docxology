@@ -4,11 +4,11 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 
 | Artifact | Outputs | Sources | Rebuild command |
 | --- | --- | --- | --- |
-| Paper folder doc regeneration | `papers/*/README.md` `papers/*/AGENTS.md` `papers/*/SKILL.md` | `papers/paper_metadata.json` `pages/BIBLIOGRAPHY.md` `papers/*/metadata.json` | `uv run python3 code/orchestrators/regenerate_docs.py --apply --force` |
-| Publications HTML sync | `publications.html` `data/publications-ld.json` | `pages/BIBLIOGRAPHY.md` `code/src/biblio_table.py` | `python3 code/orchestrators/sync_publications_html.py --apply` |
-| Metadata enrichment | `papers/*/metadata.json` | `papers/paper_metadata.json` `pages/BIBLIOGRAPHY.md` | `uv run python3 code/orchestrators/batch_enrich_metadata.py --apply` |
+| Paper folder doc regeneration | `papers/*/README.md`<br>`papers/*/AGENTS.md`<br>`papers/*/SKILL.md` | `papers/paper_metadata.json`<br>`pages/BIBLIOGRAPHY.md`<br>`papers/*/metadata.json` | `uv run python3 code/orchestrators/regenerate_docs.py --apply --force` |
+| Publications HTML sync | `publications.html`<br>`data/publications-ld.json` | `pages/BIBLIOGRAPHY.md`<br>`code/src/biblio_table.py` | `python3 code/orchestrators/sync_publications_html.py --apply` |
+| Metadata enrichment | `papers/*/metadata.json` | `papers/paper_metadata.json`<br>`pages/BIBLIOGRAPHY.md` | `uv run python3 code/orchestrators/batch_enrich_metadata.py --apply` |
 | Metadata quality improvement | `papers/*/metadata.json` | `papers/*/metadata.json` | `uv run python3 code/orchestrators/improve_metadata_quality.py --apply` |
-| Bibliography exports | `bibliography.bib` `bibliography.csl.json` `bibliography.ris` `data/works.json` | `pages/BIBLIOGRAPHY.md` `code/src/biblio_table.py` | `python3 code/orchestrators/export_bibliography.py` |
+| Bibliography exports | `bibliography.bib`<br>`bibliography.csl.json`<br>`bibliography.ris`<br>`data/works.json` | `pages/BIBLIOGRAPHY.md`<br>`code/src/biblio_table.py` | `python3 code/orchestrators/export_bibliography.py` |
 | Scholar metrics sync | `pages/BIBLIOGRAPHY.md (badge)`<br>`index.html (meta/og/stat/li)`<br>`pages/PROFILE.md (prose + metrics table)`<br>`pages/LINKS.md`<br>`publications.html (header metrics pill)` | `data/scholar-snapshot.json`<br>`code/orchestrators/sync_scholar_metrics.py` | `python3 code/orchestrators/sync_scholar_metrics.py` |
 | Current count report | `reports/current_counts.md`<br>`data/current-counts.json` | `pages/BIBLIOGRAPHY.md`<br>`papers/README.md`<br>`pages/SOFTWARE.md`<br>`data/works.json`<br>`data/software.json`<br>`data/github-repositories.json`<br>`reports/public_source_snapshot_*.json`<br>`reports/paired_publications_*.json` | `uv run python3 code/orchestrators/build_current_counts.py` |
 | Open Graph preview images | `og-*.jpg`<br>`data/og-image-counts.json` | `data/current-counts.json`<br>`code/orchestrators/generate_og_images.py` | `python3 code/orchestrators/generate_og_images.py` |
@@ -33,10 +33,10 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Public source snapshot | `reports/public_source_snapshot_2026-06-18.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
 | Public source inventory | `reports/public_source_inventory_2026-06-18.json` | `ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | External link triage | `reports/external_links_triage_2026-05-15.json`<br>`reports/external_links_triage_2026-05-15.md` | `reports/external_links_2026-05-15.json` | `python3 code/orchestrators/build_external_link_triage.py` |
-| Asset size audit | `reports/asset_size_2026-07-01.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
-| Static accessibility report | `reports/accessibility_static_2026-07-01.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
+| Asset size audit | `reports/asset_size_2026-07-02.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
+| Static accessibility report | `reports/accessibility_static_2026-07-02.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
 | Browser smoke checks | `reports/browser-smoke/2026-05-28/*.png`<br>`reports/browser-smoke/2026-05-28/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
-| Live site verification | `reports/live_site_verification_2026-07-01.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
+| Live site verification | `reports/live_site_verification_2026-07-02.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | Image sitemap | `sitemap-images.xml` | `data/artworks.json`<br>`art/*`<br>`code/orchestrators/build_image_sitemap.py` | `python3 code/orchestrators/build_image_sitemap.py` |

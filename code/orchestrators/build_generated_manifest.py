@@ -56,6 +56,30 @@ LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "repo
 
 ARTIFACTS = [
     {
+        "name": "Paper folder doc regeneration",
+        "outputs": ["papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md"],
+        "sources": ["papers/paper_metadata.json", "pages/BIBLIOGRAPHY.md", "papers/*/metadata.json"],
+        "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply --force",
+    },
+    {
+        "name": "Publications HTML sync",
+        "outputs": ["publications.html", "data/publications-ld.json"],
+        "sources": ["pages/BIBLIOGRAPHY.md", "code/src/biblio_table.py"],
+        "command": "python3 code/orchestrators/sync_publications_html.py --apply",
+    },
+    {
+        "name": "Metadata enrichment",
+        "outputs": ["papers/*/metadata.json"],
+        "sources": ["papers/paper_metadata.json", "pages/BIBLIOGRAPHY.md"],
+        "command": "uv run python3 code/orchestrators/batch_enrich_metadata.py --apply",
+    },
+    {
+        "name": "Metadata quality improvement",
+        "outputs": ["papers/*/metadata.json"],
+        "sources": ["papers/*/metadata.json"],
+        "command": "uv run python3 code/orchestrators/improve_metadata_quality.py --apply",
+    },
+    {
         "name": "Bibliography exports",
         "outputs": ["bibliography.bib", "bibliography.csl.json", "bibliography.ris", "data/works.json"],
         "sources": ["pages/BIBLIOGRAPHY.md", "code/src/biblio_table.py"],
