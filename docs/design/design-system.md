@@ -58,6 +58,8 @@ Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 - `.page-hero` / `.section` / `.section-alt` rhythm
 - `.btn`, `.btn-gold`, `.btn-outline` for CTAs
 - Publications: `.pub-table`, `.filter-row`, `.domain-pill`
+- **TTS controls** (added 2026-07-05): floating toggle + panel; [`design/components/tts.md`](components/tts.md)
+- **Interactive:** reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links ([`design/animations.md`](animations.md))
 
 ## Stylesheet structure
 

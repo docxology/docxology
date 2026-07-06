@@ -15,7 +15,7 @@ SOURCE = REPO_ROOT / "CHANGELOG.md"
 OUT = REPO_ROOT / "updates.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import BREADCRUMB_CSS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Updates", "updates.html")]
 
@@ -141,6 +141,7 @@ def render() -> str:
 {body}
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p></footer>
+{INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>
 </html>
 """

@@ -48,6 +48,24 @@ uv run pytest code/tests/test_seo_invariants.py::test_collect_seo_errors_empty_o
 uv run python3 code/orchestrators/validate_repo.py
 ```
 
+## Interactive Layer (added 2026-07-05)
+
+All 23 indexable pages include two new JS modules:
+
+| Module | File | Features |
+|--------|------|----------|
+| **TTS Controls** | `js/tts-controls.js` | Web Speech API read-aloud, floating panel (T key), speed/voice selection, paragraph highlighting, auto-scroll |
+| **Interactive** | `js/interactive.js` | Reading progress bar, scroll-to-top button, keyboard shortcuts overlay (? key), section anchor copy-links, search autocomplete (search-index.json), image lazy loading, external link safety |
+
+To verify:
+- Press `T` → TTS panel opens
+- Press `?` → keyboard shortcuts overlay
+- Scroll down → red-gold progress bar fills, `↑` button appears
+- Type in search input → autocomplete suggestions from search-index.json
+- Hover section `h2` heading → `#` anchor link appears (click to copy URL)
+
+**CSS** for all new components appended to `style.css`. Respects `prefers-reduced-motion`. Hidden in print + mobile responsive.
+
 `.github/workflows/validate.yml` runs `validate_repo.py` + `pytest` on every push/PR.
 Other workflows: `indexnow-on-push.yml`, `freshness.yml`, `live-verify.yml`.
 

@@ -98,7 +98,7 @@
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>
         <div class="nav-links">
             <a href="../index.html#about">About</a>
             <a href="../publications.html">Publications</a>
@@ -150,9 +150,9 @@
         <section class="section">
             <div class="section-header"><h2>Related Works</h2><p>Bibliography entries inferred from the video title, topic tags, and cached transcript excerpt when present.</p><div class="section-divider"></div></div>
             <ul class="link-list"><li><a href="../works/Friedman2022TranscriptMarkSolmsConsciousness142.html">Transcript of: Mark Solms, &quot;Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations&quot;, ActInf GuestStream #016</a><span class="muted"> - 2022 - Active Inference</span></li>
-<li><a href="../works/Friedman2025CognitiveArtScienceToward016.html">On Cognitive Art &amp; Science: Toward Wholeness From Both Sides</a><span class="muted"> - 2025 - Art &amp; Synergetics</span></li>
-<li><a href="../works/Friedman2026TowardsLean4Formalization113.html">Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</a><span class="muted"> - 2026 - Active Inference</span></li>
-<li><a href="../works/Friedman2018WoodliceMenBayesianAccount098.html">Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)</a><span class="muted"> - 2018 - Active Inference</span></li></ul>
+<li><a href="../works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html">MVEE: A Framework for Evolutionary Studies</a><span class="muted"> - 2018 - Media &amp; Teaching</span></li>
+<li><a href="../works/Friedman2018WoodliceMenBayesianAccount098.html">Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)</a><span class="muted"> - 2018 - Active Inference</span></li>
+<li><a href="../works/Friedman2021ActiveInferantsActiveInference075.html">Active Inferants: An Active Inference Framework for Ant Colony Behavior</a><span class="muted"> - 2021 - Entomology</span></li></ul>
         </section>
         <section class="section">
             <div class="section-header"><h2>Transcript</h2><p>Cached caption text when YouTube exposes captions and the transcript fetcher has been run.</p><div class="section-divider"></div></div>
@@ -160,5 +160,7 @@
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
-</body>
+<script src="/js/tts-controls.js?v=20260705" defer></script>
+<script src="/js/interactive.js?v=20260705" defer></script>
+<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script></body>
 </html>

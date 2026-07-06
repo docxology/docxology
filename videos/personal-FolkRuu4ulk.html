@@ -98,7 +98,7 @@
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>
         <div class="nav-links">
             <a href="../index.html#about">About</a>
             <a href="../publications.html">Publications</a>
@@ -150,9 +150,9 @@
         <section class="section">
             <div class="section-header"><h2>Related Works</h2><p>Bibliography entries inferred from the video title, topic tags, and cached transcript excerpt when present.</p><div class="section-divider"></div></div>
             <ul class="link-list"><li><a href="../works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html">PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus</a><span class="muted"> - 2019 - Entomology</span></li>
-<li><a href="../works/Friedman2019PhysiologyForagerHydrationVariation095.html">The physiology of forager hydration and variation among harvester ant colonies</a><span class="muted"> - 2019 - Entomology</span></li>
 <li><a href="../works/Friedman2016ContextDependentExpressionForaging104.html">Context-dependent expression of the foraging gene in field colonies of ants</a><span class="muted"> - 2016 - Entomology</span></li>
-<li><a href="../works/Friedman2017TwoLineagesThatNeed102.html">Two lineages that need each other</a><span class="muted"> - 2017 - Entomology</span></li></ul>
+<li><a href="../works/Friedman2017TwoLineagesThatNeed102.html">Two lineages that need each other</a><span class="muted"> - 2017 - Entomology</span></li>
+<li><a href="../works/Friedman2018RoleDopamineCollectiveRegulation100.html">The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants</a><span class="muted"> - 2018 - Entomology</span></li></ul>
         </section>
         <section class="section">
             <div class="section-header"><h2>Transcript</h2><p>Cached caption text when YouTube exposes captions and the transcript fetcher has been run.</p><div class="section-divider"></div></div>
@@ -160,5 +160,7 @@
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
-</body>
+<script src="/js/tts-controls.js?v=20260705" defer></script>
+<script src="/js/interactive.js?v=20260705" defer></script>
+<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script></body>
 </html>

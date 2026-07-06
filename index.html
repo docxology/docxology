@@ -24,6 +24,29 @@
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
     <link rel="alternate" type="text/x-bibtex" href="/bibliography.bib" title="BibTeX bibliography">
     <link rel="cite-as" href="https://github.com/docxology/docxology/blob/main/CITATION.cff">
+    <!-- Resource hints for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="prefetch" href="/publications.html" as="document">
+    <link rel="prefetch" href="/search.html" as="document">
+    <link rel="prefetch" href="/search-index.json" as="fetch" crossorigin>
+    <link rel="prefetch" href="/data/works.json" as="fetch" crossorigin>
+    <link rel="prefetch" href="/software.html" as="document">
+    <link rel="preconnect" href="https://scholar.google.com">
+    <link rel="preconnect" href="https://orcid.org">
+    <!-- rel-me for social profile verification -->
+    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://linkedin.com/in/danielarifriedman">
+    <link rel="me" href="https://youtube.com/@danielarifriedman">
+    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
+    <!-- hreflang for multilingual support -->
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
+    <meta name="revised" content="2026-07-05">
+    <meta name="date" content="2026-07-05">
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Daniel Ari Friedman — President, Active Inference Institute">
@@ -207,10 +230,34 @@
     "email": "Daniel@ActiveInference.Institute"
 }
     </script>
-    <!-- Fonts: preconnect + swap -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://danielarifriedman.com/#webpage",
+    "url": "https://danielarifriedman.com/",
+    "name": "Daniel Ari Friedman — President, Active Inference Institute",
+    "description": "Daniel Ari Friedman — President of the Active Inference Institute. Computational biologist, Active Inference & cognitive security researcher, and artist.",
+    "inLanguage": "en-US",
+    "dateModified": "2026-07-05",
+    "datePublished": "2025-01-01",
+    "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
+    "about": { "@id": "https://danielarifriedman.com/#person" },
+    "mainEntity": { "@id": "https://danielarifriedman.com/#person" },
+    "potentialAction": {
+        "@type": "ReadAction",
+        "target": "https://danielarifriedman.com/#main"
+    }
+}
+    </script>
+    <!-- Fonts: preconnect + swap + preload hero images -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="assets/hero-art/ant-head.webp">
+    <link rel="preload" as="image" href="assets/hero-art/decentral-antelligence-agency.webp">
+    <link rel="preload" as="image" href="assets/hero-art/mesh-network.webp">
+    <link rel="preload" as="image" href="assets/hero-art/an-ant-is-a-colony.webp">
+    <link rel="preload" as="image" href="assets/hero-art/army-ants.webp">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -520,11 +567,13 @@
         }, { threshold: 0.08 });
         document.querySelectorAll('.card,.stat,.pub-item,.art-card,.connect-card').forEach(el => observer.observe(el));
     }
-    // Service Worker registration
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').catch(() => {});
-    }
-    </script>
-<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
+    <!-- Service Worker registration -->
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(() => {});
+        }
+        </script>
+    <script src="/js/tts-controls.js?v=20260705" defer></script>
+    <script src="/js/interactive.js?v=20260705" defer></script>
+    <script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
 </body>
 </html>

@@ -14,7 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import clip_description, render_nav  # noqa: E402
+from site_nav import INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, render_nav  # noqa: E402
 
 
 def h(value: object) -> str:
@@ -166,7 +166,7 @@ def render_page(work: dict) -> str:
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
     </footer>
-</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
 

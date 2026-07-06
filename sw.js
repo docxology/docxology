@@ -1,12 +1,15 @@
 // Service Worker for danielarifriedman.com
 // Cache-first strategy for static assets, network-first for pages
-const CACHE_NAME = 'daf-portfolio-v15';
+const CACHE_NAME = 'daf-portfolio-v16';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/style.css',
   '/js/hero-glitch.js',
   '/js/publications.js',
+  '/js/tts-controls.js',
+  '/js/interactive.js',
+  '/js/search-utils.js',
   '/assets/hero-art/an-ant-is-a-colony.webp',
   '/assets/hero-art/ant-head.webp',
   '/assets/hero-art/army-ants.webp',
@@ -47,10 +50,6 @@ const STATIC_ASSETS = [
   '/data/work-enrichment.json',
   '/data/reconciliation.json',
   '/data/generated-manifest.json',
-  '/reports/asset_size_2026-05-13.json',
-  '/reports/external_links_2026-05-13.json',
-  '/reports/external_links_triage_2026-05-13.json',
-  '/reports/live_site_verification_2026-05-13.json',
   '/GENERATED.md',
   '/publications.html',
   '/software.html',

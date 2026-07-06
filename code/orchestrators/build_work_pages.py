@@ -15,7 +15,7 @@ WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
+from site_nav import INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
 
 try:
     from report_paths import generated_timestamp
@@ -546,7 +546,7 @@ def render_work_page(work: dict) -> str:
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
     </footer>
-</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
     )
@@ -597,7 +597,7 @@ def render_index(works: list[dict]) -> str:
     <main id="main" class="main"><section class="section"><div class="work-list">
 {rows}
     </div></section></main>
-</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
 

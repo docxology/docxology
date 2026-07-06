@@ -13,6 +13,14 @@
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
+    <!-- Resource hints -->
+    <link rel="prefetch" href="/search-index.json" as="fetch" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <meta name="revised" content="2026-07-05">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Search — Daniel Ari Friedman">
     <meta property="og:description" content="Search works, software, research domains, collaborators, evidence, and public metadata.">
@@ -178,6 +186,8 @@
                 results.innerHTML = '<p class="text-center text-muted mt-2">Search index unavailable.</p>';
             });
     </script>
+<script src="/js/tts-controls.js?v=20260705" defer></script>
+<script src="/js/interactive.js?v=20260705" defer></script>
 <script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
 </body>
 </html>

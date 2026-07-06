@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
     breadcrumb_list_jsonld,
     render_breadcrumb,
@@ -245,7 +246,7 @@ def page_footer() -> str:
         </div>
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
-""" + MENU_ESC_SCRIPT + """</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
 

@@ -21,7 +21,7 @@ PRIMARY_HTML_OUT = REPO_ROOT / "repositories.html"
 FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import BREADCRUMB_CSS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _PRIMARY_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html")]
 _FORKS_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html"), ("Forks", "repositories-forks.html")]
@@ -490,6 +490,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
         languageFilter.addEventListener('change', applyFilters);
         applyFilters();
     </script>
+{INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>
 </html>
 """

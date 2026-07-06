@@ -18,6 +18,8 @@ TRANSCRIPT_DIR = REPO_ROOT / "data" / "video-transcripts"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
     SITE_ORIGIN,
     breadcrumb_jsonld_script,
     clip_description,
@@ -590,7 +592,7 @@ def render_video_page(video: dict) -> str:
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
-</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
 
@@ -685,7 +687,7 @@ def render_index(payload: dict) -> str:
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
-</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
 

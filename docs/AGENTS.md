@@ -24,6 +24,7 @@ Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data
 5. **Changelog or manifest changes** — `build_updates_page.py` / `build_generated_manifest.py` when public changelog or generated-artifact lists change.
 6. **Freshness and QA** — public-source snapshots, external-link checks, live-site verification, accessibility/visual QA under [`reports/`](../reports/); triage bot-protection (403/429) before rewriting site copy based on checker output alone.
 7. **Health gate** — `code/orchestrators/validate_repo.py` before declaring the repo healthy; it includes publication-skill coverage/frontmatter checks through `code/orchestrators/audit_publication_skills.py --check`.
+8. **Interactive layer rebuild** — after updating `js/tts-controls.js` or `js/interactive.js`, or changing the shared script constants in `code/src/site_nav.py` (`INTERACTIVE_SCRIPTS`, `MENU_ESC_SCRIPT`), regenerate all generated pages (`regenerate_all.py`) and update hand-authored pages. Script tags use cache-busting `?v=20260705` — bump the version in `site_nav.py` and all hand-authored `<script src>` tags when the JS changes.
 
 ## Canonical URLs and reports
 

@@ -2,6 +2,18 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-05
+
+- Comprehensive interactive-layer buildout across all 23 indexable pages:
+  - **Text-to-Speech (TTS)**: Web Speech API integration (`js/tts-controls.js`) — floating control panel, speed/voice selection, paragraph highlighting, keyboard shortcut `T`
+  - **Interactive features** (`js/interactive.js`): reading progress bar, scroll-to-top button, keyboard shortcuts overlay (`?`), section anchor copy-links, search autocomplete from `search-index.json`, image lazy loading, external link safety
+  - **+515 lines CSS** for all new components with responsive, print, and reduced-motion overrides
+  - **Service Worker v16** — caches new JS modules, drops stale cache
+  - **Performance**: 5 hero-art image preloads, resource hints (dns-prefetch, prefetch) across all pages, `preconnect` for Scholar/ORCID
+  - **SEO**: `rel="me"` social profile verification links, `hreflang` support, WebPage JSON-LD on homepage
+  - **Docs**: `SKILL.md`, `docs/design/components/tts.md`, `docs/design/animations.md`; updated `AGENTS.md` with WEB DEVELOPER role, `CLAUDE.md` with interactive layer commands, design-system docs with new components
+- 5 `noindex` redirect stubs intentionally skipped (about, research, meditations, nft, google verification)
+
 ## 2026-07-01
 
 - Massive metadata enrichment sweep: all 164 paper folders now have extended schema (domain, type, methods, key_findings, related_papers, checked_at) via `batch_enrich_metadata.py`. 44 previously-missing `metadata.json` files created, 119 existing ones extended with paper-specific content.

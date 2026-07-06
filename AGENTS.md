@@ -48,6 +48,15 @@
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
 
+### 🖥️ WEB DEVELOPER
+
+- Maintains the site-wide interactive layer: [js/tts-controls.js](js/tts-controls.js) (Web Speech API text-to-speech) and [js/interactive.js](js/interactive.js) (reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links)
+- Ensures all 23 indexable HTML pages include both TTS + interactive script tags
+- Guards SEO invariants: canonical URLs, JSON-LD structured data (BreadcrumbList, Person, WebSite, WebPage, ProfessionalService), OG/Twitter meta, resource hints, `rel="me"`, `hreflang`
+- Maintains PWA readiness: service worker ([sw.js](sw.js)), manifest ([manifest.json](manifest.json)), cache strategy
+- Keeps the design system documentation ([docs/design/](docs/design/)) in sync with [style.css](style.css)
+- Runs [code/orchestrators/accessibility_audit.py](code/orchestrators/accessibility_audit.py) and [code/orchestrators/validate_repo.py](code/orchestrators/validate_repo.py) to gate SEO + a11y + generated-layer correctness
+
 ---
 
 ## Repository Structure
@@ -222,7 +231,8 @@ docxology/
 | 2026-06-22 | MAINTAINER | Synced the **CogSecSkills** publication (`zenodo.20804585`, work 173→174 range) and hardened publication intake | ✅ |
 | 2026-06-24 | MAINTAINER | Added **Realizing Emptiness** (`zenodo.20834846`, work 175); added `regenerate_all.py` as the single-command write-mode counterpart to `validate_repo --check`; `validate_repo` now runs `sync_scholar_metrics.py --check`; pruned superseded QA screenshot sets (-62 MB); softened unguarded external/domain prose counts (codomyrmex, COGSEC bio) | ✅ |
 | 2026-06-26 | ARCHIVIST | Added **A Living Meta-Analysis of the Modafinil Literature** (work 176) and **Refinement of Gold** (work 177) via the paired GitHub+Zenodo scan; refreshed `checked_at` metadata on 27 existing paired works | ✅ |
-| 2026-06-27 | ARCHIVIST | Added **AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference** (`zenodo.20976824`, work 178); updated the template/ Reproducible Generative Research entry to v1.0.9 | ✅ |
+| | 2026-06-27 | ARCHIVIST | Added **AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference** (`zenodo.20976824`, work 178); updated the template/ Reproducible Generative Research entry to v1.0.9 | ✅ |
+| | 2026-07-05 | WEB DEVELOPER | Comprehensive interactive-layer buildout — TTS controls (`js/tts-controls.js`, Web Speech API, floating panel), interactive features (`js/interactive.js`: reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchors), +515 CSS lines, WebPage JSON-LD, resource hints/rel=me/hreflang, 5 hero-image preloads, sw.js v16, SKILL.md, TTS/animation docs — 23 indexable pages covered | ✅ |
 | 2026-06-27 | INTEGRATOR | `build_work_pages.py` now renders a Platform availability card on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site) driven by new `data/publishing-status.json`; added `reports/publishing_status_megaindex.md` covering 272 items | ✅ |
 | 2026-06-29 | ARCHIVIST | Added **Mapping William Blake's Works** (`zenodo.21047573`, `docxology/blake` v0.1.0, work 179) via `sync_paired_publications.py --apply`; fixed 32 malformed bare-domain markdown links in `reports/publishing_status_megaindex.md` | ✅ |
 | 2026-06-30 | MAINTAINER | Added **Sortition Upstream of NTQR** (`zenodo.21083779`, `docxology/ntqr_allotment` v0.1.0, work 180) via `sync_paired_publications.py --apply` plus 31 metadata refreshes on existing rows. Comprehensive structure/docs audit + fixes: corrected `infer_domain()`'s substring false-positive (🐜 misclassification on "dominant"); fixed `ZenodoRecord.record_url` to derive from the concept DOI instead of the version-specific record id (was creating self-contradicting Zenodo URLs within the same document — repaired across 29 affected paper folders repo-wide); fixed the `freshness.yml` CI workflow's baseline-selection glob (always self-compared, permanently reporting no drift); stopped `export_agent_data.py` from overwriting every claim's `checked_at` with the export run's timestamp regardless of whether it was actually re-verified; fixed `generate_og_images.py`'s hardcoded stale counts and wired it (plus `build_image_sitemap.py`) into `regenerate_all.py`/`validate_repo.py`/`GENERATED.md`/`data/generated-manifest.json`; backfilled this maintenance log and `CHANGELOG.md` through 2026-06-29 | ✅ |

@@ -10,6 +10,9 @@ SITE_ORIGIN = "https://danielarifriedman.com/"
 # Shared mobile-menu Escape-to-close handler (Esc closes nav, resets aria-expanded, refocuses button).
 MENU_ESC_SCRIPT = '<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>'
 
+# Interactive layer script tags (TTS + interactive features) — appended before MENU_ESC_SCRIPT on generated pages.
+INTERACTIVE_SCRIPTS = '<script src="/js/tts-controls.js?v=20260705" defer></script>\n<script src="/js/interactive.js?v=20260705" defer></script>'
+
 # Work pages that are duplicates of another catalogued work (same paper, different
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
 # engines consolidate ranking signals instead of splitting them across duplicates.
