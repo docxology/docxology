@@ -46,6 +46,7 @@ The site now ships three interactive JavaScript modules loaded via `<script defe
 
 ### `js/tts-controls.js`
 - Web Speech API text-to-speech with a floating control panel
+- Toggle button fixed at **top-right** on desktop, re-positions to bottom on mobile
 - Auto-collects page content from `<main>` elements
 - Controls: play/pause/stop, speed slider, voice selection
 - Keyboard shortcut: `T` to toggle TTS panel

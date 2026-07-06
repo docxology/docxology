@@ -4,7 +4,7 @@ Added: 2026-07-05
 
 ## Overview
 
-The TTS (Text-to-Speech) system integrates the Web Speech API to provide read-aloud functionality across the site. It appears as a floating button in the bottom-right corner of every page.
+The TTS (Text-to-Speech) system integrates the Web Speech API to provide read-aloud functionality across every page. The toggle button is fixed at the **top-right** of the viewport (just below the nav bar); the control panel drops down from it on desktop. On mobile (<860px), both button and panel re-position to the **bottom** of the screen for thumb-reachable access.
 
 ## Source Files
 

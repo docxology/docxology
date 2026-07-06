@@ -952,10 +952,10 @@ footer{
 /* ============================================================
    TEXT-TO-SPEECH (TTS) CONTROLS
    ============================================================ */
-/* TTS toggle button (floating, lower-right) */
+/* TTS toggle button (fixed, top-right below nav) */
 .tts-toggle {
     position: fixed;
-    bottom: 1.5rem;
+    top: 5.5rem;
     right: 1.5rem;
     z-index: 300;
     width: 48px;
@@ -981,10 +981,10 @@ footer{
 }
 .tts-toggle-icon { line-height: 1; }
 
-/* TTS floating panel */
+/* TTS floating panel (drops down from top-right toggle) */
 .tts-panel {
     position: fixed;
-    bottom: 5rem;
+    top: 10rem;
     right: 1.5rem;
     z-index: 299;
     width: 320px;
@@ -993,7 +993,7 @@ footer{
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 6px;
     box-shadow: 0 12px 40px rgba(0,0,0,0.7);
-    transform: translateY(20px) scale(0.95);
+    transform: translateY(-12px) scale(0.95);
     opacity: 0;
     pointer-events: none;
     transition: all 0.25s ease;
@@ -1380,12 +1380,15 @@ section h2:hover .anchor-link,
 /* Responsive tweaks for new components */
 @media (max-width: 860px) {
     .tts-panel {
+        top: auto;
         bottom: 1rem;
         right: 1rem;
         width: calc(100vw - 2rem);
         max-width: 360px;
+        transform: translateY(20px) scale(0.95);
     }
-    .tts-toggle { bottom: 1rem; right: 1rem; }
+    .tts-panel.tts-open { transform: translateY(0) scale(1); }
+    .tts-toggle { top: auto; bottom: 1rem; right: 1rem; }
     .scroll-top { bottom: 4.5rem; right: 1rem; }
 }
 @media (max-width: 480px) {
