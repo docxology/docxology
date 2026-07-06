@@ -22,9 +22,11 @@ _WEBPAGE_LD = {
     "@type": "WebPage",
     "@id": "https://danielarifriedman.com/evidence.html#page",
     "name": "Evidence Ledger — Daniel Ari Friedman",
-    "description": "Claim-level evidence ledger for Daniel Ari Friedman: source links, confidence levels, caveats, and latest public-source snapshot.",
     "url": "https://danielarifriedman.com/evidence.html",
-    "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+    "dateModified": "2026-07-05",
+    "isPartOf": {
+        "@id": "https://danielarifriedman.com/#website"
+    }
 }
 
 

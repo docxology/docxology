@@ -298,6 +298,7 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
         "description": config.description,
         "url": f"https://danielarifriedman.com/{canonical}",
         "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+        "dateModified": "2026-07-05",
         "about": {"@type": "DefinedTerm", "name": config.short_title},
     }
     return (
@@ -385,6 +386,7 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
                 "description": "Domain landing pages for Daniel Ari Friedman's research, software, collaborators, and learning pathways.",
                 "url": "https://danielarifriedman.com/domains.html",
                 "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+                "dateModified": "2026-07-05",
             }],
         )
         + f"""

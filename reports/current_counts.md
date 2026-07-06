@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-07-06T02:49:43+00:00`
+Generated: `2026-07-06T04:17:36+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
