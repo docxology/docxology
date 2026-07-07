@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**182 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**184 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**161** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**163** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **182** works in the table below **·** **165** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **184** works in the table below **·** **167** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -220,6 +220,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 181 | 2026 | 💻 | Paper | Exploratory Data Analysis: A Reproducible Notebook Template | *Zenodo* | [10.5281/zenodo.21086292](https://doi.org/10.5281/zenodo.21086292) | [📁](../papers/2026_ExploratoryDataAnalysis/) |
 | 182 | 2026 | 💻 | Paper | A Domain Language for Specifying Controlled Methods | *Zenodo* | [10.5281/zenodo.21086548](https://doi.org/10.5281/zenodo.21086548) | [📁](../papers/2026_DomainLanguageSpecifying/) |
 | 183 | 2026 | 💻 | Paper | Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon | *Zenodo* | [10.5281/zenodo.21137276](https://doi.org/10.5281/zenodo.21137276) | [📁](../papers/2026_EntomologicalLaw/) |
+| 184 | 2026 | 💻 | Paper | The Shape Between: A Full-Page Illustrated Storybook Template | *Zenodo* | [10.5281/zenodo.21176000](https://doi.org/10.5281/zenodo.21176000) | [📁](../papers/2026_ShapeBetween/) |
+| 185 | 2026 | 💻 | Paper | Autopoietic Project Generation | *Zenodo* | [10.5281/zenodo.21227869](https://doi.org/10.5281/zenodo.21227869) | [📁](../papers/2026_AutopoieticProjectGeneration/) |
 ---
 
 ## Domain Index

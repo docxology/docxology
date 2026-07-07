@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T04:17:36Z",
+  "generated_at": "2026-07-07T00:59:17Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -33,7 +33,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 182,
+    "works": 184,
     "software_catalogued": 95,
     "owned_software_catalogued": 61,
     "aii_software_catalogued": 34,
@@ -46,13 +46,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 317 public repositories.",
+      "claim": "The docxology GitHub profile has 331 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-06-18.json"
+        "reports/public_source_snapshot_2026-07-07.json"
       ],
-      "checked_at": "2026-06-18T16:05:48.573245+00:00",
+      "checked_at": "2026-07-07T00:49:09.288379+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -60,13 +60,13 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 54 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-06-18.json"
+        "reports/public_source_snapshot_2026-07-07.json"
       ],
-      "checked_at": "2026-06-18T16:05:48.573245+00:00",
+      "checked_at": "2026-07-07T00:49:09.288379+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -4806,6 +4806,34 @@
       "doi": "10.5281/zenodo.21137276",
       "docs_path": "papers/2026_EntomologicalLaw/",
       "has_paper_folder": true
+    },
+    {
+      "num": 184,
+      "citation_key": "Friedman2026ShapeBetweenFullPage184",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21176000",
+      "doi": "10.5281/zenodo.21176000",
+      "docs_path": "papers/2026_ShapeBetween/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 185,
+      "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Autopoietic Project Generation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21227869",
+      "doi": "10.5281/zenodo.21227869",
+      "docs_path": "papers/2026_AutopoieticProjectGeneration/",
+      "has_paper_folder": true
     }
   ],
   "software": [
@@ -4814,11 +4842,11 @@
       "url": "https://github.com/docxology/template",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0",
+      "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
       "language": "Python",
       "stars": 17,
       "updated_or_year": "2026-06",
-      "paper_path": "",
+      "paper_path": "papers/2026_AutopoieticProjectGeneration/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
     },
     {
@@ -5953,14 +5981,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 182 works.",
+      "claim": "The curated bibliography contains 184 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-06T04:17:36+00:00",
+      "checked_at": "2026-07-07T00:59:17+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -5968,14 +5996,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 165 per-paper documentation folders.",
+      "claim": "The repository contains 167 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-06T04:17:36+00:00",
+      "checked_at": "2026-07-07T00:59:17+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -5983,13 +6011,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 317 public repositories.",
+      "claim": "The docxology GitHub profile has 331 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-06-18.json"
+        "reports/public_source_snapshot_2026-07-07.json"
       ],
-      "checked_at": "2026-06-18T16:05:48.573245+00:00",
+      "checked_at": "2026-07-07T00:49:09.288379+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -5997,13 +6025,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 54 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-06-18.json"
+        "reports/public_source_snapshot_2026-07-07.json"
       ],
-      "checked_at": "2026-06-18T16:05:48.573245+00:00",
+      "checked_at": "2026-07-07T00:49:09.288379+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

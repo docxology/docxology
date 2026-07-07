@@ -36,7 +36,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|:---:|---|
-| [template](https://github.com/docxology/template) | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · [Zenodo software v3.3.0](https://doi.org/10.5281/zenodo.20584820) | Python | 17 | 2026-06 |
+| [template](https://github.com/docxology/template) | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · [Zenodo software v3.3.0](https://doi.org/10.5281/zenodo.20584820) · [Zenodo](https://doi.org/10.5281/zenodo.21227869) · [📄](../papers/2026_AutopoieticProjectGeneration/) | Python | 17 | 2026-06 |
 | [QuadCraft](https://github.com/docxology/QuadCraft) | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world | JavaScript | 9 | 2026-05 |
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond · [📄](../papers/2021_ActiveInferants/) | Python | 6 | 2026-05 |
 | [codomyrmex](https://github.com/docxology/codomyrmex) | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration | Python | 6 | 2026-05 |

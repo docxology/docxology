@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T04:17:36Z",
+  "generated_at": "2026-07-07T00:59:17Z",
   "source": "pages/SOFTWARE.md",
   "count": 95,
   "repositories": [
@@ -8,11 +8,11 @@
       "url": "https://github.com/docxology/template",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0",
+      "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
       "language": "Python",
       "stars": 17,
       "updated_or_year": "2026-06",
-      "paper_path": "",
+      "paper_path": "papers/2026_AutopoieticProjectGeneration/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
     },
     {

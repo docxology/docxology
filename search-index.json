@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T04:17:37Z",
+  "generated_at": "2026-07-07T00:59:18Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1591,
+  "count": 1596,
   "items": [
     {
       "id": "page:home",
@@ -282,7 +282,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-06-18.md",
+      "url": "/reports/reconciliation_2026-07-07.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -294,7 +294,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-06-18.json",
+      "url": "/reports/public_source_inventory_2026-07-07.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -307,7 +307,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-06.json",
+      "url": "/reports/accessibility_static_2026-07-07.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -356,7 +356,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-06.json",
+      "url": "/reports/asset_size_2026-07-07.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -382,7 +382,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-07-02.json",
+      "url": "/reports/live_site_verification_2026-07-07.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4383,18 +4383,61 @@
       "content": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon Zenodo 10.5281/zenodo.21137276 Friedman2026EntomologicalLawFieldMap183 Computational Paper A Source-Anchored Map of Entomological Law There is no statute, treatise, or law-school casebook titled \"Entomological Law.\" The phrase names a synthetic field — the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed for: Can a fly testify? Who owns a swarm? Is a bumblebee a fish? Can you patent a mosquito? May a court excommunicate a weevil? Does a cricket suffer? May insects be used in war? This reference compiles that field as a machine-readable and reproducible artifact organized around the legal role an insect occupies in a given dispute. It encodes 8 legal roles — witness, regulated threat, protected subject, property, invention, defendant, moral patient, and weapon — and binds to them 18 landmark decisions, 43 statutes and treaties across 9 categories and 10 jurisdictions, 24 insect taxa, 13 certifying and regulat entomological law legal entomology forensic entomology endangered species invasive species insect welfare gene drive biological weapons convention reproducible legal scholarship entomological law legal entomology forensic entomology endangered species invasive species"
     },
     {
+      "id": "work:Friedman2026ShapeBetweenFullPage184",
+      "type": "work",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "url": "/works/Friedman2026ShapeBetweenFullPage184.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21176000",
+      "summary": "template storybook demonstrates a public, standalone picture-book workflow in the research template repository. The bundled project renders a deterministic fourteen-page storybook subtitled A geometric fable of belonging",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "storybook",
+        "illustration",
+        "procedural graphics",
+        "reportlab",
+        "reproducible publishing"
+      ],
+      "content": "The Shape Between: A Full-Page Illustrated Storybook Template Zenodo 10.5281/zenodo.21176000 Friedman2026ShapeBetweenFullPage184 Computational Paper template storybook demonstrates a public, standalone picture-book workflow in the research template repository. The bundled project renders a deterministic fourteen-page storybook subtitled A geometric fable of belonging, bracing, and reciprocal form: a clear cover, a publication-and-acknowledgements page, and twelve story pages in which a child tetrahedron raised by cubes meets a child cube raised by tetrahedra. The story uses a large reciprocal symbol, a tetrahedron-inside-cube stability spread, a shadow-projection lesson, a tensegrity lantern, and a vector garden to frame belonging without sameness: square and triangle families remain distinct while the space between them becomes navigable. The project separates story data, rendering logic, and orchestration. Story text, characters, page order, palettes, and overlay choices live in content/story.yaml; character generation and illustra storybook illustration procedural graphics reportlab reproducible publishing storybook illustration procedural graphics reportlab reproducible publishing"
+    },
+    {
+      "id": "work:Friedman2026AutopoieticProjectGeneration185",
+      "type": "work",
+      "title": "Autopoietic Project Generation",
+      "url": "/works/Friedman2026AutopoieticProjectGeneration185.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21227869",
+      "summary": "template autopoiesis is a combinatoric grammar that deterministically generates whole runnable projects — not files or snippets, but complete, independently testable child repositories with their own kernel source, tests",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "autopoiesis",
+        "combinatoric grammar",
+        "deterministic generation",
+        "project synthesis",
+        "reproducible research",
+        "infrastructure automation"
+      ],
+      "content": "Autopoietic Project Generation Zenodo 10.5281/zenodo.21227869 Friedman2026AutopoieticProjectGeneration185 Computational Paper template autopoiesis is a combinatoric grammar that deterministically generates whole runnable projects — not files or snippets, but complete, independently testable child repositories with their own kernel source, tests, analysis entry point, and manuscript. A single integer seed plus a grammar of orthogonal slots (primitive domain, analytical track, section set, and three presentation/provenance slots) selects one child from a combinatoric product space of 360 nominal (45 content-distinct) configurations, via a SHA-256 digest of the seed and slot identity — with no random-number generator anywhere in the expansion path. Project generators routinely claim completeness, determinism, and traceability without making any of the three independently checkable. This exemplar treats each claim as a structural property to verify rather than a rhetorical one to assert: verify child() recomputes a autopoiesis combinatoric grammar deterministic generation project synthesis reproducible research infrastructure automation autopoiesis combinatoric grammar deterministic generation project synthesis reproducible research"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
       "url": "https://github.com/docxology/template",
-      "summary": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0",
+      "summary": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 Python docxology"
+      "content": "template Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:QuadCraft",
@@ -6087,7 +6130,7 @@
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/GeneralizedNotationNotation",
       "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
-      "summary": "ActiveInferenceInstitute repository",
+      "summary": "Methods for specifying, checking, typing, rendering, executing, analyzing, and visualizing state space models, for Active Inference and Beyond. ",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -6097,7 +6140,7 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/GeneralizedNotationNotation  Python ActiveInferenceInstitute active active-inference active-inference-notation inference curated recent"
+      "content": "ActiveInferenceInstitute/GeneralizedNotationNotation Methods for specifying, checking, typing, rendering, executing, analyzing, and visualizing state space models, for Active Inference and Beyond.  Python ActiveInferenceInstitute active active-inference active-inference-notation inference curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/GEO-INFER",
@@ -6861,6 +6904,22 @@
       "content": "docxology/entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. Python docxology  recent"
     },
     {
+      "id": "github-repo:docxology/EntoLaw",
+      "type": "github_repository",
+      "title": "docxology/EntoLaw",
+      "url": "https://github.com/docxology/EntoLaw",
+      "summary": "A source-anchored, reproducible field map of entomological law",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TeX",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/EntoLaw A source-anchored, reproducible field map of entomological law TeX docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/EvoJump",
       "type": "github_repository",
       "title": "docxology/EvoJump",
@@ -7507,6 +7566,22 @@
       "content": "docxology/template_active_inference Active inference multi-track exemplar releases Python docxology  recent"
     },
     {
+      "id": "github-repo:docxology/template_autopoiesis",
+      "type": "github_repository",
+      "title": "docxology/template_autopoiesis",
+      "url": "https://github.com/docxology/template_autopoiesis",
+      "summary": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TeX",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) TeX docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/template_autoresearch_project",
       "type": "github_repository",
       "title": "docxology/template_autoresearch_project",
@@ -7699,6 +7774,22 @@
         "recent"
       ],
       "content": "docxology/template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) Python docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_storybook",
+      "type": "github_repository",
+      "title": "docxology/template_storybook",
+      "url": "https://github.com/docxology/template_storybook",
+      "summary": "Standalone full-page illustrated storybook template from docxology/template",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_template",
@@ -27489,7 +27580,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 182 works.",
+      "title": "The curated bibliography contains 184 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27497,12 +27588,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 182 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 184 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 165 per-paper documentation folders.",
+      "title": "The repository contains 167 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27510,12 +27601,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 165 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 167 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 317 public repositories.",
+      "title": "The docxology GitHub profile has 331 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -27523,12 +27614,12 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 317 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 331 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 54 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -27536,7 +27627,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 54 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
@@ -27686,7 +27777,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 182 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 184 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

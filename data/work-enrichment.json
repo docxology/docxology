@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-06T04:17:37Z",
+  "generated_at": "2026-07-07T00:59:18Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 182,
+  "count": 184,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3697,6 +3697,47 @@
       ],
       "methods": [],
       "source": "papers/2026_EntomologicalLaw/README.md"
+    },
+    "Friedman2026ShapeBetweenFullPage184": {
+      "citation_key": "Friedman2026ShapeBetweenFullPage184",
+      "abstract": "template storybook demonstrates a public, standalone picture-book workflow in the research template repository. The bundled project renders a deterministic fourteen-page storybook subtitled A geometric fable of belonging, bracing, and reciprocal form: a clear cover, a publication-and-acknowledgements page, and twelve story pages in which a child tetrahedron raised by cubes meets a child cube raised by tetrahedra. The story uses a large reciprocal symbol, a tetrahedron-inside-cube stability spread, a shadow-projection lesson, a tensegrity lantern, and a vector garden to frame belonging without sameness: square and triangle families remain distinct while the space between them becomes navigable. The project separates story data, rendering logic, and orchestration. Story text, characters, page order, palettes, and overlay choices live in content/story.yaml; character generation and illustra",
+      "keywords": [
+        "storybook",
+        "illustration",
+        "procedural graphics",
+        "reportlab",
+        "reproducible publishing"
+      ],
+      "findings": [
+        "storybook",
+        "illustration",
+        "procedural graphics",
+        "reportlab",
+        "reproducible publishing"
+      ],
+      "methods": [],
+      "source": "papers/2026_ShapeBetween/README.md"
+    },
+    "Friedman2026AutopoieticProjectGeneration185": {
+      "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+      "abstract": "template autopoiesis is a combinatoric grammar that deterministically generates whole runnable projects — not files or snippets, but complete, independently testable child repositories with their own kernel source, tests, analysis entry point, and manuscript. A single integer seed plus a grammar of orthogonal slots (primitive domain, analytical track, section set, and three presentation/provenance slots) selects one child from a combinatoric product space of 360 nominal (45 content-distinct) configurations, via a SHA-256 digest of the seed and slot identity — with no random-number generator anywhere in the expansion path. Project generators routinely claim completeness, determinism, and traceability without making any of the three independently checkable. This exemplar treats each claim as a structural property to verify rather than a rhetorical one to assert: verify child() recomputes a",
+      "keywords": [
+        "autopoiesis",
+        "combinatoric grammar",
+        "deterministic generation",
+        "project synthesis",
+        "reproducible research",
+        "infrastructure automation"
+      ],
+      "findings": [
+        "autopoiesis",
+        "combinatoric grammar",
+        "deterministic generation",
+        "project synthesis",
+        "reproducible research"
+      ],
+      "methods": [],
+      "source": "papers/2026_AutopoieticProjectGeneration/README.md"
     }
   }
 }

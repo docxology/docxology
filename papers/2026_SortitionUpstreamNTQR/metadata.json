@@ -1,5 +1,5 @@
 {
-  "title": "Sortition Upstream of NTQR",
+  "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
   "version": "0.1.0",
   "doi": "10.5281/zenodo.21083779",
   "doi_url": "https://doi.org/10.5281/zenodo.21083779",
@@ -54,10 +54,9 @@
   "pairing_evidence": [
     "github_release_mentions_doi",
     "zenodo_related_identifier_mentions_release",
-    "github_repo_self_linked",
-    "title_overlap"
+    "github_repo_self_linked"
   ],
-  "checked_at": "2026-07-01T00:30:10Z",
+  "checked_at": "2026-07-07T00:56:41Z",
   "domain": "Computational",
   "type": "Paper",
   "methods": [

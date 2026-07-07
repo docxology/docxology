@@ -4531,5 +4531,55 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21137276",
     "URL": "https://doi.org/10.5281/zenodo.21137276"
+  },
+  {
+    "id": "Friedman2026ShapeBetweenFullPage184",
+    "type": "article-journal",
+    "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 184; docs: papers/2026_ShapeBetween/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21176000",
+    "URL": "https://doi.org/10.5281/zenodo.21176000"
+  },
+  {
+    "id": "Friedman2026AutopoieticProjectGeneration185",
+    "type": "article-journal",
+    "title": "Autopoietic Project Generation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 185; docs: papers/2026_AutopoieticProjectGeneration/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21227869",
+    "URL": "https://doi.org/10.5281/zenodo.21227869"
   }
 ]

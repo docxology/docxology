@@ -41,5 +41,7 @@
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template_textbook/releases/tag/v0.1.2
+
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

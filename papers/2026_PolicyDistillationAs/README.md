@@ -39,5 +39,9 @@
 
 ## Related
 
+- GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1
+
+- GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2
+
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

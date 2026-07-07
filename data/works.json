@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-06T04:17:36Z",
+  "generated_at": "2026-07-07T00:59:17Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 182,
+  "count": 184,
   "works": [
     {
       "num": 1,
@@ -2549,6 +2549,34 @@
       "url": "https://doi.org/10.5281/zenodo.21137276",
       "doi": "10.5281/zenodo.21137276",
       "docs_path": "papers/2026_EntomologicalLaw/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 184,
+      "citation_key": "Friedman2026ShapeBetweenFullPage184",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21176000",
+      "doi": "10.5281/zenodo.21176000",
+      "docs_path": "papers/2026_ShapeBetween/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 185,
+      "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Autopoietic Project Generation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21227869",
+      "doi": "10.5281/zenodo.21227869",
+      "docs_path": "papers/2026_AutopoieticProjectGeneration/",
       "has_paper_folder": true
     }
   ]

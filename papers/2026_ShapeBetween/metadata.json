@@ -1,0 +1,91 @@
+{
+  "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.21176000",
+  "doi_url": "https://doi.org/10.5281/zenodo.21176000",
+  "zenodo_record": "https://zenodo.org/records/21176000",
+  "record_id": "21176001",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "template_storybook demonstrates a public, standalone picture-book workflow in\nthe research template repository. The bundled project renders a deterministic\nfourteen-page storybook subtitled A geometric fable of belonging, bracing, and\nreciprocal form: a clear cover, a publication-and-acknowledgements page, and\ntwelve story pages in which a child tetrahedron raised by cubes meets a child\ncube raised by tetrahedra. The story uses a large reciprocal symbol, a\ntetrahedron-inside-cube stability spread, a shadow-projection lesson, a\ntensegrity lantern, and a vector garden to frame belonging without sameness:\nsquare and triangle families remain distinct while the space between them\nbecomes navigable.\n\nThe project separates story data, rendering logic, and orchestration. Story\ntext, characters, page order, palettes, and overlay choices live in\ncontent/story.yaml; character generation and illustration live in\nsrc/storybook/; one script renders the cover, each page script renders a\nnumbered page, and a final script assembles the PDF. This makes the exemplar a\nforkable pattern for full-page creative artifacts rather than standard\nmanuscript-centered figure generation.\n\n---\nAssociated artifacts\nGitHub release: The Shape Between v0.1.0 (https://github.com/docxology/template_storybook/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.21176001\nZenodo: https://zenodo.org/records/21176001\nPDF SHA-256: 7fb0ed775db212cd9f4b5b578bef8900c9f925bc0c5cc047331eb6900679eeda",
+  "keywords": [
+    "storybook",
+    "illustration",
+    "procedural graphics",
+    "reportlab",
+    "reproducible publishing"
+  ],
+  "files": [
+    {
+      "name": "the-shape-between.pdf",
+      "size_bytes": 1492876,
+      "checksum": "md5:29798899f24dbd08b6397f62431ab149",
+      "download_url": "https://zenodo.org/api/records/21176001/files/the-shape-between.pdf/content"
+    },
+    {
+      "name": "Friedman_2026_Shape_7fb0ed77.pdf",
+      "size_bytes": 45341,
+      "checksum": "md5:1a4f6d05ebc0d1faaf6bbdd6ec1c1ae1",
+      "download_url": "https://zenodo.org/api/records/21176001/files/Friedman_2026_Shape_7fb0ed77.pdf/content"
+    },
+    {
+      "name": ".zenodo.json",
+      "size_bytes": 711,
+      "checksum": "md5:3134c8161a3d88ae8af2cae62d80e991",
+      "download_url": "https://zenodo.org/api/records/21176001/files/.zenodo.json/content"
+    },
+    {
+      "name": "storybook_manifest.json",
+      "size_bytes": 5466,
+      "checksum": "md5:86ecf6c9a5bae4046125386a7dd3e095",
+      "download_url": "https://zenodo.org/api/records/21176001/files/storybook_manifest.json/content"
+    },
+    {
+      "name": "validation_report.json",
+      "size_bytes": 4633,
+      "checksum": "md5:13e338ef45a11779f91a5c648362575d",
+      "download_url": "https://zenodo.org/api/records/21176001/files/validation_report.json/content"
+    },
+    {
+      "name": "storybook_summary.md",
+      "size_bytes": 157,
+      "checksum": "md5:0d7e409c754f47b75a6b1fa05dbb1b84",
+      "download_url": "https://zenodo.org/api/records/21176001/files/storybook_summary.md/content"
+    },
+    {
+      "name": "CITATION.cff",
+      "size_bytes": 576,
+      "checksum": "md5:692f52c3c0f256b0bb4bed7a560f96d7",
+      "download_url": "https://zenodo.org/api/records/21176001/files/CITATION.cff/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_storybook"
+    }
+  ],
+  "github_repo": "docxology/template_storybook",
+  "github_release_url": "https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "The Shape Between v0.1.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-07-07T00:56:37Z"
+}

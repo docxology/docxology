@@ -12,7 +12,7 @@
         {
             "@type": "SoftwareSourceCode",
             "name": "template",
-            "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0",
+            "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
             "codeRepository": "https://github.com/docxology/template",
             "author": {
                 "@type": "Person",
