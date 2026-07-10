@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-07-07T00:59:17Z
+Generated: 2026-07-10T19:58:04Z
 
-Current public metrics: 184 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 192 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (177)
+WORKS AND PUBLICATIONS (185)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -233,6 +233,14 @@ WORKS AND PUBLICATIONS (177)
 [183] 2026 | Paper | Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon | Zenodo | 10.5281/zenodo.21137276
 [184] 2026 | Paper | The Shape Between: A Full-Page Illustrated Storybook Template | Zenodo | 10.5281/zenodo.21176000
 [185] 2026 | Paper | Autopoietic Project Generation | Zenodo | 10.5281/zenodo.21227869
+[186] 2026 | Paper | template_pitch_deck: Reproducible, Validated Pitch-Deck Generation | Zenodo | 10.5281/zenodo.21281509
+[187] 2026 | Paper | Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference | Zenodo | 10.5281/zenodo.21298895
+[188] 2026 | Paper | Registered Report Template: Preregistration, Deviations, and Claim Boundaries | Zenodo | 10.5281/zenodo.21298893
+[189] 2026 | Paper | Redacted Report Template: Disclosure Control and Release Audit | Zenodo | 10.5281/zenodo.21298891
+[190] 2026 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | Zenodo | 10.5281/zenodo.21298889
+[191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298886
+[192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298884
+[193] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139090
 
 SOFTWARE (95)
 -------------

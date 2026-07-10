@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T00:59:18Z",
+  "generated_at": "2026-07-10T19:58:06Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1596,
+  "count": 1611,
   "items": [
     {
       "id": "page:home",
@@ -282,7 +282,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-07-07.md",
+      "url": "/reports/reconciliation_2026-07-10.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -294,7 +294,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-07-07.json",
+      "url": "/reports/public_source_inventory_2026-07-10.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -307,7 +307,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-07.json",
+      "url": "/reports/accessibility_static_2026-07-10.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -356,7 +356,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-07.json",
+      "url": "/reports/asset_size_2026-07-10.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -382,7 +382,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-07-07.json",
+      "url": "/reports/live_site_verification_2026-07-10.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4426,6 +4426,169 @@
       "content": "Autopoietic Project Generation Zenodo 10.5281/zenodo.21227869 Friedman2026AutopoieticProjectGeneration185 Computational Paper template autopoiesis is a combinatoric grammar that deterministically generates whole runnable projects — not files or snippets, but complete, independently testable child repositories with their own kernel source, tests, analysis entry point, and manuscript. A single integer seed plus a grammar of orthogonal slots (primitive domain, analytical track, section set, and three presentation/provenance slots) selects one child from a combinatoric product space of 360 nominal (45 content-distinct) configurations, via a SHA-256 digest of the seed and slot identity — with no random-number generator anywhere in the expansion path. Project generators routinely claim completeness, determinism, and traceability without making any of the three independently checkable. This exemplar treats each claim as a structural property to verify rather than a rhetorical one to assert: verify child() recomputes a autopoiesis combinatoric grammar deterministic generation project synthesis reproducible research infrastructure automation autopoiesis combinatoric grammar deterministic generation project synthesis reproducible research"
     },
     {
+      "id": "work:Friedman2026TemplatePitchDeckReproducible186",
+      "type": "work",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "url": "/works/Friedman2026TemplatePitchDeckReproducible186.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21281509",
+      "summary": "Research groups routinely need to pitch their work — to funders, partners, or collaborators — yet pitch decks are almost never treated as reproducible research artifacts: they are hand-assembled in proprietary slide tool",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "pitch deck",
+        "slide generation",
+        "reproducible research communication",
+        "meta-science infrastructure",
+        "science integrity",
+        "token validation",
+        "PPTX",
+        "PDF rendering"
+      ],
+      "content": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation Zenodo 10.5281/zenodo.21281509 Friedman2026TemplatePitchDeckReproducible186 Computational Paper Research groups routinely need to pitch their work — to funders, partners, or collaborators — yet pitch decks are almost never treated as reproducible research artifacts: they are hand-assembled in proprietary slide tools, contain unverifiable claims, and cannot be regenerated when the underlying facts change. template pitch deck closes that gap. It generates six artifacts from one token-resolved content source — short, medium, and long decks, each in both PDF and PPTX — with every numeric claim traced back to a live introspection of the repository it describes, every {{TOKEN}} substitution verified to have actually landed, and every sentence checked against a denylist of pitch-deck clichés. The flagship content pitches template template (../../template template/), this monorepo's own autopoietic meta-project, to a meta-science and science-integrity audience — the kind of pitch an organi pitch deck slide generation reproducible research communication meta-science infrastructure science integrity token validation PPTX PDF rendering pitch deck slide generation reproducible research communication meta-science infrastructure science integrity"
+    },
+    {
+      "id": "work:Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+      "type": "work",
+      "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+      "url": "/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21298895",
+      "summary": "This paper documents template search project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pip",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "literature search",
+        "automated reference management",
+        "BibTeX",
+        "reproducible research",
+        "local LLM synthesis"
+      ],
+      "content": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference Zenodo 10.5281/zenodo.21298895 Friedman2026ReproducibleLiteratureSynthesisInfrastructure187 Computational Paper This paper documents template search project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pipelines sharing the same configuration file and the same infrastructure/search/ + infrastructure/reference/ modules. The standard pipeline (scripts/run search pipeline.py) handles a single SearchQuery end-to-end. The deep-search pipeline (scripts/run deep search.py, see ) fans out across a list of keywords (each capped at 100 papers per keyword from deep search.max results per keyword in manuscript/config.yaml), fully enriches every paper with its abstract and PDF fulltext, and (optionally) uses the local LLM to write a multi-section reading note for every paper. When a deep-search aggregate exists, the latest run covered 3 keyword(s) with unique paper(s) after cross-keywo literature search automated reference management BibTeX reproducible research local LLM synthesis literature search automated reference management BibTeX reproducible research local LLM synthesis"
+    },
+    {
+      "id": "work:Friedman2026RegisteredReportTemplatePreregistration188",
+      "type": "work",
+      "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "url": "/works/Friedman2026RegisteredReportTemplatePreregistration188.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21298893",
+      "summary": "This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deter",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "registered report",
+        "preregistration",
+        "replication",
+        "deviation ledger"
+      ],
+      "content": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries Zenodo 10.5281/zenodo.21298893 Friedman2026RegisteredReportTemplatePreregistration188 Computational Paper This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deterministic demonstration data, and reporting confirmatory and exploratory claims through an explicit deviation ledger. Every quantity reported here is produced by the tested code in src/registered report/ and regenerated by scripts/generate figures.py; none is hand-entered or illustrative. The demonstration binds a single confirmatory hypothesis (H1) to one registered outcome (primary score) analysed by a two-sided label-permutation test. Run on a seeded two-group dataset (seed = 20260709, n = 24 per group), the registered test yields an observed mean difference of 1.003 with a two-sided permutation p-value of 0.0005 (0 of 2000 shuffles at least as extreme), significant at registered report preregistration replication deviation ledger registered report preregistration replication deviation ledger"
+    },
+    {
+      "id": "work:Friedman2026RedactedReportTemplateDisclosure189",
+      "type": "work",
+      "title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "url": "/works/Friedman2026RedactedReportTemplateDisclosure189.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21298891",
+      "summary": "This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and ",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "redaction",
+        "disclosure control",
+        "release audit",
+        "source protection"
+      ],
+      "content": "Redacted Report Template: Disclosure Control and Release Audit Zenodo 10.5281/zenodo.21298891 Friedman2026RedactedReportTemplateDisclosure189 Computational Paper This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and TPM-backed sealed sidecars across a sixteen-variant visual proof matrix. Four redaction styles—blackout, whiteout, grayout, and blur—are rendered across four PDF backgrounds—white, gray, black, and blur—yielding sixteen base proof PDFs. Each receives nine steganographic security methods including SHA-256/SHA-512 hash manifests, diagonal watermark overlays, footer provenance stamps, invisible text, QR and Code128 barcodes, PDF Info and XMP metadata, and embedded manifest attachments. Optional Kmyth TPM sealing wraps each hash manifest and steganography PDF in a .ski sidecar sealed against the TPM2-TSS storage hierarchy, bound to PCR selections and policy or-values. The rel redaction disclosure control release audit source protection redaction disclosure control release audit source protection"
+    },
+    {
+      "id": "work:Friedman2026PoolsRulesToolsTemplate190",
+      "type": "work",
+      "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+      "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21298889",
+      "summary": "Publication metadata synchronized from Zenodo.",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture Zenodo 10.5281/zenodo.21298889 Friedman2026PoolsRulesToolsTemplate190 Active Inference Paper Publication metadata synchronized from Zenodo. Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2026IllegalStatesMostlyUnrepresentable191",
+      "type": "work",
+      "title": "Illegal States, Mostly Unrepresentable",
+      "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21298886",
+      "summary": "This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member",
+      "year": 2026,
+      "domain": "Entomology",
+      "tags": [
+        "Paper",
+        "Entomology",
+        "bibliography",
+        "strongly typed programming",
+        "session types",
+        "algebraic data types",
+        "category theory",
+        "active inference",
+        "multiagent systems",
+        "affine types",
+        "illegal state unrepresentable"
+      ],
+      "content": "Illegal States, Mostly Unrepresentable Zenodo 10.5281/zenodo.21298886 Friedman2026IllegalStatesMostlyUnrepresentable191 Entomology Paper This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly one real, on-disk SQLite database and one in-process, fault-injectable protocol endpoint; no agent ever touches another agent's storage or network state. The implementation lives under projects/templates/template formal/src/template formal/; the demo pipeline is orchestrated by scripts/02 run analysis.py. The paper's central claim is methodological, not a typing-features showcase: static typing's honest value in Python is edit-time/CI-time error prevention on structurally representable invariants, and nothing more. Nominal identifiers (AgentId, MessageId, TxnId as distinct NewType wrappers), a tagged-union Result[T, E] ADT with match-exhaust strongly typed programming session types algebraic data types category theory active inference multiagent systems affine types illegal state unrepresentable strongly typed programming session types algebraic data types category theory active inference"
+    },
+    {
+      "id": "work:Friedman2026DataDescriptorTemplateSchema192",
+      "type": "work",
+      "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21298884",
+      "summary": "This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. ",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "data descriptor",
+        "FAIR data",
+        "provenance",
+        "schema validation"
+      ],
+      "content": "Data Descriptor Template: Schema, Provenance, and Release Readiness Zenodo 10.5281/zenodo.21298884 Friedman2026DataDescriptorTemplateSchema192 Active Inference Paper This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. It ships a small, public, synthetic demonstration dataset (two CSV files under data/fixtures/) and a machine-readable descriptor (data/example descriptor.json) that declares each file's media type, sha256 checksum, and row count alongside a six-field data dictionary with typed constraints. A tested validation library (src/data descriptor/) checks the descriptor's shape, safety, and completeness; recomputes each declared checksum and row count against the bytes on disk; and emits a deterministic, metadata-only release manifest suitable for pre-publication review. Every figure and quantitative claim in this manuscript is produced by that library and regenerated on demand, s data descriptor FAIR data provenance schema validation data descriptor FAIR data provenance schema validation"
+    },
+    {
+      "id": "work:Friedman2026TemplateApproachReproducibleGenerative193",
+      "type": "work",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html",
+      "external_url": "https://doi.org/10.5281/zenodo.19139090",
+      "summary": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechani",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Zenodo 10.5281/zenodo.19139090 Friedman2026TemplateApproachReproducibleGenerative193 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the research lifecyc Zenodo publication zenodo-publication"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -7367,9 +7530,10 @@
         "repository",
         "Python",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/qr_live_protocol  Python docxology  curated"
+      "content": "docxology/qr_live_protocol  Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/QuadCraft",
@@ -7424,7 +7588,7 @@
       "type": "github_repository",
       "title": "docxology/realizing_emptiness",
       "url": "https://github.com/docxology/realizing_emptiness",
-      "summary": "docxology repository",
+      "summary": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
       "domain": "docxology",
       "tags": [
         "github",
@@ -7433,7 +7597,7 @@
         "docxology",
         "recent"
       ],
-      "content": "docxology/realizing_emptiness  Python docxology  recent"
+      "content": "docxology/realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/service",
@@ -7480,9 +7644,10 @@
         "repository",
         "Rust",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/steganographer  Rust docxology cryptography media-verification open-source python security steganography watermarking curated"
+      "content": "docxology/steganographer  Rust docxology cryptography media-verification open-source python security steganography watermarking curated recent"
     },
     {
       "id": "github-repo:docxology/sunspot",
@@ -7532,6 +7697,22 @@
         "recent"
       ],
       "content": "docxology/template Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance (SHA-256 + steganographic PDF watermarking), multi-project workspace, AI-agent-ready with AGENTS.md / SKILL.md throughout. Python docxology agents-md ai-agents claude-code computational-research cursor latex multi-project ollama pandoc provenance pytest python reproducible-research research-template scientific-computing steganography uv zenodo curated recent"
+    },
+    {
+      "id": "github-repo:docxology/template-pitch-deck",
+      "type": "github_repository",
+      "title": "docxology/template-pitch-deck",
+      "url": "https://github.com/docxology/template-pitch-deck",
+      "summary": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template-pitch-deck Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template-release-smoke",
@@ -7646,6 +7827,22 @@
       "content": "docxology/template_code_project Template code project exemplar releases Python docxology  recent"
     },
     {
+      "id": "github-repo:docxology/template_data_descriptor",
+      "type": "github_repository",
+      "title": "docxology/template_data_descriptor",
+      "url": "https://github.com/docxology/template_data_descriptor",
+      "summary": "Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_data_descriptor Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo. Python docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/template_eda_notebook",
       "type": "github_repository",
       "title": "docxology/template_eda_notebook",
@@ -7660,6 +7857,22 @@
         "recent"
       ],
       "content": "docxology/template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template TeX docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_formal",
+      "type": "github_repository",
+      "title": "docxology/template_formal",
+      "url": "https://github.com/docxology/template_formal",
+      "summary": "Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_formal Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo. Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_gold_refinement",
@@ -7703,12 +7916,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "Python",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_madlib Deterministic token-injection exemplar for conditional IMRAD manuscripts TeX docxology  curated recent"
+      "content": "docxology/template_madlib Deterministic token-injection exemplar for conditional IMRAD manuscripts Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_methods_paper",
@@ -7744,6 +7957,22 @@
       "content": "docxology/template_newspaper The Triplicate: a data-driven large-format newspaper layout engine — public exemplar of the docxology/template reproducible-research paradigm (≥90% test coverage, no mocks, double-published GitHub + Zenodo 10.5281/zenodo.20533675). Python docxology  curated recent"
     },
     {
+      "id": "github-repo:docxology/template_pools_rules_tools",
+      "type": "github_repository",
+      "title": "docxology/template_pools_rules_tools",
+      "url": "https://github.com/docxology/template_pools_rules_tools",
+      "summary": "Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TeX",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_pools_rules_tools Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo. TeX docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/template_prose_project",
       "type": "github_repository",
       "title": "docxology/template_prose_project",
@@ -7758,6 +7987,54 @@
         "recent"
       ],
       "content": "docxology/template_prose_project Template prose project exemplar releases TeX docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_redacted_report",
+      "type": "github_repository",
+      "title": "docxology/template_redacted_report",
+      "url": "https://github.com/docxology/template_redacted_report",
+      "summary": "Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_redacted_report Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo. Python docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_registered_report",
+      "type": "github_repository",
+      "title": "docxology/template_registered_report",
+      "url": "https://github.com/docxology/template_registered_report",
+      "summary": "Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_registered_report Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo. Python docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/template_search_project",
+      "type": "github_repository",
+      "title": "docxology/template_search_project",
+      "url": "https://github.com/docxology/template_search_project",
+      "summary": "Private project mirror for archive/template_search_project in docxology/projects.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TeX",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_search_project Private project mirror for archive/template_search_project in docxology/projects. TeX docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_sia",
@@ -7785,11 +8062,11 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "TeX",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template Python docxology  recent"
+      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template TeX docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_template",
@@ -27580,7 +27857,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 184 works.",
+      "title": "The curated bibliography contains 192 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27588,12 +27865,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 184 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 192 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 167 per-paper documentation folders.",
+      "title": "The repository contains 175 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27601,12 +27878,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 167 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 175 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 331 public repositories.",
+      "title": "The docxology GitHub profile has 340 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -27614,7 +27891,7 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 331 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 340 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
@@ -27777,7 +28054,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 184 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 192 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

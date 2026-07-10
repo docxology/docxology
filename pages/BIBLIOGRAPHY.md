@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**184 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**192 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**163** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**171** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **184** works in the table below **·** **167** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **192** works in the table below **·** **175** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -222,6 +222,14 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 183 | 2026 | 💻 | Paper | Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon | *Zenodo* | [10.5281/zenodo.21137276](https://doi.org/10.5281/zenodo.21137276) | [📁](../papers/2026_EntomologicalLaw/) |
 | 184 | 2026 | 💻 | Paper | The Shape Between: A Full-Page Illustrated Storybook Template | *Zenodo* | [10.5281/zenodo.21176000](https://doi.org/10.5281/zenodo.21176000) | [📁](../papers/2026_ShapeBetween/) |
 | 185 | 2026 | 💻 | Paper | Autopoietic Project Generation | *Zenodo* | [10.5281/zenodo.21227869](https://doi.org/10.5281/zenodo.21227869) | [📁](../papers/2026_AutopoieticProjectGeneration/) |
+| 186 | 2026 | 💻 | Paper | template_pitch_deck: Reproducible, Validated Pitch-Deck Generation | *Zenodo* | [10.5281/zenodo.21281509](https://doi.org/10.5281/zenodo.21281509) | [📁](../papers/2026_TemplatePitchDeck/) |
+| 187 | 2026 | 💻 | Paper | Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference | *Zenodo* | [10.5281/zenodo.21298895](https://doi.org/10.5281/zenodo.21298895) | [📁](../papers/2026_ReproducibleLiteratureSynthesis/) |
+| 188 | 2026 | 💻 | Paper | Registered Report Template: Preregistration, Deviations, and Claim Boundaries | *Zenodo* | [10.5281/zenodo.21298893](https://doi.org/10.5281/zenodo.21298893) | [📁](../papers/2026_RegisteredReportTemplate/) |
+| 189 | 2026 | 💻 | Paper | Redacted Report Template: Disclosure Control and Release Audit | *Zenodo* | [10.5281/zenodo.21298891](https://doi.org/10.5281/zenodo.21298891) | [📁](../papers/2026_RedactedReportTemplate/) |
+| 190 | 2026 | 🧠 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | *Zenodo* | [10.5281/zenodo.21298889](https://doi.org/10.5281/zenodo.21298889) | [📁](../papers/2026_PoolsRulesTools/) |
+| 191 | 2026 | 🐜 | Paper | Illegal States, Mostly Unrepresentable | *Zenodo* | [10.5281/zenodo.21298886](https://doi.org/10.5281/zenodo.21298886) | [📁](../papers/2026_IllegalStatesMostly/) |
+| 192 | 2026 | 🧠 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | *Zenodo* | [10.5281/zenodo.21298884](https://doi.org/10.5281/zenodo.21298884) | [📁](../papers/2026_DataDescriptorTemplate/) |
+| 193 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090) | [📁](../papers/2026_TemplateApproachReproducible2/) |
 ---
 
 ## Domain Index

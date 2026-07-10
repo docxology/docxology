@@ -39,7 +39,7 @@ PLATFORMS: list[tuple[str, str]] = [
     ("HuggingFace", "HuggingFace"),
     ("Software Heritage", "IPFS/Software-Heritage"),
     ("PyPI", "PyPI"),
-    ("Canonical page", "personal-site canonical page"),
+    ("Full documentation", "personal-site canonical page"),
 ]
 
 

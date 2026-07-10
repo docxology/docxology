@@ -7,7 +7,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (167)
+## Papers (175)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -178,6 +178,14 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 165 | [2026_EntomologicalLaw](2026_EntomologicalLaw/) | ✅ | 2026 | EntomologicalLaw |
 | 166 | [2026_ShapeBetween](2026_ShapeBetween/) | ✅ | 2026 | ShapeBetween |
 | 167 | [2026_AutopoieticProjectGeneration](2026_AutopoieticProjectGeneration/) | ✅ | 2026 | AutopoieticProjectGeneration |
+| 168 | [2026_TemplatePitchDeck](2026_TemplatePitchDeck/) | ✅ | 2026 | TemplatePitchDeck |
+| 169 | [2026_ReproducibleLiteratureSynthesis](2026_ReproducibleLiteratureSynthesis/) | ✅ | 2026 | ReproducibleLiteratureSynthesis |
+| 170 | [2026_RegisteredReportTemplate](2026_RegisteredReportTemplate/) | ✅ | 2026 | RegisteredReportTemplate |
+| 171 | [2026_RedactedReportTemplate](2026_RedactedReportTemplate/) | ✅ | 2026 | RedactedReportTemplate |
+| 172 | [2026_PoolsRulesTools](2026_PoolsRulesTools/) | ✅ | 2026 | PoolsRulesTools |
+| 173 | [2026_IllegalStatesMostly](2026_IllegalStatesMostly/) | ✅ | 2026 | IllegalStatesMostly |
+| 174 | [2026_DataDescriptorTemplate](2026_DataDescriptorTemplate/) | ✅ | 2026 | DataDescriptorTemplate |
+| 175 | [2026_TemplateApproachReproducible2](2026_TemplateApproachReproducible2/) | ✅ | 2026 | TemplateApproachReproducible2 |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

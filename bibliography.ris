@@ -2188,3 +2188,99 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 185; docs: papers/2026_AutopoieticProjectGeneration/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
+T2  - Zenodo
+DO  - 10.5281/zenodo.21281509
+UR  - https://doi.org/10.5281/zenodo.21281509
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 186; docs: papers/2026_TemplatePitchDeck/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference
+T2  - Zenodo
+DO  - 10.5281/zenodo.21298895
+UR  - https://doi.org/10.5281/zenodo.21298895
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 187; docs: papers/2026_ReproducibleLiteratureSynthesis/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Registered Report Template: Preregistration, Deviations, and Claim Boundaries
+T2  - Zenodo
+DO  - 10.5281/zenodo.21298893
+UR  - https://doi.org/10.5281/zenodo.21298893
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 188; docs: papers/2026_RegisteredReportTemplate/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Redacted Report Template: Disclosure Control and Release Audit
+T2  - Zenodo
+DO  - 10.5281/zenodo.21298891
+UR  - https://doi.org/10.5281/zenodo.21298891
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 189; docs: papers/2026_RedactedReportTemplate/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Pools, Rules, and Tools: A Template-Integrated Resource Architecture
+T2  - Zenodo
+DO  - 10.5281/zenodo.21298889
+UR  - https://doi.org/10.5281/zenodo.21298889
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 190; docs: papers/2026_PoolsRulesTools/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Illegal States, Mostly Unrepresentable
+T2  - Zenodo
+DO  - 10.5281/zenodo.21298886
+UR  - https://doi.org/10.5281/zenodo.21298886
+KW  - Entomology
+KW  - Paper
+N1  - Catalog row 191; docs: papers/2026_IllegalStatesMostly/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Data Descriptor Template: Schema, Provenance, and Release Readiness
+T2  - Zenodo
+DO  - 10.5281/zenodo.21298884
+UR  - https://doi.org/10.5281/zenodo.21298884
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 192; docs: papers/2026_DataDescriptorTemplate/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication
+T2  - Zenodo
+DO  - 10.5281/zenodo.19139090
+UR  - https://doi.org/10.5281/zenodo.19139090
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 193; docs: papers/2026_TemplateApproachReproducible2/
+ER  -

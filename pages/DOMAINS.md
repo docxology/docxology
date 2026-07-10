@@ -19,7 +19,7 @@ keywords: "Daniel Ari Friedman, research domains, Active Inference, entomology, 
 
 Ant colony behavior, physiology, transcriptomics, and computational models of collective cognition.
 
-- Works: 22
+- Works: 23
 - Selected repositories: 7
 - Collaborator context: Deborah Gordon, Karl Friston, Chris Fields
 
@@ -32,11 +32,11 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 **Selected works**
 
 - 2026 — [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](https://doi.org/10.5281/zenodo.19574117)
+- 2026 — [Illegal States, Mostly Unrepresentable](https://doi.org/10.5281/zenodo.21298886)
 - 2025 — [Computational Complexity and Energetics of the Ant Stack](https://doi.org/10.5281/zenodo.17238736)
 - 2025 — [The Ant Stack](https://doi.org/10.5281/zenodo.16782756)
 - 2025 — [Towards a Science of Consciousness and Social Complexity... For Ants](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)
 - 2024 — [Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea](https://doi.org/10.1002/ece3.70063)
-- 2023 — [A single-pheromone model accounts for empirical patterns of ant colony foraging](https://doi.org/10.1016/j.cogsys.2023.02.005)
 
 **Selected repositories**
 
@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 45
+- Works: 47
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 41
+- Works: 46
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

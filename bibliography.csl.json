@@ -4581,5 +4581,205 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21227869",
     "URL": "https://doi.org/10.5281/zenodo.21227869"
+  },
+  {
+    "id": "Friedman2026TemplatePitchDeckReproducible186",
+    "type": "article-journal",
+    "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 186; docs: papers/2026_TemplatePitchDeck/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21281509",
+    "URL": "https://doi.org/10.5281/zenodo.21281509"
+  },
+  {
+    "id": "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+    "type": "article-journal",
+    "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 187; docs: papers/2026_ReproducibleLiteratureSynthesis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298895",
+    "URL": "https://doi.org/10.5281/zenodo.21298895"
+  },
+  {
+    "id": "Friedman2026RegisteredReportTemplatePreregistration188",
+    "type": "article-journal",
+    "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 188; docs: papers/2026_RegisteredReportTemplate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298893",
+    "URL": "https://doi.org/10.5281/zenodo.21298893"
+  },
+  {
+    "id": "Friedman2026RedactedReportTemplateDisclosure189",
+    "type": "article-journal",
+    "title": "Redacted Report Template: Disclosure Control and Release Audit",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 189; docs: papers/2026_RedactedReportTemplate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298891",
+    "URL": "https://doi.org/10.5281/zenodo.21298891"
+  },
+  {
+    "id": "Friedman2026PoolsRulesToolsTemplate190",
+    "type": "article-journal",
+    "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 190; docs: papers/2026_PoolsRulesTools/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298889",
+    "URL": "https://doi.org/10.5281/zenodo.21298889"
+  },
+  {
+    "id": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+    "type": "article-journal",
+    "title": "Illegal States, Mostly Unrepresentable",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 191; docs: papers/2026_IllegalStatesMostly/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298886",
+    "URL": "https://doi.org/10.5281/zenodo.21298886"
+  },
+  {
+    "id": "Friedman2026DataDescriptorTemplateSchema192",
+    "type": "article-journal",
+    "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 192; docs: papers/2026_DataDescriptorTemplate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298884",
+    "URL": "https://doi.org/10.5281/zenodo.21298884"
+  },
+  {
+    "id": "Friedman2026TemplateApproachReproducibleGenerative193",
+    "type": "article-journal",
+    "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 193; docs: papers/2026_TemplateApproachReproducible2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.19139090",
+    "URL": "https://doi.org/10.5281/zenodo.19139090"
   }
 ]

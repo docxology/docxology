@@ -18,7 +18,7 @@ RFC 9116 `security.txt` is published at both [`/.well-known/security.txt`](../..
 
 ## Warrant canary
 
-A warrant canary (`canary.txt`, dead-man's-switch, quarterly re-sign) affirms no secret legal process / duress / state compulsion. **It is a personal attestation: only the operator fills the live freshness anchors and PGP-clearsigns it** — it is published only when signed (an unsigned canary is intentionally withheld); it has since landed and is signed. The `Encryption:` field in `security.txt` should be added once `.well-known/pgp-key.txt` lands.
+A warrant canary (`canary.txt`, dead-man's-switch, quarterly re-sign) affirms no secret legal process / duress / state compulsion. **It is a personal attestation: only the operator fills the live freshness anchors and PGP-clearsigns it** — it is published only when signed (an unsigned canary is intentionally withheld). The current `canary.txt` has its freshness anchors filled in but is **not yet PGP-signed** (fingerprint and signature block are still placeholders); do not treat it as a valid attestation until the operator clearsigns it. The `Encryption:` field in `security.txt` should be added once `.well-known/pgp-key.txt` lands.
 
 ## Client-side XSS
 

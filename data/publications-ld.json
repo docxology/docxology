@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 184 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 192 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -3134,6 +3134,142 @@
             },
             "keywords": "💻",
             "sameAs": "https://doi.org/10.5281/zenodo.21227869"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.21281509"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.21298895"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.21298893"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Redacted Report Template: Disclosure Control and Release Audit",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.21298891"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "sameAs": "https://doi.org/10.5281/zenodo.21298889"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Illegal States, Mostly Unrepresentable",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🐜",
+            "sameAs": "https://doi.org/10.5281/zenodo.21298886"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "sameAs": "https://doi.org/10.5281/zenodo.21298884"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "sameAs": "https://doi.org/10.5281/zenodo.19139090"
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T00:59:17Z",
+  "generated_at": "2026-07-10T19:58:04Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -33,7 +33,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 184,
+    "works": 192,
     "software_catalogued": 95,
     "owned_software_catalogued": 61,
     "aii_software_catalogued": 34,
@@ -46,13 +46,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 331 public repositories.",
+      "claim": "The docxology GitHub profile has 340 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-07.json"
+        "reports/public_source_snapshot_2026-07-10.json"
       ],
-      "checked_at": "2026-07-07T00:49:09.288379+00:00",
+      "checked_at": "2026-07-10T19:56:35.125748+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -64,9 +64,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-07.json"
+        "reports/public_source_snapshot_2026-07-10.json"
       ],
-      "checked_at": "2026-07-07T00:49:09.288379+00:00",
+      "checked_at": "2026-07-10T19:56:35.125748+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -4834,6 +4834,118 @@
       "doi": "10.5281/zenodo.21227869",
       "docs_path": "papers/2026_AutopoieticProjectGeneration/",
       "has_paper_folder": true
+    },
+    {
+      "num": 186,
+      "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21281509",
+      "doi": "10.5281/zenodo.21281509",
+      "docs_path": "papers/2026_TemplatePitchDeck/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 187,
+      "citation_key": "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21298895",
+      "doi": "10.5281/zenodo.21298895",
+      "docs_path": "papers/2026_ReproducibleLiteratureSynthesis/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 188,
+      "citation_key": "Friedman2026RegisteredReportTemplatePreregistration188",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21298893",
+      "doi": "10.5281/zenodo.21298893",
+      "docs_path": "papers/2026_RegisteredReportTemplate/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 189,
+      "citation_key": "Friedman2026RedactedReportTemplateDisclosure189",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21298891",
+      "doi": "10.5281/zenodo.21298891",
+      "docs_path": "papers/2026_RedactedReportTemplate/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 190,
+      "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21298889",
+      "doi": "10.5281/zenodo.21298889",
+      "docs_path": "papers/2026_PoolsRulesTools/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 191,
+      "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+      "year": 2026,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Illegal States, Mostly Unrepresentable",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21298886",
+      "doi": "10.5281/zenodo.21298886",
+      "docs_path": "papers/2026_IllegalStatesMostly/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 192,
+      "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21298884",
+      "doi": "10.5281/zenodo.21298884",
+      "docs_path": "papers/2026_DataDescriptorTemplate/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 193,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.19139090",
+      "doi": "10.5281/zenodo.19139090",
+      "docs_path": "papers/2026_TemplateApproachReproducible2/",
+      "has_paper_folder": true
     }
   ],
   "software": [
@@ -5981,14 +6093,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 184 works.",
+      "claim": "The curated bibliography contains 192 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-07T00:59:17+00:00",
+      "checked_at": "2026-07-10T19:58:03+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -5996,14 +6108,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 167 per-paper documentation folders.",
+      "claim": "The repository contains 175 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-07T00:59:17+00:00",
+      "checked_at": "2026-07-10T19:58:03+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -6011,13 +6123,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 331 public repositories.",
+      "claim": "The docxology GitHub profile has 340 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-07.json"
+        "reports/public_source_snapshot_2026-07-10.json"
       ],
-      "checked_at": "2026-07-07T00:49:09.288379+00:00",
+      "checked_at": "2026-07-10T19:56:35.125748+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -6029,9 +6141,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-07.json"
+        "reports/public_source_snapshot_2026-07-10.json"
       ],
-      "checked_at": "2026-07-07T00:49:09.288379+00:00",
+      "checked_at": "2026-07-10T19:56:35.125748+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

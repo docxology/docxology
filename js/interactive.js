@@ -218,6 +218,8 @@
         // Flatten the index
         if (Array.isArray(data)) {
           searchIndex = data;
+        } else if (data.items) {
+          searchIndex = data.items;
         } else if (data.results) {
           searchIndex = data.results;
         } else if (data.entries) {
@@ -248,12 +250,22 @@
     let activeIndex = -1;
     let currentSuggestions = [];
 
-    function showSuggestions(suggestions) {
+    function showSuggestions(suggestions, query) {
       container.innerHTML = '';
       currentSuggestions = suggestions;
       activeIndex = -1;
 
       if (suggestions.length === 0) {
+        if (query && query.length >= 2) {
+          const empty = document.createElement('div');
+          empty.className = 'search-suggestion search-suggestion-empty';
+          empty.setAttribute('role', 'option');
+          empty.setAttribute('aria-disabled', 'true');
+          empty.textContent = 'No matches';
+          container.appendChild(empty);
+          container.classList.add('active');
+          return;
+        }
         container.classList.remove('active');
         return;
       }
@@ -266,7 +278,7 @@
         div.dataset.index = i;
 
         const title = item.title || item.name || item.text || '';
-        const desc = (item.description || item.venue || item.type || '').substring(0, 80);
+        const desc = (item.summary || item.content || '').substring(0, 80);
         const url = item.url || item.link || '';
 
         div.innerHTML = `
@@ -340,7 +352,7 @@
         const scored = [];
         index.forEach(item => {
           const title = item.title || item.name || item.text || '';
-          const desc = item.description || '';
+          const desc = item.summary || item.content || '';
           const combined = title + ' ' + desc;
           if (fuzzyMatch(combined, val)) {
             scored.push({ item, score: score(val, title) + score(val, desc) / 10 });
@@ -349,7 +361,7 @@
 
         scored.sort((a, b) => b.score - a.score);
         const top = scored.slice(0, 8).map(s => s.item);
-        showSuggestions(top);
+        showSuggestions(top, val);
       });
     });
 
