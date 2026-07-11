@@ -1,7 +1,7 @@
 # AGENTS.md - Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference
 
 **Paper**: Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference (2026)
-**DOI**: [10.5281/zenodo.21298895](https://doi.org/10.5281/zenodo.21298895)
+**DOI**: [10.5281/zenodo.21298894](https://doi.org/10.5281/zenodo.21298894)
 **Zenodo record**: https://zenodo.org/records/21298894
 
 ---

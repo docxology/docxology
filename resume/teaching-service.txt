@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-07-10T19:58:04Z
+Generated: 2026-07-11T01:16:16Z
 
 Current public metrics: 192 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
@@ -178,9 +178,9 @@ WORKS AND PUBLICATIONS (79)
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
 [168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
 [171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20747834
-[190] 2026 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | Zenodo | 10.5281/zenodo.21298889
-[191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298886
-[192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298884
+[190] 2026 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | Zenodo | 10.5281/zenodo.21298888
+[191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298885
+[192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298883
 
 SOFTWARE (14)
 -------------

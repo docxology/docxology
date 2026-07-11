@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298893.svg)](https://doi.org/10.5281/zenodo.21298893)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298892.svg)](https://doi.org/10.5281/zenodo.21298892)
 
 ---
 
@@ -18,7 +18,7 @@ registered report · preregistration · replication · deviation ledger
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.21298893](https://doi.org/10.5281/zenodo.21298893) |
+| **DOI** | [10.5281/zenodo.21298892](https://doi.org/10.5281/zenodo.21298892) |
 | **Published** | 2026-07-10 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/21298892 |
@@ -29,7 +29,7 @@ registered report · preregistration · replication · deviation ledger
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Registered Report Template: Preregistration, Deviations, and Claim Boundaries*. Zenodo. DOI: 10.5281/zenodo.21298893. URL: https://doi.org/10.5281/zenodo.21298893.
+> Daniel Ari Friedman (2026). *Registered Report Template: Preregistration, Deviations, and Claim Boundaries*. Zenodo. DOI: 10.5281/zenodo.21298892. URL: https://doi.org/10.5281/zenodo.21298892.
 
 ## Related
 

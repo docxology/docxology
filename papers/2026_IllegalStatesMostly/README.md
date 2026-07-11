@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298886.svg)](https://doi.org/10.5281/zenodo.21298886)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298885.svg)](https://doi.org/10.5281/zenodo.21298885)
 
 ---
 
@@ -18,7 +18,7 @@ strongly typed programming · session types · algebraic data types · category 
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.21298886](https://doi.org/10.5281/zenodo.21298886) |
+| **DOI** | [10.5281/zenodo.21298885](https://doi.org/10.5281/zenodo.21298885) |
 | **Published** | 2026 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/21298885 |
@@ -29,7 +29,7 @@ strongly typed programming · session types · algebraic data types · category 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Illegal States, Mostly Unrepresentable*. Zenodo. DOI: 10.5281/zenodo.21298886. URL: https://doi.org/10.5281/zenodo.21298886.
+> Daniel Ari Friedman (2026). *Illegal States, Mostly Unrepresentable*. Zenodo. DOI: 10.5281/zenodo.21298885. URL: https://doi.org/10.5281/zenodo.21298885.
 
 ## Related
 

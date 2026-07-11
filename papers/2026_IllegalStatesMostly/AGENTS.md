@@ -1,7 +1,7 @@
 # AGENTS.md - Illegal States, Mostly Unrepresentable
 
 **Paper**: Illegal States, Mostly Unrepresentable (2026)
-**DOI**: [10.5281/zenodo.21298886](https://doi.org/10.5281/zenodo.21298886)
+**DOI**: [10.5281/zenodo.21298885](https://doi.org/10.5281/zenodo.21298885)
 **Zenodo record**: https://zenodo.org/records/21298885
 
 ---

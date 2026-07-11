@@ -1,7 +1,7 @@
 # AGENTS.md - Pools, Rules, and Tools: A Template-Integrated Resource Architecture
 
 **Paper**: Pools, Rules, and Tools: A Template-Integrated Resource Architecture (2026)
-**DOI**: [10.5281/zenodo.21298889](https://doi.org/10.5281/zenodo.21298889)
+**DOI**: [10.5281/zenodo.21298888](https://doi.org/10.5281/zenodo.21298888)
 **Zenodo record**: https://zenodo.org/records/21298888
 
 ---

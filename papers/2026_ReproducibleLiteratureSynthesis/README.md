@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298895.svg)](https://doi.org/10.5281/zenodo.21298895)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298894.svg)](https://doi.org/10.5281/zenodo.21298894)
 
 ---
 
@@ -18,7 +18,7 @@ literature search · automated reference management · BibTeX · reproducible re
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.21298895](https://doi.org/10.5281/zenodo.21298895) |
+| **DOI** | [10.5281/zenodo.21298894](https://doi.org/10.5281/zenodo.21298894) |
 | **Published** | 2026 |
 | **Version** | 0.1 |
 | **Zenodo record** | https://zenodo.org/records/21298894 |
@@ -29,7 +29,7 @@ literature search · automated reference management · BibTeX · reproducible re
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference*. Zenodo. DOI: 10.5281/zenodo.21298895. URL: https://doi.org/10.5281/zenodo.21298895.
+> Daniel Ari Friedman (2026). *Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference*. Zenodo. DOI: 10.5281/zenodo.21298894. URL: https://doi.org/10.5281/zenodo.21298894.
 
 ## Related
 

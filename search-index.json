@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T19:58:06Z",
+  "generated_at": "2026-07-11T01:16:17Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -307,7 +307,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-10.json",
+      "url": "/reports/accessibility_static_2026-07-11.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -356,7 +356,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-10.json",
+      "url": "/reports/asset_size_2026-07-11.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -382,7 +382,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-07-10.json",
+      "url": "/reports/live_site_verification_2026-07-11.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4454,7 +4454,7 @@
       "type": "work",
       "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
       "url": "/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html",
-      "external_url": "https://doi.org/10.5281/zenodo.21298895",
+      "external_url": "https://doi.org/10.5281/zenodo.21298894",
       "summary": "This paper documents template search project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pip",
       "year": 2026,
       "domain": "Computational",
@@ -4468,14 +4468,14 @@
         "reproducible research",
         "local LLM synthesis"
       ],
-      "content": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference Zenodo 10.5281/zenodo.21298895 Friedman2026ReproducibleLiteratureSynthesisInfrastructure187 Computational Paper This paper documents template search project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pipelines sharing the same configuration file and the same infrastructure/search/ + infrastructure/reference/ modules. The standard pipeline (scripts/run search pipeline.py) handles a single SearchQuery end-to-end. The deep-search pipeline (scripts/run deep search.py, see ) fans out across a list of keywords (each capped at 100 papers per keyword from deep search.max results per keyword in manuscript/config.yaml), fully enriches every paper with its abstract and PDF fulltext, and (optionally) uses the local LLM to write a multi-section reading note for every paper. When a deep-search aggregate exists, the latest run covered 3 keyword(s) with unique paper(s) after cross-keywo literature search automated reference management BibTeX reproducible research local LLM synthesis literature search automated reference management BibTeX reproducible research local LLM synthesis"
+      "content": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference Zenodo 10.5281/zenodo.21298894 Friedman2026ReproducibleLiteratureSynthesisInfrastructure187 Computational Paper This paper documents template search project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pipelines sharing the same configuration file and the same infrastructure/search/ + infrastructure/reference/ modules. The standard pipeline (scripts/run search pipeline.py) handles a single SearchQuery end-to-end. The deep-search pipeline (scripts/run deep search.py, see ) fans out across a list of keywords (each capped at 100 papers per keyword from deep search.max results per keyword in manuscript/config.yaml), fully enriches every paper with its abstract and PDF fulltext, and (optionally) uses the local LLM to write a multi-section reading note for every paper. When a deep-search aggregate exists, the latest run covered 3 keyword(s) with unique paper(s) after cross-keywo literature search automated reference management BibTeX reproducible research local LLM synthesis literature search automated reference management BibTeX reproducible research local LLM synthesis"
     },
     {
       "id": "work:Friedman2026RegisteredReportTemplatePreregistration188",
       "type": "work",
       "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
       "url": "/works/Friedman2026RegisteredReportTemplatePreregistration188.html",
-      "external_url": "https://doi.org/10.5281/zenodo.21298893",
+      "external_url": "https://doi.org/10.5281/zenodo.21298892",
       "summary": "This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deter",
       "year": 2026,
       "domain": "Computational",
@@ -4488,14 +4488,14 @@
         "replication",
         "deviation ledger"
       ],
-      "content": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries Zenodo 10.5281/zenodo.21298893 Friedman2026RegisteredReportTemplatePreregistration188 Computational Paper This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deterministic demonstration data, and reporting confirmatory and exploratory claims through an explicit deviation ledger. Every quantity reported here is produced by the tested code in src/registered report/ and regenerated by scripts/generate figures.py; none is hand-entered or illustrative. The demonstration binds a single confirmatory hypothesis (H1) to one registered outcome (primary score) analysed by a two-sided label-permutation test. Run on a seeded two-group dataset (seed = 20260709, n = 24 per group), the registered test yields an observed mean difference of 1.003 with a two-sided permutation p-value of 0.0005 (0 of 2000 shuffles at least as extreme), significant at registered report preregistration replication deviation ledger registered report preregistration replication deviation ledger"
+      "content": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries Zenodo 10.5281/zenodo.21298892 Friedman2026RegisteredReportTemplatePreregistration188 Computational Paper This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deterministic demonstration data, and reporting confirmatory and exploratory claims through an explicit deviation ledger. Every quantity reported here is produced by the tested code in src/registered report/ and regenerated by scripts/generate figures.py; none is hand-entered or illustrative. The demonstration binds a single confirmatory hypothesis (H1) to one registered outcome (primary score) analysed by a two-sided label-permutation test. Run on a seeded two-group dataset (seed = 20260709, n = 24 per group), the registered test yields an observed mean difference of 1.003 with a two-sided permutation p-value of 0.0005 (0 of 2000 shuffles at least as extreme), significant at registered report preregistration replication deviation ledger registered report preregistration replication deviation ledger"
     },
     {
       "id": "work:Friedman2026RedactedReportTemplateDisclosure189",
       "type": "work",
       "title": "Redacted Report Template: Disclosure Control and Release Audit",
       "url": "/works/Friedman2026RedactedReportTemplateDisclosure189.html",
-      "external_url": "https://doi.org/10.5281/zenodo.21298891",
+      "external_url": "https://doi.org/10.5281/zenodo.21298890",
       "summary": "This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and ",
       "year": 2026,
       "domain": "Computational",
@@ -4508,14 +4508,14 @@
         "release audit",
         "source protection"
       ],
-      "content": "Redacted Report Template: Disclosure Control and Release Audit Zenodo 10.5281/zenodo.21298891 Friedman2026RedactedReportTemplateDisclosure189 Computational Paper This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and TPM-backed sealed sidecars across a sixteen-variant visual proof matrix. Four redaction styles—blackout, whiteout, grayout, and blur—are rendered across four PDF backgrounds—white, gray, black, and blur—yielding sixteen base proof PDFs. Each receives nine steganographic security methods including SHA-256/SHA-512 hash manifests, diagonal watermark overlays, footer provenance stamps, invisible text, QR and Code128 barcodes, PDF Info and XMP metadata, and embedded manifest attachments. Optional Kmyth TPM sealing wraps each hash manifest and steganography PDF in a .ski sidecar sealed against the TPM2-TSS storage hierarchy, bound to PCR selections and policy or-values. The rel redaction disclosure control release audit source protection redaction disclosure control release audit source protection"
+      "content": "Redacted Report Template: Disclosure Control and Release Audit Zenodo 10.5281/zenodo.21298890 Friedman2026RedactedReportTemplateDisclosure189 Computational Paper This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and TPM-backed sealed sidecars across a sixteen-variant visual proof matrix. Four redaction styles—blackout, whiteout, grayout, and blur—are rendered across four PDF backgrounds—white, gray, black, and blur—yielding sixteen base proof PDFs. Each receives nine steganographic security methods including SHA-256/SHA-512 hash manifests, diagonal watermark overlays, footer provenance stamps, invisible text, QR and Code128 barcodes, PDF Info and XMP metadata, and embedded manifest attachments. Optional Kmyth TPM sealing wraps each hash manifest and steganography PDF in a .ski sidecar sealed against the TPM2-TSS storage hierarchy, bound to PCR selections and policy or-values. The rel redaction disclosure control release audit source protection redaction disclosure control release audit source protection"
     },
     {
       "id": "work:Friedman2026PoolsRulesToolsTemplate190",
       "type": "work",
       "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
       "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html",
-      "external_url": "https://doi.org/10.5281/zenodo.21298889",
+      "external_url": "https://doi.org/10.5281/zenodo.21298888",
       "summary": "Publication metadata synchronized from Zenodo.",
       "year": 2026,
       "domain": "Active Inference",
@@ -4525,14 +4525,14 @@
         "bibliography",
         "Zenodo publication"
       ],
-      "content": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture Zenodo 10.5281/zenodo.21298889 Friedman2026PoolsRulesToolsTemplate190 Active Inference Paper Publication metadata synchronized from Zenodo. Zenodo publication zenodo-publication"
+      "content": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture Zenodo 10.5281/zenodo.21298888 Friedman2026PoolsRulesToolsTemplate190 Active Inference Paper Publication metadata synchronized from Zenodo. Zenodo publication zenodo-publication"
     },
     {
       "id": "work:Friedman2026IllegalStatesMostlyUnrepresentable191",
       "type": "work",
       "title": "Illegal States, Mostly Unrepresentable",
       "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html",
-      "external_url": "https://doi.org/10.5281/zenodo.21298886",
+      "external_url": "https://doi.org/10.5281/zenodo.21298885",
       "summary": "This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member",
       "year": 2026,
       "domain": "Entomology",
@@ -4549,14 +4549,14 @@
         "affine types",
         "illegal state unrepresentable"
       ],
-      "content": "Illegal States, Mostly Unrepresentable Zenodo 10.5281/zenodo.21298886 Friedman2026IllegalStatesMostlyUnrepresentable191 Entomology Paper This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly one real, on-disk SQLite database and one in-process, fault-injectable protocol endpoint; no agent ever touches another agent's storage or network state. The implementation lives under projects/templates/template formal/src/template formal/; the demo pipeline is orchestrated by scripts/02 run analysis.py. The paper's central claim is methodological, not a typing-features showcase: static typing's honest value in Python is edit-time/CI-time error prevention on structurally representable invariants, and nothing more. Nominal identifiers (AgentId, MessageId, TxnId as distinct NewType wrappers), a tagged-union Result[T, E] ADT with match-exhaust strongly typed programming session types algebraic data types category theory active inference multiagent systems affine types illegal state unrepresentable strongly typed programming session types algebraic data types category theory active inference"
+      "content": "Illegal States, Mostly Unrepresentable Zenodo 10.5281/zenodo.21298885 Friedman2026IllegalStatesMostlyUnrepresentable191 Entomology Paper This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly one real, on-disk SQLite database and one in-process, fault-injectable protocol endpoint; no agent ever touches another agent's storage or network state. The implementation lives under projects/templates/template formal/src/template formal/; the demo pipeline is orchestrated by scripts/02 run analysis.py. The paper's central claim is methodological, not a typing-features showcase: static typing's honest value in Python is edit-time/CI-time error prevention on structurally representable invariants, and nothing more. Nominal identifiers (AgentId, MessageId, TxnId as distinct NewType wrappers), a tagged-union Result[T, E] ADT with match-exhaust strongly typed programming session types algebraic data types category theory active inference multiagent systems affine types illegal state unrepresentable strongly typed programming session types algebraic data types category theory active inference"
     },
     {
       "id": "work:Friedman2026DataDescriptorTemplateSchema192",
       "type": "work",
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html",
-      "external_url": "https://doi.org/10.5281/zenodo.21298884",
+      "external_url": "https://doi.org/10.5281/zenodo.21298883",
       "summary": "This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. ",
       "year": 2026,
       "domain": "Active Inference",
@@ -4569,14 +4569,14 @@
         "provenance",
         "schema validation"
       ],
-      "content": "Data Descriptor Template: Schema, Provenance, and Release Readiness Zenodo 10.5281/zenodo.21298884 Friedman2026DataDescriptorTemplateSchema192 Active Inference Paper This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. It ships a small, public, synthetic demonstration dataset (two CSV files under data/fixtures/) and a machine-readable descriptor (data/example descriptor.json) that declares each file's media type, sha256 checksum, and row count alongside a six-field data dictionary with typed constraints. A tested validation library (src/data descriptor/) checks the descriptor's shape, safety, and completeness; recomputes each declared checksum and row count against the bytes on disk; and emits a deterministic, metadata-only release manifest suitable for pre-publication review. Every figure and quantitative claim in this manuscript is produced by that library and regenerated on demand, s data descriptor FAIR data provenance schema validation data descriptor FAIR data provenance schema validation"
+      "content": "Data Descriptor Template: Schema, Provenance, and Release Readiness Zenodo 10.5281/zenodo.21298883 Friedman2026DataDescriptorTemplateSchema192 Active Inference Paper This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. It ships a small, public, synthetic demonstration dataset (two CSV files under data/fixtures/) and a machine-readable descriptor (data/example descriptor.json) that declares each file's media type, sha256 checksum, and row count alongside a six-field data dictionary with typed constraints. A tested validation library (src/data descriptor/) checks the descriptor's shape, safety, and completeness; recomputes each declared checksum and row count against the bytes on disk; and emits a deterministic, metadata-only release manifest suitable for pre-publication review. Every figure and quantitative claim in this manuscript is produced by that library and regenerated on demand, s data descriptor FAIR data provenance schema validation data descriptor FAIR data provenance schema validation"
     },
     {
       "id": "work:Friedman2026TemplateApproachReproducibleGenerative193",
       "type": "work",
       "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
       "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html",
-      "external_url": "https://doi.org/10.5281/zenodo.19139090",
+      "external_url": "https://doi.org/10.5281/zenodo.19139089",
       "summary": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechani",
       "year": 2026,
       "domain": "Computational",
@@ -4586,7 +4586,7 @@
         "bibliography",
         "Zenodo publication"
       ],
-      "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Zenodo 10.5281/zenodo.19139090 Friedman2026TemplateApproachReproducibleGenerative193 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the research lifecyc Zenodo publication zenodo-publication"
+      "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Zenodo 10.5281/zenodo.19139089 Friedman2026TemplateApproachReproducibleGenerative193 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the research lifecyc Zenodo publication zenodo-publication"
     },
     {
       "id": "software:docxology:template",

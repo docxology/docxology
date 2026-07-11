@@ -1,6 +1,6 @@
 ---
 name: "PoolsRulesTools"
-description: "Use for Pools, Rules, and Tools: A Template-Integrated Resource Architecture, a Zenodo publication with DOI 10.5281/zenodo.21298889."
+description: "Use for Pools, Rules, and Tools: A Template-Integrated Resource Architecture, a Zenodo publication with DOI 10.5281/zenodo.21298888."
 tags: ["zenodo-publication"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["zenodo-publication"]
 
 Use this skill when working with the publication **Pools, Rules, and Tools: A Template-Integrated Resource Architecture** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.21298889`.
+1. Ground citations in DOI `10.5281/zenodo.21298888`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

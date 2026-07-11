@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T19:58:04Z",
+  "generated_at": "2026-07-11T01:16:16Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -4858,8 +4858,8 @@
       "type": "Paper",
       "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21298895",
-      "doi": "10.5281/zenodo.21298895",
+      "url": "https://doi.org/10.5281/zenodo.21298894",
+      "doi": "10.5281/zenodo.21298894",
       "docs_path": "papers/2026_ReproducibleLiteratureSynthesis/",
       "has_paper_folder": true
     },
@@ -4872,8 +4872,8 @@
       "type": "Paper",
       "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21298893",
-      "doi": "10.5281/zenodo.21298893",
+      "url": "https://doi.org/10.5281/zenodo.21298892",
+      "doi": "10.5281/zenodo.21298892",
       "docs_path": "papers/2026_RegisteredReportTemplate/",
       "has_paper_folder": true
     },
@@ -4886,8 +4886,8 @@
       "type": "Paper",
       "title": "Redacted Report Template: Disclosure Control and Release Audit",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21298891",
-      "doi": "10.5281/zenodo.21298891",
+      "url": "https://doi.org/10.5281/zenodo.21298890",
+      "doi": "10.5281/zenodo.21298890",
       "docs_path": "papers/2026_RedactedReportTemplate/",
       "has_paper_folder": true
     },
@@ -4900,8 +4900,8 @@
       "type": "Paper",
       "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21298889",
-      "doi": "10.5281/zenodo.21298889",
+      "url": "https://doi.org/10.5281/zenodo.21298888",
+      "doi": "10.5281/zenodo.21298888",
       "docs_path": "papers/2026_PoolsRulesTools/",
       "has_paper_folder": true
     },
@@ -4914,8 +4914,8 @@
       "type": "Paper",
       "title": "Illegal States, Mostly Unrepresentable",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21298886",
-      "doi": "10.5281/zenodo.21298886",
+      "url": "https://doi.org/10.5281/zenodo.21298885",
+      "doi": "10.5281/zenodo.21298885",
       "docs_path": "papers/2026_IllegalStatesMostly/",
       "has_paper_folder": true
     },
@@ -4928,8 +4928,8 @@
       "type": "Paper",
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21298884",
-      "doi": "10.5281/zenodo.21298884",
+      "url": "https://doi.org/10.5281/zenodo.21298883",
+      "doi": "10.5281/zenodo.21298883",
       "docs_path": "papers/2026_DataDescriptorTemplate/",
       "has_paper_folder": true
     },
@@ -4942,8 +4942,8 @@
       "type": "Paper",
       "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.19139090",
-      "doi": "10.5281/zenodo.19139090",
+      "url": "https://doi.org/10.5281/zenodo.19139089",
+      "doi": "10.5281/zenodo.19139089",
       "docs_path": "papers/2026_TemplateApproachReproducible2/",
       "has_paper_folder": true
     }
@@ -6100,7 +6100,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-10T19:58:03+00:00",
+      "checked_at": "2026-07-11T01:16:16+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6115,7 +6115,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-10T19:58:03+00:00",
+      "checked_at": "2026-07-11T01:16:16+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

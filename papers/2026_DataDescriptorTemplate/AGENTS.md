@@ -1,7 +1,7 @@
 # AGENTS.md - Data Descriptor Template: Schema, Provenance, and Release Readiness
 
 **Paper**: Data Descriptor Template: Schema, Provenance, and Release Readiness (2026)
-**DOI**: [10.5281/zenodo.21298884](https://doi.org/10.5281/zenodo.21298884)
+**DOI**: [10.5281/zenodo.21298883](https://doi.org/10.5281/zenodo.21298883)
 **Zenodo record**: https://zenodo.org/records/21298883
 
 ---

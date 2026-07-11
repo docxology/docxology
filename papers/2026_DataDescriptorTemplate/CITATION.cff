@@ -4,15 +4,15 @@ type: article
 title: "Data Descriptor Template: Schema, Provenance, and Release Readiness"
 version: "0.1.0"
 date-released: 2026-07-09
-doi: 10.5281/zenodo.21298884
-url: "https://doi.org/10.5281/zenodo.21298884"
+doi: 10.5281/zenodo.21298883
+url: "https://doi.org/10.5281/zenodo.21298883"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.21298884
+    value: 10.5281/zenodo.21298883
     description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/21298883"

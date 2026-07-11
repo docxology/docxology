@@ -32,7 +32,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 **Selected works**
 
 - 2026 — [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](https://doi.org/10.5281/zenodo.19574117)
-- 2026 — [Illegal States, Mostly Unrepresentable](https://doi.org/10.5281/zenodo.21298886)
+- 2026 — [Illegal States, Mostly Unrepresentable](https://doi.org/10.5281/zenodo.21298885)
 - 2025 — [Computational Complexity and Energetics of the Ant Stack](https://doi.org/10.5281/zenodo.17238736)
 - 2025 — [The Ant Stack](https://doi.org/10.5281/zenodo.16782756)
 - 2025 — [Towards a Science of Consciousness and Social Complexity... For Ants](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)

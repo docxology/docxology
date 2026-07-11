@@ -1,7 +1,7 @@
 # AGENTS.md - A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication
 
 **Paper**: A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication (2026)
-**DOI**: [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090)
+**DOI**: [10.5281/zenodo.19139089](https://doi.org/10.5281/zenodo.19139089)
 **Zenodo record**: https://zenodo.org/records/19139089
 
 ---

@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298884.svg)](https://doi.org/10.5281/zenodo.21298884)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298883.svg)](https://doi.org/10.5281/zenodo.21298883)
 
 ---
 
@@ -18,7 +18,7 @@ data descriptor · FAIR data · provenance · schema validation
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.21298884](https://doi.org/10.5281/zenodo.21298884) |
+| **DOI** | [10.5281/zenodo.21298883](https://doi.org/10.5281/zenodo.21298883) |
 | **Published** | 2026-07-09 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/21298883 |
@@ -29,7 +29,7 @@ data descriptor · FAIR data · provenance · schema validation
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Data Descriptor Template: Schema, Provenance, and Release Readiness*. Zenodo. DOI: 10.5281/zenodo.21298884. URL: https://doi.org/10.5281/zenodo.21298884.
+> Daniel Ari Friedman (2026). *Data Descriptor Template: Schema, Provenance, and Release Readiness*. Zenodo. DOI: 10.5281/zenodo.21298883. URL: https://doi.org/10.5281/zenodo.21298883.
 
 ## Related
 

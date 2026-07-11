@@ -1,7 +1,7 @@
 # AGENTS.md - Registered Report Template: Preregistration, Deviations, and Claim Boundaries
 
 **Paper**: Registered Report Template: Preregistration, Deviations, and Claim Boundaries (2026)
-**DOI**: [10.5281/zenodo.21298893](https://doi.org/10.5281/zenodo.21298893)
+**DOI**: [10.5281/zenodo.21298892](https://doi.org/10.5281/zenodo.21298892)
 **Zenodo record**: https://zenodo.org/records/21298892
 
 ---

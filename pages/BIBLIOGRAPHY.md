@@ -223,13 +223,13 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 184 | 2026 | 💻 | Paper | The Shape Between: A Full-Page Illustrated Storybook Template | *Zenodo* | [10.5281/zenodo.21176000](https://doi.org/10.5281/zenodo.21176000) | [📁](../papers/2026_ShapeBetween/) |
 | 185 | 2026 | 💻 | Paper | Autopoietic Project Generation | *Zenodo* | [10.5281/zenodo.21227869](https://doi.org/10.5281/zenodo.21227869) | [📁](../papers/2026_AutopoieticProjectGeneration/) |
 | 186 | 2026 | 💻 | Paper | template_pitch_deck: Reproducible, Validated Pitch-Deck Generation | *Zenodo* | [10.5281/zenodo.21281509](https://doi.org/10.5281/zenodo.21281509) | [📁](../papers/2026_TemplatePitchDeck/) |
-| 187 | 2026 | 💻 | Paper | Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference | *Zenodo* | [10.5281/zenodo.21298895](https://doi.org/10.5281/zenodo.21298895) | [📁](../papers/2026_ReproducibleLiteratureSynthesis/) |
-| 188 | 2026 | 💻 | Paper | Registered Report Template: Preregistration, Deviations, and Claim Boundaries | *Zenodo* | [10.5281/zenodo.21298893](https://doi.org/10.5281/zenodo.21298893) | [📁](../papers/2026_RegisteredReportTemplate/) |
-| 189 | 2026 | 💻 | Paper | Redacted Report Template: Disclosure Control and Release Audit | *Zenodo* | [10.5281/zenodo.21298891](https://doi.org/10.5281/zenodo.21298891) | [📁](../papers/2026_RedactedReportTemplate/) |
-| 190 | 2026 | 🧠 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | *Zenodo* | [10.5281/zenodo.21298889](https://doi.org/10.5281/zenodo.21298889) | [📁](../papers/2026_PoolsRulesTools/) |
-| 191 | 2026 | 🐜 | Paper | Illegal States, Mostly Unrepresentable | *Zenodo* | [10.5281/zenodo.21298886](https://doi.org/10.5281/zenodo.21298886) | [📁](../papers/2026_IllegalStatesMostly/) |
-| 192 | 2026 | 🧠 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | *Zenodo* | [10.5281/zenodo.21298884](https://doi.org/10.5281/zenodo.21298884) | [📁](../papers/2026_DataDescriptorTemplate/) |
-| 193 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139090](https://doi.org/10.5281/zenodo.19139090) | [📁](../papers/2026_TemplateApproachReproducible2/) |
+| 187 | 2026 | 💻 | Paper | Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference | *Zenodo* | [10.5281/zenodo.21298894](https://doi.org/10.5281/zenodo.21298894) | [📁](../papers/2026_ReproducibleLiteratureSynthesis/) |
+| 188 | 2026 | 💻 | Paper | Registered Report Template: Preregistration, Deviations, and Claim Boundaries | *Zenodo* | [10.5281/zenodo.21298892](https://doi.org/10.5281/zenodo.21298892) | [📁](../papers/2026_RegisteredReportTemplate/) |
+| 189 | 2026 | 💻 | Paper | Redacted Report Template: Disclosure Control and Release Audit | *Zenodo* | [10.5281/zenodo.21298890](https://doi.org/10.5281/zenodo.21298890) | [📁](../papers/2026_RedactedReportTemplate/) |
+| 190 | 2026 | 🧠 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | *Zenodo* | [10.5281/zenodo.21298888](https://doi.org/10.5281/zenodo.21298888) | [📁](../papers/2026_PoolsRulesTools/) |
+| 191 | 2026 | 🐜 | Paper | Illegal States, Mostly Unrepresentable | *Zenodo* | [10.5281/zenodo.21298885](https://doi.org/10.5281/zenodo.21298885) | [📁](../papers/2026_IllegalStatesMostly/) |
+| 192 | 2026 | 🧠 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | *Zenodo* | [10.5281/zenodo.21298883](https://doi.org/10.5281/zenodo.21298883) | [📁](../papers/2026_DataDescriptorTemplate/) |
+| 193 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139089](https://doi.org/10.5281/zenodo.19139089) | [📁](../papers/2026_TemplateApproachReproducible2/) |
 ---
 
 ## Domain Index

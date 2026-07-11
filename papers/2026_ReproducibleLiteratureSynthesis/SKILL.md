@@ -1,6 +1,6 @@
 ---
 name: "ReproducibleLiteratureSynthesis"
-description: "Use for Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference, a Zenodo publication with DOI 10.5281/zenodo.21298895."
+description: "Use for Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference, a Zenodo publication with DOI 10.5281/zenodo.21298894."
 tags: ["literature-search", "automated-reference-management", "bibtex", "reproducible-research", "local-llm-synthesis"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["literature-search", "automated-reference-management", "bibtex", "reprodu
 
 Use this skill when working with the publication **Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.21298895`.
+1. Ground citations in DOI `10.5281/zenodo.21298894`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

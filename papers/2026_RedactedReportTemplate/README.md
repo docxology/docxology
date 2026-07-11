@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298891.svg)](https://doi.org/10.5281/zenodo.21298891)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298890.svg)](https://doi.org/10.5281/zenodo.21298890)
 
 ---
 
@@ -18,7 +18,7 @@ redaction · disclosure control · release audit · source protection
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.21298891](https://doi.org/10.5281/zenodo.21298891) |
+| **DOI** | [10.5281/zenodo.21298890](https://doi.org/10.5281/zenodo.21298890) |
 | **Published** | 2026-07-10 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/21298890 |
@@ -29,7 +29,7 @@ redaction · disclosure control · release audit · source protection
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Redacted Report Template: Disclosure Control and Release Audit*. Zenodo. DOI: 10.5281/zenodo.21298891. URL: https://doi.org/10.5281/zenodo.21298891.
+> Daniel Ari Friedman (2026). *Redacted Report Template: Disclosure Control and Release Audit*. Zenodo. DOI: 10.5281/zenodo.21298890. URL: https://doi.org/10.5281/zenodo.21298890.
 
 ## Related
 

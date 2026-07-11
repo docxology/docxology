@@ -1,7 +1,7 @@
 # AGENTS.md - Redacted Report Template: Disclosure Control and Release Audit
 
 **Paper**: Redacted Report Template: Disclosure Control and Release Audit (2026)
-**DOI**: [10.5281/zenodo.21298891](https://doi.org/10.5281/zenodo.21298891)
+**DOI**: [10.5281/zenodo.21298890](https://doi.org/10.5281/zenodo.21298890)
 **Zenodo record**: https://zenodo.org/records/21298890
 
 ---

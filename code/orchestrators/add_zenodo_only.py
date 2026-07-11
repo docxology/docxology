@@ -412,7 +412,9 @@ def main(argv: list[str]) -> int:
         rec = fetch(rid)
         meta = rec.get("metadata", {})
         title = meta.get("title", "").strip()
-        doi = rec.get("doi", "")
+        # Canonical DOI = Zenodo concept DOI (docs/operations/publication-sync.md), not the
+        # per-version doi -- concept DOI always resolves to the latest version.
+        doi = rec.get("conceptdoi") or meta.get("conceptdoi") or rec.get("doi") or meta.get("doi") or ""
         if doi in BIB.read_text(encoding="utf-8"):
             print(f"skip {rid}: DOI already in bibliography")
             continue

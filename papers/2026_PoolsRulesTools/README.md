@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298889.svg)](https://doi.org/10.5281/zenodo.21298889)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298888.svg)](https://doi.org/10.5281/zenodo.21298888)
 
 ---
 
@@ -18,7 +18,7 @@ Zenodo publication
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.21298889](https://doi.org/10.5281/zenodo.21298889) |
+| **DOI** | [10.5281/zenodo.21298888](https://doi.org/10.5281/zenodo.21298888) |
 | **Published** | 2026-07-05 |
 | **Version** | 1.0.0 |
 | **Zenodo record** | https://zenodo.org/records/21298888 |
@@ -29,7 +29,7 @@ Zenodo publication
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Pools, Rules, and Tools: A Template-Integrated Resource Architecture*. Zenodo. DOI: 10.5281/zenodo.21298889. URL: https://doi.org/10.5281/zenodo.21298889.
+> Daniel Ari Friedman (2026). *Pools, Rules, and Tools: A Template-Integrated Resource Architecture*. Zenodo. DOI: 10.5281/zenodo.21298888. URL: https://doi.org/10.5281/zenodo.21298888.
 
 ## Related
 

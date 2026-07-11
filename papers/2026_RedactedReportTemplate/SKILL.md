@@ -1,6 +1,6 @@
 ---
 name: "RedactedReportTemplate"
-description: "Use for Redacted Report Template: Disclosure Control and Release Audit, a Zenodo publication with DOI 10.5281/zenodo.21298891."
+description: "Use for Redacted Report Template: Disclosure Control and Release Audit, a Zenodo publication with DOI 10.5281/zenodo.21298890."
 tags: ["redaction", "disclosure-control", "release-audit", "source-protection"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["redaction", "disclosure-control", "release-audit", "source-protection"]
 
 Use this skill when working with the publication **Redacted Report Template: Disclosure Control and Release Audit** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.21298891`.
+1. Ground citations in DOI `10.5281/zenodo.21298890`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts
