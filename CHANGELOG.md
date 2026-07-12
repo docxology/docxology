@@ -2,6 +2,15 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-12 (session 3)
+
+- **Image thumbnail previews on paper landing pages**: `image_gallery_link()` in `build_paper_pages.py` now shows up to 6 thumbnail previews of extracted figures with lazy loading and a "+N more" indicator. All 176 paper pages regenerated.
+- **CSS classes for thumbnails**: `.image-thumbs`, `.thumb-link`, and `.muted` added to `style.css`, replacing inline styles for cleaner maintenance and consistent rendering.
+- **Search index image_count**: `build_search_index.py` now includes `image_count` for works with extracted images (140 works). Search results page shows "Full Text" and "N Images" badges on matching works.
+- **llms.txt stale counts corrected**: 171→172 full text papers, 139→168 image galleries, 8986→9938 images.
+- **PPTX text extraction**: Extracted text from `BIOFIBIOFIRM_v2.pptx` (11 slides) for 2025_BiofirmDevelopmentWith. 172 of 176 papers now have full_text.md (97.7% coverage).
+- All generated surfaces, sitemap, manifest, and asset-size report refreshed. All validation + 154 tests green.
+
 ## 2026-07-12
 
 - Added work **#194 "Prior Cognitive Art"** (`zenodo.21316510`, `docxology/prior_cognitive_art` v0.1.0) via the canonical `sync_paired_publications.py --apply` path. Paper folder, bibliography row, work page, domain page, search index, sitemap, and all generated surfaces updated.
