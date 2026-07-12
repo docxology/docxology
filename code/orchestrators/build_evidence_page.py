@@ -14,7 +14,7 @@ HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
 _WEBPAGE_LD = {
@@ -100,6 +100,7 @@ def render_html(claims: list[dict]) -> str:
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    {HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="Evidence Ledger — Daniel Ari Friedman">
     <meta property="og:description" content="Claim-level evidence ledger with source links, confidence levels, and caveats.">

@@ -13,7 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "exports.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
 _WEBPAGE_LD = {
@@ -100,6 +100,7 @@ def render() -> str:
     <link rel="alternate" type="application/json" href="/codemeta.json" title="CodeMeta">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
+    {HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="Public Exports — Daniel Ari Friedman">
     <meta property="og:description" content="Citation exports and JSON datasets for the public research index.">
