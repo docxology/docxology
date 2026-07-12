@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T20:14:24Z",
+  "generated_at": "2026-07-12T20:22:15Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -3406,7 +3406,7 @@
       "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
       "url": "/works/Friedman2025BiofirmDevelopmentFirstPrinciples128.html",
       "external_url": "https://doi.org/10.5281/zenodo.14861596",
-      "full_text_url": "",
+      "full_text_url": "/papers/2025_BiofirmDevelopmentWith/full_text.md",
       "summary": "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024",
       "year": 2025,
       "domain": "Active Inference",
