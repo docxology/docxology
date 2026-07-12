@@ -38,6 +38,10 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |
 | `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, local links, and count consistency |
 | `orchestrators/sync_scholar_metrics.py` | Propagate `data/scholar-snapshot.json` to hand-maintained surfaces |
+| `orchestrators/extract_paper_texts.py` | Extract full text and images from paper PDFs/ODT/PPTX using PyMuPDF + python-pptx |
+| `orchestrators/generate_citation_cff.py` | Generate CITATION.cff (CFF 1.2.0) for papers from `metadata.json` |
+| `orchestrators/deploy_seo_security.py` | Idempotent deployment of CSP, rel-me, and hreflang tags to indexable HTML pages |
+| `orchestrators/migrate_inline_handlers.py` | Migrate inline `onclick`/`onchange`/`onsubmit` handlers to `data-*` attributes for CSP compliance |
 | `data/youtube_personal.json` | Cached export (personal channel) |
 | `data/youtube_institute.json` | Cached export (institute channel) |
 | `tests/test_youtube_fetcher.py` | Unit tests for fetcher parsing and normalization |

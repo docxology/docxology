@@ -28,7 +28,10 @@ This repository is the public research, software, citation, evidence, and websit
 | Check deployed site health | latest `reports/live_site_verification_*.json` | `python3 code/orchestrators/verify_live_site.py` |
 | Refresh public-source inventory | latest `reports/public_source_inventory_*.json` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Triage external links | [`reports/external_links_triage_2026-05-15.md`](reports/external_links_triage_2026-05-15.md) | `python3 code/orchestrators/check_external_links.py` |
-| Extract paper full text + images | [`papers/`](papers/), [`code/orchestrators/extract_paper_texts.py`](code/orchestrators/extract_paper_texts.py) | `python3 code/orchestrators/extract_paper_texts.py --force` (requires PyMuPDF: `pip3 install pymupdf`) |
+| Extract paper full text + images | [`papers/`](papers/), [`code/orchestrators/extract_paper_texts.py`](code/orchestrators/extract_paper_texts.py) | `python3 code/orchestrators/extract_paper_texts.py --force` (requires PyMuPDF: `pip3 install pymupdf`, python-pptx: `pip3 install python-pptx`) |
+| Generate CITATION.cff | [`papers/*/CITATION.cff`](papers/), [`code/orchestrators/generate_citation_cff.py`](code/orchestrators/generate_citation_cff.py) | `python3 code/orchestrators/generate_citation_cff.py --force` |
+| Deploy SEO + security tags | [`*.html`](.), [`code/orchestrators/deploy_seo_security.py`](code/orchestrators/deploy_seo_security.py) | `python3 code/orchestrators/deploy_seo_security.py` (idempotent — only adds missing CSP, rel-me, hreflang) |
+| Migrate inline handlers | [`*.html`](.), [`code/orchestrators/migrate_inline_handlers.py`](code/orchestrators/migrate_inline_handlers.py) | `python3 code/orchestrators/migrate_inline_handlers.py` |
 
 ## Source-Of-Truth Rules
 
