@@ -63,6 +63,27 @@ def collect_counts() -> dict:
     paired_payload = _json(str(paired_report.relative_to(REPO_ROOT))) if paired_report else {}
     decision_payload = json.loads(decision_path.read_text(encoding="utf-8")) if decision_path.is_file() else {}
 
+    # Full-text and image extraction counts
+    papers_dir = REPO_ROOT / "papers"
+    full_text_count = 0
+    papers_with_images = 0
+    total_extracted_images = 0
+    if papers_dir.is_dir():
+        for paper_dir in papers_dir.iterdir():
+            if not paper_dir.is_dir():
+                continue
+            if (paper_dir / "full_text.md").is_file():
+                full_text_count += 1
+            images_dir = paper_dir / "images"
+            if images_dir.is_dir():
+                img_count = sum(
+                    1 for f in images_dir.iterdir()
+                    if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
+                )
+                if img_count:
+                    papers_with_images += 1
+                    total_extracted_images += img_count
+
     return {
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "command": "uv run python3 code/orchestrators/build_current_counts.py",
@@ -81,6 +102,9 @@ def collect_counts() -> dict:
         "counts": {
             "bibliography_works": len(rows),
             "paper_folder_docs": parse_paper_folder_count(),
+            "full_text_papers": full_text_count,
+            "papers_with_images": papers_with_images,
+            "extracted_images": total_extracted_images,
             "bibliography_docs_links": sum(1 for row in rows if "../papers/" in row["docs"]),
             "types": {TYPE_LABELS.get(k, k): type_counts[k] for k in sorted(type_counts)},
             "domains": {
@@ -141,6 +165,9 @@ def render_markdown(payload: dict) -> str:
             "",
             f"- Bibliography works: `{counts['bibliography_works']}`",
             f"- Paper-folder docs: `{counts['paper_folder_docs']}`",
+            f"- Full-text extractions: `{counts['full_text_papers']}`",
+            f"- Papers with image galleries: `{counts['papers_with_images']}`",
+            f"- Total extracted images: `{counts['extracted_images']}`",
             f"- Bibliography docs links: `{counts['bibliography_docs_links']}`",
             "",
             "### Types",
