@@ -89,6 +89,8 @@ class Work:
     doi: str
     docs_path: str
     has_paper_folder: bool
+    has_full_text: bool = False
+    has_images: bool = False
 
 
 def clean_text(value: str) -> str:
@@ -122,19 +124,31 @@ def docs_path(row: BiblioRow) -> str:
 def row_to_work(row: BiblioRow) -> Work:
     url = canonical_link_url(row.link_cell, row.venue)
     domain = row.domain.strip()
+    docs = docs_path(row)
+    # Check for full_text.md and images/ directory
+    has_ft = False
+    has_img = False
+    if docs:
+        paper_dir = REPO_ROOT / docs.rstrip("/")
+        if (paper_dir / "full_text.md").is_file():
+            has_ft = True
+        if (paper_dir / "images").is_dir():
+            has_img = True
     return Work(
         num=row.num,
         citation_key=citation_key(row),
         year=int(row.year) if row.year.isdigit() else row.year,
         domain=domain,
-        domain_name=DOMAIN_NAMES.get(domain, DOMAIN_NAMES.get(domain.rstrip("️"), "Other")),
+        domain_name=DOMAIN_NAMES.get(domain, DOMAIN_NAMES.get(domain.rstrip("\ufe0f"), "Other")),
         type=row.typ,
         title=clean_text(row.title),
         venue=clean_text(row.venue),
         url=url,
         doi=doi_from_url(url),
-        docs_path=docs_path(row),
+        docs_path=docs,
         has_paper_folder=bool(row.folder),
+        has_full_text=has_ft,
+        has_images=has_img,
     )
 
 

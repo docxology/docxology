@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T21:43:28Z",
+  "generated_at": "2026-07-12T21:57:18Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "count": 193,
   "works": [
@@ -15,7 +15,9 @@
       "url": "https://doi.org/10.5281/zenodo.16903351",
       "doi": "10.5281/zenodo.16903351",
       "docs_path": "papers/2026_ReproducibleResearch/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 2,
@@ -29,7 +31,9 @@
       "url": "https://video.activeinference.institute/",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 3,
@@ -43,7 +47,9 @@
       "url": "https://doi.org/10.5281/zenodo.18807970",
       "doi": "10.5281/zenodo.18807970",
       "docs_path": "papers/2026_BeforePragmatism/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 4,
@@ -57,7 +63,9 @@
       "url": "https://doi.org/10.5281/zenodo.19335195",
       "doi": "10.5281/zenodo.19335195",
       "docs_path": "papers/2026_Bimetalism/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 5,
@@ -71,7 +79,9 @@
       "url": "https://doi.org/10.5281/zenodo.18364118",
       "doi": "10.5281/zenodo.18364118",
       "docs_path": "papers/2026_CognitiveIntegrity/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 6,
@@ -85,7 +95,9 @@
       "url": "https://www.youtube.com/@danielarifriedman/playlists",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 7,
@@ -99,7 +111,9 @@
       "url": "https://doi.org/10.5281/zenodo.18600040",
       "doi": "10.5281/zenodo.18600040",
       "docs_path": "papers/2026_DoorsOfPerception/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 8,
@@ -113,7 +127,9 @@
       "url": "https://doi.org/10.5281/zenodo.17555266",
       "doi": "10.5281/zenodo.17555266",
       "docs_path": "papers/2025_5thSymposium/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 9,
@@ -127,7 +143,9 @@
       "url": "https://doi.org/10.5281/zenodo.17228945",
       "doi": "10.5281/zenodo.17228945",
       "docs_path": "papers/2025_AuBI/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 10,
@@ -141,7 +159,9 @@
       "url": "https://doi.org/10.5281/zenodo.15170907",
       "doi": "10.5281/zenodo.15170907",
       "docs_path": "papers/2025_CEREBRUM/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 11,
@@ -155,7 +175,9 @@
       "url": "https://doi.org/10.5281/zenodo.17238736",
       "doi": "10.5281/zenodo.17238736",
       "docs_path": "papers/2025_AntStackComplexity/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 12,
@@ -169,7 +191,9 @@
       "url": "https://doi.org/10.5281/zenodo.17229924",
       "doi": "10.5281/zenodo.17229924",
       "docs_path": "papers/2025_EvoJump/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 13,
@@ -183,7 +207,9 @@
       "url": "https://doi.org/10.5281/zenodo.15061666",
       "doi": "10.5281/zenodo.15061666",
       "docs_path": "papers/2025_AccessibilityActiveInference/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 14,
@@ -197,7 +223,9 @@
       "url": "https://doi.org/10.5281/zenodo.16790554",
       "doi": "10.5281/zenodo.16790554",
       "docs_path": "papers/2025_MDKV/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 15,
@@ -211,7 +239,9 @@
       "url": "https://doi.org/10.5281/zenodo.17244386",
       "doi": "10.5281/zenodo.17244386",
       "docs_path": "papers/2025_MarkdownDecisionProcess/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 16,
@@ -225,7 +255,9 @@
       "url": "https://doi.org/10.5281/zenodo.16740438",
       "doi": "10.5281/zenodo.16740438",
       "docs_path": "papers/2025_CognitiveArtScience/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 17,
@@ -239,7 +271,9 @@
       "url": "https://doi.org/10.5281/zenodo.15168381",
       "doi": "10.5281/zenodo.15168381",
       "docs_path": "papers/2025_OnTime/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 18,
@@ -253,7 +287,9 @@
       "url": "https://doi.org/10.5281/zenodo.16887799",
       "doi": "10.5281/zenodo.16887799",
       "docs_path": "papers/2025_QuadMath/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 19,
@@ -267,7 +303,9 @@
       "url": "https://doi.org/10.5281/zenodo.15389682",
       "doi": "10.5281/zenodo.15389682",
       "docs_path": "papers/2025_ResNei/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 20,
@@ -281,7 +319,9 @@
       "url": "https://doi.org/10.5281/zenodo.17114389",
       "doi": "10.5281/zenodo.17114389",
       "docs_path": "papers/2025_Symergetics/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 21,
@@ -295,7 +335,9 @@
       "url": "https://doi.org/10.5281/zenodo.17235137",
       "doi": "10.5281/zenodo.17235137",
       "docs_path": "papers/2025_AgentAndNiche/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 22,
@@ -309,7 +351,9 @@
       "url": "https://doi.org/10.5281/zenodo.17138223",
       "doi": "10.5281/zenodo.17138223",
       "docs_path": "papers/2025_SystemsProcesses/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 23,
@@ -323,7 +367,9 @@
       "url": "https://doi.org/10.3389/fpsyg.2025.1585315",
       "doi": "10.3389/fpsyg.2025.1585315",
       "docs_path": "papers/2025_TemporalDepth/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 24,
@@ -337,7 +383,9 @@
       "url": "https://doi.org/10.5281/zenodo.17982447",
       "doi": "10.5281/zenodo.17982447",
       "docs_path": "papers/2025_AII_v3/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 25,
@@ -351,7 +399,9 @@
       "url": "https://doi.org/10.5281/zenodo.16782756",
       "doi": "10.5281/zenodo.16782756",
       "docs_path": "papers/2025_AntStack/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 26,
@@ -365,7 +415,9 @@
       "url": "https://doi.org/10.48550/arXiv.2505.17500",
       "doi": "10.48550/arXiv.2505.17500",
       "docs_path": "papers/2025_DiscoveryEngine/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 27,
@@ -379,7 +431,9 @@
       "url": "https://doi.org/10.3390/e27050459",
       "doi": "10.3390/e27050459",
       "docs_path": "papers/2025_Thoughtseeds/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 28,
@@ -393,7 +447,9 @@
       "url": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes",
       "doi": "",
       "docs_path": "papers/2025_ConsciousnessAnts/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 29,
@@ -407,7 +463,9 @@
       "url": "https://doi.org/10.5281/zenodo.11459322",
       "doi": "10.5281/zenodo.11459322",
       "docs_path": "papers/2024_OntologySUMO/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 30,
@@ -421,7 +479,9 @@
       "url": "https://doi.org/10.5281/zenodo.14861595",
       "doi": "10.5281/zenodo.14861595",
       "docs_path": "papers/2024_BioFirm/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 31,
@@ -435,7 +495,9 @@
       "url": "https://doi.org/10.1002/asi.24900",
       "doi": "10.1002/asi.24900",
       "docs_path": "papers/2024_ImageMemeResearch/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 32,
@@ -449,7 +511,9 @@
       "url": "https://doi.org/10.1002/ece3.70063",
       "doi": "10.1002/ece3.70063",
       "docs_path": "papers/2024_BlattodeaDiversity/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 33,
@@ -463,7 +527,9 @@
       "url": "https://doi.org/10.5281/zenodo.13273681",
       "doi": "10.5281/zenodo.13273681",
       "docs_path": "papers/2024_DigitalTwins/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 34,
@@ -477,7 +543,9 @@
       "url": "https://doi.org/10.48550/arXiv.2408.09548",
       "doi": "10.48550/arXiv.2408.09548",
       "docs_path": "papers/2024_PopulationSearch/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 35,
@@ -491,7 +559,9 @@
       "url": "https://doi.org/10.5281/zenodo.13754585",
       "doi": "10.5281/zenodo.13754585",
       "docs_path": "papers/2024_FarmWorks/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 36,
@@ -505,7 +575,9 @@
       "url": "https://doi.org/10.1016/j.neubiorev.2023.105500",
       "doi": "10.1016/j.neubiorev.2023.105500",
       "docs_path": "papers/2024_FederatedInference/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 37,
@@ -519,7 +591,9 @@
       "url": "https://doi.org/10.5281/zenodo.10798144",
       "doi": "10.5281/zenodo.10798144",
       "docs_path": "papers/2024_QuantumDreams/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 38,
@@ -533,7 +607,9 @@
       "url": "https://doi.org/10.5281/zenodo.13711301",
       "doi": "10.5281/zenodo.13711301",
       "docs_path": "papers/2024_MathArtBlake/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 39,
@@ -547,7 +623,9 @@
       "url": "https://doi.org/10.5281/zenodo.14574046",
       "doi": "10.5281/zenodo.14574046",
       "docs_path": "papers/2024_SensemakingFederation/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 40,
@@ -561,7 +639,9 @@
       "url": "https://doi.org/10.3390/e26040303",
       "doi": "10.3390/e26040303",
       "docs_path": "papers/2024_SharedProtentions/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 41,
@@ -575,7 +655,9 @@
       "url": "https://doi.org/10.5281/zenodo.14108992",
       "doi": "10.5281/zenodo.14108992",
       "docs_path": "papers/2024_AII_v2/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 42,
@@ -589,7 +671,9 @@
       "url": "https://doi.org/10.5281/zenodo.10601081",
       "doi": "10.5281/zenodo.10601081",
       "docs_path": "papers/2024_InfiniteImaginarium/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 43,
@@ -603,7 +687,9 @@
       "url": "https://doi.org/10.1016/j.plrev.2024.04.010",
       "doi": "10.1016/j.plrev.2024.04.010",
       "docs_path": "papers/2024_PaleolithicRockstars/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 44,
@@ -617,7 +703,9 @@
       "url": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
       "doi": "",
       "docs_path": "papers/2024_CurioCards/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 45,
@@ -631,7 +719,9 @@
       "url": "https://doi.org/10.1016/j.plrev.2023.11.001",
       "doi": "10.1016/j.plrev.2023.11.001",
       "docs_path": "papers/2023_GuidedTourMinds/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 46,
@@ -645,7 +735,9 @@
       "url": "https://doi.org/10.1016/j.cogsys.2023.02.005",
       "doi": "10.1016/j.cogsys.2023.02.005",
       "docs_path": "papers/2023_SinglePheromone/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 47,
@@ -659,7 +751,9 @@
       "url": "https://doi.org/10.5281/zenodo.10400744",
       "doi": "10.5281/zenodo.10400744",
       "docs_path": "papers/2023_HoneyBeeGeneExpression/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 48,
@@ -673,7 +767,9 @@
       "url": "https://doi.org/10.3390/e25070964",
       "doi": "10.3390/e25070964",
       "docs_path": "papers/2023_VariationalSynthesis/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 49,
@@ -687,7 +783,9 @@
       "url": "https://doi.org/10.5281/zenodo.10296601",
       "doi": "10.5281/zenodo.10296601",
       "docs_path": "papers/2023_ATLAS/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 50,
@@ -701,7 +799,9 @@
       "url": "https://doi.org/10.5281/zenodo.8415312",
       "doi": "10.5281/zenodo.8415312",
       "docs_path": "papers/2023_AccountActiveInference/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 51,
@@ -715,7 +815,9 @@
       "url": "https://doi.org/10.5281/zenodo.10038231",
       "doi": "10.5281/zenodo.10038231",
       "docs_path": "papers/2023_CognitiveSovereignty/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 52,
@@ -729,7 +831,9 @@
       "url": "https://doi.org/10.5281/zenodo.8025956",
       "doi": "10.5281/zenodo.8025956",
       "docs_path": "papers/2023_AIAccountability/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 53,
@@ -743,7 +847,9 @@
       "url": "https://doi.org/10.31219/osf.io/dnw5k",
       "doi": "10.31219/osf.io/dnw5k",
       "docs_path": "papers/2023_DistributedScience/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 54,
@@ -757,7 +863,9 @@
       "url": "https://doi.org/10.5281/zenodo.10160656",
       "doi": "10.5281/zenodo.10160656",
       "docs_path": "papers/2023_NSFReporting/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 55,
@@ -771,7 +879,9 @@
       "url": "https://doi.org/10.3791/65002",
       "doi": "10.3791/65002",
       "docs_path": "papers/2023_VideoEntomology/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 56,
@@ -785,7 +895,9 @@
       "url": "https://doi.org/10.5281/zenodo.7803327",
       "doi": "10.5281/zenodo.7803327",
       "docs_path": "papers/2023_GNN/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 57,
@@ -799,7 +911,9 @@
       "url": "https://doi.org/10.5281/zenodo.8164666",
       "doi": "10.5281/zenodo.8164666",
       "docs_path": "papers/2023_GenerativeResearchTeams/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 58,
@@ -813,7 +927,9 @@
       "url": "https://doi.org/10.5281/zenodo.7855581",
       "doi": "10.5281/zenodo.7855581",
       "docs_path": "papers/2023_AntsAging/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 59,
@@ -827,7 +943,9 @@
       "url": "https://doi.org/10.31222/osf.io/9nb3u",
       "doi": "10.31222/osf.io/9nb3u",
       "docs_path": "papers/2023_OpenScienceSensemaking/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 60,
@@ -841,7 +959,9 @@
       "url": "https://doi.org/10.5281/zenodo.8377987",
       "doi": "10.5281/zenodo.8377987",
       "docs_path": "papers/2023_PostdocReview/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 61,
@@ -855,7 +975,9 @@
       "url": "https://doi.org/10.5281/zenodo.8266280",
       "doi": "10.5281/zenodo.8266280",
       "docs_path": "papers/2023_AII_v1/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 62,
@@ -869,7 +991,9 @@
       "url": "https://doi.org/10.5281/zenodo.10034511",
       "doi": "10.5281/zenodo.10034511",
       "docs_path": "papers/2023_P3IF/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 63,
@@ -883,7 +1007,9 @@
       "url": "https://doi.org/10.1016/j.plrev.2023.06.002",
       "doi": "10.1016/j.plrev.2023.06.002",
       "docs_path": "papers/2023_ToComment/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 64,
@@ -897,7 +1023,9 @@
       "url": "https://doi.org/10.5281/zenodo.10447642",
       "doi": "10.5281/zenodo.10447642",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 65,
@@ -911,7 +1039,9 @@
       "url": "https://doi.org/10.5281/zenodo.7514367",
       "doi": "10.5281/zenodo.7514367",
       "docs_path": "papers/2023_BlakeFuller/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 66,
@@ -925,7 +1055,9 @@
       "url": "https://doi.org/10.5281/zenodo.6320574",
       "doi": "10.5281/zenodo.6320574",
       "docs_path": "papers/2022_ActiveInferenceOntology/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 67,
@@ -939,7 +1071,9 @@
       "url": "https://doi.org/10.5281/zenodo.7443847",
       "doi": "10.5281/zenodo.7443847",
       "docs_path": "papers/2022_ActiveDiffusion/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 68,
@@ -953,7 +1087,9 @@
       "url": "https://doi.org/10.48550/arXiv.2205.06345",
       "doi": "10.48550/arXiv.2205.06345",
       "docs_path": "papers/2022_StigmergicAnnotation/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 69,
@@ -967,7 +1103,9 @@
       "url": "https://doi.org/10.5281/zenodo.7394900",
       "doi": "10.5281/zenodo.7394900",
       "docs_path": "papers/2022_FreeWillSapolsky/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 70,
@@ -981,7 +1119,9 @@
       "url": "https://doi.org/10.5281/zenodo.7377255",
       "doi": "10.5281/zenodo.7377255",
       "docs_path": "papers/2022_MirrorTest/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 71,
@@ -995,7 +1135,9 @@
       "url": "https://cogsec.org",
       "doi": "",
       "docs_path": "papers/2022_InformationCommons/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 72,
@@ -1009,7 +1151,9 @@
       "url": "https://doi.org/10.5281/zenodo.7626768",
       "doi": "10.5281/zenodo.7626768",
       "docs_path": "papers/2022_HypercertEcosystems/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 73,
@@ -1023,7 +1167,9 @@
       "url": "https://doi.org/10.5281/zenodo.7449367",
       "doi": "10.5281/zenodo.7449367",
       "docs_path": "papers/2022_SystematicLiteratureAnalysis/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 74,
@@ -1037,7 +1183,9 @@
       "url": "https://doi.org/10.5281/zenodo.7093836",
       "doi": "10.5281/zenodo.7093836",
       "docs_path": "papers/2022_TrustFinder/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 75,
@@ -1051,7 +1199,9 @@
       "url": "https://doi.org/10.3389/fnbeh.2021.647732",
       "doi": "10.3389/fnbeh.2021.647732",
       "docs_path": "papers/2021_ActiveInferants/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 76,
@@ -1065,7 +1215,9 @@
       "url": "https://doi.org/10.5281/zenodo.5750934",
       "doi": "10.5281/zenodo.5750934",
       "docs_path": "papers/2021_ModelingConflict/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 77,
@@ -1079,7 +1231,9 @@
       "url": "https://doi.org/10.5281/zenodo.5573946",
       "doi": "10.5281/zenodo.5573946",
       "docs_path": "papers/2021_DigitalRhetorical/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 78,
@@ -1093,7 +1247,9 @@
       "url": "https://innovatorsdigitalplaybook.com/",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 79,
@@ -1107,7 +1263,9 @@
       "url": "https://cogsec.org",
       "doi": "",
       "docs_path": "papers/2021_NarrativeEcosystems/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 80,
@@ -1121,7 +1279,9 @@
       "url": "https://doi.org/10.5281/zenodo.5565577",
       "doi": "10.5281/zenodo.5565577",
       "docs_path": "papers/2021_NarrativeInformationMgmt/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 81,
@@ -1135,7 +1295,9 @@
       "url": "https://doi.org/10.5281/zenodo.4579413",
       "doi": "10.5281/zenodo.4579413",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 82,
@@ -1149,7 +1311,9 @@
       "url": "https://doi.org/10.5281/zenodo.4021162",
       "doi": "10.5281/zenodo.4021162",
       "docs_path": "papers/2020_BehaviorEngineering/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 83,
@@ -1163,7 +1327,9 @@
       "url": "https://www.udemy.com/course/communication-for-remote-teams/",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 84,
@@ -1177,7 +1343,9 @@
       "url": "https://doi.org/10.1016/j.yhbeh.2020.104757",
       "doi": "10.1016/j.yhbeh.2020.104757",
       "docs_path": "papers/2020_DistributedPhysiology/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 85,
@@ -1191,7 +1359,9 @@
       "url": "https://doi.org/10.5281/zenodo.3986084",
       "doi": "10.5281/zenodo.3986084",
       "docs_path": "papers/2020_EmergentTeams/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 86,
@@ -1205,7 +1375,9 @@
       "url": "https://doi.org/10.1038/s42003-020-0813-8",
       "doi": "10.1038/s42003-020-0813-8",
       "docs_path": "papers/2020_GeneExpressionForagers/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 87,
@@ -1219,7 +1391,9 @@
       "url": "https://www.udemy.com/course/keybase-for-remote-teams/",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 88,
@@ -1233,7 +1407,9 @@
       "url": "https://doi.org/10.1007/s00216-019-02355-3",
       "doi": "10.1007/s00216-019-02355-3",
       "docs_path": "papers/2020_NeurotransmitterVariation/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 89,
@@ -1247,7 +1423,9 @@
       "url": "https://cogsec.org",
       "doi": "",
       "docs_path": "papers/2020_GreatPreset/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 90,
@@ -1261,7 +1439,9 @@
       "url": "https://doi.org/10.5281/zenodo.4383229",
       "doi": "10.5281/zenodo.4383229",
       "docs_path": "papers/2020_InnovatorsCatechism/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 91,
@@ -1275,7 +1455,9 @@
       "url": "https://doi.org/10.34700/8pg4-0h12",
       "doi": "10.34700/8pg4-0h12",
       "docs_path": "papers/2020_NeuroscienceDecision/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 92,
@@ -1289,7 +1471,9 @@
       "url": "https://doi.org/10.34700/7gkw-zh08",
       "doi": "10.34700/7gkw-zh08",
       "docs_path": "papers/2019_DennettExplained/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 93,
@@ -1303,7 +1487,9 @@
       "url": "http://purl.stanford.edu/pb813wm1484",
       "doi": "",
       "docs_path": "papers/2019_PhDDissertation/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 94,
@@ -1317,7 +1503,9 @@
       "url": "https://doi.org/10.1007/s11229-019-02130-y",
       "doi": "10.1007/s11229-019-02130-y",
       "docs_path": "papers/2019_AntConsciousness/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 95,
@@ -1331,7 +1519,9 @@
       "url": "https://doi.org/10.1038/s41598-019-41586-3",
       "doi": "10.1038/s41598-019-41586-3",
       "docs_path": "papers/2019_ForagerHydration/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 96,
@@ -1345,7 +1535,9 @@
       "url": "https://doi.org/10.1371/journal.pone.0202117",
       "doi": "10.1371/journal.pone.0202117",
       "docs_path": "papers/2018_ArgentineAnt/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 97,
@@ -1359,7 +1551,9 @@
       "url": "https://doi.org/10.5281/zenodo.13999298",
       "doi": "10.5281/zenodo.13999298",
       "docs_path": "papers/2018_MVEE/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 98,
@@ -1373,7 +1567,9 @@
       "url": "https://doi.org/10.34700/h460-nz89",
       "doi": "10.34700/h460-nz89",
       "docs_path": "papers/2018_WoodliceAndMen/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 99,
@@ -1387,7 +1583,9 @@
       "url": "https://doi.org/10.3390/arts7030039",
       "doi": "10.3390/arts7030039",
       "docs_path": "papers/2018_PPPiP/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 100,
@@ -1401,7 +1599,9 @@
       "url": "https://doi.org/10.1016/j.isci.2018.09.001",
       "doi": "10.1016/j.isci.2018.09.001",
       "docs_path": "papers/2018_DopamineForaging/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 101,
@@ -1415,7 +1615,9 @@
       "url": "https://doi.org/10.1016/j.cell.2017.07.046",
       "doi": "10.1016/j.cell.2017.07.046",
       "docs_path": "papers/2017_MutAnts/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 102,
@@ -1429,7 +1631,9 @@
       "url": "https://doi.org/10.1111/mec.13964",
       "doi": "10.1111/mec.13964",
       "docs_path": "papers/2017_TwoLineages/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 103,
@@ -1443,7 +1647,9 @@
       "url": "https://doi.org/10.1146/annurev-neuro-070815-013927",
       "doi": "10.1146/annurev-neuro-070815-013927",
       "docs_path": "papers/2016_AntGenetics/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 104,
@@ -1457,7 +1663,9 @@
       "url": "https://doi.org/10.1098/rspb.2016.0841",
       "doi": "10.1098/rspb.2016.0841",
       "docs_path": "papers/2016_ForagingGene/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 105,
@@ -1471,7 +1679,9 @@
       "url": "https://doi.org/10.3109/09553002.2016.1144941",
       "doi": "10.3109/09553002.2016.1144941",
       "docs_path": "papers/2016_NuclearStructure/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 106,
@@ -1485,7 +1695,9 @@
       "url": "https://doi.org/10.3389/fgene.2015.00261",
       "doi": "10.3389/fgene.2015.00261",
       "docs_path": "papers/2015_CryptoJews/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 107,
@@ -1499,7 +1711,9 @@
       "url": "https://doi.org/10.1016/j.mehy.2015.09.015",
       "doi": "10.1016/j.mehy.2015.09.015",
       "docs_path": "papers/2015_EhrlichialInfection/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 108,
@@ -1513,7 +1727,9 @@
       "url": "https://doi.org/10.1093/molbev/msu292",
       "doi": "10.1093/molbev/msu292",
       "docs_path": "papers/2015_HoneyBeeEvolution/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 109,
@@ -1527,7 +1743,9 @@
       "url": "https://doi.org/10.5281/zenodo.19574117",
       "doi": "10.5281/zenodo.19574117",
       "docs_path": "papers/2026_EntoLinguistics/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 110,
@@ -1541,7 +1759,9 @@
       "url": "https://doi.org/10.5281/zenodo.19461933",
       "doi": "10.5281/zenodo.19461933",
       "docs_path": "papers/2026_ActInfMetaAnalysis/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 111,
@@ -1555,7 +1775,9 @@
       "url": "https://doi.org/10.1007/978-3-032-16955-6_11",
       "doi": "10.1007/978-3-032-16955-6_11",
       "docs_path": "papers/2026_FocusedAttentionMeditation/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 112,
@@ -1569,7 +1791,9 @@
       "url": "https://doi.org/10.5281/zenodo.19695259",
       "doi": "10.5281/zenodo.19695259",
       "docs_path": "papers/2026_CognitiveCaseDiagrams/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 113,
@@ -1583,7 +1807,9 @@
       "url": "https://doi.org/10.5281/zenodo.19699233",
       "doi": "10.5281/zenodo.19699233",
       "docs_path": "papers/2026_FEPLean/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 114,
@@ -1597,7 +1823,9 @@
       "url": "https://doi.org/10.5281/zenodo.4062540",
       "doi": "10.5281/zenodo.4062540",
       "docs_path": "papers/2020_FacilitatorsCatechism/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 115,
@@ -1611,7 +1839,9 @@
       "url": "https://doi.org/10.5281/zenodo.20144983",
       "doi": "10.5281/zenodo.20144983",
       "docs_path": "papers/2026_BlakeJiang/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 116,
@@ -1625,7 +1855,9 @@
       "url": "https://doi.org/10.5281/zenodo.20286170",
       "doi": "10.5281/zenodo.20286170",
       "docs_path": "papers/2026_CrescentCity/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 117,
@@ -1639,7 +1871,9 @@
       "url": "https://doi.org/10.5281/zenodo.20286477",
       "doi": "10.5281/zenodo.20286477",
       "docs_path": "papers/2026_BiologyTextbook/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 119,
@@ -1653,7 +1887,9 @@
       "url": "https://doi.org/10.5281/zenodo.20418904",
       "doi": "10.5281/zenodo.20418904",
       "docs_path": "papers/2026_PolicyEntanglementActive/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 120,
@@ -1667,7 +1903,9 @@
       "url": "https://doi.org/10.5281/zenodo.20417016",
       "doi": "10.5281/zenodo.20417016",
       "docs_path": "papers/2026_BoundedAutoResearchTiny/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 121,
@@ -1681,7 +1919,9 @@
       "url": "https://doi.org/10.5281/zenodo.20417136",
       "doi": "10.5281/zenodo.20417136",
       "docs_path": "papers/2026_ConvergenceAnalysisGradient/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 122,
@@ -1695,7 +1935,9 @@
       "url": "https://doi.org/10.5281/zenodo.20417104",
       "doi": "10.5281/zenodo.20417104",
       "docs_path": "papers/2026_EditorialQualityAt/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 123,
@@ -1709,7 +1951,9 @@
       "url": "https://doi.org/10.5281/zenodo.20419007",
       "doi": "10.5281/zenodo.20419007",
       "docs_path": "papers/2026_TemplateApproachReproducible/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 124,
@@ -1723,7 +1967,9 @@
       "url": "https://doi.org/10.5281/zenodo.20417021",
       "doi": "10.5281/zenodo.20417021",
       "docs_path": "papers/2026_ActiveInferenceMulti/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 125,
@@ -1737,7 +1983,9 @@
       "url": "https://doi.org/10.5281/zenodo.20420556",
       "doi": "10.5281/zenodo.20420556",
       "docs_path": "papers/2026_BeeStack/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 126,
@@ -1751,7 +1999,9 @@
       "url": "https://doi.org/10.5281/zenodo.20450880",
       "doi": "10.5281/zenodo.20450880",
       "docs_path": "papers/2026_WhenDoBugs/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 127,
@@ -1765,7 +2015,9 @@
       "url": "https://doi.org/10.5281/zenodo.20453879",
       "doi": "10.5281/zenodo.20453879",
       "docs_path": "papers/2026_SelfImprovementAgent/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 128,
@@ -1779,7 +2031,9 @@
       "url": "https://doi.org/10.5281/zenodo.14861596",
       "doi": "10.5281/zenodo.14861596",
       "docs_path": "papers/2025_BiofirmDevelopmentWith/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 129,
@@ -1793,7 +2047,9 @@
       "url": "https://doi.org/10.5281/zenodo.13626536",
       "doi": "10.5281/zenodo.13626536",
       "docs_path": "papers/2025_ConCatEnate/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 130,
@@ -1807,7 +2063,9 @@
       "url": "https://doi.org/10.5281/zenodo.14737156",
       "doi": "10.5281/zenodo.14737156",
       "docs_path": "papers/2025_Graphspeak/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 131,
@@ -1821,7 +2079,9 @@
       "url": "https://doi.org/10.5281/zenodo.14737075",
       "doi": "10.5281/zenodo.14737075",
       "docs_path": "papers/2025_BevCycPositPrimitive/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 132,
@@ -1835,7 +2095,9 @@
       "url": "https://doi.org/10.5281/zenodo.14737059",
       "doi": "10.5281/zenodo.14737059",
       "docs_path": "papers/2025_BeaconsPreEmulation/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 133,
@@ -1849,7 +2111,9 @@
       "url": "https://doi.org/10.5281/zenodo.14737042",
       "doi": "10.5281/zenodo.14737042",
       "docs_path": "papers/2025_ConCatEnate2/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 134,
@@ -1863,7 +2127,9 @@
       "url": "https://doi.org/10.5281/zenodo.10659374",
       "doi": "10.5281/zenodo.10659374",
       "docs_path": "papers/2024_PushPull/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 135,
@@ -1877,7 +2143,9 @@
       "url": "https://doi.org/10.5281/zenodo.10360056",
       "doi": "10.5281/zenodo.10360056",
       "docs_path": "papers/2023_NaturalAIBased/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 136,
@@ -1891,7 +2159,9 @@
       "url": "https://doi.org/10.5281/zenodo.10362561",
       "doi": "10.5281/zenodo.10362561",
       "docs_path": "papers/2023_ATLAS2/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 137,
@@ -1905,7 +2175,9 @@
       "url": "https://doi.org/10.5281/zenodo.8228934",
       "doi": "10.5281/zenodo.8228934",
       "docs_path": "papers/2023_TranscriptActiveInference/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 138,
@@ -1919,7 +2191,9 @@
       "url": "https://doi.org/10.5281/zenodo.8118155",
       "doi": "10.5281/zenodo.8118155",
       "docs_path": "papers/2023_ModernNostrIndex/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 139,
@@ -1933,7 +2207,9 @@
       "url": "https://doi.org/10.5281/zenodo.7838652",
       "doi": "10.5281/zenodo.7838652",
       "docs_path": "papers/2023_SlidesIris/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 140,
@@ -1947,7 +2223,9 @@
       "url": "https://doi.org/10.5281/zenodo.7400525",
       "doi": "10.5281/zenodo.7400525",
       "docs_path": "papers/2022_CanonicalNeuralNetworks/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false
     },
     {
       "num": 141,
@@ -1961,7 +2239,9 @@
       "url": "https://doi.org/10.5281/zenodo.7400708",
       "doi": "10.5281/zenodo.7400708",
       "docs_path": "papers/2022_InteroceptionAsModeling/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false
     },
     {
       "num": 142,
@@ -1975,7 +2255,9 @@
       "url": "https://doi.org/10.5281/zenodo.7259006",
       "doi": "10.5281/zenodo.7259006",
       "docs_path": "papers/2022_Transcript/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 143,
@@ -1989,7 +2271,9 @@
       "url": "https://doi.org/10.5281/zenodo.7400785",
       "doi": "10.5281/zenodo.7400785",
       "docs_path": "papers/2022_WorkedExampleBayesian/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false
     },
     {
       "num": 144,
@@ -2003,7 +2287,9 @@
       "url": "https://doi.org/10.5281/zenodo.7401874",
       "doi": "10.5281/zenodo.7401874",
       "docs_path": "papers/2022_TranscriptDiscussions/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false
     },
     {
       "num": 145,
@@ -2017,7 +2303,9 @@
       "url": "https://doi.org/10.5281/zenodo.6904426",
       "doi": "10.5281/zenodo.6904426",
       "docs_path": "papers/2022_TrackingPublicSensemaking/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 146,
@@ -2031,7 +2319,9 @@
       "url": "https://doi.org/10.5281/zenodo.5797040",
       "doi": "10.5281/zenodo.5797040",
       "docs_path": "papers/2021_Transcript/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 147,
@@ -2045,7 +2335,9 @@
       "url": "https://doi.org/10.5281/zenodo.4624298",
       "doi": "10.5281/zenodo.4624298",
       "docs_path": "papers/2021_CollaborativeWritingCatechism/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 148,
@@ -2059,7 +2351,9 @@
       "url": "https://doi.org/10.5281/zenodo.4170025",
       "doi": "10.5281/zenodo.4170025",
       "docs_path": "papers/2020_ReimaginingMaps/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 149,
@@ -2073,7 +2367,9 @@
       "url": "https://doi.org/10.5281/zenodo.12601674",
       "doi": "10.5281/zenodo.12601674",
       "docs_path": "papers/2020_InfiniteGamesInfinite/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 150,
@@ -2087,7 +2383,9 @@
       "url": "https://doi.org/10.5281/zenodo.20482025",
       "doi": "10.5281/zenodo.20482025",
       "docs_path": "papers/2026_MusicNeverStopped/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 151,
@@ -2101,7 +2399,9 @@
       "url": "https://doi.org/10.5281/zenodo.20533669",
       "doi": "10.5281/zenodo.20533669",
       "docs_path": "papers/2026_DeterministicTestbedSelf/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 152,
@@ -2115,7 +2415,9 @@
       "url": "https://doi.org/10.5281/zenodo.20498699",
       "doi": "10.5281/zenodo.20498699",
       "docs_path": "papers/2026_RecoveringLLMPersona/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 153,
@@ -2129,7 +2431,9 @@
       "url": "https://doi.org/10.5281/zenodo.20533675",
       "doi": "10.5281/zenodo.20533675",
       "docs_path": "papers/2026_Triplicate/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 154,
@@ -2143,7 +2447,9 @@
       "url": "https://doi.org/10.5281/zenodo.20533125",
       "doi": "10.5281/zenodo.20533125",
       "docs_path": "papers/2026_TemplateTextbook/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 155,
@@ -2157,7 +2463,9 @@
       "url": "https://www.science.org/doi/10.1126/science.352.6288.886",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 156,
@@ -2171,7 +2479,9 @@
       "url": "https://doi.org/10.1126/science.352.6288.886",
       "doi": "10.1126/science.352.6288.886",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 157,
@@ -2185,7 +2495,9 @@
       "url": "https://www.science.org/doi/10.1126/science.371.6524.22",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 158,
@@ -2199,7 +2511,9 @@
       "url": "https://doi.org/10.1126/science.371.6524.22",
       "doi": "10.1126/science.371.6524.22",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 159,
@@ -2213,7 +2527,9 @@
       "url": "https://doi.org/10.1007/978-3-031-28719-0_10",
       "doi": "10.1007/978-3-031-28719-0_10",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 160,
@@ -2227,7 +2543,9 @@
       "url": "https://doi.org/10.48550/arXiv.2408.15982",
       "doi": "10.48550/arXiv.2408.15982",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 161,
@@ -2241,7 +2559,9 @@
       "url": "https://doi.org/10.5281/zenodo.5034808",
       "doi": "10.5281/zenodo.5034808",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 162,
@@ -2255,7 +2575,9 @@
       "url": "https://doi.org/10.5281/zenodo.13273682",
       "doi": "10.5281/zenodo.13273682",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 163,
@@ -2269,7 +2591,9 @@
       "url": "",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 164,
@@ -2283,7 +2607,9 @@
       "url": "",
       "doi": "",
       "docs_path": "",
-      "has_paper_folder": false
+      "has_paper_folder": false,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 165,
@@ -2297,7 +2623,9 @@
       "url": "https://doi.org/10.5281/zenodo.20614908",
       "doi": "10.5281/zenodo.20614908",
       "docs_path": "papers/2026_ITrace/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 166,
@@ -2311,7 +2639,9 @@
       "url": "https://doi.org/10.5281/zenodo.20693216",
       "doi": "10.5281/zenodo.20693216",
       "docs_path": "papers/2026_DemoCreate/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 167,
@@ -2325,7 +2655,9 @@
       "url": "https://doi.org/10.5281/zenodo.20396328",
       "doi": "10.5281/zenodo.20396328",
       "docs_path": "papers/2026_ENTO/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 168,
@@ -2339,7 +2671,9 @@
       "url": "https://doi.org/10.5281/zenodo.7803313",
       "doi": "10.5281/zenodo.7803313",
       "docs_path": "papers/2026_GeneralizedNotationNotationGNN/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
     },
     {
       "num": 169,
@@ -2353,7 +2687,9 @@
       "url": "https://doi.org/10.5281/zenodo.20705350",
       "doi": "10.5281/zenodo.20705350",
       "docs_path": "papers/2026_COGANT/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 170,
@@ -2367,7 +2703,9 @@
       "url": "https://doi.org/10.5281/zenodo.20732274",
       "doi": "10.5281/zenodo.20732274",
       "docs_path": "papers/2026_AGEINT/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 171,
@@ -2381,7 +2719,9 @@
       "url": "https://doi.org/10.5281/zenodo.20747834",
       "doi": "10.5281/zenodo.20747834",
       "docs_path": "papers/2026_PolicyDistillationAs/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 172,
@@ -2395,7 +2735,9 @@
       "url": "https://doi.org/10.5281/zenodo.20786638",
       "doi": "10.5281/zenodo.20786638",
       "docs_path": "papers/2026_TemplateMadlib/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 173,
@@ -2409,7 +2751,9 @@
       "url": "https://doi.org/10.5281/zenodo.20789899",
       "doi": "10.5281/zenodo.20789899",
       "docs_path": "papers/2026_CaliforniaPublicRecords/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 174,
@@ -2423,7 +2767,9 @@
       "url": "https://doi.org/10.5281/zenodo.20804585",
       "doi": "10.5281/zenodo.20804585",
       "docs_path": "papers/2026_CogSecSkills/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 175,
@@ -2437,7 +2783,9 @@
       "url": "https://doi.org/10.5281/zenodo.20834846",
       "doi": "10.5281/zenodo.20834846",
       "docs_path": "papers/2026_RealizingEmptiness/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 176,
@@ -2451,7 +2799,9 @@
       "url": "https://doi.org/10.5281/zenodo.20931964",
       "doi": "10.5281/zenodo.20931964",
       "docs_path": "papers/2026_LivingMetaAnalysis/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 177,
@@ -2465,7 +2815,9 @@
       "url": "https://doi.org/10.5281/zenodo.20931955",
       "doi": "10.5281/zenodo.20931955",
       "docs_path": "papers/2026_RefinementGold/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 178,
@@ -2479,7 +2831,9 @@
       "url": "https://doi.org/10.5281/zenodo.20976824",
       "doi": "10.5281/zenodo.20976824",
       "docs_path": "papers/2026_AlphaCOGANT/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 179,
@@ -2493,7 +2847,9 @@
       "url": "https://doi.org/10.5281/zenodo.21047573",
       "doi": "10.5281/zenodo.21047573",
       "docs_path": "papers/2026_MappingWilliamBlake/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 180,
@@ -2507,7 +2863,9 @@
       "url": "https://doi.org/10.5281/zenodo.21083779",
       "doi": "10.5281/zenodo.21083779",
       "docs_path": "papers/2026_SortitionUpstreamNTQR/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 181,
@@ -2521,7 +2879,9 @@
       "url": "https://doi.org/10.5281/zenodo.21086292",
       "doi": "10.5281/zenodo.21086292",
       "docs_path": "papers/2026_ExploratoryDataAnalysis/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 182,
@@ -2535,7 +2895,9 @@
       "url": "https://doi.org/10.5281/zenodo.21086548",
       "doi": "10.5281/zenodo.21086548",
       "docs_path": "papers/2026_DomainLanguageSpecifying/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 183,
@@ -2549,7 +2911,9 @@
       "url": "https://doi.org/10.5281/zenodo.21137276",
       "doi": "10.5281/zenodo.21137276",
       "docs_path": "papers/2026_EntomologicalLaw/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 184,
@@ -2563,7 +2927,9 @@
       "url": "https://doi.org/10.5281/zenodo.21176000",
       "doi": "10.5281/zenodo.21176000",
       "docs_path": "papers/2026_ShapeBetween/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 185,
@@ -2577,7 +2943,9 @@
       "url": "https://doi.org/10.5281/zenodo.21227869",
       "doi": "10.5281/zenodo.21227869",
       "docs_path": "papers/2026_AutopoieticProjectGeneration/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 186,
@@ -2591,7 +2959,9 @@
       "url": "https://doi.org/10.5281/zenodo.21281509",
       "doi": "10.5281/zenodo.21281509",
       "docs_path": "papers/2026_TemplatePitchDeck/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 187,
@@ -2605,7 +2975,9 @@
       "url": "https://doi.org/10.5281/zenodo.21298894",
       "doi": "10.5281/zenodo.21298894",
       "docs_path": "papers/2026_ReproducibleLiteratureSynthesis/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 188,
@@ -2619,7 +2991,9 @@
       "url": "https://doi.org/10.5281/zenodo.21298892",
       "doi": "10.5281/zenodo.21298892",
       "docs_path": "papers/2026_RegisteredReportTemplate/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 189,
@@ -2633,7 +3007,9 @@
       "url": "https://doi.org/10.5281/zenodo.21298890",
       "doi": "10.5281/zenodo.21298890",
       "docs_path": "papers/2026_RedactedReportTemplate/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 190,
@@ -2647,7 +3023,9 @@
       "url": "https://doi.org/10.5281/zenodo.21298888",
       "doi": "10.5281/zenodo.21298888",
       "docs_path": "papers/2026_PoolsRulesTools/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 191,
@@ -2661,7 +3039,9 @@
       "url": "https://doi.org/10.5281/zenodo.21298885",
       "doi": "10.5281/zenodo.21298885",
       "docs_path": "papers/2026_IllegalStatesMostly/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 192,
@@ -2675,7 +3055,9 @@
       "url": "https://doi.org/10.5281/zenodo.21298883",
       "doi": "10.5281/zenodo.21298883",
       "docs_path": "papers/2026_DataDescriptorTemplate/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 193,
@@ -2689,7 +3071,9 @@
       "url": "https://doi.org/10.5281/zenodo.19139089",
       "doi": "10.5281/zenodo.19139089",
       "docs_path": "papers/2026_TemplateApproachReproducible2/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     },
     {
       "num": 194,
@@ -2703,7 +3087,9 @@
       "url": "https://doi.org/10.5281/zenodo.21316510",
       "doi": "10.5281/zenodo.21316510",
       "docs_path": "papers/2026_PriorCognitiveArt/",
-      "has_paper_folder": true
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": true
     }
   ]
 }

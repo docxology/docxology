@@ -43,10 +43,12 @@ function workToPub(work) {
     const url = work.url || '';
     const citationKey = work.citation_key || '';
     const workPage = citationKey ? `/works/${citationKey}.html` : '';
+    const docsPath = work.docs_path ? String(work.docs_path).replace(/\/$/, '') : '';
     const docs =
-        work.has_paper_folder && work.docs_path
-            ? `https://github.com/docxology/docxology/tree/main/${String(work.docs_path).replace(/\/$/, '')}`
+        work.has_paper_folder && docsPath
+            ? `https://github.com/docxology/docxology/tree/main/${docsPath}`
             : '';
+    const fullTextUrl = work.has_full_text && docsPath ? `/${docsPath}/full_text.md` : '';
     return {
         num: work.num,
         year: work.year,
@@ -59,6 +61,9 @@ function workToPub(work) {
         workPage,
         hasDoi: url.startsWith('https://doi.org/'),
         hasDocs: Boolean(work.has_paper_folder && work.docs_path),
+        hasFullText: Boolean(work.has_full_text),
+        hasImages: Boolean(work.has_images),
+        fullTextUrl,
     };
 }
 
@@ -198,6 +203,10 @@ function renderTable() {
                 const docs = p.docs
                     ? ` <a href="${esc(p.docs)}" target="_blank" rel="noopener">Docs</a>`
                     : '';
+                const ft = p.hasFullText
+                    ? ` <a href="${esc(p.fullTextUrl)}" title="Full text extraction">FT</a>`
+                    : '';
+                const img = p.hasImages ? ' <span class="badge-img" title="Has extracted images">🖼</span>' : '';
                 return (
                     '<tr>' +
                     `<td class="td-num">${p.num}</td>` +
@@ -206,7 +215,7 @@ function renderTable() {
                     `<td class="td-type"><span class="type-badge ${typeClass(p.type)}">${esc(p.type)}</span></td>` +
                     `<td class="td-title">${titleCell}</td>` +
                     `<td class="td-venue">${esc(p.venue)}</td>` +
-                    `<td class="td-doi">${primary}${docs}</td>` +
+                    `<td class="td-doi">${primary}${docs}${ft}${img}</td>` +
                     '</tr>'
                 );
             })

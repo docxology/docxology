@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-12T21:43:30Z",
+  "generated_at": "2026-07-12T21:57:21Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 80,
   "warnings": 0,
-  "total_bytes": 11885083,
+  "total_bytes": 11906419,
   "largest": [
     {
       "path": "data/videos.json",
@@ -29,7 +29,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 297085,
+      "bytes": 297103,
       "budget_bytes": 5000000,
       "ok": true
     },
@@ -41,16 +41,16 @@
       "ok": true
     },
     {
-      "path": "data/work-enrichment.json",
+      "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 220438,
+      "bytes": 225129,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
-      "path": "data/resume.json",
+      "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 214470,
+      "bytes": 220438,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -125,6 +125,13 @@
       "ok": true
     },
     {
+      "path": "data/works.json",
+      "kind": "json-data",
+      "bytes": 106040,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
       "path": "og-art-synergetics.jpg",
       "kind": "og-image",
       "bytes": 105555,
@@ -135,13 +142,6 @@
       "path": "og-cognitive-security.jpg",
       "kind": "og-image",
       "bytes": 105437,
-      "budget_bytes": 220000,
-      "ok": true
-    },
-    {
-      "path": "og-domains.jpg",
-      "kind": "og-image",
-      "bytes": 104168,
       "budget_bytes": 220000,
       "ok": true
     }
