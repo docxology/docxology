@@ -81,14 +81,25 @@ def pdf_rows(folder: Path) -> str:
 
 
 def image_gallery_link(folder: Path) -> str:
-    """Return a link to the images/ directory if it contains images."""
+    """Return a link to the images/ directory if it contains images, plus thumbnail previews."""
     images_dir = folder / "images"
     if not images_dir.is_dir():
         return ""
-    count = sum(1 for _ in images_dir.iterdir() if _.is_file() and _.suffix in (".png", ".jpg", ".jpeg", ".gif"))
-    if count == 0:
+    img_files = sorted(
+        [f for f in images_dir.iterdir() if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")],
+        key=lambda f: f.name,
+    )
+    if not img_files:
         return ""
-    return f'<a class="btn btn-outline" href="images/">Extracted Images ({count})</a>'
+    count = len(img_files)
+    # Show up to 6 thumbnail previews
+    thumbs = img_files[:6]
+    thumb_html = '<div class="image-thumbs" style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">'
+    for img in thumbs:
+        thumb_html += f'<a href="images/{img.name}" class="thumb-link"><img src="images/{img.name}" alt="{img.stem}" loading="lazy" style="width:80px;height:80px;object-fit:cover;border-radius:4px;border:1px solid var(--gold-20,#d4a85733)"></a>'
+    thumb_html += "</div>"
+    more = f' <span class="muted">+{count - 6} more</span>' if count > 6 else ""
+    return f'<a class="btn btn-outline" href="images/">Extracted Images ({count})</a>{more}{thumb_html}'
 
 
 def required_links(folder: Path) -> str:
