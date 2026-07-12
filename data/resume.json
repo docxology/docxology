@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T21:57:19Z",
+  "generated_at": "2026-07-12T22:00:45Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -6500,7 +6500,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-12T21:57:18+00:00",
+      "checked_at": "2026-07-12T22:00:45+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6515,7 +6515,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-12T21:57:18+00:00",
+      "checked_at": "2026-07-12T22:00:45+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

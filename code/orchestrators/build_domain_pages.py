@@ -271,6 +271,10 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
     selected = sorted(domain_works, key=lambda w: (int(w["year"]), -int(w["num"])), reverse=True)[:12]
     domain_repos = select_repositories(repos, config.repo_names)
 
+    # Count extraction stats for this domain
+    domain_ft_count = sum(1 for w in domain_works if w.get("has_full_text"))
+    domain_img_count = sum(1 for w in domain_works if w.get("has_images"))
+
     works_html = "\n".join(
         f"""                <article class="work-row">
                     <div class="year">{h(w['year'])}</div>
@@ -322,6 +326,7 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
             <div class="mini-grid">
                 <div class="mini-card"><h2>{len(domain_works)} Works</h2><p>Curated works in this domain from the unified bibliography.</p></div>
                 <div class="mini-card"><h2>{len(domain_repos)} Related Repositories</h2><p>Selected software entries connected to this domain.</p></div>
+                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>{domain_ft_count} of {len(domain_works)} works have extracted full text, {domain_img_count} have image galleries.</p></div>
                 <div class="mini-card"><h2>Collaborator Context</h2><p>{collaborators_html}</p></div>
             </div>
         </section>

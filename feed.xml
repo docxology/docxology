@@ -6,201 +6,201 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 21:57:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 22:00:47 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
     </item>
     <item>
       <title>Prior Cognitive Art</title>
       <link>https://danielarifriedman.com/works/Friedman2026PriorCognitiveArt194.html</link>
       <guid isPermaLink="false">work-Friedman2026PriorCognitiveArt194</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
     <item>
       <title>A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</title>
       <link>https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative193.html</link>
       <guid isPermaLink="false">work-Friedman2026TemplateApproachReproducibleGenerative193</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Data Descriptor Template: Schema, Provenance, and Release Readiness</title>
       <link>https://danielarifriedman.com/works/Friedman2026DataDescriptorTemplateSchema192.html</link>
       <guid isPermaLink="false">work-Friedman2026DataDescriptorTemplateSchema192</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
     <item>
       <title>Illegal States, Mostly Unrepresentable</title>
       <link>https://danielarifriedman.com/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html</link>
       <guid isPermaLink="false">work-Friedman2026IllegalStatesMostlyUnrepresentable191</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Entomology · 2026</description>
     </item>
     <item>
       <title>Pools, Rules, and Tools: A Template-Integrated Resource Architecture</title>
       <link>https://danielarifriedman.com/works/Friedman2026PoolsRulesToolsTemplate190.html</link>
       <guid isPermaLink="false">work-Friedman2026PoolsRulesToolsTemplate190</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
     <item>
       <title>Redacted Report Template: Disclosure Control and Release Audit</title>
       <link>https://danielarifriedman.com/works/Friedman2026RedactedReportTemplateDisclosure189.html</link>
       <guid isPermaLink="false">work-Friedman2026RedactedReportTemplateDisclosure189</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Registered Report Template: Preregistration, Deviations, and Claim Boundaries</title>
       <link>https://danielarifriedman.com/works/Friedman2026RegisteredReportTemplatePreregistration188.html</link>
       <guid isPermaLink="false">work-Friedman2026RegisteredReportTemplatePreregistration188</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference</title>
       <link>https://danielarifriedman.com/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html</link>
       <guid isPermaLink="false">work-Friedman2026ReproducibleLiteratureSynthesisInfrastructure187</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>template_pitch_deck: Reproducible, Validated Pitch-Deck Generation</title>
       <link>https://danielarifriedman.com/works/Friedman2026TemplatePitchDeckReproducible186.html</link>
       <guid isPermaLink="false">work-Friedman2026TemplatePitchDeckReproducible186</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Autopoietic Project Generation</title>
       <link>https://danielarifriedman.com/works/Friedman2026AutopoieticProjectGeneration185.html</link>
       <guid isPermaLink="false">work-Friedman2026AutopoieticProjectGeneration185</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>The Shape Between: A Full-Page Illustrated Storybook Template</title>
       <link>https://danielarifriedman.com/works/Friedman2026ShapeBetweenFullPage184.html</link>
       <guid isPermaLink="false">work-Friedman2026ShapeBetweenFullPage184</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon</title>
       <link>https://danielarifriedman.com/works/Friedman2026EntomologicalLawFieldMap183.html</link>
       <guid isPermaLink="false">work-Friedman2026EntomologicalLawFieldMap183</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>A Domain Language for Specifying Controlled Methods</title>
       <link>https://danielarifriedman.com/works/Friedman2026DomainLanguageSpecifyingControlled182.html</link>
       <guid isPermaLink="false">work-Friedman2026DomainLanguageSpecifyingControlled182</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Exploratory Data Analysis: A Reproducible Notebook Template</title>
       <link>https://danielarifriedman.com/works/Friedman2026ExploratoryDataAnalysisReproducible181.html</link>
       <guid isPermaLink="false">work-Friedman2026ExploratoryDataAnalysisReproducible181</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Sortition Upstream of NTQR</title>
       <link>https://danielarifriedman.com/works/Friedman2026SortitionUpstreamNTQR180.html</link>
       <guid isPermaLink="false">work-Friedman2026SortitionUpstreamNTQR180</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Mapping William Blake&#x27;s Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls</title>
       <link>https://danielarifriedman.com/works/Friedman2026MappingWilliamBlakeS179.html</link>
       <guid isPermaLink="false">work-Friedman2026MappingWilliamBlakeS179</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference</title>
       <link>https://danielarifriedman.com/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html</link>
       <guid isPermaLink="false">work-Friedman2026AlphaCOGANTRecursiveCorporateSelf178</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition</title>
       <link>https://danielarifriedman.com/works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html</link>
       <guid isPermaLink="false">work-Friedman2026RefinementGoldMetallurgicalAnalogy177</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>A Living Meta-Analysis of the Modafinil Literature</title>
       <link>https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisModafinil176.html</link>
       <guid isPermaLink="false">work-Friedman2026LivingMetaAnalysisModafinil176</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction</title>
       <link>https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html</link>
       <guid isPermaLink="false">work-Friedman2026RealizingEmptinessOperationalSurrogates175</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>CogSecSkills: Multiharness Cognitive Security Skill Library</title>
       <link>https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html</link>
       <guid isPermaLink="false">work-Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>California Public Records: A Technical and Legal Reference for the Post-AB 473 Era</title>
       <link>https://danielarifriedman.com/works/Friedman2026CaliforniaPublicRecordsTechnical173.html</link>
       <guid isPermaLink="false">work-Friedman2026CaliforniaPublicRecordsTechnical173</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Cognitive Security · 2026</description>
     </item>
     <item>
       <title>Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts</title>
       <link>https://danielarifriedman.com/works/Friedman2026TemplateMadlibDeterministicToken172.html</link>
       <guid isPermaLink="false">work-Friedman2026TemplateMadlibDeterministicToken172</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>On-Policy Distillation as Active Inference in Finite Variational Models</title>
       <link>https://danielarifriedman.com/works/Friedman2026PolicyDistillationAsActive171.html</link>
       <guid isPermaLink="false">work-Friedman2026PolicyDistillationAsActive171</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
     <item>
       <title>AGEINT: Agentic Intelligence</title>
       <link>https://danielarifriedman.com/works/Friedman2026AGEINTAgenticIntelligence170.html</link>
       <guid isPermaLink="false">work-Friedman2026AGEINTAgenticIntelligence170</guid>
-      <pubDate>Sun, 12 Jul 2026 21:57:21 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2026 22:00:47 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
   </channel>
