@@ -62,10 +62,34 @@ def _json_count(path: str, fallback: int) -> int:
     return value if isinstance(value, int) else fallback
 
 
+def _extraction_counts() -> tuple[int, int, int]:
+    """Return (full_text_count, papers_with_images, total_images) from the filesystem."""
+    papers_dir = REPO_ROOT / "papers"
+    if not papers_dir.is_dir():
+        return (0, 0, 0)
+    ft, pw_img, total = 0, 0, 0
+    for paper_dir in papers_dir.iterdir():
+        if not paper_dir.is_dir():
+            continue
+        if (paper_dir / "full_text.md").is_file():
+            ft += 1
+        images_dir = paper_dir / "images"
+        if images_dir.is_dir():
+            img = sum(
+                1 for f in images_dir.iterdir()
+                if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
+            )
+            if img:
+                pw_img += 1
+                total += img
+    return (ft, pw_img, total)
+
+
 def datasets() -> list[tuple[str, str, str, str]]:
     works_count = _json_count("data/works.json", 154)
     software_count = _json_count("data/software.json", 88)
     video_count = _json_count("data/videos.json", 0)
+    ft_count, pw_img_count, total_img = _extraction_counts()
     return [
     ("works", "Curated Works Bibliography", "data/works.json", f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths."),
     ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
@@ -80,7 +104,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("reconciliation", "Public-Source Reconciliation", "data/reconciliation.json", "Curated local counts compared with public-source indexes."),
     ("current-counts", "Current Counts Snapshot", "data/current-counts.json", "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands."),
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
-    ("full-text-corpus", "Full-Text Extraction Corpus", "papers/", "172 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus images/ subdirectories of extracted figures with inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/."),
+    (f"full-text-corpus", "Full-Text Extraction Corpus", "papers/", f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
     ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),
