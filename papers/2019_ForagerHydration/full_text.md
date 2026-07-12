@@ -2,6 +2,8 @@
 
 > Extracted from `2019_ForagerHydration.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -57,6 +59,8 @@ Received: 5 November 2018
 Accepted: 11 March 2019
 Published: xx xx xxxx
 OPEN
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -283,6 +287,8 @@ Deficit in kilopascals (kPa). Higher values correspond to more desiccating condi
 of foraging trips of hydrated to unhydrated nestmates during each observation period (N = 25 periods across 
 N = 5 colonies). Regression models are plotted for linear (red) and quadratic (blue) fits.
 
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
 ## Page 5
 
 5
@@ -371,6 +377,8 @@ Figure 2.  Differences in colony reproductive success in offspring colonies, a
 (B) survival time, and (C) water loss rate. Box plot reflects the median and 25th and 75th percentile of each 
 distribution.
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 6
@@ -427,6 +435,8 @@ tolerance is also associated with colony reproductive success (Figs 3 and 4). S
 Figure 3.  Differences in the regulation of foraging in dry conditions, associated with time to (A) morbidity, (B) 
 survival time and (C) water loss rate.
 
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
 ## Page 7
 
 7
@@ -470,6 +480,8 @@ colonies) or no offspring (blue) (N = 12 colonies). (B) Color corresponds to
 dry conditions: High foraging in dry conditions (red) (N = 6 colonies), Low foraging in dry conditions (green) 
 (N = 10 cols). Blue shows data from the 8 colonies for which no foraging data were available. Each shaded ellipse 
 outlines the oval that captures 30% of the points for each group.
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 

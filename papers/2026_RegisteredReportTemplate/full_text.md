@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Registered_61a9addb.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -160,6 +162,8 @@ No secondary outcome is preregistered. Any additional endpoint introduced during
 and must be recorded in the deviation ledger (Section 6) rather than presented as a confirmatory finding.
 4
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 4
@@ -200,6 +204,8 @@ Forks replace this generator with genuine data collection while keeping the same
 so the confirmatory analysis remains bound to the frozen plan rather than to post-hoc choices.
 5
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 5
@@ -239,6 +245,8 @@ observed difference of 1.003 and the dotted line its mirror image. The annotatio
 shuffles at least as extreme, a two-sided p-value of 0.0005, and alpha = 0.05. The observed statistic sits outside
 the entire null, which is why the primary confirmatory claim holds.
 6
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
@@ -307,6 +315,8 @@ Reading the register
 The register is the mechanism that keeps Section 5 honest: the confirmatory claim is restricted to the registered
 primary_score outcome, and the exploratory secondary_score endpoint is visible, labelled, and excluded from
 8
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 

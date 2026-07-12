@@ -45,12 +45,12 @@
     },
     "paired_publications": {
       "already_reviewed": 0,
-      "create_new": 1,
-      "github_releases": 9,
-      "needs_review": 62,
-      "pairs": 69,
-      "strong_pairs": 7,
-      "update_existing": 6,
+      "create_new": 0,
+      "github_releases": 175,
+      "needs_review": 335,
+      "pairs": 375,
+      "strong_pairs": 40,
+      "update_existing": 40,
       "zenodo_records": 128
     },
     "paper_folder_docs": 176,
@@ -74,7 +74,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-07-12T18:43:12+00:00",
+  "generated_at": "2026-07-12T20:13:59+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

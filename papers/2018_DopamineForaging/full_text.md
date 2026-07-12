@@ -2,6 +2,8 @@
 
 > Extracted from `2018_DopamineForaging.pdf`
 
+> 13 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -79,6 +81,8 @@ colony depends on task allocation [2,3,8,9]. Colonies operate without central
 License http://creativecommons.org/licenses/by/4.0/, which permits unrestricted use, provided the original
 author and source are credited.
  Downloaded from https://royalsocietypublishing.org/ on 09 June 2022
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -506,6 +510,26 @@ Proc. R. Soc. B 283: 20160841
 4
  Downloaded from https://royalsocietypublishing.org/ on 09 June 2022
 
+![page4_img3.jpeg](images/page4_img3.jpeg)
+
+![page4_img10.jpeg](images/page4_img10.jpeg)
+
+![page4_img12.jpeg](images/page4_img12.jpeg)
+
+![page4_img14.jpeg](images/page4_img14.jpeg)
+
+![page4_img28.jpeg](images/page4_img28.jpeg)
+
+![page4_img31.jpeg](images/page4_img31.jpeg)
+
+![page4_img32.jpeg](images/page4_img32.jpeg)
+
+![page4_img42.jpeg](images/page4_img42.jpeg)
+
+![page4_img49.png](images/page4_img49.png)
+
+![page4_img58.jpeg](images/page4_img58.jpeg)
+
 ## Page 5
 
 patrollers and foragers) revealed significant differences in gene
@@ -673,6 +697,8 @@ Proc. R. Soc. B 283: 20160841
 5
  Downloaded from https://royalsocietypublishing.org/ on 09 June 2022
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
 ## Page 6
 
 Our field results demonstrate an increase in foraging
@@ -837,6 +863,8 @@ rspb.royalsocietypublishing.org
 Proc. R. Soc. B 283: 20160841
 6
  Downloaded from https://royalsocietypublishing.org/ on 09 June 2022
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
 
 ## Page 7
 

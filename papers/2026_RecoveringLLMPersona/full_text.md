@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Recovering_e1196698.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -486,6 +488,8 @@ bearish→label b). Each scenario carries an authored truth — the defensible c
 scenarios are clear-cut; six are deliberately ambiguous (mixed signals) so the personas’ dispositions pull their calls apart.
 6
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 The deck is deliberately not balanced. The authored prevalence is 40 bullish, 24 bearish — true prevalence of
@@ -781,11 +785,15 @@ shows validation-only true accuracies, while the right panel shows how much the 
 by.
 11
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 Figure 3: The same recovery as a scatter of recovered vs. true accuracy: points on the diagonal have zero error. For the
 evaluable model the terms sit near the line (recovery MAE 0.012).
 12
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -863,6 +871,8 @@ mistral:latest
 —
 yes
 13
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -1162,6 +1172,10 @@ parseable calls never varied — which carries no error signal and makes the err
 free read-out of which ensembles are unevaluable.
 16
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 Figure 7: Prompt compliance for the persona-scenario grid. Dark green cells were valid on the first schema-constrained
@@ -1174,6 +1188,10 @@ Bar height is final parse rate; E marks a model whose final vote matrix was al-
 gebraically evaluable.
 17
 
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
+
 ## Page 19
 
 Figure 9: Per-judge modal-vote concentration (x, low = every judge varies) against ensemble mean pairwise disagreement
@@ -1184,12 +1202,18 @@ the fraction of parsed persona/model calls that were bullish; marker color is th
 0.5 are the hard or intentionally mixed cases that create useful variation.
 18
 
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
+
 ## Page 20
 
 Figure 11: Scorecard: unsupervised recovery MAE for each evaluable model (lower is better), drawn against the “excellent”
 (0.05) and sampling-noise-floor (0.102) reference lines. the five evaluable models sit at recovery MAE 0.012, within the
 0.102 sampling-noise floor.
 19
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -1244,6 +1268,8 @@ The scaling is not an artifact of one ensemble. Repeating the convergence fit ac
 ideal −0.5 (tbl. 11), so the sampling-noise-limited behaviour is a property of the algebra, not of the particular judges we
 chose.
 20
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -1323,6 +1349,8 @@ This sharpens the safety claim honestly: the imaginary-prevalence alarm is a su�
 violated error-independence, but it is not necessary — the most realistic LLM failure, positively-correlated errors from
 21
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 shared pre-training, is exactly the regime it can miss. The per-judge evaluability diagnostic (sec. 3.8) and this alarm are
@@ -1366,6 +1394,8 @@ Mean prevalence error
 Figure 14: The better-than-random tie-break is flawless for strong judges and inverts as the ensemble approaches random:
 catastrophic mirror-selection climbs from 0% to 85% and the mean prevalence error rises with it.
 22
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -1472,6 +1502,8 @@ near-random, one panel per prevalence. EI is lower while judges are strong, then
 inverts; MV stays bounded throughout.
 23
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 4.10
@@ -1523,6 +1555,8 @@ PASS
 Figure 16: Validation matrix for the statistical claims. Green rows are checks that passed against the generated artifacts;
 the evidence labels show the actual thresholds or counts used by each check.
 24
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 

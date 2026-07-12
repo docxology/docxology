@@ -2,6 +2,8 @@
 
 > Extracted from `2026_DoorsOfPerception.pdf`
 
+> 10 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.18600041
 February 12, 2026
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -1208,6 +1212,8 @@ tion with modular cognition (Jerusalem & Zoas/Shared & Factorized Models). Color
 themes; each correspondence is developed in a dedicated subsection below.
 19
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 6.1
@@ -1374,6 +1380,8 @@ inference occurs. Cleansing the doors corresponds to optimizing the model’s pr
 5), not to eliminating the boundary itself.
 23
 
+![page23_img1.png](images/page23_img1.png)
+
 ## Page 24
 
 6.2
@@ -1508,6 +1516,8 @@ column: Active Inference processing levels. Ascending arrows indicate increasing
 precision integration. Source: Letter to Thomas Butts, 22 November 1802 [Blake, 1802].
 26
 
+![page26_img1.png](images/page26_img1.png)
+
 ## Page 27
 
 6.3
@@ -1594,6 +1604,8 @@ personal mood but a composite model configuration—a particular factorization o
 action policies that many agents can share. “Twenty-seven Churches” names a discrete, enumerable state-
 space: Satan and Adam are not persons but attractors in model-space, recurring configurations that agents
 28
+
+![page28_img1.png](images/page28_img1.png)
 
 ## Page 29
 
@@ -1872,6 +1884,8 @@ compression of temporal scales—“Every Time less than a pulsation of the arte
 each level encodes trajectories of the level below, and “Eternity is in love with the productions of time”
 (Marriage of Heaven and Hell, Proverbs of Hell [Blake, 1988b]).
 35
+
+![page35_img1.png](images/page35_img1.png)
 
 ## Page 36
 
@@ -2265,6 +2279,8 @@ cycle’s continuous operation corresponds to Blake’s vision of perpetual crea
 System. or be enslav’d by another Mans” (Jerusalem, Plate 10 [Blake, 1988i]).
 44
 
+![page44_img1.png](images/page44_img1.png)
+
 ## Page 45
 
 6.8
@@ -2321,6 +2337,8 @@ its own Markov blanket, contribute to and draw from a shared generative model (�
 The “Mental Fight” zone represents the active process of model-building and coordination through which
 individual inference aligns with collective priors (Equation 21).
 46
+
+![page46_img1.png](images/page46_img1.png)
 
 ## Page 47
 
@@ -2509,6 +2527,8 @@ appear when any single component tyrannizes. “Perfect Unity” requires the �
 four modes (Equation 22).
 50
 
+![page50_img1.png](images/page50_img1.png)
+
 ## Page 51
 
 Figure 9:
@@ -2540,6 +2560,8 @@ Zoas though Blake expresses them through narrative action rather than explicit f
 Tharmas represents embodiment—the “vegetal” instinctual life, interoceptive inference about the body’s
 state. Blake dramatizes Tharmas’s devastation when separated from the other Zoas:
 51
+
+![page51_img1.jpeg](images/page51_img1.jpeg)
 
 ## Page 52
 

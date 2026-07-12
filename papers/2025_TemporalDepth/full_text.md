@@ -2,6 +2,8 @@
 
 > Extracted from `2025_TemporalDepth.pdf`
 
+> 10 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -98,6 +100,18 @@ third version of the guidelines for the treatment of dissociative disorders, rep
 significantly impair patients’ functioning and present considerable risk – 67 percent of the 
 patients diagnosed with DDs reported a history of repeated suicide attempts (International 
 Society for the Study of Trauma and Dissociation, 2011).
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
+
+![page1_img4.jpeg](images/page1_img4.jpeg)
+
+![page1_img5.jpeg](images/page1_img5.jpeg)
+
+![page1_img6.jpeg](images/page1_img6.jpeg)
 
 ## Page 2
 
@@ -522,6 +536,8 @@ FIGURE 1
 TAME cognitive light cone in agents ranging from a single cell organism to humans. TAME light cone is a measure of the biggest goal that an agent can 
 pursue in space and in time. Reprinted with permission from Levin (2022).
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
 ## Page 6
 
 Tolchinsky et al.
@@ -591,6 +607,8 @@ FIGURE 2
 Structure of a Markov blanket as described by the FEP. Formally, a Markov blanket is a set of “boundary” states that separate the “internal” states of 
 some system of interest – here, a brain – from the states of its environment. All interactions between the two must pass through, and hence 
 be mediated by, the Markov blanket. Reprinted with permission from Ramstead (2023).
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
 
 ## Page 7
 
@@ -1160,6 +1178,10 @@ FIGURE 4
 One of the possible attractor landscapes in DID. Here the local 
 minima corresponding to Alters are surrounded by a deeper, global 
 minimum corresponding to a coherent Self.
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
+![page11_img2.jpeg](images/page11_img2.jpeg)
 
 ## Page 12
 

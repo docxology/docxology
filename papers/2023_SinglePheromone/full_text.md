@@ -2,6 +2,8 @@
 
 > Extracted from `2023_SinglePheromone.pdf`
 
+> 10 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -81,6 +83,10 @@ Cognitive Systems Research
 journal homepage: www.elsevier.com/locate/cogsys 
 https://doi.org/10.1016/j.cogsys.2023.02.005 
 Received 27 June 2022; Received in revised form 6 December 2022; Accepted 13 February 2023
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
 
 ## Page 2
 
@@ -278,6 +284,8 @@ amplification and preference stages) can be expressed as:
 Fig. 1. a. Dussutour et al. Fig. 1, showing the setup of Experiment 1 and 2. b. Dussutour et al. Fig. 2 showing the results of Experiment 1 and 2.  
 E. Saund and D. Ari Friedman
 
+![page3_img1.png](images/page3_img1.png)
+
 ## Page 4
 
 Cognitive Systems Research 80 (2023) 81–89
@@ -386,6 +394,8 @@ circles in the leftmost, zoomed out plot) of 10 and 1, respectively, for phA and
 where large diameter is 1.0 (total preference) and small diameter is 0.5 (no preference). The values depicted as circle sizes were read off from Dussutour Fig. 2. 
 E. Saund and D. Ari Friedman
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 Cognitive Systems Research 80 (2023) 81–89
@@ -393,6 +403,10 @@ Cognitive Systems Research 80 (2023) 81–89
 Fig. 3. Proposed pheromone measurement function M is a power-law amplification of the raw pheromone level ph, subtracting a small base level noise factor, B.  
 Fig. 4. The data of Fig. 2 (derived from Dussutour et al. Fig. 2) under power law sensory amplification using parameter values A = 5.5, B = 0.02, C = 0.25.  
 E. Saund and D. Ari Friedman
+
+![page5_img1.png](images/page5_img1.png)
+
+![page5_img2.png](images/page5_img2.png)
 
 ## Page 6
 
@@ -424,6 +438,10 @@ pheromone measurement for E + F branch. Upper magenta: amplified pheromone measu
 Experiment 1) and E + F vs E (Red, Experiment 2) conditions, plotted over Dussutour et al. Fig. 2. Parameter values were found by manual adjustment and are listed 
 in the Table of Parameter Values, below. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.). 
 E. Saund and D. Ari Friedman
+
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
 
 ## Page 7
 
@@ -518,6 +536,8 @@ Experiments 1 and 2. Simulated branch preference (Red) is plotted on top of Duss
 by numerical optimization to better fit the observed time course of branch preference switching. Optimized parameter values are listed in the table. (For inter­
 pretation of the references to colour in this figure legend, the reader is referred to the web version of this article.) 
 E. Saund and D. Ari Friedman
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
@@ -654,6 +674,8 @@ dexplore
 Fig. 8. One-pheromone model simulations using a common set of parameter values optimized for Dussutour et al.’s Experiments 1, 2, and 4 as provided in their Figs. 
 2 and 10. Parameter values are listed in the table. 
 E. Saund and D. Ari Friedman
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 

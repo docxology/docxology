@@ -2,6 +2,8 @@
 
 > Extracted from `2016_NuclearStructure.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -24,6 +26,34 @@ Submit your article to this journal
 Article views: 38
 View related articles 
 View Crossmark data
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
+![page1_img3.png](images/page1_img3.png)
+
+![page1_img4.png](images/page1_img4.png)
+
+![page1_img5.png](images/page1_img5.png)
+
+![page1_img6.png](images/page1_img6.png)
+
+![page1_img7.png](images/page1_img7.png)
+
+![page1_img8.png](images/page1_img8.png)
+
+![page1_img9.png](images/page1_img9.png)
+
+![page1_img10.png](images/page1_img10.png)
+
+![page1_img11.png](images/page1_img11.png)
+
+![page1_img12.png](images/page1_img12.png)
+
+![page1_img13.jpeg](images/page1_img13.jpeg)
+
+![page1_img14.png](images/page1_img14.png)
 
 ## Page 2
 
@@ -699,6 +729,8 @@ INTERNATIONAL JOURNAL OF RADIATION BIOLOGY
 5
 Downloaded by [University of California, San Diego] at 06:07 14 March 2016
 
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
 ## Page 7
 
 chromosome specific FISH probes can only offer analytical
@@ -787,6 +819,8 @@ be identified when screened with next generation paired-end sequencing (arrows) 
 6
 D.A. FRIEDMAN ET AL.
 Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+![page7_img1.jpeg](images/page7_img1.jpeg)
 
 ## Page 8
 

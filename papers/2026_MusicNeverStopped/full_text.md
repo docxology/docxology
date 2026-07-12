@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Music_2d42bfd0.pdf`
 
+> 36 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -880,6 +882,8 @@ rows assigned to the song, so vertical comparisons within an era are meaningful;
 output/data/figures/. This heatmap is the more conservative companion to the SVD scatter because it exposes
 14
 
+![page14_img1.png](images/page14_img1.png)
+
 ## Page 15
 
 Figure 2: Repertoire concentration: cumulative share of non-segment performance rows by ranked song. Data source:
@@ -889,6 +893,10 @@ Figure 3: Repertoire top-N sensitivity. Data source: bundled performance rows an
 top-N performance share plus minimum, mean, and maximum era-level coverage. Exclusion rule: generic segment
 markers are excluded. Claim class: exploratory sensitivity diagnostic.
 15
+
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
 
 ## Page 16
 
@@ -903,6 +911,10 @@ intervals for Gini and top-decile share. Exclusion rule: song rows exclude gener
 source-derived venue slugs. Claim class: exploratory uncertainty diagnostic, not a causal model.
 16
 
+![page16_img1.png](images/page16_img1.png)
+
+![page16_img2.png](images/page16_img2.png)
+
 ## Page 17
 
 Figure 6: Exploratory repertoire embedding: top non-segment songs are embedded from log era-by-song performance
@@ -910,6 +922,8 @@ counts using centered SVD, then colored by a deterministic k-means-style cluster
 performance rows and era labels. Statistic: SVD coordinates and deterministic clusters. Exclusion rule: generic
 segment markers are excluded. Claim class: exploratory pattern-discovery.
 17
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -951,6 +965,8 @@ thesegment_marker_countsfield ofanalysis_report.json); named improvisational pie
 Jam’ ’ are catalogued songs and are not treated as generic markers. Of the 645 catalogued songs, 445 enter the
 18
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 8: Temporal activity in the archival compendium (n=3341 shows). Data source: bundled show and perfor-
@@ -963,6 +979,10 @@ labels are interpretive overlays and are not ingested rows.
 Claim class: descriptive chronology with contextual
 annotation.
 19
+
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
 
 ## Page 20
 
@@ -1000,6 +1020,8 @@ Figure 16 plots cumulative setlist and lineup functor cardinalities |𝐹setlist
 show index. Both are monotone non-decreasing on the compendium tier, as required. The active-roster presheaf
 20
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 11:
@@ -1013,6 +1035,8 @@ Claim class: descriptive association
 summary.
 21
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 Figure 12: Estimated first-order transition probabilities among the top 25 non-segment songs by performance count.
@@ -1020,6 +1044,8 @@ Data source: ordered bundled performance rows. Statistic: row-stochastic success
 show order. Exclusion rule: generic segment markers are excluded here and compared in Figure 13. Claim class:
 exploratory descriptive model.
 22
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -1031,6 +1057,10 @@ Figure 14: Top 20 non-segment songs by stationary probability under the compendi
 ordered bundled performance rows. Statistic: stationary mass of the row-stochastic first-order transition matrix.
 Exclusion rule: generic segment markers are excluded. Claim class: exploratory model summary.
 23
+
+![page23_img1.png](images/page23_img1.png)
+
+![page23_img2.png](images/page23_img2.png)
 
 ## Page 24
 
@@ -1064,6 +1094,8 @@ Lyric text is deliberately absent; Figure 25 counts theme tags attached to the 5
 rated overlay, and dead.net gap-fill URLs). 80 pointers carry an attributed lyricist; 0 performed songs lack any pointer
 24
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 Figure 16: Cumulative setlist size (purple, left axis) and cumulative lineup roster size (amber, right axis) along the
@@ -1077,6 +1109,10 @@ attribution. Exclusion rule: songs without composer metadata do not contribute c
 audio content is bundled. Claim class: descriptive attribution summary.
 25
 
+![page25_img1.png](images/page25_img1.png)
+
+![page25_img2.png](images/page25_img2.png)
+
 ## Page 26
 
 Figure 18: Show density by calendar year and month. Data source: bundled show dates. Statistic: 294 year-month
@@ -1089,6 +1125,10 @@ vals displayed as horizontal date ranges. Exclusion rule: only explicit interval
 appearances are outside scope. Claim class: descriptive provenance-backed roster summary.
 26
 
+![page26_img1.png](images/page26_img1.png)
+
+![page26_img2.png](images/page26_img2.png)
+
 ## Page 27
 
 Figure 20: Shows per era label in the archival compendium. Data source: bundled show dates and deterministic era
@@ -1099,6 +1139,10 @@ Data source: bundled show dates and curated personnel intervals.
 Statistic: active-member count over 2312 distinct show dates. Exclusion rule: counts use interval coverage on each
 date and are not cumulative roster totals. Claim class: descriptive personnel-time summary.
 27
+
+![page27_img1.png](images/page27_img1.png)
+
+![page27_img2.png](images/page27_img2.png)
 
 ## Page 28
 
@@ -1111,6 +1155,10 @@ ns.json. Data source: bibliography markdown, BibTeX, and archival citation rows.
 total across 6 citation kinds. Exclusion rule: citation rows are metadata pointers; no source text is bundled. Claim
 class: descriptive bibliography-provenance summary.
 28
+
+![page28_img1.png](images/page28_img1.png)
+
+![page28_img2.png](images/page28_img2.png)
 
 ## Page 29
 
@@ -1147,12 +1195,16 @@ value is negative as much as positive: the map records where a claim is merely c
 or boundary-enforcing before prose or figure polish can make it sound stronger than the evidence supports.
 29
 
+![page29_img1.png](images/page29_img1.png)
+
 ## Page 30
 
 Figure 25: Lyric pointer theme tags. Data source: CMU/dead.net/curated lyric pointer metadata only (n=548
 pointers). Statistic: frequency of the top 20 theme tags. Exclusion rule: lyric text is not bundled, parsed, quoted,
 or derived. Claim class: descriptive metadata summary.
 30
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 
@@ -1192,6 +1244,8 @@ coverage); the catalogue is broader than the performed repertoire.
 • Audit reach. The recording date cross-check fires only for Internet Archive identifiers that encode a date
 31
 
+![page31_img1.png](images/page31_img1.png)
+
 ## Page 32
 
 Figure 27: Venue geography for geocoded venues (n=912 in compendium). Data source: bundled venue table plus
@@ -1203,6 +1257,10 @@ collision setlist Jaccard. Exclusion rule: report-only review; compendium venue 
 validation and data-quality diagnostic.
 32
 
+![page32_img1.png](images/page32_img1.png)
+
+![page32_img2.png](images/page32_img2.png)
+
 ## Page 33
 
 Figure 29: Set-position distribution. Data source: bundled ordered performance rows. Statistic: performance-row
@@ -1212,6 +1270,10 @@ Figure 30: Top tour labels by number of shows. Data source: bundled show metadat
 1 displayed tour label bucket(s). Exclusion rule: shows without tour metadata remain in the untagged bucket rather
 than being imputed. Claim class: descriptive coverage-quality summary.
 33
+
+![page33_img1.png](images/page33_img1.png)
+
+![page33_img2.png](images/page33_img2.png)
 
 ## Page 34
 
@@ -1241,6 +1303,8 @@ r archival. The schema, integration, category-theoretic constructions, and valid
 scale.
 34
 
+![page34_img1.png](images/page34_img1.png)
+
 ## Page 35
 
 Figure 32: Song lifespans in the archival compendium.
@@ -1252,6 +1316,10 @@ Figure 33: Release timeline by kind. Data source: bundled release metadata. Stat
 release metadata and do not alter performance counts. Claim class: descriptive discography-context summary.
 35
 
+![page35_img1.png](images/page35_img1.png)
+
+![page35_img2.png](images/page35_img2.png)
+
 ## Page 36
 
 Figure 34: Total mosaic for the archival compendium. Data source: selected registry-backed figures and top-line
@@ -1259,6 +1327,8 @@ report values. Statistic: composite overview selected from the 36 validated figu
 statistical shape, repertoire/transitions, geography, and evidence. Exclusion rule: the mosaic is a summary view;
 standalone figures and raw CSV/JSON exports carry the full panel detail. Claim class: descriptive synthesis.
 36
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 
@@ -1271,6 +1341,10 @@ of 12 claim families by claim class and primary validation-artifact family. Excl
 or removed by this governance layer. Claim class: validation/evidence governance rather than descriptive corpus
 measurement. The full ledger is serialized as JSON and CSV files under “output/reports/“.
 37
+
+![page37_img1.png](images/page37_img1.png)
+
+![page37_img2.png](images/page37_img2.png)
 
 ## Page 38
 

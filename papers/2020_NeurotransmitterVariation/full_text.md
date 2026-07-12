@@ -2,6 +2,8 @@
 
 > Extracted from `2020_NeurotransmitterVariation.pdf`
 
+> 9 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -271,6 +273,8 @@ opposite of separation capillary, approximately 10 μm away
 6169
 Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among...
 
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
 ## Page 4
 
 chemical structures, they are clearly separated using CE
@@ -329,6 +333,8 @@ brain) serotonin, 34 nM (32 pg/brain) octopamine, 59 nM (56 pg/brain)
 dopamine
 6170
 Shin M. et al.
+
+![page4_img1.png](images/page4_img1.png)
 
 ## Page 5
 
@@ -411,6 +417,8 @@ marked. * p < 0.05, ** p < 0.01,
 comparisons test
 6171
 Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among...
+
+![page5_img1.png](images/page5_img1.png)
 
 ## Page 6
 
@@ -507,6 +515,8 @@ with serotonin, octopamine, and tyramine (p < 0.05) whereas dopamine
 was only higher than tyramine in D26 (p < 0.05)
 6172
 Shin M. et al.
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -651,6 +661,8 @@ Tyramine
 106
 6173
 Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among...
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
@@ -868,6 +880,14 @@ ments of neurotransmitters in tis-
 sue.
 6175
 Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among...
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
+![page9_img4.jpeg](images/page9_img4.jpeg)
 
 
 ---

@@ -2,6 +2,8 @@
 
 > Extracted from `2018_WoodliceAndMen.pdf`
 
+> 6 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -95,6 +97,8 @@ will press me on.
  
 Figure 1: A woodlouse (Oniscidea) 
 (original image: http://bit.ly/2nhmDT8)
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -298,6 +302,8 @@ brain and predictive coding theories; precisely
 because they do not consider entropy reduction. 
 “
 ”
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -505,6 +511,8 @@ expected free energy, expected surprise or uncertainty.
 “
 ”
 
+![page10_img2.png](images/page10_img2.png)
+
 ## Page 11
 
 K. Friston – Of woodlice and men 
@@ -606,6 +614,8 @@ The degree to which a prediction error will be expressed
 (and experienced) depends upon its precision. 
 “
 ”
+
+![page12_img3.png](images/page12_img3.png)
 
 ## Page 13
 
@@ -818,6 +828,8 @@ also from a mathematical perspective.
 “
 ”
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 K. Friston – Of woodlice and men 
@@ -922,6 +934,8 @@ break any sentient or inferential machinery without
 breaking both process and precision-based inference. 
 “
 ”
+
+![page18_img3.png](images/page18_img3.png)
 
 ## Page 19
 

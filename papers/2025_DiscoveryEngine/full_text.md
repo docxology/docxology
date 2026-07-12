@@ -2,6 +2,8 @@
 
 > Extracted from `2025_DiscoveryEngine.pdf`
 
+> 8 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -174,6 +176,10 @@ the perceived importance of a finding, but its inherent scientific utility and t
 in a dynamic and multi-faced way. For example, a "Findability & Accessibility" score would
 6
 
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.png](images/page6_img2.png)
+
 ## Page 7
 
 reflect clearly defined components and well-documented data/methods, "Interoperability"
@@ -226,6 +232,8 @@ by transforming the way we interact with and build upon our collective knowledge
 The extracted, attributed components populate the CNM, structured as a heterogeneous
 and hierarchical knowledge graph (Fig. 3). This graph utilizes distinct node types for di-
 8
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -908,6 +916,8 @@ It processes Markdown (.md) files from a KG/ directory via a cnmBuilder.ts utili
 construct a client-side graph representation—the Conceptual Nexus Model (CNM). Key
 28
 
+![page28_img1.jpeg](images/page28_img1.jpeg)
+
 ## Page 29
 
 UI components include: an AgentConsole for simulated agent interactions and workflow
@@ -1037,6 +1047,8 @@ Schema (UCS).
 The template is divided into major modules (e.g., M0: Meta-Information, M1: Core
 32
 
+![page32_img1.jpeg](images/page32_img1.jpeg)
+
 ## Page 33
 
 Claims, M2: Entities & Systems). This organization helps break down the complex task of
@@ -1053,6 +1065,8 @@ from being a static archive, is designed as an active substrate for computationa
 ing, enabling the identification of knowledge gaps and, crucially, facilitating the generation
 of novel "Knowledge Artifacts". These artifacts may represent new hypotheses, proposed
 33
+
+![page33_img1.jpeg](images/page33_img1.jpeg)
 
 ## Page 34
 
@@ -1073,6 +1087,8 @@ The interaction between these archetypes can be visualized as a dynamic graph wh
 core process involves reasoning over the existing knowledge landscape (comprising Concepts,
 Entities, Properties, Methods, and Observations) to identify Knowledge Gaps and, critically,
 34
+
+![page34_img1.jpeg](images/page34_img1.jpeg)
 
 ## Page 35
 
@@ -1096,6 +1112,8 @@ forecasts collapse, Nat Hum Behav 9, 268 (2025), publisher: Nature Publishing Gr
 Tech. Rep. (Pew Research Center, 2024).
 [6] G. Mongillo and M. Tsodyks, Synaptic Theory of Working Memory for Serial Order (2024).
 35
+
+![page35_img1.png](images/page35_img1.png)
 
 ## Page 36
 

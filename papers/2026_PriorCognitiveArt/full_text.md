@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Prior_62aa1d8d.pdf`
 
+> 22 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.21316510
 July 11, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -556,6 +560,8 @@ fig. 3 sketches the fixed-point move. In this framing, a prior is not an object 
 settled organization of perception, action, and boundary maintenance that persists. This is where the argument sits closest to free-energy and
 autopoietic readings of cognition [Friston, 2010, Maturana and Varela, 1980].
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 Figure 2: A prior leads to a hyperprior and then another level, above three exits labeled pragmatic, selection, and self-referential
@@ -588,25 +594,39 @@ as an achievement of the system, the prior-like structure becomes part of what t
 received from a higher level [Kirchhoff et al., 2018, Friston, 2013]. The figure also marks the scope boundary introduced by recent critiques:
 the notation is not enough by itself to settle organismal or cognitive ontology [Bruineberg et al., 2022, Raja et al., 2021].
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Figure 3: Concentric loops connect blanket persistence, environmental viability, and action-perception closure around a prior-like settled
 organization.
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
 Figure 4: Parallel Bayesian and developmental chains show that adding another prior or selector repeats the same deferral shape.
 Figure 5: Candidate prior-like forms pass through a function-and-phylogeny viability filter, leaving a persisting prior form.
 
+![page13_img1.png](images/page13_img1.png)
+
+![page13_img2.png](images/page13_img2.png)
+
 ## Page 14
 
 Figure 6: A joint organization branches into policy, prior-like constraint, and state factors after lambda-decomposition.
 Figure 7: Organism and environment or niche reciprocally shape a central prior-like structure through two-way arrows.
 
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
+
 ## Page 15
 
 Figure 8: A settled system sits inside a model boundary separating internal and external states, with a warning against reading the
 boundary as literal ontology.
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -635,14 +655,20 @@ ordered trace over formal state labels: a question about the prior, exposure of 
 settlement. The figure does not model cognition, sample outcomes, estimate effects, or report performance; it makes the formal state transition
 surface inspectable.
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Figure 10: Perception, inference, action, and policy selection form a clockwise loop with distinct F and G roles.
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
 Figure 11: A qualitative basin shows an initial approximate posterior moving toward a target posterior under a relative variational
 bound.
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
@@ -680,14 +706,20 @@ different timescales but feed back into the same prior-like field. The point is 
 constraint on selection termination: what persists is partly produced by the system-niche loop that selection later filters [Constant et al., 2018,
 Stotz, 2017, Baltieri et al., 2022, Laland et al., 2000].
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 Figure 13: Cellular, organismic, and social panels repeat a fixed-point equation and connect downward through a recurrence operator R.
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
 Figure 14: Candidate sources pass through verification, accepted or rejected layers, and a claim ledger before reaching manuscript and
 formal outputs.
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -727,14 +759,20 @@ chain without explaining why the chain is allowed to terminate.
 phylogeny funnel removes forms that cannot remain available as persisting targets: fragile, miscalibrated, or overfit structures drop out
 of the story. Selection blocks regress by explaining availability through viability rather than placing one more selector behind the filter.
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 Figure 16: Three source registers feed model use, metaphysical use, and biological realization, with the paper’s bounded stance at the
 right.
 
+![page23_img1.png](images/page23_img1.png)
+
 ## Page 24
 
 Figure 17: Organismic action, developmental resources, and cultural inheritance feed a central prior-like field across timescales.
+
+![page24_img1.png](images/page24_img1.png)
 
 ## Page 25
 
@@ -772,6 +810,8 @@ blocking a stronger claim that the notation alone discovers the true edge of an 
 • explanatory_complementarity_matrix.png: The matrix lets each Tinbergen question meet the others without being absorbed by them.
 Diagonal cells name each explanatory mode; off-diagonal cells mark places where coordination is legitimate but reduction is not. The
 regress is not caused by asking several questions. It is caused by collapsing their different jobs into one overburdened answer. The plus
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1203,6 +1243,8 @@ notation rather than project-specific symbols.
 
 Figure 19: Source records connect by arrows to numbered formal claims F1 through F12 in two columns.
 
+![page35_img1.png](images/page35_img1.png)
+
 ## Page 36
 
 Table 2: Glossary for all named symbols used in the formal supplement.
@@ -1416,6 +1458,8 @@ Text-Integrity Checks
 The manuscript treats prose as an artifact surface. Generated tokens do not make the argument true, but they make several kinds of drift
 observable before the paper is rendered. tbl. 3 lists the checks that guard the project contract.
 
+![page37_img1.png](images/page37_img1.png)
+
 ## Page 38
 
 Table 3: Modular text-validation checks for the conceptual manuscript.
@@ -1524,6 +1568,8 @@ checked again at render time.
 ## Page 39
 
 Figure 21: A vertical ladder connects source records, analysis artifacts, injected tokens, rendered manuscript, and validation gates.
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 

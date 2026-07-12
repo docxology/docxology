@@ -2,6 +2,8 @@
 
 > Extracted from `2022_SystematicLiteratureAnalysis.pdf`
 
+> 11 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -142,6 +144,8 @@ using this dataset of open source papers.
 Figure 1. Process overview of the methodology of our pipeline and analysis.
 4
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 For the set of papers on Pubmed, the available metadata was obtained, including title,
@@ -201,6 +205,8 @@ in the paper), # Supplements (number of extra files), # Boxes (number of boxes i
 the file).
 6
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 Citation network analysis
@@ -241,6 +247,8 @@ dataset were from 2013, and all included Karl J. Friston as an author. Shifting 
 perspective from highly cited papers to highly cited first authors (Figure 5) reveals that the
 8
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 three most highly cited first authors were Karl J. Friston, Rick A. Adams, and Harriet R.
@@ -251,6 +259,8 @@ increasing in proportion to the wavelength of the color in the visible spectrum 
 is the highest). (a) The first eight rows sorted by citations per year (b) The first six rows sorted by number of
 citations
 9
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -274,6 +284,8 @@ publications with the highest number of citations per year (Figure 7). The paper
 highest number of citations per year were all published between 2018-2020 (Figure 7).
 10
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 Figure 6: First Author Citations per Year. The average number of citations per year was calculated for each first
@@ -286,6 +298,10 @@ proportion
 to the wavelength of the color in the visible spectrum (i.e. purple is the lowest and red is the
 highest). (a) The first eight rows sorted by Citations. (b) The first six rows are sorted by Citations per Year
 11
+
+![page11_img1.png](images/page11_img1.png)
+
+![page11_img2.png](images/page11_img2.png)
 
 ## Page 12
 
@@ -304,6 +320,8 @@ DOI), columns are terms in the Active Inference Ontology, and cells are red prop
 in the paper.
 12
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 Figure 9. Term use over time. The terms from the active inference ontology were cataloged within each
@@ -316,6 +334,10 @@ Figure 10. Heatmap of Ontology terms. Columns are papers (identified by content 
 clustered ontology terms (K=30 clustering). Cells are colored according to their use in the paper, ranging from
 zero uses (purple) to 394 uses (yellow).
 13
+
+![page13_img1.png](images/page13_img1.png)
+
+![page13_img2.png](images/page13_img2.png)
 
 ## Page 14
 
@@ -366,6 +388,8 @@ from normal, Bayes-optimal action and perception- specifically as a reduction in
 precision of beliefs relative to sensory evidence. In the work of Adams et al. (2013b), motor
 behavior is modeled under the framework of ActInf, with the motor cortex sending
 15
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 

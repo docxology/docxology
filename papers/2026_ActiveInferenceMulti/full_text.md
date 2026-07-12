@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Active_f191b48f.pdf`
 
+> 34 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -39,6 +41,10 @@ Figure 1: Integrity QR strip
 Structured manifest: ../data/transmission_manifest.json
 Figure 2: Publication pairing flow
 Stego: off | overlays text | barcodes on | XMP on | manifest on →./secure_run.sh
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
 
 ## Page 2
 
@@ -263,6 +269,8 @@ Appendix row 16_appendix_full_sheaf.md binds 33 fragment track types as a compos
 optional layers is methods-only).
 3
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 2
@@ -327,6 +335,8 @@ Ontology bindings
 • policy →PolicyPosterior
 6
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 Methods
@@ -374,6 +384,8 @@ Ontology bindings
 • gamma →SophisticationWeight
 7
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 Figure 6: GNN ↔ontology concordance for the Bernoulli–Ising toy (GNN v1.1).
@@ -382,6 +394,8 @@ Figure 6: GNN ↔ontology concordance for the Bernoulli–Ising toy (GNN v1.1).
 • pi2 →Stream2PolicyVector
 • q_joint →EntangledJointPosterior
 8
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
@@ -428,6 +442,8 @@ Ontology bindings
 • obs →ObservationLikelihood
 9
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 • pi →PolicyPosterior
@@ -462,6 +478,8 @@ The theorem_traceability fragment binds Lean theorem inventory rows to finite mo
 evidence fields. output/data/theorem_traceability_matrix.json records 17 traceability rows and passes only when every theorem
 row is linked (true).
 11
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -610,6 +628,8 @@ Figure 9: Sheaf layers overview: registry stack (compose order, renderer ids) an
 across 17 manifest rows (95 present / 95 bound / 0 missing), generated from output/data/sheaf_coverage_matrix.json.
 15
 
+![page17_img1.png](images/page17_img1.png)
+
 ## Page 18
 
 Figure 10: Semantic gluing graph: configured producers, generated evidence artifacts, and validation consumers for the multi-track
@@ -650,11 +670,15 @@ This is a publication-systems claim, not a domain result. A stale hydrated value
 becomes a validation failure before PDF or web outputs are accepted.
 16
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 11: Track-lane promotion map: 32 pipeline-to-sheaf rows with complete promotion status true. Left: seven promotion-rule
 obligations; right: sheaf fragment bindings.
 17
+
+![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 
@@ -662,12 +686,18 @@ Figure 12: Artifact contract map: 85 generated artifact rows with complete contr
 true. Cycle rows are explicit in output/data/artifact_contract_index.json.
 18
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 13: Scholarship source map: 21 source rows across 21 method roles and 10 source families. Connected status: true; row evidence
 rederived: true.
 Figure 14: Security posture map: 9 controls, 7 enforced and 2 scoped as deferred; secret findings: 0; high-risk gaps: 0.
 19
+
+![page21_img1.png](images/page21_img1.png)
+
+![page21_img2.png](images/page21_img2.png)
 
 ## Page 22
 
@@ -3940,6 +3970,8 @@ Ising toy across 21 grid points up to 𝜆max = 4; grid maximum 0.6031 nats. Bot
 right panel is a cross-implementation agreement check (max residual 0 nats), not a sampling residual.
 40
 
+![page42_img1.png](images/page42_img1.png)
+
 ## Page 43
 
 10
@@ -3955,6 +3987,8 @@ Saturation MI (grid maximum on the measured 𝜆sweep): 0.6031 nats.
 Figure 15: Free energy of the entangled posterior relative to the mean-field prior across the hyperparameter sweep (grid points 21);
 relative to the entangled prior, the same posterior has identically zero free energy.
 41
+
+![page43_img1.png](images/page43_img1.png)
 
 ## Page 44
 
@@ -4021,6 +4055,10 @@ with the goal-seeking minimiser marked. Right: the pragmatic and epistemic value
 in closed form (no sampling) and satisfy risk + ambiguity + pragmatic + epistemic = 0 to machine precision.
 43
 
+![page45_img1.png](images/page45_img1.png)
+
+![page45_img2.png](images/page45_img2.png)
+
 ## Page 46
 
 Figure 18: Precision sweep over the closed-form T-maze policy posterior 𝑞(𝜋) ∝exp(−𝛾𝐺) across 33 grid points up to 𝛾=16. Entropy
@@ -4031,11 +4069,19 @@ converges monotonically to the true generative likelihood; the run reaches the c
 nats. Deterministic (no sampling), so the curve is byte-reproducible.
 44
 
+![page46_img1.png](images/page46_img1.png)
+
+![page46_img2.png](images/page46_img2.png)
+
 ## Page 47
 
 Figure 20: Belief entropy over time for the T-maze rollout (mean 0.3251 nats).
 Figure 21: Observation and action traces for the T-maze rollout (action diversity 2).
 45
+
+![page47_img1.png](images/page47_img1.png)
+
+![page47_img2.png](images/page47_img2.png)
 
 ## Page 48
 
@@ -4078,6 +4124,8 @@ perturbations. The matrix artifact is output/data/causal_ablation_matrix.json: i
 status true.
 46
 
+![page48_img1.png](images/page48_img1.png)
+
 ## Page 49
 
 Figure 23: Invariant dashboard: 12 / 12 merged analytical and simulation checks from the validation registry.
@@ -4117,6 +4165,8 @@ The scholarship matrix is also a scope-control device. It separates conceptual l
 why the toy models are relevant, while generated artifacts decide every numerical, figure, and gate claim. That split keeps the paper
 from converting background authority into an unsupported empirical result.
 47
+
+![page49_img1.png](images/page49_img1.png)
 
 ## Page 50
 
@@ -4252,11 +4302,17 @@ Ising toy across 21 grid points up to 𝜆max = 4; grid maximum 0.6031 nats. Bot
 right panel is a cross-implementation agreement check (max residual 0 nats), not a sampling residual.
 50
 
+![page52_img1.png](images/page52_img1.png)
+
 ## Page 53
 
 Reproduced from fig. 22. Discrete action index over time for the pymdp T-maze rollout (policy length 2).
 Figure 24: Theorem traceability graph generated from 17 linked theorem rows and 207 proof-dependency edges.
 51
+
+![page53_img1.png](images/page53_img1.png)
+
+![page53_img2.png](images/page53_img2.png)
 
 ## Page 54
 
@@ -4265,6 +4321,10 @@ true.
 Reproduced from fig. 13. Scholarship source map: 21 source rows across 21 method roles and 10 source families. Connected status:
 52
 
+![page54_img1.png](images/page54_img1.png)
+
+![page54_img2.png](images/page54_img2.png)
+
 ## Page 55
 
 true; row evidence rederived: true.
@@ -4272,12 +4332,18 @@ Reproduced from fig. 11. Track-lane promotion map: 32 pipeline-to-sheaf rows wit
 promotion-rule obligations; right: sheaf fragment bindings.
 53
 
+![page55_img1.png](images/page55_img1.png)
+
 ## Page 56
 
 Reproduced from fig. 12. Artifact contract map: 85 generated artifact rows with complete contract status true and copied-output
 parity complete true. Cycle rows are explicit in output/data/artifact_contract_index.json.
 Reproduced from fig. 14. Security posture map: 9 controls, 7 enforced and 2 scoped as deferred; secret findings: 0; high-risk gaps: 0.
 54
+
+![page56_img1.png](images/page56_img1.png)
+
+![page56_img2.png](images/page56_img2.png)
 
 ## Page 57
 
@@ -4332,6 +4398,8 @@ Ontology bindings
 Animation is an extension sheaf track backed by a deterministic GIF from scripts/render_animation.py. This appendix row
 documents the track binding only; default publication still uses static SI figures (sec. 11, fig. 22) while the GIF remains an auditable
 55
+
+![page57_img1.png](images/page57_img1.png)
 
 ## Page 58
 
@@ -4419,6 +4487,8 @@ END OF TRANSMISSION
 Release: v0.3.2 ⋅DOI 10.5281/zenodo.20417021 ⋅SHA-256 pending… ⋅pairing pending
 Figure 26: Integrity QR strip
 Prior: No prior releases.
+
+![page62_img1.png](images/page62_img1.png)
 
 
 ---

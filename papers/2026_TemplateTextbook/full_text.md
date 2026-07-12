@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Template_c6c97f24.pdf`
 
+> 36 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -13,6 +15,8 @@ Active Inference Institute
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 Edition 0.1 – 2026 DOI: 10.5281/zenodo.20533125
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -1073,6 +1077,8 @@ Study Blueprint
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 4
@@ -1151,6 +1157,8 @@ Study Blueprint
 • Question bank: sec. 32.
 • Bridge to computation: textbook.models.
 
+![page17_img1.png](images/page17_img1.png)
+
 ## Page 18
 
 5
@@ -1188,6 +1196,8 @@ quantity
 initial value
 quantity
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 5
@@ -1212,6 +1222,8 @@ Further Reading
 Practice
 • Lab: sec. 20
 • Question bank: sec. 32
+
+![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 
@@ -1240,6 +1252,8 @@ Study Blueprint
 • Question bank: sec. 33.
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -1308,6 +1322,8 @@ This part covers fundamentals. It contains the following chapters:
 • Structure and Form — sec. 10
 How to use this part.
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 8
@@ -1337,6 +1353,8 @@ relating their rates — the first principle of quantitative modelling.
 • Core concepts: system, state, parameter, equilibrium.
 • Quantitative lens: the logistic law in eq. 5.
 • Data skill: read an S-curve and estimate its carrying capacity by eye, then confirm numerically.
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -1459,6 +1477,8 @@ FIRST PRINCIPLES
 Figure 8. Mermaid diagram
 • Question bank: sec. 34 — recall through synthesis.
 
+![page26_img1.png](images/page26_img1.png)
+
 ## Page 27
 
 9
@@ -1486,6 +1506,8 @@ Study Blueprint
 • Question bank: sec. 35.
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 
@@ -1565,6 +1587,8 @@ Study Blueprint
 • Question bank: sec. 36.
 • Bridge to computation: textbook.models.
 
+![page29_img1.png](images/page29_img1.png)
+
 ## Page 30
 
 10
@@ -1602,6 +1626,8 @@ quantity
 initial value
 quantity
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 10
@@ -1626,6 +1652,8 @@ Further Reading
 Practice
 • Lab: sec. 24
 • Question bank: sec. 36
+
+![page31_img1.png](images/page31_img1.png)
 
 ## Page 32
 
@@ -1669,6 +1697,8 @@ Study Blueprint
 • Question bank: sec. 37.
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
+
+![page33_img1.png](images/page33_img1.png)
 
 ## Page 34
 
@@ -1748,6 +1778,8 @@ Study Blueprint
 • Question bank: sec. 38.
 • Bridge to computation: textbook.models.
 
+![page35_img1.png](images/page35_img1.png)
+
 ## Page 36
 
 13
@@ -1785,6 +1817,8 @@ quantity
 initial value
 quantity
 
+![page36_img1.png](images/page36_img1.png)
+
 ## Page 37
 
 13
@@ -1809,6 +1843,8 @@ Further Reading
 Practice
 • Lab: sec. 26
 • Question bank: sec. 38
+
+![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
@@ -1837,6 +1873,8 @@ Study Blueprint
 • Question bank: sec. 39.
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
+
+![page38_img1.png](images/page38_img1.png)
 
 ## Page 39
 
@@ -1904,6 +1942,8 @@ This part covers applications and synthesis. It contains the following chapters:
 • Frontiers and Open Problems — sec. 18
 How to use this part.
 
+![page40_img1.png](images/page40_img1.png)
+
 ## Page 41
 
 16
@@ -1931,6 +1971,8 @@ Study Blueprint
 • Question bank: sec. 40.
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
+
+![page41_img1.png](images/page41_img1.png)
 
 ## Page 42
 
@@ -2011,6 +2053,8 @@ honest statement of its limits.
 • Core concepts: observable, gradient, threshold.
 • Quantitative lens: a linear dose–response fit, eq. 12.
 
+![page43_img1.png](images/page43_img1.png)
+
 ## Page 44
 
 17
@@ -2047,6 +2091,8 @@ control
 2
 2.30
 0.18
+
+![page44_img1.png](images/page44_img1.png)
 
 ## Page 45
 
@@ -2106,6 +2152,8 @@ describes how well the line passes through three dots — not how well it predic
 iment. Treat it as a reason to collect more data, not as a conclusion. Foundational guidance on
 this trap appears in [Kim, 2020] and [Wilson, 2021].
 
+![page45_img1.png](images/page45_img1.png)
+
 ## Page 46
 
 17
@@ -2156,6 +2204,8 @@ Study Blueprint
 • Question bank: sec. 42.
 • Bridge to computation: textbook.models.
 Opening Vignette: TKTK — a motivating story
+
+![page47_img1.png](images/page47_img1.png)
 
 ## Page 48
 
@@ -2234,6 +2284,8 @@ Summarise results with textbook.models.descriptive_statistics.
 Computational Workflow
 from textbook.models import logistic_growth
 # TODO: parameterise and plot the model for this lab's scenario.
+
+![page49_img1.png](images/page49_img1.png)
 
 ## Page 50
 
@@ -3390,6 +3442,10 @@ APPENDIX — FORMAT GALLERY
 Figure 25. A multi-series line plot of three sine waves, produced by visualization.gallery.line_plot.
 Figure 26. Bar chart.
 
+![page86_img1.png](images/page86_img1.png)
+
+![page86_img2.png](images/page86_img2.png)
+
 ## Page 87
 
 47
@@ -3398,6 +3454,10 @@ APPENDIX — FORMAT GALLERY
 Figure 27. Pie chart.
 Figure 28. A 2×2 composite: line, scatter, bar, and histogram panels.
 
+![page87_img1.png](images/page87_img1.png)
+
+![page87_img2.png](images/page87_img2.png)
+
 ## Page 88
 
 47
@@ -3405,6 +3465,10 @@ APPENDIX — FORMAT GALLERY
 87
 Figure 29. Mermaid diagram
 Figure 30. Mermaid diagram
+
+![page88_img1.png](images/page88_img1.png)
+
+![page88_img2.png](images/page88_img2.png)
 
 ## Page 89
 
@@ -3430,6 +3494,8 @@ A shell example:
 uv run python scripts/generate_figures.py
 uv run --extra dev python -m pytest tests/ --cov=src
 
+![page89_img1.png](images/page89_img1.png)
+
 ## Page 90
 
 47
@@ -3451,6 +3517,8 @@ Audio and video embed in HTML targets (PDF shows the caption + link). Syntax:
 ![Caption for a video.](../assets/media/demo.mp4){width=70%}
 A downloadable data file lives at assets/data/sample_dataset.csv; its contents as a table:
 
+![page90_img1.png](images/page90_img1.png)
+
 ## Page 91
 
 47
@@ -3458,6 +3526,10 @@ APPENDIX — FORMAT GALLERY
 90
 Figure 33. Mermaid diagram
 Figure 34. A generated heatmap embedded as a raster image.
+
+![page91_img1.png](images/page91_img1.png)
+
+![page91_img2.png](images/page91_img2.png)
 
 ## Page 92
 
@@ -3498,6 +3570,8 @@ Try it. Change 𝑟to 1.5 and predict, then check, how the curve shifts.
 Key terms. model, parameter, state.
 Summary. This appendix demonstrated text, lists, callouts, tables, math and units, figures,
 diagrams, code, cross-references, media, and pedagogy blocks — the complete primitive set.
+
+![page92_img1.png](images/page92_img1.png)
 
 ## Page 93
 

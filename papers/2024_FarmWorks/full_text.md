@@ -2,6 +2,8 @@
 
 > Extracted from `2024_FarmWorks.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -101,6 +103,8 @@ principles. This system takes into consideration harvest predictions, meteorolog
 disease models, creating an iterative feedback loop provided by Active Inference. The FarmWorks
 development and implementation will be divided into six Work Packages (WP), described below, whose
 iterations are shown in Figure 1.
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 

@@ -2,6 +2,8 @@
 
 > Extracted from `2025_CEREBRUM.pdf`
 
+> 15 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -285,6 +287,8 @@ and their integration through the CEREBRUM core to produce enhanced model manage
 pabilities.
 6
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 6
@@ -332,6 +336,10 @@ Figure 3: Cognitive Model Case Framework. The hierarchical organization of case 
 BRUM, showing primary, source, and contextual declensions with their functional relationships to
 the core generative model.
 8
+
+![page8_img1.png](images/page8_img1.png)
+
+![page8_img2.png](images/page8_img2.png)
 
 ## Page 9
 
@@ -441,6 +449,8 @@ ture data streams and occupant comfort preferences as inputs. The genitive case 
 the model into a generator of temperature regulation reports and system performance analytics
 (“genitive AI”). When in instrumental case [INS], the thermostat serves as a computational tool
 10
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
@@ -674,6 +684,8 @@ CEREBRUM employs category theory to formalize case relationships between cogniti
 creating a rigorous mathematical foundation, illustrated in Figure 7 and Figure 8.
 14
 
+![page14_img1.png](images/page14_img1.png)
+
 ## Page 15
 
 Figure 6: Intelligence Production Workflow with Case-Bearing Models. Illustrates the intelligence
@@ -682,6 +694,10 @@ Figure 7: CEREBRUM Category Theory Framework. Demonstrates the category-theoreti
 ization of case relationships and transformations between cognitive models.
 15
 
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
+
 ## Page 16
 
 Figure 8:
@@ -689,6 +705,8 @@ Category Theory Framework (Alternative View).
 Further illustrates the category-
 theoretic components and properties within CEREBRUM.
 16
+
+![page16_img1.png](images/page16_img1.png)
 
 ## Page 17
 
@@ -713,12 +731,16 @@ the theoretical alignment patterns shown in Figure 9 by demonstrating their prac
 in cognitive model management.
 17
 
+![page17_img1.png](images/page17_img1.png)
+
 ## Page 18
 
 Figure 10: Computational Implementation of Model Relationships. Illustrates the practical imple-
 mentation details of model relationships in CEREBRUM, including resource allocation patterns,
 message passing eﬀiciency, and transformation optimization strategies.
 18
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
@@ -767,11 +789,15 @@ Figure 11: Implementation in Intelligence Production - State Diagram. Provides a
 of the intelligence workflow highlighting model case assignments at each stage.
 20
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 12: Intelligence Workflow (Alternative View). Presents another perspective on the intelli-
 gence production cycle and feedback loops, emphasizing case roles.
 21
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -781,6 +807,8 @@ integrated with case transformations through precision-weighted message passing 
 minimization.
 22
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 Figure 14: Case-Specific Message Passing in Active Inference.
@@ -789,6 +817,10 @@ dynamics change based on the model’s current case assignment within an active 
 Figure 15: Model Case Calculus Framework. Presents the formal mathematical relationships and
 transformation rules that govern case transitions in the CEREBRUM framework.
 23
+
+![page23_img1.png](images/page23_img1.png)
+
+![page23_img2.png](images/page23_img2.png)
 
 ## Page 24
 

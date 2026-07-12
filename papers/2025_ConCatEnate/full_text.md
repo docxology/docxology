@@ -2,6 +2,8 @@
 
 > Extracted from `0125cat.pdf`
 
+> 9 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -645,6 +647,8 @@ And somehow; these has to play with current awareness
  
 (map n object context; to initiate their satiation)
 
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
 ## Page 12
 
 Pic3 
@@ -737,6 +741,8 @@ memory
  
 phospace) 
 ger
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
 
 ## Page 13
 
@@ -1372,6 +1378,8 @@ actions (muscle % tension )
  
 CYC’s are tested and learned as it happen
 
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
 ## Page 20
 
 The way of doing this is to break it down to 
@@ -1743,6 +1751,8 @@ This causes the highest (map relevant) THEME
  
 to become 
 mod
+
+![page23_img1.jpeg](images/page23_img1.jpeg)
 
 ## Page 24
 
@@ -2768,6 +2778,8 @@ Some theme go upward
  
 Some chems to tally
 
+![page39_img1.jpeg](images/page39_img1.jpeg)
+
 ## Page 40
 
 Screens 
@@ -2849,6 +2861,8 @@ Screens are mostly abbreviations of recurring themes ;  they linger and handle r
 fly  (source of inference & beacons ) 
 Linger 
 Input
+
+![page40_img1.jpeg](images/page40_img1.jpeg)
 
 ## Page 41
 
@@ -3952,6 +3966,8 @@ ccount for that checking
 etails below ) p 55 
 | n |
 
+![page60_img1.jpeg](images/page60_img1.jpeg)
+
 ## Page 61
 
 Version 3; adds a Limiter / % modu
@@ -3998,6 +4014,8 @@ Track stress^
 Track breath(n)  focus(%) 
 Mentioned aplenty in  
 modLook / other
+
+![page61_img1.jpeg](images/page61_img1.jpeg)
 
 ## Page 62
 
@@ -4215,6 +4233,8 @@ This can perhaps (?) double as the
 Or such composer 
  
 . . .
+
+![page65_img1.jpeg](images/page65_img1.jpeg)
 
 ## Page 66
 

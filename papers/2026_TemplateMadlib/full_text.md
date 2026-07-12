@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Template_d9248f4f.pdf`
 
+> 9 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.20786638
 2026-06-26
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -1106,6 +1110,8 @@ local until release
 methods
 manuscript/config.yaml#madl
 
+![page14_img1.png](images/page14_img1.png)
+
 ## Page 15
 
 Variable
@@ -1329,9 +1335,15 @@ audiences, qualities
 Figure 2: Token category density
 Figure 3: Section token allocation
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 Figure 4: Provenance trace map
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
@@ -1404,6 +1416,8 @@ limitations
 Limitations: Non-Claims, Misuse
 Modes, and Human Review
 True
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -2167,6 +2181,10 @@ true
 Figure 6: Section configuration heatmap
 Figure 7: Field origin summary
 
+![page26_img1.png](images/page26_img1.png)
+
+![page26_img2.png](images/page26_img2.png)
+
 ## Page 27
 
 7
@@ -2209,6 +2227,8 @@ output/reports/injection_trace.json
 and out-
 put/data/token_inventory.json.
 analysis
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 

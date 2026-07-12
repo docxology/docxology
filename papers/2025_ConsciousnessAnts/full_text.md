@@ -2,11 +2,15 @@
 
 > Extracted from `2025_ConsciousnessAnts.pdf`
 
+> 14 figures extracted to `images/`
+
 ---
 
 ## Page 1
 
 *[Page 1 appears to be blank or image-only]*
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -74,6 +78,8 @@ Organizadores
 Anderson Fonseca 
 Luiz Paulo Da Cas Cichoski
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 Diagramação:  Marcelo Alves 
@@ -127,6 +133,8 @@ O padrão ortográfico e o sistema de citações e referências
 bibliográficas são prerrogativas de cada autor. Da mesma 
 forma, o conteúdo de cada capítulo é de inteira e 
 exclusiva responsabilidade de seu respectivo autor.
+
+![page5_img3.png](images/page5_img3.png)
 
 ## Page 6
 
@@ -2131,6 +2139,16 @@ large oval) incorporates some of these
 elements, giving it a very different total 
 experiential field from any individual ant.
 
+![page66_img1.png](images/page66_img1.png)
+
+![page66_img5.png](images/page66_img5.png)
+
+![page66_img7.png](images/page66_img7.png)
+
+![page66_img9.png](images/page66_img9.png)
+
+![page66_img11.png](images/page66_img11.png)
+
 ## Page 67
 
 66  •  As colônias de formigas são conscientes? Mentes coletivas e implicações filosóficas 
@@ -3976,6 +3994,8 @@ exemplo no reino animal? Wheeler nos concede: uma colônia de
 formigas. Hoje, aqueles que estudam sobre a evolução da socialidade, 
 consideram as formigas como seres altamente socializados (se
 
+![page122_img1.png](images/page122_img1.png)
+
 ## Page 123
 
 122  •  As colônias de formigas são conscientes? Mentes coletivas e implicações filosóficas 
@@ -4073,6 +4093,8 @@ microrganismos entomopatogênicos (Hölldobler, 1984; Graystock,
 Hughes, 2011). Além disso, essa ação também é direcionada à superfície 
 do jardim do fungo, garantindo o não desenvolvimento de fungos 
 antagonistas ou maléficos para o mesmo (Ortius-Lechner et al., 2000;
+
+![page125_img1.jpeg](images/page125_img1.jpeg)
 
 ## Page 126
 
@@ -5779,6 +5801,8 @@ nenhum animal não-humano possui linguagem da maneira como a
 possuímos e, mesmo que se tente adaptar o ponto de Searle de atos de 
 fala à comunicação animal ou comportamento verbal animal, parece
 
+![page179_img1.png](images/page179_img1.png)
+
 ## Page 180
 
 Valdenor Monteiro Brito Júnior  •  179 
@@ -5907,6 +5931,8 @@ divisão extrema do trabalho reprodutivo, também conhecida como
  
 6 Para uma exposição mais recente acerca desses graus de sociabilidade, consulte Gullan; Cranston, 
 2005, p. 299-326.
+
+![page183_img1.png](images/page183_img1.png)
 
 ## Page 184
 
@@ -11002,9 +11028,13 @@ acompanhar novos lançamentos e eventos.
 www.editorafi.org 
 contato@editorafi.org
 
+![page336_img3.jpeg](images/page336_img3.jpeg)
+
 ## Page 337
 
 *[Page 337 appears to be blank or image-only]*
+
+![page337_img1.jpeg](images/page337_img1.jpeg)
 
 
 ---

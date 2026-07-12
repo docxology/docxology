@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Sortition_73289489.pdf`
 
+> 21 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,8 @@ danielarifriedman@gmail.com
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.21083779
 2026-06-25
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -383,6 +387,8 @@ each expert’s ideology (left →negative, right →positive). Because this onl
 by ideology — every judge still errs from an independent stream — it does not by itself make single-bloc panels more
 error-correlated than a representative draw; supplying that missing cross-judge error-correlation channel is the job of the
 6
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
@@ -988,6 +994,8 @@ l dd
 f
 14
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 Figure 3: Faceted heatmaps of the single-bloc-minus-representative EIE error contrast across expert stringency (mean
@@ -1003,6 +1011,8 @@ deliberately not pooled with the real Ollama evidence, which lives in the separa
 fig. 18, and fig. 19.
 15
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Figure 4: Faceted heatmaps contrasting the post-NTQR error-independent estimate against the pre-NTQR supervised
@@ -1015,6 +1025,8 @@ costs) on top of naive voting. Claim: panel size and bias act on each formation 
 recovery, so there is no uniform pre/post improvement; caveat: this is oracle-referenced simulation on synthetic labels, not
 a live-judge validation claim.
 16
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -1035,6 +1047,10 @@ strategy gap and each curve’s slope as the strategy-specific effect of adding 
 tiny and single-bloc is within noise, so size is essentially neutral at this grid and the dominant lever is which strategy forms
 the panel; caveat: this pooled curve marginalizes over sixteen regimes and is bounded to the active sweep profile.
 17
+
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
 
 ## Page 19
 
@@ -1058,6 +1074,10 @@ right), but the fitted recovery-error trend is unresolved at this grid; statisti
 95% bootstrap CI [-4.335, 0.911], which crosses zero; caveat: this figure supports the correlation diagnostic only, not a
 resolved recovery-effect law.
 18
+
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
 
 ## Page 20
 
@@ -1160,6 +1180,8 @@ The remaining “inconclusive” verdicts are therefore statements about design 
 detectable effect — not evidence of no effect, and never reported as retrospective observed power.
 20
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 Figure 10: Single-panel concentration-dial figure from source output/data/bloc_phase_summary.json (concentration
@@ -1175,6 +1197,8 @@ concentration is axis-conditional — it holds only for the axis the confound ri
 in fig. 9 shows.
 21
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 Figure 11: Design-adequacy diagnosis for every pairwise strategy contrast, from source output/data/power_analysis.
@@ -1186,6 +1210,8 @@ it even if it were real, so its non-significance is a statement about sample siz
 remain inconclusive; caveat: the budgets are keyed to the observed effect magnitudes and are prospective design targets,
 not retrospective observed power evidence.
 22
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -1213,6 +1239,8 @@ consistency/feasibility only — it confirms three-way vote profiles satisfy the
 claim (out of scope) — so it yields a pass/fail check rather than a plotted number.
 23
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 Figure 13: Measured alarm wall-clock time (seconds) versus corpus size 𝑄on log-log axes, from source output/data/ala
@@ -1231,6 +1259,10 @@ property of the draw itself, upstream of any recovery number. Caveat: this is a 
 not a recovery-effect claim about downstream EIE error.
 24
 
+![page25_img1.png](images/page25_img1.png)
+
+![page25_img2.png](images/page25_img2.png)
+
 ## Page 26
 
 Figure 15: Per-candidate selection probabilities under the representative maximin sortition lottery, computed from src/
@@ -1240,6 +1272,8 @@ by its floor (the shortest bar) rather than its average — a fairer lottery lif
 This characterises the representation properties of the draw and is fully independent of any downstream evaluation number.
 Caveat: this describes panel-formation fairness only, not NTQR recovery error.
 25
+
+![page26_img1.png](images/page26_img1.png)
 
 ## Page 27
 
@@ -1251,6 +1285,8 @@ is executable and panel-size-indexed rather than establishing a monotone growth 
 see a rising curve). Caveat: the alarm track is a consistency signal only, never a recovery method, and is bounded by the
 same 𝑂(𝑄3) answer-key enumeration, which confines it to small 𝑄.
 26
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 
@@ -1290,6 +1326,8 @@ The alignment artifact compares analytical prediction signs with live Gemma obse
 cells are resolved after zero-sign cells are marked unresolved; the resolved-cell sign-agreement rate is 0.500. This agreement
 27
 
+![page28_img1.png](images/page28_img1.png)
+
 ## Page 29
 
 Figure 18: Heatmap of the older-minus-younger recommendation-rate disparity expressed by the live Gemma reviewer panel,
@@ -1301,6 +1339,8 @@ each sampling rule amplifies or dampens the irrelevant age signal. Claim: same-b
 bias-amplification stress test among the strategies; caveat: all applicants and ages are synthetic, and this figure does not
 validate Gemma or endorse age-aware real review.
 28
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
@@ -1340,6 +1380,8 @@ manuscript keeps the synthetic and live tracks at distinct inference levels rath
 winner.
 29
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 20: Cross-track strategy-ranking inversion at the matched three-seat grain, shown as a slope chart, from source ou
@@ -1354,6 +1396,8 @@ tracks own different oracles and uncertainty). Claim: the formation rule that is
 one local Gemma model, so the synthetic ranking does not transfer to the live single-model panel; caveat: single-model live
 evidence is descriptive and n-limited, not a human-review validation.
 30
+
+![page31_img1.png](images/page31_img1.png)
 
 ## Page 32
 

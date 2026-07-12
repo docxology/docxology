@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Illegal_5bda439c.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.21298885
 July 10, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -272,6 +276,8 @@ phase method ever runs. Neither error path advances the session to a new phase c
 the attempted transition, matching the code exactly (accept_hello/complete mark _consumed = True and return Err(...) from the
 same phase object, they do not construct a next-phase class).
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 Figure 2: Mermaid diagram
@@ -306,6 +312,8 @@ inappropriate method call on a session-typed handle, an out-of-Literal isolation
 and a structurally-nonconforming PheromoneField. See the itemized list below for the exact fixture and ISC bound to each claim.
 Proved by mypy –strict (edit-time/CI-time only):
 • An AgentId cannot be passed where a MessageId is expected (ISC-2, tests/mypy_fixtures/bad_id_mixing.py).
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -531,6 +539,8 @@ chose it, the same fact item 4 above states in prose. Bottom: north’s share of
 every agent resolves the identical free-energy tie to north on the very first tick (item 1 above) — this is the mechanism-demonstration
 run, presented honestly as “guaranteed by construction,” not as emergence.
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 heterogeneity — that is future work relative to this specific test, but it is exactly the claim the next subsection earns with a real
@@ -638,6 +648,8 @@ sequence, so these are not approximate).
 Experiment A — does convergence rate vary monotonically with decay?
 Hypothesis 8 (Monotonic decay sensitivity). The colony’s convergence rate is a monotonically non-decreasing function of decay over
 {0.10, 0.30, 0.46, 0.60, 0.80, 1.00}, holding every other parameter at the calibrated baseline (8 agents, 2 locations, 30 ticks, 𝜎sense = 0.5,
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 

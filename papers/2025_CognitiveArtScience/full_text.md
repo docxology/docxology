@@ -2,6 +2,8 @@
 
 > Extracted from `2025_CognitiveArtScience.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -45,6 +47,8 @@ driver. An art piece points towards a world in
 which that piece is art (or at least exists). That’s 
 all to say, art becomes culture(d). 
 1
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 

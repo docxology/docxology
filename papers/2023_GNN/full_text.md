@@ -2,6 +2,8 @@
 
 > Extracted from `2023_GNN.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -93,6 +95,8 @@ Updated information on GNN can be found at Github [10] or in Coda [11].
 2.2
 GNN punctuation
 
+![page3_img1.png](images/page3_img1.png)
+
 ## Page 4
 
 4
@@ -111,10 +115,14 @@ was to start simple and progressively add model features till one has arrived at
 full Active Inference generative model, here we use that exact same progression
 to demonstrate the flexibility of GNN.
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 Generalized Notation Notation
 5
+
+![page5_img1.png](images/page5_img1.png)
 
 ## Page 6
 

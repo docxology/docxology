@@ -2,6 +2,8 @@
 
 > Extracted from `2024_PopulationSearch.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -478,6 +480,8 @@ different problem instances are not significantly different.
 • Paired T-test for Computation Time: T-statistic = -1.7753, P-value = 0.07892
 This test indicates that there is no statistically significant difference in computation
 9
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 

@@ -2,6 +2,8 @@
 
 > Extracted from `2020_InnovatorsCatechism.pdf`
 
+> 19 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -234,6 +236,8 @@ commercial purposes [21], but instead for maintaining what is referred
 to in U.S. Military Doctrine as “Economy of Force”, or the effective 
 Figure 1.    Israeli OPORD Format as of 1988, adapted from [18]
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
 ## Page 6
 
 The Innovator’s Catechism, 2020 
@@ -368,6 +372,8 @@ original format (see Figure 3) [16]. Further, virtually all  military
 OPORDs identified by meta-analyses from Fort Leavenworth during 
 Figure 2.    Military Decision Making Process (MDMP) Matrix, adapted from [49]
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
 ## Page 9
 
 The Innovator’s Catechism, 2020 
@@ -380,6 +386,8 @@ items be addressed:
 2. What limiting or controlling factors must be observed. 
 3. What resources and support have been allotted. [4,16,18]  
 Figure 3.    Comparison of OPORDs [4]
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -946,6 +954,8 @@ are OPORDS. They are also examples of a time pacing strategy
 operational tempo in military settings. 
 Figure 4.    Affordances of the Lean Canvas and Facilitator’s Catechism
 
+![page21_img1.jpeg](images/page21_img1.jpeg)
+
 ## Page 22
 
 The Innovator’s Catechism, 2020 
@@ -1066,6 +1076,8 @@ The
 of 
 Figure 5.    Information Requirements by Stage
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 The Innovator’s Catechism, 2020 
@@ -1139,6 +1151,8 @@ questions and asks for updates to those previously answered, as during
 this process the definition of the problem or the groups it may affect 
 Figure 6.    Innovation Pipeline Matrix
 
+![page26_img1.jpeg](images/page26_img1.jpeg)
+
 ## Page 27
 
 The Innovator’s Catechism, 2020 
@@ -1205,6 +1219,8 @@ as a stand-alone brief. Fourth, building on these other value-adds, it
 can be used to quickly create slide decks that include any of the helpful 
 Figure 7.    All Questions of The Innovator’s Catechism
 
+![page28_img1.jpeg](images/page28_img1.jpeg)
+
 ## Page 29
 
 The Innovator’s Catechism, 2020 
@@ -1230,6 +1246,8 @@ stakeholders. This person is responsible for the project. This is
 how you contact the team. More information is available here.” 
 Figure 8.    IC Rendering to Various Formats
 
+![page29_img1.png](images/page29_img1.png)
+
 ## Page 30
 
 The Innovator’s Catechism, 2020 
@@ -1238,6 +1256,8 @@ The Innovator’s Catechism, 2020
  
  
 Figure 9.    Innovator's Catechism Example Rendering to NABC
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 
@@ -2018,6 +2038,10 @@ Appendix A . Business P lan Outline [122]
 Appendix B. Business Model Canvas [123]  
 File available at https://www.strategyzer.com/canvas/business-model-canvas
 
+![page44_img1.png](images/page44_img1.png)
+
+![page44_img2.jpeg](images/page44_img2.jpeg)
+
 ## Page 45
 
 The Innovator’s Catechism, 2020 
@@ -2032,6 +2056,10 @@ F i l e  a v a i l a b l e  a t  h t t p s : / / w w w . s t r a t e g y z e r .
 t h e - m i s s i o n - m o d e l - c a n v a s - a n - a d a p t e d - b u s i n e s s - m o d e l - c a n v a s - f o r - m i  
 s s i o n - d r i v e n - o r g a n i z a t i o n s
 
+![page45_img1.png](images/page45_img1.png)
+
+![page45_img2.png](images/page45_img2.png)
+
 ## Page 46
 
 The Innovator’s Catechism, 2020 
@@ -2040,6 +2068,8 @@ The Innovator’s Catechism, 2020
  
 Appendix E. IC to Lean Canvas Rendering  adapted 
 from [124]
+
+![page46_img1.jpeg](images/page46_img1.jpeg)
 
 ## Page 47
 
@@ -2050,6 +2080,8 @@ The Innovator’s Catechism, 2020
 Appendix F. IC to Collaborative Innovation Canvas 
 Rendering  adapted from [126]
 
+![page47_img1.png](images/page47_img1.png)
+
 ## Page 48
 
 The Innovator’s Catechism, 2020 
@@ -2058,6 +2090,8 @@ The Innovator’s Catechism, 2020
  
 Appendix G. IC to Kawasaki’s “Only Ten Slides” 
 Framework adapted from [127]
+
+![page48_img1.png](images/page48_img1.png)
 
 ## Page 49
 
@@ -2068,6 +2102,8 @@ The Innovator’s Catechism, 2020
 Appendix H. Innovator’s Catechism – Ideation 
 F i l e  a v a i l a b l e  a t  h t t p s : / / g i t h u b . c o m / C O G S E C / I n n o v a t o r s C a t e c h i s m
 
+![page49_img1.png](images/page49_img1.png)
+
 ## Page 50
 
 The Innovator’s Catechism, 2020 
@@ -2077,6 +2113,8 @@ The Innovator’s Catechism, 2020
 Appendix I. Innovator’s Catechism – Curation 
 F i l e  a v a i l a b l e  a t  h t t p s : / / g i t h u b . c o m / C O G S E C / I n n o v a t o r s C a t e c h i s m
 
+![page50_img1.png](images/page50_img1.png)
+
 ## Page 51
 
 The Innovator’s Catechism, 2020 
@@ -2085,6 +2123,8 @@ The Innovator’s Catechism, 2020
  
 Appendix J. Innovator’s Catechism – P itch 
 F i l e  a v a i l a b l e  a t  h t t p s : / / g i t h u b . c o m / C O G S E C / I n n o v a t o r s C a t e c h i s m
+
+![page51_img1.png](images/page51_img1.png)
 
 
 ---

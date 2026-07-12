@@ -2,6 +2,8 @@
 
 > Extracted from `2023_HoneyBeeGeneExpression.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1396,6 +1398,8 @@ median test. Hence, for example, Orphans are signiﬁcantly lower than all other
 Jasper et al. . doi:10.1093/molbev/msu292
 MBE
 Downloaded from https://academic.oup.com/mbe/article/32/2/334/1051698 by guest on 09 June 2022
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
 
 ## Page 10
 

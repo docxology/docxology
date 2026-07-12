@@ -2,6 +2,8 @@
 
 > Extracted from `2025_Thoughtseeds.pdf`
 
+> 27 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -208,6 +210,12 @@ cognitive processes, the body, and the external environment.
 Figure 1. Hierarchical Thoughtseed Framework within a sentient being. (A) Partitioning of an
 agent’s internal states and external states through the Markov blanket (Ref [34]). The Markov blanket,
 
+![page4_img1.png](images/page4_img1.png)
+
+![page4_img2.png](images/page4_img2.png)
+
+![page4_img3.png](images/page4_img3.png)
+
 ## Page 5
 
 Entropy 2025, 27, 459
@@ -302,6 +310,10 @@ their dominance in the Global Workspace, and shape
 conscious content.
 Figure 2. Cont.
 
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
+
 ## Page 7
 
 Entropy 2025, 27, 459
@@ -332,6 +344,10 @@ organization that allows for a more complex integration of knowledge across doma
 Interplay: Connections between NPs and KDs represent the flow of information and influence. NPs
 provide raw data, while KDs interpret and contextualize this information, contributing to thoughtseed
 emergence from the dynamic interplay of information processing within and between KDs.
+
+![page7_img1.png](images/page7_img1.png)
+
+![page7_img2.png](images/page7_img2.png)
 
 ## Page 8
 
@@ -534,6 +550,10 @@ Thoughtseeds compete for access to the Global Workspace via winner-takes-all dyn
 ics [46]. For instance, breath_control prioritizes breath_focus as the dominant attentional
 agent, whereas mind_wandering sees competition among pain_discomfort and pend-
 
+![page11_img1.png](images/page11_img1.png)
+
+![page11_img2.png](images/page11_img2.png)
+
 ## Page 12
 
 Entropy 2025, 27, 459
@@ -570,6 +590,10 @@ and Redirect Breath: Both groups show similar self_reflection activation during 
 (experts: 0.75, novices: 0.28). Neural Pattern Consistency: Experts’ tighter weight clustering in
 adaptive states (breath_control, redirect_breath) indicates consistent neural recruitment, reflecting
 neuroplasticity from long-term practice [82,83].
+
+![page12_img1.png](images/page12_img1.png)
+
+![page12_img2.png](images/page12_img2.png)
 
 ## Page 13
 
@@ -691,6 +715,14 @@ count
 total_transitions_from_Statei
 (4)
 
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
+
+![page14_img3.png](images/page14_img3.png)
+
+![page14_img4.png](images/page14_img4.png)
+
 ## Page 15
 
 Entropy 2025, 27, 459
@@ -739,6 +771,10 @@ petitive attentional agents, yielding emergent patterns that align with empirica
 research [36–38,79].
 Emergent Patterns and Experience-Dependent Variations
 The learning patterns reveal significant differences between novice and expert meditators:
+
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
 
 ## Page 16
 
@@ -850,6 +886,10 @@ experts demonstrate no such reinforcement (+0.00), indicating better separation 
 tion categories. Improved Breath-related Regulation: Experts develop more targeted inhibitory control
 (breath_focus →pending_tasks: −0.69) while simultaneously reducing inhibition toward sensations
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 Entropy 2025, 27, 459
@@ -938,6 +978,14 @@ thoughtseeds, and meta-awareness enables emergent state transitions, moving beyo
 predetermined sequences to capture the naturalistic dynamics of meditation [38,39].
 Figure 8. Cont.
 
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
+
+![page19_img3.png](images/page19_img3.png)
+
+![page19_img4.png](images/page19_img4.png)
+
 ## Page 20
 
 Entropy 2025, 27, 459
@@ -970,6 +1018,14 @@ awareness and emotional regulation through practice [78,81]. Finally, the breath
 state, initially represented as explicit knowledge within a KD for novice meditators, transi-
 tions into an implicit, automatized process in experts through sustained practice, reflecting
 a shift from declarative to procedural processing [79].
+
+![page20_img1.png](images/page20_img1.png)
+
+![page20_img2.png](images/page20_img2.png)
+
+![page20_img3.png](images/page20_img3.png)
+
+![page20_img4.png](images/page20_img4.png)
 
 ## Page 21
 

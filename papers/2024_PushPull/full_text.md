@@ -2,6 +2,8 @@
 
 > Extracted from `PushPull_v1_DAF_2-14-2024.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -99,6 +101,8 @@ novel speech, language, study, or communicative acts in conversation or dialogos
 b.
 By here, you may have personal variants, skills, and adjacencies – report back & enjoy!
 2
+
+![page2_img1.png](images/page2_img1.png)
 
 
 ---

@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Domain_ecd8519f.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -393,6 +395,8 @@ Across both methods, the analysis script tallies 8 of 8 staged-gate evaluations 
 Every gate result is written to output/reports/gate_report.json — neither method in this manuscript is hand-picked to pass; both
 worked examples are constructed to satisfy the structural, semantic, plan, and target gates by design, since compile_method raises Me
 thodValidationError and halts the pipeline on any gate failure.
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 

@@ -2,6 +2,8 @@
 
 > Extracted from `2015_EhrlichialInfection.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -89,6 +91,12 @@ Medical Hypotheses 85 (2015) 891–893
 Contents lists available at ScienceDirect
 Medical Hypotheses
 journal homepage: www.elsevier.com/locate/mehy
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
 
 ## Page 2
 

@@ -2,6 +2,8 @@
 
 > Extracted from `Slides for Iris April 17 2023.pdf`
 
+> 8 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -47,6 +49,8 @@ by speaker.
 Observation – this is 
 strings of words.
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
 ## Page 3
 
 D
@@ -73,6 +77,12 @@ embeddings, wavelets,
 Generalized Coordinates, 
 etc.
 
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
+![page3_img2.jpeg](images/page3_img2.jpeg)
+
+![page3_img3.jpeg](images/page3_img3.jpeg)
+
 ## Page 4
 
 Now that the model has a temporal aspect, we can see a possible way to address the second issue, that all 
@@ -90,6 +100,10 @@ It is a portfolio (regime) of nested attentions at all levels.
 Here, one person has 5 ideas, the left one (their right!) is the most attended to
 That person is most regarded in their group, which is the most regarded group of groups.
 Overall though, the biophysical/energetic reality of this whole mobile only has a single root (at least in this map).
+
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
+![page4_img2.jpeg](images/page4_img2.jpeg)
 
 ## Page 5
 
@@ -115,9 +129,13 @@ States, and Preference over Observations, what Actions can/should I take?”
 
 *[Page 6 appears to be blank or image-only]*
 
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
 ## Page 7
 
 *[Page 7 appears to be blank or image-only]*
+
+![page7_img1.jpeg](images/page7_img1.jpeg)
 
 ## Page 8
 

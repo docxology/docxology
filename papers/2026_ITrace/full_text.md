@@ -2,6 +2,8 @@
 
 > Extracted from `itrace-0.4.1-manuscript.pdf`
 
+> 12 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -13,6 +15,8 @@ Daniel Ari Friedman (Active Inference Institute; ORCID: 0000-0001-6232-9096)
 June 9, 2026
 Algorithmically verified gaze, saccade, and pupil analysis with a pure core, optional webcam capture, and bounded live
 empirical diagnostics.
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -556,6 +560,8 @@ does not hallucinate events from noise.
 The Engbert–Kliegl detector (Engbert and Kliegl 2003) recovers an embedded 0.5∘microsaccade from fixational jitter while ignoring
 9
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 the surrounding noise; a probe confirms the threshold uses the median-based robust estimator (it returns a value below half the plain
@@ -597,6 +603,8 @@ The synthetic generator supplies all three target signals jointly — gaze direc
 as floating 3-D eyeball orbs (fig. 5).
 10
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Figure 3: Saccade direction distribution over the synthetic multi-saccade recording. The polar convention is printed in the
@@ -609,6 +617,10 @@ Panel C overlays true and recovered pupil dynamics after normalisation, with the
 consistency between an independent 3-D generator and the estimator; shared idealisations mean the residual is a lower bound,
 not a measured webcam error.
 11
+
+![page12_img1.png](images/page12_img1.png)
+
+![page12_img2.png](images/page12_img2.png)
 
 ## Page 13
 
@@ -674,6 +686,8 @@ pupil r
 0.276 +/- 0.017
 0.800 +/- 0.008
 12
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -754,6 +768,8 @@ encode the signal so the figure remains legible in greyscale. The figure support
 landmark perturbations; it does not measure MediaPipe, lens, illumination, head-pose, or calibration error on real frames.
 14
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 Figure 7: N=1 empirical session summary generated from the derived experiment report. The cards report finite-gaze fraction,
@@ -796,6 +812,8 @@ while preserving
 low-light/dropout stress
 cases.
 15
+
+![page16_img1.png](images/page16_img1.png)
 
 ## Page 17
 
@@ -904,6 +922,10 @@ The figure uses the pilot to contextualize synthetic defaults and stress ranges;
 performance, or webcam generality.
 17
 
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
+
 ## Page 19
 
 lowest-AIC family winner to show model-ranking stability without treating that frequency as a posterior probability. The best-fit
@@ -979,6 +1001,8 @@ visualizes tested core descriptors and relative model diagnostics, not real-eye 
 fitted family is true.
 19
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 11: Statistical interpretation ledger generated from output/figures/statistical_interpretation_ledger.json. The
@@ -989,6 +1013,8 @@ The figure improves statistical readability without adding new evidence; it
 states what each statistic does not prove, including population physiology, posterior model truth, real-eye accuracy, and device
 validation.
 20
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 

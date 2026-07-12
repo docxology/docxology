@@ -2,6 +2,8 @@
 
 > Extracted from `2016_AntGenetics.pdf`
 
+> 15 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -142,6 +144,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
 ## Page 3
 
 NE39CH03-Gordon
@@ -207,6 +211,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
 ## Page 4
 
 NE39CH03-Gordon
@@ -269,6 +275,8 @@ Friedman· Gordon
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page4_img1.jpeg](images/page4_img1.jpeg)
 
 ## Page 5
 
@@ -348,6 +356,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
 ## Page 6
 
 NE39CH03-Gordon
@@ -404,6 +414,8 @@ Friedman· Gordon
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
 
 ## Page 7
 
@@ -469,6 +481,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
 ## Page 8
 
 NE39CH03-Gordon
@@ -522,6 +536,8 @@ Friedman· Gordon
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page8_img1.jpeg](images/page8_img1.jpeg)
 
 ## Page 9
 
@@ -581,6 +597,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
 ## Page 10
 
 NE39CH03-Gordon
@@ -639,6 +657,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
 ## Page 11
 
 NE39CH03-Gordon
@@ -694,6 +714,8 @@ www.annualreviews.org • Ant Genetics
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
 
 ## Page 12
 
@@ -760,6 +782,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
 ## Page 13
 
 NE39CH03-Gordon
@@ -822,6 +846,8 @@ www.annualreviews.org • Ant Genetics
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page13_img1.jpeg](images/page13_img1.jpeg)
 
 ## Page 14
 
@@ -886,6 +912,8 @@ Friedman· Gordon
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page14_img1.jpeg](images/page14_img1.jpeg)
 
 ## Page 15
 
@@ -952,6 +980,8 @@ Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
 
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
 ## Page 16
 
 NE39CH03-Gordon
@@ -990,6 +1020,8 @@ Friedman· Gordon
 Changes may still occur before final publication online and in print
 Annu. Rev. Neurosci. 2016.39. Downloaded from www.annualreviews.org
  Access provided by City University London on 04/11/16. For personal use only.
+
+![page16_img1.jpeg](images/page16_img1.jpeg)
 
 
 ---

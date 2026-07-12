@@ -2,6 +2,8 @@
 
 > Extracted from `2018_ArgentineAnt.pdf`
 
+> 18 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -76,6 +78,8 @@ for this work.
 Competing interests: The authors have declared
 that no competing interests exist.
 
+![page1_img1.png](images/page1_img1.png)
+
 ## Page 2
 
 influence of environmental conditions on foraging behavior and locomotion in the invaded
@@ -130,6 +134,8 @@ PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 2 / 13
 
+![page2_img1.png](images/page2_img1.png)
+
 ## Page 3
 
 dissolved only during heavy rain, when foragers aggregated in sheltered areas on tree trunks
@@ -153,6 +159,10 @@ Argentine ant wintertime foraging
 PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 3 / 13
+
+![page3_img1.png](images/page3_img1.png)
+
+![page3_img2.png](images/page3_img2.png)
 
 ## Page 4
 
@@ -179,6 +189,10 @@ PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 4 / 13
 
+![page4_img1.png](images/page4_img1.png)
+
+![page4_img2.png](images/page4_img2.png)
+
 ## Page 5
 
 5A and 5B). Neither walking speed nor foraging rate were associated with the abundance of P.
@@ -195,6 +209,10 @@ Argentine ant wintertime foraging
 PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 5 / 13
+
+![page5_img1.png](images/page5_img1.png)
+
+![page5_img2.png](images/page5_img2.png)
 
 ## Page 6
 
@@ -222,6 +240,12 @@ Argentine ant wintertime foraging
 PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 6 / 13
+
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
+
+![page6_img3.png](images/page6_img3.png)
 
 ## Page 7
 
@@ -279,6 +303,8 @@ PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 7 / 13
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 49], for L. humile colonies to forage on hemipteran honeydew during a time of reduced
@@ -329,6 +355,8 @@ Argentine ant wintertime foraging
 PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 8 / 13
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -384,6 +412,8 @@ PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 9 / 13
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 effects to models with outliers included, we report only model results with these data removed
@@ -430,6 +460,8 @@ Argentine ant wintertime foraging
 PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 10 / 13
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
@@ -520,6 +552,8 @@ PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 11 / 13
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 26.
@@ -607,6 +641,8 @@ PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 12 / 13
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 49.
@@ -625,6 +661,8 @@ Argentine ant wintertime foraging
 PLOS ONE | https://doi.org/10.1371/journal.pone.0202117
 August 9, 2018
 13 / 13
+
+![page13_img1.png](images/page13_img1.png)
 
 
 ---

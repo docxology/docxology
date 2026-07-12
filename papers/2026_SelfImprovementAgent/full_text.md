@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Selfimprovement_6e6d19d0.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -116,6 +118,8 @@ The heatmap below provides a compact overview of per-generation accuracy and sam
 comparison across runs.
 4
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 Figure 2: Per-generation metric heatmap showing accuracy and sample count across SIA generations.
@@ -147,6 +151,10 @@ Incremental improvement
 The generation-over-generation accuracy delta quantifies the self-refinement signal at each step of the loop.
 5
 
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
+
 ## Page 7
 
 Figure 4: Generation-over-generation metric delta (Δaccuracy) for the SIA loop, illustrating the incremental im-
@@ -161,6 +169,8 @@ Non-claims. This tree is a harness and documentation exemplar. Fixture-replay me
 validate wiring only—they are not evidence of state-of-the-art self-improvement. Live self-modification and external
 LLM calls remain opt-in; default CI never executes generated agent code or claims benchmark parity with [AI, 2026].
 6
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 

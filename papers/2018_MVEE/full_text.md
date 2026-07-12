@@ -2,6 +2,8 @@
 
 > Extracted from `2018_MVEE.pdf`
 
+> 116 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -88,6 +90,8 @@ MVEE is a Synergetic framework for Evolutionary studies.
 ○
 MVEE == Variational Neuroethology + EcoEvoDevo + Collective Behavior + ML
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
 ## Page 8
 
 *[Page 8 appears to be blank or image-only]*
@@ -119,13 +123,27 @@ integrate sub-theories.
 2018
 2011
 
+![page13_img1.jpeg](images/page13_img1.jpeg)
+
+![page13_img2.jpeg](images/page13_img2.jpeg)
+
 ## Page 14
 
 2018
 
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
+
+![page14_img4.jpeg](images/page14_img4.jpeg)
+
 ## Page 15
 
 *[Page 15 appears to be blank or image-only]*
+
+![page15_img1.jpeg](images/page15_img1.jpeg)
 
 ## Page 16
 
@@ -143,6 +161,10 @@ these rules/patterns?
 ???
 ???
 ???
+
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
+![page16_img2.jpeg](images/page16_img2.jpeg)
 
 ## Page 17
 
@@ -184,6 +206,14 @@ Biology….
 2017
 2016
 
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
+![page19_img2.jpeg](images/page19_img2.jpeg)
+
+![page19_img3.jpeg](images/page19_img3.jpeg)
+
+![page19_img4.jpeg](images/page19_img4.jpeg)
+
 ## Page 20
 
 2016
@@ -199,6 +229,16 @@ Information
 Entropy in 
 Biology….
 
+![page20_img1.jpeg](images/page20_img1.jpeg)
+
+![page20_img2.jpeg](images/page20_img2.jpeg)
+
+![page20_img3.jpeg](images/page20_img3.jpeg)
+
+![page20_img4.jpeg](images/page20_img4.jpeg)
+
+![page20_img5.jpeg](images/page20_img5.jpeg)
+
 ## Page 21
 
 2017
@@ -211,6 +251,18 @@ theories and
 Information 
 Entropy in 
 Biology….
+
+![page21_img1.jpeg](images/page21_img1.jpeg)
+
+![page21_img2.jpeg](images/page21_img2.jpeg)
+
+![page21_img3.jpeg](images/page21_img3.jpeg)
+
+![page21_img4.jpeg](images/page21_img4.jpeg)
+
+![page21_img5.jpeg](images/page21_img5.jpeg)
+
+![page21_img6.jpeg](images/page21_img6.jpeg)
 
 ## Page 22
 
@@ -225,6 +277,14 @@ Badcock &
 Friston
 2017
 
+![page22_img1.jpeg](images/page22_img1.jpeg)
+
+![page22_img2.jpeg](images/page22_img2.jpeg)
+
+![page22_img3.jpeg](images/page22_img3.jpeg)
+
+![page22_img4.jpeg](images/page22_img4.jpeg)
+
 ## Page 23
 
 VNE is an Evolutionary Systems Theory about 
@@ -238,6 +298,10 @@ VNE applies to biological
 systems across many 
 orders of magnitude of 
 spatio-temporal variation.
+
+![page23_img1.jpeg](images/page23_img1.jpeg)
+
+![page23_img2.jpeg](images/page23_img2.jpeg)
 
 ## Page 24
 
@@ -263,6 +327,10 @@ Ontogeny, Plasticity
 Evolution 
 Selection and Drift
 
+![page24_img1.jpeg](images/page24_img1.jpeg)
+
+![page24_img2.jpeg](images/page24_img2.jpeg)
+
 ## Page 25
 
 RBF 2017 work through only one example in their paper: 
@@ -270,12 +338,18 @@ How the “Hierarchically Mechanistic Minds” EST can be used
 within the Variational Neuroethology framework to study all 
 scales of human socio-biocultural evolution in Humans.
 
+![page25_img1.jpeg](images/page25_img1.jpeg)
+
+![page25_img2.jpeg](images/page25_img2.jpeg)
+
 ## Page 26
 
 Other people are already critiquing and building on VNE. 
 As of 
 1/3/2018
 12 comments
+
+![page26_img1.jpeg](images/page26_img1.jpeg)
 
 ## Page 27
 
@@ -289,6 +363,8 @@ be deployed in other, arbitrary
 evolutionary systems…….. 
 Especially using real data!
 
+![page27_img1.jpeg](images/page27_img1.jpeg)
+
 ## Page 28
 
 2013
@@ -299,6 +375,18 @@ Processes, Interactions, Context (1992,2011,2014,2016)
 Pragmatic…Empirical…Quantitative…Pluralistic...
 Make predictions.…..Accommodate Complexity…
 “Keep it rational and measurable”
+
+![page28_img1.jpeg](images/page28_img1.jpeg)
+
+![page28_img2.jpeg](images/page28_img2.jpeg)
+
+![page28_img3.jpeg](images/page28_img3.jpeg)
+
+![page28_img4.jpeg](images/page28_img4.jpeg)
+
+![page28_img5.jpeg](images/page28_img5.jpeg)
+
+![page28_img6.jpeg](images/page28_img6.jpeg)
 
 ## Page 29
 
@@ -331,6 +419,10 @@ W-E2003?
 Lamarck…
 Darwin…
 1806
+
+![page31_img1.jpeg](images/page31_img1.jpeg)
+
+![page31_img2.jpeg](images/page31_img2.jpeg)
 
 ## Page 32
 
@@ -512,6 +604,18 @@ formalizing the environmental dynamics:
 Also see Collective 
 Behavior Appendix
 
+![page46_img1.jpeg](images/page46_img1.jpeg)
+
+![page46_img2.jpeg](images/page46_img2.jpeg)
+
+![page46_img3.jpeg](images/page46_img3.jpeg)
+
+![page46_img4.jpeg](images/page46_img4.jpeg)
+
+![page46_img5.jpeg](images/page46_img5.jpeg)
+
+![page46_img6.jpeg](images/page46_img6.jpeg)
+
 ## Page 47
 
 Biology ∈ ℝGEP 
@@ -524,9 +628,29 @@ GEP2
 GEP3
 GEPn
 
+![page47_img1.jpeg](images/page47_img1.jpeg)
+
+![page47_img2.jpeg](images/page47_img2.jpeg)
+
+![page47_img3.jpeg](images/page47_img3.jpeg)
+
 ## Page 48
 
 And more...
+
+![page48_img1.jpeg](images/page48_img1.jpeg)
+
+![page48_img2.jpeg](images/page48_img2.jpeg)
+
+![page48_img3.jpeg](images/page48_img3.jpeg)
+
+![page48_img4.jpeg](images/page48_img4.jpeg)
+
+![page48_img5.jpeg](images/page48_img5.jpeg)
+
+![page48_img6.jpeg](images/page48_img6.jpeg)
+
+![page48_img7.jpeg](images/page48_img7.jpeg)
 
 ## Page 49
 
@@ -570,6 +694,18 @@ E = MVEE⊗t
 &
 Biology ∈ ℝGEP t
 
+![page53_img1.jpeg](images/page53_img1.jpeg)
+
+![page53_img2.jpeg](images/page53_img2.jpeg)
+
+![page53_img3.jpeg](images/page53_img3.jpeg)
+
+![page53_img4.jpeg](images/page53_img4.jpeg)
+
+![page53_img5.jpeg](images/page53_img5.jpeg)
+
+![page53_img6.jpeg](images/page53_img6.jpeg)
+
 ## Page 54
 
 *[Page 54 appears to be blank or image-only]*
@@ -579,6 +715,22 @@ Biology ∈ ℝGEP t
 Hankey, Igamberdiev, 
 Hu/Petoukhov2, Islami, 
 Rosen, Longo…...
+
+![page55_img1.jpeg](images/page55_img1.jpeg)
+
+![page55_img2.jpeg](images/page55_img2.jpeg)
+
+![page55_img3.jpeg](images/page55_img3.jpeg)
+
+![page55_img4.jpeg](images/page55_img4.jpeg)
+
+![page55_img5.jpeg](images/page55_img5.jpeg)
+
+![page55_img6.jpeg](images/page55_img6.jpeg)
+
+![page55_img7.jpeg](images/page55_img7.jpeg)
+
+![page55_img8.jpeg](images/page55_img8.jpeg)
 
 ## Page 56
 
@@ -638,6 +790,14 @@ Negentropy Generation (S. 1944)
 
 1992
 
+![page63_img1.jpeg](images/page63_img1.jpeg)
+
+![page63_img2.jpeg](images/page63_img2.jpeg)
+
+![page63_img3.jpeg](images/page63_img3.jpeg)
+
+![page63_img4.jpeg](images/page63_img4.jpeg)
+
 ## Page 64
 
 Heredity
@@ -687,6 +847,8 @@ The compute graph (TensorFlow)
 model allows arbitrary, modular, and 
 tractable use of current data/models.
 
+![page66_img1.jpeg](images/page66_img1.jpeg)
+
 ## Page 67
 
 The “Algorithms of Life” are coarse-grained 
@@ -718,6 +880,10 @@ Evolution
 Selection and Drift
 TREE, 2013
 
+![page68_img2.jpeg](images/page68_img2.jpeg)
+
+![page68_img3.jpeg](images/page68_img3.jpeg)
+
 ## Page 69
 
 *[Page 69 appears to be blank or image-only]*
@@ -739,6 +905,14 @@ Complexity:
 "Chaos and Order"
 (Phase transitions, etc…)
 
+![page71_img1.jpeg](images/page71_img1.jpeg)
+
+![page71_img2.jpeg](images/page71_img2.jpeg)
+
+![page71_img3.jpeg](images/page71_img3.jpeg)
+
+![page71_img4.jpeg](images/page71_img4.jpeg)
+
 ## Page 72
 
 RBF’s K-Shell Class of Tensegrity 
@@ -748,6 +922,10 @@ dynamics among K items.
 G
 E
 P
+
+![page72_img1.jpeg](images/page72_img1.jpeg)
+
+![page72_img2.jpeg](images/page72_img2.jpeg)
 
 ## Page 73
 
@@ -765,6 +943,8 @@ Tensegrity system
  
 States
 Processes
+
+![page73_img1.jpeg](images/page73_img1.jpeg)
 
 ## Page 74
 
@@ -820,6 +1000,8 @@ The same could probably be said for Phenotype or Environment, which are both
 endlessly dynamic and infinitely describable (cue Borges story…..). So…..
 We use abstract lower-dimensional state spaces (manifolds).
 
+![page78_img1.jpeg](images/page78_img1.jpeg)
+
 ## Page 79
 
 Broadly we can consider two types of theory -- State and Process theories:
@@ -842,6 +1024,16 @@ F
 D i m e n s i o n a l        r e d u c t i o n ….
 (Coarse-Graining of Data)
 
+![page80_img1.jpeg](images/page80_img1.jpeg)
+
+![page80_img2.jpeg](images/page80_img2.jpeg)
+
+![page80_img3.jpeg](images/page80_img3.jpeg)
+
+![page80_img4.jpeg](images/page80_img4.jpeg)
+
+![page80_img5.jpeg](images/page80_img5.jpeg)
+
 ## Page 81
 
 “Dirac defines gauge as under-determination 
@@ -853,6 +1045,10 @@ physical, by definition...”
 “Measurement”
 Rovelli 2013
 
+![page81_img1.jpeg](images/page81_img1.jpeg)
+
+![page81_img2.jpeg](images/page81_img2.jpeg)
+
 ## Page 82
 
 2013
@@ -862,10 +1058,24 @@ that….only gauge-invariant quantities can be
 physical, by definition...”
 Rovelli 2013
 
+![page82_img1.jpeg](images/page82_img1.jpeg)
+
+![page82_img2.jpeg](images/page82_img2.jpeg)
+
 ## Page 83
 
 Coarse-graining
 Mainstream:
+
+![page83_img1.jpeg](images/page83_img1.jpeg)
+
+![page83_img2.jpeg](images/page83_img2.jpeg)
+
+![page83_img3.jpeg](images/page83_img3.jpeg)
+
+![page83_img4.jpeg](images/page83_img4.jpeg)
+
+![page83_img5.jpeg](images/page83_img5.jpeg)
 
 ## Page 84
 
@@ -873,6 +1083,12 @@ Fringe:
 2013
 2016
 Coarse-graining
+
+![page84_img1.jpeg](images/page84_img1.jpeg)
+
+![page84_img2.jpeg](images/page84_img2.jpeg)
+
+![page84_img3.jpeg](images/page84_img3.jpeg)
 
 ## Page 85
 
@@ -908,9 +1124,27 @@ Example state/process + coarse-graining for “Pogo Foraging”
 2017
 2016
 
+![page87_img1.jpeg](images/page87_img1.jpeg)
+
+![page87_img2.jpeg](images/page87_img2.jpeg)
+
+![page87_img3.jpeg](images/page87_img3.jpeg)
+
+![page87_img4.jpeg](images/page87_img4.jpeg)
+
+![page87_img5.jpeg](images/page87_img5.jpeg)
+
+![page87_img6.jpeg](images/page87_img6.jpeg)
+
+![page87_img7.jpeg](images/page87_img7.jpeg)
+
 ## Page 88
 
 *[Page 88 appears to be blank or image-only]*
+
+![page88_img1.jpeg](images/page88_img1.jpeg)
+
+![page88_img2.jpeg](images/page88_img2.jpeg)
 
 
 ---

@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Pools_6908c1a0.pdf`
 
+> 9 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.21298888
 2026-07-10
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -378,6 +382,8 @@ Related Work and Alternative Designs
 Three broad alternatives to the fonds/rules/tools pattern are common in research-software monorepos, and each has a known failure
 mode this design deliberately avoids.
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 Pools, Rules, and Tools
@@ -450,6 +456,8 @@ The template_contacts fond holds a registry of research collaborators, advisors,
 required fields id (a unique slug), name, and email, plus optional fields affiliation, role, orcid, website, and notes. The YAML file
 (data/contacts.yaml) is the source of truth; a JSON mirror (data/contacts.json) supports consumers that prefer JSON deserialization.
 Deduplication is enforced on the id field at validation time.
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -628,6 +636,8 @@ Strong rule validation counts are injected into the manuscript through the token
 that returned status="ok" during the integration run. This creates a verifiable link between the pipeline’s actual behaviour and the
 manuscript’s claims — the manuscript cannot assert successful validation without the pipeline having actually succeeded.
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Pools, Rules, and Tools
@@ -719,6 +729,8 @@ The Three Template Tools
 template_code_executor
 A generic code execution tool that accepts a JSON payload on standard input and returns execution results as JSON. The invocation
 contract is:
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -886,6 +898,8 @@ always consistent with the code that generated them [Stodden et al., 2013].
 Methods: The Script Pipeline
 Six thin orchestration scripts govern the integration workflow (fig. 7, fig. 6):
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Pools, Rules, and Tools
@@ -940,6 +954,10 @@ ters:
 not yet completed. All three reader modules return None or empty collections in this case, and run_integration_demo() reports
 the missing resource in the summary dict without raising.
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 Pools, Rules, and Tools
@@ -982,6 +1000,8 @@ test that calls run_integration_demo() and asserts that the summary dict contain
 — a contract test that verifies the token injection pipeline’s data source. tests/test_manuscript_variables.py adds a negative control:
 it monkeypatches run_integration_demo()’s return value and asserts the derived tokens actually change, proving the token-generation
 function is live-wired to its source rather than emitting a hard-coded constant.
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 

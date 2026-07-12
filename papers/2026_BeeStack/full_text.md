@@ -2,6 +2,8 @@
 
 > Extracted from `BeeStack_combined.pdf`
 
+> 42 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -833,6 +835,8 @@ survive module replacement.
 4. Validated reduced kernels for BeeMind active-inference policy scoring, BeeSwarm dance recruitment, and BeeNiche comb-and-
 thermal stepping, each with explicit diagnostic panels.
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 5. Manuscript hydration and project-wide readiness reports so that prose and reports never drift from the artifacts they
@@ -872,6 +876,8 @@ neuroethology, and robotic-dance sources support mechanistic context and interfa
 Empirical availability
 Empirical BeeBrain analysis remains data-gated. Public or licensed payloads are first recorded as metadata, then only downloaded and
 parsed when the source is legally reusable, tractable, and has an inspectable schema. Paywalled, too-large, absent, or underspecified
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
@@ -1098,6 +1104,8 @@ figure index.
 5. No module replacement without contract satisfaction. A future neural, policy, swarm, or niche engine must satisfy the
 same typed boundary before orchestration can accept it.
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 6
@@ -1141,6 +1149,8 @@ The methods layer now also records a conservative honeybee calibration scorecard
 inertia-rescaling witness of 0.820.
 These values are generated from configured mass, segment proportions, four-wing coupling, and
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Figure 5: FlyBody/MuJoCo beebody flybody wing-beat flight render shows Eight-frame contact sheet from FlightImitationWBPG and
@@ -1179,6 +1189,8 @@ model, wing aerodynamics, and leg-tip contact mechanics still require honey-bee-
 limitation and a roadmap priority: visual fidelity is necessary but not suﬀicient for biomechanical claims, and BeeStack reports this
 limitation rather than folding it into a single fidelity score.
 
+![page17_img1.png](images/page17_img1.png)
+
 ## Page 18
 
 Figure 6: Matplotlib beebody motion, wing power, and phase witness shows Integrated-run witness linking COM-speed proxy, wing-power
@@ -1216,6 +1228,8 @@ The collision scene initializes ten BeeBody models and drives them inward with w
 one dancer and followers on a comb/floor arena. The long waggle scene keeps the configured-waggle contract but extends the rollout
 to 96 frames at 12 fps. The contact report records floor/body contact, waggle phase samples, follower distance, orientation error, and
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 7: Matplotlib/pandas/NetworkX beebody methods telemetry dashboard shows BeeBody methods dashboard showing reduced
@@ -1226,6 +1240,10 @@ Figure 8: Matplotlib beebody and beeswarm micro-to-macro calibration map shows C
 Body/FlyBody scene metrics, waggle-motion anchors, and reduced BeeSwarm or BEEHAVE-compatible colony summaries. Generated
 from FlyBody scene metrics, simulation records, BEEHAVE anchor, and source refresh ledger. Sidecar validation checks raster, source
 routing, and registered claim tier. Does not calibrate colony-scale recruitment or make small-scene contacts a population model.
+
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
 
 ## Page 20
 
@@ -1256,6 +1274,8 @@ not prove BEEHAVE-scale population dynamics. The current bound on BeeSwarm hones
 agent count and the 20,000 BEEHAVE-scale represented count. Closing that gap remains a roadmap item through BEEHAVE adapter
 coupling, external scenario traces, and eventually surrogate agents trained from higher-fidelity rollouts.
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 10: FlyBody/MuJoCo beeswarm configured waggle dance scene shows Eight-frame contact sheet from a strict MuJoCo waggle
@@ -1268,6 +1288,10 @@ rollout with phase-aware runs, follower-orientation diagnostics, and contact-gra
 Generated from
 animation manifest, flybody_scenes/waggle_long contact report, and follower-orientation diagnostics. Sidecar validation checks raster,
 source routing, and registered claim tier. Does not prove colony-scale dance-language use or calibrated follower kinematics.
+
+![page21_img1.png](images/page21_img1.png)
+
+![page21_img2.png](images/page21_img2.png)
 
 ## Page 22
 
@@ -1305,6 +1329,8 @@ Central complex (CX)
 The CX channel maintains a head-direction estimate on 32 bins by integrating a sky-compass bearing and optic-flow drift, in the spirit
 of the anatomically constrained insect path-integration model [Stone et al., 2017, Honkanen et al., 2019]. The CX state is part of every
 BrainState so downstream layers (BeeMind belief updates, BeeSwarm dance decoding) read a consistent heading.
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -1407,6 +1433,8 @@ value, epistemic value, energy cost, risk cost, and caste prior. The scoring is 
 Parr and Friston, 2017] but deliberately substitutes hand-calibrated witnesses for the learned transition and observation models that a
 full active-inference agent would require.
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 Figure 14: Matplotlib/pandas/NetworkX beebrain empirical methods completeness shows BeeBrain completeness dashboard reporting
@@ -1437,6 +1465,8 @@ Functional Granger connectivity from calcium imaging [Paoli et al., 2023] remain
 ces are not publicly deposited. The methods contract therefore separates structural-match and panel-summary witnesses from
 connectome-scale or calcium-validated dynamics—the latter require simulator-backed backends and held-out task residuals de-
 scribed in sec. 15, not prose upgrades alone.
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1479,6 +1509,8 @@ Planned driver and forage data surfaces
 BeeNiche v0 uses deterministic seasonal/weather witnesses rather than external observations. The scholarship refresh identifies adapter
 targets that should enter only through typed driver ingestion (see sec. 15 step 2): EPA and peer-reviewed hive-matrix pesticide residues
 
+![page26_img1.png](images/page26_img1.png)
+
 ## Page 27
 
 [Glinski et al., 2024, U.S. Environmental Protection Agency, 2024, Hisamoto et al., 2024], land-use effects on forage nutrition [Inês da
@@ -1515,6 +1547,8 @@ Fidelity boundary
 BeeNiche is a voxel comb and thermal kernel with adapter schemas. It now includes deterministic seasonal/weather forage witnesses, but
 it does not currently model:
 
+![page27_img1.png](images/page27_img1.png)
+
 ## Page 28
 
 Figure 17: Matplotlib/pandas/NetworkX beeniche comb and thermal diagnostics shows BeeNiche methods panel showing comb occu-
@@ -1526,6 +1560,8 @@ hive thermodynamics engine.
 • live Hiveopolis or BEEHAVE runtime callbacks.
 Each of those is a roadmap item. The architectural commitment is that adding any of them should only modify BeeNiche internals; the
 cross-layer CombGrid and PheromoneField contracts that link BeeNiche to BeeSwarm and BeeBody do not change.
+
+![page28_img1.png](images/page28_img1.png)
 
 ## Page 29
 
@@ -1624,6 +1660,8 @@ what fidelity tier the kernel sits in, whether the figure passed nonblank/qualit
 regenerate it. That is the operational meaning of “reproducible research” inside BeeStack: not merely “the code is public,” but “every
 claim is linkable, every figure is regenerable, and every fidelity gap is named” [Wilson et al., 2017, Lamprecht et al., 2020].
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 19: Matplotlib beestack validation readiness and residual blockers shows Validation-readiness panel separating implemented
@@ -1634,11 +1672,17 @@ Figure 20: Matplotlib beestack manuscript figure claim map shows Overview matrix
 section and registered claim family. Generated from figure registry and manuscript figure index. Sidecar validation checks raster, source
 routing, and registered claim tier. Does not add empirical evidence beyond the registered figure sidecars.
 
+![page31_img1.png](images/page31_img1.png)
+
+![page31_img2.png](images/page31_img2.png)
+
 ## Page 32
 
 Figure 21: Matplotlib beestack manuscript figure claim detail shows Split companion table listing primary figures, source-data classes,
 claim tiers, and unsupported-inference boundaries. Generated from figure registry and manuscript figure index. Sidecar validation checks
 raster, source routing, and registered claim tier. Does not add empirical evidence beyond the registered figure sidecars.
+
+![page32_img1.png](images/page32_img1.png)
 
 ## Page 33
 
@@ -1650,6 +1694,10 @@ Figure 23: Matplotlib/pandas/NetworkX beestack methods dashboard detail shows Sp
 fractions, visual artifact counts, evidence-link counts, gap counts, and boundaries. Generated from MethodsAnalysisReport module
 panels and visual QA report. Sidecar validation checks raster, source routing, and registered claim tier. Does not support biological
 predictive validity.
+
+![page33_img1.png](images/page33_img1.png)
+
+![page33_img2.png](images/page33_img2.png)
 
 ## Page 34
 
@@ -1668,6 +1716,8 @@ before it propagates to the animation manifest.
 proxy geoms) is rejected as evidence before it reaches the methods-analysis Swarm panel.
 Each failure mode is represented by a generated diagnostic or regression-style test in tests/, so the manuscript claim stays at the level
 of what the validators check rather than undocumented debugging history.
+
+![page34_img1.png](images/page34_img1.png)
 
 ## Page 35
 
@@ -1757,6 +1807,8 @@ Why the gap honesty matters
 A reduced BeeBrain that substitutes synthetic values for missing calcium traces would still produce a complete-looking manuscript. The
 gap-explicit design here deliberately makes incompleteness visible in the hydrated manuscript: BRAIN_DATA_PARSEABLE_FRACTION = 0
 
+![page36_img1.png](images/page36_img1.png)
+
 ## Page 37
 
 Figure 26: Matplotlib connectome evidence tiers shows Coverage bars for structural, functional, and synaptic connectome tiers with
@@ -1765,6 +1817,10 @@ routing, and registered claim tier. Does not upgrade unavailable tiers into supp
 Figure 27: Matplotlib empirical odor-response panel heatmap shows Heatmap of the first registered empirical odor-response panel
 showing channel responses across stimuli. Generated from output/data/empirical_analysis.json. Sidecar validation checks raster, source
 routing, and registered claim tier. Does not support connectome-scale or calcium-validated dynamics.
+
+![page37_img1.png](images/page37_img1.png)
+
+![page37_img2.png](images/page37_img2.png)
 
 ## Page 38
 
@@ -1780,11 +1836,15 @@ Raw empirical downloads live in output/data/empirical_sources/ and are documente
 tomy_downloads.json so that every dataset, its DOI, its publication, its CC license, and the date of download are recorded. This trail
 is essential for the data-provenance and ethics considerations summarized in sec. 16 and sec. 17.
 
+![page38_img1.png](images/page38_img1.png)
+
 ## Page 39
 
 Figure 29: Matplotlib honeybee standard brain vrml projection shows VRML geometry centroids with structural tract overlays when
 the connectome report is available. Generated from output/data/bee_brain_connectome.json. Sidecar validation checks raster, source
 routing, and registered claim tier. Does not infer functional or synaptic connectivity.
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 
@@ -1798,11 +1858,17 @@ Figure 31: Matplotlib waggle follower empirical alignment shows Hadjitofi–Webb
 decoding confidence. Generated from output/data/waggle_follower_analysis.json. Sidecar validation checks raster, source routing, and
 registered claim tier. Does not validate colony-scale recruitment.
 
+![page40_img1.png](images/page40_img1.png)
+
+![page40_img2.png](images/page40_img2.png)
+
 ## Page 41
 
 Figure 32: Matplotlib brain data completeness matrix shows Empirical completeness matrix showing which BeeBrain source rows
 are registered, locally available, parseable, and source-verified. Generated from output/data/brain_data_completeness.json. Sidecar
 validation checks raster, source routing, and registered claim tier. Does not replace absent calcium payloads with synthetic traces.
+
+![page41_img1.png](images/page41_img1.png)
 
 ## Page 42
 
@@ -1837,6 +1903,8 @@ The run summary is not a one-off console transcript. The values in this section 
 per-step records are written to output/data/simulation_records.json, and the contract coverage witness is written to output/dat
 a/module_coverage.json. The same pipeline writes output/data/animation_manifest.json, output/reports/beestack_integri
 
+![page42_img1.png](images/page42_img1.png)
+
 ## Page 43
 
 Figure 34: Matplotlib beebody energy time series shows Integrated-run BeeBody energy witness showing deterministic reduced energy
@@ -1846,6 +1914,10 @@ Figure 35:
 Matplotlib beeniche comb occupancy time series shows Integrated-run comb-occupancy witness showing deterministic
 BeeNiche state changes across control steps. Generated from output/data/simulation_records.json. Sidecar validation checks raster,
 source routing, and registered claim tier. Does not validate full hive ecology.
+
+![page43_img1.png](images/page43_img1.png)
+
+![page43_img2.png](images/page43_img2.png)
 
 ## Page 44
 
@@ -1883,6 +1955,8 @@ Cross-references to per-module results
 Where the run touches a specific module, the relevant per-module results section provides the depth: BeeBody for the energetics and
 rendering, BeeBrain for the AL–MB–CX trace, BeeMind for the policy-score landscape, BeeSwarm for the recruitment and contact pairs,
 
+![page44_img1.png](images/page44_img1.png)
+
 ## Page 45
 
 and BeeNiche for the comb and thermal traces. Empirical anchor data are summarized in sec. 10; the research-suite scorecards and
@@ -1919,6 +1993,8 @@ The latest synthesis reports validation fraction 1.000, synthesized readiness fr
 chors. The digital-twin readiness gate remains False in the generated readiness review. The integrated run improved brood-temperature
 error by 4.415 °C. The top synthesis finding is: Weakest synthesized module is BeeSwarm (readiness 0.925; gaps 3).
 
+![page46_img1.png](images/page46_img1.png)
+
 ## Page 47
 
 Figure 38:
@@ -1926,11 +2002,15 @@ Matplotlib/pandas/NetworkX beestack research sensitivity sweeps shows Determinis
 reduced-kernel response under controlled one-parameter perturbations. Generated from ResearchSuiteReport sensitivity sweeps. Sidecar
 validation checks raster, source routing, and registered claim tier. Does not replace Bayesian calibration or external scenario validation.
 
+![page47_img1.png](images/page47_img1.png)
+
 ## Page 48
 
 Figure 39: Matplotlib/NetworkX beestack fidelity evidence network shows Evidence network linking module scorecards, empirical Bee-
 Brain records, and provenance nodes from the research suite. Generated from ResearchSuiteReport evidence records. Sidecar validation
 checks raster, source routing, and registered claim tier. Does not make empirical coverage complete.
+
+![page48_img1.png](images/page48_img1.png)
 
 ## Page 49
 
@@ -1963,6 +2043,8 @@ This follows the spirit of global sensitivity analysis: the first goal is not to
 outputs move under controlled parameter changes and which outputs are structurally insensitive under the current reduced kernel [Saltelli
 et al., 2008].
 
+![page49_img1.png](images/page49_img1.png)
+
 ## Page 50
 
 Figure
@@ -1991,6 +2073,8 @@ from
 out-
 put/reports/stack_synthesis_review.json. Sidecar validation checks raster, source routing, and registered claim tier. Does not make
 BeeStack digital-twin ready.
+
+![page50_img1.png](images/page50_img1.png)
 
 ## Page 51
 
@@ -2027,6 +2111,8 @@ To audit a single number in this section:
 4. Cross-reference any failed check against the known_gaps list in the same report.
 Every JSON report in the suite is small enough to read directly; that is intentional. A reproducible-research artifact that requires
 specialized tooling to inspect is one that drifts silently from the prose that describes it [Wilson et al., 2017].
+
+![page51_img1.png](images/page51_img1.png)
 
 ## Page 52
 

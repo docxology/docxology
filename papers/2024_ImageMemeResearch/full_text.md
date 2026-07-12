@@ -2,6 +2,8 @@
 
 > Extracted from `2024_ImageMemeResearch.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -189,6 +191,8 @@ event within other contemporaneous circulating narratives that signal distrust o
 2
 MASCARENHAS ET AL.
  23301643, 0, Downloaded from https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24900, Wiley Online Library on [16/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
 
 ## Page 3
 
@@ -561,6 +565,8 @@ template that claims masks are ineffective against Covid-19.
 MASCARENHAS ET AL.
 5
  23301643, 0, Downloaded from https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24900, Wiley Online Library on [16/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 ## Page 6
 
@@ -995,6 +1001,8 @@ MASCARENHAS ET AL.
 9
  23301643, 0, Downloaded from https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24900, Wiley Online Library on [16/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
 ## Page 10
 
 interrelated elements, diverse populations, and dynamic
@@ -1117,6 +1125,8 @@ described in the text.
 10
 MASCARENHAS ET AL.
  23301643, 0, Downloaded from https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24900, Wiley Online Library on [16/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
@@ -1451,6 +1461,8 @@ array of objects.
 MASCARENHAS ET AL.
 13
  23301643, 0, Downloaded from https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24900, Wiley Online Library on [16/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page13_img1.jpeg](images/page13_img1.jpeg)
 
 ## Page 14
 

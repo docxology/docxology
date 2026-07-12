@@ -2,6 +2,8 @@
 
 > Extracted from `2018_PPPiP.pdf`
 
+> 19 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -58,6 +60,12 @@ Wells and Dennis 2016; Sapolsky 2017). An established body of literature demonst
 of non-molecular interventions such as relationship therapy for the improvement of individual and
 Arts 2018, 7, 39; doi:10.3390/arts7030039
 www.mdpi.com/journal/arts
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
+![page1_img3.png](images/page1_img3.png)
 
 ## Page 2
 
@@ -373,6 +381,8 @@ Drawing made by authors.
 License: Creative Commons
 Attribution-NonCommercial 4.0 International.
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
 ## Page 8
 
 Arts 2018, 7, 39
@@ -389,6 +399,16 @@ Figure A3. “
 (Tantrum)”. Bilingual, narrative elements. Red and black pen, white paper.
 Drawing made by authors. License: Creative Commons Attribution-NonCommercial 4.0 International.
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
+![page8_img4.jpeg](images/page8_img4.jpeg)
+
+![page8_img5.jpeg](images/page8_img5.jpeg)
+
 ## Page 9
 
 Arts 2018, 7, 39
@@ -401,6 +421,14 @@ Appendix Examples of “Pure Abstraction” PPPiP’s
 Figure A5. “Two Things”. Pure abstraction. Red and black pens, white paper. Drawing made by
 authors. License: Creative Commons Attribution-NonCommercial 4.0 International.
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
+![page9_img4.jpeg](images/page9_img4.jpeg)
+
 ## Page 10
 
 Arts 2018, 7, 39
@@ -411,6 +439,14 @@ Creative Commons Attribution-NonCommercial 4.0 International.
  
 Figure A7. “Wave”. Red and black pen, white paper. Drawing made by authors. License: Creative
 Commons Attribution-NonCommercial 4.0 International.
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
+
+![page10_img3.jpeg](images/page10_img3.jpeg)
+
+![page10_img4.jpeg](images/page10_img4.jpeg)
 
 ## Page 11
 
@@ -446,6 +482,8 @@ A Variational Approach to Niche Construction. Journal of the Royal Society, Inte
 Debrot, Anik, Nathalie Meuwly, Amy Muise, Emily A. Impett, and Dominik Schoebi. 2017. More Than Just
 Sex: Affection Mediates the Association Between Sexual Activity and Well-Being. Personality & Social
 Psychology Bulletin 43: 287–99. [CrossRef]
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
 
 ## Page 12
 
@@ -581,6 +619,8 @@ United States of America 115: 4375–80. [CrossRef] [PubMed]
 © 2018 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
 article distributed under the terms and conditions of the Creative Commons Attribution
 (CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+
+![page14_img1.png](images/page14_img1.png)
 
 
 ---

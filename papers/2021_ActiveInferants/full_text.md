@@ -2,6 +2,8 @@
 
 > Extracted from `2021_ActiveInferants.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -79,6 +81,8 @@ and development (Abouheif et al., 2014; Sultan et al., 2017; Jablonka and Noble,
 behavioral algorithms span scales of biological organization and explain the function and resilience
 of complex biological systems (Hills et al., 2015; Gordon, 2016; Feinerman and Korman, 2017).
 Studies of collective behavior within the Eco-evo-devo framework emphasize ecological context,
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -527,6 +531,8 @@ Frontiers in Behavioral Neuroscience | www.frontiersin.org
 5
 June 2021 | Volume 15 | Article 647732
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
 ## Page 6
 
 Friedman et al.
@@ -687,6 +693,10 @@ sizes explored in our simulations, foragers were consistently able
 Frontiers in Behavioral Neuroscience | www.frontiersin.org
 7
 June 2021 | Volume 15 | Article 647732
+
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.jpeg](images/page7_img2.jpeg)
 
 ## Page 8
 

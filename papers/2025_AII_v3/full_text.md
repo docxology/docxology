@@ -2,6 +2,8 @@
 
 > Extracted from `2025_AII_v3.pdf`
 
+> 49 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -83,6 +85,8 @@ The Active Inference Ecosystem
  ◦
  ◦
  ◦
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -217,6 +221,8 @@ blanket@activeinference.institute
 ## Page 3
 
 *[Page 3 appears to be blank or image-only]*
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
 
 ## Page 4
 
@@ -719,6 +725,10 @@ functions provided by the
 Institute Programs
 Ecosystem Support
 
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
+
 ## Page 13
 
 Institute & Ecosystem
@@ -1094,10 +1104,20 @@ Institute
 The Active Inference 
 Ecosystem
 
+![page18_img1.jpeg](images/page18_img1.jpeg)
+
+![page18_img2.jpeg](images/page18_img2.jpeg)
+
+![page18_img3.jpeg](images/page18_img3.jpeg)
+
 ## Page 19
 
 breadth of the work 
 ongoing.
+
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
+![page19_img2.jpeg](images/page19_img2.jpeg)
 
 ## Page 20
 
@@ -1543,6 +1563,8 @@ and make relevant contributions to our niche.
 Active Inference
 Systems Approach
  •
+
+![page26_img1.jpeg](images/page26_img1.jpeg)
 
 ## Page 27
 
@@ -2302,6 +2324,8 @@ with
 Institute Organization
 The Active Inference Ecosystem
 ⁠
+
+![page42_img1.jpeg](images/page42_img1.jpeg)
 
 ## Page 43
 
@@ -3452,6 +3476,18 @@ GuestStream #061.1
 Myth of Objectivity 
 Myth of Objectivity
 
+![page63_img1.jpeg](images/page63_img1.jpeg)
+
+![page63_img2.jpeg](images/page63_img2.jpeg)
+
+![page63_img3.jpeg](images/page63_img3.jpeg)
+
+![page63_img4.jpeg](images/page63_img4.jpeg)
+
+![page63_img5.jpeg](images/page63_img5.jpeg)
+
+![page63_img6.jpeg](images/page63_img6.jpeg)
+
 ## Page 64
 
 Hongju Pae
@@ -3537,6 +3573,18 @@ Livestreams
 Overview
 Research Fellows ~ Table
 
+![page64_img1.jpeg](images/page64_img1.jpeg)
+
+![page64_img2.jpeg](images/page64_img2.jpeg)
+
+![page64_img4.jpeg](images/page64_img4.jpeg)
+
+![page64_img5.jpeg](images/page64_img5.jpeg)
+
+![page64_img6.jpeg](images/page64_img6.jpeg)
+
+![page64_img7.jpeg](images/page64_img7.jpeg)
+
 ## Page 65
 
 All information at: 
@@ -3616,6 +3664,14 @@ understanding of how agency emerges, scales, and
 primary interest lies within the Theoretical Neurobio
 interdisciplinary collaboration and mathematical dev
 formalizing these concepts, aiming to operationalize
+
+![page65_img1.jpeg](images/page65_img1.jpeg)
+
+![page65_img2.jpeg](images/page65_img2.jpeg)
+
+![page65_img3.jpeg](images/page65_img3.jpeg)
+
+![page65_img4.jpeg](images/page65_img4.jpeg)
 
 ## Page 66
 
@@ -4098,6 +4154,8 @@ Partner Logo
 Link
 Partnership description
 Current Institute Partners
+
+![page75_img2.jpeg](images/page75_img2.jpeg)
 
 ## Page 76
 
@@ -4939,6 +4997,8 @@ public Coda Github
  •
  •
 
+![page94_img1.jpeg](images/page94_img1.jpeg)
+
 ## Page 95
 
 Core Functions
@@ -4999,6 +5059,8 @@ Open Source
 
 *[Page 96 appears to be blank or image-only]*
 
+![page96_img1.jpeg](images/page96_img1.jpeg)
+
 ## Page 97
 
 AII ~ Active Inference Ontology
@@ -5047,6 +5109,8 @@ Practical Applications
  •
  •
  •
+
+![page98_img1.jpeg](images/page98_img1.jpeg)
 
 ## Page 99
 
@@ -5359,6 +5423,8 @@ Fellow
 : 0000-0003-
 1289-7997
 ORCID
+
+![page105_img1.jpeg](images/page105_img1.jpeg)
 
 ## Page 106
 
@@ -5762,6 +5828,8 @@ RxInfer.jl Learning Group
 this link
 ⁠
 
+![page117_img1.jpeg](images/page117_img1.jpeg)
+
 ## Page 118
 
 Fundamentals of Active Inference
@@ -5893,6 +5961,8 @@ This is not the way.
 Want to print your doc?
 This is not the way.
 
+![page121_img1.jpeg](images/page121_img1.jpeg)
+
 ## Page 122
 
 Obsidian Repository
@@ -5982,6 +6052,8 @@ accuracy and complexity terms, contextualized by precision across multiple socia
 Traditional Accuracy←→Complexity Decomposition 
 Decomposition Using Transcendental Inference
 
+![page125_img1.jpeg](images/page125_img1.jpeg)
+
 ## Page 126
 
 ⁠
@@ -6004,6 +6076,10 @@ computational account of how humans seamlessly switch between broad, holistic th
  •
  •
 
+![page126_img1.jpeg](images/page126_img1.jpeg)
+
+![page126_img2.jpeg](images/page126_img2.jpeg)
+
 ## Page 127
 
 hierarchical analysis. This has been written about by many thinkers and recently by Ian McGhilchrist and John 
@@ -6014,12 +6090,16 @@ The research traces humanity's cognitive evolution through distinct phases of so
 This is critical for understanding important transitions in our own social-cultural contexts and the impact of 
 particular intervening events such as important cultural icons, communication or mass media technology, or
 
+![page127_img1.jpeg](images/page127_img1.jpeg)
+
 ## Page 128
 
 political/institutional changes. Below are examples of important epochs but important is the ability to identify 
 lower level shifts. 
 ⁠
 Empirical Predictions
+
+![page128_img1.jpeg](images/page128_img1.jpeg)
 
 ## Page 129
 
@@ -6065,6 +6145,8 @@ Writing: Please follow/subscribe here:
  
 https://shaggy.substack.com/
 Interested in: Collaborations on empirical validation, category theory formalization, and AI/AGI applications
+
+![page130_img1.jpeg](images/page130_img1.jpeg)
 
 ## Page 131
 
@@ -6137,6 +6219,8 @@ Want to print your doc?
 This is not the way.
 Want to print your doc?
 This is not the way.
+
+![page132_img1.jpeg](images/page132_img1.jpeg)
 
 ## Page 133
 
@@ -6369,6 +6453,8 @@ Want to print your doc?
 This is not the way.
 Want to print your doc?
 This is not the way.
+
+![page139_img1.jpeg](images/page139_img1.jpeg)
 
 ## Page 140
 
@@ -6666,6 +6752,8 @@ To register,
 !
 complete the form below
 
+![page148_img1.jpeg](images/page148_img1.jpeg)
+
 ## Page 149
 
 What is your full name, or what do you prefer to be called? *
@@ -6799,6 +6887,12 @@ Peter Thestrup Waade
 My research focuses on computational cognitive modelling of multi-scale social interaction, particularly from the 
 perspective of active inference and predictive processing. I did my PhD with Chris Mathys at the Interacting
 
+![page152_img1.jpeg](images/page152_img1.jpeg)
+
+![page152_img2.jpeg](images/page152_img2.jpeg)
+
+![page152_img3.jpeg](images/page152_img3.jpeg)
+
 ## Page 153
 
 Minds Centre at Aarhus University, and am starting a postdoc position at the Translational Neuromodelling Unit 
@@ -6838,6 +6932,10 @@ I am also interested in predictive processing approaches to the meta-problem of 
 understand how intuitions of conscious experience and qualia might arise naturally in certain generative model 
 hierarchies. I enjoy surfing, houseplants, and zen.
 Work in Progress
+
+![page153_img1.jpeg](images/page153_img1.jpeg)
+
+![page153_img2.jpeg](images/page153_img2.jpeg)
 
 ## Page 154
 
@@ -8035,6 +8133,8 @@ Act. Infer. Serve.
 ## Page 190
 
 ⁠
+
+![page190_img1.jpeg](images/page190_img1.jpeg)
 
 ## Page 191
 

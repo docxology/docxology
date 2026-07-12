@@ -4,8 +4,8 @@ Documentation index for all publications. Each folder contains:
 - **README.md** — Paper overview, abstract, keywords, and citation
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
-- **full_text.md** — Full text extracted from the PDF (when available), with page-level structure
-- **images/** — Figures and images extracted from the PDF (when available)
+- **full_text.md** — Full text extracted from the PDF or ODT/DOCX source (when available), with page-level structure and inline image references
+- **images/** — Figures and images extracted from the PDF or document source (when available)
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 

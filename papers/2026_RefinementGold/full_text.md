@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Refinement_36431789.pdf`
 
+> 6 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -427,6 +429,8 @@ Certify purity
 grade and stamp
 hallmark
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 Figure 2: Gold karat grading scale with refinery stage markers
@@ -464,6 +468,8 @@ methodology
 5
 results
 2
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -514,6 +520,10 @@ Selected purity adjectives for this section: unrefined, purified.
 4.5
 Provenance flow
 
+![page9_img1.png](images/page9_img1.png)
+
+![page9_img2.png](images/page9_img2.png)
+
 ## Page 10
 
 Claim
@@ -535,9 +545,13 @@ src/composition.py::_choose_valuelocal
 
 Figure 5: Purity vs claim support
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Figure 6: Token selection heatmap
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 

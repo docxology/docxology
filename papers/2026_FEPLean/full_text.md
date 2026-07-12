@@ -2,6 +2,8 @@
 
 > Extracted from `fep_lean_v1_04-24-2026.pdf`
 
+> 11 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -2929,6 +2931,8 @@ Topology.MetricSpace.Basic
 fep-018
 32
 
+![page32_img1.png](images/page32_img1.png)
+
 ## Page 33
 
 Component
@@ -3228,6 +3232,8 @@ monotonicity step needs mul_le_mul_of_nonneg_left from Mathlib.Algebra.Order.Rin
 import Mathlib.Analysis.SpecialFunctions.Exp
 import Mathlib.Algebra.Order.Ring.Lemmas
 37
+
+![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
@@ -3854,6 +3860,8 @@ latency; the other five stages each complete in under one second on a warm works
 cost profile is dominated by a single opt-in stage, making the default (thin) path essentially I/O-bound.
 47
 
+![page47_img1.png](images/page47_img1.png)
+
 ## Page 48
 
 4.21.3
@@ -3917,6 +3925,8 @@ summary.json,
 hermes_report.md, lean_report.md, validation_report.md, and topics/*.md, and adds verification_manifest.json whenever a
 verification sweep has been executed.
 48
+
+![page48_img1.png](images/page48_img1.png)
 
 ## Page 49
 
@@ -4119,6 +4129,8 @@ Lean 4, against Mathlib4 v4.29.0, with zero sorry—the structural lemmas about 
 and list-folds that make Eq.~21 well-defined, non-negative after subtracting the evidence, bounded below, and amenable to
 iterative minimization. Each of the fourteen rows below is a targeted Lean statement about one such structural piece; for typeset
 51
+
+![page51_img1.png](images/page51_img1.png)
 
 ## Page 52
 
@@ -6074,6 +6086,8 @@ and matching LaTeX statement signatures (one numbered block per theorem in decla
 Appendix~10.
 77
 
+![page77_img1.png](images/page77_img1.png)
+
 ## Page 78
 
 Figure 7: Theorem count by topic area. FEP leads with 14 theorems; Thermodynamics contributes 7. Area sizes reflect the
@@ -6140,6 +6154,8 @@ moonshotai/kimi-k2.6 (49), moonshotai/kimi-k2-thinking
 Hermes mean tokens / topic
 4607 (total 230396 across 50 topics)
 78
+
+![page78_img1.png](images/page78_img1.png)
 
 ## Page 79
 
@@ -6249,6 +6265,8 @@ Figure 8: Maturity heatmap: area (rows) vs maturity level (columns). All 50 topi
 uniform heatmap. The visualization is designed to surface heterogeneity as future topics at partial or aspirational maturity
 are added.
 80
+
+![page80_img1.png](images/page80_img1.png)
 
 ## Page 81
 
@@ -6417,6 +6435,10 @@ category — API/type mismatch (6 cases) — was addressed via YAML sketch impro
 categories were resolved by restore_lean_structure enhancements.
 83
 
+![page83_img1.png](images/page83_img1.png)
+
+![page83_img2.png](images/page83_img2.png)
+
 ## Page 84
 
 The caveat is selection bias: the 50-topic catalogue was curated to fit Mathlib4’s current coverage, so both Hermes and a human
@@ -6457,6 +6479,8 @@ Hypothetical migration table: treat dates as illustrative unless tied to a speci
 Once Mathlib4’s klDiv formalization lands, new or revised catalogue rows that use KL could be upgraded by re-targeting custom
 definitions to the native infrastructure.
 84
+
+![page84_img1.png](images/page84_img1.png)
 
 ## Page 85
 

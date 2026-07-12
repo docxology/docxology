@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Entomological_5a189170.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -36,6 +38,10 @@ Figure 1: Integrity QR strip
 Structured manifest: ../data/transmission_manifest.json
 Figure 2: Publication pairing flow
 
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
 ## Page 2
 
 Entomological Law
@@ -46,6 +52,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.21137276
 2026-07-02
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -296,6 +304,8 @@ Provenance: src/roles.py and src.metrics.role_coverage_matrix(). Caveat: counts 
 not the entirety of each legal sub-field.
 5
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 Figure 4: Network of the 5 recurring themes that link the legal roles — the definitional problem, the expert-testimony
@@ -304,6 +314,8 @@ theme colour. Read as: category changes, not species names, are what move a disp
 Provenance: src/interconnections.py. Why it matters: the synthesis depends on transfers among categories rather than
 parallel lists of topics. Caveat: the graph encodes declared thematic links, not statistical association.
 6
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -344,6 +356,8 @@ not a comprehensive history.
 The same arc appears twice in this reference, for two different reasons. The timeline above shows the milestones the law
 7
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 itself created; the figure below shows the sources that document them — every bibliography entry with a parseable date, not
@@ -366,6 +380,8 @@ state that scope explicitly. Sections sec. 3 through sec. 10 treat each role in 
 in full, theme by theme; and sec. 12 documents the reproducibility contract, the claim ledger, and the honesty boundary
 behind the citation-date figure above.
 8
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
@@ -403,6 +419,8 @@ codifies the requirement that reliable principles be reliably applied to the fac
 That chronology matters: the pre-2000 source base shows a discipline with articulated methods before the courtroom asked
 the Daubert question, so the recurrent dispute is not whether insect succession can ever be law-relevant but whether the
 9
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
@@ -444,6 +462,8 @@ OSAC’s proposed standard for collecting and preserving terrestrial entomologic
 frontier concrete, shifting the problem from whether protocols can be specified to how consistently investigators apply them
 10
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 [Organization of Scientific Area Committees for Forensic Science, 2025].
@@ -484,6 +504,8 @@ Russian and Soviet sources add a second route into the same architecture, and th
 A 1749 Governing Senate decree on locusts in Belogorod Province ordered local authorities to trample and burn newly
 emerged swarms, plow breeding places, use smoke and noise against flying locusts, and report repeatedly to the Senate;
 12
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -588,6 +610,8 @@ under Babbitt v. Sweet Home, so insect habitat enjoys the same protection as the
 invertebrates to its nongame conservation statute and authorizes voluntary programs to conserve, protect, and perpetuate
 invertebrates [Colorado General Assembly, 2024].
 15
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -929,6 +953,8 @@ tree-infestation suit failed for lack of
 an insect expert.
 24
 
+![page26_img1.png](images/page26_img1.png)
+
 ## Page 27
 
 Theme
@@ -1069,6 +1095,8 @@ fail-closed verification block — it cannot prove a number is true. The live or
 py, run with -m live) fetches each source URL and confirms the recorded quotes appear, so “verified” is a re-runnable
 27
 
+![page29_img1.png](images/page29_img1.png)
+
 ## Page 30
 
 Figure 13: The same 43 instruments partitioned by issuing jurisdiction — US-federal, US-state, US-colonial, UK, India,
@@ -1092,6 +1120,8 @@ validation report, the figures, the manuscript variables, and this document with
 the provenance stamp.
 28
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 14: Coverage of the 20 live-checkable claim-ledger entries by declared manuscript section. Provenance: src.cla
@@ -1100,6 +1130,8 @@ where live evidence, not registry counts, carries the truth burden. Why it matte
 boundary auditable by section. Caveat: a section with zero entries may still contain registry-derived facts or qualitative
 cited claims; this figure shows external/current claims that require a quote-backed verification block.
 29
+
+![page31_img1.png](images/page31_img1.png)
 
 ## Page 32
 
@@ -1552,6 +1584,8 @@ END OF TRANSMISSION
 Release: v1.0.0 ⋅DOI 10.5281/zenodo.21137276 ⋅SHA-256 pending… ⋅pairing pending
 Figure 15: Integrity QR strip
 Prior: No prior releases.
+
+![page42_img1.png](images/page42_img1.png)
 
 
 ---

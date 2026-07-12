@@ -2,11 +2,15 @@
 
 > Extracted from `WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf`
 
+> 45 figures extracted to `images/`
+
 ---
 
 ## Page 1
 
 *[Page 1 appears to be blank or image-only]*
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -20,6 +24,8 @@ view on Math
 3. A view on Blake’s 
 view on Active Inference
 4. ????
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
 
 ## Page 3
 
@@ -38,6 +44,8 @@ Though the images, words, structures, letters, themes, context, criticism?
 What can/should be done within one short linear livestream?
 For whom and why? From/Towards where, how, and when? 
 ??? ?
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
 
 ## Page 4
 
@@ -70,6 +78,16 @@ https://blakesociety.org/blake/
 ●
 https://www.blakearchive.org/
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
+![page5_img2.jpeg](images/page5_img2.jpeg)
+
+![page5_img3.jpeg](images/page5_img3.jpeg)
+
+![page5_img4.jpeg](images/page5_img4.jpeg)
+
+![page5_img5.jpeg](images/page5_img5.jpeg)
+
 ## Page 6
 
 Blake & Gothic
@@ -84,6 +102,20 @@ icism/WilliamBlake-GothicRomanticism.html
 https://www.manchesterhive.com/display/9781526121950/9781526121950.xml 
 The Gothic Life of William Blake: 1757-1827
 http://www.lilithgallery.com/articles/williamblake1.html
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
+
+![page6_img4.jpeg](images/page6_img4.jpeg)
+
+![page6_img5.jpeg](images/page6_img5.jpeg)
+
+![page6_img6.jpeg](images/page6_img6.jpeg)
+
+![page6_img7.jpeg](images/page6_img7.jpeg)
 
 ## Page 7
 
@@ -121,6 +153,18 @@ So Kandinsky goes 1→2→3D,
 we know from 4D about 1-as-4 
 and 4-as-1 strategies.
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
+![page8_img4.jpeg](images/page8_img4.jpeg)
+
+![page8_img5.jpeg](images/page8_img5.jpeg)
+
+![page8_img6.jpeg](images/page8_img6.jpeg)
+
 ## Page 9
 
 Blake, Math, and Science
@@ -148,6 +192,12 @@ the bounding line and its infinite inflexions and movements?”
 Line as blanket 
 Blanket as line
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
 ## Page 10
 
 github.com/ActiveInferenceInstitute/ActiveInferAnts/tree/main/0_CONTEXT/Systems/William_Blake 
@@ -158,6 +208,10 @@ methods to scan over Blake’s works & pull
 out references to terms (e.g. System, Math, 
 Science, Space, Time, Eternity…). 
 Too many quotes to show here!
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
 
 ## Page 11
 
@@ -217,6 +271,14 @@ cure for Albion’s melancholy. As the smallest units of sound and meaning,
 “minute particulars” are essential to Blake’s production of a liberated 
 poetics, for “he who wishes to see a Vision; a perfect Whole / Must see it 
 in its Minute Particulars” (91: 20–21).
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
+
+![page12_img3.jpeg](images/page12_img3.jpeg)
+
+![page12_img4.jpeg](images/page12_img4.jpeg)
 
 ## Page 13
 
@@ -282,6 +344,16 @@ Blanket as door? Separating and Connecting
 the rooms and inside/outside? Security 
 blanket/door? Locking blanket?
 
+![page13_img1.jpeg](images/page13_img1.jpeg)
+
+![page13_img2.jpeg](images/page13_img2.jpeg)
+
+![page13_img3.jpeg](images/page13_img3.jpeg)
+
+![page13_img4.jpeg](images/page13_img4.jpeg)
+
+![page13_img5.jpeg](images/page13_img5.jpeg)
+
 ## Page 14
 
 3. Blake & “Narrative Unbound” (1987)
@@ -289,10 +361,28 @@ Structure Learning // Learning Structure
 Many fascinating examples of Blake scholarship, archival work, criticism, application, etc. – 
 Here, some Figures, then next slide with focus on just one embodied page.
 
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
+
+![page14_img4.jpeg](images/page14_img4.jpeg)
+
+![page14_img5.jpeg](images/page14_img5.jpeg)
+
+![page14_img6.jpeg](images/page14_img6.jpeg)
+
+![page14_img7.jpeg](images/page14_img7.jpeg)
+
 ## Page 15
 
 Mirror & Mirrored
 Mirror & Mirrored
+
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
+![page15_img2.jpeg](images/page15_img2.jpeg)
 
 ## Page 16
 
@@ -313,6 +403,8 @@ Spoiler: they may have gone
 on – the rest of book contains 
 at least multiple pen/sessions, 
 if not multiple annotators.
+
+![page16_img1.jpeg](images/page16_img1.jpeg)
 
 ## Page 17
 

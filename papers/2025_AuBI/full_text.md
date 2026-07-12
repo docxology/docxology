@@ -2,6 +2,8 @@
 
 > Extracted from `2025_AuBI.pdf`
 
+> 15 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -449,6 +451,8 @@ Enhanced Predictive Capacity
 Standard UBI models often rely on static economic projections. GPI would continuously integrate real-time data to generate 
 dynamic predictions about individualized impact forecasting, where they predict how specific demographic groups will
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 respond to AuBI, allowing for more tailored support structures. The come the economic ripple effects where by modeling 
@@ -472,10 +476,14 @@ Below is an example schema of the data, system, and process model for a GPI syst
 Example data schema for GPI system (what information the system could utilize)
 GPI System model
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 Example GPI system model 
 GPI Process Model
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -503,6 +511,8 @@ Comparing BOPS and GPI
  •
  •
  •
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -653,6 +663,8 @@ Multi-language support with real-time translation.
  •
  •
  •
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -879,9 +891,13 @@ User Experience and System Interactions
 
 Example Data architecture
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 Example Dashboard
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -891,6 +907,8 @@ thereby living up to its AuBI moniker. By combining efficiency-driven LLMs, bloc
 the platform can evolve and improve over time while maintaining security, privacy, and decentralization principles.
 This is our version of a potential model. Feel free to make it your own. Ask extra questions, add extra widgets, remove that 
 which you don’t need - sacrifice making it perfect, for getting it done.
+
+![page24_img1.png](images/page24_img1.png)
 
 ## Page 25
 
@@ -1297,6 +1315,10 @@ surprise at individual, community, institutions and systemic levels. Think const
 feedback loops, townhalls and tie ins with government to monitor the avenues of 
 release of Free Energy. Further think FEP in local economic stabilization.
 
+![page33_img1.png](images/page33_img1.png)
+
+![page33_img2.png](images/page33_img2.png)
+
 ## Page 34
 
 TE #3: Bayesian Community Income Floors
@@ -1318,6 +1340,10 @@ tokenization supplement.
 Depreciated currency economies (eg: Turkey, Nigeria, Vietnam, Indonesia) can 
 benefit from add digital, CBDC, Bitcoin or similar variants as a shield against socio-
 economic collapse.
+
+![page34_img1.png](images/page34_img1.png)
+
+![page34_img2.png](images/page34_img2.png)
 
 ## Page 35
 
@@ -1343,6 +1369,10 @@ support levels based on local economic indicators. It releases additional resour
 when leading indicators suggest economic contraction and likely funds through a 
 percentage of local business revenues during growth periods.
 
+![page35_img1.png](images/page35_img1.png)
+
+![page35_img2.png](images/page35_img2.png)
+
 ## Page 36
 
 TE #7:  Precision-Weighted Intervention System
@@ -1363,6 +1393,8 @@ Difficult, yes, complicated, yes, impossible, No.
 💮We hope these brainwaves will help you design pilots that increase epistemic humility and build more intelligent 
 institutions. By re-conceptualizing themselves as prediction machines engaged in active inference, social institutions can 
 develop increasingly accurate models of human behavior and economic dynamics - for the greater good. 💮
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 

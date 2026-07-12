@@ -2,6 +2,8 @@
 
 > Extracted from `2026_BeforePragmatism.pdf`
 
+> 13 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.18807971
 March 5, 2026
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -642,6 +646,8 @@ in illuminated printing — a process that physically unifies conception and exe
 aesthetic theory demands.
 8
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
 ## Page 9
 
 Figure 2: Blake × Pragmatism Correspondence Matrix. Dendrogram-ordered heatmap of qualitative, in-
@@ -651,11 +657,15 @@ empirical measurement — heuristic starting points for further systematic inves
 cate stronger convergence; dendrogram branches reveal thematic families.
 9
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
 ## Page 10
 
 Figure 3: The Shores of Revolution. Washington, Paine, and Warren brace against the storm of Urizenic
 law. America a Prophecy, lines 4–9; AI-generated illustration.
 10
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
 
 ## Page 11
 
@@ -663,6 +673,8 @@ Figure 4: Frontispiece to America a Prophecy. Blake’s frontispiece depicts a c
 often identified as Orc bound upon the Rock of Ages — caught between monumental stone pillars, while a
 smaller figure looks on in anguish. Lambeth Printed Books, 1793.
 11
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
 
 ## Page 12
 
@@ -1113,6 +1125,8 @@ gates that kept the senses institutionally separated are consumed, and the flame
 Figure 5: Urizen Descends. Urizen pours storèd snows upon the Atlantic. America a Prophecy, Plate 15–16;
 Erdman 56–57.
 21
+
+![page21_img1.jpeg](images/page21_img1.jpeg)
 
 ## Page 22
 
@@ -1844,6 +1858,8 @@ both traditions, and traces its manifestation in America a Prophecy, building to
 that Active Inference will provide in section 6.
 37
 
+![page37_img1.jpeg](images/page37_img1.jpeg)
+
 ## Page 38
 
 5
@@ -2023,6 +2039,8 @@ epistemology. Blake’s Fourfold Vision is not a state of achieved certainty but
 Figure 7: Shaking Mental Chains. The Thirteen Governors shatter golden chains of rigid belief. America a
 Prophecy, line 67; AI-generated illustration.
 41
+
+![page41_img1.jpeg](images/page41_img1.jpeg)
 
 ## Page 42
 
@@ -2306,6 +2324,8 @@ Figure 8: The Five Gates Consumed. Urizen’s law-built Heaven melts in flames. 
 147–151; AI-generated illustration.
 48
 
+![page48_img1.jpeg](images/page48_img1.jpeg)
+
 ## Page 49
 
 5.3.2.1
@@ -2528,6 +2548,8 @@ Figure 9: The Angels Descend.
 The Thirteen Angels descend to join Washington, Paine, and Warren.
 America a Prophecy, lines 53–59; AI-generated illustration.
 53
+
+![page53_img1.jpeg](images/page53_img1.jpeg)
 
 ## Page 54
 
@@ -3389,6 +3411,8 @@ dominance (𝜋𝑝𝑟𝑖𝑜𝑟≫𝜋𝑠𝑒𝑛𝑠𝑜𝑟𝑦). Between
 mythological confrontation. America a Prophecy, lines 91–137; AI-generated illustration.
 68
 
+![page68_img1.jpeg](images/page68_img1.jpeg)
+
 ## Page 69
 
 Figure 11: The Triadic Synthesis: Blake × Pragmatism × Active Inference. Three-way conceptual mapping
@@ -3397,6 +3421,8 @@ oriented epistemology, and the formal mathematics of Active Inference. Six conve
 triangle. Edge annotations detail specific correspondences: Doors ￿Transaction, Imagination ￿Tools, Inquiry
 ￿Free Energy Minimization, Markov Blanket ￿Doors of Perception, among others.
 69
+
+![page69_img1.jpeg](images/page69_img1.jpeg)
 
 ## Page 70
 
@@ -3812,6 +3838,8 @@ round the heavens, and round the abodes of men.” — America a Prophecy
 Figure 12: America a Prophecy, Plate 24 (Closing Image). Illuminated manuscript page; Erdman 57; Lam-
 beth Printed Books.
 77
+
+![page77_img1.jpeg](images/page77_img1.jpeg)
 
 ## Page 78
 

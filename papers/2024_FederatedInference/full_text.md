@@ -2,6 +2,8 @@
 
 > Extracted from `2024_FederatedInference.pdf`
 
+> 13 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -70,6 +72,10 @@ Neuroscience and Biobehavioral Reviews
 journal homepage: www.elsevier.com/locate/neubiorev 
 https://doi.org/10.1016/j.neubiorev.2023.105500 
 Received 4 August 2023; Received in revised form 8 November 2023; Accepted 1 December 2023
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
 
 ## Page 2
 
@@ -441,6 +447,8 @@ product or tensor contraction, while × denotes the Hadamard (element by element
 co-domain and domain, respectively. Finally, ψ denotes the digamma function (the logarithmic derivative of the gamma function). 
 K.J. Friston et al.
 
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
 ## Page 5
 
 Neuroscience and Biobehavioral Reviews 156 (2024) 105500
@@ -528,6 +536,8 @@ contraction, while ⊗denotes an outer product. ch(⋅) and pa(⋅) return the c
 a link (i.e., edge) between a parent and child, if the co-domain of the parent factor (i.e., node) constitutes a domain of a child. This means that each edge—and (the 
 co-domain of) each factor—is uniquely associated with a state, path or outcome. 
 K.J. Friston et al.
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 ## Page 6
 
@@ -846,6 +856,8 @@ modalities (lower circles) register near contrast energy in the centre of the vi
 these observations are described in the subsequent figure. 
 K.J. Friston et al.
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
 ## Page 8
 
 Neuroscience and Biobehavioral Reviews 156 (2024) 105500
@@ -961,6 +973,8 @@ outcomes of each modality; i.e., the sufficient statistics of categorical
 distributions. 
 K.J. Friston et al.
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
 ## Page 9
 
 Neuroscience and Biobehavioral Reviews 156 (2024) 105500
@@ -1004,6 +1018,8 @@ belief updating with and without communication. The red circle highlights the ep
 benefits of communication in the sense that the third agent has resolved her uncertainty about the location of the subject by the third epoch, whereas the same agent 
 without communication only forms precise beliefs, after seeing the subject at the fifth epoch. 
 K.J. Friston et al.
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
 
 ## Page 10
 
@@ -1054,6 +1070,8 @@ responses under a Poisson rate code assumption. Dopamine, in this formulation, s
 entropy of posterior beliefs over combinations of actions based upon expected free energy. In this example, the agent is more confident about her action (i.e., where 
 to look) when she is able to communicate with other agents. This is manifest as a short latency, high amplitude, phasic dopaminergic response. 
 K.J. Friston et al.
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
 
 ## Page 11
 
@@ -1403,6 +1421,8 @@ in the mutual information of the likelihood mappings as a function of acquisitio
 Dirichlet) parameters, noting that in these simulations the expected cost was zero. 
 K.J. Friston et al.
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 Neuroscience and Biobehavioral Reviews 156 (2024) 105500
@@ -1584,12 +1604,16 @@ likelihood mappings correspond to the final mappings—after learning—shown in
 mappings are virtually indistinguishable; despite the fact that subsequent generations had to learn these mappings from scratch. 
 K.J. Friston et al.
 
+![page13_img1.png](images/page13_img1.png)
+
 ## Page 14
 
 Neuroscience and Biobehavioral Reviews 156 (2024) 105500
 14
 (caption on next page) 
 K.J. Friston et al.
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -1844,6 +1868,8 @@ learning in Fig. 9.
 energies. 
 K.J. Friston et al.
 
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
 ## Page 17
 
 Neuroscience and Biobehavioral Reviews 156 (2024) 105500
@@ -1893,6 +1919,8 @@ posterior and prior beliefs.
 12 The free energy due to learning in Fig. 7 scores the increase in complexity 
 after each episode. 
 K.J. Friston et al.
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 

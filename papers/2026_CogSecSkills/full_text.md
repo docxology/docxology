@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Cogsecskills_1a99a2e4.pdf`
 
+> 8 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.20804585
 June 22, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -444,6 +448,8 @@ figure proves that generated manuscript assets sit behind source-owned inputs an
 effectiveness.
 6
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 3.3
@@ -682,12 +688,16 @@ workflow.md, and one adapter per configured harness.
 stay within the closed vocabulary.
 10
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Figure 3: cogsecskills_skill_grid.png: Full-library atlas showing all 100 registry skills in source order with taxonomy colors,
 boundaries, and source-order spans. The figure proves catalogue coverage and group ordering; it does not rank skills or
 indicate effectiveness.
 11
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
@@ -878,12 +888,16 @@ skill-specific and non-reused confidence, evidence, privacy/legal, and negative-
 tainty discipline in the current repository state. It cannot prove that every future user, external model, or organizational
 15
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Figure 5: cogsecskills_ageint_network.png: Group-to-AGEINT-topic crosswalk with count-weighted links. Use this figure
 to move from a library group to the AGEINT teaching topics that explain why the skills exist. The figure proves declared
 teaching alignment for the current catalogue; it does not make a pedagogical or empirical learning-outcome claim.
 16
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -899,6 +913,10 @@ harness, by group and as whole-library totals; the stronger invariants — that 
 that its binding table covers every verb the skill uses — are enforced separately by validate and the conformance suite,
 not by this figure. The figure does not claim behavioral success for any external runtime.
 17
+
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
 
 ## Page 19
 

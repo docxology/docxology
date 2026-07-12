@@ -2,6 +2,8 @@
 
 > Extracted from `2025_SystemsProcesses.pdf`
 
+> 33 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,10 @@ cognitivesecurity.us/
 These slides published open source on Zenodo: 
 10.5281/zenodo.17138224
 
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
 ## Page 2
 
 Outline
@@ -23,11 +29,23 @@ Outline
 ●The Warp and Weave of the Meta
 ●Discussion: Towards a fuller Systems Science
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
+![page2_img2.jpeg](images/page2_img2.jpeg)
+
+![page2_img3.jpeg](images/page2_img3.jpeg)
+
 ## Page 3
 
 Daniel and Sasha went to Claremont on June 24, 2024, to meet with Luke Friendshuh and pick up some materials from Len Troncale + talk with him.
 Currently the 11 boxes (10 boxes of content with lids, 11th box of extra Behavioral journal article are being stored in Crescent City, CA, USA
 Link in the ISSS Knowledge Engineering document
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
+![page3_img2.jpeg](images/page3_img2.jpeg)
+
+![page3_img3.jpeg](images/page3_img3.jpeg)
 
 ## Page 4
 
@@ -45,6 +63,12 @@ Many more
 resources & get 
 involved!!
 welcome.activeinference.institute/
+
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
+![page4_img2.jpeg](images/page4_img2.jpeg)
+
+![page4_img3.jpeg](images/page4_img3.jpeg)
 
 ## Page 5
 
@@ -66,6 +90,12 @@ Active Inference? Yes, and…
 Computable, Typable, Translations, Open Source 
 education and software, first principles…
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
+![page5_img2.jpeg](images/page5_img2.jpeg)
+
+![page5_img3.jpeg](images/page5_img3.jpeg)
+
 ## Page 6
 
 1 Boundaries ⇆ Markov Blankets
@@ -85,6 +115,10 @@ Figure 3.1
 limit, connect, interact, action within/across…
 formation, change, un-form, sediment….
 
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
 ## Page 7
 
 2 Feedback & Cycles ⇆ Predictive Coding Loops
@@ -96,6 +130,12 @@ Positive/negative, dampen/augment, (de)stabilize….
 2022 textbook 
 Figure 5.2
 And connection with Min/Max rules!
+
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.jpeg](images/page7_img2.jpeg)
+
+![page7_img3.jpeg](images/page7_img3.jpeg)
 
 ## Page 8
 
@@ -125,6 +165,12 @@ morphogenesis, and computational
 psychiatry 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC9731232/
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
 ## Page 9
 
 4 Flows and Fields
@@ -139,6 +185,16 @@ Bridging or Clearing, Downhill, Path of least resistance
 2023 On Bayesian 
 mechanics: a physics of and 
 by beliefs https://royalsocietypublishing.org/doi/10.1098/rsfs.2022.0029
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
+![page9_img4.jpeg](images/page9_img4.jpeg)
+
+![page9_img5.jpeg](images/page9_img5.jpeg)
 
 ## Page 10
 
@@ -156,6 +212,16 @@ Figure 9.1
 2023 A Variational Synthesis of Evolutionary and 
 Developmental Dynamics https://www.mdpi.com/1099-4300/25/7/964
 
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
+
+![page10_img3.jpeg](images/page10_img3.jpeg)
+
+![page10_img4.jpeg](images/page10_img4.jpeg)
+
+![page10_img5.jpeg](images/page10_img5.jpeg)
+
 ## Page 11
 
 The Warp and Weave of the Meta
@@ -166,6 +232,8 @@ Education Research, Accessibility, Applicability
 
 Thank you Len & All
 And now, Discussion….
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
 
 
 ---

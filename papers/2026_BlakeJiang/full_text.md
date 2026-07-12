@@ -2,6 +2,8 @@
 
 > Extracted from `blake_jiang_DAF_v1_05-12-2026.pdf`
 
+> 7 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -397,6 +399,8 @@ phenomenology, the demand for clean data, edge-case suppression, the named tech-
 AI cooperation appear — once the conspiratorial scaffolding is bracketed — to track features that Blake’s Urizenic
 5
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 vocabulary and Active Inference’s precision vocabulary also track. The three pickings out are not equivalent. Whether
@@ -421,6 +425,8 @@ scholarship, cognitive science, and public discourse. The conclusion returns to 
 what kind of cognitive architecture can represent the full plurality of experience without collapsing into single vision,
 and what happens to a civilization that deploys, at scale, architectures that cannot.
 6
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -695,6 +701,8 @@ precision), Tharmas (sensation / sensory evidence at the Markov blanket), and Ur
 generative model) coordinating around the unified inferring system, Albion.
 12
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 The parallel with Jiang’s false-god-building AI corporations is structural rather than historical. Urizen is not a moral
@@ -811,6 +819,8 @@ Eight Correspondences with Blake (Compressed Table)
 The first earlier paper [Friedman, 2026a] develops the following correspondences as functional analogues across incom-
 patible metaphysics:
 15
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -960,6 +970,10 @@ parity (𝜋𝑝= 1) the posterior steadily converges to the evidence; under Cle
 reaches the evidence within two updates.
 18
 
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
+
 ## Page 19
 
 combines the entropy term with a non-rigidity term penalising prior-channel dominance; 𝒞∈[0, 1], attaining its
@@ -1039,6 +1053,8 @@ dominance
 manufacturing
 compliance
 20
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 

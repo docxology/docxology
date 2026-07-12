@@ -2,6 +2,8 @@
 
 > Extracted from `2019_AntConsciousness.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -225,6 +227,8 @@ Fig. 1   a Forward tests and b reverse tests, shown here in the context of
 of a block. c A forward test for consciousness would be akin to a “scale” for determining the amount or 
 type of consciousness of an arbitrary system. In all images, gray objects are trusted or assumed to be 
 known, while red objects have unknown reliability or aspects
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 ## Page 6
 

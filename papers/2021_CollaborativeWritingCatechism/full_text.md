@@ -2,6 +2,8 @@
 
 > Extracted from `C3PO.pdf`
 
+> 6 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -33,6 +35,10 @@ everything, and where you aren’t: make suggestions or request an edit.
  
 1 For more information on Catechisms and Facilitation please see the Facilitator’s Catechism Playbook found 
 at https://zenodo.org/record/4579414
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.png](images/page1_img2.png)
 
 ## Page 2
 
@@ -80,6 +86,8 @@ Document Changes. Changes to approaches, processes, and expectations are good,
 but they need to be declared and compared to the original or most recent catechism. 
 Documentation of changes reliably prevents mission creep and drift—not documenting them
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
 ## Page 3
 
 reliably creates it. Documenting updates to the project will also help with team learning and 
@@ -124,6 +132,8 @@ to the work, share it with them! If a call for a team appears to be private or a
  
 2 A Notestream is a shared, common document for thinking out loud, writing notes, collecting references, and 
 drafting outlines.
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
 
 ## Page 4
 
@@ -172,6 +182,8 @@ for the other collaborators.
 • 
 Stay in Touch. It’s good to stay in contact with your former collaborators!
 
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
 ## Page 5
 
 Further Reading 
@@ -184,6 +196,8 @@ Robert 2004
 The Great Preset: Remote Teams and Operational Art, Friedman and Cordes 2020 
 • 
 The Facilitator’s Catechism Playbook, Friedman and Cordes 2021
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 
 ---

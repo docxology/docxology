@@ -2,6 +2,8 @@
 
 > Extracted from `COGANT-0.6.0.pdf`
 
+> 20 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -722,6 +724,8 @@ COGANT_USE_RUST feature flag, with a pure-Python implementation for all other co
 with those tables rather than a blanket claim over all unlisted software.
 7
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 2.6
@@ -1422,6 +1426,8 @@ graph representations that explicitly encode control, data, and call dependencie
 literature frames this as a relational inductive bias: entities, relations, and global state should remain explicit so downstream
 20
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 models can reason compositionally over them [Battaglia et al., 2018]. COGANT keeps those graph relations available, but its
@@ -1613,6 +1619,8 @@ attach plugin settings per language, set output_dir, verbosity, and dry-run mode
 stage_results, error lists, and accessors described below.
 24
 
+![page25_img1.png](images/page25_img1.png)
+
 ## Page 26
 
 7.4
@@ -1789,6 +1797,8 @@ blanket property.
 The upstream visualization in fig. 9 is the second one-way conversion: COGANT’s emitted model.gnn.md is handed to the
 27
 
+![page28_img1.png](images/page28_img1.png)
+
 ## Page 29
 
 Figure 5: Forward codebase-to-program-graph evidence view for the calculator fixture. The renderer reads the same data/p
@@ -1797,6 +1807,8 @@ relation kind, role outlines appear when rule-evidence traces identify Active In
 artifact digests, displayed counts, and sampling status. The figure verifies inspectable static extraction structure; it does not
 prove that all dynamic behavior or external effects were recovered.
 28
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
@@ -1807,6 +1819,8 @@ plus edge direction redundantly identify the role relationships. Edges mark the 
 vectors are node attributes, not edges). This is a compiled representation of extracted evidence, not a learned behavioral
 model.
 29
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 
@@ -1820,6 +1834,8 @@ report source/display shapes, distinct values, nonzero cells, and B identity-sli
 regions are visible before downstream inference.
 30
 
+![page31_img1.png](images/page31_img1.png)
+
 ## Page 32
 
 Figure 8: Structural Markov-blanket partition for the calculator fixture. The renderer reads gnn_package/markov_blanke
@@ -1828,6 +1844,8 @@ structural boundary extracted from emitted program nodes and seed rules; it is n
 proof over source-code behavior.
 31
 
+![page32_img1.png](images/page32_img1.png)
+
 ## Page 33
 
 Figure 9: Upstream Generalized Notation Notation visualization of the emitted POMDP generative-model structure. This
@@ -1835,6 +1853,8 @@ figure is copied from cogant/output/upstream_pipeline/8_visualization_output/ an
 package can pass through the external GNN visualization stage. Inspect it as interoperability evidence for the exported
 model structure, not as an independent validation of COGANT’s semantic mapping rules.
 32
+
+![page33_img1.png](images/page33_img1.png)
 
 ## Page 34
 
@@ -1875,6 +1895,8 @@ visualization studies show that confidence displays require careful evaluation b
 or confidence as stronger decision evidence than the study design supports [Hullman et al., 2019]. COGANT therefore reports
 33
 
+![page34_img1.png](images/page34_img1.png)
+
 ## Page 35
 
 Figure 11: Aggregate batch evidence summary rendered from cogant/output/dashboard/metrics_per_target.json. The
@@ -1883,6 +1905,8 @@ for the regenerated run_all.py batch. Inspect the role bars as emitted mapping e
 checks over the same target set. The chart reports artifact counts for this run; it does not establish semantic correctness,
 role-ground-truth coverage, or benchmark performance.
 34
+
+![page35_img1.png](images/page35_img1.png)
 
 ## Page 36
 
@@ -1919,6 +1943,8 @@ Value
 Source files discovered
 6
 35
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 
@@ -2010,6 +2036,8 @@ it supports precision review of emitted mappings but does not quantify missed ma
 corpus.
 37
 
+![page38_img1.png](images/page38_img1.png)
+
 ## Page 39
 
 Figure 14: Evidence-coverage and review-priority view for the calculator fixture. The native publication PNG is generated
@@ -2019,6 +2047,8 @@ artifact has 0 reviewed mapping rows, so this is a review-priority and provenanc
 claim about semantic correctness.
 38
 
+![page39_img1.png](images/page39_img1.png)
+
 ## Page 40
 
 Figure 15: Deterministic inference trace generated from the package’s built-in demonstration A/B/C/D matrices (default_
@@ -2027,6 +2057,8 @@ runtime demo emits data/inference_trace.json and the corresponding native public
 selected actions, preference satisfaction, and the package’s reported free-energy diagnostic. Read the curve as an executable-
 matrix smoke signal, not as a calibrated psychological, biological, or benchmarked control-performance measurement.
 39
+
+![page40_img1.png](images/page40_img1.png)
 
 ## Page 41
 
@@ -2927,6 +2959,8 @@ json_stdlib 4
 transitions). “GNN score” is the score field returned by GNNValidator.validate_package() on the compiled gnn_package/
 52
 
+![page53_img1.png](images/page53_img1.png)
+
 ## Page 54
 
 directory for the fixture run. Together the table covers one-to-six file repositories and 120 to 1231 lines of code, exercising
@@ -3025,6 +3059,8 @@ are then packaged into gnn_package/state_space.json, observations.json, actions.
 The counts reflect the end-to-end behavior of the compiler on these inputs, not the rule engine’s raw mapping output.
 53
 
+![page54_img1.png](images/page54_img1.png)
+
 ## Page 55
 
 Table 10: State-space compilation outputs.
@@ -3102,6 +3138,8 @@ flask_mini
 0
 54
 
+![page55_img1.png](images/page55_img1.png)
+
 ## Page 56
 
 Fixture
@@ -3177,6 +3215,8 @@ Programming Language :: Python :
 : 3.13
 supported
 56
+
+![page57_img1.png](images/page57_img1.png)
 
 ## Page 58
 
@@ -5621,6 +5661,8 @@ every possible user-defined rule family. The empirical question here is narrower
 passes after the first nonzero pass add any new semantic mappings? The ablation verifies this by rerunning the pipeline with
 the cap set to 𝐾∈{1, 2, 5, 10} and recording the total mapping count at each setting.
 91
+
+![page92_img1.png](images/page92_img1.png)
 
 ## Page 93
 

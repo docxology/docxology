@@ -2,6 +2,8 @@
 
 > Extracted from `2020_DistributedPhysiology.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -86,6 +88,10 @@ Hormones and Behavior 122 (2020) 104757
 Available online 22 April 2020
 0018-506X/ © 2020 Elsevier Inc. All rights reserved.
 T
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
 
 ## Page 2
 
@@ -183,6 +189,8 @@ colony traits arises from interactions within and across castes, task groups, an
 D.A. Friedman, et al.
 Hormones and Behavior 122 (2020) 104757
 2
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
 
 ## Page 3
 

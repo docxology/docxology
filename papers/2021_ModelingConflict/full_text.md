@@ -2,6 +2,8 @@
 
 > Extracted from `2021_ModelingConflict.pdf`
 
+> 14 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -707,6 +709,8 @@ observation itself”
 Figure 1. Abbott’s Gradients of Warfare projected onto John Boyd’s 
 OODA loop. Adapted from [25]. 0GW not included in original figure.
 
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
 ## Page 17
 
 Active Inference in Modeling Conflict, 2021 
@@ -899,6 +903,8 @@ fields, such as in science [59,60] and energy infrastructure [52].
 Figure 2. Various Decision-Making Models. Plan-Do-Check-Act Model from [43], 
 Stimulus-Hypothesis-Option-Response from [44], Endsley Model from [45]
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 Active Inference in Modeling Conflict, 2021 
@@ -914,6 +920,8 @@ of change management in the conduct of warfare, i.e., of inconsistency
 and adjustment to new paradigms and changed historical circumstances. 
 While each of the models described had an important place in the 
 Figure 3. OODA and Rumsfeld Quadrants
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -1262,6 +1270,8 @@ administrative procedures, legislation, and contracts, as well as other
 activities considered to be pro forma even where they may not be codified 
 or observable.
 
+![page29_img1.jpeg](images/page29_img1.jpeg)
+
 ## Page 30
 
 Active Inference in Modeling Conflict, 2021 
@@ -1343,6 +1353,10 @@ qualitative to quantitative (X-axis) and tactical to strategic scale (Y-axis). F
 right and going clockwise: Lanchester models, DoDAF (Department of Defense 
 Architecture Framework), EBO (Effects Based Operations), OODA (Observe-Orient-
 Decide-Act), the Rumsfeld Matrix, and Generations of Warfare (GW) model.
+
+![page31_img1.jpeg](images/page31_img1.jpeg)
+
+![page31_img2.png](images/page31_img2.png)
 
 ## Page 32
 
@@ -1675,6 +1689,8 @@ selected policy.
 Figure 6. Partially Observable Markov Decision Process (POMDP) model
 of an ActInf entity.
 
+![page36_img1.jpeg](images/page36_img1.jpeg)
+
 ## Page 37
 
 Active Inference in Modeling Conflict, 2021 
@@ -1758,6 +1774,14 @@ Figure 8. Two ActInf entities A and B, interacting via a shared niche
 niche is influenced by endogenous dynamics as well as actions from both 
 entities.
 
+![page38_img1.jpeg](images/page38_img1.jpeg)
+
+![page38_img2.png](images/page38_img2.png)
+
+![page38_img3.jpeg](images/page38_img3.jpeg)
+
+![page38_img4.png](images/page38_img4.png)
+
 ## Page 39
 
 Active Inference in Modeling Conflict, 2021 
@@ -1832,6 +1856,8 @@ can be represented as a graph akin to those found in other graph -based
 models. Further, it can extend these quantitative and formal approaches 
 (EBO for cognitive effects) or provide a surface for interoperability 
 Figure 9. Comparison of Action-Perception loops for ActInf and OODA entities
+
+![page40_img1.jpeg](images/page40_img1.jpeg)
 
 ## Page 41
 
@@ -1922,6 +1948,10 @@ term
 Figure 10. Two conflicting ActInf entities (A and B), a third entity outside of the direct 
 conflict (C), and the abiotic niche interact via a BOLTS commons along specified 
 interfaces.
+
+![page42_img1.jpeg](images/page42_img1.jpeg)
+
+![page42_img2.png](images/page42_img2.png)
 
 ## Page 43
 

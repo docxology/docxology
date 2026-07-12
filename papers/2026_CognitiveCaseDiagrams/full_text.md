@@ -2,6 +2,8 @@
 
 > Extracted from `cognitive_case_diagrams_v1_DAF_04-23-2026.pdf`
 
+> 30 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -633,6 +635,8 @@ Six Converging Linguistic and Mathematical Traditions
 The present synthesis draws on six research traditions, each contributing an essential formal ingredient:
 8
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 2.3.1
@@ -1084,6 +1088,8 @@ marks the functor decision boundary where 𝐹𝜃(𝑆) transitions from ABS to
 src.visualization.fluid_s_plots.plot_fluid_s_volition_landscape().
 16
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 5
@@ -1152,6 +1158,8 @@ enriched structure over ([0, 1], ⋅, 1) ensures multiplicative weight attenuati
 programmatically from the CaseCategory class.
 18
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 4: Functor kernels uniquely fingerprint each alignment typology. Three alignment systems realized as functors
@@ -1193,6 +1201,8 @@ Worked example. Consider the accusative functor 𝐹(which maps S and A to NOM, 
 functor 𝐺(which maps explicitly to S →ABS, A →ERG, P →ACC). The identity natural transformation id𝐹∶
 19
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 Figure 5:
@@ -1204,6 +1214,8 @@ encodes that DAT assignment factors through ACC—the multiplicative attenuation
 that subject–recipient relations are weaker than the constituent subject–object and object–recipient links. Generated
 programmatically from the CaseCategory class.
 20
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -1305,6 +1317,8 @@ is therefore not just consistent with the surface order — the surface order is
 case morphology carrying the entire wiring diagram explicitly.
 23
 
+![page23_img1.png](images/page23_img1.png)
+
 ## Page 24
 
 Figure 7: Valency determines diagram topology: Cup count tracks verb argument structure. A 1×3 DisCoPy pregroup
@@ -1322,6 +1336,10 @@ chases OBJ” across three typologically diverse languages: English (SVO), Latin
 (agglutinative, SOV). Each renders an identical type reduction 𝑛⊗(𝑛𝑟⊗𝑠⊗𝑛𝑙) ⊗𝑛→𝑠, confirming the central claim of
 categorial grammar: syntactic universals reside in the type algebra, not in linear word order.
 24
+
+![page24_img1.png](images/page24_img1.png)
+
+![page24_img2.png](images/page24_img2.png)
 
 ## Page 25
 
@@ -1398,6 +1416,10 @@ normal form — the entire sentence reduces to a single 𝑠-typed wire.
 Generated programmatically from
 src.visualization.category_unpacking.render_pregroup_reduction_unpacking().
 26
+
+![page26_img1.png](images/page26_img1.png)
+
+![page26_img2.png](images/page26_img2.png)
 
 ## Page 27
 
@@ -1525,6 +1547,8 @@ unchanged (two, matching the transitive active), so 𝜅(𝐷) tracks argument s
 Equation 12 only the box count distinguishes the two diagrams (the passive inserts the “is chased by” box in place of the
 active “chases” box).
 29
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
@@ -1684,6 +1708,8 @@ diagram also exemplifies Shimojima’s [1996] free-ride inference over argument 
 The following sections extend this model to discourse and quantum computation.
 32
 
+![page32_img1.png](images/page32_img1.png)
+
 ## Page 33
 
 Figure 13: Ditransitive pregroup diagram for “Alice gives Bob a book”: four word boxes (Alice, gives, Bob, book) with
@@ -1720,6 +1746,8 @@ diagram can verify well-formedness by confirming that all zigzags cancel—a pur
 algebraic computation, and thus instantiating Shimojima’s [1996] free-ride inference in its most direct form (Figure 14).
 33
 
+![page33_img1.png](images/page33_img1.png)
+
 ## Page 34
 
 Figure 14: The snake equation is the algebraic engine powering every pregroup type reduction. The compact closure axiom
@@ -1748,6 +1776,10 @@ tion; caps (denoted 𝜂) count argument introduction. The cup count directly re
 verb requires 1 cup, a transitive verb 2, and a ditransitive verb 3.
 3. Normal form: A diagram is in normal form if no further simplifications (zigzag cancellations, box reordering)
 34
+
+![page34_img1.png](images/page34_img1.png)
+
+![page34_img2.png](images/page34_img2.png)
 
 ## Page 35
 
@@ -1784,6 +1816,8 @@ section 10. For multi-agent security, when tracking networks isolate an adversar
 covertly attempting to merge with an ongoing command wire across communication boundaries, the circuit topology can
 flag the type violation before execution (section 20).
 35
+
+![page35_img1.png](images/page35_img1.png)
 
 ## Page 36
 
@@ -1916,6 +1950,8 @@ The same
 Discourse object is what
 37
 
+![page37_img1.png](images/page37_img1.png)
+
 ## Page 38
 
 Figure 18: Wire colour provides independent visual confirmation of the ACC→NOM role transition that Figure 17
@@ -1928,6 +1964,8 @@ The ACC→NOM colour change is directly readable from the diagram without algebr
 ride inference in action. This independent rendering cross-validates that src.diagrams.string_diagram.Discourse correctly
 resolves entity identity and role reassignment using only case-role metadata.
 38
+
+![page38_img1.png](images/page38_img1.png)
 
 ## Page 39
 
@@ -1973,6 +2011,8 @@ DisCoCat and discourse-level case role tracking. This is directly relevant to th
 Figure 19: lambeq Gen II can, in principle, compile such multi-sentence case-dynamic discourses into trainable quantum
 circuits.
 39
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 
@@ -2021,6 +2061,8 @@ Equation 38 (formalized in section 18)—no barren plateau effect occurs. This p
 case-role classification circuits implemented via lambeq remain optimizable regardless of total circuit size, so long as
 the readout observable is local.
 40
+
+![page40_img1.png](images/page40_img1.png)
 
 ## Page 41
 
@@ -2169,6 +2211,8 @@ Generated program-
 matically from src.visualization.enriched_diagrams.render_enriched_heatmap() applied to EnrichedCategory data (see
 scripts/generate_diagrams.py).
 44
+
+![page44_img1.png](images/page44_img1.png)
 
 ## Page 45
 
@@ -2451,6 +2495,8 @@ canonical accusative_to_ergative_functor() (scripts/generate_category_figures.py
 tion while cross-panel arrows follow the functor’s object map.
 50
 
+![page50_img1.png](images/page50_img1.png)
+
 ## Page 51
 
 with LoT-like architecture has the structural capacity to represent case assignments. This grounds the claim that case
@@ -2674,6 +2720,8 @@ arrivals in Figure 24). Likelihoods are synthetic categorical draws consistent w
 programmatically from src/visualization/active_inference_plots.plot_alignment_frame_belief_dynamics() (PNG from
 scripts/generate_cognitive_figures.py).
 55
+
+![page55_img1.png](images/page55_img1.png)
 
 ## Page 56
 
@@ -3097,6 +3145,8 @@ maximises expected pragmatic utility, and penalises high-variance return distrib
 gain) and 𝛽risk ≥0 (risk sensitivity, using the distributional return variance produced by push_forward_return()).
 62
 
+![page62_img1.png](images/page62_img1.png)
+
 ## Page 63
 
 Figure 25: Case-role posterior sharpens from uniform prior as German morphology supplies evidence. DAIF belief tra-
@@ -3109,6 +3159,8 @@ probability, constructed as a simple proxy Δ = 1 −max𝑘𝑃(𝑐𝑘) scale
 surrogate, not a 51-quantile decomposition of the push-forward return distribution. Generated programmatically from
 src.visualization.daif_plots.plot_belief_trajectory().
 63
+
+![page63_img1.png](images/page63_img1.png)
 
 ## Page 64
 
@@ -3254,6 +3306,8 @@ require fitting a per-subject 𝜇V-per-nat scaling constant to empirical ERP da
 Generated programmatically from
 src.visualization.daif_plots.plot_erp_predictions().
 66
+
+![page66_img1.png](images/page66_img1.png)
 
 ## Page 67
 
@@ -3727,6 +3781,8 @@ quantum reference frame) corresponds to a different alignment system, e.g., ACC 
 from src/visualization/quantum_plots.plot_povm_probabilities().
 74
 
+![page74_img1.png](images/page74_img1.png)
+
 ## Page 75
 
 2. Nodes as compositional operations: Spiders/gates in ZX or intertwiners in TQNNs become semantic composition
@@ -4088,6 +4144,8 @@ prompt injection from an open-ended jailbreak game into a decidable type-checkin
 from src/visualization/security_plots.plot_case_interaction_graph().
 82
 
+![page82_img1.png](images/page82_img1.png)
+
 ## Page 83
 
 categorical equivalence constraints across agent interfaces. By rigidly tracking the tensor type of the wire, the system
@@ -4127,6 +4185,8 @@ The case-role analysis of prompt injection suggests a principled defense: catego
 cation boundaries. Just as a type-safe programming language prevents category errors at compile time, a case-theoretic
 firewall would enforce relational type constraints on every message exchange:
 83
+
+![page83_img1.png](images/page83_img1.png)
 
 ## Page 84
 
@@ -4737,6 +4797,8 @@ ditransitive, passive); Panels 5–6 show ergative-absolutive and benefactive; P
 ding and causative complex predicates. Cup count and box count increase monotonically across panels, directly instantiat-
 ing 𝜅(𝐷). Generated programmatically from src.visualization.syntactic_sentence_diagrams.render_syntactic_panel().
 94
+
+![page94_img1.png](images/page94_img1.png)
 
 ## Page 95
 

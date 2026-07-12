@@ -2,6 +2,8 @@
 
 > Extracted from `2025_EvoJump.pdf`
 
+> 9 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1761,6 +1763,8 @@ at key timepoints, (d) violin plots revealing distribution shapes, (e) ridge plo
 progression, (f) phase portrait analysis of phenotype dynamics, (g) statistical summary with mean
 27
 
+![page27_img1.png](images/page27_img1.png)
+
 ## Page 28
 
 trends and coefficient of variation, (h) model parameter diagnostics, and (i) evolutionary change
@@ -1782,6 +1786,8 @@ alization method supports both static (matplotlib) and interactive (Plotly) outp
 publication-quality graphics and exploratory analysis. The consistent API across visualization
 types simplifies generation of comprehensive figure panels. Complete code examples are provided in
 28
+
+![page28_img1.png](images/page28_img1.png)
 
 ## Page 29
 
@@ -1807,6 +1813,8 @@ the test suite via uv run pytest, and building documentation with uv run sphinx-
 speed and reproducibility ensure consistent, reliable installations across all platforms.
 29
 
+![page29_img1.png](images/page29_img1.png)
+
 ## Page 30
 
 Figure 4: Individual model visualizations for CIR showing trajectory density heatmap.
@@ -1831,6 +1839,8 @@ Core Properties Verified: - Mean-reverting behavior toward specified equilibrium
 events correctly simulated using compound Poisson process - Trajectory simulation produces finite,
 30
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 5: Individual model visualizations for Jump-Diffusion showing trajectory density heatmap.
@@ -1853,6 +1863,8 @@ root diffusion term correctly dampens noise near zero - Mean-reversion toward eq
 Lévy Process
 α-stable Lévy processes tested for heavy-tailed behavior:
 31
+
+![page31_img1.png](images/page31_img1.png)
 
 ## Page 32
 
@@ -1903,6 +1915,8 @@ Kendall’s τ = 0.45 (p < 0.001) indicating significant positive trait dependen
 dependence, while points above/below indicate stronger/weaker coupling than expected under
 independence.
 33
+
+![page33_img1.png](images/page33_img1.png)
 
 ## Page 34
 
@@ -2019,12 +2033,16 @@ The network analysis reveals how tightly linked markers are swept along with the
 allele, with clustering patterns showing groups of co-inherited variants. With 20 neutral markers
 36
 
+![page36_img1.png](images/page36_img1.png)
+
 ## Page 37
 
 Figure 8: Network analysis of 20 neutral marker correlations during selective sweep, showing clusters
 of co-inherited variants. Markers are distributed from 0 to 2.0 cM from the selected locus, with
 color indicating linkage distance and network connections showing strong correlations (>0.7).
 37
+
+![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
@@ -2067,6 +2085,8 @@ Evolutionary Rate
 0.08
 8% change per generation
 38
+
+![page38_img1.png](images/page38_img1.png)
 
 ## Page 39
 

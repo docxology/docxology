@@ -2,6 +2,8 @@
 
 > Extracted from `2024_BlattodeaDiversity.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -250,6 +252,8 @@ CoA reductase; FAS, Fatty acid synthase (m: microsomal, c: cytosolic); HADC, 3-�
 reductase; LaAT, Lipoamide acyltransferase; TER, Trans-­enoyl-­CoA-­reductase. Numbers next to the enzymes correspond to the associated 
 gene transcripts we detected in our tested Blattodea species (compare to Table 1). Adapted from Holze et al. (2021).
  20457758, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ece3.70063, Wiley Online Library on [04/08/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page3_img1.png](images/page3_img1.png)
 
 ## Page 4
 
@@ -519,6 +523,8 @@ darwiniensis (Md), B. germanica (Bg) and B. orientalis (Bo). Insect images have 
 (Ströbel et al., 2018) and have been kindly provided by Sebastian Schmelzle.
  20457758, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ece3.70063, Wiley Online Library on [04/08/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 |  7 of 13
@@ -574,6 +580,10 @@ Insect images have been obtained from the Darmstadt Insect
 Scanner DISC3D (Ströbel et al., 2018) and have been kindly 
 provided by Sebastian Schmelzle.
  20457758, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ece3.70063, Wiley Online Library on [04/08/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.png](images/page7_img2.png)
 
 ## Page 8
 
@@ -941,6 +951,8 @@ transcripts correspond to their respective
 position in the CHC biosynthesis pathway 
 (see Figure 1 and Table 1).
  20457758, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ece3.70063, Wiley Online Library on [04/08/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 

@@ -2,6 +2,8 @@
 
 > Extracted from `template_template_pitch_short.pdf`
 
+> 12 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -10,6 +12,8 @@ A template/ approach to
 Reproducible Generative Research
 Research infrastructure that documents itself — a case study for meta-science
 and science-integrity teams
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -20,6 +24,8 @@ one outside the team can re-check.
 changes underneath them.
 • Reproducibility efforts usually stop at the data and code layer — the
 documentation layer is still hand-maintained and drifts silently.
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -32,6 +38,8 @@ computed live by template_template's own introspection code.
 independently tested and coverage-gated.
 Source: infrastructure/project/public_scope.py
 
+![page3_img1.png](images/page3_img1.png)
+
 ## Page 4
 
 How it works
@@ -42,10 +50,16 @@ inject_metrics.py substitutes them into the manuscript text.
 • Re-running the pipeline regenerates the paper from current repository state —
 the citation and the artifact cannot drift apart.
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 Two-layer architecture, at a glance
 Source: CLAUDE.md
+
+![page5_img1.png](images/page5_img1.png)
+
+![page5_img2.png](images/page5_img2.png)
 
 ## Page 6
 
@@ -54,6 +68,8 @@ Proof, not adjectives
 99.37% coverage on template_template's own source — the same gate
 every exemplar in the repo must pass.
 Source: docs/_generated/COUNTS.md
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -64,6 +80,8 @@ Pages, Netlify, Hugging Face, OSF.
 • Licensed Apache-2.0 — the introspection code, not only the prose, is available
 for a science-integrity team to audit directly.
 Source: projects/templates/template_template/manuscript/config.yaml
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
@@ -77,6 +95,8 @@ exemplars, not just one cherry-picked example — follow the identical
 thin-orchestrator, two-layer architecture.
 Source: docs/_generated/active_projects.md
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 Cite this deck
@@ -88,6 +108,8 @@ from the DOI of the project it pitches.
 the deep-linking mechanism described later in the medium and long versions of
 this deck.
 Source: projects/templates/template_pitch_deck/manuscript/config.yaml
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -102,11 +124,15 @@ prior engagements to point to yet, this pattern is newly forkable.
 deeper or custom integration — no prior engagements exist yet; this is an
 invitation to talk, not an established offering.
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 Questions
 Research infrastructure that documents itself — a case study for meta-science
 and science-integrity teams
+
+![page11_img1.png](images/page11_img1.png)
 
 
 ---

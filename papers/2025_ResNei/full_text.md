@@ -2,6 +2,8 @@
 
 > Extracted from `2025_ResNei.pdf`
 
+> 7 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -102,6 +104,10 @@ Visual of Interface Design Proposal for Desktop Experience
 Visual of Interface Design Proposal for Mobile Experience
  
 4
+
+![page4_img1.png](images/page4_img1.png)
+
+![page4_img2.png](images/page4_img2.png)
 
 ## Page 5
 
@@ -226,6 +232,8 @@ Motivation
 Researchers, students, and collaborative teams often face challenges related to: 
 8
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 ●​ Document Overload: Managing vast collections of research papers, notes, and 
@@ -274,6 +282,8 @@ segmented presentation, i.e., fragmenting tasks into small, isolated parts, the 
 organises information into contextual groups that make sense as cohesive units. 
 10
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 To support intuitive interaction, contextual cues and dynamic visual hierarchy are used to 
@@ -318,6 +328,8 @@ collaborative rather than purely individual pursuit.
  
  
 12
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
@@ -742,6 +754,8 @@ research progresses through active, meaningful engagement.
  
 21
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 Behaviour of the Action-Intention Model 
@@ -765,6 +779,8 @@ side panel.
 groupings, shared nodes, or active discussions. 
 3. Collaborative Structuring 
 22
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 

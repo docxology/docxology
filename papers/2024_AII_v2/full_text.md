@@ -2,6 +2,8 @@
 
 > Extracted from `Active_Inference_Institute-Ecosystem_11-12-2024_v2.pdf`
 
+> 27 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -61,6 +63,8 @@ blanket@activeinference.institute
  ◦
  •
 
+![page1_img1.png](images/page1_img1.png)
+
 ## Page 2
 
 Abstract
@@ -118,6 +122,8 @@ As you find your pace and balance, we hope you’ll find the Institute isn’t j
 through which new worlds of connections await. We hope to create a space together where we can pursue those opportunities 
 from numerous directions, and where each person feels welcome to enter differently according to the paths which have led 
 them here.
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -386,6 +392,14 @@ Ecosystem
  
 ​
 
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
+
+![page6_img3.png](images/page6_img3.png)
+
+![page6_img4.png](images/page6_img4.png)
+
 ## Page 7
 
 breadth of the work 
@@ -395,6 +409,12 @@ ongoing.
 ​
  
 ​
+
+![page7_img1.png](images/page7_img1.png)
+
+![page7_img2.png](images/page7_img2.png)
+
+![page7_img3.png](images/page7_img3.png)
 
 ## Page 8
 
@@ -566,6 +586,8 @@ Institute hosts the popular
 Videos & Podcasts
 Active Inference Insights podcast
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 During the year, we begin researching and applying for private and government 
@@ -695,6 +717,8 @@ Systems Approach
 ​
  
  •
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
@@ -1045,6 +1069,8 @@ The Active Inference Ecosystem
  
 Here is the working gSlide for this Figure
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Scientific Advisory Board
@@ -1393,6 +1419,8 @@ more contributors.
 Internship
 Volunteer
 Officers
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -2058,6 +2086,8 @@ Open Source Repositories
  •
  •
 
+![page35_img1.png](images/page35_img1.png)
+
 ## Page 36
 
 Ecosystem Support
@@ -2298,6 +2328,8 @@ Number of participants contributing to facilitated projects
  •
  •
 
+![page39_img1.png](images/page39_img1.png)
+
 ## Page 40
 
 Turnover rate in engagement and participation (e.g., direct participant engagement with Institute releases and material, and 
@@ -2537,6 +2569,8 @@ Ex
 Organizational Unit
 Institute projects ~ 2024
 
+![page45_img1.png](images/page45_img1.png)
+
 ## Page 46
 
 momentum
@@ -2663,6 +2697,8 @@ Core Functions
  •
  •
 
+![page48_img1.png](images/page48_img1.png)
+
 ## Page 49
 
 Reduces uncertainty around fundamental Active Inference concepts and terminology
@@ -2722,6 +2758,8 @@ Open Source
 
 *[Page 50 appears to be blank or image-only]*
 
+![page50_img1.png](images/page50_img1.png)
+
 ## Page 51
 
 Active Entity Ontology for Science (AEOS)
@@ -2764,6 +2802,8 @@ Practical Applications
  •
  •
  •
+
+![page51_img1.png](images/page51_img1.png)
 
 ## Page 52
 
@@ -2965,6 +3005,8 @@ RxInfer.jl Learning Group
 this link
 ⁠
 
+![page57_img1.png](images/page57_img1.png)
+
 ## Page 58
 
 Fundamentals of Active Inference
@@ -3070,6 +3112,8 @@ The initial work was done in 2022 and we look forward to revisiting and improvin
  •
  •
 
+![page60_img1.png](images/page60_img1.png)
+
 ## Page 61
 
 Physics course
@@ -3084,6 +3128,8 @@ public link
 here is the YouTube playlist
 ⁠
 https://coda.io/@active-inference-institute/fields-physics-2023
+
+![page61_img1.png](images/page61_img1.png)
 
 ## Page 62
 
@@ -3157,6 +3203,8 @@ public link
 ⁠
 https://coda.io/@active-inference-institute/active-inference-social-science-aii-2023
 
+![page63_img1.png](images/page63_img1.png)
+
 ## Page 64
 
 Software
@@ -3227,6 +3275,8 @@ multi-agent dynamics and decision-making processes across a wide range of applic
  1.
  2.
  3.
+
+![page65_img1.png](images/page65_img1.png)
 
 ## Page 66
 
@@ -3343,6 +3393,8 @@ questions
 ⁠
 https://textbook-group.activeinference.institute/
 ​
+
+![page69_img1.png](images/page69_img1.png)
 
 ## Page 70
 
@@ -3466,6 +3518,8 @@ Ecosystem Priorities and Challenge Areas
 Ecosystem Development: Structure and Growth
 Ecosystem Projects
 Domains of Application
+
+![page72_img1.png](images/page72_img1.png)
 
 ## Page 73
 
@@ -4598,6 +4652,8 @@ Act. Infer. Serve.
 ## Page 105
 
 ⁠
+
+![page105_img1.png](images/page105_img1.png)
 
 
 ---

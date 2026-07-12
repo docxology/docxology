@@ -2,6 +2,8 @@
 
 > Extracted from `bevcyc.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -170,6 +172,8 @@ Currently intended experiment
 (on the prototype agent) 
 - 
 -
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 ## Page 6
 

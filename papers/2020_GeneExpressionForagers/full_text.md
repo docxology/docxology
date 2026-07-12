@@ -2,6 +2,8 @@
 
 > Extracted from `2020_GeneExpressionForagers.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -306,6 +308,8 @@ ARTICLE
 COMMUNICATIONS BIOLOGY |  (2020) 3:100 | https://doi.org/10.1038/s42003-020-0813-8 | www.nature.com/commsbio
 3
 
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
 ## Page 4
 
 variation among colonies than within colonies). However, only a
@@ -556,6 +560,8 @@ COMMUNICATIONS BIOLOGY | https://doi.org/10.1038/s42003-020-0813-8
 ARTICLE
 COMMUNICATIONS BIOLOGY |  (2020) 3:100 | https://doi.org/10.1038/s42003-020-0813-8 | www.nature.com/commsbio
 5
+
+![page5_img1.png](images/page5_img1.png)
 
 ## Page 6
 
@@ -886,6 +892,8 @@ COMMUNICATIONS BIOLOGY | https://doi.org/10.1038/s42003-020-0813-8
 ARTICLE
 COMMUNICATIONS BIOLOGY |  (2020) 3:100 | https://doi.org/10.1038/s42003-020-0813-8 | www.nature.com/commsbio
 7
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 

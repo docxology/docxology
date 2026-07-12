@@ -2,6 +2,8 @@
 
 > Extracted from `2023_BlakeFuller.pdf`
 
+> 117 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,12 @@ Presented for 52 Living Ideas
 January 8, 2023
 Daniel A. Friedman
 daf.omg.lol
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
 
 ## Page 2
 
@@ -76,6 +84,10 @@ Playlist of 16 videos (so far)
 Deep readings & related topics 
 to the text of Synergetics
 
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
+![page3_img2.jpeg](images/page3_img2.jpeg)
+
 ## Page 4
 
 Comprehensivity
@@ -104,6 +116,8 @@ It involves recognizing its inherent pathologies including analysis paralysis (a
 (an unrestrained accommodation of everyone's values), and the paralysis of wholism (an unlimited expansion of the whole). So it 
 requires cultivating judgment to stay incisively relevant.
 
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
 ## Page 5
 
 Juxtaposition
@@ -123,6 +137,8 @@ realms of ongoing exploration
 What depth of field do we gain through juxtaposition? 
 What is it to ride a bicycle? (Not just two unicycles)
 What is Unity & Why is it “at minimum two”?
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 ## Page 6
 
@@ -190,6 +206,12 @@ Developed engraving and other craft skills
 Diligent, prolific, eccentric aesthetic production
 ●
 Humble & challenging life of exhibitions, patronage
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
 
 ## Page 7
 
@@ -291,6 +313,12 @@ approach to illuminated printing that accompanied this change has
 been described as a shift from the idea of 'print-as-page' to 
 'print-as-painting'.
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.jpeg](images/page7_img2.jpeg)
+
+![page7_img3.jpeg](images/page7_img3.jpeg)
+
 ## Page 8
 
 Deep Generativity
@@ -313,11 +341,51 @@ Mythological
 Allegorical 
 Symbolic
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
+![page8_img4.jpeg](images/page8_img4.jpeg)
+
+![page8_img5.jpeg](images/page8_img5.jpeg)
+
+![page8_img6.jpeg](images/page8_img6.jpeg)
+
+![page8_img7.jpeg](images/page8_img7.jpeg)
+
+![page8_img8.jpeg](images/page8_img8.jpeg)
+
+![page8_img9.jpeg](images/page8_img9.jpeg)
+
+![page8_img10.jpeg](images/page8_img10.jpeg)
+
+![page8_img11.jpeg](images/page8_img11.jpeg)
+
+![page8_img12.jpeg](images/page8_img12.jpeg)
+
 ## Page 9
 
 Full Page Creativity
 Blake
 Fuller
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
+![page9_img4.jpeg](images/page9_img4.jpeg)
+
+![page9_img5.jpeg](images/page9_img5.jpeg)
+
+![page9_img6.jpeg](images/page9_img6.jpeg)
+
+![page9_img7.jpeg](images/page9_img7.jpeg)
+
+![page9_img8.jpeg](images/page9_img8.jpeg)
 
 ## Page 10
 
@@ -354,6 +422,22 @@ by the wholeness of their interests.
 The glorification of childhood is [a] dominant romantic feature of Blake’s 
 poetry. In his poems child is a figure symbolizing God or Christ. His world of 
 innocence however is not entirely untouched by unpleasant elements. Link
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
+
+![page10_img3.jpeg](images/page10_img3.jpeg)
+
+![page10_img4.jpeg](images/page10_img4.jpeg)
+
+![page10_img5.jpeg](images/page10_img5.jpeg)
+
+![page10_img6.jpeg](images/page10_img6.jpeg)
+
+![page10_img7.jpeg](images/page10_img7.jpeg)
+
+![page10_img8.jpeg](images/page10_img8.jpeg)
 
 ## Page 11
 
@@ -416,6 +500,34 @@ Don't Fear the Symmetry:
 The Poetry of William Blake 
 by Stephanie Vest
 
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
+![page11_img2.jpeg](images/page11_img2.jpeg)
+
+![page11_img3.jpeg](images/page11_img3.jpeg)
+
+![page11_img4.jpeg](images/page11_img4.jpeg)
+
+![page11_img5.jpeg](images/page11_img5.jpeg)
+
+![page11_img6.jpeg](images/page11_img6.jpeg)
+
+![page11_img7.jpeg](images/page11_img7.jpeg)
+
+![page11_img8.jpeg](images/page11_img8.jpeg)
+
+![page11_img9.jpeg](images/page11_img9.jpeg)
+
+![page11_img10.jpeg](images/page11_img10.jpeg)
+
+![page11_img11.jpeg](images/page11_img11.jpeg)
+
+![page11_img12.jpeg](images/page11_img12.jpeg)
+
+![page11_img13.jpeg](images/page11_img13.jpeg)
+
+![page11_img14.jpeg](images/page11_img14.jpeg)
+
 ## Page 12
 
 Blake
@@ -457,6 +569,26 @@ its Four-fold State, a popular work
 of theology which went through at 
 least two dozen editions in Britain 
 between 1720 and 1800.
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
+
+![page12_img3.jpeg](images/page12_img3.jpeg)
+
+![page12_img4.jpeg](images/page12_img4.jpeg)
+
+![page12_img5.jpeg](images/page12_img5.jpeg)
+
+![page12_img6.jpeg](images/page12_img6.jpeg)
+
+![page12_img7.jpeg](images/page12_img7.jpeg)
+
+![page12_img8.jpeg](images/page12_img8.jpeg)
+
+![page12_img9.jpeg](images/page12_img9.jpeg)
+
+![page12_img10.jpeg](images/page12_img10.jpeg)
 
 ## Page 13
 
@@ -518,6 +650,26 @@ become concave or it can become convex. And so can the octahedron. So we
 have, then, spaces that suddenly become spheres, they blow up and the spaces 
 contract. So there is something terribly exciting going on here
 Vector Equilibrium and its Transformation Pathways (Laetus In Praesens)
+
+![page13_img1.jpeg](images/page13_img1.jpeg)
+
+![page13_img2.jpeg](images/page13_img2.jpeg)
+
+![page13_img3.jpeg](images/page13_img3.jpeg)
+
+![page13_img4.jpeg](images/page13_img4.jpeg)
+
+![page13_img5.jpeg](images/page13_img5.jpeg)
+
+![page13_img6.jpeg](images/page13_img6.jpeg)
+
+![page13_img7.jpeg](images/page13_img7.jpeg)
+
+![page13_img8.jpeg](images/page13_img8.jpeg)
+
+![page13_img9.jpeg](images/page13_img9.jpeg)
+
+![page13_img10.jpeg](images/page13_img10.jpeg)
 
 ## Page 14
 
@@ -590,6 +742,34 @@ was built in, with, for and as radio.
 MAN IN UNIVERSE 1963
 CRITICAL PATH 1981
 
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
+
+![page14_img4.jpeg](images/page14_img4.jpeg)
+
+![page14_img5.jpeg](images/page14_img5.jpeg)
+
+![page14_img6.jpeg](images/page14_img6.jpeg)
+
+![page14_img7.jpeg](images/page14_img7.jpeg)
+
+![page14_img8.jpeg](images/page14_img8.jpeg)
+
+![page14_img9.jpeg](images/page14_img9.jpeg)
+
+![page14_img10.jpeg](images/page14_img10.jpeg)
+
+![page14_img11.jpeg](images/page14_img11.jpeg)
+
+![page14_img12.jpeg](images/page14_img12.jpeg)
+
+![page14_img13.jpeg](images/page14_img13.jpeg)
+
+![page14_img14.jpeg](images/page14_img14.jpeg)
+
 ## Page 15
 
 World-View
@@ -640,6 +820,28 @@ spontaneous cooperation, without ecological
 offense or the disadvantage of anyone.”
 Milton
 
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
+![page15_img2.jpeg](images/page15_img2.jpeg)
+
+![page15_img3.jpeg](images/page15_img3.jpeg)
+
+![page15_img4.jpeg](images/page15_img4.jpeg)
+
+![page15_img5.jpeg](images/page15_img5.jpeg)
+
+![page15_img6.jpeg](images/page15_img6.jpeg)
+
+![page15_img7.jpeg](images/page15_img7.jpeg)
+
+![page15_img8.jpeg](images/page15_img8.jpeg)
+
+![page15_img9.jpeg](images/page15_img9.jpeg)
+
+![page15_img10.jpeg](images/page15_img10.jpeg)
+
+![page15_img11.jpeg](images/page15_img11.jpeg)
+
 ## Page 16
 
 Faith
@@ -688,6 +890,30 @@ of this 100 percent efficient, eternally unlimited integrity.
 always be an inadequate expression of its cosmic 
 omniscience and omnipotence.”
 
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
+![page16_img2.jpeg](images/page16_img2.jpeg)
+
+![page16_img3.jpeg](images/page16_img3.jpeg)
+
+![page16_img4.jpeg](images/page16_img4.jpeg)
+
+![page16_img5.jpeg](images/page16_img5.jpeg)
+
+![page16_img6.jpeg](images/page16_img6.jpeg)
+
+![page16_img7.jpeg](images/page16_img7.jpeg)
+
+![page16_img8.jpeg](images/page16_img8.jpeg)
+
+![page16_img9.jpeg](images/page16_img9.jpeg)
+
+![page16_img10.jpeg](images/page16_img10.jpeg)
+
+![page16_img11.jpeg](images/page16_img11.jpeg)
+
+![page16_img12.jpeg](images/page16_img12.jpeg)
+
 ## Page 17
 
 Closing Words
@@ -699,6 +925,12 @@ It will lead you in at Heaven’s gate
 Built in Jerusalem’s wall 
 “Call me Trimtab”
  Jerusalem. The Emanation of the Giant Albion
+
+![page17_img1.jpeg](images/page17_img1.jpeg)
+
+![page17_img2.jpeg](images/page17_img2.jpeg)
+
+![page17_img3.jpeg](images/page17_img3.jpeg)
 
 ## Page 18
 
@@ -716,6 +948,10 @@ complex project
 ●Please reach out if you 
 want to work in this area
 Stable Diffusion 2.1
+
+![page18_img1.jpeg](images/page18_img1.jpeg)
+
+![page18_img2.jpeg](images/page18_img2.jpeg)
 
 ## Page 19
 

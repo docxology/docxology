@@ -2,6 +2,8 @@
 
 > Extracted from `2021_NarrativeEcosystems.pdf`
 
+> 6 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -233,6 +235,8 @@ to the quantitative study of complex system behavior [3,97,110]. In this article
 situating team communication as a case of Active Inference, and exploring various avenues 
 where ActInf approaches could be useful for modern teams.
 
+![page7_img15.png](images/page7_img15.png)
+
 ## Page 8
 
 Here we briefly review several recent developments in the ActInf literature that are relevant 
@@ -257,6 +261,8 @@ coordinating agents have higher fitness) [4]. These evolutionary and development
 about social interactions are enacted and shaped through real-time experience – giving a formal 
 sense to the classic phrase “through others we become ourselves” [124,125]. We can adapt this 
 phrase here to consider how teams form and perform, e.g. “through communication with others
+
+![page8_img16.png](images/page8_img16.png)
 
 ## Page 9
 
@@ -296,9 +302,17 @@ visual relay (video chat), text messages (chat), file sharing, and other forms o
 
 *[Page 10 appears to be blank or image-only]*
 
+![page10_img21.png](images/page10_img21.png)
+
+![page10_img22.png](images/page10_img22.png)
+
 ## Page 11
 
 *[Page 11 appears to be blank or image-only]*
+
+![page11_img22.png](images/page11_img22.png)
+
+![page11_img23.png](images/page11_img23.png)
 
 ## Page 12
 

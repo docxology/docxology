@@ -2,6 +2,8 @@
 
 > Extracted from `2020_FacilitatorsCatechism.pdf`
 
+> 21 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -185,6 +187,8 @@ Eben Swift [4,23]. General Swift submits a standardized format for
 Figure 1.    Eben Swift's 1897 OPORD Format, adapted from [23], expanded in 
 ………………..Appendix A
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 The Facilitator’s Catechism, 2020 
@@ -263,6 +267,8 @@ often arrive after they were needed, thus failing to provide guidance at
 critical moments [3,4]. No one lower than a battalion commander was 
 Figure 2.    Suggested WWI Field Order adapted from [34], expanded 
 ……………….in Appendix B
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -348,6 +354,8 @@ Figure 3.
 The American Five Paragraph Order [1,43,44],
 ……………………///expanded in Appendix G
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 The Facilitator’s Catechism, 2020 
@@ -385,6 +393,8 @@ for example, is characterized to be something of a self-educated savant, who
 Figure 4. 
 U.S. Vietnam War Three-Paragraph 
 ………………………Order, adapted from [3]
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -515,6 +525,8 @@ has the same format of a Five Paragraph Order but the writer only includes
 Figure 5.    Israeli OPORD Format, adapted from [3], 
 ……………….expanded in Appendix J
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 The Facilitator’s Catechism, 2020 
@@ -595,6 +607,8 @@ template to build narrative alignment between members of research teams
 and the mission of DARPA by asking questions like “What are you trying to 
 do?” and “If successful, what difference will it make?” [3,58,60,61]. The 
 Figure 6.    Heilmeier Catechism, adapted from [98]
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -1106,6 +1120,8 @@ The Facilitator’s Catechism, 2020
  
  
 Figure 7.    Action-Oriented Process Facilitation [1,27,34,43,181,184–190]
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -2514,6 +2530,8 @@ Appendices
 Appendix A 
 Eben Swift’s 1897 Format [3,23]
 
+![page52_img1.jpeg](images/page52_img1.jpeg)
+
 ## Page 53
 
 The Facilitator’s Catechism, 2020 
@@ -2525,6 +2543,8 @@ WWI Suggested
 Trench-to-Trench  
 Attack OPORD [34]
 
+![page53_img1.jpeg](images/page53_img1.jpeg)
+
 ## Page 54
 
 The Facilitator’s Catechism, 2020 
@@ -2533,6 +2553,8 @@ The Facilitator’s Catechism, 2020
  
 Appendix C 
 WWI Battalion OPORD [3]
+
+![page54_img1.jpeg](images/page54_img1.jpeg)
 
 ## Page 55
 
@@ -2543,6 +2565,8 @@ The Facilitator’s Catechism, 2020
 Appendix D 
  1940 U.S. OPORD [4]
 
+![page55_img1.jpeg](images/page55_img1.jpeg)
+
 ## Page 56
 
 The Facilitator’s Catechism, 2020 
@@ -2551,6 +2575,8 @@ The Facilitator’s Catechism, 2020
  
 Appendix E 
 U.S. WWII Battalion Attack OPORD [3]
+
+![page56_img1.jpeg](images/page56_img1.jpeg)
 
 ## Page 57
 
@@ -2561,6 +2587,8 @@ The Facilitator’s Catechism, 2020
 Appendix F 
 U.S. WWII Battalion Defend OPORD [3]
 
+![page57_img1.png](images/page57_img1.png)
+
 ## Page 58
 
 The Facilitator’s Catechism, 2020 
@@ -2570,11 +2598,15 @@ The Facilitator’s Catechism, 2020
 Appendix G 
 U.S. Modern Five Paragraph Order [43]
 
+![page58_img1.jpeg](images/page58_img1.jpeg)
+
 ## Page 59
 
 The Facilitator’s Catechism, 2020 
  
 59
+
+![page59_img1.jpeg](images/page59_img1.jpeg)
 
 ## Page 60
 
@@ -2585,6 +2617,8 @@ The Facilitator’s Catechism, 2020
 Appendix H 
 U.S. Vietnam War Three Paragraph Order [3]
 
+![page60_img1.jpeg](images/page60_img1.jpeg)
+
 ## Page 61
 
 The Facilitator’s Catechism, 2020 
@@ -2593,6 +2627,8 @@ The Facilitator’s Catechism, 2020
  
 Appendix I 
 Soviet OPORD as of 1988 [3]
+
+![page61_img1.png](images/page61_img1.png)
 
 ## Page 62
 
@@ -2603,6 +2639,8 @@ The Facilitator’s Catechism, 2020
 Appendix J 
 Israeli OPORD as of 1988 [3]
 
+![page62_img1.jpeg](images/page62_img1.jpeg)
+
 ## Page 63
 
 The Facilitator’s Catechism, 2020 
@@ -2611,6 +2649,8 @@ The Facilitator’s Catechism, 2020
  
 Appendix K 
 Heilmeier Catechism [98]
+
+![page63_img1.jpeg](images/page63_img1.jpeg)
 
 ## Page 64
 
@@ -2621,6 +2661,8 @@ The Facilitator’s Catechism, 2020
 Appendix L 
 Facilitator’s Catechism
 
+![page64_img1.jpeg](images/page64_img1.jpeg)
+
 ## Page 65
 
 The Facilitator’s Catechism, 2020 
@@ -2629,6 +2671,8 @@ The Facilitator’s Catechism, 2020
  
 Appendix M  
 Comparisons of OPORDs
+
+![page65_img1.png](images/page65_img1.png)
 
 
 ---

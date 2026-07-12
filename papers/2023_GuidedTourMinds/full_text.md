@@ -2,6 +2,8 @@
 
 > Extracted from `2023_GuidedTourMinds.pdf`
 
+> 2 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -48,6 +50,10 @@ Physics of Life Reviews
 journal homepage: www.elsevier.com/locate/plrev 
 https://doi.org/10.1016/j.plrev.2023.11.001 
 Received 2 November 2023; Accepted 6 November 2023
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
 
 ## Page 2
 

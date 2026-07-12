@@ -2,6 +2,8 @@
 
 > Extracted from `2024_SharedProtentions.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -88,6 +90,8 @@ In detail, we unpack the notion of shared goals in a social group by appealing t
 construct of protention (or real-time, implicit anticipation) in Husserlian phenomenology.
 Entropy 2024, 26, 303. https://doi.org/10.3390/e26040303
 https://www.mdpi.com/journal/entropy
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 

@@ -2,6 +2,8 @@
 
 > Extracted from `beacons.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -35,6 +37,8 @@ GIST:
  
 Cat vs environment with objects 
 Every object; or even things with a noticed Pattern
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 

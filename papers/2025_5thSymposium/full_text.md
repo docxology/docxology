@@ -2,6 +2,8 @@
 
 > Extracted from `2025_5thSymposium.pdf`
 
+> 260 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -12,6 +14,16 @@ SYMPOSIUM
 ABSTRACT BOOK
 NOVEMBER 12-14, 2025
 SYMPOSIUM.ACTIVEINFERENCE.INSTITUTE
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
+
+![page1_img4.jpeg](images/page1_img4.jpeg)
+
+![page1_img5.jpeg](images/page1_img5.jpeg)
 
 ## Page 2
 
@@ -54,6 +66,16 @@ Interactive Workshops
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
+![page4_img2.jpeg](images/page4_img2.jpeg)
+
+![page4_img3.jpeg](images/page4_img3.jpeg)
+
+![page4_img4.jpeg](images/page4_img4.jpeg)
+
+![page4_img5.jpeg](images/page4_img5.jpeg)
+
 ## Page 5
 
 5TH APPLIED ACTIVE INFERENCE
@@ -65,6 +87,16 @@ Karl Friston
 University College London
 01
 Keynote address
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
+![page5_img2.jpeg](images/page5_img2.jpeg)
+
+![page5_img3.jpeg](images/page5_img3.jpeg)
+
+![page5_img4.jpeg](images/page5_img4.jpeg)
+
+![page5_img5.jpeg](images/page5_img5.jpeg)
 
 ## Page 6
 
@@ -91,6 +123,16 @@ more generally, and what we ought to do about it.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
+
+![page6_img4.jpeg](images/page6_img4.jpeg)
+
+![page6_img5.jpeg](images/page6_img5.jpeg)
 
 ## Page 7
 
@@ -126,6 +168,16 @@ the field, rather than simply degrading it.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.jpeg](images/page7_img2.jpeg)
+
+![page7_img3.jpeg](images/page7_img3.jpeg)
+
+![page7_img4.jpeg](images/page7_img4.jpeg)
+
+![page7_img5.jpeg](images/page7_img5.jpeg)
+
 ## Page 8
 
 This enables metabolised discontinuity; ruptures become
@@ -143,6 +195,16 @@ language for identity maintenance over time.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
+![page8_img4.jpeg](images/page8_img4.jpeg)
+
+![page8_img5.jpeg](images/page8_img5.jpeg)
 
 ## Page 9
 
@@ -170,6 +232,16 @@ they are real, and they are interactional.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
+![page9_img4.jpeg](images/page9_img4.jpeg)
+
+![page9_img5.jpeg](images/page9_img5.jpeg)
 
 ## Page 10
 
@@ -206,6 +278,16 @@ possibilities for adaptation, alignment, and navigating uncertainty.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
+
+![page10_img3.jpeg](images/page10_img3.jpeg)
+
+![page10_img4.jpeg](images/page10_img4.jpeg)
+
+![page10_img5.jpeg](images/page10_img5.jpeg)
+
 ## Page 11
 
 Approaches to Spatial
@@ -241,6 +323,16 @@ Foundation; University of Illinois U-C
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
+![page11_img2.jpeg](images/page11_img2.jpeg)
+
+![page11_img3.jpeg](images/page11_img3.jpeg)
+
+![page11_img4.jpeg](images/page11_img4.jpeg)
+
+![page11_img5.jpeg](images/page11_img5.jpeg)
+
 ## Page 12
 
 08
@@ -267,6 +359,16 @@ artificial intelligences: towards
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
+
+![page12_img3.jpeg](images/page12_img3.jpeg)
+
+![page12_img4.jpeg](images/page12_img4.jpeg)
+
+![page12_img5.jpeg](images/page12_img5.jpeg)
 
 ## Page 13
 
@@ -307,6 +409,16 @@ Foundation; University of Illinois U-C
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page13_img1.jpeg](images/page13_img1.jpeg)
+
+![page13_img2.jpeg](images/page13_img2.jpeg)
+
+![page13_img3.jpeg](images/page13_img3.jpeg)
+
+![page13_img4.jpeg](images/page13_img4.jpeg)
+
+![page13_img5.jpeg](images/page13_img5.jpeg)
+
 ## Page 14
 
 Combining Hierarchical Active
@@ -338,6 +450,16 @@ Institute
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
+
+![page14_img4.jpeg](images/page14_img4.jpeg)
+
+![page14_img5.jpeg](images/page14_img5.jpeg)
+
 ## Page 15
 
 12
@@ -358,6 +480,16 @@ will continuously be updated.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
+![page15_img2.jpeg](images/page15_img2.jpeg)
+
+![page15_img3.jpeg](images/page15_img3.jpeg)
+
+![page15_img4.jpeg](images/page15_img4.jpeg)
+
+![page15_img5.jpeg](images/page15_img5.jpeg)
 
 ## Page 16
 
@@ -391,6 +523,16 @@ Research Fellow, Active Inference Institute
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
+![page16_img2.jpeg](images/page16_img2.jpeg)
+
+![page16_img3.jpeg](images/page16_img3.jpeg)
+
+![page16_img4.jpeg](images/page16_img4.jpeg)
+
+![page16_img5.jpeg](images/page16_img5.jpeg)
+
 ## Page 17
 
 The phenomeno-logical robot
@@ -421,6 +563,16 @@ Can there be something it is like to be a robot?
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page17_img1.jpeg](images/page17_img1.jpeg)
+
+![page17_img2.jpeg](images/page17_img2.jpeg)
+
+![page17_img3.jpeg](images/page17_img3.jpeg)
+
+![page17_img4.jpeg](images/page17_img4.jpeg)
+
+![page17_img5.jpeg](images/page17_img5.jpeg)
 
 ## Page 18
 
@@ -454,6 +606,16 @@ for effective belief updating in the face of overwhelming surprisal.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page18_img1.jpeg](images/page18_img1.jpeg)
+
+![page18_img2.jpeg](images/page18_img2.jpeg)
+
+![page18_img3.jpeg](images/page18_img3.jpeg)
+
+![page18_img4.jpeg](images/page18_img4.jpeg)
+
+![page18_img5.jpeg](images/page18_img5.jpeg)
+
 ## Page 19
 
 16
@@ -469,6 +631,16 @@ movements. Please be prepared for guided movement meditations.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
+![page19_img2.jpeg](images/page19_img2.jpeg)
+
+![page19_img3.jpeg](images/page19_img3.jpeg)
+
+![page19_img4.jpeg](images/page19_img4.jpeg)
+
+![page19_img5.jpeg](images/page19_img5.jpeg)
 
 ## Page 20
 
@@ -504,6 +676,16 @@ better integrating attention into predictive processing frameworks.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page20_img1.jpeg](images/page20_img1.jpeg)
+
+![page20_img2.jpeg](images/page20_img2.jpeg)
+
+![page20_img3.jpeg](images/page20_img3.jpeg)
+
+![page20_img4.jpeg](images/page20_img4.jpeg)
+
+![page20_img5.jpeg](images/page20_img5.jpeg)
+
 ## Page 21
 
 Hyperscanning under Active
@@ -534,6 +716,16 @@ outcome: healing.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page21_img1.jpeg](images/page21_img1.jpeg)
+
+![page21_img2.jpeg](images/page21_img2.jpeg)
+
+![page21_img3.jpeg](images/page21_img3.jpeg)
+
+![page21_img4.jpeg](images/page21_img4.jpeg)
+
+![page21_img5.jpeg](images/page21_img5.jpeg)
 
 ## Page 22
 
@@ -568,6 +760,16 @@ accessible novelty
 Terminal object (True Infinity) preventing infinite regress in the
 observer hierarchy.
 
+![page22_img1.jpeg](images/page22_img1.jpeg)
+
+![page22_img2.jpeg](images/page22_img2.jpeg)
+
+![page22_img3.jpeg](images/page22_img3.jpeg)
+
+![page22_img4.jpeg](images/page22_img4.jpeg)
+
+![page22_img5.jpeg](images/page22_img5.jpeg)
+
 ## Page 23
 
 20
@@ -585,6 +787,16 @@ artificial intelligence.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page23_img1.jpeg](images/page23_img1.jpeg)
+
+![page23_img2.jpeg](images/page23_img2.jpeg)
+
+![page23_img3.jpeg](images/page23_img3.jpeg)
+
+![page23_img4.jpeg](images/page23_img4.jpeg)
+
+![page23_img5.jpeg](images/page23_img5.jpeg)
 
 ## Page 24
 
@@ -619,6 +831,16 @@ benefit.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page24_img1.jpeg](images/page24_img1.jpeg)
+
+![page24_img2.jpeg](images/page24_img2.jpeg)
+
+![page24_img3.jpeg](images/page24_img3.jpeg)
+
+![page24_img4.jpeg](images/page24_img4.jpeg)
+
+![page24_img5.jpeg](images/page24_img5.jpeg)
+
 ## Page 25
 
 22
@@ -648,6 +870,16 @@ self-organizing systems.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page25_img1.jpeg](images/page25_img1.jpeg)
+
+![page25_img2.jpeg](images/page25_img2.jpeg)
+
+![page25_img3.jpeg](images/page25_img3.jpeg)
+
+![page25_img4.jpeg](images/page25_img4.jpeg)
+
+![page25_img5.jpeg](images/page25_img5.jpeg)
 
 ## Page 26
 
@@ -687,6 +919,16 @@ phase of both applied and theoretical AI research.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page26_img1.jpeg](images/page26_img1.jpeg)
+
+![page26_img2.jpeg](images/page26_img2.jpeg)
+
+![page26_img3.jpeg](images/page26_img3.jpeg)
+
+![page26_img4.jpeg](images/page26_img4.jpeg)
+
+![page26_img5.jpeg](images/page26_img5.jpeg)
+
 ## Page 27
 
 Active Self-Referecing: The concept
@@ -720,6 +962,16 @@ symmetrical, but intertwined).
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page27_img1.jpeg](images/page27_img1.jpeg)
+
+![page27_img2.jpeg](images/page27_img2.jpeg)
+
+![page27_img3.jpeg](images/page27_img3.jpeg)
+
+![page27_img4.jpeg](images/page27_img4.jpeg)
+
+![page27_img5.jpeg](images/page27_img5.jpeg)
+
 ## Page 28
 
 25
@@ -747,6 +999,16 @@ perspective/selfhood in active-inferential agents.
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
 
+![page28_img1.jpeg](images/page28_img1.jpeg)
+
+![page28_img2.jpeg](images/page28_img2.jpeg)
+
+![page28_img3.jpeg](images/page28_img3.jpeg)
+
+![page28_img4.jpeg](images/page28_img4.jpeg)
+
+![page28_img5.jpeg](images/page28_img5.jpeg)
+
 ## Page 29
 
 Tradescaping for Active
@@ -758,6 +1020,16 @@ TbD
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
+
+![page29_img1.jpeg](images/page29_img1.jpeg)
+
+![page29_img2.jpeg](images/page29_img2.jpeg)
+
+![page29_img3.jpeg](images/page29_img3.jpeg)
+
+![page29_img4.jpeg](images/page29_img4.jpeg)
+
+![page29_img5.jpeg](images/page29_img5.jpeg)
 
 ## Page 30
 
@@ -794,6 +1066,16 @@ cognition (to investigate the generality of these principles).
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page30_img1.jpeg](images/page30_img1.jpeg)
+
+![page30_img2.jpeg](images/page30_img2.jpeg)
+
+![page30_img3.jpeg](images/page30_img3.jpeg)
+
+![page30_img4.jpeg](images/page30_img4.jpeg)
+
+![page30_img5.jpeg](images/page30_img5.jpeg)
+
 ## Page 31
 
 5TH APPLIED ACTIVE INFERENCE
@@ -813,6 +1095,16 @@ or preference-seeking behavior? I argue that entropy-maximizing
 behavior is a sui generis dimension of motivation orthogonal to the
 pursuit of reward, and in fact prior to it in the sense that unlike
 utility, it is model-agnostic.
+
+![page31_img1.jpeg](images/page31_img1.jpeg)
+
+![page31_img2.jpeg](images/page31_img2.jpeg)
+
+![page31_img3.jpeg](images/page31_img3.jpeg)
+
+![page31_img4.jpeg](images/page31_img4.jpeg)
+
+![page31_img5.jpeg](images/page31_img5.jpeg)
 
 ## Page 32
 
@@ -849,6 +1141,16 @@ psychopathological disorders.
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page32_img1.jpeg](images/page32_img1.jpeg)
+
+![page32_img2.jpeg](images/page32_img2.jpeg)
+
+![page32_img3.jpeg](images/page32_img3.jpeg)
+
+![page32_img4.jpeg](images/page32_img4.jpeg)
+
+![page32_img5.jpeg](images/page32_img5.jpeg)
+
 ## Page 33
 
 30
@@ -862,6 +1164,16 @@ further conversation and interdisciplinary collaborations.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
+
+![page33_img1.jpeg](images/page33_img1.jpeg)
+
+![page33_img2.jpeg](images/page33_img2.jpeg)
+
+![page33_img3.jpeg](images/page33_img3.jpeg)
+
+![page33_img4.jpeg](images/page33_img4.jpeg)
+
+![page33_img5.jpeg](images/page33_img5.jpeg)
 
 ## Page 34
 
@@ -896,6 +1208,16 @@ the XXth century.
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page34_img1.jpeg](images/page34_img1.jpeg)
+
+![page34_img2.jpeg](images/page34_img2.jpeg)
+
+![page34_img3.jpeg](images/page34_img3.jpeg)
+
+![page34_img4.jpeg](images/page34_img4.jpeg)
+
+![page34_img5.jpeg](images/page34_img5.jpeg)
+
 ## Page 35
 
 32
@@ -913,6 +1235,16 @@ the effort of building Active Inference for the Social Science.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
+
+![page35_img1.jpeg](images/page35_img1.jpeg)
+
+![page35_img2.jpeg](images/page35_img2.jpeg)
+
+![page35_img3.jpeg](images/page35_img3.jpeg)
+
+![page35_img4.jpeg](images/page35_img4.jpeg)
+
+![page35_img5.jpeg](images/page35_img5.jpeg)
 
 ## Page 36
 
@@ -938,6 +1270,16 @@ environment acts on the agent of interest?
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
+
+![page36_img1.jpeg](images/page36_img1.jpeg)
+
+![page36_img2.jpeg](images/page36_img2.jpeg)
+
+![page36_img3.jpeg](images/page36_img3.jpeg)
+
+![page36_img4.jpeg](images/page36_img4.jpeg)
+
+![page36_img5.jpeg](images/page36_img5.jpeg)
 
 ## Page 37
 
@@ -969,6 +1311,16 @@ distributed Active Inference at scale.
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page37_img1.jpeg](images/page37_img1.jpeg)
+
+![page37_img2.jpeg](images/page37_img2.jpeg)
+
+![page37_img3.jpeg](images/page37_img3.jpeg)
+
+![page37_img4.jpeg](images/page37_img4.jpeg)
+
+![page37_img5.jpeg](images/page37_img5.jpeg)
+
 ## Page 38
 
 35
@@ -982,6 +1334,16 @@ that align with the principles of Active Inference.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
+
+![page38_img1.jpeg](images/page38_img1.jpeg)
+
+![page38_img2.jpeg](images/page38_img2.jpeg)
+
+![page38_img3.jpeg](images/page38_img3.jpeg)
+
+![page38_img4.jpeg](images/page38_img4.jpeg)
+
+![page38_img5.jpeg](images/page38_img5.jpeg)
 
 ## Page 39
 
@@ -1016,6 +1378,16 @@ protention and a collective salience landscape.
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page39_img1.jpeg](images/page39_img1.jpeg)
+
+![page39_img2.jpeg](images/page39_img2.jpeg)
+
+![page39_img3.jpeg](images/page39_img3.jpeg)
+
+![page39_img4.jpeg](images/page39_img4.jpeg)
+
+![page39_img5.jpeg](images/page39_img5.jpeg)
+
 ## Page 40
 
 37
@@ -1029,6 +1401,16 @@ disciplinary boundaries.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
+
+![page40_img1.jpeg](images/page40_img1.jpeg)
+
+![page40_img2.jpeg](images/page40_img2.jpeg)
+
+![page40_img3.jpeg](images/page40_img3.jpeg)
+
+![page40_img4.jpeg](images/page40_img4.jpeg)
+
+![page40_img5.jpeg](images/page40_img5.jpeg)
 
 ## Page 41
 
@@ -1060,6 +1442,16 @@ cases that could benefit society.
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page41_img1.jpeg](images/page41_img1.jpeg)
+
+![page41_img2.jpeg](images/page41_img2.jpeg)
+
+![page41_img3.jpeg](images/page41_img3.jpeg)
+
+![page41_img4.jpeg](images/page41_img4.jpeg)
+
+![page41_img5.jpeg](images/page41_img5.jpeg)
+
 ## Page 42
 
 Adaptive Robotics for the Real
@@ -1083,6 +1475,16 @@ intelligent systems.
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
 
+![page42_img1.jpeg](images/page42_img1.jpeg)
+
+![page42_img2.jpeg](images/page42_img2.jpeg)
+
+![page42_img3.jpeg](images/page42_img3.jpeg)
+
+![page42_img4.jpeg](images/page42_img4.jpeg)
+
+![page42_img5.jpeg](images/page42_img5.jpeg)
+
 ## Page 43
 
 TBD
@@ -1093,6 +1495,16 @@ TBD
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 LIVE-STREAMED PANEL
+
+![page43_img1.jpeg](images/page43_img1.jpeg)
+
+![page43_img2.jpeg](images/page43_img2.jpeg)
+
+![page43_img3.jpeg](images/page43_img3.jpeg)
+
+![page43_img4.jpeg](images/page43_img4.jpeg)
+
+![page43_img5.jpeg](images/page43_img5.jpeg)
 
 ## Page 44
 
@@ -1125,6 +1537,16 @@ testable predictions for neuroeconomics and finance while
 providing a reproducible path to engineering belief-driven market
 agents.
 
+![page44_img1.jpeg](images/page44_img1.jpeg)
+
+![page44_img2.jpeg](images/page44_img2.jpeg)
+
+![page44_img3.jpeg](images/page44_img3.jpeg)
+
+![page44_img4.jpeg](images/page44_img4.jpeg)
+
+![page44_img5.jpeg](images/page44_img5.jpeg)
+
 ## Page 45
 
 5TH APPLIED ACTIVE INFERENCE
@@ -1145,6 +1567,16 @@ Energy Principle. A comparison between two interpretations of the
 math, the customary Bayesian interpretations and an alternate
 interpretation that describes a dialogue between two systems,
 PIx,y) and Q(x). (30 minutes)
+
+![page45_img1.jpeg](images/page45_img1.jpeg)
+
+![page45_img2.jpeg](images/page45_img2.jpeg)
+
+![page45_img3.jpeg](images/page45_img3.jpeg)
+
+![page45_img4.jpeg](images/page45_img4.jpeg)
+
+![page45_img5.jpeg](images/page45_img5.jpeg)
 
 ## Page 46
 
@@ -1185,6 +1617,16 @@ adaptation scheme makes an AIF agent flexible in challenging
 problem contexts, particularly in those that require the querying of
 goals related to human instruction or desired states.
 
+![page46_img1.jpeg](images/page46_img1.jpeg)
+
+![page46_img2.jpeg](images/page46_img2.jpeg)
+
+![page46_img3.jpeg](images/page46_img3.jpeg)
+
+![page46_img4.jpeg](images/page46_img4.jpeg)
+
+![page46_img5.jpeg](images/page46_img5.jpeg)
+
 ## Page 47
 
 5TH APPLIED ACTIVE INFERENCE
@@ -1216,6 +1658,16 @@ latest version of NGC-Learn, covering its design patterns and
 modularity as well as the internal processes that it uses to speed
 up computation.
 
+![page47_img1.jpeg](images/page47_img1.jpeg)
+
+![page47_img2.jpeg](images/page47_img2.jpeg)
+
+![page47_img3.jpeg](images/page47_img3.jpeg)
+
+![page47_img4.jpeg](images/page47_img4.jpeg)
+
+![page47_img5.jpeg](images/page47_img5.jpeg)
+
 ## Page 48
 
 Using Active Inference for the
@@ -1240,6 +1692,16 @@ renewables and distributed generation.
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
+![page48_img1.jpeg](images/page48_img1.jpeg)
+
+![page48_img2.jpeg](images/page48_img2.jpeg)
+
+![page48_img3.jpeg](images/page48_img3.jpeg)
+
+![page48_img4.jpeg](images/page48_img4.jpeg)
+
+![page48_img5.jpeg](images/page48_img5.jpeg)
+
 ## Page 49
 
 Interactive Math Tools for Active
@@ -1253,6 +1715,16 @@ strategies for eliciting feedback in various forms.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
+
+![page49_img1.jpeg](images/page49_img1.jpeg)
+
+![page49_img2.jpeg](images/page49_img2.jpeg)
+
+![page49_img3.jpeg](images/page49_img3.jpeg)
+
+![page49_img4.jpeg](images/page49_img4.jpeg)
+
+![page49_img5.jpeg](images/page49_img5.jpeg)
 
 ## Page 50
 
@@ -1290,6 +1762,16 @@ Role Playing Games
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
+![page50_img1.jpeg](images/page50_img1.jpeg)
+
+![page50_img2.jpeg](images/page50_img2.jpeg)
+
+![page50_img3.jpeg](images/page50_img3.jpeg)
+
+![page50_img4.jpeg](images/page50_img4.jpeg)
+
+![page50_img5.jpeg](images/page50_img5.jpeg)
+
 ## Page 51
 
 Workshop on ActiveInference.jl.
@@ -1320,6 +1802,16 @@ such as human participants in psychiatric experiments.
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
+![page51_img1.jpeg](images/page51_img1.jpeg)
+
+![page51_img2.jpeg](images/page51_img2.jpeg)
+
+![page51_img3.jpeg](images/page51_img3.jpeg)
+
+![page51_img4.jpeg](images/page51_img4.jpeg)
+
+![page51_img5.jpeg](images/page51_img5.jpeg)
+
 ## Page 52
 
 Consciousness and Active
@@ -1341,6 +1833,16 @@ investigate them.
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
+![page52_img1.jpeg](images/page52_img1.jpeg)
+
+![page52_img2.jpeg](images/page52_img2.jpeg)
+
+![page52_img3.jpeg](images/page52_img3.jpeg)
+
+![page52_img4.jpeg](images/page52_img4.jpeg)
+
+![page52_img5.jpeg](images/page52_img5.jpeg)
+
 ## Page 53
 
 Thermodynamics
@@ -1349,6 +1851,16 @@ Patrick Huembeli & Maxwell Ramstead
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
+
+![page53_img1.jpeg](images/page53_img1.jpeg)
+
+![page53_img2.jpeg](images/page53_img2.jpeg)
+
+![page53_img3.jpeg](images/page53_img3.jpeg)
+
+![page53_img4.jpeg](images/page53_img4.jpeg)
+
+![page53_img5.jpeg](images/page53_img5.jpeg)
 
 ## Page 54
 
@@ -1360,6 +1872,16 @@ INTERACTIVE WORKSHOP
 ACTIVE INFERENCE
 SYMPOSIUM
 ABSTRACT BOOK
+
+![page55_img1.jpeg](images/page55_img1.jpeg)
+
+![page55_img2.jpeg](images/page55_img2.jpeg)
+
+![page55_img3.jpeg](images/page55_img3.jpeg)
+
+![page55_img4.jpeg](images/page55_img4.jpeg)
+
+![page55_img5.jpeg](images/page55_img5.jpeg)
 
 
 ---

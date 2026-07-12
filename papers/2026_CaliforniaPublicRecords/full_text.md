@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_California_8f09eac2.pdf`
 
+> 14 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.20789899
 June 21, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -316,6 +320,8 @@ Definition of public records
 definition
 5
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 Citation
@@ -403,6 +409,8 @@ a written extension, but the statute caps that extension at 14 days. Requests ma
 person, by phone, by mail, by email, or through digital portals. Where a record is held electronically, the agency must
 6
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 Figure 3: Cross-reference network for registered statute sections that cite external statutory authority. Arrows run from
@@ -410,6 +418,8 @@ the registered CPRA section to the cited authority; solid nodes are Government C
 external authorities. Provenance: the cross_references fields in src/statutes.py. Caveat: no edge is inferred from
 prose; absent edges mean the registry does not encode a cross-reference.
 7
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -478,6 +488,10 @@ rc/provenance.py and src/statutes.py; methodology is documented by the project v
 is citation honesty, not an independent legal-concordance opinion.
 9
 
+![page10_img1.png](images/page10_img1.png)
+
+![page10_img2.png](images/page10_img2.png)
+
 ## Page 11
 
 4
@@ -542,6 +556,8 @@ California Natural
 Resources Agency
 environment
 10
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
@@ -688,6 +704,10 @@ ortals_domain_x_platform_matrix(). Caveat: the chart compares registry classific
 usage volume, dataset volume, or statutory importance.
 12
 
+![page13_img1.png](images/page13_img1.png)
+
+![page13_img2.png](images/page13_img2.png)
+
 ## Page 14
 
 5
@@ -729,6 +749,8 @@ Socrata Open Data API (SODA)
 San Francisco’s data.sfgov.org, and many other California county and city portals, run on Socrata (now Tyler Tech-
 nologies) with the SODA query language [DataSF, 2024a, Socrata / Tyler Technologies, 2024a, DataSF, 2024b].
 13
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -845,6 +867,10 @@ records, 7 defensive security controls, claim-ledger entries, and 3 live source 
 t_counts(). Caveat: claim-ledger and caption counts are build metadata; they are not public-records ecosystem counts.
 16
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 6.2
@@ -879,6 +905,8 @@ artifact set from a clean checkout and confirm by git diff that nothing drifted 
 lets this reference be trusted on first encounter.
 17
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 13: Defensive posture matrix for the publication pipeline, comparing current local controls with a harder target
@@ -887,6 +915,8 @@ integrity, and detection readiness. Provenance: the source-owned security-postur
 ATT&CK, SLSA, Sigstore, and CISA sources. Caveat: the figure documents manuscript and build-pipeline controls; it is
 not a claim of production deployment, signed release enforcement, or external compliance status.
 18
+
+![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 

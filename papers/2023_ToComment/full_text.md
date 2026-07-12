@@ -2,6 +2,8 @@
 
 > Extracted from `2023_ToComment.pdf`
 
+> 12 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -353,6 +355,8 @@ Figure 1. Rhetorical analysis Example 1. A “Condescending Willy Wonka” image
 with top text reading “Tell me more about how a virus can escape from a level 4 bio-lab”,
 and bottom text reading “But can’t get past a mask with little duckies on it...”
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
 ## Page 9
 
 Digital Rhetorical Ecosystem Analysis, 2021 
@@ -437,6 +441,8 @@ Figure 2. Rhetorical analysis Example 2. The image foreground has hands that are
 a pencil to write in a small book. The image background is blurred and appears to show 
 a person on the left. The top text of the image reads: “So is ‘Antifa’ in the room with us 
 right now, Karen?”.
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
 
 ## Page 11
 
@@ -564,6 +570,8 @@ and “narrative ecology” (red), from 1960-2019.
 B) Google Books Ngram search for “rhetorical ecosystem” (green), “digital ecosystem” 
 (blue), and “narrative ecosystem” (red), from 1960-2019.
 
+![page13_img1.png](images/page13_img1.png)
+
 ## Page 14
 
 Digital Rhetorical Ecosystem Analysis, 2021 
@@ -643,6 +651,8 @@ entities, claims, and warrants evoked by artifacts at the Instrumental tier.
 Figure 4. Ecosystem integrity model & the Rhetorical Ecosystem three-tier (DRE3) model. 
 A) Figure 1 reproduced from Equihua et al. 2020 [40]. B) Digital Rhetorical Ecosystem 
 Three-tier model.
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -845,6 +855,8 @@ information environments, via increasingly-fragmented platforms, channels,
 and chats. The common mapping, in the middle, is the notion of overlapping 
 and nested systems.
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 Digital Rhetorical Ecosystem Analysis, 2021 
@@ -973,6 +985,8 @@ fragile (failure-prone, top) or antifragile (resilient and regenerative,
 bottom). For digital discourse platforms, fragility would refer to the 
 inability to adapt or recover function following technological or rhetorical 
 perturbation.
+
+![page22_img1.jpeg](images/page22_img1.jpeg)
 
 ## Page 23
 
@@ -1111,6 +1125,8 @@ system. Putting quantitative value on “intangible” outcomes can be
 challenging. Seeing online outcomes as analogous to ecosystem services 
 is not a solution in and of itself, but rather a framework for approaching 
 system management and design.
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1505,6 +1521,8 @@ DRE3 model, breaking down the meme in terms of the Instrumental
 tier (what was observed), the Rhetorical tier (entities, warrants, claims), 
 and the Hidden State tier (implications and use-specific inferences).
 
+![page32_img1.jpeg](images/page32_img1.jpeg)
+
 ## Page 33
 
 Digital Rhetorical Ecosystem Analysis, 2021 
@@ -1625,6 +1643,8 @@ text. A) a target image meme under analysis. B) Application of DRE3
 model, breaking down the meme in terms of the Instrumental tier (what 
 was observed), the Rhetorical tier (entities, warrants, claims), and the 
 Hidden State tier (implications and use-specific inferences).
+
+![page35_img1.jpeg](images/page35_img1.jpeg)
 
 ## Page 36
 
@@ -2155,6 +2175,8 @@ used as training data for those of a lower competency, while contributions from
 segments with lower levels of competency can be used to help provide guidance 
 to those of a higher competency (e.g., suggested classifications).
 
+![page45_img1.png](images/page45_img1.png)
+
 ## Page 46
 
 Digital Rhetorical Ecosystem Analysis, 2021 
@@ -2594,6 +2616,8 @@ of the pipeline related to specific aspects of SCADA systems (blue), DRE3 analys
 content collection, processing, and analysis leading to the management of final intelligence 
 products within a dashboard.
 
+![page53_img1.png](images/page53_img1.png)
+
 ## Page 54
 
 Digital Rhetorical Ecosystem Analysis, 2021 
@@ -2603,6 +2627,8 @@ Digital Rhetorical Ecosystem Analysis, 2021
  
  
 Figure 12. A map of desired outputs from a meme-analysis pipeline.
+
+![page54_img1.png](images/page54_img1.png)
 
 ## Page 55
 

@@ -2,6 +2,8 @@
 
 > Extracted from `2023_DistributedScience.pdf`
 
+> 174 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -38,6 +40,18 @@ dissemination, and infrastructure (e.g., funding and laboratories) must all fit 
 orchestrated manner. Scientific practice has broad societal implications that go beyond mere 
 scientific progress: we base our decisions on theoretical (i.e., models and forecasts) and 
 technological (e.g., vaccines and smartphones) scientific advances. This paper applies the free
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
+
+![page1_img4.jpeg](images/page1_img4.jpeg)
+
+![page1_img5.jpeg](images/page1_img5.jpeg)
+
+![page1_img6.jpeg](images/page1_img6.jpeg)
 
 ## Page 2
 
@@ -81,6 +95,18 @@ always rise) (see Hume's concept of inductive fallacy  [5]). Finally, it does no
 development of rival scientific theories based on identical evidence, as the evidence available to 
 scientists is always consistent with multiple theoretical frameworks [6]. This characterises the 
 science of the “moderns” [7], which has inherited a fallacious dichotomy between nature and
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
+![page2_img2.jpeg](images/page2_img2.jpeg)
+
+![page2_img3.jpeg](images/page2_img3.jpeg)
+
+![page2_img4.jpeg](images/page2_img4.jpeg)
+
+![page2_img5.jpeg](images/page2_img5.jpeg)
+
+![page2_img6.jpeg](images/page2_img6.jpeg)
 
 ## Page 3
 
@@ -128,6 +154,18 @@ how they evaluate different hypotheses in light of new evidence (justification) 
 creative process of hypothesis formation through abduction. The context of discovery, or the 
 history of science, as Salmon would put it, is central to scientific thinking. A key aspect of the 
 Bayesian interpretation of the relationship between evidence and hypotheses is the notion that
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
+![page3_img2.jpeg](images/page3_img2.jpeg)
+
+![page3_img3.jpeg](images/page3_img3.jpeg)
+
+![page3_img4.jpeg](images/page3_img4.jpeg)
+
+![page3_img5.jpeg](images/page3_img5.jpeg)
+
+![page3_img6.jpeg](images/page3_img6.jpeg)
 
 ## Page 4
 
@@ -177,6 +215,18 @@ The two scales of scientific cognition can be viewed as integrated hierarchicall
 level supplying top-down control (i.e., empirical priors or inductive biases) on the individual level, 
 and the individual level providing bottom-up drivers of collective scientific cognition. The hope is
 
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
+![page4_img2.jpeg](images/page4_img2.jpeg)
+
+![page4_img3.jpeg](images/page4_img3.jpeg)
+
+![page4_img4.jpeg](images/page4_img4.jpeg)
+
+![page4_img5.jpeg](images/page4_img5.jpeg)
+
+![page4_img6.jpeg](images/page4_img6.jpeg)
+
 ## Page 5
 
 5
@@ -219,6 +269,18 @@ relations, while coherence and incoherence are encoded using excitatory and inhi
 breadth, simplicity, and analogy, representing hypothesis plausibility through node activation 
 levels.
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
+![page5_img2.jpeg](images/page5_img2.jpeg)
+
+![page5_img3.jpeg](images/page5_img3.jpeg)
+
+![page5_img4.jpeg](images/page5_img4.jpeg)
+
+![page5_img5.jpeg](images/page5_img5.jpeg)
+
+![page5_img6.jpeg](images/page5_img6.jpeg)
+
 ## Page 6
 
 6
@@ -246,6 +308,18 @@ Notably, the author claims that this predominance is partly due to social factor
 scientists driven by personal motivations of success and fame must present research to the 
 scientific community in terms of experimental and theoretical merits  [22]. By stating this, the 
 author seems to suggest that to fully understand the functioning of science and the dynamics of
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
+
+![page6_img4.jpeg](images/page6_img4.jpeg)
+
+![page6_img5.jpeg](images/page6_img5.jpeg)
+
+![page6_img6.jpeg](images/page6_img6.jpeg)
 
 ## Page 7
 
@@ -291,6 +365,18 @@ prevailing cultural and religious beliefs of the time. Let's consider two hypoth
 Earth-centred model, and H2 is the Sun-centred model. The evidence, E, is the observational 
 data, such as the apparent retrograde motion of planets. Before the evidence is considered, due
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.jpeg](images/page7_img2.jpeg)
+
+![page7_img3.jpeg](images/page7_img3.jpeg)
+
+![page7_img4.jpeg](images/page7_img4.jpeg)
+
+![page7_img5.jpeg](images/page7_img5.jpeg)
+
+![page7_img6.jpeg](images/page7_img6.jpeg)
+
 ## Page 8
 
 8
@@ -334,6 +420,18 @@ The Bayesian approach enables us to bridge the gap between modern and non-modern
 of science by incorporating the influence of technologies and prior probabilities from the external 
 environment. This resolution of apparent contradictions highlights the reciprocal influences 
 between these perspectives. Theoretical models play a crucial role in guiding the constructive
+
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
+![page8_img4.jpeg](images/page8_img4.jpeg)
+
+![page8_img5.jpeg](images/page8_img5.jpeg)
+
+![page8_img6.jpeg](images/page8_img6.jpeg)
 
 ## Page 9
 
@@ -380,6 +478,18 @@ evidence, where the negative logarithm of model evidence constitutes self inform
 information theory) or, more simply, surprise (a.k.a., surprisal). In other words, surprise scores 
 the implausibility of a particular sensory outcome given the agent or generative model in
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
+
+![page9_img3.jpeg](images/page9_img3.jpeg)
+
+![page9_img4.jpeg](images/page9_img4.jpeg)
+
+![page9_img5.jpeg](images/page9_img5.jpeg)
+
+![page9_img6.jpeg](images/page9_img6.jpeg)
+
 ## Page 10
 
 10
@@ -424,6 +534,18 @@ minimising variational free energy). In other words, generating knowledge from e
 Active sampling and selection: sampling sensory data to minimise surprise and expected 
 surprise (i.e., uncertainty). In other words, generating evidence from knowledge.
 
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
+
+![page10_img3.jpeg](images/page10_img3.jpeg)
+
+![page10_img4.jpeg](images/page10_img4.jpeg)
+
+![page10_img5.jpeg](images/page10_img5.jpeg)
+
+![page10_img6.jpeg](images/page10_img6.jpeg)
+
 ## Page 11
 
 11
@@ -454,6 +576,18 @@ Figure 3. Individual scientific cognition as a dialectic process:
  
 1) Model update via evidence (left arrow): when new data or evidence is collected, we update our models 
 or hypotheses to better fit that evidence. This is the essence of Bayes' theorem: given new evidence, how
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
+![page11_img2.jpeg](images/page11_img2.jpeg)
+
+![page11_img3.jpeg](images/page11_img3.jpeg)
+
+![page11_img4.jpeg](images/page11_img4.jpeg)
+
+![page11_img5.jpeg](images/page11_img5.jpeg)
+
+![page11_img6.jpeg](images/page11_img6.jpeg)
 
 ## Page 12
 
@@ -487,6 +621,18 @@ from prior observations. Si is the most probable scientific theory or hypothesis
 out of the true posterior. A is the posterior probability: the probability of observing o1 given Si (P(o 1|Si). 
 This calculation is made for all Si forming the model and the probabilities are normalised by dividing each 
 by the marginal likelihood over the full model to form the likelihood ratio. The updated posterior probability
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
+
+![page12_img3.jpeg](images/page12_img3.jpeg)
+
+![page12_img4.jpeg](images/page12_img4.jpeg)
+
+![page12_img5.jpeg](images/page12_img5.jpeg)
+
+![page12_img6.jpeg](images/page12_img6.jpeg)
 
 ## Page 13
 
@@ -527,6 +673,18 @@ hypotheses, while avoiding outcomes that would be uncharacteristic of the scient
 (e.g., blowing herself up) or characteristically unscientific (e.g., unethical). See Box 1 for a 
 formal summary of variational and expected free energy minimisation.
 
+![page13_img1.jpeg](images/page13_img1.jpeg)
+
+![page13_img2.jpeg](images/page13_img2.jpeg)
+
+![page13_img3.jpeg](images/page13_img3.jpeg)
+
+![page13_img4.jpeg](images/page13_img4.jpeg)
+
+![page13_img5.jpeg](images/page13_img5.jpeg)
+
+![page13_img6.jpeg](images/page13_img6.jpeg)
+
 ## Page 14
 
 14
@@ -563,6 +721,18 @@ by their (log) marginal likelihood. In short, active inference appeals to two ki
 subsumes information and preference-seeking behaviour under a single objective function that scores 
 epistemic and pragmatic affordances, respectively.
 
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
+
+![page14_img4.jpeg](images/page14_img4.jpeg)
+
+![page14_img5.jpeg](images/page14_img5.jpeg)
+
+![page14_img6.jpeg](images/page14_img6.jpeg)
+
 ## Page 15
 
 15
@@ -590,6 +760,18 @@ practitioners who acquire the motivation to do good experiments and defend them 
 argument. [22]
 In other words, how does the institution of science contextualise scientists’ “hot” cognitive 
 tendencies and guarantee the prevalence of “cold” cognition in the evolution of science?
+
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
+![page15_img2.jpeg](images/page15_img2.jpeg)
+
+![page15_img3.jpeg](images/page15_img3.jpeg)
+
+![page15_img4.jpeg](images/page15_img4.jpeg)
+
+![page15_img5.jpeg](images/page15_img5.jpeg)
+
+![page15_img6.jpeg](images/page15_img6.jpeg)
 
 ## Page 16
 
@@ -633,6 +815,18 @@ justice to the modern and non-modern interpretations of science described above.
 The FEP naturally offers scale-free heuristics to make sense (by simulating them) of complex, 
 self-organising dynamics at different scales. The FEP has been applied to generate insight into 
 structured,  collective  behaviours  (e.g.,[32];  [45];  [46];  [47])  as  forms  of  coordinated  and
+
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
+![page16_img2.jpeg](images/page16_img2.jpeg)
+
+![page16_img3.jpeg](images/page16_img3.jpeg)
+
+![page16_img4.jpeg](images/page16_img4.jpeg)
+
+![page16_img5.jpeg](images/page16_img5.jpeg)
+
+![page16_img6.jpeg](images/page16_img6.jpeg)
 
 ## Page 17
 
@@ -680,6 +874,18 @@ the holographic principle and quantum information geometry—not because they ap
 eschew the specification of a spacetime background; and therefore, they are scale-free, or scale-friendly, 
 but not inherently multi-scale.
 
+![page17_img1.jpeg](images/page17_img1.jpeg)
+
+![page17_img2.jpeg](images/page17_img2.jpeg)
+
+![page17_img3.jpeg](images/page17_img3.jpeg)
+
+![page17_img4.jpeg](images/page17_img4.jpeg)
+
+![page17_img5.jpeg](images/page17_img5.jpeg)
+
+![page17_img6.jpeg](images/page17_img6.jpeg)
+
 ## Page 18
 
 18
@@ -726,6 +932,18 @@ plan because of information that is embedded in the scientific context (either i
 intertwined in such a way that the highest level leads back to the lowest level, creating a closed loop with 
 no clear beginning or end.
 
+![page18_img1.jpeg](images/page18_img1.jpeg)
+
+![page18_img2.jpeg](images/page18_img2.jpeg)
+
+![page18_img3.jpeg](images/page18_img3.jpeg)
+
+![page18_img4.jpeg](images/page18_img4.jpeg)
+
+![page18_img5.jpeg](images/page18_img5.jpeg)
+
+![page18_img6.jpeg](images/page18_img6.jpeg)
+
 ## Page 19
 
 19
@@ -766,6 +984,18 @@ doing,  human  communities  are  able  to  overcome  the  individual  limitation
 components and to (at least partially) silence their priors in light of a higher-order, intelligent 
 goal. Is this enough for arguing that the outcomes of scientific practice are, even if momentarily, 
 of a superior status compared to other knowledge production systems?
+
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
+![page19_img2.jpeg](images/page19_img2.jpeg)
+
+![page19_img3.jpeg](images/page19_img3.jpeg)
+
+![page19_img4.jpeg](images/page19_img4.jpeg)
+
+![page19_img5.jpeg](images/page19_img5.jpeg)
+
+![page19_img6.jpeg](images/page19_img6.jpeg)
 
 ## Page 20
 
@@ -809,6 +1039,18 @@ detract from its epistemic value, are brought to light and clarified in the acco
 In our view, these properties are not merely bugs—rather, they are features of science as a 
 form of existence. As such, we ought to expect that these pragmatic factors will play an 
 important role in science.
+
+![page20_img1.jpeg](images/page20_img1.jpeg)
+
+![page20_img2.jpeg](images/page20_img2.jpeg)
+
+![page20_img3.jpeg](images/page20_img3.jpeg)
+
+![page20_img4.jpeg](images/page20_img4.jpeg)
+
+![page20_img5.jpeg](images/page20_img5.jpeg)
+
+![page20_img6.jpeg](images/page20_img6.jpeg)
 
 ## Page 21
 
@@ -854,6 +1096,18 @@ threatening our survival such as nuclear weapons. Perhaps science now has suffic
 to even erase the substrate on which it depends; It remains to be seen if this latitude is a 
 blessing or a curse. But this latitude is an aspect of science’s ‘area of concern’ which has
 
+![page21_img1.jpeg](images/page21_img1.jpeg)
+
+![page21_img2.jpeg](images/page21_img2.jpeg)
+
+![page21_img3.jpeg](images/page21_img3.jpeg)
+
+![page21_img4.jpeg](images/page21_img4.jpeg)
+
+![page21_img5.jpeg](images/page21_img5.jpeg)
+
+![page21_img6.jpeg](images/page21_img6.jpeg)
+
 ## Page 22
 
 22
@@ -889,6 +1143,18 @@ know itself.” Across all levels of existing things, individual existence is be
 faithfully following a particular generative model, one fine-tuned by its phylogenetic history, to 
 produce evidence of that thing’s existence. Processes of active inference ensure that hard-won 
 knowledge for existence is applied as diligently as possible.
+
+![page22_img1.jpeg](images/page22_img1.jpeg)
+
+![page22_img2.jpeg](images/page22_img2.jpeg)
+
+![page22_img3.jpeg](images/page22_img3.jpeg)
+
+![page22_img4.jpeg](images/page22_img4.jpeg)
+
+![page22_img5.jpeg](images/page22_img5.jpeg)
+
+![page22_img6.jpeg](images/page22_img6.jpeg)
 
 ## Page 23
 
@@ -934,6 +1200,18 @@ knowledge, wherein ideal forms, inaccessible in the empirical realm (the true di
 progressively approximated through empirical sampling of sensory outcomes and the process of 
 learning via experimentation. Evolution bestows upon us a foundational framework or model
 
+![page23_img1.jpeg](images/page23_img1.jpeg)
+
+![page23_img2.jpeg](images/page23_img2.jpeg)
+
+![page23_img3.jpeg](images/page23_img3.jpeg)
+
+![page23_img4.jpeg](images/page23_img4.jpeg)
+
+![page23_img5.jpeg](images/page23_img5.jpeg)
+
+![page23_img6.jpeg](images/page23_img6.jpeg)
+
 ## Page 24
 
 24
@@ -974,6 +1252,18 @@ The authors are grateful to VERSES for supporting open access publication of thi
 work  was  supported  by  a  ERC-2020-SyG,  European  Research  Council  Grant  (XSCAPE, 
 Agreement number 951631), Australian Laureate Fellowship project A Philosophy of Medicine 
 for the 21st Century (Ref: FL170100160), by a Social Sciences and Humanities Research
+
+![page24_img1.jpeg](images/page24_img1.jpeg)
+
+![page24_img2.jpeg](images/page24_img2.jpeg)
+
+![page24_img3.jpeg](images/page24_img3.jpeg)
+
+![page24_img4.jpeg](images/page24_img4.jpeg)
+
+![page24_img5.jpeg](images/page24_img5.jpeg)
+
+![page24_img6.jpeg](images/page24_img6.jpeg)
 
 ## Page 25
 
@@ -1049,6 +1339,18 @@ Science & Business Media; 2011. Available:
  
  
 id=UmlyBgAAQBAJ
+
+![page25_img1.jpeg](images/page25_img1.jpeg)
+
+![page25_img2.jpeg](images/page25_img2.jpeg)
+
+![page25_img3.jpeg](images/page25_img3.jpeg)
+
+![page25_img4.jpeg](images/page25_img4.jpeg)
+
+![page25_img5.jpeg](images/page25_img5.jpeg)
+
+![page25_img6.jpeg](images/page25_img6.jpeg)
 
 ## Page 26
 
@@ -1131,6 +1433,18 @@ representation under the free-energy principle. Neurosci Biobehav Rev. 2021;120:
 doi:
  
  10.1016/j.neubiorev.2020.11.024
+
+![page26_img1.jpeg](images/page26_img1.jpeg)
+
+![page26_img2.jpeg](images/page26_img2.jpeg)
+
+![page26_img3.jpeg](images/page26_img3.jpeg)
+
+![page26_img4.jpeg](images/page26_img4.jpeg)
+
+![page26_img5.jpeg](images/page26_img5.jpeg)
+
+![page26_img6.jpeg](images/page26_img6.jpeg)
 
 ## Page 27
 
@@ -1226,6 +1540,18 @@ University Press; 1980. Available:
  
  https://play.google.com/store/books/details?id=Irq913lEZ1QC
 
+![page27_img1.jpeg](images/page27_img1.jpeg)
+
+![page27_img2.jpeg](images/page27_img2.jpeg)
+
+![page27_img3.jpeg](images/page27_img3.jpeg)
+
+![page27_img4.jpeg](images/page27_img4.jpeg)
+
+![page27_img5.jpeg](images/page27_img5.jpeg)
+
+![page27_img6.jpeg](images/page27_img6.jpeg)
+
 ## Page 28
 
 28
@@ -1313,6 +1639,18 @@ sentient systems. Phys Life Rev. 2019;31: 188–205. doi:
  
  10.1016/j.plrev.2018.12.002
 
+![page28_img1.jpeg](images/page28_img1.jpeg)
+
+![page28_img2.jpeg](images/page28_img2.jpeg)
+
+![page28_img3.jpeg](images/page28_img3.jpeg)
+
+![page28_img4.jpeg](images/page28_img4.jpeg)
+
+![page28_img5.jpeg](images/page28_img5.jpeg)
+
+![page28_img6.jpeg](images/page28_img6.jpeg)
+
 ## Page 29
 
 29
@@ -1370,6 +1708,18 @@ principle from an ecological-enactive perspective. Synthese. 2016; 1–28. doi:
 016-1239-1
 72. Campbell JO. The Knowing Universe. Independently Published; 2021. Available: 
 https://books.google.com/books/about/The_Knowing_Universe.html?hl=&id=NMO1zgEACAAJ
+
+![page29_img1.jpeg](images/page29_img1.jpeg)
+
+![page29_img2.jpeg](images/page29_img2.jpeg)
+
+![page29_img3.jpeg](images/page29_img3.jpeg)
+
+![page29_img4.jpeg](images/page29_img4.jpeg)
+
+![page29_img5.jpeg](images/page29_img5.jpeg)
+
+![page29_img6.jpeg](images/page29_img6.jpeg)
 
 
 ---

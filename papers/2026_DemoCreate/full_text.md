@@ -2,6 +2,8 @@
 
 > Extracted from `democreate-0.6.2-manuscript.pdf`
 
+> 12 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -265,6 +267,8 @@ and composes them — alongside a diagram of the paper’s codebase — into a n
 The architecture is testable by construction: across 51 source modules in 7 subsystems, a real-filesystem suite
 3
 
+![page3_img1.png](images/page3_img1.png)
+
 ## Page 4
 
 of 625 passing tests (3 skipped) holds a ≥90% coverage gate — achieving roughly 95% — with thin backend
@@ -407,6 +411,8 @@ of Fowler (Fowler 2005) and CodeVideo (CodeVideo 2024): content is an ordered, r
 mutations against a virtual environment, so the same log re-renders to any output format and any point in the
 demo is reconstructible by replaying the prefix. The chunk-and-trigger layering is VSpeak’s narration model
 6
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -745,6 +751,8 @@ across scene boundaries, re-renders flagged chunks through the typing reveal so 
 character, draws an animated cursor with a click ripple where a chunk supplies a cursor_xy, and carries
 12
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 an optional Ken Burns zoom that is off by default so figures and pages stay un-cropped (sec. 6). The typing
@@ -800,6 +808,8 @@ Jinja2 template, embedding the resolved timeline so the demo can be scrubbed in 
 export/video.py encodes the animated frames against the assembled, normalized voiceover into an H.264
 MP4 with ffmpeg (the optional video extra swaps in MoviePy (Zulko and MoviePy contributors 2024) for
 13
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -868,6 +878,10 @@ Figure 6: A SLIDE title card rendered by SyntheticRenderer: a large TrueType tit
 title_ratio, an accent underline, a subtitle in the dim color, and a section pill in the top chrome. The
 same slide renderer composes intro, outro, and section-divider frames.
 15
+
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
 
 ## Page 16
 
@@ -958,6 +972,8 @@ Named 16:9 resolution tiers live in RESOLUTIONS — 720p (1280×720), 1080p (192
 Because the same height-relative scaling governs every glyph and box, a higher tier is
 genuinely higher resolution rather than an upscale: text and chrome are re-rasterized at the larger size, not
 17
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -1050,6 +1066,8 @@ long manuscripts front-load. The extractors operate on already-extracted text, s
 without poppler; only summarize_structure touches the guarded poppler path.
 19
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 extract_abstract finds the real abstract, not the title block. A naive /abstract/i match fails on a long
@@ -1113,6 +1131,8 @@ paper) is fit whole into the content area as a background_image (contain, never 
 section pill in the chrome and the narration caption in a band below the image. The no-crop layout (sec. 6)
 keeps the entire figure — axes, labels, and all — visible.
 21
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -1212,6 +1232,8 @@ rendering, the CLI commands, and the end-to-end pipeline. Tests follow a real-fi
 spirit of xUnit test patterns (Meszaros 2007) and run under pytest (pytest-dev team 2024): they create
 23
 
+![page23_img1.png](images/page23_img1.png)
+
 ## Page 24
 
 temporary workspaces, run real stages against them, and inspect the produced files, rather than asserting
@@ -1299,6 +1321,8 @@ scene typing in character by character (monochrome with red keywords). Bottom ro
 demo: an abstract scene and a real published figure fit whole into the frame under the no-crop layout. Each
 is real evidence of a content-verified render, not a mock-up.
 25
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1608,6 +1632,8 @@ Container tags. export/metadata.py turns the demo plus its MetadataConfig into s
 data. build_tags is a pure function producing the canonical title (the metadata title overriding the demo
 title), artist (the author), date, and a comment/description credit line (“made with DemoCreate version
 30
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 

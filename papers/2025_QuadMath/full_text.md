@@ -2,6 +2,8 @@
 
 > Extracted from `2025_QuadMath.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -560,6 +562,8 @@ coordinates naturally align with dense sphere packing and the “twelve around o
 central to synergetics and Fuller.4D modeling.
 7
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 2
@@ -668,6 +672,8 @@ touching neighbor spheres, revealing the cuboctahedron’s edge structure, plus 
 origin representing a stylized tensegrity interpretation of the vector equilibrium geometry.
 10
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 Figure 3: Random Quadray point clouds under different embeddings (3-panel comparison). Each
@@ -706,6 +712,8 @@ in IVM units
 • Coordinate system bridges: Linear transformations between Fuller.4D and Coxeter.4D preserve
 geometric relationships
 11
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
@@ -1136,6 +1144,8 @@ the mathematical equivalence of these formulations under synergetics unit conven
 data saved as bridging_vs_native.csv for reproducibility and further analysis.
 18
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 5: Tetrahedron volume scaling relationships: Euclidean vs IVM unit conventions. This
@@ -1157,6 +1167,8 @@ The plot provides the theoretical foundation for understanding volume conversion
 in the IVM system.
 19
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 Figure 6: Synergetic polyhedra volume relationships in the Quadray/IVM framework (compre-
@@ -1175,6 +1187,8 @@ container and other polyhedra emerge as integer multiples, supporting discrete g
 and exact lattice-based optimization methods. All constructions respect the IVM unit convention where
 the regular tetrahedron has tetravolume 1.
 20
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -1633,6 +1647,8 @@ on the integer lattice, representing a stable “energy level” where further d
 the objective function.
 30
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 8: Nelder-Mead simplex evolution on integer Quadray lattice (2×2 panel). This comprehen-
@@ -1650,6 +1666,8 @@ convergence demonstrates how the integer Quadray lattice constrains optimization
 levels, creating the characteristic plateau behavior seen in the diagnostic traces.
 31
 
+![page31_img1.png](images/page31_img1.png)
+
 ## Page 32
 
 Figure 9: Complete simplex optimization trace visualization. This 3D plot shows the complete tra-
@@ -1664,6 +1682,8 @@ optimization is evident in the step-wise vertex movements, which can only occur 
 coordinates. This visualization complements the 2×2 panel view by showing the complete optimization
 trajectory in a single, interpretable plot.
 32
+
+![page32_img1.png](images/page32_img1.png)
 
 ## Page 33
 
@@ -1802,6 +1822,8 @@ gradient descent by weighting parameter updates according to local curvature, le
 convergence than standard gradient descent.
 35
 
+![page35_img1.png](images/page35_img1.png)
+
 ## Page 36
 
 Figure 11: Comprehensive Fisher Information Eigenspectrum with Curvature Analysis.
@@ -1833,6 +1855,8 @@ the parameter space anisotropy creates natural directions for efficient optimiza
 derstanding is crucial for designing effective optimization strategies and understanding model behavior
 in the context of information geometry.
 36
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 
@@ -1904,6 +1928,8 @@ vergence than naive gradient methods. Grid overlay: Added for better readability
 discrete nature of the optimization steps.
 38
 
+![page38_img1.png](images/page38_img1.png)
+
 ## Page 39
 
 Figure 13: Variational Free Energy Landscape with 4D Framework Integration. This visualization
@@ -1923,6 +1949,8 @@ gradient descent, which respects the intrinsic geometry of the parameter space. 
 work provides a principled approach to approximate inference in complex models where exact posterior
 computation is intractable, while maintaining connections to the broader 4D mathematical frameworks.
 39
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 
@@ -2751,6 +2779,8 @@ the Fuller.4D framework can provide insights into complex systems like Active In
 metric intuition.
 54
 
+![page54_img1.png](images/page54_img1.png)
+
 ## Page 55
 
 Figure 15: 4D Natural Gradient Trajectory with Active Inference Context. This comprehensive
@@ -2773,6 +2803,8 @@ optimization now shows stable convergence in just 11 steps with final parameter 
 demonstrating the effectiveness of information-geometric optimization in Active Inference frameworks.
 55
 
+![page55_img1.png](images/page55_img1.png)
+
 ## Page 56
 
 Figure 16: Free Energy Landscape in 4D Active Inference Framework. This comprehensive visu-
@@ -2789,6 +2821,8 @@ how the information manifold’s geometry influences optimization dynamics. Math
 The visualization demonstrates the mathematical structure of variational inference, including variational
 posteriors Q(s), priors P(s), and likelihoods P(o|s) that connect observations to latent states.
 56
+
+![page56_img1.png](images/page56_img1.png)
 
 ## Page 57
 

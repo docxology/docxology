@@ -2,6 +2,8 @@
 
 > Extracted from `2025_Symergetics.pdf`
 
+> 10 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -376,6 +378,10 @@ Figure 2
 Figure 2: Advanced Quadray Coordinate Analysis - This comprehensive visualization
 demonstrates complex multi-point analysis in the Quadray coordinate system, showing
 coordinate grids, tetrahedral structures, and highlighted points including (2,1,1,0). The
+
+![page10_img1.png](images/page10_img1.png)
+
+![page10_img2.png](images/page10_img2.png)
 
 ## Page 11
 
@@ -760,6 +766,10 @@ visualization clearly shows how the approximation improves with each additional 
 providing researchers with insight into the fundamental mathematical structure of .
 Figure 4
 
+![page20_img1.png](images/page20_img1.png)
+
+![page20_img2.png](images/page20_img2.png)
+
 ## Page 21
 
 Figure 4: Base Conversion Analysis for Primorial Number - This figure illustrates the
@@ -789,6 +799,8 @@ The implementation includes sophisticated performance optimizations and comprehe
 error handling mechanisms:
 • Efficient algorithms: Optimized computational methods for large-scale mathematical
 analysis
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -969,6 +981,8 @@ serves as the basic building block for all other Platonic solids, with its exact
 IVM unit forming the foundation for understanding all geometric relationships in the
 system.
 
+![page27_img1.png](images/page27_img1.png)
+
 ## Page 28
 
 Figure 7
@@ -998,6 +1012,8 @@ Transformation Properties:
 • Constraint Preservation: Quadray coordinates always sum to zero
 • Geometric Integrity: Spatial relationships are preserved exactly
 • Bidirectional: Seamless conversion in both directions
+
+![page28_img1.png](images/page28_img1.png)
 
 ## Page 29
 
@@ -1219,6 +1235,8 @@ multiple number bases. The analysis includes detailed examination of palindrome 
 multi-base palindrome detection, density analysis across number ranges, and statistical
 analysis revealing entropy patterns and structural characteristics. The visualization shows
 
+![page33_img1.png](images/page33_img1.png)
+
 ## Page 34
 
 how exact arithmetic enables precise pattern recognition that reveals the underlying
@@ -1231,6 +1249,10 @@ pattern recognition results, and mathematical properties that reveal palindromic
 sequences, Pascal triangle coefficients, and prime factor relationships. The analysis
 demonstrates how exact arithmetic is essential for discovering these subtle mathematical
 structures that would be invisible to floating-point approximations.
+
+![page34_img1.png](images/page34_img1.png)
+
+![page34_img2.png](images/page34_img2.png)
 
 ## Page 35
 

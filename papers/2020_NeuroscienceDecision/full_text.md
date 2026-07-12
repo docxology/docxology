@@ -2,6 +2,8 @@
 
 > Extracted from `2020_NeuroscienceDecision.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -109,6 +111,8 @@ choice in a Bayesian sense
 “
 ”
 
+![page2_img2.png](images/page2_img2.png)
+
 ## Page 3
 
 Timothy Hanks – The Neuroscience of Decision Making    
@@ -157,6 +161,8 @@ understanding, or that are better explained
 through new scientific conceptual frameworks 
 “
 ”
+
+![page3_img2.png](images/page3_img2.png)
 
 ## Page 4
 
@@ -244,6 +250,8 @@ not a singular type
 “
 ”
 
+![page5_img2.png](images/page5_img2.png)
+
 ## Page 6
 
 Timothy Hanks – The Neuroscience of Decision Making    
@@ -290,6 +298,8 @@ studying both will probably help you more
 effectively understand either alone 
 “
 ”
+
+![page6_img2.png](images/page6_img2.png)
 
 ## Page 7
 
@@ -461,6 +471,8 @@ impulsivity would also explain lower thresholds
 for changing attentional focus 
 “
 ”
+
+![page10_img2.png](images/page10_img2.png)
 
 ## Page 11
 

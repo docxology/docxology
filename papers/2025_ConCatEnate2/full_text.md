@@ -2,6 +2,8 @@
 
 > Extracted from `catpilot.pdf`
 
+> 9 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -98,6 +100,8 @@ Bev-cyc
  
  (following ROS)
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
 ## Page 3
 
  Depicted via a chain 
@@ -154,6 +158,8 @@ wo
 bar 
 within time limit 
 sing chain
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
 
 ## Page 4
 
@@ -226,6 +232,8 @@ Finally
 We smush the nodes 
 Both labeling & solving  
 Per time limit
+
+![page5_img1.jpeg](images/page5_img1.jpeg)
 
 ## Page 6
 
@@ -392,6 +400,10 @@ We then assign a pulse beacon type
  
 …
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
 ## Page 9
 
  BEV-CYC.doc 
@@ -469,6 +481,10 @@ Updated via SIM
  
 run .perbit.  
 -
+
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
+![page9_img2.jpeg](images/page9_img2.jpeg)
 
 ## Page 10
 
@@ -915,6 +931,8 @@ ith its modulator
 ner for  
 etc , from vision
 
+![page17_img1.jpeg](images/page17_img1.jpeg)
+
 ## Page 18
 
 (2) 
@@ -965,6 +983,8 @@ Quickcalc
  
  
 (this is the triangle alongside the Containers  © )
+
+![page18_img1.jpeg](images/page18_img1.jpeg)
 
 ## Page 19
 

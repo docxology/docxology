@@ -2,6 +2,8 @@
 
 > Extracted from `Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf`
 
+> 11 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -411,6 +413,8 @@ MEDLINE.
 PubMed query ( create_entomology_query() ):
 7
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 \NormalTok{("ants" OR "Formicidae" OR "Hymenoptera" OR "eusocial" OR "eusociality"}
@@ -765,6 +769,8 @@ kinship models and haplodiploidy-structured societies. Economic terms show the l
 the highest structural rigidity, suggesting that economic metaphors impose particularly constrained frameworks
 14
 
+![page14_img1.png](images/page14_img1.png)
+
 ## Page 15
 
 Figure 3. Domain overlap heatmap showing the Szymkiewicz–Simpson overlap coeﬀicient of shared terminology between
@@ -783,6 +789,8 @@ and temporal—and confirms that scale ambiguity (where meaning shifts across bi
 and context-dependent semantic drift are the most prevalent patterns across the corpus (see Section 15 for the
 formal multi-level ambiguity classification).
 15
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -2790,6 +2798,8 @@ areas where terminological reform may be most impactful. All panel values are co
 output/data/domain_statistics.json .
 52
 
+![page52_img1.png](images/page52_img1.png)
+
 ## Page 53
 
 Figure 5. Anthropomorphic framing prevalence across Ento-Linguistic domains. The trajectory highlights paradigm
@@ -2797,6 +2807,8 @@ shifts across decades, showcasing how domains like Power & Labor experienced ste
 anthropomorphism—consistent with the formal ”slave” terminology reforms documented in Section 6—while economic
 framing concurrently rose to prominence.
 53
+
+![page53_img1.png](images/page53_img1.png)
 
 ## Page 54
 
@@ -2806,6 +2818,8 @@ scale; darker bars indicate higher polysemy. The overview highlights Economics�
 with Power & Labor and Behavior & Identity also showing notable polysemy.
 54
 
+![page54_img1.png](images/page54_img1.png)
+
 ## Page 55
 
 Figure 7. Domain POS-Composition Patterns: donut charts showing the part-of-speech structure of each domain’s
@@ -2813,6 +2827,8 @@ vocabulary (3 × 2 grid, one panel per domain). Slices correspond to grammatical
 adjective noun verb noun and other constructions
 revealing how each domain’s terminology is structurally organized
 55
+
+![page55_img1.png](images/page55_img1.png)
 
 ## Page 56
 
@@ -2826,6 +2842,10 @@ Yanega (1992), while terms like ”queen” and ”worker” impose role-based i
 flexibility. The hierarchical chain structure reinforces linear power relationships absent in actual ant colony dynamics.
 56
 
+![page56_img1.png](images/page56_img1.png)
+
+![page56_img2.png](images/page56_img2.png)
+
 ## Page 57
 
 Figure 10. Frequency analysis of Power & Labor domain terminology. “Caste,” “queen,” and “worker” dominate the
@@ -2836,6 +2856,10 @@ against 𝐻(𝑡), with point size proportional to the number of extracted cont
 “queen” exhibit elevated entropy, consistent with their documented polysemy across hierarchical, reproductive, and
 behavioral research contexts.
 57
+
+![page57_img1.png](images/page57_img1.png)
+
+![page57_img2.png](images/page57_img2.png)
 
 
 ---

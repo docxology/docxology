@@ -2,6 +2,8 @@
 
 > Extracted from `2023_GenerativeResearchTeams.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -492,6 +494,8 @@ The diagram below visualizes this process, and could be used to guide language m
 GRT development.
 Figure 1. Active entities and information flow in a sketched GRT.
 11
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 

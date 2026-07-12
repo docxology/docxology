@@ -2,6 +2,8 @@
 
 > Extracted from `ECOMEME2-v1.0.pdf`
 
+> 10 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -123,6 +125,8 @@ audience)
 BECAUSE
 2
 
+![page3_img1.jpeg](images/page3_img1.jpeg)
+
 ## Page 4
 
 i.
@@ -235,6 +239,8 @@ necessary infrastructure for an ecosystem-approach to enable situational awarene
 Figure 2. Digital Rhetorical Ecosystem three-tier model (DRE3), from [15].
 5
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 Elaboration of the Rhetorical Form and Function
@@ -296,6 +302,8 @@ audience identity. Even as viewers might be encountering the meme’s reasoning 
 first time, having followed the reasoning and accepted it, they come to embody the
 persona of the one questioning the official narrative and distinguishing themselves from
 7
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -558,6 +566,10 @@ Figure 4. “Fast Friends” Political Cartoon [37]
 Figure 5. Balancing aspects of artifact collection
 13
 
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
+
 ## Page 15
 
 Methodological Collection
@@ -677,6 +689,8 @@ suggesting Russia’s handling of protestors is over-aggressive, and (C) an imag
 to represent the status of the relationship between Russia and Ukraine [38].
 16
 
+![page17_img1.png](images/page17_img1.png)
+
 ## Page 18
 
 Figure 7. A collection of image memes; (A) an image meme critiquing profile picture
@@ -687,6 +701,8 @@ military action, (D) an image meme comparing Russian and EU negotiation strategy
 screenshot of a subreddit’s name and a recent upvoted post, used as an image meme, and
 (F) an image meme conveying the relationship between Putin and Obama.
 17
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
@@ -1442,6 +1458,8 @@ has already been collected, and (d) how an artifact is represented in aggregate 
 collected artifacts, with redactions of personal information.
 32
 
+![page33_img1.png](images/page33_img1.png)
+
 ## Page 34
 
 Semantic Multimodal Search. Semantic multimodal search may be among the most
@@ -1752,6 +1770,10 @@ groups to converge on (potentially violent) action.
 Figure 9. Graphical overview for computational and rhetorical analysis pipelines. A) How it
 is done today, and B) How it could be done.
 38
+
+![page39_img1.png](images/page39_img1.png)
+
+![page39_img2.png](images/page39_img2.png)
 
 ## Page 40
 

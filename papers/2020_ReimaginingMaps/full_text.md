@@ -2,6 +2,8 @@
 
 > Extracted from `Reimagining Maps.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -217,6 +219,8 @@ Figure 1. Use cases for maps in 2020. A) Fire map image from [10] . B) COVID-19 
 (10/20/2020). C) Marine conservation maps From Figure 2 of [12]. D) Map of protests around the United 
 States from [13], last updated June 16th, 2020.
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
 ## Page 8
 
 Reimagining Maps 
@@ -288,6 +292,8 @@ engineering (UX), has notable impacts on the consumers of maps, who are liable t
  
 1 A data standard for terrain and traffic data [23] 
 Figure 2. Map Production Pipeline
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -748,6 +754,8 @@ standards, and gamification of tasks [100,104,114].
  
 Figure 3. OSINT Fusion
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 Reimagining Maps 
@@ -1062,6 +1070,8 @@ incorporate the potential for disagreement and heresy within collections and
 acknowledge sourcing. Further, user-informed maps have already become conflict 
 spaces and subject to threat-actors. It is possible that the future of maps doesn’t 
 Figure 4. BOLTS
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 

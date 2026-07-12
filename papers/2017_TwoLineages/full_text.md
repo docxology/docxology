@@ -2,6 +2,8 @@
 
 > Extracted from `2017_TwoLineages.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -218,6 +220,8 @@ and a male of the other lineage produce
 daughter workers.
 © 2017 John Wiley & Sons Ltd
 976 NEWS AND VIEWS: PERSPECTIVE
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
 
 
 ---

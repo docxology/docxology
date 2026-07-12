@@ -2,6 +2,8 @@
 
 > Extracted from `template_daf_v1_03202026_steganography.pdf`
 
+> 102 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -133,6 +135,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:1
 2026-03-20 22:09:53 UTC
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
 
 ## Page 2
 
@@ -310,6 +316,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:2
 2026-03-20 22:09:53 UTC
 
+![page2_img1.png](images/page2_img1.png)
+
+![page2_img2.png](images/page2_img2.png)
+
 ## Page 3
 
 7.2.2
@@ -377,6 +387,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:3
 2026-03-20 22:09:53 UTC
 
+![page3_img1.png](images/page3_img1.png)
+
+![page3_img2.png](images/page3_img2.png)
+
 ## Page 4
 
 1
@@ -431,6 +445,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:4
 2026-03-20 22:09:53 UTC
+
+![page4_img1.png](images/page4_img1.png)
+
+![page4_img2.png](images/page4_img2.png)
 
 ## Page 5
 
@@ -501,6 +519,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:5
 2026-03-20 22:09:53 UTC
 
+![page5_img1.png](images/page5_img1.png)
+
+![page5_img2.png](images/page5_img2.png)
+
 ## Page 6
 
 execution engines (cwltool, Toil, Arvados), but it requires external tooling for manuscript generation and
@@ -569,6 +591,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:6
 2026-03-20 22:09:53 UTC
+
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
 
 ## Page 7
 
@@ -653,6 +679,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:7
 2026-03-20 22:09:53 UTC
 
+![page7_img1.png](images/page7_img1.png)
+
+![page7_img2.png](images/page7_img2.png)
+
 ## Page 8
 
 1. Ergonomic Modularity: A Two-Layer Architecture cleanly separates globally shared infrastructure
@@ -724,6 +754,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:8
 2026-03-20 22:09:53 UTC
 
+![page8_img1.png](images/page8_img1.png)
+
+![page8_img2.png](images/page8_img2.png)
+
 ## Page 9
 
 • An open-source reference implementation available at github.com/docxology/template.
@@ -751,6 +785,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:9
 2026-03-20 22:09:53 UTC
+
+![page9_img1.png](images/page9_img1.png)
+
+![page9_img2.png](images/page9_img2.png)
 
 ## Page 10
 
@@ -823,6 +861,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:10
 2026-03-20 22:09:53 UTC
 
+![page10_img1.png](images/page10_img1.png)
+
+![page10_img2.png](images/page10_img2.png)
+
 ## Page 11
 
 • Stateless: Scripts read inputs, call functions, write outputs.
@@ -861,6 +903,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:11
 2026-03-20 22:09:54 UTC
+
+![page11_img1.png](images/page11_img1.png)
+
+![page11_img2.png](images/page11_img2.png)
 
 ## Page 12
 
@@ -929,6 +975,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:12
 2026-03-20 22:09:54 UTC
 
+![page12_img1.png](images/page12_img1.png)
+
+![page12_img2.png](images/page12_img2.png)
+
 ## Page 13
 
 • Translations (optional): Machine translations of the abstract into configured target languages.
@@ -969,6 +1019,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:13
 2026-03-20 22:09:54 UTC
+
+![page13_img1.png](images/page13_img1.png)
+
+![page13_img2.png](images/page13_img2.png)
 
 ## Page 14
 
@@ -1048,6 +1102,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:14
 2026-03-20 22:09:54 UTC
 
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
+
 ## Page 15
 
 Key imports: RenderManager, RenderingConfig from infrastructure.rendering
@@ -1108,6 +1166,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:15
 2026-03-20 22:09:54 UTC
+
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
 
 ## Page 16
 
@@ -1174,6 +1236,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:16
 2026-03-20 22:09:54 UTC
+
+![page16_img1.png](images/page16_img1.png)
+
+![page16_img2.png](images/page16_img2.png)
 
 ## Page 17
 
@@ -1257,6 +1323,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:17
 2026-03-20 22:09:54 UTC
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 • Descriptive axis labels and figure titles.
@@ -1281,6 +1351,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:18
 2026-03-20 22:09:54 UTC
+
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
 
 ## Page 19
 
@@ -1374,6 +1448,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:19
 2026-03-20 22:09:54 UTC
+
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
 
 ## Page 20
 
@@ -1490,6 +1568,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:20
 2026-03-20 22:09:54 UTC
 
+![page20_img1.png](images/page20_img1.png)
+
+![page20_img2.png](images/page20_img2.png)
+
 ## Page 21
 
 4.6
@@ -1555,6 +1637,12 @@ Integrity
 ID:89d9efe727dc1f4b|P:21
 2026-03-20 22:09:54 UTC
 
+![page21_img1.png](images/page21_img1.png)
+
+![page21_img2.png](images/page21_img2.png)
+
+![page21_img5.png](images/page21_img5.png)
+
 ## Page 22
 
 Figure 1: Two-Layer Architecture separating the generic, reusable infrastructure layer (12 subpackages,
@@ -1592,6 +1680,14 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:22
 2026-03-20 22:09:54 UTC
+
+![page22_img1.png](images/page22_img1.png)
+
+![page22_img2.png](images/page22_img2.png)
+
+![page22_img5.png](images/page22_img5.png)
+
+![page22_img6.png](images/page22_img6.png)
 
 ## Page 23
 
@@ -1634,6 +1730,12 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:23
 2026-03-20 22:09:54 UTC
+
+![page23_img1.png](images/page23_img1.png)
+
+![page23_img2.png](images/page23_img2.png)
+
+![page23_img5.png](images/page23_img5.png)
 
 ## Page 24
 
@@ -1701,6 +1803,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:24
 2026-03-20 22:09:54 UTC
+
+![page24_img1.png](images/page24_img1.png)
+
+![page24_img2.png](images/page24_img2.png)
 
 ## Page 25
 
@@ -1782,6 +1888,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:25
 2026-03-20 22:09:54 UTC
 
+![page25_img1.png](images/page25_img1.png)
+
+![page25_img2.png](images/page25_img2.png)
+
 ## Page 26
 
 5.3
@@ -1848,6 +1958,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:26
 2026-03-20 22:09:54 UTC
+
+![page26_img1.png](images/page26_img1.png)
+
+![page26_img2.png](images/page26_img2.png)
 
 ## Page 27
 
@@ -1920,6 +2034,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:27
 2026-03-20 22:09:54 UTC
 
+![page27_img1.png](images/page27_img1.png)
+
+![page27_img2.png](images/page27_img2.png)
+
 ## Page 28
 
 • AI-native writing tools:
@@ -1943,6 +2061,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:28
 2026-03-20 22:09:54 UTC
+
+![page28_img1.png](images/page28_img1.png)
+
+![page28_img2.png](images/page28_img2.png)
 
 ## Page 29
 
@@ -2018,6 +2140,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:29
 2026-03-20 22:09:54 UTC
 
+![page29_img1.png](images/page29_img1.png)
+
+![page29_img2.png](images/page29_img2.png)
+
 ## Page 30
 
 ensures that infrastructure improvements propagate to all projects without coupling. The Zero-Mock policy
@@ -2052,6 +2178,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:30
 2026-03-20 22:09:54 UTC
+
+![page30_img1.png](images/page30_img1.png)
+
+![page30_img2.png](images/page30_img2.png)
 
 ## Page 31
 
@@ -2129,6 +2259,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:31
 2026-03-20 22:09:54 UTC
 
+![page31_img1.png](images/page31_img1.png)
+
+![page31_img2.png](images/page31_img2.png)
+
 ## Page 32
 
 Integration: Called by project scripts during Stage 02 to register figures for automated cross-referencing
@@ -2199,6 +2333,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:32
 2026-03-20 22:09:54 UTC
+
+![page32_img1.png](images/page32_img1.png)
+
+![page32_img2.png](images/page32_img2.png)
 
 ## Page 33
 
@@ -2271,6 +2409,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:33
 2026-03-20 22:09:54 UTC
+
+![page33_img1.png](images/page33_img1.png)
+
+![page33_img2.png](images/page33_img2.png)
 
 ## Page 34
 
@@ -2345,6 +2487,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:34
 2026-03-20 22:09:54 UTC
 
+![page34_img1.png](images/page34_img1.png)
+
+![page34_img2.png](images/page34_img2.png)
+
 ## Page 35
 
 Component
@@ -2385,6 +2531,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:35
 2026-03-20 22:09:54 UTC
+
+![page35_img1.png](images/page35_img1.png)
+
+![page35_img2.png](images/page35_img2.png)
 
 ## Page 36
 
@@ -2452,6 +2602,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:36
 2026-03-20 22:09:54 UTC
 
+![page36_img1.png](images/page36_img1.png)
+
+![page36_img2.png](images/page36_img2.png)
+
 ## Page 37
 
 • Pipeline version
@@ -2515,6 +2669,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:37
 2026-03-20 22:09:54 UTC
+
+![page37_img1.png](images/page37_img1.png)
+
+![page37_img2.png](images/page37_img2.png)
 
 ## Page 38
 
@@ -2581,6 +2739,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:38
 2026-03-20 22:09:54 UTC
+
+![page38_img1.png](images/page38_img1.png)
+
+![page38_img2.png](images/page38_img2.png)
 
 ## Page 39
 
@@ -2662,6 +2824,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:39
 2026-03-20 22:09:54 UTC
 
+![page39_img1.png](images/page39_img1.png)
+
+![page39_img2.png](images/page39_img2.png)
+
 ## Page 40
 
 8.2
@@ -2715,6 +2881,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:40
 2026-03-20 22:09:54 UTC
+
+![page40_img1.png](images/page40_img1.png)
+
+![page40_img2.png](images/page40_img2.png)
 
 ## Page 41
 
@@ -2823,6 +2993,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:41
 2026-03-20 22:09:54 UTC
 
+![page41_img1.png](images/page41_img1.png)
+
+![page41_img2.png](images/page41_img2.png)
+
 ## Page 42
 
 8.4
@@ -2880,6 +3054,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:42
 2026-03-20 22:09:54 UTC
 
+![page42_img1.png](images/page42_img1.png)
+
+![page42_img2.png](images/page42_img2.png)
+
 ## Page 43
 
 8.5
@@ -2934,6 +3112,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:43
 2026-03-20 22:09:54 UTC
+
+![page43_img1.png](images/page43_img1.png)
+
+![page43_img2.png](images/page43_img2.png)
 
 ## Page 44
 
@@ -3161,6 +3343,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:44
 2026-03-20 22:09:54 UTC
 
+![page44_img1.png](images/page44_img1.png)
+
+![page44_img2.png](images/page44_img2.png)
+
 ## Page 45
 
 storage (S3, GCS, Azure) but does not natively orchestrate distributed compute. ￿Overleaf and OpenAI
@@ -3181,6 +3367,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:45
 2026-03-20 22:09:54 UTC
+
+![page45_img1.png](images/page45_img1.png)
+
+![page45_img2.png](images/page45_img2.png)
 
 ## Page 46
 
@@ -3244,6 +3434,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:46
 2026-03-20 22:09:54 UTC
+
+![page46_img1.png](images/page46_img1.png)
+
+![page46_img2.png](images/page46_img2.png)
 
 ## Page 47
 
@@ -3319,6 +3513,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:47
 2026-03-20 22:09:54 UTC
 
+![page47_img1.png](images/page47_img1.png)
+
+![page47_img2.png](images/page47_img2.png)
+
 ## Page 48
 
 Luc Moreau and Paolo Missier. PROV-DM: The PROV data model. W3c recommendation, World Wide
@@ -3386,6 +3584,10 @@ Integrity
 ID:89d9efe727dc1f4b|P:48
 2026-03-20 22:09:54 UTC
 
+![page48_img1.png](images/page48_img1.png)
+
+![page48_img2.png](images/page48_img2.png)
+
 ## Page 49
 
 Victoria Stodden, Marcia McNutt, David H. Bailey, Ewa Deelman, Yolanda Gil, Brooks Hanson, Michael A.
@@ -3437,6 +3639,10 @@ Contact
 Integrity
 ID:89d9efe727dc1f4b|P:49
 2026-03-20 22:09:54 UTC
+
+![page49_img1.png](images/page49_img1.png)
+
+![page49_img2.png](images/page49_img2.png)
 
 
 ---

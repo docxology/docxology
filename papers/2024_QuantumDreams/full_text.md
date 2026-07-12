@@ -2,6 +2,8 @@
 
 > Extracted from `2024_QuantumDreams.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -86,6 +88,10 @@ across the interfacial agent-environment’s boundaries, looking like this:
 To be clearer about the fuzzy instigating situation, focus on the blurry part at upper left:
 3
 
+![page3_img1.png](images/page3_img1.png)
+
+![page3_img2.png](images/page3_img2.png)
+
 ## Page 4
 
 ●
@@ -114,6 +120,8 @@ Out!”), and if utilized, then function fulfillment can be served through any n
 of actions (i.e. very small baseball diamond, change room, place to dry out your
 uniform, etc.)
 4
+
+![page4_img1.png](images/page4_img1.png)
 
 ## Page 5
 
@@ -146,6 +154,8 @@ remotely or visually without a trace (like the camera does when it captures the 
 the gym’s back wall), or with a bullet, leaving a pheromone trail, carrying a seed,
 weaving a thread, etc.
 5
+
+![page5_img1.png](images/page5_img1.png)
 
 ## Page 6
 

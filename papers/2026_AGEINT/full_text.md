@@ -2,6 +2,8 @@
 
 > Extracted from `AGEINT-Agentic-Intelligence-Edition-0.1.pdf`
 
+> 179 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -13,6 +15,8 @@ Active Inference Institute, FractAI
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 Edition 0.1 – 2026 DOI: 10.5281/zenodo.20732274
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -37,6 +41,8 @@ This open textbook is generated from version-controlled Markdown, tested Python 
 Corrections and improvements may be submitted via the source repository linked above.
 Accessibility note: the compact PDF is optimized for dense print. Reader-profile builds, HTML output, and source Markdown can be generated from
 the same manuscript materials.
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -1018,6 +1024,8 @@ and pairs each with the evidence trace that should survive the next reading move
 following section. It is navigation support, not a learning-outcome or performance claim.
 9
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 2.2
@@ -1077,6 +1085,8 @@ Figure 2: Workbench-style assembly line for Synthetic Analytic Tradecraft. It sh
 field set, a bounded claim packet, and a reviewer-gate disposition, tracing the path a classroom exercise takes from raw material to a record another
 analyst can challenge. It is a classroom artifact route, not an autonomous action claim or field-capability proof.
 11
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
@@ -1244,6 +1254,8 @@ the AGEINT source spine so a reader can route governance, technical, historical,
 supports them. Route density shows coverage, not a ranking of source quality or evidence strength.
 15
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 2.6
@@ -1340,6 +1352,8 @@ Figure 4: Audit-tile orientation cockpit for local readiness. It groups build fr
 and the publication-readiness boundary into reader-facing tiles that route review effort to the right verifier. The tiles are schematic orientation only;
 authoritative status — the pass, warn, or block state — lives in the generated audits, not in this figure.
 18
+
+![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 
@@ -13138,6 +13152,8 @@ and should be read as a map of 16 part nodes, source-backed module counts, and t
 frameworks, not as a capability score or live-task instruction.
 130
 
+![page131_img1.png](images/page131_img1.png)
+
 ## Page 132
 
 Figure 6: The claim-evidence quadrant helps reviewers distinguish low-risk definitional claims, governance duties, artifact-derived evidence, and high-
@@ -13145,6 +13161,8 @@ caveat theory analogies before a manuscript sentence is treated as reviewable. I
 direct, y-axis claim strength from descriptive to consequential, definition claims fit oﬀicial or standard sources, and governance duties require policy
 or law text visible at a glance, with the curriculum orientation as the source section and defensive review as the boundary.
 131
+
+![page132_img1.png](images/page132_img1.png)
 
 ## Page 133
 
@@ -13154,6 +13172,8 @@ content, Provenance metadata, Label / watermark when applicable, and Detection o
 instruction.
 132
 
+![page133_img1.png](images/page133_img1.png)
+
 ## Page 134
 
 Figure 8: Source-backed architecture map showing four separate review lanes for synthetic intelligence, analytic tradecraft, OPSEC and zero-trust
@@ -13162,12 +13182,16 @@ before an allowed classroom artifact can be treated as source-backed; unsupporte
 must stop or be revised.
 133
 
+![page134_img1.png](images/page134_img1.png)
+
 ## Page 135
 
 Figure 9: Method-backed audit chart reporting direct external citation counts per generated module; labels, denominators, and counting rule come
 from the curriculum parser. In the curriculum orientation, it lets readers compare citation density categories, denominators, evidence lanes, limitations,
 and reviewer-use cautions so the visual functions as a traceable course aid rather than an unscoped assertion.
 134
+
+![page135_img1.png](images/page135_img1.png)
 
 ## Page 136
 
@@ -13176,12 +13200,16 @@ practice stay connected. In the curriculum orientation, it lets readers compare 
 triggers, and closure evidence so the visual functions as a traceable course aid rather than an unscoped assertion.
 135
 
+![page136_img1.png](images/page136_img1.png)
+
 ## Page 137
 
 Figure 11: The section composability matrix shows which reusable curriculum artifacts support each part. It is anchored to the curriculum orientation;
 use it to inspect section composability matrix fields, row and column obligations, source records, reviewer decisions, and closure evidence while
 preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 136
+
+![page137_img1.png](images/page137_img1.png)
 
 ## Page 138
 
@@ -13190,12 +13218,16 @@ color groups cells only. Its reader value is to make ai compliance map fields, r
 evidence visible at a glance, with the curriculum orientation as the source section and defensive review as the boundary.
 137
 
+![page138_img1.png](images/page138_img1.png)
+
 ## Page 139
 
 Figure 13: The accessibility workflow joins WCAG, UDL, remediation, and refresh evidence. In the curriculum orientation, it lets readers compare
 accessibility workflow steps, decision gates, owner handoffs, refresh triggers, and closure evidence so the visual functions as a traceable course aid
 rather than an unscoped assertion.
 138
+
+![page139_img1.png](images/page139_img1.png)
 
 ## Page 140
 
@@ -13204,12 +13236,16 @@ alternative-text and PDF checking guidance, and USWDS data-visualization guidanc
 carries a caption, short alt text, long description, source section, provenance, and rendered-artifact validation before PDF or web use.
 139
 
+![page140_img1.png](images/page140_img1.png)
+
 ## Page 141
 
 Figure 15: Machine-checkable dashboard for the generated figure pipeline. It summarizes the quality gates that every AGEINT visual must pass:
 readable PNG assets, square-normalized layout, informative captions, short alt text, long descriptions, embedded PNG metadata, local provenance,
 and rendered-output link safety. The companion machine-readable artifact is ../figures/visual_quality_audit.json.
 140
+
+![page141_img1.png](images/page141_img1.png)
 
 ## Page 142
 
@@ -13219,6 +13255,8 @@ It is anchored to the curriculum orientation; use it to inspect artifact evidenc
 closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 141
 
+![page142_img1.png](images/page142_img1.png)
+
 ## Page 143
 
 Figure 17: The scholarship triangulation map shows how generated AGEINT sections move from citation presence through source-family classification,
@@ -13226,6 +13264,8 @@ thin-support gates, single-family review warnings, and current artifact-evidence
 fields, row and column obligations, source records, reviewer decisions, and closure evidence visible at a glance, with the curriculum orientation as the
 source section and defensive review as the boundary.
 142
+
+![page143_img1.png](images/page143_img1.png)
 
 ## Page 144
 
@@ -13235,6 +13275,8 @@ bounded agentic assistance as a limited support layer; and verification, safety,
 curriculum architecture map, not a claim that AGEINT has measured field capability or learning outcomes.
 143
 
+![page144_img1.png](images/page144_img1.png)
+
 ## Page 145
 
 Figure 19: The method-contract figure makes AGEINT’s Synthetic Analytic Tradecraft claim falsifiable. It links source-family triangulation, synthetic
@@ -13243,12 +13285,16 @@ commitments rather than prestige language. Its reader value is to make synthetic
 refresh cues, and reader-use boundaries visible at a glance, with the curriculum orientation as the source section and defensive review as the boundary.
 144
 
+![page145_img1.png](images/page145_img1.png)
+
 ## Page 146
 
 Figure 20: The analysis-validation matrix makes the manuscript’s scholarship and assurance claims reviewable by class. It separates design guidance,
 empirical or evaluation claims, governance claims, figure/readability claims, rendered-artifact readiness claims, and reviewer disposition claims so each
 one has a required evidence packet, validation question, failure condition, and remediation path.
 145
+
+![page146_img1.png](images/page146_img1.png)
 
 ## Page 147
 
@@ -13257,6 +13303,8 @@ claim-bearing manuscript family to a canonical analysis-validation lane, the evi
 block local readiness if a family becomes claim-bearing without a review class.
 146
 
+![page147_img1.png](images/page147_img1.png)
+
 ## Page 148
 
 Figure 22: The source metadata integrity figure makes the anchor-lane hardening contract visible to reviewers. It separates curated intelligence anchors,
@@ -13264,6 +13312,8 @@ source-quality support anchors, explicit lane and tier fields, refresh cadence e
 manifest failure path so source rows cannot silently fall back to broad domain or source-type semantics while the rendered PDF still appears locally
 ready. Read it as local metadata telemetry, not a quality score for the cited sources.
 147
+
+![page148_img1.png](images/page148_img1.png)
 
 ## Page 149
 
@@ -13275,6 +13325,8 @@ Compare the local manuscript, registry, source-support, and report surfaces as r
 empirical performance claim.
 148
 
+![page149_img1.png](images/page149_img1.png)
+
 ## Page 150
 
 Figure 24: The procurement oversight loop connects need, transparency, criteria, contract controls, and lifecycle monitoring. It is anchored to the
@@ -13282,12 +13334,16 @@ curriculum orientation; use it to inspect procurement oversight loop steps, deci
 preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 149
 
+![page150_img1.png](images/page150_img1.png)
+
 ## Page 151
 
 Figure 25: The public AI register lifecycle keeps use-case purpose, impact review, publication, feedback, and refresh visible. Its reader value is to
 make public ai register lifecycle steps, decision gates, owner handoffs, refresh triggers, and closure evidence visible at a glance, with the curriculum
 orientation as the source section and defensive review as the boundary.
 150
+
+![page151_img1.png](images/page151_img1.png)
 
 ## Page 152
 
@@ -13298,6 +13354,8 @@ obligations, source records, reviewer decisions, and closure evidence while pres
 and accountable practice.
 151
 
+![page152_img1.png](images/page152_img1.png)
+
 ## Page 153
 
 Figure 27: The boundary-control matrix shows how purpose, tool permissions, data access, human review, logging, and rollback constrain agentic
@@ -13306,6 +13364,8 @@ In the curriculum orientation, it lets readers compare agentic intelligence boun
 denominators, evidence lanes, limitations, and reviewer-use cautions so the visual functions as a traceable course aid rather than an unscoped assertion.
 152
 
+![page153_img1.png](images/page153_img1.png)
+
 ## Page 154
 
 Figure 28: The transparency notice flow links public purpose, tool and data summary, impact review, and publication decisions. The captioned view
@@ -13313,12 +13373,16 @@ belongs to the curriculum orientation and should be read as a map of transparenc
 and closure evidence, not as a capability score or live-task instruction.
 153
 
+![page154_img1.png](images/page154_img1.png)
+
 ## Page 155
 
 Figure 29: Deterministic teaching plate showing how AGEINT visual assets preserve local source, renderer, hash, caption, and review metadata before
 manuscript use. Its reader value is to make Local source, Renderer, Hash record, and Caption and alt text visible at a glance, with the curriculum
 orientation as the source section and defensive review as the boundary.
 154
+
+![page155_img1.png](images/page155_img1.png)
 
 ## Page 156
 
@@ -13988,6 +14052,8 @@ tradecraft section and should be read as a map of 3 module nodes in the unit’s
 last, not as a capability score or live-task instruction.
 162
 
+![page163_img1.png](images/page163_img1.png)
+
 ## Page 164
 
 Figure 31: Part I frames intelligence as a cyclic process (ch1) driven by community architecture (ch2) and disciplined at every step by tradecraft
@@ -13995,12 +14061,16 @@ principles and control markings (ch3). Its reader value is to make The Intellige
 visible at a glance, with the foundations of intelligence tradecraft section as the source section and defensive review as the boundary.
 163
 
+![page164_img1.png](images/page164_img1.png)
+
 ## Page 165
 
 Figure 32: The intelligence disciplines each contribute distinct evidence that all-source analysis fuses, weights by reliability, and turns into an assessed
 product under oversight. In the foundations of intelligence tradecraft section, it lets readers compare Collection Disciplines, HUMINT: human sources,
 SIGINT: signals, and OSINT: open sources so the visual functions as a traceable course aid rather than an unscoped assertion.
 164
+
+![page165_img1.png](images/page165_img1.png)
 
 ## Page 166
 
@@ -14086,6 +14156,8 @@ products reach decision-makers. Its reader value is to make Direction: requireme
 and Tasking Review visible at a glance, with the foundations of intelligence tradecraft / the nature of intelligence section as the source section and
 defensive review as the boundary.
 166
+
+![page167_img1.png](images/page167_img1.png)
 
 ## Page 168
 
@@ -15689,6 +15761,8 @@ It is anchored to the foundations of intelligence tradecraft / intelligence comm
 Community Activity, Executive Oversight, Legislative Oversight, and Judicial Oversight while preserving the distinction between curriculum structure,
 evidence boundary, and accountable practice.
 183
+
+![page184_img1.png](images/page184_img1.png)
 
 ## Page 185
 
@@ -17385,6 +17459,8 @@ five-step tabletop review, Compartmentation and need-to-know mapping, and Cover 
 between curriculum structure, evidence boundary, and accountable practice.
 201
 
+![page202_img1.png](images/page202_img1.png)
+
 ## Page 203
 
 7.2
@@ -19055,6 +19131,8 @@ compare 3 module nodes in the unit’s ordered, source-backed reading sequence f
 course aid rather than an unscoped assertion.
 218
 
+![page219_img1.png](images/page219_img1.png)
+
 ## Page 220
 
 Figure 37: Part II presents HUMINT defensively as a managed source lifecycle (recruitment ch4, handling ch5) wrapped by a source-protection spine
@@ -19062,6 +19140,8 @@ and continuous counterintelligence validation (ch6). It is anchored to the human
 (Defensive View), Spotting and Assessment, Recruitment, ch4, and Handling and Tasking, ch5 while preserving the distinction between curriculum
 structure, evidence boundary, and accountable practice.
 219
+
+![page220_img1.png](images/page220_img1.png)
 
 ## Page 221
 
@@ -19146,6 +19226,8 @@ The captioned view belongs to the human intelligence humint / agent recruitment 
 risk recognition only, Money-narrative risk category, Ideology-narrative risk category, and Coercion-narrative risk category, not as a capability score
 or live-task instruction.
 221
+
+![page222_img1.png](images/page222_img1.png)
 
 ## Page 223
 
@@ -20839,6 +20921,8 @@ procedures. In the human intelligence humint / agent handling and management sec
 Validation and consent review, Source-protection and minimization, and Evidence and caveat documentation so the visual functions as a traceable
 course aid rather than an unscoped assertion.
 238
+
+![page239_img1.png](images/page239_img1.png)
 
 ## Page 240
 
@@ -22679,6 +22763,8 @@ counterintelligence review. Its reader value is to make Source Reporting, Vettin
 glance, with the human intelligence humint / source protection and ci integration section as the source section and defensive review as the boundary.
 257
 
+![page258_img1.png](images/page258_img1.png)
+
 ## Page 259
 
 11.2
@@ -24119,6 +24205,8 @@ ordered, source-backed reading sequence from its first module to its last visibl
 section and defensive review as the boundary.
 272
 
+![page273_img1.png](images/page273_img1.png)
+
 ## Page 274
 
 Figure 42: Part III shows SIGINT as a legally gated, layered pipeline where authorities and minimization rules govern collection disciplines (ch7), feed
@@ -24126,6 +24214,8 @@ a processing stack into cryptanalysis (ch8), with the modern crypto frontier res
 readers compare Legal and Authorization Gate, Collection Authorities and Warrants, Minimization and Privacy Rules, and SIGINT Disciplines, ch7
 so the visual functions as a traceable course aid rather than an unscoped assertion.
 273
+
+![page274_img1.png](images/page274_img1.png)
 
 ## Page 275
 
@@ -24210,6 +24300,8 @@ Figure 43: This diagram teaches how a lawful-authority check and minimization ru
 data are filtered before retention. It is anchored to the signals intelligence sigint / sigint fundamentals section; use it to inspect Collection Request,
 Minimization Filter, and Compliance Audit while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 275
+
+![page276_img1.png](images/page276_img1.png)
 
 ## Page 277
 
@@ -25642,6 +25734,8 @@ Figure 44: This diagram teaches the layered properties that together provide cry
 verifiable provenance. Its reader value is to make Protected Message, Verification Checks, and Policy and Key Lifecycle visible at a glance, with the
 signals intelligence sigint / modern sigint and cryptography section as the source section and defensive review as the boundary.
 290
+
+![page291_img1.png](images/page291_img1.png)
 
 ## Page 292
 
@@ -27445,6 +27539,8 @@ use it to inspect 3 module nodes in the unit’s ordered, source-backed reading 
 between curriculum structure, evidence boundary, and accountable practice.
 309
 
+![page310_img1.png](images/page310_img1.png)
+
 ## Page 311
 
 Figure 46: Part IV traces OSINT as a left-to-right pipeline from requirements through disciplined collection (ch9) and tooling (ch10) into a verification
@@ -27452,6 +27548,8 @@ taxonomy that turns raw findings into an assessed product. Its reader value is t
 ch9, and Discipline and Legal Ethics visible at a glance, with the open source intelligence osint section as the source section and defensive review as
 the boundary.
 310
+
+![page311_img1.png](images/page311_img1.png)
 
 ## Page 312
 
@@ -27526,6 +27624,8 @@ it lets readers compare requirement owner, discovery analyst, provenance reviewe
 logged bounded judgment, stop-and-retire path for unverifiable or out-of-bounds evidence so the visual functions as a traceable course aid rather than
 an unscoped assertion.
 312
+
+![page313_img1.png](images/page313_img1.png)
 
 ## Page 314
 
@@ -28850,6 +28950,8 @@ techniques and tools section and should be read as a map of public-source questi
 identity-exposure check, reproducibility check, corroboration and minimization review, privacy-drift check, reviewer approval, documented matrix or
 blocked-use note, not as a capability score or live-task instruction.
 326
+
+![page327_img1.png](images/page327_img1.png)
 
 ## Page 328
 
@@ -30422,6 +30524,8 @@ imagery intelligence section, it lets readers compare Imagery observation and me
 heavily, and Moderate confidence so the visual functions as a traceable course aid rather than an unscoped assertion.
 343
 
+![page344_img1.png](images/page344_img1.png)
+
 ## Page 345
 
 Figure 50: Public-domain USGS EROS declassified imagery of the Forbidden City as a local historical image for GEOINT source-provenance discussion.
@@ -30430,6 +30534,8 @@ visible at a glance, with the open source intelligence osint / geoint and imager
 boundary.
 344
 
+![page345_img1.png](images/page345_img1.png)
+
 ## Page 346
 
 Figure 51: Public-domain USGS EROS KH-9 image used as a historical example of declassified remote-sensing material with explicit provenance. It
@@ -30437,6 +30543,8 @@ is anchored to the open source intelligence osint / geoint and imagery intellige
 07-22 collection context, public-domain status, and analytic reuse boundary while preserving the distinction between curriculum structure, evidence
 boundary, and accountable practice.
 345
+
+![page346_img1.png](images/page346_img1.png)
 
 ## Page 347
 
@@ -32191,6 +32299,8 @@ section; use it to inspect 4 module nodes in the unit’s ordered, source-backed
 distinction between curriculum structure, evidence boundary, and accountable practice.
 363
 
+![page364_img1.png](images/page364_img1.png)
+
 ## Page 365
 
 Figure 53: Each technical-collection discipline in this Part feeds a shared defensive pipeline that turns raw signals into governed detection, attribution,
@@ -32198,6 +32308,8 @@ and assurance products. Its reader value is to make Collection Disciplines (Ch12
 Supply-Chain Assurance visible at a glance, with the technical intelligence and cyber operations section as the source section and defensive review as
 the boundary.
 364
+
+![page365_img1.png](images/page365_img1.png)
 
 ## Page 366
 
@@ -32276,6 +32388,8 @@ never an action sequence. In the technical intelligence and cyber operations / c
 alert and indicator context, Defensive taxonomy mapping, Kill-chain sequencing of observations, and ATT&CK label for organizing observations so
 the visual functions as a traceable course aid rather than an unscoped assertion.
 366
+
+![page367_img1.png](images/page367_img1.png)
 
 ## Page 368
 
@@ -34362,6 +34476,8 @@ advanced persistent threats apts section; use it to inspect Defensive ATT&CK-sty
 Persistence categories while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 386
 
+![page387_img1.png](images/page387_img1.png)
+
 ## Page 388
 
 21.2
@@ -35891,6 +36007,8 @@ packet that names control gaps and an escalation boundary. It is anchored to the
 attacks section; use it to inspect Dependency intake, Package provenance evidence, Maintainer-trust signal, and Build-integrity attestation while
 preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 402
+
+![page403_img1.png](images/page403_img1.png)
 
 ## Page 404
 
@@ -37759,6 +37877,8 @@ section and should be read as a map of Sensitive Information Asset, Zone 1: Phys
 and Zone 3: Faraday and RF Containment, not as a capability score or live-task instruction.
 420
 
+![page421_img1.png](images/page421_img1.png)
+
 ## Page 422
 
 23.2
@@ -39256,12 +39376,16 @@ ordered, source-backed reading sequence from its first module to its last visibl
 source section and defensive review as the boundary.
 436
 
+![page437_img1.png](images/page437_img1.png)
+
 ## Page 438
 
 Figure 59: This Part traces how imagery and financial sources move left-to-right through provenance verification and validation gates before becoming
 a defensible analytic judgment. In the imagery and financial intelligence section, it lets readers compare Source Disciplines, Ch11 GEOINT, Ch16
 IMINT, and Ch17 FININT so the visual functions as a traceable course aid rather than an unscoped assertion.
 437
+
+![page438_img1.png](images/page438_img1.png)
 
 ## Page 439
 
@@ -39339,12 +39463,16 @@ and Calibration visible at a glance, with the imagery and financial intelligence
 review as the boundary.
 439
 
+![page440_img1.png](images/page440_img1.png)
+
 ## Page 441
 
 Figure 61: Public-domain USGS EROS declassified HEXAGON image used as a historical example of imagery becoming a governed analytic source.
 Its reader value is to make U.S. Geological Survey provenance, 1973-03-20 collection context, public-domain status, and analytic reuse boundary visible
 at a glance, with the imagery and financial intelligence / imagery intelligence imint section as the source section and defensive review as the boundary.
 440
+
+![page441_img1.png](images/page441_img1.png)
 
 ## Page 442
 
@@ -39353,6 +39481,8 @@ the imagery and financial intelligence / imagery intelligence imint section, it 
 collection context, public-domain status, and analytic reuse boundary so the visual functions as a traceable course aid rather than an unscoped
 assertion.
 441
+
+![page442_img1.png](images/page442_img1.png)
 
 ## Page 443
 
@@ -40720,6 +40850,8 @@ uncertainty preserved so a typology match triggers review rather than an accusat
 ownership uncertainty, and No-accusation compliance boundary while preserving the distinction between curriculum structure, evidence boundary, and
 accountable practice.
 456
+
+![page457_img1.png](images/page457_img1.png)
 
 ## Page 458
 
@@ -42391,6 +42523,8 @@ ordered, source-backed reading sequence from its first module to its last visibl
 the source section and defensive review as the boundary.
 474
 
+![page475_img1.png](images/page475_img1.png)
+
 ## Page 476
 
 Figure 65: Studied defensively, this Part is a doctrine-and-countermeasure spine: each influence chapter is matched to the detection signals and
@@ -42398,6 +42532,8 @@ cognitive-resilience controls that defend against it. In the psychological opera
 Security Doctrine, Chapters (Defensive Lens), Ch18 PSYOP/MISO Doctrine, and Ch19 Active Measures so the visual functions as a traceable course
 aid rather than an unscoped assertion.
 475
+
+![page476_img1.png](images/page476_img1.png)
 
 ## Page 477
 
@@ -42481,6 +42617,8 @@ dissemination and after-action audit. The captioned view belongs to the psycholo
 should be read as a map of Commander Intent and Objectives, Themes and Approval Authorities Defined, Target Audience Analysis Review, and
 Legal Review: Law of Armed Conflict, not as a capability score or live-task instruction.
 477
+
+![page478_img1.png](images/page478_img1.png)
 
 ## Page 479
 
@@ -43999,6 +44137,8 @@ judgment. The captioned view belongs to the psychological operations and influen
 as a map of Suspected coordinated narrative, Technical indicators, Behavioral indicators, and Content and provenance, not as a capability score or
 live-task instruction.
 493
+
+![page494_img1.png](images/page494_img1.png)
 
 ## Page 495
 
@@ -45754,6 +45894,8 @@ learned-from event. The captioned view belongs to the psychological operations a
 of Inbound contact attempt, Technical filters, Trained recipient, and Proceed safely, not as a capability score or live-task instruction.
 511
 
+![page512_img1.png](images/page512_img1.png)
+
 ## Page 513
 
 30.2
@@ -47284,6 +47426,8 @@ section; use it to inspect Information Environment Inputs, Layer 1: Source Prove
 and Layer 3: Narrative and Anomaly Monitoring while preserving the distinction between curriculum structure, evidence boundary, and accountable
 practice.
 526
+
+![page527_img1.png](images/page527_img1.png)
 
 ## Page 528
 
@@ -48836,12 +48980,16 @@ module nodes in the unit’s ordered, source-backed reading sequence from its fi
 rather than an unscoped assertion.
 542
 
+![page543_img1.png](images/page543_img1.png)
+
 ## Page 544
 
 Figure 71: This Part presents counterintelligence as a continuous protective cycle whose detect-assess-deny-review loop is applied across both state and
 non-state adversaries. Its reader value is to make Threat Context, Ch22 CI Fundamentals: State Actors, Ch23 CI vs Non-State Actors, and Protective
 CI Cycle visible at a glance, with the counterintelligence section as the source section and defensive review as the boundary.
 543
+
+![page544_img1.png](images/page544_img1.png)
 
 ## Page 545
 
@@ -48921,6 +49069,8 @@ Figure 72: The oversight-bounded cycle by which an anomaly indicator becomes a g
 and legal review at every gate. The captioned view belongs to the counterintelligence / counterintelligence fundamentals section and should be read
 as a map of Anomaly indicator, Triage and analysis, Approved inquiry, and Close with feedback, not as a capability score or live-task instruction.
 545
+
+![page546_img1.png](images/page546_img1.png)
 
 ## Page 547
 
@@ -50499,6 +50649,8 @@ section and should be read as a map of Indicator or Tip, Threat Triage Against C
 Network Analysis, not as a capability score or live-task instruction.
 562
 
+![page563_img1.png](images/page563_img1.png)
+
 ## Page 564
 
 34.2
@@ -51904,6 +52056,8 @@ it lets readers compare 3 module nodes in the unit’s ordered, source-backed re
 as a traceable course aid rather than an unscoped assertion.
 578
 
+![page579_img1.png](images/page579_img1.png)
+
 ## Page 580
 
 Figure 75: This part traces how the contested space below the threshold of war is recognized, attributed, and met through a defensive governance spine
@@ -51911,6 +52065,8 @@ that ties authorities, coordination, and societal resilience back into sharper d
 non state actors section and should be read as a map of The Contested Space (Ch24-26), Gray Zone: ambiguity below war threshold, Hybrid: blended
 military and non-military means, and Non-State Actors: networks, proxies, insurgents, not as a capability score or live-task instruction.
 579
+
+![page580_img1.png](images/page580_img1.png)
 
 ## Page 581
 
@@ -51989,6 +52145,8 @@ Figure 76: How ambiguous gray-zone activity is mapped onto rising attribution-co
 proportionate and governed. The captioned view belongs to the gray zone hybrid warfare and non state actors / gray zone warfare section and should
 be read as a map of Ambiguous incident, Attribution assessment, Deniable, and Indicative, not as a capability score or live-task instruction.
 581
+
+![page582_img1.png](images/page582_img1.png)
 
 ## Page 583
 
@@ -53467,6 +53625,8 @@ Non-State Actor Categories, taxonomy, Insurgent and Militant Groups, Private Mil
 preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 597
 
+![page598_img1.png](images/page598_img1.png)
+
 ## Page 599
 
 37.2
@@ -54934,6 +55094,8 @@ any approved planning proceeds. The captioned view belongs to the gray zone hybr
 operations section and should be read as a map of National Policy and Doctrine, Statutory Legal Authority, Authorization and Tasking, and Oversight
 and Compliance Review, not as a capability score or live-task instruction.
 613
+
+![page614_img1.png](images/page614_img1.png)
 
 ## Page 615
 
@@ -56707,6 +56869,8 @@ compare 4 module nodes in the unit’s ordered, source-backed reading sequence f
 course aid rather than an unscoped assertion.
 632
 
+![page633_img1.png](images/page633_img1.png)
+
 ## Page 634
 
 Figure 80: This part applies one comparative lens to four intelligence traditions and folds them into a synthesis that surfaces the recurring patterns
@@ -56714,6 +56878,8 @@ of oversight, failure, and reform that shape modern governance. Its reader value
 and mission, Organizational structure, and Oversight and legal basis visible at a glance, with the historical intelligence services section as the source
 section and defensive review as the boundary.
 633
+
+![page634_img1.png](images/page634_img1.png)
 
 ## Page 635
 
@@ -56792,6 +56958,8 @@ services, studied from the declassified record. In the historical intelligence s
 Cheka, 1917, OGPU, 1923, NKVD, 1934, and MGB and MVD, late 1940s so the visual functions as a traceable course aid rather than an unscoped
 assertion.
 635
+
+![page636_img1.png](images/page636_img1.png)
 
 ## Page 637
 
@@ -58864,6 +59032,8 @@ committees, and surveillance-law reform. Its reader value is to make National Se
 committees, and Foreign Intelligence Surveillance Act visible at a glance, with the historical intelligence services / american intelligence history section
 as the source section and defensive review as the boundary.
 655
+
+![page656_img1.png](images/page656_img1.png)
 
 ## Page 657
 
@@ -61272,6 +61442,8 @@ BRUSA Agreement, 1943, UKUSA Agreement, 1946 to 1956, United States NSA, and Uni
 course aid rather than an unscoped assertion.
 677
 
+![page678_img1.png](images/page678_img1.png)
+
 ## Page 679
 
 42.2
@@ -62621,6 +62793,8 @@ domestic security, and the oversight bodies that govern them. Its reader value i
 Shin Bet, France DGSE and DGSI, and Germany BND and BfV visible at a glance, with the historical intelligence services / israeli and continental
 services section as the source section and defensive review as the boundary.
 692
+
+![page693_img1.png](images/page693_img1.png)
 
 ## Page 694
 
@@ -64198,6 +64372,8 @@ ordered, source-backed reading sequence from its first module to its last visibl
 section and defensive review as the boundary.
 708
 
+![page709_img1.png](images/page709_img1.png)
+
 ## Page 710
 
 Figure 86: This part builds from foundations through design patterns, frameworks, and a Python library to accountable deployment, with security
@@ -64206,12 +64382,16 @@ agentic intelligence is and is not, Build Layer (Ch32-33), and Design Patterns a
 section as the source section and defensive review as the boundary.
 709
 
+![page710_img1.png](images/page710_img1.png)
+
 ## Page 711
 
 Figure 87: Conceptual/pedagogical schematic: AGEINT does not replace the intelligence cycle; it illustrates bounded assistance under human review,
 tool allowlists, and stop conditions. Its reader value is to make Collection, Retrieval and tasking assist, Processing, and Triage and enrichment assist
 visible at a glance, with the ageint agentic intelligence section as the source section and defensive review as the boundary.
 710
+
+![page711_img1.png](images/page711_img1.png)
 
 ## Page 712
 
@@ -64299,6 +64479,8 @@ continuous human oversight. In the ageint agentic intelligence / foundations of 
 Brain, LLM cognitive controller, Memory, episodic and semantic, and Planning and task decomposition so the visual functions as a traceable course
 aid rather than an unscoped assertion.
 712
+
+![page713_img1.png](images/page713_img1.png)
 
 ## Page 714
 
@@ -66315,12 +66497,16 @@ transform. A raw design motif enters a governance intake. It splits into four pa
 and an interface contract so the visual functions as a traceable course aid rather than an unscoped assertion.
 731
 
+![page732_img1.png](images/page732_img1.png)
+
 ## Page 733
 
 Figure 90: The pattern taxonomy groups AGEINT design patterns by safe curriculum role. The captioned view belongs to the ageint agentic intelligence
 / ageint design patterns and archetypes section and should be read as a map of pattern taxonomy categories, denominators, evidence lanes, limitations,
 and reviewer-use cautions, not as a capability score or live-task instruction.
 732
+
+![page733_img1.png](images/page733_img1.png)
 
 ## Page 734
 
@@ -73472,6 +73658,8 @@ Context Protocol registry visible at a glance, with the ageint agentic intellige
 and defensive review as the boundary.
 790
 
+![page791_img1.png](images/page791_img1.png)
+
 ## Page 792
 
 47.2
@@ -76424,6 +76612,8 @@ Observability metric manipulation, detection evasion while preserving the distin
 practice.
 817
 
+![page818_img1.png](images/page818_img1.png)
+
 ## Page 819
 
 Figure 93: The author-defined SRE circuit-breaker teaching pattern state diagram shows when a supervised agent remains CLOSED, when safety-
@@ -76432,6 +76622,8 @@ agentic intelligence / ageint security and adversarial considerations section; u
 takeover after policy, provider, timeout, trust, or reasoning-loop triggers, HALF_OPEN limited restoration after recovery validation, and clean-record
 return path while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 818
+
+![page819_img1.png](images/page819_img1.png)
 
 ## Page 820
 
@@ -76443,6 +76635,8 @@ actions. The human gate also reaches the executor. The executor sends results to
 while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 819
 
+![page820_img1.png](images/page820_img1.png)
+
 ## Page 821
 
 Figure 95: Source-backed conceptual schematic crosswalking current oﬀicial and standards sources for agent identity, protocol boundaries, security
@@ -76450,6 +76644,8 @@ threats, data provenance, and adversarial assurance. In the ageint agentic intel
 readers compare Source families, NIST agent standards / AI RMF, OECD agentic AI concepts, and MCP spec + security so the visual functions as a
 traceable course aid rather than an unscoped assertion.
 820
+
+![page821_img1.png](images/page821_img1.png)
 
 ## Page 822
 
@@ -76460,6 +76656,8 @@ for insuﬀicient evidence visible at a glance, with the ageint agentic intellig
 section and defensive review as the boundary.
 821
 
+![page822_img1.png](images/page822_img1.png)
+
 ## Page 823
 
 Figure 97: The agent evaluation loop places assurance, human review, and rollback before reuse. It is anchored to the ageint agentic intelligence /
@@ -76467,12 +76665,16 @@ ageint security and adversarial considerations section; use it to inspect agent 
 and closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 822
 
+![page823_img1.png](images/page823_img1.png)
+
 ## Page 824
 
 Figure 98: The agent incident lifecycle organizes preparation, detection, containment, recovery, and debrief learning. It is anchored to the ageint agentic
 intelligence / ageint security and adversarial considerations section; use it to inspect agent incident lifecycle steps, decision gates, owner handoffs,
 refresh triggers, and closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 823
+
+![page824_img1.png](images/page824_img1.png)
 
 ## Page 825
 
@@ -76482,6 +76684,8 @@ records, review gates, refresh cues, and reader-use boundaries while preserving 
 accountable practice.
 824
 
+![page825_img1.png](images/page825_img1.png)
+
 ## Page 826
 
 Figure 100: The AI incident reporting loop turns detection, classification, reporting, remediation, and learning into evidence. It is anchored to the
@@ -76489,6 +76693,8 @@ ageint agentic intelligence / ageint security and adversarial considerations sec
 handoffs, refresh triggers, and closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable
 practice.
 825
+
+![page826_img1.png](images/page826_img1.png)
 
 ## Page 827
 
@@ -76498,6 +76704,8 @@ a glance, with the ageint agentic intelligence / ageint security and adversarial
 boundary.
 826
 
+![page827_img1.png](images/page827_img1.png)
+
 ## Page 828
 
 Figure 102: Deterministic teaching plate showing governed memory intake, retention, review, and rollback boundaries for AGEINT agentic assistance.
@@ -76505,12 +76713,16 @@ Its reader value is to make Intake boundary, Retention policy, Review gate, and 
 / ageint security and adversarial considerations section as the source section and defensive review as the boundary.
 827
 
+![page828_img1.png](images/page828_img1.png)
+
 ## Page 829
 
 Figure 103: Deterministic teaching plate showing CISA/NSA-style AI data security as source reliability, provenance, integrity, access control, and
 lifecycle review. The captioned view belongs to the ageint agentic intelligence / ageint security and adversarial considerations section and should be
 read as a map of Reliable source, Provenance trail, Integrity check, and Access boundary, not as a capability score or live-task instruction.
 828
+
+![page829_img1.png](images/page829_img1.png)
 
 ## Page 830
 
@@ -79078,6 +79290,8 @@ caveat that the schematic is a theory analogy rather than deployment evidence. t
 while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 853
 
+![page854_img1.png](images/page854_img1.png)
+
 ## Page 855
 
 Figure 105: Conceptual schematic separating active-inference theory, pedagogical analogy, agent-design heuristic, governance control, and empirical
@@ -79085,6 +79299,8 @@ evidence so the manuscript does not overclaim theory transfer. In the ageint age
 compare Theory source, Pedagogical analogy, Design heuristic, and Governance control so the visual functions as a traceable course aid rather than
 an unscoped assertion.
 854
+
+![page855_img1.png](images/page855_img1.png)
 
 ## Page 856
 
@@ -80768,6 +80984,8 @@ human-override gate. It is anchored to the ageint agentic intelligence / ageint 
 Normalization and parsing, Comparison and corroboration, and Confidence and uncertainty tags while preserving the distinction between curriculum
 structure, evidence boundary, and accountable practice.
 871
+
+![page872_img1.png](images/page872_img1.png)
 
 ## Page 873
 
@@ -82536,6 +82754,8 @@ and should be read as a map of 4 module nodes in the unit’s ordered, source-ba
 score or live-task instruction.
 889
 
+![page890_img1.png](images/page890_img1.png)
+
 ## Page 891
 
 Figure 108: The NATO/INSS cognitive warfare taxonomy distinguishes biological, psychological, and social attack layers by their target, mechanism,
@@ -82543,6 +82763,8 @@ and the role AI plays in each. The captioned view belongs to the cognitive secur
 Warfare 2026 three layers of engagement, Biological layer, Target cognitive capacity, and Mechanism neuroscience-informed targeting of the nervous
 system, not as a capability score or live-task instruction.
 890
+
+![page891_img1.png](images/page891_img1.png)
 
 ## Page 892
 
@@ -82552,12 +82774,16 @@ into governed operations where measurement and rights safeguards feed back to re
 glance, with the cognitive security section as the source section and defensive review as the boundary.
 891
 
+![page892_img1.png](images/page892_img1.png)
+
 ## Page 893
 
 Figure 110: Deterministic teaching plate for cognitive security as defensive inoculation, provenance tracking, and uncertainty management. In the
 cognitive security section, it lets readers compare Claim check, Prebunking lesson, Source trace, and Uncertainty review so the visual functions as a
 traceable course aid rather than an unscoped assertion.
 892
+
+![page893_img1.png](images/page893_img1.png)
 
 ## Page 894
 
@@ -82679,6 +82905,8 @@ security. It is anchored to the cognitive security / cognitive security foundati
 to related fields, Cybersecurity, systems and networks, and Information security, data integrity while preserving the distinction between curriculum
 structure, evidence boundary, and accountable practice.
 895
+
+![page896_img1.png](images/page896_img1.png)
 
 ## Page 897
 
@@ -85018,6 +85246,8 @@ be read as a map of Executive systems, control, Information threat exposure, Aff
 capability score or live-task instruction.
 918
 
+![page919_img1.png](images/page919_img1.png)
+
 ## Page 920
 
 53.2
@@ -86856,6 +87086,8 @@ forewarning, a safe weakened-dose demonstration, refutation with technique-spott
 glance, with the cognitive security / psychological inoculation and prebunking section as the source section and defensive review as the boundary.
 936
 
+![page937_img1.png](images/page937_img1.png)
+
 ## Page 938
 
 Figure 114: Source-backed conceptual schematic for bounded inoculation and prebunking claims: scholarly mechanism evidence, measured outcomes,
@@ -86864,6 +87096,8 @@ section and should be read as a map of Prebunking lesson defensive education onl
 claim recognize manipulation technique, and Measured outcomes recognition / resilience not universal immunity, not as a capability score or live-task
 instruction.
 937
+
+![page938_img1.png](images/page938_img1.png)
 
 ## Page 939
 
@@ -88903,6 +89137,8 @@ pattern, Check provenance and attribution, and Assess audience harm and rights s
 unscoped assertion.
 956
 
+![page957_img1.png](images/page957_img1.png)
+
 ## Page 958
 
 55.2
@@ -90578,12 +90814,16 @@ section; use it to inspect 2 module nodes in the unit’s ordered, source-backed
 distinction between curriculum structure, evidence boundary, and accountable practice.
 974
 
+![page975_img1.png](images/page975_img1.png)
+
 ## Page 976
 
 Figure 117: The unified AGEINT epistemic-security stack as a boustrophedon ladder: defenses descend from Layer 5 (Institutional Governance) across
 the top row to Layer 3 (Structured Reasoning and Tradecraft), then snake down to Layer 2 (Operational Security) and Layer 1 (Technical Substrate)
 on the bottom row. The layers are mutually reinforcing, each necessary but insuﬀicient on its own.
 975
+
+![page976_img1.png](images/page976_img1.png)
 
 ## Page 977
 
@@ -90593,6 +90833,8 @@ cupation with failure attention to near-misses and weak signals, Reluctance to s
 Sensitivity to operations awareness of current operational state so the visual functions as a traceable course aid rather than an unscoped assertion.
 976
 
+![page977_img1.png](images/page977_img1.png)
+
 ## Page 978
 
 Figure 119: This part stacks five mutually reinforcing defensive layers — from technical substrate up to institutional governance — and shows how
@@ -90601,6 +90843,8 @@ to the epistemic rigor and analytic tradecraft section; use it to inspect Episte
 sandboxing, provenance, Operational security: threat modeling, zero trust, circuit breakers, and Structured tradecraft: ACH, pre-mortem, key-
 assumptions check while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 977
+
+![page978_img1.png](images/page978_img1.png)
 
 ## Page 979
 
@@ -90682,6 +90926,8 @@ The least-disconfirmed hypothesis is selected. A sensitivity check tests relianc
 between curriculum structure, evidence boundary, and accountable practice.
 979
 
+![page980_img1.png](images/page980_img1.png)
+
 ## Page 981
 
 Figure 121: Source-backed conceptual schematic comparing the source classes behind analytic-tradecraft claims: professional standards, oﬀicial reform
@@ -90690,12 +90936,16 @@ curated analytic-tradecraft anchor set, and the figure fails closed when doctrin
 score or universal debiasing overclaim.
 980
 
+![page981_img1.png](images/page981_img1.png)
+
 ## Page 982
 
 Figure 122: Source-backed conceptual schematic comparing SAT purpose, doctrine, classroom artifacts, adoption studies, technique-specific experi-
 ments, ACH critiques, and decision-science complements. The local artifact set is the chapter 41 SAT lesson and its curated anchors; the figure fails
 closed on overclaim language that treats SATs as a proven universal bias remedy, an empirical score, or a replacement for analyst accountability.
 981
+
+![page982_img1.png](images/page982_img1.png)
 
 ## Page 983
 
@@ -90705,6 +90955,8 @@ source says, Evidence quality access, reliability, gap, Inference what analyst a
 the epistemic rigor and analytic tradecraft / structured analytic techniques sats section as the source section and defensive review as the boundary.
 982
 
+![page983_img1.png](images/page983_img1.png)
+
 ## Page 984
 
 Figure 124: Source-backed evidence-derived chart from local research-anchor metadata showing oﬀicial, standards, statutory, postmortem, scholarly
@@ -90712,6 +90964,8 @@ evaluation, and forecasting evidence lanes for analytic-tradecraft claims. The c
 structured analytic techniques sats section and should be read as a map of analytic source quality boundary categories, denominators, evidence lanes,
 limitations, and reviewer-use cautions, not as a capability score or live-task instruction.
 983
+
+![page984_img1.png](images/page984_img1.png)
 
 ## Page 985
 
@@ -92856,6 +93110,8 @@ separate reporting from inference, Competing hypotheses testing, Network and lin
 distinction between curriculum structure, evidence boundary, and accountable practice.
 1004
 
+![page1005_img1.png](images/page1005_img1.png)
+
 ## Page 1006
 
 Figure 126: Source-backed conceptual schematic for ICD 203-style analytic statements: likelihood terms, confidence, source quality, assumptions,
@@ -92863,6 +93119,8 @@ alternatives, and dissent are recorded as separate fields before release. It is 
 methods section; use it to inspect Evidence base, Likelihood term what may happen, Source quality access, reliability, gaps, and Analytic confidence
 basis for judgment while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1005
+
+![page1006_img1.png](images/page1006_img1.png)
 
 ## Page 1007
 
@@ -92872,6 +93130,8 @@ methods section, it lets readers compare Indicators Grabo / warning practice, As
 Analytic judgment likelihood + confidence so the visual functions as a traceable course aid rather than an unscoped assertion.
 1006
 
+![page1007_img1.png](images/page1007_img1.png)
+
 ## Page 1008
 
 Figure 128: Source-backed conceptual schematic showing how AGEINT treats validators, rubrics, and rendered claims as attackable artifacts: a false-
@@ -92879,6 +93139,8 @@ certification scenario creates a negative control before the claim is repaired a
 analysis methods section, it lets readers compare Oracle test, rubric, validator, Attack the verifier, False-certification scenario, and Negative-control
 test so the visual functions as a traceable course aid rather than an unscoped assertion.
 1007
+
+![page1008_img1.png](images/page1008_img1.png)
 
 ## Page 1009
 
@@ -94378,12 +94640,16 @@ performance section; use it to inspect 2 module nodes in the unit’s ordered, s
 preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1023
 
+![page1024_img1.png](images/page1024_img1.png)
+
 ## Page 1025
 
 Figure 130: This part frames sustained intelligence work as two coupled loops — the cognitive athlete who manages workload, focus, and decision
 hygiene, and the information architecture that externalizes memory and preserves handoffs — both feeding a workload-and-decision-hygiene card gated
 so no optimization overrides safety or review.
 1024
+
+![page1025_img1.png](images/page1025_img1.png)
 
 ## Page 1026
 
@@ -94465,6 +94731,8 @@ athlete section, it lets readers compare Cognitive Athlete workload hygiene loop
 system, Engage focused analytic work in protected windows, and Load monitor NASA-TLX self-check and fatigue signals so the visual functions as a
 traceable course aid rather than an unscoped assertion.
 1026
+
+![page1027_img1.png](images/page1027_img1.png)
 
 ## Page 1028
 
@@ -97319,12 +97587,16 @@ captured with provenance and date, Triage classify sensitivity and reliability, 
 the distinction between curriculum structure, evidence boundary, and accountable practice.
 1053
 
+![page1054_img1.png](images/page1054_img1.png)
+
 ## Page 1055
 
 Figure 133: The cross-border data flow shows how access, metadata, rights, and reuse decisions are governed. Its reader value is to make cross border
 data flow steps, decision gates, owner handoffs, refresh triggers, and closure evidence visible at a glance, with the productivity intelligence and cognitive
 performance / information architecture for intelligence work section as the source section and defensive review as the boundary.
 1054
+
+![page1055_img1.png](images/page1055_img1.png)
 
 ## Page 1056
 
@@ -99063,11 +99335,15 @@ lets readers compare 5 module nodes in the unit’s ordered, source-backed readi
 traceable course aid rather than an unscoped assertion.
 1073
 
+![page1074_img1.png](images/page1074_img1.png)
+
 ## Page 1075
 
 Figure 135: This part builds a defensive chain from cyber observation through engineering state, physical consequence, operator decision, and recovery
 evidence, with each of the five chapters feeding a stage and a hard safety boundary forbidding live control, exploitation, or operational response.
 1074
+
+![page1075_img1.png](images/page1075_img1.png)
 
 ## Page 1076
 
@@ -99151,6 +99427,8 @@ the safety boundary, Enterprise zone, Level 5-4 business and enterprise IT, and 
 structure, evidence boundary, and accountable practice.
 1076
 
+![page1077_img1.png](images/page1077_img1.png)
+
 ## Page 1078
 
 Figure 137: The OT architecture record ties assets, communications, owners, change evidence, and review cadence together. It is anchored to the
@@ -99158,6 +99436,8 @@ industrial and cyber physical intelligence / industrial control systems ics and 
 record labels, source records, review gates, refresh cues, and reader-use boundaries while preserving the distinction between curriculum structure,
 evidence boundary, and accountable practice.
 1077
+
+![page1078_img1.png](images/page1078_img1.png)
 
 ## Page 1079
 
@@ -100827,6 +101107,8 @@ team can find gaps. In the industrial and cyber physical intelligence / mitre at
 Initial access and execution concerns, Controller change and process impairment concerns, and Impact and recovery concerns so the visual functions
 as a traceable course aid rather than an unscoped assertion.
 1094
+
+![page1095_img1.png](images/page1095_img1.png)
 
 ## Page 1096
 
@@ -102787,6 +103069,8 @@ Select documented public incident, Gather verified open sources with provenance,
 consequence so the visual functions as a traceable course aid rather than an unscoped assertion.
 1114
 
+![page1115_img1.png](images/page1115_img1.png)
+
 ## Page 1116
 
 65.2
@@ -104378,6 +104662,8 @@ OT operator, Sanitize remove victim-identifying and sensitive detail, and TLP:RE
 curriculum structure, evidence boundary, and accountable practice.
 1131
 
+![page1132_img1.png](images/page1132_img1.png)
+
 ## Page 1133
 
 66.2
@@ -105800,12 +106086,16 @@ section and should be read as a map of Synthetic OT telemetry in owned lab, AI-d
 and Advisory findings with confidence, not as a capability score or live-task instruction.
 1147
 
+![page1148_img1.png](images/page1148_img1.png)
+
 ## Page 1149
 
 Figure 142: Deterministic teaching plate for ICS tabletop learning with owned-lab fixtures, logging, rollback, and defensive review. The captioned
 view belongs to the industrial and cyber physical intelligence / ageint applied to ics and cyber physical intelligence section and should be read as a
 map of Owned lab, Safety gate, Run log, and Rollback path, not as a capability score or live-task instruction.
 1148
+
+![page1149_img1.png](images/page1149_img1.png)
 
 ## Page 1150
 
@@ -107302,11 +107592,15 @@ section; use it to inspect 2 module nodes in the unit’s ordered, source-backed
 distinction between curriculum structure, evidence boundary, and accountable practice.
 1164
 
+![page1165_img1.png](images/page1165_img1.png)
+
 ## Page 1166
 
 Figure 144: This part treats authority, proportionality, rights impact, accountable oversight, audit trail, transparency, and redress as a sequential gate
 ladder that any proposed capability must clear, with the legal and ethics chapters mapping authority and defining the duties that bind each gate.
 1165
+
+![page1166_img1.png](images/page1166_img1.png)
 
 ## Page 1167
 
@@ -107382,6 +107676,8 @@ legal authorities and constraints section and should be read as a map of Legal-A
 collection activity, Proposed activity state purpose and collection method, Denied no lawful basis, activity stops, and Minimization scope limits and
 data-handling rules, not as a capability score or live-task instruction.
 1167
+
+![page1168_img1.png](images/page1168_img1.png)
 
 ## Page 1169
 
@@ -108721,6 +109017,8 @@ Its reader value is to make Proposed activity, Deontological duties and rights l
 lens visible at a glance, with the legal ethical and oversight frameworks / ethics of intelligence and cognitive security section as the source section and
 defensive review as the boundary.
 1182
+
+![page1183_img1.png](images/page1183_img1.png)
 
 ## Page 1184
 
@@ -110557,6 +110855,8 @@ layer: rate limits, ToS check, minimization, Collector modules, and Web and doma
 evidence boundary, and accountable practice.
 1200
 
+![page1201_img1.png](images/page1201_img1.png)
+
 ## Page 1202
 
 72
@@ -111143,6 +111443,8 @@ before the graph can advance or finish. Its reader value is to make Task, Plan n
 node visible at a glance, with the langchain langgraph ageint patterns appendix as the source section and defensive review as the boundary.
 1205
 
+![page1206_img1.png](images/page1206_img1.png)
+
 ## Page 1207
 
 73
@@ -111687,6 +111989,8 @@ Figure 149: The multi-agent crew separates duties across specialized roles coord
 enforcing accountability before any output is released. The captioned view belongs to the crewai multi agent operations appendix and should be read
 as a map of Orchestrator agent, Specialized roles, Researcher: retrieval, and Analyst: synthesis, not as a capability score or live-task instruction.
 1210
+
+![page1211_img1.png](images/page1211_img1.png)
 
 ## Page 1212
 
@@ -112242,6 +112546,8 @@ In the autogen and mcp patterns appendix, it lets readers compare Agent host, Cl
 Capability negotiation so the visual functions as a traceable course aid rather than an unscoped assertion.
 1215
 
+![page1216_img1.png](images/page1216_img1.png)
+
 ## Page 1217
 
 Figure 151: Conceptual schematic showing that MCP tool access depends on host, client, server, version, identity, authorization, and audit evidence
@@ -112249,6 +112555,8 @@ rather than protocol names alone.
 In the autogen and mcp patterns appendix, it lets readers compare Host policy, MCP client, Identity and
 authorization, and Block or isolate so the visual functions as a traceable course aid rather than an unscoped assertion.
 1216
+
+![page1217_img1.png](images/page1217_img1.png)
 
 ## Page 1218
 
@@ -112819,6 +113127,8 @@ authentication and key lifecycle governance. Its reader value is to make Protect
 and defensive review as the boundary.
 1221
 
+![page1222_img1.png](images/page1222_img1.png)
+
 ## Page 1223
 
 76
@@ -113378,6 +113688,8 @@ detection coverage and mitigation, never an action plan. The captioned view belo
 should be read as a map of Observed behavior (defensive), Kill-chain phase labeling, ATT&CK technique mapping, and Detection coverage matrix,
 not as a capability score or live-task instruction.
 1226
+
+![page1227_img1.png](images/page1227_img1.png)
 
 ## Page 1228
 
@@ -113967,6 +114279,8 @@ classroom review boundary visible at a glance, with the cognitive security and i
 as the boundary.
 1231
 
+![page1232_img1.png](images/page1232_img1.png)
+
 ## Page 1233
 
 Figure 155: The six phases of CCDCOE cognitive decoherence in human organizations map one-to-one onto the CSA CDR cognitive-degradation
@@ -113975,6 +114289,8 @@ it to inspect Phase 1 — Initiation, Human orgs / CCDCOE adversary targets syst
 CDR Trigger Injection: adversarial inputs establish foothold, and Phase 2 — Early degradation while preserving the distinction between curriculum
 structure, evidence boundary, and accountable practice.
 1232
+
+![page1233_img1.png](images/page1233_img1.png)
 
 ## Page 1234
 
@@ -115857,12 +116173,16 @@ Drafted claim, Source attribution, Flag as single-source, and Uncertainty and co
 structure, evidence boundary, and accountable practice.
 1247
 
+![page1248_img1.png](images/page1248_img1.png)
+
 ## Page 1249
 
 Figure 157: The source-verification workflow connects locked references, v2 source lanes, checked dates, and refresh triggers. The captioned view
 belongs to the source verification and claim ledger workbook appendix and should be read as a map of source verification flow steps, decision gates,
 owner handoffs, refresh triggers, and closure evidence, not as a capability score or live-task instruction.
 1248
+
+![page1249_img1.png](images/page1249_img1.png)
 
 ## Page 1250
 
@@ -115871,12 +116191,16 @@ and claim ledger workbook appendix; use it to inspect claim ledger flow steps, d
 while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1249
 
+![page1250_img1.png](images/page1250_img1.png)
+
 ## Page 1251
 
 Figure 159: The HRIA/DPIA map separates purpose, affected groups, high-risk triggers, safeguards, and residual risk. The captioned view belongs to
 the source verification and claim ledger workbook appendix and should be read as a map of hria dpia map fields, row and column obligations, source
 records, reviewer decisions, and closure evidence, not as a capability score or live-task instruction.
 1250
+
+![page1251_img1.png](images/page1251_img1.png)
 
 ## Page 1252
 
@@ -115885,6 +116209,8 @@ the source verification and claim ledger workbook appendix and should be read as
 source records, reviewer decisions, and closure evidence, not as a capability score or live-task instruction.
 1251
 
+![page1252_img1.png](images/page1252_img1.png)
+
 ## Page 1253
 
 Figure 161: The records retention audit ties retained records to audit questions, exceptions, and remediation evidence. It is anchored to the source
@@ -115892,12 +116218,16 @@ verification and claim ledger workbook appendix; use it to inspect records reten
 decisions, and closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1252
 
+![page1253_img1.png](images/page1253_img1.png)
+
 ## Page 1254
 
 Figure 162: The risk exception memo keeps exception basis, compensating controls, expiry, and retest evidence together. In the source verification and
 claim ledger workbook appendix, it lets readers compare risk exception memo fields, row and column obligations, source records, reviewer decisions,
 and closure evidence so the visual functions as a traceable course aid rather than an unscoped assertion.
 1253
+
+![page1254_img1.png](images/page1254_img1.png)
 
 ## Page 1255
 
@@ -116666,12 +116996,16 @@ packet, instructor scores mastery rubric, red team checks safety, sourcing, and 
 functions as a traceable course aid rather than an unscoped assertion.
 1259
 
+![page1260_img1.png](images/page1260_img1.png)
+
 ## Page 1261
 
 Figure 164: The capstone workflow moves from an accountable question to debrief and refresh ownership. Its reader value is to make capstone workflow
 steps, decision gates, owner handoffs, refresh triggers, and closure evidence visible at a glance, with the instructor capstone rubric and red team review
 pack appendix as the source section and defensive review as the boundary.
 1260
+
+![page1261_img1.png](images/page1261_img1.png)
 
 ## Page 1262
 
@@ -116680,12 +117014,16 @@ and red team review pack appendix; use it to inspect safe substitution matrix fi
 and closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1261
 
+![page1262_img1.png](images/page1262_img1.png)
+
 ## Page 1263
 
 Figure 166: The instructor lifecycle connects scope, facilitation, scoring, revision, and debrief evidence. Its reader value is to make instructor assessment
 lifecycle steps, decision gates, owner handoffs, refresh triggers, and closure evidence visible at a glance, with the instructor capstone rubric and red
 team review pack appendix as the source section and defensive review as the boundary.
 1262
+
+![page1263_img1.png](images/page1263_img1.png)
 
 ## Page 1264
 
@@ -116694,12 +117032,16 @@ capstone rubric and red team review pack appendix, it lets readers compare asses
 records, reviewer decisions, and closure evidence so the visual functions as a traceable course aid rather than an unscoped assertion.
 1263
 
+![page1264_img1.png](images/page1264_img1.png)
+
 ## Page 1265
 
 Figure 168: The release change-control gate checks scope, rights, security, versioning, rollback, monitoring, and retest. The captioned view belongs to
 the instructor capstone rubric and red team review pack appendix and should be read as a map of release change control labels, source records, review
 gates, refresh cues, and reader-use boundaries, not as a capability score or live-task instruction.
 1264
+
+![page1265_img1.png](images/page1265_img1.png)
 
 ## Page 1266
 
@@ -116708,6 +117050,8 @@ rubric and red team review pack appendix; use it to inspect learner support plan
 boundaries while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1265
 
+![page1266_img1.png](images/page1266_img1.png)
+
 ## Page 1267
 
 Figure 170: The instructor question bank prompts source, boundary, rights, and assurance challenges. It is anchored to the instructor capstone rubric
@@ -116715,12 +117059,16 @@ and red team review pack appendix; use it to inspect instructor question bank fi
 and closure evidence while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1266
 
+![page1267_img1.png](images/page1267_img1.png)
+
 ## Page 1268
 
 Figure 171: The remediation backlog tracks unverified claims, unsafe phrasing, accessibility defects, and assurance gaps. Its reader value is to make
 remediation backlog fields, row and column obligations, source records, reviewer decisions, and closure evidence visible at a glance, with the instructor
 capstone rubric and red team review pack appendix as the source section and defensive review as the boundary.
 1267
+
+![page1268_img1.png](images/page1268_img1.png)
 
 ## Page 1269
 
@@ -116745,6 +117093,8 @@ evidence lanes, limitations, and reviewer-use cautions while preserving the dist
 practice.
 1269
 
+![page1270_img1.png](images/page1270_img1.png)
+
 ## Page 1271
 
 Figure 173: Evidence-derived chart summarizing curated research-anchor freshness, source lanes, and evidence tiers from local metadata; counts are
@@ -116752,12 +117102,16 @@ audit coverage signals, not source-quality scores. In the bibliography atlas, it
 evidence lanes, limitations, and reviewer-use cautions so the visual functions as a traceable course aid rather than an unscoped assertion.
 1270
 
+![page1271_img1.png](images/page1271_img1.png)
+
 ## Page 1272
 
 Figure 174: Audit table defining heterogeneous count types: parsed source-guide references, curated research anchors, methods appendices, and named
 AGEINT patterns. In the bibliography atlas, it lets readers compare reference coverage categories, denominators, evidence lanes, limitations, and
 reviewer-use cautions so the visual functions as a traceable course aid rather than an unscoped assertion.
 1271
+
+![page1272_img1.png](images/page1272_img1.png)
 
 ## Page 1273
 
@@ -116768,6 +117122,8 @@ refresh actions, and the publication-preflight failure path so source dates cann
 PDF validators remain green. The visual is not a score or empirical performance claim.
 1272
 
+![page1273_img1.png](images/page1273_img1.png)
+
 ## Page 1274
 
 Figure 176: The agency-source coverage figure summarizes the oﬀicial US Intelligence Community source expansion as agency-source coverage telemetry,
@@ -116777,12 +117133,16 @@ evidence failure path that blocks a new agency anchor when source_agency, source
 assurance_use, or rights_dimension metadata is missing.
 1273
 
+![page1274_img1.png](images/page1274_img1.png)
+
 ## Page 1275
 
 Figure 177: Deterministic teaching plate showing how web-discovered sources enter AGEINT only after direct verification, anchor metadata, figure
 linkage, and reviewer refresh duty. It is anchored to the bibliography atlas; use it to inspect Direct source, Verification record, Anchor metadata, and
 Visual linkage while preserving the distinction between curriculum structure, evidence boundary, and accountable practice.
 1274
+
+![page1275_img1.png](images/page1275_img1.png)
 
 ## Page 1276
 

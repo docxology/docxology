@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Data_a542f49d.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -172,6 +174,8 @@ obtain the files through the appropriate channel. In this template the fixture b
 shipped alongside the descriptor and used to demonstrate end-to-end verification.
 4
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 4
@@ -201,6 +205,8 @@ schema hash identically regardless of authoring order — the property is assert
 fingerprint is what lets a release manifest reference “the schema” by a single value that changes if and only if the
 field contract changes.
 5
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -238,6 +244,8 @@ reuser needs to judge whether the dataset was produced the way they require. For
 cite concrete tools, versions, and operators rather than the template’s synthetic agents.
 7
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 6
@@ -272,6 +280,8 @@ build_release_bundle_manifest() packages the above into a deterministic, JSON-re
 schema fingerprint, per-file checksums and row counts, field-level unit/bounds/enumeration summaries, provenance
 8
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 Figure 5: Descriptor↔file verification: declared versus recomputed row counts and checksum agreement per file,
@@ -288,6 +298,8 @@ independent schema fingerprints, byte-level verification against real temporary 
 integration test that runs the figure script end to end and asserts real PNGs are written. Coverage exceeds the 90%
 project gate with no mocks.
 9
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 

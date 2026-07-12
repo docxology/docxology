@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Exploratory_0b10852b.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -330,16 +332,22 @@ the heatmap by correlation_heatmap_data(). The diagonal is unity by construction
 strongest_pairs(matrix, top_n=3) ranks the distinct feature pairs by absolute correlation while preserving sign. On the shipped data
 the dominant relationship is height about weight (a strong positive correlation, by design), followed by the comparatively weak
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 Figure 2: Rows per group: sorted category labels and aligned counts from group_count_data(). The three groups are of comparable,
 though not identical, size; the counts sum to the complete-case row total.
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
 Figure 3: Feature correlation heatmap: values from correlation_heatmap_data() (which wraps correlation_matrix(method="pearso
 n")) rendered with a diverging colour map on the fixed range [−1, 1]. Height and weight are strongly positively correlated; resting
 heart rate is only weakly related to the other two.
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 

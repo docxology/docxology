@@ -2,6 +2,8 @@
 
 > Extracted from `biology_textbook_v1_05-26-2026-compressed.pdf`
 
+> 236 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -13,6 +15,8 @@ Active Inference Institute
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 Edition 1.0 – 2026 DOI: 10.5281/zenodo.20286478
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
 
 ## Page 2
 
@@ -9029,6 +9033,8 @@ keep chapter \cref labels and config.yaml ordering in sync
 Text is licensed CC BY 4.0; source code is Apache-2.0 (see manuscript/config.yaml →book).
 73
 
+![page74_img1.jpeg](images/page74_img1.jpeg)
+
 ## Page 75
 
 Contents
@@ -9662,6 +9668,8 @@ fixed-set-point homeostasis as the model of central control.
 • Unit X — Ecology: Introduction — Ecology: phase transitions, alternative stable states, and tipping points apply the mathematics of section 0.2 directly.
 80
 
+![page81_img1.jpeg](images/page81_img1.jpeg)
+
 ## Page 82
 
 Contents
@@ -9722,6 +9730,8 @@ Interdependent Relationships in Ecosystems.
 • Common misconception to repair: A system is not just a list of parts; the interactions are part of the explanation.
 • Primary lab: Lab A — Systems Science and Emergence.
 82
+
+![page83_img1.jpeg](images/page83_img1.jpeg)
 
 ## Page 84
 
@@ -9833,6 +9843,8 @@ gives 100/(1 + 𝑥2) = 25𝑥⇒4 = 𝑥(1 + 𝑥2) ⇒𝑥≈1.28 ⇒𝐶≈64
 attenuates the stress response because the Hill-2 self-inhibition concentrates around 𝐾.
 84
 
+![page85_img1.jpeg](images/page85_img1.jpeg)
+
 ## Page 86
 
 0.1
@@ -9879,6 +9891,8 @@ to predict and pre-empt the disturbance. Examples:
 • Sensory cortex anticipates expected stimuli and subtracts prediction from input, improving signal-to-noise.
 • Cerebellar internal models generate predicted motor outcomes before execution, allowing correction mid-movement.
 85
+
+![page86_img1.jpeg](images/page86_img1.jpeg)
 
 ## Page 87
 
@@ -9974,6 +9988,8 @@ makes the first modeling decision explicit: where is the boundary? A cardiology-
 renal compensation; a whole-patient boundary treats drug choice as intervention on coupled feedback loops. This is the practical clinical meaning
 of emergence, hierarchy, and allostatic regulation [Cannon, 1932, Sterling, 2012].
 87
+
+![page88_img1.jpeg](images/page88_img1.jpeg)
 
 ## Page 89
 
@@ -10521,6 +10537,8 @@ Interdependent Relationships in Ecosystems.
 • Question bank: Questions — Complex Adaptive Systems.
 97
 
+![page98_img1.jpeg](images/page98_img1.jpeg)
+
 ## Page 99
 
 0.2
@@ -10618,6 +10636,8 @@ The body plan of a vertebrate emerges from a single fertilized cell through cell
 phogens). The French flag model of positional information — cells adopt different fates depending on the local concentration of a morphogen — captures the
 CAS logic of development.
 99
+
+![page100_img1.jpeg](images/page100_img1.jpeg)
 
 ## Page 101
 
@@ -10723,6 +10743,8 @@ Worked Example: Scaling in Power-Law Distributions
 Problem: Neuronal avalanche sizes (the number of neurons firing synchronously in a cascade) in cortical slices have been empirically shown to follow a power
 law probability distribution 𝑃(𝑥) = 𝐶𝑥−𝛼, where the scaling exponent 𝛼≈1.5. If a small avalanche involving 𝑥= 10 neurons occurs with a probability of 0.05
 101
+
+![page102_img1.jpeg](images/page102_img1.jpeg)
 
 ## Page 103
 
@@ -11076,6 +11098,10 @@ path dependence make biological prediction conditional rather than absolute.
 • What to compare: test at least one alternative explanation, baseline, or null model before treating the pattern as causal.
 107
 
+![page108_img1.jpeg](images/page108_img1.jpeg)
+
+![page108_img2.jpeg](images/page108_img2.jpeg)
+
 ## Page 109
 
 0.2
@@ -11258,6 +11284,8 @@ Interdependent Relationships in Ecosystems.
 • Question bank: Questions — Active Inference and Free Energy.
 111
 
+![page112_img1.jpeg](images/page112_img1.jpeg)
+
 ## Page 113
 
 0.3
@@ -11301,6 +11329,8 @@ every other variable in the network. For an agent that persists in time, this ge
 • Internal states 𝜇— everything inside the agent (gene expression, membrane potentials, synaptic weights).
 112
 
+![page113_img1.jpeg](images/page113_img1.jpeg)
+
 ## Page 114
 
 0.3
@@ -11336,6 +11366,8 @@ surprise (negative log-evidence)
 (22)
 where:
 113
+
+![page114_img1.jpeg](images/page114_img1.jpeg)
 
 ## Page 115
 
@@ -11493,6 +11525,10 @@ The variational free energy associated with this observation is approximately �
 agent has two ways to reduce it:
 1. Perceptual inference (passive) — accept 𝜇post = 36.4 °C as its new belief. 𝐹drops to about 2.1 nats.
 116
+
+![page117_img1.jpeg](images/page117_img1.jpeg)
+
+![page117_img2.jpeg](images/page117_img2.jpeg)
 
 ## Page 118
 
@@ -11882,6 +11918,8 @@ Interdependent Relationships in Ecosystems.
 • Model or quantitative lens: Concept-map and evidence-matrix comparisons among historical claims, mechanisms, and model assumptions.
 • Data skill: Classify source excerpts as observation, experiment, model, mechanism, or value-laden inference.
 124
+
+![page125_img1.jpeg](images/page125_img1.jpeg)
 
 ## Page 126
 
@@ -12313,6 +12351,8 @@ they identify the source practice, comparison set, interpretive assumption, and 
 • What to compare: contrast one alternative explanation, source category, or boundary choice before treating the claim as settled.
 131
 
+![page132_img1.jpeg](images/page132_img1.jpeg)
+
 ## Page 133
 
 0.4
@@ -12578,6 +12618,8 @@ Connections Across the Textbook
 Unit I — Chemistry of Life: Introduction establishes the chemical vocabulary for the entire textbook:
 136
 
+![page137_img1.jpeg](images/page137_img1.jpeg)
+
 ## Page 138
 
 0.4
@@ -12648,6 +12690,8 @@ By the end of this chapter, you should be able to:
 7. Explain redox reactions and their central role in bioenergetics.
 8. Apply isotope chemistry to biomedical imaging and radiotherapy.
 138
+
+![page139_img1.jpeg](images/page139_img1.jpeg)
 
 ## Page 140
 
@@ -12939,6 +12983,8 @@ thermal energy at body temperature (about 2.5 kJ/mol), making them the primary s
 Bond energies of biologically important bonds:
 142
 
+![page143_img1.jpeg](images/page143_img1.jpeg)
+
 ## Page 144
 
 1
@@ -13192,6 +13238,8 @@ PLP-dependent enzymes
 Concept Check 3: Acetyl-CoA contains a thioester bond (–COS–) with a Δ𝐺∘′ of hydrolysis of approximately –31.4 kJ/mol, comparable to ATP
 hydrolysis. Why might cells use thioester bonds as “activated” carriers of acyl groups?
 145
+
+![page146_img1.jpeg](images/page146_img1.jpeg)
 
 ## Page 147
 
@@ -13542,6 +13590,8 @@ ECM
 Typically ionized at cellular
 pH
 150
+
+![page151_img1.jpeg](images/page151_img1.jpeg)
 
 ## Page 152
 
@@ -13939,6 +13989,8 @@ Determines 𝜀at MHz/GHz
 Each water molecule undergoes about 1012 H-bond rearrangements per second — an extraordinary churn that nevertheless preserves the average network
 157
 
+![page158_img1.jpeg](images/page158_img1.jpeg)
+
 ## Page 159
 
 2
@@ -14087,6 +14139,8 @@ Amphipathic Molecules and Self-Assembly
 Molecules with both hydrophilic and hydrophobic regions are amphipathic (also called amphiphilic). Their self-assembly behavior depends on geometry:
 160
 
+![page161_img1.jpeg](images/page161_img1.jpeg)
+
 ## Page 162
 
 2
@@ -14152,6 +14206,8 @@ Figure 26. van ’t Hoff osmotic pressure versus solute concentration at 37 ∘C
 doubling 𝑖doubles osmotic pressure at equal molarity, explaining why saline solutions exert stronger osmotic stress than urea at the same concentration.
 162
 
+![page163_img1.jpeg](images/page163_img1.jpeg)
+
 ## Page 164
 
 2
@@ -14193,6 +14249,8 @@ Clinical Connection: Osmotic Demyelination Syndrome
 When hyponatraemia (low blood sodium, < 135 mM) is corrected too rapidly with hypertonic saline, brain cells — which had adapted to low
 osmolarity by losing organic osmolytes — suddenly find themselves in a hypertonic environment. Water rushes out of neurons and oligodendrocytes,
 163
+
+![page164_img1.jpeg](images/page164_img1.jpeg)
 
 ## Page 165
 
@@ -14857,6 +14915,8 @@ Learning Objectives
 6. Describe ribozymes, their discovery, and their significance for the RNA World hypothesis.
 174
 
+![page175_img1.jpeg](images/page175_img1.jpeg)
+
 ## Page 176
 
 3
@@ -14950,6 +15010,8 @@ favorable (–20 kJ/mol), driving protein synthesis forward with near-perfect un
 Concept Check 1: Hydrolysis reactions are thermodynamically spontaneous (Δ𝐺< 0), yet polymers are kinetically stable in cells. What prevents
 the spontaneous hydrolysis of your DNA, proteins, and carbohydrates?
 176
+
+![page177_img1.jpeg](images/page177_img1.jpeg)
 
 ## Page 178
 
@@ -15104,6 +15166,8 @@ callose, paramylon (algae)
 linear
 no
 178
+
+![page179_img1.jpeg](images/page179_img1.jpeg)
 
 ## Page 180
 
@@ -15368,6 +15432,8 @@ Compressibility modulus (𝐾𝐴)
 100–300 mN/m
 Resistance to area change
 181
+
+![page182_img1.jpeg](images/page182_img1.jpeg)
 
 ## Page 183
 
@@ -15697,6 +15763,8 @@ the polymer-rich solution demixes into a dense droplet phase coexisting with a d
 Key features of LLPS-driven condensates: - Multivalency (multiple weak interaction modules) is required; single-site interactions give simple complexes, not
 phases. - Aromatic (𝜋–𝜋) and electrostatic (+/−) interactions between IDR residues (especially Arg, Tyr, Phe, Glu, Asp) drive demixing. - Functional consequence:
 186
+
+![page187_img1.jpeg](images/page187_img1.jpeg)
 
 ## Page 188
 
@@ -16506,6 +16574,8 @@ DNA ligase
 EC 6.5.1.1
 198
 
+![page199_img1.jpeg](images/page199_img1.jpeg)
+
 ## Page 200
 
 4
@@ -16679,6 +16749,8 @@ Figure 35. Michaelis–Menten kinetics: initial velocity (𝑣0) versus substrat
 reference lines annotated.
 201
 
+![page202_img1.jpeg](images/page202_img1.jpeg)
+
 ## Page 203
 
 4
@@ -16737,6 +16809,8 @@ Defining 𝛼= 1 + [I]/𝐾𝑖:
 (83)
 On a Lineweaver-Burk plot: same 𝑦-intercept (1/𝑉𝑚𝑎𝑥), different slopes. Lines intersect on the 𝑦-axis.
 202
+
+![page203_img1.jpeg](images/page203_img1.jpeg)
 
 ## Page 204
 
@@ -17011,6 +17085,8 @@ and 10-degree rotation of catalytic trimers
 This allows the cell to precisely match nucleotide biosynthesis to demand. When CTP is abundant, ATCase is inhibited; when ATP is abundant (indicating
 nucleotide precursors are available), ATCase is activated.
 206
+
+![page207_img1.jpeg](images/page207_img1.jpeg)
 
 ## Page 208
 
@@ -17729,6 +17805,8 @@ print(f"E_K = {e_k:.1f} mV")
 # Permeabilities at rest: P_K = 1.0, P_Na = 0.04, P_Cl = 0.45
 216
 
+![page217_img1.jpeg](images/page217_img1.jpeg)
+
 ## Page 218
 
 4
@@ -17859,6 +17937,8 @@ Size, Scale, and the Surface-to-Volume Constraint
 Orders of Magnitude in Biology
 Biology spans an enormous range of scales. Understanding this range is essential for appreciating why cells occupy a specific size niche.
 219
+
+![page220_img1.jpeg](images/page220_img1.jpeg)
 
 ## Page 221
 
@@ -18075,6 +18155,8 @@ Figure 41. Microscopy methods grouped by resolving power: light techniques for l
 beat the diffraction limit.
 222
 
+![page223_img1.jpeg](images/page223_img1.jpeg)
+
 ## Page 224
 
 5
@@ -18180,6 +18262,8 @@ Prokaryotic Cell Structure
 teria, purple bacteria), the membrane invaginates to form thylakoid-like structures for the light reactions.
 • Cell wall: structurally rigid; resists osmotic lysis.
 224
+
+![page225_img1.jpeg](images/page225_img1.jpeg)
 
 ## Page 226
 
@@ -18900,6 +18984,8 @@ Information Storage and Transmission; NGSS-style topics: Structure and Function.
 • Question bank: Questions — Cell Structure and Organelles.
 235
 
+![page236_img1.jpeg](images/page236_img1.jpeg)
+
 ## Page 237
 
 6
@@ -19345,6 +19431,8 @@ amino acids) emerges 2. SRP binds signal peptide and ribosome, pausing translati
 peptide inserts into the translocon (Sec61 channel) 5. Translation resumes; polypeptide is co-translationally threaded into the ER lumen 6. Signal peptidase
 241
 
+![page242_img1.jpeg](images/page242_img1.jpeg)
+
 ## Page 243
 
 6
@@ -19372,6 +19460,8 @@ through a retrotranslocation channel (likely Hrd1 itself).
 5. Degradation: The proteasome digests the substrate to small peptides.
 Three branches of the UPR. When ERAD cannot keep up with the load, three transmembrane sensors are activated:
 242
+
+![page243_img1.jpeg](images/page243_img1.jpeg)
 
 ## Page 244
 
@@ -19498,6 +19588,8 @@ have different critical concentrations because of their different geometries:
 In a steady state with [𝐺-actin] between these two values (say 0.3 𝜇M), the (+) end grows continuously while the (−) end shrinks continuously — and the filament
 translates through space at a steady velocity even though its average length is constant. This is treadmilling, and the velocity is:
 244
+
+![page245_img1.jpeg](images/page245_img1.jpeg)
 
 ## Page 246
 
@@ -19906,6 +19998,8 @@ Review Questions
 the M6P phosphotransferase were defective?
 251
 
+![page252_img1.jpeg](images/page252_img1.jpeg)
+
 ## Page 253
 
 6
@@ -20061,6 +20155,8 @@ Figure 48. Goldman–Hodgkin–Katz (GHK) membrane potential as relative sodium 
 depolarizes the cell; separate curves show how different chloride permeabilities shift the resting potential toward more negative or positive values.
 255
 
+![page256_img1.jpeg](images/page256_img1.jpeg)
+
 ## Page 257
 
 7
@@ -20165,6 +20261,8 @@ For uncharged molecules, flux obeys Fick’s First Law:
 = 𝑃⋅Δ[𝐶]
 (116)
 257
+
+![page258_img1.jpeg](images/page258_img1.jpeg)
 
 ## Page 259
 
@@ -20462,6 +20560,8 @@ Other primary active transport pumps: - Ca2+-ATPase (SERCA): pumps Ca2+ from cyt
 lower than extracellular); critical for muscle relaxation - H+/K+-ATPase: gastric parietal cells; pumps H+ into stomach lumen (pH about 1); target of proton
 262
 
+![page263_img1.jpeg](images/page263_img1.jpeg)
+
 ## Page 264
 
 7
@@ -20740,6 +20840,8 @@ Exocytosis: secretory vesicles fuse with the plasma membrane, releasing contents
 Figure 51. SNARE-mediated vesicle fusion during regulated exocytosis. The v-SNARE on the vesicle (VAMP/synaptobrevin) and t-SNAREs on the target membrane (syntaxin +
 SNAP-25) form a tight four-helix bundle that drives membrane fusion. Synaptotagmin acts as the Ca$^{2+}$ sensor that triggers fusion in <1 ms.
 267
+
+![page268_img1.jpeg](images/page268_img1.jpeg)
 
 ## Page 269
 
@@ -21197,6 +21299,8 @@ molecular substrate of the cell’s “decision making” between proliferation 
 Concept Check 1a: A six-step cascade has a gain of 10 per step. What is the total gain? If a single step is removed (now five steps), by what factor
 275
 
+![page276_img1.jpeg](images/page276_img1.jpeg)
+
 ## Page 277
 
 8
@@ -21350,6 +21454,8 @@ G𝛼-GTP + free G𝛽𝛾
 Activates effectors
 278
 
+![page279_img1.jpeg](images/page279_img1.jpeg)
+
 ## Page 280
 
 8
@@ -21482,6 +21588,8 @@ dimerization →trans-autophosphorylation of tyrosines →phosphotyrosines recru
 Each step amplifies: one activated EGFR →about 100 RAS →about 10,000 activated ERK molecules.
 280
 
+![page281_img1.jpeg](images/page281_img1.jpeg)
+
 ## Page 282
 
 8
@@ -21544,6 +21652,8 @@ Shc; PLC-𝛾; FRS2
 Clinical Connection: HER2 and Trastuzumab Reconsidered. Trastuzumab binds the membrane-proximal extracellular subdomain IV of HER2 —
 not the dimerization arm. So how does it work? Multiple mechanisms: (1) it sterically interferes with HER2-HER2 self-dimerization in amplified
 281
+
+![page282_img1.jpeg](images/page282_img1.jpeg)
 
 ## Page 283
 
@@ -21864,6 +21974,8 @@ pRB phosphorylation →E2F release →S-phase genes (cyclin E, DNA polymerase, t
 most kinetochores attached to microtubules? Mad2/BubR1 inhibit Anaphase Promoting Complex (APC/C) until satisfied. APC/C then ubiquitinates securin →
 separase released →cleaves cohesin →sister chromatid separation.
 286
+
+![page287_img1.jpeg](images/page287_img1.jpeg)
 
 ## Page 288
 
@@ -22193,6 +22305,8 @@ and the RAS-MAPK cascade; ion channels open immediately upon ligand binding.
 tion (tumor suppressor alleles), Unit IX — Zoology and Systems Physiology: Introduction (endocrine first messengers).
 291
 
+![page292_img1.jpeg](images/page292_img1.jpeg)
+
 ## Page 293
 
 8
@@ -22414,6 +22528,8 @@ Key vocabulary introduced here: free energy, enthalpy, entropy, ATP hydrolysis, 
 chemiosmosis, electron transport chain, substrate-level phosphorylation, fermentation, Calvin cycle, Warburg effect.
 295
 
+![page296_img1.jpeg](images/page296_img1.jpeg)
+
 ## Page 297
 
 8
@@ -22512,6 +22628,8 @@ Introduction to Biology
 Figure 60. Net ATP and NADH balance across the ten glycolysis steps. Bars distinguish the two ATP-investment steps, the four ATP-yielding payoff steps, and NADH formation at
 steps 6 and 9; the pathway sums to net 2 ATP and 2 NADH per glucose.
 298
+
+![page299_img1.jpeg](images/page299_img1.jpeg)
 
 ## Page 300
 
@@ -22729,6 +22847,8 @@ The three irreversible steps (1, 3, 10) are the regulatory control points.
 Ten Enzymatic Steps
 302
 
+![page303_img1.jpeg](images/page303_img1.jpeg)
+
 ## Page 304
 
 9
@@ -22869,6 +22989,8 @@ losterically by F2,6BP (strong inhibitor) and AMP (inhibitor) — both signals o
 FBPase-1, so a single second messenger flips the entire futile-cycle node.
 304
 
+![page305_img1.jpeg](images/page305_img1.jpeg)
+
 ## Page 306
 
 9
@@ -22994,6 +23116,10 @@ Activated
 Activates PDP in adipose tissue
 306
 
+![page307_img1.jpeg](images/page307_img1.jpeg)
+
+![page307_img2.jpeg](images/page307_img2.jpeg)
+
 ## Page 308
 
 9
@@ -23074,6 +23200,8 @@ alpha-KG DH
 Ca2+, AMP
 ATP, NADH, succinyl-CoA
 307
+
+![page308_img1.jpeg](images/page308_img1.jpeg)
 
 ## Page 309
 
@@ -23200,6 +23328,8 @@ The ETC’s job is to deliver four electrons safely onto O2 to produce water —
 (ROS).
 Sites of ROS production in the ETC:
 309
+
+![page310_img1.jpeg](images/page310_img1.jpeg)
 
 ## Page 311
 
@@ -23660,6 +23790,8 @@ Understanding the ETC and oxidative phosphorylation has been greatly advanced by
 Electron-Transport Chain Inhibitors
 315
 
+![page316_img1.jpeg](images/page316_img1.jpeg)
+
 ## Page 317
 
 9
@@ -23770,6 +23902,8 @@ equilibrium?
 favorable in the gluconeogenic direction?
 4. Explain the structure and regulation of the pyruvate dehydrogenase complex. Why does it require five cofactors?
 317
+
+![page318_img1.jpeg](images/page318_img1.jpeg)
 
 ## Page 319
 
@@ -24184,6 +24318,8 @@ PS I reaction
 center
 324
 
+![page325_img1.jpeg](images/page325_img1.jpeg)
+
 ## Page 326
 
 10
@@ -24305,6 +24441,8 @@ Figure 70. The Calvin cycle fixes CO2 onto RuBP, reduces 3-PGA using ATP and NAD
 The three phases of the Calvin cycle (Mermaid). For every 3 CO2 fixed, 9 ATP and 6 NADPH are consumed, and 1 net G3P (3C) is produced. Six turns of the cycle
 produce one glucose molecule.
 326
+
+![page327_img1.jpeg](images/page327_img1.jpeg)
 
 ## Page 328
 
@@ -24538,6 +24676,8 @@ WUEintrinsic =
 (187)
 330
 
+![page331_img1.jpeg](images/page331_img1.jpeg)
+
 ## Page 332
 
 10
@@ -24661,6 +24801,8 @@ depends on the rate of light-dependent ATP/NADPH supply.
 This three-zone behavior underlies the classic Farquhar-von Caemmerer-Berry (FvCB) photosynthesis model, the workhorse of crop and ecosystem modeling.
 332
 
+![page333_img1.jpeg](images/page333_img1.jpeg)
+
 ## Page 334
 
 10
@@ -24766,6 +24908,8 @@ Photosynthesis has a complex evolutionary history spanning about 3.5 billion yea
 1. Anoxygenic photosynthesis (about 3.5 Ga): Early photosynthetic bacteria (e.g., purple bacteria, green sulfur bacteria) used a single reaction center (Type
 I or Type II) and electron donors other than water (H2S, Fe2+, H2). No O2 produced.
 334
+
+![page335_img1.jpeg](images/page335_img1.jpeg)
 
 ## Page 336
 
@@ -24881,6 +25025,8 @@ Figure 74. Light-response curves for C3, C4, and CAM plants. Net CO2 assimilatio
 maximum assimilation rates.
 337
 
+![page338_img1.jpeg](images/page338_img1.jpeg)
+
 ## Page 339
 
 10
@@ -24912,6 +25058,8 @@ claims should report the tracer, diffusion assumptions, and biome context rather
 Current Evidence Map: Photosynthesis Under Stress
 Figure 75. Photosynthesis in a plant is a coupled carbon-water decision: high light cannot raise growth if CO2 entry, water status, or sink demand becomes limiting.
 338
+
+![page339_img1.jpeg](images/page339_img1.jpeg)
 
 ## Page 340
 
@@ -25096,6 +25244,8 @@ Study Blueprint
 • Core concepts: flux, energy charge, hormonal control, fed/fasted states.
 342
 
+![page343_img1.jpeg](images/page343_img1.jpeg)
+
 ## Page 344
 
 11
@@ -25153,6 +25303,8 @@ Low
 Figure 77. Metabolic states from fed to starvation, showing the hormonal switches and metabolic pathway changes at each stage. Insulin dominates the fed state; glucagon dominates
 fasting; ketogenesis sustains the brain during starvation.
 343
+
+![page344_img1.jpeg](images/page344_img1.jpeg)
 
 ## Page 345
 
@@ -25307,6 +25459,8 @@ and gluconeogenesis (via CREB transcription) while suppressing glycolysis (via P
 The Phosphorylase Kinase Cascade — A Signal Amplifier
 345
 
+![page346_img1.jpeg](images/page346_img1.jpeg)
+
 ## Page 347
 
 11
@@ -25347,6 +25501,8 @@ about 107–108
 A single glucagon binding event releases a burst of about 107 glucose-1-phosphate molecules within seconds. This is how a signal at femtomolar hormone
 concentrations produces a millimolar metabolite response.
 346
+
+![page347_img1.jpeg](images/page347_img1.jpeg)
 
 ## Page 348
 
@@ -25603,6 +25759,8 @@ Loss-of-function = Peutz-Jeghers syndrome,
 predisposes to gastrointestinal cancers
 350
 
+![page351_img1.jpeg](images/page351_img1.jpeg)
+
 ## Page 352
 
 11
@@ -25820,6 +25978,8 @@ Hormonal Coordination at the Whole-Organism Level
 Figure 81. Hormonal coordination of metabolism across organs. Insulin (green) drives anabolic responses; glucagon (red) and cortisol (blue) drive catabolic responses. Each organ
 has distinct metabolic roles and receptor expression patterns.
 354
+
+![page355_img1.jpeg](images/page355_img1.jpeg)
 
 ## Page 356
 
@@ -26422,6 +26582,8 @@ biology in Unit II — The Cell: Introduction and Unit IX — Zoology and System
 resistance (Unit VII — Microbiology: Introduction), and plant engineering (Unit VIII — Botany — Plant Biology: Introduction).
 363
 
+![page364_img1.jpeg](images/page364_img1.jpeg)
+
 ## Page 365
 
 11
@@ -26502,6 +26664,8 @@ mission, Systems Interactions; NGSS-style topics: Inheritance and Variation of T
 • Transfer task: Transfer replication logic to cancer, aging, viral replication, or antibiotic targets.
 • Bridge to computation: biology.genetics.genetics.dna_complement.
 365
+
+![page366_img1.jpeg](images/page366_img1.jpeg)
 
 ## Page 367
 
@@ -26675,6 +26839,8 @@ Synthesizes Okazaki fragments; also
 fills primer gaps
 368
 
+![page369_img1.jpeg](images/page369_img1.jpeg)
+
 ## Page 370
 
 12
@@ -26778,6 +26944,8 @@ for i in range(0, len(seq)-2, 3):
 codon = seq[i:i+3]
 if codon in codon_table:
 370
+
+![page371_img1.jpeg](images/page371_img1.jpeg)
 
 ## Page 372
 
@@ -26996,6 +27164,8 @@ Reversible exit from the cell cycle; neurons and
 muscle cells may remain in G0 permanently
 374
 
+![page375_img1.jpeg](images/page375_img1.jpeg)
+
 ## Page 376
 
 12
@@ -27192,6 +27362,8 @@ p53: Guardian of the Genome
 p53 is the most frequently mutated gene in human cancers (approximately 50% of cancers carry TP53 mutations). Normal p53 function:
 • Normally kept at low levels by MDM2 (an E3 ubiquitin ligase) that targets p53 for proteasomal degradation (half-life approximately 20 min)
 377
+
+![page378_img1.jpeg](images/page378_img1.jpeg)
 
 ## Page 379
 
@@ -27631,6 +27803,8 @@ on the reading frame.
 6. Describe post-translational modifications and the ubiquitin-proteasome degradation pathway.
 385
 
+![page386_img1.jpeg](images/page386_img1.jpeg)
+
 ## Page 387
 
 13
@@ -27784,6 +27958,8 @@ inhibitors (JQ1, OTX015) displace BRD4 from acetylated histones at enhancers, su
 a new class of epigenetic cancer therapeutics.
 388
 
+![page389_img1.jpeg](images/page389_img1.jpeg)
+
 ## Page 390
 
 13
@@ -27834,6 +28010,8 @@ massive rearrangement 4. B* complex: U1 and U4 released; U6 replaces U1 at 5’ 
 transesterification occurs 6. C* complex: Second transesterification; exons ligated; lariat released 7. Post-spliceosomal complex: snRNPs recycled; EJC (exon
 junction complex) deposited about 20-24 nt upstream of each exon-exon junction
 389
+
+![page390_img1.jpeg](images/page390_img1.jpeg)
 
 ## Page 391
 
@@ -28001,6 +28179,8 @@ most eIFs released 6. 80S initiation complex formed with Met-tRNA𝑀𝑒𝑡
 𝑖
 in P site
 392
+
+![page393_img1.jpeg](images/page393_img1.jpeg)
 
 ## Page 394
 
@@ -28711,6 +28891,8 @@ mission, Systems Interactions; NGSS-style topics: Inheritance and Variation of T
 • Transfer task: Transfer variant reasoning to cancer genomics, ancestry, gene therapy, or microbial evolution.
 404
 
+![page405_img1.jpeg](images/page405_img1.jpeg)
+
 ## Page 406
 
 14
@@ -29241,6 +29423,8 @@ Lynch syndrome / HNPCC (MLH1, MSH2, MSH6,
 PMS2; 50–80% lifetime CRC risk; MSI-high tumors)
 411
 
+![page412_img1.jpeg](images/page412_img1.jpeg)
+
 ## Page 413
 
 14
@@ -29377,6 +29561,8 @@ transcriptase + pegRNA
 “Search-and-replace”: any point mutation, small insertion, or
 small deletion; no DSB, no donor template needed
 413
+
+![page414_img1.jpeg](images/page414_img1.jpeg)
 
 ## Page 415
 
@@ -29650,6 +29836,8 @@ Figure 95. Genomic sequencing approaches. Short-read (Illumina) provides high th
 variants, repeats, and enables de novo assembly.
 417
 
+![page418_img1.jpeg](images/page418_img1.jpeg)
+
 ## Page 419
 
 14
@@ -29715,6 +29903,8 @@ Examples of GWAS discoveries: - Type 2 diabetes: >400 loci, including TCF7L2 (st
 (complement factor H) – led to complement-targeted therapies - Autoimmune diseases: HLA region as the strongest risk factor for type 1 diabetes, celiac disease,
 rheumatoid arthritis
 418
+
+![page419_img1.jpeg](images/page419_img1.jpeg)
 
 ## Page 420
 
@@ -30253,6 +30443,8 @@ Figure 98. Illustrative synthetic CpG methylation heatmap across indexed loci (r
 the lower-methylation row band is a deterministic teaching pattern, not patient or cell-line data.
 428
 
+![page429_img1.png](images/page429_img1.png)
+
 ## Page 430
 
 15
@@ -30475,6 +30667,8 @@ important in MLL-fusion
 leukaemia
 Active acetylation and ubiquitination marks
 431
+
+![page432_img1.jpeg](images/page432_img1.jpeg)
 
 ## Page 433
 
@@ -30796,6 +30990,8 @@ Remove Polycomb marks
 during differentiation
 435
 
+![page436_img1.jpeg](images/page436_img1.jpeg)
+
 ## Page 437
 
 15
@@ -31101,6 +31297,8 @@ Drives placental and fetal growth. - H19: maternally expressed; a 2.3-kb spliced
 In some tissues H19 itself acts as a tumor suppressor by inhibiting IGF1R signaling.
 440
 
+![page441_img1.jpeg](images/page441_img1.jpeg)
+
 ## Page 442
 
 15
@@ -31273,6 +31471,8 @@ Figure 102. Four ATP-dependent remodeling families, each with a distinct nucleos
 short, regular spacing for nucleosome arrays. CHD/NuRD: repressive sliding with HDAC coupling. INO80/SWR1: histone variant exchange (H2A.Z between H2A) at promoters
 and DNA damage sites.
 443
+
+![page444_img1.jpeg](images/page444_img1.jpeg)
 
 ## Page 445
 
@@ -31479,6 +31679,8 @@ test it. Use the surfaces below to inspect the chapter’s assumptions, rerun th
 figures.
 446
 
+![page447_img1.jpeg](images/page447_img1.jpeg)
+
 ## Page 448
 
 15
@@ -31626,6 +31828,8 @@ ing effective contact probability another 10–100×. This is why disrupting a s
 enhancer–promoter looping and silence the target gene — even though the enhancer DNA is unchanged.
 449
 
+![page450_img1.jpeg](images/page450_img1.jpeg)
+
 ## Page 451
 
 16
@@ -31657,6 +31861,8 @@ of protein-coding genes [Fire et al., 1998].
 Figure 105. miRNA biogenesis and RISC-mediated silencing. Drosha in the nucleus produces pre-miRNA; DICER in the cytoplasm generates the duplex; AGO2 incorporates the
 guide strand into RISC; partial 3 UTR complementarity leads to translational repression and mRNA decay.
 450
+
+![page451_img1.jpeg](images/page451_img1.jpeg)
 
 ## Page 452
 
@@ -32128,6 +32334,8 @@ Figure 106. A transgenerational claim is not automatic: an inherited mark must s
 in-utero or cultural transmission before it can be called causal.
 457
 
+![page458_img1.jpeg](images/page458_img1.jpeg)
+
 ## Page 459
 
 16
@@ -32520,6 +32728,8 @@ print(f"aa (affected):
 0.00203 = 1 in 493
 463
 
+![page464_img1.jpeg](images/page464_img1.jpeg)
+
 ## Page 465
 
 16
@@ -32604,6 +32814,8 @@ Mendelian Principles and Probability
 Introduction to Biology
 Figure 108. Punnett square for a monohybrid cross Aa × Aa. Each cell shows the zygote genotype; the 3:1 phenotype ratio follows directly from the 1:2:1 genotype ratio.
 466
+
+![page467_img1.png](images/page467_img1.png)
 
 ## Page 468
 
@@ -32712,6 +32924,8 @@ Worked example – seed color:
 𝑌𝑌(yellow) × 𝑦𝑦(green)
 (227)
 468
+
+![page469_img1.jpeg](images/page469_img1.jpeg)
 
 ## Page 470
 
@@ -33076,6 +33290,8 @@ The Labrador retriever coat color illustrates the principle through a two-step p
 • E locus (Extension): determines whether eumelanin is deposited at most in the hair shaft. 𝐸alleles deposit pigment; 𝑒𝑒homozygotes block deposition
 entirely, producing yellow coats regardless of B genotype.
 474
+
+![page475_img1.jpeg](images/page475_img1.jpeg)
 
 ## Page 476
 
@@ -33714,6 +33930,8 @@ where 𝑔𝑖𝑗is the count of risk alleles (0, 1, or 2) at SNP 𝑗in indivi
 for some diseases, equal or exceed the predictive power of family history. PRS is becoming clinically useful in cardiovascular disease, breast cancer, and prostate
 484
 
+![page485_img1.jpeg](images/page485_img1.jpeg)
+
 ## Page 486
 
 18
@@ -34038,6 +34256,8 @@ Computational Bridge
 Mendelian ratios are enumerated exactly by punnett_square; the heterozygote cross in figure 108 shows the canonical 3:1 phenotype outcome visually.
 from biology.genetics import punnett_square
 489
+
+![page490_img1.jpeg](images/page490_img1.jpeg)
 
 ## Page 491
 
@@ -34397,6 +34617,10 @@ Figure 114. Mitosis vs. meiosis: a single division producing two diploid copies 
 meiosis is anaphase I, when homologs (not sisters) separate.
 496
 
+![page497_img1.jpeg](images/page497_img1.jpeg)
+
+![page497_img2.jpeg](images/page497_img2.jpeg)
+
 ## Page 498
 
 19
@@ -34430,6 +34654,8 @@ Pseudoautosomal regions (PARs): - PAR1 (2.6 Mb at Xp/Yp tips): contains about 24
 gation - PAR2 (320 kb at Xq/Yq tips): smaller; crossover not required - Genes in PARs escape X-inactivation (expressed from both X chromosomes in females) -
 SHOX gene (in PAR1): Short stature homeobox; haploinsufficiency causes short stature in Turner syndrome; extra copies cause tall stature in sex chromosome
 497
+
+![page498_img1.jpeg](images/page498_img1.jpeg)
 
 ## Page 499
 
@@ -34492,6 +34718,8 @@ Molecular Mechanism of X-Inactivation
 1. XIST (X-inactive specific transcript): A 17 kb lncRNA transcribed primarily from the X that will be inactivated
 498
 
+![page499_img1.jpeg](images/page499_img1.jpeg)
+
 ## Page 500
 
 19
@@ -34531,6 +34759,8 @@ buffers cell-cycle gene dosage during proliferation.
 • Polycomb-mediated maintenance of dosage: Active and inactive states established at gene clusters (Hox genes, the imprinted regions of chromosome 15)
 are maintained through cell division by Polycomb (silencing) and Trithorax (activation) complexes, ensuring stable gene dosage in each tissue.
 499
+
+![page500_img1.jpeg](images/page500_img1.jpeg)
 
 ## Page 501
 
@@ -35044,6 +35274,10 @@ gametes carrying two sister copies of a single homolog. Centromere-region marker
 risk factors.
 507
 
+![page508_img1.jpeg](images/page508_img1.jpeg)
+
+![page508_img2.jpeg](images/page508_img2.jpeg)
+
 ## Page 509
 
 19
@@ -35118,6 +35352,8 @@ Deletion Syndromes
 Deletions remove chromosomal material and produce haploinsufficiency — one functional copy is not enough for normal function. Some
 classic deletion syndromes:
 508
+
+![page509_img1.jpeg](images/page509_img1.jpeg)
 
 ## Page 510
 
@@ -35587,6 +35823,8 @@ lution; NGSS-style topics: Inheritance and Variation of Traits, Natural Selectio
 • Transfer task: Apply population-genetic reasoning to screening, conservation, and pathogen evolution.
 516
 
+![page517_img1.jpeg](images/page517_img1.jpeg)
+
 ## Page 518
 
 20
@@ -35619,6 +35857,8 @@ set across loci.
 Allele and Genotype Frequencies
 For a biallelic locus with alleles A (frequency 𝑝) and a (frequency 𝑞):
 517
+
+![page518_img1.jpeg](images/page518_img1.jpeg)
 
 ## Page 519
 
@@ -35723,6 +35963,8 @@ Step 2: Calculate expected genotype frequencies under HWE.
 𝐸(𝑀𝑁) = 2𝑝𝑞× 1000 = 2(0.5425)(0.4575) × 1000 = 496.4
 (283)
 519
+
+![page520_img1.jpeg](images/page520_img1.jpeg)
 
 ## Page 521
 
@@ -35877,6 +36119,8 @@ Concept Check 18.2
 1. Why does selection against a recessive allele become slower as the allele frequency decreases?
 522
 
+![page523_img1.jpeg](images/page523_img1.jpeg)
+
 ## Page 524
 
 20
@@ -35912,6 +36156,8 @@ effective population size, causing lasting genetic effects.
 Effective Population Size (𝑁𝑒)
 𝑁𝑒is usually much smaller than census size 𝑁because:
 523
+
+![page524_img1.jpeg](images/page524_img1.jpeg)
 
 ## Page 525
 
@@ -36422,6 +36668,8 @@ Review Questions
 𝑠2 = 0.85 (cost of sickle cell disease in HbSS), calculate the equilibrium frequency of HbS.
 531
 
+![page532_img1.jpeg](images/page532_img1.jpeg)
+
 ## Page 533
 
 20
@@ -36629,6 +36877,8 @@ Key vocabulary introduced here: fitness, selection coefficient, genetic drift, e
 clock, phylogeny, clade, synapomorphy, allopatric speciation, sympatric speciation, neutral theory, molecular systematics, maximum likelihood,
 535
 
+![page536_img1.jpeg](images/page536_img1.jpeg)
+
 ## Page 537
 
 20
@@ -36828,6 +37078,8 @@ Haeckel’s biogenetic law (“ontogeny recapitulates phylogeny”) proposed tha
 formulation is an overstatement – development does not literally replay adult ancestral stages – the underlying observation remains valid: embryos of related
 539
 
+![page540_img1.jpeg](images/page540_img1.jpeg)
+
 ## Page 541
 
 21
@@ -36923,6 +37175,8 @@ This theorem implies that natural selection typically increases mean fitness (th
 populations under strong selection rapidly deplete additive genetic variance – the more efficiently selection operates, the faster it erodes its own fuel.
 541
 
+![page542_img1.jpeg](images/page542_img1.jpeg)
+
 ## Page 543
 
 21
@@ -36957,6 +37211,8 @@ The selection coefficient can be estimated from the rate of allele frequency cha
 Δ𝑡
 (321)
 542
+
+![page543_img1.jpeg](images/page543_img1.jpeg)
 
 ## Page 544
 
@@ -37578,6 +37834,8 @@ space for dinosaur diversification.
 may have contributed to pre-impact stress.
 553
 
+![page554_img1.jpeg](images/page554_img1.jpeg)
+
 ## Page 555
 
 21
@@ -38022,6 +38280,8 @@ By the end of this chapter, you should be able to:
 6. Explain allopatric, peripatric, parapatric, and sympatric speciation mechanisms, including the role of polyploidy and adaptive radiation.
 561
 
+![page562_img1.jpeg](images/page562_img1.jpeg)
+
 ## Page 563
 
 22
@@ -38119,6 +38379,8 @@ Unequal sex ratio: If the number of breeding females (𝑁𝑓) differs from the
 4𝑁𝑚
 (329)
 563
+
+![page564_img1.jpeg](images/page564_img1.jpeg)
 
 ## Page 565
 
@@ -38587,6 +38849,8 @@ ocean, ice sheet, river) divides a population, preventing gene flow. The isolate
 to different local environments) and genetic drift, eventually accumulating enough differences that reproductive isolation is a byproduct of divergence.
 571
 
+![page572_img1.jpeg](images/page572_img1.jpeg)
+
 ## Page 573
 
 22
@@ -38751,6 +39015,8 @@ species-specific sperm-egg binding
 prevents cross-fertilization
 574
 
+![page575_img1.jpeg](images/page575_img1.jpeg)
+
 ## Page 576
 
 22
@@ -38844,6 +39110,8 @@ solely by color can hybridize when visual cues are disrupted by turbidity.
 • Rapid speciation: Genetic divergence between species is often minimal, suggesting that speciation was driven primarily by sexual selection and ecological
 specialization rather than accumulated genetic distance.
 576
+
+![page577_img1.jpeg](images/page577_img1.jpeg)
 
 ## Page 578
 
@@ -39118,6 +39386,8 @@ Figure 137. Molecular-clock divergence times from 𝑡= 𝑑/(2𝑚𝑢). Larger
 smaller divergences yield shorter estimates when the rate 𝑚𝑢is held constant.
 582
 
+![page583_img1.jpeg](images/page583_img1.jpeg)
+
 ## Page 584
 
 23
@@ -39200,6 +39470,8 @@ particular clade within vertebrates – it is a symplesiomorphy for any subgroup
 Autapomorphy: A unique derived character found in a single taxon. Feathers are an autapomorphy of Aves (or more precisely, of Maniraptora within the dinosaur
 phylogeny, though some non-avian maniraptorans also had feathers).
 584
+
+![page585_img1.jpeg](images/page585_img1.jpeg)
 
 ## Page 586
 
@@ -39329,6 +39601,8 @@ C
 —
 0.12
 586
+
+![page587_img1.jpeg](images/page587_img1.jpeg)
 
 ## Page 588
 
@@ -40050,6 +40324,8 @@ The molecular phylogeny contradicts earlier morphology-based classifications tha
 humans. DNA data unambiguously place humans within the great apes, as the sister taxon of Pan.
 598
 
+![page599_img1.jpeg](images/page599_img1.jpeg)
+
 ## Page 600
 
 23
@@ -40475,6 +40751,8 @@ print(f"Growth rate: {growth.growth_rate_per_hr:.2f} h⁻¹")
 # Growth rate: 2.08 h⁻¹
 605
 
+![page606_img1.jpeg](images/page606_img1.jpeg)
+
 ## Page 607
 
 23
@@ -40561,6 +40839,8 @@ Bacteria, Archaea, and Viruses
 Introduction to Biology
 Figure 142. Bacterial growth curve: four phases (lag, exponential, stationary, death) plotted as log(cell number) versus time.
 608
+
+![page609_img1.jpeg](images/page609_img1.jpeg)
 
 ## Page 610
 
@@ -40781,6 +41061,8 @@ enters the cell) and propose an experiment using a P. aeruginosa MurA-knockout c
 responsible.
 611
 
+![page612_img1.jpeg](images/page612_img1.jpeg)
+
 ## Page 613
 
 24
@@ -40826,6 +41108,8 @@ Metabolic Diversity and Energy Harvesting
 Bacteria exhibit unparalleled metabolic diversity – far exceeding that of eukaryotes combined. This diversity is classified by energy source (photo- vs chemo-)
 and carbon source (auto- vs hetero-):
 612
+
+![page613_img1.jpeg](images/page613_img1.jpeg)
 
 ## Page 614
 
@@ -41106,6 +41390,8 @@ Key features that make TCSs central to bacterial biology: they are modular (HKs 
 fast (sub-second response), and there are typically 30–80 systems per genome, allowing combinatorial integration of many environmental signals. The minimal
 616
 
+![page617_img1.jpeg](images/page617_img1.jpeg)
+
 ## Page 618
 
 24
@@ -41181,6 +41467,8 @@ the strong selection for resistance that lytic antibiotics impose. Strategies in
 receptors; (4) PqsR antagonists (e.g., M64); (5) c-di-GMP signaling disruptors. Several are in early clinical trials (notably for P. aeruginosa in cystic fibrosis), though
 “anti-virulence” compounds face the challenge that they do not directly clear infection — they must work synergistically with antibiotics or host immunity.
 617
+
+![page618_img1.jpeg](images/page618_img1.jpeg)
 
 ## Page 619
 
@@ -41485,6 +41773,8 @@ to synthetic biology: bistable switches built from CI/Cro analogs (Gardner, Cant
 circuits — what does this reveal about the relationship between natural evolution and synthetic design?
 622
 
+![page623_img1.jpeg](images/page623_img1.jpeg)
+
 ## Page 624
 
 24
@@ -41656,6 +41946,8 @@ Figure 148. Antibiotic targets organized by cellular process (cell-wall synthesi
 mechanisms.
 625
 
+![page626_img1.jpeg](images/page626_img1.jpeg)
+
 ## Page 627
 
 24
@@ -41691,6 +41983,8 @@ scarcity [World Health Organization, 2024a]. The ESKAPE mnemonic remains a usefu
 tizes carbapenem-resistant Acinetobacter baumannii, carbapenem- or third-generation-cephalosporin-resistant Enterobacterales, drug-resistant Mycobacterium
 tuberculosis, and other pathogen-resistance pairs.
 626
+
+![page627_img1.jpeg](images/page627_img1.jpeg)
 
 ## Page 628
 
@@ -41753,6 +42047,8 @@ The CRISPR array is transcribed as a long pre-CRISPR RNA (pre-crRNA). Repeat seq
 • Type II: RNase III + tracrRNA (trans-activating crRNA) hybridizes with the repeat; Cas9 is then loaded with a single-guide RNA (sgRNA = crRNA +
 tracrRNA scaffold)
 627
+
+![page628_img1.jpeg](images/page628_img1.jpeg)
 
 ## Page 629
 
@@ -41992,6 +42288,8 @@ Bacterial cell wall polymer of NAG-NAM glycan strands cross-linked by tetrapepti
 beta-lactam antibiotics
 631
 
+![page632_img1.jpeg](images/page632_img1.jpeg)
+
 ## Page 633
 
 24
@@ -42185,6 +42483,8 @@ and Chao1 richness estimation.
 normalizing diversity comparisons.
 635
 
+![page636_img1.jpeg](images/page636_img1.jpeg)
+
 ## Page 637
 
 25
@@ -42300,6 +42600,8 @@ minimized (≤25) to reduce chimera formation; high-fidelity polymerases (Q5, Ph
 6. Taxonomic assignment — match representative sequences against reference databases (SILVA 138.2, Greengenes2, RDP) using naive Bayes (RDP classifier)
 or k-mer methods (VSEARCH); confidence threshold typically 80 % [Chuvochina et al., 2025].
 637
+
+![page638_img1.jpeg](images/page638_img1.jpeg)
 
 ## Page 639
 
@@ -42779,6 +43081,8 @@ Gut-Brain Axis
 The bidirectional communication network between the gut microbiome and the central nervous system operates through multiple channels:
 645
 
+![page646_img1.jpeg](images/page646_img1.jpeg)
+
 ## Page 647
 
 25
@@ -43089,6 +43393,8 @@ Bioremediation and Engineered Microbial Metabolism
 Microorganisms can be harnessed to degrade environmental pollutants:
 650
 
+![page651_img1.jpeg](images/page651_img1.jpeg)
+
 ## Page 652
 
 25
@@ -43245,6 +43551,8 @@ sample differences. Rarefaction curves diagnose sampling depth.
 species-level core but a large functional core; Akkermansia muciniphila, F. prausnitzii, B. fragilis, and Roseburia are keystone taxa. Microbial SCFAs
 (butyrate as colonocyte fuel, HDAC inhibitor, GPR109A agonist; propionate via GPR41/43; acetate as systemic fuel) signal through three GPCRs and
 653
+
+![page654_img1.jpeg](images/page654_img1.jpeg)
 
 ## Page 655
 
@@ -43507,6 +43815,8 @@ Figure 157. SIR epidemic model in a closed population. Susceptible individuals f
 declines—peak height and timing depend on the basic reproduction number 𝑅0.
 658
 
+![page659_img1.jpeg](images/page659_img1.jpeg)
+
 ## Page 660
 
 26
@@ -43549,6 +43859,8 @@ Capsules: Polysaccharide capsules (Streptococcus pneumoniae, Neisseria meningiti
 plement C3b deposition and obscuring surface antigens. The pneumococcal capsule has >90 serotypes, forming the basis for conjugate vaccine design (PCV13,
 PCV20).
 659
+
+![page660_img1.jpeg](images/page660_img1.jpeg)
 
 ## Page 661
 
@@ -43784,6 +44096,8 @@ Hereditary angioedema (HAE)
 Neisseria meningitidis and N. gonorrhoeae have evolved a remarkable trick — they bind host Factor H to their surface using factor H–binding protein (fHbp),
 mimicking self and inactivating alternative-pathway amplification. fHbp is now a target antigen in two licensed meningococcal-B vaccines (Bexsero, Trumenba).
 662
+
+![page663_img1.jpeg](images/page663_img1.jpeg)
 
 ## Page 664
 
@@ -44081,6 +44395,8 @@ BCR signaling; poorly understood effector
 function
 667
 
+![page668_img1.jpeg](images/page668_img1.jpeg)
+
 ## Page 669
 
 26
@@ -44124,6 +44440,8 @@ contraindicated in
 immunocompromised and
 pregnancy
 668
+
+![page669_img1.jpeg](images/page669_img1.jpeg)
 
 ## Page 670
 
@@ -44524,6 +44842,8 @@ and pandemic risk.
 PBP2a in MRSA and 23S rRNA methylation in MLS-resistant streptococci, reduced permeability, bypass pathways) and link each to specific drug classes.
 673
 
+![page674_img1.jpeg](images/page674_img1.jpeg)
+
 ## Page 675
 
 26
@@ -44557,6 +44877,8 @@ Connect pathogen life cycle to host response.
 Reproducibility check: identify pathogen, host population, transmission route, diagnostic window, intervention, and surveillance source before comparing dis-
 ease claims. Cross-reference: connect with section 24, sections 34 and 35, and sections 37 and 38.
 674
+
+![page675_img1.jpeg](images/page675_img1.jpeg)
 
 ## Page 676
 
@@ -45026,6 +45348,10 @@ Figure 165. Malaria vector-control comparison. Spatial emanators add an indoor a
 insecticide-resistance monitoring, and equity-aware deployment.
 681
 
+![page682_img1.jpeg](images/page682_img1.jpeg)
+
+![page682_img2.jpeg](images/page682_img2.jpeg)
+
 ## Page 683
 
 27
@@ -45220,6 +45546,8 @@ spectrum from MMR (single-dose lifetime immunity) to mRNA (rapid platform with 4
 (equation (354)) — measles requires > 93 %, polio about 80 %, original COVID-19 about 60 %, but Omicron-era 𝑅0 ∼10 combined with imperfect vaccine
 efficacy can exceed achievable coverage.
 685
+
+![page686_img1.jpeg](images/page686_img1.jpeg)
 
 ## Page 687
 
@@ -45551,6 +45879,8 @@ stomata, guard cell, photoperiodism, phytochrome, auxin, gibberellin, cytokinin,
 giosperm, gymnosperm, double fertilization.
 690
 
+![page691_img1.jpeg](images/page691_img1.jpeg)
+
 ## Page 692
 
 27
@@ -45655,6 +45985,8 @@ Figure 168. Plant water relations in two panels. Left: solute potential grows mo
 flux falls as external vapour approaches leaf interior and rises with stomatal conductance.
 693
 
+![page694_img1.jpeg](images/page694_img1.jpeg)
+
 ## Page 695
 
 28
@@ -45752,6 +46084,8 @@ Metaxylem differentiates after elongation has ceased. With no constraint on exte
 like), reticulate (net-like), or pitted thickenings. Metaxylem conduits are wider (50–500 𝜇m in some lianas), longer-lived, and bear the bulk of mature transpiration
 flux.
 695
+
+![page696_img1.jpeg](images/page696_img1.jpeg)
 
 ## Page 697
 
@@ -45890,6 +46224,8 @@ Concept Check 6: A seed at storage moisture has Ψ𝑚≈−100 MPa, Ψ𝑠≈�
 rapidly imbibed. Explain which component dominates the imbibition gradient and why imbibition is a one-way process.
 698
 
+![page699_img1.jpeg](images/page699_img1.jpeg)
+
 ## Page 700
 
 28
@@ -45989,6 +46325,8 @@ The cohesion-tension model is not without controversy, and its mature form repre
 Lines of supporting evidence:
 700
 
+![page701_img1.jpeg](images/page701_img1.jpeg)
+
 ## Page 702
 
 28
@@ -46022,6 +46360,8 @@ Mechanism of embolism repair: Two complementary mechanisms are now well-attested
 • Root pressure refilling: Active mineral secretion into xylem at night generates positive xylem pressure (0.05–0.5 MPa) sufficient to push water back into
 embolised conduits. Common in herbaceous species and in many trees overnight.
 701
+
+![page702_img1.jpeg](images/page702_img1.jpeg)
 
 ## Page 703
 
@@ -46160,6 +46500,8 @@ where 𝐴𝑛is net CO2 assimilation rate (𝜇mol CO2 m−2 s−1) and 𝑔�
 fixed per unit water transpired.
 C3, C4, and CAM trade-offs:
 704
+
+![page705_img1.jpeg](images/page705_img1.jpeg)
 
 ## Page 706
 
@@ -46521,6 +46863,8 @@ plastic loading via polymer trap (raffinose; many trees; many plasmodesmata; low
 symplastic vs apoplastic unloading varies by sink type.
 710
 
+![page711_img1.jpeg](images/page711_img1.jpeg)
+
 ## Page 712
 
 28
@@ -46705,6 +47049,8 @@ Systems Interactions; NGSS-style topics: Structure and Function, Matter and Ener
 • Practice cadence: Visual Representations, Questions and Methods, Argumentation.
 714
 
+![page715_img1.jpeg](images/page715_img1.jpeg)
+
 ## Page 716
 
 29
@@ -46741,6 +47087,8 @@ Haploid gametophyte (the leafy
 Free-living; nutritionally independent
 Water required (flagellated sperm swim)
 715
+
+![page716_img1.jpeg](images/page716_img1.jpeg)
 
 ## Page 717
 
@@ -46981,6 +47329,8 @@ Pollen wall layers:
 lenin is among the most chemically inert biopolymers known — it is essentially indestructible by acid, base, or enzymatic attack, allowing pollen to survive
 719
 
+![page720_img1.jpeg](images/page720_img1.jpeg)
+
 ## Page 721
 
 29
@@ -47205,6 +47555,8 @@ cues:
 Torenia LURE1/LURE2 attract pollen tubes specifically of the same species — the molecular basis of inter-species pollination barriers. LURE peptides
 bind PRK6 receptor kinases on the pollen tube tip, biasing tip growth toward the source.
 723
+
+![page724_img1.jpeg](images/page724_img1.jpeg)
 
 ## Page 725
 
@@ -47628,6 +47980,8 @@ Myrmecochory is seed dispersal by ants. Many seeds carry lipid-rich elaiosomes t
 discard the intact seed in nutrient-rich refuse or protected microsites. This mutualism has evolved repeatedly across flowering plants and is associated with
 diversification in several lineages, making ants both dispersal agents and selective partners in fruit/seed evolution [Lengyel et al., 2009].
 730
+
+![page731_img1.jpeg](images/page731_img1.jpeg)
 
 ## Page 732
 
@@ -48109,6 +48463,8 @@ Figure 180. Net photosynthesis light-response curves for C3-like and C4-like par
 saturation regions.
 738
 
+![page739_img1.jpeg](images/page739_img1.jpeg)
+
 ## Page 740
 
 30
@@ -48140,6 +48496,8 @@ the long-day photoperiod requirement
 Cytokinins and Cell Division Signals
 Biosynthesis: From adenine derivatives via IPT (isopentenyltransferase). Primarily synthesized in root tips and transported to shoots via xylem.
 739
+
+![page740_img1.jpeg](images/page740_img1.jpeg)
 
 ## Page 741
 
@@ -48302,6 +48660,8 @@ to the new lower (now downward-facing) face of the cell.
 the root tip back along the upper side of the elongation zone toward the shoot. Relocalization of PIN3 in columella cells biases auxin export toward
 the lower side, where PIN2 then carries it acropetally, accumulating auxin on the lower side of the elongation zone.
 742
+
+![page743_img1.jpeg](images/page743_img1.jpeg)
 
 ## Page 744
 
@@ -48497,6 +48857,8 @@ element (CME) upstream of the VIN3 promoter; VIN3 transcript accumulates primari
 vernalisation-specific PRC2 partner).
 3. PRC2 catalyses the trimethylation of histone H3 at lysine 27:
 746
+
+![page747_img1.jpeg](images/page747_img1.jpeg)
 
 ## Page 748
 
@@ -48858,6 +49220,8 @@ Tropism
 Directional growth response to an environmental stimulus
 753
 
+![page754_img1.jpeg](images/page754_img1.jpeg)
+
 ## Page 755
 
 30
@@ -49191,6 +49555,8 @@ messenger, cardiac output, stroke volume, preload, afterload, Frank-Starling law
 kinase, antigen, MHC, clonal selection, innate immunity, adaptive immunity.
 758
 
+![page759_img1.jpeg](images/page759_img1.jpeg)
+
 ## Page 760
 
 30
@@ -49301,6 +49667,8 @@ Figure 186. Hagen–Poiseuille law: volumetric blood flow versus vessel radius a
 flow sixteenfold—a key reason arteriolar constriction controls tissue perfusion.
 761
 
+![page762_img1.jpeg](images/page762_img1.jpeg)
+
 ## Page 763
 
 31
@@ -49346,6 +49714,8 @@ At a heart rate of 70 bpm, one cardiac cycle lasts about 0.8 seconds:
 – Isovolumetric contraction: Most valves closed, ventricular pressure rises rapidly
 – Ejection phase: Ventricular pressure exceeds aortic pressure (about 80 mmHg), aortic valve opens, blood ejected
 762
+
+![page763_img1.jpeg](images/page763_img1.jpeg)
 
 ## Page 764
 
@@ -49485,6 +49855,8 @@ remodeling. The 2024 PARADIGM-HF trials established ARNI (angiotensin receptor-n
 inhibition alone in HFrEF — neprilysin inhibition prolongs natriuretic peptides (ANP/BNP) while ARB blocks AT1.
 765
 
+![page766_img1.jpeg](images/page766_img1.jpeg)
+
 ## Page 767
 
 31
@@ -49607,6 +49979,8 @@ Figure 189. Oxygen–haemoglobin dissociation curves showing percent saturation 
 fetal-haemoglobin condition; compare loading in the lung with unloading in active tissue.
 768
 
+![page769_img1.jpeg](images/page769_img1.jpeg)
+
 ## Page 770
 
 31
@@ -49640,6 +50014,8 @@ At rest (P50 = 26 mmHg, 𝑃O2 = 40):
 1 + (40/26)2.7 = 3.32
 4.32 ≈0.77
 769
+
+![page770_img1.jpeg](images/page770_img1.jpeg)
 
 ## Page 771
 
@@ -49803,6 +50179,8 @@ Fick’s differential form
 barrier thickness varies, so clinicians use the lumped diffusing capacity 𝐷𝐿, which integrates the geometric and biochemical factors (Krogh’s diffusion constant,
 effective area, and effective thickness) into a single empirically measured coefficient:
 772
+
+![page773_img1.jpeg](images/page773_img1.jpeg)
 
 ## Page 774
 
@@ -50038,6 +50416,8 @@ mechanisms (vasoconstriction, shivering) to reach the new, higher set point. NSA
 Fluid and Electrolyte Homeostasis
 Renal regulation: The kidney filters about 180 L of plasma per day but excretes about 1.5 L urine.
 776
+
+![page777_img1.jpeg](images/page777_img1.jpeg)
 
 ## Page 778
 
@@ -50276,6 +50656,8 @@ Figure 193. Organization of the vertebrate nervous system. The CNS (brain and sp
 to the body. The autonomic NS has sympathetic, parasympathetic, and enteric subdivisions.
 781
 
+![page782_img1.jpeg](images/page782_img1.jpeg)
+
 ## Page 783
 
 32
@@ -50483,6 +50865,8 @@ Figure 194. Hodgkin–Huxley action-potential simulation showing a simulated mem
 as voltage-gated conductances change.
 785
 
+![page786_img1.jpeg](images/page786_img1.jpeg)
+
 ## Page 787
 
 32
@@ -50640,6 +51024,8 @@ and spatial summation of EPSPs and IPSPs determine whether threshold is reached.
 If the net depolarization at the axon hillock exceeds threshold (about −55 mV), an most-or-none action potential is generated, with the stereotyped Na+- and
 788
 
+![page789_img1.jpeg](images/page789_img1.jpeg)
+
 ## Page 790
 
 32
@@ -50724,6 +51110,8 @@ thalamus, promoting movement.
 • Indirect pathway (NoGo): Cortex excites striatum; striatum inhibits GPe; GPe normally inhibits STN; STN excites GPi/SNr. Net effect: increased GPi/SNr
 inhibition of thalamus, suppressing movement.
 790
+
+![page791_img1.jpeg](images/page791_img1.jpeg)
 
 ## Page 792
 
@@ -51278,6 +51666,8 @@ Introduction to Biology
 Figure 197. Nernst equilibrium potentials for major physiological ions (Na+, K+, Cl−, Ca2+) calculated from their inside/outside concentration gradients.
 801
 
+![page802_img1.jpeg](images/page802_img1.jpeg)
+
 ## Page 803
 
 33
@@ -51316,6 +51706,8 @@ membrane back toward E𝐾.
 • Afterhyperpolarisation (undershoot): n-gate slow to close. K+ efflux continues briefly, hyperpolarising membrane below resting potential (about −80 mV).
 This is the relative refractory period.
 802
+
+![page803_img1.jpeg](images/page803_img1.jpeg)
 
 ## Page 804
 
@@ -51491,6 +51883,8 @@ Synaptic Vesicle Pools
 A presynaptic terminal does not treat most its vesicles equivalently. Decades of imaging, electrophysiology, and FM dye experiments establish three functionally
 distinct pools that differ in their release-readiness, location, and mobilization kinetics:
 805
+
+![page806_img1.jpeg](images/page806_img1.jpeg)
 
 ## Page 807
 
@@ -51769,6 +52163,8 @@ fire models.
 Large-scale brain models:
 809
 
+![page810_img1.jpeg](images/page810_img1.jpeg)
+
 ## Page 811
 
 33
@@ -51967,6 +52363,8 @@ accumulates in synapse
 Abuse potential; local anaesthetic (Na+
 channel block)
 813
+
+![page814_img1.jpeg](images/page814_img1.jpeg)
 
 ## Page 815
 
@@ -52856,6 +53254,8 @@ Cortisol effects (anti-inflammatory gene program)
 • Gluconeogenesis (transactivation of PEPCK, G6Pase via GR; mobilizes amino acids from muscle protein catabolism)
 823
 
+![page824_img1.jpeg](images/page824_img1.jpeg)
+
 ## Page 825
 
 34
@@ -52889,6 +53289,8 @@ Stress vs basal regulation
 Under basal (non-stress) conditions, the HPA axis runs on its circadian/ultradian rhythm with tight negative feedback. The day’s
 cortisol output is roughly 10–20 mg/24 h.
 824
+
+![page825_img1.jpeg](images/page825_img1.jpeg)
 
 ## Page 826
 
@@ -53022,6 +53424,8 @@ Figure 204. Generic proportional negative feedback toward a set point (temperatu
 trigger stronger responses and the system converges without indefinite overshoot—the same logic applies to hormone axes such as the thyroid loop below.
 827
 
+![page828_img1.jpeg](images/page828_img1.jpeg)
+
 ## Page 829
 
 34
@@ -53109,6 +53513,8 @@ Solution.
 and delayed muscle uptake over 2–3 h are required — consistent with the biphasic insulin secretory response and sustained Akt signaling.
 829
 
+![page830_img1.jpeg](images/page830_img1.jpeg)
+
 ## Page 831
 
 34
@@ -53194,6 +53600,8 @@ indirectly via hepatic IGF-1, which mediates linear growth and protein synthesis
 GH from anterior pituitary somatotrophs: pulsatile release (peaks during deep sleep and exercise). GH binds the GH receptor (a JAK2-coupled cytokine receptor)
 831
 
+![page832_img1.jpeg](images/page832_img1.jpeg)
+
 ## Page 833
 
 34
@@ -53224,6 +53632,8 @@ NSAIDs inhibit at COX.
 34.5.2
 COX-1 vs COX-2 — distinct physiology
 832
+
+![page833_img1.jpeg](images/page833_img1.jpeg)
 
 ## Page 834
 
@@ -53480,6 +53890,8 @@ Endocrine Signaling and Homeostasis should leave a reproducible trail from a bio
 Use the surfaces below to inspect the chapter’s assumptions, rerun the relevant model, or compare the manuscript explanation with companion labs and figures.
 836
 
+![page837_img1.jpeg](images/page837_img1.jpeg)
+
 ## Page 838
 
 34
@@ -53529,6 +53941,8 @@ Figure 209. Components of innate immunity Physical barriers form the first line 
 infected cells, and interferons establish an antiviral state. Antigen-presenting cells bridge innate to adaptive immunity.
 Key innate immune cells:
 838
+
+![page839_img1.jpeg](images/page839_img1.jpeg)
 
 ## Page 840
 
@@ -53656,6 +54070,8 @@ from ER to ERGIC/Golgi, and recruits TBK1, which phosphorylates IRF3 →type I i
 branch.
 840
 
+![page841_img1.jpeg](images/page841_img1.jpeg)
+
 ## Page 842
 
 35
@@ -53704,6 +54120,8 @@ The classical, lectin, and alternative pathways each generate a C3 convertase (C
 C3b. C3b is deposited on the pathogen surface; binding of an additional C3b to the existing C3 convertase yields the C5 convertase (C4b2aC3b or C3bBbC3b)
 that cleaves C5 →C5a + C5b.
 841
+
+![page842_img1.jpeg](images/page842_img1.jpeg)
 
 ## Page 843
 
@@ -54495,6 +54913,8 @@ C4b2a (C3 convertase) →C3b deposition + C5 convertase (C4b2a3b) →C5b–9 (MA
 alternative pathway loops back through factor B and properdin to amplify C3b deposition on any surface lacking host regulators. (a) Trace the
 851
 
+![page852_img1.jpeg](images/page852_img1.jpeg)
+
 ## Page 853
 
 35
@@ -54636,6 +55056,8 @@ and combination strategy, with durable “tail of the curve” remissions in som
 acute lymphoblastic leukaemia and DLBCL; anti-BCMA for myeloma); CRS managed by tocilizumab.
 •
 854
+
+![page855_img1.jpeg](images/page855_img1.jpeg)
 
 ## Page 856
 
@@ -54951,6 +55373,8 @@ Computational Toolbox — Unit X
 from biology.ecology import logistic_growth, lotka_volterra
 859
 
+![page860_img1.jpeg](images/page860_img1.jpeg)
+
 ## Page 861
 
 35
@@ -55015,6 +55439,8 @@ and Evolution.
 • Primary lab: Lab — Population Ecology and Growth Models.
 • Question bank: Questions — Population Ecology and Growth Models.
 861
+
+![page862_img1.jpeg](images/page862_img1.jpeg)
 
 ## Page 863
 
@@ -55242,6 +55668,8 @@ age classes with highest 𝑣𝑥yields the greatest impact on population recove
 hence Turtle Excluder Devices (TEDs) in fishing nets target this life stage.
 864
 
+![page865_img1.jpeg](images/page865_img1.jpeg)
+
 ## Page 866
 
 36
@@ -55360,6 +55788,8 @@ Contact rate increases with density
 Distemper in Serengeti lions; COVID-19 in mink
 farms
 866
+
+![page867_img1.jpeg](images/page867_img1.jpeg)
 
 ## Page 868
 
@@ -55505,6 +55935,8 @@ Figure 218. Strong Allee-effect threshold dynamics. Initial population sizes bel
 toward carrying capacity.
 869
 
+![page870_img1.jpeg](images/page870_img1.jpeg)
+
 ## Page 871
 
 36
@@ -55547,6 +55979,8 @@ Two species sharing a limiting resource compete. The Lotka-Volterra competition 
 )
 (429)
 870
+
+![page871_img1.jpeg](images/page871_img1.jpeg)
 
 ## Page 872
 
@@ -55773,6 +56207,8 @@ L =
 ⎠
 (433)
 873
+
+![page874_img1.jpeg](images/page874_img1.jpeg)
 
 ## Page 875
 
@@ -56063,6 +56499,8 @@ trajectories.
 Age Structure and Population Pyramids
 The age structure of a population determines its future growth trajectory:
 878
+
+![page879_img1.jpeg](images/page879_img1.jpeg)
 
 ## Page 880
 
@@ -56446,6 +56884,8 @@ Figure 222. Shannon 𝐻′ and Simpson 1 −𝐷for two communities with the sa
 dominance distribution dominated by one grassland species.
 886
 
+![page887_img1.jpeg](images/page887_img1.jpeg)
+
 ## Page 888
 
 37
@@ -56596,6 +57036,8 @@ quenching
 Concept Check: A remora fish attaches to a shark, feeding on scraps from the shark’s meals. Is this mutualism, commensalism, or parasitism? What
 additional information would you need to determine the exact interaction type?
 888
+
+![page889_img1.jpeg](images/page889_img1.jpeg)
 
 ## Page 890
 
@@ -56832,6 +57274,8 @@ lice
 Reduce host fitness; can regulate population size
 892
 
+![page893_img1.jpeg](images/page893_img1.jpeg)
+
 ## Page 894
 
 37
@@ -56938,6 +57382,8 @@ Connell (1978): Communities at intermediate levels of disturbance frequency and 
 • High disturbance →primarily r-selected pioneers survive →low diversity
 • Intermediate →prevents competitive dominance while enabling diverse colonization
 894
+
+![page895_img1.jpeg](images/page895_img1.jpeg)
 
 ## Page 896
 
@@ -57235,6 +57681,8 @@ Low extinction, high immigration
 Visualizing Food Web Connectance and Modularity
 Figure 226. Food-web connectance and modularity shape stability: dense linkage can buffer single losses but spread disturbances, while modularity can confine perturbations.
 899
+
+![page900_img1.jpeg](images/page900_img1.jpeg)
 
 ## Page 901
 
@@ -57969,6 +58417,8 @@ Study Blueprint
 • Big idea: Ecosystems couple energy flow and matter cycling across organisms, environments, and time.
 912
 
+![page913_img1.jpeg](images/page913_img1.jpeg)
+
 ## Page 914
 
 39
@@ -58172,6 +58622,8 @@ consumer) eats herbivores with 10% efficiency, how much energy (g C/m2/yr) is av
 Concept Check (Synthesis — Cross-Unit Connection): Ecosystems can be understood through the lens of thermodynamics and information the-
 ory introduced in Unit 0 — Systems Science for Biology: Introduction. The free energy of a living system (its negentropy budget) is maintained
 915
+
+![page916_img1.jpeg](images/page916_img1.jpeg)
 
 ## Page 917
 
@@ -58510,6 +58962,8 @@ Key Climate Feedbacks
 CH4 release →more warming.
 919
 
+![page920_img1.jpeg](images/page920_img1.jpeg)
+
 ## Page 921
 
 39
@@ -58663,6 +59117,8 @@ Haber-Bosch process (1909; Fritz Haber, Nobel Prize 1918):
 This single industrial process has doubled global reactive nitrogen and enabled the feeding of about 4 billion additional people. It is arguably the most important
 chemical invention of the 20th century — and one of the most environmentally damaging.
 921
+
+![page922_img1.jpeg](images/page922_img1.jpeg)
 
 ## Page 923
 
@@ -59430,6 +59886,8 @@ CLORPT
 Jenny’s five soil-forming state factors: climate, organisms, relief, parent material, time
 933
 
+![page934_img1.jpeg](images/page934_img1.jpeg)
+
 ## Page 935
 
 39
@@ -59639,6 +60097,8 @@ Figure 232. Terrestrial biomes in mean annual temperature–precipitation space 
 temperate forest, savanna, desert, tundra, and marine reference sites are visually comparable.
 938
 
+![page939_img1.jpeg](images/page939_img1.jpeg)
+
 ## Page 940
 
 40
@@ -59839,6 +60299,10 @@ Figure 233. Coral bleaching responses can test heat-tolerant hosts, symbionts, o
 mitigation and reef-water-quality management \citep{noaa2025coralbleaching,strader2022coralheat}.
 Figure 234. Climate warming can move biome boundaries poleward or upslope, but threshold responses and local dispersal limits make shifts uneven rather than smooth.
 941
+
+![page942_img1.jpeg](images/page942_img1.jpeg)
+
+![page942_img2.jpeg](images/page942_img2.jpeg)
 
 ## Page 943
 
@@ -60118,6 +60582,8 @@ Franklin’s 50/500 Rule
 Franklin (1980) and Soule [1980]:
 945
 
+![page946_img1.jpeg](images/page946_img1.jpeg)
+
 ## Page 947
 
 40
@@ -60217,6 +60683,8 @@ Island Biogeography Applied to Conservation
 MacArthur-Wilson island biogeography theory provides the theoretical foundation for reserve design:
 Species-area relationship: 𝑆= 𝑐𝐴𝑧(see Community Ecology chapter for derivation)
 947
+
+![page948_img1.jpeg](images/page948_img1.jpeg)
 
 ## Page 949
 
@@ -60405,6 +60873,8 @@ genotypes to vulnerable reefs (Palumbi et al. 2014, Science) - Trees: moving sou
 migration of Pinus contorta in British Columbia)
 950
 
+![page951_img1.jpeg](images/page951_img1.jpeg)
+
 ## Page 952
 
 40
@@ -60451,6 +60921,8 @@ Visualizing Reserve Design Principles
 Figure 238. Reserve design compares connectivity, area, edge effects, and habitat uniqueness; large connected reserves and several smaller reserves solve different conservation
 problems.
 951
+
+![page952_img1.jpeg](images/page952_img1.jpeg)
 
 ## Page 953
 
@@ -60850,6 +61322,8 @@ post-intervention monitoring \citep{ipbes2024transformative,noaa2025coralbleachi
 40.15
 Key Terms
 958
+
+![page959_img1.jpeg](images/page959_img1.jpeg)
 
 ## Page 960
 

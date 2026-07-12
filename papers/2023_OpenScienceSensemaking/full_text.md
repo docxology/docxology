@@ -2,6 +2,8 @@
 
 > Extracted from `2023_OpenScienceSensemaking.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -371,6 +373,12 @@ bookmark, represented by the following fields (some may be optional):
 3Future versions should include more rigorous knowledge graph maintenance including entity disambiguation, version
 tracking, and linking
 6
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
 
 ## Page 7
 

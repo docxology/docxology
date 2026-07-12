@@ -2,6 +2,8 @@
 
 > Extracted from `2023_AntsAging.pdf`
 
+> 73 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -15,6 +17,12 @@ Death
 ?
 Death Be 
 Not Proud!
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
 
 ## Page 2
 
@@ -46,6 +54,8 @@ I don’t know about progress in reversing aging in humans.
 ○
 Today we can ask about what type or extent of “progress has been made in reversing aging” in ants.
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
 ## Page 3
 
 Roadmap
@@ -75,6 +85,10 @@ Totally fit 6-foot guys
 who are about 27 
 years old (!!!)
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
+![page5_img2.jpeg](images/page5_img2.jpeg)
+
 ## Page 6
 
 30+ year field study of Red Harvester Ants 
@@ -89,6 +103,16 @@ live 25+ years
 Probability of leaving 
 child colonies is ~flat 
 Ingram et al. 2013
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
+
+![page6_img4.jpeg](images/page6_img4.jpeg)
+
+![page6_img5.jpeg](images/page6_img5.jpeg)
 
 ## Page 7
 
@@ -148,6 +172,12 @@ What is Aging?
 Nestmate of Theseus? 
 Colony of Theseus?
 
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
+
 ## Page 9
 
 Why does biological 
@@ -158,11 +188,25 @@ Aging occur?
 GPT4
 DAF
 
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
+
+![page10_img3.jpeg](images/page10_img3.jpeg)
+
+![page10_img4.jpeg](images/page10_img4.jpeg)
+
 ## Page 11
 
 Kapheim 2018 
 Why does Aging happen in humans and ants?
 Aristotle’s Four Causes
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
+![page11_img2.jpeg](images/page11_img2.jpeg)
+
+![page11_img3.jpeg](images/page11_img3.jpeg)
 
 ## Page 12
 
@@ -190,6 +234,10 @@ made before, out of materials
 that are planned to last 
 decades not centuries
 Next we will use Tinbergen’s 4 Questions to explore Aging.
+
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
 
 ## Page 13
 
@@ -244,6 +292,10 @@ mammals, and
 humans, fit on 
 these scales?
 
+![page13_img1.jpeg](images/page13_img1.jpeg)
+
+![page13_img2.jpeg](images/page13_img2.jpeg)
+
 ## Page 14
 
 To explore the relation between reproduction and longevity, we compared gene expression during 
@@ -291,6 +343,12 @@ This is a large area, here we will just
 focus on Insulin signaling as an example
 “Insulin signaling in the long-lived 
 reproductive caste of ants”, Yan et al. 2022
+
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
 
 ## Page 15
 
@@ -344,6 +402,14 @@ further specific
 Utility or meaning 
 to Aging
 
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
+![page15_img2.jpeg](images/page15_img2.jpeg)
+
+![page15_img3.jpeg](images/page15_img3.jpeg)
+
+![page15_img4.jpeg](images/page15_img4.jpeg)
+
 ## Page 16
 
 Ants
@@ -356,6 +422,10 @@ discuss Kin Selection (KS) & Multi-Level Selection (MLS)
 What is the evolutionary 
 basis or account of aging?
 
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
+![page16_img2.jpeg](images/page16_img2.jpeg)
+
 ## Page 17
 
 -c
@@ -366,6 +436,14 @@ b
 “direct”
 “indirect”
 Kin Selection (KS)
+
+![page17_img1.jpeg](images/page17_img1.jpeg)
+
+![page17_img2.jpeg](images/page17_img2.jpeg)
+
+![page17_img3.jpeg](images/page17_img3.jpeg)
+
+![page17_img4.jpeg](images/page17_img4.jpeg)
 
 ## Page 18
 
@@ -384,6 +462,10 @@ troops, arguably satisfy these conditions.
 Extensive social interactions take place within such groups, but the groups are not 
 functionally integrated in the way that eusocial insect colonies are, for example.
 
+![page18_img1.jpeg](images/page18_img1.jpeg)
+
+![page18_img2.jpeg](images/page18_img2.jpeg)
+
 ## Page 19
 
 “Individual fitness” 
@@ -394,6 +476,14 @@ Group fitness (W) is primary
 2.
 Group fitness (W) is caused by group P, 
 and thus only indirectly on p and p’
+
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
+![page19_img2.jpeg](images/page19_img2.jpeg)
+
+![page19_img3.jpeg](images/page19_img3.jpeg)
+
+![page19_img4.jpeg](images/page19_img4.jpeg)
 
 ## Page 20
 
@@ -450,6 +540,22 @@ Ants
 Human
 Map 1
 
+![page22_img1.jpeg](images/page22_img1.jpeg)
+
+![page22_img2.jpeg](images/page22_img2.jpeg)
+
+![page22_img3.jpeg](images/page22_img3.jpeg)
+
+![page22_img4.jpeg](images/page22_img4.jpeg)
+
+![page22_img5.jpeg](images/page22_img5.jpeg)
+
+![page22_img6.jpeg](images/page22_img6.jpeg)
+
+![page22_img7.jpeg](images/page22_img7.jpeg)
+
+![page22_img8.jpeg](images/page22_img8.jpeg)
+
 ## Page 23
 
 Person
@@ -468,11 +574,37 @@ Huneman 2017
 Linksvayer 2015
 Friston et al. 2023
 
+![page23_img1.jpeg](images/page23_img1.jpeg)
+
+![page23_img2.jpeg](images/page23_img2.jpeg)
+
+![page23_img3.jpeg](images/page23_img3.jpeg)
+
+![page23_img4.jpeg](images/page23_img4.jpeg)
+
+![page23_img5.jpeg](images/page23_img5.jpeg)
+
+![page23_img6.jpeg](images/page23_img6.jpeg)
+
 ## Page 24
 
 Eusociality (from Greek εὖ eu "good" and social), 
 the highest level of organization of sociality, is 
 defined by the following characteristics…..
+
+![page24_img1.jpeg](images/page24_img1.jpeg)
+
+![page24_img2.jpeg](images/page24_img2.jpeg)
+
+![page24_img3.jpeg](images/page24_img3.jpeg)
+
+![page24_img4.jpeg](images/page24_img4.jpeg)
+
+![page24_img5.jpeg](images/page24_img5.jpeg)
+
+![page24_img6.jpeg](images/page24_img6.jpeg)
+
+![page24_img7.jpeg](images/page24_img7.jpeg)
 
 ## Page 25
 
@@ -487,6 +619,18 @@ Overlapping Contexts that
 lead up to the Pivotal 
 cognitive moment.
 
+![page25_img1.jpeg](images/page25_img1.jpeg)
+
+![page25_img2.jpeg](images/page25_img2.jpeg)
+
+![page25_img3.jpeg](images/page25_img3.jpeg)
+
+![page25_img4.jpeg](images/page25_img4.jpeg)
+
+![page25_img5.jpeg](images/page25_img5.jpeg)
+
+![page25_img6.jpeg](images/page25_img6.jpeg)
+
 ## Page 26
 
 Thank you for the 
@@ -494,6 +638,10 @@ Anttention & I will
 look forward to 
 continuing the 
 Discussion
+
+![page26_img1.jpeg](images/page26_img1.jpeg)
+
+![page26_img2.jpeg](images/page26_img2.jpeg)
 
 
 ---

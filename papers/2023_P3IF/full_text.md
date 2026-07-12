@@ -2,6 +2,8 @@
 
 > Extracted from `2023_P3IF.pdf`
 
+> 15 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -412,6 +414,8 @@ Maconachy, Schou, Ragsdale Model (MSR) [18], (E) Information Assurance cube (IAC
 Expanded MSR Cube (MSR_Expanded) [18],
 7
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 Figure 2. A representation of an apparent inconsistency in the documentation of the Federal
@@ -419,6 +423,8 @@ Enterprise Architecture Framework adapted from [19]. Here, 6 sub-architecture do
 in the documentation, but the sixth, “security”, does not appear to be a part of the same category
 with the other 5 listed domains in the visual model.
 8
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -500,6 +506,8 @@ shortened acronyms, and citations for each framework are provided in Table 1.
 
 Figure 3. View of the developed user interface [33].
 11
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
@@ -760,6 +768,8 @@ Table 2. Analysis Groups and the frameworks labeled.
 Figure 4. The 41 frameworks, generated over the decades, reflected a diversity of forms and settings.
 15
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Framework Analysis
@@ -782,6 +792,8 @@ Figure 5. Defense Systems Engineering frameworks. BELL, IAC, TISAF, MLM, TOGAF, 
 NAF, MODAF, DODAF, AIC.
 16
 
+![page17_img1.png](images/page17_img1.png)
+
 ## Page 18
 
 Figure 6. Enterprise frameworks. - MC, SOA C, DEARC, Archimate, TEAF, TISAF, FEAF-Early, FEAF, SOA
@@ -789,6 +801,10 @@ R, Zachman, IAF, MLM, TOGAF, TAFIM, C4ISR, DODAF.
 Figure 7. Government Requirements Engineering frameworks. TEAF, TISAF, FEAF-Early, FEAF,
 Zachman, C4ISR.
 17
+
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
 
 ## Page 19
 
@@ -799,6 +815,10 @@ could be confirmed.
 Figure 9. Military Science frameworks. DODAF, AIC, OODA, CWT, RUMSFELD, OSTROM, BOLTS.
 18
 
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
+
 ## Page 20
 
 Figure 10. Data and Cybersecurity frameworks. CWM, BELL, IAC, BPA, Rev_CIA, CIAS, CIA, NIST-CF,
@@ -807,6 +827,10 @@ SOA R.
 Figure 11. Interorganizational Collaboration Frameworks. DODAF, AIC, OODA, CWT, RUMSFELD,
 OSTROM, and BOLTS.
 19
+
+![page20_img1.png](images/page20_img1.png)
+
+![page20_img2.png](images/page20_img2.png)
 
 ## Page 21
 
@@ -1037,6 +1061,8 @@ Properties), and (iv) 3-dimensional with multiple implementations of the same di
 (top right, Processes by Perspectives by Perspectives)
 24
 
+![page25_img1.png](images/page25_img1.png)
+
 ## Page 26
 
 Parties which need streamlined navigation and communication of large volumes of
@@ -1106,6 +1132,10 @@ Figure 14. This cubic visualization presents Processes (Sourcing, Data, Analytic
 evaluated at the intersection of relevant BOLTS Perspectives (Business, Operations, Legal, Technical,
 Social).
 26
+
+![page27_img1.png](images/page27_img1.png)
+
+![page27_img2.png](images/page27_img2.png)
 
 ## Page 28
 
@@ -1239,6 +1269,8 @@ Perspectives (Business, Operations, Legal, Technical, Social). Cells in the figu
 continuum ranging from darker (Cyber/Data Security oriented) to lighter (Cognitive Security
 oriented).
 29
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 

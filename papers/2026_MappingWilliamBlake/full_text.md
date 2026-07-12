@@ -2,6 +2,8 @@
 
 > Extracted from `blake_working_paper.pdf`
 
+> 19 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.21047574
 June 29, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -249,6 +253,8 @@ Project Gutenberg
 12
 4
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 Table 2: Provider discovery health for the saved run. A provider failure is recorded as review evidence and does not imply that already
@@ -296,6 +302,8 @@ checked status table used for this manuscript.
 Figure 2: Reviewed source endpoints used by the acquisition and fallback-source audit. Rows record endpoint availability during this run;
 reachable status supports source review but does not by itself prove that a candidate title or object was acquired.
 5
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -446,6 +454,8 @@ coverage is 27.6%, and processing coverage is 100.0%. These are local-work metri
 target ledger.
 8
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 4.2
@@ -549,6 +559,8 @@ drawing
 5.6
 9
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 Work type
@@ -604,6 +616,10 @@ local records; object-, copy-, and impression-specific dating remains outside th
 Figure 6: Local evidence modalities across acquired corpus records. Bars separate text-plus-image, text-only, image-only, and metadata-only
 works, defining which material subset can support textual, visual, or cross-modal analysis in this run.
 11
+
+![page12_img1.png](images/page12_img1.png)
+
+![page12_img2.png](images/page12_img2.png)
 
 ## Page 13
 
@@ -681,6 +697,8 @@ Songs of Innocence
 0.289
 14
 12
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -792,6 +810,8 @@ Figure 8: Largest local text-bearing corpus records by word count. Bars measure 
 text files dominate aggregate vocabulary and theme diagnostics; works without local text are excluded.
 14
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 Figure 9: Vocabulary richness versus text length for local text-bearing records. Each point is one acquired transcription; the log-scaled
@@ -800,11 +820,17 @@ Figure 10: Stopword-filtered lexical signature for local transcriptions. Term an
 used elsewhere in the manuscript, so the denominator is the local text subset rather than unsourced Blake-wide vocabulary.
 15
 
+![page16_img1.png](images/page16_img1.png)
+
+![page16_img2.png](images/page16_img2.png)
+
 ## Page 17
 
 Figure 11: Latent text embedding from local transcriptions. The map projects 162 text-bearing corpus records from a 120-term TF-IDF
 matrix onto deterministic PCA/LSA axes; missing and image-only works do not enter this textual geometry.
 16
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -812,6 +838,8 @@ Figure 12: Theme frequencies in the generated work-theme graph.
 Bars count current local work-theme links from serialized analysis
 artifacts; the graph is an index over acquired evidence, not a settled thematic hierarchy for Blake’s complete oeuvre.
 17
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
@@ -871,11 +899,15 @@ For Children: The Gates of Paradise
 yes
 18
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 Figure 14: Text-image density across local text-bearing records. Each point is a work with local text; x encodes transcription length, y
 encodes linked local image files, and color encodes lexical density, so image-only works and remote-only objects remain outside this plot.
 19
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -2998,6 +3030,8 @@ Figure 15: Compact target-ledger evidence profiles for every work. Each tile rec
 local image count (I); copy-, plate-, and object-level completeness is shown separately in the image-depth figures.
 40
 
+![page41_img1.png](images/page41_img1.png)
+
 ## Page 42
 
 Figure 16: Archive object-image depth by work for the largest local image carriers. The gray bar records resolved Archive object candidates
@@ -3005,17 +3039,23 @@ and the green bar records downloaded local image files, so the denominator is di
 whole visual oeuvre.
 41
 
+![page42_img1.png](images/page42_img1.png)
+
 ## Page 43
 
 Figure 17: Archive object-image depth by target-ledger work area. Bars aggregate resolved Archive object candidates and downloaded local
 image files within each ledger category; catalog-only sources and non-Archive museum records are outside this image-depth denominator.
 42
 
+![page43_img1.png](images/page43_img1.png)
+
 ## Page 44
 
 Figure 18: Source-authority tiers for local work evidence. Counts distinguish Archive-primary work records from validated fallback text and
 legacy or corroborating records, making source authority visible before interpreting corpus-level aggregates.
 43
+
+![page44_img1.png](images/page44_img1.png)
 
 ## Page 45
 

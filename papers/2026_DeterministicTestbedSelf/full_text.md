@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Deterministic_972bc4e0.pdf`
 
+> 3 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -333,6 +335,8 @@ tioning four axes across three teams interleaves the descent. We make no speedup
 so that none would be honest.
 6
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 What the coordinated configuration does gain is search hygiene: it retires exhausted directions and stops, using only 36
@@ -395,6 +399,8 @@ The dead-end registry is the load-bearing mechanism for eﬀiciency. fig. 3 show
 that changes the experiment budget profile: the registry-consulting proposer otherwise never re-probes a retired direction
 7
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 (redundant re-probes = 0) and halts at 36 experiments once every direction is exhausted, while the no-registry configuration
@@ -421,6 +427,8 @@ halts at 36 rather than 60 experiments — with the clean answer unchanged.
 4. Effect-size ranking and reorganization are correctly implemented and ablatable, but do not by themselves change any
 measured quantity on this objective — a result we report rather than obscure.
 8
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 

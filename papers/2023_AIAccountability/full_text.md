@@ -2,6 +2,8 @@
 
 > Extracted from `2023_AIAccountability.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -38,6 +40,14 @@ legal, technical, and social (BOLTS) use-cases and risks. This submission is org
 (1) background information and basis, and (2) clear recommendations. The collaborating representatives
 have endeavored to keep this submission concise and policy-oriented, and attest that AI technologies are
 not responsible for the document.
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
+![page1_img3.png](images/page1_img3.png)
+
+![page1_img4.png](images/page1_img4.png)
 
 ## Page 2
 

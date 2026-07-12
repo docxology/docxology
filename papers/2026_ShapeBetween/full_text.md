@@ -2,6 +2,8 @@
 
 > Extracted from `the-shape-between.pdf`
 
+> 14 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -13,6 +15,8 @@ form
 
 Daniel Ari Friedman
 | | | DOI 10.5281/zenodo.21176000
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -37,6 +41,8 @@ families that make room; and for R. Buckminster Fuller's
 Synergetics, where triangular structure reveals how a
 square room can become steady.
 
+![page2_img1.png](images/page2_img1.png)
+
 ## Page 3
 
 The Square House
@@ -46,6 +52,8 @@ and lived in a family of cubes. They
 loved her angles, but the chairs,
 shelves, songs, and bedtime quilts all
 expected corners to arrive in fours.
+
+![page3_img1.png](images/page3_img1.png)
 
 ## Page 4
 
@@ -58,6 +66,8 @@ tnansjlos, snoir sjaiuniss slimose 19 poss,
 ancl Svary story i357 nowy sy stanicl on
 Snr selejos,
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 = The Valley That Turned
@@ -69,6 +79,8 @@ the pale half. Tetrahedra dreamed in the
 dark half. The border curved like a
 question neither family could answer
 alone.
+
+![page5_img1.png](images/page5_img1.png)
 
 ## Page 6
 
@@ -85,6 +97,8 @@ vn.
 
 c
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 The Tetrahedron Inside
@@ -98,6 +112,8 @@ strength flashed between them: a
 tetrahedron inside the cube, small and
 stable, teaching the room how to stand.
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 Mirror Families
@@ -110,6 +126,8 @@ place at the table. The tetrahedral
 
 family learned that a square could hold >
 a sky without losing its corners.
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -135,6 +153,8 @@ c
 aa
 Y
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 The Shadow School
@@ -147,6 +167,8 @@ teacher smiled: every shape has more
 than one truth when light moves around
 it.
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 The Tensegrity Lantern
@@ -157,6 +179,8 @@ pulled. Nothing touched the way the
 grown-ups expected, yet the little star
 held itself in balance and floated over
 the-valley.
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
@@ -170,6 +194,8 @@ that home was not a box or a point; it
 was a pattern of directions that could
 keep growing.
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 The Mega-Symbol
@@ -179,6 +205,8 @@ rose into a mega-symbol: square inside
 triangle, triangle inside square, dark
 carrying light, light carrying dark.
 
+![page13_img1.png](images/page13_img1.png)
+
 ## Page 14
 
 . The ShapeBetween,
@@ -187,6 +215,8 @@ homes Kept their own geometry, andthe
 space between them learned to glow.
 
 sdand Ci did not DAP
+
+![page14_img1.png](images/page14_img1.png)
 
 
 ---

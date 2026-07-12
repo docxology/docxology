@@ -2,6 +2,8 @@
 
 > Extracted from `act_inf_metaanalysis_v2_04-30-2026.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1281,6 +1283,8 @@ To directly address our core research questions—identifying which claims are r
 contested—we evaluated how the hypothesis-level evidence maps against the critiques introduced in §3. The eight
 18
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 hypotheses cluster into three tiers, defined by score ranges that emerge from the data rather than being imposed a priori.
@@ -1350,6 +1354,10 @@ orange), and neutral (blue) categories (𝑁= 1, 490 total assertions). Labels s
 The high support fractions are partially attributable to publication bias and aﬀirmative linguistic framing.
 20
 
+![page20_img1.png](images/page20_img1.png)
+
+![page20_img2.png](images/page20_img2.png)
+
 ## Page 21
 
 Figure 4:
@@ -1382,6 +1390,8 @@ validated ground truth calibration; confidence scores are self-assessed and unca
 threshold to mitigate over-extraction. Relative rankings are more robust than absolute scores. A formal validation
 protocol (10% manual annotation, Cohen’s 𝜅, boundary-case auditing) remains a critical next step.
 21
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -1421,6 +1431,8 @@ detailed in the dedicated citation network analysis (see the citation network an
 Domain Distribution
 Keyword-based classification assigns each paper to one of eight categories across three domains:
 22
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -1478,6 +1490,8 @@ Three structural features emerge from the cross-domain comparison (Figure 8). Fi
 inates: Domain B (Tools & Translation) accounts for 20.8% of the corpus, followed by C1 (Neuroscience) at 19.7%
 and C2 (Robotics) at 16.6%. Second, Domain A (Core Theory) aggregates 15.2% collectively (A1 + A2), while the
 23
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -1551,6 +1565,8 @@ Empirical validation
 [Kuchling et al., 2020]
 24
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 emergent application frontiers (C3–C5) exhibit accelerating growth. Third, A1’s 64 papers understate its intellectual
@@ -1558,6 +1574,8 @@ influence—the mathematical formalisms developed in A1 shape implementations ac
 Figure 8: Stacked area chart of publications by domain, 2005–2026 (𝑁= 819). A2 (qualitative philosophy) provides
 a large baseline; application domains C1–C5 show accelerating diversification from 2015 onward.
 25
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1819,6 +1837,8 @@ Figure 9: Top 10 terms per NMF topic (𝑘= 5 topics, 500 vocabulary features). 
 loadings; higher-weighted terms define each topic’s semantic focus.
 29
 
+![page29_img1.png](images/page29_img1.png)
+
 ## Page 30
 
 4.3.7
@@ -1850,6 +1870,8 @@ The co-occurrence matrix (Figure 14) for the 30 most frequent corpus terms revea
 corresponding to the NMF topics. The strong co-occurrence between “free,” “energy,” “principle,” and “bayesian”
 30
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 11: PCA projection of TF-IDF document embeddings (𝑁= 819 documents, 500 features), colored by domain.
@@ -1861,6 +1883,8 @@ form distinct off-diagonal blocks. The relative isolation of robotics-specific t
 the semantic separation between these application domains despite their shared theoretical foundation.
 31
 
+![page31_img1.png](images/page31_img1.png)
+
 ## Page 32
 
 Figure 12: Mean TF-IDF weight for the top 20 terms across all 8 domains. Darker cells indicate higher usage within a
@@ -1869,6 +1893,10 @@ Figure 13: Hierarchical clustering of domain centroids (Ward linkage on mean TF-
 correlation annotated on figure. A1 (formal theory) and A2 (philosophy) cluster closely, as do C2 (robotics) and B
 (tools).
 32
+
+![page32_img1.png](images/page32_img1.png)
+
+![page32_img2.png](images/page32_img2.png)
 
 ## Page 33
 
@@ -1895,6 +1923,8 @@ Component (GCC) typically dominates mature scientific networks; here, with 547 c
 GCC contains a minority of nodes while the remainder form singletons or small clusters of two to three papers. This
 33
 
+![page33_img1.png](images/page33_img1.png)
+
 ## Page 34
 
 Figure 15: Intra-corpus citation network (𝑁= 819 nodes, 2,176 edges).
@@ -1903,6 +1933,10 @@ intra-corpus citations received); highly cited foundational papers serve as nexu
 Figure 16: In-degree distribution of the citation network. The power-law tail is characteristic of citation networks,
 with a small number of highly cited hubs.
 34
+
+![page34_img1.png](images/page34_img1.png)
+
+![page34_img2.png](images/page34_img2.png)
 
 ## Page 35
 

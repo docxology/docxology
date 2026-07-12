@@ -2,6 +2,8 @@
 
 > Extracted from `2025_AntStackComplexity.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -682,6 +684,8 @@ tuation dominates at 96.5% of total power (360 mJ per 10 ms decision for 18-join
 processing operates at 4.2 × 108× above Landauer’s thermodynamic minimum (𝑘𝑇ln 2 ≈2.8 × 10−21
 6
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 J/bit). These speciﬁc gaps—6× in mechanical efﬁciency vs biological muscle, and 8 orders of magnitude in
@@ -962,6 +966,8 @@ Active Contact Points (𝐶): Ground contact constraints per decision cycle
 • Terrain-dependent range: 6-20 active contacts
 • Complexity scaling: 𝒪(𝐶1.5−3) depending on solver selection
 12
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -1336,6 +1342,8 @@ work as empirical evidence is collected):
 • FLOP Energy: 1.0 pJ per ﬂoating-point operation
 19
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 • Memory Access: SRAM (0.10 pJ/byte) and DRAM (20.0 pJ/byte) energy costs
@@ -1602,6 +1610,8 @@ validated through statistical analysis, provide guidance for parameter selection
 Statistical Analysis Framework: Scaling relationships are derived through log-log regression analysis with
 bootstrap conﬁdence intervals, providing statistical foundations. We employ goodness-of-ﬁt metrics and
 24
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1916,6 +1926,8 @@ essentially free in terms of energy cost.
 (View absolute ﬁle)
 31
 
+![page32_img1.png](images/page32_img1.png)
+
 ## Page 33
 
 Figure 5: Body energy partition
@@ -1943,30 +1955,42 @@ Caption: Pareto frontier analysis showing the trade-off between energy consumpti
 ing capacity in AntBrain. Performance is proxied by inverse AL input channels (1/K), representing information
 32
 
+![page33_img1.png](images/page33_img1.png)
+
 ## Page 34
 
 Figure 6: antbody energy scaling vs joint count (j)
 33
+
+![page34_img1.png](images/page34_img1.png)
 
 ## Page 35
 
 Figure 7: antbody energy scaling vs joint count (j) [scatter]
 34
 
+![page35_img1.png](images/page35_img1.png)
+
 ## Page 36
 
 Figure 8: pareto frontier (energy vs performance)
 35
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 
 Figure 9: antbrain energy scaling vs al channels (k)
 36
 
+![page37_img1.png](images/page37_img1.png)
+
 ## Page 38
 
 Figure 10: pareto frontier (energy vs performance)
 37
+
+![page38_img1.png](images/page38_img1.png)
 
 ## Page 39
 
@@ -1989,10 +2013,14 @@ limits for real-time active inference.
 (View absolute ﬁle)
 38
 
+![page39_img1.png](images/page39_img1.png)
+
 ## Page 40
 
 Figure 12: antmind energy scaling vs planning horizon (h_p)
 39
+
+![page40_img1.png](images/page40_img1.png)
 
 ## Page 41
 
@@ -2016,10 +2044,14 @@ Caption: Average per-decision (10 ms) energy components at 100 Hz. Mind compute 
 baseline is system idle.
 40
 
+![page41_img1.png](images/page41_img1.png)
+
 ## Page 42
 
 Figure 14: pareto frontier (energy vs performance)
 41
+
+![page42_img1.png](images/page42_img1.png)
 
 ## Page 43
 
@@ -2050,6 +2082,8 @@ Biological ants achieve CoT 0.1-0.3, indicating 6.4× optimization potential in 
 7.16
 Table: Per-Decision Complexity (Compute/Memory)
 42
+
+![page43_img1.png](images/page43_img1.png)
 
 ## Page 44
 

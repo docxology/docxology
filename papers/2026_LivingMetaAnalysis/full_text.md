@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Living_412d4fcf.pdf`
 
+> 18 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -672,6 +674,8 @@ transient adverse effects. This underpins its clinical acceptability relative to
 {{#fig:hypo
 13
 
+![page14_img1.png](images/page14_img1.png)
+
 ## Page 15
 
 10
@@ -716,6 +720,8 @@ Records distribute across the 6 configured subfields as shown in Table 2, with C
 at 64.3% of the classified corpus. The dominance of Clinical Sleep reflects the clinical primacy of modafinil as a
 14
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 wakefulness-promoting agent: the largest body of literature addresses its use in narcolepsy, shift-work disorder, and
@@ -745,10 +751,14 @@ Neuroscience
 {{#fig:field_
 15
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 {{#fig:subfield_d
 16
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -781,6 +791,8 @@ Papers
 11
 17
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 {{#fig:citat
@@ -808,6 +820,8 @@ PubMed
 American Journal of Psychiatry
 23
 18
+
+![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 
@@ -848,10 +862,14 @@ Gert Lubec
 15
 19
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 {{#fig:auth
 20
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -923,10 +941,14 @@ dimensional vector space. Embedding the same text twice yields identical vectors
 nearest-neighbour lists, clusters, and two-dimensional projection are all reproducible.
 22
 
+![page23_img1.png](images/page23_img1.png)
+
 ## Page 24
 
 {{#fig:pca_
 23
+
+![page24_img1.png](images/page24_img1.png)
 
 ## Page 25
 
@@ -936,6 +958,8 @@ Term Analysis
 The TF-IDF term heatmap reveals which terms discriminate between subfields: terms with high between-subfield
 variance (rather than high global mean) are selected for display.
 24
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -978,6 +1002,8 @@ MD
 IH
 88
 25
+
+![page26_img1.png](images/page26_img1.png)
 
 ## Page 27
 
@@ -1036,6 +1062,8 @@ doi:10.1111/j.1553-2712.2006.t
 1.0000
 26
 
+![page27_img1.png](images/page27_img1.png)
+
 ## Page 28
 
 Paper A
@@ -1065,16 +1093,22 @@ doi:10.1192/bjo.2024.75
 {{#fig:simil
 27
 
+![page28_img1.png](images/page28_img1.png)
+
 ## Page 29
 
 {{#fig:word
 28
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
 {{#fig:cooc
 These embeddings support semantic retrieval over the corpus and the visual map of the literature’s topical geography.
 29
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 
@@ -1167,6 +1201,10 @@ anchor the structure, while the long tail of low-degree nodes represents newer o
 density (0.18%) reflects the sparsity of intra-corpus citation links — most papers cite works outside the retrieved slice,
 which is expected for a max-results-capped retrieval.
 31
+
+![page32_img1.png](images/page32_img1.png)
+
+![page32_img2.png](images/page32_img2.png)
 
 ## Page 33
 

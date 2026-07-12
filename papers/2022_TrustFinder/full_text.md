@@ -2,6 +2,8 @@
 
 > Extracted from `2022_TrustFinder.pdf`
 
+> 20 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -62,6 +64,8 @@ In the TrustFinder environment, a Workspace can be populated with different
 classes of interconnected informational structures, each contributing to enrichment 
 of the rhetorical landscape. Below are the 10 primary classes of informational 
 elements.
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -267,6 +271,8 @@ import and export of digital goods (i.e., Workspace Objects).
 • Workspaces may be given their own sets of Entity Tag Types, Custom Tag 
 Types, Contribution Trust Scores, and Assertion Trust Scores.
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 TrustFinder 2022 
@@ -305,6 +311,8 @@ oriented Clearinghouses acting as “listening posts” waiting for exports to
 be made available. 
  
 Figure 2. Workspace relationships
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -369,6 +377,8 @@ was referencing the external Content?”).
  
 Figure 3. Reference relationships
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 TrustFinder 2022 
@@ -378,6 +388,10 @@ Figure 4. Content relationships
  
  
 Figure 5. Graphical representation of subcontent and annotation within content
+
+![page12_img1.png](images/page12_img1.png)
+
+![page12_img2.png](images/page12_img2.png)
 
 ## Page 13
 
@@ -400,6 +414,8 @@ Target, and Claim Relationship.
 Claim Relationship 
 A Claim Relationship adds context to a Claim Combinator. It is composed 
 of a Relationship Type, which describes the relationship between the Claim
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -477,6 +493,10 @@ purpose of conjecture, context, or collation (e.g., [“x is an integer”, “x
 number”, “x is a number less than 2”, “x is a number greater than 0”] -> supports -> 
 “x is equal to 1”).
 
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
+
 ## Page 16
 
 TrustFinder 2022 
@@ -501,6 +521,8 @@ with the contributing User’s measure of Certainty [0-1] about the Question Ins
 • A User may mark a Question Instance as Explicit or Implicit, in order to 
 indicate whether the Author of the Content is discussing the underlying 
 Question directly, or if the Question is latent or implied in the Content.
+
+![page16_img1.png](images/page16_img1.png)
 
 ## Page 17
 
@@ -608,6 +630,8 @@ details of a Custom Tag.
  
 Figure 11. User Communications relationships
 
+![page19_img1.png](images/page19_img1.png)
+
 ## Page 20
 
 TrustFinder 2022 
@@ -648,6 +672,8 @@ to calculate a respective CQ Annotation Score.
 Annotation Score (i.e., the set of all relevant Claim Instances 
 and Question Instances) for use in third-party curation or 
 scoring services.
+
+![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
@@ -710,6 +736,8 @@ individual
 User’s 
 contributions, it can also be calculated using a collection of Users
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 TrustFinder 2022 
@@ -753,6 +781,8 @@ of the set of contributions by each given User in the subject User’s invitatio
 the given User’s degree of separation (ui_d) as an input; and (iii) summing the results 
 for each User.
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 TrustFinder 2022 
@@ -792,6 +822,8 @@ the logical statement holds true given the set of Entity Tags associated with a 
 annotation contributed by the target of the rating, the standard rating will be 
 replaced by the defined replacement rating. This allows the marking of contextual 
 trust, where, for example, a physicist’s attempts to annotate Claim Instances within
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -1235,6 +1267,8 @@ TrustFinder 2022
 Figure 13. Graphical representation of relationships between claims as a basis for representation of 
 complex arguments, with example intensity ratings (“i”) for claim combinators.
 
+![page34_img1.png](images/page34_img1.png)
+
 ## Page 35
 
 TrustFinder 2022 
@@ -1335,6 +1369,8 @@ levels.
  
 Figure 14. Gradient of Common Ground 
 EOS - Entity Oriented Search
+
+![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
@@ -1507,6 +1543,8 @@ claim or warrant.
  
 Figure 15. (A) Toulmin’s Model of Argumentation and (B) an example implementation
 
+![page42_img1.png](images/page42_img1.png)
+
 ## Page 43
 
 TrustFinder 2022 
@@ -1550,6 +1588,8 @@ TrustFinder 2022
 43 
  
 Figure 16. (A) Stab-Guryvych Model for argument annotation and (B) an example implementation.
+
+![page44_img1.png](images/page44_img1.png)
 
 ## Page 45
 
@@ -1610,6 +1650,8 @@ arguments is heavily influenced by the analyst, given the often esoteric and
 ambiguous nature of multimodal content. Its largest limitation may be that its value 
 depends on the successful implementation of crowdsourcing solutions to annotate 
 content, tag entities. and provide feedback on analyses.
+
+![page46_img1.jpeg](images/page46_img1.jpeg)
 
 ## Page 47
 

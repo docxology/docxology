@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Bounded_e07b6285.pdf`
 
+> 28 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -37,6 +39,10 @@ Figure 1: Integrity QR strip
 Structured manifest: ../data/transmission_manifest.json
 Figure 2: Publication pairing flow
 Stego: off | overlays text | barcodes on | XMP on | manifest on →./secure_run.sh
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
 
 ## Page 2
 
@@ -430,6 +436,8 @@ test
 50
 10.0%
 
+![page8_img1.png](images/page8_img1.png)
+
 ## Page 9
 
 Split
@@ -607,6 +615,8 @@ stale generated…
 The exemplar does not sign
 build logs or isolate runners.
 
+![page10_img1.png](images/page10_img1.png)
+
 ## Page 11
 
 Figure 5:
@@ -647,6 +657,8 @@ versus publication approval, claim-evidence rows, source-ledger status, benchmar
 without granting approval. The generated tables and figure blocks used in sec. 4 are sourced through output/data/manuscript_va
 riable_provenance.json and output/data/manuscript_figure_blocks.json, so captions, artifact tables, and run-derived result
 statements share the same validated artifact base.
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
@@ -994,6 +1006,10 @@ bootstrap resampling shows how often each evaluated candidate ranks first under 
 top-rank frequency and mean-rank comparison. Registry metadata records the generation method, source artifact, and claim boundary
 for validation.
 
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
+
 ## Page 15
 
 Figure 8: Accepted-candidate confusion matrix for exp-mlp-tanh-64 on the fixed MNIST handwritten digit database test split, sourced
@@ -1004,6 +1020,10 @@ Figure 9: Per-class accuracy for exp-mlp-tanh-64, computed from output/data/ml_c
 a run diagnostic for the fixed local test split. Generation method: Per-class accuracy bars computed from the confusion matrix
 diagonal. Registry metadata records the generation method, source artifact, and claim boundary for validation.
 
+![page15_img1.png](images/page15_img1.png)
+
+![page15_img2.png](images/page15_img2.png)
+
 ## Page 16
 
 Figure 10: Epoch-level held-out accuracy curves for evaluated candidates from output/data/ml_training_history.csv; the accepted
@@ -1013,6 +1033,10 @@ Figure 11: Configured-training dynamics for evaluated candidates from output/dat
 is highlighted while best-epoch markers and train-test gaps remain bounded to the local run. Generation method: Final and best-
 epoch accuracy bars plus train-test gap bars. Registry metadata records the generation method, source artifact, and claim boundary
 for validation.
+
+![page16_img1.png](images/page16_img1.png)
+
+![page16_img2.png](images/page16_img2.png)
 
 ## Page 17
 
@@ -1038,6 +1062,10 @@ and claim boundary for validation.
 Figure 13: First accepted-candidate error examples for exp-mlp-tanh-64, sourced from output/data/ml_error_examples.json and
 data/mnist_small.npz; these images support qualitative diagnosis only. Generation method: Deterministic grid of the first accepted-
 candidate misclassifications. Registry metadata records the generation method, source artifact, and claim boundary for validation.
+
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
 
 ## Page 18
 
@@ -1162,11 +1190,15 @@ Gap
 97.4%
 0.8%
 
+![page18_img1.png](images/page18_img1.png)
+
 ## Page 19
 
 Figure 15: Reliability curve for exp-mlp-tanh-64 from output/data/ml_calibration_report.json; expected calibration error and bin
 counts summarize the accepted candidate on the fixed local test split. Generation method: Reliability curve with confidence-bin
 support histogram. Registry metadata records the generation method, source artifact, and claim boundary for validation.
+
+![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 
@@ -1176,6 +1208,10 @@ the generation method, source artifact, and claim boundary for validation.
 Figure 17: Top non-diagonal confusion pairs for exp-mlp-tanh-64, sourced from output/data/ml_classification_diagnostics.json; the
 bars highlight which local digit pairs account for accepted-candidate errors. Generation method: Ranked off-diagonal confusion-pair
 bars with true-class error rates. Registry metadata records the generation method, source artifact, and claim boundary for validation.
+
+![page20_img1.png](images/page20_img1.png)
+
+![page20_img2.png](images/page20_img2.png)
 
 ## Page 21
 
@@ -1366,6 +1402,8 @@ Figure 18: Train/test accuracy and loss for evaluated candidates from output/dat
 exposes local generalization gaps without claiming full-dataset behavior. Generation method: Grouped train/test accuracy and loss
 bars by evaluated candidate. Registry metadata records the generation method, source artifact, and claim boundary for validation.
 
+![page22_img1.png](images/page22_img1.png)
+
 ## Page 23
 
 Figure
@@ -1438,6 +1476,8 @@ Exact McNemar p
 Net accuracy gain
 6.8%
 
+![page23_img1.png](images/page23_img1.png)
+
 ## Page 24
 
 Figure 20: Confidence and prediction-margin histograms for exp-mlp-tanh-64 from output/data/ml_probability_diagnostics.json;
@@ -1447,6 +1487,10 @@ Figure 21: Deterministic percentile-bootstrap intervals for exp-mlp-tanh-64 from
 intervals summarize local sampling variation for accuracy and macro F1.
 Generation method: Horizontal percentile-bootstrap
 interval plot. Registry metadata records the generation method, source artifact, and claim boundary for validation.
+
+![page24_img1.png](images/page24_img1.png)
+
+![page24_img2.png](images/page24_img2.png)
 
 ## Page 25
 
@@ -1514,6 +1558,8 @@ Errors
 339
 6
 
+![page25_img1.png](images/page25_img1.png)
+
 ## Page 26
 
 Figure 23: Confidence-threshold trade-off for exp-mlp-tanh-64 from output/data/ml_statistical_summary.json; the plot compares
@@ -1524,6 +1570,10 @@ Figure 24: Brier score and negative log likelihood for evaluated candidates from
 values indicate better probability quality within the configured local run, and the accepted candidate is highlighted. Generation
 method: Brier score and negative-log-likelihood bar comparison. Registry metadata records the generation method, source artifact,
 and claim boundary for validation.
+
+![page26_img1.png](images/page26_img1.png)
+
+![page26_img2.png](images/page26_img2.png)
 
 ## Page 27
 
@@ -1782,6 +1832,10 @@ Benchmark grading
 output/data/benchmark_scores.json
 Benchmark grading
 621
+
+![page28_img1.png](images/page28_img1.png)
+
+![page28_img2.png](images/page28_img2.png)
 
 ## Page 29
 
@@ -2332,6 +2386,8 @@ output/data/ml_robustness_report.json
 output/data/ml_statistical_summary.json
 9
 
+![page32_img1.png](images/page32_img1.png)
+
 ## Page 33
 
 Source artifact
@@ -2548,6 +2604,8 @@ END OF TRANSMISSION
 Release: v0.3.2 ⋅DOI 10.5281/zenodo.20417016 ⋅SHA-256 537dd8a6ebc3… ⋅pairing complete
 Figure 28: Integrity QR strip
 Prior: No prior releases.
+
+![page39_img1.png](images/page39_img1.png)
 
 
 ---

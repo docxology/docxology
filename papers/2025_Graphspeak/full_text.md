@@ -2,6 +2,8 @@
 
 > Extracted from `graph.pdf`
 
+> 7 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -67,6 +69,10 @@ GraphSpeak
  
  
          <                >?
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
+![page2_img2.jpeg](images/page2_img2.jpeg)
 
 ## Page 3
 
@@ -398,6 +404,8 @@ onto
  
 Engine –[snug-onto][snug-chasis]- Chasis  - [snug-onto][snug-chasis] – Wheel = Car
 
+![page9_img1.jpeg](images/page9_img1.jpeg)
+
 ## Page 10
 
 side note that; 
@@ -448,6 +456,10 @@ Which could be workable (spot the similarity between disparity of %)
  
  
 .
+
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
+![page10_img2.jpeg](images/page10_img2.jpeg)
 
 ## Page 11
 
@@ -540,6 +552,8 @@ Therefore affording them to know which are the anchors
 Therefore affording both participants to know how to unfurl  
 / lengthen if needed
 
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
 ## Page 13
 
 Which is by intention 
@@ -616,6 +630,8 @@ To refine the data and compare it with a human sampled
 HANDSHAKE % 
 To then obtain which is more likely to be which 
 To then also apply / conjoin with other Transmutes
+
+![page15_img1.jpeg](images/page15_img1.jpeg)
 
 ## Page 16
 

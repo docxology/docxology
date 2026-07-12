@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Alphacogant_41efa7a8.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -16,6 +18,8 @@ ORCID: 0000-0001-6232-9096
 Tucker Cahill Chambers
 Atta Labs
 June 27, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -273,6 +277,8 @@ model inference under the firm filtration (sec. 5), derives the epistemic/pragma
 (sec. 6), and argues the integrity case (sec. 7).
 4
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 3
@@ -384,6 +390,8 @@ return vector, certificate) paired with its Active Inference object and the real
 with each pairing’s value computed by free_energy.marginal_return_vector.
 6
 
+![page7_img1.png](images/page7_img1.png)
+
 ## Page 8
 
 4
@@ -450,6 +458,8 @@ Figure 3: GNN factor graph of the five-channel firm: 5 hidden-state factors, lik
 (coupling 𝑆, Θ to loss 𝑜𝐿), per-factor transitions 𝐵𝑘over 6 actions, and the EFE objective block, with factor structure read from gen
 erative_model.default_model.
 8
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -526,6 +536,8 @@ Figure 4: The 𝐵Θ alpha-decay law: belief in fresh parameters traced over 12 
 0.4000) versus fund_Theta (freshness restored), with the transition read from generative_model.default_model.
 10
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 6
@@ -570,6 +582,8 @@ actions at the IMPROVING operating point. The greedy action (lowest G, highest v
 total G = -(pragmatic + epistemic) for each action. The waterfall makes visible why the greedy policy funds Θ when it is stale: the
 epistemic value of that funding is small in absolute terms, but the pragmatic cost is the least negative of any action.
 11
+
+![page12_img1.png](images/page12_img1.png)
 
 ## Page 13
 
@@ -616,6 +630,8 @@ trajectory — a policy that keeps refreshing Θ drives it toward zero, one that
 the two share no algebraic term, create can exceed decay (self-improvement) or fall below it (the firm bleeds). The engine’s tests
 12
 
+![page13_img1.png](images/page13_img1.png)
+
 ## Page 14
 
 /test_t_rsi.py::test_comparator_is_not_green_by_construction is the negative control that proves this: it certifies that the
@@ -651,6 +667,8 @@ y::test_comparator_is_not_green_by_construction enforces.
 Note the honest limitation, preserved from the headline above: once belief uncertainty is bootstrapped, the standardized t-RSI is
 13
 
+![page14_img1.png](images/page14_img1.png)
+
 ## Page 15
 
 negative at both points (the self-improving point reads -13.2552; the coasting point reads a large-magnitude -1843.4711, which is
@@ -668,6 +686,8 @@ posteriors are beliefs over two different processes, not draws from one null. Re
 create sits above decay” is a calibrated effort-allocation signal, not a p-value. The engine reflects this — it reports the separation
 and the pooled standard error, and leaves the threshold 𝛿as the firm’s risk choice rather than baking in a significance level [1, 17].
 14
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -971,6 +991,8 @@ realized by the boolean t_rsi.certificate(value, delta). The gate evaluates valu
 current belief, with no global guarantee assumed.
 19
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 10: Per-channel pragmatic and epistemic value from the EFE decomposition at the improving (stale-EWM) versus coasting
@@ -994,6 +1016,8 @@ channel histories, more observations per cycle), which sharpens the posterior an
 long as the certificate eq. 14 keeps clearing. The decomposition is the economic image of Active Inference’s positive feedback between
 acting, observing, and tightening belief.
 20
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -1075,12 +1099,18 @@ CIs overlapping zero show the reduced model’s
 inability to robustly certify improvement. Computed by statistics.compare_regimes.
 22
 
+![page23_img1.png](images/page23_img1.png)
+
+![page23_img2.png](images/page23_img2.png)
+
 ## Page 24
 
 Figure 13: Bootstrap create-rate vs decay-rate scatter at two operating points. Each point is one Dirichlet-perturbed belief; the
 diagonal is the break-even line (create = decay). ￿marks the mean. Computed by t_rsi.create_rate / t_rsi.decay_rate with
 n=2560 bootstrap perturbations.
 23
+
+![page24_img1.png](images/page24_img1.png)
 
 ## Page 25
 
@@ -1102,6 +1132,10 @@ action is the one selected each cycle. The value landscape shifts as beliefs mov
 learn); later cycles show convergence toward hold as the model freshens and the marginal value of further funding falls below the
 cost.
 24
+
+![page25_img1.png](images/page25_img1.png)
+
+![page25_img2.png](images/page25_img2.png)
 
 ## Page 26
 

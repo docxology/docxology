@@ -2,6 +2,8 @@
 
 > Extracted from `Blake_Bimetalism_DAF_v1_04032026.pdf`
 
+> 1 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1279,6 +1281,8 @@ structurally from the international Market Ratio (𝑅), the currency system und
 bimetallic equilibrium quadrant into the Gresham rupture zone. The 1816 Coinage Act enforced the terminal Urizenic
 amputation of silver, restricting token coinage to 40 shillings.
 23
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 

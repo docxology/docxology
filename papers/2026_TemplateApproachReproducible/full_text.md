@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Template_cc674248.pdf`
 
+> 7 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -36,6 +38,10 @@ Figure 1: Integrity QR strip
 Structured manifest: ../data/transmission_manifest.json
 Figure 2: Publication pairing flow
 Stego: off | overlays text | barcodes on | XMP on | manifest on →./secure_run.sh
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
 
 ## Page 2
 
@@ -1475,6 +1481,10 @@ from introspection snapshots.
 Figure 2. Pipeline DAG with 12 YAML-declared stages (core, LLM, bundle, archival tags).
 23
 
+![page25_img1.png](images/page25_img1.png)
+
+![page25_img2.png](images/page25_img2.png)
+
 ## Page 26
 
 Figure 3. File-count histogram for each infrastructure subdirectory.
@@ -1482,6 +1492,8 @@ Figure 3. File-count histogram for each infrastructure subdirectory.
 Comparative Feature Analysis
 Figure 4 summarizes the Appendix F capability matrix.
 24
+
+![page26_img1.png](images/page26_img1.png)
 
 ## Page 27
 
@@ -1499,6 +1511,8 @@ Test Quality Metrics
 • template_autoresearch_project exercises the AutoResearch readiness planner (infrastructure/a
 utoresearch/). template_search_project remains archive-only for literature-search workflows.
 25
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 
@@ -3027,6 +3041,8 @@ END OF TRANSMISSION
 Release: v1.0.7 ⋅DOI 10.5281/zenodo.20419007 ⋅SHA-256 pending… ⋅pairing pending
 Figure 3: Integrity QR strip
 Prior: No prior releases.
+
+![page53_img1.png](images/page53_img1.png)
 
 
 ---

@@ -2,6 +2,8 @@
 
 > Extracted from `InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf`
 
+> 2 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -557,6 +559,10 @@ team variability are shown as accessory dimensions to the primary two.
  
 Figure 2. From [74]. According to the authors, “This figure was drawn by William S. 
 Lind during the interview on 27 January 2005”. Lind was one of the most important
+
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
 
 ## Page 15
 

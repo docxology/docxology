@@ -97,55 +97,75 @@ def ocr_pdf(pdf_path, max_pages=None):
         return pages
 
 def extract_images(pdf_path, output_dir):
-    """Extract embedded images from a PDF using PyMuPDF."""
+    """Extract embedded images from a PDF using PyMuPDF.
+
+    Returns a list of (page_num, filename) tuples so the caller can
+    embed image references in the markdown at the correct page position.
+    """
     doc = fitz.open(str(pdf_path))
     extracted = []
-    
+
     for page_num in range(len(doc)):
         page = doc[page_num]
         image_list = page.get_images(full=True)
-        
+
         for img_index, img in enumerate(image_list):
             xref = img[0]
             try:
                 base_image = doc.extract_image(xref)
                 image_bytes = base_image["image"]
                 image_ext = base_image["ext"]
-                
+
                 # Skip tiny images (likely icons, bullets, etc.)
                 if len(image_bytes) < 1000:
                     continue
-                
+
                 # Skip very small dimensions
                 width = base_image.get("width", 0)
                 height = base_image.get("height", 0)
                 if width < 50 or height < 50:
                     continue
-                
+
                 filename = f"page{page_num + 1}_img{img_index + 1}.{image_ext}"
                 filepath = output_dir / filename
-                
+
                 # Only write if not already exists
                 if not filepath.exists():
                     filepath.write_bytes(image_bytes)
-                    extracted.append(filename)
+                extracted.append((page_num + 1, filename))
             except Exception:
                 continue
-    
+
     doc.close()
     return extracted
 
-def format_markdown(pages, title, pdf_name):
-    """Format extracted pages as markdown."""
+def format_markdown(pages, title, pdf_name, images=None):
+    """Format extracted pages as markdown.
+
+    If images (list of (page_num, filename)) is provided, embed image
+    references at the end of each page's text so readers and crawlers
+    can discover extracted figures in context.
+    """
+    # Group images by page
+    from collections import defaultdict
+    images_by_page = defaultdict(list)
+    if images:
+        for page_num, filename in images:
+            images_by_page[page_num].append(filename)
+
+    total_images = sum(len(v) for v in images_by_page.values())
+
     lines = [
         f"# Full Text: {title}",
         "",
         f"> Extracted from `{pdf_name}`",
         "",
-        "---",
-        "",
     ]
-    
+    if total_images:
+        lines.append(f"> {total_images} figures extracted to `images/`")
+        lines.append("")
+    lines += ["---", ""]
+
     for page_num, text in pages:
         if not text.strip():
             text = f"*[Page {page_num} appears to be blank or image-only]*"
@@ -153,7 +173,13 @@ def format_markdown(pages, title, pdf_name):
         lines.append("")
         lines.append(text.strip())
         lines.append("")
-    
+
+        # Embed image references for this page
+        page_imgs = images_by_page.get(page_num, [])
+        for img_filename in page_imgs:
+            lines.append(f"![{img_filename}](images/{img_filename})")
+            lines.append("")
+
     return "\n".join(lines)
 
 def process_paper(paper_dir, force=False):
@@ -210,17 +236,17 @@ def process_paper(paper_dir, force=False):
         else:
             return f"error: {e}"
     
+    # Extract images first so we can embed references in the markdown
+    images = extract_images(main_pdf, images_dir)
+
     if not pages:
         return "error: no text extracted"
-    
-    # Write full_text.md
-    md_content = format_markdown(pages, title, main_pdf.name)
+
+    # Write full_text.md with inline image references
+    md_content = format_markdown(pages, title, main_pdf.name, images=images)
     md_content += f"\n\n---\n*Extraction method: {method}*\n"
     full_text_path.write_text(md_content, encoding="utf-8")
-    
-    # Extract images
-    images = extract_images(main_pdf, images_dir)
-    
+
     return f"ok ({len(pages)} pages, {len(images)} images, {method})"
 
 def main():

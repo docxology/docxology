@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Policy_ae7cdd62.pdf`
 
+> 61 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1905,6 +1907,8 @@ while the per-stream marginals (side bars) remain symmetric. The inset residual 
 Uncertainty semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 25
 
+![page26_img1.png](images/page26_img1.png)
+
 ## Page 27
 
 Figure 2: The closed-form mutual information agrees with the empirical sampler to sweep tolerance
@@ -1917,6 +1921,8 @@ glement.Decomposition.entanglement_decomposition).
 Uncertainty semantics: deterministic grid or deterministic
 construction; no stochastic error bars are implied.
 26
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 
@@ -1950,6 +1956,8 @@ Nagaoka, 2000, Amari, 2016]:
 • e-aﬀine (exponential) coordinates: natural parameters 𝜃of an exponential family.
 27
 
+![page28_img1.png](images/page28_img1.png)
+
 ## Page 29
 
 Figure 4: Coupling pays off only when the utility surplus is large enough to overcome the multi-
@@ -1961,6 +1969,8 @@ Computed via lean.bernoulli_toy.ising_free_energy_curve on the 121-
 point sweep PARAMETER_SWEEP_LAMBDAS. Uncertainty semantics: deterministic grid or deterministic construction; no
 stochastic error bars are implied.
 28
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
@@ -2147,6 +2157,8 @@ with 𝐾𝑐≠0. Uncertainty semantics: deterministic grid or deterministic co
 implied.
 31
 
+![page32_img1.png](images/page32_img1.png)
+
 ## Page 33
 
 Figure 6: The K=2 Ising joint posterior, computed by lean.coupling.entangled_posterior on the 21-point linspace
@@ -2156,6 +2168,8 @@ departs the mean-field anchor (red star) at 𝜆= 0 and bends toward an archetyp
 in the simplex coordinates used here. Uncertainty semantics: deterministic grid or deterministic construction; no
 stochastic error bars are implied.
 32
+
+![page33_img1.png](images/page33_img1.png)
 
 ## Page 34
 
@@ -2297,6 +2311,8 @@ extracted by lean.spectral.schmidt_rank (atol = 1e-09) on the 81-point sweep SCH
 semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 35
 
+![page36_img1.png](images/page36_img1.png)
+
 ## Page 37
 
 Figure 8: Entanglement entropy 𝑆𝐸is zero on the mean-field manifold (𝜆= 0), grows with 𝜆, then
@@ -2307,6 +2323,8 @@ the visual marker of the mean-field submanifold. Computed on a 41×21 grid via l
 and lean.spectral.entanglement_entropy. Uncertainty semantics: deterministic grid or deterministic construction;
 no stochastic error bars are implied.
 36
+
+![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
@@ -2368,6 +2386,8 @@ dimensions {𝑟𝑑
 𝑘} are the rank of cross-cut entanglement.
 37
 
+![page38_img1.png](images/page38_img1.png)
+
 ## Page 39
 
 The Lean companion SpectralWitnesses.sparsityRank_tradeoff_witness is now live in the boundary fragment in
@@ -2408,6 +2428,8 @@ built via lean.coupling.entangled_posterior over simulation.builders.ising_coupl
 from lean.spectral.tensor_train_ranks (atol=1e-09). Uncertainty semantics: deterministic grid or deterministic
 construction; no stochastic error bars are implied.
 38
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 
@@ -2524,6 +2546,8 @@ is the Bregman / KL Taylor expansion, scoped to the Mathlib4 layer:
 witness *is* the existence of the quadratic envelope.
 Stock-Lean,
 40
+
+![page41_img1.png](images/page41_img1.png)
 
 ## Page 42
 
@@ -2719,6 +2743,8 @@ column traces the VFE-optimal coupling 𝜆⋆
 VFE(𝑢) — a numerical quantity that should not be conflated with the
 43
 
+![page44_img1.png](images/page44_img1.png)
+
 ## Page 45
 
 alignment-inversion formula Eq. (6.8) in §6, which inverts the alignment correspondence rather than minimizing free
@@ -2842,6 +2868,8 @@ toy.optimal_lambda(np.tanh(γ·u)) so the effective surplus is modulated by the 
 utility surplus and is amplified by larger EFE precision 𝛾, locating the comparative-statics surface of §11. Uncertainty
 semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 46
+
+![page47_img1.png](images/page47_img1.png)
 
 ## Page 48
 
@@ -3411,6 +3439,8 @@ monotone-decreasing curves at high utility, and the locus of 𝜆⋆is the color
 (cf. Eq. (6.8)).
 54
 
+![page55_img1.png](images/page55_img1.png)
+
 ## Page 56
 
 Figure 15: Coupling pays off only when the utility surplus is large enough to overcome the multi-
@@ -3422,6 +3452,8 @@ Computed via lean.bernoulli_toy.ising_free_energy_curve on the 121-
 point sweep PARAMETER_SWEEP_LAMBDAS. Uncertainty semantics: deterministic grid or deterministic construction; no
 stochastic error bars are implied.
 55
+
+![page56_img1.png](images/page56_img1.png)
 
 ## Page 57
 
@@ -3436,6 +3468,8 @@ optimal 𝜆⋆are separate from this alignment-inversion curve. Closed form fro
 evaluated on the 191-point sweep Δalign/Δmax ∈[−0.95, 0.95] (simulation.hyperparameters.OPTIMAL_LAMBDA_DELTAS).
 Uncertainty semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 56
+
+![page57_img1.png](images/page57_img1.png)
 
 ## Page 58
 
@@ -3452,6 +3486,8 @@ lean.heterogeneous.coupling_tax(...) (Lean companion ActinfPolicyEntanglement.He
 quadratic_bound). Uncertainty semantics: deterministic grid or deterministic construction; no stochastic error bars
 are implied.
 57
+
+![page58_img1.png](images/page58_img1.png)
 
 ## Page 59
 
@@ -3499,6 +3535,8 @@ Aligned-corner mass and the tensor- train rank profile at the sweep maximum are 
 k_summary.json: the first configured multi-K ensemble reaches aligned mass 0.9931 at 𝜆= 4 with maximum bond
 58
 
+![page59_img1.png](images/page59_img1.png)
+
 ## Page 60
 
 Figure 19: The free-energy landscape over (coupling, utility) shows 𝜆⋆tracking utility surplus. At low
@@ -3509,6 +3547,8 @@ Sampled on a 41 × 21 grid over 𝜆∈[0, 4], Δutil ∈[0, 2] (simulation.hype
 LAMBDAS, PHASE_LANDSCAPE_UTILITIES) using lean.bernoulli_toy.ising_free_energy_curve. Uncertainty semantics:
 deterministic grid or deterministic construction; no stochastic error bars are implied.
 59
+
+![page60_img1.png](images/page60_img1.png)
 
 ## Page 61
 
@@ -3522,6 +3562,8 @@ extracted by lean.spectral.schmidt_rank (atol = 1e-09) on the 81-point sweep SCH
 semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 60
 
+![page61_img1.png](images/page61_img1.png)
+
 ## Page 62
 
 Figure 21: Entanglement entropy 𝑆𝐸is zero on the mean-field manifold (𝜆= 0), grows with 𝜆, then
@@ -3533,6 +3575,8 @@ and lean.spectral.entanglement_entropy. Uncertainty semantics: deterministic gri
 no stochastic error bars are implied.
 61
 
+![page62_img1.png](images/page62_img1.png)
+
 ## Page 63
 
 Figure 22: The K=2 Ising joint at 𝜆= 2 concentrates probability on the two aligned policies (diagonal)
@@ -3542,6 +3586,8 @@ while the per-stream marginals (side bars) remain symmetric. The inset residual 
 𝜆= 2 (JOINT_HEATMAP_LAMBDA); panel layout from visualizations.joint_plots.plot_joint_heatmap_with_marginals.
 Uncertainty semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 62
+
+![page63_img1.png](images/page63_img1.png)
 
 ## Page 64
 
@@ -3560,6 +3606,10 @@ from lean.spectral.tensor_train_ranks (atol=1e-09). Uncertainty semantics: deter
 construction; no stochastic error bars are implied.
 63
 
+![page64_img1.png](images/page64_img1.png)
+
+![page64_img2.png](images/page64_img2.png)
+
 ## Page 65
 
 Figure 25:
@@ -3576,6 +3626,8 @@ with 𝐾𝑐≠0. Uncertainty semantics: deterministic grid or deterministic co
 implied.
 64
 
+![page65_img1.png](images/page65_img1.png)
+
 ## Page 66
 
 Figure 26: Coupling-potential graph for the symmetric 𝐾= 4 Ising ensemble built by simulation.builders.ising_-
@@ -3585,6 +3637,8 @@ CEREBRUM-style case-grammar couplings would manifest as edge-weight asymmetry.
 Uncertainty semantics:
 analytical schematic or structural visualization; no stochastic uncertainty interval is implied.
 65
+
+![page66_img1.png](images/page66_img1.png)
 
 ## Page 67
 
@@ -3620,6 +3674,8 @@ stationarity at the same tolerance) is the open discriminating hardening. Total 
 to final 0.5758 nats with mean 0.4456 across the 𝑇= 100 trajectory.
 66
 
+![page67_img1.png](images/page67_img1.png)
+
 ## Page 68
 
 Figure 28: Aligned-policy mass concentrates onto the two aligned diagonal corners {(0, … , 0), (1, … , 1)} as
@@ -3631,6 +3687,8 @@ by simulation.metrics.aligned_hypercube_mass within simulation.multi_k_experimen
 grid sourced from simulation.hyperparameters.MULTI_K_SWEEP_LAMBDAS. Uncertainty semantics: deterministic grid or
 deterministic construction; no stochastic error bars are implied.
 67
+
+![page68_img1.png](images/page68_img1.png)
 
 ## Page 69
 
@@ -3658,6 +3716,10 @@ seed is asserted by tests/test_long_horizon.py::test_long_horizon_deterministic_
 semantics: canonical fixed-seed trajectory; seed sensitivity is reported only where a replicate sidecar is registered.
 68
 
+![page69_img1.png](images/page69_img1.png)
+
+![page69_img2.png](images/page69_img2.png)
+
 ## Page 70
 
 Figure 31:
@@ -3677,6 +3739,8 @@ summary.json.
 Uncertainty semantics: canonical fixed-seed trajectory; seed sensitivity is reported only where a
 replicate sidecar is registered.
 69
+
+![page70_img1.png](images/page70_img1.png)
 
 ## Page 71
 
@@ -3732,6 +3796,8 @@ aligned coupling, and a heterogeneous small-tax 𝐾𝑐matrix share the same �
 structural ones: the 𝜆= 0 anchor is invariant, null coupling stays flat, non-null sign or role changes can still create
 70
 
+![page71_img1.png](images/page71_img1.png)
+
 ## Page 72
 
 Figure 33: One-axis-at-a-time robustness stress tests preserve the same coupling signature. The panels
@@ -3744,6 +3810,8 @@ output/data/robustness_summary.json.
 Uncertainty
 semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 71
+
+![page72_img1.png](images/page72_img1.png)
 
 ## Page 73
 
@@ -3758,6 +3826,10 @@ residual is 1.55e-15, below the validator tolerance 1e-09. This figure links the
 realization of Theorem 5.1 used in the main pymdp free-energy bundle. Uncertainty semantics: deterministic grid
 or deterministic construction; no stochastic error bars are implied.
 72
+
+![page73_img1.png](images/page73_img1.png)
+
+![page73_img2.png](images/page73_img2.png)
 
 ## Page 74
 
@@ -3799,6 +3871,8 @@ for the test-infrastructure gate; Lean 4 [de Moura and Ullrich, 2021] hosts the 
 under lean/ActinfPolicyEntanglement/, while Mathlib [Community, 2020] is reserved for the separate optional
 73
 
+![page74_img1.png](images/page74_img1.png)
+
 ## Page 75
 
 Figure 37: A fixed-marginal null control removes the dependence signal while preserving each stream’s
@@ -3826,6 +3900,10 @@ summary.json. Uncertainty semantics: deterministic grid or deterministic constru
 implied.
 74
 
+![page75_img1.png](images/page75_img1.png)
+
+![page75_img2.png](images/page75_img2.png)
+
 ## Page 76
 
 Figure 39: Long-horizon replicate sidecars preserve the canonical figure while reporting seed sensitivity.
@@ -3847,6 +3925,10 @@ in output/data/long_horizon_replicates_summary.json; the minimum margin to the c
 Data: output/simulations/pymdp_long_horizon_seed_diagnostics.csv. Uncertainty semantics: configured replicate-
 seed sidecar; envelope width reflects seed sensitivity.
 75
+
+![page76_img1.png](images/page76_img1.png)
+
+![page76_img2.png](images/page76_img2.png)
 
 ## Page 77
 
@@ -3906,6 +3988,8 @@ against the first-order Lipschitz bound 𝜆𝜀Var𝑞𝜆(𝐽)1/2. The first-
 where the linearization saturates — a regime the sidecar surfaces rather than absorbs.
 76
 
+![page77_img1.png](images/page77_img1.png)
+
 ## Page 78
 
 Figure 42: The Branching-Time AIF baseline runs end-to-end and emits the three tracked observables;
@@ -3930,6 +4014,10 @@ of scenarios (empirical Lipschitz constant 0.964; worst ratio 7.25). Source: scr
 output/data/adversarial_sweep.json. Uncertainty semantics: deterministic grid or deterministic construction; no
 stochastic error bars are implied.
 77
+
+![page78_img1.png](images/page78_img1.png)
+
+![page78_img2.png](images/page78_img2.png)
 
 ## Page 79
 
@@ -4116,6 +4204,8 @@ Proposition 7.3 inside a grounded POMDP. Uncertainty semantics: deterministic gr
 no stochastic error bars are implied.
 80
 
+![page81_img1.png](images/page81_img1.png)
+
 ## Page 82
 
 Figure
@@ -4140,6 +4230,8 @@ zero — exactly the outer-product baseline. Uncertainty semantics: deterministi
 no stochastic error bars are implied.
 81
 
+![page82_img1.png](images/page82_img1.png)
+
 ## Page 83
 
 Figure 46: Coupled joint at 𝜆= 2 (mid-grid sentinel of simulation.hyperparameters.PYMDP_SWEEP_LAMBDAS). The
@@ -4148,6 +4240,8 @@ onto aligned (0, 0)/(1, 1) corners; the m-projection residual is non-zero, confi
 greater than the mean-field rank-1). Uncertainty semantics: deterministic grid or deterministic construction; no
 stochastic error bars are implied.
 82
+
+![page83_img1.png](images/page83_img1.png)
 
 ## Page 84
 
@@ -4162,6 +4256,8 @@ archetypal modes (0, 0) and (1, 1) that share mass under the symmetric Ising cou
 Uncertainty semantics:
 deterministic grid or deterministic construction; no stochastic error bars are implied.
 83
+
+![page84_img1.png](images/page84_img1.png)
 
 ## Page 85
 
@@ -4202,6 +4298,8 @@ prose, tests, and figures can all point at the same values:
 𝜆] = ⟨log 𝑞𝑘−log 𝐸𝑘+ 𝛾𝐺𝑘⟩𝑞𝑘
 𝜆, in nats.
 84
+
+![page85_img1.png](images/page85_img1.png)
 
 ## Page 86
 
@@ -4288,6 +4386,8 @@ visualizations.metadata.figure_metadata. Uncertainty semantics: deterministic gr
 no stochastic error bars are implied.
 86
 
+![page87_img1.png](images/page87_img1.png)
+
 ## Page 88
 
 Figure
@@ -4316,6 +4416,8 @@ energy_bundle.csv artifact. Uncertainty semantics: deterministic grid or determi
 error bars are implied.
 87
 
+![page88_img1.png](images/page88_img1.png)
+
 ## Page 89
 
 Figure 51:
@@ -4337,6 +4439,10 @@ sum. Companion field on FreeEnergyBundle.efe_under_posterior (see §S7.4). Uncer
 grid or deterministic construction; no stochastic error bars are implied.
 88
 
+![page89_img1.png](images/page89_img1.png)
+
+![page89_img2.png](images/page89_img2.png)
+
 ## Page 90
 
 Figure 53:
@@ -4347,6 +4453,8 @@ Joint entropy 𝐻(𝑞𝜆) vs sum-of-marginal entropy ∑𝑘𝐻(𝑞𝑘
 with lean.joint_dist.joint_marginals on the simulation.inference.coupled_policy_posterior output. Uncertainty
 semantics: deterministic grid or deterministic construction; no stochastic error bars are implied.
 89
+
+![page90_img1.png](images/page90_img1.png)
 
 ## Page 91
 
@@ -4368,6 +4476,10 @@ Uncertainty semantics: deterministic grid or deterministic construction; no
 stochastic error bars are implied.
 90
 
+![page91_img1.png](images/page91_img1.png)
+
+![page91_img2.png](images/page91_img2.png)
+
 ## Page 92
 
 Figure 56: KL divergence 𝐷KL(𝑞𝜆‖ 𝑞0) of the coupled action distribution back to the mean-field baseline at 𝜆= 0,
@@ -4376,6 +4488,8 @@ anchor — complementary to the total-correlation curve. At 𝜆= 0 the divergen
 Computation: visualizations.pymdp_extras.plot_kl_to_lambda_zero. Uncertainty semantics: deterministic grid or
 deterministic construction; no stochastic error bars are implied.
 91
+
+![page92_img1.png](images/page92_img1.png)
 
 ## Page 93
 
@@ -4386,6 +4500,8 @@ joint is the total correlation 𝐼(𝑞𝜆) shown separately in Fig. 38. Compu
 marginal_entropy_per_stream. Uncertainty semantics: deterministic grid or deterministic construction; no stochastic
 error bars are implied.
 92
+
+![page93_img1.png](images/page93_img1.png)
 
 ## Page 94
 
@@ -4754,6 +4870,10 @@ under fixed seed is asserted by tests/test_simulation_pymdp.py::test_simulate_co
 under_fixed_seed. Uncertainty semantics: canonical fixed-seed trajectory; seed sensitivity is reported only where a
 replicate sidecar is registered.
 98
+
+![page99_img1.png](images/page99_img1.png)
+
+![page99_img2.png](images/page99_img2.png)
 
 ## Page 100
 
@@ -5127,6 +5247,8 @@ CEREBRUM-style case-grammar couplings would manifest as edge-weight asymmetry.
 Uncertainty semantics:
 analytical schematic or structural visualization; no stochastic uncertainty interval is implied.
 104
+
+![page105_img1.png](images/page105_img1.png)
 
 ## Page 106
 
@@ -8554,6 +8676,8 @@ role structure; the categorical substrate licenses the asymmetry but does not pr
 Lean 4 Boundary-Fragment Module Inventory
 Implementation status of lean/ActinfPolicyEntanglement/, Lean 4 v4.29.0 (cross-referenced from §12):
 140
+
+![page141_img1.png](images/page141_img1.png)
 
 ## Page 142
 

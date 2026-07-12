@@ -2,6 +2,8 @@
 
 > Extracted from `2024_DigitalTwins.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -80,6 +82,14 @@ This response is organized into two sections: (1) background information and bas
 clear, summary recommendations. The collaborating representatives have endeavored to
 keep this submission concise and policy-oriented, without sacrificing nuance.
 i
+
+![page2_img1.png](images/page2_img1.png)
+
+![page2_img2.png](images/page2_img2.png)
+
+![page2_img3.png](images/page2_img3.png)
+
+![page2_img4.png](images/page2_img4.png)
 
 ## Page 3
 

@@ -5,6 +5,14 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 ## 2026-07-12
 
 - Added work **#194 "Prior Cognitive Art"** (`zenodo.21316510`, `docxology/prior_cognitive_art` v0.1.0) via the canonical `sync_paired_publications.py --apply` path. Paper folder, bibliography row, work page, domain page, search index, sitemap, and all generated surfaces updated.
+- **Enhanced full-text extraction pipeline**: `extract_paper_texts.py` now embeds inline image references in `full_text.md` at the correct page positions, so readers and crawlers can discover extracted figures in context.
+  - **171 papers** now have `full_text.md` (was 166 — gained 5 from ODT/DOCX/PDF source extractions)
+  - **8,986 images** extracted across **139 papers** (was 3,057 across 136)
+  - **8,924 image references** embedded inline in `full_text.md` with 0 broken links
+  - Downloaded and extracted text from 4 Zenodo ODT/DOCX transcript files and 1 misnamed PDF
+  - `format_markdown()` now accepts an `images` parameter and groups image refs by page
+  - `extract_images()` now returns `(page_num, filename)` tuples for page-aware embedding
+- **Image sitemap expansion**: `build_image_sitemap.py` now includes paper-extracted figures in `sitemap-images.xml` (9,928 total images, was 942 — 139 paper pages with image galleries)
 - **Full-text extraction pipeline**: new `code/orchestrators/extract_paper_texts.py` extracts page-level text and embedded images from all paper PDFs using PyMuPDF (with OCR fallback via tesseract for scanned PDFs).
   - **166 papers** now have `full_text.md` with complete page-by-page text extraction
   - **3,057 images** extracted to per-paper `images/` subdirectories across **136 papers**

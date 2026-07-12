@@ -2,6 +2,8 @@
 
 > Extracted from `2024_CurioCards.pdf`
 
+> 27 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -349,6 +351,60 @@ CRO30
  23 
  22
  15
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
+
+![page1_img4.jpeg](images/page1_img4.jpeg)
+
+![page1_img5.jpeg](images/page1_img5.jpeg)
+
+![page1_img6.jpeg](images/page1_img6.jpeg)
+
+![page1_img7.jpeg](images/page1_img7.jpeg)
+
+![page1_img8.jpeg](images/page1_img8.jpeg)
+
+![page1_img9.jpeg](images/page1_img9.jpeg)
+
+![page1_img10.jpeg](images/page1_img10.jpeg)
+
+![page1_img11.jpeg](images/page1_img11.jpeg)
+
+![page1_img12.jpeg](images/page1_img12.jpeg)
+
+![page1_img13.png](images/page1_img13.png)
+
+![page1_img14.jpeg](images/page1_img14.jpeg)
+
+![page1_img15.jpeg](images/page1_img15.jpeg)
+
+![page1_img16.jpeg](images/page1_img16.jpeg)
+
+![page1_img17.png](images/page1_img17.png)
+
+![page1_img18.jpeg](images/page1_img18.jpeg)
+
+![page1_img19.jpeg](images/page1_img19.jpeg)
+
+![page1_img20.jpeg](images/page1_img20.jpeg)
+
+![page1_img21.jpeg](images/page1_img21.jpeg)
+
+![page1_img22.jpeg](images/page1_img22.jpeg)
+
+![page1_img23.jpeg](images/page1_img23.jpeg)
+
+![page1_img24.png](images/page1_img24.png)
+
+![page1_img25.jpeg](images/page1_img25.jpeg)
+
+![page1_img26.png](images/page1_img26.png)
+
+![page1_img27.jpeg](images/page1_img27.jpeg)
 
 
 ---

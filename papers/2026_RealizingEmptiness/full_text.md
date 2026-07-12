@@ -2,6 +2,8 @@
 
 > Extracted from `realizing_emptiness_combined.pdf`
 
+> 56 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -14,6 +16,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.20834847
 June 24, 2026
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
@@ -293,6 +297,10 @@ observation edge, and channel-role text show how b0-b5 function as software obse
 boundary claim that no node or edge is empirical, biological, ontological self/world, or physical qFEP evidence.
 4
 
+![page5_img1.png](images/page5_img1.png)
+
+![page5_img2.png](images/page5_img2.png)
+
 ## Page 6
 
 become cheap or costly under expected free energy. So a frame is unambiguously useful. But if two admissible partitions are
@@ -329,6 +337,8 @@ branching and avalanche signatures. Each mapped row is a finite software surroga
 a claim that the underlying physical or contemplative phenomenon has been realized. A generated row-by-row map from
 paper equations 1-14 to artifacts and gates is maintained in the equation crosswalk reference document.
 5
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -697,6 +707,8 @@ and contextuality engines support that chain and which stronger readings stay bl
 observer-boundary measurement, neural evidence, clinical evidence, or practice-eﬀicacy evidence.
 12
 
+![page13_img1.png](images/page13_img1.png)
+
 ## Page 14
 
 Figure 5: QRF invariance and policy-flow audit over the same finite screen.
@@ -708,6 +720,10 @@ Figure 6: Finite-quantum scope summary for the main Results. Matrix cell text li
 the hatched blocked column names empirical, observer-boundary, all-QRF-context, and physical qFEP claims that remain
 outside the evidence boundary.
 13
+
+![page14_img1.png](images/page14_img1.png)
+
+![page14_img2.png](images/page14_img2.png)
 
 ## Page 15
 
@@ -748,6 +764,8 @@ This does not make the BMR surface empirical, but it does separate brittle sign 
 keeps the same keep/prune direction over the sampled noise surface.
 14
 
+![page15_img1.png](images/page15_img1.png)
+
 ## Page 16
 
 Figure 8: Life-cycle of the separation prior’s net value, the change in free energy when the prior is removed, against metacog-
@@ -784,6 +802,8 @@ l_post_dual state) evolves under replayed observations and marked perturbation s
 it enters fig. 14. The supplemental runtime dashboard in fig. 49 reports the corresponding residuals and replay controls as
 15
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Figure 9: BMR free-energy components at high separation-prior precision. The lines show reduced-minus-full Delta F, Delta
@@ -795,6 +815,10 @@ energy. Cell color encodes Delta F = F_reduced - F_full and cell text gives the 
 finite model-comparison surrogate only.
 16
 
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img2.png](images/page17_img2.png)
+
 ## Page 18
 
 Figure 11: Sensitivity grid after averaging over observation-noise rows. Cell labels count how many noise rows favor PRUNE
@@ -804,6 +828,10 @@ Figure 12: BMR robustness resampling over the prior-precision/access grid. The l
 over noise rows and the right panel shows Delta-F sign stability with compact confidence intervals; both panels report finite
 software robustness only, not human self-model or practice-eﬀicacy claims.
 17
+
+![page18_img1.png](images/page18_img1.png)
+
+![page18_img2.png](images/page18_img2.png)
 
 ## Page 19
 
@@ -819,6 +847,10 @@ axes show a replayed finite trace rather than an empirical time series or eviden
 These profile comparisons (fig. 13) close the arc opened by the boundary screen (sec. 3.2), implementing each licensed sector
 frame as a distinct finite generative model rather than an asserted interpretation.
 18
+
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
 
 ## Page 20
 
@@ -983,6 +1015,8 @@ The finite quantum scope summary in sec. 4.2 and the technical supplement in sec
 while this section keeps physical, empirical, neural, clinical, and practice-eﬀicacy readings blocked.
 The resulting rule for reading the manuscript is simple but strict. Formal recapitulation means the local sentence is anchored to
 21
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -1379,6 +1413,10 @@ Modelling the boundary as a Markov chain from external world to blanket to inter
 data-processing inequality bounds the interior’s information about the external world by the blanket’s, with equality if and
 28
 
+![page29_img1.png](images/page29_img1.png)
+
+![page29_img2.png](images/page29_img2.png)
+
 ## Page 30
 
 only if the interior’s read-out of the blanket is a suﬀicient statistic [Cover and Thomas, 2006]. A suﬀicient (lossless) read-out
@@ -1411,6 +1449,8 @@ qutrit pair at one, while the explicit false-positive controls, separable produc
 are not detected on any cut. The suite is a finite linear-algebra witness over fixed states recorded in the multipartite witness
 29
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Figure 19: Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases. The line legend maps
@@ -1438,6 +1478,10 @@ positive. It is a finite deterministic relaxation surrogate, not a physical heat
 not empirical evidence.
 30
 
+![page31_img1.png](images/page31_img1.png)
+
+![page31_img2.png](images/page31_img2.png)
+
 ## Page 32
 
 Figure 21: Tensor-network matrix-product-state benchmark shown as two panels. Panel A bars encode the maximum bond
@@ -1451,6 +1495,10 @@ distance toward zero while the zero-coupling control leaves the final distance e
 control; the legend maps the initial and final bars. The figure is a finite deterministic collision surrogate, not a physical heat
 bath or thermodynamic measurement and not empirical evidence.
 31
+
+![page32_img1.png](images/page32_img1.png)
+
+![page32_img2.png](images/page32_img2.png)
 
 ## Page 33
 
@@ -1500,6 +1548,8 @@ empirical evidence.
 The n-cycle contextuality library generalizes the CHSH and triangle scenarios to a parameterized family of compatibility
 32
 
+![page33_img1.png](images/page33_img1.png)
+
 ## Page 34
 
 cycles [Araújo et al., 2013]. For each cycle length the same deterministic-assignment linear program tests whether a behavior
@@ -1535,6 +1585,8 @@ The convergence audit in fig. 31 varies trajectory count, compares against exact
 trajectory negative control to fail [Plenio and Knight, 1998].
 33
 
+![page34_img1.png](images/page34_img1.png)
+
 ## Page 35
 
 Figure 25: CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family. The scatter colorbar
@@ -1545,6 +1597,10 @@ and printed cell values encode joint probabilities by context and outcome, while
 negative control with the Bell cover against local and Tsirelson bounds; the figure supports only a finite no-signaling CHSH
 table, not a full sheaf-obstruction proof or empirical QRF result.
 34
+
+![page35_img1.png](images/page35_img1.png)
+
+![page35_img2.png](images/page35_img2.png)
 
 ## Page 36
 
@@ -1561,6 +1617,12 @@ dephasing rates across CHSH decay, global entropy increase, and mutual-informati
 trace-preserving finite dephasing-channel claim, not empirical evidence or full qFEP dynamics.
 35
 
+![page36_img1.png](images/page36_img1.png)
+
+![page36_img2.png](images/page36_img2.png)
+
+![page36_img3.png](images/page36_img3.png)
+
 ## Page 37
 
 Figure 30: Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate. Line legends compare Monte
@@ -1572,6 +1634,10 @@ residual across trajectory counts on a log-scaled axis, while the bar panel cont
 with the largest ensemble against the validation threshold; this checks stochastic software convergence, not physical qFEP
 realization or empirical quantum evidence.
 36
+
+![page37_img1.png](images/page37_img1.png)
+
+![page37_img2.png](images/page37_img2.png)
 
 ## Page 38
 
@@ -1605,6 +1671,10 @@ than a hand-tuned score, over seeded boundary-channel activity series drawn from
 A
 37
 
+![page38_img1.png](images/page38_img1.png)
+
+![page38_img2.png](images/page38_img2.png)
+
 ## Page 39
 
 Figure 34: Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts. The entropy colorbar
@@ -1620,6 +1690,12 @@ global-section and no-disturbance checks; the figure is a finite LP audit, not e
 paper.
 38
 
+![page39_img1.png](images/page39_img1.png)
+
+![page39_img2.png](images/page39_img2.png)
+
+![page39_img3.png](images/page39_img3.png)
+
 ## Page 40
 
 Figure 37: QRF transformation covariance audit for finite probability-preserving relabelings. The binary matrix colorbar
@@ -1632,6 +1708,10 @@ residuals for admissible unitary/permutation maps with a disclosed display floor
 only finite covariance checks, not full quantum-reference-frame physics.
 39
 
+![page40_img1.png](images/page40_img1.png)
+
+![page40_img2.png](images/page40_img2.png)
+
 ## Page 41
 
 Figure 39: Empirical adapter provenance audit showing that the human-evidence interface remains fail-closed. The colorbar
@@ -1642,6 +1722,10 @@ The binary colorbar and Y/N cell text encode whether each roadmap item has an ar
 and allowed manuscript claim; future rows remain blocked, so the figure is a roadmap governance audit, not evidence that
 the full qFEP or empirical adapters are implemented.
 40
+
+![page41_img1.png](images/page41_img1.png)
+
+![page41_img2.png](images/page41_img2.png)
 
 ## Page 42
 
@@ -1687,6 +1771,8 @@ profile-minus-null mean difference, bootstrap interval, permutation p-value, Hol
 large enough to survive the declared null comparison and which should be treated as weak or unstable simulation behavior.
 41
 
+![page42_img1.png](images/page42_img1.png)
+
 ## Page 43
 
 Figure 42: Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single
@@ -1698,6 +1784,10 @@ trajectory. The bar legend marks values as one simulated trace, and the stochast
 control result; neither figure is empirical evidence for neural criticality or contemplative realization.
 42
 
+![page43_img1.png](images/page43_img1.png)
+
+![page43_img2.png](images/page43_img2.png)
+
 ## Page 44
 
 Figure 44: Seeded stochastic profile-null effect-size audit for active-inference ensembles.
@@ -1706,6 +1796,8 @@ horizontal Cliff’s-delta bars, hatches identify Holm-adjusted nonsignificant c
 direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-
 higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-eﬀicacy evidence.
 43
+
+![page44_img1.png](images/page44_img1.png)
 
 ## Page 45
 
@@ -1750,6 +1842,8 @@ The scholarship layer is an executable source-role matrix, not a decorative bibl
 anifest.yaml records the primary preprint, qFEP foundations [Fields et al., 2022, Fields and Glazebrook, 2023], QRF
 and boundary background [Giacomini et al., 2019, Chen and Giacomini, 2026, Vanrietvelde et al., 2020, Bartlett et al.,
 44
+
+![page45_img1.png](images/page45_img1.png)
 
 ## Page 46
 
@@ -1975,6 +2069,8 @@ The pass/fail color legend makes the local language gate visible while preservin
 certify empirical truth.
 48
 
+![page49_img1.png](images/page49_img1.png)
+
 ## Page 50
 
 7.8.2
@@ -2014,6 +2110,8 @@ source map records figure IDs, paths, captions, alt text, visual encodings, sour
 layout telemetry for text overlaps, title collisions, cropped free-positioned text, and legend/axis collisions. The visual-caption
 49
 
+![page50_img1.png](images/page50_img1.png)
+
 ## Page 51
 
 Figure 48: Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-
@@ -2050,6 +2148,8 @@ method is not stronger because its figure is beautiful; it is stronger when its 
 inferences are inspectable.
 50
 
+![page51_img1.png](images/page51_img1.png)
+
 ## Page 52
 
 Figure 49: Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normal-
@@ -2077,6 +2177,8 @@ They define the current software boundary within which future visualization, emp
 can be developed without laundering unsupported claims.
 51
 
+![page52_img1.png](images/page52_img1.png)
+
 ## Page 53
 
 Figure 50: Scholarship coverage by source role and manuscript track. The binary colorbar encodes whether a source supports
@@ -2088,6 +2190,10 @@ proxy, and boundary claims; a support link licenses vocabulary or method scope o
 ceiling.
 52
 
+![page53_img1.png](images/page53_img1.png)
+
+![page53_img2.png](images/page53_img2.png)
+
 ## Page 54
 
 Figure 52: Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge
@@ -2098,12 +2204,18 @@ keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary ro
 silently change meaning; this is a visualization QA artifact, not a source of empirical evidence.
 53
 
+![page54_img1.png](images/page54_img1.png)
+
+![page54_img2.png](images/page54_img2.png)
+
 ## Page 55
 
 Figure 54: Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show
 whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls,
 making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence.
 54
+
+![page55_img1.png](images/page55_img1.png)
 
 ## Page 56
 
@@ -2112,6 +2224,8 @@ boundaries, and validation value bindings.
 The binary colorbar shows which statuses apply, including finite two-qubit
 quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated.
 55
+
+![page56_img1.png](images/page56_img1.png)
 
 ## Page 57
 

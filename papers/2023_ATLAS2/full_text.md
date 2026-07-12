@@ -2,6 +2,8 @@
 
 > Extracted from `ATLAS_V-1-2.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -273,6 +275,8 @@ Figure 1. Example Pattern in the COGSEC Community ATLAS, with questions generate
 result of dynamic typing as a “Practice”.
 4
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 ATLAS - 10.5281/zenodo.10362561
@@ -283,6 +287,10 @@ annotated as either Exploit or Remedy (these are practices that are either an ex
 a given setting).
 5
 
+![page7_img1.png](images/page7_img1.png)
+
+![page7_img2.png](images/page7_img2.png)
+
 ## Page 8
 
 ATLAS - 10.5281/zenodo.10362561
@@ -291,6 +299,8 @@ Vulnerability in the COGSEC ATLAS. Each item was a response to a question which 
 answers to an array, dynamically typing them and consequently generating new questions.
 Resulting visualization was referred to in the community as a “COGSEC ChillChain”.
 6
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -302,6 +312,10 @@ Figure 6. Snapshot of an automatic rendering of Parent-Child relationships of th
 “Perception Bias”. Perception Bias is a child of the more general “Cognitive Bias”, and has the
 child patterns at bottom of the image.
 7
+
+![page9_img1.png](images/page9_img1.png)
+
+![page9_img2.png](images/page9_img2.png)
 
 ## Page 10
 
@@ -567,6 +581,8 @@ of answers from the students contains information, (c) disagreement over answers
 students contains information.
 14
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 ATLAS - 10.5281/zenodo.10362561
@@ -580,6 +596,8 @@ definition, but are noted as an essential property of core ATLAS objects - becau
 an anonymous structure, they are referenced as an object as opposed to a String. Also included in
 the systems definition are designations for ATLAS instances capable of communicating.
 15
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -608,6 +626,8 @@ These containers are left flexible to allow DDOs to create or integrate any data
 structures appropriate for their use case. The kinds of Attributes associated with
 an Entity are held as a retrievable array of keys to allow for flexibility in
 16
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
@@ -665,6 +685,8 @@ Children
 Children holds an array of Pattern objects to which this Pattern object is a Parent.
 18
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 ATLAS - 10.5281/zenodo.10362561
@@ -688,6 +710,8 @@ information - any Entity which is provided as a response to the question might f
 “Organization” or “Publisher”. As such, the iQuery also functions as a generator, as Patterns
 contain “QKits”, or arrays of iQuery objects which should be attached to any Entity assigned
 19
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -798,6 +822,8 @@ identifying value.
 Methods
 22
 
+![page24_img1.png](images/page24_img1.png)
+
 ## Page 25
 
 ATLAS - 10.5281/zenodo.10362561
@@ -887,6 +913,8 @@ Figure 13. Schematic of interactions among Information Exchange Environments (IX
 Verified Information Exchange Environments (VIE).
 24
 
+![page26_img1.png](images/page26_img1.png)
+
 ## Page 27
 
 ATLAS - 10.5281/zenodo.10362561
@@ -963,6 +991,8 @@ Figure 14. Representation of the role of iQuery objects in dynamic typing of Ent
 routing of values resolving requests for information to Attributes.
 26
 
+![page28_img1.png](images/page28_img1.png)
+
 ## Page 29
 
 ATLAS - 10.5281/zenodo.10362561
@@ -986,6 +1016,8 @@ technical, and social groupings. Overall, the additional value offered by VIEs w
 “layer” of the ecosystem, offering greater regularity and choice to users in their information
 exchanges powered by a centralized and dynamic resource of the shared ATLAS infrastructure.
 27
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
@@ -1015,6 +1047,8 @@ necessary:
 unnecessary or erroneous information without necessarily having to delete any
 information or damage accessibility in the future.
 28
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 

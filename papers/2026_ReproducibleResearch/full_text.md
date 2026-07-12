@@ -2,6 +2,8 @@
 
 > Extracted from `template_daf_v1_03202026.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1260,6 +1262,8 @@ specified in the Quality Assurance section. In this way, the manuscript does not
 the pipeline it documents.
 21
 
+![page21_img1.png](images/page21_img1.png)
+
 ## Page 22
 
 Figure 1: Two-Layer Architecture separating the generic, reusable infrastructure layer (12 subpackages,
@@ -1283,6 +1287,10 @@ To contextualize template/’s contributions, we compare its feature set against
 full capability matrix (14 capabilities × 10 tools) is rendered as a colour-coded heatmap in Figure 4 and
 reproduced as a text table in Appendix F. Rows are grouped into three categories — Core Pipeline, Quality
 22
+
+![page22_img1.png](images/page22_img1.png)
+
+![page22_img2.png](images/page22_img2.png)
 
 ## Page 23
 
@@ -1311,6 +1319,8 @@ for graceful degradation.
 morphisms, composition, weight multiplication, and the triangle inequality on real enriched category
 objects.
 23
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 

@@ -2,6 +2,8 @@
 
 > Extracted from `cohereants_combined.pdf`
 
+> 16 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -999,6 +1001,8 @@ All theoretical expressions are implemented in src/ modules with comprehensive u
 • Edge conditions and boundary cases (empty arrays, extreme values)
 • Cross-platform reproducibility with fixed random seeds
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Figure 2: Representative sensilla dimensions and quarter-/half-wave resonance estimates from src.sensilla.analyze_sensilla_dimensions(
@@ -1050,6 +1054,8 @@ Three complementary experimental approaches are specified for hypothesis testing
 1. Single-Sensillum Electrophysiology:
 • Isolated sensilla under controlled IR illumination (2–25 𝜇m wavelength range)
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 Figure 3: CHC infrared spectrum fixture processed by analyze_chc_spectra(). Claim boundary: supports feature extraction and hypothesis
@@ -1083,6 +1089,8 @@ figures, and the template renderer consumes the manuscript sections.
 the local project gate.
 • Integration testing: End-to-end validation of complete analysis pipelines with artifact verification
 • Artifact verification: Automated checking of output file integrity and figure generation
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -1138,6 +1146,8 @@ align toward odor sources. This orientation optimizes electromagnetic coupling a
 Directional Properties: Sensilla exhibit properties consistent with directional antennas: - Beam Width: 15–30∘half-power
 beamwidth - Front-to-Back Ratio: 10-20 dB directional selectivity - Gain Pattern: Maximum sensitivity in the forward direc-
 tion
+
+![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -1238,6 +1248,8 @@ anisms.
 Quantum Effects (exploratory only): Some GPCR models explore weak-field sensitivity near quantum-critical regimes. Cohere-
 Ants treats THz-scale coupling terms as falsifiable placeholders pending receptor-level evidence; they are not used to claim operational
 quantum olfaction in insects.
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -2298,6 +2310,8 @@ vective heat [Lazzari, 2009, Chandel et al., 2024].
 3. Mutualism and mate recognition — thermogenic plant IR (cycads) and visual NIR opsins (dragonflies, butterflies) expand
 the IR relevance landscape without unifying transduction mechanism.
 Mechanistic diversity argues for IR detection as a recurrently co-opted modality rather than a single ancestral insect IR module.
+
+![page33_img1.png](images/page33_img1.png)
 
 ## Page 34
 
@@ -3770,6 +3784,8 @@ Cross-References
 Figure 7: Deterministic gradient-following trajectory under a simple active-inference step model. Claim boundary: behavioral demo only; not
 field data.
 
+![page51_img1.png](images/page51_img1.png)
+
 ## Page 52
 
 11
@@ -3825,6 +3841,8 @@ Cross‑references
 Figure 8: Detection limits analysis with ROC curves, SNR operating regions, noise floors, and range trade-offs for IR sensor bounds. Claim
 boundary: bounds sensor feasibility and model assumptions; does not establish biological IR olfaction.
 
+![page53_img1.png](images/page53_img1.png)
+
 ## Page 54
 
 12
@@ -3863,6 +3881,8 @@ Figure
 Figure 9: Environmental channel model with absorption, scattering, and capacity maps across humidity and temperature grids. Claim boundary:
 channel-capacity sensitivity demo under modeled clear/humid conditions; not a measured insect range.
 
+![page54_img1.png](images/page54_img1.png)
+
 ## Page 55
 
 Figure 10: Integrated information decomposition across molecular, receptor, neural, and environmental terms. Claim boundary: bounds sensor
@@ -3888,6 +3908,8 @@ Cross‑references
 • Methods: Section 2
 • Symbols: Section 9
 • Math appendix: Section 6
+
+![page55_img1.png](images/page55_img1.png)
 
 ## Page 56
 
@@ -3930,6 +3952,8 @@ model output only; does not establish biological IR olfaction.
 Equation references
 • Information rate: see (56)
 • Response time model: see (1)
+
+![page56_img1.png](images/page56_img1.png)
 
 ## Page 57
 
@@ -3995,10 +4019,14 @@ Cross‑references
 Figure 12: Plasmonic geometry sweep with Drude permittivity, Mie scattering, and near-field enhancement maps for receptor-scale sensor
 design. Claim boundary: bounds sensor feasibility and model assumptions; does not establish biological IR olfaction.
 
+![page59_img1.png](images/page59_img1.png)
+
 ## Page 60
 
 Figure 13: Integrated metamaterial dielectric and plasmonic response with information-capacity summaries. Claim boundary: engineering
 model panels only; does not establish biological IR olfaction.
+
+![page60_img1.png](images/page60_img1.png)
 
 ## Page 61
 
@@ -4056,6 +4084,8 @@ Cross‑references
 
 Figure 14: Sensilla array beam patterns, coupling, and morphology-to-resonance maps from antenna models. Claim boundary: bounds
 directional gain; not field proof of semiochemical IR olfaction.
+
+![page62_img1.png](images/page62_img1.png)
 
 ## Page 63
 
@@ -4116,9 +4146,13 @@ Cross‑references
 Figure 15: Synthetic CHC spectral unmixing and classification benchmarks with NMF/VCA/ICA panels. Claim boundary: algorithm
 evaluation; not species identification proof.
 
+![page64_img1.png](images/page64_img1.png)
+
 ## Page 65
 
 *[Page 65 appears to be blank or image-only]*
+
+![page65_img1.png](images/page65_img1.png)
 
 ## Page 66
 

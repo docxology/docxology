@@ -2,6 +2,8 @@
 
 > Extracted from `crescent_city_v1_DAF_05_19_2026.pdf`
 
+> 24 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -1090,6 +1092,8 @@ those on tectonically active margins?
 5. What does the persistence of the State of Jefferson movement, the Sasquatch tradition, and the broader “Klamath
 Knot” of regional folklore reveal about the cultural geography of rural-coastal America?
 
+![page9_img1.png](images/page9_img1.png)
+
 ## Page 10
 
 Crescent City, California
@@ -1206,6 +1210,8 @@ climate but cannot show fog drip, inland canyon inversions, or slope-scale expos
 precipitation and wet-day frequency peak in November-March, while mean temperature stays within a narrow maritime range and
 peaks in August (NOAA National Centers for Environmental Information, 2021).
 
+![page13_img1.png](images/page13_img1.png)
+
 ## Page 14
 
 Crescent City, California
@@ -1217,6 +1223,8 @@ Grade landslide segment, Tolowa Dee-ni’ traditional territory, Six Rivers Nati
 The evidence class is schematic regional geography: coordinates are approximate, boundaries are generalized, and the map is not
 survey-grade. The interpretive claim is orientation: spatial relationships recur throughout the text, but the figure does not define
 jurisdictional or cultural-resource boundaries.
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -1319,6 +1327,8 @@ variable ETS recurrence than northern segments, an asymmetry now under active in
 ocean-bottom seismometer program (Toomey et al., 2014). For Crescent City, the operational implication is that the
 southern margin is the most variable, and its ETS-loaded short-recurrence behavior may explain the disproportionately
 frequent appearance of the southern segment in the paleoseismic record.
+
+![page16_img1.png](images/page16_img1.png)
 
 ## Page 17
 
@@ -1475,6 +1485,8 @@ instruments, not one probability distribution. The interpretive claim is caution
 near-term relative rise compared with much of California, but sea-level planning still has to hold measured trends, projections,
 high-end stress tests, and coseismic-subsidence scenarios apart.
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Crescent City, California
@@ -1538,6 +1550,8 @@ That seasonality produces a different cold-water-fish ecology from the Sacrament
 groundwater inputs, coarse gravel, and relatively intact estuary help support one of the most productive nearshore salmon
 nurseries on the Pacific coast (Board, 2019; California Department of Fish and Wildlife, 2020b; NOAA Fisheries West
 Coast Region, 2019).
+
+![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
@@ -1650,6 +1664,8 @@ In 1968 — after years of advocacy by the League, the Sierra Club, the National
 citizens — Congress established Redwood National Park under Public Law 90-545, signed by President Lyndon B. Johnson
 on October 2, 1968. The park initially protected approximately 58,000 acres. The statutory language matters: Congress
 did not describe a scenic monument alone, but a working ecological whole — “significant examples of the primeval coastal
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
@@ -1892,6 +1908,8 @@ on engineered piles, surrounded by managed soft-shoreline buffers that protect t
 from both tsunami inundation and sea-level rise on the longer time horizon.
 The engineering posture documented here is, in turn, the physical substrate against which the Cascadia-margin hazard
 
+![page30_img1.png](images/page30_img1.png)
+
 ## Page 31
 
 Crescent City, California
@@ -2022,6 +2040,8 @@ planned, funded, or committed claims until permits, construction, and lease-up c
 claim is delivery complexity: rural affordable housing depends on separate capital, subsidy, and construction pathways that can
 advance or stall independently.
 
+![page34_img1.png](images/page34_img1.png)
+
 ## Page 35
 
 Crescent City, California
@@ -2097,6 +2117,8 @@ roughly three-mile active segment, more than $100 million in repairs since 1997,
 tunnel length, six-to-eight-year construction duration, and $2.7 billion 2026-dollar construction estimate. The limitation is temporal:
 these values describe planning and environmental-review status, not final bids or completed construction. The interpretive claim is
 institutional scale: a road segment experienced locally as closure risk has become a multibillion-dollar state infrastructure project.
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 
@@ -2188,6 +2210,8 @@ sensitive cultural-resource identifiers. The interpretive claim is ethical metho
 without showing readers where protected places are.
 Ethnographic linguistic-anthropological work in the region descends principally from Edward Sapir’s Pacific Coast
 Athabaskan fieldwork, some of it conducted in the late 1920s, posthumously edited and published with Victor Golla in
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 
@@ -2818,6 +2842,8 @@ mild, sandy-loam Smith River Plain has proved diﬀicult to duplicate elsewhere 
 The same geographic concentration that makes the crop locally distinctive also makes it a water-quality governance issue.
 The North Coast Regional Water Quality Control Board’s Lily Bulb Program documents surface-water, sediment, and
 
+![page54_img1.png](images/page54_img1.png)
+
 ## Page 55
 
 Crescent City, California
@@ -2938,6 +2964,8 @@ was the fatal surge. The later dolos breakwater appears as contextual infrastruc
 claim is measured narrowly: the destructive sequence was defined by wave ordering, harbor resonance, and exposed people and
 structures, not by one peak-height number alone.
 
+![page57_img1.png](images/page57_img1.png)
+
 ## Page 58
 
 Crescent City, California
@@ -2954,6 +2982,8 @@ remain inferred from sediment cores, tsunami deposits, and Indigenous oral-histo
 interpretive claim is exposure under repetition: the 1964 event remains the largest local run-up and fatality event, while the lower-
 amplitude 2011 Tōhoku event still produced severe harbor damage because more docks, slips, and vessels were exposed inside the
 resonant basin (Goldfinger et al., 2012a; Atwater et al., 2005a).
+
+![page58_img1.png](images/page58_img1.png)
 
 ## Page 59
 
@@ -2999,6 +3029,8 @@ Oceanic and Atmospheric Administration, 2022; Bernard, 2005).
 The most consequential institutional development was the 1995 creation of the National Tsunami Hazard Mitigation
 Program (NTHMP). It is a state-federal partnership chaired by NOAA, and it funds inundation mapping, warning-
 system upgrades, and TsunamiReady community certification. NOAA, USGS, and university research institutions have
+
+![page59_img1.png](images/page59_img1.png)
 
 ## Page 60
 
@@ -3233,6 +3265,8 @@ California tributaries above that barrier since 1961 (California Department of F
 architecture is as important as the demolition. NOAA describes a collaborative program among tribes, CalTrout, NOAA,
 and state and federal agencies built to produce “credible, transparent” recovery data, while USGS is tracking suspended
 
+![page65_img1.png](images/page65_img1.png)
+
 ## Page 66
 
 Crescent City, California
@@ -3429,6 +3463,8 @@ The evidence class is generalized ethnographic orientation: there
 are no latitude/longitude axes, point coordinates, parcel references, site IDs, or protected-location details, and the drawing is not
 a cultural-resource inventory. The interpretive claim is spatial continuity: village, river, lagoon, and headland names show an
 Indigenous geography that American settlement later overlaid but did not erase.
+
+![page70_img1.png](images/page70_img1.png)
 
 ## Page 71
 
@@ -4259,6 +4295,8 @@ interval. The interpretive claim is that oﬀicial city population is inseparabl
 Department of Finance point (6,407) remains elevated relative to the free household community because it includes 2,373 group-
 quarters residents, while the same release reports 4,034 household residents.
 
+![page89_img1.png](images/page89_img1.png)
+
 ## Page 90
 
 Crescent City, California
@@ -4335,6 +4373,8 @@ qualitative service-pathway mapping: licensed capacity, service descriptions, an
 flow data: patient volume, wait time, payer mix, and clinical outcomes are not measured flows in this figure. The interpretive claim
 is system dependence: rural health access rests on relationships among institutions and transport pathways, not on the hospital
 bed count alone.
+
+![page91_img1.png](images/page91_img1.png)
 
 ## Page 92
 
@@ -4901,6 +4941,8 @@ outcomes and symbolic places are encoded, but the coordinate system is approxima
 chart. Source basis: county vote results compiled from Ballotpedia, Jefferson Public Radio, and the Sacramento Bee, 2013-2015.
 The interpretive claim is peripheral politics: Crescent City sits inside Jefferson’s symbolic geography while Del Norte’s own voters
 declined the modern secession gesture.
+
+![page103_img1.png](images/page103_img1.png)
 
 ## Page 104
 
@@ -5938,6 +5980,8 @@ evidence class is curated chronology: statutory acts, disaster dates, archaeolog
 status claims are plotted together for navigation, but the figure does not encode magnitude, completeness, or probability. The
 interpretive claim is clustering: these windows mark where the manuscript’s causal argument turns most sharply.
 
+![page122_img1.png](images/page122_img1.png)
+
 ## Page 123
 
 Crescent City, California
@@ -6077,6 +6121,8 @@ The limitation is interpretive: the figure is an editorial-load diagnostic, not 
 claim is maintenance-oriented: long sections usually indicate dense archival, technical, or current-event synthesis that future editors
 should re-check after major source updates.
 
+![page125_img1.png](images/page125_img1.png)
+
 ## Page 126
 
 Crescent City, California
@@ -6087,6 +6133,8 @@ Reading Ease; the orange line reports Flesch-Kincaid Grade Level in the lower pa
 measurement, not scholarly evaluation: the formulas cannot see source quality, narrative judgment, tribal-cultural nuance, or
 whether a technical term is necessary. The limitation is therefore conceptual as well as statistical. The interpretive claim is editorial
 triage: the plot helps find sections where sentence splitting or topic-sentence work may help readers without diluting precision.
+
+![page126_img1.png](images/page126_img1.png)
 
 ## Page 127
 
@@ -6100,6 +6148,8 @@ in src/pipeline.py. The evidence class is automated citation-coverage metric. Th
 This is a conservative coverage signal rather than an accuracy score: multi-source citation clusters are counted by bracket, lower-
 density methodology sections may synthesize previously cited evidence, and a high-density chapter can still contain a claim that
 needs rechecking. The interpretive claim is procedural: the project uses citation density to find review targets, not to certify truth.
+
+![page127_img1.png](images/page127_img1.png)
 
 ## Page 128
 

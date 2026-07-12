@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Editorial_b59313ea.pdf`
 
+> 5 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -36,6 +38,10 @@ Figure 1: Integrity QR strip
 Structured manifest: ../data/transmission_manifest.json
 Figure 2: Publication pairing flow
 Stego: off | overlays text | barcodes on | XMP on | manifest on →./secure_run.sh
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
 
 ## Page 2
 
@@ -285,6 +291,10 @@ Figure 3: Mermaid diagram
 Data structures
 Figure 4: Mermaid diagram
 
+![page10_img1.png](images/page10_img1.png)
+
+![page10_img2.png](images/page10_img2.png)
+
 ## Page 11
 
 7
@@ -370,6 +380,8 @@ END OF TRANSMISSION
 Release: v0.4.1 ⋅DOI 10.5281/zenodo.20417104 ⋅SHA-256 pending… ⋅pairing pending
 Figure 5: Integrity QR strip
 Prior: No prior releases.
+
+![page14_img1.png](images/page14_img1.png)
 
 
 ---

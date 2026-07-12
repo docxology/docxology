@@ -2,6 +2,8 @@
 
 > Extracted from `2023_VariationalSynthesis.pdf`
 
+> 7 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -74,6 +76,12 @@ distributed under the terms and con-
 ditions of the Creative Commons At-
 tribution (CC BY) license (https://cre-
 ativecommons.org/licenses/by/4.0/).
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
+![page1_img3.png](images/page1_img3.png)
 
 ## Page 2
 
@@ -583,6 +591,8 @@ there is a steady-state density or potential function that remains constant (or 
 changes very slowly) over the timescale we are interested in. Equation (2) expresses the 
 flow as a mixture of a dissipative, gradient flow and a conservative, solenoidal flow [62–
 64]. The gradient flow  depends upon the amplitude of random fluctuations, while
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -1268,6 +1278,8 @@ population m). At scale i, each particle represents an element of an ensemble (e
 
  is the 
 -th
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -2337,6 +2349,10 @@ Sampling presynaptic inputs
 A
 B
 C
+
+![page17_img1.png](images/page17_img1.png)
+
+![page17_img7.jpeg](images/page17_img7.jpeg)
 
 ## Page 18
 

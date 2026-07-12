@@ -2,6 +2,8 @@
 
 > Extracted from `2025_AntStack.pdf`
 
+> 4 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -325,6 +327,8 @@ sion‑making; proof of concept for functional brain emulation
 ant‑specific simulation
 4
 
+![page4_img1.png](images/page4_img1.png)
+
 ## Page 5
 
 • Ant‑inspired robotics/navigation: Swarms and navigation (visual odometry, polarized
@@ -412,6 +416,8 @@ Sensory Apparatus
 tration.
 • Mechanoreceptors: Leg/body/antennal contact, forces, joint angles/velocities.
 6
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -503,6 +509,8 @@ Scope and Assumptions
 • Noise is a feature: stochasticity aids exploration and regularization; parameters expose
 variance at module boundaries
 8
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -610,6 +618,8 @@ agent to many without changing local rules.
 ## Page 11
 
 11
+
+![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 

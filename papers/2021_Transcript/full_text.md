@@ -2,6 +2,8 @@
 
 > Extracted from `v2 - Karl Friston, Applied Active Inference Symposium, ActInfLab, June 21, 2021.pdf`
 
+> 13 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -29,6 +31,8 @@ Author Affiliations
 v2.0 (March 2022)
 1
 
+![page1_img1.png](images/page1_img1.png)
+
 ## Page 2
 
 Video Sections & Links:
@@ -39,6 +43,10 @@ Part 2: Communication (.comms), page 27, youtube.com/watch?v=X2GwqUVLlcs
 ●
 Part 3: Tools (.tools), page 47, youtube.com/watch?v=hW9IiOujS1E
 2
+
+![page2_img1.png](images/page2_img1.png)
+
+![page2_img2.png](images/page2_img2.png)
 
 ## Page 3
 
@@ -58,6 +66,8 @@ are going to facilitate a 45 minute or so session, and we'll have a short break 
 sessions.
 Lab organizational units: .edu, .comms, .tools:
 3
+
+![page3_img1.png](images/page3_img1.png)
 
 ## Page 4
 
@@ -102,6 +112,8 @@ version 2, which now includes five complete language translations and many refer
 and citations for the terms.
 5
 
+![page5_img1.png](images/page5_img1.png)
+
 ## Page 6
 
 Wong, Wilson; Wei Liu; & Mohammed Bennamoun Ontology learning from text: A look back and into the future (2012)
@@ -115,6 +127,8 @@ the terms and the concepts that are essential for understanding Active Inference
 this will help us develop principled educational material that's also able to be translated
 rapidly.
 6
+
+![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
@@ -137,6 +151,8 @@ the .edu:
 05:45 How do we go about determining the core ideas and terms for Active Inference?
 This will be the format of the question slides, Karl, so feel free to jump in.
 7
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
@@ -193,6 +209,8 @@ Are you going to go through some examples that would sort of highlight the strat
 the problems, which are usually more illuminating than the solutions that you've
 encountered so far?
 9
+
+![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
@@ -793,6 +811,8 @@ something that we like thinking about here, and that we want to explore. Also, s
 our Lab members framed online communication and team collaboration in terms of
 Active Inference in the 2020 paper "Active Inference & Behavior Engineering for
 27
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 
@@ -1469,6 +1489,8 @@ awesome insights related to where Active Inference might come into play. And tha
 what we're excited to talk to you about.
 47
 
+![page47_img1.png](images/page47_img1.png)
+
 ## Page 48
 
 Core Insights from .tools
@@ -1482,6 +1504,8 @@ And two ways in which we've seen that play out:
 "Technology is the natural extension of Active Inference beyond the single person;"
 48
 
+![page48_img1.png](images/page48_img1.png)
+
 ## Page 49
 
 which, of course, brings technology - far from being something artificial - into the realm
@@ -1491,6 +1515,8 @@ Learning: Natural AI Systems," speaking to several applications in hardware and
 software of Active Inference - for example gesture recognition, robotic navigation, and
 also audiometry for hearing aids.
 49
+
+![page49_img1.png](images/page49_img1.png)
 
 ## Page 50
 
@@ -1512,6 +1538,8 @@ structuring of communications.
 So: The use of Active Inference to structure the process of innovation and tool
 development --
 50
+
+![page50_img1.png](images/page50_img1.png)
 
 ## Page 51
 

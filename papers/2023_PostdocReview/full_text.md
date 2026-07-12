@@ -2,6 +2,8 @@
 
 > Extracted from `2023_PostdocReview.pdf`
 
+> 126 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -10,6 +12,18 @@
 Postdoc review 
 Daniel Ari Friedman
 September 25, 2023
+
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
+![page1_img2.jpeg](images/page1_img2.jpeg)
+
+![page1_img3.jpeg](images/page1_img3.jpeg)
+
+![page1_img4.jpeg](images/page1_img4.jpeg)
+
+![page1_img5.jpeg](images/page1_img5.jpeg)
+
+![page1_img6.jpeg](images/page1_img6.jpeg)
 
 ## Page 2
 
@@ -30,10 +44,18 @@ Philosophy & Arts
 .2 – Review, Livechats & Onwards
 Roadmap.
 
+![page2_img1.jpeg](images/page2_img1.jpeg)
+
+![page2_img2.jpeg](images/page2_img2.jpeg)
+
+![page2_img3.jpeg](images/page2_img3.jpeg)
+
 ## Page 3
 
 Background & Context
 .0
+
+![page3_img1.jpeg](images/page3_img1.jpeg)
 
 ## Page 4
 
@@ -42,6 +64,42 @@ Oct. 2023
 July 2019 Oct. 2020
 ?????????????
 ?????????????
+
+![page4_img1.jpeg](images/page4_img1.jpeg)
+
+![page4_img2.jpeg](images/page4_img2.jpeg)
+
+![page4_img3.jpeg](images/page4_img3.jpeg)
+
+![page4_img4.jpeg](images/page4_img4.jpeg)
+
+![page4_img5.jpeg](images/page4_img5.jpeg)
+
+![page4_img6.jpeg](images/page4_img6.jpeg)
+
+![page4_img7.jpeg](images/page4_img7.jpeg)
+
+![page4_img8.jpeg](images/page4_img8.jpeg)
+
+![page4_img9.jpeg](images/page4_img9.jpeg)
+
+![page4_img10.jpeg](images/page4_img10.jpeg)
+
+![page4_img11.jpeg](images/page4_img11.jpeg)
+
+![page4_img12.jpeg](images/page4_img12.jpeg)
+
+![page4_img13.jpeg](images/page4_img13.jpeg)
+
+![page4_img14.jpeg](images/page4_img14.jpeg)
+
+![page4_img15.jpeg](images/page4_img15.jpeg)
+
+![page4_img16.jpeg](images/page4_img16.jpeg)
+
+![page4_img17.jpeg](images/page4_img17.jpeg)
+
+![page4_img18.jpeg](images/page4_img18.jpeg)
 
 ## Page 5
 
@@ -86,9 +144,27 @@ Johnson
 Prof. Tim 
 Linksvayer
 
+![page5_img1.jpeg](images/page5_img1.jpeg)
+
+![page5_img2.jpeg](images/page5_img2.jpeg)
+
+![page5_img3.jpeg](images/page5_img3.jpeg)
+
+![page5_img4.jpeg](images/page5_img4.jpeg)
+
+![page5_img5.jpeg](images/page5_img5.jpeg)
+
+![page5_img6.jpeg](images/page5_img6.jpeg)
+
 ## Page 6
 
 *[Page 6 appears to be blank or image-only]*
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+![page6_img2.jpeg](images/page6_img2.jpeg)
+
+![page6_img3.jpeg](images/page6_img3.jpeg)
 
 ## Page 7
 
@@ -107,10 +183,20 @@ Local Davis engagements & activities
 works
 20-23
 
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+![page7_img2.jpeg](images/page7_img2.jpeg)
+
 ## Page 8
 
 # of publications by year per Working Area
 20…
+
+![page8_img1.jpeg](images/page8_img1.jpeg)
+
+![page8_img2.jpeg](images/page8_img2.jpeg)
+
+![page8_img3.jpeg](images/page8_img3.jpeg)
 
 ## Page 9
 
@@ -134,6 +220,8 @@ The highlights are sorted by working area, not relevance.
 
 Biology
 
+![page10_img1.jpeg](images/page10_img1.jpeg)
+
 ## Page 11
 
 A Variational Synthesis of Evolutionary 
@@ -154,6 +242,16 @@ upon Active Inference & the Free Energy Principle.
 ●
 Reflecting discourse with the authors and others in ActInf Ecosystem 
 since 2017, and setting directions for some time to come!
+
+![page11_img1.jpeg](images/page11_img1.jpeg)
+
+![page11_img2.jpeg](images/page11_img2.jpeg)
+
+![page11_img3.jpeg](images/page11_img3.jpeg)
+
+![page11_img4.jpeg](images/page11_img4.jpeg)
+
+![page11_img5.jpeg](images/page11_img5.jpeg)
 
 ## Page 12
 
@@ -188,9 +286,21 @@ amounts and
 measurements under the 
 one-pheromone model.
 
+![page12_img1.jpeg](images/page12_img1.jpeg)
+
+![page12_img2.jpeg](images/page12_img2.jpeg)
+
+![page12_img3.jpeg](images/page12_img3.jpeg)
+
+![page12_img4.jpeg](images/page12_img4.jpeg)
+
+![page12_img5.jpeg](images/page12_img5.jpeg)
+
 ## Page 13
 
 Active Inference
+
+![page13_img1.jpeg](images/page13_img1.jpeg)
 
 ## Page 14
 
@@ -220,6 +330,14 @@ behaviors; foraging and beyond
 Early pre-pymdp collaboration 
 that could already be updated
 
+![page14_img1.jpeg](images/page14_img1.jpeg)
+
+![page14_img2.jpeg](images/page14_img2.jpeg)
+
+![page14_img3.jpeg](images/page14_img3.jpeg)
+
+![page14_img4.jpeg](images/page14_img4.jpeg)
+
 ## Page 15
 
 Active Inference in 
@@ -239,6 +357,18 @@ OODA, (inter)organizational developments
 BOLTS (Business, Operational, 
 Legal, Technical, and Social)
 
+![page15_img1.jpeg](images/page15_img1.jpeg)
+
+![page15_img2.jpeg](images/page15_img2.jpeg)
+
+![page15_img3.jpeg](images/page15_img3.jpeg)
+
+![page15_img4.jpeg](images/page15_img4.jpeg)
+
+![page15_img5.jpeg](images/page15_img5.jpeg)
+
+![page15_img6.jpeg](images/page15_img6.jpeg)
+
 ## Page 16
 
 The Active Inference Institute and 
@@ -255,10 +385,18 @@ transcripts at the Active Inference Journal
 ~30 Interns, SAB, BoD, and 
 so many other nestmates!
 
+![page16_img1.jpeg](images/page16_img1.jpeg)
+
+![page16_img2.jpeg](images/page16_img2.jpeg)
+
 ## Page 17
 
 Cognitive 
 Security
+
+![page17_img1.jpeg](images/page17_img1.jpeg)
+
+![page17_img2.jpeg](images/page17_img2.jpeg)
 
 ## Page 18
 
@@ -270,6 +408,16 @@ Ongoing initiative in 2023: ATLAS
 2022
 RJ Cordes
 https://coda.io/@aien/rj-cordes
+
+![page18_img1.jpeg](images/page18_img1.jpeg)
+
+![page18_img2.jpeg](images/page18_img2.jpeg)
+
+![page18_img3.jpeg](images/page18_img3.jpeg)
+
+![page18_img4.jpeg](images/page18_img4.jpeg)
+
+![page18_img5.jpeg](images/page18_img5.jpeg)
 
 ## Page 19
 
@@ -283,9 +431,33 @@ Rethink Creativity & Rethink Facilitation
 https://www.youtube.com/watch?v=4f4rrMZ-Wyo 
 https://www.youtube.com/watch?v=aMiremrUx3g
 
+![page19_img1.jpeg](images/page19_img1.jpeg)
+
+![page19_img2.jpeg](images/page19_img2.jpeg)
+
+![page19_img3.jpeg](images/page19_img3.jpeg)
+
+![page19_img4.jpeg](images/page19_img4.jpeg)
+
+![page19_img5.jpeg](images/page19_img5.jpeg)
+
+![page19_img6.jpeg](images/page19_img6.jpeg)
+
+![page19_img7.jpeg](images/page19_img7.jpeg)
+
+![page19_img8.jpeg](images/page19_img8.jpeg)
+
+![page19_img9.jpeg](images/page19_img9.jpeg)
+
 ## Page 20
 
 Beyond Research
+
+![page20_img1.jpeg](images/page20_img1.jpeg)
+
+![page20_img2.jpeg](images/page20_img2.jpeg)
+
+![page20_img3.jpeg](images/page20_img3.jpeg)
 
 ## Page 21
 
@@ -312,6 +484,20 @@ Daniel A. Friedman
 Zenodo
 2023
 
+![page21_img1.jpeg](images/page21_img1.jpeg)
+
+![page21_img2.jpeg](images/page21_img2.jpeg)
+
+![page21_img3.jpeg](images/page21_img3.jpeg)
+
+![page21_img4.jpeg](images/page21_img4.jpeg)
+
+![page21_img5.jpeg](images/page21_img5.jpeg)
+
+![page21_img6.jpeg](images/page21_img6.jpeg)
+
+![page21_img7.jpeg](images/page21_img7.jpeg)
+
 ## Page 22
 
 ●
@@ -334,6 +520,20 @@ Daniel A. Friedman, YouTube
 ●
 8 PaperStreams (all 
 within last 3 years)
+
+![page22_img1.jpeg](images/page22_img1.jpeg)
+
+![page22_img2.jpeg](images/page22_img2.jpeg)
+
+![page22_img3.jpeg](images/page22_img3.jpeg)
+
+![page22_img4.jpeg](images/page22_img4.jpeg)
+
+![page22_img5.jpeg](images/page22_img5.jpeg)
+
+![page22_img6.jpeg](images/page22_img6.jpeg)
+
+![page22_img7.jpeg](images/page22_img7.jpeg)
 
 ## Page 23
 
@@ -364,6 +564,40 @@ science/
 The mostly-unnamed 
 colony
 
+![page23_img1.jpeg](images/page23_img1.jpeg)
+
+![page23_img2.jpeg](images/page23_img2.jpeg)
+
+![page23_img3.jpeg](images/page23_img3.jpeg)
+
+![page23_img4.jpeg](images/page23_img4.jpeg)
+
+![page23_img5.jpeg](images/page23_img5.jpeg)
+
+![page23_img6.jpeg](images/page23_img6.jpeg)
+
+![page23_img7.jpeg](images/page23_img7.jpeg)
+
+![page23_img8.jpeg](images/page23_img8.jpeg)
+
+![page23_img9.jpeg](images/page23_img9.jpeg)
+
+![page23_img10.jpeg](images/page23_img10.jpeg)
+
+![page23_img11.jpeg](images/page23_img11.jpeg)
+
+![page23_img12.jpeg](images/page23_img12.jpeg)
+
+![page23_img13.jpeg](images/page23_img13.jpeg)
+
+![page23_img14.jpeg](images/page23_img14.jpeg)
+
+![page23_img15.jpeg](images/page23_img15.jpeg)
+
+![page23_img16.jpeg](images/page23_img16.jpeg)
+
+![page23_img17.jpeg](images/page23_img17.jpeg)
+
 ## Page 24
 
 Review, Livechats 
@@ -371,9 +605,25 @@ Review, Livechats
 If you are watching live, please add any comments/questions 
 in the livechat & I will try to address everything I can.
 
+![page24_img1.jpeg](images/page24_img1.jpeg)
+
+![page24_img2.jpeg](images/page24_img2.jpeg)
+
+![page24_img3.jpeg](images/page24_img3.jpeg)
+
 ## Page 25
 
 *[Page 25 appears to be blank or image-only]*
+
+![page25_img1.jpeg](images/page25_img1.jpeg)
+
+![page25_img2.jpeg](images/page25_img2.jpeg)
+
+![page25_img3.jpeg](images/page25_img3.jpeg)
+
+![page25_img4.jpeg](images/page25_img4.jpeg)
+
+![page25_img5.jpeg](images/page25_img5.jpeg)
 
 ## Page 26
 
@@ -414,6 +664,10 @@ and at minimum two.
 There is much more to 
 come! It is a rising and not 
 a setting sun.
+
+![page26_img1.jpeg](images/page26_img1.jpeg)
+
+![page26_img2.jpeg](images/page26_img2.jpeg)
 
 
 ---

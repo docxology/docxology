@@ -2,6 +2,8 @@
 
 > Extracted from `2017_MutAnts.pdf`
 
+> 2 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -183,6 +185,8 @@ The dramatic reduction of glomerular
 Cell 170, August 10, 2017 ª 2017 Elsevier Inc.
 601
 
+![page1_img1.jpeg](images/page1_img1.jpeg)
+
 ## Page 2
 
 number in Orco mutants in both ant
@@ -250,6 +254,8 @@ Figure 1. Reproductive diagrams for Ooceraea biroi and Harpegnathos saltator
 (B) Harpegnathos saltator.
 602
 Cell 170, August 10, 2017
+
+![page2_img1.jpeg](images/page2_img1.jpeg)
 
 
 ---

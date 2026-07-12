@@ -30,9 +30,11 @@ def test_image_sitemap_uses_deployed_image_sources():
     text = bis.OUT.read_text(encoding="utf-8")
     total = text.count("<image:loc>")
     flickr = text.count("<image:loc>https://live.staticflickr.com/")
-    local = text.count("<image:loc>https://danielarifriedman.com/art/")
-    assert flickr + local == total
-    assert local == 0
+    local_art = text.count("<image:loc>https://danielarifriedman.com/art/")
+    local_papers = text.count("<image:loc>https://danielarifriedman.com/papers/")
+    assert flickr + local_art + local_papers == total
+    assert local_art == 0  # gallery images use Flickr URLs
+    assert local_papers > 0  # extracted paper figures are served locally
 
 
 def test_robots_references_image_sitemap():

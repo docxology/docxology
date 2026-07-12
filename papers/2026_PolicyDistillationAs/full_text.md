@@ -2,6 +2,8 @@
 
 > Extracted from `Friedman_2026_Onpolicy_c6b5ec49.pdf`
 
+> 39 figures extracted to `images/`
+
 ---
 
 ## Page 1
@@ -41,6 +43,10 @@ Structured manifest: ../data/transmission_manifest.json
 Figure 2: Publication pairing flow
 Stego: off | overlays text | barcodes on | XMP on | manifest on →./secure_run.sh
 
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
 ## Page 2
 
 On-Policy Distillation as Active Inference in Finite
@@ -52,6 +58,8 @@ daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.20747834
 June 2026
+
+![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
@@ -322,6 +330,8 @@ Team, 2025, Lu and Thinking Machines Lab, 2025]. The supplemental sheaf/provenan
 reported number is hydrated from a generated artifact, every figure is source-bound, and 16 / 16 invariant checks pass before rendering.
 4
 
+![page6_img1.png](images/page6_img1.png)
+
 ## Page 7
 
 Introduction
@@ -419,6 +429,8 @@ figure supports finite toy/artifact claims only; figure provenance, hash manifes
 decoration. Sources: output/data/firstprinciples/correspondence_map.json, output/data/firstprinciples/exposure_bias_de
 mo.json, output/data/firstprinciples/sequential_shift.json, and output/data/validation_dependency_graph.json.
 6
+
+![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
@@ -612,6 +624,8 @@ Ontology bindings
 • policy →PolicyPosterior
 9
 
+![page11_img1.png](images/page11_img1.png)
+
 ## Page 12
 
 Figure 6: The audited correspondence dictionary, rendered in full: all 26 machine-validated rows pairing an active inference construct
@@ -621,6 +635,8 @@ not a rhetorical analogy. The full table with per-row notes appears in the appen
 ondence_map.json.
 10
 
+![page12_img1.png](images/page12_img1.png)
+
 ## Page 13
 
 Figure 7: Evidence architecture for the manuscript. Each scientific lane exposes the complete chain from source artifacts to injected
@@ -629,6 +645,8 @@ pymdp lane carries cue timing and policy-entropy diagnostics; the formal lane ca
 figure provenance, and supplemental material. The bottom spine shows the deterministic publication sequence from analysis through
 release, with 805 injected manuscript tokens, 27 validation gates, and 0 hard-coded variable issues in the generated audit.
 11
+
+![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
@@ -672,6 +690,8 @@ privileged context rather than the unconditioned family [Zhao et al., 2026, Liu 
 these finite variational calculations in the sense of mathematical reviews of the free-energy principle [Buckley et al., 2017], and we read
 this Bernoulli-Ising oracle strictly as a minimal-model demonstration of the correspondence - not a claim about production language
 12
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
@@ -786,6 +806,8 @@ Ontology bindings
 • q_joint →EntangledJointPosterior
 14
 
+![page16_img1.png](images/page16_img1.png)
+
 ## Page 17
 
 Figure 10: Concordance diagram aligning the analytical symbols of the Bernoulli–Ising toy with the generative-model variables declared
@@ -831,6 +853,8 @@ privileged sensory access, whereas the on-policy student must act to sample the 
 actually induced. The model/value audit in output/data/si_tmaze_model_matrices.json records A=[[5, 5], [3, 5, 2], [3, 5, 2]]; B=[[5,
 5, 5], [2, 2, 1]], dependencies, preferences, deterministic D priors, reward condition 0, and cue validity 0.95 (fig. 12). Per-step trace
 15
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
@@ -906,6 +930,10 @@ atrices.json). The audit exposes the exact parameters that generate the teacher�
 so the active-inference policy being distilled rests on a well-formed generative model rather than an unchecked numerical artifact.
 17
 
+![page19_img1.png](images/page19_img1.png)
+
+![page19_img2.png](images/page19_img2.png)
+
 ## Page 20
 
 Figure 13: One scenario solved in two frameworks. A standard machine-learning loop (jax automatic differentiation on the reverse-KL
@@ -952,6 +980,8 @@ all-topologies-witnessed flag true. fig. 14 summarizes this proved-versus-deferr
 The Lean SophisticatedInference boundary module declares the finite planning-horizon witness used to mirror the pymdp SI
 18
 
+![page20_img1.png](images/page20_img1.png)
+
 ## Page 21
 
 Figure 14: Lean formalization boundary: a table of modules, declaration kinds, names, and proved-versus-sorry status under lean/OnP
@@ -959,6 +989,8 @@ olicyDistillation/, each row a witness checked by lake build. Proved rows mark t
 are machine-verified, while any sorry row honestly demarcates the edge of what is formally established. The figure makes the trust
 boundary explicit: the compiled core is the declared finite witness set, not a general proof about all OPD or active-inference systems.
 19
+
+![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
@@ -1036,6 +1068,8 @@ total correlation is shown as recompute-minus-closed-form residuals rather than 
 are deterministic (no sampling), the maximum residual of 4.4e-16 nats (machine precision) is a cross-implementation agreement check
 confirming the analytic information measure is reproducible to machine precision.
 21
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
@@ -1175,6 +1209,10 @@ make explicit that an on-policy student is simultaneously matching the teacher�
 uncertainty about unvisited states (epistemic).
 24
 
+![page26_img1.png](images/page26_img1.png)
+
+![page26_img2.png](images/page26_img2.png)
+
 ## Page 27
 
 Figure 18: The active half of the correspondence: expected free energy chooses where the student collects rollouts. Left: across 6
@@ -1190,6 +1228,10 @@ fit, and the agent visits the cue before any arm. The bridge is bound to observa
 internal expected-free-energy terms. Finite toy, exact. Source: output/data/firstprinciples/si_bridge_demo.json.
 25
 
+![page27_img1.png](images/page27_img1.png)
+
+![page27_img2.png](images/page27_img2.png)
+
 ## Page 28
 
 Figure 20: The closed-form bridge predicts the pymdp sophisticated-inference agent’s belief entropy at every step, not only post-cue.
@@ -1204,6 +1246,10 @@ their tier-aware tolerance, with maximum residual 3.6e-08 nats, and each of the 
 1 rows are proved closed-form identities; Tier 2 rows are numerical witnesses. Finite toys, exact in the declared models. Source: outp
 ut/data/firstprinciples/precision_ledger_demo.json.
 26
+
+![page28_img1.png](images/page28_img1.png)
+
+![page28_img2.png](images/page28_img2.png)
 
 ## Page 29
 
@@ -1332,6 +1378,10 @@ at timestep 4, and cue-before-reward ordering true. Capturing this joint observa
 policy, is what makes the active-inference teacher faithfully reproducible.
 29
 
+![page31_img1.png](images/page31_img1.png)
+
+![page31_img2.png](images/page31_img2.png)
+
 ## Page 32
 
 Figure 24: Canonical sophisticated-inference action selection for the full pymdp TMaze rollout (agent policy length 1, SI search horizon
@@ -1346,6 +1396,10 @@ on-policy distillation as a per-step divergence signal evaluated along the stude
 of scoring beliefs on visited states rather than the teacher’s idealized path. It is a deterministic toy signal, not an empirical OPD
 benchmark.
 30
+
+![page32_img1.png](images/page32_img1.png)
+
+![page32_img2.png](images/page32_img2.png)
 
 ## Page 33
 
@@ -1363,6 +1417,10 @@ at each fraction, and requires all policy and visitation rows to remain normaliz
 sitivity.json; this is a sensitivity guard for the toy witness, not local evidence about production LLM optimization.
 31
 
+![page33_img1.png](images/page33_img1.png)
+
+![page33_img2.png](images/page33_img2.png)
+
 ## Page 34
 
 Figure 28: Teacher-privilege dose-response over 6 cue-validity levels (student fixed at 0.5; the identical-agent baseline gap 0.0 is a
@@ -1377,6 +1435,10 @@ mass at or above 0.30). Right: policy-posterior entropy by step for all 14 of 14
 observation: the on-policy rollout is what exposes the agent to the observation that sharpens its own posterior, the T-maze version of
 the induced-distribution argument for on-policy distillation. Source: output/data/pymdp_policy_posterior_grid.json.
 32
+
+![page34_img1.png](images/page34_img1.png)
+
+![page34_img2.png](images/page34_img2.png)
 
 ## Page 35
 
@@ -1622,6 +1684,8 @@ within one year. Source: output/data/firstprinciples/opd_taxonomy.json.
 Ontology bindings
 • coverage_semantics →Coverage matrix semantics
 36
+
+![page38_img1.png](images/page38_img1.png)
 
 ## Page 39
 
@@ -1869,6 +1933,8 @@ Readers can therefore audit not just the number of states, but the actual
 state/action/next-state relation used by the model-checking witnesses.
 41
 
+![page43_img1.png](images/page43_img1.png)
+
 ## Page 44
 
 Figure 32: Causal-ablation heatmap over 36 source-backed rows joined to the sensitivity and uncertainty artifacts (all effects source-
@@ -1879,6 +1945,8 @@ structural assumptions of the generative model the distillation outcome is sensi
 toy intervention matrix, flagging where the generated on-policy behavior would shift under declared model misspecification without
 asserting deployment-scale effects.
 42
+
+![page44_img1.png](images/page44_img1.png)
 
 ## Page 45
 
@@ -2057,6 +2125,8 @@ field is present (true).
 The release_bundle fragment records whether the canonical deliverables exist before copying and whether copied root outputs
 46
 
+![page48_img1.png](images/page48_img1.png)
+
 ## Page 49
 
 Figure 34: Semantic gluing graph tracing the dependency chain from configured analysis scripts (producers) through the generated
@@ -2068,6 +2138,8 @@ argument is accepted. Long consumer lists are visually compacted with +N counts 
 n_dependency_graph.json.
 47
 
+![page49_img1.png](images/page49_img1.png)
+
 ## Page 50
 
 Figure 35: Condensed scholarship source map for 127 bibliography source rows across 127 method roles and 63 source families (connected
@@ -2077,6 +2149,8 @@ in output/data/scholarship_source_matrix.json. The map ties each external refere
 literature alike – to a concrete place where the exemplar uses or tests it, evidencing load-bearing scholarship rather than decorative
 citation.
 48
+
+![page50_img1.png](images/page50_img1.png)
 
 ## Page 51
 
@@ -4470,6 +4544,8 @@ Ontology bindings
 • location →HiddenState
 63
 
+![page65_img1.png](images/page65_img1.png)
+
 ## Page 66
 
 Figure 37: The diversity-collapse tradeoff of mode-seeking distillation, evaluated over a problem ensemble. Greedy Pass-at-1 (dashed,
@@ -4496,6 +4572,8 @@ flipping the summary bit without fixing a failed row still fails.
 output/reports/release_attestation.json is the compact final view over the same boundary. It records 5 attestation rows for
 validation, release bundle hash, license audit, semantic certificate, and blocked-scope status, with all-attested flag true.
 64
+
+![page66_img1.png](images/page66_img1.png)
 
 ## Page 67
 
@@ -4942,6 +5020,8 @@ END OF TRANSMISSION
 Release: v1.0.2 ⋅DOI 10.5281/zenodo.20747834 ⋅SHA-256 8d70985fca93… ⋅pairing complete
 Figure 38: Integrity QR strip
 Prior: v1.0.0 ⋅10.5281/zenodo.20747834 ⋅db0f2e4f… ⋅v1.0.1 ⋅10.5281/zenodo.20748663 ⋅4f7040bc…
+
+![page75_img1.png](images/page75_img1.png)
 
 
 ---
