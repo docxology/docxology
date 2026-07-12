@@ -94,9 +94,15 @@ def image_gallery_link(folder: Path) -> str:
     count = len(img_files)
     # Show up to 6 thumbnail previews
     thumbs = img_files[:6]
+    # Build descriptive alt text from folder name + image filename
+    folder_title = folder.name
     thumb_html = '<div class="image-thumbs">'
     for img in thumbs:
-        thumb_html += f'<a href="images/{img.name}" class="thumb-link"><img src="images/{img.name}" alt="{img.stem}" loading="lazy"></a>'
+        # Extract page number from filename like "page10_img1.png" or "slide1_img1.png"
+        page_match = __import__('re').search(r'(?:page|slide)(\d+)', img.name)
+        page_num = page_match.group(1) if page_match else img.stem
+        alt_text = f"Figure from {folder_title}, page {page_num}"
+        thumb_html += f'<a href="images/{img.name}" class="thumb-link"><img src="images/{img.name}" alt="{alt_text}" loading="lazy"></a>'
     thumb_html += "</div>"
     more = f' <span class="muted">+{count - 6} more</span>' if count > 6 else ""
     return f'<a class="btn btn-outline" href="images/">Extracted Images ({count})</a>{more}{thumb_html}'
