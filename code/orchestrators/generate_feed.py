@@ -48,7 +48,7 @@ def item(title: str, link: str, guid: str, description: str, pub_date: datetime)
 
 def render(build_date: datetime | None = None) -> str:
     build_date = build_date or datetime.now(timezone.utc).replace(microsecond=0)
-    works = sorted(load_works(), key=lambda w: (int(w["year"]), -int(w["num"])), reverse=True)
+    works = sorted(load_works(), key=lambda w: (int(w["year"]), int(w["num"])), reverse=True)
     entries = [
         item(
             "Repository inventory and evidence layer refreshed",

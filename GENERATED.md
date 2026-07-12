@@ -23,8 +23,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Work pages | `works/*.html`<br>`data/work-enrichment.json` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/SKILL.md` | `python3 code/orchestrators/build_work_pages.py` |
 | Video pages | `videos/*.html`<br>`data/videos.json` | `code/data/youtube_personal.json`<br>`code/data/youtube_institute.json`<br>`data/video-transcripts/*.txt`<br>`data/works.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_video_pages.py` |
 | Video transcript cache | `data/video-transcripts/*.txt` | `YouTube captions`<br>`code/orchestrators/fetch_video_transcripts.py` | `python3 code/orchestrators/fetch_video_transcripts.py --channel all` |
-| Paper folder pages | `papers/*/index.html` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/AGENTS.md`<br>`papers/*/*.pdf`<br>`papers/*/full_text.md`<br>`papers/*/images/` | `python3 code/orchestrators/build_paper_pages.py` |
-| Paper full text + images | `papers/*/full_text.md`<br>`papers/*/images/` | `papers/*/*.pdf` | `python3 code/orchestrators/extract_paper_texts.py --force` |
+| Paper folder pages | `papers/*/index.html` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/AGENTS.md`<br>`papers/*/*.pdf` | `python3 code/orchestrators/build_paper_pages.py` |
 | Evidence pages | `evidence.html`<br>`pages/EVIDENCE.md` | `data/claims.json`<br>`code/orchestrators/build_evidence_page.py` | `python3 code/orchestrators/build_evidence_page.py` |
 | Search index | `search-index.json` | `data/*.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_search_index.py` |
 | Data catalog | `catalog.html`<br>`data/catalog.json` | `code/orchestrators/build_catalog.py`<br>`data/*.json` | `python3 code/orchestrators/build_catalog.py` |
