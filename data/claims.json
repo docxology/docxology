@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-11T01:16:16Z",
+  "generated_at": "2026-07-12T03:11:44Z",
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 192 works.",
+      "claim": "The curated bibliography contains 193 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-11T01:16:16+00:00",
+      "checked_at": "2026-07-12T03:11:44+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -18,14 +18,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 175 per-paper documentation folders.",
+      "claim": "The repository contains 176 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-11T01:16:16+00:00",
+      "checked_at": "2026-07-12T03:11:44+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

@@ -43,6 +43,7 @@ This repository is the public research and software index for Daniel Ari Friedma
 - Profile: https://github.com/docxology/docxology/blob/main/pages/PROFILE.md
 - Links: https://github.com/docxology/docxology/blob/main/pages/LINKS.md
 - Papers directory: https://github.com/docxology/docxology/tree/main/papers
+- Full-text extraction pipeline: https://github.com/docxology/docxology/blob/main/code/orchestrators/extract_paper_texts.py
 - Citation metadata: https://github.com/docxology/docxology/blob/main/CITATION.cff
 - CodeMeta metadata: https://danielarifriedman.com/codemeta.json
 - BibTeX export: https://danielarifriedman.com/bibliography.bib

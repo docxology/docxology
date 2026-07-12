@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-07-11T01:16:16Z
+Generated: 2026-07-12T03:11:44Z
 
-Current public metrics: 192 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 193 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (192)
+WORKS AND PUBLICATIONS (193)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -356,6 +356,7 @@ WORKS AND PUBLICATIONS (192)
 [191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298885
 [192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298883
 [193] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139089
+[194] 2026 | Paper | Prior Cognitive Art | Zenodo | 10.5281/zenodo.21316510
 
 SOFTWARE (95)
 -------------

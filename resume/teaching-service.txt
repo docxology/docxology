@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-07-11T01:16:16Z
+Generated: 2026-07-12T03:11:44Z
 
-Current public metrics: 192 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 193 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
 
 SUMMARY
 -------
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (79)
+WORKS AND PUBLICATIONS (80)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -181,6 +181,7 @@ WORKS AND PUBLICATIONS (79)
 [190] 2026 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | Zenodo | 10.5281/zenodo.21298888
 [191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298885
 [192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298883
+[194] 2026 | Paper | Prior Cognitive Art | Zenodo | 10.5281/zenodo.21316510
 
 SOFTWARE (14)
 -------------

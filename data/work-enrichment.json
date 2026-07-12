@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-11T01:16:16Z",
+  "generated_at": "2026-07-12T03:11:45Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 192,
+  "count": 193,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3882,6 +3882,28 @@
       ],
       "methods": [],
       "source": "papers/2026_TemplateApproachReproducible2/README.md"
+    },
+    "Friedman2026PriorCognitiveArt194": {
+      "citation_key": "Friedman2026PriorCognitiveArt194",
+      "abstract": "A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why a prior exists, identify which explanatory kind is being requested and name the rule that will terminate the explanation. This working paper argues that Tinbergen's four questions are not stacked levels in one causal chain. They are crossed axes: proximate versus ultimate, and static versus developmental. Mechanism and function ask what a prior is doing now; ontogeny and phylogeny ask how such organization came to be across different timescales. The paper treats the familiar \"prior on a prior\" problem in hierarchical Bayes as structurally parallel to an ontogenetic account that says one prior selects another. Both postpone the question unless they terminate. Three termination families organize the paper:",
+      "keywords": [
+        "priors",
+        "Tinbergen's four questions",
+        "hierarchical Bayes",
+        "free energy principle",
+        "Markov blankets",
+        "cognitive science",
+        "conceptual visualization"
+      ],
+      "findings": [
+        "priors",
+        "Tinbergen's four questions",
+        "hierarchical Bayes",
+        "free energy principle",
+        "Markov blankets"
+      ],
+      "methods": [],
+      "source": "papers/2026_PriorCognitiveArt/README.md"
     }
   }
 }

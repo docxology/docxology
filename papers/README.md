@@ -4,10 +4,12 @@ Documentation index for all publications. Each folder contains:
 - **README.md** — Paper overview, abstract, keywords, and citation
 - **AGENTS.md** — Agent roles and extraction log
 - **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
+- **full_text.md** — Full text extracted from the PDF (when available), with page-level structure
+- **images/** — Figures and images extracted from the PDF (when available)
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (175)
+## Papers (176)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -186,6 +188,7 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 173 | [2026_IllegalStatesMostly](2026_IllegalStatesMostly/) | ✅ | 2026 | IllegalStatesMostly |
 | 174 | [2026_DataDescriptorTemplate](2026_DataDescriptorTemplate/) | ✅ | 2026 | DataDescriptorTemplate |
 | 175 | [2026_TemplateApproachReproducible2](2026_TemplateApproachReproducible2/) | ✅ | 2026 | TemplateApproachReproducible2 |
+| 176 | [2026_PriorCognitiveArt](2026_PriorCognitiveArt/) | ✅ | 2026 | PriorCognitiveArt |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:
@@ -193,6 +196,7 @@ All repository code lives under [`code/`](../code/); the per-folder docs in this
 | Script | Purpose |
 |--------|---------|
 | [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py) | Regenerate every per-folder README.md / AGENTS.md / SKILL.md from `paper_metadata.json` (`--apply` to write, `--force` to overwrite) |
+| [`code/orchestrators/extract_paper_texts.py`](../code/orchestrators/extract_paper_texts.py) | Extract full text and images from all paper PDFs (`--force` to overwrite existing extractions) |
 | [`code/orchestrators/sync_publications_html.py`](../code/orchestrators/sync_publications_html.py) | Rebuild `publications.html` head meta + `data/publications-ld.json` mainEntity from `pages/BIBLIOGRAPHY.md` |
 | [`code/src/biblio_table.py`](../code/src/biblio_table.py) | Shared eight-column `pages/BIBLIOGRAPHY.md` row parser |
 

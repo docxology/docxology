@@ -1,0 +1,58 @@
+{
+  "title": "Prior Cognitive Art",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.21316510",
+  "doi_url": "https://doi.org/10.5281/zenodo.21316510",
+  "zenodo_record": "https://zenodo.org/records/21316510",
+  "record_id": "21316511",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why\na prior exists, identify which explanatory kind is being requested and name the\nrule that will terminate the explanation. This working paper argues that Tinbergen's four questions\nare not stacked levels in one causal chain. They are crossed axes: proximate\nversus ultimate, and static versus developmental. Mechanism and function ask\nwhat a prior is doing now; ontogeny and phylogeny ask how such organization came\nto be across different timescales.\n\nThe paper treats the familiar \"prior on a prior\" problem in hierarchical Bayes\nas structurally parallel to an ontogenetic account that says one prior selects\nanother. Both postpone the question unless they terminate. Three termination\nfamilies organize the paper: pragmatic closure, selection closure, and\nfixed-point termination. They are organizing families, not an exhaustive\ntaxonomy of every possible explanation. A final upstream pass asks what comes\nbefore the first prior and answers with a constraint stack -- viability,\nallostasis, co-homeostasis, development, and niche support -- rather than with a\nhidden meta-prior. The project uses plain text, deterministic conceptual visualizations, and one deterministic illustrative simulation trace.\nIts supplement adds generated, auto-numbered formal claims and a closed symbol\nglossary as text-integrity artifacts rather than empirical machinery.\nThe paper includes one deterministic illustrative simulation trace over authored formal states; it does not run stochastic simulations, synthetic-data experiments, empirical estimates, or performance benchmarks.\n\nThe \"art\" in the title names the craft at stake: arranging explanatory kinds\n(proximate/ultimate, static/developmental, selection/fixed-point) so that no\nsingle kind is mistaken for the whole, and rendering that arrangement as\ndeterministic figures and checkable formalism rather than as empirical simulation evidence. It\nalso marks a bounded link to aesthetic practice: artworks can stage encounters\nwith expectations, material affordances, ambiguity, and meaning, but this paper\ntreats that link as a conceptual analogy, not as an empirical theory of art.\n\n---\nAssociated artifacts\nGitHub release: Prior Cognitive Art v0.1.0 (https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.21316510\nZenodo: https://zenodo.org/records/21316510\nPDF SHA-256: 62aa1d8d4af75f4b5bdc894516720bdf61ae68a4be27f44aefc09c2dd2fbba67",
+  "keywords": [
+    "priors",
+    "Tinbergen's four questions",
+    "hierarchical Bayes",
+    "free energy principle",
+    "Markov blankets",
+    "cognitive science",
+    "conceptual visualization"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Prior_62aa1d8d.pdf",
+      "size_bytes": 4429780,
+      "checksum": "md5:e792cca2876e25c849c62d8c4d0638ec",
+      "download_url": "https://zenodo.org/api/records/21316511/files/Friedman_2026_Prior_62aa1d8d.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/prior_cognitive_art"
+    }
+  ],
+  "github_repo": "docxology/prior_cognitive_art",
+  "github_release_url": "https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "Prior Cognitive Art v0.1.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-07-12T02:38:42Z"
+}

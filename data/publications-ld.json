@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 192 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 193 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -3270,6 +3270,23 @@
             },
             "keywords": "💻",
             "sameAs": "https://doi.org/10.5281/zenodo.19139089"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Prior Cognitive Art",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "sameAs": "https://doi.org/10.5281/zenodo.21316510"
         }
     ]
 }

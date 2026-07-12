@@ -76,7 +76,7 @@ CHAIN: list[tuple[str, list[str]]] = [
 
 
 def _run(script: str, args: list[str]) -> None:
-    cmd = ["python3", f"code/orchestrators/{script}", *args]
+    cmd = [sys.executable, f"code/orchestrators/{script}", *args]
     print(f"\n=== {script} {' '.join(args)} ".rstrip().ljust(72, "="))
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
 

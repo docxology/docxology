@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T01:16:17Z",
+  "generated_at": "2026-07-12T03:11:45Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1611,
+  "count": 1612,
   "items": [
     {
       "id": "page:home",
@@ -307,7 +307,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-11.json",
+      "url": "/reports/accessibility_static_2026-07-12.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -356,7 +356,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-11.json",
+      "url": "/reports/asset_size_2026-07-12.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -4587,6 +4587,29 @@
         "Zenodo publication"
       ],
       "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Zenodo 10.5281/zenodo.19139089 Friedman2026TemplateApproachReproducibleGenerative193 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed. Existing tools address fragments of this problem: workflow managers (Snakemake, Nextflow, CWL) orchestrate computation; literate programming systems (Quarto, Jupyter Book, R Markdown, Overleaf, OpenAI Prism) render documents; data versioning tools (DVC) track artifacts—but none enforces cross-cutting quality standards as architectural invariants. template/ applies the principle of Infrastructure as Code to the research lifecyc Zenodo publication zenodo-publication"
+    },
+    {
+      "id": "work:Friedman2026PriorCognitiveArt194",
+      "type": "work",
+      "title": "Prior Cognitive Art",
+      "url": "/works/Friedman2026PriorCognitiveArt194.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21316510",
+      "summary": "A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why a prior exists, identify which ex",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "priors",
+        "Tinbergen's four questions",
+        "hierarchical Bayes",
+        "free energy principle",
+        "Markov blankets",
+        "cognitive science",
+        "conceptual visualization"
+      ],
+      "content": "Prior Cognitive Art Zenodo 10.5281/zenodo.21316510 Friedman2026PriorCognitiveArt194 Active Inference Paper A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why a prior exists, identify which explanatory kind is being requested and name the rule that will terminate the explanation. This working paper argues that Tinbergen's four questions are not stacked levels in one causal chain. They are crossed axes: proximate versus ultimate, and static versus developmental. Mechanism and function ask what a prior is doing now; ontogeny and phylogeny ask how such organization came to be across different timescales. The paper treats the familiar \"prior on a prior\" problem in hierarchical Bayes as structurally parallel to an ontogenetic account that says one prior selects another. Both postpone the question unless they terminate. Three termination families organize the paper: priors Tinbergen's four questions hierarchical Bayes free energy principle Markov blankets cognitive science conceptual visualization priors Tinbergen's four questions hierarchical Bayes free energy principle Markov blankets"
     },
     {
       "id": "software:docxology:template",
@@ -27857,7 +27880,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 192 works.",
+      "title": "The curated bibliography contains 193 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27865,12 +27888,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 192 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 193 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 175 per-paper documentation folders.",
+      "title": "The repository contains 176 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -27878,7 +27901,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 175 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 176 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -28054,7 +28077,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 192 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 193 works, 95 software rows, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

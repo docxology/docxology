@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-11T01:16:15Z",
+  "generated_at": "2026-07-12T03:11:44Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 192,
+  "count": 193,
   "works": [
     {
       "num": 1,
@@ -2689,6 +2689,20 @@
       "url": "https://doi.org/10.5281/zenodo.19139089",
       "doi": "10.5281/zenodo.19139089",
       "docs_path": "papers/2026_TemplateApproachReproducible2/",
+      "has_paper_folder": true
+    },
+    {
+      "num": 194,
+      "citation_key": "Friedman2026PriorCognitiveArt194",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Prior Cognitive Art",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21316510",
+      "doi": "10.5281/zenodo.21316510",
+      "docs_path": "papers/2026_PriorCognitiveArt/",
       "has_paper_folder": true
     }
   ]

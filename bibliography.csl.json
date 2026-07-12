@@ -4781,5 +4781,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.19139089",
     "URL": "https://doi.org/10.5281/zenodo.19139089"
+  },
+  {
+    "id": "Friedman2026PriorCognitiveArt194",
+    "type": "article-journal",
+    "title": "Prior Cognitive Art",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 194; docs: papers/2026_PriorCognitiveArt/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21316510",
+    "URL": "https://doi.org/10.5281/zenodo.21316510"
   }
 ]

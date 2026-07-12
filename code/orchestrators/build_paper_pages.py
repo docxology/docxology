@@ -80,12 +80,24 @@ def pdf_rows(folder: Path) -> str:
     )
 
 
+def image_gallery_link(folder: Path) -> str:
+    """Return a link to the images/ directory if it contains images."""
+    images_dir = folder / "images"
+    if not images_dir.is_dir():
+        return ""
+    count = sum(1 for _ in images_dir.iterdir() if _.is_file() and _.suffix in (".png", ".jpg", ".jpeg", ".gif"))
+    if count == 0:
+        return ""
+    return f'<a class="btn btn-outline" href="images/">Extracted Images ({count})</a>'
+
+
 def required_links(folder: Path) -> str:
     labels = [
         ("README.md", "README"),
         ("AGENTS.md", "AGENTS"),
         ("SKILL.md", "SKILL"),
         ("metadata.json", "Metadata"),
+        ("full_text.md", "Full Text"),
     ]
     return "\n".join(
         f'<a class="btn btn-outline" href="{h(filename)}">{h(label)}</a>'
@@ -159,6 +171,7 @@ def render_page(work: dict) -> str:
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder)}</p></div>
                 <div class="artifact-card"><strong>PDF Files</strong><ul>{pdf_rows(folder)}</ul></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder) or '<span class="muted">Full text extraction pending.</span>'}</p></div>
             </div>
         </section>
     </main>

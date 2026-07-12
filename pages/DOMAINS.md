@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 47
+- Works: 48
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
