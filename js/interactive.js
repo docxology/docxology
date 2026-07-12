@@ -439,6 +439,246 @@
   }
 
   // ═══════════════════════════════════════════════
+  // 8. NAV TOGGLE (replaces inline onclick handlers)
+  // ═══════════════════════════════════════════════
+
+  /**
+   * Wires up the .menu-btn button to toggle .nav-links.open.
+   * Replaces the inline onclick handler that was on 21+ pages.
+   * Also handles keyboard activation (Enter/Space) for a11y.
+   */
+  function initNavToggle() {
+    const btn = document.querySelector('.menu-btn');
+    if (!btn) return;
+    // Don't double-wire if the button already has a listener
+    if (btn.dataset.navToggleWired) return;
+    btn.dataset.navToggleWired = 'true';
+
+    function toggle() {
+      const navLinks = document.querySelector('.nav-links');
+      if (!navLinks) return;
+      const isOpen = navLinks.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    btn.addEventListener('click', toggle);
+  }
+
+  /**
+   * Wires up tab-switching buttons on the homepage.
+   * Replaces inline onclick="showTab(event,'video')" handlers.
+   * Looks for buttons with data-tab attribute.
+   */
+  function initTabSwitcher() {
+    const tabButtons = document.querySelectorAll('[data-tab]');
+    if (tabButtons.length === 0) return;
+
+    tabButtons.forEach(function (btn) {
+      if (btn.dataset.tabWired) return;
+      btn.dataset.tabWired = 'true';
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const tabName = btn.getAttribute('data-tab');
+        if (!tabName) return;
+        // Call the existing showTab function if it exists
+        if (typeof window.showTab === 'function') {
+          window.showTab(e, tabName);
+        }
+      });
+    });
+  }
+
+  /**
+   * Wires up publication filter buttons.
+   * Replaces inline onclick="setTypeFilter('Paper',this)" etc.
+   */
+  function initPublicationFilters() {
+    // Type filter buttons
+    const typeButtons = document.querySelectorAll('[data-type-filter]');
+    typeButtons.forEach(function (btn) {
+      if (btn.dataset.filterWired) return;
+      btn.dataset.filterWired = 'true';
+      btn.addEventListener('click', function () {
+        const filter = btn.getAttribute('data-type-filter');
+        if (!filter) return;
+        if (typeof window.setTypeFilter === 'function') {
+          window.setTypeFilter(filter, btn);
+        }
+      });
+    });
+
+    // Year/venue selects
+    const yearSelect = document.querySelector('[data-year-filter]');
+    if (yearSelect && !yearSelect.dataset.filterWired) {
+      yearSelect.dataset.filterWired = 'true';
+      yearSelect.addEventListener('change', function () {
+        if (typeof window.setYearFilter === 'function') {
+          window.setYearFilter(this.value);
+        }
+      });
+    }
+
+    const venueSelect = document.querySelector('[data-venue-filter]');
+    if (venueSelect && !venueSelect.dataset.filterWired) {
+      venueSelect.dataset.filterWired = 'true';
+      venueSelect.addEventListener('change', function () {
+        if (typeof window.setVenueFilter === 'function') {
+          window.setVenueFilter(this.value);
+        }
+      });
+    }
+
+    // Generic filterPubs selects
+    const filterSelects = document.querySelectorAll('[data-filter-pubs]');
+    filterSelects.forEach(function (sel) {
+      if (sel.dataset.filterWired) return;
+      sel.dataset.filterWired = 'true';
+      sel.addEventListener('change', function () {
+        if (typeof window.filterPubs === 'function') {
+          window.filterPubs();
+        }
+      });
+    });
+  }
+
+  /**
+   * Wires up art gallery controls (size buttons, lightbox).
+   * Replaces inline onclick handlers in art.html.
+   */
+  function initArtGallery() {
+    // Size buttons
+    const sizeButtons = document.querySelectorAll('[data-set-size]');
+    sizeButtons.forEach(function (btn) {
+      if (btn.dataset.artWired) return;
+      btn.dataset.artWired = 'true';
+      btn.addEventListener('click', function () {
+        const size = btn.getAttribute('data-set-size');
+        if (!size) return;
+        if (typeof window.setSize === 'function') {
+          window.setSize(size);
+        }
+      });
+    });
+
+    // Gallery filter select
+    const galleryFilter = document.querySelector('[data-filter-gallery]');
+    if (galleryFilter && !galleryFilter.dataset.artWired) {
+      galleryFilter.dataset.artWired = 'true';
+      galleryFilter.addEventListener('change', function () {
+        if (typeof window.filterGallery === 'function') {
+          window.filterGallery();
+        }
+      });
+    }
+
+    // Lightbox controls
+    const lightboxActions = document.querySelectorAll('[data-lightbox]');
+    lightboxActions.forEach(function (el) {
+      if (el.dataset.artWired) return;
+      el.dataset.artWired = 'true';
+      el.addEventListener('click', function () {
+        const action = el.getAttribute('data-lightbox');
+        if (action === 'close' && typeof window.closeLightbox === 'function') {
+          window.closeLightbox();
+        } else if (action === 'prev' && typeof window.navLightbox === 'function') {
+          window.navLightbox(-1);
+        } else if (action === 'next' && typeof window.navLightbox === 'function') {
+          window.navLightbox(1);
+        }
+      });
+    });
+  }
+
+  /**
+   * Wires up publication domain filters, sort buttons, and reset.
+   * Replaces inline onclick handlers in publications.html.
+   */
+  function initPublicationAdvanced() {
+    // Domain filter buttons
+    const domainButtons = document.querySelectorAll('[data-domain-filter]');
+    domainButtons.forEach(function (btn) {
+      if (btn.dataset.filterWired) return;
+      btn.dataset.filterWired = 'true';
+      btn.addEventListener('click', function () {
+        const filter = btn.getAttribute('data-domain-filter');
+        if (!filter) return;
+        if (typeof window.setDomainFilter === 'function') {
+          window.setDomainFilter(filter, btn);
+        }
+      });
+    });
+
+    // Sort buttons
+    const sortButtons = document.querySelectorAll('[data-sort-by]');
+    sortButtons.forEach(function (btn) {
+      if (btn.dataset.filterWired) return;
+      btn.dataset.filterWired = 'true';
+      btn.addEventListener('click', function () {
+        const sortKey = btn.getAttribute('data-sort-by');
+        if (!sortKey) return;
+        if (typeof window.sortBy === 'function') {
+          window.sortBy(sortKey);
+        }
+      });
+    });
+
+    // Reset filters button
+    const resetBtn = document.querySelector('[data-reset-filters]');
+    if (resetBtn && !resetBtn.dataset.filterWired) {
+      resetBtn.dataset.filterWired = 'true';
+      resetBtn.addEventListener('click', function () {
+        if (typeof window.resetFilters === 'function') {
+          window.resetFilters();
+        }
+      });
+    }
+
+    // Form no-submit
+    const noSubmitForms = document.querySelectorAll('[data-no-submit]');
+    noSubmitForms.forEach(function (form) {
+      if (form.dataset.filterWired) return;
+      form.dataset.filterWired = 'true';
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+      });
+    });
+  }
+
+  /**
+   * Wires up video page channel and zoom controls.
+   * Replaces inline onclick handlers in videos.html.
+   */
+  function initVideoControls() {
+    // Channel buttons
+    const channelButtons = document.querySelectorAll('[data-channel]');
+    channelButtons.forEach(function (btn) {
+      if (btn.dataset.videoWired) return;
+      btn.dataset.videoWired = 'true';
+      btn.addEventListener('click', function () {
+        const channel = btn.getAttribute('data-channel');
+        if (!channel) return;
+        if (typeof window.setChannel === 'function') {
+          window.setChannel(channel, btn);
+        }
+      });
+    });
+
+    // Zoom buttons
+    const zoomButtons = document.querySelectorAll('[data-zoom]');
+    zoomButtons.forEach(function (btn) {
+      if (btn.dataset.videoWired) return;
+      btn.dataset.videoWired = 'true';
+      btn.addEventListener('click', function () {
+        const zoom = btn.getAttribute('data-zoom');
+        if (zoom === null) return;
+        if (typeof window.setZoom === 'function') {
+          window.setZoom(parseInt(zoom, 10), btn);
+        }
+      });
+    });
+  }
+
+  // ═══════════════════════════════════════════════
   // UTILITY
   // ═══════════════════════════════════════════════
 
@@ -461,6 +701,24 @@
     addSectionAnchors();
     addLazyLoading();
     addExternalLinkAttributes();
+
+    // Nav toggle (replaces inline onclick on .menu-btn)
+    initNavToggle();
+
+    // Tab switcher (homepage media tabs)
+    initTabSwitcher();
+
+    // Publication filters
+    initPublicationFilters();
+
+    // Art gallery controls
+    initArtGallery();
+
+    // Publication advanced filters (domain, sort, reset)
+    initPublicationAdvanced();
+
+    // Video page controls (channel, zoom)
+    initVideoControls();
 
     // Search autocomplete — wire up any search input
     const searchInput = document.querySelector('.search-input, .search-wrap input');

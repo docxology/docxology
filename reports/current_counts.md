@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-07-12T20:53:52+00:00`
+Generated: `2026-07-12T21:37:24+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -32,9 +32,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 - Bibliography works: `193`
 - Paper-folder docs: `176`
-- Full-text extractions: `172`
-- Papers with image galleries: `140`
-- Total extracted images: `8996`
+- Full-text extractions: `173`
+- Papers with image galleries: `141`
+- Total extracted images: `9004`
 - Bibliography docs links: `176`
 
 ### Types
@@ -72,18 +72,18 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### GitHub Inventory
 
-- total: `378`
-- docxology: `340`
+- total: `379`
+- docxology: `341`
 - ActiveInferenceInstitute: `38`
 - curated: `92`
-- uncataloged: `286`
+- uncataloged: `287`
 - forks: `241`
 - archived: `0`
-- public: `378`
+- public: `379`
 - private: `0`
-- recently_updated: `120`
-- primary_total: `137`
-- primary_docxology: `101`
+- recently_updated: `121`
+- primary_total: `138`
+- primary_docxology: `102`
 - primary_ActiveInferenceInstitute: `36`
 - fork_docxology: `239`
 - fork_ActiveInferenceInstitute: `2`

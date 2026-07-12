@@ -501,7 +501,17 @@
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
     <!-- Resource hints -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://linkedin.com/in/danielarifriedman">
+    <link rel="me" href="https://youtube.com/@danielarifriedman">
+    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
+
+
+
     <meta name="revised" content="2026-07-05">
 </head>
 <body>
@@ -560,16 +570,16 @@
 
   <span class="tb-label">Channel</span>
   <div class="btn-group" role="group" aria-label="Channel filter">
-    <button class="tb-btn active" data-ch="both" onclick="setChannel('both',this)">Both</button>
-    <button class="tb-btn" data-ch="personal" onclick="setChannel('personal',this)">Personal</button>
-    <button class="tb-btn" data-ch="institute" onclick="setChannel('institute',this)">Institute</button>
+    <button class="tb-btn active" data-ch="both" data-channel="both">Both</button>
+    <button class="tb-btn" data-ch="personal" data-channel="personal">Personal</button>
+    <button class="tb-btn" data-ch="institute" data-channel="institute">Institute</button>
   </div>
 
   <span class="tb-label">Zoom</span>
   <div class="btn-group" role="group" aria-label="Zoom level">
-    <button class="tb-btn active" data-zoom="0" onclick="setZoom(0,this)">Overview</button>
-    <button class="tb-btn" data-zoom="1" onclick="setZoom(1,this)">Month</button>
-    <button class="tb-btn" data-zoom="2" onclick="setZoom(2,this)">Week</button>
+    <button class="tb-btn active" data-zoom="0" data-zoom="0">Overview</button>
+    <button class="tb-btn" data-zoom="1" data-zoom="1">Month</button>
+    <button class="tb-btn" data-zoom="2" data-zoom="2">Week</button>
   </div>
 
   <span class="tb-label">Jump</span>
@@ -1147,8 +1157,9 @@ init().catch(err => {
 });
 </script>
 
-<script src="/js/tts-controls.js?v=20260705" defer></script>
-<script src="/js/tts-controls.js?v=20260705" defer></script>
-<script src="/js/interactive.js?v=20260705" defer></script>
+<script src="/js/tts-controls.js?v=20260712" defer></script>
+<script src="/js/tts-controls.js?v=20260712" defer></script>
+<script src="/js/interactive.js?v=20260712" defer></script>
+    <script src="/js/menu-esc.js?v=20260712" defer></script>
 </body>
 </html>

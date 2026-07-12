@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-type: article
+type: conference-paper
 title: "MVEE:  A Framework for Evolutionary Studies"
 date-released: 2018-01-18
 doi: 10.5281/zenodo.13999298

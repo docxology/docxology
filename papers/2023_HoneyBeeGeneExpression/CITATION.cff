@@ -12,19 +12,14 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Tong
     given-names: Chao
-    orcid: "https://orcid.org/0000-0001-5202-5507"
   - family-names: Linksvayer
     given-names: Timothy A.
-    orcid: "https://orcid.org/0000-0001-7034-1546"
   - family-names: Freund
     given-names: Matthias
-    orcid: "https://orcid.org/0000-0002-5683-6275"
   - family-names: Keough
     given-names: Nicole Weronika
-    orcid: "https://orcid.org/0009-0002-1058-5105"
   - family-names: Johnson
     given-names: Brian
-    orcid: "https://orcid.org/0000-0001-6390-7230"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.10400744

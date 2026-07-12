@@ -6,7 +6,7 @@ version: "1.0.1"
 date-released: 2026-07-06
 doi: 10.5281/zenodo.21227869
 url: "https://doi.org/10.5281/zenodo.21227869"
-repository-code: "https://github.com/docxology/template"
+repository-code: "https://github.com/docxology/template_autopoiesis"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
@@ -18,9 +18,3 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/21227869"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/template/releases/tag/v1.0.1"
-    description: "GitHub release"
-  - type: url
-    value: "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1"
-    description: "GitHub release"

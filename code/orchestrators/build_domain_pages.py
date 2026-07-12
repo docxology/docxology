@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
     breadcrumb_list_jsonld,
@@ -197,6 +198,7 @@ def page_head(
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+{HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="{h(title)} — Daniel Ari Friedman">
     <meta property="og:description" content="{h(description)}">

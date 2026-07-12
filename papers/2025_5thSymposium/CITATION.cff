@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-type: article
+type: conference-paper
 title: "Abstract book for: 5th Applied Active Inference Symposium"
 version: "v2"
 date-released: 2025-11-10
@@ -51,8 +51,10 @@ authors:
     given-names: Michael
   - family-names: Hinrichs
     given-names: Nicolás
-  - name: Octopus
-  - name: PabloFM
+  - family-names: Octopus
+    given-names: 
+  - family-names: PabloFM
+    given-names: 
   - family-names: Waade
     given-names: Peter Thestrup
   - family-names: Worden

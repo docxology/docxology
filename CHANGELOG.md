@@ -2,6 +2,20 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-12 (session 4)
+
+- **Content-Security-Policy deployed**: CSP meta tag (`script-src 'self'`) now on all 23 indexable HTML pages, blocking inline event handlers and inline `<script>` blocks. Documented in `docs/security/security-posture.md`.
+- **Inline event handlers eliminated**: all 68 `onclick`/`onchange`/`onsubmit` handlers across 23 pages migrated to `data-*` attributes wired via `addEventListener` in `js/interactive.js`. New `code/orchestrators/migrate_inline_handlers.py` orchestrator.
+- **rel="me" social verification links** expanded from 3 pages to all 21 indexable pages (Scholar, ORCID, GitHub, LinkedIn, YouTube, Wikidata, Bluesky).
+- **hreflang alternate links** expanded from 1 page (index.html) to all 21 indexable pages.
+- **External `js/menu-esc.js`**: menu Escape-to-close handler moved from inline `<script>` to external file for CSP compliance.
+- **Service worker bumped to v17**: cache version updated for new JS assets.
+- **Accessibility audit enhanced**: `accessibility_audit.py` now checks for `no_inline_handlers` as a gate (16 checks, up from 15). All 23 pages pass.
+- **art.html nav-toggle button**: added missing `.menu-btn` for keyboard-accessible menu toggle on the art gallery page.
+- **New orchestrators**: `deploy_seo_security.py` (idempotent CSP/rel-me/hreflang deployment), `migrate_inline_handlers.py` (inline handler → data-attribute conversion).
+- **Shared head extras**: `HEAD_EXTRAS` constant in `code/src/site_nav.py` centralizes CSP + rel-me + hreflang + dns-prefetch for generated HTML templates (domain, work, paper, video pages).
+- All generated surfaces, sitemap, manifest, and asset-size report refreshed. All validation + 154 tests green.
+
 ## 2026-07-12 (session 3)
 
 - **Image thumbnail previews on paper landing pages**: `image_gallery_link()` in `build_paper_pages.py` now shows up to 6 thumbnail previews of extracted figures with lazy loading and a "+N more" indicator. All 176 paper pages regenerated.

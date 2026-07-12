@@ -7,11 +7,55 @@ import json
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
-# Shared mobile-menu Escape-to-close handler (Esc closes nav, resets aria-expanded, refocuses button).
-MENU_ESC_SCRIPT = '<script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>'
+# Content-Security-Policy meta tag (deployed on all indexable pages).
+# script-src 'self' blocks inline event handlers and inline <script> blocks.
+CSP_META_TAG = (
+    '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; '
+    "script-src 'self'; "
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+    "font-src 'self' https://fonts.gstatic.com; "
+    'img-src \'self\' data: https:; '
+    "connect-src 'self'; "
+    "frame-ancestors 'none'; "
+    "base-uri 'self'; "
+    'form-action \'self\';">'
+)
+
+# rel="me" social verification links (same set as index.html head).
+REL_ME_LINKS = (
+    '    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">\n'
+    '    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">\n'
+    '    <link rel="me" href="https://github.com/docxology">\n'
+    '    <link rel="me" href="https://linkedin.com/in/danielarifriedman">\n'
+    '    <link rel="me" href="https://youtube.com/@danielarifriedman">\n'
+    '    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">\n'
+    '    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">'
+)
+
+# hreflang alternate links.
+HREFLANG_LINKS = (
+    '    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />\n'
+    '    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />'
+)
+
+# Combined head extras block — CSP + rel-me + hreflang + resource hints.
+# Inject this before the closing </head> or before the first <meta property="og:">
+# in generated HTML templates.
+HEAD_EXTRAS = (
+    f"    {CSP_META_TAG}\n"
+    f"{REL_ME_LINKS}\n"
+    f"{HREFLANG_LINKS}\n"
+    '    <link rel="dns-prefetch" href="https://fonts.googleapis.com">\n'
+    '    <link rel="dns-prefetch" href="https://fonts.gstatic.com">'
+)
+
+# Shared mobile-menu Escape-to-close handler — moved to external JS file
+# (js/menu-esc.js) so it complies with the CSP (script-src 'self').
+# Previously this was an inline <script> block, which CSP blocks.
+MENU_ESC_SCRIPT = '<script src="/js/menu-esc.js?v=20260712" defer></script>'
 
 # Interactive layer script tags (TTS + interactive features) — appended before MENU_ESC_SCRIPT on generated pages.
-INTERACTIVE_SCRIPTS = '<script src="/js/tts-controls.js?v=20260705" defer></script>\n<script src="/js/interactive.js?v=20260705" defer></script>'
+INTERACTIVE_SCRIPTS = '<script src="/js/tts-controls.js?v=20260712" defer></script>\n<script src="/js/interactive.js?v=20260712" defer></script>'
 
 # Work pages that are duplicates of another catalogued work (same paper, different
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
@@ -133,7 +177,7 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
     parts = [
         f'    <nav role="navigation" aria-label="Main navigation">',
         f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" onclick="var o=document.querySelector(\'.nav-links\').classList.toggle(\'open\');this.setAttribute(\'aria-expanded\',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>',
+        '        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>',
         '        <div class="nav-links">',
     ]
     for key, href, label in links:
@@ -162,7 +206,7 @@ def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
     parts = [
         '    <nav role="navigation" aria-label="Main navigation">',
         f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" onclick="var o=document.querySelector(\'.nav-links\').classList.toggle(\'open\');this.setAttribute(\'aria-expanded\',o)" aria-label="Toggle menu" aria-expanded="false">☰</button>',
+        '        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>',
         '        <div class="nav-links">',
     ]
     for key, href, label in links:

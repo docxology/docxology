@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T02:49:01Z",
+  "generated_at": "2026-07-12T21:35:05Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -3779,11 +3779,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
         }
       ]
     },
@@ -3852,11 +3852,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
         }
       ]
     },
@@ -6613,6 +6613,13 @@
       ],
       "related_works": [
         {
+          "title": "Autopoietic Project Generation",
+          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -6632,13 +6639,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -7007,11 +7007,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
         }
       ]
     },
@@ -10367,6 +10367,13 @@
           "url": "/works/Friedman2026TemplateMadlibDeterministicToken172.html"
         },
         {
+          "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+          "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TemplatePitchDeckReproducible186.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -10379,13 +10386,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
-        },
-        {
-          "title": "Reimagining Maps",
-          "citation_key": "Friedman2020ReimaginingMaps148",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },
@@ -10732,6 +10732,13 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
+          "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+          "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TemplatePitchDeckReproducible186.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -10744,13 +10751,6 @@
           "year": 2020,
           "domain": "Entomology",
           "url": "/works/Friedman2020DistributedPhysiologyMolecularBasis084.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -12462,11 +12462,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -12835,11 +12835,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -14998,11 +14998,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
         }
       ]
     },
@@ -21057,11 +21057,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -22256,11 +22256,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -22967,11 +22967,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -24127,11 +24127,11 @@
           "url": "/works/Friedman2025IncreasingAccessibilityApplicabilityActive013.html"
         },
         {
-          "title": "Policy Entanglement in Active Inference",
-          "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026PolicyEntanglementActiveInference119.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -24525,11 +24525,11 @@
           "url": "/works/Friedman2025IncreasingAccessibilityApplicabilityActive013.html"
         },
         {
-          "title": "Policy Entanglement in Active Inference",
-          "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026PolicyEntanglementActiveInference119.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -28968,11 +28968,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -29045,11 +29045,11 @@
           "url": "/works/Friedman2025IncreasingAccessibilityApplicabilityActive013.html"
         },
         {
-          "title": "Policy Entanglement in Active Inference",
-          "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026PolicyEntanglementActiveInference119.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -29811,11 +29811,11 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
-          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
-          "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -47369,18 +47369,18 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
+        },
+        {
           "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
           "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
           "year": 2026,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
-        },
-        {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },
@@ -48826,6 +48826,13 @@
           "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning010.html"
         },
         {
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -48838,13 +48845,6 @@
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -60410,18 +60410,18 @@
           "url": "/works/Friedman2025SynthesisAgentNiche021.html"
         },
         {
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
+        },
+        {
           "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
           "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
           "year": 2026,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
-        },
-        {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },
@@ -69796,18 +69796,18 @@
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
         },
         {
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
+        },
+        {
           "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
           "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
           "year": 2026,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
-        },
-        {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },
@@ -72540,6 +72540,13 @@
       ],
       "related_works": [
         {
+          "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+          "citation_key": "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html"
+        },
+        {
           "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
           "citation_key": "Friedman2023EnhancedNSFPostdoctoralReporting054",
           "year": 2023,
@@ -72559,13 +72566,6 @@
           "year": 2025,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2025QuadMathAnalyticalReview4D018.html"
-        },
-        {
-          "title": "A Domain Language for Specifying Controlled Methods",
-          "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026DomainLanguageSpecifyingControlled182.html"
         }
       ]
     },
@@ -72631,18 +72631,18 @@
           "url": "/works/Friedman2025SynthesisAgentNiche021.html"
         },
         {
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
+        },
+        {
           "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
           "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
           "year": 2026,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
-        },
-        {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },
@@ -87616,11 +87616,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
-          "citation_key": "Friedman2021ActiveInferantsActiveInference075",
-          "year": 2021,
-          "domain": "Entomology",
-          "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
         }
       ]
     },
@@ -88023,11 +88023,11 @@
           "url": "/works/Friedman2025SystemsProcessesActiveInference022.html"
         },
         {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -88408,11 +88408,11 @@
           "url": "/works/Friedman2025SystemsProcessesActiveInference022.html"
         },
         {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -88485,11 +88485,11 @@
           "url": "/works/Friedman2025SystemsProcessesActiveInference022.html"
         },
         {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -88562,11 +88562,11 @@
           "url": "/works/Friedman2025SystemsProcessesActiveInference022.html"
         },
         {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },

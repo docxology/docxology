@@ -12,7 +12,6 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Cordes
     given-names: RJ
-    orcid: "https://orcid.org/0000-0002-9913-7159"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.12601675

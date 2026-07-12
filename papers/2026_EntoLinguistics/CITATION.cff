@@ -12,7 +12,6 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Chambers
     given-names: Tucker Cahill
-    orcid: "https://orcid.org/0009-0008-3793-7872"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.19574117

@@ -1,6 +1,6 @@
 // Service Worker for danielarifriedman.com
 // Cache-first strategy for static assets, network-first for pages
-const CACHE_NAME = 'daf-portfolio-v16';
+const CACHE_NAME = 'daf-portfolio-v17';
 const STATIC_ASSETS = [
   '/',
   '/index.html',

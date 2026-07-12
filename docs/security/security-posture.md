@@ -26,13 +26,15 @@ Search and publications UIs build HTML from `search-index.json` / `data/works.js
 
 ## Content Security Policy
 
-GitHub Pages does not expose custom response headers. Optional hardening via meta CSP (test before deploy):
+A CSP meta tag is deployed on all indexable HTML pages:
 
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
 ```
 
-Adjust `connect-src` if adding analytics. Inline handlers (`onclick=`) on legacy pages may require `'unsafe-inline'` in `script-src` until migrated to `addEventListener`.
+`script-src 'self'` blocks all inline event handlers (`onclick=`, `onchange=`, etc.) and inline `<script>` blocks. All event wiring goes through `addEventListener` in the external JS files (`js/interactive.js`, `js/tts-controls.js`, `js/menu-esc.js`). The `style-src 'unsafe-inline'` exception is needed for per-page `<style>` blocks and inline display rules.
+
+The `code/orchestrators/deploy_seo_security.py` script idempotently adds the CSP meta tag (plus `rel="me"` and `hreflang` links) to any HTML page that's missing them. The `code/orchestrators/migrate_inline_handlers.py` script converts inline `on*` event handlers to `data-*` attributes that `interactive.js` wires up via `addEventListener`.
 
 ## Supply chain
 

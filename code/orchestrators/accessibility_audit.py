@@ -98,6 +98,18 @@ def audit_page(path: Path) -> dict:
     text = path.read_text(encoding="utf-8", errors="ignore")
     parser = PageParser()
     parser.feed(text)
+
+    # Check for inline event handlers (onclick, onchange, onsubmit, etc.)
+    # These are a CSP/security concern — the deployed CSP uses script-src 'self'
+    # which blocks inline handlers. All event wiring should go through
+    # addEventListener in external JS files.
+    import re as _re
+    inline_handlers = _re.findall(
+        r'\son(click|change|submit|load|error|mouseover|mouseout|keyup|keydown)="',
+        text,
+        _re.IGNORECASE,
+    )
+
     checks = {
         "lang": bool(parser.lang),
         "title": bool(parser.title.strip()),
@@ -117,6 +129,7 @@ def audit_page(path: Path) -> dict:
         "form_controls_labelled": all(
             c["has_label"] or (c["id"] and c["id"] in parser.label_fors) for c in parser.form_controls
         ),
+        "no_inline_handlers": len(inline_handlers) == 0,
     }
     return {
         "path": str(path.relative_to(REPO_ROOT)),
@@ -124,6 +137,7 @@ def audit_page(path: Path) -> dict:
         "checks": checks,
         "images_without_alt": parser.images_without_alt,
         "buttons_without_label": parser.buttons_without_label,
+        "inline_handlers": len(inline_handlers),
     }
 
 

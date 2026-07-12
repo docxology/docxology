@@ -9,10 +9,8 @@ url: "https://doi.org/10.5281/zenodo.5565577"
 authors:
   - family-names: Cordes
     given-names: Richard J.
-    orcid: "https://orcid.org/0000-0002-9913-7159"
   - family-names: Applegate-Swanson
     given-names: Shaun
-    orcid: "https://orcid.org/0000-0001-9474-6038"
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
@@ -20,7 +18,6 @@ authors:
     given-names: Virginia Bleu
   - family-names: Mikhailova
     given-names: Alexandra
-    orcid: "https://orcid.org/0000-0002-8699-7125"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.5565577

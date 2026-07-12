@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T20:53:55Z",
+  "generated_at": "2026-07-12T21:37:26Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1612,
+  "count": 1613,
   "items": [
     {
       "id": "page:home",
@@ -1129,7 +1129,7 @@
       "title": "BioFirm Development at Applied Active Inference Symposium 2024",
       "url": "/works/Friedman2024BioFirmDevelopmentAtApplied030.html",
       "external_url": "https://doi.org/10.5281/zenodo.14861595",
-      "full_text_url": "",
+      "full_text_url": "/papers/2024_BioFirm/full_text.md",
       "summary": "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize",
       "year": 2024,
       "domain": "Media & Teaching",
@@ -1144,7 +1144,8 @@
         "sustainability",
         "adaptive management"
       ],
-      "content": "BioFirm Development at Applied Active Inference Symposium 2024 Presentation 10.5281/zenodo.14861595 Friedman2024BioFirmDevelopmentAtApplied030 Media & Teaching Presentation BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts. BioFirm bioregional stewardship Active Inference organizational modeling sustainability adaptive management Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024. Content production Pedagogical design"
+      "content": "BioFirm Development at Applied Active Inference Symposium 2024 Presentation 10.5281/zenodo.14861595 Friedman2024BioFirmDevelopmentAtApplied030 Media & Teaching Presentation BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts. BioFirm bioregional stewardship Active Inference organizational modeling sustainability adaptive management Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024. Content production Pedagogical design",
+      "image_count": 8
     },
     {
       "id": "work:Friedman2024BridgingGapsImageMeme031",
@@ -7875,6 +7876,22 @@
       "content": "docxology/p3if The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security Python docxology  curated"
     },
     {
+      "id": "github-repo:docxology/prior_cognitive_art",
+      "type": "github_repository",
+      "title": "docxology/prior_cognitive_art",
+      "url": "https://github.com/docxology/prior_cognitive_art",
+      "summary": "Private project mirror for working/prior_cognitive_art in docxology/projects.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/prior_cognitive_art Private project mirror for working/prior_cognitive_art in docxology/projects. Python docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/qr_live_protocol",
       "type": "github_repository",
       "title": "docxology/qr_live_protocol",
@@ -8192,11 +8209,11 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "HTML",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_data_descriptor Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo. Python docxology  recent"
+      "content": "docxology/template_data_descriptor Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo. HTML docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_eda_notebook",
@@ -8370,11 +8387,11 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "HTML",
         "docxology",
         "recent"
       ],
-      "content": "docxology/template_registered_report Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo. Python docxology  recent"
+      "content": "docxology/template_registered_report Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo. HTML docxology  recent"
     },
     {
       "id": "github-repo:docxology/template_search_project",
@@ -9369,7 +9386,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#141 ~ An Airship Runs Through It Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
+      "content": "#141 ~ An Airship Runs Through It Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
     },
     {
       "id": "video:personal:BS6IZVs5TrA",
@@ -9386,7 +9403,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#091 ~ Looking Through the Overton Window Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
+      "content": "#091 ~ Looking Through the Overton Window Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
     },
     {
       "id": "video:personal:BTRAiTJoM5A",
@@ -10032,7 +10049,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#154 ~ The Autopoietic Decameron Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Innovator's Catechism"
+      "content": "#154 ~ The Autopoietic Decameron Personal Channel 2020-04-21 Research Video Archive Autopoietic Project Generation Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:personal:YKM4WuIOrCQ",
@@ -10117,7 +10134,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#113 ~ Through a Glitch in the Looking Glass Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
+      "content": "#113 ~ Through a Glitch in the Looking Glass Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
     },
     {
       "id": "video:personal:Z04j10CbBRc",
@@ -10899,7 +10916,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#095 ~ Walden 3: The Coming Token Economy Personal Channel 2020-04-21 Research Video Archive Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#095 ~ Walden 3: The Coming Token Economy Personal Channel 2020-04-21 Research Video Archive Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts template_pitch_deck: Reproducible, Validated Pitch-Deck Generation Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
     },
     {
       "id": "video:personal:vdkDxjZYTl4",
@@ -10984,7 +11001,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#083 ~ All Hands On Deck Personal Channel 2020-04-21 Research Video Archive Narrative Information Management Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Distributed physiology and the molecular basis of social life in eusocial insects Emergent Teams for Complex Threats"
+      "content": "#083 ~ All Hands On Deck Personal Channel 2020-04-21 Research Video Archive Narrative Information Management template_pitch_deck: Reproducible, Validated Pitch-Deck Generation Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Distributed physiology and the molecular basis of social life in eusocial insects"
     },
     {
       "id": "video:personal:x9Im6oApEwQ",
@@ -11376,7 +11393,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #020.1 ~ The Emperor’s New Markov Blankets (full upload) Active Inference Institute 2021-04-20 Active Inference Synthesis of Agent and Niche Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #020.1 ~ The Emperor’s New Markov Blankets (full upload) Active Inference Institute 2021-04-20 Active Inference Synthesis of Agent and Niche Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:personal:-2-4dvcybFs",
@@ -11461,7 +11478,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #020.0 ~ The Emperor’s New Markov Blankets Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #020.0 ~ The Emperor’s New Markov Blankets Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:institute:1z1MHiHiYuM",
@@ -11940,7 +11957,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#215 ~ Emergence Through Emergency Personal Channel 2021-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
+      "content": "#215 ~ Emergence Through Emergency Personal Channel 2021-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
     },
     {
       "id": "video:institute:IGKUS1W25rY",
@@ -13291,7 +13308,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #032.3 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #032.3 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:institute:-qZYxSbJ38E",
@@ -13550,7 +13567,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #032.0 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #032.0 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:institute:8JrGE02KzuY",
@@ -13705,7 +13722,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #032.2 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #032.2 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:institute:Fx7xWUU1MlI",
@@ -13961,7 +13978,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #027.2 ~ “Active Inference: Applicability to Different Types of ...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Increasing the Accessibility and Applicability of Active Inference Policy Entanglement in Active Inference"
+      "content": "ActInf Livestream #027.2 ~ “Active Inference: Applicability to Different Types of ...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Increasing the Accessibility and Applicability of Active Inference Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:N3WUpVH8-D8",
@@ -14047,7 +14064,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #027.1 ~ “Active Inference: Applicability to Different Types of ...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Increasing the Accessibility and Applicability of Active Inference Policy Entanglement in Active Inference"
+      "content": "ActInf Livestream #027.1 ~ “Active Inference: Applicability to Different Types of ...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Increasing the Accessibility and Applicability of Active Inference Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:personal:OqeXovNfKzY",
@@ -15010,7 +15027,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #020.2 ~ The Emperor’s New Markov Blankets Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #020.2 ~ The Emperor’s New Markov Blankets Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:institute:qw0SkhnHWWI",
@@ -15027,7 +15044,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #027.0 ~ “Active Inference: Applicability to Different Types of ...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Increasing the Accessibility and Applicability of Active Inference Policy Entanglement in Active Inference"
+      "content": "ActInf Livestream #027.0 ~ “Active Inference: Applicability to Different Types of ...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Increasing the Accessibility and Applicability of Active Inference Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:sEyNwzUuiII",
@@ -15197,7 +15214,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #032.1 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
+      "content": "ActInf Livestream #032.1 ~ \"Stochastic Chaos and Markov Blankets\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art"
     },
     {
       "id": "video:institute:yC-hgjv3ANk",
@@ -18894,7 +18911,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Inês Hipólito ~ Active Inference Insights 004 ~ Markov Blankets, Modularity, Enactivism Active Inference Institute 2023-12-14 Active Inference Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
+      "content": "Inês Hipólito ~ Active Inference Insights 004 ~ Markov Blankets, Modularity, Enactivism Active Inference Institute 2023-12-14 Active Inference Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
     },
     {
       "id": "video:institute:Wp7OebX_k70",
@@ -19218,7 +19235,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Ronald Sladky ~ Active Inference Insights 012 ~ Amygdala, Priors, fMRI Active Inference Institute 2024-02-22 Active Inference CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Active Inference & Behavior Engineering for Teams"
+      "content": "Ronald Sladky ~ Active Inference Insights 012 ~ Amygdala, Priors, fMRI Active Inference Institute 2024-02-22 Active Inference CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling Prior Cognitive Art MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
     },
     {
       "id": "video:institute:Ei8LHRlmbzI",
@@ -21691,7 +21708,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Krys Dolega ~ Active Inference Insights 022 ~ Emperor’s New Markov Blankets, Attention, Dan Dennett Active Inference Institute 2024-05-02 Active Inference Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Synthesis of Agent and Niche The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
+      "content": "Krys Dolega ~ Active Inference Insights 022 ~ Emperor’s New Markov Blankets, Attention, Dan Dennett Active Inference Institute 2024-05-02 Active Inference Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Synthesis of Agent and Niche Prior Cognitive Art The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
     },
     {
       "id": "video:institute:ygmAhA18mkQ",
@@ -23789,7 +23806,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Ines Hipolito: “Dysfunctional Markov Blankets: From Stuck States to Adaptive Perturbations“ Active Inference Institute 2024-11-22 Active Inference Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
+      "content": "Ines Hipolito: “Dysfunctional Markov Blankets: From Stuck States to Adaptive Perturbations“ Active Inference Institute 2024-11-22 Active Inference Synthesis of Agent and Niche Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Prior Cognitive Art The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
     },
     {
       "id": "video:institute:1ZJBJGzOn0g",
@@ -24391,7 +24408,7 @@
         "personal",
         "Computational Methods"
       ],
-      "content": "BioFirm update (Perplexity search and LLM prompts for BioRegions) Personal Channel 2025-03-11 Computational Methods Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing Enhancing Population-based Search with Active Inference QuadMath: An Analytical Review of 4D and Quadray Coordinates A Domain Language for Specifying Controlled Methods"
+      "content": "BioFirm update (Perplexity search and LLM prompts for BioRegions) Personal Channel 2025-03-11 Computational Methods Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing Enhancing Population-based Search with Active Inference QuadMath: An Analytical Review of 4D and Quadray Coordinates"
     },
     {
       "id": "video:personal:geCiuQ5ejto",
@@ -24408,7 +24425,7 @@
         "personal",
         "Active Inference"
       ],
-      "content": "Exploring Dynamic Markov Blankets with OpenManus and Cursor Personal Channel 2025-03-13 Active Inference Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Synthesis of Agent and Niche The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
+      "content": "Exploring Dynamic Markov Blankets with OpenManus and Cursor Personal Channel 2025-03-13 Active Inference Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences Synthesis of Agent and Niche Prior Cognitive Art The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
     },
     {
       "id": "video:institute:-nF0EXr3Rpk",
@@ -27606,7 +27623,7 @@
         "Entomology and Ants",
         "Research Practice"
       ],
-      "content": "Active InferAnt Stream 018.1 ~ A template/ approach to Reproducible Generative Research Active Inference Institute 2026-03-24 Entomology and Ants Research Practice Generalized Notation Notation for Active Inference Models A template/ approach to Reproducible Generative Research A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Active Inferants: An Active Inference Framework for Ant Colony Behavior"
+      "content": "Active InferAnt Stream 018.1 ~ A template/ approach to Reproducible Generative Research Active Inference Institute 2026-03-24 Entomology and Ants Research Practice Generalized Notation Notation for Active Inference Models A template/ approach to Reproducible Generative Research A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
     },
     {
       "id": "video:personal:2TriTtiwqGA",
@@ -27693,7 +27710,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Fundamentals of Active Inference (Onboarding & Introduction, Session 1) April 21, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
+      "content": "Fundamentals of Active Inference (Onboarding & Introduction, Session 1) April 21, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:7XrONg4dBrI",
@@ -27778,7 +27795,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Fundamentals of Active Inference (Chapter 1 and Appendix A, Session 5) April 30, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
+      "content": "Fundamentals of Active Inference (Chapter 1 and Appendix A, Session 5) April 30, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:eZX2_UARjaY",
@@ -27795,7 +27812,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Fundamentals of Active Inference (Chapter 1 and Appendix A, Session 4) April 28, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
+      "content": "Fundamentals of Active Inference (Chapter 1 and Appendix A, Session 4) April 28, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:fc-GmNt3sNg",
@@ -27812,7 +27829,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Fundamentals of Active Inference (Onboarding & Introduction, Session 3) April 24, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
+      "content": "Fundamentals of Active Inference (Onboarding & Introduction, Session 3) April 24, 2026 Active Inference Institute 2026-05-20 Active Inference A Worked Example of the Bayesian Mechanics of Classical Objects Interoception as modeling, allostasis as control Systems Processes, Active Inference, and Beyond Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:j3zcAdQkZd4",

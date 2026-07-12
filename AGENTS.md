@@ -50,12 +50,13 @@
 
 ### 🖥️ WEB DEVELOPER
 
-- Maintains the site-wide interactive layer: [js/tts-controls.js](js/tts-controls.js) (Web Speech API text-to-speech) and [js/interactive.js](js/interactive.js) (reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links)
-- Ensures all 23 indexable HTML pages include both TTS + interactive script tags
+- Maintains the site-wide interactive layer: [js/tts-controls.js](js/tts-controls.js) (Web Speech API text-to-speech), [js/interactive.js](js/interactive.js) (reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links, nav-toggle, tab-switcher, publication filters, art gallery controls, video controls), and [js/menu-esc.js](js/menu-esc.js) (menu Escape-to-close handler)
+- Ensures all 23 indexable HTML pages include both TTS + interactive + menu-esc script tags
+- **CSP compliance**: all pages deploy a `<meta http-equiv="Content-Security-Policy">` tag with `script-src 'self'` — no inline event handlers (`onclick=`, `onchange=`, etc.) or inline `<script>` blocks are permitted. Use `code/orchestrators/deploy_seo_security.py` to add CSP/rel-me/hreflang to new pages and `code/orchestrators/migrate_inline_handlers.py` to convert inline handlers to `data-*` attributes
 - Guards SEO invariants: canonical URLs, JSON-LD structured data (BreadcrumbList, Person, WebSite, WebPage, ProfessionalService), OG/Twitter meta, resource hints, `rel="me"`, `hreflang`
 - Maintains PWA readiness: service worker ([sw.js](sw.js)), manifest ([manifest.json](manifest.json)), cache strategy
 - Keeps the design system documentation ([docs/design/](docs/design/)) in sync with [style.css](style.css)
-- Runs [code/orchestrators/accessibility_audit.py](code/orchestrators/accessibility_audit.py) and [code/orchestrators/validate_repo.py](code/orchestrators/validate_repo.py) to gate SEO + a11y + generated-layer correctness
+- Runs [code/orchestrators/accessibility_audit.py](code/orchestrators/accessibility_audit.py) (16 checks including `no_inline_handlers`) and [code/orchestrators/validate_repo.py](code/orchestrators/validate_repo.py) to gate SEO + a11y + generated-layer correctness
 
 ---
 
@@ -140,7 +141,7 @@ docxology/
 
 | Date | Agent | Action | Status |
 | --- | --- | --- | --- |
-| 2026-03-08 | ARCHIVIST | Rebuilt pages/BIBLIOGRAPHY.md as unified sortable table | ✅ |
+| 2026-07-12 | WEB DEVELOPER | Deployed CSP meta tag on all 23 indexable pages; eliminated 68 inline event handlers via data-* attributes + addEventListener; expanded rel="me" and hreflang to all pages; added external js/menu-esc.js; bumped SW v17; enhanced accessibility audit with no_inline_handlers check | ✅ |
 | 2026-03-08 | RESEARCHER | Verified paper-folder documentation completeness | ✅ |
 | 2026-03-08 | EDUCATOR | Fixed SKILL.md for CryptoJews and EhrlichialInfection | ✅ |
 | 2026-03-08 | INTEGRATOR | Redesigned README.md with domain matrix and deep-links | ✅ |

@@ -44,7 +44,8 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <!-- hreflang for multilingual support -->
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+
     <meta name="revised" content="2026-07-05">
     <meta name="date" content="2026-07-05">
     <!-- Open Graph -->
@@ -269,7 +270,7 @@
     <!-- ── NAV ── -->
     <nav role="navigation" aria-label="Main navigation">
         <a href="#" class="nav-logo" aria-label="Daniel Ari Friedman — Home">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
         <div class="nav-links" id="nav-menu" role="menubar">
             <a href="#about" role="menuitem">About</a>
             <a href="#research" role="menuitem">Research</a>
@@ -434,11 +435,11 @@
                 <div class="section-divider"></div>
             </div>
             <div class="media-tabs">
-                <button class="active" onclick="showTab(event,'video')">Video (700+)</button>
-                <button onclick="showTab(event,'podcasts')">Podcasts</button>
-                <button onclick="showTab(event,'talks')">Talks</button>
-                <button onclick="showTab(event,'interviews')">Interviews</button>
-                <button onclick="showTab(event,'press')">Press</button>
+                <button class="active" data-tab="video">Video (700+)</button>
+                <button data-tab="podcasts">Podcasts</button>
+                <button data-tab="talks">Talks</button>
+                <button data-tab="interviews">Interviews</button>
+                <button data-tab="press">Press</button>
             </div>
             <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
                 <div id="tab-video" class="media-panel active">
@@ -573,8 +574,8 @@
             navigator.serviceWorker.register('/sw.js').catch(() => {});
         }
         </script>
-    <script src="/js/tts-controls.js?v=20260705" defer></script>
-    <script src="/js/interactive.js?v=20260705" defer></script>
-    <script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
+    <script src="/js/tts-controls.js?v=20260712" defer></script>
+    <script src="/js/interactive.js?v=20260712" defer></script>
+    <script src="/js/menu-esc.js?v=20260712" defer></script>
 </body>
 </html>

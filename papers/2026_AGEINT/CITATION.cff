@@ -6,7 +6,7 @@ version: "0.1"
 date-released: 2026-06-17
 doi: 10.5281/zenodo.20732274
 url: "https://doi.org/10.5281/zenodo.20732274"
-license: CC-BY-4.0
+repository-code: "https://github.com/docxology/AGEINT"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
@@ -14,13 +14,7 @@ authors:
 identifiers:
   - type: doi
     value: 10.5281/zenodo.20732274
-    description: "Zenodo concept DOI (all versions)"
-  - type: doi
-    value: 10.5281/zenodo.20732275
-    description: "Zenodo version DOI (0.1)"
+    description: "Zenodo DOI"
   - type: url
     value: "https://zenodo.org/records/20732274"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/AGEINT/releases/tag/v0.1.0"
-    description: "GitHub release"

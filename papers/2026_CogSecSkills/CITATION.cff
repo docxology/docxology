@@ -18,6 +18,3 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20804585"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"
-    description: "GitHub release"

@@ -18,6 +18,7 @@ TRANSCRIPT_DIR = REPO_ROOT / "data" / "video-transcripts"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
     SITE_ORIGIN,
@@ -520,6 +521,7 @@ def render_video_page(video: dict) -> str:
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/videos.json" title="Video metadata JSON">
+{HEAD_EXTRAS}
     <meta property="og:type" content="video.other">
     <meta property="og:title" content="{h(title)}">
     <meta property="og:description" content="{h(description)}">
@@ -644,6 +646,7 @@ def render_index(payload: dict) -> str:
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/videos.json" title="Video metadata JSON">
+{HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="{h(title)}">
     <meta property="og:description" content="{h(clip_description(description, 155))}">

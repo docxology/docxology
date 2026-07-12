@@ -2,10 +2,11 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
 title: "Self-Improvement Agent Harness: A Deterministic SIA Exemplar"
-version: "0.1.0"
+version: "0.1.2"
 date-released: 2026
 doi: 10.5281/zenodo.20453879
 url: "https://doi.org/10.5281/zenodo.20453879"
+repository-code: "https://github.com/docxology/template_sia"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
@@ -17,9 +18,3 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20453879"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/template_sia/releases/tag/v0.1.1"
-    description: "GitHub release"
-  - type: url
-    value: "https://github.com/docxology/template_sia/releases/tag/v0.1.2"
-    description: "GitHub release"

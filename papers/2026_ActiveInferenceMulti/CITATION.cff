@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
 title: "Active Inference Multi-Track Exemplar"
-version: "0.3.0"
-date-released: 2026-05-28
+version: "0.3.2"
+date-released: 2026-06-26
 doi: 10.5281/zenodo.20417021
 url: "https://doi.org/10.5281/zenodo.20417021"
 repository-code: "https://github.com/docxology/template_active_inference"
@@ -18,12 +18,3 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20417021"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/template_active_inference/releases/tag/v0.3.0"
-    description: "GitHub release"
-  - type: url
-    value: "https://github.com/docxology/template_active_inference/releases/tag/v0.3.1"
-    description: "GitHub release"
-  - type: url
-    value: "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2"
-    description: "GitHub release"

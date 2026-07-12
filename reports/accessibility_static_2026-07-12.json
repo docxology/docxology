@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T20:53:54Z",
+  "generated_at": "2026-07-12T21:37:26Z",
   "scope": "Static root HTML pages; complements, but does not replace, browser-based accessibility testing.",
   "page_count": 23,
   "passing": 23,
@@ -22,10 +22,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "catalog.html",
@@ -45,10 +47,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "cite-verify.html",
@@ -68,10 +72,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "collaborators.html",
@@ -91,10 +97,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "discovery.html",
@@ -114,10 +122,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domain-active-inference.html",
@@ -137,10 +147,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domain-art-synergetics.html",
@@ -160,10 +172,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domain-biomedicine.html",
@@ -183,10 +197,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domain-cognitive-security.html",
@@ -206,10 +222,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domain-computational.html",
@@ -229,10 +247,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domain-entomology.html",
@@ -252,10 +272,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "domains.html",
@@ -275,10 +297,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "evidence.html",
@@ -298,10 +322,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "exports.html",
@@ -321,10 +347,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "index.html",
@@ -344,10 +372,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "media.html",
@@ -367,10 +397,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "publications.html",
@@ -390,10 +422,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "repositories-forks.html",
@@ -413,10 +447,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "repositories.html",
@@ -436,10 +472,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "search.html",
@@ -459,10 +497,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "software.html",
@@ -482,10 +522,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "updates.html",
@@ -505,10 +547,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     },
     {
       "path": "videos.html",
@@ -528,10 +572,12 @@
         "reduced_motion_css": true,
         "single_h1": true,
         "no_heading_skips": true,
-        "form_controls_labelled": true
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
       },
       "images_without_alt": [],
-      "buttons_without_label": 0
+      "buttons_without_label": 0,
+      "inline_handlers": 0
     }
   ]
 }

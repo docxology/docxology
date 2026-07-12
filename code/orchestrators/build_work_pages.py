@@ -15,7 +15,7 @@ WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
+from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
 
 try:
     from report_paths import generated_timestamp
@@ -447,6 +447,7 @@ def page_head(work: dict) -> str:
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
     <link rel="alternate" type="text/x-bibtex" href="/bibliography.bib" title="BibTeX bibliography">
     <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
+{HEAD_EXTRAS}
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])}">
     <meta property="og:description" content="{h(description)}">
@@ -610,6 +611,7 @@ def render_index(works: list[dict]) -> str:
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+{HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="Works Index — Daniel Ari Friedman">
     <meta property="og:description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">

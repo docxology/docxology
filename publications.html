@@ -24,7 +24,10 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="prefetch" href="/data/works.json" as="fetch" crossorigin>
-    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
+
+
     <meta name="revised" content="2026-07-05">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Daniel Ari Friedman Publications | 193 Research Works">
@@ -73,7 +76,7 @@
 
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo" aria-label="Daniel Ari Friedman — Home">Daniel Ari Friedman</a>
-        <button class="menu-btn" onclick="var o=document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',o)" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
         <div class="nav-links" id="nav-menu" role="menubar">
             <a href="index.html#about" role="menuitem">About</a>
             <a href="index.html#research" role="menuitem">Research</a>
@@ -125,40 +128,40 @@
                 <p>Filter by title, venue, year, domain, type, DOI, and paper-folder availability.</p>
                 <div class="section-divider"></div>
             </div>
-        <form class="filter-row" role="search" aria-label="Filter publications" onsubmit="return false">
+        <form class="filter-row" role="search" aria-label="Filter publications" data-no-submit>
             <div class="search-wrap">
                 <span class="search-icon" aria-hidden="true">Search</span>
                 <input type="search" id="pub-search" placeholder="Search title, venue, type, DOI, domain (e.g. entomology, active inference)…" aria-label="Search publications" oninput="filterPubs()" autocomplete="off" enterkeyhint="search" spellcheck="false">
             </div>
             <div class="filter-btns" role="group" aria-label="Filter by type">
-                <button type="button" class="filter-btn active" onclick="setTypeFilter('all',this)" id="filter-all">All types</button>
-                <button type="button" class="filter-btn" onclick="setTypeFilter('Paper',this)" id="filter-paper">Papers</button>
-                <button type="button" class="filter-btn" onclick="setTypeFilter('Book',this)" id="filter-book">Books</button>
-                <button type="button" class="filter-btn" onclick="setTypeFilter('Presentation',this)" id="filter-pres">Presentations</button>
-                <button type="button" class="filter-btn" onclick="setTypeFilter('Course',this)" id="filter-course">Courses</button>
-                <button type="button" class="filter-btn" onclick="setTypeFilter('Series',this)" id="filter-series">Series</button>
-                <button type="button" class="filter-btn" onclick="setTypeFilter('Playbook',this)" id="filter-playbook">Playbooks</button>
+                <button type="button" class="filter-btn active" data-type-filter="all" id="filter-all">All types</button>
+                <button type="button" class="filter-btn" data-type-filter="Paper" id="filter-paper">Papers</button>
+                <button type="button" class="filter-btn" data-type-filter="Book" id="filter-book">Books</button>
+                <button type="button" class="filter-btn" data-type-filter="Presentation" id="filter-pres">Presentations</button>
+                <button type="button" class="filter-btn" data-type-filter="Course" id="filter-course">Courses</button>
+                <button type="button" class="filter-btn" data-type-filter="Series" id="filter-series">Series</button>
+                <button type="button" class="filter-btn" data-type-filter="Playbook" id="filter-playbook">Playbooks</button>
             </div>
             <div class="filter-selects" aria-label="Additional publication filters">
-                <label for="year-filter"><span>Year</span><select id="year-filter" onchange="setYearFilter(this.value)"><option value="all">All years</option></select></label>
-                <label for="venue-filter"><span>Venue</span><select id="venue-filter" onchange="setVenueFilter(this.value)"><option value="all">All venues</option></select></label>
-                <span class="filter-toggle"><input type="checkbox" id="doi-filter" onchange="filterPubs()"> <label for="doi-filter">DOI only</label></span>
-                <span class="filter-toggle"><input type="checkbox" id="docs-filter" onchange="filterPubs()"> <label for="docs-filter">Paper folder</label></span>
-                <button type="button" class="filter-btn" onclick="resetFilters()">Reset</button>
+                <label for="year-filter"><span>Year</span><select id="year-filter" data-year-filter><option value="all">All years</option></select></label>
+                <label for="venue-filter"><span>Venue</span><select id="venue-filter" data-venue-filter><option value="all">All venues</option></select></label>
+                <span class="filter-toggle"><input type="checkbox" id="doi-filter" data-filter-pubs> <label for="doi-filter">DOI only</label></span>
+                <span class="filter-toggle"><input type="checkbox" id="docs-filter" data-filter-pubs> <label for="docs-filter">Paper folder</label></span>
+                <button type="button" class="filter-btn" data-reset-filters>Reset</button>
             </div>
             <span class="result-count" id="result-count" aria-live="polite">Loading catalog…</span>
         </form>
 
         <div class="domain-legend" role="group" aria-label="Filter by domain">
-            <span class="domain-pill active" onclick="setDomainFilter('all',this)">All domains</span>
-            <span class="domain-pill" onclick="setDomainFilter('🐜',this)">Entomology</span>
-            <span class="domain-pill" onclick="setDomainFilter('🧠',this)">Active Inference</span>
-            <span class="domain-pill" onclick="setDomainFilter('🛡',this)">Cognitive Security</span>
-            <span class="domain-pill" onclick="setDomainFilter('🎨',this)">Art &amp; Synergetics</span>
-            <span class="domain-pill" onclick="setDomainFilter('💻',this)">Computational</span>
-            <span class="domain-pill" onclick="setDomainFilter('🌍',this)">AII Ecosystem</span>
-            <span class="domain-pill" onclick="setDomainFilter('🎥',this)">Media</span>
-            <span class="domain-pill" onclick="setDomainFilter('🧬',this)">Genetics</span>
+            <span class="domain-pill active" data-domain-filter="all">All domains</span>
+            <span class="domain-pill" data-domain-filter="🐜">Entomology</span>
+            <span class="domain-pill" data-domain-filter="🧠">Active Inference</span>
+            <span class="domain-pill" data-domain-filter="🛡">Cognitive Security</span>
+            <span class="domain-pill" data-domain-filter="🎨">Art &amp; Synergetics</span>
+            <span class="domain-pill" data-domain-filter="💻">Computational</span>
+            <span class="domain-pill" data-domain-filter="🌍">AII Ecosystem</span>
+            <span class="domain-pill" data-domain-filter="🎥">Media</span>
+            <span class="domain-pill" data-domain-filter="🧬">Genetics</span>
         </div>
 
         <div class="pub-table-wrap">
@@ -167,13 +170,13 @@
                 <caption id="pub-table-desc" class="visually-hidden">All works in the catalog; use search and filters to narrow results. Columns are sortable except the link column.</caption>
                 <thead>
                     <tr>
-                        <th class="td-num" scope="col" data-sortable="num"><button type="button" class="th-sort-btn" onclick="sortBy('num')"># <span class="sort-icon" aria-hidden="true">↕</span></button></th>
-                        <th class="td-year" scope="col" data-sortable="year"><button type="button" class="th-sort-btn" onclick="sortBy('year')">Year <span class="sort-icon" aria-hidden="true">↕</span></button></th>
-                        <th class="td-domain" scope="col" data-sortable="domain"><button type="button" class="th-sort-btn" onclick="sortBy('domain')">Domain <span class="sort-icon" aria-hidden="true">↕</span></button></th>
-                        <th class="td-type" scope="col" data-sortable="type"><button type="button" class="th-sort-btn" onclick="sortBy('type')">Type <span class="sort-icon" aria-hidden="true">↕</span></button></th>
-                        <th class="td-title" scope="col" data-sortable="title"><button type="button" class="th-sort-btn" onclick="sortBy('title')">Title <span class="sort-icon" aria-hidden="true">↕</span></button></th>
-                        <th class="td-venue" scope="col" data-sortable="venue"><button type="button" class="th-sort-btn" onclick="sortBy('venue')">Venue <span class="sort-icon" aria-hidden="true">↕</span></button></th>
-                        <th class="td-doi" scope="col" data-sortable="doi"><button type="button" class="th-sort-btn" onclick="sortBy('doi')">Link / ID <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-num" scope="col" data-sortable="num"><button type="button" class="th-sort-btn" data-sort-by="num"># <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-year" scope="col" data-sortable="year"><button type="button" class="th-sort-btn" data-sort-by="year">Year <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-domain" scope="col" data-sortable="domain"><button type="button" class="th-sort-btn" data-sort-by="domain">Domain <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-type" scope="col" data-sortable="type"><button type="button" class="th-sort-btn" data-sort-by="type">Type <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-title" scope="col" data-sortable="title"><button type="button" class="th-sort-btn" data-sort-by="title">Title <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-venue" scope="col" data-sortable="venue"><button type="button" class="th-sort-btn" data-sort-by="venue">Venue <span class="sort-icon" aria-hidden="true">↕</span></button></th>
+                        <th class="td-doi" scope="col" data-sortable="doi"><button type="button" class="th-sort-btn" data-sort-by="doi">Link / ID <span class="sort-icon" aria-hidden="true">↕</span></button></th>
                     </tr>
                 </thead>
                 <tbody id="pub-tbody">
@@ -202,8 +205,8 @@
     </footer>
 
     <script src="js/publications.js?v=newspaper-glitch-20260530c" defer></script>
-    <script src="/js/tts-controls.js?v=20260705" defer></script>
-    <script src="/js/interactive.js?v=20260705" defer></script>
-    <script>/*menu-esc*/(function(){if(window.__navEsc)return;window.__navEsc=1;document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".nav-links.open");if(m){m.classList.remove("open");var b=document.querySelector(".menu-btn");if(b){b.setAttribute("aria-expanded","false");b.focus();}}}});})();</script>
+    <script src="/js/tts-controls.js?v=20260712" defer></script>
+    <script src="/js/interactive.js?v=20260712" defer></script>
+    <script src="/js/menu-esc.js?v=20260712" defer></script>
 </body>
 </html>

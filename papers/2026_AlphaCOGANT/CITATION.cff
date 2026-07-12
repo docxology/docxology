@@ -11,6 +11,8 @@ authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Chambers
+    given-names: Tucker Cahill
 identifiers:
   - type: doi
     value: 10.5281/zenodo.20976824
@@ -18,9 +20,3 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20976824"
     description: "Zenodo landing page"
-  - type: url
-    value: "https://github.com/docxology/alphacogant/releases/tag/v1.0.1"
-    description: "GitHub release"
-  - type: url
-    value: "https://github.com/docxology/alphacogant/releases/tag/v1.0.0"
-    description: "GitHub release"

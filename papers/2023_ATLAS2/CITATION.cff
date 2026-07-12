@@ -8,7 +8,6 @@ url: "https://doi.org/10.5281/zenodo.10362561"
 authors:
   - family-names: Cordes
     given-names: R.J.
-    orcid: "https://orcid.org/0000-0002-9913-7159"
   - family-names: David
     given-names: Scott
   - family-names: Friedman
@@ -16,7 +15,6 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Mikhailova
     given-names: Alexandra
-    orcid: "https://orcid.org/0000-0002-8699-7125"
   - family-names: Penland
     given-names: Andrew
   - family-names: Young
