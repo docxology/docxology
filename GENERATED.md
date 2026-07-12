@@ -23,8 +23,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Work pages | `works/*.html`<br>`data/work-enrichment.json` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/SKILL.md` | `python3 code/orchestrators/build_work_pages.py` |
 | Video pages | `videos/*.html`<br>`data/videos.json` | `code/data/youtube_personal.json`<br>`code/data/youtube_institute.json`<br>`data/video-transcripts/*.txt`<br>`data/works.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_video_pages.py` |
 | Video transcript cache | `data/video-transcripts/*.txt` | `YouTube captions`<br>`code/orchestrators/fetch_video_transcripts.py` | `python3 code/orchestrators/fetch_video_transcripts.py --channel all` |
-| Paper folder pages | `papers/*/index.html` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/AGENTS.md`<br>`papers/*/*.pdf`<br>`papers/*/full_text.md`<br>`papers/*/images/` | `python3 code/orchestrators/build_paper_pages.py` |
-| Paper full text + images | `papers/*/full_text.md`<br>`papers/*/images/` | `papers/*/*.pdf` | `python3 code/orchestrators/extract_paper_texts.py --force` |
+| Paper folder pages | `papers/*/index.html` | `data/works.json`<br>`papers/*/README.md`<br>`papers/*/AGENTS.md`<br>`papers/*/*.pdf` | `python3 code/orchestrators/build_paper_pages.py` |
 | Evidence pages | `evidence.html`<br>`pages/EVIDENCE.md` | `data/claims.json`<br>`code/orchestrators/build_evidence_page.py` | `python3 code/orchestrators/build_evidence_page.py` |
 | Search index | `search-index.json` | `data/*.json`<br>`data/work-enrichment.json` | `python3 code/orchestrators/build_search_index.py` |
 | Data catalog | `catalog.html`<br>`data/catalog.json` | `code/orchestrators/build_catalog.py`<br>`data/*.json` | `python3 code/orchestrators/build_catalog.py` |
@@ -37,7 +36,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Asset size audit | `reports/asset_size_2026-07-12.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
 | Static accessibility report | `reports/accessibility_static_2026-07-12.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
 | Browser smoke checks | `reports/browser-smoke/2026-07-02/*.png`<br>`reports/browser-smoke/2026-07-02/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
-| Live site verification | `reports/live_site_verification_2026-07-11.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
+| Live site verification | `reports/live_site_verification_2026-07-12.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | Image sitemap | `sitemap-images.xml` | `data/artworks.json`<br>`art/*`<br>`code/orchestrators/build_image_sitemap.py` | `python3 code/orchestrators/build_image_sitemap.py` |

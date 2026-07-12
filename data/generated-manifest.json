@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T03:47:37Z",
+  "generated_at": "2026-07-12T18:48:27Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -419,7 +419,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-07-11.json"
+        "reports/live_site_verification_2026-07-12.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

@@ -345,6 +345,29 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
+      "name": "Full-Text Extraction Corpus",
+      "description": "166 extracted full_text.md files with page-level text from paper PDFs, plus images/ subdirectories of extracted figures. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "url": "https://danielarifriedman.com/papers/",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/papers/",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#generated-manifest",
       "name": "Generated Artifact Manifest",
       "description": "Source-to-output map and rebuild commands for generated files.",
@@ -555,7 +578,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-07-11.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-07-12.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -569,7 +592,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-07-11.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-07-12.json",
         "encodingFormat": "application/json"
       }
     }
@@ -676,6 +699,11 @@
                     <p>Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files.</p>
                     <span>data/work-enrichment.json</span>
                 </article>
+                <article class="catalog-card" id="full-text-corpus">
+                    <h2><a href="papers/">Full-Text Extraction Corpus</a></h2>
+                    <p>166 extracted full_text.md files with page-level text from paper PDFs, plus images/ subdirectories of extracted figures. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.</p>
+                    <span>papers/</span>
+                </article>
                 <article class="catalog-card" id="generated-manifest">
                     <h2><a href="data/generated-manifest.json">Generated Artifact Manifest</a></h2>
                     <p>Source-to-output map and rebuild commands for generated files.</p>
@@ -722,9 +750,9 @@
                     <span>reports/browser-smoke/2026-07-02/manifest.json</span>
                 </article>
                 <article class="catalog-card" id="live-site">
-                    <h2><a href="reports/live_site_verification_2026-07-11.json">Live Site Verification</a></h2>
+                    <h2><a href="reports/live_site_verification_2026-07-12.json">Live Site Verification</a></h2>
                     <p>Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.</p>
-                    <span>reports/live_site_verification_2026-07-11.json</span>
+                    <span>reports/live_site_verification_2026-07-12.json</span>
                 </article>
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>

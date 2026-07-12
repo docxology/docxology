@@ -1058,7 +1058,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     )
     source_hash = provenance["source_manifest"]["sha256"]
     json_hash = provenance["resume_json"]["sha256"]
-    pdf_hash = provenance["resume_pdf"]["sha256"]
+    pdf_hash = provenance.get("resume_pdf", {}).get("sha256", "N/A (reportlab not installed)")
     content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1118,7 +1118,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
             <h2 id="artifacts">Artifacts</h2>
             <div class="flow-grid">
                 <article class="flow-card"><h3>Structured JSON</h3><p><a href="/data/resume.json">/data/resume.json</a></p><p>{provenance["resume_json"]["bytes"]:,} bytes</p></article>
-                <article class="flow-card"><h3>Public PDF</h3><p><a href="/resume/resume.pdf">/resume/resume.pdf</a></p><p>{provenance["resume_pdf"]["bytes"]:,} bytes</p></article>
+                <article class="flow-card"><h3>Public PDF</h3><p><a href="/resume/resume.pdf">/resume/resume.pdf</a></p><p>{provenance.get("resume_pdf", {}).get("bytes", 0):,} bytes</p></article>
                 <article class="flow-card"><h3>Verification URL</h3><p><a href="/resume/verify.html">/resume/verify.html</a></p><p>{VERIFY_URL}</p></article>
             </div>
         </section>
@@ -1170,9 +1170,13 @@ def tracked_outputs(payload: dict) -> dict[Path, bytes]:
     outputs: dict[Path, bytes] = {JSON_OUT: json_bytes}
     for variant, path in TXT_OUTPUTS.items():
         outputs[path] = render_text(payload, variant).encode("utf-8")
-    pdf_bytes = render_pdf(payload, "full", provenance)
-    provenance = {**provenance, "resume_pdf": {"bytes": len(pdf_bytes), "sha256": _sha256_bytes(pdf_bytes)}}
-    outputs[FULL_PDF] = pdf_bytes
+    try:
+        pdf_bytes = render_pdf(payload, "full", provenance)
+        provenance = {**provenance, "resume_pdf": {"bytes": len(pdf_bytes), "sha256": _sha256_bytes(pdf_bytes)}}
+        outputs[FULL_PDF] = pdf_bytes
+    except ImportError:
+        import sys
+        print("warning: reportlab not installed, skipping PDF check", file=sys.stderr)
     outputs[VERIFY_OUT] = render_verify_html(payload, provenance)
     return outputs
 

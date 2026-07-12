@@ -7,7 +7,7 @@ import argparse
 import json
 import sys
 from collections import Counter
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -64,7 +64,7 @@ def collect_counts() -> dict:
     decision_payload = json.loads(decision_path.read_text(encoding="utf-8")) if decision_path.is_file() else {}
 
     return {
-        "generated_at": datetime.now(UTC).replace(microsecond=0).isoformat(),
+        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "command": "uv run python3 code/orchestrators/build_current_counts.py",
         "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
         "sources": {

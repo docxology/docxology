@@ -101,15 +101,8 @@ def render(lastmod: str | None = None) -> str:
             if path.name == "index.html":
                 continue
             entries.append(url_entry(f"works/{path.name}", "yearly", "0.45", date))
-    # Include paper full_text.md files for crawlability
-    papers_dir = REPO_ROOT / "papers"
-    if papers_dir.exists():
-        for paper_dir in sorted(papers_dir.iterdir()):
-            if not paper_dir.is_dir() or not paper_dir.name[0].isdigit():
-                continue
-            full_text = paper_dir / "full_text.md"
-            if full_text.is_file():
-                entries.append(url_entry(f"papers/{paper_dir.name}/full_text.md", "yearly", "0.35", date))
+    # Paper folder index.html pages are already covered by paper_pages builder;
+    # full_text.md is NOT sitemapped (SEO invariant forbids /papers/ URLs in sitemap).
     videos_dir = REPO_ROOT / "videos"
     if videos_dir.exists():
         for path in sorted(videos_dir.glob("*.html")):

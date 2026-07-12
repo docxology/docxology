@@ -6,13 +6,19 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 - Added work **#194 "Prior Cognitive Art"** (`zenodo.21316510`, `docxology/prior_cognitive_art` v0.1.0) via the canonical `sync_paired_publications.py --apply` path. Paper folder, bibliography row, work page, domain page, search index, sitemap, and all generated surfaces updated.
 - **Full-text extraction pipeline**: new `code/orchestrators/extract_paper_texts.py` extracts page-level text and embedded images from all paper PDFs using PyMuPDF (with OCR fallback via tesseract for scanned PDFs).
-  - **164 papers** now have `full_text.md` with complete page-by-page text extraction
+  - **166 papers** now have `full_text.md` with complete page-by-page text extraction
   - **3,057 images** extracted to per-paper `images/` subdirectories across **136 papers**
-  - **0 errors** across all 164 extractions (12 papers have no PDF — Zenodo-only metadata, slides, or non-PDF artifacts)
+  - **0 errors** across all 166 extractions (10 papers have no PDF — Zenodo-only metadata, slides, or non-PDF artifacts)
   - Paper landing pages (`papers/*/index.html`) now link to `full_text.md` and the `images/` gallery
+  - Work pages now include JSON-LD `encoding` field (Schema.org `TextObject`) for all 166 works with full text
+  - Search index includes `full_text_url` for all 166 works with extracted text
   - `papers/README.md` updated to document `full_text.md` and `images/` as standard folder contents
   - `llms.txt` updated with full-text extraction pipeline link
   - Fixed `regenerate_all.py` to use `sys.executable` instead of hardcoded `python3` (was breaking on Python 3.9 vs 3.14 `datetime.UTC` import)
+  - Fixed `build_current_counts.py` Python 3.9 compatibility (`datetime.UTC` → `datetime.timezone.utc`)
+  - Fixed `build_resume.py` to gracefully skip PDF generation when reportlab is not installed
+  - Fixed `validate_repo.py` to skip `full_text.md` files in local-link validation (academic paper internal references)
+  - Fixed `build_sitemap.py` to not list `/papers/` URLs (SEO invariant compliance)
   - All 22 local generated surfaces regenerated (bibliography, publications, software, domains, works, paper pages, exports, evidence, catalog, search index, RSS feed, sitemap, manifest)
 
 ## 2026-07-05

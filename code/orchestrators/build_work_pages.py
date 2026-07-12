@@ -393,6 +393,14 @@ def json_ld(work: dict) -> str:
             "name": "Local paper documentation",
             "url": f"https://github.com/docxology/docxology/tree/main/{work['docs_path'].rstrip('/')}",
         }
+        ft_link = full_text_link(work["docs_path"])
+        if ft_link:
+            data["encoding"] = {
+                "@type": "TextObject",
+                "encodingFormat": "text/markdown",
+                "url": f"https://danielarifriedman.com/{work['docs_path'].rstrip('/')}/full_text.md",
+                "name": "Full text (extracted)",
+            }
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 

@@ -80,6 +80,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("reconciliation", "Public-Source Reconciliation", "data/reconciliation.json", "Curated local counts compared with public-source indexes."),
     ("current-counts", "Current Counts Snapshot", "data/current-counts.json", "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands."),
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
+    ("full-text-corpus", "Full-Text Extraction Corpus", "papers/", "166 extracted full_text.md files with page-level text from paper PDFs, plus images/ subdirectories of extracted figures. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
     ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),

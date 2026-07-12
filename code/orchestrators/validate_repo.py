@@ -168,6 +168,10 @@ def validate_local_links() -> None:
     for path in files:
         if ".git" in path.parts:
             continue
+        # full_text.md files are extracted paper texts with internal academic references
+        # (to figures, source code, manuscript sections) that don't exist as local files.
+        if path.name == "full_text.md":
+            continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         for raw in iter_local_links(text):
             link = raw.strip()
