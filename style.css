@@ -183,6 +183,12 @@
         .btn-outline{border:1px solid var(--border);color:var(--text-secondary);background:var(--bg-glass)}
         .btn-outline:hover{border-color:var(--border-hover);color:var(--text-primary)}
 
+        .image-thumbs{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem}
+        .image-thumbs .thumb-link{display:block;overflow:hidden;border-radius:4px;border:1px solid var(--gold-20,#d4a85733);transition:border-color .2s}
+        .image-thumbs .thumb-link:hover{border-color:var(--gold-40,#d4a85766)}
+        .image-thumbs .thumb-link img{width:80px;height:80px;object-fit:cover;display:block}
+        .muted{color:var(--text-secondary);font-size:.8rem}
+
         .profile-links{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
         .profile-links a{
             display:inline-flex;align-items:center;gap:.3rem;

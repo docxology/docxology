@@ -94,9 +94,9 @@ def image_gallery_link(folder: Path) -> str:
     count = len(img_files)
     # Show up to 6 thumbnail previews
     thumbs = img_files[:6]
-    thumb_html = '<div class="image-thumbs" style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">'
+    thumb_html = '<div class="image-thumbs">'
     for img in thumbs:
-        thumb_html += f'<a href="images/{img.name}" class="thumb-link"><img src="images/{img.name}" alt="{img.stem}" loading="lazy" style="width:80px;height:80px;object-fit:cover;border-radius:4px;border:1px solid var(--gold-20,#d4a85733)"></a>'
+        thumb_html += f'<a href="images/{img.name}" class="thumb-link"><img src="images/{img.name}" alt="{img.stem}" loading="lazy"></a>'
     thumb_html += "</div>"
     more = f' <span class="muted">+{count - 6} more</span>' if count > 6 else ""
     return f'<a class="btn btn-outline" href="images/">Extracted Images ({count})</a>{more}{thumb_html}'

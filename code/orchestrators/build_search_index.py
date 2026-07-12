@@ -109,7 +109,14 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
     docs_path = str(work.get("docs_path") or "").rstrip("/")
     full_text_path = REPO_ROOT / docs_path / "full_text.md" if docs_path else None
     full_text_url = f"/{docs_path}/full_text.md" if full_text_path and full_text_path.exists() else ""
-    return {
+    images_dir = REPO_ROOT / docs_path / "images" if docs_path else None
+    image_count = 0
+    if images_dir and images_dir.is_dir():
+        image_count = sum(
+            1 for f in images_dir.iterdir()
+            if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
+        )
+    result = {
         "id": f"work:{work['citation_key']}",
         "type": "work",
         "title": work["title"],
@@ -137,6 +144,9 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
             if part
         ),
     }
+    if image_count:
+        result["image_count"] = image_count
+    return result
 
 
 def software_item(repo: dict) -> dict:
