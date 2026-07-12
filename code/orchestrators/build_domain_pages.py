@@ -254,8 +254,12 @@ def page_footer() -> str:
 
 
 def work_link(work: dict) -> str:
+    """Link to the local work page, falling back to the paper folder or primary URL."""
+    citation_key = work.get("citation_key")
+    if citation_key:
+        return f"works/{citation_key}.html"
     if work.get("docs_path"):
-        return f"https://github.com/docxology/docxology/tree/main/{work['docs_path'].rstrip('/')}"
+        return f"{work['docs_path'].rstrip('/')}/"
     return work.get("url") or "publications.html"
 
 

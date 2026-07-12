@@ -73,13 +73,18 @@ def render(build_date: datetime | None = None) -> str:
         ),
     ]
     for work in works[:25]:
+        # Use actual publication year as the pubDate (Jan 1 of that year)
+        try:
+            work_date = datetime(int(work["year"]), 1, 1, tzinfo=timezone.utc)
+        except (ValueError, TypeError):
+            work_date = build_date
         entries.append(
             item(
                 work["title"],
                 f"https://danielarifriedman.com/works/{work['citation_key']}.html",
                 f"work-{work['citation_key']}",
                 f"{work['type']} · {work['venue']} · {work['domain_name']} · {work['year']}",
-                build_date,
+                work_date,
             )
         )
     return f"""<?xml version="1.0" encoding="UTF-8"?>

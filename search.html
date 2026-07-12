@@ -153,7 +153,10 @@
 
         function renderFilters(){
             const types = ['all', ...Array.from(new Set(state.items.map(i => i.type))).sort()];
-            filters.innerHTML = types.map(type => `<button type="button" class="${type === state.type ? 'active' : ''}" data-type="${esc(type)}">${esc(type)}</button>`).join('');
+            filters.innerHTML = types.map(type => {
+                const count = type === 'all' ? state.items.length : state.items.filter(i => i.type === type).length;
+                return `<button type="button" class="${type === state.type ? 'active' : ''}" data-type="${esc(type)}">${esc(type)} (${count})</button>`;
+            }).join('');
             filters.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
                 state.type = btn.dataset.type;
                 render();

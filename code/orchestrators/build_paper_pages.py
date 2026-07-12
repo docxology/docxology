@@ -147,6 +147,11 @@ def render_page(work: dict) -> str:
     <meta property="og:description" content="{h(clip_description(summary))}">
     <meta property="og:url" content="{h(canonical)}">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{h(work['title'])} Documentation">
+    <meta name="twitter:description" content="{h(clip_description(summary))}">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
+    <meta name="twitter:image:alt" content="{h(work['title'])}">
     <style>
         .paper-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
         .paper-hero h1{{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}}
@@ -197,7 +202,14 @@ def render_page(work: dict) -> str:
 
 
 def render_outputs() -> dict[Path, str]:
-    return {REPO_ROOT / work["docs_path"] / "index.html": render_page(work) for work in unique_doc_works(load_works())}
+    outputs: dict[Path, str] = {}
+    for work in unique_doc_works(load_works()):
+        try:
+            path = REPO_ROOT / work["docs_path"] / "index.html"
+            outputs[path] = render_page(work)
+        except Exception as exc:
+            print(f"  WARNING: {work.get('docs_path', '?')}: {exc}", file=sys.stderr)
+    return outputs
 
 
 def validate_inputs() -> list[str]:

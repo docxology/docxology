@@ -2,6 +2,8 @@
 YouTube channel metadata fetcher using yt-dlp.
 Fetches video metadata across /videos, /streams, and /shorts tabs.
 """
+from __future__ import annotations
+
 import json
 import logging
 import subprocess
