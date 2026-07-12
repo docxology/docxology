@@ -4,6 +4,8 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-07-12 (session 4)
 
+- **CITATION.cff generated for all 176 papers**: New `generate_citation_cff.py` script creates CFF 1.2.0 files from `metadata.json`. 47 papers that were missing CITATION.cff now have it. Year extracted from folder names for older papers. Multi-line author format with ORCID for DAF.
+- **2024_BioFirm PPTX extraction**: Downloaded `BIOFIBIOFIRM_v2.pptx` from Zenodo, extracted 11 slides of text + 8 images using python-pptx. 173 of 176 papers now have full_text.md (98.3% coverage).
 - **Content-Security-Policy deployed**: CSP meta tag (`script-src 'self'`) now on all 23 indexable HTML pages, blocking inline event handlers and inline `<script>` blocks. Documented in `docs/security/security-posture.md`.
 - **Inline event handlers eliminated**: all 68 `onclick`/`onchange`/`onsubmit` handlers across 23 pages migrated to `data-*` attributes wired via `addEventListener` in `js/interactive.js`. New `code/orchestrators/migrate_inline_handlers.py` orchestrator.
 - **rel="me" social verification links** expanded from 3 pages to all 21 indexable pages (Scholar, ORCID, GitHub, LinkedIn, YouTube, Wikidata, Bluesky).
