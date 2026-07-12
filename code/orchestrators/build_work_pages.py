@@ -248,6 +248,16 @@ def local_docs_link(path: str) -> str:
     return f"../{path.rstrip('/')}/" if path else "../publications.html"
 
 
+def full_text_link(docs_path: str) -> str:
+    """Return a link to the paper's full_text.md if it exists."""
+    if not docs_path:
+        return ""
+    full_text_path = REPO_ROOT / docs_path / "full_text.md"
+    if not full_text_path.is_file():
+        return ""
+    return f"../{docs_path.rstrip('/')}/full_text.md"
+
+
 def source_repository_url(docs_path: str) -> str:
     if not docs_path:
         return ""
@@ -536,6 +546,7 @@ def render_work_page(work: dict) -> str:
             <p class="text-center mt-2">
                 <a class="btn btn-gold" href="{h(primary)}">Primary source</a>
                 <a class="btn btn-outline" href="{h(docs)}">Documentation</a>
+                {f'<a class="btn btn-outline" href="{h(full_text_link(work.get("docs_path", "")))}">Full Text</a>' if full_text_link(work.get("docs_path", "")) else ''}
                 {source_repo_btn}
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>

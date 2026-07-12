@@ -2,6 +2,19 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-12
+
+- Added work **#194 "Prior Cognitive Art"** (`zenodo.21316510`, `docxology/prior_cognitive_art` v0.1.0) via the canonical `sync_paired_publications.py --apply` path. Paper folder, bibliography row, work page, domain page, search index, sitemap, and all generated surfaces updated.
+- **Full-text extraction pipeline**: new `code/orchestrators/extract_paper_texts.py` extracts page-level text and embedded images from all paper PDFs using PyMuPDF (with OCR fallback via tesseract for scanned PDFs).
+  - **164 papers** now have `full_text.md` with complete page-by-page text extraction
+  - **3,057 images** extracted to per-paper `images/` subdirectories across **136 papers**
+  - **0 errors** across all 164 extractions (12 papers have no PDF — Zenodo-only metadata, slides, or non-PDF artifacts)
+  - Paper landing pages (`papers/*/index.html`) now link to `full_text.md` and the `images/` gallery
+  - `papers/README.md` updated to document `full_text.md` and `images/` as standard folder contents
+  - `llms.txt` updated with full-text extraction pipeline link
+  - Fixed `regenerate_all.py` to use `sys.executable` instead of hardcoded `python3` (was breaking on Python 3.9 vs 3.14 `datetime.UTC` import)
+  - All 22 local generated surfaces regenerated (bibliography, publications, software, domains, works, paper pages, exports, evidence, catalog, search index, RSS feed, sitemap, manifest)
+
 ## 2026-07-05
 
 - Comprehensive interactive-layer buildout across all 23 indexable pages:

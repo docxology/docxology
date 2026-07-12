@@ -106,12 +106,15 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
     enrich = enrichments.get(work["citation_key"], {})
     keywords = enrich.get("keywords", [])
     abstract = enrich.get("abstract", "")
+    docs_path = str(work.get("docs_path") or "").rstrip("/")
+    full_text_url = f"/{docs_path}/full_text.md" if docs_path else ""
     return {
         "id": f"work:{work['citation_key']}",
         "type": "work",
         "title": work["title"],
         "url": f"/works/{work['citation_key']}.html",
         "external_url": work.get("url", ""),
+        "full_text_url": full_text_url,
         "summary": abstract[:220] if abstract else f"{work['type']} · {work['venue']} · {work['domain_name']}",
         "year": work["year"],
         "domain": work["domain_name"],
