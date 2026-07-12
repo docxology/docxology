@@ -258,6 +258,22 @@ def full_text_link(docs_path: str) -> str:
     return f"../{docs_path.rstrip('/')}/full_text.md"
 
 
+def image_gallery_link_work(docs_path: str) -> str:
+    """Return a link to the paper's images/ directory if it has images."""
+    if not docs_path:
+        return ""
+    images_dir = REPO_ROOT / docs_path / "images"
+    if not images_dir.is_dir():
+        return ""
+    count = sum(
+        1 for f in images_dir.iterdir()
+        if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
+    )
+    if count == 0:
+        return ""
+    return f"../{docs_path.rstrip('/')}/images/"
+
+
 def source_repository_url(docs_path: str) -> str:
     if not docs_path:
         return ""
@@ -555,6 +571,7 @@ def render_work_page(work: dict) -> str:
                 <a class="btn btn-gold" href="{h(primary)}">Primary source</a>
                 <a class="btn btn-outline" href="{h(docs)}">Documentation</a>
                 {f'<a class="btn btn-outline" href="{h(full_text_link(work.get("docs_path", "")))}">Full Text</a>' if full_text_link(work.get("docs_path", "")) else ''}
+                {f'<a class="btn btn-outline" href="{h(image_gallery_link_work(work.get("docs_path", "")))}">Image Gallery</a>' if image_gallery_link_work(work.get("docs_path", "")) else ''}
                 {source_repo_btn}
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>
