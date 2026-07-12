@@ -133,7 +133,8 @@ def extract_images(pdf_path, output_dir):
                 if not filepath.exists():
                     filepath.write_bytes(image_bytes)
                 extracted.append((page_num + 1, filename))
-            except Exception:
+            except Exception as exc:
+                print(f"  WARNING: image extraction failed on page {page_num + 1}, image {img_index + 1} of {pdf_path.name}: {exc}", file=sys.stderr)
                 continue
 
     doc.close()

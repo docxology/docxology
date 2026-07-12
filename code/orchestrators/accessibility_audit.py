@@ -102,10 +102,14 @@ def audit_page(path: Path) -> dict:
     # Check for inline event handlers (onclick, onchange, onsubmit, etc.)
     # These are a CSP/security concern — the deployed CSP uses script-src 'self'
     # which blocks inline handlers. All event wiring should go through
-    # addEventListener in external JS files.
+    # Check for inline event handlers (onclick, onchange, onsubmit, etc.)
+    # that should be migrated to addEventListener in external JS files.
+    # Note: onload on <link> elements is an exception — it's the standard
+    # non-blocking CSS loading pattern (media="print" onload="this.media='all'")
+    # and is not a user-interaction handler.
     import re as _re
     inline_handlers = _re.findall(
-        r'\son(click|change|submit|load|error|mouseover|mouseout|keyup|keydown)="',
+        r'<(?!link\b)[^>]*\son(click|change|submit|load|error|mouseover|mouseout|keyup|keydown)="',
         text,
         _re.IGNORECASE,
     )

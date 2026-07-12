@@ -32,6 +32,7 @@ This repository is the public research, software, citation, evidence, and websit
 | Generate CITATION.cff | [`papers/*/CITATION.cff`](papers/), [`code/orchestrators/generate_citation_cff.py`](code/orchestrators/generate_citation_cff.py) | `python3 code/orchestrators/generate_citation_cff.py --force` |
 | Deploy SEO + security tags | [`*.html`](.), [`code/orchestrators/deploy_seo_security.py`](code/orchestrators/deploy_seo_security.py) | `python3 code/orchestrators/deploy_seo_security.py` (idempotent — only adds missing CSP, rel-me, hreflang) |
 | Migrate inline handlers | [`*.html`](.), [`code/orchestrators/migrate_inline_handlers.py`](code/orchestrators/migrate_inline_handlers.py) | `python3 code/orchestrators/migrate_inline_handlers.py` |
+| Optimize font loading | [`*.html`](.), [`code/orchestrators/optimize_font_loading.py`](code/orchestrators/optimize_font_loading.py) | `python3 code/orchestrators/optimize_font_loading.py` |
 
 ## Source-Of-Truth Rules
 

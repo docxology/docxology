@@ -2,6 +2,15 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-12 (session 5)
+
+- **Non-render-blocking Google Fonts**: All 17 HTML pages with Google Fonts links converted to `media="print" onload="this.media='all'"` pattern, eliminating render-blocking CSS on first paint. New `code/orchestrators/optimize_font_loading.py` orchestrator.
+- **Twitter Card tags on about.html**: Added `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image` meta tags for social sharing parity with OG tags.
+- **apple-touch-icon optimized**: Reduced from 77KB to 39KB (48% reduction) via PNG quantization to 128 colors, with no visible quality loss at 180x180.
+- **extract_paper_texts.py error logging**: Silent `except Exception: continue` now logs the exception with page number, image index, and PDF filename to stderr before continuing, preventing silent extraction failures.
+- **Descriptive image alt text**: Paper page thumbnail alt text now uses `"Figure from [paper_name], page N"` instead of raw filenames, improving screen reader usability and SEO.
+- **Service worker v18**: Cache version bumped to serve updated JS assets (CSP-compliant scripts, search badges, count badges).
+
 ## 2026-07-12 (session 4)
 
 - **CITATION.cff generated for all 176 papers**: New `generate_citation_cff.py` script creates CFF 1.2.0 files from `metadata.json`. 47 papers that were missing CITATION.cff now have it. Year extracted from folder names for older papers. Multi-line author format with ORCID for DAF.

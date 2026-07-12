@@ -42,6 +42,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/generate_citation_cff.py` | Generate CITATION.cff (CFF 1.2.0) for papers from `metadata.json` |
 | `orchestrators/deploy_seo_security.py` | Idempotent deployment of CSP, rel-me, and hreflang tags to indexable HTML pages |
 | `orchestrators/migrate_inline_handlers.py` | Migrate inline `onclick`/`onchange`/`onsubmit` handlers to `data-*` attributes for CSP compliance |
+| `orchestrators/optimize_font_loading.py` | Make Google Fonts CSS non-render-blocking via `media="print" onload` pattern |
 | `data/youtube_personal.json` | Cached export (personal channel) |
 | `data/youtube_institute.json` | Cached export (institute channel) |
 | `tests/test_youtube_fetcher.py` | Unit tests for fetcher parsing and normalization |
