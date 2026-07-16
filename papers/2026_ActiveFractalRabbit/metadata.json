@@ -1,0 +1,35 @@
+{
+  "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+  "version": "0.2.0",
+  "doi": "10.5281/zenodo.21330636",
+  "doi_url": "https://doi.org/10.5281/zenodo.21330636",
+  "zenodo_record": "https://zenodo.org/records/21330636",
+  "record_id": "21330637",
+  "publication_date": "2026-07-13",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises pinned open-source software from the National Security Agency as an independent simulator surface. The benchmark converts sporadic reports into categorical evidence, fits explicit hidden-state generative models, and compares transparent temporal, Markov, sequence, state-space, neural, latent-state, and active inference predictors under matched information sets. Under noisy partial-observability, Active Inference is the lowest-loss implemented predictor: it clearly leads point-estimate and raw-observation families and sits in a statistical tie with the strongest non-AIF belief-preserving comparator. The shared mechanism is soft Bayesian marginalization, which preserves probability across plausible cells instead of committing early to one state. Point estimates suffice for clean observations, an online base-rate predictor leads under regime switching, transparent temporal and disclosed kinematic controls anchor sparse reporting gaps, and withholding location sharply limits specific-cell recovery from metadata. The partially observable Markov decision process (POMDP) formulation also exposes variational and expected-free-energy diagnostics for belief, minimization, and integrity. These results establish a regime-specific synthetic model map and a reproducible evidence chain. The present contract covers synthetic software behavior; separate evidence protocols govern privacy and empirical evaluation. Code, fixtures, manuscript source, and the release manifest are public at github.com/ActiveInferenceInstitute/active_fractal_rabbit (https://github.com/ActiveInferenceInstitute/active_fractal_rabbit).",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Friedman_2026_Active_d676159d.pdf",
+      "size_bytes": 14942798,
+      "checksum": "md5:565f1c58f11c2136ef27f0ae7a136558",
+      "download_url": "https://zenodo.org/api/records/21330637/files/Friedman_2026_Active_d676159d.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-07-16T04:35:16Z"
+}

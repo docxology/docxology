@@ -125,10 +125,23 @@ def authors_inline(creators: list[dict]) -> str:
     return ", ".join(names[:6]) + f", and {len(names) - 6} others"
 
 
+def canonical_doi(rec: dict, meta: dict) -> str:
+    """Canonical concept DOI (repo rule: "Canonical DOI = Zenodo concept DOI").
+
+    Every folder artifact (README/AGENTS/SKILL/CITATION/metadata.json) must cite
+    the SAME DOI as pages/BIBLIOGRAPHY.md and paper_metadata.json — both of which
+    use the concept DOI (see main()). The version-specific ``rec['doi']`` would
+    otherwise split one work across two DOIs and fail the paper-README DOI
+    contract (test_paper_readme_contracts.py). The version id is retained
+    separately as ``record_id`` in metadata_payload().
+    """
+    return rec.get("conceptdoi") or meta.get("conceptdoi") or rec.get("doi") or meta.get("doi") or ""
+
+
 def render_readme(rec: dict, meta: dict) -> str:
     title = meta.get("title", "")
     year = (meta.get("publication_date") or "")[:4] or "n.d."
-    doi = rec.get("doi", "")
+    doi = canonical_doi(rec, meta)
     kws = meta.get("keywords") or []
     kw_line = " · ".join(kws) if kws else "Zenodo publication"
     pdfs = [f["key"] for f in rec.get("files", []) if str(f.get("key", "")).lower().endswith(".pdf")]
@@ -176,10 +189,11 @@ def render_readme(rec: dict, meta: dict) -> str:
 def render_agents(rec: dict, meta: dict) -> str:
     title = meta.get("title", "")
     year = (meta.get("publication_date") or "")[:4] or "n.d."
+    doi = canonical_doi(rec, meta)
     return f"""# AGENTS.md - {title}
 
 **Paper**: {title} ({year})
-**DOI**: [{rec.get('doi','')}](https://doi.org/{rec.get('doi','')})
+**DOI**: [{doi}](https://doi.org/{doi})
 **Zenodo record**: {record_url(rec)}
 
 ---
@@ -202,12 +216,13 @@ def render_agents(rec: dict, meta: dict) -> str:
 
 def render_skill(rec: dict, meta: dict) -> str:
     title = meta.get("title", "")
+    doi = canonical_doi(rec, meta)
     kws = meta.get("keywords") or ["zenodo-publication"]
     tags = [k.lower().replace(" ", "-") for k in kws[:8]]
     concepts = "\n".join(f"- **{k}**" for k in kws)
     return f"""---
 name: "{slug_topic(title)}"
-description: "Use for {yaml_double_quoted(title)}, a Zenodo publication with DOI {rec.get('doi','')}."
+description: "Use for {yaml_double_quoted(title)}, a Zenodo publication with DOI {doi}."
 tags: {json.dumps(tags)}
 ---
 
@@ -217,7 +232,7 @@ tags: {json.dumps(tags)}
 
 Use this skill when working with the publication **{title}** or its archival record.
 
-1. Ground citations in DOI `{rec.get('doi','')}`.
+1. Ground citations in DOI `{doi}`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts
@@ -234,6 +249,7 @@ Use this skill when working with the publication **{title}** or its archival rec
 def render_citation(rec: dict, meta: dict) -> str:
     title = meta.get("title", "")
     year = (meta.get("publication_date") or "")[:4] or "n.d."
+    doi = canonical_doi(rec, meta)
     version = f'\nversion: "{meta.get("version")}"' if meta.get("version") else ""
     authors = []
     for c in meta.get("creators", []):
@@ -252,14 +268,14 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "{yaml_double_quoted(title)}"{version}
 date-released: {meta.get('publication_date') or year}
-doi: {rec.get('doi','')}
-url: "https://doi.org/{rec.get('doi','')}"
+doi: {doi}
+url: "https://doi.org/{doi}"
 authors:
 {chr(10).join(authors)}
 identifiers:
   - type: doi
-    value: {rec.get('doi','')}
-    description: "Zenodo DOI"
+    value: {doi}
+    description: "Zenodo concept DOI"
   - type: url
     value: "{record_url(rec)}"
     description: "Zenodo landing page"
@@ -271,11 +287,12 @@ def metadata_payload(rec: dict, meta: dict) -> dict:
               "checksum": f.get("checksum", ""),
               "download_url": (f.get("links") or {}).get("self", "")}
              for f in rec.get("files", [])]
+    doi = canonical_doi(rec, meta)
     return {
         "title": meta.get("title"),
         "version": meta.get("version"),
-        "doi": rec.get("doi"),
-        "doi_url": f"https://doi.org/{rec.get('doi')}",
+        "doi": doi,
+        "doi_url": f"https://doi.org/{doi}",
         "zenodo_record": f"{record_url(rec)}",
         "record_id": str(rec.get("id")),
         "publication_date": meta.get("publication_date"),

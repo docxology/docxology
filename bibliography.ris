@@ -2296,3 +2296,15 @@ KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 194; docs: papers/2026_PriorCognitiveArt/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations
+T2  - Zenodo
+DO  - 10.5281/zenodo.21330636
+UR  - https://doi.org/10.5281/zenodo.21330636
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 195; docs: papers/2026_ActiveFractalRabbit/
+ER  -

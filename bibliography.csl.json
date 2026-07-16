@@ -4806,5 +4806,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21316510",
     "URL": "https://doi.org/10.5281/zenodo.21316510"
+  },
+  {
+    "id": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+    "type": "article-journal",
+    "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 195; docs: papers/2026_ActiveFractalRabbit/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21330636",
+    "URL": "https://doi.org/10.5281/zenodo.21330636"
   }
 ]

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T02:48:29Z",
+  "generated_at": "2026-07-16T04:35:55Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 193,
+  "count": 194,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3904,6 +3904,18 @@
       ],
       "methods": [],
       "source": "papers/2026_PriorCognitiveArt/README.md"
+    },
+    "Friedman2026ActiveFractalRabbitSyntheticBenchmark195": {
+      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+      "abstract": "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises pinned open-source software from the National Security Agency as an independent simulator surface. The benchmark converts sporadic reports into categorical evidence, fits explicit hidden-state generative models, and compares transparent temporal, Markov, sequence, state-space, neural, latent-state, and active inference predictors under matched information sets. Under noisy partial-observability, Active Inference is the lowest-loss implemented predictor: it clearly leads point-estimate and raw-ob",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2026_ActiveFractalRabbit/README.md"
     }
   }
 }

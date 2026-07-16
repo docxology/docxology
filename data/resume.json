@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T02:48:28Z",
+  "generated_at": "2026-07-16T04:35:52Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -33,7 +33,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 193,
+    "works": 194,
     "software_catalogued": 95,
     "owned_software_catalogued": 61,
     "aii_software_catalogued": 34,
@@ -5346,6 +5346,22 @@
       "has_paper_folder": true,
       "has_full_text": true,
       "has_images": true
+    },
+    {
+      "num": 195,
+      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21330636",
+      "doi": "10.5281/zenodo.21330636",
+      "docs_path": "papers/2026_ActiveFractalRabbit/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
     }
   ],
   "software": [
@@ -6493,14 +6509,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 193 works.",
+      "claim": "The curated bibliography contains 194 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-16T02:48:28+00:00",
+      "checked_at": "2026-07-16T04:35:51+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6508,14 +6524,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 176 per-paper documentation folders.",
+      "claim": "The repository contains 177 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-16T02:48:28+00:00",
+      "checked_at": "2026-07-16T04:35:51+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

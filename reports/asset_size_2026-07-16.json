@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-16T03:43:36Z",
+  "generated_at": "2026-07-16T04:37:16Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 80,
   "warnings": 0,
-  "total_bytes": 11873701,
+  "total_bytes": 11880592,
   "largest": [
     {
       "path": "data/videos.json",
@@ -29,7 +29,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 297109,
+      "bytes": 297493,
       "budget_bytes": 5000000,
       "ok": true
     },
@@ -43,14 +43,14 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 225157,
+      "bytes": 225761,
       "budget_bytes": 4000000,
       "ok": true
     },
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 220438,
+      "bytes": 221704,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -78,7 +78,7 @@
     {
       "path": "bibliography.csl.json",
       "kind": "citation-export",
-      "bytes": 125156,
+      "bytes": 125853,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -106,7 +106,7 @@
     {
       "path": "data/publications-ld.json",
       "kind": "json-data",
-      "bytes": 110553,
+      "bytes": 111158,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -127,7 +127,7 @@
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 106068,
+      "bytes": 106672,
       "budget_bytes": 4000000,
       "ok": true
     },
