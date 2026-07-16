@@ -179,14 +179,12 @@
   }
 
   // ── EVENT WIRING (CSP-safe, no inline handlers) ──
+  // The sort <select> (data-filter-gallery), size buttons (data-set-size), and
+  // lightbox nav/close buttons (data-lightbox) are wired by js/interactive.js's
+  // generic delegation, which calls the window.* globals exposed below. Do NOT
+  // also addEventListener them here — double-binding advances the lightbox two
+  // items per click. Only wire what interactive.js does not handle:
   document.getElementById('searchInput').addEventListener('input', filterGallery);
-  document.getElementById('sortSelect').addEventListener('change', filterGallery);
-  ['sm', 'md', 'lg'].forEach(s => {
-    document.getElementById('btn-' + s).addEventListener('click', () => setSize(s));
-  });
-  document.querySelector('.lb-close').addEventListener('click', closeLightbox);
-  document.querySelector('.lb-prev').addEventListener('click', () => navLightbox(-1));
-  document.querySelector('.lb-next').addEventListener('click', () => navLightbox(1));
 
   document.addEventListener('keydown', e => {
     if (!lb.classList.contains('open')) return;
@@ -196,8 +194,8 @@
   });
   lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
 
-  // Compat: js/interactive.js delegates [data-set-size]/[data-filter-gallery]/[data-lightbox]
-  // clicks to these globals.
+  // js/interactive.js delegates [data-set-size]/[data-filter-gallery]/[data-lightbox]
+  // to these globals — they are the sole wiring for those controls.
   window.filterGallery = filterGallery;
   window.setSize = setSize;
   window.closeLightbox = closeLightbox;
