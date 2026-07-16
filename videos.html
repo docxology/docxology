@@ -496,6 +496,7 @@
     }
     footer a { color: var(--text-secondary); }
     footer a:hover { color: var(--text-primary); }
+  .skip-link:focus{top:0 !important}
   </style>
     <style>.breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
@@ -516,7 +517,7 @@
 </head>
 <body>
 
-<a href="#main" class="skip-link" style="position:absolute;top:-40px;left:0;z-index:9999;background:var(--gold);color:#000;padding:.5rem 1rem;border-radius:0 0 8px 0;transition:top .2s" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Skip to main content</a>
+<a href="#main" class="skip-link" style="position:absolute;top:-40px;left:0;z-index:9999;background:var(--gold);color:#000;padding:.5rem 1rem;border-radius:0 0 8px 0;transition:top .2s">Skip to main content</a>
 
 <!-- ── NAV ── -->
 <nav role="navigation" aria-label="Main navigation">
