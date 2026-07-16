@@ -324,7 +324,12 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
 
-document.addEventListener('DOMContentLoaded', loadPublications);
+document.addEventListener('DOMContentLoaded', function () {
+    loadPublications();
+    // CSP (script-src 'self') forbids inline oninput handlers — wire here instead.
+    var pubSearch = document.getElementById('pub-search');
+    if (pubSearch) pubSearch.addEventListener('input', filterPubs);
+});
 
 window.filterPubs = filterPubs;
 window.setTypeFilter = setTypeFilter;

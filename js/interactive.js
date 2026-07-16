@@ -16,6 +16,14 @@
 (function () {
   'use strict';
 
+  // Non-render-blocking font loading: stylesheets ship with media="print" and
+  // data-media-swap="all"; swap here because CSP (script-src 'self') forbids
+  // the inline onload="this.media='all'" pattern. This script is deferred, so
+  // the DOM is fully parsed by the time this runs.
+  document.querySelectorAll('link[rel="stylesheet"][data-media-swap]').forEach(function (l) {
+    l.media = l.getAttribute('data-media-swap') || 'all';
+  });
+
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // ═══════════════════════════════════════════════
@@ -237,6 +245,9 @@
 
   function addSearchAutocomplete(input) {
     if (!input) return;
+    // Pages with their own local dataset search (e.g. the art gallery) opt out
+    // of the site-wide search-index.json autocomplete via data-local-search.
+    if (input.hasAttribute('data-local-search')) return;
     if (input.dataset.ttsAutocompleteAdded) return;
     input.dataset.ttsAutocompleteAdded = 'true';
 

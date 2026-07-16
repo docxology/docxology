@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T22:35:19Z",
+  "generated_at": "2026-07-16T02:48:28Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -2337,7 +2337,7 @@
       "docs_path": "papers/2026_CognitiveIntegrity/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 6,
@@ -2465,7 +2465,7 @@
       "docs_path": "papers/2025_AccessibilityActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 14,
@@ -2481,7 +2481,7 @@
       "docs_path": "papers/2025_MDKV/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 15,
@@ -2497,7 +2497,7 @@
       "docs_path": "papers/2025_MarkdownDecisionProcess/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 16,
@@ -2529,7 +2529,7 @@
       "docs_path": "papers/2025_OnTime/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 18,
@@ -2593,7 +2593,7 @@
       "docs_path": "papers/2025_AgentAndNiche/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 22,
@@ -2721,7 +2721,7 @@
       "docs_path": "papers/2024_OntologySUMO/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 30,
@@ -2881,7 +2881,7 @@
       "docs_path": "papers/2024_SensemakingFederation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 40,
@@ -2929,7 +2929,7 @@
       "docs_path": "papers/2024_InfiniteImaginarium/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 43,
@@ -3057,7 +3057,7 @@
       "docs_path": "papers/2023_AccountActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 51,
@@ -3073,7 +3073,7 @@
       "docs_path": "papers/2023_CognitiveSovereignty/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 52,
@@ -3121,7 +3121,7 @@
       "docs_path": "papers/2023_NSFReporting/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 55,
@@ -3137,7 +3137,7 @@
       "docs_path": "papers/2023_VideoEntomology/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 56,
@@ -3329,7 +3329,7 @@
       "docs_path": "papers/2022_ActiveDiffusion/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 68,
@@ -3345,7 +3345,7 @@
       "docs_path": "papers/2022_StigmergicAnnotation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 69,
@@ -3361,7 +3361,7 @@
       "docs_path": "papers/2022_FreeWillSapolsky/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 70,
@@ -3377,7 +3377,7 @@
       "docs_path": "papers/2022_MirrorTest/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 71,
@@ -3409,7 +3409,7 @@
       "docs_path": "papers/2022_HypercertEcosystems/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 73,
@@ -3537,7 +3537,7 @@
       "docs_path": "papers/2021_NarrativeInformationMgmt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 81,
@@ -3617,7 +3617,7 @@
       "docs_path": "papers/2020_EmergentTeams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 86,
@@ -3729,7 +3729,7 @@
       "docs_path": "papers/2019_DennettExplained/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 93,
@@ -3745,7 +3745,7 @@
       "docs_path": "papers/2019_PhDDissertation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 94,
@@ -3953,7 +3953,7 @@
       "docs_path": "papers/2015_CryptoJews/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 107,
@@ -4401,7 +4401,7 @@
       "docs_path": "papers/2023_NaturalAIBased/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 136,
@@ -4433,7 +4433,7 @@
       "docs_path": "papers/2023_TranscriptActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 138,
@@ -4449,7 +4449,7 @@
       "docs_path": "papers/2023_ModernNostrIndex/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 139,
@@ -4689,7 +4689,7 @@
       "docs_path": "papers/2026_Triplicate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 154,
@@ -5265,7 +5265,7 @@
       "docs_path": "papers/2026_RedactedReportTemplate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": false
     },
     {
       "num": 190,
@@ -6500,7 +6500,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-12T22:35:18+00:00",
+      "checked_at": "2026-07-16T02:48:28+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6515,7 +6515,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-12T22:35:18+00:00",
+      "checked_at": "2026-07-16T02:48:28+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

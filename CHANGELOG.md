@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-15
+
+- **CSP inline-script breakage fixed (art gallery restored)**: the `script-src 'self'` CSP deployed 2026-07-12 silently blocked the inline `<script>` blocks still shipping on art.html, videos.html, search.html, repositories.html, repositories-forks.html, and index.html — /art rendered zero of its 942 artworks and its search box only surfaced site-wide paper suggestions. All six pages' scripts externalized to `js/art-gallery.js`, `js/videos-page.js`, `js/search-page.js`, `js/repo-inventory.js` (shared by both repo pages), and `js/index-page.js`.
+- **Art gallery search is art-local again**: new `data-local-search` attribute on the /art search input opts it out of the site-wide `search-index.json` autocomplete in `js/interactive.js`; gallery filtering (title/description/tags over all 942 works) is handled by `js/art-gallery.js`. Also fixed a latent error-path bug (`getElementById('empty')` → `emptyState`) and a duplicated `tts-controls.js` include.
+- **Font loading un-broken CSP-safely**: the `media="print" onload="this.media='all'"` pattern (blocked by CSP, so Google Fonts never applied on nine pages) replaced with `media="print" data-media-swap="all"` + an external swap in `js/interactive.js`; `optimize_font_loading.py` updated to emit and migrate to the new pattern.
+- **publications.html search input**: CSP-blocked inline `oninput="filterPubs()"` replaced with `addEventListener` wiring in `js/publications.js`.
+- **Service worker v19**: cache bumped; new per-page JS modules added to the precache list.
+
 ## 2026-07-12 (session 5)
 
 - **Non-render-blocking Google Fonts**: All 17 HTML pages with Google Fonts links converted to `media="print" onload="this.media='all'"` pattern, eliminating render-blocking CSS on first paint. New `code/orchestrators/optimize_font_loading.py` orchestrator.

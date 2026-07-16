@@ -259,7 +259,7 @@
     <link rel="preload" as="image" href="assets/hero-art/mesh-network.webp">
     <link rel="preload" as="image" href="assets/hero-art/an-ant-is-a-colony.webp">
     <link rel="preload" as="image" href="assets/hero-art/army-ants.webp">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" onload="this.media=\'all\'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" data-media-swap="all">
         <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
@@ -541,39 +541,7 @@
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
     </footer>
 
-    <script>
-    function showTab(e, name) {
-        document.querySelectorAll('.media-panel').forEach(p => p.classList.remove('active'));
-        document.querySelectorAll('.media-tabs button').forEach(b => b.classList.remove('active'));
-        document.getElementById('tab-' + name).classList.add('active');
-        e.currentTarget.classList.add('active');
-    }
-    // Hamburger menu: toggle aria-expanded
-    document.querySelector('.menu-btn').addEventListener('click', function() {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !expanded);
-    });
-    // Scroll-based nav highlighting
-    const sections = document.querySelectorAll('section[id], div[id]');
-    const navLinks = document.querySelectorAll('.nav-links a:not(.nav-art-link)');
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
-        navLinks.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
-    });
-    // Animate on scroll (respects prefers-reduced-motion)
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (!prefersReducedMotion.matches) {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('animate'); });
-        }, { threshold: 0.08 });
-        document.querySelectorAll('.card,.stat,.pub-item,.art-card,.connect-card').forEach(el => observer.observe(el));
-    }
-    <!-- Service Worker registration -->
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').catch(() => {});
-        }
-        </script>
+    <script src="/js/index-page.js?v=20260715" defer></script>
     <script src="/js/tts-controls.js?v=20260712" defer></script>
     <script src="/js/interactive.js?v=20260712" defer></script>
     <script src="/js/menu-esc.js?v=20260712" defer></script>

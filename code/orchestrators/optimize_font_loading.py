@@ -4,17 +4,21 @@
 Converts:
   <link href="...fonts.googleapis.com/css2..." rel="stylesheet">
 To:
-  <link href="...fonts.googleapis.com/css2..." rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="...fonts.googleapis.com/css2..." rel="stylesheet" media="print" data-media-swap="all">
 
-This uses the media="print" onload pattern recommended by web.dev for
-non-blocking CSS loading. The font-display: swap parameter is already
-in the URL, so text remains visible during font load.
+The stylesheet loads with media="print" (non-render-blocking) and
+js/interactive.js swaps it to media="all" once the DOM is parsed.
+The classic web.dev inline onload="this.media='all'" pattern is NOT used
+because the site CSP (script-src 'self') blocks inline event handlers —
+it shipped once and silently broke font loading on every converted page.
+The font-display: swap parameter is already in the URL, so text remains
+visible during font load.
 
-Idempotent — only modifies links that don't already have the pattern.
+Idempotent — only modifies links that don't already have the pattern, and
+migrates any legacy onload variant to the CSP-safe attribute form.
 """
 
 import re
-import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -22,10 +26,16 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PATTERN = re.compile(
     r'<link\s+href="(https://fonts\.googleapis\.com/css2[^"]*)"\s+rel="stylesheet"\s*>'
 )
-REPLACEMENT = r'<link href="\1" rel="stylesheet" media="print" onload="this.media=\'all\'">'
+REPLACEMENT = r'<link href="\1" rel="stylesheet" media="print" data-media-swap="all">'
 
 # Already-converted pattern (skip these)
-ALREADY_DONE = re.compile(r"media=\"print\" onload=\"this\.media='all'\"")
+ALREADY_DONE = re.compile(r'media="print" data-media-swap="all"')
+
+# Legacy CSP-incompatible variants (inline onload, with or without the
+# stray backslash-escaping a previous sed pass introduced) → migrate.
+LEGACY_ONLOAD = re.compile(
+    r'media="print" onload="this\.media=\\?\'all\\?\'"'
+)
 
 
 def fix_file(path: Path) -> bool:
@@ -33,9 +43,9 @@ def fix_file(path: Path) -> bool:
     if not path.is_file():
         return False
     content = path.read_text(encoding="utf-8")
-    if ALREADY_DONE.search(content):
-        return False  # Already fixed
-    new_content = PATTERN.sub(REPLACEMENT, content)
+    new_content = LEGACY_ONLOAD.sub('media="print" data-media-swap="all"', content)
+    if not ALREADY_DONE.search(new_content):
+        new_content = PATTERN.sub(REPLACEMENT, new_content)
     if new_content != content:
         path.write_text(new_content, encoding="utf-8")
         return True
@@ -51,7 +61,7 @@ def main() -> None:
             changed += 1
         else:
             skipped += 1
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"  Fixed: {changed}")
     print(f"  Skipped (already done or no match): {skipped}")
 
