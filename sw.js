@@ -1,6 +1,6 @@
 // Service Worker for danielarifriedman.com
 // Cache-first strategy for static assets, network-first for pages
-const CACHE_NAME = 'daf-portfolio-v19';
+const CACHE_NAME = 'daf-portfolio-v20';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -85,8 +85,17 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   if (request.method !== 'GET') return;
 
-  // For navigation requests: network-first with cache fallback
-  if (request.mode === 'navigate') {
+  // For navigation requests AND content-data JSON (works/publications/software/
+  // catalog exports + the search index): network-first with cache fallback.
+  // These change whenever a publication is catalogued; cache-first would serve a
+  // stale publication list to returning visitors until the SW version bumped
+  // (a per-page `?v=` query is stable across data edits, so it does not bust the
+  // cache). Network-first keeps content current while still working offline.
+  const url = new URL(request.url);
+  const isContentData = request.mode === 'navigate' ||
+    url.pathname.startsWith('/data/') ||
+    url.pathname === '/search-index.json';
+  if (isContentData) {
     event.respondWith(
       fetch(request)
         .then(response => {
@@ -99,7 +108,7 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // For other resources: cache-first with network fallback
+  // For static assets (JS/CSS/images/fonts): cache-first with network fallback
   event.respondWith(
     caches.match(request).then(cached => {
       if (cached) return cached;
