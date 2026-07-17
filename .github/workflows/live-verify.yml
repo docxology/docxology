@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -27,7 +27,30 @@ jobs:
         run: sleep 60
 
       - name: Verify live site
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: python3 code/orchestrators/verify_live_site.py
+
+      - name: Enforce live verification
+        run: |
+          python3 - <<'PY'
+          import glob
+          import json
+
+          path = sorted(glob.glob("reports/live_site_verification_*.json"))[-1]
+          report = json.load(open(path, encoding="utf-8"))
+          hard_failures = [
+              item for item in report.get("results", [])
+              if not item.get("ok") and not item.get("deployment_pending")
+          ]
+          if not report.get("github_pages", {}).get("ok"):
+              hard_failures.append({"path": "GitHub Pages API", "status": report.get("github_pages", {}).get("status")})
+          if hard_failures:
+              raise SystemExit(f"Live verification hard failures: {hard_failures}")
+          if not report.get("overall_ok"):
+              print("Live verification deferred only for explicitly classified deployment propagation.")
+          PY
 
       - name: Show summary
         run: |
