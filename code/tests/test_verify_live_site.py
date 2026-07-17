@@ -78,6 +78,17 @@ def test_cache_busted_url_preserves_path_and_adds_unique_query():
     assert "__verify=" in url
 
 
+def test_catalog_json_contract_accepts_schema_org_dataset_property():
+    checks, observed = vl.parse_json_contract(
+        "data/catalog.json",
+        json.dumps({"@type": "DataCatalog", "dataset": [{"name": "works"}]}),
+        {},
+    )
+    assert checks["valid_json"]
+    assert checks["catalog_datasets_present"]
+    assert observed == {}
+
+
 @pytest.mark.parametrize("status", ["building", "queued", "BUILDING"])
 def test_pages_build_states_are_deployment_pending(status):
     assert vl.is_pages_deployment_pending(status)

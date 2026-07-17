@@ -4856,5 +4856,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21388456",
     "URL": "https://doi.org/10.5281/zenodo.21388456"
+  },
+  {
+    "id": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+    "type": "article-journal",
+    "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 197; docs: papers/2026_DuckRabbit/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21419693",
+    "URL": "https://doi.org/10.5281/zenodo.21419693"
   }
 ]

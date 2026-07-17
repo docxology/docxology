@@ -42,6 +42,10 @@ REQUIRED_JSON_FILES: list[str] = [
     "data/resume.json",
     "data/reconciliation.json",
     "data/agent-index.json",
+    "data/coverage-exceptions.json",
+    "data/repository-classification.json",
+    "data/pages-artifact-manifest.json",
+    "data/release-integrity.json",
 ]
 
 OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
@@ -53,6 +57,8 @@ OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
     ("paired_publications_*.json", "paired-publication snapshot"),
     ("public_source_inventory_*.json", "public-source inventory"),
     ("public_source_snapshot_*.json", "public-source snapshot"),
+    ("source_coverage_*.json", "source coverage"),
+    ("pages_artifact_growth_*.json", "Pages artifact growth"),
 ]
 
 
@@ -266,6 +272,8 @@ def main() -> None:
     run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
     run(["python3", "code/orchestrators/export_agent_data.py", "--check"])
     run(["python3", "code/orchestrators/build_agent_index.py", "--check"])
+    run(["python3", "code/orchestrators/build_coverage_exceptions.py", "--check"])
+    run(["python3", "code/orchestrators/classify_repositories.py", "--check"])
     run_resume_check()
     run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
@@ -291,7 +299,8 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/build_image_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/ensure_agent_navigation.py", "--check"])
-    run(["python3", "code/orchestrators/build_pages_artifact.py", "--check-size-only"])
+    run(["python3", "code/orchestrators/build_pages_artifact.py", "--check-size-only", "--check-manifest"])
+    run(["python3", "code/orchestrators/build_release_integrity.py", "--check"])
     run(["python3", "code/orchestrators/check_external_links.py", "--check"])
     run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
@@ -306,6 +315,10 @@ def main() -> None:
     validate_count_consistency()
     validate_sitemap_targets()
     validate_seo_invariants()
+    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+    from public_integrity import validate_public_files
+
+    validate_public_files(REPO_ROOT)
     print("Repository validation completed")
 
 

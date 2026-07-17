@@ -1,0 +1,58 @@
+{
+  "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+  "version": "0.5.0",
+  "doi": "10.5281/zenodo.21419693",
+  "doi_url": "https://doi.org/10.5281/zenodo.21419693",
+  "zenodo_record": "https://zenodo.org/records/21419693",
+  "record_id": "21419694",
+  "publication_date": "2026-07-15",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman\n(Active Inference Institute) for constructing reproducible visual, auditory,\ntemporal, and audiovisual stimulus families. The intended public release will\nbe available at the following repository:\n\nhttps://github.com/docxology/DuckRabbit\n\nDuckRabbit is released under the MIT License.\n\nIts basic unit is an immutable request containing an illusion identifier,\nvalidated parameters, a seed, and an encoding specification. The request yields\na canonical artifact, objective media measurements, and a versioned provenance\nmanifest before any delivery codec is selected. This separation makes the\nstimulus a testable computational object while reserving claims about\nperception for controlled observer protocols.\n\nThe release situates its engineering choices within a deliberately broad\nhistorical foundation spanning Greek, Arabic/Islamicate, Chinese, and\nearly-modern work on optics, visual inference, and cross-sensory knowledge,\nalongside later psychophysics and illusion research. These traditions motivate\nquestions about construction, observation, and evidence; they are contextual\nprecedents, not evidence that a generated file reproduces an ancient,\nearly-modern, or clinical observation.\n\nVersion 0.5.0 contains 17 implemented\ngenerators and 18 catalog entries, supported by\n36 source records and 18 evidence records\nin a checked-in audit snapshot. The package generates\n15 publication figures and 10\nmachine-derived tables from the live registry. It also provides a typed\nobserver-study harness and a transparent synthetic diagnostic: a\nhand-specified feature observer with serialized weights, temperature, analytic\ncalibration, and human_data=false. No participant data are bundled; synthetic model output is explicitly nonhuman.\n\nDuckRabbit verifies physical stimulus properties, media round trips, hashes,\ntiming, and declared provenance. It does not infer a universal percept, effect\nsize, or cross-device perceptual equivalence from a generated artifact. Its\ncontribution is a reproducibility and epistemic boundary: source-backed family\ndescriptions, deterministic media facts, and future observer hypotheses remain\ndifferent typed records rather than being collapsed into one claim. DuckRabbit\nis software for reproducible stimulus construction and audit, not a claim that\na generated file alone produces a universal perceptual effect.\n\n---\nAssociated artifacts\nGitHub release: v0.5.0 (https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0)\nDOI: https://doi.org/10.5281/zenodo.21419693\nZenodo: https://zenodo.org/records/21419693\nPDF SHA-256: 3afefaeeccb5616448cc6da83b5807dd996ccc96bfff113d635b8da140baea06",
+  "keywords": [
+    "perceptual illusions",
+    "cognitive taxonomy",
+    "audio-visual stimuli",
+    "deterministic generation",
+    "typed parameters",
+    "research software",
+    "reproducible research",
+    "psychophysics"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Duckrabbit_3afefaee.pdf",
+      "size_bytes": 3937013,
+      "checksum": "md5:9c7d1ed07775845962acfb4e6a9f4c42",
+      "download_url": "https://zenodo.org/api/records/21419694/files/Friedman_2026_Duckrabbit_3afefaee.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/DuckRabbit"
+    }
+  ],
+  "github_repo": "docxology/DuckRabbit",
+  "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+  "release_tag": "v0.5.0",
+  "release_name": "DuckRabbit v0.5.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-07-17T23:23:31Z"
+}

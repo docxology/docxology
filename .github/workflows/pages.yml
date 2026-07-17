@@ -28,12 +28,13 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Assemble bounded public artifact
-        run: python3 code/orchestrators/build_pages_artifact.py --output _site --check-size
+        run: python3 code/orchestrators/build_pages_artifact.py --output _site --check-size --check-manifest
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+          include-hidden-files: true
 
       - name: Deploy Pages artifact
         id: deployment

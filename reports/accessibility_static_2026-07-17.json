@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-17T21:37:15Z",
+  "generated_at": "2026-07-17T23:23:52Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 1529,
-  "passing": 1529,
+  "page_count": 1531,
+  "passing": 1531,
   "results": [
     {
       "path": "art.html",
@@ -4006,6 +4006,31 @@
     },
     {
       "path": "papers/2026_DoorsOfPerception/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_DuckRabbit/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -37206,6 +37231,31 @@
     },
     {
       "path": "works/Friedman2026DoorsPerceptionAreThreshold007.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html",
       "ok": true,
       "checks": {
         "lang": true,

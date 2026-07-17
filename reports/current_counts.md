@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-07-17T21:37:09+00:00`
+Generated: `2026-07-17T23:23:44+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -30,18 +30,18 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ## Counts
 
-- Bibliography works: `195`
-- Paper-folder docs: `178`
+- Bibliography works: `196`
+- Paper-folder docs: `179`
 - Full-text extractions: `173`
 - Papers with image galleries: `141`
 - Total extracted images: `9004`
-- Bibliography docs links: `178`
+- Bibliography docs links: `179`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `174`
+- Papers: `175`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
@@ -52,7 +52,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `42`
 - Cognitive Security: `32`
 - Art & Synergetics: `16`
-- Computational: `46`
+- Computational: `47`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
@@ -65,50 +65,50 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `195`
+- data_works_json: `196`
 - data_software_json: `96`
-- data_publications_ld_main_entity: `195`
+- data_publications_ld_main_entity: `196`
 - data_software_ld_main_entity: `96`
 
 ### GitHub Inventory
 
-- total: `384`
-- docxology: `344`
+- total: `385`
+- docxology: `345`
 - ActiveInferenceInstitute: `40`
 - curated: `93`
-- uncataloged: `291`
+- uncataloged: `292`
 - forks: `243`
 - archived: `0`
-- public: `384`
+- public: `385`
 - private: `0`
 - recently_updated: `122`
-- primary_total: `141`
-- primary_docxology: `103`
+- primary_total: `142`
+- primary_docxology: `104`
 - primary_ActiveInferenceInstitute: `38`
 - fork_docxology: `241`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `344`
+- GitHub user docxology: `345`
 - GitHub user ActiveInferenceInstitute: `40`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 - Europe PMC exact author records: `10`
 - Crossref ORCID DOI records: `15`
 - Zenodo exact-name creator records: `47`
-- Zenodo ORCID-linked records: `130`
+- Zenodo ORCID-linked records: `131`
 
 ### Paired Publications
 
-- github_releases: `20`
-- zenodo_records: `132`
-- pairs: `78`
-- strong_pairs: `15`
+- github_releases: `37`
+- zenodo_records: `133`
+- pairs: `137`
+- strong_pairs: `29`
 - already_reviewed: `0`
-- needs_review: `63`
+- needs_review: `108`
 - create_new: `0`
-- update_existing: `15`
+- update_existing: `29`
 
 ### Paired Publication Decisions
 

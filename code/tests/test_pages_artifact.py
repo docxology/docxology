@@ -27,3 +27,8 @@ def test_source_and_local_only_tooling_are_separated():
     assert not bpa.is_published_path(Path(".github/workflows/pages.yml"))
     assert bpa.is_published_path(Path("data/agent-index.json"))
     assert bpa.is_published_path(Path("resume/resume.pdf"))
+
+
+def test_control_manifests_have_public_fallback_policy():
+    assert Path("data/pages-artifact-manifest.json") in bpa.CONTROL_FILES
+    assert Path("data/release-integrity.json") in bpa.CONTROL_FILES

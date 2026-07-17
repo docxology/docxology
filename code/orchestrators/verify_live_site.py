@@ -166,6 +166,41 @@ def count_fingerprint_matches(observed: dict, current: dict) -> bool:
     return all(observed.get(key) == current.get(key) for key in keys)
 
 
+def parse_json_contract(path: str, text: str, fingerprint: dict) -> tuple[dict[str, bool], dict[str, int]]:
+    """Parse live JSON routes and compare their counts to local canonical data."""
+    if not path.endswith(".json"):
+        return {}, {}
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return {"valid_json": False}, {}
+    checks = {"valid_json": True}
+    observed: dict[str, int] = {}
+    if path == "data/works.json":
+        count = payload.get("count")
+        observed["works"] = count if isinstance(count, int) else -1
+        checks["works_count_matches"] = count == fingerprint.get("works")
+    elif path == "data/software-ld.json":
+        count = len(payload.get("mainEntity", [])) if isinstance(payload.get("mainEntity"), list) else -1
+        observed["software_total"] = count
+        checks["software_count_matches"] = count == fingerprint.get("software_total")
+    elif path == "data/agent-index.json":
+        checks["versioned_schema"] = payload.get("schema_version") == "1.2"
+        checks["routes_present"] = isinstance(payload.get("routes"), list) and bool(payload.get("routes"))
+        checks["datasets_present"] = isinstance(payload.get("datasets"), dict) and bool(payload.get("datasets"))
+        checks["dataset_hashes_present"] = isinstance(payload.get("dataset_hashes"), dict) and bool(payload.get("dataset_hashes"))
+        agent_works = payload.get("datasets", {}).get("works", {}).get("count")
+        observed["agent_works"] = agent_works if isinstance(agent_works, int) else -1
+        checks["agent_works_match"] = agent_works == fingerprint.get("works")
+    elif path == "search-index.json":
+        checks["items_present"] = isinstance(payload.get("items"), list)
+        checks["count_matches_items"] = payload.get("count") == len(payload.get("items", []))
+    elif path == "data/catalog.json":
+        # Schema.org DataCatalog uses the singular `dataset` property.
+        checks["catalog_datasets_present"] = bool(payload.get("dataset") or payload.get("datasets"))
+    return checks, observed
+
+
 def fetch(url: str, timeout: int, extra_headers: dict[str, str] | None = None) -> dict:
     started = time.time()
     headers = {
@@ -276,10 +311,74 @@ def pages_status(timeout: int) -> dict:
     }
 
 
+def latest_deployment_run(timeout: int) -> dict:
+    """Return the latest successful bounded Pages workflow run metadata."""
+    try:
+        proc = subprocess.run(
+            ["gh", "api", "repos/docxology/docxology/actions/runs?branch=main&per_page=20"],
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+            check=False,
+        )
+        payload = json.loads(proc.stdout) if proc.returncode == 0 else {}
+        for run in payload.get("workflow_runs", []):
+            name = str(run.get("name") or run.get("display_title") or "")
+            if "Deploy bounded GitHub Pages artifact" not in name:
+                continue
+            if run.get("conclusion") != "success":
+                continue
+            return {
+                "workflow_run_id": run.get("id"),
+                "workflow_url": run.get("html_url"),
+                "head_sha": run.get("head_sha"),
+                "status": run.get("status"),
+                "conclusion": run.get("conclusion"),
+                "created_at": run.get("created_at"),
+                "updated_at": run.get("updated_at"),
+            }
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError):
+        pass
+    return {}
+
+
+def local_source_commit() -> str:
+    """Return the checked-out commit used to generate the expected contract."""
+    try:
+        proc = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10,
+            check=False,
+        )
+        return proc.stdout.strip() if proc.returncode == 0 else ""
+    except (OSError, subprocess.SubprocessError):
+        return ""
+
+
+def local_source_dirty() -> bool:
+    """Return whether uncommitted source changes can differ from Pages."""
+    try:
+        proc = subprocess.run(
+            ["git", "status", "--porcelain", "--untracked-files=all"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10,
+            check=False,
+        )
+        return proc.returncode == 0 and bool(proc.stdout.strip())
+    except (OSError, subprocess.SubprocessError):
+        return False
+
+
 def build_report(timeout: int) -> dict:
     checks = load_dynamic_checks()
     fingerprint = load_current_counts_fingerprint()
     results = []
+    observed_counts: dict[str, int] = {}
     for check in checks:
         url = BASE + check["path"]
         response = fetch_with_retries(url, timeout)
@@ -288,7 +387,9 @@ def build_report(timeout: int) -> dict:
             key: response["headers"].get(key, "")
             for key in ("last-modified", "etag", "cache-control", "age", "x-cache", "x-served-by")
         }
-        ok = response["ok"] and all(markers.values())
+        json_checks, observed = parse_json_contract(check["path"], response["text"], fingerprint)
+        observed_counts.update(observed)
+        ok = response["ok"] and all(markers.values()) and all(json_checks.values())
         results.append(
             {
                 "path": check["path"] or "index.html",
@@ -298,12 +399,20 @@ def build_report(timeout: int) -> dict:
                 "bytes": response["bytes"],
                 "elapsed_ms": response["elapsed_ms"],
                 "markers": markers,
+                "json_checks": json_checks,
+                "observed_counts": observed,
                 "cache": cache,
                 "error": response["error"],
             }
         )
 
     pages = pages_status(timeout)
+    pages["deployment_run"] = latest_deployment_run(timeout)
+    source_commit = local_source_commit()
+    source_dirty = local_source_dirty()
+    deployed_commit = pages.get("deployment_run", {}).get("head_sha", "")
+    deployment_sha_mismatch = bool(source_commit and deployed_commit and source_commit != deployed_commit)
+    deployment_pending = deployment_sha_mismatch or source_dirty
     # A freshly generated route can legitimately be absent from the CDN while
     # GitHub Pages reports a healthy build.  Record that state explicitly so a
     # deploy propagation delay is not confused with a broken local artifact.
@@ -313,6 +422,8 @@ def build_report(timeout: int) -> dict:
             local_path = REPO_ROOT / (item["path"] if item["path"] != "index.html" else "index.html")
             item["local_exists"] = local_path.is_file()
             item["deployment_pending"] = item["status"] == 404 and item["local_exists"]
+            if deployment_pending and not item["ok"]:
+                item["deployment_pending"] = True
             if item["deployment_pending"]:
                 pending_paths.append(item["path"])
     else:
@@ -325,6 +436,16 @@ def build_report(timeout: int) -> dict:
         "expected_counts": fingerprint,
         "note": "Live verification can fail while GitHub Pages is still building or CDN caches are stale.",
         "github_pages": pages,
+        "deployment": pages.get("deployment_run", {}),
+        "source_commit": source_commit,
+        "source_dirty": source_dirty,
+        "deployment_sha_mismatch": deployment_sha_mismatch,
+        "deployment_pending_reason": (
+            "local source is dirty or latest successful Pages deployment is for a different source commit"
+            if deployment_pending
+            else ""
+        ),
+        "observed_counts": observed_counts,
         "deployment_pending_paths": pending_paths,
         "checked_urls": len(results),
         "passing": sum(1 for item in results if item["ok"]),
@@ -355,6 +476,12 @@ def main() -> None:
         for item in payload.get("results", []):
             if item.get("status", 0) >= 400 and not item.get("deployment_pending"):
                 raise SystemExit(f"Live-site page failure: {item.get('url')} status {item.get('status')}")
+            if item.get("json_checks") and not all(item["json_checks"].values()) and not item.get("deployment_pending"):
+                raise SystemExit(f"Live-site JSON contract failure: {item.get('url')}")
+        if "github_pages" in payload:
+            pages = payload.get("github_pages", {})
+            if not pages.get("ok") and not pages.get("deployment_pending"):
+                raise SystemExit(f"GitHub Pages status is not healthy: {pages.get('status', 'unknown')}")
         if not payload.get("overall_ok"):
             print(
                 "checked live-site verification report "

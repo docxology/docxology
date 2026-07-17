@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-17T21:37:11Z",
+  "generated_at": "2026-07-17T23:23:46Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 195,
+  "count": 196,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3928,6 +3928,29 @@
       ],
       "methods": [],
       "source": "papers/2026_FourfoldVision/README.md"
+    },
+    "Friedman2026DuckRabbitTypedMultimodalIllusion197": {
+      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "abstract": "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public release will be available at the following repository: https://github.com/docxology/DuckRabbit DuckRabbit is released under the MIT License. Its basic unit is an immutable request containing an illusion identifier, validated parameters, a seed, and an encoding specification. The request yields a canonical artifact, objective media measurements, and a versioned provenance manifest before any delivery codec is selected. This separation makes the stimulus a testable computational object while reserving claims about perception for controlled observer protocols. The release situates its engineering choices within a deliberately broad historical foundation spanning Greek, Arabic/",
+      "keywords": [
+        "perceptual illusions",
+        "cognitive taxonomy",
+        "audio-visual stimuli",
+        "deterministic generation",
+        "typed parameters",
+        "research software",
+        "reproducible research",
+        "psychophysics"
+      ],
+      "findings": [
+        "perceptual illusions",
+        "cognitive taxonomy",
+        "audio-visual stimuli",
+        "deterministic generation",
+        "typed parameters"
+      ],
+      "methods": [],
+      "source": "papers/2026_DuckRabbit/README.md"
     }
   }
 }

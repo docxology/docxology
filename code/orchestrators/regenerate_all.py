@@ -8,9 +8,9 @@ hand, re-running generators one at a time until `validate_repo.py` went green.
 
 This script encodes that order once, in *write* mode, so a single command rebuilds the
 generated layer deterministically from the current sources. The order below is
-dependency-correct (each step's inputs are produced by an earlier step) and differs from
-``validate_repo``'s ``--check`` order in one respect: ``build_generated_manifest`` MUST
-run last because it hashes every other generated file.
+dependency-correct (each step's inputs are produced by an earlier step). The integrity
+tail is deliberately explicit: Pages budget → agent index → generated manifest → release
+integrity → final generated manifest.
 
 Scope: LOCAL artifacts only. This script is deliberately offline and idempotent — run it
 as many times as you like and (absent a source edit) it changes nothing. Network
@@ -45,12 +45,14 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Local, dependency-ordered write chain. Each tuple is (script, args).
-# build_generated_manifest is intentionally LAST (it hashes every other output).
+# The final build_generated_manifest is intentionally last (it hashes every other output).
 CHAIN: list[tuple[str, list[str]]] = [
     ("export_bibliography.py", []),              # works.json + bib/csl/ris  <- pages/BIBLIOGRAPHY.md
     ("sync_publications_html.py", ["--apply"]),  # publications.html + -ld   <- works.json
     ("sync_software_html.py", ["--apply"]),      # software.html + -ld       <- pages/SOFTWARE.md
     ("build_current_counts.py", []),             # current-counts.{json,md}  <- works + software
+    ("build_coverage_exceptions.py", []),        # explicit source coverage queue <- works.json
+    ("classify_repositories.py", []),            # repository review queue <- GitHub inventory
     ("sync_scholar_metrics.py", []),             # dated Scholar snapshot -> hand-authored surfaces
     ("generate_og_images.py", []),               # og-*.jpg + counts sidecar <- current-counts.json
     ("export_agent_data.py", []),                # claims/people/orgs        <- counts
@@ -77,7 +79,10 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("generate_feed.py", []),
     ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit
     ("build_image_sitemap.py", []),               # sitemap-images.xml       <- data/artworks.json
-    ("build_generated_manifest.py", []),         # LAST — hashes all of the above
+    ("build_pages_artifact.py", ["--write-manifest", "--check-size-only"]),
+    ("build_generated_manifest.py", []),         # include the integrity outputs in the command matrix
+    ("build_release_integrity.py", []),
+    ("build_generated_manifest.py", []),         # LAST — stable source/output command matrix
 ]
 
 

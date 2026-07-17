@@ -2,14 +2,14 @@
   "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
   "command": "uv run python3 code/orchestrators/build_current_counts.py",
   "counts": {
-    "bibliography_docs_links": 178,
-    "bibliography_works": 195,
+    "bibliography_docs_links": 179,
+    "bibliography_works": 196,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 42,
       "Art & Synergetics": 16,
       "Cognitive Security": 32,
-      "Computational": 46,
+      "Computational": 47,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -17,27 +17,27 @@
     "extracted_images": 9004,
     "full_text_papers": 173,
     "generated_exports": {
-      "data_publications_ld_main_entity": 195,
+      "data_publications_ld_main_entity": 196,
       "data_software_json": 96,
       "data_software_ld_main_entity": 96,
-      "data_works_json": 195
+      "data_works_json": 196
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 40,
       "archived": 0,
       "curated": 93,
-      "docxology": 344,
+      "docxology": 345,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 241,
       "forks": 243,
       "primary_ActiveInferenceInstitute": 38,
-      "primary_docxology": 103,
-      "primary_total": 141,
+      "primary_docxology": 104,
+      "primary_total": 142,
       "private": 0,
-      "public": 384,
+      "public": 385,
       "recently_updated": 122,
-      "total": 384,
-      "uncataloged": 291
+      "total": 385,
+      "uncataloged": 292
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -48,23 +48,23 @@
     "paired_publications": {
       "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 20,
-      "needs_review": 63,
-      "pairs": 78,
-      "strong_pairs": 15,
-      "update_existing": 15,
-      "zenodo_records": 132
+      "github_releases": 37,
+      "needs_review": 108,
+      "pairs": 137,
+      "strong_pairs": 29,
+      "update_existing": 29,
+      "zenodo_records": 133
     },
-    "paper_folder_docs": 178,
+    "paper_folder_docs": 179,
     "papers_with_images": 141,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 40,
-      "GitHub user docxology": 344,
+      "GitHub user docxology": 345,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 130,
+      "Zenodo ORCID-linked records": 131,
       "Zenodo exact-name creator records": 47
     },
     "software": {
@@ -75,13 +75,13 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 174,
+      "Papers": 175,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2
     }
   },
-  "generated_at": "2026-07-17T21:37:09+00:00",
+  "generated_at": "2026-07-17T23:23:44+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

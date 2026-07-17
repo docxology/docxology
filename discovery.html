@@ -162,7 +162,7 @@
             <div class="stat"><div class="num">8</div><div class="lbl">PubMed exact records</div></div>
             <div class="stat"><div class="num">10</div><div class="lbl">Europe PMC results</div></div>
             <div class="stat"><div class="num">15</div><div class="lbl">Crossref DOI records</div></div>
-            <div class="stat"><div class="num">47/130</div><div class="lbl">Zenodo exact / ORCID</div></div>
+            <div class="stat"><div class="num">47/131</div><div class="lbl">Zenodo exact / ORCID</div></div>
             <div class="stat"><div class="num">359</div><div class="lbl">GitHub repos</div></div>
         </div>
     </div>
@@ -207,7 +207,7 @@
                         <tr><td>Europe PMC</td><td><a href="https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22">Exact author search</a></td><td>Returned 10 exact-author results, including preprints.</td></tr>
                         <tr><td>Crossref API</td><td><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">ORCID DOI records</a></td><td>Returned 15 DOI records attached to the ORCID.</td></tr>
                         <tr><td>Zenodo</td><td><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Exact-name creator search</a></td><td>Returned 47 exact-name records.</td></tr>
-                        <tr><td>Zenodo API</td><td><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">ORCID-linked records</a></td><td>Returned 130 records, including versioned deposits and software archives.</td></tr>
+                        <tr><td>Zenodo API</td><td><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">ORCID-linked records</a></td><td>Returned 131 records, including versioned deposits and software archives.</td></tr>
                         <tr><td>Semantic Scholar</td><td><a href="https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&amp;sort=relevance">Exact-name search</a></td><td>AI-curated citation graph; verify candidate author merges before using as profile evidence.</td></tr>
                         <tr><td>DBLP</td><td><a href="https://dblp.org/pid/346/2173.html">Author page</a></td><td>Computer-science bibliography mirror.</td></tr>
                     </tbody>
@@ -225,7 +225,7 @@
                 <table>
                     <thead><tr><th>Source</th><th>Link</th><th>Notes</th></tr></thead>
                     <tbody>
-                        <tr><td>GitHub API — docxology</td><td><a href="https://api.github.com/users/docxology">api.github.com/users/docxology</a></td><td>Returned 344 public repositories on 2026-07-17; profile timestamps and profile metadata are included in the API response.</td></tr>
+                        <tr><td>GitHub API — docxology</td><td><a href="https://api.github.com/users/docxology">api.github.com/users/docxology</a></td><td>Returned 345 public repositories on 2026-07-17; profile timestamps and profile metadata are included in the API response.</td></tr>
                         <tr><td>GitHub API — AII</td><td><a href="https://api.github.com/users/ActiveInferenceInstitute">api.github.com/users/ActiveInferenceInstitute</a></td><td>Returned 40 public repositories on 2026-07-17; curated AII catalog totals in <a href="reports/current_counts.md">current totals</a>.</td></tr>
                         <tr><td>AII public landing page</td><td><a href="https://activeinference.org/">activeinference.org</a></td><td>Current public landing page; governance/source pages remain on activeinference.institute.</td></tr>
                         <tr><td>AII Wikidata</td><td><a href="https://www.wikidata.org/wiki/Q139600792">Q139600792</a></td><td>Organization knowledge-graph anchor; useful for reconciliation, but currently lightly referenced.</td></tr>
@@ -234,14 +234,18 @@
                         <tr><td>OpenSearch</td><td><a href="opensearch.xml">opensearch.xml</a></td><td>Search-provider descriptor for site search.</td></tr>
                         <tr><td>CodeMeta</td><td><a href="codemeta.json">codemeta.json</a></td><td>Machine-readable software/source metadata for repository indexes.</td></tr>
                         <tr><td>Data catalog</td><td><a href="catalog.html">catalog.html</a> · <a href="data/catalog.json">data/catalog.json</a></td><td>Schema.org DataCatalog for public JSON, citation, and report exports.</td></tr>
-                        <tr><td>Agent route manifest</td><td><a href="data/agent-index.json">data/agent-index.json</a></td><td>Stable route families, dataset schemas, current counts, freshness policy, and query recipes.</td></tr>
+                        <tr><td>Agent route manifest</td><td><a href="data/agent-index.json">data/agent-index.json</a></td><td>Stable route families, dataset schemas, current counts, freshness policy, hashes, fallbacks, and query recipes.</td></tr>
+                        <tr><td>Coverage exceptions</td><td><a href="data/coverage-exceptions.json">data/coverage-exceptions.json</a> · <a href="reports/source_coverage_2026-07-17.md">source coverage report</a></td><td>Explicit paper-folder, full-text, DOI, canonical-URL, and non-paper coverage gaps; review queue rather than automatic rejection.</td></tr>
+                        <tr><td>Repository classification</td><td><a href="data/repository-classification.json">data/repository-classification.json</a></td><td>Review queue for uncatalogued public repositories, preserving fork/archive state and manual catalog decisions.</td></tr>
+                        <tr><td>Pages artifact</td><td><a href="data/pages-artifact-manifest.json">data/pages-artifact-manifest.json</a></td><td>Published file list, SHA-256 values, bounded byte budget, omitted-image policy, and GitHub fallback templates.</td></tr>
+                        <tr><td>Release integrity</td><td><a href="data/release-integrity.json">data/release-integrity.json</a></td><td>Source/generator hashes, Pages artifact summary, deployment metadata, live verification, and public CV privacy status.</td></tr>
                         <tr><td>Updates</td><td><a href="updates.html">updates.html</a> · <a href="CHANGELOG.md">CHANGELOG.md</a></td><td>Human-readable update history and source changelog.</td></tr>
                         <tr><td>Search index</td><td><a href="search-index.json">search-index.json</a></td><td>Site-wide discovery index for pages, works, repositories, people, organizations, and claims.</td></tr>
                         <tr><td>RSS feed</td><td><a href="feed.xml">feed.xml</a></td><td>Recent works and site-update feed.</td></tr>
                         <tr><td>Citation metadata</td><td><a href="CITATION.cff">CITATION.cff</a></td><td>Machine-readable citation metadata for this public research index.</td></tr>
                         <tr><td>Per-work pages</td><td><a href="works/">works/</a></td><td>Generated landing pages for each bibliography row.</td></tr>
                         <tr><td>Works JSON</td><td><a href="data/works.json">data/works.json</a></td><td>Structured bibliography export; row count in <a href="reports/current_counts.md">current totals</a>.</td></tr>
-                        <tr><td>Software JSON</td><td><a href="data/software.json">data/software.json</a></td><td>Structured export of the 88-row curated software catalog.</td></tr>
+                        <tr><td>Software JSON</td><td><a href="data/software.json">data/software.json</a></td><td>Structured export of the 96-row curated software catalog.</td></tr>
                         <tr><td>GitHub repository inventory</td><td><a href="repositories.html">repositories.html</a> · <a href="repositories-forks.html">repositories-forks.html</a> · <a href="data/github-repositories.json">data/github-repositories.json</a></td><td>Generated primary repository inventory for docxology and AII, with forks separated into an archive page while JSON remains complete for agents.</td></tr>
                         <tr><td>People JSON</td><td><a href="data/people.json">data/people.json</a></td><td>Compact people index for agentic context.</td></tr>
                         <tr><td>Organizations JSON</td><td><a href="data/organizations.json">data/organizations.json</a></td><td>Compact organization index for agentic context.</td></tr>
@@ -256,7 +260,7 @@
                         <tr><td>Reconciliation report</td><td><a href="reports/reconciliation_2026-07-17.md">reports/reconciliation_2026-07-17.md</a></td><td>Human-readable explanation of count differences.</td></tr>
                         <tr><td>External-link report</td><td><a href="reports/external_links_2026-05-15.json">reports/external_links_2026-05-15.json</a></td><td>Cached scoped network check for site-critical outbound links.</td></tr>
                         <tr><td>External-link triage</td><td><a href="reports/external_links_triage_2026-05-15.md">reports/external_links_triage_2026-05-15.md</a></td><td>Categorized warning report for scoped external links.</td></tr>
-                        <tr><td>Live-site verification</td><td><a href="reports/live_site_verification_2026-05-15.json">reports/live_site_verification_2026-05-15.json</a></td><td>Deployed-site checks for expected markers, CDN headers, and GitHub Pages status.</td></tr>
+                        <tr><td>Live-site verification</td><td><a href="reports/live_site_verification_2026-07-17.json">reports/live_site_verification_2026-07-17.json</a></td><td>Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status.</td></tr>
                         <tr><td>Asset-size audit</td><td><a href="reports/asset_size_2026-07-17.json">reports/asset_size_2026-07-17.json</a></td><td>Size budget report for public assets and generated exports.</td></tr>
                         <tr><td>Static accessibility report</td><td><a href="reports/accessibility_static_2026-07-17.json">reports/accessibility_static_2026-07-17.json</a></td><td>Static accessibility checks for root HTML pages.</td></tr>
                         <tr><td>Browser smoke</td><td><a href="reports/browser-smoke/2026-05-28/manifest.json">reports/browser-smoke/2026-05-28/manifest.json</a></td><td>Browser-rendered smoke screenshots for high-priority pages.</td></tr>

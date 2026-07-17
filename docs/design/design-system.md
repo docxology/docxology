@@ -5,7 +5,7 @@ Extracted from [`style.css`](../../style.css). Generated pages and new UI should
 ## Principles
 
 - Editorial dark theme: warm neutrals, **red accent** for links and focus, gold/silver as secondary highlights, restrained motion (`prefers-reduced-motion` honored).
-- Body copy uses the **Inter / system-UI** stack; display headings use **Playfair Display**.
+- Body copy uses the **Inter / system-UI** stack; display headings use the system serif fallback stack.
 - Avoid generic “AI landing page” patterns (centered hero stacks, purple gradients, uniform pill buttons everywhere).
 
 ## Color tokens (`:root`)
@@ -34,8 +34,9 @@ Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 
 ## Typography
 
-- **Body:** `'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif` (`font-size: 17px`); Inter is loaded site-wide via Google Fonts (weights 300–800)
-- **Display (h1, hero, section headings):** `'Playfair Display', serif`
+- **Body:** `'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif` (`font-size: 17px`); no runtime font provider is required
+- **Display (h1, hero, section headings):** `Georgia, 'Times New Roman', serif` fallback stack
+- The quoted Inter/Playfair names are optional local-font matches; they are not fetched from Google Fonts. This keeps the CSP `font-src 'self'` policy honest and preserves readable system fallbacks offline.
 - **Scale:** clamp-based hero headings; body `line-height: 1.78`
 
 ## Accessibility

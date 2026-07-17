@@ -39,6 +39,10 @@
 
 ### 🛠️ MAINTAINER
 
+- Treat [`TODO.md`](TODO.md) as the active backlog: each unfinished item has a
+  stable ID, priority, owner, trigger, deliverable, acceptance criteria, and
+  dependencies. Completed work belongs in `CHANGELOG.md`, release snapshots,
+  and dated reports.
 - Runs [regenerate_docs.py](code/orchestrators/regenerate_docs.py) to rebuild documentation
 - Runs [sync_publications_html.py](code/orchestrators/sync_publications_html.py) with `--apply` after edits to the unified bibliography table so [publications.html](publications.html) stays aligned
 - Uses [docs/operations/publication-sync.md](docs/operations/publication-sync.md) and [sync_paired_publications.py](code/orchestrators/sync_paired_publications.py) to check GitHub releases against Zenodo records, apply strong publication pairs, and leave ambiguous pairs for review
@@ -47,6 +51,9 @@
 - Validates documentation completeness across all paper folders (see [`papers/README.md`](papers/README.md), [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), and the generated [`reports/current_counts.md`](reports/current_counts.md) snapshot)
 - Ensures consistent formatting and accurate metadata
 - Manages the documentation generation pipeline
+- Runs the ordered `regenerate_all.py` pipeline so coverage exceptions,
+  repository classification, Pages artifact metadata, release integrity, and
+  generated manifests stay aligned.
 
 ### 🖥️ WEB DEVELOPER
 
@@ -105,6 +112,7 @@ docxology/
 ├── search-index.json  ← Generated site-wide search index
 ├── feed.xml           ← RSS feed for recent works and site updates
 ├── GENERATED.md       ← Generated-file manifest with source-to-output rebuild commands
+├── TODO.md             ← Hand-maintained unfinished backlog; no completed history
 ├── AGENT_START.md     ← Agent task recipes and source-of-truth rules
 ├── humans.txt         ← Human credits, contact, and site metadata
 ├── .well-known/security.txt ← Responsible disclosure metadata

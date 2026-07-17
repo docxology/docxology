@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-05-27",
-  "source_note": "Curated from the public Coda resume export at /Users/4d/Downloads/Resume.pdf and normalized against local source-of-truth files.",
+  "source_note": "Curated from a public Coda resume export (the original import is not stored in this repository) and normalized against local source-of-truth files.",
   "profile": {
     "name": "Daniel Ari Friedman",
     "credential": "PhD",

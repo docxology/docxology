@@ -38,6 +38,11 @@ A CSP meta tag is deployed on all indexable HTML pages:
 
 The `code/orchestrators/deploy_seo_security.py` script idempotently adds or normalizes the CSP/referrer meta tags (plus `rel="me"` and `hreflang` links) across public HTML pages. GitHub Pages does not expose a project-level mechanism for custom response headers, so these meta policies are the strongest repository-controlled enforcement layer. The `code/orchestrators/migrate_inline_handlers.py` script converts inline `on*` event handlers to `data-*` attributes that `interactive.js` wires up via `addEventListener`.
 
+GitHub Pages cannot set custom response headers for this repository. The CSP and
+referrer policy above are meta-policy controls emitted in the document and are
+validated as deployment invariants; they are not equivalent to response headers
+at the edge. A future host with header control may strengthen this boundary.
+
 ## Supply chain
 
 - No npm runtime on the live site today (vanilla JS + static assets).

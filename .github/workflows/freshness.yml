@@ -57,7 +57,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue create \
-            --title "Public-source freshness drift detected" \
-            --label "evidence,verification" \
-            --body "The scheduled public-source normalized facts differ from the latest checked-in baseline (${{ steps.diff.outputs.baseline }}). Review the uploaded workflow artifact, then update curated claims deliberately if the scope and source quality justify it."
+          set -euo pipefail
+          title="Public-source freshness drift detected"
+          body="The scheduled public-source normalized facts differ from the latest checked-in baseline (${{ steps.diff.outputs.baseline }}). Review the uploaded workflow artifact, then update curated claims deliberately if the scope and source quality justify it."
+          existing="$(gh issue list --state open --search \"$title in:title\" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+            echo "Updated existing freshness issue #$existing"
+          else
+            gh issue create --title "$title" --label "evidence,verification" --body "$body"
+          fi

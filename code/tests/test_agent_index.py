@@ -12,7 +12,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 def test_agent_index_is_current_and_has_stable_routes():
     path = REPO_ROOT / "data" / "agent-index.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
-    assert payload["schema_version"] == "1.1"
+    assert payload["schema_version"] == "1.2"
     routes = {route["id"]: route for route in payload["routes"]}
     assert routes["publications"]["path"] == "/publications.html"
     assert routes["repositories"]["path"] == "/repositories.html"
@@ -25,6 +25,10 @@ def test_agent_index_is_current_and_has_stable_routes():
         payload["schemas"]
     )
     assert payload["schemas"]["Work"]["fields"]["citation_key"]
+    assert payload["schema_examples"]["Work"]
+    assert payload["dataset_hashes"]["works"]
+    assert payload["hosted_availability"]["artifact_manifest"] == "/data/pages-artifact-manifest.json"
+    assert payload["source_provenance"]["generated_by"].endswith("build_agent_index.py")
     assert payload["reports"]
     assert payload["freshness"]["verification"] == "/cite-verify.html"
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T21:37:15Z",
+  "generated_at": "2026-07-17T23:23:52Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1619,
+  "count": 1621,
   "items": [
     {
       "id": "page:home",
@@ -4983,6 +4983,31 @@
       "content": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing Zenodo 10.5281/zenodo.21388456 Friedman2026FourfoldVisionWilliamBlake196 Art & Synergetics Paper Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualified route through that problem. It places William Blake's fourfold vision beside Buckminster Fuller's Synergetics without claiming shared vocabulary, historical influence, or Blakean anticipation of Quadray: Blake supplies a historically situated problem of plural seeing, while Quadray and tetrahedral geometry supply a reproducible model of relational aspects, partial views, and reconstruction. The formal result is exact: for any non-degenerate convex tetrahedron observed by a strictly exterior camera, one frame exposes 1, 2, or 3 faces, never 4; an atlas can preserve all 4 across successive views. The project combines an argument graph, exact rational geometry, determinist Zenodo publication zenodo-publication"
     },
     {
+      "id": "work:Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "type": "work",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21419693",
+      "full_text_url": "",
+      "summary": "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public re",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "perceptual illusions",
+        "cognitive taxonomy",
+        "audio-visual stimuli",
+        "deterministic generation",
+        "typed parameters",
+        "research software",
+        "reproducible research",
+        "psychophysics"
+      ],
+      "content": "DuckRabbit: Typed Multimodal Illusion Generator Zenodo 10.5281/zenodo.21419693 Friedman2026DuckRabbitTypedMultimodalIllusion197 Computational Paper DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public release will be available at the following repository: https://github.com/docxology/DuckRabbit DuckRabbit is released under the MIT License. Its basic unit is an immutable request containing an illusion identifier, validated parameters, a seed, and an encoding specification. The request yields a canonical artifact, objective media measurements, and a versioned provenance manifest before any delivery codec is selected. This separation makes the stimulus a testable computational object while reserving claims about perception for controlled observer protocols. The release situates its engineering choices within a deliberately broad historical foundation spanning Greek, Arabic/ perceptual illusions cognitive taxonomy audio-visual stimuli deterministic generation typed parameters research software reproducible research psychophysics perceptual illusions cognitive taxonomy audio-visual stimuli deterministic generation typed parameters"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -6385,12 +6410,12 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "HTML",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/Active_Inference_Ontology  Python ActiveInferenceInstitute active active-inference inference ontology curated recent"
+      "content": "ActiveInferenceInstitute/Active_Inference_Ontology  HTML ActiveInferenceInstitute active active-inference inference ontology curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Un0",
@@ -6418,12 +6443,12 @@
       "tags": [
         "github",
         "repository",
-        "Jupyter Notebook",
+        "Python",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveBlockference  Jupyter Notebook ActiveInferenceInstitute active active-inference cadcad inference simulation curated recent"
+      "content": "ActiveInferenceInstitute/ActiveBlockference  Python ActiveInferenceInstitute active active-inference cadcad inference simulation curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveInferAnts",
@@ -6503,12 +6528,12 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/AEOS Active Entity Ontology for Science   ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/AEOS Active Entity Ontology for Science  Python ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/aii-org",
@@ -6839,12 +6864,12 @@
       "tags": [
         "github",
         "repository",
-        "HTML",
+        "TypeScript",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/NoOrg NoOrg is a Real Org HTML ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/NoOrg NoOrg is a Real Org TypeScript ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/on_policy_distillation",
@@ -6975,10 +7000,9 @@
         "github",
         "repository",
         "JavaScript",
-        "docxology",
-        "recent"
+        "docxology"
       ],
-      "content": "docxology/active-inference-pocket-lab Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments JavaScript docxology active-inference bayesian-modeling education pocket-lab python research simulation recent"
+      "content": "docxology/active-inference-pocket-lab Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments JavaScript docxology active-inference bayesian-modeling education pocket-lab python research simulation"
     },
     {
       "id": "github-repo:docxology/active_inference",
@@ -7470,6 +7494,22 @@
         "docxology"
       ],
       "content": "docxology/dotscope The Physics Engine for AI Coding Agents.  docxology"
+    },
+    {
+      "id": "github-repo:docxology/DuckRabbit",
+      "type": "github_repository",
+      "title": "docxology/DuckRabbit",
+      "url": "https://github.com/docxology/DuckRabbit",
+      "summary": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/DuckRabbit Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/ento_linguistics",
@@ -11352,7 +11392,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#173 ~ Visual illusions are koans for the eyes Personal Channel 2020-06-18 Research Video Archive Writing on Curio Cards for the \"On NFT\" book Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
+      "content": "#173 ~ Visual illusions are koans for the eyes Personal Channel 2020-06-18 Research Video Archive Writing on Curio Cards for the \"On NFT\" book DuckRabbit: Typed Multimodal Illusion Generator Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
     },
     {
       "id": "video:personal:OszlrBtfbXU",
@@ -28182,7 +28222,7 @@
         "personal",
         "Computational Methods"
       ],
-      "content": "DemoCreate: Declarative Audio-Visual Demo Generation for Software Personal Channel 2026-06-15 Computational Methods DemoCreate: Declarative Audio-Visual Demo Generation for Software ResNei: Solution Design Document ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction What if a demo video was not a recording you capture but a value you compile? This is demo create one declarative artifact describing a codebase or a research paper compiles through a deterministic pipeline into a verified provenence signed video. Here is the whole idea on one screen. A demo is a declarative spine scenes of narration chunks. Each anordered stream of typed actions. Three ideas carry the whole system. The spine is plain data. A demo is scenes. A scene is chunks. A chunk is typed actions. Rendering never mutates it. Every capability hides behind an interface with a…"
+      "content": "DemoCreate: Declarative Audio-Visual Demo Generation for Software Personal Channel 2026-06-15 Computational Methods DemoCreate: Declarative Audio-Visual Demo Generation for Software ResNei: Solution Design Document DuckRabbit: Typed Multimodal Illusion Generator ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data What if a demo video was not a recording you capture but a value you compile? This is demo create one declarative artifact describing a codebase or a research paper compiles through a deterministic pipeline into a verified provenence signed video. Here is the whole idea on one screen. A demo is a declarative spine scenes of narration chunks. Each anordered stream of typed actions. Three ideas carry the whole system. The spine is plain data. A demo is scenes. A scene is chunks. A chunk is typed actions. Rendering never mutates it. Every capability hides behind an interface with a…"
     },
     {
       "id": "video:institute:U09k-58lO6I",
@@ -28326,7 +28366,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 195 works.",
+      "title": "The curated bibliography contains 196 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28334,12 +28374,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 195 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 196 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 178 per-paper documentation folders.",
+      "title": "The repository contains 179 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28347,12 +28387,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 178 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 179 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 344 public repositories.",
+      "title": "The docxology GitHub profile has 345 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -28360,7 +28400,7 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 344 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 345 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
@@ -28523,7 +28563,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 195 works, 96 software rows, 384 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 196 works, 96 software rows, 385 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

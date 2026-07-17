@@ -13,8 +13,9 @@ data and deterministic generated artifacts.
 - Dated metrics and caveats are merged from `data/scholar-snapshot.json` and
   `data/claims.json`.
 
-The original Coda PDF at `/Users/4d/Downloads/Resume.pdf` is an import
-checklist only and should not be committed.
+The original Coda PDF was an import checklist only; it is not stored in this
+repository and its local filesystem path is intentionally not recorded in
+public source or generated manifests.
 
 ## Generated Outputs
 

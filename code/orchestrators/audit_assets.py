@@ -34,7 +34,14 @@ PATTERNS = [
 # The generated manifest describes the audit itself and is rebuilt after all
 # reports. Counting it here would create a self-referential size-report cycle:
 # manifest size -> asset report -> latest-report pointer -> manifest size.
-EXCLUDED_ASSETS = {"data/generated-manifest.json"}
+EXCLUDED_ASSETS = {
+    # These control files describe the generated layer or the Pages release
+    # itself. Including them would make their own metadata part of the asset
+    # budget and create a needless generator cycle.
+    "data/generated-manifest.json",
+    "data/pages-artifact-manifest.json",
+    "data/release-integrity.json",
+}
 
 
 def iter_assets() -> list[dict]:

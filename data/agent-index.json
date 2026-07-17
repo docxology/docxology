@@ -1,13 +1,17 @@
 {
-  "schema_version": "1.1",
-  "generated_at": "2026-07-17T21:37:09+00:00",
+  "schema_version": "1.2",
+  "generated_at": "2026-07-17T23:23:44+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
     "software": "/pages/SOFTWARE.md",
     "claims": "/data/claims.json",
     "counts": "/data/current-counts.json",
-    "verification": "/pages/VERIFICATION_LOG.md"
+    "verification": "/pages/VERIFICATION_LOG.md",
+    "backlog": "/TODO.md",
+    "coverage_exceptions": "/data/coverage-exceptions.json",
+    "repository_classification": "/data/repository-classification.json",
+    "release_integrity": "/data/release-integrity.json"
   },
   "routes": [
     {
@@ -111,7 +115,7 @@
   "datasets": {
     "works": {
       "path": "/data/works.json",
-      "count": 195,
+      "count": 196,
       "schema": "Work"
     },
     "software": {
@@ -121,7 +125,7 @@
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 384,
+      "count": 385,
       "schema": "Repository"
     },
     "artworks": {
@@ -143,6 +147,26 @@
       "path": "/data/claims.json",
       "count": null,
       "schema": "ClaimWithEvidence"
+    },
+    "coverage_exceptions": {
+      "path": "/data/coverage-exceptions.json",
+      "count": 40,
+      "schema": "CoverageException"
+    },
+    "repository_classification": {
+      "path": "/data/repository-classification.json",
+      "count": 292,
+      "schema": "RepositoryClassification"
+    },
+    "pages_artifact": {
+      "path": "/data/pages-artifact-manifest.json",
+      "count": null,
+      "schema": "PagesArtifactManifest"
+    },
+    "release_integrity": {
+      "path": "/data/release-integrity.json",
+      "count": null,
+      "schema": "ReleaseIntegrity"
     }
   },
   "reports": [
@@ -343,17 +367,377 @@
         "results": "array of check-specific objects for QA/deployment reports",
         "facts": "object of normalized source facts for public-source snapshots"
       }
+    },
+    "CoverageException": {
+      "type": "object",
+      "description": "One explicit bibliography coverage gap with a legitimacy/review status.",
+      "required": [
+        "citation_key",
+        "title",
+        "type",
+        "reasons",
+        "review_status"
+      ],
+      "fields": {
+        "citation_key": "string; permanent work identifier",
+        "title": "string",
+        "type": "string",
+        "reasons": "array; no_paper_folder, no_full_text, no_doi, no_canonical_url, or non_paper_record",
+        "review_status": "legitimate_gap or needs_review"
+      }
+    },
+    "RepositoryClassification": {
+      "type": "object",
+      "description": "Review queue row for a public repository outside the curated software catalog.",
+      "required": [
+        "full_name",
+        "owner",
+        "html_url",
+        "fork",
+        "archived",
+        "catalog_role",
+        "exclusion_reason",
+        "review_status"
+      ],
+      "fields": {
+        "full_name": "string; owner/name",
+        "owner": "string",
+        "html_url": "https URL",
+        "fork": "boolean",
+        "archived": "boolean",
+        "catalog_role": "not_curated until manually reviewed",
+        "exclusion_reason": "fork_not_curated or primary_repo_requires_manual_review",
+        "review_status": "defer, accept, reject, or supersede"
+      }
+    },
+    "PagesArtifactManifest": {
+      "type": "object",
+      "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image policy, and GitHub fallback templates.",
+      "required": [
+        "schema_version",
+        "source_commit_at_generation",
+        "github_fallback",
+        "budget",
+        "included_files",
+        "omitted_paper_images"
+      ],
+      "fields": {
+        "source_commit_at_generation": "Git commit used when the artifact was measured",
+        "github_fallback": "tree/raw URL templates",
+        "budget": "hard limit, safety ceiling, warning, file count, and byte totals",
+        "included_files": "array of included path/size/hash records",
+        "omitted_paper_images": "count and fallback-preserving policy summary"
+      }
+    },
+    "ReleaseIntegrity": {
+      "type": "object",
+      "description": "Source-to-release integrity envelope connecting hashes, generators, Pages, deployment, and live verification.",
+      "required": [
+        "schema_version",
+        "source_sha256",
+        "generator",
+        "pages_artifact",
+        "deployment",
+        "privacy"
+      ],
+      "fields": {
+        "source_sha256": "map of source/generated input paths to SHA-256",
+        "generator": "ordered pipeline and generator hashes",
+        "pages_artifact": "bounded artifact manifest summary",
+        "deployment": "workflow/deployment and live verification metadata",
+        "privacy": "CV public-integrity result and policy"
+      }
     }
   },
+  "schema_registry_version": "1.0",
+  "schema_examples": {
+    "Work": [
+      {
+        "num": 1,
+        "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+        "year": 2026,
+        "domain": "💻",
+        "domain_name": "Computational",
+        "type": "Paper",
+        "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+        "venue": "Zenodo",
+        "url": "https://doi.org/10.5281/zenodo.16903351",
+        "doi": "10.5281/zenodo.16903351",
+        "docs_path": "papers/2026_ReproducibleResearch/",
+        "has_paper_folder": true,
+        "has_full_text": true,
+        "has_images": true
+      }
+    ],
+    "SoftwareRepository": [
+      {
+        "name": "template",
+        "url": "https://github.com/docxology/template",
+        "owner": "docxology",
+        "catalog_section": "docxology",
+        "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
+        "language": "Python",
+        "stars": 17,
+        "updated_or_year": "2026-06",
+        "paper_path": "papers/2026_AutopoieticProjectGeneration/",
+        "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
+      }
+    ],
+    "Repository": [
+      {
+        "name": "act_inf_metaanalysis",
+        "full_name": "ActiveInferenceInstitute/act_inf_metaanalysis",
+        "owner": "ActiveInferenceInstitute",
+        "html_url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
+        "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+        "homepage": "",
+        "language": "TeX",
+        "stars": 5,
+        "forks": 1,
+        "watchers": 5,
+        "open_issues": 0,
+        "visibility": "public",
+        "private": false,
+        "fork": false,
+        "archived": false,
+        "disabled": false,
+        "is_template": false,
+        "topics": [],
+        "license": "NOASSERTION",
+        "default_branch": "main",
+        "created_at": "2026-04-07T20:10:34Z",
+        "updated_at": "2026-07-13T04:20:04Z",
+        "pushed_at": "2026-07-13T04:19:57Z",
+        "curated": false,
+        "recently_updated": true
+      }
+    ],
+    "ClaimWithEvidence": [
+      {
+        "id": "curated-work-count",
+        "claim": "The curated bibliography contains 196 works.",
+        "status": "curated-local",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "data/works.json"
+        ],
+        "checked_at": "2026-07-17T23:23:44+00:00",
+        "confidence": "high",
+        "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
+        "maintenance_owner": "ARCHIVIST",
+        "caveat": "Curated count includes papers, books, presentations, courses, playbooks, and series."
+      }
+    ],
+    "SearchResult": [
+      {
+        "id": "page:home",
+        "type": "page",
+        "title": "Daniel Ari Friedman",
+        "url": "/",
+        "summary": "Homepage and professional profile.",
+        "tags": [
+          "homepage",
+          "profile"
+        ],
+        "content": "Daniel Ari Friedman Homepage and professional profile. homepage profile"
+      }
+    ],
+    "CoverageException": [
+      {
+        "num": 2,
+        "citation_key": "Friedman2026ActiveInferenceJournal500002",
+        "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+        "type": "Series",
+        "reasons": [
+          "no_paper_folder",
+          "no_full_text",
+          "no_doi",
+          "non_paper_record"
+        ],
+        "review_status": "legitimate_gap",
+        "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+      }
+    ],
+    "RepositoryClassification": [
+      {
+        "full_name": "ActiveInferenceInstitute/act_inf_metaanalysis",
+        "owner": "ActiveInferenceInstitute",
+        "html_url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
+        "fork": false,
+        "archived": false,
+        "relevance": "unknown",
+        "catalog_role": "not_curated",
+        "exclusion_reason": "primary_repo_requires_manual_review",
+        "review_status": "defer"
+      }
+    ],
+    "GeneratedReport": {
+      "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
+      "command": "uv run python3 code/orchestrators/build_current_counts.py",
+      "counts": {
+        "bibliography_docs_links": 179,
+        "bibliography_works": 196,
+        "domains": {
+          "AII Ecosystem": 6,
+          "Active Inference": 42,
+          "Art & Synergetics": 16,
+          "Cognitive Security": 32,
+          "Computational": 47,
+          "Entomology": 23,
+          "Genetics & Biomedical": 15,
+          "Presentations & Media": 15
+        },
+        "extracted_images": 9004,
+        "full_text_papers": 173,
+        "generated_exports": {
+          "data_publications_ld_main_entity": 196,
+          "data_software_json": 96,
+          "data_software_ld_main_entity": 96,
+          "data_works_json": 196
+        },
+        "github_inventory": {
+          "ActiveInferenceInstitute": 40,
+          "archived": 0,
+          "curated": 93,
+          "docxology": 345,
+          "fork_ActiveInferenceInstitute": 2,
+          "fork_docxology": 241,
+          "forks": 243,
+          "primary_ActiveInferenceInstitute": 38,
+          "primary_docxology": 104,
+          "primary_total": 142,
+          "private": 0,
+          "public": 385,
+          "recently_updated": 122,
+          "total": 385,
+          "uncataloged": 292
+        },
+        "paired_publication_decisions": {
+          "decision": "accept",
+          "groups": 24,
+          "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
+          "raw_candidates": 86
+        },
+        "paired_publications": {
+          "already_reviewed": 0,
+          "create_new": 0,
+          "github_releases": 37,
+          "needs_review": 108,
+          "pairs": 137,
+          "strong_pairs": 29,
+          "update_existing": 29,
+          "zenodo_records": 133
+        },
+        "paper_folder_docs": 179,
+        "papers_with_images": 141,
+        "public_source_snapshot": {
+          "Crossref ORCID DOI records": 15,
+          "Europe PMC exact author records": 10,
+          "GitHub user ActiveInferenceInstitute": 40,
+          "GitHub user docxology": 345,
+          "ORCID work groups": 20,
+          "PubMed exact author records": 8,
+          "Zenodo ORCID-linked records": 131,
+          "Zenodo exact-name creator records": 47
+        },
+        "software": {
+          "active_inference_institute": 34,
+          "curated_total": 96,
+          "docxology_owned": 62
+        },
+        "types": {
+          "Books": 5,
+          "Courses": 3,
+          "Papers": 175,
+          "Playbooks": 2,
+          "Presentations": 9,
+          "Series": 2
+        }
+      },
+      "generated_at": "2026-07-17T23:23:44+00:00",
+      "sources": {
+        "bibliography": "pages/BIBLIOGRAPHY.md",
+        "github_inventory": "data/github-repositories.json",
+        "paired_publication_decisions": "data/paired-publication-decisions.json",
+        "paired_publications": "reports/paired_publications_2026-07-17.json",
+        "paper_folders": "papers/README.md",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-07-17.json",
+        "software_catalog": "pages/SOFTWARE.md",
+        "software_export": "data/software.json",
+        "works_export": "data/works.json"
+      },
+      "validation": [
+        "uv run python3 code/orchestrators/validate_repo.py",
+        "PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q"
+      ]
+    },
+    "PagesArtifactManifest": {
+      "schema_version": "1.0",
+      "budget": {
+        "hard_limit_bytes": 1073741824,
+        "safety_ceiling_bytes": 943718400,
+        "warning_bytes": 891289600,
+        "source_bytes": 829320178,
+        "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
+        "manifest_bytes_excluded_from_source_bytes": true,
+        "artifact_file_count": 4350,
+        "artifact_bytes": 830087378
+      },
+      "github_fallback": {
+        "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
+        "raw_template": "https://raw.githubusercontent.com/docxology/docxology/{commit}/{path}"
+      }
+    },
+    "ReleaseIntegrity": {
+      "schema_version": "1.0",
+      "note": "See /data/release-integrity.json for the current envelope."
+    }
+  },
+  "dataset_hashes": {
+    "works": "f4e434b7582a0175a67faf2101470bc1edbe8ae284c6b2d06239f20569486892",
+    "software": "5efd5d0deec6d365095cf4192cb0afbdbe9ec5266198109a1e6b85e37547481e",
+    "repositories": "3ba615f4c419df759411c43b1e364e4cd849f5130f81df45faa1c286fd799708",
+    "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
+    "videos": "aeb11b0699ffff12ad27d96e6824fe18ebe9d1d2cbfb5a57334b6ca1bde4d021",
+    "search": "f77be2ca23c7439effc5b8a5a4792b6beafd6ee85336d14133ba8b488dbf4dbd",
+    "claims": "4d94d1960944d0b80ef65fb555cab6b10a45e1d11b6d50b3afeaa39d76988757",
+    "coverage_exceptions": "e3eeb9af37041dc9cfec7fb8e9f0139a82f44e002ae8b9ad8e95273fe7e0c6ab",
+    "repository_classification": "f42d2361de69cee6c46be457c69a35032a459af23f3934188d75b9f0df69b3e1",
+    "current_counts": "cef47585afb83b922a26959a9d24644b0294e8a83ee581ac3a546afb4f7db281"
+  },
+  "source_provenance": {
+    "generated_by": "code/orchestrators/build_agent_index.py",
+    "source_of_truth": [
+      "pages/BIBLIOGRAPHY.md",
+      "pages/SOFTWARE.md",
+      "data/current-counts.json"
+    ],
+    "hash_policy": "SHA-256 values cover hosted JSON datasets and integrity manifests at generation time."
+  },
+  "hosted_availability": {
+    "pages_origin": "https://danielarifriedman.com/",
+    "github_repository": "https://github.com/docxology/docxology",
+    "artifact_manifest": "/data/pages-artifact-manifest.json",
+    "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
+  },
+  "verification_status": {
+    "live_report": "/reports/live_site_verification_2026-07-17.json",
+    "generated_at": "2026-07-17T23:51:42Z",
+    "overall_ok": true,
+    "passing": 17,
+    "checked_urls": 17,
+    "pages_status": "built"
+  },
   "counts": {
-    "bibliography_docs_links": 178,
-    "bibliography_works": 195,
+    "bibliography_docs_links": 179,
+    "bibliography_works": 196,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 42,
       "Art & Synergetics": 16,
       "Cognitive Security": 32,
-      "Computational": 46,
+      "Computational": 47,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -361,27 +745,27 @@
     "extracted_images": 9004,
     "full_text_papers": 173,
     "generated_exports": {
-      "data_publications_ld_main_entity": 195,
+      "data_publications_ld_main_entity": 196,
       "data_software_json": 96,
       "data_software_ld_main_entity": 96,
-      "data_works_json": 195
+      "data_works_json": 196
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 40,
       "archived": 0,
       "curated": 93,
-      "docxology": 344,
+      "docxology": 345,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 241,
       "forks": 243,
       "primary_ActiveInferenceInstitute": 38,
-      "primary_docxology": 103,
-      "primary_total": 141,
+      "primary_docxology": 104,
+      "primary_total": 142,
       "private": 0,
-      "public": 384,
+      "public": 385,
       "recently_updated": 122,
-      "total": 384,
-      "uncataloged": 291
+      "total": 385,
+      "uncataloged": 292
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -392,23 +776,23 @@
     "paired_publications": {
       "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 20,
-      "needs_review": 63,
-      "pairs": 78,
-      "strong_pairs": 15,
-      "update_existing": 15,
-      "zenodo_records": 132
+      "github_releases": 37,
+      "needs_review": 108,
+      "pairs": 137,
+      "strong_pairs": 29,
+      "update_existing": 29,
+      "zenodo_records": 133
     },
-    "paper_folder_docs": 178,
+    "paper_folder_docs": 179,
     "papers_with_images": 141,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 40,
-      "GitHub user docxology": 344,
+      "GitHub user docxology": 345,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 130,
+      "Zenodo ORCID-linked records": 131,
       "Zenodo exact-name creator records": 47
     },
     "software": {
@@ -419,7 +803,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 174,
+      "Papers": 175,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2
@@ -441,11 +825,16 @@
     "raw_bibliography": "/pages/BIBLIOGRAPHY.md",
     "repository_by_full_name": "/repositories.html?repo={owner}/{name}",
     "claim_by_id": "/data/claims.json#id={claim_id}",
-    "reports": "/data/agent-index.json#reports"
+    "reports": "/data/agent-index.json#reports",
+    "coverage_exceptions": "/data/coverage-exceptions.json",
+    "repository_classification": "/data/repository-classification.json",
+    "release_integrity": "/data/release-integrity.json"
   },
   "notes": [
     "Canonical work URLs use citation_key values and preserve retired numeric gaps.",
     "Paper-folder pages are documentation mirrors; canonical indexable work pages live under /works/.",
-    "External facts and metrics are evidence-dated; retain caveats when primary verification is incomplete."
+    "External facts and metrics are evidence-dated; retain caveats when primary verification is incomplete.",
+    "Pages omits duplicated paper-extracted image binaries only; use the manifest fallback templates for GitHub retrieval.",
+    "Coverage exceptions and repository classifications are review queues, not automatic certification or rejection."
   ]
 }

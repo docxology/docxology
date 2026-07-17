@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "DuckRabbit: Typed Multimodal Illusion Generator"
+version: "0.5.0"
+date-released: 2026-07-15
+doi: 10.5281/zenodo.21419693
+url: "https://doi.org/10.5281/zenodo.21419693"
+repository-code: "https://github.com/docxology/DuckRabbit"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21419693
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/21419693"
+    description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0"
+    description: "GitHub release"

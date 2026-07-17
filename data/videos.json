@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T21:37:13Z",
+  "generated_at": "2026-07-17T23:23:48Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -11827,6 +11827,13 @@
           "url": "/works/Friedman2024WritingCurioCardsNFT044.html"
         },
         {
+          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
+        },
+        {
           "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
           "citation_key": "Friedman2026MappingWilliamBlakeS179",
           "year": 2026,
@@ -11839,13 +11846,6 @@
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -89740,18 +89740,18 @@
           "url": "/works/Friedman2025ResNeiSolutionDesignDocument019.html"
         },
         {
+          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
+        },
+        {
           "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
           "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
-        },
-        {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         }
       ]
     },

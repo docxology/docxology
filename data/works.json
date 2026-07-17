@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-17T21:37:09Z",
+  "generated_at": "2026-07-17T23:23:44Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 195,
+  "count": 196,
   "works": [
     {
       "num": 1,
@@ -3119,6 +3119,22 @@
       "url": "https://doi.org/10.5281/zenodo.21388456",
       "doi": "10.5281/zenodo.21388456",
       "docs_path": "papers/2026_FourfoldVision/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
+    },
+    {
+      "num": 197,
+      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21419693",
+      "doi": "10.5281/zenodo.21419693",
+      "docs_path": "papers/2026_DuckRabbit/",
       "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false

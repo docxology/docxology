@@ -8,7 +8,7 @@ Wikidata: https://www.wikidata.org/wiki/Q138781444
 
 This repository is the public research and software index for Daniel Ari Friedman. It collects a curated bibliography, paper folders with README/AGENTS/SKILL documentation, software catalogs, collaborator maps, media references, public identifiers, and website metadata.
 
-Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 178 paper folders, 173 full-text extractions, 141 image galleries, and 9,004 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
+Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 179 paper folders, 173 full-text extractions, 141 image galleries, and 9,004 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
 
 ## Use These Pages First
 

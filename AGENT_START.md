@@ -14,6 +14,7 @@ This repository is the public research, software, citation, evidence, and websit
 7. Use [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
 8. Browse [`docs/README.md`](docs/README.md) for the full repository-documentation index (architecture, operations, SEO, design, security, releases); [`docs/AGENTS.md`](docs/AGENTS.md) holds agent operational guidance.
 9. For hosting boundaries, read [`docs/operations/github-pages-artifact.md`](docs/operations/github-pages-artifact.md); GitHub Pages receives a bounded web projection, while the repository remains the complete archive.
+10. Read [`TODO.md`](TODO.md) for the unfinished public-release backlog; completed work belongs in `CHANGELOG.md` and dated reports.
 
 ## Task Recipes
 
@@ -30,6 +31,7 @@ This repository is the public research, software, citation, evidence, and websit
 | Google Search Console follow-up | [`docs/seo/gsc-followup.md`](docs/seo/gsc-followup.md), [`data/gsc-followup-checklist.json`](data/gsc-followup-checklist.json) | `uv run python3 code/orchestrators/gsc_followup_preflight.py` |
 | Check deployed site health | latest `reports/live_site_verification_*.json` | `python3 code/orchestrators/verify_live_site.py` |
 | Check Pages artifact size | [`docs/operations/github-pages-artifact.md`](docs/operations/github-pages-artifact.md) | `python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size` |
+| Check release integrity | [`data/release-integrity.json`](data/release-integrity.json), [`data/pages-artifact-manifest.json`](data/pages-artifact-manifest.json) | `uv run python3 code/orchestrators/regenerate_all.py --validate` |
 | Refresh public-source inventory | latest `reports/public_source_inventory_*.json` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Triage external links | [`reports/external_links_triage_2026-05-15.md`](reports/external_links_triage_2026-05-15.md) | `python3 code/orchestrators/check_external_links.py` |
 | Extract paper full text + images | [`papers/`](papers/), [`code/orchestrators/extract_paper_texts.py`](code/orchestrators/extract_paper_texts.py) | `python3 code/orchestrators/extract_paper_texts.py --force` (requires PyMuPDF: `pip3 install pymupdf`, python-pptx: `pip3 install python-pptx`) |

@@ -12,8 +12,10 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | Area | Document | What it's for |
 |------|----------|---------------|
 | **Architecture** | [`AGENTS.md`](AGENTS.md) | Repo structure: bibliography vs paper folders, generated discovery-layer rebuild ordering, volatile-count policy |
+| **Backlog** | [`../TODO.md`](../TODO.md) | Active unfinished release, evidence, accessibility, Pages, and operating-model work; no completed history |
 | **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
 | **Operations** | [`operations/github-pages-artifact.md`](operations/github-pages-artifact.md) | Bounded GitHub Pages deployment projection, 1 GiB limit, and repository-vs-site asset policy |
+| **Operations** | [`operations/release-integrity.md`](operations/release-integrity.md) | Source hashes, CV privacy, Pages artifact, deployment, live verification, and report retention gates |
 | **SEO** | [`seo/canonical-policy.md`](seo/canonical-policy.md) | Redirect + canonical URL policy; permanent work-URL contract (GitHub Pages) |
 | **SEO** | [`seo/gsc-followup.md`](seo/gsc-followup.md) | Google Search Console manual follow-up runbook |
 | **Design** | [`design/design-system.md`](design/design-system.md) | Color/type tokens, accessibility, layout, nav source-of-truth |
@@ -31,3 +33,4 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
   [`GENERATED.md`](../GENERATED.md) (the exhaustive orchestrator → output rebuild matrix).
 - Keep public security/transparency artifacts (`/canary.txt`, `/.well-known/security.txt`)
   documented under [`security/`](security/).
+- Keep `TODO.md` limited to unfinished work. Do not copy completed maintenance-log entries into it.

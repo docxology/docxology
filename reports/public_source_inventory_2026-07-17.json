@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:27:19Z",
+  "generated_at": "2026-07-17T23:21:08Z",
   "date": "2026-07-17",
   "note": "Paginated public-source inventory for review. Use as discovery evidence, not automatic claim replacement.",
   "sections": [
@@ -818,6 +818,13 @@
       "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=25&sort=mostrecent",
       "ok": true,
       "items": [
+        {
+          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+          "doi": "10.5281/zenodo.21419694",
+          "publication_date": "2026-07-15",
+          "resource_type": "publication",
+          "version": "0.5.0"
+        },
         {
           "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
           "doi": "10.5281/zenodo.21418953",
@@ -1729,7 +1736,7 @@
           "version": ""
         }
       ],
-      "total": 130
+      "total": 131
     },
     {
       "label": "Wikidata person entity",
@@ -1926,7 +1933,7 @@
       "items": [
         {
           "login": "docxology",
-          "public_repos": 344,
+          "public_repos": 345,
           "html_url": "https://github.com/docxology",
           "updated_at": "2026-07-06T20:37:54Z"
         }
@@ -1984,7 +1991,7 @@
     "PubMed exact author records": 8,
     "Europe PMC exact author records": 10,
     "Zenodo exact-name creator records": 47,
-    "Zenodo ORCID-linked records": 130,
+    "Zenodo ORCID-linked records": 131,
     "Wikidata person entity": 1,
     "DBLP author profile": 1,
     "ResearchGate profile": 0,

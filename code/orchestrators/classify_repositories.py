@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""Create a bounded review queue for repositories outside the curated catalog."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+IN = REPO_ROOT / "data" / "github-repositories.json"
+OUT = REPO_ROOT / "data" / "repository-classification.json"
+
+
+def build_payload() -> dict:
+    source = json.loads(IN.read_text(encoding="utf-8"))
+    rows = []
+    for repo in source.get("repositories", []):
+        if repo.get("curated"):
+            continue
+        fork = bool(repo.get("fork"))
+        archived = bool(repo.get("archived"))
+        rows.append(
+            {
+                "full_name": repo.get("full_name"),
+                "owner": repo.get("owner"),
+                "html_url": repo.get("html_url"),
+                "fork": fork,
+                "archived": archived,
+                "relevance": "unknown",
+                "catalog_role": "not_curated",
+                "exclusion_reason": "fork_not_curated" if fork else "primary_repo_requires_manual_review",
+                "review_status": "defer",
+            }
+        )
+    return {
+        "schema_version": "1.0",
+        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "source": "data/github-repositories.json",
+        "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted.",
+        "summary": {
+            "total_inventory": len(source.get("repositories", [])),
+            "uncatalogued": len(rows),
+            "forks": sum(row["fork"] for row in rows),
+            "primary_requires_review": sum(not row["fork"] for row in rows),
+            "archived": sum(row["archived"] for row in rows),
+        },
+        "repositories": rows,
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Fail if the classification queue is stale")
+    args = parser.parse_args()
+    payload = build_payload()
+    if OUT.exists():
+        try:
+            payload["generated_at"] = json.loads(OUT.read_text(encoding="utf-8")).get("generated_at", payload["generated_at"])
+        except json.JSONDecodeError:
+            pass
+    rendered = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    if args.check:
+        if not OUT.exists() or OUT.read_text(encoding="utf-8") != rendered:
+            raise SystemExit(f"stale repository classification: {OUT.relative_to(REPO_ROOT)}")
+        print(f"checked {OUT.relative_to(REPO_ROOT)}")
+        return
+    OUT.write_text(rendered, encoding="utf-8")
+    print(f"wrote {OUT.relative_to(REPO_ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

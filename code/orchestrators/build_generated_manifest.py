@@ -113,6 +113,18 @@ ARTIFACTS = [
         "command": "uv run python3 code/orchestrators/build_current_counts.py",
     },
     {
+        "name": "Source coverage exceptions",
+        "outputs": ["data/coverage-exceptions.json", _latest_report("source_coverage_*.json", "reports/source_coverage_2026-07-17.json"), _latest_report("source_coverage_*.md", "reports/source_coverage_2026-07-17.md")],
+        "sources": ["data/works.json", "code/orchestrators/build_coverage_exceptions.py"],
+        "command": "python3 code/orchestrators/build_coverage_exceptions.py",
+    },
+    {
+        "name": "Repository classification queue",
+        "outputs": ["data/repository-classification.json"],
+        "sources": ["data/github-repositories.json", "data/software.json", "code/orchestrators/classify_repositories.py"],
+        "command": "python3 code/orchestrators/classify_repositories.py",
+    },
+    {
         "name": "Volatile site facts",
         "outputs": ["index.html", "publications.html", "discovery.html", "pages/DISCOVERY.md"],
         "sources": ["data/current-counts.json", "reports/public_source_snapshot_*.json", "code/orchestrators/sync_site_facts.py"],
@@ -144,9 +156,15 @@ ARTIFACTS = [
     },
     {
         "name": "GitHub Pages artifact",
-        "outputs": ["bounded _site/ deployment projection"],
+        "outputs": ["bounded _site/ deployment projection", "data/pages-artifact-manifest.json", _latest_report("pages_artifact_growth_*.json", "reports/pages_artifact_growth_2026-07-17.json")],
         "sources": ["tracked repository files", "code/orchestrators/build_pages_artifact.py", "docs/operations/github-pages-artifact.md"],
-        "command": "python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size",
+        "command": "python3 code/orchestrators/build_pages_artifact.py --write-manifest --output /tmp/docxology-pages --check-size --check-manifest",
+    },
+    {
+        "name": "Release integrity envelope",
+        "outputs": ["data/release-integrity.json"],
+        "sources": ["data/current-counts.json", "data/agent-index.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json", "code/orchestrators/build_release_integrity.py"],
+        "command": "python3 code/orchestrators/build_release_integrity.py",
     },
     {
         "name": "Resume and CV exports",
@@ -408,7 +426,7 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated manifest files are stale")
     args = parser.parse_args()
     stale = []
-    generated_at = _existing_generated_at() if args.check else None
+    generated_at = _existing_generated_at() or generated_timestamp()
     for path, content in outputs(generated_at).items():
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:

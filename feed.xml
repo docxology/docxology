@@ -6,27 +6,34 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 21:37:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 23:23:52 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Fri, 17 Jul 2026 21:37:16 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 23:23:52 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Fri, 17 Jul 2026 21:37:16 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 23:23:52 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Fri, 17 Jul 2026 21:37:16 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 23:23:52 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>DuckRabbit: Typed Multimodal Illusion Generator</title>
+      <link>https://danielarifriedman.com/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html</link>
+      <guid isPermaLink="false">work-Friedman2026DuckRabbitTypedMultimodalIllusion197</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</title>
@@ -195,13 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026CaliforniaPublicRecordsTechnical173</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Cognitive Security · 2026</description>
-    </item>
-    <item>
-      <title>Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts</title>
-      <link>https://danielarifriedman.com/works/Friedman2026TemplateMadlibDeterministicToken172.html</link>
-      <guid isPermaLink="false">work-Friedman2026TemplateMadlibDeterministicToken172</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
   </channel>
 </rss>

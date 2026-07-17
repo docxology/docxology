@@ -26,6 +26,7 @@ it will drift and be overwritten on the next rebuild.
 | `resume/source.json` | `data/resume.json`, plaintext CVs, `resume/resume.pdf` |
 | `CHANGELOG.md` | `updates.html` |
 | `code/src/sitemap_policy.py` | `sitemap.xml` URL set + IndexNow promotion list |
+| `TODO.md` | active unfinished backlog only; completed work stays in `CHANGELOG.md` and dated reports |
 
 Never hard-code volatile totals (work counts, repo counts, citation counts, domain
 breakdowns) in hand-authored docs. Link to `reports/current_counts.md` /
@@ -47,6 +48,11 @@ uv run python3 -m pytest code/tests/test_seo_invariants.py::test_collect_seo_err
 # Validate the generated layer (CI gate — run before declaring work done):
 uv run python3 code/orchestrators/validate_repo.py
 ```
+
+The release envelope is checked as part of validation: `data/release-integrity.json`
+connects source/generator hashes, the bounded Pages manifest, deployment metadata,
+and the latest live verification. `data/pages-artifact-manifest.json` documents the
+hosted projection and GitHub tree/raw fallbacks for omitted extracted paper images.
 
 ## Interactive Layer (added 2026-07-05)
 
@@ -81,8 +87,9 @@ uv run python3 code/orchestrators/regenerate_all.py --validate
 ```
 
 It is local-only and idempotent (no network freshness steps — those are a deliberate
-separate step; see `docs/operations/publication-sync.md`), and ends with
-`build_generated_manifest.py` (hashes every other output) then `validate_repo.py`.
+separate step; see `docs/operations/publication-sync.md`), and ends with the Pages
+artifact and release-integrity manifests, then `build_generated_manifest.py` and
+`validate_repo.py`.
 Run `--list` to print the plan without executing. Internally it runs, in order:
 `export_bibliography.py` → `sync_publications_html.py --apply` → `sync_software_html.py
 --apply` → `build_current_counts.py` → `generate_og_images.py` → `export_agent_data.py` →
@@ -91,6 +98,8 @@ Run `--list` to print the plan without executing. Internally it runs, in order:
 `build_evidence_page.py` → `build_reconciliation_report.py` → `audit_assets.py` →
 `accessibility_audit.py` → `build_catalog.py` → `build_search_index.py` →
 `generate_feed.py` → `build_sitemap.py` → `build_image_sitemap.py` →
+`build_pages_artifact.py --write-manifest --check-size-only` → `build_agent_index.py` →
+`build_generated_manifest.py` → `build_release_integrity.py` → final
 `build_generated_manifest.py`.
 
 Software path: `pages/SOFTWARE.md` → `sync_software_html.py --apply` → `export_agent_data.py`.

@@ -2320,3 +2320,15 @@ KW  - Art & Synergetics
 KW  - Paper
 N1  - Catalog row 196; docs: papers/2026_FourfoldVision/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - DuckRabbit: Typed Multimodal Illusion Generator
+T2  - Zenodo
+DO  - 10.5281/zenodo.21419693
+UR  - https://doi.org/10.5281/zenodo.21419693
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 197; docs: papers/2026_DuckRabbit/
+ER  -

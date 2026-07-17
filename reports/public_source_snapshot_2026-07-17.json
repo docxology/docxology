@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-17T19:26:38.989818+00:00",
+  "generated_at": "2026-07-17T23:20:56.274226+00:00",
   "date": "2026-07-17",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
     "GitHub user docxology": {
       "login": "docxology",
-      "public_repos": 344,
+      "public_repos": 345,
       "updated_at": "2026-07-06T20:37:54Z",
       "html_url": "https://github.com/docxology"
     },
@@ -39,11 +39,11 @@
     },
     "Zenodo exact-name creator records": {
       "total": 47,
-      "first_title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-      "first_doi": "10.5281/zenodo.20647443"
+      "first_title": "Push and Pull: A priming sequence",
+      "first_doi": "10.5281/zenodo.10659375"
     },
     "Zenodo ORCID-linked records": {
-      "total": 130,
+      "total": 131,
       "first_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
       "first_doi": "10.5281/zenodo.20932025"
     },
@@ -162,14 +162,14 @@
       "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
       "stargazers_count": 43,
       "language": "HTML",
-      "updated_at": "2026-07-17T19:13:06Z",
+      "updated_at": "2026-07-17T22:58:21Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
     },
     "GitHub repo ActiveInferenceInstitute/ActiveBlockference": {
       "full_name": "ActiveInferenceInstitute/ActiveBlockference",
       "stargazers_count": 34,
-      "language": "Jupyter Notebook",
-      "updated_at": "2026-06-30T20:43:49Z",
+      "language": "Python",
+      "updated_at": "2026-07-17T19:47:56Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
     },
     "GitHub repo ActiveInferenceInstitute/ActiveInferAnts": {
@@ -197,7 +197,7 @@
       "full_name": "ActiveInferenceInstitute/cognitive",
       "stargazers_count": 21,
       "language": "Python",
-      "updated_at": "2026-07-14T23:42:44Z",
+      "updated_at": "2026-07-17T19:55:02Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
     },
     "GitHub repo ActiveInferenceInstitute/CEREBRUM": {
@@ -211,7 +211,7 @@
       "full_name": "ActiveInferenceInstitute/Journal-Utilities",
       "stargazers_count": 11,
       "language": "HTML",
-      "updated_at": "2026-07-17T19:11:34Z",
+      "updated_at": "2026-07-17T23:01:31Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities"
     }
   },
@@ -222,7 +222,7 @@
       "ok": true,
       "result": {
         "login": "docxology",
-        "public_repos": 344,
+        "public_repos": 345,
         "updated_at": "2026-07-06T20:37:54Z",
         "html_url": "https://github.com/docxology"
       }
@@ -286,8 +286,8 @@
       "ok": true,
       "result": {
         "total": 47,
-        "first_title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-        "first_doi": "10.5281/zenodo.20647443"
+        "first_title": "Push and Pull: A priming sequence",
+        "first_doi": "10.5281/zenodo.10659375"
       }
     },
     {
@@ -295,7 +295,7 @@
       "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=1",
       "ok": true,
       "result": {
-        "total": 130,
+        "total": 131,
         "first_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
         "first_doi": "10.5281/zenodo.20932025"
       }
@@ -444,7 +444,7 @@
         "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
         "stargazers_count": 43,
         "language": "HTML",
-        "updated_at": "2026-07-17T19:13:06Z",
+        "updated_at": "2026-07-17T22:58:21Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
       }
     },
@@ -455,8 +455,8 @@
       "result": {
         "full_name": "ActiveInferenceInstitute/ActiveBlockference",
         "stargazers_count": 34,
-        "language": "Jupyter Notebook",
-        "updated_at": "2026-06-30T20:43:49Z",
+        "language": "Python",
+        "updated_at": "2026-07-17T19:47:56Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
       }
     },
@@ -504,7 +504,7 @@
         "full_name": "ActiveInferenceInstitute/cognitive",
         "stargazers_count": 21,
         "language": "Python",
-        "updated_at": "2026-07-14T23:42:44Z",
+        "updated_at": "2026-07-17T19:55:02Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
       }
     },
@@ -528,7 +528,7 @@
         "full_name": "ActiveInferenceInstitute/Journal-Utilities",
         "stargazers_count": 11,
         "language": "HTML",
-        "updated_at": "2026-07-17T19:11:34Z",
+        "updated_at": "2026-07-17T23:01:31Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities"
       }
     }
