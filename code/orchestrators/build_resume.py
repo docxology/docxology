@@ -16,6 +16,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SRC_DIR = REPO_ROOT / "code" / "src"
 sys.path.insert(0, str(SRC_DIR))
 
+from site_nav import HEAD_EXTRAS  # noqa: E402
 from resume_data import (  # noqa: E402
     SOURCE_FILES,
     VARIANTS,
@@ -26,6 +27,7 @@ from resume_data import (  # noqa: E402
     filtered_works,
     json_dumps,
     render_text,
+    source_manifest as resume_source_manifest,
 )
 
 try:
@@ -36,7 +38,9 @@ except ImportError:  # pragma: no cover - package import path
 JSON_OUT = REPO_ROOT / "data" / "resume.json"
 RESUME_DIR = REPO_ROOT / "resume"
 FULL_PDF = RESUME_DIR / "resume.pdf"
+FULL_HTML = RESUME_DIR / "resume.html"
 VERIFY_OUT = RESUME_DIR / "verify.html"
+RESUME_HTML_URL = "https://danielarifriedman.com/resume/resume.html"
 VERIFY_URL = "https://danielarifriedman.com/resume/verify.html"
 RESUME_JSON_URL = "https://danielarifriedman.com/data/resume.json"
 RESUME_PDF_URL = "https://danielarifriedman.com/resume/resume.pdf"
@@ -67,23 +71,31 @@ def _sha256_bytes(content: bytes) -> str:
 
 
 def _source_manifest() -> dict:
-    files = []
-    for rel_path in SOURCE_FILES:
-        content = (REPO_ROOT / rel_path).read_bytes()
-        files.append({"path": rel_path, "bytes": len(content), "sha256": _sha256_bytes(content)})
-    manifest_bytes = json.dumps(files, sort_keys=True, separators=(",", ":")).encode("utf-8")
-    return {"bytes": len(manifest_bytes), "sha256": _sha256_bytes(manifest_bytes), "files": files}
+    return resume_source_manifest(REPO_ROOT)
 
 
 def _provenance_base(payload: dict, json_bytes: bytes) -> dict:
     source = _source_manifest()
+    try:
+        import reportlab
+
+        reportlab_version = getattr(reportlab, "Version", "unknown")
+    except ImportError:  # pragma: no cover - exercised only in minimal environments
+        reportlab_version = "not-installed"
     return {
+        "generator": {
+            "name": "code/orchestrators/build_resume.py",
+            "schema_version": 2,
+            "reportlab_version": reportlab_version,
+        },
         "generated_at": payload["generated_at"],
+        "resume_html_url": RESUME_HTML_URL,
         "verification_url": VERIFY_URL,
         "resume_json_url": RESUME_JSON_URL,
         "resume_pdf_url": RESUME_PDF_URL,
         "source_manifest": source,
         "resume_json": {"bytes": len(json_bytes), "sha256": _sha256_bytes(json_bytes)},
+        "source_manifest_matches_payload": payload.get("integrity", {}).get("source_manifest") == source,
     }
 
 
@@ -202,6 +214,13 @@ def _page_footer_factory(provenance: dict):
 
     def _page_footer(canvas, doc) -> None:
         canvas.saveState()
+        canvas.setTitle("Daniel Ari Friedman - Public Structured CV")
+        canvas.setAuthor("Daniel Ari Friedman")
+        canvas.setSubject("Accessible, source-verified structured curriculum vitae")
+        canvas.setKeywords("Daniel Ari Friedman, CV, resume, publications, software, verification")
+        canvas.setCreator("docxology build_resume.py")
+        if hasattr(canvas, "setLang"):
+            canvas.setLang("en-US")
         page_width = doc.pagesize[0]
         qr_size = 28
         qr_x = page_width - doc.rightMargin - qr_size
@@ -789,7 +808,10 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
             f"({metrics['owned_software_catalogued']} owned + {metrics['aii_software_catalogued']} AII); "
             f"{metrics['google_scholar']['citations']} Google Scholar citations, "
             f"h-index {metrics['google_scholar']['h_index']}, i10-index {metrics['google_scholar']['i10_index']} "
-            f"as of {metrics['google_scholar']['as_of']}.",
+            f"as of {metrics['google_scholar']['as_of']}. GitHub inventory: "
+            f"{metrics['github_inventory']['docxology']} docxology + "
+            f"{metrics['github_inventory']['ActiveInferenceInstitute']} AII public repositories "
+            f"({metrics['github_inventory']['primary_total']} primary, {metrics['github_inventory']['forks']} forks).",
             styles["body"],
         )
     )
@@ -1025,8 +1047,240 @@ def _html_escape(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
+def _html_href(value: object) -> str:
+    """Allow only links appropriate for generated public CV HTML."""
+    target = str(value or "").strip()
+    if re.match(r"^(?:https?://|mailto:|/)", target):
+        return _html_escape(target)
+    return ""
+
+
+def _html_link(label: object, target: object) -> str:
+    href = _html_href(target)
+    label_html = _html_escape(label)
+    return f'<a href="{href}">{label_html}</a>' if href else label_html
+
+
+def _html_links(item: dict) -> str:
+    rendered = []
+    for link in item.get("links", []):
+        if not isinstance(link, dict):
+            continue
+        label = str(link.get("label") or "Source")
+        target = str(link.get("url") or "")
+        if target.startswith("10."):
+            target = f"https://doi.org/{target}"
+        if _html_href(target):
+            rendered.append(_html_link(label, target))
+    return " <span aria-hidden=\"true\">·</span> ".join(rendered)
+
+
+def _html_contact_value(value: object, *, mailto: bool = False) -> str:
+    values = value if isinstance(value, list) else [value]
+    rendered = []
+    for raw in values:
+        text = str(raw or "")
+        target = f"mailto:{text}" if mailto else text
+        rendered.append(_html_link(text, target))
+    return " <span aria-hidden=\"true\">·</span> ".join(rendered)
+
+
+def _html_record(title: object, details: list[object], links: str = "", *, date: object = "") -> str:
+    detail_html = "".join(f"<p>{_html_escape(detail)}</p>" for detail in details if str(detail or "").strip())
+    date_html = f'<p class="record-date">{_html_escape(date)}</p>' if str(date or "").strip() else ""
+    links_html = f'<p class="record-links">{links}</p>' if links else ""
+    return f"<li><article>{date_html}<h3>{_html_escape(title)}</h3>{detail_html}{links_html}</article></li>"
+
+
+def render_resume_html(payload: dict, variant: str = "full") -> bytes:
+    """Render a no-JavaScript, semantic CV view for screen readers and crawlers."""
+    if variant not in VARIANTS:
+        raise ValueError(f"unknown variant: {variant}")
+    profile = payload["profile"]
+    contact = payload["contact"]
+    metrics = payload["metrics"]
+    sections: list[str] = []
+
+    education = filter_items(payload["education"], variant)
+    education_rows = []
+    for item in education:
+        title = f"{item['degree']} — {item['institution']} — {item['location']}"
+        education_rows.append(_html_record(title, item.get("details", []), _html_links(item), date=date_range(item)))
+    sections.append(
+        f'<section aria-labelledby="education"><h2 id="education">Education <span>({len(education)})</span></h2>'
+        f'<ol class="record-list">{"".join(education_rows)}</ol></section>'
+    )
+    experience = filter_items(payload["experience"], variant)
+    experience_rows = []
+    for item in experience:
+        title = f"{item['workplace']} — {', '.join(item['roles'])}"
+        details = [item.get("description", ""), item.get("category", "")]
+        experience_rows.append(_html_record(title, details, _html_links(item), date=date_range(item)))
+    sections.append(
+        f'<section aria-labelledby="experience"><h2 id="experience">Experience <span>({len(experience)})</span></h2>'
+        f'<ol class="record-list">{"".join(experience_rows)}</ol></section>'
+    )
+    awards = filter_items(payload["awards"], variant)
+    award_rows = [
+        _html_record(item["name"], [item.get("details", "")], _html_links(item), date=item.get("year"))
+        for item in awards
+    ]
+    sections.append(
+        f'<section aria-labelledby="awards"><h2 id="awards">Awards and Fellowships <span>({len(awards)})</span></h2>'
+        f'<ol class="record-list">{"".join(award_rows)}</ol></section>'
+    )
+    works = filtered_works(payload["works"], variant)
+    work_items = []
+    for work in works:
+        target = work.get("doi") or work.get("url") or ""
+        if str(target).startswith("10."):
+            target = f"https://doi.org/{target}"
+        title = _html_link(work.get("title", "Untitled work"), target)
+        venue = f" <span class=\"muted\">· {_html_escape(work.get('venue', ''))}</span>" if work.get("venue") else ""
+        work_items.append(
+            f'<li><span class="record-date">[{_html_escape(work.get("num", ""))}] {_html_escape(work.get("year", ""))}</span> '
+            f'<span class="work-type">{_html_escape(work.get("type", "Work"))}</span> {title}{venue}</li>'
+        )
+    sections.append(
+        f'<section aria-labelledby="works"><h2 id="works">Works and Publications <span>({len(works)})</span></h2>'
+        f'<ol class="works-list">{"".join(work_items)}</ol></section>'
+    )
+    software = filtered_software(payload["software"], variant)
+    software_items = []
+    link_separator = ' <span aria-hidden="true">·</span> '
+    for row in software:
+        links = [_html_link(row.get("owner", "") + "/" + row.get("name", ""), row.get("url", ""))]
+        if row.get("paper_path"):
+            links.append(_html_link("paper", f"/{row['paper_path']}"))
+        if row.get("zenodo_url"):
+            links.append(_html_link("Zenodo", row["zenodo_url"]))
+        software_items.append(
+            f'<li><article><h3>{link_separator.join(links)}</h3>'
+            f'<p>{_html_escape(row.get("description", ""))}</p><p class="record-links">'
+            f'{_html_escape(row.get("language") or "Unspecified")}</p></article></li>'
+        )
+    sections.append(
+        f'<section aria-labelledby="software"><h2 id="software">Software <span>({len(software)})</span></h2>'
+        f'<ul class="record-list">{"".join(software_items)}</ul></section>'
+    )
+    for key, heading in (
+        ("conferences", "Conferences, Posters, Seminars, and Workshops"),
+        ("media_outreach", "Science Engagement, Outreach, Quotes, and Articles"),
+        ("service", "Professional Participation, Engagement, and Service"),
+    ):
+        items = filter_items(payload[key], variant)
+        rows = []
+        for item in items:
+            title = item.get("title") or item.get("name") or item.get("description") or "Record"
+            details = [item.get("event", ""), item.get("source", ""), item.get("type", ""), item.get("details", ""), item.get("description", "")]
+            group = item.get("group", "")
+            if group:
+                title = f"{group} — {title}"
+            rows.append(_html_record(title, details, _html_links(item), date=item.get("year") or date_range(item)))
+        sections.append(
+            f'<section aria-labelledby="{key}"><h2 id="{key}">{_html_escape(heading)} <span>({len(items)})</span></h2>'
+            f'<ol class="record-list">{"".join(rows)}</ol></section>'
+        )
+    if variant == "full":
+        items = payload["art_uses"]
+        art_rows = [
+            _html_record(item.get("name", ""), [item.get("description", "")], _html_links(item), date=item.get("year") or "All")
+            for item in items
+        ]
+        sections.append(
+            f'<section aria-labelledby="art"><h2 id="art">Art Portfolio and Uses <span>({len(items)})</span></h2>'
+            f'<ol class="record-list">{"".join(art_rows)}</ol></section>'
+        )
+
+    structured_data = json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "name": f"{profile['name']} — Public Structured CV",
+            "url": RESUME_HTML_URL,
+            "dateModified": payload["generated_at"],
+            "mainEntity": {"@type": "Person", "name": profile["name"], "url": "https://danielarifriedman.com/"},
+        },
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
+    content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{_html_escape(profile['name'])} — Public Structured CV</title>
+    <meta name="description" content="Accessible, source-verified public curriculum vitae for {_html_escape(profile['name'])}.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{RESUME_HTML_URL}">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{_html_escape(profile['name'])} — Public Structured CV">
+    <meta property="og:description" content="Accessible, source-verified public curriculum vitae.">
+    <meta property="og:url" content="{RESUME_HTML_URL}">
+    <meta property="og:site_name" content="Daniel Ari Friedman">
+    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image:alt" content="Daniel Ari Friedman public profile">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta name="twitter:image:alt" content="Daniel Ari Friedman public profile">
+{HEAD_EXTRAS}
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
+    <script type="application/ld+json">{structured_data}</script>
+    <style>
+        :root {{ color-scheme: dark; }}
+        .cv-shell {{ width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 4rem; }}
+        .cv-hero {{ border-block: 4px double var(--border-color, #555); padding: 2rem 0 1.25rem; }}
+        .cv-hero h1 {{ margin: 0; font-size: clamp(2.2rem, 7vw, 5rem); line-height: .95; }}
+        .cv-hero p {{ max-width: 820px; color: var(--text-secondary, #bbb); }}
+        .cv-tools, .cv-contact, .cv-metrics {{ display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); margin: 1rem 0; }}
+        .cv-card {{ border: 1px solid var(--border-color, #555); padding: 1rem; background: rgba(255,255,255,.03); }}
+        .cv-card h2, .cv-card h3 {{ margin-top: 0; }}
+        .cv-card a, .record-links a {{ overflow-wrap: anywhere; }}
+        .cv-metric {{ font-size: 1.7rem; font-weight: 700; display: block; }}
+        .record-list, .works-list {{ padding-left: 1.5rem; }}
+        .record-list > li, .works-list > li {{ margin: 0 0 1rem; }}
+        .record-list article {{ border-left: 2px solid var(--accent-color, #e33); padding-left: .8rem; }}
+        .record-list h3 {{ margin: 0 0 .25rem; }}
+        .record-list p {{ margin: .25rem 0; }}
+        .record-date, .work-type {{ color: var(--accent-color, #f66); font-weight: 700; }}
+        .muted {{ color: var(--text-secondary, #aaa); }}
+        .cv-footer {{ border-top: 1px solid var(--border-color, #555); margin-top: 2rem; padding-top: 1rem; color: var(--text-secondary, #bbb); }}
+        @media (prefers-reduced-motion: reduce) {{ *, *::before, *::after {{ scroll-behavior: auto !important; transition: none !important; }} }}
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <nav aria-label="Main navigation"><a class="nav-logo" href="/">Daniel Ari Friedman</a><div class="nav-links"><a href="/publications.html">Publications</a><a href="/software.html">Software</a><a href="/resume/resume.pdf">PDF</a><a href="/resume/verify.html">Verify</a></div></nav>
+    <main id="main" class="cv-shell">
+        <header class="cv-hero">
+            <p><strong>PUBLIC STRUCTURED CV · { _html_escape(variant) }</strong></p>
+            <h1>{_html_escape(profile['name'])}, {_html_escape(profile['credential'])}</h1>
+            <p>{_html_escape(profile['headline'])} · {_html_escape(profile['location'])}</p>
+            <p>{_html_escape(profile['summary'])}</p>
+        </header>
+        <section aria-labelledby="cv-links"><h2 id="cv-links">CV formats and verification</h2><div class="cv-tools">
+            <p class="cv-card"><a href="/resume/resume.pdf">Download accessible-text PDF</a></p><p class="cv-card"><a href="/data/resume.json">Structured JSON</a></p><p class="cv-card"><a href="/resume/full.txt">Plain-text CV</a></p><p class="cv-card"><a href="/resume/verify.html">Verify source and artifact hashes</a></p>
+        </div></section>
+        <section aria-labelledby="contact"><h2 id="contact">Contact and identifiers</h2><div class="cv-contact">
+            <p class="cv-card"><strong>Email</strong><br>{_html_contact_value(contact.get('email', []), mailto=True)}</p>
+            <p class="cv-card"><strong>Sites</strong><br>{_html_contact_value(contact.get('personal_sites', []))}</p>
+            <p class="cv-card"><strong>Profiles</strong><br>{_html_link('GitHub', contact.get('github'))}<br>{_html_link('ORCID', 'https://orcid.org/' + str(contact.get('orcid', '')))}<br>{_html_link('Google Scholar', contact.get('google_scholar'))}</p>
+        </div></section>
+        <section aria-labelledby="metrics"><h2 id="metrics">Current public metrics</h2><div class="cv-metrics">
+            <p class="cv-card"><span class="cv-metric">{metrics['works']}</span>curated works</p><p class="cv-card"><span class="cv-metric">{metrics['software_catalogued']}</span>catalogued software rows</p><p class="cv-card"><span class="cv-metric">{metrics['github_inventory']['docxology']} + {metrics['github_inventory']['ActiveInferenceInstitute']}</span>public GitHub repositories by account</p><p class="cv-card"><span class="cv-metric">{metrics['google_scholar']['citations']}</span>Google Scholar citations <small>(as of {_html_escape(metrics['google_scholar']['as_of'])})</small></p>
+        </div><p>Counts are generated from canonical exports. GitHub inventory generated {_html_escape(metrics['github_inventory']['generated_at'])}; Scholar metrics remain explicitly dated.</p></section>
+        {''.join(sections)}
+        <footer class="cv-footer"><p>Generated {_html_escape(payload['generated_at'])}. Source manifest: <code>{_html_escape(payload['integrity']['source_manifest']['sha256'])}</code>.</p><p>PDF rendering provides selectable text, embedded fonts, link annotations, language metadata, and deterministic hashes. It does not claim a fully tagged PDF/UA structure; use this semantic HTML view or plain text for maximum assistive-technology compatibility.</p></footer>
+    </main>
+</body>
+</html>
+"""
+    return content.encode("utf-8")
+
+
 def render_verify_html(payload: dict, provenance: dict) -> bytes:
     metrics = payload["metrics"]
+    github_metrics = metrics["github_inventory"]
+    generator = provenance.get("generator", {})
     source_rows = "\n".join(
         f"""                    <tr>
                         <td>{_html_escape(row["path"])}</td>
@@ -1053,6 +1307,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
             ("Curated works", metrics["works"]),
             ("Software rows", metrics["software_catalogued"]),
             ("Scholar citations", metrics["google_scholar"]["citations"]),
+            ("Public GitHub repositories", github_metrics["public"]),
             *section_counts,
         ]
     )
@@ -1076,6 +1331,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+{HEAD_EXTRAS}
     <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
     <style>
         :root {{
@@ -1107,17 +1363,20 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     </style>
 </head>
 <body>
-    <main class="verify-shell">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation"><a href="/" class="nav-logo">Daniel Ari Friedman</a><div class="nav-links"><a href="/publications.html">Publications</a><a href="/resume/resume.pdf">Resume PDF</a><a href="/data/agent-index.json">Agent Map</a></div></nav>
+    <main id="main" class="verify-shell">
         <header class="verify-hero">
             <p><strong>Public Structured CV Verification</strong></p>
             <h1>Resume Verification</h1>
-            <p>Generated {payload["generated_at"]}. This page records the input source manifest, generated JSON hash, final PDF hash, counts, sizes, and public artifact links.</p>
+            <p>Generated {payload["generated_at"]}. This page records the input source manifest, generated JSON hash, final PDF hash, counts, sizes, and public artifact links. The accessible HTML CV is available at <a href="/resume/resume.html">/resume/resume.html</a>.</p>
         </header>
 
         <section aria-labelledby="artifacts">
             <h2 id="artifacts">Artifacts</h2>
             <div class="flow-grid">
                 <article class="flow-card"><h3>Structured JSON</h3><p><a href="/data/resume.json">/data/resume.json</a></p><p>{provenance["resume_json"]["bytes"]:,} bytes</p></article>
+                <article class="flow-card"><h3>Accessible HTML CV</h3><p><a href="/resume/resume.html">/resume/resume.html</a></p><p>No JavaScript required</p></article>
                 <article class="flow-card"><h3>Public PDF</h3><p><a href="/resume/resume.pdf">/resume/resume.pdf</a></p><p>{provenance.get("resume_pdf", {}).get("bytes", 0):,} bytes</p></article>
                 <article class="flow-card"><h3>Verification URL</h3><p><a href="/resume/verify.html">/resume/verify.html</a></p><p>{VERIFY_URL}</p></article>
             </div>
@@ -1144,14 +1403,17 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
             <div class="flow-grid">
                 <article class="flow-card"><h3>Inputs</h3><p>resume/source.json + canonical public data exports.</p><p><code>{_html_escape(source_hash[:16])}</code></p></article>
                 <article class="flow-card"><h3>Merged Payload</h3><p>data/resume.json</p><p><code>{_html_escape(json_hash[:16])}</code></p></article>
-                <article class="flow-card"><h3>Rendered Artifact</h3><p>resume/resume.pdf + footer QR verification.</p><p><code>{_html_escape(pdf_hash[:16])}</code></p></article>
+                <article class="flow-card"><h3>Rendered Artifacts</h3><p>resume/resume.html + resume/resume.pdf + verification.</p><p><code>{_html_escape(pdf_hash[:16])}</code></p></article>
             </div>
+            <p>Generator: <code>{_html_escape(generator.get("name", "unknown"))}</code>, schema {_html_escape(generator.get("schema_version", "unknown"))}; ReportLab {_html_escape(generator.get("reportlab_version", "unknown"))}. Source manifest matches the payload: <strong>{"yes" if provenance.get("source_manifest_matches_payload") else "no"}</strong>.</p>
+            <p>Accessibility: the HTML CV is semantic, keyboard-navigable, and JavaScript-free. The PDF provides selectable text, embedded fonts, link annotations, and language metadata; it does not claim fully tagged PDF/UA structure.</p>
         </section>
 
         <section aria-labelledby="sources">
             <h2 id="sources">Source Files</h2>
             <table>
-                <thead><tr><th>Path</th><th>Bytes</th><th>SHA-256</th></tr></thead>
+                <caption>Every file hashed into the CV source manifest</caption>
+                <thead><tr><th scope="col">Path</th><th scope="col">Bytes</th><th scope="col">SHA-256</th></tr></thead>
                 <tbody>
 {source_rows}
                 </tbody>
@@ -1177,6 +1439,7 @@ def tracked_outputs(payload: dict) -> dict[Path, bytes]:
     except ImportError:
         import sys
         print("warning: reportlab not installed, skipping PDF check", file=sys.stderr)
+    outputs[FULL_HTML] = render_resume_html(payload, "full")
     outputs[VERIFY_OUT] = render_verify_html(payload, provenance)
     return outputs
 
@@ -1192,6 +1455,8 @@ def selected_outputs(payload: dict, variant: str, fmt: str) -> dict[Path, bytes]
         target = FULL_PDF if variant == "full" else RESUME_DIR / f"{variant}.pdf"
         json_bytes = json_dumps(payload).encode("utf-8")
         return {target: render_pdf(payload, variant, _provenance_base(payload, json_bytes))}
+    if fmt == "html":
+        return {FULL_HTML: render_resume_html(payload, variant)}
     raise ValueError(f"unknown format: {fmt}")
 
 
@@ -1214,7 +1479,7 @@ def main() -> None:
     parser.add_argument("--all", action="store_true", help="Regenerate all tracked resume outputs")
     parser.add_argument("--check", action="store_true", help="Fail if tracked resume outputs are stale")
     parser.add_argument("--variant", choices=VARIANTS, default="full")
-    parser.add_argument("--format", choices=("json", "txt", "pdf", "all"), default="all")
+    parser.add_argument("--format", choices=("json", "txt", "pdf", "html", "all"), default="all")
     args = parser.parse_args()
 
     generated_at = existing_generated_at() if args.check else None

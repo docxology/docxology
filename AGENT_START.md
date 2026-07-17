@@ -6,11 +6,12 @@ This repository is the public research, software, citation, evidence, and websit
 
 1. Start with [`llms.txt`](llms.txt) for canonical pages, machine-readable files, and source-of-truth rules.
 2. Use [`discovery.html`](discovery.html) or [`pages/DISCOVERY.md`](pages/DISCOVERY.md) for public identifiers, API endpoints, and refresh queries.
-3. Use [`GENERATED.md`](GENERATED.md) before editing generated artifacts.
-4. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
-5. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.
-6. Use [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
-7. Browse [`docs/README.md`](docs/README.md) for the full repository-documentation index (architecture, operations, SEO, design, security, releases); [`docs/AGENTS.md`](docs/AGENTS.md) holds agent operational guidance.
+3. Use [`data/agent-index.json`](data/agent-index.json) for the stable route, dataset-schema, count, freshness, and query manifest.
+4. Use [`GENERATED.md`](GENERATED.md) before editing generated artifacts.
+5. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
+6. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.
+7. Use [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
+8. Browse [`docs/README.md`](docs/README.md) for the full repository-documentation index (architecture, operations, SEO, design, security, releases); [`docs/AGENTS.md`](docs/AGENTS.md) holds agent operational guidance.
 
 ## Task Recipes
 
@@ -46,5 +47,5 @@ This repository is the public research, software, citation, evidence, and websit
 
 ```bash
 uv run python3 code/orchestrators/validate_repo.py
-cd code/tests && PYTHONDONTWRITEBYTECODE=1 uv run pytest -q
+PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q
 ```

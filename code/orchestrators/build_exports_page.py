@@ -48,6 +48,7 @@ EXPORT_ROW_SPECS: list[tuple[str, str, str, str]] = [
     ("data/people.json", "People JSON", "Collaborator and identity index.", "application/json"),
     ("data/organizations.json", "Organizations JSON", "Institutional affiliation index.", "application/json"),
     ("data/resume.json", "Resume JSON", "Structured CV data merged from resume/source.json.", "application/json"),
+    ("resume/resume.html", "Accessible HTML CV", "No-JavaScript semantic CV view with PDF, plaintext, JSON, and verification links.", "text/html"),
     ("data/artworks.json", "Artworks JSON", "Gallery metadata for pen-and-ink and blockchain art.", "application/json"),
     ("data/github-repositories.json", "GitHub inventory JSON", "Full public repository data; the human-facing inventory separates primary repositories from forks.", "application/json"),
     ("data/work-enrichment.json", "Work enrichment JSON", "Abstracts and keywords extracted from paper folders.", "application/json"),

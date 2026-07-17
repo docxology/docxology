@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 import textwrap
 import unicodedata
@@ -18,6 +19,7 @@ SOURCE_FILES = (
     "data/software.json",
     "data/scholar-snapshot.json",
     "data/claims.json",
+    "data/github-repositories.json",
 )
 
 CODA_GLYPH_RE = re.compile(r"[\ue000-\uf8ff\u200b-\u200f\u2028\u2029\u2060\ufeff]")
@@ -35,6 +37,21 @@ def load_json(path: Path) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise ResumeDataError(f"{path} must contain a JSON object")
     return data
+
+
+def source_manifest(repo_root: Path = REPO_ROOT) -> dict[str, Any]:
+    """Return deterministic byte hashes for every CV input file."""
+    files = []
+    for rel_path in SOURCE_FILES:
+        path = repo_root / rel_path
+        if not path.is_file():
+            raise ResumeDataError(f"missing resume input: {rel_path}")
+        content = path.read_bytes()
+        digest = hashlib.sha256(content).hexdigest()
+        files.append({"path": rel_path, "bytes": len(content), "sha256": digest})
+    manifest_bytes = json.dumps(files, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    digest = hashlib.sha256(manifest_bytes).hexdigest()
+    return {"bytes": len(manifest_bytes), "sha256": digest, "files": files}
 
 
 def strip_coda_glyphs(value: str) -> str:
@@ -150,10 +167,17 @@ def _claim_by_id(claims: list[dict[str, Any]], claim_id: str) -> dict[str, Any] 
     return None
 
 
-def _metrics(works: dict[str, Any], software: dict[str, Any], scholar: dict[str, Any], claims: dict[str, Any]) -> dict[str, Any]:
+def _metrics(
+    works: dict[str, Any],
+    software: dict[str, Any],
+    scholar: dict[str, Any],
+    claims: dict[str, Any],
+    github_inventory: dict[str, Any],
+) -> dict[str, Any]:
     claim_rows = claims.get("claims", [])
     github_claim = _claim_by_id(claim_rows, "docxology-github-public-repos")
     aii_claim = _claim_by_id(claim_rows, "aii-github-public-repos")
+    github_counts = github_inventory.get("counts", {})
     return {
         "works": works["count"],
         "software_catalogued": software["count"],
@@ -170,6 +194,16 @@ def _metrics(works: dict[str, Any], software: dict[str, Any], scholar: dict[str,
         },
         "docxology_public_repositories_claim": github_claim,
         "aii_public_repositories_claim": aii_claim,
+        "github_inventory": {
+            "generated_at": github_inventory.get("generated_at"),
+            "source": github_inventory.get("source"),
+            "total": github_counts.get("total", 0),
+            "public": github_counts.get("public", 0),
+            "primary_total": github_counts.get("primary_total", 0),
+            "forks": github_counts.get("forks", 0),
+            "docxology": github_counts.get("docxology", 0),
+            "ActiveInferenceInstitute": github_counts.get("ActiveInferenceInstitute", 0),
+        },
     }
 
 
@@ -180,12 +214,18 @@ def build_resume_payload(generated_at: str, repo_root: Path = REPO_ROOT) -> dict
     software = inputs["data/software.json"]
     scholar = inputs["data/scholar-snapshot.json"]
     claims = inputs["data/claims.json"]
+    github_inventory = inputs["data/github-repositories.json"]
     return {
         "generated_at": generated_at,
         "source_files": list(SOURCE_FILES),
         "profile": source["profile"],
         "contact": source["contact"],
-        "metrics": _metrics(works, software, scholar, claims),
+        "metrics": _metrics(works, software, scholar, claims, github_inventory),
+        "integrity": {
+            "schema_version": 1,
+            "source_manifest": source_manifest(repo_root),
+            "policy": "All counts and volatile metrics are merged from canonical generated inputs; verify hashes before reuse.",
+        },
         "education": source["education"],
         "experience": source["experience"],
         "awards": source["awards"],
@@ -330,7 +370,10 @@ def render_text(payload: dict[str, Any], variant: str) -> str:
         f"Current public metrics: {metrics['works']} curated works; {metrics['software_catalogued']} catalogued software repositories "
         f"({metrics['owned_software_catalogued']} owned + {metrics['aii_software_catalogued']} AII); "
         f"{metrics['google_scholar']['citations']} Google Scholar citations, h-index {metrics['google_scholar']['h_index']}, "
-        f"i10-index {metrics['google_scholar']['i10_index']} as of {metrics['google_scholar']['as_of']}.",
+        f"i10-index {metrics['google_scholar']['i10_index']} as of {metrics['google_scholar']['as_of']}; "
+        f"GitHub inventory {metrics['github_inventory']['docxology']} docxology + "
+        f"{metrics['github_inventory']['ActiveInferenceInstitute']} AII public repositories "
+        f"({metrics['github_inventory']['primary_total']} primary, {metrics['github_inventory']['forks']} forks).",
     ]
     _section(lines, "Summary")
     _append_wrapped(lines, profile["summary"], indent="")

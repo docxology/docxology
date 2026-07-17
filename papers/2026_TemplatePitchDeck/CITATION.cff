@@ -18,3 +18,9 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/21281509"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0"
+    description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2"
+    description: "GitHub release"

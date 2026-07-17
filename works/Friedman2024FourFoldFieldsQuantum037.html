@@ -14,7 +14,8 @@
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
     <link rel="alternate" type="text/x-bibtex" href="/bibliography.bib" title="BibTeX bibliography">
     <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
@@ -24,8 +25,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Four-fold Fields of Quantum Dreams">
     <meta property="og:description" content="Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured…">
@@ -39,14 +39,11 @@
     <meta name="twitter:description" content="Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Four-fold Fields of Quantum Dreams — Daniel Ari Friedman">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .work-hero{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .work-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}
+        .work-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}
         .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
         .meta-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
         .meta-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
@@ -217,10 +214,12 @@
             <a href="../domains.html">Domains</a>
             <a href="../software.html">Software</a>
             <a href="../videos.html">Videos</a>
+            <a href="../resume/resume.html">CV</a>
             <a href="../search.html">Search</a>
             <a href="../catalog.html">Data Catalog</a>
             <a href="../cite-verify.html">Cite</a>
             <a href="../discovery.html">Discovery</a>
+            <a href="../data/agent-index.json">Agent Map</a>
         </div>
     </nav>
 
@@ -265,14 +264,13 @@
                 <a class="btn btn-outline" href="../papers/2024_QuantumDreams/">Documentation</a>
                 <a class="btn btn-outline" href="../papers/2024_QuantumDreams/full_text.md">Full Text</a>
                 <a class="btn btn-outline" href="../papers/2024_QuantumDreams/images/">Image Gallery</a>
-                
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>
         </section>
 
         <section class="section">
             <div class="section-header"><h2>Related in Art &amp; Synergetics</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
-            <ul class="related-list"><li><a href="Friedman2026ArchitectureFalseGodsWilliam115.html">The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026DoorsPerceptionAreThreshold007.html">The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026GoldenCompassLunarFlux004.html">The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026BeforePragmatismHadName003.html">Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</a><span class="muted"> · 2026</span></li><li><a href="Friedman2025SynthesisAgentNiche021.html">Synthesis of Agent and Niche</a><span class="muted"> · 2025</span></li><li><a href="Friedman2025SymergeticsSymbolicSynergeticsRational020.html">Symergetics: Symbolic Synergetics for Rational Arithmetic</a><span class="muted"> · 2025</span></li></ul>
+            <ul class="related-list"><li><a href="Friedman2026FourfoldVisionWilliamBlake196.html">Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026ArchitectureFalseGodsWilliam115.html">The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026DoorsPerceptionAreThreshold007.html">The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026GoldenCompassLunarFlux004.html">The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026BeforePragmatismHadName003.html">Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</a><span class="muted"> · 2026</span></li><li><a href="Friedman2025SynthesisAgentNiche021.html">Synthesis of Agent and Niche</a><span class="muted"> · 2025</span></li></ul>
         </section>
     </main>
     <footer role="contentinfo">

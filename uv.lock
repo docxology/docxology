@@ -98,7 +98,7 @@ dependencies = [
 requires-dist = [
     { name = "pypdf", specifier = ">=5.0" },
     { name = "pytest", specifier = ">=8.0" },
-    { name = "reportlab", specifier = ">=4.0" },
+    { name = "reportlab", specifier = "==4.5.1" },
 ]
 
 [[package]]

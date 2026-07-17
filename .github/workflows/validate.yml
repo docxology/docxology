@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+          uses: actions/checkout@v7
         with:
           # Full history so build_sitemap.py can derive per-URL <lastmod> from
           # git commit dates reproducibly (shallow checkout yields the single
@@ -35,4 +35,4 @@ jobs:
         run: uv run python3 code/orchestrators/validate_repo.py
 
       - name: Run tests
-        run: uv run pytest code/tests -q
+        run: uv run python3 -m pytest code/tests -q

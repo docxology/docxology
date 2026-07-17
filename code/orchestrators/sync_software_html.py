@@ -36,7 +36,6 @@ GITHUB_REPOSITORIES_JSON = REPO_ROOT / "data" / "github-repositories.json"
 
 LD_SYNC_BEGIN = "<!-- <SOFTWARE_LD_SYNC_BEGIN> -->"
 LD_SYNC_END = "<!-- <SOFTWARE_LD_SYNC_END> -->"
-LD_EXTERNAL_SCRIPT = '<script type="application/ld+json" src="/data/software-ld.json"></script>'
 DOCX_GRID_BEGIN = "<!-- <SOFTWARE_DOCX_GRID_BEGIN> -->"
 DOCX_GRID_END = "<!-- <SOFTWARE_DOCX_GRID_END> -->"
 AII_GRID_BEGIN = "<!-- <SOFTWARE_AII_GRID_BEGIN> -->"
@@ -150,8 +149,9 @@ def replace_between_markers(text: str, begin: str, end: str, replacement: str) -
     return re.sub(pattern, f"{begin}\n{replacement}\n        {end}", text, count=1)
 
 
-def external_ld_marker_block() -> str:
-    return f"    {LD_SYNC_BEGIN}\n    {LD_EXTERNAL_SCRIPT}\n    {LD_SYNC_END}"
+def inline_ld_marker_block(collection: dict) -> str:
+    payload = json.dumps(collection, ensure_ascii=False, separators=(",", ":"))
+    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">{payload}</script>\n    {LD_SYNC_END}"
 
 
 def remove_inline_collection_ld(html_text: str) -> str:
@@ -176,9 +176,9 @@ def remove_inline_collection_ld(html_text: str) -> str:
     return html_text
 
 
-def replace_inline_collection_ld(html_text: str) -> str:
+def replace_inline_collection_ld(html_text: str, collection: dict) -> str:
     html_text = remove_inline_collection_ld(html_text)
-    marker = external_ld_marker_block()
+    marker = inline_ld_marker_block(collection)
     if LD_SYNC_BEGIN in html_text and LD_SYNC_END in html_text:
         return re.sub(
             re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
@@ -186,14 +186,12 @@ def replace_inline_collection_ld(html_text: str) -> str:
             html_text,
             count=1,
         )
-    if LD_EXTERNAL_SCRIPT in html_text:
-        return html_text
     stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^\"]*)?">', html_text)
     insert_at = stylesheet_match.start() if stylesheet_match else -1
     if insert_at < 0:
         insert_at = html_text.find("</head>")
     if insert_at < 0:
-        raise ValueError("Could not locate insertion point for external JSON-LD in software.html")
+        raise ValueError("Could not locate insertion point for inline JSON-LD in software.html")
     return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
 
 
@@ -297,7 +295,7 @@ def main() -> None:
 
     collection = build_collection_page(rows)
     html_out = SOFTWARE_HTML.read_text(encoding="utf-8")
-    html_out = replace_inline_collection_ld(html_out)
+    html_out = replace_inline_collection_ld(html_out, collection)
     html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
     html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
     html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))

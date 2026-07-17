@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T04:48:14Z",
+  "generated_at": "2026-07-17T19:38:35Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -96,6 +96,21 @@
       "command": "uv run python3 code/orchestrators/build_current_counts.py"
     },
     {
+      "name": "Volatile site facts",
+      "outputs": [
+        "index.html",
+        "publications.html",
+        "discovery.html",
+        "pages/DISCOVERY.md"
+      ],
+      "sources": [
+        "data/current-counts.json",
+        "reports/public_source_snapshot_*.json",
+        "code/orchestrators/sync_site_facts.py"
+      ],
+      "command": "python3 code/orchestrators/sync_site_facts.py"
+    },
+    {
       "name": "Open Graph preview images",
       "outputs": [
         "og-*.jpg",
@@ -124,6 +139,17 @@
       "command": "python3 code/orchestrators/export_agent_data.py"
     },
     {
+      "name": "Agent route manifest",
+      "outputs": [
+        "data/agent-index.json"
+      ],
+      "sources": [
+        "data/current-counts.json",
+        "code/orchestrators/build_agent_index.py"
+      ],
+      "command": "python3 code/orchestrators/build_agent_index.py"
+    },
+    {
       "name": "Resume and CV exports",
       "outputs": [
         "data/resume.json",
@@ -132,6 +158,7 @@
         "resume/software-consulting.txt",
         "resume/teaching-service.txt",
         "resume/resume.pdf",
+        "resume/resume.html",
         "resume/verify.html"
       ],
       "sources": [
@@ -140,6 +167,7 @@
         "data/software.json",
         "data/scholar-snapshot.json",
         "data/claims.json",
+        "data/github-repositories.json",
         "code/src/resume_data.py",
         "code/orchestrators/build_resume.py"
       ],
@@ -175,7 +203,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-07-12.json"
+        "reports/paired_publications_2026-07-17.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -193,7 +221,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-07-12.json",
+        "reports/paired_publications_2026-07-17.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -349,7 +377,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-07-10.json"
+        "reports/public_source_snapshot_2026-07-17.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -359,7 +387,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-07-10.json"
+        "reports/public_source_inventory_2026-07-17.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -380,7 +408,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-07-16.json"
+        "reports/asset_size_2026-07-17.json"
       ],
       "sources": [
         "root HTML pages",
@@ -394,7 +422,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-07-16.json"
+        "reports/accessibility_static_2026-07-17.json"
       ],
       "sources": [
         "root HTML pages",
@@ -406,8 +434,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-07-02/*.png",
-        "reports/browser-smoke/2026-07-02/manifest.json"
+        "reports/browser-smoke/2026-07-17/*.png",
+        "reports/browser-smoke/2026-07-17/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -419,7 +447,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-07-16.json"
+        "reports/live_site_verification_2026-07-17.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",
@@ -465,8 +493,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-07-02/*.png",
-        "reports/visual-qa/2026-07-02/manifest.json"
+        "reports/visual-qa/2026-07-17/*.png",
+        "reports/visual-qa/2026-07-17/manifest.json"
       ],
       "sources": [
         "root HTML pages",

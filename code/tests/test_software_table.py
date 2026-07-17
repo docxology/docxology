@@ -59,3 +59,10 @@ def test_description_html_paper_and_zenodo_links():
     assert "https://doi.org/10.5281/zenodo.20286478" in html
     assert paper_path(raw) == "papers/2026_BiologyTextbook/"
     assert zenodo_url(raw) == "https://doi.org/10.5281/zenodo.20286478"
+
+
+def test_description_html_escapes_future_catalog_markup():
+    rendered = description_html('Safe <script>alert(1)</script> [Docs](javascript:alert(2))')
+    assert "<script>" not in rendered
+    assert "&lt;script&gt;" in rendered
+    assert "javascript:" not in rendered

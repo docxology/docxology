@@ -85,22 +85,28 @@ def _rewrite_paper_href(href: str) -> str:
 def description_html(description_raw: str) -> str:
     """Convert SOFTWARE.md description cell markdown to card-safe HTML."""
     text = description_raw.strip()
-
-    def paper_sub(m: re.Match[str]) -> str:
-        href = _rewrite_paper_href(m.group(1))
-        return f'<a href="{html.escape(href, quote=True)}">paper</a>'
-
-    text = PAPER_LINK_RE.sub(paper_sub, text)
-
-    def md_link_sub(m: re.Match[str]) -> str:
-        label, href = m.group(1), m.group(2)
-        return (
-            f'<a href="{html.escape(href, quote=True)}">'
-            f"{html.escape(label)}</a>"
+    # Escape all prose first and reconstruct only the small, explicitly
+    # supported link grammar. This keeps future catalog descriptions from
+    # injecting tags or event-handler attributes into generated cards.
+    link_re = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+    chunks: list[str] = []
+    cursor = 0
+    for match in link_re.finditer(text):
+        chunks.append(html.escape(text[cursor : match.start()]))
+        label, href = match.group(1), match.group(2).strip()
+        if label == "📄" and (href.startswith("../papers/") or href.startswith("papers/")):
+            href = _rewrite_paper_href(href)
+            label = "paper"
+        elif not href.startswith("https://"):
+            chunks.append(html.escape(label))
+            cursor = match.end()
+            continue
+        chunks.append(
+            f'<a href="{html.escape(href, quote=True)}">{html.escape(label)}</a>'
         )
-
-    text = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", md_link_sub, text)
-    return text
+        cursor = match.end()
+    chunks.append(html.escape(text[cursor:]))
+    return "".join(chunks)
 
 
 def lang_css_class(language: str) -> str:

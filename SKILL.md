@@ -37,7 +37,7 @@ uv sync
 uv run python3 code/orchestrators/validate_repo.py
 
 # Run tests:
-uv run pytest code/tests -q
+uv run python3 -m pytest code/tests -q
 ```
 
 ## Interactive Components (added 2026-07-05)

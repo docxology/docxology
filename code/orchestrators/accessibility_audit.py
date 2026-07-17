@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run a lightweight static accessibility and metadata audit for root HTML pages."""
+"""Run a lightweight static accessibility and metadata audit for public HTML pages."""
 
 from __future__ import annotations
 
@@ -156,7 +156,10 @@ def existing_generated_at(path: Path) -> str | None:
 
 def render(generated_at: str | None = None) -> str:
     pages = []
-    for path in sorted(REPO_ROOT.glob("*.html")):
+    excluded_parts = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"}
+    for path in sorted(REPO_ROOT.rglob("*.html")):
+        if excluded_parts.intersection(path.parts):
+            continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         if 'http-equiv="refresh"' in text or path.name.startswith("google"):
             continue
@@ -164,7 +167,7 @@ def render(generated_at: str | None = None) -> str:
     results = [audit_page(path) for path in pages]
     payload = {
         "generated_at": generated_at or generated_timestamp(),
-        "scope": "Static root HTML pages; complements, but does not replace, browser-based accessibility testing.",
+        "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
         "page_count": len(results),
         "passing": sum(1 for r in results if r["ok"]),
         "results": results,

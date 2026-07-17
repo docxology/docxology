@@ -113,6 +113,12 @@ ARTIFACTS = [
         "command": "uv run python3 code/orchestrators/build_current_counts.py",
     },
     {
+        "name": "Volatile site facts",
+        "outputs": ["index.html", "publications.html", "discovery.html", "pages/DISCOVERY.md"],
+        "sources": ["data/current-counts.json", "reports/public_source_snapshot_*.json", "code/orchestrators/sync_site_facts.py"],
+        "command": "python3 code/orchestrators/sync_site_facts.py",
+    },
+    {
         "name": "Open Graph preview images",
         "outputs": ["og-*.jpg", "data/og-image-counts.json"],
         "sources": ["data/current-counts.json", "code/orchestrators/generate_og_images.py"],
@@ -125,6 +131,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/export_agent_data.py",
     },
     {
+        "name": "Agent route manifest",
+        "outputs": ["data/agent-index.json"],
+        "sources": ["data/current-counts.json", "code/orchestrators/build_agent_index.py"],
+        "command": "python3 code/orchestrators/build_agent_index.py",
+    },
+    {
         "name": "Resume and CV exports",
         "outputs": [
             "data/resume.json",
@@ -133,6 +145,7 @@ ARTIFACTS = [
             "resume/software-consulting.txt",
             "resume/teaching-service.txt",
             "resume/resume.pdf",
+            "resume/resume.html",
             "resume/verify.html",
         ],
         "sources": [
@@ -141,6 +154,7 @@ ARTIFACTS = [
             "data/software.json",
             "data/scholar-snapshot.json",
             "data/claims.json",
+            "data/github-repositories.json",
             "code/src/resume_data.py",
             "code/orchestrators/build_resume.py",
         ],

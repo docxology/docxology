@@ -13,7 +13,8 @@
     <link rel="alternate" type="application/json" href="/codemeta.json" title="CodeMeta">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
@@ -23,8 +24,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Public Exports — Daniel Ari Friedman">
     <meta property="og:description" content="Citation exports and JSON datasets for the public research index.">
@@ -131,7 +131,7 @@
                 </article>
                 <article class="export-card">
                     <h2><a href="data/works.json">Works JSON</a></h2>
-                    <p>194-row structured bibliography with DOIs, domains, and doc paths.</p>
+                    <p>195-row structured bibliography with DOIs, domains, and doc paths.</p>
                     <span class="mime">application/json · data/works.json</span>
                 </article>
                 <article class="export-card">
@@ -163,6 +163,11 @@
                     <h2><a href="data/resume.json">Resume JSON</a></h2>
                     <p>Structured CV data merged from resume/source.json.</p>
                     <span class="mime">application/json · data/resume.json</span>
+                </article>
+                <article class="export-card">
+                    <h2><a href="resume/resume.html">Accessible HTML CV</a></h2>
+                    <p>No-JavaScript semantic CV view with PDF, plaintext, JSON, and verification links.</p>
+                    <span class="mime">text/html · resume/resume.html</span>
                 </article>
                 <article class="export-card">
                     <h2><a href="data/artworks.json">Artworks JSON</a></h2>

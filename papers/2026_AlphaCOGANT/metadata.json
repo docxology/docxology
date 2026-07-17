@@ -51,16 +51,17 @@
     }
   ],
   "github_repo": "docxology/alphacogant",
-  "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
-  "release_tag": "v1.0.0",
-  "release_name": "AlphaCOGANT v1.0.0",
+  "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
+  "release_tag": "v1.0.1",
+  "release_name": "AlphaCOGANT v1.0.1",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-07-10T19:08:24Z",
+  "checked_at": "2026-07-17T18:59:15Z",
   "venue": "Zenodo",
   "methods": [
     {

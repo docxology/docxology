@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 48
+- Works: 42
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -116,7 +116,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates, and synergetics.
 
-- Works: 15
+- Works: 16
 - Selected repositories: 6
 - Collaborator context: Buckminster Fuller source tradition, William Blake source tradition, Curio Cards artists
 
@@ -132,8 +132,8 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 - 2026 — [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](https://doi.org/10.5281/zenodo.19335195)
 - 2026 — [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](https://doi.org/10.5281/zenodo.18600040)
 - 2026 — [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](https://doi.org/10.5281/zenodo.20144983)
+- 2026 — [Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing](https://doi.org/10.5281/zenodo.21388456)
 - 2025 — [On Cognitive Art & Science: Toward Wholeness From Both Sides](https://doi.org/10.5281/zenodo.16740438)
-- 2025 — [On Time](https://doi.org/10.5281/zenodo.15168381)
 
 **Selected repositories**
 
@@ -208,3 +208,63 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
 - [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+
+## 🌍 [AII Ecosystem](../domain-aii-ecosystem.html)
+
+Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.
+
+- Works: 6
+- Selected repositories: 5
+- Collaborator context: Active Inference Institute contributors, Institute program participants
+
+**Learning path**
+
+- Start with the Active Inference Institute ecosystem and textbook materials.
+- Follow the institute software and formalization repositories for implementation context.
+- Use the Discovery and Data Catalog pages for machine-readable routes.
+
+**Selected works**
+
+- 2025 — [The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)](https://doi.org/10.5281/zenodo.17982447)
+- 2024 — [Aligning Active Inference Ontology to SUMO](https://doi.org/10.5281/zenodo.11459322)
+- 2024 — [The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)](https://doi.org/10.5281/zenodo.14108992)
+- 2023 — [The Active Inference Institute and Active Inference Ecosystem (v1)](https://doi.org/10.5281/zenodo.8266280)
+- 2022 — [Catechism for Towards Active Diffusion](https://doi.org/10.5281/zenodo.7443847)
+- 2016 — [Full speed ahead to the City on the Hill](https://doi.org/10.1126/science.352.6288.886)
+
+**Selected repositories**
+
+- [active_inference](https://github.com/docxology/active_inference) — Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling
+- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo
+- [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) — Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
+- [cognitive](https://github.com/docxology/cognitive) — Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
+- [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
+
+## 🎥 [Presentations & Media](../domain-presentations-media.html)
+
+Talks, courses, presentations, and media artifacts connected to the research and teaching program.
+
+- Works: 15
+- Selected repositories: 3
+- Collaborator context: Active Inference Institute educators, Course and media collaborators
+
+**Learning path**
+
+- Use the video index for talks and transcript-linked media.
+- Use the course and presentation rows in the bibliography for structured teaching routes.
+- Cross-reference related works through the canonical work pages.
+
+**Selected works**
+
+- 2026 — [Active Inference Journal — 500+ videos on Active Inference with transcripts](https://video.activeinference.institute/)
+- 2026 — [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](https://www.youtube.com/@danielarifriedman/playlists)
+- 2025 — [5th Applied Active Inference Symposium — Abstract Book](https://doi.org/10.5281/zenodo.17555266)
+- 2025 — [Systems Processes, Active Inference, and Beyond](https://doi.org/10.5281/zenodo.17138223)
+- 2024 — [BioFirm Development at Applied Active Inference Symposium 2024](https://doi.org/10.5281/zenodo.14861595)
+- 2024 — [MathArt Stream #8: William Blake and Active Inference](https://doi.org/10.5281/zenodo.13711301)
+
+**Selected repositories**
+
+- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
+- [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

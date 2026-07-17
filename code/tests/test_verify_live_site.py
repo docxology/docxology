@@ -62,10 +62,29 @@ def test_load_dynamic_checks_uses_current_counts(monkeypatch, tmp_path):
     pubs = next(check for check in checks if check["path"] == "publications.html")
     software = next(check for check in checks if check["path"] == "software.html")
 
-    assert any("168 Works" in marker for marker in pubs["markers"])
+    assert any("168 Research Works" in marker for marker in pubs["markers"])
     assert any("58 owned" in marker for marker in software["markers"])
     assert any("33 catalogued" in marker for marker in software["markers"])
     assert any(f"{payload['counts']['github_inventory']['public']} public repositories" in marker for marker in software["markers"])
+
+
+def test_cache_busted_url_preserves_path_and_adds_unique_query():
+    url = vl.cache_busted("https://example.test/data/works.json?v=1", attempt=2)
+    assert url.startswith("https://example.test/data/works.json?")
+    assert "v=1" in url
+    assert "__verify=" in url
+
+
+def test_count_fingerprint_ignores_generated_timestamp():
+    current = {
+        "works": 194,
+        "software_docx": 61,
+        "software_aii": 34,
+        "software_total": 95,
+        "public_repos": 379,
+    }
+    observed = {**current, "generated_at": "2026-07-16T04:35:51+00:00"}
+    assert vl.count_fingerprint_matches(observed, current)
 
 
 def test_verify_live_site_check_command_validates_fingerprint(monkeypatch, tmp_path, capsys):
@@ -115,6 +134,42 @@ def test_verify_live_site_check_fails_on_http_error(monkeypatch, tmp_path):
 
     with pytest.raises(SystemExit, match="Live-site page failure"):
         vl.main()
+
+
+def test_verify_live_site_check_allows_local_404_during_built_pages_deploy(monkeypatch, tmp_path, capsys):
+    counts_path = tmp_path / "data" / "current-counts.json"
+    _write_current_counts(counts_path)
+    local_route = tmp_path / "data" / "agent-index.json"
+    local_route.parent.mkdir(parents=True, exist_ok=True)
+    local_route.write_text("{}", encoding="utf-8")
+    monkeypatch.setattr(vl, "CURRENT_COUNTS_JSON", counts_path)
+    monkeypatch.setattr(vl, "REPO_ROOT", tmp_path)
+    report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
+    _write_report(
+        report_path,
+        {
+            "github_pages": {"ok": True, "status": "built"},
+            "deployment_pending_paths": ["data/agent-index.json"],
+            "results": [
+                {
+                    "status": 404,
+                    "url": "https://example.test/data/agent-index.json",
+                    "path": "data/agent-index.json",
+                    "local_exists": True,
+                    "deployment_pending": True,
+                }
+            ],
+        },
+        overall_ok=False,
+        expected_counts=vl.load_current_counts_fingerprint(),
+    )
+
+    monkeypatch.setattr(vl, "latest_report", lambda pattern, required=False: report_path)
+    monkeypatch.setattr(sys, "argv", ["verify_live_site.py", "--check"])
+
+    vl.main()
+    output = capsys.readouterr().out
+    assert "deployment pending" in output
 
 
 def test_verify_live_site_check_fails_when_fingerprint_drifted(monkeypatch, tmp_path):

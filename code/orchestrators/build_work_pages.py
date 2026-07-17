@@ -461,14 +461,11 @@ def page_head(work: dict) -> str:
     <meta name="twitter:description" content="{h(description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .work-hero{{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
-        .work-hero h1{{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}}
+        .work-hero h1{{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}}
         .meta-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}}
         .meta-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}
         .meta-card strong{{display:block;color:var(--gold);margin-bottom:.25rem}}
@@ -516,6 +513,33 @@ def render_work_page(work: dict) -> str:
         if source_repo
         else ""
     )
+    optional_buttons = []
+    full_text = full_text_link(work.get("docs_path", ""))
+    image_gallery = image_gallery_link_work(work.get("docs_path", ""))
+    if full_text:
+        optional_buttons.append(f'<a class="btn btn-outline" href="{h(full_text)}">Full Text</a>')
+    if image_gallery:
+        optional_buttons.append(f'<a class="btn btn-outline" href="{h(image_gallery)}">Image Gallery</a>')
+    if source_repo_btn:
+        optional_buttons.append(source_repo_btn)
+    button_links = [
+        f'<a class="btn btn-gold" href="{h(primary)}">Primary source</a>',
+        f'<a class="btn btn-outline" href="{h(docs)}">Documentation</a>',
+        *optional_buttons,
+        '<a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>',
+    ]
+    button_links_html = "\n                ".join(button_links)
+    doi_value = f'<a href="{h(doi_link)}">{h(work["doi"])}</a>' if doi_link else "Not listed"
+    meta_cards = [
+        f'<div class="meta-card"><strong>Catalog Row</strong>{h(work["num"])}</div>',
+        f'<div class="meta-card"><strong>Citation Key</strong>{h(work["citation_key"])}</div>',
+        f'<div class="meta-card"><strong>Paper Folder</strong>{"Available" if work.get("has_paper_folder") else "Not available"}</div>',
+        f'<div class="meta-card"><strong>DOI</strong>{doi_value}</div>',
+    ]
+    platform_card = platform_availability_card(work)
+    if platform_card:
+        meta_cards.append(platform_card)
+    meta_cards_html = "\n                ".join(meta_cards)
     enrich = work.get("enrichment", {})
     abstract = enrich.get("abstract", "")
     keywords = enrich.get("keywords", [])
@@ -557,11 +581,7 @@ def render_work_page(work: dict) -> str:
     <main id="main" class="main">
         <section class="section">
             <div class="meta-grid">
-                <div class="meta-card"><strong>Catalog Row</strong>{h(work['num'])}</div>
-                <div class="meta-card"><strong>Citation Key</strong>{h(work['citation_key'])}</div>
-                <div class="meta-card"><strong>Paper Folder</strong>{'Available' if work.get('has_paper_folder') else 'Not available'}</div>
-                <div class="meta-card"><strong>DOI</strong>{f'<a href="{h(doi_link)}">{h(work["doi"])}</a>' if doi_link else 'Not listed'}</div>
-                {platform_availability_card(work)}
+                {meta_cards_html}
             </div>
         </section>
 {detail_sections}
@@ -569,12 +589,7 @@ def render_work_page(work: dict) -> str:
             <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>
             <div class="cite-box">{h(citation_text(work))}</div>
             <p class="text-center mt-2">
-                <a class="btn btn-gold" href="{h(primary)}">Primary source</a>
-                <a class="btn btn-outline" href="{h(docs)}">Documentation</a>
-                {f'<a class="btn btn-outline" href="{h(full_text_link(work.get("docs_path", "")))}">Full Text</a>' if full_text_link(work.get("docs_path", "")) else ''}
-                {f'<a class="btn btn-outline" href="{h(image_gallery_link_work(work.get("docs_path", "")))}">Image Gallery</a>' if image_gallery_link_work(work.get("docs_path", "")) else ''}
-                {source_repo_btn}
-                <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
+                {button_links_html}
             </p>
         </section>
 {related_works_html(work)}

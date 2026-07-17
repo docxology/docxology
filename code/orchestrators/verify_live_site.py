@@ -10,6 +10,7 @@ import subprocess
 import time
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -57,7 +58,7 @@ def load_dynamic_checks() -> list[dict[str, list[str]]]:
         },
         {
             "path": "publications.html",
-            "markers": ["Publications", "data/publications-ld.json", "catalogued works"],
+            "markers": ["Publications", '"@type": "CollectionPage"', "Research Works"],
         },
         {
             "path": "software.html",
@@ -92,6 +93,14 @@ def load_dynamic_checks() -> list[dict[str, list[str]]]:
             "markers": ['"count"', '"items"', "items"],
         },
         {
+            "path": "data/works.json",
+            "markers": ['"works"', '"count"'],
+        },
+        {
+            "path": "data/agent-index.json",
+            "markers": ['"schema_version"', '"routes"', '"datasets"'],
+        },
+        {
             "path": "data/catalog.json",
             "markers": ["DataCatalog", "External Link Triage", "Software"],
         },
@@ -110,7 +119,7 @@ def load_dynamic_checks() -> list[dict[str, list[str]]]:
     ]
 
     if works is not None:
-        checks[1]["markers"].append(f"{works} Works")
+        checks[1]["markers"].append(f"{works} Research Works")
     if software_docx is not None:
         checks[2]["markers"].append(f"{software_docx} owned")
     if software_aii is not None:
@@ -127,13 +136,24 @@ def load_current_counts_fingerprint() -> dict[str, int | str | None]:
     software = counts.get("software", {})
     github_inventory = counts.get("github_inventory", {})
     return {
-        "generated_at": payload.get("generated_at"),
         "works": counts.get("bibliography_works"),
         "software_docx": software.get("docxology_owned"),
         "software_aii": software.get("active_inference_institute"),
         "software_total": software.get("curated_total"),
         "public_repos": github_inventory.get("public"),
     }
+
+
+def count_fingerprint_matches(observed: dict, current: dict) -> bool:
+    """Compare count fields while ignoring the local report build timestamp.
+
+    The timestamp changes whenever generated artifacts are rebuilt; it is not a
+    deployment invariant and made a valid live report look stale before this
+    check was introduced. Legacy reports may still contain the timestamp, so
+    compare only the stable count keys.
+    """
+    keys = {"works", "software_docx", "software_aii", "software_total", "public_repos"}
+    return all(observed.get(key) == current.get(key) for key in keys)
 
 
 def fetch(url: str, timeout: int, extra_headers: dict[str, str] | None = None) -> dict:
@@ -184,6 +204,25 @@ def fetch(url: str, timeout: int, extra_headers: dict[str, str] | None = None) -
         }
 
 
+def cache_busted(url: str, attempt: int = 0) -> str:
+    """Force each verification attempt through a fresh CDN cache key."""
+    parsed = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    query.append(("__verify", f"{int(time.time())}-{attempt}"))
+    return urllib.parse.urlunsplit(parsed._replace(query=urllib.parse.urlencode(query)))
+
+
+def fetch_with_retries(url: str, timeout: int, attempts: int = 3) -> dict:
+    last = None
+    for attempt in range(attempts):
+        last = fetch(cache_busted(url, attempt), timeout)
+        if last["ok"]:
+            return last
+        if attempt < attempts - 1:
+            time.sleep(2**attempt)
+    return last or fetch(cache_busted(url), timeout)
+
+
 def pages_status(timeout: int) -> dict:
     try:
         proc = subprocess.run(
@@ -231,7 +270,7 @@ def build_report(timeout: int) -> dict:
     results = []
     for check in checks:
         url = BASE + check["path"]
-        response = fetch(url, timeout)
+        response = fetch_with_retries(url, timeout)
         markers = {marker: marker in response["text"] for marker in check["markers"]}
         cache = {
             key: response["headers"].get(key, "")
@@ -253,12 +292,28 @@ def build_report(timeout: int) -> dict:
         )
 
     pages = pages_status(timeout)
+    # A freshly generated route can legitimately be absent from the CDN while
+    # GitHub Pages reports a healthy build.  Record that state explicitly so a
+    # deploy propagation delay is not confused with a broken local artifact.
+    pending_paths = []
+    if pages.get("ok"):
+        for item in results:
+            local_path = REPO_ROOT / (item["path"] if item["path"] != "index.html" else "index.html")
+            item["local_exists"] = local_path.is_file()
+            item["deployment_pending"] = item["status"] == 404 and item["local_exists"]
+            if item["deployment_pending"]:
+                pending_paths.append(item["path"])
+    else:
+        for item in results:
+            item["local_exists"] = False
+            item["deployment_pending"] = False
     return {
         "generated_at": generated_timestamp(),
         "base_url": BASE,
         "expected_counts": fingerprint,
         "note": "Live verification can fail while GitHub Pages is still building or CDN caches are stale.",
         "github_pages": pages,
+        "deployment_pending_paths": pending_paths,
         "checked_urls": len(results),
         "passing": sum(1 for item in results if item["ok"]),
         "overall_ok": pages.get("ok", False) and all(item["ok"] for item in results),
@@ -279,19 +334,21 @@ def main() -> None:
         if not out.exists():
             raise SystemExit("Missing live-site verification report")
         payload = json.loads(out.read_text(encoding="utf-8"))
-        if payload.get("expected_counts") != current_fingerprint:
+        if not count_fingerprint_matches(payload.get("expected_counts", {}), current_fingerprint):
             raise SystemExit(
                 f"Live-site verification counts snapshot mismatch: expected={current_fingerprint} got={payload.get('expected_counts')}"
             )
         if not payload.get("results"):
             raise SystemExit("Live-site verification report has no results")
         for item in payload.get("results", []):
-            if item.get("status") >= 400:
+            if item.get("status", 0) >= 400 and not item.get("deployment_pending"):
                 raise SystemExit(f"Live-site page failure: {item.get('url')} status {item.get('status')}")
         if not payload.get("overall_ok"):
             print(
                 "checked live-site verification report "
-                f"({payload.get('passing')}/{payload.get('checked_urls')} passing; live markers pending deploy)"
+                f"({payload.get('passing')}/{payload.get('checked_urls')} passing; "
+                f"deployment pending for {len(payload.get('deployment_pending_paths', []))} route(s) or live markers; "
+                "live markers pending deploy)"
             )
             return
         print(f"checked live-site verification report ({payload['passing']}/{payload['checked_urls']} passing)")

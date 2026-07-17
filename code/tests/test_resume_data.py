@@ -15,7 +15,7 @@ ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(ORCH_DIR))
 
-from build_resume import VERIFY_URL, _provenance_base, _sha256_bytes, render_pdf, render_verify_html  # noqa: E402
+from build_resume import RESUME_HTML_URL, VERIFY_URL, _provenance_base, _sha256_bytes, render_pdf, render_resume_html, render_verify_html  # noqa: E402
 from resume_data import (  # noqa: E402
     CODA_GLYPH_RE,
     build_resume_payload,
@@ -57,12 +57,18 @@ def test_resume_source_schema_and_required_sections():
 def test_resume_payload_merges_canonical_works_and_software_counts():
     biblio = canonical_bibliography_snapshot()
     software = canonical_software_snapshot()
+    inputs = load_resume_inputs(REPO_ROOT)
+    github_counts = inputs["data/github-repositories.json"]["counts"]
     payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
     assert payload["metrics"]["works"] == biblio["works"]
     assert payload["metrics"]["software_catalogued"] == software["total"]
     assert len(payload["works"]) == biblio["works"]
     assert len(payload["software"]) == software["total"]
     assert payload["metrics"]["google_scholar"]["citations"] == 777
+    assert payload["metrics"]["github_inventory"]["docxology"] == github_counts["docxology"]
+    assert payload["metrics"]["github_inventory"]["ActiveInferenceInstitute"] == github_counts["ActiveInferenceInstitute"]
+    assert payload["integrity"]["source_manifest"]["sha256"]
+    assert "data/github-repositories.json" in payload["source_files"]
 
 
 def test_all_non_full_variants_have_membership():
@@ -112,6 +118,9 @@ def test_pdf_generation_is_readable():
     full_text = "\n".join(page.extract_text() or "" for page in reader.pages)
     assert VERIFY_URL in full_text
     assert "Current public metrics" in full_text
+    assert "GitHub inventory" in full_text
+    assert "Fourfold Vision" in full_text
+    assert "SynthOBS" in full_text
     assert "Curated Works" in full_text
     assert "Software Rows" in full_text
     assert "Works and Publications" in full_text
@@ -151,6 +160,30 @@ def test_pdf_contains_clickable_link_annotations():
     assert "https://curio.cards/artist/danielfriedman/" in uris
 
 
+def test_pdf_metadata_declares_identity_and_accessibility_boundary():
+    payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
+    metadata = PdfReader(BytesIO(render_pdf(payload, "full"))).metadata
+
+    assert metadata.title == "Daniel Ari Friedman - Public Structured CV"
+    assert metadata.author == "Daniel Ari Friedman"
+    assert metadata.subject == "Accessible, source-verified structured curriculum vitae"
+    assert "verification" in metadata.keywords
+
+
+def test_semantic_html_cv_is_no_javascript_and_escapes_generated_content():
+    payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
+    html = render_resume_html(payload, "full").decode("utf-8")
+
+    assert RESUME_HTML_URL in html
+    assert '<main id="main" class="cv-shell">' in html
+    assert '<h1>Daniel Ari Friedman, PhD</h1>' in html
+    assert "Fourfold Vision" in html
+    assert "SynthOBS" in html
+    assert 'script src=' not in html
+    assert "data/github-repositories.json" not in html
+    assert "Source manifest:" in html
+
+
 def test_resume_verify_html_records_hashes_and_artifact_links():
     payload = build_resume_payload(FIXED_TIME, REPO_ROOT)
     json_bytes = json_dumps(payload).encode("utf-8")
@@ -165,3 +198,7 @@ def test_resume_verify_html_records_hashes_and_artifact_links():
     assert provenance["source_manifest"]["sha256"] in html
     assert provenance["resume_json"]["sha256"] in html
     assert provenance["resume_pdf"]["sha256"] in html
+    assert "/resume/resume.html" in html
+    assert 'scope="col"' in html
+    assert "Source manifest matches the payload" in html
+    assert "JavaScript-free" in html

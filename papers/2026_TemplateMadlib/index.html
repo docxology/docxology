@@ -12,7 +12,8 @@
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
@@ -22,8 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts Documentation">
     <meta property="og:description" content="This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit…">
@@ -36,7 +36,7 @@
     <meta name="twitter:image:alt" content="Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts">
     <style>
         .paper-hero{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .paper-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
+        .paper-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
         .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
         .artifact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}
         .artifact-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
@@ -57,10 +57,12 @@
             <a href="../../domains.html">Domains</a>
             <a href="../../software.html">Software</a>
             <a href="../../videos.html">Videos</a>
+            <a href="../../resume/resume.html">CV</a>
             <a href="../../search.html">Search</a>
             <a href="../../catalog.html">Data Catalog</a>
             <a href="../../cite-verify.html">Cite</a>
             <a href="../../discovery.html">Discovery</a>
+            <a href="../../data/agent-index.json">Agent Map</a>
         </div>
     </nav>
     <header class="paper-hero">

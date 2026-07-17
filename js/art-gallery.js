@@ -32,26 +32,33 @@
   }
 
   // Lazy-load observer
-  const imgObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const img = e.target;
-      if (!img.dataset.src) return;
-      img.src = img.dataset.src;
-      img.onload = () => img.classList.add('loaded');
-      img.onerror = () => img.classList.add('loaded');
-      imgObs.unobserve(img);
-    });
-  }, { rootMargin: '250px' });
+  const loadImage = (img) => {
+    if (!img || !img.dataset.src || img.src) return;
+    img.src = img.dataset.src;
+    img.onload = () => img.classList.add('loaded');
+    img.onerror = () => {
+      img.classList.add('loaded', 'load-error');
+      img.alt = `${img.alt} (image unavailable)`;
+    };
+  };
+
+  const imgObs = 'IntersectionObserver' in window
+    ? new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        loadImage(e.target);
+        imgObs.unobserve(e.target);
+      });
+    }, { rootMargin: '400px' })
+    : null;
 
   function esc(s) {
     return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
   function plain(s) {
-    const div = document.createElement('div');
-    div.innerHTML = s || '';
-    return (div.textContent || div.innerText || '').replace(/\s+/g, ' ').trim();
+    const parsed = new DOMParser().parseFromString(String(s || ''), 'text/html');
+    return (parsed.body.textContent || '').replace(/\s+/g, ' ').trim();
   }
 
   function artAlt(art) {
@@ -70,18 +77,23 @@
     document.getElementById('emptyState').style.display = filtered.length ? 'none' : 'block';
     document.getElementById('resultCount').textContent = filtered.length + ' artworks';
     filtered.forEach((art, i) => {
-      const card = document.createElement('div');
+      const card = document.createElement('button');
+      card.type = 'button';
       card.className = 'art-card';
+      card.setAttribute('aria-haspopup', 'dialog');
+      card.setAttribute('aria-label', `Open artwork: ${art.title || 'Untitled artwork'}`);
       card.innerHTML =
-        `<img data-src="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb">` +
+        `<img data-src="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb" loading="lazy" decoding="async">` +
         `<div class="art-info">` +
         `<div class="art-title" title="${esc(art.title)}">${esc(art.title)}</div>` +
         `<div class="art-meta">${art.date ? art.date.slice(0, 10) : ''}</div>` +
         (art.views ? `<div class="art-views">${parseInt(art.views).toLocaleString()} views</div>` : '') +
         `</div>`;
-      card.addEventListener('click', () => openLightbox(i));
+      card.addEventListener('click', () => openLightbox(i, card));
       grid.appendChild(card);
-      imgObs.observe(card.querySelector('.art-thumb'));
+      const image = card.querySelector('.art-thumb');
+      if (imgObs) imgObs.observe(image);
+      else loadImage(image);
     });
   }
 
@@ -108,17 +120,27 @@
   // ── GRID SIZE ──
   function setSize(s) {
     grid.className = 'grid grid-' + s;
-    ['sm', 'md', 'lg'].forEach(x => document.getElementById('btn-' + x).classList.toggle('active', x === s));
+    ['sm', 'md', 'lg'].forEach(x => {
+      const button = document.getElementById('btn-' + x);
+      const active = x === s;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
   }
 
   // ── LIGHTBOX ──
   const SIZE_ORDER = ['Square', 'Thumbnail', 'Small', 'Small 320', 'Small 400', 'Medium', 'Medium 640', 'Medium 800', 'Large', 'Large 1600', 'Large 2048', 'X-Large 3K', 'X-Large 4K', 'X-Large 5K', 'Original'];
 
-  function openLightbox(i) {
+  let previouslyFocused = null;
+
+  function openLightbox(i, trigger) {
     currentIdx = i;
+    previouslyFocused = trigger || document.activeElement;
     populate(filtered[i]);
     lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    document.getElementById('lb-close')?.focus();
   }
 
   function populate(art) {
@@ -170,7 +192,9 @@
 
   function closeLightbox() {
     lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    if (previouslyFocused && typeof previouslyFocused.focus === 'function') previouslyFocused.focus();
   }
 
   function navLightbox(dir) {
@@ -191,6 +215,14 @@
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowRight') navLightbox(1);
     if (e.key === 'ArrowLeft') navLightbox(-1);
+    if (e.key === 'Tab') {
+      const focusable = lb.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   });
   lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
 

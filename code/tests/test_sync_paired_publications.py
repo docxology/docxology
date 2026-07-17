@@ -21,6 +21,7 @@ from sync_paired_publications import (  # noqa: E402
     build_sync_actions,
     check_report,
     display_report_path,
+    ordered_apply_pairs,
     refresh_bibliography_counts,
 )
 
@@ -179,6 +180,36 @@ def test_build_sync_actions_marks_new_and_existing_pairs(tmp_path: Path):
     apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
     actions = build_sync_actions([pair], repo_root=tmp_path)
     assert actions[0].action_type == "update_existing"
+
+
+def test_ordered_apply_pairs_leaves_latest_release_as_final_metadata_writer(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    base = _pair()
+    apply_publication_pair(base, repo_root=tmp_path, download_files=False)
+    older = replace(
+        base,
+        release=replace(
+            base.release,
+            tag="v1.0.0",
+            published_at="2026-05-27T01:02:03Z",
+            html_url="https://github.com/docxology/new_repo/releases/tag/v1.0.0",
+        ),
+    )
+    newer = replace(
+        base,
+        release=replace(
+            base.release,
+            tag="v1.1.0",
+            published_at="2026-06-01T01:02:03Z",
+            html_url="https://github.com/docxology/new_repo/releases/tag/v1.1.0",
+        ),
+    )
+    pairs = [newer, older]
+    actions = build_sync_actions(pairs, repo_root=tmp_path)
+
+    ordered = ordered_apply_pairs(actions, pairs)
+
+    assert [pair.release.tag for _, pair in ordered] == ["v1.0.0", "v1.1.0"]
 
 
 def test_build_sync_actions_honors_reviewed_noncanonical_versions(tmp_path: Path):

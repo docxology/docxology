@@ -7,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from site_nav import clip_description, render_nav, render_nav_domain, social_meta_tags
+from site_nav import CSP_META_TAG, HEAD_EXTRAS, clip_description, render_nav, render_nav_domain, social_meta_tags
 
 
 def test_clip_description_short_text_unchanged():
@@ -72,3 +72,10 @@ def test_render_nav_domain_marks_domains_active():
     assert 'href="domains.html" class="active"' in html
     assert "Software" in html
     assert 'href="catalog.html"' in html
+
+
+def test_shared_security_policy_allows_only_required_frame_origin():
+    assert "frame-src https://www.youtube-nocookie.com" in CSP_META_TAG
+    assert "fonts.googleapis.com" not in CSP_META_TAG
+    assert 'name="referrer"' in HEAD_EXTRAS
+    assert "data/agent-index.json" in HEAD_EXTRAS

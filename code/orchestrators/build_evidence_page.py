@@ -114,9 +114,6 @@ def render_html(claims: list[dict]) -> str:
     <meta name="twitter:description" content="Claim-level evidence ledger with source links, confidence levels, and caveats.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <meta name="twitter:image:alt" content="Evidence Ledger — Daniel Ari Friedman">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>

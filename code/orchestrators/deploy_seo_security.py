@@ -27,18 +27,21 @@ SKIP_PAGES = {
     "research.html",
 }
 
-# The CSP policy from docs/security/security-posture.md
+# The CSP policy from docs/security/security-posture.md. Keep this in sync
+# with code/src/site_nav.py; GitHub Pages provides no custom response headers.
 CSP_META = (
     '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; '
     "script-src 'self'; "
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
-    "font-src 'self' https://fonts.gstatic.com; "
+    "style-src 'self' 'unsafe-inline'; "
+    "font-src 'self'; "
     'img-src \'self\' data: https:; '
     "connect-src 'self'; "
+    "frame-src https://www.youtube-nocookie.com; "
     "frame-ancestors 'none'; "
     "base-uri 'self'; "
     'form-action \'self\';">'
 )
+REFERRER_META = '<meta name="referrer" content="strict-origin-when-cross-origin">'
 
 # rel="me" social verification links (same set as index.html head)
 REL_ME_LINKS = """    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -52,6 +55,10 @@ REL_ME_LINKS = """    <link rel="me" href="https://scholar.google.com/citations?
 # hreflang alternate links
 HREFLANG_LINKS = """    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />"""
+EXTERNAL_FONT_LINK = re.compile(
+    r"\s*<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>\s*",
+    re.I,
+)
 
 
 def is_redirect_stub(html: str) -> bool:
@@ -86,13 +93,34 @@ def find_insertion_point(html: str) -> int | None:
 
 
 def add_csp_if_missing(html: str) -> str:
-    """Add CSP meta tag if not present."""
-    if "http-equiv=\"Content-Security-Policy\"" in html:
-        return html
+    """Add or normalize the CSP meta tag."""
+    existing = re.compile(r'<meta\s+http-equiv="Content-Security-Policy"\s+content="[^"]*">', re.I)
+    if existing.search(html):
+        return existing.sub(CSP_META, html, count=1)
     insert_pos = find_insertion_point(html)
     if insert_pos is None:
         return html
     return html[:insert_pos] + "    " + CSP_META + "\n" + html[insert_pos:]
+
+
+def remove_external_font_links(html: str) -> str:
+    """Remove runtime Google Fonts dependencies from public HTML.
+
+    The site intentionally uses the local/system stack now. Removing the
+    preconnect, dns-prefetch, and stylesheet tags also prevents a delayed
+    media-swap script from attempting a blocked third-party font request.
+    """
+    return EXTERNAL_FONT_LINK.sub("\n", html)
+
+
+def add_referrer_policy_if_missing(html: str) -> str:
+    """Add the site-wide cross-origin referrer policy when absent."""
+    if 'name="referrer"' in html.lower():
+        return html
+    insert_pos = find_insertion_point(html)
+    if insert_pos is None:
+        return html
+    return html[:insert_pos] + "    " + REFERRER_META + "\n" + html[insert_pos:]
 
 
 def add_rel_me_if_missing(html: str) -> str:
@@ -124,9 +152,19 @@ def process_file(path: Path) -> dict:
         return {"file": path.name, "skipped": True}
 
     original = html
+    html = remove_external_font_links(html)
+    if html != original:
+        changes.append("external-fonts-removed")
+        original = html
+
     html = add_csp_if_missing(html)
     if html != original:
         changes.append("csp")
+        original = html
+
+    html = add_referrer_policy_if_missing(html)
+    if html != original:
+        changes.append("referrer-policy")
         original = html
 
     html = add_rel_me_if_missing(html)
@@ -146,7 +184,11 @@ def process_file(path: Path) -> dict:
 
 
 def main() -> None:
-    html_files = sorted(REPO_ROOT.glob("*.html"))
+    html_files = sorted(
+        path
+        for path in REPO_ROOT.rglob("*.html")
+        if not ({".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"} & set(path.parts))
+    )
     total_changes = 0
 
     for f in html_files:

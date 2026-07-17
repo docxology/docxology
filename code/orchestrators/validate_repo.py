@@ -41,6 +41,7 @@ REQUIRED_JSON_FILES: list[str] = [
     "data/claims.json",
     "data/resume.json",
     "data/reconciliation.json",
+    "data/agent-index.json",
 ]
 
 OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
@@ -57,6 +58,21 @@ OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
 
 def run(cmd: list[str]) -> None:
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
+
+
+def run_resume_check() -> None:
+    """Use the locked ReportLab environment for byte-for-byte PDF checks.
+
+    ReportLab embeds its own version/vendor string in the PDF header and metadata.
+    The repository pins that dependency in pyproject.toml; invoking the check via
+    uv keeps local and CI validation on the same deterministic runtime instead of
+    accidentally using a globally installed ReportLab version.
+    """
+    subprocess.run(
+        ["uv", "run", "python3", "code/orchestrators/build_resume.py", "--check"],
+        cwd=REPO_ROOT,
+        check=True,
+    )
 
 
 def _load_json_payload(
@@ -249,15 +265,18 @@ def main() -> None:
     run(["python3", "code/orchestrators/sync_software_html.py"])
     run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
     run(["python3", "code/orchestrators/export_agent_data.py", "--check"])
-    run(["python3", "code/orchestrators/build_resume.py", "--check"])
+    run(["python3", "code/orchestrators/build_agent_index.py", "--check"])
+    run_resume_check()
     run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
+    run(["python3", "code/orchestrators/build_video_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_paper_pages.py", "--check"])
     run(["python3", "code/orchestrators/build_catalog.py", "--check"])
     run(["python3", "code/orchestrators/build_exports_page.py", "--check"])
     run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
     run(["python3", "code/orchestrators/build_current_counts.py", "--check"])
+    run(["python3", "code/orchestrators/sync_site_facts.py", "--check"])
     run(["python3", "code/orchestrators/generate_og_images.py", "--check"])
     run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
     run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])

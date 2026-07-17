@@ -33,5 +33,7 @@ Zenodo publication
 
 ## Related
 
+- GitHub release: https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0
+
 - Zenodo record: https://zenodo.org/records/21330636
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

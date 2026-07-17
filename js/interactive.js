@@ -509,6 +509,7 @@
     typeButtons.forEach(function (btn) {
       if (btn.dataset.filterWired) return;
       btn.dataset.filterWired = 'true';
+      btn.setAttribute('aria-pressed', String(btn.classList.contains('active')));
       btn.addEventListener('click', function () {
         const filter = btn.getAttribute('data-type-filter');
         if (!filter) return;
@@ -610,6 +611,7 @@
     domainButtons.forEach(function (btn) {
       if (btn.dataset.filterWired) return;
       btn.dataset.filterWired = 'true';
+      btn.setAttribute('aria-pressed', String(btn.classList.contains('active')));
       btn.addEventListener('click', function () {
         const filter = btn.getAttribute('data-domain-filter');
         if (!filter) return;

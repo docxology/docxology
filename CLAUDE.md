@@ -41,8 +41,8 @@ Python tooling is `uv`-only (never bare `pip`). Everything runs from the repo ro
 uv venv --python 3.12 && uv pip install -e .
 
 # Tests (CI gate):
-uv run pytest code/tests -q
-uv run pytest code/tests/test_seo_invariants.py::test_collect_seo_errors_empty_on_repo -q   # single test
+uv run python3 -m pytest code/tests -q
+uv run python3 -m pytest code/tests/test_seo_invariants.py::test_collect_seo_errors_empty_on_repo -q   # single test
 
 # Validate the generated layer (CI gate — run before declaring work done):
 uv run python3 code/orchestrators/validate_repo.py

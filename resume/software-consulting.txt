@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-07-16T04:35:52Z
+Generated: 2026-07-17T19:38:25Z
 
-Current public metrics: 194 curated works; 95 catalogued software repositories (61 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09.
+Current public metrics: 195 curated works; 96 catalogued software repositories (62 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 344 docxology + 40 AII public repositories (141 primary, 243 forks).
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (187)
+WORKS AND PUBLICATIONS (188)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -243,8 +243,9 @@ WORKS AND PUBLICATIONS (187)
 [193] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139089
 [194] 2026 | Paper | Prior Cognitive Art | Zenodo | 10.5281/zenodo.21316510
 [195] 2026 | Paper | Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations | Zenodo | 10.5281/zenodo.21330636
+[196] 2026 | Paper | Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing | Zenodo | 10.5281/zenodo.21388456
 
-SOFTWARE (95)
+SOFTWARE (96)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -303,6 +304,7 @@ docxology/p3if | Python | https://github.com/docxology/p3if | Properties, Proces
 docxology/service | Python | https://github.com/docxology/service | Service-layer infrastructure and API tooling for Python-based research applications
 docxology/snake | Python | https://github.com/docxology/snake | Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms
 docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+docxology/SynthOBS | Python | https://github.com/docxology/SynthOBS | Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry
 docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533125
 docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
 docxology/symergetics | Python | https://github.com/docxology/symergetics | Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics

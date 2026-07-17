@@ -13,7 +13,8 @@
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
@@ -23,8 +24,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Evidence Ledger — Daniel Ari Friedman">
     <meta property="og:description" content="Claim-level evidence ledger with source links, confidence levels, and caveats.">
@@ -38,9 +38,6 @@
     <meta name="twitter:description" content="Claim-level evidence ledger with source links, confidence levels, and caveats.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <meta name="twitter:image:alt" content="Evidence Ledger — Daniel Ari Friedman">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
@@ -114,45 +111,45 @@
             <div class="section-header"><h2>Claim Register</h2><p>Use this table as an audit trail, not a substitute for primary sources.</p><div class="section-divider"></div></div>
             <div class="claim-grid">
                 <article class="claim-card">
-                    <h3>The curated bibliography contains 194 works.</h3>
+                    <h3>The curated bibliography contains 195 works.</h3>
                     <p>Curated count includes papers, books, presentations, courses, playbooks, and series.</p>
                     <dl>
                         <div><dt>Status</dt><dd>curated-local</dd></div>
                         <div><dt>Confidence</dt><dd>High</dd></div>
-                        <div><dt>Checked</dt><dd>2026-07-16T04:35:51+00:00</dd></div>
+                        <div><dt>Checked</dt><dd>2026-07-17T19:38:25+00:00</dd></div>
                         <div><dt>Owner</dt><dd>ARCHIVIST</dd></div>
                     </dl>
                     <p class="claim-source"><a href="pages/BIBLIOGRAPHY.md">pages/BIBLIOGRAPHY.md</a></p>
                 </article>
                 <article class="claim-card">
-                    <h3>The repository contains 177 per-paper documentation folders.</h3>
+                    <h3>The repository contains 178 per-paper documentation folders.</h3>
                     <p>Not every bibliography row has a paper folder; media/course rows may not.</p>
                     <dl>
                         <div><dt>Status</dt><dd>curated-local</dd></div>
                         <div><dt>Confidence</dt><dd>High</dd></div>
-                        <div><dt>Checked</dt><dd>2026-07-16T04:35:51+00:00</dd></div>
+                        <div><dt>Checked</dt><dd>2026-07-17T19:38:25+00:00</dd></div>
                         <div><dt>Owner</dt><dd>MAINTAINER</dd></div>
                     </dl>
                     <p class="claim-source"><a href="papers/">papers/</a></p>
                 </article>
                 <article class="claim-card">
-                    <h3>The docxology GitHub profile has 340 public repositories.</h3>
+                    <h3>The docxology GitHub profile has 344 public repositories.</h3>
                     <p>GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md.</p>
                     <dl>
                         <div><dt>Status</dt><dd>public-api</dd></div>
                         <div><dt>Confidence</dt><dd>High</dd></div>
-                        <div><dt>Checked</dt><dd>2026-07-10T19:56:35.125748+00:00</dd></div>
+                        <div><dt>Checked</dt><dd>2026-07-17T19:26:38.989818+00:00</dd></div>
                         <div><dt>Owner</dt><dd>INTEGRATOR</dd></div>
                     </dl>
                     <p class="claim-source"><a href="https://api.github.com/users/docxology">https://api.github.com/users/docxology</a></p>
                 </article>
                 <article class="claim-card">
-                    <h3>The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.</h3>
+                    <h3>The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.</h3>
                     <p>Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions.</p>
                     <dl>
                         <div><dt>Status</dt><dd>public-api</dd></div>
                         <div><dt>Confidence</dt><dd>High</dd></div>
-                        <div><dt>Checked</dt><dd>2026-07-10T19:56:35.125748+00:00</dd></div>
+                        <div><dt>Checked</dt><dd>2026-07-17T19:26:38.989818+00:00</dd></div>
                         <div><dt>Owner</dt><dd>INTEGRATOR</dd></div>
                     </dl>
                     <p class="claim-source"><a href="https://api.github.com/users/ActiveInferenceInstitute">https://api.github.com/users/ActiveInferenceInstitute</a></p>
@@ -279,7 +276,7 @@
                     <p class="claim-source"><a href="https://cogsec.org">https://cogsec.org</a></p>
                 </article>
             </div>
-            <p class="text-center mt-2"><a class="btn btn-outline" href="data/claims.json">Claims JSON</a> <a class="btn btn-outline" href="data/reconciliation.json">Reconciliation JSON</a> <a class="btn btn-outline" href="reports/public_source_snapshot_2026-07-10.json">Latest snapshot</a> <a class="btn btn-outline" href="reports/public_source_inventory_2026-07-10.json">Source inventory</a></p>
+            <p class="text-center mt-2"><a class="btn btn-outline" href="data/claims.json">Claims JSON</a> <a class="btn btn-outline" href="data/reconciliation.json">Reconciliation JSON</a> <a class="btn btn-outline" href="reports/public_source_snapshot_2026-07-17.json">Latest snapshot</a> <a class="btn btn-outline" href="reports/public_source_inventory_2026-07-17.json">Source inventory</a></p>
         </section>
     </main>
     <footer role="contentinfo">

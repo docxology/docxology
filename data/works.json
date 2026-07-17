@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T04:35:50Z",
+  "generated_at": "2026-07-17T19:38:24Z",
   "source": "pages/BIBLIOGRAPHY.md",
-  "count": 194,
+  "count": 195,
   "works": [
     {
       "num": 1,
@@ -3103,6 +3103,22 @@
       "url": "https://doi.org/10.5281/zenodo.21330636",
       "doi": "10.5281/zenodo.21330636",
       "docs_path": "papers/2026_ActiveFractalRabbit/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
+    },
+    {
+      "num": 196,
+      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21388456",
+      "doi": "10.5281/zenodo.21388456",
+      "docs_path": "papers/2026_FourfoldVision/",
       "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false

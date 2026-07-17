@@ -160,7 +160,7 @@ def render_page(work: dict) -> str:
     <meta name="twitter:image:alt" content="{h(work['title'])}">
     <style>
         .paper-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
-        .paper-hero h1{{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}}
+        .paper-hero h1{{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}}
         .artifact-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}}
         .artifact-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}}
         .artifact-card strong{{display:block;color:var(--gold);margin-bottom:.25rem}}

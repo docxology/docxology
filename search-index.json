@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T04:47:32Z",
+  "generated_at": "2026-07-17T19:38:31Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1614,
+  "count": 1619,
   "items": [
     {
       "id": "page:home",
@@ -200,13 +200,14 @@
       "id": "page:resume",
       "type": "document",
       "title": "Resume and CV",
-      "url": "/resume/resume.pdf",
-      "summary": "Generated resume/CV PDF, plaintext variants, and structured JSON.",
+      "url": "/resume/resume.html",
+      "summary": "Accessible, no-JavaScript HTML CV with PDF, plaintext, JSON, and verification links.",
       "tags": [
         "resume",
-        "cv"
+        "cv",
+        "accessibility"
       ],
-      "content": "Resume and CV Generated resume/CV PDF, plaintext variants, and structured JSON. resume cv"
+      "content": "Resume and CV Accessible, no-JavaScript HTML CV with PDF, plaintext, JSON, and verification links. resume cv accessibility"
     },
     {
       "id": "page:resume-verify",
@@ -282,7 +283,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-07-10.md",
+      "url": "/reports/reconciliation_2026-07-17.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -294,7 +295,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-07-10.json",
+      "url": "/reports/public_source_inventory_2026-07-17.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -307,7 +308,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-16.json",
+      "url": "/reports/accessibility_static_2026-07-17.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -319,7 +320,7 @@
       "id": "page:visual-qa",
       "type": "report",
       "title": "Visual QA Manifest",
-      "url": "/reports/visual-qa/2026-07-02/manifest.json",
+      "url": "/reports/visual-qa/2026-07-17/manifest.json",
       "summary": "Desktop and mobile Playwright screenshots for key pages.",
       "tags": [
         "visual",
@@ -356,7 +357,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-16.json",
+      "url": "/reports/asset_size_2026-07-17.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -369,7 +370,7 @@
       "id": "page:browser-smoke",
       "type": "report",
       "title": "Browser Smoke Manifest",
-      "url": "/reports/browser-smoke/2026-07-02/manifest.json",
+      "url": "/reports/browser-smoke/2026-07-17/manifest.json",
       "summary": "Selector-based browser smoke checks for core local pages.",
       "tags": [
         "browser",
@@ -382,7 +383,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-07-16.json",
+      "url": "/reports/live_site_verification_2026-07-17.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4964,6 +4965,24 @@
       "content": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations Zenodo 10.5281/zenodo.21330636 Friedman2026ActiveFractalRabbitSyntheticBenchmark195 Cognitive Security Paper Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises pinned open-source software from the National Security Agency as an independent simulator surface. The benchmark converts sporadic reports into categorical evidence, fits explicit hidden-state generative models, and compares transparent temporal, Markov, sequence, state-space, neural, latent-state, and active inference predictors under matched information sets. Under noisy partial-observability, Active Inference is the lowest-loss implemented predictor: it clearly leads point-estimate and raw-ob Zenodo publication zenodo-publication"
     },
     {
+      "id": "work:Friedman2026FourfoldVisionWilliamBlake196",
+      "type": "work",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21388456",
+      "full_text_url": "",
+      "summary": "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualifie",
+      "year": 2026,
+      "domain": "Art & Synergetics",
+      "tags": [
+        "Paper",
+        "Art & Synergetics",
+        "bibliography",
+        "Zenodo publication"
+      ],
+      "content": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing Zenodo 10.5281/zenodo.21388456 Friedman2026FourfoldVisionWilliamBlake196 Art & Synergetics Paper Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualified route through that problem. It places William Blake's fourfold vision beside Buckminster Fuller's Synergetics without claiming shared vocabulary, historical influence, or Blakean anticipation of Quadray: Blake supplies a historically situated problem of plural seeing, while Quadray and tetrahedral geometry supply a reproducible model of relational aspects, partial views, and reconstruction. The formal result is exact: for any non-degenerate convex tetrahedron observed by a strictly exterior camera, one frame exposes 1, 2, or 3 faces, never 4; an atlas can preserve all 4 across successive views. The project combines an argument graph, exact rational geometry, determinist Zenodo publication zenodo-publication"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -5762,6 +5781,20 @@
       "content": "steganographer High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration Rust docxology"
     },
     {
+      "id": "software:docxology:SynthOBS",
+      "type": "software",
+      "title": "SynthOBS",
+      "url": "https://github.com/docxology/SynthOBS",
+      "summary": "Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "SynthOBS Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry Python docxology"
+    },
+    {
       "id": "software:docxology:template_textbook",
       "type": "software",
       "title": "template_textbook",
@@ -6327,6 +6360,22 @@
       "content": "ActiveInferenceInstitute/ActInf_RxInfer Active Inference and RxInfer.jl  ActiveInferenceInstitute  curated recent"
     },
     {
+      "id": "github-repo:ActiveInferenceInstitute/active_fractal_rabbit",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/active_fractal_rabbit",
+      "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
+      "summary": "Active Inference for FractalRabbit",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/active_fractal_rabbit Active Inference for FractalRabbit Python ActiveInferenceInstitute  recent"
+    },
+    {
       "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Ontology",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/Active_Inference_Ontology",
@@ -6342,6 +6391,22 @@
         "recent"
       ],
       "content": "ActiveInferenceInstitute/Active_Inference_Ontology  Python ActiveInferenceInstitute active active-inference inference ontology curated recent"
+    },
+    {
+      "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Un0",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/Active_Inference_Un0",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Un0",
+      "summary": "ActiveInferenceInstitute repository",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/Active_Inference_Un0   ActiveInferenceInstitute  recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveBlockference",
@@ -6959,10 +7024,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/ActiveInferAnts Active InferAnts Python docxology  curated recent"
+      "content": "docxology/ActiveInferAnts Active InferAnts Python docxology  curated"
     },
     {
       "id": "github-repo:docxology/AGEINT",
@@ -7403,10 +7467,9 @@
         "github",
         "repository",
         "",
-        "docxology",
-        "recent"
+        "docxology"
       ],
-      "content": "docxology/dotscope The Physics Engine for AI Coding Agents.  docxology  recent"
+      "content": "docxology/dotscope The Physics Engine for AI Coding Agents.  docxology"
     },
     {
       "id": "github-repo:docxology/ento_linguistics",
@@ -7420,10 +7483,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/ento_linguistics  Python docxology  curated recent"
+      "content": "docxology/ento_linguistics  Python docxology  curated"
     },
     {
       "id": "github-repo:docxology/entofile",
@@ -7709,10 +7771,9 @@
         "github",
         "repository",
         "HTML",
-        "docxology",
-        "recent"
+        "docxology"
       ],
-      "content": "docxology/links  HTML docxology  recent"
+      "content": "docxology/links  HTML docxology"
     },
     {
       "id": "github-repo:docxology/literature",
@@ -8071,6 +8132,23 @@
         "curated"
       ],
       "content": "docxology/symergetics Symbolic Synergetic for Math & Beyond  Python docxology  curated"
+    },
+    {
+      "id": "github-repo:docxology/SynthOBS",
+      "type": "github_repository",
+      "title": "docxology/SynthOBS",
+      "url": "https://github.com/docxology/SynthOBS",
+      "summary": "Golden-ratio (El Gran Sol phi) OBS Studio plugin: live solar-telemetry-driven video/audio transduction + a phi Wavefield Console source, phase-locked to the EGS Gateway.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/SynthOBS Golden-ratio (El Gran Sol phi) OBS Studio plugin: live solar-telemetry-driven video/audio transduction + a phi Wavefield Console source, phase-locked to the EGS Gateway. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template",
@@ -10577,7 +10655,7 @@
         "personal",
         "Art and Synergetics"
       ],
-      "content": "#090 ~ Geometry of the Brain = Topology of the Mind. Personal Channel 2020-04-21 Art and Synergetics QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
+      "content": "#090 ~ Geometry of the Brain = Topology of the Mind. Personal Channel 2020-04-21 Art and Synergetics QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
     },
     {
       "id": "video:personal:mHiTECq6REA",
@@ -12061,7 +12139,7 @@
         "Entomology and Ants",
         "Art and Synergetics"
       ],
-      "content": "Synergetics Livestream #006.0 ~ Synergetics, Wittgenstein, William Blake, Ants Personal Channel 2021-04-21 Entomology and Ants Art and Synergetics William Blake & Buckminster Fuller: Lives in Juxtaposition Synthesis of Agent and Niche Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
+      "content": "Synergetics Livestream #006.0 ~ Synergetics, Wittgenstein, William Blake, Ants Personal Channel 2021-04-21 Entomology and Ants Art and Synergetics William Blake & Buckminster Fuller: Lives in Juxtaposition Synthesis of Agent and Niche Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing"
     },
     {
       "id": "video:personal:NgFsbptawpw",
@@ -12693,7 +12771,7 @@
         "personal",
         "Art and Synergetics"
       ],
-      "content": "Synergetics Livestream #004.0 ~ Reading Synergetics, Odd Ball, Geometry Personal Channel 2021-04-21 Art and Synergetics QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
+      "content": "Synergetics Livestream #004.0 ~ Reading Synergetics, Odd Ball, Geometry Personal Channel 2021-04-21 Art and Synergetics QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value"
     },
     {
       "id": "video:institute:jHWCQ1dpoK0",
@@ -13103,7 +13181,7 @@
         "personal",
         "Art and Synergetics"
       ],
-      "content": "#200 ~ Geometry is Sacred Personal Channel 2021-04-21 Art and Synergetics QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Predictive Processing Interpretation of the Mirror Test"
+      "content": "#200 ~ Geometry is Sacred Personal Channel 2021-04-21 Art and Synergetics QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
     },
     {
       "id": "video:personal:wHzK3Qxf7_M",
@@ -17378,7 +17456,7 @@
         "personal",
         "Art and Synergetics"
       ],
-      "content": "Synergetics Livestream #017.2 ~ William Blake & Buckminster Fuller (Lives in Juxtaposition) Personal Channel 2023-04-21 Art and Synergetics William Blake & Buckminster Fuller: Lives in Juxtaposition Synthesis of Agent and Niche QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic"
+      "content": "Synergetics Livestream #017.2 ~ William Blake & Buckminster Fuller (Lives in Juxtaposition) Personal Channel 2023-04-21 Art and Synergetics William Blake & Buckminster Fuller: Lives in Juxtaposition Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing Synthesis of Agent and Niche QuadMath: An Analytical Review of 4D and Quadray Coordinates"
     },
     {
       "id": "video:institute:mrFZwfYuthk",
@@ -25716,7 +25794,7 @@
         "personal",
         "Art and Synergetics"
       ],
-      "content": "Synergetics Livestream #019.1 ~ Yesterday's visit to the Fuller Chronofile at Stanford University Personal Channel 2025-04-21 Art and Synergetics William Blake & Buckminster Fuller: Lives in Juxtaposition QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
+      "content": "Synergetics Livestream #019.1 ~ Yesterday's visit to the Fuller Chronofile at Stanford University Personal Channel 2025-04-21 Art and Synergetics William Blake & Buckminster Fuller: Lives in Juxtaposition QuadMath: An Analytical Review of 4D and Quadray Coordinates Symergetics: Symbolic Synergetics for Rational Arithmetic Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing"
     },
     {
       "id": "video:institute:q_fAglCMvPw",
@@ -28248,7 +28326,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 194 works.",
+      "title": "The curated bibliography contains 195 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28256,12 +28334,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 194 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 195 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 177 per-paper documentation folders.",
+      "title": "The repository contains 178 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28269,12 +28347,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 177 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 178 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 340 public repositories.",
+      "title": "The docxology GitHub profile has 344 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -28282,12 +28360,12 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 340 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 344 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -28295,7 +28373,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
@@ -28444,14 +28522,17 @@
       "id": "resume:structured-cv",
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
-      "url": "/resume/resume.pdf",
-      "summary": "Structured CV export: 194 works, 95 software rows, education, experience, service, media, and art-use records.",
+      "url": "/resume/resume.html",
+      "summary": "Structured CV export: 195 works, 96 software rows, 384 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",
         "profile",
+        "html",
         "plaintext",
-        "pdf"
+        "pdf",
+        "accessibility",
+        "verification"
       ],
       "content": "Daniel Ari Friedman Computational biologist, Active Inference researcher, cognitive security researcher, educator, and artist Multidisciplinary researcher and open-source builder working across social insect biology, Active Inference, cognitive security, computational frameworks, education, and art. danielarifriedman@gmail.com daniel@activeinference.institute Del Norte Triplicate Active Inference Institute Complexity Adventures COGSEC Stanford Complexity Group Stealth Startup Stealth Startup Remotor fm.analytics Cryptoptera Johnson Lab / Linksvayer Lab Gordon Lab Kopp Lab Pedicab People Movers Stanford University UC Davis University of California, Davis Stanford University University of California, Davis Crystal Springs Uplands School S3E10 The FEP: A Tool for Understanding and Modelling Complex Systems (DIA 1/SESSAO 1) Lancamento do Livro: As Colonias de Formigas Sao Conscientes? From Ants to Active Inference with Daniel Ari Friedman Building Smarter AI: Active Inference and Nested Models Interaction. In Search of Daniel Friedman's Deepest Value Active Inference and The Free Energy Principle with Daniel Friedman Episode 6: Daniel Friedman - Active Inference Institute - What is Active Inference? Artist of Curio Cards 24-26 Shares Incredible Journey through Art and Science What Ant Behavior Reveals About Complexity Science with Daniel Friedman What is Active Inference?...with Daniel Friedman Great discussion with Daniel, OG Curio Card artist, cards 24, 25, 26 Daniel Friedman Interview - Adventures in NFTs #3 Banging the Drum with Daniel Friedman KB7 Fireside: Scaling Principled Games KBCast Episode 7: Kernel Block 5 Week 6 and special guest Daniel Ari Friedman Daniel Friedman Interview - Adventures in NFTs #3 Interview with Monica Kang about Complexity Weekend, with co-founder Shaun Swanson and organizer JP Gonzales Blurb in Science magazine inventing the word disinforge Complexity Weekend featured on InnovatorsBox blog, with quotes from Friedman and others Blurb in Science magazine about rethinking time use for scientists Blurb in Science magazine about what ants can teach human city planners Blurb in Science magazine about time travel Public lecture: Red Vic lecture series, San Francisco. History and philosophy of Art and Biology. Public lecture: Red Vic lecture series, San Francisco. History and philosophy of self-organization, stigmergy, and eusocial insects. Quoted in Dopamine Nation by Dr. Anna Lembke, p. 75: The world is sensory rich and causal poor. No Signal 006: Daniel Ari Friedman and Jakub Smekal || Active Inference Daniel Friedman: Drawing Decentralized Beauty From Biology Written interview with RosyBVM Radio Interview, KPOO 89.5 FM in San Francisco Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board. Co-editor, Field and Laboratory Methods for Modern Entomology. Member (MCybS), Cybernetics Society. Information Professional Association. Active Inference Institute co-founder. Davis Complexity Group. Complexity Adventures co-founder. ALIUS Research Group contributor, editor, and co-organizer. Wonderfest Science Envoy; science outreach and community training. Entomological Society of America. NeuroChoice group, Stanford Neurosciences Institute. Graduate student member of Arts Committee for Stanford Biology department. Stanford Complexity Group. Science Teaching Through Art (STAR) outreach program; poster presentations and conversations about ants at local middle and high schools. Santa Fe Institute Complex Systems Summer School, one-month residential program. Five summers of ant fieldwork during PhD under Prof. Deborah Gordon at Southwestern Research Station, Arizona. Summer field ecology class with Stanford Prof. Rodolfo Dirzo at Las Tuxtlas tropical research station, Mexico. Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville. Drosophila work with Dr. Michael Lang in Arizona. Invited peer reviewer for 1-10 articles per year across different journals. International Union for the Study of Social Insects. Stanford Center for Evolutionary and Human Genomics outreach programs, including teaching genetics in local middle schools and hosting high school students at Stanford. Stanford Bio Core Explorations hands-on lecture/workshop for undergraduates: Art and Biology. Science mentoring at Woodland High School. Drums and percussion for UC Davis production of RENT. Volunteer in emergency room at hospital in Sacramento, four hours per week for six months. Chess Club at UC Davis President (2012-2014), organizing free outdoor chess at the farmer's market twice weekly for two years."
     }

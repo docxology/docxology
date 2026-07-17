@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T04:35:55Z",
+  "generated_at": "2026-07-17T19:38:26Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 194,
+  "count": 195,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3916,6 +3916,18 @@
       ],
       "methods": [],
       "source": "papers/2026_ActiveFractalRabbit/README.md"
+    },
+    "Friedman2026FourfoldVisionWilliamBlake196": {
+      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+      "abstract": "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualified route through that problem. It places William Blake's fourfold vision beside Buckminster Fuller's Synergetics without claiming shared vocabulary, historical influence, or Blakean anticipation of Quadray: Blake supplies a historically situated problem of plural seeing, while Quadray and tetrahedral geometry supply a reproducible model of relational aspects, partial views, and reconstruction. The formal result is exact: for any non-degenerate convex tetrahedron observed by a strictly exterior camera, one frame exposes 1, 2, or 3 faces, never 4; an atlas can preserve all 4 across successive views. The project combines an argument graph, exact rational geometry, determinist",
+      "keywords": [
+        "Zenodo publication"
+      ],
+      "findings": [
+        "zenodo-publication"
+      ],
+      "methods": [],
+      "source": "papers/2026_FourfoldVision/README.md"
     }
   }
 }

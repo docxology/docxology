@@ -189,12 +189,14 @@ Two follow-ups it intentionally leaves to you:
 ```bash
 # 1. When counts changed (a new publication), refresh the live-site snapshot so its
 #    expected_counts match local; otherwise verify_live_site --check reports a mismatch.
-#    overall_ok may be "pending deploy" until GitHub Pages rebuilds — that is fine.
+#    overall_ok may be false while GitHub Pages rebuilds — that is fine when the
+#    report marks a locally-present 404 as deployment_pending or only has stale
+#    content markers. A 4xx/5xx for a route missing locally remains a hard failure.
 GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/verify_live_site.py
 
 # 2. Gates.
 uv run python3 code/orchestrators/validate_repo.py
-uv run pytest code/tests -q
+uv run python3 -m pytest code/tests -q
 ```
 
 The `**N** indexed paper folders` prose count in `pages/BIBLIOGRAPHY.md` is now refreshed

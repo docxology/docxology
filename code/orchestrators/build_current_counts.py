@@ -39,7 +39,7 @@ def _public_source_snapshot_counts(payload: dict) -> dict:
     for label, fact in facts.items():
         if not isinstance(fact, dict):
             continue
-        for key in ("public_repos", "group_count", "count"):
+        for key in ("public_repos", "group_count", "count", "hit_count", "total_results", "total"):
             value = fact.get(key)
             if isinstance(value, int):
                 values[label] = value
@@ -129,7 +129,7 @@ def collect_counts() -> dict:
         },
         "validation": [
             "uv run python3 code/orchestrators/validate_repo.py",
-            "cd code/tests && PYTHONDONTWRITEBYTECODE=1 uv run pytest -q",
+            "PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q",
         ],
     }
 

@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*61 original repositories · 34 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*62 original repositories · 34 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -93,6 +93,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [service](https://github.com/docxology/service) | Service-layer infrastructure and API tooling for Python-based research applications | Python | 0 | 2025-05 |
 | [snake](https://github.com/docxology/snake) | Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms | Python | 0 | 2025-11 |
 | [steganographer](https://github.com/docxology/steganographer) | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration | Rust | 1 | 2026-04 |
+| [SynthOBS](https://github.com/docxology/SynthOBS) | Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry | Python | 0 | 2026-07 |
 | [template_textbook](https://github.com/docxology/template_textbook) | Modular fillable scaffold for book-length technical works · [📄](../papers/2026_TemplateTextbook/) · [Zenodo](https://doi.org/10.5281/zenodo.20533125) | HTML | 0 | 2026-06 |
 | [blake_jiang](https://github.com/docxology/blake_jiang) | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing · [📄](../papers/2026_BlakeJiang/) | Python | 0 | 2026-05 |
 | [symergetics](https://github.com/docxology/symergetics) | Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics | Python | 0 | 2025-09 |
@@ -155,13 +156,13 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 3 | `p3if`, `opentir`, `CogSecSkills` |
-| Developer Tools | 16 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
+| Developer Tools | 17 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
 | Data & Policy | 3 | `hhs-opendata`, `crescent-city`, `grateful_data` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
-| **docxology subtotal** | **61** | |
+| **docxology subtotal** | **62** | |
 | AII Contributions (non-fork) | 34 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **95** | |
+| **Grand Total** | **96** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

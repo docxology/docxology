@@ -251,7 +251,7 @@ docxology/
 - Homepage teaching blurbs: BIOL-1 General Biology — College of the Redwoods, Pelican Bay, Spring 2026; BIOL-8 — Human Biology, College of the Redwoods, Spring 2026.
 - AII Textbook Group site copy: 10 cohorts through 2026; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
 - On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
-- After substantive repo edits, run `uv run pytest` in `code/tests` (Python via `uv`) to confirm the suite still passes.
+- After substantive repo edits, run `uv run python3 -m pytest code/tests -q` (Python via `uv`) to confirm the suite still passes.
 - Prefer full-catalog regeneration of `software.html` from `pages/SOFTWARE.md` (all owned + AII catalog rows, not a highlight subset), mirroring the publications.html / `sync_publications_html.py` pattern.
 
 ## Learned Workspace Facts
@@ -267,7 +267,7 @@ docxology/
 - `ActiveInferenceInstitute` on GitHub is a **User** account (use `https://api.github.com/users/ActiveInferenceInstitute`, not `/orgs/...`); recorded in `organizations.json` as `github_account_type: user`.
 - Independent anchors: AII **EIN 88-2985125** (see [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/882985125)); NSF PRFB **DBI-2010290** (Grantome/NSF record; budgeted 2020–2022, describe 2023 as no-cost extension not a funded year). `pages/VERIFICATION_LOG.md` + `data/verification-log.json` record the 2026-05-16 multi-source pass and should stay paired when updated.
 - College of the Redwoods Spring-2026 teaching (BIOL-1 at Pelican Bay; BIOL-8 Human Biology) is **principal-confirmed instructor-of-record**; do not remove or soften because a public WebAdvisor schedule is not yet visible.
-- Python tooling under `code/`; run `uv run pytest` from `code/tests` and validate with `code/orchestrators/validate_repo.py`. Repo-wide **reports** may fail or warn for CDN latency or bot protection—triage before rewriting site copy. Representative Zenodo anchors: GNN `10.5281/zenodo.19600217`, Journal-Utilities `10.5281/zenodo.18686966`.
+- Python tooling under `code/`; run `uv run python3 -m pytest code/tests -q` and validate with `code/orchestrators/validate_repo.py`. Repo-wide **reports** may fail or warn for CDN latency or bot protection—triage before rewriting site copy. Representative Zenodo anchors: GNN `10.5281/zenodo.19600217`, Journal-Utilities `10.5281/zenodo.18686966`.
 
 ## Imported Claude Cowork project instructions
 

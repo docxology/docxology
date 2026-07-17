@@ -53,7 +53,8 @@ def test_generated_software_surfaces():
     assert "biology_textbook" in html
     assert f"{expected_docx} original repositories" in html
     assert f"{expected_aii} catalogued" in html
-    assert 'src="/data/software-ld.json"' in html
+    assert 'src="/data/software-ld.json"' not in html
+    assert '<script type="application/ld+json">' in html
     og_match = re.search(r'<meta property="og:description" content="([^"]*)">', html)
     twitter_match = re.search(r'<meta name="twitter:description" content="([^"]*)">', html)
     assert og_match and twitter_match

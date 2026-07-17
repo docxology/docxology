@@ -3,7 +3,8 @@
 Rewrite publications.html head meta and data/publications-ld.json from pages/BIBLIOGRAPHY.md.
 
 Catalog table data loads at runtime from data/works.json (see js/publications.js).
-CollectionPage JSON-LD lives in data/publications-ld.json (referenced from publications.html).
+CollectionPage JSON-LD is emitted inline in publications.html and mirrored in
+data/publications-ld.json for agents and downloads.
 
 Usage:
     python3 sync_publications_html.py           # dry-run: validate counts only
@@ -28,7 +29,6 @@ PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
 
 LD_SYNC_BEGIN = "<!-- <PUBLICATIONS_LD_SYNC_BEGIN> -->"
 LD_SYNC_END = "<!-- <PUBLICATIONS_LD_SYNC_END> -->"
-LD_EXTERNAL_SCRIPT = '<script type="application/ld+json" src="/data/publications-ld.json"></script>'
 
 
 def canonical_link_url(link_cell: str, venue: str) -> str:
@@ -190,8 +190,9 @@ def replace_head_meta(html: str, count: int) -> str:
     return html
 
 
-def external_ld_marker_block() -> str:
-    return f"    {LD_SYNC_BEGIN}\n    {LD_EXTERNAL_SCRIPT}\n    {LD_SYNC_END}"
+def inline_ld_marker_block(collection: dict) -> str:
+    payload = json.dumps(collection, indent=4, ensure_ascii=False)
+    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">\n{payload}\n    </script>\n    {LD_SYNC_END}"
 
 
 def remove_inline_collection_ld(html: str) -> str:
@@ -217,10 +218,10 @@ def remove_inline_collection_ld(html: str) -> str:
     return html
 
 
-def replace_inline_collection_ld(html: str) -> str:
-    """Ensure publications.html references external JSON-LD instead of inline mainEntity."""
+def replace_inline_collection_ld(html: str, collection: dict) -> str:
+    """Ensure publications.html contains crawler-visible inline CollectionPage JSON-LD."""
     html = remove_inline_collection_ld(html)
-    marker = external_ld_marker_block()
+    marker = inline_ld_marker_block(collection)
     if LD_SYNC_BEGIN in html and LD_SYNC_END in html:
         return re.sub(
             re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
@@ -228,8 +229,6 @@ def replace_inline_collection_ld(html: str) -> str:
             html,
             count=1,
         )
-    if LD_EXTERNAL_SCRIPT in html:
-        return html
     stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html)
     insert_at = stylesheet_match.start() if stylesheet_match else -1
     if insert_at < 0:
@@ -271,7 +270,7 @@ def main() -> None:
 
     collection = build_collection_page(rows)
     html = PUBLICATIONS_HTML.read_text(encoding="utf-8")
-    html_out = replace_inline_collection_ld(html)
+    html_out = replace_inline_collection_ld(html, collection)
     html_out = replace_head_meta(html_out, len(rows))
 
     if len(collection["mainEntity"]) != len(rows):

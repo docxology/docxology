@@ -25,5 +25,5 @@ Before tagging, run:
 ```bash
 python3 code/orchestrators/validate_repo.py
 git diff --check
-cd code/tests && uv run pytest -q
+uv run python3 -m pytest code/tests -q
 ```

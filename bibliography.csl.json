@@ -4831,5 +4831,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21330636",
     "URL": "https://doi.org/10.5281/zenodo.21330636"
+  },
+  {
+    "id": "Friedman2026FourfoldVisionWilliamBlake196",
+    "type": "article-journal",
+    "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 196; docs: papers/2026_FourfoldVision/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21388456",
+    "URL": "https://doi.org/10.5281/zenodo.21388456"
   }
 ]

@@ -2,12 +2,12 @@
   "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
   "command": "uv run python3 code/orchestrators/build_current_counts.py",
   "counts": {
-    "bibliography_docs_links": 177,
-    "bibliography_works": 194,
+    "bibliography_docs_links": 178,
+    "bibliography_works": 195,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 42,
-      "Art & Synergetics": 15,
+      "Art & Synergetics": 16,
       "Cognitive Security": 32,
       "Computational": 46,
       "Entomology": 23,
@@ -17,27 +17,27 @@
     "extracted_images": 9004,
     "full_text_papers": 173,
     "generated_exports": {
-      "data_publications_ld_main_entity": 194,
-      "data_software_json": 95,
-      "data_software_ld_main_entity": 95,
-      "data_works_json": 194
+      "data_publications_ld_main_entity": 195,
+      "data_software_json": 96,
+      "data_software_ld_main_entity": 96,
+      "data_works_json": 195
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 38,
+      "ActiveInferenceInstitute": 40,
       "archived": 0,
-      "curated": 92,
-      "docxology": 341,
+      "curated": 93,
+      "docxology": 344,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 239,
-      "forks": 241,
-      "primary_ActiveInferenceInstitute": 36,
-      "primary_docxology": 102,
-      "primary_total": 138,
+      "fork_docxology": 241,
+      "forks": 243,
+      "primary_ActiveInferenceInstitute": 38,
+      "primary_docxology": 103,
+      "primary_total": 141,
       "private": 0,
-      "public": 379,
-      "recently_updated": 121,
-      "total": 379,
-      "uncataloged": 287
+      "public": 384,
+      "recently_updated": 122,
+      "total": 384,
+      "uncataloged": 291
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -48,49 +48,53 @@
     "paired_publications": {
       "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 175,
-      "needs_review": 335,
-      "pairs": 375,
-      "strong_pairs": 40,
-      "update_existing": 40,
-      "zenodo_records": 128
+      "github_releases": 20,
+      "needs_review": 63,
+      "pairs": 78,
+      "strong_pairs": 15,
+      "update_existing": 15,
+      "zenodo_records": 132
     },
-    "paper_folder_docs": 177,
+    "paper_folder_docs": 178,
     "papers_with_images": 141,
     "public_source_snapshot": {
-      "GitHub user ActiveInferenceInstitute": 38,
-      "GitHub user docxology": 340,
+      "Crossref ORCID DOI records": 15,
+      "Europe PMC exact author records": 10,
+      "GitHub user ActiveInferenceInstitute": 40,
+      "GitHub user docxology": 344,
       "ORCID work groups": 20,
-      "PubMed exact author records": 8
+      "PubMed exact author records": 8,
+      "Zenodo ORCID-linked records": 130,
+      "Zenodo exact-name creator records": 47
     },
     "software": {
       "active_inference_institute": 34,
-      "curated_total": 95,
-      "docxology_owned": 61
+      "curated_total": 96,
+      "docxology_owned": 62
     },
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 173,
+      "Papers": 174,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2
     }
   },
-  "generated_at": "2026-07-16T04:35:51+00:00",
+  "generated_at": "2026-07-17T19:38:25+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
-    "paired_publications": "reports/paired_publications_2026-07-12.json",
+    "paired_publications": "reports/paired_publications_2026-07-17.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-07-10.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-07-17.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"
   },
   "validation": [
     "uv run python3 code/orchestrators/validate_repo.py",
-    "cd code/tests && PYTHONDONTWRITEBYTECODE=1 uv run pytest -q"
+    "PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q"
   ]
 }

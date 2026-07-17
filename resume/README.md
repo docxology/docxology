@@ -51,5 +51,5 @@ uv run python3 code/orchestrators/build_resume.py --variant teaching-service --f
 ```bash
 uv run python3 code/orchestrators/build_resume.py --check
 uv run python3 code/orchestrators/validate_repo.py
-cd code/tests && uv run pytest -q
+uv run python3 -m pytest code/tests -q
 ```

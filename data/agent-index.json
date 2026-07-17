@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-17T19:38:25+00:00",
+  "canonical_origin": "https://danielarifriedman.com/",
+  "canonical_sources": {
+    "bibliography": "/pages/BIBLIOGRAPHY.md",
+    "software": "/pages/SOFTWARE.md",
+    "claims": "/data/claims.json",
+    "counts": "/data/current-counts.json",
+    "verification": "/pages/VERIFICATION_LOG.md"
+  },
+  "routes": [
+    {
+      "id": "home",
+      "path": "/",
+      "format": "text/html",
+      "kind": "profile"
+    },
+    {
+      "id": "publications",
+      "path": "/publications.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "works",
+      "path": "/works/",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "domains",
+      "path": "/domains.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "software",
+      "path": "/software.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "search",
+      "path": "/search.html",
+      "format": "text/html",
+      "kind": "query",
+      "query": "?q={terms}"
+    },
+    {
+      "id": "discovery",
+      "path": "/discovery.html",
+      "format": "text/html",
+      "kind": "source-map"
+    },
+    {
+      "id": "catalog",
+      "path": "/catalog.html",
+      "format": "text/html",
+      "kind": "data-catalog"
+    },
+    {
+      "id": "agent-index",
+      "path": "/data/agent-index.json",
+      "format": "application/json",
+      "kind": "route-manifest"
+    }
+  ],
+  "datasets": {
+    "works": {
+      "path": "/data/works.json",
+      "count": 195,
+      "schema": "Work"
+    },
+    "software": {
+      "path": "/data/software.json",
+      "count": 96,
+      "schema": "SoftwareRepository"
+    },
+    "artworks": {
+      "path": "/data/artworks.json",
+      "count": 942,
+      "schema": "VisualArtwork"
+    },
+    "videos": {
+      "path": "/data/videos.json",
+      "count": 1127,
+      "schema": "VideoObject"
+    },
+    "search": {
+      "path": "/search-index.json",
+      "count": null,
+      "schema": "SearchResult"
+    },
+    "claims": {
+      "path": "/data/claims.json",
+      "count": null,
+      "schema": "ClaimWithEvidence"
+    }
+  },
+  "counts": {
+    "bibliography_docs_links": 178,
+    "bibliography_works": 195,
+    "domains": {
+      "AII Ecosystem": 6,
+      "Active Inference": 42,
+      "Art & Synergetics": 16,
+      "Cognitive Security": 32,
+      "Computational": 46,
+      "Entomology": 23,
+      "Genetics & Biomedical": 15,
+      "Presentations & Media": 15
+    },
+    "extracted_images": 9004,
+    "full_text_papers": 173,
+    "generated_exports": {
+      "data_publications_ld_main_entity": 195,
+      "data_software_json": 96,
+      "data_software_ld_main_entity": 96,
+      "data_works_json": 195
+    },
+    "github_inventory": {
+      "ActiveInferenceInstitute": 40,
+      "archived": 0,
+      "curated": 93,
+      "docxology": 344,
+      "fork_ActiveInferenceInstitute": 2,
+      "fork_docxology": 241,
+      "forks": 243,
+      "primary_ActiveInferenceInstitute": 38,
+      "primary_docxology": 103,
+      "primary_total": 141,
+      "private": 0,
+      "public": 384,
+      "recently_updated": 122,
+      "total": 384,
+      "uncataloged": 291
+    },
+    "paired_publication_decisions": {
+      "decision": "accept",
+      "groups": 24,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
+      "raw_candidates": 86
+    },
+    "paired_publications": {
+      "already_reviewed": 0,
+      "create_new": 0,
+      "github_releases": 20,
+      "needs_review": 63,
+      "pairs": 78,
+      "strong_pairs": 15,
+      "update_existing": 15,
+      "zenodo_records": 132
+    },
+    "paper_folder_docs": 178,
+    "papers_with_images": 141,
+    "public_source_snapshot": {
+      "Crossref ORCID DOI records": 15,
+      "Europe PMC exact author records": 10,
+      "GitHub user ActiveInferenceInstitute": 40,
+      "GitHub user docxology": 344,
+      "ORCID work groups": 20,
+      "PubMed exact author records": 8,
+      "Zenodo ORCID-linked records": 130,
+      "Zenodo exact-name creator records": 47
+    },
+    "software": {
+      "active_inference_institute": 34,
+      "curated_total": 96,
+      "docxology_owned": 62
+    },
+    "types": {
+      "Books": 5,
+      "Courses": 3,
+      "Papers": 174,
+      "Playbooks": 2,
+      "Presentations": 9,
+      "Series": 2
+    }
+  },
+  "freshness": {
+    "policy": "Use generated_at and checked_at fields; do not infer freshness from page copy.",
+    "volatile_sources": [
+      "data/current-counts.json",
+      "data/scholar-snapshot.json",
+      "data/verification-log.json"
+    ],
+    "verification": "/cite-verify.html"
+  },
+  "query_recipes": {
+    "site_search": "/search.html?q={urlencoded_terms}",
+    "publication_filter": "/publications.html?domain={emoji}&type={type}&year={year}",
+    "work_by_key": "/works/{citation_key}.html",
+    "raw_bibliography": "/pages/BIBLIOGRAPHY.md"
+  },
+  "notes": [
+    "Canonical work URLs use citation_key values and preserve retired numeric gaps.",
+    "Paper-folder pages are documentation mirrors; canonical indexable work pages live under /works/.",
+    "External facts and metrics are evidence-dated; retain caveats when primary verification is incomplete."
+  ]
+}

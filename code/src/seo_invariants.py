@@ -205,6 +205,46 @@ def check_work_descriptions(repo_root: Path) -> list[str]:
     return errors
 
 
+def check_public_html_security(repo_root: Path) -> list[str]:
+    """Check security metadata and crawler-visible JSON-LD across public HTML."""
+    errors: list[str] = []
+    excluded = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"}
+    for path in sorted(repo_root.rglob("*.html")):
+        if excluded.intersection(path.parts):
+            continue
+        text = _read(path)
+        rel = str(path.relative_to(repo_root))
+        if path.name == "googlef0f1a1a4a7ba4be8.html":
+            continue
+        # Redirects, legacy paper folders, and other intentionally non-indexable
+        # documents are allowed to omit the indexable-page security head. Their
+        # canonical/robots policy is checked separately above.
+        robots = _meta_robots(text)
+        if robots and "noindex" in robots:
+            continue
+        if 'http-equiv="Content-Security-Policy"' not in text:
+            errors.append(f"{rel}: missing CSP meta policy")
+        else:
+            match = re.search(r'http-equiv="Content-Security-Policy"\s+content="([^"]+)"', text, re.I)
+            policy = match.group(1) if match else ""
+            if "frame-src https://www.youtube-nocookie.com" not in policy:
+                errors.append(f"{rel}: CSP missing YouTube frame-src allowlist")
+            if "fonts.googleapis.com" in policy or "fonts.gstatic.com" in policy:
+                errors.append(f"{rel}: CSP retains removed runtime font provider")
+        if 'name="referrer"' not in text:
+            errors.append(f"{rel}: missing referrer policy")
+        if re.search(r'<script\s+type=["\']application/ld\+json["\'][^>]*\ssrc=', text, re.I):
+            errors.append(f"{rel}: JSON-LD must be inline, not external script src")
+        for iframe in re.findall(r"<iframe\b[^>]*>", text, re.I):
+            src = re.search(r'\bsrc="([^"]+)"', iframe, re.I)
+            if src and "youtube-nocookie.com" in src.group(1):
+                if 'referrerpolicy="strict-origin-when-cross-origin"' not in iframe:
+                    errors.append(f"{rel}: YouTube iframe missing referrerpolicy")
+                if 'title="' not in iframe:
+                    errors.append(f"{rel}: iframe missing accessible title")
+    return errors
+
+
 def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     root = repo_root or REPO_ROOT
     errors: list[str] = []
@@ -214,4 +254,5 @@ def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     errors.extend(check_sitemap_policy(root))
     errors.extend(check_social_meta(root))
     errors.extend(check_work_descriptions(root))
+    errors.extend(check_public_html_security(root))
     return errors

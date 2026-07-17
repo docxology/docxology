@@ -16,11 +16,11 @@
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
     <!-- Resource hints -->
     <link rel="prefetch" href="/search-index.json" as="fetch" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="me" href="https://github.com/docxology">
-    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
+
+<link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta name="referrer" content="strict-origin-when-cross-origin">
+
 
 
     <meta name="revised" content="2026-07-05">
@@ -37,10 +37,9 @@
     <meta name="twitter:description" content="Search works, software, research domains, collaborators, evidence, and public metadata.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
     <meta name="twitter:image:alt" content="Search — Daniel Ari Friedman">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" data-media-swap="all">
-    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+
+
+<link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <script type="application/ld+json">
     {
@@ -123,7 +122,11 @@
             <input id="q" class="search-input" type="search" aria-label="Search publications and works" autocomplete="off" placeholder="Search Active Inference, ants, Curio Cards, CEREBRUM..." autofocus>
             <div id="filters" class="search-controls" aria-label="Result type filters"></div>
         </section>
-        <section class="result-list" id="results" aria-live="polite"></section>
+        <section class="result-list" id="results" aria-live="polite" aria-busy="true" aria-label="Search results"></section>
+        <noscript>
+            <p class="no-results">JavaScript is disabled. Use the <a href="data/catalog.json">data catalog</a>,
+                <a href="works/">canonical works</a>, or <a href="search-index.json">search index JSON</a>.</p>
+        </noscript>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>

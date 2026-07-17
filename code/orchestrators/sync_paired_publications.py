@@ -393,6 +393,34 @@ def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_R
     return actions
 
 
+def ordered_apply_pairs(
+    actions: list[SyncAction], pairs: list[PublicationPair]
+) -> list[tuple[SyncAction, PublicationPair]]:
+    """Return writable pairs in a deterministic, version-safe order.
+
+    GitHub returns releases newest-first, while a single Zenodo concept DOI can
+    be paired with several releases in one scan. Applying that API order could
+    leave ``metadata.json`` pointing at an older release after a newer one had
+    already been applied. Grouping by DOI and sorting by release timestamp/tag
+    makes the newest observed release the final metadata writer while retaining
+    all release links in the folder.
+    """
+    candidates = [
+        (action, pair)
+        for action, pair in zip(actions, pairs)
+        if action.action_type in {"create_new", "update_existing"}
+    ]
+    return sorted(
+        candidates,
+        key=lambda item: (
+            item[1].doi.lower(),
+            item[1].release.published_at or "",
+            item[1].release.tag or "",
+            item[1].github_release_url,
+        ),
+    )
+
+
 def _safe_read(path: Path) -> str:
     return path.read_text(encoding="utf-8") if path.exists() else ""
 
@@ -861,9 +889,7 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit(f"Refusing to write paired publication report with API warnings: {len(warnings)}")
 
     if args.apply:
-        for action, pair in zip(actions, pairs):
-            if action.action_type not in {"create_new", "update_existing"}:
-                continue
+        for action, pair in ordered_apply_pairs(actions, pairs):
             item = apply_publication_pair(
                 pair,
                 download_files=not args.no_download_files,

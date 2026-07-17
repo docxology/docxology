@@ -62,16 +62,14 @@
     }
   ],
   "github_repo": "docxology/template-pitch-deck",
-  "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
-  "release_tag": "v1.0.0",
-  "release_name": "v1.0.0 — Reproducible, Validated Pitch-Deck Generation",
+  "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+  "release_tag": "v1.0.2",
+  "release_name": "v1.0.2",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
-    "zenodo_related_identifier_mentions_release",
-    "github_repo_self_linked",
-    "title_overlap"
+    "github_repo_self_linked"
   ],
-  "checked_at": "2026-07-12T02:38:52Z"
+  "checked_at": "2026-07-17T18:59:15Z"
 }

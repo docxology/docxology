@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-07-16T04:35:52Z",
+  "generated_at": "2026-07-17T19:38:25Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
     "data/software.json",
     "data/scholar-snapshot.json",
-    "data/claims.json"
+    "data/claims.json",
+    "data/github-repositories.json"
   ],
   "profile": {
     "name": "Daniel Ari Friedman",
@@ -33,9 +34,9 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 194,
-    "software_catalogued": 95,
-    "owned_software_catalogued": 61,
+    "works": 195,
+    "software_catalogued": 96,
+    "owned_software_catalogued": 62,
     "aii_software_catalogued": 34,
     "google_scholar": {
       "citations": 777,
@@ -46,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 340 public repositories.",
+      "claim": "The docxology GitHub profile has 344 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-10.json"
+        "reports/public_source_snapshot_2026-07-17.json"
       ],
-      "checked_at": "2026-07-10T19:56:35.125748+00:00",
+      "checked_at": "2026-07-17T19:26:38.989818+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -60,18 +61,68 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-10.json"
+        "reports/public_source_snapshot_2026-07-17.json"
       ],
-      "checked_at": "2026-07-10T19:56:35.125748+00:00",
+      "checked_at": "2026-07-17T19:26:38.989818+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions."
+    },
+    "github_inventory": {
+      "generated_at": "2026-07-17T19:27:22Z",
+      "source": "GitHub REST API /users/{owner}/repos",
+      "total": 384,
+      "public": 384,
+      "primary_total": 141,
+      "forks": 243,
+      "docxology": 344,
+      "ActiveInferenceInstitute": 40
     }
+  },
+  "integrity": {
+    "schema_version": 1,
+    "source_manifest": {
+      "bytes": 736,
+      "sha256": "5845d77d9faf167c77f08c6dfafdab8e03590658d12487219b33f13ace54101f",
+      "files": [
+        {
+          "path": "resume/source.json",
+          "bytes": 58731,
+          "sha256": "a406f7aacd841bf0b90039b4a28b05d1963a89059ecac4d6489b5c07eebf623a"
+        },
+        {
+          "path": "data/works.json",
+          "bytes": 107248,
+          "sha256": "4d58bb7b662ab5d6e81a17010151fc43d96b4b53936f7738d08583e209da2e4d"
+        },
+        {
+          "path": "data/software.json",
+          "bytes": 46947,
+          "sha256": "53c0a3f415e09abfc48365af85f6012b4e43839f6e1c3fcd51be0671dfc922ac"
+        },
+        {
+          "path": "data/scholar-snapshot.json",
+          "bytes": 1973,
+          "sha256": "83f065bc6eac1aded5cae8de4249ab4fb76940612a59010526412c29025cdb90"
+        },
+        {
+          "path": "data/claims.json",
+          "bytes": 11846,
+          "sha256": "9823d38bede35e9bab4cb085546db63d7f2752e81e6c9452840621b9b435ccf3"
+        },
+        {
+          "path": "data/github-repositories.json",
+          "bytes": 328420,
+          "sha256": "ca5e1439196a4bbeaa15a0ee553831a2549f0e0794e134dc3dc1ae79e601babc"
+        }
+      ]
+    },
+    "policy": "All counts and volatile metrics are merged from canonical generated inputs; verify hashes before reuse."
   },
   "education": [
     {
@@ -5362,6 +5413,22 @@
       "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false
+    },
+    {
+      "num": 196,
+      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21388456",
+      "doi": "10.5281/zenodo.21388456",
+      "docs_path": "papers/2026_FourfoldVision/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
     }
   ],
   "software": [
@@ -6050,6 +6117,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "SynthOBS",
+      "url": "https://github.com/docxology/SynthOBS",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "template_textbook",
       "url": "https://github.com/docxology/template_textbook",
       "owner": "docxology",
@@ -6509,14 +6588,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 194 works.",
+      "claim": "The curated bibliography contains 195 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-16T04:35:51+00:00",
+      "checked_at": "2026-07-17T19:38:25+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6524,14 +6603,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 177 per-paper documentation folders.",
+      "claim": "The repository contains 178 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-16T04:35:51+00:00",
+      "checked_at": "2026-07-17T19:38:25+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -6539,13 +6618,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 340 public repositories.",
+      "claim": "The docxology GitHub profile has 344 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-10.json"
+        "reports/public_source_snapshot_2026-07-17.json"
       ],
-      "checked_at": "2026-07-10T19:56:35.125748+00:00",
+      "checked_at": "2026-07-17T19:26:38.989818+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -6553,13 +6632,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 38 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-10.json"
+        "reports/public_source_snapshot_2026-07-17.json"
       ],
-      "checked_at": "2026-07-10T19:56:35.125748+00:00",
+      "checked_at": "2026-07-17T19:26:38.989818+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

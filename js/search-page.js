@@ -27,8 +27,10 @@ const state = { items: [], type: 'all', q: '' };
             }).join('');
             filters.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
                 state.type = btn.dataset.type;
+                filters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
                 render();
             }));
+            filters.querySelectorAll('button').forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.type === state.type)));
         }
 
         function render(){
@@ -46,6 +48,9 @@ const state = { items: [], type: 'all', q: '' };
                 const badgeHtml = badges.length ? `<div class="result-badges">${badges.join('')}</div>` : '';
                 return `<article class="result-card"><h2><a href="${esc(item.url)}">${esc(item.title)}</a></h2><p>${esc(item.summary || '')}</p><div class="result-meta"><span>${esc(item.type)}</span>${item.year ? `<span>${esc(item.year)}</span>` : ''}${tags}</div>${badgeHtml}</article>`;
             }).join('') || '<p class="text-center text-muted mt-2">No results.</p>';
+            results.setAttribute('aria-live', 'polite');
+            results.setAttribute('aria-busy', 'false');
+            results.setAttribute('aria-label', `${matches.length} search results`);
             const url = new URL(location.href);
             if (state.q) url.searchParams.set('q', state.q); else url.searchParams.delete('q');
             history.replaceState(null, '', url);
@@ -65,4 +70,6 @@ const state = { items: [], type: 'all', q: '' };
             })
             .catch(() => {
                 results.innerHTML = '<p class="text-center text-muted mt-2">Search index unavailable.</p>';
+                results.setAttribute('role', 'alert');
+                results.setAttribute('aria-busy', 'false');
             });

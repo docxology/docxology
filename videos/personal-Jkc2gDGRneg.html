@@ -10,7 +10,8 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/videos.json" title="Video metadata JSON">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
@@ -20,8 +21,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="video.other">
     <meta property="og:title" content="#006 ~ Drawing | Personal Channel">
     <meta property="og:description" content="Video metadata, YouTube link, related papers, and topic routes for #006 ~ Drawing (Personal Channel, 2019-04-21). Topics: Art and Synergetics.">
@@ -118,10 +118,12 @@
             <a href="../domains.html">Domains</a>
             <a href="../software.html">Software</a>
             <a href="../videos.html" class="active">Videos</a>
+            <a href="../resume/resume.html">CV</a>
             <a href="../search.html">Search</a>
             <a href="../catalog.html">Data Catalog</a>
             <a href="../cite-verify.html">Cite</a>
             <a href="../discovery.html">Discovery</a>
+            <a href="../data/agent-index.json">Agent Map</a>
         </div>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -137,7 +139,7 @@
         <section class="section video-layout">
             <div>
                 <div class="video-embed">
-                    <iframe src="https://www.youtube-nocookie.com/embed/Jkc2gDGRneg" title="#006 ~ Drawing" loading="lazy" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/Jkc2gDGRneg" title="#006 ~ Drawing" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <p class="section-note"><a href="https://www.youtube.com/watch?v=Jkc2gDGRneg">Open on YouTube</a> - <a href="https://www.youtube.com/@danielarifriedman">Personal Channel</a> - <a href="../videos.html">interactive timeline</a></p>
             </div>

@@ -33,6 +33,7 @@ PAGES = [
     ("catalog", "catalog.html", ".catalog-card"),
     ("updates", "updates.html", ".update-card"),
     ("art", "art.html", ".art-card"),
+    ("videos", "videos.html", ".video-topic-panel"),
 ]
 
 
@@ -69,7 +70,6 @@ def run_smoke() -> dict:
         for name, rel, selector in PAGES:
             out = OUT_DIR / f"{name}.png"
             cmd = [
-                "npx",
                 "playwright",
                 "screenshot",
                 "--browser=chromium",
@@ -77,6 +77,8 @@ def run_smoke() -> dict:
                 "--viewport-size=1100,850",
                 "--wait-for-selector",
                 selector,
+                "--wait-for-timeout",
+                "500",
                 "--timeout=15000",
                 f"{base}/{rel}",
                 str(out),
@@ -95,7 +97,7 @@ def run_smoke() -> dict:
             )
         manifest = {
             "generated_at": generated_timestamp(),
-            "tool": "npx playwright screenshot",
+            "tool": "playwright screenshot",
             "note": "Selector-based smoke checks for core local site behavior.",
             "passing": sum(1 for item in checks if item["ok"]),
             "count": len(checks),

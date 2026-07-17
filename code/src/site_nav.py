@@ -7,19 +7,23 @@ import json
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
-# Content-Security-Policy meta tag (deployed on all indexable pages).
-# script-src 'self' blocks inline event handlers and inline <script> blocks.
+# Content-Security-Policy meta tag (deployed on all public pages). GitHub Pages
+# does not allow custom response headers, so this meta policy is the strongest
+# site-local enforcement layer.
 CSP_META_TAG = (
     '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; '
     "script-src 'self'; "
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
-    "font-src 'self' https://fonts.gstatic.com; "
+    "style-src 'self' 'unsafe-inline'; "
+    "font-src 'self'; "
     'img-src \'self\' data: https:; '
     "connect-src 'self'; "
+    "frame-src https://www.youtube-nocookie.com; "
     "frame-ancestors 'none'; "
     "base-uri 'self'; "
     'form-action \'self\';">'
 )
+
+REFERRER_POLICY_META = '<meta name="referrer" content="strict-origin-when-cross-origin">'
 
 # rel="me" social verification links (same set as index.html head).
 REL_ME_LINKS = (
@@ -43,10 +47,10 @@ HREFLANG_LINKS = (
 # in generated HTML templates.
 HEAD_EXTRAS = (
     f"    {CSP_META_TAG}\n"
+    f"    {REFERRER_POLICY_META}\n"
     f"{REL_ME_LINKS}\n"
     f"{HREFLANG_LINKS}\n"
-    '    <link rel="dns-prefetch" href="https://fonts.googleapis.com">\n'
-    '    <link rel="dns-prefetch" href="https://fonts.gstatic.com">'
+    '    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">'
 )
 
 # Shared mobile-menu Escape-to-close handler — moved to external JS file
@@ -169,10 +173,12 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
         ("domains", f"{prefix}domains.html", "Domains"),
         ("software", f"{prefix}software.html", "Software"),
         ("videos", f"{prefix}videos.html", "Videos"),
+        ("resume", f"{prefix}resume/resume.html", "CV"),
         ("search", f"{prefix}search.html", "Search"),
         ("catalog", f"{prefix}catalog.html", "Data Catalog"),
         ("cite", f"{prefix}cite-verify.html", "Cite"),
         ("discovery", f"{prefix}discovery.html", "Discovery"),
+        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),
     ]
     parts = [
         f'    <nav role="navigation" aria-label="Main navigation">',
@@ -197,11 +203,13 @@ def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
         ("publications", f"{prefix}publications.html", "Publications"),
         ("domains", f"{prefix}domains.html", "Domains"),
         ("software", f"{prefix}software.html", "Software"),
+        ("resume", f"{prefix}resume/resume.html", "CV"),
         ("search", f"{prefix}search.html", "Search"),
         ("catalog", f"{prefix}catalog.html", "Data Catalog"),
         ("cite", f"{prefix}cite-verify.html", "Cite"),
         ("discovery", f"{prefix}discovery.html", "Discovery"),
         ("media", f"{prefix}media.html", "Media"),
+        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),
     ]
     parts = [
         '    <nav role="navigation" aria-label="Main navigation">',
@@ -225,9 +233,11 @@ def render_nav_compact(*, depth: int = 1) -> str:
         f'<div class="nav-links">'
         f'<a href="{prefix}publications.html">Publications</a>'
         f'<a href="{prefix}domains.html">Domains</a>'
+        f'<a href="{prefix}resume/resume.html">CV</a>'
         f'<a href="{prefix}search.html">Search</a>'
         f'<a href="{prefix}catalog.html">Data Catalog</a>'
         f'<a href="{prefix}cite-verify.html">Cite</a>'
         f'<a href="{prefix}discovery.html">Discovery</a>'
+        f'<a href="{prefix}data/agent-index.json">Agent Map</a>'
         f"</div></nav>"
     )

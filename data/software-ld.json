@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "61 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "62 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -645,6 +645,17 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Rust"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "SynthOBS",
+            "description": "Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry",
+            "codeRepository": "https://github.com/docxology/SynthOBS",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
         },
         {
             "@type": "SoftwareSourceCode",

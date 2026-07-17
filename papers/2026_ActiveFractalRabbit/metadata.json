@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises pinned open-source software from the National Security Agency as an independent simulator surface. The benchmark converts sporadic reports into categorical evidence, fits explicit hidden-state generative models, and compares transparent temporal, Markov, sequence, state-space, neural, latent-state, and active inference predictors under matched information sets. Under noisy partial-observability, Active Inference is the lowest-loss implemented predictor: it clearly leads point-estimate and raw-observation families and sits in a statistical tie with the strongest non-AIF belief-preserving comparator. The shared mechanism is soft Bayesian marginalization, which preserves probability across plausible cells instead of committing early to one state. Point estimates suffice for clean observations, an online base-rate predictor leads under regime switching, transparent temporal and disclosed kinematic controls anchor sparse reporting gaps, and withholding location sharply limits specific-cell recovery from metadata. The partially observable Markov decision process (POMDP) formulation also exposes variational and expected-free-energy diagnostics for belief, minimization, and integrity. These results establish a regime-specific synthetic model map and a reproducible evidence chain. The present contract covers synthetic software behavior; separate evidence protocols govern privacy and empirical evaluation. Code, fixtures, manuscript source, and the release manifest are public at github.com/ActiveInferenceInstitute/active_fractal_rabbit (https://github.com/ActiveInferenceInstitute/active_fractal_rabbit).",
+  "description": "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises pinned open-source software from the National Security Agency as an independent simulator surface. The benchmark converts sporadic reports into categorical evidence, fits explicit hidden-state generative models, and compares transparent temporal, Markov, sequence, state-space, neural, latent-state, and active inference predictors under matched information sets. Under noisy partial-observability, Active Inference is the lowest-loss implemented predictor: it clearly leads point-estimate and raw-observation families and sits in a statistical tie with the strongest non-AIF belief-preserving comparator. The shared mechanism is soft Bayesian marginalization, which preserves probability across plausible cells instead of committing early to one state. Point estimates suffice for clean observations, an online base-rate predictor leads under regime switching, transparent temporal and disclosed kinematic controls anchor sparse reporting gaps, and withholding location sharply limits specific-cell recovery from metadata. The partially observable Markov decision process (POMDP) formulation also exposes variational and expected-free-energy diagnostics for belief, minimization, and integrity. These results establish a regime-specific synthetic model map and a reproducible evidence chain. The present contract covers synthetic software behavior; separate evidence protocols govern privacy and empirical evaluation. Code, fixtures, manuscript source, and the release manifest are public at github.com/ActiveInferenceInstitute/active_fractal_rabbit (https://github.com/ActiveInferenceInstitute/active_fractal_rabbit).\n\n---\nAssociated artifacts\nGitHub release: v0.2.0 (https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0)\nDOI: https://doi.org/10.5281/zenodo.21330636\nZenodo: https://zenodo.org/records/21330636\nPDF SHA-256: d676159d149a12a1e990457329ad4cf52d2d8ab4ffcf09f55b42bad8e0c3c052",
   "keywords": [],
   "files": [
     {
@@ -28,8 +28,25 @@
       "download_url": "https://zenodo.org/api/records/21330637/files/Friedman_2026_Active_d676159d.pdf/content"
     }
   ],
-  "related_resources": [],
-  "github_repo": "",
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit"
+    }
+  ],
+  "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
   "source": "zenodo-only",
-  "checked_at": "2026-07-16T04:35:16Z"
+  "checked_at": "2026-07-17T18:59:15Z",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
+  "release_tag": "v0.2.0",
+  "release_name": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations (v0.2.0)",
+  "pdf_sha256": "d676159d149a12a1e990457329ad4cf52d2d8ab4ffcf09f55b42bad8e0c3c052",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "github_release_mentions_zenodo_record",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ]
 }

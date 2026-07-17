@@ -50,7 +50,8 @@ def test_generated_publications_surfaces():
     rows = load_rows()
     html = PUBLICATIONS_HTML.read_text(encoding="utf-8")
     assert f"{len(rows)} Research Works" in html
-    assert 'src="/data/publications-ld.json"' in html
+    assert '<script type="application/ld+json">' in html
+    assert 'src="/data/publications-ld.json"' not in html
     og_match = re.search(r'<meta property="og:title" content="([^"]*)">', html)
     twitter_match = re.search(r'<meta name="twitter:title" content="([^"]*)">', html)
     assert og_match and twitter_match

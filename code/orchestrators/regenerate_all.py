@@ -51,12 +51,17 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("sync_publications_html.py", ["--apply"]),  # publications.html + -ld   <- works.json
     ("sync_software_html.py", ["--apply"]),      # software.html + -ld       <- pages/SOFTWARE.md
     ("build_current_counts.py", []),             # current-counts.{json,md}  <- works + software
+    ("sync_scholar_metrics.py", []),             # dated Scholar snapshot -> hand-authored surfaces
+    ("sync_site_facts.py", []),                  # volatile counts/dates in hand-authored surfaces
     ("generate_og_images.py", []),               # og-*.jpg + counts sidecar <- current-counts.json
     ("export_agent_data.py", []),                # claims/people/orgs        <- counts
+    ("build_agent_index.py", []),                # stable agent route/schema map
     ("build_resume.py", ["--all"]),              # resume.{json,txt,pdf}     <- claims + counts
     ("build_domain_pages.py", []),
     ("build_work_pages.py", []),
+    ("build_video_pages.py", []),
     ("build_paper_pages.py", []),
+    ("deploy_seo_security.py", []),         # CSP/referrer/agent metadata on public HTML
     ("build_exports_page.py", []),
     ("build_updates_page.py", []),
     ("build_evidence_page.py", []),              # evidence.html + EVIDENCE.md <- claims.json
@@ -76,7 +81,11 @@ CHAIN: list[tuple[str, list[str]]] = [
 
 
 def _run(script: str, args: list[str]) -> None:
-    cmd = [sys.executable, f"code/orchestrators/{script}", *args]
+    # ReportLab is pinned in pyproject.toml for byte-identical PDFs. Use the
+    # locked uv environment for the CV generator even when this driver is
+    # launched with a different system Python.
+    interpreter = ["uv", "run", "python3"] if script == "build_resume.py" else [sys.executable]
+    cmd = [*interpreter, f"code/orchestrators/{script}", *args]
     print(f"\n=== {script} {' '.join(args)} ".rstrip().ljust(72, "="))
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
 

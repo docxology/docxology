@@ -17,3 +17,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/21330636"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0"
+    description: "GitHub release"

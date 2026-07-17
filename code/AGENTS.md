@@ -9,7 +9,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: fetch tabs, normalize records, save JSON |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
 | `src/publication_pairing.py` | Normalize GitHub release and Zenodo record metadata; classify paired publication evidence, type, and domain; render README/AGENTS/SKILL/CITATION.cff templates |
-| `src/resume_data.py` | Load, clean, validate, merge, and render structured resume/CV data |
+| `src/resume_data.py` | Load, clean, validate, merge, and render structured resume/CV data, including deterministic source manifests and GitHub inventory metrics |
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
@@ -17,7 +17,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` (`--fast` merges flat-playlist refreshes with cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
-| `orchestrators/build_resume.py` | Generate `data/resume.json`, plaintext resume variants, and `resume/resume.pdf` |
+| `orchestrators/build_resume.py` | Generate `data/resume.json`, a no-JavaScript semantic HTML CV, plaintext variants, verified PDF, and `resume/verify.html` |
 | `orchestrators/generate_og_images.py` | Generate `og-*.jpg` Open Graph previews with live counts from `data/current-counts.json` (`--check` validates against `data/og-image-counts.json`) |
 | `orchestrators/sync_paired_publications.py` | Dry-run/apply checker for paired GitHub release + Zenodo DOI publications |
 | `orchestrators/add_zenodo_only.py` | Backfill real Zenodo publication records that have no paired GitHub release |
@@ -80,7 +80,7 @@ Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency
 From repo root:
 
 ```bash
-cd code/tests && uv run pytest -q
+uv run python3 -m pytest code/tests -q
 uv run python3 code/orchestrators/validate_repo.py
 ```
 

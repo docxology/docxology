@@ -565,7 +565,7 @@ def render_video_page(video: dict) -> str:
         <section class="section video-layout">
             <div>
                 <div class="video-embed">
-                    <iframe src="{h(video['embed_url'])}" title="{h(video['title'])}" loading="lazy" allowfullscreen></iframe>
+                    <iframe src="{h(video['embed_url'])}" title="{h(video['title'])}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <p class="section-note"><a href="{h(video['youtube_url'])}">Open on YouTube</a> - <a href="{h(video['channel_url'])}">{h(video['channel_label'])}</a> - <a href="../videos.html">interactive timeline</a></p>
             </div>

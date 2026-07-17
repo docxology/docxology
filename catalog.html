@@ -12,7 +12,8 @@
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/data/catalog.json" title="Data catalog JSON">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
@@ -22,8 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
     <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Data Catalog — Daniel Ari Friedman">
     <meta property="og:description" content="Structured JSON datasets for the public research and software index.">
@@ -53,14 +53,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-07-16",
+  "dateModified": "2026-07-17",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "194 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "195 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -106,7 +106,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "95 catalogued software repositories across docxology and AII contributions.",
+      "description": "96 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -244,7 +244,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#resume",
       "name": "Structured Resume and CV",
-      "description": "Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records.",
+      "description": "Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records.",
       "url": "https://danielarifriedman.com/data/resume.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -261,6 +261,29 @@
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/resume.json",
         "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#resume-html",
+      "name": "Accessible HTML CV",
+      "description": "No-JavaScript semantic CV view with keyboard-friendly headings, lists, links, current generated counts, and format alternatives.",
+      "url": "https://danielarifriedman.com/resume/resume.html",
+      "encodingFormat": "text/html",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/resume/resume.html",
+        "encodingFormat": "text/html"
       }
     },
     {
@@ -329,6 +352,29 @@
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/current-counts.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#agent-index",
+      "name": "Agent Route Manifest",
+      "description": "Stable machine-readable route map, dataset schemas, freshness policy, counts, and query recipes.",
+      "url": "https://danielarifriedman.com/data/agent-index.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/agent-index.json",
         "encodingFormat": "application/json"
       }
     },
@@ -429,7 +475,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-07-10.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-07-17.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -443,7 +489,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-07-10.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-07-17.json",
         "encodingFormat": "application/json"
       }
     },
@@ -452,7 +498,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-10.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-17.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -466,7 +512,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-10.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-17.json",
         "encodingFormat": "application/json"
       }
     },
@@ -544,7 +590,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-07-16.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-07-17.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -558,7 +604,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-07-16.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-07-17.json",
         "encodingFormat": "application/json"
       }
     },
@@ -567,7 +613,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-07-02/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-07-17/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -581,7 +627,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-07-02/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-07-17/manifest.json",
         "encodingFormat": "application/json"
       }
     },
@@ -590,7 +636,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-07-16.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-07-17.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -604,7 +650,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-07-16.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-07-17.json",
         "encodingFormat": "application/json"
       }
     }
@@ -648,7 +694,7 @@
     <main id="main" class="main"><section class="section"><div class="catalog-grid">
                 <article class="catalog-card" id="works">
                     <h2><a href="data/works.json">Curated Works Bibliography</a></h2>
-                    <p>194 bibliography rows with citation keys, DOI links, domains, and documentation paths.</p>
+                    <p>195 bibliography rows with citation keys, DOI links, domains, and documentation paths.</p>
                     <span>data/works.json</span>
                 </article>
                 <article class="catalog-card" id="artworks">
@@ -658,7 +704,7 @@
                 </article>
                 <article class="catalog-card" id="software">
                     <h2><a href="data/software.json">Software Catalog</a></h2>
-                    <p>95 catalogued software repositories across docxology and AII contributions.</p>
+                    <p>96 catalogued software repositories across docxology and AII contributions.</p>
                     <span>data/software.json</span>
                 </article>
                 <article class="catalog-card" id="github-repositories">
@@ -688,8 +734,13 @@
                 </article>
                 <article class="catalog-card" id="resume">
                     <h2><a href="data/resume.json">Structured Resume and CV</a></h2>
-                    <p>Merged resume/CV data with contact, education, experience, works, software, service, media, and art-use records.</p>
+                    <p>Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records.</p>
                     <span>data/resume.json</span>
+                </article>
+                <article class="catalog-card" id="resume-html">
+                    <h2><a href="resume/resume.html">Accessible HTML CV</a></h2>
+                    <p>No-JavaScript semantic CV view with keyboard-friendly headings, lists, links, current generated counts, and format alternatives.</p>
+                    <span>resume/resume.html</span>
                 </article>
                 <article class="catalog-card" id="resume-verify">
                     <h2><a href="resume/verify.html">Resume Verification Page</a></h2>
@@ -705,6 +756,11 @@
                     <h2><a href="data/current-counts.json">Current Counts Snapshot</a></h2>
                     <p>Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands.</p>
                     <span>data/current-counts.json</span>
+                </article>
+                <article class="catalog-card" id="agent-index">
+                    <h2><a href="data/agent-index.json">Agent Route Manifest</a></h2>
+                    <p>Stable machine-readable route map, dataset schemas, freshness policy, counts, and query recipes.</p>
+                    <span>data/agent-index.json</span>
                 </article>
                 <article class="catalog-card" id="work-enrichment">
                     <h2><a href="data/work-enrichment.json">Work Enrichment</a></h2>
@@ -727,14 +783,14 @@
                     <span>search-index.json</span>
                 </article>
                 <article class="catalog-card" id="public-source-inventory">
-                    <h2><a href="reports/public_source_inventory_2026-07-10.json">Public Source Inventory</a></h2>
+                    <h2><a href="reports/public_source_inventory_2026-07-17.json">Public Source Inventory</a></h2>
                     <p>Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.</p>
-                    <span>reports/public_source_inventory_2026-07-10.json</span>
+                    <span>reports/public_source_inventory_2026-07-17.json</span>
                 </article>
                 <article class="catalog-card" id="public-source-snapshot">
-                    <h2><a href="reports/public_source_snapshot_2026-07-10.json">Public Source Snapshot</a></h2>
+                    <h2><a href="reports/public_source_snapshot_2026-07-17.json">Public Source Snapshot</a></h2>
                     <p>Current public API freshness snapshot with normalized drift-comparison facts.</p>
-                    <span>reports/public_source_snapshot_2026-07-10.json</span>
+                    <span>reports/public_source_snapshot_2026-07-17.json</span>
                 </article>
                 <article class="catalog-card" id="paired-publication-decisions">
                     <h2><a href="data/paired-publication-decisions.json">Paired Publication Decisions</a></h2>
@@ -752,19 +808,19 @@
                     <span>reports/external_links_triage_2026-05-15.json</span>
                 </article>
                 <article class="catalog-card" id="asset-size">
-                    <h2><a href="reports/asset_size_2026-07-16.json">Asset Size Audit</a></h2>
+                    <h2><a href="reports/asset_size_2026-07-17.json">Asset Size Audit</a></h2>
                     <p>Size report for public HTML, OG images, data exports, and runtime assets.</p>
-                    <span>reports/asset_size_2026-07-16.json</span>
+                    <span>reports/asset_size_2026-07-17.json</span>
                 </article>
                 <article class="catalog-card" id="browser-smoke">
-                    <h2><a href="reports/browser-smoke/2026-07-02/manifest.json">Browser Smoke Manifest</a></h2>
+                    <h2><a href="reports/browser-smoke/2026-07-17/manifest.json">Browser Smoke Manifest</a></h2>
                     <p>Selector-based Playwright smoke checks for core local pages.</p>
-                    <span>reports/browser-smoke/2026-07-02/manifest.json</span>
+                    <span>reports/browser-smoke/2026-07-17/manifest.json</span>
                 </article>
                 <article class="catalog-card" id="live-site">
-                    <h2><a href="reports/live_site_verification_2026-07-16.json">Live Site Verification</a></h2>
+                    <h2><a href="reports/live_site_verification_2026-07-17.json">Live Site Verification</a></h2>
                     <p>Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.</p>
-                    <span>reports/live_site_verification_2026-07-16.json</span>
+                    <span>reports/live_site_verification_2026-07-17.json</span>
                 </article>
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>

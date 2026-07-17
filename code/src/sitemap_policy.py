@@ -42,6 +42,7 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("bibliography.ris", "monthly", "0.5"),
     ("codemeta.json", "monthly", "0.5"),
     ("resume/resume.pdf", "monthly", "0.4"),
+    ("resume/resume.html", "monthly", "0.5"),
     ("resume/verify.html", "monthly", "0.4"),
 ]
 
@@ -75,6 +76,7 @@ _INDEXNOW_EXACT = {
     "feed.xml",
     "humans.txt",
     "resume/resume.pdf",
+    "resume/resume.html",
 }
 
 

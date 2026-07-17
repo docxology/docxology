@@ -22,6 +22,7 @@ from site_nav import (  # noqa: E402
     render_nav_domain,
     social_meta_tags,
 )
+from site_facts import generated_date, generated_month_year  # noqa: E402
 
 
 @dataclass(frozen=True)
@@ -59,7 +60,7 @@ DOMAINS = [
         title="Active Inference & Free Energy Principle",
         short_title="Active Inference",
         description="Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.",
-        domains=("🧠", "🌍"),
+        domains=("🧠",),
         repo_names=(
             "active_inference",
             "active_torchference",
@@ -148,6 +149,36 @@ DOMAINS = [
         ),
         collaborators=("Deborah Gordon", "UC Davis Genetics", "Stanford Biology"),
     ),
+    DomainConfig(
+        slug="aii-ecosystem",
+        emoji="🌍",
+        title="AII Ecosystem",
+        short_title="AII Ecosystem",
+        description="Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.",
+        domains=("🌍",),
+        repo_names=("active_inference", "fep_lean", "cognitive", "AgenticMesh"),
+        learning_path=(
+            "Start with the Active Inference Institute ecosystem and textbook materials.",
+            "Follow the institute software and formalization repositories for implementation context.",
+            "Use the Discovery and Data Catalog pages for machine-readable routes.",
+        ),
+        collaborators=("Active Inference Institute contributors", "Institute program participants"),
+    ),
+    DomainConfig(
+        slug="presentations-media",
+        emoji="🎥",
+        title="Presentations & Media",
+        short_title="Presentations & Media",
+        description="Talks, courses, presentations, and media artifacts connected to the research and teaching program.",
+        domains=("🎥",),
+        repo_names=("biology_textbook", "biol-1", "biol-8"),
+        learning_path=(
+            "Use the video index for talks and transcript-linked media.",
+            "Use the course and presentation rows in the bibliography for structured teaching routes.",
+            "Cross-reference related works through the canonical work pages.",
+        ),
+        collaborators=("Active Inference Institute educators", "Course and media collaborators"),
+    ),
 ]
 
 
@@ -207,14 +238,11 @@ def page_head(
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {social_meta_tags(f"{title} — Daniel Ari Friedman", description, f"https://danielarifriedman.com/{og_image}", image_alt=f"{title} — Daniel Ari Friedman")}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .domain-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 3rem}}
-        .domain-hero h1{{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin-bottom:1rem}}
+        .domain-hero h1{{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin-bottom:1rem}}
         .domain-hero p{{color:var(--text-secondary);max-width:760px;margin:0 auto;line-height:1.7}}
         .mini-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}}
         .mini-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem}}
@@ -246,7 +274,7 @@ def page_footer() -> str:
             <a href="cite-verify.html">Cite & Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Last updated: May 2026</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
     </footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
@@ -308,7 +336,7 @@ def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict
         "description": config.description,
         "url": f"https://danielarifriedman.com/{canonical}",
         "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
-        "dateModified": "2026-07-05",
+        "dateModified": generated_date(),
         "about": {"@type": "DefinedTerm", "name": config.short_title},
     }
     return (
@@ -397,7 +425,7 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
                 "description": "Domain landing pages for Daniel Ari Friedman's research, software, collaborators, and learning pathways.",
                 "url": "https://danielarifriedman.com/domains.html",
                 "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
-                "dateModified": "2026-07-05",
+                "dateModified": generated_date(),
             }],
         )
         + f"""

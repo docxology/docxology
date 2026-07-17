@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T04:35:52Z",
+  "generated_at": "2026-07-17T19:38:25Z",
   "source": "pages/SOFTWARE.md",
-  "count": 95,
+  "count": 96,
   "repositories": [
     {
       "name": "template",
@@ -684,6 +684,18 @@
       "language": "Rust",
       "stars": 1,
       "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "SynthOBS",
+      "url": "https://github.com/docxology/SynthOBS",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
       "paper_path": "",
       "zenodo_url": ""
     },

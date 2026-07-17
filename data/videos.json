@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T21:35:05Z",
+  "generated_at": "2026-07-17T19:38:28Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -8837,18 +8837,18 @@
           "url": "/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"
         },
         {
+          "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
-          "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "year": 2018,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
         }
       ]
     },
@@ -15384,11 +15384,11 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
-          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
-          "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+          "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
           "year": 2026,
           "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026ArchitectureFalseGodsWilliam115.html"
+          "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html"
         }
       ]
     },
@@ -18201,18 +18201,18 @@
           "url": "/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"
         },
         {
+          "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html"
+        },
+        {
           "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
           "citation_key": "Friedman2026GoldenCompassLunarFlux004",
           "year": 2026,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2026GoldenCompassLunarFlux004.html"
-        },
-        {
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
-          "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "year": 2018,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
         }
       ]
     },
@@ -20035,18 +20035,18 @@
           "url": "/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"
         },
         {
+          "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Predictive Processing Interpretation of the Mirror Test",
-          "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
-          "year": 2022,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
         }
       ]
     },
@@ -39943,6 +39943,13 @@
           "url": "/works/Friedman2023WilliamBlakeBuckminsterFuller065.html"
         },
         {
+          "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html"
+        },
+        {
           "title": "Synthesis of Agent and Niche",
           "citation_key": "Friedman2025SynthesisAgentNiche021",
           "year": 2025,
@@ -39955,13 +39962,6 @@
           "year": 2025,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2025QuadMathAnalyticalReview4D018.html"
-        },
-        {
-          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
-          "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
-          "year": 2025,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"
         }
       ]
     },
@@ -78615,11 +78615,11 @@
           "url": "/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"
         },
         {
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
-          "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "year": 2018,
+          "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+          "year": 2026,
           "domain": "Art & Synergetics",
-          "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
+          "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html"
         }
       ]
     },

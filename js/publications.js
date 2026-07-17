@@ -150,11 +150,13 @@ function updateSortUI() {
         const b = th.querySelector('.th-sort-btn');
         const icon = th.querySelector('.sort-icon');
         if (!b || !icon) return;
-        b.removeAttribute('aria-sort');
+        th.removeAttribute('aria-sort');
+        b.setAttribute('aria-label', `Sort by ${th.textContent.replace(/[↕↑↓]/g, '').trim()}`);
         const col = th.getAttribute('data-sortable');
         if (col === currentSort.col) {
             th.classList.add('sorted');
-            b.setAttribute('aria-sort', currentSort.dir < 0 ? 'descending' : 'ascending');
+            th.setAttribute('aria-sort', currentSort.dir < 0 ? 'descending' : 'ascending');
+            b.setAttribute('aria-label', `Sorted by ${th.textContent.replace(/[↕↑↓]/g, '').trim()} ${currentSort.dir < 0 ? 'descending' : 'ascending'}`);
             icon.textContent = currentSort.dir < 0 ? '\u2193' : '\u2191';
         } else {
             icon.textContent = '\u2195';
@@ -163,6 +165,8 @@ function updateSortUI() {
 }
 
 function renderTable() {
+    const table = document.getElementById('pub-table');
+    if (table) table.setAttribute('aria-busy', 'true');
     const q = (document.getElementById('pub-search').value || '').toLowerCase().trim();
     const terms = q ? q.split(/\s+/).filter((t) => t.length > 0) : [];
     const doiOnly = document.getElementById('doi-filter').checked;
@@ -224,6 +228,11 @@ function renderTable() {
     const n = PUBS.length;
     const msg = data.length === n ? `${n} of ${n} shown` : `${data.length} of ${n} shown`;
     document.getElementById('result-count').textContent = msg;
+    document.querySelectorAll('[data-type-filter], [data-domain-filter]').forEach((button) => {
+        const active = button.classList.contains('active');
+        button.setAttribute('aria-pressed', String(active));
+    });
+    if (table) table.setAttribute('aria-busy', 'false');
     updateSortUI();
 }
 
@@ -315,6 +324,7 @@ function loadPublications() {
                 empty.hidden = false;
                 empty.classList.remove('d-none');
                 empty.textContent = 'Could not load publication catalog. Try again later.';
+                empty.setAttribute('role', 'alert');
             }
             console.error('publications catalog load failed', err);
         });

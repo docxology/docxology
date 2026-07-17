@@ -67,10 +67,9 @@
     ]
     }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" data-media-swap="all">
-    <style>
+
+
+<style>
         /* art.html is an intentionally BESPOKE gallery page: a distinct brutalist/
            saturated identity (pure-red accents, neutral grays, double borders,
            Georgia logo). Its tokens deliberately diverge from the site-wide
@@ -194,15 +193,16 @@
 <style>.breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'›';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
     <!-- Resource hints -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
     <link rel="me" href="https://linkedin.com/in/danielarifriedman">
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta name="referrer" content="strict-origin-when-cross-origin">
+
 
 
 
@@ -250,9 +250,9 @@
         <option value="views">Most Viewed</option>
     </select>
     <div class="size-btns">
-        <button class="size-btn" id="btn-sm" data-set-size="sm" title="Small">▪▪▪</button>
-        <button class="size-btn active" id="btn-md" data-set-size="md" title="Medium">▪▪</button>
-        <button class="size-btn" id="btn-lg" data-set-size="lg" title="Large">▪</button>
+        <button class="size-btn" id="btn-sm" data-set-size="sm" title="Small" aria-label="Small artwork tiles" aria-pressed="false">▪▪▪</button>
+        <button class="size-btn active" id="btn-md" data-set-size="md" title="Medium" aria-label="Medium artwork tiles" aria-pressed="true">▪▪</button>
+        <button class="size-btn" id="btn-lg" data-set-size="lg" title="Large" aria-label="Large artwork tiles" aria-pressed="false">▪</button>
     </div>
     <span class="result-count" id="resultCount"></span>
 </div>
@@ -263,22 +263,28 @@
         <div class="empty-icon">ART</div>
         <div>No artworks match your search.</div>
     </div>
+    <noscript>
+        <div class="empty" style="display:block">
+            JavaScript is disabled. Browse the <a href="data/artworks.json">artwork data export</a>
+            or the <a href="https://www.flickr.com/photos/43693624@N07/" rel="noopener">full Flickr archive</a>.
+        </div>
+    </noscript>
 </main>
 
 <!-- LIGHTBOX -->
-<div class="lb-overlay" id="lightbox">
+<div class="lb-overlay" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
     <div class="lb-topbar">
         <div class="lb-title-area">
             <h2 id="lb-title">—</h2>
             <div class="lb-date" id="lb-date"></div>
         </div>
-        <button class="lb-close" data-lightbox="close" title="Close (Esc)">×</button>
+        <button class="lb-close" id="lb-close" data-lightbox="close" title="Close (Esc)" aria-label="Close artwork viewer">×</button>
     </div>
     <div class="lb-body">
         <div class="lb-img-wrap">
-            <button class="lb-nav lb-prev" data-lightbox="prev">‹</button>
+            <button class="lb-nav lb-prev" data-lightbox="prev" aria-label="Previous artwork">‹</button>
             <img src="" alt="Selected artwork" class="lb-img" id="lb-img">
-            <button class="lb-nav lb-next" data-lightbox="next">›</button>
+            <button class="lb-nav lb-next" data-lightbox="next" aria-label="Next artwork">›</button>
         </div>
         <div class="lb-panel">
             <div class="lb-panel-inner">

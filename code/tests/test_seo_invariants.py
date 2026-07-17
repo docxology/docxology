@@ -14,6 +14,7 @@ from seo_invariants import (  # noqa: E402
     check_sitemap_policy,
     check_social_meta,
     check_work_descriptions,
+    check_public_html_security,
     collect_seo_errors,
 )
 
@@ -43,3 +44,7 @@ def test_indexable_pages_have_twitter_and_og_alt():
 
 def test_work_descriptions_not_truncated_midword():
     assert check_work_descriptions(REPO_ROOT) == []
+
+
+def test_public_html_security_metadata():
+    assert check_public_html_security(REPO_ROOT) == []

@@ -65,7 +65,7 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("discovery", "page", "Discovery Map", "/discovery.html", "Canonical identifiers and public source queries.", ["agents"]),
     ("cite-verify", "page", "Cite & Verify", "/cite-verify.html", "Citation and source-of-truth rules.", ["citation"]),
     ("evidence", "page", "Evidence Ledger", "/evidence.html", "Claim-level evidence and caveats.", ["claims"]),
-    ("resume", "document", "Resume and CV", "/resume/resume.pdf", "Generated resume/CV PDF, plaintext variants, and structured JSON.", ["resume", "cv"]),
+    ("resume", "document", "Resume and CV", "/resume/resume.html", "Accessible, no-JavaScript HTML CV with PDF, plaintext, JSON, and verification links.", ["resume", "cv", "accessibility"]),
     ("resume-verify", "page", "Resume Verification", "/resume/verify.html", "Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV.", ["resume", "cv", "verification", "hashes"]),
     ("collaborators", "page", "Collaborators", "/collaborators.html", "Research collaborator network.", ["people"]),
     ("media", "page", "Media", "/media.html", "Talks, podcasts, videos, and press.", ["media"]),
@@ -278,12 +278,12 @@ def resume_item(resume: dict) -> dict:
         "id": "resume:structured-cv",
         "type": "resume",
         "title": f"{profile['name']} Resume / CV",
-        "url": "/resume/resume.pdf",
+        "url": "/resume/resume.html",
         "summary": (
             f"Structured CV export: {metrics['works']} works, "
-            f"{metrics['software_catalogued']} software rows, education, experience, service, media, and art-use records."
+            f"{metrics['software_catalogued']} software rows, {metrics['github_inventory']['public']} public GitHub repositories, education, experience, service, media, and art-use records."
         ),
-        "tags": ["resume", "cv", "profile", "plaintext", "pdf"],
+        "tags": ["resume", "cv", "profile", "html", "plaintext", "pdf", "accessibility", "verification"],
         "content": " ".join([profile["name"], profile["headline"], section_text]).strip(),
     }
 

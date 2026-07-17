@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Capture Playwright screenshots for key site pages.
 
-Requires `npx playwright` to be available. The script starts a local static
+Requires the installed `playwright` CLI to be available. The script starts a local static
 server, captures desktop and mobile screenshots, and writes a manifest under
 reports/visual-qa/.
 """
@@ -85,8 +85,6 @@ def capture() -> dict:
                 out = OUT_DIR / f"{page_name}-{viewport_name}.png"
                 subprocess.run(
                     [
-                        "npx",
-                        "--yes",
                         "playwright",
                         "screenshot",
                         "--browser=chromium",
@@ -101,7 +99,7 @@ def capture() -> dict:
                 shots.append({"page": rel, "viewport": viewport_name, "size": size, "file": str(out.relative_to(REPO_ROOT))})
         manifest = {
             "generated_at": generated_timestamp(),
-            "tool": "npx playwright screenshot",
+            "tool": "playwright screenshot",
             "note": "Human review still required; these snapshots guard against obvious layout regressions.",
             "screenshots": shots,
         }
