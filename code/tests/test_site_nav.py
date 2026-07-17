@@ -7,7 +7,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from site_nav import CSP_META_TAG, HEAD_EXTRAS, clip_description, render_nav, render_nav_domain, social_meta_tags
+from site_nav import (
+    CSP_META_TAG,
+    HEAD_EXTRAS,
+    clip_description,
+    ensure_agent_map_link,
+    render_nav,
+    render_nav_domain,
+    social_meta_tags,
+)
 
 
 def test_clip_description_short_text_unchanged():
@@ -79,3 +87,15 @@ def test_shared_security_policy_allows_only_required_frame_origin():
     assert "fonts.googleapis.com" not in CSP_META_TAG
     assert 'name="referrer"' in HEAD_EXTRAS
     assert "data/agent-index.json" in HEAD_EXTRAS
+
+
+def test_ensure_agent_map_link_is_idempotent_for_bespoke_navigation():
+    source = '<nav><div class="nav-links"><a href="publications.html">Publications</a></div></nav>'
+    updated = ensure_agent_map_link(source)
+    assert 'href="data/agent-index.json">Agent Map</a>' in updated
+    assert ensure_agent_map_link(updated) == updated
+
+
+def test_ensure_agent_map_link_supports_art_navigation():
+    source = '<nav><div class="nav-right"><a href="index.html">Home</a></div></nav>'
+    assert 'href="data/agent-index.json">Agent Map</a>' in ensure_agent_map_link(source)

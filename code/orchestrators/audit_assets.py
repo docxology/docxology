@@ -31,6 +31,11 @@ PATTERNS = [
     ("hero-art", "assets/hero-art/*.webp", 320_000),
 ]
 
+# The generated manifest describes the audit itself and is rebuilt after all
+# reports. Counting it here would create a self-referential size-report cycle:
+# manifest size -> asset report -> latest-report pointer -> manifest size.
+EXCLUDED_ASSETS = {"data/generated-manifest.json"}
+
 
 def iter_assets() -> list[dict]:
     assets = []
@@ -38,10 +43,13 @@ def iter_assets() -> list[dict]:
         for path in sorted(REPO_ROOT.glob(pattern)):
             if not path.is_file():
                 continue
+            relative = str(path.relative_to(REPO_ROOT))
+            if relative in EXCLUDED_ASSETS:
+                continue
             size = path.stat().st_size
             assets.append(
                 {
-                    "path": str(path.relative_to(REPO_ROOT)),
+                    "path": relative,
                     "kind": kind,
                     "bytes": size,
                     "budget_bytes": budget,

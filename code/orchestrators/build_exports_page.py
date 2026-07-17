@@ -134,6 +134,7 @@ def render() -> str:
             <a href="catalog.html">Data Catalog</a>
             <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="discovery.html">Discovery</a>
+            <a href="data/agent-index.json">Agent Map</a>
         </div>
     </nav>
 {render_breadcrumb(_BREADCRUMB)}

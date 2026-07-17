@@ -67,7 +67,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | CodeMeta | [codemeta.json](../codemeta.json) | Machine-readable software/source metadata for repository indexes |
 | Citation metadata | [CITATION.cff](../CITATION.cff) | Machine-readable citation metadata for this public research index |
 | Data catalog | [catalog.html](../catalog.html) / [data/catalog.json](../data/catalog.json) | Schema.org DataCatalog for public JSON, citation, and report exports |
-| Agent route manifest | [data/agent-index.json](../data/agent-index.json) | Stable route families, dataset schemas, current counts, freshness policy, and query recipes |
+| Agent route manifest | [data/agent-index.json](../data/agent-index.json) | Stable route families, field-level schemas for works/software/repositories/claims/search/reports, current counts, freshness policy, and query recipes |
 | Works JSON | [data/works.json](../data/works.json) | Structured bibliography export; row count in [current totals](../reports/current_counts.md) |
 | Software JSON | [data/software.json](../data/software.json) | Structured export of the curated software catalog; current count is in [`../reports/current_counts.md`](../reports/current_counts.md) |
 | GitHub repository inventory | [repositories.html](../repositories.html) / [repositories-forks.html](../repositories-forks.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated public repository inventory: the primary HTML page excludes forks, forks are archived separately, and JSON remains complete for agents; current owner counts are in [`../reports/current_counts.md`](../reports/current_counts.md) |

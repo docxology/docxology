@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:50:58Z",
+  "generated_at": "2026-07-17T21:17:35Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "e9aa9f32b40db064c94413dd55709fb89708eebcb4999157516fd6f7cf2762e8",
+      "sha256": "99f1cdbd16d13009d7c0502afcce530a5c0613ddc09598fd0d26267493a3ce32",
       "files": [
         {
           "path": "resume/source.json",
@@ -98,12 +98,12 @@
         {
           "path": "data/works.json",
           "bytes": 107248,
-          "sha256": "fdd83054d3de7377ffc029050670dbc5e8394300617a5e1c942de1ac71cc0f16"
+          "sha256": "ba816438cd08b093a5bb913c87c7724803dac2a9e3521c1b3f716c6be36395da"
         },
         {
           "path": "data/software.json",
           "bytes": 46947,
-          "sha256": "a5b42596482f21615964652a26baaf3d3ab9b06b6ee98c22398cfc5844e6140a"
+          "sha256": "d8f1f2e9c52761d36abfffd03e32b74dfbcf1ee6029bfbefeb06076f7e890cec"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11846,
-          "sha256": "ffe47ff285069ab9bee02428a74c4f6f33f2a88e03361f19a3884fd42d5e889f"
+          "sha256": "9c6f12aa6d079f6e0196d7009c803f49fef23afe7643ac87aadd194c552fecd6"
         },
         {
           "path": "data/github-repositories.json",
@@ -6595,7 +6595,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-17T19:50:57+00:00",
+      "checked_at": "2026-07-17T21:17:34+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6610,7 +6610,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-17T19:50:57+00:00",
+      "checked_at": "2026-07-17T21:17:34+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Ari Friedman Videos | Active Inference Talks</title>
-  <meta name="description" content="Explore 700+ Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
+  <meta name="description" content="Explore 1,127 Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
   <meta name="author" content="Daniel Ari Friedman">
   <meta name="theme-color" content="#0c0c0e">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -20,7 +20,7 @@
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Daniel Ari Friedman Videos | Active Inference Talks">
-  <meta property="og:description" content="Explore 700+ Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
+  <meta property="og:description" content="Explore 1,127 Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
   <meta property="og:url" content="https://danielarifriedman.com/videos.html">
   <meta property="og:image" content="https://danielarifriedman.com/og-media.jpg">
   <meta property="og:image:width" content="1200">
@@ -28,7 +28,7 @@
   <meta property="og:image:alt" content="Daniel Ari Friedman Videos | Active Inference Talks">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Daniel Ari Friedman Videos | Active Inference Talks">
-  <meta name="twitter:description" content="Explore 700+ Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
+  <meta name="twitter:description" content="Explore 1,127 Active Inference Institute sessions and Daniel Ari Friedman videos on research, art, complexity, cognitive security, and education.">
   <meta name="twitter:image" content="https://danielarifriedman.com/og-media.jpg">
   <meta name="twitter:image:alt" content="Daniel Ari Friedman Videos | Active Inference Talks">
   <meta property="og:site_name" content="Daniel Ari Friedman">
@@ -39,7 +39,7 @@
     "@id": "https://danielarifriedman.com/videos.html#collection",
     "name": "Daniel Ari Friedman Videos | Active Inference Talks",
     "url": "https://danielarifriedman.com/videos.html",
-    "description": "700+ educational livestreams and talks on Active Inference, complexity, cognitive security, art, and research.",
+    "description": "1,127 educational livestreams and talks on Active Inference, complexity, cognitive security, art, and research.",
     "creator": { "@id": "https://danielarifriedman.com/#person" }
   }
   </script>
@@ -422,6 +422,11 @@
       color: var(--text-secondary);
       font-size: .9rem;
     }
+    .noscript-fallback {
+      max-width: 900px; margin: 1rem auto; padding: 1rem 1.25rem;
+      color: var(--text-secondary); background: var(--bg-card);
+      border: 1px solid var(--border); border-radius: 8px; line-height: 1.6;
+    }
     #loading .spinner {
       display: inline-block;
       width: 24px; height: 24px;
@@ -529,6 +534,7 @@
     <a href="media.html" role="menuitem">Media</a>
     <a href="videos.html" class="active" role="menuitem">Videos</a>
     <a href="art.html" class="nav-art-link" role="menuitem">Gallery</a>
+    <a href="data/agent-index.json" role="menuitem">Agent Map</a>
   </div>
 </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -596,6 +602,12 @@
   <div class="spinner"></div>
   <p>Loading video data…</p>
 </div>
+<noscript>
+  <div class="noscript-fallback" role="note">
+    JavaScript is disabled. Browse the <a href="videos/">static video index</a> or download the
+    <a href="data/videos.json">video metadata JSON</a>.
+  </div>
+</noscript>
 
 <!-- ── TIMELINE ── -->
 <div class="timeline-wrap" id="timeline-wrap" style="display:none" role="region" aria-label="Video timeline" tabindex="0">
@@ -619,7 +631,6 @@
 
 <script src="/js/videos-page.js?v=20260715" defer></script>
 
-<script src="/js/tts-controls.js?v=20260712" defer></script>
 <script src="/js/tts-controls.js?v=20260712" defer></script>
 <script src="/js/interactive.js?v=20260712" defer></script>
     <script src="/js/menu-esc.js?v=20260712" defer></script>

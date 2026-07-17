@@ -6,26 +6,26 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 19:51:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 21:17:41 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Fri, 17 Jul 2026 19:51:06 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 21:17:41 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Fri, 17 Jul 2026 19:51:06 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 21:17:41 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Fri, 17 Jul 2026 19:51:06 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 21:17:41 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
     </item>
     <item>

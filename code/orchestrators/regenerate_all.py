@@ -52,7 +52,6 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("sync_software_html.py", ["--apply"]),      # software.html + -ld       <- pages/SOFTWARE.md
     ("build_current_counts.py", []),             # current-counts.{json,md}  <- works + software
     ("sync_scholar_metrics.py", []),             # dated Scholar snapshot -> hand-authored surfaces
-    ("sync_site_facts.py", []),                  # volatile counts/dates in hand-authored surfaces
     ("generate_og_images.py", []),               # og-*.jpg + counts sidecar <- current-counts.json
     ("export_agent_data.py", []),                # claims/people/orgs        <- counts
     ("build_agent_index.py", []),                # stable agent route/schema map
@@ -60,11 +59,13 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_domain_pages.py", []),
     ("build_work_pages.py", []),
     ("build_video_pages.py", []),
+    ("sync_site_facts.py", []),                  # finalize volatile facts after video/art data generation
     ("build_paper_pages.py", []),
     ("deploy_seo_security.py", []),         # CSP/referrer/agent metadata on public HTML
     ("build_exports_page.py", []),
     ("build_updates_page.py", []),
     ("build_evidence_page.py", []),              # evidence.html + EVIDENCE.md <- claims.json
+    ("ensure_agent_navigation.py", []),    # visible manifest link on bespoke entry pages
     ("build_reconciliation_report.py", []),      # writes reports/reconciliation_*.md
     ("audit_assets.py", []),                     # writes reports/asset_size_*.json
     ("accessibility_audit.py", []),              # writes reports/accessibility_static_*.json

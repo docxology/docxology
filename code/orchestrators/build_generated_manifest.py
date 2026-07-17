@@ -137,6 +137,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_agent_index.py",
     },
     {
+        "name": "Visible agent navigation",
+        "outputs": ["root public HTML navigation"],
+        "sources": ["code/src/site_nav.py", "code/orchestrators/ensure_agent_navigation.py"],
+        "command": "python3 code/orchestrators/ensure_agent_navigation.py",
+    },
+    {
         "name": "Resume and CV exports",
         "outputs": [
             "data/resume.json",

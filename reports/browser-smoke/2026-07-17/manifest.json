@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:32:31Z",
+  "generated_at": "2026-07-17T21:16:22Z",
   "tool": "playwright screenshot",
   "note": "Selector-based smoke checks for core local site behavior.",
   "passing": 10,
@@ -11,7 +11,7 @@
       "selector": "h1",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/home.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/index.html\nWaiting for selector h1...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/home.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/index.html\nWaiting for selector h1...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/home.png",
       "stderr": ""
     },
     {
@@ -20,7 +20,7 @@
       "selector": "table",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/publications.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/publications.html\nWaiting for selector table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/publications.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/publications.html\nWaiting for selector table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/publications.png",
       "stderr": ""
     },
     {
@@ -29,7 +29,7 @@
       "selector": ".work-row",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/works.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/works/index.html\nWaiting for selector .work-row...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/works.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/works/index.html\nWaiting for selector .work-row...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/works.png",
       "stderr": ""
     },
     {
@@ -38,7 +38,7 @@
       "selector": ".result-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/search.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/search.html?q=active%20inference\nWaiting for selector .result-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/search.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/search.html?q=active%20inference\nWaiting for selector .result-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/search.png",
       "stderr": ""
     },
     {
@@ -47,7 +47,7 @@
       "selector": ".inventory-table",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/repositories.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/repositories.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/repositories.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/repositories.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/repositories.png",
       "stderr": ""
     },
     {
@@ -56,7 +56,7 @@
       "selector": ".inventory-table",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/repository-forks.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/repositories-forks.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/repository-forks.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/repositories-forks.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/repository-forks.png",
       "stderr": ""
     },
     {
@@ -65,7 +65,7 @@
       "selector": ".catalog-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/catalog.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/catalog.html\nWaiting for selector .catalog-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/catalog.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/catalog.html\nWaiting for selector .catalog-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/catalog.png",
       "stderr": ""
     },
     {
@@ -74,7 +74,7 @@
       "selector": ".update-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/updates.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/updates.html\nWaiting for selector .update-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/updates.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/updates.html\nWaiting for selector .update-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/updates.png",
       "stderr": ""
     },
     {
@@ -83,7 +83,7 @@
       "selector": ".art-card",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/art.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/art.html\nWaiting for selector .art-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/art.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/art.html\nWaiting for selector .art-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/art.png",
       "stderr": ""
     },
     {
@@ -92,7 +92,7 @@
       "selector": ".video-topic-panel",
       "ok": true,
       "screenshot": "reports/browser-smoke/2026-07-17/videos.png",
-      "stdout": "Navigating to http://127.0.0.1:54499/videos.html\nWaiting for selector .video-topic-panel...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/videos.png",
+      "stdout": "Navigating to http://127.0.0.1:53429/videos.html\nWaiting for selector .video-topic-panel...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-07-17/videos.png",
       "stderr": ""
     }
   ]

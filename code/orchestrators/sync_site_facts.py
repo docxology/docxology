@@ -12,12 +12,28 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_facts import counts, generated_date, generated_month_year
-TARGETS = [REPO_ROOT / "index.html", REPO_ROOT / "publications.html", REPO_ROOT / "discovery.html", REPO_ROOT / "pages" / "DISCOVERY.md"]
+TARGETS = [
+    REPO_ROOT / "index.html",
+    REPO_ROOT / "publications.html",
+    REPO_ROOT / "discovery.html",
+    REPO_ROOT / "pages" / "DISCOVERY.md",
+    REPO_ROOT / "art.html",
+    REPO_ROOT / "videos.html",
+]
 
 
 def latest_report(prefix: str, suffix: str) -> str | None:
     paths = sorted((REPO_ROOT / "reports").glob(f"{prefix}_*.{suffix}"))
     return paths[-1].name if paths else None
+
+
+def dataset_count(filename: str, key: str) -> int:
+    try:
+        payload = json.loads((REPO_ROOT / "data" / filename).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return 0
+    value = payload.get(key)
+    return int(value) if isinstance(value, int) else 0
 
 
 def render(path: Path) -> str:
@@ -30,6 +46,8 @@ def render(path: Path) -> str:
     full_text = c.get("full_text_papers", 0)
     images = c.get("extracted_images", 0)
     galleries = c.get("papers_with_images", 0)
+    artworks = dataset_count("artworks.json", "count")
+    videos = dataset_count("videos.json", "count")
     github = c.get("github_inventory", {})
     public_facts = c.get("public_source_snapshot", {})
     replacements = {
@@ -89,6 +107,19 @@ def render(path: Path) -> str:
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
+    elif path.name == "art.html":
+        # The gallery is client-rendered, but crawler/social metadata and the
+        # visible heading must agree with the generated artwork export.
+        count = f"{artworks:,}"
+        text = re.sub(r"\b[\d,]+(?=\s+ink-on-paper drawings)", count, text, flags=re.I)
+        text = re.sub(r"\b[\d,]+(?=\s+pen(?:-|\s+)and ink drawings)", count, text, flags=re.I)
+        text = re.sub(r"\b[\d,]+(?=\s+Pen Drawings)", count, text)
+        text = re.sub(r"\b[\d,]+(?=\s+artworks\b)", count, text, flags=re.I)
+        text = re.sub(r'("numberOfItems"\s*:\s*)\d+', rf"\g<1>{artworks}", text)
+    elif path.name == "videos.html":
+        # The timeline derives cards from data/videos.json; keep metadata useful
+        # with JavaScript unavailable and for social/crawler previews as well.
+        text = re.sub(r"\b[\d,]+\+", f"{videos:,}", text)
     else:
         text = re.sub(r"Last updated: \d{4}-\d{2}-\d{2}", f"Last updated: {date}", text)
         text = re.sub(r"as of \d{4}-\d{2}-\d{2}", f"as of {date}", text)

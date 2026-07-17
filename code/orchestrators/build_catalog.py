@@ -232,7 +232,8 @@ def render_html(date_modified: str | None = None) -> str:
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="catalog.html">Data Catalog</a><a href="exports.html">Exports</a><a href="cite-verify.html">Cite</a><a href="discovery.html">Discovery</a></div>
+        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="catalog.html">Data Catalog</a><a href="exports.html">Exports</a><a href="cite-verify.html">Cite</a><a href="discovery.html">Discovery</a> <a href="data/agent-index.json">Agent Map</a>
+        </div>
     </nav>
 {render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero"><h1>Data Catalog</h1><p class="sub">Structured exports for the bibliography, software catalog, evidence layer, and agentic discovery surfaces.</p></header>

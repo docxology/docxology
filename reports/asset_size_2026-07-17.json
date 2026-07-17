@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T19:51:04Z",
+  "generated_at": "2026-07-17T21:17:39Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 83,
+  "asset_count": 82,
   "warnings": 0,
-  "total_bytes": 12102069,
+  "total_bytes": 12096974,
   "largest": [
     {
       "path": "data/videos.json",
@@ -29,7 +29,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 301487,
+      "bytes": 301488,
       "budget_bytes": 5000000,
       "ok": true
     },
@@ -57,7 +57,7 @@
     {
       "path": "repositories-forks.html",
       "kind": "html",
-      "bytes": 198295,
+      "bytes": 198349,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -78,7 +78,7 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 129321,
+      "bytes": 129391,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -92,7 +92,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 125833,
+      "bytes": 125887,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -120,14 +120,14 @@
     {
       "path": "og-biomedicine.jpg",
       "kind": "og-image",
-      "bytes": 108996,
+      "bytes": 109278,
       "budget_bytes": 220000,
       "ok": true
     },
     {
       "path": "og-computational.jpg",
       "kind": "og-image",
-      "bytes": 108651,
+      "bytes": 108372,
       "budget_bytes": 220000,
       "ok": true
     },
@@ -141,7 +141,7 @@
     {
       "path": "og-art-synergetics.jpg",
       "kind": "og-image",
-      "bytes": 105751,
+      "bytes": 105555,
       "budget_bytes": 220000,
       "ok": true
     }

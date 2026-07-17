@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:33:38Z",
+  "generated_at": "2026-07-17T21:17:29Z",
   "tool": "playwright screenshot",
   "note": "Human review still required; these snapshots guard against obvious layout regressions.",
   "screenshots": [

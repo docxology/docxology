@@ -139,6 +139,7 @@ def render_html(claims: list[dict]) -> str:
             <a href="software.html">Software</a>
             <a href="discovery.html">Discovery</a>
             <a href="cite-verify.html">Cite</a>
+            <a href="data/agent-index.json">Agent Map</a>
         </div>
     </nav>
 {render_breadcrumb(_BREADCRUMB)}

@@ -134,7 +134,8 @@ def render() -> str:
     <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="search.html">Search</a><a href="discovery.html">Discovery</a><a href="updates.html" class="active">Updates</a></div>
+        <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="search.html">Search</a><a href="discovery.html">Discovery</a><a href="updates.html" class="active">Updates</a><a href="data/agent-index.json">Agent Map</a>
+        </div>
     </nav>
 {render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>

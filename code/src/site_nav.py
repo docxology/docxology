@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
@@ -114,6 +115,72 @@ def social_meta_tags(
         f'{indent}<meta name="twitter:image:alt" content="{esc(image_alt)}">',
     ]
     return "\n".join(lines)
+
+
+_VISIBLE_AGENT_LINK = re.compile(
+    r'<a\b[^>]*href=["\'][^"\']*data/agent-index\.json[^"\']*["\'][^>]*>',
+    re.I,
+)
+
+
+def ensure_agent_map_link(markup: str, *, href: str = "data/agent-index.json") -> str:
+    """Ensure a public page's visible navigation links to the agent manifest.
+
+    Generated work/domain pages already use :func:`render_nav`; this helper covers
+    hand-authored collection pages whose bespoke navigation otherwise made the
+    manifest discoverable only through a head ``alternate`` link. It is deliberately
+    idempotent and only touches the first ``nav-links`` or ``nav-right`` container.
+    """
+    anchor = f'<a href="{html.escape(href, quote=True)}">Agent Map</a>'
+    if 'role="menubar"' in markup or "role='menubar'" in markup:
+        anchor = f'<a href="{html.escape(href, quote=True)}" role="menuitem">Agent Map</a>'
+
+    container = re.compile(
+        r'(?P<open><div\b[^>]*class=["\'][^"\']*\b(?:nav-links|nav-right)\b[^"\']*["\'][^>]*>)'
+        r'(?P<body>.*?)'
+        r'(?P<close></div>)',
+        re.I | re.S,
+    )
+    match = container.search(markup)
+    if not match:
+        return markup
+
+    body = match.group("body")
+    open_line_indent = markup[: match.start("open")].rsplit("\n", 1)[-1]
+    if _VISIBLE_AGENT_LINK.search(body):
+        # A compact bespoke nav may already be canonical.  Returning it as-is
+        # avoids introducing a newline on the second application, preserving
+        # the helper's idempotence for both compact and multiline markup.
+        if "\n" not in body:
+            return markup
+        # Normalize links that were inserted by an older version of this helper
+        # so generated navigation remains readable and diff-stable.
+        normalized = re.sub(
+            r"\n[ \t]*\n([ \t]*<a\b[^>]*data/agent-index\.json[^>]*>Agent Map</a>)",
+            r"\n\1",
+            body,
+            flags=re.I,
+        ).rstrip()
+        first_link = re.search(r"(?m)^([ \t]+)<a\b", normalized)
+        if first_link:
+            link_indent = first_link.group(1)
+            normalized = re.sub(
+                r"(?m)^[ \t]*(<a\b[^>]*data/agent-index\.json[^>]*>Agent Map</a>)",
+                link_indent + r"\1",
+                normalized,
+                flags=re.I,
+            )
+        return markup[: match.start("body")] + normalized + "\n" + open_line_indent + markup[match.end("body") :]
+
+    trimmed = body.rstrip()
+    trailing = body[len(trimmed) :]
+    trimmed = re.sub(r"\n[ \t]*\n[ \t]*$", "\n", trimmed)
+    if trailing:
+        indent = trailing.split("\n")[-1]
+        updated_body = trimmed + "\n" + indent + anchor + "\n" + open_line_indent
+    else:
+        updated_body = trimmed + " " + anchor
+    return markup[: match.start("body")] + updated_body + markup[match.end("body") :]
 
 
 # Inline CSS for the breadcrumb component. Kept inline (rather than in style.css)
