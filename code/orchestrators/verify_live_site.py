@@ -62,7 +62,11 @@ def load_dynamic_checks() -> list[dict[str, list[str]]]:
         },
         {
             "path": "software.html",
-            "markers": ["Software", "data/software-ld.json", "Open-Source Repositories"],
+            "markers": ["Software", '"@type":"CollectionPage"', "application/ld+json", "Open-Source Repositories"],
+        },
+        {
+            "path": "data/software-ld.json",
+            "markers": ['"@type"', '"mainEntity"', '"SoftwareSourceCode"'],
         },
         {
             "path": "search.html",

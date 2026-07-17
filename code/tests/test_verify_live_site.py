@@ -61,11 +61,14 @@ def test_load_dynamic_checks_uses_current_counts(monkeypatch, tmp_path):
 
     pubs = next(check for check in checks if check["path"] == "publications.html")
     software = next(check for check in checks if check["path"] == "software.html")
+    software_export = next(check for check in checks if check["path"] == "data/software-ld.json")
 
     assert any("168 Research Works" in marker for marker in pubs["markers"])
     assert any("58 owned" in marker for marker in software["markers"])
     assert any("33 catalogued" in marker for marker in software["markers"])
     assert any(f"{payload['counts']['github_inventory']['public']} public repositories" in marker for marker in software["markers"])
+    assert '"@type":"CollectionPage"' in software["markers"]
+    assert '"SoftwareSourceCode"' in software_export["markers"]
 
 
 def test_cache_busted_url_preserves_path_and_adds_unique_query():
