@@ -78,6 +78,15 @@ def test_cache_busted_url_preserves_path_and_adds_unique_query():
     assert "__verify=" in url
 
 
+@pytest.mark.parametrize("status", ["building", "queued", "BUILDING"])
+def test_pages_build_states_are_deployment_pending(status):
+    assert vl.is_pages_deployment_pending(status)
+
+
+def test_pages_built_is_not_deployment_pending():
+    assert not vl.is_pages_deployment_pending("built")
+
+
 def test_count_fingerprint_ignores_generated_timestamp():
     current = {
         "works": 194,

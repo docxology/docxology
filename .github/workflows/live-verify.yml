@@ -44,8 +44,9 @@ jobs:
               item for item in report.get("results", [])
               if not item.get("ok") and not item.get("deployment_pending")
           ]
-          if not report.get("github_pages", {}).get("ok"):
-              hard_failures.append({"path": "GitHub Pages API", "status": report.get("github_pages", {}).get("status")})
+          pages = report.get("github_pages", {})
+          if not pages.get("ok") and not pages.get("deployment_pending"):
+              hard_failures.append({"path": "GitHub Pages API", "status": pages.get("status")})
           if hard_failures:
               raise SystemExit(f"Live verification hard failures: {hard_failures}")
           if not report.get("overall_ok"):

@@ -25,6 +25,12 @@ except ImportError:  # pragma: no cover - package import path
 
 OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
+PAGES_DEPLOYMENT_PENDING_STATUSES = frozenset({"building", "queued"})
+
+
+def is_pages_deployment_pending(status: object) -> bool:
+    """Return whether Pages is propagating a build rather than failing."""
+    return str(status or "").lower() in PAGES_DEPLOYMENT_PENDING_STATUSES
 
 
 def _read_current_counts() -> dict:
@@ -241,6 +247,7 @@ def pages_status(timeout: int) -> dict:
             return {
                 "ok": payload.get("status") == "built",
                 "status": payload.get("status", ""),
+                "deployment_pending": is_pages_deployment_pending(payload.get("status")),
                 "cname": payload.get("cname", ""),
                 "source": payload.get("source", {}),
                 "html_url": payload.get("html_url", ""),
@@ -262,6 +269,7 @@ def pages_status(timeout: int) -> dict:
     return {
         "ok": payload.get("status") == "built",
         "status": payload.get("status", ""),
+        "deployment_pending": is_pages_deployment_pending(payload.get("status")),
         "cname": payload.get("cname", ""),
         "source": payload.get("source", {}),
         "html_url": payload.get("html_url", ""),
