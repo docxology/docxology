@@ -143,6 +143,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/ensure_agent_navigation.py",
     },
     {
+        "name": "GitHub Pages artifact",
+        "outputs": ["bounded _site/ deployment projection"],
+        "sources": ["tracked repository files", "code/orchestrators/build_pages_artifact.py", "docs/operations/github-pages-artifact.md"],
+        "command": "python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size",
+    },
+    {
         "name": "Resume and CV exports",
         "outputs": [
             "data/resume.json",

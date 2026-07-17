@@ -118,45 +118,6 @@ def render(artworks: list[dict], local: dict[str, str]) -> str:
             break
     images = "\n".join(blocks)
 
-    # Paper-extracted images: one <url> block per paper that has extracted images,
-    # each listing the figures found in papers/{folder}/images/.
-    paper_blocks: list[str] = []
-    papers_dir = REPO_ROOT / "papers"
-    if papers_dir.is_dir():
-        for paper_dir in sorted(papers_dir.iterdir()):
-            if not paper_dir.is_dir():
-                continue
-            img_dir = paper_dir / "images"
-            if not img_dir.is_dir():
-                continue
-            img_files = sorted(
-                f for f in img_dir.iterdir()
-                if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff")
-            )
-            if not img_files:
-                continue
-            # The canonical page for each paper is its folder index.html
-            page_url = SITE + "papers/" + quote(paper_dir.name) + "/"
-            img_entries: list[str] = []
-            for img_file in img_files:
-                img_url = SITE + "papers/" + quote(paper_dir.name) + "/images/" + quote(img_file.name)
-                img_entries.append(
-                    "    <image:image>\n"
-                    f"      <image:loc>{html.escape(img_url, quote=True)}</image:loc>\n"
-                    f"      <image:title>{html.escape(paper_dir.name + ' — ' + img_file.stem, quote=True)}</image:title>\n"
-                    "    </image:image>"
-                )
-            paper_blocks.append(
-                f"  <url>\n"
-                f"    <loc>{page_url}</loc>\n"
-                f"{chr(10).join(img_entries)}\n"
-                f"  </url>"
-            )
-
-    paper_section = ""
-    if paper_blocks:
-        paper_section = "\n" + "\n".join(paper_blocks)
-
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
@@ -165,7 +126,6 @@ def render(artworks: list[dict], local: dict[str, str]) -> str:
         f"    <loc>{GALLERY_URL}</loc>\n"
         f"{images}\n"
         "  </url>\n"
-        f"{paper_section}\n"
         "</urlset>\n"
     )
 

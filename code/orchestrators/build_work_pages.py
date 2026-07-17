@@ -259,7 +259,12 @@ def full_text_link(docs_path: str) -> str:
 
 
 def image_gallery_link_work(docs_path: str) -> str:
-    """Return a link to the paper's images/ directory if it has images."""
+    """Return the canonical GitHub image directory if paper images exist.
+
+    Paper-extracted binaries are retained in the repository but excluded from
+    the bounded Pages artifact. Linking to GitHub keeps the gallery discoverable
+    without creating broken relative links on the deployed site.
+    """
     if not docs_path:
         return ""
     images_dir = REPO_ROOT / docs_path / "images"
@@ -271,7 +276,7 @@ def image_gallery_link_work(docs_path: str) -> str:
     )
     if count == 0:
         return ""
-    return f"../{docs_path.rstrip('/')}/images/"
+    return f"https://github.com/docxology/docxology/tree/main/{docs_path.rstrip('/')}/images"
 
 
 def source_repository_url(docs_path: str) -> str:

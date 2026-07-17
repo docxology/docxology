@@ -34,7 +34,7 @@ def test_image_sitemap_uses_deployed_image_sources():
     local_papers = text.count("<image:loc>https://danielarifriedman.com/papers/")
     assert flickr + local_art + local_papers == total
     assert local_art == 0  # gallery images use Flickr URLs
-    assert local_papers > 0  # extracted paper figures are served locally
+    assert local_papers == 0  # paper figures remain repository-only; Pages links to GitHub
 
 
 def test_robots_references_image_sitemap():

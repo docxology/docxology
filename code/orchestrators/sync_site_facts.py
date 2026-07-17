@@ -17,6 +17,7 @@ TARGETS = [
     REPO_ROOT / "publications.html",
     REPO_ROOT / "discovery.html",
     REPO_ROOT / "pages" / "DISCOVERY.md",
+    REPO_ROOT / "llms.txt",
     REPO_ROOT / "art.html",
     REPO_ROOT / "videos.html",
 ]
@@ -107,6 +108,12 @@ def render(path: Path) -> str:
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
+    elif path.name == "llms.txt":
+        text = re.sub(
+            r"latest snapshot records \d+ paper folders, \d+ full-text extractions, \d+ image galleries, and [\d,]+ extracted images",
+            f"latest snapshot records {folders} paper folders, {full_text} full-text extractions, {galleries} image galleries, and {images:,} extracted images",
+            text,
+        )
     elif path.name == "art.html":
         # The gallery is client-rendered, but crawler/social metadata and the
         # visible heading must agree with the generated artwork export.
@@ -131,7 +138,7 @@ def render(path: Path) -> str:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
     # Discovery pages also link dated generated reports; keep those pointers
     # aligned with the newest report artifacts in the same rebuild.
-    if path.name in {"discovery.html", "DISCOVERY.md"}:
+    if path.name in {"discovery.html", "DISCOVERY.md", "llms.txt"}:
         for prefix, suffix in (
             ("reconciliation", "md"),
             ("asset_size", "json"),

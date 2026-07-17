@@ -291,6 +291,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/build_image_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/ensure_agent_navigation.py", "--check"])
+    run(["python3", "code/orchestrators/build_pages_artifact.py", "--check-size-only"])
     run(["python3", "code/orchestrators/check_external_links.py", "--check"])
     run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])

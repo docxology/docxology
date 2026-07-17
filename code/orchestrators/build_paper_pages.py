@@ -9,6 +9,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
@@ -81,7 +82,7 @@ def pdf_rows(folder: Path) -> str:
 
 
 def image_gallery_link(folder: Path) -> str:
-    """Return a link to the images/ directory if it contains images, plus thumbnail previews."""
+    """Return GitHub-backed image previews for the repository-only binaries."""
     images_dir = folder / "images"
     if not images_dir.is_dir():
         return ""
@@ -102,10 +103,16 @@ def image_gallery_link(folder: Path) -> str:
         page_match = __import__('re').search(r'(?:page|slide)(\d+)', img.name)
         page_num = page_match.group(1) if page_match else img.stem
         alt_text = f"Figure from {folder_title}, page {page_num}"
-        thumb_html += f'<a href="images/{img.name}" class="thumb-link"><img src="images/{img.name}" alt="{alt_text}" loading="lazy"></a>'
+        raw_url = "https://raw.githubusercontent.com/docxology/docxology/main/" + \
+            "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images", img.name))
+        tree_url = "https://github.com/docxology/docxology/tree/main/" + \
+            "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images"))
+        thumb_html += f'<a href="{h(tree_url)}" class="thumb-link"><img src="{h(raw_url)}" alt="{h(alt_text)}" loading="lazy"></a>'
     thumb_html += "</div>"
     more = f' <span class="muted">+{count - 6} more</span>' if count > 6 else ""
-    return f'<a class="btn btn-outline" href="images/">Extracted Images ({count})</a>{more}{thumb_html}'
+    tree_url = "https://github.com/docxology/docxology/tree/main/" + \
+        "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images"))
+    return f'<a class="btn btn-outline" href="{h(tree_url)}">Extracted Images ({count}) — GitHub</a>{more}{thumb_html}'
 
 
 def required_links(folder: Path) -> str:
