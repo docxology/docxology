@@ -19,6 +19,7 @@ DATASET_PATHS = {
     "artworks_index": "data/artworks-index.json",
     "artworks": "data/artworks.json",
     "videos": "data/videos.json",
+    "videos_index": "data/videos-index.json",
     "search": "search-index.json",
     "claims": "data/claims.json",
     "coverage_exceptions": "data/coverage-exceptions.json",
@@ -103,6 +104,22 @@ SCHEMAS = {
             "thumb": "HTTPS thumbnail URL",
         },
     },
+    "VideoIndex": {
+        "type": "object",
+        "description": "Compact video timeline projection; complete topic, relationship, and transcript metadata lives in VideoObject.",
+        "required": ["schema_version", "generated_at", "source", "count", "counts", "channels", "fields", "detail_source", "videos"],
+        "fields": {
+            "schema_version": "VideoIndex.v1",
+            "generated_at": "ISO-8601 generation timestamp",
+            "source": "data/videos.json",
+            "count": "integer",
+            "counts": "channel totals and transcript count",
+            "channels": "channel freshness metadata",
+            "fields": "ordered compact video fields",
+            "detail_source": "complete VideoObject export",
+            "videos": "array of compact timeline records",
+        },
+    },
     "Repository": {
         "type": "object",
         "description": "One public repository in the complete GitHub inventory, including forks.",
@@ -177,14 +194,22 @@ SCHEMAS = {
     },
     "RepositoryClassification": {
         "type": "object",
-        "description": "Review queue row for a public repository outside the curated software catalog.",
-        "required": ["full_name", "owner", "html_url", "fork", "archived", "catalog_role", "exclusion_reason", "review_status"],
+        "description": "Review queue row for a public repository outside the curated software catalog, including description-quality triage.",
+        "required": ["full_name", "name", "owner", "html_url", "fork", "archived", "private", "description", "description_quality", "catalog_role", "exclusion_reason", "review_status"],
         "fields": {
             "full_name": "string; owner/name",
+            "name": "string; repository name",
             "owner": "string",
             "html_url": "https URL",
             "fork": "boolean",
             "archived": "boolean",
+            "private": "boolean; inventory privacy state",
+            "description": "string; current GitHub description or empty",
+            "description_quality": "missing, short, or substantive; triage signal only",
+            "language": "string or empty",
+            "topics": "array of GitHub topics",
+            "recently_updated": "boolean; current inventory freshness flag",
+            "relevance": "unknown until manual review",
             "catalog_role": "not_curated until manually reviewed",
             "exclusion_reason": "fork_not_curated or primary_repo_requires_manual_review",
             "review_status": "defer, accept, reject, or supersede",
@@ -223,6 +248,7 @@ def payload() -> dict:
     artworks = load_json("data/artworks.json")
     artworks_index = load_json("data/artworks-index.json")
     videos = load_json("data/videos.json")
+    videos_index = load_json("data/videos-index.json")
     works = load_json("data/works.json")
     software = load_json("data/software.json")
     repositories = load_json("data/github-repositories.json")
@@ -236,7 +262,7 @@ def payload() -> dict:
     dataset_hashes = {key: sha256(REPO_ROOT / path) for key, path in DATASET_PATHS.items() if (REPO_ROOT / path).is_file()}
     dataset_hashes["current_counts"] = sha256(COUNTS)
     return {
-        "schema_version": "1.2",
+        "schema_version": "1.3",
         "generated_at": current.get("generated_at"),
         "canonical_origin": "https://danielarifriedman.com/",
         "canonical_sources": {
@@ -275,6 +301,7 @@ def payload() -> dict:
             "artworks": {"path": "/data/artworks.json", "count": artworks.get("count", len(artworks.get("artworks", []))), "schema": "VisualArtwork"},
             "artworks_index": {"path": "/data/artworks-index.json", "count": artworks_index.get("count", len(artworks_index.get("artworks", []))), "schema": "ArtworkIndex"},
             "videos": {"path": "/data/videos.json", "count": videos.get("count", len(videos.get("videos", []))), "schema": "VideoObject"},
+            "videos_index": {"path": "/data/videos-index.json", "count": videos_index.get("count", len(videos_index.get("videos", []))), "schema": "VideoIndex"},
             "search": {"path": "/search-index.json", "count": None, "schema": "SearchResult"},
             "claims": {"path": "/data/claims.json", "count": None, "schema": "ClaimWithEvidence"},
             "coverage_exceptions": {"path": "/data/coverage-exceptions.json", "count": len(coverage.get("exceptions", [])), "schema": "CoverageException"},
@@ -292,11 +319,15 @@ def payload() -> dict:
             {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
         ],
         "schemas": SCHEMAS,
-        "schema_registry_version": "1.0",
+        "schema_registry_version": "1.1",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "SoftwareRepository": software.get("repositories", [])[:1],
             "ArtworkIndex": artworks_index.get("artworks", [])[:1],
+            "VideoIndex": {
+                **{key: videos_index.get(key) for key in ("schema_version", "generated_at", "source", "count", "counts", "channels", "fields", "detail_source")},
+                "videos": videos_index.get("videos", [])[:1],
+            },
             "Repository": repositories.get("repositories", [])[:1],
             "ClaimWithEvidence": claims.get("claims", [])[:1],
             "SearchResult": search.get("items", [])[:1],

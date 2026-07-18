@@ -97,6 +97,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("software", "Software Catalog", "data/software.json", f"{software_count} catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "GitHub Repository Inventory", "data/github-repositories.json", "Generated public docxology and Active Inference Institute repository data; the primary HTML page excludes forks and links to a separate fork archive."),
     ("videos", "YouTube Video Metadata", "data/videos.json", f"{video_count} personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status."),
+    ("videos-index", "Video Timeline Index", "data/videos-index.json", f"Compact {video_count}-video projection used by the interactive timeline; detail metadata remains in data/videos.json."),
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
     ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),

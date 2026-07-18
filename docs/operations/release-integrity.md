@@ -31,6 +31,11 @@ metadata. The complete `data/artworks.json` record, including resolution maps,
 is loaded only for description search or an opened lightbox. Rebuild the compact
 projection through `regenerate_all.py`; never hand-edit either export.
 
+The video timeline uses `data/videos-index.json` for its initial chronology,
+channel, and display metadata. The complete `data/videos.json` export remains
+available for agents and downloads; topic, relationship, and transcript detail
+is not loaded by the timeline until a visitor opens a stable video page.
+
 `browser_qa.py` records the known Chromium warning that meta-delivered CSP
 cannot enforce `frame-ancestors`. It is retained as a warning because GitHub
 Pages does not expose response-header control; any other console or page error

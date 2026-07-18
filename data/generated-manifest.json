@@ -338,7 +338,8 @@
       "name": "Video pages",
       "outputs": [
         "videos/*.html",
-        "data/videos.json"
+        "data/videos.json",
+        "data/videos-index.json"
       ],
       "sources": [
         "code/data/youtube_personal.json",

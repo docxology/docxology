@@ -3,10 +3,7 @@
 //  DATA LAYER
 // ═══════════════════════════════════════════════════════════════
 
-const CHANNEL_CONFIG = {
-  personal:  { url: 'code/data/youtube_personal.json',  yt: 'https://www.youtube.com/@danielarifriedman' },
-  institute: { url: 'code/data/youtube_institute.json', yt: 'https://www.youtube.com/@activeinference' },
-};
+const VIDEO_INDEX_URL = 'data/videos-index.json';
 
 // ═══════════════════════════════════════════════════════════════
 //  ZOOM / LAYOUT CONSTANTS
@@ -42,16 +39,21 @@ let imgObserver = null;
 // ═══════════════════════════════════════════════════════════════
 
 async function init() {
-  const results = await Promise.allSettled([
-    fetch(CHANNEL_CONFIG.personal.url).then(r => r.json()),
-    fetch(CHANNEL_CONFIG.institute.url).then(r => r.json()),
-  ]);
+  let payload;
+  try {
+    const response = await fetch(VIDEO_INDEX_URL);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    payload = await response.json();
+  } catch (error) {
+    document.getElementById('loading').innerHTML =
+      '<p style="color:var(--text-secondary)">Video index unavailable. Run <code>python3 code/orchestrators/build_video_pages.py</code> to generate data.</p>';
+    return;
+  }
 
-  const [personalResult, instituteResult] = results;
-  const personalVideos  = personalResult.status  === 'fulfilled' ? personalResult.value.videos  : [];
-  const instituteVideos = instituteResult.status === 'fulfilled' ? instituteResult.value.videos : [];
-  const personalMeta    = personalResult.status  === 'fulfilled' ? personalResult.value.meta    : null;
-  const instituteMeta   = instituteResult.status === 'fulfilled' ? instituteResult.value.meta   : null;
+  const personalVideos  = (payload.videos || []).filter(video => video.channel === 'personal');
+  const instituteVideos = (payload.videos || []).filter(video => video.channel === 'institute');
+  const personalMeta    = payload.channels?.personal || null;
+  const instituteMeta   = payload.channels?.institute || null;
 
   allVideos = [...personalVideos, ...instituteVideos];
   allVideos.sort((a, b) => a.upload_date.localeCompare(b.upload_date));

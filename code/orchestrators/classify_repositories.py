@@ -21,13 +21,27 @@ def build_payload() -> dict:
             continue
         fork = bool(repo.get("fork"))
         archived = bool(repo.get("archived"))
+        description = str(repo.get("description") or "").strip()
+        if not description:
+            description_quality = "missing"
+        elif len(description) < 40:
+            description_quality = "short"
+        else:
+            description_quality = "substantive"
         rows.append(
             {
                 "full_name": repo.get("full_name"),
+                "name": repo.get("name"),
                 "owner": repo.get("owner"),
                 "html_url": repo.get("html_url"),
                 "fork": fork,
                 "archived": archived,
+                "private": bool(repo.get("private")),
+                "description": description,
+                "description_quality": description_quality,
+                "language": repo.get("language") or "",
+                "topics": repo.get("topics") or [],
+                "recently_updated": bool(repo.get("recently_updated")),
                 "relevance": "unknown",
                 "catalog_role": "not_curated",
                 "exclusion_reason": "fork_not_curated" if fork else "primary_repo_requires_manual_review",
@@ -45,6 +59,9 @@ def build_payload() -> dict:
             "forks": sum(row["fork"] for row in rows),
             "primary_requires_review": sum(not row["fork"] for row in rows),
             "archived": sum(row["archived"] for row in rows),
+            "missing_description": sum(row["description_quality"] == "missing" for row in rows),
+            "short_description": sum(row["description_quality"] == "short" for row in rows),
+            "substantive_description": sum(row["description_quality"] == "substantive" for row in rows),
         },
         "repositories": rows,
     }

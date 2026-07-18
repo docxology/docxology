@@ -76,6 +76,11 @@ CHAIN: list[tuple[str, list[str]]] = [
     # producers above. (validate_repo's --check order differs because --check never
     # writes a new dated report; in write mode the order matters.)
     ("build_catalog.py", []),                    # links latest asset_size/a11y/reconciliation reports
+    # The catalog is itself in the public HTML asset budget. Re-run the two
+    # report producers after it is rendered so adding a dataset cannot leave
+    # the checked-in reports one dependency step behind.
+    ("audit_assets.py", []),
+    ("accessibility_audit.py", []),
     ("build_search_index.py", []),               # links latest reports + indexes pages
     ("generate_feed.py", []),
     ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit

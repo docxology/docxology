@@ -257,7 +257,7 @@ ARTIFACTS = [
     },
     {
         "name": "Video pages",
-        "outputs": ["videos/*.html", "data/videos.json"],
+        "outputs": ["videos/*.html", "data/videos.json", "data/videos-index.json"],
         "sources": [
             "code/data/youtube_personal.json",
             "code/data/youtube_institute.json",

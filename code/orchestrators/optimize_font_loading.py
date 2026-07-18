@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Make Google Fonts non-render-blocking across all HTML pages.
+"""Audit and migrate legacy Google Fonts links across HTML pages.
+
+The current site intentionally uses same-origin/system fallbacks and has no
+runtime font provider. This idempotent maintenance helper remains for old
+pages or imported content that may still contain a Google Fonts link; it
+converts any such legacy link to the CSP-safe non-blocking pattern below.
 
 Converts:
   <link href="...fonts.googleapis.com/css2..." rel="stylesheet">

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "generated_at": "2026-07-18T01:09:49+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
@@ -142,6 +142,11 @@
       "path": "/data/videos.json",
       "count": 1127,
       "schema": "VideoObject"
+    },
+    "videos_index": {
+      "path": "/data/videos-index.json",
+      "count": 1127,
+      "schema": "VideoIndex"
     },
     "search": {
       "path": "/search-index.json",
@@ -304,6 +309,32 @@
         "thumb": "HTTPS thumbnail URL"
       }
     },
+    "VideoIndex": {
+      "type": "object",
+      "description": "Compact video timeline projection; complete topic, relationship, and transcript metadata lives in VideoObject.",
+      "required": [
+        "schema_version",
+        "generated_at",
+        "source",
+        "count",
+        "counts",
+        "channels",
+        "fields",
+        "detail_source",
+        "videos"
+      ],
+      "fields": {
+        "schema_version": "VideoIndex.v1",
+        "generated_at": "ISO-8601 generation timestamp",
+        "source": "data/videos.json",
+        "count": "integer",
+        "counts": "channel totals and transcript count",
+        "channels": "channel freshness metadata",
+        "fields": "ordered compact video fields",
+        "detail_source": "complete VideoObject export",
+        "videos": "array of compact timeline records"
+      }
+    },
     "Repository": {
       "type": "object",
       "description": "One public repository in the complete GitHub inventory, including forks.",
@@ -413,23 +444,35 @@
     },
     "RepositoryClassification": {
       "type": "object",
-      "description": "Review queue row for a public repository outside the curated software catalog.",
+      "description": "Review queue row for a public repository outside the curated software catalog, including description-quality triage.",
       "required": [
         "full_name",
+        "name",
         "owner",
         "html_url",
         "fork",
         "archived",
+        "private",
+        "description",
+        "description_quality",
         "catalog_role",
         "exclusion_reason",
         "review_status"
       ],
       "fields": {
         "full_name": "string; owner/name",
+        "name": "string; repository name",
         "owner": "string",
         "html_url": "https URL",
         "fork": "boolean",
         "archived": "boolean",
+        "private": "boolean; inventory privacy state",
+        "description": "string; current GitHub description or empty",
+        "description_quality": "missing, short, or substantive; triage signal only",
+        "language": "string or empty",
+        "topics": "array of GitHub topics",
+        "recently_updated": "boolean; current inventory freshness flag",
+        "relevance": "unknown until manual review",
         "catalog_role": "not_curated until manually reviewed",
         "exclusion_reason": "fork_not_curated or primary_repo_requires_manual_review",
         "review_status": "defer, accept, reject, or supersede"
@@ -474,7 +517,7 @@
       }
     }
   },
-  "schema_registry_version": "1.0",
+  "schema_registry_version": "1.1",
   "schema_examples": {
     "Work": [
       {
@@ -531,6 +574,55 @@
         "thumb": "https://live.staticflickr.com/65535/53164392892_f86440bb11_m.jpg"
       }
     ],
+    "VideoIndex": {
+      "schema_version": "VideoIndex.v1",
+      "generated_at": "2026-07-18T01:03:47Z",
+      "source": "data/videos.json",
+      "count": 1127,
+      "counts": {
+        "total": 1127,
+        "personal": 405,
+        "institute": 722,
+        "with_transcripts": 4
+      },
+      "channels": {
+        "personal": {
+          "channel_id": "personal",
+          "channel_url": "https://www.youtube.com/@danielarifriedman",
+          "fetched_at": "2026-06-20T05:01:37.205539+00:00",
+          "video_count": 405,
+          "schema_version": "1.0"
+        },
+        "institute": {
+          "channel_id": "institute",
+          "channel_url": "https://www.youtube.com/@activeinference",
+          "fetched_at": "2026-06-20T05:01:37.256048+00:00",
+          "video_count": 722,
+          "schema_version": "1.0"
+        }
+      },
+      "fields": [
+        "id",
+        "title",
+        "channel",
+        "upload_date",
+        "year",
+        "duration",
+        "view_count"
+      ],
+      "detail_source": "data/videos.json",
+      "videos": [
+        {
+          "id": "kxKgdvFHOLM",
+          "title": "Red Harvester Ants entering and exiting a laboratory nest",
+          "channel": "personal",
+          "upload_date": "20150517",
+          "year": 2015,
+          "duration": 97.0,
+          "view_count": 8
+        }
+      ]
+    },
     "Repository": [
       {
         "name": "act_inf_metaanalysis",
@@ -610,10 +702,17 @@
     "RepositoryClassification": [
       {
         "full_name": "ActiveInferenceInstitute/act_inf_metaanalysis",
+        "name": "act_inf_metaanalysis",
         "owner": "ActiveInferenceInstitute",
         "html_url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
         "fork": false,
         "archived": false,
+        "private": false,
+        "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+        "description_quality": "substantive",
+        "language": "TeX",
+        "topics": [],
+        "recently_updated": true,
         "relevance": "unknown",
         "catalog_role": "not_curated",
         "exclusion_reason": "primary_repo_requires_manual_review",
@@ -726,11 +825,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 884308773,
+        "source_bytes": 885561258,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4404,
-        "artifact_bytes": 885085717
+        "artifact_file_count": 4411,
+        "artifact_bytes": 886339389
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -749,10 +848,11 @@
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "ad289572c03c8e32032d75a98952dd94baca1ea45ef594005f247fd9082025b9",
+    "videos_index": "143721430d94d0b419dae4deae274ee6e9909761949317f65d4e152b0d92c317",
     "search": "36a503b9e6f15c25efa4d353fdf1a09f7dd1a5710f66a5fc8242f313c8790cf5",
     "claims": "5c541283194a7354543c867b5e45b986643ddef32df5c54c84ebd8d292b5a2b2",
     "coverage_exceptions": "e3eeb9af37041dc9cfec7fb8e9f0139a82f44e002ae8b9ad8e95273fe7e0c6ab",
-    "repository_classification": "f42d2361de69cee6c46be457c69a35032a459af23f3934188d75b9f0df69b3e1",
+    "repository_classification": "8261e59c3bf4fceb57fd6b24e4173ea06765224e499d06229addabed2149394a",
     "current_counts": "0784c55f7fab5f54371b28bb03701de022f8f26272b2e4bbe88267e61ed5c6b8"
   },
   "source_provenance": {

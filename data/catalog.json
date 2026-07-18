@@ -154,6 +154,29 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#videos-index",
+      "name": "Video Timeline Index",
+      "description": "Compact 1127-video projection used by the interactive timeline; detail metadata remains in data/videos.json.",
+      "url": "https://danielarifriedman.com/data/videos-index.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/videos-index.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#people",
       "name": "People Index",
       "description": "Compact collaborator and identity context for agentic discovery.",

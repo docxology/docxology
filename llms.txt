@@ -15,7 +15,7 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Human homepage: https://danielarifriedman.com/
 - Agentic discovery map: https://danielarifriedman.com/discovery.html
 - Stable agent route manifest: https://danielarifriedman.com/data/agent-index.json
-- Manifest schema registry: `data/agent-index.json` → `schemas`; it documents Work, SoftwareRepository, Repository, ClaimWithEvidence, SearchResult, and GeneratedReport fields.
+- Manifest schema registry: `data/agent-index.json` → `schemas` (manifest 1.3, registry 1.1); it documents Work, SoftwareRepository, Repository, ArtworkIndex, VideoIndex, ClaimWithEvidence, SearchResult, and GeneratedReport fields.
 - Human search page: https://danielarifriedman.com/search.html
 - OpenSearch descriptor: https://danielarifriedman.com/opensearch.xml
 - Agent start guide: https://github.com/docxology/docxology/blob/main/AGENT_START.md
@@ -57,6 +57,9 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Works JSON (canonical machine-readable registry of every work — num, citation_key, url, doi, paper-folder): https://danielarifriedman.com/data/works.json
 - Publications JSON-LD (CollectionPage mainEntity): https://danielarifriedman.com/data/publications-ld.json
 - Artwork JSON: https://danielarifriedman.com/data/artworks.json
+- Artwork compact index: https://danielarifriedman.com/data/artworks-index.json
+- Video compact timeline index: https://danielarifriedman.com/data/videos-index.json
+- Complete video metadata JSON: https://danielarifriedman.com/data/videos.json
 - Software JSON: https://danielarifriedman.com/data/software.json
 - Software JSON-LD: https://danielarifriedman.com/data/software-ld.json
 - Paired-publication decisions JSON: https://danielarifriedman.com/data/paired-publication-decisions.json

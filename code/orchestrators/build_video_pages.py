@@ -13,6 +13,7 @@ from urllib.parse import quote_plus
 REPO_ROOT = Path(__file__).resolve().parents[2]
 VIDEO_DIR = REPO_ROOT / "videos"
 DATA_OUT = REPO_ROOT / "data" / "videos.json"
+INDEX_OUT = REPO_ROOT / "data" / "videos-index.json"
 TRANSCRIPT_DIR = REPO_ROOT / "data" / "video-transcripts"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
@@ -418,6 +419,30 @@ def build_records(generated_at: str | None = None) -> dict:
     }
 
 
+def compact_index(payload: dict) -> dict:
+    """Return the bounded projection used by the interactive timeline.
+
+    ``data/videos.json`` remains the complete agent/download export, including
+    inferred topics, related works, and transcript excerpts. The timeline only
+    needs identity, chronology, channel metadata, and display counts, so it
+    should not download detail-only fields on first paint.
+    """
+    fields = ("id", "title", "channel", "upload_date", "year", "duration", "view_count")
+    videos = [{field: video.get(field) for field in fields} for video in payload.get("videos", [])]
+    return {
+        "schema_version": "VideoIndex.v1",
+        "generated_at": payload.get("generated_at"),
+        "source": "data/videos.json",
+        "source_files": payload.get("source_files", []),
+        "count": payload.get("count", len(videos)),
+        "counts": payload.get("counts", {}),
+        "channels": payload.get("channels", {}),
+        "fields": list(fields),
+        "detail_source": "data/videos.json",
+        "videos": videos,
+    }
+
+
 def related_pages(video: dict) -> list[dict]:
     pages = [
         {"label": "Interactive video timeline", "url": "/videos.html"},
@@ -706,8 +731,10 @@ def existing_generated_at() -> str | None:
 
 def outputs(generated_at: str | None = None) -> dict[Path, str]:
     payload = build_records(generated_at)
+    index = compact_index(payload)
     out = {
         DATA_OUT: json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        INDEX_OUT: json.dumps(index, indent=2, ensure_ascii=False) + "\n",
         VIDEO_DIR / "index.html": render_index(payload),
     }
     for video in payload["videos"]:

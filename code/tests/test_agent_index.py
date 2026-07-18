@@ -12,7 +12,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 def test_agent_index_is_current_and_has_stable_routes():
     path = REPO_ROOT / "data" / "agent-index.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
-    assert payload["schema_version"] == "1.2"
+    assert payload["schema_version"] == "1.3"
     routes = {route["id"]: route for route in payload["routes"]}
     assert routes["publications"]["path"] == "/publications.html"
     assert routes["repositories"]["path"] == "/repositories.html"
@@ -21,11 +21,17 @@ def test_agent_index_is_current_and_has_stable_routes():
     assert payload["datasets"]["repositories"]["count"] == json.loads(
         (REPO_ROOT / "data/github-repositories.json").read_text()
     )["counts"]["total"]
+    assert payload["datasets"]["videos_index"]["schema"] == "VideoIndex"
+    assert payload["datasets"]["videos_index"]["count"] == json.loads(
+        (REPO_ROOT / "data/videos-index.json").read_text()
+    )["count"]
     assert set(("Work", "SoftwareRepository", "Repository", "ClaimWithEvidence", "SearchResult", "GeneratedReport")) <= set(
         payload["schemas"]
     )
     assert payload["datasets"]["artworks_index"]["schema"] == "ArtworkIndex"
     assert payload["schema_examples"]["ArtworkIndex"]
+    assert payload["schema_examples"]["VideoIndex"]["schema_version"] == "VideoIndex.v1"
+    assert payload["schema_examples"]["VideoIndex"]["videos"]
     assert payload["schemas"]["Work"]["fields"]["citation_key"]
     assert payload["schema_examples"]["Work"]
     assert payload["dataset_hashes"]["works"]

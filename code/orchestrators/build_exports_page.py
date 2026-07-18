@@ -51,6 +51,8 @@ EXPORT_ROW_SPECS: list[tuple[str, str, str, str]] = [
     ("resume/resume.html", "Accessible HTML CV", "No-JavaScript semantic CV view with PDF, plaintext, JSON, and verification links.", "text/html"),
     ("data/artworks-index.json", "Artwork Index JSON", "Compact gallery grid and search metadata for pen-and-ink and blockchain art.", "application/json"),
     ("data/artworks.json", "Artworks JSON", "Complete gallery metadata, resolution maps, and media URLs for pen-and-ink and blockchain art.", "application/json"),
+    ("data/videos-index.json", "Video Timeline Index", "Compact timeline projection; complete video metadata remains available in data/videos.json.", "application/json"),
+    ("data/videos.json", "Video Metadata JSON", "Complete video metadata with topics, related works, page URLs, and transcript cache status.", "application/json"),
     ("data/github-repositories.json", "GitHub inventory JSON", "Full public repository data; the human-facing inventory separates primary repositories from forks.", "application/json"),
     ("data/work-enrichment.json", "Work enrichment JSON", "Abstracts and keywords extracted from paper folders.", "application/json"),
     ("data/generated-manifest.json", "Generated manifest JSON", "Source-to-output rebuild map.", "application/json"),

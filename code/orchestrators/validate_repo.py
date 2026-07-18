@@ -32,6 +32,7 @@ REQUIRED_JSON_FILES: list[str] = [
     "data/github-repositories.json",
     "data/artworks.json",
     "data/artworks-index.json",
+    "data/videos-index.json",
     "data/works.json",
     "data/work-enrichment.json",
     "data/software-ld.json",

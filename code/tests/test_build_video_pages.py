@@ -51,6 +51,47 @@ def test_related_pages_adds_software_for_computational_video():
     assert "/videos.html" in urls
 
 
+def test_compact_video_index_excludes_detail_only_metadata():
+    payload = {
+        "generated_at": "2026-07-18T00:00:00Z",
+        "source_files": ["code/data/youtube_personal.json"],
+        "count": 1,
+        "counts": {"total": 1, "personal": 1, "institute": 0, "with_transcripts": 0},
+        "channels": {"personal": {"fetched_at": "2026-07-17T00:00:00Z"}},
+        "videos": [{
+            "id": "abc123",
+            "title": "Example",
+            "channel": "personal",
+            "upload_date": "20260717",
+            "year": 2026,
+            "duration": 42,
+            "view_count": 7,
+            "topics": [{"label": "Research"}],
+            "related_works": [{"citation_key": "Example2026"}],
+            "transcript_excerpt": "detail text",
+        }],
+    }
+    index = build_video_pages.compact_index(payload)
+    assert index["schema_version"] == "VideoIndex.v1"
+    assert index["detail_source"] == "data/videos.json"
+    assert index["videos"] == [{
+        "id": "abc123",
+        "title": "Example",
+        "channel": "personal",
+        "upload_date": "20260717",
+        "year": 2026,
+        "duration": 42,
+        "view_count": 7,
+    }]
+
+
+def test_timeline_runtime_uses_compact_index_not_raw_channel_exports():
+    runtime = (REPO_ROOT / "js" / "videos-page.js").read_text(encoding="utf-8")
+    assert "data/videos-index.json" in runtime
+    assert "code/data/youtube_personal.json" not in runtime
+    assert "code/data/youtube_institute.json" not in runtime
+
+
 def test_render_video_page_uses_local_page_and_youtube_embed(monkeypatch):
     video = sample_video()
     video["topics"] = build_video_pages.infer_topics(video)

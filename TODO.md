@@ -81,7 +81,7 @@ criteria, and dependencies. Re-review this file before each public release.
 - Priority: P1
 - Owner: WEB DEVELOPER / MAINTAINER
 - Trigger: monthly and after data or asset growth
-- Deliverable: retain the compact artwork index with lazy detail loading; add the equivalent compact video projection, document per-asset budgets, and review Pages growth trends
+- Deliverable: retain compact artwork and video indexes with lazy detail loading, document per-asset budgets, and review Pages growth trends
 - Acceptance: current HTML, JS, JSON, hero, thumbnail, CV, and generated-data budgets are measured and remain below documented thresholds; large interactive datasets do not load detail-only payloads before user need
 - Dependencies: Pages artifact manifest, asset audit, browser QA
 
