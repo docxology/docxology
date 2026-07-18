@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "b857ad5e5d4ba82a4b073e4eb5340b11be5c6a12",
+  "source_commit_at_generation": "8fa412c9e0d98760cedb98cb6fd63af18e01d779",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,24 +26,24 @@
     "data/current-counts.json": "0784c55f7fab5f54371b28bb03701de022f8f26272b2e4bbe88267e61ed5c6b8",
     "data/coverage-exceptions.json": "e3eeb9af37041dc9cfec7fb8e9f0139a82f44e002ae8b9ad8e95273fe7e0c6ab",
     "data/repository-classification.json": "8261e59c3bf4fceb57fd6b24e4173ea06765224e499d06229addabed2149394a",
-    "data/agent-index.json": "40d8c444d469b6956ae0a025656c646a6363988964868067bd026cef4ef65681",
+    "data/agent-index.json": "6d148491019e4f66d78ae925d8c7f308352fce7b7d0287b9ba308a0169e8ffa9",
     "data/generated-manifest.json": "de6f048c6735d28e751bcd4ec4a790e7e612f2ec455a3de51d2837183c9bf6e7",
-    "data/pages-artifact-manifest.json": "d5d67315ca41f5f5259cf50075a99817c1669a435e3e2deda6e697073612bc07"
+    "data/pages-artifact-manifest.json": "0a70402e561022fcbdcbabcbd37ecfcba49e48465e023e7299cc45b8b329e601"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "b857ad5e5d4ba82a4b073e4eb5340b11be5c6a12",
+    "source_commit_at_generation": "8fa412c9e0d98760cedb98cb6fd63af18e01d779",
     "artifact_file_count": 4411,
-    "artifact_bytes": 886341274,
+    "artifact_bytes": 886341197,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
-    "commit": "44dee495c4c40749390f8f390dfff25fbec66c97",
-    "workflow_run_id": 29626382950,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29626382950",
+    "commit": "8fa412c9e0d98760cedb98cb6fd63af18e01d779",
+    "workflow_run_id": 29626555587,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29626555587",
     "pages_status": "built",
     "verification_report": "reports/live_site_verification_2026-07-18.json",
-    "verification_generated_at": "2026-07-18T02:07:23Z",
+    "verification_generated_at": "2026-07-18T02:12:09Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17"
   },
