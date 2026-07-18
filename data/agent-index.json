@@ -219,7 +219,7 @@
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-07-17.json",
+      "path": "/reports/live_site_verification_2026-07-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -726,11 +726,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 884294325,
+        "source_bytes": 884308773,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4403,
-        "artifact_bytes": 885071087
+        "artifact_file_count": 4404,
+        "artifact_bytes": 885085717
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -749,7 +749,7 @@
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "ad289572c03c8e32032d75a98952dd94baca1ea45ef594005f247fd9082025b9",
-    "search": "1a490c0a5c54bf616acfd053b7244b0486b5fb528772159dc24199403a755da7",
+    "search": "36a503b9e6f15c25efa4d353fdf1a09f7dd1a5710f66a5fc8242f313c8790cf5",
     "claims": "5c541283194a7354543c867b5e45b986643ddef32df5c54c84ebd8d292b5a2b2",
     "coverage_exceptions": "e3eeb9af37041dc9cfec7fb8e9f0139a82f44e002ae8b9ad8e95273fe7e0c6ab",
     "repository_classification": "f42d2361de69cee6c46be457c69a35032a459af23f3934188d75b9f0df69b3e1",
@@ -771,8 +771,8 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-07-17.json",
-    "generated_at": "2026-07-17T23:51:42Z",
+    "live_report": "/reports/live_site_verification_2026-07-18.json",
+    "generated_at": "2026-07-18T01:36:48Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,

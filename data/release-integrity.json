@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "52d45ade09f92ab4a9acb2887449ca46b832c121",
+  "source_commit_at_generation": "37fe8c4620284b3b09d675c57b9285fb527f5987",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,24 +26,24 @@
     "data/current-counts.json": "0784c55f7fab5f54371b28bb03701de022f8f26272b2e4bbe88267e61ed5c6b8",
     "data/coverage-exceptions.json": "e3eeb9af37041dc9cfec7fb8e9f0139a82f44e002ae8b9ad8e95273fe7e0c6ab",
     "data/repository-classification.json": "f42d2361de69cee6c46be457c69a35032a459af23f3934188d75b9f0df69b3e1",
-    "data/agent-index.json": "7e6baa3fed847f2336777adf760abce42986005068871f918ba1e758c6065dc8",
-    "data/generated-manifest.json": "92181d8d0fc5df333b87e340a6c4041a0b69298818787ea2ac02081a03197524",
-    "data/pages-artifact-manifest.json": "6cbf642b74e9816b53b6d4f41f8a610c47b2f10e7b65c627e303f3dc530cc7a5"
+    "data/agent-index.json": "6cba1d28d55531dd30d5603bb8091a262d856245bd16cfedb813b9eb82350e1a",
+    "data/generated-manifest.json": "7addf8c24c3d02e62828b9b1be4eee3457f035a90495832e0c93baa19e25dc21",
+    "data/pages-artifact-manifest.json": "ed4e99d5629766a5a72fae1c1caf07a5ca094b493f116e6982678118affbb26d"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "52d45ade09f92ab4a9acb2887449ca46b832c121",
-    "artifact_file_count": 4403,
-    "artifact_bytes": 885071087,
+    "source_commit_at_generation": "37fe8c4620284b3b09d675c57b9285fb527f5987",
+    "artifact_file_count": 4404,
+    "artifact_bytes": 885085717,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
-    "commit": "211bb7c5c7c15634cd6800cc3f5ba708a2c82a82",
-    "workflow_run_id": 29621659246,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29621659246",
+    "commit": "37fe8c4620284b3b09d675c57b9285fb527f5987",
+    "workflow_run_id": 29625439373,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29625439373",
     "pages_status": "built",
-    "verification_report": "reports/live_site_verification_2026-07-17.json",
-    "verification_generated_at": "2026-07-17T23:51:42Z",
+    "verification_report": "reports/live_site_verification_2026-07-18.json",
+    "verification_generated_at": "2026-07-18T01:36:48Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17"
   },
