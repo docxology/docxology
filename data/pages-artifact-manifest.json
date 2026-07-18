@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-18T01:37:13Z",
-  "source_commit_at_generation": "37fe8c4620284b3b09d675c57b9285fb527f5987",
+  "generated_at": "2026-07-18T01:40:50Z",
+  "source_commit_at_generation": "3acf780bd646e477dfd8649007b31e519c33e7ca",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -14372,7 +14372,7 @@
     {
       "path": "reports/live_site_verification_2026-07-18.json",
       "bytes": 14448,
-      "sha256": "a472c2a8cd137e95693005b1800bf13c7880ad6aceb803c149b466503813c1c0"
+      "sha256": "d3e89665f364d9df803ed6910e8879920482cdfc756360cd294c87c4f9e8220a"
     },
     {
       "path": "reports/pages_artifact_growth_2026-07-17.json",

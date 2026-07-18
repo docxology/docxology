@@ -772,7 +772,7 @@
   },
   "verification_status": {
     "live_report": "/reports/live_site_verification_2026-07-18.json",
-    "generated_at": "2026-07-18T01:36:48Z",
+    "generated_at": "2026-07-18T01:40:21Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,
