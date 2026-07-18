@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "generated_at": "2026-07-17T23:23:44+00:00",
+  "generated_at": "2026-07-18T01:09:49+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -133,6 +133,11 @@
       "count": 942,
       "schema": "VisualArtwork"
     },
+    "artworks_index": {
+      "path": "/data/artworks-index.json",
+      "count": 942,
+      "schema": "ArtworkIndex"
+    },
     "videos": {
       "path": "/data/videos.json",
       "count": 1127,
@@ -179,35 +184,35 @@
     },
     {
       "id": "public-source-snapshot",
-      "path": "/reports/public_source_snapshot_2026-07-17.json",
+      "path": "/reports/public_source_snapshot_2026-07-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "public-source-inventory",
-      "path": "/reports/public_source_inventory_2026-07-17.json",
+      "path": "/reports/public_source_inventory_2026-07-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-07-17.json",
+      "path": "/reports/paired_publications_2026-07-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-07-17.json",
+      "path": "/reports/accessibility_static_2026-07-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-07-17.json",
+      "path": "/reports/asset_size_2026-07-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -277,6 +282,26 @@
         "updated_or_year": "string; API snapshot month/year or source year",
         "paper_path": "string or empty",
         "zenodo_url": "string or empty"
+      }
+    },
+    "ArtworkIndex": {
+      "type": "object",
+      "description": "Compact artwork grid/search projection; full resolution and media details live in VisualArtwork.",
+      "required": [
+        "id",
+        "title",
+        "tags",
+        "date",
+        "views",
+        "thumb"
+      ],
+      "fields": {
+        "id": "string; stable Flickr artwork identifier",
+        "title": "string",
+        "tags": "array of strings",
+        "date": "string or empty",
+        "views": "string or numeric display count",
+        "thumb": "HTTPS thumbnail URL"
       }
     },
     "Repository": {
@@ -483,6 +508,29 @@
         "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
       }
     ],
+    "ArtworkIndex": [
+      {
+        "id": "53164392892",
+        "title": "All-domain Anomaly Resolution Office (AARO)",
+        "tags": [
+          "pen",
+          "ink",
+          "drawing",
+          "aaro",
+          "alldomain",
+          "anomaly",
+          "resolution",
+          "office",
+          "us",
+          "emb",
+          "emblem",
+          "usa"
+        ],
+        "date": "2023-09-04 17:12:02",
+        "views": "698",
+        "thumb": "https://live.staticflickr.com/65535/53164392892_f86440bb11_m.jpg"
+      }
+    ],
     "Repository": [
       {
         "name": "act_inf_metaanalysis",
@@ -522,7 +570,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-07-17T23:23:44+00:00",
+        "checked_at": "2026-07-18T01:09:49+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -622,11 +670,11 @@
         "paired_publications": {
           "already_reviewed": 0,
           "create_new": 0,
-          "github_releases": 37,
-          "needs_review": 108,
-          "pairs": 137,
-          "strong_pairs": 29,
-          "update_existing": 29,
+          "github_releases": 2,
+          "needs_review": 0,
+          "pairs": 1,
+          "strong_pairs": 1,
+          "update_existing": 1,
           "zenodo_records": 133
         },
         "paper_folder_docs": 179,
@@ -655,14 +703,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-07-17T23:23:44+00:00",
+      "generated_at": "2026-07-18T01:09:49+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-07-17.json",
+        "paired_publications": "reports/paired_publications_2026-07-18.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-07-17.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-07-18.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -678,11 +726,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 829320178,
+        "source_bytes": 884294029,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4350,
-        "artifact_bytes": 830087378
+        "artifact_file_count": 4403,
+        "artifact_bytes": 885070791
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -695,16 +743,17 @@
     }
   },
   "dataset_hashes": {
-    "works": "f4e434b7582a0175a67faf2101470bc1edbe8ae284c6b2d06239f20569486892",
-    "software": "5efd5d0deec6d365095cf4192cb0afbdbe9ec5266198109a1e6b85e37547481e",
-    "repositories": "3ba615f4c419df759411c43b1e364e4cd849f5130f81df45faa1c286fd799708",
+    "works": "329b4dbd4f60e29bb46d62220f32d1ef07dba1474bbc589be096a15ea927ee40",
+    "software": "1c15e4bcd1112d3c0e6bda9a8d9631e28445d645922be9b2ec5e8a06d3a71360",
+    "repositories": "e131dce06b411ad88e63d8e661c5281babaf35fe86d50081faf4136f40c99baa",
+    "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
-    "videos": "aeb11b0699ffff12ad27d96e6824fe18ebe9d1d2cbfb5a57334b6ca1bde4d021",
-    "search": "f77be2ca23c7439effc5b8a5a4792b6beafd6ee85336d14133ba8b488dbf4dbd",
-    "claims": "4d94d1960944d0b80ef65fb555cab6b10a45e1d11b6d50b3afeaa39d76988757",
+    "videos": "ad289572c03c8e32032d75a98952dd94baca1ea45ef594005f247fd9082025b9",
+    "search": "1a490c0a5c54bf616acfd053b7244b0486b5fb528772159dc24199403a755da7",
+    "claims": "5c541283194a7354543c867b5e45b986643ddef32df5c54c84ebd8d292b5a2b2",
     "coverage_exceptions": "e3eeb9af37041dc9cfec7fb8e9f0139a82f44e002ae8b9ad8e95273fe7e0c6ab",
     "repository_classification": "f42d2361de69cee6c46be457c69a35032a459af23f3934188d75b9f0df69b3e1",
-    "current_counts": "cef47585afb83b922a26959a9d24644b0294e8a83ee581ac3a546afb4f7db281"
+    "current_counts": "0784c55f7fab5f54371b28bb03701de022f8f26272b2e4bbe88267e61ed5c6b8"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -776,11 +825,11 @@
     "paired_publications": {
       "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 37,
-      "needs_review": 108,
-      "pairs": 137,
-      "strong_pairs": 29,
-      "update_existing": 29,
+      "github_releases": 2,
+      "needs_review": 0,
+      "pairs": 1,
+      "strong_pairs": 1,
+      "update_existing": 1,
       "zenodo_records": 133
     },
     "paper_folder_docs": 179,

@@ -38,6 +38,7 @@ EXCLUDED_ASSETS = {
     # These control files describe the generated layer or the Pages release
     # itself. Including them would make their own metadata part of the asset
     # budget and create a needless generator cycle.
+    "data/agent-index.json",
     "data/generated-manifest.json",
     "data/pages-artifact-manifest.json",
     "data/release-integrity.json",
@@ -75,6 +76,23 @@ def existing_generated_at(path: Path) -> str | None:
         return None
 
 
+def render_for_write(path: Path) -> str:
+    """Write a new timestamp only when the measured asset body changed."""
+    content = render()
+    if not path.exists():
+        return content
+    try:
+        current = json.loads(content)
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return content
+    current.pop("generated_at", None)
+    existing.pop("generated_at", None)
+    if current == existing:
+        return render(existing_generated_at(path))
+    return content
+
+
 def render(generated_at: str | None = None) -> str:
     assets = iter_assets()
     warnings = [item for item in assets if not item["ok"]]
@@ -95,7 +113,7 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if the asset-size report is stale")
     args = parser.parse_args()
     out = latest_report("asset_size_*.json") if args.check else OUT
-    content = render(existing_generated_at(out) if args.check else None)
+    content = render(existing_generated_at(out)) if args.check else render_for_write(out)
     if args.check:
         if not out.exists() or out.read_text(encoding="utf-8") != content:
             raise SystemExit("Stale asset-size report")

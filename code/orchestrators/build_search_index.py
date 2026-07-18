@@ -13,9 +13,9 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 OUT = REPO_ROOT / "search-index.json"
 
 try:
-    from report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
+    from report_paths import generated_timestamp, latest_report, latest_subdir_file, rel, stable_generated_at
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
+    from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel, stable_generated_at
 
 
 def _latest_url(pattern: str, fallback: str) -> str:
@@ -333,7 +333,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if search-index.json is stale")
     args = parser.parse_args()
-    content = render(existing_generated_at() if args.check else None)
+    generated_at = existing_generated_at() if args.check else None
+    if not args.check:
+        candidate = json.loads(render())
+        generated_at = stable_generated_at(OUT, candidate)
+    content = render(generated_at)
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
             raise SystemExit("Stale generated search-index.json")

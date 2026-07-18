@@ -42,6 +42,9 @@ GitHub Pages cannot set custom response headers for this repository. The CSP and
 referrer policy above are meta-policy controls emitted in the document and are
 validated as deployment invariants; they are not equivalent to response headers
 at the edge. A future host with header control may strengthen this boundary.
+Chromium reports that `frame-ancestors` is ignored when CSP arrives through a
+`<meta>` element; the progressive browser QA report records that known warning.
+No other browser console or page error is accepted by the QA gate.
 
 ## Supply chain
 

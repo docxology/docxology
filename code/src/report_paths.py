@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from typing import Optional
 
@@ -26,6 +27,22 @@ def generated_timestamp() -> str:
     from datetime import datetime, timezone
 
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def stable_generated_at(path: Path, payload: dict) -> str | None:
+    """Reuse a timestamp when a generated JSON payload body is unchanged."""
+    if not path.exists():
+        return None
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not isinstance(existing, dict) or not isinstance(payload, dict):
+        return None
+    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
+    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+    timestamp = existing.get("generated_at")
+    return str(timestamp) if current_body == existing_body and timestamp else None
 
 
 def latest_report(pattern: str, *, required: bool = True) -> Path | None:

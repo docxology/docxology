@@ -24,7 +24,7 @@ The site uses **micro-interactions** — subtle, purposeful animations that enha
 }
 ```
 
-Applied via `.animate` class (triggered by IntersectionObserver in the inline `index.html` script):
+Applied via `.animate` class (triggered by the IntersectionObserver in the external `js/interactive.js` runtime):
 - Cards (`.card`, `.stat`, `.pub-item`, `.art-card`, `.connect-card`)
 - Fade in with upward slide when scrolled into view (threshold: 8%)
 

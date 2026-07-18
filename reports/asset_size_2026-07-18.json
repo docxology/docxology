@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-07-18T01:27:49Z",
+  "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
+  "asset_count": 84,
+  "warnings": 0,
+  "total_bytes": 12948285,
+  "largest": [
+    {
+      "path": "data/videos.json",
+      "kind": "json-data",
+      "bytes": 3426547,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/artworks.json",
+      "kind": "json-data",
+      "bytes": 3254859,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/artworks-index.json",
+      "kind": "json-data",
+      "bytes": 729213,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 329354,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "resume/resume.pdf",
+      "kind": "resume-export",
+      "bytes": 301782,
+      "budget_bytes": 5000000,
+      "ok": true
+    },
+    {
+      "path": "data/publishing-status.json",
+      "kind": "json-data",
+      "bytes": 288040,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/resume.json",
+      "kind": "json-data",
+      "bytes": 229071,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/work-enrichment.json",
+      "kind": "json-data",
+      "bytes": 224537,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "repositories-forks.html",
+      "kind": "html",
+      "bytes": 198341,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/army-ants.webp",
+      "kind": "hero-art",
+      "bytes": 168864,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/decentral-antelligence-agency.webp",
+      "kind": "hero-art",
+      "bytes": 130118,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "publications.html",
+      "kind": "html",
+      "bytes": 129941,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 127152,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 126786,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/mesh-network.webp",
+      "kind": "hero-art",
+      "bytes": 121830,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/ant-head.webp",
+      "kind": "hero-art",
+      "bytes": 113506,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "data/publications-ld.json",
+      "kind": "json-data",
+      "bytes": 112302,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "og-biomedicine.jpg",
+      "kind": "og-image",
+      "bytes": 108996,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-computational.jpg",
+      "kind": "og-image",
+      "bytes": 108651,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "data/works.json",
+      "kind": "json-data",
+      "bytes": 107779,
+      "budget_bytes": 4000000,
+      "ok": true
+    }
+  ],
+  "over_budget": []
+}

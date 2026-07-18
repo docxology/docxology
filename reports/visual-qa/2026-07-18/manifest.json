@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-07-18T01:20:02Z",
+  "tool": "playwright screenshot",
+  "note": "Human review still required; these snapshots guard against obvious layout regressions.",
+  "screenshots": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/home-desktop.png"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/home-mobile.png"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/publications-desktop.png"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/publications-mobile.png"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/works-desktop.png"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/works-mobile.png"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/domains-desktop.png"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/domains-mobile.png"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/search-desktop.png"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/search-mobile.png"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/repositories-desktop.png"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/repositories-mobile.png"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/repository-forks-desktop.png"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/repository-forks-mobile.png"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/catalog-desktop.png"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/catalog-mobile.png"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/updates-desktop.png"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/updates-mobile.png"
+    },
+    {
+      "page": "art.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/art-desktop.png"
+    },
+    {
+      "page": "art.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/art-mobile.png"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/discovery-desktop.png"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/discovery-mobile.png"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/cite-verify-desktop.png"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/cite-verify-mobile.png"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-07-18/evidence-desktop.png"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-07-18/evidence-mobile.png"
+    }
+  ]
+}

@@ -145,7 +145,12 @@ ARTIFACTS = [
     {
         "name": "Agent route manifest",
         "outputs": ["data/agent-index.json"],
-        "sources": ["data/current-counts.json", "code/orchestrators/build_agent_index.py"],
+        "sources": [
+            "data/current-counts.json",
+            "data/pages-artifact-manifest.json",
+            "reports/*latest dated reports",
+            "code/orchestrators/build_agent_index.py",
+        ],
         "command": "python3 code/orchestrators/build_agent_index.py",
     },
     {
@@ -353,6 +358,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/browser_smoke.py",
     },
     {
+        "name": "Progressive browser QA",
+        "outputs": [_latest_subdir_manifest("browser-qa", "reports/browser-qa/2026-07-18/manifest.json")],
+        "sources": ["root HTML pages", "js/*.js", "style.css", "code/orchestrators/browser_qa.py"],
+        "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py",
+    },
+    {
         "name": "Live site verification",
         "outputs": [_latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-13.json")],
         "sources": ["https://danielarifriedman.com/", "GitHub Pages API"],
@@ -369,6 +380,12 @@ ARTIFACTS = [
         "outputs": ["sitemap.xml"],
         "sources": ["works/*.html", "code/src/sitemap_policy.py", "code/orchestrators/build_sitemap.py"],
         "command": "python3 code/orchestrators/build_sitemap.py",
+    },
+    {
+        "name": "Compact artwork gallery index",
+        "outputs": ["data/artworks-index.json"],
+        "sources": ["data/artworks.json", "code/orchestrators/build_artwork_index.py"],
+        "command": "python3 code/orchestrators/build_artwork_index.py",
     },
     {
         "name": "Image sitemap",

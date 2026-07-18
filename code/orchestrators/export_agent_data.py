@@ -21,6 +21,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from count_consistency import parse_software_catalog_counts  # noqa: E402
 from software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
+from report_paths import stable_generated_at  # noqa: E402
 
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
 SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
@@ -588,6 +589,14 @@ def main() -> None:
     args = parser.parse_args()
 
     generated_at = _existing_generated_at(REPO_ROOT / "data" / "claims.json") if args.check else None
+    if not args.check:
+        candidate_outputs = render_outputs(enforce_stale_checks=False)
+        stable_values = [
+            stable_generated_at(path, json.loads(content))
+            for path, content in candidate_outputs.items()
+        ]
+        if stable_values and all(value and value == stable_values[0] for value in stable_values):
+            generated_at = stable_values[0]
     outputs = render_outputs(generated_at, enforce_stale_checks=args.check)
     stale: list[str] = []
     for path, content in outputs.items():

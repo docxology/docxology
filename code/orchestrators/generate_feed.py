@@ -106,7 +106,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if feed.xml is stale")
     args = parser.parse_args()
-    content = render(existing_build_date() if args.check else None)
+    existing_date = existing_build_date()
+    if args.check:
+        content = render(existing_date)
+    else:
+        content = render()
+        if existing_date and OUT.read_text(encoding="utf-8") == render(existing_date):
+            content = render(existing_date)
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
             raise SystemExit("Stale generated feed.xml")

@@ -9,22 +9,13 @@ criteria, and dependencies. Re-review this file before each public release.
 
 ## P0 — Release and integrity
 
-### DOC-001 — Close stale task-sync issues
-
-- Priority: P0
-- Owner: MAINTAINER
-- Trigger: after the first verified public push following the July 2026 roadmap
-- Deliverable: close or supersede GitHub issues #5, #6, and #7 with links to current counts, image-sitemap evidence, and the live verification report
-- Acceptance: each issue is closed with an evidence comment; no stale 168/91, untracked-art, or unfinished-image-sitemap claim remains open
-- Dependencies: current `reports/current_counts.md`, `reports/live_site_verification_*.json`, `sitemap-images.xml`
-
 ### DOC-002 — Release integrity and public artifact gate
 
 - Priority: P0
 - Owner: MAINTAINER
 - Trigger: every release or Pages deployment
-- Deliverable: regenerate `data/release-integrity.json` and `data/pages-artifact-manifest.json`
-- Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, and live verification are present; generated checks are clean
+- Deliverable: run `regenerate_all.py --validate`, then verify the Pages artifact and live deployment before each release
+- Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, and live verification are present; a second offline regeneration pass produces no content changes
 - Dependencies: `regenerate_all.py`, Pages workflow, live verification
 
 ### DOC-003 — Public privacy and claim safety
@@ -43,8 +34,8 @@ criteria, and dependencies. Re-review this file before each public release.
 - Priority: P1
 - Owner: ARCHIVIST / RESEARCHER
 - Trigger: each public-source refresh; review in batches of 10–15
-- Deliverable: record accept, reject, supersede, or defer decisions for the current ambiguous queue in `data/paired-publication-decisions.json`
-- Acceptance: no ambiguous candidate is auto-promoted; each decision cites the release, DOI, evidence, and permanent citation-key outcome
+- Deliverable: record accept, reject, supersede, or defer decisions for every non-empty ambiguous queue in `data/paired-publication-decisions.json`
+- Acceptance: no ambiguous candidate is auto-promoted; the latest report has zero unreviewed candidates or every candidate has a cited decision with release, DOI, evidence, and permanent citation-key outcome
 - Dependencies: latest `reports/paired_publications_*.json`
 
 ### DOC-005 — Classify uncatalogued repositories
@@ -76,22 +67,22 @@ criteria, and dependencies. Re-review this file before each public release.
 
 ## P1 — CV, accessibility, UX, security, and SEO
 
-### DOC-008 — Expand browser and progressive-enhancement QA
+### DOC-008 — Maintain browser and progressive-enhancement QA
 
 - Priority: P1
 - Owner: WEB DEVELOPER
 - Trigger: every interactive-layer or CSS change
-- Deliverable: browser checks for no-JavaScript fallback, keyboard navigation, announcements, sorting/filter state, gallery/lightbox focus, reduced motion, forced colors, 320px widths, YouTube errors, console, and CSP
-- Acceptance: the browser report records each scenario and passes at supported breakpoints; static accessibility remains green
-- Dependencies: Playwright/browser runtime, `browser_smoke.py`, visual QA
+- Deliverable: keep `browser_qa.py` and `browser_smoke.py` reports current for no-JavaScript fallback, keyboard navigation, announcements, sorting/filter state, gallery/lightbox focus, reduced motion, forced colors, 320px widths, YouTube policy, console, CSP, and visual output
+- Acceptance: the latest browser QA report records each scenario and passes at supported breakpoints; known meta-CSP warnings are retained as warnings; static accessibility remains green
+- Dependencies: Playwright/browser runtime, `browser_smoke.py`, `browser_qa.py`, visual QA
 
 ### DOC-009 — Performance and asset budgets
 
 - Priority: P1
 - Owner: WEB DEVELOPER / MAINTAINER
 - Trigger: monthly and after data or asset growth
-- Deliverable: compact art/video indexes with detail loading, per-asset budgets, and Pages growth trend review
-- Acceptance: current HTML, JS, JSON, hero, thumbnail, CV, and generated-data budgets are measured and remain below documented thresholds
+- Deliverable: retain the compact artwork index with lazy detail loading; add the equivalent compact video projection, document per-asset budgets, and review Pages growth trends
+- Acceptance: current HTML, JS, JSON, hero, thumbnail, CV, and generated-data budgets are measured and remain below documented thresholds; large interactive datasets do not load detail-only payloads before user need
 - Dependencies: Pages artifact manifest, asset audit, browser QA
 
 ### DOC-010 — Security and SEO follow-up

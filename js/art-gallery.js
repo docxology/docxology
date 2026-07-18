@@ -1,7 +1,8 @@
 /**
  * Art Gallery — externalized from art.html inline script (CSP: script-src 'self').
- * Loads data/artworks.json (942 pieces), renders the grid, and drives the
- * page-local search / sort / size / lightbox controls via addEventListener.
+ * Loads the compact data/artworks-index.json (942 pieces), renders the grid,
+ * and lazily fetches data/artworks.json only when a description search or
+ * lightbox detail view needs the full resolution/media record.
  * window.filterGallery / window.setSize stay exposed for the data-attribute
  * delegation in js/interactive.js.
  */
@@ -11,13 +12,15 @@
   let DATA = [];
   let filtered = [];
   let currentIdx = 0;
+  let DETAIL_DATA = null;
+  let detailPromise = null;
 
   const grid = document.getElementById('grid');
   const lb = document.getElementById('lightbox');
 
   async function loadGalleryData() {
     try {
-      const res = await fetch('data/artworks.json', { cache: 'default' });
+      const res = await fetch('data/artworks-index.json', { cache: 'default' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const payload = await res.json();
       DATA = payload.artworks || [];
@@ -29,6 +32,31 @@
       empty.style.display = 'block';
       empty.textContent = 'Artwork data could not be loaded.';
     }
+  }
+
+  async function loadDetailData() {
+    if (DETAIL_DATA) return DETAIL_DATA;
+    if (!detailPromise) {
+      detailPromise = fetch('data/artworks.json', { cache: 'default' })
+        .then(res => {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then(payload => {
+          DETAIL_DATA = new Map((payload.artworks || []).map(art => [String(art.id), art]));
+          return DETAIL_DATA;
+        })
+        .catch(err => {
+          detailPromise = null;
+          throw err;
+        });
+    }
+    return detailPromise;
+  }
+
+  async function enrich(art) {
+    const details = await loadDetailData();
+    return details.get(String(art.id)) || art;
   }
 
   // Lazy-load observer
@@ -133,14 +161,19 @@
 
   let previouslyFocused = null;
 
-  function openLightbox(i, trigger) {
+  async function openLightbox(i, trigger) {
     currentIdx = i;
     previouslyFocused = trigger || document.activeElement;
-    populate(filtered[i]);
     lb.classList.add('open');
     lb.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
     document.getElementById('lb-close')?.focus();
+    try {
+      populate(await enrich(filtered[i]));
+    } catch (err) {
+      console.error('Unable to load artwork details', err);
+      document.getElementById('lb-desc').textContent = 'Artwork details could not be loaded.';
+    }
   }
 
   function populate(art) {
@@ -148,14 +181,15 @@
     document.getElementById('lb-date').textContent = art.date ? art.date.slice(0, 10) : '';
     document.getElementById('lb-desc').textContent = art.desc || '';
 
-    const mainSrc = art.sizes['Large 1600'] || art.sizes['Large'] || art.sizes['Medium 640'] || art.sizes['Medium'] || art.thumb;
+    const sizes = art.sizes || {};
+    const mainSrc = sizes['Large 1600'] || sizes['Large'] || sizes['Medium 640'] || sizes['Medium'] || art.thumb;
     const img = document.getElementById('lb-img');
     img.style.opacity = '0';
     img.src = mainSrc;
     img.alt = artAlt(art);
     img.onload = () => { img.style.opacity = '1'; };
 
-    const origUrl = art.sizes['Original'] || art.sizes['Large 2048'] || art.sizes['X-Large 4K'] || mainSrc;
+    const origUrl = sizes['Original'] || sizes['Large 2048'] || sizes['X-Large 4K'] || mainSrc;
     document.getElementById('lb-download').href = origUrl;
 
     const flickrBtn = document.getElementById('lb-flickr-link');
@@ -165,7 +199,7 @@
     const resList = document.getElementById('lb-resolutions');
     resList.innerHTML = '';
     SIZE_ORDER.forEach(name => {
-      const url = art.sizes[name];
+      const url = sizes[name];
       if (!url) return;
       const row = document.createElement('div');
       row.className = 'res-item';
@@ -197,9 +231,13 @@
     if (previouslyFocused && typeof previouslyFocused.focus === 'function') previouslyFocused.focus();
   }
 
-  function navLightbox(dir) {
+  async function navLightbox(dir) {
     currentIdx = (currentIdx + dir + filtered.length) % filtered.length;
-    populate(filtered[currentIdx]);
+    try {
+      populate(await enrich(filtered[currentIdx]));
+    } catch (err) {
+      console.error('Unable to load artwork details', err);
+    }
   }
 
   // ── EVENT WIRING (CSP-safe, no inline handlers) ──
@@ -208,7 +246,19 @@
   // generic delegation, which calls the window.* globals exposed below. Do NOT
   // also addEventListener them here — double-binding advances the lightbox two
   // items per click. Only wire what interactive.js does not handle:
-  document.getElementById('searchInput').addEventListener('input', filterGallery);
+  document.getElementById('searchInput').addEventListener('input', async () => {
+    const query = document.getElementById('searchInput').value.trim();
+    if (query && !DETAIL_DATA) {
+      document.getElementById('resultCount').textContent = 'Loading descriptions…';
+      try {
+        const details = await loadDetailData();
+        DATA = DATA.map(art => details.get(String(art.id)) || art);
+      } catch (err) {
+        console.error('Unable to load searchable artwork details', err);
+      }
+    }
+    filterGallery();
+  });
 
   document.addEventListener('keydown', e => {
     if (!lb.classList.contains('open')) return;

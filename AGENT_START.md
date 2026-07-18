@@ -27,10 +27,11 @@ This repository is the public research, software, citation, evidence, and websit
 | Generate resume/CV artifacts | [`resume/`](resume/), [`data/resume.json`](data/resume.json) | `uv run python3 code/orchestrators/build_resume.py --all`, then `--check` |
 | Check GitHub + Zenodo publication intake | [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md), latest `reports/paired_publications_*.json` | `GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii` (dry-run), then `--apply` for strong pairs only; use `add_zenodo_only.py <record_id>` for Zenodo records with no paired GitHub release |
 | Audit publication skills | [`papers/`](papers/), [`data/works.json`](data/works.json) | `uv run python3 code/orchestrators/audit_publication_skills.py --check` |
-| Refresh generated files | [`GENERATED.md`](GENERATED.md) | `uv run python3 code/orchestrators/regenerate_all.py --validate` (one-pass rebuild of the local generated layer, then validate) |
+| Refresh generated files | [`GENERATED.md`](GENERATED.md) | `uv run python3 code/orchestrators/regenerate_all.py --validate` twice; the second pass must be content-stable |
 | Google Search Console follow-up | [`docs/seo/gsc-followup.md`](docs/seo/gsc-followup.md), [`data/gsc-followup-checklist.json`](data/gsc-followup-checklist.json) | `uv run python3 code/orchestrators/gsc_followup_preflight.py` |
 | Check deployed site health | latest `reports/live_site_verification_*.json` | `python3 code/orchestrators/verify_live_site.py` |
 | Check Pages artifact size | [`docs/operations/github-pages-artifact.md`](docs/operations/github-pages-artifact.md) | `python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size` |
+| Run browser behavior QA | [`code/orchestrators/browser_qa.py`](code/orchestrators/browser_qa.py), latest `reports/browser-qa/` | `/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py` then `--check` |
 | Check release integrity | [`data/release-integrity.json`](data/release-integrity.json), [`data/pages-artifact-manifest.json`](data/pages-artifact-manifest.json) | `uv run python3 code/orchestrators/regenerate_all.py --validate` |
 | Refresh public-source inventory | latest `reports/public_source_inventory_*.json` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Triage external links | [`reports/external_links_triage_2026-05-15.md`](reports/external_links_triage_2026-05-15.md) | `python3 code/orchestrators/check_external_links.py` |

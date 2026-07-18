@@ -22,6 +22,7 @@ from report_paths import (  # noqa: E402
     rel,
     report_date_string,
     repo_path,
+    stable_generated_at,
 )
 
 
@@ -118,6 +119,14 @@ def test_repo_path_passes_through_absolute_paths(tmp_path: Path):
 def test_rel_returns_posix_repo_relative_path():
     target = report_paths.REPO_ROOT / "data" / "works.json"
     assert rel(target) == "data/works.json"
+
+
+def test_stable_generated_at_reuses_timestamp_only_for_equal_json_body(tmp_path: Path):
+    path = tmp_path / "snapshot.json"
+    path.write_text('{"generated_at":"2026-07-17T00:00:00Z","count":3}\n', encoding="utf-8")
+
+    assert stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 3}) == "2026-07-17T00:00:00Z"
+    assert stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 4}) is None
 
 
 def test_default_latest_file_returns_first_existing(tmp_path: Path):

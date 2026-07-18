@@ -10,7 +10,9 @@ This script encodes that order once, in *write* mode, so a single command rebuil
 generated layer deterministically from the current sources. The order below is
 dependency-correct (each step's inputs are produced by an earlier step). The integrity
 tail is deliberately explicit: Pages budget → agent index → generated manifest → release
-integrity → final generated manifest.
+integrity → final generated manifest. The agent index is built only after all dated
+reports and the Pages projection exist because it links to their latest paths and
+records the Pages manifest's dataset hashes.
 
 Scope: LOCAL artifacts only. This script is deliberately offline and idempotent — run it
 as many times as you like and (absent a source edit) it changes nothing. Network
@@ -56,7 +58,6 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("sync_scholar_metrics.py", []),             # dated Scholar snapshot -> hand-authored surfaces
     ("generate_og_images.py", []),               # og-*.jpg + counts sidecar <- current-counts.json
     ("export_agent_data.py", []),                # claims/people/orgs        <- counts
-    ("build_agent_index.py", []),                # stable agent route/schema map
     ("build_resume.py", ["--all"]),              # resume.{json,txt,pdf}     <- claims + counts
     ("build_domain_pages.py", []),
     ("build_work_pages.py", []),
@@ -78,8 +79,10 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_search_index.py", []),               # links latest reports + indexes pages
     ("generate_feed.py", []),
     ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit
+    ("build_artwork_index.py", []),              # compact gallery grid index <- data/artworks.json
     ("build_image_sitemap.py", []),               # sitemap-images.xml       <- data/artworks.json
     ("build_pages_artifact.py", ["--write-manifest", "--check-size-only"]),
+    ("build_agent_index.py", []),                # stable agent route/schema map <- final reports + Pages manifest
     ("build_generated_manifest.py", []),         # include the integrity outputs in the command matrix
     ("build_release_integrity.py", []),
     ("build_generated_manifest.py", []),         # LAST — stable source/output command matrix

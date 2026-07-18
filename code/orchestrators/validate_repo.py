@@ -31,6 +31,7 @@ REQUIRED_JSON_FILES: list[str] = [
     "data/generated-manifest.json",
     "data/github-repositories.json",
     "data/artworks.json",
+    "data/artworks-index.json",
     "data/works.json",
     "data/work-enrichment.json",
     "data/software-ld.json",
@@ -136,6 +137,16 @@ def validate_json_files(strict_reports: bool) -> None:
             warnings.append(message)
     else:
         _load_json_payload(browser_smoke, errors, warnings, optional=not strict_reports)
+
+    browser_qa = latest_subdir_file("browser-qa", "manifest.json", required=False)
+    if not browser_qa:
+        message = "Optional progressive browser QA manifest missing: browser-qa/manifest.json"
+        if strict_reports:
+            errors.append(message)
+        else:
+            warnings.append(message)
+    else:
+        _load_json_payload(browser_qa, errors, warnings, optional=not strict_reports)
 
     if warnings:
         print("optional artifact warnings:")
@@ -298,6 +309,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/accessibility_audit.py", "--check"])
     run(["python3", "code/orchestrators/build_sitemap.py", "--check"])
     run(["python3", "code/orchestrators/build_image_sitemap.py", "--check"])
+    run(["python3", "code/orchestrators/build_artwork_index.py", "--check"])
     run(["python3", "code/orchestrators/ensure_agent_navigation.py", "--check"])
     run(["python3", "code/orchestrators/build_pages_artifact.py", "--check-size-only", "--check-manifest"])
     run(["python3", "code/orchestrators/build_release_integrity.py", "--check"])

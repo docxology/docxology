@@ -99,8 +99,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-07-17.json",
-        "reports/source_coverage_2026-07-17.md"
+        "reports/source_coverage_2026-07-18.json",
+        "reports/source_coverage_2026-07-18.md"
       ],
       "sources": [
         "data/works.json",
@@ -170,6 +170,8 @@
       ],
       "sources": [
         "data/current-counts.json",
+        "data/pages-artifact-manifest.json",
+        "reports/*latest dated reports",
         "code/orchestrators/build_agent_index.py"
       ],
       "command": "python3 code/orchestrators/build_agent_index.py"
@@ -190,7 +192,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-07-17.json"
+        "reports/pages_artifact_growth_2026-07-18.json"
       ],
       "sources": [
         "tracked repository files",
@@ -267,7 +269,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-07-17.json"
+        "reports/paired_publications_2026-07-18.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -285,7 +287,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-07-17.json",
+        "reports/paired_publications_2026-07-18.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -441,7 +443,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-07-17.json"
+        "reports/public_source_snapshot_2026-07-18.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -451,7 +453,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-07-17.json"
+        "reports/public_source_inventory_2026-07-18.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -472,7 +474,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-07-17.json"
+        "reports/asset_size_2026-07-18.json"
       ],
       "sources": [
         "root HTML pages",
@@ -486,7 +488,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-07-17.json"
+        "reports/accessibility_static_2026-07-18.json"
       ],
       "sources": [
         "root HTML pages",
@@ -498,8 +500,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-07-17/*.png",
-        "reports/browser-smoke/2026-07-17/manifest.json"
+        "reports/browser-smoke/2026-07-18/*.png",
+        "reports/browser-smoke/2026-07-18/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -507,6 +509,19 @@
         "search-index.json"
       ],
       "command": "python3 code/orchestrators/browser_smoke.py"
+    },
+    {
+      "name": "Progressive browser QA",
+      "outputs": [
+        "reports/browser-qa/2026-07-18/manifest.json"
+      ],
+      "sources": [
+        "root HTML pages",
+        "js/*.js",
+        "style.css",
+        "code/orchestrators/browser_qa.py"
+      ],
+      "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py"
     },
     {
       "name": "Live site verification",
@@ -543,6 +558,17 @@
       "command": "python3 code/orchestrators/build_sitemap.py"
     },
     {
+      "name": "Compact artwork gallery index",
+      "outputs": [
+        "data/artworks-index.json"
+      ],
+      "sources": [
+        "data/artworks.json",
+        "code/orchestrators/build_artwork_index.py"
+      ],
+      "command": "python3 code/orchestrators/build_artwork_index.py"
+    },
+    {
       "name": "Image sitemap",
       "outputs": [
         "sitemap-images.xml"
@@ -557,8 +583,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-07-17/*.png",
-        "reports/visual-qa/2026-07-17/manifest.json"
+        "reports/visual-qa/2026-07-18/*.png",
+        "reports/visual-qa/2026-07-18/manifest.json"
       ],
       "sources": [
         "root HTML pages",

@@ -16,6 +16,7 @@ DATASET_PATHS = {
     "works": "data/works.json",
     "software": "data/software.json",
     "repositories": "data/github-repositories.json",
+    "artworks_index": "data/artworks-index.json",
     "artworks": "data/artworks.json",
     "videos": "data/videos.json",
     "search": "search-index.json",
@@ -87,6 +88,19 @@ SCHEMAS = {
             "updated_or_year": "string; API snapshot month/year or source year",
             "paper_path": "string or empty",
             "zenodo_url": "string or empty",
+        },
+    },
+    "ArtworkIndex": {
+        "type": "object",
+        "description": "Compact artwork grid/search projection; full resolution and media details live in VisualArtwork.",
+        "required": ["id", "title", "tags", "date", "views", "thumb"],
+        "fields": {
+            "id": "string; stable Flickr artwork identifier",
+            "title": "string",
+            "tags": "array of strings",
+            "date": "string or empty",
+            "views": "string or numeric display count",
+            "thumb": "HTTPS thumbnail URL",
         },
     },
     "Repository": {
@@ -207,6 +221,7 @@ def payload() -> dict:
     current = json.loads(COUNTS.read_text(encoding="utf-8"))
     counts = current.get("counts", {})
     artworks = load_json("data/artworks.json")
+    artworks_index = load_json("data/artworks-index.json")
     videos = load_json("data/videos.json")
     works = load_json("data/works.json")
     software = load_json("data/software.json")
@@ -258,6 +273,7 @@ def payload() -> dict:
             "software": {"path": "/data/software.json", "count": counts.get("software", {}).get("curated_total"), "schema": "SoftwareRepository"},
             "repositories": {"path": "/data/github-repositories.json", "count": counts.get("github_inventory", {}).get("total"), "schema": "Repository"},
             "artworks": {"path": "/data/artworks.json", "count": artworks.get("count", len(artworks.get("artworks", []))), "schema": "VisualArtwork"},
+            "artworks_index": {"path": "/data/artworks-index.json", "count": artworks_index.get("count", len(artworks_index.get("artworks", []))), "schema": "ArtworkIndex"},
             "videos": {"path": "/data/videos.json", "count": videos.get("count", len(videos.get("videos", []))), "schema": "VideoObject"},
             "search": {"path": "/search-index.json", "count": None, "schema": "SearchResult"},
             "claims": {"path": "/data/claims.json", "count": None, "schema": "ClaimWithEvidence"},
@@ -280,6 +296,7 @@ def payload() -> dict:
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "SoftwareRepository": software.get("repositories", [])[:1],
+            "ArtworkIndex": artworks_index.get("artworks", [])[:1],
             "Repository": repositories.get("repositories", [])[:1],
             "ClaimWithEvidence": claims.get("claims", [])[:1],
             "SearchResult": search.get("items", [])[:1],

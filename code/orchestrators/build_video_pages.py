@@ -30,9 +30,9 @@ from site_nav import (  # noqa: E402
 )
 
 try:
-    from report_paths import generated_timestamp
+    from report_paths import generated_timestamp, stable_generated_at
 except ImportError:
-    from .report_paths import generated_timestamp
+    from .report_paths import generated_timestamp, stable_generated_at
 
 
 @dataclass(frozen=True)
@@ -720,7 +720,11 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated video pages are stale")
     args = parser.parse_args()
     stale = []
-    for path, content in outputs(existing_generated_at() if args.check else None).items():
+    generated_at = existing_generated_at() if args.check else None
+    if not args.check:
+        candidate_outputs = outputs()
+        generated_at = stable_generated_at(DATA_OUT, json.loads(candidate_outputs[DATA_OUT]))
+    for path, content in outputs(generated_at).items():
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
                 stale.append(str(path.relative_to(REPO_ROOT)))

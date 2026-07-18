@@ -154,6 +154,23 @@ def existing_generated_at(path: Path) -> str | None:
         return None
 
 
+def render_for_write(path: Path) -> str:
+    """Keep a static-a11y snapshot stable when the audited pages are unchanged."""
+    content = render()
+    if not path.exists():
+        return content
+    try:
+        current = json.loads(content)
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return content
+    current.pop("generated_at", None)
+    existing.pop("generated_at", None)
+    if current == existing:
+        return render(existing_generated_at(path))
+    return content
+
+
 def render(generated_at: str | None = None) -> str:
     pages = []
     excluded_parts = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"}
@@ -180,7 +197,7 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if the static accessibility report is stale or has failures")
     args = parser.parse_args()
     out = latest_report("accessibility_static_*.json") if args.check else OUT
-    content = render(existing_generated_at(out) if args.check else None)
+    content = render(existing_generated_at(out)) if args.check else render_for_write(out)
     payload = json.loads(content)
     failures = [r["path"] for r in payload["results"] if not r["ok"]]
     if args.check:

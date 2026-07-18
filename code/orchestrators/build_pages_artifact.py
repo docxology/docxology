@@ -26,6 +26,7 @@ HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
 GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
 CONTROL_FILES = {
+    Path("GENERATED.md"),
     Path("data/agent-index.json"),
     Path("data/generated-manifest.json"),
     Path("data/pages-artifact-manifest.json"),
@@ -117,7 +118,7 @@ def _manifest_payload(existing: dict | None = None) -> dict:
         for path in included
         if (REPO_ROOT / path).is_file() and path != ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     ]
-    generated_at = (existing or {}).get("generated_at") or datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     payload = {
         "schema_version": "1.0",
         "generated_at": generated_at,
@@ -164,6 +165,11 @@ def _manifest_payload(existing: dict | None = None) -> dict:
         if payload["budget"]["artifact_bytes"] == artifact_bytes:
             break
         payload["budget"]["artifact_bytes"] = artifact_bytes
+    if existing:
+        current_body = {key: value for key, value in payload.items() if key != "generated_at"}
+        existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+        if current_body == existing_body and existing.get("generated_at"):
+            payload["generated_at"] = existing["generated_at"]
     return payload
 
 

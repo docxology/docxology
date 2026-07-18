@@ -24,6 +24,8 @@ def test_agent_index_is_current_and_has_stable_routes():
     assert set(("Work", "SoftwareRepository", "Repository", "ClaimWithEvidence", "SearchResult", "GeneratedReport")) <= set(
         payload["schemas"]
     )
+    assert payload["datasets"]["artworks_index"]["schema"] == "ArtworkIndex"
+    assert payload["schema_examples"]["ArtworkIndex"]
     assert payload["schemas"]["Work"]["fields"]["citation_key"]
     assert payload["schema_examples"]["Work"]
     assert payload["dataset_hashes"]["works"]

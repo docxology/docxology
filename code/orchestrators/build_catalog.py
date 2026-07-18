@@ -92,7 +92,8 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ft_count, pw_img_count, total_img = _extraction_counts()
     return [
     ("works", "Curated Works Bibliography", "data/works.json", f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths."),
-    ("artworks", "Artwork Gallery Data", "data/artworks.json", "Structured metadata for 942 artworks used by the gallery without embedding the full payload in art.html."),
+    ("artworks-index", "Artwork Gallery Index", "data/artworks-index.json", "Compact searchable grid metadata for the gallery; full resolution and media records load on demand."),
+    ("artworks", "Artwork Gallery Data", "data/artworks.json", "Complete artwork metadata export with resolution maps and media URLs used for downloads, agents, and detail views."),
     ("software", "Software Catalog", "data/software.json", f"{software_count} catalogued software repositories across docxology and AII contributions."),
     ("github-repositories", "GitHub Repository Inventory", "data/github-repositories.json", "Generated public docxology and Active Inference Institute repository data; the primary HTML page excludes forks and links to a separate fork archive."),
     ("videos", "YouTube Video Metadata", "data/videos.json", f"{video_count} personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status."),
@@ -116,6 +117,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("external-link-triage", "External Link Triage", _latest_rel("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"), "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
     ("asset-size", "Asset Size Audit", _latest_rel("asset_size_*.json", "reports/asset_size_2026-05-13.json"), "Size report for public HTML, OG images, data exports, and runtime assets."),
     ("browser-smoke", "Browser Smoke Manifest", _latest_subdir_rel("browser-smoke", "manifest.json", "reports/browser-smoke/2026-05-13/manifest.json"), "Selector-based Playwright smoke checks for core local pages."),
+    ("browser-qa", "Progressive Browser QA", _latest_subdir_rel("browser-qa", "manifest.json", "reports/browser-qa/2026-07-18/manifest.json"), "Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy."),
     ("live-site", "Live Site Verification", _latest_rel("live_site_verification_*.json", "reports/live_site_verification_2026-05-13.json"), "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status."),
     ]
 

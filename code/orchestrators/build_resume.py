@@ -31,9 +31,9 @@ from resume_data import (  # noqa: E402
 )
 
 try:
-    from report_paths import generated_timestamp
+    from report_paths import generated_timestamp, stable_generated_at
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp
+    from .report_paths import generated_timestamp, stable_generated_at
 
 JSON_OUT = REPO_ROOT / "data" / "resume.json"
 RESUME_DIR = REPO_ROOT / "resume"
@@ -1483,6 +1483,9 @@ def main() -> None:
     args = parser.parse_args()
 
     generated_at = existing_generated_at() if args.check else None
+    if not args.check:
+        candidate = build_resume_payload(generated_timestamp(), REPO_ROOT)
+        generated_at = stable_generated_at(JSON_OUT, candidate) or candidate["generated_at"]
     payload = build_resume_payload(generated_at or generated_timestamp(), REPO_ROOT)
     outputs = tracked_outputs(payload) if args.all or args.check else selected_outputs(payload, args.variant, args.format)
 

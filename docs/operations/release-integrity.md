@@ -10,9 +10,11 @@ generated layer, artifact, deployment, and live verification records agree.
    `refresh_public_source_inventory.py`, GitHub/Zenodo pairing, and Scholar only
    when directly verified).
 2. Apply only reviewed source changes and preserve permanent citation keys.
-3. Run `uv run python3 code/orchestrators/regenerate_all.py --validate`.
+3. Run `uv run python3 code/orchestrators/regenerate_all.py --validate`, then
+   run it a second time and require no tracked-file content changes.
 4. Run `python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size --check-manifest`.
-5. Run browser smoke, visual QA, and `gsc_followup_preflight.py` after SEO or
+5. Run `browser_smoke.py`, the progressive `browser_qa.py` suite with the
+   cached Playwright runtime, visual QA, and `gsc_followup_preflight.py` after SEO or
    sitemap changes.
 6. Verify the deployed site with `verify_live_site.py`; require 17/17 routes,
    current JSON-level counts, Pages status `built`, and a successful deployment
@@ -23,6 +25,16 @@ artifact summary, deployment metadata, live verification, and CV privacy status.
 `data/pages-artifact-manifest.json` records included files and SHA-256 values,
 omitted extracted paper-image policy, byte/file budgets, and GitHub fallback URL
 templates.
+
+The gallery uses `data/artworks-index.json` for its initial grid and search
+metadata. The complete `data/artworks.json` record, including resolution maps,
+is loaded only for description search or an opened lightbox. Rebuild the compact
+projection through `regenerate_all.py`; never hand-edit either export.
+
+`browser_qa.py` records the known Chromium warning that meta-delivered CSP
+cannot enforce `frame-ancestors`. It is retained as a warning because GitHub
+Pages does not expose response-header control; any other console or page error
+fails the browser report.
 
 ## Retention tiers
 

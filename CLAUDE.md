@@ -98,6 +98,7 @@ Run `--list` to print the plan without executing. Internally it runs, in order:
 `build_evidence_page.py` → `build_reconciliation_report.py` → `audit_assets.py` →
 `accessibility_audit.py` → `build_catalog.py` → `build_search_index.py` →
 `generate_feed.py` → `build_sitemap.py` → `build_image_sitemap.py` →
+`build_artwork_index.py` →
 `build_pages_artifact.py --write-manifest --check-size-only` → `build_agent_index.py` →
 `build_generated_manifest.py` → `build_release_integrity.py` → final
 `build_generated_manifest.py`.
@@ -111,6 +112,12 @@ full-history checkout (`fetch-depth: 0`) or `build_sitemap.py --check` reports a
 generators (`build_github_inventory.py`, `refresh_public_sources.py`) hit live APIs; their
 outputs are committed — patch the output by hand if you only need a small head/meta change
 and can't reach the API, then keep the template in sync.
+
+For interactive-layer changes, run the cached Playwright behavior suite in
+`code/orchestrators/browser_qa.py` in addition to `browser_smoke.py`; it covers
+no-JavaScript fallbacks, state announcements, focus restoration, responsive
+overflow, reduced motion, forced colors, CSP-adjacent console output, and the
+YouTube iframe policy.
 
 ## SEO invariants (enforced by `code/src/seo_invariants.py` via `validate_repo`)
 

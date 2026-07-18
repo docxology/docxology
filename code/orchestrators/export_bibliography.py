@@ -27,9 +27,9 @@ from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
 from sync_publications_html import canonical_link_url  # noqa: E402
 
 try:
-    from report_paths import generated_timestamp
+    from report_paths import generated_timestamp, stable_generated_at
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp
+    from .report_paths import generated_timestamp, stable_generated_at
 
 
 DOMAIN_NAMES = {
@@ -260,7 +260,11 @@ def main() -> None:
     args = parser.parse_args()
 
     works = [row_to_work(r) for r in iter_bibliography_rows()]
-    generated_at = existing_generated_at(REPO_ROOT / "data" / "works.json") if args.check else None
+    works_path = REPO_ROOT / "data" / "works.json"
+    generated_at = existing_generated_at(works_path) if args.check else None
+    if not args.check:
+        candidate = json.loads(render_outputs(works)[works_path])
+        generated_at = stable_generated_at(works_path, candidate)
     outputs = render_outputs(works, generated_at)
 
     stale: list[str] = []

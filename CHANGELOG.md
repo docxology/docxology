@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
 
+## 2026-07-17
+
+- **Regeneration pipeline made genuinely idempotent**: fixed local-vs-UTC report selection at the date boundary, moved the agent manifest behind its report and Pages dependencies, and added body-aware timestamp reuse across generated snapshots, exports, CV, feeds, and indexes. A complete second `regenerate_all.py` pass now produces zero file-content changes; the Pages artifact also treats `GENERATED.md` as control metadata so the integrity tail cannot invalidate its own manifest.
+- **Progressive browser QA added**: `browser_qa.py` now exercises no-JavaScript fallbacks, mobile menu Escape/focus, publication filtering and sorting, gallery lightbox focus, reduced motion at 320px, forced colors, console/page errors, and YouTube iframe origin/title/referrer policy. The fresh report passes 7/7; browser smoke passes 10/10 and visual QA covers 26 screenshots.
+- **Artwork gallery payload split**: added generated `data/artworks-index.json` (942 grid records, 712 KiB versus the 3.1 MiB full export) and lazy full-detail loading for description search and lightbox resolution links. The complete `data/artworks.json` export remains available for agents and downloads.
+- **Backlog and documentation cleaned**: removed the completed stale issue-sync item from `TODO.md`, kept remaining release work as recurring gates, corrected the animation documentation's obsolete inline-script reference, and documented the GitHub Pages meta-CSP `frame-ancestors` limitation.
+- **Public-source refresh completed without unreviewed promotion**: refreshed the dated public-source/inventory, repository, coverage, and pairing reports; the current pairing scan found one represented update and no new or ambiguous rows. Repository validation passes 1531/1531 static accessibility checks, 186 tests, the 17/17 live snapshot gate, strict report validation, Pages artifact checks, and GSC preflight.
+
 ## 2026-07-16
 
 - **Service worker v20 — content data is network-first**: `data/*.json` and `search-index.json` were served cache-first, and each page fetches them at a stable `?v=` query that does not change when the data does — so a returning visitor kept seeing the *previous* publication list (e.g. 193 works after #195 was added) until the SW version happened to bump. These content-data requests are now network-first (cache fallback for offline), matching navigations; static assets (JS/CSS/images/fonts) stay cache-first for speed. Bumped v19 → v20 to clear existing stale caches. This is why a freshly-added publication now appears immediately.

@@ -212,16 +212,33 @@ def write_if_changed(path: Path, content: str) -> bool:
     return True
 
 
+def preserve_timestamp_when_unchanged(payload: dict) -> dict:
+    """Keep a snapshot timestamp stable when only the clock has advanced.
+
+    The count payload is a generated snapshot, not a heartbeat.  Rewriting its
+    timestamp on every regeneration causes every downstream hash and page to
+    churn even when the source tables are identical.
+    """
+    if not JSON_PATH.exists():
+        return payload
+    try:
+        existing = json.loads(JSON_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return payload
+    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
+    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+    if current_body == existing_body and existing.get("generated_at"):
+        payload["generated_at"] = existing["generated_at"]
+    return payload
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="fail if generated outputs are stale")
     args = parser.parse_args()
 
     payload = collect_counts()
-    # Preserve the checked file timestamp so --check is deterministic.
-    if args.check and JSON_PATH.exists():
-        existing = json.loads(JSON_PATH.read_text(encoding="utf-8"))
-        payload["generated_at"] = existing.get("generated_at", payload["generated_at"])
+    payload = preserve_timestamp_when_unchanged(payload)
 
     json_text = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     markdown = render_markdown(payload)

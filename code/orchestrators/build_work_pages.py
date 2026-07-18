@@ -18,9 +18,9 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
 
 try:
-    from report_paths import generated_timestamp
+    from report_paths import generated_timestamp, stable_generated_at
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp
+    from .report_paths import generated_timestamp, stable_generated_at
 
 
 def h(value: object) -> str:
@@ -731,6 +731,9 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
     args = parser.parse_args()
     generated_at = existing_generated_at(ENRICHMENT_OUT) if args.check else None
+    if not args.check:
+        candidate_outputs = render_outputs()
+        generated_at = stable_generated_at(ENRICHMENT_OUT, json.loads(candidate_outputs[ENRICHMENT_OUT]))
     outputs = render_outputs(generated_at)
     stale: list[str] = []
     if not args.check:

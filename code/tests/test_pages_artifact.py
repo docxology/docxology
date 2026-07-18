@@ -30,5 +30,6 @@ def test_source_and_local_only_tooling_are_separated():
 
 
 def test_control_manifests_have_public_fallback_policy():
+    assert Path("GENERATED.md") in bpa.CONTROL_FILES
     assert Path("data/pages-artifact-manifest.json") in bpa.CONTROL_FILES
     assert Path("data/release-integrity.json") in bpa.CONTROL_FILES
