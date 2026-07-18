@@ -76,7 +76,11 @@ def build_payload() -> dict:
         "canonical_origin": "https://danielarifriedman.com/",
         "generator": {
             "pipeline": "code/orchestrators/regenerate_all.py",
-            "python": sys.version.split()[0],
+            # Record the project contract, not the runner's patch/minor
+            # version. CI uses Python 3.12 while the maintainer workstation
+            # may use 3.13; the integrity envelope must be cross-runtime
+            # reproducible while still documenting the supported floor.
+            "python": ">=3.12 (pyproject.toml)",
             "project_version": "0.1.0",
             "orchestrator_sha256": generator_hashes,
         },
