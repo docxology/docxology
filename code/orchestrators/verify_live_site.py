@@ -17,6 +17,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
+AGENT_INDEX_JSON = REPO_ROOT / "data" / "agent-index.json"
 
 try:
     from report_paths import dated_report_path, generated_timestamp, latest_report
@@ -40,6 +41,23 @@ def _read_current_counts() -> dict:
         return json.loads(CURRENT_COUNTS_JSON.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}
+
+
+def _read_agent_index_schema_version() -> str | None:
+    """Read the current generated agent-index contract version.
+
+    Keeping the expected version beside the generated artifact prevents the
+    live verifier from becoming the hidden second source of truth when the
+    agent manifest evolves.
+    """
+    if not AGENT_INDEX_JSON.exists():
+        return None
+    try:
+        payload = json.loads(AGENT_INDEX_JSON.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    version = payload.get("schema_version")
+    return version if isinstance(version, str) else None
 
 
 def load_dynamic_checks() -> list[dict[str, list[str]]]:
@@ -185,7 +203,10 @@ def parse_json_contract(path: str, text: str, fingerprint: dict) -> tuple[dict[s
         observed["software_total"] = count
         checks["software_count_matches"] = count == fingerprint.get("software_total")
     elif path == "data/agent-index.json":
-        checks["versioned_schema"] = payload.get("schema_version") == "1.2"
+        expected_schema_version = _read_agent_index_schema_version()
+        checks["versioned_schema"] = (
+            expected_schema_version is not None and payload.get("schema_version") == expected_schema_version
+        )
         checks["routes_present"] = isinstance(payload.get("routes"), list) and bool(payload.get("routes"))
         checks["datasets_present"] = isinstance(payload.get("datasets"), dict) and bool(payload.get("datasets"))
         checks["dataset_hashes_present"] = isinstance(payload.get("dataset_hashes"), dict) and bool(payload.get("dataset_hashes"))

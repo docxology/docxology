@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-18T02:02:46Z",
-  "source_commit_at_generation": "e7b6a45d68d5365d54b8f9d542ec589b1c351c1f",
+  "generated_at": "2026-07-18T02:07:44Z",
+  "source_commit_at_generation": "44dee495c4c40749390f8f390dfff25fbec66c97",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 885561258,
+    "source_bytes": 885563143,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4411,
-    "artifact_bytes": 886339389
+    "artifact_bytes": 886341274
   },
   "included_files": [
     {
@@ -5591,8 +5591,8 @@
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
-      "bytes": 20514,
-      "sha256": "33025c2e6b587b420ec46ead677b96f770a3e479c6f255d40ecd0e3560d231c6"
+      "bytes": 21328,
+      "sha256": "140ae03e9cf6d46b84b6055d9d6cdfae60b9e855ea2fd5bf51cfc09299cd6ab3"
     },
     {
       "path": "code/orchestrators/visual_qa.py",
@@ -5836,8 +5836,8 @@
     },
     {
       "path": "code/tests/test_verify_live_site.py",
-      "bytes": 8264,
-      "sha256": "b61f217a9acbbd8480b7d09a37099c63071576c1898bf61a33872744103f4f2c"
+      "bytes": 9258,
+      "sha256": "71bf2a8bfa4a882fbaf47b11e480d3a6180458744e7f6b5c307adf8a220225a2"
     },
     {
       "path": "code/tests/test_youtube_fetcher.py",
@@ -14406,8 +14406,8 @@
     },
     {
       "path": "reports/live_site_verification_2026-07-18.json",
-      "bytes": 14448,
-      "sha256": "d3e89665f364d9df803ed6910e8879920482cdfc756360cd294c87c4f9e8220a"
+      "bytes": 14525,
+      "sha256": "61ed0353158be399802e8d2000b0a24dc1c45f521c229b460412c6e1a85291e2"
     },
     {
       "path": "reports/pages_artifact_growth_2026-07-17.json",

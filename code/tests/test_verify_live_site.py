@@ -89,6 +89,33 @@ def test_catalog_json_contract_accepts_schema_org_dataset_property():
     assert observed == {}
 
 
+def test_agent_index_contract_uses_current_generated_schema_version(monkeypatch, tmp_path):
+    agent_index_path = tmp_path / "data" / "agent-index.json"
+    agent_index_path.parent.mkdir(parents=True, exist_ok=True)
+    agent_index_path.write_text(json.dumps({"schema_version": "1.3"}), encoding="utf-8")
+    monkeypatch.setattr(vl, "AGENT_INDEX_JSON", agent_index_path)
+
+    checks, observed = vl.parse_json_contract(
+        "data/agent-index.json",
+        json.dumps(
+            {
+                "schema_version": "1.3",
+                "routes": [{"id": "agent-index"}],
+                "datasets": {"works": {"count": 196}},
+                "dataset_hashes": {"works": "sha256:example"},
+            }
+        ),
+        {"works": 196},
+    )
+
+    assert checks["versioned_schema"]
+    assert checks["routes_present"]
+    assert checks["datasets_present"]
+    assert checks["dataset_hashes_present"]
+    assert checks["agent_works_match"]
+    assert observed == {"agent_works": 196}
+
+
 @pytest.mark.parametrize("status", ["building", "queued", "BUILDING"])
 def test_pages_build_states_are_deployment_pending(status):
     assert vl.is_pages_deployment_pending(status)
