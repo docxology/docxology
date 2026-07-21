@@ -7,13 +7,25 @@ const state = { items: [], type: 'all', q: '' };
         input.value = params.get('q') || '';
         state.q = input.value;
 
-        function score(item, terms){
-            const title = (item.title || '').toLowerCase();
-            const content = (item.content || '').toLowerCase();
+        // Compile each query term to a word-start matcher: "\b" anchors to a word
+        // boundary so "ant" matches "ant"/"ants"/"ant-colony" and "info" matches
+        // "information" (useful prefix search), but NOT the interior of "important".
+        // Symbol/emoji terms (no leading word char) fall back to substring so
+        // queries like "🐜" or "c++" still match. Compiled once per render.
+        function matchers(terms){
+            return terms.map(term => {
+                const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                return new RegExp((/^\w/.test(term) ? '\\b' : '') + escaped, 'i');
+            });
+        }
+
+        function score(item, res){
+            const title = item.title || '';
+            const content = item.content || '';
             let value = 0;
-            for (const term of terms){
-                if (title.includes(term)) value += 8;
-                if (content.includes(term)) value += 2;
+            for (const re of res){
+                if (re.test(title)) value += 8;
+                if (re.test(content)) value += 2;
             }
             // Tie-break boost for works — only when the item already matched a
             // term. Applied unconditionally this leaked a baseline score to every
@@ -41,7 +53,7 @@ const state = { items: [], type: 'all', q: '' };
             const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
             let matches = state.items;
             if (state.type !== 'all') matches = matches.filter(item => item.type === state.type);
-            if (terms.length) matches = matches.map(item => ({item, rank: score(item, terms)})).filter(x => x.rank > 0).sort((a,b) => b.rank - a.rank).map(x => x.item);
+            if (terms.length) { const res = matchers(terms); matches = matches.map(item => ({item, rank: score(item, res)})).filter(x => x.rank > 0).sort((a,b) => b.rank - a.rank).map(x => x.item); }
             else matches = matches.slice(0, 40);
             matches = matches.slice(0, 80);
             results.innerHTML = matches.map(item => {

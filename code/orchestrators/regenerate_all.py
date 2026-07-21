@@ -63,6 +63,10 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_work_pages.py", []),
     ("build_video_pages.py", []),
     ("sync_site_facts.py", []),                  # finalize volatile facts after video/art data generation
+    ("prune_old_reports.py", ["--apply"]),       # drop superseded QA screenshot sets — MUST follow sync_site_facts
+                                                 # (which repoints discovery/llms refs to the latest set, so older
+                                                 # sets are now unreferenced) and precede build_pages_artifact so the
+                                                 # manifest reflects the trimmed tree
     ("build_paper_pages.py", []),
     ("deploy_seo_security.py", []),         # CSP/referrer/agent metadata on public HTML
     ("build_exports_page.py", []),

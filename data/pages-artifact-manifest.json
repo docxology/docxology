@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T16:11:09Z",
-  "source_commit_at_generation": "49d0b45b7a5532f4eec3be4310a8afba6c47fa00",
+  "generated_at": "2026-07-21T16:34:07Z",
+  "source_commit_at_generation": "0c87030c1aa2a3ff1ee2e350ef97992d8541c2d7",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 755186269,
+    "source_bytes": 755187357,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4317,
-    "artifact_bytes": 755946968
+    "artifact_bytes": 755948056
   },
   "included_files": [
     {
@@ -5546,8 +5546,8 @@
     },
     {
       "path": "code/orchestrators/regenerate_all.py",
-      "bytes": 7718,
-      "sha256": "7c128fc96194e25eff7028677569dd6877f2aa01043b500829602e1561483a6b"
+      "bytes": 8155,
+      "sha256": "f2648b68540c7349615bfe14793c4490f574d55448ea1025184b74bb9d3629f6"
     },
     {
       "path": "code/orchestrators/regenerate_docs.py",
@@ -6266,8 +6266,8 @@
     },
     {
       "path": "js/search-page.js",
-      "bytes": 4592,
-      "sha256": "739d5469f0ec808d31608ab551dca411215510e25a3a0eee7c5e140c2b0624c1"
+      "bytes": 5242,
+      "sha256": "a12dbc9c327389f805121848b7b879da3d32a7492e0b8a0c51b3392bf75f64f2"
     },
     {
       "path": "js/search-utils.js",
@@ -14087,7 +14087,7 @@
     {
       "path": "reports/asset_size_2026-07-21.json",
       "bytes": 3350,
-      "sha256": "2435909ccf283539972947af6ff731c21cb3c0ba6bc50c67d000b1809a94455b"
+      "sha256": "c391843608d09d0effeba90ea74e6d1caa9c4baa4ad57236973ee5247c7172e3"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -14901,8 +14901,8 @@
     },
     {
       "path": "search.html",
-      "bytes": 8925,
-      "sha256": "ee50abcfc147fceb78b7f3d6933b34c6b85dffd99e3d55a536e1f320ee0a88af"
+      "bytes": 8926,
+      "sha256": "8d61c89d437b31eaba433d3f04b3b50d7cced75d27ab8f74dd5c498be43f8fd7"
     },
     {
       "path": "security.txt",
@@ -14932,7 +14932,7 @@
     {
       "path": "sw.js",
       "bytes": 3676,
-      "sha256": "b4a5ae16376433575f47c3549a9c3f9dac9ca391996f06dc2221b8bbbdb868fb"
+      "sha256": "cb653bb12eb0ca6354b466be698f6c3570169ac3f95378d4cd5a0b993b920c8b"
     },
     {
       "path": "updates.html",
