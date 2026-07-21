@@ -8,14 +8,18 @@ const state = { items: [], type: 'all', q: '' };
         state.q = input.value;
 
         function score(item, terms){
-            const title = item.title.toLowerCase();
-            const content = item.content.toLowerCase();
+            const title = (item.title || '').toLowerCase();
+            const content = (item.content || '').toLowerCase();
             let value = 0;
             for (const term of terms){
                 if (title.includes(term)) value += 8;
                 if (content.includes(term)) value += 2;
             }
-            if (item.type === 'work') value += 1;
+            // Tie-break boost for works — only when the item already matched a
+            // term. Applied unconditionally this leaked a baseline score to every
+            // work, so every query (even nonsense) returned all works and a genuine
+            // no-match query never showed "No results".
+            if (value > 0 && item.type === 'work') value += 1;
             return value;
         }
 

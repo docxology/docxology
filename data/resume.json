@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:09:50Z",
+  "generated_at": "2026-07-21T12:52:25Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 196,
+    "works": 197,
     "software_catalogued": 96,
     "owned_software_catalogued": 62,
     "aii_software_catalogued": 34,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0b92252f6ef28c1d850cdc493c0e0de6d9859ac5bb42f5ac613d118259a22152",
+      "sha256": "5464b53b0bf0df61e51d2e3c03abb1e8fe0ce537286745c3ac2087aa561460d3",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 107779,
-          "sha256": "329b4dbd4f60e29bb46d62220f32d1ef07dba1474bbc589be096a15ea927ee40"
+          "bytes": 108351,
+          "sha256": "69ac21e422fa4199559cc68d13e8a9a9b23a6b29f92a64768d53851703cc13c8"
         },
         {
           "path": "data/software.json",
           "bytes": 46947,
-          "sha256": "1c15e4bcd1112d3c0e6bda9a8d9631e28445d645922be9b2ec5e8a06d3a71360"
+          "sha256": "cb6d2e59b61bddd864aabef0eba689492121c29dddcf40b5f1de10f4a25a8e85"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11846,
-          "sha256": "5c541283194a7354543c867b5e45b986643ddef32df5c54c84ebd8d292b5a2b2"
+          "sha256": "dbe4cce3ad7bce5ebc8ad5f825d4c2b9a139df4b241c9b787ca3778eb0b450ef"
         },
         {
           "path": "data/github-repositories.json",
@@ -5445,6 +5445,22 @@
       "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false
+    },
+    {
+      "num": 198,
+      "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21418687",
+      "doi": "10.5281/zenodo.21418687",
+      "docs_path": "papers/2026_SynthOBSFractiSynth/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false
     }
   ],
   "software": [
@@ -6604,14 +6620,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 196 works.",
+      "claim": "The curated bibliography contains 197 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-18T01:09:49+00:00",
+      "checked_at": "2026-07-21T12:52:24+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -6619,14 +6635,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 179 per-paper documentation folders.",
+      "claim": "The repository contains 180 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-18T01:09:49+00:00",
+      "checked_at": "2026-07-21T12:52:24+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

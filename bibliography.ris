@@ -2332,3 +2332,15 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 197; docs: papers/2026_DuckRabbit/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer
+T2  - Zenodo
+DO  - 10.5281/zenodo.21418687
+UR  - https://doi.org/10.5281/zenodo.21418687
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 198; docs: papers/2026_SynthOBSFractiSynth/
+ER  -

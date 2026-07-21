@@ -3110,5 +3110,23 @@
     ],
     "doi": "10.5281/zenodo.21419693",
     "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0"
+  },
+  "2026_SynthOBSFractiSynth": {
+    "year": "2026",
+    "topic": "SynthOBSFractiSynth",
+    "name": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+    "description": "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technical design manuscript. 1217 tests passing, 96.09% coverage on src/synthobs. Source: https://github.com/docxology/SynthOBS/releases/tag/v1.618.0. This version replaces the PDF with one that carries its own DOI on the cover/citation page (the v1 PDF referenced the DOI only externally).",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technical design manuscript. 1217 tests passing, 96.09% coverage on src/synthobs. Source: https://github.com/docxology/SynthOBS/releases/tag/v1.618.0. This version replaces the PDF with one that carries its own DOI on the cover/citation page (the v1 PDF referenced the DOI only externally).",
+    "keywords": [
+      "OBS Studio",
+      "libobs",
+      "reproducible research software",
+      "space-weather telemetry",
+      "real-time digital signal processing",
+      "software provenance",
+      "software citation"
+    ],
+    "doi": "10.5281/zenodo.21418687"
   }
 }

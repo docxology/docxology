@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-18T01:03:45Z",
+  "generated_at": "2026-07-21T12:52:26Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 196,
+  "count": 197,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -3951,6 +3951,28 @@
       ],
       "methods": [],
       "source": "papers/2026_DuckRabbit/README.md"
+    },
+    "Friedman2026SynthOBSFractiSynthGoldenRatio198": {
+      "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+      "abstract": "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technical design manuscript. 1217 tests passing, 96.09% coverage on src/synthobs. Source: https://github.com/docxology/SynthOBS/releases/tag/v1.618.0. This version replaces the PDF with one that carries its own DOI on the cover/citation page (the v1 PDF referenced the DOI only externally).",
+      "keywords": [
+        "OBS Studio",
+        "libobs",
+        "reproducible research software",
+        "space-weather telemetry",
+        "real-time digital signal processing",
+        "software provenance",
+        "software citation"
+      ],
+      "findings": [
+        "OBS Studio",
+        "libobs",
+        "reproducible research software",
+        "space-weather telemetry",
+        "real-time digital signal processing"
+      ],
+      "methods": [],
+      "source": "papers/2026_SynthOBSFractiSynth/README.md"
     }
   }
 }

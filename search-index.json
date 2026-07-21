@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:37:09Z",
+  "generated_at": "2026-07-21T12:52:35Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1621,
+  "count": 1622,
   "items": [
     {
       "id": "page:home",
@@ -308,7 +308,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-18.json",
+      "url": "/reports/accessibility_static_2026-07-21.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -357,7 +357,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-18.json",
+      "url": "/reports/asset_size_2026-07-21.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -5006,6 +5006,30 @@
         "psychophysics"
       ],
       "content": "DuckRabbit: Typed Multimodal Illusion Generator Zenodo 10.5281/zenodo.21419693 Friedman2026DuckRabbitTypedMultimodalIllusion197 Computational Paper DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public release will be available at the following repository: https://github.com/docxology/DuckRabbit DuckRabbit is released under the MIT License. Its basic unit is an immutable request containing an illusion identifier, validated parameters, a seed, and an encoding specification. The request yields a canonical artifact, objective media measurements, and a versioned provenance manifest before any delivery codec is selected. This separation makes the stimulus a testable computational object while reserving claims about perception for controlled observer protocols. The release situates its engineering choices within a deliberately broad historical foundation spanning Greek, Arabic/ perceptual illusions cognitive taxonomy audio-visual stimuli deterministic generation typed parameters research software reproducible research psychophysics perceptual illusions cognitive taxonomy audio-visual stimuli deterministic generation typed parameters"
+    },
+    {
+      "id": "work:Friedman2026SynthOBSFractiSynthGoldenRatio198",
+      "type": "work",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21418687",
+      "full_text_url": "",
+      "summary": "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "OBS Studio",
+        "libobs",
+        "reproducible research software",
+        "space-weather telemetry",
+        "real-time digital signal processing",
+        "software provenance",
+        "software citation"
+      ],
+      "content": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer Zenodo 10.5281/zenodo.21418687 Friedman2026SynthOBSFractiSynthGoldenRatio198 Computational Paper A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technical design manuscript. 1217 tests passing, 96.09% coverage on src/synthobs. Source: https://github.com/docxology/SynthOBS/releases/tag/v1.618.0. This version replaces the PDF with one that carries its own DOI on the cover/citation page (the v1 PDF referenced the DOI only externally). OBS Studio libobs reproducible research software space-weather telemetry real-time digital signal processing software provenance software citation OBS Studio libobs reproducible research software space-weather telemetry real-time digital signal processing"
     },
     {
       "id": "software:docxology:template",
@@ -28366,7 +28390,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 196 works.",
+      "title": "The curated bibliography contains 197 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28374,12 +28398,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 196 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 197 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 179 per-paper documentation folders.",
+      "title": "The repository contains 180 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28387,7 +28411,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 179 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 180 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -28563,7 +28587,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 196 works, 96 software rows, 385 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 197 works, 96 software rows, 385 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",
