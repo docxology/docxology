@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T12:54:17Z",
-  "source_commit_at_generation": "eb7d1200efb49220906e06076e0e5e65422c6846",
+  "generated_at": "2026-07-21T15:19:24Z",
+  "source_commit_at_generation": "34c72cae84d2b4d5d339175ef3ffad20c8c29afc",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 885575850,
+    "source_bytes": 889652459,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4411,
-    "artifact_bytes": 886354044
+    "artifact_file_count": 4425,
+    "artifact_bytes": 890433089
   },
   "included_files": [
     {
@@ -5252,7 +5252,7 @@
     {
       "path": "catalog.html",
       "bytes": 45493,
-      "sha256": "ccc80104effeadde7e1a60873b274d40f98e1d81d1a8429de58ebb0c5604cb5e"
+      "sha256": "29c955ad40e863b7214135e9e207e47a8aff6fd169e615d11a2f0f585ee0dd52"
     },
     {
       "path": "cite-verify.html",
@@ -5867,7 +5867,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 28493,
-      "sha256": "84ee9d8eff7b2dd58cda3fed9b7dc83eed382d1b4bc3c7b22059f9053492e5e7"
+      "sha256": "421c1b86598cdf8e34f18564fe83b58c1f6d6699f5ef9a502c521a00f48f0963"
     },
     {
       "path": "data/claims.json",
@@ -13365,6 +13365,41 @@
       "sha256": "f170d0f39bdbe051cb42ca4b7cf130ba171adf95b9cdcbf4dac19ddff0091908"
     },
     {
+      "path": "papers/2026_SynthOBSFractiSynth/AGENTS.md",
+      "bytes": 727,
+      "sha256": "a633e55fec821b87b16dc1031db48f592ed94f31a3db83af0f9355d0b9fb04dd"
+    },
+    {
+      "path": "papers/2026_SynthOBSFractiSynth/CITATION.cff",
+      "bytes": 621,
+      "sha256": "a637a021cee88f7050be098f3ddac60f720418ba9b7b11c15a76a1e8260a7a9d"
+    },
+    {
+      "path": "papers/2026_SynthOBSFractiSynth/README.md",
+      "bytes": 1629,
+      "sha256": "91eba203dea3ab781641b2b17186cdc88a84e47b7331a2d9352150cbef121280"
+    },
+    {
+      "path": "papers/2026_SynthOBSFractiSynth/SKILL.md",
+      "bytes": 1039,
+      "sha256": "07dddfe7ef93a349c83785fa171501c150ac428d4e7e6990a141f1b5f5b99a00"
+    },
+    {
+      "path": "papers/2026_SynthOBSFractiSynth/SynthOBS_v1.618.0.pdf",
+      "bytes": 2985331,
+      "sha256": "30d05a8669e6f8cbeb8fa706ea402808694cd260a5170076816c7f7b39608315"
+    },
+    {
+      "path": "papers/2026_SynthOBSFractiSynth/index.html",
+      "bytes": 8534,
+      "sha256": "dc6f0b394df1047ce5300419225638191bc732919962b362707c53d31c220935"
+    },
+    {
+      "path": "papers/2026_SynthOBSFractiSynth/metadata.json",
+      "bytes": 2472,
+      "sha256": "5dd368e8368425eb5a59e9ccdf8edd04175c327cf17d5a09326daa9898c198fa"
+    },
+    {
       "path": "papers/2026_TemplateApproachReproducible/AGENTS.md",
       "bytes": 1884,
       "sha256": "a21a9d92e72652660708832ccbd1a6f2b0770966f28388126326bd8598d700c2"
@@ -13860,6 +13895,11 @@
       "sha256": "c7bdac19be010b6e1136bba60faefd2602e374d366f41b6b07bef90932a016d2"
     },
     {
+      "path": "reports/accessibility_static_2026-07-21.json",
+      "bytes": 1031737,
+      "sha256": "afcafdaff437fda2607d3b6261eab7fdd2e7ccff0cf9701238fa594adcc88fd0"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -14043,6 +14083,11 @@
       "path": "reports/asset_size_2026-07-18.json",
       "bytes": 3350,
       "sha256": "f5c0138327c73b5d3fe558f5c33e719595b54cc9d6624b80b37e861dae17c8cf"
+    },
+    {
+      "path": "reports/asset_size_2026-07-21.json",
+      "bytes": 3350,
+      "sha256": "2435909ccf283539972947af6ff731c21cb3c0ba6bc50c67d000b1809a94455b"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -14760,6 +14805,16 @@
       "sha256": "fc409801c80da1a5b928be5a768039f4d2e3190938c42e9cfd2223596ef112f2"
     },
     {
+      "path": "reports/source_coverage_2026-07-21.json",
+      "bytes": 17783,
+      "sha256": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f"
+    },
+    {
+      "path": "reports/source_coverage_2026-07-21.md",
+      "bytes": 4658,
+      "sha256": "8f1eb5fe2b39533321bb3de48eb0913d29fcafce41570b069b87ead751f2e702"
+    },
+    {
       "path": "reports/visual-qa/2026-05-28/art-desktop.png",
       "bytes": 4448655,
       "sha256": "f9d41b1335eb44fd22bc40974e9bd0054a28797cb927f727521d1a67ca594c78"
@@ -15310,6 +15365,11 @@
       "sha256": "decf449603b3df9a2739ce206f0c969e7ec892fbefe91eb8cd2509c1ff0f1c19"
     },
     {
+      "path": "reports/zenodo_uncatalogued_2026-07-21.json",
+      "bytes": 1031,
+      "sha256": "5c76cca20e1a2601cdf32ffdff837aa2232c769df0362743ebad05f27ed729fb"
+    },
+    {
       "path": "repositories-forks.html",
       "bytes": 198341,
       "sha256": "2b2ed480bb83687cc6b1317333b383fb512efc10059b3ad2995eaf940e0064ff"
@@ -15377,7 +15437,7 @@
     {
       "path": "search-index.json",
       "bytes": 1689369,
-      "sha256": "58465552b97122fdaba2d14c6d88c0c137786c310542d4e214537ad0f8d81531"
+      "sha256": "85cd3194cefb2d0312c07bf3023a72d44ae67e7e0c97b6683eb7891daee55bf4"
     },
     {
       "path": "search.html",
@@ -15397,7 +15457,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 238561,
-      "sha256": "4d27bf625cc38d24be5ebca81e128b4a410ebb0608fded146b3b1ca846a3449b"
+      "sha256": "17527350b805e0aaa3efd35f91f91d42102197c37523503130f5a5edb746d036"
     },
     {
       "path": "software.html",
@@ -22005,6 +22065,11 @@
       "sha256": "49d212b5230e06688371342f4e5812a2878c38c3d9f22244250da1482a105c53"
     },
     {
+      "path": "works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
+      "bytes": 17697,
+      "sha256": "8cee1ad5e02cbcfc55583a75a231c17c663b5175351a9cc4f801da0428244a4b"
+    },
+    {
       "path": "works/Friedman2026TemplateApproachReproducibleGenerative001.html",
       "bytes": 18864,
       "sha256": "fa32cc5fbe2ffddfd853cfc28fd6409f38d01f08a2ae924c854e256c625db4bc"
@@ -22070,6 +22135,10 @@
     },
     {
       "path": "data/release-integrity.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/pages_artifact_growth_2026-07-21.json",
       "role": "public control metadata"
     }
   ],

@@ -527,7 +527,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-07-18.json"
+        "reports/live_site_verification_2026-07-21.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",
