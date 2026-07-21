@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-07-21T12:52:25Z
+Generated: 2026-07-21T20:55:15Z
 
-Current public metrics: 197 curated works; 96 catalogued software repositories (62 owned + 34 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 345 docxology + 40 AII public repositories (142 primary, 243 forks).
+Current public metrics: 197 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
 
 SUMMARY
 -------
@@ -187,12 +187,12 @@ SOFTWARE (14)
 -------------
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Zenodo | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
+docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
 docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
 docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286478
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
-docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
 docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533125
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966

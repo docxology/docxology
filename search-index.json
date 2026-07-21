@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T15:15:09Z",
+  "generated_at": "2026-07-21T20:55:25Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1622,
+  "count": 1657,
   "items": [
     {
       "id": "page:home",
@@ -283,7 +283,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-07-18.md",
+      "url": "/reports/reconciliation_2026-07-21.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -5088,6 +5088,20 @@
       "content": "codomyrmex AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration Python docxology"
     },
     {
+      "id": "software:docxology:timeline_generator",
+      "type": "software",
+      "title": "timeline_generator",
+      "url": "https://github.com/docxology/timeline_generator",
+      "summary": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TypeScript",
+        "docxology"
+      ],
+      "content": "timeline_generator Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network TypeScript docxology"
+    },
+    {
       "id": "software:docxology:cognitive-engine",
       "type": "software",
       "title": "cognitive-engine",
@@ -5114,20 +5128,6 @@
         "docxology"
       ],
       "content": "opentir Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations Python docxology"
-    },
-    {
-      "id": "software:docxology:timeline_generator",
-      "type": "software",
-      "title": "timeline_generator",
-      "url": "https://github.com/docxology/timeline_generator",
-      "summary": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
-      "domain": "docxology",
-      "tags": [
-        "software",
-        "TypeScript",
-        "docxology"
-      ],
-      "content": "timeline_generator Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network TypeScript docxology"
     },
     {
       "id": "software:docxology:FORMINDEX",
@@ -5214,6 +5214,20 @@
       "content": "QuadMath Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library TeX docxology"
     },
     {
+      "id": "software:docxology:literature",
+      "type": "software",
+      "title": "literature",
+      "url": "https://github.com/docxology/literature",
+      "summary": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "literature Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications Python docxology"
+    },
+    {
       "id": "software:docxology:active_inference",
       "type": "software",
       "title": "active_inference",
@@ -5270,20 +5284,6 @@
       "content": "lean_niche Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics Python docxology"
     },
     {
-      "id": "software:docxology:literature",
-      "type": "software",
-      "title": "literature",
-      "url": "https://github.com/docxology/literature",
-      "summary": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
-      "domain": "docxology",
-      "tags": [
-        "software",
-        "Python",
-        "docxology"
-      ],
-      "content": "literature Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications Python docxology"
-    },
-    {
       "id": "software:docxology:obsidian-construction-from-text",
       "type": "software",
       "title": "obsidian-construction-from-text",
@@ -5338,6 +5338,34 @@
         "docxology"
       ],
       "content": "template_autoscientists AutoScientists deterministic multi-agent scientific-discovery coordination harness ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:ultralink-docx",
+      "type": "software",
+      "title": "ultralink-docx",
+      "url": "https://github.com/docxology/ultralink-docx",
+      "summary": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "HTML",
+        "docxology"
+      ],
+      "content": "ultralink-docx UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents HTML docxology"
+    },
+    {
+      "id": "software:docxology:steganographer",
+      "type": "software",
+      "title": "steganographer",
+      "url": "https://github.com/docxology/steganographer",
+      "summary": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Rust",
+        "docxology"
+      ],
+      "content": "steganographer High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration Rust docxology"
     },
     {
       "id": "software:docxology:template_newspaper",
@@ -5422,34 +5450,6 @@
         "docxology"
       ],
       "content": "template_madlib Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing ·  · Zenodo Python docxology"
-    },
-    {
-      "id": "software:docxology:ultralink-docx",
-      "type": "software",
-      "title": "ultralink-docx",
-      "url": "https://github.com/docxology/ultralink-docx",
-      "summary": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
-      "domain": "docxology",
-      "tags": [
-        "software",
-        "HTML",
-        "docxology"
-      ],
-      "content": "ultralink-docx UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents HTML docxology"
-    },
-    {
-      "id": "software:docxology:cognitive",
-      "type": "software",
-      "title": "cognitive",
-      "url": "https://github.com/docxology/cognitive",
-      "summary": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
-      "domain": "docxology",
-      "tags": [
-        "software",
-        "Python",
-        "docxology"
-      ],
-      "content": "cognitive Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization Python docxology"
     },
     {
       "id": "software:docxology:active_torchference",
@@ -5816,20 +5816,6 @@
       "content": "snake Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms Python docxology"
     },
     {
-      "id": "software:docxology:steganographer",
-      "type": "software",
-      "title": "steganographer",
-      "url": "https://github.com/docxology/steganographer",
-      "summary": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
-      "domain": "docxology",
-      "tags": [
-        "software",
-        "Rust",
-        "docxology"
-      ],
-      "content": "steganographer High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration Rust docxology"
-    },
-    {
       "id": "software:docxology:SynthOBS",
       "type": "software",
       "title": "SynthOBS",
@@ -5900,6 +5886,454 @@
       "content": "transformer Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research Python docxology"
     },
     {
+      "id": "software:docxology:cognitive",
+      "type": "software",
+      "title": "cognitive",
+      "url": "https://github.com/docxology/cognitive",
+      "summary": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "cognitive Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization Python docxology"
+    },
+    {
+      "id": "software:docxology:EntoLaw",
+      "type": "software",
+      "title": "EntoLaw",
+      "url": "https://github.com/docxology/EntoLaw",
+      "summary": "A source-anchored, reproducible field map of entomological law",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "EntoLaw A source-anchored, reproducible field map of entomological law TeX docxology"
+    },
+    {
+      "id": "software:docxology:DuckRabbit",
+      "type": "software",
+      "title": "DuckRabbit",
+      "url": "https://github.com/docxology/DuckRabbit",
+      "summary": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "DuckRabbit Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs Python docxology"
+    },
+    {
+      "id": "software:docxology:entofile",
+      "type": "software",
+      "title": "entofile",
+      "url": "https://github.com/docxology/entofile",
+      "summary": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. Python docxology"
+    },
+    {
+      "id": "software:docxology:realizing_emptiness",
+      "type": "software",
+      "title": "realizing_emptiness",
+      "url": "https://github.com/docxology/realizing_emptiness",
+      "summary": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). Python docxology"
+    },
+    {
+      "id": "software:docxology:ntqr_allotment",
+      "type": "software",
+      "title": "ntqr_allotment",
+      "url": "https://github.com/docxology/ntqr_allotment",
+      "summary": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion)",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "ntqr_allotment Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) Python docxology"
+    },
+    {
+      "id": "software:docxology:alphacogant",
+      "type": "software",
+      "title": "alphacogant",
+      "url": "https://github.com/docxology/alphacogant",
+      "summary": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "alphacogant AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model Python docxology"
+    },
+    {
+      "id": "software:docxology:democreate",
+      "type": "software",
+      "title": "democreate",
+      "url": "https://github.com/docxology/democreate",
+      "summary": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. Python docxology"
+    },
+    {
+      "id": "software:docxology:blake",
+      "type": "software",
+      "title": "blake",
+      "url": "https://github.com/docxology/blake",
+      "summary": "William Blake",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "blake William Blake Python docxology"
+    },
+    {
+      "id": "software:docxology:dotscope",
+      "type": "software",
+      "title": "dotscope",
+      "url": "https://github.com/docxology/dotscope",
+      "summary": "The Physics Engine for AI Coding Agents.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "",
+        "docxology"
+      ],
+      "content": "dotscope The Physics Engine for AI Coding Agents.  docxology"
+    },
+    {
+      "id": "software:docxology:active-inference-pocket-lab",
+      "type": "software",
+      "title": "active-inference-pocket-lab",
+      "url": "https://github.com/docxology/active-inference-pocket-lab",
+      "summary": "Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "JavaScript",
+        "docxology"
+      ],
+      "content": "active-inference-pocket-lab Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments JavaScript docxology"
+    },
+    {
+      "id": "software:docxology:sunspot",
+      "type": "software",
+      "title": "sunspot",
+      "url": "https://github.com/docxology/sunspot",
+      "summary": "Correlating Github activity with Solar activity",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "sunspot Correlating Github activity with Solar activity Python docxology"
+    },
+    {
+      "id": "software:docxology:template_active_inference",
+      "type": "software",
+      "title": "template_active_inference",
+      "url": "https://github.com/docxology/template_active_inference",
+      "summary": "Active inference multi-track exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_active_inference Active inference multi-track exemplar releases Python docxology"
+    },
+    {
+      "id": "software:docxology:template-pitch-deck",
+      "type": "software",
+      "title": "template-pitch-deck",
+      "url": "https://github.com/docxology/template-pitch-deck",
+      "summary": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template-pitch-deck Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template Python docxology"
+    },
+    {
+      "id": "software:docxology:template_autopoiesis",
+      "type": "software",
+      "title": "template_autopoiesis",
+      "url": "https://github.com/docxology/template_autopoiesis",
+      "summary": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_autoresearch_project",
+      "type": "software",
+      "title": "template_autoresearch_project",
+      "url": "https://github.com/docxology/template_autoresearch_project",
+      "summary": "Template autoresearch project exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_autoresearch_project Template autoresearch project exemplar releases Python docxology"
+    },
+    {
+      "id": "software:docxology:template_code_project",
+      "type": "software",
+      "title": "template_code_project",
+      "url": "https://github.com/docxology/template_code_project",
+      "summary": "Template code project exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_code_project Template code project exemplar releases Python docxology"
+    },
+    {
+      "id": "software:docxology:template_data_descriptor",
+      "type": "software",
+      "title": "template_data_descriptor",
+      "url": "https://github.com/docxology/template_data_descriptor",
+      "summary": "Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "HTML",
+        "docxology"
+      ],
+      "content": "template_data_descriptor Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo. HTML docxology"
+    },
+    {
+      "id": "software:docxology:template_eda_notebook",
+      "type": "software",
+      "title": "template_eda_notebook",
+      "url": "https://github.com/docxology/template_eda_notebook",
+      "summary": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_formal",
+      "type": "software",
+      "title": "template_formal",
+      "url": "https://github.com/docxology/template_formal",
+      "summary": "Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_formal Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo. Python docxology"
+    },
+    {
+      "id": "software:docxology:template_gold_refinement",
+      "type": "software",
+      "title": "template_gold_refinement",
+      "url": "https://github.com/docxology/template_gold_refinement",
+      "summary": "Public standalone template exemplar: template_gold_refinement",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_gold_refinement Public standalone template exemplar: template_gold_refinement Python docxology"
+    },
+    {
+      "id": "software:docxology:template_literature_meta_analysis",
+      "type": "software",
+      "title": "template_literature_meta_analysis",
+      "url": "https://github.com/docxology/template_literature_meta_analysis",
+      "summary": "Public standalone template exemplar: template_literature_meta_analysis",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis Python docxology"
+    },
+    {
+      "id": "software:docxology:template_methods_paper",
+      "type": "software",
+      "title": "template_methods_paper",
+      "url": "https://github.com/docxology/template_methods_paper",
+      "summary": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_pools_rules_tools",
+      "type": "software",
+      "title": "template_pools_rules_tools",
+      "url": "https://github.com/docxology/template_pools_rules_tools",
+      "summary": "Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_pools_rules_tools Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo. TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_prose_project",
+      "type": "software",
+      "title": "template_prose_project",
+      "url": "https://github.com/docxology/template_prose_project",
+      "summary": "Template prose project exemplar releases",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_prose_project Template prose project exemplar releases TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_redacted_report",
+      "type": "software",
+      "title": "template_redacted_report",
+      "url": "https://github.com/docxology/template_redacted_report",
+      "summary": "Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_redacted_report Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo. Python docxology"
+    },
+    {
+      "id": "software:docxology:template_registered_report",
+      "type": "software",
+      "title": "template_registered_report",
+      "url": "https://github.com/docxology/template_registered_report",
+      "summary": "Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "HTML",
+        "docxology"
+      ],
+      "content": "template_registered_report Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo. HTML docxology"
+    },
+    {
+      "id": "software:docxology:template_search_project",
+      "type": "software",
+      "title": "template_search_project",
+      "url": "https://github.com/docxology/template_search_project",
+      "summary": "Private project mirror for archive/template_search_project in docxology/projects.",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_search_project Private project mirror for archive/template_search_project in docxology/projects. TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_sia",
+      "type": "software",
+      "title": "template_sia",
+      "url": "https://github.com/docxology/template_sia",
+      "summary": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) Python docxology"
+    },
+    {
+      "id": "software:docxology:template_storybook",
+      "type": "software",
+      "title": "template_storybook",
+      "url": "https://github.com/docxology/template_storybook",
+      "summary": "Standalone full-page illustrated storybook template from docxology/template",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_storybook Standalone full-page illustrated storybook template from docxology/template TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_template",
+      "type": "software",
+      "title": "template_template",
+      "url": "https://github.com/docxology/template_template",
+      "summary": "Template meta-research exemplar: self-documenting reproducible research repo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "template_template Template meta-research exemplar: self-documenting reproducible research repo TeX docxology"
+    },
+    {
+      "id": "software:docxology:template_bioinformatics_project",
+      "type": "software",
+      "title": "template_bioinformatics_project",
+      "url": "https://github.com/docxology/template_bioinformatics_project",
+      "summary": "template_bioinformatics_project — Active Inference / research exemplar repository",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_bioinformatics_project template_bioinformatics_project — Active Inference / research exemplar repository Python docxology"
+    },
+    {
       "id": "software:ActiveInferenceInstitute:ActiveInferenceJournal",
       "type": "software",
       "title": "ActiveInferenceJournal",
@@ -5942,6 +6376,20 @@
       "content": "ActiveInferAnts Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference Python ActiveInferenceInstitute"
     },
     {
+      "id": "software:ActiveInferenceInstitute:fundamentals",
+      "type": "software",
+      "title": "fundamentals",
+      "url": "https://github.com/ActiveInferenceInstitute/fundamentals",
+      "summary": "Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026).",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "fundamentals Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026). Python ActiveInferenceInstitute"
+    },
+    {
       "id": "software:ActiveInferenceInstitute:GeneralizedNotationNotation",
       "type": "software",
       "title": "GeneralizedNotationNotation",
@@ -5954,20 +6402,6 @@
         "ActiveInferenceInstitute"
       ],
       "content": "GeneralizedNotationNotation GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software Python ActiveInferenceInstitute"
-    },
-    {
-      "id": "software:ActiveInferenceInstitute:fep_lean",
-      "type": "software",
-      "title": "fep_lean",
-      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
-      "summary": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
-      "domain": "active-inference-institute",
-      "tags": [
-        "software",
-        "Python",
-        "ActiveInferenceInstitute"
-      ],
-      "content": "fep_lean Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:cognitive",
@@ -5996,6 +6430,20 @@
         "ActiveInferenceInstitute"
       ],
       "content": "Active_Inference_Ontology Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts  ActiveInferenceInstitute"
+    },
+    {
+      "id": "software:ActiveInferenceInstitute:CEREBRUM",
+      "type": "software",
+      "title": "CEREBRUM",
+      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+      "summary": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "CEREBRUM Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:Journal-Utilities",
@@ -6038,20 +6486,6 @@
         "ActiveInferenceInstitute"
       ],
       "content": "ActiveInferenceCategoryTheory Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory  ActiveInferenceInstitute"
-    },
-    {
-      "id": "software:ActiveInferenceInstitute:CEREBRUM",
-      "type": "software",
-      "title": "CEREBRUM",
-      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
-      "summary": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
-      "domain": "active-inference-institute",
-      "tags": [
-        "software",
-        "Python",
-        "ActiveInferenceInstitute"
-      ],
-      "content": "CEREBRUM Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:GEO-INFER",
@@ -6152,6 +6586,20 @@
       "content": "Start Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants Python ActiveInferenceInstitute"
     },
     {
+      "id": "software:ActiveInferenceInstitute:act_inf_metaanalysis",
+      "type": "software",
+      "title": "act_inf_metaanalysis",
+      "url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
+      "summary": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "TeX",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. TeX ActiveInferenceInstitute"
+    },
+    {
       "id": "software:ActiveInferenceInstitute:Knowledge-Engineering",
       "type": "software",
       "title": "Knowledge-Engineering",
@@ -6164,6 +6612,20 @@
         "ActiveInferenceInstitute"
       ],
       "content": "Knowledge-Engineering Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference Jupyter ActiveInferenceInstitute"
+    },
+    {
+      "id": "software:ActiveInferenceInstitute:fep_lean",
+      "type": "software",
+      "title": "fep_lean",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "summary": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "fep_lean Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:ActInf_RxInfer",
@@ -6192,6 +6654,20 @@
         "ActiveInferenceInstitute"
       ],
       "content": "pymcp PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling Python ActiveInferenceInstitute"
+    },
+    {
+      "id": "software:ActiveInferenceInstitute:policy_entanglement",
+      "type": "software",
+      "title": "policy_entanglement",
+      "url": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
+      "summary": "Policy Entanglement in Active Inference v1.0.0",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "policy_entanglement Policy Entanglement in Active Inference v1.0.0 Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:GEN24",
@@ -6376,6 +6852,20 @@
       "content": "topp The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle TeX ActiveInferenceInstitute"
     },
     {
+      "id": "software:ActiveInferenceInstitute:active_fractal_rabbit",
+      "type": "software",
+      "title": "active_fractal_rabbit",
+      "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
+      "summary": "Active Inference for FractalRabbit",
+      "domain": "active-inference-institute",
+      "tags": [
+        "software",
+        "Python",
+        "ActiveInferenceInstitute"
+      ],
+      "content": "active_fractal_rabbit Active Inference for FractalRabbit Python ActiveInferenceInstitute"
+    },
+    {
       "id": "github-repo:ActiveInferenceInstitute/act_inf_metaanalysis",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/act_inf_metaanalysis",
@@ -6387,9 +6877,10 @@
         "repository",
         "TeX",
         "ActiveInferenceInstitute",
+        "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. TeX ActiveInferenceInstitute  recent"
+      "content": "ActiveInferenceInstitute/act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. TeX ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActInf_RxInfer",
@@ -6420,9 +6911,10 @@
         "repository",
         "Python",
         "ActiveInferenceInstitute",
+        "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/active_fractal_rabbit Active Inference for FractalRabbit Python ActiveInferenceInstitute  recent"
+      "content": "ActiveInferenceInstitute/active_fractal_rabbit Active Inference for FractalRabbit Python ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Ontology",
@@ -6722,9 +7214,10 @@
         "repository",
         "Python",
         "ActiveInferenceInstitute",
+        "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/fundamentals Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026).  Python ActiveInferenceInstitute  recent"
+      "content": "ActiveInferenceInstitute/fundamentals Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026).  Python ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Garden-of-Iris",
@@ -6941,9 +7434,10 @@
         "repository",
         "Python",
         "ActiveInferenceInstitute",
+        "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/policy_entanglement Policy Entanglement in Active Inference v1.0.0 Python ActiveInferenceInstitute  recent"
+      "content": "ActiveInferenceInstitute/policy_entanglement Policy Entanglement in Active Inference v1.0.0 Python ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/pymcp",
@@ -7024,9 +7518,10 @@
         "github",
         "repository",
         "JavaScript",
-        "docxology"
+        "docxology",
+        "curated"
       ],
-      "content": "docxology/active-inference-pocket-lab Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments JavaScript docxology active-inference bayesian-modeling education pocket-lab python research simulation"
+      "content": "docxology/active-inference-pocket-lab Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments JavaScript docxology active-inference bayesian-modeling education pocket-lab python research simulation curated"
     },
     {
       "id": "github-repo:docxology/active_inference",
@@ -7121,9 +7616,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/alphacogant AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model Python docxology  recent"
+      "content": "docxology/alphacogant AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/ant-pheromone",
@@ -7253,9 +7749,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/blake William Blake Python docxology  recent"
+      "content": "docxology/blake William Blake Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/blake_jiang",
@@ -7484,9 +7981,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. Python docxology  recent"
+      "content": "docxology/democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/docxology",
@@ -7515,9 +8013,10 @@
         "github",
         "repository",
         "",
-        "docxology"
+        "docxology",
+        "curated"
       ],
-      "content": "docxology/dotscope The Physics Engine for AI Coding Agents.  docxology"
+      "content": "docxology/dotscope The Physics Engine for AI Coding Agents.  docxology  curated"
     },
     {
       "id": "github-repo:docxology/DuckRabbit",
@@ -7531,9 +8030,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/DuckRabbit Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs Python docxology  recent"
+      "content": "docxology/DuckRabbit Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/ento_linguistics",
@@ -7563,9 +8063,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. Python docxology  recent"
+      "content": "docxology/entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/EntoLaw",
@@ -7579,9 +8080,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/EntoLaw A source-anchored, reproducible field map of entomological law TeX docxology  recent"
+      "content": "docxology/EntoLaw A source-anchored, reproducible field map of entomological law TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/EvoJump",
@@ -7949,9 +8451,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/ntqr_allotment Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) Python docxology  recent"
+      "content": "docxology/ntqr_allotment Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/ntqr_llm",
@@ -8111,9 +8614,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). Python docxology  recent"
+      "content": "docxology/realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/service",
@@ -8177,9 +8681,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/sunspot Correlating Github activity with Solar activity Python docxology  recent"
+      "content": "docxology/sunspot Correlating Github activity with Solar activity Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/symergetics",
@@ -8243,9 +8748,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template-pitch-deck Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template Python docxology  recent"
+      "content": "docxology/template-pitch-deck Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template-release-smoke",
@@ -8275,9 +8781,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_active_inference Active inference multi-track exemplar releases Python docxology  recent"
+      "content": "docxology/template_active_inference Active inference multi-track exemplar releases Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_autopoiesis",
@@ -8291,9 +8798,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) TeX docxology  recent"
+      "content": "docxology/template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_autoresearch_project",
@@ -8307,9 +8815,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_autoresearch_project Template autoresearch project exemplar releases Python docxology  recent"
+      "content": "docxology/template_autoresearch_project Template autoresearch project exemplar releases Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_autoscientists",
@@ -8339,9 +8848,10 @@
         "github",
         "repository",
         "Python",
-        "docxology"
+        "docxology",
+        "curated"
       ],
-      "content": "docxology/template_bioinformatics_project  Python docxology"
+      "content": "docxology/template_bioinformatics_project  Python docxology  curated"
     },
     {
       "id": "github-repo:docxology/template_code_project",
@@ -8355,9 +8865,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_code_project Template code project exemplar releases Python docxology  recent"
+      "content": "docxology/template_code_project Template code project exemplar releases Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_data_descriptor",
@@ -8371,9 +8882,10 @@
         "repository",
         "HTML",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_data_descriptor Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo. HTML docxology  recent"
+      "content": "docxology/template_data_descriptor Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo. HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_eda_notebook",
@@ -8387,9 +8899,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template TeX docxology  recent"
+      "content": "docxology/template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_formal",
@@ -8403,9 +8916,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_formal Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo. Python docxology  recent"
+      "content": "docxology/template_formal Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_gold_refinement",
@@ -8419,9 +8933,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_gold_refinement Public standalone template exemplar: template_gold_refinement Python docxology  recent"
+      "content": "docxology/template_gold_refinement Public standalone template exemplar: template_gold_refinement Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_literature_meta_analysis",
@@ -8435,9 +8950,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis Python docxology  recent"
+      "content": "docxology/template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_madlib",
@@ -8468,9 +8984,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template TeX docxology  recent"
+      "content": "docxology/template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_newspaper",
@@ -8501,9 +9018,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_pools_rules_tools Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo. TeX docxology  recent"
+      "content": "docxology/template_pools_rules_tools Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo. TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_prose_project",
@@ -8517,9 +9035,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_prose_project Template prose project exemplar releases TeX docxology  recent"
+      "content": "docxology/template_prose_project Template prose project exemplar releases TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_redacted_report",
@@ -8533,9 +9052,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_redacted_report Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo. Python docxology  recent"
+      "content": "docxology/template_redacted_report Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_registered_report",
@@ -8549,9 +9069,10 @@
         "repository",
         "HTML",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_registered_report Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo. HTML docxology  recent"
+      "content": "docxology/template_registered_report Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo. HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_search_project",
@@ -8565,9 +9086,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_search_project Private project mirror for archive/template_search_project in docxology/projects. TeX docxology  recent"
+      "content": "docxology/template_search_project Private project mirror for archive/template_search_project in docxology/projects. TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_sia",
@@ -8581,9 +9103,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) Python docxology  recent"
+      "content": "docxology/template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_storybook",
@@ -8597,9 +9120,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template TeX docxology  recent"
+      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_template",
@@ -8613,9 +9137,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo TeX docxology  recent"
+      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_textbook",
@@ -28416,7 +28941,7 @@
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 345 public repositories.",
+      "title": "The docxology GitHub profile has 347 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -28424,7 +28949,7 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 345 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 347 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
@@ -28437,7 +28962,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 34 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
@@ -28587,7 +29112,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 197 works, 96 software rows, 385 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 197 works, 131 software rows, 387 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

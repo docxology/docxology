@@ -87,7 +87,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "96 catalogued software repositories across docxology and AII contributions.",
+      "description": "131 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -502,7 +502,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-18.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-21.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +516,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-21.json",
         "encodingFormat": "application/json"
       }
     },

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-21T12:52:25Z",
+  "generated_at": "2026-07-21T20:55:15Z",
   "source": "pages/SOFTWARE.md",
-  "count": 96,
+  "count": 131,
   "repositories": [
     {
       "name": "template",
@@ -52,6 +52,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "timeline_generator",
+      "url": "https://github.com/docxology/timeline_generator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
+      "language": "TypeScript",
+      "stars": 4,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "cognitive-engine",
       "url": "https://github.com/docxology/cognitive-engine",
       "owner": "docxology",
@@ -72,18 +84,6 @@
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2025-11",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "timeline_generator",
-      "url": "https://github.com/docxology/timeline_generator",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
-      "language": "TypeScript",
-      "stars": 4,
-      "updated_or_year": "2026-04",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -160,6 +160,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "literature",
+      "url": "https://github.com/docxology/literature",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "active_inference",
       "url": "https://github.com/docxology/active_inference",
       "owner": "docxology",
@@ -204,18 +216,6 @@
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2025-08",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "literature",
-      "url": "https://github.com/docxology/literature",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
-      "language": "Python",
-      "stars": 2,
-      "updated_or_year": "2026-05",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -266,6 +266,30 @@
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_DeterministicTestbedSelf/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20533669"
+    },
+    {
+      "name": "ultralink-docx",
+      "url": "https://github.com/docxology/ultralink-docx",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2025-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "steganographer",
+      "url": "https://github.com/docxology/steganographer",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+      "language": "Rust",
+      "stars": 1,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "template_newspaper",
@@ -338,30 +362,6 @@
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_TemplateMadlib/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20786638"
-    },
-    {
-      "name": "ultralink-docx",
-      "url": "https://github.com/docxology/ultralink-docx",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
-      "language": "HTML",
-      "stars": 1,
-      "updated_or_year": "2025-03",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "cognitive",
-      "url": "https://github.com/docxology/cognitive",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
-      "language": "Python",
-      "stars": 14,
-      "updated_or_year": "2026-05",
-      "paper_path": "",
-      "zenodo_url": ""
     },
     {
       "name": "active_torchference",
@@ -676,18 +676,6 @@
       "zenodo_url": ""
     },
     {
-      "name": "steganographer",
-      "url": "https://github.com/docxology/steganographer",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
-      "language": "Rust",
-      "stars": 1,
-      "updated_or_year": "2026-04",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "SynthOBS",
       "url": "https://github.com/docxology/SynthOBS",
       "owner": "docxology",
@@ -748,6 +736,390 @@
       "zenodo_url": ""
     },
     {
+      "name": "cognitive",
+      "url": "https://github.com/docxology/cognitive",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
+      "language": "Python",
+      "stars": 14,
+      "updated_or_year": "2026-05",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "EntoLaw",
+      "url": "https://github.com/docxology/EntoLaw",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A source-anchored, reproducible field map of entomological law",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "DuckRabbit",
+      "url": "https://github.com/docxology/DuckRabbit",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "entofile",
+      "url": "https://github.com/docxology/entofile",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "realizing_emptiness",
+      "url": "https://github.com/docxology/realizing_emptiness",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-06",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "ntqr_allotment",
+      "url": "https://github.com/docxology/ntqr_allotment",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion)",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-06",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "alphacogant",
+      "url": "https://github.com/docxology/alphacogant",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-06",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "democreate",
+      "url": "https://github.com/docxology/democreate",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "blake",
+      "url": "https://github.com/docxology/blake",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "William Blake",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-06",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "dotscope",
+      "url": "https://github.com/docxology/dotscope",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "The Physics Engine for AI Coding Agents.",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "active-inference-pocket-lab",
+      "url": "https://github.com/docxology/active-inference-pocket-lab",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments",
+      "language": "JavaScript",
+      "stars": 0,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "sunspot",
+      "url": "https://github.com/docxology/sunspot",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Correlating Github activity with Solar activity",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-04",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_active_inference",
+      "url": "https://github.com/docxology/template_active_inference",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Active inference multi-track exemplar releases",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template-pitch-deck",
+      "url": "https://github.com/docxology/template-pitch-deck",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_autopoiesis",
+      "url": "https://github.com/docxology/template_autopoiesis",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21227869"
+    },
+    {
+      "name": "template_autoresearch_project",
+      "url": "https://github.com/docxology/template_autoresearch_project",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Template autoresearch project exemplar releases",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_code_project",
+      "url": "https://github.com/docxology/template_code_project",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Template code project exemplar releases",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_data_descriptor",
+      "url": "https://github.com/docxology/template_data_descriptor",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo.",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_eda_notebook",
+      "url": "https://github.com/docxology/template_eda_notebook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_formal",
+      "url": "https://github.com/docxology/template_formal",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_gold_refinement",
+      "url": "https://github.com/docxology/template_gold_refinement",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Public standalone template exemplar: template_gold_refinement",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_literature_meta_analysis",
+      "url": "https://github.com/docxology/template_literature_meta_analysis",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Public standalone template exemplar: template_literature_meta_analysis",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_methods_paper",
+      "url": "https://github.com/docxology/template_methods_paper",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_pools_rules_tools",
+      "url": "https://github.com/docxology/template_pools_rules_tools",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo.",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_prose_project",
+      "url": "https://github.com/docxology/template_prose_project",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Template prose project exemplar releases",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_redacted_report",
+      "url": "https://github.com/docxology/template_redacted_report",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_registered_report",
+      "url": "https://github.com/docxology/template_registered_report",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo.",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_search_project",
+      "url": "https://github.com/docxology/template_search_project",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Private project mirror for archive/template_search_project in docxology/projects.",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_sia",
+      "url": "https://github.com/docxology/template_sia",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_storybook",
+      "url": "https://github.com/docxology/template_storybook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Standalone full-page illustrated storybook template from docxology/template",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_template",
+      "url": "https://github.com/docxology/template_template",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Template meta-research exemplar: self-documenting reproducible research repo",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "template_bioinformatics_project",
+      "url": "https://github.com/docxology/template_bioinformatics_project",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "template_bioinformatics_project — Active Inference / research exemplar repository",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-03",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -784,6 +1156,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "fundamentals",
+      "url": "https://github.com/ActiveInferenceInstitute/fundamentals",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026).",
+      "language": "Python",
+      "stars": 26,
+      "updated_or_year": "2026",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "GeneralizedNotationNotation",
       "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
       "owner": "ActiveInferenceInstitute",
@@ -794,18 +1178,6 @@
       "updated_or_year": "2024",
       "paper_path": "",
       "zenodo_url": "https://doi.org/10.5281/zenodo.19600217"
-    },
-    {
-      "name": "fep_lean",
-      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
-      "language": "Python",
-      "stars": 3,
-      "updated_or_year": "2026",
-      "paper_path": "papers/2026_FEPLean/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.19699234"
     },
     {
       "name": "cognitive",
@@ -830,6 +1202,18 @@
       "updated_or_year": "2023",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "CEREBRUM",
+      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
+      "language": "Python",
+      "stars": 12,
+      "updated_or_year": "2025",
+      "paper_path": "papers/2025_CEREBRUM/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.15170907"
     },
     {
       "name": "Journal-Utilities",
@@ -866,18 +1250,6 @@
       "updated_or_year": "2024",
       "paper_path": "",
       "zenodo_url": ""
-    },
-    {
-      "name": "CEREBRUM",
-      "url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
-      "language": "Python",
-      "stars": 12,
-      "updated_or_year": "2025",
-      "paper_path": "papers/2025_CEREBRUM/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.15170907"
     },
     {
       "name": "GEO-INFER",
@@ -964,6 +1336,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "act_inf_metaanalysis",
+      "url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+      "language": "TeX",
+      "stars": 5,
+      "updated_or_year": "2026",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "Knowledge-Engineering",
       "url": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
       "owner": "ActiveInferenceInstitute",
@@ -974,6 +1358,18 @@
       "updated_or_year": "2022",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "fep_lean",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
+      "language": "Python",
+      "stars": 3,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_FEPLean/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19699234"
     },
     {
       "name": "ActInf_RxInfer",
@@ -996,6 +1392,18 @@
       "language": "Python",
       "stars": 2,
       "updated_or_year": "2025",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "policy_entanglement",
+      "url": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Policy Entanglement in Active Inference v1.0.0",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2026",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -1152,6 +1560,18 @@
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2024",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "active_fractal_rabbit",
+      "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Active Inference for FractalRabbit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
       "paper_path": "",
       "zenodo_url": ""
     }

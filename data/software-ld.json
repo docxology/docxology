@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "62 original repositories and 34 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "93 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -56,6 +56,17 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "timeline_generator",
+            "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
+            "codeRepository": "https://github.com/docxology/timeline_generator",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TypeScript"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "cognitive-engine",
             "description": "Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning",
             "codeRepository": "https://github.com/docxology/cognitive-engine",
@@ -75,17 +86,6 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "name": "timeline_generator",
-            "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
-            "codeRepository": "https://github.com/docxology/timeline_generator",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "TypeScript"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -155,6 +155,17 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "literature",
+            "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+            "codeRepository": "https://github.com/docxology/literature",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "active_inference",
             "description": "Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling",
             "codeRepository": "https://github.com/docxology/active_inference",
@@ -191,17 +202,6 @@
             "name": "lean_niche",
             "description": "Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics",
             "codeRepository": "https://github.com/docxology/lean_niche",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "Python"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "name": "literature",
-            "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
-            "codeRepository": "https://github.com/docxology/literature",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
@@ -253,6 +253,28 @@
             },
             "programmingLanguage": "Python",
             "sameAs": "https://doi.org/10.5281/zenodo.20533669"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ultralink-docx",
+            "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
+            "codeRepository": "https://github.com/docxology/ultralink-docx",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "steganographer",
+            "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+            "codeRepository": "https://github.com/docxology/steganographer",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Rust"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -324,28 +346,6 @@
             },
             "programmingLanguage": "Python",
             "sameAs": "https://doi.org/10.5281/zenodo.20786638"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "name": "ultralink-docx",
-            "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
-            "codeRepository": "https://github.com/docxology/ultralink-docx",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "HTML"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "name": "cognitive",
-            "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
-            "codeRepository": "https://github.com/docxology/cognitive",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "Python"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -637,17 +637,6 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "name": "steganographer",
-            "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
-            "codeRepository": "https://github.com/docxology/steganographer",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "Rust"
-        },
-        {
-            "@type": "SoftwareSourceCode",
             "name": "SynthOBS",
             "description": "Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry",
             "codeRepository": "https://github.com/docxology/SynthOBS",
@@ -704,6 +693,358 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "cognitive",
+            "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
+            "codeRepository": "https://github.com/docxology/cognitive",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "EntoLaw",
+            "description": "A source-anchored, reproducible field map of entomological law",
+            "codeRepository": "https://github.com/docxology/EntoLaw",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "DuckRabbit",
+            "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+            "codeRepository": "https://github.com/docxology/DuckRabbit",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "entofile",
+            "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+            "codeRepository": "https://github.com/docxology/entofile",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "realizing_emptiness",
+            "description": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
+            "codeRepository": "https://github.com/docxology/realizing_emptiness",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "ntqr_allotment",
+            "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion)",
+            "codeRepository": "https://github.com/docxology/ntqr_allotment",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "alphacogant",
+            "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model",
+            "codeRepository": "https://github.com/docxology/alphacogant",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "democreate",
+            "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+            "codeRepository": "https://github.com/docxology/democreate",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "blake",
+            "description": "William Blake",
+            "codeRepository": "https://github.com/docxology/blake",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "dotscope",
+            "description": "The Physics Engine for AI Coding Agents.",
+            "codeRepository": "https://github.com/docxology/dotscope",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "active-inference-pocket-lab",
+            "description": "Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments",
+            "codeRepository": "https://github.com/docxology/active-inference-pocket-lab",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "JavaScript"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "sunspot",
+            "description": "Correlating Github activity with Solar activity",
+            "codeRepository": "https://github.com/docxology/sunspot",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_active_inference",
+            "description": "Active inference multi-track exemplar releases",
+            "codeRepository": "https://github.com/docxology/template_active_inference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template-pitch-deck",
+            "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+            "codeRepository": "https://github.com/docxology/template-pitch-deck",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_autopoiesis",
+            "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+            "codeRepository": "https://github.com/docxology/template_autopoiesis",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX",
+            "sameAs": "https://doi.org/10.5281/zenodo.21227869"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_autoresearch_project",
+            "description": "Template autoresearch project exemplar releases",
+            "codeRepository": "https://github.com/docxology/template_autoresearch_project",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_code_project",
+            "description": "Template code project exemplar releases",
+            "codeRepository": "https://github.com/docxology/template_code_project",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_data_descriptor",
+            "description": "Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo.",
+            "codeRepository": "https://github.com/docxology/template_data_descriptor",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_eda_notebook",
+            "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template",
+            "codeRepository": "https://github.com/docxology/template_eda_notebook",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_formal",
+            "description": "Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo.",
+            "codeRepository": "https://github.com/docxology/template_formal",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_gold_refinement",
+            "description": "Public standalone template exemplar: template_gold_refinement",
+            "codeRepository": "https://github.com/docxology/template_gold_refinement",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_literature_meta_analysis",
+            "description": "Public standalone template exemplar: template_literature_meta_analysis",
+            "codeRepository": "https://github.com/docxology/template_literature_meta_analysis",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_methods_paper",
+            "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template",
+            "codeRepository": "https://github.com/docxology/template_methods_paper",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_pools_rules_tools",
+            "description": "Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo.",
+            "codeRepository": "https://github.com/docxology/template_pools_rules_tools",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_prose_project",
+            "description": "Template prose project exemplar releases",
+            "codeRepository": "https://github.com/docxology/template_prose_project",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_redacted_report",
+            "description": "Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo.",
+            "codeRepository": "https://github.com/docxology/template_redacted_report",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_registered_report",
+            "description": "Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo.",
+            "codeRepository": "https://github.com/docxology/template_registered_report",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_search_project",
+            "description": "Private project mirror for archive/template_search_project in docxology/projects.",
+            "codeRepository": "https://github.com/docxology/template_search_project",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_sia",
+            "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+            "codeRepository": "https://github.com/docxology/template_sia",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_storybook",
+            "description": "Standalone full-page illustrated storybook template from docxology/template",
+            "codeRepository": "https://github.com/docxology/template_storybook",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_template",
+            "description": "Template meta-research exemplar: self-documenting reproducible research repo",
+            "codeRepository": "https://github.com/docxology/template_template",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "template_bioinformatics_project",
+            "description": "template_bioinformatics_project — Active Inference / research exemplar repository",
+            "codeRepository": "https://github.com/docxology/template_bioinformatics_project",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "ActiveInferenceJournal",
             "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
@@ -737,6 +1078,17 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "fundamentals",
+            "description": "Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026).",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/fundamentals",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "GeneralizedNotationNotation",
             "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
@@ -746,18 +1098,6 @@
             },
             "programmingLanguage": "Python",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "name": "fep_lean",
-            "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_lean",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.19699234"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -779,6 +1119,18 @@
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             }
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "CEREBRUM",
+            "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.15170907"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -812,18 +1164,6 @@
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             }
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "name": "CEREBRUM",
-            "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "Python",
-            "sameAs": "https://doi.org/10.5281/zenodo.15170907"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -903,6 +1243,17 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "name": "act_inf_metaanalysis",
+            "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "name": "Knowledge-Engineering",
             "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
@@ -911,6 +1262,18 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Jupyter"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "fep_lean",
+            "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_lean",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "sameAs": "https://doi.org/10.5281/zenodo.19699234"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -927,6 +1290,17 @@
             "name": "pymcp",
             "description": "PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/pymcp",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "policy_entanglement",
+            "description": "Policy Entanglement in Active Inference v1.0.0",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
@@ -1073,6 +1447,17 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "name": "active_fractal_rabbit",
+            "description": "Active Inference for FractalRabbit",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python"
         }
     ]
 }

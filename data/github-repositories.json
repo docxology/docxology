@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:09:14Z",
+  "generated_at": "2026-07-21T20:36:03Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -9,8 +9,8 @@
     "docxology": {
       "login": "docxology",
       "html_url": "https://github.com/docxology",
-      "public_repos": 345,
-      "updated_at": "2026-07-06T20:37:54Z"
+      "public_repos": 347,
+      "updated_at": "2026-07-20T04:59:44Z"
     },
     "ActiveInferenceInstitute": {
       "login": "ActiveInferenceInstitute",
@@ -20,20 +20,20 @@
     }
   },
   "counts": {
-    "total": 385,
-    "docxology": 345,
+    "total": 387,
+    "docxology": 347,
     "ActiveInferenceInstitute": 40,
-    "curated": 93,
-    "uncataloged": 292,
-    "forks": 243,
+    "curated": 128,
+    "uncataloged": 259,
+    "forks": 245,
     "archived": 0,
-    "public": 385,
+    "public": 387,
     "private": 0,
-    "recently_updated": 122,
+    "recently_updated": 124,
     "primary_total": 142,
     "primary_docxology": 104,
     "primary_ActiveInferenceInstitute": 38,
-    "fork_docxology": 241,
+    "fork_docxology": 243,
     "fork_ActiveInferenceInstitute": 2
   },
   "warnings": [],
@@ -62,7 +62,7 @@
       "created_at": "2026-04-07T20:10:34Z",
       "updated_at": "2026-07-13T04:20:04Z",
       "pushed_at": "2026-07-13T04:19:57Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -116,7 +116,7 @@
       "created_at": "2026-07-13T01:15:55Z",
       "updated_at": "2026-07-13T03:59:15Z",
       "pushed_at": "2026-07-13T03:59:12Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -127,9 +127,9 @@
       "description": "",
       "homepage": "",
       "language": "HTML",
-      "stars": 15,
+      "stars": 16,
       "forks": 1,
-      "watchers": 15,
+      "watchers": 16,
       "open_issues": 0,
       "visibility": "public",
       "private": false,
@@ -146,7 +146,7 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2021-03-01T16:12:21Z",
-      "updated_at": "2026-07-17T19:57:34Z",
+      "updated_at": "2026-07-20T17:02:19Z",
       "pushed_at": "2026-07-17T19:57:13Z",
       "curated": true,
       "recently_updated": true
@@ -320,8 +320,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2022-11-07T14:26:39Z",
-      "updated_at": "2026-07-17T23:39:57Z",
-      "pushed_at": "2026-07-17T22:58:13Z",
+      "updated_at": "2026-07-18T19:51:56Z",
+      "pushed_at": "2026-07-18T19:51:52Z",
       "curated": true,
       "recently_updated": true
     },
@@ -536,8 +536,8 @@
       "license": "MIT",
       "default_branch": "main",
       "created_at": "2026-06-15T15:28:56Z",
-      "updated_at": "2026-06-30T20:43:55Z",
-      "pushed_at": "2026-06-30T20:43:51Z",
+      "updated_at": "2026-07-18T03:47:15Z",
+      "pushed_at": "2026-07-18T03:47:58Z",
       "curated": true,
       "recently_updated": true
     },
@@ -590,8 +590,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2026-02-08T19:49:40Z",
-      "updated_at": "2026-07-06T03:24:19Z",
-      "pushed_at": "2026-07-06T03:24:14Z",
+      "updated_at": "2026-07-20T02:16:53Z",
+      "pushed_at": "2026-07-20T02:16:49Z",
       "curated": true,
       "recently_updated": true
     },
@@ -617,8 +617,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2026-04-14T13:33:35Z",
-      "updated_at": "2026-06-30T20:44:15Z",
-      "pushed_at": "2026-06-30T20:44:11Z",
+      "updated_at": "2026-07-20T02:20:22Z",
+      "pushed_at": "2026-07-20T02:20:19Z",
       "curated": true,
       "recently_updated": true
     },
@@ -646,7 +646,7 @@
       "created_at": "2026-03-19T17:35:28Z",
       "updated_at": "2026-07-07T17:58:38Z",
       "pushed_at": "2026-07-07T17:58:33Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -741,7 +741,7 @@
       "stars": 29,
       "forks": 3,
       "watchers": 29,
-      "open_issues": 5,
+      "open_issues": 6,
       "visibility": "public",
       "private": false,
       "fork": false,
@@ -758,7 +758,7 @@
       "default_branch": "main",
       "created_at": "2023-04-02T19:45:34Z",
       "updated_at": "2026-07-06T14:35:23Z",
-      "pushed_at": "2026-07-13T06:17:21Z",
+      "pushed_at": "2026-07-20T06:34:51Z",
       "curated": true,
       "recently_updated": true
     },
@@ -784,8 +784,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2025-05-13T14:17:56Z",
-      "updated_at": "2026-07-15T14:40:20Z",
-      "pushed_at": "2026-07-15T14:39:44Z",
+      "updated_at": "2026-07-20T14:36:58Z",
+      "pushed_at": "2026-07-20T14:34:21Z",
       "curated": true,
       "recently_updated": true
     },
@@ -811,8 +811,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2026-06-08T21:16:12Z",
-      "updated_at": "2026-07-17T19:11:39Z",
-      "pushed_at": "2026-07-17T19:11:23Z",
+      "updated_at": "2026-07-20T21:53:28Z",
+      "pushed_at": "2026-07-20T21:53:12Z",
       "curated": false,
       "recently_updated": true
     },
@@ -865,8 +865,8 @@
       "license": "CC0-1.0",
       "default_branch": "main",
       "created_at": "2022-11-07T14:21:08Z",
-      "updated_at": "2026-07-17T23:01:31Z",
-      "pushed_at": "2026-07-17T23:01:28Z",
+      "updated_at": "2026-07-18T19:48:19Z",
+      "pushed_at": "2026-07-18T19:48:15Z",
       "curated": true,
       "recently_updated": true
     },
@@ -919,8 +919,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2025-04-22T12:27:15Z",
-      "updated_at": "2026-07-17T21:14:59Z",
-      "pushed_at": "2026-07-17T21:14:47Z",
+      "updated_at": "2026-07-18T03:41:06Z",
+      "pushed_at": "2026-07-18T03:41:01Z",
       "curated": true,
       "recently_updated": true
     },
@@ -1000,9 +1000,9 @@
       "license": "MIT",
       "default_branch": "main",
       "created_at": "2026-05-27T21:43:07Z",
-      "updated_at": "2026-06-30T20:44:22Z",
-      "pushed_at": "2026-06-30T20:44:18Z",
-      "curated": false,
+      "updated_at": "2026-07-20T02:17:05Z",
+      "pushed_at": "2026-07-20T02:17:01Z",
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -1081,8 +1081,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2025-03-14T16:00:58Z",
-      "updated_at": "2026-07-07T13:11:21Z",
-      "pushed_at": "2026-07-07T13:10:09Z",
+      "updated_at": "2026-07-20T02:16:48Z",
+      "pushed_at": "2026-07-20T02:16:44Z",
       "curated": true,
       "recently_updated": true
     },
@@ -1108,8 +1108,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2024-12-15T22:23:59Z",
-      "updated_at": "2026-07-06T04:06:27Z",
-      "pushed_at": "2026-07-06T04:06:23Z",
+      "updated_at": "2026-07-20T02:16:51Z",
+      "pushed_at": "2026-07-20T02:16:47Z",
       "curated": true,
       "recently_updated": true
     },
@@ -1253,7 +1253,7 @@
       "created_at": "2026-03-20T20:09:58Z",
       "updated_at": "2026-04-18T21:12:55Z",
       "pushed_at": "2026-04-18T21:12:51Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": false
     },
     {
@@ -1546,7 +1546,7 @@
       "stars": 2,
       "forks": 1,
       "watchers": 2,
-      "open_issues": 1,
+      "open_issues": 2,
       "visibility": "public",
       "private": false,
       "fork": false,
@@ -1558,7 +1558,7 @@
       "default_branch": "main",
       "created_at": "2026-05-24T23:28:57Z",
       "updated_at": "2026-07-12T01:35:03Z",
-      "pushed_at": "2026-07-12T01:34:59Z",
+      "pushed_at": "2026-07-18T12:02:42Z",
       "curated": true,
       "recently_updated": true
     },
@@ -1883,7 +1883,7 @@
       "created_at": "2026-06-26T01:37:45Z",
       "updated_at": "2026-06-27T22:07:45Z",
       "pushed_at": "2026-06-27T22:07:43Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -2620,7 +2620,7 @@
       "created_at": "2025-09-15T17:49:35Z",
       "updated_at": "2026-07-05T18:58:42Z",
       "pushed_at": "2026-06-29T23:40:50Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -3025,7 +3025,7 @@
       "stars": 10,
       "forks": 2,
       "watchers": 10,
-      "open_issues": 253,
+      "open_issues": 258,
       "visibility": "public",
       "private": false,
       "fork": false,
@@ -3053,8 +3053,8 @@
       "license": "MIT",
       "default_branch": "main",
       "created_at": "2025-05-16T17:45:28Z",
-      "updated_at": "2026-07-13T14:16:55Z",
-      "pushed_at": "2026-07-17T02:04:59Z",
+      "updated_at": "2026-07-21T12:14:33Z",
+      "pushed_at": "2026-07-21T12:13:08Z",
       "curated": true,
       "recently_updated": true
     },
@@ -3576,7 +3576,7 @@
       "created_at": "2026-06-05T21:21:23Z",
       "updated_at": "2026-07-10T15:22:36Z",
       "pushed_at": "2026-07-10T15:22:01Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -3751,8 +3751,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-03-20T21:31:03Z",
-      "updated_at": "2026-07-17T23:52:56Z",
-      "pushed_at": "2026-07-17T23:52:52Z",
+      "updated_at": "2026-07-21T16:35:33Z",
+      "pushed_at": "2026-07-21T16:35:27Z",
       "curated": false,
       "recently_updated": true
     },
@@ -3780,7 +3780,7 @@
       "created_at": "2026-04-14T19:44:10Z",
       "updated_at": "2026-04-14T19:44:10Z",
       "pushed_at": "2026-04-13T06:47:26Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": false
     },
     {
@@ -3807,7 +3807,7 @@
       "created_at": "2026-07-17T20:22:15Z",
       "updated_at": "2026-07-17T20:58:03Z",
       "pushed_at": "2026-07-17T20:58:11Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -4032,7 +4032,7 @@
       "created_at": "2026-06-11T15:44:33Z",
       "updated_at": "2026-07-15T22:47:05Z",
       "pushed_at": "2026-07-15T22:47:01Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -4059,7 +4059,7 @@
       "created_at": "2026-07-02T16:48:35Z",
       "updated_at": "2026-07-02T19:29:04Z",
       "pushed_at": "2026-07-02T19:29:00Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -7048,7 +7048,7 @@
       "created_at": "2026-06-30T22:05:14Z",
       "updated_at": "2026-07-01T09:03:14Z",
       "pushed_at": "2026-06-30T22:14:30Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -8541,7 +8541,7 @@
       "created_at": "2026-06-13T15:57:37Z",
       "updated_at": "2026-07-07T13:53:14Z",
       "pushed_at": "2026-06-24T19:07:05Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9152,7 +9152,7 @@
       "created_at": "2026-04-27T15:50:00Z",
       "updated_at": "2026-07-15T10:20:16Z",
       "pushed_at": "2026-04-28T13:29:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9345,6 +9345,33 @@
       "recently_updated": true
     },
     {
+      "name": "synthobs-egs-planck-scale-harmonic",
+      "full_name": "docxology/synthobs-egs-planck-scale-harmonic",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/synthobs-egs-planck-scale-harmonic",
+      "description": "Planck 1.6 ↔ Φ_EGS scale-harmonic bridge — clutch, singularity clamp, SynthOBS empirical suite (7/7)",
+      "homepage": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "MIT",
+      "default_branch": "master",
+      "created_at": "2026-07-21T19:06:51Z",
+      "updated_at": "2026-07-21T19:08:54Z",
+      "pushed_at": "2026-07-21T19:07:48Z",
+      "curated": false,
+      "recently_updated": true
+    },
+    {
       "name": "systematics-v0.5",
       "full_name": "docxology/systematics-v0.5",
       "owner": "docxology",
@@ -9370,6 +9397,33 @@
       "pushed_at": "2026-02-02T19:31:54Z",
       "curated": false,
       "recently_updated": false
+    },
+    {
+      "name": "TauCeti",
+      "full_name": "docxology/TauCeti",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/TauCeti",
+      "description": "An AIs-welcome Lean library downstream of Mathlib: AI handle the implementation and review, humans write the roadmaps and review rubrics",
+      "homepage": "https://taucetiproject.github.io/TauCeti/",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "created_at": "2026-07-20T18:37:16Z",
+      "updated_at": "2026-07-20T18:37:16Z",
+      "pushed_at": "2026-07-20T17:37:47Z",
+      "curated": false,
+      "recently_updated": true
     },
     {
       "name": "TCSDecomp",
@@ -9439,8 +9493,8 @@
       "license": "Apache-2.0",
       "default_branch": "main",
       "created_at": "2025-08-18T16:48:46Z",
-      "updated_at": "2026-07-16T03:20:47Z",
-      "pushed_at": "2026-07-16T03:20:43Z",
+      "updated_at": "2026-07-21T12:10:44Z",
+      "pushed_at": "2026-07-21T12:07:39Z",
       "curated": true,
       "recently_updated": true
     },
@@ -9468,7 +9522,7 @@
       "created_at": "2026-07-09T14:30:57Z",
       "updated_at": "2026-07-10T20:34:19Z",
       "pushed_at": "2026-07-10T20:34:15Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9522,7 +9576,7 @@
       "created_at": "2026-05-27T18:34:18Z",
       "updated_at": "2026-07-12T01:57:16Z",
       "pushed_at": "2026-07-12T01:57:12Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9549,7 +9603,7 @@
       "created_at": "2026-07-06T23:04:03Z",
       "updated_at": "2026-07-10T20:33:35Z",
       "pushed_at": "2026-07-10T20:33:24Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9576,7 +9630,7 @@
       "created_at": "2026-05-27T18:34:15Z",
       "updated_at": "2026-07-10T20:33:33Z",
       "pushed_at": "2026-07-10T20:33:28Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9630,7 +9684,7 @@
       "created_at": "2026-03-14T23:31:40Z",
       "updated_at": "2026-03-14T23:34:59Z",
       "pushed_at": "2026-03-14T23:34:55Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": false
     },
     {
@@ -9657,7 +9711,7 @@
       "created_at": "2026-05-27T17:31:44Z",
       "updated_at": "2026-07-10T20:33:41Z",
       "pushed_at": "2026-07-10T20:33:36Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9684,7 +9738,7 @@
       "created_at": "2026-07-10T19:14:21Z",
       "updated_at": "2026-07-10T20:33:50Z",
       "pushed_at": "2026-07-10T20:33:39Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9711,7 +9765,7 @@
       "created_at": "2026-06-30T22:46:30Z",
       "updated_at": "2026-07-10T20:33:47Z",
       "pushed_at": "2026-07-10T20:33:43Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9738,7 +9792,7 @@
       "created_at": "2026-07-10T19:14:23Z",
       "updated_at": "2026-07-10T20:33:53Z",
       "pushed_at": "2026-07-10T20:33:47Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9765,7 +9819,7 @@
       "created_at": "2026-06-26T13:50:56Z",
       "updated_at": "2026-07-14T00:49:16Z",
       "pushed_at": "2026-07-14T00:49:11Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9792,7 +9846,7 @@
       "created_at": "2026-06-26T13:51:02Z",
       "updated_at": "2026-07-11T01:50:14Z",
       "pushed_at": "2026-07-11T01:50:09Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9846,7 +9900,7 @@
       "created_at": "2026-06-30T23:00:16Z",
       "updated_at": "2026-07-10T20:34:14Z",
       "pushed_at": "2026-07-10T20:34:07Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9900,7 +9954,7 @@
       "created_at": "2026-07-10T19:14:26Z",
       "updated_at": "2026-07-10T20:34:24Z",
       "pushed_at": "2026-07-10T20:34:18Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9927,7 +9981,7 @@
       "created_at": "2026-05-27T18:34:13Z",
       "updated_at": "2026-07-10T20:34:24Z",
       "pushed_at": "2026-07-10T20:34:21Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9954,7 +10008,7 @@
       "created_at": "2026-07-10T19:14:29Z",
       "updated_at": "2026-07-10T20:34:30Z",
       "pushed_at": "2026-07-10T20:34:25Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9981,7 +10035,7 @@
       "created_at": "2026-07-10T19:14:31Z",
       "updated_at": "2026-07-10T20:34:42Z",
       "pushed_at": "2026-07-10T20:34:28Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -10008,7 +10062,7 @@
       "created_at": "2026-06-12T13:52:34Z",
       "updated_at": "2026-07-10T20:35:04Z",
       "pushed_at": "2026-07-10T20:34:57Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -10035,7 +10089,7 @@
       "created_at": "2026-06-14T19:54:36Z",
       "updated_at": "2026-07-11T02:14:35Z",
       "pushed_at": "2026-07-11T02:14:27Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -10062,7 +10116,7 @@
       "created_at": "2026-07-03T18:13:35Z",
       "updated_at": "2026-07-10T19:25:13Z",
       "pushed_at": "2026-07-10T19:25:03Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -10089,7 +10143,7 @@
       "created_at": "2026-05-27T21:32:50Z",
       "updated_at": "2026-07-10T20:34:42Z",
       "pushed_at": "2026-07-10T20:34:37Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
