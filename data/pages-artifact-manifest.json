@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T20:55:29Z",
-  "source_commit_at_generation": "7d1b7dbf2e4189e6b7c63261b27b9c294f74b906",
+  "generated_at": "2026-07-21T21:01:00Z",
+  "source_commit_at_generation": "ae098f32536ffcac6372a90fc67eac469d506383",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 755327564,
+    "source_bytes": 755347346,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4317,
-    "artifact_bytes": 756088263
+    "artifact_file_count": 4319,
+    "artifact_bytes": 756108398
   },
   "included_files": [
     {
@@ -14565,6 +14565,11 @@
       "sha256": "8ca478726276b73485ea8a4ebe7f9188febe84f74a5570c01d67423158d1f278"
     },
     {
+      "path": "reports/public_source_snapshot_2026-07-21.json",
+      "bytes": 17751,
+      "sha256": "1949308b5ff9821ae482df03af1f8f3f0a913def807ec52bf25222f4776fad2e"
+    },
+    {
       "path": "reports/publishing_status_megaindex.md",
       "bytes": 180567,
       "sha256": "bd90349bb4ebde59bce601bc991e666c09f809a0d2394b5cf38d13167dc7cc67"
@@ -14633,6 +14638,11 @@
       "path": "reports/reconciliation_2026-07-18.md",
       "bytes": 2031,
       "sha256": "de2e82e389b36c0338b340f2f6c981059027f788e63d89d53958e2400d91dd54"
+    },
+    {
+      "path": "reports/reconciliation_2026-07-21.md",
+      "bytes": 2031,
+      "sha256": "4e9d125c9abd068284026ffc95917831c48b4188b907753439efb5c7444f5278"
     },
     {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
@@ -14917,7 +14927,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 238561,
-      "sha256": "17527350b805e0aaa3efd35f91f91d42102197c37523503130f5a5edb746d036"
+      "sha256": "8bbb995cc19db544c66b83377e9114138a85e6a55f4639af6d69e04e5153f8a9"
     },
     {
       "path": "software.html",
