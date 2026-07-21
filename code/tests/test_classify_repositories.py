@@ -18,7 +18,14 @@ def test_repository_classification_exposes_description_quality_and_review_contra
         "description", "description_quality", "catalog_role", "exclusion_reason", "review_status",
     }
     assert required <= set(rows[0])
-    assert {row["review_status"] for row in rows} == {"defer"}
+    assert {row["review_status"] for row in rows} <= {"defer", "acknowledged", "accept", "reject", "supersede"}
+    # Deliberate human-reviewed exclusions carry an acknowledged status + reason
+    # and drop out of the primary review queue (see data/repository-exclusions.json).
+    for row in rows:
+        if row["review_status"] == "acknowledged":
+            assert row["exclusion_reason"] == "acknowledged_not_catalogued"
+            assert row.get("acknowledged_reason")
+    assert payload["summary"]["primary_requires_review"] + payload["summary"]["acknowledged_excluded"] + payload["summary"]["forks"] == len(rows)
     assert payload["summary"]["uncatalogued"] == len(rows)
     assert payload["summary"]["missing_description"] + payload["summary"]["short_description"] + payload["summary"]["substantive_description"] == len(rows)
 

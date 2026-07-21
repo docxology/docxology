@@ -221,9 +221,10 @@ SCHEMAS = {
             "topics": "array of GitHub topics",
             "recently_updated": "boolean; current inventory freshness flag",
             "relevance": "unknown until manual review",
-            "catalog_role": "not_curated until manually reviewed",
-            "exclusion_reason": "fork_not_curated or primary_repo_requires_manual_review",
-            "review_status": "defer, accept, reject, or supersede",
+            "catalog_role": "not_curated, or acknowledged_not_curated for deliberate exclusions",
+            "exclusion_reason": "fork_not_curated, primary_repo_requires_manual_review, or acknowledged_not_catalogued",
+            "review_status": "defer, acknowledged, accept, reject, or supersede",
+            "acknowledged_reason": "present when review_status is acknowledged; one of profile_repo, profile_infrastructure, test_repo, website, rename_duplicate, private_mirror (see data/repository-exclusions.json)",
         },
     },
     "PagesArtifactManifest": {
@@ -428,6 +429,7 @@ def payload() -> dict:
             "backlog": "/TODO.md",
             "coverage_exceptions": "/data/coverage-exceptions.json",
             "repository_classification": "/data/repository-classification.json",
+            "repository_exclusions": "/data/repository-exclusions.json",
             "release_integrity": "/data/release-integrity.json",
         },
         "routes": [

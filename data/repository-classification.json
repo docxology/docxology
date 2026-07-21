@@ -1,13 +1,15 @@
 {
-  "schema_version": "1.0",
-  "generated_at": "2026-07-21T20:31:05Z",
+  "schema_version": "1.1",
+  "generated_at": "2026-07-21T22:29:50Z",
   "source": "data/github-repositories.json",
-  "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted.",
+  "acknowledged_exclusions_source": "data/repository-exclusions.json",
+  "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate, human-reviewed not-catalog decisions (profile/website/test/mirror/duplicate) and are marked acknowledged rather than requiring review.",
   "summary": {
     "total_inventory": 387,
     "uncatalogued": 259,
     "forks": 244,
-    "primary_requires_review": 15,
+    "primary_requires_review": 4,
+    "acknowledged_excluded": 11,
     "archived": 0,
     "missing_description": 44,
     "short_description": 40,
@@ -46,9 +48,10 @@
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "website"
     },
     {
       "full_name": "ActiveInferenceInstitute/ants",
@@ -82,9 +85,10 @@
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "website"
     },
     {
       "full_name": "ActiveInferenceInstitute/pymdp",
@@ -1107,9 +1111,10 @@
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "rename_duplicate"
     },
     {
       "full_name": "docxology/Crypto-OpSec-SelfGuard-RoadMap",
@@ -1320,9 +1325,10 @@
       ],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "profile_repo"
     },
     {
       "full_name": "docxology/EFEasVFE",
@@ -2337,9 +2343,10 @@
       "topics": [],
       "recently_updated": false,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "profile_infrastructure"
     },
     {
       "full_name": "docxology/IF",
@@ -2409,9 +2416,10 @@
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "website"
     },
     {
       "full_name": "docxology/InterBrain",
@@ -2715,9 +2723,10 @@
       "topics": [],
       "recently_updated": false,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "profile_infrastructure"
     },
     {
       "full_name": "docxology/Ludii",
@@ -3695,9 +3704,10 @@
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "private_mirror"
     },
     {
       "full_name": "docxology/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers",
@@ -3929,9 +3939,10 @@
       "topics": [],
       "recently_updated": false,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "profile_infrastructure"
     },
     {
       "full_name": "docxology/red",
@@ -4442,9 +4453,10 @@
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "test_repo"
     },
     {
       "full_name": "docxology/test_public",
@@ -4460,9 +4472,10 @@
       "topics": [],
       "recently_updated": false,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "test_repo"
     },
     {
       "full_name": "docxology/thrml",

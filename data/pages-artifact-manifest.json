@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T22:09:00Z",
-  "source_commit_at_generation": "9c01324ab9ff9f93031397d08d09ad71282fb792",
+  "generated_at": "2026-07-21T22:32:27Z",
+  "source_commit_at_generation": "4de60293197b8e4b5388cab68e69ebef2af3f609",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 756213914,
+    "source_bytes": 756220164,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4319,
-    "artifact_bytes": 756974977
+    "artifact_file_count": 4320,
+    "artifact_bytes": 756981393
   },
   "included_files": [
     {
@@ -51,8 +51,8 @@
     },
     {
       "path": "AGENT_START.md",
-      "bytes": 7788,
-      "sha256": "cfcfca8becc5cfb3515d268cb4bd10682688271d72aa0be8d35b3951882c8bd1"
+      "bytes": 7938,
+      "sha256": "ce88a4c9fb911defb7494cd4d6be5a440c459cce11e300ade1f5bb9ee91d1ef0"
     },
     {
       "path": "CHANGELOG.md",
@@ -5326,8 +5326,8 @@
     },
     {
       "path": "code/orchestrators/build_agent_index.py",
-      "bytes": 31581,
-      "sha256": "5aa29ff55bef5ce2bc6bee800ad847eca1ede0a577599d7a65b75a17bec41b43"
+      "bytes": 31947,
+      "sha256": "223e0bd33ec91d73c089ee6858fbe4752cab1d950b966865f39429b2e73d0a3c"
     },
     {
       "path": "code/orchestrators/build_artwork_index.py",
@@ -5446,8 +5446,8 @@
     },
     {
       "path": "code/orchestrators/classify_repositories.py",
-      "bytes": 4334,
-      "sha256": "f265cb644ce24b0a979dad69de8e114c69beeaa61bd26a204588a7e72f5c86fb"
+      "bytes": 5733,
+      "sha256": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc"
     },
     {
       "path": "code/orchestrators/deploy_seo_security.py",
@@ -5716,8 +5716,8 @@
     },
     {
       "path": "code/tests/test_classify_repositories.py",
-      "bytes": 1254,
-      "sha256": "f973d3b9cc2dbb5e235cd92b0c643dcde35d231af03ba86fee342bd713203a6b"
+      "bytes": 1814,
+      "sha256": "e97a9d3728a5780b2b50fbac6bc43a08d184d59b52fe82edf91057c00d4312c3"
     },
     {
       "path": "code/tests/test_count_consistency.py",
@@ -5931,8 +5931,13 @@
     },
     {
       "path": "data/repository-classification.json",
-      "bytes": 161767,
-      "sha256": "009fee0e583df15bdcab7f9dd1cc668577d0b0ccaa5d8f7fd22f5d152ab23b66"
+      "bytes": 162718,
+      "sha256": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d"
+    },
+    {
+      "path": "data/repository-exclusions.json",
+      "bytes": 2824,
+      "sha256": "2dce24b273eed09f2d6a265389f82d8f7dc9d4711a9e50c494400a850c6b9d25"
     },
     {
       "path": "data/resume.json",
@@ -14087,7 +14092,7 @@
     {
       "path": "reports/asset_size_2026-07-21.json",
       "bytes": 3329,
-      "sha256": "5f97fb3180bb8300c6034ad5300531f837a468b23c8ef3e5b668c887fd5bb0bd"
+      "sha256": "138df1aaa3f7aea83e8340981c1403834136b195e9db538004119caab6bdfd38"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",

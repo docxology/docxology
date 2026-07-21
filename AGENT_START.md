@@ -7,7 +7,7 @@ This repository is the public research, software, citation, evidence, and websit
 1. Start with [`llms.txt`](llms.txt) for canonical pages, machine-readable files, and source-of-truth rules.
 2. Use [`discovery.html`](discovery.html) or [`pages/DISCOVERY.md`](pages/DISCOVERY.md) for public identifiers, API endpoints, and refresh queries.
 3. Use [`data/agent-index.json`](data/agent-index.json) for the stable route, dataset-schema, count, freshness, and query manifest.
-   Its `schemas` registry documents the fields and caveats for works, software, repositories, claims, search items, and generated reports.
+   Its `schemas` registry documents the fields and caveats for works, software, repositories, artworks, videos, people, organizations, CV, claims, search items, coverage exceptions, repository classifications, and generated reports; every `datasets` entry resolves to a documented schema.
 4. Use [`GENERATED.md`](GENERATED.md) before editing generated artifacts.
 5. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
 6. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "policy": "Deliberate, human-reviewed exclusions from the software-catalog review queue. Each primary repository below was reviewed and intentionally NOT catalogued in pages/SOFTWARE.md (profile/infrastructure repos, websites, test/smoke repos, rename duplicates of catalogued repos, or private mirrors). Recorded here so they stop resurfacing as 'primary_repo_requires_manual_review' on every GitHub inventory refresh. This file NEVER promotes a repository into the catalog; it only acknowledges a not-catalog decision. A repository is removed from this list if the exclusion no longer holds (e.g. a mirror becomes a primary project).",
+  "reasons": {
+    "profile_repo": "The @owner profile/index repository itself; pages/SOFTWARE.md explicitly excludes it.",
+    "profile_infrastructure": "Profile-page infrastructure (README, links, identity) rather than a software project.",
+    "test_repo": "Test or integration-smoke repository, not a citable software product.",
+    "website": "A website / GitHub Pages site, not a software library or tool.",
+    "rename_duplicate": "A rename or variant of a repository already present in the curated catalog.",
+    "private_mirror": "A public mirror of a private working project; the primary project is tracked elsewhere."
+  },
+  "exclusions": [
+    {"full_name": "docxology/docxology", "reason": "profile_repo", "note": "Public research and software index (this site's own source repo)."},
+    {"full_name": "docxology/README", "reason": "profile_infrastructure", "note": "GitHub profile README."},
+    {"full_name": "docxology/links", "reason": "profile_infrastructure", "note": "Link-hub page repository."},
+    {"full_name": "docxology/identity", "reason": "profile_infrastructure", "note": "Identity/profile metadata repository."},
+    {"full_name": "docxology/test_public", "reason": "test_repo", "note": "Public visibility test repository."},
+    {"full_name": "docxology/template-release-smoke", "reason": "test_repo", "note": "Integration smoke test for the template release orchestrator (marked do-not-cite)."},
+    {"full_name": "docxology/institute_website", "reason": "website", "note": "Active Inference Institute GitHub Pages website."},
+    {"full_name": "ActiveInferenceInstitute/institute_website", "reason": "website", "note": "Active Inference Institute information website."},
+    {"full_name": "ActiveInferenceInstitute/aii-org", "reason": "website", "note": "Active Inference Institute organizational website."},
+    {"full_name": "docxology/crescent_city", "reason": "rename_duplicate", "note": "Underscore variant of the catalogued docxology/crescent-city."},
+    {"full_name": "docxology/prior_cognitive_art", "reason": "private_mirror", "note": "Public mirror of working/prior_cognitive_art in docxology/projects."}
+  ]
+}
