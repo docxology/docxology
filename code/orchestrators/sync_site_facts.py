@@ -12,6 +12,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_facts import counts, generated_date, generated_month_year
+from report_paths import latest_subdir_file
 TARGETS = [
     REPO_ROOT / "index.html",
     REPO_ROOT / "publications.html",
@@ -147,6 +148,20 @@ def render(path: Path) -> str:
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.{suffix}", name, text)
+        # The two QA screenshot manifests live in per-date SUBDIRECTORIES
+        # (reports/<prefix>/YYYY-MM-DD/manifest.json), not flat suffixed files,
+        # so they need their own rewrite. prune_old_reports.py keeps only the
+        # latest set, so these hand-authored links must track that latest date
+        # or they rot AND pin the superseded set against pruning.
+        for prefix in ("visual-qa", "browser-smoke"):
+            latest = latest_subdir_file(prefix, "manifest.json")
+            if latest is not None:
+                snap_date = latest.parent.name
+                text = re.sub(
+                    rf"reports/{prefix}/\d{{4}}-\d{{2}}-\d{{2}}/manifest\.json",
+                    f"reports/{prefix}/{snap_date}/manifest.json",
+                    text,
+                )
     return text
 
 

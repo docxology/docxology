@@ -57,12 +57,18 @@ def _referenced_externally(rel_prefix: str) -> bool:
     Excludes reports/ (a set's own manifest cites its own PNGs) and code/ (generators
     carry stale fallback-default literals like ``"/reports/visual-qa/2026-05-13/..."``
     that are only used when no dated subdir exists — they are not live links in any
-    served artifact). We only care about orphaning references in the published site/data.
+    served artifact). Also excludes the build INVENTORY manifests
+    (data/pages-artifact-manifest.json, data/generated-manifest.json), which enumerate
+    every tracked file by path but do not *link* to them — treating that inventory as a
+    reference would pin every dated set forever and neuter this tool. We only care about
+    orphaning genuine links in served content (HTML pages, llms.txt, feeds, sitemaps).
     """
     try:
         out = subprocess.run(
             ["git", "grep", "-l", rel_prefix, "--", ".",
-             ":(exclude)reports/*", ":(exclude)code/*"],
+             ":(exclude)reports/*", ":(exclude)code/*",
+             ":(exclude)data/pages-artifact-manifest.json",
+             ":(exclude)data/generated-manifest.json"],
             cwd=REPO_ROOT, capture_output=True, text=True,
         )
     except FileNotFoundError:
