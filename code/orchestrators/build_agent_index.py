@@ -24,6 +24,13 @@ DATASET_PATHS = {
     "claims": "data/claims.json",
     "coverage_exceptions": "data/coverage-exceptions.json",
     "repository_classification": "data/repository-classification.json",
+    "people": "data/people.json",
+    "organizations": "data/organizations.json",
+    "resume": "data/resume.json",
+    "work_enrichment": "data/work-enrichment.json",
+    "catalog": "data/catalog.json",
+    "reconciliation": "data/reconciliation.json",
+    "generated_manifest": "data/generated-manifest.json",
 }
 
 
@@ -72,6 +79,10 @@ SCHEMAS = {
             "has_paper_folder": "boolean",
             "has_full_text": "boolean",
             "has_images": "boolean",
+            "has_skill_md": "boolean; a per-paper agent SKILL.md exists in the folder",
+            "has_agents_md": "boolean; a per-paper AGENTS.md exists in the folder",
+            "has_readme": "boolean; a per-paper README.md exists in the folder",
+            "full_text_url": "string or empty; site-relative URL of the paper's full_text.md",
         },
     },
     "SoftwareRepository": {
@@ -239,6 +250,143 @@ SCHEMAS = {
             "privacy": "CV public-integrity result and policy",
         },
     },
+    "VisualArtwork": {
+        "type": "object",
+        "description": "One complete gallery artwork record (pen-and-ink or blockchain art); the full counterpart to the compact ArtworkIndex projection. Aligns with schema.org VisualArtwork.",
+        "schema_org": "https://schema.org/VisualArtwork",
+        "required": ["id", "title", "tags", "date", "views", "media", "thumb", "flickr_url", "sizes"],
+        "fields": {
+            "id": "string; stable Flickr artwork identifier",
+            "title": "string",
+            "desc": "string; artwork description or empty",
+            "tags": "array of strings",
+            "date": "string or empty",
+            "views": "string or numeric display count",
+            "media": "string; medium/format label",
+            "thumb": "HTTPS thumbnail URL",
+            "flickr_url": "HTTPS canonical Flickr page URL",
+            "sizes": "object; resolution label to HTTPS image URL map",
+        },
+    },
+    "VideoObject": {
+        "type": "object",
+        "description": "One complete video record; the full counterpart to the compact VideoIndex projection. Aligns with schema.org VideoObject.",
+        "schema_org": "https://schema.org/VideoObject",
+        "required": ["id", "title", "channel", "upload_date", "youtube_url", "embed_url", "page_url"],
+        "fields": {
+            "id": "string; YouTube video identifier",
+            "title": "string",
+            "channel": "string; channel slug",
+            "channel_name": "string",
+            "channel_url": "HTTPS channel URL",
+            "upload_date": "ISO-8601 date",
+            "year": "integer",
+            "duration": "duration in seconds or ISO-8601",
+            "duration_text": "human-readable duration",
+            "view_count": "integer or display string",
+            "youtube_url": "HTTPS watch URL",
+            "embed_url": "HTTPS embeddable player URL",
+            "thumbnail_url": "HTTPS thumbnail URL",
+            "page_url": "HTTPS canonical on-site video page",
+            "transcript_available": "boolean",
+            "transcript_path": "string or empty; repository-relative transcript",
+            "topics": "array of strings",
+            "related_pages": "array; on-site related page URLs",
+            "related_works": "array; related work citation_keys",
+        },
+    },
+    "Person": {
+        "type": "object",
+        "description": "One collaborator or identity record. Aligns with schema.org Person.",
+        "schema_org": "https://schema.org/Person",
+        "required": ["name", "role"],
+        "fields": {
+            "name": "string",
+            "role": "string; relationship or contribution role",
+            "orcid": "string or empty; ORCID URL",
+            "wikidata": "string or empty; Wikidata QID URL",
+            "homepage": "string or empty",
+            "github": "string or empty; GitHub profile URL",
+        },
+    },
+    "Organization": {
+        "type": "object",
+        "description": "One institutional affiliation record. Aligns with schema.org Organization.",
+        "schema_org": "https://schema.org/Organization",
+        "required": ["name", "role"],
+        "fields": {
+            "name": "string",
+            "alternate_names": "array of strings",
+            "url": "string; canonical URL",
+            "public_landing_page": "string or empty",
+            "wikidata": "string or empty; Wikidata QID URL",
+            "github": "string or empty; GitHub account URL",
+            "github_account_type": "User or Organization",
+            "ein": "string or empty; US tax identifier",
+            "irs_status": "string or empty",
+            "role": "string; affiliation role",
+        },
+    },
+    "ResumeData": {
+        "type": "object",
+        "description": "Structured CV: profile, contact, metrics, and dated education/experience/awards/service sections with per-variant selection.",
+        "required": ["profile", "education", "experience"],
+        "fields": {
+            "profile": "object; name, title, and summary",
+            "contact": "object; email and public links",
+            "metrics": "object; citation and output counts",
+            "education": "array of degree records",
+            "experience": "array of role records",
+            "awards": "array",
+            "service": "array",
+            "works": "array; selected work references",
+            "software": "array; selected software references",
+            "variants": "object; named CV variant section selections",
+        },
+    },
+    "WorkEnrichment": {
+        "type": "object",
+        "description": "Abstracts and keywords extracted from paper folders, keyed to Work citation identifiers.",
+        "required": ["generated_at", "source", "count", "works"],
+        "fields": {
+            "generated_at": "ISO-8601 timestamp",
+            "source": "string; extraction source",
+            "count": "integer",
+            "works": "array or object; per-work abstract and keyword enrichment",
+        },
+    },
+    "DataCatalog": {
+        "type": "object",
+        "description": "Schema.org DataCatalog describing every public JSON export as a Dataset with a DataDownload distribution.",
+        "schema_org": "https://schema.org/DataCatalog",
+        "required": ["@context", "@type", "name", "dataset"],
+        "fields": {
+            "@type": "DataCatalog",
+            "name": "string",
+            "url": "string",
+            "dataset": "array of schema.org Dataset nodes, each with url, encodingFormat, license, and distribution",
+        },
+    },
+    "ReconciliationReport": {
+        "type": "object",
+        "description": "Curated local counts compared against public-source indexes (ORCID, PubMed, Crossref, Zenodo, GitHub), with an explicit relationship interpretation per comparison.",
+        "required": ["generated_at", "comparisons"],
+        "fields": {
+            "generated_at": "ISO-8601 timestamp",
+            "snapshot": "string; public-source snapshot report path",
+            "claims_count": "integer",
+            "comparisons": "array; each has name, local_value, public_value, relationship, and interpretation",
+        },
+    },
+    "GeneratedManifest": {
+        "type": "object",
+        "description": "Source-to-output rebuild map: every generated artifact with the sources it derives from and the command that produces it.",
+        "required": ["generated_at", "artifacts"],
+        "fields": {
+            "generated_at": "ISO-8601 timestamp",
+            "artifacts": "array; each has name, outputs, sources, and command",
+        },
+    },
 }
 
 
@@ -256,13 +404,19 @@ def payload() -> dict:
     search = load_json("search-index.json")
     coverage = load_json("data/coverage-exceptions.json")
     classification = load_json("data/repository-classification.json")
+    people = load_json("data/people.json")
+    organizations = load_json("data/organizations.json")
+    work_enrichment = load_json("data/work-enrichment.json")
+    catalog = load_json("data/catalog.json")
+    reconciliation = load_json("data/reconciliation.json")
+    generated_manifest = load_json("data/generated-manifest.json")
     pages_artifact = load_json("data/pages-artifact-manifest.json")
     live_report_path = latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json")
     live_report = load_json(live_report_path.lstrip("/"))
     dataset_hashes = {key: sha256(REPO_ROOT / path) for key, path in DATASET_PATHS.items() if (REPO_ROOT / path).is_file()}
     dataset_hashes["current_counts"] = sha256(COUNTS)
     return {
-        "schema_version": "1.3",
+        "schema_version": "1.4",
         "generated_at": current.get("generated_at"),
         "canonical_origin": "https://danielarifriedman.com/",
         "canonical_sources": {
@@ -308,6 +462,13 @@ def payload() -> dict:
             "repository_classification": {"path": "/data/repository-classification.json", "count": len(classification.get("repositories", [])), "schema": "RepositoryClassification"},
             "pages_artifact": {"path": "/data/pages-artifact-manifest.json", "count": None, "schema": "PagesArtifactManifest"},
             "release_integrity": {"path": "/data/release-integrity.json", "count": None, "schema": "ReleaseIntegrity"},
+            "people": {"path": "/data/people.json", "count": len(people.get("people", [])), "schema": "Person"},
+            "organizations": {"path": "/data/organizations.json", "count": len(organizations.get("organizations", [])), "schema": "Organization"},
+            "resume": {"path": "/data/resume.json", "count": None, "schema": "ResumeData"},
+            "work_enrichment": {"path": "/data/work-enrichment.json", "count": work_enrichment.get("count"), "schema": "WorkEnrichment"},
+            "catalog": {"path": "/data/catalog.json", "count": len(catalog.get("dataset", [])), "schema": "DataCatalog"},
+            "reconciliation": {"path": "/data/reconciliation.json", "count": len(reconciliation.get("comparisons", [])), "schema": "ReconciliationReport"},
+            "generated_manifest": {"path": "/data/generated-manifest.json", "count": len(generated_manifest.get("artifacts", [])), "schema": "GeneratedManifest"},
         },
         "reports": [
             {"id": "current-counts", "path": "/data/current-counts.json", "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
@@ -319,7 +480,7 @@ def payload() -> dict:
             {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
         ],
         "schemas": SCHEMAS,
-        "schema_registry_version": "1.1",
+        "schema_registry_version": "1.2",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "SoftwareRepository": software.get("repositories", [])[:1],

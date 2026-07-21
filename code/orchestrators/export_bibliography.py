@@ -91,6 +91,10 @@ class Work:
     has_paper_folder: bool
     has_full_text: bool = False
     has_images: bool = False
+    has_skill_md: bool = False
+    has_agents_md: bool = False
+    has_readme: bool = False
+    full_text_url: str = ""
 
 
 def clean_text(value: str) -> str:
@@ -125,15 +129,22 @@ def row_to_work(row: BiblioRow) -> Work:
     url = canonical_link_url(row.link_cell, row.venue)
     domain = row.domain.strip()
     docs = docs_path(row)
-    # Check for full_text.md and images/ directory
+    # Check for full_text.md, images/ directory, and per-paper agent docs.
     has_ft = False
     has_img = False
+    has_skill = False
+    has_agents = False
+    has_readme = False
+    full_text_url = ""
     if docs:
         paper_dir = REPO_ROOT / docs.rstrip("/")
         if (paper_dir / "full_text.md").is_file():
             has_ft = True
-        if (paper_dir / "images").is_dir():
-            has_img = True
+            full_text_url = f"/{docs.rstrip('/')}/full_text.md"
+        has_img = (paper_dir / "images").is_dir()
+        has_skill = (paper_dir / "SKILL.md").is_file()
+        has_agents = (paper_dir / "AGENTS.md").is_file()
+        has_readme = (paper_dir / "README.md").is_file()
     return Work(
         num=row.num,
         citation_key=citation_key(row),
@@ -149,6 +160,10 @@ def row_to_work(row: BiblioRow) -> Work:
         has_paper_folder=bool(row.folder),
         has_full_text=has_ft,
         has_images=has_img,
+        has_skill_md=has_skill,
+        has_agents_md=has_agents,
+        has_readme=has_readme,
+        full_text_url=full_text_url,
     )
 
 

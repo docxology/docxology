@@ -15,7 +15,7 @@ WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, render_nav, social_meta_tags  # noqa: E402
+from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, domain_page_href, render_nav, social_meta_tags  # noqa: E402
 
 try:
     from report_paths import generated_timestamp, stable_generated_at
@@ -349,10 +349,19 @@ def related_works_html(work: dict) -> str:
         f'<span class="muted"> · {h(r["year"])}</span></li>'
         for r in related
     )
+    domain_href = domain_page_href(work.get("domain", ""), depth=1)
+    domain_name = h(work["domain_name"])
+    header_domain = f'<a href="{domain_href}">{domain_name}</a>' if domain_href else domain_name
+    hub_link = (
+        f'<p><a class="related-hub-link" href="{domain_href}">View all {domain_name} works, software &amp; media →</a></p>'
+        if domain_href
+        else ""
+    )
     return f"""
         <section class="section">
-            <div class="section-header"><h2>Related in {h(work['domain_name'])}</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Related in {header_domain}</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
             <ul class="related-list">{items}</ul>
+            {hub_link}
         </section>"""
 
 
@@ -377,6 +386,10 @@ def json_ld(work: dict) -> str:
             "@id": "https://danielarifriedman.com/#person",
             "name": "Daniel Ari Friedman",
             "url": "https://danielarifriedman.com/",
+            "sameAs": [
+                "https://orcid.org/0000-0001-6232-9096",
+                "https://www.wikidata.org/wiki/Q138781444",
+            ],
         },
         "datePublished": str(work["year"]),
         "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
@@ -388,7 +401,6 @@ def json_ld(work: dict) -> str:
         ],
         "genre": work["type"],
         "inLanguage": "en",
-        "citation": citation_text(work),
         "sameAs": same_as,
         "image": "https://danielarifriedman.com/og-publications.jpg",
     }
@@ -618,6 +630,18 @@ def render_index(works: list[dict]) -> str:
                 </article>"""
         for w in sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True)
     )
+    item_list_elements = json.dumps(
+        [
+            {
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": f"https://danielarifriedman.com/works/{w['citation_key']}.html",
+                "name": w["title"],
+            }
+            for index, w in enumerate(sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True))
+        ],
+        ensure_ascii=False,
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -662,7 +686,8 @@ def render_index(works: list[dict]) -> str:
       "@type": "ItemList",
       "name": "Daniel Ari Friedman Works Index",
       "numberOfItems": {len(works)},
-      "url": "https://danielarifriedman.com/works/"
+      "url": "https://danielarifriedman.com/works/",
+      "itemListElement": {item_list_elements}
     }}
     </script>
     <style>.work-list{{display:grid;gap:.75rem}}.work-row{{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}.work-row .year{{color:var(--gold);font-weight:700}}.work-row .venue{{color:var(--text-muted);font-size:.8rem}}@media(max-width:760px){{.work-row{{grid-template-columns:1fr}}}}</style>

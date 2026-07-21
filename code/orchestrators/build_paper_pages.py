@@ -15,7 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, render_nav  # noqa: E402
+from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
 
 
 def h(value: object) -> str:
@@ -140,6 +140,10 @@ def render_page(work: dict) -> str:
     summary = overview(folder) or "Local documentation and source artifacts for this bibliography entry."
     doi_url = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     canonical = works_canonical(work)
+    domain_href = domain_page_href(work.get("domain", ""), depth=2)
+    domain_label = (
+        f'<a href="{domain_href}">{h(work["domain_name"])}</a>' if domain_href else h(work["domain_name"])
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -180,7 +184,7 @@ def render_page(work: dict) -> str:
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav(active="works", depth=2)}
     <header class="paper-hero">
-        <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
+        <p class="eyebrow">{domain_label} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
         <p class="sub">Documentation folder for catalog row {h(work['num'])} · <a href="../../works/{h(work['citation_key'])}.html">Canonical work page</a></p>
     </header>

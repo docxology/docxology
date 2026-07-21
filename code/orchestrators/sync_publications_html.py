@@ -84,19 +84,51 @@ def schema_type_for_row(typ: str) -> str:
 
 
 def _author_block() -> list[dict]:
-    return [{"@type": "Person", "name": "Daniel Ari Friedman"}]
+    return [
+        {
+            "@type": "Person",
+            "@id": "https://danielarifriedman.com/#person",
+            "name": "Daniel Ari Friedman",
+            "sameAs": [
+                "https://orcid.org/0000-0001-6232-9096",
+                "https://www.wikidata.org/wiki/Q138781444",
+            ],
+        }
+    ]
 
 
-def main_entity_object(row: BiblioRow, same_as: str) -> dict:
+def load_works_by_num() -> dict[int, dict]:
+    """Map each bibliography row num to its canonical works.json record."""
+    try:
+        payload = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return {w["num"]: w for w in payload.get("works", []) if "num" in w}
+
+
+def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None) -> dict:
     pub_name = row.venue if row.venue else "Unknown"
     obj: dict = {
         "@type": schema_type_for_row(row.typ),
+        "name": row.title,
         "headline": row.title,
         "datePublished": row.year,
         "author": _author_block(),
         "publisher": {"@type": "Organization", "name": pub_name},
         "keywords": row.domain,
     }
+    if work and work.get("citation_key"):
+        canonical = f"https://danielarifriedman.com/works/{work['citation_key']}.html"
+        obj["@id"] = f"{canonical}#work"
+        obj["url"] = canonical
+        obj["mainEntityOfPage"] = canonical
+        if work.get("doi"):
+            obj["identifier"] = {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": work["doi"],
+                "url": f"https://doi.org/{work['doi']}",
+            }
     if same_as:
         obj["sameAs"] = same_as
     return obj
@@ -111,7 +143,8 @@ def collection_page_description(count: int) -> str:
 
 def build_collection_page(rows: list[BiblioRow]) -> dict:
     count = len(rows)
-    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue)) for r in rows]
+    works_by_num = load_works_by_num()
+    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue), works_by_num.get(r.num)) for r in rows]
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",

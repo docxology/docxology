@@ -76,6 +76,34 @@ def canonical_work_key(citation_key: str) -> str:
     return WORK_CANONICAL_OVERRIDES.get(citation_key, citation_key)
 
 
+# Domain emoji -> domain hub page slug. Mirrors DomainConfig.domains/slug in
+# build_domain_pages.py; kept here so per-work and per-paper pages can link back
+# to their domain hub (bidirectional discovery) without importing the orchestrator.
+DOMAIN_EMOJI_TO_SLUG = {
+    "🐜": "entomology",
+    "🧠": "active-inference",
+    "🛡️": "cognitive-security",
+    "🛡": "cognitive-security",
+    "🎨": "art-synergetics",
+    "💻": "computational",
+    "🧬": "biomedicine",
+    "🌍": "aii-ecosystem",
+    "🎥": "presentations-media",
+}
+
+
+def domain_page_href(emoji: str, *, depth: int = 0) -> str:
+    """Return the domain hub page href for a work's domain emoji, or '' if unknown.
+
+    depth is the number of directory levels below site root (works/ and papers/*
+    pages use depth=1 so the link resolves to ../domain-<slug>.html).
+    """
+    slug = DOMAIN_EMOJI_TO_SLUG.get((emoji or "").strip())
+    if not slug:
+        return ""
+    return f"{'../' * depth}domain-{slug}.html"
+
+
 def clip_description(text: str, limit: int = 155) -> str:
     """Clip a meta description to <= limit chars on a word boundary.
 
@@ -240,9 +268,13 @@ def render_nav(*, active: str = "", depth: int = 0) -> str:
         ("domains", f"{prefix}domains.html", "Domains"),
         ("software", f"{prefix}software.html", "Software"),
         ("videos", f"{prefix}videos.html", "Videos"),
+        ("art", f"{prefix}art.html", "Art"),
+        ("media", f"{prefix}media.html", "Media"),
+        ("collaborators", f"{prefix}collaborators.html", "Collaborators"),
         ("resume", f"{prefix}resume/resume.html", "CV"),
         ("search", f"{prefix}search.html", "Search"),
         ("catalog", f"{prefix}catalog.html", "Data Catalog"),
+        ("evidence", f"{prefix}evidence.html", "Evidence"),
         ("cite", f"{prefix}cite-verify.html", "Cite"),
         ("discovery", f"{prefix}discovery.html", "Discovery"),
         ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),

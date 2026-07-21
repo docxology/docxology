@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T12:52:24Z",
+  "generated_at": "2026-07-21T21:38:47Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "count": 197,
   "works": [
@@ -17,7 +17,11 @@
       "docs_path": "papers/2026_ReproducibleResearch/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ReproducibleResearch/full_text.md"
     },
     {
       "num": 2,
@@ -33,7 +37,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 3,
@@ -49,7 +57,11 @@
       "docs_path": "papers/2026_BeforePragmatism/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_BeforePragmatism/full_text.md"
     },
     {
       "num": 4,
@@ -65,7 +77,11 @@
       "docs_path": "papers/2026_Bimetalism/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_Bimetalism/full_text.md"
     },
     {
       "num": 5,
@@ -81,7 +97,11 @@
       "docs_path": "papers/2026_CognitiveIntegrity/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_CognitiveIntegrity/full_text.md"
     },
     {
       "num": 6,
@@ -97,7 +117,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 7,
@@ -113,7 +137,11 @@
       "docs_path": "papers/2026_DoorsOfPerception/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_DoorsOfPerception/full_text.md"
     },
     {
       "num": 8,
@@ -129,7 +157,11 @@
       "docs_path": "papers/2025_5thSymposium/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_5thSymposium/full_text.md"
     },
     {
       "num": 9,
@@ -145,7 +177,11 @@
       "docs_path": "papers/2025_AuBI/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_AuBI/full_text.md"
     },
     {
       "num": 10,
@@ -161,7 +197,11 @@
       "docs_path": "papers/2025_CEREBRUM/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_CEREBRUM/full_text.md"
     },
     {
       "num": 11,
@@ -177,7 +217,11 @@
       "docs_path": "papers/2025_AntStackComplexity/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_AntStackComplexity/full_text.md"
     },
     {
       "num": 12,
@@ -193,7 +237,11 @@
       "docs_path": "papers/2025_EvoJump/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_EvoJump/full_text.md"
     },
     {
       "num": 13,
@@ -209,7 +257,11 @@
       "docs_path": "papers/2025_AccessibilityActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_AccessibilityActiveInference/full_text.md"
     },
     {
       "num": 14,
@@ -225,7 +277,11 @@
       "docs_path": "papers/2025_MDKV/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_MDKV/full_text.md"
     },
     {
       "num": 15,
@@ -241,7 +297,11 @@
       "docs_path": "papers/2025_MarkdownDecisionProcess/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_MarkdownDecisionProcess/full_text.md"
     },
     {
       "num": 16,
@@ -257,7 +317,11 @@
       "docs_path": "papers/2025_CognitiveArtScience/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_CognitiveArtScience/full_text.md"
     },
     {
       "num": 17,
@@ -273,7 +337,11 @@
       "docs_path": "papers/2025_OnTime/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_OnTime/full_text.md"
     },
     {
       "num": 18,
@@ -289,7 +357,11 @@
       "docs_path": "papers/2025_QuadMath/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_QuadMath/full_text.md"
     },
     {
       "num": 19,
@@ -305,7 +377,11 @@
       "docs_path": "papers/2025_ResNei/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_ResNei/full_text.md"
     },
     {
       "num": 20,
@@ -321,7 +397,11 @@
       "docs_path": "papers/2025_Symergetics/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_Symergetics/full_text.md"
     },
     {
       "num": 21,
@@ -337,7 +417,11 @@
       "docs_path": "papers/2025_AgentAndNiche/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_AgentAndNiche/full_text.md"
     },
     {
       "num": 22,
@@ -353,7 +437,11 @@
       "docs_path": "papers/2025_SystemsProcesses/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_SystemsProcesses/full_text.md"
     },
     {
       "num": 23,
@@ -369,7 +457,11 @@
       "docs_path": "papers/2025_TemporalDepth/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_TemporalDepth/full_text.md"
     },
     {
       "num": 24,
@@ -385,7 +477,11 @@
       "docs_path": "papers/2025_AII_v3/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_AII_v3/full_text.md"
     },
     {
       "num": 25,
@@ -401,7 +497,11 @@
       "docs_path": "papers/2025_AntStack/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_AntStack/full_text.md"
     },
     {
       "num": 26,
@@ -417,7 +517,11 @@
       "docs_path": "papers/2025_DiscoveryEngine/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_DiscoveryEngine/full_text.md"
     },
     {
       "num": 27,
@@ -433,7 +537,11 @@
       "docs_path": "papers/2025_Thoughtseeds/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_Thoughtseeds/full_text.md"
     },
     {
       "num": 28,
@@ -449,7 +557,11 @@
       "docs_path": "papers/2025_ConsciousnessAnts/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_ConsciousnessAnts/full_text.md"
     },
     {
       "num": 29,
@@ -465,7 +577,11 @@
       "docs_path": "papers/2024_OntologySUMO/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_OntologySUMO/full_text.md"
     },
     {
       "num": 30,
@@ -481,7 +597,11 @@
       "docs_path": "papers/2024_BioFirm/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_BioFirm/full_text.md"
     },
     {
       "num": 31,
@@ -497,7 +617,11 @@
       "docs_path": "papers/2024_ImageMemeResearch/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_ImageMemeResearch/full_text.md"
     },
     {
       "num": 32,
@@ -513,7 +637,11 @@
       "docs_path": "papers/2024_BlattodeaDiversity/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_BlattodeaDiversity/full_text.md"
     },
     {
       "num": 33,
@@ -529,7 +657,11 @@
       "docs_path": "papers/2024_DigitalTwins/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_DigitalTwins/full_text.md"
     },
     {
       "num": 34,
@@ -545,7 +677,11 @@
       "docs_path": "papers/2024_PopulationSearch/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_PopulationSearch/full_text.md"
     },
     {
       "num": 35,
@@ -561,7 +697,11 @@
       "docs_path": "papers/2024_FarmWorks/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_FarmWorks/full_text.md"
     },
     {
       "num": 36,
@@ -577,7 +717,11 @@
       "docs_path": "papers/2024_FederatedInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_FederatedInference/full_text.md"
     },
     {
       "num": 37,
@@ -593,7 +737,11 @@
       "docs_path": "papers/2024_QuantumDreams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_QuantumDreams/full_text.md"
     },
     {
       "num": 38,
@@ -609,7 +757,11 @@
       "docs_path": "papers/2024_MathArtBlake/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_MathArtBlake/full_text.md"
     },
     {
       "num": 39,
@@ -625,7 +777,11 @@
       "docs_path": "papers/2024_SensemakingFederation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_SensemakingFederation/full_text.md"
     },
     {
       "num": 40,
@@ -641,7 +797,11 @@
       "docs_path": "papers/2024_SharedProtentions/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_SharedProtentions/full_text.md"
     },
     {
       "num": 41,
@@ -657,7 +817,11 @@
       "docs_path": "papers/2024_AII_v2/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_AII_v2/full_text.md"
     },
     {
       "num": 42,
@@ -673,7 +837,11 @@
       "docs_path": "papers/2024_InfiniteImaginarium/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_InfiniteImaginarium/full_text.md"
     },
     {
       "num": 43,
@@ -689,7 +857,11 @@
       "docs_path": "papers/2024_PaleolithicRockstars/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     },
     {
       "num": 44,
@@ -705,7 +877,11 @@
       "docs_path": "papers/2024_CurioCards/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_CurioCards/full_text.md"
     },
     {
       "num": 45,
@@ -721,7 +897,11 @@
       "docs_path": "papers/2023_GuidedTourMinds/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_GuidedTourMinds/full_text.md"
     },
     {
       "num": 46,
@@ -737,7 +917,11 @@
       "docs_path": "papers/2023_SinglePheromone/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_SinglePheromone/full_text.md"
     },
     {
       "num": 47,
@@ -753,7 +937,11 @@
       "docs_path": "papers/2023_HoneyBeeGeneExpression/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_HoneyBeeGeneExpression/full_text.md"
     },
     {
       "num": 48,
@@ -769,7 +957,11 @@
       "docs_path": "papers/2023_VariationalSynthesis/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_VariationalSynthesis/full_text.md"
     },
     {
       "num": 49,
@@ -785,7 +977,11 @@
       "docs_path": "papers/2023_ATLAS/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_ATLAS/full_text.md"
     },
     {
       "num": 50,
@@ -801,7 +997,11 @@
       "docs_path": "papers/2023_AccountActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_AccountActiveInference/full_text.md"
     },
     {
       "num": 51,
@@ -817,7 +1017,11 @@
       "docs_path": "papers/2023_CognitiveSovereignty/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_CognitiveSovereignty/full_text.md"
     },
     {
       "num": 52,
@@ -833,7 +1037,11 @@
       "docs_path": "papers/2023_AIAccountability/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_AIAccountability/full_text.md"
     },
     {
       "num": 53,
@@ -849,7 +1057,11 @@
       "docs_path": "papers/2023_DistributedScience/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_DistributedScience/full_text.md"
     },
     {
       "num": 54,
@@ -865,7 +1077,11 @@
       "docs_path": "papers/2023_NSFReporting/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_NSFReporting/full_text.md"
     },
     {
       "num": 55,
@@ -881,7 +1097,11 @@
       "docs_path": "papers/2023_VideoEntomology/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_VideoEntomology/full_text.md"
     },
     {
       "num": 56,
@@ -897,7 +1117,11 @@
       "docs_path": "papers/2023_GNN/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_GNN/full_text.md"
     },
     {
       "num": 57,
@@ -913,7 +1137,11 @@
       "docs_path": "papers/2023_GenerativeResearchTeams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_GenerativeResearchTeams/full_text.md"
     },
     {
       "num": 58,
@@ -929,7 +1157,11 @@
       "docs_path": "papers/2023_AntsAging/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_AntsAging/full_text.md"
     },
     {
       "num": 59,
@@ -945,7 +1177,11 @@
       "docs_path": "papers/2023_OpenScienceSensemaking/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_OpenScienceSensemaking/full_text.md"
     },
     {
       "num": 60,
@@ -961,7 +1197,11 @@
       "docs_path": "papers/2023_PostdocReview/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_PostdocReview/full_text.md"
     },
     {
       "num": 61,
@@ -977,7 +1217,11 @@
       "docs_path": "papers/2023_AII_v1/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_AII_v1/full_text.md"
     },
     {
       "num": 62,
@@ -993,7 +1237,11 @@
       "docs_path": "papers/2023_P3IF/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_P3IF/full_text.md"
     },
     {
       "num": 63,
@@ -1009,7 +1257,11 @@
       "docs_path": "papers/2023_ToComment/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_ToComment/full_text.md"
     },
     {
       "num": 64,
@@ -1025,7 +1277,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 65,
@@ -1041,7 +1297,11 @@
       "docs_path": "papers/2023_BlakeFuller/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_BlakeFuller/full_text.md"
     },
     {
       "num": 66,
@@ -1057,7 +1317,11 @@
       "docs_path": "papers/2022_ActiveInferenceOntology/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_ActiveInferenceOntology/full_text.md"
     },
     {
       "num": 67,
@@ -1073,7 +1337,11 @@
       "docs_path": "papers/2022_ActiveDiffusion/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_ActiveDiffusion/full_text.md"
     },
     {
       "num": 68,
@@ -1089,7 +1357,11 @@
       "docs_path": "papers/2022_StigmergicAnnotation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_StigmergicAnnotation/full_text.md"
     },
     {
       "num": 69,
@@ -1105,7 +1377,11 @@
       "docs_path": "papers/2022_FreeWillSapolsky/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_FreeWillSapolsky/full_text.md"
     },
     {
       "num": 70,
@@ -1121,7 +1397,11 @@
       "docs_path": "papers/2022_MirrorTest/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_MirrorTest/full_text.md"
     },
     {
       "num": 71,
@@ -1137,7 +1417,11 @@
       "docs_path": "papers/2022_InformationCommons/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_InformationCommons/full_text.md"
     },
     {
       "num": 72,
@@ -1153,7 +1437,11 @@
       "docs_path": "papers/2022_HypercertEcosystems/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_HypercertEcosystems/full_text.md"
     },
     {
       "num": 73,
@@ -1169,7 +1457,11 @@
       "docs_path": "papers/2022_SystematicLiteratureAnalysis/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_SystematicLiteratureAnalysis/full_text.md"
     },
     {
       "num": 74,
@@ -1185,7 +1477,11 @@
       "docs_path": "papers/2022_TrustFinder/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_TrustFinder/full_text.md"
     },
     {
       "num": 75,
@@ -1201,7 +1497,11 @@
       "docs_path": "papers/2021_ActiveInferants/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_ActiveInferants/full_text.md"
     },
     {
       "num": 76,
@@ -1217,7 +1517,11 @@
       "docs_path": "papers/2021_ModelingConflict/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_ModelingConflict/full_text.md"
     },
     {
       "num": 77,
@@ -1233,7 +1537,11 @@
       "docs_path": "papers/2021_DigitalRhetorical/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_DigitalRhetorical/full_text.md"
     },
     {
       "num": 78,
@@ -1249,7 +1557,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 79,
@@ -1265,7 +1577,11 @@
       "docs_path": "papers/2021_NarrativeEcosystems/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_NarrativeEcosystems/full_text.md"
     },
     {
       "num": 80,
@@ -1281,7 +1597,11 @@
       "docs_path": "papers/2021_NarrativeInformationMgmt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_NarrativeInformationMgmt/full_text.md"
     },
     {
       "num": 81,
@@ -1297,7 +1617,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 82,
@@ -1313,7 +1637,11 @@
       "docs_path": "papers/2020_BehaviorEngineering/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_BehaviorEngineering/full_text.md"
     },
     {
       "num": 83,
@@ -1329,7 +1657,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 84,
@@ -1345,7 +1677,11 @@
       "docs_path": "papers/2020_DistributedPhysiology/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_DistributedPhysiology/full_text.md"
     },
     {
       "num": 85,
@@ -1361,7 +1697,11 @@
       "docs_path": "papers/2020_EmergentTeams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_EmergentTeams/full_text.md"
     },
     {
       "num": 86,
@@ -1377,7 +1717,11 @@
       "docs_path": "papers/2020_GeneExpressionForagers/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_GeneExpressionForagers/full_text.md"
     },
     {
       "num": 87,
@@ -1393,7 +1737,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 88,
@@ -1409,7 +1757,11 @@
       "docs_path": "papers/2020_NeurotransmitterVariation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_NeurotransmitterVariation/full_text.md"
     },
     {
       "num": 89,
@@ -1425,7 +1777,11 @@
       "docs_path": "papers/2020_GreatPreset/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_GreatPreset/full_text.md"
     },
     {
       "num": 90,
@@ -1441,7 +1797,11 @@
       "docs_path": "papers/2020_InnovatorsCatechism/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_InnovatorsCatechism/full_text.md"
     },
     {
       "num": 91,
@@ -1457,7 +1817,11 @@
       "docs_path": "papers/2020_NeuroscienceDecision/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_NeuroscienceDecision/full_text.md"
     },
     {
       "num": 92,
@@ -1473,7 +1837,11 @@
       "docs_path": "papers/2019_DennettExplained/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2019_DennettExplained/full_text.md"
     },
     {
       "num": 93,
@@ -1489,7 +1857,11 @@
       "docs_path": "papers/2019_PhDDissertation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2019_PhDDissertation/full_text.md"
     },
     {
       "num": 94,
@@ -1505,7 +1877,11 @@
       "docs_path": "papers/2019_AntConsciousness/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2019_AntConsciousness/full_text.md"
     },
     {
       "num": 95,
@@ -1521,7 +1897,11 @@
       "docs_path": "papers/2019_ForagerHydration/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2019_ForagerHydration/full_text.md"
     },
     {
       "num": 96,
@@ -1537,7 +1917,11 @@
       "docs_path": "papers/2018_ArgentineAnt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2018_ArgentineAnt/full_text.md"
     },
     {
       "num": 97,
@@ -1553,7 +1937,11 @@
       "docs_path": "papers/2018_MVEE/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2018_MVEE/full_text.md"
     },
     {
       "num": 98,
@@ -1569,7 +1957,11 @@
       "docs_path": "papers/2018_WoodliceAndMen/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2018_WoodliceAndMen/full_text.md"
     },
     {
       "num": 99,
@@ -1585,7 +1977,11 @@
       "docs_path": "papers/2018_PPPiP/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2018_PPPiP/full_text.md"
     },
     {
       "num": 100,
@@ -1601,7 +1997,11 @@
       "docs_path": "papers/2018_DopamineForaging/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2018_DopamineForaging/full_text.md"
     },
     {
       "num": 101,
@@ -1617,7 +2017,11 @@
       "docs_path": "papers/2017_MutAnts/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2017_MutAnts/full_text.md"
     },
     {
       "num": 102,
@@ -1633,7 +2037,11 @@
       "docs_path": "papers/2017_TwoLineages/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2017_TwoLineages/full_text.md"
     },
     {
       "num": 103,
@@ -1649,7 +2057,11 @@
       "docs_path": "papers/2016_AntGenetics/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2016_AntGenetics/full_text.md"
     },
     {
       "num": 104,
@@ -1665,7 +2077,11 @@
       "docs_path": "papers/2016_ForagingGene/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2016_ForagingGene/full_text.md"
     },
     {
       "num": 105,
@@ -1681,7 +2097,11 @@
       "docs_path": "papers/2016_NuclearStructure/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2016_NuclearStructure/full_text.md"
     },
     {
       "num": 106,
@@ -1697,7 +2117,11 @@
       "docs_path": "papers/2015_CryptoJews/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2015_CryptoJews/full_text.md"
     },
     {
       "num": 107,
@@ -1713,7 +2137,11 @@
       "docs_path": "papers/2015_EhrlichialInfection/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2015_EhrlichialInfection/full_text.md"
     },
     {
       "num": 108,
@@ -1729,7 +2157,11 @@
       "docs_path": "papers/2015_HoneyBeeEvolution/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2015_HoneyBeeEvolution/full_text.md"
     },
     {
       "num": 109,
@@ -1745,7 +2177,11 @@
       "docs_path": "papers/2026_EntoLinguistics/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_EntoLinguistics/full_text.md"
     },
     {
       "num": 110,
@@ -1761,7 +2197,11 @@
       "docs_path": "papers/2026_ActInfMetaAnalysis/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ActInfMetaAnalysis/full_text.md"
     },
     {
       "num": 111,
@@ -1777,7 +2217,11 @@
       "docs_path": "papers/2026_FocusedAttentionMeditation/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     },
     {
       "num": 112,
@@ -1793,7 +2237,11 @@
       "docs_path": "papers/2026_CognitiveCaseDiagrams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_CognitiveCaseDiagrams/full_text.md"
     },
     {
       "num": 113,
@@ -1809,7 +2257,11 @@
       "docs_path": "papers/2026_FEPLean/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_FEPLean/full_text.md"
     },
     {
       "num": 114,
@@ -1825,7 +2277,11 @@
       "docs_path": "papers/2020_FacilitatorsCatechism/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_FacilitatorsCatechism/full_text.md"
     },
     {
       "num": 115,
@@ -1841,7 +2297,11 @@
       "docs_path": "papers/2026_BlakeJiang/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_BlakeJiang/full_text.md"
     },
     {
       "num": 116,
@@ -1857,7 +2317,11 @@
       "docs_path": "papers/2026_CrescentCity/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_CrescentCity/full_text.md"
     },
     {
       "num": 117,
@@ -1873,7 +2337,11 @@
       "docs_path": "papers/2026_BiologyTextbook/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_BiologyTextbook/full_text.md"
     },
     {
       "num": 119,
@@ -1889,7 +2357,11 @@
       "docs_path": "papers/2026_PolicyEntanglementActive/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_PolicyEntanglementActive/full_text.md"
     },
     {
       "num": 120,
@@ -1905,7 +2377,11 @@
       "docs_path": "papers/2026_BoundedAutoResearchTiny/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_BoundedAutoResearchTiny/full_text.md"
     },
     {
       "num": 121,
@@ -1921,7 +2397,11 @@
       "docs_path": "papers/2026_ConvergenceAnalysisGradient/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ConvergenceAnalysisGradient/full_text.md"
     },
     {
       "num": 122,
@@ -1937,7 +2417,11 @@
       "docs_path": "papers/2026_EditorialQualityAt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_EditorialQualityAt/full_text.md"
     },
     {
       "num": 123,
@@ -1953,7 +2437,11 @@
       "docs_path": "papers/2026_TemplateApproachReproducible/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_TemplateApproachReproducible/full_text.md"
     },
     {
       "num": 124,
@@ -1969,7 +2457,11 @@
       "docs_path": "papers/2026_ActiveInferenceMulti/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ActiveInferenceMulti/full_text.md"
     },
     {
       "num": 125,
@@ -1985,7 +2477,11 @@
       "docs_path": "papers/2026_BeeStack/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_BeeStack/full_text.md"
     },
     {
       "num": 126,
@@ -2001,7 +2497,11 @@
       "docs_path": "papers/2026_WhenDoBugs/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_WhenDoBugs/full_text.md"
     },
     {
       "num": 127,
@@ -2017,7 +2517,11 @@
       "docs_path": "papers/2026_SelfImprovementAgent/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_SelfImprovementAgent/full_text.md"
     },
     {
       "num": 128,
@@ -2033,7 +2537,11 @@
       "docs_path": "papers/2025_BiofirmDevelopmentWith/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_BiofirmDevelopmentWith/full_text.md"
     },
     {
       "num": 129,
@@ -2049,7 +2557,11 @@
       "docs_path": "papers/2025_ConCatEnate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_ConCatEnate/full_text.md"
     },
     {
       "num": 130,
@@ -2065,7 +2577,11 @@
       "docs_path": "papers/2025_Graphspeak/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_Graphspeak/full_text.md"
     },
     {
       "num": 131,
@@ -2081,7 +2597,11 @@
       "docs_path": "papers/2025_BevCycPositPrimitive/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_BevCycPositPrimitive/full_text.md"
     },
     {
       "num": 132,
@@ -2097,7 +2617,11 @@
       "docs_path": "papers/2025_BeaconsPreEmulation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_BeaconsPreEmulation/full_text.md"
     },
     {
       "num": 133,
@@ -2113,7 +2637,11 @@
       "docs_path": "papers/2025_ConCatEnate2/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2025_ConCatEnate2/full_text.md"
     },
     {
       "num": 134,
@@ -2129,7 +2657,11 @@
       "docs_path": "papers/2024_PushPull/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2024_PushPull/full_text.md"
     },
     {
       "num": 135,
@@ -2145,7 +2677,11 @@
       "docs_path": "papers/2023_NaturalAIBased/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_NaturalAIBased/full_text.md"
     },
     {
       "num": 136,
@@ -2161,7 +2697,11 @@
       "docs_path": "papers/2023_ATLAS2/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_ATLAS2/full_text.md"
     },
     {
       "num": 137,
@@ -2177,7 +2717,11 @@
       "docs_path": "papers/2023_TranscriptActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_TranscriptActiveInference/full_text.md"
     },
     {
       "num": 138,
@@ -2193,7 +2737,11 @@
       "docs_path": "papers/2023_ModernNostrIndex/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_ModernNostrIndex/full_text.md"
     },
     {
       "num": 139,
@@ -2209,7 +2757,11 @@
       "docs_path": "papers/2023_SlidesIris/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2023_SlidesIris/full_text.md"
     },
     {
       "num": 140,
@@ -2225,7 +2777,11 @@
       "docs_path": "papers/2022_CanonicalNeuralNetworks/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_CanonicalNeuralNetworks/full_text.md"
     },
     {
       "num": 141,
@@ -2241,7 +2797,11 @@
       "docs_path": "papers/2022_InteroceptionAsModeling/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_InteroceptionAsModeling/full_text.md"
     },
     {
       "num": 142,
@@ -2257,7 +2817,11 @@
       "docs_path": "papers/2022_Transcript/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_Transcript/full_text.md"
     },
     {
       "num": 143,
@@ -2273,7 +2837,11 @@
       "docs_path": "papers/2022_WorkedExampleBayesian/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_WorkedExampleBayesian/full_text.md"
     },
     {
       "num": 144,
@@ -2289,7 +2857,11 @@
       "docs_path": "papers/2022_TranscriptDiscussions/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_TranscriptDiscussions/full_text.md"
     },
     {
       "num": 145,
@@ -2305,7 +2877,11 @@
       "docs_path": "papers/2022_TrackingPublicSensemaking/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2022_TrackingPublicSensemaking/full_text.md"
     },
     {
       "num": 146,
@@ -2321,7 +2897,11 @@
       "docs_path": "papers/2021_Transcript/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_Transcript/full_text.md"
     },
     {
       "num": 147,
@@ -2337,7 +2917,11 @@
       "docs_path": "papers/2021_CollaborativeWritingCatechism/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2021_CollaborativeWritingCatechism/full_text.md"
     },
     {
       "num": 148,
@@ -2353,7 +2937,11 @@
       "docs_path": "papers/2020_ReimaginingMaps/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_ReimaginingMaps/full_text.md"
     },
     {
       "num": 149,
@@ -2369,7 +2957,11 @@
       "docs_path": "papers/2020_InfiniteGamesInfinite/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2020_InfiniteGamesInfinite/full_text.md"
     },
     {
       "num": 150,
@@ -2385,7 +2977,11 @@
       "docs_path": "papers/2026_MusicNeverStopped/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_MusicNeverStopped/full_text.md"
     },
     {
       "num": 151,
@@ -2401,7 +2997,11 @@
       "docs_path": "papers/2026_DeterministicTestbedSelf/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_DeterministicTestbedSelf/full_text.md"
     },
     {
       "num": 152,
@@ -2417,7 +3017,11 @@
       "docs_path": "papers/2026_RecoveringLLMPersona/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_RecoveringLLMPersona/full_text.md"
     },
     {
       "num": 153,
@@ -2433,7 +3037,11 @@
       "docs_path": "papers/2026_Triplicate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_Triplicate/full_text.md"
     },
     {
       "num": 154,
@@ -2449,7 +3057,11 @@
       "docs_path": "papers/2026_TemplateTextbook/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_TemplateTextbook/full_text.md"
     },
     {
       "num": 155,
@@ -2465,7 +3077,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 156,
@@ -2481,7 +3097,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 157,
@@ -2497,7 +3117,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 158,
@@ -2513,7 +3137,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 159,
@@ -2529,7 +3157,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 160,
@@ -2545,7 +3177,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 161,
@@ -2561,7 +3197,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 162,
@@ -2577,7 +3217,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 163,
@@ -2593,7 +3237,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 164,
@@ -2609,7 +3257,11 @@
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": false,
+      "has_agents_md": false,
+      "has_readme": false,
+      "full_text_url": ""
     },
     {
       "num": 165,
@@ -2625,7 +3277,11 @@
       "docs_path": "papers/2026_ITrace/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ITrace/full_text.md"
     },
     {
       "num": 166,
@@ -2641,7 +3297,11 @@
       "docs_path": "papers/2026_DemoCreate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_DemoCreate/full_text.md"
     },
     {
       "num": 167,
@@ -2657,7 +3317,11 @@
       "docs_path": "papers/2026_ENTO/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ENTO/full_text.md"
     },
     {
       "num": 168,
@@ -2673,7 +3337,11 @@
       "docs_path": "papers/2026_GeneralizedNotationNotationGNN/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     },
     {
       "num": 169,
@@ -2689,7 +3357,11 @@
       "docs_path": "papers/2026_COGANT/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_COGANT/full_text.md"
     },
     {
       "num": 170,
@@ -2705,7 +3377,11 @@
       "docs_path": "papers/2026_AGEINT/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_AGEINT/full_text.md"
     },
     {
       "num": 171,
@@ -2721,7 +3397,11 @@
       "docs_path": "papers/2026_PolicyDistillationAs/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_PolicyDistillationAs/full_text.md"
     },
     {
       "num": 172,
@@ -2737,7 +3417,11 @@
       "docs_path": "papers/2026_TemplateMadlib/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_TemplateMadlib/full_text.md"
     },
     {
       "num": 173,
@@ -2753,7 +3437,11 @@
       "docs_path": "papers/2026_CaliforniaPublicRecords/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_CaliforniaPublicRecords/full_text.md"
     },
     {
       "num": 174,
@@ -2769,7 +3457,11 @@
       "docs_path": "papers/2026_CogSecSkills/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_CogSecSkills/full_text.md"
     },
     {
       "num": 175,
@@ -2785,7 +3477,11 @@
       "docs_path": "papers/2026_RealizingEmptiness/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_RealizingEmptiness/full_text.md"
     },
     {
       "num": 176,
@@ -2801,7 +3497,11 @@
       "docs_path": "papers/2026_LivingMetaAnalysis/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_LivingMetaAnalysis/full_text.md"
     },
     {
       "num": 177,
@@ -2817,7 +3517,11 @@
       "docs_path": "papers/2026_RefinementGold/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_RefinementGold/full_text.md"
     },
     {
       "num": 178,
@@ -2833,7 +3537,11 @@
       "docs_path": "papers/2026_AlphaCOGANT/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_AlphaCOGANT/full_text.md"
     },
     {
       "num": 179,
@@ -2849,7 +3557,11 @@
       "docs_path": "papers/2026_MappingWilliamBlake/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_MappingWilliamBlake/full_text.md"
     },
     {
       "num": 180,
@@ -2865,7 +3577,11 @@
       "docs_path": "papers/2026_SortitionUpstreamNTQR/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_SortitionUpstreamNTQR/full_text.md"
     },
     {
       "num": 181,
@@ -2881,7 +3597,11 @@
       "docs_path": "papers/2026_ExploratoryDataAnalysis/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ExploratoryDataAnalysis/full_text.md"
     },
     {
       "num": 182,
@@ -2897,7 +3617,11 @@
       "docs_path": "papers/2026_DomainLanguageSpecifying/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_DomainLanguageSpecifying/full_text.md"
     },
     {
       "num": 183,
@@ -2913,7 +3637,11 @@
       "docs_path": "papers/2026_EntomologicalLaw/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_EntomologicalLaw/full_text.md"
     },
     {
       "num": 184,
@@ -2929,7 +3657,11 @@
       "docs_path": "papers/2026_ShapeBetween/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ShapeBetween/full_text.md"
     },
     {
       "num": 185,
@@ -2945,7 +3677,11 @@
       "docs_path": "papers/2026_AutopoieticProjectGeneration/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_AutopoieticProjectGeneration/full_text.md"
     },
     {
       "num": 186,
@@ -2961,7 +3697,11 @@
       "docs_path": "papers/2026_TemplatePitchDeck/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_TemplatePitchDeck/full_text.md"
     },
     {
       "num": 187,
@@ -2977,7 +3717,11 @@
       "docs_path": "papers/2026_ReproducibleLiteratureSynthesis/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ReproducibleLiteratureSynthesis/full_text.md"
     },
     {
       "num": 188,
@@ -2993,7 +3737,11 @@
       "docs_path": "papers/2026_RegisteredReportTemplate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_RegisteredReportTemplate/full_text.md"
     },
     {
       "num": 189,
@@ -3009,7 +3757,11 @@
       "docs_path": "papers/2026_RedactedReportTemplate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_RedactedReportTemplate/full_text.md"
     },
     {
       "num": 190,
@@ -3025,7 +3777,11 @@
       "docs_path": "papers/2026_PoolsRulesTools/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_PoolsRulesTools/full_text.md"
     },
     {
       "num": 191,
@@ -3041,7 +3797,11 @@
       "docs_path": "papers/2026_IllegalStatesMostly/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_IllegalStatesMostly/full_text.md"
     },
     {
       "num": 192,
@@ -3057,7 +3817,11 @@
       "docs_path": "papers/2026_DataDescriptorTemplate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_DataDescriptorTemplate/full_text.md"
     },
     {
       "num": 193,
@@ -3073,7 +3837,11 @@
       "docs_path": "papers/2026_TemplateApproachReproducible2/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_TemplateApproachReproducible2/full_text.md"
     },
     {
       "num": 194,
@@ -3089,7 +3857,11 @@
       "docs_path": "papers/2026_PriorCognitiveArt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true
+      "has_images": true,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_PriorCognitiveArt/full_text.md"
     },
     {
       "num": 195,
@@ -3105,7 +3877,11 @@
       "docs_path": "papers/2026_ActiveFractalRabbit/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     },
     {
       "num": 196,
@@ -3121,7 +3897,11 @@
       "docs_path": "papers/2026_FourfoldVision/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     },
     {
       "num": 197,
@@ -3137,7 +3917,11 @@
       "docs_path": "papers/2026_DuckRabbit/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     },
     {
       "num": 198,
@@ -3153,7 +3937,11 @@
       "docs_path": "papers/2026_SynthOBSFractiSynth/",
       "has_paper_folder": true,
       "has_full_text": false,
-      "has_images": false
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": ""
     }
   ]
 }

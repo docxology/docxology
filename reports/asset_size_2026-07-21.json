@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-21T20:55:20Z",
+  "generated_at": "2026-07-21T21:44:32Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 85,
   "warnings": 0,
-  "total_bytes": 13433060,
+  "total_bytes": 13899464,
   "largest": [
     {
       "path": "data/videos.json",
@@ -36,8 +36,22 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 325416,
+      "bytes": 325399,
       "budget_bytes": 5000000,
+      "ok": true
+    },
+    {
+      "path": "publications.html",
+      "kind": "html",
+      "bytes": 308715,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "data/publications-ld.json",
+      "kind": "json-data",
+      "bytes": 291076,
+      "budget_bytes": 4000000,
       "ok": true
     },
     {
@@ -57,7 +71,7 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 245312,
+      "bytes": 274227,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -92,15 +106,15 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 138337,
+      "bytes": 161097,
       "budget_bytes": 500000,
       "ok": true
     },
     {
-      "path": "publications.html",
-      "kind": "html",
-      "bytes": 130526,
-      "budget_bytes": 500000,
+      "path": "data/works.json",
+      "kind": "json-data",
+      "bytes": 137266,
+      "budget_bytes": 4000000,
       "ok": true
     },
     {
@@ -129,20 +143,6 @@
       "kind": "hero-art",
       "bytes": 121830,
       "budget_bytes": 320000,
-      "ok": true
-    },
-    {
-      "path": "assets/hero-art/ant-head.webp",
-      "kind": "hero-art",
-      "bytes": 113506,
-      "budget_bytes": 320000,
-      "ok": true
-    },
-    {
-      "path": "data/publications-ld.json",
-      "kind": "json-data",
-      "bytes": 112887,
-      "budget_bytes": 4000000,
       "ok": true
     }
   ],

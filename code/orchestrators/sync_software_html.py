@@ -56,6 +56,15 @@ def load_github_counts() -> dict[str, int]:
     return {k: v for k, v in counts.items() if isinstance(v, int)}
 
 
+def load_github_repos_by_url() -> dict[str, dict]:
+    """Map each repository html_url to its full inventory record (license, dates, topics)."""
+    if not GITHUB_REPOSITORIES_JSON.is_file():
+        return {}
+    data = json.loads(GITHUB_REPOSITORIES_JSON.read_text(encoding="utf-8"))
+    repos = data.get("repositories", data if isinstance(data, list) else [])
+    return {(r.get("html_url") or "").rstrip("/"): r for r in repos if r.get("html_url")}
+
+
 def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
     docx = [r for r in rows if r.is_docxology]
     aii = [r for r in rows if not r.is_docxology]
@@ -74,9 +83,10 @@ def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[Soft
     return docx, aii
 
 
-def main_entity_object(row: SoftwareRow) -> dict:
+def main_entity_object(row: SoftwareRow, repos_by_url: dict[str, dict] | None = None) -> dict:
     obj: dict = {
         "@type": "SoftwareSourceCode",
+        "@id": f"{(row.url or '').rstrip('/')}#software",
         "name": row.name,
         "description": description_plain(row.description_raw),
         "codeRepository": row.url,
@@ -84,6 +94,19 @@ def main_entity_object(row: SoftwareRow) -> dict:
     }
     if row.language:
         obj["programmingLanguage"] = row.language
+    repo = (repos_by_url or {}).get((row.url or "").rstrip("/"))
+    if repo:
+        spdx = repo.get("license")
+        if spdx and spdx not in {"NOASSERTION", "NONE"}:
+            obj["license"] = f"https://spdx.org/licenses/{spdx}.html"
+        if repo.get("created_at"):
+            obj["dateCreated"] = repo["created_at"]
+        modified = repo.get("pushed_at") or repo.get("updated_at")
+        if modified:
+            obj["dateModified"] = modified
+        topics = repo.get("topics")
+        if isinstance(topics, list) and topics:
+            obj["keywords"] = ", ".join(topics)
     zenodo = zenodo_url(row.description_raw)
     if zenodo:
         obj["sameAs"] = zenodo
@@ -99,7 +122,8 @@ def collection_page_description(docx_count: int, aii_count: int) -> str:
 
 def build_collection_page(rows: list[SoftwareRow]) -> dict:
     docx, aii = split_rows(rows)
-    me = [main_entity_object(r) for r in rows]
+    repos_by_url = load_github_repos_by_url()
+    me = [main_entity_object(r, repos_by_url) for r in rows]
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
