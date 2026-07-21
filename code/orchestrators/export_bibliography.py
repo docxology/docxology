@@ -255,6 +255,7 @@ def render_outputs(works: list[Work], generated_at: str | None = None) -> dict[P
     works_json = {
         "generated_at": generated_at or generated_timestamp(),
         "source": "pages/BIBLIOGRAPHY.md",
+        "schema_ref": "/data/agent-index.json#schemas/Work",
         "count": len(works),
         "works": [asdict(w) for w in works],
     }

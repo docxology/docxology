@@ -561,6 +561,7 @@ def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: boo
             {
                 "generated_at": generated_at,
                 "source": "pages/SOFTWARE.md",
+                "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
                 "count": len(software),
                 "repositories": software,
             },
@@ -569,15 +570,25 @@ def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: boo
         )
         + "\n",
         REPO_ROOT / "data" / "people.json": json.dumps(
-            {"generated_at": generated_at, "people": PEOPLE}, indent=2, ensure_ascii=False
+            {"generated_at": generated_at, "schema_ref": "/data/agent-index.json#schemas/Person", "people": PEOPLE},
+            indent=2,
+            ensure_ascii=False,
         )
         + "\n",
         REPO_ROOT / "data" / "organizations.json": json.dumps(
-            {"generated_at": generated_at, "organizations": ORGANIZATIONS}, indent=2, ensure_ascii=False
+            {
+                "generated_at": generated_at,
+                "schema_ref": "/data/agent-index.json#schemas/Organization",
+                "organizations": ORGANIZATIONS,
+            },
+            indent=2,
+            ensure_ascii=False,
         )
         + "\n",
         REPO_ROOT / "data" / "claims.json": json.dumps(
-            {"generated_at": generated_at, "claims": claims}, indent=2, ensure_ascii=False
+            {"generated_at": generated_at, "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence", "claims": claims},
+            indent=2,
+            ensure_ascii=False,
         )
         + "\n",
     }

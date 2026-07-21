@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T21:44:27Z",
+  "generated_at": "2026-07-21T22:07:25Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "447c0ee14cc5969789ebd3b8c7abf597b16bdf49e8542c68b244e2172a680285",
+      "sha256": "bfac5d763ac167e4a2f2c8a3515bde81293db253a80ae1b43b44269e38faca22",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 137266,
-          "sha256": "91a4e806f06a26837f172e4d90ba84cc77853376bb0b5c3e969749556b312faf"
+          "bytes": 137321,
+          "sha256": "bbc5ddfcb2df6894d168d1223d8cf81ed92948b7ea1266a0b7230d083043d862"
         },
         {
           "path": "data/software.json",
-          "bytes": 62616,
-          "sha256": "27e8b91b6fc038ef9700f7bac89084ebdd4cc64244d9bad65c1f61f127d50d0a"
+          "bytes": 62685,
+          "sha256": "c97cb0f2778726fa391b1ec54fd2962ed4867d6161870caebb356a3f490148d9"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -112,8 +112,8 @@
         },
         {
           "path": "data/claims.json",
-          "bytes": 11846,
-          "sha256": "3aeace4b445b85b46a3fc3cbad17704b513123a5d3e7865633e82323c20f9713"
+          "bytes": 11914,
+          "sha256": "cc1e6c3f2254119b7ab4ecb2c6c552fcd31af8ed3aa3a899785bd210090a48f2"
         },
         {
           "path": "data/github-repositories.json",

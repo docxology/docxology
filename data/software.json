@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-07-21T20:55:15Z",
+  "generated_at": "2026-07-21T22:07:25Z",
   "source": "pages/SOFTWARE.md",
+  "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
   "count": 131,
   "repositories": [
     {
