@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T12:51:10Z",
-  "source_commit_at_generation": "36521488adbd1bc624d351f3bddbfdca13bd24d8",
+  "generated_at": "2026-07-22T12:56:03Z",
+  "source_commit_at_generation": "a0fbdeb7f5e43b874fd7a164afb30a95279f90d9",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 756220539,
+    "source_bytes": 758320338,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4320,
-    "artifact_bytes": 756981831
+    "artifact_file_count": 4327,
+    "artifact_bytes": 759082741
   },
   "included_files": [
     {
@@ -98,6 +98,11 @@
       "path": "about.html",
       "bytes": 1968,
       "sha256": "8b35bf6cb2105595f42c2e6b3aaec692dc998daaee1bbbdd42ab57b2135813cd"
+    },
+    {
+      "path": "agent-verify.html",
+      "bytes": 799,
+      "sha256": "3778c1d9e818e6ca19a7bbaa8a43a915d0177a7c8dc4fde2781f33c78d5da9db"
     },
     {
       "path": "apple-touch-icon.png",
@@ -13750,6 +13755,11 @@
       "sha256": "125efd2bed6336cafcbd5432fe0dd0a5116aa07ab8d62fcafb3f4ef831695c53"
     },
     {
+      "path": "reports.html",
+      "bytes": 780,
+      "sha256": "33b521ab95bbe334bdac7dd486d0931401cb573640238c05091599ea17cff26a"
+    },
+    {
       "path": "reports/accessibility_static_2026-05-13.json",
       "bytes": 9967,
       "sha256": "3d8ff6c3db4efa50521d390694c04e8fab022240a461bfe5fb811592c14d45a6"
@@ -13903,6 +13913,11 @@
       "path": "reports/accessibility_static_2026-07-21.json",
       "bytes": 1031737,
       "sha256": "afcafdaff437fda2607d3b6261eab7fdd2e7ccff0cf9701238fa594adcc88fd0"
+    },
+    {
+      "path": "reports/accessibility_static_2026-07-22.json",
+      "bytes": 2072450,
+      "sha256": "b10eb71316d13f3efeb92f8c40434fcdf94936567ac48588a31c51b80d93113e"
     },
     {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
@@ -14093,6 +14108,11 @@
       "path": "reports/asset_size_2026-07-21.json",
       "bytes": 3329,
       "sha256": "138df1aaa3f7aea83e8340981c1403834136b195e9db538004119caab6bdfd38"
+    },
+    {
+      "path": "reports/asset_size_2026-07-22.json",
+      "bytes": 3329,
+      "sha256": "61b3d9c2bb84b254c106e187778b4d5bea0c327a65829dd9a84276bc3497e4a1"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -14690,6 +14710,16 @@
       "sha256": "8f1eb5fe2b39533321bb3de48eb0913d29fcafce41570b069b87ead751f2e702"
     },
     {
+      "path": "reports/source_coverage_2026-07-22.json",
+      "bytes": 17783,
+      "sha256": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f"
+    },
+    {
+      "path": "reports/source_coverage_2026-07-22.md",
+      "bytes": 4658,
+      "sha256": "8f1eb5fe2b39533321bb3de48eb0913d29fcafce41570b069b87ead751f2e702"
+    },
+    {
       "path": "reports/visual-qa/2026-07-18/art-desktop.png",
       "bytes": 4046421,
       "sha256": "0eb50cd000df9bea681bde60f9ddffcfbf7975f4acd3ca56e582fcb8970279d2"
@@ -14937,7 +14967,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 238561,
-      "sha256": "edbe897eac949d9e436a02a874b233c2667bacb08501cae17a710fdd0851436f"
+      "sha256": "207704eb0841554d05e77e7ac420259118809fc798d764a37f7a0dfb8b0464c8"
     },
     {
       "path": "software.html",
@@ -21615,6 +21645,10 @@
     },
     {
       "path": "data/release-integrity.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/pages_artifact_growth_2026-07-22.json",
       "role": "public control metadata"
     }
   ],
