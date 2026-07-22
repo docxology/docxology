@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""Validate publication SKILL.md files for agent-facing operability.
+
+Cross-checks `papers/*/SKILL.md` against `data/works.json` docs_path references
+(missing or unreferenced folders), bounds description length, and rejects
+legacy-host URLs. `--check` runs inside `validate_repo.py`.
+"""
 from __future__ import annotations
 
 import argparse

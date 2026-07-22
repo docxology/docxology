@@ -404,6 +404,31 @@ ARTIFACTS = [
     },
 ]
 
+# Orchestrators that do not produce a matrix artifact row: drivers, auditors,
+# network submitters, maintenance tools, and completed one-shot migrations.
+# Documented in GENERATED.md so every code/orchestrators/*.py script is
+# discoverable from the authoritative matrix. MD-only: data/generated-manifest.json
+# keeps its frozen {generated_at, artifacts} schema for downstream consumers.
+UTILITIES = [
+    ("regenerate_all.py", "Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py", "driver"),
+    ("validate_repo.py", "Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants", "gate"),
+    ("build_generated_manifest.py", "Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file", "meta"),
+    ("audit_publication_skills.py", "Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py", "audit"),
+    ("build_reconciliation_report.py", "Builds the public-source reconciliation report from local indexes and the freshness snapshot", "audit"),
+    ("check_zenodo_uncatalogued.py", "Diffs live Zenodo records under the profile ORCID against the curated bibliography", "audit"),
+    ("gsc_followup_preflight.py", "Prints the pre-GSC-followup checklist (sitemap, priority URLs, validation rows); see docs/seo/gsc-followup.md", "audit"),
+    ("indexnow_urls.py", "Emits the IndexNow URL list from the sitemap index-priority policy", "seo"),
+    ("submit_indexnow.py", "Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver)", "seo"),
+    ("ensure_social_meta.py", "Idempotently adds Twitter Card + og:image:alt tags to the hand-maintained pages", "maintenance"),
+    ("prune_old_reports.py", "Prunes superseded dated QA screenshot sets under reports/ (keeps cited provenance)", "maintenance"),
+    ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
+    ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
+    ("generate_citation_cff.py", "Generates per-paper CITATION.cff files from papers/*/metadata.json", "maintenance"),
+    ("deploy_seo_security.py", "One-shot migration: SEO + security head rollout across indexable pages (completed; kept for provenance)", "one-shot"),
+    ("migrate_inline_handlers.py", "One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance)", "one-shot"),
+    ("optimize_font_loading.py", "One-shot migration: legacy Google Fonts links to self-hosted loading (completed; kept for provenance)", "one-shot"),
+]
+
 
 def render_json(generated_at: str | None = None) -> str:
     generated_at = generated_at or generated_timestamp()
@@ -423,6 +448,21 @@ def render_md() -> str:
         outputs = "<br>".join(f"`{value}`" for value in item["outputs"])
         sources = "<br>".join(f"`{value}`" for value in item["sources"])
         lines.append(f"| {item['name']} | {outputs} | {sources} | `{item['command']}` |")
+    lines.extend(
+        [
+            "",
+            "## Maintenance & Utility Orchestrators",
+            "",
+            "Scripts under `code/orchestrators/` that do not produce a matrix artifact row:"
+            " rebuild drivers, gates, audits, network submitters, and completed one-shot"
+            " migrations. Full source-layer map: `code/README.md`.",
+            "",
+            "| Script | Role | Purpose |",
+            "| --- | --- | --- |",
+        ]
+    )
+    for script, purpose, role in UTILITIES:
+        lines.append(f"| `code/orchestrators/{script}` | {role} | {purpose} |")
     lines.extend(
         [
             "",

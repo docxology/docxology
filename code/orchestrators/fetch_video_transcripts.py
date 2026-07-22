@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""Fetch YouTube captions into `data/video-transcripts/*.txt`.
+
+Downloads VTT captions via yt-dlp into a temp dir, normalizes them to plain
+text, and writes one transcript per video id. `--channel` selects
+personal/institute/all.
+"""
 from __future__ import annotations
 
 import argparse

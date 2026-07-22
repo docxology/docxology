@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T12:56:03Z",
-  "source_commit_at_generation": "a0fbdeb7f5e43b874fd7a164afb30a95279f90d9",
+  "generated_at": "2026-07-22T15:21:19Z",
+  "source_commit_at_generation": "cbeff57733ee44aed6392b3bc156687fe1ec4c51",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 758320338,
+    "source_bytes": 758324748,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4327,
-    "artifact_bytes": 759082741
+    "artifact_bytes": 759087151
   },
   "included_files": [
     {
@@ -5311,8 +5311,8 @@
     },
     {
       "path": "code/orchestrators/audit_publication_skills.py",
-      "bytes": 4255,
-      "sha256": "42cfdaac161e0c35b0456d1e5421be061c1288e0fe2d50450ca799dc66ab1ba7"
+      "bytes": 4543,
+      "sha256": "f65ba9138a89bc5168f2abd4eb9e0850f56de9a7596ed1538e5b68e62f984f4a"
     },
     {
       "path": "code/orchestrators/batch_enrich_metadata.py",
@@ -5376,8 +5376,8 @@
     },
     {
       "path": "code/orchestrators/build_generated_manifest.py",
-      "bytes": 19902,
-      "sha256": "c59d32ab6a159eb1c891ddc4688398117e1c043dd1805e7a115dab596e5f3403"
+      "bytes": 23229,
+      "sha256": "1a1d51d1befe3daf7a4b88d01c47f8bbbc467f90a9ad40f53cb8a331fb50947e"
     },
     {
       "path": "code/orchestrators/build_github_inventory.py",
@@ -5431,8 +5431,8 @@
     },
     {
       "path": "code/orchestrators/build_video_pages.py",
-      "bytes": 29552,
-      "sha256": "23eebc7d10f43ff16673e21dde78695bd543077ee131b875dced9616c364a13c"
+      "bytes": 29814,
+      "sha256": "e6f647d1dd2d86e57cb646f3eb3b69b28081cab3f9e972b207de1ca22500c3bc"
     },
     {
       "path": "code/orchestrators/build_work_pages.py",
@@ -5486,8 +5486,8 @@
     },
     {
       "path": "code/orchestrators/fetch_video_transcripts.py",
-      "bytes": 4949,
-      "sha256": "e66f7c03714def8cbee573e05be0fe1ac9f535e2660f75dc4f7ee4335283bf96"
+      "bytes": 5183,
+      "sha256": "4bb3fbe8b9dbe51db7daeb3e9db8151bb36dfe05edac35d3f5757c16dec09e9a"
     },
     {
       "path": "code/orchestrators/fetch_youtube_data.py",
@@ -6021,8 +6021,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 3983,
-      "sha256": "a076ee20b95f108a7a631bb43fa33b16e66ca3cdb7fd5839f66b96d721f53d24"
+      "bytes": 4282,
+      "sha256": "efdbaeddc1619d1572eee343b85b28e4c8731c1f7cf89034e17ee526a2eae872"
     },
     {
       "path": "docs/design/animations.md",

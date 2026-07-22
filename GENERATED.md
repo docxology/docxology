@@ -51,6 +51,30 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Image sitemap | `sitemap-images.xml` | `data/artworks.json`<br>`art/*`<br>`code/orchestrators/build_image_sitemap.py` | `python3 code/orchestrators/build_image_sitemap.py` |
 | Visual QA | `reports/visual-qa/2026-07-18/*.png`<br>`reports/visual-qa/2026-07-18/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
 
+## Maintenance & Utility Orchestrators
+
+Scripts under `code/orchestrators/` that do not produce a matrix artifact row: rebuild drivers, gates, audits, network submitters, and completed one-shot migrations. Full source-layer map: `code/README.md`.
+
+| Script | Role | Purpose |
+| --- | --- | --- |
+| `code/orchestrators/regenerate_all.py` | driver | Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py |
+| `code/orchestrators/validate_repo.py` | gate | Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants |
+| `code/orchestrators/build_generated_manifest.py` | meta | Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file |
+| `code/orchestrators/audit_publication_skills.py` | audit | Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py |
+| `code/orchestrators/build_reconciliation_report.py` | audit | Builds the public-source reconciliation report from local indexes and the freshness snapshot |
+| `code/orchestrators/check_zenodo_uncatalogued.py` | audit | Diffs live Zenodo records under the profile ORCID against the curated bibliography |
+| `code/orchestrators/gsc_followup_preflight.py` | audit | Prints the pre-GSC-followup checklist (sitemap, priority URLs, validation rows); see docs/seo/gsc-followup.md |
+| `code/orchestrators/indexnow_urls.py` | seo | Emits the IndexNow URL list from the sitemap index-priority policy |
+| `code/orchestrators/submit_indexnow.py` | seo | Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver) |
+| `code/orchestrators/ensure_social_meta.py` | maintenance | Idempotently adds Twitter Card + og:image:alt tags to the hand-maintained pages |
+| `code/orchestrators/prune_old_reports.py` | maintenance | Prunes superseded dated QA screenshot sets under reports/ (keeps cited provenance) |
+| `code/orchestrators/extract_paper_texts.py` | maintenance | Extracts full text and images from paper PDFs into the papers/ tree |
+| `code/orchestrators/fetch_youtube_data.py` | fetch | Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network) |
+| `code/orchestrators/generate_citation_cff.py` | maintenance | Generates per-paper CITATION.cff files from papers/*/metadata.json |
+| `code/orchestrators/deploy_seo_security.py` | one-shot | One-shot migration: SEO + security head rollout across indexable pages (completed; kept for provenance) |
+| `code/orchestrators/migrate_inline_handlers.py` | one-shot | One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance) |
+| `code/orchestrators/optimize_font_loading.py` | one-shot | One-shot migration: legacy Google Fonts links to self-hosted loading (completed; kept for provenance) |
+
 ## Validation
 
 Run `python3 code/orchestrators/validate_repo.py` before declaring the generated layer current.

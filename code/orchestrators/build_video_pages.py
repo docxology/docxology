@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""Build `videos/*.html` plus `data/videos.json` and `data/videos-index.json`.
+
+Sources: cached YouTube channel payloads (`code/data/youtube_*.json`), the
+transcript cache (`data/video-transcripts/*.txt`), `data/works.json`, and
+`data/work-enrichment.json`.
+"""
 from __future__ import annotations
 
 import argparse

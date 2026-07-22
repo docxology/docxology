@@ -25,6 +25,8 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **SEO** | [`seo/gsc-followup.md`](seo/gsc-followup.md) | Google Search Console manual follow-up runbook |
 | **Design** | [`design/design-system.md`](design/design-system.md) | Color/type tokens, accessibility, layout, nav source-of-truth |
 | **Design** | [`design/components/`](design/components/README.md) | Local component-preview library; `/design-sync` source for the Claude Design project |
+| **Design** | [`design/animations.md`](design/animations.md) | Animation system: scroll-reveal, reduced-motion policy, interaction transitions |
+| **Design** | [`design/components/tts.md`](design/components/tts.md) | TTS controls: Web Speech read-aloud panel, voice/speed, paragraph highlighting |
 | **Security** | [`security/security-posture.md`](security/security-posture.md) | Static-site security posture, XSS, CSP, responsible disclosure |
 | **Releases** | [`releases/2026-05-discovery-layer.md`](releases/2026-05-discovery-layer.md) | Archived 2026-05 discovery-layer snapshot |
 
