@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T15:22:21Z",
-  "source_commit_at_generation": "2732dbf26649349338aa4db8e0e6b47076046abf",
+  "generated_at": "2026-07-22T15:34:54Z",
+  "source_commit_at_generation": "049a1e9290c0f1e5b17f5c96108377457b2e53bf",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 758330299,
+    "source_bytes": 757289888,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4328,
-    "artifact_bytes": 759092851
+    "artifact_bytes": 758052440
   },
   "included_files": [
     {
@@ -5301,8 +5301,8 @@
     },
     {
       "path": "code/orchestrators/accessibility_audit.py",
-      "bytes": 8695,
-      "sha256": "11c2df261943015b50377fd8a991f0c5012b6e8a3d917f33899f26d4f3a15f7e"
+      "bytes": 8929,
+      "sha256": "2235e9350448f7bdd28ad0ee773c0de751bedba6e71e1da494d5e24a737f40ae"
     },
     {
       "path": "code/orchestrators/add_zenodo_only.py",
@@ -5461,8 +5461,8 @@
     },
     {
       "path": "code/orchestrators/deploy_seo_security.py",
-      "bytes": 6782,
-      "sha256": "b7476a6856a1b3e249469dd84502379ad41fb63b8508ee3763421c05ff4b6413"
+      "bytes": 6791,
+      "sha256": "88b642a8424d4bf88d185cfbb7a844030a45c36c19b89af93cfb54029c20c09a"
     },
     {
       "path": "code/orchestrators/ensure_agent_navigation.py",
@@ -5596,8 +5596,8 @@
     },
     {
       "path": "code/orchestrators/validate_repo.py",
-      "bytes": 13540,
-      "sha256": "8d82f898745426bf2fb87de88bdc06c1ba7859bc3797c2e54cfc464e2d393d6a"
+      "bytes": 13590,
+      "sha256": "f985a68184a1c5018b987eb2887ba06ae494112f88c6c666eeca160976d90e54"
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
@@ -5646,8 +5646,8 @@
     },
     {
       "path": "code/src/seo_invariants.py",
-      "bytes": 10869,
-      "sha256": "b68e7ddfce2b8bdfdc02450ce611eb93c4ccdf67970ccb5afe8c1cc321a46bea"
+      "bytes": 10878,
+      "sha256": "af26588c0445a0624ff110c4efd67683f7062cabe70862f92cd3111738bd1845"
     },
     {
       "path": "code/src/site_facts.py",
@@ -13921,8 +13921,8 @@
     },
     {
       "path": "reports/accessibility_static_2026-07-22.json",
-      "bytes": 2072450,
-      "sha256": "b10eb71316d13f3efeb92f8c40434fcdf94936567ac48588a31c51b80d93113e"
+      "bytes": 1031737,
+      "sha256": "21e60e4c682dd1b932176ae5a695e9031bcf9566a92c45f03533565b65df8c7d"
     },
     {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
