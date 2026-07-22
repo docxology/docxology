@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T20:55:25Z",
+  "generated_at": "2026-07-22T12:48:23Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -308,7 +308,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-21.json",
+      "url": "/reports/accessibility_static_2026-07-22.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -357,7 +357,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-21.json",
+      "url": "/reports/asset_size_2026-07-22.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
