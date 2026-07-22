@@ -173,7 +173,10 @@ def render_for_write(path: Path) -> str:
 
 def render(generated_at: str | None = None) -> str:
     pages = []
-    excluded_parts = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"}
+    # "_site" is the untracked local Pages-artifact assembly (build_pages_artifact.py);
+    # including it makes the committed report depend on local build state and go
+    # stale in CI, which checks out tracked files only.
+    excluded_parts = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook", "_site"}
     for path in sorted(REPO_ROOT.rglob("*.html")):
         if excluded_parts.intersection(path.parts):
             continue

@@ -187,7 +187,7 @@ def main() -> None:
     html_files = sorted(
         path
         for path in REPO_ROOT.rglob("*.html")
-        if not ({".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"} & set(path.parts))
+        if not ({".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook", "_site"} & set(path.parts))
     )
     total_changes = 0
 

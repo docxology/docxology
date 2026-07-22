@@ -208,7 +208,7 @@ def check_work_descriptions(repo_root: Path) -> list[str]:
 def check_public_html_security(repo_root: Path) -> list[str]:
     """Check security metadata and crawler-visible JSON-LD across public HTML."""
     errors: list[str] = []
-    excluded = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook"}
+    excluded = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook", "_site"}
     for path in sorted(repo_root.rglob("*.html")):
         if excluded.intersection(path.parts):
             continue

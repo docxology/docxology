@@ -175,7 +175,7 @@ def validate_json_ld() -> None:
     pattern = re.compile(r"<script\s+type=[\"']application/ld\+json[\"']>(.*?)</script>", re.S | re.I)
     count = 0
     for path in sorted(REPO_ROOT.rglob("*.html")):
-        if ".git" in path.parts:
+        if ".git" in path.parts or "_site" in path.parts:
             continue
         text = path.read_text(encoding="utf-8")
         for block in pattern.findall(text):
@@ -200,7 +200,7 @@ def validate_local_links() -> None:
     files = list(REPO_ROOT.rglob("*.md")) + list(REPO_ROOT.rglob("*.html")) + [REPO_ROOT / "llms.txt"]
     missing: list[str] = []
     for path in files:
-        if ".git" in path.parts:
+        if ".git" in path.parts or "_site" in path.parts:
             continue
         # full_text.md files are extracted paper texts with internal academic references
         # (to figures, source code, manuscript sections) that don't exist as local files.
