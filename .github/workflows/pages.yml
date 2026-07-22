@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Assemble bounded public artifact
         run: python3 code/orchestrators/build_pages_artifact.py --output _site --check-size --check-manifest
