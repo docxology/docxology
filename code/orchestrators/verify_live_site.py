@@ -402,6 +402,7 @@ def local_source_dirty() -> bool:
             if not line.strip():
                 continue
             path = line[3:].strip() if len(line) >= 3 else line.strip()
+            path = path.strip('"')
             if path == "_site" or path.startswith("_site/"):
                 continue
             return True

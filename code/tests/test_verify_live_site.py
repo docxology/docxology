@@ -131,6 +131,7 @@ def test_pages_built_is_not_deployment_pending():
     [
         ("?? _site/\n", False),
         ("?? _site/index.html\n", False),
+        ('?? "_site/art/name with spaces.json"\n', False),
         (" M README.md\n", True),
         ("?? _site/index.html\n M README.md\n", True),
     ],

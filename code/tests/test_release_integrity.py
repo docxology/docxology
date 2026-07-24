@@ -39,4 +39,5 @@ def test_incomplete_live_evidence_is_explicitly_pending():
 
 def test_preserved_local_site_output_does_not_count_as_a_release_change():
     assert not bri.has_release_changes("?? _site/")
+    assert not bri.has_release_changes('?? "_site/art/name with spaces.json"')
     assert bri.has_release_changes(" M SKILL.md\n?? reports/live.json")

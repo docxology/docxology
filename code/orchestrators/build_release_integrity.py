@@ -64,7 +64,7 @@ def has_release_changes(status_output: str) -> bool:
     for line in status_output.splitlines():
         if len(line) < 4:
             continue
-        path = line[3:].split(" -> ")[-1]
+        path = line[3:].split(" -> ")[-1].strip('"')
         if path != "_site" and not path.startswith("_site/"):
             return True
     return False
