@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-24T16:48:57Z",
-  "source_commit_at_generation": "ba2d065cbe03525d428821c00436b8a043bf7f3d",
+  "generated_at": "2026-07-24T16:57:25Z",
+  "source_commit_at_generation": "fe03e3910109c8aed98ff7811c997fed14a3d25d",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 758348665,
+    "source_bytes": 758349819,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4336,
-    "artifact_bytes": 759112364
+    "artifact_bytes": 759113518
   },
   "included_files": [
     {
@@ -5601,8 +5601,8 @@
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
-      "bytes": 21328,
-      "sha256": "140ae03e9cf6d46b84b6055d9d6cdfae60b9e855ea2fd5bf51cfc09299cd6ab3"
+      "bytes": 21908,
+      "sha256": "b29d61dd0b7b9de3e7ccc7ba6ab7590a246c5f23b0751962b411eeb28c646785"
     },
     {
       "path": "code/orchestrators/visual_qa.py",
@@ -5851,8 +5851,8 @@
     },
     {
       "path": "code/tests/test_verify_live_site.py",
-      "bytes": 9258,
-      "sha256": "71bf2a8bfa4a882fbaf47b11e480d3a6180458744e7f6b5c307adf8a220225a2"
+      "bytes": 9832,
+      "sha256": "81a101030fb599950badec69da905f1f84e993f7339f5fe3374d1be419a504da"
     },
     {
       "path": "code/tests/test_youtube_fetcher.py",
