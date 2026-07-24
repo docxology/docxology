@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "5f89ec5c46d2496bd1fca252cf264bbe327f153c",
+  "source_commit_at_generation": "8b786ab130ee8deac801c43d92e3759c4e835226",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -14,7 +14,7 @@
       "code/orchestrators/build_agent_index.py": "c3c58c58b4938910cd79fc0896528e066041f67af4e9e417d985833d32e3bd7d",
       "code/orchestrators/build_coverage_exceptions.py": "5e4e3a88d6d13aad804ccc4f9d45ba32c1dbb87ae0970c819042d3b1a221b6ad",
       "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
-      "code/orchestrators/verify_live_site.py": "b29d61dd0b7b9de3e7ccc7ba6ab7590a246c5f23b0751962b411eeb28c646785",
+      "code/orchestrators/verify_live_site.py": "f5c585f78a95a87981a605ccb4888f745fe903c4ed4219e54d4c0412ccf24bc9",
       "code/orchestrators/audit_assets.py": "619a43df77c146a482cefad120ba673ba7ce387f11edb6b5d2bf5b8a9de9f5dc",
       "code/src/public_integrity.py": "784d7fb7007bf2f4a2f0c2d178a4d157d80c647926c04d88a1c83854bc161da0"
     }
@@ -26,15 +26,15 @@
     "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
     "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "9d0a4939b8a6a75e624209106efd2fc9ccf867307ea0e03585ec4723511c82bd",
+    "data/agent-index.json": "e06715f4c6d7eb9045bb75f28ffdac054d75dc82377a5f4793760491af9ea4de",
     "data/generated-manifest.json": "25c853125c8f063f79c2177011d0d8ab862b7ee314f09e7f6190b04935f4635a",
-    "data/pages-artifact-manifest.json": "bc0742f0bf7dbeee013f5a76c2d00496ae62f686b92d466f6c999417ab2ad9fb"
+    "data/pages-artifact-manifest.json": "83e248c81e8992952f4b699bba677add1ab2a0720f7c2c0126ef34b347f63991"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "5f89ec5c46d2496bd1fca252cf264bbe327f153c",
+    "source_commit_at_generation": "8b786ab130ee8deac801c43d92e3759c4e835226",
     "artifact_file_count": 4336,
-    "artifact_bytes": 759113536,
+    "artifact_bytes": 759113720,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
@@ -46,8 +46,10 @@
     "verification_generated_at": "2026-07-24T17:03:46Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17",
-    "deployment_pending": false,
-    "deployment_pending_reasons": []
+    "deployment_pending": true,
+    "deployment_pending_reasons": [
+      "tracked release content differs from the deployed commit"
+    ]
   },
   "privacy": {
     "cv_public_integrity_errors": [],

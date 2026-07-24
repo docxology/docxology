@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-24T17:09:52Z",
-  "source_commit_at_generation": "5f89ec5c46d2496bd1fca252cf264bbe327f153c",
+  "generated_at": "2026-07-24T17:13:58Z",
+  "source_commit_at_generation": "8b786ab130ee8deac801c43d92e3759c4e835226",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 758349837,
+    "source_bytes": 758350021,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4336,
-    "artifact_bytes": 759113536
+    "artifact_bytes": 759113720
   },
   "included_files": [
     {
@@ -5411,8 +5411,8 @@
     },
     {
       "path": "code/orchestrators/build_release_integrity.py",
-      "bytes": 9520,
-      "sha256": "5c4488ded66ebe1183adb549cd4fa3c48f982bdeb64c32346f8a343574fee138"
+      "bytes": 9531,
+      "sha256": "45106aea9ebbba5058b18228b4015b29aaad246de352bfd58ffa42f5484ba96f"
     },
     {
       "path": "code/orchestrators/build_resume.py",
@@ -5601,8 +5601,8 @@
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
-      "bytes": 21908,
-      "sha256": "b29d61dd0b7b9de3e7ccc7ba6ab7590a246c5f23b0751962b411eeb28c646785"
+      "bytes": 21943,
+      "sha256": "f5c585f78a95a87981a605ccb4888f745fe903c4ed4219e54d4c0412ccf24bc9"
     },
     {
       "path": "code/orchestrators/visual_qa.py",
@@ -5791,8 +5791,8 @@
     },
     {
       "path": "code/tests/test_release_integrity.py",
-      "bytes": 1450,
-      "sha256": "f72286b5e5e626ff86a7a268097b6659da0ad2deac6dde6ce937b5a1731752cb"
+      "bytes": 1529,
+      "sha256": "1c10dc78d2e59f0684da8375eeaebcac2790ce4a8c2c0b73b6cd899f175728ee"
     },
     {
       "path": "code/tests/test_report_paths.py",
@@ -5851,8 +5851,8 @@
     },
     {
       "path": "code/tests/test_verify_live_site.py",
-      "bytes": 9832,
-      "sha256": "81a101030fb599950badec69da905f1f84e993f7339f5fe3374d1be419a504da"
+      "bytes": 9891,
+      "sha256": "bb4c8c3d6b0f6ca1e8e8c81bff142047f63a0af1ee080c2babeb86b4899f32a8"
     },
     {
       "path": "code/tests/test_youtube_fetcher.py",
