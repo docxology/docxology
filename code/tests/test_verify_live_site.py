@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 import sys
+from types import SimpleNamespace
 
 import pytest
 
@@ -123,6 +124,25 @@ def test_pages_build_states_are_deployment_pending(status):
 
 def test_pages_built_is_not_deployment_pending():
     assert not vl.is_pages_deployment_pending("built")
+
+
+@pytest.mark.parametrize(
+    ("status_output", "expected"),
+    [
+        ("?? _site/\n", False),
+        ("?? _site/index.html\n", False),
+        (" M README.md\n", True),
+        ("?? _site/index.html\n M README.md\n", True),
+    ],
+)
+def test_local_source_dirty_ignores_preserved_site_output(monkeypatch, status_output, expected):
+    monkeypatch.setattr(
+        vl.subprocess,
+        "run",
+        lambda *args, **kwargs: SimpleNamespace(returncode=0, stdout=status_output),
+    )
+
+    assert vl.local_source_dirty() is expected
 
 
 def test_count_fingerprint_ignores_generated_timestamp():

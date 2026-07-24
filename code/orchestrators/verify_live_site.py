@@ -380,7 +380,13 @@ def local_source_commit() -> str:
 
 
 def local_source_dirty() -> bool:
-    """Return whether uncommitted source changes can differ from Pages."""
+    """Return whether uncommitted source changes can differ from Pages.
+
+    ``_site/`` is an intentionally preserved local Pages build output and is
+    excluded by the release-integrity gate as well.  Treating it as source
+    drift would make a successful deployment look pending whenever a local
+    artifact had been assembled for inspection.
+    """
     try:
         proc = subprocess.run(
             ["git", "status", "--porcelain", "--untracked-files=all"],
@@ -390,7 +396,16 @@ def local_source_dirty() -> bool:
             timeout=10,
             check=False,
         )
-        return proc.returncode == 0 and bool(proc.stdout.strip())
+        if proc.returncode != 0:
+            return False
+        for line in proc.stdout.splitlines():
+            if not line.strip():
+                continue
+            path = line[3:].strip() if len(line) >= 3 else line.strip()
+            if path == "_site" or path.startswith("_site/"):
+                continue
+            return True
+        return False
     except (OSError, subprocess.SubprocessError):
         return False
 

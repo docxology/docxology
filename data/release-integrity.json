@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "59e195111c651d1b346945b00f8cc45342b18130",
+  "source_commit_at_generation": "ba2d065cbe03525d428821c00436b8a043bf7f3d",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,30 +26,28 @@
     "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
     "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "f68d973fb2435fffbff07db3399813bcd7ea0bbf8053591c9297eba0b85e2ccb",
+    "data/agent-index.json": "5a3d6ecda9521d4b173ac0d670b2f474a912a597b3d89f052ab49205b478bb65",
     "data/generated-manifest.json": "25c853125c8f063f79c2177011d0d8ab862b7ee314f09e7f6190b04935f4635a",
-    "data/pages-artifact-manifest.json": "3521b373bd9f5ec756a1991205cc2e2c28b8679cbb1503b5c136f7e26a6ca728"
+    "data/pages-artifact-manifest.json": "d4daf39bc932c5e28de3b16448b62c5869fabae4e3464930011ca8805b81a068"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "59e195111c651d1b346945b00f8cc45342b18130",
+    "source_commit_at_generation": "ba2d065cbe03525d428821c00436b8a043bf7f3d",
     "artifact_file_count": 4336,
-    "artifact_bytes": 759112352,
+    "artifact_bytes": 759112364,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
-    "commit": "ec8f33b584df3c84fee632e440a3b0ba251e4699",
-    "workflow_run_id": 29934328233,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29934328233",
+    "commit": "ba2d065cbe03525d428821c00436b8a043bf7f3d",
+    "workflow_run_id": 30110134365,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/30110134365",
     "pages_status": "built",
     "verification_report": "reports/live_site_verification_2026-07-24.json",
-    "verification_generated_at": "2026-07-24T16:14:14Z",
+    "verification_generated_at": "2026-07-24T16:48:12Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17",
-    "deployment_pending": true,
-    "deployment_pending_reasons": [
-      "tracked release content differs from the deployed commit"
-    ]
+    "deployment_pending": false,
+    "deployment_pending_reasons": []
   },
   "privacy": {
     "cv_public_integrity_errors": [],
