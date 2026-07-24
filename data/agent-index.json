@@ -246,21 +246,21 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-07-22.json",
+      "path": "/reports/accessibility_static_2026-07-24.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-07-22.json",
+      "path": "/reports/asset_size_2026-07-24.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-07-21.json",
+      "path": "/reports/live_site_verification_2026-07-24.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -553,7 +553,7 @@
         "source_sha256": "map of source/generated input paths to SHA-256",
         "generator": "ordered pipeline and generator hashes",
         "pages_artifact": "bounded artifact manifest summary",
-        "deployment": "workflow/deployment and live verification metadata",
+        "deployment": "workflow/deployment and live verification metadata, including current source commit and explicit deployment_pending reasons",
         "privacy": "CV public-integrity result and policy"
       }
     },
@@ -1051,11 +1051,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 757289888,
+        "source_bytes": 757274279,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4328,
-        "artifact_bytes": 758052440
+        "artifact_file_count": 4329,
+        "artifact_bytes": 758036759
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1075,7 +1075,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "ad289572c03c8e32032d75a98952dd94baca1ea45ef594005f247fd9082025b9",
     "videos_index": "143721430d94d0b419dae4deae274ee6e9909761949317f65d4e152b0d92c317",
-    "search": "99ab45f0342c97fab64c2344b555b8a446169e8bfdf95a957ec3e09bce7cef73",
+    "search": "86575da8d8659f0c65d4413db06d35f44fc76abeea7000c2879ea12aa475b4f8",
     "claims": "cc1e6c3f2254119b7ab4ecb2c6c552fcd31af8ed3aa3a899785bd210090a48f2",
     "coverage_exceptions": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "repository_classification": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
@@ -1083,9 +1083,9 @@
     "organizations": "922592d7581a5c9d55d9d1ad05a7cb7141974c1e680dbd8f7fd90324f68a6dfe",
     "resume": "73bd3ecbd4956fb5a6edbf0c199e16cd8b9a15d5cfeebaef3f2d249472330c81",
     "work_enrichment": "a58991830e80b5b1704c5c4ef99f85c7d5cac90f2d8156ab4790a0bd2b1e6776",
-    "catalog": "c9ba0f5e188b426488f1c4409c82753d985c0b0db95567f50ca47bd6386033a9",
+    "catalog": "f4a9ff57feb4729d7e441493726e326c3750bea07d4a7fcd1cafd62cb802f4bc",
     "reconciliation": "db3db14f5dd0b7680fcb5d18e325d15eae1e07de4bf8ae28ec2ba492ee96b821",
-    "generated_manifest": "be10e2f74bcabbf31ad2445ef1d19ab711fbeba55bdb921748ebf6304be33835",
+    "generated_manifest": "25c853125c8f063f79c2177011d0d8ab862b7ee314f09e7f6190b04935f4635a",
     "current_counts": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf"
   },
   "source_provenance": {
@@ -1104,8 +1104,8 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-07-21.json",
-    "generated_at": "2026-07-21T21:15:24Z",
+    "live_report": "/reports/live_site_verification_2026-07-24.json",
+    "generated_at": "2026-07-24T16:14:14Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,

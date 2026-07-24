@@ -76,7 +76,7 @@ window.__tts.toggle()      // Open/close panel
 The TTS script auto-initializes on DOMContentLoaded. To add to a new page:
 
 ```html
-<script src="/js/tts-controls.js?v=20260705" defer></script>
+<script src="/js/tts-controls.js?v=20260712" defer></script>
 ```
 
 No additional markup required. The script creates:

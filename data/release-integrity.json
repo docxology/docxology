@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "049a1e9290c0f1e5b17f5c96108377457b2e53bf",
+  "source_commit_at_generation": "ec8f33b584df3c84fee632e440a3b0ba251e4699",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -9,9 +9,9 @@
     "python": ">=3.12 (pyproject.toml)",
     "project_version": "0.1.0",
     "orchestrator_sha256": {
-      "code/orchestrators/regenerate_all.py": "f2648b68540c7349615bfe14793c4490f574d55448ea1025184b74bb9d3629f6",
-      "code/orchestrators/build_pages_artifact.py": "e2d615204566d9b471f5eebc46a47d3e001950f1f2c3f6a1401e440a4715d386",
-      "code/orchestrators/build_agent_index.py": "223e0bd33ec91d73c089ee6858fbe4752cab1d950b966865f39429b2e73d0a3c",
+      "code/orchestrators/regenerate_all.py": "327791fd9045c7a02e988f391614155638f3d210f4e3c5d5858d93cc1bd990a8",
+      "code/orchestrators/build_pages_artifact.py": "b28b12f5cbd9b65a58d789253b555e16b9c9de4dcf415903e658a42d9aaf8ba7",
+      "code/orchestrators/build_agent_index.py": "c3c58c58b4938910cd79fc0896528e066041f67af4e9e417d985833d32e3bd7d",
       "code/orchestrators/build_coverage_exceptions.py": "5e4e3a88d6d13aad804ccc4f9d45ba32c1dbb87ae0970c819042d3b1a221b6ad",
       "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
       "code/orchestrators/verify_live_site.py": "140ae03e9cf6d46b84b6055d9d6cdfae60b9e855ea2fd5bf51cfc09299cd6ab3",
@@ -26,26 +26,30 @@
     "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
     "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "9dadbd605caaa255db3b0d70f18bbc821cc377e027e9b3d2f47412d3e14ee643",
-    "data/generated-manifest.json": "be10e2f74bcabbf31ad2445ef1d19ab711fbeba55bdb921748ebf6304be33835",
-    "data/pages-artifact-manifest.json": "e17bbe25c3f1209892797724f2e5cc2a33acce7d37809be091e5577b561d1def"
+    "data/agent-index.json": "2f40f84b5fba234d6f1ba17728e6065084bfb11cbbf6f0a398189f5cf6a5e19f",
+    "data/generated-manifest.json": "25c853125c8f063f79c2177011d0d8ab862b7ee314f09e7f6190b04935f4635a",
+    "data/pages-artifact-manifest.json": "63f7e05fe273b4a852f9e96e7fd655c11149fea89209c5f4941bc4b2a1bde400"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "049a1e9290c0f1e5b17f5c96108377457b2e53bf",
-    "artifact_file_count": 4328,
-    "artifact_bytes": 758052440,
+    "source_commit_at_generation": "ec8f33b584df3c84fee632e440a3b0ba251e4699",
+    "artifact_file_count": 4329,
+    "artifact_bytes": 758036759,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
-    "commit": "a9d96ab342ad9768e0ab37342ce2e6ab6ae6ea86",
-    "workflow_run_id": 29868898342,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29868898342",
+    "commit": "ec8f33b584df3c84fee632e440a3b0ba251e4699",
+    "workflow_run_id": 29934328233,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29934328233",
     "pages_status": "built",
-    "verification_report": "reports/live_site_verification_2026-07-21.json",
-    "verification_generated_at": "2026-07-21T21:15:24Z",
+    "verification_report": "reports/live_site_verification_2026-07-24.json",
+    "verification_generated_at": "2026-07-24T16:14:14Z",
     "verification_overall_ok": true,
-    "verified_routes": "17/17"
+    "verified_routes": "17/17",
+    "deployment_pending": true,
+    "deployment_pending_reasons": [
+      "tracked release content differs from the deployed commit"
+    ]
   },
   "privacy": {
     "cv_public_integrity_errors": [],

@@ -16,6 +16,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
 | **Operations** | [`operations/github-pages-artifact.md`](operations/github-pages-artifact.md) | Bounded GitHub Pages deployment projection, 1 GiB limit, and repository-vs-site asset policy |
 | **Operations** | [`operations/release-integrity.md`](operations/release-integrity.md) | Source hashes, CV privacy, Pages artifact, deployment, live verification, and report retention gates |
+| **Operations** | [`operations/maintenance-log.md`](operations/maintenance-log.md) | On-demand history for completed maintenance and how to trace it to changelog/report evidence |
 | **Operations** | [`operations/repository-classification.md`](operations/repository-classification.md) | Complete GitHub inventory versus curated software review queue and description-quality triage |
 | **Operations** | [`operations/cv-release.md`](operations/cv-release.md) | CV source-of-truth, generated outputs, privacy, reproducibility, and claim-boundary checks |
 | **Operations** | [`operations/evidence-refresh.md`](operations/evidence-refresh.md) | Public-source refresh, publication-pair review, coverage exceptions, and dated claim evidence |

@@ -65,10 +65,10 @@ The site now ships three interactive JavaScript modules loaded via `<script defe
 - **External link handling**: adds `rel="noopener noreferrer"` and `target="_blank"`
 - Respects `prefers-reduced-motion` throughout
 
-### Adding to new pages
+### Adding to new indexable pages
 ```html
-<script src="/js/tts-controls.js?v=20260705" defer></script>
-<script src="/js/interactive.js?v=20260705" defer></script>
+<script src="/js/tts-controls.js?v=20260712" defer></script>
+<script src="/js/interactive.js?v=20260712" defer></script>
 ```
 
 ### CSS
@@ -85,7 +85,7 @@ All components have responsive breakpoints at 860px and 480px, print styles, and
 
 ## SEO Standards
 
-Every page must have:
+Every indexable public page must have:
 - `<link rel="canonical" href="https://danielarifriedman.com/...">`
 - `<meta name="robots" content="index, follow">`
 - `og:title`, `og:description`, `og:url`, `og:image`
@@ -95,6 +95,11 @@ Every page must have:
 - `rel="me"` for identity verification
 - `hreflang` support
 - `dateModified` / `datePublished` structured data
+
+Paper-folder pages and redirect stubs are intentional SEO exceptions: they use
+`noindex, follow`, canonicalize to their public target where applicable, and
+must not emit indexable-page JSON-LD. Keep those exceptions aligned with the
+SEO invariants documented in `CLAUDE.md` and `code/src/seo_invariants.py`.
 
 ## Testing Interactive Components
 

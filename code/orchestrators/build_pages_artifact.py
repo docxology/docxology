@@ -25,6 +25,7 @@ WARNING_ARTIFACT_BYTES = 850 * 1024 * 1024
 HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
 GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
+GROWTH_REPORT_GLOB = "reports/pages_artifact_growth_*.json"
 CONTROL_FILES = {
     Path("GENERATED.md"),
     Path("data/agent-index.json"),
@@ -59,6 +60,12 @@ def tracked_paths() -> list[Path]:
     paths = [Path(raw) for raw in result.stdout.decode().split("\0") if raw]
     if ARTIFACT_MANIFEST.exists() and ARTIFACT_MANIFEST.relative_to(REPO_ROOT) not in paths:
         paths.append(ARTIFACT_MANIFEST.relative_to(REPO_ROOT))
+    # The current growth report is created during this pipeline before it is
+    # necessarily staged. Include it in local projections so the manifest and
+    # assembled artifact describe the same file set in the write/check cycle.
+    growth_report = GROWTH_REPORT.relative_to(REPO_ROOT)
+    if GROWTH_REPORT.exists() and growth_report not in paths:
+        paths.append(growth_report)
     return paths
 
 
@@ -74,6 +81,11 @@ def is_published_path(path: Path) -> bool:
 
 def _relative_paths() -> list[Path]:
     return sorted((path for path in tracked_paths() if is_published_path(path)), key=lambda path: path.as_posix())
+
+
+def is_control_path(path: Path) -> bool:
+    """Return whether a published path is control metadata, not payload data."""
+    return path in CONTROL_FILES or path.match(GROWTH_REPORT_GLOB)
 
 
 def _omitted_paths() -> list[Path]:
@@ -108,8 +120,17 @@ def _source_commit() -> str:
 
 def _manifest_payload(existing: dict | None = None) -> dict:
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
-    included = [path for path in _relative_paths() if path != manifest_rel and path not in CONTROL_FILES]
-    controls = [path for path in _relative_paths() if path in CONTROL_FILES and path != manifest_rel]
+    relative_paths = _relative_paths()
+    included = [path for path in relative_paths if path != manifest_rel and not is_control_path(path)]
+    # The current report is written immediately after this payload is built.
+    # Include its expected path even on the first run, when it is not tracked
+    # or present yet, so a UTC date rollover cannot make the manifest stale.
+    expected_control_paths = set(relative_paths)
+    expected_control_paths.add(GROWTH_REPORT.relative_to(REPO_ROOT))
+    controls = sorted(
+        (path for path in expected_control_paths if path != manifest_rel and is_control_path(path)),
+        key=lambda path: path.as_posix(),
+    )
     omitted = _omitted_paths()
     source_bytes = sum((REPO_ROOT / path).stat().st_size for path in included if (REPO_ROOT / path).is_file())
     omitted_bytes = sum((REPO_ROOT / path).stat().st_size for path in omitted if (REPO_ROOT / path).is_file())

@@ -56,7 +56,7 @@ hosted projection and GitHub tree/raw fallbacks for omitted extracted paper imag
 
 ## Interactive Layer (added 2026-07-05)
 
-All 23 indexable pages include two new JS modules:
+Every indexable page includes the two site-wide JS modules:
 
 | Module | File | Features |
 |--------|------|----------|
@@ -88,7 +88,8 @@ uv run python3 code/orchestrators/regenerate_all.py --validate
 
 It is local-only and idempotent (no network freshness steps — those are a deliberate
 separate step; see `docs/operations/publication-sync.md`), and ends with the Pages
-artifact and release-integrity manifests, then `build_generated_manifest.py` and
+artifact manifest, then `build_generated_manifest.py` → `build_agent_index.py` →
+`build_release_integrity.py` → the final `build_generated_manifest.py` and
 `validate_repo.py`.
 Run `--list` to print the plan without executing. Internally it runs, in order:
 `export_bibliography.py` → `sync_publications_html.py --apply` → `sync_software_html.py
@@ -100,9 +101,8 @@ Run `--list` to print the plan without executing. Internally it runs, in order:
 `accessibility_audit.py` → `build_catalog.py` → `audit_assets.py` →
 `accessibility_audit.py` → `build_search_index.py` → `generate_feed.py` →
 `build_sitemap.py` → `build_image_sitemap.py` → `build_artwork_index.py` →
-`build_pages_artifact.py --write-manifest --check-size-only` → `build_agent_index.py` →
-`build_generated_manifest.py` → `build_release_integrity.py` → final
-`build_generated_manifest.py`.
+`build_pages_artifact.py --write-manifest --check-size-only` → `build_generated_manifest.py` →
+`build_agent_index.py` → `build_release_integrity.py` → final `build_generated_manifest.py`.
 
 Software path: `pages/SOFTWARE.md` → `sync_software_html.py --apply` → `export_agent_data.py`.
 After editing any HTML head template that changes file size, refresh the size report with
@@ -138,7 +138,7 @@ YouTube iframe policy.
 - **Social meta:** every indexable page with `og:image` must also carry `twitter:card`,
   `og:image:alt`, and `twitter:image:alt`. Generated pages get these from
   `code/src/site_nav.py::social_meta_tags()` or each generator's inline head template;
-  the 10 hand-maintained pages get them from `ensure_social_meta.py` (idempotent).
+  hand-maintained pages get them from `ensure_social_meta.py` (idempotent).
 - Work-page meta descriptions are ≤160 rendered chars, word-boundary clipped
   (`site_nav.clip_description`).
 

@@ -9,10 +9,10 @@ hand, re-running generators one at a time until `validate_repo.py` went green.
 This script encodes that order once, in *write* mode, so a single command rebuilds the
 generated layer deterministically from the current sources. The order below is
 dependency-correct (each step's inputs are produced by an earlier step). The integrity
-tail is deliberately explicit: Pages budget → agent index → generated manifest → release
-integrity → final generated manifest. The agent index is built only after all dated
-reports and the Pages projection exist because it links to their latest paths and
-records the Pages manifest's dataset hashes.
+tail is deliberately explicit: Pages budget → generated manifest → agent index → release
+integrity → final generated manifest. The first generated-manifest pass must precede the
+agent index because the latter records the manifest hash; the final pass confirms the
+complete command matrix after release-integrity is written.
 
 Scope: LOCAL artifacts only. This script is deliberately offline and idempotent — run it
 as many times as you like and (absent a source edit) it changes nothing. Network
@@ -91,10 +91,10 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_artwork_index.py", []),              # compact gallery grid index <- data/artworks.json
     ("build_image_sitemap.py", []),               # sitemap-images.xml       <- data/artworks.json
     ("build_pages_artifact.py", ["--write-manifest", "--check-size-only"]),
-    ("build_agent_index.py", []),                # stable agent route/schema map <- final reports + Pages manifest
-    ("build_generated_manifest.py", []),         # include the integrity outputs in the command matrix
+    ("build_generated_manifest.py", []),         # establish the final dated-report command matrix
+    ("build_agent_index.py", []),                # route/schema map <- reports + Pages + generated manifest
     ("build_release_integrity.py", []),
-    ("build_generated_manifest.py", []),         # LAST — stable source/output command matrix
+    ("build_generated_manifest.py", []),         # LAST — include the release envelope in the matrix
 ]
 
 

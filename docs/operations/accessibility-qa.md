@@ -4,7 +4,7 @@ Run static checks after any HTML/CSS/JavaScript change and dynamic checks after
 interactive-layer changes:
 
 ```bash
-python3 code/orchestrators/accessibility_audit.py --strict
+python3 code/orchestrators/accessibility_audit.py --check
 python3 code/orchestrators/browser_smoke.py
 /opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py
 /opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py --check

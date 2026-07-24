@@ -16,12 +16,23 @@ generated layer, artifact, deployment, and live verification records agree.
 5. Run `browser_smoke.py`, the progressive `browser_qa.py` suite with the
    cached Playwright runtime, visual QA, and `gsc_followup_preflight.py` after SEO or
    sitemap changes.
-6. Verify the deployed site with `verify_live_site.py`; require 17/17 routes,
-   current JSON-level counts, Pages status `built`, and a successful deployment
-   run.
+6. Verify the deployed site with `verify_live_site.py` after the Pages deployment
+   for the source commit being released; require all checked routes, current
+   JSON-level counts, Pages status `built`, and a successful deployment run.
+7. Confirm the release worktree is clean (the preserved local `_site/` output is
+   ignored by this check), then run `uv run python3
+   code/orchestrators/build_release_integrity.py --check --require-deployed`.
+   The ordinary `--check` gate may pass only when the envelope explicitly
+   records `deployment_pending: true`; the strict release gate must pass before
+   calling the release deployed.
 
 `data/release-integrity.json` records source and generator hashes, the Pages
-artifact summary, deployment metadata, live verification, and CV privacy status.
+artifact summary, deployment metadata, live verification, CV privacy status,
+and explicit `deployment_pending_reasons` whenever tracked release content does
+not match the recorded deployed commit. Control manifests and dated evidence
+are excluded from that content comparison because they are refreshed after
+deployment. This prevents stale live evidence from being described as a
+completed release.
 `data/pages-artifact-manifest.json` records included files and SHA-256 values,
 omitted extracted paper-image policy, byte/file budgets, and GitHub fallback URL
 templates.

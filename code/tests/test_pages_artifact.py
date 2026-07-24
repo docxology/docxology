@@ -33,3 +33,8 @@ def test_control_manifests_have_public_fallback_policy():
     assert Path("GENERATED.md") in bpa.CONTROL_FILES
     assert Path("data/pages-artifact-manifest.json") in bpa.CONTROL_FILES
     assert Path("data/release-integrity.json") in bpa.CONTROL_FILES
+
+
+def test_all_dated_growth_reports_are_control_metadata():
+    assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-22.json"))
+    assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-24.json"))

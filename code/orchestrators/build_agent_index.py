@@ -247,7 +247,7 @@ SCHEMAS = {
             "source_sha256": "map of source/generated input paths to SHA-256",
             "generator": "ordered pipeline and generator hashes",
             "pages_artifact": "bounded artifact manifest summary",
-            "deployment": "workflow/deployment and live verification metadata",
+            "deployment": "workflow/deployment and live verification metadata, including current source commit and explicit deployment_pending reasons",
             "privacy": "CV public-integrity result and policy",
         },
     },

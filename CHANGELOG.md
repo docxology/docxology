@@ -1,6 +1,11 @@
 # Changelog
 
-All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record remains in `AGENTS.md`.
+All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
+
+## 2026-07-24
+
+- **Repo-wide functional and signposting audit implemented**: Pages growth reports are date-stable control metadata across UTC rollovers; release-integrity now records explicit deployment-pending reasons and supports a strict `--require-deployed` gate; accessibility commands use the supported `--check` flag; public-page SEO guidance distinguishes indexable pages from intentional paper/redirect exceptions; cache-buster documentation matches the generated layer; and the historical maintenance table moved out of always-loaded `AGENTS.md`.
+- **Regeneration tail made one-pass idempotent**: `build_generated_manifest.py` now runs before `build_agent_index.py`, so the agent route manifest hashes the current command matrix on its first pass; a final manifest pass still closes the release-integrity envelope. The ordering is regression-tested in `test_regenerate_all.py`.
 
 ## 2026-07-17
 

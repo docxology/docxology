@@ -12,6 +12,14 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "data" / "release-integrity.json"
+DEPLOYMENT_COMPARE_EXCLUDES = (
+    ":(exclude)GENERATED.md",
+    ":(exclude)data/agent-index.json",
+    ":(exclude)data/generated-manifest.json",
+    ":(exclude)data/pages-artifact-manifest.json",
+    ":(exclude)data/release-integrity.json",
+    ":(exclude)reports/**",
+)
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from public_integrity import scan_public_files  # noqa: E402
 
@@ -51,9 +59,75 @@ def git_value(*args: str) -> str:
     return result.stdout.strip() if result.returncode == 0 else "unknown"
 
 
+def has_release_changes(status_output: str) -> bool:
+    """Return whether status contains changes beyond the preserved local `_site/`."""
+    for line in status_output.splitlines():
+        if len(line) < 4:
+            continue
+        path = line[3:].split(" -> ")[-1]
+        if path != "_site" and not path.startswith("_site/"):
+            return True
+    return False
+
+
+def current_worktree_has_release_changes() -> bool:
+    result = subprocess.run(
+        ["git", "status", "--porcelain=v1", "--untracked-files=all"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return has_release_changes(result.stdout) if result.returncode == 0 else True
+
+
 def latest_report(prefix: str) -> Path | None:
     paths = sorted((REPO_ROOT / "reports").glob(f"{prefix}_*.json"))
     return paths[-1] if paths else None
+
+
+def deployed_content_differs(deployed_commit: str) -> bool | None:
+    """Compare release content with a known deployed commit.
+
+    Control manifests and dated evidence are deliberately excluded: they are
+    refreshed after deployment and must not make an otherwise identical site
+    look stale. ``None`` means Git could not resolve or compare the commit.
+    """
+    if not deployed_commit or deployed_commit == "unknown":
+        return None
+    result = subprocess.run(
+        ["git", "diff", "--quiet", deployed_commit, "--", ".", *DEPLOYMENT_COMPARE_EXCLUDES],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        return False
+    if result.returncode == 1:
+        return True
+    return None
+
+
+def deployment_pending_reasons(
+    source_commit: str,
+    deployment: dict,
+    *,
+    deployed_content_differs: bool | None = None,
+) -> list[str]:
+    """Explain why the recorded deployment is not the current release."""
+    reasons: list[str] = []
+    deployed_commit = deployment.get("commit")
+    if not deployed_commit or deployed_commit == "unknown":
+        reasons.append("no verified deployment commit")
+    elif deployed_content_differs is True:
+        reasons.append("tracked release content differs from the deployed commit")
+    elif deployed_content_differs is None:
+        reasons.append("unable to compare tracked release content with the deployed commit")
+    if deployment.get("pages_status") != "built":
+        reasons.append(f"Pages status is {deployment.get('pages_status') or 'unknown'}")
+    if deployment.get("verification_overall_ok") is not True:
+        reasons.append("live verification is not passing")
+    return reasons
 
 
 def build_payload() -> dict:
@@ -64,6 +138,24 @@ def build_payload() -> dict:
     source_hashes = {path: sha256(REPO_ROOT / path) for path in SOURCE_FILES if (REPO_ROOT / path).is_file()}
     generator_hashes = {path: sha256(REPO_ROOT / path) for path in GENERATOR_FILES if (REPO_ROOT / path).is_file()}
     deployment = live.get("deployment", {})
+    source_commit = pages.get("source_commit_at_generation") or git_value("rev-parse", "HEAD")
+    deployment_payload = {
+        "commit": deployment.get("head_sha") or deployment.get("commit") or source_commit,
+        "workflow_run_id": deployment.get("workflow_run_id"),
+        "workflow_url": deployment.get("workflow_url"),
+        "pages_status": live.get("github_pages", {}).get("status"),
+        "verification_report": str(live_path.relative_to(REPO_ROOT)) if live_path else None,
+        "verification_generated_at": live.get("generated_at"),
+        "verification_overall_ok": live.get("overall_ok"),
+        "verified_routes": f"{live.get('passing', 0)}/{live.get('checked_urls', 0)}",
+    }
+    pending_reasons = deployment_pending_reasons(
+        source_commit,
+        deployment_payload,
+        deployed_content_differs=deployed_content_differs(deployment_payload["commit"]),
+    )
+    deployment_payload["deployment_pending"] = bool(pending_reasons)
+    deployment_payload["deployment_pending_reasons"] = pending_reasons
     return {
         "schema_version": "1.0",
         "generated_at": current.get("generated_at"),
@@ -71,7 +163,7 @@ def build_payload() -> dict:
         # current commit SHA here would be self-referential. Anchor it to the
         # source commit measured by the Pages manifest instead; deployment
         # metadata below records the separately verifiable hosted commit.
-        "source_commit_at_generation": pages.get("source_commit_at_generation") or git_value("rev-parse", "HEAD"),
+        "source_commit_at_generation": source_commit,
         "repository": "docxology/docxology",
         "canonical_origin": "https://danielarifriedman.com/",
         "generator": {
@@ -92,16 +184,7 @@ def build_payload() -> dict:
             "artifact_bytes": pages.get("budget", {}).get("artifact_bytes"),
             "omitted_paper_image_count": pages.get("omitted_paper_images", {}).get("count"),
         },
-        "deployment": {
-            "commit": deployment.get("head_sha") or deployment.get("commit") or pages.get("source_commit_at_generation"),
-            "workflow_run_id": deployment.get("workflow_run_id"),
-            "workflow_url": deployment.get("workflow_url"),
-            "pages_status": live.get("github_pages", {}).get("status"),
-            "verification_report": str(live_path.relative_to(REPO_ROOT)) if live_path else None,
-            "verification_generated_at": live.get("generated_at"),
-            "verification_overall_ok": live.get("overall_ok"),
-            "verified_routes": f"{live.get('passing', 0)}/{live.get('checked_urls', 0)}",
-        },
+        "deployment": deployment_payload,
         "privacy": {
             "cv_public_integrity_errors": scan_public_files(REPO_ROOT),
             "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests.",
@@ -113,6 +196,11 @@ def build_payload() -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if release-integrity.json is stale")
+    parser.add_argument(
+        "--require-deployed",
+        action="store_true",
+        help="Fail when the envelope explicitly reports deployment_pending",
+    )
     args = parser.parse_args()
     payload = build_payload()
     if OUT.exists():
@@ -121,6 +209,13 @@ def main() -> None:
         except json.JSONDecodeError:
             pass
     rendered = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    if args.require_deployed:
+        reasons = list(payload["deployment"].get("deployment_pending_reasons", []))
+        if current_worktree_has_release_changes():
+            reasons.append("working tree has uncommitted release changes")
+        if reasons:
+            detail = "; ".join(reasons)
+            raise SystemExit(f"release deployment pending: {detail}")
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != rendered:
             raise SystemExit(f"stale release integrity manifest: {OUT.relative_to(REPO_ROOT)}")
