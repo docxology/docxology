@@ -1,0 +1,44 @@
+{
+  "title": "TemporalDepth",
+  "domain": "Active Inference",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "et al."
+    }
+  ],
+  "description": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i...",
+  "abstract": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience is constructed through hierarchical predictive processing, and how disruptions to temporal integration may underlie depersonalization phenomena.",
+  "keywords": [
+    "temporal depth",
+    "depersonalization",
+    "self-coherence",
+    "Active Inference",
+    "predictive processing",
+    "temporal integration",
+    "clinical psychology"
+  ],
+  "methods": [
+    {
+      "name": "Free energy minimization",
+      "description": "Applied free energy minimization approach"
+    },
+    {
+      "name": "Bayesian modeling and inference",
+      "description": "Applied bayesian modeling and inference approach"
+    }
+  ],
+  "key_findings": [
+    "develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..",
+    "Using Active Inference, we formalize how subjective temporal experience i...."
+  ],
+  "related_papers": [
+    "2018_WoodliceAndMen",
+    "2020_BehaviorEngineering",
+    "2021_ModelingConflict"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

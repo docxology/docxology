@@ -1,0 +1,52 @@
+{
+  "title": "StigmergicAnnotation",
+  "domain": "Cognitive Security",
+  "type": "Paper",
+  "creators": [
+    {
+      "name": "Ronen Tamari"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "William Fischer"
+    },
+    {
+      "name": "Lauren Hebert"
+    },
+    {
+      "name": "Dafna Shahaf"
+    }
+  ],
+  "description": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr...",
+  "abstract": "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can restore epistemic health to online environments.",
+  "keywords": [
+    "stigmergic annotation",
+    "open source attention",
+    "collective sensemaking",
+    "epistemic pollution",
+    "decentralized platforms",
+    "social annotation",
+    "digital attention"
+  ],
+  "methods": [
+    {
+      "name": "Narrative analysis",
+      "description": "Applied narrative analysis approach"
+    },
+    {
+      "name": "Trust and integrity modeling",
+      "description": "Applied trust and integrity modeling approach"
+    }
+  ],
+  "key_findings": [
+    "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr"
+  ],
+  "related_papers": [
+    "2020_EmergentTeams",
+    "2020_FacilitatorsCatechism",
+    "2020_GreatPreset"
+  ],
+  "checked_at": "2026-07-01T20:50:01Z"
+}

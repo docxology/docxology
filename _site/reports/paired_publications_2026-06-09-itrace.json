@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-06-09T18:20:30Z",
+  "source": "GitHub Releases API + Zenodo Records API",
+  "owners": [
+    "docxology"
+  ],
+  "counts": {
+    "github_releases": 1,
+    "zenodo_records": 101,
+    "pairs": 1,
+    "strong_pairs": 0,
+    "needs_review": 1,
+    "create_new": 0,
+    "update_existing": 0
+  },
+  "warnings": [],
+  "actions": [
+    {
+      "action_type": "needs_review",
+      "doi": "10.5281/zenodo.20614909",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "confidence": "needs_review",
+      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "github_repo": "docxology/itrace",
+      "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
+      "zenodo_record_url": "https://zenodo.org/records/20614909",
+      "folder": "2026_ITrace"
+    }
+  ],
+  "pairs": [
+    {
+      "confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "doi": "10.5281/zenodo.20614909",
+      "github_repo": "docxology/itrace",
+      "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
+      "zenodo_record_url": "https://zenodo.org/records/20614909",
+      "release": {
+        "owner": "docxology",
+        "repo": "itrace",
+        "tag": "v0.4.1",
+        "name": "iTrace v0.4.1",
+        "body": "",
+        "html_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
+        "published_at": "2026-06-09T16:59:51Z",
+        "assets": [],
+        "full_name": "docxology/itrace"
+      },
+      "record": {
+        "record_id": "20614909",
+        "doi": "10.5281/zenodo.20614909",
+        "title": "iTrace: verification-first webcam eye-movement analysis",
+        "publication_date": "2026-06-09",
+        "version": "0.4.1",
+        "resource_type": {
+          "title": "Software",
+          "type": "software"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.",
+        "keywords": [
+          "eye-tracking",
+          "webcam",
+          "gaze",
+          "saccades",
+          "pupillometry",
+          "open-source",
+          "diagnostic-pilot"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/itrace",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "8e301ef3-3d7d-4ad4-8c74-c1436fc3bf5f",
+            "key": "itrace-0.4.1-manuscript.pdf",
+            "size": 5324090,
+            "checksum": "md5:6a77ca92ab62517feef8f7bd6b6b7735",
+            "links": {
+              "self": "https://zenodo.org/api/records/20614909/files/itrace-0.4.1-manuscript.pdf/content"
+            }
+          },
+          {
+            "id": "48ade40a-b1d7-4abd-afc1-83c399854def",
+            "key": "itrace-v0.4.1.zip",
+            "size": 36271446,
+            "checksum": "md5:23294b9521d7346d5038441c91a8735d",
+            "links": {
+              "self": "https://zenodo.org/api/records/20614909/files/itrace-v0.4.1.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/20614909",
+        "doi_url": "https://doi.org/10.5281/zenodo.20614909",
+        "record_url": "https://zenodo.org/records/20614909"
+      }
+    }
+  ],
+  "applied": []
+}

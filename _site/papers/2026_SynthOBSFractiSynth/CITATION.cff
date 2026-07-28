@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer"
+version: "1.618.0"
+date-released: 2026-07-17
+doi: 10.5281/zenodo.21418687
+url: "https://doi.org/10.5281/zenodo.21418687"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21418687
+    description: "Zenodo concept DOI"
+  - type: url
+    value: "https://zenodo.org/records/21418687"
+    description: "Zenodo landing page"

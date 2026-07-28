@@ -1,0 +1,241 @@
+{
+  "title": "Active Inference Multi-Track Exemplar",
+  "version": "0.3.2",
+  "doi": "10.5281/zenodo.20417021",
+  "doi_url": "https://doi.org/10.5281/zenodo.20417021",
+  "zenodo_record": "https://zenodo.org/records/20417021",
+  "record_id": "20931870",
+  "publication_date": "2026-06-26",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections. The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before rendering, so no figure or statistic can drift from the artifact that produced it — 6 sheaf axioms are verified before composition and 25 negative controls keep each failure path live. Claims are limited to those models and their generated artifacts.\n\n reports a 17-row coverage matrix (5 IMRAD group headers) regenerated from the live manifest at compose time.  documents the T-maze harness aligned with pymdp sophisticated_inference examples (https://github.com/infer-actively/pymdp/tree/main/examples/experimental/sophisticated_inference).\n\n records 12 / 12 invariant checks passed. SI planning horizon: 2 steps. Sweep RMSE 0 nats bounds analytical–empirical agreement on the coupling grid.\n\n---\nAssociated artifacts\nGitHub release: v0.3.2 (https://github.com/docxology/template_active_inference/releases/tag/v0.3.2)\nDOI: https://doi.org/10.5281/zenodo.20417021\nZenodo: https://zenodo.org/records/20417021\nPDF SHA-256: f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c",
+  "keywords": [
+    "active inference",
+    "pymdp",
+    "sophisticated inference",
+    "generalized notation notation",
+    "lean"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Active_f191b48f.pdf",
+      "size_bytes": 4101185,
+      "checksum": "md5:6f4384a19ed6e98fe20de9a457b69163",
+      "download_url": "https://zenodo.org/api/records/20931870/files/Friedman_2026_Active_f191b48f.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_active_inference"
+    }
+  ],
+  "github_repo": "docxology/template_active_inference",
+  "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
+  "release_tag": "v0.3.2",
+  "release_name": "Active Inference Multi-Track Exemplar (v0.3.2)",
+  "pdf_sha256": "f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-07-17T23:23:31Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "record_title": "Active Inference Multi-Track Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20420352",
+      "github_repo": "docxology/template_active_inference",
+      "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.2.0",
+      "release_tag": "v0.2.0",
+      "release_name": "Active Inference Multi-Track Exemplar (v0.2.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  },
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
+    },
+    {
+      "name": "Data-driven analysis",
+      "description": "Applied data-driven analysis approach"
+    }
+  ],
+  "key_findings": [
+    "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IM",
+    "The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before renderin"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_active_inference"
+  ]
+}

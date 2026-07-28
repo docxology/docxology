@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "The Active Inference Institute and Active Inference Ecosystem"
+version: "001.1"
+date-released: 2023-08-19
+doi: 10.5281/zenodo.8266280
+url: "https://doi.org/10.5281/zenodo.8266280"
+authors:
+  - family-names: Institute
+    given-names: Active Inference
+  - family-names: Aguirre
+    given-names: Ander
+  - family-names: Boik
+    given-names: John
+  - family-names: Burian
+    given-names: Libor
+  - family-names: Brown
+    given-names: Matthew
+  - family-names: Cordes
+    given-names: RJ
+  - family-names: David
+    given-names: Scott
+  - family-names: Douglass
+    given-names: David S
+  - family-names: Fernandez-Maquieira
+    given-names: Pablo
+  - family-names: Friedman
+    given-names: Daniel A
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Grimm
+    given-names: Holly
+  - family-names: Guénin–Carlut
+    given-names: Avel
+  - family-names: Iennaco
+    given-names: Maria Luiza
+  - family-names: Knight
+    given-names: V Bleu
+  - family-names: Mikhailova
+    given-names: Alexandra
+  - family-names: Rahmjoo
+    given-names: Ali
+  - family-names: Razi
+    given-names: Adeel
+  - family-names: Smékal
+    given-names: Jakub
+  - family-names: Tamari
+    given-names: Ronen
+  - family-names: Tickles
+    given-names: Dean
+  - family-names: Vyatkin
+    given-names: Alex
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8266280
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/8266280"
+    description: "Zenodo landing page"

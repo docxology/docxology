@@ -1,0 +1,242 @@
+{
+  "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+  "version": "0.3.2",
+  "doi": "10.5281/zenodo.20417016",
+  "doi_url": "https://doi.org/10.5281/zenodo.20417016",
+  "zenodo_record": "https://zenodo.org/records/20417016",
+  "record_id": "20931907",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastructure.\nThe case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop. The run evaluates\n4 of 5 proposed candidates,\nincluding Tiny patch-attention classifier, selects\nexp-mlp-tanh-64 (MLP,\n50890 parameters), and improves test_accuracy from\n82.6% to 89.4%\n(6.8% absolute change). The validated diagnostic layer reports\nmacro F1 89.4%, bootstrap accuracy interval\n86.4% to 92.0%, Brier score 0.161,\nnegative log likelihood 0.361, top-2 accuracy\n95.6%, and exact McNemar p-value 0.000.\nThe same pipeline writes proposal, candidate, run, review, benchmark, evidence,\nfigure, confusion-matrix, statistical-summary, probability-quality, and\nsecurity-integrity artifacts from declared output contracts; uses\n0 LLM calls at USD 0.00 cost; and records\n7 configured stages, 6 supported\nlocal-artifact claims, and 78 required artifacts.\nThe local security attestation status is passed,\nwith 0 checksum mismatch(es). The final\nreadiness status is passed, with review gates deferred to a\nhuman rather than self-approved by the generated run.\n\n---\nAssociated artifacts\nGitHub release: v0.3.2 (https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2)\nDOI: https://doi.org/10.5281/zenodo.20417016\nZenodo: https://zenodo.org/records/20417016\nPDF SHA-256: e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a",
+  "keywords": [
+    "autoresearch",
+    "reproducible research",
+    "machine learning benchmark",
+    "artifact readiness",
+    "human review",
+    "local artifact integrity"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Bounded_e07b6285.pdf",
+      "size_bytes": 1344238,
+      "checksum": "md5:c2059200d73ecfefc8fb1f5365787bca",
+      "download_url": "https://zenodo.org/api/records/20931907/files/Friedman_2026_Bounded_e07b6285.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_autoresearch_project"
+    }
+  ],
+  "github_repo": "docxology/template_autoresearch_project",
+  "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
+  "release_tag": "v0.3.2",
+  "release_name": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.3.2)",
+  "pdf_sha256": "e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-07-17T23:23:31Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "zenodo_record_url": "https://zenodo.org/records/20420357",
+      "github_repo": "docxology/template_autoresearch_project",
+      "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0",
+      "release_tag": "v0.2.0",
+      "release_name": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task (v0.2.0)",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  },
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
+    },
+    {
+      "name": "Data-driven analysis",
+      "description": "Applied data-driven analysis approach"
+    }
+  ],
+  "key_findings": [
+    "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastruct",
+    "The case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop."
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_autoresearch_project"
+  ]
+}

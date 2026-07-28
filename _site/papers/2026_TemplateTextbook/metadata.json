@@ -1,0 +1,212 @@
+{
+  "title": "The Template Textbook",
+  "version": "0.1.2",
+  "doi": "10.5281/zenodo.20533125",
+  "doi_url": "https://doi.org/10.5281/zenodo.20533125",
+  "zenodo_record": "https://zenodo.org/records/20533125",
+  "record_id": "20932112",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.\n\n---\nAssociated artifacts\nGitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/20533125\nPDF SHA-256: 7b67cb2d9118f0a72001395f0a94c529313804d7e5cdf7f6ca2dc9f7ab57d168",
+  "keywords": [],
+  "files": [
+    {
+      "name": "Friedman_2026_Template_7b67cb2d.pdf",
+      "size_bytes": 939766,
+      "checksum": "md5:8ca3dccc845b627d2aca63a03218c060",
+      "download_url": "https://zenodo.org/api/records/20932112/files/Friedman_2026_Template_7b67cb2d.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_textbook"
+    }
+  ],
+  "github_repo": "docxology/template_textbook",
+  "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
+  "release_tag": "v0.1.2",
+  "release_name": "The Template Textbook (v0.1.2)",
+  "pdf_sha256": "7b67cb2d9118f0a72001395f0a94c529313804d7e5cdf7f6ca2dc9f7ab57d168",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-07-17T23:23:31Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "record_title": "The Template Textbook",
+      "zenodo_record_url": "https://zenodo.org/records/20533126",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Book",
+        "type": "publication",
+        "subtype": "book"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "record_title": "The Template Textbook",
+      "zenodo_record_url": "https://zenodo.org/records/20533126",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Book",
+        "type": "publication",
+        "subtype": "book"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "record_title": "The Template Textbook",
+      "zenodo_record_url": "https://zenodo.org/records/20533126",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Book",
+        "type": "publication",
+        "subtype": "book"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "record_title": "The Template Textbook",
+      "zenodo_record_url": "https://zenodo.org/records/20533126",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Book",
+        "type": "publication",
+        "subtype": "book"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "record_title": "The Template Textbook",
+      "zenodo_record_url": "https://zenodo.org/records/20533126",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Book",
+        "type": "publication",
+        "subtype": "book"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "record_title": "The Template Textbook",
+      "zenodo_record_url": "https://zenodo.org/records/20533126",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Book",
+        "type": "publication",
+        "subtype": "book"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  },
+  "domain": "Computational",
+  "type": "Book",
+  "methods": [
+    {
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
+    },
+    {
+      "name": "Data-driven analysis",
+      "description": "Applied data-driven analysis approach"
+    }
+  ],
+  "key_findings": [
+    "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and",
+    "---\nAssociated artifacts\nGitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/205"
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_textbook"
+  ]
+}

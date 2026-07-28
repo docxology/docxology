@@ -65,6 +65,7 @@ def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
     ("discovery", "page", "Discovery Map", "/discovery.html", "Canonical identifiers and public source queries.", ["agents"]),
     ("cite-verify", "page", "Cite & Verify", "/cite-verify.html", "Citation and source-of-truth rules.", ["citation"]),
     ("evidence", "page", "Evidence Ledger", "/evidence.html", "Claim-level evidence and caveats.", ["claims"]),
+    ("reproducibility", "page", "Reproducibility Ledger", "/reproducibility.html", "Per-work artifact availability across the curated bibliography.", ["reproducibility", "open science", "verification"]),
     ("resume", "document", "Resume and CV", "/resume/resume.html", "Accessible, no-JavaScript HTML CV with PDF, plaintext, JSON, and verification links.", ["resume", "cv", "accessibility"]),
     ("resume-verify", "page", "Resume Verification", "/resume/verify.html", "Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV.", ["resume", "cv", "verification", "hashes"]),
     ("collaborators", "page", "Collaborators", "/collaborators.html", "Research collaborator network.", ["people"]),

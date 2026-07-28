@@ -72,6 +72,7 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("build_exports_page.py", []),
     ("build_updates_page.py", []),
     ("build_evidence_page.py", []),              # evidence.html + EVIDENCE.md <- claims.json
+    ("build_reproducibility_ledger.py", []),    # reproducibility.{json,html} + REPRODUCIBILITY.md <- works.json + software.json
     ("ensure_agent_navigation.py", []),    # visible manifest link on bespoke entry pages
     ("build_reconciliation_report.py", []),      # writes reports/reconciliation_*.md
     ("audit_assets.py", []),                     # writes reports/asset_size_*.json

@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-07-21T22:07:25Z",
+  "schema_ref": "/data/agent-index.json#schemas/Organization",
+  "organizations": [
+    {
+      "name": "Active Inference Institute",
+      "alternate_names": [
+        "AII",
+        "Active Inference Lab"
+      ],
+      "url": "https://www.activeinference.institute/",
+      "public_landing_page": "https://activeinference.org/",
+      "wikidata": "https://www.wikidata.org/wiki/Q139600792",
+      "github": "https://github.com/ActiveInferenceInstitute",
+      "github_account_type": "user",
+      "github_note": "The ActiveInferenceInstitute GitHub account is a User account, not an Organization; requests to /orgs/ActiveInferenceInstitute return 404. Use /users/ActiveInferenceInstitute.",
+      "ein": "88-2985125",
+      "irs_status": "501(c)(3) public charity; IRS ruling March 2024",
+      "irs_record": "https://projects.propublica.org/nonprofits/organizations/882985125",
+      "role": "Research and education nonprofit focused on Active Inference and the Free Energy Principle"
+    },
+    {
+      "name": "COGSEC.org",
+      "url": "https://cogsec.org",
+      "role": "Cognitive security publication and research context"
+    },
+    {
+      "name": "Stanford University",
+      "url": "https://www.stanford.edu/",
+      "role": "PhD institution"
+    },
+    {
+      "name": "College of the Redwoods",
+      "url": "https://www.redwoods.edu/",
+      "role": "Teaching affiliation"
+    }
+  ]
+}

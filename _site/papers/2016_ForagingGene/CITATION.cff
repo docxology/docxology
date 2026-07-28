@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "ForagingGene"
+date-released: 2016
+authors:
+  - family-names: Friedman
+    given-names: Daniel A.
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Pilko
+    given-names: Anna
+  - family-names: Skowronski
+    given-names: Doriane
+  - family-names: Kerber
+    given-names: Krista
+  - family-names: Pinter-Wollman
+    given-names: Noa
+  - family-names: Gordon
+    given-names: Deborah M.

@@ -1,0 +1,218 @@
+{
+  "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+  "version": "0.1.2",
+  "doi": "10.5281/zenodo.20453879",
+  "doi_url": "https://doi.org/10.5281/zenodo.20453879",
+  "zenodo_record": "https://zenodo.org/records/20453879",
+  "record_id": "20932066",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in the Self-Improvement Agents specification (Hexo AI, 2026, arXiv:2605.27276). The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps.\n\nRun snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples. Values are injected by scripts/z_generate_manuscript_variables.py after analysis.\n\nKeywords: self-improvement agents, benchmark harness, reproducible evaluation, agent loops\n\n---\nAssociated artifacts\nGitHub release: v0.1.2 (https://github.com/docxology/template_sia/releases/tag/v0.1.2)\nDOI: https://doi.org/10.5281/zenodo.20453879\nZenodo: https://zenodo.org/records/20453879\nPDF SHA-256: 6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773",
+  "keywords": [
+    "self-improvement agents",
+    "benchmark harness",
+    "reproducible research",
+    "agent evaluation"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Selfimprovement_6e6d19d0.pdf",
+      "size_bytes": 223019,
+      "checksum": "md5:f8042650bd618719fb4eab9c40563527",
+      "download_url": "https://zenodo.org/api/records/20932066/files/Friedman_2026_Selfimprovement_6e6d19d0.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template_sia"
+    }
+  ],
+  "github_repo": "docxology/template_sia",
+  "source": "zenodo-only",
+  "checked_at": "2026-07-17T23:23:31Z",
+  "accepted_pairings": [
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20453880",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.1",
+      "release_tag": "0.1",
+      "release_name": "0.1",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20453880",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.2",
+      "release_tag": "0.2",
+      "release_name": "0.2",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20453880",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.3",
+      "release_tag": "0.3",
+      "release_name": "0.3",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20453880",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.4",
+      "release_tag": "0.4",
+      "release_name": "0.4",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20453880",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/0.5",
+      "release_tag": "0.5",
+      "release_name": "Multiproject",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    },
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "zenodo_record_url": "https://zenodo.org/records/20453880",
+      "github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v3.0.0",
+      "release_tag": "v3.0.0",
+      "release_name": "Research Project Template v3.0.0",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "raw_confidence": "needs_review",
+      "evidence": [
+        "github_repo_self_linked"
+      ],
+      "review_decision": "accept",
+      "reviewed_at": "2026-06-04T22:32:27Z",
+      "review_source": "user: Accept for all",
+      "source_report": "reports/paired_publications_2026-06-04.json"
+    }
+  ],
+  "manual_pairing_review": {
+    "decision": "accept",
+    "reviewed_at": "2026-06-04T22:32:27Z",
+    "source": "data/paired-publication-decisions.json"
+  },
+  "github_release_url": "https://github.com/docxology/template_sia/releases/tag/v0.1.2",
+  "release_tag": "v0.1.2",
+  "release_name": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar (v0.1.2)",
+  "pdf_sha256": "6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "Software pipeline design",
+      "description": "Applied software pipeline design approach"
+    },
+    {
+      "name": "Data-driven analysis",
+      "description": "Applied data-driven analysis approach"
+    }
+  ],
+  "key_findings": [
+    "This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .",
+    "The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps."
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/template_sia"
+  ]
+}

@@ -1,0 +1,40 @@
+# 🧬 NuclearStructure
+
+**Daniel A. Friedman, Daniel F. Pilch** (2016) · *Int. J. Radiation Biology*
+
+[![DOI](https://img.shields.io/badge/DOI-10.3109%2F09553002.2016.1144941-blue)](https://doi.org/10.3109/09553002.2016.1144941)
+
+---
+
+## Abstract
+
+> Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, ...
+
+## Keywords
+
+`Hi-C` · `chromosome conformation` · `radiation biology` · `chromatin architecture` · `DNA damage` · `topologically associating domains` · `nuclear organization` · `3C technologies`
+
+## Methods
+
+- Genomic and bioinformatic analysis
+- Statistical genetics
+
+## Key Findings
+
+- Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..
+- Chromosome conformation capture (3C) tec....
+
+## Artifacts
+
+- DOI: [10.3109/09553002.2016.1144941](https://doi.org/10.3109/09553002.2016.1144941)
+- PDF: [2016_NuclearStructure.pdf](2016_NuclearStructure.pdf)
+- PDF SHA-256: Not recorded
+
+## Citation
+
+> Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941.
+
+## Related
+
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

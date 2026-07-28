@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons"
+version: "3"
+date-released: 2022-12-26
+doi: 10.5281/zenodo.6320574
+url: "https://doi.org/10.5281/zenodo.6320574"
+authors:
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Applegate-Swanson
+    given-names: Shaun
+  - family-names: Balbuena
+    given-names: Jessica Angeli
+  - family-names: Choudhury
+    given-names: Arhan
+  - family-names: Cordes
+    given-names: RJ
+  - family-names: El Damaty
+    given-names: Shady
+  - family-names: Guénin—Carlut
+    given-names: Avel
+  - family-names: Knight
+    given-names: V. Bleu
+  - family-names: Metelkin
+    given-names: Ivan
+  - family-names: Shrivastava
+    given-names: Siddhant
+  - family-names: Singh
+    given-names: Amit Kumar
+  - family-names: Smékal
+    given-names: Jakub
+  - family-names: Caleb
+    given-names: Tuttle.
+  - family-names: Vyatkin
+    given-names: Alexander
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.6320574
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/6320574"
+    description: "Zenodo landing page"

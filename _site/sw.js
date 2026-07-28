@@ -1,0 +1,124 @@
+// Service Worker for danielarifriedman.com
+// Cache-first strategy for static assets, network-first for pages
+const CACHE_NAME = 'daf-portfolio-v22';
+const STATIC_ASSETS = [
+  '/',
+  '/index.html',
+  '/style.css',
+  '/js/hero-glitch.js',
+  '/js/publications.js',
+  '/js/tts-controls.js',
+  '/js/interactive.js',
+  '/js/search-utils.js',
+  '/js/art-gallery.js',
+  '/js/videos-page.js',
+  '/js/search-page.js',
+  '/js/repo-inventory.js',
+  '/js/index-page.js',
+  '/assets/hero-art/an-ant-is-a-colony.webp',
+  '/assets/hero-art/ant-head.webp',
+  '/assets/hero-art/army-ants.webp',
+  '/assets/hero-art/decentral-antelligence-agency.webp',
+  '/assets/hero-art/mesh-network.webp',
+  '/art.html',
+  '/discovery.html',
+  '/domains.html',
+  '/domain-entomology.html',
+  '/domain-active-inference.html',
+  '/domain-cognitive-security.html',
+  '/domain-art-synergetics.html',
+  '/domain-computational.html',
+  '/cite-verify.html',
+  '/evidence.html',
+  '/search.html',
+  '/catalog.html',
+  '/updates.html',
+  '/works/index.html',
+  '/feed.xml',
+  '/opensearch.xml',
+  '/llms.txt',
+  '/humans.txt',
+  '/AGENT_START.md',
+  '/search-index.json',
+  '/codemeta.json',
+  '/CITATION.cff',
+  '/bibliography.bib',
+  '/bibliography.csl.json',
+  '/bibliography.ris',
+  '/data/works.json',
+  '/data/artworks.json',
+  '/data/software.json',
+  '/data/people.json',
+  '/data/organizations.json',
+  '/data/claims.json',
+  '/data/catalog.json',
+  '/data/work-enrichment.json',
+  '/data/reconciliation.json',
+  '/data/generated-manifest.json',
+  '/GENERATED.md',
+  '/publications.html',
+  '/software.html',
+  '/videos.html',
+  '/manifest.json'
+];
+
+// Install: pre-cache core shell
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
+  );
+  self.skipWaiting();
+});
+
+// Activate: clean old caches
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+// Fetch: stale-while-revalidate for HTML, cache-first for fonts/css
+self.addEventListener('fetch', event => {
+  const { request } = event;
+  if (request.method !== 'GET') return;
+
+  // For navigation requests AND content-data JSON (works/publications/software/
+  // catalog exports + the search index): network-first with cache fallback.
+  // These change whenever a publication is catalogued; cache-first would serve a
+  // stale publication list to returning visitors until the SW version bumped
+  // (a per-page `?v=` query is stable across data edits, so it does not bust the
+  // cache). Network-first keeps content current while still working offline.
+  const url = new URL(request.url);
+  const isContentData = request.mode === 'navigate' ||
+    url.pathname.startsWith('/data/') ||
+    url.pathname === '/search-index.json';
+  if (isContentData) {
+    event.respondWith(
+      fetch(request)
+        .then(response => {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // For static assets (JS/CSS/images/fonts): cache-first with network fallback
+  event.respondWith(
+    caches.match(request).then(cached => {
+      if (cached) return cached;
+      return fetch(request).then(response => {
+        if (response.ok && response.type === 'basic') {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+        }
+        return response;
+      });
+    })
+  );
+});

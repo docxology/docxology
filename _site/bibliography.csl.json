@@ -1,0 +1,4910 @@
+[
+  {
+    "id": "Friedman2026TemplateApproachReproducibleGenerative001",
+    "type": "article-journal",
+    "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 1; docs: papers/2026_ReproducibleResearch/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.16903351",
+    "URL": "https://doi.org/10.5281/zenodo.16903351"
+  },
+  {
+    "id": "Friedman2026ActiveInferenceJournal500002",
+    "type": "webpage",
+    "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Series",
+    "keyword": "Media & Teaching; Series",
+    "note": "Catalog row 2; docs: not available",
+    "container-title": "YouTube",
+    "publisher": "YouTube",
+    "URL": "https://video.activeinference.institute/"
+  },
+  {
+    "id": "Friedman2026BeforePragmatismHadName003",
+    "type": "article-journal",
+    "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 3; docs: papers/2026_BeforePragmatism/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.18807970",
+    "URL": "https://doi.org/10.5281/zenodo.18807970"
+  },
+  {
+    "id": "Friedman2026GoldenCompassLunarFlux004",
+    "type": "article-journal",
+    "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 4; docs: papers/2026_Bimetalism/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.19335195",
+    "URL": "https://doi.org/10.5281/zenodo.19335195"
+  },
+  {
+    "id": "Friedman2026CognitiveIntegrityFrameworkFormal005",
+    "type": "article-journal",
+    "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 5; docs: papers/2026_CognitiveIntegrity/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.18364118",
+    "URL": "https://doi.org/10.5281/zenodo.18364118"
+  },
+  {
+    "id": "Friedman2026PersonalYouTube200Livestreams006",
+    "type": "webpage",
+    "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Series",
+    "keyword": "Media & Teaching; Series",
+    "note": "Catalog row 6; docs: not available",
+    "container-title": "YouTube",
+    "publisher": "YouTube",
+    "URL": "https://www.youtube.com/@danielarifriedman/playlists"
+  },
+  {
+    "id": "Friedman2026DoorsPerceptionAreThreshold007",
+    "type": "article-journal",
+    "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 7; docs: papers/2026_DoorsOfPerception/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.18600040",
+    "URL": "https://doi.org/10.5281/zenodo.18600040"
+  },
+  {
+    "id": "Friedman20255thAppliedActiveInference008",
+    "type": "speech",
+    "title": "5th Applied Active Inference Symposium — Abstract Book",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 8; docs: papers/2025_5thSymposium/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.17555266",
+    "URL": "https://doi.org/10.5281/zenodo.17555266"
+  },
+  {
+    "id": "Friedman2025AdaptiveBasicIncomeAuBI009",
+    "type": "article-journal",
+    "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 9; docs: papers/2025_AuBI/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17228945",
+    "URL": "https://doi.org/10.5281/zenodo.17228945"
+  },
+  {
+    "id": "Friedman2025CEREBRUMCaseEnabledReasoning010",
+    "type": "article-journal",
+    "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 10; docs: papers/2025_CEREBRUM/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.15170907",
+    "URL": "https://doi.org/10.5281/zenodo.15170907"
+  },
+  {
+    "id": "Friedman2025ComputationalComplexityEnergeticsAnt011",
+    "type": "article-journal",
+    "title": "Computational Complexity and Energetics of the Ant Stack",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 11; docs: papers/2025_AntStackComplexity/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17238736",
+    "URL": "https://doi.org/10.5281/zenodo.17238736"
+  },
+  {
+    "id": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+    "type": "article-journal",
+    "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 12; docs: papers/2025_EvoJump/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17229924",
+    "URL": "https://doi.org/10.5281/zenodo.17229924"
+  },
+  {
+    "id": "Friedman2025IncreasingAccessibilityApplicabilityActive013",
+    "type": "article-journal",
+    "title": "Increasing the Accessibility and Applicability of Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 13; docs: papers/2025_AccessibilityActiveInference/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.15061666",
+    "URL": "https://doi.org/10.5281/zenodo.15061666"
+  },
+  {
+    "id": "Friedman2025MDKVMultitrackMarkdownContainer014",
+    "type": "article-journal",
+    "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 14; docs: papers/2025_MDKV/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.16790554",
+    "URL": "https://doi.org/10.5281/zenodo.16790554"
+  },
+  {
+    "id": "Friedman2025MarkdownDecisionProcessFramework015",
+    "type": "article-journal",
+    "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 15; docs: papers/2025_MarkdownDecisionProcess/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17244386",
+    "URL": "https://doi.org/10.5281/zenodo.17244386"
+  },
+  {
+    "id": "Friedman2025CognitiveArtScienceToward016",
+    "type": "article-journal",
+    "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 16; docs: papers/2025_CognitiveArtScience/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.16740438",
+    "URL": "https://doi.org/10.5281/zenodo.16740438"
+  },
+  {
+    "id": "Friedman2025Time017",
+    "type": "article-journal",
+    "title": "On Time",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 17; docs: papers/2025_OnTime/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.15168381",
+    "URL": "https://doi.org/10.5281/zenodo.15168381"
+  },
+  {
+    "id": "Friedman2025QuadMathAnalyticalReview4D018",
+    "type": "article-journal",
+    "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 18; docs: papers/2025_QuadMath/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.16887799",
+    "URL": "https://doi.org/10.5281/zenodo.16887799"
+  },
+  {
+    "id": "Friedman2025ResNeiSolutionDesignDocument019",
+    "type": "article-journal",
+    "title": "ResNei: Solution Design Document",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 19; docs: papers/2025_ResNei/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.15389682",
+    "URL": "https://doi.org/10.5281/zenodo.15389682"
+  },
+  {
+    "id": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+    "type": "article-journal",
+    "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 20; docs: papers/2025_Symergetics/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17114389",
+    "URL": "https://doi.org/10.5281/zenodo.17114389"
+  },
+  {
+    "id": "Friedman2025SynthesisAgentNiche021",
+    "type": "article-journal",
+    "title": "Synthesis of Agent and Niche",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 21; docs: papers/2025_AgentAndNiche/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17235137",
+    "URL": "https://doi.org/10.5281/zenodo.17235137"
+  },
+  {
+    "id": "Friedman2025SystemsProcessesActiveInference022",
+    "type": "speech",
+    "title": "Systems Processes, Active Inference, and Beyond",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 22; docs: papers/2025_SystemsProcesses/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.17138223",
+    "URL": "https://doi.org/10.5281/zenodo.17138223"
+  },
+  {
+    "id": "Friedman2025TemporalDepthCoherentSelf023",
+    "type": "article-journal",
+    "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 23; docs: papers/2025_TemporalDepth/",
+    "container-title": "Frontiers in Psychology",
+    "publisher": "Frontiers in Psychology",
+    "DOI": "10.3389/fpsyg.2025.1585315",
+    "URL": "https://doi.org/10.3389/fpsyg.2025.1585315"
+  },
+  {
+    "id": "Friedman2025ActiveInferenceInstituteActive024",
+    "type": "article-journal",
+    "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 24; docs: papers/2025_AII_v3/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.17982447",
+    "URL": "https://doi.org/10.5281/zenodo.17982447"
+  },
+  {
+    "id": "Friedman2025AntStack025",
+    "type": "article-journal",
+    "title": "The Ant Stack",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 25; docs: papers/2025_AntStack/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.16782756",
+    "URL": "https://doi.org/10.5281/zenodo.16782756"
+  },
+  {
+    "id": "Friedman2025DiscoveryEngineAIDriven026",
+    "type": "article-journal",
+    "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 26; docs: papers/2025_DiscoveryEngine/",
+    "container-title": "ArXiv",
+    "publisher": "ArXiv",
+    "DOI": "10.48550/arXiv.2505.17500",
+    "URL": "https://doi.org/10.48550/arXiv.2505.17500"
+  },
+  {
+    "id": "Friedman2025ThoughtseedsHierarchicalAgenticFramework027",
+    "type": "article-journal",
+    "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 27; docs: papers/2025_Thoughtseeds/",
+    "container-title": "Entropy",
+    "publisher": "Entropy",
+    "DOI": "10.3390/e27050459",
+    "URL": "https://doi.org/10.3390/e27050459"
+  },
+  {
+    "id": "Friedman2025TowardsScienceConsciousnessSocial028",
+    "type": "article-journal",
+    "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 28; docs: papers/2025_ConsciousnessAnts/",
+    "container-title": "Book Chapter",
+    "publisher": "Book Chapter",
+    "URL": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes"
+  },
+  {
+    "id": "Friedman2024AligningActiveInferenceOntology029",
+    "type": "article-journal",
+    "title": "Aligning Active Inference Ontology to SUMO",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 29; docs: papers/2024_OntologySUMO/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.11459322",
+    "URL": "https://doi.org/10.5281/zenodo.11459322"
+  },
+  {
+    "id": "Friedman2024BioFirmDevelopmentAtApplied030",
+    "type": "speech",
+    "title": "BioFirm Development at Applied Active Inference Symposium 2024",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 30; docs: papers/2024_BioFirm/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.14861595",
+    "URL": "https://doi.org/10.5281/zenodo.14861595"
+  },
+  {
+    "id": "Friedman2024BridgingGapsImageMeme031",
+    "type": "article-journal",
+    "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 31; docs: papers/2024_ImageMemeResearch/",
+    "container-title": "JASIST",
+    "publisher": "JASIST",
+    "DOI": "10.1002/asi.24900",
+    "URL": "https://doi.org/10.1002/asi.24900"
+  },
+  {
+    "id": "Friedman2024ChemicalTranscriptomicDiversityDo032",
+    "type": "article-journal",
+    "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 32; docs: papers/2024_BlattodeaDiversity/",
+    "container-title": "Ecology & Evolution",
+    "publisher": "Ecology & Evolution",
+    "DOI": "10.1002/ece3.70063",
+    "URL": "https://doi.org/10.1002/ece3.70063"
+  },
+  {
+    "id": "Friedman2024CommentsNationalDigitalTwins033",
+    "type": "article-journal",
+    "title": "Comments on National Digital Twins R&D Strategic Plan",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 33; docs: papers/2024_DigitalTwins/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.13273681",
+    "URL": "https://doi.org/10.5281/zenodo.13273681"
+  },
+  {
+    "id": "Friedman2024EnhancingPopulationBasedSearch034",
+    "type": "article-journal",
+    "title": "Enhancing Population-based Search with Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 34; docs: papers/2024_PopulationSearch/",
+    "container-title": "ArXiv",
+    "publisher": "ArXiv",
+    "DOI": "10.48550/arXiv.2408.09548",
+    "URL": "https://doi.org/10.48550/arXiv.2408.09548"
+  },
+  {
+    "id": "Friedman2024FarmWorksDecentralizedAIAgents035",
+    "type": "article-journal",
+    "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 35; docs: papers/2024_FarmWorks/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.13754585",
+    "URL": "https://doi.org/10.5281/zenodo.13754585"
+  },
+  {
+    "id": "Friedman2024FederatedInferenceBeliefSharing036",
+    "type": "article-journal",
+    "title": "Federated inference and belief sharing",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 36; docs: papers/2024_FederatedInference/",
+    "container-title": "Neuroscience & Biobehavioral Reviews",
+    "publisher": "Neuroscience & Biobehavioral Reviews",
+    "DOI": "10.1016/j.neubiorev.2023.105500",
+    "URL": "https://doi.org/10.1016/j.neubiorev.2023.105500"
+  },
+  {
+    "id": "Friedman2024FourFoldFieldsQuantum037",
+    "type": "article-journal",
+    "title": "Four-fold Fields of Quantum Dreams",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 37; docs: papers/2024_QuantumDreams/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10798144",
+    "URL": "https://doi.org/10.5281/zenodo.10798144"
+  },
+  {
+    "id": "Friedman2024MathArtStream8William038",
+    "type": "speech",
+    "title": "MathArt Stream #8: William Blake and Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 38; docs: papers/2024_MathArtBlake/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.13711301",
+    "URL": "https://doi.org/10.5281/zenodo.13711301"
+  },
+  {
+    "id": "Friedman2024SensemakingFederationExploringFrontiers039",
+    "type": "speech",
+    "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 39; docs: papers/2024_SensemakingFederation/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.14574046",
+    "URL": "https://doi.org/10.5281/zenodo.14574046"
+  },
+  {
+    "id": "Friedman2024SharedProtentionsMultiAgent040",
+    "type": "article-journal",
+    "title": "Shared Protentions in Multi-Agent Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 40; docs: papers/2024_SharedProtentions/",
+    "container-title": "Entropy",
+    "publisher": "Entropy",
+    "DOI": "10.3390/e26040303",
+    "URL": "https://doi.org/10.3390/e26040303"
+  },
+  {
+    "id": "Friedman2024ActiveInferenceInstituteActive041",
+    "type": "article-journal",
+    "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 41; docs: papers/2024_AII_v2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.14108992",
+    "URL": "https://doi.org/10.5281/zenodo.14108992"
+  },
+  {
+    "id": "Friedman2024WayFindingInfiniteImaginarium042",
+    "type": "article-journal",
+    "title": "Way Finding in the Infinite Imaginarium",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 42; docs: papers/2024_InfiniteImaginarium/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10601081",
+    "URL": "https://doi.org/10.5281/zenodo.10601081"
+  },
+  {
+    "id": "Friedman2024WhyPaleolithicRockstarsWere043",
+    "type": "article-journal",
+    "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 43; docs: papers/2024_PaleolithicRockstars/",
+    "container-title": "Physics of Life Reviews",
+    "publisher": "Physics of Life Reviews",
+    "DOI": "10.1016/j.plrev.2024.04.010",
+    "URL": "https://doi.org/10.1016/j.plrev.2024.04.010"
+  },
+  {
+    "id": "Friedman2024WritingCurioCardsNFT044",
+    "type": "article-journal",
+    "title": "Writing on Curio Cards for the \"On NFT\" book",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 44; docs: papers/2024_CurioCards/",
+    "container-title": "Taschen",
+    "publisher": "Taschen",
+    "URL": "https://www.worldcat.org/isbn/978-3-8365-9970-2"
+  },
+  {
+    "id": "Friedman2023GuidedTourThroughSpaces045",
+    "type": "article-journal",
+    "title": "A guided tour through the spaces of particular \"minds\"",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 45; docs: papers/2023_GuidedTourMinds/",
+    "container-title": "Physics of Life Reviews",
+    "publisher": "Physics of Life Reviews",
+    "DOI": "10.1016/j.plrev.2023.11.001",
+    "URL": "https://doi.org/10.1016/j.plrev.2023.11.001"
+  },
+  {
+    "id": "Friedman2023SinglePheromoneModelAccounts046",
+    "type": "article-journal",
+    "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 46; docs: papers/2023_SinglePheromone/",
+    "container-title": "Cognitive Systems Research",
+    "publisher": "Cognitive Systems Research",
+    "DOI": "10.1016/j.cogsys.2023.02.005",
+    "URL": "https://doi.org/10.1016/j.cogsys.2023.02.005"
+  },
+  {
+    "id": "Friedman2023SnapshotPipelineTissueSpecific047",
+    "type": "article-journal",
+    "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 47; docs: papers/2023_HoneyBeeGeneExpression/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10400744",
+    "URL": "https://doi.org/10.5281/zenodo.10400744"
+  },
+  {
+    "id": "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
+    "type": "article-journal",
+    "title": "A variational synthesis of evolutionary and developmental dynamics",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 48; docs: papers/2023_VariationalSynthesis/",
+    "container-title": "Entropy",
+    "publisher": "Entropy",
+    "DOI": "10.3390/e25070964",
+    "URL": "https://doi.org/10.3390/e25070964"
+  },
+  {
+    "id": "Friedman2023ATLASQuestionOrientedApproach049",
+    "type": "article-journal",
+    "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 49; docs: papers/2023_ATLAS/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10296601",
+    "URL": "https://doi.org/10.5281/zenodo.10296601"
+  },
+  {
+    "id": "Friedman2023AccountActiveInferenceModeling050",
+    "type": "article-journal",
+    "title": "An Account of Active Inference Modeling",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 50; docs: papers/2023_AccountActiveInference/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.8415312",
+    "URL": "https://doi.org/10.5281/zenodo.8415312"
+  },
+  {
+    "id": "Friedman2023CognitiveSovereigntyActiveInference051",
+    "type": "article-journal",
+    "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 51; docs: papers/2023_CognitiveSovereignty/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10038231",
+    "URL": "https://doi.org/10.5281/zenodo.10038231"
+  },
+  {
+    "id": "Friedman2023CommentsAIAccountabilityPolicy052",
+    "type": "article-journal",
+    "title": "Comments on AI Accountability Policy to NTIA",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 52; docs: papers/2023_AIAccountability/",
+    "container-title": "NTIA",
+    "publisher": "NTIA",
+    "DOI": "10.5281/zenodo.8025956",
+    "URL": "https://doi.org/10.5281/zenodo.8025956"
+  },
+  {
+    "id": "Friedman2023DistributedScienceScientificProcess053",
+    "type": "article-journal",
+    "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 53; docs: papers/2023_DistributedScience/",
+    "container-title": "OSF",
+    "publisher": "OSF",
+    "DOI": "10.31219/osf.io/dnw5k",
+    "URL": "https://doi.org/10.31219/osf.io/dnw5k"
+  },
+  {
+    "id": "Friedman2023EnhancedNSFPostdoctoralReporting054",
+    "type": "article-journal",
+    "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 54; docs: papers/2023_NSFReporting/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10160656",
+    "URL": "https://doi.org/10.5281/zenodo.10160656"
+  },
+  {
+    "id": "Friedman2023ExperimentalEntomologyAgeVideo055",
+    "type": "article-journal",
+    "title": "Experimental Entomology in the Age of Video",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 55; docs: papers/2023_VideoEntomology/",
+    "container-title": "JoVE",
+    "publisher": "JoVE",
+    "DOI": "10.3791/65002",
+    "URL": "https://doi.org/10.3791/65002"
+  },
+  {
+    "id": "Friedman2023GeneralizedNotationNotationActive056",
+    "type": "article-journal",
+    "title": "Generalized Notation Notation for Active Inference Models",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 56; docs: papers/2023_GNN/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7803327",
+    "URL": "https://doi.org/10.5281/zenodo.7803327"
+  },
+  {
+    "id": "Friedman2023GenerativeResearchTeamsActive057",
+    "type": "article-journal",
+    "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 57; docs: papers/2023_GenerativeResearchTeams/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.8164666",
+    "URL": "https://doi.org/10.5281/zenodo.8164666"
+  },
+  {
+    "id": "Friedman2023AntsAging058",
+    "type": "speech",
+    "title": "Of Ants & Aging",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 58; docs: papers/2023_AntsAging/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.7855581",
+    "URL": "https://doi.org/10.5281/zenodo.7855581"
+  },
+  {
+    "id": "Friedman2023OpenAccessScienceNeeds059",
+    "type": "article-journal",
+    "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 59; docs: papers/2023_OpenScienceSensemaking/",
+    "container-title": "MetaArXiv",
+    "publisher": "MetaArXiv",
+    "DOI": "10.31222/osf.io/9nb3u",
+    "URL": "https://doi.org/10.31222/osf.io/9nb3u"
+  },
+  {
+    "id": "Friedman2023PostdocReview20202023060",
+    "type": "speech",
+    "title": "Postdoc review (2020–2023)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 60; docs: papers/2023_PostdocReview/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.8377987",
+    "URL": "https://doi.org/10.5281/zenodo.8377987"
+  },
+  {
+    "id": "Friedman2023ActiveInferenceInstituteActive061",
+    "type": "article-journal",
+    "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 61; docs: papers/2023_AII_v1/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.8266280",
+    "URL": "https://doi.org/10.5281/zenodo.8266280"
+  },
+  {
+    "id": "Friedman2023P3IFPropertiesProcessesPerspectives062",
+    "type": "article-journal",
+    "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 62; docs: papers/2023_P3IF/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10034511",
+    "URL": "https://doi.org/10.5281/zenodo.10034511"
+  },
+  {
+    "id": "Friedman2023CommentOrNotComment063",
+    "type": "article-journal",
+    "title": "To comment or not to comment",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 63; docs: papers/2023_ToComment/",
+    "container-title": "Physics of Life Reviews",
+    "publisher": "Physics of Life Reviews",
+    "DOI": "10.1016/j.plrev.2023.06.002",
+    "URL": "https://doi.org/10.1016/j.plrev.2023.06.002"
+  },
+  {
+    "id": "Friedman2023TranscriptChrisFieldsPhysics064",
+    "type": "webpage",
+    "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Course",
+    "keyword": "Media & Teaching; Course",
+    "note": "Catalog row 64; docs: not available",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10447642",
+    "URL": "https://doi.org/10.5281/zenodo.10447642"
+  },
+  {
+    "id": "Friedman2023WilliamBlakeBuckminsterFuller065",
+    "type": "article-journal",
+    "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 65; docs: papers/2023_BlakeFuller/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7514367",
+    "URL": "https://doi.org/10.5281/zenodo.7514367"
+  },
+  {
+    "id": "Friedman2022ActiveInferenceOntologyDecentralized066",
+    "type": "article-journal",
+    "title": "An Active Inference Ontology for Decentralized Science",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 66; docs: papers/2022_ActiveInferenceOntology/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.6320574",
+    "URL": "https://doi.org/10.5281/zenodo.6320574"
+  },
+  {
+    "id": "Friedman2022CatechismTowardsActiveDiffusion067",
+    "type": "article-journal",
+    "title": "Catechism for Towards Active Diffusion",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 67; docs: papers/2022_ActiveDiffusion/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7443847",
+    "URL": "https://doi.org/10.5281/zenodo.7443847"
+  },
+  {
+    "id": "Friedman2022FromUsersSenseMakers068",
+    "type": "article-journal",
+    "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 68; docs: papers/2022_StigmergicAnnotation/",
+    "container-title": "Hypertext '22",
+    "publisher": "Hypertext '22",
+    "DOI": "10.48550/arXiv.2205.06345",
+    "URL": "https://doi.org/10.48550/arXiv.2205.06345"
+  },
+  {
+    "id": "Friedman2022FreeWillOrLack069",
+    "type": "article-journal",
+    "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 69; docs: papers/2022_FreeWillSapolsky/",
+    "container-title": "ALIUS Bulletin",
+    "publisher": "ALIUS Bulletin",
+    "DOI": "10.5281/zenodo.7394900",
+    "URL": "https://doi.org/10.5281/zenodo.7394900"
+  },
+  {
+    "id": "Friedman2022PredictiveProcessingInterpretationMirror070",
+    "type": "article-journal",
+    "title": "Predictive Processing Interpretation of the Mirror Test",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 70; docs: papers/2022_MirrorTest/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7377255",
+    "URL": "https://doi.org/10.5281/zenodo.7377255"
+  },
+  {
+    "id": "Friedman2022StructuringInformationCommonsOpen071",
+    "type": "book",
+    "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Cognitive Security; Book",
+    "note": "Catalog row 71; docs: papers/2022_InformationCommons/",
+    "container-title": "COGSEC.org",
+    "publisher": "COGSEC.org",
+    "URL": "https://cogsec.org"
+  },
+  {
+    "id": "Friedman2022SystemsModelingCognitiveAudits072",
+    "type": "article-journal",
+    "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 72; docs: papers/2022_HypercertEcosystems/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7626768",
+    "URL": "https://doi.org/10.5281/zenodo.7626768"
+  },
+  {
+    "id": "Friedman2022FreeEnergyPrincipleActive073",
+    "type": "article-journal",
+    "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 73; docs: papers/2022_SystematicLiteratureAnalysis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7449367",
+    "URL": "https://doi.org/10.5281/zenodo.7449367"
+  },
+  {
+    "id": "Friedman2022TrustFinderRecommendationsCommunityBased074",
+    "type": "article-journal",
+    "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 74; docs: papers/2022_TrustFinder/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7093836",
+    "URL": "https://doi.org/10.5281/zenodo.7093836"
+  },
+  {
+    "id": "Friedman2021ActiveInferantsActiveInference075",
+    "type": "article-journal",
+    "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 75; docs: papers/2021_ActiveInferants/",
+    "container-title": "Frontiers in Behavioral Neuroscience",
+    "publisher": "Frontiers in Behavioral Neuroscience",
+    "DOI": "10.3389/fnbeh.2021.647732",
+    "URL": "https://doi.org/10.3389/fnbeh.2021.647732"
+  },
+  {
+    "id": "Friedman2021ActiveInferenceModelingConflict076",
+    "type": "article-journal",
+    "title": "Active Inference in Modeling Conflict",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 76; docs: papers/2021_ModelingConflict/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.5750934",
+    "URL": "https://doi.org/10.5281/zenodo.5750934"
+  },
+  {
+    "id": "Friedman2021DigitalRhetoricalEcosystemAnalysis077",
+    "type": "article-journal",
+    "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 77; docs: papers/2021_DigitalRhetorical/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.5573946",
+    "URL": "https://doi.org/10.5281/zenodo.5573946"
+  },
+  {
+    "id": "Friedman2021InnovatorSDigitalPlaybook078",
+    "type": "webpage",
+    "title": "Innovator's Digital Playbook",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Playbook",
+    "keyword": "Media & Teaching; Playbook",
+    "note": "Catalog row 78; docs: not available",
+    "container-title": "Web",
+    "publisher": "Web",
+    "URL": "https://innovatorsdigitalplaybook.com/"
+  },
+  {
+    "id": "Friedman2021NarrativeInformationEcosystemsConflict079",
+    "type": "book",
+    "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Cognitive Security; Book",
+    "note": "Catalog row 79; docs: papers/2021_NarrativeEcosystems/",
+    "container-title": "COGSEC.org",
+    "publisher": "COGSEC.org",
+    "URL": "https://cogsec.org"
+  },
+  {
+    "id": "Friedman2021NarrativeInformationManagement080",
+    "type": "article-journal",
+    "title": "Narrative Information Management",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 80; docs: papers/2021_NarrativeInformationMgmt/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.5565577",
+    "URL": "https://doi.org/10.5281/zenodo.5565577"
+  },
+  {
+    "id": "Friedman2021FacilitatorSCatechismPlaybook081",
+    "type": "webpage",
+    "title": "The Facilitator's Catechism Playbook",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Playbook",
+    "keyword": "Media & Teaching; Playbook",
+    "note": "Catalog row 81; docs: not available",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.4579413",
+    "URL": "https://doi.org/10.5281/zenodo.4579413"
+  },
+  {
+    "id": "Friedman2020ActiveInferenceBehaviorEngineering082",
+    "type": "article-journal",
+    "title": "Active Inference & Behavior Engineering for Teams",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 82; docs: papers/2020_BehaviorEngineering/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.4021162",
+    "URL": "https://doi.org/10.5281/zenodo.4021162"
+  },
+  {
+    "id": "Friedman2020CommunicationRemoteTeams083",
+    "type": "webpage",
+    "title": "Communication for Remote Teams",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Course",
+    "keyword": "Media & Teaching; Course",
+    "note": "Catalog row 83; docs: not available",
+    "container-title": "Udemy",
+    "publisher": "Udemy",
+    "URL": "https://www.udemy.com/course/communication-for-remote-teams/"
+  },
+  {
+    "id": "Friedman2020DistributedPhysiologyMolecularBasis084",
+    "type": "article-journal",
+    "title": "Distributed physiology and the molecular basis of social life in eusocial insects",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 84; docs: papers/2020_DistributedPhysiology/",
+    "container-title": "Hormones & Behavior",
+    "publisher": "Hormones & Behavior",
+    "DOI": "10.1016/j.yhbeh.2020.104757",
+    "URL": "https://doi.org/10.1016/j.yhbeh.2020.104757"
+  },
+  {
+    "id": "Friedman2020EmergentTeamsComplexThreats085",
+    "type": "article-journal",
+    "title": "Emergent Teams for Complex Threats",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 85; docs: papers/2020_EmergentTeams/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.3986084",
+    "URL": "https://doi.org/10.5281/zenodo.3986084"
+  },
+  {
+    "id": "Friedman2020GeneExpressionVariationBrains086",
+    "type": "article-journal",
+    "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 86; docs: papers/2020_GeneExpressionForagers/",
+    "container-title": "Communications Biology",
+    "publisher": "Communications Biology",
+    "DOI": "10.1038/s42003-020-0813-8",
+    "URL": "https://doi.org/10.1038/s42003-020-0813-8"
+  },
+  {
+    "id": "Friedman2020HowUseKeybaseRemote087",
+    "type": "webpage",
+    "title": "How to use Keybase for remote teams",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Course",
+    "keyword": "Media & Teaching; Course",
+    "note": "Catalog row 87; docs: not available",
+    "container-title": "Udemy",
+    "publisher": "Udemy",
+    "URL": "https://www.udemy.com/course/keybase-for-remote-teams/"
+  },
+  {
+    "id": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
+    "type": "article-journal",
+    "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 88; docs: papers/2020_NeurotransmitterVariation/",
+    "container-title": "Analytical & Bioanalytical Chemistry",
+    "publisher": "Analytical & Bioanalytical Chemistry",
+    "DOI": "10.1007/s00216-019-02355-3",
+    "URL": "https://doi.org/10.1007/s00216-019-02355-3"
+  },
+  {
+    "id": "Friedman2020GreatPresetRemoteTeams089",
+    "type": "book",
+    "title": "The Great Preset: Remote Teams and Operational Art",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Cognitive Security; Book",
+    "note": "Catalog row 89; docs: papers/2020_GreatPreset/",
+    "container-title": "COGSEC.org",
+    "publisher": "COGSEC.org",
+    "URL": "https://cogsec.org"
+  },
+  {
+    "id": "Friedman2020InnovatorSCatechism090",
+    "type": "article-journal",
+    "title": "The Innovator's Catechism",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 90; docs: papers/2020_InnovatorsCatechism/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.4383229",
+    "URL": "https://doi.org/10.5281/zenodo.4383229"
+  },
+  {
+    "id": "Friedman2020NeuroscienceDecisionMakingInterview091",
+    "type": "article-journal",
+    "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 91; docs: papers/2020_NeuroscienceDecision/",
+    "container-title": "ALIUS Bulletin",
+    "publisher": "ALIUS Bulletin",
+    "DOI": "10.34700/8pg4-0h12",
+    "URL": "https://doi.org/10.34700/8pg4-0h12"
+  },
+  {
+    "id": "Friedman2019DennettExplainedInterviewDaniel092",
+    "type": "article-journal",
+    "title": "Dennett Explained (interview with Daniel Dennett)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 92; docs: papers/2019_DennettExplained/",
+    "container-title": "ALIUS Bulletin",
+    "publisher": "ALIUS Bulletin",
+    "DOI": "10.34700/7gkw-zh08",
+    "URL": "https://doi.org/10.34700/7gkw-zh08"
+  },
+  {
+    "id": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
+    "type": "article-journal",
+    "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 93; docs: papers/2019_PhDDissertation/",
+    "container-title": "Stanford University",
+    "publisher": "Stanford University",
+    "URL": "http://purl.stanford.edu/pb813wm1484"
+  },
+  {
+    "id": "Friedman2019AntColonyAsTest094",
+    "type": "article-journal",
+    "title": "The ant colony as a test for scientific theories of consciousness",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 94; docs: papers/2019_AntConsciousness/",
+    "container-title": "Synthese",
+    "publisher": "Synthese",
+    "DOI": "10.1007/s11229-019-02130-y",
+    "URL": "https://doi.org/10.1007/s11229-019-02130-y"
+  },
+  {
+    "id": "Friedman2019PhysiologyForagerHydrationVariation095",
+    "type": "article-journal",
+    "title": "The physiology of forager hydration and variation among harvester ant colonies",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 95; docs: papers/2019_ForagerHydration/",
+    "container-title": "Scientific Reports",
+    "publisher": "Scientific Reports",
+    "DOI": "10.1038/s41598-019-41586-3",
+    "URL": "https://doi.org/10.1038/s41598-019-41586-3"
+  },
+  {
+    "id": "Friedman2018ForagingBehaviorLocomotionInvasive096",
+    "type": "article-journal",
+    "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 96; docs: papers/2018_ArgentineAnt/",
+    "container-title": "PLoS One",
+    "publisher": "PLoS One",
+    "DOI": "10.1371/journal.pone.0202117",
+    "URL": "https://doi.org/10.1371/journal.pone.0202117"
+  },
+  {
+    "id": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
+    "type": "speech",
+    "title": "MVEE: A Framework for Evolutionary Studies",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Media & Teaching; Presentation",
+    "note": "Catalog row 97; docs: papers/2018_MVEE/",
+    "container-title": "Presentation",
+    "publisher": "Presentation",
+    "DOI": "10.5281/zenodo.13999298",
+    "URL": "https://doi.org/10.5281/zenodo.13999298"
+  },
+  {
+    "id": "Friedman2018WoodliceMenBayesianAccount098",
+    "type": "article-journal",
+    "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 98; docs: papers/2018_WoodliceAndMen/",
+    "container-title": "ALIUS Bulletin",
+    "publisher": "ALIUS Bulletin",
+    "DOI": "10.34700/h460-nz89",
+    "URL": "https://doi.org/10.34700/h460-nz89"
+  },
+  {
+    "id": "Friedman2018PartnerPenPlayParallel099",
+    "type": "article-journal",
+    "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 99; docs: papers/2018_PPPiP/",
+    "container-title": "Arts",
+    "publisher": "Arts",
+    "DOI": "10.3390/arts7030039",
+    "URL": "https://doi.org/10.3390/arts7030039"
+  },
+  {
+    "id": "Friedman2018RoleDopamineCollectiveRegulation100",
+    "type": "article-journal",
+    "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 100; docs: papers/2018_DopamineForaging/",
+    "container-title": "iScience",
+    "publisher": "iScience",
+    "DOI": "10.1016/j.isci.2018.09.001",
+    "URL": "https://doi.org/10.1016/j.isci.2018.09.001"
+  },
+  {
+    "id": "Friedman2017MutAntsAreHere101",
+    "type": "article-journal",
+    "title": "The MutAnts are here",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 101; docs: papers/2017_MutAnts/",
+    "container-title": "Cell",
+    "publisher": "Cell",
+    "DOI": "10.1016/j.cell.2017.07.046",
+    "URL": "https://doi.org/10.1016/j.cell.2017.07.046"
+  },
+  {
+    "id": "Friedman2017TwoLineagesThatNeed102",
+    "type": "article-journal",
+    "title": "Two lineages that need each other",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 102; docs: papers/2017_TwoLineages/",
+    "container-title": "Molecular Ecology",
+    "publisher": "Molecular Ecology",
+    "DOI": "10.1111/mec.13964",
+    "URL": "https://doi.org/10.1111/mec.13964"
+  },
+  {
+    "id": "Friedman2016AntGeneticsReproductivePhysiology103",
+    "type": "article-journal",
+    "title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 103; docs: papers/2016_AntGenetics/",
+    "container-title": "Annual Review of Neuroscience",
+    "publisher": "Annual Review of Neuroscience",
+    "DOI": "10.1146/annurev-neuro-070815-013927",
+    "URL": "https://doi.org/10.1146/annurev-neuro-070815-013927"
+  },
+  {
+    "id": "Friedman2016ContextDependentExpressionForaging104",
+    "type": "article-journal",
+    "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 104; docs: papers/2016_ForagingGene/",
+    "container-title": "Proceedings of the Royal Society B",
+    "publisher": "Proceedings of the Royal Society B",
+    "DOI": "10.1098/rspb.2016.0841",
+    "URL": "https://doi.org/10.1098/rspb.2016.0841"
+  },
+  {
+    "id": "Friedman2016InfluenceNuclearStructureFormation105",
+    "type": "article-journal",
+    "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 105; docs: papers/2016_NuclearStructure/",
+    "container-title": "Int. J. Radiation Biology",
+    "publisher": "Int. J. Radiation Biology",
+    "DOI": "10.3109/09553002.2016.1144941",
+    "URL": "https://doi.org/10.3109/09553002.2016.1144941"
+  },
+  {
+    "id": "Friedman2015CommentaryPortugueseCryptoJews106",
+    "type": "article-journal",
+    "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 106; docs: papers/2015_CryptoJews/",
+    "container-title": "Frontiers in Genetics",
+    "publisher": "Frontiers in Genetics",
+    "DOI": "10.3389/fgene.2015.00261",
+    "URL": "https://doi.org/10.3389/fgene.2015.00261"
+  },
+  {
+    "id": "Friedman2015CouldEhrlichialInfectionCause107",
+    "type": "article-journal",
+    "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 107; docs: papers/2015_EhrlichialInfection/",
+    "container-title": "Medical Hypotheses",
+    "publisher": "Medical Hypotheses",
+    "DOI": "10.1016/j.mehy.2015.09.015",
+    "URL": "https://doi.org/10.1016/j.mehy.2015.09.015"
+  },
+  {
+    "id": "Friedman2015LargeScaleCodingSequence108",
+    "type": "article-journal",
+    "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 108; docs: papers/2015_HoneyBeeEvolution/",
+    "container-title": "Molecular Biology & Evolution",
+    "publisher": "Molecular Biology & Evolution",
+    "DOI": "10.1093/molbev/msu292",
+    "URL": "https://doi.org/10.1093/molbev/msu292"
+  },
+  {
+    "id": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
+    "type": "article-journal",
+    "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 109; docs: papers/2026_EntoLinguistics/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.19574117",
+    "URL": "https://doi.org/10.5281/zenodo.19574117"
+  },
+  {
+    "id": "Friedman2026LivingMetaAnalysisArchitecture110",
+    "type": "article-journal",
+    "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 110; docs: papers/2026_ActInfMetaAnalysis/",
+    "container-title": "Active Inference Journal",
+    "publisher": "Active Inference Journal",
+    "DOI": "10.5281/zenodo.19461933",
+    "URL": "https://doi.org/10.5281/zenodo.19461933"
+  },
+  {
+    "id": "Friedman2026DynamicAttentionalAgentsFocused111",
+    "type": "article-journal",
+    "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 111; docs: papers/2026_FocusedAttentionMeditation/",
+    "container-title": "CSCIS vol 2857, Springer",
+    "publisher": "CSCIS vol 2857, Springer",
+    "DOI": "10.1007/978-3-032-16955-6_11",
+    "URL": "https://doi.org/10.1007/978-3-032-16955-6_11"
+  },
+  {
+    "id": "Friedman2026CompositionalApproachesLinguisticCase112",
+    "type": "article-journal",
+    "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 112; docs: papers/2026_CognitiveCaseDiagrams/",
+    "container-title": "Active Inference Journal",
+    "publisher": "Active Inference Journal",
+    "DOI": "10.5281/zenodo.19695259",
+    "URL": "https://doi.org/10.5281/zenodo.19695259"
+  },
+  {
+    "id": "Friedman2026TowardsLean4Formalization113",
+    "type": "article-journal",
+    "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 113; docs: papers/2026_FEPLean/",
+    "container-title": "Active Inference Journal",
+    "publisher": "Active Inference Journal",
+    "DOI": "10.5281/zenodo.19699233",
+    "URL": "https://doi.org/10.5281/zenodo.19699233"
+  },
+  {
+    "id": "Friedman2020FacilitatorSCatechism114",
+    "type": "article-journal",
+    "title": "The Facilitator's Catechism",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 114; docs: papers/2020_FacilitatorsCatechism/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.4062540",
+    "URL": "https://doi.org/10.5281/zenodo.4062540"
+  },
+  {
+    "id": "Friedman2026ArchitectureFalseGodsWilliam115",
+    "type": "article-journal",
+    "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 115; docs: papers/2026_BlakeJiang/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20144983",
+    "URL": "https://doi.org/10.5281/zenodo.20144983"
+  },
+  {
+    "id": "Friedman2026CrescentCityLivingWaves116",
+    "type": "article-journal",
+    "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 116; docs: papers/2026_CrescentCity/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20286170",
+    "URL": "https://doi.org/10.5281/zenodo.20286170"
+  },
+  {
+    "id": "Friedman2026IntroductionBiologyGenerativeApproach117",
+    "type": "book",
+    "title": "Introduction to Biology: A Generative Approach",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Computational; Book",
+    "note": "Catalog row 117; docs: papers/2026_BiologyTextbook/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20286477",
+    "URL": "https://doi.org/10.5281/zenodo.20286477"
+  },
+  {
+    "id": "Friedman2026PolicyEntanglementActiveInference119",
+    "type": "article-journal",
+    "title": "Policy Entanglement in Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 119; docs: papers/2026_PolicyEntanglementActive/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20418904",
+    "URL": "https://doi.org/10.5281/zenodo.20418904"
+  },
+  {
+    "id": "Friedman2026BoundedAutoResearchTinyReproducible120",
+    "type": "article-journal",
+    "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417016",
+    "URL": "https://doi.org/10.5281/zenodo.20417016"
+  },
+  {
+    "id": "Friedman2026ConvergenceAnalysisGradientDescent121",
+    "type": "article-journal",
+    "title": "Convergence Analysis of Gradient Descent Optimization",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417136",
+    "URL": "https://doi.org/10.5281/zenodo.20417136"
+  },
+  {
+    "id": "Friedman2026EditorialQualityAtScale122",
+    "type": "article-journal",
+    "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 122; docs: papers/2026_EditorialQualityAt/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417104",
+    "URL": "https://doi.org/10.5281/zenodo.20417104"
+  },
+  {
+    "id": "Friedman2026TemplateApproachReproducibleGenerative123",
+    "type": "article-journal",
+    "title": "A template/ approach to Reproducible Generative Research",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 123; docs: papers/2026_TemplateApproachReproducible/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20419007",
+    "URL": "https://doi.org/10.5281/zenodo.20419007"
+  },
+  {
+    "id": "Friedman2026ActiveInferenceMultiTrack124",
+    "type": "article-journal",
+    "title": "Active Inference Multi-Track Exemplar",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 124; docs: papers/2026_ActiveInferenceMulti/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20417021",
+    "URL": "https://doi.org/10.5281/zenodo.20417021"
+  },
+  {
+    "id": "Friedman2026BeeStackEvidenceTypedScaffold125",
+    "type": "article-journal",
+    "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 125; docs: papers/2026_BeeStack/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20420556",
+    "URL": "https://doi.org/10.5281/zenodo.20420556"
+  },
+  {
+    "id": "Friedman2026WhenDoBugsSee126",
+    "type": "article-journal",
+    "title": "When do bugs see (infra)red?",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 126; docs: papers/2026_WhenDoBugs/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20450880",
+    "URL": "https://doi.org/10.5281/zenodo.20450880"
+  },
+  {
+    "id": "Friedman2026SelfImprovementAgentHarness127",
+    "type": "article-journal",
+    "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 127; docs: papers/2026_SelfImprovementAgent/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20453879",
+    "URL": "https://doi.org/10.5281/zenodo.20453879"
+  },
+  {
+    "id": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
+    "type": "speech",
+    "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Presentation",
+    "keyword": "Active Inference; Presentation",
+    "note": "Catalog row 128; docs: papers/2025_BiofirmDevelopmentWith/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.14861596",
+    "URL": "https://doi.org/10.5281/zenodo.14861596"
+  },
+  {
+    "id": "Friedman2025ConCatEnateEmulation129",
+    "type": "article-journal",
+    "title": "Con-cat-enate: emulation of Cat Hippocampus",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 129; docs: papers/2025_ConCatEnate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.13626536",
+    "URL": "https://doi.org/10.5281/zenodo.13626536"
+  },
+  {
+    "id": "Friedman2025GraphspeakLanguageHandshake130",
+    "type": "article-journal",
+    "title": "Graphspeak: of language and handshake",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 130; docs: papers/2025_Graphspeak/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.14737156",
+    "URL": "https://doi.org/10.5281/zenodo.14737156"
+  },
+  {
+    "id": "Friedman2025BevCycPositPrimitiveDrivers131",
+    "type": "article-journal",
+    "title": "BevCyc - posit on primitive drivers of creatures",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 131; docs: papers/2025_BevCycPositPrimitive/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.14737075",
+    "URL": "https://doi.org/10.5281/zenodo.14737075"
+  },
+  {
+    "id": "Friedman2025BeaconsPreEmulationSocial132",
+    "type": "article-journal",
+    "title": "Beacons - pre emulation of social cortex",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 132; docs: papers/2025_BeaconsPreEmulation/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.14737059",
+    "URL": "https://doi.org/10.5281/zenodo.14737059"
+  },
+  {
+    "id": "Friedman2025ConCatEnatePilot133",
+    "type": "article-journal",
+    "title": "Con-cat-enate: pilot overview",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 133; docs: papers/2025_ConCatEnate2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.14737042",
+    "URL": "https://doi.org/10.5281/zenodo.14737042"
+  },
+  {
+    "id": "Friedman2024PushPullPrimingSequence134",
+    "type": "article-journal",
+    "title": "Push and Pull: A priming sequence",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 134; docs: papers/2024_PushPull/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10659374",
+    "URL": "https://doi.org/10.5281/zenodo.10659374"
+  },
+  {
+    "id": "Friedman2023NaturalAIBasedScience135",
+    "type": "article-journal",
+    "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 135; docs: papers/2023_NaturalAIBased/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10360056",
+    "URL": "https://doi.org/10.5281/zenodo.10360056"
+  },
+  {
+    "id": "Friedman2023ATLASQuestionOrientedApproach136",
+    "type": "article-journal",
+    "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 136; docs: papers/2023_ATLAS2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.10362561",
+    "URL": "https://doi.org/10.5281/zenodo.10362561"
+  },
+  {
+    "id": "Friedman2023TranscriptActiveInferenceGuestStream137",
+    "type": "article-journal",
+    "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 137; docs: papers/2023_TranscriptActiveInference/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.8228934",
+    "URL": "https://doi.org/10.5281/zenodo.8228934"
+  },
+  {
+    "id": "Friedman2023ModernNostrIndexCard138",
+    "type": "article-journal",
+    "title": "Modern Nostr Index Card-based Knowledge Engineering",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 138; docs: papers/2023_ModernNostrIndex/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.8118155",
+    "URL": "https://doi.org/10.5281/zenodo.8118155"
+  },
+  {
+    "id": "Friedman2023SlidesIris139",
+    "type": "article-journal",
+    "title": "Slides for Iris",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 139; docs: papers/2023_SlidesIris/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7838652",
+    "URL": "https://doi.org/10.5281/zenodo.7838652"
+  },
+  {
+    "id": "Friedman2022CanonicalNeuralNetworksPerform140",
+    "type": "article-journal",
+    "title": "Canonical neural networks perform active inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 140; docs: papers/2022_CanonicalNeuralNetworks/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7400525",
+    "URL": "https://doi.org/10.5281/zenodo.7400525"
+  },
+  {
+    "id": "Friedman2022InteroceptionAsModelingAllostasis141",
+    "type": "article-journal",
+    "title": "Interoception as modeling, allostasis as control",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 141; docs: papers/2022_InteroceptionAsModeling/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7400708",
+    "URL": "https://doi.org/10.5281/zenodo.7400708"
+  },
+  {
+    "id": "Friedman2022TranscriptMarkSolmsConsciousness142",
+    "type": "article-journal",
+    "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 142; docs: papers/2022_Transcript/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7259006",
+    "URL": "https://doi.org/10.5281/zenodo.7259006"
+  },
+  {
+    "id": "Friedman2022WorkedExampleBayesianMechanics143",
+    "type": "article-journal",
+    "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 143; docs: papers/2022_WorkedExampleBayesian/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7400785",
+    "URL": "https://doi.org/10.5281/zenodo.7400785"
+  },
+  {
+    "id": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+    "type": "article-journal",
+    "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 144; docs: papers/2022_TranscriptDiscussions/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7401874",
+    "URL": "https://doi.org/10.5281/zenodo.7401874"
+  },
+  {
+    "id": "Friedman2022TrackingPublicSensemakingThrough145",
+    "type": "article-journal",
+    "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 145; docs: papers/2022_TrackingPublicSensemaking/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.6904426",
+    "URL": "https://doi.org/10.5281/zenodo.6904426"
+  },
+  {
+    "id": "Friedman2021TranscriptKarlFriston1st146",
+    "type": "article-journal",
+    "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 146; docs: papers/2021_Transcript/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.5797040",
+    "URL": "https://doi.org/10.5281/zenodo.5797040"
+  },
+  {
+    "id": "Friedman2021CollaborativeWritingCatechismBased147",
+    "type": "article-journal",
+    "title": "Collaborative Writing for Catechism-Based Teams",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 147; docs: papers/2021_CollaborativeWritingCatechism/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.4624298",
+    "URL": "https://doi.org/10.5281/zenodo.4624298"
+  },
+  {
+    "id": "Friedman2020ReimaginingMaps148",
+    "type": "article-journal",
+    "title": "Reimagining Maps",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 148; docs: papers/2020_ReimaginingMaps/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.4170025",
+    "URL": "https://doi.org/10.5281/zenodo.4170025"
+  },
+  {
+    "id": "Friedman2020InfiniteGamesInfiniteTeams149",
+    "type": "article-journal",
+    "title": "Infinite Games for Infinite Teams",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 149; docs: papers/2020_InfiniteGamesInfinite/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.12601674",
+    "URL": "https://doi.org/10.5281/zenodo.12601674"
+  },
+  {
+    "id": "Friedman2026MusicNeverStoppedGrateful150",
+    "type": "article-journal",
+    "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 150; docs: papers/2026_MusicNeverStopped/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20482025",
+    "URL": "https://doi.org/10.5281/zenodo.20482025"
+  },
+  {
+    "id": "Friedman2026DeterministicTestbedSelfOrganizing151",
+    "type": "article-journal",
+    "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 151; docs: papers/2026_DeterministicTestbedSelf/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20533669",
+    "URL": "https://doi.org/10.5281/zenodo.20533669"
+  },
+  {
+    "id": "Friedman2026RecoveringLLMPersonaAccuracies152",
+    "type": "article-journal",
+    "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 152; docs: papers/2026_RecoveringLLMPersona/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20498699",
+    "URL": "https://doi.org/10.5281/zenodo.20498699"
+  },
+  {
+    "id": "Friedman2026TriplicateDataDrivenLarge153",
+    "type": "article-journal",
+    "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 153; docs: papers/2026_Triplicate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20533675",
+    "URL": "https://doi.org/10.5281/zenodo.20533675"
+  },
+  {
+    "id": "Friedman2026TemplateTextbook154",
+    "type": "book",
+    "title": "The Template Textbook",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Computational; Book",
+    "note": "Catalog row 154; docs: papers/2026_TemplateTextbook/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20533125",
+    "URL": "https://doi.org/10.5281/zenodo.20533125"
+  },
+  {
+    "id": "Friedman2016LessonsFromColony155",
+    "type": "article-journal",
+    "title": "Lessons from the colony",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 155; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "URL": "https://www.science.org/doi/10.1126/science.352.6288.886"
+  },
+  {
+    "id": "Friedman2016FullSpeedAheadCity156",
+    "type": "article-journal",
+    "title": "Full speed ahead to the City on the Hill",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "AII Ecosystem; Paper",
+    "note": "Catalog row 156; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "DOI": "10.1126/science.352.6288.886",
+    "URL": "https://doi.org/10.1126/science.352.6288.886"
+  },
+  {
+    "id": "Friedman2021Disinforge157",
+    "type": "article-journal",
+    "title": "Disinforge",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 157; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "URL": "https://www.science.org/doi/10.1126/science.371.6524.22"
+  },
+  {
+    "id": "Friedman2021DefiningEvents2020Hindsight158",
+    "type": "article-journal",
+    "title": "Defining events: 2020 in hindsight",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 158; docs: not available",
+    "container-title": "Science",
+    "publisher": "Science",
+    "DOI": "10.1126/science.371.6524.22",
+    "URL": "https://doi.org/10.1126/science.371.6524.22"
+  },
+  {
+    "id": "Friedman2022ActiveBlockferenceCadCADActive159",
+    "type": "article-journal",
+    "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 159; docs: not available",
+    "container-title": "International Workshop on Active Inference",
+    "publisher": "International Workshop on Active Inference",
+    "DOI": "10.1007/978-3-031-28719-0_10",
+    "URL": "https://doi.org/10.1007/978-3-031-28719-0_10"
+  },
+  {
+    "id": "Friedman2024FromNeuronalPacketsThoughtseeds160",
+    "type": "article-journal",
+    "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 160; docs: not available",
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "DOI": "10.48550/arXiv.2408.15982",
+    "URL": "https://doi.org/10.48550/arXiv.2408.15982"
+  },
+  {
+    "id": "Friedman2021KnowledgeManagementArchipelago161",
+    "type": "article-journal",
+    "title": "Knowledge Management Archipelago",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 161; docs: not available",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.5034808",
+    "URL": "https://doi.org/10.5281/zenodo.5034808"
+  },
+  {
+    "id": "Friedman2024CommentsSubmittedByBlockScience162",
+    "type": "article-journal",
+    "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 162; docs: not available",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.13273682",
+    "URL": "https://doi.org/10.5281/zenodo.13273682"
+  },
+  {
+    "id": "Friedman2017OsteopathyVariableVariabilityHealth163",
+    "type": "article-journal",
+    "title": "Osteopathy and the Variable Variability of Health",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 163; docs: not available",
+    "container-title": "The Cranial Letter 70(4)",
+    "publisher": "The Cranial Letter 70(4)"
+  },
+  {
+    "id": "Friedman2016CellsMechanobiologyOsteopathy164",
+    "type": "article-journal",
+    "title": "Cells, Mechanobiology, and Osteopathy",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Genetics & Biomedical; Paper",
+    "note": "Catalog row 164; docs: not available",
+    "container-title": "The Cranial Letter 69(1)",
+    "publisher": "The Cranial Letter 69(1)"
+  },
+  {
+    "id": "Friedman2026ITraceVerificationFirstWebcam165",
+    "type": "article-journal",
+    "title": "iTrace: verification-first webcam eye-movement analysis",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 165; docs: papers/2026_ITrace/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20614908",
+    "URL": "https://doi.org/10.5281/zenodo.20614908"
+  },
+  {
+    "id": "Friedman2026DemoCreateDeclarativeAudioVisual166",
+    "type": "article-journal",
+    "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 166; docs: papers/2026_DemoCreate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20693216",
+    "URL": "https://doi.org/10.5281/zenodo.20693216"
+  },
+  {
+    "id": "Friedman2026ENTOENcryptedTypedOmnitrack167",
+    "type": "article-journal",
+    "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 167; docs: papers/2026_ENTO/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20396328",
+    "URL": "https://doi.org/10.5281/zenodo.20396328"
+  },
+  {
+    "id": "Friedman2026GeneralizedNotationNotationGNN168",
+    "type": "article-journal",
+    "title": "GeneralizedNotationNotation (GNN)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 168; docs: papers/2026_GeneralizedNotationNotationGNN/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.7803313",
+    "URL": "https://doi.org/10.5281/zenodo.7803313"
+  },
+  {
+    "id": "Friedman2026COGANTDeterministicCodebaseGNN169",
+    "type": "article-journal",
+    "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 169; docs: papers/2026_COGANT/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20705350",
+    "URL": "https://doi.org/10.5281/zenodo.20705350"
+  },
+  {
+    "id": "Friedman2026AGEINTAgenticIntelligence170",
+    "type": "article-journal",
+    "title": "AGEINT: Agentic Intelligence",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 170; docs: papers/2026_AGEINT/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20732274",
+    "URL": "https://doi.org/10.5281/zenodo.20732274"
+  },
+  {
+    "id": "Friedman2026PolicyDistillationAsActive171",
+    "type": "article-journal",
+    "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 171; docs: papers/2026_PolicyDistillationAs/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20747834",
+    "URL": "https://doi.org/10.5281/zenodo.20747834"
+  },
+  {
+    "id": "Friedman2026TemplateMadlibDeterministicToken172",
+    "type": "article-journal",
+    "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 172; docs: papers/2026_TemplateMadlib/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20786638",
+    "URL": "https://doi.org/10.5281/zenodo.20786638"
+  },
+  {
+    "id": "Friedman2026CaliforniaPublicRecordsTechnical173",
+    "type": "article-journal",
+    "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 173; docs: papers/2026_CaliforniaPublicRecords/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20789899",
+    "URL": "https://doi.org/10.5281/zenodo.20789899"
+  },
+  {
+    "id": "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
+    "type": "article-journal",
+    "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 174; docs: papers/2026_CogSecSkills/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20804585",
+    "URL": "https://doi.org/10.5281/zenodo.20804585"
+  },
+  {
+    "id": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+    "type": "article-journal",
+    "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 175; docs: papers/2026_RealizingEmptiness/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20834846",
+    "URL": "https://doi.org/10.5281/zenodo.20834846"
+  },
+  {
+    "id": "Friedman2026LivingMetaAnalysisModafinil176",
+    "type": "article-journal",
+    "title": "A Living Meta-Analysis of the Modafinil Literature",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 176; docs: papers/2026_LivingMetaAnalysis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20931964",
+    "URL": "https://doi.org/10.5281/zenodo.20931964"
+  },
+  {
+    "id": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
+    "type": "article-journal",
+    "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 177; docs: papers/2026_RefinementGold/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20931955",
+    "URL": "https://doi.org/10.5281/zenodo.20931955"
+  },
+  {
+    "id": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+    "type": "article-journal",
+    "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 178; docs: papers/2026_AlphaCOGANT/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.20976824",
+    "URL": "https://doi.org/10.5281/zenodo.20976824"
+  },
+  {
+    "id": "Friedman2026MappingWilliamBlakeS179",
+    "type": "article-journal",
+    "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 179; docs: papers/2026_MappingWilliamBlake/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21047573",
+    "URL": "https://doi.org/10.5281/zenodo.21047573"
+  },
+  {
+    "id": "Friedman2026SortitionUpstreamNTQR180",
+    "type": "article-journal",
+    "title": "Sortition Upstream of NTQR",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 180; docs: papers/2026_SortitionUpstreamNTQR/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21083779",
+    "URL": "https://doi.org/10.5281/zenodo.21083779"
+  },
+  {
+    "id": "Friedman2026ExploratoryDataAnalysisReproducible181",
+    "type": "article-journal",
+    "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 181; docs: papers/2026_ExploratoryDataAnalysis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21086292",
+    "URL": "https://doi.org/10.5281/zenodo.21086292"
+  },
+  {
+    "id": "Friedman2026DomainLanguageSpecifyingControlled182",
+    "type": "article-journal",
+    "title": "A Domain Language for Specifying Controlled Methods",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 182; docs: papers/2026_DomainLanguageSpecifying/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21086548",
+    "URL": "https://doi.org/10.5281/zenodo.21086548"
+  },
+  {
+    "id": "Friedman2026EntomologicalLawFieldMap183",
+    "type": "article-journal",
+    "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 183; docs: papers/2026_EntomologicalLaw/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21137276",
+    "URL": "https://doi.org/10.5281/zenodo.21137276"
+  },
+  {
+    "id": "Friedman2026ShapeBetweenFullPage184",
+    "type": "article-journal",
+    "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 184; docs: papers/2026_ShapeBetween/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21176000",
+    "URL": "https://doi.org/10.5281/zenodo.21176000"
+  },
+  {
+    "id": "Friedman2026AutopoieticProjectGeneration185",
+    "type": "article-journal",
+    "title": "Autopoietic Project Generation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 185; docs: papers/2026_AutopoieticProjectGeneration/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21227869",
+    "URL": "https://doi.org/10.5281/zenodo.21227869"
+  },
+  {
+    "id": "Friedman2026TemplatePitchDeckReproducible186",
+    "type": "article-journal",
+    "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 186; docs: papers/2026_TemplatePitchDeck/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21281509",
+    "URL": "https://doi.org/10.5281/zenodo.21281509"
+  },
+  {
+    "id": "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+    "type": "article-journal",
+    "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 187; docs: papers/2026_ReproducibleLiteratureSynthesis/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298894",
+    "URL": "https://doi.org/10.5281/zenodo.21298894"
+  },
+  {
+    "id": "Friedman2026RegisteredReportTemplatePreregistration188",
+    "type": "article-journal",
+    "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 188; docs: papers/2026_RegisteredReportTemplate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298892",
+    "URL": "https://doi.org/10.5281/zenodo.21298892"
+  },
+  {
+    "id": "Friedman2026RedactedReportTemplateDisclosure189",
+    "type": "article-journal",
+    "title": "Redacted Report Template: Disclosure Control and Release Audit",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 189; docs: papers/2026_RedactedReportTemplate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298890",
+    "URL": "https://doi.org/10.5281/zenodo.21298890"
+  },
+  {
+    "id": "Friedman2026PoolsRulesToolsTemplate190",
+    "type": "article-journal",
+    "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 190; docs: papers/2026_PoolsRulesTools/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298888",
+    "URL": "https://doi.org/10.5281/zenodo.21298888"
+  },
+  {
+    "id": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+    "type": "article-journal",
+    "title": "Illegal States, Mostly Unrepresentable",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 191; docs: papers/2026_IllegalStatesMostly/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298885",
+    "URL": "https://doi.org/10.5281/zenodo.21298885"
+  },
+  {
+    "id": "Friedman2026DataDescriptorTemplateSchema192",
+    "type": "article-journal",
+    "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 192; docs: papers/2026_DataDescriptorTemplate/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21298883",
+    "URL": "https://doi.org/10.5281/zenodo.21298883"
+  },
+  {
+    "id": "Friedman2026TemplateApproachReproducibleGenerative193",
+    "type": "article-journal",
+    "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 193; docs: papers/2026_TemplateApproachReproducible2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.19139089",
+    "URL": "https://doi.org/10.5281/zenodo.19139089"
+  },
+  {
+    "id": "Friedman2026PriorCognitiveArt194",
+    "type": "article-journal",
+    "title": "Prior Cognitive Art",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 194; docs: papers/2026_PriorCognitiveArt/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21316510",
+    "URL": "https://doi.org/10.5281/zenodo.21316510"
+  },
+  {
+    "id": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+    "type": "article-journal",
+    "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 195; docs: papers/2026_ActiveFractalRabbit/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21330636",
+    "URL": "https://doi.org/10.5281/zenodo.21330636"
+  },
+  {
+    "id": "Friedman2026FourfoldVisionWilliamBlake196",
+    "type": "article-journal",
+    "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 196; docs: papers/2026_FourfoldVision/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21388456",
+    "URL": "https://doi.org/10.5281/zenodo.21388456"
+  },
+  {
+    "id": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+    "type": "article-journal",
+    "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 197; docs: papers/2026_DuckRabbit/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21419693",
+    "URL": "https://doi.org/10.5281/zenodo.21419693"
+  },
+  {
+    "id": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+    "type": "article-journal",
+    "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 198; docs: papers/2026_SynthOBSFractiSynth/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21418687",
+    "URL": "https://doi.org/10.5281/zenodo.21418687"
+  }
+]

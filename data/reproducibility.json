@@ -1,0 +1,3889 @@
+{
+  "generated_at": "2026-07-25T02:37:31Z",
+  "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
+  "sources": [
+    "data/works.json",
+    "data/software.json"
+  ],
+  "measures": "artifact availability, not correctness or peer-review status",
+  "signal_definitions": [
+    {
+      "key": "persistent_id",
+      "label": "Persistent identifier",
+      "reader_action": "Resolve a DOI instead of trusting a live URL."
+    },
+    {
+      "key": "public_archive",
+      "label": "Public archive",
+      "reader_action": "Fetch a deposited copy from a third-party archive."
+    },
+    {
+      "key": "open_full_text",
+      "label": "Open full text",
+      "reader_action": "Read the full text without a paywall or request."
+    },
+    {
+      "key": "source_documents",
+      "label": "Source documents",
+      "reader_action": "Inspect the working folder behind the entry."
+    },
+    {
+      "key": "executable_code",
+      "label": "Executable code",
+      "reader_action": "Run the software that produced or accompanies it."
+    },
+    {
+      "key": "agent_readable",
+      "label": "Agent-readable guidance",
+      "reader_action": "Parse structured guidance without scraping prose."
+    }
+  ],
+  "band_definitions": [
+    {
+      "band": "independently reproducible",
+      "min_score": 5,
+      "meaning": "Code, archive, and text are all reachable without contacting the author."
+    },
+    {
+      "band": "independently checkable",
+      "min_score": 3,
+      "meaning": "Enough is public to confirm the record and read the argument."
+    },
+    {
+      "band": "citable only",
+      "min_score": 1,
+      "meaning": "The record resolves, but little beyond it is machine-checkable."
+    },
+    {
+      "band": "unverified",
+      "min_score": 0,
+      "meaning": "Nothing here is independently checkable from this site alone."
+    }
+  ],
+  "max_score": 6,
+  "work_count": 197,
+  "signal_totals": {
+    "persistent_id": 182,
+    "public_archive": 140,
+    "open_full_text": 173,
+    "source_documents": 180,
+    "executable_code": 27,
+    "agent_readable": 180
+  },
+  "band_counts": {
+    "independently reproducible": 133,
+    "independently checkable": 47,
+    "citable only": 8,
+    "unverified": 9
+  },
+  "score_histogram": {
+    "0": 9,
+    "1": 4,
+    "2": 4,
+    "3": 8,
+    "4": 39,
+    "5": 108,
+    "6": 25
+  },
+  "mean_score": 4.477,
+  "works": [
+    {
+      "num": 10,
+      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning010",
+      "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "CEREBRUM"
+      ]
+    },
+    {
+      "num": 12,
+      "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+      "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "EvoJump"
+      ]
+    },
+    {
+      "num": 14,
+      "citation_key": "Friedman2025MDKVMultitrackMarkdownContainer014",
+      "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+      "year": 2025,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "mdkv"
+      ]
+    },
+    {
+      "num": 15,
+      "citation_key": "Friedman2025MarkdownDecisionProcessFramework015",
+      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+      "year": 2025,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "markdown_decision_process"
+      ]
+    },
+    {
+      "num": 25,
+      "citation_key": "Friedman2025AntStack025",
+      "title": "The Ant Stack",
+      "year": 2025,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "ant_stack"
+      ]
+    },
+    {
+      "num": 62,
+      "citation_key": "Friedman2023P3IFPropertiesProcessesPerspectives062",
+      "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+      "year": 2023,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "p3if"
+      ]
+    },
+    {
+      "num": 82,
+      "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
+      "title": "Active Inference & Behavior Engineering for Teams",
+      "year": 2020,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "active_inference"
+      ]
+    },
+    {
+      "num": 109,
+      "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "year": 2026,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "ento_linguistics"
+      ]
+    },
+    {
+      "num": 112,
+      "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+      "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "cognitive_case_diagrams"
+      ]
+    },
+    {
+      "num": 113,
+      "citation_key": "Friedman2026TowardsLean4Formalization113",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "fep_lean"
+      ]
+    },
+    {
+      "num": 115,
+      "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+      "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+      "year": 2026,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "blake_jiang"
+      ]
+    },
+    {
+      "num": 117,
+      "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
+      "title": "Introduction to Biology: A Generative Approach",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Book",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "biology_textbook"
+      ]
+    },
+    {
+      "num": 126,
+      "citation_key": "Friedman2026WhenDoBugsSee126",
+      "title": "When do bugs see (infra)red?",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "cohereants"
+      ]
+    },
+    {
+      "num": 150,
+      "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
+      "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "grateful_data"
+      ]
+    },
+    {
+      "num": 151,
+      "citation_key": "Friedman2026DeterministicTestbedSelfOrganizing151",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_autoscientists"
+      ]
+    },
+    {
+      "num": 152,
+      "citation_key": "Friedman2026RecoveringLLMPersonaAccuracies152",
+      "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "ntqr_llm"
+      ]
+    },
+    {
+      "num": 153,
+      "citation_key": "Friedman2026TriplicateDataDrivenLarge153",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_newspaper"
+      ]
+    },
+    {
+      "num": 154,
+      "citation_key": "Friedman2026TemplateTextbook154",
+      "title": "The Template Textbook",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Book",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_textbook"
+      ]
+    },
+    {
+      "num": 165,
+      "citation_key": "Friedman2026ITraceVerificationFirstWebcam165",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "itrace"
+      ]
+    },
+    {
+      "num": 169,
+      "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+      "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "COGANT"
+      ]
+    },
+    {
+      "num": 170,
+      "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+      "title": "AGEINT: Agentic Intelligence",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "AGEINT"
+      ]
+    },
+    {
+      "num": 171,
+      "citation_key": "Friedman2026PolicyDistillationAsActive171",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "on_policy_distillation"
+      ]
+    },
+    {
+      "num": 172,
+      "citation_key": "Friedman2026TemplateMadlibDeterministicToken172",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_madlib"
+      ]
+    },
+    {
+      "num": 174,
+      "citation_key": "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "CogSecSkills"
+      ]
+    },
+    {
+      "num": 185,
+      "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+      "title": "Autopoietic Project Generation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template"
+      ]
+    },
+    {
+      "num": 1,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 3,
+      "citation_key": "Friedman2026BeforePragmatismHadName003",
+      "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+      "year": 2026,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 4,
+      "citation_key": "Friedman2026GoldenCompassLunarFlux004",
+      "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+      "year": 2026,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 5,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
+      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 7,
+      "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+      "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+      "year": 2026,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 8,
+      "citation_key": "Friedman20255thAppliedActiveInference008",
+      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "year": 2025,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 9,
+      "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
+      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+      "year": 2025,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 11,
+      "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
+      "title": "Computational Complexity and Energetics of the Ant Stack",
+      "year": 2025,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 13,
+      "citation_key": "Friedman2025IncreasingAccessibilityApplicabilityActive013",
+      "title": "Increasing the Accessibility and Applicability of Active Inference",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 16,
+      "citation_key": "Friedman2025CognitiveArtScienceToward016",
+      "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 17,
+      "citation_key": "Friedman2025Time017",
+      "title": "On Time",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 18,
+      "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
+      "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 19,
+      "citation_key": "Friedman2025ResNeiSolutionDesignDocument019",
+      "title": "ResNei: Solution Design Document",
+      "year": 2025,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 20,
+      "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 21,
+      "citation_key": "Friedman2025SynthesisAgentNiche021",
+      "title": "Synthesis of Agent and Niche",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 22,
+      "citation_key": "Friedman2025SystemsProcessesActiveInference022",
+      "title": "Systems Processes, Active Inference, and Beyond",
+      "year": 2025,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 24,
+      "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
+      "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+      "year": 2025,
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 27,
+      "citation_key": "Friedman2025ThoughtseedsHierarchicalAgenticFramework027",
+      "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "enactive_inference_model"
+      ]
+    },
+    {
+      "num": 29,
+      "citation_key": "Friedman2024AligningActiveInferenceOntology029",
+      "title": "Aligning Active Inference Ontology to SUMO",
+      "year": 2024,
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 30,
+      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
+      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
+      "year": 2024,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 33,
+      "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
+      "title": "Comments on National Digital Twins R&D Strategic Plan",
+      "year": 2024,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 35,
+      "citation_key": "Friedman2024FarmWorksDecentralizedAIAgents035",
+      "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+      "year": 2024,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 37,
+      "citation_key": "Friedman2024FourFoldFieldsQuantum037",
+      "title": "Four-fold Fields of Quantum Dreams",
+      "year": 2024,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 38,
+      "citation_key": "Friedman2024MathArtStream8William038",
+      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "year": 2024,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 39,
+      "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
+      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "year": 2024,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 41,
+      "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
+      "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+      "year": 2024,
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 42,
+      "citation_key": "Friedman2024WayFindingInfiniteImaginarium042",
+      "title": "Way Finding in the Infinite Imaginarium",
+      "year": 2024,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 47,
+      "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
+      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+      "year": 2023,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 49,
+      "citation_key": "Friedman2023ATLASQuestionOrientedApproach049",
+      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
+      "year": 2023,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 50,
+      "citation_key": "Friedman2023AccountActiveInferenceModeling050",
+      "title": "An Account of Active Inference Modeling",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 51,
+      "citation_key": "Friedman2023CognitiveSovereigntyActiveInference051",
+      "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+      "year": 2023,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 52,
+      "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
+      "title": "Comments on AI Accountability Policy to NTIA",
+      "year": 2023,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 54,
+      "citation_key": "Friedman2023EnhancedNSFPostdoctoralReporting054",
+      "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+      "year": 2023,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 56,
+      "citation_key": "Friedman2023GeneralizedNotationNotationActive056",
+      "title": "Generalized Notation Notation for Active Inference Models",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 57,
+      "citation_key": "Friedman2023GenerativeResearchTeamsActive057",
+      "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 58,
+      "citation_key": "Friedman2023AntsAging058",
+      "title": "Of Ants & Aging",
+      "year": 2023,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 60,
+      "citation_key": "Friedman2023PostdocReview20202023060",
+      "title": "Postdoc review (2020–2023)",
+      "year": 2023,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 61,
+      "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
+      "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+      "year": 2023,
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 65,
+      "citation_key": "Friedman2023WilliamBlakeBuckminsterFuller065",
+      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+      "year": 2023,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 66,
+      "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
+      "title": "An Active Inference Ontology for Decentralized Science",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 67,
+      "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
+      "title": "Catechism for Towards Active Diffusion",
+      "year": 2022,
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 69,
+      "citation_key": "Friedman2022FreeWillOrLack069",
+      "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+      "year": 2022,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 70,
+      "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
+      "title": "Predictive Processing Interpretation of the Mirror Test",
+      "year": 2022,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 72,
+      "citation_key": "Friedman2022SystemsModelingCognitiveAudits072",
+      "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+      "year": 2022,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 73,
+      "citation_key": "Friedman2022FreeEnergyPrincipleActive073",
+      "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 74,
+      "citation_key": "Friedman2022TrustFinderRecommendationsCommunityBased074",
+      "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+      "year": 2022,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 75,
+      "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+      "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+      "year": 2021,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "ActiveInferAnts",
+        "MetaInformAnt"
+      ]
+    },
+    {
+      "num": 76,
+      "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
+      "title": "Active Inference in Modeling Conflict",
+      "year": 2021,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 77,
+      "citation_key": "Friedman2021DigitalRhetoricalEcosystemAnalysis077",
+      "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 80,
+      "citation_key": "Friedman2021NarrativeInformationManagement080",
+      "title": "Narrative Information Management",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 85,
+      "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
+      "title": "Emergent Teams for Complex Threats",
+      "year": 2020,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 90,
+      "citation_key": "Friedman2020InnovatorSCatechism090",
+      "title": "The Innovator's Catechism",
+      "year": 2020,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 97,
+      "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
+      "title": "MVEE: A Framework for Evolutionary Studies",
+      "year": 2018,
+      "domain_name": "Media & Teaching",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 110,
+      "citation_key": "Friedman2026LivingMetaAnalysisArchitecture110",
+      "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 114,
+      "citation_key": "Friedman2020FacilitatorSCatechism114",
+      "title": "The Facilitator's Catechism",
+      "year": 2020,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 116,
+      "citation_key": "Friedman2026CrescentCityLivingWaves116",
+      "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 119,
+      "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+      "title": "Policy Entanglement in Active Inference",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 120,
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 121,
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 122,
+      "citation_key": "Friedman2026EditorialQualityAtScale122",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 123,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 124,
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+      "title": "Active Inference Multi-Track Exemplar",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 125,
+      "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
+      "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 127,
+      "citation_key": "Friedman2026SelfImprovementAgentHarness127",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 128,
+      "citation_key": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
+      "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Presentation",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 129,
+      "citation_key": "Friedman2025ConCatEnateEmulation129",
+      "title": "Con-cat-enate: emulation of Cat Hippocampus",
+      "year": 2025,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 130,
+      "citation_key": "Friedman2025GraphspeakLanguageHandshake130",
+      "title": "Graphspeak: of language and handshake",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 131,
+      "citation_key": "Friedman2025BevCycPositPrimitiveDrivers131",
+      "title": "BevCyc - posit on primitive drivers of creatures",
+      "year": 2025,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 132,
+      "citation_key": "Friedman2025BeaconsPreEmulationSocial132",
+      "title": "Beacons - pre emulation of social cortex",
+      "year": 2025,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 133,
+      "citation_key": "Friedman2025ConCatEnatePilot133",
+      "title": "Con-cat-enate: pilot overview",
+      "year": 2025,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 134,
+      "citation_key": "Friedman2024PushPullPrimingSequence134",
+      "title": "Push and Pull: A priming sequence",
+      "year": 2024,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 135,
+      "citation_key": "Friedman2023NaturalAIBasedScience135",
+      "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+      "year": 2023,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 136,
+      "citation_key": "Friedman2023ATLASQuestionOrientedApproach136",
+      "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+      "year": 2023,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 137,
+      "citation_key": "Friedman2023TranscriptActiveInferenceGuestStream137",
+      "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 138,
+      "citation_key": "Friedman2023ModernNostrIndexCard138",
+      "title": "Modern Nostr Index Card-based Knowledge Engineering",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 139,
+      "citation_key": "Friedman2023SlidesIris139",
+      "title": "Slides for Iris",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 140,
+      "citation_key": "Friedman2022CanonicalNeuralNetworksPerform140",
+      "title": "Canonical neural networks perform active inference",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 141,
+      "citation_key": "Friedman2022InteroceptionAsModelingAllostasis141",
+      "title": "Interoception as modeling, allostasis as control",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 142,
+      "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
+      "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 143,
+      "citation_key": "Friedman2022WorkedExampleBayesianMechanics143",
+      "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 144,
+      "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+      "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 145,
+      "citation_key": "Friedman2022TrackingPublicSensemakingThrough145",
+      "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+      "year": 2022,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 146,
+      "citation_key": "Friedman2021TranscriptKarlFriston1st146",
+      "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+      "year": 2021,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 147,
+      "citation_key": "Friedman2021CollaborativeWritingCatechismBased147",
+      "title": "Collaborative Writing for Catechism-Based Teams",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 148,
+      "citation_key": "Friedman2020ReimaginingMaps148",
+      "title": "Reimagining Maps",
+      "year": 2020,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 149,
+      "citation_key": "Friedman2020InfiniteGamesInfiniteTeams149",
+      "title": "Infinite Games for Infinite Teams",
+      "year": 2020,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 166,
+      "citation_key": "Friedman2026DemoCreateDeclarativeAudioVisual166",
+      "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 167,
+      "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
+      "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 173,
+      "citation_key": "Friedman2026CaliforniaPublicRecordsTechnical173",
+      "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 175,
+      "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 176,
+      "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 177,
+      "citation_key": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 178,
+      "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 179,
+      "citation_key": "Friedman2026MappingWilliamBlakeS179",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 180,
+      "citation_key": "Friedman2026SortitionUpstreamNTQR180",
+      "title": "Sortition Upstream of NTQR",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 181,
+      "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 182,
+      "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 183,
+      "citation_key": "Friedman2026EntomologicalLawFieldMap183",
+      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 184,
+      "citation_key": "Friedman2026ShapeBetweenFullPage184",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 186,
+      "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 187,
+      "citation_key": "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+      "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 188,
+      "citation_key": "Friedman2026RegisteredReportTemplatePreregistration188",
+      "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 189,
+      "citation_key": "Friedman2026RedactedReportTemplateDisclosure189",
+      "title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 190,
+      "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+      "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 191,
+      "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+      "title": "Illegal States, Mostly Unrepresentable",
+      "year": 2026,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 192,
+      "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+      "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 193,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 194,
+      "citation_key": "Friedman2026PriorCognitiveArt194",
+      "title": "Prior Cognitive Art",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 23,
+      "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
+      "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+      "year": 2025,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 26,
+      "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
+      "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "year": 2025,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 31,
+      "citation_key": "Friedman2024BridgingGapsImageMeme031",
+      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+      "year": 2024,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 32,
+      "citation_key": "Friedman2024ChemicalTranscriptomicDiversityDo032",
+      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+      "year": 2024,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 34,
+      "citation_key": "Friedman2024EnhancingPopulationBasedSearch034",
+      "title": "Enhancing Population-based Search with Active Inference",
+      "year": 2024,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 36,
+      "citation_key": "Friedman2024FederatedInferenceBeliefSharing036",
+      "title": "Federated inference and belief sharing",
+      "year": 2024,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 40,
+      "citation_key": "Friedman2024SharedProtentionsMultiAgent040",
+      "title": "Shared Protentions in Multi-Agent Active Inference",
+      "year": 2024,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 45,
+      "citation_key": "Friedman2023GuidedTourThroughSpaces045",
+      "title": "A guided tour through the spaces of particular \"minds\"",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 46,
+      "citation_key": "Friedman2023SinglePheromoneModelAccounts046",
+      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+      "year": 2023,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 48,
+      "citation_key": "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
+      "title": "A variational synthesis of evolutionary and developmental dynamics",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 53,
+      "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+      "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+      "year": 2023,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 55,
+      "citation_key": "Friedman2023ExperimentalEntomologyAgeVideo055",
+      "title": "Experimental Entomology in the Age of Video",
+      "year": 2023,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 59,
+      "citation_key": "Friedman2023OpenAccessScienceNeeds059",
+      "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+      "year": 2023,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 63,
+      "citation_key": "Friedman2023CommentOrNotComment063",
+      "title": "To comment or not to comment",
+      "year": 2023,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 68,
+      "citation_key": "Friedman2022FromUsersSenseMakers068",
+      "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+      "year": 2022,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 84,
+      "citation_key": "Friedman2020DistributedPhysiologyMolecularBasis084",
+      "title": "Distributed physiology and the molecular basis of social life in eusocial insects",
+      "year": 2020,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 86,
+      "citation_key": "Friedman2020GeneExpressionVariationBrains086",
+      "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
+      "year": 2020,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 88,
+      "citation_key": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
+      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+      "year": 2020,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 91,
+      "citation_key": "Friedman2020NeuroscienceDecisionMakingInterview091",
+      "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+      "year": 2020,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 92,
+      "citation_key": "Friedman2019DennettExplainedInterviewDaniel092",
+      "title": "Dennett Explained (interview with Daniel Dennett)",
+      "year": 2019,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 94,
+      "citation_key": "Friedman2019AntColonyAsTest094",
+      "title": "The ant colony as a test for scientific theories of consciousness",
+      "year": 2019,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 95,
+      "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
+      "title": "The physiology of forager hydration and variation among harvester ant colonies",
+      "year": 2019,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 96,
+      "citation_key": "Friedman2018ForagingBehaviorLocomotionInvasive096",
+      "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
+      "year": 2018,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 98,
+      "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
+      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+      "year": 2018,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 99,
+      "citation_key": "Friedman2018PartnerPenPlayParallel099",
+      "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+      "year": 2018,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 100,
+      "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+      "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+      "year": 2018,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 101,
+      "citation_key": "Friedman2017MutAntsAreHere101",
+      "title": "The MutAnts are here",
+      "year": 2017,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 102,
+      "citation_key": "Friedman2017TwoLineagesThatNeed102",
+      "title": "Two lineages that need each other",
+      "year": 2017,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 103,
+      "citation_key": "Friedman2016AntGeneticsReproductivePhysiology103",
+      "title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+      "year": 2016,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 104,
+      "citation_key": "Friedman2016ContextDependentExpressionForaging104",
+      "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+      "year": 2016,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 105,
+      "citation_key": "Friedman2016InfluenceNuclearStructureFormation105",
+      "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+      "year": 2016,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 106,
+      "citation_key": "Friedman2015CommentaryPortugueseCryptoJews106",
+      "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+      "year": 2015,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 107,
+      "citation_key": "Friedman2015CouldEhrlichialInfectionCause107",
+      "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+      "year": 2015,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 108,
+      "citation_key": "Friedman2015LargeScaleCodingSequence108",
+      "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+      "year": 2015,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 168,
+      "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 195,
+      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 196,
+      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "year": 2026,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 197,
+      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 198,
+      "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 28,
+      "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
+      "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
+      "year": 2025,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 43,
+      "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "year": 2024,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 44,
+      "citation_key": "Friedman2024WritingCurioCardsNFT044",
+      "title": "Writing on Curio Cards for the \"On NFT\" book",
+      "year": 2024,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 71,
+      "citation_key": "Friedman2022StructuringInformationCommonsOpen071",
+      "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
+      "year": 2022,
+      "domain_name": "Cognitive Security",
+      "type": "Book",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 79,
+      "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+      "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Book",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 89,
+      "citation_key": "Friedman2020GreatPresetRemoteTeams089",
+      "title": "The Great Preset: Remote Teams and Operational Art",
+      "year": 2020,
+      "domain_name": "Cognitive Security",
+      "type": "Book",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 93,
+      "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
+      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "year": 2019,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 111,
+      "citation_key": "Friedman2026DynamicAttentionalAgentsFocused111",
+      "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 64,
+      "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "year": 2023,
+      "domain_name": "Media & Teaching",
+      "type": "Course",
+      "score": 2,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 81,
+      "citation_key": "Friedman2021FacilitatorSCatechismPlaybook081",
+      "title": "The Facilitator's Catechism Playbook",
+      "year": 2021,
+      "domain_name": "Media & Teaching",
+      "type": "Playbook",
+      "score": 2,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 161,
+      "citation_key": "Friedman2021KnowledgeManagementArchipelago161",
+      "title": "Knowledge Management Archipelago",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 2,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 162,
+      "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
+      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "year": 2024,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 2,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 156,
+      "citation_key": "Friedman2016FullSpeedAheadCity156",
+      "title": "Full speed ahead to the City on the Hill",
+      "year": 2016,
+      "domain_name": "AII Ecosystem",
+      "type": "Paper",
+      "score": 1,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 158,
+      "citation_key": "Friedman2021DefiningEvents2020Hindsight158",
+      "title": "Defining events: 2020 in hindsight",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 1,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 159,
+      "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
+      "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+      "year": 2022,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 1,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 160,
+      "citation_key": "Friedman2024FromNeuronalPacketsThoughtseeds160",
+      "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+      "year": 2024,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 1,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 2,
+      "citation_key": "Friedman2026ActiveInferenceJournal500002",
+      "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+      "year": 2026,
+      "domain_name": "Media & Teaching",
+      "type": "Series",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 6,
+      "citation_key": "Friedman2026PersonalYouTube200Livestreams006",
+      "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
+      "year": 2026,
+      "domain_name": "Media & Teaching",
+      "type": "Series",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 78,
+      "citation_key": "Friedman2021InnovatorSDigitalPlaybook078",
+      "title": "Innovator's Digital Playbook",
+      "year": 2021,
+      "domain_name": "Media & Teaching",
+      "type": "Playbook",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 83,
+      "citation_key": "Friedman2020CommunicationRemoteTeams083",
+      "title": "Communication for Remote Teams",
+      "year": 2020,
+      "domain_name": "Media & Teaching",
+      "type": "Course",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 87,
+      "citation_key": "Friedman2020HowUseKeybaseRemote087",
+      "title": "How to use Keybase for remote teams",
+      "year": 2020,
+      "domain_name": "Media & Teaching",
+      "type": "Course",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 155,
+      "citation_key": "Friedman2016LessonsFromColony155",
+      "title": "Lessons from the colony",
+      "year": 2016,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 157,
+      "citation_key": "Friedman2021Disinforge157",
+      "title": "Disinforge",
+      "year": 2021,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 163,
+      "citation_key": "Friedman2017OsteopathyVariableVariabilityHealth163",
+      "title": "Osteopathy and the Variable Variability of Health",
+      "year": 2017,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 164,
+      "citation_key": "Friedman2016CellsMechanobiologyOsteopathy164",
+      "title": "Cells, Mechanobiology, and Osteopathy",
+      "year": 2016,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 0,
+      "band": "unverified",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": false,
+        "executable_code": false,
+        "agent_readable": false
+      },
+      "repositories": []
+    }
+  ]
+}

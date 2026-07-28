@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-17T21:37:09+00:00",
+  "source_commit_at_generation": "2732dbf26649349338aa4db8e0e6b47076046abf",
+  "repository": "docxology/docxology",
+  "canonical_origin": "https://danielarifriedman.com/",
+  "generator": {
+    "pipeline": "code/orchestrators/regenerate_all.py",
+    "python": ">=3.12 (pyproject.toml)",
+    "project_version": "0.1.0",
+    "orchestrator_sha256": {
+      "code/orchestrators/regenerate_all.py": "f2648b68540c7349615bfe14793c4490f574d55448ea1025184b74bb9d3629f6",
+      "code/orchestrators/build_pages_artifact.py": "e2d615204566d9b471f5eebc46a47d3e001950f1f2c3f6a1401e440a4715d386",
+      "code/orchestrators/build_agent_index.py": "223e0bd33ec91d73c089ee6858fbe4752cab1d950b966865f39429b2e73d0a3c",
+      "code/orchestrators/build_coverage_exceptions.py": "5e4e3a88d6d13aad804ccc4f9d45ba32c1dbb87ae0970c819042d3b1a221b6ad",
+      "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
+      "code/orchestrators/verify_live_site.py": "140ae03e9cf6d46b84b6055d9d6cdfae60b9e855ea2fd5bf51cfc09299cd6ab3",
+      "code/orchestrators/audit_assets.py": "619a43df77c146a482cefad120ba673ba7ce387f11edb6b5d2bf5b8a9de9f5dc",
+      "code/src/public_integrity.py": "784d7fb7007bf2f4a2f0c2d178a4d157d80c647926c04d88a1c83854bc161da0"
+    }
+  },
+  "source_sha256": {
+    "pages/BIBLIOGRAPHY.md": "cd49b78c2e719ec4d0896ba1490834b9278f42e3c38ab4e2166e12116e834531",
+    "pages/SOFTWARE.md": "06853c054fbd66e04eadfdd1031fa940ac75b5a49de98238f8ad89e24d07a46c",
+    "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
+    "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
+    "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
+    "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
+    "data/agent-index.json": "82dbc40317c9e286c0a211a054826ec3f3b676d1f1852b16906bf93f4c1127a7",
+    "data/generated-manifest.json": "be10e2f74bcabbf31ad2445ef1d19ab711fbeba55bdb921748ebf6304be33835",
+    "data/pages-artifact-manifest.json": "552fe95c98a3d696f2538abb7a3de1c308f0ff2b41fc02041e56ce41ee93df02"
+  },
+  "pages_artifact": {
+    "manifest": "data/pages-artifact-manifest.json",
+    "source_commit_at_generation": "2732dbf26649349338aa4db8e0e6b47076046abf",
+    "artifact_file_count": 4328,
+    "artifact_bytes": 759092851,
+    "omitted_paper_image_count": 9004
+  },
+  "deployment": {
+    "commit": "a9d96ab342ad9768e0ab37342ce2e6ab6ae6ea86",
+    "workflow_run_id": 29868898342,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/29868898342",
+    "pages_status": "built",
+    "verification_report": "reports/live_site_verification_2026-07-21.json",
+    "verification_generated_at": "2026-07-21T21:15:24Z",
+    "verification_overall_ok": true,
+    "verified_routes": "17/17"
+  },
+  "privacy": {
+    "cv_public_integrity_errors": [],
+    "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
+  },
+  "counts": {
+    "bibliography_docs_links": 180,
+    "bibliography_works": 197,
+    "domains": {
+      "AII Ecosystem": 6,
+      "Active Inference": 42,
+      "Art & Synergetics": 16,
+      "Cognitive Security": 32,
+      "Computational": 48,
+      "Entomology": 23,
+      "Genetics & Biomedical": 15,
+      "Presentations & Media": 15
+    },
+    "extracted_images": 9004,
+    "full_text_papers": 173,
+    "generated_exports": {
+      "data_publications_ld_main_entity": 197,
+      "data_software_json": 131,
+      "data_software_ld_main_entity": 131,
+      "data_works_json": 197
+    },
+    "github_inventory": {
+      "ActiveInferenceInstitute": 40,
+      "archived": 0,
+      "curated": 128,
+      "docxology": 347,
+      "fork_ActiveInferenceInstitute": 2,
+      "fork_docxology": 243,
+      "forks": 245,
+      "primary_ActiveInferenceInstitute": 38,
+      "primary_docxology": 104,
+      "primary_total": 142,
+      "private": 0,
+      "public": 387,
+      "recently_updated": 124,
+      "total": 387,
+      "uncataloged": 259
+    },
+    "paired_publication_decisions": {
+      "decision": "accept",
+      "groups": 24,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
+      "raw_candidates": 86
+    },
+    "paired_publications": {
+      "already_reviewed": 0,
+      "create_new": 0,
+      "github_releases": 2,
+      "needs_review": 0,
+      "pairs": 1,
+      "strong_pairs": 1,
+      "update_existing": 1,
+      "zenodo_records": 133
+    },
+    "paper_folder_docs": 180,
+    "papers_with_images": 141,
+    "public_source_snapshot": {
+      "Crossref ORCID DOI records": 15,
+      "Europe PMC exact author records": 10,
+      "GitHub user ActiveInferenceInstitute": 40,
+      "GitHub user docxology": 347,
+      "ORCID work groups": 20,
+      "PubMed exact author records": 8,
+      "Zenodo ORCID-linked records": 131,
+      "Zenodo exact-name creator records": 47
+    },
+    "software": {
+      "active_inference_institute": 38,
+      "curated_total": 131,
+      "docxology_owned": 93
+    },
+    "types": {
+      "Books": 5,
+      "Courses": 3,
+      "Papers": 176,
+      "Playbooks": 2,
+      "Presentations": 9,
+      "Series": 2
+    }
+  }
+}

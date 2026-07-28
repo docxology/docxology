@@ -1,0 +1,1650 @@
+{
+  "generated_at": "2026-05-30T18:40:06Z",
+  "date": "2026-05-30",
+  "note": "Paginated public-source inventory for review. Use as discovery evidence, not automatic claim replacement.",
+  "sections": [
+    {
+      "label": "ORCID work groups",
+      "url": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
+      "ok": true,
+      "items": [
+        {
+          "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+          "year": "2025",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/182842157"
+        },
+        {
+          "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
+          "year": "2024",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/158837151"
+        },
+        {
+          "title": "Shared Protentions in Multi-Agent Active Inference",
+          "year": "2024",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/156639002"
+        },
+        {
+          "title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
+          "year": "2023",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/146094079"
+        },
+        {
+          "title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
+          "year": "2023",
+          "type": "preprint",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/144691944"
+        },
+        {
+          "title": "To comment or not to comment, that is the question!",
+          "year": "2023",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/136675081"
+        },
+        {
+          "title": "A Variational Synthesis of Evolutionary and Developmental Dynamics",
+          "year": "2023",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/137350514"
+        },
+        {
+          "title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
+          "year": "2023",
+          "type": "preprint",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/134292883"
+        },
+        {
+          "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+          "year": "2023",
+          "type": "book-chapter",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/131294835"
+        },
+        {
+          "title": "The ant colony as a test for scientific theories of consciousness",
+          "year": "2021",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/53977487"
+        },
+        {
+          "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
+          "year": "2019",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/55721201"
+        },
+        {
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "year": "2018",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/48689097"
+        },
+        {
+          "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
+          "year": "2018",
+          "type": "journal-article",
+          "source": "Multidisciplinary Digital Publishing Institute",
+          "path": "/0000-0001-6232-9096/work/47511152"
+        },
+        {
+          "title": "Two lineages that need each other",
+          "year": "2017",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/30693490"
+        },
+        {
+          "title": "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task",
+          "year": "2016",
+          "type": "journal-article",
+          "source": "Crossref",
+          "path": "/0000-0001-6232-9096/work/26526723"
+        },
+        {
+          "title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+          "year": "2016",
+          "type": "journal-article",
+          "source": "Crossref Metadata Search",
+          "path": "/0000-0001-6232-9096/work/26034911"
+        },
+        {
+          "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
+          "year": "2016",
+          "type": "journal-article",
+          "source": "Crossref Metadata Search",
+          "path": "/0000-0001-6232-9096/work/23250259"
+        },
+        {
+          "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+          "year": "2015",
+          "type": "journal-article",
+          "source": "Crossref Metadata Search",
+          "path": "/0000-0001-6232-9096/work/23250252"
+        },
+        {
+          "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
+          "year": "2015",
+          "type": "journal-article",
+          "source": "Crossref Metadata Search",
+          "path": "/0000-0001-6232-9096/work/23250253"
+        },
+        {
+          "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
+          "year": "2014",
+          "type": "journal-article",
+          "source": "Crossref Metadata Search",
+          "path": "/0000-0001-6232-9096/work/23250256"
+        }
+      ]
+    },
+    {
+      "label": "Crossref ORCID DOI records",
+      "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096&rows=100",
+      "ok": true,
+      "items": [
+        {
+          "title": "Context-dependent expression of the\n            <i>foraging</i>\n            gene in field colonies of ants: the interacting roles of age, environment and task",
+          "doi": "10.1098/rspb.2016.0841",
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                31
+              ]
+            ]
+          },
+          "container": "Proceedings of the Royal Society B: Biological Sciences",
+          "type": "journal-article"
+        },
+        {
+          "title": "To comment or not to comment, that is the question!",
+          "doi": "10.1016/j.plrev.2023.06.002",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                9
+              ]
+            ]
+          },
+          "container": "Physics of Life Reviews",
+          "type": "journal-article"
+        },
+        {
+          "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
+          "doi": "10.1038/s41598-019-41586-3",
+          "published": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                26
+              ]
+            ]
+          },
+          "container": "Scientific Reports",
+          "type": "journal-article"
+        },
+        {
+          "title": "Shared Protentions in Multi-Agent Active Inference",
+          "doi": "10.3390/e26040303",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                29
+              ]
+            ]
+          },
+          "container": "Entropy",
+          "type": "journal-article"
+        },
+        {
+          "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
+          "doi": "10.1016/j.plrev.2024.04.010",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                9
+              ]
+            ]
+          },
+          "container": "Physics of Life Reviews",
+          "type": "journal-article"
+        },
+        {
+          "title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
+          "doi": "10.31222/osf.io/9nb3u",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "container": "",
+          "type": "posted-content"
+        },
+        {
+          "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
+          "doi": "10.3390/arts7030039",
+          "published": {
+            "date-parts": [
+              [
+                2018,
+                8,
+                13
+              ]
+            ]
+          },
+          "container": "Arts",
+          "type": "journal-article"
+        },
+        {
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "doi": "10.1016/j.isci.2018.09.001",
+          "published": {
+            "date-parts": [
+              [
+                2018,
+                10
+              ]
+            ]
+          },
+          "container": "iScience",
+          "type": "journal-article"
+        },
+        {
+          "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+          "doi": "10.1007/978-3-031-28719-0_10",
+          "published": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "container": "Communications in Computer and Information Science",
+          "type": "book-chapter"
+        },
+        {
+          "title": "Two lineages that need each other",
+          "doi": "10.1111/mec.13964",
+          "published": {
+            "date-parts": [
+              [
+                2017,
+                2
+              ]
+            ]
+          },
+          "container": "Molecular Ecology",
+          "type": "journal-article"
+        },
+        {
+          "title": "The ant colony as a test for scientific theories of consciousness",
+          "doi": "10.1007/s11229-019-02130-y",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                2
+              ]
+            ]
+          },
+          "container": "Synthese",
+          "type": "journal-article"
+        },
+        {
+          "title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
+          "doi": "10.1016/j.plrev.2023.11.001",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                12
+              ]
+            ]
+          },
+          "container": "Physics of Life Reviews",
+          "type": "journal-article"
+        },
+        {
+          "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+          "doi": "10.3390/e27050459",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                24
+              ]
+            ]
+          },
+          "container": "Entropy",
+          "type": "journal-article"
+        },
+        {
+          "title": "A Variational Synthesis of Evolutionary and Developmental Dynamics",
+          "doi": "10.3390/e25070964",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                21
+              ]
+            ]
+          },
+          "container": "Entropy",
+          "type": "journal-article"
+        },
+        {
+          "title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
+          "doi": "10.31219/osf.io/dnw5k",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                17
+              ]
+            ]
+          },
+          "container": "",
+          "type": "posted-content"
+        }
+      ]
+    },
+    {
+      "label": "PubMed exact author records",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Daniel+Ari+Friedman%5BAuthor%5D&retmode=json&retmax=100",
+      "ok": true,
+      "items": [
+        "40422414",
+        "38735269",
+        "38667857",
+        "37984119",
+        "34248515",
+        "33384362",
+        "33004499",
+        "32139795"
+      ]
+    },
+    {
+      "label": "Europe PMC exact author records",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH%3A%22Daniel+Ari+Friedman%22&format=json&pageSize=100",
+      "ok": true,
+      "items": [
+        {
+          "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States.",
+          "journal": "Entropy (Basel)",
+          "year": "2025",
+          "doi": "10.3390/e27050459",
+          "pmid": "40422414",
+          "source": "MED"
+        },
+        {
+          "title": "Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+          "journal": "",
+          "year": "2024",
+          "doi": "10.20944/preprints202411.1897.v1",
+          "pmid": "",
+          "source": "PPR"
+        },
+        {
+          "title": "Shared Protentions in Multi-Agent Active Inference.",
+          "journal": "Entropy (Basel)",
+          "year": "2024",
+          "doi": "10.3390/e26040303",
+          "pmid": "38667857",
+          "source": "MED"
+        },
+        {
+          "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: 'Snakes and Ladders' in paleoanthropology: From cognitive surprise to skillfulness a million years ago.",
+          "journal": "Phys Life Rev",
+          "year": "2024",
+          "doi": "10.1016/j.plrev.2024.04.010",
+          "pmid": "38735269",
+          "source": "MED"
+        },
+        {
+          "title": "Shared Protentions in Multi-Agent Active Inference",
+          "journal": "",
+          "year": "2023",
+          "doi": "10.20944/preprints202312.1770.v1",
+          "pmid": "",
+          "source": "PPR"
+        },
+        {
+          "title": "A guided tour through the spaces of particular \"minds\": A Comment on \"Path integrals, particular kinds, and strange things\".",
+          "journal": "Phys Life Rev",
+          "year": "2023",
+          "doi": "10.1016/j.plrev.2023.11.001",
+          "pmid": "37984119",
+          "source": "MED"
+        },
+        {
+          "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior.",
+          "journal": "Front Behav Neurosci",
+          "year": "2021",
+          "doi": "10.3389/fnbeh.2021.647732",
+          "pmid": "34248515",
+          "source": "MED"
+        },
+        {
+          "title": "Funding fix: Spend time.",
+          "journal": "Science",
+          "year": "2020",
+          "doi": "10.1126/science.abe6015",
+          "pmid": "33004499",
+          "source": "MED"
+        },
+        {
+          "title": "Defining events: 2020 in hindsight.",
+          "journal": "Science",
+          "year": "2021",
+          "doi": "10.1126/science.abg0904",
+          "pmid": "33384362",
+          "source": "MED"
+        },
+        {
+          "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior.",
+          "journal": "Commun Biol",
+          "year": "2020",
+          "doi": "10.1038/s42003-020-0813-8",
+          "pmid": "32139795",
+          "source": "MED"
+        }
+      ]
+    },
+    {
+      "label": "Zenodo exact-name creator records",
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C+Daniel+Ari%22&size=25&sort=mostrecent",
+      "ok": true,
+      "items": [
+        {
+          "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+          "doi": "10.5281/zenodo.20420557",
+          "publication_date": "2026-05-27",
+          "resource_type": "software",
+          "version": "1.0"
+        },
+        {
+          "title": "Introduction to Biology: A Generative Approach",
+          "doi": "10.5281/zenodo.20286478",
+          "publication_date": "2026-05-26",
+          "resource_type": "publication",
+          "version": "1.0.0"
+        },
+        {
+          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+          "doi": "10.5281/zenodo.20144984",
+          "publication_date": "2026-05-12",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+          "doi": "10.5281/zenodo.19897664",
+          "publication_date": "2026-04-30",
+          "resource_type": "publication",
+          "version": "v2"
+        },
+        {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "doi": "10.5281/zenodo.19699234",
+          "publication_date": "2026-04-24",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+          "doi": "10.5281/zenodo.19695260",
+          "publication_date": "2026-04-23",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "doi": "10.5281/zenodo.19600217",
+          "publication_date": "2026-04-16",
+          "resource_type": "software",
+          "version": "v1.6.0"
+        },
+        {
+          "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
+          "doi": "10.5281/zenodo.19574118",
+          "publication_date": "2026-04-15",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+          "doi": "10.5281/zenodo.19335196",
+          "publication_date": "2026-04-03",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "doi": "10.5281/zenodo.19139090",
+          "publication_date": "2026-03-20",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+          "doi": "10.5281/zenodo.18984939",
+          "publication_date": "2026-03-12",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+          "doi": "10.5281/zenodo.18600041",
+          "publication_date": "2026-02-12",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+          "doi": "10.5281/zenodo.18364119",
+          "publication_date": "2026-01-28",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "The Ant Stack",
+          "doi": "10.5281/zenodo.16782757",
+          "publication_date": "2025-08-08",
+          "resource_type": "other",
+          "version": "v1.0"
+        },
+        {
+          "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+          "doi": "10.5281/zenodo.16740439",
+          "publication_date": "2025-08-04",
+          "resource_type": "other",
+          "version": "1.0"
+        },
+        {
+          "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+          "doi": "10.5281/zenodo.15231156",
+          "publication_date": "2025-04-16",
+          "resource_type": "publication",
+          "version": "1.4"
+        },
+        {
+          "title": "On Time",
+          "doi": "10.5281/zenodo.15168382",
+          "publication_date": "2025-04-07",
+          "resource_type": "other",
+          "version": "1.0"
+        },
+        {
+          "title": "MathArt Stream #8 ~ William Blake and Active Inference",
+          "doi": "10.5281/zenodo.13711302",
+          "publication_date": "2024-09-06",
+          "resource_type": "presentation",
+          "version": ""
+        },
+        {
+          "title": "Aligning Active Inference Ontology to SUMO",
+          "doi": "10.5281/zenodo.11463326",
+          "publication_date": "2024-06-03",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Four-fold Fields of Quantum Dreams",
+          "doi": "10.5281/zenodo.10798145",
+          "publication_date": "2024-03-08",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Push and Pull: A priming sequence",
+          "doi": "10.5281/zenodo.10659375",
+          "publication_date": "2024-02-14",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
+          "doi": "10.5281/zenodo.10601082",
+          "publication_date": "2024-01-31",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
+          "doi": "10.5281/zenodo.10447643",
+          "publication_date": "2023-12-31",
+          "resource_type": "lesson",
+          "version": "v1"
+        },
+        {
+          "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
+          "doi": "10.5281/zenodo.10400745",
+          "publication_date": "2023-12-18",
+          "resource_type": "publication",
+          "version": "v1.0"
+        },
+        {
+          "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+          "doi": "10.5281/zenodo.10360148",
+          "publication_date": "2023-12-12",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+          "doi": "10.5281/zenodo.10160657",
+          "publication_date": "2023-11-20",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+          "doi": "10.5281/zenodo.10038232",
+          "publication_date": "2023-10-24",
+          "resource_type": "publication",
+          "version": "v1.1"
+        },
+        {
+          "title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+          "doi": "10.5281/zenodo.10034512",
+          "publication_date": "2023-10-23",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "An Account of Active Inference Modeling",
+          "doi": "10.5281/zenodo.8415313",
+          "publication_date": "2023-10-06",
+          "resource_type": "publication",
+          "version": "v1.0"
+        },
+        {
+          "title": "Postdoc review (2020-2023)  ~  September 25, 2023",
+          "doi": "10.5281/zenodo.8377988",
+          "publication_date": "2023-09-25",
+          "resource_type": "presentation",
+          "version": "v1.0"
+        },
+        {
+          "title": "Of Ants & Aging",
+          "doi": "10.5281/zenodo.7855582",
+          "publication_date": "2023-04-22",
+          "resource_type": "presentation",
+          "version": "v1"
+        },
+        {
+          "title": "Slides for Iris",
+          "doi": "10.5281/zenodo.7838653",
+          "publication_date": "2023-04-17",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "Generalized Notation Notation for Active Inference Models",
+          "doi": "10.5281/zenodo.7803328",
+          "publication_date": "2023-04-05",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+          "doi": "10.5281/zenodo.7626769",
+          "publication_date": "2022-10-26",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "William Blake &  Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
+          "doi": "10.5281/zenodo.7519132",
+          "publication_date": "2023-01-08",
+          "resource_type": "presentation",
+          "version": "2"
+        },
+        {
+          "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+          "doi": "10.5281/zenodo.7267947",
+          "publication_date": "2022-10-27",
+          "resource_type": "publication",
+          "version": "1.1"
+        },
+        {
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "doi": "10.5281/zenodo.5797072",
+          "publication_date": "2021-12-21",
+          "resource_type": "publication",
+          "version": "v2.0"
+        },
+        {
+          "title": "Active Inference & Behavior Engineering for Teams",
+          "doi": "10.5281/zenodo.4021163",
+          "publication_date": "2020-09-09",
+          "resource_type": "publication",
+          "version": "1"
+        }
+      ],
+      "total": 38
+    },
+    {
+      "label": "Zenodo ORCID-linked records",
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=25&sort=mostrecent",
+      "ok": true,
+      "items": [
+        {
+          "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "doi": "10.5281/zenodo.20453880",
+          "publication_date": "2026",
+          "resource_type": "publication",
+          "version": "0.1.0"
+        },
+        {
+          "title": "When do bugs see (infra)red?",
+          "doi": "10.5281/zenodo.20450970",
+          "publication_date": "2026-05-29",
+          "resource_type": "publication",
+          "version": "1.0.0"
+        },
+        {
+          "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+          "doi": "10.5281/zenodo.20420557",
+          "publication_date": "2026-05-27",
+          "resource_type": "software",
+          "version": "1.0"
+        },
+        {
+          "title": "A template/ approach to Reproducible Generative Research",
+          "doi": "10.5281/zenodo.20420387",
+          "publication_date": "2026-05-03",
+          "resource_type": "publication",
+          "version": "1.0.6"
+        },
+        {
+          "title": "Convergence Analysis of Gradient Descent Optimization",
+          "doi": "10.5281/zenodo.20420368",
+          "publication_date": "2026",
+          "resource_type": "publication",
+          "version": "2.5.0"
+        },
+        {
+          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "doi": "10.5281/zenodo.20420357",
+          "publication_date": "2026",
+          "resource_type": "publication",
+          "version": "0.3.0"
+        },
+        {
+          "title": "Active Inference Multi-Track Exemplar",
+          "doi": "10.5281/zenodo.20420352",
+          "publication_date": "2026-05-28",
+          "resource_type": "publication",
+          "version": "0.3.0"
+        },
+        {
+          "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "doi": "10.5281/zenodo.20420342",
+          "publication_date": "2026",
+          "resource_type": "publication",
+          "version": "0.4.0"
+        },
+        {
+          "title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
+          "doi": "10.5281/zenodo.20419637",
+          "publication_date": "2026",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Introduction to Biology: A Generative Approach",
+          "doi": "10.5281/zenodo.20286478",
+          "publication_date": "2026-05-26",
+          "resource_type": "publication",
+          "version": "1.0.0"
+        },
+        {
+          "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+          "doi": "10.5281/zenodo.20286171",
+          "publication_date": "2026-05-19",
+          "resource_type": "publication",
+          "version": "1.0.0"
+        },
+        {
+          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+          "doi": "10.5281/zenodo.20144984",
+          "publication_date": "2026-05-12",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+          "doi": "10.5281/zenodo.19897664",
+          "publication_date": "2026-04-30",
+          "resource_type": "publication",
+          "version": "v2"
+        },
+        {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "doi": "10.5281/zenodo.19699234",
+          "publication_date": "2026-04-24",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+          "doi": "10.5281/zenodo.19695260",
+          "publication_date": "2026-04-23",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "doi": "10.5281/zenodo.19600217",
+          "publication_date": "2026-04-16",
+          "resource_type": "software",
+          "version": "v1.6.0"
+        },
+        {
+          "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
+          "doi": "10.5281/zenodo.19574118",
+          "publication_date": "2026-04-15",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+          "doi": "10.5281/zenodo.19335196",
+          "publication_date": "2026-04-03",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "doi": "10.5281/zenodo.19139090",
+          "publication_date": "2026-03-20",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+          "doi": "10.5281/zenodo.18984939",
+          "publication_date": "2026-03-12",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+          "doi": "10.5281/zenodo.18600041",
+          "publication_date": "2026-02-12",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+          "doi": "10.5281/zenodo.18364119",
+          "publication_date": "2026-01-28",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "The Active Inference Institute & Active Inference Ecosystem",
+          "doi": "10.5281/zenodo.17982447",
+          "publication_date": "2025-12-18",
+          "resource_type": "publication",
+          "version": "v3"
+        },
+        {
+          "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
+          "doi": "10.5281/zenodo.17244387",
+          "publication_date": "2025-10-02",
+          "resource_type": "publication",
+          "version": "0.1"
+        },
+        {
+          "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+          "doi": "10.5281/zenodo.17229925",
+          "publication_date": "2025-09-30",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Synthesis of Agent and Niche",
+          "doi": "10.5281/zenodo.17243488",
+          "publication_date": "2025-10-01",
+          "resource_type": "publication",
+          "version": "v2"
+        },
+        {
+          "title": "Computational Complexity and Energetics of the Ant Stack",
+          "doi": "10.5281/zenodo.17238737",
+          "publication_date": "2025-09-30",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
+          "doi": "10.5281/zenodo.17228946",
+          "publication_date": "2025-09-29",
+          "resource_type": "publication",
+          "version": "0.1"
+        },
+        {
+          "title": "Systems Processes, Active Inference, and Beyond",
+          "doi": "10.5281/zenodo.17138224",
+          "publication_date": "2025-09-17",
+          "resource_type": "presentation",
+          "version": ""
+        },
+        {
+          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
+          "doi": "10.5281/zenodo.17114390",
+          "publication_date": "2025-09-13",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+          "doi": "10.5281/zenodo.16887800",
+          "publication_date": "2025-08-16",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+          "doi": "10.5281/zenodo.16790555",
+          "publication_date": "2025-08-10",
+          "resource_type": "other",
+          "version": "1.0"
+        },
+        {
+          "title": "The Ant Stack",
+          "doi": "10.5281/zenodo.16782757",
+          "publication_date": "2025-08-08",
+          "resource_type": "other",
+          "version": "v1.0"
+        },
+        {
+          "title": "ResNei: Solution Design Document",
+          "doi": "10.5281/zenodo.16753709",
+          "publication_date": "2025-08-08",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+          "doi": "10.5281/zenodo.16740439",
+          "publication_date": "2025-08-04",
+          "resource_type": "other",
+          "version": "1.0"
+        },
+        {
+          "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+          "doi": "10.5281/zenodo.15231156",
+          "publication_date": "2025-04-16",
+          "resource_type": "publication",
+          "version": "1.4"
+        },
+        {
+          "title": "On Time",
+          "doi": "10.5281/zenodo.15168382",
+          "publication_date": "2025-04-07",
+          "resource_type": "other",
+          "version": "1.0"
+        },
+        {
+          "title": "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development",
+          "doi": "10.5281/zenodo.15061667",
+          "publication_date": "2025-03-20",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "MVEE:  A Framework for Evolutionary Studies",
+          "doi": "10.5281/zenodo.13999299",
+          "publication_date": "2018-01-18",
+          "resource_type": "presentation",
+          "version": ""
+        },
+        {
+          "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+          "doi": "10.5281/zenodo.13754586",
+          "publication_date": "2024-09-12",
+          "resource_type": "other",
+          "version": "1"
+        },
+        {
+          "title": "MathArt Stream #8 ~ William Blake and Active Inference",
+          "doi": "10.5281/zenodo.13711302",
+          "publication_date": "2024-09-06",
+          "resource_type": "presentation",
+          "version": ""
+        },
+        {
+          "title": "Infinite Games for Infinite Teams",
+          "doi": "10.5281/zenodo.12601675",
+          "publication_date": "2020-07-08",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "Aligning Active Inference Ontology to SUMO",
+          "doi": "10.5281/zenodo.11463326",
+          "publication_date": "2024-06-03",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Four-fold Fields of Quantum Dreams",
+          "doi": "10.5281/zenodo.10798145",
+          "publication_date": "2024-03-08",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Push and Pull: A priming sequence",
+          "doi": "10.5281/zenodo.10659375",
+          "publication_date": "2024-02-14",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
+          "doi": "10.5281/zenodo.10601082",
+          "publication_date": "2024-01-31",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
+          "doi": "10.5281/zenodo.10447643",
+          "publication_date": "2023-12-31",
+          "resource_type": "lesson",
+          "version": "v1"
+        },
+        {
+          "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
+          "doi": "10.5281/zenodo.10400745",
+          "publication_date": "2023-12-18",
+          "resource_type": "publication",
+          "version": "v1.0"
+        },
+        {
+          "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+          "doi": "10.5281/zenodo.10362561",
+          "publication_date": "2023-12-07",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+          "doi": "10.5281/zenodo.10160657",
+          "publication_date": "2023-11-20",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+          "doi": "10.5281/zenodo.10038232",
+          "publication_date": "2023-10-24",
+          "resource_type": "publication",
+          "version": "v1.1"
+        },
+        {
+          "title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+          "doi": "10.5281/zenodo.10034512",
+          "publication_date": "2023-10-23",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "An Account of Active Inference Modeling",
+          "doi": "10.5281/zenodo.8415313",
+          "publication_date": "2023-10-06",
+          "resource_type": "publication",
+          "version": "v1.0"
+        },
+        {
+          "title": "Postdoc review (2020-2023)  ~  September 25, 2023",
+          "doi": "10.5281/zenodo.8377988",
+          "publication_date": "2023-09-25",
+          "resource_type": "presentation",
+          "version": "v1.0"
+        },
+        {
+          "title": "The Active Inference Institute and Active Inference Ecosystem",
+          "doi": "10.5281/zenodo.8266281",
+          "publication_date": "2023-08-19",
+          "resource_type": "publication",
+          "version": "001.1"
+        },
+        {
+          "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+          "doi": "10.5281/zenodo.8229512",
+          "publication_date": "2023-07-26",
+          "resource_type": "other",
+          "version": "v1.1"
+        },
+        {
+          "title": "Generative Research Teams: Active Inference Compositions For Research and Meta-Science",
+          "doi": "10.5281/zenodo.8164667",
+          "publication_date": "2023-07-19",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Modern Nostr Index Card-based Knowledge Engineering",
+          "doi": "10.5281/zenodo.8118156",
+          "publication_date": "2023-07-05",
+          "resource_type": "other",
+          "version": "v1"
+        },
+        {
+          "title": "Of Ants & Aging",
+          "doi": "10.5281/zenodo.7855582",
+          "publication_date": "2023-04-22",
+          "resource_type": "presentation",
+          "version": "v1"
+        },
+        {
+          "title": "Slides for Iris",
+          "doi": "10.5281/zenodo.7838653",
+          "publication_date": "2023-04-17",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "Generalized Notation Notation for Active Inference Models",
+          "doi": "10.5281/zenodo.7803328",
+          "publication_date": "2023-04-05",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+          "doi": "10.5281/zenodo.7626769",
+          "publication_date": "2022-10-26",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "William Blake &  Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
+          "doi": "10.5281/zenodo.7519132",
+          "publication_date": "2023-01-08",
+          "resource_type": "presentation",
+          "version": "2"
+        },
+        {
+          "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
+          "doi": "10.5281/zenodo.7484994",
+          "publication_date": "2022-12-26",
+          "resource_type": "publication",
+          "version": "3"
+        },
+        {
+          "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
+          "doi": "10.5281/zenodo.7449368",
+          "publication_date": "2022-12-16",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Catechism for: \"Towards Active Diffusion: A Tale of Multiple (den)Cities\"",
+          "doi": "10.5281/zenodo.7443848",
+          "publication_date": "2022-12-15",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+          "doi": "10.5281/zenodo.7401875",
+          "publication_date": "2022-09-14",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+          "doi": "10.5281/zenodo.7400786",
+          "publication_date": "2022-10-12",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Interoception as modeling, allostasis as control",
+          "doi": "10.5281/zenodo.7400709",
+          "publication_date": "2022-11-03",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "On free will or the lack thereof",
+          "doi": "10.5281/zenodo.7394901",
+          "publication_date": "2022-12-03",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Canonical neural networks perform active inference",
+          "doi": "10.5281/zenodo.7400536",
+          "publication_date": "2022-11-09",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition",
+          "doi": "10.5281/zenodo.7377256",
+          "publication_date": "2022-11-29",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+          "doi": "10.5281/zenodo.7267947",
+          "publication_date": "2022-10-27",
+          "resource_type": "publication",
+          "version": "1.1"
+        },
+        {
+          "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
+          "doi": "10.5281/zenodo.7093837",
+          "publication_date": "2022-08-25",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+          "doi": "10.5281/zenodo.6904427",
+          "publication_date": "2022-07-25",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "doi": "10.5281/zenodo.5797072",
+          "publication_date": "2021-12-21",
+          "resource_type": "publication",
+          "version": "v2.0"
+        },
+        {
+          "title": "Active Inference in Modeling Conflict",
+          "doi": "10.5281/zenodo.5759807",
+          "publication_date": "2021-12-02",
+          "resource_type": "publication",
+          "version": "v1.2"
+        },
+        {
+          "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+          "doi": "10.5281/zenodo.5573947",
+          "publication_date": "2021-10-16",
+          "resource_type": "publication",
+          "version": "1.1"
+        },
+        {
+          "title": "Narrative Information Management",
+          "doi": "10.5281/zenodo.5573287",
+          "publication_date": "2021-10-12",
+          "resource_type": "publication",
+          "version": "1.1"
+        },
+        {
+          "title": "Knowledge Management Archipelago",
+          "doi": "10.5281/zenodo.5034809",
+          "publication_date": "2021-06-26",
+          "resource_type": "publication",
+          "version": "v1.0"
+        },
+        {
+          "title": "Collaborative Writing for Catechism-Based Teams",
+          "doi": "10.5281/zenodo.4633921",
+          "publication_date": "2021-03-19",
+          "resource_type": "publication",
+          "version": "v1.2"
+        },
+        {
+          "title": "The Facilitator's Catechism Playbook",
+          "doi": "10.5281/zenodo.4579414",
+          "publication_date": "2021-03-04",
+          "resource_type": "publication",
+          "version": "1.0"
+        },
+        {
+          "title": "The Innovator's Catechism",
+          "doi": "10.5281/zenodo.4383230",
+          "publication_date": "2020-12-21",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "The Facilitator's Catechism",
+          "doi": "10.5281/zenodo.4203765",
+          "publication_date": "2020-10-01",
+          "resource_type": "publication",
+          "version": "v2"
+        },
+        {
+          "title": "Reimagining Maps",
+          "doi": "10.5281/zenodo.4170026",
+          "publication_date": "2020-10-31",
+          "resource_type": "publication",
+          "version": "v1"
+        },
+        {
+          "title": "Active Inference & Behavior Engineering for Teams",
+          "doi": "10.5281/zenodo.4021163",
+          "publication_date": "2020-09-09",
+          "resource_type": "publication",
+          "version": "1"
+        },
+        {
+          "title": "Emergent Teams for Complex Threats",
+          "doi": "10.5281/zenodo.3986085",
+          "publication_date": "2020-05-15",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+          "doi": "10.5281/zenodo.14861596",
+          "publication_date": "2025-02-12",
+          "resource_type": "presentation",
+          "version": ""
+        },
+        {
+          "title": "Con-cat-enate: emulation of Cat Hippocampus",
+          "doi": "10.5281/zenodo.14738798",
+          "publication_date": "2025-01-25",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Graphspeak: of language and handshake",
+          "doi": "10.5281/zenodo.14737157",
+          "publication_date": "2025-01-25",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "BevCyc - posit on primitive drivers of creatures",
+          "doi": "10.5281/zenodo.14737076",
+          "publication_date": "2025-01-25",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Beacons - pre emulation of social cortex",
+          "doi": "10.5281/zenodo.14737060",
+          "publication_date": "2025-01-25",
+          "resource_type": "publication",
+          "version": ""
+        },
+        {
+          "title": "Con-cat-enate: pilot overview",
+          "doi": "10.5281/zenodo.14737043",
+          "publication_date": "2025-01-25",
+          "resource_type": "publication",
+          "version": ""
+        }
+      ],
+      "total": 93
+    },
+    {
+      "label": "Wikidata person entity",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q138781444.json",
+      "ok": true,
+      "items": [
+        {
+          "id": "Q138781444",
+          "label": "Daniel Ari Friedman",
+          "description": "American researcher, educator, and artist; President and co-founder of the Active Inference Institute",
+          "orcid": "0000-0001-6232-9096",
+          "website": "https://danielarifriedman.com"
+        }
+      ]
+    },
+    {
+      "label": "DBLP author profile",
+      "url": "https://dblp.org/pid/346/2173.html",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "dblp: Daniel Ari Friedman"
+        }
+      ]
+    },
+    {
+      "label": "ResearchGate profile",
+      "url": "https://www.researchgate.net/profile/Daniel-Friedman-2",
+      "ok": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "items": []
+    },
+    {
+      "label": "SciProfiles profile",
+      "url": "https://sciprofiles.com/profile/447575",
+      "ok": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "items": []
+    },
+    {
+      "label": "PhilPeople profile",
+      "url": "https://philpeople.org/profiles/daniel-ari-friedman",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "Daniel Friedman (Stanford University) - PhilPeople"
+        }
+      ]
+    },
+    {
+      "label": "Semantic Scholar exact-name search",
+      "url": "https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "\"Daniel Ari Friedman\" | Semantic Scholar"
+        }
+      ]
+    },
+    {
+      "label": "OpenAlex author advisory search (low-confidence)",
+      "url": "https://api.openalex.org/authors?search=Daniel+Ari+Friedman&per-page=20",
+      "ok": true,
+      "items": [
+        {
+          "id": "https://openalex.org/A5102731228",
+          "name": "Daniel Friedman",
+          "works_count": 188,
+          "h_index": 23
+        },
+        {
+          "id": "https://openalex.org/A5135966093",
+          "name": "Daniel Ari Friedman",
+          "works_count": 3,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5124112796",
+          "name": "Daniel Ari Friedman",
+          "works_count": 3,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5125747713",
+          "name": "Daniel Ari Friedman",
+          "works_count": 10,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5134912491",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5126633818",
+          "name": "Daniel Ari Friedman",
+          "works_count": 2,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5126826795",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5126328802",
+          "name": "Daniel Ari Friedman",
+          "works_count": 2,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5133205255",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5121567494",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5130244729",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5114775770",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        },
+        {
+          "id": "https://openalex.org/A5128670114",
+          "name": "Daniel Ari Friedman",
+          "works_count": 1,
+          "h_index": 0
+        }
+      ]
+    },
+    {
+      "label": "GitHub profile docxology",
+      "url": "https://api.github.com/users/docxology",
+      "ok": true,
+      "items": [
+        {
+          "login": "docxology",
+          "public_repos": 300,
+          "html_url": "https://github.com/docxology",
+          "updated_at": "2026-05-06T12:41:40Z"
+        }
+      ]
+    },
+    {
+      "label": "GitHub profile ActiveInferenceInstitute",
+      "url": "https://api.github.com/users/ActiveInferenceInstitute",
+      "ok": true,
+      "items": [
+        {
+          "login": "ActiveInferenceInstitute",
+          "public_repos": 51,
+          "html_url": "https://github.com/ActiveInferenceInstitute",
+          "updated_at": "2026-05-01T18:26:30Z"
+        }
+      ]
+    },
+    {
+      "label": "AII public landing page",
+      "url": "https://activeinference.org/",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "The Active Inference Institute"
+        }
+      ]
+    },
+    {
+      "label": "AII officers page",
+      "url": "https://www.activeinference.institute/officers",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "Officers &mdash; The Active Inference Institute"
+        }
+      ]
+    },
+    {
+      "label": "AII board page",
+      "url": "https://www.activeinference.institute/board-of-directors",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "Board of Directors &mdash; The Active Inference Institute"
+        }
+      ]
+    },
+    {
+      "label": "AII SAB page",
+      "url": "https://www.activeinference.institute/scientific-advisory-board",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "Scientific Advisory Board &mdash; The Active Inference Institute"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "ORCID work groups": 20,
+    "Crossref ORCID DOI records": 15,
+    "PubMed exact author records": 8,
+    "Europe PMC exact author records": 10,
+    "Zenodo exact-name creator records": 38,
+    "Zenodo ORCID-linked records": 93,
+    "Wikidata person entity": 1,
+    "DBLP author profile": 1,
+    "ResearchGate profile": 0,
+    "SciProfiles profile": 0,
+    "PhilPeople profile": 1,
+    "Semantic Scholar exact-name search": 1,
+    "OpenAlex author advisory search (low-confidence)": 13,
+    "GitHub profile docxology": 1,
+    "GitHub profile ActiveInferenceInstitute": 1,
+    "AII public landing page": 1,
+    "AII officers page": 1,
+    "AII board page": 1,
+    "AII SAB page": 1
+  }
+}

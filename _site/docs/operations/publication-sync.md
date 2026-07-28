@@ -1,0 +1,245 @@
+# GitHub and Zenodo Publication Sync
+
+This is the canonical runbook for checking GitHub releases against Zenodo records and adding new or updated publications to the unified bibliography.
+
+Use this workflow when new GitHub releases, Zenodo deposits, PDFs, or DOI versions may have appeared. The automation keeps [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md), [`data/works.json`](../../data/works.json), paper folders, generated paper pages, and site indexes aligned.
+
+## Intake Decision Map
+
+Use this map before editing curated files:
+
+| Public record found | Integrate with | Rule |
+| --- | --- | --- |
+| GitHub release + matching Zenodo DOI | [`sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) | Dry-run first; apply only `create_new` / `update_existing` actions from a warning-free report. |
+| Zenodo DOI with no matching GitHub release | [`add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py) | Use the Zenodo record id, then run the regeneration and validation chain. |
+| GitHub repository or release with no archival DOI | [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and [`build_github_inventory.py`](../../code/orchestrators/build_github_inventory.py) | Catalog it as software only when it belongs in the curated software table; do not invent a bibliography row. |
+| New Zenodo version of an existing work | Existing row and folder | Update the current row/folder metadata; do not create a duplicate work unless it is intentionally distinct. |
+| Ambiguous match | [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) | Record the review decision; future scans should report the exact pair as `already_reviewed`. |
+
+The safest default is: **scan live sources, inspect the report, apply only strong pairs, and treat everything else as manual curation.**
+
+## Source Contract
+
+- [`code/orchestrators/sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) is the canonical GitHub Releases + Zenodo Records pairing tool.
+- [`code/orchestrators/add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py) is the companion tool for real Zenodo publications that do not have a paired GitHub release.
+- GitHub releases provide source-repository and release context. Zenodo records provide DOI, archival metadata, record URLs, and downloadable PDFs.
+- Strong `create_new` and `update_existing` actions may be applied automatically with `--apply`.
+- `needs_review` actions are review-only. Do not auto-apply them without manual curation.
+- Same-title / same-GitHub-release Zenodo versions update the existing row instead of creating duplicate bibliography entries.
+- **Canonical DOI = Zenodo *concept* DOI** (the `conceptdoi` field, which always resolves to the latest version), not a per-version DOI. Use the concept DOI in `pages/BIBLIOGRAPHY.md`, `pages/SOFTWARE.md` Zenodo links, and per-folder `metadata.json`/`CITATION.cff`/`README`. Exception: distinct works that deliberately share one concept DOI (e.g. yearly AII Ecosystem v1/v2/v3 snapshots) keep their per-version DOIs to stay unique.
+- Public APIs are freshness checks. Curated local rows remain the source of truth after review and application.
+
+## Preconditions
+
+Use a GitHub token so rate limits do not truncate repository or release scans:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)"
+export GITHUB_TOKEN
+```
+
+Before applying changes, check the worktree and preserve unrelated edits:
+
+```bash
+git status --short --branch
+```
+
+If other work is present, layer the publication-sync changes on top without reverting or normalizing unrelated files.
+
+## Refresh Public Sources
+
+Run these when you need the public-source snapshots and GitHub inventory current before a pairing decision or software-catalog review:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/refresh_public_sources.py
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/refresh_public_source_inventory.py
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_inventory.py
+```
+
+The generated reports under [`reports/`](../../reports/) are evidence snapshots. They support review but do not replace the curated bibliography.
+
+For a focused recent-release pass, use the pairing tool's date filter:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii --since YYYY-MM-DD
+```
+
+Use a broad scan when the prior report is old, when API warnings appeared, or when the latest known publication date is uncertain.
+
+## Dry Run Pairing
+
+Run the pairing scan without changing curated files:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii
+```
+
+This writes `reports/paired_publications_YYYY-MM-DD.json`. Review:
+
+- `counts.github_releases`, `counts.zenodo_records`, and `counts.pairs` for scan coverage.
+- `counts.create_new`, `counts.update_existing`, and `counts.needs_review` for action load.
+- `actions[].action_type`:
+  - `create_new`: strong GitHub + Zenodo pair not already represented in the bibliography.
+  - `update_existing`: existing row/folder should receive newer DOI, version, PDF, metadata, or source links.
+  - `needs_review`: plausible but ambiguous pair; inspect manually before changing curated files.
+  - `already_reviewed`: exact release/record pair is recorded in `data/paired-publication-decisions.json` as represented, superseded, or version-history-only; do not create a duplicate row.
+- `warnings[]` for API or metadata issues that may affect completeness.
+
+Validate the latest cached report:
+
+```bash
+uv run python3 code/orchestrators/sync_paired_publications.py --check
+```
+
+Do not rely on a report that fails `--check`. A report with API warnings, count mismatches, or stale `create_new` actions is only a failed scan artifact, not evidence that the repository is current.
+
+## Apply Strong Pairs
+
+Apply only strong create/update actions:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii --apply
+```
+
+By default, apply mode downloads available Zenodo PDFs and updates curated/generated source surfaces. Use `--no-download-files` only when intentionally deferring PDFs.
+
+Expected source-owned updates include:
+
+- bibliography rows in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md)
+- per-paper folders under [`papers/`](../../papers/) with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and PDFs when available
+- [`papers/paper_metadata.json`](../../papers/paper_metadata.json)
+- [`papers/README.md`](../../papers/README.md) and [`papers/AGENTS.md`](../../papers/AGENTS.md)
+- software cross-links in [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) when a paired repository should be catalogued
+
+Apply mode also runs the publication regeneration chain for bibliography exports, publications HTML, software exports, domain/work/paper pages, catalog/search/feed/sitemap, asset audit, and generated manifest.
+
+**Apply does not refresh every gated surface.** It deliberately stops at the publication chain. After a successful apply you must still rebuild the surfaces it omits — resume/CV exports, current counts, agent data (`claims.json`), the `exports`/`updates`/`evidence`/`reconciliation` pages, and the live-site verification snapshot are **not** regenerated by apply and will fail `validate_repo` until rebuilt. Run [`regenerate_all.py`](#regenerate-dependent-surfaces) (below) to do this in one pass. (Apply *does* keep the `**N** works` and `**N** indexed paper folders` prose counts in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md) in sync via `refresh_bibliography_counts`.)
+
+## Manual Review Path For Ambiguous Pairs
+
+For `needs_review` actions, inspect the GitHub release, Zenodo record, DOI, title, creator list, repository URL, and PDF before deciding.
+
+Record manual decisions in [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../../reports/). An `accept` or `superseded` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata, version history, or an already represented work. Exact reviewed pairs will be reported as `already_reviewed` on future scans.
+
+If the item is a real publication but cannot be safely auto-applied:
+
+1. Add or update the row in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md).
+2. Create or update the matching `papers/YYYY_Topic/` folder with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and any public PDF.
+3. Update [`papers/paper_metadata.json`](../../papers/paper_metadata.json) and paper indexes if the folder set changed.
+4. Run the regeneration and validation commands below.
+
+Do not create duplicate rows for newer Zenodo versions of the same work; update the existing row and preserve version-chain context where useful.
+
+## Zenodo-Only Publications
+
+When Zenodo has a real publication record but no matching GitHub release, use the Zenodo-only backfill helper instead of trying to force a paired-publication decision:
+
+```bash
+uv run python3 code/orchestrators/add_zenodo_only.py <record_id>
+```
+
+Use an optional domain override when inference is not safe:
+
+```bash
+uv run python3 code/orchestrators/add_zenodo_only.py <record_id>:💻
+```
+
+The helper fetches Zenodo metadata, creates the paper folder, downloads the first available PDF, appends the bibliography and papers index rows, and updates `papers/paper_metadata.json`. It does not replace review: confirm authorship, type, domain, title, DOI, and whether the record is a version of an already represented work before running it.
+
+After adding records it runs [`regenerate_all.py`](#regenerate-dependent-surfaces) automatically to rebuild the local generated layer (pass `--no-regenerate` to defer, e.g. when batching several adds). You still owe the network/validation follow-ups: refresh the live-site snapshot if counts changed, then run `validate_repo.py`. If the record also represents software, update [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and re-run `regenerate_all.py` before the broad validation gate.
+
+## GitHub-Only Records
+
+A GitHub repository or release without a DOI is not automatically a publication. Decide whether it belongs in:
+
+- [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md), for curated owned or AII-contribution software.
+- [`data/github-repositories.json`](../../data/github-repositories.json), for the complete generated public GitHub inventory.
+- [`repositories.html`](../../repositories.html) / [`repositories-forks.html`](../../repositories-forks.html), for the primary non-fork inventory and the separate fork archive.
+- No curated surface, for forks, tests, internal-only releases, or repositories outside the profile scope.
+
+After a curated software edit, run:
+
+```bash
+uv run python3 code/orchestrators/sync_software_html.py --apply
+uv run python3 code/orchestrators/export_agent_data.py
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_inventory.py
+```
+
+Then continue with the regeneration and validation commands below.
+
+## Regenerate Dependent Surfaces
+
+After any apply or manual curation, rebuild the generated layer with the single
+dependency-ordered driver. It regenerates every locally-derived artifact in one pass
+(manifest last), so you reach a green validation instead of whack-a-mole:
+
+```bash
+uv run python3 code/orchestrators/regenerate_all.py --validate
+```
+
+`regenerate_all.py` is the write-mode counterpart to `validate_repo.py`'s ordered
+`--check` sequence. It is **local-only and idempotent** — it does not run network
+freshness steps (GitHub inventory, live-site snapshot, public sources), because each of
+those writes a new dated report and mutates externally-sourced data, which would make the
+command non-idempotent and inflate `reports/`. Run `--list` to print the plan without
+executing.
+
+Two follow-ups it intentionally leaves to you:
+
+```bash
+# 1. When counts changed (a new publication), refresh the live-site snapshot so its
+#    expected_counts match local; otherwise verify_live_site --check reports a mismatch.
+#    overall_ok may be false while GitHub Pages rebuilds — that is fine when the
+#    report marks a locally-present 404 as deployment_pending or only has stale
+#    content markers. A 4xx/5xx for a route missing locally remains a hard failure.
+GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/verify_live_site.py
+
+# 2. Gates.
+uv run python3 code/orchestrators/validate_repo.py
+uv run python3 -m pytest code/tests -q
+```
+
+The `**N** indexed paper folders` prose count in `pages/BIBLIOGRAPHY.md` is now refreshed
+automatically by apply (`refresh_bibliography_counts` updates it alongside the works
+total). If `validate_repo.py` still reports `Stale generated <file>`, run the matching
+generator from [`GENERATED.md`](../../GENERATED.md) and re-run `regenerate_all.py`.
+Regenerate [`sitemap.xml`](../../sitemap.xml) **after committing** (its `<lastmod>` is
+derived from git commit dates) — see [Acceptance Checks](#acceptance-checks).
+
+## Reports Retention
+
+`visual_qa.py` and `browser_smoke.py` write a fresh dated screenshot set under
+`reports/<tool>/YYYY-MM-DD/` every run, and only the latest is read by validation. Left
+unpruned these dominate the tracked tree (~88 MB at one point). Periodically trim the
+superseded sets:
+
+```bash
+uv run python3 code/orchestrators/prune_old_reports.py          # dry-run
+uv run python3 code/orchestrators/prune_old_reports.py --apply  # keep latest, delete older
+git add -A reports/ && uv run python3 code/orchestrators/validate_repo.py
+```
+
+It only prunes the self-contained screenshot subdirectories (and skips any still referenced
+by published content). Dated JSON reports (`paired_publications_*`, `public_source_*`, …)
+are intentionally retained — paper `metadata.json`, the claims ledger, and `GENERATED.md`
+cite specific ones as provenance.
+
+## Acceptance Checks
+
+Before committing or pushing, confirm:
+
+- [`publications.html`](../../publications.html) includes each new or updated work.
+- [`data/works.json`](../../data/works.json) includes the canonical DOI and paper-folder path.
+- Each publication folder has `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and at least one local artifact link when a PDF exists.
+- [`papers/<folder>/index.html`](../../papers/) exists for every bibliography row with a docs path.
+- [`sitemap.xml`](../../sitemap.xml), [`search-index.json`](../../search-index.json), [`GENERATED.md`](../../GENERATED.md), and [`data/generated-manifest.json`](../../data/generated-manifest.json) reflect the new public URLs.
+
+After push, verify representative live URLs:
+
+```bash
+curl -L -I https://danielarifriedman.com/publications.html
+curl -L -I https://danielarifriedman.com/data/works.json
+curl -L -I https://danielarifriedman.com/papers/<folder>/
+curl -L -I https://danielarifriedman.com/papers/<folder>/README.md
+curl -L -I https://danielarifriedman.com/papers/<folder>/<paper>.pdf
+```

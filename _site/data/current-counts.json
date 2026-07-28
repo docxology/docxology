@@ -1,0 +1,100 @@
+{
+  "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
+  "command": "uv run python3 code/orchestrators/build_current_counts.py",
+  "counts": {
+    "bibliography_docs_links": 180,
+    "bibliography_works": 197,
+    "domains": {
+      "AII Ecosystem": 6,
+      "Active Inference": 42,
+      "Art & Synergetics": 16,
+      "Cognitive Security": 32,
+      "Computational": 48,
+      "Entomology": 23,
+      "Genetics & Biomedical": 15,
+      "Presentations & Media": 15
+    },
+    "extracted_images": 9004,
+    "full_text_papers": 173,
+    "generated_exports": {
+      "data_publications_ld_main_entity": 197,
+      "data_software_json": 131,
+      "data_software_ld_main_entity": 131,
+      "data_works_json": 197
+    },
+    "github_inventory": {
+      "ActiveInferenceInstitute": 40,
+      "archived": 0,
+      "curated": 128,
+      "docxology": 347,
+      "fork_ActiveInferenceInstitute": 2,
+      "fork_docxology": 243,
+      "forks": 245,
+      "primary_ActiveInferenceInstitute": 38,
+      "primary_docxology": 104,
+      "primary_total": 142,
+      "private": 0,
+      "public": 387,
+      "recently_updated": 124,
+      "total": 387,
+      "uncataloged": 259
+    },
+    "paired_publication_decisions": {
+      "decision": "accept",
+      "groups": 24,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
+      "raw_candidates": 86
+    },
+    "paired_publications": {
+      "already_reviewed": 0,
+      "create_new": 0,
+      "github_releases": 2,
+      "needs_review": 0,
+      "pairs": 1,
+      "strong_pairs": 1,
+      "update_existing": 1,
+      "zenodo_records": 133
+    },
+    "paper_folder_docs": 180,
+    "papers_with_images": 141,
+    "public_source_snapshot": {
+      "Crossref ORCID DOI records": 15,
+      "Europe PMC exact author records": 10,
+      "GitHub user ActiveInferenceInstitute": 40,
+      "GitHub user docxology": 347,
+      "ORCID work groups": 20,
+      "PubMed exact author records": 8,
+      "Zenodo ORCID-linked records": 131,
+      "Zenodo exact-name creator records": 47
+    },
+    "software": {
+      "active_inference_institute": 38,
+      "curated_total": 131,
+      "docxology_owned": 93
+    },
+    "types": {
+      "Books": 5,
+      "Courses": 3,
+      "Papers": 176,
+      "Playbooks": 2,
+      "Presentations": 9,
+      "Series": 2
+    }
+  },
+  "generated_at": "2026-07-21T20:34:49+00:00",
+  "sources": {
+    "bibliography": "pages/BIBLIOGRAPHY.md",
+    "github_inventory": "data/github-repositories.json",
+    "paired_publication_decisions": "data/paired-publication-decisions.json",
+    "paired_publications": "reports/paired_publications_2026-07-18.json",
+    "paper_folders": "papers/README.md",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-07-21.json",
+    "software_catalog": "pages/SOFTWARE.md",
+    "software_export": "data/software.json",
+    "works_export": "data/works.json"
+  },
+  "validation": [
+    "uv run python3 code/orchestrators/validate_repo.py",
+    "PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q"
+  ]
+}

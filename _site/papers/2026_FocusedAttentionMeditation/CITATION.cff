@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences"
+date-released: 2026
+authors:
+  - family-names: Kavi
+    given-names: P. C.
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Patow
+    given-names: G.

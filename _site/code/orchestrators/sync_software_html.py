@@ -1,0 +1,353 @@
+#!/usr/bin/env python3
+"""
+Rewrite software.html repo grids and data/software-ld.json from pages/SOFTWARE.md.
+
+Usage:
+    python3 sync_software_html.py           # dry-run: validate counts only
+    python3 sync_software_html.py --apply   # write software.html + software-ld.json
+"""
+
+from __future__ import annotations
+
+import argparse
+import html
+import json
+import re
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+from software_table import (  # noqa: E402
+    SoftwareRow,
+    DEFAULT_SOFTWARE_PATH,
+    description_html,
+    description_plain,
+    iter_software_rows,
+    lang_css_class,
+    zenodo_url,
+)
+from count_consistency import parse_software_catalog_counts  # noqa: E402
+
+SOFTWARE_HTML = REPO_ROOT / "software.html"
+SOFTWARE_LD_JSON = REPO_ROOT / "data" / "software-ld.json"
+GITHUB_REPOSITORIES_JSON = REPO_ROOT / "data" / "github-repositories.json"
+
+LD_SYNC_BEGIN = "<!-- <SOFTWARE_LD_SYNC_BEGIN> -->"
+LD_SYNC_END = "<!-- <SOFTWARE_LD_SYNC_END> -->"
+DOCX_GRID_BEGIN = "<!-- <SOFTWARE_DOCX_GRID_BEGIN> -->"
+DOCX_GRID_END = "<!-- <SOFTWARE_DOCX_GRID_END> -->"
+AII_GRID_BEGIN = "<!-- <SOFTWARE_AII_GRID_BEGIN> -->"
+AII_GRID_END = "<!-- <SOFTWARE_AII_GRID_END> -->"
+DOCX_FOOTER_BEGIN = "<!-- <SOFTWARE_DOCX_FOOTER_BEGIN> -->"
+DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
+
+
+def load_rows() -> list[SoftwareRow]:
+    return list(iter_software_rows(DEFAULT_SOFTWARE_PATH))
+
+
+def load_github_counts() -> dict[str, int]:
+    if not GITHUB_REPOSITORIES_JSON.is_file():
+        return {}
+    data = json.loads(GITHUB_REPOSITORIES_JSON.read_text(encoding="utf-8"))
+    counts = data.get("counts", {})
+    return {k: v for k, v in counts.items() if isinstance(v, int)}
+
+
+def load_github_repos_by_url() -> dict[str, dict]:
+    """Map each repository html_url to its full inventory record (license, dates, topics)."""
+    if not GITHUB_REPOSITORIES_JSON.is_file():
+        return {}
+    data = json.loads(GITHUB_REPOSITORIES_JSON.read_text(encoding="utf-8"))
+    repos = data.get("repositories", data if isinstance(data, list) else [])
+    return {(r.get("html_url") or "").rstrip("/"): r for r in repos if r.get("html_url")}
+
+
+def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
+    docx = [r for r in rows if r.is_docxology]
+    aii = [r for r in rows if not r.is_docxology]
+    return docx, aii
+
+
+def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
+    if not rows:
+        raise SystemExit("No software rows parsed")
+    expected_docx, expected_aii = parse_software_catalog_counts()
+    docx, aii = split_rows(rows)
+    if len(docx) != expected_docx:
+        raise SystemExit(f"Expected {expected_docx} docxology rows from SOFTWARE.md, got {len(docx)}")
+    if len(aii) != expected_aii:
+        raise SystemExit(f"Expected {expected_aii} AII rows from SOFTWARE.md, got {len(aii)}")
+    return docx, aii
+
+
+def main_entity_object(row: SoftwareRow, repos_by_url: dict[str, dict] | None = None) -> dict:
+    obj: dict = {
+        "@type": "SoftwareSourceCode",
+        "@id": f"{(row.url or '').rstrip('/')}#software",
+        "name": row.name,
+        "description": description_plain(row.description_raw),
+        "codeRepository": row.url,
+        "author": {"@type": "Person", "name": "Daniel Ari Friedman"},
+    }
+    if row.language:
+        obj["programmingLanguage"] = row.language
+    repo = (repos_by_url or {}).get((row.url or "").rstrip("/"))
+    if repo:
+        spdx = repo.get("license")
+        if spdx and spdx not in {"NOASSERTION", "NONE"}:
+            obj["license"] = f"https://spdx.org/licenses/{spdx}.html"
+        if repo.get("created_at"):
+            obj["dateCreated"] = repo["created_at"]
+        modified = repo.get("pushed_at") or repo.get("updated_at")
+        if modified:
+            obj["dateModified"] = modified
+        topics = repo.get("topics")
+        if isinstance(topics, list) and topics:
+            obj["keywords"] = ", ".join(topics)
+    zenodo = zenodo_url(row.description_raw)
+    if zenodo:
+        obj["sameAs"] = zenodo
+    return obj
+
+
+def collection_page_description(docx_count: int, aii_count: int) -> str:
+    return (
+        f"{docx_count} original repositories and {aii_count} catalogued Active Inference Institute "
+        "contributions spanning Active Inference, cognitive security, computational biology, and research tools."
+    )
+
+
+def build_collection_page(rows: list[SoftwareRow]) -> dict:
+    docx, aii = split_rows(rows)
+    repos_by_url = load_github_repos_by_url()
+    me = [main_entity_object(r, repos_by_url) for r in rows]
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Daniel Ari Friedman Software",
+        "description": collection_page_description(len(docx), len(aii)),
+        "author": {
+            "@type": "Person",
+            "name": "Daniel Ari Friedman",
+            "url": "https://danielarifriedman.com/",
+        },
+        "mainEntity": me,
+    }
+
+
+def render_repo_card(row: SoftwareRow, *, show_updated: bool) -> str:
+    lang = row.language or "—"
+    lang_class = lang_css_class(row.language)
+    updated = (
+        f"<span>Updated: {html.escape(row.updated_or_year)}</span>"
+        if show_updated
+        else ""
+    )
+    return f"""            <div class=\"repo-card\">\n                <div class=\"repo-header\">\n                    <a href=\"{html.escape(row.url, quote=True)}\" class=\"repo-title\">{html.escape(row.name)}</a>\n                    <span class=\"repo-stars\">⭐ {row.stars}</span>\n                </div>\n                <p class=\"repo-desc\">{description_html(row.description_raw)}</p>\n                <div class=\"repo-meta\"><span class=\"repo-lang\"><span class=\"lang-dot lang-{lang_class}\"></span>{html.escape(lang)}</span>{updated}</div>\n            </div>"""
+
+
+def render_docx_grid(rows: list[SoftwareRow]) -> str:
+    return "\n".join(render_repo_card(r, show_updated=True) for r in rows)
+
+
+def render_aii_grid(rows: list[SoftwareRow]) -> str:
+    return "\n".join(render_repo_card(r, show_updated=False) for r in rows)
+
+
+def render_docx_footer(docx_count: int) -> str:
+    return (
+        f'        <p class="text-center mt-2">'
+        f'<a href="https://github.com/docxology" class="filter-btn">'
+        f"View all {docx_count} original repositories on GitHub</a> "
+        f'<a href="repositories.html" class="filter-btn">Search full generated inventory</a></p>'
+    )
+
+
+def replace_between_markers(text: str, begin: str, end: str, replacement: str) -> str:
+    pattern = re.escape(begin) + r"[\s\S]*?" + re.escape(end)
+    if begin not in text or end not in text:
+        raise ValueError(f"Missing markers {begin} / {end} in software.html")
+    return re.sub(pattern, f"{begin}\n{replacement}\n        {end}", text, count=1)
+
+
+def inline_ld_marker_block(collection: dict) -> str:
+    payload = json.dumps(collection, ensure_ascii=False, separators=(",", ":"))
+    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">{payload}</script>\n    {LD_SYNC_END}"
+
+
+def remove_inline_collection_ld(html_text: str) -> str:
+    start_tag = '<script type="application/ld+json">'
+    end_tag = "</script>"
+    while True:
+        i0 = html_text.find(start_tag)
+        if i0 < 0:
+            break
+        j0 = i0 + len(start_tag)
+        i1 = html_text.find(end_tag, j0)
+        if i1 < 0:
+            break
+        raw = html_text[j0:i1].strip()
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            break
+        if data.get("@type") != "CollectionPage":
+            break
+        html_text = html_text[:i0] + html_text[i1 + len(end_tag) :]
+    return html_text
+
+
+def replace_inline_collection_ld(html_text: str, collection: dict) -> str:
+    html_text = remove_inline_collection_ld(html_text)
+    marker = inline_ld_marker_block(collection)
+    if LD_SYNC_BEGIN in html_text and LD_SYNC_END in html_text:
+        return re.sub(
+            re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
+            marker.strip(),
+            html_text,
+            count=1,
+        )
+    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^\"]*)?">', html_text)
+    insert_at = stylesheet_match.start() if stylesheet_match else -1
+    if insert_at < 0:
+        insert_at = html_text.find("</head>")
+    if insert_at < 0:
+        raise ValueError("Could not locate insertion point for inline JSON-LD in software.html")
+    return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
+
+
+def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]) -> str:
+    public_total = github_counts.get("total")
+    title = "Daniel Ari Friedman Software | Active Inference Tools"
+    public_phrase = (
+        f"{public_total} public repositories across docxology and AII"
+        if public_total is not None
+        else "generated public GitHub repository totals"
+    )
+    # Keep the meta/og description under ~160 chars for clean SERP snippets;
+    # fuller phrasing with "across docxology and AII" remains in the hero below.
+    if public_total is not None:
+        desc = (
+            f"Explore CEREBRUM, GNN, P3IF, MDKV, and {public_total} public repositories by "
+            "Daniel Ari Friedman and AII across Active Inference and research software."
+        )
+    else:
+        desc = (
+            "Explore CEREBRUM, GNN, P3IF, MDKV, and open-source research software by "
+            "Daniel Ari Friedman across Active Inference, biology, and security."
+        )
+    html_text = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html_text, count=1)
+    html_text = re.sub(
+        r'(<meta name="description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta property="og:title" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta property="og:image:alt" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta property="og:description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta name="twitter:title" content=")[^"]*(")',
+        rf"\g<1>{title}\2",
+        html_text,
+        count=1,
+    )
+    html_text = re.sub(
+        r'(<meta name="twitter:description" content=")[^"]*(")',
+        rf"\g<1>{desc}\2",
+        html_text,
+        count=1,
+    )
+    hero = (
+        f"Open-Source Repositories • Python, Rust, Go, TypeScript, Julia<br>"
+        f"{docx_count} owned repositories, {aii_count} catalogued AII contributions, "
+        f"and {public_phrase}."
+    )
+    html_text = re.sub(
+        r'(<p class="sub">)[^<]*(?:<br>[^<]*)?(</p>)',
+        rf"\g<1>{hero}\2",
+        html_text,
+        count=1,
+    )
+    return html_text
+
+
+def _assert_html_summary(html_text: str, docx_count: int, aii_count: int, total_count: int) -> None:
+    if f"{docx_count} owned repositories" not in html_text:
+        raise SystemExit(f"software.html missing owned repository summary for {docx_count}")
+    if f"{aii_count} catalogued" not in html_text:
+        raise SystemExit(f"software.html missing AII catalog summary for {aii_count}")
+    if f"{docx_count + aii_count} repos" in html_text:
+        raise SystemExit("software.html contains unexpected hardcoded summary format")
+
+
+def _assert_collection_consistency(collection: dict, rows: list[SoftwareRow]) -> None:
+    main_entities = collection.get("mainEntity", [])
+    if len(main_entities) != len(rows):
+        raise SystemExit("mainEntity length mismatch after build")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--apply", action="store_true", help="Write software.html and software-ld.json")
+    args = parser.parse_args()
+
+    rows = load_rows()
+    docx, aii = validate_rows(rows)
+    github_counts = load_github_counts()
+
+    if not SOFTWARE_HTML.is_file():
+        raise SystemExit(f"Missing {SOFTWARE_HTML}")
+
+    collection = build_collection_page(rows)
+    html_out = SOFTWARE_HTML.read_text(encoding="utf-8")
+    html_out = replace_inline_collection_ld(html_out, collection)
+    html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
+    html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
+    html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))
+    html_out = replace_between_markers(
+        html_out, DOCX_FOOTER_BEGIN, DOCX_FOOTER_END, render_docx_footer(len(docx)).strip()
+    )
+
+    _assert_collection_consistency(collection, rows)
+    _assert_html_summary(html_out, len(docx), len(aii), len(rows))
+
+    if not args.apply:
+        print(
+            f"OK dry-run: {len(docx)} docxology + {len(aii)} AII rows, "
+            f"software-ld.json would have {len(collection['mainEntity'])} mainEntity items"
+        )
+        return
+
+    SOFTWARE_LD_JSON.parent.mkdir(parents=True, exist_ok=True)
+    SOFTWARE_LD_JSON.write_text(
+        json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    SOFTWARE_HTML.write_text(html_out, encoding="utf-8")
+    print(
+        f"Wrote {SOFTWARE_LD_JSON} and {SOFTWARE_HTML} "
+        f"({len(rows)} mainEntity + {len(docx)} docx cards + {len(aii)} AII cards)"
+    )
+
+
+if __name__ == "__main__":
+    main()

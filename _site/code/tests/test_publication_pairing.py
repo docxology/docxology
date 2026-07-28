@@ -1,0 +1,334 @@
+"""Tests for GitHub + Zenodo publication pairing helpers."""
+
+from __future__ import annotations
+
+import re
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+SRC_DIR = REPO_ROOT / "code" / "src"
+sys.path.insert(0, str(SRC_DIR))
+
+from publication_pairing import (  # noqa: E402
+    GitHubRelease,
+    PublicationPair,
+    ZenodoRecord,
+    confidence_for_pair,
+    extract_dois,
+    find_publication_pairs,
+    infer_domain,
+    is_ignored_release,
+    render_readme,
+    yaml_double_quoted,
+)
+
+
+def test_extract_dois_normalizes_markdown_links():
+    text = "DOI: [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478)."
+    assert extract_dois(text) == ["10.5281/zenodo.20286478"]
+
+
+def test_api_normalization_for_github_and_zenodo_records():
+    release = GitHubRelease.from_api(
+        "docxology",
+        "example",
+        {
+            "tag_name": "v1.0.0",
+            "name": "Example Release",
+            "body": "DOI: 10.5281/zenodo.1",
+            "html_url": "https://github.com/docxology/example/releases/tag/v1.0.0",
+            "published_at": "2026-05-27T00:00:00Z",
+            "assets": [{"name": "paper.pdf", "browser_download_url": "https://example.test/paper.pdf", "size": 12}],
+        },
+    )
+    record = ZenodoRecord.from_api(
+        {
+            "id": 1,
+            "doi": "10.5281/zenodo.1",
+            "conceptdoi": "10.5281/zenodo.0",
+            "links": {"html": "https://zenodo.org/records/1"},
+            "metadata": {
+                "title": "Example Release",
+                "publication_date": "2026-05-27",
+                "version": "1.0.0",
+                "resource_type": {"type": "publication"},
+                "creators": [{"name": "Friedman, Daniel Ari"}],
+                "description": "Example.",
+                "keywords": ["example"],
+                "related_identifiers": [{"identifier": release.html_url}],
+            },
+            "files": [{"key": "paper.pdf"}],
+        }
+    )
+
+    assert release.full_name == "docxology/example"
+    assert release.assets[0].name == "paper.pdf"
+    assert record.record_id == "1"
+    assert record.doi == "10.5281/zenodo.0"
+    # record_url must agree with the canonical concept DOI, not the version-specific record_id,
+    # so the same document never cites two different Zenodo record URLs for one work.
+    assert record.record_url == "https://zenodo.org/records/0"
+
+
+def test_render_readme_cleans_html_and_includes_doi_and_url_in_citation():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="example",
+        tag="v1.0.0",
+        name="Example Release",
+        body="DOI: 10.5281/zenodo.20396328",
+        html_url="https://github.com/docxology/example/releases/tag/v1.0.0",
+        published_at="2026-05-27T00:00:00Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="20396328",
+        doi="10.5281/zenodo.20396328",
+        title="Example Release",
+        publication_date="2026-05-27",
+        version="1.0.0",
+        resource_type={"type": "publication"},
+        creators=[{"name": "Friedman, Daniel Ari"}],
+        description="<p>Example &mdash; publication.</p>\n\n---\nAssociated artifacts\nDOI: https://doi.org/10.5281/zenodo.20396328",
+        keywords=["example"],
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/20396328",
+    )
+    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=("doi",))
+
+    readme = render_readme(pair, "2026_Example")
+
+    assert "Example \u2014 publication." in readme
+    assert "Associated artifacts" not in readme
+    assert "<p>" not in readme
+    assert (
+        "> Friedman, D. A. (2026). *Example Release*. Zenodo. "
+        "DOI: 10.5281/zenodo.20396328. URL: https://doi.org/10.5281/zenodo.20396328."
+    ) in readme
+
+
+def test_template_smoke_release_is_ignored():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="template-release-smoke",
+        tag="v0.4.0-release-smoke",
+        name="Template release smoke v0.4.0 (integration test - do not cite)",
+        body="This is a release smoke test. Do not cite.",
+        html_url="https://github.com/docxology/template-release-smoke/releases/tag/v0.4.0-release-smoke",
+        published_at="2026-05-27T17:08:23Z",
+        assets=[],
+    )
+    assert is_ignored_release(release)
+
+
+def test_biology_textbook_is_strong_pair_from_shared_doi():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="biology_textbook",
+        tag="v1.0.0",
+        name="Introduction to Biology v1.0.0 (Instructor Edition)",
+        body=(
+            "Reserved Zenodo DOI: [10.5281/zenodo.20286478]"
+            "(https://doi.org/10.5281/zenodo.20286478)\n"
+            "Source: https://github.com/docxology/biology_textbook\n"
+            "PDF SHA-256: `79fe889ab05dc92c4580f8b1701fea12716a221045ddf9adc72a711f4f297f7e`"
+        ),
+        html_url="https://github.com/docxology/biology_textbook/releases/tag/v1.0.0",
+        published_at="2026-05-26T14:26:32Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="20286478",
+        doi="10.5281/zenodo.20286478",
+        title="Introduction to Biology: A Generative Approach",
+        publication_date="2026-05-26",
+        version="1.0.0",
+        resource_type={"type": "publication", "subtype": "book", "title": "Book"},
+        creators=[{"name": "Friedman, Daniel Ari", "orcid": "0000-0001-6232-9096"}],
+        description="Open biology textbook.",
+        keywords=["Biology", "Open textbook"],
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/20286478",
+    )
+
+    pair = confidence_for_pair(release, record)
+
+    assert pair is not None
+    assert pair.confidence == "strong"
+    assert "github_release_mentions_doi" in pair.evidence
+    assert pair.github_repo == "docxology/biology_textbook"
+
+
+def test_template_cross_linked_release_is_strong_pair():
+    release_url = "https://github.com/docxology/template_code_project/releases/tag/v2.2.0"
+    release = GitHubRelease(
+        owner="docxology",
+        repo="template_code_project",
+        tag="v2.2.0",
+        name="Convergence Analysis of Gradient Descent Optimization (v2.2.0)",
+        body=(
+            "DOI: https://doi.org/10.5281/zenodo.20416565\n"
+            "Zenodo: https://zenodo.org/records/20416565\n"
+            f"GitHub release: {release_url}\n"
+        ),
+        html_url=release_url,
+        published_at="2026-05-27T18:08:53Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="20416565",
+        doi="10.5281/zenodo.20416565",
+        title="Convergence Analysis of Gradient Descent Optimization",
+        publication_date="2026",
+        version="2.2",
+        resource_type={"type": "publication", "title": "Publication"},
+        creators=[{"name": "Research Template Author"}],
+        description="Convergence study.",
+        keywords=["gradient descent"],
+        related_identifiers=[
+            {"identifier": release_url, "relation": "isSupplementTo", "resource_type": "software"}
+        ],
+        files=[],
+        html_url="https://zenodo.org/records/20416565",
+    )
+
+    pairs = find_publication_pairs([release], [record])
+
+    assert len(pairs) == 1
+    assert pairs[0].confidence == "strong"
+    assert "zenodo_related_identifier_mentions_release" in pairs[0].evidence
+
+
+def test_unlinked_title_only_match_needs_review():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="crescent-city",
+        tag="v0.2.0",
+        name="Crescent City in Living Waves",
+        body="No DOI here.",
+        html_url="https://github.com/docxology/crescent-city/releases/tag/v0.2.0",
+        published_at="2026-03-18T17:52:41Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="20286171",
+        doi="10.5281/zenodo.20286171",
+        title="Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+        publication_date="2026-05-26",
+        version="1.0.0",
+        resource_type={"type": "publication", "title": "Publication"},
+        creators=[{"name": "Friedman, Daniel Ari", "orcid": "0000-0001-6232-9096"}],
+        description="Crescent City manuscript.",
+        keywords=[],
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/20286171",
+    )
+
+    pair = confidence_for_pair(release, record)
+
+    assert pair is not None
+    assert pair.confidence == "needs_review"
+
+
+def test_release_self_repo_link_alone_does_not_create_pair():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="biology_textbook",
+        tag="v1.0.0",
+        name="Introduction to Biology v1.0.0",
+        body="Source: https://github.com/docxology/biology_textbook",
+        html_url="https://github.com/docxology/biology_textbook/releases/tag/v1.0.0",
+        published_at="2026-05-26T14:26:32Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="13999298",
+        doi="10.5281/zenodo.13999298",
+        title="MVEE: A Framework for Evolutionary Studies",
+        publication_date="2018",
+        version=None,
+        resource_type={"type": "publication"},
+        creators=[],
+        description="Unrelated record.",
+        keywords=[],
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/13999298",
+    )
+
+    assert confidence_for_pair(release, record) is None
+
+
+def _unescape_yaml_double_quoted(escaped: str) -> str:
+    # Single left-to-right pass: a backslash followed by any character means
+    # that character literally. Mirrors how a YAML double-quoted scalar resolves
+    # the \\ and \" escapes yaml_double_quoted() produces.
+    return re.sub(r"\\(.)", r"\1", escaped)
+
+
+def test_yaml_double_quoted_escapes_inner_quotes_and_backslashes():
+    title = 'Transcript of: Mark Solms, "Consciousness as Precision Optimization"'
+    escaped = yaml_double_quoted(title)
+    assert '"' not in escaped.replace('\\"', "")  # every quote is escaped
+    assert _unescape_yaml_double_quoted(escaped) == title
+
+    backslash_title = "A path C:\\data and a \"quote\""
+    escaped2 = yaml_double_quoted(backslash_title)
+    assert _unescape_yaml_double_quoted(escaped2) == backslash_title
+
+
+def _domain_pair(*, title: str, description: str, keywords: list[str]) -> PublicationPair:
+    release = GitHubRelease(
+        owner="docxology",
+        repo="probe",
+        tag="v0.1.0",
+        name="probe v0.1.0",
+        body="DOI: https://doi.org/10.5281/zenodo.1",
+        html_url="https://github.com/docxology/probe/releases/tag/v0.1.0",
+        published_at="2026-06-25T00:00:00Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="1",
+        doi="10.5281/zenodo.1",
+        title=title,
+        publication_date="2026-06-25",
+        version="0.1.0",
+        resource_type={"type": "publication", "title": "Publication"},
+        creators=[{"name": "Friedman, Daniel Ari"}],
+        description=description,
+        keywords=keywords,
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/1",
+    )
+    return PublicationPair(release=release, record=record, confidence="strong", evidence=())
+
+
+def test_infer_domain_does_not_false_positive_on_substrings():
+    # "dominant" contains "ant" and "smart" contains "art"; neither should trigger
+    # entomology/art domain tags without a genuine whole-word match.
+    pair = _domain_pair(
+        title="Sortition Upstream of NTQR",
+        description=(
+            "The dominant lever is which rule forms the panel, not its size; "
+            "a smart selection rule recovers best under a fully deterministic instrument."
+        ),
+        keywords=["sortition", "unlabeled evaluation", "expert panels"],
+    )
+
+    assert infer_domain(pair) is None
+
+
+def test_infer_domain_matches_whole_word_entomology_term():
+    pair = _domain_pair(
+        title="Ant Foraging Behavior",
+        description="A study of ant colony foraging behavior.",
+        keywords=["entomology"],
+    )
+
+    assert infer_domain(pair) == "🐜"

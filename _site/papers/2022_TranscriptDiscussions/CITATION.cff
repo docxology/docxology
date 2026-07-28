@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior""
+version: "v1"
+date-released: 2022-09-14
+doi: 10.5281/zenodo.7401875
+url: "https://doi.org/10.5281/zenodo.7401875"
+authors:
+  - family-names: Tison
+    given-names: Rémi
+  - family-names: Tickles
+    given-names: Dean
+  - family-names: Knight
+    given-names: Bleu
+  - family-names: Friedman
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7401875
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/7401875"
+    description: "Zenodo landing page"

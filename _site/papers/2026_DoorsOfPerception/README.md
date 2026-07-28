@@ -1,0 +1,42 @@
+# 📄 DoorsOfPerception
+
+**Daniel Ari Friedman** (2026) · *Zenodo*
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18600040-blue)](https://doi.org/10.5281/zenodo.18600040)
+
+---
+
+## Abstract
+
+> The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atlas' sketching how Blake's theory of seeing maps onto prediction error minimization, Markov blankets, hierarchical generative models, and the principle that all perception is active inference.
+
+## Keywords
+
+`William Blake` · `Active Inference` · `perception` · `prediction` · `Thematic Atlas` · `prophetic vision` · `generative models` · `Markov blankets`
+
+## Methods
+
+- Visual and symbolic analysis
+- Cross-domain pattern mapping
+
+## Key Findings
+
+- The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference.
+- The paper develops a 'Thematic Atl...
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.18600040](https://doi.org/10.5281/zenodo.18600040)
+- Zenodo record: [https://zenodo.org/records/18600040](https://zenodo.org/records/18600040)
+- PDF: [2026_DoorsOfPerception.pdf](2026_DoorsOfPerception.pdf)
+- PDF download: [blake_active_inference_DAF_v1_2-12-2026.pdf](https://zenodo.org/api/records/18600041/files/blake_active_inference_DAF_v1_2-12-2026.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/18600040)
+
+## Citation
+
+> Daniel Ari Friedman (2026). *DoorsOfPerception*. Zenodo. DOI: 10.5281/zenodo.18600040. URL: https://doi.org/10.5281/zenodo.18600040.
+
+## Related
+
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

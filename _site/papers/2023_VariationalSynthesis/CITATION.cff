@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "VariationalSynthesis"
+date-released: 2023
+authors:
+  - family-names: Friston
+    given-names: Karl
+  - family-names: Friedman
+    given-names: Daniel A.
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Constant
+    given-names: Axel
+  - family-names: Knight
+    given-names: V. Bleu
+  - family-names: Fields
+    given-names: Chris
+  - family-names: Parr
+    given-names: Thomas
+  - family-names: Campbell
+    given-names: John O.

@@ -1,0 +1,40 @@
+{
+  "title": "Redacted Report Template: Disclosure Control and Release Audit",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.21298890",
+  "doi_url": "https://doi.org/10.5281/zenodo.21298890",
+  "zenodo_record": "https://zenodo.org/records/21298890",
+  "record_id": "21298891",
+  "publication_date": "2026-07-10",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and TPM-backed sealed sidecars across a sixteen-variant visual proof matrix. Four redaction styles—blackout, whiteout, grayout, and blur—are rendered across four PDF backgrounds—white, gray, black, and blur—yielding sixteen base proof PDFs. Each receives nine steganographic security methods including SHA-256/SHA-512 hash manifests, diagonal watermark overlays, footer provenance stamps, invisible text, QR and Code128 barcodes, PDF Info and XMP metadata, and embedded manifest attachments. Optional Kmyth TPM sealing wraps each hash manifest and steganography PDF in a .ski sidecar sealed against the TPM2-TSS storage hierarchy, bound to PCR selections and policy or-values. The release gate requires three reviewer roles—originator, classification reviewer, and release authority—each providing a non-empty rationale. A source-safe redaction ledger records SHA-256 hashes of each redacted span without exposing source text, and a segment hash manifest compares source and public SHA-256 digests for reproducible audit. The comprehensive release packet combines sanitized text, audit findings, ledger, hashes, review gate status, and paragraph-level audit tables into a single JSON-ready export. This exemplar confirms that visual presentation choices remain orthogonal to the release gate: the same source-safe decisions drive every output variant.",
+  "keywords": [
+    "redaction",
+    "disclosure control",
+    "release audit",
+    "source protection"
+  ],
+  "files": [
+    {
+      "name": "Friedman_2026_Redacted_103642b6.pdf",
+      "size_bytes": 58890,
+      "checksum": "md5:69ae13d34331099e203575288d7bf626",
+      "download_url": "https://zenodo.org/api/records/21298891/files/Friedman_2026_Redacted_103642b6.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-07-10T19:31:19Z"
+}

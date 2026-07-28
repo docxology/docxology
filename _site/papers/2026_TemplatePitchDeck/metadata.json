@@ -1,0 +1,75 @@
+{
+  "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.21281509",
+  "doi_url": "https://doi.org/10.5281/zenodo.21281509",
+  "zenodo_record": "https://zenodo.org/records/21281509",
+  "record_id": "21281510",
+  "publication_date": "2026-07-08",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Research groups routinely need to pitch their work — to funders, partners, or\ncollaborators — yet pitch decks are almost never treated as reproducible\nresearch artifacts: they are hand-assembled in proprietary slide tools,\ncontain unverifiable claims, and cannot be regenerated when the underlying\nfacts change. template_pitch_deck closes that gap. It generates six\nartifacts from one token-resolved content source — short, medium, and long\ndecks, each in both PDF and PPTX — with every numeric claim traced back to a\nlive introspection of the repository it describes, every {{TOKEN}}\nsubstitution verified to have actually landed, and every sentence checked\nagainst a denylist of pitch-deck clichés.\n\nThe flagship content pitches template_template (../../template_template/), this\nmonorepo's own autopoietic meta-project, to a meta-science and\nscience-integrity audience — the kind of pitch an organization like the\nActive Inference Institute or COGSEC would actually hand to a funder. The\nrendering engine itself is new, reusable infrastructure:\ninfrastructure/rendering/slide_deck.py (ReportLab, PDF) and\ninfrastructure/rendering/pptx_deck.py (python-pptx) both consume the same\nDeckContent model, so a PDF and a PPTX built from identical content carry\nidentical slide counts and identical text — verified by direct read-back of\nboth file formats, not by inspection.\n\nKeywords: pitch deck, slide generation, reproducible research\ncommunication, meta-science infrastructure, token validation, PPTX, PDF\nrendering.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.21281509\nZenodo: https://zenodo.org/records/21281509\nPDF SHA-256: 66941950e2307d1e9717c0045f3db3196d7d2542c3f5ffceced00438f653c55b",
+  "keywords": [
+    "pitch deck",
+    "slide generation",
+    "reproducible research communication",
+    "meta-science infrastructure",
+    "science integrity",
+    "token validation",
+    "PPTX",
+    "PDF rendering"
+  ],
+  "files": [
+    {
+      "name": "template_template_pitch_short.pdf",
+      "size_bytes": 101688,
+      "checksum": "md5:79e8f9a3cd6cfe3751ada01242995333",
+      "download_url": "https://zenodo.org/api/records/21281510/files/template_template_pitch_short.pdf/content"
+    },
+    {
+      "name": "template_template_pitch_long.pdf",
+      "size_bytes": 601690,
+      "checksum": "md5:29407ecf3f02a156c84f92422faf2919",
+      "download_url": "https://zenodo.org/api/records/21281510/files/template_template_pitch_long.pdf/content"
+    },
+    {
+      "name": "template_template_pitch_medium.pdf",
+      "size_bytes": 512951,
+      "checksum": "md5:04e5ee614103c909625f20ba09ee804d",
+      "download_url": "https://zenodo.org/api/records/21281510/files/template_template_pitch_medium.pdf/content"
+    },
+    {
+      "name": "Friedman_2026_Templatepitchdeck_66941950.pdf",
+      "size_bytes": 60923,
+      "checksum": "md5:6f13bc9c5db52443328ff40b1b2f4ee9",
+      "download_url": "https://zenodo.org/api/records/21281510/files/Friedman_2026_Templatepitchdeck_66941950.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/template-pitch-deck"
+    }
+  ],
+  "github_repo": "docxology/template-pitch-deck",
+  "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+  "release_tag": "v1.0.2",
+  "release_name": "v1.0.2",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-07-17T23:23:31Z"
+}

@@ -1,0 +1,43 @@
+# 🛡️ TrustFinder
+
+**R.J. Cordes, Scott David, Daniel A. Friedman** (2022) · *Zenodo*
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7093836-blue)](https://doi.org/10.5281/zenodo.7093836)
+
+---
+
+## Abstract
+
+> TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program, this document presents a sociotechnical system for collaborative evaluation of information trustworthiness.
+
+## Keywords
+
+`TrustFinder` · `trust systems` · `information evaluation` · `cognitive security` · `verified information` · `collaborative assessment` · `sociotechnical systems`
+
+## Methods
+
+- Narrative analysis
+- Trust and integrity modeling
+
+## Key Findings
+
+- There is a broadly recognized need for better situational awareness within the information environment..
+- Each year, millions of articles, books, documents, and datasets are published..
+- Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims..
+
+## Artifacts
+
+- DOI: [10.5281/zenodo.7093836](https://doi.org/10.5281/zenodo.7093836)
+- Zenodo record: [https://zenodo.org/records/7093836](https://zenodo.org/records/7093836)
+- PDF: [2022_TrustFinder.pdf](2022_TrustFinder.pdf)
+- PDF download: [VIE-IG_1.pdf](https://zenodo.org/api/records/7093837/files/VIE-IG_1.pdf/content)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7093836)
+
+## Citation
+
+> R.J. Cordes, Scott David, Daniel A. Friedman (2022). *TrustFinder*. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836.
+
+## Related
+
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Map — Daniel Ari Friedman, PhD</title>
+    <meta name="description" content="Canonical IDs, public APIs, source queries, and verification notes for Daniel Ari Friedman: ORCID, PubMed, Europe PMC, Crossref, Zenodo, GitHub, and AII.">
+    <meta name="keywords" content="Daniel Ari Friedman, discovery map, ORCID, PubMed, Europe PMC, Crossref, Zenodo, GitHub, Active Inference Institute">
+    <meta name="author" content="Daniel Ari Friedman">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/discovery.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discovery Map — Daniel Ari Friedman, PhD">
+    <meta property="og:description" content="Canonical IDs, public APIs, source queries, and verification notes for Daniel Ari Friedman.">
+    <meta property="og:url" content="https://danielarifriedman.com/discovery.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Discovery Map — Daniel Ari Friedman, PhD">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discovery Map — Daniel Ari Friedman, PhD">
+    <meta name="twitter:description" content="Canonical IDs, public APIs, source queries, and verification notes for Daniel Ari Friedman.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
+    <meta name="twitter:image:alt" content="Discovery Map — Daniel Ari Friedman, PhD">
+
+
+<link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+        .discovery-intro{max-width:860px;margin:0 auto 2rem;color:var(--text-secondary);line-height:1.7;text-align:center}
+        .discovery-table-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:auto;margin:1.25rem 0 2rem}
+        .discovery-table-wrap table{margin-top:0;min-width:760px}
+        .discovery-table-wrap td:last-child{color:var(--text-secondary)}
+        .code-block{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;overflow:auto;color:var(--silver-bright);font-size:.9rem;line-height:1.6}
+        .note-list{color:var(--text-secondary);line-height:1.75;max-width:920px;margin:0 auto}
+        .note-list li{margin:.45rem 0}
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danielarifriedman.com/discovery.html#webpage",
+        "url": "https://danielarifriedman.com/discovery.html",
+        "name": "Discovery Map — Daniel Ari Friedman, PhD",
+        "description": "Canonical public identifiers, API endpoints, source queries, and verification notes for Daniel Ari Friedman.",
+        "dateModified": "2026-07-21",
+        "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
+        "about": { "@id": "https://danielarifriedman.com/#person" },
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Daniel Ari Friedman public-source discovery endpoints",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Wikidata Q138781444", "url": "https://www.wikidata.org/wiki/Q138781444" },
+                { "@type": "ListItem", "position": 2, "name": "ORCID 0000-0001-6232-9096", "url": "https://orcid.org/0000-0001-6232-9096" },
+                { "@type": "ListItem", "position": 3, "name": "Google Scholar DXjPFtYAAAAJ", "url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en" },
+                { "@type": "ListItem", "position": 4, "name": "GitHub docxology", "url": "https://github.com/docxology" },
+                { "@type": "ListItem", "position": 5, "name": "Curated bibliography", "url": "https://danielarifriedman.com/publications.html" },
+                { "@type": "ListItem", "position": 6, "name": "Active Inference Institute Wikidata Q139600792", "url": "https://www.wikidata.org/wiki/Q139600792" },
+                { "@type": "ListItem", "position": 7, "name": "LLMs.txt", "url": "https://danielarifriedman.com/llms.txt" },
+                { "@type": "ListItem", "position": 8, "name": "CodeMeta", "url": "https://danielarifriedman.com/codemeta.json" },
+                { "@type": "ListItem", "position": 9, "name": "CITATION.cff", "url": "https://danielarifriedman.com/CITATION.cff" },
+                { "@type": "ListItem", "position": 10, "name": "Works JSON", "url": "https://danielarifriedman.com/data/works.json" },
+                { "@type": "ListItem", "position": 11, "name": "Software JSON", "url": "https://danielarifriedman.com/data/software.json" },
+                { "@type": "ListItem", "position": 12, "name": "People JSON", "url": "https://danielarifriedman.com/data/people.json" },
+                { "@type": "ListItem", "position": 13, "name": "Organizations JSON", "url": "https://danielarifriedman.com/data/organizations.json" },
+                { "@type": "ListItem", "position": 14, "name": "Claims JSON", "url": "https://danielarifriedman.com/data/claims.json" },
+                { "@type": "ListItem", "position": 15, "name": "Reconciliation JSON", "url": "https://danielarifriedman.com/data/reconciliation.json" },
+                { "@type": "ListItem", "position": 16, "name": "Human search", "url": "https://danielarifriedman.com/search.html" },
+                { "@type": "ListItem", "position": 17, "name": "OpenSearch descriptor", "url": "https://danielarifriedman.com/opensearch.xml" },
+                { "@type": "ListItem", "position": 18, "name": "Search index", "url": "https://danielarifriedman.com/search-index.json" },
+                { "@type": "ListItem", "position": 19, "name": "Data catalog", "url": "https://danielarifriedman.com/catalog.html" },
+                { "@type": "ListItem", "position": 20, "name": "Updates", "url": "https://danielarifriedman.com/updates.html" },
+                { "@type": "ListItem", "position": 21, "name": "RSS feed", "url": "https://danielarifriedman.com/feed.xml" },
+                { "@type": "ListItem", "position": 22, "name": "Per-work pages", "url": "https://danielarifriedman.com/works/" },
+                { "@type": "ListItem", "position": 23, "name": "Repository inventory", "url": "https://danielarifriedman.com/repositories.html" },
+                { "@type": "ListItem", "position": 24, "name": "GitHub repositories JSON", "url": "https://danielarifriedman.com/data/github-repositories.json" },
+                { "@type": "ListItem", "position": 25, "name": "Public-source inventory", "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-07-18.json" },
+                { "@type": "ListItem", "position": 26, "name": "Static accessibility report", "url": "https://danielarifriedman.com/reports/accessibility_static_2026-07-22.json" },
+                { "@type": "ListItem", "position": 27, "name": "Visual QA manifest", "url": "https://danielarifriedman.com/reports/visual-qa/2026-07-18/manifest.json" }
+            ]
+        }
+    }
+    </script>
+    <style>.breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://danielarifriedman.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Discovery",
+            "item": "https://danielarifriedman.com/discovery.html"
+        }
+    ]
+}
+    </script>
+    <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
+    <!-- Resource hints -->
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://linkedin.com/in/danielarifriedman">
+    <link rel="me" href="https://youtube.com/@danielarifriedman">
+    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+
+
+    <meta name="revised" content="2026-07-21">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#research">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="works/">Works</a>
+            <a href="domains.html">Domains</a>
+            <a href="software.html">Software</a>
+            <a href="videos.html">Videos</a>
+            <a href="art.html">Art</a>
+            <a href="media.html">Media</a>
+            <a href="collaborators.html">Collaborators</a>
+            <a href="search.html">Search</a>
+            <a href="catalog.html">Data Catalog</a>
+            <a href="evidence.html">Evidence</a>
+            <a href="updates.html">Updates</a>
+            <a href="cite-verify.html">Cite</a>
+            <a href="resume/resume.html">CV</a>
+            <a href="discovery.html" class="active">Discovery</a>
+            <a href="data/agent-index.json">Agent Map</a>
+            <a href="index.html#connect">Connect</a>
+        </div>
+    </nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="index.html">Home</a></li><li aria-current="page">Discovery</li></ol>
+    </nav>
+
+    <header class="page-hero">
+        <h1>Discovery Map</h1>
+        <p class="sub">Canonical identifiers, public APIs, exact search paths, and verification notes for Daniel Ari Friedman.</p>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat"><div class="num">20</div><div class="lbl">ORCID work groups</div></div>
+            <div class="stat"><div class="num">8</div><div class="lbl">PubMed exact records</div></div>
+            <div class="stat"><div class="num">10</div><div class="lbl">Europe PMC results</div></div>
+            <div class="stat"><div class="num">15</div><div class="lbl">Crossref DOI records</div></div>
+            <div class="stat"><div class="num">47/131</div><div class="lbl">Zenodo exact / ORCID</div></div>
+            <div class="stat"><div class="num">359</div><div class="lbl">GitHub repos</div></div>
+        </div>
+    </div>
+
+    <main id="main" class="main">
+        <p class="discovery-intro">
+            This page is a source-discovery companion to the curated bibliography. It is designed for researchers,
+            search engines, and agents that need stable identifiers and repeatable public queries before importing claims.
+        </p>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Canonical Identity Anchors</h2>
+                <p>Stable profile and entity links for reconciliation across knowledge graphs.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="discovery-table-wrap">
+                <table>
+                    <thead><tr><th>Source</th><th>Link</th><th>Use</th></tr></thead>
+                    <tbody>
+                        <tr><td>Wikidata</td><td><a href="https://www.wikidata.org/wiki/Q138781444">Q138781444</a></td><td>Canonical entity anchor for knowledge graph reconciliation.</td></tr>
+                        <tr><td>ORCID</td><td><a href="https://orcid.org/0000-0001-6232-9096">0000-0001-6232-9096</a></td><td>Persistent researcher identifier; public record currently groups 20 works.</td></tr>
+                        <tr><td>Google Scholar</td><td><a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&amp;hl=en">DXjPFtYAAAAJ</a></td><td>Citation profile; local site keeps the dated May 16, 2026 manual citation sync in data/scholar-snapshot.json.</td></tr>
+                        <tr><td>GitHub</td><td><a href="https://github.com/docxology">@docxology</a></td><td>Primary software profile; current public repo totals are recorded in reports/current_counts.md and data/github-repositories.json.</td></tr>
+                        <tr><td>Main Site</td><td><a href="https://danielarifriedman.com/">danielarifriedman.com</a></td><td>Canonical public homepage and SEO target.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Research Indexes</h2>
+                <p>Public snapshots from source indexes, checked on 2026-07-21.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="discovery-table-wrap">
+                <table>
+                    <thead><tr><th>Index</th><th>Link</th><th>Notes</th></tr></thead>
+                    <tbody>
+                        <tr><td>PubMed</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D">Exact author search</a></td><td>NCBI E-utilities returned 8 records.</td></tr>
+                        <tr><td>Europe PMC</td><td><a href="https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22">Exact author search</a></td><td>Returned 10 exact-author results, including preprints.</td></tr>
+                        <tr><td>Crossref API</td><td><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">ORCID DOI records</a></td><td>Returned 15 DOI records attached to the ORCID.</td></tr>
+                        <tr><td>Zenodo</td><td><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Exact-name creator search</a></td><td>Returned 47 exact-name records.</td></tr>
+                        <tr><td>Zenodo API</td><td><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">ORCID-linked records</a></td><td>Returned 131 records, including versioned deposits and software archives.</td></tr>
+                        <tr><td>Semantic Scholar</td><td><a href="https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&amp;sort=relevance">Exact-name search</a></td><td>AI-curated citation graph; verify candidate author merges before using as profile evidence.</td></tr>
+                        <tr><td>DBLP</td><td><a href="https://dblp.org/pid/346/2173.html">Author page</a></td><td>Computer-science bibliography mirror.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Software &amp; Organization APIs</h2>
+                <p>Machine-readable software and institutional sources.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="discovery-table-wrap">
+                <table>
+                    <thead><tr><th>Source</th><th>Link</th><th>Notes</th></tr></thead>
+                    <tbody>
+                        <tr><td>GitHub API — docxology</td><td><a href="https://api.github.com/users/docxology">api.github.com/users/docxology</a></td><td>Returned 347 public repositories on 2026-07-21; profile timestamps and profile metadata are included in the API response.</td></tr>
+                        <tr><td>GitHub API — AII</td><td><a href="https://api.github.com/users/ActiveInferenceInstitute">api.github.com/users/ActiveInferenceInstitute</a></td><td>Returned 40 public repositories on 2026-07-21; curated AII catalog totals in <a href="reports/current_counts.md">current totals</a>.</td></tr>
+                        <tr><td>AII public landing page</td><td><a href="https://activeinference.org/">activeinference.org</a></td><td>Current public landing page; governance/source pages remain on activeinference.institute.</td></tr>
+                        <tr><td>AII Wikidata</td><td><a href="https://www.wikidata.org/wiki/Q139600792">Q139600792</a></td><td>Organization knowledge-graph anchor; useful for reconciliation, but currently lightly referenced.</td></tr>
+                        <tr><td>LLMs.txt</td><td><a href="llms.txt">llms.txt</a></td><td>Compact agent-facing map of canonical pages and source-of-truth rules.</td></tr>
+                        <tr><td>Human search</td><td><a href="search.html">search.html</a></td><td>Browser search over works, software, pages, people, organizations, and claims.</td></tr>
+                        <tr><td>OpenSearch</td><td><a href="opensearch.xml">opensearch.xml</a></td><td>Search-provider descriptor for site search.</td></tr>
+                        <tr><td>CodeMeta</td><td><a href="codemeta.json">codemeta.json</a></td><td>Machine-readable software/source metadata for repository indexes.</td></tr>
+                        <tr><td>Data catalog</td><td><a href="catalog.html">catalog.html</a> · <a href="data/catalog.json">data/catalog.json</a></td><td>Schema.org DataCatalog for public JSON, citation, and report exports.</td></tr>
+                        <tr><td>Agent route manifest</td><td><a href="data/agent-index.json">data/agent-index.json</a></td><td>Stable route families, dataset schemas, current counts, freshness policy, hashes, fallbacks, and query recipes.</td></tr>
+                        <tr><td>Coverage exceptions</td><td><a href="data/coverage-exceptions.json">data/coverage-exceptions.json</a> · <a href="reports/source_coverage_2026-07-17.md">source coverage report</a></td><td>Explicit paper-folder, full-text, DOI, canonical-URL, and non-paper coverage gaps; review queue rather than automatic rejection.</td></tr>
+                        <tr><td>Repository classification</td><td><a href="data/repository-classification.json">data/repository-classification.json</a></td><td>Review queue for uncatalogued public repositories, preserving fork/archive/privacy state, description-quality triage, and manual catalog decisions.</td></tr>
+                        <tr><td>Video timeline index</td><td><a href="data/videos-index.json">data/videos-index.json</a></td><td>Compact initial-load projection for the interactive video timeline; complete metadata remains in <a href="data/videos.json">data/videos.json</a>.</td></tr>
+                        <tr><td>Pages artifact</td><td><a href="data/pages-artifact-manifest.json">data/pages-artifact-manifest.json</a></td><td>Published file list, SHA-256 values, bounded byte budget, omitted-image policy, and GitHub fallback templates.</td></tr>
+                        <tr><td>Release integrity</td><td><a href="data/release-integrity.json">data/release-integrity.json</a></td><td>Source/generator hashes, Pages artifact summary, deployment metadata, live verification, and public CV privacy status.</td></tr>
+                        <tr><td>Updates</td><td><a href="updates.html">updates.html</a> · <a href="CHANGELOG.md">CHANGELOG.md</a></td><td>Human-readable update history and source changelog.</td></tr>
+                        <tr><td>Search index</td><td><a href="search-index.json">search-index.json</a></td><td>Site-wide discovery index for pages, works, repositories, people, organizations, and claims.</td></tr>
+                        <tr><td>RSS feed</td><td><a href="feed.xml">feed.xml</a></td><td>Recent works and site-update feed.</td></tr>
+                        <tr><td>Citation metadata</td><td><a href="CITATION.cff">CITATION.cff</a></td><td>Machine-readable citation metadata for this public research index.</td></tr>
+                        <tr><td>Per-work pages</td><td><a href="works/">works/</a></td><td>Generated landing pages for each bibliography row.</td></tr>
+                        <tr><td>Works JSON</td><td><a href="data/works.json">data/works.json</a></td><td>Structured bibliography export; row count in <a href="reports/current_counts.md">current totals</a>.</td></tr>
+                        <tr><td>Software JSON</td><td><a href="data/software.json">data/software.json</a></td><td>Structured export of the 96-row curated software catalog.</td></tr>
+                        <tr><td>GitHub repository inventory</td><td><a href="repositories.html">repositories.html</a> · <a href="repositories-forks.html">repositories-forks.html</a> · <a href="data/github-repositories.json">data/github-repositories.json</a></td><td>Generated primary repository inventory for docxology and AII, with forks separated into an archive page while JSON remains complete for agents.</td></tr>
+                        <tr><td>People JSON</td><td><a href="data/people.json">data/people.json</a></td><td>Compact people index for agentic context.</td></tr>
+                        <tr><td>Organizations JSON</td><td><a href="data/organizations.json">data/organizations.json</a></td><td>Compact organization index for agentic context.</td></tr>
+                        <tr><td>Claims JSON</td><td><a href="data/claims.json">data/claims.json</a></td><td>Claim-level evidence data for source-aware agents.</td></tr>
+                        <tr><td>Reconciliation JSON</td><td><a href="data/reconciliation.json">data/reconciliation.json</a></td><td>Curated-local vs public-index comparison.</td></tr>
+                        <tr><td>Work enrichment JSON</td><td><a href="data/work-enrichment.json">data/work-enrichment.json</a></td><td>Extracted abstracts, keywords, methods, and findings used by generated work pages and search.</td></tr>
+                        <tr><td>Generated manifest</td><td><a href="GENERATED.md">GENERATED.md</a> · <a href="data/generated-manifest.json">data/generated-manifest.json</a></td><td>Source-to-output mapping and rebuild commands for generated artifacts.</td></tr>
+                        <tr><td>Agent start guide</td><td><a href="AGENT_START.md">AGENT_START.md</a></td><td>Task recipes for agents using this repository.</td></tr>
+                        <tr><td>Humans / security</td><td><a href="humans.txt">humans.txt</a> · <a href=".well-known/security.txt">security.txt</a></td><td>Contact, credits, and responsible disclosure metadata.</td></tr>
+                        <tr><td>Public-source snapshot</td><td><a href="reports/public_source_snapshot_2026-07-21.json">reports/public_source_snapshot_2026-07-21.json</a></td><td>Latest public API freshness report.</td></tr>
+                        <tr><td>Public-source inventory</td><td><a href="reports/public_source_inventory_2026-07-18.json">reports/public_source_inventory_2026-07-18.json</a></td><td>Paginated public-source inventory for source discovery and claim auditing.</td></tr>
+                        <tr><td>Reconciliation report</td><td><a href="reports/reconciliation_2026-07-21.md">reports/reconciliation_2026-07-21.md</a></td><td>Human-readable explanation of count differences.</td></tr>
+                        <tr><td>External-link report</td><td><a href="reports/external_links_2026-05-15.json">reports/external_links_2026-05-15.json</a></td><td>Cached scoped network check for site-critical outbound links.</td></tr>
+                        <tr><td>External-link triage</td><td><a href="reports/external_links_triage_2026-05-15.md">reports/external_links_triage_2026-05-15.md</a></td><td>Categorized warning report for scoped external links.</td></tr>
+                        <tr><td>Live-site verification</td><td><a href="reports/live_site_verification_2026-07-17.json">reports/live_site_verification_2026-07-17.json</a></td><td>Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status.</td></tr>
+                        <tr><td>Asset-size audit</td><td><a href="reports/asset_size_2026-07-22.json">reports/asset_size_2026-07-22.json</a></td><td>Size budget report for public assets and generated exports.</td></tr>
+                        <tr><td>Static accessibility report</td><td><a href="reports/accessibility_static_2026-07-22.json">reports/accessibility_static_2026-07-22.json</a></td><td>Static accessibility checks for root HTML pages.</td></tr>
+                        <tr><td>Browser smoke</td><td><a href="reports/browser-smoke/2026-07-18/manifest.json">reports/browser-smoke/2026-07-18/manifest.json</a></td><td>Browser-rendered smoke screenshots for high-priority pages.</td></tr>
+                        <tr><td>Visual QA</td><td><a href="reports/visual-qa/2026-07-18/manifest.json">reports/visual-qa/2026-07-18/manifest.json</a></td><td>Playwright screenshot manifest for key pages and mobile/desktop viewports.</td></tr>
+                        <tr><td>Citation exports</td><td><a href="bibliography.bib">BibTeX</a> · <a href="bibliography.csl.json">CSL JSON</a> · <a href="bibliography.ris">RIS</a></td><td>Citation-manager exports generated from the unified bibliography.</td></tr>
+                        <tr><td>AII Officers</td><td><a href="https://www.activeinference.institute/officers">activeinference.institute/officers</a></td><td>Confirms current officer context.</td></tr>
+                        <tr><td>AII Scientific Advisory Board</td><td><a href="https://www.activeinference.institute/scientific-advisory-board">Scientific Advisory Board</a></td><td>2026 SAB cohort and prior advisory-board context.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Verified Software Releases</h2>
+                <p>Software records discovered during the deep-research pass.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="discovery-table-wrap">
+                <table>
+                    <thead><tr><th>Release</th><th>Link</th><th>Notes</th></tr></thead>
+                    <tbody>
+                        <tr><td>GeneralizedNotationNotation (GNN)</td><td><a href="https://doi.org/10.5281/zenodo.19600217">10.5281/zenodo.19600217</a></td><td>Zenodo software record found in exact-name creator search; kept distinct from the GNN paper row.</td></tr>
+                        <tr><td>Journal-Utilities v0.1.0</td><td><a href="https://doi.org/10.5281/zenodo.18686966">10.5281/zenodo.18686966</a></td><td>AII video-processing software release; authors include Active Inference Institute and Daniel Ari Friedman.</td></tr>
+                        <tr><td>docxology/template v3.1.0</td><td><a href="https://doi.org/10.5281/zenodo.20469500">10.5281/zenodo.20469500</a></td><td>Zenodo software/version metadata for the research template repository; kept distinct from bibliography work rows.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Query Recipes</h2>
+                <p>Repeatable searches for future refreshes.</p>
+                <div class="section-divider"></div>
+            </div>
+            <pre class="code-block"><code>"Daniel Ari Friedman" ORCID
+"Daniel Ari Friedman" "Active Inference Institute"
+"Daniel Ari Friedman" "Pogonomyrmex"
+"Daniel Ari Friedman" "Curio Cards"
+"Daniel Ari Friedman" Zenodo
+"Daniel Ari Friedman" PubMed
+"Daniel Ari Friedman" "Journal-Utilities"
+"Active Inference Institute" Wikidata
+site:activeinference.org "Active Inference"
+site:activeinference.institute "Daniel Friedman"
+site:github.com/docxology "Daniel Ari Friedman"</code></pre>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Verification Notes</h2>
+                <p>Use public indexes carefully; count semantics differ across sources.</p>
+                <div class="section-divider"></div>
+            </div>
+            <ul class="note-list">
+                <li>Treat <a href="publications.html">publications.html</a> and <a href="pages/BIBLIOGRAPHY.md">pages/BIBLIOGRAPHY.md</a> as the curated publication source of truth for this repository.</li>
+                <li>Public APIs are freshness checks, not replacements for the curated bibliography; counts can include duplicate versions, software archives, preprints, or name-variant merges.</li>
+                <li>Wikidata is useful for entity reconciliation, but lightly referenced statements should be checked against official pages or primary records before being imported as claims.</li>
+                <li>OpenAlex search currently returns ORCID-linked and name-variant results that may be over-merged; reconcile it against ORCID, DOI, and the local bibliography before importing claims.</li>
+                <li>Google Scholar citation counts can vary by cache and access path; update site-wide citation metrics only after a deliberate manual sync.</li>
+            </ul>
+        </section>
+
+        <p class="text-center mt-2">
+            <a href="pages/DISCOVERY.md" class="btn btn-outline">Markdown discovery map</a>
+            <a href="search.html" class="btn btn-outline">Search</a>
+            <a href="catalog.html" class="btn btn-outline">Data catalog</a>
+            <a href="updates.html" class="btn btn-outline">Updates</a>
+            <a href="llms.txt" class="btn btn-outline">LLMs.txt</a>
+            <a href="cite-verify.html" class="btn btn-outline">Cite &amp; verify</a>
+            <a href="evidence.html" class="btn btn-outline">Evidence</a>
+            <a href="repositories.html" class="btn btn-outline">Repository inventory</a>
+            <a href="pages/LINKS.md" class="btn btn-outline">All profile links</a>
+            <a href="publications.html" class="btn btn-gold">Curated bibliography</a>
+        </p>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="https://cogsec.org">COGSEC.org</a> · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
+        <div class="footer-links">
+            <a href="mailto:Daniel@ActiveInference.Institute">Email</a>
+            <a href="https://orcid.org/0000-0001-6232-9096">ORCID</a>
+            <a href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&amp;hl=en">Scholar</a>
+            <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="https://github.com/docxology/docxology">Source Repo</a>
+        </div>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed July 2026</p>
+    </footer>
+<script src="/js/tts-controls.js?v=20260712" defer></script>
+<script src="/js/interactive.js?v=20260712" defer></script>
+    <script src="/js/menu-esc.js?v=20260712" defer></script>
+</body>
+</html>

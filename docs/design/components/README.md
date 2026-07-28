@@ -28,9 +28,4 @@ never a wholesale replace.
 | Components | `components-cards.html` | `.section` content card |
 | Components | `components-pills.html` | Domain pills + type badges |
 | Components | `components-publication-table.html` | `.pub-table` row sample |
-| Components | `components-tts.md` | TTS controls integration guide |
-| Components | `components-progress-bar.html` | Reading progress bar |
-| UX | `components-scroll-top.html` | Scroll-to-top button |
-| UX | `components-anchor-link.html` | Section anchor links |
-| UX | `components-search-suggestions.html` | Search autocomplete dropdown |
-| UX | `components-shortcuts.html` | Keyboard shortcuts overlay |
+| Components | `tts.md` | TTS controls integration guide |

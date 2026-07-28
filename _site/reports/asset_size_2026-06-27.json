@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-06-27T22:21:41Z",
+  "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
+  "asset_count": 77,
+  "warnings": 0,
+  "total_bytes": 11403717,
+  "largest": [
+    {
+      "path": "data/videos.json",
+      "kind": "json-data",
+      "bytes": 3429106,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/artworks.json",
+      "kind": "json-data",
+      "bytes": 3254527,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 317681,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 295138,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "resume/resume.pdf",
+      "kind": "resume-export",
+      "bytes": 288725,
+      "budget_bytes": 5000000,
+      "ok": true
+    },
+    {
+      "path": "data/work-enrichment.json",
+      "kind": "json-data",
+      "bytes": 249464,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/resume.json",
+      "kind": "json-data",
+      "bytes": 206450,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/army-ants.webp",
+      "kind": "hero-art",
+      "bytes": 168864,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/decentral-antelligence-agency.webp",
+      "kind": "hero-art",
+      "bytes": 130118,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/mesh-network.webp",
+      "kind": "hero-art",
+      "bytes": 121830,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 114687,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/ant-head.webp",
+      "kind": "hero-art",
+      "bytes": 113506,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "og-computational.jpg",
+      "kind": "og-image",
+      "bytes": 108372,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-art-synergetics.jpg",
+      "kind": "og-image",
+      "bytes": 105555,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-cognitive-security.jpg",
+      "kind": "og-image",
+      "bytes": 105437,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-active-inference.jpg",
+      "kind": "og-image",
+      "bytes": 102258,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-discovery.jpg",
+      "kind": "og-image",
+      "bytes": 101450,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "data/publications-ld.json",
+      "kind": "json-data",
+      "bytes": 101440,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "og-image.jpg",
+      "kind": "og-image",
+      "bytes": 100933,
+      "budget_bytes": 220000,
+      "ok": true
+    },
+    {
+      "path": "og-publications.jpg",
+      "kind": "og-image",
+      "bytes": 100740,
+      "budget_bytes": 220000,
+      "ok": true
+    }
+  ],
+  "over_budget": []
+}

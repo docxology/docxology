@@ -33,6 +33,7 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("discovery.html", "monthly", "0.7"),
     ("cite-verify.html", "monthly", "0.7"),
     ("evidence.html", "monthly", "0.6"),
+    ("reproducibility.html", "monthly", "0.7"),
     ("feed.xml", "weekly", "0.5"),
     ("llms.txt", "monthly", "0.5"),
     ("humans.txt", "monthly", "0.3"),

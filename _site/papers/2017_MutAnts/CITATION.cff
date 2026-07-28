@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "MutAnts"
+date-released: 2017
+authors:
+  - family-names: Friedman
+    given-names: Daniel A.
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Gordon
+    given-names: Deborah M.
+  - family-names: Luo
+    given-names: Liqun

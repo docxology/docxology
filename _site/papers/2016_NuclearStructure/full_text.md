@@ -1,0 +1,1738 @@
+# Full Text: NuclearStructure
+
+> Extracted from `2016_NuclearStructure.pdf`
+
+> 16 figures extracted to `images/`
+
+---
+
+## Page 1
+
+Full Terms & Conditions of access and use can be found at
+http://www.tandfonline.com/action/journalInformation?journalCode=irab20
+Download by: [University of California, San Diego]
+Date: 14 March 2016, At: 06:07
+International Journal of Radiation Biology
+ISSN: 0955-3002 (Print) 1362-3095 (Online) Journal homepage: http://www.tandfonline.com/loi/irab20
+Influence of nuclear structure on the formation of
+radiation-induced lethal lesions
+Daniel A. Friedman, Lauren Tait & Andrew T. M. Vaughan
+To cite this article: Daniel A. Friedman, Lauren Tait & Andrew T. M. Vaughan (2016): Influence
+of nuclear structure on the formation of radiation-induced lethal lesions, International Journal
+of Radiation Biology, DOI: 10.3109/09553002.2016.1144941
+To link to this article:  http://dx.doi.org/10.3109/09553002.2016.1144941
+Published online: 26 Feb 2016.
+Submit your article to this journal 
+Article views: 38
+View related articles 
+View Crossmark data
+
+![page1_img1.png](images/page1_img1.png)
+
+![page1_img2.png](images/page1_img2.png)
+
+![page1_img3.png](images/page1_img3.png)
+
+![page1_img4.png](images/page1_img4.png)
+
+![page1_img5.png](images/page1_img5.png)
+
+![page1_img6.png](images/page1_img6.png)
+
+![page1_img7.png](images/page1_img7.png)
+
+![page1_img8.png](images/page1_img8.png)
+
+![page1_img9.png](images/page1_img9.png)
+
+![page1_img10.png](images/page1_img10.png)
+
+![page1_img11.png](images/page1_img11.png)
+
+![page1_img12.png](images/page1_img12.png)
+
+![page1_img13.jpeg](images/page1_img13.jpeg)
+
+![page1_img14.png](images/page1_img14.png)
+
+## Page 2
+
+REVIEW
+Influence of nuclear structure on the formation of radiation-induced lethal
+lesions
+Daniel A. Friedmana, Lauren Taitb and Andrew T. M. Vaughanb
+aDepartment of Biology, Gilbert Hall, Stanford University, California; bDepartment of Radiation Oncology, University of California, Davis,
+Sacramento, California, USA
+ABSTRACT
+Purpose The rejoining of fragmented nuclear DNA caused by ionizing radiation may lead to lethal
+chromosome rearrangements, such as rings or dicentrics. The clinically useful linear quadratic relation-
+ship between dose and cell survival has been interpreted as the generation of lethal lesions secondary
+to damage occurring in two separate chromosomes simultaneously (a component), or as potentially
+repairable separate events (b component). Here, the generation of such lesions is discussed, synthesiz-
+ing existing knowledge with new insights gleaned from spatial proximity data made possible by high-
+throughput sequencing of chromosome conformation capture experiments. Over a range of several
+Mbp, the linear DNA strand is organized as a fractal globule generating multiple sites of contact that
+may facilitate deletions or inversions if the points of contact are damaged. On a larger scale, transcrip-
+tionally active euchromatin occupies a physically identifiable space separate from inactive areas and is
+preferentially susceptible to free radical attack after irradiation. Specific transcriptional programs link
+genomic locations within that space, potentially enhancing their interaction if subject to simultaneous
+fragmentation by a single radiation event.
+Conclusions High throughput spatial analysis of the factors that control chromosome proximity has the
+potential to better describe the formation of the lethal chromosome aberrations that kill irradiated cells.
+ARTICLE HISTORY
+Received 4 February 2015
+Revised 9 December 2015
+Accepted 13 January 2016
+KEYWORDS
+Cellular radiobiology;
+chromosome abberations;
+models of cell killing;
+double-strand breaks;
+molecular radiobiology;
+microdosimetry
+Introduction
+Over the past five decades, developments in treatment deliv-
+ery, computerization and imaging have enabled the practice
+of
+radiation
+oncology
+to
+make
+substantial
+advances.
+Megavoltage accelerators have provided improved depth
+dose profiles while subsequent onboard imaging technology
+has helped spare more normal tissue from damage (Jaffray
+2012). Throughout the substantial technological advances
+that have significantly improved treatment outcomes, a com-
+prehensive description of the process whereby radiation gen-
+erates lethal lesions is lacking. The biological focus has rightly
+been the response of the cell to radiation-induced DNA dou-
+ble-strand breaks, the key lethal radiation event, their signal-
+ing to regulatory pathways and the mechanism(s) of their
+repair (Jackson and Bartek 2009, Thompson 2012, Price and
+D’Andrea 2013, Kavanagh et al. 2013). However technical limi-
+tations in detecting the location of such breaks, have limited
+studies on their potential to form a lethal lesion that restricts
+mitosis, such as a dicentric, ring structure or anaphase bridge
+(Costes et al. 2007). At least part of the reason for this dis-
+crepancy is the architectural complexity of the genome. At its
+simplest, two DNA double-strand breaks generated by irradi-
+ation within the same or separate chromosomes need to be
+ligated together producing an aberration rather than be indi-
+vidually repaired. The ability to generate such lesions is there-
+fore determined by the spatial distribution of radiation
+energy within the complex structure of the genome itself.
+It is clear the latter aspect has lagged the development of
+sophisticated models of radiation deposition that describe
+radiation
+interactions
+(Goodhead
+2006).
+However
+recent
+advances in the field(s) of genomic analysis have provided a
+more detailed spatial description of the genome that provide
+a more robust platform to map the generation of radiation
+induced rearrangements (Lieberman-Aiden et al. 2009).
+In addition to the spatial orientation of radiation-induced
+lesions within the genome, their generation is also con-
+strained by time dependent factors that exert their effects
+over a very large range (Figure 1). Thus the earliest detectable
+events within the genome, the physical photon or particle
+interaction with biological material, will occur in the range of
+femtoseconds. Subsequently, activated chemical species, pri-
+marily free radicals, are generated and react over a range of
+nano to microseconds with all cellular constituents, including
+DNA. Actual lesion processing, through either repair or aber-
+rant ligation, will be resolved over a period of hours.
+Therefore the introduction of lethal lesions by irradiation is
+impacted both by the complex spatial orientation of its gen-
+omic target and the sequential development of events that
+operate over an extremely broad time scale.
+Radiation interactions in human cells
+There is a long and rich history modelling the generation of
+DNA breaks and lethal lesions following irradiation of human
+CONTACT Dr Andrew Vaughan, PhD
+atvaughan@ucdavis.edu
+University of California, Davis, Radiation Oncology, 4501 X Street, Sacramento, CA 95817, USA
+ 2016 Taylor & Francis
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY, 2016
+http://dx.doi.org/10.3109/09553002.2016.1144941
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 3
+
+cells. Intrinsic to all of these is the discrete distribution of ion-
+ization events throughout the cell. Of such models, the
+‘Target Theory’ of Lea was one of the first to propose the
+presence of multiple nuclear ‘targets’ that when ‘hit’ or inacti-
+vated lead to the death of the cell (Lea 1955). In its ‘single
+hit – multiple target’ formulation of Equation (1), S is the
+fraction surviving dose D, D0 describes the slope of the expo-
+nential portion of the survival curve and the extrapolation
+number, n, the width of the shoulder region.
+SðDÞ ¼ 1  ð1  eD=D0Þn
+ð1Þ
+In this form the probability of inactivating any one target
+is the same, cell death will follow when a specific number of
+targets are inactivated, the number predicted by the size of
+the extrapolation number, n. Other variants such as the ‘mul-
+tiple hits – multiple target’ model have been described that
+increase the overall model complexity but still use the same
+general approach (Nomiya 2013). The overall strategy was
+however criticized by many in that no clear biological entity
+corresponded with the proposed targets; however, the key
+emphasis on sub-nuclear volumes as mediators of nuclear
+change was, and still is, a valid approach in consideration of
+the discontinuous distribution of energy in irradiated systems.
+Subsequently, two additional models, the ‘Molecular the-
+ory’ of Chadwick and Leenhouts and the ‘Theory of Dual
+Radiation Action’ described by Kellerer and Rossi have been
+described that, though starting from different sets of assump-
+tions, each arrives at a similar description of cell kill, that of a
+linear
+quadratic
+relationship
+between
+survival
+and
+dose
+(Chadwick and Leenhouts 1973, Kellerer and Rossi 2012).
+Here, both in vitro cell killing and in vivo responses can be
+described as an effect ‘E’, dependent on the dose ‘d’ deliv-
+ered over ‘n’ fractions, at least up to moderate doses
+(Equation 2).
+E ¼ nðad þ bd2Þ
+ð2Þ
+In
+the
+‘Molecular
+theory’
+model
+of
+Chadwick
+and
+Leenhouts, the significance of the DNA double-strand break
+and its repair were used to derive a linear quadratic (LQ)
+association
+with
+survival
+after
+radiation
+(Chadwick
+and
+Leenhouts 1973). However this model incorporated a role for
+the recombination of proximal DNA single-strand breaks as a
+source for generating DNA double-strand breaks, an idea that
+has not gained wide acceptance due to the likely rarity of
+two such independent events occurring in close proximity.
+Perhaps the most significant treatment in terms of its long-
+term impact to the field is the ‘Theory of Dual Radiation
+Action’
+described
+by
+Kellerer
+and
+Rossi
+(2012).
+In
+this
+approach they incorporated the relatively new technology of
+microdosimetry, utilizing large detectors filled with a gas that
+simulated the density of very small sub-nuclear volumes.
+They proposed that irradiation generated a population of
+sub-lesions that had the potential to interact to cause a lethal
+lesion, if they were in sufficiently close proximity. Such lethal
+lesions clearly include the generation of chromosome rear-
+rangements, such as dicentrics and more complex aberra-
+tions, which interfere with cell division (Ballarini 2010, Hall
+and Giaccia 2012). The interaction distances calculated were
+of the order of a micrometer, a finding that quickly ran coun-
+ter to experimental observation following the experiments of
+Goodhead et al. (1979). In these later series of experiments,
+using very low energy irradiation from ultrasoft aluminum or
+carbon K edge X-rays, it was shown that the interaction dis-
+tances of such sub-lesions was much closer than the microm-
+eter proposed in the model of Kellerer and Rossi (Goodhead
+et al. 1979). Nevertheless the LQ approach has proved to be
+a robust model of X- or gamma-ray-induced cell killing that
+has provided a useful and biologically grounded framework
+to view experimental data. For the purpose of this review the
+role of such modelling strategies is clear, they are clearly rela-
+tively simple, and therefore flexible tools to predict the likely
+survival of cells post irradiation. Viewed in this light they have
+provided useful service, especially in the clinic, where the lin-
+ear quadratic formalism has provided key information on the
+relative potency of various fractionation strategies for treat-
+ment (Fowler 2010). However, none are likely to offer the final
+word in describing the effects of ionizing irradiation in com-
+plex biological systems. As an example, the recent utilization
+of a few large fractions to treat a range of cancers has been
+modelled using a combination of both the linear quadratic
+and target theory approaches to better describe anomalies of
+the LQ formulae in high dose regions (Park et al. 2008).
+Microdosimetry at the biological interface
+The models discussed above emphasize a single outcome of
+irradiation, cell survival vs. death, and include relatively simple
+assumptions. In contrast, the study of microdosimetry, the
+physical description of ionization energy deposition at the
+level of discrete photon/electron interactions, has benefited
+greatly from both the development of tissue equivalent pro-
+portional counters and Monte Carlo-based analyses of track
+structure (Goodhead 2006, Wiklund et al. 2011). These tools
+have provided detailed and three-dimensional descriptions of
+radiation interactions with targets the size, composition and
+density of cells. The energy from incident photons may be
+dissipated as localized clusters of ionizations and generation
+of free radicals that have the potential to initiate both chem-
+ical changes in the cell or physical disruptions, such as DNA
+strand breaks. The radiation chemistry of such interactions
+has been extensively reviewed and will not be repeated in
+detail here (O’Neill and Wardman 2009). Energetic photons,
+such as those used in radiation therapy, produce DNA dam-
+age directly and indirectly. Directly, high-energy photons
+can
+break
+the
+phosphodiester
+backbone
+of
+DNA.
+DNA breaks
+OH•, H•
+Damage signaling
+10−12
+10−9
+10−6
+10−3
+10−1
+103
+seconds
+H20 radius •OH diffusion
+10−12
+10−9
+10−8
+10−7
+10−6
+10−5
+meters
+DNA width
+DNA ends move
+H2, OH-,H2O2
+Ligation of DNA ends
+Physics and Chemistry
+Biology
+Figure 1. Scale of radiation-induced events in both time and space. Direct DNA
+damage and free radical mediated events such as those produced by the
+hydroxyl and hydrogen radicals (OH•, H•) occur over a time scale that is orders of
+magnitude faster and within a dimension that is also much smaller than the
+recognizable lesions they produce.
+2
+D.A. FRIEDMAN ET AL.
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 4
+
+Indirectly, high-energy photons can produce free radicals
+through the homolytic cleavage of covalent bonds in nuclear
+molecules, such as water. Free radicals then may react with
+molecules in spatial proximity, which can include the DNA
+phosphodiester
+backbone.
+Either
+process
+may
+generate
+breaks in one or both strands of DNA (Figure 1). The transfer
+of photon energy to the target molecules is complete within
+picoseconds and the free radicals execute chemical change
+within microseconds. Thus the resolution of the initial phys-
+ical and chemical events following irradiation is complete
+within a time frame where the DNA organization may be con-
+sidered a
+static
+entity,
+a ‘snapshot’
+of fixed geometry.
+Subsequently, the resolution of damaged DNA proceeds at a
+many magnitudes slower pace, over a time frame of hours,
+where DNA fragments will be able to move in respect to
+both each other and the rest of the genome.
+Substantial amounts of data, generated over many deca-
+des, have highlighted the DNA double-strand break as the
+lesion most closely linked to cell death (Iliakis 1991, Olive
+1998, Xu and Price 2011). For a double-strand break, each
+end may physically separate prior to attempts at repair by
+either
+the
+Non
+Homologous
+End
+Joining
+(NHEJ),
+Microhomology Mediated End Joining (MMEJ) or Homologous
+recombination
+(HR)
+pathways
+(McVey
+and
+Lee
+2008,
+Chapman et al. 2012, Kavanagh et al. 2013, Schipler and
+Iliakis 2013). Such a separation of free DNA ends may compli-
+cate repair and lead to the generation of a lethal lesion, such
+as a dicentric, as the free ends encounter alternate breaks.
+Thus both the local environment of the lesion(s) and activity
+of appropriate repair pathways may either promote or sup-
+press such errors in DNA rejoining (Pfeiffer et al. 2004).
+Perhaps the most convincing support for the key role of such
+breaks in mediating lethality is the documented increase in
+radiation sensitivity for cells that lack key components of the
+DNA double-strand break repair pathways (Adachi et al. 2001,
+Woodbine et al. 2014).
+Most microdosimetry-based studies on radiation-induced
+lethality have been limited by the lack of a comparably
+detailed three-dimensional description of DNA organization,
+its presumed target. Despite this drawback, studies have been
+undertaken using such data that is available, including a
+Monte Carlo simulation of radiation events matched with the
+generation of DNA double-strand breaks and subsequent
+dicentric formation (Edwards et al. 1996). The model success-
+fully recapitulated the LQ relationship between dose and the
+generation of dicentric lesions discussed above, though utiliz-
+ing only a random distribution of DNA breaks within a regular
+nuclear volume as its biological input. Others have included
+the observation that nuclear DNA is packed into constrained,
+supercoiled DNA loops and have modelled this level of organ-
+ization as the targets for single or complex distributions of
+lesions (Cook and Brazell 1976, Yokota et al. 1995, Khodarev
+et al. 1997, Herr et al. 2014). Such studies clearly represent an
+advance over the assumption of a random distribution of
+DNA breaks within the genome, and they may readily recap-
+itulate the admittedly simple LQ relationship between dose
+and cell survival. However the low-complexity assumptions of
+biological distributions that are employed prohibit any pro-
+spective assessments of the role of nuclear architecture on
+survival. Perhaps the most comprehensive series of studies to
+date are represented by those incorporating the PARTRAC
+(PARticle TRACk) code, combining Monte Carlo analysis of ion-
+izing radiation track structure with multi-level modeling of
+DNA
+organization
+(Friedland
+et
+al.
+2011,
+Friedland
+and
+Kundrat 2013). In this application, individual structures such
+as nucleosomes, looped DNA, hetero and euchromatin are
+modeled as defined structural entities, in addition to the
+action of repair processes targeting the key DNA double-
+strand break. Such a system has potential to help in the study
+of radiation-induced lesions in the context of classically
+organized nuclear DNA, though in its current version it does
+not accurately predict the number of cytotoxic dicentrics that
+are observed experimentally.
+In this review we will emphasize the two extremes of radi-
+ation-induced lethality, the nature and location of the initial
+breaks, and the impact of genomic organization on the for-
+mation and subsequent biological effect of chromosome
+aberrations that are generated.
+The lethal lesion
+All the models discussed above are compatible with the
+lethal lesion introduced by irradiation being the result of the
+inappropriate fusion of two DNA double-strand breaks, gener-
+ating toxic rearrangements such as a dicentric. Ionizing radi-
+ation cleaves DNA by physical and/or chemical attack, leaving
+DNA ends that contain a range of chemical moieties that
+need to be processed to ‘clean’ 50
+phosphates and 30
+hydroxyl termini to facilitate ligation (Obe et al. 2010, Schipler
+and Iliakis 2013, Averbeck et al. 2014). It is clear this process
+is highly efficient in normal cells where the majority of dou-
+ble-strand breaks are successfully repaired. The subsequent
+inappropriate ligation of two such breaks on different chro-
+mosomes can however generate an aberration with two cen-
+tromeres (a dicentric chromosome) that will stop cell division
+by physically restricting the partition of daughter cells at
+mitosis as each linked centromere is pulled to opposite poles
+of the cell. Specifically, the linear and quadratic terms within
+the LQ equation are commonly assumed to represent DNA
+fragmentation events that are generated either simultan-
+eously, such as within a specific particle track (a), or from dis-
+crete, separate, ionization events separated in space and time
+(b) (Brown and Attardi 2005, Vakifahmetoglu et al. 2008,
+Ballarini 2010, Hall and Giaccia 2012). Such an understanding
+is consistent with all the modeling procedures discussed
+above. In addition, the relevance of the LQ model in particu-
+lar has been confirmed by decades of its practical application
+in a clinical setting, where it has proven capable of predictive
+power in illustrating the potency of a wide range of treat-
+ment strategies. Here, the biologically effective dose (BED), of
+treatment schedules of varying fraction size (d) can be deter-
+mined in relation to variations in the dose response curve as
+represented by the ratio of a and b (Equation 2) (Fowler
+2010).
+The models themselves provide no information on the
+influence of DNA organization on the generation of such
+lesions. However, from simple considerations of biophysics,
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY
+3
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 5
+
+larger chromosomes are more likely to participate in lesion
+formation as they are larger targets for the creation of the ini-
+tial DNA break (Cornforth et al. 2002). Nevertheless, both his-
+toric and more recent data utilizing high throughput genome
+analysis suggest that such simple assumptions may not fully
+describe the earliest events in radiation-induced lethality. In
+particular, as discussed further below, the organization of
+DNA within the nucleus is not random, its organization into
+separate functional domains, each consisting of looped DNA,
+place a high degree of order on its packing within the
+nuclear boundary (Lieberman-Aiden et al. 2009, Rao et al.
+2014). Thus the effects of irradiation at the sub-nuclear level
+may be illustrated using the tools and techniques of micro-
+dosimetry placed in the context of the increasingly well-
+defined
+biological
+organization
+of
+the
+intact
+eukaryote
+nucleus.
+Radiation induced lethal lesions are not generated
+at random
+To a first approximation, the generation of DNA breaks fol-
+lowing ionizing irradiation would appear to be randomly dis-
+tributed,
+notwithstanding
+the
+greater
+access
+to
+open
+chromatin by free radicals (Chiu et al. 1986, Savage 1993,
+Takata et al. 2013). After radiation exposure a variety of spe-
+cies are produced from the radiolysis of water, the hydroxyl
+radical (•OH) being the most frequent. Such radicals have
+extremely short lifetimes, of the order of a nanosecond, corre-
+sponding to a diffusion distance of 5 nm, and are capable
+of damaging DNA if contact is made (Natarajan et al. 2010).
+The generation of radiation-induced free radicals is respon-
+sible for approximately two thirds of all DNA lesions and their
+effects are more frequently observed within open regions of
+the genome that are actively being transcribed, or are pre-
+pared to do so (Chiu et al. 1986, Magnander et al. 2010,
+Takata et al. 2013). This imposes a degree of selectivity on
+the distribution of DNA damage following low Linear Energy
+Transfer (LET) radiation exposure that will exhibit a bias to
+those locations that are actively engaged in transcription, and
+which are readily accessible to free radicals. Even if DNA
+breaks themselves were assumed to be induced at random,
+multiple lines of evidence suggest that their inappropriate
+rejoining, such as translocations and other rearrangements,
+are influenced by local genome architecture and post-break
+processing (Engreitz et al. 2012, Hakim et al. 2012). Thus there
+are inherent patterns to subsequent lesion formation. The
+generation of rearrangements has historically been described
+with reference to either the ‘contact first’ or ‘breakage first’
+mechanisms (Aten et al. 2004, Meaburn et al. 2007). In the
+contact first mechanism, the two chromosome elements are
+in physical proximity prior to joint fragmentation – equivalent
+in principle to ‘a type’ damage described in Equation (1),
+where a cluster of ionization events may fragment more than
+one DNA strand (Sutherland et al. 2000, Sankaranarayanan
+et al. 2013). Alternatively, in the breakage first mechanism,
+the breaks are generated as separate elements that may
+require some mobility to meet and interact, broadly compat-
+ible with ‘b type’ damage. Recent data has suggested that
+the contact first mechanism may predominate in translocation
+induction, though not to completely exclude break mobility
+and subsequent interaction (Roukos et al. 2013). Here, to sim-
+plify the discussion, the role of initial chromosome proximity
+will be the focus in the genesis of aberrations.
+Break proximity: Genome structure
+Early studies on radiation-induced rearrangements identified
+two common types of lethal rearrangements; centric rings,
+formed by double-strand breaks on opposite arms of the
+same chromosome, and dicentrics, from breaks on different
+chromosomes (Figure 2A and B). The lesion may be expressed
+subsequent to an attempt at cell division where such rear-
+rangements restrict proper partitioning of genetic material
+(Vakifahmetoglu et al. 2008). Though each type of rearrange-
+ment requires two DNA double-strand breaks, careful micro-
+scopic analysis of irradiated cells showed a smaller ratio of
+dicentric to ring formation than would be predicted by
+chance if all breaks interacted randomly (Sachs et al. 1997,
+Sankaranarayanan et al. 2013). The explanation for such a
+finding was assumed to be the physical localization of indi-
+vidual chromosomes in their own ‘territories’, which favored
+intra-chromosomal events (generating rings) over those that
+required the interaction of two different chromosomes that
+might be widely separated within the nucleus (Figure 2C).
+This conclusion, reached from analysis of chromosome rear-
+rangements in plant cells, was among the earliest observa-
+tions suggesting the existence of chromosome territories in
+the interphase nucleus and has been experimentally verified
+many times since (Sax 1940, Cremer and Cremer 2001).
+Break proximity: Low energy photoelectrons
+The energy of photoelectrons generated within irradiated tis-
+sue reach a maximum equal to that of the incident photon
+minus its binding energy. Using this principle, very low
+energy carbon K edge X-rays (0.28 keV), were employed as
+discrete tools to initiate localized DNA damage due to the
+very short path length (7 nm) of the photoelectrons gener-
+ated. Using equipment that allowed the irradiation of single
+cells, a three-fold enhancement in dicentric production was
+observed, compared to 250 kVp X rays over a range of
+1–4 Gy (Figure 2D) (Thacker et al. 1986, Sachs et al. 1997,
+Griffin et al. 1998). In addition, the generation of aberrations
+by such short-range electrons was found to be linearly related
+to dose, D rather than D2, suggesting the two breaks required
+were introduced as a single event (Sachs et al. 1997). This
+implies an event (a type using the LQ formalism), occurring
+in a small volume described by the range of the photoelec-
+tron, was responsible for both breaks leading to the rear-
+rangements
+observed.
+Thus
+the
+proximity
+of
+individual
+chromosomes (or chromosome arms) were impacted by the
+same induced photoelectron and/or associated free radical
+production
+or,
+less
+likely,
+a
+single
+DNA
+double-strand
+break was able to initiate a rearrangement involving a prox-
+imal,
+undamaged,
+chromosome
+(Thacker
+et
+al.
+1986,
+Cornforth
+1990,
+Sachs
+et
+al.
+1997,
+Griffin
+et
+al.
+1998,
+4
+D.A. FRIEDMAN ET AL.
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 6
+
+Natarajan et al. 2010). In either case, however, both chromo-
+some partners would likely need to be located close together
+within the nucleus.
+Break proximity: Ion pair and high LET irradiation
+Similar proximity effects were found using cellular irradiation
+with associated ion pairs (Geard 1985). In this approach,
+molecular ion pairs are produced by stripping electrons from
+accelerated diatomic species using Mylar films. When the
+source diatomic material is deuterium (D2) the accelerated
+particles are deuterons – one proton and one neutron.
+Thicker Mylar films provide greater particle separation and
+those particle pairs that were separated by 50 nm or less
+were most effective at generating rearrangements (Geard
+1985). Similarly to the data gathered using short-range photo-
+electrons, this suggests that simultaneous fragmentation of
+two DNA locations, generating ‘a’ type damage as defined
+above (Equation 1), occurs efficiently in chromosome loca-
+tions that are spatially related. Substantial data also exists on
+the generation of chromosome rearrangements in relation to
+LET. In particular, high LET radiations, such as alpha particles
+or heavy ions, are up to 15-fold more efficient at generating
+chromosome rearrangements than the same dose of low LET
+radiation (Hada et al. 2011, Franken et al. 2012). These data
+show that the number of DNA double-strand breaks induced
+by such high LET irradiation, as measured by cH2AX (phos-
+phorylated form of Histone H2A family member ‘X’) foci, are
+similar to that seen after the same dose of low LET radiation,
+suggesting it is the spatial distribution of the breaks, in add-
+ition to their number, that influence aberration formation and
+hence toxicity (Franken et al. 2012). Simplistically, a broadly
+linear track across a cell nucleus from a high LET particle
+places
+the
+majority
+of
+DNA
+breaks
+within
+the
+track
+core itself – a cylinder of approximately 10 nm diameter
+(Cucinotta et al. 1998). Here, due to spatial proximity and
+increased concentration, these breaks are more likely to inter-
+act than those scattered throughout the genome induced by
+sparsely ionizing low LET radiation. Further, particles that
+deliver 100 keV/lm energy, alpha particles and some neu-
+tron energies, provide maximal cytotoxicity. This energy-
+dependent cytotoxicity has been attributed to the inter-ion-
+ization distance of such particles that matches the width of
+the DNA alpha helix, optimizing the probability of a DNA
+double-strand break (Hall and Giaccia 2012).
+Direct measurement of lesions
+The discussion above is derived from observations of lethal
+rearrangements obtained primarily with discrete and non-
+traditional radiation sources and shows that chromosome
+proximity is a key element in rearrangement formation. To
+specifically address the question of chromosome orientation
+on the generation of rearrangements after conventional high
+energy radiation exposures, a comprehensive study was initi-
+ated, in a single human cell line, to screen for the frequency
+of such rearrangements across all autosomes (Cornforth et al.
+2002). In this analysis, chromosomes were uniquely labeled
+using
+multiplex
+FISH
+(mFISH
+–
+Fluorescence
+In-Situ
+Hybridization), such that rearrangement partners could be
+assigned to specific chromosomes (Cornforth et al. 2002). As
+expected, larger chromosomes, being larger radiation targets,
+were damaged more frequently. Somewhat surprisingly, and
+with few exceptions that included a group of centrally
+located gene rich chromosomes (Chrs. 1, 16, 17, 19 and 22)
+that showed increased mutual interactions, each chromosome
+showed the potential to fuse with any other. This finding
+appears to run counter to any role of chromosome proximity
+in mediating rearrangement frequency. However, though a
+comprehensive survey, such experiments carried out using
+Figure 2. Dicentric and ring aberrations produced by irradiation lethal chromosome rearrangements produced by fusion two DNA double-strand breaks (dotted lines)
+that are sub subsequently fused (arrows) either (A) between different chromosomes (dicentric), or (B) within the same chromosome (ring). (C) Chromosome breaks
+(arrows) within the same chromosome have a higher probability of interacting, forming a ring structure, than breaks between chromosomes generating dicentrics or a
+translocation. (D) Two chromosome elements that are physically adjacent are more likely to be fragmented by a single ionization cluster, and subsequently interact, a
+process that is linearly related to dose, not dose squared.
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY
+5
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+![page6_img1.jpeg](images/page6_img1.jpeg)
+
+## Page 7
+
+chromosome specific FISH probes can only offer analytical
+resolution at the level of whole chromosomes within a popu-
+lation of cells. Thus individual chromosome territories, if they
+vary in terms of their immediate contact partners from cell to
+cell, will generate a random distribution of rearrangements
+even if initial chromosome contact is the key element in
+rearrangement formation. To dissect this aspect chromosome
+organization on rearrangement probability, further technical
+refinements were required. These advances are provided by
+‘next generation’ or high throughput chromatin technologies,
+which, as discussed below, offer base-pair-level sequencing
+accuracy assayed at a resolution of a single cell.
+Hierarchical organization of eukaryote DNA
+The folding of 3  109 bp of linear DNA molecule into the cell
+nucleus, approximating a sphere of diameter 8–15 lm, is clas-
+sically described by the regular interaction of DNA with a his-
+tone octamer, in the ‘beads on a string’ model. Through
+increasing levels of compaction that involves a 30 nm fiber
+containing 6–11 nucleosome elements per radial turn, chro-
+matin eventually compacts into microscopically identifiable
+chromosomes during mitosis (Hubner et al. 2013). Both the
+‘beads on a string’ and chromosome models are likely accur-
+ate descriptions of the two extremes of nuclear organization.
+However, increasing doubt has been placed on the intermedi-
+ate organization of DNA, mostly due to the as yet unresolved
+degree to which in vitro artifacts perturb analysis (Fussner
+et al. 2012, Nishino et al. 2012). Despite this important caveat,
+a substantial body of work has addressed the question of
+nuclear structure, using a range of different tools that pro-
+vides some consensus. Using FISH labelling of sequential
+tracts of DNA on the same chromosome it was shown that
+the DNA backbone behaves as a flexible polymer, loosely
+constrained within its own domain (Yokota et al. 1995). In
+addition, by examination of the orientation of individual FISH
+targets (loci closer than predicted by simple linear sequence)
+it was deduced that the DNA was also organized in a series
+of loops. Such a finding is supported by prior work that
+inferred the presence of such constrained loops by their abil-
+ity to relax and rewind their native supercoiling under the
+influence of intercalating agents such as ethidium bromide, a
+process completely inhibited by a break within the con-
+strained loop (Cook and Brazell 1976, Khodarev et al. 1997).
+Estimates of the loop size vary considerably, from < 0.1 Mbp
+at the low end, with most however clustering in the 1–2.5
+Mbp range, such differences likely linked to the difficulty in
+working with such delicate structures and the specific tech-
+nique used (Jackson et al. 1990, Khodarev et al. 1997,
+Johnston et al. 1998, Ostashevsky et al. 1999). Nevertheless,
+the not unexpected detection of a sub-chromosomal fine
+structure within the nucleus has stimulated the generation of
+biologic modeling strategies, this time focused on the impact
+of such organization on lesion generation.
+Rearrangements and genome proximity mapping
+Next-generation sequencing (NGS) refers to the biochemical
+and bioinformatic techniques that enable whole genomes to
+be sequenced from experimentally fragmented DNA. A com-
+bination of new NGS technology and experimental ingenuity
+produced a method called chromosome conformation cap-
+ture (3C), which has since been elaborated into many var-
+iants, such as Hi-C (Engreitz et al. 2012, Dekker et al. 2013,
+Koboldt et al. 2013). These techniques assay the spatial struc-
+ture of the nuclear chromatin at a whole-genome scale, a
+tool of particular relevance to radiation-induced aberrations.
+In 3C, the three-dimensional architecture of the genome is
+determined by chemically cross-linking genomic DNA, which
+binds together segments of DNA that are physically adjacent
+to each other at the moment of analysis. Cross-linked loci
+may be on the same or different chromosomes. The genome
+is then digested with a frequently cutting restriction endo-
+nuclease, to fragment the genome and, in the case of Hi-C,
+tagged with a biotin molecule at the fragmentation site
+(Figure 3). In Hi-C, the biotin tag is then used to isolate the
+individual chimeric molecules produced. Finally, using a dilute
+concentration of DNA to enrich for intramolecular religation,
+the circular ligation products formed are again fragmented,
+and sequenced. With this system, the proximity of any spe-
+cific genomic sequence to any other may be assessed by the
+sequence composition of the chimeric fusions, generating a
+Figure 3. Hi-C variant of Chromosome Conformation Capture. (A) Genome is cross-linked with formaldehyde, locations in close proximity are physically tethered to
+each other. (B) Digesting the genome with a frequent (4 bp) restriction endonuclease generates free ends held together by the crosslink. (C) Each breaksite may be
+tagged with biotin that is then ligated to its partner fragment (arrows), the entire construct cleaved into smaller fragments and the junctions themselves isolated by
+pulling the biotin fragments out of solution. (D) DNA fragments containing biotin at the sequence junction now contain non-contiguous sequence elements that may
+be identified when screened with next generation paired-end sequencing (arrows) technologies.
+6
+D.A. FRIEDMAN ET AL.
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+![page7_img1.jpeg](images/page7_img1.jpeg)
+
+## Page 8
+
+spatial proximity map for the entire genome (Lieberman-
+Aiden et al. 2009, Rao et al. 2014).
+Physical chromosome territories and chromosome
+fine structure
+Using Hi-C to interrogate the nuclear organization of human
+lymphoblastoid cells, it was found that the most frequent
+sites of contact for any location are sequences that are on
+the same linear strand of DNA. The enhanced contact
+observed decreases monotonically over 90 Mbp, interac-
+tions within the same chromosome exceeding that observed
+between different chromosomes, by 1–2 orders of magnitude
+(Lieberman-Aiden et al. 2009). This therefore provides com-
+prehensive support for the presence of chromosome territo-
+ries – locations on the same chromosome that are spatially
+close together as discussed above. Experiments such as these
+provide the genomic documentation for why the ratio of
+intra-chromosomal rearrangements (rings) to inter-chromo-
+somal associations (dicentrics) varies from a simple random
+distribution; the former are, on average, formed by elements
+that are physically closer together prior to damage. Though
+the study quoted only addresses a physical association of
+DNA,
+others
+have
+shown
+genes
+that
+are
+coordinately
+expressed are often situated close to together on the same
+chromosome (Caron et al. 2001, Cohen et al. 2000). The
+detailed analysis of intra-chromosomal associations available
+through Hi-C provides information on the organization of the
+DNA strand that is most satisfactorily explained as a fractal
+globule, at least over the range of approximately 0.5–90 Mbp
+(Mirny 2011, Hahn and Kim 2013). The term ‘fractal’ used
+here refers to a pattern that displays similarity independent
+of scale, this type of fractal packing of linear DNA into 3-
+dimensional space is known as a Hilbert curve (Lieberman-
+Aiden et al. 2009). Such a structure, which does not contain
+knots, would permit the rapid access to specific regions of
+the genome, by simple unfolding, looping out and subse-
+quent refolding, a level of packaging that would be appropri-
+ate for rapid gene access (Figure 4). The presence of a fractal
+globule polymer that persists over substantial (Mbp) distances
+indicates that over short segments of DNA there must be
+substantial flexibility and repetitive contact between DNA
+sequences; with such contacts decreasing in a mathematically
+predictable fashion as the distances between specific points
+on the linear DNA strand increase. This behavior may under-
+pin the documented potency of radiation to generate large
+scale chromosomal deletions, a process likely to be facilitated
+if two adjacent points on the same chromosome are in phys-
+ical contact when both are impacted by an ionization event
+(Sankaranarayanan et al. 2013).
+A practical example of this level of organization may
+already have been observed in papillary thyroid cancer
+where fusion between RET (REarranged during Transfection)
+and either of its two frequent fusion partners, NCOA4
+(Nuclear receptor COActivator 4) and CCDC6 (Coiled-Coil
+Domain Containing 6), is strongly linked to the disease.
+These three genes are all located within 18 Mbp on the
+long
+arm
+of
+chromosome
+10
+(Nikiforov
+et
+al.
+1999,
+Nikiforova et al. 2000). Fusion of RET to either of these
+partners was commonly observed in those children devel-
+oping thyroid tumors after the release of radioactivity, not-
+ably I-131, from the Chernobyl reactor explosion (Williams
+2008). Careful matching of individual breakpoints in RET
+and NCOA4, separated by 8 Mbp, from patient tumors sug-
+gested that both genes were located in a fixed position
+prior to their joint fragmentation and subsequent fusion
+(Figure 5) (Nikiforov et al. 1999). It is possible (though
+unknown) that a fractal globule level of organization would
+reach
+a
+common
+solution
+in
+terms
+of
+unpacking
+and
+repacking a single region of DNA in a reproducible orienta-
+tion, such that RET and NCOA4 are repetitively placed in
+juxtaposition, at least in the thyroid. This may specifically
+be the case however if both genes were transcribing at
+the same time, acting in response to similar signals or
+looped together via regulatory interactions (Cohen et al.
+2000, Fullwood et al. 2009, Rao et al. 2014). This would
+make them statistically favored candidates for joint frag-
+mentation
+and
+rearrangement
+subsequent
+to
+radiation
+induced fragmentation. The link to transcription was made
+more intriguing by an examination of RET and CCDC6 loca-
+tions with FISH. Here, in an in vitro setting, RET and CCDC6
+were found to be in close proximity in thyroid cells, but
+less so in cells of other types, suggesting a cell specific
+x
+5´                                       3´
+(A)
+(B)
+(C)
+Figure 4. Chromatin organization interpreted from Hi-C experiments. (A) Chromosomes are localized in territories (three shown) however with substantial interdigita-
+tion or physical overlap into other chromosome territories. (B) The locations of inter-chromosome (and intra-chromosome) contact is linked through sharing transcrip-
+tional status; either on (arrow) or off (cross). (C) At the level of a discrete linear DNA strand the DNA is organized and efficiently packed within the genome as a
+fractal globule where short-range self-associations predominate. DNA self-association is thus greatest over short distances (bp to Kbp) and reduces monotonically as
+the distance (90 Mbp) increases. Diagrams adapted from concepts developed by Lieberman-Aiden et al. (2009).
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY
+7
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 9
+
+and potentially transcription specific localization (Nikiforova
+et al. 2000).
+Functional chromosome territories
+Using the same data set generated by Hi-C as discussed
+above, Lieberman-Aiden also showed that the genome can
+be compartmentalized into two broadly identifiable regions
+that are self-associated, likely equivalent to euchromatin and
+heterochromatin (Lieberman-Aiden et al. 2009). The link to
+actively transcribing DNA was made by cross referencing Hi-C
+proximity data to both transcriptional activity, DNAse I sensi-
+tivity and levels of DNA methylation within Histone H3 lysine
+36 (H3K36) that are associated with gene activity (Mikkelsen
+et al. 2007). Such associations transcend the linear organiza-
+tion of DNA, placing regions of gene activity into one physic-
+ally interacting compartment, and heterochromatic DNA in
+another. This may seem a trivial reiteration of the well-known
+composition of chromatin. However, these data extend the
+description of these regions as viewed by microscopy to
+show, on a genome wide scale, that actively transcribing
+regions from the same and different chromosomes are in
+close physical contact; these are the same regions that are
+also more prone to attack by radiation-induced free radicals
+(Chiu et al. 1986, Cowell et al. 2007, Magnander et al. 2010,
+Vasireddy et al. 2010, Takata et al. 2013). The compartmental-
+ized proximity of such damage may facilitate the subsequent
+rearrangement within compartments rather than between
+them (Cornforth et al. 2002, Lieberman-Aiden et al. 2009).
+Functional compartmentalization as described was ana-
+lyzed in more detail with a particular emphasis on intra-
+chromosomal contacts (Kalhor et al. 2012). Here, Kalhor and
+colleagues, using a variant of the Hi-C procedure executed on
+a solid matrix rather than in solution, found that for the larg-
+est chromosomes (Chrs. 1–6, 8 and 10), intra-chromosomal
+interactions across the centromere were restricted for those
+genomic regions that were composed of transcriptionally
+inactive chromatin. Actively transcribing regions were not so
+restricted and exhibited a higher contact frequency over a
+greater range of linear DNA sequence than non-transcribing
+elements. These data therefore suggest that, for these chro-
+mosomes, contact across the centromere, and any subse-
+quent rearrangement such as a ring structure if fragmented,
+would likely be restricted to regions containing actively tran-
+scribing genes. These data parallel a similar whole genome
+survey examining translocations where experimental breaks
+inserted by the meganuclease, I-SceI into unique genes were
+commonly fused to partner locations that were actively tran-
+scribing (Chiarle et al. 2011).
+Population-based analysis of the genome
+Though a very useful approach, the 3C technique as dis-
+cussed can only provide an average spatial mapping of speci-
+fied locations across an entire population of cells. It is unclear
+whether such organization is uniformly maintained within
+defined cell lines, or potentially oligoclonal human tumor sys-
+tems, or even between neighboring cells of the same geno-
+type. To address this question, Kalhor subjected multiple 3C
+datasets to population based analysis. Here the genome was
+allocated into 428 chromatin blocks that contained similar
+contact profiles with the rest of the genome (Kalhor et al.
+2012). These were then tested through 10,000 genome simu-
+lations to optimize fitting of the ‘block’ data with its inter-
+action with the rest of the genome. This presentation of the
+data suggested that multiple genomic conformations pro-
+vided the best fit for the 3C data obtained within an other-
+wise identical cell line. To address the question of variability
+directly, Nagano and colleagues subjected a series of other-
+wise identical single cells to Hi-C analysis (Nagano et al.
+2013). Using mouse splenic CD4 (Cluster of Differentiation 4
+or T helper) cells, they found substantial variability between
+inter-chromosomal contacts between the different individual
+cells that were examined. Individual cells were found to have
+relatively few chromosome contacts. These data suggest that
+previous maps showing a high frequency of genomic inter-
+action, and multiple points of contact, represent an averaging
+of discrete data generated from uniquely organized single
+cells. This implies that even within a single cell type, the gen-
+ome adopts multiple unique orientations, perhaps linked to
+cell cycle stage, tissue type or transcriptional profile such as
+that controlling stem cell potential (Charafe-Jauffret et al.
+2009, 2013, de Wit et al. 2013, Aranda-Anzaldo et al. 2014).
+Extrapolating these findings to the mechanism whereby indi-
+vidual chromosomes fuse suggests that any specific chromo-
+some contacts between unique chromosomes may be lost in
+the noise of averaging multiple cell interactions.
+These data are significant in terms of the generation of
+radiation-induced rearrangements in that it questions their
+broadly random generation, as shown by mFISH studies
+(Cornforth et al. 2002). Here, the argument for randomness
+was made by examining an entire population of irradiated
+cells, showing that each chromosome has a broadly equal
+opportunity to interact with any other. The data discussed
+above brings this interpretation into question, suggesting
+NCOA4
+RET
+0  
+500
+1680 bp
+1500
+1000
+0  
+500
+1840 bp
+1500
+1000
+40
+45
+50
+55
+60
+65 Mbp
+< cent
+Chr10
+RET
+NCOA4
+CCDC6
+Figure 5. Proximity mapping of breakpoints in papillary thyroid cancer, redrawn
+using data from Nikiforov et al. (1999). (Top) Shown are the breakpoints mapped
+in specific segments of intron 11 and intron 5 of the RET-NCOA4 (REarranged
+during Transfection – Nuclear receptor COActivator 4) gene fusion respectively,
+and shown to scale. Here 9/12 breakpoints share a broadly parallel relationship
+with each other (bold lines), as do the 3/12 remaining breakpoints (faint lines).
+Such arrangements would be generated if both genes are located in a reprodu-
+cible relationship with each other, such that a single ionization event affects
+both genes simultaneously. (Bottom) Location and transcriptional direction of
+each gene on chromosome 10. Despite the linear separation the data are consist-
+ent with reproducible gene contacts during radiation-associated cleavage that
+arise from a single radiation event.
+8
+D.A. FRIEDMAN ET AL.
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 10
+
+that within a single cell type, multiple genomic states may be
+generated, each of which brings together specific genomic
+components to execute a required function (Fullwood et al.
+2009, Sandhu et al. 2012). This will provide differing probabil-
+ities, among single cells, for simultaneous DNA fragmentation
+and subsequent interaction of the regions that are uniquely
+in contact. For cell killing by irradiation it is the impact on sin-
+gle cells that is the key outcome, reflected in the adoption of
+the clonogenic (single cell) assay as the ‘gold standard’ for
+toxicity testing. There may be multiple factors that drive the
+specific organization of genomic components; and the role of
+transcription has already been implicated in such structural
+reorganization as a source of more ‘open’ and free radical
+accessible chromatin. Clearly for tumor eradication it is the
+response of individual cells, particularly those with an infinite
+reproductive future, which is of most concern.
+Transcription linked genome organization
+The advent of NGS and 3C technology has uncovered a
+complex interacting web of both short and long range (inter-
+chromosomal) interactions that sustain the cells transcrip-
+tional profile and execute tissue specific functions (Sandhu
+et al. 2012). These networks involve the physical association
+of widely separated (in terms of assigned chromosome) gen-
+ome locations that may preferentially interact if jointly frag-
+mented
+by
+irradiation.
+Such
+an
+association
+has
+been
+demonstrated using the I-SceI meganuclease as a surrogate
+for radiation, a widely used system for fragmenting defined
+genomic locations (Richardson and Jasin 2000, Chiarle et al.
+2011, Schipler and Iliakis 2013). With this system targeting
+either c-myc (cellular myelocytomatosis oncogene) or IgH
+(Immunoglobulin H) genes, it was found that the experimen-
+tally fragmented genes preferentially underwent rearrange-
+ment with actively transcribing genes, particularly the histone
+depleted transcriptional start sites (Chiarle et al. 2011). These
+specific rearrangements are likely to occur, at least in part,
+due to the proximity of the fragmented gene and its subse-
+quent partner, perhaps localized by sharing a common func-
+tion, such as transcription. As an example, the TMPRSS2/ERG
+(TransMembrane PRoteaSe, Serine 2/Erythroblast transform-
+ation-specific Related Gene) gene fusion, observed in prostate
+tumors of 50% of men with this disease, may be generated
+by androgen mediated co-localization of the two genes, in
+this case located on the same chromosome (Clark and
+Cooper 2009, Lin et al. 2009). The subsequent addition of a
+small radiation dose facilitates their fragmentation and fusion
+(Lin et al. 2009). The androgen mediated co-localization of
+these genes provides support for sub-nuclear functional com-
+partments described as transcription factories, where genes
+with linked function aggregate in response to discrete tran-
+scriptional stimuli (Osborne et al. 2007, Fullwood et al. 2009).
+The presence of such factories was also inferred from the
+co-localization of the murine c-myc and IgH genes, on chro-
+mosomes 15 and 12 respectively, which are common trans-
+location partners in plasmacytomas and Burkitts lymphoma
+(Osborne et al. 2007). Thus it is apparent that transcriptional
+programs are involved in defining the higher order structure
+of the genome and such functions may influence the contact
+proximity of both transcribing genes and their promoter/
+enhancer
+interactions,
+if
+appropriate
+stimuli
+are
+applied
+(Fullwood et al. 2009). In support of the general role of gen-
+ome proximity in generating translocations, chromosome/
+chromosome proximity has been directly linked to the poten-
+tial to undergo translocations following irradiation, at least in
+a murine system (Zhang et al. 2012). In addition, the Hi-C
+contact database generated by Lieberman-Aiden was cross-
+referenced with a large set of clinically relevant translocations,
+including the Mittelman database of rearrangements (Engreitz
+et al. 2012). Here, a strong correlation was found showing
+that for multiple clinically relevant translocations the partner
+genes are preferentially closely associated, prior to any fusion.
+It is a logical extension that genomic regions in contact may
+be targets for lethal fusion formation if both are damaged by
+irradiation, or other genotoxic agents. Though only transloca-
+tions are discussed in this section, as they may be observed
+in surviving clones of cells, rearrangements that have the
+potential to be lethal, such as a dicentric, differ only in the
+inclusion of a second centromere (Meaburn et al. 2007).
+The process that drives the physical association of potential
+partners and the subsequent formation of the lesion may be
+very similar, thus supporting the ‘contact first’ hypothesis for
+radiation induced rearrangements.
+Transcriptional
+upregulation
+may
+therefore
+have
+two,
+potentially synergistic, effects on radiation-induced lesion for-
+mation. First, regions that are transcriptionally active are more
+likely to undergo radiation-induced free radical damage due
+to their relaxed conformation facilitating free radical access.
+Second, transcriptionally active genes and their promoter/
+enhancer targets may preferentially stay in contact, making
+them susceptible to simultaneous fragmentation from either
+free radicals or direct ionization. As an example, the ERG tran-
+scription factor that is commonly over expressed in a range
+of tumors, was subject of an in-depth analysis of its effect on
+genomic
+organization,
+using
+3C
+techniques.
+Here,
+over
+expression of ERG showed reproducible alterations in the spa-
+tial organization of the genome, a process that was consistent
+with the activation of genes linked to its role in oncogenic
+development (Rickman et al. 2012). Perhaps of greater inter-
+est however is the study of pluripotent stem cells, a cell type
+implicated as the key driver cell in the maintenance of a
+viable tumor mass and a logical target for therapeutic attack
+(Al-Hajj et al. 2003, Singh et al. 2004). It was found that the
+binding sites of those factors linked to the stem cell state,
+such as Nanog and Oct4, were preferentially associated, gen-
+erating a stem cell specific set of chromosome contacts (de
+Wit et al. 2013, Ay et al. 2014). Both examples were generated
+from population based analyses, indicating the commonality
+of the associations found.
+Relevance to radiation biology and treatment
+The discussion above identifies transcriptionally active regions
+of the genome as more likely to be fragmented by ionizing
+radiation, specifically through free radical access, and also
+more
+likely
+to
+fuse
+when
+broken
+due
+to
+their
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY
+9
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 11
+
+compartmentalized proximity. Placed in the language of radi-
+ation biology and the LQ formalism, such events may corres-
+pond to ‘a’ type damage where fragmentation occurs in two
+chromosomes simultaneously and is linearly proportional to
+dose, rather than separately identifiable events proportional
+to dose squared, as events induced by separate ionizations
+interact (Fowler 2010). This interpretation may however be
+too simplistic as experimental data shows that most survival
+curves tend to adhere to a simple exponential at higher
+doses, not the continuous curve as implied by Equation (2)
+(Park et al. 2008). It follows therefore that at high doses, per-
+haps >10 Gy, lethal lesions are generated by single events,
+such as the simultaneous fragmentation of two chromosomes,
+rather than the interaction of separate sub-lesions that pro-
+vides the curvature to the LQ response. If this is correct then
+spatial contacts within the genome will have an influence on
+what specific rearrangements will be most likely to occur dur-
+ing the transition from low to very high single doses.
+Specifically, as the dose and number of breaks increase, the
+probability of two breaks interacting within the same nuclear
+compartment
+as
+defined
+by
+transcriptional
+status,
+also
+increases. This is particularly relevant as cell-type specific tran-
+scriptional programs activate their complement of genes, a
+feature that is a signature corruption within the transformed
+phenotype (Lee and Young 2013).
+In terms of practical utility, a key question is whether
+knowledge of DNA organization at the level discussed here
+provides any useful information to the radiobiologist or radi-
+ation oncologist. Transcriptional programs that enhance spe-
+cific chromosome contact likely suppress others, the potential
+net effect being a ‘zero sum’ of site-restricted lethal aberra-
+tions with no change in absolute lethality. Alternatively, cell-
+specific transcriptional programs, such as those characteristic
+of individual tissues and/or tumors, may generate a spatial
+proximity interactome that offers a common physical target
+for the insertion of DNA breaks and their subsequent process-
+ing. Though the focus in this review is the spatial organiza-
+tion of chromatin, the formation of any such lethal lesions
+will depend on the recruitment and effective action of DNA
+damage repair programs, such as NHEJ and HR, recently the
+subject of a comprehensive review in the context of radiation
+damage (Thompson 2012). By definition, if such programs
+operate efficiently no lethal lesions will occur as the chromo-
+some
+integrity
+and
+orientation
+is
+unchanged.
+It
+is
+the
+inappropriate ligation of two disparate chromosome frag-
+ments that are in close physical contact that generates
+lesions. It follows that the contribution of either corrupt or
+intact DNA repair programs present in human cancers to radi-
+ation lethality may be impacted by the spatial organization of
+the DNA breaks they act upon, not just their ability to rejoin
+naked DNA templates.
+To demonstrate the clinical utility of a more nuanced view
+of nuclear organization, it is important to identify any mech-
+anistic relationship between the spatial arrangement of the
+genome pre-irradiation and the rearrangements produced by
+DNA repair programs post-irradiation. Does the chromatin
+state of the cell pre-irradiation bias towards certain structural
+rejoining events? If such a role is observed, then an unex-
+plored avenue of radiation treatment sensitization may be
+the judicious administration of transcriptome-modulating sys-
+tems (such as, RNA interference or microRNA) to manipulate
+specific genetic programs within the cancerous tissue before
+treatment.
+The following questions need to be addressed:
+1. Does chromosome contact in individual cells vary between
+cell
+types
+(different
+tissues,
+as
+well
+as
+normal
+vs.
+transformed)?
+2. What controls the association of chromosome contacts in
+individual cells? How do these factors interact and influ-
+ence each other?
+3. If, as suggested from current Hi-C data in single cells,
+chromosome contact is restricted; do radiation-induced
+aberrations occur predominately within this class of physic-
+ally associated chromosome contacts?
+4. How does the spatial location of individual DNA breaks
+impact the efficiency of their restitution by the known
+repair pathways?
+5. What types of therapeutic approaches could alter the
+nuclear architecture of cancerous tissue in a way that
+would increase the efficacy of radiation treatment?
+Resolving the above questions will likely require the use of
+single cell Hi-C technology merged with aberration analysis in
+irradiated material, a challenging application, which is now
+technically feasible. The effects on single cells is the preferred
+platform for experiment as the variability of lesions within
+irradiated populations are difficult to tease out using current
+NGS systems. Such questions will determine whether the gen-
+eration of lethal aberrations may be manipulated, for eventual
+therapeutic gain, through targeted alterations of chromosome
+contacts in normal tissues, tumors, or both.
+Disclosure statement
+The authors report no conflict of interest. The authors alone
+are responsible for the content and writing of the paper.
+References
+Adachi N, Ishino T, Ishii Y, Takeda S, Koyama H. 2001. DNA ligase IV-defi-
+cient cells are more resistant to ionizing radiation in the absence of
+Ku70: Implications for DNA double-strand break repair. Proc Natl Acad
+Sci USA. 98:12109–12113.
+Al-Hajj M, Wicha MS, Benito-Hernandez A, Morrison SJ, Clarke MF. 2003.
+Prospective identification of tumorigenic breast cancer cells. Proc Natl
+Acad Sci USA. 100:3983–3988.
+Aranda-Anzaldo A, Dent MA, Martinez-Gomez A. 2014. The higher-order
+structure in the cells nucleus as the structural basis of the post-mitotic
+state. Prog Biophys Mol Biol. 114:137-145.
+Aten JA, Stap J, Krawczyk PM, Van Oven CH, Hoebe RA, Essers J, Kanaar
+R. 2004. Dynamics of DNA double-strand breaks revealed by clustering
+of damaged chromosome domains. Science. 303:92–95.
+Averbeck NB, Ringel O, Herrlitz M, Jakob B, Durante M, Taucher-Scholz G.
+2014. DNA end resection is needed for the repair of complex lesions
+in G1-phase human cells. Cell Cycle. 13:2509–2516.
+Ay F, Bailey TL, Noble WS. 2014. Statistical confidence estimation for Hi-C
+data reveals regulatory chromatin contacts. Genome Res. 24:999-101.
+Ballarini F. 2010. From DNA radiation damage to cell death: Theoretical
+approaches. J Nucleic Acids. 2010:350608.
+10
+D.A. FRIEDMAN ET AL.
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 12
+
+Brown JM, Attardi LD. 2005. The role of apoptosis in cancer development
+and treatment response. Nat Rev Cancer. 5:231–237.
+Caron H, Van Schaik B, Van Der Mee M, Baas F, Riggins G, Van Sluis P,
+Hermus MC, Van Asperen R, Boon K, Voute PA, et al. 2001. The human
+transcriptome map: Clustering of highly expressed genes in chromo-
+somal domains. Science. 291:1289–1292.
+Chadwick KH, Leenhouts HP. 1973. A molecular theory of cell survival.
+Phys Med Biol. 18:78–87.
+Chapman JR, Taylor MR, Boulton SJ. 2012. Playing the end game: DNA
+double-strand break repair pathway choice. Mol Cell. 47:497–510.
+Charafe-Jauffret E, Ginestier C, Bertucci F, Cabaud O, Wicinski J, Finetti P,
+Josselin E, Adelaide J, Nguyen TT, Monville F, et al. 2013. ALDH1-posi-
+tive cancer stem cells predict engraftment of primary breast tumors
+and are governed by a common stem cell program. Cancer Res.
+73:7290–7300.
+Charafe-Jauffret E, Ginestier C, Iovino F, Wicinski J, Cervera N, Finetti P,
+Hur MH, Diebel ME, Monville F, Dutcher J, et al. 2009. Breast cancer
+cell lines contain functional cancer stem cells with metastatic capacity
+and a distinct molecular signature. Cancer Res. 69:1302–1313.
+Chiarle R, Zhang Y, Frock RL, Lewis SM, Molinie B, Ho YJ, Myers DR, Choi
+VW, Compagno M, Malkin DJ, et al. 2011. Genome-wide translocation
+sequencing reveals mechanisms of chromosome breaks and rearrange-
+ments in B cells. Cell. 147:107–119.
+Chiu SM, Friedman LR, Xue LY, Oleinick NL. 1986. Modification of DNA
+damage in transcriptionally active vs. bulk chromatin. Int J Radiat
+Oncol Biol Phys. 12:1529–1532.
+Clark JP, Cooper CS. 2009. ETS gene fusions in prostate cancer. Nat Rev
+Urol. 6:429–439.
+Cohen BA, Mitra RD, Hughes JD, Church GM. 2000. A computational ana-
+lysis of whole-genome expression data reveals chromosomal domains
+of gene expression. Nat Genet. 26:183–186.
+Cook PR, Brazell IA. 1976. Conformational constraints in nuclear DNA.
+J Cell Sci. 22:287–302.
+Cornforth MN. 1990. Testing the notion of the one-hit exchange. Radiat
+Res. 121:21–27.
+Cornforth MN, Greulich-Bode KM, Loucas BD, Arsuaga J, Vazquez M, Sachs
+RK,
+Bruckner
+M,
+Molls
+M,
+Hahnfeldt
+P,
+Hlatky
+L,
+et
+al.
+2002.
+Chromosomes are predominantly located randomly with respect to
+each other in interphase human cells. J Cell Biol. 159:237–244.
+Costes SV, Ponomarev A, Chen JL, Nguyen D, Cucinotta FA, Barcellos-Hoff
+MH. 2007. Image-based modeling reveals dynamic redistribution of
+DNA damage into nuclear sub-domains. PLoS Comput Biol. 3:e155.
+Cowell IG, Sunter NJ, Singh PB, Austin CA, Durkacz BW, Tilby MJ. 2007.
+gammaH2AX foci form preferentially in euchromatin after ionising-radi-
+ation. PLoS One. 2:e1057.
+Cremer T, Cremer C. 2001. Chromosome territories, nuclear architecture
+and gene regulation in mammalian cells. Nat Rev Genet. 2:292–301.
+Cucinotta FA, Nikjoo H, Goodhead DT. 1998. The effects of delta rays on
+the number of particle-track traversals per cell in laboratory and space
+exposures. Radiat Res. 150:115–119.
+De Wit E, Bouwman BA, Zhu Y, Klous P, Splinter E, Verstegen MJ, Krijger
+PH, Festuccia N, Nora EP, Welling M, et al. 2013. The pluripotent gen-
+ome in three dimensions is shaped around pluripotency factors.
+Nature. 501:227–231.
+Dekker J, Marti-Renom MA, Mirny LA. 2013. Exploring the three-dimen-
+sional organization of genomes: Interpreting chromatin interaction
+data. Nat Rev Genet. 14:390–403.
+Edwards AA, Moiseenko VV, Nikjoo H. 1996. On the mechanism of the for-
+mation of chromosomal aberrations by ionising radiation. Radiat
+Environ Biophys. 35:25–30.
+Engreitz JM, Agarwala V, Mirny LA. 2012. Three-dimensional genome
+architecture influences partner selection for chromosomal transloca-
+tions in human disease. PLoS One. 7:e44196.
+Fowler JF. 2010. 21 years of biologically effective dose. Br J Radiol.
+83:554–568.
+Franken NA, Hovingh S, Ten Cate R, Krawczyk P, Stap J, Hoebe R, Aten J,
+Barendsen GW. 2012. Relative biological effectiveness of high linear
+energy transfer alpha-particles for the induction of DNA-double-strand
+breaks, chromosome aberrations and reproductive cell death in SW-
+1573 lung tumour cells. Oncol Rep. 27:769–774.
+Friedland W, Dingfelder M, Kundrat P, Jacob P. 2011. Track structures,
+DNA targets and radiation effects in the biophysical Monte Carlo simu-
+lation code PARTRAC. Mutat Res. 711:28–40.
+Friedland W, Kundrat P. 2013. Track structure based modelling of chromo-
+some aberrations after photon and alpha-particle irradiation. Mutat
+Res. 756:213–223.
+Fullwood MJ, Liu MH, Pan YF, Liu J, Xu H, Mohamed YB, Orlov YL,
+Velkov S, Ho A, Mei PH, et al. 2009. An oestrogen-receptor-alpha-
+bound human chromatin interactome. Nature. 462:58–64.
+Fussner E, Strauss M, Djuric U, Li R, Ahmed K, Hart M, Ellis J, Bazett-Jones
+DP. 2012. Open and closed domains in the mouse genome are config-
+ured as 10-nm chromatin fibres. EMBO Rep. 13:992–996.
+Geard CR. 1985. Charged particle cytogenetics: Effects of LET, fluence,
+and particle separation on chromosome aberrations. Radiat Res (Suppl.
+8):S112–121.
+Goodhead DT. 2006. Energy deposition stochastics and track structure:
+What about the target? Radiat Prot Dosimetry. 122:3–15.
+Goodhead DT, Thacker J, Cox R. 1979. Effectiveness of 0.3 keV carbon
+ultrasoft X-rays for the inactivation and mutation of cultured mamma-
+lian cells. Int J Radiat Biol Relat Stud Phys Chem Med. 36:101–114.
+Griffin CS, Hill MA, Papworth DG, Townsend KM, Savage JR, Goodhead
+DT. 1998. Effectiveness of 0.28 keV carbon K ultrasoft X-rays at produc-
+ing simple and complex chromosome exchanges in human fibroblasts
+in vitro detected using FISH. Int J Radiat Biol. 73:591–598.
+Hada M, Wu H, Cucinotta FA. 2011. mBAND analysis for high- and low-
+LET radiation-induced chromosome aberrations: A review. Mutat Res.
+711:187–192.
+Hahn S, Kim D. 2013. Physical origin of the contact frequency in chromo-
+some conformation capture data. Biophys J. 105:1786–1795.
+Hakim O, Resch W, Yamane A, Klein I, Kieffer-Kwon KR, Jankovic M,
+Oliveira T, Bothmer A, Voss TC, Ansarah-Sobrinho C, et al. 2012. DNA
+damage defines sites of recurrent chromosomal translocations in B
+lymphocytes. Nature. 484:69–74.
+Hall EJ, Giaccia AJ. 2012. Radiobiology for the radiologist. Philadelphia:
+Wolters Kluwer Health.
+Herr L, Friedrich T, Durante M, Scholz M. 2014. A model of photon cell
+killing based on the spatio-temporal clustering of DNA damage in
+higher order chromatin structures. PLoS One. 9:e83923.
+Hubner MR, Eckersley-Maslin MA, Spector DL. 2013. Chromatin organiza-
+tion and transcriptional regulation. Curr Opin Genet Dev. 23:89–95.
+Iliakis G. 1991. The role of DNA double strand breaks in ionizing radi-
+ation-induced killing of eukaryotic cells. Bioessays. 13:641–648.
+Jackson DA, Dickinson P, Cook PR. 1990. The size of chromatin loops in
+HeLa cells. EMBO J. 9:567–571.
+Jackson SP, Bartek J. 2009. The DNA-damage response in human biology
+and disease. Nature. 461:1071–1078.
+Jaffray DA. 2012. Image-guided radiotherapy: From current concept to
+future perspectives. Nat Rev Clin Oncol. 9:688–699.
+Johnston PJ, MacPhail SH, Banath JP, Olive PL. 1998. Higher-order chro-
+matin
+structure-dependent
+repair
+of
+DNA
+double-strand
+breaks:
+Factors
+affecting
+elution
+of
+DNA
+from
+nucleoids.
+Radiat
+Res.
+149:533–542.
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L. 2012. Genome architec-
+tures revealed by tethered chromosome conformation capture and
+population-based modeling. Nat Biotechnol. 30:90–98.
+Kavanagh JN, Redmond KM, Schettino G, Prise KM. 2013. DNA double
+strand break repair: A radiation perspective. Antioxid Redox Signal.
+18:2458–2472.
+Kellerer AM, Rossi HH. 2012. A generalized formulation of dual radiation
+action. Radiat Res. 178:Av204–213.
+Khodarev
+NN,
+Narayana
+A,
+Constantinou
+A,
+Vaughan
+AT.
+1997.
+Topologically constrained domains of supercoiled DNA in eukaryotic
+cells. DNA Cell Biol. 16:1051–1058.
+Koboldt DC, Steinberg KM, Larson DE, Wilson RK, Mardis ER. 2013. The
+next-generation sequencing revolution and its impact on genomics.
+Cell. 155:27–38.
+Lea DE. 1955. Actions of radiation on living cells. New York: Cambridge
+University Press.
+Lee TI, Young RA. 2013. Transcriptional regulation and its misregulation in
+disease. Cell. 152:1237–1251.
+INTERNATIONAL JOURNAL OF RADIATION BIOLOGY
+11
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+## Page 13
+
+Lieberman-Aiden E, Van Berkum NL, Williams L, Imakaev M, Ragoczy T,
+Telling A, Amit I, Lajoie BR, Sabo PJ, Dorschner MO, et al. 2009.
+Comprehensive mapping of long-range interactions reveals folding
+principles of the human genome. Science. 326:289–293.
+Lin C, Yang L, Tanasa B, Hutt K, Ju BG, Ohgi K, Zhang J, Rose DW, Fu XD,
+Glass CK, et al. 2009. Nuclear receptor-induced chromosomal proximity
+and DNA breaks underlie specific translocations in cancer. Cell.
+139:1069–1083.
+Magnander K, Hultborn R, Claesson K, Elmroth K. 2010. Clustered DNA
+damage in irradiated human diploid fibroblasts: Influence of chromatin
+organization. Radiat Res. 173:272–282.
+McVey M, Lee SE. 2008. MMEJ repair of double-strand breaks (director’s
+cut):
+Deleted
+sequences
+and
+alternative
+endings.
+Trends
+Genet.
+24:529–538.
+Meaburn KJ, Misteli T, Soutoglou E. 2007. Spatial genome organization in
+the formation of chromosomal translocations. Semin Cancer Biol.
+17:80–90.
+Mikkelsen TS, Ku M, Jaffe DB, Issac B, Lieberman E, Giannoukos G, Alvarez
+P, Brockman W, Kim TK, Koche RP,et al. 2007. Genome-wide maps of
+chromatin state in pluripotent and lineage-committed cells. Nature.
+448:553–560.
+Mirny LA. 2011. The fractal globule as a model of chromatin architecture
+in the cell. Chromosome Res. 19:37–51.
+Nagano T, Lubling Y, Stevens TJ, Schoenfelder S, Yaffe E, Dean W, Laue
+ED, Tanay A, Fraser P. 2013. Single-cell Hi-C reveals cell-to-cell variabil-
+ity in chromosome structure. Nature. 502:59–64.
+Natarajan AT, Palitti F, Hill MA, Stevens DL, Ahnstrom G. 2010. Influence
+of DMSO on Carbon K ultrasoft X-rays induced chromosome aberra-
+tions in V79 Chinese hamster cells. Mutat Res. 691:23–26.
+Nikiforov YE, Koshoffer A, Nikiforova M, Stringer J, Fagin JA. 1999.
+Chromosomal breakpoint positions suggest a direct role for radiation
+in inducing illegitimate recombination between the ELE1 and RET
+genes
+in
+radiation-induced
+thyroid
+carcinomas.
+Oncogene.
+18:6330–6334.
+Nikiforova MN, Stringer JR, Blough R, Medvedovic M, Fagin JA, Nikiforov
+YE. 2000. Proximity of chromosomal loci that participate in radiation-
+induced rearrangements in human cells. Science. 290:138–141.
+Nishino Y, Eltsov M, Joti Y, Ito K, Takata H, Takahashi Y, Hihara S,
+Frangakis AS, Imamoto N, Ishikawa T, et al. 2012. Human mitotic chro-
+mosomes consist predominantly of irregularly folded nucleosome
+fibres without a 30-nm chromatin structure. EMBO J. 31:1644–1653.
+Nomiya T. 2013. Discussions on target theory: Past and present. J Radiat
+Res. 54:1161–1163.
+O’Neill P, Wardman P. 2009. Radiation chemistry comes before radiation
+biology. Int J Radiat Biol. 85:9–25.
+Obe G, Johannes C, Ritter S. 2010. The number and not the molecular
+structure of DNA double-strand breaks is more important for the for-
+mation
+of
+chromosomal
+aberrations:
+A
+hypothesis.
+Mutat
+Res.
+701:3–11.
+Olive PL. 1998. The role of DNA single- and double-strand breaks in cell
+killing by ionizing radiation. Radiat Res. 150:S42–51.
+Osborne CS, Chakalova L, Mitchell JA, Horton A, Wood AL, Bolland DJ,
+Corcoran AE, Fraser P. 2007. Myc dynamically and preferentially relo-
+cates to a transcription factory occupied by Igh. PLoS Biol. 5:e192.
+Ostashevsky JY, Reichman B, Lange CS. 1999. Higher-order structure of
+mammalian chromatin deduced from viscoelastometry data. J Biomol
+Struct Dyn. 17:567–580.
+Park C, Papiez L, Zhang S, Story M, Timmerman RD. 2008. Universal sur-
+vival curve and single fraction equivalent dose: Useful tools in under-
+standing potency of ablative radiotherapy. Int J Radiat Oncol Biol Phys.
+70:847–852.
+Pfeiffer P, Goedecke W, Kuhfittig-Kulle S, Obe G. 2004. Pathways of DNA
+double-strand break repair and their impact on the prevention and
+formation
+of
+chromosomal
+aberrations.
+Cytogenet
+Genome
+Res.
+104:7–13.
+Price BD, D’Andrea AD. 2013. Chromatin remodeling at DNA double-
+strand breaks. Cell. 152:1344–1354.
+Rao SS, Huntley MH, Durand NC, Stamenova EK, Bochkov ID, Robinson JT,
+Sanborn AL, Machol I, Omer AD, Lander ES, et al. 2014. A 3D map of
+the human genome at kilobase resolution reveals principles of chro-
+matin looping. Cell. 159:1665–1680.
+Richardson C, Jasin M.
+2000. Frequent chromosomal translocations
+induced by DNA double-strand breaks. Nature. 405:697–700.
+Rickman DS, Soong TD, Moss B, Mosquera JM, Dlabal J, Terry S,
+MacDonald TY, Tripodi J, Bunting K, Najfeld V, et al. 2012. Oncogene-
+mediated alterations in chromatin conformation. Proc Natl Acad Sci
+USA. 109:9083–9088.
+Roukos V, Voss TC, Schmidt CK, Lee S, Wangsa D, Misteli T. 2013. Spatial
+dynamics
+of
+chromosome
+translocations
+in
+living
+cells.
+Science.
+341:660–664.
+Sachs RK, Chen AM, Brenner DJ. 1997. Review: Proximity effects in the
+production of chromosome aberrations by ionizing radiation. Int J
+Radiat Biol. 71:1–19.
+Sandhu KS, Li G, Poh HM, Quek YL, Sia YY, Peh SQ, Mulawadi FH,
+Lim J, Sikic M, Menghi F, et al. 2012. Large-scale functional organ-
+ization
+of
+long-range
+chromatin
+interaction
+networks.
+Cell
+Rep.
+2:1207–1219.
+Sankaranarayanan K, Taleei R, Rahmanian S, Nikjoo H. 2013. Ionizing radi-
+ation and genetic risks. XVII. Formation mechanisms underlying natur-
+ally occurring DNA deletions in the human genome and their potential
+relevance for bridging the gap between induced DNA double-strand
+breaks and deletions in irradiated germ cells. Mutat Res. 753:114–130.
+Savage JR. 1993. Interchange and intra-nuclear architecture. Environ Mol
+Mutagen. 22:234–244.
+Sax K. 1940. An analysis of X-ray induced chromosomal aberrations in
+Tradescantia. Genetics. 25:41–68.
+Schipler A, Iliakis G. 2013. DNA double-strand-break complexity levels and
+their possible contributions to the probability for error-prone process-
+ing and repair pathway choice. Nucleic Acids Res. 41:7589–7605.
+Singh SK, Hawkins C, Clarke ID, Squire JA, Bayani J, Hide T, Henkelman
+RM, Cusimano MD, Dirks PB. 2004. Identification of human brain
+tumour initiating cells. Nature. 432:396–401.
+Sutherland BM, Bennett PV, Sidorkina O, Laval J. 2000. Clustered DNA
+damages induced in isolated DNA and in human cells by low doses of
+ionizing radiation. Proc Natl Acad Sci USA. 97:103–108.
+Takata H, Hanafusa T, Mori T, Shimura M, Iida Y, Ishikawa K, Yoshikawa K,
+Yoshikawa Y, Maeshima K. 2013. Chromatin compaction protects gen-
+omic DNA from radiation damage. PLoS One. 8:e75622.
+Thacker J, Wilkinson RE, Goodhead DT. 1986. The induction of chromo-
+some exchange aberrations by carbon ultrasoft X-rays in V79 hamster
+cells. Int J Radiat Biol Relat Stud Phys Chem Med. 49:645–656.
+Thompson LH. 2012. Recognition, signaling, and repair of DNA double-
+strand breaks produced by ionizing radiation in mammalian cells: the
+molecular choreography. Mutat Res. 751:158–246.
+Vakifahmetoglu H, Olsson M, Zhivotovsky B. 2008. Death through a tra-
+gedy: Mitotic catastrophe. Cell Death Differ. 15:1153–1162.
+Vasireddy RS, Karagiannis TC, El-Osta A. 2010. gamma-radiation-induced
+gammaH2AX formation occurs preferentially in actively transcribing
+euchromatic loci. Cell Mol Life Sci. 67:291–294.
+Wiklund K, Fernandez-Varea JM, Lind BK. 2011. A Monte Carlo program
+for the analysis of low-energy electron tracks in liquid water. Phys
+Med Biol. 56:1985–2003.
+Williams D. 2008. Radiation carcinogenesis: Lessons from Chernobyl.
+Oncogene. 27(Suppl. 2):S9–18.
+Woodbine L, Gennery AR, Jeggo PA. 2014. The clinical impact of defi-
+ciency in DNA non-homologous end-joining. DNA Repair (Amst).
+16:84–96.
+Xu Y, Price BD. 2011. Chromatin dynamics and the repair of DNA double
+strand breaks. Cell Cycle. 10:261–267.
+Yokota H, Van Den Engh G, Hearst JE, Sachs RK, Trask BJ. 1995. Evidence
+for the organization of chromatin in megabase pair-sized loops
+arranged along a random walk path in the human G0/G1 interphase
+nucleus. J Cell Biol. 130:1239–1249.
+Zhang Y, Mccord RP, Ho YJ, Lajoie BR, Hildebrand DG, Simon AC,
+Becker MS, Alt FW, Dekker J. 2012. Spatial organization of the mouse
+genome and its role in recurrent chromosomal translocations. Cell.
+148:908–921.
+12
+D.A. FRIEDMAN ET AL.
+Downloaded by [University of California, San Diego] at 06:07 14 March 2016
+
+
+---
+*Extraction method: pymupdf*

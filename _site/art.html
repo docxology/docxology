@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery — Daniel Ari Friedman</title>
+    <meta name="description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — early Ethereum art NFTs, sold at Christie's.">
+    <meta name="author" content="Daniel Ari Friedman">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/art.html">
+    <meta name="theme-color" content="#0c0c0e">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
+    <link rel="alternate" type="application/json" href="/data/artworks-index.json" title="Artwork index data">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Art Gallery — Daniel Ari Friedman | 942 Pen Drawings &amp; Curio Cards NFTs">
+    <meta property="og:description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — early Ethereum art NFTs, sold at Christie's.">
+    <meta property="og:url" content="https://danielarifriedman.com/art.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-art.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Art Gallery — Daniel Ari Friedman | 942 Pen Drawings &amp; Curio Cards NFTs">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Art Gallery — Daniel Ari Friedman | 942 Pen Drawings &amp; Curio Cards NFTs">
+    <meta name="twitter:description" content="942 ink-on-paper drawings by Daniel Ari Friedman. Curio Cards 24-26 (2017) — early Ethereum art NFTs, sold at Christie's.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-art.jpg">
+    <meta name="twitter:image:alt" content="Art Gallery — Daniel Ari Friedman | 942 Pen Drawings &amp; Curio Cards NFTs">
+    <meta property="og:site_name" content="Daniel Ari Friedman">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://danielarifriedman.com/art.html#collection",
+    "name": "Art Gallery — Daniel Ari Friedman",
+    "url": "https://danielarifriedman.com/art.html",
+    "description": "942 pen-and-ink drawings and Curio Cards (2017, early Ethereum art NFTs) by Daniel Ari Friedman.",
+    "creator": { "@id": "https://danielarifriedman.com/#person" },
+    "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
+    "numberOfItems": 942
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://danielarifriedman.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Art Gallery",
+        "item": "https://danielarifriedman.com/art.html"
+      }
+    ]
+    }
+    </script>
+
+
+<style>
+        /* art.html is an intentionally BESPOKE gallery page: a distinct brutalist/
+           saturated identity (pure-red accents, neutral grays, double borders,
+           Georgia logo). Its tokens deliberately diverge from the site-wide
+           style.css palette — do NOT unify them (see docs/design/design-system.md). */
+        :root {
+            --bg:#050505; --bg2:#090909; --bg3:rgba(17,17,17,0.94);
+            --fg:#f2f2f2; --fg2:#d2d2d2; --fg3:#888;
+            --red:#ff0000; --red-b:#ff0000;
+            --gold:#ff0000; --gold-b:#ff0000;
+            --silver:#b8b8b8; --silver-b:#f0f0f0;
+            --bdr:rgba(255,255,255,0.2); --bdr-h:rgba(255,0,0,0.48);
+            --r:1px;
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:17px;line-height:1.76;background:repeating-linear-gradient(0deg,rgba(255,255,255,0.023) 0 1px,transparent 1px 6px),repeating-linear-gradient(90deg,rgba(255,255,255,0.012) 0 1px,transparent 1px 16px),var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
+        a{color:var(--red);text-decoration-thickness:1px;text-underline-offset:.18em;transition:color .2s}
+        a:hover{color:#fff}
+        a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+        .skip-link{position:absolute;top:-100%;left:1rem;padding:.6rem 1.2rem;background:var(--red);color:#fff;font-weight:700;border-radius:0 0 2px 2px;z-index:9999}
+        .skip-link:focus{top:0}
+
+        /* NAV */
+        nav{position:fixed;top:0;left:0;right:0;z-index:200;background:#030303;border-top:4px double rgba(255,255,255,0.26);border-bottom:4px double rgba(255,255,255,0.3);padding:0 2rem;height:74px;display:flex;align-items:center;justify-content:space-between}
+        .nav-logo{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:1rem;color:#fff;text-transform:uppercase;letter-spacing:.08em;line-height:1.08}
+        .nav-logo::after{content:'PhD';display:block;color:var(--red);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.58rem;letter-spacing:.22em;margin-top:.14rem}
+        .nav-right{display:flex;gap:1rem;align-items:center}
+        .nav-right a{color:var(--fg2);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+        .nav-right a:hover{color:#fff}
+        .nav-count{color:var(--fg2);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.68rem;text-transform:uppercase;padding:.2rem .6rem;border:1px solid var(--bdr);border-radius:2px}
+
+        /* HERO */
+        .hero{padding:7rem 2rem 2.6rem;text-align:center;background:#050505;border-bottom:6px double var(--bdr)}
+        .hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.5rem,6vw,5.4rem);font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.025em;line-height:.96;border-top:6px double var(--bdr);border-bottom:6px double var(--bdr);padding:.74rem 0;margin-bottom:.9rem}
+        .hero p{color:var(--fg2);max-width:780px;margin:0 auto .5rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.9rem;line-height:1.7}
+        .hero-links{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.25rem}
+        .hero-links a{padding:.35rem .8rem;border:1px solid var(--bdr);border-radius:2px;color:var(--fg2);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;transition:all .2s}
+        .hero-links a:hover{border-color:var(--bdr-h);color:#fff;background:rgba(255,0,0,0.045)}
+
+        /* TOOLBAR */
+        .toolbar{position:sticky;top:74px;z-index:100;background:#040404;border-bottom:6px double var(--bdr);padding:.75rem 2rem;display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+        .search-wrap{flex:1;min-width:200px;position:relative}
+        .search-wrap input{width:100%;background:#050505;border:1px solid var(--bdr);border-radius:2px;padding:.55rem 1rem .55rem 4.8rem;color:var(--fg);font-size:.95rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;outline:none;transition:border-color .2s}
+        .search-wrap input:focus{border-color:rgba(201,168,76,0.4)}
+        .search-wrap input::placeholder{color:var(--fg3)}
+        .search-icon{position:absolute;left:.7rem;top:50%;transform:translateY(-50%);color:var(--red);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}
+        .sort-select{background:#050505;border:1px solid var(--bdr);border-radius:2px;padding:.5rem .9rem;color:var(--fg);font-size:.82rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;outline:none;cursor:pointer}
+        .sort-select option{background:#131316}
+        .size-btns{display:flex;gap:.35rem}
+        .size-btn{background:none;border:1px solid var(--bdr);color:var(--fg3);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:.8rem;transition:all .2s;display:flex;align-items:center;justify-content:center}
+        .size-btn.active,.size-btn:hover{border-color:var(--bdr-h);color:var(--gold);background:rgba(201,168,76,0.06)}
+        .result-count{color:var(--fg3);font-size:.78rem;white-space:nowrap}
+
+        /* GALLERY */
+        .gallery{max-width:1500px;margin:0 auto;padding:2rem 1.5rem}
+        .grid{display:grid;gap:14px}
+        .grid-sm{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+        .grid-md{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+        .grid-lg{grid-template-columns:repeat(auto-fill,minmax(380px,1fr))}
+
+        .art-card{background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;transition:border-color .25s,box-shadow .25s;cursor:pointer}
+        .art-card:hover{border-color:var(--bdr-h);box-shadow:0 8px 20px rgba(0,0,0,0.34)}
+        .art-thumb{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:linear-gradient(135deg,#18181c,#1a1a20);opacity:0;transition:opacity .4s,filter .25s;filter:grayscale(1) contrast(1.08)}
+        .art-card:hover .art-thumb{filter:grayscale(.35) contrast(1.08)}
+        .art-thumb.loaded{opacity:1}
+        .art-info{padding:.75rem .9rem .85rem}
+        .art-title{font-size:.95rem;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:.15rem}
+        .art-meta{font-size:.7rem;color:var(--fg3)}
+        .art-views{font-size:.68rem;color:var(--fg3);margin-top:.1rem}
+
+        /* LIGHTBOX */
+        .lb-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:1000;display:none;flex-direction:column}
+        .lb-overlay.open{display:flex}
+        .lb-topbar{width:100%;background:rgba(12,12,14,0.9);border-bottom:1px solid var(--bdr);padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+        .lb-title-area h2{font-size:1rem;font-weight:600;color:#fff;margin-bottom:.1rem}
+        .lb-date{font-size:.74rem;color:var(--fg3)}
+        .lb-close{background:none;border:none;color:var(--fg2);font-size:2.2rem;cursor:pointer;line-height:1;transition:color .2s;padding:0 .25rem}
+        .lb-close:hover{color:var(--gold)}
+
+        .lb-body{display:flex;flex:1;min-height:0;width:100%;overflow:hidden}
+        .lb-img-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:1.5rem;overflow:hidden;position:relative}
+        .lb-img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,0.6);transition:opacity .2s}
+        .lb-panel{width:320px;flex-shrink:0;background:var(--bg2);border-left:1px solid var(--bdr);overflow-y:auto;display:flex;flex-direction:column}
+        .lb-panel-inner{padding:1.25rem}
+        .lb-desc{font-size:.85rem;color:var(--fg2);line-height:1.65;margin-bottom:1.25rem;white-space:pre-wrap}
+
+        .lb-section{margin-bottom:1.25rem}
+        .lb-section-title{font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;color:var(--fg3);margin-bottom:.6rem;font-weight:600}
+
+        .lb-download{display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--red);color:#fff;border:none;border-radius:2px;padding:.6rem 1rem;font-size:.82rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-weight:600;cursor:pointer;width:100%;text-decoration:none;transition:all .2s;margin-bottom:.65rem}
+        .lb-download:hover{box-shadow:0 4px 12px rgba(255,0,0,0.26);transform:none;color:#fff}
+        .lb-flickr{display:flex;align-items:center;justify-content:center;gap:.4rem;background:rgba(255,255,255,0.04);border:1px solid var(--bdr);color:#f0f0f0;border-radius:2px;padding:.5rem 1rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.8rem;font-weight:600;width:100%;text-decoration:none;transition:all .2s;margin-bottom:.65rem}
+        .lb-flickr:hover{background:rgba(255,0,0,0.08);border-color:var(--red);color:#fff}
+
+        .res-list{display:flex;flex-direction:column;gap:.35rem;max-height:260px;overflow-y:auto}
+        .res-item{display:flex;align-items:center;justify-content:space-between;padding:.4rem .65rem;background:rgba(255,255,255,0.03);border:1px solid var(--bdr);border-radius:6px;font-size:.76rem;transition:all .2s}
+        .res-item:hover{border-color:var(--bdr-h);background:rgba(201,168,76,0.04)}
+        .res-label{color:var(--fg2);font-weight:500;flex:1}
+        .res-actions{display:flex;gap:.35rem;flex-shrink:0}
+        .res-btn{background:none;border:1px solid var(--bdr);color:var(--fg3);padding:.18rem .45rem;border-radius:4px;font-size:.68rem;cursor:pointer;font-family:inherit;transition:all .2s;text-decoration:none;display:inline-block}
+        .res-btn:hover{border-color:var(--bdr-h);color:var(--gold)}
+
+        .lb-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+        .lb-tag{background:rgba(192,57,43,0.1);border:1px solid rgba(192,57,43,0.2);color:var(--red-b);border-radius:4px;padding:.17rem .48rem;font-size:.69rem;font-weight:500}
+
+        /* Nav arrows */
+        .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(12,12,14,0.7);border:1px solid var(--bdr);color:var(--fg2);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:1.4rem;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:5}
+        .lb-nav:hover{border-color:var(--bdr-h);color:var(--gold);background:rgba(12,12,14,0.9)}
+        .lb-prev{left:1rem}
+        .lb-next{right:340px}
+
+        .empty{text-align:center;padding:5rem 2rem;color:var(--fg3)}
+        .empty-icon{font-size:3rem;margin-bottom:.75rem}
+
+        @media(max-width:680px){
+            .lb-panel{display:none}
+            .lb-next{right:1rem}
+            .grid-sm{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+        }
+    </style>
+<style>.breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'›';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
+    <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
+    <!-- Resource hints -->
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://linkedin.com/in/danielarifriedman">
+    <link rel="me" href="https://youtube.com/@danielarifriedman">
+    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
+    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+
+
+    <meta name="revised" content="2026-07-05">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"></button>
+    <div class="nav-right">
+        <span class="nav-count">942 artworks</span>
+        <a href="index.html">← Main Site</a>
+        <a href="discovery.html">Discovery</a>
+        <a href="https://www.flickr.com/photos/43693624@N07/" target="_blank" rel="noopener">Flickr Archive ↗</a>
+        <a href="data/agent-index.json">Agent Map</a>
+    </div>
+</nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="index.html">Home</a></li><li aria-current="page">Art</li></ol>
+    </nav>
+
+<header class="hero">
+    <h1>Art Gallery</h1>
+    <p>A collection of 942 pen and ink drawings exploring the intersection of biology, cognitive science, philosophy, and complex systems.</p>
+    <p style="font-size:.8rem;color:var(--fg3)">High-investment drawings (10–20 hrs each) · Pen &amp; ink on paper · Published in Taschen's "On NFT" (2024)</p>
+    <div class="hero-links">
+        <a href="https://curio.cards/artist/danielfriedman/" target="_blank" rel="noopener">Curio Cards NFTs</a>
+        <a href="https://www.flickr.com/photos/43693624@N07/" target="_blank" rel="noopener">Full Flickr Archive</a>
+        <a href="https://www.christies.com/en/lot/lot-6337619" target="_blank" rel="noopener">Christie's Auction</a>
+        <a href="https://www.instagram.com/danielarifriedman/" target="_blank" rel="noopener">Instagram</a>
+        <a href="index.html">← Back to Main Site</a>
+    </div>
+</header>
+
+<div class="toolbar">
+    <div class="search-wrap">
+        <span class="search-icon">Search</span>
+        <input type="text" id="searchInput" data-local-search aria-label="Search artworks" placeholder="Search by title, tag, description…">
+    </div>
+    <select class="sort-select" id="sortSelect" data-filter-gallery aria-label="Sort artworks">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+        <option value="title">A → Z</option>
+        <option value="views">Most Viewed</option>
+    </select>
+    <div class="size-btns">
+        <button class="size-btn" id="btn-sm" data-set-size="sm" title="Small" aria-label="Small artwork tiles" aria-pressed="false">▪▪▪</button>
+        <button class="size-btn active" id="btn-md" data-set-size="md" title="Medium" aria-label="Medium artwork tiles" aria-pressed="true">▪▪</button>
+        <button class="size-btn" id="btn-lg" data-set-size="lg" title="Large" aria-label="Large artwork tiles" aria-pressed="false">▪</button>
+    </div>
+    <span class="result-count" id="resultCount"></span>
+</div>
+
+<main class="gallery" id="main">
+    <div class="grid grid-md" id="grid"></div>
+    <div class="empty" id="emptyState" style="display:none">
+        <div class="empty-icon">ART</div>
+        <div>No artworks match your search.</div>
+    </div>
+    <noscript>
+        <div class="empty" style="display:block">
+            JavaScript is disabled. Browse the <a href="data/artworks-index.json">artwork index</a>
+            or the <a href="data/artworks.json">full artwork data export</a>
+            or the <a href="https://www.flickr.com/photos/43693624@N07/" rel="noopener">full Flickr archive</a>.
+        </div>
+    </noscript>
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lb-overlay" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
+    <div class="lb-topbar">
+        <div class="lb-title-area">
+            <h2 id="lb-title">—</h2>
+            <div class="lb-date" id="lb-date"></div>
+        </div>
+        <button class="lb-close" id="lb-close" data-lightbox="close" title="Close (Esc)" aria-label="Close artwork viewer">×</button>
+    </div>
+    <div class="lb-body">
+        <div class="lb-img-wrap">
+            <button class="lb-nav lb-prev" data-lightbox="prev" aria-label="Previous artwork">‹</button>
+            <img src="" alt="Selected artwork" class="lb-img" id="lb-img">
+            <button class="lb-nav lb-next" data-lightbox="next" aria-label="Next artwork">›</button>
+        </div>
+        <div class="lb-panel">
+            <div class="lb-panel-inner">
+                <div class="lb-desc" id="lb-desc"></div>
+                <div class="lb-section">
+                    <a id="lb-download" class="lb-download" href="#" target="_blank" rel="noopener">Download Original</a>
+                    <a id="lb-flickr-link" class="lb-flickr" href="#" target="_blank" rel="noopener">View on Flickr</a>
+                </div>
+                <div class="lb-section">
+                    <div class="lb-section-title">Available Resolutions</div>
+                    <div class="res-list" id="lb-resolutions"></div>
+                </div>
+                <div class="lb-section">
+                    <div class="lb-section-title">Tags</div>
+                    <div class="lb-tags" id="lb-tags"></div>
+                </div>
+                <div class="lb-section">
+                    <div class="lb-section-title">Details</div>
+                    <div style="font-size:.77rem;color:var(--fg3);line-height:1.85" id="lb-details"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/art-gallery.js?v=20260716" defer></script>
+<script src="/js/tts-controls.js?v=20260712" defer></script>
+<script src="/js/interactive.js?v=20260712" defer></script>
+    <script src="/js/menu-esc.js?v=20260712" defer></script>
+</body>
+</html>

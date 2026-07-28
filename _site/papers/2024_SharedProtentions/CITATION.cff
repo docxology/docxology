@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "SharedProtentions"
+date-released: 2024
+authors:
+  - family-names: Albarracin
+    given-names: Mahault
+  - family-names: Pitliya
+    given-names: Riddhi J.
+  - family-names: Smithe
+    given-names: Toby St. Clere
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: Friston
+    given-names: Karl
+  - family-names: Ramstead
+    given-names: Maxwell J.D.

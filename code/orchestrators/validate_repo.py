@@ -295,6 +295,7 @@ def main() -> None:
     run(["python3", "code/orchestrators/build_exports_page.py", "--check"])
     run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
     run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
+    run(["python3", "code/orchestrators/build_reproducibility_ledger.py", "--check"])
     run(["python3", "code/orchestrators/build_current_counts.py", "--check"])
     run(["python3", "code/orchestrators/sync_site_facts.py", "--check"])
     run(["python3", "code/orchestrators/generate_og_images.py", "--check"])

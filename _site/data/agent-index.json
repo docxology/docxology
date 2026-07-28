@@ -1,0 +1,1222 @@
+{
+  "schema_version": "1.4",
+  "generated_at": "2026-07-21T20:34:49+00:00",
+  "canonical_origin": "https://danielarifriedman.com/",
+  "canonical_sources": {
+    "bibliography": "/pages/BIBLIOGRAPHY.md",
+    "software": "/pages/SOFTWARE.md",
+    "claims": "/data/claims.json",
+    "counts": "/data/current-counts.json",
+    "verification": "/pages/VERIFICATION_LOG.md",
+    "backlog": "/TODO.md",
+    "coverage_exceptions": "/data/coverage-exceptions.json",
+    "repository_classification": "/data/repository-classification.json",
+    "repository_exclusions": "/data/repository-exclusions.json",
+    "release_integrity": "/data/release-integrity.json"
+  },
+  "routes": [
+    {
+      "id": "home",
+      "path": "/",
+      "format": "text/html",
+      "kind": "profile"
+    },
+    {
+      "id": "publications",
+      "path": "/publications.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "works",
+      "path": "/works/",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "domains",
+      "path": "/domains.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "software",
+      "path": "/software.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "repositories",
+      "path": "/repositories.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "art",
+      "path": "/art.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "videos",
+      "path": "/videos.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "search",
+      "path": "/search.html",
+      "format": "text/html",
+      "kind": "query",
+      "query": "?q={terms}"
+    },
+    {
+      "id": "discovery",
+      "path": "/discovery.html",
+      "format": "text/html",
+      "kind": "source-map"
+    },
+    {
+      "id": "catalog",
+      "path": "/catalog.html",
+      "format": "text/html",
+      "kind": "data-catalog"
+    },
+    {
+      "id": "exports",
+      "path": "/exports.html",
+      "format": "text/html",
+      "kind": "export-hub"
+    },
+    {
+      "id": "evidence",
+      "path": "/evidence.html",
+      "format": "text/html",
+      "kind": "evidence-ledger"
+    },
+    {
+      "id": "updates",
+      "path": "/updates.html",
+      "format": "text/html",
+      "kind": "changelog"
+    },
+    {
+      "id": "cv",
+      "path": "/resume/resume.html",
+      "format": "text/html",
+      "kind": "accessible-cv"
+    },
+    {
+      "id": "agent-index",
+      "path": "/data/agent-index.json",
+      "format": "application/json",
+      "kind": "route-manifest"
+    }
+  ],
+  "datasets": {
+    "works": {
+      "path": "/data/works.json",
+      "count": 197,
+      "schema": "Work"
+    },
+    "software": {
+      "path": "/data/software.json",
+      "count": 131,
+      "schema": "SoftwareRepository"
+    },
+    "repositories": {
+      "path": "/data/github-repositories.json",
+      "count": 387,
+      "schema": "Repository"
+    },
+    "artworks": {
+      "path": "/data/artworks.json",
+      "count": 942,
+      "schema": "VisualArtwork"
+    },
+    "artworks_index": {
+      "path": "/data/artworks-index.json",
+      "count": 942,
+      "schema": "ArtworkIndex"
+    },
+    "videos": {
+      "path": "/data/videos.json",
+      "count": 1127,
+      "schema": "VideoObject"
+    },
+    "videos_index": {
+      "path": "/data/videos-index.json",
+      "count": 1127,
+      "schema": "VideoIndex"
+    },
+    "search": {
+      "path": "/search-index.json",
+      "count": null,
+      "schema": "SearchResult"
+    },
+    "claims": {
+      "path": "/data/claims.json",
+      "count": null,
+      "schema": "ClaimWithEvidence"
+    },
+    "coverage_exceptions": {
+      "path": "/data/coverage-exceptions.json",
+      "count": 41,
+      "schema": "CoverageException"
+    },
+    "repository_classification": {
+      "path": "/data/repository-classification.json",
+      "count": 259,
+      "schema": "RepositoryClassification"
+    },
+    "pages_artifact": {
+      "path": "/data/pages-artifact-manifest.json",
+      "count": null,
+      "schema": "PagesArtifactManifest"
+    },
+    "release_integrity": {
+      "path": "/data/release-integrity.json",
+      "count": null,
+      "schema": "ReleaseIntegrity"
+    },
+    "people": {
+      "path": "/data/people.json",
+      "count": 5,
+      "schema": "Person"
+    },
+    "organizations": {
+      "path": "/data/organizations.json",
+      "count": 4,
+      "schema": "Organization"
+    },
+    "resume": {
+      "path": "/data/resume.json",
+      "count": null,
+      "schema": "ResumeData"
+    },
+    "work_enrichment": {
+      "path": "/data/work-enrichment.json",
+      "count": 197,
+      "schema": "WorkEnrichment"
+    },
+    "catalog": {
+      "path": "/data/catalog.json",
+      "count": 29,
+      "schema": "DataCatalog"
+    },
+    "reconciliation": {
+      "path": "/data/reconciliation.json",
+      "count": 6,
+      "schema": "ReconciliationReport"
+    },
+    "generated_manifest": {
+      "path": "/data/generated-manifest.json",
+      "count": 46,
+      "schema": "GeneratedManifest"
+    }
+  },
+  "reports": [
+    {
+      "id": "current-counts",
+      "path": "/data/current-counts.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    },
+    {
+      "id": "public-source-snapshot",
+      "path": "/reports/public_source_snapshot_2026-07-21.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    },
+    {
+      "id": "public-source-inventory",
+      "path": "/reports/public_source_inventory_2026-07-18.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    },
+    {
+      "id": "paired-publications",
+      "path": "/reports/paired_publications_2026-07-18.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    },
+    {
+      "id": "accessibility",
+      "path": "/reports/accessibility_static_2026-07-22.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    },
+    {
+      "id": "asset-size",
+      "path": "/reports/asset_size_2026-07-22.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    },
+    {
+      "id": "live-site",
+      "path": "/reports/live_site_verification_2026-07-21.json",
+      "format": "application/json",
+      "schema": "GeneratedReport",
+      "freshness_field": "generated_at"
+    }
+  ],
+  "schemas": {
+    "Work": {
+      "type": "object",
+      "description": "One curated bibliography row; citation_key is the permanent public URL identifier.",
+      "required": [
+        "num",
+        "citation_key",
+        "year",
+        "domain",
+        "domain_name",
+        "type",
+        "title",
+        "url",
+        "doi",
+        "docs_path"
+      ],
+      "fields": {
+        "num": "integer; immutable catalog identity, with retired gaps preserved",
+        "citation_key": "string; stable URL and BibTeX key",
+        "year": "integer",
+        "domain": "string; domain emoji code",
+        "domain_name": "string; human-readable domain",
+        "type": "string; Paper, Book, Course, Presentation, Playbook, or Series",
+        "title": "string",
+        "venue": "string",
+        "url": "string; canonical external identifier or landing page",
+        "doi": "string or empty",
+        "docs_path": "string or empty; paper-folder path",
+        "has_paper_folder": "boolean",
+        "has_full_text": "boolean",
+        "has_images": "boolean",
+        "has_skill_md": "boolean; a per-paper agent SKILL.md exists in the folder",
+        "has_agents_md": "boolean; a per-paper AGENTS.md exists in the folder",
+        "has_readme": "boolean; a per-paper README.md exists in the folder",
+        "full_text_url": "string or empty; site-relative URL of the paper's full_text.md"
+      }
+    },
+    "SoftwareRepository": {
+      "type": "object",
+      "description": "One curated software catalog row from pages/SOFTWARE.md.",
+      "required": [
+        "name",
+        "url",
+        "owner",
+        "catalog_section",
+        "description",
+        "language",
+        "paper_path",
+        "zenodo_url"
+      ],
+      "fields": {
+        "name": "string",
+        "url": "string; GitHub repository URL",
+        "owner": "docxology or ActiveInferenceInstitute",
+        "catalog_section": "curated source-table section",
+        "description": "string",
+        "language": "string or empty",
+        "stars": "integer or null; API snapshot value",
+        "updated_or_year": "string; API snapshot month/year or source year",
+        "paper_path": "string or empty",
+        "zenodo_url": "string or empty"
+      }
+    },
+    "ArtworkIndex": {
+      "type": "object",
+      "description": "Compact artwork grid/search projection; full resolution and media details live in VisualArtwork.",
+      "required": [
+        "id",
+        "title",
+        "tags",
+        "date",
+        "views",
+        "thumb"
+      ],
+      "fields": {
+        "id": "string; stable Flickr artwork identifier",
+        "title": "string",
+        "tags": "array of strings",
+        "date": "string or empty",
+        "views": "string or numeric display count",
+        "thumb": "HTTPS thumbnail URL"
+      }
+    },
+    "VideoIndex": {
+      "type": "object",
+      "description": "Compact video timeline projection; complete topic, relationship, and transcript metadata lives in VideoObject.",
+      "required": [
+        "schema_version",
+        "generated_at",
+        "source",
+        "count",
+        "counts",
+        "channels",
+        "fields",
+        "detail_source",
+        "videos"
+      ],
+      "fields": {
+        "schema_version": "VideoIndex.v1",
+        "generated_at": "ISO-8601 generation timestamp",
+        "source": "data/videos.json",
+        "count": "integer",
+        "counts": "channel totals and transcript count",
+        "channels": "channel freshness metadata",
+        "fields": "ordered compact video fields",
+        "detail_source": "complete VideoObject export",
+        "videos": "array of compact timeline records"
+      }
+    },
+    "Repository": {
+      "type": "object",
+      "description": "One public repository in the complete GitHub inventory, including forks.",
+      "required": [
+        "name",
+        "full_name",
+        "owner",
+        "html_url",
+        "fork",
+        "archived",
+        "private",
+        "curated",
+        "recently_updated"
+      ],
+      "fields": {
+        "full_name": "string; owner/name",
+        "html_url": "string",
+        "owner": "docxology or ActiveInferenceInstitute",
+        "fork": "boolean",
+        "archived": "boolean",
+        "private": "boolean",
+        "curated": "boolean; present in the curated software catalog",
+        "recently_updated": "boolean; current inventory freshness flag",
+        "created_at": "ISO-8601 timestamp",
+        "updated_at": "ISO-8601 timestamp",
+        "pushed_at": "ISO-8601 timestamp or null"
+      }
+    },
+    "ClaimWithEvidence": {
+      "type": "object",
+      "description": "One claim ledger entry with dated verification and explicit caveat handling.",
+      "required": [
+        "id",
+        "claim",
+        "status",
+        "sources",
+        "checked_at",
+        "confidence",
+        "verification_method",
+        "caveat"
+      ],
+      "fields": {
+        "id": "stable claim identifier",
+        "claim": "string",
+        "status": "curated-local, public-api, dated-snapshot, public-profile, or related evidence status",
+        "sources": "array of URLs or repository-relative paths",
+        "checked_at": "ISO date or timestamp",
+        "confidence": "high, medium, or low",
+        "verification_method": "string",
+        "maintenance_owner": "role responsible for refresh",
+        "caveat": "string; do not silently omit uncertainty"
+      }
+    },
+    "SearchResult": {
+      "type": "object",
+      "description": "One lexical search-index item spanning pages, works, software, repositories, people, organizations, and claims.",
+      "required": [
+        "id",
+        "type",
+        "title",
+        "url",
+        "summary",
+        "tags",
+        "content"
+      ],
+      "fields": {
+        "id": "stable type-prefixed identifier",
+        "type": "page, work, software, repository, person, organization, claim, or report",
+        "title": "string",
+        "url": "root-relative public URL",
+        "summary": "short human-readable description",
+        "tags": "array of strings",
+        "content": "normalized search text"
+      }
+    },
+    "GeneratedReport": {
+      "type": "object",
+      "description": "A dated generated QA, freshness, reconciliation, or deployment report.",
+      "required": [
+        "generated_at"
+      ],
+      "fields": {
+        "generated_at": "ISO-8601 generation timestamp",
+        "checked_at": "ISO date or timestamp when an external source was checked, when applicable",
+        "overall_ok": "boolean for reports that aggregate checks",
+        "results": "array of check-specific objects for QA/deployment reports",
+        "facts": "object of normalized source facts for public-source snapshots"
+      }
+    },
+    "CoverageException": {
+      "type": "object",
+      "description": "One explicit bibliography coverage gap with a legitimacy/review status.",
+      "required": [
+        "citation_key",
+        "title",
+        "type",
+        "reasons",
+        "review_status"
+      ],
+      "fields": {
+        "citation_key": "string; permanent work identifier",
+        "title": "string",
+        "type": "string",
+        "reasons": "array; no_paper_folder, no_full_text, no_doi, no_canonical_url, or non_paper_record",
+        "review_status": "legitimate_gap or needs_review"
+      }
+    },
+    "RepositoryClassification": {
+      "type": "object",
+      "description": "Review queue row for a public repository outside the curated software catalog, including description-quality triage.",
+      "required": [
+        "full_name",
+        "name",
+        "owner",
+        "html_url",
+        "fork",
+        "archived",
+        "private",
+        "description",
+        "description_quality",
+        "catalog_role",
+        "exclusion_reason",
+        "review_status"
+      ],
+      "fields": {
+        "full_name": "string; owner/name",
+        "name": "string; repository name",
+        "owner": "string",
+        "html_url": "https URL",
+        "fork": "boolean",
+        "archived": "boolean",
+        "private": "boolean; inventory privacy state",
+        "description": "string; current GitHub description or empty",
+        "description_quality": "missing, short, or substantive; triage signal only",
+        "language": "string or empty",
+        "topics": "array of GitHub topics",
+        "recently_updated": "boolean; current inventory freshness flag",
+        "relevance": "unknown until manual review",
+        "catalog_role": "not_curated, or acknowledged_not_curated for deliberate exclusions",
+        "exclusion_reason": "fork_not_curated, primary_repo_requires_manual_review, or acknowledged_not_catalogued",
+        "review_status": "defer, acknowledged, accept, reject, or supersede",
+        "acknowledged_reason": "present when review_status is acknowledged; one of profile_repo, profile_infrastructure, test_repo, website, rename_duplicate, private_mirror (see data/repository-exclusions.json)"
+      }
+    },
+    "PagesArtifactManifest": {
+      "type": "object",
+      "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image policy, and GitHub fallback templates.",
+      "required": [
+        "schema_version",
+        "source_commit_at_generation",
+        "github_fallback",
+        "budget",
+        "included_files",
+        "omitted_paper_images"
+      ],
+      "fields": {
+        "source_commit_at_generation": "Git commit used when the artifact was measured",
+        "github_fallback": "tree/raw URL templates",
+        "budget": "hard limit, safety ceiling, warning, file count, and byte totals",
+        "included_files": "array of included path/size/hash records",
+        "omitted_paper_images": "count and fallback-preserving policy summary"
+      }
+    },
+    "ReleaseIntegrity": {
+      "type": "object",
+      "description": "Source-to-release integrity envelope connecting hashes, generators, Pages, deployment, and live verification.",
+      "required": [
+        "schema_version",
+        "source_sha256",
+        "generator",
+        "pages_artifact",
+        "deployment",
+        "privacy"
+      ],
+      "fields": {
+        "source_sha256": "map of source/generated input paths to SHA-256",
+        "generator": "ordered pipeline and generator hashes",
+        "pages_artifact": "bounded artifact manifest summary",
+        "deployment": "workflow/deployment and live verification metadata",
+        "privacy": "CV public-integrity result and policy"
+      }
+    },
+    "VisualArtwork": {
+      "type": "object",
+      "description": "One complete gallery artwork record (pen-and-ink or blockchain art); the full counterpart to the compact ArtworkIndex projection. Aligns with schema.org VisualArtwork.",
+      "schema_org": "https://schema.org/VisualArtwork",
+      "required": [
+        "id",
+        "title",
+        "tags",
+        "date",
+        "views",
+        "media",
+        "thumb",
+        "flickr_url",
+        "sizes"
+      ],
+      "fields": {
+        "id": "string; stable Flickr artwork identifier",
+        "title": "string",
+        "desc": "string; artwork description or empty",
+        "tags": "array of strings",
+        "date": "string or empty",
+        "views": "string or numeric display count",
+        "media": "string; medium/format label",
+        "thumb": "HTTPS thumbnail URL",
+        "flickr_url": "HTTPS canonical Flickr page URL",
+        "sizes": "object; resolution label to HTTPS image URL map"
+      }
+    },
+    "VideoObject": {
+      "type": "object",
+      "description": "One complete video record; the full counterpart to the compact VideoIndex projection. Aligns with schema.org VideoObject.",
+      "schema_org": "https://schema.org/VideoObject",
+      "required": [
+        "id",
+        "title",
+        "channel",
+        "upload_date",
+        "youtube_url",
+        "embed_url",
+        "page_url"
+      ],
+      "fields": {
+        "id": "string; YouTube video identifier",
+        "title": "string",
+        "channel": "string; channel slug",
+        "channel_name": "string",
+        "channel_url": "HTTPS channel URL",
+        "upload_date": "ISO-8601 date",
+        "year": "integer",
+        "duration": "duration in seconds or ISO-8601",
+        "duration_text": "human-readable duration",
+        "view_count": "integer or display string",
+        "youtube_url": "HTTPS watch URL",
+        "embed_url": "HTTPS embeddable player URL",
+        "thumbnail_url": "HTTPS thumbnail URL",
+        "page_url": "HTTPS canonical on-site video page",
+        "transcript_available": "boolean",
+        "transcript_path": "string or empty; repository-relative transcript",
+        "topics": "array of strings",
+        "related_pages": "array; on-site related page URLs",
+        "related_works": "array; related work citation_keys"
+      }
+    },
+    "Person": {
+      "type": "object",
+      "description": "One collaborator or identity record. Aligns with schema.org Person.",
+      "schema_org": "https://schema.org/Person",
+      "required": [
+        "name",
+        "role"
+      ],
+      "fields": {
+        "name": "string",
+        "role": "string; relationship or contribution role",
+        "orcid": "string or empty; ORCID URL",
+        "wikidata": "string or empty; Wikidata QID URL",
+        "homepage": "string or empty",
+        "github": "string or empty; GitHub profile URL"
+      }
+    },
+    "Organization": {
+      "type": "object",
+      "description": "One institutional affiliation record. Aligns with schema.org Organization.",
+      "schema_org": "https://schema.org/Organization",
+      "required": [
+        "name",
+        "role"
+      ],
+      "fields": {
+        "name": "string",
+        "alternate_names": "array of strings",
+        "url": "string; canonical URL",
+        "public_landing_page": "string or empty",
+        "wikidata": "string or empty; Wikidata QID URL",
+        "github": "string or empty; GitHub account URL",
+        "github_account_type": "User or Organization",
+        "ein": "string or empty; US tax identifier",
+        "irs_status": "string or empty",
+        "role": "string; affiliation role"
+      }
+    },
+    "ResumeData": {
+      "type": "object",
+      "description": "Structured CV: profile, contact, metrics, and dated education/experience/awards/service sections with per-variant selection.",
+      "required": [
+        "profile",
+        "education",
+        "experience"
+      ],
+      "fields": {
+        "profile": "object; name, title, and summary",
+        "contact": "object; email and public links",
+        "metrics": "object; citation and output counts",
+        "education": "array of degree records",
+        "experience": "array of role records",
+        "awards": "array",
+        "service": "array",
+        "works": "array; selected work references",
+        "software": "array; selected software references",
+        "variants": "object; named CV variant section selections"
+      }
+    },
+    "WorkEnrichment": {
+      "type": "object",
+      "description": "Abstracts and keywords extracted from paper folders, keyed to Work citation identifiers.",
+      "required": [
+        "generated_at",
+        "source",
+        "count",
+        "works"
+      ],
+      "fields": {
+        "generated_at": "ISO-8601 timestamp",
+        "source": "string; extraction source",
+        "count": "integer",
+        "works": "array or object; per-work abstract and keyword enrichment"
+      }
+    },
+    "DataCatalog": {
+      "type": "object",
+      "description": "Schema.org DataCatalog describing every public JSON export as a Dataset with a DataDownload distribution.",
+      "schema_org": "https://schema.org/DataCatalog",
+      "required": [
+        "@context",
+        "@type",
+        "name",
+        "dataset"
+      ],
+      "fields": {
+        "@type": "DataCatalog",
+        "name": "string",
+        "url": "string",
+        "dataset": "array of schema.org Dataset nodes, each with url, encodingFormat, license, and distribution"
+      }
+    },
+    "ReconciliationReport": {
+      "type": "object",
+      "description": "Curated local counts compared against public-source indexes (ORCID, PubMed, Crossref, Zenodo, GitHub), with an explicit relationship interpretation per comparison.",
+      "required": [
+        "generated_at",
+        "comparisons"
+      ],
+      "fields": {
+        "generated_at": "ISO-8601 timestamp",
+        "snapshot": "string; public-source snapshot report path",
+        "claims_count": "integer",
+        "comparisons": "array; each has name, local_value, public_value, relationship, and interpretation"
+      }
+    },
+    "GeneratedManifest": {
+      "type": "object",
+      "description": "Source-to-output rebuild map: every generated artifact with the sources it derives from and the command that produces it.",
+      "required": [
+        "generated_at",
+        "artifacts"
+      ],
+      "fields": {
+        "generated_at": "ISO-8601 timestamp",
+        "artifacts": "array; each has name, outputs, sources, and command"
+      }
+    }
+  },
+  "schema_registry_version": "1.2",
+  "schema_examples": {
+    "Work": [
+      {
+        "num": 1,
+        "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+        "year": 2026,
+        "domain": "💻",
+        "domain_name": "Computational",
+        "type": "Paper",
+        "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+        "venue": "Zenodo",
+        "url": "https://doi.org/10.5281/zenodo.16903351",
+        "doi": "10.5281/zenodo.16903351",
+        "docs_path": "papers/2026_ReproducibleResearch/",
+        "has_paper_folder": true,
+        "has_full_text": true,
+        "has_images": true,
+        "has_skill_md": true,
+        "has_agents_md": true,
+        "has_readme": true,
+        "full_text_url": "/papers/2026_ReproducibleResearch/full_text.md"
+      }
+    ],
+    "SoftwareRepository": [
+      {
+        "name": "template",
+        "url": "https://github.com/docxology/template",
+        "owner": "docxology",
+        "catalog_section": "docxology",
+        "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
+        "language": "Python",
+        "stars": 17,
+        "updated_or_year": "2026-06",
+        "paper_path": "papers/2026_AutopoieticProjectGeneration/",
+        "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
+      }
+    ],
+    "ArtworkIndex": [
+      {
+        "id": "53164392892",
+        "title": "All-domain Anomaly Resolution Office (AARO)",
+        "tags": [
+          "pen",
+          "ink",
+          "drawing",
+          "aaro",
+          "alldomain",
+          "anomaly",
+          "resolution",
+          "office",
+          "us",
+          "emb",
+          "emblem",
+          "usa"
+        ],
+        "date": "2023-09-04 17:12:02",
+        "views": "698",
+        "thumb": "https://live.staticflickr.com/65535/53164392892_f86440bb11_m.jpg"
+      }
+    ],
+    "VideoIndex": {
+      "schema_version": "VideoIndex.v1",
+      "generated_at": "2026-07-18T01:03:47Z",
+      "source": "data/videos.json",
+      "count": 1127,
+      "counts": {
+        "total": 1127,
+        "personal": 405,
+        "institute": 722,
+        "with_transcripts": 4
+      },
+      "channels": {
+        "personal": {
+          "channel_id": "personal",
+          "channel_url": "https://www.youtube.com/@danielarifriedman",
+          "fetched_at": "2026-06-20T05:01:37.205539+00:00",
+          "video_count": 405,
+          "schema_version": "1.0"
+        },
+        "institute": {
+          "channel_id": "institute",
+          "channel_url": "https://www.youtube.com/@activeinference",
+          "fetched_at": "2026-06-20T05:01:37.256048+00:00",
+          "video_count": 722,
+          "schema_version": "1.0"
+        }
+      },
+      "fields": [
+        "id",
+        "title",
+        "channel",
+        "upload_date",
+        "year",
+        "duration",
+        "view_count"
+      ],
+      "detail_source": "data/videos.json",
+      "videos": [
+        {
+          "id": "kxKgdvFHOLM",
+          "title": "Red Harvester Ants entering and exiting a laboratory nest",
+          "channel": "personal",
+          "upload_date": "20150517",
+          "year": 2015,
+          "duration": 97.0,
+          "view_count": 8
+        }
+      ]
+    },
+    "Repository": [
+      {
+        "name": "act_inf_metaanalysis",
+        "full_name": "ActiveInferenceInstitute/act_inf_metaanalysis",
+        "owner": "ActiveInferenceInstitute",
+        "html_url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
+        "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+        "homepage": "",
+        "language": "TeX",
+        "stars": 5,
+        "forks": 1,
+        "watchers": 5,
+        "open_issues": 0,
+        "visibility": "public",
+        "private": false,
+        "fork": false,
+        "archived": false,
+        "disabled": false,
+        "is_template": false,
+        "topics": [],
+        "license": "NOASSERTION",
+        "default_branch": "main",
+        "created_at": "2026-04-07T20:10:34Z",
+        "updated_at": "2026-07-13T04:20:04Z",
+        "pushed_at": "2026-07-13T04:19:57Z",
+        "curated": true,
+        "recently_updated": true
+      }
+    ],
+    "ClaimWithEvidence": [
+      {
+        "id": "curated-work-count",
+        "claim": "The curated bibliography contains 197 works.",
+        "status": "curated-local",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "data/works.json"
+        ],
+        "checked_at": "2026-07-21T20:34:49+00:00",
+        "confidence": "high",
+        "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
+        "maintenance_owner": "ARCHIVIST",
+        "caveat": "Curated count includes papers, books, presentations, courses, playbooks, and series."
+      }
+    ],
+    "SearchResult": [
+      {
+        "id": "page:home",
+        "type": "page",
+        "title": "Daniel Ari Friedman",
+        "url": "/",
+        "summary": "Homepage and professional profile.",
+        "tags": [
+          "homepage",
+          "profile"
+        ],
+        "content": "Daniel Ari Friedman Homepage and professional profile. homepage profile"
+      }
+    ],
+    "CoverageException": [
+      {
+        "num": 2,
+        "citation_key": "Friedman2026ActiveInferenceJournal500002",
+        "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+        "type": "Series",
+        "reasons": [
+          "no_paper_folder",
+          "no_full_text",
+          "no_doi",
+          "non_paper_record"
+        ],
+        "review_status": "legitimate_gap",
+        "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+      }
+    ],
+    "RepositoryClassification": [
+      {
+        "full_name": "ActiveInferenceInstitute/Active_Inference_Un0",
+        "name": "Active_Inference_Un0",
+        "owner": "ActiveInferenceInstitute",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Un0",
+        "fork": false,
+        "archived": false,
+        "private": false,
+        "description": "",
+        "description_quality": "missing",
+        "language": "",
+        "topics": [],
+        "recently_updated": true,
+        "relevance": "unknown",
+        "catalog_role": "not_curated",
+        "exclusion_reason": "primary_repo_requires_manual_review",
+        "review_status": "defer"
+      }
+    ],
+    "GeneratedReport": {
+      "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
+      "command": "uv run python3 code/orchestrators/build_current_counts.py",
+      "counts": {
+        "bibliography_docs_links": 180,
+        "bibliography_works": 197,
+        "domains": {
+          "AII Ecosystem": 6,
+          "Active Inference": 42,
+          "Art & Synergetics": 16,
+          "Cognitive Security": 32,
+          "Computational": 48,
+          "Entomology": 23,
+          "Genetics & Biomedical": 15,
+          "Presentations & Media": 15
+        },
+        "extracted_images": 9004,
+        "full_text_papers": 173,
+        "generated_exports": {
+          "data_publications_ld_main_entity": 197,
+          "data_software_json": 131,
+          "data_software_ld_main_entity": 131,
+          "data_works_json": 197
+        },
+        "github_inventory": {
+          "ActiveInferenceInstitute": 40,
+          "archived": 0,
+          "curated": 128,
+          "docxology": 347,
+          "fork_ActiveInferenceInstitute": 2,
+          "fork_docxology": 243,
+          "forks": 245,
+          "primary_ActiveInferenceInstitute": 38,
+          "primary_docxology": 104,
+          "primary_total": 142,
+          "private": 0,
+          "public": 387,
+          "recently_updated": 124,
+          "total": 387,
+          "uncataloged": 259
+        },
+        "paired_publication_decisions": {
+          "decision": "accept",
+          "groups": 24,
+          "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
+          "raw_candidates": 86
+        },
+        "paired_publications": {
+          "already_reviewed": 0,
+          "create_new": 0,
+          "github_releases": 2,
+          "needs_review": 0,
+          "pairs": 1,
+          "strong_pairs": 1,
+          "update_existing": 1,
+          "zenodo_records": 133
+        },
+        "paper_folder_docs": 180,
+        "papers_with_images": 141,
+        "public_source_snapshot": {
+          "Crossref ORCID DOI records": 15,
+          "Europe PMC exact author records": 10,
+          "GitHub user ActiveInferenceInstitute": 40,
+          "GitHub user docxology": 347,
+          "ORCID work groups": 20,
+          "PubMed exact author records": 8,
+          "Zenodo ORCID-linked records": 131,
+          "Zenodo exact-name creator records": 47
+        },
+        "software": {
+          "active_inference_institute": 38,
+          "curated_total": 131,
+          "docxology_owned": 93
+        },
+        "types": {
+          "Books": 5,
+          "Courses": 3,
+          "Papers": 176,
+          "Playbooks": 2,
+          "Presentations": 9,
+          "Series": 2
+        }
+      },
+      "generated_at": "2026-07-21T20:34:49+00:00",
+      "sources": {
+        "bibliography": "pages/BIBLIOGRAPHY.md",
+        "github_inventory": "data/github-repositories.json",
+        "paired_publication_decisions": "data/paired-publication-decisions.json",
+        "paired_publications": "reports/paired_publications_2026-07-18.json",
+        "paper_folders": "papers/README.md",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-07-21.json",
+        "software_catalog": "pages/SOFTWARE.md",
+        "software_export": "data/software.json",
+        "works_export": "data/works.json"
+      },
+      "validation": [
+        "uv run python3 code/orchestrators/validate_repo.py",
+        "PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q"
+      ]
+    },
+    "PagesArtifactManifest": {
+      "schema_version": "1.0",
+      "budget": {
+        "hard_limit_bytes": 1073741824,
+        "safety_ceiling_bytes": 943718400,
+        "warning_bytes": 891289600,
+        "source_bytes": 758330299,
+        "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
+        "manifest_bytes_excluded_from_source_bytes": true,
+        "artifact_file_count": 4328,
+        "artifact_bytes": 759092851
+      },
+      "github_fallback": {
+        "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
+        "raw_template": "https://raw.githubusercontent.com/docxology/docxology/{commit}/{path}"
+      }
+    },
+    "ReleaseIntegrity": {
+      "schema_version": "1.0",
+      "note": "See /data/release-integrity.json for the current envelope."
+    }
+  },
+  "dataset_hashes": {
+    "works": "bbc5ddfcb2df6894d168d1223d8cf81ed92948b7ea1266a0b7230d083043d862",
+    "software": "c97cb0f2778726fa391b1ec54fd2962ed4867d6161870caebb356a3f490148d9",
+    "repositories": "63309b3a3d28402d899afe5f5dab8edfaf2f8e0a3e9f8ebf0b1758790c0406b6",
+    "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
+    "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
+    "videos": "ad289572c03c8e32032d75a98952dd94baca1ea45ef594005f247fd9082025b9",
+    "videos_index": "143721430d94d0b419dae4deae274ee6e9909761949317f65d4e152b0d92c317",
+    "search": "99ab45f0342c97fab64c2344b555b8a446169e8bfdf95a957ec3e09bce7cef73",
+    "claims": "cc1e6c3f2254119b7ab4ecb2c6c552fcd31af8ed3aa3a899785bd210090a48f2",
+    "coverage_exceptions": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
+    "repository_classification": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
+    "people": "46c01953317cbdb12958ffdc4589e6f6d933b44797cc24d129640c35c59045e8",
+    "organizations": "922592d7581a5c9d55d9d1ad05a7cb7141974c1e680dbd8f7fd90324f68a6dfe",
+    "resume": "73bd3ecbd4956fb5a6edbf0c199e16cd8b9a15d5cfeebaef3f2d249472330c81",
+    "work_enrichment": "a58991830e80b5b1704c5c4ef99f85c7d5cac90f2d8156ab4790a0bd2b1e6776",
+    "catalog": "c9ba0f5e188b426488f1c4409c82753d985c0b0db95567f50ca47bd6386033a9",
+    "reconciliation": "db3db14f5dd0b7680fcb5d18e325d15eae1e07de4bf8ae28ec2ba492ee96b821",
+    "generated_manifest": "be10e2f74bcabbf31ad2445ef1d19ab711fbeba55bdb921748ebf6304be33835",
+    "current_counts": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf"
+  },
+  "source_provenance": {
+    "generated_by": "code/orchestrators/build_agent_index.py",
+    "source_of_truth": [
+      "pages/BIBLIOGRAPHY.md",
+      "pages/SOFTWARE.md",
+      "data/current-counts.json"
+    ],
+    "hash_policy": "SHA-256 values cover hosted JSON datasets and integrity manifests at generation time."
+  },
+  "hosted_availability": {
+    "pages_origin": "https://danielarifriedman.com/",
+    "github_repository": "https://github.com/docxology/docxology",
+    "artifact_manifest": "/data/pages-artifact-manifest.json",
+    "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
+  },
+  "verification_status": {
+    "live_report": "/reports/live_site_verification_2026-07-21.json",
+    "generated_at": "2026-07-21T21:15:24Z",
+    "overall_ok": true,
+    "passing": 17,
+    "checked_urls": 17,
+    "pages_status": "built"
+  },
+  "counts": {
+    "bibliography_docs_links": 180,
+    "bibliography_works": 197,
+    "domains": {
+      "AII Ecosystem": 6,
+      "Active Inference": 42,
+      "Art & Synergetics": 16,
+      "Cognitive Security": 32,
+      "Computational": 48,
+      "Entomology": 23,
+      "Genetics & Biomedical": 15,
+      "Presentations & Media": 15
+    },
+    "extracted_images": 9004,
+    "full_text_papers": 173,
+    "generated_exports": {
+      "data_publications_ld_main_entity": 197,
+      "data_software_json": 131,
+      "data_software_ld_main_entity": 131,
+      "data_works_json": 197
+    },
+    "github_inventory": {
+      "ActiveInferenceInstitute": 40,
+      "archived": 0,
+      "curated": 128,
+      "docxology": 347,
+      "fork_ActiveInferenceInstitute": 2,
+      "fork_docxology": 243,
+      "forks": 245,
+      "primary_ActiveInferenceInstitute": 38,
+      "primary_docxology": 104,
+      "primary_total": 142,
+      "private": 0,
+      "public": 387,
+      "recently_updated": 124,
+      "total": 387,
+      "uncataloged": 259
+    },
+    "paired_publication_decisions": {
+      "decision": "accept",
+      "groups": 24,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
+      "raw_candidates": 86
+    },
+    "paired_publications": {
+      "already_reviewed": 0,
+      "create_new": 0,
+      "github_releases": 2,
+      "needs_review": 0,
+      "pairs": 1,
+      "strong_pairs": 1,
+      "update_existing": 1,
+      "zenodo_records": 133
+    },
+    "paper_folder_docs": 180,
+    "papers_with_images": 141,
+    "public_source_snapshot": {
+      "Crossref ORCID DOI records": 15,
+      "Europe PMC exact author records": 10,
+      "GitHub user ActiveInferenceInstitute": 40,
+      "GitHub user docxology": 347,
+      "ORCID work groups": 20,
+      "PubMed exact author records": 8,
+      "Zenodo ORCID-linked records": 131,
+      "Zenodo exact-name creator records": 47
+    },
+    "software": {
+      "active_inference_institute": 38,
+      "curated_total": 131,
+      "docxology_owned": 93
+    },
+    "types": {
+      "Books": 5,
+      "Courses": 3,
+      "Papers": 176,
+      "Playbooks": 2,
+      "Presentations": 9,
+      "Series": 2
+    }
+  },
+  "freshness": {
+    "policy": "Use generated_at and checked_at fields; do not infer freshness from page copy.",
+    "volatile_sources": [
+      "data/current-counts.json",
+      "data/scholar-snapshot.json",
+      "data/verification-log.json"
+    ],
+    "verification": "/cite-verify.html"
+  },
+  "query_recipes": {
+    "site_search": "/search.html?q={urlencoded_terms}",
+    "publication_filter": "/publications.html?domain={emoji}&type={type}&year={year}",
+    "work_by_key": "/works/{citation_key}.html",
+    "raw_bibliography": "/pages/BIBLIOGRAPHY.md",
+    "repository_by_full_name": "/repositories.html?repo={owner}/{name}",
+    "claim_by_id": "/data/claims.json#id={claim_id}",
+    "reports": "/data/agent-index.json#reports",
+    "coverage_exceptions": "/data/coverage-exceptions.json",
+    "repository_classification": "/data/repository-classification.json",
+    "release_integrity": "/data/release-integrity.json"
+  },
+  "notes": [
+    "Canonical work URLs use citation_key values and preserve retired numeric gaps.",
+    "Paper-folder pages are documentation mirrors; canonical indexable work pages live under /works/.",
+    "External facts and metrics are evidence-dated; retain caveats when primary verification is incomplete.",
+    "Pages omits duplicated paper-extracted image binaries only; use the manifest fallback templates for GitHub retrieval.",
+    "Coverage exceptions and repository classifications are review queues, not automatic certification or rejection."
+  ]
+}

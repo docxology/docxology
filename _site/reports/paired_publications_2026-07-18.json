@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-07-18T01:09:40Z",
+  "source": "GitHub Releases API + Zenodo Records API",
+  "owners": [
+    "docxology"
+  ],
+  "counts": {
+    "github_releases": 2,
+    "zenodo_records": 133,
+    "pairs": 1,
+    "strong_pairs": 1,
+    "already_reviewed": 0,
+    "needs_review": 0,
+    "create_new": 0,
+    "update_existing": 1
+  },
+  "warnings": [],
+  "actions": [
+    {
+      "action_type": "update_existing",
+      "doi": "10.5281/zenodo.21419693",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "confidence": "strong",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
+      "github_repo": "docxology/DuckRabbit",
+      "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+      "zenodo_record_url": "https://zenodo.org/records/21419693",
+      "folder": "2026_DuckRabbit"
+    }
+  ],
+  "pairs": [
+    {
+      "confidence": "strong",
+      "evidence": [
+        "github_release_mentions_doi",
+        "zenodo_related_identifier_mentions_release",
+        "github_repo_self_linked"
+      ],
+      "doi": "10.5281/zenodo.21419693",
+      "github_repo": "docxology/DuckRabbit",
+      "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+      "zenodo_record_url": "https://zenodo.org/records/21419693",
+      "release": {
+        "owner": "docxology",
+        "repo": "DuckRabbit",
+        "tag": "v0.5.0",
+        "name": "DuckRabbit v0.5.0",
+        "body": "DuckRabbit v0.5.0 — typed, deterministic multimodal illusion generator.\n\n17 implemented generators (visual, auditory, temporal, audio-visual), 15\npublication figures, 10 generated tables, a scholarly evidence matrix (36\nsources), and a methods-paper manuscript with independent release auditing.\n\n**Zenodo archive:**\n- Concept DOI (always resolves to the latest version): https://doi.org/10.5281/zenodo.21419693\n- Version DOI for this release: https://doi.org/10.5281/zenodo.21419694\n- Zenodo record: https://zenodo.org/records/21419694\n\n**Author:** Daniel Ari Friedman, Active Inference Institute (ORCID [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096))\n**License:** MIT\n\nThe attached PDF is the exact manuscript uploaded to Zenodo, with the DOI on its title page.\n",
+        "html_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+        "published_at": "2026-07-17T20:58:11Z",
+        "assets": [
+          {
+            "name": "DuckRabbit_combined.pdf",
+            "download_url": "https://github.com/docxology/DuckRabbit/releases/download/v0.5.0/DuckRabbit_combined.pdf",
+            "size": 3938173
+          }
+        ],
+        "full_name": "docxology/DuckRabbit"
+      },
+      "record": {
+        "record_id": "21419694",
+        "doi": "10.5281/zenodo.21419693",
+        "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+        "publication_date": "2026-07-15",
+        "version": "0.5.0",
+        "resource_type": {
+          "title": "Journal article",
+          "type": "publication",
+          "subtype": "article"
+        },
+        "creators": [
+          {
+            "name": "Daniel Ari Friedman",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman\n(Active Inference Institute) for constructing reproducible visual, auditory,\ntemporal, and audiovisual stimulus families. The intended public release will\nbe available at the following repository:\n\nhttps://github.com/docxology/DuckRabbit\n\nDuckRabbit is released under the MIT License.\n\nIts basic unit is an immutable request containing an illusion identifier,\nvalidated parameters, a seed, and an encoding specification. The request yields\na canonical artifact, objective media measurements, and a versioned provenance\nmanifest before any delivery codec is selected. This separation makes the\nstimulus a testable computational object while reserving claims about\nperception for controlled observer protocols.\n\nThe release situates its engineering choices within a deliberately broad\nhistorical foundation spanning Greek, Arabic/Islamicate, Chinese, and\nearly-modern work on optics, visual inference, and cross-sensory knowledge,\nalongside later psychophysics and illusion research. These traditions motivate\nquestions about construction, observation, and evidence; they are contextual\nprecedents, not evidence that a generated file reproduces an ancient,\nearly-modern, or clinical observation.\n\nVersion 0.5.0 contains 17 implemented\ngenerators and 18 catalog entries, supported by\n36 source records and 18 evidence records\nin a checked-in audit snapshot. The package generates\n15 publication figures and 10\nmachine-derived tables from the live registry. It also provides a typed\nobserver-study harness and a transparent synthetic diagnostic: a\nhand-specified feature observer with serialized weights, temperature, analytic\ncalibration, and human_data=false. No participant data are bundled; synthetic model output is explicitly nonhuman.\n\nDuckRabbit verifies physical stimulus properties, media round trips, hashes,\ntiming, and declared provenance. It does not infer a universal percept, effect\nsize, or cross-device perceptual equivalence from a generated artifact. Its\ncontribution is a reproducibility and epistemic boundary: source-backed family\ndescriptions, deterministic media facts, and future observer hypotheses remain\ndifferent typed records rather than being collapsed into one claim. DuckRabbit\nis software for reproducible stimulus construction and audit, not a claim that\na generated file alone produces a universal perceptual effect.\n\n---\nAssociated artifacts\nGitHub release: v0.5.0 (https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0)\nDOI: https://doi.org/10.5281/zenodo.21419693\nZenodo: https://zenodo.org/records/21419693\nPDF SHA-256: 3afefaeeccb5616448cc6da83b5807dd996ccc96bfff113d635b8da140baea06",
+        "keywords": [
+          "perceptual illusions",
+          "cognitive taxonomy",
+          "audio-visual stimuli",
+          "deterministic generation",
+          "typed parameters",
+          "research software",
+          "reproducible research",
+          "psychophysics"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "548e6f38-28a5-4b96-8f64-1b1e8a562e68",
+            "key": "Friedman_2026_Duckrabbit_3afefaee.pdf",
+            "size": 3937013,
+            "checksum": "md5:9c7d1ed07775845962acfb4e6a9f4c42",
+            "links": {
+              "self": "https://zenodo.org/api/records/21419694/files/Friedman_2026_Duckrabbit_3afefaee.pdf/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/21419694",
+        "doi_url": "https://doi.org/10.5281/zenodo.21419693",
+        "record_url": "https://zenodo.org/records/21419693"
+      }
+    }
+  ],
+  "applied": []
+}

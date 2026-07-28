@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T16:14:35Z",
+  "generated_at": "2026-07-25T02:37:36Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1657,
+  "count": 1658,
   "items": [
     {
       "id": "page:home",
@@ -197,6 +197,19 @@
       "content": "Evidence Ledger Claim-level evidence and caveats. claims"
     },
     {
+      "id": "page:reproducibility",
+      "type": "page",
+      "title": "Reproducibility Ledger",
+      "url": "/reproducibility.html",
+      "summary": "Per-work artifact availability across the curated bibliography.",
+      "tags": [
+        "reproducibility",
+        "open science",
+        "verification"
+      ],
+      "content": "Reproducibility Ledger Per-work artifact availability across the curated bibliography. reproducibility open science verification"
+    },
+    {
       "id": "page:resume",
       "type": "document",
       "title": "Resume and CV",
@@ -308,7 +321,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-07-24.json",
+      "url": "/reports/accessibility_static_2026-07-25.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -357,7 +370,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-24.json",
+      "url": "/reports/asset_size_2026-07-25.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",

@@ -1,0 +1,936 @@
+#!/usr/bin/env python3
+"""Detect and optionally apply paired GitHub + Zenodo publications.
+
+Default mode writes a dry-run report only. Pass ``--apply`` to update curated
+source files and run the generated-surface refresh chain.
+"""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import os
+import re
+import subprocess
+import sys
+import urllib.parse
+import urllib.request
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+SRC_DIR = REPO_ROOT / "code" / "src"
+sys.path.insert(0, str(SRC_DIR))
+
+from publication_pairing import (  # noqa: E402
+    GitHubRelease,
+    PublicationPair,
+    SyncAction,
+    ZenodoRecord,
+    find_publication_pairs,
+    generated_timestamp,
+    infer_domain,
+    infer_type,
+    metadata_payload,
+    render_agents,
+    render_citation,
+    render_readme,
+    render_skill,
+    slug_topic,
+)
+
+ORCID = "0000-0001-6232-9096"
+DEFAULT_OWNERS = ("docxology",)
+AII_OWNER = "ActiveInferenceInstitute"
+USER_AGENT = "docxology-paired-publication-sync/1.0 (+https://danielarifriedman.com/)"
+BIBLIOGRAPHY = "pages/BIBLIOGRAPHY.md"
+SOFTWARE = "pages/SOFTWARE.md"
+PAPER_METADATA = "papers/paper_metadata.json"
+PAIRED_PUBLICATION_DECISIONS = "data/paired-publication-decisions.json"
+TYPE_COUNTS_ORDER = ("Paper", "Presentation", "Book", "Course", "Playbook", "Series")
+TYPE_LABELS = {
+    "Paper": "Papers",
+    "Presentation": "Presentations",
+    "Book": "Books",
+    "Course": "Courses",
+    "Playbook": "Playbooks",
+    "Series": "Series",
+}
+
+
+@dataclass(frozen=True)
+class AppliedPublication:
+    doi: str
+    folder: str
+    created: bool
+    updated_files: tuple[str, ...]
+
+
+def report_path_for_today(repo_root: Path = REPO_ROOT) -> Path:
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    return repo_root / "reports" / f"paired_publications_{today}.json"
+
+
+def fetch_json(url: str, *, timeout: int = 30, github: bool = False) -> Any:
+    headers = {"Accept": "application/vnd.github+json" if github else "application/json", "User-Agent": USER_AGENT}
+    if github and os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def _paged_github(url_template: str) -> list[Any]:
+    rows: list[Any] = []
+    page = 1
+    while True:
+        batch = fetch_json(url_template.format(page=page), github=True)
+        if not isinstance(batch, list):
+            raise RuntimeError(f"Unexpected GitHub response from {url_template}: {batch!r}")
+        rows.extend(batch)
+        if len(batch) < 100:
+            return rows
+        page += 1
+
+
+def fetch_github_repositories(owner: str) -> list[dict[str, Any]]:
+    url = f"https://api.github.com/users/{owner}/repos?per_page=100&page={{page}}&sort=updated&direction=desc"
+    return [repo for repo in _paged_github(url) if isinstance(repo, dict)]
+
+
+def fetch_github_releases_for_repo(owner: str, repo: str) -> list[GitHubRelease]:
+    url = f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=100&page={{page}}"
+    return [GitHubRelease.from_api(owner, repo, item) for item in _paged_github(url) if isinstance(item, dict)]
+
+
+def _date_at_or_after(value: str, since: str | None) -> bool:
+    if not since:
+        return True
+    return (value or "")[:10] >= since
+
+
+def fetch_github_releases(owners: list[str], *, since: str | None = None) -> tuple[list[GitHubRelease], list[str]]:
+    releases: list[GitHubRelease] = []
+    warnings: list[str] = []
+    for owner in owners:
+        try:
+            repos = fetch_github_repositories(owner)
+        except Exception as exc:  # pragma: no cover - network failures are report data
+            warnings.append(f"github:{owner}: repositories: {type(exc).__name__}: {exc}")
+            continue
+        for repo in repos:
+            name = str(repo.get("name") or "")
+            if not name:
+                continue
+            repo_freshness = str(repo.get("pushed_at") or repo.get("updated_at") or "")
+            if since and not _date_at_or_after(repo_freshness, since):
+                continue
+            try:
+                repo_releases = fetch_github_releases_for_repo(owner, name)
+            except Exception as exc:  # pragma: no cover - network failures are report data
+                warnings.append(f"github:{owner}/{name}: releases: {type(exc).__name__}: {exc}")
+                continue
+            releases.extend(release for release in repo_releases if _date_at_or_after(release.published_at, since))
+    return releases, warnings
+
+
+def _zenodo_total(value: Any) -> int | None:
+    if isinstance(value, dict):
+        total = value.get("value")
+    else:
+        total = value
+    return int(total) if isinstance(total, int) else None
+
+
+def fetch_zenodo_query(query: str, *, size: int = 25) -> list[ZenodoRecord]:
+    records: list[ZenodoRecord] = []
+    total: int | None = None
+    for page in range(1, 20):
+        params = {"q": query, "size": size, "page": page, "sort": "mostrecent"}
+        url = "https://zenodo.org/api/records?" + urllib.parse.urlencode(params)
+        payload = fetch_json(url)
+        hits = payload.get("hits", {}) if isinstance(payload, dict) else {}
+        total = total if total is not None else _zenodo_total(hits.get("total"))
+        batch = hits.get("hits", [])
+        if not isinstance(batch, list) or not batch:
+            break
+        records.extend(ZenodoRecord.from_api(item) for item in batch if isinstance(item, dict))
+        if total is not None and len(records) >= total:
+            break
+    return records
+
+
+def fetch_zenodo_records() -> tuple[list[ZenodoRecord], list[str]]:
+    queries = [
+        f"metadata.creators.person_or_org.identifiers.identifier:{ORCID}",
+        'creators.name:"Friedman, Daniel Ari"',
+    ]
+    records: list[ZenodoRecord] = []
+    warnings: list[str] = []
+    seen: set[str] = set()
+    for query in queries:
+        try:
+            batch = fetch_zenodo_query(query)
+        except Exception as exc:  # pragma: no cover - network failures are report data
+            warnings.append(f"zenodo:{query}: {type(exc).__name__}: {exc}")
+            continue
+        for record in batch:
+            key = record.record_id or record.doi
+            if key in seen:
+                continue
+            seen.add(key)
+            records.append(record)
+    return records, warnings
+
+
+def clean_markdown(value: str) -> str:
+    value = re.sub(r"<[^>]+>", "", value)
+    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
+    return value.replace("*", "").strip()
+
+
+def parse_bibliography_rows(repo_root: Path = REPO_ROOT) -> list[dict[str, str]]:
+    path = repo_root / BIBLIOGRAPHY
+    if not path.exists():
+        return []
+    rows: list[dict[str, str]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|"):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) < 8:
+            continue
+        if not cells[0].isdigit():
+            continue
+        doi_match = re.search(r"(10\.\d{4,}/[^\s\])]+)", cells[6])
+        folder_match = re.search(r"\.\./papers/(\d{4}_[^)/]+)/?", cells[7])
+        rows.append(
+            {
+                "num": cells[0],
+                "year": cells[1],
+                "domain": cells[2],
+                "type": cells[3],
+                "title": clean_markdown(cells[4]),
+                "venue": clean_markdown(cells[5]),
+                "link": cells[6],
+                "docs": cells[7],
+                "doi": doi_match.group(1).rstrip(".,)") if doi_match else "",
+                "folder": folder_match.group(1) if folder_match else "",
+            }
+        )
+    return rows
+
+
+def existing_doi_map(repo_root: Path = REPO_ROOT) -> dict[str, str]:
+    return {row["doi"]: row["folder"] for row in parse_bibliography_rows(repo_root) if row["doi"] and row["folder"]}
+
+
+def _normalized_title(title: str) -> str:
+    return re.sub(r"\s+", " ", title.strip().lower())
+
+
+def _pair_key(title: str, github_release_url: str) -> tuple[str, str]:
+    return _normalized_title(title), github_release_url.strip()
+
+
+def _repo_title_key(title: str, github_repo: str) -> tuple[str, str]:
+    return _normalized_title(title), github_repo.strip().lower()
+
+
+def existing_release_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], str]:
+    out: dict[tuple[str, str], str] = {}
+    papers_dir = repo_root / "papers"
+    if not papers_dir.exists():
+        return out
+    for folder_path in sorted(path for path in papers_dir.iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name)):
+        metadata_path = folder_path / "metadata.json"
+        if not metadata_path.exists():
+            continue
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        title = str(metadata.get("title") or "")
+        release_url = str(metadata.get("github_release_url") or "")
+        if title and release_url:
+            out.setdefault(_pair_key(title, release_url), folder_path.name)
+    return out
+
+
+def existing_repo_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], str]:
+    out: dict[tuple[str, str], str] = {}
+    papers_dir = repo_root / "papers"
+    if not papers_dir.exists():
+        return out
+    for folder_path in sorted(path for path in papers_dir.iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name)):
+        metadata_path = folder_path / "metadata.json"
+        if not metadata_path.exists():
+            continue
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        title = str(metadata.get("title") or "")
+        github_repo = str(metadata.get("github_repo") or "")
+        if title and github_repo:
+            out.setdefault(_repo_title_key(title, github_repo), folder_path.name)
+    return out
+
+
+def _reviewed_pair_key(doi: str, github_release_url: str) -> tuple[str, str]:
+    return doi.strip().lower(), github_release_url.strip()
+
+
+def reviewed_pair_decisions(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], dict[str, str]]:
+    path = repo_root / PAIRED_PUBLICATION_DECISIONS
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    decisions: dict[tuple[str, str], dict[str, str]] = {}
+    for group in payload.get("groups", []):
+        if not isinstance(group, dict):
+            continue
+        group_decision = str(group.get("decision") or "").strip()
+        representation = str(group.get("representation") or "").strip()
+        folder = str(group.get("folder") or "").strip()
+        for candidate in group.get("raw_candidates", []):
+            if not isinstance(candidate, dict):
+                continue
+            doi = str(candidate.get("doi") or group.get("doi") or "").strip()
+            release_url = str(candidate.get("github_release_url") or "").strip()
+            if not doi or not release_url:
+                continue
+            decisions[_reviewed_pair_key(doi, release_url)] = {
+                "decision": group_decision,
+                "representation": representation,
+                "folder": folder,
+                "group_id": str(group.get("id") or "").strip(),
+            }
+    return decisions
+
+
+def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
+    existing = existing_doi_map(repo_root).get(pair.doi)
+    if existing:
+        return existing
+    existing_by_release = existing_release_title_map(repo_root).get(_pair_key(pair.record.title, pair.github_release_url))
+    if existing_by_release:
+        return existing_by_release
+    existing_by_repo = existing_repo_title_map(repo_root).get(_repo_title_key(pair.record.title, pair.github_repo))
+    if existing_by_repo:
+        return existing_by_repo
+    year_match = re.search(r"\d{4}", pair.record.publication_date or pair.release.published_at)
+    year = year_match.group(0) if year_match else str(dt.datetime.now().year)
+    base = f"{year}_{slug_topic(pair.record.title)}"
+    candidate = base
+    i = 2
+    while (repo_root / "papers" / candidate).exists():
+        if (repo_root / "papers" / candidate / "metadata.json").exists():
+            try:
+                meta = json.loads((repo_root / "papers" / candidate / "metadata.json").read_text(encoding="utf-8"))
+                if meta.get("doi") == pair.doi:
+                    return candidate
+            except json.JSONDecodeError:
+                pass
+        candidate = f"{base}{i}"
+        i += 1
+    return candidate
+
+
+def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_ROOT) -> list[SyncAction]:
+    doi_to_folder = existing_doi_map(repo_root)
+    release_title_to_folder = existing_release_title_map(repo_root)
+    repo_title_to_folder = existing_repo_title_map(repo_root)
+    reviewed_decisions = reviewed_pair_decisions(repo_root)
+    actions: list[SyncAction] = []
+    for pair in pairs:
+        release_title_folder = release_title_to_folder.get(_pair_key(pair.record.title, pair.github_release_url))
+        repo_title_folder = repo_title_to_folder.get(_repo_title_key(pair.record.title, pair.github_repo))
+        folder = doi_to_folder.get(pair.doi) or release_title_folder or repo_title_folder or folder_for_pair(pair, repo_root)
+        reviewed = reviewed_decisions.get(_reviewed_pair_key(pair.doi, pair.github_release_url))
+        if reviewed:
+            action_type = "already_reviewed"
+            representation = reviewed.get("representation") or "manual decision"
+            group_id = reviewed.get("group_id") or "decision log"
+            reason = f"{group_id} records this pair as {representation}; do not create a duplicate bibliography row"
+            folder = reviewed.get("folder") or folder
+        elif pair.confidence != "strong":
+            action_type = "needs_review"
+            reason = "pair lacks DOI/release cross-link evidence required for automatic apply"
+        elif pair.doi in doi_to_folder:
+            action_type = "update_existing"
+            reason = "DOI already exists in bibliography; update folder metadata and software links"
+        elif release_title_folder:
+            action_type = "update_existing"
+            reason = "same title and GitHub release already exist; update Zenodo version metadata"
+        elif repo_title_folder:
+            action_type = "update_existing"
+            reason = "same title and GitHub repository already exist; update Zenodo version metadata"
+        elif not infer_type(pair.record) or not infer_domain(pair):
+            action_type = "needs_review"
+            reason = "new pair is strong, but type or domain cannot be inferred safely"
+        else:
+            action_type = "create_new"
+            reason = "strong new DOI/release pair"
+        actions.append(
+            SyncAction(
+                action_type=action_type,
+                doi=pair.doi,
+                title=pair.record.title,
+                confidence=pair.confidence,
+                reason=reason,
+                github_repo=pair.github_repo,
+                github_release_url=pair.github_release_url,
+                zenodo_record_url=pair.zenodo_record_url,
+                folder=folder,
+            )
+        )
+    return actions
+
+
+def ordered_apply_pairs(
+    actions: list[SyncAction], pairs: list[PublicationPair]
+) -> list[tuple[SyncAction, PublicationPair]]:
+    """Return writable pairs in a deterministic, version-safe order.
+
+    GitHub returns releases newest-first, while a single Zenodo concept DOI can
+    be paired with several releases in one scan. Applying that API order could
+    leave ``metadata.json`` pointing at an older release after a newer one had
+    already been applied. Grouping by DOI and sorting by release timestamp/tag
+    makes the newest observed release the final metadata writer while retaining
+    all release links in the folder.
+    """
+    candidates = [
+        (action, pair)
+        for action, pair in zip(actions, pairs)
+        if action.action_type in {"create_new", "update_existing"}
+    ]
+    return sorted(
+        candidates,
+        key=lambda item: (
+            item[1].doi.lower(),
+            item[1].release.published_at or "",
+            item[1].release.tag or "",
+            item[1].github_release_url,
+        ),
+    )
+
+
+def _safe_read(path: Path) -> str:
+    return path.read_text(encoding="utf-8") if path.exists() else ""
+
+
+def _write_if_changed(path: Path, content: str, updated: list[str], repo_root: Path) -> None:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    updated.append(str(path.relative_to(repo_root)))
+
+
+def update_existing_readme(path: Path, pair: PublicationPair, updated: list[str], repo_root: Path) -> None:
+    text = _safe_read(path)
+    if not text:
+        return
+    additions = []
+    if pair.github_release_url not in text:
+        additions.append(f"- GitHub release: {pair.github_release_url}")
+    if pair.zenodo_record_url not in text:
+        additions.append(f"- Zenodo record: {pair.zenodo_record_url}")
+    if not additions:
+        return
+    if "## Related" in text:
+        text = text.replace("## Related", "## Related\n\n" + "\n".join(additions), 1)
+    else:
+        text = text.rstrip() + "\n\n## Related\n\n" + "\n".join(additions) + "\n"
+    _write_if_changed(path, text, updated, repo_root)
+
+
+def update_existing_citation(path: Path, pair: PublicationPair, updated: list[str], repo_root: Path) -> None:
+    text = _safe_read(path)
+    if not text:
+        return
+    if pair.github_release_url in text:
+        return
+    block = (
+        f'  - type: url\n'
+        f'    value: "{pair.github_release_url}"\n'
+        f'    description: "GitHub release"\n'
+    )
+    if "identifiers:" in text:
+        text = text.rstrip() + "\n" + block
+    else:
+        text = text.rstrip() + "\nidentifiers:\n" + block
+    _write_if_changed(path, text, updated, repo_root)
+
+
+def update_metadata_json(path: Path, pair: PublicationPair, updated: list[str], repo_root: Path) -> None:
+    existing: dict[str, Any] = {}
+    if path.exists():
+        try:
+            existing = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing = {}
+    merged = {**existing, **metadata_payload(pair)}
+    _write_if_changed(path, json.dumps(merged, indent=2, ensure_ascii=False) + "\n", updated, repo_root)
+
+
+def download_zenodo_pdf(pair: PublicationPair, folder_path: Path, updated: list[str], repo_root: Path) -> None:
+    for item in pair.record.files:
+        name = str(item.get("key") or item.get("filename") or "")
+        if not name.lower().endswith(".pdf"):
+            continue
+        links = item.get("links") if isinstance(item.get("links"), dict) else {}
+        url = links.get("self") or links.get("download")
+        if not url:
+            continue
+        target = folder_path / name
+        if target.exists():
+            return
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=120) as response:
+            target.write_bytes(response.read())
+        updated.append(str(target.relative_to(repo_root)))
+        return
+
+
+def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[str], repo_root: Path) -> None:
+    path = repo_root / BIBLIOGRAPHY
+    text = _safe_read(path)
+    if pair.doi in text:
+        return
+    folder_link = f"../papers/{folder}/"
+    out_lines: list[str] = []
+    replaced = False
+    for line in text.splitlines():
+        if line.startswith("|") and folder_link in line:
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if len(cells) >= 8 and cells[0].isdigit():
+                cells[4] = pair.record.title
+                cells[5] = "*Zenodo*"
+                cells[6] = f"[{pair.doi}](https://doi.org/{pair.doi})"
+                cells[7] = f"[📁](../papers/{folder}/)"
+                line = "| " + " | ".join(cells[:8]) + " |"
+                replaced = True
+        out_lines.append(line)
+    if replaced:
+        out = "\n".join(out_lines).rstrip() + "\n"
+        out = refresh_bibliography_counts(out)
+        _write_if_changed(path, out, updated, repo_root)
+        return
+    rows = parse_bibliography_rows(repo_root)
+    next_num = max([int(row["num"]) for row in rows], default=0) + 1
+    year = (pair.record.publication_date or "")[:4] or (pair.release.published_at or "")[:4] or "n.d."
+    typ = infer_type(pair.record) or "Paper"
+    domain = infer_domain(pair) or "💻"
+    row = (
+        f"| {next_num} | {year} | {domain} | {typ} | {pair.record.title} | *Zenodo* | "
+        f"[{pair.doi}](https://doi.org/{pair.doi}) | [📁](../papers/{folder}/) |"
+    )
+    lines = text.splitlines()
+    insert_at = len(lines)
+    in_table = False
+    for idx, line in enumerate(lines):
+        if line.startswith("| # | Year | Domain | Type |"):
+            in_table = True
+            continue
+        if in_table and line.startswith("|"):
+            continue
+        if in_table:
+            insert_at = idx
+            break
+    lines.insert(insert_at, row)
+    out = "\n".join(lines).rstrip() + "\n"
+    out = refresh_bibliography_counts(out)
+    _write_if_changed(path, out, updated, repo_root)
+
+
+def refresh_bibliography_counts(text: str) -> str:
+    rows = []
+    for line in text.splitlines():
+        if not line.startswith("|"):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) >= 4 and cells[0].isdigit():
+            rows.append(cells)
+    if not rows:
+        return text
+    count = len(rows)
+    text = re.sub(r"\*\*\d+\s+works\*\*", f"**{count} works**", text, count=1)
+    text = re.sub(r">\s+\*\*\d+\*\*\s+works", f"> **{count}** works", text, count=1)
+    type_counts = {typ: 0 for typ in TYPE_COUNTS_ORDER}
+    for row in rows:
+        type_counts[row[3]] = type_counts.get(row[3], 0) + 1
+    summary = " · ".join(
+        f"**{type_counts.get(typ, 0)}** {TYPE_LABELS.get(typ, typ)}"
+        for typ in TYPE_COUNTS_ORDER
+        if type_counts.get(typ, 0)
+    )
+    text = re.sub(
+        r"\*\*\d+\*\* Papers · \*\*\d+\*\* Presentations · \*\*\d+\*\* Books · \*\*\d+\*\* Courses · \*\*\d+\*\* Playbooks · \*\*\d+\*\* Series\w*",
+        summary,
+        text,
+        count=1,
+    )
+    # Keep the "**N** indexed paper folders" prose in sync with the table's folder
+    # links (count_consistency._folder_links_in_bibliography validates this). Apply
+    # used to bump the works total but not this, forcing a manual edit + failed
+    # validate_repo on every new-folder publication.
+    folder_links = sum(1 for row in rows if len(row) > 7 and "../papers/" in row[7])
+    text = re.sub(
+        r"\*\*\d+\*\*\s+indexed paper folders",
+        f"**{folder_links}** indexed paper folders",
+        text,
+        count=1,
+    )
+    return text
+
+
+def update_paper_metadata_index(pair: PublicationPair, folder: str, updated: list[str], repo_root: Path) -> None:
+    path = repo_root / PAPER_METADATA
+    try:
+        data = json.loads(_safe_read(path) or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    year, topic = folder.split("_", 1)
+    data[folder] = {
+        "year": year,
+        "topic": topic,
+        "name": pair.record.title,
+        "description": pair.record.description,
+        "authors": "Daniel Ari Friedman",
+        "abstract": pair.record.description,
+        "keywords": pair.record.keywords,
+        "doi": pair.doi,
+        "github_release_url": pair.github_release_url,
+    }
+    _write_if_changed(path, json.dumps(data, indent=2, ensure_ascii=False) + "\n", updated, repo_root)
+
+
+def update_papers_readme(folder: str, pair: PublicationPair, updated: list[str], repo_root: Path) -> None:
+    path = repo_root / "papers" / "README.md"
+    text = _safe_read(path)
+    if not text:
+        return
+    if f"]({folder}/)" not in text:
+        rows = [line for line in text.splitlines() if re.match(r"\| \d+ \|", line)]
+        next_num = len(rows) + 1
+        year, topic = folder.split("_", 1)
+        row = f"| {next_num} | [{folder}]({folder}/) | ✅ | {year} | {topic} |"
+        lines = text.splitlines()
+        insert_at = len(lines)
+        for idx, line in enumerate(lines):
+            if line.startswith("## Scripts"):
+                insert_at = idx
+                break
+        lines.insert(insert_at, row)
+        text = "\n".join(lines).rstrip() + "\n"
+    count = len([line for line in text.splitlines() if re.match(r"\| \d+ \|", line)])
+    text = re.sub(r"## Papers \(\d+\)", f"## Papers ({count})", text)
+    _write_if_changed(path, text, updated, repo_root)
+
+
+def update_papers_agents(updated: list[str], repo_root: Path) -> None:
+    path = repo_root / "papers" / "AGENTS.md"
+    text = _safe_read(path)
+    if not text:
+        return
+    text = re.sub(
+        r"for \d+ publications",
+        "for bibliography entries with in-tree documentation",
+        text,
+    )
+    text = re.sub(
+        r"\(\d+ entries as of [^)]+\)",
+        "; current folder/export counts live in [`../reports/current_counts.md`](../reports/current_counts.md)",
+        text,
+    )
+    text = re.sub(
+        r"README\.md present \| \d+/\d+ folders[^|]*",
+        "README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) ",
+        text,
+    )
+    text = re.sub(r"AGENTS\.md present \| \d+/\d+", "AGENTS.md present | required per folder", text)
+    text = re.sub(r"SKILL\.md present \| \d+/\d+", "SKILL.md present | required per folder", text)
+    _write_if_changed(path, text, updated, repo_root)
+
+
+def update_software_row(pair: PublicationPair, folder: str, updated: list[str], repo_root: Path) -> None:
+    path = repo_root / SOFTWARE
+    text = _safe_read(path)
+    if not text:
+        return
+    repo_url = f"https://github.com/{pair.github_repo}"
+    out_lines = []
+    changed = False
+    for line in text.splitlines():
+        if line.startswith("| [") and f"]({repo_url})" in line:
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if len(cells) == 5:
+                desc = cells[1]
+                additions = []
+                if pair.record.doi_url not in desc:
+                    additions.append(f"[Zenodo]({pair.record.doi_url})")
+                paper_link = f"[📄](../papers/{folder}/)"
+                if paper_link not in desc:
+                    additions.append(paper_link)
+                if additions:
+                    desc = desc.rstrip()
+                    desc += " · " + " · ".join(additions)
+                    cells[1] = desc
+                    line = "| " + " | ".join(cells) + " |"
+                    changed = True
+        out_lines.append(line)
+    if changed:
+        _write_if_changed(path, "\n".join(out_lines).rstrip() + "\n", updated, repo_root)
+
+
+def apply_publication_pair(
+    pair: PublicationPair,
+    *,
+    repo_root: Path = REPO_ROOT,
+    download_files: bool = True,
+    folder: str | None = None,
+    refresh_docs: bool = False,
+) -> AppliedPublication:
+    folder = folder or folder_for_pair(pair, repo_root)
+    folder_path = repo_root / "papers" / folder
+    created = not folder_path.exists()
+    updated: list[str] = []
+    folder_path.mkdir(parents=True, exist_ok=True)
+
+    if created:
+        _write_if_changed(folder_path / "README.md", render_readme(pair, folder), updated, repo_root)
+        _write_if_changed(folder_path / "AGENTS.md", render_agents(pair), updated, repo_root)
+        _write_if_changed(folder_path / "SKILL.md", render_skill(pair, folder), updated, repo_root)
+        _write_if_changed(folder_path / "CITATION.cff", render_citation(pair), updated, repo_root)
+    elif refresh_docs:
+        _write_if_changed(folder_path / "README.md", render_readme(pair, folder), updated, repo_root)
+        _write_if_changed(folder_path / "AGENTS.md", render_agents(pair), updated, repo_root)
+        _write_if_changed(folder_path / "SKILL.md", render_skill(pair, folder), updated, repo_root)
+        _write_if_changed(folder_path / "CITATION.cff", render_citation(pair), updated, repo_root)
+    else:
+        update_existing_readme(folder_path / "README.md", pair, updated, repo_root)
+        update_existing_citation(folder_path / "CITATION.cff", pair, updated, repo_root)
+
+    update_metadata_json(folder_path / "metadata.json", pair, updated, repo_root)
+    if download_files:
+        download_zenodo_pdf(pair, folder_path, updated, repo_root)
+    ensure_bibliography_row(pair, folder, updated, repo_root)
+    update_paper_metadata_index(pair, folder, updated, repo_root)
+    update_papers_readme(folder, pair, updated, repo_root)
+    update_papers_agents(updated, repo_root)
+    update_software_row(pair, folder, updated, repo_root)
+    return AppliedPublication(doi=pair.doi, folder=folder, created=created, updated_files=tuple(updated))
+
+
+def write_report(
+    path: Path,
+    *,
+    owners: list[str],
+    releases: list[GitHubRelease],
+    records: list[ZenodoRecord],
+    pairs: list[PublicationPair],
+    actions: list[SyncAction],
+    warnings: list[str],
+    applied: list[AppliedPublication] | None = None,
+) -> None:
+    payload = {
+        "generated_at": generated_timestamp(),
+        "source": "GitHub Releases API + Zenodo Records API",
+        "owners": owners,
+        "counts": {
+            "github_releases": len(releases),
+            "zenodo_records": len(records),
+            "pairs": len(pairs),
+            "strong_pairs": sum(1 for pair in pairs if pair.confidence == "strong"),
+            "already_reviewed": sum(1 for action in actions if action.action_type == "already_reviewed"),
+            "needs_review": sum(1 for action in actions if action.action_type == "needs_review"),
+            "create_new": sum(1 for action in actions if action.action_type == "create_new"),
+            "update_existing": sum(1 for action in actions if action.action_type == "update_existing"),
+        },
+        "warnings": warnings,
+        "actions": [action.to_dict() for action in actions],
+        "pairs": [pair.to_dict() for pair in pairs],
+        "applied": [
+            {"doi": item.doi, "folder": item.folder, "created": item.created, "updated_files": list(item.updated_files)}
+            for item in (applied or [])
+        ],
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def run_regeneration(repo_root: Path = REPO_ROOT) -> None:
+    commands = [
+        ["python3", "code/orchestrators/sync_publications_html.py", "--apply"],
+        ["python3", "code/orchestrators/export_bibliography.py"],
+        ["python3", "code/orchestrators/sync_software_html.py", "--apply"],
+        ["python3", "code/orchestrators/export_agent_data.py"],
+        ["python3", "code/orchestrators/build_domain_pages.py"],
+        ["python3", "code/orchestrators/build_work_pages.py"],
+        ["python3", "code/orchestrators/build_paper_pages.py"],
+        ["python3", "code/orchestrators/audit_assets.py"],
+        ["python3", "code/orchestrators/build_catalog.py"],
+        ["python3", "code/orchestrators/build_search_index.py"],
+        ["python3", "code/orchestrators/generate_feed.py"],
+        ["python3", "code/orchestrators/build_sitemap.py"],
+        ["python3", "code/orchestrators/build_generated_manifest.py"],
+    ]
+    for command in commands:
+        subprocess.run(command, cwd=repo_root, check=True)
+
+
+def latest_report(repo_root: Path = REPO_ROOT) -> Path | None:
+    reports = sorted((repo_root / "reports").glob("paired_publications_*.json"))
+    return reports[-1] if reports else None
+
+
+def display_report_path(path: Path, repo_root: Path = REPO_ROOT) -> str:
+    """Return a compact report path without assuming it lives under the repo."""
+    try:
+        return str(path.relative_to(repo_root))
+    except ValueError:
+        return str(path)
+
+
+def check_report(repo_root: Path = REPO_ROOT) -> None:
+    path = latest_report(repo_root)
+    if path is None:
+        raise SystemExit("Missing paired publication report")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("source") != "GitHub Releases API + Zenodo Records API":
+        raise SystemExit("Paired publication report has unexpected source")
+    if "actions" not in payload or "pairs" not in payload or "counts" not in payload:
+        raise SystemExit("Paired publication report missing required keys")
+    warnings = payload.get("warnings")
+    if warnings:
+        raise SystemExit(f"Paired publication report has API warnings: {len(warnings)}")
+    actions = payload.get("actions")
+    if not isinstance(actions, list):
+        raise SystemExit("Paired publication report actions must be a list")
+    counts = payload.get("counts")
+    if not isinstance(counts, dict):
+        raise SystemExit("Paired publication report counts must be an object")
+    for action_type in ("create_new", "update_existing", "needs_review", "already_reviewed"):
+        actual = sum(1 for action in actions if isinstance(action, dict) and action.get("action_type") == action_type)
+        expected = counts.get(action_type, 0)
+        if expected != actual:
+            raise SystemExit(f"Paired publication report count mismatch for {action_type}: {expected} != {actual}")
+    existing_dois = {row["doi"] for row in parse_bibliography_rows(repo_root) if row.get("doi")}
+    applied_created_dois = {
+        str(item.get("doi") or "")
+        for item in payload.get("applied", [])
+        if isinstance(item, dict) and item.get("created") is True
+    }
+    stale_create = [
+        str(action.get("doi"))
+        for action in actions
+        if isinstance(action, dict)
+        and action.get("action_type") == "create_new"
+        and str(action.get("doi") or "") in existing_dois
+        and str(action.get("doi") or "") not in applied_created_dois
+    ]
+    if stale_create:
+        joined = ", ".join(stale_create)
+        raise SystemExit(f"Paired publication report has stale create_new actions for existing DOIs: {joined}")
+    print(f"checked paired publication report ({path.relative_to(repo_root)})")
+
+
+def parse_owners(raw: str, include_aii: bool) -> list[str]:
+    owners = [item.strip() for item in raw.split(",") if item.strip()]
+    if include_aii and AII_OWNER not in owners:
+        owners.append(AII_OWNER)
+    return owners or list(DEFAULT_OWNERS)
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        epilog="Runbook: docs/operations/publication-sync.md",
+    )
+    parser.add_argument("--apply", action="store_true", help="Apply strong create/update actions")
+    parser.add_argument("--owners", default="docxology", help="Comma-separated GitHub owners to scan")
+    parser.add_argument("--include-aii", action="store_true", help="Also scan ActiveInferenceInstitute")
+    parser.add_argument("--since", help="Only consider GitHub releases published on/after YYYY-MM-DD")
+    parser.add_argument("--report", help="Report path (default: reports/paired_publications_DATE.json)")
+    parser.add_argument("--no-download-files", action="store_true", help="Do not download Zenodo PDFs during apply")
+    parser.add_argument("--check", action="store_true", help="Validate the latest cached report")
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if args.check:
+        check_report()
+        return 0
+    owners = parse_owners(args.owners, args.include_aii)
+    report = Path(args.report) if args.report else report_path_for_today()
+    if not report.is_absolute():
+        report = REPO_ROOT / report
+
+    releases, github_warnings = fetch_github_releases(owners, since=args.since)
+    records, zenodo_warnings = fetch_zenodo_records()
+    pairs = find_publication_pairs(releases, records)
+    actions = build_sync_actions(pairs)
+    warnings = [*github_warnings, *zenodo_warnings]
+    applied: list[AppliedPublication] = []
+    changed = False
+
+    if warnings:
+        for warning in warnings:
+            print(f"warning: {warning}", file=sys.stderr)
+        raise SystemExit(f"Refusing to write paired publication report with API warnings: {len(warnings)}")
+
+    if args.apply:
+        for action, pair in ordered_apply_pairs(actions, pairs):
+            item = apply_publication_pair(
+                pair,
+                download_files=not args.no_download_files,
+                folder=action.folder,
+                refresh_docs=action.reason.startswith("same title and GitHub"),
+            )
+            applied.append(item)
+            changed = changed or bool(item.updated_files)
+        if changed:
+            write_report(
+                report,
+                owners=owners,
+                releases=releases,
+                records=records,
+                pairs=pairs,
+                actions=actions,
+                warnings=warnings,
+                applied=applied,
+            )
+            run_regeneration()
+
+    write_report(
+        report,
+        owners=owners,
+        releases=releases,
+        records=records,
+        pairs=pairs,
+        actions=actions,
+        warnings=warnings,
+        applied=applied,
+    )
+    print(
+        f"wrote {display_report_path(report)}: "
+        f"{len(pairs)} pairs, "
+            f"{sum(1 for action in actions if action.action_type == 'create_new')} new, "
+            f"{sum(1 for action in actions if action.action_type == 'update_existing')} updates, "
+            f"{sum(1 for action in actions if action.action_type == 'needs_review')} needs review, "
+            f"{sum(1 for action in actions if action.action_type == 'already_reviewed')} already reviewed"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

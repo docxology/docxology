@@ -93,14 +93,16 @@ artifact manifest, then `build_generated_manifest.py` → `build_agent_index.py`
 `validate_repo.py`.
 Run `--list` to print the plan without executing. Internally it runs, in order:
 `export_bibliography.py` → `sync_publications_html.py --apply` → `sync_software_html.py
---apply` → `build_current_counts.py` → `generate_og_images.py` → `export_agent_data.py` →
+--apply` → `build_current_counts.py` → `build_coverage_exceptions.py` → `classify_repositories.py` →
+`sync_scholar_metrics.py` → `generate_og_images.py` → `export_agent_data.py` →
 `build_resume.py --all` → `build_domain_pages.py` → `build_work_pages.py` →
 `build_video_pages.py` (complete `data/videos.json` + compact `data/videos-index.json`) →
-`build_paper_pages.py` → `build_exports_page.py` → `build_updates_page.py` →
-`build_evidence_page.py` → `build_reconciliation_report.py` → `audit_assets.py` →
-`accessibility_audit.py` → `build_catalog.py` → `audit_assets.py` →
-`accessibility_audit.py` → `build_search_index.py` → `generate_feed.py` →
-`build_sitemap.py` → `build_image_sitemap.py` → `build_artwork_index.py` →
+`sync_site_facts.py` → `prune_old_reports.py --apply` → `build_paper_pages.py` →
+`deploy_seo_security.py` → `build_exports_page.py` → `build_updates_page.py` →
+`build_evidence_page.py` → `build_reproducibility_ledger.py` → `ensure_agent_navigation.py` →
+`build_reconciliation_report.py` → `audit_assets.py` → `accessibility_audit.py` →
+`build_catalog.py` → `audit_assets.py` → `accessibility_audit.py` → `build_search_index.py` →
+`generate_feed.py` → `build_sitemap.py` → `build_artwork_index.py` → `build_image_sitemap.py` →
 `build_pages_artifact.py --write-manifest --check-size-only` → `build_generated_manifest.py` →
 `build_agent_index.py` → `build_release_integrity.py` → final `build_generated_manifest.py`.
 

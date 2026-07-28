@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon"
+version: "1.0.0"
+date-released: 2026-07-02
+doi: 10.5281/zenodo.21137276
+url: "https://doi.org/10.5281/zenodo.21137276"
+repository-code: "https://github.com/docxology/EntoLaw"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21137276
+    description: "Zenodo DOI"
+  - type: url
+    value: "https://zenodo.org/records/21137276"
+    description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0"
+    description: "GitHub release"

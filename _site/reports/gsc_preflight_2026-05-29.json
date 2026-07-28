@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-05-29T16:04:37Z",
+  "property": "https://danielarifriedman.com/",
+  "preflight_ok": true,
+  "local_checks": [
+    {
+      "check": "sitemap_url_count",
+      "ok": true,
+      "detail": "157 URLs (expected ~157)"
+    },
+    {
+      "check": "sitemap_excludes_papers",
+      "ok": true,
+      "detail": "no /papers/ in sitemap"
+    },
+    {
+      "check": "seo_invariants",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "robots_open_crawl",
+      "ok": true,
+      "detail": "Allow: / without Disallow"
+    }
+  ],
+  "live_checks": [
+    {
+      "check": "priority_hub_home",
+      "ok": true,
+      "detail": "HTTP 200 (494ms)",
+      "url": "https://danielarifriedman.com/"
+    },
+    {
+      "check": "priority_hub_exports.html",
+      "ok": true,
+      "detail": "HTTP 200 (215ms)",
+      "url": "https://danielarifriedman.com/exports.html"
+    },
+    {
+      "check": "priority_hub_catalog.html",
+      "ok": true,
+      "detail": "HTTP 200 (220ms)",
+      "url": "https://danielarifriedman.com/catalog.html"
+    },
+    {
+      "check": "priority_hub_cite-verify.html",
+      "ok": true,
+      "detail": "HTTP 200 (227ms)",
+      "url": "https://danielarifriedman.com/cite-verify.html"
+    },
+    {
+      "check": "priority_hub_discovery.html",
+      "ok": true,
+      "detail": "HTTP 200 (235ms)",
+      "url": "https://danielarifriedman.com/discovery.html"
+    },
+    {
+      "check": "priority_hub_publications.html",
+      "ok": true,
+      "detail": "HTTP 200 (219ms)",
+      "url": "https://danielarifriedman.com/publications.html"
+    },
+    {
+      "check": "redirect_stub_about.html",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/about.html"
+    },
+    {
+      "check": "redirect_stub_blog/index.html",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/blog/index.html"
+    },
+    {
+      "check": "redirect_stub_meditations.html",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/meditations.html"
+    },
+    {
+      "check": "redirect_stub_research.html",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/research.html"
+    },
+    {
+      "check": "redirect_stub_nft.html",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/nft.html"
+    },
+    {
+      "check": "redirect_stub_blog/winged-snowflake-2021/index.html",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/blog/winged-snowflake-2021/index.html"
+    },
+    {
+      "check": "live_sitemap",
+      "ok": true,
+      "detail": "HTTP 200",
+      "url": "https://danielarifriedman.com/sitemap.xml"
+    }
+  ],
+  "priority_urls": [
+    "https://danielarifriedman.com/",
+    "https://danielarifriedman.com/exports.html",
+    "https://danielarifriedman.com/catalog.html",
+    "https://danielarifriedman.com/cite-verify.html",
+    "https://danielarifriedman.com/discovery.html",
+    "https://danielarifriedman.com/publications.html"
+  ],
+  "gsc_links": {
+    "sitemaps": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
+    "url_inspection": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
+    "page_indexing": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+    "performance": "https://search.google.com/search-console/performance/search-analytics?resource_id=https://danielarifriedman.com/"
+  },
+  "manual_steps": [
+    {
+      "id": "gsc-sitemap",
+      "title": "Submit or refresh sitemap.xml",
+      "gsc_url": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
+      "action": "Add sitemap: sitemap.xml \u2192 Submit"
+    },
+    {
+      "id": "gsc-index-hubs",
+      "title": "Request indexing for 6 priority hubs",
+      "gsc_url": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
+      "action": "URL Inspection \u2192 Request indexing for each priority URL"
+    },
+    {
+      "id": "gsc-validate-redirect",
+      "title": "Validate fix: Page with redirect",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Page indexing \u2192 Page with redirect \u2192 Validate fix"
+    },
+    {
+      "id": "gsc-validate-canonical",
+      "title": "Validate fix: Alternate page with proper canonical",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Page indexing \u2192 Alternate canonical \u2192 Validate fix"
+    },
+    {
+      "id": "gsc-validate-404",
+      "title": "Validate fix: Not found (404)",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Page indexing \u2192 Not found (404) \u2192 Validate fix"
+    },
+    {
+      "id": "gsc-monitor",
+      "title": "Weekly Page indexing check (weeks 1\u20134)",
+      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
+      "action": "Review Page indexing + Performance weekly for 2\u20134 weeks"
+    }
+  ],
+  "checklist": [
+    "[ ] Signed into GSC for https://danielarifriedman.com/",
+    "[ ] Preflight passed (this script)",
+    "[ ] Submitted sitemap.xml",
+    "[ ] Requested indexing: /, exports.html, catalog.html, cite-verify.html, discovery.html, publications.html",
+    "[ ] Validate fix: Page with redirect",
+    "[ ] Validate fix: Alternate page with proper canonical",
+    "[ ] Validate fix: Not found (404)",
+    "[ ] Calendar reminder: recheck Page indexing in 7 days"
+  ]
+}
