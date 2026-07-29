@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "48ded8ecefd66de9913691615b5405327757739d",
+  "source_commit_at_generation": "57b5f35b95389f9db42644fc6cf526f3aa2418dc",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -28,11 +28,11 @@
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
     "data/agent-index.json": "cb72dbd7daf3c1630bad7327101fb06f7e3e8c1d448131f635f76e1a4707c1a6",
     "data/generated-manifest.json": "6eeaa86c4760f9a0b4afec4aa78ecbf41aabc522b41b0c5d4bf8b543e04770f3",
-    "data/pages-artifact-manifest.json": "28b40a2704e9a9a1ef14ad7ea60f0b11a2bdd56045976cee6189391fe52f83ac"
+    "data/pages-artifact-manifest.json": "31d02b7b6d5cd8f209b7437081f6a1f7f23f5aa1751ed1f33440f345dc58a877"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "48ded8ecefd66de9913691615b5405327757739d",
+    "source_commit_at_generation": "57b5f35b95389f9db42644fc6cf526f3aa2418dc",
     "artifact_file_count": 4354,
     "artifact_bytes": 761884950,
     "omitted_paper_image_count": 9004
