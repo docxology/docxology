@@ -318,7 +318,10 @@ function fetchEnrichment() {
     // A failure here must not take the table down with it.
     const url = new URL(`data/work-enrichment.json${SCRIPT_QUERY}`, window.location.href);
     return fetch(url, { cache: 'no-store' })
-        .then((response) => (response.ok ? response.json() : null))
+        .then((response) => {
+            if (!response.ok) throw new Error(`work-enrichment.json HTTP ${response.status}`);
+            return response.json();
+        })
         .then((data) => {
             const byKey = {};
             const works = (data && data.works) || {};
@@ -327,7 +330,13 @@ function fetchEnrichment() {
             });
             return byKey;
         })
-        .catch(() => ({}));
+        .catch((err) => {
+            // Report rather than swallow: the table still renders, but searching
+            // an abstract phrase quietly stops working, which is otherwise
+            // indistinguishable from the work simply not existing.
+            console.error('publication search: abstract/keyword index unavailable', err);
+            return {};
+        });
 }
 
 function loadPublications() {

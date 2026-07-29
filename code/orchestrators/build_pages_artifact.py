@@ -125,8 +125,9 @@ def _manifest_payload(existing: dict | None = None) -> dict:
     # The current report is written immediately after this payload is built.
     # Include its expected path even on the first run, when it is not tracked
     # or present yet, so a UTC date rollover cannot make the manifest stale.
+    growth_rel = GROWTH_REPORT.relative_to(REPO_ROOT)
     expected_control_paths = set(relative_paths)
-    expected_control_paths.add(GROWTH_REPORT.relative_to(REPO_ROOT))
+    expected_control_paths.add(growth_rel)
     controls = sorted(
         (path for path in expected_control_paths if path != manifest_rel and is_control_path(path)),
         key=lambda path: path.as_posix(),
@@ -169,7 +170,12 @@ def _manifest_payload(existing: dict | None = None) -> dict:
         "control_files": [
             {"path": path.as_posix(), "role": "public control metadata"}
             for path in controls
-            if (REPO_ROOT / path).is_file()
+            # growth_rel is exempt from the existence check: write_manifest()
+            # creates it *after* this payload is built, so requiring it on disk
+            # cancelled the pre-inclusion above and left the freshly written
+            # manifest one control entry short of its own recomputation —
+            # permanently stale until a second pass.
+            if (REPO_ROOT / path).is_file() or path == growth_rel
         ],
         "omitted_paper_images": {
             "count": len(omitted),

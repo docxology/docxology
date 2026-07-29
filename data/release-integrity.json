@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "ca900a54956e27737a895551c34c061096b433be",
+  "source_commit_at_generation": "5c3eb22e528b3684ea97970f7dd976e3689273e1",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -10,7 +10,7 @@
     "project_version": "0.1.0",
     "orchestrator_sha256": {
       "code/orchestrators/regenerate_all.py": "305f208dd7c504f9f0c8fee45f4ceb1312ea3ed0037cf7b42e5bbb8ecd04def9",
-      "code/orchestrators/build_pages_artifact.py": "b28b12f5cbd9b65a58d789253b555e16b9c9de4dcf415903e658a42d9aaf8ba7",
+      "code/orchestrators/build_pages_artifact.py": "5f2b2dca48d30f3f83138425571c4211d72380fdf603a9ee45a4bca644c88c18",
       "code/orchestrators/build_agent_index.py": "c3c58c58b4938910cd79fc0896528e066041f67af4e9e417d985833d32e3bd7d",
       "code/orchestrators/build_coverage_exceptions.py": "5e4e3a88d6d13aad804ccc4f9d45ba32c1dbb87ae0970c819042d3b1a221b6ad",
       "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
@@ -26,15 +26,15 @@
     "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
     "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "78d357fd770ee1ac81e4f22ce6decf51d93bfde0b9c0c504d037e7037f960f4a",
+    "data/agent-index.json": "db40e9b469f950a3c58e83323ea622686737179e23b0e0dc4b06a644fb292669",
     "data/generated-manifest.json": "2861b508b8aec5ec9094b0fae07ed6aa0c215e050ad322bdf8d4af71781059f0",
-    "data/pages-artifact-manifest.json": "f148144d1b9386e06fe47c4e53b41901ee4d5f5076396e6db25359a3d3b037b6"
+    "data/pages-artifact-manifest.json": "0420e872c25cbf2b2ed54073ce1f271ae3ee5153e835dd64baefec8ec8cc0bd0"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "ca900a54956e27737a895551c34c061096b433be",
+    "source_commit_at_generation": "5c3eb22e528b3684ea97970f7dd976e3689273e1",
     "artifact_file_count": 4360,
-    "artifact_bytes": 762126962,
+    "artifact_bytes": 762127931,
     "omitted_paper_image_count": 9004
   },
   "deployment": {

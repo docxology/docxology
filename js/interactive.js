@@ -241,7 +241,10 @@
           searchIndex = [];
         }
       })
-      .catch(() => {
+      .catch((err) => {
+        // An empty index makes every query answer "No matches", which reads as
+        // "nothing on this site matches" rather than "the index failed to load".
+        console.error('search autocomplete: /search-index.json unavailable', err);
         searchIndex = [];
       })
       .then(() => {

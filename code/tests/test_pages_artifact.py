@@ -38,3 +38,22 @@ def test_control_manifests_have_public_fallback_policy():
 def test_all_dated_growth_reports_are_control_metadata():
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-22.json"))
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-24.json"))
+
+
+def test_manifest_lists_todays_growth_report_before_it_exists(monkeypatch):
+    """write_manifest() creates the growth report *after* building the payload.
+
+    If the payload only listed control files already on disk, the manifest it
+    wrote would be one entry short of its own recomputation and `--check-manifest`
+    would report it stale on every first run of a new UTC day — which is exactly
+    what blocked the Pages deploy. Point GROWTH_REPORT at a date whose report has
+    never been written and confirm it is listed anyway.
+    """
+    unwritten = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_1970-01-01.json"
+    assert not unwritten.exists()
+    monkeypatch.setattr(bpa, "GROWTH_REPORT", unwritten)
+
+    payload = bpa._manifest_payload()
+
+    listed = {entry["path"] for entry in payload["control_files"]}
+    assert "reports/pages_artifact_growth_1970-01-01.json" in listed

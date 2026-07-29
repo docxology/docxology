@@ -60,7 +60,11 @@ jobs:
           set -euo pipefail
           title="Public-source freshness drift detected"
           body="The scheduled public-source normalized facts differ from the latest checked-in baseline (${{ steps.diff.outputs.baseline }}). Review the uploaded workflow artifact, then update curated claims deliberately if the scope and source quality justify it."
-          existing="$(gh issue list --state open --search \"$title in:title\" --json number --jq '.[0].number // empty')"
+          # The search term must be ONE argument. Escaped quotes (\"…\") are
+          # literal characters to bash, not grouping, so they split this into
+          # a quoted fragment plus a stray positional `in:title"`; gh rejects
+          # the extra argument and `set -e` failed the job every week.
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body "$body"
             echo "Updated existing freshness issue #$existing"
