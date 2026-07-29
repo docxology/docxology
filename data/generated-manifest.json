@@ -192,7 +192,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-07-25.json"
+        "reports/pages_artifact_growth_2026-07-29.json"
       ],
       "sources": [
         "tracked repository files",

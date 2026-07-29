@@ -1,8 +1,0 @@
-# RFC 9116 security.txt for https://danielarifriedman.com/
-Contact: mailto:Daniel@ActiveInference.Institute
-Canary: https://danielarifriedman.com/canary.txt
-Expires: 2026-09-14T23:59:59Z
-Preferred-Languages: en
-Canonical: https://danielarifriedman.com/.well-known/security.txt
-Canonical: https://danielarifriedman.com/security.txt
-Policy: https://github.com/docxology/docxology/issues/new/choose

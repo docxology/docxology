@@ -16,3 +16,7 @@ papers/regenerate_docs.log
 
 # Local Netlify folder
 .netlify
+
+# GitHub Pages build output — rebuilt in CI by pages.yml from tracked files.
+# Committing it doubled the bounded Pages artifact past its safety ceiling (63e4a44e).
+_site/

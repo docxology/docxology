@@ -1,9 +1,0 @@
-cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
-type: book
-title: "GreatPreset"
-date-released: 2020
-authors:
-  - family-names: Friedman
-    given-names: Daniel A.
-    orcid: "https://orcid.org/0000-0001-6232-9096"
