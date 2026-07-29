@@ -11,6 +11,16 @@ SITE_ORIGIN = "https://danielarifriedman.com/"
 # Content-Security-Policy meta tag (deployed on all public pages). GitHub Pages
 # does not allow custom response headers, so this meta policy is the strongest
 # site-local enforcement layer.
+# Single definition of the site CSP; deploy_seo_security.py imports this one.
+#
+# Header-only directives are deliberately absent. Per the CSP spec a policy
+# delivered through <meta> MUST ignore `frame-ancestors`, `report-uri` and
+# `sandbox`, and Chromium logs a console error for each page that ships one.
+# Carrying `frame-ancestors 'none'` here bought no clickjacking protection
+# whatsoever and put an error on every one of ~1540 pages, which is real cost:
+# it trained the browser QA gate to filter console errors, and any genuine
+# error is easier to miss in noise. Framing protection needs an HTTP response
+# header, which GitHub Pages cannot serve — see docs/security/security-posture.md.
 CSP_META_TAG = (
     '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; '
     "script-src 'self'; "
@@ -19,10 +29,13 @@ CSP_META_TAG = (
     'img-src \'self\' data: https:; '
     "connect-src 'self'; "
     "frame-src https://www.youtube-nocookie.com; "
-    "frame-ancestors 'none'; "
     "base-uri 'self'; "
     'form-action \'self\';">'
 )
+
+# Directives a <meta>-delivered CSP must never carry, because the spec requires
+# user agents to ignore them there. Enforced by code/tests/test_seo_invariants.py.
+META_INVALID_CSP_DIRECTIVES = ("frame-ancestors", "report-uri", "sandbox")
 
 REFERRER_POLICY_META = '<meta name="referrer" content="strict-origin-when-cross-origin">'
 

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -17,6 +19,7 @@ from seo_invariants import (  # noqa: E402
     check_public_html_security,
     collect_seo_errors,
 )
+from site_nav import CSP_META_TAG, META_INVALID_CSP_DIRECTIVES  # noqa: E402
 
 
 def test_collect_seo_errors_empty_on_repo():
@@ -48,3 +51,41 @@ def test_work_descriptions_not_truncated_midword():
 
 def test_public_html_security_metadata():
     assert check_public_html_security(REPO_ROOT) == []
+
+
+def test_meta_csp_carries_no_header_only_directives():
+    """A <meta> CSP must not declare directives the spec makes it ignore.
+
+    `frame-ancestors`, `report-uri` and `sandbox` only take effect in an HTTP
+    response header. Shipped in a meta policy they protect nothing and make
+    Chromium log a console error on every page, which is what previously forced
+    browser_qa.py to filter console errors.
+    """
+    for directive in META_INVALID_CSP_DIRECTIVES:
+        assert directive not in CSP_META_TAG
+
+
+def test_no_tracked_html_ships_a_header_only_csp_directive():
+    """Every tracked page, not just the ones deploy_seo_security.py rewrites.
+
+    docs/design/components/*.html are hand-authored and outside that script's
+    scope, yet they are published in the Pages artifact — they kept the ignored
+    directive for months after the generated pages would have dropped it.
+    """
+    tracked = subprocess.run(
+        ["git", "ls-files", "*.html"],
+        cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+    ).stdout.split()
+    offenders = []
+    for relative in tracked:
+        path = REPO_ROOT / relative
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for policy in re.findall(
+            r'http-equiv="Content-Security-Policy"\s+content="([^"]*)"', text
+        ):
+            for directive in META_INVALID_CSP_DIRECTIVES:
+                if directive in policy:
+                    offenders.append(f"{relative}: {directive}")
+    assert offenders == []

@@ -17,6 +17,9 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+from site_nav import CSP_META_TAG  # noqa: E402
 
 # Pages to skip (redirect stubs or non-HTML)
 SKIP_PAGES = {
@@ -27,20 +30,11 @@ SKIP_PAGES = {
     "research.html",
 }
 
-# The CSP policy from docs/security/security-posture.md. Keep this in sync
-# with code/src/site_nav.py; GitHub Pages provides no custom response headers.
-CSP_META = (
-    '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; '
-    "script-src 'self'; "
-    "style-src 'self' 'unsafe-inline'; "
-    "font-src 'self'; "
-    'img-src \'self\' data: https:; '
-    "connect-src 'self'; "
-    "frame-src https://www.youtube-nocookie.com; "
-    "frame-ancestors 'none'; "
-    "base-uri 'self'; "
-    'form-action \'self\';">'
-)
+# The CSP policy from docs/security/security-posture.md. Imported rather than
+# duplicated: the two copies previously carried a "keep this in sync" comment,
+# which is a standing invitation for the generated pages and the generator to
+# disagree.
+CSP_META = CSP_META_TAG
 REFERRER_META = '<meta name="referrer" content="strict-origin-when-cross-origin">'
 
 # rel="me" social verification links (same set as index.html head)

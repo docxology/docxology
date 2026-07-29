@@ -42,9 +42,26 @@ GitHub Pages cannot set custom response headers for this repository. The CSP and
 referrer policy above are meta-policy controls emitted in the document and are
 validated as deployment invariants; they are not equivalent to response headers
 at the edge. A future host with header control may strengthen this boundary.
-Chromium reports that `frame-ancestors` is ignored when CSP arrives through a
-`<meta>` element; the progressive browser QA report records that known warning.
-No other browser console or page error is accepted by the QA gate.
+
+**Clickjacking protection is not currently in force, and cannot be from this
+host.** It requires a `frame-ancestors` directive in an HTTP *response header*
+(or `X-Frame-Options`), and neither can be delivered from a document. Until
+2026-07-29 the meta policy declared `frame-ancestors 'none'`, which the CSP spec
+requires user agents to ignore in a `<meta>` element: it protected nothing while
+making Chromium log a console error on all ~1540 pages. That noise had a cost —
+`browser_qa.py` was taught to filter console errors to accommodate it, which
+weakened the gate for every other error. The directive is now removed, the
+filter with it, and `code/tests/test_seo_invariants.py` fails if any tracked
+page reintroduces a header-only directive (`frame-ancestors`, `report-uri`,
+`sandbox`) into a meta policy.
+
+Restoring framing protection means putting a header-capable edge in front of the
+site (Cloudflare, Netlify, or any reverse proxy) and setting
+`Content-Security-Policy: frame-ancestors 'none'` there. Adding a `_headers`
+file to this repository would not achieve it — GitHub Pages ignores that file,
+and shipping one would assert a control that is not actually enforced.
+
+No browser console or page error is accepted by the QA gate.
 
 ## Supply chain
 

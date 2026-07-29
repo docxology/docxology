@@ -118,12 +118,12 @@ def run_report() -> dict:
                     console_warnings: list[str] = []
                     page_errors: list[str] = []
                     def capture_console(msg) -> None:
-                        # Chromium reports frame-ancestors as a console error even
-                        # though it is a known limitation of meta-delivered CSP;
-                        # the static SEO/security audit tracks the policy itself.
-                        if "frame-ancestors" in msg.text and "meta" in msg.text:
-                            console_warnings.append(msg.text)
-                        elif msg.type == "error":
+                        # No console errors are excused. The one exemption that
+                        # used to live here — Chromium's "frame-ancestors is
+                        # ignored in a <meta> policy" — was filtered on every
+                        # page for months; removing the directive removed the
+                        # error, so the gate now catches it if it returns.
+                        if msg.type == "error":
                             console_errors.append(msg.text)
                     page.on("console", capture_console)
                     page.on("pageerror", lambda exc: page_errors.append(str(exc)))
