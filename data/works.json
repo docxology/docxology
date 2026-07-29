@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T22:07:24Z",
+  "generated_at": "2026-07-29T18:26:25Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
   "count": 197,
@@ -22,7 +22,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ReproducibleResearch/full_text.md"
+      "full_text_url": "/papers/2026_ReproducibleResearch/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 2,
@@ -42,7 +45,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 3,
@@ -62,7 +66,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_BeforePragmatism/full_text.md"
+      "full_text_url": "/papers/2026_BeforePragmatism/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 4,
@@ -82,7 +89,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_Bimetalism/full_text.md"
+      "full_text_url": "/papers/2026_Bimetalism/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 5,
@@ -102,7 +112,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_CognitiveIntegrity/full_text.md"
+      "full_text_url": "/papers/2026_CognitiveIntegrity/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 6,
@@ -122,7 +135,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 7,
@@ -142,7 +156,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_DoorsOfPerception/full_text.md"
+      "full_text_url": "/papers/2026_DoorsOfPerception/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 8,
@@ -162,7 +179,49 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_5thSymposium/full_text.md"
+      "full_text_url": "/papers/2025_5thSymposium/full_text.md",
+      "authors": [
+        "Active Inference Institute",
+        "Safron, Adam",
+        "Kiefer, Alex",
+        "Sabine, Alexander",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Alicea, Bradly",
+        "Fields, Chris",
+        "Holt, Denise",
+        "Shah, Harshil",
+        "Maitra, Satyaki",
+        "Pae, Hongju",
+        "Tennant, Ian",
+        "Cloutier, Jean-François",
+        "Freda, Jim",
+        "Dietz, Joel",
+        "Boik, John",
+        "Friston, Karl",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Garfield, Michael",
+        "Hinrichs, Nicolás",
+        "Octopus",
+        "PabloFM",
+        "Waade, Peter Thestrup",
+        "Worden, Robert",
+        "Senchal, Sam A",
+        "Montañez, Samuel",
+        "Namjoshi, Sanjeev",
+        "Shrivastava, Siddhant",
+        "de Jager, Sonia",
+        "Macurdy, Steph",
+        "Weiniger, Steven",
+        "Hasty, Susan",
+        "Nguyen, Viet Dung",
+        "Gebhardt, William",
+        "Lennon, Michael",
+        "Newell, Dave",
+        "Huembeli, Patrick",
+        "Ramstead, Maxwell"
+      ]
     },
     {
       "num": 9,
@@ -182,7 +241,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_AuBI/full_text.md"
+      "full_text_url": "/papers/2025_AuBI/full_text.md",
+      "authors": [
+        "Die Schwarze Katze",
+        "Djuwidja, Andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 10,
@@ -202,7 +266,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_CEREBRUM/full_text.md"
+      "full_text_url": "/papers/2025_CEREBRUM/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 11,
@@ -222,7 +289,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_AntStackComplexity/full_text.md"
+      "full_text_url": "/papers/2025_AntStackComplexity/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 12,
@@ -242,7 +312,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_EvoJump/full_text.md"
+      "full_text_url": "/papers/2025_EvoJump/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 13,
@@ -262,7 +335,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_AccessibilityActiveInference/full_text.md"
+      "full_text_url": "/papers/2025_AccessibilityActiveInference/full_text.md",
+      "authors": [
+        "Mikhailova, Alexandra",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 14,
@@ -282,7 +359,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_MDKV/full_text.md"
+      "full_text_url": "/papers/2025_MDKV/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 15,
@@ -302,7 +382,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_MarkdownDecisionProcess/full_text.md"
+      "full_text_url": "/papers/2025_MarkdownDecisionProcess/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 16,
@@ -322,7 +405,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_CognitiveArtScience/full_text.md"
+      "full_text_url": "/papers/2025_CognitiveArtScience/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 17,
@@ -342,7 +428,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_OnTime/full_text.md"
+      "full_text_url": "/papers/2025_OnTime/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 18,
@@ -362,7 +451,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_QuadMath/full_text.md"
+      "full_text_url": "/papers/2025_QuadMath/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 19,
@@ -382,7 +474,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_ResNei/full_text.md"
+      "full_text_url": "/papers/2025_ResNei/full_text.md",
+      "authors": [
+        "Lumiruusu, Janna",
+        "Friedman, Daniel",
+        "Rahman, Shagor",
+        "Baulin, Vladimir",
+        "Pashea, Andrew"
+      ]
     },
     {
       "num": 20,
@@ -402,7 +501,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_Symergetics/full_text.md"
+      "full_text_url": "/papers/2025_Symergetics/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 21,
@@ -422,7 +524,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_AgentAndNiche/full_text.md"
+      "full_text_url": "/papers/2025_AgentAndNiche/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 22,
@@ -442,7 +547,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_SystemsProcesses/full_text.md"
+      "full_text_url": "/papers/2025_SystemsProcesses/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 23,
@@ -462,7 +570,16 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_TemporalDepth/full_text.md"
+      "full_text_url": "/papers/2025_TemporalDepth/full_text.md",
+      "authors": [
+        "Tolchinsky, Alexey",
+        "Levin, Michael",
+        "Fields, Chris",
+        "Da Costa, Lancelot",
+        "Murphy, Rachael",
+        "Friedman, Daniel",
+        "Pincus, David"
+      ]
     },
     {
       "num": 24,
@@ -482,7 +599,40 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_AII_v3/full_text.md"
+      "full_text_url": "/papers/2025_AII_v3/full_text.md",
+      "authors": [
+        "Active Inference Institute",
+        "Vyatkin, Alex",
+        "Mikhailova, Alexandra",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Elers, Ben",
+        "Berkers, Bert",
+        "Knight, Bleu",
+        "Fields, Chris",
+        "Whittet, Dan",
+        "Friedman, Daniel",
+        "Ticklẽs, Déan",
+        "Paterson, Fraser",
+        "Stubbs, Gareth",
+        "Grimm, Holly",
+        "Smekal, Jakub",
+        "Cooper, Jeremy",
+        "Boik, John",
+        "Burian, Libor",
+        "Albarracin, Mahault",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Thacker, Mick",
+        "Gilli, Peter",
+        "Kaufmann, Rafael",
+        "Cordes, RJ",
+        "Henry, Ryan",
+        "Ramesh, Sandeep",
+        "David, Scott",
+        "Alvarado, Sebastian",
+        "Baker, Zach"
+      ]
     },
     {
       "num": 25,
@@ -502,7 +652,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_AntStack/full_text.md"
+      "full_text_url": "/papers/2025_AntStack/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 26,
@@ -522,7 +675,16 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_DiscoveryEngine/full_text.md"
+      "full_text_url": "/papers/2025_DiscoveryEngine/full_text.md",
+      "authors": [
+        "Baulin, Vladimir",
+        "Cook, Austin",
+        "Friedman, Daniel",
+        "Lumiruusu, Janna",
+        "Pashea, Andrew",
+        "Rahman, Shagor",
+        "Waldeck, Benedikt"
+      ]
     },
     {
       "num": 27,
@@ -542,7 +704,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_Thoughtseeds/full_text.md"
+      "full_text_url": "/papers/2025_Thoughtseeds/full_text.md",
+      "authors": [
+        "Kavi, Prakash Chandra",
+        "Zamora-López, Gorka",
+        "Friedman, Daniel Ari",
+        "Patow, Gustavo"
+      ]
     },
     {
       "num": 28,
@@ -562,7 +730,8 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_ConsciousnessAnts/full_text.md"
+      "full_text_url": "/papers/2025_ConsciousnessAnts/full_text.md",
+      "authors": []
     },
     {
       "num": 29,
@@ -582,7 +751,23 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_OntologySUMO/full_text.md"
+      "full_text_url": "/papers/2024_OntologySUMO/full_text.md",
+      "authors": [
+        "Douglass, David S.",
+        "Pease, Adam",
+        "Friedman, Daniel Ari",
+        "Balbuena, Jessica Angeli",
+        "Chokhalingam, Rhea",
+        "Hurtado, Ana Magdalena",
+        "Iennaco, Maria Luiza",
+        "Knight, V. Bleu",
+        "Maybell, Scott Ryan",
+        "Rahmjoo, Ali",
+        "Sayeg, Paulo Duare Andrade",
+        "Smékal, Jakub",
+        "Tickles, Dean",
+        "Vyatkin, Alex"
+      ]
     },
     {
       "num": 30,
@@ -602,7 +787,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_BioFirm/full_text.md"
+      "full_text_url": "/papers/2024_BioFirm/full_text.md",
+      "authors": [
+        "John Clippinger",
+        "Andrew Pashea",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 31,
@@ -622,7 +812,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_ImageMemeResearch/full_text.md"
+      "full_text_url": "/papers/2024_ImageMemeResearch/full_text.md",
+      "authors": [
+        "Mascarenhas, Mridula",
+        "Friedman, Daniel Ari",
+        "Cordes, Richard J"
+      ]
     },
     {
       "num": 32,
@@ -642,7 +837,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_BlattodeaDiversity/full_text.md"
+      "full_text_url": "/papers/2024_BlattodeaDiversity/full_text.md",
+      "authors": [
+        "Golian, Marek J.",
+        "Friedman, Daniel A.",
+        "Harrison, Mark",
+        "McMahon, Dino P.",
+        "Buellesbach, Jan"
+      ]
     },
     {
       "num": 33,
@@ -662,7 +864,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_DigitalTwins/full_text.md"
+      "full_text_url": "/papers/2024_DigitalTwins/full_text.md",
+      "authors": [
+        "Cordes, RJ"
+      ]
     },
     {
       "num": 34,
@@ -682,7 +887,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_PopulationSearch/full_text.md"
+      "full_text_url": "/papers/2024_PopulationSearch/full_text.md",
+      "authors": [
+        "Dehouche, Nassim",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 35,
@@ -702,7 +911,18 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_FarmWorks/full_text.md"
+      "full_text_url": "/papers/2024_FarmWorks/full_text.md",
+      "authors": [
+        "Baulin, Vladimir",
+        "Vyatkin, Alex",
+        "GUÉNIN—CARLUT, Avel",
+        "Friedman, Daniel",
+        "Bolt, John",
+        "Falkenstein, Stefan",
+        "Jassal, Parishrut",
+        "Trois, Celio",
+        "Minchin, Jonathan"
+      ]
     },
     {
       "num": 36,
@@ -722,7 +942,20 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_FederatedInference/full_text.md"
+      "full_text_url": "/papers/2024_FederatedInference/full_text.md",
+      "authors": [
+        "Friston, Karl J.",
+        "Parr, Thomas",
+        "Heins, Conor",
+        "Constant, Axel",
+        "Friedman, Daniel",
+        "Isomura, Takuya",
+        "Fields, Chris",
+        "Verbelen, Tim",
+        "Ramstead, Maxwell",
+        "Clippinger, John",
+        "Frith, Christopher D."
+      ]
     },
     {
       "num": 37,
@@ -742,7 +975,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_QuantumDreams/full_text.md"
+      "full_text_url": "/papers/2024_QuantumDreams/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Tickles, Dean"
+      ]
     },
     {
       "num": 38,
@@ -762,7 +999,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_MathArtBlake/full_text.md"
+      "full_text_url": "/papers/2024_MathArtBlake/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 39,
@@ -782,7 +1022,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_SensemakingFederation/full_text.md"
+      "full_text_url": "/papers/2024_SensemakingFederation/full_text.md",
+      "authors": [
+        "Sensemaking Scenius"
+      ]
     },
     {
       "num": 40,
@@ -802,7 +1045,15 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_SharedProtentions/full_text.md"
+      "full_text_url": "/papers/2024_SharedProtentions/full_text.md",
+      "authors": [
+        "Albarracin, Mahault",
+        "Pitliya, Riddhi J.",
+        "St. Clere Smithe, Toby",
+        "Friedman, Daniel Ari",
+        "Friston, Karl",
+        "Ramstead, Maxwell J. D."
+      ]
     },
     {
       "num": 41,
@@ -822,7 +1073,40 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_AII_v2/full_text.md"
+      "full_text_url": "/papers/2024_AII_v2/full_text.md",
+      "authors": [
+        "Active Inference Institute",
+        "Vyatkin, Alex",
+        "Mikhailova, Alexandra",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Elers, Ben",
+        "Berkers, Bert",
+        "Knight, Bleu",
+        "Fields, Chris",
+        "Whittet, Dan",
+        "Friedman, Daniel",
+        "Ticklẽs, Déan",
+        "Paterson, Fraser",
+        "Stubbs, Gareth",
+        "Grimm, Holly",
+        "Smekal, Jakub",
+        "Cooper, Jeremy",
+        "Boik, John",
+        "Burian, Libor",
+        "Albarracin, Mahault",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Thacker, Mick",
+        "Gilli, Peter",
+        "Kaufmann, Rafael",
+        "Cordes, RJ",
+        "Henry, Ryan",
+        "Ramesh, Sandeep",
+        "David, Scott",
+        "Alvarado, Sebastian",
+        "Baker, Zach"
+      ]
     },
     {
       "num": 42,
@@ -842,7 +1126,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_InfiniteImaginarium/full_text.md"
+      "full_text_url": "/papers/2024_InfiniteImaginarium/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 43,
@@ -862,7 +1149,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Tickles, Dean",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 44,
@@ -882,7 +1173,8 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_CurioCards/full_text.md"
+      "full_text_url": "/papers/2024_CurioCards/full_text.md",
+      "authors": []
     },
     {
       "num": 45,
@@ -902,7 +1194,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_GuidedTourMinds/full_text.md"
+      "full_text_url": "/papers/2023_GuidedTourMinds/full_text.md",
+      "authors": [
+        "Rahmjoo, Ali",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 46,
@@ -922,7 +1218,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_SinglePheromone/full_text.md"
+      "full_text_url": "/papers/2023_SinglePheromone/full_text.md",
+      "authors": [
+        "Saund, Eric",
+        "Ari Friedman, Daniel"
+      ]
     },
     {
       "num": 47,
@@ -942,7 +1242,15 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_HoneyBeeGeneExpression/full_text.md"
+      "full_text_url": "/papers/2023_HoneyBeeGeneExpression/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Tong, Chao",
+        "Linksvayer, Timothy A.",
+        "Freund, Matthias",
+        "Keough, Nicole Weronika",
+        "Johnson, Brian"
+      ]
     },
     {
       "num": 48,
@@ -962,7 +1270,16 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_VariationalSynthesis/full_text.md"
+      "full_text_url": "/papers/2023_VariationalSynthesis/full_text.md",
+      "authors": [
+        "Friston, Karl",
+        "Friedman, Daniel A.",
+        "Constant, Axel",
+        "Knight, V. Bleu",
+        "Fields, Chris",
+        "Parr, Thomas",
+        "Campbell, John O."
+      ]
     },
     {
       "num": 49,
@@ -982,7 +1299,16 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_ATLAS/full_text.md"
+      "full_text_url": "/papers/2023_ATLAS/full_text.md",
+      "authors": [
+        "Cordes, R.J.",
+        "David, Scott",
+        "Friedman, Daniel",
+        "Mikhailova, Alexandra",
+        "Penland, Andrew",
+        "Young, Sam",
+        "Zacharias, Colten"
+      ]
     },
     {
       "num": 50,
@@ -1002,7 +1328,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_AccountActiveInference/full_text.md"
+      "full_text_url": "/papers/2023_AccountActiveInference/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 51,
@@ -1022,7 +1351,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_CognitiveSovereignty/full_text.md"
+      "full_text_url": "/papers/2023_CognitiveSovereignty/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 52,
@@ -1042,7 +1374,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_AIAccountability/full_text.md"
+      "full_text_url": "/papers/2023_AIAccountability/full_text.md",
+      "authors": [
+        "David, Scott",
+        "Abu-Ghazaleh, Jumana",
+        "Friedman, Daniel",
+        "Cordes, RJ"
+      ]
     },
     {
       "num": 53,
@@ -1062,7 +1400,15 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_DistributedScience/full_text.md"
+      "full_text_url": "/papers/2023_DistributedScience/full_text.md",
+      "authors": [
+        "Balzan, Francesco",
+        "Campbell, John",
+        "Friston, Karl",
+        "Ramstead, Maxwell James",
+        "Friedman, Daniel",
+        "Constant, Axel"
+      ]
     },
     {
       "num": 54,
@@ -1082,7 +1428,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_NSFReporting/full_text.md"
+      "full_text_url": "/papers/2023_NSFReporting/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 55,
@@ -1102,7 +1451,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_VideoEntomology/full_text.md"
+      "full_text_url": "/papers/2023_VideoEntomology/full_text.md",
+      "authors": [
+        "Friedman, Daniel  A.",
+        "Wexler, Judith R.",
+        "Alvarado, Sebastian"
+      ]
     },
     {
       "num": 56,
@@ -1122,7 +1476,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_GNN/full_text.md"
+      "full_text_url": "/papers/2023_GNN/full_text.md",
+      "authors": [
+        "Smékal, Jakub",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 57,
@@ -1142,7 +1500,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_GenerativeResearchTeams/full_text.md"
+      "full_text_url": "/papers/2023_GenerativeResearchTeams/full_text.md",
+      "authors": [
+        "Friedman, Daniel",
+        "Smékal, Jakub"
+      ]
     },
     {
       "num": 58,
@@ -1162,7 +1524,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_AntsAging/full_text.md"
+      "full_text_url": "/papers/2023_AntsAging/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 59,
@@ -1182,7 +1547,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_OpenScienceSensemaking/full_text.md"
+      "full_text_url": "/papers/2023_OpenScienceSensemaking/full_text.md",
+      "authors": [
+        "Tamari, Ronen",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 60,
@@ -1202,7 +1571,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_PostdocReview/full_text.md"
+      "full_text_url": "/papers/2023_PostdocReview/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 61,
@@ -1222,7 +1594,30 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_AII_v1/full_text.md"
+      "full_text_url": "/papers/2023_AII_v1/full_text.md",
+      "authors": [
+        "Institute, Active Inference",
+        "Aguirre, Ander",
+        "Boik, John",
+        "Burian, Libor",
+        "Brown, Matthew",
+        "Cordes, RJ",
+        "David, Scott",
+        "Douglass, David S",
+        "Fernandez-Maquieira, Pablo",
+        "Friedman, Daniel A",
+        "Grimm, Holly",
+        "Guénin–Carlut, Avel",
+        "Iennaco, Maria Luiza",
+        "Knight, V Bleu",
+        "Mikhailova, Alexandra",
+        "Rahmjoo, Ali",
+        "Razi, Adeel",
+        "Smékal, Jakub",
+        "Tamari, Ronen",
+        "Tickles, Dean",
+        "Vyatkin, Alex"
+      ]
     },
     {
       "num": 62,
@@ -1242,7 +1637,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_P3IF/full_text.md"
+      "full_text_url": "/papers/2023_P3IF/full_text.md",
+      "authors": [
+        "Wilkinson, Thomas M.",
+        "Cordes, RJ",
+        "David, Scott",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 63,
@@ -1262,7 +1663,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_ToComment/full_text.md"
+      "full_text_url": "/papers/2023_ToComment/full_text.md",
+      "authors": [
+        "Tickles, Dean",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 64,
@@ -1282,7 +1687,25 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Fields, Chris",
+        "Aguirre, Ander",
+        "Friedman, Daniel Ari",
+        "Balzan, Francesco",
+        "Berger, Ross",
+        "Draguta, David",
+        "Guénin-Carlut, Avel",
+        "Hurtado, Ana Magdelena",
+        "Knight, V. Bleu",
+        "Koles, Kate",
+        "Neophytou, Haris",
+        "Prior, Corby",
+        "Tickles, Dean",
+        "Tennant, Ian",
+        "Tolchinsky, Alexey",
+        "Active Inference Institute"
+      ]
     },
     {
       "num": 65,
@@ -1302,7 +1725,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_BlakeFuller/full_text.md"
+      "full_text_url": "/papers/2023_BlakeFuller/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 66,
@@ -1322,7 +1748,23 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_ActiveInferenceOntology/full_text.md"
+      "full_text_url": "/papers/2022_ActiveInferenceOntology/full_text.md",
+      "authors": [
+        "Friedman, Daniel",
+        "Applegate-Swanson, Shaun",
+        "Balbuena, Jessica Angeli",
+        "Choudhury, Arhan",
+        "Cordes, RJ",
+        "El Damaty, Shady",
+        "Guénin—Carlut, Avel",
+        "Knight, V. Bleu",
+        "Metelkin, Ivan",
+        "Shrivastava, Siddhant",
+        "Singh, Amit Kumar",
+        "Smékal, Jakub",
+        "Caleb, Tuttle.",
+        "Vyatkin, Alexander"
+      ]
     },
     {
       "num": 67,
@@ -1342,7 +1784,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_ActiveDiffusion/full_text.md"
+      "full_text_url": "/papers/2022_ActiveDiffusion/full_text.md",
+      "authors": [
+        "Smékal, Jakub",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 68,
@@ -1362,7 +1808,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_StigmergicAnnotation/full_text.md"
+      "full_text_url": "/papers/2022_StigmergicAnnotation/full_text.md",
+      "authors": [
+        "Tamari, Ronen",
+        "Friedman, Daniel",
+        "Fischer, William",
+        "Hebert, Lauren",
+        "Shahaf, Dafna"
+      ]
     },
     {
       "num": 69,
@@ -1382,7 +1835,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_FreeWillSapolsky/full_text.md"
+      "full_text_url": "/papers/2022_FreeWillSapolsky/full_text.md",
+      "authors": [
+        "Sapolsky, Robert",
+        "Mikhailova, Alexandra",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 70,
@@ -1402,7 +1860,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_MirrorTest/full_text.md"
+      "full_text_url": "/papers/2022_MirrorTest/full_text.md",
+      "authors": [
+        "O'Connor, Sean",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 71,
@@ -1422,7 +1884,8 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_InformationCommons/full_text.md"
+      "full_text_url": "/papers/2022_InformationCommons/full_text.md",
+      "authors": []
     },
     {
       "num": 72,
@@ -1442,7 +1905,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_HypercertEcosystems/full_text.md"
+      "full_text_url": "/papers/2022_HypercertEcosystems/full_text.md",
+      "authors": [
+        "Smékal, Jakub",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 73,
@@ -1462,7 +1929,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_SystematicLiteratureAnalysis/full_text.md"
+      "full_text_url": "/papers/2022_SystematicLiteratureAnalysis/full_text.md",
+      "authors": [
+        "Knight, Virginia Bleu",
+        "Cordes, RJ",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 74,
@@ -1482,7 +1954,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_TrustFinder/full_text.md"
+      "full_text_url": "/papers/2022_TrustFinder/full_text.md",
+      "authors": [
+        "Cordes, R.J.",
+        "David, Scott",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 75,
@@ -1502,7 +1979,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_ActiveInferants/full_text.md"
+      "full_text_url": "/papers/2021_ActiveInferants/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Tschantz, Alec",
+        "Ramstead, Maxwell J. D.",
+        "Friston, Karl",
+        "Constant, Axel"
+      ]
     },
     {
       "num": 76,
@@ -1522,7 +2006,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_ModelingConflict/full_text.md"
+      "full_text_url": "/papers/2021_ModelingConflict/full_text.md",
+      "authors": [
+        "David, Scott",
+        "Cordes, Richard J.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 77,
@@ -1542,7 +2031,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_DigitalRhetorical/full_text.md"
+      "full_text_url": "/papers/2021_DigitalRhetorical/full_text.md",
+      "authors": [
+        "Mascarenhas, Mridula",
+        "Cordes, Richard J.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 78,
@@ -1562,7 +2056,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 79,
@@ -1582,7 +2077,8 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_NarrativeEcosystems/full_text.md"
+      "full_text_url": "/papers/2021_NarrativeEcosystems/full_text.md",
+      "authors": []
     },
     {
       "num": 80,
@@ -1602,7 +2098,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_NarrativeInformationMgmt/full_text.md"
+      "full_text_url": "/papers/2021_NarrativeInformationMgmt/full_text.md",
+      "authors": [
+        "Cordes, Richard J.",
+        "Applegate-Swanson, Shaun",
+        "Friedman, Daniel Ari",
+        "Knight, Virginia Bleu",
+        "Mikhailova, Alexandra"
+      ]
     },
     {
       "num": 81,
@@ -1622,7 +2125,11 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Cordes, Richard J."
+      ]
     },
     {
       "num": 82,
@@ -1642,7 +2149,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_BehaviorEngineering/full_text.md"
+      "full_text_url": "/papers/2020_BehaviorEngineering/full_text.md",
+      "authors": [
+        "Vyatkin, Alexander",
+        "Metelkin, Ivan",
+        "Mikhailova, Alexandra",
+        "Cordes, RJ",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 83,
@@ -1662,7 +2176,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 84,
@@ -1682,7 +2197,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_DistributedPhysiology/full_text.md"
+      "full_text_url": "/papers/2020_DistributedPhysiology/full_text.md",
+      "authors": [
+        "Friedman, D.A.",
+        "Johnson, B.R.",
+        "Linksvayer, T.A."
+      ]
     },
     {
       "num": 85,
@@ -1702,7 +2222,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_EmergentTeams/full_text.md"
+      "full_text_url": "/papers/2020_EmergentTeams/full_text.md",
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 86,
@@ -1722,7 +2246,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_GeneExpressionForagers/full_text.md"
+      "full_text_url": "/papers/2020_GeneExpressionForagers/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "York, Ryan Alexander",
+        "Hilliard, Austin Travis",
+        "Gordon, Deborah M."
+      ]
     },
     {
       "num": 87,
@@ -1742,7 +2272,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 88,
@@ -1762,7 +2293,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_NeurotransmitterVariation/full_text.md"
+      "full_text_url": "/papers/2020_NeurotransmitterVariation/full_text.md",
+      "authors": [
+        "Shin, Mimi",
+        "Friedman, Daniel A.",
+        "Gordon, Deborah M.",
+        "Venton, B. Jill"
+      ]
     },
     {
       "num": 89,
@@ -1782,7 +2319,8 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_GreatPreset/full_text.md"
+      "full_text_url": "/papers/2020_GreatPreset/full_text.md",
+      "authors": []
     },
     {
       "num": 90,
@@ -1802,7 +2340,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_InnovatorsCatechism/full_text.md"
+      "full_text_url": "/papers/2020_InnovatorsCatechism/full_text.md",
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel A.",
+        "Phelan, Steven E."
+      ]
     },
     {
       "num": 91,
@@ -1822,7 +2365,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_NeuroscienceDecision/full_text.md"
+      "full_text_url": "/papers/2020_NeuroscienceDecision/full_text.md",
+      "authors": [
+        "Hanks, Timothy",
+        "Mikhailova, Alexandra",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 92,
@@ -1842,7 +2390,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2019_DennettExplained/full_text.md"
+      "full_text_url": "/papers/2019_DennettExplained/full_text.md",
+      "authors": [
+        "Dennett, Daniel",
+        "Fleig-Goldstein, Brendan",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 93,
@@ -1862,7 +2415,8 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2019_PhDDissertation/full_text.md"
+      "full_text_url": "/papers/2019_PhDDissertation/full_text.md",
+      "authors": []
     },
     {
       "num": 94,
@@ -1882,7 +2436,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2019_AntConsciousness/full_text.md"
+      "full_text_url": "/papers/2019_AntConsciousness/full_text.md",
+      "authors": [
+        "Friedman, Daniel A.",
+        "Søvik, Eirik"
+      ]
     },
     {
       "num": 95,
@@ -1902,7 +2460,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2019_ForagerHydration/full_text.md"
+      "full_text_url": "/papers/2019_ForagerHydration/full_text.md",
+      "authors": [
+        "Friedman, Daniel A.",
+        "Greene, Michael J.",
+        "Gordon, Deborah M."
+      ]
     },
     {
       "num": 96,
@@ -1922,7 +2485,17 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_ArgentineAnt/full_text.md"
+      "full_text_url": "/papers/2018_ArgentineAnt/full_text.md",
+      "authors": [
+        "Burford, Benjamin P.",
+        "Lee, Gail",
+        "Friedman, Daniel A.",
+        "Brachmann, Esmé",
+        "Khan, Rebia",
+        "MacArthur-Waltz, Dylan J.",
+        "McCarty, Aidan D.",
+        "Gordon, Deborah M."
+      ]
     },
     {
       "num": 97,
@@ -1942,7 +2515,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_MVEE/full_text.md"
+      "full_text_url": "/papers/2018_MVEE/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 98,
@@ -1962,7 +2538,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_WoodliceAndMen/full_text.md"
+      "full_text_url": "/papers/2018_WoodliceAndMen/full_text.md",
+      "authors": [
+        "Friston, Karl",
+        "Fortier, Martin",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 99,
@@ -1982,7 +2563,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_PPPiP/full_text.md"
+      "full_text_url": "/papers/2018_PPPiP/full_text.md",
+      "authors": [
+        "Mikhailova, Alexandra",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 100,
@@ -2002,7 +2587,16 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_DopamineForaging/full_text.md"
+      "full_text_url": "/papers/2018_DopamineForaging/full_text.md",
+      "authors": [
+        "Friedman, Daniel A.",
+        "Pilko, Anna",
+        "Skowronska-Krawczyk, Dorota",
+        "Krasinska, Karolina",
+        "Parker, Jacqueline W.",
+        "Hirsh, Jay",
+        "Gordon, Deborah M."
+      ]
     },
     {
       "num": 101,
@@ -2022,7 +2616,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2017_MutAnts/full_text.md"
+      "full_text_url": "/papers/2017_MutAnts/full_text.md",
+      "authors": [
+        "Friedman, Daniel A.",
+        "Gordon, Deborah M.",
+        "Luo, Liqun"
+      ]
     },
     {
       "num": 102,
@@ -2042,7 +2641,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2017_TwoLineages/full_text.md"
+      "full_text_url": "/papers/2017_TwoLineages/full_text.md",
+      "authors": [
+        "Gordon, D. M.",
+        "Friedman, D. A."
+      ]
     },
     {
       "num": 103,
@@ -2062,7 +2665,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2016_AntGenetics/full_text.md"
+      "full_text_url": "/papers/2016_AntGenetics/full_text.md",
+      "authors": [
+        "Friedman, D.A.",
+        "Gordon, D.M."
+      ]
     },
     {
       "num": 104,
@@ -2082,7 +2689,15 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2016_ForagingGene/full_text.md"
+      "full_text_url": "/papers/2016_ForagingGene/full_text.md",
+      "authors": [
+        "Ingram, Krista K.",
+        "Gordon, Deborah M.",
+        "Friedman, Daniel A.",
+        "Greene, Michael",
+        "Kahler, John",
+        "Peteru, Swetha"
+      ]
     },
     {
       "num": 105,
@@ -2102,7 +2717,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2016_NuclearStructure/full_text.md"
+      "full_text_url": "/papers/2016_NuclearStructure/full_text.md",
+      "authors": [
+        "Friedman, Daniel A.",
+        "Tait, Lauren",
+        "Vaughan, Andrew T. M."
+      ]
     },
     {
       "num": 106,
@@ -2122,7 +2742,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2015_CryptoJews/full_text.md"
+      "full_text_url": "/papers/2015_CryptoJews/full_text.md",
+      "authors": [
+        "Marcus, Alexander W.",
+        "Ebel, Emily R.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 107,
@@ -2142,7 +2767,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2015_EhrlichialInfection/full_text.md"
+      "full_text_url": "/papers/2015_EhrlichialInfection/full_text.md",
+      "authors": [
+        "Kallick, Charles A.",
+        "Friedman, Daniel A.",
+        "Nyindo, Mramba B.A."
+      ]
     },
     {
       "num": 108,
@@ -2162,7 +2792,15 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2015_HoneyBeeEvolution/full_text.md"
+      "full_text_url": "/papers/2015_HoneyBeeEvolution/full_text.md",
+      "authors": [
+        "Jasper, William Cameron",
+        "Linksvayer, Timothy A.",
+        "Atallah, Joel",
+        "Friedman, Daniel",
+        "Chiu, Joanna C.",
+        "Johnson, Brian R."
+      ]
     },
     {
       "num": 109,
@@ -2182,7 +2820,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_EntoLinguistics/full_text.md"
+      "full_text_url": "/papers/2026_EntoLinguistics/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Chambers, Tucker Cahill"
+      ]
     },
     {
       "num": 110,
@@ -2202,7 +2844,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ActInfMetaAnalysis/full_text.md"
+      "full_text_url": "/papers/2026_ActInfMetaAnalysis/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Dietz, Joel"
+      ]
     },
     {
       "num": 111,
@@ -2222,7 +2868,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Kavi, Prakash Chandra",
+        "Friedman, Daniel Ari",
+        "Patow, Gustavo"
+      ]
     },
     {
       "num": 112,
@@ -2242,7 +2893,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_CognitiveCaseDiagrams/full_text.md"
+      "full_text_url": "/papers/2026_CognitiveCaseDiagrams/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 113,
@@ -2262,7 +2916,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_FEPLean/full_text.md"
+      "full_text_url": "/papers/2026_FEPLean/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 114,
@@ -2282,7 +2939,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_FacilitatorsCatechism/full_text.md"
+      "full_text_url": "/papers/2020_FacilitatorsCatechism/full_text.md",
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 115,
@@ -2302,7 +2963,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_BlakeJiang/full_text.md"
+      "full_text_url": "/papers/2026_BlakeJiang/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 116,
@@ -2322,7 +2986,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_CrescentCity/full_text.md"
+      "full_text_url": "/papers/2026_CrescentCity/full_text.md",
+      "authors": [
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 117,
@@ -2342,7 +3009,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_BiologyTextbook/full_text.md"
+      "full_text_url": "/papers/2026_BiologyTextbook/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 119,
@@ -2362,7 +3032,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_PolicyEntanglementActive/full_text.md"
+      "full_text_url": "/papers/2026_PolicyEntanglementActive/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 120,
@@ -2382,7 +3055,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_BoundedAutoResearchTiny/full_text.md"
+      "full_text_url": "/papers/2026_BoundedAutoResearchTiny/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 121,
@@ -2402,7 +3078,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ConvergenceAnalysisGradient/full_text.md"
+      "full_text_url": "/papers/2026_ConvergenceAnalysisGradient/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 122,
@@ -2422,7 +3101,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_EditorialQualityAt/full_text.md"
+      "full_text_url": "/papers/2026_EditorialQualityAt/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 123,
@@ -2442,7 +3124,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_TemplateApproachReproducible/full_text.md"
+      "full_text_url": "/papers/2026_TemplateApproachReproducible/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 124,
@@ -2462,7 +3147,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ActiveInferenceMulti/full_text.md"
+      "full_text_url": "/papers/2026_ActiveInferenceMulti/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 125,
@@ -2482,7 +3170,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_BeeStack/full_text.md"
+      "full_text_url": "/papers/2026_BeeStack/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Chambers, Tucker Cahill"
+      ]
     },
     {
       "num": 126,
@@ -2502,7 +3194,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_WhenDoBugs/full_text.md"
+      "full_text_url": "/papers/2026_WhenDoBugs/full_text.md",
+      "authors": [
+        "Tucker Chambers",
+        "Daniel A. Friedman"
+      ]
     },
     {
       "num": 127,
@@ -2522,7 +3218,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_SelfImprovementAgent/full_text.md"
+      "full_text_url": "/papers/2026_SelfImprovementAgent/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 128,
@@ -2542,7 +3241,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_BiofirmDevelopmentWith/full_text.md"
+      "full_text_url": "/papers/2025_BiofirmDevelopmentWith/full_text.md",
+      "authors": [
+        "John Clippinger",
+        "Andrew Pashea",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 129,
@@ -2562,7 +3266,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_ConCatEnate/full_text.md"
+      "full_text_url": "/papers/2025_ConCatEnate/full_text.md",
+      "authors": [
+        "Djuwidja, Andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 130,
@@ -2582,7 +3290,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_Graphspeak/full_text.md"
+      "full_text_url": "/papers/2025_Graphspeak/full_text.md",
+      "authors": [
+        "djuwidja, andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 131,
@@ -2602,7 +3314,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_BevCycPositPrimitive/full_text.md"
+      "full_text_url": "/papers/2025_BevCycPositPrimitive/full_text.md",
+      "authors": [
+        "djuwidja, andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 132,
@@ -2622,7 +3338,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_BeaconsPreEmulation/full_text.md"
+      "full_text_url": "/papers/2025_BeaconsPreEmulation/full_text.md",
+      "authors": [
+        "djuwidja, andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 133,
@@ -2642,7 +3362,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2025_ConCatEnate2/full_text.md"
+      "full_text_url": "/papers/2025_ConCatEnate2/full_text.md",
+      "authors": [
+        "djuwidja, andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 134,
@@ -2662,7 +3386,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2024_PushPull/full_text.md"
+      "full_text_url": "/papers/2024_PushPull/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 135,
@@ -2682,7 +3409,33 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_NaturalAIBased/full_text.md"
+      "full_text_url": "/papers/2023_NaturalAIBased/full_text.md",
+      "authors": [
+        "Clippinger, John",
+        "de Vries, Bert",
+        "Noveck, Beth",
+        "Fields, Chris",
+        "Slater, Cory",
+        "Friedman, Daniel Ari",
+        "Silbersweig, David A.",
+        "Lapenta, Francesco",
+        "Grimm, Holly",
+        "Emmett, Jeff",
+        "Shane, Joshua",
+        "Friston, Karl",
+        "Nkemnkia, Martin Nkafu",
+        "Brown, Matthew",
+        "Pirkowski, Matthew",
+        "Levin, Michael",
+        "Zargham, Michael",
+        "Tuan, Nguyen Anh",
+        "Achuthan, Krishnashree",
+        "Patterson, Thomas",
+        "David, Scott L.",
+        "Kehler, Thomas",
+        "Knight, Virginia Bleu",
+        "Nakayama, Yasuhide"
+      ]
     },
     {
       "num": 136,
@@ -2702,7 +3455,16 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_ATLAS2/full_text.md"
+      "full_text_url": "/papers/2023_ATLAS2/full_text.md",
+      "authors": [
+        "Cordes, R.J.",
+        "David, Scott",
+        "Friedman, Daniel",
+        "Mikhailova, Alexandra",
+        "Penland, Andrew",
+        "Young, Sam",
+        "Zacharias, Colten"
+      ]
     },
     {
       "num": 137,
@@ -2722,7 +3484,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_TranscriptActiveInference/full_text.md"
+      "full_text_url": "/papers/2023_TranscriptActiveInference/full_text.md",
+      "authors": [
+        "Peters, Megan A. K.",
+        "Bradford, Nora",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 138,
@@ -2742,7 +3509,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_ModernNostrIndex/full_text.md"
+      "full_text_url": "/papers/2023_ModernNostrIndex/full_text.md",
+      "authors": [
+        "Claros, Andrew",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 139,
@@ -2762,7 +3533,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_SlidesIris/full_text.md"
+      "full_text_url": "/papers/2023_SlidesIris/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 140,
@@ -2782,7 +3556,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_CanonicalNeuralNetworks/full_text.md"
+      "full_text_url": "/papers/2022_CanonicalNeuralNetworks/full_text.md",
+      "authors": [
+        "Isomura, Takuya",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 141,
@@ -2802,7 +3580,15 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_InteroceptionAsModeling/full_text.md"
+      "full_text_url": "/papers/2022_InteroceptionAsModeling/full_text.md",
+      "authors": [
+        "Sennesh, Eli",
+        "Theriault, Jordan",
+        "Douglass, Dave",
+        "Tennant, Ian",
+        "Tickles, Dean",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 142,
@@ -2822,7 +3608,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_Transcript/full_text.md"
+      "full_text_url": "/papers/2022_Transcript/full_text.md",
+      "authors": [
+        "Solms, Mark",
+        "Douglass, David S",
+        "Sillett, Stephen",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 143,
@@ -2842,7 +3634,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_WorkedExampleBayesian/full_text.md"
+      "full_text_url": "/papers/2022_WorkedExampleBayesian/full_text.md",
+      "authors": [
+        "Sakthivadivel, Dalton AR",
+        "Rahmjoo, Ali",
+        "Smékal, Jakub",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 144,
@@ -2862,7 +3660,13 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_TranscriptDiscussions/full_text.md"
+      "full_text_url": "/papers/2022_TranscriptDiscussions/full_text.md",
+      "authors": [
+        "Tison, Rémi",
+        "Tickles, Dean",
+        "Knight, Bleu",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 145,
@@ -2882,7 +3686,14 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2022_TrackingPublicSensemaking/full_text.md"
+      "full_text_url": "/papers/2022_TrackingPublicSensemaking/full_text.md",
+      "authors": [
+        "Mascarenhas, Mridula",
+        "Cordes, RJ",
+        "Knight, Bleu",
+        "Murphy, Sarah",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 146,
@@ -2902,7 +3713,18 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_Transcript/full_text.md"
+      "full_text_url": "/papers/2021_Transcript/full_text.md",
+      "authors": [
+        "Friston, Karl",
+        "Douglass, David Standish",
+        "Iennaco de Vasconcelos, Maria Luiza",
+        "Sillett, Stephen",
+        "Sganzerla, Lorena",
+        "Tickles, Dean",
+        "Metelkin, Ivan",
+        "Vyatkin, Alex",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 147,
@@ -2922,7 +3744,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2021_CollaborativeWritingCatechism/full_text.md"
+      "full_text_url": "/papers/2021_CollaborativeWritingCatechism/full_text.md",
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 148,
@@ -2942,7 +3768,12 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_ReimaginingMaps/full_text.md"
+      "full_text_url": "/papers/2020_ReimaginingMaps/full_text.md",
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel Ari",
+        "Maron, Mikel"
+      ]
     },
     {
       "num": 149,
@@ -2962,7 +3793,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2020_InfiniteGamesInfinite/full_text.md"
+      "full_text_url": "/papers/2020_InfiniteGamesInfinite/full_text.md",
+      "authors": [
+        "Friedman, Daniel",
+        "Cordes, RJ"
+      ]
     },
     {
       "num": 150,
@@ -2982,7 +3817,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_MusicNeverStopped/full_text.md"
+      "full_text_url": "/papers/2026_MusicNeverStopped/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 151,
@@ -3002,7 +3840,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_DeterministicTestbedSelf/full_text.md"
+      "full_text_url": "/papers/2026_DeterministicTestbedSelf/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 152,
@@ -3022,7 +3863,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_RecoveringLLMPersona/full_text.md"
+      "full_text_url": "/papers/2026_RecoveringLLMPersona/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 153,
@@ -3042,7 +3886,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_Triplicate/full_text.md"
+      "full_text_url": "/papers/2026_Triplicate/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 154,
@@ -3062,7 +3909,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_TemplateTextbook/full_text.md"
+      "full_text_url": "/papers/2026_TemplateTextbook/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 155,
@@ -3082,7 +3932,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 156,
@@ -3093,8 +3944,8 @@
       "type": "Paper",
       "title": "Full speed ahead to the City on the Hill",
       "venue": "Science",
-      "url": "https://doi.org/10.1126/science.352.6288.886",
-      "doi": "10.1126/science.352.6288.886",
+      "url": "https://doi.org/10.1126/science.aag1520",
+      "doi": "10.1126/science.aag1520",
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
@@ -3102,7 +3953,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 157,
@@ -3122,7 +3974,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 158,
@@ -3142,7 +3995,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 159,
@@ -3162,7 +4016,14 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Smékal, Jakub",
+        "Choudhury, Arhan",
+        "Singh, Amit Kumar",
+        "Damaty, Shady El",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 160,
@@ -3182,7 +4043,12 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Kavi, Prakash Chandra",
+        "Zamora-López, Gorka",
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 161,
@@ -3202,7 +4068,11 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "Cordes, Richard J."
+      ]
     },
     {
       "num": 162,
@@ -3222,7 +4092,10 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Cordes, RJ"
+      ]
     },
     {
       "num": 163,
@@ -3242,7 +4115,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 164,
@@ -3262,7 +4136,8 @@
       "has_skill_md": false,
       "has_agents_md": false,
       "has_readme": false,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": []
     },
     {
       "num": 165,
@@ -3282,7 +4157,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ITrace/full_text.md"
+      "full_text_url": "/papers/2026_ITrace/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 166,
@@ -3302,7 +4180,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_DemoCreate/full_text.md"
+      "full_text_url": "/papers/2026_DemoCreate/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 167,
@@ -3322,7 +4203,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ENTO/full_text.md"
+      "full_text_url": "/papers/2026_ENTO/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 168,
@@ -3342,7 +4226,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari",
+        "The GeneralizedNotationNotation Community Contributors"
+      ]
     },
     {
       "num": 169,
@@ -3362,7 +4250,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_COGANT/full_text.md"
+      "full_text_url": "/papers/2026_COGANT/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 170,
@@ -3382,7 +4273,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_AGEINT/full_text.md"
+      "full_text_url": "/papers/2026_AGEINT/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 171,
@@ -3402,7 +4296,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_PolicyDistillationAs/full_text.md"
+      "full_text_url": "/papers/2026_PolicyDistillationAs/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 172,
@@ -3422,7 +4319,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_TemplateMadlib/full_text.md"
+      "full_text_url": "/papers/2026_TemplateMadlib/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 173,
@@ -3442,7 +4342,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_CaliforniaPublicRecords/full_text.md"
+      "full_text_url": "/papers/2026_CaliforniaPublicRecords/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 174,
@@ -3462,7 +4365,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_CogSecSkills/full_text.md"
+      "full_text_url": "/papers/2026_CogSecSkills/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 175,
@@ -3482,7 +4388,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_RealizingEmptiness/full_text.md"
+      "full_text_url": "/papers/2026_RealizingEmptiness/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 176,
@@ -3502,7 +4411,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_LivingMetaAnalysis/full_text.md"
+      "full_text_url": "/papers/2026_LivingMetaAnalysis/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 177,
@@ -3522,7 +4434,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_RefinementGold/full_text.md"
+      "full_text_url": "/papers/2026_RefinementGold/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 178,
@@ -3542,7 +4457,11 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_AlphaCOGANT/full_text.md"
+      "full_text_url": "/papers/2026_AlphaCOGANT/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman",
+        "Tucker Cahill Chambers"
+      ]
     },
     {
       "num": 179,
@@ -3562,7 +4481,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_MappingWilliamBlake/full_text.md"
+      "full_text_url": "/papers/2026_MappingWilliamBlake/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 180,
@@ -3582,7 +4504,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_SortitionUpstreamNTQR/full_text.md"
+      "full_text_url": "/papers/2026_SortitionUpstreamNTQR/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 181,
@@ -3602,7 +4527,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ExploratoryDataAnalysis/full_text.md"
+      "full_text_url": "/papers/2026_ExploratoryDataAnalysis/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 182,
@@ -3622,7 +4550,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_DomainLanguageSpecifying/full_text.md"
+      "full_text_url": "/papers/2026_DomainLanguageSpecifying/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 183,
@@ -3642,7 +4573,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_EntomologicalLaw/full_text.md"
+      "full_text_url": "/papers/2026_EntomologicalLaw/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 184,
@@ -3662,7 +4596,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ShapeBetween/full_text.md"
+      "full_text_url": "/papers/2026_ShapeBetween/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 185,
@@ -3682,7 +4619,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_AutopoieticProjectGeneration/full_text.md"
+      "full_text_url": "/papers/2026_AutopoieticProjectGeneration/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 186,
@@ -3702,7 +4642,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_TemplatePitchDeck/full_text.md"
+      "full_text_url": "/papers/2026_TemplatePitchDeck/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 187,
@@ -3722,7 +4665,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_ReproducibleLiteratureSynthesis/full_text.md"
+      "full_text_url": "/papers/2026_ReproducibleLiteratureSynthesis/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 188,
@@ -3742,7 +4688,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_RegisteredReportTemplate/full_text.md"
+      "full_text_url": "/papers/2026_RegisteredReportTemplate/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 189,
@@ -3762,7 +4711,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_RedactedReportTemplate/full_text.md"
+      "full_text_url": "/papers/2026_RedactedReportTemplate/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 190,
@@ -3782,7 +4734,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_PoolsRulesTools/full_text.md"
+      "full_text_url": "/papers/2026_PoolsRulesTools/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 191,
@@ -3802,7 +4757,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_IllegalStatesMostly/full_text.md"
+      "full_text_url": "/papers/2026_IllegalStatesMostly/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 192,
@@ -3822,7 +4780,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_DataDescriptorTemplate/full_text.md"
+      "full_text_url": "/papers/2026_DataDescriptorTemplate/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 193,
@@ -3842,7 +4803,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_TemplateApproachReproducible2/full_text.md"
+      "full_text_url": "/papers/2026_TemplateApproachReproducible2/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 194,
@@ -3862,7 +4826,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2026_PriorCognitiveArt/full_text.md"
+      "full_text_url": "/papers/2026_PriorCognitiveArt/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 195,
@@ -3882,7 +4849,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 196,
@@ -3902,7 +4872,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 197,
@@ -3922,7 +4895,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     },
     {
       "num": 198,
@@ -3942,7 +4918,10 @@
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": ""
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ]
 }

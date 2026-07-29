@@ -230,7 +230,7 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 - 2024 — [The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)](https://doi.org/10.5281/zenodo.14108992)
 - 2023 — [The Active Inference Institute and Active Inference Ecosystem (v1)](https://doi.org/10.5281/zenodo.8266280)
 - 2022 — [Catechism for Towards Active Diffusion](https://doi.org/10.5281/zenodo.7443847)
-- 2016 — [Full speed ahead to the City on the Hill](https://doi.org/10.1126/science.352.6288.886)
+- 2016 — [Full speed ahead to the City on the Hill](https://doi.org/10.1126/science.aag1520)
 
 **Selected repositories**
 

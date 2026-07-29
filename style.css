@@ -132,6 +132,14 @@
             margin-bottom:.75rem;
             color:#fff;
         }
+        /* Author byline on generated work pages, between title and venue. */
+        .byline{
+            color:var(--text-secondary);
+            max-width:760px;
+            margin:0 auto .5rem;
+            font-size:.92rem;
+            line-height:1.6;
+        }
         .page-hero .sub{
             color:var(--text-secondary);
             max-width:760px;

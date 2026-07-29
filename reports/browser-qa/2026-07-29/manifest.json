@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T17:49:25Z",
+  "generated_at": "2026-07-29T18:32:52Z",
   "tool": "Playwright Python sync API",
   "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
   "passing": 7,
@@ -14,7 +14,7 @@
         "page_errors": 0,
         "known_meta_csp_warnings": 6
       },
-      "duration_ms": 2748
+      "duration_ms": 2767
     },
     {
       "name": "mobile menu opens, closes, and restores focus",
@@ -23,7 +23,7 @@
         "opened_and_closed": true,
         "focus_restored": true
       },
-      "duration_ms": 119
+      "duration_ms": 120
     },
     {
       "name": "no-JavaScript fallbacks remain usable",
@@ -32,7 +32,7 @@
         "routes": 3,
         "fallbacks": "visible"
       },
-      "duration_ms": 83
+      "duration_ms": 88
     },
     {
       "name": "publication filters, announcements, and sorting update state",
@@ -42,7 +42,7 @@
         "paper_rows": 176,
         "sort_state": "descending"
       },
-      "duration_ms": 206
+      "duration_ms": 221
     },
     {
       "name": "gallery lightbox traps and restores focus",
@@ -51,7 +51,7 @@
         "trigger": "Open artwork: All-domain Anomaly Resolution Office (AARO)",
         "focus_restored": true
       },
-      "duration_ms": 205
+      "duration_ms": 177
     },
     {
       "name": "320px layout honors reduced motion without page overflow",
@@ -62,7 +62,7 @@
         "reduced_motion": true,
         "max_overflow_px": 2
       },
-      "duration_ms": 1133
+      "duration_ms": 1123
     },
     {
       "name": "forced colors and YouTube iframe policy remain covered",
@@ -72,7 +72,7 @@
         "iframe_origin": "www.youtube-nocookie.com",
         "iframe_title": true
       },
-      "duration_ms": 89
+      "duration_ms": 88
     }
   ]
 }

@@ -81,7 +81,46 @@ N1  - Catalog row 7; docs: papers/2026_DoorsOfPerception/
 ER  -
 
 TY  - CONF
-AU  - Friedman, Daniel Ari
+AU  - Active Inference Institute
+AU  - Safron, Adam
+AU  - Kiefer, Alex
+AU  - Sabine, Alexander
+AU  - Hiott, Andrea
+AU  - Pashea, Andrew
+AU  - Alicea, Bradly
+AU  - Fields, Chris
+AU  - Holt, Denise
+AU  - Shah, Harshil
+AU  - Maitra, Satyaki
+AU  - Pae, Hongju
+AU  - Tennant, Ian
+AU  - Cloutier, Jean-François
+AU  - Freda, Jim
+AU  - Dietz, Joel
+AU  - Boik, John
+AU  - Friston, Karl
+AU  - Iennaco, Maria Luiza
+AU  - Brown, Matthew
+AU  - Garfield, Michael
+AU  - Hinrichs, Nicolás
+AU  - Octopus
+AU  - PabloFM
+AU  - Waade, Peter Thestrup
+AU  - Worden, Robert
+AU  - Senchal, Sam A
+AU  - Montañez, Samuel
+AU  - Namjoshi, Sanjeev
+AU  - Shrivastava, Siddhant
+AU  - de Jager, Sonia
+AU  - Macurdy, Steph
+AU  - Weiniger, Steven
+AU  - Hasty, Susan
+AU  - Nguyen, Viet Dung
+AU  - Gebhardt, William
+AU  - Lennon, Michael
+AU  - Newell, Dave
+AU  - Huembeli, Patrick
+AU  - Ramstead, Maxwell
 PY  - 2025
 TI  - 5th Applied Active Inference Symposium — Abstract Book
 T2  - Presentation
@@ -93,7 +132,9 @@ N1  - Catalog row 8; docs: papers/2025_5thSymposium/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Die Schwarze Katze
+AU  - Djuwidja, Andrew
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
 T2  - Zenodo
@@ -117,7 +158,7 @@ N1  - Catalog row 10; docs: papers/2025_CEREBRUM/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Computational Complexity and Energetics of the Ant Stack
 T2  - Zenodo
@@ -129,7 +170,7 @@ N1  - Catalog row 11; docs: papers/2025_AntStackComplexity/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 T2  - Zenodo
@@ -141,7 +182,8 @@ N1  - Catalog row 12; docs: papers/2025_EvoJump/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Mikhailova, Alexandra
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Increasing the Accessibility and Applicability of Active Inference
 T2  - Zenodo
@@ -153,7 +195,7 @@ N1  - Catalog row 13; docs: papers/2025_AccessibilityActiveInference/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - MDKV: A Multitrack Markdown Container for Structured, Portable Documents
 T2  - Zenodo
@@ -165,7 +207,7 @@ N1  - Catalog row 14; docs: papers/2025_MDKV/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Markdown Decision Process: A Framework for Probabilistic Document Analysis
 T2  - Zenodo
@@ -201,7 +243,7 @@ N1  - Catalog row 17; docs: papers/2025_OnTime/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - QuadMath: An Analytical Review of 4D and Quadray Coordinates
 T2  - Zenodo
@@ -213,7 +255,11 @@ N1  - Catalog row 18; docs: papers/2025_QuadMath/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Lumiruusu, Janna
+AU  - Friedman, Daniel
+AU  - Rahman, Shagor
+AU  - Baulin, Vladimir
+AU  - Pashea, Andrew
 PY  - 2025
 TI  - ResNei: Solution Design Document
 T2  - Zenodo
@@ -225,7 +271,7 @@ N1  - Catalog row 19; docs: papers/2025_ResNei/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Symergetics: Symbolic Synergetics for Rational Arithmetic
 T2  - Zenodo
@@ -237,7 +283,7 @@ N1  - Catalog row 20; docs: papers/2025_Symergetics/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Synthesis of Agent and Niche
 T2  - Zenodo
@@ -249,7 +295,7 @@ N1  - Catalog row 21; docs: papers/2025_AgentAndNiche/
 ER  -
 
 TY  - CONF
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Systems Processes, Active Inference, and Beyond
 T2  - Presentation
@@ -261,7 +307,13 @@ N1  - Catalog row 22; docs: papers/2025_SystemsProcesses/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Tolchinsky, Alexey
+AU  - Levin, Michael
+AU  - Fields, Chris
+AU  - Da Costa, Lancelot
+AU  - Murphy, Rachael
+AU  - Friedman, Daniel
+AU  - Pincus, David
 PY  - 2025
 TI  - Temporal Depth in a Coherent Self and in Depersonalization
 T2  - Frontiers in Psychology
@@ -273,7 +325,37 @@ N1  - Catalog row 23; docs: papers/2025_TemporalDepth/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Active Inference Institute
+AU  - Vyatkin, Alex
+AU  - Mikhailova, Alexandra
+AU  - Hiott, Andrea
+AU  - Pashea, Andrew
+AU  - Elers, Ben
+AU  - Berkers, Bert
+AU  - Knight, Bleu
+AU  - Fields, Chris
+AU  - Whittet, Dan
+AU  - Friedman, Daniel
+AU  - Ticklẽs, Déan
+AU  - Paterson, Fraser
+AU  - Stubbs, Gareth
+AU  - Grimm, Holly
+AU  - Smekal, Jakub
+AU  - Cooper, Jeremy
+AU  - Boik, John
+AU  - Burian, Libor
+AU  - Albarracin, Mahault
+AU  - Iennaco, Maria Luiza
+AU  - Brown, Matthew
+AU  - Thacker, Mick
+AU  - Gilli, Peter
+AU  - Kaufmann, Rafael
+AU  - Cordes, RJ
+AU  - Henry, Ryan
+AU  - Ramesh, Sandeep
+AU  - David, Scott
+AU  - Alvarado, Sebastian
+AU  - Baker, Zach
 PY  - 2025
 TI  - The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)
 T2  - Zenodo
@@ -297,7 +379,13 @@ N1  - Catalog row 25; docs: papers/2025_AntStack/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Baulin, Vladimir
+AU  - Cook, Austin
+AU  - Friedman, Daniel
+AU  - Lumiruusu, Janna
+AU  - Pashea, Andrew
+AU  - Rahman, Shagor
+AU  - Waldeck, Benedikt
 PY  - 2025
 TI  - The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 T2  - ArXiv
@@ -309,7 +397,10 @@ N1  - Catalog row 26; docs: papers/2025_DiscoveryEngine/
 ER  -
 
 TY  - JOUR
+AU  - Kavi, Prakash Chandra
+AU  - Zamora-López, Gorka
 AU  - Friedman, Daniel Ari
+AU  - Patow, Gustavo
 PY  - 2025
 TI  - Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States
 T2  - Entropy
@@ -332,7 +423,20 @@ N1  - Catalog row 28; docs: papers/2025_ConsciousnessAnts/
 ER  -
 
 TY  - JOUR
+AU  - Douglass, David S.
+AU  - Pease, Adam
 AU  - Friedman, Daniel Ari
+AU  - Balbuena, Jessica Angeli
+AU  - Chokhalingam, Rhea
+AU  - Hurtado, Ana Magdalena
+AU  - Iennaco, Maria Luiza
+AU  - Knight, V. Bleu
+AU  - Maybell, Scott Ryan
+AU  - Rahmjoo, Ali
+AU  - Sayeg, Paulo Duare Andrade
+AU  - Smékal, Jakub
+AU  - Tickles, Dean
+AU  - Vyatkin, Alex
 PY  - 2024
 TI  - Aligning Active Inference Ontology to SUMO
 T2  - Zenodo
@@ -344,7 +448,9 @@ N1  - Catalog row 29; docs: papers/2024_OntologySUMO/
 ER  -
 
 TY  - CONF
-AU  - Friedman, Daniel Ari
+AU  - John Clippinger
+AU  - Andrew Pashea
+AU  - Friedman, Daniel
 PY  - 2024
 TI  - BioFirm Development at Applied Active Inference Symposium 2024
 T2  - Presentation
@@ -356,7 +462,9 @@ N1  - Catalog row 30; docs: papers/2024_BioFirm/
 ER  -
 
 TY  - JOUR
+AU  - Mascarenhas, Mridula
 AU  - Friedman, Daniel Ari
+AU  - Cordes, Richard J
 PY  - 2024
 TI  - Bridging gaps in image meme research: A multidisciplinary paradigm
 T2  - JASIST
@@ -368,7 +476,11 @@ N1  - Catalog row 31; docs: papers/2024_ImageMemeResearch/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Golian, Marek J.
+AU  - Friedman, Daniel A.
+AU  - Harrison, Mark
+AU  - McMahon, Dino P.
+AU  - Buellesbach, Jan
 PY  - 2024
 TI  - Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea
 T2  - Ecology & Evolution
@@ -380,7 +492,7 @@ N1  - Catalog row 32; docs: papers/2024_BlattodeaDiversity/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Cordes, RJ
 PY  - 2024
 TI  - Comments on National Digital Twins R&D Strategic Plan
 T2  - Zenodo
@@ -392,7 +504,8 @@ N1  - Catalog row 33; docs: papers/2024_DigitalTwins/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Dehouche, Nassim
+AU  - Friedman, Daniel
 PY  - 2024
 TI  - Enhancing Population-based Search with Active Inference
 T2  - ArXiv
@@ -404,7 +517,15 @@ N1  - Catalog row 34; docs: papers/2024_PopulationSearch/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Baulin, Vladimir
+AU  - Vyatkin, Alex
+AU  - GUÉNIN—CARLUT, Avel
+AU  - Friedman, Daniel
+AU  - Bolt, John
+AU  - Falkenstein, Stefan
+AU  - Jassal, Parishrut
+AU  - Trois, Celio
+AU  - Minchin, Jonathan
 PY  - 2024
 TI  - FarmWorks: Decentralized AI Agents for Personalized Solutions
 T2  - Zenodo
@@ -416,7 +537,17 @@ N1  - Catalog row 35; docs: papers/2024_FarmWorks/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friston, Karl J.
+AU  - Parr, Thomas
+AU  - Heins, Conor
+AU  - Constant, Axel
+AU  - Friedman, Daniel
+AU  - Isomura, Takuya
+AU  - Fields, Chris
+AU  - Verbelen, Tim
+AU  - Ramstead, Maxwell
+AU  - Clippinger, John
+AU  - Frith, Christopher D.
 PY  - 2024
 TI  - Federated inference and belief sharing
 T2  - Neuroscience & Biobehavioral Reviews
@@ -429,6 +560,7 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Tickles, Dean
 PY  - 2024
 TI  - Four-fold Fields of Quantum Dreams
 T2  - Zenodo
@@ -452,7 +584,7 @@ N1  - Catalog row 38; docs: papers/2024_MathArtBlake/
 ER  -
 
 TY  - CONF
-AU  - Friedman, Daniel Ari
+AU  - Sensemaking Scenius
 PY  - 2024
 TI  - Sensemaking Federation: Exploring the Frontiers of Digital Innovation
 T2  - Presentation
@@ -464,7 +596,12 @@ N1  - Catalog row 39; docs: papers/2024_SensemakingFederation/
 ER  -
 
 TY  - JOUR
+AU  - Albarracin, Mahault
+AU  - Pitliya, Riddhi J.
+AU  - St. Clere Smithe, Toby
 AU  - Friedman, Daniel Ari
+AU  - Friston, Karl
+AU  - Ramstead, Maxwell J. D.
 PY  - 2024
 TI  - Shared Protentions in Multi-Agent Active Inference
 T2  - Entropy
@@ -476,7 +613,37 @@ N1  - Catalog row 40; docs: papers/2024_SharedProtentions/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Active Inference Institute
+AU  - Vyatkin, Alex
+AU  - Mikhailova, Alexandra
+AU  - Hiott, Andrea
+AU  - Pashea, Andrew
+AU  - Elers, Ben
+AU  - Berkers, Bert
+AU  - Knight, Bleu
+AU  - Fields, Chris
+AU  - Whittet, Dan
+AU  - Friedman, Daniel
+AU  - Ticklẽs, Déan
+AU  - Paterson, Fraser
+AU  - Stubbs, Gareth
+AU  - Grimm, Holly
+AU  - Smekal, Jakub
+AU  - Cooper, Jeremy
+AU  - Boik, John
+AU  - Burian, Libor
+AU  - Albarracin, Mahault
+AU  - Iennaco, Maria Luiza
+AU  - Brown, Matthew
+AU  - Thacker, Mick
+AU  - Gilli, Peter
+AU  - Kaufmann, Rafael
+AU  - Cordes, RJ
+AU  - Henry, Ryan
+AU  - Ramesh, Sandeep
+AU  - David, Scott
+AU  - Alvarado, Sebastian
+AU  - Baker, Zach
 PY  - 2024
 TI  - The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
 T2  - Zenodo
@@ -500,6 +667,7 @@ N1  - Catalog row 42; docs: papers/2024_InfiniteImaginarium/
 ER  -
 
 TY  - JOUR
+AU  - Tickles, Dean
 AU  - Friedman, Daniel Ari
 PY  - 2024
 TI  - Why Paleolithic Rockstars were both enigmatic and sporadic
@@ -523,6 +691,7 @@ N1  - Catalog row 44; docs: papers/2024_CurioCards/
 ER  -
 
 TY  - JOUR
+AU  - Rahmjoo, Ali
 AU  - Friedman, Daniel Ari
 PY  - 2023
 TI  - A guided tour through the spaces of particular "minds"
@@ -535,7 +704,8 @@ N1  - Catalog row 45; docs: papers/2023_GuidedTourMinds/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Saund, Eric
+AU  - Ari Friedman, Daniel
 PY  - 2023
 TI  - A single-pheromone model accounts for empirical patterns of ant colony foraging
 T2  - Cognitive Systems Research
@@ -548,6 +718,11 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Tong, Chao
+AU  - Linksvayer, Timothy A.
+AU  - Freund, Matthias
+AU  - Keough, Nicole Weronika
+AU  - Johnson, Brian
 PY  - 2023
 TI  - A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
 T2  - Zenodo
@@ -559,7 +734,13 @@ N1  - Catalog row 47; docs: papers/2023_HoneyBeeGeneExpression/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friston, Karl
+AU  - Friedman, Daniel A.
+AU  - Constant, Axel
+AU  - Knight, V. Bleu
+AU  - Fields, Chris
+AU  - Parr, Thomas
+AU  - Campbell, John O.
 PY  - 2023
 TI  - A variational synthesis of evolutionary and developmental dynamics
 T2  - Entropy
@@ -571,7 +752,13 @@ N1  - Catalog row 48; docs: papers/2023_VariationalSynthesis/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Cordes, R.J.
+AU  - David, Scott
+AU  - Friedman, Daniel
+AU  - Mikhailova, Alexandra
+AU  - Penland, Andrew
+AU  - Young, Sam
+AU  - Zacharias, Colten
 PY  - 2023
 TI  - ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management
 T2  - Zenodo
@@ -607,7 +794,10 @@ N1  - Catalog row 51; docs: papers/2023_CognitiveSovereignty/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - David, Scott
+AU  - Abu-Ghazaleh, Jumana
+AU  - Friedman, Daniel
+AU  - Cordes, RJ
 PY  - 2023
 TI  - Comments on AI Accountability Policy to NTIA
 T2  - NTIA
@@ -619,7 +809,12 @@ N1  - Catalog row 52; docs: papers/2023_AIAccountability/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Balzan, Francesco
+AU  - Campbell, John
+AU  - Friston, Karl
+AU  - Ramstead, Maxwell James
+AU  - Friedman, Daniel
+AU  - Constant, Axel
 PY  - 2023
 TI  - Distributed Science — The Scientific Process as Multi-Scale Active Inference
 T2  - OSF
@@ -643,7 +838,9 @@ N1  - Catalog row 54; docs: papers/2023_NSFReporting/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel  A.
+AU  - Wexler, Judith R.
+AU  - Alvarado, Sebastian
 PY  - 2023
 TI  - Experimental Entomology in the Age of Video
 T2  - JoVE
@@ -655,6 +852,7 @@ N1  - Catalog row 55; docs: papers/2023_VideoEntomology/
 ER  -
 
 TY  - JOUR
+AU  - Smékal, Jakub
 AU  - Friedman, Daniel Ari
 PY  - 2023
 TI  - Generalized Notation Notation for Active Inference Models
@@ -667,7 +865,8 @@ N1  - Catalog row 56; docs: papers/2023_GNN/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
+AU  - Smékal, Jakub
 PY  - 2023
 TI  - Generative Research Teams: Active Inference Compositions for Research and Meta-Science
 T2  - Zenodo
@@ -691,7 +890,8 @@ N1  - Catalog row 58; docs: papers/2023_AntsAging/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Tamari, Ronen
+AU  - Friedman, Daniel
 PY  - 2023
 TI  - Open Access science needs Open Science Sensemaking (OSSm)
 T2  - MetaArXiv
@@ -715,7 +915,27 @@ N1  - Catalog row 60; docs: papers/2023_PostdocReview/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Institute, Active Inference
+AU  - Aguirre, Ander
+AU  - Boik, John
+AU  - Burian, Libor
+AU  - Brown, Matthew
+AU  - Cordes, RJ
+AU  - David, Scott
+AU  - Douglass, David S
+AU  - Fernandez-Maquieira, Pablo
+AU  - Friedman, Daniel A
+AU  - Grimm, Holly
+AU  - Guénin–Carlut, Avel
+AU  - Iennaco, Maria Luiza
+AU  - Knight, V Bleu
+AU  - Mikhailova, Alexandra
+AU  - Rahmjoo, Ali
+AU  - Razi, Adeel
+AU  - Smékal, Jakub
+AU  - Tamari, Ronen
+AU  - Tickles, Dean
+AU  - Vyatkin, Alex
 PY  - 2023
 TI  - The Active Inference Institute and Active Inference Ecosystem (v1)
 T2  - Zenodo
@@ -727,6 +947,9 @@ N1  - Catalog row 61; docs: papers/2023_AII_v1/
 ER  -
 
 TY  - JOUR
+AU  - Wilkinson, Thomas M.
+AU  - Cordes, RJ
+AU  - David, Scott
 AU  - Friedman, Daniel Ari
 PY  - 2023
 TI  - The P3IF: Properties, Processes, and Perspectives Inter-Framework
@@ -739,7 +962,8 @@ N1  - Catalog row 62; docs: papers/2023_P3IF/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Tickles, Dean
+AU  - Friedman, Daniel
 PY  - 2023
 TI  - To comment or not to comment
 T2  - Physics of Life Reviews
@@ -751,7 +975,22 @@ N1  - Catalog row 63; docs: papers/2023_ToComment/
 ER  -
 
 TY  - ELEC
+AU  - Fields, Chris
+AU  - Aguirre, Ander
 AU  - Friedman, Daniel Ari
+AU  - Balzan, Francesco
+AU  - Berger, Ross
+AU  - Draguta, David
+AU  - Guénin-Carlut, Avel
+AU  - Hurtado, Ana Magdelena
+AU  - Knight, V. Bleu
+AU  - Koles, Kate
+AU  - Neophytou, Haris
+AU  - Prior, Corby
+AU  - Tickles, Dean
+AU  - Tennant, Ian
+AU  - Tolchinsky, Alexey
+AU  - Active Inference Institute
 PY  - 2023
 TI  - Transcript of Chris Fields, "Physics as Information Processing" course
 T2  - Zenodo
@@ -775,7 +1014,20 @@ N1  - Catalog row 65; docs: papers/2023_BlakeFuller/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
+AU  - Applegate-Swanson, Shaun
+AU  - Balbuena, Jessica Angeli
+AU  - Choudhury, Arhan
+AU  - Cordes, RJ
+AU  - El Damaty, Shady
+AU  - Guénin—Carlut, Avel
+AU  - Knight, V. Bleu
+AU  - Metelkin, Ivan
+AU  - Shrivastava, Siddhant
+AU  - Singh, Amit Kumar
+AU  - Smékal, Jakub
+AU  - Caleb, Tuttle.
+AU  - Vyatkin, Alexander
 PY  - 2022
 TI  - An Active Inference Ontology for Decentralized Science
 T2  - Zenodo
@@ -787,7 +1039,8 @@ N1  - Catalog row 66; docs: papers/2022_ActiveInferenceOntology/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Smékal, Jakub
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - Catechism for Towards Active Diffusion
 T2  - Zenodo
@@ -799,7 +1052,11 @@ N1  - Catalog row 67; docs: papers/2022_ActiveDiffusion/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Tamari, Ronen
+AU  - Friedman, Daniel
+AU  - Fischer, William
+AU  - Hebert, Lauren
+AU  - Shahaf, Dafna
 PY  - 2022
 TI  - From Users to (Sense)Makers: Stigmergic Social Annotation
 T2  - Hypertext '22
@@ -811,7 +1068,9 @@ N1  - Catalog row 68; docs: papers/2022_StigmergicAnnotation/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Sapolsky, Robert
+AU  - Mikhailova, Alexandra
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - On free will or the lack thereof (interview with Robert Sapolsky)
 T2  - ALIUS Bulletin
@@ -823,6 +1082,7 @@ N1  - Catalog row 69; docs: papers/2022_FreeWillSapolsky/
 ER  -
 
 TY  - JOUR
+AU  - O'Connor, Sean
 AU  - Friedman, Daniel Ari
 PY  - 2022
 TI  - Predictive Processing Interpretation of the Mirror Test
@@ -846,6 +1106,7 @@ N1  - Catalog row 71; docs: papers/2022_InformationCommons/
 ER  -
 
 TY  - JOUR
+AU  - Smékal, Jakub
 AU  - Friedman, Daniel Ari
 PY  - 2022
 TI  - Systems Modeling and Cognitive Audits for Hypercert Ecosystems
@@ -858,7 +1119,9 @@ N1  - Catalog row 72; docs: papers/2022_HypercertEcosystems/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Knight, Virginia Bleu
+AU  - Cordes, RJ
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - The Free Energy Principle & Active Inference: a Systematic Literature Analysis
 T2  - Zenodo
@@ -870,7 +1133,9 @@ N1  - Catalog row 73; docs: papers/2022_SystematicLiteratureAnalysis/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Cordes, R.J.
+AU  - David, Scott
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - TrustFinder: Recommendations for Community-Based Trust Systems
 T2  - Zenodo
@@ -883,6 +1148,10 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Tschantz, Alec
+AU  - Ramstead, Maxwell J. D.
+AU  - Friston, Karl
+AU  - Constant, Axel
 PY  - 2021
 TI  - Active Inferants: An Active Inference Framework for Ant Colony Behavior
 T2  - Frontiers in Behavioral Neuroscience
@@ -894,7 +1163,9 @@ N1  - Catalog row 75; docs: papers/2021_ActiveInferants/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - David, Scott
+AU  - Cordes, Richard J.
+AU  - Friedman, Daniel A.
 PY  - 2021
 TI  - Active Inference in Modeling Conflict
 T2  - Zenodo
@@ -906,7 +1177,9 @@ N1  - Catalog row 76; docs: papers/2021_ModelingConflict/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Mascarenhas, Mridula
+AU  - Cordes, Richard J.
+AU  - Friedman, Daniel A.
 PY  - 2021
 TI  - Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse
 T2  - Zenodo
@@ -940,7 +1213,11 @@ N1  - Catalog row 79; docs: papers/2021_NarrativeEcosystems/
 ER  -
 
 TY  - JOUR
+AU  - Cordes, Richard J.
+AU  - Applegate-Swanson, Shaun
 AU  - Friedman, Daniel Ari
+AU  - Knight, Virginia Bleu
+AU  - Mikhailova, Alexandra
 PY  - 2021
 TI  - Narrative Information Management
 T2  - Zenodo
@@ -953,6 +1230,7 @@ ER  -
 
 TY  - GEN
 AU  - Friedman, Daniel Ari
+AU  - Cordes, Richard J.
 PY  - 2021
 TI  - The Facilitator's Catechism Playbook
 T2  - Zenodo
@@ -964,6 +1242,10 @@ N1  - Catalog row 81; docs: not available
 ER  -
 
 TY  - JOUR
+AU  - Vyatkin, Alexander
+AU  - Metelkin, Ivan
+AU  - Mikhailova, Alexandra
+AU  - Cordes, RJ
 AU  - Friedman, Daniel Ari
 PY  - 2020
 TI  - Active Inference & Behavior Engineering for Teams
@@ -987,7 +1269,9 @@ N1  - Catalog row 83; docs: not available
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, D.A.
+AU  - Johnson, B.R.
+AU  - Linksvayer, T.A.
 PY  - 2020
 TI  - Distributed physiology and the molecular basis of social life in eusocial insects
 T2  - Hormones & Behavior
@@ -999,6 +1283,7 @@ N1  - Catalog row 84; docs: papers/2020_DistributedPhysiology/
 ER  -
 
 TY  - JOUR
+AU  - Cordes, Richard J.
 AU  - Friedman, Daniel Ari
 PY  - 2020
 TI  - Emergent Teams for Complex Threats
@@ -1012,6 +1297,9 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - York, Ryan Alexander
+AU  - Hilliard, Austin Travis
+AU  - Gordon, Deborah M.
 PY  - 2020
 TI  - Gene expression variation in the brains of harvester ant foragers is associated with collective behavior
 T2  - Communications Biology
@@ -1034,7 +1322,10 @@ N1  - Catalog row 87; docs: not available
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Shin, Mimi
+AU  - Friedman, Daniel A.
+AU  - Gordon, Deborah M.
+AU  - Venton, B. Jill
 PY  - 2020
 TI  - Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
 T2  - Analytical & Bioanalytical Chemistry
@@ -1057,7 +1348,9 @@ N1  - Catalog row 89; docs: papers/2020_GreatPreset/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Cordes, Richard J.
+AU  - Friedman, Daniel A.
+AU  - Phelan, Steven E.
 PY  - 2020
 TI  - The Innovator's Catechism
 T2  - Zenodo
@@ -1069,7 +1362,9 @@ N1  - Catalog row 90; docs: papers/2020_InnovatorsCatechism/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Hanks, Timothy
+AU  - Mikhailova, Alexandra
+AU  - Friedman, Daniel A.
 PY  - 2020
 TI  - The neuroscience of decision making (interview with Timothy Hanks)
 T2  - ALIUS Bulletin
@@ -1081,7 +1376,9 @@ N1  - Catalog row 91; docs: papers/2020_NeuroscienceDecision/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Dennett, Daniel
+AU  - Fleig-Goldstein, Brendan
+AU  - Friedman, Daniel
 PY  - 2019
 TI  - Dennett Explained (interview with Daniel Dennett)
 T2  - ALIUS Bulletin
@@ -1104,7 +1401,8 @@ N1  - Catalog row 93; docs: papers/2019_PhDDissertation/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel A.
+AU  - Søvik, Eirik
 PY  - 2019
 TI  - The ant colony as a test for scientific theories of consciousness
 T2  - Synthese
@@ -1116,7 +1414,9 @@ N1  - Catalog row 94; docs: papers/2019_AntConsciousness/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel A.
+AU  - Greene, Michael J.
+AU  - Gordon, Deborah M.
 PY  - 2019
 TI  - The physiology of forager hydration and variation among harvester ant colonies
 T2  - Scientific Reports
@@ -1128,7 +1428,14 @@ N1  - Catalog row 95; docs: papers/2019_ForagerHydration/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Burford, Benjamin P.
+AU  - Lee, Gail
+AU  - Friedman, Daniel A.
+AU  - Brachmann, Esmé
+AU  - Khan, Rebia
+AU  - MacArthur-Waltz, Dylan J.
+AU  - McCarty, Aidan D.
+AU  - Gordon, Deborah M.
 PY  - 2018
 TI  - Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations
 T2  - PLoS One
@@ -1140,7 +1447,7 @@ N1  - Catalog row 96; docs: papers/2018_ArgentineAnt/
 ER  -
 
 TY  - CONF
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2018
 TI  - MVEE: A Framework for Evolutionary Studies
 T2  - Presentation
@@ -1152,7 +1459,9 @@ N1  - Catalog row 97; docs: papers/2018_MVEE/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friston, Karl
+AU  - Fortier, Martin
+AU  - Friedman, Daniel
 PY  - 2018
 TI  - Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
 T2  - ALIUS Bulletin
@@ -1164,7 +1473,8 @@ N1  - Catalog row 98; docs: papers/2018_WoodliceAndMen/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Mikhailova, Alexandra
+AU  - Friedman, Daniel A.
 PY  - 2018
 TI  - Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
 T2  - Arts
@@ -1176,7 +1486,13 @@ N1  - Catalog row 99; docs: papers/2018_PPPiP/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel A.
+AU  - Pilko, Anna
+AU  - Skowronska-Krawczyk, Dorota
+AU  - Krasinska, Karolina
+AU  - Parker, Jacqueline W.
+AU  - Hirsh, Jay
+AU  - Gordon, Deborah M.
 PY  - 2018
 TI  - The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants
 T2  - iScience
@@ -1188,7 +1504,9 @@ N1  - Catalog row 100; docs: papers/2018_DopamineForaging/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel A.
+AU  - Gordon, Deborah M.
+AU  - Luo, Liqun
 PY  - 2017
 TI  - The MutAnts are here
 T2  - Cell
@@ -1200,7 +1518,8 @@ N1  - Catalog row 101; docs: papers/2017_MutAnts/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Gordon, D. M.
+AU  - Friedman, D. A.
 PY  - 2017
 TI  - Two lineages that need each other
 T2  - Molecular Ecology
@@ -1212,7 +1531,8 @@ N1  - Catalog row 102; docs: papers/2017_TwoLineages/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, D.A.
+AU  - Gordon, D.M.
 PY  - 2016
 TI  - Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior
 T2  - Annual Review of Neuroscience
@@ -1224,7 +1544,12 @@ N1  - Catalog row 103; docs: papers/2016_AntGenetics/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Ingram, Krista K.
+AU  - Gordon, Deborah M.
+AU  - Friedman, Daniel A.
+AU  - Greene, Michael
+AU  - Kahler, John
+AU  - Peteru, Swetha
 PY  - 2016
 TI  - Context-dependent expression of the foraging gene in field colonies of ants
 T2  - Proceedings of the Royal Society B
@@ -1236,7 +1561,9 @@ N1  - Catalog row 104; docs: papers/2016_ForagingGene/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel A.
+AU  - Tait, Lauren
+AU  - Vaughan, Andrew T. M.
 PY  - 2016
 TI  - Influence of Nuclear Structure on formation of radiation-induced lethal lesions
 T2  - Int. J. Radiation Biology
@@ -1248,7 +1575,9 @@ N1  - Catalog row 105; docs: papers/2016_NuclearStructure/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Marcus, Alexander W.
+AU  - Ebel, Emily R.
+AU  - Friedman, Daniel A.
 PY  - 2015
 TI  - Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history
 T2  - Frontiers in Genetics
@@ -1260,7 +1589,9 @@ N1  - Catalog row 106; docs: papers/2015_CryptoJews/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Kallick, Charles A.
+AU  - Friedman, Daniel A.
+AU  - Nyindo, Mramba B.A.
 PY  - 2015
 TI  - Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?
 T2  - Medical Hypotheses
@@ -1272,7 +1603,12 @@ N1  - Catalog row 107; docs: papers/2015_EhrlichialInfection/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Jasper, William Cameron
+AU  - Linksvayer, Timothy A.
+AU  - Atallah, Joel
+AU  - Friedman, Daniel
+AU  - Chiu, Joanna C.
+AU  - Johnson, Brian R.
 PY  - 2015
 TI  - Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees
 T2  - Molecular Biology & Evolution
@@ -1285,6 +1621,7 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Chambers, Tucker Cahill
 PY  - 2026
 TI  - Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
 T2  - Zenodo
@@ -1297,6 +1634,7 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Dietz, Joel
 PY  - 2026
 TI  - A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring
 T2  - Active Inference Journal
@@ -1308,7 +1646,9 @@ N1  - Catalog row 110; docs: papers/2026_ActInfMetaAnalysis/
 ER  -
 
 TY  - JOUR
+AU  - Kavi, Prakash Chandra
 AU  - Friedman, Daniel Ari
+AU  - Patow, Gustavo
 PY  - 2026
 TI  - Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences
 T2  - CSCIS vol 2857, Springer
@@ -1344,6 +1684,7 @@ N1  - Catalog row 113; docs: papers/2026_FEPLean/
 ER  -
 
 TY  - JOUR
+AU  - Cordes, Richard J.
 AU  - Friedman, Daniel Ari
 PY  - 2020
 TI  - The Facilitator's Catechism
@@ -1368,7 +1709,7 @@ N1  - Catalog row 115; docs: papers/2026_BlakeJiang/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
 PY  - 2026
 TI  - Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast
 T2  - Zenodo
@@ -1392,7 +1733,7 @@ N1  - Catalog row 117; docs: papers/2026_BiologyTextbook/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Policy Entanglement in Active Inference
 T2  - Zenodo
@@ -1404,7 +1745,7 @@ N1  - Catalog row 119; docs: papers/2026_PolicyEntanglementActive/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 T2  - Zenodo
@@ -1416,7 +1757,7 @@ N1  - Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Convergence Analysis of Gradient Descent Optimization
 T2  - Zenodo
@@ -1428,7 +1769,7 @@ N1  - Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
 T2  - Zenodo
@@ -1440,7 +1781,7 @@ N1  - Catalog row 122; docs: papers/2026_EditorialQualityAt/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - A template/ approach to Reproducible Generative Research
 T2  - Zenodo
@@ -1452,7 +1793,7 @@ N1  - Catalog row 123; docs: papers/2026_TemplateApproachReproducible/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Active Inference Multi-Track Exemplar
 T2  - Zenodo
@@ -1465,6 +1806,7 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Chambers, Tucker Cahill
 PY  - 2026
 TI  - BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
 T2  - Zenodo
@@ -1476,7 +1818,8 @@ N1  - Catalog row 125; docs: papers/2026_BeeStack/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Tucker Chambers
+AU  - Daniel A. Friedman
 PY  - 2026
 TI  - When do bugs see (infra)red?
 T2  - Zenodo
@@ -1488,7 +1831,7 @@ N1  - Catalog row 126; docs: papers/2026_WhenDoBugs/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Self-Improvement Agent Harness: A Deterministic SIA Exemplar
 T2  - Zenodo
@@ -1500,7 +1843,9 @@ N1  - Catalog row 127; docs: papers/2026_SelfImprovementAgent/
 ER  -
 
 TY  - CONF
-AU  - Friedman, Daniel Ari
+AU  - John Clippinger
+AU  - Andrew Pashea
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024
 T2  - Zenodo
@@ -1512,7 +1857,8 @@ N1  - Catalog row 128; docs: papers/2025_BiofirmDevelopmentWith/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Djuwidja, Andrew
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Con-cat-enate: emulation of Cat Hippocampus
 T2  - Zenodo
@@ -1524,7 +1870,8 @@ N1  - Catalog row 129; docs: papers/2025_ConCatEnate/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - djuwidja, andrew
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Graphspeak: of language and handshake
 T2  - Zenodo
@@ -1536,7 +1883,8 @@ N1  - Catalog row 130; docs: papers/2025_Graphspeak/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - djuwidja, andrew
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - BevCyc - posit on primitive drivers of creatures
 T2  - Zenodo
@@ -1548,7 +1896,8 @@ N1  - Catalog row 131; docs: papers/2025_BevCycPositPrimitive/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - djuwidja, andrew
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Beacons - pre emulation of social cortex
 T2  - Zenodo
@@ -1560,7 +1909,8 @@ N1  - Catalog row 132; docs: papers/2025_BeaconsPreEmulation/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - djuwidja, andrew
+AU  - Friedman, Daniel
 PY  - 2025
 TI  - Con-cat-enate: pilot overview
 T2  - Zenodo
@@ -1584,7 +1934,30 @@ N1  - Catalog row 134; docs: papers/2024_PushPull/
 ER  -
 
 TY  - JOUR
+AU  - Clippinger, John
+AU  - de Vries, Bert
+AU  - Noveck, Beth
+AU  - Fields, Chris
+AU  - Slater, Cory
 AU  - Friedman, Daniel Ari
+AU  - Silbersweig, David A.
+AU  - Lapenta, Francesco
+AU  - Grimm, Holly
+AU  - Emmett, Jeff
+AU  - Shane, Joshua
+AU  - Friston, Karl
+AU  - Nkemnkia, Martin Nkafu
+AU  - Brown, Matthew
+AU  - Pirkowski, Matthew
+AU  - Levin, Michael
+AU  - Zargham, Michael
+AU  - Tuan, Nguyen Anh
+AU  - Achuthan, Krishnashree
+AU  - Patterson, Thomas
+AU  - David, Scott L.
+AU  - Kehler, Thomas
+AU  - Knight, Virginia Bleu
+AU  - Nakayama, Yasuhide
 PY  - 2023
 TI  - A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
 T2  - Zenodo
@@ -1596,7 +1969,13 @@ N1  - Catalog row 135; docs: papers/2023_NaturalAIBased/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Cordes, R.J.
+AU  - David, Scott
+AU  - Friedman, Daniel
+AU  - Mikhailova, Alexandra
+AU  - Penland, Andrew
+AU  - Young, Sam
+AU  - Zacharias, Colten
 PY  - 2023
 TI  - ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
 T2  - Zenodo
@@ -1608,7 +1987,9 @@ N1  - Catalog row 136; docs: papers/2023_ATLAS2/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Peters, Megan A. K.
+AU  - Bradford, Nora
+AU  - Friedman, Daniel
 PY  - 2023
 TI  - Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"
 T2  - Zenodo
@@ -1620,7 +2001,8 @@ N1  - Catalog row 137; docs: papers/2023_TranscriptActiveInference/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Claros, Andrew
+AU  - Friedman, Daniel
 PY  - 2023
 TI  - Modern Nostr Index Card-based Knowledge Engineering
 T2  - Zenodo
@@ -1644,7 +2026,8 @@ N1  - Catalog row 139; docs: papers/2023_SlidesIris/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Isomura, Takuya
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - Canonical neural networks perform active inference
 T2  - Zenodo
@@ -1656,7 +2039,12 @@ N1  - Catalog row 140; docs: papers/2022_CanonicalNeuralNetworks/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Sennesh, Eli
+AU  - Theriault, Jordan
+AU  - Douglass, Dave
+AU  - Tennant, Ian
+AU  - Tickles, Dean
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - Interoception as modeling, allostasis as control
 T2  - Zenodo
@@ -1668,6 +2056,9 @@ N1  - Catalog row 141; docs: papers/2022_InteroceptionAsModeling/
 ER  -
 
 TY  - JOUR
+AU  - Solms, Mark
+AU  - Douglass, David S
+AU  - Sillett, Stephen
 AU  - Friedman, Daniel Ari
 PY  - 2022
 TI  - Transcript of: Mark Solms, "Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations", ActInf GuestStream #016
@@ -1680,7 +2071,10 @@ N1  - Catalog row 142; docs: papers/2022_Transcript/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Sakthivadivel, Dalton AR
+AU  - Rahmjoo, Ali
+AU  - Smékal, Jakub
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - A Worked Example of the Bayesian Mechanics of Classical Objects
 T2  - Zenodo
@@ -1692,7 +2086,10 @@ N1  - Catalog row 143; docs: papers/2022_WorkedExampleBayesian/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Tison, Rémi
+AU  - Tickles, Dean
+AU  - Knight, Bleu
+AU  - Friedman, Daniel
 PY  - 2022
 TI  - Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"
 T2  - Zenodo
@@ -1704,7 +2101,11 @@ N1  - Catalog row 144; docs: papers/2022_TranscriptDiscussions/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Mascarenhas, Mridula
+AU  - Cordes, RJ
+AU  - Knight, Bleu
+AU  - Murphy, Sarah
+AU  - Friedman, Daniel A.
 PY  - 2022
 TI  - Tracking Public Sensemaking through Rhetorical Annotation of Image Memes
 T2  - Zenodo
@@ -1716,6 +2117,14 @@ N1  - Catalog row 145; docs: papers/2022_TrackingPublicSensemaking/
 ER  -
 
 TY  - JOUR
+AU  - Friston, Karl
+AU  - Douglass, David Standish
+AU  - Iennaco de Vasconcelos, Maria Luiza
+AU  - Sillett, Stephen
+AU  - Sganzerla, Lorena
+AU  - Tickles, Dean
+AU  - Metelkin, Ivan
+AU  - Vyatkin, Alex
 AU  - Friedman, Daniel Ari
 PY  - 2021
 TI  - Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021
@@ -1728,6 +2137,7 @@ N1  - Catalog row 146; docs: papers/2021_Transcript/
 ER  -
 
 TY  - JOUR
+AU  - Cordes, Richard J.
 AU  - Friedman, Daniel Ari
 PY  - 2021
 TI  - Collaborative Writing for Catechism-Based Teams
@@ -1740,7 +2150,9 @@ N1  - Catalog row 147; docs: papers/2021_CollaborativeWritingCatechism/
 ER  -
 
 TY  - JOUR
+AU  - Cordes, Richard J.
 AU  - Friedman, Daniel Ari
+AU  - Maron, Mikel
 PY  - 2020
 TI  - Reimagining Maps
 T2  - Zenodo
@@ -1752,7 +2164,8 @@ N1  - Catalog row 148; docs: papers/2020_ReimaginingMaps/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Friedman, Daniel
+AU  - Cordes, RJ
 PY  - 2020
 TI  - Infinite Games for Infinite Teams
 T2  - Zenodo
@@ -1764,7 +2177,7 @@ N1  - Catalog row 149; docs: papers/2020_InfiniteGamesInfinite/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation
 T2  - Zenodo
@@ -1776,7 +2189,7 @@ N1  - Catalog row 150; docs: papers/2026_MusicNeverStopped/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - A Deterministic Testbed for Self-Organizing Agent-Team Coordination
 T2  - Zenodo
@@ -1788,7 +2201,7 @@ N1  - Catalog row 151; docs: papers/2026_DeterministicTestbedSelf/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Recovering LLM-Persona Accuracies from Unlabeled Votes
 T2  - Zenodo
@@ -1800,7 +2213,7 @@ N1  - Catalog row 152; docs: papers/2026_RecoveringLLMPersona/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine
 T2  - Zenodo
@@ -1812,7 +2225,7 @@ N1  - Catalog row 153; docs: papers/2026_Triplicate/
 ER  -
 
 TY  - BOOK
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - The Template Textbook
 T2  - Zenodo
@@ -1839,8 +2252,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2016
 TI  - Full speed ahead to the City on the Hill
 T2  - Science
-DO  - 10.1126/science.352.6288.886
-UR  - https://doi.org/10.1126/science.352.6288.886
+DO  - 10.1126/science.aag1520
+UR  - https://doi.org/10.1126/science.aag1520
 KW  - AII Ecosystem
 KW  - Paper
 N1  - Catalog row 156; docs: not available
@@ -1870,6 +2283,10 @@ N1  - Catalog row 158; docs: not available
 ER  -
 
 TY  - JOUR
+AU  - Smékal, Jakub
+AU  - Choudhury, Arhan
+AU  - Singh, Amit Kumar
+AU  - Damaty, Shady El
 AU  - Friedman, Daniel Ari
 PY  - 2022
 TI  - Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling
@@ -1882,6 +2299,8 @@ N1  - Catalog row 159; docs: not available
 ER  -
 
 TY  - JOUR
+AU  - Kavi, Prakash Chandra
+AU  - Zamora-López, Gorka
 AU  - Friedman, Daniel Ari
 PY  - 2024
 TI  - From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace
@@ -1895,6 +2314,7 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - Cordes, Richard J.
 PY  - 2021
 TI  - Knowledge Management Archipelago
 T2  - Zenodo
@@ -1906,7 +2326,7 @@ N1  - Catalog row 161; docs: not available
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Cordes, RJ
 PY  - 2024
 TI  - Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum
 T2  - Zenodo
@@ -1975,6 +2395,7 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
+AU  - The GeneralizedNotationNotation Community Contributors
 PY  - 2026
 TI  - GeneralizedNotationNotation (GNN)
 T2  - Zenodo
@@ -1998,7 +2419,7 @@ N1  - Catalog row 169; docs: papers/2026_COGANT/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - AGEINT: Agentic Intelligence
 T2  - Zenodo
@@ -2010,7 +2431,7 @@ N1  - Catalog row 170; docs: papers/2026_AGEINT/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - On-Policy Distillation as Active Inference in Finite Variational Models
 T2  - Zenodo
@@ -2022,7 +2443,7 @@ N1  - Catalog row 171; docs: papers/2026_PolicyDistillationAs/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
 T2  - Zenodo
@@ -2034,7 +2455,7 @@ N1  - Catalog row 172; docs: papers/2026_TemplateMadlib/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
 T2  - Zenodo
@@ -2046,7 +2467,7 @@ N1  - Catalog row 173; docs: papers/2026_CaliforniaPublicRecords/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - CogSecSkills: Multiharness Cognitive Security Skill Library
 T2  - Zenodo
@@ -2070,7 +2491,7 @@ N1  - Catalog row 175; docs: papers/2026_RealizingEmptiness/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - A Living Meta-Analysis of the Modafinil Literature
 T2  - Zenodo
@@ -2082,7 +2503,7 @@ N1  - Catalog row 176; docs: papers/2026_LivingMetaAnalysis/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition
 T2  - Zenodo
@@ -2094,7 +2515,8 @@ N1  - Catalog row 177; docs: papers/2026_RefinementGold/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
+AU  - Tucker Cahill Chambers
 PY  - 2026
 TI  - AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference
 T2  - Zenodo
@@ -2118,7 +2540,7 @@ N1  - Catalog row 179; docs: papers/2026_MappingWilliamBlake/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Sortition Upstream of NTQR
 T2  - Zenodo
@@ -2130,7 +2552,7 @@ N1  - Catalog row 180; docs: papers/2026_SortitionUpstreamNTQR/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Exploratory Data Analysis: A Reproducible Notebook Template
 T2  - Zenodo
@@ -2142,7 +2564,7 @@ N1  - Catalog row 181; docs: papers/2026_ExploratoryDataAnalysis/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - A Domain Language for Specifying Controlled Methods
 T2  - Zenodo
@@ -2154,7 +2576,7 @@ N1  - Catalog row 182; docs: papers/2026_DomainLanguageSpecifying/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon
 T2  - Zenodo
@@ -2166,7 +2588,7 @@ N1  - Catalog row 183; docs: papers/2026_EntomologicalLaw/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - The Shape Between: A Full-Page Illustrated Storybook Template
 T2  - Zenodo
@@ -2178,7 +2600,7 @@ N1  - Catalog row 184; docs: papers/2026_ShapeBetween/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Autopoietic Project Generation
 T2  - Zenodo
@@ -2190,7 +2612,7 @@ N1  - Catalog row 185; docs: papers/2026_AutopoieticProjectGeneration/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
 T2  - Zenodo
@@ -2202,7 +2624,7 @@ N1  - Catalog row 186; docs: papers/2026_TemplatePitchDeck/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference
 T2  - Zenodo
@@ -2214,7 +2636,7 @@ N1  - Catalog row 187; docs: papers/2026_ReproducibleLiteratureSynthesis/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Registered Report Template: Preregistration, Deviations, and Claim Boundaries
 T2  - Zenodo
@@ -2226,7 +2648,7 @@ N1  - Catalog row 188; docs: papers/2026_RegisteredReportTemplate/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Redacted Report Template: Disclosure Control and Release Audit
 T2  - Zenodo
@@ -2238,7 +2660,7 @@ N1  - Catalog row 189; docs: papers/2026_RedactedReportTemplate/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Pools, Rules, and Tools: A Template-Integrated Resource Architecture
 T2  - Zenodo
@@ -2250,7 +2672,7 @@ N1  - Catalog row 190; docs: papers/2026_PoolsRulesTools/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Illegal States, Mostly Unrepresentable
 T2  - Zenodo
@@ -2262,7 +2684,7 @@ N1  - Catalog row 191; docs: papers/2026_IllegalStatesMostly/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Data Descriptor Template: Schema, Provenance, and Release Readiness
 T2  - Zenodo
@@ -2286,7 +2708,7 @@ N1  - Catalog row 193; docs: papers/2026_TemplateApproachReproducible2/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Prior Cognitive Art
 T2  - Zenodo
@@ -2298,7 +2720,7 @@ N1  - Catalog row 194; docs: papers/2026_PriorCognitiveArt/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations
 T2  - Zenodo
@@ -2310,7 +2732,7 @@ N1  - Catalog row 195; docs: papers/2026_ActiveFractalRabbit/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing
 T2  - Zenodo
@@ -2322,7 +2744,7 @@ N1  - Catalog row 196; docs: papers/2026_FourfoldVision/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - DuckRabbit: Typed Multimodal Illusion Generator
 T2  - Zenodo

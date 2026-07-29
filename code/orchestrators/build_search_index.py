@@ -132,6 +132,13 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
             str(part)
             for part in [
                 work["title"],
+                # Both orders, so "Smékal" and "Jakub Smékal" both match.
+                " ".join(work.get("authors", [])),
+                " ".join(
+                    name.partition(",")[2].strip() + " " + name.partition(",")[0].strip()
+                    for name in work.get("authors", [])
+                    if "," in name
+                ),
                 work.get("venue", ""),
                 work.get("doi", ""),
                 work.get("citation_key", ""),

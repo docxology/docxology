@@ -1,0 +1,4874 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-29T18:23:29Z",
+  "generator": "code/orchestrators/fetch_work_authors.py",
+  "policy": {
+    "sources": [
+      "https://api.crossref.org/works/{doi}",
+      "https://api.datacite.org/dois/{doi}"
+    ],
+    "agency_lookup": "https://doi.org/doiRA/{doi}",
+    "title_similarity_floor": 0.8,
+    "note": "Authors are adopted only from a record whose title matches the catalogued title; never inferred."
+  },
+  "works": {
+    "Friedman2026TemplateApproachReproducibleGenerative001": {
+      "num": 1,
+      "doi": "10.5281/zenodo.16903351",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "registration_agency": "DataCite",
+      "resolved_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        }
+      ]
+    },
+    "Friedman2026ActiveInferenceJournal500002": {
+      "num": 2,
+      "doi": null,
+      "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+      "status": "no_doi"
+    },
+    "Friedman2026BeforePragmatismHadName003": {
+      "num": 3,
+      "doi": "10.5281/zenodo.18807970",
+      "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+      "registration_agency": "DataCite",
+      "resolved_title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026GoldenCompassLunarFlux004": {
+      "num": 4,
+      "doi": "10.5281/zenodo.19335195",
+      "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CognitiveIntegrityFrameworkFormal005": {
+      "num": 5,
+      "doi": "10.5281/zenodo.18364118",
+      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026PersonalYouTube200Livestreams006": {
+      "num": 6,
+      "doi": null,
+      "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
+      "status": "no_doi"
+    },
+    "Friedman2026DoorsPerceptionAreThreshold007": {
+      "num": 7,
+      "doi": "10.5281/zenodo.18600040",
+      "title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman20255thAppliedActiveInference008": {
+      "num": 8,
+      "doi": "10.5281/zenodo.17555266",
+      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "registration_agency": "DataCite",
+      "resolved_title": "Abstract book for: 5th Applied Active Inference Symposium",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "literal": "Active Inference Institute"
+        },
+        {
+          "family": "Safron",
+          "given": "Adam"
+        },
+        {
+          "family": "Kiefer",
+          "given": "Alex"
+        },
+        {
+          "family": "Sabine",
+          "given": "Alexander"
+        },
+        {
+          "family": "Hiott",
+          "given": "Andrea"
+        },
+        {
+          "family": "Pashea",
+          "given": "Andrew"
+        },
+        {
+          "family": "Alicea",
+          "given": "Bradly"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris"
+        },
+        {
+          "family": "Holt",
+          "given": "Denise"
+        },
+        {
+          "family": "Shah",
+          "given": "Harshil"
+        },
+        {
+          "family": "Maitra",
+          "given": "Satyaki"
+        },
+        {
+          "family": "Pae",
+          "given": "Hongju"
+        },
+        {
+          "family": "Tennant",
+          "given": "Ian"
+        },
+        {
+          "family": "Cloutier",
+          "given": "Jean-François"
+        },
+        {
+          "family": "Freda",
+          "given": "Jim"
+        },
+        {
+          "family": "Dietz",
+          "given": "Joel"
+        },
+        {
+          "family": "Boik",
+          "given": "John"
+        },
+        {
+          "family": "Friston",
+          "given": "Karl"
+        },
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza"
+        },
+        {
+          "family": "Brown",
+          "given": "Matthew"
+        },
+        {
+          "family": "Garfield",
+          "given": "Michael"
+        },
+        {
+          "family": "Hinrichs",
+          "given": "Nicolás"
+        },
+        {
+          "family": "Octopus",
+          "given": ""
+        },
+        {
+          "family": "PabloFM",
+          "given": ""
+        },
+        {
+          "family": "Waade",
+          "given": "Peter Thestrup"
+        },
+        {
+          "family": "Worden",
+          "given": "Robert"
+        },
+        {
+          "family": "Senchal",
+          "given": "Sam A"
+        },
+        {
+          "family": "Montañez",
+          "given": "Samuel"
+        },
+        {
+          "family": "Namjoshi",
+          "given": "Sanjeev"
+        },
+        {
+          "family": "Shrivastava",
+          "given": "Siddhant"
+        },
+        {
+          "family": "de Jager",
+          "given": "Sonia"
+        },
+        {
+          "family": "Macurdy",
+          "given": "Steph"
+        },
+        {
+          "family": "Weiniger",
+          "given": "Steven"
+        },
+        {
+          "family": "Hasty",
+          "given": "Susan"
+        },
+        {
+          "family": "Nguyen",
+          "given": "Viet Dung"
+        },
+        {
+          "family": "Gebhardt",
+          "given": "William"
+        },
+        {
+          "family": "Lennon",
+          "given": "Michael"
+        },
+        {
+          "family": "Newell",
+          "given": "Dave"
+        },
+        {
+          "family": "Huembeli",
+          "given": "Patrick"
+        },
+        {
+          "family": "Ramstead",
+          "given": "Maxwell"
+        }
+      ]
+    },
+    "Friedman2025AdaptiveBasicIncomeAuBI009": {
+      "num": 9,
+      "doi": "10.5281/zenodo.17228945",
+      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Die Schwarze Katze",
+          "given": ""
+        },
+        {
+          "family": "Djuwidja",
+          "given": "Andrew",
+          "orcid": "0009-0006-9402-2412"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025CEREBRUMCaseEnabledReasoning010": {
+      "num": 10,
+      "doi": "10.5281/zenodo.15170907",
+      "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+      "registration_agency": "DataCite",
+      "resolved_title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025ComputationalComplexityEnergeticsAnt011": {
+      "num": 11,
+      "doi": "10.5281/zenodo.17238736",
+      "title": "Computational Complexity and Energetics of the Ant Stack",
+      "registration_agency": "DataCite",
+      "resolved_title": "Computational Complexity and Energetics of the Ant Stack",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025EvoJumpStochasticModelingEvolutionary012": {
+      "num": 12,
+      "doi": "10.5281/zenodo.17229924",
+      "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "registration_agency": "DataCite",
+      "resolved_title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025IncreasingAccessibilityApplicabilityActive013": {
+      "num": 13,
+      "doi": "10.5281/zenodo.15061666",
+      "title": "Increasing the Accessibility and Applicability of Active Inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025MDKVMultitrackMarkdownContainer014": {
+      "num": 14,
+      "doi": "10.5281/zenodo.16790554",
+      "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+      "registration_agency": "DataCite",
+      "resolved_title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025MarkdownDecisionProcessFramework015": {
+      "num": 15,
+      "doi": "10.5281/zenodo.17244386",
+      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+      "registration_agency": "DataCite",
+      "resolved_title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025CognitiveArtScienceToward016": {
+      "num": 16,
+      "doi": "10.5281/zenodo.16740438",
+      "title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+      "registration_agency": "DataCite",
+      "resolved_title": "On Cognitive Art & Science: Toward Wholeness From Both Sides",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025Time017": {
+      "num": 17,
+      "doi": "10.5281/zenodo.15168381",
+      "title": "On Time",
+      "registration_agency": "DataCite",
+      "resolved_title": "On Time",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025QuadMathAnalyticalReview4D018": {
+      "num": 18,
+      "doi": "10.5281/zenodo.16887799",
+      "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+      "registration_agency": "DataCite",
+      "resolved_title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025ResNeiSolutionDesignDocument019": {
+      "num": 19,
+      "doi": "10.5281/zenodo.15389682",
+      "title": "ResNei: Solution Design Document",
+      "registration_agency": "DataCite",
+      "resolved_title": "ResNei: Solution Design Document",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Lumiruusu",
+          "given": "Janna",
+          "orcid": "0009-0005-2166-0045"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Rahman",
+          "given": "Shagor",
+          "orcid": "0009-0004-0460-0078"
+        },
+        {
+          "family": "Baulin",
+          "given": "Vladimir",
+          "orcid": "0000-0003-2086-4271"
+        },
+        {
+          "family": "Pashea",
+          "given": "Andrew",
+          "orcid": "0009-0004-4061-6296"
+        }
+      ]
+    },
+    "Friedman2025SymergeticsSymbolicSynergeticsRational020": {
+      "num": 20,
+      "doi": "10.5281/zenodo.17114389",
+      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+      "registration_agency": "DataCite",
+      "resolved_title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025SynthesisAgentNiche021": {
+      "num": 21,
+      "doi": "10.5281/zenodo.17235137",
+      "title": "Synthesis of Agent and Niche",
+      "registration_agency": "DataCite",
+      "resolved_title": "Synthesis of Agent and Niche",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025SystemsProcessesActiveInference022": {
+      "num": 22,
+      "doi": "10.5281/zenodo.17138223",
+      "title": "Systems Processes, Active Inference, and Beyond",
+      "registration_agency": "DataCite",
+      "resolved_title": "Systems Processes, Active Inference, and Beyond",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025TemporalDepthCoherentSelf023": {
+      "num": 23,
+      "doi": "10.3389/fpsyg.2025.1585315",
+      "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+      "registration_agency": "Crossref",
+      "resolved_title": "Temporal depth in a coherent self and in depersonalization: theoretical model",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tolchinsky",
+          "given": "Alexey"
+        },
+        {
+          "family": "Levin",
+          "given": "Michael"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris"
+        },
+        {
+          "family": "Da Costa",
+          "given": "Lancelot"
+        },
+        {
+          "family": "Murphy",
+          "given": "Rachael"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        },
+        {
+          "family": "Pincus",
+          "given": "David"
+        }
+      ]
+    },
+    "Friedman2025ActiveInferenceInstituteActive024": {
+      "num": 24,
+      "doi": "10.5281/zenodo.17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Active Inference Institute & Active Inference Ecosystem",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "literal": "Active Inference Institute"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Hiott",
+          "given": "Andrea",
+          "orcid": "0000-0003-0748-2295"
+        },
+        {
+          "family": "Pashea",
+          "given": "Andrew",
+          "orcid": "0009-0004-4061-6296"
+        },
+        {
+          "family": "Elers",
+          "given": "Ben",
+          "orcid": "0009-0009-2761-9229"
+        },
+        {
+          "family": "Berkers",
+          "given": "Bert",
+          "orcid": "0009-0006-6583-6687"
+        },
+        {
+          "family": "Knight",
+          "given": "Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris",
+          "orcid": "0000-0002-4812-0744"
+        },
+        {
+          "family": "Whittet",
+          "given": "Dan",
+          "orcid": "0009-0009-5089-0551"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Ticklẽs",
+          "given": "Déan",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Paterson",
+          "given": "Fraser"
+        },
+        {
+          "family": "Stubbs",
+          "given": "Gareth",
+          "orcid": "0000-0002-7631-2823"
+        },
+        {
+          "family": "Grimm",
+          "given": "Holly",
+          "orcid": "0009-0001-6181-2569"
+        },
+        {
+          "family": "Smekal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Cooper",
+          "given": "Jeremy",
+          "orcid": "0000-0002-2243-1966"
+        },
+        {
+          "family": "Boik",
+          "given": "John",
+          "orcid": "0000-0003-1289-7997"
+        },
+        {
+          "family": "Burian",
+          "given": "Libor"
+        },
+        {
+          "family": "Albarracin",
+          "given": "Mahault",
+          "orcid": "0000-0003-0916-4645"
+        },
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza",
+          "orcid": "0000-0002-5407-4852"
+        },
+        {
+          "family": "Brown",
+          "given": "Matthew",
+          "orcid": "0000-0002-7552-0989"
+        },
+        {
+          "family": "Thacker",
+          "given": "Mick",
+          "orcid": "0000-0002-9034-1137"
+        },
+        {
+          "family": "Gilli",
+          "given": "Peter",
+          "orcid": "0009-0006-2755-5921"
+        },
+        {
+          "family": "Kaufmann",
+          "given": "Rafael",
+          "orcid": "0009-0003-8678-4896"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Henry",
+          "given": "Ryan",
+          "orcid": "0000-0002-0706-6841"
+        },
+        {
+          "family": "Ramesh",
+          "given": "Sandeep",
+          "orcid": "0009-0006-4976-3326"
+        },
+        {
+          "family": "David",
+          "given": "Scott",
+          "orcid": "0000-0003-0679-3286"
+        },
+        {
+          "family": "Alvarado",
+          "given": "Sebastian",
+          "orcid": "0000-0001-5866-4043"
+        },
+        {
+          "family": "Baker",
+          "given": "Zach",
+          "orcid": "0009-0006-7283-9392"
+        }
+      ]
+    },
+    "Friedman2025AntStack025": {
+      "num": 25,
+      "doi": "10.5281/zenodo.16782756",
+      "title": "The Ant Stack",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Ant Stack",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025DiscoveryEngineAIDriven026": {
+      "num": 26,
+      "doi": "10.48550/arXiv.2505.17500",
+      "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Baulin",
+          "given": "Vladimir"
+        },
+        {
+          "family": "Cook",
+          "given": "Austin"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        },
+        {
+          "family": "Lumiruusu",
+          "given": "Janna"
+        },
+        {
+          "family": "Pashea",
+          "given": "Andrew"
+        },
+        {
+          "family": "Rahman",
+          "given": "Shagor"
+        },
+        {
+          "family": "Waldeck",
+          "given": "Benedikt"
+        }
+      ]
+    },
+    "Friedman2025ThoughtseedsHierarchicalAgenticFramework027": {
+      "num": 27,
+      "doi": "10.3390/e27050459",
+      "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+      "registration_agency": "Crossref",
+      "resolved_title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Kavi",
+          "given": "Prakash Chandra",
+          "orcid": "0000-0002-5582-0431"
+        },
+        {
+          "family": "Zamora-López",
+          "given": "Gorka"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Patow",
+          "given": "Gustavo",
+          "orcid": "0000-0002-1977-9101"
+        }
+      ]
+    },
+    "Friedman2025TowardsScienceConsciousnessSocial028": {
+      "num": 28,
+      "doi": null,
+      "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
+      "status": "no_doi"
+    },
+    "Friedman2024AligningActiveInferenceOntology029": {
+      "num": 29,
+      "doi": "10.5281/zenodo.11459322",
+      "title": "Aligning Active Inference Ontology to SUMO",
+      "registration_agency": "DataCite",
+      "resolved_title": "Aligning Active Inference Ontology to SUMO",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Douglass",
+          "given": "David S.",
+          "orcid": "0000-0001-7894-8019"
+        },
+        {
+          "family": "Pease",
+          "given": "Adam",
+          "orcid": "0000-0001-9772-1266"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Balbuena",
+          "given": "Jessica Angeli",
+          "orcid": "0000-0003-2741-4476"
+        },
+        {
+          "family": "Chokhalingam",
+          "given": "Rhea",
+          "orcid": "0009-0007-2061-3022"
+        },
+        {
+          "family": "Hurtado",
+          "given": "Ana Magdalena",
+          "orcid": "0000-0003-4064-1876"
+        },
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza",
+          "orcid": "0000-0002-5407-4852"
+        },
+        {
+          "family": "Knight",
+          "given": "V. Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Maybell",
+          "given": "Scott Ryan",
+          "orcid": "0000-0003-1612-5505"
+        },
+        {
+          "family": "Rahmjoo",
+          "given": "Ali",
+          "orcid": "0000-0002-3244-7419"
+        },
+        {
+          "family": "Sayeg",
+          "given": "Paulo Duare Andrade",
+          "orcid": "0009-0006-0658-7684"
+        },
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        }
+      ]
+    },
+    "Friedman2024BioFirmDevelopmentAtApplied030": {
+      "num": 30,
+      "doi": "10.5281/zenodo.14861595",
+      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
+      "registration_agency": "DataCite",
+      "resolved_title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "John Clippinger",
+          "given": ""
+        },
+        {
+          "family": "Andrew Pashea",
+          "given": "",
+          "orcid": "0009-0004-4061-6296"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2024BridgingGapsImageMeme031": {
+      "num": 31,
+      "doi": "10.1002/asi.24900",
+      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+      "registration_agency": "Crossref",
+      "resolved_title": "Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Mascarenhas",
+          "given": "Mridula",
+          "orcid": "0000-0002-3458-1590"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "Cordes",
+          "given": "Richard J"
+        }
+      ]
+    },
+    "Friedman2024ChemicalTranscriptomicDiversityDo032": {
+      "num": 32,
+      "doi": "10.1002/ece3.70063",
+      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+      "registration_agency": "Crossref",
+      "resolved_title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Golian",
+          "given": "Marek J."
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Harrison",
+          "given": "Mark"
+        },
+        {
+          "family": "McMahon",
+          "given": "Dino P."
+        },
+        {
+          "family": "Buellesbach",
+          "given": "Jan",
+          "orcid": "0000-0001-8493-692X"
+        }
+      ]
+    },
+    "Friedman2024CommentsNationalDigitalTwins033": {
+      "num": 33,
+      "doi": "10.5281/zenodo.13273681",
+      "title": "Comments on National Digital Twins R&D Strategic Plan",
+      "registration_agency": "DataCite",
+      "resolved_title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "RJ"
+        }
+      ]
+    },
+    "Friedman2024EnhancingPopulationBasedSearch034": {
+      "num": 34,
+      "doi": "10.48550/arXiv.2408.09548",
+      "title": "Enhancing Population-based Search with Active Inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "Enhancing Population-based Search with Active Inference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Dehouche",
+          "given": "Nassim"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        }
+      ]
+    },
+    "Friedman2024FarmWorksDecentralizedAIAgents035": {
+      "num": 35,
+      "doi": "10.5281/zenodo.13754585",
+      "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+      "registration_agency": "DataCite",
+      "resolved_title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Baulin",
+          "given": "Vladimir",
+          "orcid": "0000-0003-2086-4271"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        },
+        {
+          "family": "GUÉNIN—CARLUT",
+          "given": "Avel",
+          "orcid": "0000-0001-8239-7264"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Bolt",
+          "given": "John",
+          "orcid": "0009-0002-0878-5546"
+        },
+        {
+          "family": "Falkenstein",
+          "given": "Stefan",
+          "orcid": "0009-0008-5054-4969"
+        },
+        {
+          "family": "Jassal",
+          "given": "Parishrut",
+          "orcid": "0009-0008-4351-805X"
+        },
+        {
+          "family": "Trois",
+          "given": "Celio",
+          "orcid": "0000-0002-7386-9749"
+        },
+        {
+          "family": "Minchin",
+          "given": "Jonathan",
+          "orcid": "0000-0001-8152-1796"
+        }
+      ]
+    },
+    "Friedman2024FederatedInferenceBeliefSharing036": {
+      "num": 36,
+      "doi": "10.1016/j.neubiorev.2023.105500",
+      "title": "Federated inference and belief sharing",
+      "registration_agency": "Crossref",
+      "resolved_title": "Federated inference and belief sharing",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friston",
+          "given": "Karl J."
+        },
+        {
+          "family": "Parr",
+          "given": "Thomas"
+        },
+        {
+          "family": "Heins",
+          "given": "Conor"
+        },
+        {
+          "family": "Constant",
+          "given": "Axel"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        },
+        {
+          "family": "Isomura",
+          "given": "Takuya"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris"
+        },
+        {
+          "family": "Verbelen",
+          "given": "Tim"
+        },
+        {
+          "family": "Ramstead",
+          "given": "Maxwell"
+        },
+        {
+          "family": "Clippinger",
+          "given": "John"
+        },
+        {
+          "family": "Frith",
+          "given": "Christopher D."
+        }
+      ]
+    },
+    "Friedman2024FourFoldFieldsQuantum037": {
+      "num": 37,
+      "doi": "10.5281/zenodo.10798144",
+      "title": "Four-fold Fields of Quantum Dreams",
+      "registration_agency": "DataCite",
+      "resolved_title": "Four-fold Fields of Quantum Dreams",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean",
+          "orcid": "0000-0003-2213-0773"
+        }
+      ]
+    },
+    "Friedman2024MathArtStream8William038": {
+      "num": 38,
+      "doi": "10.5281/zenodo.13711301",
+      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "MathArt Stream #8 ~ William Blake and Active Inference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2024SensemakingFederationExploringFrontiers039": {
+      "num": 39,
+      "doi": "10.5281/zenodo.14574046",
+      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "registration_agency": "DataCite",
+      "resolved_title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Sensemaking Scenius",
+          "given": ""
+        }
+      ]
+    },
+    "Friedman2024SharedProtentionsMultiAgent040": {
+      "num": 40,
+      "doi": "10.3390/e26040303",
+      "title": "Shared Protentions in Multi-Agent Active Inference",
+      "registration_agency": "Crossref",
+      "resolved_title": "Shared Protentions in Multi-Agent Active Inference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Albarracin",
+          "given": "Mahault",
+          "orcid": "0000-0003-0916-4645"
+        },
+        {
+          "family": "Pitliya",
+          "given": "Riddhi J.",
+          "orcid": "0000-0002-4682-9573"
+        },
+        {
+          "family": "St. Clere Smithe",
+          "given": "Toby",
+          "orcid": "0000-0002-8317-8722"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Friston",
+          "given": "Karl",
+          "orcid": "0000-0001-7984-8909"
+        },
+        {
+          "family": "Ramstead",
+          "given": "Maxwell J. D."
+        }
+      ]
+    },
+    "Friedman2024ActiveInferenceInstituteActive041": {
+      "num": 41,
+      "doi": "10.5281/zenodo.14108992",
+      "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Active Inference Institute & Active Inference Ecosystem",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "literal": "Active Inference Institute"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Hiott",
+          "given": "Andrea",
+          "orcid": "0000-0003-0748-2295"
+        },
+        {
+          "family": "Pashea",
+          "given": "Andrew",
+          "orcid": "0009-0004-4061-6296"
+        },
+        {
+          "family": "Elers",
+          "given": "Ben",
+          "orcid": "0009-0009-2761-9229"
+        },
+        {
+          "family": "Berkers",
+          "given": "Bert",
+          "orcid": "0009-0006-6583-6687"
+        },
+        {
+          "family": "Knight",
+          "given": "Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris",
+          "orcid": "0000-0002-4812-0744"
+        },
+        {
+          "family": "Whittet",
+          "given": "Dan",
+          "orcid": "0009-0009-5089-0551"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Ticklẽs",
+          "given": "Déan",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Paterson",
+          "given": "Fraser"
+        },
+        {
+          "family": "Stubbs",
+          "given": "Gareth",
+          "orcid": "0000-0002-7631-2823"
+        },
+        {
+          "family": "Grimm",
+          "given": "Holly",
+          "orcid": "0009-0001-6181-2569"
+        },
+        {
+          "family": "Smekal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Cooper",
+          "given": "Jeremy",
+          "orcid": "0000-0002-2243-1966"
+        },
+        {
+          "family": "Boik",
+          "given": "John",
+          "orcid": "0000-0003-1289-7997"
+        },
+        {
+          "family": "Burian",
+          "given": "Libor"
+        },
+        {
+          "family": "Albarracin",
+          "given": "Mahault",
+          "orcid": "0000-0003-0916-4645"
+        },
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza",
+          "orcid": "0000-0002-5407-4852"
+        },
+        {
+          "family": "Brown",
+          "given": "Matthew",
+          "orcid": "0000-0002-7552-0989"
+        },
+        {
+          "family": "Thacker",
+          "given": "Mick",
+          "orcid": "0000-0002-9034-1137"
+        },
+        {
+          "family": "Gilli",
+          "given": "Peter",
+          "orcid": "0009-0006-2755-5921"
+        },
+        {
+          "family": "Kaufmann",
+          "given": "Rafael",
+          "orcid": "0009-0003-8678-4896"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Henry",
+          "given": "Ryan",
+          "orcid": "0000-0002-0706-6841"
+        },
+        {
+          "family": "Ramesh",
+          "given": "Sandeep",
+          "orcid": "0009-0006-4976-3326"
+        },
+        {
+          "family": "David",
+          "given": "Scott",
+          "orcid": "0000-0003-0679-3286"
+        },
+        {
+          "family": "Alvarado",
+          "given": "Sebastian",
+          "orcid": "0000-0001-5866-4043"
+        },
+        {
+          "family": "Baker",
+          "given": "Zach",
+          "orcid": "0009-0006-7283-9392"
+        }
+      ]
+    },
+    "Friedman2024WayFindingInfiniteImaginarium042": {
+      "num": 42,
+      "doi": "10.5281/zenodo.10601081",
+      "title": "Way Finding in the Infinite Imaginarium",
+      "registration_agency": "DataCite",
+      "resolved_title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2024WhyPaleolithicRockstarsWere043": {
+      "num": 43,
+      "doi": "10.1016/j.plrev.2024.04.010",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "registration_agency": "Crossref",
+      "resolved_title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tickles",
+          "given": "Dean"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2024WritingCurioCardsNFT044": {
+      "num": 44,
+      "doi": null,
+      "title": "Writing on Curio Cards for the \"On NFT\" book",
+      "status": "no_doi"
+    },
+    "Friedman2023GuidedTourThroughSpaces045": {
+      "num": 45,
+      "doi": "10.1016/j.plrev.2023.11.001",
+      "title": "A guided tour through the spaces of particular \"minds\"",
+      "registration_agency": "Crossref",
+      "resolved_title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Rahmjoo",
+          "given": "Ali"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023SinglePheromoneModelAccounts046": {
+      "num": 46,
+      "doi": "10.1016/j.cogsys.2023.02.005",
+      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+      "registration_agency": "Crossref",
+      "resolved_title": "A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Saund",
+          "given": "Eric"
+        },
+        {
+          "family": "Ari Friedman",
+          "given": "Daniel"
+        }
+      ]
+    },
+    "Friedman2023SnapshotPipelineTissueSpecific047": {
+      "num": 47,
+      "doi": "10.5281/zenodo.10400744",
+      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+      "registration_agency": "DataCite",
+      "resolved_title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Tong",
+          "given": "Chao",
+          "orcid": "0000-0001-5202-5507"
+        },
+        {
+          "family": "Linksvayer",
+          "given": "Timothy A.",
+          "orcid": "0000-0001-7034-1546"
+        },
+        {
+          "family": "Freund",
+          "given": "Matthias",
+          "orcid": "0000-0002-5683-6275"
+        },
+        {
+          "family": "Keough",
+          "given": "Nicole Weronika",
+          "orcid": "0009-0002-1058-5105"
+        },
+        {
+          "family": "Johnson",
+          "given": "Brian",
+          "orcid": "0000-0001-6390-7230"
+        }
+      ]
+    },
+    "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048": {
+      "num": 48,
+      "doi": "10.3390/e25070964",
+      "title": "A variational synthesis of evolutionary and developmental dynamics",
+      "registration_agency": "Crossref",
+      "resolved_title": "A Variational Synthesis of Evolutionary and Developmental Dynamics",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friston",
+          "given": "Karl",
+          "orcid": "0000-0001-7984-8909"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Constant",
+          "given": "Axel",
+          "orcid": "0000-0002-1547-8803"
+        },
+        {
+          "family": "Knight",
+          "given": "V. Bleu"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris",
+          "orcid": "0000-0002-4812-0744"
+        },
+        {
+          "family": "Parr",
+          "given": "Thomas",
+          "orcid": "0000-0001-5108-5743"
+        },
+        {
+          "family": "Campbell",
+          "given": "John O."
+        }
+      ]
+    },
+    "Friedman2023ATLASQuestionOrientedApproach049": {
+      "num": 49,
+      "doi": "10.5281/zenodo.10296601",
+      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
+      "registration_agency": "DataCite",
+      "resolved_title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "R.J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "David",
+          "given": "Scott"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Penland",
+          "given": "Andrew"
+        },
+        {
+          "family": "Young",
+          "given": "Sam"
+        },
+        {
+          "family": "Zacharias",
+          "given": "Colten"
+        }
+      ]
+    },
+    "Friedman2023AccountActiveInferenceModeling050": {
+      "num": 50,
+      "doi": "10.5281/zenodo.8415312",
+      "title": "An Account of Active Inference Modeling",
+      "registration_agency": "DataCite",
+      "resolved_title": "An Account of Active Inference Modeling",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023CognitiveSovereigntyActiveInference051": {
+      "num": 51,
+      "doi": "10.5281/zenodo.10038231",
+      "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+      "registration_agency": "DataCite",
+      "resolved_title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023CommentsAIAccountabilityPolicy052": {
+      "num": 52,
+      "doi": "10.5281/zenodo.8025956",
+      "title": "Comments on AI Accountability Policy to NTIA",
+      "registration_agency": "DataCite",
+      "resolved_title": "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "David",
+          "given": "Scott"
+        },
+        {
+          "family": "Abu-Ghazaleh",
+          "given": "Jumana"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ"
+        }
+      ]
+    },
+    "Friedman2023DistributedScienceScientificProcess053": {
+      "num": 53,
+      "doi": "10.31219/osf.io/dnw5k",
+      "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+      "registration_agency": "Crossref",
+      "resolved_title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Balzan",
+          "given": "Francesco",
+          "orcid": "0000-0001-5962-4254"
+        },
+        {
+          "family": "Campbell",
+          "given": "John"
+        },
+        {
+          "family": "Friston",
+          "given": "Karl",
+          "orcid": "0000-0001-7984-8909"
+        },
+        {
+          "family": "Ramstead",
+          "given": "Maxwell James"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Constant",
+          "given": "Axel",
+          "orcid": "0000-0002-1547-8803"
+        }
+      ]
+    },
+    "Friedman2023EnhancedNSFPostdoctoralReporting054": {
+      "num": 54,
+      "doi": "10.5281/zenodo.10160656",
+      "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+      "registration_agency": "DataCite",
+      "resolved_title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023ExperimentalEntomologyAgeVideo055": {
+      "num": 55,
+      "doi": "10.3791/65002",
+      "title": "Experimental Entomology in the Age of Video",
+      "registration_agency": "Crossref",
+      "resolved_title": "Experimental Entomology in the Age of Video",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel  A."
+        },
+        {
+          "family": "Wexler",
+          "given": "Judith R."
+        },
+        {
+          "family": "Alvarado",
+          "given": "Sebastian"
+        }
+      ]
+    },
+    "Friedman2023GeneralizedNotationNotationActive056": {
+      "num": 56,
+      "doi": "10.5281/zenodo.7803327",
+      "title": "Generalized Notation Notation for Active Inference Models",
+      "registration_agency": "DataCite",
+      "resolved_title": "Generalized Notation Notation for Active Inference Models",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023GenerativeResearchTeamsActive057": {
+      "num": 57,
+      "doi": "10.5281/zenodo.8164666",
+      "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
+      "registration_agency": "DataCite",
+      "resolved_title": "Generative Research Teams: Active Inference Compositions For Research and Meta-Science",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        }
+      ]
+    },
+    "Friedman2023AntsAging058": {
+      "num": 58,
+      "doi": "10.5281/zenodo.7855581",
+      "title": "Of Ants & Aging",
+      "registration_agency": "DataCite",
+      "resolved_title": "Of Ants &amp; Aging",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023OpenAccessScienceNeeds059": {
+      "num": 59,
+      "doi": "10.31222/osf.io/9nb3u",
+      "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+      "registration_agency": "Crossref",
+      "resolved_title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tamari",
+          "given": "Ronen",
+          "orcid": "0000-0002-6049-591X"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023PostdocReview20202023060": {
+      "num": 60,
+      "doi": "10.5281/zenodo.8377987",
+      "title": "Postdoc review (2020–2023)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Postdoc review (2020-2023) ~ September 25, 2023",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023ActiveInferenceInstituteActive061": {
+      "num": 61,
+      "doi": "10.5281/zenodo.8266280",
+      "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Active Inference Institute and Active Inference Ecosystem",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Institute",
+          "given": "Active Inference",
+          "orcid": "0009-0008-7721-7407"
+        },
+        {
+          "family": "Aguirre",
+          "given": "Ander",
+          "orcid": "0000-0002-6337-8292"
+        },
+        {
+          "family": "Boik",
+          "given": "John",
+          "orcid": "0000-0003-1289-7997"
+        },
+        {
+          "family": "Burian",
+          "given": "Libor",
+          "orcid": "0009-0007-6181-340X"
+        },
+        {
+          "family": "Brown",
+          "given": "Matthew",
+          "orcid": "0000-0002-7552-0989"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "David",
+          "given": "Scott",
+          "orcid": "0000-0003-0679-3286"
+        },
+        {
+          "family": "Douglass",
+          "given": "David S",
+          "orcid": "0000-0001-7894-8019"
+        },
+        {
+          "family": "Fernandez-Maquieira",
+          "given": "Pablo"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Grimm",
+          "given": "Holly",
+          "orcid": "0009-0001-6181-2569"
+        },
+        {
+          "family": "Guénin–Carlut",
+          "given": "Avel",
+          "orcid": "0000-0001-8239-7264"
+        },
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza",
+          "orcid": "0000-0002-5407-4852"
+        },
+        {
+          "family": "Knight",
+          "given": "V Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Rahmjoo",
+          "given": "Ali",
+          "orcid": "0000-0002-3244-7419"
+        },
+        {
+          "family": "Razi",
+          "given": "Adeel",
+          "orcid": "0000-0002-0779-9439"
+        },
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Tamari",
+          "given": "Ronen",
+          "orcid": "0000-0002-6049-591X"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        }
+      ]
+    },
+    "Friedman2023P3IFPropertiesProcessesPerspectives062": {
+      "num": 62,
+      "doi": "10.5281/zenodo.10034511",
+      "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Wilkinson",
+          "given": "Thomas M.",
+          "orcid": "0009-0005-1149-7723"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "David",
+          "given": "Scott",
+          "orcid": "0000-0003-0679-3286"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023CommentOrNotComment063": {
+      "num": 63,
+      "doi": "10.1016/j.plrev.2023.06.002",
+      "title": "To comment or not to comment",
+      "registration_agency": "Crossref",
+      "resolved_title": "To comment or not to comment, that is the question!",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tickles",
+          "given": "Dean"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023TranscriptChrisFieldsPhysics064": {
+      "num": 64,
+      "doi": "10.5281/zenodo.10447642",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "registration_agency": "DataCite",
+      "resolved_title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Fields",
+          "given": "Chris",
+          "orcid": "0000-0002-4812-0744"
+        },
+        {
+          "family": "Aguirre",
+          "given": "Ander",
+          "orcid": "0000-0002-6337-8292"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Balzan",
+          "given": "Francesco"
+        },
+        {
+          "family": "Berger",
+          "given": "Ross"
+        },
+        {
+          "family": "Draguta",
+          "given": "David",
+          "orcid": "0009-0005-3179-9286"
+        },
+        {
+          "family": "Guénin-Carlut",
+          "given": "Avel",
+          "orcid": "0000-0001-8239-7264"
+        },
+        {
+          "family": "Hurtado",
+          "given": "Ana Magdelena",
+          "orcid": "0000-0003-4064-1876"
+        },
+        {
+          "family": "Knight",
+          "given": "V. Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Koles",
+          "given": "Kate"
+        },
+        {
+          "family": "Neophytou",
+          "given": "Haris",
+          "orcid": "0009-0003-0921-737X"
+        },
+        {
+          "family": "Prior",
+          "given": "Corby"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Tennant",
+          "given": "Ian",
+          "orcid": "0009-0003-2185-8620"
+        },
+        {
+          "family": "Tolchinsky",
+          "given": "Alexey"
+        },
+        {
+          "literal": "Active Inference Institute"
+        }
+      ]
+    },
+    "Friedman2023WilliamBlakeBuckminsterFuller065": {
+      "num": 65,
+      "doi": "10.5281/zenodo.7514367",
+      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+      "registration_agency": "DataCite",
+      "resolved_title": "William Blake &amp; Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022ActiveInferenceOntologyDecentralized066": {
+      "num": 66,
+      "doi": "10.5281/zenodo.6320574",
+      "title": "An Active Inference Ontology for Decentralized Science",
+      "registration_agency": "DataCite",
+      "resolved_title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Applegate-Swanson",
+          "given": "Shaun",
+          "orcid": "0000-0001-9474-6038"
+        },
+        {
+          "family": "Balbuena",
+          "given": "Jessica Angeli",
+          "orcid": "0000-0003-2741-4476"
+        },
+        {
+          "family": "Choudhury",
+          "given": "Arhan",
+          "orcid": "0000-0001-6897-2947"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "El Damaty",
+          "given": "Shady",
+          "orcid": "0000-0002-2318-4477"
+        },
+        {
+          "family": "Guénin—Carlut",
+          "given": "Avel",
+          "orcid": "0000-0001-8239-7264"
+        },
+        {
+          "family": "Knight",
+          "given": "V. Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Metelkin",
+          "given": "Ivan",
+          "orcid": "0000-0003-2899-6690"
+        },
+        {
+          "family": "Shrivastava",
+          "given": "Siddhant",
+          "orcid": "0000-0002-9688-4730"
+        },
+        {
+          "family": "Singh",
+          "given": "Amit Kumar",
+          "orcid": "0000-0002-8870-9676"
+        },
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Caleb",
+          "given": "Tuttle.",
+          "orcid": "0000-0002-8469-2221"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alexander",
+          "orcid": "0000-0003-1306-4620"
+        }
+      ]
+    },
+    "Friedman2022CatechismTowardsActiveDiffusion067": {
+      "num": 67,
+      "doi": "10.5281/zenodo.7443847",
+      "title": "Catechism for Towards Active Diffusion",
+      "registration_agency": "DataCite",
+      "resolved_title": "Catechism for: \"Towards Active Diffusion: A Tale of Multiple (den)Cities\"",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022FromUsersSenseMakers068": {
+      "num": 68,
+      "doi": "10.48550/arXiv.2205.06345",
+      "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+      "registration_agency": "DataCite",
+      "resolved_title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tamari",
+          "given": "Ronen"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        },
+        {
+          "family": "Fischer",
+          "given": "William"
+        },
+        {
+          "family": "Hebert",
+          "given": "Lauren"
+        },
+        {
+          "family": "Shahaf",
+          "given": "Dafna"
+        }
+      ]
+    },
+    "Friedman2022FreeWillOrLack069": {
+      "num": 69,
+      "doi": "10.5281/zenodo.7394900",
+      "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+      "registration_agency": "DataCite",
+      "resolved_title": "On free will or the lack thereof",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Sapolsky",
+          "given": "Robert",
+          "orcid": "0000-0002-7435-5838"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022PredictiveProcessingInterpretationMirror070": {
+      "num": 70,
+      "doi": "10.5281/zenodo.7377255",
+      "title": "Predictive Processing Interpretation of the Mirror Test",
+      "registration_agency": "DataCite",
+      "resolved_title": "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "O'Connor",
+          "given": "Sean",
+          "orcid": "0000-0002-0858-5635"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022StructuringInformationCommonsOpen071": {
+      "num": 71,
+      "doi": null,
+      "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
+      "status": "no_doi"
+    },
+    "Friedman2022SystemsModelingCognitiveAudits072": {
+      "num": 72,
+      "doi": "10.5281/zenodo.7626768",
+      "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+      "registration_agency": "DataCite",
+      "resolved_title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022FreeEnergyPrincipleActive073": {
+      "num": 73,
+      "doi": "10.5281/zenodo.7449367",
+      "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Free Energy Principle &amp; Active Inference: a Systematic Literature Analysis",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Knight",
+          "given": "Virginia Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022TrustFinderRecommendationsCommunityBased074": {
+      "num": 74,
+      "doi": "10.5281/zenodo.7093836",
+      "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+      "registration_agency": "DataCite",
+      "resolved_title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "R.J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "David",
+          "given": "Scott"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2021ActiveInferantsActiveInference075": {
+      "num": 75,
+      "doi": "10.3389/fnbeh.2021.647732",
+      "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+      "registration_agency": "Crossref",
+      "resolved_title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "Tschantz",
+          "given": "Alec"
+        },
+        {
+          "family": "Ramstead",
+          "given": "Maxwell J. D."
+        },
+        {
+          "family": "Friston",
+          "given": "Karl"
+        },
+        {
+          "family": "Constant",
+          "given": "Axel"
+        }
+      ]
+    },
+    "Friedman2021ActiveInferenceModelingConflict076": {
+      "num": 76,
+      "doi": "10.5281/zenodo.5750934",
+      "title": "Active Inference in Modeling Conflict",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Inference in Modeling Conflict",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "David",
+          "given": "Scott"
+        },
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2021DigitalRhetoricalEcosystemAnalysis077": {
+      "num": 77,
+      "doi": "10.5281/zenodo.5573946",
+      "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+      "registration_agency": "DataCite",
+      "resolved_title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Mascarenhas",
+          "given": "Mridula"
+        },
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2021InnovatorSDigitalPlaybook078": {
+      "num": 78,
+      "doi": null,
+      "title": "Innovator's Digital Playbook",
+      "status": "no_doi"
+    },
+    "Friedman2021NarrativeInformationEcosystemsConflict079": {
+      "num": 79,
+      "doi": null,
+      "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+      "status": "no_doi"
+    },
+    "Friedman2021NarrativeInformationManagement080": {
+      "num": 80,
+      "doi": "10.5281/zenodo.5565577",
+      "title": "Narrative Information Management",
+      "registration_agency": "DataCite",
+      "resolved_title": "Narrative Information Management",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Applegate-Swanson",
+          "given": "Shaun",
+          "orcid": "0000-0001-9474-6038"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Knight",
+          "given": "Virginia Bleu"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        }
+      ]
+    },
+    "Friedman2021FacilitatorSCatechismPlaybook081": {
+      "num": 81,
+      "doi": "10.5281/zenodo.4579413",
+      "title": "The Facilitator's Catechism Playbook",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Facilitator's Catechism Playbook",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        }
+      ]
+    },
+    "Friedman2020ActiveInferenceBehaviorEngineering082": {
+      "num": 82,
+      "doi": "10.5281/zenodo.4021162",
+      "title": "Active Inference & Behavior Engineering for Teams",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Inference &amp; Behavior Engineering for Teams",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Vyatkin",
+          "given": "Alexander",
+          "orcid": "0000-0003-1306-4620"
+        },
+        {
+          "family": "Metelkin",
+          "given": "Ivan",
+          "orcid": "0000-0003-2899-6690"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2020CommunicationRemoteTeams083": {
+      "num": 83,
+      "doi": null,
+      "title": "Communication for Remote Teams",
+      "status": "no_doi"
+    },
+    "Friedman2020DistributedPhysiologyMolecularBasis084": {
+      "num": 84,
+      "doi": "10.1016/j.yhbeh.2020.104757",
+      "title": "Distributed physiology and the molecular basis of social life in eusocial insects",
+      "registration_agency": "Crossref",
+      "resolved_title": "Distributed physiology and the molecular basis of social life in eusocial insects",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "D.A."
+        },
+        {
+          "family": "Johnson",
+          "given": "B.R."
+        },
+        {
+          "family": "Linksvayer",
+          "given": "T.A."
+        }
+      ]
+    },
+    "Friedman2020EmergentTeamsComplexThreats085": {
+      "num": 85,
+      "doi": "10.5281/zenodo.3986084",
+      "title": "Emergent Teams for Complex Threats",
+      "registration_agency": "DataCite",
+      "resolved_title": "Emergent Teams for Complex Threats",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2020GeneExpressionVariationBrains086": {
+      "num": 86,
+      "doi": "10.1038/s42003-020-0813-8",
+      "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
+      "registration_agency": "Crossref",
+      "resolved_title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "York",
+          "given": "Ryan Alexander"
+        },
+        {
+          "family": "Hilliard",
+          "given": "Austin Travis"
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M.",
+          "orcid": "0000-0002-1090-9539"
+        }
+      ]
+    },
+    "Friedman2020HowUseKeybaseRemote087": {
+      "num": 87,
+      "doi": null,
+      "title": "How to use Keybase for remote teams",
+      "status": "no_doi"
+    },
+    "Friedman2020MeasurementNaturalVariationNeurotransmitter088": {
+      "num": 88,
+      "doi": "10.1007/s00216-019-02355-3",
+      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+      "registration_agency": "Crossref",
+      "resolved_title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Shin",
+          "given": "Mimi"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M."
+        },
+        {
+          "family": "Venton",
+          "given": "B. Jill"
+        }
+      ]
+    },
+    "Friedman2020GreatPresetRemoteTeams089": {
+      "num": 89,
+      "doi": null,
+      "title": "The Great Preset: Remote Teams and Operational Art",
+      "status": "no_doi"
+    },
+    "Friedman2020InnovatorSCatechism090": {
+      "num": 90,
+      "doi": "10.5281/zenodo.4383229",
+      "title": "The Innovator's Catechism",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Innovator's Catechism",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Phelan",
+          "given": "Steven E.",
+          "orcid": "0000-0003-3897-3273"
+        }
+      ]
+    },
+    "Friedman2020NeuroscienceDecisionMakingInterview091": {
+      "num": 91,
+      "doi": "10.34700/8pg4-0h12",
+      "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Hanks",
+          "given": "Timothy"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        }
+      ]
+    },
+    "Friedman2019DennettExplainedInterviewDaniel092": {
+      "num": 92,
+      "doi": "10.34700/7gkw-zh08",
+      "title": "Dennett Explained (interview with Daniel Dennett)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Dennett Explained. An interview with Daniel Dennett.",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Dennett",
+          "given": "Daniel",
+          "orcid": "0000-0003-1181-3093"
+        },
+        {
+          "family": "Fleig-Goldstein",
+          "given": "Brendan"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093": {
+      "num": 93,
+      "doi": null,
+      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "status": "no_doi"
+    },
+    "Friedman2019AntColonyAsTest094": {
+      "num": 94,
+      "doi": "10.1007/s11229-019-02130-y",
+      "title": "The ant colony as a test for scientific theories of consciousness",
+      "registration_agency": "Crossref",
+      "resolved_title": "The ant colony as a test for scientific theories of consciousness",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Søvik",
+          "given": "Eirik",
+          "orcid": "0000-0002-9347-0831"
+        }
+      ]
+    },
+    "Friedman2019PhysiologyForagerHydrationVariation095": {
+      "num": 95,
+      "doi": "10.1038/s41598-019-41586-3",
+      "title": "The physiology of forager hydration and variation among harvester ant colonies",
+      "registration_agency": "Crossref",
+      "resolved_title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Greene",
+          "given": "Michael J."
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M."
+        }
+      ]
+    },
+    "Friedman2018ForagingBehaviorLocomotionInvasive096": {
+      "num": 96,
+      "doi": "10.1371/journal.pone.0202117",
+      "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
+      "registration_agency": "Crossref",
+      "resolved_title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Burford",
+          "given": "Benjamin P.",
+          "orcid": "0000-0002-2120-3769"
+        },
+        {
+          "family": "Lee",
+          "given": "Gail"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Brachmann",
+          "given": "Esmé"
+        },
+        {
+          "family": "Khan",
+          "given": "Rebia"
+        },
+        {
+          "family": "MacArthur-Waltz",
+          "given": "Dylan J."
+        },
+        {
+          "family": "McCarty",
+          "given": "Aidan D."
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M."
+        }
+      ]
+    },
+    "Friedman2018MVEEFrameworkEvolutionaryStudies097": {
+      "num": 97,
+      "doi": "10.5281/zenodo.13999298",
+      "title": "MVEE: A Framework for Evolutionary Studies",
+      "registration_agency": "DataCite",
+      "resolved_title": "MVEE:  A Framework for Evolutionary Studies",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2018WoodliceMenBayesianAccount098": {
+      "num": 98,
+      "doi": "10.34700/h460-nz89",
+      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friston",
+          "given": "Karl",
+          "orcid": "0000-0001-7984-8909"
+        },
+        {
+          "family": "Fortier",
+          "given": "Martin",
+          "orcid": "0000-0003-3282-8120"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2018PartnerPenPlayParallel099": {
+      "num": 99,
+      "doi": "10.3390/arts7030039",
+      "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+      "registration_agency": "Crossref",
+      "resolved_title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
+      "title_similarity": 0.975,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2018RoleDopamineCollectiveRegulation100": {
+      "num": 100,
+      "doi": "10.1016/j.isci.2018.09.001",
+      "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+      "registration_agency": "Crossref",
+      "resolved_title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Pilko",
+          "given": "Anna"
+        },
+        {
+          "family": "Skowronska-Krawczyk",
+          "given": "Dorota"
+        },
+        {
+          "family": "Krasinska",
+          "given": "Karolina"
+        },
+        {
+          "family": "Parker",
+          "given": "Jacqueline W."
+        },
+        {
+          "family": "Hirsh",
+          "given": "Jay"
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M."
+        }
+      ]
+    },
+    "Friedman2017MutAntsAreHere101": {
+      "num": 101,
+      "doi": "10.1016/j.cell.2017.07.046",
+      "title": "The MutAnts are here",
+      "registration_agency": "Crossref",
+      "resolved_title": "The MutAnts Are Here",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M."
+        },
+        {
+          "family": "Luo",
+          "given": "Liqun"
+        }
+      ]
+    },
+    "Friedman2017TwoLineagesThatNeed102": {
+      "num": 102,
+      "doi": "10.1111/mec.13964",
+      "title": "Two lineages that need each other",
+      "registration_agency": "Crossref",
+      "resolved_title": "Two lineages that need each other",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Gordon",
+          "given": "D. M.",
+          "orcid": "0000-0002-1090-9539"
+        },
+        {
+          "family": "Friedman",
+          "given": "D. A.",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2016AntGeneticsReproductivePhysiology103": {
+      "num": 103,
+      "doi": "10.1146/annurev-neuro-070815-013927",
+      "title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+      "registration_agency": "Crossref",
+      "resolved_title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "D.A."
+        },
+        {
+          "family": "Gordon",
+          "given": "D.M."
+        }
+      ]
+    },
+    "Friedman2016ContextDependentExpressionForaging104": {
+      "num": 104,
+      "doi": "10.1098/rspb.2016.0841",
+      "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+      "registration_agency": "Crossref",
+      "resolved_title": "Context-dependent expression of the\n            <i>foraging</i>\n            gene in field colonies of ants: the interacting roles of age, environment and task",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Ingram",
+          "given": "Krista K.",
+          "orcid": "0000-0002-4512-1549"
+        },
+        {
+          "family": "Gordon",
+          "given": "Deborah M."
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Greene",
+          "given": "Michael"
+        },
+        {
+          "family": "Kahler",
+          "given": "John"
+        },
+        {
+          "family": "Peteru",
+          "given": "Swetha"
+        }
+      ]
+    },
+    "Friedman2016InfluenceNuclearStructureFormation105": {
+      "num": 105,
+      "doi": "10.3109/09553002.2016.1144941",
+      "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+      "registration_agency": "Crossref",
+      "resolved_title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Tait",
+          "given": "Lauren"
+        },
+        {
+          "family": "Vaughan",
+          "given": "Andrew T. M."
+        }
+      ]
+    },
+    "Friedman2015CommentaryPortugueseCryptoJews106": {
+      "num": 106,
+      "doi": "10.3389/fgene.2015.00261",
+      "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+      "registration_agency": "Crossref",
+      "resolved_title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Marcus",
+          "given": "Alexander W."
+        },
+        {
+          "family": "Ebel",
+          "given": "Emily R."
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        }
+      ]
+    },
+    "Friedman2015CouldEhrlichialInfectionCause107": {
+      "num": 107,
+      "doi": "10.1016/j.mehy.2015.09.015",
+      "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+      "registration_agency": "Crossref",
+      "resolved_title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Kallick",
+          "given": "Charles A."
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Nyindo",
+          "given": "Mramba B.A."
+        }
+      ]
+    },
+    "Friedman2015LargeScaleCodingSequence108": {
+      "num": 108,
+      "doi": "10.1093/molbev/msu292",
+      "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+      "registration_agency": "Crossref",
+      "resolved_title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
+      "title_similarity": 0.9951,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Jasper",
+          "given": "William Cameron"
+        },
+        {
+          "family": "Linksvayer",
+          "given": "Timothy A."
+        },
+        {
+          "family": "Atallah",
+          "given": "Joel"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        },
+        {
+          "family": "Chiu",
+          "given": "Joanna C."
+        },
+        {
+          "family": "Johnson",
+          "given": "Brian R."
+        }
+      ]
+    },
+    "Friedman2026EntoLinguisticsLanguageAmbiguity109": {
+      "num": 109,
+      "doi": "10.5281/zenodo.19574117",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "registration_agency": "DataCite",
+      "resolved_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Chambers",
+          "given": "Tucker Cahill",
+          "orcid": "0009-0008-3793-7872"
+        }
+      ]
+    },
+    "Friedman2026LivingMetaAnalysisArchitecture110": {
+      "num": 110,
+      "doi": "10.5281/zenodo.19461933",
+      "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+      "registration_agency": "DataCite",
+      "resolved_title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Dietz",
+          "given": "Joel"
+        }
+      ]
+    },
+    "Friedman2026DynamicAttentionalAgentsFocused111": {
+      "num": 111,
+      "doi": "10.1007/978-3-032-16955-6_11",
+      "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+      "registration_agency": "Crossref",
+      "resolved_title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Kavi",
+          "given": "Prakash Chandra"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "Patow",
+          "given": "Gustavo"
+        }
+      ]
+    },
+    "Friedman2026CompositionalApproachesLinguisticCase112": {
+      "num": 112,
+      "doi": "10.5281/zenodo.19695259",
+      "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+      "registration_agency": "DataCite",
+      "resolved_title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TowardsLean4Formalization113": {
+      "num": 113,
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "registration_agency": "DataCite",
+      "resolved_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2020FacilitatorSCatechism114": {
+      "num": 114,
+      "doi": "10.5281/zenodo.4062540",
+      "title": "The Facilitator's Catechism",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Facilitator's Catechism",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ArchitectureFalseGodsWilliam115": {
+      "num": 115,
+      "doi": "10.5281/zenodo.20144983",
+      "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CrescentCityLivingWaves116": {
+      "num": 116,
+      "doi": "10.5281/zenodo.20286170",
+      "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "registration_agency": "DataCite",
+      "resolved_title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026IntroductionBiologyGenerativeApproach117": {
+      "num": 117,
+      "doi": "10.5281/zenodo.20286477",
+      "title": "Introduction to Biology: A Generative Approach",
+      "registration_agency": "DataCite",
+      "resolved_title": "Introduction to Biology: A Generative Approach",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026PolicyEntanglementActiveInference119": {
+      "num": 119,
+      "doi": "10.5281/zenodo.20418904",
+      "title": "Policy Entanglement in Active Inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026BoundedAutoResearchTinyReproducible120": {
+      "num": 120,
+      "doi": "10.5281/zenodo.20417016",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "registration_agency": "DataCite",
+      "resolved_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ConvergenceAnalysisGradientDescent121": {
+      "num": 121,
+      "doi": "10.5281/zenodo.20417136",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "registration_agency": "DataCite",
+      "resolved_title": "Convergence Analysis of Gradient Descent Optimization",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026EditorialQualityAtScale122": {
+      "num": 122,
+      "doi": "10.5281/zenodo.20417104",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "registration_agency": "DataCite",
+      "resolved_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TemplateApproachReproducibleGenerative123": {
+      "num": 123,
+      "doi": "10.5281/zenodo.20419007",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "registration_agency": "DataCite",
+      "resolved_title": "A template/ approach to Reproducible Generative Research",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ActiveInferenceMultiTrack124": {
+      "num": 124,
+      "doi": "10.5281/zenodo.20417021",
+      "title": "Active Inference Multi-Track Exemplar",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Inference Multi-Track Exemplar",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026BeeStackEvidenceTypedScaffold125": {
+      "num": 125,
+      "doi": "10.5281/zenodo.20420556",
+      "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+      "registration_agency": "DataCite",
+      "resolved_title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Chambers",
+          "given": "Tucker Cahill",
+          "orcid": "0009-0008-3793-7872"
+        }
+      ]
+    },
+    "Friedman2026WhenDoBugsSee126": {
+      "num": 126,
+      "doi": "10.5281/zenodo.20450880",
+      "title": "When do bugs see (infra)red?",
+      "registration_agency": "DataCite",
+      "resolved_title": "When do bugs see (infra)red?",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tucker Chambers",
+          "given": "",
+          "orcid": "0009-0008-3793-7872"
+        },
+        {
+          "family": "Daniel A. Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026SelfImprovementAgentHarness127": {
+      "num": 127,
+      "doi": "10.5281/zenodo.20453879",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "registration_agency": "DataCite",
+      "resolved_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025BiofirmDevelopmentFirstPrinciples128": {
+      "num": 128,
+      "doi": "10.5281/zenodo.14861596",
+      "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+      "registration_agency": "DataCite",
+      "resolved_title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "John Clippinger",
+          "given": ""
+        },
+        {
+          "family": "Andrew Pashea",
+          "given": "",
+          "orcid": "0009-0004-4061-6296"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025ConCatEnateEmulation129": {
+      "num": 129,
+      "doi": "10.5281/zenodo.13626536",
+      "title": "Con-cat-enate: emulation of Cat Hippocampus",
+      "registration_agency": "DataCite",
+      "resolved_title": "Con-cat-enate: emulation of Cat Hippocampus",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Djuwidja",
+          "given": "Andrew"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025GraphspeakLanguageHandshake130": {
+      "num": 130,
+      "doi": "10.5281/zenodo.14737156",
+      "title": "Graphspeak: of language and handshake",
+      "registration_agency": "DataCite",
+      "resolved_title": "Graphspeak: of language and handshake",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "djuwidja",
+          "given": "andrew",
+          "orcid": "0009-0006-9402-2412"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025BevCycPositPrimitiveDrivers131": {
+      "num": 131,
+      "doi": "10.5281/zenodo.14737075",
+      "title": "BevCyc - posit on primitive drivers of creatures",
+      "registration_agency": "DataCite",
+      "resolved_title": "BevCyc - posit on primitive drivers of creatures",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "djuwidja",
+          "given": "andrew",
+          "orcid": "0009-0006-9402-2412"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025BeaconsPreEmulationSocial132": {
+      "num": 132,
+      "doi": "10.5281/zenodo.14737059",
+      "title": "Beacons - pre emulation of social cortex",
+      "registration_agency": "DataCite",
+      "resolved_title": "Beacons - pre emulation of social cortex",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "djuwidja",
+          "given": "andrew",
+          "orcid": "0009-0006-9402-2412"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2025ConCatEnatePilot133": {
+      "num": 133,
+      "doi": "10.5281/zenodo.14737042",
+      "title": "Con-cat-enate: pilot overview",
+      "registration_agency": "DataCite",
+      "resolved_title": "Con-cat-enate: pilot overview",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "djuwidja",
+          "given": "andrew",
+          "orcid": "0009-0006-9402-2412"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2024PushPullPrimingSequence134": {
+      "num": 134,
+      "doi": "10.5281/zenodo.10659374",
+      "title": "Push and Pull: A priming sequence",
+      "registration_agency": "DataCite",
+      "resolved_title": "Push and Pull: A priming sequence",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023NaturalAIBasedScience135": {
+      "num": 135,
+      "doi": "10.5281/zenodo.10360056",
+      "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+      "registration_agency": "DataCite",
+      "resolved_title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Clippinger",
+          "given": "John"
+        },
+        {
+          "family": "de Vries",
+          "given": "Bert"
+        },
+        {
+          "family": "Noveck",
+          "given": "Beth"
+        },
+        {
+          "family": "Fields",
+          "given": "Chris"
+        },
+        {
+          "family": "Slater",
+          "given": "Cory"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "Silbersweig",
+          "given": "David A."
+        },
+        {
+          "family": "Lapenta",
+          "given": "Francesco"
+        },
+        {
+          "family": "Grimm",
+          "given": "Holly"
+        },
+        {
+          "family": "Emmett",
+          "given": "Jeff"
+        },
+        {
+          "family": "Shane",
+          "given": "Joshua"
+        },
+        {
+          "family": "Friston",
+          "given": "Karl"
+        },
+        {
+          "family": "Nkemnkia",
+          "given": "Martin Nkafu"
+        },
+        {
+          "family": "Brown",
+          "given": "Matthew"
+        },
+        {
+          "family": "Pirkowski",
+          "given": "Matthew"
+        },
+        {
+          "family": "Levin",
+          "given": "Michael"
+        },
+        {
+          "family": "Zargham",
+          "given": "Michael"
+        },
+        {
+          "family": "Tuan",
+          "given": "Nguyen Anh"
+        },
+        {
+          "family": "Achuthan",
+          "given": "Krishnashree"
+        },
+        {
+          "family": "Patterson",
+          "given": "Thomas"
+        },
+        {
+          "family": "David",
+          "given": "Scott L."
+        },
+        {
+          "family": "Kehler",
+          "given": "Thomas"
+        },
+        {
+          "family": "Knight",
+          "given": "Virginia Bleu"
+        },
+        {
+          "family": "Nakayama",
+          "given": "Yasuhide"
+        }
+      ]
+    },
+    "Friedman2023ATLASQuestionOrientedApproach136": {
+      "num": 136,
+      "doi": "10.5281/zenodo.10362561",
+      "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+      "registration_agency": "DataCite",
+      "resolved_title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "R.J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "David",
+          "given": "Scott"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Mikhailova",
+          "given": "Alexandra",
+          "orcid": "0000-0002-8699-7125"
+        },
+        {
+          "family": "Penland",
+          "given": "Andrew"
+        },
+        {
+          "family": "Young",
+          "given": "Sam"
+        },
+        {
+          "family": "Zacharias",
+          "given": "Colten"
+        }
+      ]
+    },
+    "Friedman2023TranscriptActiveInferenceGuestStream137": {
+      "num": 137,
+      "doi": "10.5281/zenodo.8228934",
+      "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "registration_agency": "DataCite",
+      "resolved_title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Peters",
+          "given": "Megan A. K.",
+          "orcid": "0000-0002-0248-0816"
+        },
+        {
+          "family": "Bradford",
+          "given": "Nora",
+          "orcid": "0000-0001-8154-3784"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023ModernNostrIndexCard138": {
+      "num": 138,
+      "doi": "10.5281/zenodo.8118155",
+      "title": "Modern Nostr Index Card-based Knowledge Engineering",
+      "registration_agency": "DataCite",
+      "resolved_title": "Modern Nostr Index Card-based Knowledge Engineering",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Claros",
+          "given": "Andrew",
+          "orcid": "0000-0002-7522-0548"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2023SlidesIris139": {
+      "num": 139,
+      "doi": "10.5281/zenodo.7838652",
+      "title": "Slides for Iris",
+      "registration_agency": "DataCite",
+      "resolved_title": "Slides for Iris",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022CanonicalNeuralNetworksPerform140": {
+      "num": 140,
+      "doi": "10.5281/zenodo.7400525",
+      "title": "Canonical neural networks perform active inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "Canonical neural networks perform active inference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Isomura",
+          "given": "Takuya"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022InteroceptionAsModelingAllostasis141": {
+      "num": 141,
+      "doi": "10.5281/zenodo.7400708",
+      "title": "Interoception as modeling, allostasis as control",
+      "registration_agency": "DataCite",
+      "resolved_title": "Interoception as modeling, allostasis as control",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Sennesh",
+          "given": "Eli"
+        },
+        {
+          "family": "Theriault",
+          "given": "Jordan"
+        },
+        {
+          "family": "Douglass",
+          "given": "Dave",
+          "orcid": "0000-0001-7894-8019"
+        },
+        {
+          "family": "Tennant",
+          "given": "Ian"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022TranscriptMarkSolmsConsciousness142": {
+      "num": 142,
+      "doi": "10.5281/zenodo.7259006",
+      "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+      "registration_agency": "DataCite",
+      "resolved_title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Solms",
+          "given": "Mark",
+          "orcid": "0000-0003-4828-3882"
+        },
+        {
+          "family": "Douglass",
+          "given": "David S",
+          "orcid": "0000-0001-7894-8019"
+        },
+        {
+          "family": "Sillett",
+          "given": "Stephen",
+          "orcid": "0000-0003-1046-1946"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022WorkedExampleBayesianMechanics143": {
+      "num": 143,
+      "doi": "10.5281/zenodo.7400785",
+      "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+      "registration_agency": "DataCite",
+      "resolved_title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Sakthivadivel",
+          "given": "Dalton AR",
+          "orcid": "0000-0002-7907-7611"
+        },
+        {
+          "family": "Rahmjoo",
+          "given": "Ali"
+        },
+        {
+          "family": "Smékal",
+          "given": "Jakub"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022TranscriptDiscussionsCommunicationAs144": {
+      "num": 144,
+      "doi": "10.5281/zenodo.7401874",
+      "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+      "registration_agency": "DataCite",
+      "resolved_title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Tison",
+          "given": "Rémi"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean"
+        },
+        {
+          "family": "Knight",
+          "given": "Bleu"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2022TrackingPublicSensemakingThrough145": {
+      "num": 145,
+      "doi": "10.5281/zenodo.6904426",
+      "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+      "registration_agency": "DataCite",
+      "resolved_title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Mascarenhas",
+          "given": "Mridula"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Knight",
+          "given": "Bleu"
+        },
+        {
+          "family": "Murphy",
+          "given": "Sarah"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A.",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2021TranscriptKarlFriston1st146": {
+      "num": 146,
+      "doi": "10.5281/zenodo.5797040",
+      "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+      "registration_agency": "DataCite",
+      "resolved_title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friston",
+          "given": "Karl",
+          "orcid": "0000-0001-7984-8909"
+        },
+        {
+          "family": "Douglass",
+          "given": "David Standish",
+          "orcid": "0000-0001-7894-8019"
+        },
+        {
+          "family": "Iennaco de Vasconcelos",
+          "given": "Maria Luiza",
+          "orcid": "0000-0002-5407-4852"
+        },
+        {
+          "family": "Sillett",
+          "given": "Stephen",
+          "orcid": "0000-0003-1046-1946"
+        },
+        {
+          "family": "Sganzerla",
+          "given": "Lorena",
+          "orcid": "0000-0002-5384-6232"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Metelkin",
+          "given": "Ivan",
+          "orcid": "0000-0003-2899-6690"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2021CollaborativeWritingCatechismBased147": {
+      "num": 147,
+      "doi": "10.5281/zenodo.4624298",
+      "title": "Collaborative Writing for Catechism-Based Teams",
+      "registration_agency": "DataCite",
+      "resolved_title": "Collaborative Writing for Catechism-Based Teams",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2020ReimaginingMaps148": {
+      "num": 148,
+      "doi": "10.5281/zenodo.4170025",
+      "title": "Reimagining Maps",
+      "registration_agency": "DataCite",
+      "resolved_title": "Reimagining Maps",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Maron",
+          "given": "Mikel"
+        }
+      ]
+    },
+    "Friedman2020InfiniteGamesInfiniteTeams149": {
+      "num": 149,
+      "doi": "10.5281/zenodo.12601674",
+      "title": "Infinite Games for Infinite Teams",
+      "registration_agency": "DataCite",
+      "resolved_title": "Infinite Games for Infinite Teams",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ",
+          "orcid": "0000-0002-9913-7159"
+        }
+      ]
+    },
+    "Friedman2026MusicNeverStoppedGrateful150": {
+      "num": 150,
+      "doi": "10.5281/zenodo.20482025",
+      "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DeterministicTestbedSelfOrganizing151": {
+      "num": 151,
+      "doi": "10.5281/zenodo.20533669",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "registration_agency": "DataCite",
+      "resolved_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026RecoveringLLMPersonaAccuracies152": {
+      "num": 152,
+      "doi": "10.5281/zenodo.20498699",
+      "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+      "registration_agency": "DataCite",
+      "resolved_title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TriplicateDataDrivenLarge153": {
+      "num": 153,
+      "doi": "10.5281/zenodo.20533675",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TemplateTextbook154": {
+      "num": 154,
+      "doi": "10.5281/zenodo.20533125",
+      "title": "The Template Textbook",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Template Textbook",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2016LessonsFromColony155": {
+      "num": 155,
+      "doi": null,
+      "title": "Lessons from the colony",
+      "status": "no_doi"
+    },
+    "Friedman2016FullSpeedAheadCity156": {
+      "num": 156,
+      "doi": "10.1126/science.aag1520",
+      "title": "Full speed ahead to the City on the Hill",
+      "registration_agency": "Crossref",
+      "resolved_title": "Full speed ahead to the City on the Hill",
+      "title_similarity": 1.0,
+      "status": "no_authors_published"
+    },
+    "Friedman2021Disinforge157": {
+      "num": 157,
+      "doi": null,
+      "title": "Disinforge",
+      "status": "no_doi"
+    },
+    "Friedman2021DefiningEvents2020Hindsight158": {
+      "num": 158,
+      "doi": "10.1126/science.371.6524.22",
+      "title": "Defining events: 2020 in hindsight",
+      "registration_agency": null,
+      "status": "doi_unresolved"
+    },
+    "Friedman2022ActiveBlockferenceCadCADActive159": {
+      "num": 159,
+      "doi": "10.1007/978-3-031-28719-0_10",
+      "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+      "registration_agency": "Crossref",
+      "resolved_title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Choudhury",
+          "given": "Arhan",
+          "orcid": "0000-0001-6897-2947"
+        },
+        {
+          "family": "Singh",
+          "given": "Amit Kumar",
+          "orcid": "0000-0002-8870-9676"
+        },
+        {
+          "family": "Damaty",
+          "given": "Shady El",
+          "orcid": "0000-0002-2318-4477"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2024FromNeuronalPacketsThoughtseeds160": {
+      "num": 160,
+      "doi": "10.48550/arXiv.2408.15982",
+      "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+      "registration_agency": "DataCite",
+      "resolved_title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Kavi",
+          "given": "Prakash Chandra"
+        },
+        {
+          "family": "Zamora-López",
+          "given": "Gorka"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        }
+      ]
+    },
+    "Friedman2021KnowledgeManagementArchipelago161": {
+      "num": 161,
+      "doi": "10.5281/zenodo.5034808",
+      "title": "Knowledge Management Archipelago",
+      "registration_agency": "DataCite",
+      "resolved_title": "Knowledge Management Archipelago",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Cordes",
+          "given": "Richard J.",
+          "orcid": "0000-0002-9913-7159"
+        }
+      ]
+    },
+    "Friedman2024CommentsSubmittedByBlockScience162": {
+      "num": 162,
+      "doi": "10.5281/zenodo.13273682",
+      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "registration_agency": "DataCite",
+      "resolved_title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
+      "title_similarity": 0.9,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "RJ"
+        }
+      ]
+    },
+    "Friedman2017OsteopathyVariableVariabilityHealth163": {
+      "num": 163,
+      "doi": null,
+      "title": "Osteopathy and the Variable Variability of Health",
+      "status": "no_doi"
+    },
+    "Friedman2016CellsMechanobiologyOsteopathy164": {
+      "num": 164,
+      "doi": null,
+      "title": "Cells, Mechanobiology, and Osteopathy",
+      "status": "no_doi"
+    },
+    "Friedman2026ITraceVerificationFirstWebcam165": {
+      "num": 165,
+      "doi": "10.5281/zenodo.20614908",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "registration_agency": "DataCite",
+      "resolved_title": "iTrace: verification-first webcam eye-movement analysis",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DemoCreateDeclarativeAudioVisual166": {
+      "num": 166,
+      "doi": "10.5281/zenodo.20693216",
+      "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+      "registration_agency": "DataCite",
+      "resolved_title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ENTOENcryptedTypedOmnitrack167": {
+      "num": 167,
+      "doi": "10.5281/zenodo.20396328",
+      "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+      "registration_agency": "DataCite",
+      "resolved_title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026GeneralizedNotationNotationGNN168": {
+      "num": 168,
+      "doi": "10.5281/zenodo.7803313",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "registration_agency": "DataCite",
+      "resolved_title": "GeneralizedNotationNotation (GNN)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "The GeneralizedNotationNotation Community Contributors",
+          "given": ""
+        }
+      ]
+    },
+    "Friedman2026COGANTDeterministicCodebaseGNN169": {
+      "num": 169,
+      "doi": "10.5281/zenodo.20705350",
+      "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+      "registration_agency": "DataCite",
+      "resolved_title": "COGANT: Deterministic Codebase-to-GNN Translation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026AGEINTAgenticIntelligence170": {
+      "num": 170,
+      "doi": "10.5281/zenodo.20732274",
+      "title": "AGEINT: Agentic Intelligence",
+      "registration_agency": "DataCite",
+      "resolved_title": "AGEINT: Agentic Intelligence",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026PolicyDistillationAsActive171": {
+      "num": 171,
+      "doi": "10.5281/zenodo.20747834",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "registration_agency": "DataCite",
+      "resolved_title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TemplateMadlibDeterministicToken172": {
+      "num": 172,
+      "doi": "10.5281/zenodo.20786638",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "registration_agency": "DataCite",
+      "resolved_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CaliforniaPublicRecordsTechnical173": {
+      "num": 173,
+      "doi": "10.5281/zenodo.20789899",
+      "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+      "registration_agency": "DataCite",
+      "resolved_title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174": {
+      "num": 174,
+      "doi": "10.5281/zenodo.20804585",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "registration_agency": "DataCite",
+      "resolved_title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026RealizingEmptinessOperationalSurrogates175": {
+      "num": 175,
+      "doi": "10.5281/zenodo.20834846",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "registration_agency": "DataCite",
+      "resolved_title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026LivingMetaAnalysisModafinil176": {
+      "num": 176,
+      "doi": "10.5281/zenodo.20931964",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "registration_agency": "DataCite",
+      "resolved_title": "A Living Meta-Analysis of the Modafinil Literature",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026RefinementGoldMetallurgicalAnalogy177": {
+      "num": 177,
+      "doi": "10.5281/zenodo.20931955",
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "registration_agency": "DataCite",
+      "resolved_title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026AlphaCOGANTRecursiveCorporateSelf178": {
+      "num": 178,
+      "doi": "10.5281/zenodo.20976824",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "registration_agency": "DataCite",
+      "resolved_title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Tucker Cahill Chambers",
+          "given": ""
+        }
+      ]
+    },
+    "Friedman2026MappingWilliamBlakeS179": {
+      "num": 179,
+      "doi": "10.5281/zenodo.21047573",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "registration_agency": "DataCite",
+      "resolved_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026SortitionUpstreamNTQR180": {
+      "num": 180,
+      "doi": "10.5281/zenodo.21083779",
+      "title": "Sortition Upstream of NTQR",
+      "registration_agency": "DataCite",
+      "resolved_title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ExploratoryDataAnalysisReproducible181": {
+      "num": 181,
+      "doi": "10.5281/zenodo.21086292",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "registration_agency": "DataCite",
+      "resolved_title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DomainLanguageSpecifyingControlled182": {
+      "num": 182,
+      "doi": "10.5281/zenodo.21086548",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "registration_agency": "DataCite",
+      "resolved_title": "A Domain Language for Specifying Controlled Methods",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026EntomologicalLawFieldMap183": {
+      "num": 183,
+      "doi": "10.5281/zenodo.21137276",
+      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "registration_agency": "DataCite",
+      "resolved_title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ShapeBetweenFullPage184": {
+      "num": 184,
+      "doi": "10.5281/zenodo.21176000",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026AutopoieticProjectGeneration185": {
+      "num": 185,
+      "doi": "10.5281/zenodo.21227869",
+      "title": "Autopoietic Project Generation",
+      "registration_agency": "DataCite",
+      "resolved_title": "Autopoietic Project Generation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TemplatePitchDeckReproducible186": {
+      "num": 186,
+      "doi": "10.5281/zenodo.21281509",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "registration_agency": "DataCite",
+      "resolved_title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187": {
+      "num": 187,
+      "doi": "10.5281/zenodo.21298894",
+      "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+      "registration_agency": "DataCite",
+      "resolved_title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026RegisteredReportTemplatePreregistration188": {
+      "num": 188,
+      "doi": "10.5281/zenodo.21298892",
+      "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "registration_agency": "DataCite",
+      "resolved_title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026RedactedReportTemplateDisclosure189": {
+      "num": 189,
+      "doi": "10.5281/zenodo.21298890",
+      "title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "registration_agency": "DataCite",
+      "resolved_title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026PoolsRulesToolsTemplate190": {
+      "num": 190,
+      "doi": "10.5281/zenodo.21298888",
+      "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+      "registration_agency": "DataCite",
+      "resolved_title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026IllegalStatesMostlyUnrepresentable191": {
+      "num": 191,
+      "doi": "10.5281/zenodo.21298885",
+      "title": "Illegal States, Mostly Unrepresentable",
+      "registration_agency": "DataCite",
+      "resolved_title": "Illegal States, Mostly Unrepresentable",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DataDescriptorTemplateSchema192": {
+      "num": 192,
+      "doi": "10.5281/zenodo.21298883",
+      "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "registration_agency": "DataCite",
+      "resolved_title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026TemplateApproachReproducibleGenerative193": {
+      "num": 193,
+      "doi": "10.5281/zenodo.19139089",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "registration_agency": "DataCite",
+      "resolved_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026PriorCognitiveArt194": {
+      "num": 194,
+      "doi": "10.5281/zenodo.21316510",
+      "title": "Prior Cognitive Art",
+      "registration_agency": "DataCite",
+      "resolved_title": "Prior Cognitive Art",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ActiveFractalRabbitSyntheticBenchmark195": {
+      "num": 195,
+      "doi": "10.5281/zenodo.21330636",
+      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026FourfoldVisionWilliamBlake196": {
+      "num": 196,
+      "doi": "10.5281/zenodo.21388456",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "registration_agency": "DataCite",
+      "resolved_title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DuckRabbitTypedMultimodalIllusion197": {
+      "num": 197,
+      "doi": "10.5281/zenodo.21419693",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "registration_agency": "DataCite",
+      "resolved_title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026SynthOBSFractiSynthGoldenRatio198": {
+      "num": 198,
+      "doi": "10.5281/zenodo.21418687",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "registration_agency": "DataCite",
+      "resolved_title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    }
+  }
+}

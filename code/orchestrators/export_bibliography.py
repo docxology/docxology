@@ -16,7 +16,7 @@ import argparse
 import json
 import re
 import sys
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -95,6 +95,10 @@ class Work:
     has_agents_md: bool = False
     has_readme: bool = False
     full_text_url: str = ""
+    # Display names ("Family, Given", or a literal organisation name) taken from
+    # the Authors column, which fetch_work_authors.py fills from the DOI's own
+    # registration agency. Empty where no registry record confirmed the list.
+    authors: list[str] = field(default_factory=list)
 
 
 def clean_text(value: str) -> str:
@@ -164,7 +168,28 @@ def row_to_work(row: BiblioRow) -> Work:
         has_agents_md=has_agents,
         has_readme=has_readme,
         full_text_url=full_text_url,
+        authors=list(row.authors),
     )
+
+
+# This is a bibliography *of Daniel's own works*, so his authorship of every row
+# is given; what the registries supply is the co-author list. Where no registry
+# confirmed one, fall through to the sole-author form the exports have always
+# emitted rather than dropping authorship entirely.
+DEFAULT_AUTHOR = "Friedman, Daniel Ari"
+
+
+def author_names(work: Work) -> list[str]:
+    return work.authors or [DEFAULT_AUTHOR]
+
+
+def split_author(name: str) -> dict:
+    """Turn a "Family, Given" display name into CSL name parts."""
+    if "," not in name:
+        # An organisation ("Active Inference Institute") is one literal name.
+        return {"literal": name}
+    family, _, given = name.partition(",")
+    return {"family": family.strip(), "given": given.strip()}
 
 
 def bib_escape(value: str) -> str:
@@ -175,7 +200,7 @@ def bibtex_entry(work: Work) -> str:
     entry_type = TYPE_TO_BIBTEX.get(work.type, "misc")
     fields = [
         ("title", work.title),
-        ("author", "Friedman, Daniel Ari"),
+        ("author", " and ".join(author_names(work))),
         ("year", str(work.year)),
     ]
     if entry_type in {"article", "incollection"} and work.venue:
@@ -201,7 +226,7 @@ def csl_item(work: Work) -> dict:
         "id": work.citation_key,
         "type": TYPE_TO_CSL.get(work.type, "article-journal"),
         "title": work.title,
-        "author": [{"family": "Friedman", "given": "Daniel Ari"}],
+        "author": [split_author(name) for name in author_names(work)],
         "issued": {"date-parts": [[work.year]]},
         "genre": work.type,
         "keyword": f"{work.domain_name}; {work.type}",
@@ -218,12 +243,10 @@ def csl_item(work: Work) -> dict:
 
 
 def ris_record(work: Work) -> str:
-    lines = [
-        f"TY  - {TYPE_TO_RIS.get(work.type, 'GEN')}",
-        "AU  - Friedman, Daniel Ari",
-        f"PY  - {work.year}",
-        f"TI  - {work.title}",
-    ]
+    lines = [f"TY  - {TYPE_TO_RIS.get(work.type, 'GEN')}"]
+    # RIS repeats AU for each author, in order.
+    lines.extend(f"AU  - {name}" for name in author_names(work))
+    lines.extend([f"PY  - {work.year}", f"TI  - {work.title}"])
     if work.venue:
         lines.append(f"T2  - {work.venue}")
     if work.doi:

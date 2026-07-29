@@ -99,8 +99,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-07-25.json",
-        "reports/source_coverage_2026-07-25.md"
+        "reports/source_coverage_2026-07-29.json",
+        "reports/source_coverage_2026-07-29.md"
       ],
       "sources": [
         "data/works.json",
@@ -489,7 +489,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-07-25.json"
+        "reports/accessibility_static_2026-07-29.json"
       ],
       "sources": [
         "root HTML pages",

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-29T16:23:42Z",
+  "generated_at": "2026-07-29T18:34:48Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 90,
+  "asset_count": 91,
   "warnings": 0,
-  "total_bytes": 14044135,
+  "total_bytes": 14363141,
   "largest": [
     {
       "path": "data/videos.json",
@@ -27,6 +27,13 @@
       "ok": true
     },
     {
+      "path": "publications.html",
+      "kind": "html",
+      "bytes": 348628,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
       "path": "data/github-repositories.json",
       "kind": "json-data",
       "bytes": 331158,
@@ -34,23 +41,23 @@
       "ok": true
     },
     {
+      "path": "data/publications-ld.json",
+      "kind": "json-data",
+      "bytes": 330989,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 325433,
+      "bytes": 325425,
       "budget_bytes": 5000000,
       "ok": true
     },
     {
-      "path": "publications.html",
-      "kind": "html",
-      "bytes": 308715,
-      "budget_bytes": 500000,
-      "ok": true
-    },
-    {
-      "path": "data/publications-ld.json",
+      "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 291076,
+      "bytes": 296592,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -65,13 +72,6 @@
       "path": "data/publishing-status.json",
       "kind": "json-data",
       "bytes": 288040,
-      "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
-      "path": "data/resume.json",
-      "kind": "json-data",
-      "bytes": 274227,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -113,7 +113,21 @@
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 137321,
+      "bytes": 159687,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 157245,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/work-authors.json",
+      "kind": "json-data",
+      "bytes": 147071,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -125,24 +139,10 @@
       "ok": true
     },
     {
-      "path": "bibliography.csl.json",
-      "kind": "citation-export",
-      "bytes": 127820,
-      "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
       "path": "repositories.html",
       "kind": "html",
       "bytes": 127304,
       "budget_bytes": 500000,
-      "ok": true
-    },
-    {
-      "path": "assets/hero-art/mesh-network.webp",
-      "kind": "hero-art",
-      "bytes": 121830,
-      "budget_bytes": 320000,
       "ok": true
     }
   ],

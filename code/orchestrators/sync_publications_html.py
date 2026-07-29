@@ -83,18 +83,38 @@ def schema_type_for_row(typ: str) -> str:
     return "ScholarlyArticle"
 
 
-def _author_block() -> list[dict]:
-    return [
-        {
-            "@type": "Person",
-            "@id": "https://danielarifriedman.com/#person",
-            "name": "Daniel Ari Friedman",
-            "sameAs": [
-                "https://orcid.org/0000-0001-6232-9096",
-                "https://www.wikidata.org/wiki/Q138781444",
-            ],
-        }
-    ]
+PRINCIPAL = {
+    "@type": "Person",
+    "@id": "https://danielarifriedman.com/#person",
+    "name": "Daniel Ari Friedman",
+    "sameAs": [
+        "https://orcid.org/0000-0001-6232-9096",
+        "https://www.wikidata.org/wiki/Q138781444",
+    ],
+}
+
+
+def is_principal(display_name: str) -> bool:
+    family, _, given = display_name.partition(",")
+    return family.strip() == "Friedman" and given.strip().startswith("Daniel")
+
+
+def author_entity(display_name: str) -> dict:
+    """One schema.org author from a "Family, Given" (or literal) display name."""
+    if is_principal(display_name):
+        return PRINCIPAL
+    if "," not in display_name:
+        return {"@type": "Organization", "name": display_name}
+    family, _, given = display_name.partition(",")
+    return {"@type": "Person", "name": f"{given.strip()} {family.strip()}".strip()}
+
+
+def _author_block(authors: list[str] | None = None) -> list[dict]:
+    # Co-authors come from the bibliography's Authors column; where none were
+    # confirmed, the principal alone is asserted, as before.
+    if not authors:
+        return [PRINCIPAL]
+    return [author_entity(name) for name in authors]
 
 
 def load_works_by_num() -> dict[int, dict]:
@@ -113,7 +133,7 @@ def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None) -
         "name": row.title,
         "headline": row.title,
         "datePublished": row.year,
-        "author": _author_block(),
+        "author": _author_block(row.authors),
         "publisher": {"@type": "Organization", "name": pub_name},
         "keywords": row.domain,
     }

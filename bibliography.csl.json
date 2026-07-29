@@ -178,8 +178,161 @@
     "title": "5th Applied Active Inference Symposium — Abstract Book",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Active Inference Institute"
+      },
+      {
+        "family": "Safron",
+        "given": "Adam"
+      },
+      {
+        "family": "Kiefer",
+        "given": "Alex"
+      },
+      {
+        "family": "Sabine",
+        "given": "Alexander"
+      },
+      {
+        "family": "Hiott",
+        "given": "Andrea"
+      },
+      {
+        "family": "Pashea",
+        "given": "Andrew"
+      },
+      {
+        "family": "Alicea",
+        "given": "Bradly"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Holt",
+        "given": "Denise"
+      },
+      {
+        "family": "Shah",
+        "given": "Harshil"
+      },
+      {
+        "family": "Maitra",
+        "given": "Satyaki"
+      },
+      {
+        "family": "Pae",
+        "given": "Hongju"
+      },
+      {
+        "family": "Tennant",
+        "given": "Ian"
+      },
+      {
+        "family": "Cloutier",
+        "given": "Jean-François"
+      },
+      {
+        "family": "Freda",
+        "given": "Jim"
+      },
+      {
+        "family": "Dietz",
+        "given": "Joel"
+      },
+      {
+        "family": "Boik",
+        "given": "John"
+      },
+      {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Iennaco",
+        "given": "Maria Luiza"
+      },
+      {
+        "family": "Brown",
+        "given": "Matthew"
+      },
+      {
+        "family": "Garfield",
+        "given": "Michael"
+      },
+      {
+        "family": "Hinrichs",
+        "given": "Nicolás"
+      },
+      {
+        "literal": "Octopus"
+      },
+      {
+        "literal": "PabloFM"
+      },
+      {
+        "family": "Waade",
+        "given": "Peter Thestrup"
+      },
+      {
+        "family": "Worden",
+        "given": "Robert"
+      },
+      {
+        "family": "Senchal",
+        "given": "Sam A"
+      },
+      {
+        "family": "Montañez",
+        "given": "Samuel"
+      },
+      {
+        "family": "Namjoshi",
+        "given": "Sanjeev"
+      },
+      {
+        "family": "Shrivastava",
+        "given": "Siddhant"
+      },
+      {
+        "family": "de Jager",
+        "given": "Sonia"
+      },
+      {
+        "family": "Macurdy",
+        "given": "Steph"
+      },
+      {
+        "family": "Weiniger",
+        "given": "Steven"
+      },
+      {
+        "family": "Hasty",
+        "given": "Susan"
+      },
+      {
+        "family": "Nguyen",
+        "given": "Viet Dung"
+      },
+      {
+        "family": "Gebhardt",
+        "given": "William"
+      },
+      {
+        "family": "Lennon",
+        "given": "Michael"
+      },
+      {
+        "family": "Newell",
+        "given": "Dave"
+      },
+      {
+        "family": "Huembeli",
+        "given": "Patrick"
+      },
+      {
+        "family": "Ramstead",
+        "given": "Maxwell"
       }
     ],
     "issued": {
@@ -203,8 +356,15 @@
     "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
     "author": [
       {
+        "literal": "Die Schwarze Katze"
+      },
+      {
+        "family": "Djuwidja",
+        "given": "Andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -254,7 +414,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -279,7 +439,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -303,8 +463,12 @@
     "title": "Increasing the Accessibility and Applicability of Active Inference",
     "author": [
       {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -329,7 +493,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -354,7 +518,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -429,7 +593,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -453,8 +617,24 @@
     "title": "ResNei: Solution Design Document",
     "author": [
       {
+        "family": "Lumiruusu",
+        "given": "Janna"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Rahman",
+        "given": "Shagor"
+      },
+      {
+        "family": "Baulin",
+        "given": "Vladimir"
+      },
+      {
+        "family": "Pashea",
+        "given": "Andrew"
       }
     ],
     "issued": {
@@ -479,7 +659,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -504,7 +684,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -529,7 +709,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -553,8 +733,32 @@
     "title": "Temporal Depth in a Coherent Self and in Depersonalization",
     "author": [
       {
+        "family": "Tolchinsky",
+        "given": "Alexey"
+      },
+      {
+        "family": "Levin",
+        "given": "Michael"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Da Costa",
+        "given": "Lancelot"
+      },
+      {
+        "family": "Murphy",
+        "given": "Rachael"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Pincus",
+        "given": "David"
       }
     ],
     "issued": {
@@ -578,8 +782,127 @@
     "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
     "author": [
       {
+        "literal": "Active Inference Institute"
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alex"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Hiott",
+        "given": "Andrea"
+      },
+      {
+        "family": "Pashea",
+        "given": "Andrew"
+      },
+      {
+        "family": "Elers",
+        "given": "Ben"
+      },
+      {
+        "family": "Berkers",
+        "given": "Bert"
+      },
+      {
+        "family": "Knight",
+        "given": "Bleu"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Whittet",
+        "given": "Dan"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Ticklẽs",
+        "given": "Déan"
+      },
+      {
+        "family": "Paterson",
+        "given": "Fraser"
+      },
+      {
+        "family": "Stubbs",
+        "given": "Gareth"
+      },
+      {
+        "family": "Grimm",
+        "given": "Holly"
+      },
+      {
+        "family": "Smekal",
+        "given": "Jakub"
+      },
+      {
+        "family": "Cooper",
+        "given": "Jeremy"
+      },
+      {
+        "family": "Boik",
+        "given": "John"
+      },
+      {
+        "family": "Burian",
+        "given": "Libor"
+      },
+      {
+        "family": "Albarracin",
+        "given": "Mahault"
+      },
+      {
+        "family": "Iennaco",
+        "given": "Maria Luiza"
+      },
+      {
+        "family": "Brown",
+        "given": "Matthew"
+      },
+      {
+        "family": "Thacker",
+        "given": "Mick"
+      },
+      {
+        "family": "Gilli",
+        "given": "Peter"
+      },
+      {
+        "family": "Kaufmann",
+        "given": "Rafael"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
+        "family": "Henry",
+        "given": "Ryan"
+      },
+      {
+        "family": "Ramesh",
+        "given": "Sandeep"
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
+        "family": "Alvarado",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Baker",
+        "given": "Zach"
       }
     ],
     "issued": {
@@ -628,8 +951,32 @@
     "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
     "author": [
       {
+        "family": "Baulin",
+        "given": "Vladimir"
+      },
+      {
+        "family": "Cook",
+        "given": "Austin"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Lumiruusu",
+        "given": "Janna"
+      },
+      {
+        "family": "Pashea",
+        "given": "Andrew"
+      },
+      {
+        "family": "Rahman",
+        "given": "Shagor"
+      },
+      {
+        "family": "Waldeck",
+        "given": "Benedikt"
       }
     ],
     "issued": {
@@ -653,8 +1000,20 @@
     "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
     "author": [
       {
+        "family": "Kavi",
+        "given": "Prakash Chandra"
+      },
+      {
+        "family": "Zamora-López",
+        "given": "Gorka"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Patow",
+        "given": "Gustavo"
       }
     ],
     "issued": {
@@ -702,8 +1061,60 @@
     "title": "Aligning Active Inference Ontology to SUMO",
     "author": [
       {
+        "family": "Douglass",
+        "given": "David S."
+      },
+      {
+        "family": "Pease",
+        "given": "Adam"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Balbuena",
+        "given": "Jessica Angeli"
+      },
+      {
+        "family": "Chokhalingam",
+        "given": "Rhea"
+      },
+      {
+        "family": "Hurtado",
+        "given": "Ana Magdalena"
+      },
+      {
+        "family": "Iennaco",
+        "given": "Maria Luiza"
+      },
+      {
+        "family": "Knight",
+        "given": "V. Bleu"
+      },
+      {
+        "family": "Maybell",
+        "given": "Scott Ryan"
+      },
+      {
+        "family": "Rahmjoo",
+        "given": "Ali"
+      },
+      {
+        "family": "Sayeg",
+        "given": "Paulo Duare Andrade"
+      },
+      {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alex"
       }
     ],
     "issued": {
@@ -727,8 +1138,14 @@
     "title": "BioFirm Development at Applied Active Inference Symposium 2024",
     "author": [
       {
+        "literal": "John Clippinger"
+      },
+      {
+        "literal": "Andrew Pashea"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -752,8 +1169,16 @@
     "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
     "author": [
       {
+        "family": "Mascarenhas",
+        "given": "Mridula"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Cordes",
+        "given": "Richard J"
       }
     ],
     "issued": {
@@ -777,8 +1202,24 @@
     "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
     "author": [
       {
+        "family": "Golian",
+        "given": "Marek J."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Harrison",
+        "given": "Mark"
+      },
+      {
+        "family": "McMahon",
+        "given": "Dino P."
+      },
+      {
+        "family": "Buellesbach",
+        "given": "Jan"
       }
     ],
     "issued": {
@@ -802,8 +1243,8 @@
     "title": "Comments on National Digital Twins R&D Strategic Plan",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "family": "Cordes",
+        "given": "RJ"
       }
     ],
     "issued": {
@@ -827,8 +1268,12 @@
     "title": "Enhancing Population-based Search with Active Inference",
     "author": [
       {
+        "family": "Dehouche",
+        "given": "Nassim"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -852,8 +1297,40 @@
     "title": "FarmWorks: Decentralized AI Agents for Personalized Solutions",
     "author": [
       {
+        "family": "Baulin",
+        "given": "Vladimir"
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alex"
+      },
+      {
+        "family": "GUÉNIN—CARLUT",
+        "given": "Avel"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Bolt",
+        "given": "John"
+      },
+      {
+        "family": "Falkenstein",
+        "given": "Stefan"
+      },
+      {
+        "family": "Jassal",
+        "given": "Parishrut"
+      },
+      {
+        "family": "Trois",
+        "given": "Celio"
+      },
+      {
+        "family": "Minchin",
+        "given": "Jonathan"
       }
     ],
     "issued": {
@@ -877,8 +1354,48 @@
     "title": "Federated inference and belief sharing",
     "author": [
       {
+        "family": "Friston",
+        "given": "Karl J."
+      },
+      {
+        "family": "Parr",
+        "given": "Thomas"
+      },
+      {
+        "family": "Heins",
+        "given": "Conor"
+      },
+      {
+        "family": "Constant",
+        "given": "Axel"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Isomura",
+        "given": "Takuya"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Verbelen",
+        "given": "Tim"
+      },
+      {
+        "family": "Ramstead",
+        "given": "Maxwell"
+      },
+      {
+        "family": "Clippinger",
+        "given": "John"
+      },
+      {
+        "family": "Frith",
+        "given": "Christopher D."
       }
     ],
     "issued": {
@@ -904,6 +1421,10 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
       }
     ],
     "issued": {
@@ -952,8 +1473,7 @@
     "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Sensemaking Scenius"
       }
     ],
     "issued": {
@@ -977,8 +1497,28 @@
     "title": "Shared Protentions in Multi-Agent Active Inference",
     "author": [
       {
+        "family": "Albarracin",
+        "given": "Mahault"
+      },
+      {
+        "family": "Pitliya",
+        "given": "Riddhi J."
+      },
+      {
+        "family": "St. Clere Smithe",
+        "given": "Toby"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Ramstead",
+        "given": "Maxwell J. D."
       }
     ],
     "issued": {
@@ -1002,8 +1542,127 @@
     "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
     "author": [
       {
+        "literal": "Active Inference Institute"
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alex"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Hiott",
+        "given": "Andrea"
+      },
+      {
+        "family": "Pashea",
+        "given": "Andrew"
+      },
+      {
+        "family": "Elers",
+        "given": "Ben"
+      },
+      {
+        "family": "Berkers",
+        "given": "Bert"
+      },
+      {
+        "family": "Knight",
+        "given": "Bleu"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Whittet",
+        "given": "Dan"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Ticklẽs",
+        "given": "Déan"
+      },
+      {
+        "family": "Paterson",
+        "given": "Fraser"
+      },
+      {
+        "family": "Stubbs",
+        "given": "Gareth"
+      },
+      {
+        "family": "Grimm",
+        "given": "Holly"
+      },
+      {
+        "family": "Smekal",
+        "given": "Jakub"
+      },
+      {
+        "family": "Cooper",
+        "given": "Jeremy"
+      },
+      {
+        "family": "Boik",
+        "given": "John"
+      },
+      {
+        "family": "Burian",
+        "given": "Libor"
+      },
+      {
+        "family": "Albarracin",
+        "given": "Mahault"
+      },
+      {
+        "family": "Iennaco",
+        "given": "Maria Luiza"
+      },
+      {
+        "family": "Brown",
+        "given": "Matthew"
+      },
+      {
+        "family": "Thacker",
+        "given": "Mick"
+      },
+      {
+        "family": "Gilli",
+        "given": "Peter"
+      },
+      {
+        "family": "Kaufmann",
+        "given": "Rafael"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
+        "family": "Henry",
+        "given": "Ryan"
+      },
+      {
+        "family": "Ramesh",
+        "given": "Sandeep"
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
+        "family": "Alvarado",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Baker",
+        "given": "Zach"
       }
     ],
     "issued": {
@@ -1051,6 +1710,10 @@
     "type": "article-journal",
     "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
     "author": [
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -1101,6 +1764,10 @@
     "title": "A guided tour through the spaces of particular \"minds\"",
     "author": [
       {
+        "family": "Rahmjoo",
+        "given": "Ali"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
       }
@@ -1126,8 +1793,12 @@
     "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "family": "Saund",
+        "given": "Eric"
+      },
+      {
+        "family": "Ari Friedman",
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1153,6 +1824,26 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Tong",
+        "given": "Chao"
+      },
+      {
+        "family": "Linksvayer",
+        "given": "Timothy A."
+      },
+      {
+        "family": "Freund",
+        "given": "Matthias"
+      },
+      {
+        "family": "Keough",
+        "given": "Nicole Weronika"
+      },
+      {
+        "family": "Johnson",
+        "given": "Brian"
       }
     ],
     "issued": {
@@ -1176,8 +1867,32 @@
     "title": "A variational synthesis of evolutionary and developmental dynamics",
     "author": [
       {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Constant",
+        "given": "Axel"
+      },
+      {
+        "family": "Knight",
+        "given": "V. Bleu"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Parr",
+        "given": "Thomas"
+      },
+      {
+        "family": "Campbell",
+        "given": "John O."
       }
     ],
     "issued": {
@@ -1201,8 +1916,32 @@
     "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
     "author": [
       {
+        "family": "Cordes",
+        "given": "R.J."
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Penland",
+        "given": "Andrew"
+      },
+      {
+        "family": "Young",
+        "given": "Sam"
+      },
+      {
+        "family": "Zacharias",
+        "given": "Colten"
       }
     ],
     "issued": {
@@ -1276,8 +2015,20 @@
     "title": "Comments on AI Accountability Policy to NTIA",
     "author": [
       {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
+        "family": "Abu-Ghazaleh",
+        "given": "Jumana"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
       }
     ],
     "issued": {
@@ -1301,8 +2052,28 @@
     "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
     "author": [
       {
+        "family": "Balzan",
+        "given": "Francesco"
+      },
+      {
+        "family": "Campbell",
+        "given": "John"
+      },
+      {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Ramstead",
+        "given": "Maxwell James"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Constant",
+        "given": "Axel"
       }
     ],
     "issued": {
@@ -1352,7 +2123,15 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel  A."
+      },
+      {
+        "family": "Wexler",
+        "given": "Judith R."
+      },
+      {
+        "family": "Alvarado",
+        "given": "Sebastian"
       }
     ],
     "issued": {
@@ -1375,6 +2154,10 @@
     "type": "article-journal",
     "title": "Generalized Notation Notation for Active Inference Models",
     "author": [
+      {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -1402,7 +2185,11 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Smékal",
+        "given": "Jakub"
       }
     ],
     "issued": {
@@ -1451,8 +2238,12 @@
     "title": "Open Access science needs Open Science Sensemaking (OSSm)",
     "author": [
       {
+        "family": "Tamari",
+        "given": "Ronen"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1501,8 +2292,88 @@
     "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
     "author": [
       {
+        "family": "Institute",
+        "given": "Active Inference"
+      },
+      {
+        "family": "Aguirre",
+        "given": "Ander"
+      },
+      {
+        "family": "Boik",
+        "given": "John"
+      },
+      {
+        "family": "Burian",
+        "given": "Libor"
+      },
+      {
+        "family": "Brown",
+        "given": "Matthew"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
+        "family": "Douglass",
+        "given": "David S"
+      },
+      {
+        "family": "Fernandez-Maquieira",
+        "given": "Pablo"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A"
+      },
+      {
+        "family": "Grimm",
+        "given": "Holly"
+      },
+      {
+        "family": "Guénin–Carlut",
+        "given": "Avel"
+      },
+      {
+        "family": "Iennaco",
+        "given": "Maria Luiza"
+      },
+      {
+        "family": "Knight",
+        "given": "V Bleu"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Rahmjoo",
+        "given": "Ali"
+      },
+      {
+        "family": "Razi",
+        "given": "Adeel"
+      },
+      {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
+        "family": "Tamari",
+        "given": "Ronen"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alex"
       }
     ],
     "issued": {
@@ -1525,6 +2396,18 @@
     "type": "article-journal",
     "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
     "author": [
+      {
+        "family": "Wilkinson",
+        "given": "Thomas M."
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -1551,8 +2434,12 @@
     "title": "To comment or not to comment",
     "author": [
       {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1576,8 +2463,67 @@
     "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
     "author": [
       {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Aguirre",
+        "given": "Ander"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Balzan",
+        "given": "Francesco"
+      },
+      {
+        "family": "Berger",
+        "given": "Ross"
+      },
+      {
+        "family": "Draguta",
+        "given": "David"
+      },
+      {
+        "family": "Guénin-Carlut",
+        "given": "Avel"
+      },
+      {
+        "family": "Hurtado",
+        "given": "Ana Magdelena"
+      },
+      {
+        "family": "Knight",
+        "given": "V. Bleu"
+      },
+      {
+        "family": "Koles",
+        "given": "Kate"
+      },
+      {
+        "family": "Neophytou",
+        "given": "Haris"
+      },
+      {
+        "family": "Prior",
+        "given": "Corby"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
+        "family": "Tennant",
+        "given": "Ian"
+      },
+      {
+        "family": "Tolchinsky",
+        "given": "Alexey"
+      },
+      {
+        "literal": "Active Inference Institute"
       }
     ],
     "issued": {
@@ -1627,7 +2573,59 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Applegate-Swanson",
+        "given": "Shaun"
+      },
+      {
+        "family": "Balbuena",
+        "given": "Jessica Angeli"
+      },
+      {
+        "family": "Choudhury",
+        "given": "Arhan"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
+        "family": "El Damaty",
+        "given": "Shady"
+      },
+      {
+        "family": "Guénin—Carlut",
+        "given": "Avel"
+      },
+      {
+        "family": "Knight",
+        "given": "V. Bleu"
+      },
+      {
+        "family": "Metelkin",
+        "given": "Ivan"
+      },
+      {
+        "family": "Shrivastava",
+        "given": "Siddhant"
+      },
+      {
+        "family": "Singh",
+        "given": "Amit Kumar"
+      },
+      {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
+        "family": "Caleb",
+        "given": "Tuttle."
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alexander"
       }
     ],
     "issued": {
@@ -1651,8 +2649,12 @@
     "title": "Catechism for Towards Active Diffusion",
     "author": [
       {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1676,8 +2678,24 @@
     "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
     "author": [
       {
+        "family": "Tamari",
+        "given": "Ronen"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Fischer",
+        "given": "William"
+      },
+      {
+        "family": "Hebert",
+        "given": "Lauren"
+      },
+      {
+        "family": "Shahaf",
+        "given": "Dafna"
       }
     ],
     "issued": {
@@ -1701,8 +2719,16 @@
     "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
     "author": [
       {
+        "family": "Sapolsky",
+        "given": "Robert"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1725,6 +2751,10 @@
     "type": "article-journal",
     "title": "Predictive Processing Interpretation of the Mirror Test",
     "author": [
+      {
+        "family": "O'Connor",
+        "given": "Sean"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -1775,6 +2805,10 @@
     "title": "Systems Modeling and Cognitive Audits for Hypercert Ecosystems",
     "author": [
       {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
       }
@@ -1800,8 +2834,16 @@
     "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
     "author": [
       {
+        "family": "Knight",
+        "given": "Virginia Bleu"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1825,8 +2867,16 @@
     "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
     "author": [
       {
+        "family": "Cordes",
+        "given": "R.J."
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1852,6 +2902,22 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Tschantz",
+        "given": "Alec"
+      },
+      {
+        "family": "Ramstead",
+        "given": "Maxwell J. D."
+      },
+      {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Constant",
+        "given": "Axel"
       }
     ],
     "issued": {
@@ -1875,8 +2941,16 @@
     "title": "Active Inference in Modeling Conflict",
     "author": [
       {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -1900,8 +2974,16 @@
     "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
     "author": [
       {
+        "family": "Mascarenhas",
+        "given": "Mridula"
+      },
+      {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -1973,8 +3055,24 @@
     "title": "Narrative Information Management",
     "author": [
       {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
+        "family": "Applegate-Swanson",
+        "given": "Shaun"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Knight",
+        "given": "Virginia Bleu"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
       }
     ],
     "issued": {
@@ -2000,6 +3098,10 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Cordes",
+        "given": "Richard J."
       }
     ],
     "issued": {
@@ -2022,6 +3124,22 @@
     "type": "article-journal",
     "title": "Active Inference & Behavior Engineering for Teams",
     "author": [
+      {
+        "family": "Vyatkin",
+        "given": "Alexander"
+      },
+      {
+        "family": "Metelkin",
+        "given": "Ivan"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -2073,7 +3191,15 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "D.A."
+      },
+      {
+        "family": "Johnson",
+        "given": "B.R."
+      },
+      {
+        "family": "Linksvayer",
+        "given": "T.A."
       }
     ],
     "issued": {
@@ -2096,6 +3222,10 @@
     "type": "article-journal",
     "title": "Emergent Teams for Complex Threats",
     "author": [
+      {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -2124,6 +3254,18 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "York",
+        "given": "Ryan Alexander"
+      },
+      {
+        "family": "Hilliard",
+        "given": "Austin Travis"
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
       }
     ],
     "issued": {
@@ -2171,8 +3313,20 @@
     "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
     "author": [
       {
+        "family": "Shin",
+        "given": "Mimi"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
+      },
+      {
+        "family": "Venton",
+        "given": "B. Jill"
       }
     ],
     "issued": {
@@ -2220,8 +3374,16 @@
     "title": "The Innovator's Catechism",
     "author": [
       {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Phelan",
+        "given": "Steven E."
       }
     ],
     "issued": {
@@ -2245,8 +3407,16 @@
     "title": "The neuroscience of decision making (interview with Timothy Hanks)",
     "author": [
       {
+        "family": "Hanks",
+        "given": "Timothy"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -2270,8 +3440,16 @@
     "title": "Dennett Explained (interview with Daniel Dennett)",
     "author": [
       {
+        "family": "Dennett",
+        "given": "Daniel"
+      },
+      {
+        "family": "Fleig-Goldstein",
+        "given": "Brendan"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -2320,7 +3498,11 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Søvik",
+        "given": "Eirik"
       }
     ],
     "issued": {
@@ -2345,7 +3527,15 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Greene",
+        "given": "Michael J."
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
       }
     ],
     "issued": {
@@ -2369,8 +3559,36 @@
     "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
     "author": [
       {
+        "family": "Burford",
+        "given": "Benjamin P."
+      },
+      {
+        "family": "Lee",
+        "given": "Gail"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Brachmann",
+        "given": "Esmé"
+      },
+      {
+        "family": "Khan",
+        "given": "Rebia"
+      },
+      {
+        "family": "MacArthur-Waltz",
+        "given": "Dylan J."
+      },
+      {
+        "family": "McCarty",
+        "given": "Aidan D."
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
       }
     ],
     "issued": {
@@ -2395,7 +3613,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -2419,8 +3637,16 @@
     "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
     "author": [
       {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Fortier",
+        "given": "Martin"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -2444,8 +3670,12 @@
     "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
     "author": [
       {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -2470,7 +3700,31 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Pilko",
+        "given": "Anna"
+      },
+      {
+        "family": "Skowronska-Krawczyk",
+        "given": "Dorota"
+      },
+      {
+        "family": "Krasinska",
+        "given": "Karolina"
+      },
+      {
+        "family": "Parker",
+        "given": "Jacqueline W."
+      },
+      {
+        "family": "Hirsh",
+        "given": "Jay"
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
       }
     ],
     "issued": {
@@ -2495,7 +3749,15 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
+      },
+      {
+        "family": "Luo",
+        "given": "Liqun"
       }
     ],
     "issued": {
@@ -2519,8 +3781,12 @@
     "title": "Two lineages that need each other",
     "author": [
       {
+        "family": "Gordon",
+        "given": "D. M."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "D. A."
       }
     ],
     "issued": {
@@ -2545,7 +3811,11 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "D.A."
+      },
+      {
+        "family": "Gordon",
+        "given": "D.M."
       }
     ],
     "issued": {
@@ -2569,8 +3839,28 @@
     "title": "Context-dependent expression of the foraging gene in field colonies of ants",
     "author": [
       {
+        "family": "Ingram",
+        "given": "Krista K."
+      },
+      {
+        "family": "Gordon",
+        "given": "Deborah M."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Greene",
+        "given": "Michael"
+      },
+      {
+        "family": "Kahler",
+        "given": "John"
+      },
+      {
+        "family": "Peteru",
+        "given": "Swetha"
       }
     ],
     "issued": {
@@ -2595,7 +3885,15 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Tait",
+        "given": "Lauren"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Andrew T. M."
       }
     ],
     "issued": {
@@ -2619,8 +3917,16 @@
     "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
     "author": [
       {
+        "family": "Marcus",
+        "given": "Alexander W."
+      },
+      {
+        "family": "Ebel",
+        "given": "Emily R."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -2644,8 +3950,16 @@
     "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
     "author": [
       {
+        "family": "Kallick",
+        "given": "Charles A."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Nyindo",
+        "given": "Mramba B.A."
       }
     ],
     "issued": {
@@ -2669,8 +3983,28 @@
     "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
     "author": [
       {
+        "family": "Jasper",
+        "given": "William Cameron"
+      },
+      {
+        "family": "Linksvayer",
+        "given": "Timothy A."
+      },
+      {
+        "family": "Atallah",
+        "given": "Joel"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Chiu",
+        "given": "Joanna C."
+      },
+      {
+        "family": "Johnson",
+        "given": "Brian R."
       }
     ],
     "issued": {
@@ -2696,6 +4030,10 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Chambers",
+        "given": "Tucker Cahill"
       }
     ],
     "issued": {
@@ -2721,6 +4059,10 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Dietz",
+        "given": "Joel"
       }
     ],
     "issued": {
@@ -2744,8 +4086,16 @@
     "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
     "author": [
       {
+        "family": "Kavi",
+        "given": "Prakash Chandra"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Patow",
+        "given": "Gustavo"
       }
     ],
     "issued": {
@@ -2819,6 +4169,10 @@
     "title": "The Facilitator's Catechism",
     "author": [
       {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
       }
@@ -2870,7 +4224,7 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -2919,8 +4273,7 @@
     "title": "Policy Entanglement in Active Inference",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -2944,8 +4297,7 @@
     "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -2969,8 +4321,7 @@
     "title": "Convergence Analysis of Gradient Descent Optimization",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -2994,8 +4345,7 @@
     "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3019,8 +4369,7 @@
     "title": "A template/ approach to Reproducible Generative Research",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3044,8 +4393,7 @@
     "title": "Active Inference Multi-Track Exemplar",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3071,6 +4419,10 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Chambers",
+        "given": "Tucker Cahill"
       }
     ],
     "issued": {
@@ -3094,8 +4446,10 @@
     "title": "When do bugs see (infra)red?",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Tucker Chambers"
+      },
+      {
+        "literal": "Daniel A. Friedman"
       }
     ],
     "issued": {
@@ -3119,8 +4473,7 @@
     "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3144,8 +4497,14 @@
     "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
     "author": [
       {
+        "literal": "John Clippinger"
+      },
+      {
+        "literal": "Andrew Pashea"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3169,8 +4528,12 @@
     "title": "Con-cat-enate: emulation of Cat Hippocampus",
     "author": [
       {
+        "family": "Djuwidja",
+        "given": "Andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3194,8 +4557,12 @@
     "title": "Graphspeak: of language and handshake",
     "author": [
       {
+        "family": "djuwidja",
+        "given": "andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3219,8 +4586,12 @@
     "title": "BevCyc - posit on primitive drivers of creatures",
     "author": [
       {
+        "family": "djuwidja",
+        "given": "andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3244,8 +4615,12 @@
     "title": "Beacons - pre emulation of social cortex",
     "author": [
       {
+        "family": "djuwidja",
+        "given": "andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3269,8 +4644,12 @@
     "title": "Con-cat-enate: pilot overview",
     "author": [
       {
+        "family": "djuwidja",
+        "given": "andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3319,8 +4698,100 @@
     "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
     "author": [
       {
+        "family": "Clippinger",
+        "given": "John"
+      },
+      {
+        "family": "de Vries",
+        "given": "Bert"
+      },
+      {
+        "family": "Noveck",
+        "given": "Beth"
+      },
+      {
+        "family": "Fields",
+        "given": "Chris"
+      },
+      {
+        "family": "Slater",
+        "given": "Cory"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Silbersweig",
+        "given": "David A."
+      },
+      {
+        "family": "Lapenta",
+        "given": "Francesco"
+      },
+      {
+        "family": "Grimm",
+        "given": "Holly"
+      },
+      {
+        "family": "Emmett",
+        "given": "Jeff"
+      },
+      {
+        "family": "Shane",
+        "given": "Joshua"
+      },
+      {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Nkemnkia",
+        "given": "Martin Nkafu"
+      },
+      {
+        "family": "Brown",
+        "given": "Matthew"
+      },
+      {
+        "family": "Pirkowski",
+        "given": "Matthew"
+      },
+      {
+        "family": "Levin",
+        "given": "Michael"
+      },
+      {
+        "family": "Zargham",
+        "given": "Michael"
+      },
+      {
+        "family": "Tuan",
+        "given": "Nguyen Anh"
+      },
+      {
+        "family": "Achuthan",
+        "given": "Krishnashree"
+      },
+      {
+        "family": "Patterson",
+        "given": "Thomas"
+      },
+      {
+        "family": "David",
+        "given": "Scott L."
+      },
+      {
+        "family": "Kehler",
+        "given": "Thomas"
+      },
+      {
+        "family": "Knight",
+        "given": "Virginia Bleu"
+      },
+      {
+        "family": "Nakayama",
+        "given": "Yasuhide"
       }
     ],
     "issued": {
@@ -3344,8 +4815,32 @@
     "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
     "author": [
       {
+        "family": "Cordes",
+        "given": "R.J."
+      },
+      {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Penland",
+        "given": "Andrew"
+      },
+      {
+        "family": "Young",
+        "given": "Sam"
+      },
+      {
+        "family": "Zacharias",
+        "given": "Colten"
       }
     ],
     "issued": {
@@ -3369,8 +4864,16 @@
     "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
     "author": [
       {
+        "family": "Peters",
+        "given": "Megan A. K."
+      },
+      {
+        "family": "Bradford",
+        "given": "Nora"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3394,8 +4897,12 @@
     "title": "Modern Nostr Index Card-based Knowledge Engineering",
     "author": [
       {
+        "family": "Claros",
+        "given": "Andrew"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3444,8 +4951,12 @@
     "title": "Canonical neural networks perform active inference",
     "author": [
       {
+        "family": "Isomura",
+        "given": "Takuya"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3469,8 +4980,28 @@
     "title": "Interoception as modeling, allostasis as control",
     "author": [
       {
+        "family": "Sennesh",
+        "given": "Eli"
+      },
+      {
+        "family": "Theriault",
+        "given": "Jordan"
+      },
+      {
+        "family": "Douglass",
+        "given": "Dave"
+      },
+      {
+        "family": "Tennant",
+        "given": "Ian"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3493,6 +5024,18 @@
     "type": "article-journal",
     "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
     "author": [
+      {
+        "family": "Solms",
+        "given": "Mark"
+      },
+      {
+        "family": "Douglass",
+        "given": "David S"
+      },
+      {
+        "family": "Sillett",
+        "given": "Stephen"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -3519,8 +5062,20 @@
     "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
     "author": [
       {
+        "family": "Sakthivadivel",
+        "given": "Dalton AR"
+      },
+      {
+        "family": "Rahmjoo",
+        "given": "Ali"
+      },
+      {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3544,8 +5099,20 @@
     "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
     "author": [
       {
+        "family": "Tison",
+        "given": "Rémi"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
+        "family": "Knight",
+        "given": "Bleu"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -3569,8 +5136,24 @@
     "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
     "author": [
       {
+        "family": "Mascarenhas",
+        "given": "Mridula"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
+      },
+      {
+        "family": "Knight",
+        "given": "Bleu"
+      },
+      {
+        "family": "Murphy",
+        "given": "Sarah"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -3593,6 +5176,38 @@
     "type": "article-journal",
     "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
     "author": [
+      {
+        "family": "Friston",
+        "given": "Karl"
+      },
+      {
+        "family": "Douglass",
+        "given": "David Standish"
+      },
+      {
+        "family": "Iennaco de Vasconcelos",
+        "given": "Maria Luiza"
+      },
+      {
+        "family": "Sillett",
+        "given": "Stephen"
+      },
+      {
+        "family": "Sganzerla",
+        "given": "Lorena"
+      },
+      {
+        "family": "Tickles",
+        "given": "Dean"
+      },
+      {
+        "family": "Metelkin",
+        "given": "Ivan"
+      },
+      {
+        "family": "Vyatkin",
+        "given": "Alex"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -3619,6 +5234,10 @@
     "title": "Collaborative Writing for Catechism-Based Teams",
     "author": [
       {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
       }
@@ -3644,8 +5263,16 @@
     "title": "Reimagining Maps",
     "author": [
       {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Maron",
+        "given": "Mikel"
       }
     ],
     "issued": {
@@ -3670,7 +5297,11 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
+      },
+      {
+        "family": "Cordes",
+        "given": "RJ"
       }
     ],
     "issued": {
@@ -3694,8 +5325,7 @@
     "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3719,8 +5349,7 @@
     "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3744,8 +5373,7 @@
     "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3769,8 +5397,7 @@
     "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3794,8 +5421,7 @@
     "title": "The Template Textbook",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -3859,8 +5485,8 @@
     "note": "Catalog row 156; docs: not available",
     "container-title": "Science",
     "publisher": "Science",
-    "DOI": "10.1126/science.352.6288.886",
-    "URL": "https://doi.org/10.1126/science.352.6288.886"
+    "DOI": "10.1126/science.aag1520",
+    "URL": "https://doi.org/10.1126/science.aag1520"
   },
   {
     "id": "Friedman2021Disinforge157",
@@ -3917,6 +5543,22 @@
     "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
     "author": [
       {
+        "family": "Smékal",
+        "given": "Jakub"
+      },
+      {
+        "family": "Choudhury",
+        "given": "Arhan"
+      },
+      {
+        "family": "Singh",
+        "given": "Amit Kumar"
+      },
+      {
+        "family": "Damaty",
+        "given": "Shady El"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
       }
@@ -3941,6 +5583,14 @@
     "type": "article-journal",
     "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
     "author": [
+      {
+        "family": "Kavi",
+        "given": "Prakash Chandra"
+      },
+      {
+        "family": "Zamora-López",
+        "given": "Gorka"
+      },
       {
         "family": "Friedman",
         "given": "Daniel Ari"
@@ -3969,6 +5619,10 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Cordes",
+        "given": "Richard J."
       }
     ],
     "issued": {
@@ -3992,8 +5646,8 @@
     "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "family": "Cordes",
+        "given": "RJ"
       }
     ],
     "issued": {
@@ -4140,6 +5794,9 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "literal": "The GeneralizedNotationNotation Community Contributors"
       }
     ],
     "issued": {
@@ -4188,8 +5845,7 @@
     "title": "AGEINT: Agentic Intelligence",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4213,8 +5869,7 @@
     "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4238,8 +5893,7 @@
     "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4263,8 +5917,7 @@
     "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4288,8 +5941,7 @@
     "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4338,8 +5990,7 @@
     "title": "A Living Meta-Analysis of the Modafinil Literature",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4363,8 +6014,7 @@
     "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4388,8 +6038,10 @@
     "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
+      },
+      {
+        "literal": "Tucker Cahill Chambers"
       }
     ],
     "issued": {
@@ -4438,8 +6090,7 @@
     "title": "Sortition Upstream of NTQR",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4463,8 +6114,7 @@
     "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4488,8 +6138,7 @@
     "title": "A Domain Language for Specifying Controlled Methods",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4513,8 +6162,7 @@
     "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4538,8 +6186,7 @@
     "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4563,8 +6210,7 @@
     "title": "Autopoietic Project Generation",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4588,8 +6234,7 @@
     "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4613,8 +6258,7 @@
     "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4638,8 +6282,7 @@
     "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4663,8 +6306,7 @@
     "title": "Redacted Report Template: Disclosure Control and Release Audit",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4688,8 +6330,7 @@
     "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4713,8 +6354,7 @@
     "title": "Illegal States, Mostly Unrepresentable",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4738,8 +6378,7 @@
     "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4788,8 +6427,7 @@
     "title": "Prior Cognitive Art",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4813,8 +6451,7 @@
     "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4838,8 +6475,7 @@
     "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -4863,8 +6499,7 @@
     "title": "DuckRabbit: Typed Multimodal Illusion Generator",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {

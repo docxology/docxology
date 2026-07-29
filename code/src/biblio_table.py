@@ -1,7 +1,12 @@
 """
-Shared iteration over the 8-column unified bibliography table in pages/BIBLIOGRAPHY.md.
+Shared iteration over the unified bibliography table in pages/BIBLIOGRAPHY.md.
 
 Used by regenerate_docs (folder-linked rows) and sync_publications_html (all rows).
+
+Columns 1-8 (# .. Docs) are required. Column 9 (Authors) is optional so a row
+hand-added before `fetch_work_authors.py --apply` runs still parses; it carries
+`Family, Given` entries separated by semicolons, or an em dash where no registry
+record confirmed the author list.
 """
 
 from __future__ import annotations
@@ -22,6 +27,7 @@ class BiblioRow(NamedTuple):
     venue: str
     link_cell: str
     docs_cell: str
+    authors_cell: str = ""
 
     @property
     def folder(self) -> str | None:
@@ -29,6 +35,14 @@ class BiblioRow(NamedTuple):
         if not m:
             return None
         return m.group(1).rstrip("/")
+
+    @property
+    def authors(self) -> list[str]:
+        """Author display names, or [] where no registry record confirmed them."""
+        cell = self.authors_cell.strip()
+        if not cell or cell in {"—", "-"}:
+            return []
+        return [name.strip() for name in cell.split(";") if name.strip()]
 
 
 def _strip_md_cell(s: str) -> str:
@@ -58,4 +72,5 @@ def iter_bibliography_rows(bib_path: Path | None = None) -> Iterator[BiblioRow]:
                 venue=_strip_md_cell(cells[5]),
                 link_cell=cells[6],
                 docs_cell=cells[7],
+                authors_cell=cells[8] if len(cells) > 8 else "",
             )

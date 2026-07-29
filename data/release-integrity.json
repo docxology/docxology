@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "5c3eb22e528b3684ea97970f7dd976e3689273e1",
+  "source_commit_at_generation": "7b298b2de9272d81b525125fa0e181cff3d7b003",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -20,21 +20,21 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "cd49b78c2e719ec4d0896ba1490834b9278f42e3c38ab4e2166e12116e834531",
+    "pages/BIBLIOGRAPHY.md": "374b0d46d746d79f7116fa7550ece59d26443d7dfdc3e8a0aeda74e4402a629b",
     "pages/SOFTWARE.md": "06853c054fbd66e04eadfdd1031fa940ac75b5a49de98238f8ad89e24d07a46c",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
     "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
     "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "db40e9b469f950a3c58e83323ea622686737179e23b0e0dc4b06a644fb292669",
-    "data/generated-manifest.json": "2861b508b8aec5ec9094b0fae07ed6aa0c215e050ad322bdf8d4af71781059f0",
-    "data/pages-artifact-manifest.json": "0420e872c25cbf2b2ed54073ce1f271ae3ee5153e835dd64baefec8ec8cc0bd0"
+    "data/agent-index.json": "58c54cfecac2a8eb8f20e4e67943ab3b19045b4fe12f77366ded19bfb5e29602",
+    "data/generated-manifest.json": "6eeaa86c4760f9a0b4afec4aa78ecbf41aabc522b41b0c5d4bf8b543e04770f3",
+    "data/pages-artifact-manifest.json": "7dbf7c539750c84bfdbd6de55ab6202663583031292766397992891819651b1d"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "5c3eb22e528b3684ea97970f7dd976e3689273e1",
-    "artifact_file_count": 4360,
-    "artifact_bytes": 762127931,
+    "source_commit_at_generation": "7b298b2de9272d81b525125fa0e181cff3d7b003",
+    "artifact_file_count": 4349,
+    "artifact_bytes": 760630134,
     "omitted_paper_image_count": 9004
   },
   "deployment": {

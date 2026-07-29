@@ -85,7 +85,7 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-07-29.json
 - Browser-smoke manifest: https://github.com/docxology/docxology/blob/main/reports/browser-smoke/2026-07-29/manifest.json
 - Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-07-24.json
-- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-07-25.json
+- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-07-29.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-07-18/manifest.json
 
 ## Public Crawl Policy

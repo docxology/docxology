@@ -62,6 +62,55 @@ def load_works() -> list[dict]:
     return works
 
 
+PRINCIPAL_LD = {
+    "@type": "Person",
+    "@id": "https://danielarifriedman.com/#person",
+    "name": "Daniel Ari Friedman",
+    "url": "https://danielarifriedman.com/",
+    "sameAs": [
+        "https://orcid.org/0000-0001-6232-9096",
+        "https://www.wikidata.org/wiki/Q138781444",
+    ],
+}
+
+
+def author_ld(work: dict) -> dict | list[dict]:
+    """schema.org author(s) for a work.
+
+    The principal keeps his full identity node (@id + ORCID/Wikidata sameAs);
+    co-authors from the bibliography's Authors column are emitted as plain
+    Person entries, and literal names without a comma as Organization.
+    """
+    names = work.get("authors") or []
+    if not names:
+        return PRINCIPAL_LD
+    entities: list[dict] = []
+    for name in names:
+        family, _, given = name.partition(",")
+        if family.strip() == "Friedman" and given.strip().startswith("Daniel"):
+            entities.append(PRINCIPAL_LD)
+        elif "," not in name:
+            entities.append({"@type": "Organization", "name": name})
+        else:
+            entities.append({"@type": "Person", "name": f"{given.strip()} {family.strip()}".strip()})
+    return entities[0] if len(entities) == 1 else entities
+
+
+def display_name(name: str) -> str:
+    """"Family, Given" as a reader-facing "Given Family"; literals unchanged."""
+    if "," not in name:
+        return name
+    family, _, given = name.partition(",")
+    return f"{given.strip()} {family.strip()}".strip()
+
+
+def byline_html(work: dict) -> str:
+    names = work.get("authors") or []
+    if not names:
+        return ""
+    return f'        <p class="byline">{h(", ".join(display_name(n) for n in names))}</p>'
+
+
 def _github_repo(identifiers: dict) -> str:
     gh = identifiers.get("github")
     if isinstance(gh, list):
@@ -381,16 +430,7 @@ def json_ld(work: dict) -> str:
         "@id": f"https://danielarifriedman.com/works/{work['citation_key']}.html#work",
         "name": work["title"],
         "headline": work["title"],
-        "author": {
-            "@type": "Person",
-            "@id": "https://danielarifriedman.com/#person",
-            "name": "Daniel Ari Friedman",
-            "url": "https://danielarifriedman.com/",
-            "sameAs": [
-                "https://orcid.org/0000-0001-6232-9096",
-                "https://www.wikidata.org/wiki/Q138781444",
-            ],
-        },
+        "author": author_ld(work),
         "datePublished": str(work["year"]),
         "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
         "mainEntityOfPage": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
@@ -593,6 +633,7 @@ def render_work_page(work: dict) -> str:
     <header class="work-hero">
         <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
+{byline_html(work)}
         <p class="sub">{h(work.get('venue') or 'Curated bibliography entry')}</p>
     </header>
     <main id="main" class="main">
