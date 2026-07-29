@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T02:37:36Z",
+  "generated_at": "2026-07-29T16:23:43Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -370,7 +370,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-07-25.json",
+      "url": "/reports/asset_size_2026-07-29.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -383,7 +383,7 @@
       "id": "page:browser-smoke",
       "type": "report",
       "title": "Browser Smoke Manifest",
-      "url": "/reports/browser-smoke/2026-07-18/manifest.json",
+      "url": "/reports/browser-smoke/2026-07-29/manifest.json",
       "summary": "Selector-based browser smoke checks for core local pages.",
       "tags": [
         "browser",

@@ -24,8 +24,15 @@ const state = { items: [], type: 'all', q: '' };
             const content = item.content || '';
             let value = 0;
             for (const re of res){
-                if (re.test(title)) value += 8;
-                if (re.test(content)) value += 2;
+                const inTitle = re.test(title);
+                const inContent = re.test(content);
+                // Every term must appear somewhere. Scoring the terms
+                // independently made the query an OR: "active inference"
+                // returned everything mentioning either word — about two
+                // thirds of the index — burying the actual matches.
+                if (!inTitle && !inContent) return 0;
+                if (inTitle) value += 8;
+                if (inContent) value += 2;
             }
             // Tie-break boost for works — only when the item already matched a
             // term. Applied unconditionally this leaked a baseline score to every

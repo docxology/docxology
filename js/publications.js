@@ -53,6 +53,8 @@ function workToPub(work) {
         num: work.num,
         year: work.year,
         domain: work.domain,
+        domainName: work.domain_name || '',
+        citationKey,
         type: work.type,
         title: work.title,
         venue: work.venue,
@@ -67,23 +69,28 @@ function workToPub(work) {
     };
 }
 
-function buildSearchIndex(pub) {
+function buildSearchIndex(pub, enrichment) {
     const lab = pub.domain;
-    pub._search = (
-        pub.title +
-        ' ' +
-        pub.venue +
-        ' ' +
-        pub.type +
-        ' ' +
-        pub.doi +
-        ' ' +
-        pub.year +
-        ' ' +
-        pub.domain +
-        ' ' +
-        (DOMAIN_KW[lab] || '')
-    ).toLowerCase();
+    const extra = enrichment || {};
+    // Beyond the visible columns, index the spelled-out domain name, the
+    // citation key, and the abstract/keywords from work-enrichment.json. Without
+    // these, searching a phrase straight out of a paper's own abstract — or the
+    // domain label shown in the filter pills — returned nothing.
+    pub._search = [
+        pub.title,
+        pub.venue,
+        pub.type,
+        pub.doi,
+        pub.year,
+        pub.domain,
+        pub.domainName,
+        pub.citationKey,
+        DOMAIN_KW[lab] || '',
+        extra.abstract || '',
+        (extra.keywords || []).join(' '),
+    ]
+        .join(' ')
+        .toLowerCase();
 }
 
 function esc(value) {
@@ -297,24 +304,43 @@ function sortBy(col) {
     renderTable();
 }
 
-function initPublications(works) {
+function initPublications(works, enrichmentByKey) {
     PUBS = works.map(workToPub);
     for (let i = 0; i < PUBS.length; i++) {
-        buildSearchIndex(PUBS[i]);
+        buildSearchIndex(PUBS[i], enrichmentByKey[PUBS[i].citationKey]);
     }
     populateFilterSelects();
     renderTable();
 }
 
+function fetchEnrichment() {
+    // Optional: abstracts and keywords widen what the search box can find.
+    // A failure here must not take the table down with it.
+    const url = new URL(`data/work-enrichment.json${SCRIPT_QUERY}`, window.location.href);
+    return fetch(url, { cache: 'no-store' })
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data) => {
+            const byKey = {};
+            const works = (data && data.works) || {};
+            Object.keys(works).forEach((key) => {
+                byKey[works[key].citation_key || key] = works[key];
+            });
+            return byKey;
+        })
+        .catch(() => ({}));
+}
+
 function loadPublications() {
     const catalogUrl = new URL(`data/works.json${SCRIPT_QUERY}`, window.location.href);
-    fetch(catalogUrl, { cache: 'no-store' })
-        .then((response) => {
+    Promise.all([
+        fetch(catalogUrl, { cache: 'no-store' }).then((response) => {
             if (!response.ok) throw new Error(`works.json HTTP ${response.status}`);
             return response.json();
-        })
-        .then((data) => {
-            initPublications(data.works || []);
+        }),
+        fetchEnrichment(),
+    ])
+        .then(([data, enrichmentByKey]) => {
+            initPublications(data.works || [], enrichmentByKey);
         })
         .catch((err) => {
             const tbody = document.getElementById('pub-tbody');

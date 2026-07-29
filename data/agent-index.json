@@ -253,7 +253,7 @@
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-07-25.json",
+      "path": "/reports/asset_size_2026-07-29.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1075,7 +1075,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "ad289572c03c8e32032d75a98952dd94baca1ea45ef594005f247fd9082025b9",
     "videos_index": "143721430d94d0b419dae4deae274ee6e9909761949317f65d4e152b0d92c317",
-    "search": "f6bedfa7da326ee3cb05aee3e01e65e46e7b8da1fbc522305a879c4f81be5971",
+    "search": "b25973363a57ee335e07ef95b6422be5aaae90697c6962a37e01501d06a25004",
     "claims": "cc1e6c3f2254119b7ab4ecb2c6c552fcd31af8ed3aa3a899785bd210090a48f2",
     "coverage_exceptions": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "repository_classification": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
@@ -1083,9 +1083,9 @@
     "organizations": "922592d7581a5c9d55d9d1ad05a7cb7141974c1e680dbd8f7fd90324f68a6dfe",
     "resume": "73bd3ecbd4956fb5a6edbf0c199e16cd8b9a15d5cfeebaef3f2d249472330c81",
     "work_enrichment": "a58991830e80b5b1704c5c4ef99f85c7d5cac90f2d8156ab4790a0bd2b1e6776",
-    "catalog": "6936fbad2abe8c6f4a6f0773f679d897ca3aba12768de37c2f77183fd3307594",
+    "catalog": "e5c473f6f03de79cd35e04836d57931f0b991c27fd37d9265fabc9533c3e386b",
     "reconciliation": "db3db14f5dd0b7680fcb5d18e325d15eae1e07de4bf8ae28ec2ba492ee96b821",
-    "generated_manifest": "cb8a20e71843b1587f03d2c6d085758b685ebaea17ca00234162af004d007c71",
+    "generated_manifest": "c5735c740e486d1e341d9a2699a14a8164962ba7bc325cfc8787d04fb6271c65",
     "current_counts": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf"
   },
   "source_provenance": {

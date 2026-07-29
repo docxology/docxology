@@ -1,6 +1,6 @@
 // Service Worker for danielarifriedman.com
 // Cache-first strategy for static assets, network-first for pages
-const CACHE_NAME = 'daf-portfolio-v22';
+const CACHE_NAME = 'daf-portfolio-v23';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -108,17 +108,22 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // For static assets (JS/CSS/images/fonts): cache-first with network fallback
+  // For static assets (JS/CSS/images/fonts): stale-while-revalidate. Cache-first
+  // served the cached copy forever, so a shipped JS fix only reached returning
+  // visitors when CACHE_NAME happened to bump — the per-page `?v=` token is
+  // hand-maintained and had not moved since 2026-05-27, which is how a broken
+  // publications search box survived its own fix. Serve the cached copy for
+  // speed, but always refresh it in the background for the next load.
   event.respondWith(
     caches.match(request).then(cached => {
-      if (cached) return cached;
-      return fetch(request).then(response => {
+      const network = fetch(request).then(response => {
         if (response.ok && response.type === 'basic') {
           const clone = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
         }
         return response;
-      });
+      }).catch(() => cached);
+      return cached || network;
     })
   );
 });

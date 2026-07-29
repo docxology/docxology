@@ -214,9 +214,14 @@
 
   let searchIndex = null;
   let searchIndexLoading = false;
+  const searchIndexWaiting = [];
 
   function loadSearchIndex(callback) {
     if (searchIndex) { callback(searchIndex); return; }
+    // Queue rather than drop: keystrokes arriving while the fetch is in flight
+    // used to return early and lose their callback, so the first characters
+    // typed on a cold page produced no suggestions at all.
+    searchIndexWaiting.push(callback);
     if (searchIndexLoading) return;
     searchIndexLoading = true;
 
@@ -235,13 +240,34 @@
         } else {
           searchIndex = [];
         }
-        callback(searchIndex);
       })
       .catch(() => {
         searchIndex = [];
-        callback(searchIndex);
+      })
+      .then(() => {
+        searchIndexLoading = false;
+        while (searchIndexWaiting.length) {
+          searchIndexWaiting.shift()(searchIndex);
+        }
       });
   }
+
+  // Cached lowercase haystack per index entry. Rebuilding this for all ~1650
+  // entries on every keystroke was the bulk of the autocomplete's cost.
+  function autocompleteHaystack(item) {
+    if (item._acHay === undefined) {
+      item._acHay = (
+        (item.title || item.name || item.text || '') + ' ' +
+        (item.summary || item.content || '')
+      ).toLowerCase();
+    }
+    return item._acHay;
+  }
+
+  // Debounce so a fast typist does not rescan the whole index per keystroke.
+  const AUTOCOMPLETE_DEBOUNCE_MS = 120;
+  const MAX_SUGGESTIONS = 8;
+  let autocompleteSeq = 0;
 
   function addSearchAutocomplete(input) {
     if (!input) return;
@@ -251,20 +277,97 @@
     if (input.dataset.ttsAutocompleteAdded) return;
     input.dataset.ttsAutocompleteAdded = 'true';
 
-    // Create suggestions container
+    // The list lives on <body>, not beside the input: on publications.html the
+    // field sits inside .filter-row, which the card treatment gives
+    // overflow:hidden (clipping the list) and isolation:isolate plus a
+    // z-index:1 on every child (painting the filter buttons over it). Escaping
+    // to the body sidesteps both without unclipping that row.
+    const listId = 'search-suggestions-' + (++autocompleteSeq);
     const container = document.createElement('div');
     container.className = 'search-suggestions';
+    container.id = listId;
     container.setAttribute('role', 'listbox');
     container.setAttribute('aria-label', 'Search suggestions');
-    input.parentNode.appendChild(container);
+    document.body.appendChild(container);
+
+    input.setAttribute('role', 'combobox');
+    input.setAttribute('aria-autocomplete', 'list');
+    input.setAttribute('aria-expanded', 'false');
+    input.setAttribute('aria-controls', listId);
 
     let activeIndex = -1;
-    let currentSuggestions = [];
+
+    function optionEls() {
+      return container.querySelectorAll('.search-suggestion:not(.search-suggestion-empty)');
+    }
+
+    // Viewport coordinates, since the container is fixed on <body>. Anchored to
+    // the field itself: where the input shares a parent with other controls
+    // (search.html), the old `top:100%` dropped the list below the entire panel
+    // rather than below the field. Kept in sync while open, because scrolling
+    // moves the field out from under it.
+    const MIN_LIST_HEIGHT = 120;
+
+    function positionContainer() {
+      const r = input.getBoundingClientRect();
+      container.style.left = r.left + 'px';
+      container.style.width = r.width + 'px';
+
+      const below = window.innerHeight - r.bottom - 8;
+      const above = r.top - 8;
+      // Drop upward when the field is near the bottom of a short viewport,
+      // rather than running the list off-screen.
+      if (below < MIN_LIST_HEIGHT && above > below) {
+        const height = Math.min(320, above);
+        container.style.top = (r.top - height) + 'px';
+        container.style.maxHeight = height + 'px';
+      } else {
+        container.style.top = r.bottom + 'px';
+        container.style.maxHeight = Math.max(MIN_LIST_HEIGHT, Math.min(320, below)) + 'px';
+      }
+    }
+
+    function setOpen(open) {
+      container.classList.toggle('active', open);
+      input.setAttribute('aria-expanded', String(open));
+      if (!open) {
+        activeIndex = -1;
+        input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    function select(i) {
+      const items = optionEls();
+      activeIndex = i;
+      items.forEach((el, n) => {
+        const on = n === i;
+        el.classList.toggle('selected', on);
+        el.setAttribute('aria-selected', String(on));
+      });
+      if (i >= 0 && items[i]) {
+        input.setAttribute('aria-activedescendant', items[i].id);
+        items[i].scrollIntoView({ block: 'nearest' });
+      } else {
+        input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    function choose(div) {
+      if (div.dataset.url) {
+        window.location.href = div.dataset.url;
+        return;
+      }
+      input.value = div.dataset.title || '';
+      setOpen(false);
+      // Re-run whatever filter the page has bound to this input. The previous
+      // form.submit() fought the [data-no-submit] handler and reloaded nothing.
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    }
 
     function showSuggestions(suggestions, query) {
       container.innerHTML = '';
-      currentSuggestions = suggestions;
       activeIndex = -1;
+      input.removeAttribute('aria-activedescendant');
 
       if (suggestions.length === 0) {
         if (query && query.length >= 2) {
@@ -274,23 +377,26 @@
           empty.setAttribute('aria-disabled', 'true');
           empty.textContent = 'No matches';
           container.appendChild(empty);
-          container.classList.add('active');
+          positionContainer();
+          setOpen(true);
           return;
         }
-        container.classList.remove('active');
+        setOpen(false);
         return;
       }
 
       suggestions.forEach((item, i) => {
         const div = document.createElement('div');
         div.className = 'search-suggestion';
+        div.id = listId + '-opt-' + i;
         div.setAttribute('role', 'option');
         div.setAttribute('aria-selected', 'false');
-        div.dataset.index = i;
 
         const title = item.title || item.name || item.text || '';
         const desc = (item.summary || item.content || '').substring(0, 80);
         const url = item.url || item.link || '';
+        div.dataset.title = title;
+        if (url) div.dataset.url = url;
 
         div.innerHTML = `
           <span class="ss-title">${esc(title)}</span>
@@ -299,120 +405,114 @@
 
         div.addEventListener('mousedown', (e) => {
           e.preventDefault();
-          if (url) {
-            window.location.href = url;
-          } else {
-            input.value = title;
-            container.classList.remove('active');
-            // Trigger search if there's a search button
-            const form = input.closest('form');
-            if (form) form.submit();
-          }
+          choose(div);
         });
-
-        div.addEventListener('mouseenter', () => {
-          container.querySelectorAll('.search-suggestion').forEach(el => {
-            el.classList.remove('selected');
-            el.setAttribute('aria-selected', 'false');
-          });
-          div.classList.add('selected');
-          div.setAttribute('aria-selected', 'true');
-          activeIndex = i;
-        });
+        div.addEventListener('mouseenter', () => select(i));
 
         container.appendChild(div);
       });
 
-      container.classList.add('active');
+      positionContainer();
+      setOpen(true);
     }
 
-    // Simple fuzzy match
-    function fuzzyMatch(text, query) {
-      if (!query || query.length < 2) return false;
-      const lower = text.toLowerCase();
-      const q = query.toLowerCase();
-      // Direct substring
-      if (lower.includes(q)) return true;
-      // Character-by-character fuzzy
-      let qi = 0;
-      for (let i = 0; i < lower.length && qi < q.length; i++) {
-        if (lower[i] === q[qi]) qi++;
+    // Every term must appear. The old matcher fell back to a character
+    // subsequence spread across title+summary, so any longer query matched
+    // most of the index and the list filled with unrelated entries.
+    function matchesAll(hay, terms) {
+      for (let i = 0; i < terms.length; i++) {
+        if (hay.indexOf(terms[i]) === -1) return false;
       }
-      return qi === q.length;
+      return true;
     }
 
-    function score(pattern, text) {
-      const lower = text.toLowerCase();
-      const q = pattern.toLowerCase();
-      // Exact match at start = highest
-      if (lower.startsWith(q)) return 100 + q.length;
-      // Contains match
-      if (lower.includes(q)) return 50 + q.length;
-      // Fuzzy
-      return 10;
+    function scoreItem(hay, title, terms) {
+      const t = title.toLowerCase();
+      let total = 0;
+      for (let i = 0; i < terms.length; i++) {
+        const term = terms[i];
+        if (t.startsWith(term)) total += 100;
+        else if (t.indexOf(term) !== -1) total += 50;
+        else if (hay.indexOf(term) !== -1) total += 10;
+      }
+      return total;
     }
 
+    let debounceTimer = null;
     input.addEventListener('input', function () {
       const val = this.value.trim();
+      clearTimeout(debounceTimer);
       if (val.length < 2) {
-        container.classList.remove('active');
+        setOpen(false);
         return;
       }
-
-      loadSearchIndex((index) => {
-        const scored = [];
-        index.forEach(item => {
-          const title = item.title || item.name || item.text || '';
-          const desc = item.summary || item.content || '';
-          const combined = title + ' ' + desc;
-          if (fuzzyMatch(combined, val)) {
-            scored.push({ item, score: score(val, title) + score(val, desc) / 10 });
+      debounceTimer = setTimeout(() => {
+        loadSearchIndex((index) => {
+          // The box may have moved on while the index loaded.
+          if (input.value.trim() !== val) return;
+          const terms = val.toLowerCase().split(/\s+/).filter(Boolean);
+          const scored = [];
+          for (let i = 0; i < index.length; i++) {
+            const item = index[i];
+            const hay = autocompleteHaystack(item);
+            if (!matchesAll(hay, terms)) continue;
+            const title = item.title || item.name || item.text || '';
+            scored.push({ item, s: scoreItem(hay, title, terms) });
           }
+          scored.sort((a, b) => b.s - a.s);
+          showSuggestions(scored.slice(0, MAX_SUGGESTIONS).map(x => x.item), val);
         });
-
-        scored.sort((a, b) => b.score - a.score);
-        const top = scored.slice(0, 8).map(s => s.item);
-        showSuggestions(top, val);
-      });
+      }, AUTOCOMPLETE_DEBOUNCE_MS);
     });
 
     input.addEventListener('keydown', function (e) {
-      const items = container.querySelectorAll('.search-suggestion');
-      if (items.length === 0) return;
+      if (!container.classList.contains('active')) return;
+      const items = optionEls();
+      if (items.length === 0) {
+        if (e.key === 'Escape') setOpen(false);
+        return;
+      }
 
       if (e.key === 'ArrowDown') {
         e.preventDefault();
-        activeIndex = Math.min(activeIndex + 1, items.length - 1);
-        updateSelection(items);
+        select(Math.min(activeIndex + 1, items.length - 1));
       } else if (e.key === 'ArrowUp') {
         e.preventDefault();
-        activeIndex = Math.max(activeIndex - 1, -1);
-        updateSelection(items);
+        select(Math.max(activeIndex - 1, -1));
       } else if (e.key === 'Enter' && activeIndex >= 0) {
         e.preventDefault();
-        items[activeIndex].querySelector('span')?.click();
-        items[activeIndex].dispatchEvent(new MouseEvent('mousedown'));
+        choose(items[activeIndex]);
       } else if (e.key === 'Escape') {
-        container.classList.remove('active');
+        e.preventDefault();
+        setOpen(false);
       }
     });
 
-    function updateSelection(items) {
-      items.forEach((el, i) => {
-        el.classList.toggle('selected', i === activeIndex);
-        el.setAttribute('aria-selected', i === activeIndex ? 'true' : 'false');
-      });
-      if (activeIndex >= 0) {
-        items[activeIndex].scrollIntoView({ block: 'nearest' });
-      }
-    }
+    // Close on blur (deferred so a mousedown on an option still lands) and on
+    // any click outside the field.
+    input.addEventListener('blur', () => {
+      setTimeout(() => setOpen(false), 150);
+    });
 
-    // Close on click outside
     document.addEventListener('click', (e) => {
       if (!container.contains(e.target) && e.target !== input) {
-        container.classList.remove('active');
+        setOpen(false);
       }
     });
+
+    const reposition = () => {
+      if (!container.classList.contains('active')) return;
+      const r = input.getBoundingClientRect();
+      // A fixed list would otherwise keep floating at the coordinates of a
+      // field that has been scrolled out of view.
+      if (r.bottom < 0 || r.top > window.innerHeight) {
+        setOpen(false);
+        return;
+      }
+      positionContainer();
+    };
+    window.addEventListener('resize', reposition);
+    window.addEventListener('scroll', reposition, { passive: true });
   }
 
   // ═══════════════════════════════════════════════

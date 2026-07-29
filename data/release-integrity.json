@@ -26,8 +26,8 @@
     "data/current-counts.json": "be76c238e20ac885210deb594a49dce852fa5a1e8af8fb72a399aafe356902bf",
     "data/coverage-exceptions.json": "0bb29e583c7151179de5a0ea4281bb0561d70cde3899cc1e602cdfe0a419125f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "e5f883746a41742c009fe9ee1b9ad22603cfcf0b328dcd12a1cd08b27713bfb4",
-    "data/generated-manifest.json": "cb8a20e71843b1587f03d2c6d085758b685ebaea17ca00234162af004d007c71",
+    "data/agent-index.json": "73f24ee38fb851c46402e77f6c852ed9edd56b4d2647282409c742476277f5d2",
+    "data/generated-manifest.json": "c5735c740e486d1e341d9a2699a14a8164962ba7bc325cfc8787d04fb6271c65",
     "data/pages-artifact-manifest.json": "7bfc23ab2ecfeed6679097f77edc22aefc9a5de796547f515049752665a59496"
   },
   "pages_artifact": {

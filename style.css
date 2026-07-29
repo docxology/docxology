@@ -1328,12 +1328,16 @@ section h2:hover .anchor-link,
 /* ============================================================
    SEARCH AUTOCOMPLETE SUGGESTIONS
    ============================================================ */
+/* Rendered as a direct child of <body> and positioned with fixed coordinates by
+   js/interactive.js. The field it belongs to sits inside .filter-row, which the
+   card treatment gives overflow:hidden and isolation:isolate — anchoring the
+   list to the field there meant it was both clipped and painted under the
+   filter buttons, so suggestions could not be read or clicked. Escaping to the
+   body avoids that without unclipping .filter-row (which overflows at 320px). */
 .search-suggestions {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 50;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 900;
     background: #0d0d0d;
     border: 1px solid rgba(255,255,255,0.15);
     border-top: none;
@@ -1371,7 +1375,7 @@ section h2:hover .anchor-link,
     white-space: nowrap;
 }
 
-/* Position the search-wrap for absolute positioning of suggestions */
+/* Positioning context for the absolutely placed .search-icon. */
 .search-wrap { position: relative; }
 
 /* ============================================================

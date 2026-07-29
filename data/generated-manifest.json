@@ -475,7 +475,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-07-25.json"
+        "reports/asset_size_2026-07-29.json"
       ],
       "sources": [
         "root HTML pages",
@@ -501,8 +501,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-07-18/*.png",
-        "reports/browser-smoke/2026-07-18/manifest.json"
+        "reports/browser-smoke/2026-07-29/*.png",
+        "reports/browser-smoke/2026-07-29/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -514,7 +514,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-07-18/manifest.json"
+        "reports/browser-qa/2026-07-29/manifest.json"
       ],
       "sources": [
         "root HTML pages",
